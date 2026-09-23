@@ -1,0 +1,16 @@
+{
+  "name": "mystockbutler-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static crawler-facing mirror of MyStockButler's published blog posts (GitHub Pages).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/render.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
