@@ -4,7 +4,14 @@
 // link, so the Hub is also crawlable. Returns null when the Hub holds nothing (the caller then
 // omits the Hub entirely -- no frame, no placeholder).
 import { blogCitedSources, buildResearchHubSections } from '../hub/hubModel.mjs';
-import { displayAggregateLabel } from '../hub/researchHubDisplay.mjs';
+import {
+  displayAggregateLabel,
+  displayDate,
+  displayShelfTitle,
+  displayTitle,
+  hubDateSortValue,
+  isHubTranscriptResource,
+} from '../hub/researchHubDisplay.mjs';
 import { esc } from './layout.mjs';
 
 const CHIP_RUN_SHELF_IDS = new Set(['annual_reports', 'quarterly_reports']);
@@ -57,7 +64,38 @@ function shelfHtml(shelf) {
   return parts.join('');
 }
 
-function sectionHtml(section, open) {
+// Earnings-call transcripts are for signed-in readers only: on this public page each one is a greyed,
+// non-clickable label. Only its title and date are read from the row -- its URL is never printed, so
+// there is no link on the page to copy. (The app's display model leaves transcript rows out of the
+// rail, so they are taken from the payload here, in their own section.)
+function transcriptRows(payload) {
+  const rows = [];
+  for (const section of Array.isArray(payload?.sections) ? payload.sections : []) {
+    const sectionId = String(section?.section_id || section?.id || '');
+    for (const row of Array.isArray(section?.resources) ? section.resources : []) {
+      if (!row || typeof row !== 'object' || !isHubTranscriptResource(row)) continue;
+      const title = displayTitle(row);
+      if (!title) continue;
+      rows.push({ sectionId, title, dateLabel: displayDate(row), sortValue: hubDateSortValue(row) });
+    }
+  }
+  return rows.sort((a, b) => b.sortValue - a.sortValue || a.title.localeCompare(b.title));
+}
+
+function transcriptsHtml(rows) {
+  if (!rows.length) return '';
+  const items = rows
+    .map(
+      row =>
+        `<li class="off" aria-disabled="true"><span>${esc(row.title)}</span>${
+          row.dateLabel ? `<span class="d">${esc(row.dateLabel)}</span>` : ''
+        }</li>`
+    )
+    .join('');
+  return `<h4>${esc(displayShelfTitle('earnings_calls'))}</h4><ul class="hub-list">${items}</ul>`;
+}
+
+function sectionHtml(section, open, transcripts = []) {
   const body = [];
   if (section.shelves.length) body.push(section.shelves.map(shelfHtml).join(''));
   else body.push(list(section.resources));
@@ -75,6 +113,7 @@ function sectionHtml(section, open) {
     body.push(`<h4>${esc(BENCHMARK_TITLE)}</h4>${list(section.benchmarkResources)}`);
   }
   if (section.moreSources.length) body.push(`<h4>More sources</h4>${list(section.moreSources)}`);
+  if (transcripts.length) body.push(transcriptsHtml(transcripts));
   if (section.count === 0 && section.honestEmptySentence) {
     body.push(`<p class="hub-empty">${esc(section.honestEmptySentence)}</p>`);
   }
@@ -87,7 +126,12 @@ export function renderResearchHub(payload, postSources) {
   if (!['ready', 'partial'].includes(status)) return null;
   const built = buildResearchHubSections(payload, blogCitedSources(postSources));
   if (!(built.hubResourceCount > 0) || built.sections.length === 0) return null;
-  const sections = built.sections.map((section, index) => sectionHtml(section, index === 0)).join('\n');
+  const transcripts = transcriptRows(payload);
+  const sections = built.sections
+    .map((section, index) =>
+      sectionHtml(section, index === 0, transcripts.filter(row => row.sectionId === section.id))
+    )
+    .join('\n');
   return {
     count: built.totalCount,
     html: `<aside class="hub" id="research-hub" aria-label="Research Hub">

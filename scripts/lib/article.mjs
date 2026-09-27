@@ -1,8 +1,8 @@
 // Copy of 100a-research-landing src/lib/blogArticle.js (the landing route and this mirror order a post the same way).
 // Reading order for a library post's markdown (built by the app's blogFromReport). The generated
 // article starts with a "Meta" table and a "Hero metrics" list, then "The read" and the report.
-// A reader should land on the first paragraph, so those two blocks move to just after the first
-// section, under one "Key figures" heading, and a call to action sits between them.
+// Owner order 2026-09-27: a post page shows neither of them ("Key figures" is gone), so the article
+// opens on its first real section and a call to action sits after it.
 // Plain JS with no imports: the node tests import this file directly.
 
 const FRONT_MATTER_HEADINGS = ['meta', 'hero metrics'];
@@ -41,29 +41,23 @@ function sectionMarkdown(section) {
   return `## ${section.heading}\n\n${section.body}`.trim();
 }
 
-// { opening, figures, rest }: the first real section, the moved Meta / Hero metrics blocks (or null),
-// and everything after. Markdown with no "## " sections comes back whole as `opening`.
+// { opening, rest }: the first real section and everything after it; the generator's Meta and Hero
+// metrics blocks are dropped. Markdown with no "## " sections comes back whole as `opening`.
 export function arrangeArticleForReading(markdown) {
   const { preface, sections } = splitArticleSections(markdown);
   if (sections.length === 0) {
-    return { opening: preface, figures: null, rest: '' };
+    return { opening: preface, rest: '' };
   }
 
   const isFront = section => FRONT_MATTER_HEADINGS.includes(section.heading.toLowerCase());
-  const front = sections.filter(isFront);
   const body = sections.filter(section => !isFront(section));
 
   if (body.length === 0) {
-    return { opening: String(markdown || '').trim(), figures: null, rest: '' };
+    return { opening: String(markdown || '').trim(), rest: '' };
   }
-
-  const figures = front.length
-    ? ['## Key figures', ...front.map(section => section.body)].filter(Boolean).join('\n\n')
-    : null;
 
   return {
     opening: [preface, sectionMarkdown(body[0])].filter(Boolean).join('\n\n'),
-    figures,
     rest: body.slice(1).map(sectionMarkdown).join('\n\n'),
   };
 }

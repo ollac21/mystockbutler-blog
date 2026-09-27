@@ -179,6 +179,8 @@ img { max-width: 100%; height: auto; }
 .hub-list a:hover { text-decoration: underline; }
 .hub-list .d { flex: none; font-size: 11px; color: var(--muted); white-space: nowrap; }
 .hub-list .s { display: block; font-size: 11px; color: var(--muted); }
+.hub-list li.off { opacity: .55; background: var(--band); cursor: not-allowed; }
+.hub-list li.off span:first-child { color: var(--muted); font-weight: 500; }
 .hub-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 6px; }
 .hub-chips a { border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 500; text-decoration: none; background: var(--tint); }
 .hub-people { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }

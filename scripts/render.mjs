@@ -133,6 +133,11 @@ async function fetchHubPayload(post) {
     const data = await res.json();
     const payload = data?.resourceHub || data?.resource_hub || data?.data?.resourceHub || data?.data?.resource_hub;
     if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new Error('no resourceHub in the answer');
+    // A post's Hub is the Hub of the exact run its article was cut from (source_run_id, asked for above);
+    // a Hub that names a different ticker than the post is never shown.
+    const hubTicker = str(payload.ticker).toUpperCase();
+    const postTicker = str(post.ticker).toUpperCase();
+    if (hubTicker && postTicker && hubTicker !== postTicker) throw new Error(`Hub is for ${hubTicker}, the post is ${postTicker}`);
     return payload;
   } catch (err) {
     warn(`no Research Hub for ${post.slug}: ${err.message}`);
@@ -310,12 +315,12 @@ function renderPost(post, bodyMarkdown, hubPayload) {
     ? `<details class="disclaimer-top"><summary>Not investment advice — read the disclaimer</summary><p>${esc(disclaimerText)}</p></details>`
     : '';
 
-  // The article opens on its first section; the generator's Meta table and Hero metrics follow it
-  // under "Key figures" (nothing is dropped), with a call to action between the two.
+  // The article opens on its first section (the generator's Meta table and Hero metrics are not shown
+  // -- owner order 2026-09-27), with a call to action after it.
   const arranged = arrangeArticleForReading(bodyMarkdown);
-  const hasMore = Boolean(arranged.figures || arranged.rest);
+  const hasMore = Boolean(arranged.rest);
   const openingHtml = marked.parse(arranged.opening);
-  const restHtml = hasMore ? marked.parse([arranged.figures, arranged.rest].filter(Boolean).join('\n\n')) : '';
+  const restHtml = hasMore ? marked.parse(arranged.rest) : '';
 
   const faq = faqItems(post);
   const faqHtml = faq.length

@@ -29,33 +29,27 @@ const GENERATED = [
   'Body text.',
 ].join('\n');
 
-test('the article opens on the first real section, not on Meta or Hero metrics', () => {
-  const { opening, figures, rest } = arrangeArticleForReading(GENERATED);
+test('the article opens on the first real section, and Meta / Hero metrics are gone', () => {
+  const { opening, rest } = arrangeArticleForReading(GENERATED);
   assert.ok(opening.startsWith('## The read'));
   assert.ok(!opening.includes('| Ticker |'));
   assert.ok(!opening.includes('Hero metrics'));
   assert.ok(rest.startsWith('## The Report'));
   assert.ok(rest.includes('## The business'));
-  assert.ok(figures.startsWith('## Key figures'));
-});
-
-test('nothing is lost: the moved blocks keep their table and list', () => {
-  const { figures } = arrangeArticleForReading(GENERATED);
-  assert.ok(figures.includes('| Ticker | AAPL |'));
-  assert.ok(figures.includes('**Revenue (TTM)**: $466.823B'));
+  assert.ok(!rest.includes('| Ticker |'));
+  assert.ok(!rest.includes('Revenue (TTM)'));
+  assert.ok(!(opening + rest).includes('Key figures'));
 });
 
 test('markdown without Meta / Hero metrics is only split after its first section', () => {
-  const { opening, figures, rest } = arrangeArticleForReading('## One\n\na\n\n## Two\n\nb');
+  const { opening, rest } = arrangeArticleForReading('## One\n\na\n\n## Two\n\nb');
   assert.equal(opening, '## One\n\na');
-  assert.equal(figures, null);
   assert.equal(rest, '## Two\n\nb');
 });
 
 test('markdown with no sections, or only front matter, comes back whole', () => {
   assert.deepEqual(arrangeArticleForReading('Just a paragraph.'), {
     opening: 'Just a paragraph.',
-    figures: null,
     rest: '',
   });
   const onlyFront = '## Meta\n\n| a | b |';
