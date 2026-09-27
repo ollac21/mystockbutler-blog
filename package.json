@@ -5,7 +5,8 @@
   "description": "Static crawler-facing mirror of MyStockButler's published blog posts (GitHub Pages).",
   "type": "module",
   "scripts": {
-    "build": "node scripts/render.mjs"
+    "build": "node scripts/render.mjs",
+    "test": "node --test tests/*.test.mjs"
   },
   "engines": {
     "node": ">=20"

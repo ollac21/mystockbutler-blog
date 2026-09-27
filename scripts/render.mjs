@@ -14,12 +14,16 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
+import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
+import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
+import { renderResearchHub } from './lib/hubHtml.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
 const SITE = 'https://blog.mystockbutler.com';
 const SITE_NAME = 'MyStockButler Blog';
 const LIBRARY_SCHEMA = 'blog-library-v1';
+const HUB_URL = process.env.BLOG_HUB_URL || `${APP}/functions/getBlogResourceHub`;
 const PAGE_SIZE = 100;
 const FETCH_TIMEOUT_MS = 30000;
 
@@ -31,15 +35,6 @@ const marked = new Marked({ gfm: true });
 function warn(msg) {
   // "::warning::" surfaces as an annotation in the GitHub Actions log.
   console.log(`${process.env.GITHUB_ACTIONS ? '::warning::' : 'WARNING: '}${msg}`);
-}
-
-function esc(value) {
-  return String(value ?? '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
 }
 
 function jsonLd(obj) {
@@ -119,6 +114,34 @@ async function fetchBodyMarkdown(post) {
   return content;
 }
 
+// The Research Hub of the chain run a library post was cut from, through the app's own public
+// function (the same call the site's browser code makes). Fail closed: any problem means NO Hub on
+// that page (a warning in the log) -- never a placeholder, never a blocked post.
+async function fetchHubPayload(post) {
+  const runId = str(post.source_run_id);
+  if (post.content_schema_version !== LIBRARY_SCHEMA || !runId) return null;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(HUB_URL, {
+      method: 'POST',
+      signal: ctrl.signal,
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ run_id: runId }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const payload = data?.resourceHub || data?.resource_hub || data?.data?.resourceHub || data?.data?.resource_hub;
+    if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new Error('no resourceHub in the answer');
+    return payload;
+  } catch (err) {
+    warn(`no Research Hub for ${post.slug}: ${err.message}`);
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/i;
 
 function faqItems(post) {
@@ -175,32 +198,61 @@ function pageShell({ title, description, canonical, robots, head = '', body }) {
 <title>${esc(title)}</title>
 ${description ? `<meta name="description" content="${esc(description)}">\n` : ''}<link rel="canonical" href="${esc(canonical)}">
 <meta name="robots" content="${esc(robots || 'index,follow')}">
-${head}<style>
-:root { color-scheme: light dark; --fg: #1a1a1a; --muted: #5b5b5b; --bg: #fff; --rule: #e3e3e3; --link: #0b5cad; }
-@media (prefers-color-scheme: dark) { :root { --fg: #ececec; --muted: #a8a8a8; --bg: #141414; --rule: #333; --link: #7fb6f0; } }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 Georgia, "Times New Roman", serif; }
-main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-a { color: var(--link); }
-h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 8px; }
-.meta, .muted { color: var(--muted); font-size: 0.95rem; }
-img { max-width: 100%; height: auto; }
-table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 0.95rem; }
-th, td { border: 1px solid var(--rule); padding: 6px 10px; text-align: left; }
-hr { border: 0; border-top: 1px solid var(--rule); margin: 32px 0; }
-.post-list { list-style: none; padding: 0; }
-.post-list li { padding: 18px 0; border-bottom: 1px solid var(--rule); }
-</style>
+${FONT_LINKS}${head}<style>${STYLE}</style>
 </head>
 <body>
-<main>
+${siteHeader()}
 ${body}
-</main>
+${siteFooter()}
 </body>
 </html>
 `;
 }
 
-function renderPost(post, bodyMarkdown) {
+function minutes(post) {
+  const n = Number(post.reading_time_minutes);
+  return Number.isFinite(n) && n > 0 ? Math.round(n) : 0;
+}
+
+function callToAction(kind, ticker) {
+  if (kind === 'inline') {
+    return `<aside class="cta" aria-label="Get a report on your stock">
+<div class="cta-text"><strong>Want this on the stocks you own?</strong><p class="sub">A source-backed memo on any ticker, rebuilt from the filings — not summarized by a chatbot.</p></div>
+<div class="btns"><a class="btn" href="${APP}/login">Start researching &rarr;</a></div>
+</aside>`;
+  }
+  const memo = ticker
+    ? `<a class="btn" href="${APP}/reports/library/${encodeURIComponent(ticker)}">Read the full ${esc(ticker)} memo</a>`
+    : '';
+  return `<aside class="cta" aria-label="Get the full memo">
+<div class="cta-text"><strong>This article is the memo’s summary — annexes, every statement year and every source are in the full report.</strong><p class="sub">Five years of financials, the forecast model, and the complete source list.</p></div>
+<div class="btns">${memo}<a class="btn${ticker ? ' ghost' : ''}" href="${APP}/login">Start researching &rarr;</a></div>
+</aside>`;
+}
+
+function cardHtml(post, featured) {
+  const title = str(post.title) || str(post.seo_title);
+  const hook = blogHook(str(post.excerpt) || str(post.seo_description));
+  const date = humanDate(post.published_at);
+  const mins = minutes(post);
+  const ticker = str(post.ticker);
+  const company = str(post.company_name);
+  const kicker = featured
+    ? `Latest research${ticker ? ` <span>&middot; ${esc(ticker)}</span>` : ''}`
+    : `${ticker ? esc(ticker) : ''}${ticker && company ? ` <span>&middot; ${esc(company)}</span>` : ''}`;
+  return `<a class="card${featured ? ' featured' : ''}" href="/${esc(post.slug)}/">
+<div class="card-visual" aria-hidden="true"><span class="tag">Research memo</span><div><div class="tick">${esc(ticker || 'SB')}</div>${company ? `<div class="co">${esc(company)}</div>` : ''}</div></div>
+<div class="card-body">
+${kicker ? `<div class="kicker">${kicker}</div>` : ''}
+<h2>${esc(title)}</h2>
+${hook ? `<p class="hook">${esc(hook)}</p>` : ''}
+<div class="meta">${date ? `<time datetime="${esc(isoOrEmpty(post.published_at))}">${esc(date)}</time>` : ''}${mins ? `<span>${mins} min read</span>` : ''}</div>
+<span class="go">Read the research &rarr;</span>
+</div>
+</a>`;
+}
+
+function renderPost(post, bodyMarkdown, hubPayload) {
   const slug = post.slug;
   const canonical = `${SITE}/${slug}/`;
   const title = str(post.title) || str(post.seo_title);
@@ -209,6 +261,8 @@ function renderPost(post, bodyMarkdown) {
   const cover = str(post.cover_image);
   const author = str(post.author_name);
   const published = humanDate(post.published_at);
+  const isLibrary = post.content_schema_version === LIBRARY_SCHEMA;
+  const ticker = str(post.ticker);
 
   const og = [
     ['og:type', 'article'],
@@ -235,58 +289,116 @@ function renderPost(post, bodyMarkdown) {
     [...og, ...tw].join('\n') +
     `\n<script type="application/ld+json">\n${jsonLd(structuredData(post, canonical))}\n</script>\n`;
 
-  const metaParts = [];
-  if (author) metaParts.push(esc(author));
-  if (published) metaParts.push(`<time datetime="${esc(isoOrEmpty(post.published_at))}">${esc(published)}</time>`);
-  const metaLine = metaParts.join(' · ');
+  const kickerParts = [ticker, str(post.exchange), str(post.company_name)].filter(Boolean);
+  const kicker = kickerParts.length
+    ? `<div class="kicker">${esc(kickerParts[0])}${kickerParts
+        .slice(1)
+        .map((part) => ` <span>&middot; ${esc(part)}</span>`)
+        .join('')}</div>`
+    : '';
+  const byline = [
+    author ? `<span>${esc(author)}</span>` : '',
+    published ? `<time datetime="${esc(isoOrEmpty(post.published_at))}">Published ${esc(published)}</time>` : '',
+    minutes(post) ? `<span>${minutes(post)} min read</span>` : '',
+    humanDate(post.source_cutoff) ? `<span>Sources through ${esc(humanDate(post.source_cutoff))}</span>` : '',
+  ]
+    .filter(Boolean)
+    .join('');
+
+  const disclaimerText = str(post.disclaimer);
+  const disclaimerTop = disclaimerText
+    ? `<details class="disclaimer-top"><summary>Not investment advice — read the disclaimer</summary><p>${esc(disclaimerText)}</p></details>`
+    : '';
+
+  // The article opens on its first section; the generator's Meta table and Hero metrics follow it
+  // under "Key figures" (nothing is dropped), with a call to action between the two.
+  const arranged = arrangeArticleForReading(bodyMarkdown);
+  const hasMore = Boolean(arranged.figures || arranged.rest);
+  const openingHtml = marked.parse(arranged.opening);
+  const restHtml = hasMore ? marked.parse([arranged.figures, arranged.rest].filter(Boolean).join('\n\n')) : '';
 
   const faq = faqItems(post);
   const faqHtml = faq.length
-    ? `<hr>\n<section>\n<h2>FAQ</h2>\n${faq
+    ? `<section class="post-section">\n<h2>Frequently asked questions</h2>\n${faq
         .map((f) => `<h3>${esc(f.question)}</h3>\n<p>${esc(f.answer)}</p>`)
         .join('\n')}\n</section>`
     : '';
   const sources = sourceItems(post);
   const sourcesHtml = sources.length
-    ? `<hr>\n<section>\n<h2>Sources</h2>\n<ul>\n${sources
-        .map((s) => (str(s.url) ? `<li><a href="${esc(s.url)}" rel="nofollow">${esc(s.title)}</a></li>` : `<li>${esc(s.title)}</li>`))
-        .join('\n')}\n</ul>\n</section>`
+    ? `<section class="post-section">\n<h2>Sources</h2>\n<ol class="sources">\n${sources
+        .map((s) => {
+          const n = s.number ? `<span class="n">[${esc(s.number)}]</span>` : '';
+          const domain = str(s.domain) ? ` — ${esc(s.domain)}` : '';
+          const name = str(s.url)
+            ? `<a href="${esc(s.url)}" rel="nofollow">${esc(s.title)}</a>`
+            : esc(s.title);
+          return `<li>${n}${name}${domain}</li>`;
+        })
+        .join('\n')}\n</ol>\n</section>`
     : '';
-  const disclaimer = str(post.disclaimer) ? `<hr>\n<p class="muted"><small>${esc(post.disclaimer)}</small></p>` : '';
+  const disclaimerBottom = disclaimerText
+    ? `<p class="disclaimer-bottom"><strong>Important investment disclaimer:</strong> ${esc(disclaimerText)}</p>`
+    : '';
+  const aiNote = str(post.ai_assistance_disclosure) ? `<p class="ai-note">${esc(str(post.ai_assistance_disclosure))}</p>` : '';
 
-  const body = `<p class="muted"><a href="/">&larr; ${esc(SITE_NAME)}</a></p>
-<article>
+  const hub = hubPayload ? renderResearchHub(hubPayload, post.sources) : null;
+
+  const body = `<main>
+<div class="layout">
+<div class="article-col">
+<article class="article-in">
 <header>
+<a class="back" href="/">&larr; All research</a>
+${kicker}
 <h1>${esc(title)}</h1>
-${metaLine ? `<p class="meta">${metaLine}</p>` : ''}
-${cover ? `<img src="${esc(cover)}" alt="${esc(title)}" width="1200" height="630">` : ''}
+${byline ? `<div class="byline">${byline}</div>` : ''}
 </header>
-${marked.parse(bodyMarkdown)}
+${disclaimerTop}
+<div class="prose">
+${openingHtml}
+</div>
+${hasMore ? callToAction('inline') : ''}
+${hasMore ? `<div class="prose">\n${restHtml}\n</div>` : ''}
+${callToAction('end', isLibrary ? ticker : '')}
 ${faqHtml}
 ${sourcesHtml}
-${disclaimer}
-</article>`;
+${disclaimerBottom}
+${aiNote}
+</article>
+</div>
+${hub ? hub.html : ''}
+</div>
+</main>
+${hub ? `<a class="hub-bar" href="#research-hub">Research Hub <span>${hub.count}</span></a>` : ''}`;
 
   return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body });
 }
 
 function renderIndex(entries) {
-  const items = entries
-    .map(({ post }) => {
-      const excerpt = str(post.excerpt) || str(post.seo_description);
-      const date = humanDate(post.published_at);
-      return `<li>
-<h2><a href="/${esc(post.slug)}/">${esc(str(post.title) || str(post.seo_title))}</a></h2>
-${date ? `<p class="meta"><time datetime="${esc(isoOrEmpty(post.published_at))}">${esc(date)}</time></p>` : ''}
-${excerpt ? `<p>${esc(excerpt)}</p>` : ''}
-</li>`;
-    })
-    .join('\n');
+  const [first, ...others] = entries;
+  const featured = first ? cardHtml(first.post, true) : '';
+  const grid = others.length
+    ? `<div class="section-label"><div class="eyebrow">Latest research</div><h2>More from the research desk</h2></div>
+<div class="card-grid">
+${others.map(({ post }) => cardHtml(post, false)).join('\n')}
+</div>`
+    : '';
   return pageShell({
     title: SITE_NAME,
-    description: '',
+    description:
+      'Source-backed public-company research built from filings, transcripts, reconstructed financials, and explicit valuation work.',
     canonical: `${SITE}/`,
-    body: `<h1>${esc(SITE_NAME)}</h1>\n<ul class="post-list">\n${items}\n</ul>`,
+    body: `<main>
+<section class="index-head"><div class="wrap">
+<div class="eyebrow">MyStockButler Research</div>
+<h1>Investment research, rebuilt from the evidence.</h1>
+<p>Full public-company memos with the calculations, sources, and investment verdict preserved.</p>
+</div></section>
+<section class="index-body wrap">
+${featured}
+${grid}
+</section>
+</main>`,
   });
 }
 
@@ -340,8 +452,9 @@ async function main() {
     }
     try {
       const markdown = await fetchBodyMarkdown(post);
+      const hub = await fetchHubPayload({ ...post, slug });
       seen.add(slug.toLowerCase());
-      entries.push({ post: { ...post, slug }, markdown });
+      entries.push({ post: { ...post, slug }, markdown, hub });
     } catch (err) {
       warn(`skipping post ${post.id} (${slug}): ${err.message}`);
     }
@@ -350,10 +463,10 @@ async function main() {
 
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
-  for (const { post, markdown } of entries) {
+  for (const { post, markdown, hub } of entries) {
     const dir = path.join(OUT, post.slug);
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown));
+    await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown, hub));
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body)`);
   }
   await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
