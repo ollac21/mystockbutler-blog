@@ -1,7 +1,8 @@
 // The Research Hub as static HTML: the display model is the app's own (scripts/hub/hubModel.mjs, a
 // verbatim extraction of the landing's panel code); this file only prints that model's sections.
-// No JavaScript on the page: sections are <details> (the first is open), every source is a plain
-// link, so the Hub is also crawlable. Returns null when the Hub holds nothing (the caller then
+// The Hub works with no JavaScript: sections are <details> sharing one name (opening one closes the
+// others), every source is a plain link, so the Hub is also crawlable. On a phone the Hub is a bottom
+// drawer opened by the small pill (render.mjs); a few lines of script only make closing it smoother. Returns null when the Hub holds nothing (the caller then
 // omits the Hub entirely -- no frame, no placeholder).
 import { blogCitedSources, buildResearchHubSections } from '../hub/hubModel.mjs';
 import {
@@ -138,7 +139,7 @@ function sectionHtml(section, open, transcripts = []) {
   if (section.count === 0 && section.honestEmptySentence) {
     body.push(`<p class="hub-empty">${esc(section.honestEmptySentence)}</p>`);
   }
-  return `<details class="hub-sec"${open ? ' open' : ''}><summary>${esc(section.title)}<span class="count">${section.count}</span></summary><div class="hub-body">${body.join('')}</div></details>`;
+  return `<details class="hub-sec" name="hub-sec"${open ? ' open' : ''}><summary>${esc(section.title)}<span class="count">${section.count}</span></summary><div class="hub-body">${body.join('')}</div></details>`;
 }
 
 /** @returns {{ html: string, count: number } | null} */
@@ -156,10 +157,11 @@ export function renderResearchHub(payload, postSources) {
   return {
     count: built.totalCount,
     html: `<aside class="hub" id="research-hub" aria-label="Research Hub">
-<div class="hub-head">Research Hub</div>
+<div class="hub-head"><span>Research Hub <span class="hub-n">${built.totalCount}</span></span><a class="hub-close" href="#_" data-hub="close" aria-label="Close the Research Hub">&times;</a></div>
 <div class="hub-scroll">
 ${sections}
 </div>
-</aside>`,
+</aside>
+<a class="hub-backdrop" href="#_" data-hub="close" tabindex="-1" aria-hidden="true"></a>`,
   };
 }

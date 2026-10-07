@@ -258,6 +258,10 @@ ${hook ? `<p class="hook">${esc(hook)}</p>` : ''}
 </a>`;
 }
 
+// The Hub drawer on a phone, and one-open-at-a-time sections on browsers that ignore <details name>.
+// Without this script the page still works: the pill opens the drawer through :target.
+const HUB_SCRIPT = `(function(){var d=document,r=d.documentElement,h=d.getElementById('research-hub');if(!h)return;r.classList.add('js');function set(o){r.classList.toggle('hub-open',o);}if(location.hash==='#research-hub')set(true);d.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-hub]'):null;if(!a)return;e.preventDefault();set(a.getAttribute('data-hub')==='open');});d.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});var s=h.querySelectorAll('details.hub-sec');if(!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});})();`;
+
 function renderPost(post, bodyMarkdown, hubPayload) {
   const slug = post.slug;
   const canonical = `${SITE}/${slug}/`;
@@ -375,7 +379,8 @@ ${aiNote}
 ${hub ? hub.html : ''}
 </div>
 </main>
-${hub ? `<a class="hub-bar" href="#research-hub">Research Hub <span>${hub.count}</span></a>` : ''}`;
+${hub ? `<a class="hub-bar" href="#research-hub" data-hub="open" aria-label="Open the Research Hub">Research Hub <span>${hub.count}</span></a>
+<script>${HUB_SCRIPT}</script>` : ''}`;
 
   return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body });
 }
