@@ -34,9 +34,23 @@ jobs:
         env:
           OUT_DIR: _site
 
+      # IndexNow: compare the freshly built state with the one the LIVE site publishes now. This has to
+      # happen here, before the deploy replaces the live site. Best effort: never fails the build.
+      - name: Plan IndexNow notifications (new or changed pages only)
+        run: node scripts/indexnow.mjs plan
+        env:
+          OUT_DIR: _site
+          INDEXNOW_PLAN_DIR: indexnow-plan
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-plan
+          path: indexnow-plan
+          if-no-files-found: ignore
 
   deploy:
     needs: build
@@ -50,3 +64,28 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # After the deploy: tell IndexNow (Bing, and through it ChatGPT search and Copilot) about the pages
+  # the plan found new or changed. A failure here never fails the workflow.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: indexnow-plan
+          path: indexnow-plan
+
+      - name: Notify IndexNow
+        run: node scripts/indexnow.mjs ping
+        env:
+          INDEXNOW_PLAN_DIR: indexnow-plan

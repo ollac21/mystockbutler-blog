@@ -3,7 +3,7 @@
 // Reads PUBLISHED BlogPost rows from base44's anonymous public read endpoint
 // (the same read the live site's browser code performs; no key needed) and
 // writes one crawler-readable HTML page per post, plus index.html,
-// sitemap.xml, robots.txt, llms.txt and CNAME, into the output directory.
+// sitemap.xml, robots.txt, llms.txt, CNAME, the IndexNow key file and indexnow-state.json, into the output directory.
 //
 // Post text is reproduced verbatim: markdown is only converted to HTML.
 // Fails closed: a post whose body cannot be fetched is skipped (warning),
@@ -17,6 +17,7 @@ import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
 import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
+import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -475,14 +476,19 @@ async function main() {
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body)`);
   }
   await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
-  await writeFile(path.join(OUT, 'sitemap.xml'), renderSitemap(entries));
+  const sitemapXml = renderSitemap(entries);
+  await writeFile(path.join(OUT, 'sitemap.xml'), sitemapXml);
+  // IndexNow: the public key file (its content is exactly the key) and the state the NEXT build
+  // compares against (url -> last-modified, taken from the sitemap just written). See scripts/indexnow.mjs.
+  await writeFile(path.join(OUT, KEY_FILE), INDEXNOW_KEY);
+  await writeFile(path.join(OUT, STATE_FILE), `${JSON.stringify(buildState(parseSitemap(sitemapXml)), null, 2)}\n`);
   await writeFile(path.join(OUT, 'robots.txt'), renderRobots());
   await writeFile(path.join(OUT, 'llms.txt'), renderLlms(entries));
   await writeFile(path.join(OUT, '.nojekyll'), '');
   const cname = path.join(ROOT, 'CNAME');
   if (existsSync(cname)) await copyFile(cname, path.join(OUT, 'CNAME'));
   else warn('CNAME not found at repo root; custom domain will not be set');
-  console.log(`Done: ${entries.length} post page(s) + index, sitemap, robots, llms.txt in ${OUT}`);
+  console.log(`Done: ${entries.length} post page(s) + index, sitemap, robots, llms.txt, IndexNow key + state in ${OUT}`);
 }
 
 main().catch((err) => {
