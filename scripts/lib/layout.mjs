@@ -186,6 +186,10 @@ img { max-width: 100%; height: auto; }
 .hub-people { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
 .hub-people li { border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12.5px; }
 .hub-people .r { display: block; font-size: 11px; color: var(--muted); }
+.hub-people .pl { display: block; margin-top: 3px; font-size: 11.5px; }
+.hub-people .pl a { text-decoration: none; font-weight: 500; }
+.hub-people .pl a:hover { text-decoration: underline; }
+.hub-person-rows { margin-top: 6px; }
 .hub-empty { margin: 8px 6px 0; font-size: 12px; color: var(--muted); }
 .hub-bar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 40; display: flex; align-items: center; justify-content: center; gap: 8px; height: 46px; border-radius: 10px; border: 1px solid var(--border); background: var(--card); color: var(--fg); text-decoration: none; font-size: 14px; font-weight: 600; box-shadow: 0 8px 30px rgba(17,24,20,.15); }
 .hub-bar span { background: var(--band); border-radius: 6px; padding: 1px 8px; font-size: 12px; font-weight: 500; color: var(--muted); }

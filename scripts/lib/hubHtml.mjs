@@ -95,6 +95,27 @@ function transcriptsHtml(rows) {
   return `<h4>${esc(displayShelfTitle('earnings_calls'))}</h4><ul class="hub-list">${items}</ul>`;
 }
 
+// A person's own links, as the app's person card shows them: a bio, LinkedIn and X when the Hub holds
+// them, the count of insider filings, and up to three dated interviews or appearances -- all read from
+// the display model's own fields (linkSummary, insiderFilings); nothing is derived here.
+function personLinksHtml(person) {
+  const summary = person.linkSummary || {};
+  const quick = [];
+  if (summary.bio) quick.push(link(summary.bio, 'Bio'));
+  if (summary.linkedin) quick.push(link(summary.linkedin, 'LinkedIn'));
+  if (summary.x) quick.push(link(summary.x, 'X'));
+  const filings = person.insiderFilings;
+  if (filings && filings.url) {
+    quick.push(
+      `<a href="${esc(filings.url)}" target="_blank" rel="noopener noreferrer">Insider filings (${esc(String(filings.count))})</a>`
+    );
+  }
+  const appearances = Array.isArray(summary.appearances) ? summary.appearances : [];
+  return `${quick.length ? `<span class="pl">${quick.join(' · ')}</span>` : ''}${
+    appearances.length ? `<ul class="hub-list hub-person-rows">${appearances.map(resourceItem).join('')}</ul>` : ''
+  }`;
+}
+
 function sectionHtml(section, open, transcripts = []) {
   const body = [];
   if (section.shelves.length) body.push(section.shelves.map(shelfHtml).join(''));
@@ -104,7 +125,7 @@ function sectionHtml(section, open, transcripts = []) {
       `<ul class="hub-people">${section.people
         .map(
           person =>
-            `<li>${esc(person.name)}${person.roleLabel ? `<span class="r">${esc(person.roleLabel)}</span>` : ''}</li>`
+            `<li>${esc(person.name)}${person.roleLabel ? `<span class="r">${esc(person.roleLabel)}</span>` : ''}${personLinksHtml(person)}</li>`
         )
         .join('')}</ul>`
     );
