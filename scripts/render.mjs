@@ -17,6 +17,7 @@ import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
 import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
+import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocInlineHtml, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
@@ -258,9 +259,10 @@ ${hook ? `<p class="hook">${esc(hook)}</p>` : ''}
 </a>`;
 }
 
-// The Hub drawer on a phone, and one-open-at-a-time sections on browsers that ignore <details name>.
-// Without this script the page still works: the pill opens the drawer through :target.
-const HUB_SCRIPT = `(function(){var d=document,r=d.documentElement,h=d.getElementById('research-hub');if(!h)return;r.classList.add('js');function set(o){r.classList.toggle('hub-open',o);}if(location.hash==='#research-hub')set(true);d.addEventListener('click',function(e){var a=e.target.closest?e.target.closest('[data-hub]'):null;if(!a)return;e.preventDefault();set(a.getAttribute('data-hub')==='open');});d.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});var s=h.querySelectorAll('details.hub-sec');if(!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});})();`;
+// The two drawers on a narrow screen (the Research Hub, the post's index), the highlighted line of the
+// index while reading, and one-open-at-a-time Hub sections on browsers that ignore <details name>.
+// Without this script the page still works: each pill opens its drawer through :target.
+const PAGE_SCRIPT = `(function(){var d=document,r=d.documentElement;r.classList.add('js');function set(k,o){r.classList.toggle(k+'-open',o);if(o)r.classList.remove((k==='hub'?'toc':'hub')+'-open');}if(location.hash==='#research-hub')set('hub',true);d.addEventListener('click',function(e){var t=e.target;if(!t.closest)return;var a=t.closest('[data-hub],[data-toc]');if(a){var k=a.hasAttribute('data-hub')?'hub':'toc';e.preventDefault();set(k,a.getAttribute('data-'+k)==='open');return;}if(t.closest('.toc-list a'))set('toc',false);});d.addEventListener('keydown',function(e){if(e.key==='Escape'){set('hub',false);set('toc',false);}});var s=d.querySelectorAll('details.hub-sec');if(s.length&&!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});var H=[];d.querySelectorAll('.toc-list a').forEach(function(a){var h=d.getElementById(a.getAttribute('href').slice(1));if(h)H.push([h,a]);});if(H.length){var cur=null,q=false;var spy=function(){q=false;var c=null;for(var i=0;i<H.length;i++){if(H[i][0].getBoundingClientRect().top<=130)c=H[i][1];else break;}if(c!==cur){if(cur)cur.removeAttribute('aria-current');if(c)c.setAttribute('aria-current','true');cur=c;}};addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(spy);}},{passive:true});spy();}})();`;
 
 function renderPost(post, bodyMarkdown, hubPayload) {
   const slug = post.slug;
@@ -324,18 +326,22 @@ function renderPost(post, bodyMarkdown, hubPayload) {
   // -- owner order 2026-09-27), with a call to action after it.
   const arranged = arrangeArticleForReading(bodyMarkdown);
   const hasMore = Boolean(arranged.rest);
-  const openingHtml = marked.parse(arranged.opening);
-  const restHtml = hasMore ? marked.parse(arranged.rest) : '';
+  // Every section heading gets an id: the post's index ("In this report") links to them.
+  const headingIds = newIdRegistry();
+  const opening = addHeadingIds(marked.parse(arranged.opening), headingIds);
+  const rest = hasMore ? addHeadingIds(marked.parse(arranged.rest), headingIds) : { html: '', entries: [] };
+  const openingHtml = opening.html;
+  const restHtml = rest.html;
 
   const faq = faqItems(post);
   const faqHtml = faq.length
-    ? `<section class="post-section">\n<h2>Frequently asked questions</h2>\n${faq
+    ? `<section class="post-section">\n<h2 id="faq">Frequently asked questions</h2>\n${faq
         .map((f) => `<h3>${esc(f.question)}</h3>\n<p>${esc(f.answer)}</p>`)
         .join('\n')}\n</section>`
     : '';
   const sources = sourceItems(post);
   const sourcesHtml = sources.length
-    ? `<section class="post-section">\n<h2>Sources</h2>\n<ol class="sources">\n${sources
+    ? `<section class="post-section">\n<h2 id="sources">Sources</h2>\n<ol class="sources">\n${sources
         .map((s) => {
           const n = s.number ? `<span class="n">[${esc(s.number)}]</span>` : '';
           const domain = str(s.domain) ? ` — ${esc(s.domain)}` : '';
@@ -353,8 +359,17 @@ function renderPost(post, bodyMarkdown, hubPayload) {
 
   const hub = hubPayload ? renderResearchHub(hubPayload, post.sources) : null;
 
+  const tocEntries = [
+    ...opening.entries,
+    ...rest.entries,
+    ...(faq.length ? [{ id: 'faq', label: 'Frequently asked questions' }] : []),
+    ...(sources.length ? [{ id: 'sources', label: 'Sources' }] : []),
+  ];
+  const hasToc = tocEntries.length >= TOC_MIN_ENTRIES;
+
   const body = `<main>
-<div class="layout">
+<div class="layout${hasToc ? ' has-toc' : ''}">
+${tocPanelHtml(tocEntries)}
 <div class="article-col">
 <article class="article-in">
 <header>
@@ -364,6 +379,7 @@ ${kicker}
 ${byline ? `<div class="byline">${byline}</div>` : ''}
 </header>
 ${disclaimerTop}
+${tocInlineHtml(tocEntries)}
 <div class="prose">
 ${openingHtml}
 </div>
@@ -379,8 +395,8 @@ ${aiNote}
 ${hub ? hub.html : ''}
 </div>
 </main>
-${hub ? `<a class="hub-bar" href="#research-hub" data-hub="open" aria-label="Open the Research Hub">Research Hub <span>${hub.count}</span></a>
-<script>${HUB_SCRIPT}</script>` : ''}`;
+${hub || hasToc ? `<div class="dock">${hasToc ? '<a class="toc-bar" href="#post-index" data-toc="open" aria-label="Open the index of this report">Contents</a>' : ''}${hub ? `<a class="hub-bar" href="#research-hub" data-hub="open" aria-label="Open the Research Hub">Research Hub <span>${hub.count}</span></a>` : ''}</div>
+<script>${PAGE_SCRIPT}</script>` : ''}`;
 
   return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body });
 }
