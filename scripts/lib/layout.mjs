@@ -172,9 +172,12 @@ body.post .site-header { position: relative; padding-bottom: 16px; }
 .prose a { color: var(--ra-accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .14em; }
 .prose strong { font-weight: 600; }
 .prose code { border: 1px solid var(--ra-rule); background: var(--ra-th); padding: .08em .3em; font-size: .85em; }
-.prose table { display: block; width: 100%; max-width: 100%; overflow-x: auto; margin: 1.5rem 0; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .82rem; line-height: 1.5; }
-.prose th, .prose td { border: 1px solid var(--ra-rule); padding: .5rem .75rem; text-align: left; vertical-align: top; }
+.table-wrap { max-width: 100%; margin: 1.5rem 0; overflow-x: auto; }
+.prose table { display: table; width: 100%; margin: 0; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .82rem; line-height: 1.5; }
+.prose th, .prose td { border: 1px solid var(--ra-rule); padding: .5rem .75rem; text-align: left; vertical-align: top; overflow-wrap: normal; }
 .prose th { background: var(--ra-th); font-weight: 600; white-space: nowrap; }
+.prose th[align="right"], .prose td[align="right"] { text-align: right; }
+.prose th[align="center"], .prose td[align="center"] { text-align: center; }
 .prose hr { border: 0; border-top: 1px solid var(--ra-rule); margin: 1.75rem 0; }
 .prose img { border-radius: 4px; }
 .prose h2[id], .prose h3[id], .post-section[id], .post-section h2[id] { scroll-margin-top: calc(var(--bar-h) + 8px); }

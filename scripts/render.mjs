@@ -278,7 +278,11 @@ function chaptersHtml(markdown, { first = false } = {}) {
   return groups
     .map((group, index) => {
       if (!group.length) return '';
-      const html = marked.parser(Object.assign(group, { links: tokens.links }));
+      // Every table in its own horizontal scroll box (the viewer's): markup we just printed, never post text.
+      const html = marked
+        .parser(Object.assign(group, { links: tokens.links }))
+        .replace(/<table>/g, '<div class="table-wrap"><table>')
+        .replace(/<\/table>/g, '</table></div>');
       if (index === 0) return `<div class="prose">\n${html}</div>`;
       return `<section class="chapter prose${first && index === 1 ? ' first' : ''}">\n${html}</section>`;
     })
