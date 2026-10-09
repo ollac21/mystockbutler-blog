@@ -17,7 +17,7 @@ import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
 import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
-import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocInlineHtml, tocPanelHtml } from './lib/toc.mjs';
+import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
@@ -66,6 +66,12 @@ function lastModified(post) {
   const dates = [toDate(post.published_at), toDate(post.updated_date)].filter(Boolean);
   if (!dates.length) return '';
   return new Date(Math.max(...dates.map((d) => d.getTime()))).toISOString();
+}
+
+// "Oct 7, 2026" -- the report viewer's header date (mystockbutler-app ReportHeader), in UTC.
+function shortDate(value) {
+  const d = toDate(value);
+  return d ? d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }) : '';
 }
 
 function humanDate(value) {
@@ -196,7 +202,7 @@ function structuredData(post, canonical) {
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 
-function pageShell({ title, description, canonical, robots, head = '', body }) {
+function pageShell({ title, description, canonical, robots, head = '', body, bodyClass = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -207,7 +213,7 @@ ${description ? `<meta name="description" content="${esc(description)}">\n` : ''
 <meta name="robots" content="${esc(robots || 'index,follow')}">
 ${FONT_LINKS}${head}<style>${STYLE}</style>
 </head>
-<body>
+<body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${siteHeader()}
 ${body}
 ${siteFooter()}
@@ -231,7 +237,7 @@ function callToAction(kind, ticker) {
   const memo = ticker
     ? `<a class="btn" href="${APP}/reports/library/${encodeURIComponent(ticker)}">Read the full ${esc(ticker)} memo</a>`
     : '';
-  return `<aside class="cta" aria-label="Get the full memo">
+  return `<aside class="cta" aria-label="Get the full memo" data-end-cta>
 <div class="cta-text"><strong>This article is the memo’s summary — annexes, every statement year and every source are in the full report.</strong><p class="sub">Five years of financials, the forecast model, and the complete source list.</p></div>
 <div class="btns">${memo}<a class="btn${ticker ? ' ghost' : ''}" href="${APP}/login">Start researching &rarr;</a></div>
 </aside>`;
@@ -259,10 +265,74 @@ ${hook ? `<p class="hook">${esc(hook)}</p>` : ''}
 </a>`;
 }
 
-// The two drawers on a narrow screen (the Research Hub, the post's index), the highlighted line of the
-// index while reading, and one-open-at-a-time Hub sections on browsers that ignore <details name>.
-// Without this script the page still works: each pill opens its drawer through :target.
-const PAGE_SCRIPT = `(function(){var d=document,r=d.documentElement;r.classList.add('js');function set(k,o){r.classList.toggle(k+'-open',o);if(o)r.classList.remove((k==='hub'?'toc':'hub')+'-open');}if(location.hash==='#research-hub')set('hub',true);d.addEventListener('click',function(e){var t=e.target;if(!t.closest)return;var a=t.closest('[data-hub],[data-toc]');if(a){var k=a.hasAttribute('data-hub')?'hub':'toc';e.preventDefault();set(k,a.getAttribute('data-'+k)==='open');return;}if(t.closest('.toc-list a'))set('toc',false);});d.addEventListener('keydown',function(e){if(e.key==='Escape'){set('hub',false);set('toc',false);}});var s=d.querySelectorAll('details.hub-sec');if(s.length&&!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});var H=[];d.querySelectorAll('.toc-list a').forEach(function(a){var h=d.getElementById(a.getAttribute('href').slice(1));if(h)H.push([h,a]);});if(H.length){var cur=null,q=false;var spy=function(){q=false;var c=null;for(var i=0;i<H.length;i++){if(H[i][0].getBoundingClientRect().top<=130)c=H[i][1];else break;}if(c!==cur){if(cur)cur.removeAttribute('aria-current');if(c)c.setAttribute('aria-current','true');cur=c;}};addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(spy);}},{passive:true});spy();}})();`;
+// Markdown -> HTML with one <section class="chapter"> per "## " chapter (the report viewer's sections). The
+// block is tokenized once and each chapter printed from its own tokens, so the HTML inside a chapter is exactly
+// what marked printed for the whole block (reference links keep working across chapters).
+function chaptersHtml(markdown, { first = false } = {}) {
+  const tokens = marked.lexer(markdown);
+  const groups = [[]];
+  for (const token of tokens) {
+    if (token.type === 'heading' && token.depth === 2) groups.push([]);
+    groups[groups.length - 1].push(token);
+  }
+  return groups
+    .map((group, index) => {
+      if (!group.length) return '';
+      const html = marked.parser(Object.assign(group, { links: tokens.links }));
+      if (index === 0) return `<div class="prose">\n${html}</div>`;
+      return `<section class="chapter prose${first && index === 1 ? ' first' : ''}">\n${html}</section>`;
+    })
+    .filter(Boolean)
+    .join('\n');
+}
+
+// Icons (lucide's, as the app draws them), inline so the page loads nothing more.
+const ICON = {
+  back: '<svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>',
+  search: '<svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>',
+  share: '<svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg>',
+  list: '<svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg>',
+  file: '<svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>',
+};
+
+// The page script. Without it the page still works: the bottom bar's halves open their drawers through
+// :target, every Contents entry is a plain #link and the first chapter is unfolded. With it:
+// - the two drawers (Contents, Research Hub) open and close smoothly, Escape closes them;
+// - the Contents follows the reading position: the section being read is highlighted and its chapter
+//   unfolds (the app's rule, src/lib/tocFolds.js: a chapter with no hand fold is open exactly when it is
+//   being read; arriving in a chapter forgets its hand fold);
+// - the Contents column folds to chapter numbers on a wide screen (its button ships hidden);
+// - the share button (shipped hidden) hands the page's canonical address to the share sheet or the clipboard;
+// - the page's own "Start researching" button (the call to action after the Executive summary) is copied
+//   into a slim button over the bottom bar once the Executive summary has scrolled away, and steps aside
+//   while the end-of-article call to action is on screen;
+// - Research Hub sections open one at a time on browsers that ignore <details name>.
+const PAGE_SCRIPT = `(function(){
+var d=document,r=d.documentElement,W=window;r.classList.add('js');
+function set(k,o){r.classList.toggle(k+'-open',o);if(o)r.classList.remove((k==='hub'?'toc':'hub')+'-open');}
+if(location.hash==='#research-hub')set('hub',true);
+var chapters=[].slice.call(d.querySelectorAll('.toc-ch'));
+var hand={},owner=null;
+function fold(){chapters.forEach(function(li){var x=li.querySelector('details');if(!x)return;var id=li.getAttribute('data-toc-id');x.open=Object.prototype.hasOwnProperty.call(hand,id)?hand[id]:id===owner;});}
+d.addEventListener('click',function(e){var t=e.target;if(!t.closest)return;
+var a=t.closest('[data-hub],[data-toc]');if(a){var k=a.hasAttribute('data-hub')?'hub':'toc';e.preventDefault();set(k,a.getAttribute('data-'+k)==='open');return;}
+var sm=t.closest('.toc-ch summary');if(sm){var li=sm.closest('.toc-ch'),id=li.getAttribute('data-toc-id'),x=li.querySelector('details');if(t.closest('a')){hand[id]=true;fold();set('toc',false);}else{e.preventDefault();hand[id]=!x.open;fold();}return;}
+if(t.closest('.toc-list a'))set('toc',false);
+var f=t.closest('[data-toc-fold]');if(f){var c=r.classList.toggle('toc-collapsed');f.setAttribute('aria-label',c?'Expand report contents':'Collapse report contents');f.setAttribute('title',c?'Expand contents':'Collapse contents');return;}
+var sh=t.closest('[data-share]');if(sh){var u=(d.querySelector('link[rel=canonical]')||{}).href||location.href;if(navigator.share){navigator.share({title:d.title,url:u}).catch(function(){});}else if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){sh.classList.add('done');setTimeout(function(){sh.classList.remove('done');},1800);}).catch(function(){});}}
+});
+d.addEventListener('keydown',function(e){if(e.key==='Escape'){set('hub',false);set('toc',false);}});
+d.querySelectorAll('[data-toc-fold],[data-share]').forEach(function(b){b.hidden=false;});
+var s=d.querySelectorAll('details.hub-sec');if(s.length&&!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});
+var slim=d.querySelector('[data-slim]'),src=d.querySelector('.cta a[href$="/login"]'),first=d.querySelector('section.chapter'),end=d.querySelector('[data-end-cta]');
+if(slim&&src){var b=src.cloneNode(true);b.removeAttribute('class');b.setAttribute('tabindex','-1');slim.appendChild(b);}
+var H=[];d.querySelectorAll('.toc-list a').forEach(function(a){var h=d.getElementById(a.getAttribute('href').slice(1));if(h)H.push([h,a]);});
+var cur=null,q=false;
+function spy(){q=false;var c=null,line=W.innerHeight*0.3;for(var i=0;i<H.length;i++){if(H[i][0].getBoundingClientRect().top<=line)c=H[i][1];else break;}if(!c&&H.length)c=H[0][1];
+if(c!==cur){if(cur)cur.removeAttribute('aria-current');if(c)c.setAttribute('aria-current','true');cur=c;var li=c&&c.closest('.toc-ch'),o=li?li.getAttribute('data-toc-id'):null;if(o!==owner){owner=o;if(o)delete hand[o];fold();}}
+if(slim&&slim.firstChild){var on=!!first&&first.getBoundingClientRect().bottom<64&&!(end&&end.getBoundingClientRect().top<W.innerHeight);if(on!==slim.classList.contains('on')){slim.classList.toggle('on',on);slim.firstChild.setAttribute('tabindex',on?'0':'-1');}}}
+W.addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(spy);}},{passive:true});W.addEventListener('resize',spy);spy();
+})();`;
 
 function renderPost(post, bodyMarkdown, hubPayload) {
   const slug = post.slug;
@@ -326,10 +396,10 @@ function renderPost(post, bodyMarkdown, hubPayload) {
   // -- owner order 2026-09-27), with a call to action after it.
   const arranged = arrangeArticleForReading(bodyMarkdown);
   const hasMore = Boolean(arranged.rest);
-  // Every section heading gets an id: the post's index ("In this report") links to them.
+  // One section per chapter; every chapter and subsection heading gets an id (the Contents links to them).
   const headingIds = newIdRegistry();
-  const opening = addHeadingIds(marked.parse(arranged.opening), headingIds);
-  const rest = hasMore ? addHeadingIds(marked.parse(arranged.rest), headingIds) : { html: '', entries: [] };
+  const opening = addHeadingIds(chaptersHtml(arranged.opening, { first: true }), headingIds);
+  const rest = hasMore ? addHeadingIds(chaptersHtml(arranged.rest), headingIds) : { html: '', entries: [] };
   const openingHtml = opening.html;
   const restHtml = rest.html;
 
@@ -362,13 +432,32 @@ function renderPost(post, bodyMarkdown, hubPayload) {
   const tocEntries = [
     ...opening.entries,
     ...rest.entries,
-    ...(faq.length ? [{ id: 'faq', label: 'Frequently asked questions' }] : []),
-    ...(sources.length ? [{ id: 'sources', label: 'Sources' }] : []),
+    ...(faq.length ? [{ id: 'faq', label: 'Frequently asked questions', subsections: [] }] : []),
+    ...(sources.length ? [{ id: 'sources', label: 'Sources', subsections: [] }] : []),
   ];
   const hasToc = tocEntries.length >= TOC_MIN_ENTRIES;
+  const hasChapters = /<section class="chapter/.test(openingHtml);
 
-  const body = `<main>
-<div class="layout${hasToc ? ' has-toc' : ''}">
+  // The report viewer's header bar: back, ticker + company, "Updated <date>" (the page's dateModified),
+  // then search (the list of all research) and share (shipped hidden: it needs the page script).
+  const updated = shortDate(lastModified(post));
+  const barName = str(post.company_name) || title;
+  const barSub = [str(post.exchange), updated ? `Updated ${updated}` : ''].filter(Boolean).map(esc).join(' &middot; ');
+  const reportBar = `<div class="report-bar"><div class="rb-in">
+<div class="rb-left"><a class="icon-btn rb-back" href="/" aria-label="All research" title="All research">${ICON.back}</a><div class="rb-id"><div class="rb-top">${ticker ? `<span class="rb-tick">${esc(ticker)}</span>` : ''}<span class="rb-name">${esc(barName)}</span></div>${barSub ? `<div class="rb-sub">${barSub}</div>` : ''}</div></div>
+<div class="rb-actions"><a class="icon-btn" href="/" aria-label="Search research" title="Search research">${ICON.search}</a><button class="icon-btn" type="button" data-share hidden aria-label="Share report" title="Share report">${ICON.share}</button></div>
+</div></div>`;
+  // Phones: the app's bottom bar, two equal halves ("Contents" | "Resources"), no label, no count.
+  const dock =
+    hub || hasToc
+      ? `<div class="dock"><div class="dock-in">${
+          hasToc ? `<a href="#post-index" data-toc="open" aria-label="Open report contents">${ICON.list}<span>Contents</span></a>` : ''
+        }${hub ? `<a href="#research-hub" data-hub="open" aria-label="Open Research Hub">${ICON.file}<span>Resources</span></a>` : ''}</div></div>`
+      : '';
+
+  const body = `${reportBar}
+<main>
+<div class="layout">
 ${tocPanelHtml(tocEntries)}
 <div class="article-col">
 <article class="article-in">
@@ -379,12 +468,10 @@ ${kicker}
 ${byline ? `<div class="byline">${byline}</div>` : ''}
 </header>
 ${disclaimerTop}
-${tocInlineHtml(tocEntries)}
-<div class="prose">
 ${openingHtml}
-</div>
 ${hasMore ? callToAction('inline') : ''}
-${hasMore ? `<div class="prose">\n${restHtml}\n</div>` : ''}
+${hasMore ? restHtml : ''}
+${hasChapters ? '<div class="slim" data-slim></div>' : ''}
 ${callToAction('end', isLibrary ? ticker : '')}
 ${faqHtml}
 ${sourcesHtml}
@@ -395,10 +482,10 @@ ${aiNote}
 ${hub ? hub.html : ''}
 </div>
 </main>
-${hub || hasToc ? `<div class="dock">${hasToc ? '<a class="toc-bar" href="#post-index" data-toc="open" aria-label="Open the index of this report">Contents</a>' : ''}${hub ? `<a class="hub-bar" href="#research-hub" data-hub="open" aria-label="Open the Research Hub">Research Hub <span>${hub.count}</span></a>` : ''}</div>
-<script>${PAGE_SCRIPT}</script>` : ''}`;
+${dock}
+<script>${PAGE_SCRIPT}</script>`;
 
-  return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body });
+  return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body, bodyClass: 'post' });
 }
 
 function renderIndex(entries) {
