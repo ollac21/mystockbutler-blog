@@ -2,11 +2,18 @@
 // verbatim extraction of the landing's panel code); this file only prints that model's sections.
 // The Hub works with no JavaScript: sections are <details> sharing one name (opening one closes the
 // others), every source is a plain link, so the Hub is also crawlable. On a phone the Hub is a bottom
-// drawer opened by the small pill (render.mjs); a few lines of script only make closing it smoother. Returns null when the Hub holds nothing (the caller then
-// omits the Hub entirely -- no frame, no placeholder).
+// drawer opened by the bottom bar's "Resources" half (render.mjs); a few lines of script only make closing
+// it smoother. Returns null when the Hub holds nothing (the caller then omits the Hub entirely -- no frame,
+// no placeholder).
+// The DRAWING is the app's Research Hub (owner order 2026-10-09, mystockbutler-app
+// src/components/report/ResearchHubPanel.jsx): each section header is its title, a count chip and a
+// chevron; Start Here is a list of slim numbered rows; each person is a card "Name — Role", then one line
+// per profile link (a dot) and per interview (a microphone, "<title, cut with …> · <Mon YYYY>"), then
+// "Insider filings (N) →".
 import { blogCitedSources, buildResearchHubSections } from '../hub/hubModel.mjs';
 import {
   displayAggregateLabel,
+  displayAppearanceLabel,
   displayDate,
   displayShelfTitle,
   displayTitle,
@@ -16,6 +23,14 @@ import {
 import { esc } from './layout.mjs';
 
 const CHIP_RUN_SHELF_IDS = new Set(['annual_reports', 'quarterly_reports']);
+
+// lucide icons, as the app draws them (inline: the page loads nothing more).
+const svg = (size, body, cls) =>
+  `<svg class="${cls}" aria-hidden="true" viewBox="0 0 24 24" width="${size}" height="${size}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;
+const MIC = svg(12, '<path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/>', 'hub-mic');
+const CHEVRON = svg(20, '<path d="m6 9 6 6 6-6"/>', 'hub-chev');
+const EXTERNAL = svg(12, '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3"/>', 'hub-ext');
+const PERSON_LINK_LABELS = { linkedin: 'LinkedIn', x: 'X', bio: 'Bio' };
 const BENCHMARK_TITLE = 'Pay & valuation benchmarks';
 
 function link(resource, text) {
@@ -99,37 +114,61 @@ function transcriptsHtml(rows) {
 // A person's own links, as the app's person card shows them: a bio, LinkedIn and X when the Hub holds
 // them, the count of insider filings, and up to three dated interviews or appearances -- all read from
 // the display model's own fields (linkSummary, insiderFilings); nothing is derived here.
-function personLinksHtml(person) {
+// The app's person card (HubPersonCard): "Name — Role"; one row per LinkedIn / X / Bio link (a dot), then
+// per interview (a microphone and its "<title> · <Mon YYYY>" label, the full title on hover); then the
+// insider-filings line. Same rows, same links as before -- only drawn as the app draws them.
+function personCardHtml(person) {
+  const role = person.roleLabel || person.kindLabel;
+  const nameLine = role ? `${person.name} — ${role}` : person.name;
   const summary = person.linkSummary || {};
-  const quick = [];
-  if (summary.bio) quick.push(link(summary.bio, 'Bio'));
-  if (summary.linkedin) quick.push(link(summary.linkedin, 'LinkedIn'));
-  if (summary.x) quick.push(link(summary.x, 'X'));
-  const filings = person.insiderFilings;
-  if (filings && filings.url) {
-    quick.push(
-      `<a href="${esc(filings.url)}" target="_blank" rel="noopener noreferrer">Insider filings (${esc(String(filings.count))})</a>`
+  const rows = [];
+  for (const category of ['linkedin', 'x', 'bio']) {
+    const resource = summary[category];
+    if (resource && resource.url) {
+      rows.push(
+        `<li><span class="hub-dot" aria-hidden="true">·</span><a href="${esc(resource.url)}" title="${esc(resource.title || '')}" target="_blank" rel="noopener noreferrer">${esc(PERSON_LINK_LABELS[category])}</a></li>`
+      );
+    }
+  }
+  for (const resource of Array.isArray(summary.appearances) ? summary.appearances : []) {
+    if (!resource || !resource.url) continue;
+    const label = displayAppearanceLabel(resource) || resource.dateLabel || resource.title;
+    rows.push(
+      `<li>${MIC}<a href="${esc(resource.url)}" title="${esc(resource.title || '')}" target="_blank" rel="noopener noreferrer">${esc(label)}</a></li>`
     );
   }
-  const appearances = Array.isArray(summary.appearances) ? summary.appearances : [];
-  return `${quick.length ? `<span class="pl">${quick.join(' · ')}</span>` : ''}${
-    appearances.length ? `<ul class="hub-list hub-person-rows">${appearances.map(resourceItem).join('')}</ul>` : ''
-  }`;
+  const filings = person.insiderFilings;
+  const filingsLine =
+    filings && filings.url
+      ? `<a class="hub-ins" href="${esc(filings.url)}" target="_blank" rel="noopener noreferrer"><span>Insider filings (${esc(String(filings.count))})</span><span aria-hidden="true">&rarr;</span></a>`
+      : '';
+  return `<div class="hub-person" data-hub-person-card><span class="hub-pname">${esc(nameLine)}</span>${
+    rows.length ? `<ul class="hub-plinks">${rows.join('')}</ul>` : ''
+  }${filingsLine}</div>`;
+}
+
+// The app's Start Here rows (HubStartRow): a small ordinal, the title in green, the date and an external-link mark.
+function startRowsHtml(resources) {
+  return `<ol class="hub-start">${resources
+    .map((resource, index) => {
+      const title = rowTitle(resource);
+      const inner = `<span class="o" aria-hidden="true">${index + 1}.</span><span class="t">${esc(title)}</span>${
+        resource.dateLabel || resource.url ? `<span class="d">${esc(resource.dateLabel || '')}${resource.url ? EXTERNAL : ''}</span>` : ''
+      }`;
+      return resource.url
+        ? `<li><a href="${esc(resource.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(`Open ${title}${resource.host ? ` on ${resource.host}` : ''}`)}">${inner}</a></li>`
+        : `<li><span class="row">${inner}</span></li>`;
+    })
+    .join('')}</ol>`;
 }
 
 function sectionHtml(section, open, transcripts = []) {
   const body = [];
   if (section.shelves.length) body.push(section.shelves.map(shelfHtml).join(''));
+  else if (section.id === 'start_here') body.push(startRowsHtml(section.resources));
   else body.push(list(section.resources));
   if (section.people.length) {
-    body.push(
-      `<ul class="hub-people">${section.people
-        .map(
-          person =>
-            `<li>${esc(person.name)}${person.roleLabel ? `<span class="r">${esc(person.roleLabel)}</span>` : ''}${personLinksHtml(person)}</li>`
-        )
-        .join('')}</ul>`
-    );
+    body.push(`<div class="hub-people">${section.people.map(personCardHtml).join('')}</div>`);
   }
   if (section.benchmarkResources.length) {
     body.push(`<h4>${esc(BENCHMARK_TITLE)}</h4>${list(section.benchmarkResources)}`);
@@ -139,7 +178,7 @@ function sectionHtml(section, open, transcripts = []) {
   if (section.count === 0 && section.honestEmptySentence) {
     body.push(`<p class="hub-empty">${esc(section.honestEmptySentence)}</p>`);
   }
-  return `<details class="hub-sec" name="hub-sec"${open ? ' open' : ''}><summary>${esc(section.title)}<span class="count">${section.count}</span></summary><div class="hub-body">${body.join('')}</div></details>`;
+  return `<details class="hub-sec" name="hub-sec"${open ? ' open' : ''}><summary><span class="hub-st">${esc(section.title)}</span><span class="count">${section.count}</span><span class="hub-chev-box">${CHEVRON}</span></summary><div class="hub-body">${body.join('')}</div></details>`;
 }
 
 /** @returns {{ html: string, count: number } | null} */
@@ -157,7 +196,7 @@ export function renderResearchHub(payload, postSources) {
   return {
     count: built.totalCount,
     html: `<aside class="hub" id="research-hub" aria-label="Research Hub">
-<div class="hub-head"><span>Research Hub <span class="hub-n">${built.totalCount}</span></span><a class="hub-close" href="#_" data-hub="close" aria-label="Close the Research Hub">&times;</a></div>
+<div class="hub-head"><div class="hub-ttl"><span class="hub-title">Research Hub</span><span class="hub-desc">Company resources and cited evidence</span></div><a class="hub-close" href="#_" data-hub="close" aria-label="Close Research Hub">&times;</a></div>
 <div class="hub-scroll">
 ${sections}
 </div>

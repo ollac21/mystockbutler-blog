@@ -247,36 +247,56 @@ details[open] > .toc-row .toc-arrow { transform: rotate(90deg); }
 .hub { background: var(--ra-bg); border: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; scroll-margin-top: var(--bar-h); }
 @media (min-width: 1024px) { .hub { position: sticky; top: var(--bar-h); flex: none; width: 320px; height: calc(100vh - var(--bar-h)); border-left: 1px solid var(--border); overflow: hidden; display: flex; flex-direction: column; } .hub-scroll { overflow-y: auto; } }
 @media (min-width: 1280px) { .hub { width: 400px; } }
-.hub-head { display: flex; align-items: center; justify-content: space-between; height: 44px; padding: 0 14px; border-bottom: 1px solid var(--border); font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.hub-scroll { padding: 14px 12px; }
-.hub-sec { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; background: var(--card); }
-.hub-sec > summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 14px; cursor: pointer; list-style: none; font-size: 14px; font-weight: 600; }
+/* the Research Hub, drawn as the app's (mystockbutler-app ResearchHubPanel.jsx) in the app's own colours */
+.hub { --fg: hsl(150 15% 11%); --card: #fff; --primary: hsl(150 57% 28%); --muted: hsl(150 8% 43%); --band: hsl(150 6% 93%); --border: hsl(150 10% 87%); --hub-bg: hsl(150 5% 96.5%); --tint: hsl(150 57% 28% / .08); }
+@media (prefers-color-scheme: dark) { .hub { --fg: hsl(150 5% 95%); --card: hsl(150 8% 11%); --primary: hsl(150 45% 45%); --muted: hsl(150 5% 58%); --band: hsl(150 6% 16%); --border: hsl(150 6% 20%); --hub-bg: hsl(150 10% 8%); --tint: hsl(150 45% 45% / .12); } }
+.hub-head { display: flex; flex: none; align-items: center; justify-content: space-between; gap: 12px; height: 44px; padding: 0 12px; border-bottom: 1px solid var(--border); }
+.hub-ttl { display: flex; min-width: 0; flex-direction: column; }
+.hub-title { font-size: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.hub-desc { display: none; }
+.hub-scroll { display: flex; flex-direction: column; gap: 8px; padding: 16px 12px; }
+.hub-sec { border: 1px solid var(--border); border-radius: 6px; background: var(--card); }
+.hub-sec > summary { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 12px; border-radius: 6px; list-style: none; cursor: pointer; }
 .hub-sec > summary::-webkit-details-marker { display: none; }
-.hub-sec > summary::after { content: "+"; color: var(--muted); font-weight: 400; margin-left: auto; padding-left: 8px; }
-.hub-sec[open] > summary::after { content: "\\2212"; }
-.hub-sec .count { background: var(--band); border-radius: 6px; padding: 1px 8px; font-size: 11px; font-weight: 500; color: var(--muted); order: 2; }
-.hub-sec > summary::after { order: 3; }
-.hub-body { padding: 0 8px 10px; }
-.hub-body h4 { margin: 12px 6px 6px; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.hub-sec > summary:hover { background: color-mix(in srgb, var(--band) 50%, transparent); }
+.hub-st { flex: 1; min-width: 0; font-size: 13px; font-weight: 600; line-height: 20px; color: var(--fg); }
+.hub-sec .count { flex: none; border-radius: 4px; background: var(--band); padding: 2px 8px; font-size: 11px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.hub-chev-box { display: inline-flex; flex: none; width: 32px; height: 32px; align-items: center; justify-content: center; color: var(--muted); }
+.hub-chev { transition: transform .15s; }
+.hub-sec[open] .hub-chev { transform: rotate(180deg); }
+.hub-body { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--border); padding: 8px; }
+.hub-body h4 { margin: 4px 4px 0; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .hub-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .hub-list li { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12.5px; line-height: 1.4; background: var(--tint); }
-.hub-list a { text-decoration: none; font-weight: 500; }
+.hub-list a { color: var(--primary); text-decoration: none; font-weight: 500; }
 .hub-list a:hover { text-decoration: underline; }
 .hub-list .d { flex: none; font-size: 11px; color: var(--muted); white-space: nowrap; }
 .hub-list .s { display: block; font-size: 11px; color: var(--muted); }
 .hub-list li.off { opacity: .55; background: var(--band); cursor: not-allowed; }
 .hub-list li.off span:first-child { color: var(--muted); font-weight: 500; }
-.hub-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 6px; }
-.hub-chips a { border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 500; text-decoration: none; background: var(--tint); }
-.hub-people { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
-.hub-people li { border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 12.5px; }
-.hub-people .r { display: block; font-size: 11px; color: var(--muted); }
-.hub-people .pl { display: block; margin-top: 3px; font-size: 11.5px; }
-.hub-people .pl a { text-decoration: none; font-weight: 500; }
-.hub-people .pl a:hover { text-decoration: underline; }
-.hub-person-rows { margin-top: 6px; }
-.hub-empty { margin: 8px 6px 0; font-size: 12px; color: var(--muted); }
-.hub-n { margin-left: 6px; background: var(--band); border-radius: 6px; padding: 1px 7px; font-size: 10px; letter-spacing: 0; color: var(--muted); }
+.hub-chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 4px; }
+.hub-chips a { border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; font-size: 12px; font-weight: 500; color: var(--primary); text-decoration: none; background: var(--tint); }
+/* Start Here: slim numbered rows */
+.hub-start { list-style: none; margin: 0; padding: 0; }
+.hub-start a, .hub-start .row { display: flex; align-items: flex-start; gap: 8px; padding: 4px 6px; border-radius: 4px; text-decoration: none; }
+.hub-start a:hover { background: var(--tint); }
+.hub-start a:hover .t { text-decoration: underline; }
+.hub-start .o { flex: none; width: 16px; text-align: right; font-size: 10px; font-weight: 600; line-height: 16px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.hub-start .t { flex: 1; min-width: 0; font-size: 11.5px; font-weight: 500; line-height: 16px; color: var(--primary); }
+.hub-start .d { display: inline-flex; flex: none; align-items: center; gap: 4px; font-size: 10.5px; line-height: 16px; white-space: nowrap; color: var(--muted); }
+.hub-ext { flex: none; opacity: .6; }
+/* people: one card each -- "Name — Role", profile links and interviews, insider filings */
+.hub-people { display: flex; flex-direction: column; gap: 8px; }
+.hub-person { display: flex; flex-direction: column; gap: 4px; border: 1px solid var(--border); border-radius: 6px; background: var(--hub-bg); padding: 8px 10px; }
+.hub-pname { font-size: 12px; font-weight: 600; line-height: 1.375; color: var(--fg); }
+.hub-plinks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; font-size: 11px; line-height: 16px; color: var(--primary); }
+.hub-plinks li { display: flex; align-items: flex-start; gap: 6px; }
+.hub-plinks a { min-width: 0; color: var(--primary); text-decoration: none; }
+.hub-plinks a:hover, .hub-ins:hover { text-decoration: underline; }
+.hub-mic { flex: none; margin-top: 2px; opacity: .7; }
+.hub-dot { flex: none; width: 12px; text-align: center; color: var(--muted); }
+.hub-ins { display: flex; align-items: center; gap: 4px; min-height: 24px; font-size: 11px; font-weight: 500; color: var(--primary); text-decoration: none; }
+.hub-empty { margin: 4px 4px 0; font-size: 11.5px; line-height: 1.6; color: var(--muted); }
 .hub-close, .hub-backdrop { display: none; }
 /* phones: the app's bottom bar -- two equal halves, "Contents" and "Resources", no label, no count */
 .dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)); background: color-mix(in srgb, var(--card) 95%, transparent); border-top: 1px solid var(--border); box-shadow: 0 -10px 30px rgba(15,23,42,.16); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -288,11 +308,11 @@ details[open] > .toc-row .toc-arrow { transform: rotate(90deg); }
 html.hub-open .dock, html.toc-open .dock { visibility: hidden; }
 @media (max-width: 1023px) {
   .hub { position: fixed; left: 0; right: 0; bottom: 0; z-index: 46; max-height: 85vh; display: flex; flex-direction: column; background: var(--card); border-radius: 6px 6px 0 0; border-top: 1px solid var(--border); box-shadow: 0 -10px 40px rgba(17,24,20,.22); transform: translateY(105%); visibility: hidden; transition: transform .22s ease, visibility .22s; padding-bottom: env(safe-area-inset-bottom, 0px); }
-  .hub-head { flex: none; height: 56px; padding: 0 6px 0 16px; }
+  .hub-head { height: auto; min-height: 64px; padding: 12px 6px 12px 16px; }
+  .hub-title { font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--fg); }
+  .hub-desc { display: block; margin-top: 2px; font-size: 12px; color: var(--muted); }
   .hub-close { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; font-size: 22px; line-height: 1; font-weight: 400; color: var(--muted); text-decoration: none; }
-  .hub-scroll { overflow-y: auto; overscroll-behavior: contain; padding: 8px 8px 12px; }
-  .hub-sec { margin-bottom: 6px; }
-  .hub-sec > summary { padding: 10px 12px; font-size: 13.5px; }
+  .hub-scroll { overflow-y: auto; overscroll-behavior: contain; padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
   .hub-backdrop { position: fixed; inset: 0; z-index: 45; background: rgba(10,14,12,.4); }
   html.hub-open .hub, html:not(.js) .hub:target { transform: none; visibility: visible; }
   html.hub-open .hub-backdrop, html:not(.js) .hub:target + .hub-backdrop { display: block; }
