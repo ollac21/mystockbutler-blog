@@ -178,6 +178,9 @@ body.post .site-header { position: relative; padding-bottom: 16px; }
 .prose th { background: var(--ra-th); font-weight: 600; white-space: nowrap; }
 .prose th[align="right"], .prose td[align="right"] { text-align: right; }
 .prose th[align="center"], .prose td[align="center"] { text-align: center; }
+/* a chapter drawn by the app (msb-html): its article file carries the memo-table CSS with the light colours; this page is also
+   dark, so the file's colour tokens get the app's dark values here (mystockbutler-app src/index.css .report-article[data-theme="dark"]) */
+@media (prefers-color-scheme: dark) { .msb-html .memo-tables { --ra-tbl-title: #8FD8CC; --ra-tbl-unit: #9AA0A8; --ra-tbl-head: #53C2AA; --ra-tbl-rule: #2B2E34; --ra-tbl-op-bg: #1B1E23; --ra-tbl-op: #6E7681; --ra-tbl-total-rule: #C9CDD3; --ra-tbl-total-bg: #172A29; --ra-tbl-total-op-bg: #1E3634; --ra-tbl-sub: #B4BAC2; --ra-tbl-info: #9AA0A8; --ra-tbl-infotop: #4A515A; --ra-tbl-pair: #3A4048; } }
 .prose hr { border: 0; border-top: 1px solid var(--ra-rule); margin: 1.75rem 0; }
 .prose img { border-radius: 4px; }
 .prose h2[id], .prose h3[id], .post-section[id], .post-section h2[id] { scroll-margin-top: calc(var(--bar-h) + 8px); }

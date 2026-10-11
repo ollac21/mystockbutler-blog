@@ -19,6 +19,7 @@ import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layou
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
+import { appArticleOutline } from './lib/appArticleHtml.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -120,6 +121,24 @@ async function fetchBodyMarkdown(post) {
   const content = typeof post.content === 'string' ? post.content : '';
   if (!content.trim()) throw new Error('post has no stored content');
   return content;
+}
+
+// The app's article file (content_html_url, owner 2026-10-10: the body as the app's report viewer draws it, its table
+// CSS inside), shown as-is in the page's chapters. Fail closed to the markdown: a file that cannot be fetched or read
+// (lib/appArticleHtml.mjs) leaves the page exactly as it renders every older post -- never a placeholder, never a block.
+async function fetchArticleFile(post) {
+  const url = str(post.content_html_url);
+  if (post.content_schema_version !== LIBRARY_SCHEMA || !url) return null;
+  try {
+    const res = await fetchWithTimeout(url, 'text/plain, text/html, */*');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    if (!appArticleOutline(text)) throw new Error('not a readable article file');
+    return text;
+  } catch (err) {
+    warn(`no article file for ${post.slug}: ${err.message}; the markdown is rendered`);
+    return null;
+  }
 }
 
 // The Research Hub of the chain run a library post was cut from, through the app's own public
@@ -338,7 +357,21 @@ if(slim&&slim.firstChild){var on=!!first&&first.getBoundingClientRect().bottom<6
 W.addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(spy);}},{passive:true});W.addEventListener('resize',spy);spy();
 })();`;
 
-function renderPost(post, bodyMarkdown, hubPayload) {
+// The article from the app's file: its CSS once, then each drawn chapter in the same <section> a markdown chapter gets
+// ("msb-html": the file's CSS draws its tables), split as chaptersHtml splits the markdown -- the opening chapter (with
+// any preface) and the rest.
+function appChaptersHtml(app) {
+  const section = (chapter, first) => `<section class="chapter prose msb-html${first ? ' first' : ''}">\n${chapter.html}</section>`;
+  const opening = [
+    `<style data-msb-css="">${app.css}</style>`,
+    app.preface ? `<div class="prose msb-html">\n${app.preface}</div>` : '',
+    section(app.chapters[0], true),
+  ].filter(Boolean).join('\n');
+  const rest = app.chapters.slice(1).map((chapter) => section(chapter, false)).join('\n');
+  return { opening, rest };
+}
+
+function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
   const slug = post.slug;
   const canonical = `${SITE}/${slug}/`;
   const title = str(post.title) || str(post.seo_title);
@@ -398,12 +431,14 @@ function renderPost(post, bodyMarkdown, hubPayload) {
 
   // The article opens on its first section (the generator's Meta table and Hero metrics are not shown
   // -- owner order 2026-09-27), with a call to action after it.
-  const arranged = arrangeArticleForReading(bodyMarkdown);
-  const hasMore = Boolean(arranged.rest);
+  const app = articleFile ? appArticleOutline(articleFile) : null;
+  const drawn = app ? appChaptersHtml(app) : null;
+  const arranged = drawn ? null : arrangeArticleForReading(bodyMarkdown);
+  const hasMore = drawn ? Boolean(drawn.rest) : Boolean(arranged.rest);
   // One section per chapter; every chapter and subsection heading gets an id (the Contents links to them).
   const headingIds = newIdRegistry();
-  const opening = addHeadingIds(chaptersHtml(arranged.opening, { first: true }), headingIds);
-  const rest = hasMore ? addHeadingIds(chaptersHtml(arranged.rest), headingIds) : { html: '', entries: [] };
+  const opening = addHeadingIds(drawn ? drawn.opening : chaptersHtml(arranged.opening, { first: true }), headingIds);
+  const rest = hasMore ? addHeadingIds(drawn ? drawn.rest : chaptersHtml(arranged.rest), headingIds) : { html: '', entries: [] };
   const openingHtml = opening.html;
   const restHtml = rest.html;
 
@@ -571,8 +606,9 @@ async function main() {
     try {
       const markdown = await fetchBodyMarkdown(post);
       const hub = await fetchHubPayload({ ...post, slug });
+      const articleFile = await fetchArticleFile({ ...post, slug });
       seen.add(slug.toLowerCase());
-      entries.push({ post: { ...post, slug }, markdown, hub });
+      entries.push({ post: { ...post, slug }, markdown, hub, articleFile });
     } catch (err) {
       warn(`skipping post ${post.id} (${slug}): ${err.message}`);
     }
@@ -581,11 +617,11 @@ async function main() {
 
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
-  for (const { post, markdown, hub } of entries) {
+  for (const { post, markdown, hub, articleFile } of entries) {
     const dir = path.join(OUT, post.slug);
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown, hub));
-    console.log(`wrote /${post.slug}/ (${markdown.length} chars of body)`);
+    await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown, hub, articleFile));
+    console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
   const sitemapXml = renderSitemap(entries);
