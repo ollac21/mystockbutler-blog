@@ -202,7 +202,7 @@ body.post .site-header { position: relative; padding-bottom: 16px; }
 .post-section h3 { margin: 18px 0 4px; font-size: 15px; font-weight: 600; }
 .post-section p { margin: 0 0 .8em; font-size: 14px; line-height: 1.75; color: var(--muted); }
 .sources { margin: 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.6; color: var(--muted); }
-.sources li { margin: 8px 0; padding: 10px 16px; border: 1px solid var(--ra-rule); border-radius: 6px; background: var(--card); }
+.sources li { margin: 8px 0; padding: 10px 16px; border: 1px solid var(--ra-rule); border-radius: 6px; background: var(--card); overflow-wrap: anywhere; }
 .sources .n { font: 500 13px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--primary); margin-right: 8px; }
 .disclaimer-bottom { margin-top: 40px; padding-top: 24px; border-top: 2px solid var(--warn-line); font-size: 12px; line-height: 1.7; font-weight: 500; color: var(--fg); }
 .ai-note { margin: 20px 0 0; font-size: 11px; line-height: 1.6; color: var(--muted); }
