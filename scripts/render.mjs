@@ -262,6 +262,22 @@ function callToAction(kind, ticker) {
 </aside>`;
 }
 
+// A Coverage week's post (B102, owner-approved wording; source_type is our own closed enum -- shape, never post text):
+// its own end box -- the week, what Coverage is, a button to cover the stock in the app -- and the usual way in.
+function isCoveragePost(post) {
+  return post?.source_type === 'coverage';
+}
+
+function coverageCallToAction(ticker, company) {
+  const cover = ticker
+    ? `<a class="btn" href="${APP}/covered-stocks?ticker=${encodeURIComponent(ticker)}">Cover ${esc(ticker)} — 3 credits a month</a>`
+    : '';
+  return `<aside class="cta" aria-label="Cover this stock" data-end-cta>
+<div class="cta-text"><strong>This is one week of our Coverage on ${esc(company || ticker)}.</strong><p class="sub">Every Monday: what X, Reddit and local news said that the company hasn't announced, each story checked.</p></div>
+<div class="btns">${cover}<a class="btn${ticker ? ' ghost' : ''}" href="${APP}/login">Start researching &rarr;</a></div>
+</aside>`;
+}
+
 function cardHtml(post, featured) {
   const title = str(post.title) || str(post.seo_title);
   const hook = blogHook(str(post.excerpt) || str(post.seo_description));
@@ -273,7 +289,7 @@ function cardHtml(post, featured) {
     ? `Latest research${ticker ? ` <span>&middot; ${esc(ticker)}</span>` : ''}`
     : `${ticker ? esc(ticker) : ''}${ticker && company ? ` <span>&middot; ${esc(company)}</span>` : ''}`;
   return `<a class="card${featured ? ' featured' : ''}" href="/${esc(post.slug)}/">
-<div class="card-visual" aria-hidden="true"><span class="tag">Research memo</span><div><div class="tick">${esc(ticker || 'SB')}</div>${company ? `<div class="co">${esc(company)}</div>` : ''}</div></div>
+<div class="card-visual" aria-hidden="true"><span class="tag">${isCoveragePost(post) ? 'Weekly Coverage' : 'Research memo'}</span><div><div class="tick">${esc(ticker || 'SB')}</div>${company ? `<div class="co">${esc(company)}</div>` : ''}</div></div>
 <div class="card-body">
 ${kicker ? `<div class="kicker">${kicker}</div>` : ''}
 <h2>${esc(title)}</h2>
@@ -511,7 +527,7 @@ ${openingHtml}
 ${hasMore ? callToAction('inline') : ''}
 ${hasMore ? restHtml : ''}
 ${hasChapters ? '<div class="slim" data-slim></div>' : ''}
-${callToAction('end', isLibrary ? ticker : '')}
+${isCoveragePost(post) ? coverageCallToAction(ticker, str(post.company_name)) : callToAction('end', isLibrary ? ticker : '')}
 ${faqHtml}
 ${sourcesHtml}
 ${disclaimerBottom}
