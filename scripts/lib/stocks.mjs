@@ -517,6 +517,8 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a></p></section>`,
     nav(),
     ...groups.map((g) => `<section><h2><a href="/stocks/${INDEX_PATHS[g.key]}/">${esc(INDEX_NAMES[g.key])}</a></h2>${hubList(g.list)}</section>`),
+    // companies in none of our indexes (a customer's report, card step 14)
+    ...(byName.some((c) => !INDEX_NAMES[c.index]) ? [`<section><h2>Other companies</h2>${hubList(byName.filter((c) => !INDEX_NAMES[c.index]))}</section>`] : []),
   ];
   pages.push(hubPage({
     path: '/stocks/',
