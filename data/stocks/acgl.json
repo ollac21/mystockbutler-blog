@@ -1,0 +1,536 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ACGL",
+ "slug": "acgl",
+ "company": "Arch Capital Group Ltd.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-19T23:11:08Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 100.48,
+ "price_date": "2026-10-19T20:00:01Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16390,
+  "sources": 213
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Arch Capital Group sells financial protection when businesses, insurers or mortgage lenders face losses. Money comes in as premiums, moves through claims, expenses, reinsurance and investments, and becomes profit only when the risks were priced well."
+ },
+ "sources": [
+  {
+   "title": "Arch 2025 segment information",
+   "url": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000017/R12.htm"
+  },
+  {
+   "title": "Arch 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000017/acgl-20251231.htm"
+  },
+  {
+   "title": "2023 financial supplement",
+   "url": "https://www.sec.gov/Archives/edgar/data/947484/000094748424000007/ex-992supplement123123.htm"
+  }
+ ],
+ "rivals": [
+  "AIG",
+  "AXS",
+  "EG",
+  "RNR",
+  "SREN.SW",
+  "MTG",
+  "RDN",
+  "ESNT",
+  "ACT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Arch stock forecast",
+   "meta_description": "Arch stock forecast: weighted scenarios show limited near-term upside, with the outcome hinging on underwriting, claims and capital returns.",
+   "opening": "Arch's weighted forecast is $90.31 in October 2027 and $110.49 in October 2029. It hinges on resilient earnings, disciplined underwriting and capital returns as reinsurance pricing softens.",
+   "closing": "The full memo explains Arch's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Arch's shares go?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast sees limited near-term upside, followed by a possible recovery. The probability-weighted price is $90.31 in October 2027, $98.28 in October 2028 and $110.49 in October 2029, equal to returns including dividends of negative 10%, negative 2% and positive 10% from today’s $100.48. Dividends do not affect those returns because every scenario assumes no dividend."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the bear case reaches $55.82 and the bull case reaches $214.13. That wide range reflects Arch’s cyclical earnings, discretionary buybacks and uncertain insurance claims experience. The forecast assigns 30% to the bear case, 50% to the base case and 20% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 100.48, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 100.48, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "60.02 (-40 %)",
+        "58.12 (-42 %)",
+        "55.82 (-44 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "93.18 (-7 %)",
+        "94.67 (-6 %)",
+        "101.83 (+1 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "128.57 (+28 %)",
+        "167.56 (+67 %)",
+        "214.13 (+113 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "90.31 (-10 %)",
+        "98.28 (-2 %)",
+        "110.49 (+10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Arch?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Arch offers limited near-term upside and a possible recovery, hinging on resilient earnings, disciplined underwriting and capital returns as reinsurance pricing softens. Management says its risk limits cap modeled net losses from a severe catastrophe or severe economic event at 25.0% of tangible equity, and that it will adjust its business mix as pricing changes."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,600 (2,900 / 4,100)",
+        "3,750 (3,000 / 4,550)",
+        "3,900 (3,100 / 5,000)"
+       ],
+       [
+        "Shares (millions)",
+        "328 (338 / 319)",
+        "317 (336 / 299)",
+        "306 (333 / 280)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Price to earnings",
+        "8.50 (7.00 / 10.00)",
+        "8.00 (6.50 / 11.00)",
+        "8.00 (6.00 / 12.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Arch really make?",
+     "paragraphs": [
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Cash generation was strong. Operating cash flow reached $6,172 million in 2025, about 140% of net income, while fixed-asset purchases were only $44 million. But an insurer’s main reinvestment is not machinery. It is the financial capital and investments needed to pay claims."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net premiums earned",
+        "17,065",
+        "15,100",
+        "12,440",
+        "9,679",
+        "8,082"
+       ],
+       [
+        "Underwriting income",
+        "2,933",
+        "2,661",
+        "2,612",
+        "1,796",
+        "1,216"
+       ],
+       [
+        "Net investment income",
+        "1,625",
+        "1,495",
+        "1,023",
+        "496",
+        "389"
+       ],
+       [
+        "Core earnings (company's measure)",
+        "3,700",
+        "3,542",
+        "3,201",
+        "1,840",
+        "1,435"
+       ],
+       [
+        "Net income",
+        "4,399",
+        "4,312",
+        "4,443",
+        "1,476",
+        "2,157"
+       ]
+      ],
+      "note": "The company's core earnings are its own definition of ongoing profit, so they can differ from net income and are not directly comparable without checking what they include."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Arch today?",
+     "paragraphs": [
+      {
+       "n": 185,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Arch looks inexpensive on reported earnings, but that first impression depends on which earnings measure is used. Reported net income includes investment gains and losses, foreign-exchange movements and transaction costs. Arch’s “after-tax operating income” removes selected items that management views as non-recurring, but it still includes catastrophes and changes in claims estimates. Forward earnings are forecasts, not accounting facts. In the second quarter of 2026, reported net income available to common shareholders was $1.047 billion, compared with $893 million of adjusted operating profit. The question is whether the adjustments and forecast describe a normal year."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "100.48"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "110.49 (+10 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "7.9x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 100.48,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "60.02 (-40 %)",
+       "58.12 (-42 %)",
+       "55.82 (-44 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "93.18 (-7 %)",
+       "94.67 (-6 %)",
+       "101.83 (+1 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "128.57 (+28 %)",
+       "167.56 (+67 %)",
+       "214.13 (+113 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "90.31 (-10 %)",
+       "98.28 (-2 %)",
+       "110.49 (+10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/acgl/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ACGL&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Arch earnings date",
+   "meta_description": "Arch reports on October 27, 2026; see guidance, results and what to watch.",
+   "opening": "Arch is expected to report its next results on October 27, 2026. Watch the insurance expense ratio.",
+   "closing": "The full memo also answers how Arch makes money, who its rivals are, who runs Arch and what risks Arch faces.",
+   "blocks": [
+    {
+     "heading": "What has Arch guided for the year?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Arch’s risk limits are boundaries, not earnings targets. Tangible equity means shareholders’ capital after goodwill and other intangible assets; a net loss is measured after Arch’s own reinsurance. A rare-event return period describes a modelled annual probability, not a disaster scheduled for a particular year. The July 2026 Florida estimate remained below the stated boundary, but the model cannot guarantee that actual losses will stay within it. The tax-rate guidance also supplies no numerical target."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "The period it covers",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "1-in-250 year return period net probable maximum loss from a severe catastrophic event",
+        "Ongoing",
+        "25.0%",
+        "2026-08-04"
+       ],
+       [
+        "Modeled RDS loss from a severe economic event",
+        "Ongoing",
+        "25.0%",
+        "2026-08-04"
+       ],
+       [
+        "Annualized effective tax rate",
+        "Fiscal 2026",
+        "",
+        ""
+       ]
+      ],
+      "note": "The two 25.0 percent catastrophe figures are not expected losses; they are estimated worst-case limits after reinsurance and before taxes, compared with Arch’s tangible shareholders’ equity."
+     }
+    },
+    {
+     "heading": "Did Arch keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The performance-share plan tests whether profits build durable capital. Tangible book value per share measures common shareholders’ accounting capital after removing goodwill and other intangible assets. Arch reported tangible book value per common share of $61.71 at December 31, 2025, compared with ordinary book value of $65.11. The 2023–2025 plan targeted 11% annual growth, while the reported result was 33.65% annualized over the cycle, producing a 200% payout."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Arch’s revenue and profit trends?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net premiums written fell 6.9% from the same quarter of 2025, while the combined ratio worsened to 83.5%. Core earnings fell to $893 million, and net income fell to $1,057 million. Fewer shares softened the decline in diluted EPS."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Net premiums written",
+        "4,049",
+        "4,348",
+        "3,649",
+        "3,964",
+        "4,348",
+        "4,515",
+        "3,819",
+        "4,047"
+       ],
+       [
+        "Combined ratio",
+        "83.5%",
+        "81.7%",
+        "80.6%",
+        "79.8%",
+        "81.2%",
+        "90.1%",
+        "85.0%",
+        "86.6%"
+       ],
+       [
+        "Core earnings (company's measure)",
+        "893",
+        "901",
+        "1,092",
+        "1,042",
+        "979",
+        "587",
+        "866",
+        "762"
+       ],
+       [
+        "Net income",
+        "1,057",
+        "1,047",
+        "1,238",
+        "1,350",
+        "1,237",
+        "574",
+        "935",
+        "988"
+       ],
+       [
+        "EPS, diluted",
+        "3.00",
+        "2.88",
+        "3.35",
+        "3.56",
+        "3.23",
+        "1.48",
+        "2.42",
+        "2.56"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Arch’s next results?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Arch is scheduled to report third-quarter earnings on October 27, 2026. The key combination is the insurance expense ratio, the amount of reinsurance business retained and the size of repurchases. A smaller premium book may show discipline, but a smaller book with stubborn costs and aggressive distributions would deserve scrutiny."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.00"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "2.56",
+      "2.42",
+      "1.48",
+      "3.23",
+      "3.56",
+      "3.35",
+      "2.88",
+      "3.00"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/acgl/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ACGL&src=seo-earnings"
+  }
+ },
+ "short_name": "Arch",
+ "first_memo_date": "2026-10-19T23:11:08Z"
+}

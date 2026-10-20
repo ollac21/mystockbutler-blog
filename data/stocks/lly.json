@@ -1,0 +1,821 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "LLY",
+ "slug": "lly",
+ "company": "Eli Lilly and Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:15:50Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 1169.93,
+ "price_date": "2026-10-08T20:00:00Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 29,
+  "words": 17037,
+  "sources": 315
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Eli Lilly is a prescription-drug company: it discovers medicines, makes them, and sells them through several healthcare channels. Its central business question is simple—how do treatments become revenue, and how much of each dollar remains after access, production, research, and partners take their share?"
+ },
+ "sources": [
+  {
+   "title": "Lilly’s 2025 annual report, Notes 3 and 18",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947825000067/lly-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947824000065/lly-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "ABBV",
+  "PFE",
+  "AMGN",
+  "MRK",
+  "JNJ",
+  "BMY",
+  "REGN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Lilly stock forecast",
+   "meta_description": "Lilly stock forecast: scenario prices, probabilities, cash flow after stock pay, and today’s valuation.",
+   "opening": "Lilly’s weighted forecast is $1,299.88 by October 2029, with the base case carrying the highest probability. It hinges on whether tirzepatide can keep bringing in patients and cash while Lilly builds its next growth engine.",
+   "closing": "The full memo also examines Lilly’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Lilly’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, outcomes range from $498.17 in the bear case to $2,351.36 in the bull case. Today’s reference price is $1,169.93. The probabilities are 28% for the bear case, 52% for the base case, and 20% for the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1169.93, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1169.93, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "675.40 (-42 %)",
+        "581.39 (-49 %)",
+        "498.17 (-56 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "1221.33 (+5 %)",
+        "1284.54 (+11 %)",
+        "1327.15 (+16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1594.87 (+37 %)",
+        "1986.90 (+71 %)",
+        "2351.36 (+103 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1143.18 (-2 %)",
+        "1228.13 (+6 %)",
+        "1299.88 (+13 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Lilly?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Revenue is the main engine, but the forecast assumes growth decelerates as the base expands. The base case starts with 32% growth in FY2026. It then steps down to 19% and 16%, reaching 13% in FY2029. Lilly’s guidance of $85 billion to $87 billion implies growth close to that first estimate against FY2025 revenue of $65.179 billion. First-half revenue of $42.773 billion is consistent with the outlook, while Q2 showed volume rising 60% as realized prices fell 13%."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls from 29% to zero growth because payer limits, lower net prices, competition, and weaker persistence could overwhelm volume gains. The bull case stays at 35% initially, then remains unusually strong at 25%, 23%, and 20%. It requires capacity expansion, durable refills, Foundayo adoption, and later pipeline success. Foundayo contributed only $98 million in its launch quarter, while retatrutide’s planned Q1 2027 submission is a catalyst but not immediate revenue."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "32.0 % (29.0 % / 35.0 %)",
+        "19.0 % (10.0 % / 25.0 %)",
+        "16.0 % (4.0 % / 23.0 %)",
+        "13.0 % (0.0 % / 20.0 %)"
+       ],
+       [
+        "Net margin",
+        "32.0 % (28.5 % / 33.0 %)",
+        "32.5 % (27.5 % / 34.0 %)",
+        "33.0 % (27.0 % / 35.0 %)",
+        "33.0 % (27.0 % / 36.0 %)"
+       ],
+       [
+        "Earnings per share",
+        "30.80 (26.80 / 32.49)",
+        "37.45 (28.54 / 42.08)",
+        "44.42 (29.23 / 53.59)",
+        "50.57 (29.33 / 66.53)"
+       ],
+       [
+        "Buybacks",
+        "7,000 (7,000 / 7,000)",
+        "7,500 (2,500 / 9,000)",
+        "8,500 (2,000 / 11,000)",
+        "9,500 (2,000 / 13,000)"
+       ],
+       [
+        "Dividend per share",
+        "6.92 (6.92 / 6.92)",
+        "7.61 (7.27 / 7.96)",
+        "8.37 (7.49 / 9.16)",
+        "9.20 (7.71 / 10.53)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Lilly really make?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation conserved cash but transferred value to employees through shares. Deducting the $626 million expense leaves analytical free cash flow of $8,346 million. Finally, Lilly’s recasting of certain research milestone payments from operating to investing cash flow changed presentation, not total cash."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "16,813",
+        "8,818",
+        "4,240",
+        "7,585.7",
+        "7,365.9"
+       ],
+       [
+        "Capital spending",
+        "7,841",
+        "5,058",
+        "3,448",
+        "1,854.3",
+        "1,309.8"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "8,972",
+        "3,760",
+        "792",
+        "5,731.4",
+        "6,056.1"
+       ],
+       [
+        "Stock-based pay",
+        "626",
+        "646",
+        "629",
+        "371.1",
+        "342.8"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "8,346",
+        "3,114",
+        "163",
+        "5,360.3",
+        "5,713.3"
+       ],
+       [
+        "Real free cash flow per share (calculated)",
+        "9.28",
+        "3.44",
+        "0.18",
+        "5.93",
+        "6.27"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Lilly today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A price-to-earnings ratio, or P/E, says how much investors pay for one dollar of annual profit. A trailing P/E uses the last year’s earnings; a forward P/E uses an estimate of the next year’s. The lower forward multiple is therefore a bet that Lilly’s earnings will rise. It is not proof that the shares are cheap, because the forecast may fail."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,169.93"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1299.88 (+13 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.9x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "39.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1169.93,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "675.40 (-42 %)",
+       "581.39 (-49 %)",
+       "498.17 (-56 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "1221.33 (+5 %)",
+       "1284.54 (+11 %)",
+       "1327.15 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1594.87 (+37 %)",
+       "1986.90 (+71 %)",
+       "2351.36 (+103 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1143.18 (-2 %)",
+       "1228.13 (+6 %)",
+       "1299.88 (+13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/lly/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LLY&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Lilly dividend: payout, cash cover and yield",
+   "meta_description": "Lilly's dividend payout, cash coverage, forecast changes and yield against its share price, in plain English.",
+   "opening": "Lilly declared a $1.73 quarterly dividend for the first three quarters of 2026, and its base-case forecast keeps the annual dividend at $6.92 in FY2026 before it rises. Cash coverage was tight in 2025: Lilly returned $9.492 billion to shareholders, or 113.7% of real free cash flow, so dividends and buybacks exceeded that year's real free cash flow.",
+   "closing": "The full memo also examines Lilly's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Lilly pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend grows steadily but below its recent pace in the base case. It remains $6.92 in FY2026, then reaches $7.61, $8.37, and $9.20. The bear case slows to $7.71 by FY2029, while the bull case reaches $10.53. Lilly declared a $1.73 quarterly dividend for the first three quarters of 2026, implying the forecast annual rate. The recent record includes a seventh consecutive 15% increase, but it is not future guidance."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "65,179",
+        "45,043",
+        "34,124",
+        "28,541.4",
+        "28,318.4"
+       ],
+       [
+        "EPS, diluted",
+        "22.95",
+        "11.71",
+        "5.80",
+        "6.90",
+        "6.12"
+       ],
+       [
+        "Dividend per share",
+        "6.23",
+        "5.40",
+        "4.69",
+        "4.07",
+        "3.53"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Lilly's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends and buybacks kept growing. In 2025, Lilly returned $9.492 billion to shareholders, equal to 113.7% of real free cash flow. The gap can be filled with existing cash or borrowing, but it increases the claims on future earnings. Lilly raised $12.389 billion more long-term debt than it repaid that year."
+      },
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation conserved cash but transferred value to employees through shares. Deducting the $626 million expense leaves analytical free cash flow of $8,346 million. Finally, Lilly’s recasting of certain research milestone payments from operating to investing cash flow changed presentation, not total cash."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "8,346",
+        "3,114",
+        "163",
+        "5,360.3",
+        "5,713.3"
+       ],
+       [
+        "Dividends paid",
+        "5,384",
+        "4,680",
+        "4,069",
+        "3,535.8",
+        "3,086.8"
+       ],
+       [
+        "Shares bought back",
+        "4,108",
+        "2,500",
+        "750",
+        "1,500.0",
+        "1,250.0"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "12,389",
+        "10,753",
+        "3,959",
+        "-1,560.0",
+        "505.4"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "113.7%",
+        "230.6%",
+        "2956.4%",
+        "93.9%",
+        "75.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Lilly's dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if coverage limits and rebates reduce realized prices during 2027–2029. Evidence of weaker tirzepatide starts, shorter treatment duration, or stronger competition would reduce both growth and the P/E."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "32.0 % (29.0 % / 35.0 %)",
+        "19.0 % (10.0 % / 25.0 %)",
+        "16.0 % (4.0 % / 23.0 %)",
+        "13.0 % (0.0 % / 20.0 %)"
+       ],
+       [
+        "Buybacks",
+        "7,000 (7,000 / 7,000)",
+        "7,500 (2,500 / 9,000)",
+        "8,500 (2,000 / 11,000)",
+        "9,500 (2,000 / 13,000)"
+       ],
+       [
+        "Dividend per share",
+        "6.92 (6.92 / 6.92)",
+        "7.61 (7.27 / 7.96)",
+        "8.37 (7.49 / 9.16)",
+        "9.20 (7.71 / 10.53)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "6.64",
+      "6.34",
+      "0.88",
+      "4.16",
+      "9.98"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/lly/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LLY&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Lilly earnings: guidance and results",
+   "meta_description": "Lilly reports next on October 29, 2026; its guidance, recent results and key watchpoints are here.",
+   "opening": "Lilly's next results are expected on October 29, 2026. Watch whether sales volume, realized prices and operating cash remain strong.",
+   "closing": "The full memo also explains Lilly's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Lilly guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 85 billion to 87 billion of 2026 revenue. It expects a 49.0% to 50.5% performance margin. It expects EPS of 35.50 to 36.50. On October 7, Lilly estimated a 4.2 billion acquired-research charge for the September quarter. The charge was 4.57 per share to GAAP and non-GAAP EPS."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions; per-share US$",
+      "caption": "Guidance in force (US$ billions; per-share US$)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "85",
+        "87",
+        "Aug 5, 2026"
+       ],
+       [
+        "Performance Margin",
+        "Year to Dec 2026",
+        "49.0%",
+        "50.5%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Tax Rate",
+        "Year to Dec 2026",
+        "18.0%",
+        "19.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Earnings per Share",
+        "Year to Dec 2026",
+        "35.50",
+        "36.50",
+        "Aug 5, 2026"
+       ],
+       [
+        "Acquired IPR&D charges",
+        "Quarter to Sep 2026",
+        "4.2",
+        "4.2",
+        "Oct 7, 2026"
+       ],
+       [
+        "GAAP and non-GAAP earnings per share charge",
+        "Quarter to Sep 2026",
+        "4.57",
+        "4.57",
+        "Oct 7, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Lilly keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The annual bonus measures product revenue, earnings per share and pipeline progress. Long-term awards measure share-price performance and total shareholder return against peers. The 2025 bonus paid 218% of target, while stock awards completing their performance period paid 200%. Lilly’s original 2025 revenue forecast was US$58.0 billion to US$61.0 billion; it ultimately reported US$65.179 billion. That is a clear achievement against the initial promise."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Lilly's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income reached $7,095 million and diluted EPS reached $7.94. Both rose from a year earlier, yet both fell from March, showing how transaction timing can interrupt the earnings trend. Operating cash was $10,690 million and capital spending was $2,933 million, leaving calculated quarterly free cash flow of $7,757 million. That is encouraging, but one quarter should not be multiplied mechanically across a year."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "22,974",
+        "19,799",
+        "19,292",
+        "17,600.8",
+        "15,558",
+        "12,729",
+        "13,533",
+        "11,439.1"
+       ],
+       [
+        "Gross margin (calculated)",
+        "85.8%",
+        "81.9%",
+        "82.5%",
+        "82.9%",
+        "84.3%",
+        "82.5%",
+        "82.2%",
+        "81.0%"
+       ],
+       [
+        "Operating income",
+        "8,978",
+        "8,915",
+        "8,373",
+        "7,365.4",
+        "6,867",
+        "3,695",
+        "5,149",
+        "1,526.4"
+       ],
+       [
+        "Net income",
+        "7,095",
+        "7,396",
+        "6,636",
+        "5,582.5",
+        "5,661",
+        "2,759",
+        "4,410",
+        "970.3"
+       ],
+       [
+        "EPS, diluted",
+        "7.94",
+        "8.26",
+        "7.39",
+        "6.21",
+        "6.29",
+        "3.06",
+        "4.88",
+        "1.07"
+       ],
+       [
+        "Cash from operations",
+        "10,690",
+        "5,333",
+        "3,224.6",
+        "8,835.4",
+        "3,087",
+        "1,666",
+        "2,473.9",
+        "3,711.9"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Lilly's next results?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the October 29, 2026, third-quarter earnings call. It should clarify the acquired-research charge and show whether sales volume, realized prices and operating cash remain strong."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "22,974"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "7.94"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,439.1",
+      "13,533",
+      "12,729",
+      "15,558",
+      "17,600.8",
+      "19,292",
+      "19,799",
+      "22,974"
+     ],
+     "EPS, diluted": [
+      "1.07",
+      "4.88",
+      "3.06",
+      "6.29",
+      "6.21",
+      "7.39",
+      "8.26",
+      "7.94"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/lly/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LLY&src=seo-earnings"
+  }
+ },
+ "short_name": "Lilly",
+ "first_memo_date": "2026-10-10T02:15:50Z"
+}

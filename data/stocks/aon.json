@@ -1,0 +1,796 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AON",
+ "slug": "aon",
+ "company": "Aon plc",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T02:57:10Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 292.55,
+ "price_date": "2026-10-16T20:00:50Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 17056,
+  "sources": 167
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Aon helps organizations decide which risks to keep, which to insure, and how to support the people who work for them. It makes money mainly from arranging insurance and reinsurance and from advising employers, insurers, and other clients, while much of the cash that passes through it never belongs to Aon."
+ },
+ "sources": [
+  {
+   "title": "Investor presentation — Q2 2026",
+   "url": "https://ir.aon.com/image/AON_Q2_2026_Earnings_Presentation_vFinal.pdf"
+  },
+  {
+   "title": "Source",
+   "url": "https://www.sec.gov/Archives/edgar/data/315293/000210011926000074/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "title": "Source",
+   "url": "https://www.sec.gov/Archives/edgar/data/315293/000001961726000389/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "rivals": [
+  "WTW",
+  "MRSH",
+  "AJG",
+  "BRO",
+  "RYAN",
+  "BWIN",
+  "GSHD"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Aon stock forecast",
+   "meta_description": "Aon stock forecast: weighted scenarios, cash generation, USI risks, and the valuation investors are weighing.",
+   "opening": "Aon's weighted forecast is $283.85 in October 2029. It hinges on cash generation, restructuring savings and transaction funding.",
+   "closing": "The full memo also answers how Aon makes money, who its rivals are, how management allocates capital, and what risks shape the business.",
+   "blocks": [
+    {
+     "heading": "Where could Aon's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $225.33 in October 2027, a 22% loss including dividends. It is $283.85 in October 2029, about a 1% total return. Bear probability is 25%. Base and bull probabilities are 54% and 21%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 292.55, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 292.55, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "169.47 (-41 %)",
+        "156.80 (-44 %)",
+        "149.86 (-45 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "232.26 (-19 %)",
+        "262.51 (-8 %)",
+        "283.25 (+1 %)"
+       ],
+       [
+        "Bull",
+        "21 %",
+        "274.00 (-5 %)",
+        "364.01 (+27 %)",
+        "444.91 (+56 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "225.33 (-22 %)",
+        "257.40 (-10 %)",
+        "283.85 (+1 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What has to go right for Aon, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Cash generation, restructuring savings and transaction funding decide the outcome. Aon targets $370 million of cumulative annual savings by year-end 2026 and $450 million of annualized savings by year-end 2027. The Q3 2026 results call is scheduled for October 28. USI is expected to close in Q4 2026, subject to regulatory and customary conditions. Client retention and organic growth will test the integration. USI is expected to dilute adjusted EPS in 2027 and add to it in 2028; debt repayment must resume buybacks."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $2,795 million in 2027 and $2,825 million in 2028. It reaches $2,970 million in 2029 because debt, integration costs, weaker pricing, or client losses hold normalized margins below the base case. The bull case gives $3,250 million in 2027 and $3,864 million in 2028. It reaches $4,257 million in 2029 if retention, cross-selling, savings, and deleveraging arrive faster. Aon’s 6% organic growth in both 2024 and 2025 supports continued expansion, but the 2025 disposal gain is excluded from every case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Aon really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is cash from operations after capital spending. Aon’s own measure is a useful starting point, but it does not represent every dollar available for discretionary use. Stock-based compensation deserves a further deduction because employee awards either dilute existing shareholders or require repurchases to offset that dilution. The resulting figure is a stricter measure of cash available to owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,481",
+        "3,035",
+        "3,435",
+        "3,219",
+        "2,182"
+       ],
+       [
+        "− Capital spending",
+        "263",
+        "218",
+        "252",
+        "196",
+        "137"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,218",
+        "2,817",
+        "3,183",
+        "3,023",
+        "2,045"
+       ],
+       [
+        "− Stock pay",
+        "432",
+        "474",
+        "438",
+        "397",
+        "449"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,786",
+        "2,343",
+        "2,745",
+        "2,626",
+        "1,596"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "16.2%",
+        "14.9%",
+        "20.5%",
+        "21.0%",
+        "13.1%"
+       ]
+      ],
+      "note": "The company's own free cash flow matches ours, but real free cash flow is lower because paying employees with shares gives away part of the company even though no cash leaves."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Aon today?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The earnings multiple needs interpretation. P/E means the share price divided by earnings per share, or how much investors pay for each dollar of profit. Aon’s recent earnings included a gain from selling NFP Wealth, which makes the denominator look stronger than ordinary operations alone. Buybacks can also lift EPS: if the same profit is divided among fewer shares, each remaining share represents more of it. Aon repurchased about $1 billion of shares in 2025, but expects debt repayment to take priority after USI."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "292.55"
+       ],
+       [
+        "Market value (calculated)",
+        "62,057"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "75,757"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.2%"
+       ]
+      ],
+      "note": "The last twelve months price-to-earnings number looks cheaper because its profit includes a one-time gain from selling NFP Wealth, which is not regular business profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "292.55"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "283.85 (+1 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 292.55,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "169.47 (-41 %)",
+       "156.80 (-44 %)",
+       "149.86 (-45 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "232.26 (-19 %)",
+       "262.51 (-8 %)",
+       "283.25 (+1 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "21 %",
+      "values": [
+       "274.00 (-5 %)",
+       "364.01 (+27 %)",
+       "444.91 (+56 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "225.33 (-22 %)",
+       "257.40 (-10 %)",
+       "283.85 (+1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aon/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AON&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Aon dividend: cash coverage and yield",
+   "meta_description": "Aon dividend payments, cash coverage, buyback priorities, forecast changes and dividend yield against the share price.",
+   "opening": "Aon’s dividend is forecast at $3.41 per share in 2027, rising to $3.98 in 2029. Aon’s dividend uses only part of the cash, leaving room for other priorities.",
+   "closing": "The full memo covers Aon’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Aon pay per share?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise more slowly than the latest increase in the base case. They are $3.41 per share in 2027 and $3.68 in 2028, reaching $3.98 in 2029 through assumed 8% annual increases. The bear case gives $3.28 in 2027 and $3.48 in 2029 after a pause and 3% increases. The bull case gives $3.44 in 2027 and $4.17 in 2029 by repeating 10% increases. Aon raised its quarterly dividend by 10% in 2026 and generated $3,218 million of free cash flow in 2025, supporting increases but not guaranteeing them."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,105 (2,795 / 3,250)",
+        "3,534 (2,825 / 3,864)",
+        "3,815 (2,970 / 4,257)"
+       ],
+       [
+        "Shares (millions)",
+        "214 (214 / 214)",
+        "215 (216 / 212)",
+        "216 (218 / 210)"
+       ],
+       [
+        "Dividends per share",
+        "3.41 (3.28 / 3.44)",
+        "3.68 (3.38 / 3.79)",
+        "3.98 (3.48 / 4.17)"
+       ],
+       [
+        "Price to earnings",
+        "16.00 (13.00 / 18.00)",
+        "16.00 (12.00 / 20.00)",
+        "16.00 (11.00 / 22.00)"
+       ]
+      ],
+      "note": "Price to earnings shows how many dollars investors pay for each dollar of the company's yearly profit."
+     }
+    },
+    {
+     "heading": "Does Aon’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Aon’s free cash flow—cash from operations after capital spending—has funded shareholders, acquisitions and debt reduction. A payout above 100% means dividends and buybacks exceeded that cash generation, so borrowing or asset sales filled the gap; a lower payout leaves more cash for the balance sheet."
+      },
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow is the practical test of that valuation. Free cash flow means operating cash after capital spending, so it is closer than accounting profit to the money available for debt, dividends and buybacks. Aon generated $3.2 billion of free cash flow in 2025, while first-half 2026 reflected a tax payment tied to the NFP sale and working-capital timing. Its dividend uses only part of the cash, leaving room for other priorities."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,218",
+        "2,817",
+        "3,183",
+        "3,023",
+        "2,045"
+       ],
+       [
+        "− Dividends paid",
+        "629",
+        "562",
+        "489",
+        "463",
+        "447"
+       ],
+       [
+        "− Share buybacks",
+        "1,000",
+        "1,000",
+        "2,700",
+        "3,203",
+        "3,543"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,528",
+        "1,210",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "50.6%",
+        "55.4%",
+        "100.2%",
+        "121.3%",
+        "195.1%"
+       ]
+      ],
+      "note": "The increase in cash can include money held for clients or businesses being sold, so it may not all be available for the company to spend."
+     }
+    },
+    {
+     "heading": "What could change Aon’s dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Cash generation, restructuring savings and transaction funding decide the outcome. Aon targets $370 million of cumulative annual savings by year-end 2026 and $450 million of annualized savings by year-end 2027. The Q3 2026 results call is scheduled for October 28. USI is expected to close in Q4 2026, subject to regulatory and customary conditions. Client retention and organic growth will test the integration. USI is expected to dilute adjusted EPS in 2027 and add to it in 2028; debt repayment must resume buybacks."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Aon’s dividend yield against its share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "292.55"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.1%"
+       ]
+      ],
+      "note": "The last twelve months price-to-earnings number looks cheaper because its profit includes a one-time gain from selling NFP Wealth, which is not regular business profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.90"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.98",
+      "2.17",
+      "2.39",
+      "2.64",
+      "2.90"
+     ],
+     "Real free cash flow per share": [
+      "7.06",
+      "12.32",
+      "13.39",
+      "11.03",
+      "12.83"
+     ],
+     "Free cash flow per share": [
+      "9.04",
+      "14.18",
+      "15.53",
+      "13.26",
+      "14.82"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/aon/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AON&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Aon earnings date and guidance",
+   "meta_description": "Aon reports on October 28, 2026; guidance points to organic growth, margin expansion and stronger cash generation.",
+   "opening": "Aon reports on October 28, 2026. Watch whether Aon turns its promises into cash.",
+   "closing": "The full memo also answers how Aon makes money, how it compares with rivals, how Aon is managed, and what risks Aon faces.",
+   "blocks": [
+    {
+     "heading": "What has Aon guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management reaffirmed mid-single-digit or greater organic revenue growth and 70–80 basis points of adjusted operating-margin expansion. Its bridge includes 40–50 basis points of operating leverage, 50 basis points from restructuring and a 20-basis-point fiduciary-income drag. It expects strong adjusted EPS growth and double-digit free-cash-flow growth; first-half free cash flow was up 4%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic Revenue",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 29, 2026"
+       ],
+       [
+        "Adjusted Operating Margin — expansion (basis points)",
+        "Year to Dec 2026",
+        "70",
+        "80",
+        "Jul 29, 2026"
+       ],
+       [
+        "Operating Leverage (basis points)",
+        "Year to Dec 2026",
+        "40",
+        "50",
+        "Jul 29, 2026"
+       ],
+       [
+        "Restructuring (basis points)",
+        "Year to Dec 2026",
+        "50",
+        "50",
+        "Jul 29, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "The two debt-to-profit numbers differ because 4.8 includes expected restructuring costs, while 4.5 excludes them."
+     }
+    },
+    {
+     "heading": "What has Aon’s revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The specialist’s conclusion is measured: Aon’s underlying business is growing broadly, margins are improving and cash remains substantial, but the USI financing and the fading effects of restructuring and disposals will determine how much of that strength is truly recurring."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,246",
+        "5,034",
+        "4,300",
+        "3,997",
+        "4,155",
+        "4,729",
+        "4,147",
+        "3,721"
+       ],
+       [
+        "Operating income",
+        "915",
+        "1,715",
+        "1,208",
+        "816",
+        "859",
+        "1,461",
+        "1,091",
+        "623"
+       ],
+       [
+        "Net income",
+        "551",
+        "1,212",
+        "1,693",
+        "458",
+        "579",
+        "965",
+        "716",
+        "343"
+       ],
+       [
+        "EPS, diluted",
+        "2.58",
+        "5.63",
+        "7.82",
+        "2.11",
+        "2.66",
+        "4.43",
+        "3.28",
+        "1.57"
+       ],
+       [
+        "**= Free cash flow**",
+        "483",
+        "363",
+        "1,323",
+        "1,079",
+        "732",
+        "84",
+        "1,145",
+        "951"
+       ]
+      ],
+      "note": "Free cash flow is not profit: it is the cash left after the company pays for equipment and buildings, so it can differ greatly from net income."
+     }
+    },
+    {
+     "heading": "What should I watch in Aon’s next results?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Aon’s Q3 2026 results call is scheduled for October 28. Investors should look for stronger free cash flow, visible restructuring savings and an update on transaction funding. USI is expected to close in Q4 2026, subject to regulatory and customary conditions. Closing would begin the integration and deleveraging clock; delay would postpone both the earnings benefit and the operating work."
+      },
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The practical watchlist is short: Q3 cash generation, Q4 closing, early client-retention evidence, and new disclosures on Vesttoo or tax exposure. Together, those facts will show whether Aon’s larger future is being funded by its business or by still more borrowing."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,246"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.58"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,721",
+      "4,147",
+      "4,729",
+      "4,155",
+      "3,997",
+      "4,300",
+      "5,034",
+      "4,246"
+     ],
+     "EPS, diluted": [
+      "1.57",
+      "3.28",
+      "4.43",
+      "2.66",
+      "2.11",
+      "7.82",
+      "5.63",
+      "2.58"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/aon/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AON&src=seo-earnings"
+  }
+ },
+ "short_name": "Aon",
+ "first_memo_date": "2026-10-18T02:57:10Z"
+}

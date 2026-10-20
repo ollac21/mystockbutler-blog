@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PH",
+ "slug": "ph",
+ "company": "Parker-Hannifin Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T02:57:40Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 956.32,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 27,
+  "words": 18139,
+  "sources": 236
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Parker Hannifin is a maker of the parts and systems hidden inside industrial machines, aircraft and refrigeration equipment. To understand its business, follow a dollar from the component Parker engineers and makes, through the customer and distributor, to the replacement sale that may come later."
+ },
+ "sources": [
+  {
+   "title": "FY2026 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/76334/000007633426000105/ph-20260630.htm"
+  },
+  {
+   "title": "Parker 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/76334/000007633425000035/ph-20250630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/76334/000007633426000082/exhibit991q4fy26.htm"
+  }
+ ],
+ "rivals": [
+  "DHR",
+  "DCI",
+  "GTES",
+  "IMI.L",
+  "6273.T"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Parker stock forecast",
+   "meta_description": "Parker's weighted case reaches $1,111.66 by October 2029, but the outcome hinges on growth, acquisition savings and cash generation.",
+   "opening": "Parker's weighted case reaches $1,111.66 by October 2029, a 19% gain including dividends. It hinges on growth, acquisition savings and cash generation.",
+   "closing": "The full Parker memo also answers how Parker makes money, competes with rivals, is run by management and faces risks.",
+   "blocks": [
+    {
+     "heading": "Where could Parker's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At October 2027, the weighted price is $873.65, an 8% loss including dividends. At October 2028, it is $971.97, a 3% gain. At October 2029, it reaches $1,111.66, a 19% gain."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 956.32, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 956.32, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27%",
+        "645.84 (-32%)",
+        "588.39 (-37%)",
+        "659.91 (-28%)"
+       ],
+       [
+        "Base",
+        "53%",
+        "902.77 (-5%)",
+        "1027.57 (+9%)",
+        "1154.94 (+24%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "1104.01 (+16%)",
+        "1342.45 (+42%)",
+        "1606.85 (+71%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "873.65 (-8%)",
+        "971.97 (+3%)",
+        "1111.66 (+19%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right for Parker, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $4,850M in 2027 and $4,650M in 2028 before recovering to $4,900M. It assumes delayed industrial replenishment, slower aerospace shipments and acquisition costs before savings. The bull case reaches $6,000M in 2027 and $6,750M in 2028, then $7,540M, requiring broad recovery and faster savings. These outcomes reflect the gap between the 20.5% five-year margin average and the latest result."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Parker really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates a further adjustment. Parker recognized $179 million of stock-based compensation in fiscal 2026. Because that expense does not immediately consume cash, it is added back in operating cash flow. But employees receive shares or share-linked awards, which can dilute existing owners. Deducting it produces an analytical “real free cash flow” of $3,726 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,364",
+        "3,776",
+        "3,384",
+        "2,980",
+        "2,441.73"
+       ],
+       [
+        "− Capital spending",
+        "459",
+        "435",
+        "400",
+        "381",
+        "230.044"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,905",
+        "3,341",
+        "2,984",
+        "2,599",
+        "2,211.686"
+       ],
+       [
+        "− Stock pay",
+        "179",
+        "159",
+        "155",
+        "143",
+        "137.093"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,726",
+        "3,182",
+        "2,829",
+        "2,456",
+        "2,074.593"
+       ]
+      ],
+      "note": "The company's own free cash flow is almost the same as ours because the tiny differences are rounding, but our real free cash flow is lower because we subtract shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Parker today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At **$956.32 a share on October 15, 2026**, Parker trades at **33.6 times** its last twelve months’ earnings. It trades at **24.3 times** expected earnings for the next twelve months. The first is trailing P/E; the second is forward P/E. A $100 share costing 33 times earnings at $3 of profit can cost 24 times when expected profit rises to $4.10. The price has not become cheaper; the expected earnings have become larger. That forecast must therefore be tested, especially because the first fiscal 2027 outlook excluded recent acquisitions."
+      },
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the money left after running the business and maintaining its equipment. Parker’s **3.2% free-cash-flow yield** says that each $100 of market value represents about $3.20 of annual cash generation, not that the investor receives $3.20. The dividend yield was only **0.8%**. Parker can use the rest for acquisitions, debt repayment or repurchases. Working capital also matters: a credit sale can produce accounting profit before the customer pays, while inventory consumes cash before it is sold."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "956.32"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "33.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": "The enterprise value may look too low because it leaves out the August acquisition and the later loans, even though those changed what the whole business is worth."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "956.32"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1111.66 (+19%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 956.32,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27%",
+      "values": [
+       "645.84 (-32%)",
+       "588.39 (-37%)",
+       "659.91 (-28%)"
+      ]
+     },
+     "Base": {
+      "probability": "53%",
+      "values": [
+       "902.77 (-5%)",
+       "1027.57 (+9%)",
+       "1154.94 (+24%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "1104.01 (+16%)",
+       "1342.45 (+42%)",
+       "1606.85 (+71%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "873.65 (-8%)",
+       "971.97 (+3%)",
+       "1111.66 (+19%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ph/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PH&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Parker dividend: cash coverage and yield",
+   "meta_description": "Parker pays an annual dividend supported by strong free cash flow, with future increases depending on growth, debt and acquisition execution.",
+   "opening": "Parker pays $8.00 per share annually, with the forecast showing $8.40 in 2027, $9.24 in 2028 and $10.16 in 2029. Parker's $3,905 million of fiscal 2026 free cash flow covers its dividend, while cash also funds buybacks, acquisitions and debt reduction.",
+   "closing": "The full memo also explains Parker's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Parker pay per share?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends start from the current $8.00 annualized rate. The base case pays $8.40 per share in 2027, $9.24 in 2028 and $10.16 in 2029. That represents roughly 10% annual increases, close to the latest 11% raise. The bear case uses $8.20, $8.61 and $9.04 as debt and integration demands restrain increases. The bull case reaches $8.60, $10.12 and $11.96 because cash conversion remains strong. The 70-year increase record supports continued payments."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "28.48",
+        "27.12",
+        "21.84",
+        "16.04",
+        "10.09"
+       ],
+       [
+        "Real free cash flow per share",
+        "29.09",
+        "24.44",
+        "21.73",
+        "18.91",
+        "15.91"
+       ],
+       [
+        "− Dividends paid, per share",
+        "7.31",
+        "6.61",
+        "6.00",
+        "5.41",
+        "4.37"
+       ],
+       [
+        "− Share buybacks, per share",
+        "9.85",
+        "13.56",
+        "2.55",
+        "2.29",
+        "3.53"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "13.33",
+        "5.48",
+        "14.36",
+        "12.30",
+        "9.07"
+       ]
+      ],
+      "note": "Real free cash flow per share is lower because it subtracts shares given to employees as pay, while the company’s own count does not."
+     }
+    },
+    {
+     "heading": "Does Parker's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash conversion asks how much reported earnings become money generated by the business. After capital spending, Parker produced $3,905 million of free cash flow in fiscal 2026. That equaled 107% of net income, compared with approximately 95% in fiscal 2025. Cash generation therefore strengthened even though the prior year benefited from unusually favourable tax items."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,905",
+        "3,341",
+        "2,984",
+        "2,599",
+        "2,211.686"
+       ],
+       [
+        "− Dividends paid",
+        "936",
+        "861",
+        "781",
+        "703",
+        "569.294"
+       ],
+       [
+        "− Share buybacks",
+        "1,262",
+        "1,766",
+        "332",
+        "297",
+        "460.056"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,707",
+        "714",
+        "1,870",
+        "1,598",
+        "1,181.775"
+       ],
+       [
+        "− Acquisitions",
+        "1,014",
+        "0",
+        "0",
+        "7,146",
+        "0"
+       ],
+       [
+        "− Debt repaid",
+        "760",
+        "2,105",
+        "2,385",
+        "2,341",
+        "18.737"
+       ]
+      ],
+      "note": "The company's own net debt differs because it adds certain borrowing fees and subtracts more investments than our calculation, including restricted acquisition cash in 2022."
+     }
+    },
+    {
+     "heading": "What could change Parker's dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 5.5%–8.5% reported and organic sales growth for fiscal 2027. The adjusted EPS guide is $34.25–$35.25. Adjusted segment margin is guided to 27.5%–27.9%, versus 24.5%–24.9% as reported. Standalone fiscal 2027 free cash flow is guided to $3.4 billion–$3.9 billion; that guide excludes Filtration Group and CIRCOR."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward the bear case if FY27–FY28 sell-through fails to confirm distributor orders, or if equipment use weakens. Aerospace schedule or supplier delays through FY29 would also reduce growth and cash conversion."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "5,586 (4,850 / 6,000)",
+        "6,006 (4,650 / 6,750)",
+        "6,412 (4,900 / 7,540)"
+       ],
+       [
+        "Dividends per share",
+        "8.40 (8.20 / 8.60)",
+        "9.24 (8.61 / 10.12)",
+        "10.16 (9.04 / 11.96)"
+       ],
+       [
+        "Net debt",
+        "17,973 (17,855 / 17,999)",
+        "15,728 (16,244 / 15,759)",
+        "13,293 (14,389 / 13,269)"
+       ]
+      ],
+      "note": "The enterprise value to normal operating profit number shows how many dollars investors pay for each dollar of the company's normal operating profit."
+     }
+    },
+    {
+     "heading": "What is Parker's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the money left after running the business and maintaining its equipment. Parker’s **3.2% free-cash-flow yield** says that each $100 of market value represents about $3.20 of annual cash generation, not that the investor receives $3.20. The dividend yield was only **0.8%**. Parker can use the rest for acquisitions, debt repayment or repurchases. Working capital also matters: a credit sale can produce accounting profit before the customer pays, while inventory consumes cash before it is sold."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "7.31"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jun 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.37",
+      "5.41",
+      "6.00",
+      "6.61",
+      "7.31"
+     ],
+     "Real free cash flow per share": [
+      "15.91",
+      "18.91",
+      "21.73",
+      "24.44",
+      "29.09"
+     ],
+     "Free cash flow per share": [
+      "16.97",
+      "20.01",
+      "22.92",
+      "25.66",
+      "30.48"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ph/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PH&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Parker earnings",
+   "meta_description": "Parker's next results are expected November 5, 2026; guidance is clear, while the key test is whether acquisitions produce cash.",
+   "opening": "Parker's next results are expected on November 5, 2026. The key thing to watch is whether acquired revenue becomes cash after financing and integration costs.",
+   "closing": "The full memo answers how Parker makes money, competes with rivals, is run, and faces its risks.",
+   "blocks": [
+    {
+     "heading": "What has Parker guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 5.5%–8.5% reported and organic sales growth for fiscal 2027. The adjusted EPS guide is $34.25–$35.25. Adjusted segment margin is guided to 27.5%–27.9%, versus 24.5%–24.9% as reported. Standalone fiscal 2027 free cash flow is guided to $3.4 billion–$3.9 billion; that guide excludes Filtration Group and CIRCOR."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except where labelled; EPS in US$",
+      "caption": "Guidance in force (US$ millions, except where labelled; EPS in US$)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Forecasted reported sales growth",
+        "Year to Jun 2027",
+        "5.5%",
+        "8.5%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Forecasted organic sales growth",
+        "Year to Jun 2027",
+        "5.5%",
+        "8.5%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted forecasted segment operating margin",
+        "Year to Jun 2027",
+        "27.5%",
+        "27.9%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted forecasted earnings per diluted share",
+        "Year to Jun 2027",
+        "34.25",
+        "35.25",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The main forecast excludes Filtration Group and the pending CIRCOR Aerospace purchase, so its sales figure is not the total expected sales of the company."
+     }
+    },
+    {
+     "heading": "Has Parker kept its promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Parker has delivered against stated operating goals. Its February 2024 presentation set an adjusted earnings-per-share ambition of approximately US$30 for fiscal 2027, while fiscal 2026 adjusted earnings reached US$32.31. Adjusted figures remove selected costs, so they are useful only when the target and later result use the same definition. Parker also reached its fiscal 2029 adjusted segment operating-margin target three years early."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Parker's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Sales reached $5,755 million, up 9.8% from the prior-year quarter. Organic growth was 8.0%, which means the improvement remained visible after removing ownership and currency effects."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,755",
+        "5,486",
+        "5,174",
+        "5,084",
+        "5,243",
+        "4,960",
+        "4,743",
+        "4,904"
+       ],
+       [
+        "Operating income",
+        "1,474",
+        "1,229",
+        "1,182",
+        "1,183",
+        "1,189",
+        "1,108",
+        "992",
+        "1,058"
+       ],
+       [
+        "Net income",
+        "1,091",
+        "904",
+        "845",
+        "808",
+        "923",
+        "961",
+        "949",
+        "698"
+       ],
+       [
+        "EPS, diluted",
+        "8.54",
+        "7.06",
+        "6.60",
+        "6.29",
+        "7.15",
+        "7.37",
+        "7.25",
+        "5.34"
+       ]
+      ],
+      "note": "Free cash flow is the cash left after the company pays for equipment, buildings, and software, so it can be lower than cash from operations."
+     }
+    },
+    {
+     "heading": "What should I watch in Parker's next results?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the September quarter. Filtration Group was expected to be neutral to adjusted EPS at first, so its sales should not automatically be treated as an earnings gain. Investors should separate acquired revenue, underlying growth, financing expense and integration costs. The purchase-price allocation will also determine future amortization charges."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,755"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "8.54"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,904",
+      "4,743",
+      "4,960",
+      "5,243",
+      "5,084",
+      "5,174",
+      "5,486",
+      "5,755"
+     ],
+     "EPS, diluted": [
+      "5.34",
+      "7.25",
+      "7.37",
+      "7.15",
+      "6.29",
+      "6.60",
+      "7.06",
+      "8.54"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ph/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PH&src=seo-earnings"
+  }
+ },
+ "short_name": "Parker",
+ "first_memo_date": "2026-10-15T02:57:40Z"
+}

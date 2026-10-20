@@ -1,0 +1,629 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "DDOG",
+ "slug": "ddog",
+ "company": "Datadog, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T22:15:11Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 266.25,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 27,
+  "words": 16648,
+  "sources": 329
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Datadog is a software company that helps organizations see what their digital systems are doing, find trouble, and respond to it. Its business is simple to follow: customers pay for monitoring and related tools, while Datadog pays to collect and analyze their data and to build and sell the platform."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026008819/ddog-20251231.htm"
+  },
+  {
+   "title": "2024 tax note",
+   "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000025/ddog-20241231.htm"
+  },
+  {
+   "title": "2023 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155024000009/ddog-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "CSCO",
+  "ESTC",
+  "IBM",
+  "MSFT",
+  "AMZN",
+  "GOOG",
+  "ORCL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Datadog stock forecast",
+   "meta_description": "Datadog’s weighted forecast is $148.38 per share by October 2029, hinging on cash growth after stock pay, dilution and valuation compression.",
+   "opening": "Datadog’s weighted forecast points to $148.38 per share by October 2029. Datadog’s forecast hinges on cash growth after stock pay, dilution and valuation compression.",
+   "closing": "The full memo covers Datadog’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Datadog’s shares go?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Datadog’s weighted forecast points to $148.38 per share by October 2029, a 44% decline, hinging on cash growth after stock pay, dilution and valuation compression. Management promises full-year 2026 revenue of $4,450–$4,470 million, or 30.0% growth, with a 23.0% non-GAAP operating margin. Q3 2026 guidance is revenue of $1,135–$1,145 million and 28.0%–29.0% growth."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 266.25, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 266.25, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30%",
+        "2.61 (-99%)",
+        "17.09 (-94%)",
+        "20.75 (-92%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "95.54 (-64%)",
+        "126.57 (-52%)",
+        "146.01 (-45%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "146.43 (-45%)",
+        "240.55 (-10%)",
+        "345.77 (+30%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "77.84 (-71%)",
+        "116.52 (-56%)",
+        "148.38 (-44%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average value across the bear, base, and bull cases, not a separate likely outcome."
+     }
+    },
+    {
+     "heading": "What has to go right for Datadog, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Cash after stock pay is the main operating swing factor. The base case starts at $290M and reaches $504M one year later. It reaches $792M in the final period. The first margin is 5%, and the last is 9%, reflecting operating leverage as revenue expands. The bear path gives negative $43M in the first period. It recovers to $50M and then $116M as usage stabilizes. The bull path starts at $360M. It reaches $702M and then $1,200M through paid AI monitoring, broader product adoption and better scale economics. The range reflects history: cash after stock pay was negative in 2022 and fell in 2025 despite revenue growth."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case assumes paid AI workload monitoring broadens beyond AI-native customers. Four-or-more-product adoption improves expansion, and stock pay falls relative to sales. The path reaches $146.43 in October 2027 and $345.77 in October 2029. Its 20% probability is below base because durable paid AI adoption and lower stock compensation are not yet established."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "290 (-43.00 / 360)",
+        "504 (50.00 / 702)",
+        "792 (116 / 1,200)"
+       ],
+       [
+        "Shares (millions)",
+        "372 (376 / 369)",
+        "383 (392 / 377)",
+        "396 (407 / 387)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "110 (70.00 / 140)",
+        "90.00 (55.00 / 125)",
+        "70.00 (40.00 / 110)"
+       ],
+       [
+        "Net debt",
+        "-3,660 (-3,993 / -3,590)",
+        "-3,156 (-3,943 / -2,888)",
+        "-2,349 (-3,812 / -1,673)"
+       ]
+      ],
+      "note": "The negative net debt means the company has more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "How much cash does Datadog really make?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The stricter measure subtracts stock pay as well. Removing $750.671 million from free cash flow leaves $164.046 million of “real free cash flow.” This is an analytical measure, not Datadog’s reported figure or a literal bill. It asks what remains after treating employee ownership awards as a cost rather than free compensation."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,050,135",
+        "870,603",
+        "659,954",
+        "418,407",
+        "286,545"
+       ],
+       [
+        "Of which, freed from working capital",
+        "53,492",
+        "13,343",
+        "44,626",
+        "6,393",
+        "63,378"
+       ],
+       [
+        "− Capital spending",
+        "135,418",
+        "95,500",
+        "62,406",
+        "64,889",
+        "36,025"
+       ],
+       [
+        "**= Free cash flow**",
+        "914,717",
+        "775,103",
+        "597,548",
+        "353,518",
+        "250,520"
+       ],
+       [
+        "− Stock pay",
+        "750,671",
+        "570,336",
+        "482,300",
+        "363,154",
+        "163,737"
+       ],
+       [
+        "**= Real free cash flow**",
+        "164,046",
+        "204,767",
+        "115,248",
+        "-9,636",
+        "86,783"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "914,717",
+        "775,103",
+        "597,548",
+        "353,518",
+        "250,520"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "26.7%",
+        "28.9%",
+        "28.1%",
+        "21.1%",
+        "24.4%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "4.8%",
+        "7.6%",
+        "5.4%",
+        "-0.6%",
+        "8.4%"
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but it gives employees part of the company, so the table subtracts its value from free cash flow."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Datadog today?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, divides the share price by annual earnings per share. Datadog’s reported and adjusted profits require care because stock compensation pays employees with ownership. Paying an engineer $100 in cash uses money but leaves the share count unchanged; paying with shares preserves cash but gives the engineer part of the company. Datadog’s Q2 2026 GAAP operating margin was 0%, while its non-GAAP margin was 23%. The adjustment removed $220.3 million of stock compensation and other items, so adjusted earnings do not show the full economic cost of dilution."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "266.25"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "148.38 (-44%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "89.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 266.25,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30%",
+      "values": [
+       "2.61 (-99%)",
+       "17.09 (-94%)",
+       "20.75 (-92%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "95.54 (-64%)",
+       "126.57 (-52%)",
+       "146.01 (-45%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "146.43 (-45%)",
+       "240.55 (-10%)",
+       "345.77 (+30%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "77.84 (-71%)",
+       "116.52 (-56%)",
+       "148.38 (-44%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ddog/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DDOG&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Datadog earnings: November 4, 2026",
+   "meta_description": "Datadog reports on November 4, 2026; see guidance, recent results and whether broader demand can offset lower usage from its largest customer.",
+   "opening": "Datadog’s next results are expected on November 4, 2026. The key question is whether broader demand can absorb the largest customer’s lower usage.",
+   "closing": "The full memo also answers questions about Datadog’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Datadog guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Datadog’s weighted forecast points to $148.38 per share by October 2029, a 44% decline, hinging on cash growth after stock pay, dilution and valuation compression. Management promises full-year 2026 revenue of $4,450–$4,470 million, or 30.0% growth, with a 23.0% non-GAAP operating margin. Q3 2026 guidance is revenue of $1,135–$1,145 million and 28.0%–29.0% growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue (Full Year 2026)",
+        "Full Year 2026",
+        "4,450",
+        "4,470",
+        "Aug 6, 2026"
+       ],
+       [
+        "Non-GAAP operating income (Full Year 2026)",
+        "Full Year 2026",
+        "1,010",
+        "1,030",
+        "Aug 6, 2026"
+       ],
+       [
+        "Non-GAAP net income per share (Full Year 2026)",
+        "Full Year 2026",
+        "2.50",
+        "2.54",
+        "Aug 6, 2026"
+       ],
+       [
+        "Revenue (Third Quarter 2026)",
+        "Third Quarter 2026",
+        "1,135",
+        "1,145",
+        "Aug 6, 2026"
+       ],
+       [
+        "Non-GAAP operating income (Third Quarter 2026)",
+        "Third Quarter 2026",
+        "260",
+        "270",
+        "Aug 6, 2026"
+       ],
+       [
+        "Non-GAAP net income per share (Third Quarter 2026)",
+        "Third Quarter 2026",
+        "0.63",
+        "0.65",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Datadog keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 110,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Datadog began 2025 forecasting revenue of US$3.175 billion–US$3.195 billion. It ultimately reported US$3.43 billion of revenue and US$768 million of adjusted operating income, exceeding its opening outlook. Guidance is not a promise, but delivery against the first forecast is useful evidence of execution."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Datadog’s recent revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $1,121.454 million, up 35.6% year over year. Growth had already accelerated across the preceding quarters, so June was not simply an isolated jump."
+      },
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Gross margin fell from 79.9% to 78.6% as cloud infrastructure and software costs rose. Operating results nevertheless improved from a $35.500 million loss to a $5.455 million profit because revenue grew faster than operating expenses. The resulting operating margin was still only about 0.5%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,121,454",
+        "1,006,426",
+        "953,194",
+        "885,651",
+        "826,760",
+        "761,553",
+        "737,727",
+        "690,016"
+       ],
+       [
+        "Gross margin",
+        "78.6%",
+        "79.2%",
+        "80.4%",
+        "80.1%",
+        "79.9%",
+        "79.3%",
+        "80.5%",
+        "80.0%"
+       ],
+       [
+        "Operating income",
+        "5,455",
+        "7,327",
+        "9,356",
+        "-5,809",
+        "-35,500",
+        "-12,420",
+        "9,392",
+        "20,278"
+       ],
+       [
+        "Net income",
+        "44,558",
+        "52,574",
+        "46,567",
+        "33,885",
+        "2,647",
+        "24,642",
+        "45,594",
+        "51,697"
+       ],
+       [
+        "EPS, diluted",
+        "0.12",
+        "0.15",
+        "0.13",
+        "0.10",
+        "0.01",
+        "0.07",
+        "0.13",
+        "0.14"
+       ],
+       [
+        "**= Free cash flow**",
+        "278,704",
+        "289,091",
+        "291,021",
+        "213,952",
+        "165,353",
+        "244,391",
+        "240,972",
+        "203,604"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Datadog watchers look for in the next release?",
+     "paragraphs": [
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "November 4 will provide the first completed-quarter test of whether broader demand can absorb the largest customer’s usage reduction."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,121,454"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.12"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "690,016",
+      "737,727",
+      "761,553",
+      "826,760",
+      "885,651",
+      "953,194",
+      "1,006,426",
+      "1,121,454"
+     ],
+     "EPS, diluted": [
+      "0.14",
+      "0.13",
+      "0.07",
+      "0.01",
+      "0.10",
+      "0.13",
+      "0.15",
+      "0.12"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ddog/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DDOG&src=seo-earnings"
+  }
+ },
+ "short_name": "Datadog",
+ "first_memo_date": "2026-10-15T22:15:11Z"
+}

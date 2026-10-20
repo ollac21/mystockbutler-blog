@@ -1,0 +1,769 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "YUM",
+ "slug": "yum",
+ "company": "Yum! Brands, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T12:11:59Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 150.51,
+ "price_date": "2026-10-16T20:01:35Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 255,
+  "tables": 27,
+  "words": 17077,
+  "sources": 204
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Yum! Brands is a restaurant company built around KFC, Taco Bell and Habit Burger & Grill. Its central business is not only selling meals, but also letting other businesses sell those meals under Yum’s names."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000084/yum-20251231.htm"
+  },
+  {
+   "title": "2024 annual filing, Note 3",
+   "url": "https://www.sec.gov/Archives/edgar/data/1041061/000104106125000013/yum-20241231.htm"
+  },
+  {
+   "title": "Yum Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000160/yum-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "YUMC",
+  "MCD",
+  "QSR",
+  "DPZ",
+  "WEN",
+  "CMG",
+  "PZZA",
+  "WING",
+  "JACK",
+  "CAVA"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Yum stock forecast",
+   "meta_description": "Yum's stock forecast weighs Taco Bell traffic, franchisee health, debt and Pizza Hut proceeds across bear, base and bull scenarios.",
+   "opening": "Yum's weighted forecast is $141.19 in October 2027 and reaches $173.75 in October 2029. It hinges on Taco Bell traffic, franchisee economics, debt refinancing and the use of Pizza Hut proceeds.",
+   "closing": "The full memo also explains Yum's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Yum's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast starts below today’s price but improves as Yum’s earnings and buybacks compound. The weighted price is $141.19 in October 2027, a 4% total loss including dividends. It reaches $156.79 in October 2028, an 8% gain, and $173.75 in October 2029, a 22% gain. The October 2029 range runs from $91.80 in the bear case to $263.30 in the bull case. Today’s reference price is $150.51."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The base case is the most likely path at 53%, followed by the bear case at 27% and the bull case at 20%. The wide range reflects uncertainty over Taco Bell traffic, franchisee economics, debt refinancing and how aggressively Yum uses Pizza Hut proceeds."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 150.51, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 150.51, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "107.86 (-26 %)",
+        "99.69 (-30 %)",
+        "91.80 (-33 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "144.87 (-2 %)",
+        "163.06 (+13 %)",
+        "181.70 (+27 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "176.46 (+19 %)",
+        "217.25 (+49 %)",
+        "263.30 (+82 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "141.19 (-4 %)",
+        "156.79 (+8 %)",
+        "173.75 (+22 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Yum?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case holds earnings at $1,802 million through October 2028 before a small recovery to $1,824 million. It assumes weak Taco Bell traffic, discounting and lower franchisee returns. The bull case reaches $2,010 million first, then $2,232 million and $2,475 million as Taco Bell recovers, KFC expands profitably and Byte improves productivity. Continuing-brand system sales grew 7% and core operating profit grew 8% in the second quarter of 2026, supporting upside, but the latest earnings also contained a $359 million tax benefit that is excluded from all cases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Yum really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Working capital explains why cash and profit can diverge. Royalties may be recognized before Yum collects them, while tax timing and employee payments can shift cash between periods. Stock compensation creates another gap: Yum paid $70 million in stock-based pay in 2025. It is added back to operating cash, but shareholders bear dilution or the cost of repurchases."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,010",
+        "1,689",
+        "1,603",
+        "1,427",
+        "1,706"
+       ],
+       [
+        "− Capital spending",
+        "371",
+        "257",
+        "285",
+        "279",
+        "230"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,639",
+        "1,432",
+        "1,318",
+        "1,148",
+        "1,476"
+       ],
+       [
+        "− Stock pay",
+        "70",
+        "69",
+        "95",
+        "84",
+        "75"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,569",
+        "1,363",
+        "1,223",
+        "1,064",
+        "1,401"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares uses no cash but gives away part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Yum today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio means price divided by earnings per share. A trailing P/E uses recent reported earnings; a forward P/E uses expected earnings. The forward multiple can be higher even when the share price is unchanged because its earnings denominator is smaller. That may reflect the loss of Pizza Hut’s profits or the removal of unusual benefits, rather than a sudden collapse in the restaurants."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "150.51"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "21.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.8%"
+       ]
+      ],
+      "note": "The price-to-book ratio is not meaningful because the company owes more than it owns, making its book value negative."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "150.51"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "173.75 (+22 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "21.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 150.51,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "107.86 (-26 %)",
+       "99.69 (-30 %)",
+       "91.80 (-33 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "144.87 (-2 %)",
+       "163.06 (+13 %)",
+       "181.70 (+27 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "176.46 (+19 %)",
+       "217.25 (+49 %)",
+       "263.30 (+82 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "141.19 (-4 %)",
+       "156.79 (+8 %)",
+       "173.75 (+22 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/yum/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=YUM&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Yum dividend",
+   "meta_description": "Yum's dividend draws on free cash flow, while buybacks, debt, franchisee health and Taco Bell traffic shape the outlook.",
+   "opening": "Yum's base dividend rises from $3.12 per share to $3.24 and then $3.36. Yum generated $1,639 million of free cash flow in 2025, while dividends, buybacks and debt compete for that cash.",
+   "closing": "The full memo also explains Yum's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Yum pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $3.12 per share to $3.24 and then $3.36. That is roughly 4% annual growth, below the recent record, because debt and buybacks compete for cash. The bear case holds the dividend at $3.00 annually, preserving the current quarterly rate. The bull case reaches $3.20, $3.48 and $3.76 as stronger free cash flow supports larger increases. Yum generated $1,639 million of free cash flow in 2025, but net debt was $11,601 million at June 2026."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; share-count change in %",
+      "caption": "What one share gets (US$ per share; share-count change in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "5.55",
+        "5.22",
+        "5.59",
+        "4.57",
+        "5.21"
+       ],
+       [
+        "Real free cash flow per share",
+        "5.58",
+        "4.78",
+        "4.29",
+        "3.67",
+        "4.64"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.81",
+        "2.64",
+        "2.38",
+        "2.24",
+        "1.96"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "1.06",
+        "0.84",
+        "2.07",
+        "",
+        ""
+       ]
+      ],
+      "note": "Book value per share is negative because the company owes more than it owns on paper, partly after buying back shares."
+     }
+    },
+    {
+     "heading": "Does Yum's dividend fit its cash flow?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.7 — Franchise mix, leverage and capital allocation",
+       "text": "Capital allocation puts pressure on the cash model. In 2025, Yum paid approximately $789 million in dividends and spent $552 million repurchasing shares. Buybacks can increase EPS by reducing the share count, but they do not improve a restaurant or reduce franchisee debt. Management later acknowledged that first-half repurchases used both free cash flow and revolver borrowing."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,639",
+        "1,432",
+        "1,318",
+        "1,148",
+        "1,476"
+       ],
+       [
+        "− Dividends paid",
+        "789",
+        "752",
+        "678",
+        "649",
+        "592"
+       ],
+       [
+        "− Share buybacks",
+        "552",
+        "441",
+        "50",
+        "1,200",
+        "1,591"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "298",
+        "239",
+        "590",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "701",
+        "707"
+       ]
+      ],
+      "note": "In 2022 and 2021, the company paid shareholders more cash than it generated, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Yum's dividend?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if Taco Bell traffic remains weak through October 2027–2028, discounting damages margins, or franchisee cash returns delay openings during 2028 and 2029. Refinancing pressure or an adverse tax outcome would further reduce buyback capacity and could compress the multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Yum's dividend yield at today's price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "150.51"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "21.0x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The price-to-book ratio is not meaningful because the company owes more than it owns, making its book value negative."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.81"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; share-count change in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.96",
+      "2.24",
+      "2.38",
+      "2.64",
+      "2.81"
+     ],
+     "Real free cash flow per share": [
+      "4.64",
+      "3.67",
+      "4.29",
+      "4.78",
+      "5.58"
+     ],
+     "Free cash flow per share": [
+      "4.89",
+      "3.96",
+      "4.62",
+      "5.02",
+      "5.83"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/yum/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=YUM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Yum earnings date and guidance",
+   "meta_description": "Yum reports on November 3, 2026; watch Taco Bell traffic, restaurant margin and debt refinancing.",
+   "opening": "Yum’s next results are expected on November 3, 2026. The main thing to watch is Taco Bell traffic and margin recovery.",
+   "closing": "The full memo also covers Yum’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Yum guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets 5% restaurant growth and 7% system-sales growth. It targets at least 8% core operating-profit growth. For 2026, guidance calls for $400 million of gross capital expenditure and $50 million of refranchising proceeds. Refranchising means selling company-run restaurants to independent operators who pay brand fees. Net capital expenditure is $350 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date given"
+      ],
+      "rows": [
+       [
+        "gross capital expenditures",
+        "Year to Dec 2026",
+        "400",
+        "400",
+        "Feb 20, 2026"
+       ],
+       [
+        "refranchising proceeds",
+        "Year to Dec 2026",
+        "50",
+        "50",
+        "Feb 20, 2026"
+       ],
+       [
+        "net capital expenditures",
+        "Year to Dec 2026",
+        "350",
+        "350",
+        "Feb 20, 2026"
+       ]
+      ],
+      "note": "Net capital expenditures are lower because the company expects 50 million dollars from selling or transferring restaurants, reducing its 400 million dollars of spending to 350 million dollars."
+     }
+    },
+    {
+     "heading": "How have Yum revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter delivered operating growth, but its earnings increase was largely tax-driven. Revenue rose 12.2% from the prior-year quarter, while operating income rose 5.3%, so sales grew faster than operating profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,169",
+        "2,059",
+        "2,514",
+        "1,979",
+        "1,933",
+        "1,787",
+        "2,362",
+        "1,826"
+       ],
+       [
+        "Operating income",
+        "655",
+        "644",
+        "738",
+        "666",
+        "622",
+        "548",
+        "657",
+        "619"
+       ],
+       [
+        "Net income",
+        "853",
+        "432",
+        "535",
+        "397",
+        "374",
+        "253",
+        "423",
+        "382"
+       ],
+       [
+        "EPS, diluted",
+        "3.08",
+        "1.55",
+        "1.91",
+        "1.41",
+        "1.33",
+        "0.90",
+        "1.49",
+        "1.35"
+       ]
+      ],
+      "note": "Net income in June 2026 is unusually high because it includes a tax benefit from the planned Pizza Hut sales, not just profit from selling food."
+     }
+    },
+    {
+     "heading": "What should I watch in Yum’s next results?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Yum is due to discuss third-quarter results on November 3, 2026. For the September quarter, management forecast U.S. company-restaurant margins of 19.0%–21.0%. Restaurant margin is the share of sales left after restaurant operating expenses, before corporate costs and other charges. The test is whether returning customers restore that margin without sustained discounting."
+      },
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The food-safety outbreak was declared over in September, but customer traffic remained an open question. From July 6 through September 11, 2026, Taco Bell visits were 12.2% below the comparable prior-year period. Visits are not sales, because prices and order sizes can change, but the decline keeps customer confidence and promotional costs in focus."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,169"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.08"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,826",
+      "2,362",
+      "1,787",
+      "1,933",
+      "1,979",
+      "2,514",
+      "2,059",
+      "2,169"
+     ],
+     "EPS, diluted": [
+      "1.35",
+      "1.49",
+      "0.90",
+      "1.33",
+      "1.41",
+      "1.91",
+      "1.55",
+      "3.08"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/yum/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=YUM&src=seo-earnings"
+  }
+ },
+ "short_name": "Yum",
+ "first_memo_date": "2026-10-19T12:11:59Z"
+}

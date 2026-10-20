@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261009T064622Z-ee805bae9c72",
  "ticker": "WMT",
  "slug": "wmt",
  "company": "Walmart Inc.",
@@ -31,12 +30,12 @@
    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000021/wmt-20250131.htm"
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000032/earningsreleasefy26q4.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416925000010/earningsreleasefy25q4.htm"
   }
  ],
  "rivals": [
@@ -65,13 +64,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Walmart Inc. stock forecast: scenarios, cash and value",
-   "meta_description": "A calm Walmart Inc. stock forecast covering scenario prices, business drivers, free cash flow and valuation.",
-   "opening": "The weighted forecast is $114.26 in October 2029, a 6% return with dividends. It hinges on earnings growth and Walmart sustaining a premium valuation.",
-   "closing": "The full research also covers Walmart Inc.'s business, rivals, management and risks.",
+   "title": "Walmart stock forecast",
+   "meta_description": "Walmart stock forecast weighs bear, base and bull cases, cash after stock pay, and the price paid for earnings and cash.",
+   "opening": "Walmart's weighted price is $114.26 in October 2029. Walmart's outcome hinges on earnings growth and Walmart sustaining a premium valuation.",
+   "closing": "The full Walmart memo also answers how Walmart's business works, who its rivals are, how management is executing, and what risks could change the outcome.",
    "blocks": [
     {
-     "heading": "Where could Walmart Inc.'s shares be by October 2029?",
+     "heading": "Where could Walmart's shares be in each forecast year?",
      "paragraphs": [
       {
        "n": 223,
@@ -133,7 +132,7 @@
      }
     },
     {
-     "heading": "What has to go right for Walmart Inc.?",
+     "heading": "What has to go right for Walmart, and what could go wrong?",
      "paragraphs": [
       {
        "n": 230,
@@ -141,26 +140,19 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
        "text": "The bear case starts at $24,700m and reaches $25,421m. It assumes about 3% annual revenue growth from the $736bn base, with margins falling from 3.25% to 3.15%. The bull case spans $27,584m to $33,174m, supported by stronger transactions, digital demand, advertising, membership and fulfillment productivity. The base is supported by guidance for 4–5% sales growth and faster operating-income growth, plus seven earnings beats in eight reports. The forecast removes tariff refunds and other identified one-time items, so the bull requires recurring improvement."
-      },
-      {
-       "n": 238,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.4 — Bear and bull",
-       "text": "The bull case reaches $133.22 first and $171.09 last. Its 15% probability reflects the need for transaction growth, lower fulfillment costs, stronger advertising and membership profits, and recurring cash generation to succeed together. The evidence shows growth in these businesses, but not yet their complete profit economics."
       }
      ],
      "table": null
     },
     {
-     "heading": "How much cash does Walmart Inc. really make?",
+     "heading": "How much cash does Walmart really make?",
      "paragraphs": [
       {
-       "n": 144,
+       "n": 145,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.3 — Cash",
-       "text": "Stock-based compensation saves current cash but gives employees a claim on the business. Deducting it is a conservative way to estimate what remains for existing shareholders, even though it is not a second cash payment. Its share of revenue increased across the period."
+       "text": "Free cash flow yield compares annual cash generation with market value, but the answer changes depending on whether the calculation deducts stock pay or payments to outside subsidiary owners. The cash table therefore distinguishes headline free cash flow from cash left after these claims."
       }
      ],
      "table": {
@@ -176,6 +168,22 @@
        "Year to Jan 2022"
       ],
       "rows": [
+       [
+        "Cash from operations",
+        "41,565",
+        "36,443",
+        "35,726",
+        "28,841",
+        "24,181"
+       ],
+       [
+        "Capital spending",
+        "26,642",
+        "23,783",
+        "20,606",
+        "16,857",
+        "13,106"
+       ],
        [
         "Free cash flow (calculated)",
         "14,923",
@@ -201,14 +209,6 @@
         "9,912"
        ],
        [
-        "Free cash flow left for shareholders (calculated)",
-        "10,881",
-        "9,315",
-        "12,264",
-        "9,962",
-        "9,488"
-       ],
-       [
         "Real free cash flow per share (calculated)",
         "1.41",
         "1.22",
@@ -221,8 +221,16 @@
      }
     },
     {
-     "heading": "What does an investor pay for Walmart Inc. today?",
-     "paragraphs": [],
+     "heading": "What does an investor pay today for Walmart?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price-to-earnings, says how much investors pay for one dollar of annual profit. Trailing P/E uses the past twelve months; forward P/E uses the next twelve months as estimated. A lower forward multiple suggests expected growth, but adjusted and reported earnings may not count costs in the same way."
+      }
+     ],
      "table": {
       "title": "What an investor pays today",
       "unit": "US$ millions",
@@ -243,10 +251,6 @@
        [
         "P/E, next 12 months (calculated)",
         "34.3x"
-       ],
-       [
-        "EV / revenue, last 12 months (calculated)",
-        "1.3x"
        ],
        [
         "Free cash flow yield (calculated)",
@@ -327,13 +331,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Walmart Inc. dividend: payout and cash coverage",
-   "meta_description": "Walmart Inc. pays a $0.99 annual dividend; its 0.9% yield sits alongside a cash-coverage test after stock pay.",
-   "opening": "Walmart has approved a $0.99 annual dividend rate and has raised it for 53 consecutive years. The dividend is tested against free cash flow after stock pay, while shareholder distributions can exceed internally generated cash.",
-   "closing": "The full memo also explains Walmart’s business, compares its rivals, examines management’s plans, and lays out the risks.",
+   "title": "Walmart dividend",
+   "meta_description": "Walmart pays a $0.99 annual dividend; cash after stock pay is the key coverage test, while dividend yield is 0.9%.",
+   "opening": "Walmart has approved a $0.99 annual rate and has raised its dividend for 53 consecutive years. Walmart's free cash flow after stock pay is the cash test, and shareholder distributions can exceed internally generated cash.",
+   "closing": "The full Walmart memo also examines its business, rivals, management decisions and risks.",
    "blocks": [
     {
-     "heading": "How much does Walmart Inc. pay in dividends?",
+     "heading": "How much does Walmart pay per share?",
      "paragraphs": [
       {
        "n": 233,
@@ -344,48 +348,28 @@
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "US$ per share",
-      "caption": "What one share gets (US$ per share)",
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions unless shown)",
       "head": [
-       "Row",
-       "Year to Jan 2026",
-       "Year to Jan 2025",
-       "Year to Jan 2024",
-       "Year to Jan 2023",
-       "Year to Jan 2022"
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
       ],
       "rows": [
        [
-        "EPS, diluted",
-        "2.73",
-        "2.41",
-        "1.91",
-        "1.42",
-        "1.62"
-       ],
-       [
-        "Free cash flow per share (calculated)",
-        "1.86",
-        "1.57",
-        "1.86",
-        "1.46",
-        "1.32"
-       ],
-       [
-        "Dividend per share",
-        "0.94",
-        "0.83",
-        "0.76",
-        "0.75",
-        "0.73"
+        "Dividends per share",
+        "1.04 (0.99 / 1.06)",
+        "1.09 (0.99 / 1.14)",
+        "1.15 (1.00 / 1.23)"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Is Walmart Inc.'s dividend covered by its cash?",
+     "heading": "Does Walmart's dividend come from its cash?",
      "paragraphs": [
       {
        "n": 82,
@@ -440,22 +424,6 @@
         "9,787"
        ],
        [
-        "Acquisitions",
-        "53",
-        "1,896",
-        "9",
-        "740",
-        "359"
-       ],
-       [
-        "Debt raised minus debt repaid (calculated)",
-        "1,358",
-        "-3,468",
-        "750",
-        "2,352",
-        "-6,065"
-       ],
-       [
         "Returned to shareholders, share of real free cash flow (calculated)",
         "137.8%",
         "113.1%",
@@ -468,7 +436,7 @@
      }
     },
     {
-     "heading": "What could change Walmart Inc.'s dividend?",
+     "heading": "What could change Walmart's dividend?",
      "paragraphs": [
       {
        "n": 239,
@@ -476,20 +444,21 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.5 — What would change the view",
        "text": "The forecast would move toward the bear case during FY2027–FY2028 if U.S. comparable sales and transactions slow below expectations. From FY2027 through FY2029, fading tariff refunds, high capital spending and rising depreciation would weaken margins and make buybacks less affordable."
-      },
-      {
-       "n": 241,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.5 — What would change the view",
-       "text": "The bull case would gain credibility during FY2027–FY2029 if reliable availability sustains unit growth, order density and automation reduce fulfillment costs, and advertising and membership add recurring profit. From FY2028 onward, stronger cash generation would need to fund both investment and faster buybacks."
       }
      ],
      "table": null
     },
     {
-     "heading": "What is Walmart Inc.'s dividend yield today against its price?",
-     "paragraphs": [],
+     "heading": "What is Walmart's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The price leaves little cash yield today. Free cash flow yield is 1.7%, and dividend yield is 0.9%. The outcome turns on lower prices supporting demand, the shifted Flipkart event involving Walmart’s Indian online shopping company, and demand without tariff refunds. The October-quarter report on November 19, 2026 tests those factors. The January year-end report on February 18, 2027 tests transactions, productivity and cash after investment."
+      }
+     ],
      "table": {
       "title": "What an investor pays today",
       "unit": "US$ millions",
@@ -552,13 +521,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Walmart Inc. earnings date and guidance",
-   "meta_description": "Walmart Inc. reports next on November 19, 2026; guidance is 4–5% sales growth and adjusted EPS of $2.80–$2.87.",
-   "opening": "Walmart Inc.'s next results are expected on November 19, 2026. Watch whether lower prices still support profit after tariff refunds fade.",
-   "closing": "The full Walmart Inc. memo also covers its business, rivals, management and risks.",
+   "title": "Walmart earnings: guidance and next results",
+   "meta_description": "Walmart reports next on November 19, 2026; the key questions are guidance, results and recurring profit.",
+   "opening": "Walmart’s next results are expected on November 19, 2026. Watch whether lower prices support profit after tariff refunds.",
+   "closing": "The full Walmart memo also explains Walmart’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "What has Walmart Inc. guided for FY2027?",
+     "heading": "What has Walmart guided for FY2027?",
      "paragraphs": [
       {
        "n": 8,
@@ -627,7 +596,7 @@
      }
     },
     {
-     "heading": "Has Walmart Inc. kept its past promises?",
+     "heading": "Has Walmart kept its past promises?",
      "paragraphs": [
       {
        "n": 122,
@@ -640,7 +609,7 @@
      "table": null
     },
     {
-     "heading": "How have Walmart Inc. revenue and profit changed?",
+     "heading": "How have Walmart’s revenue and profit trended?",
      "paragraphs": [
       {
        "n": 155,
@@ -678,17 +647,6 @@
         "169,588"
        ],
        [
-        "Gross margin (calculated)",
-        "25.2%",
-        "24.0%",
-        "23.8%",
-        "24.0%",
-        "24.2%",
-        "24.0%",
-        "23.6%",
-        "24.0%"
-       ],
-       [
         "Operating income",
         "9,383",
         "7,493",
@@ -720,13 +678,35 @@
         "0.56",
         "0.65",
         "0.57"
+       ],
+       [
+        "Cash from operations",
+        "14,972",
+        "4,738",
+        "14,113",
+        "9,100",
+        "12,941",
+        "5,411",
+        "13,525",
+        "6,561"
+       ],
+       [
+        "Capital spending",
+        "7,497",
+        "6,684",
+        "8,015",
+        "7,218",
+        "6,423",
+        "4,986",
+        "7,087",
+        "6,189"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What should investors watch in Walmart Inc.'s next results?",
+     "heading": "What should I watch in Walmart’s next results?",
      "paragraphs": [
       {
        "n": 218,
@@ -734,6 +714,13 @@
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
        "text": "The next results will test whether Walmart’s investment is producing recurring gains. The November 19, 2026 report covers the October quarter, while the February 18, 2027 report covers the January year-end. November should show how lower prices affect profit after tariff refunds; February should show whether Flipkart’s shifted event produces the expected holiday benefit. Across both reports, transactions, cash after investment and productivity after depreciation matter more than a single earnings headline."
+      },
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Tariff refunds make that comparison harder. A tariff is an import charge: if Walmart pays $100 for goods including a $10 tariff and later receives the tariff back, its recorded cost falls even if the selling price does not. Walmart received about $2.9 billion in refunds in the July quarter, which lifted profit. Management says it is using the remaining benefit to lower prices and improve customer experience. That may reduce near-term profit, but it could win repeat purchases. The real test is profit after the refund fades."
       }
      ],
      "table": null
@@ -794,5 +781,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=WMT&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Walmart",
+ "first_memo_date": "2026-10-10T00:01:12Z"
 }

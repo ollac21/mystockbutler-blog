@@ -1,0 +1,751 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MET",
+ "slug": "met",
+ "company": "MetLife, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-18T00:18:56Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 100.76,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 26,
+  "words": 16572,
+  "sources": 232
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "MetLife sells protection and long-term payment promises, then invests the money it receives to help meet them. Its business ranges from workplace benefits to pension transfers and institutional investment management."
+ },
+ "sources": [
+  {
+   "title": "MetLife’s 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000013/met-20251231.htm"
+  },
+  {
+   "title": "MetLife’s 2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921924000035/met-20231231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000008/ex991earningsreleasetables.htm"
+  }
+ ],
+ "rivals": [
+  "PRU",
+  "AFL",
+  "LNC",
+  "PFG",
+  "UNM",
+  "GL",
+  "SLF"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "MetLife stock forecast",
+   "meta_description": "MetLife stock forecast covering weighted scenarios, operating drivers, cash returned to shareholders and valuation.",
+   "opening": "MetLife's weighted path is $113.98 in October 2029, or +21%. It hinges on earnings enduring.",
+   "closing": "The full MetLife memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could MetLife's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "MetLife’s weighted path is modestly positive: $98.82 in October 2027, or +1%, and $113.98 in October 2029, or +21%, provided earnings endure, parent liquidity remains adequate and new business is priced for risk. New Frontier targets adjusted ROE of 15%–17% through 2029 and a 100-basis-point reduction in the direct expense ratio. Management also targets $25.0 billion of company free cash flow through 2029 to support debt service, acquisitions, dividends, repurchases and a safety buffer. The forecast assigns 25% to the bear case, 55% to the base case and 20% to the bull case, with October 2029 prices ranging from $44.33 to $192.89. The November 5, 2026 results call will test earnings growth and expense control after PineBridge. RIS liability growth, Group Benefits renewals, PineBridge’s contribution, third-party MIM flows and constant-currency international results will determine whether growth becomes durable earnings. The thesis is a modest gain backed by execution, liquidity and disciplined risk pricing."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The range is much wider than the weighted path suggests. The bear case reaches $44.33 by October 2029. The bull case reaches $192.89. The probabilities are 25% for bear, 55% for base and 20% for bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 100.76, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 100.76, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "63.52 (-35 %)",
+        "53.98 (-42 %)",
+        "44.33 (-49 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "103.98 (+6 %)",
+        "110.69 (+15 %)",
+        "116.94 (+24 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "128.77 (+30 %)",
+        "158.85 (+63 %)",
+        "192.89 (+100 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "98.82 (+1 %)",
+        "106.15 (+10 %)",
+        "113.98 (+21 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a guaranteed future share price."
+     }
+    },
+    {
+     "heading": "What has to go right for MetLife, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bull would require stronger employer retention, controlled claims and attractive PRT returns. Persistent PineBridge clients, rising third-party flows and earnings that support larger buybacks would justify the higher multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does MetLife really make?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "The share count moves with buybacks, stock compensation and new share sales. MetLife’s year-end shares fell from 825.5 million in 2021 to 655.3 million in 2025, while buybacks exceeded stock-based pay throughout that period."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.71",
+        "5.94",
+        "1.81",
+        "6.30",
+        "7.65"
+       ],
+       [
+        "− Dividends declared, per diluted share (calculated)",
+        "2.24",
+        "2.15",
+        "2.05",
+        "1.98",
+        "1.89"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.28",
+        "4.51",
+        "4.07",
+        "4.11",
+        "4.95"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "",
+        "0.22",
+        "0.81"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "1.81",
+        "0.71",
+        "4.31",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company paid out more per share when dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "What does an investor pay for MetLife today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "MetLife, Inc. is the holding company above its insurance and asset-management businesses. The price-to-earnings, or P/E, ratio tells investors how much they pay for each dollar of annual earnings. MetLife’s reported, core and forward P/Es differ sharply, which means the stock looks far more expensive on recent reported earnings than on adjusted or expected earnings."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "100.76"
+       ],
+       [
+        "Market value (calculated)",
+        "64,031"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "19.3x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "10.4x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.4%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings figure uses analysts’ profit estimate for the next twelve months, not necessarily the next financial year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "100.76"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "113.98 (+21 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "19.3x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 100.76,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "63.52 (-35 %)",
+       "53.98 (-42 %)",
+       "44.33 (-49 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "103.98 (+6 %)",
+       "110.69 (+15 %)",
+       "116.94 (+24 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "128.77 (+30 %)",
+       "158.85 (+63 %)",
+       "192.89 (+100 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "98.82 (+1 %)",
+       "106.15 (+10 %)",
+       "113.98 (+21 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/met/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MET&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "MetLife dividend",
+   "meta_description": "MetLife pays $2.37 per share at the latest annualized rate; coverage depends on earnings, parent liquidity and regulated capital.",
+   "opening": "MetLife pays $2.37 per share at the latest annualized rate. In 2023, dividends and buybacks consumed 197.7% of common earnings excluding the asset-transfer loss, so coverage depended on more than that year's common earnings alone.",
+   "closing": "The full MetLife memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does MetLife pay its shareholders per share?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $2.49 to $2.97 per share. The bear case holds it at $2.37, the latest annualized rate, while the bull case reaches $3.32. The five-year record shows increases from $1.90 to $2.25, but no explicit dividend-growth target exists."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.71",
+        "5.94",
+        "1.81",
+        "6.30",
+        "7.65"
+       ],
+       [
+        "− Dividends declared, per diluted share (calculated)",
+        "2.24",
+        "2.15",
+        "2.05",
+        "1.98",
+        "1.89"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.28",
+        "4.51",
+        "4.07",
+        "4.11",
+        "4.95"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "",
+        "0.22",
+        "0.81"
+       ]
+      ],
+      "note": "The company paid out more per share when dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "Is MetLife's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 72,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The parent company mainly receives usable cash through dividends from its regulated subsidiaries, and regulators can restrict those payments. That is why reported earnings, parent cash, reserves, liquidity and debt must be considered together before judging a buyback or acquisition."
+      },
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "**Paid out, % of earnings for common** — Excluding the $982 million asset-transfer loss, 2023 dividends and buybacks consumed 197.7% of common earnings, compared with 338.3% reported."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends declared on common shares",
+        "1,509",
+        "1,527",
+        "1,566",
+        "1,598",
+        "1,647"
+       ],
+       [
+        "− Share buybacks",
+        "2,883",
+        "3,207",
+        "3,103",
+        "3,326",
+        "4,303"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "",
+        "",
+        "175",
+        "704"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "1,219",
+        "508",
+        "3,289",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "138.4%",
+        "112.0%",
+        "338.3%",
+        "96.6%",
+        "89.4%"
+       ]
+      ],
+      "note": "The reported net income includes money owed to preferred and other investors, so ordinary shareholders’ earnings are lower after those claims are removed."
+     }
+    },
+    {
+     "heading": "What could change MetLife's dividend?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward bear if private-equity returns, variable investment income or credit experience weaken during 2027–2029. Adverse claims or underpriced pension transfers would pressure RIS earnings. Tighter subsidiary remittances or integration costs would reduce parent cash and buybacks."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is MetLife's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "100.76"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.4%"
+       ],
+       [
+        "Calculation input: latest declared quarterly regular dividend",
+        "0.5925"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings figure uses analysts’ profit estimate for the next twelve months, not necessarily the next financial year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "4.5%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/met/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MET&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "MetLife earnings: what to watch",
+   "meta_description": "MetLife reports next on November 4, 2026; guidance, results and PineBridge integration are the key watchpoints.",
+   "opening": "The next MetLife results are expected on November 4, 2026. Watch whether adjusted earnings growth and expense control continue after the PineBridge addition.",
+   "closing": "The full memo also answers questions about the business of MetLife, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has MetLife guided for the year?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s promise is a set of operating gauges, not a promise of one GAAP profit number. GAAP is the standard accounting rulebook; adjusted earnings remove items MetLife considers unusually volatile or less useful for judging ongoing operations, such as investment gains, derivative effects and certain acquisition costs. Adjusted return on equity, or ROE, measures adjusted profit against shareholder capital, while the direct expense ratio compares direct costs with the revenue base."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period it covers",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted return on equity, excluding total notable items",
+        "2026–2028 (near term)",
+        "15.0%",
+        "17.0%",
+        "2026-08-05"
+       ],
+       [
+        "Double-digit adjusted EPS growth",
+        "2026–2028 (near term)",
+        "",
+        "",
+        "2026-02-04"
+       ],
+       [
+        "Free cash flow ratio",
+        "Two-year average; near term",
+        "65.0%",
+        "75.0%",
+        "2026-02-04"
+       ],
+       [
+        "Direct expense ratio target",
+        "2026",
+        "12.1%",
+        "12.1%",
+        "2026-08-05"
+       ],
+       [
+        "Variable investment income",
+        "2026",
+        "1,600",
+        "1,600",
+        "2026-08-05"
+       ],
+       [
+        "Corporate & Other adjusted loss",
+        "2026",
+        "500",
+        "700",
+        "2026-02-04"
+       ]
+      ],
+      "note": "“Double-digit adjusted earnings per share growth” means growth of at least 10 percent, but the company does not say the exact expected rate."
+     }
+    },
+    {
+     "heading": "Has MetLife kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "MetLife also reports an encouraging first year under New Frontier. In 2025, adjusted earnings per share grew by double digits, adjusted ROE reached 16%, and the direct expense ratio was 11.7%, within or better than the stated targets. The company also says it exceeded every commitment in its previous strategy."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do MetLife’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "MetLife reported adjusted-earnings growth across its operating segments, supported by favorable underwriting and volume growth. Adjusted premiums, fees and other revenues excluding PRT also grew. That breadth matters because improvement in one product can be temporary, while progress across several businesses is more informative."
+      },
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Reported investment income rose 18% in Q2 2026. Adjusted investment income rose 7%, because fair-value movements affected the reported figure. MetLife also recorded an impairment related to a planned Ukraine disposal and real-estate impairments during the first half. Those charges do not erase operating progress, but they make reported net income a poor figure to annualize."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Core earnings (company's measure)",
+        "1,573",
+        "1,586",
+        "1,648",
+        "1,584",
+        "1,362",
+        "1,349",
+        "1,459",
+        "1,375"
+       ],
+       [
+        "Net income",
+        "736",
+        "1,185",
+        "809",
+        "896",
+        "729",
+        "945",
+        "1,271",
+        "1,342"
+       ],
+       [
+        "EPS, diluted",
+        "1.09",
+        "1.74",
+        "1.17",
+        "1.22",
+        "1.03",
+        "1.28",
+        "1.78",
+        "1.81"
+       ],
+       [
+        "Calculation input: Adjusted earnings available to common shareholders per diluted common share",
+        "2.43",
+        "2.42",
+        "2.49",
+        "2.37",
+        "2.02",
+        "1.96",
+        "2.09",
+        "1.95"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in MetLife’s next results?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "MetLife’s scheduled November 5 results call will test whether adjusted earnings growth and expense control continue after the PineBridge addition. A beat alone will not settle the question; the mix of underwriting, investments, taxes and share count matters."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.09"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "1.81",
+      "1.78",
+      "1.28",
+      "1.03",
+      "1.22",
+      "1.17",
+      "1.74",
+      "1.09"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/met/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MET&src=seo-earnings"
+  }
+ },
+ "short_name": "MetLife",
+ "first_memo_date": "2026-10-18T00:18:56Z"
+}

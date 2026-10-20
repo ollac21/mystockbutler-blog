@@ -1,0 +1,783 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FAST",
+ "slug": "fast",
+ "company": "Fastenal Company",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T10:29:22Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 52.0,
+ "price_date": "2026-10-14T20:00:01Z",
+ "next_earnings": "2027-01-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16407,
+  "sources": 176
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Fastenal supplies the industrial parts, equipment, and replenishment systems that help factories, construction crews, and maintenance teams keep working. Its business begins with the humble bolt but ends with a managed purchasing relationship that can reach across a customer’s sites."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000009/fast-20251231.htm"
+  },
+  {
+   "title": "Fastenal’s 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/815556/000081555625000065/fast-20241231.htm"
+  },
+  {
+   "title": "2022 cash-flow statement",
+   "url": "https://www.sec.gov/Archives/edgar/data/815556/000081555623000009/fast-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "GWW",
+  "MSM",
+  "AIT",
+  "DSGR",
+  "GIC",
+  "DXPE",
+  "WCC",
+  "GPC",
+  "FERG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Fastenal stock forecast",
+   "meta_description": "Fastenal’s weighted price reaches $53.70 in October 2029 across bear, base, and bull scenarios.",
+   "opening": "Fastenal’s weighted price reaches $53.70 in October 2029, with a 25% bear case, 55% base case, and 20% bull case. It hinges on earnings growth overcoming valuation normalization.",
+   "closing": "The full memo also explains Fastenal’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Fastenal’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $50.61 in October 2027. Including dividends, that is a -1% return. The weighted price is $52.40 in October 2028. The return is then +5%. The weighted price reaches $53.70 in October 2029, for a +10% return."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At October 2029, the bear outcome is $34.05. The bull outcome is $75.22. Today’s reference price is $52.00. The bear probability is 25%. The base probability is 55%. The bull probability is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 52.00, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 52.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "39.33 (-22 %)",
+        "35.69 (-27 %)",
+        "34.05 (-29 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "52.12 (+2 %)",
+        "53.85 (+8 %)",
+        "54.80 (+12 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "60.55 (+19 %)",
+        "69.31 (+38 %)",
+        "75.22 (+52 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "50.61 (-1 %)",
+        "52.40 (+5 %)",
+        "53.70 (+10 %)"
+       ]
+      ],
+      "note": "The weighted row is the estimated average value after giving more influence to the base case because it is considered more likely."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Fastenal?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base earnings rise from $1,616 million to $1,765 million. They reach $1,905 million in the third year. This reflects contract-customer growth, larger-site productivity and operating leverage, while margins remain near recent normalized levels. The bear path is $1,411 million initially and $1,414 million thereafter. It reaches $1,450 million as manufacturing demand, customer mix and price-cost pressure weaken margins. The bull path starts at $1,652 million and reaches $1,889 million. It ends at $2,150 million only if installations, capacity and collections all improve."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Fastenal really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was $245.3 million, leaving free cash flow of $1,050.6 million. Stock compensation absorbed another $8.4 million. On that basis, “real free cash flow” was $1,042.2 million because shares paid to employees still dilute shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,295.9",
+        "1,173.3",
+        "1,432.7",
+        "941.0",
+        "770.1"
+       ],
+       [
+        "− Capital spending",
+        "245.3",
+        "226.5",
+        "172.8",
+        "173.8",
+        "156.6"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,050.6",
+        "946.8",
+        "1,259.9",
+        "767.2",
+        "613.5"
+       ],
+       [
+        "− Stock pay",
+        "8.4",
+        "8.0",
+        "7.3",
+        "7.2",
+        "5.6"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,042.2",
+        "938.8",
+        "1,252.6",
+        "760.0",
+        "607.9"
+       ]
+      ],
+      "note": "The company's free cash flow is higher than ours because it leaves out 14.2 million dollars of cash spending that we count, making its result look better."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Fastenal today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio divides the share price by earnings per share. Fastenal trades at 41.9 times its last twelve months’ earnings and 37.0 times expected earnings over the next twelve months. That gap implies roughly 13% earnings growth. Q3 sales grew 15.5%, while pricing contributed about 2.4 percentage points, so growth beyond pricing did much of the work."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "52.00"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "41.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "37.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "Enterprise value is slightly lower than market value because the company has more cash and short-term investments than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "52.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "53.70 (+10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "37.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 52.0,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "39.33 (-22 %)",
+       "35.69 (-27 %)",
+       "34.05 (-29 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "52.12 (+2 %)",
+       "53.85 (+8 %)",
+       "54.80 (+12 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "60.55 (+19 %)",
+       "69.31 (+38 %)",
+       "75.22 (+52 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "50.61 (-1 %)",
+       "52.40 (+5 %)",
+       "53.70 (+10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/fast/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FAST&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Fastenal dividend: cash flow and yield",
+   "meta_description": "Fastenal dividend: what it pays, how cash covers it, what may change it, and the yield today.",
+   "opening": "Fastenal's forecast dividend rises from $1.10 to $1.16 in the base case and reaches $1.24 in the third year; its bear case holds $1.04 and its bull case reaches $1.44. The dividend was covered in Q3, when disclosed free cash flow was $349.6 million against $298.2 million of dividends.",
+   "closing": "The full memo also explains Fastenal's business, rivals, management decisions, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Fastenal pay per share?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $1.10 to $1.16 in the base case. They reach $1.24 in the third year. The bear case holds the current rate at $1.04, while the bull case reaches $1.44. The base path follows regular dividend increases, but excludes a special dividend because the 2023 payment was exceptional."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,616 (1,411 / 1,652)",
+        "1,765 (1,414 / 1,889)",
+        "1,905 (1,450 / 2,150)"
+       ],
+       [
+        "Dividends per share",
+        "1.10 (1.04 / 1.16)",
+        "1.16 (1.04 / 1.32)",
+        "1.24 (1.04 / 1.44)"
+       ],
+       [
+        "Price to earnings",
+        "37.00 (32.00 / 42.00)",
+        "35.00 (29.00 / 42.00)",
+        "33.00 (27.00 / 40.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Fastenal's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after operating needs and investment. Fastenal’s free-cash-flow yield is 1.8%, while its dividend yield is 2.0%. Accounting profit can arrive first: Fastenal might deliver $100 of bolts today, record the sale, and collect the money next month. During rapid growth, unpaid invoices and inventory absorb cash; receivables rose 19.9% year over year. Q3 operating cash flow was $421.6 million, while disclosed free cash flow was $349.6 million against $298.2 million of dividends. The dividend was covered in that quarter, but future growth remains the larger part of the investment case."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,050.6",
+        "946.8",
+        "1,259.9",
+        "767.2",
+        "613.5"
+       ],
+       [
+        "− Dividends paid",
+        "1,004.2",
+        "893.3",
+        "1,016.8",
+        "711.3",
+        "643.7"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "237.8",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "46.4",
+        "53.5",
+        "243.1",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2022 and 2021, the company paid shareholders more cash than the business generated, so it had to use savings or borrow money."
+     }
+    },
+    {
+     "heading": "What could change Fastenal's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "October sales, due November 5, 2026, will show whether September’s slower daily-sales growth was temporary or a demand warning. Year-end 2026 results will test whether signings, Digital Footprint, and the investment program meet guidance, and whether installed systems produce profitable demand. Collections and inventory will determine how quickly growth funds investment and shareholder payments; the next scheduled note repayment is $50.0 million on May 15, 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Fastenal's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $52.00 a share, Fastenal’s price assumes that dependable earnings will keep growing for years."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "52.00"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "Enterprise value is slightly lower than market value because the company has more cash and short-term investments than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.87"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.56",
+      "0.62",
+      "0.89",
+      "0.78",
+      "0.87"
+     ],
+     "Real free cash flow per share": [
+      "0.53",
+      "0.66",
+      "1.09",
+      "0.82",
+      "0.91"
+     ],
+     "Free cash flow per share": [
+      "0.53",
+      "0.67",
+      "1.10",
+      "0.82",
+      "0.91"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/fast/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FAST&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Fastenal earnings date and guidance",
+   "meta_description": "Fastenal's next results are expected on January 19, 2027, with guidance focused on investment, device signings, tax and Digital Footprint.",
+   "opening": "Fastenal's next results are expected on January 19, 2027. Watch whether installed systems bring additional purchasing through a more productive network.",
+   "closing": "The full Fastenal memo also answers questions about its business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Fastenal guided for the year?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets $310–330 million of net investment in property and equipment for 2026. It also targets 27,000–29,000 weighted FASTBin and FASTVend signings, programs that place supply bins or vending machines at customer sites. The targets include a 62–63% Digital Footprint—the share of sales made through digital tools and systems—and a 24.6% ongoing tax rate."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "investment in property and equipment, net of proceeds from sales",
+        "Year to Dec 2026",
+        "310.0",
+        "330.0",
+        "Oct 14, 2026"
+       ],
+       [
+        "weighted FASTBin and FASTVend device signings (MEUs)",
+        "Year to Dec 2026",
+        "27,000",
+        "29,000",
+        "Oct 14, 2026"
+       ],
+       [
+        "ongoing tax rate",
+        "Year to Dec 2026",
+        "24.6%",
+        "24.6%",
+        "Oct 14, 2026"
+       ],
+       [
+        "Digital Footprint (% of sales)",
+        "Year to Dec 2026",
+        "62.0%",
+        "63.0%",
+        "Oct 14, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Fastenal kept its promises?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Fastenal has reported progress in large-account selling and higher profit, alongside weaker conversion of earnings into free cash flow. The promise is therefore mixed, not broken: owners are best served when profitable growth arrives with a satisfactory return on the money committed to achieving it."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Fastenal's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating income and EPS rose year over year in each of the first three quarters of 2026. The turn is therefore in growth and operating efficiency, while pricing recovery and collection efficiency remain incomplete."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,463.3",
+        "2,386.9",
+        "2,201.7",
+        "2,027.4",
+        "2,133.3",
+        "2,080.3",
+        "1,959.4",
+        "1,824.5"
+       ],
+       [
+        "Gross margin",
+        "44.8%",
+        "44.6%",
+        "44.6%",
+        "44.3%",
+        "45.3%",
+        "45.3%",
+        "45.1%",
+        "44.8%"
+       ],
+       [
+        "Operating income",
+        "530.8",
+        "501.8",
+        "447.6",
+        "384.3",
+        "441.5",
+        "436.1",
+        "393.9",
+        "344.8"
+       ],
+       [
+        "Net income",
+        "401.6",
+        "382.8",
+        "339.8",
+        "294.1",
+        "335.5",
+        "330.3",
+        "298.7",
+        "262.1"
+       ],
+       [
+        "EPS, diluted",
+        "0.35",
+        "0.33",
+        "0.30",
+        "0.26",
+        "0.29",
+        "0.29",
+        "0.26",
+        "0.23"
+       ],
+       [
+        "**= Free cash flow**",
+        "347.6",
+        "201.6",
+        "319.5",
+        "308.1",
+        "326.6",
+        "209.3",
+        "206.5",
+        "222.6"
+       ]
+      ],
+      "note": "These are three-month figures, not full-year figures, even though some definitions say “during the year.”"
+     }
+    },
+    {
+     "heading": "What should Fastenal watchers watch next?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The December year end will test whether device signings, digital transactions and delayed investment reached their targets. These measures need to be read together. Lower spending could mean projects slipped again, while more digital activity could simply mean existing orders changed channels. The important question is whether installed systems bring additional purchasing through a more productive network."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 19, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "2,463.3"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "0.35"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,824.5",
+      "1,959.4",
+      "2,080.3",
+      "2,133.3",
+      "2,027.4",
+      "2,201.7",
+      "2,386.9",
+      "2,463.3"
+     ],
+     "EPS, diluted": [
+      "0.23",
+      "0.26",
+      "0.29",
+      "0.29",
+      "0.26",
+      "0.30",
+      "0.33",
+      "0.35"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/fast/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FAST&src=seo-earnings"
+  }
+ },
+ "short_name": "Fastenal",
+ "first_memo_date": "2026-10-15T10:29:22Z"
+}

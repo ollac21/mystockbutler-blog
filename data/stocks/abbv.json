@@ -1,0 +1,809 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ABBV",
+ "slug": "abbv",
+ "company": "AbbVie Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:17:51Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 272.42,
+ "price_date": "2026-10-08T20:02:15Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 27,
+  "words": 17122,
+  "sources": 278
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "AbbVie is a prescription-drug company: it turns scientific discoveries into treatments, sells them through doctors, payers and distributors, and keeps what remains after discounts and costs. Its business is easiest to understand by following the medicines, the money paid for them, and the factories and partnerships that make the sales possible."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926033387/abbv-20260508xdef14a.htm"
+  },
+  {
+   "title": "April 2026 Schedule 13G",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000210011926000126/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "title": "source",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000106163226000004/xslF345X06/form4-05122026_050501.xml"
+  }
+ ],
+ "rivals": [
+  "JNJ",
+  "MRK",
+  "PFE",
+  "BMY",
+  "AMGN",
+  "GILD",
+  "LLY",
+  "REGN",
+  "VRTX",
+  "BIIB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AbbVie stock forecast",
+   "meta_description": "AbbVie stock forecast: weighted scenarios, cash generation, valuation, and the drivers behind the bear, base and bull cases.",
+   "opening": "AbbVie's probability-weighted price is $283.21 in October 2027 and $313.79 in October 2029, a 23% return including dividends by the final date. It hinges on weaker persistence or payer access for Skyrizi and Rinvoq.",
+   "closing": "The full AbbVie memo also covers AbbVie's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AbbVie's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast points to moderate gains with substantial downside and upside risk. The probability-weighted price is $283.21 in October 2027, a 7% return including dividends. It reaches $298.09 in October 2028, a 15% return. By October 2029, it reaches $313.79, a 23% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 272.42, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 272.42, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "235.24 (-11%)",
+        "214.90 (-16%)",
+        "200.01 (-19%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "289.84 (+9%)",
+        "309.77 (+19%)",
+        "325.06 (+28%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "324.95 (+22%)",
+        "369.97 (+41%)",
+        "425.03 (+65%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "283.21 (+7%)",
+        "298.09 (+15%)",
+        "313.79 (+23%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for AbbVie?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case holds first-year revenue at $73,000 million, then reduces it to $72,500 million and $72,000 million. Its margins fall from 39.9% to 37.0% because older-product erosion, payer pressure and Apogee costs offset replacement growth. The bull case reaches $75,000 million of revenue initially and then $84,000 million and $94,000 million, with margins reaching 43.0%. That requires growth above management’s high-single-digit description."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base is supported by Skyrizi and Rinvoq, which supplied 42.3% of 2025 revenue. Each grew about 24% in the latest quarter, while neuroscience also grew strongly. The risk is concentration: Humira declined 35.9% in that quarter, and Apogee is expected to reduce adjusted EPS before contributing earnings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does AbbVie really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based pay deserves a separate deduction. AbbVie granted $955 million of stock compensation in 2025. The cash-flow statement adds it back because no cash was paid, but employees received part of the ownership of the business. After that analytical deduction, free cash flow per diluted share fell 0.4%."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "19,030",
+        "18,806",
+        "22,839",
+        "24,943",
+        "22,777"
+       ],
+       [
+        "Capital spending",
+        "1,214",
+        "974",
+        "777",
+        "695",
+        "787"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "17,816",
+        "17,832",
+        "22,062",
+        "24,248",
+        "21,990"
+       ],
+       [
+        "Stock-based pay",
+        "955",
+        "911",
+        "747",
+        "671",
+        "692"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "16,861",
+        "16,921",
+        "21,315",
+        "23,577",
+        "21,298"
+       ],
+       [
+        "Real free cash flow per share (calculated)",
+        "9.51",
+        "9.54",
+        "12.02",
+        "13.26",
+        "11.99"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for AbbVie today?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The valuation snapshot implies about $16.41 of forecast EPS from a share price of $272.42 and a forward P/E of 16.6x. That implied figure sits above the latest 2026 adjusted-EPS guidance in the mid-$13 range, although the periods differ because the forward measure extends into 2027."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "272.42"
+       ],
+       [
+        "Market value (calculated)",
+        "481,398.09"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "545,651.09"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "272.42"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "313.79 (+23%)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.6x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "77.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 272.42,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "235.24 (-11%)",
+       "214.90 (-16%)",
+       "200.01 (-19%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "289.84 (+9%)",
+       "309.77 (+19%)",
+       "325.06 (+28%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "324.95 (+22%)",
+       "369.97 (+41%)",
+       "425.03 (+65%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "283.21 (+7%)",
+       "298.09 (+15%)",
+       "313.79 (+23%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/abbv/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABBV&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "AbbVie dividend",
+   "meta_description": "AbbVie’s dividend, cash coverage, forecast changes and current yield in one clear view.",
+   "opening": "AbbVie’s latest declared quarterly dividend is $1.73 per share; the forecast’s base case rises from $7.19 to $7.91 annually, while the bear case holds $6.92. AbbVie paid $11,657 million in dividends in 2025, while its cash engine remained powerful despite stock compensation and acquisitions.",
+   "closing": "The full AbbVie memo also examines AbbVie’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does AbbVie pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base case rises from $7.19 to $7.91 per share as quarterly payments increase. The bear case holds the annual amount at $6.92, despite AbbVie’s long record of increases. The bull case reaches $8.34 because stronger cash generation permits larger raises, while acquisition spending and debt make that outcome less likely."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "29,200 (29,127 / 30,000)",
+        "32,390 (27,913 / 35,280)",
+        "35,700 (26,640 / 40,420)"
+       ],
+       [
+        "Shares (millions)",
+        "1,767 (1,768 / 1,766)",
+        "1,767 (1,769 / 1,765)",
+        "1,767 (1,770 / 1,764)"
+       ],
+       [
+        "Dividends per share",
+        "7.19 (6.92 / 7.28)",
+        "7.55 (6.92 / 7.79)",
+        "7.91 (6.92 / 8.34)"
+       ],
+       [
+        "Price to earnings",
+        "17.54 (14.28 / 19.13)",
+        "16.90 (13.62 / 18.51)",
+        "16.09 (13.29 / 18.55)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does AbbVie’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company’s operating medicines generated substantial free cash flow. The calculation used here subtracts stock compensation, because shares given to employees dilute existing owners even though they do not require an immediate cash payment. AbbVie recorded $955 million of stock-based compensation in 2025 and received $172 million when employees exercised options."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Dividends and acquisitions narrow the remaining choice further. AbbVie paid $11,657 million in dividends in 2025, while external acquisitions and investments also used cash. The cash engine is powerful, but conventional free cash flow is not the same as cash available to reduce debt or buy the next medicine."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "16,861",
+        "16,921",
+        "21,315",
+        "23,577",
+        "21,298"
+       ],
+       [
+        "Dividends paid",
+        "11,657",
+        "11,025",
+        "10,539",
+        "10,043",
+        "9,261"
+       ],
+       [
+        "Shares bought back",
+        "980",
+        "1,708",
+        "1,972",
+        "1,487",
+        "934"
+       ],
+       [
+        "Acquisitions",
+        "204",
+        "17,493",
+        "0",
+        "255",
+        "525"
+       ],
+       [
+        "New shares sold",
+        "172",
+        "214",
+        "180",
+        "262",
+        "244"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "74.9%",
+        "75.2%",
+        "58.7%",
+        "48.9%",
+        "47.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change AbbVie’s dividend?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "Dividends are forecast separately and added to the stated returns. The latest declared quarterly rate is $1.73, while the board retains discretion over future payments."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is AbbVie’s dividend yield at its share price?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The valuation snapshot implies about $16.41 of forecast EPS from a share price of $272.42 and a forward P/E of 16.6x. That implied figure sits above the latest 2026 adjusted-EPS guidance in the mid-$13 range, although the periods differ because the forward measure extends into 2027."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "272.42"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "12.37",
+      "13.64",
+      "12.44",
+      "10.06",
+      "10.05"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/abbv/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABBV&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AbbVie earnings date and guidance",
+   "meta_description": "AbbVie reports on October 30, 2026; its guidance, past promises, recent results and medicine demand after the Apogee deal charge are the focus.",
+   "opening": "AbbVie next results are expected on October 30, 2026. The key thing to watch in AbbVie results is medicine demand after the Apogee deal charge.",
+   "closing": "The full AbbVie memo also answers questions about AbbVie’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has AbbVie guided for the year?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "AbbVie’s weighted path reaches $283.21 by October 2027 and $313.79 by October 2029, a 23% return including dividends by the final date; it hinges on replacement-franchise growth, earnings conversion and the valuation multiple. Management guides to 2026 adjusted diluted EPS of $13.76–$13.96 and $1,251 million of acquired research and milestone expense, while targeting $31,000 million of combined SKYRIZI and RINVOQ revenue in 2027. The probability-weighted cases are bear, base and bull."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date given"
+      ],
+      "rows": [
+       [
+        "Adjusted Diluted EPS Range",
+        "Year to Dec 2026",
+        "13.76",
+        "13.96",
+        "Oct 5, 2026"
+       ],
+       [
+        "Acquired IPR&D and Milestones Expense",
+        "Year to Dec 2026",
+        "1,251",
+        "1,251",
+        "Oct 5, 2026"
+       ],
+       [
+        "combined Skyrizi and Rinvoq 2027 revenues",
+        "Year to Dec 2027",
+        "31,000",
+        "31,000",
+        "Jan 31, 2025"
+       ],
+       [
+        "Skyrizi revenues",
+        "Year to Dec 2027",
+        "20,000",
+        "20,000",
+        "Jan 31, 2025"
+       ],
+       [
+        "Rinvoq revenues",
+        "Year to Dec 2027",
+        "11,000",
+        "11,000",
+        "Jan 31, 2025"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has AbbVie kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 118,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The annual bonus focuses on the business replacing Humira, AbbVie’s older blockbuster medicine. “Platform Revenue” means sales excluding Humira, adjusted for currency. It reached $56.3 billion against a $53.7 billion target in 2025. That measure asks whether management is building the next engine of the company rather than receiving credit for sales that were expected to fade."
+      },
+      {
+       "n": 119,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The promise showed progress. AbbVie’s 2025 revenue reached $61.160 billion, up 8.6%. Adjusted earnings per share, however, fell 1.2% to $10.00, partly reflecting the cost of acquired research and milestones. “Adjusted” figures can help compare operations, but excluded costs still matter to shareholders."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has AbbVie reported in recent results?",
+     "paragraphs": [],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "16,990",
+        "15,002",
+        "16,618",
+        "15,776",
+        "15,423",
+        "13,343",
+        "15,102",
+        "14,460"
+       ],
+       [
+        "Gross margin (calculated)",
+        "74.7%",
+        "71.9%",
+        "72.6%",
+        "66.4%",
+        "71.8%",
+        "70.0%",
+        "70.9%",
+        "70.9%"
+       ],
+       [
+        "Operating income",
+        "6,432",
+        "3,990",
+        "4,544",
+        "1,904",
+        "4,894",
+        "3,733",
+        "-1,490",
+        "3,831"
+       ],
+       [
+        "Net income",
+        "3,613",
+        "695",
+        "1,816",
+        "186",
+        "938",
+        "1,286",
+        "-22",
+        "1,561"
+       ],
+       [
+        "EPS, diluted",
+        "2.03",
+        "0.39",
+        "1.02",
+        "0.10",
+        "0.52",
+        "0.72",
+        "-0.02",
+        "0.88"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in AbbVie results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is October 30, when the company reports its third-quarter results. This is the first report containing Apogee after its September closing. Investors should examine medicine demand, the effect of disclosed deal charges, and the change in cash and debt—not just the EPS headline."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Apogee’s lead program was expected to begin major eczema trials in the second half of 2026, with maintenance results following in 2027. Other pipeline milestones cover skin disease, lupus, blood cancers and eye disease. A planned readout provides information; it does not guarantee approval."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "16,990"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "2.03"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "14,460",
+      "15,102",
+      "13,343",
+      "15,423",
+      "15,776",
+      "16,618",
+      "15,002",
+      "16,990"
+     ],
+     "EPS, diluted": [
+      "0.88",
+      "-0.02",
+      "0.72",
+      "0.52",
+      "0.10",
+      "1.02",
+      "0.39",
+      "2.03"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/abbv/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABBV&src=seo-earnings"
+  }
+ },
+ "short_name": "AbbVie",
+ "first_memo_date": "2026-10-10T02:17:51Z"
+}

@@ -1,0 +1,693 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HLMA.L",
+ "slug": "hlma-l",
+ "company": "Halma plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "holding_company",
+ "country": "uk",
+ "memo_date": "2026-10-17T17:14:22Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 3428.0,
+ "price_date": "2026-10-16T16:00:15Z",
+ "next_earnings": "2026-11-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 222,
+  "tables": 27,
+  "words": 15127,
+  "sources": 131
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Halma plc is a parent company that owns specialist technology businesses. They sell equipment, systems, components and software for safety, environmental measurement and healthcare in more than 100 countries."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2026",
+   "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000147379/reports/2138007FRGLUR9KGBT40-2026-03-31_ixbrl.html"
+  },
+  {
+   "title": "Annual report — FY2023",
+   "url": "https://data.fca.org.uk/artefacts/NSM/Portal/NI-000077846/reports/2138007FRGLUR9KGBT40-2023-03-31-T01_ixbrl.html"
+  },
+  {
+   "title": "Half-year report — Q2 2026",
+   "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000134070/NI-000134070.pdf"
+  }
+ ],
+ "rivals": [
+  "HON",
+  "JCI",
+  "MSA",
+  "SIE.DE",
+  "SU.PA",
+  "ABBN.SW",
+  "EMR",
+  "XYL",
+  "BMI",
+  "DRW.DE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Halma stock forecast",
+   "meta_description": "Halma's weighted forecast, growth drivers, cash generation and valuation in plain English.",
+   "opening": "Halma's weighted price is £53.92 by October 2029. It hinges on photonics demand.",
+   "closing": "The full memo also explains Halma's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Halma's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 204,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the weighted price is £53.92, a 60% return including dividends. The range at that date is £30.52 in the bear case to £81.86 in the bull case. The bear outcome is 9% below today, while the bull outcome is 141% above it."
+      },
+      {
+       "n": 205,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast assigns 25% to the bear case, 55% to the base case and 20% to the bull case. The table shows how those probabilities translate into prices at each date."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per HLMA.L share at each date; in brackets the return since today's 3428.00, dividends included",
+      "caption": "What the shares could be worth (GBp per HLMA.L share at each date; in brackets the return since today's 3428.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "2965.09 (-13 %)",
+        "2857.49 (-15 %)",
+        "3051.82 (-9 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "3998.47 (+17 %)",
+        "4621.37 (+36 %)",
+        "5439.29 (+61 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "4735.38 (+39 %)",
+        "6229.02 (+83 %)",
+        "8186.14 (+141 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "3887.51 (+14 %)",
+        "4501.93 (+33 %)",
+        "5391.79 (+60 %)"
+       ]
+      ],
+      "note": "The weighted row is a probability-based average of the bear, base, and bull cases, not a guaranteed future share price."
+     }
+    },
+    {
+     "heading": "What has to go right for Halma, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Orders converting into sales, photonics growth, and acquired businesses generating cash and attractive returns will determine the outcome. The 19 November 2026 interim results will test growth and margins and update investors on cash and debt after the acquisition wave. Fewer hyperscaler orders, weaker photonics or falling acquisition returns would push the case toward bear. Sustained growth, margins, cash conversion and returns support bull. Halma’s premium rests on turning specialist niches and acquisitions into durable, cash-backed per-share growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Halma really make?",
+     "paragraphs": [
+      {
+       "n": 25,
+       "section": "essay-1",
+       "chapter": "1. The business",
+       "subsection": "1.2 — How the money flows through the group",
+       "text": "In the year to March 2026, Halma generated £593.1 million of cash from operations. Adjusted operating cash flow was £550.2 million, equal to 93% adjusted cash conversion. Cash conversion measures how much adjusted operating profit becomes operating cash; it does not mean that all of that cash remains after every investment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for Halma today?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A price-to-earnings ratio, or P/E, says how many pounds investors pay for each pound of annual earnings per share. Halma’s trailing and forward multiples are substantial. The forward calculation implies earnings of about 134p per share over the next twelve months, compared with FY26 adjusted earnings per share of 114.05p. In other words, the price already assumes another strong step up in profit."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "GBp; market value in GBp millions",
+      "caption": "What an investor pays today (GBp; market value in GBp millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "3,428"
+       ],
+       [
+        "Market value (every class) (calculated)",
+        "1,301,424.2"
+       ],
+       [
+        "Price to book (calculated)",
+        "6.0x"
+       ],
+       [
+        "P/E on adjusted earnings, last 12 months (calculated)",
+        "30.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": "The amounts are in pence sterling, so 3,428 means 34 pounds and 28 pence, not 3,428 pounds."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "3,428"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "5391.79 (+60 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.6x"
+    },
+    {
+     "label": "Price to book",
+     "value": "6.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 34.28,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "2965.09 (-13 %)",
+       "2857.49 (-15 %)",
+       "3051.82 (-9 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "3998.47 (+17 %)",
+       "4621.37 (+36 %)",
+       "5439.29 (+61 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "4735.38 (+39 %)",
+       "6229.02 (+83 %)",
+       "8186.14 (+141 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "3887.51 (+14 %)",
+       "4501.93 (+33 %)",
+       "5391.79 (+60 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/hlma-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLMA.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Halma dividend: history, cover and yield",
+   "meta_description": "Halma dividend history, cash cover, payout uses, forecast changes and current yield, in plain English.",
+   "opening": "Halma’s dividend rose 7% annually from FY22 to FY26, and FY26 cover was 4.73 times. FY26 adjusted operating cash flow was £550.2m, while acquisitions used £469.1m.",
+   "closing": "The full memo also covers Halma’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Halma pay per share?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend path rises from £0.26 per share in October 2027 to £0.28 in October 2028 and £0.30 in October 2029. This extends the 7% annual increase from FY22 to FY26 and is supported by FY26 cover of 4.73 times. The bear case pauses at £0.25 before growing at 2% annually; the bull case grows at 9%, reaching £0.32, but requires stronger earnings and continued cover."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "GBP per share",
+      "caption": "What one share gets (GBP per share)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Adjusted earnings per share",
+        "1.14",
+        "0.94",
+        "0.82",
+        "0.76",
+        "0.65"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.24",
+        "0.22",
+        "0.21",
+        "0.19",
+        "0.18"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.09",
+        "0.02",
+        "0.06",
+        "0.06",
+        "0.05"
+       ],
+       [
+        "**= Kept, per share**",
+        "0.81",
+        "0.70",
+        "0.56",
+        "0.51",
+        "0.42"
+       ]
+      ],
+      "note": "The kept amount subtracts share buybacks as well as dividends, so it is what remains after both payments, not just profit left after dividends."
+     }
+    },
+    {
+     "heading": "Does Halma cover its dividend with cash?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Enterprise value to EBITDA compares the value of the whole business, including debt, with operating earnings before interest, tax, depreciation and amortisation. It can clarify comparisons between companies with different borrowing, but it does not subtract the cash needed for acquisitions. Halma generated £550.2m of adjusted operating cash flow in FY26, while buying businesses used £469.1m and net debt reached £769.1m. If acquisitions are a regular growth engine, they are economically a form of reinvestment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the capital went",
+      "unit": "GBP millions",
+      "caption": "Follow the money: where the capital went (GBP millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Operating earnings (company's measure)",
+        "430.7",
+        "355.8",
+        "311.0",
+        "288.6",
+        "248.0"
+       ],
+       [
+        "− Dividends paid",
+        "89.7",
+        "83.8",
+        "78.2",
+        "73.3",
+        "68.7"
+       ],
+       [
+        "− Share buybacks",
+        "33.5",
+        "7.9",
+        "21.1",
+        "22.3",
+        "19.3"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "307.5",
+        "264.1",
+        "211.7",
+        "193.0",
+        "160.0"
+       ],
+       [
+        "Paid out, % of adjusted profit after tax",
+        "28.6%",
+        "25.8%",
+        "31.9%",
+        "33.1%",
+        "35.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Halma’s dividend?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if Avo’s large customer reduces orders, photonics growth falls or acquisition integration lowers ROTIC and cash conversion. Net debt rising without corresponding earnings would reinforce that shift."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Halma’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At 3,428p, the shares trade at 25.6x next-twelve-month P/E. The 0.7% dividend yield leaves room for disappointment if earnings growth slows. Operating earnings growth accelerated in the latest year; net income is the check on whether that improvement reaches shareholders. Book value per share and operating earnings per share have risen. Earnings retained per share, dividends and buybacks show the funding available for growth. The key test is continued value creation per share."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "GBp; market value in GBp millions",
+      "caption": "What an investor pays today (GBp; market value in GBp millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "3,428"
+       ],
+       [
+        "Market value (every class) (calculated)",
+        "1,301,424.2"
+       ],
+       [
+        "P/E on adjusted earnings, last 12 months (calculated)",
+        "30.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": "The amounts are in pence sterling, so 3,428 means 34 pounds and 28 pence, not 3,428 pounds."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "0.24"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "GBP per share",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.18",
+      "0.19",
+      "0.21",
+      "0.22",
+      "0.24"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/hlma-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLMA.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Halma earnings: next results and guidance",
+   "meta_description": "Halma's next results are expected on November 19, 2026; guidance points to low-double-digit organic growth and a 23.5%–24% adjusted EBIT margin.",
+   "opening": "Halma's next results are expected on November 19, 2026. Watch whether Halma can keep investing, integrate acquisitions and generate enough cash to invest again.",
+   "closing": "The full memo also answers how Halma makes money, who its rivals are, how management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Halma guided for FY27?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has said",
+       "text": "Halma expects another year of strong growth, with more operating profit left from each pound of sales. It expects sales from existing businesses to grow at a low-double-digit rate excluding currency effects, while operating profit before interest and tax, with unusual items removed, reaches 23.5%–24% of sales in FY27."
+      },
+      {
+       "n": 178,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has said",
+       "text": "Photonics is central to the forecast. Management expects it to add about five percentage points to group organic growth, with photonics itself growing about 30% organically in FY27. That depends on customers deploying their projects, Halma expanding production and the supply chain keeping pace."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "GBP millions; percentages, multiples and years as labelled",
+      "caption": "Targets and guidance in force (GBP millions; percentages, multiples and years as labelled)",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic revenue growth",
+        "Ongoing",
+        "5.0%",
+        "",
+        "24 June 2026"
+       ],
+       [
+        "Adjusted EBIT margin target range",
+        "Ongoing",
+        "19.0%",
+        "23.0%",
+        "24 June 2026"
+       ],
+       [
+        "Photonics premium to Group organic revenue growth (percentage points)",
+        "Year to Mar 2027",
+        "5.0",
+        "5.0",
+        "24 September 2026"
+       ],
+       [
+        "Organic constant currency photonics growth rate",
+        "Year to Mar 2027",
+        "30.0%",
+        "30.0%",
+        "24 September 2026"
+       ]
+      ],
+      "note": "“Double our earnings every five years” means the company aims to make twice as much profit over each five-year period, not increase it by two percent."
+     }
+    },
+    {
+     "heading": "What do Halma's last eight reported periods show?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Halma reports half-year and full-year results, so the latest actual period in the supplied sequence is the six months to March 2026, not a standalone quarter. The second half of FY2026 produced more revenue and company-measure operating earnings than the first, while net income and diluted EPS were nearly flat between the two halves. That pattern shows uneven timing within the year rather than a dependable quarterly run-rate."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "GBP millions; per share in GBP",
+      "caption": "The last eight reported periods (GBP millions; per share in GBP)",
+      "head": [
+       "Row",
+       "6 months to Mar 2026",
+       "6 months to Sep 2025",
+       "6 months to Mar 2025",
+       "6 months to Sep 2024",
+       "6 months to Mar 2024",
+       "6 months to Sep 2023",
+       "6 months to Mar 2023",
+       "6 months to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,344.9",
+        "1,237.4",
+        "1,173.8",
+        "1,074.3",
+        "1,083.6",
+        "950.5",
+        "977.3",
+        "875.5"
+       ],
+       [
+        "Adjusted profit after tax",
+        "221.7",
+        "209.0",
+        "193.5",
+        "162.3",
+        "171.7",
+        "139.3",
+        "153.7",
+        "134.9"
+       ],
+       [
+        "Net income",
+        "185.5",
+        "186.8",
+        "160.2",
+        "136.2",
+        "150.3",
+        "118.5",
+        "119.5",
+        "115.0"
+       ],
+       [
+        "EPS, diluted",
+        "0.49",
+        "0.49",
+        "0.42",
+        "0.36",
+        "0.40",
+        "0.31",
+        "0.32",
+        "0.30"
+       ],
+       [
+        "Book value per share",
+        "5.71",
+        "5.24",
+        "5.00",
+        "4.58",
+        "4.57",
+        "4.35",
+        "4.21",
+        "4.29"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Halma's next results?",
+     "paragraphs": [
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The 19 November half-year results will test whether Halma is delivering its stronger margin outlook while absorbing its acquisitions. Investors should compare reported sales with order intake: orders running ahead of revenue suggest demand, but delivery, production and customer acceptance determine when that demand becomes income."
+      },
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "They should also look beyond group revenue to Dreampath, Pyxis and the other four acquired businesses. Their sales now contribute to reported growth, so a stronger group number alone will not show whether Halma’s existing operations are improving. More useful evidence would be acquired businesses growing while the group maintains its returns."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 19, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/hlma-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLMA.L&src=seo-earnings"
+  }
+ },
+ "short_name": "Halma",
+ "first_memo_date": "2026-10-17T17:14:22Z"
+}

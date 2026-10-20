@@ -1,0 +1,803 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MPWR",
+ "slug": "mpwr",
+ "company": "Monolithic Power Systems, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T04:22:02Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 1210.86,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 27,
+  "words": 15714,
+  "sources": 188
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Monolithic Power Systems (MPS) sells the circuits that control how electricity reaches the chips, batteries, lights and motors inside electronic equipment. Its business is therefore less about making a visible gadget than about making every gadget work: it designs power products, has partners manufacture them, ships them through distributors and collects the money later."
+ },
+ "sources": [
+  {
+   "title": "MPS 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1280452/000143774926003191/ex_886151.htm"
+  },
+  {
+   "title": "Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026053275/mpwr-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "AOSL",
+  "ADI",
+  "IFX.DE",
+  "NXPI",
+  "ON",
+  "POWI",
+  "6723.T",
+  "SMTC",
+  "STM",
+  "TXN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "MPS stock forecast",
+   "meta_description": "MPS's weighted forecast is $699.34 in October 2027; the scenarios depend on durable server and module growth, margins, and cash earnings.",
+   "opening": "MPS's weighted forecast points to $699.34 in October 2027, with a 25% bear case, a 55% base case, and a 20% bull case. It hinges on growth becoming durable earnings at a lower valuation multiple.",
+   "closing": "The full memo also answers how MPS's business works, who its rivals are, how management steers it, and what risks shape the scenarios.",
+   "blocks": [
+    {
+     "heading": "Where could MPS's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to $699.34 in October 2027, a 42% loss, if growth fails to become durable earnings at a lower valuation multiple. Including dividends, it reaches $756.65 in October 2029, a 35% loss. Management guides to revenue of $1,140 million to $1,160 million for the quarter to September 2026. It guides to GAAP gross margin of 55.2% to 55.8%. Management also raised its minimum 2026 Enterprise Data growth target to 130%, citing customer ramps, platform refreshes and higher module content."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1210.86, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1210.86, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "426.10 (-64 %)",
+        "360.05 (-69 %)",
+        "328.94 (-71 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "712.33 (-41 %)",
+        "729.60 (-38 %)",
+        "730.31 (-37 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1005.17 (-16 %)",
+        "1197.93 (+1 %)",
+        "1363.71 (+16 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "699.34 (-42 %)",
+        "730.88 (-38 %)",
+        "756.65 (-35 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a fourth outcome."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for MPS?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries a 25% probability, and the base case 55%. The bull case carries 20%. The October 29, 2026 Q3 report will test demand and margins against guidance and analyst expectations. By the end of 2026, management expects to remediate the deferred-tax control weakness. Early 2027 volume production under the GlobalFoundries agreement, plus 800V qualification and automotive launches, will test whether new architectures become sales. MPWR’s valuation requires server and module growth to become durable cash earnings."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,188 (966 / 1,326)",
+        "1,375 (1,012 / 1,701)",
+        "1,575 (1,056 / 2,090)"
+       ],
+       [
+        "Shares (millions)",
+        "50.01 (49.88 / 50.13)",
+        "50.88 (50.62 / 51.12)",
+        "51.76 (51.37 / 52.11)"
+       ],
+       [
+        "Dividends per share",
+        "8.00 (8.00 / 8.00)",
+        "10.00 (8.00 / 12.00)",
+        "12.00 (8.00 / 16.00)"
+       ],
+       [
+        "Price to earnings",
+        "30.00 (22.00 / 38.00)",
+        "27.00 (18.00 / 36.00)",
+        "24.00 (16.00 / 34.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does MPS really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "Stock compensation does not leave the company as cash when granted, but it gives employees ownership. MPS reported $227.491 million of stock compensation in 2025. Subtracting that amount from free cash flow leaves $438.698 million under the memo’s shareholder-minded measure."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "838,202",
+        "788,410",
+        "638,213",
+        "246,674",
+        "320,010"
+       ],
+       [
+        "− Capital spending",
+        "172,013",
+        "146,118",
+        "57,578",
+        "58,843",
+        "94,420"
+       ],
+       [
+        "**= Free cash flow**",
+        "666,189",
+        "642,292",
+        "580,635",
+        "187,831",
+        "225,590"
+       ],
+       [
+        "− Stock pay",
+        "227,491",
+        "205,640",
+        "149,711",
+        "160,992",
+        "123,479"
+       ],
+       [
+        "**= Real free cash flow**",
+        "438,698",
+        "436,652",
+        "430,924",
+        "26,839",
+        "102,111"
+       ]
+      ],
+      "note": "The company does not pay stock-based compensation in cash, but we subtract it because giving employees shares reduces the portion of the company left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for MPS today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E compares a share price with the company’s annual profit per share. If a share costs $100 and the company earns $2 per share, the P/E is 50. A trailing P/E uses the last twelve months; a forward P/E uses forecast earnings. The difference between MPS’s two measures says investors expect its earnings base to expand substantially. It does not mean MPS receives that multiple as cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,210.86"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "756.65 (-35 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "33.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1210.86,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "426.10 (-64 %)",
+       "360.05 (-69 %)",
+       "328.94 (-71 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "712.33 (-41 %)",
+       "729.60 (-38 %)",
+       "730.31 (-37 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1005.17 (-16 %)",
+       "1197.93 (+1 %)",
+       "1363.71 (+16 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "699.34 (-42 %)",
+       "730.88 (-38 %)",
+       "756.65 (-35 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mpwr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPWR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "MPS dividend",
+   "meta_description": "MPS pays $2.00 a share quarterly; 2025 free cash flow covered its cash returns, while yield and future increases depend on price and growth.",
+   "opening": "MPS pays $2.00 a share quarterly, after raising its regular dividend from $1.56 on February 5, 2026. MPS’s $666.189 million of 2025 free cash flow covered its cash returns, with $438.698 million remaining after stock compensation.",
+   "closing": "The full MPS memo also examines its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does MPS pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends were the steady cash return. On February 5, 2026, MPS raised its regular quarterly dividend from $1.56 to $2.00 a share. Buybacks are more flexible. An authorization gives permission to repurchase shares up to a limit; it does not require the company to spend the full amount. MPS used its previous program by the end of 2024, while the later authorization produced only limited repurchases in 2025."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ thousands; per share in US$",
+      "caption": "Results (US$ thousands; per share in US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Dividend per share",
+        "6.24",
+        "5.00",
+        "4.00",
+        "3.00",
+        "2.40"
+       ]
+      ],
+      "note": "The 2024 profit is unusually high because a foreign tax incentive created a large tax benefit, not because the business suddenly sold much more."
+     }
+    },
+    {
+     "heading": "Is MPS’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "MPS converts a substantial share of profit into cash, but shareholders must account for stock-based pay. Free cash flow is cash from operations after capital spending. In 2025, operations produced $838.202 million. Capital spending was $172.013 million, leaving $666.189 million of free cash flow."
+      },
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "Stock compensation does not leave the company as cash when granted, but it gives employees ownership. MPS reported $227.491 million of stock compensation in 2025. Subtracting that amount from free cash flow leaves $438.698 million under the memo’s shareholder-minded measure."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "666,189",
+        "642,292",
+        "580,635",
+        "187,831",
+        "225,590"
+       ],
+       [
+        "− Dividends paid",
+        "284,797",
+        "240,623",
+        "185,844",
+        "137,965",
+        "109,364"
+       ],
+       [
+        "− Share buybacks",
+        "7,686",
+        "636,244",
+        "3,741",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "373,706",
+        "",
+        "391,050",
+        "49,866",
+        "116,226"
+       ]
+      ],
+      "note": "In 2024, the company paid shareholders more than its business generated, using money from selling investments and its savings."
+     }
+    },
+    {
+     "heading": "What could change MPS’s dividend?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends per share are $8 in October 2027 and $10 in October 2028. They reach $12 in October 2029. The bear holds at $8, while the bull reaches $12 and then $16. MPS raised its quarterly dividend from $1.56 to $2.00 in February 2026. Free cash flow was $666.189 million in 2025, and net cash was $1,413.761 million at June 2026."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,188 (966 / 1,326)",
+        "1,375 (1,012 / 1,701)",
+        "1,575 (1,056 / 2,090)"
+       ],
+       [
+        "Shares (millions)",
+        "50.01 (49.88 / 50.13)",
+        "50.88 (50.62 / 51.12)",
+        "51.76 (51.37 / 52.11)"
+       ],
+       [
+        "Dividends per share",
+        "8.00 (8.00 / 8.00)",
+        "10.00 (8.00 / 12.00)",
+        "12.00 (8.00 / 16.00)"
+       ],
+       [
+        "Price to earnings",
+        "30.00 (22.00 / 38.00)",
+        "27.00 (18.00 / 36.00)",
+        "24.00 (16.00 / 34.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is MPS’s dividend yield today against its price?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "EBITDA is a rough measure of operating earnings before interest, taxes, depreciation, and amortization. Free cash flow is the cash left after running the business and buying equipment. Thin free-cash-flow and dividend yields leave little immediate return, so investors need future growth to make the price work."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "5.90"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.28",
+      "2.85",
+      "3.81",
+      "4.93",
+      "5.90"
+     ],
+     "Real free cash flow per share": [
+      "2.13",
+      "0.56",
+      "8.84",
+      "8.94",
+      "9.08"
+     ],
+     "Free cash flow per share": [
+      "4.71",
+      "3.88",
+      "11.91",
+      "13.15",
+      "13.79"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mpwr/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPWR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "MPS earnings date",
+   "meta_description": "MPS reports on October 29, 2026; watch demand and margins against guidance.",
+   "opening": "MPS's next results are expected on October 29, 2026. Watch demand and margins against guidance.",
+   "closing": "The full MPS memo also answers how MPS's business works, who its rivals are, how management operates, and what risks shape its results.",
+   "blocks": [
+    {
+     "heading": "What has MPS guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "In Q2 2026, Enterprise Data revenue was $380.6 million, or 38.8% of company revenue, up 164.3% from a year earlier. Management therefore raised its minimum Enterprise Data growth target for 2026 to 130%, citing customer ramps, platform refreshes, and more module content."
+      },
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The near-term test is Q3 2026 guidance for revenue of $1,140 million to $1,160 million and GAAP gross margin of 55.2% to 55.8%. Gross margin is the share of sales left after making the products. If costs rise faster than sales, earnings per share may not match the revenue growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions; shares in millions",
+      "caption": "Guidance in force (US$ millions; shares in millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "1,140",
+        "1,160",
+        "July 30, 2026"
+       ],
+       [
+        "GAAP gross margin",
+        "Quarter to Sep 2026",
+        "55.2%",
+        "55.8%",
+        "July 30, 2026"
+       ],
+       [
+        "Non-GAAP gross margin",
+        "Quarter to Sep 2026",
+        "55.4%",
+        "56.0%",
+        "July 30, 2026"
+       ],
+       [
+        "GAAP operating expenses",
+        "Quarter to Sep 2026",
+        "252.7",
+        "258.7",
+        "July 30, 2026"
+       ],
+       [
+        "Non-GAAP operating expenses",
+        "Quarter to Sep 2026",
+        "201.2",
+        "205.2",
+        "July 30, 2026"
+       ],
+       [
+        "Non-GAAP tax rate",
+        "Year to Dec 2026",
+        "15.0%",
+        "15.0%",
+        "July 30, 2026"
+       ]
+      ],
+      "note": "The revenue number is a forecast for the quarter ending September 2026, not money the company has already earned."
+     }
+    },
+    {
+     "heading": "How have MPS's revenue and profit changed?",
+     "paragraphs": [],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands; per share in US$",
+      "caption": "The last eight quarters (US$ thousands; per share in US$)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "980,642",
+        "804,185",
+        "751,155",
+        "737,176",
+        "664,574",
+        "637,554",
+        "621,665",
+        "620,119"
+       ],
+       [
+        "Gross margin",
+        "55.2%",
+        "55.3%",
+        "55.2%",
+        "55.1%",
+        "55.1%",
+        "55.4%",
+        "55.4%",
+        "55.4%"
+       ],
+       [
+        "Operating income",
+        "303,894",
+        "241,152",
+        "199,936",
+        "195,183",
+        "164,758",
+        "168,759",
+        "163,307",
+        "164,028"
+       ],
+       [
+        "Net income",
+        "257,298",
+        "193,226",
+        "171,656",
+        "179,766",
+        "135,009",
+        "135,052",
+        "1,254,721",
+        "144,430"
+       ],
+       [
+        "EPS, diluted",
+        "5.22",
+        "3.92",
+        "3.49",
+        "3.74",
+        "2.81",
+        "2.81",
+        "25.87",
+        "2.95"
+       ],
+       [
+        "**= Free cash flow**",
+        "145,483",
+        "179,404",
+        "63,897",
+        "196,753",
+        "189,494",
+        "216,045",
+        "102,879",
+        "197,885"
+       ]
+      ],
+      "note": "The large profit in December 2024 was mostly a one-time tax benefit, not money made from normal business operations."
+     }
+    },
+    {
+     "heading": "What should I watch in MPS's next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "A material weakness is a serious failure in the internal checking process that could allow a major accounting error to go undetected. It does not prove that cash is missing or that every reported figure is wrong, but it reduces confidence in the process producing the figures. As of June 30, 2026, MPS said the tax-related weakness had not been remediated and that disclosure controls were not effective. Management expected remediation by the end of 2026."
+      },
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October 29 report will test demand and margins. The Singapore ramp expected in early 2027 will test whether MPS can execute its supply expansion."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands; per share in US$)",
+     "value": "980,642"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "5.22"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands; per share in US$",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "620,119",
+      "621,665",
+      "637,554",
+      "664,574",
+      "737,176",
+      "751,155",
+      "804,185",
+      "980,642"
+     ],
+     "EPS, diluted": [
+      "2.95",
+      "25.87",
+      "2.81",
+      "2.81",
+      "3.74",
+      "3.49",
+      "3.92",
+      "5.22"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mpwr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPWR&src=seo-earnings"
+  }
+ },
+ "short_name": "MPS",
+ "first_memo_date": "2026-10-18T04:22:02Z"
+}

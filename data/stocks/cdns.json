@@ -1,0 +1,575 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CDNS",
+ "slug": "cdns",
+ "company": "Cadence Design Systems, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T11:40:10Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 324.38,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-10-26",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 27,
+  "words": 17643,
+  "sources": 234
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Most people meet Cadence Design Systems only indirectly: its software and machines help turn a chip idea into something a factory can build. The business earns money by selling that design capability, reusable circuit blocks and testing capacity, then spends it on engineers, suppliers and the infrastructure that keeps the work running."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/813672/000119312526124264/d932644ddef14a.htm"
+  },
+  {
+   "title": "Schedule 13G filed April 29, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/813672/000210011926000211/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "title": "September 2026 Form 4",
+   "url": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000107/xslF345X06/wk-form4_1790025751.xml"
+  }
+ ],
+ "rivals": [
+  "SNPS",
+  "KEYS",
+  "SVCO",
+  "ARM"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Cadence stock forecast",
+   "meta_description": "Cadence stock forecast: weighted scenarios, cash after stock pay, and valuation explained in plain English.",
+   "opening": "Cadence's weighted price is US$330.91 in October 2029, with the bear case at 30%, the base case at 55%, and the bull case at 15%. It hinges on cash growth and execution offsetting a lower valuation multiple.",
+   "closing": "The full Cadence memo also answers how Cadence makes money, how it compares with rivals, how management is executing, and what risks could change the case.",
+   "blocks": [
+    {
+     "heading": "Where could Cadence's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Cadence’s forecast is nearly flat because operating progress is largely offset by a lower valuation multiple. The weighted price is $327.41 in October 2027, a 1% total return including dividends. It is $330.66 in October 2028, a 2% return. It is $330.91 in October 2029, also a 2% return. The final bear-to-bull range is $324.65 to $335.04, against today’s $324.38."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case receives 30%. The base case receives 55%. The bull case receives 15%. The base case therefore carries the forecast, but the narrow range says execution matters more than a major re-rating."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 324.38, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 324.38, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "324.95 (+0 %)",
+        "327.40 (+1 %)",
+        "324.65 (+0 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "328.65 (+1 %)",
+        "331.96 (+2 %)",
+        "333.21 (+3 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "327.80 (+1 %)",
+        "332.41 (+2 %)",
+        "335.04 (+3 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "327.41 (+1 %)",
+        "330.66 (+2 %)",
+        "330.91 (+2 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case more or less influence based on its probability."
+     }
+    },
+    {
+     "heading": "What has to go right for Cadence, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path grows cash by 10% annually. Its table values are supported by an $8.1 billion backlog, continuing renewals and strong design activity, but acquisition costs and stock compensation restrain conversion. The bear path starts at $1,050 million and grows 3% annually because weaker budgets, delivery friction and integration costs would interrupt growth. The bull path starts at $1,490 million and grows 15% annually because Q2 revenue, Core EDA and IP all showed strong momentum."
+      },
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weaker design budgets, tougher competition, slower China deliveries and costly integration. It ends at $324.65 after starting at $324.95. Its probability is 30% because cash after stock pay has previously declined, receivables have risen, and export uncertainty remains material."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Cadence really make?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was 1,728,781 in 2025. After capital spending of 141,871, free cash flow was 1,586,910. This captures spending on equipment and facilities, but not every cost of staying competitive: R&D salaries already reduce operating cash flow, while acquisitions appear elsewhere."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,728,781",
+        "1,260,551",
+        "1,349,176",
+        "1,241,894",
+        "1,100,958"
+       ],
+       [
+        "− Capital spending",
+        "141,871",
+        "142,542",
+        "102,503",
+        "124,215",
+        "66,881"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,586,910",
+        "1,118,009",
+        "1,246,673",
+        "1,117,679",
+        "1,034,077"
+       ],
+       [
+        "− Stock pay",
+        "455,175",
+        "391,219",
+        "325,611",
+        "270,439",
+        "210,090"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,131,735",
+        "726,790",
+        "921,062",
+        "847,240",
+        "823,987"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "21.4%",
+        "15.7%",
+        "22.5%",
+        "23.8%",
+        "27.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Cadence today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "324.38"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "64.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "34.0x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "15.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.3%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts’ expected profit, so it is an estimate that may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "324.38"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "330.91 (+2 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "34.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 324.38,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "324.95 (+0 %)",
+       "327.40 (+1 %)",
+       "324.65 (+0 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "328.65 (+1 %)",
+       "331.96 (+2 %)",
+       "333.21 (+3 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "327.80 (+1 %)",
+       "332.41 (+2 %)",
+       "335.04 (+3 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "327.41 (+1 %)",
+       "330.66 (+2 %)",
+       "330.91 (+2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cdns/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CDNS&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Cadence earnings: guidance and next results",
+   "meta_description": "Cadence expects its next results on October 26, 2026; annual guidance is in force, with backlog conversion and cash collection to watch.",
+   "opening": "Cadence expects to report its next results on October 26, 2026. The key thing to watch is whether Cadence converts backlog into revenue and collects the cash implied by earnings.",
+   "closing": "The full memo explains Cadence’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Cadence guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s July 27, 2026 guidance calls for 18%–20% revenue growth in 2026. It puts revenue at US$6,260,000–6,340,000 thousand. The plan includes US$2,000,000 thousand of operating cash flow and US$240,000 thousand of capital spending. Stock compensation is US$569,000 thousand."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total Revenue",
+        "Year to Dec 2026",
+        "6,260,000",
+        "6,340,000",
+        "Jul 27, 2026"
+       ],
+       [
+        "Revenue growth",
+        "Year to Dec 2026",
+        "18.0%",
+        "20.0%",
+        "Jul 27, 2026"
+       ],
+       [
+        "Cash Flow from Operations",
+        "Year to Dec 2026",
+        "2,000,000",
+        "2,000,000",
+        "Jul 27, 2026"
+       ],
+       [
+        "Capital Expenditures",
+        "Year to Dec 2026",
+        "240,000",
+        "240,000",
+        "Jul 27, 2026"
+       ],
+       [
+        "Stock-based compensation expense",
+        "Year to Dec 2026",
+        "569,000",
+        "569,000",
+        "Jul 27, 2026"
+       ]
+      ],
+      "note": "The company shows both standard-accounting and adjusted profit figures, and the adjusted figures exclude selected costs, so they are not directly comparable."
+     }
+    },
+    {
+     "heading": "Did Cadence keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Buybacks can offset dilution, which is the spreading of ownership across more shares, but spending money on repurchases does not guarantee that dilution disappears. Management also beat its 2025 revenue and adjusted-earnings outlook while missing its forecast under standard accounting rules. Adjusted earnings remove selected costs, including stock pay and acquisition-related items; standard accounting includes them."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Cadence reported in revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached 1,584,451, up approximately 24.2% from June 2025. It was also up 7.5% from March 2026. Core EDA grew 18% and IP grew more than 40%. System Design and Analysis grew 37%, although Hexagon contributed to that category."
+      },
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash from operations was 634,929, and capital spending was 59,603. Free cash flow rose, but gross margin fell from 85.6% to 84.9%, so faster sales did not improve every layer of profitability. Backlog reached $8.1 billion, including $4.2 billion of RPO revenue expected within twelve months. The quarter supports continued expansion, not a sudden doubling of recurring operating profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,584,451",
+        "1,474,220",
+        "1,440,114",
+        "1,338,838",
+        "1,275,441",
+        "1,242,366",
+        "1,355,981",
+        "1,215,499"
+       ],
+       [
+        "Gross margin",
+        "84.9%",
+        "85.4%",
+        "86.9%",
+        "86.4%",
+        "85.6%",
+        "86.5%",
+        "83.8%",
+        "86.6%"
+       ],
+       [
+        "Operating income",
+        "450,315",
+        "431,329",
+        "463,335",
+        "425,390",
+        "241,797",
+        "361,520",
+        "456,875",
+        "350,056"
+       ],
+       [
+        "Net income",
+        "367,076",
+        "335,660",
+        "388,136",
+        "287,122",
+        "160,051",
+        "273,579",
+        "340,210",
+        "238,111"
+       ],
+       [
+        "EPS, diluted",
+        "1.33",
+        "1.23",
+        "1.42",
+        "1.05",
+        "0.59",
+        "1.00",
+        "1.24",
+        "0.87"
+       ]
+      ],
+      "note": "Our free cash flow is lower than Cadence's count because we include separately purchased intangible assets in capital spending, while Cadence leaves them out."
+     }
+    },
+    {
+     "heading": "What should Cadence watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Cadence is due to report third-quarter results on October 26, 2026. Management expects quarterly revenue of $1.595 billion to $1.625 billion and non-GAAP earnings of $2.01 to $2.07 per share. The important evidence will be whether it maintains the annual outlook, converts backlog and collects the cash implied by earnings."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 26, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,584,451"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.33"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,215,499",
+      "1,355,981",
+      "1,242,366",
+      "1,275,441",
+      "1,338,838",
+      "1,440,114",
+      "1,474,220",
+      "1,584,451"
+     ],
+     "EPS, diluted": [
+      "0.87",
+      "1.24",
+      "1.00",
+      "0.59",
+      "1.05",
+      "1.42",
+      "1.23",
+      "1.33"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cdns/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CDNS&src=seo-earnings"
+  }
+ },
+ "short_name": "Cadence",
+ "first_memo_date": "2026-10-16T11:40:10Z"
+}

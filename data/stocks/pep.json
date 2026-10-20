@@ -1,0 +1,603 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PEP",
+ "slug": "pep",
+ "company": "PepsiCo, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:15:53Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 128.34,
+ "price_date": "2026-10-08T20:00:00Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 17265,
+  "sources": 210
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "PepsiCo is a food-and-drink company whose familiar brands turn everyday eating and drinking into a large, repeat-purchase business. To understand how a dollar comes in and goes out, follow the product from brand and factory to customer, shelf and final sale."
+ },
+ "sources": [
+  {
+   "title": "SEC 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm"
+  },
+  {
+   "title": "PepsiCo’s 2024 annual filing, Note 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747625000007/pep-20241228.htm"
+  },
+  {
+   "title": "Earnings release — Q3 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000050/q320268-kxexhibit991.htm"
+  }
+ ],
+ "rivals": [
+  "KO",
+  "CAG",
+  "HRL",
+  "KDP",
+  "KHC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "PepsiCo stock forecast",
+   "meta_description": "PepsiCo stock forecast: weighted scenarios, recovery drivers, free cash flow and valuation in plain English.",
+   "opening": "PepsiCo’s weighted scenario reaches US$167.75 in October 2027 and US$186.33 in October 2029. It hinges on restoring profitable volume while protecting margin.",
+   "closing": "The full memo also explains PepsiCo’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could PepsiCo's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "PepsiCo’s weighted forecast reaches US$167.75 in October 2027 and US$186.33 in October 2029, implying a 60% dividend-inclusive return over three years if profitable volume recovery, margin stabilization and stronger cash generation arrive."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 128.34, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 128.34, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "132.31 (+8 %)",
+        "116.18 (-0 %)",
+        "100.97 (-7 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "174.33 (+40 %)",
+        "185.45 (+54 %)",
+        "196.64 (+68 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "204.47 (+64 %)",
+        "245.33 (+101 %)",
+        "288.63 (+140 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "167.75 (+35 %)",
+        "176.64 (+47 %)",
+        "186.33 (+60 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for PepsiCo's base case, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Margins are the second major swing factor. Base net margin rises from 11.4% to 12.0%. Bear margin falls from 10.4% to 9.4%. Bull margin rises from 11.7% to 12.8%. The cautious base path reflects the latest 35-basis-point core-margin contraction and the North American food pressure caused by affordability spending and marketing. Separate charges decline from $500 million to $150 million in the base case, while the bear retains $250 million and the bull reaches zero."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "6.0 % (4.5 % / 7.0 %)",
+        "4.5 % (2.0 % / 6.5 %)",
+        "4.3 % (2.0 % / 6.0 %)",
+        "4.0 % (2.5 % / 5.5 %)"
+       ],
+       [
+        "Net margin",
+        "11.4 % (10.4 % / 11.7 %)",
+        "11.6 % (10.0 % / 12.1 %)",
+        "11.8 % (9.7 % / 12.5 %)",
+        "12.0 % (9.4 % / 12.8 %)"
+       ],
+       [
+        "One-time items",
+        "-500 (-750 / -400)",
+        "-300 (-500 / -200)",
+        "-200 (-350 / -100)",
+        "-150 (-250 / 0.00)"
+       ],
+       [
+        "Earnings per share, reported",
+        "7.93 (6.91 / 8.30)",
+        "8.62 (6.95 / 9.36)",
+        "9.25 (6.99 / 10.36)",
+        "9.85 (7.02 / 11.30)"
+       ],
+       [
+        "Buybacks",
+        "1,000 (1,000 / 1,000)",
+        "1,000 (500 / 1,500)",
+        "1,000 (500 / 1,500)",
+        "1,000 (500 / 1,500)"
+       ],
+       [
+        "Dividend per share",
+        "5.81 (5.81 / 5.81)",
+        "6.04 (5.98 / 6.10)",
+        "6.28 (6.10 / 6.41)",
+        "6.53 (6.22 / 6.73)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does PepsiCo really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is not an immediate cash payment, but it gives employees something valuable and can dilute shareholders. Deducting it, along with payments to minority owners, leaves less cash for PepsiCo’s shareholders. Dividends absorbed nearly all of that adjusted amount. Cash generation is therefore strong, but the margin for debt reduction, acquisitions or reinvestment is narrow."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "12,087",
+        "12,507",
+        "13,442",
+        "10,811",
+        "11,616"
+       ],
+       [
+        "Capital spending",
+        "4,415",
+        "5,318",
+        "5,518",
+        "5,207",
+        "4,625"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "7,672",
+        "7,189",
+        "7,924",
+        "5,604",
+        "6,991"
+       ],
+       [
+        "Stock-based pay",
+        "293",
+        "364",
+        "398",
+        "376",
+        "322"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "7,379",
+        "6,825",
+        "7,526",
+        "5,228",
+        "6,669"
+       ],
+       [
+        "Free cash flow left for shareholders (calculated)",
+        "7,335",
+        "6,776",
+        "7,458",
+        "5,159",
+        "6,620"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for PepsiCo today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A trailing P/E compares the share price with past-year earnings; a forward P/E compares it with an estimate. The forward measure looks cheaper only if forecast earnings arrive. Profit can also rise because PepsiCo charges more while shoppers buy fewer bags of chips or drinks, so volume and pricing must be read together."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "128.34"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "186.33 (+60 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.4x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "16.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 128.34,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "132.31 (+8 %)",
+       "116.18 (-0 %)",
+       "100.97 (-7 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "174.33 (+40 %)",
+       "185.45 (+54 %)",
+       "196.64 (+68 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "204.47 (+64 %)",
+       "245.33 (+101 %)",
+       "288.63 (+140 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "167.75 (+35 %)",
+       "176.64 (+47 %)",
+       "186.33 (+60 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pep/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PEP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "PepsiCo dividend: cash cover and yield",
+   "meta_description": "PepsiCo dividend history, cash coverage, plans and yield explained in plain English.",
+   "opening": "In 2025, PepsiCo paid a US$5.62 dividend per share, while free cash flow after stock pay was US$5.76 per share. Real free cash flow after stock pay was US$7,379 million against US$7,638 million of dividends.",
+   "closing": "The full PepsiCo memo also examines PepsiCo’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does PepsiCo pay per share?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends remain resilient but do not fully solve the cash constraint. FY2026 dividend per share is $5.81, based on two payments of $1.4225 and two of $1.48. The base reaches $6.53 by FY2029 through increases near 4%. The bear reaches $6.22 through 2% increases. The bull reaches $6.73 through stronger increases. PepsiCo has raised its dividend for 54 consecutive years, but distributions exceeded real free cash flow in recent years, so a cut is less likely than slower growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.00",
+        "6.95",
+        "6.56",
+        "6.42",
+        "5.49"
+       ],
+       [
+        "Free cash flow after stock pay, per share (calculated)",
+        "5.76",
+        "5.20",
+        "5.58",
+        "3.95",
+        "4.92"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "0.73",
+        "0.73",
+        "0.72",
+        "1.08",
+        "0.08"
+       ],
+       [
+        "Stock pay per share (calculated)",
+        "0.21",
+        "0.26",
+        "0.29",
+        "0.27",
+        "0.23"
+       ],
+       [
+        "Dividend per share",
+        "5.62",
+        "5.33",
+        "4.95",
+        "4.53",
+        "4.25"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is PepsiCo's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The challenges",
+       "text": "- **Cash for investment and returns** — Capital spending, dividends and acquisitions compete for cash. The company’s real free cash flow after stock pay was US$7,379 million in 2025, against US$7,638 million of dividends."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "7,379",
+        "6,825",
+        "7,526",
+        "5,228",
+        "6,669"
+       ],
+       [
+        "Dividends paid",
+        "7,638",
+        "7,229",
+        "6,682",
+        "6,172",
+        "5,815"
+       ],
+       [
+        "Shares bought back",
+        "1,000",
+        "1,000",
+        "1,000",
+        "1,500",
+        "106"
+       ],
+       [
+        "New shares sold",
+        "97",
+        "166",
+        "116",
+        "138",
+        "185"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "4,107",
+        "156",
+        "2,477",
+        "919",
+        "667"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "117.1%",
+        "120.6%",
+        "102.1%",
+        "146.7%",
+        "88.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change PepsiCo's dividend?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Commodity inflation or expiring hedges that outpace productivity savings would pressure operating margin in 2027. Weak cash conversion would also force lower buybacks and a lower valuation multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "6.0 % (4.5 % / 7.0 %)",
+        "4.5 % (2.0 % / 6.5 %)",
+        "4.3 % (2.0 % / 6.0 %)",
+        "4.0 % (2.5 % / 5.5 %)"
+       ],
+       [
+        "Net margin",
+        "11.4 % (10.4 % / 11.7 %)",
+        "11.6 % (10.0 % / 12.1 %)",
+        "11.8 % (9.7 % / 12.5 %)",
+        "12.0 % (9.4 % / 12.8 %)"
+       ],
+       [
+        "One-time items",
+        "-500 (-750 / -400)",
+        "-300 (-500 / -200)",
+        "-200 (-350 / -100)",
+        "-150 (-250 / 0.00)"
+       ],
+       [
+        "Earnings per share, reported",
+        "7.93 (6.91 / 8.30)",
+        "8.62 (6.95 / 9.36)",
+        "9.25 (6.99 / 10.36)",
+        "9.85 (7.02 / 11.30)"
+       ],
+       [
+        "Buybacks",
+        "1,000 (1,000 / 1,000)",
+        "1,000 (500 / 1,500)",
+        "1,000 (500 / 1,500)",
+        "1,000 (500 / 1,500)"
+       ],
+       [
+        "Dividend per share",
+        "5.81 (5.81 / 5.81)",
+        "6.04 (5.98 / 6.10)",
+        "6.28 (6.10 / 6.41)",
+        "6.53 (6.22 / 6.73)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "4.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "5.15",
+      "4.22",
+      "5.87",
+      "5.47",
+      "5.97"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pep/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PEP&src=seo-dividend"
+  }
+ },
+ "short_name": "PepsiCo",
+ "first_memo_date": "2026-10-10T02:15:53Z"
+}

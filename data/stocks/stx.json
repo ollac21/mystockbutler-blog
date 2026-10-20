@@ -1,0 +1,833 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "STX",
+ "slug": "stx",
+ "company": "Seagate Technology Holdings plc",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T11:54:19Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 753.25,
+ "price_date": "2026-10-12T20:00:00Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 240,
+  "tables": 27,
+  "words": 15987,
+  "sources": 276
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Digital services depend on physical equipment that can preserve enormous quantities of information. Seagate Technology makes that equipment, and its economics begin with the difference between storing a terabyte cheaply and storing it quickly."
+ },
+ "sources": [
+  {
+   "title": "2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm"
+  },
+  {
+   "title": "Fiscal 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778925000157/stx-20250627.htm"
+  },
+  {
+   "title": "Fiscal 2024 annual report, Note 18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778924000068/stx-20240628.htm"
+  }
+ ],
+ "rivals": [
+  "WDC",
+  "MU",
+  "SNDK",
+  "P",
+  "NTAP",
+  "DELL",
+  "HPE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Seagate Technology stock forecast",
+   "meta_description": "Seagate Technology stock forecast: weighted scenarios, Mozaic and demand drivers, real free cash flow, and today's valuation.",
+   "opening": "Seagate Technology’s weighted scenario is $698.20 in October 2029, including dividends. It hinges on converting demand into profitable, high-yield Mozaic production and cash flow.",
+   "closing": "The full memo also explains Seagate Technology’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Seagate Technology’s shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $935.28 in October 2027, including dividends. That represents a 25% return from today. The weighted price is $763.39 in October 2028, a 2% return. By October 2029, it is $698.20, a 6% loss."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 753.25, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 753.25, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "26%",
+        "584.59 (-22%)",
+        "212.83 (-71%)",
+        "187.81 (-74%)"
+       ],
+       [
+        "Base",
+        "54%",
+        "941.65 (+25%)",
+        "720.97 (-3%)",
+        "601.92 (-19%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "1373.95 (+83%)",
+        "1593.66 (+112%)",
+        "1621.68 (+117%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "935.28 (+25%)",
+        "763.39 (+2%)",
+        "698.20 (-6%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Seagate Technology, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires cloud customers to digest inventory, reducing nearline shipments and factory utilization. Slower HAMR yields, qualification delays and flash substitution then weaken margins, cash flow and valuation. The bear price is $584.59 in October 2027 and $187.81 in October 2029. Its 26% probability reflects the prior 32% nearline shipment decline and the fall from $1,890M of operating income to a $342M loss during the last major downturn."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires data-retention demand to exceed allocations, Mozaic yields to improve, pricing to remain firm and Mozaic 5 qualification to proceed. It produces $1,373.95 in October 2027 and $1,621.68 in October 2029. Its 20% probability reflects strong cash generation and qualified production, but also the need for several uncertain outcomes to persist through 2029."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,435 (5,280 / 7,740)",
+        "5,270 (2,500 / 8,400)",
+        "4,725 (2,340 / 8,800)"
+       ],
+       [
+        "Dividends per share",
+        "2.96 (2.96 / 2.96)",
+        "3.08 (2.00 / 3.20)",
+        "3.20 (1.50 / 3.52)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "33.00 (25.00 / 40.00)",
+        "30.00 (18.00 / 42.00)",
+        "27.00 (16.00 / 40.00)"
+       ],
+       [
+        "Net debt",
+        "-2,803 (-1,836 / -3,715)",
+        "-6,670 (-3,832 / -9,979)",
+        "-10,018 (-5,745 / -16,510)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Seagate Technology really make?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "An export-control settlement also spread cash payments across several years. Those payments reduced operating cash without creating new expense in the years paid. Stock compensation creates a further qualification: it does not immediately use cash, but it transfers part of the company to employees. A specialist therefore looks at both reported free cash flow and a version that deducts stock pay."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,674",
+        "1,083",
+        "918",
+        "942",
+        "1,657"
+       ],
+       [
+        "− Capital spending",
+        "569",
+        "265",
+        "254",
+        "316",
+        "381"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,105",
+        "818",
+        "664",
+        "626",
+        "1,276"
+       ],
+       [
+        "− Stock pay",
+        "213",
+        "200",
+        "127",
+        "115",
+        "145"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,892",
+        "618",
+        "537",
+        "511",
+        "1,131"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "23.7%",
+        "6.8%",
+        "8.2%",
+        "6.9%",
+        "9.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Seagate Technology?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "Seagate Technology makes hard disk drives, which store data on spinning magnetic disks. At $753.25 a share, the stock price assumes that today’s business will become far more profitable."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "753.25"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "698.20 (-6%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 753.25,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "26%",
+      "values": [
+       "584.59 (-22%)",
+       "212.83 (-71%)",
+       "187.81 (-74%)"
+      ]
+     },
+     "Base": {
+      "probability": "54%",
+      "values": [
+       "941.65 (+25%)",
+       "720.97 (-3%)",
+       "601.92 (-19%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "1373.95 (+83%)",
+       "1593.66 (+112%)",
+       "1621.68 (+117%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "935.28 (+25%)",
+       "763.39 (+2%)",
+       "698.20 (-6%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/stx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Seagate Technology dividend",
+   "meta_description": "Seagate Technology's dividend, cash coverage, outlook and yield in one clear view.",
+   "opening": "Seagate Technology pays $0.74 per share quarterly, and its historical dividend rose from $2.77 to $2.94. Its 2026 free cash flow supported dividends and resumed buybacks while reducing debt.",
+   "closing": "The full Seagate Technology memo also explains its business, rivals, management decisions, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Seagate Technology pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $2.96 to $3.20 per share. The bear case cuts it to $1.50, while the bull case lifts it to $3.52. The starting point is the current $0.74 quarterly payment, and the historical dividend rose gradually from $2.77 to $2.94. The board retains discretion, so the bear case allows for a cyclical cut."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,195",
+        "9,097",
+        "6,551",
+        "7,384",
+        "11,661"
+       ],
+       [
+        "EPS, diluted",
+        "13.90",
+        "6.77",
+        "1.58",
+        "-2.56",
+        "7.36"
+       ],
+       [
+        "Dividend per share",
+        "2.94",
+        "2.86",
+        "2.80",
+        "2.80",
+        "2.77"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Seagate Technology's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 77,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Later, Seagate balanced shareholder payments with acquisitions, asset sales, and debt repayment. In 2026, stronger free cash flow supported dividends and resumed buybacks while also reducing debt. Net debt fell from $5,031 million in 2022 to $1,861 million in 2026. That is a clear financial payoff: lower fixed obligations leave more room for factory transitions and technology investment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,105",
+        "818",
+        "664",
+        "626",
+        "1,276"
+       ],
+       [
+        "− Dividends paid",
+        "634",
+        "600",
+        "585",
+        "582",
+        "610"
+       ],
+       [
+        "− Share buybacks",
+        "176",
+        "0",
+        "0",
+        "408",
+        "1,799"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,295",
+        "218",
+        "79",
+        "",
+        ""
+       ],
+       [
+        "**= Net debt**",
+        "1,861",
+        "4,104",
+        "4,316",
+        "4,665",
+        "5,031"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Seagate Technology's dividend?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward the bear case if inventory correction appears between October 2027 and October 2028, reducing nearline growth, utilization and free cash flow. HAMR yield or qualification setbacks in the same period would raise unit costs and delay the high-capacity product mix."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case gains credibility if allocated demand converts into shipments and capex remains within management’s 4.0%–6.0% revenue range. Mozaic adoption and stable revenue per terabyte would support the modeled margin path."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,435 (5,280 / 7,740)",
+        "5,270 (2,500 / 8,400)",
+        "4,725 (2,340 / 8,800)"
+       ],
+       [
+        "Shares (millions)",
+        "228 (229 / 228)",
+        "229 (229 / 228)",
+        "229 (230 / 227)"
+       ],
+       [
+        "Dividends per share",
+        "2.96 (2.96 / 2.96)",
+        "3.08 (2.00 / 3.20)",
+        "3.20 (1.50 / 3.52)"
+       ],
+       [
+        "Net debt",
+        "-2,803 (-1,836 / -3,715)",
+        "-6,670 (-3,832 / -9,979)",
+        "-10,018 (-5,745 / -16,510)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Seagate Technology's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Book value is also a weak guide. It does not capture the value of a successful technology roadmap, and it does not show how disappointing technology could leave equipment less useful. Cash-flow yield and dividend yield therefore matter more, while settled exchangeable notes and their issued shares must be counted correctly."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jul 2026",
+     "value": "2.77"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Jul 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.72",
+      "2.81",
+      "2.76",
+      "2.76",
+      "2.77"
+     ],
+     "Real free cash flow per share": [
+      "5.05",
+      "2.47",
+      "2.53",
+      "2.85",
+      "12.63"
+     ],
+     "Free cash flow per share": [
+      "5.70",
+      "3.02",
+      "3.13",
+      "3.77",
+      "13.56"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/stx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Seagate Technology earnings",
+   "meta_description": "Seagate Technology expects next results on October 27, 2026; guidance is $4,000–4,200 million of revenue and $7.10–7.50 EPS.",
+   "opening": "Seagate Technology's next results are expected on October 27, 2026. The thing to watch is whether Seagate Technology converts demand into reliable, profitable volume production and cash.",
+   "closing": "The full memo also answers how Seagate Technology makes money, who it competes with, how management is run, and what could go wrong.",
+   "blocks": [
+    {
+     "heading": "What has Seagate Technology guided for the quarter?",
+     "paragraphs": [
+      {
+       "n": 193,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the quarter ending in October 2026, Seagate guided to revenue of $4,000–4,200 million and non-GAAP diluted earnings per share of $7.10–7.50. Guidance is management’s forecast, not a guarantee; the useful benchmarks are the $4,100 million revenue midpoint and $7.30 earnings midpoint."
+      },
+      {
+       "n": 194,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Non-GAAP earnings are adjusted accounting profit, not cash ready to spend. Seagate’s forecast excludes estimated share-based compensation of $0.26 per share, which pays employees with equity rather than ordinary wages. Its 50.0% operating-margin assumption means roughly half of sales would remain after operating costs, before interest and tax. Seagate would still need to buy equipment, repay debt and fund the timing gap between production and customer payment."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "4,000",
+        "4,200",
+        "Jul 28, 2026"
+       ],
+       [
+        "Non-GAAP diluted EPS",
+        "Quarter to Oct 2026",
+        "7.10",
+        "7.50",
+        "Jul 28, 2026"
+       ],
+       [
+        "estimated share-based compensation expenses per share",
+        "Quarter to Oct 2026",
+        "0.26",
+        "0.26",
+        "Jul 28, 2026"
+       ],
+       [
+        "Operating Margin (non-GAAP)",
+        "Quarter to Oct 2026",
+        "50.0%",
+        "50.0%",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Seagate Technology kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 115,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management nevertheless met an important timetable: it targeted the Mozaic 4+ volume ramp for the first half of 2026, and later reported that shipments began in the March quarter and increased in June."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Seagate Technology's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The July 2026 quarter strengthened an established recovery rather than producing an isolated earnings spike. Revenue and operating income both accelerated, while gross margin rose sharply, showing that additional sales carried unusually high incremental profit."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The preceding four quarters support that reading: revenue increased in sequence and gross margin improved each quarter. The longer eight-quarter record is less smooth, so the current pattern shows momentum rather than the end of the storage cycle."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,629",
+        "3,112",
+        "2,825",
+        "2,629",
+        "2,444",
+        "2,160",
+        "2,325",
+        "2,168"
+       ],
+       [
+        "Gross margin",
+        "52.3%",
+        "46.5%",
+        "41.6%",
+        "39.4%",
+        "37.4%",
+        "35.2%",
+        "34.9%",
+        "32.9%"
+       ],
+       [
+        "Operating income",
+        "1,559",
+        "998",
+        "843",
+        "694",
+        "568",
+        "431",
+        "488",
+        "403"
+       ],
+       [
+        "Net income",
+        "1,294",
+        "748",
+        "593",
+        "549",
+        "488",
+        "340",
+        "336",
+        "305"
+       ],
+       [
+        "EPS, diluted",
+        "5.58",
+        "3.27",
+        "2.60",
+        "2.43",
+        "2.24",
+        "1.57",
+        "1.55",
+        "1.41"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,118",
+        "953",
+        "607",
+        "427",
+        "425",
+        "216",
+        "150",
+        "27"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "3,629"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "5.58"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,168",
+      "2,325",
+      "2,160",
+      "2,444",
+      "2,629",
+      "2,825",
+      "3,112",
+      "3,629"
+     ],
+     "EPS, diluted": [
+      "1.41",
+      "1.55",
+      "1.57",
+      "2.24",
+      "2.43",
+      "2.60",
+      "3.27",
+      "5.58"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/stx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STX&src=seo-earnings"
+  }
+ },
+ "short_name": "Seagate Technology",
+ "first_memo_date": "2026-10-13T11:54:19Z"
+}

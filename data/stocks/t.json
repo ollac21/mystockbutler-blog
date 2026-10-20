@@ -1,0 +1,840 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "T",
+ "slug": "t",
+ "company": "AT&T Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T22:59:26Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 22.86,
+ "price_date": "2026-10-13T19:59:59Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 27,
+  "words": 17322,
+  "sources": 360
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "AT&T sells access: the connections that let people, businesses and public agencies call, message and use the internet. Its business becomes clearer when we follow those connections from the products AT&T sells to the customers who pay for them and the costs that consume each dollar."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, business description",
+   "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000120/t-20251231.htm"
+  },
+  {
+   "title": "Second-quarter 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000297/t-20260630.htm"
+  },
+  {
+   "title": "First-quarter 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000206/t-20260331.htm"
+  }
+ ],
+ "rivals": [
+  "TMUS",
+  "VZ",
+  "CMCSA",
+  "CHTR",
+  "AMX",
+  "ECHO",
+  "LUMN",
+  "OPTU",
+  "CCOI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AT&T stock forecast",
+   "meta_description": "AT&T's stock forecast weighs the $21.93 weighted price in October 2027 against cash generation, debt, network investment and competition.",
+   "opening": "AT&T's weighted forecast is $21.93 in October 2027, rising to $30.52 in October 2029. AT&T's outcome hinges on turning network investment into profitable growth while reducing debt.",
+   "closing": "The full memo also explains AT&T's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AT&T's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast assigns 25% probability to the bear case, 55% to base and 20% to bull. The September-quarter report on October 21, 2026, should show EchoStar’s effect on debt, cash, investment and customers. Fiber additions, wireless service growth, the expected Q1 2027 Mexico sale and fiber-venture proceeds are key catalysts. Debt reduction toward 2.5 times and most copper shutdowns are targeted around 2029."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to limited first-year appreciation but meaningful potential by October 2029. The weighted price is $21.93 in October 2027, a 1% total return including dividends. It rises to $25.63 in October 2028, a 22% return, and reaches $30.52 in October 2029, a 48% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 22.86, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 22.86, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "15.55 (-27%)",
+        "12.92 (-34%)",
+        "12.61 (-30%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "22.78 (+4%)",
+        "27.47 (+30%)",
+        "32.81 (+58%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "27.58 (+26%)",
+        "36.46 (+69%)",
+        "46.60 (+118%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "21.93 (+1%)",
+        "25.63 (+22%)",
+        "30.52 (+48%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull outcomes, not a separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for AT&T?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $45,751 million by the final date because legacy losses, competition and delayed cost removal overwhelm growth. The bull case reaches $55,151 million because fiber take-up, wireless economics and deployed spectrum produce faster connectivity growth. Fiber added 367,000 customers in the June quarter, while wireless service revenue grew 3.3%."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "49,244 (46,224 / 50,024)",
+        "50,968 (45,526 / 52,525)",
+        "52,752 (45,751 / 55,151)"
+       ],
+       [
+        "Shares (millions)",
+        "6,565 (6,603 / 6,524)",
+        "6,343 (6,465 / 6,266)",
+        "6,234 (6,410 / 6,065)"
+       ],
+       [
+        "Dividends per share",
+        "1.11 (1.11 / 1.11)",
+        "1.11 (1.11 / 1.11)",
+        "1.11 (1.11 / 1.11)"
+       ],
+       [
+        "Enterprise value to EBITDA",
+        "6.00 (5.40 / 6.50)",
+        "6.20 (5.00 / 7.00)",
+        "6.40 (4.80 / 7.50)"
+       ],
+       [
+        "Net debt",
+        "145,934 (146,934 / 145,184)",
+        "141,734 (144,109 / 139,234)",
+        "133,034 (138,784 / 130,984)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does AT&T really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was $40,284 million in 2025. After capital spending of $21,221 million, free cash flow was $19,063 million. Deducting $536 million of stock compensation produces $18,527 million of “real free cash flow,” treating shares issued to employees as an economic cost to owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "40,284",
+        "38,771",
+        "38,314",
+        "35,812",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "21,221",
+        "20,643",
+        "20,795",
+        "29,826",
+        ""
+       ],
+       [
+        "**= Free cash flow**",
+        "19,063",
+        "18,128",
+        "17,519",
+        "5,986",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "536",
+        "505",
+        "479",
+        "518",
+        "447"
+       ],
+       [
+        "**= Real free cash flow**",
+        "18,527",
+        "17,623",
+        "17,040",
+        "5,468",
+        ""
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "16,586",
+        "15,345",
+        "13,835",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for AT&T today?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $22.86 on October 13, 2026, one share buys a small ownership interest in AT&T’s wireless and broadband operations. All its shares together are worth $156,645.54 million. Enterprise value, which includes the debt a buyer would inherit, is $283,029.54 million. At June 30, AT&T had $144.0 billion of debt and $17.6 billion of cash. Its net debt was therefore $126.4 billion, like a mortgage sitting above the owners’ stake."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "22.86"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "30.52 (+48%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "11.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "8.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 22.86,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "15.55 (-27%)",
+       "12.92 (-34%)",
+       "12.61 (-30%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "22.78 (+4%)",
+       "27.47 (+30%)",
+       "32.81 (+58%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "27.58 (+26%)",
+       "36.46 (+69%)",
+       "46.60 (+118%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "21.93 (+1%)",
+       "25.63 (+22%)",
+       "30.52 (+48%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/t/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=T&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "AT&T dividend: payout, coverage and yield",
+   "meta_description": "AT&T dividend: see the payout, cash coverage, plans and current yield against the share price.",
+   "opening": "AT&T paid $1.11 per share in annual common dividends, down from $2.08, and paid $8,180 million in dividends in 2025. In 2025, free cash flow reached $19.063 billion, covering dividends while buybacks reached $4.5 billion.",
+   "closing": "The full memo also examines AT&T’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does AT&T pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The WarnerMedia separation changed the dividend promise. AT&T reset its annual common dividend from $2.08 to $1.11 per share so the remaining communications business could fund fiber and wireless investment. Dividends paid fell from $15,068 million in 2021 to $8,180 million in 2025."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "2.66",
+        "2.52",
+        "2.41",
+        "0.84",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.14",
+        "1.14",
+        "1.12",
+        "1.38",
+        "2.01"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.71",
+        "1.16",
+        "1.12",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is lower because it subtracts vendor-financing payments and DIRECTV cash distributions but leaves out spectrum purchases, while our count treats these items differently."
+     }
+    },
+    {
+     "heading": "Does AT&T’s dividend come from cash it makes?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, free cash flow reached $19.063 billion, while buybacks reached $4.5 billion. A buyback retires shares, giving the remaining shares a larger claim on future earnings, but it does not by itself repay acquisition debt. AT&T’s latest plan puts approximately $18 billion of dividends and buybacks against its 2026 free-cash-flow outlook, leaving less room for acquisitions or debt reduction."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "19,063",
+        "18,128",
+        "17,519",
+        "5,986",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "8,180",
+        "8,208",
+        "8,136",
+        "9,859",
+        "15,068"
+       ],
+       [
+        "− Share buybacks",
+        "4,500",
+        "215",
+        "194",
+        "890",
+        "202"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "5,115",
+        "8,375",
+        "8,104",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "66.5%",
+        "46.5%",
+        "47.5%",
+        "179.6%",
+        ""
+       ]
+      ],
+      "note": "Our net debt is higher than the company's own figure in 2022 and 2021 because we include the DIRECTV note payable that the company leaves out."
+     }
+    },
+    {
+     "heading": "What could change AT&T’s dividend?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays at $1.11 per share in every scenario. That matches management’s annualized target through 2028 and the stable payout since 2022. A cut remains possible after the spectrum purchase, but the materials provide no announced increase or reduction."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is AT&T’s dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $22.86 on October 13, 2026, one share buys a small ownership interest in AT&T’s wireless and broadband operations. All its shares together are worth $156,645.54 million. Enterprise value, which includes the debt a buyer would inherit, is $283,029.54 million. At June 30, AT&T had $144.0 billion of debt and $17.6 billion of cash. Its net debt was therefore $126.4 billion, like a mortgage sitting above the owners’ stake."
+      },
+      {
+       "n": 206,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The 4.9% dividend yield is attractive, but dividends and buybacks together appear to use roughly the planned free cash flow. Debt reduction therefore depends on cash left after every claim."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "22.86"
+       ],
+       [
+        "Market value (calculated)",
+        "156,645.54"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.9%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it adds the company's debt and subtracts its cash to show what buying the whole business would cost."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.14"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "11.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "12.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.01",
+      "1.38",
+      "1.12",
+      "1.14",
+      "1.14"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "0.76",
+      "2.35",
+      "2.45",
+      "2.58"
+     ],
+     "Free cash flow per share": [
+      "",
+      "0.84",
+      "2.41",
+      "2.52",
+      "2.66"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/t/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=T&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AT&T earnings: date, guidance and what to watch",
+   "meta_description": "AT&T's October 21, 2026 results should show whether cash and debt follow guidance while new networks attract profitable customers.",
+   "opening": "AT&T's next results are expected on October 21, 2026. Watch whether AT&T's cash and debt follow the promised path while its new networks attract profitable customers.",
+   "closing": "The full memo also explains AT&T's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has AT&T guided for the year?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "AT&T’s starting point is service revenue: the monthly bills customers pay for mobile service and home internet, excluding equipment sales. Management expects that revenue to grow in the low single digits through 2028. Advanced Connectivity, which contains modern wireless and fiber services, should grow faster, while the old copper business shrinks. AT&T is therefore replacing one source of income with another."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Service revenue growth (2026–2028, annually)",
+        "2026–2028, annually",
+        "",
+        "",
+        "Jul 22, 2026"
+       ],
+       [
+        "Advanced Connectivity service revenue growth (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "5.0%",
+        "",
+        "Jul 22, 2026"
+       ],
+       [
+        "Adjusted EPS (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "2.25",
+        "2.35",
+        "Jul 22, 2026"
+       ],
+       [
+        "Capital investment (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "23,000",
+        "24,000",
+        "Jul 22, 2026"
+       ],
+       [
+        "Free cash flow (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "18,000",
+        "",
+        "Jul 22, 2026"
+       ]
+      ],
+      "note": "The company’s free cash flow is at least 18 billion dollars, but its capital investment includes vendor financing while free cash flow leaves out spectrum purchases, so the two figures cannot be compared directly."
+     }
+    },
+    {
+     "heading": "Has AT&T kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 119,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "AT&T also has evidence of keeping promises. It forecast at least $16 billion of 2025 free cash flow excluding DIRECTV and later reported $16.6 billion on that basis. New tax provisions improved cash generation, so the result cannot all be credited to stronger operations. Management also brought forward planned repurchases, which returns money faster but does not necessarily increase the total commitment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do AT&T's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter sequence includes unusually weak and strong quarters, so June cannot establish a trend by itself. Its customer and service measures support improvement; its tax benefit and depreciation change require separate treatment."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "31,558",
+        "31,506",
+        "33,466",
+        "30,709",
+        "30,847",
+        "30,626",
+        "32,298",
+        "30,213"
+       ],
+       [
+        "Gross margin",
+        "61.8%",
+        "60.1%",
+        "55.7%",
+        "61.5%",
+        "60.6%",
+        "60.7%",
+        "56.0%",
+        "61.5%"
+       ],
+       [
+        "Operating income",
+        "7,038",
+        "6,658",
+        "5,788",
+        "6,119",
+        "6,501",
+        "5,754",
+        "5,326",
+        "2,116"
+       ],
+       [
+        "Net income",
+        "4,655",
+        "3,867",
+        "3,788",
+        "9,314",
+        "4,500",
+        "4,351",
+        "4,080",
+        "-174"
+       ],
+       [
+        "EPS, diluted",
+        "0.66",
+        "0.54",
+        "0.53",
+        "1.29",
+        "0.62",
+        "0.61",
+        "0.56",
+        "-0.03"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,085",
+        "1,700",
+        "4,207",
+        "5,266",
+        "4,838",
+        "4,752",
+        "4,995",
+        "4,881"
+       ]
+      ],
+      "note": "The company's free cash flow guidance may differ from ours because it leaves out spectrum purchases, while our calculation includes them."
+     }
+    },
+    {
+     "heading": "What should I watch in AT&T's next results?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next checkpoint is the October 21, 2026 quarterly report. Its September balance sheet should show the effect of the EchoStar closing. Investors can then compare cash, borrowing, repurchases and investment with customer growth and service revenue. Discounted bundles may lower fiber ARPU, or average revenue per user, so the question is whether each household relationship lasts long enough to repay the discount."
+      },
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The network milestones also need interpretation. AT&T targets 40 million fiber locations and 70% of wireless traffic on open-capable platforms by year-end 2026. A location reached is not necessarily a subscriber, and open-capable equipment is not the same as a fully interchangeable network. Take-up matters: industry averages were 40% of homes passed, or 46.5% when measured against unique passings."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "31,558"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.66"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "30,213",
+      "32,298",
+      "30,626",
+      "30,847",
+      "30,709",
+      "33,466",
+      "31,506",
+      "31,558"
+     ],
+     "EPS, diluted": [
+      "-0.03",
+      "0.56",
+      "0.61",
+      "0.62",
+      "1.29",
+      "0.53",
+      "0.54",
+      "0.66"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/t/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=T&src=seo-earnings"
+  }
+ },
+ "short_name": "AT&T",
+ "first_memo_date": "2026-10-13T22:59:26Z"
+}

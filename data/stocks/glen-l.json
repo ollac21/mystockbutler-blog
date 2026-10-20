@@ -1,0 +1,578 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GLEN.L",
+ "slug": "glen-l",
+ "company": "Glencore plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "mining",
+ "country": "uk",
+ "memo_date": "2026-10-12T09:59:04Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 584.6,
+ "price_date": "2026-10-09T16:06:32Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 29,
+  "words": 16708,
+  "sources": 184
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Glencore is a mining, processing and trading company that supplies raw materials to industry. To understand its business, follow a dollar from a commodity in the ground or a producer’s warehouse to the customer, then through the costs that leave Glencore’s hands."
+ },
+ "sources": [
+  {
+   "title": "2026 half-year report",
+   "url": "https://www.glencore.com/.rest/api/v1/documents/static/98cf0f2a-ede7-4ced-9539-061198c3b6be/GLEN-2026-Half-Year-Report.pdf"
+  },
+  {
+   "title": "2025 half-year report, acquisition note",
+   "url": "https://www.glencore.com/.rest/api/v1/documents/static/07647168-ed29-49b5-a379-9a3c7eb87a55/GLEN-2025-Half-Year-Report.pdf"
+  },
+  {
+   "title": "Half-year report — 2026-07-29",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/c7473f29-069f-4f7a-b162-c2a67a0df8ca.html"
+  }
+ ],
+ "rivals": [
+  "RIO.L",
+  "AAL.L",
+  "FCX",
+  "SCCO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Glencore stock forecast",
+   "meta_description": "Glencore stock forecast with weighted scenarios, operating drivers, real free cash flow and today’s valuation in plain English.",
+   "opening": "The weighted forecast for Glencore points to 328.69p in October 2027, a -42% return. It hinges on normalised marketing earnings, copper delivery and debt reduction.",
+   "closing": "The full memo also answers how Glencore’s business works, who its rivals are, how management allocates capital, and what risks shape the case.",
+   "blocks": [
+    {
+     "heading": "Where could Glencore’s shares go?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to 328.69p in October 2027, a -42% return, and 483.36p in October 2029, a -13% return; it hinges on normalised marketing earnings, copper delivery and debt reduction. Management guides 2026 copper production to 810–870 thousand tonnes. It guides zinc to 700–740 thousand tonnes. Marketing adjusted EBIT should exceed $5 billion in 2026, with a 2027 reference range of $2.8–4.2 billion. Glencore targets about one million tonnes of annualised copper by end-2028 and 1.6 million tonnes by 2035."
+      },
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case has 30% probability. The base case has 50%. The bull case has 20%. The 29 October 2026 third-quarter production report will test copper delivery and EVR output after first-half weakness. Marketing adjusted EBIT within the 2027 range supports the base case; persistent strength supports the bull case. Collahuasi stockpile leaching, recovering copper from piled ore with liquid, is scheduled for 2028. MARA targets first production in H2 2031."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per GLEN.L share at each date; in brackets the return since today's 584.60, dividends included",
+      "caption": "What the shares could be worth (GBp per GLEN.L share at each date; in brackets the return since today's 584.60, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "121.43 (-79 %)",
+        "39.94 (-92 %)",
+        "59.07 (-89 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "336.30 (-41 %)",
+        "388.56 (-30 %)",
+        "477.76 (-13 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "620.57 (+8 %)",
+        "869.94 (+54 %)",
+        "1133.82 (+102 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "328.69 (-42 %)",
+        "380.25 (-32 %)",
+        "483.36 (-13 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Glencore—and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "H1 2026 EBITDA was about $10,100m, implying a $20,200m annualised run rate, but unusually strong marketing makes that an anchor rather than a full-year forecast. The historical range was $13,511m to $34,060m, while 2027 marketing guidance is $2.8bn–$4.2bn. The base therefore assumes normalization and gradual copper recovery; the bear adds weaker prices, volumes and costs; the bull requires sustained disruption and successful projects. Higher prices contributed about $3,800m to recent industrial growth, versus $200m from volume."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "16,500 (12,500 / 21,000)",
+        "17,000 (11,500 / 23,000)",
+        "18,000 (12,000 / 25,500)"
+       ],
+       [
+        "Shares (millions)",
+        "11,633 (11,699 / 11,567)",
+        "11,579 (11,705 / 11,426)",
+        "11,531 (11,712 / 11,300)"
+       ],
+       [
+        "Dividends per share",
+        "0.12 (0.05 / 0.17)",
+        "0.12 (0.03 / 0.20)",
+        "0.13 (0.02 / 0.22)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "5.50 (4.80 / 6.20)",
+        "5.70 (4.30 / 7.00)",
+        "6.00 (4.50 / 7.50)"
+       ],
+       [
+        "Net debt",
+        "39,030 (41,219 / 35,300)",
+        "37,419 (43,270 / 29,585)",
+        "35,168 (44,854 / 21,871)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Glencore really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending creates a second drain. Glencore’s operating cash was less than its property, plant and equipment purchases and lease payments. Free cash flow was therefore negative before the company’s separate stock-pay adjustment. Stock pay is not another bank payment; it is an allowance for the dilution caused when employees receive shares."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,642",
+        "10,055",
+        "11,036",
+        "13,659",
+        "8,860"
+       ],
+       [
+        "− Capital spending",
+        "5,932",
+        "5,611",
+        "4,484",
+        "4,177",
+        "3,618"
+       ],
+       [
+        "− Lease payments",
+        "911",
+        "844",
+        "616",
+        "577",
+        "634"
+       ],
+       [
+        "**= Free cash flow**",
+        "-1,201",
+        "3,600",
+        "5,936",
+        "8,905",
+        "4,608"
+       ],
+       [
+        "− Stock pay",
+        "219",
+        "149",
+        "328",
+        "150",
+        "189"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-1,420",
+        "3,451",
+        "5,608",
+        "8,755",
+        "4,419"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Glencore today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow is the harder test. Glencore’s negative free-cash-flow yield gives the price little current cash support, although working capital can distort one year: the company released $1.6 billion from non-readily-marketable working capital in 2025. That release cannot repeat indefinitely."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "584.6"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "483.36 (-13 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-1.3%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 7.728640562509586,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "121.43 (-79 %)",
+       "39.94 (-92 %)",
+       "59.07 (-89 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "336.30 (-41 %)",
+       "388.56 (-30 %)",
+       "477.76 (-13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "620.57 (+8 %)",
+       "869.94 (+54 %)",
+       "1133.82 (+102 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "328.69 (-42 %)",
+       "380.25 (-32 %)",
+       "483.36 (-13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/glen-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GLEN.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Glencore dividend",
+   "meta_description": "Glencore's forecast base dividend is $0.12 for the first two periods and $0.13 thereafter; 2025 free cash flow was negative while shareholders were paid.",
+   "opening": "Glencore's forecast base dividends are $0.12 for the first two periods and $0.13 thereafter. In 2025, free cash flow was negative while shareholders were still paid.",
+   "closing": "The full memo also covers Glencore's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Glencore pay per share?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends are $0.12 for the first two periods and $0.13 thereafter. The bear path cuts them from $0.05 to $0.02; the bull raises them from $0.17 to $0.22. The fixed-plus-variable policy supports the base, but cyclical cash flow and discretionary top-ups justify the spread."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "16,500 (12,500 / 21,000)",
+        "17,000 (11,500 / 23,000)",
+        "18,000 (12,000 / 25,500)"
+       ],
+       [
+        "Shares (millions)",
+        "11,633 (11,699 / 11,567)",
+        "11,579 (11,705 / 11,426)",
+        "11,531 (11,712 / 11,300)"
+       ],
+       [
+        "Dividends per share",
+        "0.12 (0.05 / 0.17)",
+        "0.12 (0.03 / 0.20)",
+        "0.13 (0.02 / 0.22)"
+       ],
+       [
+        "Net debt",
+        "39,030 (41,219 / 35,300)",
+        "37,419 (43,270 / 29,585)",
+        "35,168 (44,854 / 21,871)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Glencore's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 73,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The balance shifted in 2023, when dividends and buybacks exceeded that year’s free cash flow. A buyback uses cash to retire shares, increasing the remaining owners’ proportional claim, but its value depends on the price Glencore paid. Accumulated cash and earlier earnings can fund a payout, yet the year’s operations did not cover the year’s distribution."
+      },
+      {
+       "n": 74,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2024, acquisitions and continued investment were supported by new borrowing. In 2025, free cash flow was negative while shareholders were still paid. Cash nevertheless rose because borrowing, asset sales and working-capital movements can offset weak operating cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-1,201",
+        "3,600",
+        "5,936",
+        "8,905",
+        "4,608"
+       ],
+       [
+        "− Dividends paid",
+        "1,192",
+        "1,580",
+        "6,450",
+        "4,832",
+        "2,115"
+       ],
+       [
+        "− Share buybacks",
+        "1,992",
+        "230",
+        "3,672",
+        "2,503",
+        "746"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "1,706",
+        "",
+        "1,128",
+        "1,584"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "4,667",
+        "",
+        "4,194",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "50.3%",
+        "170.5%",
+        "82.4%",
+        "62.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Glencore's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The last-date range runs from bear 59.07 GBp to bull 1133.82 GBp. Today’s 584.60 GBp therefore sits above the weighted outcome but inside the very wide scenario range."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "GBp millions; per share in GBp",
+      "caption": "What an investor pays today (GBp millions; per share in GBp)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "584.6"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-1.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-1.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.10"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-1.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.16",
+      "0.37",
+      "0.51",
+      "0.13",
+      "0.10"
+     ],
+     "Real free cash flow per share": [
+      "0.33",
+      "0.67",
+      "0.45",
+      "0.28",
+      "-0.12"
+     ],
+     "Free cash flow per share": [
+      "0.35",
+      "0.68",
+      "0.47",
+      "0.29",
+      "-0.10"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/glen-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GLEN.L&src=seo-dividend"
+  }
+ },
+ "short_name": "Glencore",
+ "first_memo_date": "2026-10-12T09:59:04Z"
+}

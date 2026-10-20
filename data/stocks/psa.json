@@ -1,0 +1,796 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PSA",
+ "slug": "psa",
+ "company": "Public Storage",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "reit",
+ "country": "us",
+ "memo_date": "2026-10-18T12:11:25Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 298.31,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-26",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 30,
+  "words": 17833,
+  "sources": 187
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Public Storage sells the right to use space, not the things stored in it. A dollar comes in mainly as monthly rent, pays the costs of keeping that space ready, and then passes through the other costs of owning and operating a real-estate company."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026007696/psa-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393311/000139331125000034/psa-022425xex99_1.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026007684/psa-021226xex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "EXR",
+  "CUBE",
+  "BYG.L",
+  "SAFE.L",
+  "UHAL",
+  "SMA",
+  "SELF"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Public Storage stock forecast",
+   "meta_description": "Public Storage stock forecast: modest downside first, then a limited recovery, hinging on rents, occupancy, integration and development returns.",
+   "opening": "The weighted forecast is $291.02 (+10% total return) in October 2029. It hinges on better rents and occupancy, successful integration, and development returns.",
+   "closing": "The full memo also explains Public Storage’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Public Storage’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $275.57 (-4% total return) in October 2027 and $291.02 (+10% total return) in October 2029. Bear, base, and bull probabilities are 28%, 54%, and 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 298.31, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 298.31, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "231.21 (-18 %)",
+        "218.61 (-19 %)",
+        "210.68 (-18 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "284.20 (-1 %)",
+        "291.45 (+6 %)",
+        "297.98 (+12 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "318.66 (+11 %)",
+        "356.30 (+28 %)",
+        "395.13 (+45 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "275.57 (-4 %)",
+        "282.73 (+3 %)",
+        "291.02 (+10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Public Storage?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weak housing turnover and local competition to keep replacement rents below departing-tenant rents. Promotions rise, same-store NOI stays weak, and higher refinancing costs limit the acquired portfolios’ contribution. Investors then apply a lower multiple while the dividend remains covered but less flexible. The price falls to $231.21 at the first date and $210.68 at the last. Its probability is 28%, above the individual driver odds because operating weakness and integration risk can reinforce each other."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires stronger housing activity, moderating supply, effective rent growth without excessive move-outs, successful NSA integration, and faster development lease-up. The price reaches $318.66 initially and $395.13 finally. Its probability is 18% because the operating record is weak and the synergy target is not yet earned income."
+      }
+     ],
+     "table": {
+      "title": "How it earns, and what can hurt it",
+      "unit": "US$ thousands",
+      "caption": "How it earns, and what can hurt it (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net operating income",
+        "3,312,375",
+        "3,259,273",
+        "3,197,663",
+        "2,965,819",
+        "2,351,536"
+       ],
+       [
+        "Same-store NOI growth",
+        "-0.5%",
+        "-1.4%",
+        "4.9%",
+        "18.5%",
+        "15.6%"
+       ],
+       [
+        "Occupancy",
+        "89.0%",
+        "89.7%",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Net debt to EBITDAre",
+        "4.2x",
+        "3.9x",
+        "3.9x",
+        "3.4x",
+        "4.2x"
+       ]
+      ],
+      "note": "The debt ratio is a rough safety measure, not debt that must be repaid 4.2 times, because it also includes preferred shares and adjusted earnings."
+     }
+    },
+    {
+     "heading": "How much cash does Public Storage really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — AFFO and the payout",
+       "text": "PSA paid $2.11 billion in dividends in 2025. It spent $218.8 million on maintenance capital expenditures in 2025 and $310.7 million on development and expansion. Replacing roofs, gates and paving consumes cash even when an earnings measure adjusts for that spending, so the gap between Core FFO and dividends supports debt repayment, acquisitions, development or liquidity rather than guaranteeing surplus cash."
+      }
+     ],
+     "table": {
+      "title": "Core FFO and the payout",
+      "unit": "US$ thousands",
+      "caption": "Core FFO and the payout (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Core FFO",
+        "2,985,489",
+        "2,935,068",
+        "2,975,932",
+        "2,806,980",
+        "2,270,018"
+       ],
+       [
+        "AFFO per share (company's measure)",
+        "16.97",
+        "16.67",
+        "16.89",
+        "15.92",
+        "12.93"
+       ],
+       [
+        "Dividends paid",
+        "2,108,678",
+        "2,103,503",
+        "2,106,065",
+        "3,703,412",
+        "1,398,206"
+       ],
+       [
+        "AFFO payout ratio",
+        "70.7%",
+        "72.0%",
+        "71.0%",
+        "50.3%",
+        "61.9%"
+       ]
+      ],
+      "note": "The adjusted funds from operations payout ratio is actually calculated using regular dividends divided by core funds from operations, so its label does not match the numbers."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Public Storage today?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "The base multiple is 16.5x in every forecast year. The bear case compresses from 14.0x to 13.0x, while the bull case expands from 18.0x to 20.0x. Today’s price is about 17.6x trailing Core FFO, so the base case assumes confidence stabilizes without a growth premium."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "298.31"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "291.02 (+10 %)"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.0%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 298.31,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "231.21 (-18 %)",
+       "218.61 (-19 %)",
+       "210.68 (-18 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "284.20 (-1 %)",
+       "291.45 (+6 %)",
+       "297.98 (+12 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "318.66 (+11 %)",
+       "356.30 (+28 %)",
+       "395.13 (+45 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "275.57 (-4 %)",
+       "282.73 (+3 %)",
+       "291.02 (+10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/psa/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSA&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Public Storage dividend: cash, history and yield",
+   "meta_description": "See Public Storage dividend history, cash coverage, outlook and current yield against the share price.",
+   "opening": "Public Storage paid $12.00 per share in 2024 and 2025, and its dividend is covered by its Core FFO measure. The gap between Core FFO and dividends supports debt repayment, acquisitions, development or liquidity rather than guaranteeing surplus cash.",
+   "closing": "The full memo also explains Public Storage's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Public Storage pay in dividends over time?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Total NOI rose through 2025, but same-store NOI fell in both 2024 and 2025. Occupancy slipped in 2025, move-in contract rent remained below move-out rent, leverage rose, fixed-charge coverage edged down, and Core FFO per share recovered in 2025 to above 2023. The dividend stayed at $12.00 per share in 2024 and 2025, with coverage competing with upkeep and investment."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "FFO per share",
+        "15.81",
+        "17.19",
+        "16.60",
+        "16.46",
+        "13.36"
+       ],
+       [
+        "AFFO per share (company's measure)",
+        "16.97",
+        "16.67",
+        "16.89",
+        "15.92",
+        "12.93"
+       ],
+       [
+        "Dividend per share",
+        "12.00",
+        "12.00",
+        "12.00",
+        "8.00",
+        "8.00"
+       ],
+       [
+        "AFFO payout ratio",
+        "70.7%",
+        "72.0%",
+        "71.0%",
+        "50.3%",
+        "61.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Public Storage cover its dividend with operating cash?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — AFFO and the payout",
+       "text": "PSA paid $2.11 billion in dividends in 2025. It spent $218.8 million on maintenance capital expenditures in 2025 and $310.7 million on development and expansion. Replacing roofs, gates and paving consumes cash even when an earnings measure adjusts for that spending, so the gap between Core FFO and dividends supports debt repayment, acquisitions, development or liquidity rather than guaranteeing surplus cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: is the dividend paid from cash?",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: is the dividend paid from cash? (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,186,449",
+        "3,128,255",
+        "3,246,648",
+        "3,117,141",
+        "2,543,555"
+       ],
+       [
+        "− Dividends paid",
+        "2,108,678",
+        "2,103,503",
+        "2,106,065",
+        "3,703,412",
+        "1,398,206"
+       ],
+       [
+        "**= Operating cash after dividends**",
+        "1,077,771",
+        "1,024,752",
+        "1,140,583",
+        "",
+        "1,145,349"
+       ],
+       [
+        "− Acquisitions",
+        "961,898",
+        "267,473",
+        "2,651,327",
+        "757,944",
+        "5,047,106"
+       ],
+       [
+        "− Development and capital spending",
+        "600,115",
+        "746,878",
+        "825,582",
+        "773,284",
+        "552,219"
+       ],
+       [
+        "− Shares bought back",
+        "0",
+        "200,000",
+        "0",
+        "0",
+        "0"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Public Storage's dividend?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Capital structure, debt cost and dividend capacity",
+       "text": "A specialist therefore stress-tests the dividend against lower rent growth, higher property costs, maintenance needs and refinancing costs. The accounts support a dividend with room, but they do not show unlimited surplus cash. PSA’s central challenge is to turn improving occupancy and new-customer prices into durable same-store NOI before debt and capital demands take more of the cash flow."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays at $12.00 per share in the first year, then rises to $12.60 in the base case. Coverage supports restraint rather than aggressive growth: 2025 Core FFO per share was $16.97 against a $12.00 dividend. The bear case cuts the payout to $11.00 as financing pressure persists; the bull case reaches $13.23 through stronger AFFO growth."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "AFFO",
+        "3,268 (3,135 / 3,353)",
+        "3,354 (3,078 / 3,548)",
+        "3,439 (3,097 / 3,734)"
+       ],
+       [
+        "Shares (millions)",
+        "190 (190 / 189)",
+        "190 (190 / 189)",
+        "190 (191 / 189)"
+       ],
+       [
+        "Dividends per share",
+        "12.00 (12.00 / 12.00)",
+        "12.30 (11.00 / 12.60)",
+        "12.60 (11.00 / 13.23)"
+       ],
+       [
+        "Price to AFFO",
+        "16.50 (14.00 / 18.00)",
+        "16.50 (13.50 / 19.00)",
+        "16.50 (13.00 / 20.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Public Storage's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend supplies current income, while the share price also reflects hopes for better rents and property earnings. That yield was below the 10-year Treasury yield of 5.09% observed on October 16, 2026, so the stock’s appeal depends partly on growth and on the value investors place on owning property."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/psa/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSA&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Public Storage earnings date and guidance",
+   "meta_description": "Public Storage reports on October 26, 2026: see its guidance, recent results, and whether acquisitions offset weaker mature facilities.",
+   "opening": "Public Storage's next results are due on October 26, 2026. Watch whether new properties and acquisitions offset weaker mature facilities without raising financing costs.",
+   "closing": "The full Public Storage memo also answers questions about its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has Public Storage guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s guidance says mature properties may shrink even as Public Storage’s broader operating earnings rise."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Same Store: Revenue growth",
+        "Year to Dec 2026",
+        "-0.7%",
+        "0.3%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Same Store: Expense growth",
+        "Year to Dec 2026",
+        "2.0%",
+        "3.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Same Store: Net operating income growth",
+        "Year to Dec 2026",
+        "-2.0%",
+        "-0.3%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Non-Same Store net operating income",
+        "Year to Dec 2026",
+        "343,000",
+        "357,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "Core FFO per share",
+        "Year to Dec 2026",
+        "16.75",
+        "17.05",
+        "Jul 29, 2026"
+       ],
+       [
+        "Ancillary net operating income",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "The forecast for core funds from operations per share includes a small benefit from financing two acquisitions, even though those acquired properties are left out of the non-same-store income forecast."
+     }
+    },
+    {
+     "heading": "Has Public Storage kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "In 2025, the cash incentive weighted Core FFO growth at 60%; strategic management goals carried 30%, with the remainder tied to net asset value growth. Public Storage reported Core FFO growth of 1.8% and NAV growth of 2.2%, both in line with budget, so those components paid at target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Public Storage's last eight-quarter trend?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue increased from the comparable quarter, while NOI was nearly flat. FFO per share rose sharply, but Core FFO per share declined. The difference was largely currency: PSA recorded a $17.2 million foreign-currency gain in Q2 2026 after a $146.1 million loss in Q2 2025. That comparison says more about euro debt than about the stores."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,232,881",
+        "1,217,741",
+        "1,215,792",
+        "1,224,043",
+        "1,201,094",
+        "1,183,184",
+        "1,177,427",
+        "1,187,758"
+       ],
+       [
+        "Net operating income",
+        "832,127",
+        "822,446",
+        "832,218",
+        "844,372",
+        "833,941",
+        "801,844",
+        "821,727",
+        "822,680"
+       ],
+       [
+        "FFO per share",
+        "4.21",
+        "4.39",
+        "4.33",
+        "4.33",
+        "3.44",
+        "3.71",
+        "4.85",
+        "3.80"
+       ],
+       [
+        "Core FFO per share",
+        "4.17",
+        "4.22",
+        "4.26",
+        "4.31",
+        "4.28",
+        "4.12",
+        "4.21",
+        "4.20"
+       ],
+       [
+        "Dividend per share",
+        "3.00",
+        "3.00",
+        "3.00",
+        "3.00",
+        "3.00",
+        "3.00",
+        "3.00",
+        "3.00"
+       ],
+       [
+        "Occupancy",
+        "91.1%",
+        "89.9%",
+        "89.0%",
+        "",
+        "90.6%",
+        "89.6%",
+        "89.7%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Public Storage's next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The earnings release is scheduled for October 26, and the call for October 27. The central test is whether new properties and acquisitions are starting to offset weaker mature facilities without pushing borrowing and dilution beyond what future income can support."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 26, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,232,881"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,187,758",
+      "1,177,427",
+      "1,183,184",
+      "1,201,094",
+      "1,224,043",
+      "1,215,792",
+      "1,217,741",
+      "1,232,881"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/psa/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSA&src=seo-earnings"
+  }
+ },
+ "short_name": "Public Storage",
+ "first_memo_date": "2026-10-18T12:11:25Z"
+}

@@ -1,0 +1,820 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SU.TO",
+ "slug": "su-to",
+ "company": "Suncor Energy Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "oil_gas",
+ "country": "canada",
+ "memo_date": "2026-10-13T06:41:05Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 103.04,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 31,
+  "words": 17405,
+  "sources": 189
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Suncor is an integrated energy company: it produces crude oil, turns some of it into fuels, and sells both through wholesale channels and Petro-Canada. Its largest reported revenue stream is Refining and Marketing, at C$30,569 million in 2025, compared with C$19,298 million for Oil Sands."
+ },
+ "sources": [
+  {
+   "title": "2025 financial statements, note 12",
+   "url": "https://www.sec.gov/Archives/edgar/data/311337/000110465926020411/su-20251231xex99d2.htm"
+  },
+  {
+   "title": "2025 annual report, liquidity and debt notes",
+   "url": "https://www.sec.gov/Archives/edgar/data/311337/000110465926020462/su-20260226xex99d1.pdf"
+  },
+  {
+   "title": "Suncor Energy Inc. — 2026 Second Quarter Management’s Discussion and Analysis — August 4, 2026 — SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/311337/000110465926090542/su-20260804xex99d1.htm"
+  }
+ ],
+ "rivals": [
+  "XOM",
+  "CVX",
+  "OXY",
+  "PSX",
+  "MPC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Suncor stock forecast",
+   "meta_description": "Suncor's weighted forecast is C$59.17 in October 2027 and C$92.94 in October 2029, framed by bear, base and bull cases.",
+   "opening": "Suncor's weighted forecast is C$59.17 in October 2027 and C$92.94 in October 2029, with 35% probability to bear, 45% to base and 20% to bull. It hinges on production recovery, margins and whether cash generation can support capital spending and buybacks.",
+   "closing": "The full memo also explains Suncor's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Suncor's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is C$59.17 in October 2027, a 40% loss including dividends, and C$92.94 in October 2029, a 3% loss including dividends. The cases assign 35% probability to bear, 45% to base and 20% to bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 103.04, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 103.04, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "35 %",
+        "9.13 (-89 %)",
+        "19.40 (-77 %)",
+        "24.40 (-70 %)"
+       ],
+       [
+        "Base",
+        "45 %",
+        "67.89 (-32 %)",
+        "86.16 (-12 %)",
+        "95.07 (-0 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "127.09 (+26 %)",
+        "166.23 (+66 %)",
+        "208.08 (+110 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "59.17 (-40 %)",
+        "78.81 (-19 %)",
+        "92.94 (-3 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could make Suncor's forecast go right or wrong?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear row assumes weak prices, margins and operations, while the bull row requires production above the 2026 guide and strong refining economics at the same time. The forecast therefore places bear EBITDA at C$4,810M in 2027 and bull EBITDA at C$20,190M, with the table showing how those gaps widen."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case starts at C$67.89 and ends at C$95.07. Its 45% probability is highest because gradual recovery has more support than either prolonged disruption or simultaneous above-plan performance, but the rising base net debt leaves limited valuation cushion."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,664 (4,810 / 20,190)",
+        "16,127 (7,595 / 23,195)",
+        "16,936 (8,836 / 25,586)"
+       ],
+       [
+        "Shares (millions)",
+        "1,104 (1,121 / 1,079)",
+        "1,056 (1,096 / 1,014)",
+        "1,013 (1,073 / 959)"
+       ],
+       [
+        "Dividends per share",
+        "2.40 (2.40 / 2.52)",
+        "2.52 (1.92 / 2.76)",
+        "2.64 (1.92 / 3.00)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "6.00 (4.50 / 7.00)",
+        "6.20 (4.80 / 7.40)",
+        "6.30 (5.00 / 7.80)"
+       ],
+       [
+        "Net debt",
+        "7,062 (11,402 / 4,237)",
+        "9,003 (15,191 / 3,021)",
+        "10,356 (18,004 / 88.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Suncor really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Adjusted funds from operations removes non-cash working-capital timing. Free funds flow then subtracts capital spending, including capitalized interest. A stricter cash calculation also subtracts lease payments, because leases claim cash even when the company’s measure leaves them outside free funds flow."
+      },
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The 2023 acquisition-related tax benefit also lifted cash temporarily. The useful conclusion is not that one measure is false: company free funds flow shows management’s operating framework, while cash-based free cash flow shows more of the money left after current obligations."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "12,781",
+        "15,960",
+        "12,344",
+        "15,680",
+        "11,764"
+       ],
+       [
+        "− Capital spending",
+        "5,856",
+        "6,483",
+        "5,936",
+        "5,120",
+        "4,555"
+       ],
+       [
+        "− Lease payments",
+        "690",
+        "471",
+        "331",
+        "329",
+        "325"
+       ],
+       [
+        "**= Free cash flow**",
+        "6,235",
+        "9,006",
+        "6,077",
+        "10,231",
+        "6,884"
+       ],
+       [
+        "− Stock pay",
+        "8",
+        "-57",
+        "108",
+        "328",
+        "205"
+       ],
+       [
+        "**= Real free cash flow**",
+        "6,227",
+        "9,063",
+        "5,969",
+        "9,903",
+        "6,679"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "103.04"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "92.94 (-3 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.2%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 103.04,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "35 %",
+      "values": [
+       "9.13 (-89 %)",
+       "19.40 (-77 %)",
+       "24.40 (-70 %)"
+      ]
+     },
+     "Base": {
+      "probability": "45 %",
+      "values": [
+       "67.89 (-32 %)",
+       "86.16 (-12 %)",
+       "95.07 (-0 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "127.09 (+26 %)",
+       "166.23 (+66 %)",
+       "208.08 (+110 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "59.17 (-40 %)",
+       "78.81 (-19 %)",
+       "92.94 (-3 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/su-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SU.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Suncor dividend",
+   "meta_description": "Suncor pays a declared dividend, but shareholder payments use most of free cash flow; the full memo explains the outlook.",
+   "opening": "Suncor paid C$5,938 million in dividends and buybacks in 2025, or 95.2% of free cash flow. That left little free cash flow unspent, so coverage was tight.",
+   "closing": "Suncor's full memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Suncor pay per share?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend remains C$2.40 per share in 2027, then rises to C$2.52 in 2028 and C$2.64 in 2029. The path starts from the declared C$0.60 quarterly dividend and applies measured growth, while the bear case eventually cuts annual DPS to C$1.92 and the bull case raises it to C$3.00."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Funds flow per share",
+        "10.49",
+        "10.87",
+        "10.19",
+        "13.05",
+        "6.89"
+       ],
+       [
+        "Free cash flow per share",
+        "5.11",
+        "7.06",
+        "4.64",
+        "7.36",
+        "4.62"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.30",
+        "2.20",
+        "2.10",
+        "1.87",
+        "1.04"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.56",
+        "2.28",
+        "1.70",
+        "3.69",
+        "1.55"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.23",
+        "2.57",
+        "0.82",
+        "1.79",
+        "2.03"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Suncor's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, dividends and buybacks returned C$5,938 million, or 95.2% of free cash flow. A buyback reduces the number of shares, increasing each remaining share’s ownership fraction. But its value depends on the price paid and the cash the business later earns. Suncor also cut its quarterly dividend by 55% during the 2020 crisis, showing that distributions can be flexible."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "6,235",
+        "9,006",
+        "6,077",
+        "10,231",
+        "6,884"
+       ],
+       [
+        "− Dividends paid",
+        "2,809",
+        "2,803",
+        "2,749",
+        "2,596",
+        "1,550"
+       ],
+       [
+        "− Share buybacks",
+        "3,129",
+        "2,908",
+        "2,233",
+        "5,135",
+        "2,304"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "280",
+        "3,279",
+        "1,079",
+        "2,491",
+        "3,021"
+       ],
+       [
+        "Paid to shareholders",
+        "5,938",
+        "5,711",
+        "4,982",
+        "7,731",
+        "3,854"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "95.2%",
+        "63.4%",
+        "82.0%",
+        "75.6%",
+        "56.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Suncor's dividend?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case slows repurchases if cash weakens; the bull case sustains the full announced pace. That distinction matters because the pace is discretionary and the 2020 crisis showed that shareholder distributions can change."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,664 (4,810 / 20,190)",
+        "16,127 (7,595 / 23,195)",
+        "16,936 (8,836 / 25,586)"
+       ],
+       [
+        "Shares (millions)",
+        "1,104 (1,121 / 1,079)",
+        "1,056 (1,096 / 1,014)",
+        "1,013 (1,073 / 959)"
+       ],
+       [
+        "Dividends per share",
+        "2.40 (2.40 / 2.52)",
+        "2.52 (1.92 / 2.76)",
+        "2.64 (1.92 / 3.00)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "6.00 (4.50 / 7.00)",
+        "6.20 (4.80 / 7.40)",
+        "6.30 (5.00 / 7.80)"
+       ],
+       [
+        "Net debt",
+        "7,062 (11,402 / 4,237)",
+        "9,003 (15,191 / 3,021)",
+        "10,356 (18,004 / 88.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Suncor's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Equity value is what shareholders collectively own. Enterprise value is a rough measure of the operating business’s value to both shareholders and lenders, like a house’s value before subtracting its mortgage. On October 13, 2026, Suncor’s equity value was C$120,519 million and its enterprise value was C$125,000 million. The difference is a valuation snapshot, not a complete list of liabilities; Suncor reported about C$4.5 billion of net debt at June 30, 2026."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.30"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.04",
+      "1.87",
+      "2.10",
+      "2.20",
+      "2.30"
+     ],
+     "Real free cash flow per share": [
+      "4.49",
+      "7.12",
+      "4.56",
+      "7.10",
+      "5.10"
+     ],
+     "Free cash flow per share": [
+      "4.62",
+      "7.36",
+      "4.64",
+      "7.06",
+      "5.11"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/su-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SU.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Suncor earnings: guidance, results and what to watch",
+   "meta_description": "Suncor's next results are expected November 3, 2026; guidance covers production, refining throughput and capital spending, with maintenance the key test.",
+   "opening": "Suncor's next results are expected on November 3, 2026. Watch whether production recovery survives planned maintenance and delivers the 2026 range.",
+   "closing": "The full memo also answers how Suncor makes money, compares with its rivals, assesses its management and sets out its risks.",
+   "blocks": [
+    {
+     "heading": "What has Suncor guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Suncor’s immediate promise is to produce more oil, refine it reliably and stay within its 2026 spending plan. It guides total production of **840,000–870,000 barrels a day**, refinery throughput of **460,000–475,000 barrels a day**, and capital spending of **C$5,600–5,800 million**. Upstream means extracting crude; downstream means refining it into fuels. These are full-year averages, so one weak quarter does not break the guidance, but later quarters must make up the difference."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions unless otherwise stated",
+      "caption": "Guidance in force (C$ millions unless otherwise stated)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Total Production (bbl/d)",
+        "2026 full year",
+        "840,000",
+        "870,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Refinery Throughput (bbls/d)",
+        "2026 full year",
+        "460,000",
+        "475,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Capital Guidance – Total (C$ millions)",
+        "2026 full year",
+        "5,600",
+        "5,800",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Suncor kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 117,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also promised C$3.3 billion of additional normalized annual free funds flow and says it delivered the plan a year early. Free funds flow is cash left after operating costs and capital spending. “Normalized” means the comparison uses an assumed US$75 WTI oil price, helping separate better management from simply higher prices. The measure is useful, but it is company-defined."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Suncor's last eight quarters show about revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Suncor’s reported profit combines operating performance with substantial accounting effects. Its adjusted operating income and adjusted EPS both fell in 2025, while a gain from revaluing U.S.-dollar debt sharply improved one quarter without improving oil production."
+      },
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 improved mainly because prices and refining economics improved, not because production increased. Production fell to 760.9 thousand barrels a day, but the realised price rose to C$129.59 a barrel, more than offsetting fewer barrels."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "19,009",
+        "15,422",
+        "12,733",
+        "13,565",
+        "12,749",
+        "13,330",
+        "13,657",
+        "13,905"
+       ],
+       [
+        "Net income",
+        "3,732",
+        "2,100",
+        "1,476",
+        "1,619",
+        "1,134",
+        "1,689",
+        "818",
+        "2,020"
+       ],
+       [
+        "EPS, diluted",
+        "3.17",
+        "1.77",
+        "1.23",
+        "1.34",
+        "0.93",
+        "1.36",
+        "0.65",
+        "1.59"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Suncor watch in the next results?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next test is whether production recovery survives planned maintenance and delivers the 2026 range. September maintenance at Base Plant and a **55-day** Syncrude turnaround were already identified. The important evidence will be actual outage length and output against plan, not simply another profitable quarter."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "19,009"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.17"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "13,905",
+      "13,657",
+      "13,330",
+      "12,749",
+      "13,565",
+      "12,733",
+      "15,422",
+      "19,009"
+     ],
+     "EPS, diluted": [
+      "1.59",
+      "0.65",
+      "1.36",
+      "0.93",
+      "1.34",
+      "1.23",
+      "1.77",
+      "3.17"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/su-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SU.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Suncor",
+ "first_memo_date": "2026-10-13T06:41:05Z"
+}

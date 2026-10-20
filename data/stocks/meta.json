@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261008T225404Z-790f7b4d426e",
  "ticker": "META",
  "slug": "meta",
  "company": "Meta Platforms, Inc.",
@@ -63,27 +62,20 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Meta Platforms, Inc. stock forecast",
-   "meta_description": "Meta Platforms, Inc. stock forecast: the weighted price reaches $981.08 by October 2027 if sustained ad growth turns AI investment into returns.",
-   "opening": "The weighted forecast reaches $981.08 by October 2027, a 36% return including dividends. It hinges on whether sustained ad growth turns AI investment into returns.",
-   "closing": "The full memo also explains Meta Platforms, Inc.'s business, rivals, management and risks.",
+   "title": "Meta stock forecast",
+   "meta_description": "Meta stock forecast: the weighted path, scenario drivers, cash after stock pay and today’s valuation in plain English.",
+   "opening": "The weighted price reaches 981.08 in October 2027. Repeatable AI-driven conversion gains must translate into advertiser spending, stronger margins and cash after investment.",
+   "closing": "The full memo also explains Meta’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could Meta Platforms, Inc.'s shares go?",
+     "heading": "Where could Meta shares be by 2029?",
      "paragraphs": [
       {
-       "n": 8,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The weighted forecast reaches $981.08 by October 2027, a 36% return including dividends, if sustained ad growth turns AI investment into returns. By October 2029, the weighted price is $1,319.46. The range runs from $513.21 in the bear case to $2,571.04 in the bull case."
-      },
-      {
-       "n": 10,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The forecast gives the base case 55% probability and bear 25%. Bull has 20%. Repeatable AI-driven conversion gains must translate into advertiser spending, stronger margins and cash after investment; the full infrastructure return remains unresolved. Meta’s next results, expected October 28, 2026, should show what remained after legal expense and infrastructure spending. Through 2027–29, capacity utilization, free cash flow and Reality Labs losses will determine whether the forecast moves toward bear or bull. Meta’s upside depends on AI improving the ad engine faster than infrastructure spending and Reality Labs losses consume its cash gains."
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price reaches 981.08 in October 2027, a 36% return including dividends. It reaches 1144.01 in October 2028, a 59% return. By October 2029, it reaches 1319.46, an 84% return."
       }
      ],
      "table": {
@@ -131,7 +123,7 @@
      }
     },
     {
-     "heading": "What could make Meta Platforms, Inc. stock rise or fall?",
+     "heading": "What has to go right for Meta, and what could go wrong?",
      "paragraphs": [
       {
        "n": 246,
@@ -139,6 +131,13 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
        "text": "Revenue is the main engine. The base case uses growth of 23% in FY2026 and 18% in FY2027, then 16% and 14% as the base becomes larger. The bear path falls from 20% to 6%, while the bull path stays above base from 26% to 20%. First-half revenue was $117,111 million, September guidance was $61–64 billion, and Q2 impressions and average ad prices rose 14% and 12%."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Margins initially absorb the buildout. Base EBITDA margin rises from 44.5% to 48%; bear falls from 43% to 39%; bull rises from 46% to 54%. The starting gap reflects legal costs and infrastructure spending, while the later spread depends on capacity utilization."
       }
      ],
      "table": {
@@ -193,7 +192,7 @@
      }
     },
     {
-     "heading": "How much cash does Meta Platforms, Inc. really make?",
+     "heading": "How much cash does Meta really make?",
      "paragraphs": [
       {
        "n": 144,
@@ -269,7 +268,7 @@
      }
     },
     {
-     "heading": "What does an investor pay for Meta Platforms, Inc. stock?",
+     "heading": "What does an investor pay today for Meta?",
      "paragraphs": [
       {
        "n": 174,
@@ -348,13 +347,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Meta Platforms, Inc. dividend: payment and cash coverage",
-   "meta_description": "Meta Platforms, Inc. pays a dividend, and its cash coverage depends on infrastructure spending, stock-based pay and future AI returns.",
-   "opening": "Meta Platforms, Inc. pays $2.10 per share, supported by four quarterly declarations of $0.525. Its cash flow covers the dividend, but infrastructure spending and stock-based pay reduce the cash left for buybacks and other shareholder returns.",
-   "closing": "The full memo also explains Meta Platforms, Inc.’s business, rivals, management decisions and risks.",
+   "title": "Meta dividend: payments, cash coverage and yield",
+   "meta_description": "Meta pays $2.10 per share; its cash flow is measured after investment and stock pay, with a 0.3% dividend yield at $720.89.",
+   "opening": "Meta pays $2.10 per share, supported by four quarterly declarations of $0.525. Coverage is assessed from free cash flow after capital spending and stock-based pay, with dividends and buybacks shown against cash available to shareholders.",
+   "closing": "The full memo also answers how Meta makes money, how it compares with rivals, how management allocates capital, and what risks could change the outlook.",
    "blocks": [
     {
-     "heading": "How much does Meta Platforms, Inc. pay shareholders per share?",
+     "heading": "How much does Meta pay in dividends?",
      "paragraphs": [
       {
        "n": 250,
@@ -378,20 +377,20 @@
       ],
       "rows": [
        [
-        "EPS, diluted",
-        "23.49",
-        "23.86",
-        "14.87",
-        "8.59",
-        "13.77"
-       ],
-       [
         "Free cash flow per share (calculated)",
         "16.93",
         "19.93",
         "16.36",
         "6.82",
         "13.44"
+       ],
+       [
+        "Free cash flow after stock pay, per share (calculated)",
+        "9.00",
+        "13.55",
+        "11.02",
+        "2.39",
+        "10.24"
        ],
        [
         "Buybacks per share (calculated)",
@@ -422,7 +421,7 @@
      }
     },
     {
-     "heading": "Does Meta Platforms, Inc.'s cash cover its dividend?",
+     "heading": "Does Meta's cash cover its dividend?",
      "paragraphs": [
       {
        "n": 143,
@@ -489,14 +488,14 @@
      }
     },
     {
-     "heading": "What could change Meta Platforms, Inc.'s dividend?",
+     "heading": "What could change Meta's dividend?",
      "paragraphs": [
       {
-       "n": 169,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.6 — AI’s effect on ad results and costs",
-       "text": "The cost side is much less settled. Meta’s 2026 capital-spending outlook was $130–145 billion, including finance-lease principal. Data centers also require electricity, cooling, staff and replacement equipment after construction."
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case by October 2027 if advertising demand, measurement or average pricing weakened. Through 2029, slower infrastructure utilization, persistent Reality Labs losses and falling free cash flow would reinforce that move."
       }
      ],
      "table": {
@@ -551,7 +550,7 @@
      }
     },
     {
-     "heading": "What is Meta Platforms, Inc.'s dividend yield today?",
+     "heading": "What is Meta's dividend yield today?",
      "paragraphs": [
       {
        "n": 7,
@@ -600,20 +599,27 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Meta Platforms, Inc. earnings date and guidance",
-   "meta_description": "Meta Platforms, Inc. reports October 21, 2026; see current guidance, recent results and whether AI spending is producing cash.",
-   "opening": "Meta Platforms, Inc.'s next results are expected on October 21, 2026. Watch whether AI-driven advertising gains translate into cash after infrastructure spending.",
-   "closing": "The full memo also explains Meta Platforms, Inc.'s business, its rivals, its management and its risks.",
+   "title": "Meta earnings: results and guidance",
+   "meta_description": "Meta’s October 21, 2026 results will test $61–64 billion of revenue, $130–145 billion of capital spending, and cash after infrastructure spending.",
+   "opening": "Meta’s next results are expected on October 21, 2026. Watch whether infrastructure spending leaves meaningful free cash flow.",
+   "closing": "The full memo also explains Meta’s business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "What has Meta Platforms, Inc. guided for the quarter?",
+     "heading": "What has Meta guided for the quarter ending September 2026?",
      "paragraphs": [
       {
-       "n": 9,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "For the quarter to September 2026, Meta guides to revenue of $61–64 billion, including a negative 1% currency effect. It guides to $130–145 billion of 2026 capital spending and $165–169 billion of total expenses. It expects about $10 billion of legal expense in that quarter, in addition to its earlier expense forecast."
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the quarter ending September 2026, management forecast revenue of $61–64 billion and assumed a negative 1% currency effect. That means overseas sales will translate into fewer U.S. dollars; it does not mean advertisers are spending less. The basic test is whether advertising demand can keep growing as infrastructure costs rise."
+      },
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Meta has raised its capital-expenditure forecast twice. The 2026 range began at $115–135 billion, rose to $125–145 billion, and now stands at $130–145 billion. Capital expenditure buys long-lived assets such as servers and data centers, and includes principal repayments on finance leases."
       }
      ],
      "table": {
@@ -675,7 +681,7 @@
      }
     },
     {
-     "heading": "Has Meta Platforms, Inc. kept its past promises?",
+     "heading": "Has Meta kept its operating promise?",
      "paragraphs": [
       {
        "n": 118,
@@ -688,21 +694,14 @@
      "table": null
     },
     {
-     "heading": "What were Meta Platforms, Inc.'s last eight quarters?",
+     "heading": "What has Meta’s revenue and profit trend been over the last eight quarters?",
      "paragraphs": [
       {
-       "n": 158,
+       "n": 159,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "Revenue rose sharply year over year. Ad impressions increased 14% and average price per ad increased 12%, so both volume and pricing continued to support the advertising business. The slower volume growth matters because it may show the limits of simply placing more ads."
-      },
-      {
-       "n": 161,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.5 — The latest quarter",
-       "text": "Cash makes the investment step-up clearer. Operating cash reached $31,862 million, while capital spending reached $30,116 million. That left only $1,746 million before finance-lease principal, and Meta’s reported free cash flow was $784 million."
+       "text": "Profit deteriorated more than gross margin. Operating margin fell because compensation, infrastructure, legal expenses and third-party AI costs increased. Family of Apps operating profit fell to $23,394 million, while Reality Labs lost $4,619 million. The pressure therefore reached the core apps and did not come only from experimental hardware."
       }
      ],
      "table": {
@@ -775,31 +774,20 @@
         "6.43",
         "8.02",
         "6.03"
-       ],
-       [
-        "Cash from operations",
-        "31,862",
-        "32,226",
-        "36,214",
-        "29,999",
-        "25,561",
-        "24,026",
-        "27,988",
-        "24,724"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What should investors watch in Meta Platforms, Inc.'s next results?",
+     "heading": "What should I watch in Meta’s next results?",
      "paragraphs": [
       {
-       "n": 162,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.5 — The latest quarter",
-       "text": "The announced approximately $10 billion youth-safety accrual will further affect the following quarter, but it was not part of the June result. A specialist watches margins after identifiable charges and cash left after infrastructure payments, alongside advertising volume and price."
+       "n": 227,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results, expected on October 28, 2026, should show whether revenue reached guidance, how the legal charge affected profit, and whether infrastructure spending left meaningful free cash flow. Another sales beat would not settle the funding question if little cash remained afterward."
       }
      ],
      "table": null
@@ -860,5 +848,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=META&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Meta",
+ "first_memo_date": "2026-10-09T23:57:05Z"
 }

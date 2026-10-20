@@ -1,0 +1,853 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "A",
+ "slug": "a",
+ "company": "Agilent Technologies, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T20:08:30Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 172.97,
+ "price_date": "2026-10-16T20:01:50Z",
+ "next_earnings": "2026-11-23",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 244,
+  "tables": 27,
+  "words": 16709,
+  "sources": 189
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Agilent Technologies sells the tools, supplies, software, services, and manufacturing work that laboratories use to understand materials and biology. Its business makes money first from helping customers perform tests, then from supporting the instruments and workflows that keep those tests running."
+ },
+ "sources": [
+  {
+   "title": "Agilent FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090872/000109087225000087/a-20251031.htm"
+  },
+  {
+   "title": "Agilent FY2023 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090872/000109087224000036/a-20240903.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090872/000109087225000070/exhibit991-q425pressrelease.htm"
+  }
+ ],
+ "rivals": [
+  "TMO",
+  "WAT",
+  "DHR",
+  "BRKR",
+  "RVTY",
+  "MTD",
+  "BIO",
+  "QGEN",
+  "ILMN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Agilent Technologies stock forecast",
+   "meta_description": "Agilent Technologies stock forecast: weighted scenarios point lower by October 2029, hinging on earnings, margins, and Frederick.",
+   "opening": "The weighted price is $127.18 in October 2029, still a 25% loss including dividends. It hinges on Frederick qualifying quickly and converting bookings into repeat production.",
+   "closing": "The full memo also explains Agilent Technologies’ business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Agilent Technologies's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $125.60 in October 2028, a 26% loss including dividends. By October 2029, it reaches $127.18, still a 25% loss."
+      },
+      {
+       "n": 224,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 outcomes range from $79.85 in the bear case to $206.82 in the bull case. The bear case receives 30% probability. The base case receives 50%. The bull case receives 20%, because it requires both stronger earnings and a higher valuation."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 172.97, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 172.97, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "102.39 (-40 %)",
+        "87.84 (-48 %)",
+        "79.85 (-52 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "127.65 (-26 %)",
+        "126.27 (-26 %)",
+        "123.73 (-27 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "156.39 (-9 %)",
+        "180.58 (+6 %)",
+        "206.82 (+22 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "125.82 (-27 %)",
+        "125.60 (-26 %)",
+        "127.18 (-25 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—and wrong—for Agilent Technologies?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case uses 2% growth and margins settling at 17.7%, because weak instrument budgets, China softness and delayed Frederick utilization could offset CrossLab resilience. The bull case uses faster growth and margins reaching 21.0%, because replacement demand, newer LC systems and successful Frederick production could improve mix. Temporary tariff refunds and unusual tax benefits are excluded."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Agilent Technologies really make?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based compensation creates a second adjustment. The company adds it back in operating cash flow because no cash leaves immediately, but shareholders still bear the cost through dilution. Subtracting stock pay therefore produces a stricter view of cash available for dividends, debt repayment, acquisitions, or buybacks."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,559",
+        "1,751",
+        "1,772",
+        "1,312",
+        "1,485"
+       ],
+       [
+        "− Capital spending",
+        "407",
+        "378",
+        "298",
+        "291",
+        "188"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,152",
+        "1,373",
+        "1,474",
+        "1,021",
+        "1,297"
+       ],
+       [
+        "− Stock pay",
+        "128",
+        "129",
+        "111",
+        "125",
+        "110"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,024",
+        "1,244",
+        "1,363",
+        "896",
+        "1,187"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "14.7%",
+        "19.1%",
+        "19.9%",
+        "13.1%",
+        "18.8%"
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but we subtract it because giving employees shares reduces the part of the company that belongs to shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Agilent Technologies stock today?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Trailing P/E uses earnings already produced, while forward P/E uses expected earnings. If a $100 share earned $5 per share, its trailing P/E would be 20. If it is expected to earn $6, the forward multiple falls even though the share price has not changed. The lower multiple therefore assumes the forecast arrives."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "172.97"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "34.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings ratio uses analysts' expected profit, so it is an estimate rather than a result already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "172.97"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "127.18 (-25 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 172.97,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "102.39 (-40 %)",
+       "87.84 (-48 %)",
+       "79.85 (-52 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "127.65 (-26 %)",
+       "126.27 (-26 %)",
+       "123.73 (-27 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "156.39 (-9 %)",
+       "180.58 (+6 %)",
+       "206.82 (+22 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "125.82 (-27 %)",
+       "125.60 (-26 %)",
+       "127.18 (-25 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/a/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=A&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Agilent Technologies dividend",
+   "meta_description": "Agilent Technologies pays a growing dividend, generally supported by free cash flow while acquisitions, debt, and expansion compete for cash.",
+   "opening": "Agilent Technologies' latest declared dividend annualizes to $1.02, up from $0.78 in FY2021 to $0.99 in FY2025. Agilent Technologies has generally generated enough free cash flow to fund dividends, although shareholder payments exceeded free cash flow in two of the five years shown.",
+   "closing": "The full memo also examines Agilent Technologies' business, rivals, management decisions, risks, and possible outcomes.",
+   "blocks": [
+    {
+     "heading": "How much does Agilent Technologies pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The latest declared dividend annualizes to $1.02. The base case raises it gradually to $1.17 by October 2029, consistent with annual increases from $0.78 in FY2021 to $0.99 in FY2025 but slower recent growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count change",
+      "caption": "What one share gets (US$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "4.04",
+        "4.72",
+        "4.98",
+        "3.40",
+        "4.22"
+       ],
+       [
+        "− Paid to minority owners, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.99",
+        "0.94",
+        "0.90",
+        "0.83",
+        "0.77"
+       ]
+      ],
+      "note": "Real free cash flow per share is lower because it subtracts the value of shares given to employees as pay, treating that pay as a real cost to shareholders."
+     }
+    },
+    {
+     "heading": "Is Agilent Technologies' dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 77,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Agilent has generally generated enough free cash flow to fund investment, acquisitions, dividends, and buybacks, but shareholder payments exceeded that year’s free cash flow in two of the five years shown."
+      },
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends rose steadily from $236 million in October 2021 to $282 million in October 2025, while buybacks moved more sharply. In fiscal 2024, operations generated $1.751 billion and property-and-equipment spending was $378 million. That left $1.373 billion of free cash flow. Agilent paid $274 million in dividends and repurchased $1.150 billion of stock, so distributions exceeded that year’s free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,152",
+        "1,373",
+        "1,474",
+        "1,021",
+        "1,297"
+       ],
+       [
+        "− Dividends paid",
+        "282",
+        "274",
+        "265",
+        "250",
+        "236"
+       ],
+       [
+        "− Share buybacks",
+        "425",
+        "1,150",
+        "575",
+        "1,139",
+        "788"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "445",
+        "",
+        "634",
+        "",
+        "273"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "61.4%",
+        "103.7%",
+        "57.0%",
+        "136.0%",
+        "79.0%"
+       ]
+      ],
+      "note": "In October 2021, our net debt is lower than the company's number because we also subtract short-term investments from what it owes, while the company subtracts only cash."
+     }
+    },
+    {
+     "heading": "What could change Agilent Technologies' dividend?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case freezes the dividend at $1.02 because the board must approve future payments and cash also funds acquisitions, debt and Frederick. The bull case reaches $1.27 as stronger cash generation supports faster increases. Forecast operating cash flow of $1.6–$1.7 billion against $450 million of capital spending supports the base and bull cases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,496 (1,377 / 1,565)",
+        "1,612 (1,381 / 1,735)",
+        "1,736 (1,416 / 1,911)"
+       ],
+       [
+        "Shares (millions)",
+        "281 (282 / 280)",
+        "281 (283 / 279)",
+        "281 (284 / 277)"
+       ],
+       [
+        "Dividends per share",
+        "1.06 (1.02 / 1.08)",
+        "1.11 (1.02 / 1.17)",
+        "1.17 (1.02 / 1.27)"
+       ],
+       [
+        "Price to earnings",
+        "24.00 (21.00 / 28.00)",
+        "22.00 (18.00 / 29.00)",
+        "20.00 (16.00 / 30.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Agilent Technologies' dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow yield measures cash left after operating the business and buying necessary equipment, relative to market value. A low yield and a small dividend yield mean investors are paying mainly for future earnings and cash growth. The table’s “real” free cash flow yield is an adjustment, not a universal accounting measure, so its method must be understood before relying on it."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Oct 2025",
+     "value": "0.99"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count change",
+    "columns": [
+     "Oct 2021",
+     "Oct 2022",
+     "Oct 2023",
+     "Oct 2024",
+     "Oct 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.77",
+      "0.83",
+      "0.90",
+      "0.94",
+      "0.99"
+     ],
+     "Real free cash flow per share": [
+      "3.87",
+      "2.99",
+      "4.60",
+      "4.27",
+      "3.59"
+     ],
+     "Free cash flow per share": [
+      "4.22",
+      "3.40",
+      "4.98",
+      "4.72",
+      "4.04"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/a/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=A&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Agilent Technologies earnings",
+   "meta_description": "Agilent Technologies reports next on November 23, 2026; watch underlying growth, margins, and EPS without tariff-refund help.",
+   "opening": "The next Agilent Technologies results are expected on November 23, 2026. The key thing to watch is whether Agilent Technologies can sustain underlying revenue, margins, and EPS without tariff-refund help.",
+   "closing": "The full Agilent Technologies memo also answers how Agilent Technologies makes money, who its rivals are, how management is run, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has Agilent Technologies guided for fiscal 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The verdict is that Agilent’s price could fall if its recovery does not become durable earnings growth and margin improvement. Management guides to FY2026 revenue of $7,490–$7,510 million and core revenue growth of 5.8%–6.0%. Non-GAAP EPS guidance is $6.18–$6.21, including tariff refunds; excluding the net tariff-refund benefit, it is $6.12–$6.15."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Fiscal year 2026 revenue",
+        "Year to Oct 2026",
+        "7,490",
+        "7,510",
+        "Aug 26, 2026"
+       ],
+       [
+        "Fiscal year 2026 reported revenue growth (%)",
+        "Year to Oct 2026",
+        "7.8%",
+        "8.1%",
+        "Aug 26, 2026"
+       ],
+       [
+        "Fiscal year 2026 core revenue growth (%)",
+        "Year to Oct 2026",
+        "5.8%",
+        "6.0%",
+        "Aug 26, 2026"
+       ],
+       [
+        "Fiscal year 2026 non-GAAP EPS",
+        "Year to Oct 2026",
+        "6.18",
+        "6.21",
+        "Aug 26, 2026"
+       ],
+       [
+        "Fourth-quarter 2026 revenue",
+        "Quarter to Oct 2026",
+        "1,980",
+        "2,000",
+        "Aug 26, 2026"
+       ],
+       [
+        "Fourth-quarter 2026 non-GAAP EPS",
+        "Quarter to Oct 2026",
+        "1.71",
+        "1.74",
+        "Aug 26, 2026"
+       ]
+      ],
+      "note": "The earnings per share forecast includes a six-cent benefit from tariff refunds, so it is slightly higher than the forecast excluding those refunds."
+     }
+    },
+    {
+     "heading": "Has Agilent Technologies kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Agilent links much executive pay to performance, but the results show that some goals were met more fully than others."
+      },
+      {
+       "n": 113,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "For fiscal 2024 and 2025, 60% of long-term incentive grant value came through performance stock units. Half depended on relative total shareholder return, or TSR, which compares Agilent’s share performance with a peer group. The other half depended on adjusted earnings per share, a company-defined profit measure per share. In the FY2023–25 award period, the TSR portion paid 118% of target, while the adjusted-EPS portion paid 64%. Shareholder returns therefore beat the target, while earnings performance fell short."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does Agilent Technologies' last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The right reading is “stronger, but not yet proven.” The next test is whether sales, margins, and cash conversion hold after the refund disappears. The last eight quarters show whether the latest result fits a trend."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,878",
+        "1,835",
+        "1,798",
+        "1,861",
+        "1,738",
+        "1,668",
+        "1,681",
+        "1,701"
+       ],
+       [
+        "Gross margin",
+        "55.5%",
+        "54.0%",
+        "52.6%",
+        "53.2%",
+        "51.1%",
+        "51.9%",
+        "53.5%",
+        "53.9%"
+       ],
+       [
+        "Operating income",
+        "444",
+        "399",
+        "353",
+        "443",
+        "360",
+        "300",
+        "376",
+        "408"
+       ],
+       [
+        "Net income",
+        "362",
+        "339",
+        "305",
+        "434",
+        "336",
+        "215",
+        "318",
+        "351"
+       ],
+       [
+        "EPS, diluted",
+        "1.28",
+        "1.20",
+        "1.07",
+        "1.53",
+        "1.18",
+        "0.75",
+        "1.11",
+        "1.22"
+       ],
+       [
+        "**= Free cash flow**",
+        "439",
+        "201",
+        "175",
+        "452",
+        "259",
+        "107",
+        "334",
+        "388"
+       ]
+      ],
+      "note": "The diluted earnings per share number assumes that possible new shares are created, so it spreads the company's profit over more shares."
+     }
+    },
+    {
+     "heading": "What should you watch in Agilent Technologies' next results?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next report must show whether Agilent’s growth, margins, and EPS are improving without tariff-refund help."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 23, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "1,878"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "1.28"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,701",
+      "1,681",
+      "1,668",
+      "1,738",
+      "1,861",
+      "1,798",
+      "1,835",
+      "1,878"
+     ],
+     "EPS, diluted": [
+      "1.22",
+      "1.11",
+      "0.75",
+      "1.18",
+      "1.53",
+      "1.07",
+      "1.20",
+      "1.28"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/a/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=A&src=seo-earnings"
+  }
+ },
+ "short_name": "Agilent Technologies",
+ "first_memo_date": "2026-10-18T20:08:30Z"
+}

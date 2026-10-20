@@ -1,0 +1,761 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MFC.TO",
+ "slug": "mfc-to",
+ "company": "Manulife Financial Corporation",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "insurer",
+ "country": "canada",
+ "memo_date": "2026-10-13T18:59:16Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 61.59,
+ "price_date": "2026-10-13T16:55:14Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 27,
+  "words": 16163,
+  "sources": 199
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Manulife Financial sells financial protection and manages savings for households, employers and institutions. A dollar enters through a premium, deposit, investment fee or loan payment, and leaves through claims, benefits, operating costs, funding costs or investment losses."
+ },
+ "sources": [
+  {
+   "title": "Manulife Bank 2025 financial performance",
+   "url": "https://www.manulifebank.ca/documents/personal-banking/other/financial-performance-regulatory-disclosures-q4-2025.pdf"
+  },
+  {
+   "title": "Manulife circular",
+   "url": "https://www.manulife.com/content/dam/manulife-com/ca/financial-documents/investors/MFC_PC_2026_Y1_EN.pdf"
+  },
+  {
+   "title": "Closing announcement",
+   "url": "https://www.manulife.com/ca/en/about-us/news/manulife-closes-long-term-care-reinsurance-transaction-with-munich-re"
+  }
+ ],
+ "rivals": [
+  "AIG",
+  "RGA",
+  "SLF.TO",
+  "GWO.TO",
+  "PRU",
+  "MET",
+  "AFL",
+  "PFG",
+  "UNM"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Manulife stock forecast",
+   "meta_description": "Manulife stock forecast with weighted scenarios, insurance and wealth drivers, shareholder cash, and valuation.",
+   "opening": "Manulife’s weighted price reaches C$66.08 in October 2029. It hinges on claims, Asian margins, wealth outflows and remittances.",
+   "closing": "The full Manulife memo also explains its business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Manulife's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the weighted price reaches C$66.08, an 18% total return. The bear-to-bull range then runs from C$41.26 to C$96.02. The reference price today is C$61.59."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The base case receives the greatest weight because Manulife is still accumulating equity and shrinking its share count, but its latest core ROE remains below target. The bear case receives 25%, the base 55% and the bull 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 61.59, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 61.59, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "49.94 (-16%)",
+        "45.16 (-20%)",
+        "41.26 (-24%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "62.83 (+5%)",
+        "64.60 (+12%)",
+        "66.47 (+19%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "71.96 (+20%)",
+        "83.17 (+42%)",
+        "96.02 (+68%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "61.43 (+3%)",
+        "63.46 (+10%)",
+        "66.08 (+18%)"
+       ]
+      ],
+      "note": "The weighted row is the average possible share value after giving each case more or less importance based on its probability."
+     }
+    },
+    {
+     "heading": "What has to go right for Manulife, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires worsening Canadian and U.S. claims, weaker Asian margins and persistent wealth outflows. Negative wealth net flows were C$14.3B in 2025, while Q2 core ROE was below target. Lower remittances then restrict buybacks, and weaker earnings confidence compresses the multiple. The share price reaches C$49.94 in 2027 and C$41.26 in 2029. Its 25% probability reflects credible risks, but also the unusually large assumed equity shock."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Manulife really make and give back?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.6 — Measures that do not apply or mislead",
+       "text": "Free cash flow creates a similar trap. A manufacturer can often treat cash left after production spending as operating cash, but Manulife must invest premiums against claims and benefits that may arise decades later. Cash received today may already be committed to policyholders, so free-cash-flow yield can overstate what belongs to shareholders."
+      }
+     ],
+     "table": {
+      "title": "Capital and book value",
+      "unit": "C$ millions",
+      "caption": "Capital and book value (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Regulatory capital ratio",
+        "136.0%",
+        "137.0%",
+        "137.0%",
+        "131.0%",
+        "142.0%"
+       ],
+       [
+        "Book value per share",
+        "25.91",
+        "25.63",
+        "22.36",
+        "21.56",
+        "20.06"
+       ],
+       [
+        "Shareholders' equity",
+        "50,121",
+        "50,972",
+        "47,039",
+        "46,876",
+        "45,355"
+       ],
+       [
+        "Contractual service margin",
+        "26,568",
+        "23,425",
+        "21,301",
+        "17,977",
+        ""
+       ]
+      ],
+      "note": "The capital ratio is for Manulife's main insurance subsidiary, while the other figures include the bank, so they are not directly comparable."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Manulife today?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At C$61.59, Manulife’s share price assumes that its stronger earning power will last. Investors pay 16.6x trailing reported earnings, or 13.9x core earnings, which exclude specified market effects and other items. Core earnings better show recurring performance, but excluded losses still matter economically."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "61.59"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.6x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "13.9x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.2x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.1%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts' expected profit, so it is based on a forecast rather than money the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "61.59"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "66.08 (+18%)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "16.6x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 61.59,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "49.94 (-16%)",
+       "45.16 (-20%)",
+       "41.26 (-24%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "62.83 (+5%)",
+       "64.60 (+12%)",
+       "66.47 (+19%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "71.96 (+20%)",
+       "83.17 (+42%)",
+       "96.02 (+68%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "61.43 (+3%)",
+       "63.46 (+10%)",
+       "66.08 (+18%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mfc-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MFC.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Manulife dividend: payout and cash coverage",
+   "meta_description": "Manulife pays C$1.76 per share annually and C$1.94 on an annualized basis; coverage depends on remittances, claims, capital and obligations.",
+   "opening": "Manulife’s annual dividend reached C$1.76 per share, and Manulife’s current annualized dividend is C$1.94. Manulife’s cash coverage depends on subsidiary remittances after claims, investments, required capital and other obligations.",
+   "closing": "The full memo also explains Manulife’s business, rivals, management plans and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Manulife pay in dividends over time?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Capital strength, usable surplus and dividend capacity",
+       "text": "Dividends depend on cash that can move from subsidiaries after maintaining their safety buffers. The annual dividend reached C$1.76 per share, while subsidiary remittances reached C$6.4 billion. Neither the LICAT ratio nor core earnings alone measures unrestricted parent surplus."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.07",
+        "2.84",
+        "2.61",
+        "-1.15",
+        ""
+       ],
+       [
+        "− Dividends, per share",
+        "1.75",
+        "1.60",
+        "1.45",
+        "1.31",
+        "1.17"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.42",
+        "1.83",
+        "0.87",
+        "0.98",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "0.29",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.10",
+        "0.59",
+        "",
+        "3.44",
+        ""
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more per share than it earned because dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "Does Manulife’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The key issue is that dividends and buybacks can exceed earnings in a year even when the company’s dividend payout ratio appears moderate, because that measure excludes buybacks. Distributions therefore need to be judged against the capital required to keep the insurer safe, not against one accounting measure alone."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "Follow the money: what it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "5,572",
+        "5,385",
+        "5,103",
+        "-1,933",
+        ""
+       ],
+       [
+        "**= Earnings for common shareholders**",
+        "5,251",
+        "5,074",
+        "4,800",
+        "-2,193",
+        ""
+       ],
+       [
+        "− Dividends declared on common shares",
+        "2,984",
+        "2,848",
+        "2,669",
+        "2,513",
+        "2,272"
+       ],
+       [
+        "− Share buybacks",
+        "2,431",
+        "3,272",
+        "1,595",
+        "1,884",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "",
+        "536",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "164",
+        "1,046",
+        "",
+        "6,590",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Manulife’s dividend?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at the current annualized C$1.94. The base case lifts it to C$2.04 in 2027 and C$2.24 in 2028, then C$2.44, below management’s 10%–12% core EPS growth target because the latest payout ratio was already 46%, above the 35%–45% target band. The bear case freezes the dividend at C$1.94 each year. The bull case reaches C$2.12 in 2027 and C$2.44 in 2028, then C$2.80, reflecting stronger remittances and profitable Asian growth. The dividend rose every year from 2021 through 2025, but the latest payout ratio makes a freeze credible."
+      },
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast moves toward the bear case during 2027–2029 if claims or expenses worsen, Asian sales carry lower margins, or retained long-term-care risks produce adverse experience. Persistent wealth outflows during 2027–2028 would weaken fee growth, while lower remittances in 2028–2029 would reduce buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "47,752 (44,464 / 48,631)",
+        "49,652 (46,264 / 50,831)",
+        "51,752 (48,064 / 53,431)"
+       ],
+       [
+        "Shares (millions)",
+        "1,634 (1,647 / 1,622)",
+        "1,614 (1,639 / 1,589)",
+        "1,596 (1,631 / 1,558)"
+       ],
+       [
+        "Dividends per share",
+        "2.04 (1.94 / 2.12)",
+        "2.24 (1.94 / 2.44)",
+        "2.44 (1.94 / 2.80)"
+       ],
+       [
+        "Price to book value",
+        "2.15 (1.85 / 2.40)",
+        "2.10 (1.60 / 2.60)",
+        "2.05 (1.40 / 2.80)"
+       ]
+      ],
+      "note": "The price to book value number shows how much investors pay for each dollar of the company's net assets."
+     }
+    },
+    {
+     "heading": "What is Manulife’s dividend yield at its share price?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The 3.1% dividend yield is useful only if earnings and capital can support it. Manulife’s principal insurance subsidiary had a 136% LICAT ratio, meaning roughly C$1.36 of qualifying capital for each C$1.00 of required capital. That is not spare cash: much of the company’s cash backs policyholder promises and can reach shareholders only through safe subsidiary remittances."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.4%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/mfc-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MFC.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Manulife earnings",
+   "meta_description": "Manulife's next results are due November 4, 2026, with claims, Asian margins and wealth flows the immediate tests.",
+   "opening": "Manulife's next results are due November 4, 2026. The immediate watch is claims, Asian margins and wealth flows beyond institutional inflows.",
+   "closing": "The full memo answers how Manulife's business works, how it compares with rivals, how management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Manulife guided for the year?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Manulife offers modest price upside if earnings, capital and profitable new business hold up. Management targets at least 18% core ROE by 2027 and medium-term core EPS growth of 10%–12%. It targets medium-term CSM balance growth of 8%–10% and new business CSM growth of 15%; CSM is expected future profit from insurance contracts not yet recognized in earnings. Its cumulative remittance objective is $22 billion for 2024–2027."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Core return on common shareholders’ equity (“core ROE”)",
+        "2027",
+        "18.0%",
+        "",
+        "Feb 11, 2026"
+       ],
+       [
+        "Remittances ($ billions)",
+        "2024–2027 cumulative",
+        "22",
+        "",
+        "Feb 11, 2026"
+       ],
+       [
+        "Diluted core earnings per common share (“core EPS”) growth",
+        "Medium-term",
+        "10.0%",
+        "12.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Expense efficiency ratio",
+        "Medium-term",
+        "",
+        "45.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "New business contractual service margin (“new business CSM”) growth",
+        "Medium-term",
+        "15.0%",
+        "15.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Contractual service margin (“CSM”) balance growth",
+        "Medium-term",
+        "8.0%",
+        "10.0%",
+        "Feb 11, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Manulife kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 112,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The operating targets offer mixed evidence. Manulife reported an expense-efficiency ratio of 44.8% for 2025, below its target of 45%. Asia contributed 47% of group core earnings, below the 50% target for 2027. These results span Roy Gori’s and Witherington’s leadership, so they should not all be credited to the new CEO."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Manulife's trend over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter record is more varied than the latest result. Net income moved widely while core earnings were steadier, and the quarter benefited from a lower credit-loss provision. A stronger quarter is encouraging; several quarters of normalized claims and better client flows would be stronger evidence."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Core earnings (company's measure)",
+        "1,923",
+        "1,836",
+        "1,993",
+        "2,035",
+        "1,726",
+        "1,767",
+        "1,907",
+        "1,828"
+       ],
+       [
+        "Net income",
+        "2,110",
+        "1,147",
+        "1,499",
+        "1,799",
+        "1,789",
+        "485",
+        "1,638",
+        "1,839"
+       ],
+       [
+        "EPS, diluted",
+        "1.20",
+        "0.65",
+        "0.83",
+        "1.02",
+        "0.98",
+        "0.25",
+        "0.88",
+        "1.00"
+       ]
+      ],
+      "note": "The company's core earnings are its own version of profit, so they can differ from net income because they use different rules."
+     }
+    },
+    {
+     "heading": "What should Manulife watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Core EPS moving toward that target, profitable retained Asian business and remittances supporting payouts would improve the view. Q3 results are due after market close on November 4, 2026; the analyst call is on November 5, 2026. Claims, Asian margins and wealth flows beyond institutional inflows are the immediate tests. The Manulife and Mahindra India venture still needs authorization, launch and customer retention before it can demonstrate returns on staged capital commitments. Remember: the upside rests on profitable growth, sound claims and capital that can reach shareholders."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.20"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "1.00",
+      "0.88",
+      "0.25",
+      "0.98",
+      "1.02",
+      "0.83",
+      "0.65",
+      "1.20"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mfc-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MFC.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Manulife",
+ "first_memo_date": "2026-10-13T18:59:16Z"
+}

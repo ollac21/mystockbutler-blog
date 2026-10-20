@@ -1,0 +1,830 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CNR.TO",
+ "slug": "cnr-to",
+ "company": "Canadian National Railway Company",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-11T12:45:24Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 168.06,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 27,
+  "words": 16629,
+  "sources": 176
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Canadian National Railway Company, usually called CN, sells something less visible than a train: a route for goods from where they are made, grown or unloaded to where they are needed. Its business is the coordination behind that route—track, equipment, crews, terminals and partners—and the difference between what customers pay and what that system costs."
+ },
+ "sources": [
+  {
+   "title": "CN annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/16868/000001686826000011/cni-20251231.htm"
+  },
+  {
+   "title": "CN Annual Stats and MD&A",
+   "url": "https://www.sec.gov/Archives/edgar/data/16868/000001686826000011/a2025annualstatsmda.htm"
+  },
+  {
+   "title": "CN’s cash-flow statement",
+   "url": "https://www.sec.gov/Archives/edgar/data/16868/000001686826000036/a2026q2fsnotes.htm"
+  }
+ ],
+ "rivals": [
+  "CP",
+  "UNP",
+  "CSX",
+  "NSC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "CN stock forecast",
+   "meta_description": "CN’s weighted forecast, the base, bear and bull cases, cash generation and valuation in plain English.",
+   "opening": "CN’s weighted forecast is C$188.85 by October 2029 (+19%, dividends included). It hinges on pricing, productivity and traffic growth converting into cash while service remains reliable.",
+   "closing": "The full memo also explains CN’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could CN’s shares go?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management expects low-single-digit RTM growth and mid-to-high-single-digit adjusted diluted EPS growth, with a C$2,800 million capital program net of customer reimbursements. The outlook assigns 25% probability to the bear case, 55% to the base case and 20% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 168.06, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 168.06, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "126.91 (-22 %)",
+        "112.64 (-29 %)",
+        "108.23 (-29 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "172.24 (+5 %)",
+        "182.13 (+13 %)",
+        "192.26 (+21 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "202.22 (+23 %)",
+        "238.69 (+47 %)",
+        "280.26 (+74 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "166.90 (+2 %)",
+        "176.07 (+9 %)",
+        "188.85 (+19 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for CN?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case begins with weak harvests or trade disruption arriving alongside labor negotiations. Traffic falls, service recovery costs rise and customers delay projects. Slower industrial demand then limits productivity, while debt and renewal spending reduce buybacks. The multiple falls as investors lose confidence in execution. This produces C$126.91 in 2027 and C$108.23 in 2029, with a 25% probability. The probability reflects real cyclical and labor risks, but the recent grain record and positive trailing growth make a prolonged decline less likely."
+      },
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires strong grain and customer-facility traffic, reliable service and successful project execution. Approved access and new capacity must then create repeat profitable routes, while productivity expands margins and cash conversion stabilizes debt. The multiple rises with confidence, producing C$202.22 in 2027 and C$280.26 in 2029. Its probability is 20% because approvals, ramp-ups, service reliability and cash generation must all succeed together."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "9,200 (8,650 / 9,450)",
+        "9,550 (8,700 / 10,050)",
+        "9,900 (8,900 / 10,700)"
+       ],
+       [
+        "Dividends per share",
+        "3.70 (3.66 / 3.75)",
+        "3.85 (3.66 / 4.05)",
+        "4.00 (3.66 / 4.40)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "13.50 (11.50 / 15.00)",
+        "13.50 (10.50 / 16.00)",
+        "13.50 (10.00 / 17.00)"
+       ],
+       [
+        "Net debt",
+        "21,424 (23,100 / 21,775)",
+        "21,524 (23,800 / 21,575)",
+        "21,524 (24,300 / 20,975)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does CN really make?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending reached C$3,658 million. After that spending and lease payments, much less remained for dividends, debt repayment or acquisitions. CN’s “real free cash flow” also subtracts stock-based compensation, because issuing shares to employees dilutes existing owners or requires cash to offset the dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,049",
+        "6,699",
+        "6,965",
+        "6,667",
+        "6,971"
+       ],
+       [
+        "− Capital spending",
+        "3,658",
+        "3,549",
+        "3,187",
+        "2,750",
+        "2,891"
+       ],
+       [
+        "− Lease payments",
+        "2",
+        "31",
+        "2",
+        "7",
+        "68"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,389",
+        "3,119",
+        "3,776",
+        "3,910",
+        "4,012"
+       ],
+       [
+        "− Stock pay",
+        "106",
+        "74",
+        "64",
+        "63",
+        "81"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,283",
+        "3,045",
+        "3,712",
+        "3,847",
+        "3,931"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for CN?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Cash is the harder test. CN plans C$2.8 billion of capital spending in 2026, and calling spending growth rather than maintenance does not change the cash required to keep the network sound. The free-cash-flow yield is modest, so the valuation depends on future growth rather than today’s cash alone."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "168.06"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "188.85 (+19 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 168.06,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "126.91 (-22 %)",
+       "112.64 (-29 %)",
+       "108.23 (-29 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "172.24 (+5 %)",
+       "182.13 (+13 %)",
+       "192.26 (+21 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "202.22 (+23 %)",
+       "238.69 (+47 %)",
+       "280.26 (+74 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "166.90 (+2 %)",
+       "176.07 (+9 %)",
+       "188.85 (+19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cnr-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "CN dividend: history, coverage and yield",
+   "meta_description": "CN's indicated C$3.66 annual dividend rate was covered by 2025 free cash flow; see its history, cash coverage and current yield.",
+   "opening": "CN's indicated annual dividend rate is C$3.66, and 2025 dividends were covered by free cash flow. CN's shareholder payments also included buybacks, which were more flexible than dividends.",
+   "closing": "The full CN memo also covers CN's business, its rivals, its management choices and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does CN pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts from an indicated C$3.66 annual rate after the January increase. The base case reaches C$3.70 in 2027, C$3.85 in 2028 and C$4.00 in 2029, slower than the five-year dividend record because capex and debt are rising. The bear case holds C$3.66 flat, while the bull reaches C$3.75, C$4.05 and C$4.40 as cash conversion improves. Dividends were covered by 2025 free cash flow, supporting increases but not an aggressive path."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "7.57",
+        "7.01",
+        "8.53",
+        "7.44",
+        "6.90"
+       ],
+       [
+        "Free cash flow per share",
+        "5.43",
+        "4.92",
+        "5.73",
+        "5.68",
+        "5.65"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.54",
+        "3.37",
+        "3.14",
+        "2.91",
+        "2.45"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.30",
+        "4.10",
+        "6.90",
+        "6.84",
+        "2.23"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "",
+        "",
+        "0.97"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "1.41",
+        "2.55",
+        "4.32",
+        "4.07",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does CN's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 89,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across 2021–2025, shareholder payments exceeded internally generated free cash flow. Dividends formed the recurring commitment; buybacks, which reduce the number of shares outstanding, were the more flexible outlet. Paying more than free cash flow is not automatically reckless, because a company can use cash reserves or borrow. But it means management must show that the shares bought were a better investment than debt repayment or network projects."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,389",
+        "3,119",
+        "3,776",
+        "3,910",
+        "4,012"
+       ],
+       [
+        "− Dividends paid",
+        "2,208",
+        "2,138",
+        "2,071",
+        "2,004",
+        "1,740"
+       ],
+       [
+        "− Share buybacks",
+        "2,059",
+        "2,600",
+        "4,551",
+        "4,709",
+        "1,582"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "690"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "878",
+        "1,619",
+        "2,846",
+        "2,803",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "125.9%",
+        "151.9%",
+        "175.4%",
+        "171.7%",
+        "82.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is CN's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 186,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A P/E ratio says how many dollars investors pay for each dollar of earnings. A forward P/E uses expected earnings, so it falls when profits are expected to rise. At the current price, the forward multiple implies roughly C$8.99 of earnings per share. That is accounting profit, not cash: CN must still maintain the railway, repay debt and decide what to distribute."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "168.06"
+       ],
+       [
+        "Market value (calculated)",
+        "101,525.05"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "21.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.54"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.45",
+      "2.91",
+      "3.14",
+      "3.37",
+      "3.54"
+     ],
+     "Real free cash flow per share": [
+      "5.53",
+      "5.59",
+      "5.63",
+      "4.80",
+      "5.26"
+     ],
+     "Free cash flow per share": [
+      "5.65",
+      "5.68",
+      "5.73",
+      "4.92",
+      "5.43"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/cnr-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "CN earnings: date, guidance and what to watch",
+   "meta_description": "CN's next results are due October 30, 2026; management expects low single-digit freight growth and mid-to-high single-digit adjusted diluted EPS growth.",
+   "opening": "CN's next results are due on October 30, 2026. Watch whether CN's grain volume turns into earnings and cash.",
+   "closing": "CN's full memo also answers questions about its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has CN guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management raised its outlook on July 24 after a stronger first half. It now expects low single-digit growth in revenue ton-miles, or RTMs. An RTM is one ton of paying freight carried one mile, so it measures the work customers buy. CN expects mid-to-high single-digit growth in adjusted diluted earnings per share. Adjusted earnings remove selected items that CN considers outside underlying performance, while diluted earnings allow for shares that employee awards could create."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted diluted EPS growth (%)",
+        "2026",
+        "",
+        "",
+        "2026-07-24"
+       ],
+       [
+        "RTM growth (%)",
+        "2026",
+        "",
+        "",
+        "2026-07-24"
+       ],
+       [
+        "Capital program, net of amounts reimbursed by customers",
+        "2026",
+        "2,800",
+        "2,800",
+        "2026-07-24"
+       ],
+       [
+        "Total cash contributions for all pension plans other than the defined benefit component of the CN Pension Plan",
+        "2026",
+        "60",
+        "60",
+        "2026-07-24"
+       ],
+       [
+        "Value of the Canadian dollar in U.S. currency (US$ per C$1.00)",
+        "2026",
+        "0.71",
+        "0.71",
+        "2026-07-24"
+       ],
+       [
+        "Average price of crude oil (West Texas Intermediate) (US$ per barrel)",
+        "2026",
+        "80",
+        "110",
+        "2026-07-24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has CN kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Longer-term discipline was firmer. The 2023 performance share units paid zero when their conditions failed. Management later forecast mid-to-high single-digit adjusted earnings-per-share growth, and the full-year increase was 7%. Meeting a later forecast does not erase failure under an earlier compensation bargain."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have CN's revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew 11.3% year over year, while operating income grew 8.7%. Net income grew more slowly, although diluted earnings per share benefited from fewer shares. Freight workload rose 5%, led mainly by grain and energy. This was stronger than the March quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,753",
+        "4,379",
+        "4,464",
+        "4,165",
+        "4,272",
+        "4,403",
+        "4,358",
+        "4,110"
+       ],
+       [
+        "Operating income",
+        "1,781",
+        "1,549",
+        "1,733",
+        "1,606",
+        "1,638",
+        "1,610",
+        "1,628",
+        "1,515"
+       ],
+       [
+        "Net income",
+        "1,249",
+        "1,146",
+        "1,248",
+        "1,139",
+        "1,172",
+        "1,161",
+        "1,146",
+        "1,085"
+       ],
+       [
+        "EPS, diluted",
+        "2.06",
+        "1.87",
+        "2.03",
+        "1.83",
+        "1.87",
+        "1.85",
+        "1.82",
+        "1.72"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in CN's next results?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Third-quarter results arrive on October 30. CN has already reported a record 7.94 million metric tonnes of Western Canadian grain moved during the quarter. That supports the demand behind the higher outlook, but tonnes alone do not show profit. Results must reveal the earnings and cash produced, while winter will test whether service remains reliable in harder operating conditions."
+      },
+      {
+       "n": 242,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Labour is the largest scheduled risk. The TCRC train-crew agreement covers roughly 6,000 employees, while the United Steelworkers agreement covers approximately 2,500 track and bridge employees. Both expire on December 31, 2026. Train-crew employees operate trains; track employees maintain the infrastructure beneath them, so simultaneous negotiations could affect both movement and maintenance."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "4,753"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.06"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,110",
+      "4,358",
+      "4,403",
+      "4,272",
+      "4,165",
+      "4,464",
+      "4,379",
+      "4,753"
+     ],
+     "EPS, diluted": [
+      "1.72",
+      "1.82",
+      "1.85",
+      "1.87",
+      "1.83",
+      "2.03",
+      "1.87",
+      "2.06"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cnr-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "CN",
+ "first_memo_date": "2026-10-11T12:45:24Z"
+}

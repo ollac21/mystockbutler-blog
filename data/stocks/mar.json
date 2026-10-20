@@ -1,0 +1,836 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MAR",
+ "slug": "mar",
+ "company": "Marriott International, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T21:39:06Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 385.71,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 246,
+  "tables": 27,
+  "words": 17293,
+  "sources": 231
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Marriott International sells a way to make money from hotels without owning most of the buildings. It puts its brands, booking network, loyalty program, and operating expertise between travelers, hotel owners, developers, and banks, then collects fees as money moves through the system."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Business",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm"
+  },
+  {
+   "title": "2023 Form 10-K, income taxes",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000162828024004372/mar-20231231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000005/mar-2025q4xex99earningsrel.htm"
+  }
+ ],
+ "rivals": [
+  "HLT",
+  "IHG.L",
+  "H",
+  "WH",
+  "AC.PA",
+  "CHH",
+  "HTHT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Marriott stock forecast",
+   "meta_description": "Marriott's forecast gives a probability-weighted value of $399.44 in October 2029, with bear, base and bull cases.",
+   "opening": "Marriott's weighted value is $399.44 in October 2029, implying a 6% gain. Marriott's forecast turns on whether Marriott can expand its fee engine without borrowing away the cash that supports shareholder returns.",
+   "closing": "The full memo also answers how Marriott's business works, who its rivals are, how management runs it, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Marriott's shares go?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to modest expected returns, with substantial downside if travel weakens and considerable upside if Marriott converts its pipeline successfully. The probability-weighted price is $363.95 in October 2027, equal to a 5% loss including dividends. It rises to $381.43 in October 2028, a 1% gain, and $399.44 in October 2029, a 6% gain."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 385.71, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 385.71, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "256.13 (-33 %)",
+        "241.01 (-36 %)",
+        "231.53 (-38 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "390.45 (+2 %)",
+        "406.91 (+7 %)",
+        "421.98 (+12 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "482.43 (+26 %)",
+        "568.82 (+49 %)",
+        "652.59 (+72 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "363.95 (-5 %)",
+        "381.43 (+1 %)",
+        "399.44 (+6 %)"
+       ]
+      ],
+      "note": "The weighted row is the average after giving each case its probability, so it can be below the base case because the bear case loses more than the bull case gains."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Marriott?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The base case requires successful openings to turn roughly 265,000 rooms under construction at year-end 2025 into recurring fees and operating-profit growth. Signed projects still face financing, renovation, and demand hurdles. The downside grows if regional weakness or owner cost pressure slows fees while distributions exceed free cash flow. Marriott’s next scheduled catalyst is its third-quarter report on November 2, 2026, when investors will test guidance against RevPAR, room growth, and card-fee contribution."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case gives $482.43 initially and $652.59 finally, a 72% total return. Its 15% probability reflects the need for stronger demand, healthy owners, fast pipeline conversion, rising card fees and sustained buybacks to occur together. Roughly 265,000 rooms under construction provide opportunity, but signed rooms do not guarantee openings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Marriott really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — CASH",
+       "text": "Net income of $2,601 million became operating cash flow of $3,212 million in 2025. After the investment deduction used here, free cash flow was $2,258 million. Deducting $236 million of stock-based pay produces an analytical “real free cash flow” figure, because shares given to employees transfer value even when they preserve cash at first."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,212",
+        "2,749",
+        "3,170",
+        "2,363",
+        "1,177"
+       ],
+       [
+        "− Capital spending",
+        "954",
+        "776",
+        "553",
+        "332",
+        "183"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,258",
+        "1,973",
+        "2,617",
+        "2,031",
+        "994"
+       ],
+       [
+        "− Stock pay",
+        "236",
+        "237",
+        "205",
+        "192",
+        "182"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,022",
+        "1,736",
+        "2,412",
+        "1,839",
+        "812"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "7.7%",
+        "6.9%",
+        "10.2%",
+        "8.9%",
+        "5.9%"
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but it gives employees part of the company, so we subtract its value to show what is truly left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Marriott today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A trailing P/E of 40.0x means investors pay $40 for each dollar of earnings per share from the past year. The forward P/E of 29.4x uses expected earnings, so it assumes profits will rise. Buybacks can raise earnings per share without raising total profit: if $1 billion of earnings is divided among 100 million shares, each share earns $10; after 10 million shares are bought back, each remaining share earns about $11.11."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "385.71"
+       ],
+       [
+        "Market value (calculated)",
+        "100,580.16"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "117,033.16"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "40.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "29.4x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than it owns, making its book value negative."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "385.71"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "399.44 (+6 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "29.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 385.71,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "256.13 (-33 %)",
+       "241.01 (-36 %)",
+       "231.53 (-38 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "390.45 (+2 %)",
+       "406.91 (+7 %)",
+       "421.98 (+12 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "482.43 (+26 %)",
+       "568.82 (+49 %)",
+       "652.59 (+72 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "363.95 (-5 %)",
+       "381.43 (+1 %)",
+       "399.44 (+6 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mar/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MAR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Marriott dividend: payout and cash coverage",
+   "meta_description": "Marriott pays a dividend, but recent shareholder payments exceeded internally generated cash; see the yield, forecast changes, and debt pressure.",
+   "opening": "Marriott pays at a $2.92 annualized rate implied by the declared $0.73 quarterly dividend. Its distribution payments were larger than internally generated cash, so cash did not fully cover shareholder returns.",
+   "closing": "The full memo also explains Marriott’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Marriott pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends start from the $2.92 annualized rate implied by the declared $0.73 quarterly dividend. The base case reaches $3.20 in October 2027 and $3.52 in October 2028, then $3.84. The bear case holds at $2.92 before cutting to $2.19. The bull case reaches $3.36 initially and $4.64 finally. Recent increases support the base path, but 2025 shareholder payments exceeded free cash flow."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "4,500 (3,800 / 4,800)",
+        "4,800 (4,000 / 5,250)",
+        "5,100 (4,200 / 5,700)"
+       ],
+       [
+        "Shares (millions)",
+        "251 (254 / 250)",
+        "243 (250 / 242)",
+        "236 (246 / 234)"
+       ],
+       [
+        "Dividends per share",
+        "3.20 (2.92 / 3.36)",
+        "3.52 (2.92 / 4.00)",
+        "3.84 (2.92 / 4.64)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "26.00 (22.00 / 29.00)",
+        "25.00 (20.00 / 30.00)",
+        "24.00 (18.50 / 30.50)"
+       ],
+       [
+        "Net debt",
+        "19,152 (18,492 / 18,689)",
+        "21,121 (19,772 / 20,072)",
+        "22,940 (20,789 / 21,275)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Marriott's dividend fit its free cash flow?",
+     "paragraphs": [
+      {
+       "n": 94,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Marriott’s distribution plan for 2023–2025 was to return $11.7 billion–$13.6 billion to shareholders, and the cash bridge records $13,002 million. That fulfilled the promise, but the payments were larger than internally generated cash. The difference could come from existing cash, asset sales or borrowing, each of which reduces future flexibility in a different way."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,258",
+        "1,973",
+        "2,617",
+        "2,031",
+        "994"
+       ],
+       [
+        "− Dividends paid",
+        "718",
+        "682",
+        "587",
+        "321",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "3,300",
+        "3,762",
+        "3,953",
+        "2,566",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "994"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,760",
+        "2,471",
+        "1,923",
+        "856",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "4,018",
+        "4,444",
+        "4,540",
+        "2,887",
+        "0"
+       ]
+      ],
+      "note": "Marriott paid shareholders more cash than its business generated, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Marriott's dividend?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Debt would become a larger concern if dividends and buybacks continued to exceed cash generation through 2027–2029. That would constrain repurchases, raise interest pressure and justify a lower multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Marriott's dividend yield at today's price?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Marriott International earns fees by franchising, managing and licensing hotel brands, so its stock price values a stream of future payments from hotels and partners. At $385.71, the price assumes that stream will keep growing even though debt and other claims already stand ahead of shareholders."
+      },
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow yield is 2.2%, while real free cash flow yield is 2.0% and the dividend yield is 0.8%. A 10-year U.S. Treasury yield of 5.19% makes Marriott’s modest current cash return especially relevant."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "385.71"
+       ],
+       [
+        "Market value (calculated)",
+        "100,580.16"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "117,033.16"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than it owns, making its book value negative."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.62"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.99",
+      "1.94",
+      "2.39",
+      "2.62"
+     ],
+     "Real free cash flow per share": [
+      "2.47",
+      "5.64",
+      "7.96",
+      "6.09",
+      "7.39"
+     ],
+     "Free cash flow per share": [
+      "3.02",
+      "6.23",
+      "8.64",
+      "6.92",
+      "8.25"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mar/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MAR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Marriott earnings: guidance and results",
+   "meta_description": "Marriott reports on November 2, 2026, with guidance for RevPAR and net rooms growth and a test of hotel and card fee growth.",
+   "opening": "Marriott's next results are expected on November 2, 2026. The one thing to watch is whether Marriott separates hotel-related fee growth from the contribution of credit cards.",
+   "closing": "The full Marriott memo also covers Marriott's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has Marriott guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to worldwide RevPAR growth of 3.0%–3.5%. It expects net rooms growth of 4.5%–5.0%. Adjusted EBITDA guidance is $5,965–$6,025 million. Capital returns should reach at least $4,500 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Worldwide RevPAR growth",
+        "Year to Dec 2026",
+        "3.0%",
+        "3.5%",
+        "Aug 3, 2026"
+       ],
+       [
+        "Net rooms growth",
+        "Year to Dec 2026",
+        "4.5%",
+        "5.0%",
+        "Aug 3, 2026"
+       ],
+       [
+        "Adjusted EBITDA",
+        "Year to Dec 2026",
+        "5,965",
+        "6,025",
+        "Aug 3, 2026"
+       ],
+       [
+        "Capital return to shareholders",
+        "Year to Dec 2026",
+        "4,500",
+        "",
+        "Aug 3, 2026"
+       ]
+      ],
+      "note": "Capital return to shareholders means the company expects to give shareholders more than 4.5 billion dollars, but it does not give a maximum amount."
+     }
+    },
+    {
+     "heading": "Has Marriott kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management expected approximately US$4 billion of shareholder distributions on August 5, 2025, and ultimately reported more than US$4 billion. A September 2023 presentation modeled 2025 adjusted EBITDA of US$5.2–5.7 billion; the eventual result was US$5.38 billion. Marriott therefore delivered on those stated targets, but shareholders still must judge the prices paid for buybacks, the cost of equity awards and the debt used to support distributions. The fairest conclusion is conditional: Marriott’s managers have reasons to align with shareholders, while the board and investors must keep testing how well that alignment survives financing and succession decisions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Marriott's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — THE LATEST QUARTER",
+       "text": "Revenue rose to $7,071 million from $6,744 million. Operating income slipped from $1,236 million to $1,229 million, while net income edged from $763 million to $766 million. EPS rose from $2.78 to $2.90 because fewer shares gave each remaining share a larger claim on earnings."
+      },
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — THE LATEST QUARTER",
+       "text": "Cash improved as well. Operating cash flow reached $948 million from $643 million. Free cash flow was $796 million from $488 million. The eight-quarter record remains uneven, so the strongest reading is stronger underlying fees and cash, not yet a completely settled profit trend."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,071",
+        "6,654",
+        "6,690",
+        "6,489",
+        "6,744",
+        "6,263",
+        "6,429",
+        "6,255"
+       ],
+       [
+        "Operating income",
+        "1,229",
+        "1,064",
+        "777",
+        "1,180",
+        "1,236",
+        "948",
+        "752",
+        "944"
+       ],
+       [
+        "Net income",
+        "766",
+        "648",
+        "445",
+        "728",
+        "763",
+        "665",
+        "455",
+        "584"
+       ],
+       [
+        "EPS, diluted",
+        "2.90",
+        "2.43",
+        "1.65",
+        "2.67",
+        "2.78",
+        "2.39",
+        "1.63",
+        "2.07"
+       ],
+       [
+        "**= Free cash flow**",
+        "796",
+        "728",
+        "656",
+        "602",
+        "488",
+        "512",
+        "-50",
+        "706"
+       ]
+      ],
+      "note": "September 2025 free cash flow looks unusually low because capital spending also includes 349 million dollars used to buy assets, not just normal equipment, buildings, and software."
+     }
+    },
+    {
+     "heading": "What should investors watch in Marriott's next release?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Marriott will report third-quarter results on November 2, 2026. The release is scheduled for approximately 7 a.m. Eastern, followed by an 8 a.m. conference call. Investors will test the RevPAR and adjusted-EPS ranges shown above, while separating hotel-related fee growth from the contribution of credit cards."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "7,071"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.90"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,255",
+      "6,429",
+      "6,263",
+      "6,744",
+      "6,489",
+      "6,690",
+      "6,654",
+      "7,071"
+     ],
+     "EPS, diluted": [
+      "2.07",
+      "1.63",
+      "2.39",
+      "2.78",
+      "2.67",
+      "1.65",
+      "2.43",
+      "2.90"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mar/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MAR&src=seo-earnings"
+  }
+ },
+ "short_name": "Marriott",
+ "first_memo_date": "2026-10-15T21:39:06Z"
+}

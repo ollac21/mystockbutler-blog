@@ -1,0 +1,794 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "OKE",
+ "slug": "oke",
+ "company": "ONEOK, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T04:36:44Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 93.31,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 240,
+  "tables": 26,
+  "words": 16648,
+  "sources": 149
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "ONEOK is a midstream energy company: it runs the pipes, plants, terminals and storage between producers and the businesses that use energy. Its business is to make raw production usable, move it to the right market and store it until customers need it."
+ },
+ "sources": [
+  {
+   "title": "ONEOK’s 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000006/oke-20251231.htm"
+  },
+  {
+   "title": "ONEOK — 2023 Form 10-K — February 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968424000015/oke-20231231.htm"
+  },
+  {
+   "title": "Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000029/oke-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "EPD",
+  "KMI",
+  "WMB",
+  "TRGP",
+  "PAA",
+  "MPLX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "ONEOK stock forecast",
+   "meta_description": "ONEOK's forecast weighs bear, base and bull cases against cash flow, debt, operating execution and today's valuation.",
+   "opening": "ONEOK's weighted forecast reaches $144.03 in October 2029. It hinges on EBITDA growth reaching earnings and real free cash flow per share after debt costs, dilution and Apollo’s claim.",
+   "closing": "The full memo also explains ONEOK’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could ONEOK's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast puts ONEOK’s weighted share price at $116.79 in October 2027. That implies a 30% total return with dividends. It reaches $128.61 in October 2028, implying a 47% total return. By October 2029, the weighted price is $144.03, implying a 68% total return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 93.31, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 93.31, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "84.37 (-5 %)",
+        "77.49 (-8 %)",
+        "74.02 (-8 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "123.73 (+37 %)",
+        "137.27 (+57 %)",
+        "153.97 (+79 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "142.20 (+57 %)",
+        "174.68 (+97 %)",
+        "212.21 (+142 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "116.79 (+30 %)",
+        "128.61 (+47 %)",
+        "144.03 (+68 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for ONEOK?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path starts at $7,900 million and reaches $8,300 million. It reflects weaker volumes, delayed projects and integration costs. The bull path starts at $9,000 million and reaches $10,498 million. It assumes stronger connections, recurring synergies and timely project starts. Throughput rose 7% in the latest quarter, but NGL EBITDA fell from $673 million to $659 million, showing why higher volumes do not guarantee higher segment earnings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does ONEOK really make?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Profit can arrive before customers pay, and cash can move into inventory or receivables before it appears in earnings. Free cash flow means cash from operations less capital spending. “Real free cash flow” goes further by subtracting stock pay, because compensation delivered in shares can dilute existing owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,599",
+        "4,888",
+        "4,421",
+        "2,906",
+        "2,546"
+       ],
+       [
+        "− Capital spending",
+        "3,152",
+        "2,021",
+        "1,595",
+        "1,202",
+        "697"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,447",
+        "2,867",
+        "2,826",
+        "1,704",
+        "1,849"
+       ],
+       [
+        "− Stock pay",
+        "108",
+        "102",
+        "63",
+        "53",
+        "54"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,339",
+        "2,765",
+        "2,763",
+        "1,651",
+        "1,795"
+       ]
+      ],
+      "note": "The company does not pay stock pay in cash, but we subtract it because giving shares to employees reduces what shareholders own."
+     }
+    },
+    {
+     "heading": "What does an investor pay for ONEOK today?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Start with the P/E ratio, which compares the share price with annual profit. It is easy to read, but profit includes depreciation and amortization, the accounting cost of using pipelines and plants over time. In 2025, depreciation and amortization was $1.514 billion. Profit also reflects acquisition accounting, so P/E needs a cash-flow check."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "93.31"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.1x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "2.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": "Enterprise value is higher than the stock-market value because it adds the company’s debt and subtracts its cash, estimating what it would cost to buy the whole business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "93.31"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "144.03 (+68 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 93.31,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "84.37 (-5 %)",
+       "77.49 (-8 %)",
+       "74.02 (-8 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "123.73 (+37 %)",
+       "137.27 (+57 %)",
+       "153.97 (+79 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "142.20 (+57 %)",
+       "174.68 (+97 %)",
+       "212.21 (+142 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "116.79 (+30 %)",
+       "128.61 (+47 %)",
+       "144.03 (+68 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/oke/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OKE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "ONEOK dividend: cash coverage and yield",
+   "meta_description": "ONEOK raised its quarterly dividend to $1.07; 2025 cash after capital spending was less than its $2.6 billion dividend.",
+   "opening": "ONEOK raised its quarterly dividend to $1.07 in January 2026. In 2025, cash from operations less capital spending was less than the $2.6 billion dividend, so coverage depends on how free cash flow is defined.",
+   "closing": "The full memo also covers ONEOK’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does ONEOK pay shareholders?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.5 — Debt, equity dilution and capital allocation after M&A",
+       "text": "ONEOK also authorized up to $2 billion of share repurchases and raised its quarterly dividend to $1.07 in January 2026. Those payments can reward shareholders, but they compete with debt reduction and construction when payouts exceed free cash flow. Comparable midstream companies had a median debt-to-EBITDA ratio of 3.4x in 2025, giving investors a reference point for the burden ONEOK must manage."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "4.13",
+        "3.94",
+        "3.79",
+        "3.73",
+        "3.73"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.12",
+        "0.27",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "0.56",
+        "2.03",
+        "0.07",
+        "0.41"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "0.41",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2025, the company paid out $0.41 more per share than its free cash flow, so it had to use other cash or borrow money."
+     }
+    },
+    {
+     "heading": "Is ONEOK’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash is the stricter test. In 2025, operating cash flow was $5.599 billion and capital expenditures were $3.152 billion. That simple difference was less than the $2.6 billion dividend, so the definition of free cash flow matters. Maintenance spending keeps existing assets safe; growth spending adds capacity. Both consume cash today."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,447",
+        "2,867",
+        "2,826",
+        "1,704",
+        "1,849"
+       ],
+       [
+        "− Dividends paid",
+        "2,583",
+        "2,313",
+        "1,839",
+        "1,672",
+        "1,667"
+       ],
+       [
+        "− Share buybacks",
+        "75",
+        "159",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "329",
+        "987",
+        "32",
+        "182"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "258",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "108.6%",
+        "86.2%",
+        "65.1%",
+        "98.1%",
+        "90.2%"
+       ]
+      ],
+      "note": "In 2025, the company paid out 258 million dollars more than its free cash flow, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change ONEOK’s dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guided to 2026 adjusted EBITDA of $8.2–$8.5 billion. It guided to total capital expenditures of $2.7–$3.2 billion. Its diluted EPS range is $5.38–$5.99, alongside a 3%–4% annual dividend-growth target. Management targets 3.25x debt-to-EBITDA leverage for 2027."
+      },
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow from $4.37 to $4.64 per share in the base case. The bear case falls from $4.28 to $3.85 after a cut. The bull case rises from $4.41 to $4.76. Base growth follows the low end of management’s 3%–4% target, while the downside reflects dividends exceeding free cash flow in 2025 and a reported 2026 funding gap."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "8,850 (7,900 / 9,000)",
+        "9,380 (8,000 / 9,720)",
+        "9,940 (8,300 / 10,498)"
+       ],
+       [
+        "Dividends per share",
+        "4.37 (4.28 / 4.41)",
+        "4.50 (3.85 / 4.58)",
+        "4.64 (3.85 / 4.76)"
+       ],
+       [
+        "Net debt",
+        "28,339 (29,621 / 27,942)",
+        "28,256 (30,921 / 27,461)",
+        "27,816 (31,871 / 26,473)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.13"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.73",
+      "3.73",
+      "3.79",
+      "3.94",
+      "4.13"
+     ],
+     "Real free cash flow per share": [
+      "4.01",
+      "3.68",
+      "5.69",
+      "4.71",
+      "3.74"
+     ],
+     "Free cash flow per share": [
+      "4.13",
+      "3.80",
+      "5.82",
+      "4.89",
+      "3.91"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/oke/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OKE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "ONEOK earnings date and guidance",
+   "meta_description": "ONEOK's next results are expected on October 27, 2026; guidance points to adjusted EBITDA of $8.2–$8.5 billion and EPS of $5.38–$5.99.",
+   "opening": "ONEOK's next results are expected on October 27, 2026. For ONEOK, watch whether third-quarter results support the higher annual outlook.",
+   "closing": "The full memo also explains ONEOK's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has ONEOK guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "After stronger volumes and better marketing and optimization earnings, management raised its 2026 guidance for a second time on August 3. It now expects adjusted EBITDA—earnings before interest, taxes, depreciation and amortization—of $8.2–$8.5 billion. It kept total capital spending at $2.7–$3.2 billion. Its diluted earnings-per-share range is $5.38–$5.99."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted EBITDA",
+        "Year to Dec 2026",
+        "8,200",
+        "8,500",
+        "Aug 3, 2026"
+       ],
+       [
+        "Earnings per diluted share",
+        "Year to Dec 2026",
+        "5.38",
+        "5.99",
+        "Aug 3, 2026"
+       ],
+       [
+        "Total capital expenditures",
+        "Year to Dec 2026",
+        "2,700",
+        "3,200",
+        "Aug 3, 2026"
+       ],
+       [
+        "Dividend, annual growth target",
+        "Year to Dec 2026",
+        "3.0%",
+        "4.0%",
+        "Sep 9, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What are ONEOK's recent results?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose year over year while gross margin fell, because commodity sales bring corresponding costs. Operating income and net income still improved, so the quarter was stronger overall, but the margin contraction limits what can be inferred from sales growth alone."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,049",
+        "9,618",
+        "9,065",
+        "8,634",
+        "7,887",
+        "8,043",
+        "7,000",
+        "5,023"
+       ],
+       [
+        "Operating income",
+        "1,593",
+        "1,428",
+        "1,532",
+        "1,558",
+        "1,431",
+        "1,220",
+        "1,568",
+        "1,128"
+       ],
+       [
+        "Net income attributable to ONEOK",
+        "966",
+        "774",
+        "977",
+        "939",
+        "841",
+        "636",
+        "923",
+        "693"
+       ],
+       [
+        "EPS, diluted",
+        "1.53",
+        "1.23",
+        "1.55",
+        "1.49",
+        "1.34",
+        "1.04",
+        "1.57",
+        "1.18"
+       ],
+       [
+        "Cash from operations",
+        "2,053",
+        "934",
+        "1,546",
+        "1,624",
+        "1,525",
+        "904",
+        "1,611",
+        "1,251"
+       ]
+      ],
+      "note": "Gross margin is not final profit because it subtracts only the direct cost of sales and leaves out operating costs and depreciation."
+     }
+    },
+    {
+     "heading": "What should ONEOK watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next earnings call is scheduled for October 28, 2026. It should show whether the third quarter supports the higher annual outlook and whether second-half capital spending is moving toward the upper end of guidance. Over a longer period, investors should watch Medford, Bighorn, Texas City and Eiger. Delays would postpone customer fees while construction cash continues to leave the business."
+      },
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.6 — Asset reliability, safety and ability to keep operating",
+       "text": "Maintenance capital keeps existing facilities safe and operating; growth capital adds capacity. ONEOK guided to $550–$600 million of maintenance capital for 2026. It had spent $229 million by midyear. The distinction matters because growth can raise future earnings, but maintenance prevents today’s network from failing."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "12,049"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.53"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,023",
+      "7,000",
+      "8,043",
+      "7,887",
+      "8,634",
+      "9,065",
+      "9,618",
+      "12,049"
+     ],
+     "EPS, diluted": [
+      "1.18",
+      "1.57",
+      "1.04",
+      "1.34",
+      "1.49",
+      "1.55",
+      "1.23",
+      "1.53"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/oke/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OKE&src=seo-earnings"
+  }
+ },
+ "short_name": "ONEOK",
+ "first_memo_date": "2026-10-18T04:36:44Z"
+}

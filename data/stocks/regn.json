@@ -1,0 +1,815 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "REGN",
+ "slug": "regn",
+ "company": "Regeneron Pharmaceuticals, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T19:18:25Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 788.475,
+ "price_date": "2026-10-16T18:10:54Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 27,
+  "words": 16925,
+  "sources": 235
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Regeneron Pharmaceuticals invents, makes and sells specialist medicines. Its business is easiest to understand by following a treatment from laboratory to patient, then following the dollar through partners, payers and costs."
+ },
+ "sources": [
+  {
+   "title": "Schleifer Form 4",
+   "url": "https://www.sec.gov/Archives/edgar/data/872589/000121862925000006/xslF345X05/edgardoc.xml"
+  },
+  {
+   "title": "June 2026 quarterly report",
+   "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000025/regn-20260630.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000023/exhibit991q22026.htm"
+  }
+ ],
+ "rivals": [
+  "SNY",
+  "BAYN.DE",
+  "RARE",
+  "KNSA",
+  "AZN",
+  "ROG.SW",
+  "NVS",
+  "ABBV",
+  "AMGN",
+  "LLY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Regeneron stock forecast",
+   "meta_description": "Regeneron’s weighted price is $1,098.59 in October 2027; the outcome hinges on replacing weakening products with durable, profitable growth.",
+   "opening": "Regeneron’s weighted price is $1,098.59 in October 2027, with the bear case at 28%, the base case at 52% and the bull case at 20%. It hinges on whether Regeneron can replace weakening products with durable, profitable growth.",
+   "closing": "The full memo also explains Regeneron’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Regeneron’s shares go?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $1,098.59 in October 2027, implying a 40% total return including dividends. It reaches $1,351.74 in October 2029, implying a 73% total return including dividends. The bear case carries 28% and the base case 52%. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 788.48, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 788.48, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "742.63 (-5 %)",
+        "645.48 (-17 %)",
+        "553.66 (-28 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "1146.27 (+46 %)",
+        "1300.10 (+66 %)",
+        "1439.25 (+84 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1472.95 (+87 %)",
+        "1814.43 (+131 %)",
+        "2241.53 (+186 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1098.59 (+40 %)",
+        "1219.67 (+56 %)",
+        "1351.74 (+73 %)"
+       ]
+      ],
+      "note": "The Weighted row is the probability-based average of the three cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for Regeneron?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path assumes the ended $595 million Sanofi development deduction lifts retained economics, Dupixent continues to grow, manufacturing normalizes and EYLEA HD replaces part of legacy EYLEA. The bear case gives earnings of $5,400 million, then $5,000 million and $4,600 million as biosimilars, payer pressure and pipeline setbacks overwhelm that recovery. The bull case gives $7,000 million, then $8,000 million and $9,200 million, requiring durable Dupixent growth, successful launches and lower disruption costs. Dupixent sales reached $17,806.7 million in 2025, but combined U.S. EYLEA sales fell 12% in the latest quarter. Management’s R&D guidance is $6,500–$6,635 million, which limits near-term margin expansion. The analyst next-twelve-month EPS estimate is $62.5594, supporting recovery but not guaranteeing it."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Regeneron really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts investment in productive assets from operating cash. On the broader definition used here, $1,213.7 million of capital spending left $3,765.2 million of free cash flow. Regeneron’s own measure was $4,080.5 million because it excluded purchased intangible rights. Those rights included the $155.0 million voucher and $160.3 million of Libtayo contingent consideration."
+      },
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation requires a further owner-focused adjustment. Regeneron recorded $993.7 million of stock-based compensation in 2025. It does not immediately consume cash, but it transfers ownership to employees or requires repurchases to offset dilution. Deducting it produces analytical “real free cash flow” of $2,771.5 million, or 19.3% of revenue."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,978.9",
+        "4,420.5",
+        "4,594.0",
+        "5,014.9",
+        "7,081.3"
+       ],
+       [
+        "− Capital spending",
+        "1,213.7",
+        "881.6",
+        "926.4",
+        "1,616.9",
+        "551.9"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,765.2",
+        "3,538.9",
+        "3,667.6",
+        "3,398.0",
+        "6,529.4"
+       ],
+       [
+        "− Stock pay",
+        "993.7",
+        "982.8",
+        "885.0",
+        "725.0",
+        "601.7"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,771.5",
+        "2,556.1",
+        "2,782.6",
+        "2,673.0",
+        "5,927.7"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "26.3%",
+        "24.9%",
+        "28.0%",
+        "27.9%",
+        "40.6%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "19.3%",
+        "18.0%",
+        "21.2%",
+        "22.0%",
+        "36.9%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out payments for intangible assets, such as Libtayo rights, while our count treats them as spending."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Regeneron today?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $788.48 and 19.5x trailing earnings, the price implies about $40.43 per share. A forward P/E of 12.6x implies about $62.58 per share. If the definitions match, investors are assuming roughly 55% earnings growth, even though the forward number has not yet been earned."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "788.48"
+       ],
+       [
+        "Market value (calculated)",
+        "81,177.4"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "75,889.4"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "19.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.4%"
+       ]
+      ],
+      "note": "Enterprise value is lower than market value because the company has more cash and short-term investments than debt, making the business effectively cheaper after using that cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "788.48"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1351.74 (+73 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 788.475,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "742.63 (-5 %)",
+       "645.48 (-17 %)",
+       "553.66 (-28 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "1146.27 (+46 %)",
+       "1300.10 (+66 %)",
+       "1439.25 (+84 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1472.95 (+87 %)",
+       "1814.43 (+131 %)",
+       "2241.53 (+186 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1098.59 (+40 %)",
+       "1219.67 (+56 %)",
+       "1351.74 (+73 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/regn/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=REGN&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Regeneron dividend: cash coverage and yield",
+   "meta_description": "Regeneron pays a quarterly dividend, funded by free cash flow, with its yield shown against the share price.",
+   "opening": "Regeneron pays a $0.94 quarterly dividend, or $3.76 annualized. Its $3,765.2 million of free cash flow covered the $370.3 million paid in 2025.",
+   "closing": "The full Regeneron memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Regeneron pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise cautiously in the base case from $4.00 to $4.24 and $4.52 per share. The bear holds them at $3.76, the current annualized rate from a $0.94 quarterly dividend. The bull reaches $4.24, $4.72 and $5.20. Free cash flow was $3,765.2 million and net cash was $5,288.0 million, supporting increases, but the dividend has only a short history."
+      },
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company increasingly returned cash to owners. Shareholder payouts rose from $1,645.4 million in 2021 to $3,808.9 million in 2025. Regeneron began regular quarterly dividends in February 2025 and paid $370.3 million that year; buybacks used another $3,438.6 million. A buyback purchases shares, reducing the number of shares that divide future earnings. That can help each remaining share, but only if Regeneron does not overpay."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "6,400 (5,400 / 7,000)",
+        "7,100 (5,000 / 8,000)",
+        "7,700 (4,600 / 9,200)"
+       ],
+       [
+        "Shares (millions)",
+        "100 (102 / 99.80)",
+        "98.30 (101 / 97.00)",
+        "96.30 (99.70 / 94.40)"
+       ],
+       [
+        "Dividends per share",
+        "4.00 (3.76 / 4.24)",
+        "4.24 (3.76 / 4.72)",
+        "4.52 (3.76 / 5.20)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Regeneron’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts investment in productive assets from operating cash. On the broader definition used here, $1,213.7 million of capital spending left $3,765.2 million of free cash flow. Regeneron’s own measure was $4,080.5 million because it excluded purchased intangible rights. Those rights included the $155.0 million voucher and $160.3 million of Libtayo contingent consideration."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,765.2",
+        "3,538.9",
+        "3,667.6",
+        "3,398.0",
+        "6,529.4"
+       ],
+       [
+        "− Dividends paid",
+        "370.3",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "3,438.6",
+        "2,603.3",
+        "2,235.0",
+        "2,082.8",
+        "1,645.4"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "935.6",
+        "1,432.6",
+        "1,315.2",
+        "4,884.0"
+       ],
+       [
+        "Paid to shareholders",
+        "3,808.9",
+        "2,603.3",
+        "2,235.0",
+        "2,082.8",
+        "1,645.4"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "101.2%",
+        "73.6%",
+        "60.9%",
+        "61.3%",
+        "25.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Regeneron’s dividend yield at its share price?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $788.48 and 19.5x trailing earnings, the price implies about $40.43 per share. A forward P/E of 12.6x implies about $62.58 per share. If the definitions match, investors are assuming roughly 55% earnings growth, even though the forward number has not yet been earned."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "788.48"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "19.5x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.5%"
+       ]
+      ],
+      "note": "Enterprise value is lower than market value because the company has more cash and short-term investments than debt, making the business effectively cheaper after using that cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.41"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.00",
+      "3.41"
+     ],
+     "Real free cash flow per share": [
+      "52.83",
+      "23.55",
+      "24.47",
+      "22.21",
+      "25.52"
+     ],
+     "Free cash flow per share": [
+      "58.19",
+      "29.94",
+      "32.26",
+      "30.75",
+      "34.67"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/regn/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=REGN&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Regeneron earnings: guidance and next results",
+   "meta_description": "Regeneron reports on October 30, 2026; watch manufacturing costs and collaboration profit after guidance.",
+   "opening": "Regeneron's next results are expected on October 30, 2026. Watch whether Regeneron's manufacturing costs improve and collaboration profit steps up.",
+   "closing": "The full memo also explains Regeneron's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Regeneron guided for the year?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Regeneron guides research at $6,500–$6,635 million under GAAP and $5,950–$6,050 million under non-GAAP. GAAP is the complete standardized accounting view; non-GAAP is management’s adjusted view, which removes selected costs such as stock-based compensation. The ranges describe one research program, not two, and excluded costs still affect shareholders."
+      },
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also expects product gross margin of 78.0%–79.0% under GAAP and 84.0%–85.0% under non-GAAP. Gross margin measures what product sales leave after manufacturing costs. It does not measure collaboration revenue, which follows different accounting rules. The Limerick interruption left factory costs running while production stopped, but production returned to normal by June, so later quarters should show whether the recovery improves costs and output."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "GAAP R&D",
+        "Year to Dec 2026",
+        "6,500",
+        "6,635",
+        "Jul 30, 2026"
+       ],
+       [
+        "Non-GAAP R&D",
+        "Year to Dec 2026",
+        "5,950",
+        "6,050",
+        "Jul 30, 2026"
+       ],
+       [
+        "GAAP gross margin on net product sales",
+        "Year to Dec 2026",
+        "78.0%",
+        "79.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Non-GAAP gross margin on net product sales",
+        "Year to Dec 2026",
+        "84.0%",
+        "85.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "1,030.0",
+        "1,100.0",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "The company says the stock-based compensation tax shortfall is less than one percent, so the table's one percent high end is only a rounded upper limit."
+     }
+    },
+    {
+     "heading": "How have Regeneron's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed to near flat in 2025 while operating margin continued to decline; the eye-franchise transition is central to the trend. The company’s real free cash flow, computed as cash from operations minus capital spending, moves with working-capital timing even as net cash remains strong. Diluted EPS can rise faster than real free cash flow per share when buybacks reduce the share count."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,290.7",
+        "3,605.4",
+        "3,884.3",
+        "3,754.3",
+        "3,675.6",
+        "3,028.7",
+        "3,789.2",
+        "3,720.7"
+       ],
+       [
+        "Gross margin",
+        "86.6%",
+        "81.4%",
+        "84.9%",
+        "86.1%",
+        "85.6%",
+        "84.7%",
+        "85.1%",
+        "86.8%"
+       ],
+       [
+        "Operating income",
+        "1,293.5",
+        "642.9",
+        "879.9",
+        "1,026.8",
+        "1,079.5",
+        "591.7",
+        "990.2",
+        "1,179.5"
+       ],
+       [
+        "Net income",
+        "1,296.9",
+        "727.2",
+        "844.6",
+        "1,460.0",
+        "1,391.6",
+        "808.7",
+        "917.7",
+        "1,340.6"
+       ],
+       [
+        "EPS, diluted",
+        "12.23",
+        "6.75",
+        "7.86",
+        "13.62",
+        "12.81",
+        "7.27",
+        "8.06",
+        "11.54"
+       ]
+      ],
+      "note": "Earnings per share is the profit for one share, so it is not measured in millions of dollars like most other rows."
+     }
+    },
+    {
+     "heading": "What should you watch in Regeneron's next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Regeneron plans to report third-quarter results on October 30, 2026. This will be the first full period after Limerick returned to normal production and after the Sanofi Development Balance stopped reducing collaboration revenue. The release should show whether manufacturing costs improved, collaboration profit stepped up and capital spending accelerated."
+      },
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The US Food and Drug Administration, the country’s medicines regulator, is expected to act on cemdisiran in generalized myasthenia gravis in November 2026. Priority review speeds the timetable, but it does not promise approval or demand. Even an approval would need doctors to prescribe the medicine and insurers to cover it."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,290.7"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "12.23"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,720.7",
+      "3,789.2",
+      "3,028.7",
+      "3,675.6",
+      "3,754.3",
+      "3,884.3",
+      "3,605.4",
+      "4,290.7"
+     ],
+     "EPS, diluted": [
+      "11.54",
+      "8.06",
+      "7.27",
+      "12.81",
+      "13.62",
+      "7.86",
+      "6.75",
+      "12.23"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/regn/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=REGN&src=seo-earnings"
+  }
+ },
+ "short_name": "Regeneron",
+ "first_memo_date": "2026-10-16T19:18:25Z"
+}

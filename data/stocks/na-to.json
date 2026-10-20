@@ -1,0 +1,781 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NA.TO",
+ "slug": "na-to",
+ "company": "National Bank of Canada",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "bank",
+ "country": "canada",
+ "memo_date": "2026-10-14T06:10:26Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 202.31,
+ "price_date": "2026-10-13T20:00:00Z",
+ "next_earnings": "2026-12-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 275,
+  "tables": 27,
+  "words": 16407,
+  "sources": 154
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "National Bank of Canada is a Montreal-based bank that helps households and businesses store, borrow, move and invest money. Its business is a set of relationships: customers provide deposits or pay fees, the bank supplies credit and financial services, and the difference left after funding, operating costs, losses and tax becomes profit."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://www.nbc.ca/content/dam/bnc/a-propos-de-nous/relations-investisseurs/assemblee-annuelle/2026/na-annual-report-2025.pdf"
+  },
+  {
+   "title": "Q3 supplementary financial information",
+   "url": "https://www.nbc.ca/content/dam/bnc/a-propos-de-nous/relations-investisseurs/resultats-trimestriels/2026/suppack-q3-2026.pdf"
+  },
+  {
+   "title": "Annual report — FY2024",
+   "url": "https://www.nbc.ca/content/dam/bnc/a-propos-de-nous/relations-investisseurs/assemblee-annuelle/2025/na-annual-report-2024.pdf"
+  }
+ ],
+ "rivals": [
+  "RY.TO",
+  "TD.TO",
+  "BMO.TO",
+  "BNS.TO",
+  "CM.TO",
+  "EQB.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "National Bank stock forecast",
+   "meta_description": "National Bank's weighted forecast reaches C$203.16 in October 2027 and C$225.56 in October 2029 across bear, base and bull scenarios.",
+   "opening": "The probability-weighted forecast reaches C$203.16 in October 2027 and C$225.56 in October 2029. It hinges on CWB integration.",
+   "closing": "The full National Bank memo also answers how National Bank's business works, how it compares with its rivals, how management is executing, and which risks matter.",
+   "blocks": [
+    {
+     "heading": "Where could National Bank's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast reaches C$203.16 in October 2027. That is a +3% return with dividends included. At October 2029, it reaches C$225.56. That is a +20% return with dividends included. The model assigns a 30% probability to the bear case. The base case is 50%; the bull case is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 202.31, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 202.31, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "163.79 (-16 %)",
+        "149.03 (-21 %)",
+        "135.44 (-25 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "215.78 (+9 %)",
+        "231.99 (+20 %)",
+        "249.88 (+32 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "230.65 (+17 %)",
+        "263.33 (+36 %)",
+        "299.95 (+57 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "203.16 (+3 %)",
+        "213.37 (+11 %)",
+        "225.56 (+20 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for National Bank?",
+     "paragraphs": [
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Book value grows in every base-case year because retained earnings exceed dividends and repurchases. The base path starts from the latest common-equity balance and rises steadily, while the bear case ends at C$35,460 million and the bull case at C$36,910 million. The base assumes CWB integration and stable credit costs; the bear lowers earnings and buybacks, while the bull assumes stronger synergies and full repurchases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much does National Bank earn and give back?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "**Kept, per share** — CWB items, including recurring amortization, cost C$462 million after tax; without them, money kept after dividends and buybacks was C$6.11 per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$",
+      "caption": "What one share gets (C$)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "10.07",
+        "10.68",
+        "9.24",
+        "9.61",
+        "8.85"
+       ],
+       [
+        "− Dividends, per share",
+        "4.61",
+        "4.28",
+        "3.94",
+        "3.54",
+        "2.81"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.56",
+        "0.00",
+        "0.00",
+        "0.72",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "4.90",
+        "6.40",
+        "5.30",
+        "5.36",
+        "6.04"
+       ],
+       [
+        "Book value per share",
+        "78.39",
+        "65.74",
+        "60.40",
+        "55.24",
+        "47.44"
+       ]
+      ],
+      "note": "The 11.6% increase in diluted shares means each share represents a smaller piece of the company, even though the company spent money buying back some shares."
+     }
+    },
+    {
+     "heading": "What does an investor pay for National Bank today?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The current price and forward P/E imply about C$13.14 of earnings per share over the next twelve months. That is about 9.7% above the earnings implied by the trailing multiple. The broad message is simple: investors already expect earnings to improve."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$",
+      "caption": "What an investor pays today (C$)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "202.31"
+       ],
+       [
+        "Market value (calculated)",
+        "77,230"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.4x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.5x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings ratio uses analysts’ guesses about future profit, so it can be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "202.31"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "225.56 (+20 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "16.9x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 202.31,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "163.79 (-16 %)",
+       "149.03 (-21 %)",
+       "135.44 (-25 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "215.78 (+9 %)",
+       "231.99 (+20 %)",
+       "249.88 (+32 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "230.65 (+17 %)",
+       "263.33 (+36 %)",
+       "299.95 (+57 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "203.16 (+3 %)",
+       "213.37 (+11 %)",
+       "225.56 (+20 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/na-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NA.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "National Bank dividend",
+   "meta_description": "National Bank pays C$1.32 quarterly; dividends rose from C$2.84 to C$4.64, while retained common earnings covered distributions.",
+   "opening": "National Bank pays C$1.32 per share each quarter, and annual dividends per share rose from C$2.84 to C$4.64 across the five-year record. National Bank retained more common earnings than it distributed, so its earnings covered dividends while buybacks remained the smaller return of capital.",
+   "closing": "The full memo also explains National Bank’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does National Bank pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 267,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case from the current quarterly rate of C$1.32. Annual DPS increased from C$2.84 to C$4.64 across the five-year record, which supports continued resilience. The base path reaches C$6.08 by 2029; the bear freezes at C$5.28, while the bull reaches C$6.56. The higher paths require earnings growth and capital capacity within the 40–50% payout target."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$",
+      "caption": "What one share gets (C$)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "10.07",
+        "10.68",
+        "9.24",
+        "9.61",
+        "8.85"
+       ],
+       [
+        "− Dividends, per share",
+        "4.61",
+        "4.28",
+        "3.94",
+        "3.54",
+        "2.81"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.56",
+        "0.00",
+        "0.00",
+        "0.72",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "4.90",
+        "6.40",
+        "5.30",
+        "5.36",
+        "6.04"
+       ]
+      ],
+      "note": "The 11.6% increase in diluted shares means each share represents a smaller piece of the company, even though the company spent money buying back some shares."
+     }
+    },
+    {
+     "heading": "Does National Bank cover its dividend with what it earns?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Across the five fiscal years ending October 2025, National Bank retained more common earnings than it distributed. Dividends grew, while buybacks remained the smaller return of capital. The table follows net income through claims, common dividends, buybacks, retained capital, adjusted earnings, payouts, acquisitions, new shares sold and the remaining measure."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "Follow the money: what it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "3,852",
+        "3,663",
+        "3,150",
+        "3,277",
+        "3,017"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,763",
+        "1,468",
+        "1,344",
+        "1,206",
+        "958"
+       ],
+       [
+        "− Share buybacks",
+        "213",
+        "0",
+        "0",
+        "245",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "1,876",
+        "2,195",
+        "1,806",
+        "1,826",
+        "2,059"
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "51.3%",
+        "40.1%",
+        "42.7%",
+        "44.3%",
+        "31.8%"
+       ]
+      ],
+      "note": "The bank's own dividend payout ratio is lower because it uses its adjusted profit and counts only dividends, while we use reported profit and count dividends plus share buybacks."
+     }
+    },
+    {
+     "heading": "What could change National Bank’s dividend?",
+     "paragraphs": [
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would gain support if fiscal 2026 cost and funding synergies reached C$270 million, then credit costs leveled off through fiscal 2027 and beyond. Adjusted EPS growing within management’s 5–10% range would support the assumed dividend and buyback path."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "32,860 (32,560 / 33,010)",
+        "34,760 (33,960 / 34,760)",
+        "36,860 (35,460 / 36,910)"
+       ],
+       [
+        "Shares (millions)",
+        "373 (378 / 372)",
+        "367 (376 / 363)",
+        "361 (374 / 354)"
+       ],
+       [
+        "Dividends per share",
+        "5.44 (5.28 / 5.60)",
+        "5.76 (5.28 / 6.08)",
+        "6.08 (5.28 / 6.56)"
+       ],
+       [
+        "Price to book value",
+        "2.45 (1.90 / 2.60)",
+        "2.45 (1.65 / 2.75)",
+        "2.45 (1.43 / 2.88)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.3%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/na-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NA.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "National Bank earnings date and guidance",
+   "meta_description": "National Bank’s next results are expected on December 2, 2026; guidance centers on adjusted earnings, returns and synergies, with credit costs to watch.",
+   "opening": "National Bank’s next results are expected on December 2, 2026. Watch credit costs, AIRB approval and revenue synergies as National Bank tests its plan.",
+   "closing": "The full memo also answers questions about National Bank’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has National Bank guided for adjusted earnings and returns?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Its medium-term goals are faster adjusted earnings-per-share growth, a higher adjusted return on equity, and a controlled dividend payout. Adjusted profit removes items management considers unusual, such as some acquisition expenses, so readers can see the underlying business. But those costs still consume cash, profit or capital."
+      },
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The less certain promise is AIRB, an approved internal method for measuring credit risk. If regulators accept better-calibrated models, the same loans may require less common capital. That can improve return on equity, but it creates neither customer revenue nor cash, and the expected benefit has moved to late 2027."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "CET1 ratio target",
+        "Fiscal 2027",
+        "13.0%",
+        "13.0%",
+        "2026-08-26"
+       ],
+       [
+        "Growth in diluted earnings per share – Adjusted",
+        "Medium-term",
+        "5.0%",
+        "10.0%",
+        "2025-12-03"
+       ],
+       [
+        "ROE – Adjusted",
+        "Medium-term",
+        "15.0%",
+        "20.0%",
+        "2025-12-03"
+       ],
+       [
+        "Dividend payout ratio – Adjusted",
+        "Medium-term",
+        "40.0%",
+        "50.0%",
+        "2025-12-03"
+       ],
+       [
+        "ROE target",
+        "Fiscal 2026",
+        "16.0%",
+        "16.0%",
+        "2026-08-26"
+       ],
+       [
+        "Adjusted ROE target",
+        "Fiscal 2027",
+        "17.0%",
+        "",
+        "2026-08-26"
+       ]
+      ],
+      "note": "The share repurchase figures show how many shares the company is allowed to buy and spend, not how much it has already bought or spent."
+     }
+    },
+    {
+     "heading": "Has National Bank kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "National Bank announced C$270 million in annual pre-tax cost and funding synergies, expected by the third year after closing. By July 31, 2026, it reported C$238 million in cumulative realized cost and funding synergies. It also reported C$52 million in revenue synergies against a C$50 million target. Cumulative savings are benefits added up since completion; an annualized figure is the current run-rate over twelve months. They are not interchangeable."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have National Bank revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached C$4,053 million, up 17.5% year over year. Net income reached C$1,307 million, up 22.7%. The result was stronger than a comparison distorted by the acquisition-heavy period, but its composition matters."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,053",
+        "3,907",
+        "3,893",
+        "3,698",
+        "3,449",
+        "3,650",
+        "3,183",
+        "2,944"
+       ],
+       [
+        "Net interest income",
+        "1,254",
+        "1,309",
+        "1,394",
+        "1,169",
+        "1,172",
+        "1,205",
+        "972",
+        "784"
+       ],
+       [
+        "Net income",
+        "1,307",
+        "1,234",
+        "1,254",
+        "1,059",
+        "1,065",
+        "896",
+        "997",
+        "955"
+       ],
+       [
+        "EPS, diluted",
+        "3.25",
+        "3.06",
+        "3.08",
+        "2.57",
+        "2.58",
+        "2.17",
+        "2.78",
+        "2.66"
+       ],
+       [
+        "Net interest margin",
+        "0.8%",
+        "0.9%",
+        "1.0%",
+        "0.8%",
+        "0.9%",
+        "1.0%",
+        "0.8%",
+        "0.7%"
+       ],
+       [
+        "CET1 capital ratio",
+        "13.5%",
+        "13.5%",
+        "13.7%",
+        "13.8%",
+        "13.9%",
+        "13.4%",
+        "13.6%",
+        "13.7%"
+       ]
+      ],
+      "note": "Although the descriptions say yearly figures, each column covers one quarter, or about three months."
+     }
+    },
+    {
+     "heading": "What should investors watch in National Bank’s next results?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Investors should therefore watch the AIRB submission and approval, actual repurchases, credit costs and analyst revisions. By fiscal 2028, the decisive test will be whether revenue synergies persist after conversion costs and credit losses."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (C$ millions)",
+     "value": "4,053"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "3.25"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,944",
+      "3,183",
+      "3,650",
+      "3,449",
+      "3,698",
+      "3,893",
+      "3,907",
+      "4,053"
+     ],
+     "EPS, diluted": [
+      "2.66",
+      "2.78",
+      "2.17",
+      "2.58",
+      "2.57",
+      "3.08",
+      "3.06",
+      "3.25"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/na-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NA.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "National Bank",
+ "first_memo_date": "2026-10-14T06:10:26Z"
+}

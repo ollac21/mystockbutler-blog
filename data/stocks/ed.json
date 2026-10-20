@@ -1,0 +1,844 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ED",
+ "slug": "ed",
+ "company": "Consolidated Edison, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T05:30:12Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 112.26,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 27,
+  "words": 16947,
+  "sources": 204
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Consolidated Edison is a network business: it delivers electricity, gas and steam to customers in and around New York City. To understand how a dollar moves through it, start with what the company sells, then follow who pays and where the money goes."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Utility Regulation",
+   "url": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000064/annualreport25_finalv2.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000028/ed-20251231xexx991.htm"
+  },
+  {
+   "title": "June 2026 Form 10-Q, July developments",
+   "url": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000142/ed-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "PEG",
+  "FE",
+  "NG.L",
+  "EXC",
+  "D",
+  "DUK",
+  "AEP",
+  "XEL",
+  "SO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Con Edison stock forecast",
+   "meta_description": "Con Edison's weighted forecast reaches $117.43 by October 2029; the range depends on recovery, financing and dilution.",
+   "opening": "Con Edison's weighted forecast reaches $117.43 by October 2029, after $105.43 in October 2027 and $111.11 in October 2028. Con Edison's forecast hinges on approved investment entering service with broadly constructive recovery.",
+   "closing": "The full memo also explains Con Edison's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Con Edison's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to a modest base-case gain, but the weighted result stays below today in the first year. The probability-weighted price is $105.43 in October 2027, implying a 3% loss including dividends. It rises to $111.11 in October 2028, a 6% gain. By October 2029 it reaches $117.43, a 15% gain. Today’s reference price is $112.26."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The range at the final date is wide, from $87.81 in the bear case to $146.40 in the bull case. The probabilities favor continuity: bear 28%, base 54% and bull 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 112.26, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 112.26, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "90.99 (-16%)",
+        "89.46 (-14%)",
+        "87.81 (-12%)"
+       ],
+       [
+        "Base",
+        "54%",
+        "108.69 (+0%)",
+        "115.60 (+10%)",
+        "123.14 (+20%)"
+       ],
+       [
+        "Bull",
+        "18%",
+        "118.14 (+9%)",
+        "131.32 (+24%)",
+        "146.40 (+41%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "105.43 (-3%)",
+        "111.11 (+6%)",
+        "117.43 (+15%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Con Edison, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case applies 6.5% annual EPS growth and 2% annual share growth. It reaches $2,393 million in October 2027, $2,600 million in October 2028 and $2,825 million in October 2029. The path sits near the midpoint of management’s 6%–7% growth target and assumes approved investment enters service with broadly constructive recovery. The bear case uses 3% EPS growth and 2% share growth, producing $2,313 million, $2,429 million and $2,551 million because affordability, regulatory lag and financing costs weaken per-share growth. The bull case uses 8.5% EPS growth and 1.5% share growth, producing $2,426 million, $2,672 million and $2,943 million because electrification, reliability demand and timely project recovery exceed the plan."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,393 (2,313 / 2,426)",
+        "2,600 (2,429 / 2,672)",
+        "2,825 (2,551 / 2,943)"
+       ],
+       [
+        "Shares (millions)",
+        "381 (381 / 380)",
+        "389 (394 / 387)",
+        "397 (407 / 392)"
+       ],
+       [
+        "Dividends per share",
+        "3.66 (3.55 / 3.70)",
+        "3.81 (3.55 / 3.90)",
+        "3.96 (3.55 / 4.10)"
+       ],
+       [
+        "Price to earnings",
+        "17.30 (15.00 / 18.50)",
+        "17.30 (14.50 / 19.00)",
+        "17.30 (14.00 / 19.50)"
+       ]
+      ],
+      "note": "The numbers in parentheses show lower and higher possible outcomes around the main forecast."
+     }
+    },
+    {
+     "heading": "How much cash does Con Edison really make?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow reached $4,800 million, compared with net income of $2,023 million. Depreciation explains part of the difference: it reduces accounting profit without requiring a new cash payment that year. But after $5,245 million of capital spending, free cash flow was negative $445 million. That pattern appeared throughout the five years shown."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,800",
+        "3,614",
+        "2,156",
+        "3,429",
+        "2,558"
+       ],
+       [
+        "− Capital spending",
+        "5,245",
+        "5,245",
+        "4,740",
+        "4,161",
+        "3,953"
+       ],
+       [
+        "**= Free cash flow**",
+        "-445",
+        "-1,631",
+        "-2,584",
+        "-732",
+        "-1,395"
+       ],
+       [
+        "− Stock pay",
+        "55",
+        "35",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Real free cash flow**",
+        "-500",
+        "-1,666",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "Free cash flow is negative because the company spent more cash on equipment and buildings than its day-to-day business brought in."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Con Edison?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend looks more comfortable against accounting earnings than against cash. Free cash flow is the cash left after investment, and Con Edison reported $2.47 billion of utility capital expenditures in the first half of 2026. Contractors must be paid today, even when depreciation and customer recovery occur over decades. That explains how the dividend can consume about 58% of adjusted earnings while free cash flow remains negative. The tension between earnings and cash leads to the company’s history."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "112.26"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "117.43 (+15%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 112.26,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "90.99 (-16%)",
+       "89.46 (-14%)",
+       "87.81 (-12%)"
+      ]
+     },
+     "Base": {
+      "probability": "54%",
+      "values": [
+       "108.69 (+0%)",
+       "115.60 (+10%)",
+       "123.14 (+20%)"
+      ]
+     },
+     "Bull": {
+      "probability": "18%",
+      "values": [
+       "118.14 (+9%)",
+       "131.32 (+24%)",
+       "146.40 (+41%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "105.43 (-3%)",
+       "111.11 (+6%)",
+       "117.43 (+15%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ed/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ED&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Con Edison dividend: cash coverage",
+   "meta_description": "Con Edison pays a growing dividend, but heavy investment leaves free cash flow negative; the full picture covers cash, plans, risks and yield.",
+   "opening": "Con Edison pays an annualized dividend of $3.55 per share, following the latest quarterly payment of $0.8875. Its dividend uses about 58% of adjusted earnings, but free cash flow remains negative after capital spending.",
+   "closing": "The full memo also explains Con Edison's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Con Edison pay per share?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts from an annualized $3.55, following the latest quarterly payment of $0.8875. The base case assumes modest January increases, taking DPS to $3.6625, $3.8125 and $3.9625 across the forecast dates. That reflects the long record of annual increases, but keeps dividend growth below EPS growth because capital spending and negative free cash flow remain heavy. The bear case holds DPS at $3.55 as funding pressure forces a pause. The bull case reaches $3.70, $3.90 and $4.10 as earnings and cash generation improve."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "5.64",
+        "5.24",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Free cash flow per share",
+        "-1.24",
+        "-4.70",
+        "-7.40",
+        "-2.06",
+        "-3.99"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.25",
+        "3.17",
+        "3.14",
+        "3.06",
+        "2.95"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "4.49",
+        "7.86",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Con Edison's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow reached $4,800 million, compared with net income of $2,023 million. Depreciation explains part of the difference: it reduces accounting profit without requiring a new cash payment that year. But after $5,245 million of capital spending, free cash flow was negative $445 million. That pattern appeared throughout the five years shown."
+      },
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend looks more comfortable against accounting earnings than against cash. Free cash flow is the cash left after investment, and Con Edison reported $2.47 billion of utility capital expenditures in the first half of 2026. Contractors must be paid today, even when depreciation and customer recovery occur over decades. That explains how the dividend can consume about 58% of adjusted earnings while free cash flow remains negative. The tension between earnings and cash leads to the company’s history."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-445",
+        "-1,631",
+        "-2,584",
+        "-732",
+        "-1,395"
+       ],
+       [
+        "− Dividends paid",
+        "1,166",
+        "1,100",
+        "1,096",
+        "1,089",
+        "1,030"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "1,000",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,611",
+        "2,731",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "1,166",
+        "1,100",
+        "2,096",
+        "1,089",
+        "1,030"
+       ]
+      ],
+      "note": "The company paid dividends even though it generated negative free cash flow, so it had to use cash it already held and money from new shares or borrowing."
+     }
+    },
+    {
+     "heading": "What could change Con Edison's dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Funding evidence would also matter. Higher interest expense, larger equity issuance or continued negative free cash flow would reduce per-share growth and weaken the multiple [scenario B3]. Conversely, delivery against the 6%–7% EPS target, completion of the approved investment programme and constructive recovery decisions would support the base case [scenario A1][scenario A2]."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,393 (2,313 / 2,426)",
+        "2,600 (2,429 / 2,672)",
+        "2,825 (2,551 / 2,943)"
+       ],
+       [
+        "Shares (millions)",
+        "381 (381 / 380)",
+        "389 (394 / 387)",
+        "397 (407 / 392)"
+       ],
+       [
+        "Dividends per share",
+        "3.66 (3.55 / 3.70)",
+        "3.81 (3.55 / 3.90)",
+        "3.96 (3.55 / 4.10)"
+       ],
+       [
+        "Price to earnings",
+        "17.30 (15.00 / 18.50)",
+        "17.30 (14.50 / 19.00)",
+        "17.30 (14.00 / 19.50)"
+       ]
+      ],
+      "note": "The numbers in parentheses show lower and higher possible outcomes around the main forecast."
+     }
+    },
+    {
+     "heading": "What is Con Edison's dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue rose in 2025, but operating margin remained below 2023’s level. The company’s own free cash flow stayed negative in 2024 and 2025; diluted EPS reached $5.64 in 2025 while free cash flow per share remained -$1.24. The 3.2% dividend yield sits beside negative free-cash-flow yields. Shares trade at 18.4x trailing earnings and 17.3x forward earnings."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.25"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-1.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.95",
+      "3.06",
+      "3.14",
+      "3.17",
+      "3.25"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "-4.80",
+      "-1.39"
+     ],
+     "Free cash flow per share": [
+      "-3.99",
+      "-2.06",
+      "-7.40",
+      "-4.70",
+      "-1.24"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ed/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ED&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Con Edison earnings date and guidance",
+   "meta_description": "Con Edison reports on November 5, 2026, with guidance, past promises, recent results and what to watch.",
+   "opening": "Con Edison’s next results are expected on November 5, 2026. Watch whether Con Edison’s investment program earns its planned return.",
+   "closing": "The full memo explains Con Edison’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Con Edison guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, management guides to adjusted EPS of $6.00–$6.20 per share. It excludes the one-time gain from selling its Mountain Valley Pipeline investment because utility earnings are meant to show the continuing business."
+      },
+      {
+       "n": 197,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The plan calls for $6,595 million of capital investment in 2026. It rises to $6,759 million in 2027. Con Edison may issue up to $3,200 million of long-term debt and $1,100 million of common equity in 2026, followed by up to $3,000 million of debt and $1,200 million of equity in 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ per share, except where labelled",
+      "caption": "Guidance in force (US$ per share, except where labelled)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date given"
+      ],
+      "rows": [
+       [
+        "Adjusted earnings per share (non-GAAP)",
+        "Year to Dec 2026",
+        "6.00",
+        "6.20",
+        "Aug 6, 2026"
+       ],
+       [
+        "Capital investments — 2026 (US$ millions)",
+        "Year to Dec 2026",
+        "6,595",
+        "6,595",
+        "Aug 6, 2026"
+       ],
+       [
+        "Capital investments — 2027 (US$ millions)",
+        "Year to Dec 2027",
+        "6,759",
+        "6,759",
+        "Aug 6, 2026"
+       ],
+       [
+        "Issuance of long-term debt — 2026 (US$ millions)",
+        "Year to Dec 2026",
+        "",
+        "3,200",
+        "Feb 19, 2026"
+       ],
+       [
+        "Issuance of common equity — 2026 (US$ millions)",
+        "Year to Dec 2026",
+        "",
+        "1,100",
+        "Feb 19, 2026"
+       ],
+       [
+        "Total capital requirements — 2026 (US$ millions)",
+        "Year to Dec 2026",
+        "6,845",
+        "6,845",
+        "Feb 19, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Con Edison keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 116,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management forecast adjusted earnings of US$5.50–US$5.70 per share for 2025. It delivered US$5.70. Five-year adjusted earnings growth was 6.4%, above the earlier forecast of 3%–5%. Those results support the performance case, but they do not prove that every project earned an adequate return."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Con Edison’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $4,069 million in the June 2026 quarter, versus $3,595 million in the June 2025 quarter. Operating income rose from $355 million to $552 million. Net income increased from $246 million to $308 million, while diluted EPS rose from $0.68 to $0.83. Purchased-energy pass-throughs lowered gross margin even as regulated delivery earnings improved."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,069",
+        "5,095",
+        "3,995",
+        "4,530",
+        "3,595",
+        "4,798",
+        "3,669",
+        "4,092"
+       ],
+       [
+        "Operating income",
+        "552",
+        "1,177",
+        "487",
+        "968",
+        "355",
+        "1,125",
+        "477",
+        "862"
+       ],
+       [
+        "Net income",
+        "308",
+        "924",
+        "297",
+        "688",
+        "246",
+        "791",
+        "310",
+        "588"
+       ],
+       [
+        "EPS, diluted",
+        "0.83",
+        "2.54",
+        "0.82",
+        "1.90",
+        "0.68",
+        "2.25",
+        "0.89",
+        "1.69"
+       ],
+       [
+        "**= Free cash flow**",
+        "394",
+        "-1,105",
+        "30",
+        "-619",
+        "569",
+        "-425",
+        "-67",
+        "-866"
+       ]
+      ],
+      "note": "Free cash flow can be negative even when the company brings in cash because it spent more on equipment and buildings than its daily business generated."
+     }
+    },
+    {
+     "heading": "What should investors watch in Con Edison’s next results?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Con Edison plans to release third-quarter results after the market closes on November 5, 2026. Investors should look for updated guidance, construction spending, operating cash and completed share issuance. A maintained earnings range matters more if the project and financing schedules also hold."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,069"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.83"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,092",
+      "3,669",
+      "4,798",
+      "3,595",
+      "4,530",
+      "3,995",
+      "5,095",
+      "4,069"
+     ],
+     "EPS, diluted": [
+      "1.69",
+      "0.89",
+      "2.25",
+      "0.68",
+      "1.90",
+      "0.82",
+      "2.54",
+      "0.83"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ed/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ED&src=seo-earnings"
+  }
+ },
+ "short_name": "Con Edison",
+ "first_memo_date": "2026-10-19T05:30:12Z"
+}

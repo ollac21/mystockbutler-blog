@@ -30,6 +30,11 @@ export function pagePath(slug, type) {
   return `/stocks/${slug}/${type === 'stock' ? '' : `${type}/`}`;
 }
 
+// The letter hubs' address: never a company's (/stocks/v/ is Visa's page).
+export function letterPath(l) {
+  return `/stocks/letter/${l}/`;
+}
+
 function letterOf(company) {
   const c = String(company || '').trim().charAt(0).toUpperCase();
   return c >= 'A' && c <= 'Z' ? c.toLowerCase() : '0-9';
@@ -260,7 +265,9 @@ function chaptersRail(data, cta) {
 
 // One company page. ctx.exists(path) tells whether another page of this build exists (links to it only then).
 export function renderCompanyPage(data, type, ctx) {
-  const page = data.pages[type];
+  const page0 = data.pages[type];
+  const shared = ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
+  const page = shared ? { ...page0, title: `${page0.title} (${data.ticker})` } : page0;
   const slug = data.slug;
   const path = pagePath(slug, type);
   const url = `${SITE}${path}`;
@@ -323,7 +330,7 @@ export function renderCompanyPage(data, type, ctx) {
     .map((r) => `<a href="${pagePath(r.slug, 'stock')}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
   const hubs = [`<a href="/stocks/">All stocks</a>`];
   if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
-  hubs.push(`<a href="/stocks/${letterOf(company)}/">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
+  hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
   const links = `<section class="more"><h3>More on ${esc(company)}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>Its rivals</h3><div>${rivals.join('')}</div>` : ''}<h3>Browse</h3><div>${hubs.join('')}</div></section>`;
   const article = {
     '@type': 'Article',
@@ -396,7 +403,7 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
 // Only the letters that have a hub (a letter with no company has no page to link to).
 function letterNav(present) {
   const letters = [...'abcdefghijklmnopqrstuvwxyz', '0-9'].filter((l) => !present || present.has(l));
-  return `<nav class="letters" aria-label="Companies by letter">${letters.map((l) => `<a href="/stocks/${l}/">${l.toUpperCase()}</a>`).join('')}</nav>`;
+  return `<nav class="letters" aria-label="Companies by letter">${letters.map((l) => `<a href="${letterPath(l)}">${l.toUpperCase()}</a>`).join('')}</nav>`;
 }
 
 export function renderHubs(companies, { today = new Date() } = {}) {
@@ -437,12 +444,12 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     const list = byName.filter((c) => letterOf(shortName(c)) === l);
     if (!list.length) continue;
     pages.push(hubPage({
-      path: `/stocks/${l}/`,
+      path: letterPath(l),
       title: `Stocks starting with ${l.toUpperCase()}: forecasts, dividends, earnings`,
       description: `Research memos on ${list.length} companies whose name starts with ${l.toUpperCase()}.`,
       intro: `${list.length} companies whose name starts with ${l.toUpperCase()}.`,
       sections: [nav(), hubList(list)],
-      crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: l.toUpperCase(), path: `/stocks/${l}/` }],
+      crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: l.toUpperCase(), path: letterPath(l) }],
     }));
   }
   pages.push(hubPage({
@@ -606,7 +613,10 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
   const exists0 = new Set(usable.flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => pagePath(c.slug, t))));
-  const ctx = { bySlug, slugOf, exists: (p) => exists0.has(p) || hubPaths.has(p) };
+  const titleCount = new Map();
+  for (const c of usable) for (const t of TYPES) if (c.pages[t]) titleCount.set(c.pages[t].title, (titleCount.get(c.pages[t].title) || 0) + 1);
+  const sharedTitles = new Set([...titleCount].filter(([, n]) => n > 1).map(([t]) => t));
+  const ctx = { bySlug, slugOf, sharedTitles, exists: (p) => exists0.has(p) || hubPaths.has(p) };
   const hubPaths = new Set();
   // First pass: company pages, then the gate; a held page leaves the site and its hubs.
   let built = usable.flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => renderCompanyPage(c, t, ctx)));
@@ -642,6 +652,9 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     .map((c) => ({ ...c, pages: Object.fromEntries(Object.entries(c.pages).filter(([t]) => pass.some((b) => b.slug === c.slug && b.type === t))) }))
     .filter((c) => Object.keys(c.pages).length);
   const hubs = renderHubs(live, { today });
+  const pagePaths = new Set(pass.map((b) => b.path));
+  const clash = hubs.filter((h) => pagePaths.has(h.path)).map((h) => h.path);
+  if (clash.length) throw new Error(`a hub and a company page share an address: ${clash.join(', ')}`);
   hubPaths.clear();
   hubs.forEach((h) => hubPaths.add(h.path));
   const newest = live.map((c) => isoDay(c.memo_date)).sort().pop() || '';

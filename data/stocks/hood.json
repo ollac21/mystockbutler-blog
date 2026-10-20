@@ -1,0 +1,543 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HOOD",
+ "slug": "hood",
+ "company": "Robinhood Markets, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T00:55:10Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 103.99,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 291,
+  "tables": 28,
+  "words": 17563,
+  "sources": 295
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Robinhood Markets, Inc. is a financial-services platform for investing, trading, borrowing and managing money. Its business is easier to understand as a flow: customers bring orders, cash and balances, while counterparties and customers pay for access, financing and services."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000029/hood-20251231.htm"
+  },
+  {
+   "title": "Robinhood 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387925000049/hood-20241231.htm"
+  },
+  {
+   "title": "2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387924000054/hood-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "IBKR",
+  "COIN",
+  "SOFI",
+  "MS",
+  "XYZ",
+  "ETOR",
+  "BULL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Robinhood stock forecast",
+   "meta_description": "Robinhood's stock forecast weighs bear, base and bull scenarios, cash flow after stock pay, and today's earnings and cash valuation.",
+   "opening": "Robinhood's probability-weighted forecast reaches $89.10 in October 2027 and $93.60 in October 2029. It hinges on trading revenue per unit of activity and net interest spreads.",
+   "closing": "The full memo also answers how Robinhood’s business works, who its rivals are, how management allocates capital, and what risks could change the story.",
+   "blocks": [
+    {
+     "heading": "Where could Robinhood's shares go?",
+     "paragraphs": [
+      {
+       "n": 15,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case is $89.10 in October 2027, a -14% return. It is $93.60 in October 2029, a -10% return. The bear case has 30% probability. The base case has 50%; the bull case has 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 103.99, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 103.99, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "43.27 (-58 %)",
+        "33.61 (-68 %)",
+        "32.17 (-69 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "98.04 (-6 %)",
+        "96.00 (-8 %)",
+        "92.95 (-11 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "135.53 (+30 %)",
+        "164.32 (+58 %)",
+        "187.35 (+80 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "89.10 (-14 %)",
+        "90.95 (-13 %)",
+        "93.60 (-10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Robinhood?",
+     "paragraphs": [
+      {
+       "n": 287,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear story is a down-cycle followed by a valuation reset. Quieter trading, weaker monetization, legal limits on event contracts and lower interest spreads reduce profit. The bear price is $43.27 in October 2027 and $32.17 in October 2029. Its probability is 30% because HOOD has three loss-making years in the supplied history and trading revenue remains volume-sensitive."
+      },
+      {
+       "n": 288,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull story requires new products, acquisitions and crypto activity to create durable revenue. Gold, Banking, advisory products and event contracts must deepen customer relationships while legal access holds. The bull price is $135.53 in October 2027 and $187.35 in October 2029. Its probability is 20% because product adoption, integration, monetization and operating leverage must all work together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Robinhood really make?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow exceeded capital spending, and deducting stock pay produced a lower analytical measure of free cash flow. That measure treats shares issued as compensation as an economic cost to owners, even though no equivalent cash left the company immediately."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,638",
+        "-157",
+        "1,181",
+        "-852",
+        "-885"
+       ],
+       [
+        "− Capital spending",
+        "54",
+        "50",
+        "21",
+        "57",
+        "83"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,584",
+        "-207",
+        "1,160",
+        "-909",
+        "-968"
+       ],
+       [
+        "− Stock pay",
+        "305",
+        "304",
+        "871",
+        "654",
+        "1,572"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,279",
+        "-511",
+        "289",
+        "-1,563",
+        "-2,540"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though no cash was paid because giving employees shares reduces the shareholders’ ownership of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Robinhood today?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At US$103.99, investors value Robinhood’s common equity at US$93,495.57 million. Its 45.8x trailing P/E means paying US$45.80 for each dollar earned over the past year; its 34.3x forward P/E uses expected earnings for the next year. Those figures imply earnings growth of roughly 34% if the share price does not change. It is like paying US$46 for a shop that earned US$1 while expecting it to earn substantially more soon."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "103.99"
+       ],
+       [
+        "Market value (calculated)",
+        "93,495.57"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "91,289.57"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "45.8x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "34.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "The business value is lower than the stock-market value because the company has more cash than debt, so we subtract the extra cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "103.99"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "93.60 (-10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "34.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 103.99,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "43.27 (-58 %)",
+       "33.61 (-68 %)",
+       "32.17 (-69 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "98.04 (-6 %)",
+       "96.00 (-8 %)",
+       "92.95 (-11 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "135.53 (+30 %)",
+       "164.32 (+58 %)",
+       "187.35 (+80 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "89.10 (-14 %)",
+       "90.95 (-13 %)",
+       "93.60 (-10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/hood/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HOOD&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Robinhood earnings: what to watch",
+   "meta_description": "Robinhood reports on October 27, 2026; guidance, recent results and ordinary customer activity are the key tests.",
+   "opening": "Robinhood’s next results are scheduled for October 27, 2026. Watch whether profit is driven by ordinary customer activity.",
+   "closing": "The full memo also answers questions about Robinhood’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Robinhood guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Robinhood’s weighted price could be $89.10 in October 2027 and $93.60 in October 2029, below today’s price, if operating growth, product economics and legal access hold. Management’s guidance in force covers Adjusted Operating Expenses and SBC for the year to December 2026. It is $2.675–$2.775 billion and was issued July 29, 2026. The range includes Rothera and WonderFi but excludes credit-loss provisions and certain regulatory matters."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted Operating Expenses and SBC",
+        "Year to Dec 2026",
+        "2.675",
+        "2.775",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Robinhood keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has also delivered meaningful growth. In February 2025 it expected another year of double-digit revenue growth, and revenue ultimately grew 52%. Its original adjusted expense outlook was US$2.0–2.1 billion; the outcome was US$2.27 billion. The comparison must account for the later addition of acquisition costs and the exclusion of TradePMR from the original plan."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Robinhood’s last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from $989 million in June 2025 to $1,308 million in June 2026. That was 32.3% growth. Operating income rose from $439 million to $574 million, showing that the platform continued to expand."
+      },
+      {
+       "n": 183,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income rose from $386 million to $561 million. Diluted EPS rose from $0.42 to $0.62, but $0.14 of that EPS came from investment gains."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,308",
+        "1,067",
+        "1,283",
+        "1,274",
+        "989",
+        "927",
+        "1,014",
+        "637"
+       ],
+       [
+        "Operating income",
+        "574",
+        "411",
+        "650",
+        "635",
+        "439",
+        "370",
+        "556",
+        "151"
+       ],
+       [
+        "Net income",
+        "561",
+        "350",
+        "605",
+        "556",
+        "386",
+        "336",
+        "916",
+        "150"
+       ],
+       [
+        "EPS, diluted",
+        "0.62",
+        "0.38",
+        "0.66",
+        "0.61",
+        "0.42",
+        "0.37",
+        "1.01",
+        "0.17"
+       ],
+       [
+        "**= Free cash flow**",
+        "696",
+        "2,020",
+        "-950",
+        "-1,588",
+        "3,491",
+        "631",
+        "-1,415",
+        "1,793"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Robinhood watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 267,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results release is scheduled for October 27, 2026, after market close, followed by the earnings call at 5 p.m. Eastern. Investors should look for three things together: contributions from the acquired operations, adherence to the expense outlook and profit driven by ordinary customer activity. Strong revenue paired with widening excluded expenses would tell a different story from strong revenue with controlled total costs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "1,308"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.62"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "637",
+      "1,014",
+      "927",
+      "989",
+      "1,274",
+      "1,283",
+      "1,067",
+      "1,308"
+     ],
+     "EPS, diluted": [
+      "0.17",
+      "1.01",
+      "0.37",
+      "0.42",
+      "0.61",
+      "0.66",
+      "0.38",
+      "0.62"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/hood/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HOOD&src=seo-earnings"
+  }
+ },
+ "short_name": "Robinhood",
+ "first_memo_date": "2026-10-16T00:55:10Z"
+}

@@ -1,0 +1,844 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PM",
+ "slug": "pm",
+ "company": "Philip Morris International Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T06:46:35Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 201.19,
+ "price_date": "2026-10-09T20:00:02Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 233,
+  "tables": 27,
+  "words": 16459,
+  "sources": 190
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Philip Morris International, or PMI, is a tobacco and nicotine company whose business is changing from burning tobacco to a wider system of cigarettes, smoke-free products and repeat purchases. To understand how a dollar comes in and goes out, follow the products, the people who buy them, and the money as it moves through the chain."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, segment reporting",
+   "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026005939/pm-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026005932/earningsreleasepm-ex991xq4.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332925000011/earningsreleasepm-ex991xfy.htm"
+  }
+ ],
+ "rivals": [
+  "MO",
+  "BTI",
+  "IMB.L"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "PMI stock forecast",
+   "meta_description": "PMI's stock forecast covers bear, base and bull cases and hinges on repeat ZYN and IQOS demand becoming profitable cash growth.",
+   "opening": "PMI's weighted scenario is 1.68 in October 2029, against today's $201.19. It hinges on whether repeat ZYN and IQOS demand becomes profitable cash growth.",
+   "closing": "The full memo also answers how PMI's business works, how PMI's management allocates capital, who PMI's rivals are, and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could PMI's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s weighted output is below today’s $201.19 share price, although the scenario range remains wide. It reports weighted prices of 1.62 in October 2027, 1.66 in October 2028 and 1.68 in October 2029, each shown as a -0% return with dividends. By October 2029, the bear case reaches $111.03 and the bull case reaches $234.27, versus today’s $201.19."
+      },
+      {
+       "n": 215,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The detailed scenario probabilities are 30% bear, 50% base and 20% bull, making the base path the central expectation."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 201.19, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 201.19, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "0 %",
+        "125.43 (-34 %)",
+        "118.97 (-35 %)",
+        "111.03 (-35 %)"
+       ],
+       [
+        "Base",
+        "0 %",
+        "169.42 (-13 %)",
+        "173.27 (-7 %)",
+        "175.90 (-2 %)"
+       ],
+       [
+        "Bull",
+        "0 %",
+        "198.29 (+2 %)",
+        "219.93 (+16 %)",
+        "234.27 (+27 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1.62 (-0 %)",
+        "1.66 (-0 %)",
+        "1.68 (-0 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could go wrong for PMI's forecast?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires ZYN retail demand to remain weak while Aurora capacity and promotion raise costs. IQOS growth also slows under tax and flavor restrictions, cigarette volume declines, and high debt limits flexibility. Its price falls from $125.43 in 2027 to $111.03 in 2029. The probability is 30% because these risks are material, but PMI still generates cash and guides to operating-income growth."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "12,015 (10,875 / 12,375)",
+        "12,886 (10,935 / 13,720)",
+        "13,750 (10,857 / 15,219)"
+       ],
+       [
+        "Shares (millions)",
+        "1,560 (1,561 / 1,560)",
+        "1,562 (1,563 / 1,560)",
+        "1,563 (1,565 / 1,559)"
+       ],
+       [
+        "Dividends per share",
+        "6.40 (6.40 / 6.40)",
+        "6.88 (6.40 / 6.96)",
+        "7.40 (6.40 / 7.56)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (18.00 / 25.00)",
+        "21.00 (17.00 / 25.00)",
+        "20.00 (16.00 / 24.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does PMI really make?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "After US$1,569 million of capital spending, free cash flow was US$10,664 million. Deducting stock compensation produced “real free cash flow” of US$10,410 million. The deduction is an owner’s adjustment: shares issued to employees preserve cash but dilute existing ownership. PMI paid US$8,624 million of dividends, leaving limited room for debt reduction and investment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "12,233",
+        "12,217",
+        "9,204",
+        "10,803",
+        "11,967"
+       ],
+       [
+        "− Capital spending",
+        "1,569",
+        "1,444",
+        "3,096",
+        "2,079",
+        "748"
+       ],
+       [
+        "**= Free cash flow**",
+        "10,664",
+        "10,773",
+        "6,108",
+        "8,724",
+        "11,219"
+       ],
+       [
+        "− Stock pay",
+        "254",
+        "227",
+        "212",
+        "183",
+        "210"
+       ],
+       [
+        "**= Real free cash flow**",
+        "10,410",
+        "10,546",
+        "5,896",
+        "8,541",
+        "11,009"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for PMI today?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The forward multiple implies about $9.15 of next-twelve-month earnings per share, above PMI’s $8.35–$8.50 adjusted EPS forecast for 2026. The periods and definitions differ, but the price clearly reaches beyond this year’s delivery. PMI’s target of 9–11% annual adjusted EPS growth from 2026 through 2028 provides a foundation, not a guarantee of lasting value."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "201.19"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1.68 (-0 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "22.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 201.19,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "0 %",
+      "values": [
+       "125.43 (-34 %)",
+       "118.97 (-35 %)",
+       "111.03 (-35 %)"
+      ]
+     },
+     "Base": {
+      "probability": "0 %",
+      "values": [
+       "169.42 (-13 %)",
+       "173.27 (-7 %)",
+       "175.90 (-2 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "0 %",
+      "values": [
+       "198.29 (+2 %)",
+       "219.93 (+16 %)",
+       "234.27 (+27 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1.62 (-0 %)",
+       "1.66 (-0 %)",
+       "1.68 (-0 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pm/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PM&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "PMI dividend",
+   "meta_description": "PMI pays a growing dividend, but its cash coverage leaves limited room for debt reduction and investment.",
+   "opening": "PMI pays $1.60 per quarter, or $6.40 per share annually in the forecast. In 2025, PMI paid US$8,624 million of dividends against US$10,664 million of free cash flow.",
+   "closing": "The full PMI memo also answers how its business works, how its rivals compare, how management allocates capital, and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "How much does PMI pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at $6.40 per share because PMI declared a quarterly rate of $1.60 in September 2026. The base case raises the annual amount to $6.88 in 2028 and $7.40 in 2029. The bear case freezes it at $6.40, while the bull case reaches $6.96 and $7.56. PMI has raised its dividend every year since 2008, but dividends already absorbed 80.9% of free cash flow in 2025."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "7.26",
+        "4.52",
+        "5.02",
+        "5.81",
+        "5.83"
+       ],
+       [
+        "Real free cash flow per share",
+        "6.68",
+        "6.78",
+        "3.80",
+        "5.50",
+        "7.06"
+       ],
+       [
+        "Free cash flow per share",
+        "6.84",
+        "6.92",
+        "3.93",
+        "5.62",
+        "7.20"
+       ],
+       [
+        "− Dividends paid, per share",
+        "5.54",
+        "5.27",
+        "5.13",
+        "5.03",
+        "4.86"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "1.03",
+        "1.34",
+        "",
+        "0.15",
+        "1.48"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "",
+        "",
+        "1.52",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is PMI's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "After US$1,569 million of capital spending, free cash flow was US$10,664 million. Deducting stock compensation produced “real free cash flow” of US$10,410 million. The deduction is an owner’s adjustment: shares issued to employees preserve cash but dilute existing ownership. PMI paid US$8,624 million of dividends, leaving limited room for debt reduction and investment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "10,664",
+        "10,773",
+        "6,108",
+        "8,724",
+        "11,219"
+       ],
+       [
+        "− Paid to minority owners",
+        "430",
+        "494",
+        "497",
+        "472",
+        "560"
+       ],
+       [
+        "− Dividends paid",
+        "8,624",
+        "8,197",
+        "7,964",
+        "7,812",
+        "7,580"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "209",
+        "775"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,610",
+        "2,082",
+        "",
+        "231",
+        "2,304"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "80.9%",
+        "76.1%",
+        "130.4%",
+        "91.9%",
+        "74.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change PMI's dividend?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "By October 2029, the decisive evidence will be cash allocation: whether PMI can fund capital spending and rising dividends while reducing debt. A return to buybacks would support the bull case; persistent zero buybacks and a frozen dividend would support the bear case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "12,015 (10,875 / 12,375)",
+        "12,886 (10,935 / 13,720)",
+        "13,750 (10,857 / 15,219)"
+       ],
+       [
+        "Shares (millions)",
+        "1,560 (1,561 / 1,560)",
+        "1,562 (1,563 / 1,560)",
+        "1,563 (1,565 / 1,559)"
+       ],
+       [
+        "Dividends per share",
+        "6.40 (6.40 / 6.40)",
+        "6.88 (6.40 / 6.96)",
+        "7.40 (6.40 / 7.56)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (18.00 / 25.00)",
+        "21.00 (17.00 / 25.00)",
+        "20.00 (16.00 / 24.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is PMI's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow supplies the harder test. PMI generated $12.233 billion from operations in 2025 and spent $1.569 billion on capital expenditure. It paid $8.6 billion in dividends. Inventory and excise-tax timing also affected cash, so the dividend needs to be tested against sustained investment in IQOS and ZYN."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "5.54"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.86",
+      "5.03",
+      "5.13",
+      "5.27",
+      "5.54"
+     ],
+     "Real free cash flow per share": [
+      "7.06",
+      "5.50",
+      "3.80",
+      "6.78",
+      "6.68"
+     ],
+     "Free cash flow per share": [
+      "7.20",
+      "5.62",
+      "3.93",
+      "6.92",
+      "6.84"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pm/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "PMI earnings: guidance and what to watch",
+   "meta_description": "PMI reports on October 21, 2026, with guidance for adjusted EPS growth, organic growth and cigarette shipments; watch ZYN consumer purchases.",
+   "opening": "PMI's next results are expected on October 21, 2026. Watch ZYN consumer purchases against shipments.",
+   "closing": "The full memo answers how PMI's business works, how it compares with rivals, who runs PMI, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has PMI guided for the year?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast points to a much lower price, hinging on whether repeat ZYN and IQOS demand becomes profitable cash growth. For 2026, management guides to currency-neutral adjusted EPS growth of 7.5%–9.5% and organic revenue growth of 5%–7%. Organic operating-income growth is 7%–9%. The plan assumes a 2%–3% cigarette shipment decline and US$13.5 billion of operating cash flow; capital expenditure is US$1.4–US$1.6 billion."
+      },
+      {
+       "n": 186,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "PMI still guides to currency-neutral adjusted EPS growth of 7.5%–9.5%. It also expects organic net revenue growth of 5%–7% and organic operating income growth of 7%–9%, despite a 2%–3% decline in cigarette shipments. Organic growth excludes currency, acquisitions and disposals."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted Diluted EPS growth, excluding currency",
+        "Year to Dec 2026",
+        "7.5%",
+        "9.5%",
+        "2026-09-08"
+       ],
+       [
+        "Cigarette shipment volume decline",
+        "Year to Dec 2026",
+        "2.0%",
+        "3.0%",
+        "2026-09-08"
+       ],
+       [
+        "Net revenue growth on an organic basis",
+        "Year to Dec 2026",
+        "5.0%",
+        "7.0%",
+        "2026-09-08"
+       ],
+       [
+        "Organic operating income growth",
+        "Year to Dec 2026",
+        "7.0%",
+        "9.0%",
+        "2026-09-08"
+       ],
+       [
+        "Operating cash flow",
+        "Year to Dec 2026",
+        "13,500",
+        "13,500",
+        "2026-09-08"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "1,400",
+        "1,600",
+        "2026-09-08"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did PMI keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 108,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "PMI promised to make smoke-free products available in 100 markets by the end of 2025, with at least half in low- and middle-income markets. It reached 106 markets, while smoke-free products represented 41.5% of total revenue. But availability is not replacement: a country can sell IQOS or ZYN while cigarette sales continue. PMI also reported that its combustible business remained resilient, so investors must distinguish distribution from consumers actually switching."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are PMI's last eight quarters of revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Quarterly revenue reached US$11,192 million, while operating income reached US$4,530 million. Net income was US$2,817 million and diluted EPS was US$1.80. A US$511 million Canadian impairment explains much of the divergence between operating strength and reported earnings."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "11,192",
+        "10,146",
+        "10,362",
+        "10,845",
+        "10,140",
+        "9,301",
+        "9,706",
+        "9,911"
+       ],
+       [
+        "Operating income",
+        "4,530",
+        "3,893",
+        "3,373",
+        "4,263",
+        "3,712",
+        "3,544",
+        "3,259",
+        "3,654"
+       ],
+       [
+        "Net income",
+        "2,817",
+        "2,438",
+        "2,141",
+        "3,478",
+        "3,039",
+        "2,690",
+        "-579",
+        "3,082"
+       ],
+       [
+        "EPS, diluted",
+        "1.80",
+        "1.56",
+        "1.37",
+        "2.23",
+        "1.95",
+        "1.72",
+        "-0.38",
+        "1.97"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in PMI's next results?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "PMI is scheduled to report third-quarter results on October 21, 2026. It guides to adjusted EPS of $2.29–$2.34. Investors should compare ZYN consumer purchases with shipments to distributors, because a September 2025 promotion added about 250 million pouches to the earlier period. A weak shipment comparison may therefore reflect an unusually high starting point rather than weakening ordinary demand."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "11,192"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.80"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "9,911",
+      "9,706",
+      "9,301",
+      "10,140",
+      "10,845",
+      "10,362",
+      "10,146",
+      "11,192"
+     ],
+     "EPS, diluted": [
+      "1.97",
+      "-0.38",
+      "1.72",
+      "1.95",
+      "2.23",
+      "1.37",
+      "1.56",
+      "1.80"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/pm/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PM&src=seo-earnings"
+  }
+ },
+ "short_name": "PMI",
+ "first_memo_date": "2026-10-12T06:46:35Z"
+}

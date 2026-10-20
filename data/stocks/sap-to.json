@@ -1,0 +1,763 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SAP.TO",
+ "slug": "sap-to",
+ "company": "Saputo Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-19T00:22:03Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 39.99,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 15596,
+  "sources": 161
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Saputo buys milk and turns it into foods and ingredients for households, restaurants and other manufacturers. To understand its business, follow the milk from the factory door to the customer—and the cash in the other direction."
+ },
+ "sources": [
+  {
+   "title": "Saputo’s USA business",
+   "url": "https://www.saputo.com/en/our-products/usa-sector"
+  },
+  {
+   "title": "Frigo product page",
+   "url": "https://www.frigocheeseheads.com/en/products/everyday-snacking/string-cheese"
+  },
+  {
+   "title": "Saputo’s Canada business",
+   "url": "https://www.saputo.com/en/our-products/canada-sector"
+  }
+ ],
+ "rivals": [
+  "BN.PA",
+  "EMMN.SW",
+  "SAVE.PA",
+  "2319.HK",
+  "NESN.SW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Saputo stock forecast",
+   "meta_description": "Saputo's forecast weighs scenario prices, cash generation, operating risks, and what investors pay today.",
+   "opening": "Saputo's weighted forecast is C$36.33 in October 2027 and C$40.54 in October 2029. It hinges on sustained earnings and cash conversion.",
+   "closing": "The full memo also explains Saputo’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Saputo's shares go?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is C$36.33 in October 2027. That implies a −7% return. By October 2029, it reaches C$40.54. That implies an +8% return. The bear case has a 29% probability. The base and bull cases have 51% and 20%, respectively. October 2029 cases range from C$28.25 in the bear case to C$61.26 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 39.99, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 39.99, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "29 %",
+        "27.09 (-30 %)",
+        "25.09 (-33 %)",
+        "28.25 (-23 %)"
+       ],
+       [
+        "Base",
+        "51 %",
+        "37.41 (-4 %)",
+        "37.09 (-3 %)",
+        "39.40 (+5 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "46.97 (+20 %)",
+        "53.22 (+37 %)",
+        "61.26 (+60 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "36.33 (-7 %)",
+        "36.84 (-4 %)",
+        "40.54 (+8 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Saputo, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The numbers describe a gradual recovery, but not a straight line. Normal operating profit is C$970m in October 2027 and C$940m in October 2028. It returns to C$970m in October 2029. The base build uses C$17,700m of revenue at approximately a 5.5% margin in the first period, then C$16,500m after the U.K. exit. It ends at C$16,700m and a 5.8% margin. The recovery is supported by FY2026’s C$1,059m operating income and the latest quarter’s C$278m. The bear row falls to C$820m and C$790m before reaching C$850m. The bull row reaches C$1,110m and C$1,140m before C$1,190m, requiring stronger protein demand, whey availability and plant utilization."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Saputo really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is an economic cost even when it is not paid immediately in cash. Receivables sales also brought cash forward: using March 2026 balances, 370 had been sold under purchase agreements. That balance is financing support, not a recurring annual cash benefit."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,508",
+        "1,194"
+       ],
+       [
+        "− Capital spending",
+        "330",
+        "379"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,120",
+        "731"
+       ],
+       [
+        "− Stock pay",
+        "100",
+        "25"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,020",
+        "706"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.8%",
+        "4.0%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because it subtracts shares given to employees as pay: no cash leaves today, but existing shareholders own a smaller share of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Saputo today?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow yield looks more generous than the earnings multiple, but cash can move sharply as Saputo buys milk, carries inventory, waits for customers to pay, or receives more time from suppliers. In FY2026, lower working-capital usage helped operating cash flow. In the first quarter of FY2027, higher usage pulled cash flow down despite higher earnings. Several years of continuing-business cash flow therefore matter more than one attractive yield."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "39.99"
+       ],
+       [
+        "Market value (calculated)",
+        "15,873.69"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "17,855.69"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.98x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "7.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "6.4%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings number uses analysts’ expected profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "39.99"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "40.54 (+8 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "19.49x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 39.99,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "29 %",
+      "values": [
+       "27.09 (-30 %)",
+       "25.09 (-33 %)",
+       "28.25 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "51 %",
+      "values": [
+       "37.41 (-4 %)",
+       "37.09 (-3 %)",
+       "39.40 (+5 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "46.97 (+20 %)",
+       "53.22 (+37 %)",
+       "61.26 (+60 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "36.33 (-7 %)",
+       "36.84 (-4 %)",
+       "40.54 (+8 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/sap-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SAP.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Saputo dividend: payment, cash coverage and yield",
+   "meta_description": "Saputo pays C$0.21 quarterly, covered by cash, while buybacks return most free cash flow and higher investment tests future coverage.",
+   "opening": "Saputo's quarterly dividend rose to C$0.21 in August 2026, and Saputo paid C$324 million in dividends in fiscal 2026. Saputo's C$1,120 million of free cash flow covered those payments, although Saputo returned 89.6% of free cash flow to shareholders.",
+   "closing": "The full Saputo memo also answers how Saputo runs its dairy business, compares with rivals, assesses management's decisions, and weighs its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Saputo pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The financing picture also matters. New shares and debt issued during fiscal 2026 helped fund activity while debt repayments reduced exposure. In August 2026, Saputo raised its quarterly dividend to C$0.21, confirming that shareholder distributions remain a central use of cash."
+      },
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend is C$0.84 in October 2027 and C$0.88 in October 2028. It rises to C$0.92 in October 2029. The bear case holds C$0.84 flat, while the bull case reaches C$1.00. The starting point is the declared C$0.21 quarterly dividend, while the pace reflects Saputo’s history of small increases and the higher C$515m capital programme."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "2.71",
+        "1.73",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.78",
+        "0.76",
+        "0.58",
+        "0.47",
+        "0.50"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.28",
+        "0.62",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "Real free cash flow is lower than free cash flow because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does Saputo's dividend get covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Distributions then accelerated. In fiscal 2026, Saputo spent C$680 million on share repurchases and C$324 million on dividends. Free cash flow was C$1,120 million, so shareholders received 89.6% of it. A buyback cancels shares, giving each remaining share a larger claim on earnings, but only creates value if Saputo buys below the business’s worth. Issuing new shares partly reverses that effect."
+      },
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Dividends appear well covered by FY2026 operating cash flow after capital spending. Buybacks also helped continuing shareholders: Saputo spent C$679 million repurchasing approximately 19.2 million shares in FY2026. Fewer shares give each remaining share a larger claim on the same earnings, but they do not make the factories more profitable."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,120",
+        "731",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "324",
+        "320",
+        "245",
+        "199",
+        "209"
+       ],
+       [
+        "− Share buybacks",
+        "680",
+        "149",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "116",
+        "262",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "89.6%",
+        "64.2%",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes lease liabilities, while our count leaves those out."
+     }
+    },
+    {
+     "heading": "What could change Saputo's dividend?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The U.K. sale, expected to close in 2027, will clarify both lost earnings and available cash. A weak cash-conversion pattern would also matter: first-quarter operating cash flow was C$151m, versus C$262m a year earlier. Conversely, stronger utilization, sustained ingredient demand, successful reinvestment and continued buybacks would move the forecast toward the bull case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "970 (820 / 1,110)",
+        "940 (790 / 1,140)",
+        "970 (850 / 1,190)"
+       ],
+       [
+        "Dividends per share",
+        "0.84 (0.84 / 0.84)",
+        "0.88 (0.84 / 0.92)",
+        "0.92 (0.84 / 1.00)"
+       ],
+       [
+        "Net debt",
+        "946 (1,128 / 778)",
+        "941 (740 / 760)",
+        "920 (350 / 715)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "0.78"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "7.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.50",
+      "0.47",
+      "0.58",
+      "0.76",
+      "0.78"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "1.67",
+      "2.47"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "",
+      "1.73",
+      "2.71"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/sap-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SAP.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Saputo earnings date, guidance and results",
+   "meta_description": "Saputo's next results are expected November 5, 2026, with guidance, recent results and key watchpoints.",
+   "opening": "Saputo's next results are expected on November 5, 2026. Watch whether working capital turns back into cash and capital spending advances as planned.",
+   "closing": "The full memo also answers how Saputo makes money, who its rivals are, how management is run, and what risks Saputo faces.",
+   "blocks": [
+    {
+     "heading": "What has Saputo guided for the year?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to C$515 million of capital expenditures for the year to March 2027. Those projects have not yet demonstrated their full returns. It expects C$114 million of contributions to defined contribution plans."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Capital expenditures",
+        "Year to Mar 2027",
+        "515",
+        "515",
+        "Aug 6, 2026"
+       ],
+       [
+        "Contributions to defined contribution plans",
+        "Year to Mar 2027",
+        "114",
+        "114",
+        "Jun 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Saputo keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also has a record of missed promises. Saputo reaffirmed a C$2.125 billion adjusted-EBITDA target for fiscal 2025, but reported C$1.565 billion. Later improvements in manufacturing and the Waupun protein operation are encouraging, yet they do not erase that shortfall."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Saputo's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 30, 2026 quarter extended the earnings recovery, but the Argentina disposal obscured the headline result and cash conversion weakened."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,421",
+        "4,173",
+        "4,590",
+        "4,432",
+        "4,356",
+        "4,414",
+        "4,648",
+        "4,406"
+       ],
+       [
+        "Operating income",
+        "278",
+        "241",
+        "314",
+        "259",
+        "245",
+        "152",
+        "-419",
+        "215"
+       ],
+       [
+        "Net income",
+        "183",
+        "157",
+        "209",
+        "167",
+        "157",
+        "87",
+        "-496",
+        "137"
+       ],
+       [
+        "EPS, diluted",
+        "0.45",
+        "0.38",
+        "0.51",
+        "0.40",
+        "0.38",
+        "0.21",
+        "-1.17",
+        "0.32"
+       ],
+       [
+        "Cash from operations",
+        "151",
+        "510",
+        "",
+        "",
+        "262",
+        "340",
+        "",
+        ""
+       ]
+      ],
+      "note": "Some older cash figures include Argentina while the sales and profit figures exclude it, so those quarters do not compare the same business."
+     }
+    },
+    {
+     "heading": "What should I watch in Saputo's next results?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results and disposals will reveal whether Saputo’s investment plan is strengthening the business or merely moving cash between competing needs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "4,421"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.45"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,406",
+      "4,648",
+      "4,414",
+      "4,356",
+      "4,432",
+      "4,590",
+      "4,173",
+      "4,421"
+     ],
+     "EPS, diluted": [
+      "0.32",
+      "-1.17",
+      "0.21",
+      "0.38",
+      "0.40",
+      "0.51",
+      "0.38",
+      "0.45"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/sap-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SAP.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Saputo",
+ "first_memo_date": "2026-10-19T00:22:03Z"
+}

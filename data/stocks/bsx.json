@@ -1,0 +1,590 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BSX",
+ "slug": "bsx",
+ "company": "Boston Scientific Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T00:15:42Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 44.39,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 238,
+  "tables": 27,
+  "words": 16095,
+  "sources": 202
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Boston Scientific is a medical-device company: it sells tools and implants that help clinicians diagnose and treat disease. Its dollar begins with a provider’s purchase, then passes through manufacturing, research, selling and support costs before the remainder becomes operating income."
+ },
+ "sources": [
+  {
+   "title": "annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000010/bsx-20251231.htm"
+  },
+  {
+   "title": "Investor presentation — Q4 2025",
+   "url": "https://investors.bostonscientific.com/~/media/Files/B/Boston-Scientific-IR-V3/q4-2025-financial-and-operational-highlights.pdf"
+  },
+  {
+   "title": "Investor presentation — Q4 2024",
+   "url": "https://investors.bostonscientific.com/~/media/Files/B/Boston-Scientific-IR-V3/FOH/q4-2024-financial-operational-highlights.pdf"
+  }
+ ],
+ "rivals": [
+  "ABT",
+  "MDT",
+  "JNJ",
+  "EW",
+  "PHG",
+  "SYK",
+  "TFX",
+  "PEN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Boston Scientific stock forecast",
+   "meta_description": "Boston Scientific's forecast weighs recovery, competition, cash generation and valuation across bear, base and bull scenarios.",
+   "opening": "Boston Scientific's probability-weighted price is $78.68 by October 2029, with the base case carrying 54% probability. It hinges on earnings recovery, franchise defense, Penumbra integration and cash generation after the operating disruption.",
+   "closing": "The full memo also explains Boston Scientific's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Boston Scientific's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to substantial upside, but with a wide range of outcomes. The probability-weighted price is $53.78 in October 2027, implying a 21% total return. It reaches $64.69 in October 2028, implying 46%. By October 2029, the weighted price is $78.68, implying 77%."
+      },
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final-date range runs from $32.63 in the bear case to $135.23 in the bull case. Today’s price is $44.39. The forecast assigns 27% to the bear case, 54% to the base case and 19% to the bull case, so the central judgment is gradual recovery rather than either collapse or rapid reacceleration."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 44.39, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 44.39, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "37.70 (-15 %)",
+        "33.79 (-24 %)",
+        "32.63 (-26 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "55.12 (+24 %)",
+        "67.27 (+52 %)",
+        "81.80 (+84 %)"
+       ],
+       [
+        "Bull",
+        "19 %",
+        "72.83 (+64 %)",
+        "101.27 (+128 %)",
+        "135.23 (+205 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "53.78 (+21 %)",
+        "64.69 (+46 %)",
+        "78.68 (+77 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a promise that the shares will actually reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for Boston Scientific, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The drivers are outage-related sales recovery, normalized orders, cash generation, Penumbra closing and financing, physician adoption and repeat use of FARAWAVE Ultra and ICE imaging—ultrasound pictures made from inside the heart. On October 28, 2026, the new outlook must clarify recovery and cash generation. By year-end 2026, Penumbra’s closing and financing will test integration. In the second half of 2027, FARAWAVE Ultra and ICE imaging must translate into adoption. Through 2029, restructuring cash costs and savings will test efficiency gains."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Boston Scientific really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A stricter owner measure also subtracts stock-based compensation. The expense is not a current cash payment, but employees receive shares, which can dilute existing owners. Cash can fund acquisitions, debt repayment and other investment, yet it still does not prove that a new device has won clinical acceptance."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,534",
+        "3,435",
+        "2,503",
+        "1,526",
+        "1,870"
+       ],
+       [
+        "− Capital spending",
+        "876",
+        "790",
+        "711",
+        "588",
+        "554"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,658",
+        "2,645",
+        "1,792",
+        "938",
+        "1,316"
+       ],
+       [
+        "− Stock pay",
+        "299",
+        "266",
+        "233",
+        "220",
+        "194"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,359",
+        "2,379",
+        "1,559",
+        "718",
+        "1,122"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Boston Scientific today?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, tells us how much investors pay for each dollar of profit. Boston Scientific reported 2025 GAAP diluted EPS of $1.94 and adjusted EPS of $3.06. GAAP is the standardized accounting result; adjusted EPS removes selected costs such as amortization and acquisition charges. The forward P/E therefore looks lower because it assumes earnings will rise, but that comparison works only when both ratios use the same definition of profit. On the table’s figures, the implied earnings step-up is about 37%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "44.39"
+       ],
+       [
+        "Market value (calculated)",
+        "64,331.30"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "76,416.30"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.1x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "5.2%"
+       ]
+      ],
+      "note": "Enterprise value is higher than the stock market value because it includes the company's debt after subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "44.39"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "78.68 (+77 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 44.39,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "37.70 (-15 %)",
+       "33.79 (-24 %)",
+       "32.63 (-26 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "55.12 (+24 %)",
+       "67.27 (+52 %)",
+       "81.80 (+84 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "19 %",
+      "values": [
+       "72.83 (+64 %)",
+       "101.27 (+128 %)",
+       "135.23 (+205 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "53.78 (+21 %)",
+       "64.69 (+46 %)",
+       "78.68 (+77 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bsx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BSX&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Boston Scientific earnings date and guidance",
+   "meta_description": "Boston Scientific reports October 28, 2026; its update should reset guidance and show outage recovery and cash generation.",
+   "opening": "Boston Scientific's next results are expected on October 28, 2026. Boston Scientific must show how much outage-related sales it recovered and what it now expects for cash generation.",
+   "closing": "The full Boston Scientific memo also answers how the business works, who its rivals are, how management is paid, and what risks matter.",
+   "blocks": [
+    {
+     "heading": "What has Boston Scientific guided for the year?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s July 2026 outlook called for 5%–6% organic sales growth. It also called for $3,800 million of free cash flow for FY 2026. After the cyber disruption, management said it would provide a new outlook on October 28, 2026."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Cash provided by (used for) operating activities",
+        "FY 2026",
+        "4,700",
+        "4,700",
+        "Jul 29, 2026"
+       ],
+       [
+        "Purchases of property, plant and equipment and internal use software",
+        "FY 2026",
+        "900",
+        "900",
+        "Jul 29, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "FY 2026",
+        "3,800",
+        "3,800",
+        "Jul 29, 2026"
+       ],
+       [
+        "Tax Rate, adjusted",
+        "FY 2026",
+        "11.5%",
+        "11.5%",
+        "Jul 29, 2026"
+       ],
+       [
+        "EP International Net Sales Growth — Net sales growth, organic",
+        "FY 2026",
+        "20.0%",
+        "20.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Other Business Units Net Sales Growth — Net sales growth, organic",
+        "2H 2026",
+        "6.0%",
+        "6.0%",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "These are July estimates, and although the table calls them guidance in force, the company has not confirmed that the remaining numbers still apply."
+     }
+    },
+    {
+     "heading": "Did Boston Scientific keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Adjusted operating margin was 28.0% against a 27.6% target. Mahoney’s annual bonus reached 173% of target. These results show a measurable link between pay and performance, although they do not show whether the targets were demanding enough."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Boston Scientific’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "As of October 17, 2026, Boston Scientific had not reported its third-quarter results. The accounts therefore support two separate conclusions: the underlying growth engines had weakened before the cyber incident, and the incident left the amount of delayed or recoverable revenue unresolved."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,442",
+        "5,203",
+        "5,286",
+        "5,065",
+        "5,061",
+        "4,663",
+        "4,561",
+        "4,209"
+       ],
+       [
+        "Gross margin",
+        "70.7%",
+        "69.5%",
+        "69.6%",
+        "69.9%",
+        "67.7%",
+        "68.8%",
+        "67.9%",
+        "68.8%"
+       ],
+       [
+        "Operating income",
+        "1,178",
+        "1,101",
+        "825",
+        "1,048",
+        "819",
+        "921",
+        "675",
+        "733"
+       ],
+       [
+        "Net income",
+        "907",
+        "1,341",
+        "672",
+        "755",
+        "797",
+        "674",
+        "566",
+        "469"
+       ],
+       [
+        "EPS, diluted",
+        "0.61",
+        "0.90",
+        "0.45",
+        "0.51",
+        "0.53",
+        "0.45",
+        "0.38",
+        "0.32"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,279",
+        "171",
+        "1,013",
+        "1,162",
+        "1,129",
+        "354",
+        "1,179",
+        "823"
+       ]
+      ],
+      "note": "Net income was unusually high in March 2026 because of a one-time tax benefit, not because the business suddenly became much more profitable."
+     }
+    },
+    {
+     "heading": "What should Boston Scientific watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "On October 28, Boston Scientific plans to report third-quarter results and provide a new operating and financial outlook. Investors should look for the amount of outage-related sales management says it recovered, whether customer orders have normalized and what it now expects for full-year cash generation. Restored operations are encouraging, but they do not show how much demand was permanently lost."
+      },
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Next come the Penumbra closing and the EP launches. Closing would begin the integration period and the expected initial EPS dilution. The second-half 2027 launch of FARAWAVE Ultra and the entry into ICE imaging will test the product-led recovery story. Launches alone will not prove that physicians have adopted the products."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,442"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.61"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,209",
+      "4,561",
+      "4,663",
+      "5,061",
+      "5,065",
+      "5,286",
+      "5,203",
+      "5,442"
+     ],
+     "EPS, diluted": [
+      "0.32",
+      "0.38",
+      "0.45",
+      "0.53",
+      "0.51",
+      "0.45",
+      "0.90",
+      "0.61"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bsx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BSX&src=seo-earnings"
+  }
+ },
+ "short_name": "Boston Scientific",
+ "first_memo_date": "2026-10-18T00:15:42Z"
+}

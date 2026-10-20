@@ -1,0 +1,790 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PEG",
+ "slug": "peg",
+ "company": "Public Service Enterprise Group Incorporated",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T20:26:08Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 70.26,
+ "price_date": "2026-10-19T19:05:45Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 26,
+  "words": 16094,
+  "sources": 245
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Public Service Enterprise Group earns from regulated delivery networks, electricity generation, and operating services, with repairs and energy programs around them. To understand a dollar at PSEG, follow it from customers and wholesale buyers through wires, plants, contracts, workers, suppliers, financing, and regulated returns."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/788784/000119312526104312/d114153dars.pdf"
+  },
+  {
+   "title": "2026 outlook filed with the SEC",
+   "url": "https://www.sec.gov/Archives/edgar/data/81033/000119312526073678/d57788dex99.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/788784/000119312525034436/d928125dex99.htm"
+  }
+ ],
+ "rivals": [
+  "EXC",
+  "FE",
+  "ED",
+  "ES",
+  "PPL",
+  "D",
+  "AEP",
+  "CEG",
+  "VST",
+  "NEE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "PSEG stock forecast",
+   "meta_description": "PSEG’s weighted path reaches $73.35 by October 2029; bear and bull cases reach $48.82 and $101.18.",
+   "opening": "PSEG’s probability-weighted price is $73.35 by October 2029, a 17% gain including dividends. It hinges on rate recovery and financing staying manageable.",
+   "closing": "The full PSEG memo also answers how PSEG’s business, rivals, management and risks shape the forecast.",
+   "blocks": [
+    {
+     "heading": "Where could PSEG’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to a restrained return from today’s $70.26 share price. The probability-weighted price is $66.70 by October 2027, a 1% loss including dividends. By October 2028, it reaches $69.82, a 7% gain including dividends. By October 2029, it reaches $73.35, a 17% gain including dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 70.26, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 70.26, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "57.56 (-14 %)",
+        "53.17 (-17 %)",
+        "48.82 (-19 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "69.21 (+2 %)",
+        "74.03 (+13 %)",
+        "79.14 (+25 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "75.77 (+12 %)",
+        "87.69 (+33 %)",
+        "101.18 (+57 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "66.70 (-1 %)",
+        "69.82 (+7 %)",
+        "73.35 (+17 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for PSEG?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $2,050 million in 2027 and $2,040 million in 2028. It falls to $2,030 million in 2029 because delayed rate recovery, affordability pressure and financing costs offset progress. The bull case begins at $2,360 million, reaches $2,570 million, and ends at $2,800 million as faster recovery, strong nuclear output and contracted data-center or nuclear demand add earnings. Those opportunities remain uncertain. The model excludes volatile hedge, tax-credit, pension and nuclear-trust effects."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does PSEG really make?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow was $3,298 million against net income of $2,111 million. Capital spending of $3,272 million then left free cash flow of only $26 million. Free cash flow is the cash remaining after operating needs and capital investment, so strong cash generation does not necessarily mean cash is available for dividends."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,298",
+        "2,133",
+        "3,806"
+       ],
+       [
+        "− Capital spending",
+        "3,272",
+        "3,380",
+        "3,325"
+       ],
+       [
+        "**= Free cash flow**",
+        "26",
+        "-1,247",
+        "481"
+       ],
+       [
+        "− Stock pay",
+        "43",
+        "40",
+        "18"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-17",
+        "-1,287",
+        "463"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-0.1%",
+        "-12.5%",
+        "4.1%"
+       ]
+      ],
+      "note": "Real free cash flow is lower than free cash flow because paying employees with shares gives away part of the company even though no cash leaves today."
+     }
+    },
+    {
+     "heading": "What does an investor pay for PSEG today?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The forward P/E of 15.1x implies about $4.65 of earnings per share from the next twelve months. That is above the $4.28–$4.40 operating-earnings guidance for calendar 2026, partly because the forecast period extends into 2027. The lower multiple is therefore partly a promise of higher future earnings."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "70.26"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-0.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.8%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts’ expected profit, so it is an estimate rather than a known result."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "70.26"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "73.35 (+17 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 70.26,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "57.56 (-14 %)",
+       "53.17 (-17 %)",
+       "48.82 (-19 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "69.21 (+2 %)",
+       "74.03 (+13 %)",
+       "79.14 (+25 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "75.77 (+12 %)",
+       "87.69 (+33 %)",
+       "101.18 (+57 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "66.70 (-1 %)",
+       "69.82 (+7 %)",
+       "73.35 (+17 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/peg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PEG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "PSEG dividend: cash coverage and outlook",
+   "meta_description": "PSEG pays a growing dividend, but free cash flow leaves little cash after investment, so funding and rate recovery matter.",
+   "opening": "PSEG's indicative 2026 dividend is $2.68 per share, rising to $3.00 in 2029 in the base case. In 2025, free cash flow was $26 million, and dividends exceeded the cash left after investment, so borrowing and other funding supported shareholder payments.",
+   "closing": "The full PSEG memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does PSEG pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends start from the indicative 2026 amount of $2.68 per share. The base case uses $2.78 in 2027, $2.89 in 2028 and $3.00 in 2029. That is slower than the recent 5% annual increases because investment has exceeded internally generated cash. The bear case holds dividends at $2.68 throughout. The bull case reaches $2.84, $3.01 and $3.19 as earnings and recovery support faster increases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,300 (2,050 / 2,360)",
+        "2,460 (2,040 / 2,570)",
+        "2,630 (2,030 / 2,800)"
+       ],
+       [
+        "Dividends per share",
+        "2.78 (2.68 / 2.84)",
+        "2.89 (2.68 / 3.01)",
+        "3.00 (2.68 / 3.19)"
+       ],
+       [
+        "Price to earnings",
+        "15.00 (14.00 / 16.00)",
+        "15.00 (13.00 / 17.00)",
+        "15.00 (12.00 / 18.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is PSEG's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow was $3,298 million against net income of $2,111 million. Capital spending of $3,272 million then left free cash flow of only $26 million. Free cash flow is the cash remaining after operating needs and capital investment, so strong cash generation does not necessarily mean cash is available for dividends."
+      },
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Some capital spending preserves service, while some expands the future rate base, and the accounts do not cleanly separate the two. Dividends therefore exceeded the cash left after investment, so borrowing and other funding supported both construction and shareholder payments."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "26",
+        "-1,247",
+        "481"
+       ],
+       [
+        "− Dividends paid",
+        "1,258",
+        "1,196",
+        "1,137"
+       ],
+       [
+        "− Share buybacks",
+        "67.575",
+        "45.7717",
+        "25.4159"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,299.575",
+        "2,488.7717",
+        "681.4159"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "5098.4%",
+        "not meaningful",
+        "241.7%"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders far more than the cash its business generated, using savings and new borrowing to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change PSEG's dividend?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear case becomes more likely in 2027–2028 if rate-case timing or cost recovery disappoints. High customer bills from 2027 through 2029 would also pressure both earnings growth and the multiple."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Debt-funded spending is the key financing test in 2028–2029. If cash generation continues to lag capital spending and dividends, interest expense could rise and buybacks could weaken."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is PSEG's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "70.26"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.8%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts’ expected profit, so it is an estimate rather than a known result."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.51"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "0.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.27",
+      "2.39",
+      "2.51"
+     ],
+     "Real free cash flow per share": [
+      "0.93",
+      "-2.57",
+      "-0.03"
+     ],
+     "Free cash flow per share": [
+      "0.96",
+      "-2.49",
+      "0.05"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/peg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PEG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "PSEG earnings",
+   "meta_description": "PSEG's next results are due November 2, 2026; management guides to $4.28–$4.40 per share and investors should watch investment execution and borrowing.",
+   "opening": "PSEG's next results are scheduled for November 2, 2026. Watch investment execution and borrowing alongside quarterly earnings.",
+   "closing": "The full PSEG memo also answers questions about its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has PSEG guided for the year?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, management’s August 4 guidance is $4.28–$4.40 of non-GAAP operating earnings per share. Non-GAAP means PSEG removes selected volatile items from the standard accounting result, or GAAP profit, to show what it considers repeatable performance. Nuclear hedges can gain or lose value on paper as power prices move before electricity is sold, so statutory profit may differ from operating earnings."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Non-GAAP Operating Earnings per share (US$)",
+        "Year to Dec 2026",
+        "4.28",
+        "4.40",
+        "August 4, 2026"
+       ],
+       [
+        "Regulated capital spending plan (US$ billions)",
+        "Year to Dec 2026",
+        "4.2",
+        "4.2",
+        "August 4, 2026"
+       ],
+       [
+        "Total nuclear generation (TWh)",
+        "Year to Dec 2026",
+        "30",
+        "32",
+        "August 4, 2026"
+       ],
+       [
+        "Indicative annual common dividend per share (US$)",
+        "Year to Dec 2026",
+        "2.68",
+        "2.68",
+        "February 26, 2026"
+       ],
+       [
+        "Total PSEG capital program (US$ billions)",
+        "2026–2030",
+        "24",
+        "28",
+        "August 4, 2026"
+       ],
+       [
+        "Regulated investments (US$ billions)",
+        "2026–2030",
+        "22.5",
+        "25.5",
+        "February 26, 2026"
+       ]
+      ],
+      "note": "The regulated capital spending plan is not the same as cash spent on property and equipment because it also includes an accounting amount for financing construction."
+     }
+    },
+    {
+     "heading": "Has PSEG kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 110,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "PSEG says 2025 was its twenty-first consecutive year meeting or exceeding operating-earnings guidance. Initial 2025 guidance was US$3.94–US$4.06 per share. The result was US$4.05. That supports confidence in forecasting, while safety, spending and succession still require scrutiny."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is PSEG's recent trend in revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell 8.9% to $2,554 million from the year-earlier quarter. Net income fell 42.9% to $334 million. Yet adjusted earnings rose 10.7% to $425 million because both PSE&G and Power & Other improved."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash was less dramatic but still negative. June-quarter operating cash flow was $550 million, while capital spending was $766 million. Free cash flow was negative $216 million, improved from negative $309 million in the year-earlier quarter. First-half free cash flow reached $362 million, compared with $112 million a year earlier."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,554",
+        "3,848",
+        "2,915",
+        "3,226",
+        "2,805",
+        "3,222",
+        "2,465",
+        "2,642"
+       ],
+       [
+        "Gross margin",
+        "66.1%",
+        "60.8%",
+        "65.2%",
+        "64.9%",
+        "70.6%",
+        "63.2%",
+        "69.0%",
+        "66.0%"
+       ],
+       [
+        "Operating income",
+        "461",
+        "1,075",
+        "511",
+        "855",
+        "817",
+        "797",
+        "445",
+        "641"
+       ],
+       [
+        "Net income",
+        "334",
+        "741",
+        "315",
+        "622",
+        "585",
+        "589",
+        "286",
+        "520"
+       ],
+       [
+        "EPS, diluted",
+        "0.67",
+        "1.48",
+        "0.63",
+        "1.24",
+        "1.17",
+        "1.18",
+        "0.57",
+        "1.04"
+       ],
+       [
+        "**= Free cash flow**",
+        "-216",
+        "578",
+        "-408",
+        "322",
+        "-309",
+        "421",
+        "-611",
+        "-145"
+       ]
+      ],
+      "note": "The gross margin looks high because it subtracts only energy costs and leaves out operation and maintenance and depreciation and amortization."
+     }
+    },
+    {
+     "heading": "What should I watch in PSEG's next results?",
+     "paragraphs": [
+      {
+       "n": 208,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "PSEG is scheduled to report third-quarter results on November 2, 2026. Management also expects a distribution base-rate filing by year-end 2026. Investors should watch investment execution and borrowing alongside any quarterly earnings beat."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,554"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.67"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,642",
+      "2,465",
+      "3,222",
+      "2,805",
+      "3,226",
+      "2,915",
+      "3,848",
+      "2,554"
+     ],
+     "EPS, diluted": [
+      "1.04",
+      "0.57",
+      "1.18",
+      "1.17",
+      "1.24",
+      "0.63",
+      "1.48",
+      "0.67"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/peg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PEG&src=seo-earnings"
+  }
+ },
+ "short_name": "PSEG",
+ "first_memo_date": "2026-10-19T20:26:08Z"
+}

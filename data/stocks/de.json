@@ -1,0 +1,877 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "DE",
+ "slug": "de",
+ "company": "Deere & Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T13:52:15Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 632.61,
+ "price_date": "2026-10-12T20:00:02Z",
+ "next_earnings": "2026-11-25",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 39,
+  "words": 18482,
+  "sources": 185
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Deere & Company is a manufacturer, technology provider and lender whose products help people farm, maintain land, build roads and harvest timber. To understand its business, follow a dollar from a machine or service bought through a dealer to the factories, software teams and credit operation that absorb it."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003627/de-20251102xars.pdf"
+  },
+  {
+   "title": "Earnings release — Q3 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926098904/de-20260820xex99d1.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926064747/de-20260521xex99d1.htm"
+  }
+ ],
+ "rivals": [
+  "CNH",
+  "AGCO",
+  "CAT",
+  "TRMB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Deere stock forecast",
+   "meta_description": "Deere's weighted scenario reaches $830.90 in October 2029, depending on farm demand, dealer stock and margins.",
+   "opening": "Deere's weighted scenario reaches $830.90 in October 2029. It hinges on farm-level purchases clearing dealer stock and turning into margin and cash.",
+   "closing": "The full memo also explains Deere's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Deere's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast is cautious first and constructive later. By October 2027, the weighted price is $554.14, or a negative return of 11% including dividends. It rises to $698.11 in October 2028, or a positive return of 13%. By October 2029, it reaches $830.90, or a positive return of 35%."
+      },
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At that last date, the bear case is $310.55 and the bull case is $1,349.16. Today's $632.61 sits between them. The probabilities are 25% bear, 55% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 632.61, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 632.61, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "266.93 (-57%)",
+        "284.36 (-53%)",
+        "310.55 (-48%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "594.63 (-5%)",
+        "742.62 (+20%)",
+        "878.95 (+42%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "801.83 (+28%)",
+        "1092.89 (+75%)",
+        "1349.16 (+117%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "554.14 (-11%)",
+        "698.11 (+13%)",
+        "830.90 (+35%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Deere?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires large agriculture to remain weak beyond the expected trough. Financing costs keep farmers repairing older machines, factories run below capacity and tariff support fades. The price falls to $266.93 in October 2027 and reaches only $310.55 by October 2029. Its 25% probability reflects the expected 15%–20% decline in major FY2026 industry units, although smaller agriculture and construction provide some protection."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case assumes a gradual recovery. Smaller equipment and construction lead, large agriculture follows, and utilization improves without a rapid rebound. The price is $594.63 initially and $878.95 by the final date. Its 55% probability is highest because it matches management's cycle-bottom view while respecting continuing weakness and tariff costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Deere really make?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from operating cash. Deere’s real free cash flow also subtracts stock compensation, treating the dilution from employee shares as an economic cost even though issuing those shares does not immediately use cash. Capital spending itself is observable, but Deere does not separate maintenance investment from growth investment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions, without Financial Services",
+      "caption": "Follow the money: real free cash flow (US$ millions, without Financial Services)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,100",
+        "6,905",
+        "11,919",
+        "6,239",
+        "5,900"
+       ],
+       [
+        "− Capital spending",
+        "1,358",
+        "1,636",
+        "1,494",
+        "1,131",
+        "845"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,742",
+        "5,269",
+        "10,425",
+        "5,108",
+        "5,055"
+       ],
+       [
+        "− Stock pay",
+        "151",
+        "208",
+        "130",
+        "85",
+        "82"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,591",
+        "5,061",
+        "10,295",
+        "5,023",
+        "4,973"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "8.9%",
+        "10.9%",
+        "18.0%",
+        "10.2%",
+        "12.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Deere today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "632.61"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "35.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "35.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "632.61"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "830.90 (+35%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "35.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 632.61,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "266.93 (-57%)",
+       "284.36 (-53%)",
+       "310.55 (-48%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "594.63 (-5%)",
+       "742.62 (+20%)",
+       "878.95 (+42%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "801.83 (+28%)",
+       "1092.89 (+75%)",
+       "1349.16 (+117%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "554.14 (-11%)",
+       "698.11 (+13%)",
+       "830.90 (+35%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/de/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Deere dividend: payment, cash coverage and yield",
+   "meta_description": "Deere pays $6.48 per share; its 2025 combined payout was 76.4% of free cash flow, while the forecast changes with cash generation.",
+   "opening": "Deere's current dividend rate is $6.48 per share, and Deere's combined payout was 76.4% of free cash flow in 2025. Deere's regular dividend is easier to understand than consolidated cash flow, but its coverage depends on cash generation through a full cycle.",
+   "closing": "The full memo also explains Deere's business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Deere pay per share?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $6.80 in October 2027 to $7.14 in October 2028. It reaches $7.50 in October 2029. The bear holds the current $6.48 rate flat. The bull reaches $7.13, then $7.84 and $8.63. Deere raised dividends throughout the five reported years, but weak agriculture and tariffs make the base's 5% annual growth more defensible than a return to its earlier pace."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "18.50",
+        "25.62",
+        "34.63",
+        "23.28",
+        "18.99"
+       ],
+       [
+        "Real free cash flow per share",
+        "13.22",
+        "18.26",
+        "35.06",
+        "16.40",
+        "15.84"
+       ],
+       [
+        "Free cash flow per share",
+        "13.77",
+        "19.01",
+        "35.51",
+        "16.68",
+        "16.10"
+       ],
+       [
+        "− Dividends paid, per share",
+        "6.33",
+        "5.79",
+        "4.86",
+        "4.29",
+        "3.31"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.19",
+        "14.46",
+        "24.58",
+        "11.74",
+        "8.08"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Deere's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 95,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across those five years, Deere generated $29.599 billion of free cash flow excluding Financial Services and paid $25.601 billion through dividends and buybacks. Buybacks dominated. They reduce the number of shares, so future profits are divided among fewer owners. The pattern shows that Deere invested in the industrial business before distributing substantial surplus cash."
+      },
+      {
+       "n": 96,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The strain appeared in 2024, when shareholder payments exceeded that year’s free cash flow. Existing cash or borrowing can cover such a gap temporarily, but not indefinitely. In 2025, Deere reduced repurchases to $1.138 billion while dividends reached $1.720 billion. The combined payout fell to 76.4% of free cash flow. Deere therefore preserved its dividend while using buybacks as the adjustable part of shareholder returns."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions, without Financial Services",
+      "caption": "Follow the money: where the free cash flow went (US$ millions, without Financial Services)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,742",
+        "5,269",
+        "10,425",
+        "5,108",
+        "5,055"
+       ],
+       [
+        "− Dividends paid",
+        "1,720",
+        "1,605",
+        "1,427",
+        "1,313",
+        "1,040"
+       ],
+       [
+        "− Share buybacks",
+        "1,138",
+        "4,007",
+        "7,216",
+        "3,597",
+        "2,538"
+       ],
+       [
+        "− Acquisitions",
+        "101",
+        "0",
+        "82",
+        "498",
+        "244"
+       ],
+       [
+        "− Investments bought",
+        "135",
+        "209",
+        "1,043",
+        "76",
+        "8"
+       ],
+       [
+        "Paid to shareholders",
+        "2,858",
+        "5,612",
+        "8,643",
+        "4,910",
+        "3,578"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Deere's dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Net debt falls in the base case from $405M to negative $2,882M and then negative $6,902M. The bear path gives $2,004M, then $605M and negative $1,594M. The bull gives $472M, then negative $2,683M and negative $6,438M. Deere's current equipment-operations net debt is $2,563M. Management expects operating cash flow between $5,000M and $5,500M. Capital spending is guided at $1,300M, but dividends, buybacks and working capital determine how much cash remains."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "7,235 (4,598 / 7,920)",
+        "8,418 (5,100 / 9,800)",
+        "9,315 (5,780 / 11,060)"
+       ],
+       [
+        "Shares (millions)",
+        "267 (268 / 266)",
+        "265 (267 / 262)",
+        "262 (266 / 259)"
+       ],
+       [
+        "Dividends per share",
+        "6.80 (6.48 / 7.13)",
+        "7.14 (6.48 / 7.84)",
+        "7.50 (6.48 / 8.63)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "22.00 (16.00 / 27.00)",
+        "23.00 (15.00 / 29.00)",
+        "24.00 (14.00 / 31.00)"
+       ],
+       [
+        "Net debt",
+        "405 (2,004 / 472)",
+        "-2,882 (605 / -2,683)",
+        "-6,902 (-1,594 / -6,438)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Deere's dividend yield at today's price?",
+     "paragraphs": [
+      {
+       "n": 190,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow needs the same separation. Deere’s fiscal 2026 outlook called for equipment operating cash flow of $5.0–$5.5 billion and capital spending of about $1.3 billion, implying roughly $3.7–$4.2 billion before other adjustments. The regular dividend is easier to understand than consolidated cash flow, but its safety still depends on cash generation through a full cycle. These are the starting facts for judging Deere’s history."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Nov 2025",
+     "value": "6.33"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2021",
+     "Oct 2022",
+     "Oct 2023",
+     "Oct 2024",
+     "Nov 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.31",
+      "4.29",
+      "4.86",
+      "5.79",
+      "6.33"
+     ],
+     "Real free cash flow per share": [
+      "15.84",
+      "16.40",
+      "35.06",
+      "18.26",
+      "13.22"
+     ],
+     "Free cash flow per share": [
+      "16.10",
+      "16.68",
+      "35.51",
+      "19.01",
+      "13.77"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/de/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Deere earnings: date, guidance and results",
+   "meta_description": "Deere's next results are November 25, 2026; guidance points to a cycle bottom, and retail demand is the key test.",
+   "opening": "Deere's next results are scheduled for November 25, 2026. Watch whether planter and sprayer orders convert into retail sales and cash.",
+   "closing": "The full memo also explains Deere's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Deere guided for fiscal 2026?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The large-agriculture market remains weak. Deere expects industry units in the United States and Canada, along with South American tractors and combines, to decline 15%–20%. Production & Precision Agriculture expects sales to fall 10%. Small Agriculture & Turf, by contrast, expects 15% growth, while Construction & Forestry expects 20% growth."
+      },
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management raised fiscal 2026 net-income guidance to $4,750 million–$5,000 million. It expects operating margins of 11%–12% in large agriculture. An operating margin shows how much sales remain after operating costs, so higher factory use can lift profit even before sales fully recover. Construction & Forestry is expected to earn a 10.5%–11.5% margin."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Large Ag — U.S. & Canada (industry units)",
+        "Year to Nov 2026",
+        "-20.0%",
+        "-15.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Production & Precision Ag — Net Sales",
+        "Year to Nov 2026",
+        "-10.0%",
+        "-10.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Small Ag & Turf — Net Sales",
+        "Year to Nov 2026",
+        "15.0%",
+        "15.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Construction & Forestry — Net Sales",
+        "Year to Nov 2026",
+        "20.0%",
+        "20.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Net Income (attributable to Deere & Co.)",
+        "Year to Nov 2026",
+        "4,750",
+        "5,000",
+        "Aug 20, 2026"
+       ],
+       [
+        "Net Operating Cash Flow",
+        "Year to Nov 2026",
+        "5,000",
+        "5,500",
+        "Aug 20, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Deere keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Deere forecast fiscal 2025 net income of US$5.0–5.5 billion on November 21, 2024. It delivered US$5.027 billion, inside that range near its lower end. Its August 20, 2026 call still described production restraint to protect dealer inventories. That discipline fits the incentive system: shipping more machines than customers can absorb may improve today’s results while creating tomorrow’s problem."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Deere's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "For the quarter ended August 2, 2026, revenue, operating income, net income and diluted EPS all improved from the prior year. Cash also strengthened. That combination is more persuasive than an EPS increase alone, although seasonal comparisons must be made with the matching quarter rather than with the immediately preceding period."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions, cash flows without Financial Services",
+      "caption": "The last eight quarters (US$ millions, cash flows without Financial Services)",
+      "head": [
+       "Row",
+       "Aug 2026",
+       "May 2026",
+       "Feb 2026",
+       "Nov 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,608",
+        "13,369",
+        "9,611",
+        "12,394",
+        "12,018",
+        "12,763",
+        "8,508",
+        "11,143"
+       ],
+       [
+        "Gross margin",
+        "37.0%",
+        "38.2%",
+        "34.7%",
+        "35.9%",
+        "37.0%",
+        "40.4%",
+        "40.8%",
+        "41.0%"
+       ],
+       [
+        "Operating income",
+        "1,856",
+        "2,237",
+        "773",
+        "1,351",
+        "1,568",
+        "2,308",
+        "793",
+        "1,450"
+       ],
+       [
+        "Net income",
+        "1,379",
+        "1,773",
+        "656",
+        "1,065",
+        "1,289",
+        "1,804",
+        "869",
+        "1,245"
+       ],
+       [
+        "EPS, diluted",
+        "5.10",
+        "6.55",
+        "2.42",
+        "3.93",
+        "4.75",
+        "6.64",
+        "3.19",
+        "4.55"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,069",
+        "2,828",
+        "-1,599",
+        "1,255",
+        "1,997",
+        "3,717",
+        "-3,227",
+        "608"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Deere's next results?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first financing test arrives in November 2026, when the securitization warehouse expires. Another arrives in fiscal Q2 2027, when Capital Corporation’s $5,500 million 364-day bank facility expires. Renewal terms will show whether lenders remain willing to support Deere’s customer loans and at what cost."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 25, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Aug 2026 (US$ millions, cash flows without Financial Services)",
+     "value": "12,608"
+    },
+    {
+     "label": "EPS, diluted, quarter to Aug 2026",
+     "value": "5.10"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions, cash flows without Financial Services",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Nov 2025",
+     "Feb 2026",
+     "May 2026",
+     "Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,143",
+      "8,508",
+      "12,763",
+      "12,018",
+      "12,394",
+      "9,611",
+      "13,369",
+      "12,608"
+     ],
+     "EPS, diluted": [
+      "4.55",
+      "3.19",
+      "6.64",
+      "4.75",
+      "3.93",
+      "2.42",
+      "6.55",
+      "5.10"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/de/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DE&src=seo-earnings"
+  }
+ },
+ "short_name": "Deere",
+ "first_memo_date": "2026-10-13T13:52:15Z"
+}

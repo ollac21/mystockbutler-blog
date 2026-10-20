@@ -1,0 +1,814 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "KMB",
+ "slug": "kmb",
+ "company": "Kimberly-Clark Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T21:50:56Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 105.41,
+ "price_date": "2026-10-19T20:00:01Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 16363,
+  "sources": 197
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Kimberly-Clark makes the absorbent products people use to keep themselves, their children, their homes and their workplaces clean and dry. Its business looks simple at the shelf, but its money moves through brands, retailers, factories, suppliers and accounting boundaries."
+ },
+ "sources": [
+  {
+   "title": "K-C’s 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026007567/kmb-20251231.htm"
+  },
+  {
+   "title": "K-C’s 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026003514/kmb2025q48kex-991.htm"
+  }
+ ],
+ "rivals": [
+  "PG",
+  "8113.T",
+  "EPC",
+  "CHD",
+  "CLX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Kimberly-Clark stock forecast",
+   "meta_description": "Kimberly-Clark's stock forecast weighs China demand, Kenvue savings, cash generation, deleveraging and three valuation scenarios.",
+   "opening": "Kimberly-Clark's weighted forecast is $87.70 by October 2027 and $103.46 by October 2029. It hinges on China demand, Kenvue savings, cash generation and deleveraging.",
+   "closing": "The full Kimberly-Clark memo also answers how Kimberly-Clark works, who its rivals are, how management is executing, and which risks matter most.",
+   "blocks": [
+    {
+     "heading": "Where could Kimberly-Clark's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Kimberly-Clark’s weighted path points to near-term downside followed by a modest recovery. The weighted price is $87.70 by October 2027, down 12% including dividends. It is $94.26 by October 2028, down 1%. By October 2029, it reaches $103.46, up 13%."
+      },
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear-to-bull range by October 2029 runs from $63.41 to $155.69. Today’s price is $105.41. The bear case has a 32% probability, the base case 49%, and the bull case 19%, because the acquisition creates both meaningful synergy potential and substantial execution risk."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 105.41, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 105.41, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32 %",
+        "70.23 (-29 %)",
+        "64.56 (-29 %)",
+        "63.41 (-26 %)"
+       ],
+       [
+        "Base",
+        "49 %",
+        "91.36 (-8 %)",
+        "100.09 (+5 %)",
+        "109.35 (+19 %)"
+       ],
+       [
+        "Bull",
+        "19 %",
+        "107.71 (+7 %)",
+        "129.24 (+33 %)",
+        "155.69 (+64 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "87.70 (-12 %)",
+        "94.26 (-1 %)",
+        "103.46 (+13 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can be below today's share price even though the bull case is higher."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Kimberly-Clark?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base earnings row assumes revenue grows gradually and net margin improves from 11.3% to 12.1%. The bear case keeps revenue nearly flat and margins around 10%, because China weakness, pricing pressure, interest and integration disruption offset scale. The bull case raises revenue and margin more quickly, requiring China stabilization and prompt savings. Management targets $2.1 billion of annual benefits. It expects $2.5 billion of implementation costs during the first two years. Those facts support partial rather than immediate synergy delivery."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,616 (3,200 / 3,776)",
+        "3,838 (3,185 / 4,150)",
+        "4,066 (3,267 / 4,498)"
+       ],
+       [
+        "Shares (millions)",
+        "614 (615 / 614)",
+        "614 (617 / 610)",
+        "614 (618 / 607)"
+       ],
+       [
+        "Dividends per share",
+        "5.16 (5.04 / 5.28)",
+        "5.28 (5.04 / 5.56)",
+        "5.40 (5.04 / 5.84)"
+       ],
+       [
+        "Price to earnings",
+        "15.50 (13.50 / 17.50)",
+        "16.00 (12.50 / 19.00)",
+        "16.50 (12.00 / 21.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Kimberly-Clark really make?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Investment also rose. Continuing-business capital spending increased from $605 million in 2024 to $1,020 million in 2025. Stock pay was $130 million in 2025. It does not consume cash immediately, but it gives employees a claim on the company, so an owner-focused cash measure may deduct it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "− Capital spending",
+        "1,020",
+        "605",
+        "666",
+        "742"
+       ],
+       [
+        "− Stock pay",
+        "130",
+        "122",
+        "160",
+        "143"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Kimberly-Clark?",
+     "paragraphs": [
+      {
+       "n": 191,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $105.41, a 20.1x trailing P/E implies $5.24 of trailing EPS. The 14.3x forward P/E implies $7.37 of future EPS. That forward denominator is roughly 41% higher, but the difference may reflect adjustments, reporting changes, and acquisition timing rather than underlying growth. At 12x, $7.37 of EPS supports roughly $88. To support $105.41 at that multiple requires $8.78 of EPS."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "105.41"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "103.46 (+13 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.3x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "20.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 105.41,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32 %",
+      "values": [
+       "70.23 (-29 %)",
+       "64.56 (-29 %)",
+       "63.41 (-26 %)"
+      ]
+     },
+     "Base": {
+      "probability": "49 %",
+      "values": [
+       "91.36 (-8 %)",
+       "100.09 (+5 %)",
+       "109.35 (+19 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "19 %",
+      "values": [
+       "107.71 (+7 %)",
+       "129.24 (+33 %)",
+       "155.69 (+64 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "87.70 (-12 %)",
+       "94.26 (-1 %)",
+       "103.46 (+13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/kmb/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KMB&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Kimberly-Clark dividend: payout and coverage",
+   "meta_description": "Kimberly-Clark pays $5.04 per share, maintains a $1.28 quarterly rate, and has little first-half cash flow left after dividends.",
+   "opening": "Kimberly-Clark paid $5.04 per share in 2025 and maintained a $1.28 quarterly rate in the first half of 2026. On a simple measure, Kimberly-Clark's first-half free cash flow covered dividends, but the cash included discontinued operations.",
+   "closing": "The full memo also explains Kimberly-Clark’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Kimberly-Clark pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend row rises modestly in the base case, freezes in the bear case and grows faster in the bull case. Kimberly-Clark paid $5.04 per share in 2025 and maintained a $1.28 quarterly rate in the first half of 2026. The five-year dividend growth rate was about 2.0% annually. The freeze remains credible because first-half cash left only $34 million after capital spending and common dividends."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.86",
+        "6.41",
+        "4.31",
+        "4.89",
+        ""
+       ],
+       [
+        "− Paid to minority owners, per share",
+        "0.10",
+        "0.10",
+        "0.10",
+        "0.29",
+        "0.11"
+       ],
+       [
+        "− Dividends paid, per share",
+        "4.98",
+        "4.83",
+        "4.69",
+        "4.61",
+        "4.47"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.42",
+        "2.97",
+        "0.66",
+        "0.30",
+        "1.18"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Kimberly-Clark's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.3 — Against rivals",
+       "text": "Cash offers a further test. K-C generated about $0.9 billion of free cash flow in the first half of 2026 under a simple operating-cash-less-investment definition. Dividends consumed $843 million. That cash included discontinued operations, so the dividend is not proof that post-deal distributions will be comfortably funded."
+      },
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The important pattern is that shareholder payments could exceed the simple free-cash-flow measure. When that happens, the company must draw down cash, borrow, sell assets or issue shares. Debt repayment also does not guarantee a stronger cushion: if cash falls faster than borrowings, net debt—debt minus cash—can rise."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Paid to minority owners",
+        "32",
+        "35",
+        "35",
+        "98",
+        "36"
+       ],
+       [
+        "− Dividends paid",
+        "1,660",
+        "1,628",
+        "1,588",
+        "1,558",
+        "1,516"
+       ],
+       [
+        "− Share buybacks",
+        "141",
+        "1,000",
+        "225",
+        "100",
+        "400"
+       ],
+       [
+        "− Acquisitions",
+        "",
+        "0",
+        "0",
+        "46",
+        "0"
+       ],
+       [
+        "− Debt repaid",
+        "550",
+        "554",
+        "475",
+        "312",
+        "269"
+       ],
+       [
+        "Paid to shareholders",
+        "1,801",
+        "2,628",
+        "1,813",
+        "1,658",
+        "1,916"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Kimberly-Clark's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "KMB’s weighted forecast points to a decline by October 2027 and a modest recovery by October 2029, hinging on China demand, Kenvue savings, cash generation and deleveraging. Management guides for 2026 organic sales growth 100 basis points below weighted category growth, mid-single-digit adjusted operating-profit growth and high-single-digit adjusted continuing-operations EPS growth. It also promises adjusted free cash flow of $2,000 million, the company’s own figure. Its gross productivity target is 5.0%–6.0%, and the guidance excludes Kenvue."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,616 (3,200 / 3,776)",
+        "3,838 (3,185 / 4,150)",
+        "4,066 (3,267 / 4,498)"
+       ],
+       [
+        "Shares (millions)",
+        "614 (615 / 614)",
+        "614 (617 / 610)",
+        "614 (618 / 607)"
+       ],
+       [
+        "Dividends per share",
+        "5.16 (5.04 / 5.28)",
+        "5.28 (5.04 / 5.56)",
+        "5.40 (5.04 / 5.84)"
+       ],
+       [
+        "Price to earnings",
+        "15.50 (13.50 / 17.50)",
+        "16.00 (12.50 / 19.00)",
+        "16.50 (12.00 / 21.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Kimberly-Clark's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 191,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $105.41, a 20.1x trailing P/E implies $5.24 of trailing EPS. The 14.3x forward P/E implies $7.37 of future EPS. That forward denominator is roughly 41% higher, but the difference may reflect adjustments, reporting changes, and acquisition timing rather than underlying growth. At 12x, $7.37 of EPS supports roughly $88. To support $105.41 at that multiple requires $8.78 of EPS."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.98"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.9%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.47",
+      "4.61",
+      "4.69",
+      "4.83",
+      "4.98"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/kmb/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KMB&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Kimberly-Clark earnings date and guidance",
+   "meta_description": "Kimberly-Clark reports on November 5, 2026, with guidance, recent results and the main things to watch.",
+   "opening": "Kimberly-Clark’s next results are expected on November 5, 2026. The key thing to watch is whether China’s sales drag eases and profit improvement avoids temporary help.",
+   "closing": "The full memo also answers how Kimberly-Clark works, who Kimberly-Clark competes with, how Kimberly-Clark is managed, and what risks Kimberly-Clark faces.",
+   "blocks": [
+    {
+     "heading": "What has Kimberly-Clark guided for the year?",
+     "paragraphs": [
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The retained business is still expected to deliver mid-single-digit adjusted operating-profit growth and high-single-digit adjusted EPS growth. Management also guides to US$2,000 million of adjusted free cash flow after capital spending, with gross productivity of 5.0%–6.0%. Gross productivity means savings before inflation, reinvestment and other costs reduce them. This guidance excludes Kenvue."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Organic Sales Growth — basis points below weighted average category growth",
+        "Year to Dec 2026",
+        "100",
+        "100",
+        "Oct 15, 2026"
+       ],
+       [
+        "Adjusted Operating Profit growth — constant currency",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Oct 15, 2026"
+       ],
+       [
+        "Adjusted Earnings per Share from Continuing Operations growth — constant currency",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Oct 15, 2026"
+       ],
+       [
+        "Adjusted Earnings per Share Attributable to Kimberly-Clark decline — constant currency",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Oct 15, 2026"
+       ],
+       [
+        "Adjusted Free Cash Flow",
+        "Year to Dec 2026",
+        "2,000",
+        "2,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Gross Productivity (%)",
+        "Year to Dec 2026",
+        "5.0%",
+        "6.0%",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": "The organic sales figure is about 1 percentage point below the category's growth, not the company's expected sales growth by itself."
+     }
+    },
+    {
+     "heading": "Has Kimberly-Clark kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The 2025 annual scorecard missed both disclosed targets. Organic sales growth was 1.1% against a 2.5% target, while adjusted earnings per share were $7.37 against $7.56. Organic growth removes currency and portfolio effects; adjusted earnings remove specified accounting items. Hsu’s annual incentive paid at 61% of target, and the committee excluded an accounting benefit from paused depreciation."
+      },
+      {
+       "n": 112,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The longer-term award produced a different result. The 2023–2025 performance awards paid at 150% of target because organic growth met its goal and modified free cash flow exceeded its maximum. Modified free cash flow excluded transformation and separation cash costs. Those costs still reduce cash available to shareholders, so a weak annual award and a generous three-year payout can coexist."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Kimberly-Clark’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue was $4,134 million, compared with $4,150 million a year earlier. Organic sales fell 1.3%. Gross margin declined from 36.0% to 34.9%. Operating income fell from $621 million to $516 million. Continuing diluted EPS nevertheless rose from $1.01 to $1.19 because earnings per share comes after taxes and other items."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,134",
+        "4,189",
+        "4,163",
+        "4,080",
+        "4,150",
+        "4,163",
+        "4,054",
+        "4,104"
+       ],
+       [
+        "Gross margin",
+        "34.9%",
+        "38.3%",
+        "36.8%",
+        "35.9%",
+        "36.0%",
+        "35.0%",
+        "37.2%",
+        "35.2%"
+       ],
+       [
+        "Operating income",
+        "516",
+        "633",
+        "753",
+        "507",
+        "621",
+        "592",
+        "631",
+        "420"
+       ],
+       [
+        "Net income",
+        "",
+        "405",
+        "564",
+        "380",
+        "336",
+        "441",
+        "464",
+        "344"
+       ],
+       [
+        "EPS, diluted",
+        "1.19",
+        "1.22",
+        "1.70",
+        "1.14",
+        "1.01",
+        "1.33",
+        "1.39",
+        "1.03"
+       ],
+       [
+        "− Capital spending",
+        "",
+        "285",
+        "410",
+        "352",
+        "313",
+        "176",
+        "179",
+        "172"
+       ]
+      ],
+      "note": "The September 2026 net income is blank because the preliminary filing did not yet report the profit belonging to shareholders, and the rounded earnings per share cannot recover it exactly."
+     }
+    },
+    {
+     "heading": "What should I watch in Kimberly-Clark’s next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "K-C plans to publish final third-quarter results and hold an analyst Q&A on November 5. The October 15 release was preliminary. Investors should look for a smaller China sales drag and profit improvement that does not depend on temporary help, since second-quarter adjusted results benefited from one-time tariff refunds."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "4,134"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.19"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,104",
+      "4,054",
+      "4,163",
+      "4,150",
+      "4,080",
+      "4,163",
+      "4,189",
+      "4,134"
+     ],
+     "EPS, diluted": [
+      "1.03",
+      "1.39",
+      "1.33",
+      "1.01",
+      "1.14",
+      "1.70",
+      "1.22",
+      "1.19"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/kmb/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KMB&src=seo-earnings"
+  }
+ },
+ "short_name": "Kimberly-Clark",
+ "first_memo_date": "2026-10-19T21:50:56Z"
+}

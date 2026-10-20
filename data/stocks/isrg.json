@@ -1,0 +1,543 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ISRG",
+ "slug": "isrg",
+ "company": "Intuitive Surgical, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T05:30:35Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 420.24,
+ "price_date": "2026-10-14T20:00:01Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 16794,
+  "sources": 256
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Intuitive Surgical sells hospitals the equipment and supplies behind robot-assisted surgery and robotic lung biopsy. Its business begins with a system, but it earns durable revenue when trained teams use that system and reorder the tools and support that make each case possible."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000023/isrg-20260313.htm"
+  },
+  {
+   "title": "Schedule 13G",
+   "url": "https://www.sec.gov/Archives/edgar/data/1035267/000210011926000758/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "title": "Ownership statement",
+   "url": "https://isrg.intuitive.com/node/23351/html"
+  }
+ ],
+ "rivals": [
+  "JNJ",
+  "MDT",
+  "2252.HK",
+  "SSII"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Intuitive Surgical stock forecast",
+   "meta_description": "Intuitive Surgical's forecast spans bear, base, and bull cases, with returns depending on procedures, recurring sales, margins, and valuation.",
+   "opening": "The weighted forecast points to $450.53 (+7%) in October 2027 and $527.22 (+25%) in October 2029. It hinges on whether procedures, recurring supply sales, and margins support the falling future P/E.",
+   "closing": "The full memo also answers how Intuitive Surgical makes money, who its rivals are, how management allocates capital, and what risks could change the path.",
+   "blocks": [
+    {
+     "heading": "Where could Intuitive Surgical's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to $450.53 (+7%) in October 2027 and $527.22 (+25%) in October 2029 if procedures, recurring supply sales, and margins hold as the future P/E falls."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 420.24, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 420.24, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "339.06 (-19 %)",
+        "320.89 (-24 %)",
+        "308.50 (-27 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "476.80 (+13 %)",
+        "520.68 (+24 %)",
+        "540.96 (+29 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "552.05 (+31 %)",
+        "706.96 (+68 %)",
+        "820.94 (+95 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "450.53 (+7 %)",
+        "498.00 (+19 %)",
+        "527.22 (+25 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it is not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Intuitive Surgical?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case begins with the same revenue base but uses 8% growth, then 10%. It returns to 8% in the final year because U.S. procedure growth was about 12%, hospitals may defer elective cases, and trade-ins may replace capacity. Margins fall from 25.0% to 24.5%, so earnings run from $3,125 million to $3,638 million. The bull case uses 20% growth, then 19%, and 17%, with margins rising from 28.0% to 30.0%. Ion adoption, da Vinci 5 utilization, and manufacturing scale support that path. Earnings rise from $3,898 million to $5,814 million."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Intuitive Surgical really make?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation adds a shareholder cost that conventional free cash flow does not deduct. Subtracting $788.2 million of stock pay leaves “real free cash flow” of $1,702.5 million. That measure asks how much cash remains after recognizing the ownership transferred to employees."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,030.5",
+        "2,415.0",
+        "1,813.8",
+        "1,490.8",
+        "2,089.4"
+       ],
+       [
+        "− Capital spending",
+        "539.8",
+        "1,111.2",
+        "1,064.2",
+        "532.4",
+        "339.5"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,490.7",
+        "1,303.8",
+        "749.6",
+        "958.4",
+        "1,749.9"
+       ],
+       [
+        "− Stock pay",
+        "788.2",
+        "676.8",
+        "592.8",
+        "513.2",
+        "449.2"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,702.5",
+        "627.0",
+        "156.8",
+        "445.2",
+        "1,300.7"
+       ]
+      ],
+      "note": "The working-capital amount is already included in cash from operations, so do not subtract it again when calculating free cash flow."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Intuitive Surgical today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The 48.1x trailing P/E means investors pay $48.10 for each dollar of recent earnings. EBITDA removes depreciation, interest, and taxes, so it can make a business with expensive equipment look more cash-generative than it is. Replacing or expanding those robots still requires cash. Free cash flow makes that test more directly by subtracting capital spending."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "420.24"
+       ],
+       [
+        "Market value (calculated)",
+        "148,461.6"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "143,245.4"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "48.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.1%"
+       ]
+      ],
+      "note": "The share price is the closing price from October 14, even though the table is dated October 15."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "420.24"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "527.22 (+25 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "34.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 420.24,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "339.06 (-19 %)",
+       "320.89 (-24 %)",
+       "308.50 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "476.80 (+13 %)",
+       "520.68 (+24 %)",
+       "540.96 (+29 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "552.05 (+31 %)",
+       "706.96 (+68 %)",
+       "820.94 (+95 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "450.53 (+7 %)",
+       "498.00 (+19 %)",
+       "527.22 (+25 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/isrg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ISRG&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Intuitive Surgical earnings and guidance",
+   "meta_description": "Intuitive Surgical reports October 20, 2026; guidance calls for 13.5%–15.5% procedure growth and 68.0%–69.0% non-GAAP gross margin.",
+   "opening": "Intuitive Surgical's next results are expected on October 20, 2026. Watch whether da Vinci procedure growth supports management's forecast.",
+   "closing": "The full memo also answers questions about Intuitive Surgical's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Intuitive Surgical guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s July 16 guidance calls for worldwide da Vinci procedure growth of 13.5%–15.5% in 2026, near the midpoint. It held that range while raising expected non-GAAP gross margin to 68.0%–69.0% and narrowing expected non-GAAP operating-expense growth to 11.0%–13.0%. Non-GAAP figures adjust standard accounting results for items such as share-based compensation and unusual charges, so they describe management’s view of ongoing operations rather than the exact profit shareholders receive."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Worldwide da Vinci procedure growth",
+        "Year to Dec 2026",
+        "13.5%",
+        "15.5%",
+        "Jul 16, 2026"
+       ],
+       [
+        "Non-GAAP gross profit margin",
+        "Year to Dec 2026",
+        "68.0%",
+        "69.0%",
+        "Jul 16, 2026"
+       ],
+       [
+        "Estimated impact from tariffs, % of revenue",
+        "Year to Dec 2026",
+        "1.0%",
+        "1.0%",
+        "Jul 16, 2026"
+       ],
+       [
+        "Non-GAAP operating expense growth",
+        "Year to Dec 2026",
+        "11.0%",
+        "13.0%",
+        "Jul 16, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Intuitive Surgical kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 113,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is evidence that management delivered on important commitments. Management first forecast da Vinci procedure growth between 15.5% and 17%. The eventual result was 18%, and da Vinci 5 moved into broad U.S. launch. Those outcomes support the execution record because they connect pay to adoption and product delivery."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What were Intuitive Surgical's revenue and profit trends over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $2,892.3 million and operating income reached $971.9 million. Instruments and accessories, systems, and service all grew, so the result was broad rather than dependent on one line."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,892.3",
+        "2,770.8",
+        "2,866.2",
+        "2,505.1",
+        "2,440.0",
+        "2,253.4",
+        "2,413.5",
+        "2,038.1"
+       ],
+       [
+        "Gross margin",
+        "67.8%",
+        "66.1%",
+        "66.4%",
+        "66.4%",
+        "66.3%",
+        "64.7%",
+        "68.0%",
+        "67.4%"
+       ],
+       [
+        "Operating income",
+        "971.9",
+        "855.3",
+        "864.3",
+        "759.7",
+        "743.4",
+        "578.1",
+        "734.9",
+        "577.3"
+       ],
+       [
+        "Net income",
+        "818.1",
+        "821.5",
+        "794.8",
+        "704.4",
+        "658.4",
+        "698.4",
+        "685.7",
+        "565.1"
+       ]
+      ],
+      "note": "Free cash flow is not profit; it is the cash left after the company pays for equipment, buildings, and software."
+     }
+    },
+    {
+     "heading": "What should people watch in Intuitive Surgical's next results?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "On October 20, investors should separate da Vinci from Ion, Intuitive’s platform for lung biopsies. In Q2, worldwide da Vinci procedures grew approximately 15%, while Ion grew approximately 36%. Da Vinci growth was 12% in the United States against 20% outside it. Broad growth across specialties would provide stronger evidence than a temporary surge in postponed cases."
+      },
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next step is utilization: procedures per installed system. June’s installed base reached 11,710 da Vinci systems and 1,096 Ion systems. Management reported Q2 utilization increases of 3% for da Vinci and 11% for Ion. Rising procedures and rising utilization suggest hospitals are using their investments more intensively, although neither proves that a hospital’s reimbursement covers its full cost."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,892.3"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.29"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,038.1",
+      "2,413.5",
+      "2,253.4",
+      "2,440.0",
+      "2,505.1",
+      "2,866.2",
+      "2,770.8",
+      "2,892.3"
+     ],
+     "EPS, diluted": [
+      "1.56",
+      "1.88",
+      "1.92",
+      "1.81",
+      "1.95",
+      "2.21",
+      "2.28",
+      "2.29"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/isrg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ISRG&src=seo-earnings"
+  }
+ },
+ "short_name": "Intuitive Surgical",
+ "first_memo_date": "2026-10-15T05:30:35Z"
+}

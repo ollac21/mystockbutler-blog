@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "LRCX",
+ "slug": "lrcx",
+ "company": "Lam Research Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-11T19:08:45Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 318.84,
+ "price_date": "2026-10-09T20:00:01Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 27,
+  "words": 17106,
+  "sources": 215
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Lam Research makes the machines that chip factories use to build microscopic structures on silicon. Its business earns a first dollar when a fab buys equipment and later dollars when that equipment needs parts, service or improvement."
+ },
+ "sources": [
+  {
+   "title": "FY2026 Form 10-K, Notes 4 and 19",
+   "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm"
+  },
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754925000075/lrcx-20250629.htm"
+  },
+  {
+   "title": "FY2024 Form 10-K, Note 4",
+   "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754924000106/lrcx-20240630.htm"
+  }
+ ],
+ "rivals": [
+  "AMAT",
+  "KLAC",
+  "ACLS",
+  "VECO",
+  "ONTO",
+  "ACMR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Lam Research stock forecast",
+   "meta_description": "Lam Research stock forecast: weighted scenarios through October 2029, cash generation, risks and the valuation behind the outlook.",
+   "opening": "Lam Research's weighted value is US$343.49 per share in October 2027. The outlook hinges on cash conversion and qualified process wins.",
+   "closing": "The full memo also answers how Lam Research makes money, how it compares with rivals, how management allocates capital, and which risks could change the forecast.",
+   "blocks": [
+    {
+     "heading": "Where could Lam Research's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price for October 2027 is $343.49, an 8% return including dividends. For October 2028, it is $321.64, a 2% return including dividends. For October 2029, it is $318.04, a 1% return including dividends."
+      },
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear probability is 25%. The base probability is 55%. The bull probability is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 318.84, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 318.84, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "261.83 (-17 %)",
+        "152.74 (-51 %)",
+        "176.14 (-44 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "337.00 (+6 %)",
+        "330.06 (+4 %)",
+        "308.35 (-2 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "463.43 (+46 %)",
+        "509.59 (+61 %)",
+        "522.06 (+65 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "343.49 (+8 %)",
+        "321.64 (+2 %)",
+        "318.04 (+1 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Lam Research?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Operating profit rises in the base case to $9,860 million in October 2027 and $10,540 million in October 2028. It then holds at $10,560 million in October 2029. This extends the recovery in systems and support revenue, while margins ease from fiscal 2026’s level. The bear row assumes a spending pause and lower margins; the bull row requires AI demand, utilization, and process qualifications to broaden."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Lam Research really make?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is another ownership cost. Employees receive shares instead of cash, but shareholders bear dilution or the cost of repurchases. Fiscal 2026 stock pay was $386,381 thousand, leaving analytical “real free cash flow” of $4,504,871 thousand. This is not Lam’s official measure; it asks what remains after recognizing that equity compensation belongs in the economic cost of running the business."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,857,657",
+        "6,173,264",
+        "4,652,269",
+        "5,178,938",
+        "3,099,674"
+       ],
+       [
+        "− Capital spending",
+        "966,405",
+        "759,186",
+        "396,670",
+        "501,568",
+        "546,034"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,891,252",
+        "5,414,078",
+        "4,255,599",
+        "4,677,370",
+        "2,553,640"
+       ],
+       [
+        "− Stock pay",
+        "386,381",
+        "343,371",
+        "293,058",
+        "286,600",
+        "259,064"
+       ],
+       [
+        "**= Real free cash flow**",
+        "4,504,871",
+        "5,070,707",
+        "3,962,541",
+        "4,390,770",
+        "2,294,576"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "19.4%",
+        "27.5%",
+        "26.6%",
+        "25.2%",
+        "13.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Lam Research today?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The forward P/E looks much lower than the trailing P/E because earnings are expected to recover sharply. P/E divides the share price by annual earnings: trailing P/E uses the past twelve months, while forward P/E uses a forecast of the next twelve. Semiconductor customers do not expand factories steadily. They order heavily in strong cycles and delay purchases during downturns, so the forecast behind the forward multiple matters as much as the multiple itself."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "318.84"
+       ],
+       [
+        "Market value (calculated)",
+        "399,004,144"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "397,159,536"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "55.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "26.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "318.84"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "318.04 (+1 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "26.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 318.84,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "261.83 (-17 %)",
+       "152.74 (-51 %)",
+       "176.14 (-44 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "337.00 (+6 %)",
+       "330.06 (+4 %)",
+       "308.35 (-2 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "463.43 (+46 %)",
+       "509.59 (+61 %)",
+       "522.06 (+65 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "343.49 (+8 %)",
+       "321.64 (+2 %)",
+       "318.04 (+1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/lrcx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LRCX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Lam Research dividend: cash coverage and yield",
+   "meta_description": "This Lam Research dividend guide covers cash coverage, planned changes and the current yield in plain English.",
+   "opening": "Lam Research pays $0.33 per share quarterly and $1.32 per share annually at the declared rate. Its fiscal 2026 free cash flow was $4,891 million, but fiscal 2026 distributions exceeded free cash flow.",
+   "closing": "The full memo also explains Lam Research’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Lam Research pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends remain at $1.32 per share through 2027, then rise to $1.58 in 2028 and $1.90 in 2029. The starting point is the declared quarterly dividend of $0.33, which followed a 27% increase. The base case assumes slower 20% annual increases because Lam has net cash and generated $4,891 million of fiscal 2026 free cash flow, but its cycle and recent distributions above free cash flow justify the bear cuts."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "5.76",
+        "4.15",
+        "2.90",
+        "3.32",
+        "3.28"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.01",
+        "0.89",
+        "0.77",
+        "0.67",
+        "0.58"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.05",
+        "2.65",
+        "2.15",
+        "1.48",
+        "2.75"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Lam Research’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 105,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends offer a more direct return. Lam raised its quarterly dividend to $0.33 per share in August 2026. Debt reduction also improved financial flexibility, and the balance sheet moved from net debt in June 2022 to net cash by June 2026. But fiscal 2026 distributions exceeded free cash flow, so Lam used some of that flexibility to support shareholder returns."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,891,252",
+        "5,414,078",
+        "4,255,599",
+        "4,677,370",
+        "2,553,640"
+       ],
+       [
+        "− Dividends paid",
+        "1,270,635",
+        "1,149,542",
+        "1,018,915",
+        "907,907",
+        "815,290"
+       ],
+       [
+        "− Share buybacks",
+        "3,851,343",
+        "3,422,321",
+        "2,842,807",
+        "2,017,012",
+        "3,865,663"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "842,215",
+        "393,877",
+        "1,752,451",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "230,726",
+        "",
+        "",
+        "",
+        "2,127,313"
+       ],
+       [
+        "Paid to shareholders",
+        "5,121,978",
+        "4,571,863",
+        "3,861,722",
+        "2,924,919",
+        "4,680,953"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Lam Research’s dividend?",
+     "paragraphs": [
+      {
+       "n": 266,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "During 2028 and 2029, stronger cash conversion would support both laboratory investment and repurchases. Continued working-capital pressure would do the opposite; Lam’s latest working-capital use was $1,914 million."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Lam Research’s dividend yield today against its price?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the range runs from $176.14 in the bear case to $522.06 in the bull case, against today’s $318.84."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "318.84"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "1.01"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jun 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.58",
+      "0.67",
+      "0.77",
+      "0.89",
+      "1.01"
+     ],
+     "Real free cash flow per share": [
+      "1.63",
+      "3.23",
+      "3.00",
+      "3.93",
+      "3.57"
+     ],
+     "Free cash flow per share": [
+      "1.82",
+      "3.44",
+      "3.22",
+      "4.20",
+      "3.88"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/lrcx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LRCX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Lam Research earnings: guidance and next results",
+   "meta_description": "Lam Research reports October 21, 2026: guidance points to higher revenue and operating margin; cash conversion is the key watchpoint.",
+   "opening": "Lam Research's next results are expected on October 21, 2026. Watch whether Lam Research turns the September revenue ramp into collected cash.",
+   "closing": "The full memo also explains Lam Research's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Lam Research guided for the September quarter?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the quarter to September 2026, Lam guided revenue of US$7,700,000–8,500,000 thousand. It guided operating margin of 38.5%–40.5%. Diluted EPS guidance was US$2.00–2.30 per share."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue — U.S. GAAP",
+        "Quarter to Sep 2026",
+        "7,700,000",
+        "8,500,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "Operating margin — U.S. GAAP",
+        "Quarter to Sep 2026",
+        "38.5%",
+        "40.5%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Net income per diluted share — U.S. GAAP",
+        "Quarter to Sep 2026",
+        "2.00",
+        "2.30",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What promises has Lam Research kept?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Lam also promised an adjusted operating margin of 34–35% for calendar 2028. Fiscal 2026 reached 35.8%, so management is ahead of that objective for now. The stronger test is whether profitability remains durable as Lam expands its laboratories."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Lam Research's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Quarterly revenue reached $6,722,238 thousand, approximately 30.0% above June 2025. It was also 15.1% above March. Operating income reached $2,513,488 thousand, up 44.4% year over year. Diluted EPS rose from $1.35 to $1.81. Gross margin reached 51.7%, compared with 50.1% a year earlier. The eight-quarter trend shows a sustained recovery, not an isolated spike."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,722,238",
+        "5,841,488",
+        "5,344,791",
+        "5,324,173",
+        "5,171,393",
+        "4,720,175",
+        "4,376,047",
+        "4,167,976"
+       ],
+       [
+        "Gross margin",
+        "51.7%",
+        "49.8%",
+        "49.6%",
+        "50.4%",
+        "50.1%",
+        "49.0%",
+        "47.4%",
+        "48.0%"
+       ],
+       [
+        "Operating income",
+        "2,513,488",
+        "2,047,016",
+        "1,810,203",
+        "1,829,088",
+        "1,741,128",
+        "1,561,759",
+        "1,333,884",
+        "1,264,197"
+       ],
+       [
+        "Net income",
+        "2,277,282",
+        "1,825,460",
+        "1,593,994",
+        "1,568,660",
+        "1,720,088",
+        "1,330,667",
+        "1,191,018",
+        "1,116,444"
+       ],
+       [
+        "EPS, diluted",
+        "1.81",
+        "1.45",
+        "1.26",
+        "1.24",
+        "1.35",
+        "1.03",
+        "0.92",
+        "0.86"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,268,427",
+        "809,816",
+        "1,219,166",
+        "1,593,843",
+        "2,381,997",
+        "1,020,605",
+        "553,593",
+        "1,457,883"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Lam Research's next results?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Lam scheduled its September-quarter financial call for October 21, 2026. It begins at 2 p.m. Pacific time. Investors will compare revenue and diluted EPS with management’s guidance, then study the December outlook. That outlook will show whether September establishes a higher level of activity or creates a difficult comparison."
+      },
+      {
+       "n": 245,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Cash deserves equal attention. Lam’s days sales outstanding already rose from 64 to 72 days. A further increase would leave more cash tied up in unpaid invoices. Operating cash flow and facility spending will show whether the company is funding expansion from the business or relying more heavily on its financial reserves."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "6,722,238"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.81"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,167,976",
+      "4,376,047",
+      "4,720,175",
+      "5,171,393",
+      "5,324,173",
+      "5,344,791",
+      "5,841,488",
+      "6,722,238"
+     ],
+     "EPS, diluted": [
+      "0.86",
+      "0.92",
+      "1.03",
+      "1.35",
+      "1.24",
+      "1.26",
+      "1.45",
+      "1.81"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/lrcx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LRCX&src=seo-earnings"
+  }
+ },
+ "short_name": "Lam Research",
+ "first_memo_date": "2026-10-11T19:08:45Z"
+}

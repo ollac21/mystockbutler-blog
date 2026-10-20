@@ -1,0 +1,822 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MRK",
+ "slug": "mrk",
+ "company": "Merck & Co., Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T00:42:01Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 145.6,
+ "price_date": "2026-10-09T20:02:34Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 250,
+  "tables": 27,
+  "words": 17386,
+  "sources": 274
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Merck & Co. sells treatments, vaccines, and animal-health products, but its business is easier to understand as a chain than as a catalogue. A patient, pet owner, farmer, clinic, insurer, wholesaler, or public programme creates demand; Merck turns that demand into net sales, then spends the proceeds on science, production, partners, and the company itself."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/mrk-20251231.htm"
+  },
+  {
+   "title": "Q2 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000212/mrk-20260630.htm"
+  },
+  {
+   "title": "First-quarter 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/310158/000162828026029802/mrk-20260331.htm"
+  }
+ ],
+ "rivals": [
+  "OGN",
+  "PFE",
+  "BMY",
+  "AZN",
+  "JNJ",
+  "ABBV",
+  "LLY",
+  "GSK",
+  "ZTS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Merck stock forecast",
+   "meta_description": "Merck's forecast weighs three scenarios against KEYTRUDA erosion, replacement launches, cash generation and valuation.",
+   "opening": "Merck’s weighted forecast is $131.92 in October 2027, a 7% loss with dividends. It hinges on whether newer products replace enough KEYTRUDA revenue before biosimilar erosion.",
+   "closing": "The full memo also explains Merck’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Merck's shares go?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted forecast points to a lower total return at every date. It puts October 2027 at $131.92, a 7% loss with dividends. October 2028 reaches $129.25, a 6% loss. By October 2029, the value is $106.83, a 19% loss."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 145.60, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 145.60, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "105.78 (-25 %)",
+        "84.98 (-37 %)",
+        "58.31 (-53 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "136.43 (-4 %)",
+        "135.06 (-2 %)",
+        "110.98 (-16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "159.87 (+12 %)",
+        "181.12 (+29 %)",
+        "169.24 (+24 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "131.92 (-7 %)",
+        "129.25 (-6 %)",
+        "106.83 (-19 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Merck?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Earnings create the central risk because KEYTRUDA and QLEX represented about half of 2025 sales, while biosimilar competition is expected between 2028 and 2029. The base case uses $21,600M at the first date. It rises to $22,032M before easing to $20,071M at the last date."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $20,017M and then $19,028M before reaching $16,000M. Weak Gardasil demand, limited launch replacement and faster KEYTRUDA erosion explain the declining margins. The bull case reaches $23,016M, then $24,480M, before easing to $24,090M. QLEX, newer launches and vaccine recovery must create operating leverage for that path."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "21,600 (20,017 / 23,016)",
+        "22,032 (19,028 / 24,480)",
+        "20,071 (16,000 / 24,090)"
+       ],
+       [
+        "Shares (millions)",
+        "2,454 (2,460 / 2,448)",
+        "2,447 (2,463 / 2,433)",
+        "2,442 (2,470 / 2,420)"
+       ],
+       [
+        "Dividends per share",
+        "3.55 (3.40 / 3.60)",
+        "3.75 (3.40 / 3.80)",
+        "3.95 (3.40 / 4.00)"
+       ],
+       [
+        "Price to earnings",
+        "15.50 (13.00 / 17.00)",
+        "15.00 (11.00 / 18.00)",
+        "13.50 (9.00 / 17.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Merck really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Working-capital movements absorbed $6,976 million in 2025. Capital spending also rose to $4,112 million, although public figures do not show how much maintained existing capacity or expanded it. Stock compensation consumed no immediate cash, but it diluted shareholders; deducting its $820 million expense produces an analytical “real” free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "16,472",
+        "21,468",
+        "13,006",
+        "19,095",
+        "13,122"
+       ],
+       [
+        "− Capital spending",
+        "4,112",
+        "3,372",
+        "3,863",
+        "4,388",
+        "4,448"
+       ],
+       [
+        "**= Free cash flow**",
+        "12,360",
+        "18,096",
+        "9,143",
+        "14,707",
+        "8,674"
+       ],
+       [
+        "− Stock pay",
+        "820",
+        "761",
+        "645",
+        "541",
+        "479"
+       ],
+       [
+        "**= Real free cash flow**",
+        "11,540",
+        "17,335",
+        "8,498",
+        "14,166",
+        "8,195"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "17.8%",
+        "27.0%",
+        "14.1%",
+        "23.9%",
+        "16.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Merck?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The wide gap between trailing and forward P/E, or price divided by earnings, is therefore mainly a warning about the denominator. Acquisition charges depressed recent profit, while the forward measure assumes improvement. Removing a charge from adjusted earnings does not restore the cash spent or cancel the debt."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "145.60"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "106.83 (-19 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 145.6,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "105.78 (-25 %)",
+       "84.98 (-37 %)",
+       "58.31 (-53 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "136.43 (-4 %)",
+       "135.06 (-2 %)",
+       "110.98 (-16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "159.87 (+12 %)",
+       "181.12 (+29 %)",
+       "169.24 (+24 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "131.92 (-7 %)",
+       "129.25 (-6 %)",
+       "106.83 (-19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mrk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MRK&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Merck dividend: cash coverage and yield",
+   "meta_description": "Merck's dividend rose over time, but cash also funded buybacks and acquisitions; see its current yield, risks and forecast.",
+   "opening": "Merck's dividend rose from $2.64 to $3.28 per share in the history shown. Its cash covered dividends in 2025, but free cash flow also funded buybacks and acquisitions.",
+   "closing": "The full memo answers what else matters about Merck's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Merck pay per share?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base from $3.55 to $3.75 and then $3.95 per share. That extends a record of annual increases from $2.64 to $3.28. The bear freezes the declared quarterly rate, producing $3.40 in each period. The bull reaches $3.60, $3.80 and $4.00 if cash generation permits faster increases, despite debt and research needs."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "7.28",
+        "6.74",
+        "0.14",
+        "5.71",
+        "4.86"
+       ],
+       [
+        "Real free cash flow per share",
+        "4.60",
+        "6.82",
+        "3.34",
+        "5.57",
+        "3.23"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.26",
+        "3.09",
+        "2.92",
+        "2.76",
+        "2.60"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "3.52",
+        "0.13",
+        "3.02",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Merck's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operations and spending on plants and equipment. From 2021 through 2025, it totalled $62,980 million. Dividends consumed $37,083 million and buybacks consumed another $8,576 million. Acquisitions absorbed $38,495 million, so operating cash alone could not fund both distributions and purchases."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The distribution test is demanding. Merck paid $8,176 million in dividends and spent $5,084 million repurchasing shares. Those uses exceeded conventional free cash flow before the Verona acquisition, which consumed $10,042 million net of acquired cash. The question is not whether one year’s adjusted EPS covers the dividend, but whether cash can fund distributions, factories and replacement research together."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "12,360",
+        "18,096",
+        "9,143",
+        "14,707",
+        "8,674"
+       ],
+       [
+        "− Dividends paid",
+        "8,176",
+        "7,840",
+        "7,445",
+        "7,012",
+        "6,610"
+       ],
+       [
+        "− Share buybacks",
+        "5,084",
+        "1,306",
+        "1,346",
+        "0",
+        "840"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "8,938",
+        "327",
+        "7,682",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "912",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Merck's dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Debt-funded acquisitions, lower free cash flow and reduced buybacks would also weaken the outlook. The bull case gains credibility if QLEX and newer launches expand beyond specialist use, vaccine inventory normalizes and several pipeline programs reach market before KEYTRUDA erosion accelerates."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "21,600 (20,017 / 23,016)",
+        "22,032 (19,028 / 24,480)",
+        "20,071 (16,000 / 24,090)"
+       ],
+       [
+        "Shares (millions)",
+        "2,454 (2,460 / 2,448)",
+        "2,447 (2,463 / 2,433)",
+        "2,442 (2,470 / 2,420)"
+       ],
+       [
+        "Dividends per share",
+        "3.55 (3.40 / 3.60)",
+        "3.75 (3.40 / 3.80)",
+        "3.95 (3.40 / 4.00)"
+       ],
+       [
+        "Price to earnings",
+        "15.50 (13.00 / 17.00)",
+        "15.00 (11.00 / 18.00)",
+        "13.50 (9.00 / 17.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.26"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.60",
+      "2.76",
+      "2.92",
+      "3.09",
+      "3.26"
+     ],
+     "Real free cash flow per share": [
+      "3.23",
+      "5.57",
+      "3.34",
+      "6.82",
+      "4.60"
+     ],
+     "Free cash flow per share": [
+      "3.42",
+      "5.79",
+      "3.59",
+      "7.12",
+      "4.93"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mrk/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MRK&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Merck earnings date and guidance",
+   "meta_description": "Merck's next results are expected October 29, 2026, with guidance and launch demand in focus.",
+   "opening": "Merck's next results are expected on October 29, 2026. Merck's underlying launch trend is the key thing to watch.",
+   "closing": "The full Merck memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Merck guided for the year?",
+     "paragraphs": [
+      {
+       "n": 197,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s August 4 outlook calls for sales of $66,300–$67,300 million and non-GAAP earnings per share, or adjusted profit per share, of $2.66–$2.76. Merck still includes major charges for acquired research assets in that adjusted result, so buying future medicines can hurt earnings before those medicines produce sales."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Sales",
+        "Full Year 2026",
+        "66,300",
+        "67,300",
+        "Aug 4, 2026"
+       ],
+       [
+        "Non-GAAP EPS",
+        "Full Year 2026",
+        "2.66",
+        "2.76",
+        "Aug 4, 2026"
+       ],
+       [
+        "Outlook Includes Charges per Share for the Acquisition of Terns",
+        "Full Year 2026",
+        "2.43",
+        "2.43",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Merck kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Merck delivered 2025 revenue within its public forecast range, but its internal bonus targets used a different yardstick and were missed. Manufacturing and organizational savings promised for the end of 2027 remain unfinished. The fairest conclusion is that Merck has meaningful mechanisms for alignment, but managers still need to prove that scientific milestones become successful launches, cost reductions protect supply, and shareholder returns improve."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Merck's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 showed resilient sales and better cash flow, but weaker margin quality beneath the acquisition-driven loss. Revenue grew about 5.1% year over year, and Merck reported about 4% growth excluding currency."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "16,607",
+        "16,286",
+        "16,400",
+        "17,276",
+        "15,806",
+        "15,529",
+        "15,624",
+        "16,657"
+       ],
+       [
+        "Gross margin",
+        "73.5%",
+        "74.2%",
+        "66.2%",
+        "77.7%",
+        "77.5%",
+        "78.0%",
+        "75.5%",
+        "75.5%"
+       ],
+       [
+        "Operating income",
+        "-584",
+        "-3,396",
+        "3,852",
+        "6,507",
+        "4,992",
+        "5,868",
+        "4,296",
+        "3,928"
+       ],
+       [
+        "Net income",
+        "-1,335",
+        "-4,240",
+        "2,963",
+        "5,785",
+        "4,427",
+        "5,079",
+        "3,743",
+        "3,157"
+       ],
+       [
+        "EPS, diluted",
+        "-0.54",
+        "-1.72",
+        "1.19",
+        "2.32",
+        "1.76",
+        "2.01",
+        "1.48",
+        "1.24"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,477",
+        "2,927",
+        "1,824",
+        "6,835",
+        "2,529",
+        "1,172",
+        "2,513",
+        "8,508"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Merck's next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "October 29’s third-quarter results should clarify SciBrunch’s full-year effect and the underlying launch trend. OHTUVAYRE is especially important because an inventory unwind could weaken shipments without weakening patient use. KEYTRUDA QLEX adoption will show whether easier administration leads to repeat treatment and reimbursement."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "16,607"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-0.54"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "16,657",
+      "15,624",
+      "15,529",
+      "15,806",
+      "17,276",
+      "16,400",
+      "16,286",
+      "16,607"
+     ],
+     "EPS, diluted": [
+      "1.24",
+      "1.48",
+      "2.01",
+      "1.76",
+      "2.32",
+      "1.19",
+      "-1.72",
+      "-0.54"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mrk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MRK&src=seo-earnings"
+  }
+ },
+ "short_name": "Merck",
+ "first_memo_date": "2026-10-12T00:42:01Z"
+}

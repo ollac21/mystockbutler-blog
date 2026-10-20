@@ -1,0 +1,548 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AAL.L",
+ "slug": "aal-l",
+ "company": "Anglo American plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "mining",
+ "country": "uk",
+ "memo_date": "2026-10-13T20:51:41Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 4120.0,
+ "price_date": "2026-10-13T16:55:51Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 30,
+  "words": 20655,
+  "sources": 221
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Anglo American plc is a mining company: it digs up materials that other businesses turn into power equipment, steel, jewellery and fertilizer. To understand how a dollar comes in and goes out, follow three linked questions: what is sold, what it costs to make and deliver, and who buys it."
+ },
+ "sources": [
+  {
+   "title": "filed annual report",
+   "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000139878/NI-000139878.pdf"
+  },
+  {
+   "title": "Annual report — FY2022",
+   "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/investors/annual-reporting/2023/aa-annual-report-full-2022.pdf"
+  },
+  {
+   "title": "2025 reserves report",
+   "url": "https://www.angloamerican.com/~/media/Files/A/Anglo-American-Group-v9/PLC/investors/annual-reporting/2025/anglo-american-ore-reserves-and-mineral-resources-report-2025.pdf"
+  }
+ ],
+ "rivals": [
+  "GLEN.L",
+  "VALE",
+  "FCX",
+  "TECK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Anglo stock forecast",
+   "meta_description": "Anglo's forecast weighs production recovery, Teck benefits, cash conversion, free cash flow and valuation.",
+   "opening": "Anglo's weighted price is 2,552.12 GBp in October 2027 and 3,953.73 GBp in October 2029, with 32% bear, 48% base and 20% bull probabilities. It hinges on production recovery.",
+   "closing": "The full memo also explains Anglo's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Anglo's shares go?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The first forecast point is October 2027. Its weighted price is 2,552.12 GBp, implying a 37% loss including dividends. The last point is October 2029. Its weighted price is 3,953.73 GBp, still a 1% loss. The bear case has 32% probability, the base case 48% and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per AAL.L share at each date; in brackets the return since today's 4120.00, dividends included",
+      "caption": "What the shares could be worth (GBp per AAL.L share at each date; in brackets the return since today's 4120.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32 %",
+        "1727.69 (-58 %)",
+        "1778.37 (-56 %)",
+        "1668.43 (-59 %)"
+       ],
+       [
+        "Base",
+        "48 %",
+        "2619.30 (-36 %)",
+        "3587.25 (-11 %)",
+        "4256.27 (+7 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "3710.01 (-9 %)",
+        "5535.60 (+37 %)",
+        "6884.11 (+72 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "2552.12 (-37 %)",
+        "3398.08 (-16 %)",
+        "3953.73 (-1 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Anglo's forecast?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA is the main operating driver. The base path rises from $9,700m to $13,000m because the H1 2026 underlying EBITDA run rate was $8,004m, copper prices strengthened, and 2027 production guidance rises to 750–810kt of copper and 59–63Mt of premium iron ore. Teck contributes progressively, while synergies build toward the targeted $800m annually."
+      },
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path reaches only $9,000m because weaker prices, lower Chilean grades and delayed recovery reduce Anglo’s core earnings; Teck contributes less and integration costs persist. The bull path reaches $15,500m because stronger copper, improved grades, production at or above guidance and successful integration compound. Q2 copper production was flat, while Collahuasi and Quellaveco faced grade pressure."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "9,700 (8,000 / 10,900)",
+        "11,900 (8,800 / 14,000)",
+        "13,000 (9,000 / 15,500)"
+       ],
+       [
+        "Shares (millions)",
+        "1,829 (1,830 / 1,829)",
+        "1,830 (1,832 / 1,829)",
+        "1,831 (1,833 / 1,830)"
+       ],
+       [
+        "Dividends per share",
+        "0.40 (0.23 / 0.55)",
+        "0.60 (0.10 / 0.88)",
+        "0.76 (0.00 / 1.20)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "7.50 (6.50 / 9.00)",
+        "8.00 (6.00 / 10.00)",
+        "8.50 (5.50 / 11.00)"
+       ],
+       [
+        "Net debt",
+        "9,290 (10,119 / 8,234)",
+        "8,241 (9,655 / 5,877)",
+        "7,267 (8,989 / 3,658)"
+       ]
+      ],
+      "note": "Enterprise value to earnings before interest, taxes, depreciation, and amortization shows how much investors pay for each dollar of operating profit."
+     }
+    },
+    {
+     "heading": "How much cash does Anglo really make?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Anglo’s own free-cash-flow measure was $790 million, while the calculation here reaches $1,257 million. A further measure deducts stock pay as an economic cost, producing “real free cash flow” of $1,128 million."
+      },
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The useful conclusion is not that one definition is correct, but that cash must be tested against maintenance, project timing and repeatability before it is treated as durable surplus."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "1,257",
+        "348"
+       ],
+       [
+        "− Stock pay",
+        "129",
+        "152"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,128",
+        "196"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "790",
+        "-209"
+       ],
+       [
+        "What its own count also takes out",
+        "467",
+        "557"
+       ]
+      ],
+      "note": "The company's free cash flow is lower because it also subtracts 467 million dollars of cash payments that our count does not."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "4,120.0"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "3953.73 (-1 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.0%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 54.57560975609756,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32 %",
+      "values": [
+       "1727.69 (-58 %)",
+       "1778.37 (-56 %)",
+       "1668.43 (-59 %)"
+      ]
+     },
+     "Base": {
+      "probability": "48 %",
+      "values": [
+       "2619.30 (-36 %)",
+       "3587.25 (-11 %)",
+       "4256.27 (+7 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "3710.01 (-9 %)",
+       "5535.60 (+37 %)",
+       "6884.11 (+72 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "2552.12 (-37 %)",
+       "3398.08 (-16 %)",
+       "3953.73 (-1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aal-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AAL.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Anglo dividend: payout and cash cover",
+   "meta_description": "Anglo's dividend history, cash coverage, payout outlook and yield against its share price, in plain English.",
+   "opening": "Anglo's base dividends rise from $0.40 to $0.76 as earnings recover under the 40% payout policy. In 2025, free cash flow of $1,257 million exceeded shareholder payments of $446 million, though the improvement partly reflected paying less out.",
+   "closing": "The full memo also examines Anglo's business, its rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Anglo pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends rise from $0.40 to $0.76 as earnings recover under the 40% payout policy. The first figure is close to the latest ordinary annual run rate, while later payments remain below the implied policy maximum because capital needs continue. The bear path falls from $0.23 to zero as earnings weaken; the bull rises to $1.20 as copper, production and Teck benefits improve cash earnings. The special dividend is excluded."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "9,700 (8,000 / 10,900)",
+        "11,900 (8,800 / 14,000)",
+        "13,000 (9,000 / 15,500)"
+       ],
+       [
+        "Dividends per share",
+        "0.40 (0.23 / 0.55)",
+        "0.60 (0.10 / 0.88)",
+        "0.76 (0.00 / 1.20)"
+       ],
+       [
+        "Net debt",
+        "9,290 (10,119 / 8,234)",
+        "8,241 (9,655 / 5,877)",
+        "7,267 (8,989 / 3,658)"
+       ]
+      ],
+      "note": "Enterprise value to earnings before interest, taxes, depreciation, and amortization shows how much investors pay for each dollar of operating profit."
+     }
+    },
+    {
+     "heading": "Is Anglo's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholder payments fell sharply. They were US$5,131 million in 2021. By 2025 they were US$446 million. Free cash flow, the cash left after the operating and investment spending included in the measure, was US$348 million in 2024 and US$1,257 million in 2025. The improvement partly reflected paying less out, not only better mine performance."
+      },
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Anglo’s own free-cash-flow measure was $790 million, while the calculation here reaches $1,257 million. A further measure deducts stock pay as an economic cost, producing “real free cash flow” of $1,128 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,257",
+        "348",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "344",
+        "1,026",
+        "1,564",
+        "3,549",
+        "4,047"
+       ],
+       [
+        "− Share buybacks",
+        "102",
+        "112",
+        "274",
+        "527",
+        "1,084"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "269",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "1,260",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "446",
+        "1,138",
+        "1,838",
+        "4,076",
+        "5,131"
+       ]
+      ],
+      "note": "In 2024, the company paid shareholders more than the cash it made, so it had to use savings or borrow money."
+     }
+    },
+    {
+     "heading": "What could change Anglo's dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 700–760 kt of copper and 55–59 Mt of premium iron ore in 2026. The 2027 ranges are 750–810 kt and 59–63 Mt. Copper unit-cost guidance is 145 cents per pound in 2026. Premium iron ore guidance is $41 per tonne. Continuing-operations capital expenditure is $3.2 billion in 2026, alongside a 40% dividend payout ratio."
+      },
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "During 2027–2029, evidence of production at guidance, the targeted synergies, dependable water and free-cash-flow conversion above the H1 anchor would move the forecast upward. Persistent Woodsmith spending, integration costs or weak cash conversion would move it downward."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Anglo's dividend yield against its share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "GBp; market and enterprise values GBp millions",
+      "caption": "What an investor pays today (GBp; market and enterprise values GBp millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "4,120.0"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.4%"
+       ]
+      ],
+      "note": "The enterprise value is higher than the market value because the business has more debt than cash and short-term investments."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.30"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.67",
+      "3.29",
+      "1.46",
+      "0.96",
+      "0.30"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "0.18",
+      "1.00"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "",
+      "0.33",
+      "1.11"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/aal-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AAL.L&src=seo-dividend"
+  }
+ },
+ "short_name": "Anglo",
+ "first_memo_date": "2026-10-13T20:51:41Z"
+}

@@ -1,0 +1,573 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "COHR",
+ "slug": "cohr",
+ "company": "Coherent, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T01:45:07Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 232.9,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 272,
+  "tables": 27,
+  "words": 17116,
+  "sources": 219
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Coherent Corp. sells the hardware that turns light into information, manufacturing power and precise measurement. Its dollar begins with customers that need those capabilities and ends after the company has paid for materials, people, factories and growth."
+ },
+ "sources": [
+  {
+   "title": "Coherent FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm"
+  },
+  {
+   "title": "FY2023 annual report, acquisition note",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000082031823000016/iivi-20230630.htm"
+  },
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-10-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/820318/000110465926114847/tm264288-6_def14a.htm"
+  }
+ ],
+ "rivals": [
+  "LITE",
+  "IPGP",
+  "AAOI",
+  "MKSI",
+  "LASR",
+  "6965.T",
+  "VIAV",
+  "CIEN",
+  "NOVT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Coherent stock forecast",
+   "meta_description": "Coherent stock forecast: scenarios reach $394.97 by October 2029, with 25%, 60%, and 15% probabilities.",
+   "opening": "Coherent's probability-weighted scenario reaches $394.97 by October 2029. It hinges on converting InP capacity and customer orders into profitable shipments and cash.",
+   "closing": "The full memo also explains Coherent's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Coherent's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $288.58 in October 2027, a 24% return including dividends. It rises to $350.47 in October 2028, a 50% return. By October 2029, the weighted price reaches $394.97, a 70% return."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 outcomes run from $169.67 to $779.82. Today's price is $232.90. The bear, base and bull probabilities are 25%, 60% and 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 232.90, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 232.90, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "165.20 (-29 %)",
+        "166.37 (-29 %)",
+        "169.67 (-27 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "304.15 (+31 %)",
+        "361.99 (+55 %)",
+        "392.64 (+69 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "431.94 (+85 %)",
+        "611.25 (+162 %)",
+        "779.82 (+235 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "288.58 (+24 %)",
+        "350.47 (+50 %)",
+        "394.97 (+70 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Coherent?",
+     "paragraphs": [
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case reaches $2,450M in October 2027 and $3,000M in October 2028. It reaches $3,500M in October 2029. The bear case uses $1,700M and $1,900M before reaching $2,150M. The bull case uses $2,700M and $3,550M before reaching $4,350M. The base assumes guidance is broadly delivered, InP qualifications progress and 800G and 1.6T demand improves utilization. Management guided September-quarter revenue to $2,200M–$2,400M. The bear reflects failed yields, customer timing and weak industrial demand; the bull requires strong yields, repeat programs and PhotonLink revenue beginning in calendar Q4 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Coherent really make?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending creates a second demand for cash, while stock compensation transfers value to employees without using current cash. Subtracting the table’s $186,468 thousand of stock pay gives analytical “real free cash flow” of −$1,209,863 thousand."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "79,514",
+        "633,600",
+        "545,731",
+        "634,025",
+        "413,332"
+       ],
+       [
+        "− Capital spending",
+        "1,102,909",
+        "440,836",
+        "346,816",
+        "436,060",
+        "314,332"
+       ],
+       [
+        "**= Free cash flow**",
+        "-1,023,395",
+        "192,764",
+        "198,915",
+        "197,965",
+        "99,000"
+       ],
+       [
+        "− Stock pay",
+        "186,468",
+        "160,239",
+        "126,049",
+        "148,872",
+        "73,214"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-1,209,863",
+        "32,525",
+        "72,866",
+        "49,093",
+        "25,786"
+       ]
+      ],
+      "note": "The cash tied up in working capital is already included in cash from operations, so do not subtract it again."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Coherent today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E means the share price divided by earnings per share. Coherent’s trailing P/E is 56.7x, while its forward P/E is 24.7x for the next twelve months. That gap assumes a large improvement, but the comparison depends on which earnings count. Fiscal 2026 GAAP EPS was $4.12, against adjusted EPS of $5.61. GAAP includes acquired-intangible amortization and other charges; adjusted earnings remove some of them. The charge may not use cash today, but the acquisition that created it did cost money."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "232.90"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "56.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-2.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-2.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings ratio is lower because it uses expected future profit, not profit already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "232.90"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "394.97 (+70 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-2.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 232.9,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "165.20 (-29 %)",
+       "166.37 (-29 %)",
+       "169.67 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "304.15 (+31 %)",
+       "361.99 (+55 %)",
+       "392.64 (+69 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "431.94 (+85 %)",
+       "611.25 (+162 %)",
+       "779.82 (+235 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "288.58 (+24 %)",
+       "350.47 (+50 %)",
+       "394.97 (+70 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cohr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=COHR&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Coherent earnings date and guidance",
+   "meta_description": "Coherent's November 4, 2026 results will test revenue, margin, EPS guidance and InP capacity.",
+   "opening": "Coherent's next results are expected on November 4, 2026. The key thing to watch is whether Coherent doubled internal InP output capacity by quarter-end.",
+   "closing": "The full memo also explains Coherent's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Coherent guided for the September quarter?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the September 2026 quarter, the first quarter of fiscal 2027, Coherent guided revenue of $2,200 million to $2,400 million and non-GAAP EPS of $1.85 to $2.05. Non-GAAP EPS is adjusted accounting profit per share. Coherent removes selected costs, including acquisition-related amortization, stock compensation, restructuring and integration costs, to show ongoing performance. That can aid comparison, but it is not cash."
+      },
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The margin promise matters because revenue is not profit. A 40% gross margin means that $40 remains from each $100 of sales after making the product, before research, sales, administration, interest and taxes. Coherent says improved manufacturing yields helped its margin, so September must show efficient production as well as higher sales."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except percentages and EPS",
+      "caption": "Guidance in force (US$ millions, except percentages and EPS)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "2,200",
+        "2,400",
+        "Aug 12, 2026"
+       ],
+       [
+        "Gross margin percentage (non-GAAP)",
+        "Quarter to Sep 2026",
+        "39.5%",
+        "41.5%",
+        "Aug 12, 2026"
+       ],
+       [
+        "Total operating expenses (non-GAAP)",
+        "Quarter to Sep 2026",
+        "400",
+        "420",
+        "Aug 12, 2026"
+       ],
+       [
+        "Tax rate (non-GAAP)",
+        "Quarter to Sep 2026",
+        "18.0%",
+        "20.0%",
+        "Aug 12, 2026"
+       ],
+       [
+        "EPS (non-GAAP)",
+        "Quarter to Sep 2026",
+        "1.85",
+        "2.05",
+        "Aug 12, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Coherent keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Cash can tell a different story. Coherent’s fiscal 2024 shareholder-return awards paid 200%, while its operating-cash-flow awards paid zero. Revenue and adjusted EBITDA can rise while factories, equipment, inventory and customer bills consume cash. The company’s non-GAAP gross margin reached 40.2% in the June 2026 quarter, compared with 38.1% a year earlier, but its promised doubling of internal InP output remained unfinished at the reporting date."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How has Coherent's revenue and profit changed in the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter sequence strengthens the case for a broad operating improvement. Revenue rose in every quarter from September 2024 through June 2026, while gross margin advanced overall. Operating income was less even because charges and disposal gains moved between quarters."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,045,500",
+        "1,805,641",
+        "1,685,629",
+        "1,581,378",
+        "1,529,400",
+        "1,497,879",
+        "1,434,665",
+        "1,348,135"
+       ],
+       [
+        "Gross margin",
+        "38.5%",
+        "37.7%",
+        "36.9%",
+        "36.6%",
+        "35.7%",
+        "35.2%",
+        "35.5%",
+        "34.1%"
+       ],
+       [
+        "Operating income",
+        "253,900",
+        "200,837",
+        "184,003",
+        "259,074",
+        "6,100",
+        "71,751",
+        "136,866",
+        "75,198"
+       ],
+       [
+        "Net income",
+        "240,500",
+        "191,402",
+        "146,717",
+        "226,349",
+        "-95,600",
+        "15,711",
+        "103,385",
+        "25,887"
+       ],
+       [
+        "EPS, diluted",
+        "1.19",
+        "0.97",
+        "0.76",
+        "1.19",
+        "-0.83",
+        "-0.11",
+        "0.44",
+        "-0.04"
+       ]
+      ],
+      "note": "The cash flow figures are mostly totals accumulated during the year rather than amounts for just that quarter, so they cannot be compared directly with the quarterly sales and profit figures."
+     }
+    },
+    {
+     "heading": "What should Coherent investors watch next?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Coherent is scheduled to report its September-quarter results on November 4, with its call at 4:30 p.m. Eastern. That report will test the revenue, margin and EPS guidance. It should also show whether management achieved its promised doubling of internal InP output capacity by the quarter’s end."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "2,045,500"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.19"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,348,135",
+      "1,434,665",
+      "1,497,879",
+      "1,529,400",
+      "1,581,378",
+      "1,685,629",
+      "1,805,641",
+      "2,045,500"
+     ],
+     "EPS, diluted": [
+      "-0.04",
+      "0.44",
+      "-0.11",
+      "-0.83",
+      "1.19",
+      "0.76",
+      "0.97",
+      "1.19"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cohr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=COHR&src=seo-earnings"
+  }
+ },
+ "short_name": "Coherent",
+ "first_memo_date": "2026-10-19T01:45:07Z"
+}

@@ -1,0 +1,792 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GM",
+ "slug": "gm",
+ "company": "General Motors Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-09T23:57:34Z",
+ "memo_date_text": "October 9, 2026",
+ "price": 82.25,
+ "price_date": "2026-10-08T20:00:02Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16949,
+  "sources": 202
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "General Motors Company (GM) designs and builds vehicles, then earns more through financing and services that support them throughout their lives."
+ },
+ "sources": [
+  {
+   "title": "General Motors Company — *2025 Form 10-K* — January 27, 2026 — SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785825000032/gm-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000011/gmq42025pressreleaseandfin.htm"
+  }
+ ],
+ "rivals": [
+  "F",
+  "TM",
+  "STLA",
+  "TSLA",
+  "HMC",
+  "RIVN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "GM stock forecast",
+   "meta_description": "GM's weighted forecast reaches $117.00 by October 2029; bear and bull cases range from $71.86 to $197.05, hinging on pricing and cash generation.",
+   "opening": "GM's weighted path reaches $117.00 in October 2029, after $82.23 in October 2027. It hinges on vehicle pricing and cash generation enduring.",
+   "closing": "The full GM memo also answers how GM’s business works, how it compares with rivals, what management is doing, and which risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could GM's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted path is modestly positive, but the possible outcomes remain wide. The weighted price is $82.23 in October 2027, a 1% total return including dividends. It reaches $98.00 in October 2028, a 21% return. By October 2029, it reaches $117.00, a 45% return."
+      },
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At that last date, the bear case gives $71.86 and the bull case gives $197.05. Today’s price is $82.25. The bear receives 35% probability. The base receives 50%, while the bull receives 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 82.25, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 82.25, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "35 %",
+        "56.62 (-30 %)",
+        "62.52 (-23 %)",
+        "71.86 (-11 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "90.53 (+11 %)",
+        "105.82 (+31 %)",
+        "124.59 (+55 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "114.33 (+40 %)",
+        "154.69 (+90 %)",
+        "197.05 (+144 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "82.23 (+1 %)",
+        "98.00 (+21 %)",
+        "117.00 (+45 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—or wrong—for GM?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weaker affordability, heavier discounts and lower production, so fixed costs are absorbed over fewer vehicles. EV charges, settlements and higher GM Financial losses then constrain cash and buybacks. It leads to $56.62 in October 2027 and $71.86 in October 2029. Its 35% probability exceeds the specialists’ 30% bear view because these risks could reinforce one another."
+      },
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires successful Silverado and Sierra launches, durable pricing, better factory utilization, faster warranty and EV savings, and growing software renewals. It leads to $114.33 in October 2027 and $197.05 in October 2029. Its probability is 15% because the measured-profit path reaches its highest level only if several uncertain improvements persist through 2029."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does GM really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Automotive cash from operations was $18,733 million. After $9,241 million of capital spending, the simple remainder was $9,492 million. Capital spending keeps factories productive and can also fund future programs, but GM does not provide a clean maintenance-versus-growth split."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "18,733",
+        "23,939",
+        "20,828",
+        "19,094",
+        "9,693"
+       ],
+       [
+        "Capital spending",
+        "9,241",
+        "10,711",
+        "10,684",
+        "9,007",
+        "7,389"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "9,492",
+        "13,228",
+        "10,144",
+        "10,087",
+        "2,304"
+       ],
+       [
+        "Stock-based pay",
+        "",
+        "",
+        "740",
+        "2,019",
+        ""
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "",
+        "",
+        "9,404",
+        "8,068",
+        ""
+       ],
+       [
+        "Free cash flow per share (calculated)",
+        "9.76",
+        "11.72",
+        "7.41",
+        "6.94",
+        "1.57"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for GM today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "82.25"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "41.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "5.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "14.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "117.00 (+45 %)"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 82.25,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "35 %",
+      "values": [
+       "56.62 (-30 %)",
+       "62.52 (-23 %)",
+       "71.86 (-11 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "90.53 (+11 %)",
+       "105.82 (+31 %)",
+       "124.59 (+55 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "114.33 (+40 %)",
+       "154.69 (+90 %)",
+       "197.05 (+144 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "82.23 (+1 %)",
+       "98.00 (+21 %)",
+       "117.00 (+45 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/gm/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GM&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "GM dividend: cash coverage and yield",
+   "meta_description": "GM pays a quarterly dividend, and the memo tests it against automotive cash, investment, buybacks, risks and today's yield.",
+   "opening": "GM's latest quarterly rate is $0.18 per share, implying $0.72 a year if maintained. In the first half of 2026, automotive operating cash flow was about $5.6 billion, and after $3.4 billion of capital expenditure, about $2.2 billion remained before adjustments.",
+   "closing": "The full memo also explains GM’s business, its rivals, its management decisions and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does GM pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 89,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends make a simpler claim on cash because they pay shareholders directly. GM’s latest quarterly rate of $0.18 implies $0.72 a year if maintained. The relevant test is whether cash remains after necessary investment. In the first half of 2026, automotive operating cash flow was about $5.6 billion. After $3.4 billion of capital expenditure, about $2.2 billion remained before adjustments. Management’s adjusted automotive free cash flow was $6.3 billion, but excluded restructuring payments still consumed cash."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share (calculated)",
+        "10.89",
+        "12.44",
+        "8.52",
+        "7.20",
+        "1.75"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "6.18",
+        "6.26",
+        "8.12",
+        "1.72",
+        "0.00"
+       ],
+       [
+        "Dividend per share",
+        "0.57",
+        "0.48",
+        "0.36",
+        "0.18",
+        "0.00"
+       ],
+       [
+        "Net share dilution (calculated)",
+        "-13.8%",
+        "-17.5%",
+        "-5.8%",
+        "-1.0%",
+        "1.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is GM's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Automotive cash from operations was $18,733 million. After $9,241 million of capital spending, the simple remainder was $9,492 million. Capital spending keeps factories productive and can also fund future programs, but GM does not provide a clean maintenance-versus-growth split."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "GM reported adjusted automotive free cash flow of $10,595 million after management actions. That is not automatically the same as cash available to owners. Stock compensation may not consume cash immediately, but it gives employees a claim on the business. A stricter owner-cost view deducted $740 million of stock pay in 2023."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "",
+        "",
+        "9,404",
+        "8,068",
+        ""
+       ],
+       [
+        "Dividends paid",
+        "538",
+        "530",
+        "477",
+        "257",
+        "0"
+       ],
+       [
+        "Shares bought back",
+        "6,012",
+        "7,064",
+        "11,115",
+        "2,500",
+        "0"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "",
+        "",
+        "123.3%",
+        "34.2%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change GM's dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends hold at $0.72 in the base case before rising gradually. The bear case cuts to $0.36, while the bull case reaches $1.44. The current quarterly rate is $0.18, and the cash-flow guidance range is $9,500 million to $11,500 million, leaving room for increases if vehicle cash generation holds."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is GM's dividend yield at today's price?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "GM’s apparent cash yield matters only after its carmaking and lending businesses are separated."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "82.25"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "5.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "14.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "1.75",
+      "7.20",
+      "8.52",
+      "12.44",
+      "10.89"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/gm/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "GM earnings: guidance and what to watch",
+   "meta_description": "GM reports on October 20, 2026, with guidance, recent results and key costs to watch.",
+   "opening": "GM's next results are expected on October 20, 2026. Watch whether third-quarter costs fit management’s timing and later commodity benefits remain credible.",
+   "closing": "The full GM memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has GM guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "GM makes Chevrolet, GMC, Buick and Cadillac vehicles. For 2026, it guides to **$14,000–$16,000 million of EBIT-adjusted**, meaning operating earnings before interest and taxes after selected special items are removed, and **$12.00–$14.00 of adjusted earnings per diluted share**."
+      },
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Reported profit is lower because it includes every recognized gain and loss. If a factory bought for $1 billion is now worth only $600 million, GM records a $400 million impairment. That reduces reported profit and the factory’s recorded value, even though the initial entry may not require immediate cash. GM’s reported net-income guidance is **$8,400–$9,800 million**, so adjusted earnings and shareholder profit answer different questions."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Net income attributable to stockholders",
+        "Year to Dec 2026",
+        "8,400",
+        "9,800",
+        "Jul 21, 2026"
+       ],
+       [
+        "EBIT-adjusted",
+        "Year to Dec 2026",
+        "14,000",
+        "16,000",
+        "Jul 21, 2026"
+       ],
+       [
+        "Adjusted automotive free cash flow",
+        "Year to Dec 2026",
+        "9,500",
+        "11,500",
+        "Jul 21, 2026"
+       ],
+       [
+        "EPS-diluted-adjusted",
+        "Year to Dec 2026",
+        "12.00",
+        "14.00",
+        "Jul 21, 2026"
+       ],
+       [
+        "North America EBIT-adj. margin",
+        "Year to Dec 2026",
+        "8.0%",
+        "10.0%",
+        "Jul 21, 2026"
+       ],
+       [
+        "Gross tariff costs",
+        "Year to Dec 2026",
+        "2,500",
+        "3,500",
+        "Apr 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did GM keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "GM’s technology record is less consistent. It abandoned its earlier target to produce 400,000 electric vehicles through the first half of 2024 and stopped funding Cruise’s robotaxi expansion. By the July 2026 results call, EV-related charges since the second half of 2025 had reached US$10.9 billion. Anderson’s one-time US$24 million award creates a clear accountability test: GM now expects better integrated products and execution."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do GM's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from $47,122 million to $48,026 million, but net income fell from $1,895 million to $1,305 million. The comparison with the same quarter a year earlier is more useful than a sequential comparison because late 2025 included a large operating loss."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "48,026",
+        "43,624",
+        "45,287",
+        "48,591",
+        "47,122",
+        "44,020",
+        "47,702",
+        "48,757"
+       ],
+       [
+        "Gross margin (calculated)",
+        "15.3%",
+        "19.7%",
+        "5.7%",
+        "13.7%",
+        "16.6%",
+        "20.1%",
+        "17.3%",
+        "20.0%"
+       ],
+       [
+        "Operating income",
+        "1,459",
+        "2,926",
+        "-3,646",
+        "1,076",
+        "2,127",
+        "3,352",
+        "1,522",
+        "3,651"
+       ],
+       [
+        "Net income",
+        "1,305",
+        "2,627",
+        "-3,310",
+        "1,327",
+        "1,895",
+        "2,784",
+        "-2,961",
+        "3,056"
+       ],
+       [
+        "EPS, diluted",
+        "1.41",
+        "2.82",
+        "-3.60",
+        "1.35",
+        "1.91",
+        "3.35",
+        "-1.64",
+        "2.68"
+       ],
+       [
+        "Cash from operations",
+        "5,071",
+        "533",
+        "5,606",
+        "6,070",
+        "4,653",
+        "2,404",
+        "4,765",
+        "7,863"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should GM watch on October 20, 2026?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The nearest test is GM’s **October 20, 2026** results. Costs do not always reach reported vehicle costs immediately: parts may sit in inventory or pass through suppliers first. The release should show whether third-quarter costs fit management’s timing and whether later commodity benefits remain credible."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "48,026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "1.41"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "48,757",
+      "47,702",
+      "44,020",
+      "47,122",
+      "48,591",
+      "45,287",
+      "43,624",
+      "48,026"
+     ],
+     "EPS, diluted": [
+      "2.68",
+      "-1.64",
+      "3.35",
+      "1.91",
+      "1.35",
+      "-3.60",
+      "2.82",
+      "1.41"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/gm/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GM&src=seo-earnings"
+  }
+ },
+ "short_name": "GM",
+ "first_memo_date": "2026-10-09T23:57:34Z"
+}

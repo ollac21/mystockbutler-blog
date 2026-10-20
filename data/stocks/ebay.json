@@ -1,0 +1,843 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EBAY",
+ "slug": "ebay",
+ "company": "eBay Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T15:21:02Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 120.28,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 242,
+  "tables": 27,
+  "words": 16332,
+  "sources": 222
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "eBay is a marketplace where independent sellers offer goods to buyers, while eBay supplies the systems that help the exchange happen. Its business therefore depends less on owning products than on making a very large range of transactions possible, trustworthy, and useful."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508825000037/ebay-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065088/000106508825000034/exhibit991erebayq42024.htm"
+  }
+ ],
+ "rivals": [
+  "AMZN",
+  "ETSY",
+  "REAL",
+  "TDUP",
+  "SFIX",
+  "ZAL.DE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "eBay stock forecast",
+   "meta_description": "eBay's weighted forecast reaches $122.88 in October 2029, resting on marketplace growth, Depop's profitability and cash-funded buybacks.",
+   "opening": "eBay's weighted forecast is $122.88 in October 2029, a +6% return. It hinges on broader marketplace growth, Depop’s profitability and cash-funded buybacks.",
+   "closing": "The full memo also answers questions about eBay’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could eBay's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $108.18 in October 2027, a −9% return. It is $122.88 in October 2029, a +6% return. The bear case carries 30% probability. The base case carries 50%. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 120.28, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 120.28, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "75.19 (-36 %)",
+        "61.97 (-46 %)",
+        "53.20 (-53 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "114.48 (-4 %)",
+        "121.88 (+4 %)",
+        "127.81 (+10 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "141.92 (+19 %)",
+        "175.24 (+48 %)",
+        "215.11 (+83 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "108.18 (-9 %)",
+        "114.58 (-3 %)",
+        "122.88 (+6 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for eBay?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case keeps earnings near $2,063 million because revenue growth slows and margins fall from 16.5% as trade friction, shipping, promotion and Depop costs weigh on profit. The bull case reaches $3,326 million as focus-category strength broadens, advertising adds transactions and margins rise to 19.8%. Focus-category GMV grew 26% in Q2, but international GMV grew only 4%, so the evidence supports upside without making it certain."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does eBay really make after stock pay?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Adjusted profit can clarify ordinary operations, but it is not free of economic costs. eBay excludes stock compensation from its non-GAAP measures, although stock pay was $607 million in 2025. It does not require an immediate cash payment, but it can dilute shareholders. Recurring restructuring and executive-bonus charges also deserve attention rather than automatic exclusion."
+      },
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "**Free cash flow** — Excluding the $292 million final repatriation tax payment, 2025 free cash flow rises from $1,484 million to $1,776 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "1,484",
+        "1,956",
+        "1,975",
+        "2,178",
+        "2,649"
+       ],
+       [
+        "− Stock pay",
+        "607",
+        "590",
+        "575",
+        "494",
+        "477"
+       ],
+       [
+        "**= Real free cash flow**",
+        "877",
+        "1,366",
+        "1,400",
+        "1,684",
+        "2,172"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "13.4%",
+        "19.0%",
+        "19.5%",
+        "22.2%",
+        "25.4%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "7.9%",
+        "13.3%",
+        "13.8%",
+        "17.2%",
+        "20.8%"
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but it gives employees part ownership, so we subtract its value to show what is truly left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for eBay?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Buybacks can raise earnings per share because fewer shares divide the same profit. But when repurchases exceed free cash flow, the return depends partly on the balance sheet. The dividend yield measures current cash income, while the real free cash flow yield subtracts stock-based compensation from free cash flow; neither replaces the need to test GMV, take rate, and recurring cash generation."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "120.28"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "25.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "17.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.0%"
+       ]
+      ],
+      "note": "The enterprise value may be too low because the balance sheet used does not yet show the cash paid for the Depop acquisition."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "120.28"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "122.88 (+6 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 120.28,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "75.19 (-36 %)",
+       "61.97 (-46 %)",
+       "53.20 (-53 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "114.48 (-4 %)",
+       "121.88 (+4 %)",
+       "127.81 (+10 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "141.92 (+19 %)",
+       "175.24 (+48 %)",
+       "215.11 (+83 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "108.18 (-9 %)",
+       "114.58 (-3 %)",
+       "122.88 (+6 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ebay/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EBAY&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "eBay dividend",
+   "meta_description": "eBay pays $0.31 quarterly; 2025 free cash flow of $1.484 billion did not cover $3.031 billion of dividends and buybacks.",
+   "opening": "eBay pays $0.31 per share quarterly, and its forecast dividend rises from $1.32 per share to $1.40 and then $1.48 in the base case. In 2025, eBay generated $1.484 billion of free cash flow while dividends and buybacks totaled $3.031 billion, so free cash flow did not cover total shareholder payouts.",
+   "closing": "The full memo also explains eBay's business, rivals, management choices, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does eBay pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend rises from $1.32 per share to $1.40 and then $1.48 in the base case. That is roughly 6% annual growth, below earlier increases but consistent with the latest $0.31 quarterly rate and competition for cash from buybacks and Depop."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "11,100",
+        "10,283",
+        "10,112",
+        "9,795",
+        "10,420"
+       ],
+       [
+        "Revenue growth (calculated)",
+        "7.9%",
+        "1.7%",
+        "3.2%",
+        "-6.0%",
+        "17.2%"
+       ],
+       [
+        "EPS, diluted",
+        "4.23",
+        "3.92",
+        "5.21",
+        "-2.28",
+        "0.38"
+       ],
+       [
+        "Dividend per share",
+        "1.16",
+        "1.08",
+        "1.00",
+        "0.88",
+        "0.72"
+       ]
+      ],
+      "note": "Income from continuing operations leaves out businesses the company has sold, so it is not the company's total net income."
+     }
+    },
+    {
+     "heading": "Is eBay's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, eBay generated about $1.9 billion from continuing operations. It spent $392 million on property and equipment, leaving $1.484 billion in free cash flow. Dividends and buybacks totaled $3.031 billion. That payout equaled 204.2% of free cash flow, so eBay used other sources, including existing cash, investment sales and borrowing. Buybacks were the larger shareholder payment in each of the five years shown."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,484",
+        "1,956",
+        "1,975",
+        "2,178",
+        "2,649"
+       ],
+       [
+        "− Dividends paid",
+        "531",
+        "533",
+        "528",
+        "489",
+        "466"
+       ],
+       [
+        "− Share buybacks",
+        "2,500",
+        "3,149",
+        "1,401",
+        "3,143",
+        "7,055"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "46",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "204.2%",
+        "188.2%",
+        "97.7%",
+        "166.8%",
+        "283.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change eBay's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, it guided to 11.5%–12.5% FX-neutral GMV growth. It guided to 10%–12% non-GAAP EPS growth. Depop is expected to dilute 2026 non-GAAP EPS growth by 2.5 percentage points and become accretive to non-GAAP operating income in 2028."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,366 (2,063 / 2,519)",
+        "2,590 (2,064 / 2,895)",
+        "2,805 (2,065 / 3,326)"
+       ],
+       [
+        "Shares (millions)",
+        "434 (439 / 426)",
+        "425 (433 / 413)",
+        "417 (427 / 402)"
+       ],
+       [
+        "Dividends per share",
+        "1.32 (1.24 / 1.36)",
+        "1.40 (1.24 / 1.52)",
+        "1.48 (1.24 / 1.68)"
+       ],
+       [
+        "Price to earnings",
+        "21.00 (16.00 / 24.00)",
+        "20.00 (13.00 / 25.00)",
+        "19.00 (11.00 / 26.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is eBay's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Buybacks can raise earnings per share because fewer shares divide the same profit. But when repurchases exceed free cash flow, the return depends partly on the balance sheet. The dividend yield measures current cash income, while the real free cash flow yield subtracts stock-based compensation from free cash flow; neither replaces the need to test GMV, take rate, and recurring cash generation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.13"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.70",
+      "0.88",
+      "0.99",
+      "1.06",
+      "1.13"
+     ],
+     "Real free cash flow per share": [
+      "3.28",
+      "3.02",
+      "2.63",
+      "2.73",
+      "1.87"
+     ],
+     "Free cash flow per share": [
+      "4.00",
+      "3.90",
+      "3.71",
+      "3.90",
+      "3.17"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ebay/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EBAY&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "eBay earnings date and guidance",
+   "meta_description": "eBay reports next on October 28, 2026; guidance covers revenue, GMV and EPS, while results will test marketplace growth and Depop.",
+   "opening": "eBay's next results are expected on October 28, 2026. Watch whether marketplace growth holds up after separating Depop's contribution.",
+   "closing": "The full memo also explains eBay's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has eBay guided for the year?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the quarter ending September 2026, management has given ranges for revenue, gross merchandise volume, or GMV, and diluted non-GAAP EPS. GMV is the value of everything sold through the marketplace. Revenue is the smaller amount eBay earns from services such as seller fees and advertising."
+      },
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Depop can increase growth while reducing profit growth because eBay is spending to improve and integrate it. Management attributes 1.5 percentage points of 2026 GMV growth and 1 percentage point of revenue growth to Depop. It expects the business to subtract 2 percentage points from non-GAAP operating-income growth and 2.5 percentage points from EPS growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "3,070",
+        "3,120",
+        "Aug 5, 2026"
+       ],
+       [
+        "Revenue — FX-Neutral Y/Y Growth",
+        "Quarter to Sep 2026",
+        "8.0%",
+        "10.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Merchandise Volume",
+        "Quarter to Sep 2026",
+        "22,000",
+        "22,400",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Merchandise Volume — FX-Neutral Y/Y Growth",
+        "Quarter to Sep 2026",
+        "10.0%",
+        "12.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Diluted Non-GAAP EPS",
+        "Quarter to Sep 2026",
+        "1.36",
+        "1.42",
+        "Aug 5, 2026"
+       ],
+       [
+        "Non-GAAP Op. Income",
+        "Quarter to Sep 2026",
+        "770",
+        "800",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "These numbers are the company's forecasts for a future period, not results it has already achieved."
+     }
+    },
+    {
+     "heading": "Did eBay keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is evidence that eBay met its financial targets in 2025: reported FX-neutral revenue and non-GAAP operating margin were above the targets shown in the proxy. Shareholders also approved the advisory say-on-pay vote at the June 2026 meeting. That vote shows majority support, but it is nonbinding and does not prevent shareholders from rejecting future pay plans."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is eBay's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 was a real rebound in reported results, but not a uniform one. Revenue, operating income, diluted earnings per share, and free cash flow all improved from the same quarter a year earlier. That is encouraging, although transaction losses and expense adjustments still make the headline numbers worth examining."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,134",
+        "3,089",
+        "2,965",
+        "2,820",
+        "2,730",
+        "2,585",
+        "2,579",
+        "2,576"
+       ],
+       [
+        "Gross margin",
+        "73.5%",
+        "74.0%",
+        "72.3%",
+        "71.8%",
+        "72.5%",
+        "73.0%",
+        "72.2%",
+        "71.8%"
+       ],
+       [
+        "Operating income",
+        "676",
+        "611",
+        "597",
+        "571",
+        "479",
+        "611",
+        "543",
+        "595"
+       ],
+       [
+        "Income from continuing operations",
+        "552",
+        "512",
+        "522",
+        "593",
+        "365",
+        "501",
+        "680",
+        "636"
+       ],
+       [
+        "EPS, diluted",
+        "1.21",
+        "1.12",
+        "1.14",
+        "1.27",
+        "0.78",
+        "1.05",
+        "1.40",
+        "1.29"
+       ],
+       [
+        "**= Free cash flow**",
+        "326",
+        "898",
+        "478",
+        "803",
+        "-441",
+        "644",
+        "560",
+        "646"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in eBay's next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "eBay’s next scheduled Q3 earnings call is October 28, 2026. It should show whether revenue and EPS landed near expectations, whether marketplace growth is holding up, and how management describes Depop’s contribution and investment. The clearest measure will be growth in the existing marketplace after separating the acquired business’s contribution."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,134"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.21"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,576",
+      "2,579",
+      "2,585",
+      "2,730",
+      "2,820",
+      "2,965",
+      "3,089",
+      "3,134"
+     ],
+     "EPS, diluted": [
+      "1.29",
+      "1.40",
+      "1.05",
+      "0.78",
+      "1.27",
+      "1.14",
+      "1.12",
+      "1.21"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ebay/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EBAY&src=seo-earnings"
+  }
+ },
+ "short_name": "eBay",
+ "first_memo_date": "2026-10-18T15:21:02Z"
+}

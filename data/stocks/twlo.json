@@ -1,0 +1,582 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TWLO",
+ "slug": "twlo",
+ "company": "Twilio Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T18:51:14Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 258.2872,
+ "price_date": "2026-10-19T17:24:33Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 27,
+  "words": 16645,
+  "sources": 225
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Twilio sells the building blocks that let businesses put messages, calls and email inside their own software. A business sends Twilio an instruction through its application, and Twilio connects that instruction to the phone or email networks that reach the customer."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 8",
+   "url": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000021/twlo-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1447669/000144766925000035/twlo-20241231.htm"
+  },
+  {
+   "title": "2023 disposal note",
+   "url": "https://www.sec.gov/Archives/edgar/data/1447669/000144766924000034/twlo-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "SINCH.ST",
+  "BAND",
+  "CMCOM.AS",
+  "EGHT",
+  "FIVN",
+  "NICE",
+  "BRZE",
+  "KVYO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Twilio stock forecast",
+   "meta_description": "Twilio stock forecast with bear, base and bull scenarios, cash-after-stock-pay drivers, and today’s valuation.",
+   "opening": "Twilio’s weighted value is $153.85 in October 2029, a −40% return, based on 30% bear, 50% base and 20% bull probabilities. It hinges on whether cash after stock pay grows enough to offset valuation compression.",
+   "closing": "The full memo also explains Twilio’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Twilio’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to substantial downside over all three dates. The probability-weighted price is $108.01 in October 2027, $135.92 in October 2028 and $153.85 in October 2029, equal to returns of negative 58%, negative 47% and negative 40% with dividends included, from today’s $258.29."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 258.29, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 258.29, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "107.62 (-58 %)",
+        "114.86 (-56 %)",
+        "154.80 (-40 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "107.94 (-58 %)",
+        "148.03 (-43 %)",
+        "152.99 (-41 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "108.76 (-58 %)",
+        "137.23 (-47 %)",
+        "154.58 (-40 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "108.01 (-58 %)",
+        "135.92 (-47 %)",
+        "153.85 (-40 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull values, so it is not a separate forecast."
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Twilio?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Cash after stock pay is the central operating assumption. The base case rises from $320 million in October 2027 to $570 million in October 2028 and $750 million in October 2029. The latest complete annual figure was $345.020 million, while the latest quarter produced $210.733 million after stock pay, versus $352.645 million before stock pay. Twilio also raised its 2026 reported free-cash-flow guidance to $1.135–$1.155 billion, although that figure precedes stock pay. The forecast therefore assumes continued operating leverage, but not a large AI windfall."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $150 million, then $100 million, before recovering to $230 million. That reflects the negative after-compensation results recorded from 2021 through 2023 and pressure from carrier costs. The bull case reaches $500 million, $950 million and $1.300 billion because software add-ons grew above 25% in Q2 2026 and management targets stock pay at 10% of revenue in 2027."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "320 (150 / 500)",
+        "570 (100 / 950)",
+        "750 (230 / 1,300)"
+       ],
+       [
+        "Shares (millions)",
+        "153 (154 / 153)",
+        "153 (154 / 152)",
+        "152 (154 / 150)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "44.40 (94.80 / 28.50)",
+        "34.70 (150 / 18.90)",
+        "26.40 (90.00 / 15.20)"
+       ],
+       [
+        "Net debt",
+        "-2,350 (-2,311 / -2,390)",
+        "-2,840 (-2,665 / -2,890)",
+        "-3,455 (-3,155 / -3,505)"
+       ]
+      ],
+      "note": "The negative net debt means the company has more cash than borrowed money, so it has net cash."
+     }
+    },
+    {
+     "heading": "How much cash does Twilio really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation changes the economic reading. Twilio added back 600,407 of stock pay in operating cash flow because it was not an immediate cash payment. Deducting it analytically leaves “real free cash flow” of 345,020, or 6.8% of revenue. This is not Twilio’s official measure, but it shows what remains after recognizing the cost borne by owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,003,244",
+        "716,241",
+        "414,752",
+        "-254,368",
+        "-58,192"
+       ],
+       [
+        "− Capital spending",
+        "57,817",
+        "58,786",
+        "51,235",
+        "80,182",
+        "90,021"
+       ],
+       [
+        "**= Free cash flow**",
+        "945,427",
+        "657,455",
+        "363,517",
+        "-334,550",
+        "-148,213"
+       ],
+       [
+        "− Stock pay",
+        "600,407",
+        "616,607",
+        "675,857",
+        "798,560",
+        "632,285"
+       ],
+       [
+        "**= Real free cash flow**",
+        "345,020",
+        "40,848",
+        "-312,340",
+        "-1,133,110",
+        "-780,498"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "6.8%",
+        "0.9%",
+        "-7.5%",
+        "-29.6%",
+        "-27.5%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares uses no cash but gives away part of the company to them."
+     }
+    },
+    {
+     "heading": "What does Twilio stock valuation look like today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A P/E, or price-to-earnings ratio, shows how much investors pay for each dollar of profit. At $258.29 a share, Twilio trades at a high multiple of recent and expected earnings. The trailing P/E is 36.0 times; the forward P/E is 38.1 times. But second-quarter earnings included a $5.91-per-share noncash tax benefit. Twilio had tax losses that it now expects to use against future profits, so accounting rules allowed it to reduce a valuation allowance. No customer paid that amount, which means the reported profit was not all created by selling more services."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "258.29"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "153.85 (-40 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "38.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 258.2872,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "107.62 (-58 %)",
+       "114.86 (-56 %)",
+       "154.80 (-40 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "107.94 (-58 %)",
+       "148.03 (-43 %)",
+       "152.99 (-41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "108.76 (-58 %)",
+       "137.23 (-47 %)",
+       "154.58 (-40 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "108.01 (-58 %)",
+       "135.92 (-47 %)",
+       "153.85 (-40 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/twlo/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TWLO&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Twilio earnings: guidance and what to watch",
+   "meta_description": "Twilio reports October 29, 2026; guidance is raised, while organic growth, gross profit and cash generation matter most.",
+   "opening": "Twilio's next results are October 29, 2026. Twilio should be watched for organic growth, gross-profit growth and cash generation.",
+   "closing": "The full Twilio memo also answers questions about Twilio's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Twilio guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 18.0%–18.5% revenue growth in 2026. Organic growth guidance is 13.0%–13.5%. It guides to $1.135–$1.155 billion of non-GAAP operating income and free cash flow. Its longer-term promise is $3 billion of cumulative free cash flow for 2025–2027, with stock compensation at 10% of revenue in 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "1,505",
+        "1,515",
+        "Aug 6, 2026"
+       ],
+       [
+        "Y/Y Revenue Growth (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "18.0%",
+        "18.5%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Y/Y Organic Revenue Growth (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "13.0%",
+        "13.5%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Non-GAAP income from operations (Year to Dec 2026)",
+        "Year to Dec 2026",
+        "1,135",
+        "1,155",
+        "Aug 6, 2026"
+       ],
+       [
+        "Free cash flow",
+        "Year to Dec 2026",
+        "1,135",
+        "1,155",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Twilio kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management made two concrete promises. Segment was targeted to reach break-even adjusted operating income by the second quarter of 2025, and Twilio was targeted to reach GAAP operating profitability by the fourth quarter of 2025. Segment reported US$6.009 million of adjusted operating income in that quarter, while Twilio reached its first GAAP operating profit earlier, in the fourth quarter of 2024."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Twilio's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached 1,499,089 in June 2026, compared with 1,228,425 a year earlier. Operating income reached 84,546, compared with 36,989 in the prior-year quarter. Gross profit and operating income therefore support a real operating recovery."
+      },
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The latest quarter therefore combines a credible operating recovery with a one-time tax benefit that makes the headline profit look extraordinary."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,499,089",
+        "1,406,907",
+        "1,365,930",
+        "1,300,402",
+        "1,228,425",
+        "1,172,463",
+        "1,194,835",
+        "1,133,649"
+       ],
+       [
+        "Gross margin",
+        "48.4%",
+        "48.6%",
+        "48.5%",
+        "48.6%",
+        "49.1%",
+        "49.6%",
+        "50.2%",
+        "51.0%"
+       ],
+       [
+        "Operating income",
+        "84,546",
+        "107,666",
+        "56,783",
+        "40,948",
+        "36,989",
+        "23,082",
+        "13,727",
+        "-4,894"
+       ],
+       [
+        "Net income",
+        "1,067,209",
+        "90,139",
+        "-45,854",
+        "37,248",
+        "22,423",
+        "20,017",
+        "-12,470",
+        "-9,726"
+       ],
+       [
+        "EPS, diluted",
+        "6.68",
+        "0.57",
+        "-0.30",
+        "0.23",
+        "0.14",
+        "0.12",
+        "-0.08",
+        "-0.06"
+       ]
+      ],
+      "note": "The June 2026 profit looks unusually high because it includes a one-time tax benefit, not just money earned from the business."
+     }
+    },
+    {
+     "heading": "What should Twilio watch in the next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Twilio will report Q3 results after the market closes on October 29, 2026. Investors should first check whether organic growth supports the annual forecast. They should then compare cash generation with the amount needed in the second half. Finally, they should compare reported growth with organic growth, because a widening gap may indicate more carrier charges rather than stronger customer activity."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,499,089"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "6.68"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,133,649",
+      "1,194,835",
+      "1,172,463",
+      "1,228,425",
+      "1,300,402",
+      "1,365,930",
+      "1,406,907",
+      "1,499,089"
+     ],
+     "EPS, diluted": [
+      "-0.06",
+      "-0.08",
+      "0.12",
+      "0.14",
+      "0.23",
+      "-0.30",
+      "0.57",
+      "6.68"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/twlo/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TWLO&src=seo-earnings"
+  }
+ },
+ "short_name": "Twilio",
+ "first_memo_date": "2026-10-19T18:51:14Z"
+}

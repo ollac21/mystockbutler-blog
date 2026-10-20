@@ -1,0 +1,783 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "C",
+ "slug": "c",
+ "company": "Citigroup Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "bank",
+ "country": "us",
+ "memo_date": "2026-10-14T04:23:08Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 124.53,
+ "price_date": "2026-10-13T19:59:59Z",
+ "next_earnings": "2027-01-14",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 239,
+  "tables": 29,
+  "words": 17520,
+  "sources": 288
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Citi is a global bank that helps institutions move, invest and borrow money while serving wealthy clients and American consumers. Its dollar comes in through fees, interest and trading spreads, then goes out through funding costs, rewards, employees, technology, credit losses and taxes."
+ },
+ "sources": [
+  {
+   "title": "Interim report — Q4 2025",
+   "url": "https://www.citigroup.com/rcs/citigpa/storage/public/4Q25-supp-web.pdf"
+  },
+  {
+   "title": "Citi 2025 Annual Report",
+   "url": "https://www.citigroup.com/rcs/citigpa/storage/public/Annual_Report/2025/citi-2025-annual-report.pdf"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.citigroup.com/rcs/citigpa/storage/public/Citi-2023-Annual-Report.pdf"
+  }
+ ],
+ "rivals": [
+  "BAC",
+  "HSBA.L",
+  "JPM",
+  "GS",
+  "BARC.L",
+  "WFC",
+  "NWG.L",
+  "BNY",
+  "MS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Citi stock forecast",
+   "meta_description": "Citi's stock forecast covers scenario prices, recovery drivers, bank capital and today's valuation.",
+   "opening": "Citi's weighted price is $127.77 in October 2027, rising to $164.73 in October 2029. Citi's outcome hinges on durable fee growth, falling comparable costs and better RoTCE validating its recovery.",
+   "closing": "The full memo also answers how Citi's business works, how Citi compares with rivals, how Citi's management is executing, and what risks Citi faces.",
+   "blocks": [
+    {
+     "heading": "Where could Citi's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast sees limited one-year upside but stronger potential if Citi delivers its recovery plan. The probability-weighted price is $127.77 in October 2027, representing a 5% total return with dividends. It rises to $144.28 in October 2028, a 20% return, and $164.73 in October 2029, a 39% return."
+      },
+      {
+       "n": 224,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The three-year outcome spans $116.26 in the bear case to $222.19 in the bull case, against today’s $124.53. The probabilities are 28% bear, 52% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 124.53, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 124.53, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "99.15 (-18%)",
+        "104.91 (-12%)",
+        "116.26 (-1%)"
+       ],
+       [
+        "Base",
+        "52%",
+        "135.90 (+11%)",
+        "151.15 (+26%)",
+        "168.74 (+42%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "146.72 (+20%)",
+        "181.56 (+50%)",
+        "222.19 (+86%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "127.77 (+5%)",
+        "144.28 (+20%)",
+        "164.73 (+39%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate possible outcome."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Citi?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $186.85 billion before recovering modestly, because weaker activity, control costs and additional credit losses overwhelm retained earnings. The bull case reaches $225.85 billion as Services, Wealth and transformation savings lift earnings. Citi targets RoTCE of roughly 11%–13% for 2027–2028 and 14%–15% over the medium term, which supports the base and bull earnings paths but does not guarantee them."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Citi really make and give back?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and liquidity",
+       "text": "Free cash flow works poorly for a bank because deposits and loans are part of the product. A deposit brings in cash but creates an obligation to repay. A loan uses cash but creates an earning asset. Neither movement alone proves that money is available for distribution."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; share-count changes in %",
+      "caption": "What one share gets (US$ per share; share-count changes in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.99",
+        "5.95",
+        "4.04",
+        "7.11",
+        "10.14"
+       ],
+       [
+        "− Dividends, per share",
+        "2.32",
+        "2.17",
+        "2.08",
+        "2.05",
+        "2.05"
+       ],
+       [
+        "− Share buybacks, per share",
+        "7.07",
+        "1.28",
+        "1.01",
+        "1.65",
+        "3.71"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "2.55",
+        "1.01",
+        "3.44",
+        "4.44"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "2.35",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more than it earned because dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Citi today?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price-to-earnings, tells investors how much they pay for each dollar of profit per share. Citi’s trailing P/E is 12.1x, while its forward P/E is 9.7x. If the share price stays unchanged, that gap implies expected earnings per share will rise by roughly 25%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "124.53"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "9.7x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.1x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "1.2x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.2%"
+       ]
+      ],
+      "note": "The next-12-month price-to-earnings number uses analysts’ predicted profit, so it can change if their prediction is wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "124.53"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "164.73 (+39%)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.1x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 124.53,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "99.15 (-18%)",
+       "104.91 (-12%)",
+       "116.26 (-1%)"
+      ]
+     },
+     "Base": {
+      "probability": "52%",
+      "values": [
+       "135.90 (+11%)",
+       "151.15 (+26%)",
+       "168.74 (+42%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "146.72 (+20%)",
+       "181.56 (+50%)",
+       "222.19 (+86%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "127.77 (+5%)",
+       "144.28 (+20%)",
+       "164.73 (+39%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/c/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=C&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Citi dividend: payment, coverage and yield",
+   "meta_description": "Citi pays a regular dividend, but coverage depends on earnings, retained capital and bank capital requirements rather than free cash flow alone.",
+   "opening": "Citi's current quarterly dividend is $0.67 per share, and the forecast starts at $2.68 per share. The latest year paid out more than it earned; for a bank, free cash flow is not a clean coverage measure, so earnings replenishing capital matter.",
+   "closing": "The full memo also explains Citi's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Citi pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at $2.68 per share, reflecting the current quarterly rate of $0.67. The base case reaches $2.88 in October 2028 and $3.12 in October 2029. That is measured growth below the recent 12% increase, consistent with Citi’s stated aim to maintain payout and yield. The bear case falls to $2.17 as capital pressure forces two reductions. The bull case reaches $3.36 as earnings and capital generation support repeated 12% increases. Analysts forecast EPS of $13.16 for 2027 and $15.00 for 2028, leaving room for the base dividend path."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; share-count changes in %",
+      "caption": "What one share gets (US$ per share; share-count changes in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.99",
+        "5.95",
+        "4.04",
+        "7.11",
+        "10.14"
+       ],
+       [
+        "− Dividends, per share",
+        "2.32",
+        "2.17",
+        "2.08",
+        "2.05",
+        "2.05"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "2.55",
+        "1.01",
+        "3.44",
+        "4.44"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more than it earned because dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "Is Citi's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and liquidity",
+       "text": "Free cash flow works poorly for a bank because deposits and loans are part of the product. A deposit brings in cash but creates an obligation to repay. A loan uses cash but creates an earning asset. Neither movement alone proves that money is available for distribution."
+      },
+      {
+       "n": 71,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The pace of shareholder returns changed sharply. Dividends were relatively steady, while buybacks became the adjustable payment. The latest year paid out more than it earned, even though the five-year bridge still shows capital retained. Repurchases reduced the number of claims on future profits, but they also reduced capital and could destroy value if Citi paid too much."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "13,195",
+        "11,630",
+        "8,031",
+        "14,044",
+        "20,905"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "4,340",
+        "4,218",
+        "4,076",
+        "4,028",
+        "4,196"
+       ],
+       [
+        "− Share buybacks",
+        "13,250",
+        "2,474",
+        "1,977",
+        "3,250",
+        "7,601"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "4,938",
+        "1,978",
+        "6,766",
+        "9,108"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "4,395",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company’s own payout ratio counts only dividends, while ours also counts share buybacks, so in 2025 it paid shareholders more than it earned overall."
+     }
+    },
+    {
+     "heading": "What could change Citi's dividend?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case during 2027–2029 if control costs rise, savings slip, trading and card revenue weaken, or credit provisions increase. A constrained capital position would be especially damaging from 2028 onward because it would slow buybacks and compress the multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "198,650 (190,650 / 202,550)",
+        "205,650 (186,850 / 213,350)",
+        "214,450 (192,050 / 225,850)"
+       ],
+       [
+        "Shares (millions)",
+        "1,608 (1,634 / 1,588)",
+        "1,565 (1,603 / 1,528)",
+        "1,525 (1,569 / 1,474)"
+       ],
+       [
+        "Dividends per share",
+        "2.68 (2.68 / 2.68)",
+        "2.88 (2.41 / 3.00)",
+        "3.12 (2.17 / 3.36)"
+       ],
+       [
+        "Price to book value",
+        "1.10 (0.85 / 1.15)",
+        "1.15 (0.90 / 1.30)",
+        "1.20 (0.95 / 1.45)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "6.4%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/c/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=C&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Citi earnings: guidance and what to watch",
+   "meta_description": "Citi's next results are expected on January 14, 2027; guidance points to higher returns, while costs and repeatable revenue remain the test.",
+   "opening": "Citi's next results are expected on January 14, 2027. Watch whether Citi's growth is becoming efficient, repeatable revenue.",
+   "closing": "The full memo also answers how Citi makes money, compares with rivals, is run, and faces its risks.",
+   "blocks": [
+    {
+     "heading": "What has Citi guided for the year?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Citi’s central promise is to earn more from each dollar of usable shareholder capital. Its main measure, return on tangible common equity (RoTCE), compares profit for common shareholders with their equity after excluding goodwill and other intangible assets. On October 13, management raised its 2026 outlook to above 11.0%, while reaffirming 11.0%–13.0% for 2027–2028 and 14.0%–15.0% for 2029–2031, excluding a notable item."
+      },
+      {
+       "n": 197,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The near-term earnings bridge depends on revenue growing faster than costs. Net interest income (NII) is interest earned on loans and investments after funding costs; Citi expects NII excluding Markets to grow in the mid-to-high 6% range in 2026. Non-interest revenue (NIR), including fees and trading revenue, should also grow outside Markets. The efficiency ratio measures expenses against revenue, and Citi expects it below 60.0%."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "CET1 ratio target",
+        "January 2028",
+        "13.1%",
+        "13.1%",
+        "October 13, 2026"
+       ],
+       [
+        "NII ex-Markets up mid-to-high 6% range",
+        "2026",
+        "",
+        "",
+        "October 13, 2026"
+       ],
+       [
+        "Efficiency ratio below 60%",
+        "2026",
+        "",
+        "60.0%",
+        "October 13, 2026"
+       ],
+       [
+        "RoTCE above 11%",
+        "2026",
+        "11.0%",
+        "",
+        "October 13, 2026"
+       ],
+       [
+        "Revenues — mid-single-digits CAGR ex-LF & RI",
+        "2025–2028",
+        "",
+        "",
+        "October 13, 2026"
+       ]
+      ],
+      "note": "A phrase such as “mid-single-digits” means a rough range of percentages, not one exact number."
+     }
+    },
+    {
+     "heading": "Has Citi kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 106,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Citi’s 2025 RoTCE was 7.7%, or 8.8% excluding two notable items. The median for large bank peers was 16.2%. Management later reported 12.6% year-to-date RoTCE in 2026 and expected to exceed its reduced full-year target. That is real progress, but the final test is whether returns and controls remain strong after the awards vest."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Citi's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The quarter was weaker than Q2 2026. Revenue, net income and EPS declined, margin narrowed and efficiency worsened. Provisions rose even as net charge-offs fell, showing that Citi was also changing its view of future losses. CET1 remained stable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "23,845",
+        "24,766",
+        "24,633",
+        "19,871",
+        "22,090",
+        "21,668",
+        "21,596",
+        "19,465"
+       ],
+       [
+        "Net interest income",
+        "16,982",
+        "17,125",
+        "15,741",
+        "15,665",
+        "14,940",
+        "15,175",
+        "14,012",
+        "13,733"
+       ],
+       [
+        "Net income",
+        "5,245",
+        "5,831",
+        "5,786",
+        "2,472",
+        "3,753",
+        "4,019",
+        "4,065",
+        "2,856"
+       ],
+       [
+        "EPS, diluted",
+        "2.85",
+        "3.15",
+        "3.06",
+        "1.19",
+        "1.86",
+        "1.96",
+        "1.96",
+        "1.34"
+       ],
+       [
+        "Net interest margin",
+        "2.4%",
+        "2.5%",
+        "2.5%",
+        "2.5%",
+        "2.4%",
+        "2.5%",
+        "2.5%",
+        "2.4%"
+       ],
+       [
+        "CET1 capital ratio",
+        "12.8%",
+        "12.8%",
+        "12.8%",
+        "13.2%",
+        "13.3%",
+        "13.5%",
+        "13.4%",
+        "13.6%"
+       ]
+      ],
+      "note": "The 12.8 percent capital ratio is the bank’s safety cushion against losses, not the bank’s profit or investment return."
+     }
+    },
+    {
+     "heading": "What should you watch in Citi's next results?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next report must show whether Citi’s growth is becoming efficient, repeatable revenue. The efficiency ratio measures operating expense against net revenue, so a lower ratio can reflect either genuine cost control or temporarily strong revenue. In the third quarter, reported expenses fell 2%, but rose 3% after excluding the prior-year Banamex goodwill impairment. The below-60.0% target therefore needs to be tested against recurring expenses and continuing control investment."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 14, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "23,845"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "2.85"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "19,465",
+      "21,596",
+      "21,668",
+      "22,090",
+      "19,871",
+      "24,633",
+      "24,766",
+      "23,845"
+     ],
+     "EPS, diluted": [
+      "1.34",
+      "1.96",
+      "1.96",
+      "1.86",
+      "1.19",
+      "3.06",
+      "3.15",
+      "2.85"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/c/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=C&src=seo-earnings"
+  }
+ },
+ "short_name": "Citi",
+ "first_memo_date": "2026-10-14T04:23:08Z"
+}

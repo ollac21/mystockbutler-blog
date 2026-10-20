@@ -1,0 +1,556 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NFLX",
+ "slug": "nflx",
+ "company": "Netflix, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T06:36:47Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 70.3,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 27,
+  "words": 17250,
+  "sources": 358
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Netflix sells a monthly pass to entertainment delivered over the internet. The business works when the catalogue keeps households paying, while Netflix turns those payments into programmes, delivery and profit."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm"
+  },
+  {
+   "title": "Netflix’s 2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528025000044/nflx-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/ex991_q425.htm"
+  }
+ ],
+ "rivals": [
+  "DIS",
+  "AMZN",
+  "AAPL",
+  "GOOGL",
+  "CMCSA",
+  "PSKY",
+  "ROKU"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Netflix stock forecast",
+   "meta_description": "Netflix's weighted forecast is $65.87 in October 2027 and $90.74 in October 2029 across bear, base and bull scenarios.",
+   "opening": "Netflix's weighted forecast is $65.87 in October 2027 and $90.74 in October 2029. It hinges on advertising monetization, retention and disciplined content spending.",
+   "closing": "The full Netflix memo also examines Netflix’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Netflix's shares be?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $65.87 in October 2027 and $90.74 in October 2029. It assigns 25% probability to the bear case, 55% to the base case and 20% to the bull case. The forecast expects a weak first year followed by gains."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 70.30, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 70.30, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "43.19 (-39 %)",
+        "38.65 (-45 %)",
+        "34.96 (-50 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "68.58 (-2 %)",
+        "82.11 (+17 %)",
+        "97.14 (+38 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "86.78 (+23 %)",
+        "111.83 (+59 %)",
+        "142.87 (+103 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "65.87 (-6 %)",
+        "77.19 (+10 %)",
+        "90.74 (+29 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Netflix?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires advertising to miss its ramp while live and other content costs fail to produce lasting retention. Earnings fall, margins compress and the multiple declines. The price is $43.19 in October 2027. It reaches $34.96 by October 2029."
+      },
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case reaches $86.78 first and $142.87 last. Its 20% probability reflects the need for faster ad monetization, durable event-driven retention and stronger margins at the same time. Netflix reports that live events produced six of its ten biggest new-member sign-up days, but the material does not establish lasting retention or title-level returns."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Netflix really make?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash flow less purchases of property and equipment. It reached 9,461,053 in 2025, or 20.9% of revenue. Subtracting stock-based compensation produces an analytical “real free cash flow” of 9,092,604, though that adjustment is not Netflix’s own cash-flow definition."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "9,461,053",
+        "6,921,826",
+        "6,925,749",
+        "1,618,528",
+        "-131,975"
+       ],
+       [
+        "− Stock pay",
+        "368,449",
+        "272,588",
+        "339,368",
+        "575,452",
+        "403,220"
+       ],
+       [
+        "**= Real free cash flow**",
+        "9,092,604",
+        "6,649,238",
+        "6,586,381",
+        "1,043,076",
+        "-535,195"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "20.9%",
+        "17.7%",
+        "20.5%",
+        "5.1%",
+        "-0.4%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "20.1%",
+        "17.0%",
+        "19.5%",
+        "3.3%",
+        "-1.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Netflix?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, shows how much investors pay for each dollar of annual profit. The trailing version uses the last twelve months; the forward version uses the next twelve months’ expected profit. The forward multiple is lower because expectations assume earnings will rise. But the share price can still fall if earnings miss or investors decide the multiple is too generous."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "70.30"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "70.30"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "90.74 (+29 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 70.3,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "43.19 (-39 %)",
+       "38.65 (-45 %)",
+       "34.96 (-50 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "68.58 (-2 %)",
+       "82.11 (+17 %)",
+       "97.14 (+38 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "86.78 (+23 %)",
+       "111.83 (+59 %)",
+       "142.87 (+103 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "65.87 (-6 %)",
+       "77.19 (+10 %)",
+       "90.74 (+29 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/nflx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NFLX&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Netflix earnings: guidance and next results",
+   "meta_description": "Netflix reports on October 20, 2026; guidance is $51,000–$51,400 million revenue and 13.0%–14.0% growth.",
+   "opening": "Netflix reports its next results on October 20, 2026. The key thing to watch is advertising monetization.",
+   "closing": "The full memo also answers what Netflix does, who its rivals are, how management operates, and what risks could shape its future.",
+   "blocks": [
+    {
+     "heading": "What has Netflix guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Netflix expects 2026 revenue of $51,000–$51,400 million, or growth of 13.0%–14.0%. Subscriptions, price increases and advertising must produce that result together. Its foreign-exchange-neutral growth forecast is 12.0%, which shows how much the business itself is expected to grow without changes in currency values."
+      },
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management expects content amortization to rise 10.0% in 2026 and maintains free-cash-flow guidance of approximately $12,500 million. Free cash flow is operating cash received minus operating payments and equipment purchases. The annual forecast benefited from a Warner Bros. transaction termination fee in Q1, while higher cash taxes weighed on Q2, so one quarter multiplied by four would mislead."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "revenue",
+        "Year to Dec 2026",
+        "51,000",
+        "51,400",
+        "Jul 16, 2026"
+       ],
+       [
+        "revenue growth",
+        "Year to Dec 2026",
+        "13.0%",
+        "14.0%",
+        "Jul 16, 2026"
+       ],
+       [
+        "F/X neutral revenue growth",
+        "Year to Dec 2026",
+        "12.0%",
+        "12.0%",
+        "Jul 16, 2026"
+       ],
+       [
+        "operating margin",
+        "Year to Dec 2026",
+        "31.5%",
+        "31.5%",
+        "Jul 16, 2026"
+       ],
+       [
+        "FCF",
+        "Year to Dec 2026",
+        "12,500",
+        "12,500",
+        "Jul 16, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Netflix keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Bonuses also emphasize operating margin, the share of sales left after operating expenses, more heavily than revenue. Management forecast 2025 revenue of US$43.5–44.5 billion in April and finished with US$45.2 billion. Advertising revenue grew to more than 2.5 times the previous year’s level, supporting the case that management delivered against its early plan."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Netflix's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached 12,559,938, up 13.4% from the prior-year quarter. Every region grew, and currency-neutral growth was approximately 12%, which means exchange rates helped the reported result. Membership growth, pricing and advertising all contributed, but the missing subscriber and ARM bridge prevents precise attribution."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,559,938",
+        "12,249,757",
+        "12,050,762",
+        "11,510,307",
+        "11,079,166",
+        "10,542,801",
+        "10,246,513",
+        "9,824,703"
+       ],
+       [
+        "Operating income",
+        "4,192,610",
+        "3,956,997",
+        "2,956,663",
+        "3,248,247",
+        "3,774,694",
+        "3,346,999",
+        "2,272,766",
+        "2,909,477"
+       ],
+       [
+        "Net income",
+        "3,401,414",
+        "5,282,791",
+        "2,418,521",
+        "2,546,916",
+        "3,125,413",
+        "2,890,351",
+        "1,868,607",
+        "2,363,509"
+       ],
+       [
+        "EPS, diluted",
+        "0.80",
+        "1.23",
+        "0.56",
+        "0.59",
+        "0.72",
+        "0.66",
+        "0.43",
+        "0.54"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Netflix watch in its next release?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Advertising deserves separate attention. A strong total-revenue quarter could still hide a slow advertising ramp, so investors should look for evidence that Netflix is selling more of its available opportunities at useful prices. They should also ask whether any profit surprise reflects lasting improvement or expenses moving between quarters."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "12,559,938"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.80"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "9,824,703",
+      "10,246,513",
+      "10,542,801",
+      "11,079,166",
+      "11,510,307",
+      "12,050,762",
+      "12,249,757",
+      "12,559,938"
+     ],
+     "EPS, diluted": [
+      "0.54",
+      "0.43",
+      "0.66",
+      "0.72",
+      "0.59",
+      "0.56",
+      "1.23",
+      "0.80"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/nflx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NFLX&src=seo-earnings"
+  }
+ },
+ "short_name": "Netflix",
+ "first_memo_date": "2026-10-12T06:36:47Z"
+}

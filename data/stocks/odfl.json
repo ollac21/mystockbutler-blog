@@ -1,0 +1,823 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ODFL",
+ "slug": "odfl",
+ "company": "Old Dominion Freight Line, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T15:21:09Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 188.32,
+ "price_date": "2026-10-19T14:12:54Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 16582,
+  "sources": 185
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Old Dominion Freight Line is a transportation company whose main product is moving business freight in shared trailers. To understand how a dollar comes in and goes out, follow one shipment through Old Dominion’s network, then see what the company adds around that journey."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Business",
+   "url": "https://www.sec.gov/Archives/edgar/data/878927/000119312526067161/odfl-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/878927/000119312526036791/odfl-ex99_1.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/878927/000087892726000021/odfl-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "FDXF",
+  "XPO",
+  "KNX",
+  "TFII",
+  "SAIA",
+  "ARCB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Old Dominion stock forecast",
+   "meta_description": "Old Dominion stock forecast: weighted price of $195.53 in October 2027 and $239.37 by October 2029 if freight density recovers.",
+   "opening": "The weighted forecast is $195.53 in October 2027, with a $239.37 price in October 2029 and a 29% return including dividends. It hinges on recurring freight density.",
+   "closing": "The full memo also answers how Old Dominion's business works, who its rivals are, how management operates, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Old Dominion's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to modest near-term gains and stronger potential by October 2029. The probability-weighted price is $195.53 in October 2027, a 4% return with dividends, and $209.73 in October 2028, a 13% return. By October 2029, it reaches $239.37, a 29% return. Today’s reference price is $188.32."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 188.32, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 188.32, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "138.40 (-26 %)",
+        "118.42 (-36 %)",
+        "142.12 (-23 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "201.77 (+8 %)",
+        "216.29 (+16 %)",
+        "239.00 (+29 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "249.80 (+33 %)",
+        "305.86 (+64 %)",
+        "361.97 (+94 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "195.53 (+4 %)",
+        "209.73 (+13 %)",
+        "239.37 (+29 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case more or less importance based on its probability."
+     }
+    },
+    {
+     "heading": "What has to go right for Old Dominion, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Normal operating profit is the main driver. The base path rises from $1,701 million in October 2027 to $1,876 million in October 2029. The bear path bottoms at $1,300 million, while the bull path reaches $2,212 million. The base uses the historical 27.0% margin, supported by spare capacity and analyst revenue estimates, but the bear assumes weak density and the bull approaches the historical 29.4% peak."
+      },
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weak freight demand, underused terminals and renewed price competition. Falling density keeps margins below normal, while investors reduce the multiple because recovery becomes less credible. The bear price is $138.40 in October 2027 and $142.12 by October 2029. Its probability is 25%, reflecting falling recent tonnage despite higher revenue per working day, partly offset by Old Dominion’s service record, net cash and available capacity."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "1,701 (1,392 / 1,806)",
+        "1,796 (1,300 / 2,030)",
+        "1,876 (1,392 / 2,212)"
+       ],
+       [
+        "Shares (millions)",
+        "205 (206 / 204)",
+        "203 (205 / 201)",
+        "201 (204 / 198)"
+       ],
+       [
+        "Dividends per share",
+        "1.20 (1.16 / 1.24)",
+        "1.24 (1.16 / 1.36)",
+        "1.28 (1.16 / 1.48)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "24.00 (20.00 / 28.00)",
+        "24.00 (18.00 / 30.00)",
+        "25.00 (20.00 / 32.00)"
+       ],
+       [
+        "Net debt",
+        "-595 (-715 / -401)",
+        "-864 (-920 / -510)",
+        "-1,174 (-1,189 / -714)"
+       ]
+      ],
+      "note": "Negative net debt means the company has more cash than borrowed money, which is generally safer."
+     }
+    },
+    {
+     "heading": "How much cash does Old Dominion really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash flow exceeded net income, yet operating cash fell from 2024. Free cash flow still increased because capital spending fell by more than operating cash flow. That makes the result useful, but not proof that the freight operation became more productive. Old Dominion normally describes capital spending as a larger share of revenue than it spent in 2025."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,370,133",
+        "1,659,283",
+        "1,569,135",
+        "1,691,582",
+        "1,212,606"
+       ],
+       [
+        "− Capital spending",
+        "415,034",
+        "771,318",
+        "757,309",
+        "775,148",
+        "550,077"
+       ],
+       [
+        "**= Free cash flow**",
+        "955,099",
+        "887,965",
+        "811,826",
+        "916,434",
+        "662,529"
+       ],
+       [
+        "− Stock pay",
+        "12,854",
+        "11,349",
+        "11,080",
+        "15,893",
+        "15,039"
+       ],
+       [
+        "**= Real free cash flow**",
+        "942,245",
+        "876,616",
+        "800,746",
+        "900,541",
+        "647,490"
+       ]
+      ],
+      "note": "Each year's figures cover only the three months ending that year, not the whole year."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Old Dominion today?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio shows how much investors pay for each dollar of annual profit. OD’s trailing and forward multiples imply that investors expect earnings to recover. The operating ratio explains why that recovery matters: at a lower ratio, more of each freight dollar becomes operating profit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "188.32"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "239.37 (+29 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 188.32,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "138.40 (-26 %)",
+       "118.42 (-36 %)",
+       "142.12 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "201.77 (+8 %)",
+       "216.29 (+16 %)",
+       "239.00 (+29 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "249.80 (+33 %)",
+       "305.86 (+64 %)",
+       "361.97 (+94 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "195.53 (+4 %)",
+       "209.73 (+13 %)",
+       "239.37 (+29 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/odfl/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ODFL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Old Dominion dividend: cash coverage and yield",
+   "meta_description": "Old Dominion dividend: per-share history, cash coverage, current yield, and what could change future payouts.",
+   "opening": "Old Dominion pays a $0.29 quarterly dividend, and its cash coverage has varied. Across five years, it generated $4.234 billion of free cash flow and paid $4.889 billion to shareholders.",
+   "closing": "The full memo also answers what drives Old Dominion’s business, how its rivals compare, how management allocates capital, and which risks could alter the outlook.",
+   "blocks": [
+    {
+     "heading": "How much does Old Dominion pay per share?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow gradually in the base case, from $1.20 per share to $1.28. The bear holds the current annualized rate of $1.16, while the bull reaches $1.48. The base reflects the move to a $0.29 quarterly dividend and the record of annual increases, but capital spending and board discretion argue against assuming rapid growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.84",
+        "5.48",
+        "5.63",
+        "6.09",
+        "4.45"
+       ],
+       [
+        "Free cash flow per share",
+        "4.51",
+        "4.10",
+        "3.69",
+        "4.05",
+        "2.85"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.11",
+        "1.03",
+        "0.80",
+        "0.59",
+        "0.40"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.45",
+        "4.47",
+        "2.06",
+        "5.65",
+        "2.57"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "0.83",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders 0.05 dollars per share more than the cash it generated, so it had to use other cash or borrow."
+     }
+    },
+    {
+     "heading": "Is Old Dominion’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across the five years, Old Dominion generated $4.234 billion of free cash flow and paid $4.889 billion to shareholders. Payments exceeded that year’s free cash flow in four years, which means accumulated cash helped fund the distributions. The company was not simply handing out each year’s surplus."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "955,099",
+        "887,965",
+        "811,826",
+        "916,434",
+        "662,529"
+       ],
+       [
+        "− Dividends paid",
+        "235,641",
+        "223,618",
+        "175,089",
+        "134,484",
+        "92,366"
+       ],
+       [
+        "− Share buybacks",
+        "730,338",
+        "967,294",
+        "453,613",
+        "1,277,219",
+        "598,965"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "183,124",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "101.1%",
+        "134.1%",
+        "77.4%",
+        "154.0%",
+        "104.3%"
+       ]
+      ],
+      "note": "In 2024 and 2022, the company paid shareholders more cash than it generated, so it used savings or borrowed money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Old Dominion’s dividend?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Finally, the $380 million capital plan and actual buyback pace will determine how much operating cash becomes net cash and per-share growth. If the market sees durable improvement, the multiple can remain near or above recent history; if growth disappoints, the bear case’s 20-times valuation becomes more likely."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "1,701 (1,392 / 1,806)",
+        "1,796 (1,300 / 2,030)",
+        "1,876 (1,392 / 2,212)"
+       ],
+       [
+        "Shares (millions)",
+        "205 (206 / 204)",
+        "203 (205 / 201)",
+        "201 (204 / 198)"
+       ],
+       [
+        "Dividends per share",
+        "1.20 (1.16 / 1.24)",
+        "1.24 (1.16 / 1.36)",
+        "1.28 (1.16 / 1.48)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "24.00 (20.00 / 28.00)",
+        "24.00 (18.00 / 30.00)",
+        "25.00 (20.00 / 32.00)"
+       ],
+       [
+        "Net debt",
+        "-595 (-715 / -401)",
+        "-864 (-920 / -510)",
+        "-1,174 (-1,189 / -714)"
+       ]
+      ],
+      "note": "Negative net debt means the company has more cash than borrowed money, which is generally safer."
+     }
+    },
+    {
+     "heading": "What is Old Dominion’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show a recovery-dependent valuation: trailing P/E is 36.3x and forward P/E is 27.9x. Current cash returns are a 2.4% free-cash-flow yield and a 0.6% dividend yield. Operating margin fell to 24.8% from 29.4%, while the 1.9% buyback yield depends on continued repurchases."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.11"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.40",
+      "0.59",
+      "0.80",
+      "1.03",
+      "1.11"
+     ],
+     "Real free cash flow per share": [
+      "2.78",
+      "3.98",
+      "3.64",
+      "4.05",
+      "4.45"
+     ],
+     "Free cash flow per share": [
+      "2.85",
+      "4.05",
+      "3.69",
+      "4.10",
+      "4.51"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/odfl/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ODFL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Old Dominion earnings date",
+   "meta_description": "Old Dominion reports on October 28, 2026; guidance points to revenue growth, while the test is whether freight volume and durable profit follow.",
+   "opening": "Old Dominion plans to report third-quarter results before trading opens on October 28, 2026. Watch whether stronger revenue becomes broader freight growth and durable profit.",
+   "closing": "The full memo covers Old Dominion's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Old Dominion guided for the year?",
+     "paragraphs": [
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Adam Satterfield gave a conditional outlook on the July 29, 2026 earnings call. If recent momentum continued, third-quarter revenue could grow about 10% from the year before. That would put quarterly revenue at $1.54 billion to $1.55 billion. If July’s growth rate merely persisted, the more conservative outcome was $1.52 billion. The forecast depended on demand and fuel conditions."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Aggregate capital expenditures",
+        "Year to Dec 2026",
+        "380",
+        "380",
+        "Jul 29, 2026"
+       ],
+       [
+        "Real estate and service center expansion projects",
+        "Year to Dec 2026",
+        "180",
+        "180",
+        "Jul 29, 2026"
+       ],
+       [
+        "Tractors and trailers",
+        "Year to Dec 2026",
+        "155",
+        "155",
+        "Jul 29, 2026"
+       ],
+       [
+        "Information technology and other assets",
+        "Year to Dec 2026",
+        "45",
+        "45",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "These are the company's forecasts for spending during 2026, not amounts it has already spent."
+     }
+    },
+    {
+     "heading": "What has Old Dominion reported recently?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue and operating income rose strongly from June 2025, and diluted earnings per share improved. This was a clear break from March, when the year-over-year comparison still showed declining revenue and earnings."
+      },
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The physical freight figures tell a more cautious story. Tons per day and shipments per day remained below the previous year, while weight per shipment increased. Yield rose, including fuel effects, and also improved after fuel was excluded. Old Dominion therefore earned more from a smaller flow of freight."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,554,004",
+        "1,334,696",
+        "1,307,296",
+        "1,406,511",
+        "1,407,724",
+        "1,374,858",
+        "1,385,829",
+        "1,470,211"
+       ],
+       [
+        "Operating income",
+        "465,301",
+        "317,341",
+        "304,251",
+        "360,844",
+        "357,895",
+        "338,055",
+        "334,020",
+        "401,861"
+       ],
+       [
+        "Net income",
+        "350,601",
+        "238,258",
+        "229,470",
+        "270,947",
+        "268,626",
+        "254,660",
+        "263,144",
+        "308,580"
+       ],
+       [
+        "EPS, diluted",
+        "1.68",
+        "1.14",
+        "1.09",
+        "1.28",
+        "1.27",
+        "1.19",
+        "1.23",
+        "1.43"
+       ]
+      ],
+      "note": "The table shows three-month results, but some descriptions say “year,” which could make you think each number covers a full year."
+     }
+    },
+    {
+     "heading": "What should I watch in Old Dominion's next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Old Dominion plans to report third-quarter results before trading opens on October 28, 2026, followed by a call at 10 a.m. Eastern. The report will test the roughly 10% revenue-growth outlook and the margin bridge. Investors should judge the result after removing the second quarter’s property-sale benefit and allowing for normal seasonality."
+      },
+      {
+       "n": 230,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "August offered a mixed freight signal. Daily shipments fell 2.4% from August 2025 while weight per shipment rose 1.7%. Quarter-to-date revenue per hundredweight, meaning revenue for each 100 pounds carried, rose 11.3%, but only 4.8% excluding fuel surcharges. A stronger recovery would bring more shipments and tons through the existing network, not merely higher prices or fuel collections."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,554,004"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.68"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,470,211",
+      "1,385,829",
+      "1,374,858",
+      "1,407,724",
+      "1,406,511",
+      "1,307,296",
+      "1,334,696",
+      "1,554,004"
+     ],
+     "EPS, diluted": [
+      "1.43",
+      "1.23",
+      "1.19",
+      "1.27",
+      "1.28",
+      "1.09",
+      "1.14",
+      "1.68"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/odfl/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ODFL&src=seo-earnings"
+  }
+ },
+ "short_name": "Old Dominion",
+ "first_memo_date": "2026-10-19T15:21:09Z"
+}

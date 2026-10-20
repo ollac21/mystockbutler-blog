@@ -1,0 +1,826 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SYY",
+ "slug": "syy",
+ "company": "Sysco Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T12:17:10Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 82.22,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 268,
+  "tables": 27,
+  "words": 16924,
+  "sources": 203
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sysco is the infrastructure behind meals that people eat away from home: it buys food and supplies, stores them, and delivers them to professional kitchens. Its business is simple to describe but demanding to run, because each sales dollar must cover both the goods and the network that moves them."
+ },
+ "sources": [
+  {
+   "title": "Sysco — “2026 Annual Report” — August 21, 2026 — SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000039/a2026syyars.pdf"
+  },
+  {
+   "title": "Fiscal 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602125000099/syy-20250628.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000026/syy2026q4pressrelease.htm"
+  }
+ ],
+ "rivals": [
+  "USFD",
+  "PFGC",
+  "CHEF",
+  "HFFG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sysco stock forecast",
+   "meta_description": "Sysco's stock forecast covers scenario prices, business drivers, real cash generation and today's valuation.",
+   "opening": "The weighted case reaches $101.93 by October 2027, with 55% assigned to base, 25% to bear and 20% to bull. It hinges on profitable growth and cash generation withstanding Jetro’s financing, dilution and integration demands.",
+   "closing": "The full memo also explains Sysco's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Sysco's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case reaches $101.93 by October 2027. That is a +27% return including dividends. By October 2029, it reaches $110.73. That is a +43% return including dividends. The forecast assigns 25% probability to the bear case. It assigns 55% to base and 20% to bull. The bear outcome is $73.05 in October 2029. The bull outcome is $163.71 in that month."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 82.22, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 82.22, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "74.80 (-6 %)",
+        "73.32 (-5 %)",
+        "73.05 (-3 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "105.41 (+31 %)",
+        "107.26 (+36 %)",
+        "108.60 (+41 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "126.28 (+56 %)",
+        "143.88 (+81 %)",
+        "163.71 (+108 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "101.93 (+27 %)",
+        "106.10 (+35 %)",
+        "110.73 (+43 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Sysco?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives earnings of $2,303 million, $2,397 million and $2,544 million. It uses margins of 2.35%, 2.35% and 2.40% on revenue of $98,000 million, $102,000 million and $106,000 million. The reason is that operating income was nearly flat despite higher gross profit, leaving little room for weaker demand or cost overruns."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bull case gives earnings of $2,950 million, $3,240 million and $3,538 million. It applies margins of 2.95%, 3.00% and 3.05% to revenue of $100,000 million, $108,000 million and $116,000 million. That requires local cases to exceed the 2.5% target, savings to materialize and Jetro’s expected accretion to outrun financing costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Sysco really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending fell to $700 million in fiscal 2026. Free cash flow consequently reached $1,938 million, compared with $1,604 million in fiscal 2025. Sysco’s own measure also includes equipment and property-sale proceeds, while a more conservative view deducts stock-based pay."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,638",
+        "2,510",
+        "2,989",
+        "2,868",
+        "1,791"
+       ],
+       [
+        "− Capital spending",
+        "700",
+        "906",
+        "832",
+        "793",
+        "633"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,938",
+        "1,604",
+        "2,157",
+        "2,075",
+        "1,158"
+       ],
+       [
+        "− Stock pay",
+        "118",
+        "93",
+        "104",
+        "96",
+        "122"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,820",
+        "1,511",
+        "2,053",
+        "1,979",
+        "1,036"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves some cash items out of its calculation, while our count includes them."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sysco today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, compares the share price with earnings per share. Sysco’s trailing P/E is 22.5x, based on reported fiscal 2026 earnings of $3.66 per share. Its forward P/E is 16.2x, based on expected earnings of about $5.08 per share. The apparent improvement partly reflects a different denominator: fiscal 2027 guidance uses adjusted earnings, while the trailing figure is reported. Adjusted earnings exclude selected costs, but those costs may still consume cash."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "82.22"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.7%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it adds the company's debt and subtracts its cash to show what the whole business costs."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "82.22"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "110.73 (+43 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 82.22,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "74.80 (-6 %)",
+       "73.32 (-5 %)",
+       "73.05 (-3 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "105.41 (+31 %)",
+       "107.26 (+36 %)",
+       "108.60 (+41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "126.28 (+56 %)",
+       "143.88 (+81 %)",
+       "163.71 (+108 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "101.93 (+27 %)",
+       "106.10 (+35 %)",
+       "110.73 (+43 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/syy/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SYY&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Sysco dividend: history, coverage and yield",
+   "meta_description": "Sysco's dividend rose from $1.90 to $2.17, while free cash flow covered dividends and the current dividend yield is 2.7%.",
+   "opening": "Sysco's dividend rose from $1.90 to $2.17 across the supplied history. Across fiscal 2022–2026, Sysco generated $8,932 million of free cash flow and paid $5,000 million in dividends, with dividends and buybacks absorbing about 97%.",
+   "closing": "The full Sysco memo also covers Sysco's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Sysco pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends per share rise from $2.24 to $2.40 in the base case, following the record of annual increases from $1.90 to $2.17. The bear case freezes at $2.24, while the bull case reaches $2.58 as savings and deleveraging improve cash generation."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.66",
+        "3.73",
+        "3.89",
+        "3.47",
+        "2.64"
+       ],
+       [
+        "Real free cash flow per share",
+        "3.79",
+        "3.08",
+        "4.08",
+        "3.88",
+        "2.02"
+       ],
+       [
+        "Free cash flow per share",
+        "4.03",
+        "3.27",
+        "4.29",
+        "4.07",
+        "2.25"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.16",
+        "2.04",
+        "2.00",
+        "1.95",
+        "1.87"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it uses its own calculation rules; our real free cash flow also subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does Sysco's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating the business and paying for capital spending such as trucks, warehouses, equipment, and technology. Sysco spent $3,864 million on that capital spending during fiscal 2022–2026. It then generated $8,932 million of free cash flow, of which dividends absorbed $5,000 million and buybacks absorbed $3,682 million. Together, those payments returned about 97% of the total to shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,938",
+        "1,604",
+        "2,157",
+        "2,075",
+        "1,158"
+       ],
+       [
+        "− Dividends paid",
+        "1,037",
+        "1,000",
+        "1,008",
+        "996",
+        "959"
+       ],
+       [
+        "− Share buybacks",
+        "200",
+        "1,250",
+        "1,232",
+        "500",
+        "500"
+       ],
+       [
+        "Paid to shareholders",
+        "1,237",
+        "2,250",
+        "2,240",
+        "1,496",
+        "1,459"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "63.8%",
+        "140.3%",
+        "103.8%",
+        "72.1%",
+        "126.0%"
+       ]
+      ],
+      "note": "For July 2023, our net debt is slightly different from the company's because the company used more precise numbers while we used rounded numbers."
+     }
+    },
+    {
+     "heading": "What could change Sysco's dividend?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Fiscal 2027 guidance calls for 6.0%–7.0% sales growth. It calls for adjusted EPS of $5.02–$5.12. The extra week contributes 2.0% to sales growth. Management targets 2.5% local case growth and $100 million of in-year net cost savings, toward at least $500 million of annualized savings by fiscal 2029."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,800 (2,303 / 2,950)",
+        "2,993 (2,397 / 3,240)",
+        "3,190 (2,544 / 3,538)"
+       ],
+       [
+        "Shares (millions)",
+        "584 (585 / 584)",
+        "586 (588 / 586)",
+        "588 (592 / 584)"
+       ],
+       [
+        "Dividends per share",
+        "2.24 (2.24 / 2.24)",
+        "2.32 (2.24 / 2.40)",
+        "2.40 (2.24 / 2.58)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (19.00 / 25.00)",
+        "21.00 (18.00 / 26.00)",
+        "20.00 (17.00 / 27.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Sysco's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The snapshot price was $82.22 on October 19, 2026; trailing earnings implied 22.5x. Free-cash-flow yield was 4.8% and dividend yield was 2.7%; Sysco’s own free-cash-flow measure includes asset-sale proceeds. Revenue rose across the period, but operating margin ended below its earlier level; diluted EPS turned down while real free cash flow improved per share and as a share of revenue, with net debt still substantial."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "2.16"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "Jul 2022",
+     "Jul 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.87",
+      "1.95",
+      "2.00",
+      "2.04",
+      "2.16"
+     ],
+     "Real free cash flow per share": [
+      "2.02",
+      "3.88",
+      "4.08",
+      "3.08",
+      "3.79"
+     ],
+     "Free cash flow per share": [
+      "2.25",
+      "4.07",
+      "4.29",
+      "3.27",
+      "4.03"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/syy/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SYY&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sysco earnings: date, guidance and what to watch",
+   "meta_description": "Sysco's next results are due November 3, 2026; read the guidance, recent results and key risks to watch.",
+   "opening": "Sysco's next results are expected on November 3, 2026. Watch whether local customer growth turns into profitable delivery growth.",
+   "closing": "The full memo also explains Sysco's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Sysco guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On September 9, 2026, Sysco reaffirmed fiscal 2027 sales growth of 6.0%–7.0%, to approximately $90,000 million. It expects adjusted earnings per share of $5.02–$5.12, up 9.0%–11.0%. Adjusted earnings remove specified expenses from the profit calculation."
+      },
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The larger promise is at least $500 million of annualized AI-powered efficiency savings by fiscal 2029, including $100 million of in-year net savings in fiscal 2027. Annualized means the expected yearly benefit once a change is fully operating. If routing software saved $30 million, that would not be the net benefit if implementation cost $10 million; the saving would need to cover that cost first."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Net sales growth",
+        "Fiscal 2027",
+        "6.0%",
+        "7.0%",
+        "Sep 9, 2026"
+       ],
+       [
+        "Net sales",
+        "Fiscal 2027",
+        "90,000",
+        "90,000",
+        "Sep 9, 2026"
+       ],
+       [
+        "Adjusted earnings per share",
+        "Fiscal 2027",
+        "5.02",
+        "5.12",
+        "Sep 9, 2026"
+       ],
+       [
+        "Adjusted EPS growth",
+        "Fiscal 2027",
+        "9.0%",
+        "11.0%",
+        "Sep 9, 2026"
+       ],
+       [
+        "In-year net cost savings",
+        "Fiscal 2027",
+        "100",
+        "100",
+        "Sep 9, 2026"
+       ],
+       [
+        "Annualized net sales growth",
+        "Fiscal 2028–2029",
+        "4.0%",
+        "7.0%",
+        "Sep 9, 2026"
+       ]
+      ],
+      "note": "The growth numbers are not directly comparable because most include an extra week in the year, while local case growth compares two 52-week periods."
+     }
+    },
+    {
+     "heading": "Did Sysco keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management met its latest stated operating promises. In July 2025, it forecast fiscal 2026 adjusted earnings per share within a range of $4.50–$4.60. It delivered $4.61. Adjusted earnings per share removes selected items from the standard accounting result, so it aids comparison but is not the whole accounting result. Management also promised at least 2.5% second-half local case growth and reported 2.9%."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Sysco's revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The snapshot price was $82.22 on October 19, 2026; trailing earnings implied 22.5x. Free-cash-flow yield was 4.8% and dividend yield was 2.7%; Sysco’s own free-cash-flow measure includes asset-sale proceeds. Revenue rose across the period, but operating margin ended below its earlier level; diluted EPS turned down while real free cash flow improved per share and as a share of revenue, with net debt still substantial."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "22,124",
+        "20,519",
+        "20,762",
+        "21,148",
+        "21,138",
+        "19,598",
+        "20,151",
+        "20,484"
+       ],
+       [
+        "Gross margin",
+        "18.7%",
+        "18.6%",
+        "18.3%",
+        "18.4%",
+        "18.9%",
+        "18.3%",
+        "18.1%",
+        "18.3%"
+       ],
+       [
+        "Operating income",
+        "983",
+        "619",
+        "692",
+        "800",
+        "889",
+        "681",
+        "712",
+        "808"
+       ],
+       [
+        "Net income",
+        "551",
+        "340",
+        "389",
+        "477",
+        "531",
+        "401",
+        "406",
+        "490"
+       ],
+       [
+        "EPS, diluted",
+        "1.15",
+        "0.71",
+        "0.81",
+        "0.99",
+        "1.10",
+        "0.82",
+        "0.82",
+        "0.99"
+       ]
+      ],
+      "note": "Free cash flow can be negative even when cash from operations is positive because the company spent more on equipment than its daily business generated."
+     }
+    },
+    {
+     "heading": "What should investors watch in Sysco's next results?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "November 3, 2026 is the next scheduled results release. Start with local independent customers: is Sysco winning accounts, retaining them and capturing more of each kitchen’s purchases? That last measure is wallet share. Sysco’s salesperson wins the account, warehouse employees select the order and a truck delivers it; the company earns money only if the gross profit covers those selling and delivery costs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "22,124"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.15"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "20,484",
+      "20,151",
+      "19,598",
+      "21,138",
+      "21,148",
+      "20,762",
+      "20,519",
+      "22,124"
+     ],
+     "EPS, diluted": [
+      "0.99",
+      "0.82",
+      "0.82",
+      "1.10",
+      "0.99",
+      "0.81",
+      "0.71",
+      "1.15"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/syy/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SYY&src=seo-earnings"
+  }
+ },
+ "short_name": "Sysco",
+ "first_memo_date": "2026-10-19T12:17:10Z"
+}

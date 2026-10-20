@@ -1,0 +1,836 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AVGO",
+ "slug": "avgo",
+ "company": "Broadcom Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:17:31Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 360.14,
+ "price_date": "2026-10-08T20:00:01Z",
+ "next_earnings": "2026-12-09",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 267,
+  "tables": 37,
+  "words": 17416,
+  "sources": 208
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Broadcom sells the hidden machinery of modern computing: chips that move and process data, and software that keeps organizations running. To understand its business, follow a dollar from a customer’s design or subscription through manufacturing, support, collection and the risks that remain."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+  },
+  {
+   "title": "FY2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016824000139/avgo-20241103.htm"
+  },
+  {
+   "title": "Closing accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016823000096/avgo-20231029.htm"
+  }
+ ],
+ "rivals": [
+  "MRVL",
+  "NVDA",
+  "QCOM",
+  "CSCO",
+  "ANET",
+  "AMD",
+  "INTC",
+  "TXN",
+  "MCHP",
+  "SWKS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Broadcom stock forecast",
+   "meta_description": "Broadcom stock forecast: scenarios, cash generation, key risks and the valuation behind the October 2029 outlook.",
+   "opening": "Broadcom's weighted scenario reaches $548.37 in October 2029. It hinges on AI shipments becoming collected cash and software customers renewing.",
+   "closing": "The full Broadcom memo also explains Broadcom's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Broadcom's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Broadcom’s probability-weighted price is $554.13 in October 2027, implying a 55% return with dividends. It rises to $580.56 in October 2028, implying a 63% return. By October 2029, it is $548.37, still a 55% return."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final-date range is wide: $281.84 in the bear case to $644.42 in the bull case. The comparison begins from today’s price of $360.14."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 360.14, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 360.14, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "378.90 (+6 %)",
+        "312.58 (-12 %)",
+        "281.84 (-19 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "599.71 (+67 %)",
+        "662.63 (+86 %)",
+        "634.59 (+79 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "647.83 (+81 %)",
+        "689.84 (+93 %)",
+        "644.42 (+82 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "554.13 (+55 %)",
+        "580.56 (+63 %)",
+        "548.37 (+55 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Broadcom?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to 28.0% growth in FY2027 and then 10.0% and 5.0%, as deployments slip, customers redesign programmes and VMware renewals weaken. The bull case uses 63.0% growth in FY2027, 85.0% in FY2028 and 45.0% in FY2029, assuming repeat accelerator generations and networking attach exceed the stated plan."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Cash conversion remains below the company’s earlier peak. Base after-stock-pay free-cash-flow margin is 30% in FY2026 and declines to 27% by FY2029. The FY2025 actual was 30.3%, while stock pay was $7,568 million. Bear margins fall from 25% to 19%; bull margins rise from 31% to 34%. The gap reflects inventory, supplier commitments and compensation: Q4 non-GAAP operating-margin guidance is 66.0%, but stock pay is excluded from that measure. Purchase commitments were $126,821 million, with potential rack lease exposure of approximately $29 billion."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "65.7 % (60.0 % / 68.0 %)",
+        "58.0 % (28.0 % / 63.0 %)",
+        "72.0 % (10.0 % / 85.0 %)",
+        "30.0 % (5.0 % / 45.0 %)"
+       ],
+       [
+        "Measure (EBITDA / cash flow)",
+        "31,758 (25,555 / 33,272)",
+        "48,505 (28,785 / 55,983)",
+        "80,552 (28,785 / 106,806)",
+        "100,978 (28,713 / 159,561)"
+       ],
+       [
+        "Net debt",
+        "39,604 (44,306 / 40,044)",
+        "10,059 (28,752 / 6,913)",
+        "-49,811 (14,054 / -72,356)",
+        "-127,531 (2,276 / -199,508)"
+       ],
+       [
+        "Buybacks",
+        "10,000 (8,450 / 12,000)",
+        "5,000 (0.00 / 8,000)",
+        "5,000 (0.00 / 10,000)",
+        "6,000 (2,000 / 12,000)"
+       ],
+       [
+        "Dividend per share",
+        "2.60 (2.60 / 2.60)",
+        "2.86 (2.73 / 2.91)",
+        "3.15 (2.87 / 3.26)",
+        "3.46 (3.01 / 3.65)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Broadcom really make?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash reached $27,537 million in FY2025. Capital spending was $623 million, leaving free cash flow of $26,914 million, matching Broadcom’s own measure. The low capital spending reflects its largely fabless model: outside manufacturers make the chips, while Broadcom funds design, manufacturing purchases and software development."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Nov 2025",
+       "Year to Nov 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "27,537",
+        "19,962",
+        "18,085",
+        "16,736",
+        "13,764"
+       ],
+       [
+        "Capital spending",
+        "623",
+        "548",
+        "452",
+        "424",
+        "443"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "26,914",
+        "19,414",
+        "17,633",
+        "16,312",
+        "13,321"
+       ],
+       [
+        "Stock-based pay",
+        "7,568",
+        "5,670",
+        "2,171",
+        "1,533",
+        "1,704"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "19,346",
+        "13,744",
+        "15,462",
+        "14,779",
+        "11,617"
+       ],
+       [
+        "Real free cash flow per share (calculated)",
+        "3.99",
+        "2.88",
+        "3.62",
+        "3.49",
+        "2.71"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "360.14"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "548.37 (+55 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.7x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "46.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 360.14,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "378.90 (+6 %)",
+       "312.58 (-12 %)",
+       "281.84 (-19 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "599.71 (+67 %)",
+       "662.63 (+86 %)",
+       "634.59 (+79 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "647.83 (+81 %)",
+       "689.84 (+93 %)",
+       "644.42 (+82 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "554.13 (+55 %)",
+       "580.56 (+63 %)",
+       "548.37 (+55 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/avgo/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AVGO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Broadcom dividend: cash cover and yield",
+   "meta_description": "Broadcom pays a quarterly dividend, and real free cash flow after stock pay covers it; see the yield, history and risks.",
+   "opening": "Broadcom pays $0.65 every quarter, or $2.60 in FY2026. Broadcom generated $19,346 million of real free cash flow after stock pay, or $3.99 per diluted share, so its cash covered the dividend.",
+   "closing": "The full Broadcom memo also answers how Broadcom makes money, compares Broadcom with rivals, examines Broadcom’s management, and tests Broadcom’s risks.",
+   "blocks": [
+    {
+     "heading": "How much does Broadcom pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend holds at $2.60 in FY2026 because the declared quarterly rate is $0.65. The base case then assumes 10% annual increases, while bear and bull growth is 5% and 12%. Strong free cash flow supports the base, but investment and financing commitments limit certainty."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; dilution in %",
+      "caption": "What one share gets (US$ per share; dilution in %)",
+      "head": [
+       "Row",
+       "Year to Nov 2025",
+       "Year to Nov 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.77",
+        "1.29",
+        "3.30",
+        "2.65",
+        "1.50"
+       ],
+       [
+        "Free cash flow after stock pay, per share (calculated)",
+        "3.99",
+        "2.88",
+        "3.62",
+        "3.49",
+        "2.71"
+       ],
+       [
+        "Dividend per share",
+        "2.36",
+        "2.11",
+        "1.84",
+        "1.64",
+        "1.44"
+       ],
+       [
+        "Net share dilution (calculated)",
+        "1.6%",
+        "11.8%",
+        "0.9%",
+        "-1.4%",
+        "1.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Broadcom's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation requires an economic adjustment. Broadcom recorded $7,568 million of stock-based compensation in FY2025 and added it back because it was not a cash expense. Deducting it leaves $19,346 million of free cash flow after stock pay. On that basis, cash flow was $3.99 per diluted share rather than $5.55. The deduction is analytical, but it recognizes the value transferred from existing shareholders to employees."
+      },
+      {
+       "n": 102,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends and buybacks consumed most available cash in the ordinary years. A buyback can benefit continuing owners when the company buys shares below their future value, but its size alone proves nothing, especially when stock awards can replace some of the retired shares."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Nov 2025",
+       "Year to Nov 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "19,346",
+        "13,744",
+        "15,462",
+        "14,779",
+        "11,617"
+       ],
+       [
+        "Dividends paid",
+        "11,142",
+        "9,814",
+        "7,645",
+        "7,032",
+        "6,212"
+       ],
+       [
+        "Shares bought back",
+        "2,450",
+        "7,176",
+        "5,824",
+        "7,000",
+        "0"
+       ],
+       [
+        "Acquisitions",
+        "0",
+        "25,978",
+        "53",
+        "246",
+        "8"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "-2,812",
+        "20,346",
+        "-403",
+        "-426",
+        "-1,591"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "70.3%",
+        "123.6%",
+        "87.1%",
+        "94.9%",
+        "53.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Broadcom's dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "65.7 % (60.0 % / 68.0 %)",
+        "58.0 % (28.0 % / 63.0 %)",
+        "72.0 % (10.0 % / 85.0 %)",
+        "30.0 % (5.0 % / 45.0 %)"
+       ],
+       [
+        "Measure (EBITDA / cash flow)",
+        "31,758 (25,555 / 33,272)",
+        "48,505 (28,785 / 55,983)",
+        "80,552 (28,785 / 106,806)",
+        "100,978 (28,713 / 159,561)"
+       ],
+       [
+        "Net debt",
+        "39,604 (44,306 / 40,044)",
+        "10,059 (28,752 / 6,913)",
+        "-49,811 (14,054 / -72,356)",
+        "-127,531 (2,276 / -199,508)"
+       ],
+       [
+        "Buybacks",
+        "10,000 (8,450 / 12,000)",
+        "5,000 (0.00 / 8,000)",
+        "5,000 (0.00 / 10,000)",
+        "6,000 (2,000 / 12,000)"
+       ],
+       [
+        "Dividend per share",
+        "2.60 (2.60 / 2.60)",
+        "2.86 (2.73 / 2.91)",
+        "3.15 (2.87 / 3.26)",
+        "3.46 (3.01 / 3.65)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Broadcom's dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue rose from $27,450 million in FY2021 to $63,887 million in FY2025. Operating margin rebounded to 39.9% from 26.1%, while diluted EPS rose to $4.77 from $1.29; FY2024 included VMware acquisition effects and an unusual tax charge. Broadcom’s free cash flow after stock pay was $3.99 per share versus $5.55 before stock pay. The valuation turns on a 1.6% free-cash-flow yield and 0.7% dividend yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; dilution in %",
+    "columns": [
+     "Year to Oct 2021",
+     "Year to Oct 2022",
+     "Year to Oct 2023",
+     "Year to Nov 2024",
+     "Year to Nov 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "3.11",
+      "3.85",
+      "4.13",
+      "4.06",
+      "5.55"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/avgo/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AVGO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Broadcom earnings: guidance and what to watch",
+   "meta_description": "Broadcom's December 9, 2026 results will test AI revenue, adjusted profitability, shipments and customer cash.",
+   "opening": "Broadcom's next results are expected on December 9, 2026. Watch whether Broadcom's AI shipments become customer cash.",
+   "closing": "The full Broadcom memo also answers questions about Broadcom's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Broadcom guided for the next quarter?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the quarter ending in November 2026, management guided to revenue of $34,800 million, including $21,700 million from AI semiconductors. These include custom accelerators, chips designed for one customer’s particular work, and networking chips, which move data among many processors. AI would therefore provide roughly three-fifths of quarterly sales."
+      },
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also guided to a 66.0% non-GAAP operating margin. Operating income is revenue minus operating costs, before interest and taxes. Non-GAAP means Broadcom excludes selected items, including stock-based compensation and acquisition-related amortization. So 66 cents of adjusted operating income per dollar of revenue is not 66 cents of cash available to spend."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Fourth quarter revenue guidance",
+        "Quarter to Nov 2026",
+        "34,800",
+        "34,800",
+        "Sep 2, 2026"
+       ],
+       [
+        "Fourth quarter non-GAAP operating income guidance (% of projected revenue)",
+        "Quarter to Nov 2026",
+        "66.0%",
+        "66.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Fourth quarter fiscal year 2026 revenue guidance (% increase from prior year)",
+        "Quarter to Nov 2026",
+        "93.0%",
+        "93.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "AI semiconductor revenue",
+        "Quarter to Nov 2026",
+        "21,700",
+        "21,700",
+        "Sep 2, 2026"
+       ],
+       [
+        "AI semiconductor revenue (% year-over-year growth)",
+        "Quarter to Nov 2026",
+        "236.0%",
+        "236.0%",
+        "Sep 2, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Broadcom keep its past revenue promise?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also delivered an operating promise: it forecast approximately US$17.4 billion of fourth-quarter revenue and later reported US$18,015 million. Compensation nevertheless received only about 66.4% support. Broadcom says Tan’s existing awards cover annual equity opportunities through fiscal 2030. Investors should therefore judge the next promise by what AI growth leaves behind after pay: lasting cash and value per share."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What were Broadcom's last eight quarters of revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $29,591 million, up 85.5% from the comparable quarter. The broader sequence also climbed from $14,054 million in November 2024 to $18,015 million in November 2025 and then higher through FY2026. This looks like sustained acceleration rather than a single rebound."
+      },
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating income rose 171.0%, and operating margin reached 53.9%. Gross margin was 69.1%, slightly below May’s 69.5%, yet operating economics still strengthened. Net income reached $13,088 million, while diluted EPS was $2.68."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Aug 2026",
+       "Quarter to May 2026",
+       "Quarter to Feb 2026",
+       "Quarter to Nov 2025",
+       "Quarter to Aug 2025",
+       "Quarter to May 2025",
+       "Quarter to Feb 2025",
+       "Quarter to Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "29,591",
+        "22,187",
+        "19,311",
+        "18,015",
+        "15,952",
+        "15,004",
+        "14,916",
+        "14,054"
+       ],
+       [
+        "Gross margin (calculated)",
+        "69.1%",
+        "69.5%",
+        "68.1%",
+        "68.0%",
+        "67.1%",
+        "68.0%",
+        "68.0%",
+        "64.1%"
+       ],
+       [
+        "Operating income",
+        "15,955",
+        "10,788",
+        "8,563",
+        "7,508",
+        "5,887",
+        "5,829",
+        "6,260",
+        "4,627"
+       ],
+       [
+        "Net income",
+        "13,088",
+        "9,310",
+        "7,349",
+        "8,518",
+        "4,140",
+        "4,965",
+        "5,503",
+        "4,205"
+       ],
+       [
+        "EPS, diluted",
+        "2.68",
+        "1.91",
+        "1.50",
+        "1.74",
+        "0.85",
+        "1.03",
+        "1.14",
+        "0.87"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 9, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Aug 2026 (US$ millions)",
+     "value": "29,591"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Aug 2026",
+     "value": "2.68"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Nov 2024",
+     "Quarter to Feb 2025",
+     "Quarter to May 2025",
+     "Quarter to Aug 2025",
+     "Quarter to Nov 2025",
+     "Quarter to Feb 2026",
+     "Quarter to May 2026",
+     "Quarter to Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "14,054",
+      "14,916",
+      "15,004",
+      "15,952",
+      "18,015",
+      "19,311",
+      "22,187",
+      "29,591"
+     ],
+     "EPS, diluted": [
+      "0.87",
+      "1.14",
+      "1.03",
+      "0.85",
+      "1.74",
+      "1.50",
+      "1.91",
+      "2.68"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/avgo/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AVGO&src=seo-earnings"
+  }
+ },
+ "short_name": "Broadcom",
+ "first_memo_date": "2026-10-10T02:17:31Z"
+}

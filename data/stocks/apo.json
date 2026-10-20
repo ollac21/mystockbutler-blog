@@ -1,0 +1,709 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "APO",
+ "slug": "apo",
+ "company": "Apollo Global Management, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T22:43:22Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 110.78,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 236,
+  "tables": 28,
+  "words": 15588,
+  "sources": 171
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Apollo is two businesses joined together: an investment manager that earns fees, and Athene, an insurer that turns customer funding into promised future payments. To understand how a dollar comes in and goes out, follow it from investors, policyholders, and borrowers through Apollo’s funds and Athene’s contracts."
+ },
+ "sources": [
+  {
+   "title": "Apollo’s 2025 annual report",
+   "url": "https://ir.apollo.com/sec-filings/content/0001858681-26-000013/apo-20251231.htm"
+  },
+  {
+   "title": "Apollo 2023 Form 10-K",
+   "url": "https://ir.apollo.com/sec-filings/content/0001858681-24-000031/apo-20231231.htm"
+  },
+  {
+   "title": "Apollo 2022 Form 10-K",
+   "url": "https://ir.apollo.com/sec-filings/content/0001858681-23-000007/apo-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "BX",
+  "KKR",
+  "ARES",
+  "CG",
+  "TPG",
+  "OWL",
+  "CRBG",
+  "JXN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Apollo stock forecast",
+   "meta_description": "Apollo stock forecast: the weighted scenario reaches $144.37 in October 2029, with fee growth, Athene spreads and credit quality as key tests.",
+   "opening": "The weighted forecast is $144.37 in October 2029, a +37% return. It hinges on fee growth and Athene’s spread earnings.",
+   "closing": "The full memo also examines Apollo’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Apollo’s shares go in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $115.91 in October 2027, a +7% return. It is $144.37 in October 2029, a +37% return. The bear case has a 27% probability. The base case has a 53% probability. The bull case has a 20% probability."
+      },
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast puts Apollo’s probability-weighted share price at $115.91 in October 2027, $129.19 in October 2028 and $144.37 in October 2029. Against today’s $110.78, those outcomes represent total returns of 7%, 21% and 37%. The three-year range is wide: $60.28 in the bear case to $248.01 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 110.78, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 110.78, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27%",
+        "83.33 (-23%)",
+        "72.67 (-30%)",
+        "60.28 (-39%)"
+       ],
+       [
+        "Base",
+        "53%",
+        "121.07 (+11%)",
+        "134.37 (+26%)",
+        "148.10 (+40%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "146.18 (+34%)",
+        "191.76 (+78%)",
+        "248.01 (+131%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "115.91 (+7%)",
+        "129.19 (+21%)",
+        "144.37 (+37%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Apollo?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $18,000 million as weaker spreads, credit losses and investment marks overwhelm earnings. The bull case reaches $35,000 million because strong fee conversion and benign marks allow more earnings to remain in equity. Apollo’s targets of at least 20% FRE growth and 10% SRE growth support the base and bull cases, but do not remove Athene’s sensitivity to markets."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Apollo really make?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation deserves separate attention. It may not require current cash, but it transfers shares to employees or requires Apollo to spend cash offsetting dilution. Subtracting it produces a rougher shareholder-oriented figure, though still not a clean fee-business free cash flow number."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,246",
+        "3,253",
+        "6,322",
+        "3,789",
+        "1,064"
+       ],
+       [
+        "− Stock pay",
+        "789",
+        "721",
+        "1,026",
+        "540",
+        "1,181"
+       ]
+      ],
+      "note": "Apollo's cash from operations includes its Athene insurance business, so it does not show only the cash generated by Apollo's main operations."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Apollo today?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A trailing P/E uses the last twelve months of earnings; a forward P/E uses an estimate for the next twelve months. Apollo’s wide gap between them says that investors expect earnings to recover sharply. Reported GAAP earnings, the standard accounting measure, have been unusually uneven: Apollo reported a $1.93 billion loss attributable to common stockholders in the first quarter of 2026, followed by $1.336 billion of GAAP net income in the second quarter. Investment marks, insurance accounting and a $1.7 billion tax expense helped produce that swing. The forward multiple is therefore a recovery bet, not proof that recovery will occur."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "110.78"
+       ],
+       [
+        "Market value (calculated)",
+        "65,420.371"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "66,628.371"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "40.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.8x"
+       ]
+      ],
+      "note": "The business value leaves out Athene's cash and debt, but the sales figure includes Athene, so this comparison does not cover exactly the same business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "110.78"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "144.37 (+37%)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.8x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "40.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 110.78,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27%",
+      "values": [
+       "83.33 (-23%)",
+       "72.67 (-30%)",
+       "60.28 (-39%)"
+      ]
+     },
+     "Base": {
+      "probability": "53%",
+      "values": [
+       "121.07 (+11%)",
+       "134.37 (+26%)",
+       "148.10 (+40%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "146.18 (+34%)",
+       "191.76 (+78%)",
+       "248.01 (+131%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "115.91 (+7%)",
+       "129.19 (+21%)",
+       "144.37 (+37%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/apo/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Apollo dividend: history and cash coverage",
+   "meta_description": "Apollo paid $1.99 per share in 2025, guided to $2.25 in 2026, and its consolidated cash flow does not cleanly show dividend coverage.",
+   "opening": "Apollo's dividend was $1.99 per share in 2025, and its 2026 guidance starts at $2.25 per share. Apollo's consolidated operating cash flow is not a clean measure of dividend coverage because it includes Athene premiums and policy benefits, plus investment purchases and sales.",
+   "closing": "The full memo also examines Apollo's business, management, rivals and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Apollo pay per share?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $2.25 per share to $2.75 in the base case. The starting rate follows Apollo’s 2026 guidance, while the later $0.25 annual increases reflect the recovery from $1.99 in 2025 and three consecutive annual increases. The bear case freezes at $2.25 because the 2022 cut shows distributions can weaken; the bull case reaches $3.20 if FRE and SRE growth support larger increases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Is Apollo's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "An industrial company’s operating cash flow mainly reflects customers, suppliers and payroll. Apollo’s figure can also include Athene premiums and policy benefits, plus investment purchases and sales inside consolidated funds. Those are real cash movements, but they do not measure cash produced by management fees."
+      },
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Apollo returned $1.974 billion through dividends and buybacks in 2025. In the table’s presentation, net debt ended at $1.839 billion, meaning debt exceeded cash and short-term investments by that amount. Apollo has also issued and repaid debt across the group, so one year’s cash movement does not establish whether its investments earned enough."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid",
+        "1,201",
+        "1,092",
+        "1,012",
+        "962",
+        "517"
+       ],
+       [
+        "− Share buybacks",
+        "773",
+        "890",
+        "561",
+        "635",
+        "299"
+       ],
+       [
+        "Cash and short-term investments",
+        "3,677",
+        "2,850",
+        "2,810",
+        "1,311",
+        "1,380"
+       ],
+       [
+        "**= Net debt**",
+        "1,839",
+        "1,429",
+        "1,073",
+        "1,553",
+        "12,308"
+       ]
+      ],
+      "note": "The net debt shown here is our estimate using Apollo’s asset-management cash and debt, while Apollo’s own measure also includes investments and performance fees."
+     }
+    },
+    {
+     "heading": "What could change Apollo's dividend?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The November 3, 2026 results announcement is the first evidence point for whether the 2026 FRE and SRE targets remain credible. The view would move toward the bear case in 2027 and 2028 if alternative returns weaken, credit losses rise, or spread earnings miss the assumptions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Apollo's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Apollo’s November 3, 2026 results are the first test of target credibility. Through 2027–2029, fee-paying asset growth and margins, Athene credit and spread performance, origination quality, deployment and redemptions will decide whether earnings support the forecast multiple. The $4.0 billion authorization is discretionary; actual buybacks and stock awards will affect per-share outcomes. The 2.0% dividend yield and 1.2% buyback yield do not establish earnings quality."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "110.78"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.8x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The business value leaves out Athene's cash and debt, but the sales figure includes Athene, so this comparison does not cover exactly the same business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.02"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "1.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.19",
+      "1.65",
+      "1.72",
+      "1.81",
+      "2.02"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/apo/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Apollo earnings",
+   "meta_description": "Apollo's next results are expected November 3, 2026; the release will test whether its fee-related and spread-related earnings targets remain credible.",
+   "opening": "Apollo's next results are expected on November 3, 2026. The key thing to watch is whether Apollo's fee-related earnings and spread-related earnings targets remain credible.",
+   "closing": "The full memo also answers questions about Apollo's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Apollo guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Apollo’s weighted forecast price reaches $144.37 in October 2029 if fee growth holds and Athene’s spread earnings remain broadly steady. For 2026, management targets at least 20% fee-related earnings (FRE) growth and 10% spread-related earnings (SRE) growth. It also targets 100 basis points of FRE margin expansion. It targets a 120–125 basis-point net spread, based on an 11% alternative-investment return assumption."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "FRE growth",
+        "Year to Dec 2026",
+        "20.0%",
+        "",
+        "Aug 13, 2026"
+       ],
+       [
+        "SRE growth",
+        "Year to Dec 2026",
+        "10.0%",
+        "10.0%",
+        "Aug 13, 2026"
+       ],
+       [
+        "FRE margin expansion (basis points)",
+        "Year to Dec 2026",
+        "100",
+        "100",
+        "Aug 4, 2026"
+       ],
+       [
+        "Athene inflows",
+        "Year to Dec 2026",
+        "85,000",
+        "85,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Net spread (basis points)",
+        "Year to Dec 2026",
+        "120",
+        "125",
+        "Aug 4, 2026"
+       ],
+       [
+        "Alternative investment return assumption",
+        "Year to Dec 2026",
+        "11.0%",
+        "11.0%",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": "A basis point is a small percentage unit: 100 basis points equals 1 percentage point, so this does not mean a 100 percent profit margin."
+     }
+    },
+    {
+     "heading": "What has Apollo's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The second-quarter improvement appears in revenue, net income, diluted EPS and operating cash flow. The comparison is encouraging, but those lines include investment and insurance activity, so they do not by themselves prove a lasting improvement in the fee franchise."
+      },
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The first quarter contained a one-time, noncash tax expense of $1.7 billion after Athene revoked its Bermuda tax election and Apollo recorded a valuation allowance against related deferred-tax assets. That accounting charge drove the first-quarter loss; it was not a current cash-tax payment. Net income for the first half of 2026 therefore remained negative."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "11,153",
+        "5,059",
+        "9,864",
+        "9,823",
+        "6,814",
+        "5,548",
+        "5,283",
+        "7,773"
+       ],
+       [
+        "Net income",
+        "1,361",
+        "-1,906",
+        "684",
+        "1,736",
+        "630",
+        "442",
+        "1,486",
+        "811"
+       ],
+       [
+        "EPS, diluted",
+        "2.15",
+        "-3.27",
+        "1.07",
+        "2.78",
+        "0.99",
+        "0.68",
+        "2.39",
+        "1.29"
+       ],
+       [
+        "Cash from operations",
+        "2,881",
+        "1,620",
+        "4,669",
+        "303",
+        "1,262",
+        "1,012",
+        "-4",
+        "1,854"
+       ]
+      ],
+      "note": "The March 2026 loss is unusually large because it includes a one-time 1.7 billion dollar tax charge, not just the quarter's normal business costs."
+     }
+    },
+    {
+     "heading": "What should I watch in Apollo's next results?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Apollo’s November 3, 2026 results are the first test of target credibility. Through 2027–2029, fee-paying asset growth and margins, Athene credit and spread performance, origination quality, deployment and redemptions will decide whether earnings support the forecast multiple. The $4.0 billion authorization is discretionary; actual buybacks and stock awards will affect per-share outcomes. The 2.0% dividend yield and 1.2% buyback yield do not establish earnings quality."
+      },
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "On October 5, Apollo estimated about $375 million of third-quarter alternative net investment income before tax, equivalent to a 10% annualized return. That is useful evidence about investment performance, but it is preliminary. The full release was scheduled for November 3, 2026."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "11,153"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.15"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,773",
+      "5,283",
+      "5,548",
+      "6,814",
+      "9,823",
+      "9,864",
+      "5,059",
+      "11,153"
+     ],
+     "EPS, diluted": [
+      "1.29",
+      "2.39",
+      "0.68",
+      "0.99",
+      "2.78",
+      "1.07",
+      "-3.27",
+      "2.15"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/apo/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APO&src=seo-earnings"
+  }
+ },
+ "short_name": "Apollo",
+ "first_memo_date": "2026-10-17T22:43:22Z"
+}

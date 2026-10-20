@@ -1,0 +1,871 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "WMB",
+ "slug": "wmb",
+ "company": "The Williams Companies, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T13:28:08Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 69.22,
+ "price_date": "2026-10-15T20:00:02Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 26,
+  "words": 18114,
+  "sources": 247
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Williams runs the infrastructure that gets natural gas from a producer’s well to a customer who can use it. Its business is called midstream because it sits between production and final consumption, gathering, preparing, transporting, storing and marketing energy."
+ },
+ "sources": [
+  {
+   "title": "Williams’ 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000006/wmb-20251231.htm"
+  },
+  {
+   "title": "Williams’ pipeline description",
+   "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726325000031/wmb-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000003/wmb_20251231xer.htm"
+  }
+ ],
+ "rivals": [
+  "EPD",
+  "KMI",
+  "OKE",
+  "TRGP",
+  "MPLX",
+  "DTM",
+  "WES",
+  "ENB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Williams stock forecast",
+   "meta_description": "Williams weighted price is $69.62 in October 2029, with bear, base and bull scenarios tied to project delivery, cash conversion and financing.",
+   "opening": "The weighted forecast for Williams is $69.62 in October 2029, a 10% gain including dividends. Williams hinges on project delivery, cash conversion and financing that keeps leverage manageable.",
+   "closing": "The full memo answers how Williams makes money, how Williams compares with rivals, how Williams is managed, and what risks Williams faces.",
+   "blocks": [
+    {
+     "heading": "Where could Williams' shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $62.14 in October 2027, a 7% loss. It is $69.62 in October 2029, a 10% gain including dividends. Bear probability is 25%. Base probability is 55%. Bull probability is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 69.22, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 69.22, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "44.52 (-33 %)",
+        "37.83 (-39 %)",
+        "33.28 (-43 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "63.67 (-5 %)",
+        "66.89 (+3 %)",
+        "70.75 (+12 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "79.92 (+19 %)",
+        "94.89 (+44 %)",
+        "111.93 (+72 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "62.14 (-7 %)",
+        "65.23 (+1 %)",
+        "69.62 (+10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Williams?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA is the forecast's main operating judgment. The starting estimate is $8,400 million, the midpoint of management's 2026 guidance. The base case blends annual EBITDA rising through the project cycle, producing $8,875 million at the first date and $10,075 million at the final date. The record of growth from 2021 through 2025, the exact achievement of the 2025 midpoint and contracted projects support that path."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires project delays or overruns while growth spending remains high. Momentum and new power projects then add less cash per share, interest and refinancing concerns rise, and the multiple contracts. The price falls to $44.52 at the first date and $33.28 at the final date, including dividends. Its probability is 25% because the funding gap is material, but contracted earnings and current guidance make a sustained downturn less likely."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "8,875 (8,083 / 9,292)",
+        "9,475 (8,198 / 10,371)",
+        "10,075 (8,527 / 11,471)"
+       ],
+       [
+        "Shares (millions)",
+        "1,252 (1,252 / 1,251)",
+        "1,253 (1,254 / 1,252)",
+        "1,254 (1,256 / 1,253)"
+       ],
+       [
+        "Dividends per share",
+        "2.18 (2.10 / 2.20)",
+        "2.29 (2.10 / 2.32)",
+        "2.40 (2.10 / 2.44)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "13.00 (11.50 / 14.50)",
+        "13.00 (11.00 / 15.00)",
+        "13.00 (10.50 / 15.50)"
+       ],
+       [
+        "Net debt",
+        "35,690 (37,210 / 34,750)",
+        "39,360 (42,740 / 36,760)",
+        "42,220 (47,730 / 37,550)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Williams really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash reached $5,898 million in 2025, above net income of $2,618 million. Depreciation lowers profit without requiring a second cash payment that year, because the construction was paid for earlier. Capital spending is different: it is a current cash outflow. Williams spent $4,893 million on capital projects, leaving $1,005 million of free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,898",
+        "4,974",
+        "5,938",
+        "4,889",
+        "3,945"
+       ],
+       [
+        "Of which, freed from working capital",
+        "",
+        "5",
+        "134",
+        "",
+        ""
+       ],
+       [
+        "Of which, tied up in working capital",
+        "50",
+        "",
+        "",
+        "257",
+        "46"
+       ],
+       [
+        "− Capital spending",
+        "4,893",
+        "2,573",
+        "2,516",
+        "2,253",
+        "1,239"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,005",
+        "2,401",
+        "3,422",
+        "2,636",
+        "2,706"
+       ],
+       [
+        "− Stock pay",
+        "93",
+        "99",
+        "77",
+        "73",
+        "81"
+       ],
+       [
+        "**= Real free cash flow**",
+        "912",
+        "2,302",
+        "3,345",
+        "2,563",
+        "2,625"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "8.4%",
+        "22.9%",
+        "31.4%",
+        "24.0%",
+        "25.5%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "7.6%",
+        "21.9%",
+        "30.7%",
+        "23.4%",
+        "24.7%"
+       ]
+      ],
+      "note": "The company's operating-funds measure is not the same as free cash flow because it is calculated before equipment spending, while this table subtracts that spending."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Williams today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $69.22, shares carry a 27.6x trailing P/E. Their 1.2% free-cash-flow yield is below the 3.0% dividend yield. Revenue growth must convert into real free cash flow as a share of revenue. The 2025 turn in that margin came as net debt rose to $29,298 million. Williams’s own free cash flow per share was $0.82 against dividends paid of $1.99 per share."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "69.22"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "69.62 (+10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "26.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 69.22,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "44.52 (-33 %)",
+       "37.83 (-39 %)",
+       "33.28 (-43 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "63.67 (-5 %)",
+       "66.89 (+3 %)",
+       "70.75 (+12 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "79.92 (+19 %)",
+       "94.89 (+44 %)",
+       "111.93 (+72 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "62.14 (-7 %)",
+       "65.23 (+1 %)",
+       "69.62 (+10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/wmb/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WMB&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Williams dividend: payment and cash coverage",
+   "meta_description": "Williams pays $1.99 per share in 2025; free cash flow was $1,005 million against $2,442 million in common dividends.",
+   "opening": "Williams pays $1.99 per share in 2025, and the forecast starts at $2.10 per share after the stated 2026 increase. In 2025, Williams’s $1,005 million of free cash flow did not cover $2,442 million of common dividends.",
+   "closing": "The full memo explains Williams’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Williams pay per share?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $69.22, shares carry a 27.6x trailing P/E. Their 1.2% free-cash-flow yield is below the 3.0% dividend yield. Revenue growth must convert into real free cash flow as a share of revenue. The 2025 turn in that margin came as net debt rose to $29,298 million. Williams’s own free cash flow per share was $0.82 against dividends paid of $1.99 per share."
+      },
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at $2.10 per share after the stated 2026 increase. The base case keeps the recent roughly 5% growth pattern, reaching $2.18 and $2.40 across the forecast dates. The bear case freezes it at $2.10 because free cash flow did not cover dividends and growth capital is substantial. The bull case assumes 6% increases, reaching $2.20 and $2.44, because stronger project cash flow creates room above guidance."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Does Williams’s dividend fit its cash?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across 2021–2025, Williams generated $12,170 million of free cash flow. It paid $11,000 million in common dividends. Buybacks were only $139 million, while payments to minority owners reached $1,105 million. Together, these distributions exceeded five-year free cash flow by $74 million."
+      },
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The gap became sharper in 2025. Free cash flow was $1,005 million, while common dividends were $2,442 million. Including minority distributions, Williams paid out $1,696 million more than free cash flow. Free cash flow comes after operating costs and capital spending, not after dividends and acquisitions, so expansion and shareholder payments together required financing beyond that year’s internally generated cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,005",
+        "2,401",
+        "3,422",
+        "2,636",
+        "2,706"
+       ],
+       [
+        "− Dividends paid",
+        "2,442",
+        "2,316",
+        "2,179",
+        "2,071",
+        "1,992"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "130",
+        "9",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "900",
+        "352",
+        "527"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,696",
+        "157",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "2,442",
+        "2,316",
+        "2,309",
+        "2,080",
+        "1,992"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more cash than its business generated, so it had to use savings or borrow more money."
+     }
+    },
+    {
+     "heading": "What could change Williams’s dividend?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The next test would be the 2028 ramp of Momentum and power projects. Strong cash generation would support the bull case; incremental interest, partner claims or dilution would weaken both per-share growth and dividend capacity."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "8,875 (8,083 / 9,292)",
+        "9,475 (8,198 / 10,371)",
+        "10,075 (8,527 / 11,471)"
+       ],
+       [
+        "Shares (millions)",
+        "1,252 (1,252 / 1,251)",
+        "1,253 (1,254 / 1,252)",
+        "1,254 (1,256 / 1,253)"
+       ],
+       [
+        "Dividends per share",
+        "2.18 (2.10 / 2.20)",
+        "2.29 (2.10 / 2.32)",
+        "2.40 (2.10 / 2.44)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "13.00 (11.50 / 14.50)",
+        "13.00 (11.00 / 15.00)",
+        "13.00 (10.50 / 15.50)"
+       ],
+       [
+        "Net debt",
+        "35,690 (37,210 / 34,750)",
+        "39,360 (42,740 / 36,760)",
+        "42,220 (47,730 / 37,550)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Williams’s dividend yield against its price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "69.22"
+       ],
+       [
+        "Market value (calculated)",
+        "87,220.11"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": "The enterprise value and price to book use an older balance sheet, so they do not include the later acquisition or financing."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.99"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.64",
+      "1.69",
+      "1.78",
+      "1.89",
+      "1.99"
+     ],
+     "Real free cash flow per share": [
+      "2.15",
+      "2.10",
+      "2.74",
+      "1.88",
+      "0.74"
+     ],
+     "Free cash flow per share": [
+      "2.22",
+      "2.16",
+      "2.80",
+      "1.96",
+      "0.82"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/wmb/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WMB&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Williams earnings date and guidance",
+   "meta_description": "Williams reports on November 2, 2026; guidance, past delivery and cash conversion are the key checks.",
+   "opening": "Williams' next results are expected on November 2, 2026. Watch whether projects turn construction spending into cash.",
+   "closing": "The full Williams memo also answers how its business works, who its rivals are, how management is paid, and what risks could disrupt it.",
+   "blocks": [
+    {
+     "heading": "What has Williams guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management guides to adjusted EBITDA of $8,300–$8,500 million. EBITDA measures operating earnings before interest, taxes and depreciation; “adjusted” removes specified items. AFFO, or available funds from operations, is closer to cash, but it remains the company’s own adjusted measure. Williams expects adjusted earnings per share of $2.30–$2.40 and AFFO of $6,310–$6,440 million."
+      },
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Growth capital has risen to $7,300–$7,900 million from the earlier $6,100–$6,700 million range. Maintenance capital, which keeps existing assets safe and reliable, is separately guided at $850–$950 million. The annualized dividend remains $2.10 per share, after 5.0% growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted EBITDA",
+        "2026",
+        "8,300",
+        "8,500",
+        "Aug 3, 2026"
+       ],
+       [
+        "growth capex",
+        "2026",
+        "7,300",
+        "7,900",
+        "Aug 3, 2026"
+       ],
+       [
+        "maintenance capex",
+        "2026",
+        "850",
+        "950",
+        "Aug 4, 2026"
+       ],
+       [
+        "Available Funds From Operations (AFFO)",
+        "2026",
+        "6,310",
+        "6,440",
+        "Aug 4, 2026"
+       ],
+       [
+        "Annual Dividend Growth Rate",
+        "2026",
+        "5.0%",
+        "5.0%",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": "The two available funds from operations figures differ because one is a midpoint estimate and the other is a later presentation range, not because the company gave two different forecasts."
+     }
+    },
+    {
+     "heading": "Did Williams keep its past promise?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "One promise was met: Williams forecast adjusted EBITDA of US$7.75 billion at the midpoint and reported US$7.750 billion. That supports the company’s forecasting record, although the result spans both CEOs and does not prove that every new investment will earn enough."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What trend do Williams' recent quarters show?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "A consistent eight-quarter history shows both beats and misses rather than an uninterrupted pattern of outperformance. Even a fractional-cent difference can change the label, which makes the estimate definition and collection date important."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,053",
+        "3,030",
+        "3,198",
+        "2,923",
+        "2,781",
+        "3,048",
+        "2,743",
+        "2,653"
+       ],
+       [
+        "Operating income",
+        "1,182",
+        "1,321",
+        "1,048",
+        "1,109",
+        "945",
+        "1,094",
+        "793",
+        "838"
+       ],
+       [
+        "Net income",
+        "827",
+        "865",
+        "734",
+        "647",
+        "546",
+        "691",
+        "486",
+        "706"
+       ],
+       [
+        "EPS, diluted",
+        "0.68",
+        "0.70",
+        "0.60",
+        "0.53",
+        "0.45",
+        "0.56",
+        "0.40",
+        "0.58"
+       ],
+       [
+        "**= Free cash flow**",
+        "-458",
+        "244",
+        "-379",
+        "485",
+        "478",
+        "421",
+        "450",
+        "561"
+       ]
+      ],
+      "note": "The company made a profit, but its free cash flow was negative because it spent more cash on equipment, buildings, and software than its daily business brought in."
+     }
+    },
+    {
+     "heading": "What should I watch in Williams' next release?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "At the November 3, 2026 earnings call, investors should look for updates on Socrates, Atlas, construction costs and Momentum’s effect on cash generation and borrowing. Socrates’ first 200-megawatt phase entered service in July on time and within budget, but the remaining work must repeat that execution."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,053"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.68"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,653",
+      "2,743",
+      "3,048",
+      "2,781",
+      "2,923",
+      "3,198",
+      "3,030",
+      "3,053"
+     ],
+     "EPS, diluted": [
+      "0.58",
+      "0.40",
+      "0.56",
+      "0.45",
+      "0.53",
+      "0.60",
+      "0.70",
+      "0.68"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/wmb/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WMB&src=seo-earnings"
+  }
+ },
+ "short_name": "Williams",
+ "first_memo_date": "2026-10-16T13:28:08Z"
+}

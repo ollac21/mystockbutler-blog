@@ -1,0 +1,569 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ADSK",
+ "slug": "adsk",
+ "company": "Autodesk, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T18:32:41Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 239.9,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-11-24",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16739,
+  "sources": 148
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Autodesk sells professional software for designing buildings, infrastructure, manufactured products, and digital entertainment. Its business is simple at the surface—customers pay for access—but understanding the dollar requires following the tools, users, contracts, and costs behind that access."
+ },
+ "sources": [
+  {
+   "title": "FY2026 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/adsk-20260131.htm"
+  },
+  {
+   "title": "Autodesk’s FY2025 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/769397/000076939725000019/adsk-20250131.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000010/q426pressrelease.htm"
+  }
+ ],
+ "rivals": [
+  "ADBE",
+  "BSY",
+  "DSY.PA",
+  "NEM.DE",
+  "ORCL",
+  "PCOR",
+  "PTC",
+  "DDD",
+  "SIE.DE",
+  "TRMB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Autodesk stock forecast",
+   "meta_description": "Autodesk’s weighted scenarios point higher, but cash generation, MaintainX integration, buybacks, and valuation determine the outcome.",
+   "opening": "Autodesk’s weighted forecast is $286.91 in October 2027, $325.03 in October 2028, and $364.19 in October 2029. It hinges on cash generation, MaintainX integration, buybacks, and the valuation multiple.",
+   "closing": "The full memo also examines Autodesk’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Autodesk's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $286.91 in October 2027 and $325.03 in October 2028. It reaches $364.19 in October 2029. The first two total returns are 20% and 35%. The third is 52%."
+      },
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast assigns 25% to the bear case and 55% to the base case. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 239.90, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 239.90, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "187.44 (-22 %)",
+        "187.12 (-22 %)",
+        "190.57 (-21 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "302.60 (+26 %)",
+        "330.39 (+38 %)",
+        "357.44 (+49 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "368.13 (+53 %)",
+        "482.67 (+101 %)",
+        "599.79 (+150 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "286.91 (+20 %)",
+        "325.03 (+35 %)",
+        "364.19 (+52 %)"
+       ]
+      ],
+      "note": "The weighted value is an average based on the chances of each case, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Autodesk?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $1,552M and $1,747M in the first two years, then $1,954M. It assumes weaker project activity, slower seat expansion, and continuing MaintainX costs. The bull case gives $2,193M and $2,600M, then $3,016M. It requires paid adoption of cloud tools, successful cross-selling, and faster operating leverage. Construction starts fell 26% in 2009, supporting a meaningful cyclical downside risk."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Autodesk really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Autodesk defines free cash flow as operating cash flow minus capital spending. The company reported $2,409 million of free cash flow in fiscal 2026. Subtracting $788 million of stock compensation produces the table’s “real free cash flow.” That is an analytical measure, not Autodesk’s standard count: stock pay is non-cash in the period but still affects owners through dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,452",
+        "1,607",
+        "1,313",
+        "2,071",
+        "1,531"
+       ],
+       [
+        "− Capital spending",
+        "43",
+        "40",
+        "31",
+        "40",
+        "56"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,409",
+        "1,567",
+        "1,282",
+        "2,031",
+        "1,475"
+       ],
+       [
+        "− Stock pay",
+        "788",
+        "683",
+        "703",
+        "657",
+        "555"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,621",
+        "884",
+        "579",
+        "1,374",
+        "920"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "22.5%",
+        "14.4%",
+        "10.5%",
+        "27.5%",
+        "21.0%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares gives away part of the company even though no cash leaves immediately."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Autodesk today?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E says how much investors pay for each dollar of recent earnings. Autodesk’s trailing P/E is 31.0x, while its forward P/E is 16.9x. At the same share price, that gap implies an earnings denominator about 83% larger. It is therefore a forecast of rapid improvement, not an automatic bargain. Autodesk reports separate GAAP and non-GAAP FY27 outlooks, so the forward multiple matters only after its earnings definition is clear."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "239.90"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "31.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.9x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "6.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.2%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts’ forecast profit, so it is only an estimate, not a fact about the company’s past earnings."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "239.90"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "364.19 (+52 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 239.9,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "187.44 (-22 %)",
+       "187.12 (-22 %)",
+       "190.57 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "302.60 (+26 %)",
+       "330.39 (+38 %)",
+       "357.44 (+49 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "368.13 (+53 %)",
+       "482.67 (+101 %)",
+       "599.79 (+150 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "286.91 (+20 %)",
+       "325.03 (+35 %)",
+       "364.19 (+52 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/adsk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADSK&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Autodesk earnings: guidance and results",
+   "meta_description": "Autodesk's next results are expected on November 24, 2026; guidance calls for revenue of $8,295–$8,345 million and free cash flow of $2,725–$2,750 million.",
+   "opening": "Autodesk's next results are expected on November 24, 2026. Watch whether Autodesk can turn MaintainX into durable growth without giving up its margin and cash goals.",
+   "closing": "The full memo also explains Autodesk's business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Autodesk guided for the year?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the year ending January 2027, management guides to revenue of $8,295–$8,345 million and billings of $8,575–$8,650 million. Billings measure what Autodesk invoices or commits during the period. Revenue measures what it earns by delivering the software. If a customer pays $1,200 upfront for a one-year subscription, Autodesk may bill the full amount immediately but recognize $100 of revenue each month. Billings can therefore show demand earlier, while revenue follows the accounting schedule."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.4 — Can they pay for it",
+       "text": "Autodesk guides to $2,725–$2,750 million of FY27 free cash flow. That is cash generated after capital expenditures, not cash already in the bank. It must also cover buybacks. Current RPO, or contracted revenue expected within roughly a year, rose 12% in Q2 FY27 while total RPO rose 2%. Autodesk’s move away from discounted multiyear contracts is weighing on total RPO, so contract structure must be separated from underlying demand."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Billings (in millions)",
+        "Year to Jan 2027",
+        "8,575",
+        "8,650",
+        "Aug 27, 2026"
+       ],
+       [
+        "Revenue (in millions)",
+        "Year to Jan 2027",
+        "8,295",
+        "8,345",
+        "Aug 27, 2026"
+       ],
+       [
+        "Non-GAAP operating margin",
+        "Year to Jan 2027",
+        "39.0%",
+        "39.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Free cash flow (in millions)",
+        "Year to Jan 2027",
+        "2,725",
+        "2,750",
+        "Aug 27, 2026"
+       ]
+      ],
+      "note": "The company reports both standard profit figures and adjusted figures that leave out some costs, so the adjusted numbers look higher."
+     }
+    },
+    {
+     "heading": "How have Autodesk's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "July 2026 showed broad sales growth and strong margins, but the profit comparison benefited from an unusually weak prior period."
+      },
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The profit increase needs adjustment for the comparison base. The April 2025 quarter included a $105 million restructuring charge, and the prior-year period also included the $54 million employee stock-purchase accounting correction. The July 2026 quarter included a small restructuring credit while the prior-year quarter carried charges. Reported earnings rose, but the comparison does not measure a clean change in normal profitability."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,046",
+        "1,934",
+        "1,957",
+        "1,853",
+        "1,763",
+        "1,633",
+        "1,639",
+        "1,570"
+       ],
+       [
+        "Gross margin",
+        "91.4%",
+        "91.0%",
+        "91.5%",
+        "91.1%",
+        "91.0%",
+        "90.2%",
+        "90.6%",
+        "90.6%"
+       ],
+       [
+        "Operating income",
+        "599",
+        "541",
+        "431",
+        "470",
+        "444",
+        "233",
+        "366",
+        "346"
+       ],
+       [
+        "Net income",
+        "492",
+        "491",
+        "316",
+        "343",
+        "313",
+        "152",
+        "303",
+        "275"
+       ],
+       [
+        "EPS, diluted",
+        "2.33",
+        "2.32",
+        "1.48",
+        "1.60",
+        "1.46",
+        "0.70",
+        "1.40",
+        "1.27"
+       ]
+      ],
+      "note": "Cash from operations can swing sharply between quarters because some quarterly figures are calculated by subtracting year-to-date amounts, so the changes do not always show a real change in the business."
+     }
+    },
+    {
+     "heading": "What should you watch in Autodesk's next results?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results must show whether Autodesk can turn demand and MaintainX into durable growth without giving up its margin and cash goals."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 24, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "2,046"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "2.33"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,570",
+      "1,639",
+      "1,633",
+      "1,763",
+      "1,853",
+      "1,957",
+      "1,934",
+      "2,046"
+     ],
+     "EPS, diluted": [
+      "1.27",
+      "1.40",
+      "0.70",
+      "1.46",
+      "1.60",
+      "1.48",
+      "2.32",
+      "2.33"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/adsk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADSK&src=seo-earnings"
+  }
+ },
+ "short_name": "Autodesk",
+ "first_memo_date": "2026-10-18T18:32:41Z"
+}

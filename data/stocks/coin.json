@@ -1,0 +1,536 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "COIN",
+ "slug": "coin",
+ "company": "Coinbase Global, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "broker",
+ "country": "us",
+ "memo_date": "2026-10-19T02:03:37Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 173.16,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 243,
+  "tables": 26,
+  "words": 15857,
+  "sources": 238
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Coinbase Global runs platforms for digital assets—online items whose ownership and transfers are recorded on blockchains, shared electronic ledgers. It makes money by helping customers trade, store, move and use those assets, then sharing in the interest and fees generated around them."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978825000022/coin-20241231.htm"
+  },
+  {
+   "title": "2022 annual report, software note",
+   "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000031/coin-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "HOOD",
+  "BLSH",
+  "ETOR",
+  "GEMI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Coinbase stock forecast",
+   "meta_description": "Coinbase stock forecast: the weighted price is $171.94 by October 2029, with the base case carrying the highest probability.",
+   "opening": "Coinbase's weighted forecast is $171.94 by October 2029, with the base case at 55% probability. It hinges on operating profit recovering.",
+   "closing": "The full memo also explains Coinbase's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Coinbase's shares go?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the weighted price is $171.94, also down 1%. The final-date range is $167.43 in the bear case to $182.23 in the bull case, compared with today’s $173.16. The base case has the highest probability at 55%. The bear case has 30%, and the bull case has 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 173.16, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 173.16, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "0.00 (-100 %)",
+        "168.89 (-2 %)",
+        "167.43 (-3 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "173.35 (+0 %)",
+        "171.85 (-1 %)",
+        "171.60 (-1 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "174.64 (+1 %)",
+        "177.30 (+2 %)",
+        "182.23 (+5 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "121.54 (-30 %)",
+        "171.78 (-1 %)",
+        "171.94 (-1 %)"
+       ]
+      ],
+      "note": "The weighted value is lower because it averages in the thirty percent chance that the shares become worth nothing in the bear case."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Coinbase?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Operating profit drives the scenarios. The base case starts at $480 million. It reaches $816 million and then $1,125 million. The bear case begins with a $416 million loss, then recovers to $174 million and $520 million. The bull case starts at $1,088 million and reaches $1,870 million before $2,600 million."
+      },
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bull case assumes revenue of $6,800 million initially and $10,000 million finally. Margins rise from 16% to 26%. That requires sustained derivatives growth, profitable subscriptions, USDC expansion and cost savings. Institutional transaction revenue already rose 48% year over year in H1 2026, partly because of Deribit, but H1 operating income was still negative."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "480 (-416 / 1,088)",
+        "816 (174 / 1,870)",
+        "1,125 (520 / 2,600)"
+       ],
+       [
+        "Shares (millions)",
+        "265 (268 / 261)",
+        "266 (271 / 259)",
+        "267 (275 / 256)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "90.80 (105 / 39.80)",
+        "53.40 (251 / 23.20)",
+        "38.80 (83.80 / 16.70)"
+       ],
+       [
+        "Net debt",
+        "-2,319 (-2,224 / -2,349)",
+        "-2,104 (-2,199 / -2,518)",
+        "-2,133 (-2,450 / -3,322)"
+       ]
+      ],
+      "note": "The negative net debt figures mean the company has more cash than borrowed money, not that it owes negative money."
+     }
+    },
+    {
+     "heading": "How much cash does Coinbase really make?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after ordinary operations and capital spending. If sustainable annual free cash flow were US$1 billion, its yield at this valuation would be about 2.2%. But paying employees with shares can preserve cash while reducing existing owners’ percentage of the company, so cash flow must be judged alongside compensation and dilution."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for Coinbase today?",
+     "paragraphs": [
+      {
+       "n": 189,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "A forward P/E of 58.7x implies approximately US$2.95 of forecast earnings per share. Its inverse is an earnings yield of about 1.7%, which is not a cash return or a promise. Investors accepting that starting yield need meaningful growth, lasting profitability, or both."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands, except share price in US$ and ratios",
+      "caption": "What an investor pays today (US$ thousands, except share price in US$ and ratios)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "173.16"
+       ],
+       [
+        "Market value (calculated)",
+        "45,686,002"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "not meaningful"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "58.7x"
+       ],
+       [
+        "Price to book (calculated)",
+        "3.5x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The company lost money over the past year, so its past-year price-to-earnings ratio is not meaningful, while the 58.7 figure uses analysts’ expected future profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "173.16"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "171.94 (-1 %)"
+    },
+    {
+     "label": "Price to book",
+     "value": "3.5x"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 173.16,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "0.00 (-100 %)",
+       "168.89 (-2 %)",
+       "167.43 (-3 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "173.35 (+0 %)",
+       "171.85 (-1 %)",
+       "171.60 (-1 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "174.64 (+1 %)",
+       "177.30 (+2 %)",
+       "182.23 (+5 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "121.54 (-30 %)",
+       "171.78 (-1 %)",
+       "171.94 (-1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/coin/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=COIN&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Coinbase earnings date, guidance and results",
+   "meta_description": "Coinbase's next results are October 29, 2026; management guides to expense ranges, while trading, margins and newer revenues are key tests.",
+   "opening": "Coinbase's next results are expected on October 29, 2026. The key thing to watch is whether Coinbase turns newer revenues into durable earnings before rates, fees and dilution take them away.",
+   "closing": "The full memo also answers how Coinbase makes money, competes with rivals, is run by management, and faces its risks.",
+   "blocks": [
+    {
+     "heading": "What has Coinbase guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2026 full-year adjusted expenses of US$4,200–4,450 million. It expects a US$600 million reduction against the 2025 annualized exit rate, an exit-rate comparison rather than a cut of that amount from actual 2025 spending. For Q3, subscription and services revenue guidance is US$500–580 million, while adjusted expenses are US$980–1,080 million. USDC rewards cost US$119.1 million in Q2 2026."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "S&S Revenue",
+        "Quarter to Sep 2026",
+        "500",
+        "580",
+        "Jul 30, 2026"
+       ],
+       [
+        "Adjusted Expenses",
+        "Quarter to Sep 2026",
+        "980",
+        "1,080",
+        "Jul 30, 2026"
+       ],
+       [
+        "Adjusted Expenses (full year)",
+        "Year to Dec 2026",
+        "4,200",
+        "4,450",
+        "Jul 30, 2026"
+       ],
+       [
+        "Cost reduction vs. 2025 annualized exit rate",
+        "Year to Dec 2026",
+        "600",
+        "600",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "Some rows have blank low and high values because the company gave guidance in words or as a percentage, not as a numerical range."
+     }
+    },
+    {
+     "heading": "What have Coinbase's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Investment movements explain the better-looking net result. June 2025’s reported profit of US$1,428,900 thousand shrinks to US$33,208 thousand under Coinbase’s investment-adjusted measure. June 2026 therefore combines a weak operating quarter with investment losses. Three consecutive revenue declines and a persistent adjusted operating loss do not yet describe a turn."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,220,068",
+        "1,412,982",
+        "1,781,129",
+        "1,868,693",
+        "1,497,208",
+        "2,034,295",
+        "2,271,637",
+        "1,205,193"
+       ],
+       [
+        "Interest and finance fee income",
+        "66,128",
+        "67,805",
+        "59,887",
+        "64,758",
+        "59,316",
+        "63,086",
+        "65,749",
+        "63,987"
+       ],
+       [
+        "Net income",
+        "-359,468",
+        "-394,117",
+        "-666,733",
+        "432,552",
+        "1,428,900",
+        "65,608",
+        "1,291,176",
+        "75,495"
+       ],
+       [
+        "EPS, diluted",
+        "-1.36",
+        "-1.49",
+        "-2.49",
+        "1.50",
+        "5.14",
+        "0.24",
+        "4.68",
+        "0.28"
+       ],
+       [
+        "Pretax margin",
+        "-32.4%",
+        "-32.9%",
+        "-49.8%",
+        "26.9%",
+        "121.8%",
+        "4.1%",
+        "65.9%",
+        "6.0%"
+       ]
+      ],
+      "note": "Revenue here is not just sales; it also includes other income, so it may differ from the separately labeled net revenue."
+     }
+    },
+    {
+     "heading": "What should Coinbase watchers look for in the next results?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Through 2027–2029, consumer spot volume, MTUs, fee mix and USDC balances decide earnings. Base and Coinbase One must show durable profit after costs, incentives, rewards and forgone trading fees. October 29, 2026 results test trading revenue, institutional activity, margins and the expense outlook. Buybacks must coexist with liquidity, lending needs and dilution."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The first dated test is the Q3 2026 result scheduled for October 29. A recovery in trading revenue, institutional activity and margins would move the forecast toward the base or bull cases; another operating loss would strengthen the bear case."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,220,068"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-1.36"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,205,193",
+      "2,271,637",
+      "2,034,295",
+      "1,497,208",
+      "1,868,693",
+      "1,781,129",
+      "1,412,982",
+      "1,220,068"
+     ],
+     "EPS, diluted": [
+      "0.28",
+      "4.68",
+      "0.24",
+      "5.14",
+      "1.50",
+      "-2.49",
+      "-1.49",
+      "-1.36"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/coin/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=COIN&src=seo-earnings"
+  }
+ },
+ "short_name": "Coinbase",
+ "first_memo_date": "2026-10-19T02:03:37Z"
+}

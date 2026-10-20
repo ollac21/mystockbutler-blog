@@ -1,0 +1,800 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CSCO",
+ "slug": "csco",
+ "company": "Cisco Systems, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:15:29Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 117.882,
+ "price_date": "2026-10-09T17:33:55Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 242,
+  "tables": 26,
+  "words": 16722,
+  "sources": 252
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Cisco sells the systems that let organizations connect, protect and understand their technology. Its business combines equipment sales with recurring software, support and services, so following a dollar means following both the installation and the years after it."
+ },
+ "sources": [
+  {
+   "title": "FY2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+  },
+  {
+   "title": "Cisco’s FY2024 financing disclosure",
+   "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887724000017/csco-20240727.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000106/exhibit991pressrelease-q4f.htm"
+  }
+ ],
+ "rivals": [
+  "ANET",
+  "NVDA",
+  "NOK",
+  "HPE",
+  "AVGO",
+  "PANW",
+  "FTNT",
+  "CIEN",
+  "EXTR",
+  "DELL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Cisco stock forecast",
+   "meta_description": "Cisco's forecast shows weighted scenarios, key AI-driven risks, real free cash flow, and the valuation investors pay today.",
+   "opening": "Cisco's weighted forecast moves from $117.88 today to $105.81 by October 2029, a 6% loss including dividends. Cisco's AI opportunity matters only if orders become profitable shipments, cash and durable software growth.",
+   "closing": "The full memo also explains Cisco's business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Cisco's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Cisco’s weighted forecast points to a lower share price by October 2029, because the 6% loss including dividends hinges on AI orders becoming profitable revenue and cash. The weighted price moves from $117.88 today to $105.81 by October 2029."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case reaches $67.43 with 30% probability. The base case carries 50% probability. The bull case reaches $159.44 with 20% probability. The base case assumes earnings growth alongside a P/E decline from 25x to 23x by October 2029."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 117.88, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 117.88, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "78.33 (-32 %)",
+        "71.28 (-37 %)",
+        "67.43 (-39 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "101.13 (-13 %)",
+        "104.48 (-8 %)",
+        "107.38 (-4 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "122.61 (+5 %)",
+        "142.85 (+24 %)",
+        "159.44 (+40 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "98.59 (-15 %)",
+        "102.19 (-10 %)",
+        "105.81 (-6 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Cisco's stock forecast?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "In October 2026, Supermicro systems become orderable through Cisco’s partners. Completed installations and shorter delivery waits would test supply relief. On November 12, Cisco reports Q1 FY2027, with an adjusted gross-margin target of 65.0–66.0%. Through FY2027 and FY2028, broader AI demand, campus refreshes, software renewals and Splunk cross-selling support the bull case; delayed installations, rising inventory and weaker cash conversion support the bear case."
+      },
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Cisco’s AI opportunity matters only if orders become profitable shipments, cash and durable software growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Cisco really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from operating cash flow. Cisco generated $12,767 million after spending $1,410 million on capital projects. Capital spending rose while operating cash flow stayed flat, so less cash remained after investment. The measure also has limits: research and development is expensed, while outside manufacturing costs run through operating cash flow."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Jul 2026",
+       "Year to Jul 2025",
+       "Year to Jul 2024",
+       "Year to Jul 2023",
+       "Year to Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "14,177",
+        "14,193",
+        "10,880",
+        "19,886",
+        "13,226"
+       ],
+       [
+        "Capital spending",
+        "1,410",
+        "905",
+        "670",
+        "849",
+        "477"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "12,767",
+        "13,288",
+        "10,210",
+        "19,037",
+        "12,749"
+       ],
+       [
+        "Stock-based pay",
+        "3,830",
+        "3,641",
+        "3,074",
+        "2,353",
+        "1,886"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "8,937",
+        "9,647",
+        "7,136",
+        "16,684",
+        "10,863"
+       ],
+       [
+        "Real free cash flow per share (calculated)",
+        "2.24",
+        "2.41",
+        "1.76",
+        "4.06",
+        "2.59"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Cisco today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "117.882"
+       ],
+       [
+        "Market value (calculated)",
+        "464,760.03"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "478,375.03"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "35.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "23.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.7%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "117.882"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "105.81 (-6 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.1x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "35.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 117.882,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "78.33 (-32 %)",
+       "71.28 (-37 %)",
+       "67.43 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "101.13 (-13 %)",
+       "104.48 (-8 %)",
+       "107.38 (-4 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "122.61 (+5 %)",
+       "142.85 (+24 %)",
+       "159.44 (+40 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "98.59 (-15 %)",
+       "102.19 (-10 %)",
+       "105.81 (-6 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/csco/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CSCO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Cisco dividend",
+   "meta_description": "Cisco's dividend rose steadily, while cash flow covered dividends but not all shareholder returns after stock pay.",
+   "opening": "Cisco's dividends rose by 0.04 per share each year from FY2022 through FY2026, reaching 1.68 per share in 2029 in the base case. Cisco generated $12.767 billion of free cash flow and paid $6.553 billion in dividends, but real free cash flow after stock pay was $8,937 million, so dividends and buybacks exceeded it.",
+   "closing": "The full memo also answers how Cisco's business works, how its rivals compare, how Cisco's management allocates capital, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "How much does Cisco pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend path follows Cisco's record but recognizes its cash constraints. Dividends rose by 0.04 per share each year from FY2022 through FY2026. The base case continues that pattern, reaching 1.78 per share in 2029. The bear case freezes the annualized rate at 1.68, while the bull case reaches 1.88 as AI deliveries improve cash conversion."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Jul 2026",
+       "Year to Jul 2025",
+       "Year to Jul 2024",
+       "Year to Jul 2023",
+       "Year to Jul 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "63,325",
+        "56,654",
+        "53,803",
+        "56,998",
+        "51,557"
+       ],
+       [
+        "Revenue growth (calculated)",
+        "11.8%",
+        "5.3%",
+        "-5.6%",
+        "10.6%",
+        "3.5%"
+       ],
+       [
+        "EPS, diluted",
+        "3.33",
+        "2.55",
+        "2.54",
+        "3.07",
+        "2.82"
+       ],
+       [
+        "Dividend per share",
+        "1.66",
+        "1.62",
+        "1.58",
+        "1.54",
+        "1.50"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Cisco's dividend fit its cash flow?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation makes the shareholder test stricter. The cash-flow statement adds this noncash expense back, so conventional free cash flow includes it. Subtracting $3,830 million produces “real free cash flow” of $8,937 million. This is an economic allowance for employee ownership, not a second cash payment. Buybacks and this allowance should not both be deducted as though they were identical costs."
+      },
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is operating cash left after necessary capital spending. Cisco generated $14.177 billion from operations and spent $1.410 billion on property and equipment, leaving $12.767 billion of free cash flow. It paid $6.553 billion in dividends and repurchased $6.106 billion of stock, leaving little cash for growth that requires more inventory or supplier prepayments."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Jul 2026",
+       "Year to Jul 2025",
+       "Year to Jul 2024",
+       "Year to Jul 2023",
+       "Year to Jul 2022"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "8,937",
+        "9,647",
+        "7,136",
+        "16,684",
+        "10,863"
+       ],
+       [
+        "Dividends paid",
+        "6,553",
+        "6,437",
+        "6,384",
+        "6,302",
+        "6,224"
+       ],
+       [
+        "Shares bought back",
+        "6,106",
+        "6,000",
+        "5,787",
+        "4,293",
+        "7,689"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "141.6%",
+        "128.9%",
+        "170.6%",
+        "63.5%",
+        "128.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Cisco's dividend?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "A freeze is credible because dividends and buybacks exceeded real free cash flow of 8,937 million in FY2026. Still, the stable five-year record makes continued modest increases more likely than a cut."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Cisco's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cisco’s stock price assumes sustained growth, while its cash generation tests whether that growth deserves the price. The company sells networking, security and software, so its valuation depends on whether an established business can turn a new AI opportunity into durable earnings."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "117.882"
+       ],
+       [
+        "Market value (calculated)",
+        "464,760.03"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "Year to Jul 2022",
+     "Year to Jul 2023",
+     "Year to Jul 2024",
+     "Year to Jul 2025",
+     "Year to Jul 2026"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "3.04",
+      "4.64",
+      "2.51",
+      "3.32",
+      "3.20"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/csco/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CSCO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Cisco earnings: date, guidance and results",
+   "meta_description": "Cisco's next results are expected November 11, 2026; fiscal 2027 guidance and delivery-to-cash conversion are the key tests.",
+   "opening": "Cisco's next results are expected on November 11, 2026. The key thing to watch is whether deliveries turn into revenue and cash while adjusted gross margin stays within 65.0–66.0%.",
+   "closing": "The full memo covers Cisco's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Cisco guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 197,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Cisco’s fiscal year ends in July rather than December, so fiscal 2027 covers the twelve months leading up to July 2027. Management’s August guidance calls for revenue of $72.2–$73.4 billion and adjusted earnings of $5.05–$5.11 per share. For the first quarter, it expects revenue of $18.0–$18.2 billion."
+      },
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Adjusted earnings are a comparison measure, while GAAP earnings follow standard accounting rules. Cisco’s GAAP forecast is $4.00–$4.06 per share because it includes stock compensation, acquisition-related amortization and restructuring charges. Stock compensation can dilute owners, and acquisitions and restructuring still cost money, so investors must compare like with like."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions, except per-share amounts and percentages",
+      "caption": "Guidance in force (US$ billions, except per-share amounts and percentages)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Q1 FY 2027",
+        "18.0",
+        "18.2",
+        "Aug 12, 2026"
+       ],
+       [
+        "Non-GAAP EPS",
+        "Q1 FY 2027",
+        "1.32",
+        "1.34",
+        "Aug 12, 2026"
+       ],
+       [
+        "GAAP EPS",
+        "Q1 FY 2027",
+        "1.08",
+        "1.10",
+        "Aug 12, 2026"
+       ],
+       [
+        "Revenue",
+        "FY 2027",
+        "72.2",
+        "73.4",
+        "Aug 12, 2026"
+       ],
+       [
+        "Non-GAAP EPS",
+        "FY 2027",
+        "5.05",
+        "5.11",
+        "Aug 12, 2026"
+       ],
+       [
+        "GAAP EPS",
+        "FY 2027",
+        "4.00",
+        "4.06",
+        "Aug 12, 2026"
+       ],
+       [
+        "AI infrastructure from hyperscalers, revenue",
+        "FY 2027",
+        "7.5",
+        "7.5",
+        "Aug 12, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Cisco keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Cisco did meet important stated promises. It forecast up to US$60.0 billion of fiscal 2026 revenue and delivered US$63.3 billion. It also returned 94% of free cash flow against a policy minimum of 50%. Free cash flow is the cash left after operating and investment needs; it can be returned through dividends or buybacks. But cash returned is not the same as ownership preserved if stock awards keep issuing claims on the company."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Cisco revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Hyperscalers, the large cloud operators building AI infrastructure, supplied about 6% of fiscal 2026 sales. Their purchases can be large and uneven, so orders must be followed through shipments and collections. Diluted EPS rose to $3.33, while the diluted share count fell only 0.3%; buybacks therefore contributed little. The repeatability test is whether equipment, recurring contracts and cash collections improve together."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Gross margin shows what remains after the direct cost of providing Cisco’s products and services. It fell from 64.9% to 64.5%, as the mix shifted toward Networking and memory became more expensive. Pricing and productivity partly offset that pressure. Operating margin improved from 20.8% to 24.3% because sales grew faster than the overall operating-cost base. That is operating leverage, not proof that every product became more profitable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jul 2026",
+       "Quarter to Apr 2026",
+       "Quarter to Jan 2026",
+       "Quarter to Oct 2025",
+       "Quarter to Jul 2025",
+       "Quarter to Apr 2025",
+       "Quarter to Jan 2025",
+       "Quarter to Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "17,252",
+        "15,841",
+        "15,349",
+        "14,883",
+        "14,673",
+        "14,149",
+        "13,991",
+        "13,841"
+       ],
+       [
+        "Operating income",
+        "4,264",
+        "3,960",
+        "3,781",
+        "3,363",
+        "3,087",
+        "3,202",
+        "3,113",
+        "2,358"
+       ],
+       [
+        "Net income",
+        "3,859",
+        "3,373",
+        "3,175",
+        "2,860",
+        "2,550",
+        "2,491",
+        "2,428",
+        "2,711"
+       ],
+       [
+        "EPS, diluted",
+        "0.97",
+        "0.85",
+        "0.80",
+        "0.72",
+        "0.64",
+        "0.62",
+        "0.61",
+        "0.68"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jul 2026 (US$ millions)",
+     "value": "17,252"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jul 2026",
+     "value": "0.97"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Oct 2024",
+     "Quarter to Jan 2025",
+     "Quarter to Apr 2025",
+     "Quarter to Jul 2025",
+     "Quarter to Oct 2025",
+     "Quarter to Jan 2026",
+     "Quarter to Apr 2026",
+     "Quarter to Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "13,841",
+      "13,991",
+      "14,149",
+      "14,673",
+      "14,883",
+      "15,349",
+      "15,841",
+      "17,252"
+     ],
+     "EPS, diluted": [
+      "0.68",
+      "0.61",
+      "0.62",
+      "0.64",
+      "0.72",
+      "0.80",
+      "0.85",
+      "0.97"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/csco/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CSCO&src=seo-earnings"
+  }
+ },
+ "short_name": "Cisco",
+ "first_memo_date": "2026-10-10T02:15:29Z"
+}

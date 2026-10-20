@@ -1,0 +1,799 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "UNP",
+ "slug": "unp",
+ "company": "Union Pacific Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T14:27:10Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 281.57,
+ "price_date": "2026-10-12T20:00:02Z",
+ "next_earnings": "2026-10-22",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 230,
+  "tables": 27,
+  "words": 16111,
+  "sources": 277
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Union Pacific Corporation is a freight railroad: it sells the movement of other companies’ goods across 23 western U.S. states. To understand its business, follow one journey from the cargo it carries to the customer who buys it, then to the costs that determine what Union Pacific keeps."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088526000037/unp-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088525000042/unp-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/100885/000010088526000032/a2026-01x278xkex991earning.htm"
+  }
+ ],
+ "rivals": [
+  "NSC",
+  "CSX",
+  "CNI",
+  "CP",
+  "JBHT",
+  "XPO",
+  "ODFL",
+  "KNX",
+  "FDX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Union Pacific stock forecast",
+   "meta_description": "Union Pacific's weighted forecast is $179.31 in October 2027 and $255.17 in October 2029, with 30% bear, 50% base and 20% bull.",
+   "opening": "At the first forecast date, October 2027, Union Pacific's weighted price is $179.31. Union Pacific's forecast hinges on traffic gains and savings outrunning new shares, debt and integration costs.",
+   "closing": "The full memo also explains Union Pacific's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Union Pacific's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "At the first forecast date, October 2027, the weighted price is $179.31. That is a 34% loss including dividends. At the last forecast date, October 2029, it is $255.17. That is a 3% loss including dividends. The forecast assigns 30% probability to the bear case and 50% to base. The bull case receives 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 281.57, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 281.57, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "204.94 (-25 %)",
+        "85.00 (-66 %)",
+        "83.62 (-65 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "161.69 (-41 %)",
+        "254.98 (-5 %)",
+        "297.04 (+12 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "184.92 (-32 %)",
+        "337.99 (+24 %)",
+        "407.80 (+51 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "179.31 (-34 %)",
+        "220.59 (-18 %)",
+        "255.17 (-3 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Union Pacific?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA rises gradually before the merger, then jumps when Norfolk Southern contributes. The base case uses $13,400 million in October 2027, supported by a 4% standalone growth assumption and improved velocity and dwell. It reaches $19,850 million in October 2028 and $21,400 million in October 2029 as Norfolk Southern and synergies are added. The bear case excludes Norfolk Southern until later and falls to $12,350 million in 2028, reflecting the 2023 decline and traffic risk. The bull case reaches $22,800 million by 2029 because pricing, productivity and synergies all exceed the base path. Management’s EPS outlook supports growth, but it is not EBITDA guidance."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,400 (12,700 / 13,700)",
+        "19,850 (12,350 / 20,900)",
+        "21,400 (12,800 / 22,800)"
+       ],
+       [
+        "Shares (millions)",
+        "820 (595 / 820)",
+        "821 (821 / 821)",
+        "821 (821 / 818)"
+       ],
+       [
+        "Dividends per share",
+        "5.72 (5.68 / 5.75)",
+        "5.88 (4.82 / 6.01)",
+        "6.05 (4.80 / 6.33)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "14.50 (11.50 / 15.50)",
+        "13.50 (10.50 / 16.00)",
+        "14.00 (10.00 / 17.00)"
+       ],
+       [
+        "Net debt",
+        "61,713 (24,113 / 60,713)",
+        "58,713 (59,913 / 57,013)",
+        "55,613 (59,313 / 53,813)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Union Pacific really make?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "That creates a sequence: profit becomes operating cash, and operating cash becomes free cash flow only after capital spending. “Real” free cash flow goes one step further by treating stock compensation as an economic cost because it dilutes shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,290",
+        "9,346",
+        "8,379",
+        "9,362",
+        "9,032"
+       ],
+       [
+        "− Capital spending",
+        "3,791",
+        "3,452",
+        "3,606",
+        "3,620",
+        "2,936"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,499",
+        "5,894",
+        "4,773",
+        "5,742",
+        "6,096"
+       ],
+       [
+        "− Stock pay",
+        "142",
+        "118",
+        "107",
+        "99",
+        "88"
+       ],
+       [
+        "**= Real free cash flow**",
+        "5,357",
+        "5,776",
+        "4,666",
+        "5,643",
+        "6,008"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "21.9%",
+        "23.8%",
+        "19.3%",
+        "22.7%",
+        "27.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Union Pacific today?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "This table sets out the current share price, market value, enterprise value, valuation multiples, cash-flow yields and dividend yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "281.57"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "255.17 (-3 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "19.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 281.57,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "204.94 (-25 %)",
+       "85.00 (-66 %)",
+       "83.62 (-65 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "161.69 (-41 %)",
+       "254.98 (-5 %)",
+       "297.04 (+12 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "184.92 (-32 %)",
+       "337.99 (+24 %)",
+       "407.80 (+51 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "179.31 (-34 %)",
+       "220.59 (-18 %)",
+       "255.17 (-3 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/unp/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UNP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Union Pacific dividend: cash coverage and yield",
+   "meta_description": "Union Pacific pays $1.42 quarterly; dividend coverage has been mixed because payouts sometimes exceeded free cash flow after investment.",
+   "opening": "Union Pacific's latest quarterly rate is $1.42 per share, and its base case grows dividends from $5.72 to $6.05 per share. Union Pacific's cash coverage is mixed: payouts sometimes exceeded free cash flow after investment, although it retained free cash flow in 2023 and 2024.",
+   "closing": "The full memo also examines Union Pacific's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Union Pacific pay per share?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow modestly in the base case, from $5.72 to $6.05 per share. That follows the latest $1.42 quarterly rate and the stated commitment to annual increases. The bear case declines from $5.68 to $4.80 as financing, integration and weak earnings force cuts. The bull case reaches $6.33 because stronger earnings permit faster increases, though it remains below an immediate full-synergy payout."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "5.43",
+        "5.28",
+        "5.20",
+        "5.06",
+        "4.27"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.50",
+        "2.47",
+        "1.16",
+        "10.07",
+        "11.12"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "1.93",
+        "1.47",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "0.70",
+        "",
+        "",
+        "5.93",
+        "6.10"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Union Pacific's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pattern matters because dividends and buybacks are not costless proof of success. A dividend sends cash directly to shareholders. A buyback reduces the number of shares, which can increase each remaining share’s claim on future earnings. But if payouts exceed free cash flow, the gap must come from asset sales, cash reserves or borrowing."
+      },
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "That happened especially strongly early in the period. Union Pacific later retained free cash flow in 2023 and 2024, while debt repayments exceeded new borrowing. Even so, net debt ended 2025 above its level at the end of 2021. Union Pacific also paused repurchases for the Norfolk Southern transaction, allowing more internally generated cash to accumulate for the proposed acquisition."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "5,499",
+        "5,894",
+        "4,773",
+        "5,742",
+        "6,096"
+       ],
+       [
+        "− Dividends paid",
+        "3,236",
+        "3,213",
+        "3,173",
+        "3,159",
+        "2,800"
+       ],
+       [
+        "− Share buybacks",
+        "2,679",
+        "1,505",
+        "705",
+        "6,282",
+        "7,291"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "1,176",
+        "895",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "416",
+        "",
+        "",
+        "3,699",
+        "3,995"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Union Pacific's dividend?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if regulatory conditions delay closing, integration costs rise or traffic benefits fail to appear during 2027–2029. Fuel costs rising faster than surcharge recovery would also pressure margins."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,400 (12,700 / 13,700)",
+        "19,850 (12,350 / 20,900)",
+        "21,400 (12,800 / 22,800)"
+       ],
+       [
+        "Shares (millions)",
+        "820 (595 / 820)",
+        "821 (821 / 821)",
+        "821 (821 / 818)"
+       ],
+       [
+        "Dividends per share",
+        "5.72 (5.68 / 5.75)",
+        "5.88 (4.82 / 6.01)",
+        "6.05 (4.80 / 6.33)"
+       ],
+       [
+        "Net debt",
+        "61,713 (24,113 / 60,713)",
+        "58,713 (59,913 / 57,013)",
+        "55,613 (59,313 / 53,813)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "5.43"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.27",
+      "5.06",
+      "5.20",
+      "5.28",
+      "5.43"
+     ],
+     "Real free cash flow per share": [
+      "9.17",
+      "9.04",
+      "7.65",
+      "9.49",
+      "8.99"
+     ],
+     "Free cash flow per share": [
+      "9.30",
+      "9.20",
+      "7.82",
+      "9.68",
+      "9.23"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/unp/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UNP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Union Pacific earnings: date and guidance",
+   "meta_description": "Union Pacific reports on October 22, 2026; guidance is high-single-digit reported EPS growth, with traffic and productivity to watch.",
+   "opening": "Union Pacific's next results are expected on October 22, 2026. Watch Union Pacific's traffic, revenue excluding fuel recovery and productivity after fuel and wage pressure.",
+   "closing": "The full Union Pacific memo also answers questions about Union Pacific's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Union Pacific guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management now promises faster earnings growth in 2026 while keeping investment high. It raised its full-year outlook to high-single-digit growth in reported earnings per share, or profit attributable to each share. It also reaffirmed high-single- to low-double-digit compound annual growth through 2027. Compound growth means each year builds on the previous year’s larger earnings base."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Reported earnings per share growth",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 23, 2026"
+       ],
+       [
+        "3-year CAGR target",
+        "2025–2027",
+        "",
+        "",
+        "Jul 23, 2026"
+       ],
+       [
+        "Capital plan",
+        "Year to Dec 2026",
+        "3,300",
+        "3,300",
+        "Jul 23, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Union Pacific keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is evidence that Vena’s promises have produced operational improvement. Union Pacific reported its best full-year safety performance in 2025, along with records for freight-car velocity and terminal dwell. In the second quarter of 2026, injury and derailment rates improved again, while terminal dwell fell 7% to 19.7 hours. Those results support progress, although they do not prove that the railroad will remain resilient during integration."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Union Pacific's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter showed real improvement, but fuel made the operating trend harder to see. Revenue rose 11.5%, while operating income rose 9.4%. Net income increased 6.2%, and diluted EPS rose 6.7%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,864",
+        "6,217",
+        "6,085",
+        "6,244",
+        "6,154",
+        "6,027",
+        "6,121",
+        "6,091"
+       ],
+       [
+        "Operating income",
+        "2,763",
+        "2,458",
+        "2,401",
+        "2,549",
+        "2,525",
+        "2,371",
+        "2,525",
+        "2,416"
+       ],
+       [
+        "Net income",
+        "1,993",
+        "1,701",
+        "1,848",
+        "1,788",
+        "1,876",
+        "1,626",
+        "1,762",
+        "1,671"
+       ],
+       [
+        "EPS, diluted",
+        "3.36",
+        "2.87",
+        "3.11",
+        "3.01",
+        "3.15",
+        "2.70",
+        "2.91",
+        "2.75"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Union Pacific's next results?",
+     "paragraphs": [
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next earnings report will test whether the raised outlook is becoming more credible. Union Pacific releases third-quarter results on October 22, 2026. Investors should watch traffic, revenue excluding fuel recovery and productivity after fuel and wage pressure."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 22, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "6,864"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.36"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,091",
+      "6,121",
+      "6,027",
+      "6,154",
+      "6,244",
+      "6,085",
+      "6,217",
+      "6,864"
+     ],
+     "EPS, diluted": [
+      "2.75",
+      "2.91",
+      "2.70",
+      "3.15",
+      "3.01",
+      "3.11",
+      "2.87",
+      "3.36"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/unp/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UNP&src=seo-earnings"
+  }
+ },
+ "short_name": "Union Pacific",
+ "first_memo_date": "2026-10-13T14:27:10Z"
+}

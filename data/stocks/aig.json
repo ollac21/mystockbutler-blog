@@ -1,0 +1,769 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AIG",
+ "slug": "aig",
+ "company": "American International Group, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-19T05:18:12Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 80.74,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 27,
+  "words": 16514,
+  "sources": 257
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "American International Group, or AIG, sells protection against financial risks that businesses and people cannot comfortably carry alone. Its business is a promise: if a covered event causes a covered loss, AIG will pay according to the policy."
+ },
+ "sources": [
+  {
+   "title": "AIG 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/5272/000000527226000023/aig-20251231.htm"
+  },
+  {
+   "title": "Investor presentation — FY2024",
+   "url": "https://www.aig.com/content/dam/aig/america-canada/us/documents/investor-relations/financial-result-presentation/aig-financial-results-presentation-4q24-and-full-year.pdf"
+  },
+  {
+   "title": "Investor presentation — FY2025",
+   "url": "https://www.aig.com/content/dam/aig/america-canada/us/documents/investor-relations/financial-result-presentation/aig-financial-results-presentation-4q25-and-full-year.pdf"
+  }
+ ],
+ "rivals": [
+  "RNR",
+  "AFG",
+  "CB",
+  "TRV",
+  "ALV.DE",
+  "CS.PA",
+  "ACGL",
+  "MUV2.DE",
+  "SREN.SW",
+  "WRB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AIG stock forecast",
+   "meta_description": "AIG stock forecast: weighted scenarios, underwriting drivers, cash generation and valuation in plain English.",
+   "opening": "AIG’s weighted path is an 8% loss by October 2027 or a 36% gain by October 2029. It hinges on repeatable underwriting and expense progress.",
+   "closing": "The full AIG memo also explains AIG’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AIG’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $72.49 in October 2027, an 8% loss including dividends. It is $104.04 in October 2029, a 36% gain including dividends. Bear, base, and bull probabilities are 25%, 55%, and 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 80.74, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 80.74, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "50.44 (-35 %)",
+        "44.71 (-40 %)",
+        "41.41 (-42 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "72.43 (-8 %)",
+        "85.83 (+11 %)",
+        "101.58 (+33 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "100.21 (+27 %)",
+        "138.11 (+77 %)",
+        "189.09 (+143 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "72.49 (-8 %)",
+        "86.00 (+11 %)",
+        "104.04 (+36 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each possible outcome the probability shown for that case."
+     }
+    },
+    {
+     "heading": "What has to go right for AIG, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case assumes weaker property pricing, casualty reserve strengthening and higher catastrophe losses. The bull case requires profitable renewals, Convex participation, expense progress and no material adverse claims development. AIG’s below-30% expense-ratio objective supports the bull case, but it remains an operating target rather than GAAP earnings guidance."
+      }
+     ],
+     "table": {
+      "title": "How it earns, and what can hurt it",
+      "unit": "US$ millions",
+      "caption": "How it earns, and what can hurt it (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net premiums earned",
+        "23,751",
+        "23,537",
+        "25,564",
+        "",
+        ""
+       ],
+       [
+        "Combined ratio (under 100% = underwriting profit)",
+        "90.1%",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Underwriting income, excluding Validus Re, CRS and AIG’s Travel business",
+        "2,332",
+        "1,872",
+        "1,888",
+        "1,724",
+        "947"
+       ],
+       [
+        "Core operating return on equity",
+        "11.1%",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The underwriting income figures leave out several businesses, so they are not the insurer’s total profit."
+     }
+    },
+    {
+     "heading": "How much cash does AIG really make?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Underwriting and investment income",
+       "text": "AIG’s investment income was $4,215 million in 2025. Net income was $3,096 million, while core earnings, AIG’s own measure, were $4,044 million. The gap matters because bond income, private-market valuations, taxes, corporate costs and transactions do not have the same repeatability."
+      },
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Continuing operations generated $3,314 million of operating cash in 2025, close to net income of $3,096 million. But premiums arrive before many claims, so current cash can precede a reserve shortfall. The next test is how assets and debt support those obligations."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net investment income",
+        "4,215",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Core earnings (company's measure)",
+        "4,044",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "3,096",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "1.75",
+        "1.56",
+        "1.40",
+        "1.28",
+        "1.28"
+       ]
+      ],
+      "note": "The company's core earnings are its own adjusted profit measure, so they differ from net income because certain items are treated differently."
+     }
+    },
+    {
+     "heading": "What does an investor pay for AIG today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, compares the share price with earnings per share. Reported earnings include every accounting gain and loss recorded during the period; core earnings remove items management considers unusual or unrelated to the continuing insurance operation. In second-quarter 2026, diluted earnings were $1.78 per share and adjusted earnings were $2.00. AIG’s lower core multiple is useful only if the excluded investment movements are temporary and the earnings left behind continue after the Corebridge sale."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "80.74"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "104.04 (+36 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "14.8x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.04x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 80.74,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "50.44 (-35 %)",
+       "44.71 (-40 %)",
+       "41.41 (-42 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "72.43 (-8 %)",
+       "85.83 (+11 %)",
+       "101.58 (+33 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "100.21 (+27 %)",
+       "138.11 (+77 %)",
+       "189.09 (+143 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "72.49 (-8 %)",
+       "86.00 (+11 %)",
+       "104.04 (+36 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aig/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AIG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "AIG dividend: payout, coverage and yield",
+   "meta_description": "AIG pays $1.75 per share; 2025 operating cash covered its dividend, while claims volatility could affect future growth.",
+   "opening": "AIG’s latest completed-year dividend was $1.75 per share, with a stated target of at least 10% growth through 2026. Operating cash covered the dividend: AIG generated $3,314 million of operating cash in 2025 against a $976 million payout.",
+   "closing": "The full memo also explains AIG’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does AIG pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends remain stable in the bear case, grow moderately in the base case and sustain management’s near-term growth objective in the bull case. Base dividends rise from $1.93 per share in 2027 to $2.13 in 2029. The bear case holds at $1.75, while the bull case reaches $2.56."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The latest completed-year dividend was $1.75, and the stated target is at least 10% growth through 2026. A 2025 payout of $976 million against $3,096 million of net income leaves room for increases, but claims volatility argues for slower growth after 2026."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "3,096",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "EPS, diluted",
+        "5.43",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "1.75",
+        "1.56",
+        "1.40",
+        "1.28",
+        "1.28"
+       ]
+      ],
+      "note": "The company's core earnings are its own adjusted profit measure, so they differ from net income because certain items are treated differently."
+     }
+    },
+    {
+     "heading": "Does AIG’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Continuing operations generated $3,314 million of operating cash in 2025, close to net income of $3,096 million. But premiums arrive before many claims, so current cash can precede a reserve shortfall. The next test is how assets and debt support those obligations."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "3,096",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends declared on common shares",
+        "976",
+        "1,002",
+        "997",
+        "982",
+        "1,083"
+       ],
+       [
+        "− Share buybacks",
+        "5,836",
+        "6,652",
+        "2,961",
+        "5,200",
+        "2,592"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "3,716",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "220.0%",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company paid out 220 percent of its profit because it returned more money through dividends and share buybacks than it earned that year."
+     }
+    },
+    {
+     "heading": "What could change AIG’s dividend?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if commercial property competition persists, casualty reserves strengthen or catastrophe losses push the combined ratio higher between 2027 and 2029. A persistently above-target expense ratio would weaken both earnings and repurchase capacity."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,600 (3,050 / 4,000)",
+        "3,850 (2,800 / 4,600)",
+        "4,100 (2,700 / 5,200)"
+       ],
+       [
+        "Shares (millions)",
+        "497 (514 / 479)",
+        "471 (501 / 433)",
+        "444 (489 / 385)"
+       ],
+       [
+        "Dividends per share",
+        "1.93 (1.75 / 2.12)",
+        "2.03 (1.75 / 2.33)",
+        "2.13 (1.75 / 2.56)"
+       ],
+       [
+        "Price to earnings",
+        "10.00 (8.50 / 12.00)",
+        "10.50 (8.00 / 13.00)",
+        "11.00 (7.50 / 14.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is AIG’s dividend yield at today’s price?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "American International Group (AIG) is an insurer, so its stock price rests on promises that may not be settled for years. At $80.74 on October 19, 2026, the shares look cheap on some measures, but the central question is what kind of earnings and capital that price assumes."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "13.8%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/aig/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AIG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AIG earnings date, guidance and results",
+   "meta_description": "AIG’s next results are expected on November 3, 2026; guidance and the key test are premium growth, expenses and reserve risk.",
+   "opening": "AIG’s next results are expected on November 3, 2026. The key thing to watch is whether AIG can turn premium growth into profitable underwriting while keeping reserve surprises contained.",
+   "closing": "The full memo also explains AIG’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has AIG guided for the year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "AIG’s weighted path is an 8% loss by October 2027 or a 36% gain by October 2029, hinging on repeatable underwriting and expense progress. Management targets at least 20.0% annual operating EPS growth compounded over 2025–2027 and Core Operating ROE of 10.0%–13.0% over that period. It also aims for a General Insurance expense ratio below 30.0% during 2025–2027 and dividend per share growth over 2025–2026."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Operating EPS CAGR",
+        "2025–2027",
+        "20.0%",
+        "",
+        "Aug 7, 2026"
+       ],
+       [
+        "Core Operating ROE",
+        "2025–2027",
+        "10.0%",
+        "13.0%",
+        "Aug 7, 2026"
+       ],
+       [
+        "GI Expense Ratio",
+        "2025–2027",
+        "",
+        "30.0%",
+        "Aug 7, 2026"
+       ],
+       [
+        "Dividends Per Share CAGR",
+        "2025–2026",
+        "10.0%",
+        "",
+        "Aug 7, 2026"
+       ]
+      ],
+      "note": "The minimum targets for operating earnings per share growth and dividends per share growth are floors, while the general insurance expense ratio must stay below, not equal to, 30%."
+     }
+    },
+    {
+     "heading": "Did AIG keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 115,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "AIG promised core operating return on equity of 10%–13% during 2025–2027 and an expense ratio below 30% by the end of that period. It delivered 11.1% Core Operating ROE in 2025, while its expense ratio was 31.1%. Andersen reaffirmed those commitments in August 2026, so they are obligations he inherits rather than achievements he can already claim."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have AIG’s revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The combined ratio improved to 89.0% from 89.3%, and core earnings rose to $1,069 million. Net income fell to $948 million, while diluted EPS fell to $1.78. The main weakness was investment-related, not an underwriting collapse."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Net premiums written",
+        "7,516",
+        "5,599",
+        "6,039",
+        "6,230",
+        "6,880",
+        "4,526",
+        "6,002",
+        "6,295"
+       ],
+       [
+        "Combined ratio",
+        "89.0%",
+        "87.3%",
+        "88.8%",
+        "86.8%",
+        "89.3%",
+        "95.8%",
+        "",
+        ""
+       ],
+       [
+        "Core earnings (company's measure)",
+        "1,069",
+        "1,146",
+        "1,072",
+        "1,226",
+        "1,044",
+        "702",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "948",
+        "763",
+        "735",
+        "519",
+        "1,144",
+        "698",
+        "",
+        ""
+       ],
+       [
+        "EPS, diluted",
+        "1.78",
+        "1.41",
+        "1.35",
+        "0.93",
+        "1.98",
+        "1.16",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company’s core earnings are its own adjusted profit measure, so they differ from net income because they exclude or rearrange some items."
+     }
+    },
+    {
+     "heading": "What should I watch in AIG’s next results?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The nearest checkpoint is AIG’s November 3, 2026 results and November 4 call. Investors should compare premium growth, expenses and the accident-year underwriting result."
+      },
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Year-end 2026 should reveal more about Everest renewals and expenses. Convex participation then rises in 2027 and again in 2028. The key is to keep current underwriting, old-claim revisions and accounting recognition separate. That discipline leads to AIG’s operational bet on artificial intelligence."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.78"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "",
+      "",
+      "1.16",
+      "1.98",
+      "0.93",
+      "1.35",
+      "1.41",
+      "1.78"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/aig/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AIG&src=seo-earnings"
+  }
+ },
+ "short_name": "AIG",
+ "first_memo_date": "2026-10-19T05:18:12Z"
+}

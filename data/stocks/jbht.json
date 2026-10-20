@@ -1,0 +1,806 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "JBHT",
+ "slug": "jbht",
+ "company": "J.B. Hunt Transport Services, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T05:32:57Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 235.31,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2027-01-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 27,
+  "words": 16326,
+  "sources": 222
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "J.B. Hunt sells managed freight movement to businesses, using trucks, trains, equipment and outside carriers. Its business is to coordinate the journey, then keep the part of the customer’s payment left after the journey’s costs."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, segment results",
+   "url": "https://www.sec.gov/Archives/edgar/data/728535/000143774926005294/jbht20251231_10k.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/728535/000143774925004736/jbht20241231d_10k.htm"
+  },
+  {
+   "title": "2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/728535/000143774923004530/jbht20221231_10k.htm"
+  }
+ ],
+ "rivals": [
+  "HUBG",
+  "SNDR",
+  "KNX",
+  "WERN",
+  "LSTR",
+  "CHRW",
+  "XPO",
+  "RXO",
+  "TFII",
+  "ARCB",
+  "ULH"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "J.B. Hunt stock forecast",
+   "meta_description": "J.B. Hunt stock forecast: scenarios, freight-cycle drivers, real free cash flow, and the valuation behind the shares.",
+   "opening": "The weighted forecast points to $270.41 at October 2029, including dividends. It hinges on turning repricing and maturing dedicated fleets into durable cash generation.",
+   "closing": "The full memo also explains J.B. Hunt's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could J.B. Hunt's shares go?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case ends at $175.08. The bull case ends at $419.83, against $235.31 today. The base case is assigned a 52% probability. The bear case receives 30%, and the bull case 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 235.31, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 235.31, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "185.09 (-21 %)",
+        "180.24 (-22 %)",
+        "175.08 (-23 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "276.45 (+18 %)",
+        "275.38 (+19 %)",
+        "273.69 (+19 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "345.83 (+48 %)",
+        "393.64 (+69 %)",
+        "419.83 (+81 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "261.53 (+12 %)",
+        "268.13 (+16 %)",
+        "270.41 (+17 %)"
+       ]
+      ],
+      "note": "The weighted row is a probability-based average of the bear, base, and bull cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for J.B. Hunt, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case begins at $830M and ends at $950M because costs may rise before customer rates reset. The bull case begins at $1,120M and ends at $1,324M because firmer pricing, profitable intermodal conversions, and cost savings could improve conversion. The latest quarter argues for caution: revenue rose 20.4%, but operating income rose only 1.8% and margin fell to 6.7%."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case assumes gradual repricing and maturing DCS fleets. It reaches $276.45 first and $273.69 last. Its 52% probability is highest because recovery is credible, but the latest margin compression argues against a rapid return to peak-cycle profitability."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does J.B. Hunt really make?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Working capital supplied 171,650 of cash in 2025. Removing that temporary release leaves 775,935 before the stock-compensation deduction. Stock compensation does not use current cash, but it transfers value to employees and dilutes shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,678,272",
+        "1,483,156",
+        "1,744,618",
+        "1,776,882",
+        "1,223,898"
+       ],
+       [
+        "− Capital spending",
+        "730,687",
+        "865,373",
+        "1,862,431",
+        "1,540,796",
+        "947,563"
+       ],
+       [
+        "**= Free cash flow**",
+        "947,585",
+        "617,783",
+        "-117,813",
+        "236,086",
+        "276,335"
+       ],
+       [
+        "− Stock pay",
+        "71,753",
+        "65,686",
+        "79,189",
+        "77,535",
+        "61,505"
+       ],
+       [
+        "**= Real free cash flow**",
+        "875,832",
+        "552,097",
+        "-197,002",
+        "158,551",
+        "214,830"
+       ]
+      ],
+      "note": "The cash figures are built from quarterly reports added together, so each yearly number may not be a single number reported for the whole year."
+     }
+    },
+    {
+     "heading": "What does an investor pay for J.B. Hunt today?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, divides the share price by profit per share. Its trailing P/E reflects what the company recently earned; its lower forward P/E reflects what investors expect it to earn next. The gap is therefore a recovery claim, not a guarantee."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "235.31"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "33.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "23.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": "The next-12-month price-to-earnings number uses analysts’ predicted profit, so it is an estimate rather than a fact."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "235.31"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "270.41 (+17 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 235.31,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "185.09 (-21 %)",
+       "180.24 (-22 %)",
+       "175.08 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "276.45 (+18 %)",
+       "275.38 (+19 %)",
+       "273.69 (+19 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "345.83 (+48 %)",
+       "393.64 (+69 %)",
+       "419.83 (+81 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "261.53 (+12 %)",
+       "268.13 (+16 %)",
+       "270.41 (+17 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/jbht/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=JBHT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "J.B. Hunt dividend",
+   "meta_description": "J.B. Hunt pays $1.80 per share annually; 2025 free cash flow covered dividends, but buybacks exceeded the cash generated.",
+   "opening": "J.B. Hunt's current annualized dividend is $1.80 per share. In 2025, J.B. Hunt's $947,585 thousand of free cash flow covered its $171,048 thousand of dividends, although buybacks lifted total shareholder payments to $1,094,340 thousand.",
+   "closing": "The full J.B. Hunt memo also covers its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does J.B. Hunt pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends rise from $1.84 per share to $2.00, with $1.92 in the middle year. The bear case holds the current annualized rate at $1.80. The bull case reaches $2.25, supported by stronger earnings and cash generation. The board has raised dividends through the downturn, but its policy remains subject to liquidity, earnings, and capital needs."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.12",
+        "5.56",
+        "6.97",
+        "9.21",
+        "7.14"
+       ],
+       [
+        "Free cash flow per share",
+        "9.70",
+        "6.01",
+        "-1.13",
+        "2.24",
+        "2.59"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.75",
+        "1.71",
+        "1.66",
+        "1.58",
+        "1.17"
+       ],
+       [
+        "− Share buybacks, per share",
+        "9.45",
+        "5.00",
+        "1.53",
+        "2.85",
+        "1.42"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "",
+        "",
+        "0.00"
+       ]
+      ],
+      "note": "The real free cash flow per share is lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does J.B. Hunt's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Equipment sales and borrowing helped bridge the gap. That can be sensible during a temporary investment cycle, but it leaves less cash for replacement equipment or debt repayment. In 2025, free cash flow was $947,585 thousand. Buybacks were $923,292 thousand. Dividends were $171,048 thousand, bringing total shareholder payments to $1,094,340 thousand. Asset-sale receipts of $155,913 thousand helped fund the difference."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "947,585",
+        "617,783",
+        "-117,813",
+        "236,086",
+        "276,335"
+       ],
+       [
+        "− Dividends paid",
+        "171,048",
+        "175,543",
+        "173,898",
+        "166,724",
+        "124,442"
+       ],
+       [
+        "− Share buybacks",
+        "923,292",
+        "513,924",
+        "159,576",
+        "300,030",
+        "151,720"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "173"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "146,755",
+        "71,684",
+        "451,287",
+        "230,668",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "115.5%",
+        "111.6%",
+        "not meaningful",
+        "197.7%",
+        "99.9%"
+       ]
+      ],
+      "note": "The company paid shareholders more than it generated in free cash, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change J.B. Hunt's dividend?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The first test arrives by October 2027. Slower revenue growth, further margin deterioration, or costs rising ahead of repricing would move the forecast toward the bear case. Recent truck tonnage declines show why higher rates still need confirmation from demand."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is J.B. Hunt's dividend yield at today's price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "235.31"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": "The next-12-month price-to-earnings number uses analysts’ predicted profit, so it is an estimate rather than a fact."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.75"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.17",
+      "1.58",
+      "1.66",
+      "1.71",
+      "1.75"
+     ],
+     "Real free cash flow per share": [
+      "2.02",
+      "1.51",
+      "-1.89",
+      "5.37",
+      "8.97"
+     ],
+     "Free cash flow per share": [
+      "2.59",
+      "2.24",
+      "-1.13",
+      "6.01",
+      "9.70"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/jbht/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=JBHT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "J.B. Hunt earnings: guidance and results",
+   "meta_description": "J.B. Hunt reports next on January 21, 2027; guidance covers capital spending, tax, and amortization, while pricing and fleet maturity matter.",
+   "opening": "J.B. Hunt's next results are expected on January 21, 2027. Watch whether stronger pricing covers fleet startup costs and claims as Dedicated fleets mature.",
+   "closing": "The full memo also answers how J.B. Hunt makes money, who it competes with, how management is run, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has J.B. Hunt guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s 2026 net capital expenditure guidance is $600 million to $800 million. The annual tax-rate assumption is 24%. Finite-lived intangible amortization guidance is $19.7 million for 2026. It is $15.6 million for 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "2026 full year annual tax rate",
+        "Year to Dec 2026",
+        "24.0%",
+        "24.0%",
+        "Oct 15, 2026"
+       ],
+       [
+        "net capital expenditures",
+        "Year to Dec 2026",
+        "600",
+        "800",
+        "Jul 24, 2026"
+       ],
+       [
+        "amortization expense for our finite-lived intangible assets (2026)",
+        "Year to Dec 2026",
+        "19.7",
+        "19.7",
+        "Feb 24, 2026"
+       ],
+       [
+        "amortization expense for our finite-lived intangible assets (2027)",
+        "Year to Dec 2027",
+        "15.6",
+        "15.6",
+        "Feb 24, 2026"
+       ]
+      ],
+      "note": "Net capital expenditures are the money spent on equipment after subtracting money received from selling or trading in old equipment."
+     }
+    },
+    {
+     "heading": "Has J.B. Hunt kept its promises?",
+     "paragraphs": [
+      {
+       "n": 114,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management identified US$100 million of annual costs to remove in July 2025. The company recorded US$45 million removed during the second half of that year and a US$100 million annual pace by year-end. An annual pace is not cash already saved: it estimates what the current saving would equal over a full year. A later reported pace reached US$135 million by August 2026, even as management described fresh driver, fuel, and claims pressures."
+      },
+      {
+       "n": 115,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The evidence points to real alignment and some execution, not a blank cheque. The stock-pay table shows compensation, buybacks, share counts, and the calculated changes across the five years."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have J.B. Hunt's revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter pattern supports recovery, but not yet a full turn. Quarterly tax timing also affected the comparison, with the effective rate at 25.5% against 24.0% a year earlier. Quarterly operating cash and free cash flow both declined year on year, even though free cash flow remained positive."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,676,807",
+        "3,495,296",
+        "3,056,491",
+        "3,096,626",
+        "3,052,897",
+        "2,928,181",
+        "2,921,392",
+        "3,146,348"
+       ],
+       [
+        "Operating income",
+        "247,093",
+        "259,452",
+        "207,048",
+        "246,457",
+        "242,657",
+        "197,274",
+        "178,680",
+        "207,039"
+       ],
+       [
+        "Net income",
+        "172,418",
+        "181,034",
+        "141,553",
+        "181,070",
+        "170,849",
+        "128,624",
+        "117,740",
+        "155,454"
+       ],
+       [
+        "EPS, diluted",
+        "1.82",
+        "1.91",
+        "1.49",
+        "1.90",
+        "1.76",
+        "1.31",
+        "1.17",
+        "1.53"
+       ]
+      ],
+      "note": "The September 2026 free cash flow includes money received from selling equipment, while the other quarters do not, so that quarter is not directly comparable."
+     }
+    },
+    {
+     "heading": "What should you watch in J.B. Hunt's next results?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results must show that stronger pricing can cover fleet startup costs and claims, while tax appeals remain a separate uncertainty."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 21, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ thousands)",
+     "value": "3,676,807"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.82"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,146,348",
+      "2,921,392",
+      "2,928,181",
+      "3,052,897",
+      "3,096,626",
+      "3,056,491",
+      "3,495,296",
+      "3,676,807"
+     ],
+     "EPS, diluted": [
+      "1.53",
+      "1.17",
+      "1.31",
+      "1.76",
+      "1.90",
+      "1.49",
+      "1.91",
+      "1.82"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/jbht/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=JBHT&src=seo-earnings"
+  }
+ },
+ "short_name": "J.B. Hunt",
+ "first_memo_date": "2026-10-16T05:32:57Z"
+}

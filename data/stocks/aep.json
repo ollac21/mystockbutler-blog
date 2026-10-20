@@ -1,0 +1,826 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AEP",
+ "slug": "aep",
+ "company": "American Electric Power Company, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T21:13:19Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 127.14,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 26,
+  "words": 17640,
+  "sources": 230
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "American Electric Power (AEP) is an electric utility: it sells electricity, the ability to supply it when needed, and access to the wires that carry it. The dollar comes in through regulated bills, wholesale contracts and market sales, then goes out to fuel, workers, maintenance, financing and construction."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/4904/000000490426000013/aep-20251231.htm"
+  },
+  {
+   "title": "AEP 2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/4904/000000490424000020/aep-20231231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/4904/000000490426000011/a4q20258kpressreleaseex991.htm"
+  }
+ ],
+ "rivals": [
+  "DUK",
+  "SO",
+  "D",
+  "EXC",
+  "XEL",
+  "ETR",
+  "PPL",
+  "FE",
+  "CNP",
+  "DTE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AEP stock forecast",
+   "meta_description": "AEP stock forecast: weighted scenarios, key drivers, free cash flow and valuation explained in plain English.",
+   "opening": "The weighted forecast places AEP at $125.54 in October 2029. It hinges on large-load projects energizing on schedule and regulators allowing timely recovery.",
+   "closing": "The full memo also explains AEP’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AEP’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast places AEP at $117.13 in October 2027, $119.44 in October 2028 and $125.54 in October 2029, producing total returns of negative 5%, roughly flat and positive 8% from today. Today’s share price is $127.14."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 127.14, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 127.14, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "102.55 (-16 %)",
+        "94.99 (-19 %)",
+        "89.56 (-21 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "120.54 (-2 %)",
+        "124.32 (+4 %)",
+        "131.65 (+13 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "130.47 (+6 %)",
+        "143.94 (+20 %)",
+        "164.24 (+39 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "117.13 (-5 %)",
+        "119.44 (+0 %)",
+        "125.54 (+8 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a separate fourth forecast."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for AEP?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes contracted demand converts slowly while AEP builds ahead of customers. Delayed recovery, affordability pressure, debt and equity issuance weaken earnings per share and compress the multiple. The price falls from $102.55 in October 2027 to $89.56 by October 2029. Its 30% probability reflects capital spending above operating cash and debt of $52,836 million, but regulated assets prevent this from becoming a collapse scenario."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case assumes large-load projects energize on schedule, transmission investment enters service and regulators allow timely recovery. Better cash generation limits dilution, earnings reach the upper end of guidance and the multiple expands gradually. The price rises from $130.47 to $164.24. Its 20% probability reflects the real upside from contracted load and rate-base growth, but execution must succeed across customers, construction and regulation."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does AEP really make?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based compensation is another claim on shareholders. Employees receive value even when the company does not pay that value in cash immediately, and future share issuance can dilute existing owners. The specialist therefore asks whether operating cash will cover construction, dividends and debt service without repeated external financing."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "6,944",
+        "6,804",
+        "5,012",
+        "5,288.0",
+        "3,839.9"
+       ],
+       [
+        "− Capital spending",
+        "12,036",
+        "8,170",
+        "7,661",
+        "7,979.7",
+        "6,531.3"
+       ],
+       [
+        "**= Free cash flow**",
+        "-5,092",
+        "-1,366",
+        "-2,649",
+        "-2,691.7",
+        "-2,691.4"
+       ],
+       [
+        "− Stock pay",
+        "53",
+        "53",
+        "51",
+        "63.3",
+        "61.1"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-5,145",
+        "-1,419",
+        "-2,700",
+        "-2,755",
+        "-2,752.5"
+       ]
+      ],
+      "note": "The company is spending more cash on equipment and buildings than its daily business brings in, so free cash flow is negative."
+     }
+    },
+    {
+     "heading": "What does an investor pay for AEP today?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, tells investors how much they pay for each dollar of profit. AEP’s forward P/E is lower than its trailing P/E because the price assumes earnings will grow. The forward multiple uses adjusted operating earnings, which exclude items management considers unrelated to ongoing performance. The judgment still depends on whether regulators allow AEP to recover its costs and earn a return."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "127.14"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-7.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-7.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": "The negative free cash flow yield means the company spent more cash than it generated over the latest year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "127.14"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "125.54 (+8 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-7.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 127.14,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "102.55 (-16 %)",
+       "94.99 (-19 %)",
+       "89.56 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "120.54 (-2 %)",
+       "124.32 (+4 %)",
+       "131.65 (+13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "130.47 (+6 %)",
+       "143.94 (+20 %)",
+       "164.24 (+39 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "117.13 (-5 %)",
+       "119.44 (+0 %)",
+       "125.54 (+8 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aep/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AEP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "AEP dividend",
+   "meta_description": "AEP's dividend, cash coverage, planned increases, risks and yield are explained in plain English.",
+   "opening": "AEP currently pays $0.95 per quarter per share, while operating cash remains below capital spending. AEP's dividend sits alongside construction, debt service and the need for outside financing.",
+   "closing": "The full AEP memo also covers AEP's business, rivals, management plans and risks.",
+   "blocks": [
+    {
+     "heading": "How much does AEP pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise modestly in the base case from the current $0.95 quarterly rate to $3.88, $3.96 and $4.04 across the forecast windows. The increases follow the recent $0.02 quarterly step and management’s 50%–60% payout target. The bear case freezes annual dividends at $3.80 because debt and construction needs remain high; the bull case reaches $3.96, $4.12 and $4.28 because stronger earnings support faster increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count change",
+      "caption": "What one share gets (US$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.66",
+        "5.58",
+        "4.24",
+        "4.49",
+        "4.96"
+       ],
+       [
+        "Free cash flow per share",
+        "-9.47",
+        "-2.57",
+        "-5.09",
+        "-5.24",
+        "-5.36"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.74",
+        "3.57",
+        "3.37",
+        "3.17",
+        "3.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "",
+        "0.00",
+        "0.00",
+        "0.00"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does AEP's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends remained a continuing claim on cash, while AEP used no share buybacks in the years shown. The money therefore bought a more regulated asset base and more generating capacity, but it did not yet prove that the returns will outweigh the financing burden. AEP’s plan has advanced; whether it works will be decided by the earnings those assets produce over time."
+      },
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based compensation is another claim on shareholders. Employees receive value even when the company does not pay that value in cash immediately, and future share issuance can dilute existing owners. The specialist therefore asks whether operating cash will cover construction, dividends and debt service without repeated external financing."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-5,092",
+        "-1,366",
+        "-2,649",
+        "-2,691.7",
+        "-2,691.4"
+       ],
+       [
+        "− Dividends paid",
+        "2,008",
+        "1,898",
+        "1,752",
+        "1,628.7",
+        "1,507.7"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "7,208",
+        "",
+        "4,409",
+        "4,336.9",
+        "4,210.9"
+       ],
+       [
+        "− Acquisitions",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ]
+      ],
+      "note": "The company paid dividends even when its free cash flow was negative, so it had to use savings or new borrowing."
+     }
+    },
+    {
+     "heading": "What could change AEP's dividend?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if load projects are delayed or resized while construction continues, or if affordability pressure delays recovery during 2027–2029. Debt and share issuance running ahead of earnings would add interest expense and dilution, with the clearest effect by October 2029."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,686 (3,384 / 3,785)",
+        "3,962 (3,486 / 4,125)",
+        "4,259 (3,591 / 4,507)"
+       ],
+       [
+        "Shares (millions)",
+        "566 (578 / 566)",
+        "590 (606 / 588)",
+        "598 (622 / 590)"
+       ],
+       [
+        "Dividends per share",
+        "3.88 (3.80 / 3.96)",
+        "3.96 (3.80 / 4.12)",
+        "4.04 (3.80 / 4.28)"
+       ],
+       [
+        "Price to earnings",
+        "18.50 (17.50 / 19.50)",
+        "18.50 (16.50 / 20.50)",
+        "18.50 (15.50 / 21.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is AEP's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast places AEP at $117.13 in October 2027, $119.44 in October 2028 and $125.54 in October 2029, producing total returns of negative 5%, roughly flat and positive 8% from today. Today’s share price is $127.14."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.74"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-7.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-7.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count change",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.00",
+      "3.17",
+      "3.37",
+      "3.57",
+      "3.74"
+     ],
+     "Real free cash flow per share": [
+      "-5.49",
+      "-5.37",
+      "-5.19",
+      "-2.67",
+      "-9.57"
+     ],
+     "Free cash flow per share": [
+      "-5.36",
+      "-5.24",
+      "-5.09",
+      "-2.57",
+      "-9.47"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/aep/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AEP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AEP earnings: guidance and next results",
+   "meta_description": "AEP reports next on October 28, 2026; guidance points to growth, while load conversion and cost recovery remain key.",
+   "opening": "AEP's next results are expected on October 28, 2026. Watch whether AEP's contracted load becomes energized and paying demand.",
+   "closing": "The full AEP memo also covers AEP's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has AEP guided for the year?",
+     "paragraphs": [
+      {
+       "n": 189,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management promises annual operating-earnings growth of 7%–9% through 2030. It expects a compound annual growth rate greater than 9% through 2030, based on the 2025 guidance midpoint. Operating EPS is its selected measure of recurring performance; GAAP earnings also include items such as impairments or asset-sale effects. A higher annual target after the first half of 2026 matters only if ordinary utility operations can support it."
+      },
+      {
+       "n": 190,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "AEP expects rate base to grow nearly 11% annually through 2030. It targets a 50%–60% payout ratio and a 10%–13% total annual shareholder return, but projects must still be approved, completed and placed in rates."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Operating EPS Guidance (US$ per share) (2026)",
+        "Year to Dec 2026",
+        "6.25",
+        "6.55",
+        "Jul 30, 2026"
+       ],
+       [
+        "Estimated GAAP EPS Guidance (US$ per share) (2026)",
+        "Year to Dec 2026",
+        "6.16",
+        "6.46",
+        "Jul 30, 2026"
+       ],
+       [
+        "Debt to Capitalization (GAAP)",
+        "2026–2030",
+        "60.0%",
+        "63.0%",
+        "Sep 9, 2026"
+       ],
+       [
+        "FFO/Debt (S&P and Moody's)",
+        "2026–2030",
+        "14.0%",
+        "15.0%",
+        "Sep 9, 2026"
+       ],
+       [
+        "Expected operating earnings CAGR",
+        "2025–2030",
+        "9.0%",
+        "",
+        "Sep 9, 2026"
+       ],
+       [
+        "Target payout ratio range",
+        "2026–2030",
+        "50.0%",
+        "60.0%",
+        "Sep 9, 2026"
+       ]
+      ],
+      "note": "The two earnings-per-share forecasts differ because the operating figure leaves out certain special items, while the standard accounting figure includes them."
+     }
+    },
+    {
+     "heading": "Has AEP kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Trade coverage put Fehrman’s compensation at $36.6 million in 2025. It attributed $29.3 million to stock awards. AEP also aims to execute a $78 billion five-year capital plan and reiterated annual operating-earnings growth of 7%–9% on its Q2 2026 call. Those are targets, not delivered results. Shareholders can vote on pay, but AEP’s say-on-pay vote is advisory and cannot force the board to change the plan."
+      },
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The fairest verdict is not that AEP’s leaders are automatically on shareholders’ side, or against them. It is that investors must watch whether independent directors challenge management, whether new financing earns its cost, and whether pay follows reliable performance rather than promises."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has AEP's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue increased in the second quarter of 2026, while reported net income and diluted EPS fell. The comparison is distorted because the 2025 quarter included the $499 million FERC-related benefit connected largely with earlier years."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,445",
+        "6,020",
+        "5,314",
+        "6,010.4",
+        "5,087",
+        "5,463",
+        "4,696",
+        "5,420.1"
+       ],
+       [
+        "Operating income",
+        "1,247",
+        "1,360",
+        "1,114.3",
+        "1,521.4",
+        "1,399",
+        "1,284",
+        "1,096",
+        "1,351.5"
+       ],
+       [
+        "Net income",
+        "713",
+        "874",
+        "582",
+        "972.0",
+        "1,226",
+        "800",
+        "664",
+        "959.6"
+       ],
+       [
+        "EPS, diluted",
+        "1.30",
+        "1.60",
+        "1.07",
+        "1.81",
+        "2.29",
+        "1.50",
+        "1.24",
+        "1.80"
+       ]
+      ],
+      "note": "The large negative free cash flow does not necessarily mean the business is losing money: it spent much more cash on equipment, buildings, nuclear fuel, and purchased generation assets than it brought in from daily operations."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,445"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.30"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,420.1",
+      "4,696",
+      "5,463",
+      "5,087",
+      "6,010.4",
+      "5,314",
+      "6,020",
+      "5,445"
+     ],
+     "EPS, diluted": [
+      "1.80",
+      "1.24",
+      "1.50",
+      "2.29",
+      "1.81",
+      "1.07",
+      "1.60",
+      "1.30"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/aep/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AEP&src=seo-earnings"
+  }
+ },
+ "short_name": "AEP",
+ "first_memo_date": "2026-10-17T21:13:19Z"
+}

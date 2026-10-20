@@ -1,0 +1,793 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "IBM",
+ "slug": "ibm",
+ "company": "International Business Machines Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T01:31:55Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 227.02,
+ "price_date": "2026-10-12T20:00:03Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 26,
+  "words": 17002,
+  "sources": 276
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "IBM sells software, computing systems and expertise that organizations use to keep essential work running. Its business is a chain: customers pay for access, equipment, services or financing, while IBM spends on people, development, delivery, support and the money needed to fund sales."
+ },
+ "sources": [
+  {
+   "title": "IBM 2025 Annual Report",
+   "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000027/ibmars2025.pdf"
+  },
+  {
+   "title": "IBM 2023 Annual Report",
+   "url": "https://www.sec.gov/Archives/edgar/data/51143/000110465924032653/tm2326704d5_arss.pdf"
+  },
+  {
+   "title": "IBM second-quarter filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000078/ibm-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "GOOGL",
+  "AMZN",
+  "AVGO",
+  "CSCO",
+  "MSFT",
+  "ORCL",
+  "CRM",
+  "SAP",
+  "ACN",
+  "DELL",
+  "HPE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "IBM stock forecast",
+   "meta_description": "IBM stock forecast: a weighted near-term decline before a modest three-year gain, depending on deal conversion and durable software growth.",
+   "opening": "IBM’s weighted price is $197.81 in October 2027. It hinges on deal conversion and durable software growth.",
+   "closing": "The full memo also explains IBM’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could IBM’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "IBM’s weighted outcome is a modest decline before a small three-year gain. The weighted price is $197.81 in October 2027, a 10% loss including dividends. It reaches $204.82 in October 2028, a 4% loss. By October 2029, it reaches $212.75, a 3% gain."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The range is wide because execution and valuation can move together. October 2029 spans $117.55 in the bear case to $367.52 in the bull case, against today’s $227.02. The base case has the highest probability at 50%. The bear case has 30%. The bull case has 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 227.02, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 227.02, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "145.89 (-33 %)",
+        "131.46 (-36 %)",
+        "117.55 (-39 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "203.45 (-7 %)",
+        "205.96 (-3 %)",
+        "207.96 (+1 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "261.61 (+18 %)",
+        "311.98 (+44 %)",
+        "367.52 (+71 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "197.81 (-10 %)",
+        "204.82 (-4 %)",
+        "212.75 (+3 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for IBM, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case uses revenue of $71,500 million in 2027 and $72,500 million in 2028. Revenue reaches $73,500 million in 2029, while margins fall from 15.0% to 14.2%. Earnings therefore decline from $10,725 million to $10,437 million. The bull case uses revenue of $74,500 million in 2027 and $79,000 million in 2028, reaching $83,500 million in 2029. Margins rise from 16.7% to 17.7%, producing earnings from $12,442 million to $14,780 million. Flat organic software growth, weaker consulting signings and a difficult post-launch IBM Z comparison support the downside; paid AI deployments, renewals and cross-selling support the upside."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes delayed deals remain weak, the z17 launch creates a difficult comparison and flat organic software growth combines with acquisition costs. Debt and cash demands then pressure both earnings and valuation. The price falls to $145.89 in October 2027 and $117.55 in October 2029, including dividends. Its probability is 30% because weak software growth, lower consulting signings and the post-launch IBM Z slowdown create several independent failure points."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does IBM really make?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "IBM therefore removes changes in Financing receivables from its own free-cash-flow calculation. That makes its measure useful for judging the non-lending businesses, but it does not create extra cash or eliminate the money committed to customer loans."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "13,193",
+        "13,445",
+        "13,931",
+        "10,435",
+        "11,184"
+       ],
+       [
+        "− Capital spending",
+        "1,738",
+        "1,685",
+        "1,810",
+        "1,972",
+        ""
+       ],
+       [
+        "**= Free cash flow**",
+        "11,455",
+        "11,760",
+        "12,121",
+        "8,463",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "1,715",
+        "1,311",
+        "1,133",
+        "987",
+        "919"
+       ],
+       [
+        "**= Real free cash flow**",
+        "9,740",
+        "10,449",
+        "10,988",
+        "7,476",
+        ""
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "14,700",
+        "12,700",
+        "11,200",
+        "9,300",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for IBM today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "227.02"
+       ],
+       [
+        "Market value (calculated)",
+        "213,883.35"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "267,738.35"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "20.2x"
+       ],
+       [
+        "Price to book (calculated)",
+        "6.2x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "227.02"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "212.75 (+3 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 227.02,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "145.89 (-33 %)",
+       "131.46 (-36 %)",
+       "117.55 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "203.45 (-7 %)",
+       "205.96 (-3 %)",
+       "207.96 (+1 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "261.61 (+18 %)",
+       "311.98 (+44 %)",
+       "367.52 (+71 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "197.81 (-10 %)",
+       "204.82 (-4 %)",
+       "212.75 (+3 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ibm/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IBM&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "IBM dividend: payments, cash cover and yield",
+   "meta_description": "IBM's dividend, cash coverage, forecast changes and current yield in plain English.",
+   "opening": "IBM's dividend starts at the $1.69 quarterly rate, or $6.76 annualized. IBM's 2025 shareholder payments were 63.5% of its cash measure, while acquisitions pushed spending beyond internally generated cash.",
+   "closing": "The full IBM memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does IBM pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends start from the $1.69 quarterly rate, or $6.76 annualized. The base case reaches $6.80 in 2027 and $7.12 in 2029, close to the recent modest growth pattern. The bear case freezes the dividend at $6.76. The bull case reaches $7.56 as cash conversion improves. The long payment record supports increases, but debt, acquisitions and flat first-half free cash flow limit them."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Dividends per share",
+        "6.80 (6.76 / 6.84)",
+        "6.96 (6.76 / 7.20)",
+        "7.12 (6.76 / 7.56)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is IBM's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends were the steadiest destination. Cash dividends rose from $5,869 million in 2021 to $6,255 million in 2025. Shareholder payments reached $7,273 million in 2025, or 63.5% of the cash measure. IBM also suspended discretionary share repurchases after the Red Hat acquisition; the $1,018 million classified as buybacks in 2025 represented employee tax withholding, not a return to market purchases."
+      },
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Acquisitions pushed spending beyond internally generated cash. IBM spent $8,294 million on acquisitions in 2025 alongside $7,273 million of shareholder payments, so it issued debt while preserving the dividend. Cash and short-term investments rose from $7,250 million in 2021 to $14,417 million in 2025. Total debt also rose from $51,704 million to $61,260 million. IBM kept liquidity, but did not achieve sustained net-debt reduction."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "11,455",
+        "11,760",
+        "12,121",
+        "8,463",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "6,255",
+        "6,147",
+        "6,040",
+        "5,948",
+        "5,869"
+       ],
+       [
+        "− Share buybacks",
+        "1,018",
+        "651",
+        "402",
+        "407",
+        "319"
+       ],
+       [
+        "− Acquisitions",
+        "8,294",
+        "3,289",
+        "5,082",
+        "2,348",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "7,273",
+        "6,798",
+        "6,442",
+        "6,355",
+        "6,188"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "63.5%",
+        "57.8%",
+        "53.1%",
+        "75.1%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is IBM's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The 5.4% free-cash-flow yield measures cash generation against market value. IBM’s definition excludes changes in financing receivables, and selling receivables can bring cash forward. The 3.0% dividend yield is part of that cash story, not an extra return to add to it; dividends distribute cash the business has generated."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "227.02"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "6.59"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "6.49",
+      "6.52",
+      "6.55",
+      "6.56",
+      "6.59"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "8.19",
+      "11.92",
+      "11.15",
+      "10.27"
+     ],
+     "Free cash flow per share": [
+      "",
+      "9.28",
+      "13.15",
+      "12.55",
+      "12.07"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ibm/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IBM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "IBM earnings date and guidance",
+   "meta_description": "IBM’s October 21, 2026 results will test its guidance, revenue trend and software growth.",
+   "opening": "IBM’s next results are expected on October 21, 2026. Watch whether software growth, z17 orders and cash improve.",
+   "closing": "The full memo also answers how IBM’s business works, who its rivals are, how management operates, and what risks could shape its future.",
+   "blocks": [
+    {
+     "heading": "What has IBM guided for the full year?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "IBM expects stronger sales in the second half while still promising more free cash flow. On July 22, management reduced its full-year revenue-growth forecast to 4.0%–5.0% at constant currency but kept its goal of increasing free cash flow by $1 billion."
+      },
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "IBM therefore needs more than customer interest. Its 6.0%–8.0% software-growth range depends on turning that pipeline into contracts, while its promise of 100 basis points of operating pre-tax margin expansion depends partly on productivity. The table gathers the revenue, currency, cash-flow, software-growth and margin guidance."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Full-year constant currency revenue growth (%)",
+        "Year to Dec 2026",
+        "4.0%",
+        "5.0%",
+        "Jul 22, 2026"
+       ],
+       [
+        "Full-year free cash flow year-over-year increase",
+        "Year to Dec 2026",
+        "1",
+        "1",
+        "Jul 22, 2026"
+       ],
+       [
+        "Software revenue growth (%)",
+        "Year to Dec 2026",
+        "6.0%",
+        "8.0%",
+        "Jul 22, 2026"
+       ],
+       [
+        "Operating pre-tax margin expansion (basis points)",
+        "Year to Dec 2026",
+        "100",
+        "100",
+        "Jul 22, 2026"
+       ],
+       [
+        "Third-quarter currency impact on revenue growth (percentage points)",
+        "Quarter to Sep 2026",
+        "-1.5",
+        "-1.5",
+        "Jul 22, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did IBM keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 114,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "IBM also delivered against an important recent promise, finishing 2025 with 6% revenue growth and US$14.7 billion of free cash flow. By July 2026, however, management had reduced its revenue-growth expectation while retaining its cash-growth expectation. The record therefore contains both delivery and a newer setback."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is IBM’s revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue is the money IBM earns from software, consulting and infrastructure before costs. It accelerated sharply in 2025 after weak growth in 2024, while the longer trend remained moderate. That makes the composition of growth more important than the headline total."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "17,162",
+        "15,917",
+        "19,686",
+        "16,331",
+        "16,977",
+        "14,541",
+        "17,553",
+        "14,968"
+       ],
+       [
+        "Gross margin",
+        "57.7%",
+        "56.2%",
+        "60.6%",
+        "57.3%",
+        "58.8%",
+        "55.2%",
+        "59.5%",
+        "56.3%"
+       ],
+       [
+        "Operating income",
+        "2,479",
+        "1,387",
+        "4,144",
+        "2,430",
+        "2,597",
+        "1,158",
+        "3,306",
+        "-802"
+       ],
+       [
+        "Net income",
+        "2,166",
+        "1,216",
+        "5,579",
+        "1,744",
+        "2,193",
+        "1,054",
+        "2,927",
+        "-317"
+       ],
+       [
+        "EPS, diluted",
+        "2.27",
+        "1.28",
+        "5.86",
+        "1.84",
+        "2.31",
+        "1.12",
+        "3.11",
+        "-0.34"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in IBM’s next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "IBM’s October 21 results are the next test of whether its recovery has reached actual business. The company will report third-quarter results and hold its earnings call at 5 p.m. Eastern Time, when investors will look for software growth, z17 orders and improved cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "17,162"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.27"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "14,968",
+      "17,553",
+      "14,541",
+      "16,977",
+      "16,331",
+      "19,686",
+      "15,917",
+      "17,162"
+     ],
+     "EPS, diluted": [
+      "-0.34",
+      "3.11",
+      "1.12",
+      "2.31",
+      "1.84",
+      "5.86",
+      "1.28",
+      "2.27"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ibm/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IBM&src=seo-earnings"
+  }
+ },
+ "short_name": "IBM",
+ "first_memo_date": "2026-10-13T01:31:55Z"
+}

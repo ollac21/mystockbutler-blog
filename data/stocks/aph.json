@@ -1,0 +1,837 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "APH",
+ "slug": "aph",
+ "company": "Amphenol Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T01:18:25Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 86.19,
+ "price_date": "2026-10-12T20:00:03Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 258,
+  "tables": 27,
+  "words": 16597,
+  "sources": 191
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Amphenol makes the small, specialized parts that let electronic equipment connect, carry power and data, and sense its surroundings. Its business is a chain: customers specify and order those parts, Amphenol makes them, and cash arrives only after delivery and collection."
+ },
+ "sources": [
+  {
+   "title": "Amphenol 2025 Annual Report",
+   "url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040694/aph-20251231xars.pdf"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926087904/aph-20260729xex99d1.htm"
+  },
+  {
+   "title": "Earnings release — Q1 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926050984/aph-20260429xex99d1.htm"
+  }
+ ],
+ "rivals": [
+  "TEL",
+  "GLW",
+  "BDC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Amphenol stock forecast",
+   "meta_description": "Amphenol stock forecast: the weighted price is $115.42 in October 2029, with outcomes hinging on demand, CCS execution, margins and cash.",
+   "opening": "Amphenol's probability-weighted price is $115.42 in October 2029. Amphenol's outcome hinges on organic demand, CCS execution, and margins.",
+   "closing": "The full Amphenol memo also explains its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Amphenol's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast's central message is positive expected return with a wide range of outcomes. The probability-weighted price is $101.56 in October 2027, equal to an 18% return with dividends. It is $107.20 in October 2028, or 26%. By October 2029 it is $115.42, or 36%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 86.19, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 86.19, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "56.46 (-34 %)",
+        "48.64 (-42 %)",
+        "48.01 (-43 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "103.69 (+21 %)",
+        "107.65 (+26 %)",
+        "114.40 (+35 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "152.09 (+77 %)",
+        "179.17 (+109 %)",
+        "202.47 (+138 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "101.56 (+18 %)",
+        "107.20 (+26 %)",
+        "115.42 (+36 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—or wrong—for Amphenol?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires an AI and data-center pause, weaker order conversion, underused capacity, and persistent CCS debt costs. It leads to $56.46 in October 2027 and $48.01 in October 2029. Its 25% probability reflects 43% datacom exposure, weaker communications-network demand, and $13.4 billion of net debt, but the order book makes it less likely than the base case."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires AI investment to remain strong, more high-speed, fiber, and power content per system, and CCS to improve customers, costs, and margins. It leads to $152.09 in October 2027 and $202.47 in October 2029. Its 20% probability reflects credible operating upside, but also the need for sustained growth, faster debt reduction, and a 40x ending multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Amphenol really make?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash flow after ordinary capital spending. Amphenol spent $996.6 million on property and equipment in 2025 and reported its own free-cash-flow measure of $4,392.9 million because it included proceeds from asset disposals. Deducting stock compensation as an allowance for dilution produces “real” free cash flow of $4,242.7 million. These measures exclude acquisition payments because buying another company is a separate investment decision."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,374.7",
+        "2,814.7",
+        "2,528.7",
+        "2,174.6",
+        "1,523.9"
+       ],
+       [
+        "− Capital spending",
+        "996.6",
+        "665.4",
+        "372.8",
+        "383.8",
+        "360.4"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,378.1",
+        "2,149.3",
+        "2,155.9",
+        "1,790.8",
+        "1,163.5"
+       ],
+       [
+        "− Stock pay",
+        "135.4",
+        "109.5",
+        "99.0",
+        "89.5",
+        "83.0"
+       ],
+       [
+        "**= Real free cash flow**",
+        "4,242.7",
+        "2,039.8",
+        "2,056.9",
+        "1,701.3",
+        "1,080.5"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "18.4%",
+        "13.4%",
+        "16.4%",
+        "13.5%",
+        "9.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Amphenol today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Amphenol supplies connections that carry power, signals and data. At $86.19 on October 13, 2026, shareholders valued the company at $212,541.7 million. Enterprise value was $225,933.9 million because it adds debt and subtracts cash. That difference represents the claims financing the enlarged business."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "86.19"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "42.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "26.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "86.19"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "115.42 (+36 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "26.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 86.19,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "56.46 (-34 %)",
+       "48.64 (-42 %)",
+       "48.01 (-43 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "103.69 (+21 %)",
+       "107.65 (+26 %)",
+       "114.40 (+35 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "152.09 (+77 %)",
+       "179.17 (+109 %)",
+       "202.47 (+138 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "101.56 (+18 %)",
+       "107.20 (+26 %)",
+       "115.42 (+36 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aph/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APH&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Amphenol dividend",
+   "meta_description": "Amphenol's dividend, cash coverage, forecast changes, and current yield in plain English.",
+   "opening": "Amphenol's current dividend pace is $0.50 annually from a $0.125 post-split quarterly payment. Its 2025 real free cash flow was $4,242.7 million, and the cash-flow table shows dividends as one use of that cash.",
+   "closing": "The full memo also answers questions about Amphenol's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Amphenol pay per share?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The current dividend pace is $0.50 annually from a $0.125 post-split quarterly payment. The base case rises to $0.55, $0.63, and $0.72. The bear case freezes it at $0.50, while the bull case reaches $0.60, $0.75, and $0.94. Strong free cash flow supports increases, but debt repayment and investment argue against assuming the fastest path."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Paid to minority owners, per share",
+        "0.00",
+        "0.01",
+        "0.01",
+        "0.00",
+        "0.01"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.31",
+        "0.24",
+        "0.20",
+        "0.19",
+        "0.14"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.26",
+        "0.27",
+        "0.24",
+        "0.29",
+        "0.26"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "1.14",
+        "0.33",
+        "0.42",
+        "0.23",
+        "0.05"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Amphenol's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash flow after ordinary capital spending. Amphenol spent $996.6 million on property and equipment in 2025 and reported its own free-cash-flow measure of $4,392.9 million because it included proceeds from asset disposals. Deducting stock compensation as an allowance for dilution produces “real” free cash flow of $4,242.7 million. These measures exclude acquisition payments because buying another company is a separate investment decision."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,378.1",
+        "2,149.3",
+        "2,155.9",
+        "1,790.8",
+        "1,163.5"
+       ],
+       [
+        "− Dividends paid",
+        "802.2",
+        "595.1",
+        "500.6",
+        "477.4",
+        "346.7"
+       ],
+       [
+        "− Share buybacks",
+        "665.2",
+        "689.3",
+        "585.1",
+        "730.5",
+        "661.7"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,904.9",
+        "831.9",
+        "1,046.2",
+        "573.0",
+        "136.2"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "33.5%",
+        "59.8%",
+        "50.4%",
+        "67.5%",
+        "86.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Amphenol's dividend?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "From 2027 through 2029, debt repayment and interest costs will be decisive. A weaker cash conversion would restrict buybacks and dividends, while stronger free cash flow would support both. CCS customer gains and improved factory and supplier costs during 2027 and 2028 would be the clearest evidence for the bull path."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "7,380 (5,658 / 8,385)",
+        "8,464 (5,625 / 10,400)",
+        "9,690 (6,200 / 12,710)"
+       ],
+       [
+        "Shares (millions)",
+        "2,491 (2,505 / 2,481)",
+        "2,516 (2,544 / 2,496)",
+        "2,541 (2,583 / 2,511)"
+       ],
+       [
+        "Dividends per share",
+        "0.55 (0.50 / 0.60)",
+        "0.63 (0.50 / 0.75)",
+        "0.72 (0.50 / 0.94)"
+       ],
+       [
+        "Price to earnings",
+        "35.00 (25.00 / 45.00)",
+        "32.00 (22.00 / 43.00)",
+        "30.00 (20.00 / 40.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Amphenol's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow makes the demand clearer. A 2.1% free-cash-flow yield means each $100 of market value currently produces only $2.10 of annual free cash flow. That is below the 5.24% yield on a ten-year U.S. government bond. The 0.6% dividend yield offers little income, while the 13.7x price-to-book ratio offers little asset-value cushion."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.31"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.14",
+      "0.19",
+      "0.20",
+      "0.24",
+      "0.31"
+     ],
+     "Real free cash flow per share": [
+      "0.43",
+      "0.68",
+      "0.83",
+      "0.81",
+      "1.66"
+     ],
+     "Free cash flow per share": [
+      "0.47",
+      "0.72",
+      "0.87",
+      "0.85",
+      "1.71"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/aph/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APH&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Amphenol earnings: guidance and results",
+   "meta_description": "Amphenol reports October 28, 2026; guidance is $9,300.0–$9,400.0 million sales and $0.70–$0.71 adjusted diluted EPS.",
+   "opening": "Amphenol’s next results are expected on October 28, 2026. For Amphenol, the key thing to watch is whether CommScope remains on course while sales and earnings meet guidance.",
+   "closing": "The full memo explains Amphenol’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has Amphenol guided for the next quarter?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Guidance is management’s forecast for a particular period. On July 29, Amphenol forecast third-quarter sales of $9,300.0–$9,400.0. That implied growth of 50.0%–52.0% from the same quarter of 2025. Adjusted diluted EPS guidance was $0.70–$0.71. Diluted EPS allows for shares that could be created by instruments such as employee options; adjusted EPS removes specified accounting items."
+      },
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management raised CommScope’s expected 2026 sales to $4,600.0 million and its adjusted diluted EPS accretion to $0.15. Accretion means the acquisition should increase earnings per share after its operating and financing costs. The important question is therefore whether purchased revenue reaches the bottom line and eventually produces cash."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "sales",
+        "Quarter to Sep 2026",
+        "9,300.0",
+        "9,400.0",
+        "2026-07-29"
+       ],
+       [
+        "sales increase over the prior year quarter (%)",
+        "Quarter to Sep 2026",
+        "50.0%",
+        "52.0%",
+        "2026-07-29"
+       ],
+       [
+        "Adjusted Diluted EPS",
+        "Quarter to Sep 2026",
+        "0.70",
+        "0.71",
+        "2026-08-06"
+       ],
+       [
+        "Adjusted Diluted EPS increase from the third quarter of 2025 (%)",
+        "Quarter to Sep 2026",
+        "51.0%",
+        "53.0%",
+        "2026-07-29"
+       ],
+       [
+        "CommScope, full-year sales",
+        "Year to Dec 2026",
+        "4,600.0",
+        "4,600.0",
+        "2026-07-29"
+       ],
+       [
+        "CommScope, Adjusted Diluted EPS accretion",
+        "Year to Dec 2026",
+        "0.15",
+        "0.15",
+        "2026-07-29"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Amphenol keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Organic growth means growth from businesses Amphenol already owned, excluding acquisitions and currency movements. On January 22, 2025, management forecast first-quarter sales of US$4.00 billion to US$4.10 billion and later delivered US$4.8 billion. The comparison is imperfect because the result included Andrew, but strong organic growth still supports management’s execution record."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Amphenol revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $8,758.1 million from $5,650.3 million a year earlier, with organic growth of 30%. IT datacom grew 63% organically, while communications networks declined 6% as operator and wireless-equipment demand weakened. Acquisitions lifted reported network sales, and industrial, automotive and aerospace also contributed. The business therefore had breadth, but its largest exposure was the AI-linked datacom market."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,758.1",
+        "7,620.1",
+        "6,439.0",
+        "6,194.4",
+        "5,650.3",
+        "4,811.0",
+        "4,317.9",
+        "4,038.8"
+       ],
+       [
+        "Gross margin",
+        "40.5%",
+        "36.7%",
+        "38.2%",
+        "38.1%",
+        "36.3%",
+        "34.2%",
+        "34.3%",
+        "33.6%"
+       ],
+       [
+        "Operating income",
+        "2,584.6",
+        "1,831.8",
+        "1,722.7",
+        "1,702.3",
+        "1,418.8",
+        "1,024.8",
+        "953.7",
+        "819.5"
+       ],
+       [
+        "Net income",
+        "1,769.2",
+        "933.0",
+        "1,195.5",
+        "1,245.7",
+        "1,091.3",
+        "737.8",
+        "746.2",
+        "604.4"
+       ],
+       [
+        "EPS, diluted",
+        "0.69",
+        "0.36",
+        "0.47",
+        "0.49",
+        "0.43",
+        "0.29",
+        "0.30",
+        "0.24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Amphenol’s next results?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "October 28, 2026 is the next operating checkpoint. Third-quarter results should show whether Amphenol met its sales and earnings guidance and whether CommScope remains on course. The second quarter’s book-to-bill ratio was 1.23, meaning the company received $1.23 of orders for every $1.00 it sold. That supports additional capacity, but orders still must become shipments and customer payments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "8,758.1"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.69"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,038.8",
+      "4,317.9",
+      "4,811.0",
+      "5,650.3",
+      "6,194.4",
+      "6,439.0",
+      "7,620.1",
+      "8,758.1"
+     ],
+     "EPS, diluted": [
+      "0.24",
+      "0.30",
+      "0.29",
+      "0.43",
+      "0.49",
+      "0.47",
+      "0.36",
+      "0.69"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/aph/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APH&src=seo-earnings"
+  }
+ },
+ "short_name": "Amphenol",
+ "first_memo_date": "2026-10-13T01:18:25Z"
+}

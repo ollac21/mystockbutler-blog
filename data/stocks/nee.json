@@ -1,0 +1,825 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NEE",
+ "slug": "nee",
+ "company": "NextEra Energy, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T16:42:47Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 78.08,
+ "price_date": "2026-10-13T14:37:59Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 259,
+  "tables": 25,
+  "words": 17662,
+  "sources": 272
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "NextEra Energy makes money by supplying electricity and building energy systems. A dollar enters through regulated bills, long contracts and energy sales, then leaves through fuel, operations, construction and financing before the return remains."
+ },
+ "sources": [
+  {
+   "title": "NextEra’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000015/nee-20251231.htm"
+  },
+  {
+   "title": "2024 annual filing and historical reconciliation",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330825000011/nee-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000007/neeq42025exhibit99.htm"
+  }
+ ],
+ "rivals": [
+  "DUK",
+  "SO",
+  "AEP",
+  "D",
+  "EXC",
+  "ES",
+  "AES",
+  "VST"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "NextEra Energy stock forecast",
+   "meta_description": "NextEra Energy's stock forecast weighs bear, base and bull cases, cash generation, growth drivers and today's valuation.",
+   "opening": "NextEra Energy's weighted forecast is $76.12 for October 2027 and $85.88 for October 2029, with dividends included. It hinges on FPL recovery, NEER conversion, funding discipline and merger execution.",
+   "closing": "The full memo also explains NextEra Energy's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could NextEra Energy's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted price is $76.12 for October 2027. That is a +1% return. For October 2029, it is $85.88. That is a +21% return, with dividends included. Bear probability is 25%. Base probability is 55%. Bull probability is 20%. Outcomes range from $47.90 in the bear case to $128.50 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 78.08, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 78.08, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "54.84 (-27 %)",
+        "51.70 (-27 %)",
+        "47.90 (-29 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "77.78 (+3 %)",
+        "82.99 (+13 %)",
+        "87.65 (+23 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "98.15 (+29 %)",
+        "112.93 (+52 %)",
+        "128.50 (+76 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "76.12 (+1 %)",
+        "81.15 (+11 %)",
+        "85.88 (+21 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share value after giving more influence to cases with higher probabilities."
+     }
+    },
+    {
+     "heading": "What has to go right for NextEra Energy?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to a modest gain by October 2027 and a larger gain by October 2029, hinging on FPL recovery, NEER conversion, funding discipline and merger execution. Management guides to 2026 adjusted EPS of $3.92–$4.02. It promises at least 8% annual adjusted-EPS growth through 2032. Dividend growth is about 10% in 2026. That becomes 6% annually through 2028. If the merger closes, the combined company promises at least 9% adjusted-EPS growth through 2032."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "9,125 (8,292 / 9,853)",
+        "9,855 (8,541 / 10,937)",
+        "10,644 (8,797 / 12,140)"
+       ],
+       [
+        "Shares (millions)",
+        "2,112 (2,117 / 2,108)",
+        "2,138 (2,148 / 2,131)",
+        "2,186 (2,204 / 2,173)"
+       ],
+       [
+        "Dividends per share",
+        "2.65 (2.50 / 2.70)",
+        "2.81 (2.55 / 2.92)",
+        "2.97 (2.60 / 3.15)"
+       ],
+       [
+        "Price to earnings",
+        "18.00 (14.00 / 21.00)",
+        "18.00 (13.00 / 22.00)",
+        "18.00 (12.00 / 23.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does NextEra Energy really make?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Not all construction is growth. Some spending maintains existing equipment. Energy Resources’ project cash measure includes maintenance spending but excludes new development, so it helps assess existing projects without replacing consolidated free cash flow. Working capital absorbed $373 million in 2025. After deducting $185 million of stock compensation, real free cash flow was negative $12,306 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "12,485",
+        "13,260",
+        "11,301",
+        "8,262",
+        "7,553"
+       ],
+       [
+        "− Capital spending",
+        "24,606",
+        "24,729",
+        "25,113",
+        "19,283",
+        "16,077"
+       ],
+       [
+        "**= Free cash flow**",
+        "-12,121",
+        "-11,469",
+        "-13,812",
+        "-11,021",
+        "-8,524"
+       ],
+       [
+        "− Stock pay",
+        "185",
+        "138",
+        "139",
+        "142",
+        "119"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-12,306",
+        "-11,607",
+        "-13,951",
+        "-11,163",
+        "-8,643"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-44.9%",
+        "-46.9%",
+        "-49.6%",
+        "-53.3%",
+        "-50.6%"
+       ]
+      ],
+      "note": "Capital spending includes acquisitions and investments as well as equipment, buildings, and software, so it is broader than the usual meaning of money spent to maintain the business."
+     }
+    },
+    {
+     "heading": "What do investors pay for NextEra Energy today?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The rows show today’s share price, market value, enterprise value, valuation multiples, cash-flow yields and dividend yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "78.08"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "85.88 (+21 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-7.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 78.08,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "54.84 (-27 %)",
+       "51.70 (-27 %)",
+       "47.90 (-29 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "77.78 (+3 %)",
+       "82.99 (+13 %)",
+       "87.65 (+23 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "98.15 (+29 %)",
+       "112.93 (+52 %)",
+       "128.50 (+76 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "76.12 (+1 %)",
+       "81.15 (+11 %)",
+       "85.88 (+21 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/nee/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NEE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "NextEra Energy dividend: cash coverage and history",
+   "meta_description": "NextEra Energy pays a growing dividend, but negative free cash flow means coverage depends on financing and future cash generation.",
+   "opening": "NextEra Energy’s base dividends per share are $2.65 initially and $2.97 finally. In 2025, free cash flow was negative $12,121 million, so the business did not cover the dividend from free cash flow.",
+   "closing": "The full memo also explains NextEra Energy’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does NextEra Energy pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends per share are $2.65 initially and $2.97 finally. The bear case ends at $2.60; the bull reaches $3.15. The base follows the stated 10% increase and 6% annual growth path. The bear assumes funding pressure causes a pause before 2% growth resumes, while the bull assumes 8% growth because earnings and cash generation outperform. Negative free cash flow and rising net debt make the bear possible, but the dividend rose every year in the supplied history."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "-5.85",
+        "-5.57",
+        "-6.80",
+        "-5.57",
+        "-4.32"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.26",
+        "2.06",
+        "1.86",
+        "1.69",
+        "1.53"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "8.38",
+        "7.99",
+        "8.71",
+        "7.36",
+        ""
+       ]
+      ],
+      "note": "The company paid shareholders and minority owners even though it generated negative free cash flow, so it paid out more than it made in cash."
+     }
+    },
+    {
+     "heading": "Does NextEra Energy’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company also paid growing dividends, minority owners and other investors with claims on subsidiary cash flows. Debt, new shares and project partners supplied the bridge. Debt creates interest and repayment obligations; new shares spread future profits across more owners; project partners provide capital but receive part of the assets’ future economics. The table shows how those competing demands consumed and replaced free cash flow."
+      },
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was $24,606 million, leaving free cash flow of negative $12,121 million. The five-year deficits totalled about $56,947 million before dividends. Borrowing, equity, project investors and asset sales therefore help finance construction."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-12,121",
+        "-11,469",
+        "-13,812",
+        "-11,021",
+        "-8,524"
+       ],
+       [
+        "− Dividends paid",
+        "4,680",
+        "4,235",
+        "3,782",
+        "3,352",
+        "3,024"
+       ],
+       [
+        "− Share buybacks",
+        "27.52",
+        "15.23",
+        "14.57",
+        "19.19",
+        "22.41"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "17,344.52",
+        "16,459.23",
+        "17,683.57",
+        "14,571.19",
+        ""
+       ],
+       [
+        "− Acquisitions",
+        "",
+        "",
+        "1,100",
+        "",
+        "502"
+       ]
+      ],
+      "note": "The share buyback numbers are small because they only estimate shares withheld for taxes, not a company-wide share repurchase program."
+     }
+    },
+    {
+     "heading": "What could change NextEra Energy’s dividend?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to a modest gain by October 2027 and a larger gain by October 2029, hinging on FPL recovery, NEER conversion, funding discipline and merger execution. Management guides to 2026 adjusted EPS of $3.92–$4.02. It promises at least 8% annual adjusted-EPS growth through 2032. Dividend growth is about 10% in 2026. That becomes 6% annually through 2028. If the merger closes, the combined company promises at least 9% adjusted-EPS growth through 2032."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is NextEra Energy’s dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "78.08"
+       ],
+       [
+        "Market value (calculated)",
+        "162,873.18"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.26"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-7.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-7.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.53",
+      "1.69",
+      "1.86",
+      "2.06",
+      "2.26"
+     ],
+     "Real free cash flow per share": [
+      "-4.38",
+      "-5.64",
+      "-6.87",
+      "-5.64",
+      "-5.94"
+     ],
+     "Free cash flow per share": [
+      "-4.32",
+      "-5.57",
+      "-6.80",
+      "-5.57",
+      "-5.85"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/nee/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NEE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "NextEra Energy earnings date and guidance",
+   "meta_description": "NextEra Energy reports October 21, 2026; see its guidance, past promise, eight-quarter results and what to watch next.",
+   "opening": "NextEra Energy’s next results are expected on October 21, 2026. Watch whether NextEra Energy maintains its earnings guidance.",
+   "closing": "The full memo also explains NextEra Energy’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has NextEra Energy guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Its 2026 adjusted EPS guidance is **$3.92–$4.02**, and management is aiming for the upper end. Adjusted EPS is management’s chosen measure of profit per share after removing specified items. It helps compare ordinary performance, but it is not cash: construction, debt repayment and excluded costs can still consume money."
+      },
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Dividends follow a slower path: about **10.0% growth in 2026**, then **6.0% annually** through 2028. That is slower growth, not a dividend cut. The proposed Dominion Energy combination, involving another regulated utility, carries a separate conditional promise of at least **9.0% adjusted EPS growth through 2032**, assuming the merger closes."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted Earnings Per Share Expectations",
+        "2026",
+        "3.92",
+        "4.02",
+        "2026-10-01"
+       ],
+       [
+        "Expect 8%+ CAGR through 2032 off 2025 adjusted EPS",
+        "2025–2032",
+        "8.0%",
+        "",
+        "2026-10-01"
+       ],
+       [
+        "Expect ~10% annual dividend per share growth",
+        "2026",
+        "10.0%",
+        "10.0%",
+        "2026-10-01"
+       ],
+       [
+        "6% per year growth from year-end 2026 through 2028",
+        "2027",
+        "6.0%",
+        "6.0%",
+        "2026-10-01"
+       ],
+       [
+        "Operating Cash Flow expected to be at or above EPS growth rate range",
+        "2025–2032",
+        "",
+        "",
+        "2026-10-01"
+       ],
+       [
+        "FPL full-year capital investments",
+        "2026",
+        "12,000",
+        "13,000",
+        "2026-07-24"
+       ]
+      ],
+      "note": "The capital spending figures for the remainder of 2026 cover only the last six months of the year, not the full year."
+     }
+    },
+    {
+     "heading": "Did NextEra Energy keep its past earnings promise?",
+     "paragraphs": [
+      {
+       "n": 112,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "NextEra also kept a clear earnings promise. Its 2025 adjusted earnings guidance was US$3.45–US$3.70 per share. It delivered US$3.71. That supports confidence in management’s ability to meet its chosen earnings measure, but meeting guidance is not the same as producing superior returns for owners."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do NextEra Energy’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "Recent results support that confidence. NextEra beat adjusted EPS expectations in **six of its last eight quarters** and missed none. Its latest result was **$1.15 against $1.11 expected**. These are encouraging surprises, but they do not prove that the long-term plan has been achieved."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,534",
+        "6,701",
+        "6,500",
+        "7,966",
+        "6,700",
+        "6,247",
+        "5,385",
+        "7,567"
+       ],
+       [
+        "Gross margin",
+        "81.8%",
+        "80.2%",
+        "82.0%",
+        "82.1%",
+        "82.3%",
+        "81.4%",
+        "79.7%",
+        "80.8%"
+       ],
+       [
+        "Operating income",
+        "2,238",
+        "2,208",
+        "1,586",
+        "2,527",
+        "1,911",
+        "2,256",
+        "941",
+        "2,856"
+       ],
+       [
+        "Net income",
+        "3,144",
+        "2,182",
+        "1,535",
+        "2,438",
+        "2,028",
+        "833",
+        "1,203",
+        "1,852"
+       ],
+       [
+        "EPS, diluted",
+        "1.50",
+        "1.04",
+        "0.73",
+        "1.18",
+        "0.98",
+        "0.40",
+        "0.58",
+        "0.90"
+       ],
+       [
+        "**= Free cash flow**",
+        "-3,665",
+        "-8,448",
+        "-2,779",
+        "-1,674",
+        "-2,495",
+        "-5,173",
+        "-2,640",
+        "-1,205"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in NextEra Energy’s next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the **October 21, 2026** third-quarter results call. Investors should look for maintained earnings guidance, cash generation that supports investment and NEER capacity actually entering service. Announcements show opportunity; completed projects and collected cash show delivery."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "7,534"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.50"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,567",
+      "5,385",
+      "6,247",
+      "6,700",
+      "7,966",
+      "6,500",
+      "6,701",
+      "7,534"
+     ],
+     "EPS, diluted": [
+      "0.90",
+      "0.58",
+      "0.40",
+      "0.98",
+      "1.18",
+      "0.73",
+      "1.04",
+      "1.50"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/nee/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NEE&src=seo-earnings"
+  }
+ },
+ "short_name": "NextEra Energy",
+ "first_memo_date": "2026-10-13T16:42:47Z"
+}

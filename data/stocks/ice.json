@@ -1,0 +1,881 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ICE",
+ "slug": "ice",
+ "company": "Intercontinental Exchange, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T12:07:00Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 158.41,
+ "price_date": "2026-10-15T20:00:03Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 27,
+  "words": 17647,
+  "sources": 262
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Intercontinental Exchange, or ICE, runs marketplaces and sells the data, connections and software that keep financial and mortgage transactions moving. Its business earns money both when customers trade and when they keep using ICE’s information and systems."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1571949/000157194926000004/ice-20251231.htm"
+  },
+  {
+   "title": "ICE’s June 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1571949/000157194926000011/ice-20260630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1571949/000110465926010646/tm264989d1_ex99-1.htm"
+  }
+ ],
+ "rivals": [
+  "CME",
+  "NDAQ",
+  "MKTX",
+  "MSCI",
+  "FDS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "ICE stock forecast",
+   "meta_description": "ICE's weighted forecast is $155.87 in October 2027, with bear, base and bull scenarios.",
+   "opening": "ICE's weighted forecast is $155.87 in October 2027, with the bear case at 25%, the base case at 55%, and the bull case at 20%. ICE's price hinges on recurring growth, trading activity, mortgage execution, acquisition costs and debt reduction.",
+   "closing": "The full memo also explains ICE's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could ICE's shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast puts the price at $155.87 in October 2027 (-0%), including dividends. It reaches $184.70 in October 2029 (+21%), including dividends. The bear case has 25% probability. The base case has 55%, and the bull case has 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 158.41, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 158.41, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "132.50 (-15 %)",
+        "120.66 (-21 %)",
+        "109.04 (-27 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "153.81 (-2 %)",
+        "169.29 (+10 %)",
+        "176.28 (+16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "190.76 (+22 %)",
+        "240.79 (+55 %)",
+        "302.45 (+95 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "155.87 (-0 %)",
+        "171.43 (+11 %)",
+        "184.70 (+21 %)"
+       ]
+      ],
+      "note": "The weighted row is an average of the bear, base, and bull values based on their probabilities, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for ICE?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "ICE can deliver a moderate gain, but the price hinges on recurring growth, trading activity, mortgage execution, acquisition costs and debt reduction. Management expects high-single-digit recurring revenue growth in Exchanges and 7.0%–8.0% growth in Fixed Income and Data Services in 2026. Mortgage Technology guidance is low-to-mid-single-digit revenue growth. ICE guides to $5,140 million–$5,180 million of GAAP operating expenses and $4,190 million–$4,230 million adjusted. It plans a $2.08 annual dividend per share and $400 million quarterly baseline repurchases from the third quarter onward."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does ICE really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates another claim. ICE paid $238 million in stock compensation during 2025. Deducting it as an analytical allowance leaves $3,633 million of “real free cash flow,” because employees receiving shares are paid through future dilution even when no additional cash leaves the company."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,662",
+        "4,609",
+        "3,542",
+        "3,554",
+        "3,123"
+       ],
+       [
+        "− Capital spending",
+        "791",
+        "752",
+        "489",
+        "482",
+        "452"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,871",
+        "3,857",
+        "3,053",
+        "3,072",
+        "2,671"
+       ],
+       [
+        "− Stock pay",
+        "238",
+        "231",
+        "257",
+        "155",
+        "188"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,633",
+        "3,626",
+        "2,796",
+        "2,917",
+        "2,483"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "28.7%",
+        "30.8%",
+        "28.2%",
+        "30.3%",
+        "27.1%"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though no cash leaves the company because employees receive shares, which gives away part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for ICE today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The stock is valued at 22.4 times trailing earnings and 17.8 times forward earnings. Free cash flow yield is 4.4%, while real free cash flow yield after stock pay is 4.1%. In 2025, real free cash flow was 28.7% of revenue. It was $6.32 per share, versus diluted EPS of $5.77. Net debt was $18,178 million. Dividends and buybacks used 62.0% of free cash flow. Dividend yield is 1.3% and buyback yield is 1.5%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "158.41"
+       ],
+       [
+        "Market value (calculated)",
+        "88,930.50"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "106,823.50"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "17.8x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.1%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it also includes the company's debt, after subtracting its cash and short-term investments."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "158.41"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "184.70 (+21 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 158.41,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "132.50 (-15 %)",
+       "120.66 (-21 %)",
+       "109.04 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "153.81 (-2 %)",
+       "169.29 (+10 %)",
+       "176.28 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "190.76 (+22 %)",
+       "240.79 (+55 %)",
+       "302.45 (+95 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "155.87 (-0 %)",
+       "171.43 (+11 %)",
+       "184.70 (+21 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ice/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ICE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "ICE dividend: history, cash cover and yield",
+   "meta_description": "ICE pays a growing dividend, covers it with free cash flow, and shows the yield alongside the share price.",
+   "opening": "ICE plans a $2.08 annual dividend per share, after its dividend rose from $1.32 to $1.92 over four years. In 2025, free cash flow covered dividends comfortably; dividends and buybacks used 62.0% of free cash flow.",
+   "closing": "The full memo also explains ICE’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does ICE pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend begins at $2.08 per share. It reaches $2.24 in the second period. It reaches $2.40 in the third. This follows the guided rate and roughly matches recent growth. The dividend rose from $1.32 to $1.92 over four years, while free cash flow covered 2025 dividends comfortably."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "6.73",
+        "6.70",
+        "5.40",
+        "5.48",
+        "4.73"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.92",
+        "1.80",
+        "1.69",
+        "1.52",
+        "1.32"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.25",
+        "0.00",
+        "0.00",
+        "1.13",
+        "0.44"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "2.45",
+        "4.78",
+        "3.60",
+        "2.76",
+        "2.93"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract the value of shares given to employees as pay; we subtract it because it reduces what each share really receives."
+     }
+    },
+    {
+     "heading": "Does ICE's dividend have cash cover?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "ICE continued paying dividends, paused buybacks during 2023 and 2024, then resumed them in 2025. Buybacks and dividends together totalled $2,399 million that year, or 62.0% of free cash flow. Debt repayment reduced the burden, but every dollar returned to shareholders competed with integration and future acquisitions."
+      },
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The stock is valued at 22.4 times trailing earnings and 17.8 times forward earnings. Free cash flow yield is 4.4%, while real free cash flow yield after stock pay is 4.1%. In 2025, real free cash flow was 28.7% of revenue. It was $6.32 per share, versus diluted EPS of $5.77. Net debt was $18,178 million. Dividends and buybacks used 62.0% of free cash flow. Dividend yield is 1.3% and buyback yield is 1.5%."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,871",
+        "3,857",
+        "3,053",
+        "3,072",
+        "2,671"
+       ],
+       [
+        "− Dividends paid",
+        "1,105",
+        "1,039",
+        "955",
+        "853",
+        "747"
+       ],
+       [
+        "− Share buybacks",
+        "1,294",
+        "0",
+        "0",
+        "632",
+        "250"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,409",
+        "2,752",
+        "2,033",
+        "1,551",
+        "1,653"
+       ],
+       [
+        "Paid to shareholders",
+        "2,399",
+        "1,039",
+        "955",
+        "1,485",
+        "997"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "62.0%",
+        "26.9%",
+        "31.3%",
+        "48.3%",
+        "37.3%"
+       ]
+      ],
+      "note": "The cash change does not always match the cash and short-term investments balance because it includes restricted cash and deposits that the balance does not include."
+     }
+    },
+    {
+     "heading": "What could change ICE's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "ICE can deliver a moderate gain, but the price hinges on recurring growth, trading activity, mortgage execution, acquisition costs and debt reduction. Management expects high-single-digit recurring revenue growth in Exchanges and 7.0%–8.0% growth in Fixed Income and Data Services in 2026. Mortgage Technology guidance is low-to-mid-single-digit revenue growth. ICE guides to $5,140 million–$5,180 million of GAAP operating expenses and $4,190 million–$4,230 million adjusted. It plans a $2.08 annual dividend per share and $400 million quarterly baseline repurchases from the third quarter onward."
+      },
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Capital allocation will also matter through 2027–2029. Debt repayment that crowds out buybacks or dividends would pressure the share count and multiple. Sustained cash generation that funds repurchases above baseline would support the upside."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "4,496 (4,123 / 4,795)",
+        "4,905 (4,220 / 5,475)",
+        "5,350 (4,357 / 6,270)"
+       ],
+       [
+        "Shares (millions)",
+        "555 (560 / 553)",
+        "550 (560 / 546)",
+        "546 (559 / 539)"
+       ],
+       [
+        "Dividends per share",
+        "2.08 (2.08 / 2.08)",
+        "2.24 (2.08 / 2.40)",
+        "2.40 (2.08 / 2.76)"
+       ],
+       [
+        "Price to earnings",
+        "19.00 (18.00 / 22.00)",
+        "19.00 (16.00 / 24.00)",
+        "18.00 (14.00 / 26.00)"
+       ]
+      ],
+      "note": "The numbers in brackets show lower and higher forecast scenarios, not extra amounts added to the base forecast."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.92"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.32",
+      "1.52",
+      "1.69",
+      "1.80",
+      "1.92"
+     ],
+     "Real free cash flow per share": [
+      "4.39",
+      "5.20",
+      "4.95",
+      "6.30",
+      "6.32"
+     ],
+     "Free cash flow per share": [
+      "4.73",
+      "5.48",
+      "5.40",
+      "6.70",
+      "6.73"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ice/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ICE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "ICE earnings: date, guidance and results",
+   "meta_description": "ICE reports next on October 29, 2026; see guidance, recent results and the key signals to watch.",
+   "opening": "ICE's next results are expected on October 29, 2026. Watch cash after the new financing.",
+   "closing": "The full ICE memo also covers ICE's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has ICE guided for the year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "ICE can deliver a moderate gain, but the price hinges on recurring growth, trading activity, mortgage execution, acquisition costs and debt reduction. Management expects high-single-digit recurring revenue growth in Exchanges and 7.0%–8.0% growth in Fixed Income and Data Services in 2026. Mortgage Technology guidance is low-to-mid-single-digit revenue growth. ICE guides to $5,140 million–$5,180 million of GAAP operating expenses and $4,190 million–$4,230 million adjusted. It plans a $2.08 annual dividend per share and $400 million quarterly baseline repurchases from the third quarter onward."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "2026 Exchange Recurring Revenue (% growth)",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 30, 2026"
+       ],
+       [
+        "2026 Fixed Income & Data Services Recurring Revenue (% growth)",
+        "Year to Dec 2026",
+        "7.0%",
+        "8.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "2026 Mortgage Technology Revenue (% growth)",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Feb 5, 2026"
+       ],
+       [
+        "2026 Operating Expenses (GAAP)",
+        "Year to Dec 2026",
+        "5,140",
+        "5,180",
+        "Jul 30, 2026"
+       ],
+       [
+        "2026 Operating Expenses (Non-GAAP)",
+        "Year to Dec 2026",
+        "4,190",
+        "4,230",
+        "Jul 30, 2026"
+       ],
+       [
+        "Annual total dividend (US$ per share)",
+        "Year to Dec 2026",
+        "2.08",
+        "2.08",
+        "Feb 5, 2026"
+       ]
+      ],
+      "note": "The non-standard expense figures leave out some costs, so they are not directly comparable with the company's full-accounting figures."
+     }
+    },
+    {
+     "heading": "Did ICE keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Finally, Black Knight expense savings reached an annualised US$230 million against an updated US$200 million target. That supports ICE’s execution record. But shareholders still must ask whether the savings, growth and compensation justify the capital invested and preserve customer service. ICE looks disciplined and capable; whether it is fully on shareholders’ side depends on that return, not on growth alone."
+      }
+     ],
+     "table": {
+      "title": "Stock pay and the share count",
+      "unit": "US$ millions",
+      "caption": "Stock pay and the share count (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Stock pay",
+        "238",
+        "231",
+        "257",
+        "155",
+        "188"
+       ],
+       [
+        "Stock pay, % of free cash flow (calculated)",
+        "6.1%",
+        "6.0%",
+        "8.4%",
+        "5.0%",
+        "7.0%"
+       ],
+       [
+        "Share buybacks",
+        "1,294",
+        "0",
+        "0",
+        "632",
+        "250"
+       ],
+       [
+        "Buybacks minus stock pay (calculated)",
+        "1,056",
+        "-231",
+        "-257",
+        "477",
+        "62"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has ICE's recent revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Gross revenue rose from $3,262 million to $3,611 million. That was 10.7% growth, while net revenue grew about 5%. Operating income rose from $1,297 million to $1,391 million. The difference between gross and net growth again shows the effect of pass-through costs."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,611",
+        "3,666",
+        "3,142",
+        "3,007",
+        "3,262",
+        "3,229",
+        "3,030",
+        "3,033"
+       ],
+       [
+        "Operating income",
+        "1,391",
+        "1,665",
+        "1,237",
+        "1,174",
+        "1,297",
+        "1,221",
+        "1,077",
+        "1,103"
+       ],
+       [
+        "Net income",
+        "958",
+        "1,413",
+        "851",
+        "816",
+        "851",
+        "797",
+        "698",
+        "657"
+       ],
+       [
+        "EPS, diluted",
+        "1.69",
+        "2.48",
+        "1.49",
+        "1.42",
+        "1.48",
+        "1.38",
+        "1.21",
+        "1.14"
+       ],
+       [
+        "Cash from operations",
+        "1,998",
+        "1,326",
+        "1,275",
+        "915",
+        "1,506",
+        "966",
+        "1,506",
+        "898"
+       ]
+      ],
+      "note": "The revenue numbers are higher than the company's headline net revenue because they include transaction-based expenses that the headline figure leaves out."
+     }
+    },
+    {
+     "heading": "What should I watch in ICE's next results?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next financial checkpoint is October 29, 2026, when ICE reports third-quarter results. The important evidence will include spending against guidance, cash after the new financing and the pace of repurchases. Earnings can improve even while cash falls if investment or shareholder payments accelerate."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,611"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.69"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,033",
+      "3,030",
+      "3,229",
+      "3,262",
+      "3,007",
+      "3,142",
+      "3,666",
+      "3,611"
+     ],
+     "EPS, diluted": [
+      "1.14",
+      "1.21",
+      "1.38",
+      "1.48",
+      "1.42",
+      "1.49",
+      "2.48",
+      "1.69"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ice/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ICE&src=seo-earnings"
+  }
+ },
+ "short_name": "ICE",
+ "first_memo_date": "2026-10-16T12:07:00Z"
+}

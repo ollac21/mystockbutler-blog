@@ -1,0 +1,531 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ADM.L",
+ "slug": "adm-l",
+ "company": "Admiral Group plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "insurer",
+ "country": "uk",
+ "memo_date": "2026-10-18T07:34:29Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 3784.0,
+ "price_date": "2026-10-16T16:00:14Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 15440,
+  "sources": 141
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Admiral Group is a UK-founded company that sells insurance and lends money, so its business begins with promises about future protection or repayments. To understand how money comes in and goes out, follow it from the customer, through premium or loan, to claims, costs, funding and profit."
+ },
+ "sources": [
+  {
+   "title": "Half-year report — Q2 2026",
+   "url": "https://data.fca.org.uk/artefacts/NSM/GNW/b6813e6c-cd1b-42a9-a0c3-df335328dafa.html"
+  },
+  {
+   "title": "Half-year report — Q2 2024",
+   "url": "https://data.fca.org.uk/artefacts/NSM/GNW/1000986569-en.html"
+  },
+  {
+   "title": "Half-year report — Q2 2023",
+   "url": "https://data.fca.org.uk/artefacts/NSM/GNW/1000834822-en.html"
+  }
+ ],
+ "rivals": [
+  "SBRE.L",
+  "AGS.BR",
+  "ALV.DE",
+  "ZURN.SW",
+  "G.MI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Admiral stock forecast",
+   "meta_description": "Admiral's weighted forecast reaches 3781.85 GBp in October 2029, with motor repricing and newer businesses driving the scenarios.",
+   "opening": "Admiral's weighted forecast is 3781.85 GBp in October 2029, with 52% assigned to the base case, 30% to the bear case and 18% to the bull case. Admiral's forecast hinges on motor repricing earning through without claims inflation eroding margins.",
+   "closing": "The full Admiral memo also covers Admiral's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Admiral's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final bear-to-bull range is 1891.37 to 6870.23 GBp. Today's price is 3784.00 GBp. The forecast assigns 52% to the base case, 30% to the bear case and 18% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per ADM.L share at each date; in brackets the return since today's 3784.00, dividends included",
+      "caption": "What the shares could be worth (GBp per ADM.L share at each date; in brackets the return since today's 3784.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "2421.24 (-33 %)",
+        "2031.76 (-41 %)",
+        "1891.37 (-42 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "3711.17 (+2 %)",
+        "3760.01 (+7 %)",
+        "3803.45 (+13 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "4998.36 (+36 %)",
+        "5896.93 (+65 %)",
+        "6870.23 (+96 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "3555.89 (-2 %)",
+        "3626.18 (+3 %)",
+        "3781.85 (+11 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What drives Admiral's bear, base and bull cases?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at £710m, falls to £660m and then £650m because claims inflation and competition prevent repricing from improving margins. UK Motor claims costs were 7% higher year on year in Q2 2026. The bull case starts at £950m, then reaches £1,050m and £1,150m as customer growth and profitable scaling in Europe, MoreThan, Flock and Admiral Money compound. UK risks rose to 9.58m from 8.80m, while Flock was acquired for £76.4m cash. The forecast excludes separate benefits from reserve releases and acquisition accounting because 2025 profit included £386.4m of releases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How does Admiral turn insurance and lending into shareholder returns?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.4 — Investments and debt",
+       "text": "The insurer holds financial assets to meet future claims and regulatory capital needs. Premium receipts, claim payments, investment purchases and sales, and loans advanced to customers therefore move cash without mapping neatly onto ordinary operating profit. Free cash flow, free-cash-flow yield and the current ratio can consequently mislead."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "GBp per share",
+      "caption": "What one share gets (GBp per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "242.70",
+        "212.80",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends, per share",
+        "232.89",
+        "120.73",
+        "100.67",
+        "218.31",
+        "241.63"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "9.83",
+        "92.00",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Diluted shares (average of the year), change",
+        "0.3%",
+        "0.4%",
+        "1.2%",
+        "1.1%",
+        "1.1%"
+       ]
+      ],
+      "note": "The dividend amount includes special one-time payments, so it is higher than the company’s normal yearly dividend."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Admiral's earnings?",
+     "paragraphs": [
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The first lens is the price-to-earnings ratio, or P/E. It says how much investors pay for each pound of profit, while a forward P/E uses an estimate of future profit. Imagine paying £17 for a shop that earned £1 last year but is expected to earn £1.25 next year. The lower forward multiple is attractive only if that extra profit arrives."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; per share in pence",
+      "caption": "What an investor pays today (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "3,784.00"
+       ],
+       [
+        "Market value (calculated)",
+        "11,571.6"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.9x"
+       ],
+       [
+        "Price to book (calculated)",
+        "7.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.2%"
+       ]
+      ],
+      "note": "The next-year price-to-profit number uses analysts’ estimated profit, so it is not guaranteed."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "3,784.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "3781.85 (+11 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "17.4x"
+    },
+    {
+     "label": "Price to book",
+     "value": "7.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 37.84,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "2421.24 (-33 %)",
+       "2031.76 (-41 %)",
+       "1891.37 (-42 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "3711.17 (+2 %)",
+       "3760.01 (+7 %)",
+       "3803.45 (+13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "4998.36 (+36 %)",
+       "5896.93 (+65 %)",
+       "6870.23 (+96 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "3555.89 (-2 %)",
+       "3626.18 (+3 %)",
+       "3781.85 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/adm-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADM.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Admiral dividend",
+   "meta_description": "Admiral's dividend targets 65% of post-tax profit, while forecast payouts vary with earnings, claims, capital needs and growth.",
+   "opening": "Admiral targets a normal dividend of 65% of post-tax profit, with forecast dividends per share ranging from £0.90 to £2.00 across the bear and bull cases. Cash coverage is not a clean retail-style test: Admiral's capital needs, growth plans and insurance cash flows affect distributions.",
+   "closing": "The full Admiral memo also explains its business, management choices, rivals and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Admiral pay per share?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends follow Admiral's stated 65% ordinary payout policy. Base DPS rises from £1.43 to £1.52 and £1.60 as earnings recover. The bear case falls from £1.10 to £0.95 and £0.90; the bull case rises from £1.55 to £1.80 and £2.00. That spread reflects the company's uneven DPS record, which ranged from £0.734 to £1.587 in the supplied history."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "839 (710 / 950)",
+        "881 (660 / 1,050)",
+        "925 (650 / 1,150)"
+       ],
+       [
+        "Shares (millions)",
+        "305 (308 / 304)",
+        "305 (309 / 303)",
+        "304 (309 / 301)"
+       ],
+       [
+        "Dividends per share",
+        "1.43 (1.10 / 1.55)",
+        "1.52 (0.95 / 1.80)",
+        "1.60 (0.90 / 2.00)"
+       ],
+       [
+        "Price to earnings",
+        "13.50 (10.50 / 16.00)",
+        "13.00 (9.50 / 17.00)",
+        "12.50 (9.00 / 18.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Admiral's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The table shows that Admiral’s largest distributions included cash released by the Penguin sale. That rewarded shareholders immediately, but it left future expansion dependent on later profits or further asset sales. In 2025, Admiral kept only £30.2 million, compared with £281.8 million in 2024, so less of that year’s profit remained available to build the business."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "£ millions; shares in millions",
+      "caption": "Follow the money: what it earns and gives back (£ millions; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "745.6",
+        "651.6",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid on ordinary shares",
+        "715.4",
+        "369.8",
+        "307.1",
+        "658.3",
+        "720.9"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "30.2",
+        "281.8",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "95.9%",
+        "56.8%",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Acquisitions",
+        "0",
+        "82.5",
+        "0",
+        "0",
+        "0"
+       ]
+      ],
+      "note": "Blank profit figures for 2023 and earlier do not mean the company made no profit; those figures are left out because they include a business the company sold and cannot be compared fairly with the remaining business."
+     }
+    },
+    {
+     "heading": "What could change Admiral's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets a normal dividend of 65% of post-tax profit, subject to capital needs and growth. The announced buyback is capped at £45.0m through 31 December 2026."
+      },
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "H2 2026 is the first test: lower UK Motor reinsurance charges and rate increases should support profit. UK Motor claims costs were 7% higher year on year in Q2 2026. Flock’s £76.4m cash acquisition in May 2026 must turn commercial fleet growth into profitable policies. The internal capital-model application will test capital headroom and future distributions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Admiral's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Dividends and buybacks are two ways profit reaches shareholders. A dividend pays cash directly; a buyback uses company money to repurchase and cancel shares, leaving the remaining owners with a larger percentage of the business. In H1 2026, Admiral declared a 70.5p dividend and a £45 million buyback. Its solvency ratio was 190% after those payments, showing capital headroom but not removing risk."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; per share in pence",
+      "caption": "What an investor pays today (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "3,784.00"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.9x"
+       ],
+       [
+        "Price to book (calculated)",
+        "7.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.2%"
+       ]
+      ],
+      "note": "The next-year price-to-profit number uses analysts’ estimated profit, so it is not guaranteed."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "4.2%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/adm-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADM.L&src=seo-dividend"
+  }
+ },
+ "short_name": "Admiral",
+ "first_memo_date": "2026-10-18T07:34:29Z"
+}

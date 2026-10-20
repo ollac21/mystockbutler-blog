@@ -1,0 +1,746 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "POW.TO",
+ "slug": "pow-to",
+ "company": "Power Corporation of Canada",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "holding_company",
+ "country": "canada",
+ "memo_date": "2026-10-15T17:12:49Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 91.75,
+ "price_date": "2026-10-15T15:37:38Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 291,
+  "tables": 27,
+  "words": 16749,
+  "sources": 161
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Power Corporation of Canada is a holding company: it owns major stakes in financial businesses rather than selling most services directly. Its dollar begins with a household, employer or institutional investor and reaches Power only after an operating company has served that customer, paid its costs and sent cash upward."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://www.powercorporation.com/media/uploads/reports/annual/bpcc-2025-annual-report-eng.pdf"
+  },
+  {
+   "title": "Power’s 2024 annual report",
+   "url": "https://2024.powercorporation.com/documents/bpcc-ar-2024-en-full.pdf"
+  },
+  {
+   "title": "Annual report — FY2023",
+   "url": "https://www.powercorporation.com/media/uploads/reports/annual/bpcc-ar-2023-en.pdf"
+  }
+ ],
+ "rivals": [
+  "BN.TO",
+  "MKL",
+  "L"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Power stock forecast",
+   "meta_description": "Power's weighted forecast reaches C$90.64 in October 2029, with 27% bear, 53% base and 20% bull scenarios.",
+   "opening": "Power's weighted price reaches C$90.64 by October 2029, an 8% gain including dividends. It hinges on whether operating earnings become durable per-share value and cash.",
+   "closing": "The full memo also answers questions about Power's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Power's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 267,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to limited weighted upside despite substantial two-sided risk. The weighted price is C$86.36 in October 2027, a 3% loss including dividends. It is C$88.27 in October 2028, a 2% gain. By October 2029, it reaches C$90.64, an 8% gain."
+      },
+      {
+       "n": 268,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The endpoint range is much wider: C$52.11 in the bear case to C$134.00 in the bull case, against today’s C$91.75. The probabilities are 27% bear, 53% base and 20% bull, so continuity is most likely, but valuation compression remains material."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 91.75, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 91.75, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27%",
+        "58.48 (-34%)",
+        "55.31 (-34%)",
+        "52.11 (-35%)"
+       ],
+       [
+        "Base",
+        "53%",
+        "92.63 (+4%)",
+        "93.13 (+7%)",
+        "93.90 (+12%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "107.40 (+20%)",
+        "119.88 (+37%)",
+        "134.00 (+56%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "86.36 (-3%)",
+        "88.27 (+2%)",
+        "90.64 (+8%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can be below today’s price even though the base case is above it."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Power?",
+     "paragraphs": [
+      {
+       "n": 278,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Book value starts from reported equity of C$25,110m at June 2026. The base reaches C$26,350m in October 2027, then C$27,580m in October 2028 and C$29,010m in October 2029. The roll-forward reflects earnings retained after distributions, using growth near Great-West’s 8%–10% target. The bear falls to C$23,010m first because a 10% decline in the C$22,344m stock portfolio is treated as a one-time equity shock. The bull reaches C$26,700m first and then C$30,100m, requiring 12% earnings growth and stronger execution. First-half operating earnings of C$1,879m and Milliman’s addition to Empower support the base and bull cases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "26,350 (23,010 / 26,700)",
+        "27,580 (23,210 / 28,300)",
+        "29,010 (23,410 / 30,100)"
+       ],
+       [
+        "Shares (millions)",
+        "626 (630 / 622)",
+        "622 (629 / 614)",
+        "618 (629 / 606)"
+       ],
+       [
+        "Dividends per share",
+        "2.65 (2.52 / 2.75)",
+        "2.85 (2.52 / 3.15)",
+        "3.05 (2.52 / 3.55)"
+       ],
+       [
+        "Price to book value",
+        "2.20 (1.60 / 2.50)",
+        "2.10 (1.50 / 2.60)",
+        "2.00 (1.40 / 2.70)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Power really make?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Cash conversion",
+       "text": "In 2025, the combined parent entities generated C$1,791 million of operating inflows. Cash dividends paid on participating shares were C$1,541 million. Payments on non-participating and perpetual preferred shares added C$191 million, leaving about C$59 million before repurchases and investment activity."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for Power today?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing operating P/E is 16.1x. P/E means the price investors pay for each dollar of earnings. The forward multiple is 14.7x, implying about 9.5% earnings growth if both measures use the same definition. But reported and adjusted earnings differ: second-quarter reported EPS was C$1.10, while adjusted EPS was C$1.55. Investors must decide whether the adjustments describe durable performance."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "91.75"
+       ],
+       [
+        "Market value (every class) (calculated)",
+        "57,594.01"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.4x"
+       ],
+       [
+        "P/E on operating earnings, last 12 months (calculated)",
+        "16.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.9%"
+       ]
+      ],
+      "note": "The next-twelve-month price-to-earnings number uses an analyst’s forecast of profit, so it is an estimate rather than money the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "91.75"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "90.64 (+8%)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.7x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 91.75,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27%",
+      "values": [
+       "58.48 (-34%)",
+       "55.31 (-34%)",
+       "52.11 (-35%)"
+      ]
+     },
+     "Base": {
+      "probability": "53%",
+      "values": [
+       "92.63 (+4%)",
+       "93.13 (+7%)",
+       "93.90 (+12%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "107.40 (+20%)",
+       "119.88 (+37%)",
+       "134.00 (+56%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "86.36 (-3%)",
+       "88.27 (+2%)",
+       "90.64 (+8%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pow-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=POW.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Power dividend",
+   "meta_description": "Power's dividend rose over time, while cash flow and parent liquidity shape how much it can pay.",
+   "opening": "Power's dividend rose from C$1.84 in 2021 to C$2.45 in 2025. Parent cash flow only modestly exceeded participating dividends in 2025, so coverage depends on subsidiary distributions and cash conversion.",
+   "closing": "The full memo also examines Power’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Power pay per share?",
+     "paragraphs": [
+      {
+       "n": 280,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises to C$2.65 in October 2027 and C$2.85 in October 2028. It reaches C$3.05 in October 2029. This continues the increase from C$1.84 in 2021 to C$2.45 in 2025, while recognizing that parent cash flow only modestly exceeded participating dividends in 2025. The bear holds DPS at C$2.52 after a small initial increase. The bull reaches C$3.55, requiring stronger subsidiary distributions and cash conversion."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per participating share",
+      "caption": "What one share gets (C$ per participating share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Book value per share",
+        "36.31",
+        "35.56",
+        "32.49",
+        "31.37",
+        "31.23"
+       ],
+       [
+        "Operating earnings per share",
+        "5.31",
+        "4.58",
+        "4.04",
+        "3.31",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.38",
+        "2.20",
+        "2.07",
+        "1.98",
+        "1.78"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.10",
+        "0.66",
+        "0.88",
+        "0.62",
+        "0.22"
+       ],
+       [
+        "**= Kept, per share**",
+        "1.78",
+        "1.69",
+        "1.08",
+        "0.71",
+        ""
+       ]
+      ],
+      "note": "The “kept” amount also subtracts share buybacks, so it means money left after dividends and buying back shares, not just profit left in the business."
+     }
+    },
+    {
+     "heading": "Does Power's dividend fit its cash flow?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Cash conversion",
+       "text": "In 2025, the combined parent entities generated C$1,791 million of operating inflows. Cash dividends paid on participating shares were C$1,541 million. Payments on non-participating and perpetual preferred shares added C$191 million, leaving about C$59 million before repurchases and investment activity."
+      },
+      {
+       "n": 171,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Cash conversion",
+       "text": "Power also repurchased C$711 million of shares. That payment must be read with asset disposals, financing, and existing liquidity rather than attributed entirely to one year’s recurring inflow. At June 2026, holding-company cash and equivalents were approximately C$2.2 billion, a more relevant measure of parent flexibility than consolidated cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the capital went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the capital went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Operating earnings (company's measure)",
+        "3,400",
+        "2,971",
+        "2,671",
+        "2,221",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "1,541",
+        "1,437",
+        "1,374",
+        "1,331",
+        "1,211"
+       ],
+       [
+        "− Share buybacks",
+        "711",
+        "430",
+        "583",
+        "415",
+        "153"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "1,148",
+        "1,104",
+        "714",
+        "475",
+        ""
+       ],
+       [
+        "Paid out, % of operating earnings",
+        "66.2%",
+        "62.8%",
+        "73.3%",
+        "78.6%",
+        ""
+       ]
+      ],
+      "note": "The operating earnings are the company's adjusted profit measure, not its full reported profit, and the way it was calculated changed for some earlier years."
+     }
+    },
+    {
+     "heading": "What could change Power's dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case is roughly flat after dividends through October 2029, because operating progress and per-share value growth must overcome a persistent holding-company discount. Great-West targets medium-term base EPS growth of 8.0%–10.0%, base ROE of at least 19.0%, capital generation of at least 80.0%, and a common-dividend payout ratio of 45.0%–55.0%. IGM targets 9.0% adjusted EPS growth over 2023–2028. Power authorized repurchases of up to 20 million subordinate voting shares through February 28, 2027, but that ceiling is not a commitment."
+      },
+      {
+       "n": 290,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "From 2026 through 2029, Milliman participant and asset retention, followed by integration savings, will test the earnings assumptions. Parent liquidity will also show whether dividends and measured repurchases can continue; constrained cash would weaken both the share-count and DPS forecasts."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Power's dividend yield against its price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "91.75"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.4x"
+       ],
+       [
+        "P/E on operating earnings, last 12 months (calculated)",
+        "16.1x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.9%"
+       ]
+      ],
+      "note": "The next-twelve-month price-to-earnings number uses an analyst’s forecast of profit, so it is an estimate rather than money the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.38"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.9%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "1.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per participating share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.78",
+      "1.98",
+      "2.07",
+      "2.20",
+      "2.38"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pow-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=POW.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Power earnings: guidance and what to watch",
+   "meta_description": "Power reports next on November 11, 2026; its guidance, recent profit trend and Milliman integration are the key points.",
+   "opening": "Power will report its next results on November 11, 2026. Watch whether Milliman integration spending stays within expectations.",
+   "closing": "The full memo also covers Power’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Power guided for its businesses?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has said",
+       "text": "Great-West, Power’s insurance subsidiary, supplies the clearest operating yardstick. It targets base earnings-per-share growth of 8.0%–10.0% and base return on equity of at least 19.0%. “Base” means an adjusted measure that excludes specified items, while return on equity compares profit with shareholders’ accounting capital."
+      },
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has said",
+       "text": "Great-West also targets capital generation of at least 80.0% and a common-dividend payout of 45.0%–55.0% of base earnings. Capital generation measures regulatory capacity created after the insurance business absorbs the capital it needs; it is not cash immediately available to Power. IGM, Power’s investment-management subsidiary, targets 9.0% adjusted earnings-per-share growth over 2023–2028."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Great West, Base EPS Growth",
+        "Medium term",
+        "8.0%",
+        "10.0%",
+        "Sep 10, 2026"
+       ],
+       [
+        "Great West, Base ROE",
+        "Medium term",
+        "19.0%",
+        "",
+        "Sep 10, 2026"
+       ],
+       [
+        "Great West, Base Dividend Payout Ratio",
+        "Medium term",
+        "45.0%",
+        "55.0%",
+        "Sep 10, 2026"
+       ],
+       [
+        "Great West, Base Capital Generation",
+        "Medium term",
+        "80.0%",
+        "",
+        "Sep 10, 2026"
+       ],
+       [
+        "IGM, 5-Year Adjusted EPS CAGR",
+        "2023–2028",
+        "9.0%",
+        "",
+        "Sep 10, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Power kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Power has repeatedly promised to return capital and simplify the group. It reported more than C$10 billion returned through dividends and repurchases since 2020, including C$1.5 billion in the first half of 2026. O’Sullivan reaffirmed dividends and buybacks as priorities, but his own record began only in July. His test is value created per share after compensation and financing costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Power’s recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Operating earnings against net income",
+       "text": "The first distinction is between Power’s view of recurring business performance and the final accounting result. Operating earnings improved in 2025 while net income declined, because net income also absorbs investment movements, disposals, impairments, taxes, and other items. The gap is therefore evidence about the business, not an error to ignore."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "C$ millions",
+      "caption": "The last eight reported periods (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "15,117",
+        "9,860",
+        "12,048",
+        "13,538",
+        "12,350",
+        "12,530",
+        "8,645",
+        "17,540"
+       ],
+       [
+        "Operating earnings (company's measure)",
+        "974",
+        "905",
+        "867",
+        "863",
+        "883",
+        "787",
+        "829",
+        "693"
+       ],
+       [
+        "Net income",
+        "709",
+        "840",
+        "424",
+        "716",
+        "785",
+        "702",
+        "946",
+        "384"
+       ],
+       [
+        "EPS, diluted",
+        "1.08",
+        "1.27",
+        "0.62",
+        "1.07",
+        "1.19",
+        "1.05",
+        "1.43",
+        "0.56"
+       ],
+       [
+        "Book value per share",
+        "37.74",
+        "36.52",
+        "36.31",
+        "36.74",
+        "35.90",
+        "36.10",
+        "35.56",
+        "34.00"
+       ]
+      ],
+      "note": "The company's reported revenue is not just money from sales; it also includes investment income and changes in investment values, so it can rise even when sales do not."
+     }
+    },
+    {
+     "heading": "What should Power watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Investors should separate growth in the acquired operations from growth in Empower’s existing business and watch whether integration spending remains within expectations. A larger platform alone will not prove successful execution."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/pow-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=POW.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Power",
+ "first_memo_date": "2026-10-15T17:12:49Z"
+}

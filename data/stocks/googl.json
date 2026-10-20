@@ -1,0 +1,777 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GOOGL",
+ "slug": "googl",
+ "company": "Alphabet Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-11T18:00:02Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 351.66,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 16924,
+  "sources": 358
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Alphabet is the company behind Google, and its business begins with a free service: helping people find information and get things done. It turns that daily activity into money from advertising, subscriptions, computing, digital goods, devices and newer ventures."
+ },
+ "sources": [
+  {
+   "title": "Alphabet’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "AMZN",
+  "MSFT",
+  "META",
+  "AAPL",
+  "ORCL",
+  "NVDA",
+  "NFLX",
+  "SNAP",
+  "BABA"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Alphabet stock forecast",
+   "meta_description": "Alphabet’s stock forecast spans bear, base, bull and weighted scenarios, with cash generation and AI investment driving the range.",
+   "opening": "Alphabet’s weighted case reaches US$510.69 by October 2029, a 46% return including dividends. Alphabet’s upside depends on turning AI and infrastructure investment into durable cash per share.",
+   "closing": "The full Alphabet memo answers how Alphabet’s business works, who its rivals are, how management is allocating capital, and what risks could change the view.",
+   "blocks": [
+    {
+     "heading": "Where could Alphabet's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast points to $376.88 in October 2027, $429.30 in October 2028 and $510.69 in October 2029, including dividends. Those prices imply returns of 7%, 23% and 46% from today’s $351.66. By October 2029, however, the bear case reaches only $238.70 while the bull case reaches $792.61, so the path matters as much as the average."
+      },
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The probabilities are 25% bear, 55% base and 20% bull. The base case therefore carries most weight, but the downside is substantial if Search economics weaken before Cloud returns become visible."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 351.66, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 351.66, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "283.48 (-19%)",
+        "249.20 (-29%)",
+        "238.70 (-31%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "391.25 (+12%)",
+        "448.91 (+28%)",
+        "531.80 (+52%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "454.11 (+29%)",
+        "600.48 (+72%)",
+        "792.61 (+127%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "376.88 (+7%)",
+        "429.30 (+23%)",
+        "510.69 (+46%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Alphabet?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA is the main operating judgement. The latest proxy is about $174,800 million, based on trailing operating income plus annualised first-half depreciation. The base case rises to $206,700 million in October 2027, then $240,950 million and $276,000 million, as Search, YouTube, subscriptions and Cloud grow. Cloud revenue grew 82% year over year and backlog reached about $513,900 million, but infrastructure spending limits early margin expansion."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case keeps EBITDA near the latest proxy before reaching $187,200 million, because AI answers may reduce valuable clicks, serving costs may rise and Cloud conversion may lag. The bull case reaches $331,800 million as AI supports Search, backlog converts quickly and new capacity earns attractive margins. These are estimates, not guidance. Management raised 2026 capital-spending guidance to $195,000–$205,000 million and signalled another significant increase in 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Alphabet really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is cash from operations minus spending on long-lasting assets. In 2025, Alphabet generated $164,713 million from operations and spent $91,447 million on capital spending, leaving $73,266 million of free cash flow. Capital spending absorbed almost the entire increase in operating cash, so free-cash-flow margin fell to 18.2%."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "164,713",
+        "125,299",
+        "101,746",
+        "91,495",
+        "91,652"
+       ],
+       [
+        "− Capital spending",
+        "91,447",
+        "52,535",
+        "32,251",
+        "31,485",
+        "24,640"
+       ],
+       [
+        "**= Free cash flow**",
+        "73,266",
+        "72,764",
+        "69,495",
+        "60,010",
+        "67,012"
+       ],
+       [
+        "− Stock pay",
+        "24,953",
+        "22,785",
+        "22,460",
+        "19,362",
+        "15,376"
+       ],
+       [
+        "**= Real free cash flow**",
+        "48,313",
+        "49,979",
+        "47,035",
+        "40,648",
+        "51,636"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Alphabet today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "351.66"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "23.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "351.66"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "510.69 (+46%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 351.66,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "283.48 (-19%)",
+       "249.20 (-29%)",
+       "238.70 (-31%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "391.25 (+12%)",
+       "448.91 (+28%)",
+       "531.80 (+52%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "454.11 (+29%)",
+       "600.48 (+72%)",
+       "792.61 (+127%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "376.88 (+7%)",
+       "429.30 (+23%)",
+       "510.69 (+46%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/googl/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GOOGL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Alphabet dividend: payments, cash cover and yield",
+   "meta_description": "Alphabet's dividend payments, cash coverage, possible changes and current yield, explained in plain English.",
+   "opening": "Alphabet paid $0.83 per share in 2025, with the forecast rising to $1.10, $1.40 and $1.70 in the base case. Its cash has funded dividends and much larger buybacks, but negative second-quarter free cash flow makes a dividend freeze credible.",
+   "closing": "The full memo also examines Alphabet's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Alphabet pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend rises from the 2025 rate of $0.83 to $1.10, $1.40 and $1.70 in the base case. The bear case freezes it because capital spending is high; the bull case reaches $2.30 as cash conversion improves. The freeze remains credible because second-quarter free cash flow was negative $5,855 million."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; percentages where indicated",
+      "caption": "What one share gets (US$ per share; percentages where indicated)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Paid to minority owners, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.82",
+        "0.59",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.74",
+        "5.00",
+        "4.83",
+        "4.51",
+        "3.71"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Alphabet's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Alphabet returned most free cash flow through buybacks, with dividends beginning in 2024. A payout can exceed cash free after capital expenditure because employee share awards create an economic cost without requiring cash at the moment of grant. Buybacks reduce the share count, but new employee shares replace part of that reduction."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation saves cash today but gives employees part of the company. Alphabet recorded $24,953 million of it in 2025. Subtracting that owner cost leaves approximately $48,313 million of real free cash flow. Buybacks can offset employee issuance, but counting all buybacks and stock compensation as separate costs can double-count dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "73,266",
+        "72,764",
+        "69,495",
+        "60,010",
+        "67,012"
+       ],
+       [
+        "− Dividends paid",
+        "10,049",
+        "7,363",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "45,709",
+        "62,222",
+        "61,504",
+        "59,296",
+        "50,274"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "17,508",
+        "3,179",
+        "7,991",
+        "714",
+        "16,738"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "76.1%",
+        "95.6%",
+        "88.5%",
+        "98.8%",
+        "75.0%"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "115.4%",
+        "139.2%",
+        "130.8%",
+        "145.9%",
+        "97.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Alphabet's dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Dividends per share",
+        "1.10 (0.83 / 1.25)",
+        "1.40 (0.83 / 1.75)",
+        "1.70 (0.83 / 2.30)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "23.00 (20.00 / 25.00)",
+        "23.00 (18.00 / 27.00)",
+        "24.00 (17.00 / 29.00)"
+       ],
+       [
+        "Net debt",
+        "-24,500 (-24,300 / -14,000)",
+        "74,600 (87,600 / 71,700)",
+        "139,500 (204,800 / 109,400)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Alphabet's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow is operating cash after capital expenditure. Alphabet’s recent free-cash-flow yield is only a small current return on the share price, and its real free-cash-flow yield is thinner still. That compares poorly with the 5.24% ten-year Treasury yield, so investors are relying heavily on future growth rather than current cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.82"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; percentages where indicated",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.59",
+      "0.82"
+     ],
+     "Real free cash flow per share": [
+      "3.81",
+      "3.09",
+      "3.70",
+      "4.02",
+      "3.95"
+     ],
+     "Free cash flow per share": [
+      "4.94",
+      "4.56",
+      "5.46",
+      "5.85",
+      "5.99"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/googl/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GOOGL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Alphabet earnings: guidance and what to watch",
+   "meta_description": "Alphabet's next results are expected October 28, 2026; see guidance, recent results and the Cloud costs to watch.",
+   "opening": "Alphabet's next results are expected on October 28, 2026. Watch whether rented computing capacity becomes a lasting margin burden.",
+   "closing": "The full memo answers what else matters about Alphabet's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Alphabet guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On July 22, management raised 2026 capital-expenditure guidance to US$195,000 million–US$205,000 million. Capital expenditure, or CapEx, means buying long-lived assets such as servers, networking equipment and data centers. Management said capacity is arriving sooner than expected and signalled another significant increase in 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date it was given"
+      ],
+      "rows": [
+       [
+        "full year 2026 CapEx guidance",
+        "Year to Dec 2026",
+        "195,000",
+        "205,000",
+        "Jul 22, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Alphabet kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The earlier bargain worked as promised: Alphabet’s return over 2023–2025 was 203.65%, and Pichai earned twice his target on the relevant award. The broader lesson is narrower than “management is against shareholders”: management has substantial money alongside them, but private-subsidiary awards require scrutiny of valuation and the capital used to produce growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Alphabet's revenue and profit done in the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue rose from $257,637 million in 2021 to $402,836 million in 2025. Growth slowed sharply after 2021, then recovered in 2024 and 2025. The latest quarters continued that recovery, with year-over-year growth reaching approximately 24% in June 2026."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "119,796",
+        "109,896",
+        "113,828",
+        "102,346",
+        "96,428",
+        "90,234",
+        "96,469",
+        "88,268"
+       ],
+       [
+        "Operating income",
+        "40,770",
+        "39,696",
+        "35,934",
+        "31,228",
+        "31,271",
+        "30,606",
+        "30,972",
+        "28,521"
+       ],
+       [
+        "Net income",
+        "112,193",
+        "62,578",
+        "34,455",
+        "34,979",
+        "28,196",
+        "34,540",
+        "26,536",
+        "26,301"
+       ],
+       [
+        "EPS, diluted",
+        "9.12",
+        "5.12",
+        "2.82",
+        "2.87",
+        "2.31",
+        "2.81",
+        "2.15",
+        "2.12"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Alphabet's next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next expected results date is October 28, 2026. Management plans greater use of third-party capacity during the third quarter while its own facilities are built. Renting lets Google serve customers sooner, but it pays an outside provider while also paying for new infrastructure."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The trade can work if customers stay with Google and later move onto cheaper company-owned capacity. It becomes troubling if rental costs continue while Alphabet’s own equipment remains underused and depreciation rises. Results should therefore reveal not only Cloud sales, but also the cost of fulfilling them."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "119,796"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "9.12"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "88,268",
+      "96,469",
+      "90,234",
+      "96,428",
+      "102,346",
+      "113,828",
+      "109,896",
+      "119,796"
+     ],
+     "EPS, diluted": [
+      "2.12",
+      "2.15",
+      "2.81",
+      "2.31",
+      "2.87",
+      "2.82",
+      "5.12",
+      "9.12"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/googl/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GOOGL&src=seo-earnings"
+  }
+ },
+ "short_name": "Alphabet",
+ "first_memo_date": "2026-10-11T18:00:02Z"
+}

@@ -1,0 +1,815 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TRI.TO",
+ "slug": "tri-to",
+ "company": "Thomson Reuters Corporation",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-15T04:40:22Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 150.01,
+ "price_date": "2026-10-14T20:00:00Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 258,
+  "tables": 27,
+  "words": 16724,
+  "sources": 182
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Thomson Reuters sells trusted professional information through software, subscriptions, licenses, and print. Its business is a loop: customers pay for work they need to do, and Thomson Reuters spends that money on expert content, technology, people, and delivery."
+ },
+ "sources": [
+  {
+   "title": "Thomson Reuters — Annual Report 2025 — March 5, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1075124/000119312526094222/tri-ex99_1.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1075124/000119312524062308/d740282dex991.htm"
+  },
+  {
+   "title": "Q2 financing disclosure",
+   "url": "https://www.sec.gov/Archives/edgar/data/1075124/000119312526338256/tri-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "RELX",
+  "INTU",
+  "VERX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Thomson Reuters stock forecast",
+   "meta_description": "Thomson Reuters stock forecast: weighted price is CAD 164.84 in October 2029, with a +18% return; scenarios are bear, base and bull.",
+   "opening": "The weighted case for Thomson Reuters is CAD 164.84 in October 2029, a +18% return, with the bear case at 25%, the base at 55%, and the bull at 20%. Thomson Reuters hinges on paid AI adoption, renewals, cash generation, and the valuation multiple.",
+   "closing": "The full Thomson Reuters memo also answers how Thomson Reuters runs its business, faces rivals, is managed, and carries its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Thomson Reuters's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is CAD 136.23 in October 2027, a -7% return. It is CAD 164.84 in October 2029, an +18% return. The bear case has 25% probability, the base 55%, and the bull 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per TRI.TO share at each date; in brackets the return since today's 150.01, dividends included",
+      "caption": "What the shares could be worth (CAD per TRI.TO share at each date; in brackets the return since today's 150.01, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "80.86 (-44 %)",
+        "72.36 (-47 %)",
+        "70.28 (-46 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "144.21 (-1 %)",
+        "152.71 (+7 %)",
+        "161.46 (+16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "183.49 (+25 %)",
+        "232.19 (+60 %)",
+        "292.32 (+104 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "136.23 (-7 %)",
+        "148.52 (+4 %)",
+        "164.84 (+18 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Thomson Reuters?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Free cash flow after stock pay is the main operating assumption. The forecast starts from about US$1,980 million, using 2026 guidance of US$2,100 million less estimated stock pay. The latest quarter produced US$728 million before stock pay, while the historical measure rose from US$1,101 million in 2021 to US$1,842 million in 2025. The base case sets US$2,170 million for October 2027 and US$2,390 million for October 2028. It reaches US$2,630 million in October 2029. The bear case assumes weaker demand and rising AI costs; the bull case assumes paid upgrades, stronger renewals and workflow efficiency. Working-capital timing makes a down year plausible even though the recent trend has been upward."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires AI trials to fail to convert into paid upgrades and renewals, while cheaper tools pressure pricing. Organic growth falls below guidance, margins stall as inference costs rise, and the multiple contracts. The case gives CAD 80.86 in October 2027. By October 2029, it gives CAD 70.28. Its probability is 25% because recurring revenue, retention and the five-year cash-flow record make sustained deterioration possible but not the central outcome."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Thomson Reuters really make?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is another claim on shareholders. It is not a current cash payment, but it gives employees shares and can dilute other owners. After deducting US$111 million of stock pay, analytical “real free cash flow” was US$1,842 million, or 24.6% of revenue. That measure still improved on 2021, when it was 17.3%."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "1,953",
+        "1,787",
+        "1,739",
+        "1,255",
+        "1,177"
+       ],
+       [
+        "− Stock pay",
+        "111",
+        "87",
+        "83",
+        "85",
+        "76"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,842",
+        "1,700",
+        "1,656",
+        "1,170",
+        "1,101"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "26.1%",
+        "24.6%",
+        "25.6%",
+        "18.9%",
+        "18.5%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "24.6%",
+        "23.4%",
+        "24.4%",
+        "17.7%",
+        "17.3%"
+       ]
+      ],
+      "note": "The company's own free cash flow differs because it leaves some cash spending out of its count, while ours includes it; in 2025, it also subtracts three million dollars that we do not."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Thomson Reuters?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio shows what investors pay for profit. A trailing P/E of 27.6x means paying C$27.60 for each C$1 of earnings from the previous twelve months. The forward P/E of 24.2x uses expected earnings instead, so it already assumes improvement. That expectation rests partly on recurring revenue, which made up 82% of revenue in the second quarter of 2026. A renewing Westlaw subscription is more predictable than a one-time sale, but predictable revenue still requires spending on software, editorial work and AI delivery."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "P/E, last 12 months (calculated)",
+        "27.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "The enterprise value is only an estimate of today’s business value because it uses debt and cash from June 30, not today’s amounts."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "150.01"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "164.84 (+18 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 105.50081354441511,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "80.86 (-44 %)",
+       "72.36 (-47 %)",
+       "70.28 (-46 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "144.21 (-1 %)",
+       "152.71 (+7 %)",
+       "161.46 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "183.49 (+25 %)",
+       "232.19 (+60 %)",
+       "292.32 (+104 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "136.23 (-7 %)",
+       "148.52 (+4 %)",
+       "164.84 (+18 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/tri-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRI.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Thomson Reuters dividend",
+   "meta_description": "Thomson Reuters dividend: see the per-share payout, cash coverage, possible changes, and current yield against the share price.",
+   "opening": "Thomson Reuters pays an annualized US$2.62 dividend per share. Thomson Reuters’ dividend consumed about 58% of free cash flow, while 2025 dividends and buybacks exceeded free cash flow.",
+   "closing": "The full memo also explains Thomson Reuters’ business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Thomson Reuters pay per share?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at an annualized US$2.62. The base case applies 8% annual increases, below the recent pattern, because recurring growth and cash generation support increases but investment and debt remain competing uses. The bear case holds the payout flat. The bull case repeats 10% increases, supported by five consecutive increases of that size and 33 consecutive years of increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per common share; share changes in %",
+      "caption": "What one share gets (US$ per common share; share changes in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "4.41",
+        "4.02",
+        "3.81",
+        "2.73",
+        "2.51"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.34",
+        "2.12",
+        "1.94",
+        "1.81",
+        "1.65"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.26",
+        "1.44",
+        "2.36",
+        "2.79",
+        "2.98"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "0.46",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "0.19",
+        "",
+        "0.50",
+        "1.87",
+        "2.12"
+       ]
+      ],
+      "note": "The company’s own free cash flow per share is higher because it does not subtract the value of shares given to employees as pay; we subtract that cost."
+     }
+    },
+    {
+     "heading": "Is Thomson Reuters’ dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow—the cash left after operating needs and capital investment—rose from $1,177 million in 2021 to $1,953 million in 2025. Yet dividends and buybacks exceeded free cash flow in four of those five years. In 2025, dividends were $1,035 million and buybacks were $1,000 million, before $789 million of acquisitions. Investment-sale proceeds helped bridge that gap."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,953",
+        "1,787",
+        "1,739",
+        "1,255",
+        "1,177"
+       ],
+       [
+        "− Dividends paid",
+        "1,035",
+        "944",
+        "887",
+        "834",
+        "773"
+       ],
+       [
+        "− Share buybacks",
+        "1,000",
+        "639",
+        "1,079",
+        "1,282",
+        "1,400"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "204",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "82",
+        "",
+        "227",
+        "861",
+        "996"
+       ],
+       [
+        "− Acquisitions",
+        "789",
+        "969",
+        "1,195",
+        "163",
+        "6"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Thomson Reuters’ dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "2,170 (1,760 / 2,300)",
+        "2,390 (1,820 / 2,650)",
+        "2,630 (1,900 / 3,050)"
+       ],
+       [
+        "Shares (millions)",
+        "430 (432 / 428)",
+        "427 (432 / 424)",
+        "425 (431 / 419)"
+       ],
+       [
+        "Dividends per share",
+        "2.78 (2.62 / 2.82)",
+        "3.00 (2.62 / 3.10)",
+        "3.24 (2.62 / 3.41)"
+       ],
+       [
+        "Net debt",
+        "1,958 (1,804 / 2,242)",
+        "1,918 (1,687 / 2,377)",
+        "1,733 (1,491 / 2,228)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Thomson Reuters’ dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash generation provides the harder test. A free-cash-flow yield of 4.3% means the business produces about C$4.30 of annual free cash flow for every C$100 invested. The 2.5% dividend yield leaves cash for acquisitions, debt repayment, repurchases or reinvestment. The dividend therefore consumes about 58% of free cash flow, assuming the periods match."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.34"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per common share; share changes in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.65",
+      "1.81",
+      "1.94",
+      "2.12",
+      "2.34"
+     ],
+     "Real free cash flow per share": [
+      "2.35",
+      "2.54",
+      "3.63",
+      "3.83",
+      "4.16"
+     ],
+     "Free cash flow per share": [
+      "2.51",
+      "2.73",
+      "3.81",
+      "4.02",
+      "4.41"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/tri-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRI.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Thomson Reuters earnings",
+   "meta_description": "Thomson Reuters expects results on November 3, 2026; guidance, recent results, and AI adoption are the key focus.",
+   "opening": "Thomson Reuters expects its next results on November 3, 2026. Thomson Reuters' key focus is organic growth and the outlook after Global Print moves to discontinued operations.",
+   "closing": "The full Thomson Reuters memo also answers questions about its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Thomson Reuters guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case points to a modest return by October 2029 if paid AI adoption, renewals, cash generation, and the valuation multiple hold. For 2026, management guides to 8.0% revenue growth and 8.0% organic revenue growth. It expects Big 3 organic growth of 9.5%–10.0% and a 100-basis-point adjusted EBITDA margin increase versus 2025. Free-cash-flow guidance is US$2,100 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions unless a row specifies % or basis points",
+      "caption": "Guidance in force (US$ millions unless a row specifies % or basis points)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date given"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "Year to Dec 2026",
+        "8.0%",
+        "8.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Organic revenue growth",
+        "Year to Dec 2026",
+        "8.0%",
+        "8.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted EBITDA margin (basis-point increase versus 2025)",
+        "Year to Dec 2026",
+        "100",
+        "100",
+        "Aug 5, 2026"
+       ],
+       [
+        "Free cash flow",
+        "Year to Dec 2026",
+        "2,100",
+        "2,100",
+        "Aug 5, 2026"
+       ],
+       [
+        "“Big 3” Segments, Organic revenue growth",
+        "Year to Dec 2026",
+        "9.5%",
+        "10.0%",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "The 100 shown for the adjusted earnings before interest, taxes, depreciation, and amortization margin means the margin should rise by one percentage point from 2025, not reach 100 percent."
+     }
+    },
+    {
+     "heading": "Has Thomson Reuters kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The operating test was organic revenue growth. Organic growth measures the existing business without the effects of acquisitions, disposals, or currency movements. Thomson Reuters set a 2025 target of 7.0% to 7.5% and delivered 7.0%, the bottom of the range. Hasker’s annual incentive paid 101% of target. That shows operating results affected pay, but not whether the target was especially demanding."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Thomson Reuters' recent trend in revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached US$1,954 million, compared with US$1,785 million a year earlier. The calculated increase was 9.5%. Organic growth was 8%, and recurring revenue grew organically by 9%. Legal and Corporates both delivered double-digit organic growth, so the improvement was broad."
+      },
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income rose from US$297 million to US$444 million. Diluted EPS increased from US$0.67 to US$1.01, helped by the gain and by fewer shares. Tax adjustments added a net US$3 million benefit, too small to explain the wider profit increase."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,954",
+        "2,087",
+        "2,009",
+        "1,782",
+        "1,785",
+        "1,900",
+        "1,909",
+        "1,724"
+       ],
+       [
+        "Operating income",
+        "558",
+        "639",
+        "540",
+        "593",
+        "436",
+        "563",
+        "722",
+        "415"
+       ],
+       [
+        "Net income",
+        "444",
+        "477",
+        "333",
+        "428",
+        "297",
+        "425",
+        "607",
+        "277"
+       ],
+       [
+        "EPS, diluted",
+        "1.01",
+        "1.09",
+        "0.76",
+        "0.96",
+        "0.67",
+        "0.95",
+        "1.36",
+        "0.62"
+       ]
+      ],
+      "note": "The free cash flow number is our broader count because it also subtracts lease payments and interest paid, while the company subtracts only spending on equipment."
+     }
+    },
+    {
+     "heading": "What should Thomson Reuters watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "November 3, 2026 Q3 results should show whether organic growth and the outlook hold after Global Print moves to discontinued operations. CoCounsel Legal became available in the UK on October 14, 2026, with broader availability expected by the end of October. November’s SYNERGY event will spotlight product releases. Through 2027–2029, renewals, AI-enabled contract value, margins, free cash flow, and net debt will determine the economics."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "1,954"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.01"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,724",
+      "1,909",
+      "1,900",
+      "1,785",
+      "1,782",
+      "2,009",
+      "2,087",
+      "1,954"
+     ],
+     "EPS, diluted": [
+      "0.62",
+      "1.36",
+      "0.95",
+      "0.67",
+      "0.96",
+      "0.76",
+      "1.09",
+      "1.01"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/tri-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRI.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Thomson Reuters",
+ "first_memo_date": "2026-10-15T04:40:22Z"
+}

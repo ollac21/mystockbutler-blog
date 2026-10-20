@@ -1,0 +1,856 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TXN",
+ "slug": "txn",
+ "company": "Texas Instruments Incorporated",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T15:20:06Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 280.565,
+ "price_date": "2026-10-12T14:03:22Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 17771,
+  "sources": 238
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Texas Instruments sells the chips and calculators that make electronic equipment use electricity, sense the world and follow instructions. Its business is a loop: engineers choose its parts, factories make and stock them, customers buy them for equipment, and TI keeps what remains after the costs of making and supporting them."
+ },
+ "sources": [
+  {
+   "title": "TI Q2 2026 results call",
+   "url": "https://investor.ti.com/static-files/1eb79e47-24c2-40f1-84b8-743512b801fa"
+  },
+  {
+   "title": "TI’s January 2026 earnings call",
+   "url": "https://investor.ti.com/static-files/7901445c-3338-4108-81d2-872ae768cf9d"
+  },
+  {
+   "title": "TI 2026 investor presentation, slides 16–17",
+   "url": "https://investor.ti.com/static-files/8c327c57-cd94-439d-a276-ef7cffcdc438"
+  }
+ ],
+ "rivals": [
+  "ADI",
+  "NXPI",
+  "STM",
+  "ON",
+  "MCHP",
+  "MPWR",
+  "SWKS",
+  "ALGM"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "TI stock forecast",
+   "meta_description": "TI's weighted price reaches $300.86 in October 2027 and $372.93 by October 2029, across bear, base and bull cases.",
+   "opening": "TI's probability-weighted price reaches $300.86 in October 2027, including dividends. It hinges on factory loading.",
+   "closing": "The full memo also explains TI's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could TI's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to moderate weighted upside, but a wide distribution of outcomes. The probability-weighted price reaches $300.86 in October 2027, including dividends, for a 9% return from today’s $280.56. It rises to $336.72 in October 2028, a 24% return, and $372.93 in October 2029, a 40% return."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the bear case gives $154.60, while the bull case gives $624.53. The probabilities are 25% bear, 55% base and 20% bull, so the central recovery is more likely than either extreme."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 280.56, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 280.56, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "148.86 (-45 %)",
+        "143.01 (-45 %)",
+        "154.60 (-39 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "334.39 (+21 %)",
+        "360.38 (+33 %)",
+        "380.67 (+43 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "398.67 (+44 %)",
+        "513.80 (+88 %)",
+        "624.53 (+130 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "300.86 (+9 %)",
+        "336.72 (+24 %)",
+        "372.93 (+40 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for TI, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base assumes recovery from the $9,458 million trailing proxy. Q2 2026 revenue grew 23% year over year, while Analog grew 26% and Embedded Processing grew 16%. The bear case assumes weaker demand and underused factories. The bull case requires broad orders, stronger loading and earned Silicon Labs savings."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,300 (9,100 / 13,900)",
+        "14,850 (10,200 / 16,400)",
+        "16,275 (11,800 / 19,000)"
+       ],
+       [
+        "Shares (millions)",
+        "913 (917 / 908)",
+        "914 (920 / 904)",
+        "914 (923 / 901)"
+       ],
+       [
+        "Dividends per share",
+        "6.08 (6.08 / 6.08)",
+        "6.38 (6.08 / 6.75)",
+        "6.70 (5.50 / 7.49)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "24.00 (17.00 / 27.00)",
+        "23.00 (15.00 / 29.00)",
+        "22.00 (14.00 / 30.00)"
+       ],
+       [
+        "Net debt",
+        "13,803 (18,224 / 13,384)",
+        "12,274 (21,462 / 10,968)",
+        "9,962 (22,520 / 7,110)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does TI really make?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Profit is an accounting result; free cash flow is what remains after investment. TI generated $7,153 million from operations in 2025. Capital spending was $4,550 million, leaving ordinary free cash flow of $2,603 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,153",
+        "6,318",
+        "6,420",
+        "8,720",
+        "8,756"
+       ],
+       [
+        "− Capital spending",
+        "4,550",
+        "4,820",
+        "5,071",
+        "2,797",
+        "2,462"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,603",
+        "1,498",
+        "1,349",
+        "5,923",
+        "6,294"
+       ],
+       [
+        "− Stock pay",
+        "419",
+        "387",
+        "362",
+        "289",
+        "230"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,184",
+        "1,111",
+        "987",
+        "5,634",
+        "6,064"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "14.7%",
+        "9.6%",
+        "7.7%",
+        "29.6%",
+        "34.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for TI today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E, or price-to-earnings ratio, compares the share price with earnings per share from the past year. The forward P/E uses estimated earnings for the next year. TI’s 42.7x trailing P/E implies earnings of about $6.57 per share, while its 27.3x forward P/E implies about $10.28. The price has not changed; the expected earnings denominator has. Like judging a restaurant while it is temporarily closed, the valuation looks reasonable only if customers return."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "280.565"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "372.93 (+40 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 280.565,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "148.86 (-45 %)",
+       "143.01 (-45 %)",
+       "154.60 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "334.39 (+21 %)",
+       "360.38 (+33 %)",
+       "380.67 (+43 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "398.67 (+44 %)",
+       "513.80 (+88 %)",
+       "624.53 (+130 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "300.86 (+9 %)",
+       "336.72 (+24 %)",
+       "372.93 (+40 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/txn/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TXN&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "TI dividend: payout, cash coverage and yield",
+   "meta_description": "TI's dividend payout, cash coverage, forecast changes and current yield, explained in plain English.",
+   "opening": "TI’s forecast dividend starts at $6.08 per share, after TI raised its quarterly payment to $1.52, and rises to $6.38 and $6.70 in the base case. In 2025, TI paid $4,999 million in dividends against $2,603 million of free cash flow, so cash did not cover the payout.",
+   "closing": "The full memo also examines TI’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does TI pay per share?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at $6.08 per share because TI raised its quarterly payment to $1.52. The base case grows the payout to $6.38 and then $6.70. The bear case freezes it before cutting to $5.50, while the bull case reaches $7.49. The base is below the recent growth rate because 2025 shareholder payments exceeded ordinary free cash flow."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "5.45",
+        "5.20",
+        "7.07",
+        "9.41",
+        "8.26"
+       ],
+       [
+        "Free cash flow per share",
+        "2.85",
+        "1.63",
+        "1.47",
+        "6.40",
+        "6.72"
+       ],
+       [
+        "− Dividends paid, per share",
+        "5.48",
+        "5.22",
+        "4.97",
+        "4.64",
+        "4.15"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.62",
+        "1.01",
+        "0.32",
+        "3.90",
+        "0.56"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does TI’s dividend stay covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholder payments exceeded the remainder. In 2025, dividends of $4,999 million and buybacks of $1,477 million totalled $6,476 million. TI therefore paid out more than its free cash flow, using reserves, investment sales and borrowing to cover the difference."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,603",
+        "1,498",
+        "1,349",
+        "5,923",
+        "6,294"
+       ],
+       [
+        "− Dividends paid",
+        "4,999",
+        "4,795",
+        "4,557",
+        "4,297",
+        "3,886"
+       ],
+       [
+        "− Share buybacks",
+        "1,477",
+        "929",
+        "293",
+        "3,615",
+        "527"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "1,881"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "3,873",
+        "4,226",
+        "3,501",
+        "1,989",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "248.8%",
+        "382.1%",
+        "359.5%",
+        "133.6%",
+        "70.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change TI’s dividend?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The H1 2027 Silicon Labs closing is another pivot. Delayed savings with higher interest expense would raise net debt through 2029; timely integration would support cash flow, dividends and buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,300 (9,100 / 13,900)",
+        "14,850 (10,200 / 16,400)",
+        "16,275 (11,800 / 19,000)"
+       ],
+       [
+        "Dividends per share",
+        "6.08 (6.08 / 6.08)",
+        "6.38 (6.08 / 6.75)",
+        "6.70 (5.50 / 7.49)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "24.00 (17.00 / 27.00)",
+        "23.00 (15.00 / 29.00)",
+        "22.00 (14.00 / 30.00)"
+       ],
+       [
+        "Net debt",
+        "13,803 (18,224 / 13,384)",
+        "12,274 (21,462 / 10,968)",
+        "9,962 (22,520 / 7,110)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is TI’s dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $280.565 a share, TI’s market value is $256,225 million. Market value is what investors collectively assign to the shares. When one investor buys a share, the money normally goes to the investor selling it, not to TI."
+      },
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The 2.0% dividend yield offers cash to shareholders, while the 1.0% free-cash-flow yield measures cash left after capital spending. The dividend can exceed one year’s free cash flow during a factory investment cycle. The planned Silicon Labs acquisition adds another claim on future cash, because TI will fund the approximately $7.5 billion enterprise value with cash and borrowing."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "5.48"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.15",
+      "4.64",
+      "4.97",
+      "5.22",
+      "5.48"
+     ],
+     "Real free cash flow per share": [
+      "6.48",
+      "6.08",
+      "1.08",
+      "1.21",
+      "2.39"
+     ],
+     "Free cash flow per share": [
+      "6.72",
+      "6.40",
+      "1.47",
+      "1.63",
+      "2.85"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/txn/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TXN&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "TI earnings: guidance and what to watch",
+   "meta_description": "TI reports on October 21, 2026; watch whether demand becomes recurring cash.",
+   "opening": "TI's next results are expected on October 21, 2026. Watch whether demand becomes recurring cash.",
+   "closing": "The full memo answers how TI makes money, who its rivals are, how management is run and paid, and what risks could disrupt its recovery.",
+   "blocks": [
+    {
+     "heading": "What has TI guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Texas Instruments offers moderate upside if demand recovers, factories load and investment converts into durable cash. For the quarter to September 2026, management guided on July 22 to revenue of $5,650–$6,150 million. It guided to EPS of $2.23–$2.57. For 2026, TI guided capital expenditures of $2–$3 billion. It also guided free cash flow per share of at least $8.00."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "5,650",
+        "6,150",
+        "Jul 22, 2026"
+       ],
+       [
+        "Earnings per share",
+        "Quarter to Sep 2026",
+        "2.23",
+        "2.57",
+        "Jul 22, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "2,000",
+        "3,000",
+        "Jul 24, 2026"
+       ],
+       [
+        "Free cash flow per share",
+        "Year to Dec 2026",
+        "8.00",
+        "",
+        "Feb 24, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has TI's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "The quarterly evidence is more encouraging. Revenue rose from $4,151 million in September 2024 to $4,742 million in September 2025, then reached $5,463 million in June 2026. In the second quarter of 2026, Analog revenue grew 26% and Embedded Processing revenue grew 16%. That difference shows where demand is strongest."
+      },
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Consolidated gross margin reached 61.4% and operating margin 42.3%. Silicon Labs transaction costs reduced operating profit by $17 million, a small charge beside the underlying improvement. Net income reached $1,980 million, while diluted EPS rose to $2.14. Discrete tax benefits helped those results, so the underlying improvement was somewhat smaller."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,463",
+        "4,825",
+        "4,423",
+        "4,742",
+        "4,448",
+        "4,069",
+        "4,007",
+        "4,151"
+       ],
+       [
+        "Gross margin",
+        "61.4%",
+        "58.0%",
+        "55.9%",
+        "57.4%",
+        "57.9%",
+        "56.8%",
+        "57.7%",
+        "59.6%"
+       ],
+       [
+        "Operating income",
+        "2,310",
+        "1,808",
+        "1,473",
+        "1,663",
+        "1,563",
+        "1,324",
+        "1,377",
+        "1,554"
+       ],
+       [
+        "Net income",
+        "1,980",
+        "1,545",
+        "1,163",
+        "1,364",
+        "1,295",
+        "1,179",
+        "1,205",
+        "1,362"
+       ],
+       [
+        "EPS, diluted",
+        "2.14",
+        "1.68",
+        "1.27",
+        "1.48",
+        "1.41",
+        "1.28",
+        "1.30",
+        "1.47"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,189",
+        "844",
+        "1,329",
+        "993",
+        "555",
+        "-274",
+        "806",
+        "416"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should TI watch next?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October 21, 2026 results call will test third-quarter guidance and provide the next outlook. Investors should listen for broad industrial and automotive demand, any meaningful contribution from pricing, and whether higher production becomes customer shipments or unsold inventory. Factory loadings matter because fuller plants spread fixed costs across more chips."
+      },
+      {
+       "n": 237,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The key takeaway is simple: an earnings beat is not enough. TI must convert orders into recurring cash, use incentives without depending on them, and fund Silicon Labs without weakening the dividends and factories that define what comes next."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,463"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.14"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,151",
+      "4,007",
+      "4,069",
+      "4,448",
+      "4,742",
+      "4,423",
+      "4,825",
+      "5,463"
+     ],
+     "EPS, diluted": [
+      "1.47",
+      "1.30",
+      "1.28",
+      "1.41",
+      "1.48",
+      "1.27",
+      "1.68",
+      "2.14"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/txn/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TXN&src=seo-earnings"
+  }
+ },
+ "short_name": "TI",
+ "first_memo_date": "2026-10-12T15:20:06Z"
+}

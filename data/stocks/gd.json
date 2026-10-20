@@ -1,0 +1,625 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GD",
+ "slug": "gd",
+ "company": "General Dynamics Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T10:10:16Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 337.03,
+ "price_date": "2026-10-15T20:00:02Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 17065,
+  "sources": 266
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "General Dynamics builds military equipment and government technology systems, alongside Gulfstream private jets and the services that keep them flying. Its business is a chain: customers fund ships, vehicles, software and aircraft; General Dynamics pays people and suppliers to deliver them, then keeps what remains after operating costs."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/40533/000004053326000006/gd-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/40533/000004053325000008/gd-20241231.htm"
+  },
+  {
+   "title": "Earnings release — 2026-01-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/40533/000004053326000003/gd-20251231exhibit991.htm"
+  }
+ ],
+ "rivals": [
+  "LMT",
+  "RTX",
+  "NOC",
+  "BA",
+  "HII",
+  "LHX",
+  "BA.L",
+  "LDO.MI",
+  "RHM.DE",
+  "TXT",
+  "LDOS",
+  "CACI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "General Dynamics stock forecast",
+   "meta_description": "General Dynamics stock forecast: weighted scenarios, execution drivers, cash conversion and what investors pay for earnings and cash.",
+   "opening": "General Dynamics's weighted forecast reaches $351.85 in October 2027. General Dynamics's forecast hinges on Gulfstream deliveries, shipyard throughput and cash conversion.",
+   "closing": "The full General Dynamics memo also explains General Dynamics's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could General Dynamics's shares go?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "GD’s weighted forecast reaches $351.85 in October 2027 and $381.13 in October 2029, hinging on Gulfstream deliveries, shipyard throughput and cash conversion. Management promises $55,700 million of 2026 revenue and diluted EPS of $16.80–$16.90. It expects 160 Gulfstream deliveries, a 14.7% Aerospace margin and a 7.4% Marine Systems margin. Free cash flow conversion is expected at about 105%, although second-half cash will be lighter amid investment, pensions, taxes and use of prior advances."
+      },
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted prices imply a 6% return including dividends at the first date and a 19% return at the last. Scenario probabilities are 25% bear, 57% base and 18% bull. The October 30, 2026 earnings call tests Marine milestones, Gulfstream deliveries and heavier second-half cash demands. By October 2027–2028, supplier flow and earned hours must improve shipyard throughput without margin pressure. By October 2028–2029, funded backlog must become sales and free cash flow. The investment rests on turning production progress and backlog into cash without sacrificing margins."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 337.03, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 337.03, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "293.45 (-11 %)",
+        "277.02 (-14 %)",
+        "268.54 (-15 %)"
+       ],
+       [
+        "Base",
+        "57 %",
+        "353.51 (+7 %)",
+        "362.89 (+12 %)",
+        "370.94 (+16 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "427.68 (+29 %)",
+        "492.04 (+50 %)",
+        "569.77 (+75 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "351.85 (+6 %)",
+        "364.67 (+12 %)",
+        "381.13 (+19 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a promise that the share price will reach that amount."
+     }
+    },
+    {
+     "heading": "How much cash does General Dynamics really make?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash exceeded net income, and free cash flow represented about 94% of earnings after capital spending. That is useful, but stock compensation preserves cash while imposing a cost on shareholders, so a stricter measure deducts it."
+      },
+      {
+       "n": 129,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Because 76% of revenue was recognized over time in 2024, these timing gaps matter. A large Spanish collection coincided with repayment of an advance, while tax changes improved payment timing. By July 2026, net unbilled receivables had risen to $9,255 million from $8,380 million at year-end, showing why reported revenue and collected cash must be checked together."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,120",
+        "4,112",
+        "4,710",
+        "4,579",
+        "4,271"
+       ],
+       [
+        "Of which, freed from working capital",
+        "192",
+        "",
+        "844",
+        "1,116",
+        "681"
+       ],
+       [
+        "Of which, tied up in working capital",
+        "",
+        "850",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "1,161",
+        "916",
+        "904",
+        "1,114",
+        "887"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,959",
+        "3,196",
+        "3,806",
+        "3,465",
+        "3,384"
+       ],
+       [
+        "− Stock pay",
+        "196",
+        "183",
+        "181",
+        "165",
+        "126"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,763",
+        "3,013",
+        "3,625",
+        "3,300",
+        "3,258"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "7.5%",
+        "6.7%",
+        "9.0%",
+        "8.8%",
+        "8.8%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "7.2%",
+        "6.3%",
+        "8.6%",
+        "8.4%",
+        "8.5%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares uses no cash today but gives away part of the company."
+     }
+    },
+    {
+     "heading": "What do investors pay for General Dynamics?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, says how much investors pay for each dollar of earnings per share. A trailing P/E uses the last twelve months; a forward P/E uses the next twelve months. The lower forward multiple implies expected earnings growth if the share price does not change. But GD’s earnings include estimates. Contract-cost revisions added $0.46 to diluted EPS in 2025, and a revised estimate of the cost to finish a vehicle contract can change reported profit before the customer pays anything new."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "337.03"
+       ],
+       [
+        "Market value (calculated)",
+        "91,185.89"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "94,368.89"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "20.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.1x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "1.7x"
+       ],
+       [
+        "Price to book (calculated)",
+        "3.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.9%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company’s debt and subtracts its cash, giving a fuller estimate of what the business costs to buy."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "337.03"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "381.13 (+19 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 337.03,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "293.45 (-11 %)",
+       "277.02 (-14 %)",
+       "268.54 (-15 %)"
+      ]
+     },
+     "Base": {
+      "probability": "57 %",
+      "values": [
+       "353.51 (+7 %)",
+       "362.89 (+12 %)",
+       "370.94 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "427.68 (+29 %)",
+       "492.04 (+50 %)",
+       "569.77 (+75 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "351.85 (+6 %)",
+       "364.67 (+12 %)",
+       "381.13 (+19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/gd/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GD&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "General Dynamics earnings date and guidance",
+   "meta_description": "General Dynamics reports on October 30, 2026; its outlook covers earnings, segment margins, deliveries and cash conversion.",
+   "opening": "The next results are expected on October 30, 2026. Watch whether improved production survives heavier second-half demands on cash.",
+   "closing": "The full memo also covers General Dynamics' business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has General Dynamics guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The improvement does not depend on promising many more Gulfstream aircraft. The annual delivery target remains unchanged, so GD must earn better economics from the aircraft and submarines it delivers. Management has raised its 2026 EPS outlook twice; the test is whether the increases reflect repeatable gains such as fewer labor hours and more reliable suppliers."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "Year to Dec 2026",
+        "16.80",
+        "16.90",
+        "Jul 29, 2026"
+       ],
+       [
+        "Aerospace, Operating Margin",
+        "Year to Dec 2026",
+        "14.7%",
+        "14.7%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Marine Systems, Operating Margin",
+        "Year to Dec 2026",
+        "7.4%",
+        "7.4%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Consolidated, Revenue",
+        "Year to Dec 2026",
+        "55,700",
+        "55,700",
+        "Jul 29, 2026"
+       ],
+       [
+        "Gulfstream aircraft deliveries (in units)",
+        "Year to Dec 2026",
+        "160",
+        "160",
+        "Jul 29, 2026"
+       ],
+       [
+        "Free cash flow conversion",
+        "Year to Dec 2026",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The blank capital expenditures and free cash flow conversion rows mean the company did not publish those figures, not that they are zero."
+     }
+    },
+    {
+     "heading": "Did General Dynamics keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 108,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The results support the awards more convincingly than general praise. GD forecast diluted earnings per share of US$14.75–14.85 in January 2025 and delivered US$15.45. Three-year return on invested capital reached 13.2% against a 12.6% goal, producing a performance-unit payout of 128% of target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do General Dynamics' last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue and operating income both rose from the comparable quarter, while gross and operating margins expanded. Net income and diluted EPS also increased, so the improvement was not merely a function of selling more products."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "14,094",
+        "13,481",
+        "14,379",
+        "12,907",
+        "13,041",
+        "12,223",
+        "13,338",
+        "11,671"
+       ],
+       [
+        "Gross margin",
+        "15.5%",
+        "15.9%",
+        "14.9%",
+        "15.2%",
+        "14.9%",
+        "15.5%",
+        "15.6%",
+        "15.6%"
+       ],
+       [
+        "Operating income",
+        "1,460",
+        "1,420",
+        "1,452",
+        "1,331",
+        "1,305",
+        "1,268",
+        "1,423",
+        "1,181"
+       ],
+       [
+        "Net income",
+        "1,160",
+        "1,125",
+        "1,143",
+        "1,059",
+        "1,014",
+        "994",
+        "1,148",
+        "930"
+       ],
+       [
+        "EPS, diluted",
+        "4.24",
+        "4.10",
+        "4.17",
+        "3.88",
+        "3.74",
+        "3.66",
+        "4.15",
+        "3.35"
+       ]
+      ],
+      "note": "Diluted earnings per share assumes that possible new shares are created, so the profit is spread across more shares."
+     }
+    },
+    {
+     "heading": "What should I watch in General Dynamics' next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October 30 earnings call should show whether improved production survives the heavier second-half demands on cash."
+      },
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Marine revenue could moderate because materials received earlier are being installed later. That would not automatically mean production weakened; the evidence should be construction milestones, installation progress, margins and cash conversion."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "14,094"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "4.24"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,671",
+      "13,338",
+      "12,223",
+      "13,041",
+      "12,907",
+      "14,379",
+      "13,481",
+      "14,094"
+     ],
+     "EPS, diluted": [
+      "3.35",
+      "4.15",
+      "3.66",
+      "3.74",
+      "3.88",
+      "4.17",
+      "4.10",
+      "4.24"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/gd/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GD&src=seo-earnings"
+  }
+ },
+ "short_name": "General Dynamics",
+ "first_memo_date": "2026-10-16T10:10:16Z"
+}

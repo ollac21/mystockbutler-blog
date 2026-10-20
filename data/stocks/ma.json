@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261010T004345Z-17b2b78ddad3",
  "ticker": "MA",
  "slug": "ma",
  "company": "Mastercard Incorporated",
@@ -27,16 +26,16 @@
  },
  "sources": [
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm?x=1",
-   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm?x=1"
+   "title": "Q2 2026 presentation",
+   "url": "https://s25.q4cdn.com/479285134/files/doc_financials/2026/q2/2Q26-Mastercard-Earnings-Presentation.pdf"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1141391/000114139125000011/ma-20241231.htm?x=1",
-   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139125000011/ma-20241231.htm?x=1"
+   "title": "Proxy statement (DEF 14A) — 2026-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1141391/000114139124000022/ma-20231231.htm?x=1",
-   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139124000022/ma-20231231.htm?x=1"
+   "title": "Q2 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000083/ma-20260630.htm"
   }
  ],
  "rivals": [
@@ -62,13 +61,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Mastercard Incorporated stock forecast: scenarios",
-   "meta_description": "Mastercard Incorporated stock forecast: weighted scenarios, cash generation, valuation and the drivers that could change the outcome.",
-   "opening": "The weighted forecast reaches US$718.71 in October 2029. It hinges on whether network growth and paid services keep outrunning incentives, routing pressure and BVNK’s costs.",
-   "closing": "The full memo also explains Mastercard Incorporated’s business, its rivals, its management and its risks.",
+   "title": "Mastercard stock forecast",
+   "meta_description": "Mastercard's stock forecast reaches US$718.71 in October 2029, with bear, base and bull cases shaped by incentives, services and routing pressure.",
+   "opening": "Mastercard's weighted forecast reaches US$718.71 in October 2029, with the base case at 55% probability, the bear case at 25% and the bull case at 20%. It hinges on whether network growth and paid services keep outrunning incentives, routing pressure and BVNK's costs.",
+   "closing": "The full memo also explains Mastercard's business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "Where could Mastercard Incorporated's shares be by October 2029?",
+     "heading": "Where could Mastercard's shares be by 2029?",
      "paragraphs": [
       {
        "n": 13,
@@ -76,13 +75,6 @@
        "chapter": "Executive summary",
        "subsection": "The verdict",
        "text": "The weighted forecast is US$628.65 in October 2027, implying a 10% total return. It reaches US$718.71 in October 2029, implying a 27% total return. The final-date cases span US$421.58 to US$1,106.97. The base case has 55% probability. The bear case has 25%; the bull case has 20%."
-      },
-      {
-       "n": 250,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.1 — The verdict",
-       "text": "The first-year weighted price is $628.65, a 10% total return including dividends. The second-year weighted price is $674.17, a 19% total return. The third-year weighted price is $718.71, a 27% total return. At the final date, the bear case is $421.58. The bull case is $1,106.97, while today’s price is $574.76."
       }
      ],
      "table": {
@@ -130,7 +122,7 @@
      }
     },
     {
-     "heading": "What has to go right, and what could go wrong for Mastercard Incorporated?",
+     "heading": "What has to go right or wrong for Mastercard?",
      "paragraphs": [
       {
        "n": 263,
@@ -140,11 +132,11 @@
        "text": "The base P/E falls from 29x to 27x and then 25x. That starts above the current 24.9x forward P/E but moves toward Visa’s 26.0x as growth normalizes. The bear path falls from 23x to 20x and then 18x because incentives, routing pressure and legal uncertainty reduce confidence. The bull path rises from 33x to 34x and then 35x, requiring sustained services growth and investor confidence. The full assumptions are shown below."
       },
       {
-       "n": 266,
+       "n": 265,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.4 — Bear and bull",
-       "text": "The base case reaches $650.71 initially and $712.58 finally. Mastercard delivers the low-teens growth management expects, then moderates as the business scales. Services and cross-border activity remain healthy, but incentives limit margin expansion. A 55% probability is appropriate because this path best balances the company’s record, current guidance and known pressures."
+       "text": "Weaker travel, alternative routing and the Capital One debit migration slow activity. Incentives continue to outpace GDV, while merchant and regulatory pressure weighs on pricing. Lower cash conversion reduces buybacks, and investors assign a lower multiple. The path reaches $461.09 in the first year and $421.58 in the last, including dividends. Its probability is 25% because the operating and valuation risks are visible, although rising historical net income makes sustained deterioration less likely."
       }
      ],
      "table": {
@@ -187,7 +179,7 @@
      }
     },
     {
-     "heading": "How much cash does Mastercard Incorporated really make?",
+     "heading": "How much cash does Mastercard really make?",
      "paragraphs": [
       {
        "n": 159,
@@ -195,6 +187,13 @@
        "chapter": "5. The numbers",
        "subsection": "5.3 — Cash",
        "text": "Software changes the picture. Mastercard spent $726 million on capitalized software, separately from property and equipment. After deducting that spending, free cash flow was $16,433 million; after also deducting stock-based pay, it was $15,836 million. Stock compensation is not a cash payment today, but shareholders bear dilution or the cost of repurchasing shares to offset it."
+      },
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The durable measure is cash left after software, customer acquisition and dilution—not merely cash left after property spending."
       }
      ],
      "table": {
@@ -329,13 +328,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Mastercard Incorporated dividend: payment and cash",
-   "meta_description": "Mastercard Incorporated dividend history, cash coverage, outlook and current yield, explained in plain English.",
-   "opening": "Mastercard Incorporated's latest quarterly dividend is $0.87 per share, and the forecast base case reaches $4.80 per share. Real free cash flow after stock pay was $15,836 million in 2025, covering dividends even as buybacks and acquisitions competed for the same cash.",
-   "closing": "The full memo also explains Mastercard Incorporated's business, its rivals, management's plans, and the risks around its network, incentives, routing and acquisitions.",
+   "title": "Mastercard dividend: cash coverage",
+   "meta_description": "Mastercard pays a growing dividend from strong cash generation, while incentives, routing pressure and cash needs could change its path.",
+   "opening": "Mastercard's latest quarterly dividend is $0.87 per share, and forecast dividends per share rise from $3.84 to $4.80. Mastercard's real free cash flow after stock pay totalled $60,732 million across the period; dividends used $11,006 million and buybacks used $46,370 million.",
+   "closing": "The full Mastercard memo also explains its business, rivals, management outlook and risks.",
    "blocks": [
     {
-     "heading": "How much does Mastercard Incorporated pay its shareholders?",
+     "heading": "How much does Mastercard pay per share?",
      "paragraphs": [
       {
        "n": 262,
@@ -385,15 +384,8 @@
      }
     },
     {
-     "heading": "Is Mastercard Incorporated's dividend covered by its cash?",
+     "heading": "Does Mastercard's cash cover its dividend?",
      "paragraphs": [
-      {
-       "n": 159,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.3 — Cash",
-       "text": "Software changes the picture. Mastercard spent $726 million on capitalized software, separately from property and equipment. After deducting that spending, free cash flow was $16,433 million; after also deducting stock-based pay, it was $15,836 million. Stock compensation is not a cash payment today, but shareholders bear dilution or the cost of repurchasing shares to offset it."
-      },
       {
        "n": 95,
        "section": "essay-3",
@@ -460,7 +452,7 @@
      }
     },
     {
-     "heading": "What could change Mastercard Incorporated's dividend?",
+     "heading": "What could change Mastercard's dividend?",
      "paragraphs": [
       {
        "n": 268,
@@ -468,20 +460,21 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.5 — What would change the view",
        "text": "The forecast would move toward the bear case in 2027–2028 if portfolio migration or alternative routing slowed GDV and switched transactions, or if incentives continued rising faster than activity."
-      },
-      {
-       "n": 269,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.5 — What would change the view",
-       "text": "Fee and routing changes through 2029 would further weaken retained revenue, EPS and the multiple. In 2028–2029, weaker cash conversion or heavier debt needs would slow buybacks."
       }
      ],
      "table": null
     },
     {
-     "heading": "What is Mastercard Incorporated's dividend yield today?",
-     "paragraphs": [],
+     "heading": "What is Mastercard's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A 3.3% free cash flow yield means the business generates about $3.30 of annual cash for every $100 invested. The 0.6% dividend yield is the smaller portion paid directly as dividends. Buybacks can raise earnings per share, but debt-funded repurchases do not make the underlying business more productive."
+      }
+     ],
      "table": {
       "title": "What an investor pays today",
       "unit": "US$ millions",
@@ -496,12 +489,8 @@
         "574.76"
        ],
        [
-        "P/E, last 12 months (calculated)",
-        "31.6x"
-       ],
-       [
-        "Free cash flow yield (calculated)",
-        "3.3%"
+        "Market value (calculated)",
+        "503,495.47"
        ],
        [
         "Dividend yield (calculated)",
@@ -548,21 +537,14 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Mastercard Incorporated earnings date",
-   "meta_description": "Mastercard Incorporated results are expected October 29, 2026; revenue should outgrow expenses, with cash conversion the key watch.",
-   "opening": "Mastercard Incorporated's next results are expected on October 29, 2026. Watch whether revenue outgrows underlying expenses and whether profit becomes operating cash.",
-   "closing": "The full memo answers how Mastercard Incorporated earns money, who runs it, who its rivals are, and what risks could change the picture.",
+   "title": "Mastercard earnings: guidance and what to watch",
+   "meta_description": "Mastercard expects October 29, 2026 results to test revenue growth, expense control and cash conversion.",
+   "opening": "Mastercard's next results are expected on October 29, 2026. Watch whether profit becomes operating cash.",
+   "closing": "The full Mastercard analysis also covers Mastercard’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "What has Mastercard Incorporated guided for the year?",
+     "heading": "What has Mastercard guided for the year?",
      "paragraphs": [
-      {
-       "n": 222,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.1 — What management has guided",
-       "text": "Mastercard expects revenue to grow faster than its underlying costs. Guidance is management’s forecast for a defined period. Its July 30 outlook calls for fiscal 2026 net revenue growth in the low teens under both GAAP, the official accounting standard, and its adjusted non-GAAP measure."
-      },
       {
        "n": 223,
        "section": "essay-7",
@@ -679,7 +661,7 @@
      }
     },
     {
-     "heading": "Has Mastercard Incorporated kept its past promises?",
+     "heading": "Has Mastercard kept its past promises?",
      "paragraphs": [
       {
        "n": 137,
@@ -692,7 +674,7 @@
      "table": null
     },
     {
-     "heading": "What do Mastercard Incorporated's last eight quarters show?",
+     "heading": "What has Mastercard’s revenue and profit trend been?",
      "paragraphs": [
       {
        "n": 170,
@@ -787,6 +769,19 @@
       ],
       "note": ""
      }
+    },
+    {
+     "heading": "What should you watch in Mastercard’s next results?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results will show whether Mastercard’s stronger outlook becomes cash it can retain. The September-quarter results are expected to be published on October 29, 2026, though that is an analyst estimate of the date rather than a confirmed company announcement. Investors should watch whether revenue outgrows underlying expenses and whether profit becomes operating cash. BVNK’s first partial quarter may reveal integration costs, but not its eventual return."
+      }
+     ],
+     "table": null
     }
    ],
    "facts": [
@@ -844,5 +839,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=MA&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Mastercard",
+ "first_memo_date": "2026-10-10T02:18:50Z"
 }

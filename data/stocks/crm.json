@@ -1,0 +1,823 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CRM",
+ "slug": "crm",
+ "company": "Salesforce, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T02:53:38Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 233.92,
+ "price_date": "2026-10-12T20:00:03Z",
+ "next_earnings": "2026-12-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 27,
+  "words": 17575,
+  "sources": 298
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Salesforce sells online work systems that help businesses find customers, sell to them and serve them. Its business is simple to state: organizations pay for software, while Salesforce spends to deliver, improve and expand that software."
+ },
+ "sources": [
+  {
+   "title": "Annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000002/crm-q4fy25xexhibit991.htm"
+  }
+ ],
+ "rivals": [
+  "MSFT",
+  "ORCL",
+  "HUBS",
+  "ADBE",
+  "NOW",
+  "WDAY",
+  "FRSH",
+  "PEGA",
+  "INTU",
+  "MNDY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Salesforce stock forecast",
+   "meta_description": "Salesforce’s weighted scenarios hinge on AI monetization, customer expansion, cash flow after stock pay, and debt.",
+   "opening": "The weighted forecast is $180.98 in October 2027 and $224.23 in October 2029, with 30% probability to bear, 50% to base and 20% to bull. The investment turns on whether AI expands customer value and owner cash rather than replacing seats or masking slower organic growth.",
+   "closing": "The full Salesforce memo also answers how Salesforce works, how it compares with rivals, how management allocates capital, and what risks could change the view.",
+   "blocks": [
+    {
+     "heading": "Where could Salesforce’s shares be in the forecast years?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $180.98 in October 2027 (−22%, dividends included) and $224.23 in October 2029 (−2%). It assigns 30% probability to bear, 50% to base and 20% to bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 233.92, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 233.92, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "131.27 (-43 %)",
+        "99.82 (-56 %)",
+        "99.30 (-55 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "184.97 (-20 %)",
+        "207.06 (-10 %)",
+        "215.79 (-5 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "245.58 (+6 %)",
+        "339.86 (+47 %)",
+        "432.70 (+88 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "180.98 (-22 %)",
+        "201.45 (-12 %)",
+        "224.23 (-2 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Salesforce?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes Salesforce’s installed base renews, but organic demand remains weak and Agentforce replenishment fails to become durable expansion. Infrastructure and selling costs rise, while debt-funded distributions restrict flexibility. The price reaches $131.27 in October 2027 and $99.30 by October 2029. Its 30% probability reflects unproven AI margins, acquisition-heavy growth and the higher debt burden, partly offset by Salesforce’s rising historical cash after stock pay."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires production AI use to become repeatable and profitable. Credit replenishment, Data 360 and cross-selling expand contracts, acquisitions integrate well, and operating leverage funds both investment and repurchases. The price reaches $245.58 in October 2027 and $432.70 by October 2029. Its 20% probability reflects real evidence of paid use, but no consistent bridge yet from credits sold to recognized revenue, renewal and product margin."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Salesforce really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based compensation is another bridge between profit and cash. It reduces accounting earnings but is added back to operating cash because issuing shares is not a cash payment at that moment. Subtracting it produces an analytical “real free cash flow” measure that exposes the cost to shareholders, though it is not a GAAP category."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "14,996",
+        "13,092",
+        "10,234",
+        "7,111",
+        "6,000"
+       ],
+       [
+        "− Capital spending",
+        "594",
+        "658",
+        "736",
+        "798",
+        "717"
+       ],
+       [
+        "**= Free cash flow**",
+        "14,402",
+        "12,434",
+        "9,498",
+        "6,313",
+        "5,283"
+       ],
+       [
+        "− Stock pay",
+        "3,509",
+        "3,183",
+        "2,787",
+        "3,279",
+        "2,779"
+       ],
+       [
+        "**= Real free cash flow**",
+        "10,893",
+        "9,251",
+        "6,711",
+        "3,034",
+        "2,504"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "26.2%",
+        "24.4%",
+        "19.3%",
+        "9.7%",
+        "9.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Salesforce?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The “real” cash yield is lower because employee shares are an economic cost. They conserve cash when granted, but dilute existing owners. Salesforce may need to spend cash on repurchases to offset that dilution, so the ordinary cash-flow figure can overstate spendable owner income."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "233.92"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "21.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "7.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "5.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "233.92"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "224.23 (-2 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 233.92,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "131.27 (-43 %)",
+       "99.82 (-56 %)",
+       "99.30 (-55 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "184.97 (-20 %)",
+       "207.06 (-10 %)",
+       "215.79 (-5 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "245.58 (+6 %)",
+       "339.86 (+47 %)",
+       "432.70 (+88 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "180.98 (-22 %)",
+       "201.45 (-12 %)",
+       "224.23 (-2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/crm/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CRM&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Salesforce dividend: cash coverage and outlook",
+   "meta_description": "Salesforce’s dividend history, cash coverage, buybacks, yield and the plans and risks that could change it.",
+   "opening": "Salesforce paid no dividend through FY24; its forecast base dividend rises to $1.82 in 2027, $2.00 in 2028 and then reaches $2.20. In January 2026, free cash flow reached $14,402 million against $1,587 million of dividends, although Salesforce also paid $12,596 million in buybacks.",
+   "closing": "The full Salesforce research explains Salesforce’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What does Salesforce pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises to $1.82 in 2027 and $2.00 in 2028, then reaches $2.20. The bear case freezes it at $1.66 because the dividend has only two years of history and distributions already exceed annual cash generation. The bull case reaches $1.95, $2.30 and $2.70 as AI cash growth supports faster increases. Salesforce paid no dividend through FY24, so the base path is deliberately more confident than the short record alone would justify."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "7.80",
+        "6.36",
+        "4.20",
+        "0.21",
+        "1.48"
+       ],
+       [
+        "Real free cash flow per share",
+        "11.39",
+        "9.50",
+        "6.82",
+        "3.04",
+        "2.57"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.66",
+        "1.58",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "13.18",
+        "8.04",
+        "7.74",
+        "4.01",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.23",
+        "3.15",
+        "1.91",
+        "2.32",
+        "5.42"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Salesforce’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The improvement followed a painful workforce reset. Salesforce acknowledged that pandemic hiring had overshot demand, then reduced staff and office space. Free cash flow rose from $6,313 million in January 2023 to $14,402 million three years later. The improvement persisted, although the public figures do not separate savings from restructuring, stronger operations, revenue growth or collection timing."
+      },
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholder returns then became aggressive. In the year ended January 2026, buybacks were $12,596 million and dividends were $1,587 million. Salesforce authorised $50 billion of repurchases and issued $25 billion of senior notes to fund an accelerated share repurchase. Banks initially delivered approximately 103 million shares for cancellation. Fewer shares can lift earnings per share, but the debt creates interest and repayment obligations. The question is whether the shares were cheap enough to compensate for that loss of flexibility. The answer depends on whether Salesforce can turn its enlarged portfolio into durable customer value."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "14,402",
+        "12,434",
+        "9,498",
+        "6,313",
+        "5,283"
+       ],
+       [
+        "− Dividends paid",
+        "1,587",
+        "1,537",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "12,596",
+        "7,829",
+        "7,620",
+        "4,000",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "219",
+        "3,068",
+        "1,878",
+        "2,313",
+        "5,283"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "98.5%",
+        "75.3%",
+        "80.2%",
+        "63.4%",
+        "0.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Salesforce’s dividend?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if FY27–FY29 revenue and cRPO growth weaken as acquisition contributions fade, or if AI usage fails to produce durable renewals, added spending and product attach. Rising interest expense, delivery costs and stock pay would further reduce cash and repurchase capacity."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Salesforce’s dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "233.92"
+       ],
+       [
+        "Market value (calculated)",
+        "192,516.16"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jan 2026",
+     "value": "1.66"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "7.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "Jan 2022",
+     "Jan 2023",
+     "Jan 2024",
+     "Jan 2025",
+     "Jan 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "1.58",
+      "1.66"
+     ],
+     "Real free cash flow per share": [
+      "2.57",
+      "3.04",
+      "6.82",
+      "9.50",
+      "11.39"
+     ],
+     "Free cash flow per share": [
+      "5.42",
+      "6.33",
+      "9.65",
+      "12.77",
+      "15.06"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/crm/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CRM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Salesforce earnings: December 2, 2026 results",
+   "meta_description": "Salesforce's December 2, 2026 results will test FY27 guidance and whether Agentforce and Data 360 become durable, profitable revenue.",
+   "opening": "Salesforce's next results are expected on December 2, 2026. Salesforce should show whether Agentforce and Data 360 turn production use into durable, profitable revenue.",
+   "closing": "The full Salesforce memo also covers Salesforce's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Salesforce guided for FY27?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Salesforce expects fiscal 2027 revenue of **$46.1–$46.4 billion**, growing **11%–12%**. It has also reaffirmed a goal of at least **$63 billion** by fiscal 2030, including Informatica and announced acquisitions."
+      },
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Profit guidance also needs translation. Salesforce expects a **20.1% GAAP operating margin** and a **34.3% non-GAAP margin**. Non-GAAP removes selected expenses, but those costs remain real. Stock-based compensation is forecast at **9.0% of revenue**, and free cash flow is expected to grow only **4%–5%**. The promise therefore depends on organic sales accelerating while cash generation keeps pace."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "FY27 — Revenue (US$ billions)",
+        "Year to Jan 2027",
+        "46.1",
+        "46.4",
+        "Aug 26, 2026"
+       ],
+       [
+        "FY27 — Revenue growth",
+        "Year to Jan 2027",
+        "11.0%",
+        "12.0%",
+        "Aug 26, 2026"
+       ],
+       [
+        "FY27 — GAAP operating margin",
+        "Year to Jan 2027",
+        "20.1%",
+        "20.1%",
+        "Aug 26, 2026"
+       ],
+       [
+        "FY27 — Free cash flow growth",
+        "Year to Jan 2027",
+        "4.0%",
+        "5.0%",
+        "Aug 26, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Salesforce keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "That issue became a governance dispute in 2026. ISS, a firm advising investors on votes, opposed adding 34 million shares to the equity plan because of the estimated value transferred through awards. Glass Lewis, another proxy adviser, supported it, and shareholders approved the proposal on May 28. Salesforce’s promises on pay have therefore improved, but the continuing test is whether AI growth creates enough value per remaining share to justify both executive rewards and employee equity."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Salesforce's trend in the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash improved, but quarterly cash follows the collection cycle. The eight-quarter record is therefore more reliable than one strong or weak quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "11,345",
+        "11,133",
+        "11,201",
+        "10,259",
+        "10,236",
+        "9,829",
+        "9,993",
+        "9,444"
+       ],
+       [
+        "Gross margin",
+        "76.7%",
+        "76.9%",
+        "77.6%",
+        "78.0%",
+        "78.1%",
+        "77.0%",
+        "77.8%",
+        "77.7%"
+       ],
+       [
+        "Operating income",
+        "2,331",
+        "2,347",
+        "1,869",
+        "2,188",
+        "2,332",
+        "1,942",
+        "1,820",
+        "1,893"
+       ],
+       [
+        "Net income",
+        "3,526",
+        "2,107",
+        "1,943",
+        "2,086",
+        "1,887",
+        "1,541",
+        "1,708",
+        "1,527"
+       ],
+       [
+        "EPS, diluted",
+        "4.29",
+        "2.42",
+        "2.07",
+        "2.19",
+        "1.96",
+        "1.59",
+        "1.75",
+        "1.58"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Salesforce watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "These tests matter especially for Agentforce and Data 360, where real customer use must become durable, profitable revenue."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "11,345"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "4.29"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "9,444",
+      "9,993",
+      "9,829",
+      "10,236",
+      "10,259",
+      "11,201",
+      "11,133",
+      "11,345"
+     ],
+     "EPS, diluted": [
+      "1.58",
+      "1.75",
+      "1.59",
+      "1.96",
+      "2.19",
+      "2.07",
+      "2.42",
+      "4.29"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/crm/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CRM&src=seo-earnings"
+  }
+ },
+ "short_name": "Salesforce",
+ "first_memo_date": "2026-10-13T02:53:38Z"
+}

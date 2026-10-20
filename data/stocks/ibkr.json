@@ -1,0 +1,508 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "IBKR",
+ "slug": "ibkr",
+ "company": "Interactive Brokers Group, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T02:29:59Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 86.03,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2027-01-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 25,
+  "words": 16029,
+  "sources": 221
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Interactive Brokers Group (IBKR) is an electronic brokerage: it gives investors and financial firms a way to trade investments around the world and keep them in one account. Its business becomes clear when you follow a dollar through that account—first as a customer’s money, then as a fee, interest payment or financing balance, and finally as revenue left after costs."
+ },
+ "sources": [
+  {
+   "title": "Third-quarter results",
+   "url": "https://ndcdyn.interactivebrokers.com/mkt/getFileNew.php?file=2026Q3_Earnings_Release.pdf"
+  },
+  {
+   "title": "2025 results",
+   "url": "https://ndcdyn.interactivebrokers.com/mkt/getFileNew.php?file=2025Q4_Earnings_Release.pdf"
+  },
+  {
+   "title": "Holding source",
+   "url": "https://www.sec.gov/Archives/edgar/data/1381197/000210011926000672/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "rivals": [
+  "SCHW",
+  "HOOD",
+  "MS",
+  "LPLA",
+  "SNEX",
+  "SQN.SW",
+  "IGG.L",
+  "PLUS.L"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Interactive Brokers Group stock forecast",
+   "meta_description": "Interactive Brokers Group stock forecast: weighted prices, scenario drivers, real cash flow, and valuation explained in plain English.",
+   "opening": "The probability-weighted price is $81.53 in October 2027, compared with $86.03 on October 16, 2026. Interactive Brokers Group's forecast hinges on turning account growth into balances and activity fast enough to outrun rate pressure, dilution and outside ownership.",
+   "closing": "The full memo also answers how Interactive Brokers Group makes money, how it compares with rivals, how management allocates capital, and which risks matter most.",
+   "blocks": [
+    {
+     "heading": "Where could Interactive Brokers Group's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $81.53 in October 2027, a 5% loss including dividends. It is $84.07 in October 2028, a 1% loss. It reaches $86.42 in October 2029, a 3% gain. By the last date, the range is $45.74 to $145.74. Today’s reference price is $86.03."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 86.03, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 86.03, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "61.18 (-28 %)",
+        "52.04 (-38 %)",
+        "45.74 (-45 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "83.36 (-2 %)",
+        "84.08 (-1 %)",
+        "83.34 (-0 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "101.92 (+19 %)",
+        "124.05 (+46 %)",
+        "145.74 (+73 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "81.53 (-5 %)",
+        "84.07 (-1 %)",
+        "86.42 (+3 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Interactive Brokers Group?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case assumes steady growth, moderate dilution, gradual dividend increases and some valuation compression."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Bear revenue is $7,600 million in the first year and $7,900 million in the second. Margin falls from 17.0% to 16.5%, so earnings reach $1,304 million before settling at $1,312 million on final revenue of $8,200 million and a 16.0% margin. The bull case begins with $8,200 million of revenue and reaches $9,840 million in the second year. Final revenue is $11,800 million, with margin rising from 19.0% to 20.0%; earnings reach $1,919 million and then $2,360 million. The spread reflects rate exposure: a 25-basis-point move changes annual NII by $83 million. Softer activity also matters, as annualized cleared DARTs per account fell from 213 to 203."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,480 (1,292 / 1,558)",
+        "1,647 (1,304 / 1,919)",
+        "1,813 (1,312 / 2,360)"
+       ],
+       [
+        "Shares (millions)",
+        "462 (465 / 459)",
+        "470 (476 / 464)",
+        "479 (488 / 470)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.60 / 0.60)",
+        "0.80 (0.60 / 1.00)",
+        "1.00 (0.60 / 1.40)"
+       ],
+       [
+        "Price to earnings",
+        "26.00 (22.00 / 30.00)",
+        "24.00 (19.00 / 30.00)",
+        "22.00 (17.00 / 29.00)"
+       ]
+      ],
+      "note": "The price to earnings number shows how many dollars investors pay for each dollar of the company's earnings."
+     }
+    },
+    {
+     "heading": "How much cash does Interactive Brokers Group really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow reached $15,811 million in 2025, including a $38,993 million increase in amounts payable to customers. After $67 million of capital spending, reported free cash flow was $15,744 million. Its 253.7% margin is therefore an accounting signal to investigate, not money that can simply be paid out."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "IBKR’s “real free cash flow” subtracts $118 million of stock compensation and comes to $15,626 million. That subtraction recognizes dilution’s economic cost, but it does not remove customer obligations, restricted cash, regulatory capital needs or earnings belonging to other owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "15,811",
+        "8,724",
+        "4,544",
+        "3,968",
+        "5,896"
+       ],
+       [
+        "− Capital spending",
+        "67",
+        "49",
+        "49",
+        "69",
+        "77"
+       ],
+       [
+        "**= Free cash flow**",
+        "15,744",
+        "8,675",
+        "4,495",
+        "3,899",
+        "5,819"
+       ],
+       [
+        "− Stock pay",
+        "118",
+        "112",
+        "100",
+        "92",
+        "80"
+       ],
+       [
+        "**= Real free cash flow**",
+        "15,626",
+        "8,563",
+        "4,395",
+        "3,807",
+        "5,739"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "86.03"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "86.42 (+3 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "40.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "26.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 86.03,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "61.18 (-28 %)",
+       "52.04 (-38 %)",
+       "45.74 (-45 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "83.36 (-2 %)",
+       "84.08 (-1 %)",
+       "83.34 (-0 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "101.92 (+19 %)",
+       "124.05 (+46 %)",
+       "145.74 (+73 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "81.53 (-5 %)",
+       "84.07 (-1 %)",
+       "86.42 (+3 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ibkr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IBKR&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Interactive Brokers Group earnings: guidance and results",
+   "meta_description": "Interactive Brokers Group next reports on January 19, 2027; watch rates, balances and durable customer activity.",
+   "opening": "Interactive Brokers Group’s next results are expected on January 19, 2027. Interactive Brokers Group’s key watch is whether new products create durable customer trading.",
+   "closing": "The full memo also explains Interactive Brokers Group’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Interactive Brokers Group guided for rates?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Using balances at September 30, 2026, management estimated that a 25-basis-point move in the US Federal Reserve’s benchmark rate would change annual NII by $83 million. A basis point is one hundredth of a percentage point, so 25 basis points equals 0.25%. This is an annual sensitivity, not a forecast of the next quarter’s profit."
+      },
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The international effect matters too. Management estimated a separate $35 million annual NII effect from an equivalent move in relevant non-US rates. As customers, balances and currencies change, the old sensitivity becomes less reliable. That makes the rate guide useful, but only as a starting point for the earnings outlook."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Did Interactive Brokers Group keep its growth promise?",
+     "paragraphs": [
+      {
+       "n": 118,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management reported more than one million new accounts during 2025 and a record annual pretax margin of 77%. Those results support its broad promise to pursue growth while controlling technology costs, but they do not show that executives met undisclosed bonus thresholds."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Interactive Brokers Group’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $1,914 million, up 15.6% from a year earlier. Pretax income rose to $1,496 million, an increase of 14.0%. Common-shareholder income rose from $263 million to $314 million, while diluted earnings per share rose from $0.59 to $0.69."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,914",
+        "1,896",
+        "1,669",
+        "1,643",
+        "1,655",
+        "1,480",
+        "1,427",
+        "1,387"
+       ],
+       [
+        "Operating income",
+        "1,496",
+        "1,456",
+        "1,288",
+        "1,300",
+        "1,312",
+        "1,104",
+        "1,055",
+        "1,040"
+       ],
+       [
+        "Net income",
+        "314",
+        "312",
+        "267",
+        "284",
+        "263",
+        "224",
+        "213",
+        "217"
+       ],
+       [
+        "EPS, diluted",
+        "0.69",
+        "0.69",
+        "0.59",
+        "0.63",
+        "0.59",
+        "0.51",
+        "0.48",
+        "0.50"
+       ]
+      ],
+      "note": "The September 2026 cash-flow figures are blank because the company had not yet filed its cash-flow statement, not because it generated no cash."
+     }
+    },
+    {
+     "heading": "What should Interactive Brokers Group watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "A further product milestone came on the October 15 call. CEO Milan Galik said IBKR aimed to offer Cboe’s single-stock event contracts, with a possible exchange launch near the end of October but unsettled timing. The important evidence will be actual IBKR availability and repeated customer trading."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 19, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "1,914"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "0.69"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,387",
+      "1,427",
+      "1,480",
+      "1,655",
+      "1,643",
+      "1,669",
+      "1,896",
+      "1,914"
+     ],
+     "EPS, diluted": [
+      "0.50",
+      "0.48",
+      "0.51",
+      "0.59",
+      "0.63",
+      "0.59",
+      "0.69",
+      "0.69"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ibkr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IBKR&src=seo-earnings"
+  }
+ },
+ "short_name": "Interactive Brokers Group",
+ "first_memo_date": "2026-10-16T02:29:59Z"
+}

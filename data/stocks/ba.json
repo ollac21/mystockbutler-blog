@@ -1,0 +1,584 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BA",
+ "slug": "ba",
+ "company": "The Boeing Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T23:00:04Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 186.49,
+ "price_date": "2026-10-13T20:00:03Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 250,
+  "tables": 28,
+  "words": 16731,
+  "sources": 229
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Boeing builds the machines that carry people and freight, defend governments, and operate in space. It makes money not only when it hands over an aircraft or system, but also when it keeps that equipment working."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Note 11",
+   "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm"
+  },
+  {
+   "title": "2024 equity note",
+   "url": "https://www.sec.gov/Archives/edgar/data/12927/000001292725000015/ba-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026003518/a202512dec318kprex991.htm"
+  }
+ ],
+ "rivals": [
+  "EMBJ",
+  "LMT",
+  "RTX",
+  "NOC",
+  "GD"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Boeing stock forecast",
+   "meta_description": "Boeing stock forecast: scenarios for future shares, the operating recovery they require, cash generation and today’s valuation.",
+   "opening": "Boeing’s weighted forecast is $124.89 in October 2027 and reaches $238.29 in October 2029. It hinges on turning stable production into accepted deliveries and recurring cash generation before dilution arrives.",
+   "closing": "The full Boeing memo also explains Boeing’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Boeing’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $124.89 in October 2027, a -33% return. It reaches $238.29 in October 2029, a +28% return. The bear case has 33% probability; the base case has 49%. The bull case has 18%. The bear path reaches $0.00 in October 2027 and $332.87 in October 2029."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 186.49, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 186.49, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "33 %",
+        "0.00 (-100 %)",
+        "171.45 (-8 %)",
+        "332.87 (+78 %)"
+       ],
+       [
+        "Base",
+        "49 %",
+        "184.70 (-1 %)",
+        "183.41 (-2 %)",
+        "186.09 (-0 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "191.01 (+2 %)",
+        "198.03 (+6 %)",
+        "206.98 (+11 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "124.89 (-33 %)",
+        "182.09 (-2 %)",
+        "238.29 (+28 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average, so the possible total loss in the bear case pulls the October 2027 estimate far below the other cases."
+     }
+    },
+    {
+     "heading": "What has to go right for Boeing, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case assumes revenue approaches $125B and the final margin reaches 6%. The bull case requires $140B and an 8% margin. The bear case assumes a 1% loss before only a slow recovery. H1 2026 produced $604M of operating income on $46,777M of revenue, while 2025 adjusted operating income was $3,236M. Management’s targets of 52 737s per month by 2027 and $1B–$3B of 2026 free cash flow support recovery, but neither target is profit guidance."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Boeing really make?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash did not cover capital spending, so free cash flow remained negative. Subtracting stock pay produces a stricter measure because shares given to employees still impose an economic cost on existing shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,065",
+        "-12,080",
+        "5,960",
+        "3,512",
+        "-3,416"
+       ],
+       [
+        "− Capital spending",
+        "2,951",
+        "2,318",
+        "1,527",
+        "1,222",
+        "980"
+       ],
+       [
+        "**= Free cash flow**",
+        "-1,886",
+        "-14,398",
+        "4,433",
+        "2,290",
+        "-4,396"
+       ],
+       [
+        "− Stock pay",
+        "426",
+        "407",
+        "690",
+        "725",
+        "833"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-2,312",
+        "-14,805",
+        "3,743",
+        "1,565",
+        "-5,229"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-2.6%",
+        "-22.3%",
+        "4.8%",
+        "2.3%",
+        "-8.4%"
+       ]
+      ],
+      "note": "The company's own free cash flow is slightly higher because it leaves out 9 million dollars in 2025 and 88 million dollars in 2024 that we count as cash spending."
+     }
+    },
+    {
+     "heading": "How does Boeing’s price compare with earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio compares a share price with annual earnings per share. Boeing’s trailing and forward P/E ratios are both high, but the forward measure is a forecast, not profit already earned. The problem is that Boeing’s 2025 core earnings included a $12.47-per-share gain from selling Digital Aviation Solutions. Removing an exceptional gain can clarify repeatable profit, but it cannot remove the real costs of delays, rework and troubled programs."
+      },
+      {
+       "n": 201,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow is operating cash left after capital spending. Boeing’s current free-cash-flow yields are negative, and its common dividend yield is zero, so shareholders receive no cash income while the company consumes cash. Management maintained a 2026 free-cash-flow outlook of $1–3 billion, while describing $10 billion annually as attainable without giving a firm date."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "186.49"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "80.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "51.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-1.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-1.5%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The negative free cash flow yield means the company spent more cash than it generated over the latest year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "186.49"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "238.29 (+28 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "51.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 186.49,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "33 %",
+      "values": [
+       "0.00 (-100 %)",
+       "171.45 (-8 %)",
+       "332.87 (+78 %)"
+      ]
+     },
+     "Base": {
+      "probability": "49 %",
+      "values": [
+       "184.70 (-1 %)",
+       "183.41 (-2 %)",
+       "186.09 (-0 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "191.01 (+2 %)",
+       "198.03 (+6 %)",
+       "206.98 (+11 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "124.89 (-33 %)",
+       "182.09 (-2 %)",
+       "238.29 (+28 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ba/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BA&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Boeing earnings date and guidance",
+   "meta_description": "Boeing's next results are expected on October 27, 2026, with guidance and key delivery and cash tests to watch.",
+   "opening": "Boeing's next results are expected on October 27, 2026. Watch whether stable production turns accepted deliveries into repeatable cash after the Justice Department payment.",
+   "closing": "The full memo also explains Boeing's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Boeing guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to $1,000–$3,000 million of free cash flow in 2026 and $5,000–$7,000 million of operating cash flow. Capital spending is guided to $4,000 million. Delivery guidance calls for 500 737s and 90–100 787s in 2026. Production targets are 52 737s per month by 2027 and 10 787s per month by the end of 2026."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Operating cash flow (GAAP)",
+        "Year to Dec 2026",
+        "5,000",
+        "7,000",
+        "Jul 28, 2026"
+       ],
+       [
+        "Less additions to property, plant & equipment",
+        "Year to Dec 2026",
+        "4,000",
+        "4,000",
+        "Jul 28, 2026"
+       ],
+       [
+        "Free cash flow (non-GAAP)",
+        "Year to Dec 2026",
+        "1,000",
+        "3,000",
+        "Sep 16, 2026"
+       ],
+       [
+        "737 deliveries (units)",
+        "Year to Dec 2026",
+        "500",
+        "500",
+        "Jan 27, 2026"
+       ],
+       [
+        "787 deliveries (units)",
+        "Year to Dec 2026",
+        "90",
+        "100",
+        "Jan 27, 2026"
+       ],
+       [
+        "737 production rate (aircraft per month)",
+        "Year to Dec 2027",
+        "52",
+        "52",
+        "Sep 16, 2026"
+       ]
+      ],
+      "note": "The company's free cash flow is its own measure, calculated using only spending on property, plant and equipment and including its financing business."
+     }
+    },
+    {
+     "heading": "Has Boeing kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Longer-term incentives can bite harder. Performance stock units tied to the 2023–2025 period paid zero because Boeing missed its free-cash-flow goals. A performance stock unit is a promise of shares that depends on specified results, so this was a real penalty. But Boeing’s certification promises also slipped: Ortberg hoped to complete certification of the 737-7 and 737-10 in 2025, while later expectations moved certification to 2026 and first deliveries to 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Boeing's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The second quarter of 2026 showed improving deliveries and cash, but thin operating profit and another net loss."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "24,560",
+        "22,217",
+        "23,948",
+        "23,270",
+        "22,749",
+        "19,496",
+        "15,242",
+        "17,840"
+       ],
+       [
+        "Gross margin",
+        "9.8%",
+        "11.5%",
+        "7.6%",
+        "-10.2%",
+        "10.7%",
+        "12.4%",
+        "-10.4%",
+        "-19.7%"
+       ],
+       [
+        "Operating income",
+        "156",
+        "448",
+        "8,777",
+        "-4,781",
+        "-176",
+        "461",
+        "-3,770",
+        "-5,761"
+       ],
+       [
+        "Net income",
+        "-444",
+        "-4",
+        "8,220",
+        "-5,337",
+        "-611",
+        "-37",
+        "-3,865",
+        "-6,170"
+       ],
+       [
+        "EPS, diluted",
+        "-0.67",
+        "-0.11",
+        "10.23",
+        "-7.14",
+        "-0.92",
+        "-0.16",
+        "-5.46",
+        "-9.97"
+       ]
+      ],
+      "note": "The December 2025 operating profit looks unusually high because it includes a one-time gain from selling Digital Aviation Solutions, not just profit from normal business."
+     }
+    },
+    {
+     "heading": "What should investors watch in Boeing's next results?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Boeing’s third-quarter results on October 27 will show whether the company’s cash outlook survived the Justice Department payment. The useful comparison is among delivered aircraft, customer receipts and capital spending. A quarter helped by early customer payments can support the annual target without proving that the factory recovery is complete."
+      },
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The 737 is the central production test. Boeing was building MAX aircraft at 47 a month, but the rate remained unstable. The 737-7 was certified while the 737-10 still awaited approval. Reaching 52 aircraft a month in 2027 requires steadier Renton operations and an approved, productive Everett line. Certification proves that an aircraft design meets regulatory requirements; it does not prove that the factory can build it reliably."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "24,560"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-0.67"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "17,840",
+      "15,242",
+      "19,496",
+      "22,749",
+      "23,270",
+      "23,948",
+      "22,217",
+      "24,560"
+     ],
+     "EPS, diluted": [
+      "-9.97",
+      "-5.46",
+      "-0.16",
+      "-0.92",
+      "-7.14",
+      "10.23",
+      "-0.11",
+      "-0.67"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ba/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BA&src=seo-earnings"
+  }
+ },
+ "short_name": "Boeing",
+ "first_memo_date": "2026-10-13T23:00:04Z"
+}

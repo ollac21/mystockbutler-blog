@@ -1,0 +1,587 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "WTB.L",
+ "slug": "wtb-l",
+ "company": "Whitbread plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-16T06:58:43Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 2586.0,
+ "price_date": "2026-10-15T16:21:12Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 27,
+  "words": 17380,
+  "sources": 136
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Whitbread is a hotel company whose main business is selling dependable places to sleep, principally through Premier Inn. Its money comes mainly from rooms, with food, drink and optional services adding value around the stay."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2026-04-30",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/e484da69-febb-4017-bffa-68cb0b7fd906.html"
+  },
+  {
+   "title": "Earnings release — 2025-05-01",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5636751.html"
+  },
+  {
+   "title": "Earnings release — Q2 2027",
+   "url": "https://cdn.whitbread.co.uk/media/2026/10/Whitbread-FY27-Interim-Results.pdf"
+  }
+ ],
+ "rivals": [
+  "AC.PA",
+  "IHG",
+  "HLT",
+  "MAR",
+  "WH",
+  "CHH",
+  "H",
+  "SHOT.ST"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Whitbread stock forecast",
+   "meta_description": "Whitbread stock forecast: scenario prices, the drivers behind them, real cash generation and today's valuation.",
+   "opening": "Whitbread's weighted forecast reaches 2,685.24p in October 2027. Whitbread's outcome hinges on cash conversion, room returns and Germany's progress.",
+   "closing": "The full Whitbread memo also answers how Whitbread runs its business, compares with rivals, evaluates management and frames the risks.",
+   "blocks": [
+    {
+     "heading": "Where could Whitbread's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast reaches 2,685.24p in October 2027, with the outcome hinging on cash conversion, room returns and Germany’s progress. It reaches 3,647.69p in October 2029."
+      },
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The October 2027 weighted price implies a 7% total return from today. The October 2029 weighted price implies a 51% total return. The bear case carries 30%. The base case carries 50%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per WTB.L share at each date; in brackets the return since today's 2586.00, dividends included",
+      "caption": "What the shares could be worth (GBp per WTB.L share at each date; in brackets the return since today's 2586.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "2304.63 (-8 %)",
+        "2208.23 (-10 %)",
+        "2441.99 (+1 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "2762.90 (+11 %)",
+        "3214.67 (+32 %)",
+        "3720.82 (+55 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "3061.99 (+22 %)",
+        "4006.94 (+63 %)",
+        "5273.39 (+116 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "2685.24 (+7 %)",
+        "3071.19 (+26 %)",
+        "3647.69 (+51 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Whitbread's forecast?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA is the central operating judgement. The base case starts at £1,090m. It reaches £1,150m in October 2028 and £1,210m in October 2029, against FY26 adjusted EBITDA of £1,075.1m. Bear EBITDA falls to £995m in 2028; bull EBITDA reaches £1,350m by 2029. Recent accommodation sales rose 3% and RevPAR rose 2%, while management guides to £60m of efficiencies and substantial room openings."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives cost inflation, business rates and the restaurant transition more weight. Business-rate costs add £35m, while the transition reduces adjusted PBT by £40m. The bull case assumes efficiencies, room openings and German maturation overcome those pressures. Germany’s £8m segment loss, despite £22m of mature-cohort site profit, explains why the upside is not central."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "1,090 (1,025 / 1,120)",
+        "1,150 (995 / 1,230)",
+        "1,210 (1,020 / 1,350)"
+       ],
+       [
+        "Shares (millions)",
+        "168 (168 / 168)",
+        "165 (169 / 161)",
+        "160 (169 / 154)"
+       ],
+       [
+        "Dividends per share",
+        "0.97 (0.70 / 1.02)",
+        "0.97 (0.50 / 1.07)",
+        "0.97 (0.40 / 1.12)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "4.70 (4.30 / 4.90)",
+        "4.90 (4.10 / 5.40)",
+        "5.10 (4.20 / 6.00)"
+       ],
+       [
+        "Net debt",
+        "476 (529 / 341)",
+        "331 (350 / 175)",
+        "203 (167 / -5.20)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Whitbread really make?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was £675.4m. Lease principal payments were £172.9m. Together they turned operating cash into free cash flow of negative £95.5m. Subtracting £16.7m of share-based pay gives analytical “real” free cash flow of negative £112.2m, because shares still transfer value to employees even without immediate cash leaving."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "£ millions",
+      "caption": "Follow the money: real free cash flow (£ millions)",
+      "head": [
+       "Row",
+       "Feb 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "-95.5",
+        "127",
+        "222.3",
+        "147.2",
+        "160.1"
+       ],
+       [
+        "− Stock pay",
+        "16.7",
+        "16.8",
+        "15.8",
+        "17.7",
+        "12.9"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-112.2",
+        "110.2",
+        "206.5",
+        "129.5",
+        "147.2"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "-3.3%",
+        "4.3%",
+        "7.5%",
+        "5.6%",
+        "9.4%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-3.8%",
+        "3.8%",
+        "7.0%",
+        "4.9%",
+        "8.6%"
+       ]
+      ],
+      "note": "The business generated cash from daily work, but its free cash flow is negative because spending on equipment and lease payments was greater than that cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "2,586.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "3647.69 (+51 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-2.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 25.86,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "2304.63 (-8 %)",
+       "2208.23 (-10 %)",
+       "2441.99 (+1 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "2762.90 (+11 %)",
+       "3214.67 (+32 %)",
+       "3720.82 (+55 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "3061.99 (+22 %)",
+       "4006.94 (+63 %)",
+       "5273.39 (+116 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "2685.24 (+7 %)",
+       "3071.19 (+26 %)",
+       "3647.69 (+51 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/wtb-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WTB.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Whitbread dividend: payment and cash cover",
+   "meta_description": "Whitbread paid 97.00p per share, but its free cash flow was negative £95.5m.",
+   "opening": "Whitbread paid 97.00p per share in FY26, but its FY26 free cash flow was negative £95.5m, so the dividend was not covered by that year's free cash flow. The latest forecast keeps the base dividend at £0.97, although that payout remains an assumption while cash conversion improves.",
+   "closing": "The full memo also covers Whitbread’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Whitbread pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "The effective tax rate was 28.7%. Diluted EPS fell less than net income because the share count declined, while the dividend stayed at 97.00p. Shareholders therefore received a larger portion of statutory earnings."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend holds at £0.97 because that payout has remained unchanged through FY24–FY26 and the latest interim dividend was 36.40p. The bear case cuts it to £0.40 as negative free cash flow persists; the bull case reaches £1.12 as cash conversion improves. FY26 free cash flow was negative £95.5m, which makes the base case an assumption rather than a certainty."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "pence per share; changes in %",
+      "caption": "What one share gets (pence per share; changes in %)",
+      "head": [
+       "Row",
+       "Feb 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "122.40",
+        "140.60",
+        "159.90",
+        "137.50",
+        "20.90"
+       ],
+       [
+        "Real free cash flow per share",
+        "-64.52",
+        "61.05",
+        "105.79",
+        "63.86",
+        "72.55"
+       ],
+       [
+        "− Dividends paid, per share",
+        "97.07",
+        "98.50",
+        "84.27",
+        "58.73",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "150.49",
+        "146.43",
+        "302.82",
+        "15.63",
+        "0.00"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Whitbread’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was £675.4m. Lease principal payments were £172.9m. Together they turned operating cash into free cash flow of negative £95.5m. Subtracting £16.7m of share-based pay gives analytical “real” free cash flow of negative £112.2m, because shares still transfer value to employees even without immediate cash leaving."
+      },
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.8 — Resilience",
+       "text": "Investment and distributions compete for the same cash. FY26 free cash flow was negative £95.5m, while the latest half-year produced £54.2m. Shareholder distributions were approximately £102m in that half-year. Property sales and deferred projects can help, but maintenance, rent and refinancing cannot be removed as freely as a buyback."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "£ millions",
+      "caption": "Follow the money: where the free cash flow went (£ millions)",
+      "head": [
+       "Row",
+       "Feb 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-95.5",
+        "127",
+        "222.3",
+        "147.2",
+        "160.1"
+       ],
+       [
+        "− Dividends paid",
+        "168.8",
+        "177.8",
+        "164.5",
+        "119.1",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "261.7",
+        "264.3",
+        "591.1",
+        "31.7",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "160.1"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "348.1%",
+        "339.9%",
+        "102.4%",
+        "0.0%"
+       ]
+      ],
+      "note": "The company paid shareholders more cash than it generated in free cash flow in several years, so it had to use savings or borrow more money."
+     }
+    },
+    {
+     "heading": "What could change Whitbread’s dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets a 500-basis-point increase in Group ROCE by FY31. It also targets £2bn available for dividends and buybacks. Growth capex must earn at least a 15% return, with FY27 net capex guidance of £200m–£300m."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "1,090 (1,025 / 1,120)",
+        "1,150 (995 / 1,230)",
+        "1,210 (1,020 / 1,350)"
+       ],
+       [
+        "Shares (millions)",
+        "168 (168 / 168)",
+        "165 (169 / 161)",
+        "160 (169 / 154)"
+       ],
+       [
+        "Dividends per share",
+        "0.97 (0.70 / 1.02)",
+        "0.97 (0.50 / 1.07)",
+        "0.97 (0.40 / 1.12)"
+       ],
+       [
+        "Net debt",
+        "476 (529 / 341)",
+        "331 (350 / 175)",
+        "203 (167 / -5.20)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Feb 2026",
+     "value": "97.07"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-2.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-2.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "pence per share; changes in %",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Feb 2024",
+     "Feb 2025",
+     "Feb 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "58.73",
+      "84.27",
+      "98.50",
+      "97.07"
+     ],
+     "Real free cash flow per share": [
+      "72.55",
+      "63.86",
+      "105.79",
+      "61.05",
+      "-64.52"
+     ],
+     "Free cash flow per share": [
+      "78.91",
+      "72.58",
+      "113.88",
+      "70.36",
+      "-54.92"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/wtb-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WTB.L&src=seo-dividend"
+  }
+ },
+ "short_name": "Whitbread",
+ "first_memo_date": "2026-10-16T06:58:43Z"
+}

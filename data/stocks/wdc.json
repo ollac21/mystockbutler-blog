@@ -1,0 +1,801 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "WDC",
+ "slug": "wdc",
+ "company": "Western Digital Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-14T23:49:40Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 364.1,
+ "price_date": "2026-10-14T20:00:01Z",
+ "next_earnings": "2026-10-22",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 267,
+  "tables": 27,
+  "words": 16460,
+  "sources": 283
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Western Digital is a storage-equipment company: it sells devices and platforms that keep digital data when the power is off. To understand its business, follow a dollar from a cloud provider or computer buyer to WD, through factories and customers, and back into profit and cash."
+ },
+ "sources": [
+  {
+   "title": "2026 annual report, Manufacturing",
+   "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm"
+  },
+  {
+   "title": "2025 annual report, Business",
+   "url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000038/wdc-20250627.htm"
+  },
+  {
+   "title": "Western Digital separation Form 8-K/A",
+   "url": "https://www.sec.gov/Archives/edgar/data/106040/000010604025000012/wdc8-khardxspin.htm"
+  }
+ ],
+ "rivals": [
+  "STX",
+  "SNDK",
+  "005930.KS",
+  "MU",
+  "285A.T",
+  "NTAP",
+  "DELL",
+  "HPE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Western Digital stock forecast",
+   "meta_description": "Western Digital's weighted price is $451.10 in October 2027 and $423.17 in October 2029; it turns on cloud demand, pricing and margins.",
+   "opening": "Western Digital's weighted price is $451.10 in October 2027 and $423.17 in October 2029. It hinges on cloud demand, storage volume, pricing, margins, capacity and technology execution.",
+   "closing": "The full memo also explains Western Digital's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Western Digital's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast's central outcome is modest upside with substantial cyclical risk. The weighted price is $451.10 in October 2027, a 24% total return including dividends. It falls to $416.84 in October 2028, a 15% return. By October 2029, it reaches $423.17, a 17% return."
+      },
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast assigns 32% probability to bear and 50% to base. Bull receives 18%. The outcome turns on cloud demand, storage volume, pricing, margins, capacity and technology execution. The October 22, 2026 results will test revenue, margin, operating cash flow, capital spending and diluted shares. Note conversions through November 12 and redemption on November 16 can affect cash and dilution. The credit-facility maturity in January 2027 adds another cash checkpoint. 40TB UltraSMR shipments must expand. HAMR must reach its 44TB qualification target in the first half of calendar 2027."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 364.10, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 364.10, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32%",
+        "299.28 (-18%)",
+        "125.21 (-65%)",
+        "167.50 (-54%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "454.60 (+25%)",
+        "419.34 (+16%)",
+        "374.38 (+3%)"
+       ],
+       [
+        "Bull",
+        "18%",
+        "711.29 (+96%)",
+        "928.34 (+155%)",
+        "1013.20 (+179%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "451.10 (+24%)",
+        "416.84 (+15%)",
+        "423.17 (+17%)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case more or less influence based on its probability."
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Western Digital?",
+     "paragraphs": [
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires faster cloud deployment, broad 40TB adoption, timely HAMR qualification, sustained pricing and good manufacturing yields. Strong cash flow funds buybacks while a longer earnings runway supports the premium multiple. The path reaches $711.29 first and $1,013.20 last, with an 18% probability. The payoff is large, but several uncertain events must align, so base remains more likely."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Western Digital really make?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is the money left after operating the business and buying factories and equipment. After $418 million of capital spending, FY2026 free cash flow was $3,511 million. Subtracting $204 million of stock compensation produces the memo’s analytical “real free cash flow.” Stock pay preserves cash today but dilutes owners unless repurchases offset it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,929",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "418",
+        "273",
+        "321",
+        "602"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,511",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "204",
+        "167",
+        "202",
+        "212"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,307",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but it gives employees part of the company, so we subtract it to show what cash is truly left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Western Digital today?",
+     "paragraphs": [
+      {
+       "n": 186,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The headline trailing P/E is 15.0x, but the earnings denominator is unusually important. FY2026 included a $6.50 billion gain from marking Western Digital’s retained Sandisk investment to market. That gain did not come from selling drives, so it makes the stock look cheaper than its recurring HDD profits may justify. The next-twelve-month P/E is 17.7x, but its usefulness depends on which adjustments the forecast includes."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "364.10"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "15.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "17.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.2%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings number uses analysts’ guesses about future profit, so it may not come true."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "364.10"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "423.17 (+17%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 364.1,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32%",
+      "values": [
+       "299.28 (-18%)",
+       "125.21 (-65%)",
+       "167.50 (-54%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "454.60 (+25%)",
+       "419.34 (+16%)",
+       "374.38 (+3%)"
+      ]
+     },
+     "Bull": {
+      "probability": "18%",
+      "values": [
+       "711.29 (+96%)",
+       "928.34 (+155%)",
+       "1013.20 (+179%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "451.10 (+24%)",
+       "416.84 (+15%)",
+       "423.17 (+17%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/wdc/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WDC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Western Digital dividend: history and cash coverage",
+   "meta_description": "Western Digital pays $0.15 per quarter; FY2026 free cash flow covered its $174 million dividend, but the payment remains discretionary.",
+   "opening": "Western Digital pays $0.15 per quarter. In FY2026, Western Digital generated $3,511 million of free cash flow and paid $174 million in common dividends, so the dividend was covered by cash flow.",
+   "closing": "The full Western Digital memo also covers Western Digital’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Western Digital pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "After the separation, the policy changed. WD authorized $2 billion of buybacks and later another $4 billion. The common dividend resumed at $0.10 and then rose to $0.15. In FY2026, WD paid $2,592 million for buybacks and $174 million in common dividends."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Is Western Digital’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is the money left after operating the business and buying factories and equipment. After $418 million of capital spending, FY2026 free cash flow was $3,511 million. Subtracting $204 million of stock compensation produces the memo’s analytical “real free cash flow.” Stock pay preserves cash today but dilutes owners unless repurchases offset it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,511",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "174",
+        "44",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "2,592",
+        "149",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "745",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Western Digital’s dividend?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend path rises from $0.60 per share to $0.76 in the base case. The bear case cuts it to zero by the final period, while the bull reaches $1.00. The base reflects the current $0.15 quarterly payment and FY2026 free cash flow of $3,511 million, but the prior suspension shows that payments remain discretionary."
+      },
+      {
+       "n": 267,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward bear through October 2029 if more workloads shift to nearline SSDs. It moves toward bull if 40TB UltraSMR shipments expand, HAMR qualifies on schedule, cost per terabyte keeps falling and pricing holds. Those signals would raise revenue, margins, free cash flow and the multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,240 (5,890 / 7,480)",
+        "6,300 (2,875 / 9,000)",
+        "5,920 (3,375 / 10,120)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.60 / 0.60)",
+        "0.68 (0.30 / 0.80)",
+        "0.76 (0.00 / 1.00)"
+       ],
+       [
+        "Net debt",
+        "-3,554 (-4,294 / -3,524)",
+        "-6,608 (-6,016 / -7,696)",
+        "-9,370 (-8,043 / -12,669)"
+       ]
+      ],
+      "note": "A negative net debt number means the company has more cash than borrowed money, not that it owes a negative amount."
+     }
+    },
+    {
+     "heading": "What is Western Digital’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the cash left after operating the business and funding the equipment and development needed to remain competitive. Western Digital reported $1.28 billion of free cash flow in Q4 FY2026, after $1.39 billion of operating cash flow. Its free-cash-flow yield is 2.6%, while its real free-cash-flow yield is 2.4%; the dividend yield is only 0.2%. Those measures show why the price depends on future cash rather than accounting assets."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "364.10"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.2%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings number uses analysts’ guesses about future profit, so it may not come true."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jul 2026",
+     "value": "0.45"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Jul 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.12",
+      "0.45"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "",
+      "8.63"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "",
+      "",
+      "9.17"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/wdc/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WDC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Western Digital earnings: date, guidance and results",
+   "meta_description": "Western Digital reports on October 22, 2026; guidance calls for revenue of $4,000 million–$4,200 million and diluted non-GAAP EPS of $3.85–$4.15.",
+   "opening": "Western Digital's next results are expected on October 22, 2026. Watch whether the promised margin and adjusted EPS turn into operating cash flow.",
+   "closing": "The full memo also answers how Western Digital makes money, who its rivals are, how management is paid and overseen, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has Western Digital guided for the next quarter?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On August 5, Western Digital guided revenue of $4,000 million–$4,200 million for the quarter ending in October 2026. It forecast diluted non-GAAP earnings of $3.85–$4.15 per share."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "4,000",
+        "4,200",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross margin",
+        "Quarter to Oct 2026",
+        "55.0%",
+        "56.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Operating expenses",
+        "Quarter to Oct 2026",
+        "390",
+        "400",
+        "Aug 5, 2026"
+       ],
+       [
+        "Diluted net income per common share",
+        "Quarter to Oct 2026",
+        "3.85",
+        "4.15",
+        "Aug 5, 2026"
+       ],
+       [
+        "Capital expenditures, % of net revenue",
+        "Five years FY2027–FY2031",
+        "4.0%",
+        "6.0%",
+        "Aug 14, 2026"
+       ]
+      ],
+      "note": "The capital expenditures percentage is the average expected across five years, not a separate target for each year."
+     }
+    },
+    {
+     "heading": "Did Western Digital keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "WD did deliver cash returns through dividends and substantially increased repurchases. But repurchases do not automatically shrink the ownership pie. Employee awards and the February 2026 conversion of preferred shares into common stock can issue shares while buybacks remove them."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Western Digital's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue increased in every quarter after the dip in March 2025, while gross margin improved across the eight-quarter series. Western Digital was therefore collecting more revenue and keeping more of each sales dollar. That pattern is stronger evidence than a single year-over-year comparison."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,747",
+        "3,337",
+        "3,017",
+        "2,818",
+        "2,605",
+        "2,294",
+        "2,409",
+        "2,212"
+       ],
+       [
+        "Gross margin",
+        "54.1%",
+        "50.2%",
+        "45.7%",
+        "43.5%",
+        "41.0%",
+        "39.8%",
+        "37.7%",
+        "36.4%"
+       ],
+       [
+        "Operating income",
+        "1,563",
+        "1,190",
+        "908",
+        "792",
+        "680",
+        "760",
+        "560",
+        "334"
+       ],
+       [
+        "Net income",
+        "3,195",
+        "3,205",
+        "1,842",
+        "1,182",
+        "252",
+        "772",
+        "466",
+        "153"
+       ],
+       [
+        "EPS, diluted",
+        "8.21",
+        "8.20",
+        "4.73",
+        "3.07",
+        "0.67",
+        "2.11",
+        "1.27",
+        "0.42"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,281",
+        "978",
+        "653",
+        "599",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The unusually high net income and profit per share in the year to July 2026 mostly come from a one-time gain on retained Sandisk shares, not from selling more products."
+     }
+    },
+    {
+     "heading": "What should I watch in Western Digital's next results?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is October 22, 2026, when WD plans to report fiscal first-quarter results. Investors should compare revenue, margin and adjusted EPS with guidance, then examine operating cash flow, capital spending and the diluted share count together."
+      },
+      {
+       "n": 252,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.6 — Capacity roadmap, customer qualification, and technology execution",
+       "text": "HAMR remained in qualification, with a 44TB target for the first half of calendar 2027. The roadmap also reaches toward 60TB ePMR and 100TB-plus HAMR, but those are targets, not shipments. An exabyte equals one million terabytes, so investors should track not just drive capacity but the exabytes shipped, production yield and repeat orders."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 22, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "3,747"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "8.21"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,212",
+      "2,409",
+      "2,294",
+      "2,605",
+      "2,818",
+      "3,017",
+      "3,337",
+      "3,747"
+     ],
+     "EPS, diluted": [
+      "0.42",
+      "1.27",
+      "2.11",
+      "0.67",
+      "3.07",
+      "4.73",
+      "8.20",
+      "8.21"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/wdc/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WDC&src=seo-earnings"
+  }
+ },
+ "short_name": "Western Digital",
+ "first_memo_date": "2026-10-14T23:49:40Z"
+}

@@ -1,0 +1,853 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AMAT",
+ "slug": "amat",
+ "company": "Applied Materials, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-11T17:09:55Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 507.03,
+ "price_date": "2026-10-09T20:00:01Z",
+ "next_earnings": "2026-11-12",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 27,
+  "words": 16996,
+  "sources": 251
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Applied Materials sells the machines that chipmakers use to build chips, rather than making the finished chips itself. Its dollar comes in through equipment sales and continuing services, after going out first on engineering, components, manufacturing, delivery, and support."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828025051998/exhibit991q42025earningsre.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/6951/000000695124000037/exhibit991q42024earningsre.htm"
+  }
+ ],
+ "rivals": [
+  "LRCX",
+  "KLAC",
+  "ONTO",
+  "NVMI",
+  "CAMT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Applied Materials stock forecast",
+   "meta_description": "Applied Materials stock forecast: weighted scenarios, cash generation, valuation, and the drivers behind bear, base, and bull cases.",
+   "opening": "The Applied Materials weighted forecast points to losses: $352.91 in October 2027 and $384.53 in October 2029, including dividends. Applied Materials hinges on durable AI-led demand, production wins and cash generation.",
+   "closing": "The full memo also answers how Applied Materials makes money, competes with rivals, is run by management, and faces its risks.",
+   "blocks": [
+    {
+     "heading": "Where could shares of Applied Materials be by 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted value is $352.91 in October 2027, a -29% return. It is $384.53 in October 2029, a -23% return. Both returns include dividends. Bear probability is 25%. Base probability is 55%. Bull probability is 20%. October 2029 case prices range from $219.28 in bear to $619.43 in bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 507.03, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 507.03, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "221.59 (-56%)",
+        "177.42 (-64%)",
+        "219.28 (-56%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "355.44 (-29%)",
+        "368.49 (-26%)",
+        "374.23 (-25%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "510.84 (+1%)",
+        "570.35 (+13%)",
+        "619.43 (+24%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "352.91 (-29%)",
+        "361.09 (-28%)",
+        "384.53 (-23%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—and wrong for Applied Materials?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives operating profit of $9,570 million, $8,525 million and $9,860 million as revenue falls, utilization weakens and operating leverage bites. The bull case gives $12,480 million, $14,256 million and $15,840 million as AI, DRAM, packaging and leading-edge investment become repeat orders. Q3 DRAM growth was 52%, and foundry-and-logic revenue reached a record, supporting the upside but not proving a full-cycle result."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "11,100 (9,570 / 12,480)",
+        "11,900 (8,525 / 14,256)",
+        "12,505 (9,860 / 15,840)"
+       ],
+       [
+        "Shares (millions)",
+        "791 (795 / 788)",
+        "788 (795 / 784)",
+        "786 (796 / 779)"
+       ],
+       [
+        "Dividends per share",
+        "2.27 (2.12 / 2.36)",
+        "2.50 (1.59 / 2.71)",
+        "2.75 (1.59 / 3.13)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "25.00 (18.00 / 32.00)",
+        "24.00 (16.00 / 31.00)",
+        "23.00 (17.00 / 30.00)"
+       ],
+       [
+        "Net debt",
+        "-3,545 (-3,841 / -3,390)",
+        "-4,769 (-4,722 / -4,990)",
+        "-6,491 (-6,949 / -7,585)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Applied Materials really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow records money collected from customers after cash payments to employees, suppliers and governments. Free cash flow then subtracts capital spending on facilities and equipment. A stricter measure also subtracts stock compensation, because employees receive ownership with economic value even though the award requires no immediate cash payment."
+      },
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The sensible measure is therefore a multi-year cash record. Average free cash flow across 2021–2025 is useful, but it still combines different demand conditions and investment stages. Applied has not disclosed enough to separate maintenance spending from expansion spending, so sustainable cash generation remains an estimate."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,958",
+        "8,677",
+        "8,700",
+        "5,399",
+        "5,442"
+       ],
+       [
+        "− Capital spending",
+        "2,260",
+        "1,190",
+        "1,106",
+        "787",
+        "668"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,698",
+        "7,487",
+        "7,594",
+        "4,612",
+        "4,774"
+       ],
+       [
+        "− Stock pay",
+        "668",
+        "577",
+        "490",
+        "413",
+        "346"
+       ],
+       [
+        "**= Real free cash flow**",
+        "5,030",
+        "6,910",
+        "7,104",
+        "4,199",
+        "4,428"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "17.7%",
+        "25.4%",
+        "26.8%",
+        "16.3%",
+        "19.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Applied Materials today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed from 34.1% in FY2021 to 4.4% in FY2025, while operating margin stayed near 29%–30%. Applied’s computed free cash flow—cash from operations minus capital spending—fell as a share of revenue in FY2025. Real free cash flow per share fell while diluted EPS held up. At $507.03 a share, trailing P/E is 43.7x and next-twelve-month P/E is 27.1x. Free cash flow yield is 1.4%; dividend yield is 0.4%. Buybacks reduced the share count but cannot replace cash generation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "507.03"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "384.53 (-23%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 507.03,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "221.59 (-56%)",
+       "177.42 (-64%)",
+       "219.28 (-56%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "355.44 (-29%)",
+       "368.49 (-26%)",
+       "374.23 (-25%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "510.84 (+1%)",
+       "570.35 (+13%)",
+       "619.43 (+24%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "352.91 (-29%)",
+       "361.09 (-28%)",
+       "384.53 (-23%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/amat/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMAT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Applied Materials dividend: cash coverage",
+   "meta_description": "Applied Materials pays $2.12 per share; US$30,165 million of free cash flow covered US$26,022 million paid to shareholders, with a 0.4% yield at $507.03.",
+   "opening": "Applied Materials pays $2.12 per share currently, after nine consecutive annual increases. Across fiscal 2021–2025, free cash flow covered total shareholder payments overall, but fiscal 2025 payments exceeded free cash flow.",
+   "closing": "The full memo also examines Applied Materials' business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Applied Materials pay per share?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends rise from $2.27 per share to $2.75. The bear case holds the current $2.12 run rate briefly, then cuts to $1.59; the bull reaches $3.13. The base's 10% annual increase is below the latest 15% raise and the five-year dividend growth record. Nine consecutive annual increases support continued growth, but the payout policy covers buybacks as well as dividends."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "8.66",
+        "8.61",
+        "8.11",
+        "7.44",
+        "6.40"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.71",
+        "1.43",
+        "1.15",
+        "1.00",
+        "0.91"
+       ],
+       [
+        "− Share buybacks, per share",
+        "6.06",
+        "4.58",
+        "2.59",
+        "6.96",
+        "4.08"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "2.96",
+        "5.24",
+        "",
+        "0.20"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Applied Materials' dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across fiscal 2021–2025, Applied generated US$30,165 million of free cash flow and paid shareholders US$26,022 million. Free cash flow is the operating cash left after capital spending, so this distribution came after research, buildings and equipment had already consumed cash."
+      },
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The annual pattern was less even. In fiscal 2022, Applied paid shareholders US$6,976 million against US$4,612 million of free cash flow. In fiscal 2025, it paid US$6,279 million against US$5,698 million generated. Such payouts can draw on saved cash or borrowing, but repeated excess distributions reduce the financial cushion. Applied ended fiscal 2025 with US$2,018 million of net cash, down from US$3,212 million a year earlier."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "5,698",
+        "7,487",
+        "7,594",
+        "4,612",
+        "4,774"
+       ],
+       [
+        "− Dividends paid",
+        "1,384",
+        "1,192",
+        "975",
+        "873",
+        "838"
+       ],
+       [
+        "− Share buybacks",
+        "4,895",
+        "3,823",
+        "2,189",
+        "6,103",
+        "3,750"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "2,472",
+        "4,430",
+        "",
+        "186"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "581",
+        "",
+        "",
+        "2,364",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "110.2%",
+        "67.0%",
+        "41.7%",
+        "151.3%",
+        "96.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Applied Materials' dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would also weaken if EPIC and Singapore capacity spending continues through FY2029 without production wins. Cash flow and buybacks would fall before the investment produced returns."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "11,100 (9,570 / 12,480)",
+        "11,900 (8,525 / 14,256)",
+        "12,505 (9,860 / 15,840)"
+       ],
+       [
+        "Dividends per share",
+        "2.27 (2.12 / 2.36)",
+        "2.50 (1.59 / 2.71)",
+        "2.75 (1.59 / 3.13)"
+       ],
+       [
+        "Net debt",
+        "-3,545 (-3,841 / -3,390)",
+        "-4,769 (-4,722 / -4,990)",
+        "-6,491 (-6,949 / -7,585)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Applied Materials' dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed from 34.1% in FY2021 to 4.4% in FY2025, while operating margin stayed near 29%–30%. Applied’s computed free cash flow—cash from operations minus capital spending—fell as a share of revenue in FY2025. Real free cash flow per share fell while diluted EPS held up. At $507.03 a share, trailing P/E is 43.7x and next-twelve-month P/E is 27.1x. Free cash flow yield is 1.4%; dividend yield is 0.4%. Buybacks reduced the share count but cannot replace cash generation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Oct 2025",
+     "value": "1.71"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Oct 2021",
+     "Oct 2022",
+     "Oct 2023",
+     "Oct 2024",
+     "Oct 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.91",
+      "1.00",
+      "1.15",
+      "1.43",
+      "1.71"
+     ],
+     "Real free cash flow per share": [
+      "4.82",
+      "4.79",
+      "8.41",
+      "8.29",
+      "6.23"
+     ],
+     "Free cash flow per share": [
+      "5.19",
+      "5.26",
+      "8.99",
+      "8.98",
+      "7.05"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/amat/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMAT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Applied Materials earnings",
+   "meta_description": "Applied Materials' next results are expected on November 12, 2026; guidance is in force, while EPIC, demand mix and China rules remain key watchpoints.",
+   "opening": "Applied Materials' next results are expected on November 12, 2026. Applied Materials' key watch is whether EPIC turns joint development into customer qualification and equipment sales.",
+   "closing": "The full Applied Materials memo also answers how the business works, who its rivals are, how management allocates capital, and what risks could change the path.",
+   "blocks": [
+    {
+     "heading": "What has Applied Materials guided for Q4 FY2026?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "From $507.03, the weighted forecast points to losses through October 2029 as multiple compression outweighs operating growth; it hinges on durable AI-led demand, production wins and cash generation. Management guides Q4 FY2026 revenue to $9,750–$10,750 million. Non-GAAP diluted EPS guidance is $3.82–$4.22. Packaging revenue is expected to grow more than 70% in calendar 2026, with AGS revenue growing 20%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total revenue",
+        "Q4 FY2026",
+        "9,750",
+        "10,750",
+        "Aug 13, 2026"
+       ],
+       [
+        "Non-GAAP diluted EPS",
+        "Q4 FY2026",
+        "3.82",
+        "4.22",
+        "Aug 13, 2026"
+       ],
+       [
+        "overall packaging revenues, growth",
+        "calendar 2026",
+        "70.0%",
+        "",
+        "Aug 13, 2026"
+       ],
+       [
+        "AGS, growth",
+        "calendar 2026",
+        "20.0%",
+        "",
+        "Aug 13, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Applied Materials kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has kept some promises: Applied reported six consecutive years of revenue growth, and record third-quarter revenue in August 2026 supported its demand outlook. But EPIC began installation and operations later than its original early-2026 target, and the promised 80–100% distribution of free cash flow must be judged over several years. Management’s incentives point toward shareholders; spending discipline and execution will decide whether that alignment is real."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Applied Materials' last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, gross margin and operating income all strengthened, and operating expenses grew more slowly than sales. Across the recent quarters, the sequence supports a recovery rather than a single isolated spike."
+      },
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Reported net income fell from April even though operating profit rose. April included a $685 million strategic-investment gain, while July included a $220 million expense. Removing the July unrealized loss alone brings reported EPS closer to the company’s adjusted result. The lesson is simple: investment marks can overwhelm the operating signal in any single quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "9,115",
+        "7,910",
+        "7,012",
+        "6,800",
+        "7,302",
+        "7,100",
+        "7,166",
+        "7,045"
+       ],
+       [
+        "Gross margin",
+        "50.3%",
+        "49.9%",
+        "49.0%",
+        "48.0%",
+        "48.8%",
+        "49.1%",
+        "48.8%",
+        "47.3%"
+       ],
+       [
+        "Operating income",
+        "3,075",
+        "2,523",
+        "1,831",
+        "1,712",
+        "2,233",
+        "2,169",
+        "2,175",
+        "2,046"
+       ],
+       [
+        "Net income",
+        "2,538",
+        "2,806",
+        "2,026",
+        "1,897",
+        "1,779",
+        "2,137",
+        "1,185",
+        "1,731"
+       ],
+       [
+        "EPS, diluted",
+        "3.17",
+        "3.51",
+        "2.54",
+        "2.38",
+        "2.22",
+        "2.63",
+        "1.45",
+        "2.09"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,330",
+        "210",
+        "1,040",
+        "2,043",
+        "2,050",
+        "1,061",
+        "544",
+        "2,168"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Applied Materials' next results?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Applied scheduled EPIC’s unveiling for **October 12, 2026**, followed by an investor presentation on October 13. The useful evidence will be operating tools, active joint development and progress toward customer qualification. More partners broaden the opportunity, but qualification will show whether the center is shortening the path from research to equipment sales."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 12, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "9,115"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "3.17"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,045",
+      "7,166",
+      "7,100",
+      "7,302",
+      "6,800",
+      "7,012",
+      "7,910",
+      "9,115"
+     ],
+     "EPS, diluted": [
+      "2.09",
+      "1.45",
+      "2.63",
+      "2.22",
+      "2.38",
+      "2.54",
+      "3.51",
+      "3.17"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/amat/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMAT&src=seo-earnings"
+  }
+ },
+ "short_name": "Applied Materials",
+ "first_memo_date": "2026-10-11T17:09:55Z"
+}

@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SPGI",
+ "slug": "spgi",
+ "company": "S&P Global Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T12:25:08Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 408.57,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 17212,
+  "sources": 221
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "S&P Global sells the information, judgments and benchmarks that people use to lend money, invest and price transactions. Its business becomes clearer when you follow both what it sells and the path a customer’s dollar takes."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000013/spgi-20251231.htm"
+  },
+  {
+   "title": "Earnings release — 2026-02-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000007/a4q2025earningsrelease.htm"
+  },
+  {
+   "title": "Earnings release — 2025-02-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000046/a4q2024earningsrelease.htm"
+  }
+ ],
+ "rivals": [
+  "LSEG.L",
+  "FDS",
+  "MCO",
+  "CME",
+  "MSCI",
+  "VRSK",
+  "ICE",
+  "NDAQ",
+  "MORN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "S&P Global stock forecast",
+   "meta_description": "S&P Global stock forecast: weighted scenarios show where shares could go, what must go right, how much cash the business makes, and what investors pay.",
+   "opening": "S&P Global's weighted scenario reaches $553.76 in October 2029, after $452.43 in October 2027. It hinges on durable growth, cash generation and disciplined buybacks.",
+   "closing": "The full S&P Global memo also answers how S&P Global's business works, who its rivals are, how management is allocating capital, and what risks could change the view.",
+   "blocks": [
+    {
+     "heading": "Where could S&P Global's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $452.43 in October 2027, a 12% total return including dividends. It reaches $507.45 in October 2028, a 26% return. By October 2029, it reaches $553.76, a 39% return."
+      },
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At the final date, the bear and bull outcomes span $320.47 to $838.88. The current price is $408.57. The base case remains the central path, but the range shows how much issuance, AI monetization, leverage, and valuation could matter."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 408.57, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 408.57, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "351.12 (-13 %)",
+        "340.10 (-15 %)",
+        "320.47 (-19 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "467.01 (+15 %)",
+        "531.41 (+32 %)",
+        "574.98 (+44 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "559.85 (+38 %)",
+        "685.27 (+70 %)",
+        "838.88 (+109 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "452.43 (+12 %)",
+        "507.45 (+26 %)",
+        "553.76 (+39 %)"
+       ]
+      ],
+      "note": "The weighted row is a probability-based average of the bear, base, and bull cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for S&P Global?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Healthy issuance, stronger renewals, paid AI adoption, productivity gains and sustained buybacks drive the bull case. Weaker issuance, seat cuts or leverage above target pressure the forecast. The October 27, 2026 results are the first test against the post-Mobility recast history. Through 2027, Market Intelligence renewals and AI-connected products must lift customer spending while leverage moves toward target. The thesis is simple: S&P Global can compound per-share cash growth if its franchises withstand cycles, AI disruption and post-spin leverage."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does S&P Global really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash after capital spending. In 2025, operating cash fell slightly and free cash flow fell 2.0%, even as net income increased. That does not prove the earnings are fictitious. It means the specialist must inspect the timing of collections and payments."
+      },
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "There are also different claims on the cash. S&P Global’s own free-cash-flow measure deducts $321 million distributed to noncontrolling interests, which belong to outside owners of consolidated businesses. The alternative measure here deducts $236 million of stock compensation, because stock pay gives employees a claim on shareholders’ value. Deducting both would produce a different answer, not a more official one."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,651",
+        "5,689",
+        "3,710",
+        "2,603",
+        "3,598"
+       ],
+       [
+        "− Capital spending",
+        "195",
+        "124",
+        "143",
+        "89",
+        "35"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,456",
+        "5,565",
+        "3,567",
+        "2,514",
+        "3,563"
+       ],
+       [
+        "− Stock pay",
+        "236",
+        "247",
+        "171",
+        "214",
+        "122"
+       ],
+       [
+        "**= Real free cash flow**",
+        "5,220",
+        "5,318",
+        "3,396",
+        "2,300",
+        "3,441"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "34.0%",
+        "37.4%",
+        "27.2%",
+        "20.6%",
+        "41.5%"
+       ]
+      ],
+      "note": "The company's own free cash flow is lower because it subtracts cash paid to other owners of partly owned businesses, while our count does not."
+     }
+    },
+    {
+     "heading": "What does an investor pay for S&P Global today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "408.57"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": "The enterprise value and price-to-book figure still include the Mobility business from before it separated, so they may not match what the company looks like today."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "408.57"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "553.76 (+39 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 408.57,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "351.12 (-13 %)",
+       "340.10 (-15 %)",
+       "320.47 (-19 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "467.01 (+15 %)",
+       "531.41 (+32 %)",
+       "574.98 (+44 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "559.85 (+38 %)",
+       "685.27 (+70 %)",
+       "838.88 (+109 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "452.43 (+12 %)",
+       "507.45 (+26 %)",
+       "553.76 (+39 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/spgi/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SPGI&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "S&P Global dividend: pay, coverage and yield",
+   "meta_description": "S&P Global pays $3.88 per share annually; its 2025 cash flow, buybacks, debt and dividend outlook show what could change the payout.",
+   "opening": "S&P Global's current annualized dividend is $3.88 per share, and the base case raises it to $4.08, $4.28, and $4.49. S&P Global's 2025 free cash flow was $5,456 million, but shareholder distributions again exceeded free cash flow as acquisitions consumed cash and debt issuance helped support the competing uses.",
+   "closing": "The full memo also explains S&P Global's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does S&P Global pay per share?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends add a steadier return component. The current annualized rate is $3.88 per share. The base case assumes 5% annual increases, producing $4.08, $4.28, and $4.49. That is supported by the long record of annual increases and $5,456 million of 2025 free cash flow."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "5,810 (5,130 / 6,080)",
+        "6,360 (5,230 / 6,800)",
+        "6,960 (5,350 / 7,640)"
+       ],
+       [
+        "Shares (millions)",
+        "274 (278 / 272)",
+        "263 (277 / 258)",
+        "254 (284 / 246)"
+       ],
+       [
+        "Dividends per share",
+        "4.08 (3.88 / 4.16)",
+        "4.28 (3.88 / 4.45)",
+        "4.49 (3.88 / 4.76)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (19.00 / 25.00)",
+        "22.00 (18.00 / 26.00)",
+        "21.00 (17.00 / 27.00)"
+       ]
+      ],
+      "note": "The numbers in parentheses show the lower and higher possible cases, not extra years."
+     }
+    },
+    {
+     "heading": "Does S&P Global's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The policy later became less extreme but not consistently self-funding. In 2025, shareholder distributions again exceeded free cash flow, acquisitions consumed cash and debt issuance helped support the competing uses. Year-end net debt reached $11,287 million, compared with net cash of $2,394 million in 2021."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "5,456",
+        "5,565",
+        "3,567",
+        "2,514",
+        "3,563"
+       ],
+       [
+        "− Dividends paid",
+        "1,170",
+        "1,134",
+        "1,147",
+        "1,024",
+        "743"
+       ],
+       [
+        "− Share buybacks",
+        "5,001",
+        "3,301",
+        "3,301",
+        "12,004",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "843",
+        "",
+        "",
+        "2,593"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,036",
+        "",
+        "1,161",
+        "10,784",
+        ""
+       ]
+      ],
+      "note": "In 2025, 2023, and 2022, the company paid shareholders more cash than its business generated, so it used savings or borrowed money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change S&P Global's dividend?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case freezes the dividend at $3.88 in every period to preserve cash. The bull case assumes 7% increases, producing $4.16, $4.45, and $4.76. That outcome is possible, but it exceeds recent dividend growth while buybacks and debt reduction compete for cash."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is S&P Global's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show revenue reaching $15,336 million in 2025 while operating margin was 42.2%; the margin story is not smooth. The turn is cash conversion: S&P Global’s own free cash flow was 34.0% of revenue in 2025, down from the prior year. At $408.57, shares offer a 4.5% free-cash-flow yield."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "408.57"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.5%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": "The enterprise value and price-to-book figure still include the Mobility business from before it separated, so they may not match what the company looks like today."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.83"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.07",
+      "3.22",
+      "3.60",
+      "3.64",
+      "3.83"
+     ],
+     "Real free cash flow per share": [
+      "14.23",
+      "7.22",
+      "10.65",
+      "17.05",
+      "17.11"
+     ],
+     "Free cash flow per share": [
+      "14.74",
+      "7.89",
+      "11.19",
+      "17.84",
+      "17.88"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/spgi/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SPGI&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "S&P Global earnings: guidance and what to watch",
+   "meta_description": "S&P Global reports on October 27, 2026; see guidance, recent results and the key test for revenue, profit and cash.",
+   "opening": "S&P Global's next results are expected on October 27, 2026. The key thing to watch is whether revenue growth becomes profit and cash.",
+   "closing": "The full memo also explains S&P Global's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has S&P Global guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, management guides to adjusted diluted EPS of $17.50–$17.75 and GAAP EPS of $16.35–$16.60. GAAP is the formal accounting result; adjusted EPS removes specified items, while diluted EPS allows for shares that employee awards could create. Like judging a restaurant, GAAP is the complete bill, while adjusted profit sets aside selected one-time charges. Neither measure is cash available to spend."
+      },
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The underlying sales target is 6%–8% organic, constant-currency growth. Organic excludes acquisitions and disposals; constant currency excludes exchange-rate movements. Indices is guided to 12%–14% growth and Ratings to 5%–8%, while operating margin should expand by 35–60 basis points. A basis point is one-hundredth of a percentage point."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Organic, Constant Currency Revenue growth",
+        "Year to Dec 2026",
+        "6.0%",
+        "8.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Operating Profit Margin expansion (Adjusted, bps)",
+        "Year to Dec 2026",
+        "35",
+        "60",
+        "Jul 28, 2026"
+       ],
+       [
+        "Diluted EPS (GAAP)",
+        "Year to Dec 2026",
+        "16.35",
+        "16.60",
+        "Jul 28, 2026"
+       ],
+       [
+        "Diluted EPS (Adjusted)",
+        "Year to Dec 2026",
+        "17.50",
+        "17.75",
+        "Jul 28, 2026"
+       ],
+       [
+        "Share repurchases (more than)",
+        "Year to Dec 2026",
+        "7,000",
+        "",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "The company’s adjusted earnings per share is higher than its earnings per share under standard accounting rules because adjusted results leave out certain costs and gains."
+     }
+    },
+    {
+     "heading": "What have S&P Global's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, net income and diluted EPS all rose from the prior-year quarter, and operating margin widened. The improvement was strongest in Ratings and Indices, where activity benefited from debt issuance and market-linked fees. EPS also benefited from fewer shares, so the operating result matters more than the per-share headline alone."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,146",
+        "4,171",
+        "3,916",
+        "3,888",
+        "3,755",
+        "3,777",
+        "3,592",
+        "3,575"
+       ],
+       [
+        "Operating income",
+        "1,812",
+        "2,002",
+        "1,674",
+        "1,675",
+        "1,551",
+        "1,578",
+        "1,309",
+        "1,434"
+       ],
+       [
+        "Net income",
+        "1,217",
+        "1,395",
+        "1,134",
+        "1,176",
+        "1,072",
+        "1,090",
+        "880",
+        "971"
+       ],
+       [
+        "EPS, diluted",
+        "4.12",
+        "4.69",
+        "3.75",
+        "3.86",
+        "3.50",
+        "3.54",
+        "2.85",
+        "3.11"
+       ],
+       [
+        "Cash from operations",
+        "1,439",
+        "1,037",
+        "1,748",
+        "1,505",
+        "1,445",
+        "953",
+        "1,740",
+        "1,445"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,401",
+        "1,010",
+        "1,702",
+        "1,460",
+        "1,384",
+        "910",
+        "1,707",
+        "1,410"
+       ]
+      ],
+      "note": "Free cash flow is the cash left after the company pays for equipment, buildings, and software, so it can differ from profit."
+     }
+    },
+    {
+     "heading": "What should you watch in S&P Global's next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "S&P Global’s October 27, 2026 announcement will use the new discontinued-operations presentation. Investors should compare each remaining division with its recast history, rather than compare a new total with an old total that still includes Mobility."
+      },
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The key test is whether revenue growth becomes profit and cash. Ratings and Indices may strengthen the mix, while Market Intelligence and Energy will show whether product improvements and productivity programs are working. An EPS increase funded by stronger operations means something different from one funded by more borrowing."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,146"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "4.12"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,575",
+      "3,592",
+      "3,777",
+      "3,755",
+      "3,888",
+      "3,916",
+      "4,171",
+      "4,146"
+     ],
+     "EPS, diluted": [
+      "3.11",
+      "2.85",
+      "3.54",
+      "3.50",
+      "3.86",
+      "3.75",
+      "4.69",
+      "4.12"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/spgi/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SPGI&src=seo-earnings"
+  }
+ },
+ "short_name": "S&P Global",
+ "first_memo_date": "2026-10-15T12:25:08Z"
+}

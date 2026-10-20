@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261014T044416Z-4307ff4d10eb",
  "ticker": "ATD.TO",
  "slug": "atd-to",
  "company": "Alimentation Couche-Tard Inc.",
@@ -64,14 +63,21 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Alimentation Couche-Tard Inc. stock forecast",
-   "meta_description": "A weighted scenario, its bear and bull cases, cash generation and today's valuation for Alimentation Couche-Tard Inc.",
-   "opening": "The weighted forecast is C$75.96 in October 2027. It hinges on foodservice, distribution savings and integration benefits arriving together.",
-   "closing": "The full memo also explains Alimentation Couche-Tard Inc.'s business, rivals, management and risks.",
+   "title": "Couche-Tard stock forecast",
+   "meta_description": "Couche-Tard stock scenarios weigh normalized earnings, fuel volumes, foodservice, acquisitions and cash generation.",
+   "opening": "The weighted forecast for Couche-Tard is C$75.96 in October 2027 and C$89.81 in October 2029. It hinges on foodservice, distribution savings and integration benefits arriving together.",
+   "closing": "The full Couche-Tard memo also answers how the business works, how it compares with rivals, how management allocates capital and what risks could change the outlook.",
    "blocks": [
     {
-     "heading": "Where could Alimentation Couche-Tard Inc.'s shares go?",
+     "heading": "Where could Couche-Tard's shares be in October 2029?",
      "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is C$75.96 in October 2027, a 2% loss including dividends. It reaches C$89.81 in October 2029, an 18% gain. Bear probability is 25%, base probability is 55%, and bull probability is 20%. The base case assumes normalized earnings growth and a P/E near 16x."
+      },
       {
        "n": 244,
        "section": "essay-8",
@@ -125,64 +131,20 @@
      }
     },
     {
-     "heading": "What could make Alimentation Couche-Tard Inc.'s shares rise or fall?",
+     "heading": "What has to go right for Couche-Tard, and what could go wrong?",
      "paragraphs": [
       {
-       "n": 256,
+       "n": 251,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
-       "subsection": "8.4 — Bear and bull",
-       "text": "The bear case requires weaker fuel demand, lower fuel margins and acquisition financing to overwhelm merchandise and food growth. Żabka absorbs cash, buybacks remain limited and the valuation contracts. That produces C$61.06 in October 2027 and C$50.44 in October 2029, with a 25% probability. Falling comparable fuel volumes, volatile margins and the undisclosed Irving Oil purchase terms make this a material risk, but Couche-Tard’s regional diversification and dividend stability keep it from being central."
-      },
-      {
-       "n": 257,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.4 — Bear and bull",
-       "text": "The bull case requires several successes at once. Foodservice and merchandise profit offset softer fuel volumes; distribution improves availability and lowers costs; Żabka integrates on schedule; debt falls and buybacks resume. The P/E then rises as investors gain evidence that returns are repeatable. The result is C$90.72 in October 2027 and C$130.19 in October 2029, with a 20% probability. The upside is substantial, but distribution payback and acquisition-by-acquisition returns remain unproven."
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case reaches US$2,816 million as revenue grows to US$88,000 million but margin falls to 3.20%. Fuel-margin normalization, weaker volumes and Żabka financing explain the deterioration. The bull case reaches US$3,990 million on US$95,000 million of revenue and a 4.20% margin, requiring foodservice, distribution savings and integration benefits to arrive together. Management targets adjusted EBITDA growth of 6% to 8% and adjusted diluted EPS growth of at least 10%, but that guidance excludes transactions that materially change the portfolio."
       }
      ],
-     "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
-      "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": [
-       [
-        "Earnings",
-        "3,106 (2,911 / 3,211)",
-        "3,332 (2,848 / 3,580)",
-        "3,620 (2,816 / 3,990)"
-       ],
-       [
-        "Shares (millions)",
-        "915 (917 / 907)",
-        "908 (916 / 891)",
-        "898 (914 / 873)"
-       ],
-       [
-        "Dividends per share",
-        "0.66 (0.60 / 0.69)",
-        "0.73 (0.60 / 0.80)",
-        "0.80 (0.60 / 0.92)"
-       ],
-       [
-        "Price to earnings",
-        "16.00 (13.50 / 18.00)",
-        "16.00 (12.50 / 19.00)",
-        "16.20 (11.50 / 20.00)"
-       ]
-      ],
-      "note": ""
-     }
+     "table": null
     },
     {
-     "heading": "How much cash does Alimentation Couche-Tard Inc. really make?",
+     "heading": "How much cash does Couche-Tard really make?",
      "paragraphs": [
       {
        "n": 150,
@@ -238,14 +200,6 @@
         "1,836.8"
        ],
        [
-        "− Stock pay",
-        "27.1",
-        "23.0",
-        "30.9",
-        "28.3",
-        "23.6"
-       ],
-       [
         "**= Real free cash flow**",
         "2,763.9",
         "2,174.3",
@@ -258,7 +212,7 @@
      }
     },
     {
-     "heading": "What does an investor pay for Alimentation Couche-Tard Inc. today?",
+     "heading": "What does an investor pay for Couche-Tard today?",
      "paragraphs": [
       {
        "n": 10,
@@ -268,7 +222,38 @@
        "text": "At C$78.64, market value is C$72,188.6 million. Enterprise value is C$82,343.8 million; trailing and forward P/E are 16.0x and 16.7x. The company’s free cash flow yield and real free cash flow yield are both 5.5%. Dividend yield is 1.1%; buyback yield is 3.1%. Fiscal 2026 revenue reached US$76,506.6 million, while the company’s real free cash flow was 3.6% of revenue. Diluted EPS rose to US$3.37 and real free cash flow per share to US$2.96. The turn is higher profit alongside weaker comparable fuel volumes."
       }
      ],
-     "table": null
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions; price in C$",
+      "caption": "What an investor pays today (C$ millions; price in C$)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "78.64"
+       ],
+       [
+        "Market value (calculated)",
+        "72,188.6"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "82,343.8"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.5%"
+       ]
+      ],
+      "note": "The share price labeled today is actually the closing price from October 13, one day earlier."
+     }
     }
    ],
    "facts": [
@@ -337,13 +322,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Alimentation Couche-Tard Inc. dividend: cash coverage",
-   "meta_description": "Alimentation Couche-Tard Inc. pays about US$0.60 per share at the latest annualized rate; fiscal 2026 cash covered its dividend.",
-   "opening": "The latest annualized dividend rate was about US$0.60 per share, with the base case rising to US$0.80 per share. Fiscal 2026 free cash flow was US$2,791.0 million, while dividends accounted for US$553.3 million.",
-   "closing": "The full memo also explains Alimentation Couche-Tard Inc.’s business, its rivals, its management and its risks.",
+   "title": "Couche-Tard dividend",
+   "meta_description": "Couche-Tard's dividend, cash coverage, planned growth, risks and current yield in plain English.",
+   "opening": "Couche-Tard's latest annualized dividend is about US$0.60 per share, rising to US$0.80 per share in the base case. Fiscal 2026 dividends used only about one fifth of free cash flow.",
+   "closing": "The full memo explains Couche-Tard's business, rivals, management choices and risks.",
    "blocks": [
     {
-     "heading": "How much does Alimentation Couche-Tard Inc. pay per share?",
+     "heading": "How much does Couche-Tard pay per share?",
      "paragraphs": [
       {
        "n": 253,
@@ -354,28 +339,48 @@
       }
      ],
      "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "title": "What one share gets",
+      "unit": "US$ per share; share changes in %",
+      "caption": "What one share gets (US$ per share; share changes in %)",
       "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
+       "Row",
+       "Apr 2026",
+       "Apr 2025",
+       "Apr 2024",
+       "Apr 2023",
+       "Apr 2022"
       ],
       "rows": [
        [
-        "Dividends per share",
-        "0.66 (0.60 / 0.69)",
-        "0.73 (0.60 / 0.80)",
-        "0.80 (0.60 / 0.92)"
+        "EPS, diluted",
+        "3.37",
+        "2.71",
+        "2.82",
+        "3.06",
+        "2.52"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.59",
+        "0.53",
+        "0.47",
+        "0.37",
+        "0.31"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.68",
+        "1.21",
+        "0.61",
+        "",
+        ""
        ]
       ],
-      "note": ""
+      "note": "The company's own free cash flow per share is higher because it uses a different formula that leaves out changes in day-to-day business cash and subtracts dividends and other items differently."
      }
     },
     {
-     "heading": "Does Alimentation Couche-Tard Inc.'s cash cover its dividend?",
+     "heading": "Is Couche-Tard's dividend covered by its cash?",
      "paragraphs": [
       {
        "n": 90,
@@ -383,6 +388,13 @@
        "chapter": "3. History and capital decisions",
        "subsection": "3.3 — Where the cash went",
        "text": "Shareholders received US$2,125.6 million, or 76.2% of free cash flow. Dividends accounted for US$553.3 million, while repurchases and related taxes accounted for US$1,572.3 million. Repurchases reduce the number of shares, increasing each remaining share’s claim on future profits, but fewer shares do not prove that the company bought them cheaply."
+      },
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Investment then claims cash. Capital spending was US$1,990.5 million, and lease payments were US$581.7 million. The resulting free cash flow was US$2,791.0 million. Deducting stock-based pay as an economic cost leaves real free cash flow of US$2,763.9 million, although that deduction is not an additional cash payment."
       }
      ],
      "table": {
@@ -431,6 +443,14 @@
         ""
        ],
        [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "668.3",
+        "335.6"
+       ],
+       [
         "Paid out, % of free cash flow",
         "76.2%",
         "47.5%",
@@ -443,20 +463,57 @@
      }
     },
     {
-     "heading": "What could change Alimentation Couche-Tard Inc.'s dividend?",
+     "heading": "What could change Couche-Tard's dividend?",
      "paragraphs": [
       {
-       "n": 258,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.5 — What would change the view",
-       "text": "The forecast would move toward the bear case if fuel margins normalize while comparable gallons continue to weaken during FY2027–FY2029. It would also weaken if Żabka integration and debt service reduce repurchases in FY2027–FY2028, or if distribution costs and inventory investment arrive before store-level gains through FY2029."
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The verdict is modest upside to C$89.81 in October 2029, hinging on durable store cash generation and successful acquisitions. Through fiscal 2030, management targets 6%–8% annualized adjusted EBITDA growth and at least 10% adjusted EPS growth, excluding major transactions. Fiscal 2027 guidance includes a US$140.5 million annualized TotalEnergies synergy run rate and 3.0x pro forma leverage at Żabka closing."
       }
      ],
-     "table": null
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,106 (2,911 / 3,211)",
+        "3,332 (2,848 / 3,580)",
+        "3,620 (2,816 / 3,990)"
+       ],
+       [
+        "Shares (millions)",
+        "915 (917 / 907)",
+        "908 (916 / 891)",
+        "898 (914 / 873)"
+       ],
+       [
+        "Dividends per share",
+        "0.66 (0.60 / 0.69)",
+        "0.73 (0.60 / 0.80)",
+        "0.80 (0.60 / 0.92)"
+       ],
+       [
+        "Price to earnings",
+        "16.00 (13.50 / 18.00)",
+        "16.00 (12.50 / 19.00)",
+        "16.20 (11.50 / 20.00)"
+       ]
+      ],
+      "note": ""
+     }
     },
     {
-     "heading": "What is Alimentation Couche-Tard Inc.'s dividend yield at today's price?",
+     "heading": "What is Couche-Tard's dividend yield today?",
      "paragraphs": [
       {
        "n": 10,
@@ -466,26 +523,7 @@
        "text": "At C$78.64, market value is C$72,188.6 million. Enterprise value is C$82,343.8 million; trailing and forward P/E are 16.0x and 16.7x. The company’s free cash flow yield and real free cash flow yield are both 5.5%. Dividend yield is 1.1%; buyback yield is 3.1%. Fiscal 2026 revenue reached US$76,506.6 million, while the company’s real free cash flow was 3.6% of revenue. Diluted EPS rose to US$3.37 and real free cash flow per share to US$2.96. The turn is higher profit alongside weaker comparable fuel volumes."
       }
      ],
-     "table": {
-      "title": "What an investor pays today",
-      "unit": "C$ millions; price in C$",
-      "caption": "What an investor pays today (C$ millions; price in C$)",
-      "head": [
-       "Row",
-       "Today (Oct 14, 2026)"
-      ],
-      "rows": [
-       [
-        "Share price",
-        "78.64"
-       ],
-       [
-        "Dividend yield (calculated)",
-        "1.1%"
-       ]
-      ],
-      "note": "The share price labeled today is actually the closing price from October 13, one day earlier."
-     }
+     "table": null
     }
    ],
    "facts": [
@@ -546,13 +584,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Alimentation Couche-Tard Inc. earnings date",
-   "meta_description": "Alimentation Couche-Tard Inc. next results are expected November 23, 2026; guidance covers growth, synergies and leverage.",
-   "opening": "Alimentation Couche-Tard Inc. is expected to report its next results on November 23, 2026. The key watch is whether investments improve the economics of existing stores.",
-   "closing": "The full memo also answers questions about Alimentation Couche-Tard Inc.’s business, rivals, management and risks.",
+   "title": "Couche-Tard earnings: date, guidance and results",
+   "meta_description": "Couche-Tard's next results are expected November 23, 2026; see its guidance and what to watch.",
+   "opening": "Couche-Tard's next results are expected on November 23, 2026. Watch whether its investments improve returns.",
+   "closing": "The full Couche-Tard memo also answers how its business works, who its rivals are, how management is run, and what risks matter.",
    "blocks": [
     {
-     "heading": "What has Alimentation Couche-Tard Inc. guided for the year?",
+     "heading": "What has Couche-Tard guided for the year?",
      "paragraphs": [
       {
        "n": 211,
@@ -600,7 +638,7 @@
      }
     },
     {
-     "heading": "Has Alimentation Couche-Tard Inc. kept its past promises?",
+     "heading": "Did Couche-Tard keep its past promises?",
      "paragraphs": [
       {
        "n": 131,
@@ -613,14 +651,14 @@
      "table": null
     },
     {
-     "heading": "How have Alimentation Couche-Tard Inc.’s revenue and profit trended?",
+     "heading": "What do Couche-Tard's last eight quarters show?",
      "paragraphs": [
       {
-       "n": 170,
+       "n": 164,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "The latest quarter confirms improving earnings, but it does not yet prove that unusually strong fuel margins will last."
+       "text": "Operating income rose to US$1,223.7 million, while net income reached US$828.5 million. Adjusted net income rose from US$737.0 million to US$827.0 million, showing that the improvement was stronger after removing the prior-year GetGo gain. Fewer shares also helped diluted EPS reach US$0.90."
       }
      ],
      "table": {
@@ -649,6 +687,17 @@
         "16,270.5",
         "20,903.5",
         "17,405.3"
+       ],
+       [
+        "Gross margin",
+        "16.6%",
+        "18.0%",
+        "19.4%",
+        "19.1%",
+        "19.1%",
+        "18.0%",
+        "18.0%",
+        "18.1%"
        ],
        [
         "Operating income",
@@ -682,31 +731,20 @@
         "0.46",
         "0.68",
         "0.75"
-       ],
-       [
-        "**= Free cash flow**",
-        "1,041.5",
-        "1,001.1",
-        "455.6",
-        "610.4",
-        "723.9",
-        "989.8",
-        "42.1",
-        "691.3"
        ]
       ],
       "note": "Free cash flow is the cash left after the company pays for equipment, leases, and interest, not just equipment."
      }
     },
     {
-     "heading": "What should investors watch in Alimentation Couche-Tard Inc.’s next results?",
+     "heading": "What should investors watch in Couche-Tard's next results?",
      "paragraphs": [
       {
-       "n": 238,
+       "n": 234,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
-       "text": "For operations, initial sourcing and procurement benefits are expected late in fiscal 2027. RELEX is expected to reach most U.S. business units during fiscal 2027 and Canada during fiscal 2028. The final test is whether those milestones improve the economics of existing stores."
+       "text": "The next verdict will come from closing conditions and evidence that the investments improve returns."
       }
      ],
      "table": null
@@ -767,5 +805,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=ATD.TO&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Couche-Tard",
+ "first_memo_date": "2026-10-14T06:17:58Z"
 }

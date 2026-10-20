@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261019T060526Z-8a33163c37da",
  "ticker": "SHOP.TO",
  "slug": "shop-to",
  "company": "Shopify Inc.",
@@ -31,12 +30,12 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000012/shop-20241231.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000012/shop-20241231.htm"
+   "title": "Second-quarter 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000047/shop-20260630.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1594805/000159480524000007/exhibit13mdaq42023.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480524000007/exhibit13mdaq42023.htm"
+   "title": "SEC-filed results release, footnote 6",
+   "url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000046/exhibit991pressreleaseq220.htm"
   }
  ],
  "rivals": [
@@ -63,13 +62,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Shopify Inc. stock forecast: scenarios and cash",
-   "meta_description": "Shopify Inc. stock forecast: weighted scenarios, cash flow after stock pay and valuation through October 2029.",
-   "opening": "The weighted forecast puts SHOP.TO at C$281.63 in October 2029. It hinges on free cash flow after stock pay, share count, net cash and the valuation multiple.",
-   "closing": "The full Shopify Inc. memo also explains its business, rivals, management and risks.",
+   "title": "Shopify stock forecast",
+   "meta_description": "Shopify's weighted forecast reaches C$281.63 in October 2029, with bear, base and bull scenarios shaped by cash flow, margins, share count and valuation.",
+   "opening": "Shopify's weighted forecast is C$281.63 in October 2029, a 17% return including dividends, with 25% probability to the bear case, 55% to base and 20% to bull. It hinges on free cash flow after stock pay, share count, net cash and the valuation multiple.",
+   "closing": "The full Shopify memo also answers how Shopify works, who its rivals are, how management allocates capital, and what risks could change the outcome.",
    "blocks": [
     {
-     "heading": "Where could Shopify Inc.'s shares be by 2029?",
+     "heading": "Where could Shopify's shares be by 2029?",
      "paragraphs": [
       {
        "n": 11,
@@ -77,6 +76,13 @@
        "chapter": "Executive summary",
        "subsection": "The verdict",
        "text": "The weighted price is C$249.00 in October 2027, a 4% return including dividends. It is C$281.63 in October 2029, a 17% return including dividends. The forecast assigns 25% probability to the bear case, 55% to base and 20% to bull."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear endpoint is 80.06. The bull endpoint is 561.92, versus today's 239.71. The table shows why the weighted result should not be mistaken for the most likely single price."
       }
      ],
      "table": {
@@ -124,15 +130,8 @@
      }
     },
     {
-     "heading": "What has to go right—or wrong—for Shopify Inc.?",
+     "heading": "What has to go right for Shopify, and what could go wrong?",
      "paragraphs": [
-      {
-       "n": 12,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The outcome turns on free cash flow after stock pay, share count, net cash and the valuation multiple. AI, international, B2B and offline demand support the upside; weak merchant sales, payment costs or lending losses pressure it. November 3, 2026 Q3 results are the next catalyst. Shopify’s growth is compelling, but cash conversion and valuation decide the return."
-      },
       {
        "n": 241,
        "section": "essay-8",
@@ -144,15 +143,8 @@
      "table": null
     },
     {
-     "heading": "How much cash does Shopify Inc. really make?",
+     "heading": "How much cash does Shopify really make?",
      "paragraphs": [
-      {
-       "n": 136,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.3 — Cash",
-       "text": "**Free cash flow** means cash from operations less capital spending. Shopify needs little physical equipment for each additional merchant, so capital spending is modest. That does not make the platform costless: engineers, hosting, security and support keep it operating, and those costs already reduce operating cash flow."
-      },
       {
        "n": 138,
        "section": "essay-5",
@@ -174,6 +166,22 @@
        "2021"
       ],
       "rows": [
+       [
+        "Cash from operations",
+        "2,033",
+        "1,616",
+        "944",
+        "-136",
+        "535.711"
+       ],
+       [
+        "− Capital spending",
+        "26",
+        "19",
+        "39",
+        "50",
+        "50.788"
+       ],
        [
         "**= Free cash flow**",
         "2,007",
@@ -199,14 +207,6 @@
         "154.16"
        ],
        [
-        "Free cash flow, % of revenue",
-        "17.4%",
-        "18.0%",
-        "12.8%",
-        "-3.3%",
-        "10.5%"
-       ],
-       [
         "Real free cash flow, % of revenue",
         "13.5%",
         "13.1%",
@@ -219,8 +219,16 @@
      }
     },
     {
-     "heading": "What does an investor pay for Shopify Inc.?",
-     "paragraphs": [],
+     "heading": "What does an investor pay today for Shopify?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Shopify’s Class A share is a claim on a fast-growing commerce platform, but its price leaves little room for disappointment. The central question is not whether Shopify is a good business, but how much future cash and control an investor is already paying for."
+      }
+     ],
      "table": {
       "title": "What an investor pays today",
       "unit": "C$ millions",
@@ -235,16 +243,16 @@
         "239.71"
        ],
        [
+        "Market value (calculated)",
+        "308,421.4167"
+       ],
+       [
         "Enterprise value (calculated)",
         "301,415.97"
        ],
        [
         "P/E, last 12 months (calculated)",
         "114.4x"
-       ],
-       [
-        "P/E, next 12 months (calculated)",
-        "69.4x"
        ],
        [
         "Free cash flow yield (calculated)",
@@ -325,13 +333,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Shopify Inc. earnings: date, guidance and results",
-   "meta_description": "Shopify Inc. reports November 3, 2026; see its guidance, recent results and what to watch.",
-   "opening": "Shopify Inc.'s next results are expected on November 3, 2026. The key question is whether revenue and gross profit grew as guided.",
-   "closing": "The full memo also covers Shopify Inc.'s business, rivals, management and risks.",
+   "title": "Shopify earnings date",
+   "meta_description": "Shopify's November 3, 2026 results will test growth, gross profit and spending discipline.",
+   "opening": "Shopify's next results are due November 3, 2026. The thing to watch is whether Shopify delivered growth without losing spending discipline.",
+   "closing": "The full memo also answers how Shopify's business works, how it compares with rivals, who runs it and what risks could change the outcome.",
    "blocks": [
     {
-     "heading": "What has Shopify Inc. guided for the quarter ending September 2026?",
+     "heading": "What has Shopify guided for the next quarter?",
      "paragraphs": [
       {
        "n": 10,
@@ -339,13 +347,6 @@
        "chapter": "Executive summary",
        "subsection": "The verdict",
        "text": "The weighted forecast puts SHOP.TO at C$281.63 in October 2029, a 17% return including dividends, if Shopify sustains cash growth while margins and its valuation multiple evolve as modeled. Management guides to revenue growth in the low thirties and gross-profit-dollar growth in the mid-to-high twenties for the quarter ending September 2026. It guides operating expenses to 33.0%–34.0% of revenue and stock-based compensation to US$150 million."
-      },
-      {
-       "n": 117,
-       "section": "essay-4",
-       "chapter": "4. Management and ownership",
-       "subsection": "4.5 — Pay, and promises kept",
-       "text": "Management has also shown evidence of delivery. In May 2026, it forecast second-quarter revenue growth in the high twenties and a free-cash-flow margin in the mid-teens. The quarter delivered 34% growth and an 18% margin. The lasting test is performance per share, because growth that requires too many new claims can still leave existing owners with too little."
       }
      ],
      "table": {
@@ -400,7 +401,20 @@
      }
     },
     {
-     "heading": "What happened in Shopify Inc.'s last eight quarters?",
+     "heading": "Has Shopify kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 117,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has also shown evidence of delivery. In May 2026, it forecast second-quarter revenue growth in the high twenties and a free-cash-flow margin in the mid-teens. The quarter delivered 34% growth and an 18% margin. The lasting test is performance per share, because growth that requires too many new claims can still leave existing owners with too little."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Shopify's revenue and profit trended over the last eight quarters?",
      "paragraphs": [
       {
        "n": 149,
@@ -480,13 +494,24 @@
         "-0.53",
         "0.99",
         "0.64"
+       ],
+       [
+        "**= Free cash flow**",
+        "654",
+        "476",
+        "715",
+        "507",
+        "422",
+        "363",
+        "611",
+        "421"
        ]
       ],
       "note": "In June 2026, moving merchant cash advances from daily-business cash to investing cash makes cash from operations and free cash flow look higher even though the company's total cash did not change."
      }
     },
     {
-     "heading": "What should investors watch in Shopify Inc.'s next results?",
+     "heading": "What should I watch in Shopify's next results?",
      "paragraphs": [
       {
        "n": 224,
@@ -561,7 +586,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=SHOP.TO&src=seo-earnings"
   }
  },
- "held": {
-  "dividend": "no dividend"
- }
+ "short_name": "Shopify",
+ "first_memo_date": "2026-10-19T07:24:26Z"
 }

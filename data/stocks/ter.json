@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TER",
+ "slug": "ter",
+ "company": "Teradyne, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T17:05:49Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 325.0,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 230,
+  "tables": 27,
+  "words": 16220,
+  "sources": 223
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Teradyne sells machines and software that test chips and electronic products, along with robots that move materials or perform factory work. Its business is easiest to understand as a chain: it builds a tool, a customer uses it to make or inspect something, and money flows in through equipment, services and continuing demand."
+ },
+ "sources": [
+  {
+   "title": "Teradyne 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/ter-20251231.htm"
+  },
+  {
+   "title": "Teradyne 2024 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/97210/000095017025023784/ter-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/97210/000119312526034348/ter-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "COHU",
+  "KEYS",
+  "ABB.ST",
+  "ROK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Teradyne stock forecast",
+   "meta_description": "Teradyne stock forecast: weighted scenarios, business drivers, real free cash flow after stock pay, and today’s valuation.",
+   "opening": "The weighted value is $302.86 in October 2027, a 7% loss including dividends. It hinges on qualified compute and memory demand becoming durable, profitable growth.",
+   "closing": "The full memo also answers how Teradyne’s business works, who its rivals are, how management allocates capital, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could Teradyne’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted value is $302.86 in October 2027. That equals a 7% loss including dividends. By October 2029, weighted value reaches $336.98. That equals a 4% gain. Bear probability is 28%. Base probability is 54%; bull probability is 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 325.00, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 325.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "166.35 (-49 %)",
+        "130.68 (-59 %)",
+        "145.97 (-55 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "322.05 (-1 %)",
+        "331.99 (+2 %)",
+        "339.03 (+5 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "457.64 (+41 %)",
+        "553.55 (+71 %)",
+        "627.96 (+94 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "302.86 (-7 %)",
+        "315.50 (-3 %)",
+        "336.98 (+4 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Teradyne, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case depends on customers absorbing capacity and utilization weakening. The bull case requires AI and memory ramps, production wins and stronger robotics execution. The outcome turns on qualified compute programs reaching volume, customers needing new tester capacity, and robotics producing repeat deployments rather than channel shipments alone."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Teradyne really make?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from operating cash. Teradyne used $224.0 million for property, plant and equipment in 2025 as it prepared for Semiconductor Test capacity needs. Stock compensation was $64.0 million: it is not a current cash payment, but it can dilute owners, so subtracting it produces a stricter measure of cash available to them."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "674,415",
+        "672,176",
+        "585,231",
+        "577,923",
+        "1,098,366"
+       ],
+       [
+        "− Capital spending",
+        "224,009",
+        "198,095",
+        "159,642",
+        "163,249",
+        "132,472"
+       ],
+       [
+        "**= Free cash flow**",
+        "450,406",
+        "474,081",
+        "425,589",
+        "414,674",
+        "965,894"
+       ],
+       [
+        "− Stock pay",
+        "63,999",
+        "60,122",
+        "57,682",
+        "48,228",
+        "45,643"
+       ],
+       [
+        "**= Real free cash flow**",
+        "386,407",
+        "413,959",
+        "367,907",
+        "366,446",
+        "920,251"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "12.1%",
+        "14.7%",
+        "13.7%",
+        "11.6%",
+        "24.9%"
+       ]
+      ],
+      "note": "The company's own free cash flow is slightly different from ours because it uses its own rules and rounds the figures, so the two counts are not exactly the same."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Teradyne today?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price-to-earnings ratio, divides the share price by company profit. Trailing P/E uses the last twelve months of earnings, while forward P/E uses an estimate. A large one-time customer order can make profit jump and make P/E look cheap even though normal earning power has not changed. “Through-cycle” analysis asks what profits look like across strong and weak periods. That matters because Teradyne reported record revenue in the second quarter of 2026 as artificial-intelligence demand strengthened."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands, except share price, multiples and yields",
+      "caption": "What an investor pays today (US$ thousands, except share price, multiples and yields)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "325.00"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "44.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "35.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.8%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings ratio uses analysts’ predicted profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "325.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "336.98 (+4 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "35.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 325.0,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "166.35 (-49 %)",
+       "130.68 (-59 %)",
+       "145.97 (-55 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "322.05 (-1 %)",
+       "331.99 (+2 %)",
+       "339.03 (+5 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "457.64 (+41 %)",
+       "553.55 (+71 %)",
+       "627.96 (+94 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "302.86 (-7 %)",
+       "315.50 (-3 %)",
+       "336.98 (+4 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ter/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TER&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Teradyne dividend: is it covered by cash?",
+   "meta_description": "Teradyne's dividend history, cash coverage, possible changes and yield are explained in plain English.",
+   "opening": "Teradyne’s dividend is $0.52 per share on the current run rate; the forecast ranges from $0.48 to $0.72 per share. In 2025, Teradyne paid dividends and buybacks equal to 172.8% of free cash flow, so its shareholder payouts were not covered by that year’s free cash flow alone.",
+   "closing": "The full Teradyne memo also answers how Teradyne’s business works, who its rivals are, how management allocates capital, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "How much does Teradyne pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $0.52 per share to $0.60 in the base case. That repeats the recent $0.04 annual step from $0.48 to the current $0.52 run rate. The bear case cuts the dividend to $0.48 after October 2027, while the bull case reaches $0.72 as cash generation strengthens. The board retains discretion, so neither path is guidance."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "0.48",
+        "0.47",
+        "0.41",
+        "0.41",
+        "0.36"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.40",
+        "1.22",
+        "2.42",
+        "4.43",
+        "3.27"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "1.22",
+        "",
+        "",
+        "1.63"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "2.05",
+        "",
+        "0.24",
+        "2.40",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract the value of shares given to employees as pay; we subtract that cost, so our real amount is lower."
+     }
+    },
+    {
+     "heading": "Does Teradyne’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company returned more cash to shareholders than that year’s free cash flow in 2025. Dividends and buybacks were 172.8% of free cash flow, and buybacks alone were $702,095 thousand. That meant Teradyne used accumulated cash or borrowing, rather than relying only on that year’s earnings power. Such a policy can be sensible if the shares are undervalued, but the cash-flow figures alone cannot show whether the repurchases created value."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "450,406",
+        "474,081",
+        "425,589",
+        "414,674",
+        "965,894"
+       ],
+       [
+        "− Dividends paid",
+        "76,313",
+        "76,423",
+        "67,878",
+        "69,711",
+        "65,977"
+       ],
+       [
+        "− Share buybacks",
+        "702,095",
+        "198,574",
+        "397,241",
+        "752,082",
+        "600,000"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "199,084",
+        "",
+        "",
+        "299,917"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "328,002",
+        "",
+        "39,530",
+        "407,119",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "172.8%",
+        "58.0%",
+        "109.3%",
+        "198.2%",
+        "68.9%"
+       ]
+      ],
+      "note": "The company paid shareholders more cash than it generated in free cash flow in some years, so it used savings or borrowed money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Teradyne’s dividend?",
+     "paragraphs": [
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Teradyne also spent on equipment and acquisitions, issued debt and ended 2025 with net cash. Its cash reserve was nevertheless much smaller than in 2021. Management has said it wants to reinvest, preserve reserves and retain capacity for acquisitions; the payout record shows that these aims compete for the same pool of money."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Teradyne’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Dividend yield describes the dividend at a particular share price, not the full shareholder return. Cash, debt and capital allocation must therefore be read together."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands, except share price, multiples and yields",
+      "caption": "What an investor pays today (US$ thousands, except share price, multiples and yields)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "325.00"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.2%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings ratio uses analysts’ predicted profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.48"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "0.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.36",
+      "0.41",
+      "0.41",
+      "0.47",
+      "0.48"
+     ],
+     "Real free cash flow per share": [
+      "5.01",
+      "2.16",
+      "2.24",
+      "2.53",
+      "2.42"
+     ],
+     "Free cash flow per share": [
+      "5.26",
+      "2.44",
+      "2.59",
+      "2.90",
+      "2.82"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ter/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TER&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Teradyne earnings date and guidance",
+   "meta_description": "Teradyne's next results are expected on October 27, 2026; guidance covers revenue, EPS, margins and operating profit.",
+   "opening": "Teradyne's next results are expected on October 27, 2026. Teradyne should watch whether revenue and EPS land within the guide and whether product mix affects gross margin.",
+   "closing": "The full memo answers how Teradyne's business works, how its rivals compare, how Teradyne's management is paid, and what risks Teradyne faces.",
+   "blocks": [
+    {
+     "heading": "What has Teradyne guided for the quarter ending September?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the quarter ending September 2026, management issued revenue guidance. The range is $1,200 million–$1,300 million. Non-GAAP diluted EPS guidance is $1.85–$2.15. Gross margin guidance is 58.0%–59.0%. Operating profit guidance is 28.0%–30.0%."
+      },
+      {
+       "n": 189,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the quarter ending in September, management guided to the revenue and non-GAAP diluted EPS ranges shown below. Non-GAAP means Teradyne has removed specified items, including acquired-intangible amortization and certain restructuring charges. It is management’s preferred operating view, but it is not the same as GAAP earnings, so investors should compare non-GAAP guidance with non-GAAP results."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "GAAP and non-GAAP third quarter revenue guidance",
+        "Quarter to Sep 2026",
+        "1,200",
+        "1,300",
+        "Jul 28, 2026"
+       ],
+       [
+        "Non-GAAP net income attributable to Teradyne per diluted share",
+        "Quarter to Sep 2026",
+        "1.85",
+        "2.15",
+        "Jul 28, 2026"
+       ],
+       [
+        "Gross Margin",
+        "Quarter to Sep 2026",
+        "58.0%",
+        "59.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Operating Profit",
+        "Quarter to Sep 2026",
+        "28.0%",
+        "30.0%",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "Operating expenses are shown as 29.0% to 30.0% because the company presented them in reverse order as revenue rises, while this table lists the lower and higher numbers first."
+     }
+    },
+    {
+     "heading": "What has Teradyne's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The sequence matters more than the single comparison. Revenue accelerated from weak mid-2025 quarters into late 2025 and the first half of 2026, with Semiconductor Test supplying most of the total. Cash flow also moved sharply between quarters because collections and other working-capital movements do not arrive evenly. The next question is whether customers need new capacity or can use what they already own."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,328,990",
+        "1,282,494",
+        "1,083,337",
+        "769,210",
+        "651,797",
+        "685,680",
+        "752,884",
+        "737,298"
+       ],
+       [
+        "Gross margin",
+        "59.8%",
+        "60.9%",
+        "57.2%",
+        "58.4%",
+        "57.2%",
+        "60.6%",
+        "59.4%",
+        "59.2%"
+       ],
+       [
+        "Operating income",
+        "437,810",
+        "473,002",
+        "293,200",
+        "145,303",
+        "90,743",
+        "120,803",
+        "153,584",
+        "152,065"
+       ],
+       [
+        "Net income",
+        "374,533",
+        "398,908",
+        "257,220",
+        "119,558",
+        "78,372",
+        "98,896",
+        "146,253",
+        "145,649"
+       ],
+       [
+        "EPS, diluted",
+        "2.38",
+        "2.53",
+        "1.63",
+        "0.75",
+        "0.49",
+        "0.61",
+        "0.90",
+        "0.89"
+       ],
+       [
+        "**= Free cash flow**",
+        "378,432",
+        "200,391",
+        "218,750",
+        "2,358",
+        "131,680",
+        "97,616",
+        "225,172",
+        "114,430"
+       ]
+      ],
+      "note": "September 2025 free cash flow is almost zero because the report calculates that quarter by subtracting the first six months from the first nine months, not because the company barely generated cash then."
+     }
+    },
+    {
+     "heading": "What should Teradyne watch after the next results?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The September-quarter results are scheduled by one estimate service for October 27, 2026, though that date is estimated. Investors should examine whether revenue and EPS land within the guide, whether product mix affects gross margin, and whether new-product launches bring the costs management described. Because the Q3 analyst sample is small, the company’s actual results and explanation matter more than a narrow consensus beat."
+      },
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The larger checkpoint is the Q4 earnings call, when management has said it will update its target earnings model. This is a financial blueprint: expected revenue growth, margins, operating costs, investment, and resulting earnings. It becomes more credible when its assumptions connect to customer orders and capacity plans. A higher revenue target means less if it requires permanently higher costs or lower margins."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,328,990"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.38"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "737,298",
+      "752,884",
+      "685,680",
+      "651,797",
+      "769,210",
+      "1,083,337",
+      "1,282,494",
+      "1,328,990"
+     ],
+     "EPS, diluted": [
+      "0.89",
+      "0.90",
+      "0.61",
+      "0.49",
+      "0.75",
+      "1.63",
+      "2.53",
+      "2.38"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ter/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TER&src=seo-earnings"
+  }
+ },
+ "short_name": "Teradyne",
+ "first_memo_date": "2026-10-18T17:05:49Z"
+}

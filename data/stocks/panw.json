@@ -1,0 +1,576 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PANW",
+ "slug": "panw",
+ "company": "Palo Alto Networks, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T03:27:11Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 418.78,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-11-18",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 26,
+  "words": 16623,
+  "sources": 246
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Palo Alto Networks sells the systems that help organizations keep networks, computers, applications, and digital identities safe. Its business begins with security technology, then turns into recurring subscriptions, services, and partner-delivered work that bring money in while hardware, hosting, people, and sales take money out."
+ },
+ "sources": [
+  {
+   "title": "FY2026 annual report, Note 8",
+   "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+  },
+  {
+   "title": "FY2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm"
+  },
+  {
+   "title": "FY2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756724000029/panw-20240731.htm"
+  }
+ ],
+ "rivals": [
+  "CSCO",
+  "MSFT",
+  "GOOGL",
+  "CHKP",
+  "FTNT",
+  "CRWD",
+  "ZS",
+  "OKTA",
+  "SAIL",
+  "S",
+  "QLYS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Palo Alto Networks stock forecast",
+   "meta_description": "Palo Alto Networks' stock forecast weighs bear, base and bull scenarios against cash generation, dilution and valuation.",
+   "opening": "The weighted scenario puts Palo Alto Networks at $230.62 in October 2027. It hinges on cash growth after stock pay.",
+   "closing": "The full memo also explains Palo Alto Networks' business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Palo Alto Networks' shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $230.62 in October 2027, a 45% loss with dividends. It is $251.18 in October 2028, a 40% loss. By October 2029, it reaches $280.57, still a 33% loss. The October 2029 scenarios run from $88.34 to $548.25. Today’s price is $418.78."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 418.78, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 418.78, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "118.87 (-72 %)",
+        "86.80 (-79 %)",
+        "88.34 (-79 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "242.71 (-42 %)",
+        "265.83 (-37 %)",
+        "288.83 (-31 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "368.00 (-12 %)",
+        "461.13 (+10 %)",
+        "548.25 (+31 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "230.62 (-45 %)",
+        "251.18 (-40 %)",
+        "280.57 (-33 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Palo Alto Networks?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $2,400M first and then $2,200M. It recovers to $2,700M. Delayed deployments, a fading Chronosphere migration and the acquired businesses’ combined $797M operating loss support that downside. The bull case reaches $3,600M first, then $4,700M and $5,900M, requiring broad paid deployments and better service economics."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Palo Alto Networks really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations rose from $1,984.7 million to $4,553 million. After capital spending, free cash flow—cash left after maintaining or expanding the business—was $4,113 million. Its margin nevertheless fell from 37.6% to 35.8%, and working capital contributed less than in the prior year."
+      },
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is also a shareholder cost. PANW recorded $1.815 billion of it in FY2026. Employees receive ownership claims instead of cash, so existing shareholders own a smaller proportion of a larger share count. Deducting that cost produces an analytical “real free cash flow” rather than an official accounting measure."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,553",
+        "3,716",
+        "3,258",
+        "2,777.5",
+        "1,984.7"
+       ],
+       [
+        "− Capital spending",
+        "440",
+        "247",
+        "157",
+        "146.3",
+        "192.8"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,113",
+        "3,469",
+        "3,101",
+        "2,631.2",
+        "1,791.9"
+       ],
+       [
+        "− Stock pay",
+        "1,774",
+        "1,295",
+        "1,076",
+        "1,074.5",
+        "1,011.1"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,339",
+        "2,174",
+        "2,025",
+        "1,556.7",
+        "780.8"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "20.4%",
+        "23.6%",
+        "25.2%",
+        "22.6%",
+        "14.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Palo Alto Networks?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E of 821.1x divides the share price by very small recent GAAP earnings. GAAP includes compensation, acquisition costs, taxes and unusual items; adjusted earnings remove selected items to show management’s preferred view of ongoing operations. PANW reported $3.84 of adjusted diluted earnings for FY26, while the forward P/E of 86.1x depends on forecast earnings arriving as expected."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "418.78"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "341,265.04"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "821.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "86.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "418.78"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "280.57 (-33 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "86.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 418.78,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "118.87 (-72 %)",
+       "86.80 (-79 %)",
+       "88.34 (-79 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "242.71 (-42 %)",
+       "265.83 (-37 %)",
+       "288.83 (-31 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "368.00 (-12 %)",
+       "461.13 (+10 %)",
+       "548.25 (+31 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "230.62 (-45 %)",
+       "251.18 (-40 %)",
+       "280.57 (-33 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/panw/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PANW&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Palo Alto Networks earnings date and guidance",
+   "meta_description": "Palo Alto Networks is expected to report November 18, 2026; FY2027 revenue guidance is $14,100–$14,200 million.",
+   "opening": "Palo Alto Networks is expected to report its next results on November 18, 2026. The main thing to watch is whether ARR growth is broad-based and turns into cash after the recent acquisitions.",
+   "closing": "The full memo also explains Palo Alto Networks’ business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Palo Alto Networks guided for the year?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides FY2027 revenue to $14,100–$14,200 million and NGS ARR—annualized recurring revenue from next-generation security products and services—to $11,075–$11,175 million. It targets a 29.5% non-GAAP operating margin and expects 60.0%–61.0% of FY2027 net new NGS ARR in the second half."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Next-Generation Security ARR (FY2027)",
+        "Year to Jul 2027",
+        "11,075",
+        "11,175",
+        "Sep 1, 2026"
+       ],
+       [
+        "Total revenue (FY2027)",
+        "Year to Jul 2027",
+        "14,100",
+        "14,200",
+        "Sep 1, 2026"
+       ],
+       [
+        "Non-GAAP operating margin (FY2027)",
+        "Year to Jul 2027",
+        "29.5%",
+        "29.5%",
+        "Sep 1, 2026"
+       ],
+       [
+        "Net new NGS ARR in the second half (share of full-year total)",
+        "Year to Jul 2027",
+        "60.0%",
+        "61.0%",
+        "Sep 1, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Palo Alto Networks kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The company did not reset annual performance targets after its 2024 strategy change. The relevant portions of two earlier awards therefore earned zero. For fiscal 2026, maximum recurring-revenue achievement required $400 million above target, but the zero-payout boundary also moved farther below target. The revised scale demands more exceptional upside while allowing a larger miss before payout disappears."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Palo Alto Networks revenue and profit changed over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "PANW has recently cleared its quarterly hurdles. Across eight quarters, it exceeded consensus for both revenue and adjusted earnings. In Q4 FY2026, revenue reached US$3,410 million against US$3,350 million expected. Adjusted earnings were US$1.02 a share against US$0.98 expected. That record shows consistent execution, but a beat only measures performance against the forecast available at the time."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,410",
+        "3,002",
+        "2,594",
+        "2,474",
+        "2,536",
+        "2,289",
+        "2,257",
+        "2,139"
+       ],
+       [
+        "Gross margin",
+        "67.6%",
+        "67.6%",
+        "73.6%",
+        "74.2%",
+        "73.2%",
+        "73.0%",
+        "73.5%",
+        "74.1%"
+       ],
+       [
+        "Operating income",
+        "172",
+        "-183",
+        "397",
+        "309",
+        "497",
+        "219",
+        "241",
+        "286"
+       ],
+       [
+        "Net income",
+        "-282",
+        "-177",
+        "432",
+        "334",
+        "254",
+        "262",
+        "267",
+        "351"
+       ],
+       [
+        "EPS, diluted",
+        "-0.35",
+        "-0.22",
+        "0.61",
+        "0.47",
+        "0.36",
+        "0.37",
+        "0.38",
+        "0.49"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Palo Alto Networks’ next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October quarter is the first practical test after the new acquisitions. Management expects revenue of US$3,300–3,310 million and NGS ARR of US$9,540–9,560 million. The likely November 18 release date has not been confirmed."
+      },
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The explanation behind those totals matters as much as the totals themselves. Investors should ask how much ARR came from the final Chronosphere migration, how broadly other customers contributed and how much cash remained after buying Embrace and Console. An early shortfall in new ARR could fit management’s plan if most growth arrives later, but repeated delays would make the July target more fragile."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 18, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "3,410"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "-0.35"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,139",
+      "2,257",
+      "2,289",
+      "2,536",
+      "2,474",
+      "2,594",
+      "3,002",
+      "3,410"
+     ],
+     "EPS, diluted": [
+      "0.49",
+      "0.38",
+      "0.37",
+      "0.36",
+      "0.47",
+      "0.61",
+      "-0.22",
+      "-0.35"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/panw/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PANW&src=seo-earnings"
+  }
+ },
+ "short_name": "Palo Alto Networks",
+ "first_memo_date": "2026-10-12T03:27:11Z"
+}

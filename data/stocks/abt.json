@@ -1,0 +1,805 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ABT",
+ "slug": "abt",
+ "company": "Abbott Laboratories",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T13:00:28Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 101.82,
+ "price_date": "2026-10-12T20:02:38Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 27,
+  "words": 17130,
+  "sources": 261
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Abbott Laboratories is a healthcare company that sells devices, diagnostic tests, nutrition and established medicines. Its business becomes clear when we follow a product from the reason someone needs it to the way a sale is paid for, delivered and repeated."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828026010185/abt-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828025007110/abt-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1800/000162828024005348/abt-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "DXCM",
+  "MDT",
+  "DHR",
+  "TMO",
+  "BDX",
+  "BSX",
+  "JNJ"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Abbott stock forecast",
+   "meta_description": "Abbott’s weighted scenario reaches $111.08 in October 2027 and $129.10 in October 2029; bear, base and bull probabilities are 25%, 55% and 20%.",
+   "opening": "The weighted scenario puts Abbott’s shares at $111.08 in October 2027 and $129.10 in October 2029. It hinges on Abbott converting durable product adoption into cash while Exact Sciences earns its cost.",
+   "closing": "The full memo also explains Abbott’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Abbott’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast puts Abbott’s shares at $111.08 in October 2027 and $129.10 in October 2029 if product growth converts into cash and Exact Sciences’ financing and integration burden stays manageable. Those levels represent +12% and +35%, including dividends."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries 25% probability. The base case carries 55%, and the bull case 20%. October 21, 2026, is the next checkpoint for second-half improvement. Libre Duo was authorized on August 25, 2026; its U.S. launch and compatibility with two insulin-delivery systems will test adoption. TactiFlex Duo received FDA approval on September 8, 2026. Exact targets at least $100 million of annual pretax synergies by 2028."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 101.82, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 101.82, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "82.14 (-17 %)",
+        "78.06 (-18 %)",
+        "73.38 (-21 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "113.72 (+14 %)",
+        "120.94 (+24 %)",
+        "128.19 (+34 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "140.00 (+40 %)",
+        "170.27 (+73 %)",
+        "201.24 (+106 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "111.08 (+12 %)",
+        "120.09 (+23 %)",
+        "129.10 (+35 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Abbott, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear row starts at $6,464 million and ends at $7,062 million as Libre, Nutrition and diagnostics weaken and recurring interest and amortization remain heavy. The bull row starts at $8,025 million and ends at $10,710 million as Libre adoption, new devices and Exact synergies improve mix and cash conversion. The base follows Abbott's 6.5%–7.5% comparable-sales outlook, 11.9% Medical Devices growth in 2025, and management's expectation that Exact remains dilutive through 2027 before becoming accretive in 2028."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes Libre growth slows, Nutrition remains pressured, and Exact fails to offset its financing and integration costs quickly. Cash shifts from buybacks and debt repayment toward legal and operating needs. The shares fall to $82.14 in October 2027 and $73.38 by October 2029. Its 25% probability reflects meaningful product and balance-sheet risks, moderated by Abbott's diversified portfolio and established device growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Abbott really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating activities produced $9,566 million of cash in 2025. Capital spending used $2,171 million, leaving $7,395 million of free cash flow. Free cash flow is cash left after operating needs and property investment, before dividends, acquisitions and debt repayment. It improved from $5,059 million in 2023 but remained below $8,648 million in 2021."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,566",
+        "8,558",
+        "7,261",
+        "9,581",
+        "10,533"
+       ],
+       [
+        "− Capital spending",
+        "2,171",
+        "2,207",
+        "2,202",
+        "1,777",
+        "1,885"
+       ],
+       [
+        "**= Free cash flow**",
+        "7,395",
+        "6,351",
+        "5,059",
+        "7,804",
+        "8,648"
+       ],
+       [
+        "− Stock pay",
+        "664",
+        "673",
+        "644",
+        "685",
+        "640"
+       ],
+       [
+        "**= Real free cash flow**",
+        "6,731",
+        "5,678",
+        "4,415",
+        "7,119",
+        "8,008"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Abbott today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "101.82"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "33.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "101.82"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "129.10 (+35 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 101.82,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "82.14 (-17 %)",
+       "78.06 (-18 %)",
+       "73.38 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "113.72 (+14 %)",
+       "120.94 (+24 %)",
+       "128.19 (+34 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "140.00 (+40 %)",
+       "170.27 (+73 %)",
+       "201.24 (+106 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "111.08 (+12 %)",
+       "120.09 (+23 %)",
+       "129.10 (+35 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/abt/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Abbott dividend: payment and cash coverage",
+   "meta_description": "Abbott's dividend rises from $2.64 to $3.00 per share in the base path; 2025 free cash flow was $7,395 million before dividends.",
+   "opening": "Abbott's dividend base path rises from $2.64 per share to $3.00. Abbott generated $7,395 million of free cash flow in 2025 before dividends, showing cash coverage for the payout.",
+   "closing": "The full memo also explains Abbott's business, its rivals, its management decisions and the risks that could change this outlook.",
+   "blocks": [
+    {
+     "heading": "How much does Abbott pay in dividends over time?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base path rises from $2.64 per share to $3.00. The bear case holds at $2.52, the current annualized rate, while the bull case reaches $3.20. The base reflects Abbott's 54-year record of increases and $7,395 million of 2025 free cash flow, but the bear freeze recognizes that net debt reached about $27,005 million after Exact."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.72",
+        "7.64",
+        "3.26",
+        "3.91",
+        "3.94"
+       ],
+       [
+        "Dividend per share",
+        "2.40",
+        "2.24",
+        "2.08",
+        "1.92",
+        "1.82"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Abbott's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating activities produced $9,566 million of cash in 2025. Capital spending used $2,171 million, leaving $7,395 million of free cash flow. Free cash flow is cash left after operating needs and property investment, before dividends, acquisitions and debt repayment. It improved from $5,059 million in 2023 but remained below $8,648 million in 2021."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The 2024 cash-flow reconciliation included an $8,028 million deduction labelled income taxes, but Abbott separately reported $1,723 million of cash taxes paid. The larger deduction mainly reconciled the noncash tax benefit, rather than showing ordinary cash taxes or inventory purchases. Stock compensation is also noncash in the cash-flow statement, but it dilutes shareholders or requires repurchases. Deducting $664 million of stock pay gives analytical “real free cash flow” of $6,731 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "7,395",
+        "6,351",
+        "5,059",
+        "7,804",
+        "8,648"
+       ],
+       [
+        "− Dividends paid",
+        "4,116",
+        "3,836",
+        "3,556",
+        "3,309",
+        "3,202"
+       ],
+       [
+        "− Share buybacks",
+        "893",
+        "1,295",
+        "1,227",
+        "3,795",
+        "2,299"
+       ],
+       [
+        "Paid to shareholders",
+        "5,009",
+        "5,131",
+        "4,783",
+        "7,104",
+        "5,501"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "67.7%",
+        "80.8%",
+        "94.5%",
+        "91.0%",
+        "63.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Abbott's dividend?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward the bear if Nutrition volume remains weak, legal cash costs persist, or sensor reliability damages adoption. Exact is the key dated test: continued dilution through 2027 supports the base only if synergies and contribution appear in 2028 as expected. Faster debt repayment alongside continued buybacks would support the bull; restrained repurchases and declining cash conversion would support the bear."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "7,540 (6,464 / 8,025)",
+        "8,310 (6,760 / 9,396)",
+        "9,145 (7,062 / 10,710)"
+       ],
+       [
+        "Shares (millions)",
+        "1,724 (1,731 / 1,720)",
+        "1,718 (1,732 / 1,711)",
+        "1,712 (1,732 / 1,703)"
+       ],
+       [
+        "Dividends per share",
+        "2.64 (2.52 / 2.72)",
+        "2.80 (2.52 / 2.96)",
+        "3.00 (2.52 / 3.20)"
+       ],
+       [
+        "Price to earnings",
+        "26.00 (22.00 / 30.00)",
+        "25.00 (20.00 / 31.00)",
+        "24.00 (18.00 / 32.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Abbott's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow measures operating cash after spending on long-lived assets such as factories and equipment. Abbott’s 4.2% free-cash-flow yield means the business generated about $4.20 for each $100 of equity value; its stricter “real” yield is 3.8%. Neither is a promised payment. Cash can fund dividends, debt repayment or investment. A FreeStyle Libre 3 Plus sensor lasts up to 15 days, creating repeat demand, but coverage, competition and pricing decide how much becomes durable cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.35"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.79",
+      "1.88",
+      "2.03",
+      "2.19",
+      "2.35"
+     ],
+     "Real free cash flow per share": [
+      "4.48",
+      "4.04",
+      "2.52",
+      "3.25",
+      "3.85"
+     ],
+     "Free cash flow per share": [
+      "4.83",
+      "4.42",
+      "2.89",
+      "3.63",
+      "4.23"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/abt/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Abbott earnings: October 21, 2026",
+   "meta_description": "Abbott's October 21, 2026 results will test 2026 guidance and whether Nutrition and other growth businesses improve.",
+   "opening": "Abbott's next results are expected on October 21, 2026. Watch whether Nutrition, Electrophysiology, Core Laboratory and Cancer Diagnostics improve.",
+   "closing": "The full memo also answers how Abbott makes money, who competes with Abbott, how Abbott is run, and what risks Abbott faces.",
+   "blocks": [
+    {
+     "heading": "What has Abbott guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 6.5%–7.5% comparable sales growth and adjusted diluted EPS of $5.45–$5.60 in 2026. Q3 guidance is adjusted diluted EPS of $1.38–$1.46, supported by improvement in Nutrition, Electrophysiology, Core Laboratory and Cancer Diagnostics. Exact Sciences is expected to dilute adjusted EPS by $0.20 in 2026. The dilution is expected to be $0.16 in 2027, with accretion in 2028."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ per share; other units labelled",
+      "caption": "Guidance in force (US$ per share; other units labelled)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Comparable sales growth",
+        "Year to Dec 2026",
+        "6.5%",
+        "7.5%",
+        "Jul 16, 2026"
+       ],
+       [
+        "Adjusted diluted earnings per share",
+        "Year to Dec 2026",
+        "5.45",
+        "5.60",
+        "Jul 16, 2026"
+       ],
+       [
+        "Adjusted diluted earnings per share — third-quarter",
+        "Quarter to Sep 2026",
+        "1.38",
+        "1.46",
+        "Jul 16, 2026"
+       ],
+       [
+        "Dilution related to the acquisition of Exact Sciences",
+        "Year to Dec 2026",
+        "0.20",
+        "0.20",
+        "Apr 16, 2026"
+       ],
+       [
+        "Dilutive to adjusted earnings per share (EPS)",
+        "Year to Dec 2027",
+        "-0.16",
+        "-0.16",
+        "Nov 20, 2025"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Abbott keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Abbott delivered adjusted earnings per share of US$5.15 in 2025 after forecasting a range of US$5.05–US$5.25. It later lowered its organic sales-growth forecast, where “organic” means growth measured without specified effects such as acquisitions and currency movements. In 2026, Abbott cut its earnings forecast after buying Exact Sciences, then raised it in July. That was progress, but the new range remained below January’s original forecast."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What trend do Abbott's recent quarters show?",
+     "paragraphs": [
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "Across the eight quarters through June 2026, Abbott recorded four EPS beats and four matches, with no misses at the displayed precision. That suggests dependable execution rather than a pattern of large upside. Revenue has sometimes fallen short even when EPS matched expectations, so earnings per share alone cannot show that sales are accelerating broadly."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,593",
+        "11,164",
+        "11,459",
+        "11,369",
+        "11,142",
+        "10,358",
+        "10,974",
+        "10,635"
+       ],
+       [
+        "Operating income",
+        "1,693",
+        "1,345",
+        "2,251",
+        "2,057",
+        "2,052",
+        "1,693",
+        "1,911",
+        "1,859"
+       ],
+       [
+        "Net income",
+        "928",
+        "1,077",
+        "1,776",
+        "1,644",
+        "1,779",
+        "1,325",
+        "9,229",
+        "1,646"
+       ],
+       [
+        "EPS, diluted",
+        "0.53",
+        "0.61",
+        "1.01",
+        "0.94",
+        "1.01",
+        "0.76",
+        "5.27",
+        "0.94"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Abbott's next results?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "Management identified Nutrition, Electrophysiology, Core Laboratory and Cancer Diagnostics as the main sources of second-half improvement. The next report should therefore be judged by whether those businesses improve, not merely by whether cost control produces another EPS match."
+      },
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "October 21 is the first scheduled checkpoint. Investors will compare adjusted EPS with the company’s guidance and the US$1.42 consensus estimate, but the stronger evidence will come from the named growth businesses. They should also watch whether management maintains the launch timetable and explains how much work remains for the final quarter."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "12,593"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.53"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "10,635",
+      "10,974",
+      "10,358",
+      "11,142",
+      "11,369",
+      "11,459",
+      "11,164",
+      "12,593"
+     ],
+     "EPS, diluted": [
+      "0.94",
+      "5.27",
+      "0.76",
+      "1.01",
+      "0.94",
+      "1.01",
+      "0.61",
+      "0.53"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/abt/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABT&src=seo-earnings"
+  }
+ },
+ "short_name": "Abbott",
+ "first_memo_date": "2026-10-13T13:00:28Z"
+}

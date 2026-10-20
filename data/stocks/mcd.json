@@ -1,0 +1,537 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MCD",
+ "slug": "mcd",
+ "company": "McDonald's Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:15:52Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 236.9,
+ "price_date": "2026-10-08T20:00:02Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 27,
+  "words": 16633,
+  "sources": 220
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "McDonald’s is not simply a restaurant chain: it is a worldwide system that sells quick, familiar meals through restaurants mostly run by independent local owners. To understand its business, follow a meal from the menu to the restaurant, then follow the dollar from the customer to the company and its operators."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000035/mcd-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390825000012/mcd-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390824000072/mcd-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "QSR",
+  "WEN",
+  "YUM",
+  "DPZ",
+  "SBUX",
+  "CMG",
+  "PZZA",
+  "JACK",
+  "WING",
+  "SHAK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "dividend": {
+   "type": "dividend",
+   "title": "McDonald’s dividend",
+   "meta_description": "McDonald’s dividend is supported by cash flow, while buybacks and modernization compete for the same cash.",
+   "opening": "McDonald’s paid $7.17 per share in dividends in 2025; its $9.80 of free cash flow after stock-based pay per share covered that dividend. But dividends and buybacks together used 102.1% of real free cash flow in 2025, leaving less internally generated cash for modernization, acquisitions or debt repayment.",
+   "closing": "The full memo also explains McDonald’s business, its rivals, its management decisions, and the risks facing its cash flow.",
+   "blocks": [
+    {
+     "heading": "How much does McDonald’s pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The first forecast window contains four payments at the already declared $1.93 quarterly rate, producing $7.72 per share. The base case then reaches $8.12 and $8.53, using measured increases consistent with the company’s long record of annual raises. The bear case reaches $8.04 and $8.36 as modernization and traffic weakness restrain distribution growth. The bull reaches $8.20 and $8.69 because stronger cash generation makes faster increases affordable. Dividends already consume a large share of free cash flow, so a cut is possible in a severe downturn but is not assumed."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share (calculated)",
+        "10.03",
+        "9.24",
+        "9.91",
+        "7.40",
+        "9.45"
+       ],
+       [
+        "Free cash flow after stock pay, per share (calculated)",
+        "9.80",
+        "9.00",
+        "9.67",
+        "7.18",
+        "9.26"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "2.87",
+        "3.91",
+        "4.17",
+        "5.26",
+        "1.12"
+       ],
+       [
+        "Stock pay per share (calculated)",
+        "0.23",
+        "0.24",
+        "0.24",
+        "0.23",
+        "0.19"
+       ],
+       [
+        "Dividend per share",
+        "7.17",
+        "6.78",
+        "6.23",
+        "5.66",
+        "5.25"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is McDonald’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "McDonald’s paid $5,115 million in dividends and spent $2,056 million buying back shares in 2025. Together, those distributions totalled $7,171 million, or 102.1% of real free cash flow. Distributions exceeded this measure from 2022 through 2025, with the peak mismatch at 151.6% in 2022. Dividends pay shareholders directly; buybacks reduce the number of shares dividing future earnings. Both leave less internally generated cash for modernization, acquisitions or debt repayment."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "7,021",
+        "6,500",
+        "7,080",
+        "5,321",
+        "6,962.3"
+       ],
+       [
+        "Dividends paid",
+        "5,115",
+        "4,870",
+        "4,533",
+        "4,168",
+        "3,918.6"
+       ],
+       [
+        "Shares bought back",
+        "2,056",
+        "2,824",
+        "3,054",
+        "3,896",
+        "845.5"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "102.1%",
+        "118.4%",
+        "107.2%",
+        "151.6%",
+        "68.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change McDonald’s dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management expected slightly negative U.S. comparable sales for the third quarter of 2026. Sustained visit recovery supports the upside case. Chicken expansion must add profitable sales without slowing service or weakening operator returns. Through 2030, modernization must lift franchisee cash flow and McDonald’s returns, not just reported margins; weaker cash generation could constrain buybacks."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is McDonald’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth reached 3.7% in 2025 while operating margin was 46.1%; the high franchised mix can lift reported margins without proving stronger franchisee economics. EPS rose from $10.04 in 2021 to $11.95 in 2025 as the diluted share count fell. The company’s own free cash flow after stock-based pay was $9.80 per share against a $7.17 dividend. At $236.90, the shares trade at 19.2x trailing earnings and 17.2x forward earnings, with a 4.3% free-cash-flow yield and 3.3% dividend yield; net debt was $41,551 million."
+      },
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.3 — Against rivals",
+       "text": "The dividend yield is about 3.3%. In 2025, McDonald’s generated approximately $7,186 million of free cash flow and paid $5,115 million in dividends. Those payments consumed about 71% of free cash flow, leaving less room for buybacks or major modernization. The annualized dividend later rose to $7.72 per share, while franchisee support still competes for cash."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "236.90"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "19.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "9.45",
+      "7.40",
+      "9.91",
+      "9.24",
+      "10.03"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mcd/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MCD&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "McDonald’s earnings date and guidance",
+   "meta_description": "McDonald’s next results are expected November 4, 2026; see its guidance, eight-quarter results and what to watch.",
+   "opening": "McDonald’s next results are expected on November 4, 2026. The key thing to watch is whether U.S. visits recover, not merely whether customers spend more.",
+   "closing": "The full memo answers more about McDonald’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has McDonald’s guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to a 2.5% contribution from net restaurant expansion to systemwide sales growth. Capital spending is guided at $3,700–$3,900 million. The opening plan is 2,600 restaurants in 2026. Capital-partnering support for 2027–2030 is $1,500–$2,000 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "net restaurant unit expansion contribution to Systemwide sales growth, in constant currencies (%)",
+        "2026",
+        "2.5%",
+        "2.5%",
+        "Aug 7, 2026"
+       ],
+       [
+        "capital expenditures",
+        "2026",
+        "3,700",
+        "3,900",
+        "Aug 7, 2026"
+       ],
+       [
+        "restaurants to open (restaurants)",
+        "2026",
+        "2,600",
+        "2,600",
+        "Aug 7, 2026"
+       ],
+       [
+        "net restaurant additions (restaurants)",
+        "2026",
+        "2,100",
+        "2,100",
+        "Aug 7, 2026"
+       ],
+       [
+        "free cash flow conversion rate (%)",
+        "2026",
+        "",
+        "",
+        "Aug 7, 2026"
+       ],
+       [
+        "Capital expenditures, cumulative capital partnering support",
+        "2027–2030",
+        "1,500",
+        "2,000",
+        "Sep 23, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did McDonald’s keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management promised 50,000 restaurants by the end of 2027, then moved the target to 2028 because development costs and consumer pressure had worsened. McDonald’s also continued increasing its dividend. The fair conclusion is mixed: incentives restrain some rewards and buybacks offset dilution, but modernization must still earn attractive returns for both franchisees and outside owners."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is McDonald’s revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from $6,843 million to $7,099 million. Yet global comparable-sales growth slowed to 1.3%, while U.S. growth slowed to 0.8%. Customers who bought something spent more per transaction, helped by product mix, but comparable guest counts fell. Systemwide sales grew about 5% in reported terms, so new restaurants and currency supported the result beyond mature-store demand."
+      },
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income rose 4.8% to $2,362 million, while EPS rose 5.7% to $3.32. The quarter included $52 million of net pre-tax charges, chiefly restructuring. Tax benefits, restaurant-business sale gains and lower bad-debt expense also helped earnings, so profit growth was stronger than the underlying sales signal."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,099",
+        "6,517",
+        "7,009",
+        "7,078",
+        "6,843",
+        "5,956",
+        "6,388",
+        "6,873"
+       ],
+       [
+        "Operating income",
+        "3,338",
+        "2,953",
+        "3,156",
+        "3,357",
+        "3,232",
+        "2,648",
+        "2,868",
+        "3,188"
+       ],
+       [
+        "Net income",
+        "2,362",
+        "1,983",
+        "2,164",
+        "2,278",
+        "2,253",
+        "1,868",
+        "2,017",
+        "2,255"
+       ],
+       [
+        "EPS, diluted",
+        "3.32",
+        "2.78",
+        "3.03",
+        "3.18",
+        "3.14",
+        "2.60",
+        "2.80",
+        "3.13"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in McDonald’s next results?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results should show whether the U.S. recovery is taking hold. Management expects slightly negative U.S. comparable sales for the third quarter, while the Make It Golden food-quality and hospitality effort offers another test. Better execution must bring back visits, not merely persuade existing customers to spend more."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "7,099"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "3.32"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,873",
+      "6,388",
+      "5,956",
+      "6,843",
+      "7,078",
+      "7,009",
+      "6,517",
+      "7,099"
+     ],
+     "EPS, diluted": [
+      "3.13",
+      "2.80",
+      "2.60",
+      "3.14",
+      "3.18",
+      "3.03",
+      "2.78",
+      "3.32"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mcd/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MCD&src=seo-earnings"
+  }
+ },
+ "short_name": "McDonald’s",
+ "first_memo_date": "2026-10-10T02:15:52Z"
+}

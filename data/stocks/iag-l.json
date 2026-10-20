@@ -1,0 +1,786 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "IAG.L",
+ "slug": "iag-l",
+ "company": "International Consolidated Airlines Group S.A.",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-16T17:58:51Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 414.8,
+ "price_date": "2026-10-16T15:52:30Z",
+ "next_earnings": "2026-11-06",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 255,
+  "tables": 26,
+  "words": 16622,
+  "sources": 177
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "International Airlines Group (IAG) is a parent company whose businesses sell air journeys, rewards, freight space and holidays. Money comes in before some of those promises are fulfilled, and goes out to operate flights, serve customers and maintain the assets that make them possible."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2024-02-29",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5084721.html"
+  },
+  {
+   "title": "IAG regulatory interim filing",
+   "url": "https://www.cnmv.es/webservices/verdocumento/ver?e=AHB2OYVr%2BbGAzPaTwEXCthLl8SLobUqp8bASawHyfoT1xVx9TYwe6nqlQTLZolJy"
+  },
+  {
+   "title": "annual report, printed page 99",
+   "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000140187/NI-000140187.pdf"
+  }
+ ],
+ "rivals": [
+  "LHA.DE",
+  "AF.PA",
+  "EZJ.L",
+  "WIZZ.L",
+  "FIA1S.HE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "IAG stock forecast",
+   "meta_description": "IAG's forecast sets out bear, base and bull scenarios, then tests the margins, cash generation and valuation behind them.",
+   "opening": "The weighted forecast for IAG is 422.76 GBp in October 2027. It hinges on repeatable margins and cash generation after fuel costs and fleet investment.",
+   "closing": "The full memo also explains IAG's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could IAG's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is 422.76 GBp in October 2027, a 4% total return including dividends. It is 424.54 GBp in October 2028, a 6% return. By October 2029, it is 418.36 GBp, a 7% return. The October 2029 range is 273.06 to 543.93 GBp. Today's price is 414.80 GBp."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per IAG.L share at each date; in brackets the return since today's 414.80, dividends included",
+      "caption": "What the shares could be worth (GBp per IAG.L share at each date; in brackets the return since today's 414.80, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "320.11 (-22 %)",
+        "299.34 (-26 %)",
+        "273.06 (-31 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "449.71 (+10 %)",
+        "457.32 (+15 %)",
+        "455.32 (+16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "509.38 (+25 %)",
+        "530.41 (+33 %)",
+        "543.93 (+40 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "422.76 (+4 %)",
+        "424.54 (+6 %)",
+        "418.36 (+7 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for IAG?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Operating profit is the main earnings bridge. The base case rises from €4,420m in October 2027 to €4,752m in October 2029. The bear case starts at €2,788m, while the bull case reaches €5,935m. The base uses revenue growth and margins near the middle of management's 12%–15% outlook, below the 15.1% margin achieved in 2025. The bear reflects fuel pressure and fare competition: fuel and emissions costs rose €433m in the first half of 2026. The bull requires fuel relief, better mix and aircraft entering service reliably. Loyalty's €548m contribution in 2025 supports the earnings floor."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does IAG really make?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending and lease-principal payments then absorb much of the cash. After those deductions and stock pay, real free cash flow was €1,802 million. IAG’s own measure was higher because it stops before lease-principal payments. The two measures answer different questions, so the definition matters."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "€ millions",
+      "caption": "Follow the money: real free cash flow (€ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "1,802",
+        "1,819",
+        "-411",
+        "-476",
+        "-2,366"
+       ],
+       [
+        "− Stock pay",
+        "58",
+        "72",
+        "52",
+        "39",
+        "23"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,744",
+        "1,747",
+        "-463",
+        "-515",
+        "-2,389"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "3,146",
+        "3,556",
+        "1,320",
+        "979",
+        "1,822"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "5.4%",
+        "5.7%",
+        "-1.4%",
+        "-2.1%",
+        "-28.0%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.3%",
+        "5.4%",
+        "-1.6%",
+        "-2.2%",
+        "-28.3%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out lease payments, while we count those payments as cash that has left the business."
+     }
+    },
+    {
+     "heading": "What does an investor pay for IAG today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E means the share price divided by earnings per share. A shop bought for £100 after earning £10 has a P/E of ten; if it is expected to earn £15, its forward P/E falls to about 6.7. IAG’s forward multiple implies forecast earnings per share about 12.2% above the trailing figure, so its apparent cheapness already depends partly on improvement."
+      },
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Enterprise value tries to value the operating business by adding debt-like claims and subtracting cash. Positive net debt would normally make it higher than equity value, but IAG reported €4,692 million of net debt while the calculated enterprise value is lower than the equity value. Different dates, currencies or lease treatments may explain the mismatch, so the figure needs reconciliation."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; share price in pence",
+      "caption": "What an investor pays today (£ millions; share price in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "414.80"
+       ],
+       [
+        "Market value (calculated)",
+        "18,080.87"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "16,211.632"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "7.56x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "6.74x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "8.1%"
+       ]
+      ],
+      "note": "The enterprise value is lower than the market value because the company has more cash than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "414.80"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "418.36 (+7 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "6.74x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 4.915565562599988,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "320.11 (-22 %)",
+       "299.34 (-26 %)",
+       "273.06 (-31 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "449.71 (+10 %)",
+       "457.32 (+15 %)",
+       "455.32 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "509.38 (+25 %)",
+       "530.41 (+33 %)",
+       "543.93 (+40 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "422.76 (+4 %)",
+       "424.54 (+6 %)",
+       "418.36 (+7 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/iag-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IAG.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "IAG dividend",
+   "meta_description": "IAG's dividend, cash coverage, forecast changes and current yield in plain terms.",
+   "opening": "IAG's latest dividend is €0.098 per share, and the forecast raises it gradually from €0.10 to €0.12 per share. In 2025, dividends and buybacks absorbed 95.1% of free cash flow; after capital spending, lease-principal payments and stock pay, real free cash flow was €1,802 million.",
+   "closing": "The full memo also covers IAG's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does IAG pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case from €0.10 to €0.12 per share. The bear path reaches only €0.07, while the bull reaches €0.17. The base starts near the latest €0.098 dividend, but planned annual capex of €4.9bn in 2027–28 limits faster growth. The bear recognizes that dividends were zero from 2021 through 2023."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "EPS in € cents; other per-share figures in €",
+      "caption": "What one share gets (EPS in € cents; other per-share figures in €)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "0.35",
+        "0.33",
+        "-0.09",
+        "-0.10",
+        "-0.48"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.09",
+        "0.03",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.25",
+        "0.04",
+        "0.01",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.02",
+        "0.28",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it leaves out lease repayments, while our count also subtracts those repayments and the value of shares given to employees."
+     }
+    },
+    {
+     "heading": "Is IAG's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The challenges",
+       "text": "- **Cash through the cycle** — Lease payments and fleet spending compete with shareholder returns. In 2025, dividends and buybacks absorbed 95.1% of free cash flow. That cash position sits alongside leases and the higher investment plan."
+      },
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending and lease-principal payments then absorb much of the cash. After those deductions and stock pay, real free cash flow was €1,802 million. IAG’s own measure was higher because it stops before lease-principal payments. The two measures answer different questions, so the definition matters."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "€ millions",
+      "caption": "Follow the money: where the free cash flow went (€ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,802",
+        "1,819",
+        "-411",
+        "-476",
+        "-2,366"
+       ],
+       [
+        "− Dividends paid",
+        "471",
+        "149",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "1,243",
+        "202",
+        "77",
+        "23",
+        "24"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "88",
+        "1,468",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "95.1%",
+        "19.3%",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change IAG's dividend?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast moves toward the bear case if fuel and emissions costs continue to outpace fares through 2027–2028, especially if recovery falls below the assumed 60%. It also moves lower if €4.9bn annual capex begins before new aircraft produce adequate returns, or if weaker bookings expose IAG's fixed lease obligations."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is IAG's dividend yield today against its price?",
+     "paragraphs": [
+      {
+       "n": 201,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The dividend yield is current cash income, not the whole prospective return. IAG’s price does not require spectacular growth; it requires repeatable earnings and cash generation after fuel, aircraft and financing commitments. That is what the valuation is assuming."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; share price in pence",
+      "caption": "What an investor pays today (£ millions; share price in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "414.80"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "8.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The enterprise value is lower than the market value because the company has more cash than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.09"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "EPS in € cents; other per-share figures in €",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.03",
+      "0.09"
+     ],
+     "Real free cash flow per share": [
+      "-0.48",
+      "-0.10",
+      "-0.09",
+      "0.33",
+      "0.35"
+     ],
+     "Free cash flow per share": [
+      "-0.48",
+      "-0.09",
+      "-0.08",
+      "0.35",
+      "0.36"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/iag-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IAG.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "IAG earnings date and guidance",
+   "meta_description": "IAG's next results are due November 6, 2026, with guidance for margin and fuel-cost recovery.",
+   "opening": "IAG's next results are expected on November 6, 2026. The key watch is whether summer trading produced enough cash.",
+   "closing": "The full IAG memo also covers IAG's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has IAG guided for the year?",
+     "paragraphs": [
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The July outlook puts operating margin before exceptional items at 12.0%–15.0%. In plain terms, IAG expects to keep €12–€15 of operating profit from every €100 of revenue before financing, tax and unusual costs. Because many airline costs do not fall quickly, fewer seats leave less flying over which to spread them."
+      },
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "IAG expects to recover 60.0% of higher fuel costs through fares, fuller aircraft, passenger mix and savings. If fuel costs rose by €100 million, that target would recover about €60 million, leaving the rest to reduce profit. But competitors can limit fare increases, especially on price-sensitive routes."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "Operating margin",
+        "Year to Dec 2026",
+        "12.0%",
+        "15.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Capacity (ASK) growth",
+        "Year to Dec 2026",
+        "0.0%",
+        "0.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Non-fuel unit costs growth",
+        "Year to Dec 2026",
+        "0.0%",
+        "0.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Benefit of FX in non-fuel unit costs (percentage points)",
+        "Year to Dec 2026",
+        "1.0",
+        "1.0",
+        "Jul 31, 2026"
+       ],
+       [
+        "Total fuel cost scenarios (€ billions)",
+        "Year to Dec 2026",
+        "8.3",
+        "8.6",
+        "Jul 31, 2026"
+       ],
+       [
+        "Capital expenditure (€ billions)",
+        "Year to Dec 2026",
+        "3.4",
+        "3.4",
+        "Jul 31, 2026"
+       ]
+      ],
+      "note": "The free cash flow figure of three billion euros is a maximum target, not money already earned or a guaranteed amount."
+     }
+    },
+    {
+     "heading": "What is IAG's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "The preceding quarters show why this is more than a single comparison. Operating income improved in September and December despite nearly flat or declining revenue, then March produced €351 million. The first half now tests whether fare increases and cost actions can recover the lost spread."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "€ millions; EPS in € cents",
+      "caption": "The last eight reported periods (€ millions; EPS in € cents)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,883",
+        "7,181",
+        "7,979",
+        "9,328",
+        "8,862",
+        "7,044",
+        "8,047",
+        "9,329"
+       ],
+       [
+        "Operating income",
+        "1,257",
+        "351",
+        "1,093",
+        "2,053",
+        "1,680",
+        "198",
+        "961",
+        "2,013"
+       ],
+       [
+        "Net income",
+        "732",
+        "301",
+        "639",
+        "1,402",
+        "1,125",
+        "176",
+        "392",
+        "1,435"
+       ],
+       [
+        "EPS, diluted",
+        "18.08",
+        "3.63",
+        "14.06",
+        "29.24",
+        "24.46",
+        "2.32",
+        "10.11",
+        "28.16"
+       ],
+       [
+        "− Interest paid",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ]
+      ],
+      "note": "The fourth-quarter diluted earnings per share is calculated by subtracting the first nine months from the full-year figure, rather than being reported directly."
+     }
+    },
+    {
+     "heading": "What should IAG watch in the next results?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next scheduled results, on 6 November 2026, should show whether summer trading produced enough cash and whether winter fares recovered fuel costs. Aircraft spending matters just as much because most remaining 2026 deliveries were expected late in the year."
+      },
+      {
+       "n": 226,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The buyback will test the balance between investment and distribution. Completing it would show that IAG can return cash while spending on its fleet, but it would also reduce the reserve available for a shock. Investors should watch debt maturities, lease payments and financing costs alongside deliveries."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 6, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/iag-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IAG.L&src=seo-earnings"
+  }
+ },
+ "short_name": "IAG",
+ "first_memo_date": "2026-10-16T17:58:51Z"
+}

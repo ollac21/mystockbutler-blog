@@ -1,0 +1,847 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SO",
+ "slug": "so",
+ "company": "The Southern Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T15:32:38Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 89.88,
+ "price_date": "2026-10-15T14:13:14Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 26,
+  "words": 17628,
+  "sources": 270
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Southern Company sells electricity, gas delivery and supply, power contracts, and communications services. A dollar enters through a bill or contract, then leaves through fuel, workers, maintenance, investment and financing before any residual reaches shareholders."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, segment disclosures",
+   "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2025/ar/2025-Annual-Report.pdf"
+  },
+  {
+   "title": "2025 Form 10-K, December 5th Consent Order",
+   "url": "https://s27.q4cdn.com/273397814/files/doc_financials/2025/q4/978d3eb6-1b36-4ea1-8686-480789bca55a.pdf"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000008/ex99-pressreleaseq42025.htm"
+  }
+ ],
+ "rivals": [
+  "DUK",
+  "NEE",
+  "D",
+  "AEP",
+  "XEL",
+  "ETR",
+  "PEG",
+  "DTE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Southern stock forecast",
+   "meta_description": "Southern's forecast weighs scenario prices against demand, cash generation, financing, dilution and the price investors pay for earnings.",
+   "opening": "Southern's weighted forecast is $86.79 in October 2027 and $102.26 in October 2029. It hinges on contracted demand becoming approved earning assets without financing and dilution overwhelming per-share growth.",
+   "closing": "The full memo also explains Southern's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Southern's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast puts Southern’s probability-weighted share price at $86.79 in October 2027, $94.19 in October 2028 and $102.26 in October 2029. At today’s $89.88 price, that is roughly flat with dividends in the first year, followed by returns of 12% and 25%."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The October 2029 outcomes range from $79.62 in the bear case to $126.85 in the bull case. The base case carries the greatest probability because regulated earnings and contracted demand support growth, but financing and execution prevent a more optimistic central estimate."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 89.88, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 89.88, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27%",
+        "76.92 (-11%)",
+        "77.26 (-7%)",
+        "79.62 (-0%)"
+       ],
+       [
+        "Base",
+        "53%",
+        "87.32 (+1%)",
+        "95.92 (+14%)",
+        "104.51 (+27%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "98.74 (+13%)",
+        "112.46 (+33%)",
+        "126.85 (+53%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "86.79 (+0%)",
+        "94.19 (+12%)",
+        "102.26 (+25%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—and wrong—for Southern?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case begins at $4.72 and reaches $4.95 in the second period. It ends at $5.18 because slower customer ramps, delayed approvals, interest costs and dilution absorb more of the programme’s benefits. The bull case begins at $5.05. It then uses $5.55 and ends at $6.05, assuming contracted customers energize on schedule and investment enters rate base promptly. Southern has reported 17 GW across 31 contracted projects, with minimum bills and termination payments protecting dedicated investment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Southern really make?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "“Real free cash flow” goes one step further by subtracting stock compensation, treating shares given to employees as an economic cost. The remaining cash must fund construction, dividends and debt obligations. Negative free cash flow can support attractive regulated growth, but only if completed assets enter rate base and begin producing customer cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,802",
+        "9,788",
+        "7,553",
+        "6,302",
+        "6,169"
+       ],
+       [
+        "− Capital spending",
+        "12,737",
+        "8,955",
+        "9,095",
+        "7,923",
+        "7,586"
+       ],
+       [
+        "**= Free cash flow**",
+        "-2,935",
+        "833",
+        "-1,542",
+        "-1,621",
+        "-1,417"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-3,071",
+        "701",
+        "-1,679",
+        "-1,748",
+        "-1,561"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-10.4%",
+        "2.6%",
+        "-6.6%",
+        "-6.0%",
+        "-6.8%"
+       ]
+      ],
+      "note": "The company brought in cash from daily business, but spent more on equipment and software, so free cash flow was negative."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Southern today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio compares a share price with the earnings produced for each share. Southern’s recent earnings imply about $4.14 per share, while the next-twelve-month estimate implies about $4.94. The lower forward multiple therefore assumes earnings rise. Investors must also distinguish reported earnings from adjusted earnings, which remove specified items, and calendar-year forecasts from estimates covering the next twelve months."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "89.88"
+       ],
+       [
+        "Market value (calculated)",
+        "103,394.62"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "21.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-2.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.4%"
+       ]
+      ],
+      "note": "The negative free cash flow yield means the company spent more cash than it generated during the latest year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "89.88"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "102.26 (+25%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-3.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 89.88,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27%",
+      "values": [
+       "76.92 (-11%)",
+       "77.26 (-7%)",
+       "79.62 (-0%)"
+      ]
+     },
+     "Base": {
+      "probability": "53%",
+      "values": [
+       "87.32 (+1%)",
+       "95.92 (+14%)",
+       "104.51 (+27%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "98.74 (+13%)",
+       "112.46 (+33%)",
+       "126.85 (+53%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "86.79 (+0%)",
+       "94.19 (+12%)",
+       "102.26 (+25%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/so/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Southern dividend",
+   "meta_description": "Southern's dividend history, cash coverage, planned growth, risks and current yield in plain English.",
+   "opening": "Southern's dividend starts from the $2.96 annualized run rate and reaches $3.44 in the base path. Southern's free cash flow did not cover the dividend, so debt and new shares supplied the difference while share buybacks remained absent.",
+   "closing": "The full memo also covers Southern's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Southern pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend path begins from the $2.96 annualized run rate. It reaches $3.24 in the first window and $3.34 in the second. It ends at $3.44, preserving the history of regular increases while recognizing capital demands. The bear case reaches $3.32 before ending at $3.40. The bull case reaches $3.26 first, then $3.40 and $3.56 as earnings and cash conversion improve. Negative free cash flow of $2.935 billion in 2025 makes faster growth difficult to assume."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.92",
+        "3.99",
+        "3.62",
+        "3.26",
+        "2.24"
+       ],
+       [
+        "Real free cash flow per share",
+        "-2.77",
+        "0.64",
+        "-1.53",
+        "-1.62",
+        "-1.46"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.72",
+        "2.68",
+        "2.76",
+        "2.69",
+        "2.60"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ]
+      ],
+      "note": "In 2025, the company paid its owners $5.55 per share more than the cash its business generated after equipment spending, so it had to use other money to cover the difference."
+     }
+    },
+    {
+     "heading": "Is Southern's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Southern’s investment program usually required more cash than its operations produced after capital spending. Free cash flow—the cash left after operating needs and capital spending—did not cover the dividend, so debt and new shares supplied the difference while share buybacks remained absent."
+      },
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "“Real free cash flow” goes one step further by subtracting stock compensation, treating shares given to employees as an economic cost. The remaining cash must fund construction, dividends and debt obligations. Negative free cash flow can support attractive regulated growth, but only if completed assets enter rate base and begin producing customer cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-2,935",
+        "833",
+        "-1,542",
+        "-1,621",
+        "-1,417"
+       ],
+       [
+        "− Dividends paid",
+        "3,015",
+        "2,954",
+        "3,035",
+        "2,907",
+        "2,777"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "6,150",
+        "2,306",
+        "4,811",
+        "4,787",
+        "4,545"
+       ],
+       [
+        "+ Debt issued",
+        "12,670",
+        "6,859",
+        "10,295",
+        "7,782",
+        "9,117"
+       ],
+       [
+        "− Debt repaid",
+        "5,878",
+        "3,890",
+        "5,924",
+        "3,645",
+        "4,352"
+       ]
+      ],
+      "note": "The company paid owners more than its free cash flow, so it had to use savings or borrow money to fund those payments."
+     }
+    },
+    {
+     "heading": "What could change Southern's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2026 adjusted EPS of $4.50–$4.60 and 8–9% annual adjusted EPS growth through 2028. Its $81 billion 2026–2030 capital plan targets 9% regulated rate-base growth, 10% electric-sales growth and 17% FFO to debt by 2029."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "5,681 (5,475 / 5,782)",
+        "6,260 (5,891 / 6,438)",
+        "6,843 (6,320 / 7,109)"
+       ],
+       [
+        "Shares (millions)",
+        "1,171 (1,174 / 1,171)",
+        "1,175 (1,182 / 1,174)",
+        "1,179 (1,191 / 1,177)"
+       ],
+       [
+        "Dividends per share",
+        "3.24 (3.24 / 3.26)",
+        "3.34 (3.32 / 3.40)",
+        "3.44 (3.40 / 3.56)"
+       ],
+       [
+        "Price to earnings",
+        "18.00 (16.50 / 20.00)",
+        "18.00 (15.50 / 20.50)",
+        "18.00 (15.00 / 21.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.72"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-3.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-2.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.60",
+      "2.69",
+      "2.76",
+      "2.68",
+      "2.72"
+     ],
+     "Real free cash flow per share": [
+      "-1.46",
+      "-1.62",
+      "-1.53",
+      "0.64",
+      "-2.77"
+     ],
+     "Free cash flow per share": [
+      "-1.33",
+      "-1.50",
+      "-1.40",
+      "0.76",
+      "-2.65"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/so/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Southern earnings date and guidance",
+   "meta_description": "Southern's next results are expected on November 5, 2026, with guidance centered on adjusted EPS and capital spending.",
+   "opening": "Southern's next results are expected on November 5, 2026. Watch whether Southern turns spending into approved rate base and recurring cash.",
+   "closing": "The full memo also explains Southern’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Southern guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2026 adjusted EPS of $4.50–$4.60 and 8–9% annual adjusted EPS growth through 2028. Its $81 billion 2026–2030 capital plan targets 9% regulated rate-base growth, 10% electric-sales growth and 17% FFO to debt by 2029."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "2026 Full Year Adjusted EPS Guidance Range",
+        "Year to Dec 2026",
+        "4.50",
+        "4.60",
+        "Jul 30, 2026"
+       ],
+       [
+        "projected adjusted EPS growth",
+        "2026–2028",
+        "8.0%",
+        "9.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Long-term projected adjusted EPS growth",
+        "After 2028",
+        "7.0%",
+        "8.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "2028 adjusted EPS guidance range",
+        "Year to Dec 2028",
+        "5.25",
+        "5.45",
+        "Feb 19, 2026"
+       ],
+       [
+        "projected capex (US$ billions)",
+        "2026–2030",
+        "81",
+        "81",
+        "Jul 30, 2026"
+       ],
+       [
+        "state-regulated electric & gas utility rate base growth",
+        "2026–2030",
+        "9.0%",
+        "9.0%",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "The 95.0% figure means the company expects almost all of its planned spending on buildings and equipment to go to utilities whose prices are regulated by states."
+     }
+    },
+    {
+     "heading": "Did Southern keep its past earnings promise?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "In February 2025, Southern forecast adjusted earnings per share of $4.20–$4.30. It delivered $4.30 adjusted earnings, while reported basic earnings were $3.94. Adjusted earnings remove selected items that management considers unusual, including losses on plants under construction and debt-extinguishment costs. The board used the adjusted figure for the financial goal, which reached a 176% payout."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Southern's revenue and profit trend over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter improved, but its earnings increase was larger than its operating improvement."
+      },
+      {
+       "n": 169,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash generation improved, yet capital spending still exceeded it. The eight-quarter sequence reinforces the need for caution: seasonal earnings and operating cash vary sharply, so one quarter should not be annualized casually."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,977",
+        "8,397",
+        "6,981",
+        "7,823",
+        "6,973",
+        "7,775",
+        "6,341",
+        "7,274"
+       ],
+       [
+        "Operating income",
+        "1,776",
+        "2,018",
+        "917",
+        "2,594",
+        "1,764",
+        "2,010",
+        "1,058",
+        "2,368"
+       ],
+       [
+        "Net income",
+        "1,174",
+        "1,356",
+        "416",
+        "1,711",
+        "880",
+        "1,334",
+        "534",
+        "1,535"
+       ],
+       [
+        "EPS, diluted",
+        "1.03",
+        "1.20",
+        "0.38",
+        "1.54",
+        "0.79",
+        "1.21",
+        "0.48",
+        "1.39"
+       ],
+       [
+        "Cash from operations",
+        "3,054",
+        "1,226",
+        "2,597",
+        "3,774",
+        "2,181",
+        "1,250",
+        "2,173",
+        "3,616"
+       ],
+       [
+        "**= Free cash flow**",
+        "-330",
+        "-1,716",
+        "-1,688",
+        "559",
+        "-676",
+        "-1,130",
+        "-576",
+        "1,305"
+       ]
+      ],
+      "note": "The company brought in cash from its business, but it spent more on equipment, buildings, and software, so its free cash flow was negative."
+     }
+    },
+    {
+     "heading": "What should investors watch in Southern's next results?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next decisive events will determine which spending earns a return and which becomes a shareholder cost."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "6,977"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.03"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,274",
+      "6,341",
+      "7,775",
+      "6,973",
+      "7,823",
+      "6,981",
+      "8,397",
+      "6,977"
+     ],
+     "EPS, diluted": [
+      "1.39",
+      "0.48",
+      "1.21",
+      "0.79",
+      "1.54",
+      "0.38",
+      "1.20",
+      "1.03"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/so/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SO&src=seo-earnings"
+  }
+ },
+ "short_name": "Southern",
+ "first_memo_date": "2026-10-15T15:32:38Z"
+}

@@ -1,0 +1,804 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "L.TO",
+ "slug": "l-to",
+ "company": "Loblaw Companies Limited",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-14T06:26:14Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 63.93,
+ "price_date": "2026-10-13T20:00:00Z",
+ "next_earnings": "2026-11-18",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 245,
+  "tables": 27,
+  "words": 16297,
+  "sources": 143
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Loblaw Companies Ltd is a Canadian retailer that sells food, medicine, clothing and everyday household goods. Its dollar comes in from shoppers, patients and business partners, then goes out to suppliers, employees, stores, technology and the obligations that keep the network operating."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2024",
+   "url": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2024/LCL_2024_AR.pdf"
+  },
+  {
+   "title": "Annual report — FY2022",
+   "url": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2022/LCL_%202022_AR.pdf"
+  },
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2025/LCL_2025%20Annual%20Report.pdf"
+  }
+ ],
+ "rivals": [
+  "MRU.TO",
+  "WMT",
+  "COST",
+  "DOL.TO",
+  "ATD.TO",
+  "AMZN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Loblaw stock forecast",
+   "meta_description": "Loblaw stock forecast: weighted scenarios, key drivers, real free cash flow and valuation, explained in plain English.",
+   "opening": "The weighted case puts Loblaw at C$71.10 in October 2027. It hinges on traffic, basket size and unit growth supporting comparable sales.",
+   "closing": "The full memo explains Loblaw’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Loblaw’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case puts the share at C$71.10 in October 2027, implying a 12% return. By October 2029, the weighted price is C$80.59, implying a 29% total return including dividends. The bear case has a 25% probability; the base case, 55%; and the bull case, 20%. Their October 2029 endpoints are C$54.49 and C$116.46."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 63.93, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 63.93, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "59.91 (-5%)",
+        "57.34 (-8%)",
+        "54.49 (-12%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "71.57 (+13%)",
+        "75.45 (+20%)",
+        "79.41 (+27%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "83.77 (+32%)",
+        "98.81 (+57%)",
+        "116.46 (+86%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "71.10 (+12%)",
+        "75.60 (+20%)",
+        "80.59 (+29%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Loblaw?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes shoppers trade down, discount expansion earns weak returns and distribution costs absorb expected savings. Pharmacy strength cannot offset softer food and front-store economics, while high payouts relative to free cash flow raise leverage concerns. The shares fall from C$59.91 at the first date to C$54.49 at the last. Its 25% probability reflects these credible risks, tempered by recurring grocery and pharmacy demand."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires stronger traffic, profitable discount growth, pharmacy services, newer businesses and measurable automation savings. It rises from C$83.77 to C$116.46. Its 20% probability reflects the need for several less-proven drivers to succeed together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Loblaw really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Loblaw estimates free cash flow by subtracting capital spending, lease payments and interest from operating cash. Capital spending keeps stores and distribution assets useful or creates new capacity. Lease payments matter because rent is a long contractual claim even though it is not conventional capital spending. Deducting stock compensation gives a stricter analytical measure because employees receive value even when Loblaw does not pay cash at that moment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions, without PC Financial",
+      "caption": "Follow the money: real free cash flow (C$ millions, without PC Financial)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "2024",
+       "2023",
+       "2022",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,945",
+        "5,486",
+        "5,480",
+        "5,133",
+        "4,775"
+       ],
+       [
+        "− Capital spending",
+        "2,030",
+        "2,162",
+        "2,032",
+        "1,538",
+        "1,154"
+       ],
+       [
+        "− Lease payments",
+        "1,708",
+        "1,501",
+        "1,441",
+        "1,327",
+        "1,360"
+       ],
+       [
+        "− Interest paid",
+        "307",
+        "295",
+        "293",
+        "278",
+        "271"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,900",
+        "1,528",
+        "1,714",
+        "1,990",
+        "1,990"
+       ],
+       [
+        "− Stock pay",
+        "69",
+        "63",
+        "72",
+        "69",
+        "59"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,831",
+        "1,465",
+        "1,642",
+        "1,921",
+        "1,931"
+       ]
+      ],
+      "note": "The company's free cash flow is higher because it subtracts only net lease payments and leaves out some cash costs, while we subtract the full lease payments."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Loblaw today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio shows how much investors pay for each dollar of annual profit. The forward P/E is lower than the trailing P/E because it uses expected future earnings. But reported profit can rise without equal cash arriving: when amortization charges from the Shoppers Drug Mart acquisition expired, accounting expense fell even though no new cash arrived."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "63.93"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "28.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "Enterprise value leaves out PC Financial and lease debts, so it is not the value of the entire business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "63.93"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "80.59 (+29%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 63.93,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "59.91 (-5%)",
+       "57.34 (-8%)",
+       "54.49 (-12%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "71.57 (+13%)",
+       "75.45 (+20%)",
+       "79.41 (+27%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "83.77 (+32%)",
+       "98.81 (+57%)",
+       "116.46 (+86%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "71.10 (+12%)",
+       "75.60 (+20%)",
+       "80.59 (+29%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/l-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=L.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Loblaw dividend",
+   "meta_description": "Loblaw's dividend per share is rising, but recent dividends and buybacks exceeded free cash flow; see the yield, plans and risks.",
+   "opening": "The forecast has Loblaw's dividend rising from C$0.63 to C$0.76 per share. In the latest period, free cash flow was C$1,900 million against C$2,687 million of dividends and buybacks.",
+   "closing": "The full Loblaw memo also explains its business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Loblaw pay per share?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends rise from C$0.63 to C$0.76 per share. The forecast uses roughly 9% growth, below the latest 10% increase. Bear reaches C$0.66 without assuming a cut; bull reaches C$0.84 on stronger cash generation. The restraint reflects C$1,900M of free cash flow against C$2,687M of dividends and buybacks, while planned capital spending is substantial."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ millions",
+      "caption": "What one share gets (C$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "2024",
+       "2023",
+       "2022",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "2.11",
+        "1.58",
+        "1.59",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.68",
+        "0.36",
+        "0.43",
+        "0.39",
+        "0.35"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.56",
+        "1.42",
+        "1.35",
+        "0.95",
+        "0.88"
+       ]
+      ],
+      "note": "The company's free cash flow per share is higher because it does not subtract shares given to employees as pay; we subtract them because they reduce each existing investor's share of the company."
+     }
+    },
+    {
+     "heading": "Is Loblaw's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after Loblaw’s definition of operating cash has covered capital investment, interest and net lease payments. Shareholder payments absorbed 84.0% of that amount in the year ending January 2022 and 89.2% in 2022. They exceeded free cash flow in each of the next three periods; in the year ending January 2026, free cash flow was C$1,900 million while dividends and buybacks totalled C$2,687 million."
+      },
+      {
+       "n": 88,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Buybacks drove much of the outflow. Loblaw spent C$1,875 million buying its own shares in that period and paid C$812 million in dividends. Buybacks reduce the number of shares, which can increase each remaining owner’s claim on future profit, but only if the company pays a sensible price and preserves enough cash for future needs. Including payments to minority owners, distributions exceeded free cash flow by C$873 million. Total debt rose from C$5,050 million at January 2022 to C$6,206 million at January 2026."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions, without PC Financial",
+      "caption": "Follow the money: where the free cash flow went (C$ millions, without PC Financial)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "2024",
+       "2023",
+       "2022",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,900",
+        "1,528",
+        "1,714",
+        "1,990",
+        "1,990"
+       ],
+       [
+        "− Dividends paid",
+        "812",
+        "447",
+        "550",
+        "517",
+        "472"
+       ],
+       [
+        "− Share buybacks",
+        "1,875",
+        "1,754",
+        "1,729",
+        "1,258",
+        "1,200"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "135",
+        "250"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "873",
+        "757",
+        "654",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company paid shareholders more than it generated in free cash, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Loblaw's dividend?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward bear if weaker customer demand or unprofitable discount growth reduced margins in 2027–2028. Persistent distribution-centre ramp costs would reinforce that shift. Through 2027–2029, dividends and buybacks exceeding free cash flow would raise leverage concerns and pressure the multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Loblaw's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is closer to distributable cash because it subtracts necessary investment, interest and net lease payments. Operating cash of C$5.945 billion became C$1.910 billion after those demands. That is why the dividend yield alone cannot establish safety."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "63.93"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.0%"
+       ]
+      ],
+      "note": "Enterprise value leaves out PC Financial and lease debts, so it is not the value of the entire business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jan 2026",
+     "value": "0.68"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ millions",
+    "columns": [
+     "Jan 2022",
+     "2022",
+     "2023",
+     "2024",
+     "Jan 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.35",
+      "0.39",
+      "0.43",
+      "0.36",
+      "0.68"
+     ],
+     "Real free cash flow per share": [
+      "1.41",
+      "1.45",
+      "1.28",
+      "1.19",
+      "1.53"
+     ],
+     "Free cash flow per share": [
+      "1.46",
+      "1.50",
+      "1.34",
+      "1.24",
+      "1.58"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/l-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=L.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Loblaw earnings",
+   "meta_description": "Loblaw next results are expected on November 18, 2026; see its guidance, recent results and the demand, margins and cash to watch.",
+   "opening": "Loblaw’s next results are expected on November 18, 2026. Watch whether growth reflects stronger customer demand or simply higher prices.",
+   "closing": "The full memo also explains Loblaw’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Loblaw guided for fiscal 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Loblaw could reach C$80.59 by October 2029, a 29% total return including dividends, if earnings grow while the premium valuation holds. For fiscal 2026, management guides to C$2,400 million of gross capital expenditures, C$2,100 million of share repurchases for cancellation and 75 new locations. Its longer-term framework targets adjusted EPS growth of 8%–10% annually, with spending on stores, warehouses and equipment."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "gross capital expenditures",
+        "Fiscal 2026",
+        "2,400",
+        "2,400",
+        "Sep 1, 2026"
+       ],
+       [
+        "Common share repurchases for cancellation",
+        "Fiscal 2026",
+        "2,100",
+        "2,100",
+        "Jul 30, 2026"
+       ],
+       [
+        "adjusted net earnings per common share growth",
+        "Fiscal 2026",
+        "",
+        "",
+        "Jul 30, 2026"
+       ],
+       [
+        "new locations (number)",
+        "Fiscal 2026",
+        "75",
+        "75",
+        "Sep 1, 2026"
+       ]
+      ],
+      "note": "The 1.2 billion Canadian dollars of capital spending planned for the rest of 2026 is part of the 2.4 billion Canadian dollar full-year plan, not extra spending."
+     }
+    },
+    {
+     "heading": "Has Loblaw kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management planned approximately 80 new food and drug stores in 2025 and delivered 77. That was close to plan, but openings must still prove profitable. Dufresne also said on the July 2026 call that East Gwillimbury distribution-centre costs should ease in the second half. That remained a commitment to test against later results."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Loblaw’s revenue and profit trend been over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose, and gross margin edged higher, but operating income grew more slowly than sales. That means Loblaw sold more without turning every additional sales dollar into a larger operating gain. Selling, general and administrative costs held steady as a share of sales while new stores and the automated distribution network added costs."
+      },
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "EPS grew faster than net income because repurchases reduced the share count. A deferred-tax recovery and costs connected with the departing PC Financial also affected the comparison. These items should not be treated as evidence of ordinary grocery earnings."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions, without PC Financial",
+      "caption": "The last eight quarters (C$ millions, without PC Financial)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "15,046",
+        "14,484",
+        "16,382",
+        "19,160",
+        "14,457",
+        "13,904",
+        "14,725",
+        "18,332"
+       ],
+       [
+        "Operating income",
+        "1,202",
+        "1,010",
+        "1,134",
+        "1,284",
+        "1,168",
+        "838",
+        "793",
+        "1,095"
+       ],
+       [
+        "Net income",
+        "720",
+        "587",
+        "611",
+        "746",
+        "693",
+        "481",
+        "459",
+        "625"
+       ],
+       [
+        "EPS, diluted",
+        "0.61",
+        "0.50",
+        "0.51",
+        "0.62",
+        "0.57",
+        "0.40",
+        "0.37",
+        "0.51"
+       ]
+      ],
+      "note": "These are fiscal quarters of different lengths, so one quarter’s sales and cash flow cannot always be compared directly with another’s."
+     }
+    },
+    {
+     "heading": "What should investors watch in Loblaw’s next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results should show whether growth reflects stronger customer demand or simply more expensive shopping. Comparable-store sales measure established locations, while total sales also include new stores. In Q2, Food comparable sales rose 1.6% and total Food sales rose 3.3%, suggesting that new locations contributed to the difference."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 18, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions, without PC Financial)",
+     "value": "15,046"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.61"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions, without PC Financial",
+    "columns": [
+     "Oct 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "18,332",
+      "14,725",
+      "13,904",
+      "14,457",
+      "19,160",
+      "16,382",
+      "14,484",
+      "15,046"
+     ],
+     "EPS, diluted": [
+      "0.51",
+      "0.37",
+      "0.40",
+      "0.57",
+      "0.62",
+      "0.51",
+      "0.50",
+      "0.61"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/l-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=L.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Loblaw",
+ "first_memo_date": "2026-10-14T06:26:14Z"
+}

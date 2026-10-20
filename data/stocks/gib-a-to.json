@@ -1,0 +1,754 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GIB.A.TO",
+ "slug": "gib-a-to",
+ "company": "CGI Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-18T05:52:53Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 106.42,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 25,
+  "words": 15630,
+  "sources": 122
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "CGI makes money by helping businesses and governments change, connect and run their technology. Its dollar comes in through projects, recurring operations and software-supported services, then goes out mainly to the people and infrastructure that deliver them."
+ },
+ "sources": [
+  {
+   "title": "CGI 2025 financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1061574/000106157425000011/cgifsq4fy2025.htm"
+  },
+  {
+   "title": "Fiscal 2025 MD&A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1061574/000106157425000006/cgi-fy25_q4xmda.htm"
+  },
+  {
+   "title": "CGI 2024 MD&A",
+   "url": "https://www.cgi.com/sites/default/files/2024-11/cgi-q4-2024-mda-2460621-en.pdf"
+  }
+ ],
+ "rivals": [
+  "ACN",
+  "IBM",
+  "CTSH",
+  "DXC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "CGI stock forecast",
+   "meta_description": "CGI’s weighted price reaches C$142.20 by October 2029, with bear, base and bull cases shaped by bookings, margins, buybacks and debt.",
+   "opening": "CGI’s weighted price is C$142.20 in October 2029, a 36% return. It hinges on CGI turning booked work into profitable growth while reducing debt.",
+   "closing": "The full memo also answers how CGI works, who its rivals are, how management allocates capital, and what risks could shape the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could CGI’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s weighted price is C$112.40 in October 2027, a 6% return with dividends. It reaches C$124.71 in October 2028, a 19% return. By October 2029, the weighted price is C$142.20, a 36% return."
+      },
+      {
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 range is wide: C$82.94 in the bear case to C$205.70 in the bull case. The base case has the highest probability at 53%. The bear case carries 27%. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 106.42, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 106.42, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "87.38 (-17 %)",
+        "79.38 (-24 %)",
+        "82.94 (-20 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "115.37 (+9 %)",
+        "131.13 (+25 %)",
+        "148.42 (+41 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "138.31 (+31 %)",
+        "168.92 (+60 %)",
+        "205.70 (+96 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "112.40 (+6 %)",
+        "124.71 (+19 %)",
+        "142.20 (+36 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more weight to cases that are more likely to happen."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for CGI?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "That produces the base earnings row in the table. The bear case assumes slower project starts, weaker utilization and margins of 10.8%, 10.6% and 10.7%. The bull case assumes federal awards, delayed projects and AI-supported productivity lift margins from 12.0% to 12.4%. CGI’s C$31.79 billion backlog and 108.1% trailing book-to-bill support gradual growth, but backlog includes estimates and acquired work."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does CGI really make?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow starts with cash from operations and subtracts capital spending and lease payments. A stricter measure also subtracts stock compensation. Stock pay is not an immediate cash outflow, but issuing shares has an economic cost because it can dilute existing owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ thousands",
+      "caption": "Follow the money: real free cash flow (C$ thousands)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,234,197",
+        "2,204,983",
+        "2,112,249",
+        "1,864,998",
+        "2,115,928"
+       ],
+       [
+        "− Capital spending",
+        "116,611",
+        "109,733",
+        "159,769",
+        "156,136",
+        "121,806"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,940,121",
+        "1,948,488",
+        "1,791,269",
+        "1,554,866",
+        "1,824,448"
+       ],
+       [
+        "− Stock pay",
+        "68,636",
+        "67,840",
+        "58,214",
+        "48,996",
+        "45,592"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,871,485",
+        "1,880,648",
+        "1,733,055",
+        "1,505,870",
+        "1,778,856"
+       ]
+      ],
+      "note": "The working-capital amounts include some items beyond stock and unpaid customer bills, so they are not a pure measure of changes in those two things."
+     }
+    },
+    {
+     "heading": "What does an investor pay for CGI today?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "CGI Inc. is priced modestly on its earnings, but the stock price tells only part of the valuation story. The fuller question is what a buyer is paying for the business after debt, acquisitions, and cash use are counted."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ thousands",
+      "caption": "What an investor pays today (C$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "106.42"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "13.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "10.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "8.5%"
+       ]
+      ],
+      "note": "These numbers use a share price from October 16 but the company's financial information and share count from earlier dates, so they are not all measured on October 18."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "106.42"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "142.20 (+36 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "10.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 106.42,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "87.38 (-17 %)",
+       "79.38 (-24 %)",
+       "82.94 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "115.37 (+9 %)",
+       "131.13 (+25 %)",
+       "148.42 (+41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "138.31 (+31 %)",
+       "168.92 (+60 %)",
+       "205.70 (+96 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "112.40 (+6 %)",
+       "124.71 (+19 %)",
+       "142.20 (+36 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/gib-a-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "CGI dividend: payment, cash cover and yield",
+   "meta_description": "CGI pays a quarterly dividend, with cash flow, buybacks, debt and today's dividend yield shown clearly.",
+   "opening": "CGI pays a quarterly dividend of C$0.17, and its free cash flow covers that payment. The cash also goes to buybacks, acquisitions and debt reduction.",
+   "closing": "The full memo also covers CGI’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does CGI pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "CGI began paying a quarterly dividend in fiscal 2025 and raised it to C$0.17 in January 2026. The board also renewed authority in January 2026 to repurchase up to 18,975,360 Class A shares. Those actions return cash while acquisitions require cash, so they increase the importance of disciplined borrowing and integration."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "8.60",
+        "8.41",
+        "7.54",
+        "6.40",
+        "7.21"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.60",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "5.65",
+        "4.03",
+        "3.32",
+        "3.76",
+        "5.94"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "2.35",
+        "4.38",
+        "4.22",
+        "2.64",
+        "1.27"
+       ]
+      ],
+      "note": "Real free cash flow per share is lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does CGI’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The strategy continued into fiscal 2026. CGI described capital allocation as investment in the business, accretive acquisitions, buybacks and dividends. The result is a clear trade-off: shareholder returns can be attractive, but the acquisitions must generate enough lasting cash to justify the capital and added debt."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ thousands",
+      "caption": "Follow the money: where the free cash flow went (C$ thousands)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,940,121",
+        "1,948,488",
+        "1,791,269",
+        "1,554,866",
+        "1,824,448"
+       ],
+       [
+        "− Dividends paid",
+        "135,052",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "1,274,530",
+        "934,765",
+        "788,020",
+        "913,388",
+        "1,502,824"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "530,539",
+        "1,013,723",
+        "1,003,249",
+        "641,478",
+        "321,624"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "72.7%",
+        "48.0%",
+        "44.0%",
+        "58.7%",
+        "82.4%"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "75.3%",
+        "49.7%",
+        "45.5%",
+        "60.7%",
+        "84.5%"
+       ]
+      ],
+      "note": "The company's own net debt is different because it includes leases, debt-related derivatives, and long-term investments, while our calculation leaves them out."
+     }
+    },
+    {
+     "heading": "What could change CGI’s dividend?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base case holds at C$0.68 through October 2027, then rises to C$0.72 and C$0.76. The bear case holds at C$0.68 throughout. The bull case reaches C$0.72, C$0.80 and C$0.88. These assumptions reflect substantial free cash flow, but also the board’s discretion and competing debt, acquisition and buyback demands."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case in 2027–2028 if federal procurement and client project starts remain delayed, reducing revenue growth and utilization. It would weaken further in 2027–2029 if AI lowers billable hours or forces pricing concessions."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,977 (1,771 / 2,064)",
+        "2,053 (1,749 / 2,196)",
+        "2,130 (1,787 / 2,344)"
+       ],
+       [
+        "Shares (millions)",
+        "197 (203 / 194)",
+        "188 (198 / 182)",
+        "179 (194 / 171)"
+       ],
+       [
+        "Dividends per share",
+        "0.68 (0.68 / 0.72)",
+        "0.72 (0.68 / 0.80)",
+        "0.76 (0.68 / 0.88)"
+       ],
+       [
+        "Price to earnings",
+        "11.50 (10.00 / 13.00)",
+        "12.00 (9.00 / 14.00)",
+        "12.50 (9.00 / 15.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is CGI’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "CGI shares are C$106.42. They trade at 13.2x trailing earnings and 10.9x next-twelve-month earnings. The 8.8% free-cash-flow yield sits beside a 5.8% buyback yield. FY2025 revenue grew 8.4%, while operating margin was 14.6%, down from 16.0% in FY2021. CGI’s reported real free cash flow was 11.8% of revenue, down from 14.7% in FY2021. Diluted EPS was C$7.35 and real free cash flow per share was C$8.30; buybacks were C$5.65 per share and average diluted shares fell 2.7%."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "0.60"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.60"
+     ],
+     "Real free cash flow per share": [
+      "7.03",
+      "6.20",
+      "7.29",
+      "8.12",
+      "8.30"
+     ],
+     "Free cash flow per share": [
+      "7.21",
+      "6.40",
+      "7.54",
+      "8.41",
+      "8.60"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/gib-a-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "CGI earnings: guidance and next results",
+   "meta_description": "CGI expects an adjusted effective tax rate of 26%–27% for Fiscal 2026; next results are expected November 11, 2026.",
+   "opening": "CGI’s next results are expected on November 11, 2026. CGI’s booked work becoming revenue fast enough to support hiring and spending is the key thing to watch.",
+   "closing": "The full CGI memo also covers CGI’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has CGI guided for Fiscal 2026?",
+     "paragraphs": [
+      {
+       "n": 194,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For Fiscal 2026, CGI expects an adjusted effective tax rate of 26%–27%. Management attributes the increase mainly to a temporary tax rise in France. If operating profit stays unchanged, the higher rate leaves less profit for shareholders."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have CGI revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The adjusted figures therefore give the cleaner signal: adjusted EBIT grew 2.3%, adjusted net earnings grew 1.7% and adjusted diluted earnings per share grew 9.0%. Reported profit growth is real, but part of its strength reflects the unusually high cost base in the earlier period."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ thousands",
+      "caption": "The last eight quarters (C$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,193,022",
+        "4,156,169",
+        "4,078,355",
+        "4,013,837",
+        "4,090,182",
+        "4,023,409",
+        "3,785,245",
+        "3,660,391"
+       ],
+       [
+        "Operating income",
+        "664,462",
+        "650,704",
+        "628,868",
+        "545,829",
+        "582,448",
+        "599,247",
+        "598,358",
+        "596,806"
+       ],
+       [
+        "Net income",
+        "465,201",
+        "444,720",
+        "441,996",
+        "381,355",
+        "408,612",
+        "429,738",
+        "438,580",
+        "435,923"
+       ],
+       [
+        "EPS, diluted",
+        "2.23",
+        "2.09",
+        "2.03",
+        "1.72",
+        "1.82",
+        "1.89",
+        "1.92",
+        "1.91"
+       ]
+      ],
+      "note": "The September columns are fourth-quarter figures worked out by subtracting the first nine months from the full year, so they were not reported directly as three-month figures."
+     }
+    },
+    {
+     "heading": "What should I watch in CGI’s next results?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The September quarter and Fiscal 2026 results, expected in November, should be read for revenue growth, bookings, project starts, and managed-services ramps. If bookings remain strong while revenue stays slow, transition timing may explain the gap. If backlog shrinks or delays spread, the forward signal weakens."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ thousands)",
+     "value": "4,193,022"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.23"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,660,391",
+      "3,785,245",
+      "4,023,409",
+      "4,090,182",
+      "4,013,837",
+      "4,078,355",
+      "4,156,169",
+      "4,193,022"
+     ],
+     "EPS, diluted": [
+      "1.91",
+      "1.92",
+      "1.89",
+      "1.82",
+      "1.72",
+      "2.03",
+      "2.09",
+      "2.23"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/gib-a-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "CGI",
+ "first_memo_date": "2026-10-18T05:52:53Z"
+}

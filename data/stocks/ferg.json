@@ -1,0 +1,889 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FERG",
+ "slug": "ferg",
+ "company": "Ferguson plc",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T02:56:43Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 231.61,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 274,
+  "tables": 27,
+  "words": 16794,
+  "sources": 254
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Ferguson Enterprises Inc. is a distributor of the equipment and materials that keep buildings, factories and water systems working. It makes money by putting the right products, expertise and delivery close to the professionals who install and maintain them."
+ },
+ "sources": [
+  {
+   "title": "2025 Transition Report on Form 10-KT",
+   "url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000006/ferg-20251231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1832433/000183243323000066/ferg-20230731.htm"
+  },
+  {
+   "title": "results presentation, slide 8",
+   "url": "https://s201.q4cdn.com/465729859/files/doc_financials/2025/q4/Ferguson_FY25_Fourth_Quarter_Results_Presentation.pdf"
+  }
+ ],
+ "rivals": [
+  "REH.AX",
+  "WSO",
+  "CNM",
+  "GWW",
+  "FAST",
+  "HD",
+  "DNOW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Ferguson stock forecast",
+   "meta_description": "Ferguson stock forecast: weighted scenarios, cash conversion, valuation, and the risks that could change the path.",
+   "opening": "The weighted forecast puts Ferguson’s share price at $265.04 in October 2027 and $324.21 in October 2029. It hinges on project shipments turning into collections, inventory and receivables releasing cash, and leverage moving toward the level at which buybacks resume.",
+   "closing": "The full memo also answers how Ferguson’s business works, how its rivals compare, how management is executing, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Ferguson’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast puts Ferguson’s share price at $265.04 in October 2027 and $291.44 in October 2028. It reaches $324.21 in October 2029."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case has a 27% probability. The base case has a 53% probability. The bull case has a 20% probability, making gradual recovery the central expectation."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date, excluding dividends; in brackets the total return since today's 231.61, including dividends",
+      "caption": "What the shares could be worth (USD per share at each date, excluding dividends; in brackets the total return since today's 231.61, including dividends)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "218.10 (-4 %)",
+        "211.95 (-5 %)",
+        "210.37 (-5 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "265.51 (+16 %)",
+        "293.59 (+30 %)",
+        "328.85 (+47 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "327.18 (+43 %)",
+        "393.07 (+73 %)",
+        "465.59 (+107 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "265.04 (+16 %)",
+        "291.44 (+29 %)",
+        "324.21 (+45 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not another separate prediction."
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Ferguson?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path assumes recovery toward roughly 9% reported margins as existing operations improve and FloWorks contributes. The bear case gives $2,850 million, then $2,950 million and $3,100 million because housing weakness, delayed projects and integration costs persist. The bull case gives $3,400 million, then $3,750 million and $4,100 million because infrastructure, industrial demand and cross-selling lift both volume and margins. The base remains closest to management’s mid-single-digit sales outlook and normalized margin history."
+      },
+      {
+       "n": 269,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes housing and discretionary renovation remain weak while industrial and infrastructure projects slip. FloWorks adds sales but not enough profit or cash to offset financing and integration costs. The price reaches $218.10 in October 2027 and $210.37 in October 2029. Its 27% probability reflects the possibility that weak demand, working-capital pressure and higher leverage arrive together. The June quarter’s cash shortfall makes that risk material."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Ferguson really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Fiscal 2025 shows the difference. Operating cash flow was $1,908 million, and free cash flow after capital spending was $1,603 million. Ferguson’s own free-cash-flow figure also included asset-sale proceeds, while acquisitions remained a separate use of cash. Stock compensation is another economic cost that a stricter cash analysis may deduct."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022",
+       "Jul 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,908",
+        "1,873",
+        "2,727",
+        "1,149",
+        "1,337"
+       ],
+       [
+        "− Capital spending",
+        "305",
+        "372",
+        "441",
+        "290",
+        "241"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,603",
+        "1,501",
+        "2,286",
+        "859",
+        "1,096"
+       ],
+       [
+        "− Stock pay",
+        "28",
+        "49",
+        "51",
+        "57",
+        "77"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,575",
+        "1,452",
+        "2,235",
+        "802",
+        "1,019"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.1%",
+        "4.9%",
+        "7.5%",
+        "2.8%",
+        "4.5%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it adds money from selling assets and businesses, while our count leaves that money out."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Ferguson today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "231.61"
+       ],
+       [
+        "Market value (calculated)",
+        "44,805.58"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "49,272.58"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "21.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.4x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.5%"
+       ]
+      ],
+      "note": "The enterprise value is not fully current because it leaves out the later FloWorks purchase and the borrowing used to pay for it."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "231.61"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "324.21 (+45 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 231.61,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "218.10 (-4 %)",
+       "211.95 (-5 %)",
+       "210.37 (-5 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "265.51 (+16 %)",
+       "293.59 (+30 %)",
+       "328.85 (+47 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "327.18 (+43 %)",
+       "393.07 (+73 %)",
+       "465.59 (+107 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "265.04 (+16 %)",
+       "291.44 (+29 %)",
+       "324.21 (+45 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ferg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FERG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Ferguson dividend",
+   "meta_description": "Ferguson dividend history, cash coverage, possible changes and current yield in plain English.",
+   "opening": "Ferguson's dividend rises from $3.65 to $4.42 per share in the base case, extending a five-year record of annual increases from $2.39 to $3.32. Cash coverage is uneven: first-half free cash flow was $482 million against $347 million of dividends.",
+   "closing": "The full Ferguson memo also examines Ferguson's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Ferguson pay per share?",
+     "paragraphs": [
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend rises from $3.65 to $4.42 per share in the base case. That extends a five-year record of annual increases from $2.39 to $3.32. The bear case freezes at $3.48 because first-half free cash flow was $482 million against $347 million of dividends. The bull case reaches $5.05 as stronger cash conversion permits faster increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022",
+       "Jul 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "8.05",
+        "7.38",
+        "11.03",
+        "3.92",
+        "4.88"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.45",
+        "3.85",
+        "3.43",
+        "2.46",
+        "4.61"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.83",
+        "0.41",
+        "3.22",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it adds cash from selling assets and businesses, which our count leaves out."
+     }
+    },
+    {
+     "heading": "Does Ferguson's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "That is what happened in the strongest payout years. Ferguson used balance-sheet capacity to support dividends and buybacks, including an exceptional distribution connected with the UK sale. A buyback pays shareholders to surrender shares; reducing the share count can raise earnings per share even if total profit barely changes."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Fiscal 2025 shows the difference. Operating cash flow was $1,908 million, and free cash flow after capital spending was $1,603 million. Ferguson’s own free-cash-flow figure also included asset-sale proceeds, while acquisitions remained a separate use of cash. Stock compensation is another economic cost that a stricter cash analysis may deduct."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022",
+       "Jul 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,603",
+        "1,501",
+        "2,286",
+        "859",
+        "1,096"
+       ],
+       [
+        "− Dividends paid",
+        "489",
+        "784",
+        "711",
+        "538",
+        "1,036"
+       ],
+       [
+        "− Share buybacks",
+        "948",
+        "634",
+        "908",
+        "1,637",
+        "400"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "166",
+        "83",
+        "667",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "1,316",
+        "340"
+       ]
+      ],
+      "note": "The company's own net debt is slightly different from our calculation because it uses a different definition of debt and cash."
+     }
+    },
+    {
+     "heading": "What could change Ferguson's dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the year to December 2026, management guides to mid-single-digit sales growth and a 9.5%–9.8% adjusted operating margin, excluding FloWorks. It expects $200 million of interest expense and $375–$425 million of capital spending. The guidance uses a 26% adjusted tax rate. Its medium-term ambition is more than $40 billion in revenue and more than $4 billion in adjusted operating profit. The target margin is above 10%."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "3,150 (2,850 / 3,400)",
+        "3,300 (2,950 / 3,750)",
+        "3,500 (3,100 / 4,100)"
+       ],
+       [
+        "Dividends per share",
+        "3.65 (3.48 / 3.82)",
+        "4.02 (3.48 / 4.39)",
+        "4.42 (3.48 / 5.05)"
+       ],
+       [
+        "Net debt",
+        "5,563 (6,226 / 5,247)",
+        "4,895 (6,134 / 4,318)",
+        "4,117 (5,710 / 3,089)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Ferguson's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The returns are 16% and 29% at the first two dates. They reach 45% by the third. The October 2029 range runs from $210.37 in the bear case to $465.59 in the bull case, against today’s $231.61."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jul 2025",
+     "value": "2.45"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "Jul 2021",
+     "Jul 2022",
+     "Jul 2023",
+     "Jul 2024",
+     "Jul 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.61",
+      "2.46",
+      "3.43",
+      "3.85",
+      "2.45"
+     ],
+     "Real free cash flow per share": [
+      "4.53",
+      "3.66",
+      "10.79",
+      "7.14",
+      "7.91"
+     ],
+     "Free cash flow per share": [
+      "4.88",
+      "3.92",
+      "11.03",
+      "7.38",
+      "8.05"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ferg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FERG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Ferguson earnings: guidance and next results",
+   "meta_description": "Ferguson's next results are expected November 5, 2026; watch guidance, project shipments, collections and FloWorks costs.",
+   "opening": "Ferguson's next results are expected on November 5, 2026. Watch whether Ferguson's project shipments turn into collections.",
+   "closing": "The full memo answers what Ferguson does, how it compares with rivals, who runs it, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Ferguson guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the year to December 2026, management guides to mid-single-digit sales growth and a 9.5%–9.8% adjusted operating margin, excluding FloWorks. It expects $200 million of interest expense and $375–$425 million of capital spending. The guidance uses a 26% adjusted tax rate. Its medium-term ambition is more than $40 billion in revenue and more than $4 billion in adjusted operating profit. The target margin is above 10%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Net sales",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Aug 10, 2026"
+       ],
+       [
+        "Adjusted operating margin",
+        "Year to Dec 2026",
+        "9.5%",
+        "9.8%",
+        "Aug 10, 2026"
+       ],
+       [
+        "Interest expense",
+        "Year to Dec 2026",
+        "200",
+        "200",
+        "Aug 10, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "375",
+        "425",
+        "Aug 10, 2026"
+       ],
+       [
+        "Adjusted effective tax rate",
+        "Year to Dec 2026",
+        "26.0%",
+        "26.0%",
+        "Aug 10, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Ferguson kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Ferguson has sensible measures and evidence of reducing its share count, but shareholders should ask whether the award adjustment was a one-time repair or the beginning of negotiable performance targets. That is the clearest answer to whether management is on their side: the structure points toward alignment, while discretion remains the risk."
+      }
+     ],
+     "table": {
+      "title": "Stock pay and the share count",
+      "unit": "US$ millions",
+      "caption": "Stock pay and the share count (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022",
+       "Jul 2021"
+      ],
+      "rows": [
+       [
+        "Stock pay",
+        "28",
+        "49",
+        "51",
+        "57",
+        "77"
+       ],
+       [
+        "Stock pay, % of revenue (calculated)",
+        "0.1%",
+        "0.2%",
+        "0.2%",
+        "0.2%",
+        "0.3%"
+       ],
+       [
+        "Stock pay, % of free cash flow (calculated)",
+        "1.7%",
+        "3.3%",
+        "2.2%",
+        "6.6%",
+        "7.0%"
+       ],
+       [
+        "Share buybacks",
+        "948",
+        "634",
+        "908",
+        "1,637",
+        "400"
+       ],
+       [
+        "Buybacks minus stock pay (calculated)",
+        "920",
+        "585",
+        "857",
+        "1,580",
+        "323"
+       ],
+       [
+        "Diluted shares",
+        "199.2",
+        "203.5",
+        "207.2",
+        "218.9",
+        "224.8"
+       ]
+      ],
+      "note": "The diluted share count can be higher than the year-end share count because it includes shares that could be created later."
+     }
+    },
+    {
+     "heading": "How has Ferguson's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from $8,363 million in June 2025 to $8,751 million in June 2026. Operating income rose from $842 million to $893 million, while diluted EPS rose from $3.21 to $3.43. The progress was genuine, but reported operating-profit growth benefited from lower restructuring charges. Adjusted operating profit grew only 2.9%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,751",
+        "7,472",
+        "7,495",
+        "8,245",
+        "8,363",
+        "7,213",
+        "7,234",
+        "7,736"
+       ],
+       [
+        "Gross margin",
+        "31.0%",
+        "31.0%",
+        "30.6%",
+        "31.3%",
+        "31.2%",
+        "30.7%",
+        "29.7%",
+        "31.0%"
+       ],
+       [
+        "Operating income",
+        "893",
+        "612",
+        "596",
+        "844",
+        "842",
+        "507",
+        "509",
+        "723"
+       ],
+       [
+        "Net income",
+        "666",
+        "414",
+        "389",
+        "638",
+        "634",
+        "345",
+        "356",
+        "522"
+       ],
+       [
+        "EPS, diluted",
+        "3.43",
+        "2.13",
+        "1.99",
+        "3.24",
+        "3.21",
+        "1.73",
+        "1.78",
+        "2.59"
+       ]
+      ],
+      "note": "Free cash flow is negative in June 2026 because the company used more cash in daily operations and equipment spending than it brought in."
+     }
+    },
+    {
+     "heading": "What should Ferguson watch in the next release?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first check is revised guidance. Ferguson should distinguish growth from the existing business from growth supplied by FloWorks, and explain the related interest and integration costs."
+      },
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The second check is cash. Higher project activity can require more inventory and customer credit before it produces collections. A reassuring result would connect shipments with cash receipts and explain the remaining stock investment. More orders alongside slower collections would keep the financing burden high."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "8,751"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.43"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,736",
+      "7,234",
+      "7,213",
+      "8,363",
+      "8,245",
+      "7,495",
+      "7,472",
+      "8,751"
+     ],
+     "EPS, diluted": [
+      "2.59",
+      "1.78",
+      "1.73",
+      "3.21",
+      "3.24",
+      "1.99",
+      "2.13",
+      "3.43"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ferg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FERG&src=seo-earnings"
+  }
+ },
+ "short_name": "Ferguson",
+ "first_memo_date": "2026-10-19T02:56:43Z"
+}

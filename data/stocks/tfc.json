@@ -1,0 +1,803 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TFC",
+ "slug": "tfc",
+ "company": "Truist Financial Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "bank",
+ "country": "us",
+ "memo_date": "2026-10-17T13:56:05Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 47.07,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2027-01-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 28,
+  "words": 16411,
+  "sources": 181
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Truist Financial is a large U.S. bank that sells a simple promise in many forms: it holds money, moves it, lends it, and helps customers manage it. A dollar comes in mainly as a deposit or a service fee, and goes out through loans, funding costs, operating expenses, and losses when credit fails."
+ },
+ "sources": [
+  {
+   "title": "Truist 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000030/tfc-20251231.htm"
+  },
+  {
+   "title": "Truist 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/92230/000009223025000020/tfc-20241231.htm"
+  },
+  {
+   "title": "Truist Financial Corporation — Fourth Quarter 2025 Earnings Presentation — January 21, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000023/ex993-earningsdeck4q25.htm"
+  }
+ ],
+ "rivals": [
+  "BAC",
+  "COF",
+  "CFG",
+  "FITB",
+  "HBAN",
+  "JPM",
+  "KEY",
+  "MTB",
+  "PNC",
+  "RF",
+  "USB",
+  "WFC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Truist stock forecast",
+   "meta_description": "Truist stock forecast: weighted scenarios, case drivers, bank cash flow and valuation in plain English.",
+   "opening": "Truist's weighted case reaches $54.01 by October 2029, a 28% return with dividends. It hinges on deposit pricing and mix.",
+   "closing": "The full memo also explains Truist's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Truist's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast's weighted price is $47.81 in October 2027, a 6% return with dividends. It reaches $50.42 in October 2028, a 16% return. By October 2029, it reaches $54.01, a 28% return."
+      },
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 range runs from $33.23 in the bear case to $80.45 in the bull case. Today's reference price is $47.07. The probabilities are 30% bear, 50% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 47.07, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 47.07, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "39.54 (-12 %)",
+        "36.13 (-15 %)",
+        "33.23 (-17 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "49.19 (+9 %)",
+        "52.10 (+20 %)",
+        "55.89 (+33 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "56.79 (+25 %)",
+        "67.64 (+53 %)",
+        "80.45 (+85 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "47.81 (+6 %)",
+        "50.42 (+16 %)",
+        "54.01 (+28 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull outcomes, not a separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Truist?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Book value starts at $56,061 million. The base case dips to $55,961 million in October 2027, then rises to $56,161 million and $56,661 million. The bear case falls to $49,961 million by October 2029, while the bull case rises to $62,061 million. The base path reflects earnings growth offset by distributions; the bear adds stress losses; the bull assumes stronger recurring earnings and moderated buybacks. Common equity has moved sharply in recent years, and 2025 ROTCE of 12.7% remains below the 15% 2027 goal."
+      },
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case begins at $56.79 and reaches $80.45, with a 20% probability. Faster funding-cost relief, stable deposits, stronger payments and wealth fees, controlled credit and delivery against the return target would support both higher book value and a 1.30-times multiple. The opportunity is substantial, but it depends on several linked outcomes while current ROTCE remains below the 2027 goal."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Truist really make?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.6 — Why familiar company ratios can fail for banks",
+       "text": "Free cash flow is not cleanly defined for a bank because loans and deposits are operating assets and funding. The current ratio has the same problem: bank balance sheets do not divide neatly into industrial-style current assets and liabilities."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.82",
+        "-0.30",
+        "-1.40",
+        "4.07",
+        "4.13"
+       ],
+       [
+        "− Dividends, per diluted share (calculated)",
+        "2.05",
+        "2.08",
+        "2.08",
+        "1.98",
+        "1.84"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.92",
+        "0.75",
+        "0.00",
+        "0.19",
+        "1.20"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "",
+        "1.90",
+        "1.09"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.15",
+        "3.13",
+        "3.48",
+        "",
+        ""
+       ]
+      ],
+      "note": "“Paid out more” means the company returned more money to shareholders through dividends and share buybacks than it earned that year."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Truist today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "47.07"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "10.0x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.0x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "1.5x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.4%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts’ guesses about future profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "47.07"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "54.01 (+28 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.1x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 47.07,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "39.54 (-12 %)",
+       "36.13 (-15 %)",
+       "33.23 (-17 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "49.19 (+9 %)",
+       "52.10 (+20 %)",
+       "55.89 (+33 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "56.79 (+25 %)",
+       "67.64 (+53 %)",
+       "80.45 (+85 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "47.81 (+6 %)",
+       "50.42 (+16 %)",
+       "54.01 (+28 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/tfc/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TFC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Truist dividend",
+   "meta_description": "Truist pays $2.08 per share; coverage is mixed, with payouts exceeding reported earnings in some years but adjusted results retaining capital.",
+   "opening": "Truist paid $2.08 per share in dividends in 2025. Truist's cash coverage is mixed: reported common earnings were negative in 2023 and 2024, while excluding the $5,090 million after-tax securities loss, Truist retained $926 million.",
+   "closing": "The full Truist memo also covers its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Truist pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.4 — Loans, deposits and credit quality",
+       "text": "Truist repurchased $2.5 billion of common stock in 2025 and paid $2.08 per share in dividends. Buybacks can lift EPS by reducing the share count, but they also use capital that could support lending or absorb losses."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.82",
+        "-0.30",
+        "-1.40",
+        "4.07",
+        "4.13"
+       ],
+       [
+        "− Dividends, per diluted share (calculated)",
+        "2.05",
+        "2.08",
+        "2.08",
+        "1.98",
+        "1.84"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.92",
+        "0.75",
+        "0.00",
+        "0.19",
+        "1.20"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "",
+        "1.90",
+        "1.09"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.15",
+        "3.13",
+        "3.48",
+        "",
+        ""
+       ]
+      ],
+      "note": "“Paid out more” means the company returned more money to shareholders through dividends and share buybacks than it earned that year."
+     }
+    },
+    {
+     "heading": "Is Truist's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 72,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Reported common earnings from continuing operations were negative in 2023 and 2024, while 2025 showed only a modest excess of payouts over earnings. Adjusted earnings present a stronger picture because large sale-related and other charges distort reported results. In December 2025, Truist authorized up to $10 billion in repurchases with no expiry, but an authorization permits spending; it does not require the bank to spend the full amount."
+      },
+      {
+       "n": 74,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "**Paid out more than it earned** — The $5,090 million after-tax securities loss created the $4,164 million payout shortfall; excluding it, Truist retained $926 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends declared on common shares",
+        "2,672",
+        "2,770",
+        "2,770",
+        "2,656",
+        "2,485"
+       ],
+       [
+        "− Share buybacks",
+        "2,500",
+        "1,000",
+        "0",
+        "250",
+        "1,616"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "",
+        "",
+        "2,540",
+        "1,468"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "198",
+        "4,164",
+        "4,634",
+        "",
+        ""
+       ],
+       [
+        "Adjusted earnings for common — its own",
+        "",
+        "4,860",
+        "4,397",
+        "",
+        ""
+       ],
+       [
+        "Dividend payout ratio — its own",
+        "54.0%",
+        "not meaningful",
+        "not meaningful",
+        "49.1%",
+        "45.0%"
+       ]
+      ],
+      "note": "The company's dividend payout ratio includes a business it sold, while ours counts only the businesses it still runs."
+     }
+    },
+    {
+     "heading": "What could change Truist's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the quarter ending December 2026, guidance calls for net interest income of $3,650–$3,700 million, a 0.5% net charge-off ratio, and $1 billion in share repurchases. Truist targets 10.0% CET1 by December 31, 2027, and a normal-condition common dividend payout of 30%–50%."
+      },
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends remain $2.08 per share in the base case through October 2027, then rise to $2.16 and $2.24. The bear holds the current rate before cutting it to $1.92, while the bull moves from $2.12 to $2.28 and $2.44. The current quarterly dividend is $0.52, and the stated normal payout range is 30%–50%. The unchanged $2.08 rate since 2023 supports stability, but weaker capital could force a cut."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "55,961 (54,261 / 57,561)",
+        "56,161 (51,761 / 59,561)",
+        "56,661 (49,961 / 62,061)"
+       ],
+       [
+        "Shares (millions)",
+        "1,138 (1,166 / 1,115)",
+        "1,100 (1,146 / 1,057)",
+        "1,064 (1,128 / 1,003)"
+       ],
+       [
+        "Dividends per share",
+        "2.08 (2.08 / 2.12)",
+        "2.16 (1.92 / 2.28)",
+        "2.24 (1.92 / 2.44)"
+       ],
+       [
+        "Price to book value",
+        "1.00 (0.85 / 1.10)",
+        "1.02 (0.80 / 1.20)",
+        "1.05 (0.75 / 1.30)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "4.4%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "4.4%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/tfc/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TFC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Truist earnings: January 20, 2027",
+   "meta_description": "Truist's next results are expected January 20, 2027, with guidance and a strategy review to watch.",
+   "opening": "Truist's next results are expected on January 20, 2027. Watch whether management gives a funding source, timetable and measurable result behind each investment.",
+   "closing": "The full memo also explains Truist's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Truist guided for the quarter ending December 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Truist offers modest upside, but the path depends on deposit costs, credit control, and improved returns. Management targets 15% ROTCE in 2027; ROTCE measures profit against common shareholders’ invested capital. Its long-term target is 16%–18%, versus 12.7% in 2025."
+      },
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the quarter ending December 2026, guidance calls for net interest income of $3,650–$3,700 million, a 0.5% net charge-off ratio, and $1 billion in share repurchases. Truist targets 10.0% CET1 by December 31, 2027, and a normal-condition common dividend payout of 30%–50%."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "2027 ROTCE outlook",
+        "2027",
+        "15.0%",
+        "15.0%",
+        "2026-07-17"
+       ],
+       [
+        "Long-term ROTCE outlook",
+        "Long-term",
+        "16.0%",
+        "18.0%",
+        "2026-07-17"
+       ],
+       [
+        "Net interest income",
+        "Quarter to Dec 2026",
+        "3,650",
+        "3,700",
+        "2026-10-16"
+       ],
+       [
+        "Net charge-off ratio",
+        "Quarter to Dec 2026",
+        "0.5%",
+        "0.5%",
+        "2026-10-16"
+       ],
+       [
+        "Share repurchases",
+        "Quarter to Dec 2026",
+        "1,000",
+        "1,000",
+        "2026-10-16"
+       ],
+       [
+        "Target common dividend payout ratio",
+        "Normal economic conditions",
+        "30.0%",
+        "50.0%",
+        "2026-02-24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do Truist's last eight quarters show in revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Truist’s earnings recovered, but reported growth is not a clean measure of ordinary banking growth."
+      },
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell while net interest income and NIM held up, so the main problem was not simply the ordinary lending spread. Truist reported adjusted EPS of $1.16, up 12% year over year, after excluding the securities loss and effects related to the RAC transaction. That measure better describes the quarter’s continuing engine, but reported earnings still show the cost of the decisions made."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,747",
+        "5,265",
+        "5,152",
+        "5,246",
+        "5,187",
+        "4,987",
+        "4,899",
+        "5,060"
+       ],
+       [
+        "Net interest income",
+        "3,663",
+        "3,621",
+        "3,599",
+        "3,700",
+        "3,629",
+        "3,587",
+        "3,507",
+        "3,590"
+       ],
+       [
+        "Net income from continuing operations",
+        "799",
+        "1,553",
+        "1,481",
+        "1,354",
+        "1,452",
+        "1,240",
+        "1,261",
+        "1,289"
+       ],
+       [
+        "EPS, diluted, from continuing operations",
+        "0.56",
+        "1.23",
+        "1.09",
+        "1.00",
+        "1.04",
+        "0.90",
+        "0.87",
+        "0.92"
+       ],
+       [
+        "Net interest margin",
+        "3.0%",
+        "3.0%",
+        "3.0%",
+        "3.1%",
+        "3.0%",
+        "3.0%",
+        "3.0%",
+        "3.1%"
+       ],
+       [
+        "CET1 capital ratio",
+        "10.7%",
+        "10.9%",
+        "10.8%",
+        "10.8%",
+        "11.0%",
+        "11.0%",
+        "11.3%",
+        "11.5%"
+       ]
+      ],
+      "note": "Although the row description says yearly sales, each number in this table covers only three months."
+     }
+    },
+    {
+     "heading": "What should investors watch in Truist's next release?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Three tests will determine whether Truist’s promises become a workable plan: January’s strategy review, the Bickerstaff settlement payment and the next stress-capital decision."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 20, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "3,747"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,060",
+      "4,899",
+      "4,987",
+      "5,187",
+      "5,246",
+      "5,152",
+      "5,265",
+      "3,747"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/tfc/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TFC&src=seo-earnings"
+  }
+ },
+ "short_name": "Truist",
+ "first_memo_date": "2026-10-17T13:56:05Z"
+}

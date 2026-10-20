@@ -1,0 +1,868 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "DAL",
+ "slug": "dal",
+ "company": "Delta Air Lines, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T10:46:53Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 76.65,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2027-01-12",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 239,
+  "tables": 26,
+  "words": 16789,
+  "sources": 239
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Delta Air Lines sells different versions of the same basic product: a journey by air. It also sells cargo space, holiday packages and aviation expertise."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 21",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm"
+  },
+  {
+   "title": "Revenue accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm"
+  },
+  {
+   "title": "September 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000038/dal-20260930.htm"
+  }
+ ],
+ "rivals": [
+  "AAL",
+  "UAL",
+  "ALK",
+  "JBLU",
+  "LUV",
+  "ALGT",
+  "ULCC",
+  "SKYW",
+  "AC.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Delta stock forecast",
+   "meta_description": "Delta's weighted scenario reaches $109.40 by October 2029 as premium and loyalty revenue must outlast fuel and fleet pressure.",
+   "opening": "Delta's weighted scenario reaches $109.40 by October 2029, with the bear case at 28% probability, the base case at 52%, and the bull case at 20%. It hinges on turning premium and loyalty strength into a durable TRASM-over-CASM-ex spread before fuel and fleet obligations catch up.",
+   "closing": "The full memo also explains Delta's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Delta's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast puts the weighted price at $85.47 in October 2027, a 13% return including dividends. It reaches $109.40 in October 2029, a 47% return including dividends. The bear case carries 28% probability, versus 52% for the base case. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 76.65, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 76.65, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "43.47 (-42 %)",
+        "43.61 (-41 %)",
+        "52.39 (-28 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "94.94 (+25 %)",
+        "103.60 (+38 %)",
+        "112.70 (+51 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "119.67 (+57 %)",
+        "149.75 (+98 %)",
+        "180.61 (+140 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "85.47 (+13 %)",
+        "96.03 (+28 %)",
+        "109.40 (+47 %)"
+       ]
+      ],
+      "note": "The weighted row is a probability-based average of the three cases, not a promise that the shares will reach those prices."
+     }
+    },
+    {
+     "heading": "What has to go right for Delta's base case, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Operating profit is the central earnings assumption. The base case rises from $6,650 million in October 2027 to $7,008 million in October 2028. It reaches $7,372 million in 2029. The first figure assumes $70,000 million of revenue and a 9.5% margin, supported by premium revenue growing faster than premium seats and by 20% fourth-quarter revenue guidance on seat growth capped at 2%."
+      },
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at $4,515 million and reaches $4,824 million in 2028. It reaches $5,213 million in 2029 because fuel, labor and disruption costs initially overwhelm fare recovery. The bull case starts at $7,403 million and reaches $8,475 million in 2028. It reaches $9,480 million if fuel normalizes, capacity remains disciplined and premium pricing holds. The base also sits above the $5,250 million 2022–2025 operating-income average, but below an aggressive margin recovery."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,650 (4,515 / 7,403)",
+        "7,008 (4,824 / 8,475)",
+        "7,372 (5,213 / 9,480)"
+       ],
+       [
+        "Shares (millions)",
+        "663 (666 / 660)",
+        "668 (674 / 661)",
+        "674 (682 / 666)"
+       ],
+       [
+        "Dividends per share",
+        "0.90 (0.86 / 0.98)",
+        "1.00 (0.86 / 1.20)",
+        "1.10 (0.86 / 1.45)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "10.50 (8.50 / 11.50)",
+        "10.50 (8.00 / 12.00)",
+        "10.50 (8.50 / 12.50)"
+       ],
+       [
+        "Net debt",
+        "6,861 (9,436 / 6,210)",
+        "4,328 (9,215 / 2,703)",
+        "1,469 (8,601 / -1,732)"
+       ]
+      ],
+      "note": "In October 2029, negative net debt means the company would have more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "How much cash does Delta really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Delta’s own free-cash-flow measure was $4,643 million in 2025. It adjusts the starting cash-flow figures for items such as pension funding, selected airport projects and strategic investments. Stock compensation was $313 million. Subtracting it gives an analytical “real” free cash flow of $3,530 million. The annual dividend was $440 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,342",
+        "8,025",
+        "6,464",
+        "6,363",
+        "3,264"
+       ],
+       [
+        "− Capital spending",
+        "4,499",
+        "5,140",
+        "5,323",
+        "6,366",
+        "3,247"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,843",
+        "2,885",
+        "1,141",
+        "-3",
+        "17"
+       ],
+       [
+        "− Stock pay",
+        "313",
+        "236",
+        "180",
+        "150",
+        "149"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,530",
+        "2,649",
+        "961",
+        "-153",
+        "-132"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "6.1%",
+        "4.7%",
+        "2.0%",
+        "-0.0%",
+        "0.1%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out some cash costs that we count, so its number overstates the cash truly left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Delta?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Delta Air Lines is priced as if a capital-hungry airline can turn volatile demand and fuel costs into dependable earnings and cash. The central question is what that price already assumes."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "76.65"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "109.40 (+47 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "10.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 76.65,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "43.47 (-42 %)",
+       "43.61 (-41 %)",
+       "52.39 (-28 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "94.94 (+25 %)",
+       "103.60 (+38 %)",
+       "112.70 (+51 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "119.67 (+57 %)",
+       "149.75 (+98 %)",
+       "180.61 (+140 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "85.47 (+13 %)",
+       "96.03 (+28 %)",
+       "109.40 (+47 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/dal/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DAL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Delta dividend: pay, cash cover and yield",
+   "meta_description": "Delta pays $0.215 quarterly; real free cash flow was $3,530 million against a $440 million annual dividend.",
+   "opening": "Delta pays a quarterly dividend of $0.215 per share, and its annual dividend was $440 million. Delta's real free cash flow was $3,530 million, covering that annual dividend.",
+   "closing": "The full Delta analysis also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Delta pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholder returns resumed gradually. Delta restarted dividends after the pandemic period, while no buybacks occurred in the period. In June 2025, the board authorized a $1 billion repurchase program, but an authorization is only permission to buy shares; it is not money spent. In June 2026, Delta lifted its quarterly dividend to $0.215 per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count change",
+      "caption": "What one share gets (US$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "0.67",
+        "0.50",
+        "0.20",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "5.20",
+        "3.96",
+        "1.58",
+        "",
+        "0.03"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Delta's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Delta’s own free-cash-flow measure was $4,643 million in 2025. It adjusts the starting cash-flow figures for items such as pension funding, selected airport projects and strategic investments. Stock compensation was $313 million. Subtracting it gives an analytical “real” free cash flow of $3,530 million. The annual dividend was $440 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,843",
+        "2,885",
+        "1,141",
+        "-3",
+        "17"
+       ],
+       [
+        "− Dividends paid",
+        "440",
+        "321",
+        "128",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "3,403",
+        "2,564",
+        "1,013",
+        "",
+        "17"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "12.5%",
+        "12.1%",
+        "13.3%",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes leases and pension obligations that our simpler calculation leaves out."
+     }
+    },
+    {
+     "heading": "What could change Delta's dividend?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend begins at the current annualized $0.86. The base case raises it to $0.90 in 2027 and $1.00 in 2028, before reaching $1.10. The bear case holds it at $0.86 because aircraft spending and weak cash generation could repeat the suspension seen in 2021–22. The bull case reaches $0.98, $1.20 and $1.45 as free cash flow improves."
+      },
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The December 2026 quarter tests whether fares and unit revenue can keep pace with fuel and non-fuel costs. Delta’s pilot agreement becomes amendable on December 31, 2026; negotiations could affect pay, scheduling and staffing. Recovery depends on fuel easing and TRASM again outpacing non-fuel unit costs in 2027. Airbus deliveries start in 2029 and Boeing deliveries in 2031, requiring a cash bridge before deliveries begin."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,650 (4,515 / 7,403)",
+        "7,008 (4,824 / 8,475)",
+        "7,372 (5,213 / 9,480)"
+       ],
+       [
+        "Shares (millions)",
+        "663 (666 / 660)",
+        "668 (674 / 661)",
+        "674 (682 / 666)"
+       ],
+       [
+        "Dividends per share",
+        "0.90 (0.86 / 0.98)",
+        "1.00 (0.86 / 1.20)",
+        "1.10 (0.86 / 1.45)"
+       ],
+       [
+        "Net debt",
+        "6,861 (9,436 / 6,210)",
+        "4,328 (9,215 / 2,703)",
+        "1,469 (8,601 / -1,732)"
+       ]
+      ],
+      "note": "In October 2029, negative net debt means the company would have more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "What is Delta's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Investors also track revenue and cost per available seat-mile. An available seat-mile is one seat flown one mile, whether occupied or empty; a 100-seat plane creates that capacity as it flies. Revenue per seat-mile must exceed cost per seat-mile across strong and weak periods. Free cash flow is the money left after necessary investment, especially aircraft spending. Delta can use it for debt, aircraft, dividends or buybacks, so a cash-flow yield is not an automatic shareholder payment."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.67"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "7.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count change",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.20",
+      "0.50",
+      "0.67"
+     ],
+     "Real free cash flow per share": [
+      "-0.21",
+      "-0.24",
+      "1.49",
+      "4.09",
+      "5.40"
+     ],
+     "Free cash flow per share": [
+      "0.03",
+      "-0.00",
+      "1.77",
+      "4.45",
+      "5.88"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/dal/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DAL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Delta earnings: guidance and next results",
+   "meta_description": "Delta's next results are expected on January 12, 2027; guidance covers earnings, cash, leverage and fuel, while fares and costs are the key watch.",
+   "opening": "Delta's next results are expected on January 12, 2027. Watch whether higher fares become durable cash while labor and legal risks remain manageable.",
+   "closing": "The full memo also answers questions about Delta’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Delta guided for the year?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management still promises profit, cash generation and lower debt, but fuel has sharply narrowed its margin for error. Delta’s October 9 outlook cut full-year adjusted earnings per share to **$5.10–$5.60**, from **$6.50–$7.50**. Adjusted earnings remove selected unusual items to show recurring performance; they are accounting profit, not cash in the bank."
+      },
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Free cash flow asks what remains after operations and long-lived investment. Leverage compares debt with an earnings measure. That is why debt can fall while leverage worsens if fuel reduces earnings. Delta’s promises include **$2.5 billion** of free cash flow, **$5 billion** of capital spending and gross leverage of **2.2 times**."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions, except per-share amounts, fuel prices, percentages and multiples",
+      "caption": "Guidance in force (US$ billions, except per-share amounts, fuel prices, percentages and multiples)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Earnings Per Share",
+        "FY 2026",
+        "5.10",
+        "5.60",
+        "Oct 9, 2026"
+       ],
+       [
+        "Free Cash Flow ($B)",
+        "FY 2026",
+        "2.5",
+        "2.5",
+        "Oct 9, 2026"
+       ],
+       [
+        "Gross Leverage",
+        "FY 2026",
+        "2.2x",
+        "2.2x",
+        "Oct 9, 2026"
+       ],
+       [
+        "pre-tax profit (US$ billions)",
+        "FY 2026",
+        "4.5",
+        "4.5",
+        "Oct 9, 2026"
+       ],
+       [
+        "increase in fuel costs (US$ billions)",
+        "FY 2026",
+        "6",
+        "6",
+        "Oct 9, 2026"
+       ],
+       [
+        "capital spend (US$ billions)",
+        "FY 2026",
+        "5",
+        "",
+        "Oct 9, 2026"
+       ],
+       [
+        "Earnings Per Share",
+        "4Q26",
+        "1.15",
+        "1.65",
+        "Oct 9, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Delta keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 115,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "Pay, and promises kept",
+       "text": "Promises require a separate test. Adjusted earnings remove specified items from standard profit, while free cash flow is the cash left after running the business and making necessary investments. Delta forecast 2025 adjusted earnings above US$7.35 per share but delivered US$5.82. It later reduced its 2026 free-cash-flow outlook from US$3–4 billion to approximately US$2.5 billion, citing higher fuel costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Delta's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "September 2026 showed strong revenue growth but weaker profit retention. Revenue reached $20,186 million. It was $16,673 million in the comparable quarter. Operating income fell to $1,454 million, while net income fell to $756 million."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "20,186",
+        "19,757",
+        "15,854",
+        "16,003",
+        "16,673",
+        "16,648",
+        "14,040",
+        "15,559"
+       ],
+       [
+        "Operating income",
+        "1,454",
+        "1,864",
+        "501",
+        "1,467",
+        "1,684",
+        "2,102",
+        "569",
+        "1,717"
+       ],
+       [
+        "Net income",
+        "756",
+        "1,604",
+        "-289",
+        "1,219",
+        "1,417",
+        "2,130",
+        "240",
+        "843"
+       ],
+       [
+        "EPS, diluted",
+        "1.15",
+        "2.44",
+        "-0.44",
+        "1.86",
+        "2.17",
+        "3.27",
+        "0.37",
+        "1.29"
+       ],
+       [
+        "Cash from operations",
+        "1,713",
+        "1,596",
+        "2,432",
+        "2,260",
+        "1,847",
+        "1,856",
+        "2,378",
+        "1,894"
+       ],
+       [
+        "− Capital spending",
+        "1,413",
+        "1,458",
+        "1,200",
+        "908",
+        "1,160",
+        "1,209",
+        "1,224",
+        "1,310"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Delta's next results?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next evidence will show whether higher fares become durable cash while labor and legal risks remain manageable. The December 2026 quarter should reveal whether realized fuel prices and revenue per unit of capacity move together. Advance bookings provide cash early, but Delta still owes those customers a flight."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 12, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "20,186"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.15"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "15,559",
+      "14,040",
+      "16,648",
+      "16,673",
+      "16,003",
+      "15,854",
+      "19,757",
+      "20,186"
+     ],
+     "EPS, diluted": [
+      "1.29",
+      "0.37",
+      "3.27",
+      "2.17",
+      "1.86",
+      "-0.44",
+      "2.44",
+      "1.15"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/dal/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DAL&src=seo-earnings"
+  }
+ },
+ "short_name": "Delta",
+ "first_memo_date": "2026-10-15T10:46:53Z"
+}

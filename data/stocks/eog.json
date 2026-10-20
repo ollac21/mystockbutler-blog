@@ -1,0 +1,572 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EOG",
+ "slug": "eog",
+ "company": "EOG Resources, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "oil_gas",
+ "country": "us",
+ "memo_date": "2026-10-16T20:40:47Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 157.52,
+ "price_date": "2026-10-16T19:31:22Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 31,
+  "words": 18847,
+  "sources": 210
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "EOG Resources is an American oil and gas producer: it brings hydrocarbons to the surface and sells them to industrial buyers. A dollar enters when a buyer pays for oil, gas, liquids, services or sand, and leaves through suppliers, transport, governments, operating costs and the investment needed to keep production going."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Marketing",
+   "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000054/eog-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000147/exh99-1080426.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/821189/000082118926000052/exh99-1022426.htm"
+  }
+ ],
+ "rivals": [
+  "DVN",
+  "FANG",
+  "OXY",
+  "APA",
+  "EXE",
+  "CNQ.TO",
+  "EQT",
+  "PR",
+  "SM",
+  "MTDR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "EOG Resources stock forecast",
+   "meta_description": "EOG Resources' stock forecast weighs bear, base and bull scenarios against production, cash generation, debt and valuation.",
+   "opening": "EOG Resources' weighted forecast is $123.87 in October 2029, including dividends, for a 13% loss. It hinges on whether EOG Resources can produce enough cash after replacement spending, debt and shareholder returns.",
+   "closing": "The full memo also explains EOG Resources' business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could EOG Resources' shares go?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $124.64 in October 2027, an 18% loss, and $123.87 in October 2029, a 13% loss. It assigns 30% probability to the bear case, 50% to base and 20% to bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 157.52, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 157.52, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "52.56 (-64 %)",
+        "29.33 (-76 %)",
+        "39.19 (-67 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "127.48 (-16 %)",
+        "127.24 (-14 %)",
+        "123.87 (-13 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "225.64 (+46 %)",
+        "248.74 (+63 %)",
+        "250.87 (+68 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "124.64 (-18 %)",
+        "122.17 (-17 %)",
+        "123.87 (-13 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right for EOG Resources, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bull case needs repeatable Utica savings and commercial exploration results. The bear case gains weight if prices weaken, organic replacement stays below drilling needs, or debt constrains distributions. The November 6, 2026 third-quarter call should show whether production, realized prices, taxes and operating cash flow support the spending plan. On January 1, 2027, Jeff Hibbard is due to become CFO, and Brent-linked gas deliveries are expected to begin. EOG’s scale matters only if it becomes durable per-share cash after replacing wells and funding debt and distributions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does EOG Resources really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was $6,594 million, leaving straightforward free cash flow of $3,450 million. Deducting $216 million of stock-based compensation leaves $3,234 million. Stock pay does not immediately consume cash, but it transfers ownership to employees or requires repurchases to prevent dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "10,044",
+        "12,143",
+        "11,340",
+        "11,093",
+        "8,791"
+       ],
+       [
+        "− Capital spending",
+        "6,594",
+        "6,372",
+        "6,185",
+        "5,000",
+        "3,850"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,450",
+        "5,771",
+        "5,155",
+        "6,093",
+        "4,941"
+       ],
+       [
+        "− Stock pay",
+        "216",
+        "199",
+        "177",
+        "133",
+        "152"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,234",
+        "5,572",
+        "4,978",
+        "5,960",
+        "4,789"
+       ]
+      ],
+      "note": "The company's own free cash flow differs from ours because it leaves out some cash costs and makes other adjustments, so it may not show the cash truly left after all spending and stock pay."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for EOG Resources?",
+     "paragraphs": [
+      {
+       "n": 185,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "EOG looks reasonable against recent earnings but more demanding against cash left after drilling."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "157.52"
+       ],
+       [
+        "Market value (calculated)",
+        "82,623.84"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "85,642.84"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.3x"
+       ],
+       [
+        "EV to cash flow from operations (calculated)",
+        "8.5x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.9%"
+       ]
+      ],
+      "note": "Enterprise value per flowing barrel means the market value assigned to each barrel of oil and gas the company produces per day, not the price of one barrel of oil."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "157.52"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "123.87 (-13 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 157.52,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "52.56 (-64 %)",
+       "29.33 (-76 %)",
+       "39.19 (-67 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "127.48 (-16 %)",
+       "127.24 (-14 %)",
+       "123.87 (-13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "225.64 (+46 %)",
+       "248.74 (+63 %)",
+       "250.87 (+68 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "124.64 (-18 %)",
+       "122.17 (-17 %)",
+       "123.87 (-13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/eog/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EOG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "EOG Resources dividend: cash coverage and yield",
+   "meta_description": "EOG Resources pays $4.08 per share; 2025 dividends and buybacks were 137.0% of free cash flow.",
+   "opening": "EOG Resources pays $4.08 per share in every case, with the base case reaching $4.41 by 2029. EOG Resources' 2025 dividends and buybacks were 137.0% of free cash flow, so shareholder payments exceeded that year's free cash flow.",
+   "closing": "The full EOG Resources memo also answers questions about EOG Resources' business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does EOG Resources pay per share?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at $4.08 per share in every case because the board declared a $1.02 quarterly payment. The base case reaches $4.41 by 2029 through 4% annual increases, below the recent growth rate. The bear case stays at $4.08 because replacement spending and weaker prices cause a pause. The bull reaches $4.94 through 10% increases, requiring stronger recurring cash flow."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count changes",
+      "caption": "What one share gets (US$ per share, except share-count changes)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "6.32",
+        "10.14",
+        "8.83",
+        "10.38",
+        "8.46"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.96",
+        "3.67",
+        "5.80",
+        "8.77",
+        "4.60"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.70",
+        "5.70",
+        "1.78",
+        "0.20",
+        "0.07"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "0.77",
+        "1.25",
+        "1.41",
+        "3.79"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it leaves out changes in working capital and certain acquisition costs, while our free cash flow includes them."
+     }
+    },
+    {
+     "heading": "Does EOG Resources' cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, EOG paid $2,161 million in dividends and spent $2,564 million repurchasing shares. Together, those distributions totalled $4,725 million, or 137.0% of free cash flow, leaving a $1,275 million shortfall before acquisitions."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was $6,594 million, leaving straightforward free cash flow of $3,450 million. Deducting $216 million of stock-based compensation leaves $3,234 million. Stock pay does not immediately consume cash, but it transfers ownership to employees or requires repurchases to prevent dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,450",
+        "5,771",
+        "5,155",
+        "6,093",
+        "4,941"
+       ],
+       [
+        "− Dividends paid",
+        "2,161",
+        "2,087",
+        "3,386",
+        "5,148",
+        "2,684"
+       ],
+       [
+        "− Share buybacks",
+        "2,564",
+        "3,246",
+        "1,038",
+        "118",
+        "41"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "438",
+        "731",
+        "827",
+        "2,216"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,275",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "137.0%",
+        "92.4%",
+        "85.8%",
+        "86.4%",
+        "55.2%"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more cash than its free cash flow, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change EOG Resources' dividend?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear probability would rise if 2027–2029 realized oil and gas prices weaken, organic reserve replacement remains below drilling needs, or Encino-related debt limits distributions. The 2028 down year is the clearest stress test."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is EOG Resources' dividend yield today against its price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "157.52"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "Enterprise value per flowing barrel means the market value assigned to each barrel of oil and gas the company produces per day, not the price of one barrel of oil."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.96"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count changes",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.60",
+      "8.77",
+      "5.80",
+      "3.67",
+      "3.96"
+     ],
+     "Real free cash flow per share": [
+      "8.20",
+      "10.15",
+      "8.52",
+      "9.79",
+      "5.92"
+     ],
+     "Free cash flow per share": [
+      "8.46",
+      "10.38",
+      "8.83",
+      "10.14",
+      "6.32"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/eog/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EOG&src=seo-dividend"
+  }
+ },
+ "short_name": "EOG Resources",
+ "first_memo_date": "2026-10-16T20:40:47Z"
+}

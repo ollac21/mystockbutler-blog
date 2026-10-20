@@ -1,0 +1,541 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AFL",
+ "slug": "afl",
+ "company": "Aflac Incorporated",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-18T03:08:09Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 119.97,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 239,
+  "tables": 26,
+  "words": 15503,
+  "sources": 167
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Aflac sells insurance that pays cash when illness, injury, disability or death meets the policy’s rules. Its business is a long financial exchange: customers pay premiums now, Aflac invests much of that money, and the company pays claims and expenses later."
+ },
+ "sources": [
+  {
+   "title": "Aflac financial supplement",
+   "url": "https://www.sec.gov/Archives/edgar/data/4977/000162828026054333/afl063026-financialsupplem.htm"
+  },
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/4977/000162828026019627/afl12312510k.pdf"
+  },
+  {
+   "title": "Aflac 2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/4977/000000497724000053/afl-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "UNM",
+  "MET",
+  "CB",
+  "VOYA",
+  "CNO",
+  "CI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Aflac stock forecast",
+   "meta_description": "Aflac’s stock forecast weighs Japan runoff, U.S. claims, investment income, capital returns and valuation across bear, base and bull cases.",
+   "opening": "The weighted forecast reaches $127.93 by October 2029, a 13% return. It hinges on Japan stabilizing and U.S. claims normalizing.",
+   "closing": "The full memo also explains Aflac’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Aflac's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case is $117.39 in October 2027, roughly 0% return. It reaches $127.93 in October 2029, a 13% return. Bear carries 30% probability and base 55%. Bull carries 15%."
+      },
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The range is much wider than the weighted path. By October 2029, the bear case reaches $64.45 while the bull case reaches $193.37, against today’s $119.97. The base case is the most likely outcome, but the downside is severe if operating pressure and valuation compression reinforce each other."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 119.97, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 119.97, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "82.48 (-29 %)",
+        "73.47 (-35 %)",
+        "64.45 (-40 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "129.49 (+10 %)",
+        "136.87 (+18 %)",
+        "144.71 (+27 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "142.85 (+21 %)",
+        "168.03 (+45 %)",
+        "193.37 (+68 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "117.39 (-0 %)",
+        "122.53 (+6 %)",
+        "127.93 (+13 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Aflac?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Book value starts from $30,312 million, the latest reported common equity. The base case assumes $4,000 million of annual core earnings. Dividends are $1,300 million and buybacks $3,000 million, producing a modest decline because 2025 core earnings were $4,008 million while distributions were substantial. The bear case adds a large market or reserve shock, uses lower earnings and slower repurchases, and reaches $24,312 million by 2029. The bull case assumes $4,500 million of earnings, selective buybacks and favorable marks, reaching $30,512 million. The bear reflects reserve, rate and investment volatility; the bull reflects stronger investment income and capital retention."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much does Aflac really earn and return?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.4 — Investments and debt",
+       "text": "Insurance cash flow cannot be read like an industrial company’s free cash flow. Premiums and investment income fund claims, while reserves accumulate for benefits that may arrive years later. Capital held inside regulated subsidiaries and the ability to remit dividends matter more than a simple subtraction of capital spending."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net premiums earned",
+        "13,548",
+        "13,440",
+        "14,123",
+        "14,901",
+        "17,095"
+       ],
+       [
+        "Net investment income",
+        "4,076",
+        "4,116",
+        "3,811",
+        "3,656",
+        "3,818"
+       ],
+       [
+        "Core earnings (company's measure)",
+        "4,008",
+        "4,072",
+        "3,733",
+        "3,614",
+        "3,925"
+       ],
+       [
+        "Net income",
+        "3,646",
+        "5,443",
+        "4,659",
+        "4,418",
+        "4,231"
+       ],
+       [
+        "Dividend per share",
+        "2.35",
+        "2.08",
+        "1.76",
+        "1.62",
+        "1.39"
+       ]
+      ],
+      "note": "The company's core earnings are its own version of ongoing profit, so they can differ from net income because the company counts some items differently."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Aflac today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A P/E, or price-to-earnings ratio, shows how much investors pay for each dollar of earnings. A trailing P/E uses the last 12 months; a forward P/E uses expected earnings; and core earnings remove specified investment and other items. In Q2 2026, reported diluted EPS was $1.63, while adjusted diluted EPS was $1.75. Investment results caused much of the gap, so the underlying insurance business had not changed as sharply as reported earnings suggested."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "119.97"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.9x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "15.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "17.1x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.0x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The core-earnings price-to-earnings figure uses Aflac’s own adjusted profit measure, so it differs from the ordinary price-to-earnings figure."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "119.97"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "127.93 (+13 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.9x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 119.97,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "82.48 (-29 %)",
+       "73.47 (-35 %)",
+       "64.45 (-40 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "129.49 (+10 %)",
+       "136.87 (+18 %)",
+       "144.71 (+27 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "142.85 (+21 %)",
+       "168.03 (+45 %)",
+       "193.37 (+68 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "117.39 (-0 %)",
+       "122.53 (+6 %)",
+       "127.93 (+13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/afl/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AFL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Aflac dividend: payout and cash coverage",
+   "meta_description": "Aflac pays a growing dividend, but the latest payout exceeded common earnings, so coverage depends on subsidiary cash and capital needs.",
+   "opening": "Aflac currently pays $0.61 per quarter and has a record of annual increases. The latest year paid out more to common shareholders than it earned, so dividend coverage depends on subsidiary cash generation and capital needs.",
+   "closing": "The full Aflac memo also covers Aflac’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Aflac pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base case rises from the current $0.61 quarterly rate to the measured annual increases shown in the table. The bear freezes the payout at $2.44 per share because Japan’s runoff, U.S. claims and capital demands could make the board cautious. The bull reaches $3.00 because higher investment income and subsidiary remittances support faster increases. Aflac’s 43-year record of annual increases supports the base, but 2025 distributions exceeded net income."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.82",
+        "9.63",
+        "7.78",
+        "6.93",
+        "6.25"
+       ],
+       [
+        "− Dividends, per share",
+        "2.32",
+        "2.05",
+        "1.73",
+        "1.59",
+        "1.37"
+       ],
+       [
+        "− Share buybacks, per share",
+        "6.60",
+        "4.96",
+        "4.68",
+        "3.77",
+        "3.40"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "2.63",
+        "1.38",
+        "1.57",
+        "1.48"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more than it earned because dividends plus share buybacks exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "Does Aflac’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The payout therefore needs context. In the latest year, Aflac paid out more to common shareholders than it earned for them. That does not automatically signal distress because an insurer can use capital accumulated earlier, but it does make buybacks discretionary rather than guaranteed. The central test is whether subsidiary cash generation can support shareholder returns without weakening the insurance operation."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "3,646",
+        "5,443",
+        "4,659",
+        "4,418",
+        "4,231"
+       ],
+       [
+        "**= Earnings for common shareholders**",
+        "3,646",
+        "5,443",
+        "4,659",
+        "4,418",
+        "4,231"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,241",
+        "1,159",
+        "1,033",
+        "1,014",
+        "928"
+       ],
+       [
+        "− Share buybacks",
+        "3,530",
+        "2,800",
+        "2,801",
+        "2,401",
+        "2,301"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "1,484",
+        "825",
+        "1,003",
+        "1,002"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "1,125",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Aflac’s dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management expects Japan underlying earned premiums to decline 1% to 2%. It expects U.S. net earned premium growth just below 3%. Its 2025–2027 U.S. target is a 3% to 6% CAGR. It targets annualized subsidiary dividends of $2,400 million to $3,000 million, subject to regulated subsidiaries’ remittances."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward bear if Japan’s APIF and earned premiums deteriorate through 2027–2029, or if sales rise without replacing paid-up policies. Persistent U.S. benefit-ratio pressure during 2027–2028 would weaken margins and earnings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Aflac’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The table sets out today's share price, market value, valuation multiples and dividend yield."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "119.97"
+       ],
+       [
+        "Market value (calculated)",
+        "60,146.16"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The core-earnings price-to-earnings figure uses Aflac’s own adjusted profit measure, so it differs from the ordinary price-to-earnings figure."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "5.9%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/afl/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AFL&src=seo-dividend"
+  }
+ },
+ "short_name": "Aflac",
+ "first_memo_date": "2026-10-18T03:08:09Z"
+}

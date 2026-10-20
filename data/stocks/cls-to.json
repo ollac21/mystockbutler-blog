@@ -1,0 +1,562 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CLS.TO",
+ "slug": "cls-to",
+ "company": "Celestica Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-15T17:15:12Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 436.24,
+ "price_date": "2026-10-15T15:39:58Z",
+ "next_earnings": "2026-10-26",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 244,
+  "tables": 27,
+  "words": 15912,
+  "sources": 228
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Celestica is the industrial layer behind other companies’ networks, data centers, and specialized machines. It earns revenue by designing or building physical equipment, then turns that revenue into cash only after paying for components, labor, factories, logistics, and the time between production and collection."
+ },
+ "sources": [
+  {
+   "title": "2025 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089426000011/cls-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089425000014/cls-20241231.htm"
+  },
+  {
+   "title": "2021 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/1030894/000103089422000004/cls20211231prfs.htm"
+  }
+ ],
+ "rivals": [
+  "JBL",
+  "FLEX",
+  "SANM",
+  "BHE",
+  "FN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Celestica stock forecast",
+   "meta_description": "Celestica's stock forecast weighs its scenarios, cash generation and today's valuation.",
+   "opening": "The weighted forecast reaches C$819.03 in October 2029 with the base case at 55% probability. It hinges on qualified 1.6T programs, reliable factory execution, stable yields and inventory converting to cash.",
+   "closing": "The full Celestica memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Celestica's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast reaches C$651.55 in October 2027. That is a +49% return. It reaches C$819.03 in October 2029. That is a +88% return. The bear case has 25% probability. The base and bull cases have 55% and 20% probabilities. The October 2029 bear case is C$380.52. The bull case is C$1,439.31."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per CLS.TO share at each date; in brackets the return since today's 436.24, dividends included",
+      "caption": "What the shares could be worth (CAD per CLS.TO share at each date; in brackets the return since today's 436.24, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "418.04 (-4 %)",
+        "346.65 (-21 %)",
+        "380.52 (-13 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "664.78 (+52 %)",
+        "728.80 (+67 %)",
+        "792.80 (+82 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "907.06 (+108 %)",
+        "1192.11 (+173 %)",
+        "1439.31 (+230 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "651.55 (+49 %)",
+        "725.92 (+66 %)",
+        "819.03 (+88 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Celestica, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome depends on qualified 1.6T programs, reliable factory execution, stable yields and inventory converting to cash. September-quarter results arrive on October 26, 2026, followed by the investor-day call on October 27. Helios samples are expected toward year-end 2026, with a substantial ramp expected in the first half of 2027; samples and availability do not establish volume sales."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Celestica really make?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "That was far below net income of US$832.5 million because accounting profit is not the same as spendable cash. Working capital absorbed cash, while capital equipment required payment immediately even though its accounting cost is spread over future years. Deducting US$69.8 million of stock compensation gives an analytical “real free cash flow” figure of US$377.0 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "659.5",
+        "473.9",
+        "326.2",
+        "211.1",
+        "226.8"
+       ],
+       [
+        "− Capital spending",
+        "201.2",
+        "170.9",
+        "125.1",
+        "109.0",
+        "52.2"
+       ],
+       [
+        "**= Free cash flow**",
+        "446.8",
+        "293.3",
+        "191.2",
+        "93.7",
+        "112.2"
+       ],
+       [
+        "− Stock pay",
+        "69.8",
+        "57.4",
+        "55.6",
+        "51.0",
+        "33.4"
+       ],
+       [
+        "**= Real free cash flow**",
+        "377.0",
+        "235.9",
+        "135.6",
+        "42.7",
+        "78.8"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Celestica today?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E is 31.9x, meaning investors pay C$31.90 for each dollar of recent earnings. The forward P/E is 15.9x because it uses expected adjusted earnings rather than past earnings. Adjusted earnings exclude selected items such as stock compensation and intangible-asset amortization, so the apparent bargain depends on the forecast arriving."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "436.24"
+       ],
+       [
+        "Market value (calculated)",
+        "55,014.7"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "55,405.0"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "31.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": "The enterprise value does not yet include the cash raised in the August share offering because it uses the June 30 balance sheet."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "436.24"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "819.03 (+88 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 307.06386484958864,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "418.04 (-4 %)",
+       "346.65 (-21 %)",
+       "380.52 (-13 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "664.78 (+52 %)",
+       "728.80 (+67 %)",
+       "792.80 (+82 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "907.06 (+108 %)",
+       "1192.11 (+173 %)",
+       "1439.31 (+230 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "651.55 (+49 %)",
+       "725.92 (+66 %)",
+       "819.03 (+88 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cls-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CLS.TO&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Celestica earnings: next results and guidance",
+   "meta_description": "Celestica reports on October 26, 2026. See its guidance, recent results and the key test: actual shipments.",
+   "opening": "Celestica reports September-quarter results on October 26, 2026. The key thing to watch is actual shipments.",
+   "closing": "The full memo also explains Celestica’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Celestica guided for the year?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Celestica expects 2026 revenue of $20,500.0 million and adjusted EPS of $11.30. It also expects an adjusted operating margin of 8.4%. Adjusted EPS is adjusted profit divided among diluted shares, rather than GAAP profit per share. If a fixed $100 million profit produces $10 per share at one share count, adding one million shares can reduce it to about $9.09. Celestica’s August offering added 11.129 million shares and raised about $3.45 billion, giving the company funding but also creating dilution."
+      },
+      {
+       "n": 179,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The September-quarter guide calls for revenue of $5,250.0–$5,550.0 million. Adjusted EPS is guided to $2.88–$3.08. Growth is uneven: Connectivity & Cloud Solutions is expected to grow 85.0% in 2026, against 10.0% for Advanced Technology Solutions."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except EPS and percentages",
+      "caption": "Guidance in force (US$ millions, except EPS and percentages)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "20,500.0",
+        "20,500.0",
+        "Jul 27, 2026"
+       ],
+       [
+        "Adjusted EPS (non-GAAP)",
+        "Year to Dec 2026",
+        "11.30",
+        "11.30",
+        "Jul 27, 2026"
+       ],
+       [
+        "Adjusted operating margin (non-GAAP)",
+        "Year to Dec 2026",
+        "8.4%",
+        "8.4%",
+        "Jul 27, 2026"
+       ],
+       [
+        "Free cash flow (non-GAAP)",
+        "Year to Dec 2026",
+        "600.0",
+        "600.0",
+        "Jul 27, 2026"
+       ],
+       [
+        "Capex",
+        "Year to Dec 2026",
+        "1,000.0",
+        "1,000.0",
+        "Jul 27, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Celestica kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 104,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management forecast US$10.7 billion in annual revenue, then reported about US$12.4 billion. That supports the view that it delivered above its earlier expectation, although strong customer demand also helped. Performance shares granted in 2023 vested at their maximum in 2026, but undisclosed detailed targets make the difficulty of that hurdle harder for outsiders to judge."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Celestica revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "June 2026 showed a genuine acceleration in Celestica’s operating activity. Revenue reached US$4,698.6 million, up approximately 62.4% from the same quarter a year earlier. Operating income rose to US$458.3 million, although gross margin fell to 12.3%. More profit dollars can therefore accompany a lower margin percentage."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,698.6",
+        "4,047.0",
+        "3,654.9",
+        "3,194.0",
+        "2,893.4",
+        "2,648.6",
+        "2,545.7",
+        "2,499.5"
+       ],
+       [
+        "Gross margin",
+        "12.3%",
+        "10.8%",
+        "11.8%",
+        "13.0%",
+        "12.8%",
+        "10.3%",
+        "11.7%",
+        "10.4%"
+       ],
+       [
+        "Operating income",
+        "458.3",
+        "272.1",
+        "314.4",
+        "325.0",
+        "272.5",
+        "128.8",
+        "202.6",
+        "138.0"
+       ],
+       [
+        "Net income",
+        "368.8",
+        "212.3",
+        "267.5",
+        "267.8",
+        "211.0",
+        "86.2",
+        "151.7",
+        "89.5"
+       ],
+       [
+        "EPS, diluted",
+        "3.17",
+        "1.83",
+        "2.31",
+        "2.31",
+        "1.82",
+        "0.74",
+        "1.29",
+        "0.75"
+       ]
+      ],
+      "note": "The table shows results for each three-month period, but the explanations incorrectly describe them as yearly numbers."
+     }
+    },
+    {
+     "heading": "What should investors watch in Celestica’s next results?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Celestica reports September-quarter results on October 26, 2026, followed by its investor-day call on October 27. Investors will need actual shipments, a firmer spending plan and EPS estimates that reflect the new share count."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 26, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,698.6"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.17"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,499.5",
+      "2,545.7",
+      "2,648.6",
+      "2,893.4",
+      "3,194.0",
+      "3,654.9",
+      "4,047.0",
+      "4,698.6"
+     ],
+     "EPS, diluted": [
+      "0.75",
+      "1.29",
+      "0.74",
+      "1.82",
+      "2.31",
+      "2.31",
+      "1.83",
+      "3.17"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cls-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CLS.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Celestica",
+ "first_memo_date": "2026-10-15T17:15:12Z"
+}

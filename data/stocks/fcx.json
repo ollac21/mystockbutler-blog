@@ -1,0 +1,789 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FCX",
+ "slug": "fcx",
+ "company": "Freeport-McMoRan Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "mining",
+ "country": "us",
+ "memo_date": "2026-10-15T20:59:48Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 69.87,
+ "price_date": "2026-10-15T19:11:28Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 286,
+  "tables": 31,
+  "words": 18996,
+  "sources": 181
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Freeport-McMoRan is a mining and metals company whose main product is copper, sold in several forms. To understand its business, follow a dollar from rock through processing, sale and the costs that remain."
+ },
+ "sources": [
+  {
+   "title": "Freeport-McMoRan — 2025 Form 10-K — February 13, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000012/fcx-20251231.htm"
+  },
+  {
+   "title": "2024 revenue comparison",
+   "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125925000006/fcx-20241231.htm"
+  },
+  {
+   "title": "2023 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/831259/000083125924000011/fcx-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "BHP",
+  "FM.TO",
+  "RIO",
+  "SCCO",
+  "LUN.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Freeport-McMoRan stock forecast",
+   "meta_description": "Freeport-McMoRan stock forecast: the weighted scenario is $77.29 in October 2027 and $85.18 in October 2029, across bear, base and bull cases.",
+   "opening": "The weighted scenario for Freeport-McMoRan is $77.29 in October 2027 and $85.18 in October 2029, with the base case carrying 55% probability. It hinges on Freeport-McMoRan’s Grasberg output recovery producing cash after investment and partner claims.",
+   "closing": "The full Freeport-McMoRan memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Freeport-McMoRan’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $77.29 in October 2027, a +11% return. At the final date, October 2029, it is $85.18, a +24% return. The bear case carries 25% probability, the base case 55%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 69.87, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 69.87, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "23.30 (-66 %)",
+        "16.52 (-75 %)",
+        "9.20 (-85 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "76.20 (+10 %)",
+        "86.61 (+26 %)",
+        "87.00 (+27 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "147.79 (+112 %)",
+        "172.59 (+149 %)",
+        "175.15 (+154 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "77.29 (+11 %)",
+        "86.28 (+25 %)",
+        "85.18 (+24 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value across the bear, base, and bull cases after giving each case weight according to its probability."
+     }
+    },
+    {
+     "heading": "What has to go right for Freeport-McMoRan, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 275,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls from $5.755 billion to $4.88 billion as weak prices and an interrupted restart leave capacity underused. The bull case reaches $17.76 billion before easing to $17.99 billion in 2029, reflecting strong prices, timely gold and repeatable leach output. FCX’s 2025 copper sales and Grasberg production both fell sharply, while the latest quarter still showed $7,029 million of revenue and $2,003 million of operating income."
+      },
+      {
+       "n": 282,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case reaches $76.20 first and $87.00 last. Its 55% probability is highest because it follows management’s staged recovery without assuming every growth project succeeds. High capex and partner distributions prevent a faster improvement in cash and valuation."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "11,480 (5,755 / 17,760)",
+        "12,300 (5,380 / 18,730)",
+        "12,300 (4,880 / 17,990)"
+       ],
+       [
+        "Shares (millions)",
+        "1,432 (1,436 / 1,427)",
+        "1,428 (1,437 / 1,418)",
+        "1,423 (1,437 / 1,410)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.60 / 0.60)",
+        "0.60 (0.30 / 0.80)",
+        "0.60 (0.30 / 1.00)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "10.00 (7.50 / 12.00)",
+        "10.50 (7.00 / 13.00)",
+        "10.50 (6.50 / 13.50)"
+       ],
+       [
+        "Net debt",
+        "5,692 (9,700 / 2,196)",
+        "5,504 (13,925 / -1,319)",
+        "5,316 (18,500 / -4,042)"
+       ]
+      ],
+      "note": "A negative net debt number means the company would have more cash than borrowed money, after excluding its separately reported lease obligations."
+     }
+    },
+    {
+     "heading": "How much cash does Freeport-McMoRan really make?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operations generated $5.610 billion, while capital spending consumed $4.494 billion. The stated remainder was $1.079 billion; after stock-based compensation, Freeport’s analytical “real free cash flow” was $958 million. Its margin was 3.7%, far below the 24.0% achieved in 2021."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,610",
+        "7,160",
+        "5,279",
+        "5,139",
+        "7,715"
+       ],
+       [
+        "− Capital spending",
+        "4,494",
+        "4,808",
+        "4,824",
+        "3,469",
+        "2,115"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,079",
+        "2,311",
+        "452",
+        "1,663",
+        "5,575"
+       ],
+       [
+        "− Stock pay",
+        "121",
+        "109",
+        "109",
+        "95",
+        "98"
+       ],
+       [
+        "**= Real free cash flow**",
+        "958",
+        "2,202",
+        "343",
+        "1,568",
+        "5,477"
+       ]
+      ],
+      "note": "The zero for interest paid does not mean the company paid no interest; its cash interest was already included in cash from operations."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Freeport-McMoRan today?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E is 34.4x, based on completed earnings. The forward P/E is 16.4x, based on a forecast. Those multiples imply earnings per share rising from about US$2.03 to US$4.26. The lower multiple is therefore not a second price: it is the same price applied to a much more optimistic earnings assumption."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "69.87"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "85.18 (+24 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.1%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 69.87,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "23.30 (-66 %)",
+       "16.52 (-75 %)",
+       "9.20 (-85 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "76.20 (+10 %)",
+       "86.61 (+26 %)",
+       "87.00 (+27 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "147.79 (+112 %)",
+       "172.59 (+149 %)",
+       "175.15 (+154 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "77.29 (+11 %)",
+       "86.28 (+25 %)",
+       "85.18 (+24 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/fcx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FCX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Freeport-McMoRan dividend",
+   "meta_description": "Freeport-McMoRan pays $0.60 per share; its 0.9% dividend yield rests against $69.87, while total distributions exceeded real free cash flow.",
+   "opening": "Freeport-McMoRan's base dividend is $0.60 per share, matching current 2026 guidance and four consecutive years. Its real free cash flow was $0.66 per share, while distributions to minority owners, dividends, and buybacks exceeded it by $0.81 per share.",
+   "closing": "The full Freeport-McMoRan memo also covers Freeport-McMoRan's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Freeport-McMoRan pay per share?",
+     "paragraphs": [
+      {
+       "n": 277,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend stays at $0.60 per share in every window. The bear case cuts it to $0.30 after 2027, while the bull case raises it to $0.80 and then $1.00. The base reflects four consecutive years at $0.60 and current 2026 guidance. The downside reflects distributions that exceeded free cash flow in several recent years; the upside requires stronger cash after capital spending and partner distributions."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "0.66",
+        "1.52",
+        "0.24",
+        "1.08",
+        "3.70"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.60",
+        "0.60",
+        "0.60",
+        "0.60",
+        "0.22"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.07",
+        "0.04",
+        "0.00",
+        "0.93",
+        "0.33"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "",
+        "",
+        "2.82"
+       ]
+      ],
+      "note": "The company’s own free cash flow count is not shown; our real free cash flow is lower because it subtracts shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does Freeport-McMoRan's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The operating picture is lower production at 2,376 million pounds alongside a higher realized copper price of $4.75 per pound. Net debt reached $5,555 million in 2025. The company’s real free cash flow was $0.66 per share, while distributions to minority owners, dividends, and buybacks exceeded it by $0.81 per share. At $69.87, the stock’s free cash flow yield is 1.1%. Its dividend yield is 0.9%."
+      },
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operations generated $5.610 billion, while capital spending consumed $4.494 billion. The stated remainder was $1.079 billion; after stock-based compensation, Freeport’s analytical “real free cash flow” was $958 million. Its margin was 3.7%, far below the 24.0% achieved in 2021."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,079",
+        "2,311",
+        "452",
+        "1,663",
+        "5,575"
+       ],
+       [
+        "− Paid to minority owners",
+        "1,274",
+        "1,833",
+        "625",
+        "840",
+        "583"
+       ],
+       [
+        "− Dividends paid",
+        "865",
+        "865",
+        "863",
+        "866",
+        "331"
+       ],
+       [
+        "− Share buybacks",
+        "107",
+        "59",
+        "0",
+        "1,347",
+        "488"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "4,173"
+       ]
+      ],
+      "note": "The company’s payout percentages count only dividends and share buybacks, so they leave out cash paid to outside owners of partly owned businesses."
+     }
+    },
+    {
+     "heading": "What could change Freeport-McMoRan's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets PTFI at 80% of capacity by mid-2027 and near full capacity by year-end 2027. For 2026, it guides to 3,057 million pounds of copper sales and $4.3 billion of capital expenditure."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "11,480 (5,755 / 17,760)",
+        "12,300 (5,380 / 18,730)",
+        "12,300 (4,880 / 17,990)"
+       ],
+       [
+        "Shares (millions)",
+        "1,432 (1,436 / 1,427)",
+        "1,428 (1,437 / 1,418)",
+        "1,423 (1,437 / 1,410)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.60 / 0.60)",
+        "0.60 (0.30 / 0.80)",
+        "0.60 (0.30 / 1.00)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "10.00 (7.50 / 12.00)",
+        "10.50 (7.00 / 13.00)",
+        "10.50 (6.50 / 13.50)"
+       ],
+       [
+        "Net debt",
+        "5,692 (9,700 / 2,196)",
+        "5,504 (13,925 / -1,319)",
+        "5,316 (18,500 / -4,042)"
+       ]
+      ],
+      "note": "A negative net debt number means the company would have more cash than borrowed money, after excluding its separately reported lease obligations."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.60"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.22",
+      "0.60",
+      "0.60",
+      "0.60",
+      "0.60"
+     ],
+     "Real free cash flow per share": [
+      "3.70",
+      "1.08",
+      "0.24",
+      "1.52",
+      "0.66"
+     ],
+     "Free cash flow per share": [
+      "3.76",
+      "1.15",
+      "0.31",
+      "1.60",
+      "0.75"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/fcx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FCX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Freeport-McMoRan earnings date",
+   "meta_description": "Freeport-McMoRan's October 27, 2026 results will test sales, deferred Indonesian gold and the Grasberg recovery.",
+   "opening": "Freeport-McMoRan's next results are expected on October 27, 2026. Watch whether Freeport-McMoRan converts its recovery schedule into safe, repeatable shipments and cash.",
+   "closing": "The full Freeport-McMoRan research also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Freeport-McMoRan guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, Freeport projects sales of 3,057 million pounds of copper, 654 thousand ounces of gold and 93 million pounds of molybdenum. Sales are not the same as production. At PT Freeport Indonesia, or PTFI, copper concentrate must pass through smelting and refining before the finished metal can be sold."
+      },
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The annual unit net cash-cost target is $1.90 per pound. That measure excludes idle-facility and restoration costs, which are expected to total about $1.2 billion in 2026. So falling unit costs would show better operating leverage, but not the full economic cost of restarting Grasberg."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$; scale and physical units shown in row labels",
+      "caption": "Guidance in force (US$; scale and physical units shown in row labels)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Projected consolidated sales volumes — copper (millions of recoverable pounds)",
+        "Year to Dec 2026",
+        "3,057",
+        "3,057",
+        "Aug 6, 2026"
+       ],
+       [
+        "Projected consolidated sales volumes — gold (thousands of recoverable ounces)",
+        "Year to Dec 2026",
+        "654",
+        "654",
+        "Aug 6, 2026"
+       ],
+       [
+        "Projected consolidated sales volumes — molybdenum (millions of recoverable pounds)",
+        "Year to Dec 2026",
+        "93",
+        "93",
+        "Aug 6, 2026"
+       ],
+       [
+        "Consolidated unit net cash costs (US$ per pound of copper)",
+        "Year to Dec 2026",
+        "1.90",
+        "1.90",
+        "Aug 6, 2026"
+       ],
+       [
+        "Capital expenditures — Total (US$ billions)",
+        "Year to Dec 2026",
+        "4.3",
+        "4.3",
+        "Aug 6, 2026"
+       ],
+       [
+        "PTFI production rates — approach full capacity",
+        "Year-end 2027",
+        "",
+        "",
+        "Oct 2, 2026"
+       ]
+      ],
+      "note": "Consolidated sales volumes include production from partly owned mines that also belongs to partners, not just the company."
+     }
+    },
+    {
+     "heading": "Has Freeport-McMoRan kept its recent promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "For 2025, the annual formula produced 99.6% of target. After work-related fatalities and the Grasberg mud rush, the compensation committee reduced Quirk’s and Adkerson’s awards to 66.7% of target. The longer-term 2023–2025 awards still paid 125% because they measured a different period and different results."
+      },
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Freeport also reported completing Bagdad’s autonomous-haulage conversion and restoring Indonesian smelter operations after the October 2024 fire. Those are real deliveries, though completion alone does not prove good returns or safe operations."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Freeport-McMoRan's eight-quarter revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter pattern shows an uneven rebound. Revenue and margins recovered from the December trough, but the March insurance gain and June insurance receipt belong to different accounting periods. Comparing those quarters without separating the timing would mistake settlement accounting for operating improvement."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "US$ millions",
+      "caption": "The last eight reported periods (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,029",
+        "6,234",
+        "5,633",
+        "6,972",
+        "7,582",
+        "5,728",
+        "5,720",
+        "6,790"
+       ],
+       [
+        "Gross margin",
+        "31.1%",
+        "26.5%",
+        "18.1%",
+        "30.7%",
+        "34.7%",
+        "26.3%",
+        "24.9%",
+        "31.1%"
+       ],
+       [
+        "Operating income",
+        "2,003",
+        "2,137",
+        "811",
+        "1,972",
+        "2,432",
+        "1,303",
+        "1,243",
+        "1,938"
+       ],
+       [
+        "Net income",
+        "984",
+        "881",
+        "406",
+        "674",
+        "772",
+        "352",
+        "274",
+        "526"
+       ],
+       [
+        "EPS, diluted",
+        "0.68",
+        "0.61",
+        "0.28",
+        "0.46",
+        "0.53",
+        "0.24",
+        "0.19",
+        "0.36"
+       ]
+      ],
+      "note": "The zero for interest paid does not mean the company paid no interest; its cash interest is included in cash from operations."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/fcx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FCX&src=seo-earnings"
+  }
+ },
+ "short_name": "Freeport-McMoRan",
+ "first_memo_date": "2026-10-15T20:59:48Z"
+}

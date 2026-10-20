@@ -1,0 +1,826 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FTS.TO",
+ "slug": "fts-to",
+ "company": "Fortis Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-16T04:18:52Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 77.52,
+ "price_date": "2026-10-15T20:00:00Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 268,
+  "tables": 27,
+  "words": 17023,
+  "sources": 182
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Fortis owns utilities that deliver electricity and gas through high-voltage lines, local wires and pipelines. It earns mainly by charging for access to those networks, while some businesses also generate, buy or sell the energy moving through them."
+ },
+ "sources": [
+  {
+   "title": "2025 dispositions",
+   "url": "https://www.sec.gov/Archives/edgar/data/1666175/000166617526000013/fts-20251231_d2.htm"
+  },
+  {
+   "title": "2022 financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1666175/000166617523000014/fts-20221231_d2.htm"
+  },
+  {
+   "title": "Fortis 2025 MD&A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1666175/000166617526000013/a2025annual-993mda.htm"
+  }
+ ],
+ "rivals": [
+  "NEE",
+  "DUK",
+  "AEP",
+  "D",
+  "XEL",
+  "EMA.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Fortis stock forecast",
+   "meta_description": "Fortis's weighted forecast reaches C$84.15 in October 2029, with 55% base, 25% bear and 20% bull probabilities.",
+   "opening": "Fortis's weighted forecast reaches C$84.15 in October 2029, with the base case receiving 55% probability. It hinges on timely TEP recovery and ITC construction.",
+   "closing": "The full memo also answers what Fortis's business, rivals, management and risks mean for the forecast.",
+   "blocks": [
+    {
+     "heading": "Where could Fortis's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The weighted path reaches C$76.97 in October 2027 and C$79.97 in October 2028. It reaches C$84.15 in October 2029, a 19% total return with dividends. The last-date range is C$57.47 to C$114.49. Today's price is C$77.52."
+      },
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires timely TEP recovery, firm large-load demand and on-schedule ITC construction. It reaches C$114.49 by October 2029 from C$90.91 in October 2027. Its probability is 20% because prospective demand remains conditional and some ITC projects are not yet under construction. The base case receives 55%: it requires plan delivery, not flawless execution, and is supported by regulated investment, analyst expectations and the dividend record."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 77.52, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 77.52, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "60.39 (-19 %)",
+        "57.03 (-20 %)",
+        "57.47 (-16 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "79.44 (+6 %)",
+        "82.33 (+13 %)",
+        "85.25 (+21 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "90.91 (+21 %)",
+        "102.15 (+39 %)",
+        "114.49 (+58 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "76.97 (+3 %)",
+        "79.97 (+10 %)",
+        "84.15 (+19 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Fortis?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The C$28.8 billion capital plan targets 7% annual rate-base growth, supporting the base path. The bear row reaches only C$2,084 million because rate lag, affordability limits, project delays and financing costs persist. The bull row reaches C$2,516 million because TEP recovery and ITC investment convert into earnings faster. TEP's rate decision is scheduled for November 17, 2026, making it a dated catalyst."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Fortis really make?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending is different because Fortis must pay contractors to build or renew networks. The result is negative free cash flow before dividends. Fortis also shows a stricter “real” free-cash-flow view by treating stock compensation as an economic cost. Interest paid is already reflected in operating cash, so subtracting it again would count the same outflow twice."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,062",
+        "3,882",
+        "3,545",
+        "3,074",
+        "2,907"
+       ],
+       [
+        "− Capital spending",
+        "6,234",
+        "5,218",
+        "4,169",
+        "3,865",
+        "3,386"
+       ],
+       [
+        "**= Free cash flow**",
+        "",
+        "",
+        "",
+        "-792",
+        "-481"
+       ],
+       [
+        "− Stock pay",
+        "150",
+        "82",
+        "66",
+        "41",
+        "100"
+       ],
+       [
+        "**= Real free cash flow**",
+        "",
+        "",
+        "",
+        "-833",
+        "-581"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Fortis today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E divides the share price by earnings per share, showing what investors pay for one dollar of profit attributable to each share. Trailing earnings cover the previous twelve months, while forward earnings are estimates of the next twelve. Fortis’s 2025 reported earnings included C$63 million of disposal losses. Adjusted EPS was C$3.53 rather than reported EPS of C$3.40, and the DRIP means future profit may be divided among more shares."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "77.52"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.0x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "6.1x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.3%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company's debt, while subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "77.52"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "84.15 (+19 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.0x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "22.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 77.52,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "60.39 (-19 %)",
+       "57.03 (-20 %)",
+       "57.47 (-16 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "79.44 (+6 %)",
+       "82.33 (+13 %)",
+       "85.25 (+21 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "90.91 (+21 %)",
+       "102.15 (+39 %)",
+       "114.49 (+58 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "76.97 (+3 %)",
+       "79.97 (+10 %)",
+       "84.15 (+19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/fts-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FTS.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Fortis dividend: cash coverage and yield",
+   "meta_description": "Fortis raises its dividend, but free cash flow does not cover construction and shareholder distributions on its own.",
+   "opening": "Fortis paid C$2.51 per share in 2025, up from C$2.08 in 2021, while its free cash flow was negative in 2021 and 2022. Operations alone did not fund both construction and shareholder distributions, so Fortis relied on borrowing, asset sales and shareholder capital.",
+   "closing": "The full memo also explains Fortis’s business, management, rivals and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Fortis pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue grew 5.8% in 2025 while operating margin was 28.7%; pass-through sales can rise without equal profit growth. Net debt rose from C$25,788 million in 2021 to C$34,267 million in 2025. The company’s own free cash flow was negative in 2021 and 2022. Dividends per share rose from C$2.08 in 2021 to C$2.51 in 2025. Diluted EPS rose from C$2.61 in 2021 to C$3.40 in 2025 as average diluted shares grew each year. Shares trade at 22.7x trailing P/E and 20.0x next-12-month P/E. The dividend yield is 3.3%, against a 0.0% buyback yield."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per common share",
+      "caption": "What one share gets (C$ per common share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "1.56",
+        "1.50",
+        "1.44",
+        "1.41",
+        "1.29"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "",
+        "",
+        "",
+        "3.20",
+        "2.43"
+       ]
+      ],
+      "note": "The company paid dividends and other cash even while its free cash flow was negative, so it paid out more than it generated."
+     }
+    },
+    {
+     "heading": "Is Fortis’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 93,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating cash flow pays for capital spending. Fortis’s free cash flow was negative in 2021 and 2022, so operations alone did not fund both construction and shareholder distributions. Fortis therefore relied on borrowing, asset sales and shareholder capital. That does not prove the projects were poor; it means their cash returns arrived later than their construction bills."
+      },
+      {
+       "n": 94,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends added to the financing pressure. A dividend-reinvestment plan lets shareholders use dividends to buy new Fortis shares instead of taking cash. Fortis says its plan offers a 2% discount, so participating shareholders help keep money inside the company while increasing the number of shares that will share future profits. Buybacks were zero in every year, which meant Fortis did not use cash to reduce its share count."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "",
+        "",
+        "",
+        "-792",
+        "-481"
+       ],
+       [
+        "− Dividends paid",
+        "788",
+        "744",
+        "701",
+        "673",
+        "608"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "1,531",
+        "1,147"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "",
+        "",
+        "",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": "The company's own net debt is slightly lower than ours because it counts current finance leases differently."
+     }
+    },
+    {
+     "heading": "What could change Fortis’s dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s C$28.8 billion 2026–2030 capital plan targets 7% annual rate-base growth. It targets 4%–6% annual dividend growth through 2030. Disposed businesses are expected to reduce 2026 EPS by C$0.05."
+      },
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at C$2.62 after a 4.4% increase from the latest C$2.51 annual payment. The base path reaches C$2.89 by October 2029, close to management's 4%–6% target. The bear case freezes the dividend after the first increase, while the bull reaches C$2.96 by applying the top of guidance as recovery improves. The five-year record shows increases every year, which supports growth but not an unlimited payout."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,061 (1,970 / 2,134)",
+        "2,169 (2,026 / 2,318)",
+        "2,280 (2,084 / 2,516)"
+       ],
+       [
+        "Dividends per share",
+        "2.62 (2.62 / 2.62)",
+        "2.75 (2.62 / 2.79)",
+        "2.89 (2.62 / 2.96)"
+       ],
+       [
+        "Price to earnings",
+        "20.00 (16.00 / 22.00)",
+        "20.00 (15.00 / 23.00)",
+        "20.00 (15.00 / 24.00)"
+       ]
+      ],
+      "note": "The price to earnings figure means investors are paying twenty Canadian dollars for each Canadian dollar the company earns."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.56"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per common share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.29",
+      "1.41",
+      "1.44",
+      "1.50",
+      "1.56"
+     ],
+     "Real free cash flow per share": [
+      "-1.23",
+      "-1.74",
+      "",
+      "",
+      ""
+     ],
+     "Free cash flow per share": [
+      "-1.02",
+      "-1.65",
+      "",
+      "",
+      ""
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/fts-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FTS.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Fortis earnings: guidance and what to watch",
+   "meta_description": "Fortis results are due November 3, 2026; guidance centers on investment, rate-base growth and dividends.",
+   "opening": "Fortis reports its next results on November 3, 2026. Watch whether Fortis turns planned spending into approved earning assets.",
+   "closing": "The full memo also answers what matters about Fortis's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Fortis guided for the year?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Fortis targets annual dividend growth of 4%–6% through 2030. It also expects disposed businesses to reduce 2026 EPS by C$0.05. The plan therefore requires Fortis to build assets, obtain recovery and grow earnings per share."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Five-year Capital Plan, annual amount",
+        "Year to Dec 2027",
+        "5,900",
+        "5,900",
+        "Feb 12, 2026"
+       ],
+       [
+        "Projected Rate Base",
+        "Year to Dec 2027",
+        "48,100",
+        "48,100",
+        "Feb 12, 2026"
+       ],
+       [
+        "Dividend growth guidance, 2026",
+        "Year to Dec 2026",
+        "4.0%",
+        "6.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Dividend growth guidance, 2027",
+        "Year to Dec 2027",
+        "4.0%",
+        "6.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Dilutive impact for the annual period (C$ per common share)",
+        "Year to Dec 2026",
+        "-0.05",
+        "-0.05",
+        "Jul 31, 2026"
+       ],
+       [
+        "Assumed U.S. dollar-to-Canadian dollar exchange rate",
+        "2026–2030 Capital Plan",
+        "1.35",
+        "1.35",
+        "Jul 31, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Fortis kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Fortis’s fourth-quarter dividend rose 4.1% in 2025, continuing 52 years of increases in dividends paid. Management reaffirmed 4–6% annual growth through 2030, but the missed cash-flow target shows that delivery was uneven. The fairest conclusion is therefore mixed: Fortis’s leaders have experience, exposure and a record of delivery, but shareholders still need to test how independently the board challenges them and how honestly performance is measured."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Fortis's recent results trend?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating cash rose sharply, yet capital spending remained higher. Tax-credit sales and payment timing strengthened the quarter, so the cash increase should not be projected mechanically. Across eight quarters, Canadian heating and Arizona cooling create visible seasonality. The right test is year-on-year and year-to-date growth followed by a regulatory check."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,931",
+        "3,403",
+        "3,079",
+        "2,938",
+        "2,815",
+        "3,338",
+        "2,949",
+        "2,771"
+       ],
+       [
+        "Operating income",
+        "804",
+        "955",
+        "868",
+        "871",
+        "800",
+        "953",
+        "864",
+        "814"
+       ],
+       [
+        "Net income",
+        "417",
+        "523",
+        "444",
+        "431",
+        "404",
+        "520",
+        "415",
+        "439"
+       ],
+       [
+        "EPS, diluted",
+        "0.78",
+        "0.99",
+        "0.83",
+        "0.81",
+        "0.76",
+        "1.00",
+        "0.79",
+        "0.85"
+       ],
+       [
+        "Cash from operations",
+        "1,129",
+        "1,103",
+        "1,018",
+        "1,027",
+        "804",
+        "1,213",
+        "962",
+        "1,338"
+       ],
+       [
+        "− Capital spending",
+        "1,664",
+        "1,548",
+        "1,694",
+        "1,453",
+        "1,544",
+        "1,543",
+        "1,693",
+        "1,300"
+       ]
+      ],
+      "note": "Net income includes money owed to preference shareholders, but earnings per share is only for common shareholders, so the two figures do not match exactly."
+     }
+    },
+    {
+     "heading": "What should Fortis watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Fortis will report third-quarter results and a new five-year capital outlook on November 3, 2026. The useful comparison is project by project: which costs more, which enters service later and which needs more equity. A larger spending total can hide slower delivery."
+      },
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Tucson Electric Power’s rate case is scheduled for a decision by November 17, 2026. It seeks an approximately 13% increase in annual revenue and more regular formula adjustments. The unresolved challenge to Arizona’s formula-rate authority could determine how long rising costs remain outside customer bills."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "2,931"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.78"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,771",
+      "2,949",
+      "3,338",
+      "2,815",
+      "2,938",
+      "3,079",
+      "3,403",
+      "2,931"
+     ],
+     "EPS, diluted": [
+      "0.85",
+      "0.79",
+      "1.00",
+      "0.76",
+      "0.81",
+      "0.83",
+      "0.99",
+      "0.78"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/fts-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FTS.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Fortis",
+ "first_memo_date": "2026-10-16T04:18:52Z"
+}

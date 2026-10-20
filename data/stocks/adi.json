@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ADI",
+ "slug": "adi",
+ "company": "Analog Devices, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T02:44:19Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 406.245,
+ "price_date": "2026-10-12T20:00:01Z",
+ "next_earnings": "2026-11-24",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 27,
+  "words": 16448,
+  "sources": 256
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Analog Devices makes chips that let equipment measure the physical world, work with what it measures, communicate, and use electricity. Its business is the movement of those chips from engineering choice to factory, customer, payment, and profit."
+ },
+ "sources": [
+  {
+   "title": "ADI 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628125000153/adi-20251101.htm"
+  },
+  {
+   "title": "ADI’s 2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628124000204/adi-20241102.htm"
+  },
+  {
+   "title": "2022 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628122000250/adi-20221029.htm"
+  }
+ ],
+ "rivals": [
+  "TXN",
+  "NXPI",
+  "MCHP",
+  "ON",
+  "STM",
+  "SWKS",
+  "QRVO",
+  "QCOM"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Analog Devices stock forecast",
+   "meta_description": "Analog Devices' weighted price reaches $496.19 in October 2029, with bear, base and bull scenarios shaped by demand, cash flow and valuation.",
+   "opening": "Analog Devices' weighted price is $496.19 in October 2029, a 26% gain, with 55% probability on the base case. It hinges on industrial and data-center demand growing as replenishment fades.",
+   "closing": "The full memo answers what Analog Devices does, how it compares with rivals, how management allocates capital, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Analog Devices' shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $387.33 in October 2027, a 3% loss including dividends. It rises to $443.44 in October 2028, a 12% gain. By October 2029, it reaches $496.19, a 26% gain. The three-year range runs from $288.18 to $763.01. Today’s price is $406.25. The base case has the highest probability at 55%. The bear case has 25%, and the bull case has 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 406.25, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 406.25, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "258.95 (-35 %)",
+        "265.69 (-32 %)",
+        "288.18 (-26 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "411.95 (+3 %)",
+        "455.95 (+15 %)",
+        "493.71 (+25 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "480.10 (+19 %)",
+        "631.23 (+58 %)",
+        "763.01 (+92 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "387.33 (-3 %)",
+        "443.44 (+12 %)",
+        "496.19 (+26 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Analog Devices, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base revenue path assumes industrial and data-center demand grow as replenishment fades. That follows recent evidence: industrial revenue grew 53% year over year, while communications grew 84%. The bear case assumes an initial revenue decline and slower recovery; the bull case assumes sustained AI infrastructure and industrial content growth."
+      },
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires a data-center pause and renewed customer inventory digestion. Lower shipments would expose fixed factory costs, weaken cash generation and compress the semiconductor multiple. It gives $258.95 in October 2027 and $288.18 in October 2029, including dividends. Its 25% probability reflects real inventory risk, but ADI’s design-ins and cash generation argue against making it the central path."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Analog Devices really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation supplies the final adjustment. ADI adds it back because employees receive equity rather than cash, but shareholders bear dilution unless repurchases offset the issuance. ADI returned 96% of its company-defined free cash flow to shareholders in fiscal 2025. The useful cash measure is therefore operating cash after factory investment and a considered allowance for stock-based dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Nov 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,812,202",
+        "3,852,529",
+        "4,817,634",
+        "4,475,402",
+        "2,735,069"
+       ],
+       [
+        "− Capital spending",
+        "533,552",
+        "730,463",
+        "1,261,463",
+        "699,308",
+        "343,676"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,278,650",
+        "3,122,066",
+        "3,556,171",
+        "3,776,094",
+        "2,391,393"
+       ],
+       [
+        "− Stock pay",
+        "321,560",
+        "262,710",
+        "299,823",
+        "323,487",
+        "243,611"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,957,090",
+        "2,859,356",
+        "3,256,348",
+        "3,452,607",
+        "2,147,782"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "35.9%",
+        "30.3%",
+        "26.5%",
+        "28.7%",
+        "29.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Analog Devices' earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E, or price-to-earnings ratio, says how much investors pay for one dollar of annual profit. ADI’s reported diluted EPS was $2.74 in fiscal Q3 2026, while adjusted EPS was $3.45. Adjusted EPS removes selected acquisition costs, transaction costs, special charges and taxes. The missing costs were real, even when amortization represented an earlier cash payment rather than new cash leaving the company."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "406.25"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "48.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "406.25"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "496.19 (+26 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 406.245,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "258.95 (-35 %)",
+       "265.69 (-32 %)",
+       "288.18 (-26 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "411.95 (+3 %)",
+       "455.95 (+15 %)",
+       "493.71 (+25 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "480.10 (+19 %)",
+       "631.23 (+58 %)",
+       "763.01 (+92 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "387.33 (-3 %)",
+       "443.44 (+12 %)",
+       "496.19 (+26 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/adi/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADI&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Analog Devices dividend",
+   "meta_description": "Analog Devices pays $1.10 quarterly; in 2025, dividends and buybacks left $189.599 million of free cash flow undistributed.",
+   "opening": "Analog Devices pays a quarterly dividend of $1.10, and its 2025 free cash flow covered its dividends, leaving $189.599 million undistributed after dividends and buybacks. Across fiscal 2021–2025, Analog Devices generated $17,124,374 thousand of free cash flow and paid shareholders $19,478,616 thousand.",
+   "closing": "The full Analog Devices memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Analog Devices pay per share?",
+     "paragraphs": [
+      {
+       "n": 88,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Debt activity partly recycled borrowing, although total debt still rose in 2025 while net debt fell as cash increased. The board later added a $10 billion buyback authorization, and the quarterly dividend rose to $1.10. Those commitments make the central test unavoidable: did the acquisitions and investments produce enough lasting cash for each remaining share?"
+      },
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base case from $4.84 per share to $5.85. The bear case holds at $4.40, the current annualized rate, while the bull case reaches $6.00. The base rate reflects the latest 11% increase and ADI’s record of 22 consecutive annual increases, but the board has not promised a fixed growth rate."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Nov 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "7.97",
+        "5.73",
+        "6.44",
+        "6.60",
+        "5.35"
+       ],
+       [
+        "FCF per share — the company's own count",
+        "8.61",
+        "6.26",
+        "7.03",
+        "7.22",
+        "5.96"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.87",
+        "3.60",
+        "3.32",
+        "2.95",
+        "2.76"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Analog Devices' cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow means operating cash after capital spending. Across fiscal 2021–2025, ADI generated $17,124,374 thousand of free cash flow. It paid shareholders $19,478,616 thousand, or $2,354,242 thousand more than that cash generation."
+      },
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025 ADI paid $1.924 billion in dividends and $2.165 billion in buybacks. That left $189.599 million of free cash flow undistributed. Buybacks can increase each remaining share’s ownership, but only if ADI does not overpay."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "Nov 2025",
+       "Nov 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,278,650",
+        "3,122,066",
+        "3,556,171",
+        "3,776,094",
+        "2,391,393"
+       ],
+       [
+        "− Dividends paid",
+        "1,924,413",
+        "1,795,459",
+        "1,679,106",
+        "1,544,552",
+        "1,109,344"
+       ],
+       [
+        "− Share buybacks",
+        "2,164,638",
+        "615,590",
+        "2,963,955",
+        "2,577,015",
+        "3,105,144"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "189,599",
+        "711,017",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "4,089,051",
+        "2,411,049",
+        "4,643,061",
+        "4,121,567",
+        "4,214,488"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "95.6%",
+        "77.2%",
+        "130.6%",
+        "109.1%",
+        "176.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Analog Devices' dividend?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The case strengthens with sustained data-center shipments and Empower adoption. Renewed inventory digestion or weaker factory loading would move it toward bear. The estimated November 24, 2026 results date is unconfirmed. Alif is expected to close before calendar year-end 2026; the $1.35 billion cash payment and December’s $900 million note maturity will test competing cash demands. Fiscal Q1 2027 brings a seasonal manufacturing shutdown and further cost increases. ADI’s investment case rests on demand converting into durable cash returns."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "4,522 (3,857 / 4,788)",
+        "5,054 (3,990 / 5,586)",
+        "5,586 (4,256 / 6,384)"
+       ],
+       [
+        "Dividends per share",
+        "4.84 (4.40 / 4.95)",
+        "5.32 (4.40 / 5.45)",
+        "5.85 (4.40 / 6.00)"
+       ],
+       [
+        "Net debt",
+        "11,715 (10,387 / 12,356)",
+        "11,126 (9,138 / 11,893)",
+        "10,042 (7,519 / 10,583)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Nov 2025",
+     "value": "3.87"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Oct 2021",
+     "Oct 2022",
+     "Oct 2023",
+     "Nov 2024",
+     "Nov 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.76",
+      "2.95",
+      "3.32",
+      "3.60",
+      "3.87"
+     ],
+     "Real free cash flow per share": [
+      "5.35",
+      "6.60",
+      "6.44",
+      "5.73",
+      "7.97"
+     ],
+     "Free cash flow per share": [
+      "5.96",
+      "7.22",
+      "7.03",
+      "6.26",
+      "8.61"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/adi/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADI&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Analog Devices earnings date",
+   "meta_description": "Analog Devices expects results on November 24, 2026, with revenue guidance of $4.2–$4.4 billion and adjusted EPS guidance of $3.71–$4.01.",
+   "opening": "Analog Devices' next results are expected on November 24, 2026. Watch whether revenue sustains the guided pace and both GAAP and adjusted profitability improve.",
+   "closing": "The full memo answers what Analog Devices makes, who its rivals are, how management is paid and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "What has Analog Devices guided for the quarter?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "ADI’s shares could deliver a 26% three-year gain if growth and margins hold as design wins convert and AI demand supports its products. Management guides for the quarter to October 2026 to revenue of $4.2–$4.4 billion. Adjusted EPS guidance is $3.71–$4.01; GAAP EPS guidance is $2.99–$3.29."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "4,200,000",
+        "4,400,000",
+        "Aug 19, 2026"
+       ],
+       [
+        "Earnings per share",
+        "Quarter to Oct 2026",
+        "2.99",
+        "3.29",
+        "Aug 19, 2026"
+       ],
+       [
+        "Adjusted earnings per share",
+        "Quarter to Oct 2026",
+        "3.71",
+        "4.01",
+        "Aug 19, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Analog Devices kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The company has also made promises that can be checked. Revenue grew 17% after Puccio expected a strong fiscal year. ADI returned 96% of free cash flow in fiscal 2025 and later reported returning more than 100% over the preceding twelve months. Free cash flow is operating cash after spending on equipment and facilities; dividends and buybacks return it to shareholders."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Analog Devices' last eight quarters showing?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose 39.6% from a year earlier and 11.0% from the preceding quarter. ADI also forecast fourth-quarter revenue of $4.3 billion plus or minus $100 million. The sequence of higher quarterly sales gives that forecast context, while keeping it a forecast."
+      },
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income and diluted EPS rose much faster than revenue because the comparison lacked the prior-year tax charge. Cash provided a firmer check: quarterly free cash flow also increased, though it fluctuated during the intervening quarters. Empower’s revenue and earnings were immaterial, so the acquisition did not explain the sales jump."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Aug 2026",
+       "May 2026",
+       "Jan 2026",
+       "Nov 2025",
+       "Aug 2025",
+       "May 2025",
+       "Feb 2025",
+       "Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,021,899",
+        "3,623,465",
+        "3,160,263",
+        "3,076,117",
+        "2,880,348",
+        "2,640,068",
+        "2,423,174",
+        "2,443,205"
+       ],
+       [
+        "Gross margin",
+        "67.3%",
+        "67.3%",
+        "64.7%",
+        "63.1%",
+        "62.1%",
+        "61.0%",
+        "59.0%",
+        "58.0%"
+       ],
+       [
+        "Operating income",
+        "1,612,969",
+        "1,379,680",
+        "997,026",
+        "945,212",
+        "818,028",
+        "677,944",
+        "491,313",
+        "569,392"
+       ],
+       [
+        "Net income",
+        "1,340,090",
+        "1,176,350",
+        "830,826",
+        "787,739",
+        "518,518",
+        "569,770",
+        "391,316",
+        "478,072"
+       ],
+       [
+        "EPS, diluted",
+        "2.74",
+        "2.40",
+        "1.69",
+        "1.60",
+        "1.04",
+        "1.14",
+        "0.78",
+        "0.96"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should people watch in Analog Devices' next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the fiscal year ending October 31, 2026, followed by the results announcement, currently estimated for November 24 but not confirmed. Investors should watch whether revenue sustains the guided pace and whether both GAAP and adjusted profitability improve."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 24, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Aug 2026 (US$ thousands)",
+     "value": "4,021,899"
+    },
+    {
+     "label": "EPS, diluted, quarter to Aug 2026",
+     "value": "2.74"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Nov 2024",
+     "Feb 2025",
+     "May 2025",
+     "Aug 2025",
+     "Nov 2025",
+     "Jan 2026",
+     "May 2026",
+     "Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,443,205",
+      "2,423,174",
+      "2,640,068",
+      "2,880,348",
+      "3,076,117",
+      "3,160,263",
+      "3,623,465",
+      "4,021,899"
+     ],
+     "EPS, diluted": [
+      "0.96",
+      "0.78",
+      "1.14",
+      "1.04",
+      "1.60",
+      "1.69",
+      "2.40",
+      "2.74"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/adi/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ADI&src=seo-earnings"
+  }
+ },
+ "short_name": "Analog Devices",
+ "first_memo_date": "2026-10-13T02:44:19Z"
+}

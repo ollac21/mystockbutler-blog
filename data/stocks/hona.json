@@ -1,0 +1,580 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HONA",
+ "slug": "hona",
+ "company": "Honeywell Aerospace Inc",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T15:04:33Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 168.09,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 25,
+  "words": 15101,
+  "sources": 141
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Honeywell Aerospace sells the systems that help aircraft navigate, move, generate power and stay under control. Its business is a long cycle: a sale can begin with a new aircraft and continue through decades of parts, repairs and upgrades."
+ },
+ "sources": [
+  {
+   "title": "information statement, page 143",
+   "url": "https://www.sec.gov/Archives/edgar/data/2089271/000162828026043193/exhibit991-informationstat.htm"
+  },
+  {
+   "title": "Honeywell Aerospace Q2 2026 earnings presentation",
+   "url": "https://investor.honeywellaerospace.com/static-files/cb580018-b467-4b8d-80da-0340674bba5e"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/2089271/000208927126000020/exhibit991q22026earningsre.htm"
+  }
+ ],
+ "rivals": [
+  "RTX",
+  "BA.L",
+  "GRMN",
+  "LHX",
+  "SAF.PA",
+  "TDY",
+  "HO.PA",
+  "GE",
+  "RR.L",
+  "PH",
+  "WWD"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Honeywell Aerospace stock forecast",
+   "meta_description": "Honeywell Aerospace stock forecast: weighted scenarios, operating drivers, free cash flow and valuation in plain English.",
+   "opening": "Honeywell Aerospace’s weighted forecast is $161.17 in October 2027 and $207.06 in October 2029, with 30% probability on bear, 52% on base and 18% on bull. It hinges on supplier recovery.",
+   "closing": "The full memo also covers Honeywell Aerospace’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Honeywell Aerospace's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast points to a modest near-term result and a stronger third-year outcome. The weighted price is $161.17 in October 2027, a 4% loss with dividends. It reaches $179.50 in October 2028, a 7% gain. By October 2029, it is $207.06, a 23% gain."
+      },
+      {
+       "n": 224,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The October 2029 bear value is $102.83. The bull value is $333.96, versus today’s $168.09. Bear has 30% probability and base has 52%. Bull has 18%. The range reflects execution risk around suppliers, margins, debt and cash generation."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 168.09, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 168.09, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "112.85 (-33 %)",
+        "106.06 (-37 %)",
+        "102.83 (-39 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "170.05 (+1 %)",
+        "190.27 (+13 %)",
+        "223.26 (+33 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "216.02 (+29 %)",
+        "270.80 (+61 %)",
+        "333.96 (+100 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "161.17 (-4 %)",
+        "179.50 (+7 %)",
+        "207.06 (+23 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Honeywell Aerospace?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $2,244 million, $2,248 million and $2,334 million. It assumes shortages persist, mix remains weak and recurring costs absorb more profit. The bull case gives $2,903 million, $3,297 million and $3,710 million because added capacity clears deferred demand and restores higher-margin service work. Q2 sales growth in aftermarket, commercial OE and defense supports recovery, but the guidance cut shows that execution remains uncertain."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Honeywell Aerospace really make?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is cash from operations after capital spending. Subtracting stock compensation gives a stricter view of cash left for debt, investment or shareholders. The historical pattern shows strong conversion, but one year can benefit from the timing of payments and inventory."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,705",
+        "2,538",
+        "2,984"
+       ],
+       [
+        "− Capital spending",
+        "504",
+        "488",
+        "387"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,201",
+        "2,050",
+        "2,597"
+       ],
+       [
+        "− Stock pay",
+        "83",
+        "74",
+        "73"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,118",
+        "1,976",
+        "2,524"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "17.9%",
+        "12.8%",
+        "18.3%"
+       ]
+      ],
+      "note": "The company's free cash flow is 59 million dollars higher because it leaves out cash paid for Flexjet lawsuits, while we count that cash as spent."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Honeywell Aerospace?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The table’s trailing P/E measures the price against the past twelve months’ earnings, while the forward P/E uses expected earnings for the next twelve months. The gap matters because it assumes earnings will recover. That recovery depends partly on selling more replacement parts, repairs and upgrades."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "168.09"
+       ],
+       [
+        "Market value (calculated)",
+        "53,276.58"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "35.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "21.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "6.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "5.9%"
+       ]
+      ],
+      "note": "The price-to-book figure is not meaningful because the company was recently separated, so its balance sheet does not yet show what this standalone company owns and owes."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "168.09"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "207.06 (+23 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "21.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 168.09,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "112.85 (-33 %)",
+       "106.06 (-37 %)",
+       "102.83 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "170.05 (+1 %)",
+       "190.27 (+13 %)",
+       "223.26 (+33 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "216.02 (+29 %)",
+       "270.80 (+61 %)",
+       "333.96 (+100 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "161.17 (-4 %)",
+       "179.50 (+7 %)",
+       "207.06 (+23 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/hona/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HONA&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Honeywell Aerospace earnings date and guidance",
+   "meta_description": "Honeywell Aerospace reports on October 28, 2026; guidance covers growth, adjusted EBIT, adjusted EPS and second-half free cash flow.",
+   "opening": "The next Honeywell Aerospace results are expected on October 28, 2026. Watch whether supplier recovery turns demand into higher-margin shipments and cash.",
+   "closing": "The full Honeywell Aerospace memo also answers how the business works, who its rivals are, how management is paid and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has Honeywell Aerospace guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "In August 2026, Honeywell cut its outlook after mechanical suppliers failed to ramp quickly enough. Its guidance calls for organic growth of 4.0%–5.0%, pro forma standalone adjusted EBIT of US$4,350–4,450 million and second-half free cash flow of US$1,000–1,500 million. Organic growth means sales growth from the existing business; EBIT is operating profit before interest and taxes; free cash flow is cash left after operations and equipment purchases."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "HONA can reach $207.06 by October 2029 if supplier recovery, aftermarket growth and cash generation improve, but the path first runs through a weaker near-term return. Management promises 4–5% organic growth, $4,350–$4,450 million of pro forma standalone adjusted EBIT and $7.60–$7.90 adjusted EPS for FY2026. It also expects $1,000–$1,500 million of free cash flow in H2 2026 and targets 6–8% annual organic growth through 2030."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic growth",
+        "FY2026",
+        "4.0%",
+        "5.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Pro forma standalone adjusted EBIT",
+        "FY2026",
+        "4,350",
+        "4,450",
+        "Aug 5, 2026"
+       ],
+       [
+        "Year-over-year growth",
+        "FY2026",
+        "0.0%",
+        "3.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Pro forma standalone adjusted earnings per share",
+        "FY2026",
+        "7.60",
+        "7.90",
+        "Aug 5, 2026"
+       ],
+       [
+        "Second half free cash flow",
+        "Second half 2026",
+        "1,000",
+        "1,500",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "The second-half free cash flow range excludes cash paid to settle the Flexjet matter, so it may be higher than the cash the company actually keeps."
+     }
+    },
+    {
+     "heading": "Did Honeywell Aerospace keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 110,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The legacy record offers some evidence of performance-based pay. Currier’s 2025 annual incentive payout was 125% of target under the former Honeywell plan, which combined financial results with individual and corporate-responsibility assessments. His August 2026 bridge award completed the remaining part of his annual long-term incentive target rather than exceeding it."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What happened to Honeywell Aerospace revenue and profit in the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue increased from Q2 2025 to Q2 2026, but gross margin, operating income and net income fell. The company said suppliers were still limiting output, so it directed scarce inventory toward lower-margin commercial OE and domestic defense rather than higher-margin aftermarket and international defense."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,522",
+        "4,352",
+        "4,508",
+        "4,533",
+        "4,289",
+        "4,074",
+        "4,027",
+        "3,876"
+       ],
+       [
+        "Gross margin",
+        "35.0%",
+        "37.5%",
+        "29.3%",
+        "36.6%",
+        "36.5%",
+        "37.4%",
+        "31.4%",
+        "36.0%"
+       ],
+       [
+        "Operating income",
+        "676",
+        "879",
+        "681",
+        "1,030",
+        "1,014",
+        "991",
+        "721",
+        "894"
+       ],
+       [
+        "Net income",
+        "246",
+        "634",
+        "422",
+        "644",
+        "844",
+        "777",
+        "564",
+        "728"
+       ],
+       [
+        "EPS, diluted",
+        "0.78",
+        "",
+        "",
+        "",
+        "2.66",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Free cash flow**",
+        "448",
+        "-362",
+        "",
+        "",
+        "615",
+        "176",
+        "",
+        ""
+       ]
+      ],
+      "note": "Blank cash flow and spending cells mean comparable business-specific numbers were unavailable, not that the company had no cash flow or spending."
+     }
+    },
+    {
+     "heading": "What should I watch in Honeywell Aerospace's next results?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "The real disagreement concerns timing. Honeywell says demand and backlog remain strong and that delayed production can be recovered. Analysts are allowing for the possibility that supplier problems defer sales for longer. The useful test is therefore not only an EPS beat, but stronger shipments without weaker margins or another cut to the outlook."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,522"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.78"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,876",
+      "4,027",
+      "4,074",
+      "4,289",
+      "4,533",
+      "4,508",
+      "4,352",
+      "4,522"
+     ],
+     "EPS, diluted": [
+      "",
+      "",
+      "",
+      "2.66",
+      "",
+      "",
+      "",
+      "0.78"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/hona/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HONA&src=seo-earnings"
+  }
+ },
+ "short_name": "Honeywell Aerospace",
+ "first_memo_date": "2026-10-18T15:04:33Z"
+}

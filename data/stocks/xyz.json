@@ -1,0 +1,622 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "XYZ",
+ "slug": "xyz",
+ "company": "Block, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T23:03:31Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 77.85,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 279,
+  "tables": 26,
+  "words": 17433,
+  "sources": 268
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Block, Inc. makes money move for consumers and businesses. Cash App helps people hold and use money, while Square helps sellers take payments and run their operations."
+ },
+ "sources": [
+  {
+   "title": "Block 2025 Form 10-K, Note 7 and consolidated financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026012254/xyz-20251231.htm"
+  },
+  {
+   "title": "impairments",
+   "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828025007376/sq-20241231.htm"
+  },
+  {
+   "title": "2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828024006354/sq-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "ADYEN.AS",
+  "PYPL",
+  "TOST",
+  "SHOP",
+  "FISV",
+  "GPN",
+  "FOUR",
+  "AFRM",
+  "LSPD",
+  "MELI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Block stock forecast",
+   "meta_description": "Block's weighted forecast is below today's price first, then slightly above it, hinging on growth, credit, compliance and cash-backed buybacks.",
+   "opening": "The weighted forecast is $66.69 (-14%) in October 2027 and reaches $79.75 (+2%) in October 2029. It hinges on growth, credit discipline, compliance costs and cash-backed buybacks.",
+   "closing": "The full memo also covers Block's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Block's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Block’s weighted value is below today at the first two dates, then roughly recovers by the third. The weighted price is $66.69 at the first date, down 14% with dividends. It rises to $72.78 at the second date, down 7%. At the third, it reaches $79.75, a 2% gain."
+      },
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case has a 30% probability. The base case has 50%; the bull case has 20%. The October 2029 range runs from $34.28 in the bear case to $141.94 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 77.85, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 77.85, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "47.50 (-39 %)",
+        "40.69 (-48 %)",
+        "34.28 (-56 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "68.42 (-12 %)",
+        "75.14 (-3 %)",
+        "82.15 (+6 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "91.14 (+17 %)",
+        "115.00 (+48 %)",
+        "141.94 (+82 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "66.69 (-14 %)",
+        "72.78 (-7 %)",
+        "79.75 (+2 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share value after giving each case the stated probability, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Block?",
+     "paragraphs": [
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weaker consumer and merchant demand, loan losses or compliance costs that absorb operating savings, and reduced buybacks. Investors then lower the multiple as growth and cash conversion disappoint. The price reaches $47.50 at the first date and $34.28 at the third. Its probability is 30% because recent losses and compliance exposure make sustained equity reduction credible, although historical equity growth argues against making it the central path."
+      },
+      {
+       "n": 275,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires faster Square adoption, deeper Cash App banking use, profitable mature loan cohorts and stronger productivity. Cash generation supports repurchases, while improved execution confidence expands the multiple. The price reaches $91.14 at the first date and $141.94 at the third. Its probability is 20% because the payoff is substantial, but product-level lending returns and durable seller-retention evidence remain limited."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Block really make?",
+     "paragraphs": [
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow usually means operating cash flow less capital spending. That measure improved strongly in 2025 because accounting earnings converted into cash and capital spending remained modest. Cash matters because reported profit cannot repay lenders or fund expansion until it arrives."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,579,714",
+        "1,707,350",
+        "100,961",
+        "175,903",
+        "847,830"
+       ],
+       [
+        "− Capital spending",
+        "155,038",
+        "153,947",
+        "151,151",
+        "170,815",
+        "134,320"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,424,676",
+        "1,553,403",
+        "-50,190",
+        "5,088",
+        "713,510"
+       ],
+       [
+        "− Stock pay",
+        "1,215,480",
+        "1,272,779",
+        "1,276,097",
+        "1,071,278",
+        "608,040"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,209,196",
+        "280,624",
+        "-1,326,287",
+        "-1,066,190",
+        "105,470"
+       ]
+      ],
+      "note": "The company's own free cash flow differs from ours because it uses different rules for counting lending and settlement cash movements, which can make its number look much higher or lower."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Block today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "77.85"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "139.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "77.85"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "79.75 (+2 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 77.85,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "47.50 (-39 %)",
+       "40.69 (-48 %)",
+       "34.28 (-56 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "68.42 (-12 %)",
+       "75.14 (-3 %)",
+       "82.15 (+6 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "91.14 (+17 %)",
+       "115.00 (+48 %)",
+       "141.94 (+82 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "66.69 (-14 %)",
+       "72.78 (-7 %)",
+       "79.75 (+2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/xyz/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=XYZ&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Block earnings: guidance and next results",
+   "meta_description": "Block's next results are due November 3, 2026; watch its 28% adjusted operating margin, customer activity and cash conversion.",
+   "opening": "Block's next results are scheduled for November 3, 2026. Watch whether Block delivered its 28% adjusted operating margin while expanding investment.",
+   "closing": "The full memo also explains Block’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Block guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to $12,510,000 thousand of 2026 gross profit, up 21%. It guides to $3,470,000 thousand of adjusted operating income, up 67%, at a 28% adjusted operating margin. Adjusted diluted EPS guidance is $4.02, up 70%. Longer term, management targets mid-teens annual gross-profit growth in 2027–2028 and about 30% annual adjusted operating-income growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Gross Profit",
+        "Year to Dec 2026",
+        "12,510,000",
+        "12,510,000",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Profit YoY Growth",
+        "Year to Dec 2026",
+        "21.0%",
+        "21.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Operating Income",
+        "Year to Dec 2026",
+        "3,470,000",
+        "3,470,000",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Operating Income YoY Growth",
+        "Year to Dec 2026",
+        "67.0%",
+        "67.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Operating Income % Margin",
+        "Year to Dec 2026",
+        "28.0%",
+        "28.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Diluted EPS",
+        "Year to Dec 2026",
+        "4.02",
+        "4.02",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Profit",
+        "Quarter to Sep 2026",
+        "3,130,000",
+        "3,130,000",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Profit YoY Growth",
+        "Quarter to Sep 2026",
+        "18.0%",
+        "18.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Operating Income",
+        "Quarter to Sep 2026",
+        "875,000",
+        "875,000",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Operating Income % Margin",
+        "Quarter to Sep 2026",
+        "28.0%",
+        "28.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted Diluted EPS",
+        "Quarter to Sep 2026",
+        "1.02",
+        "1.02",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "Some 2027 targets have blank numbers because the company gave only descriptions such as “mid-teens” or “low-30%,” not exact figures."
+     }
+    },
+    {
+     "heading": "Did Block keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management made one promise that can be checked. It said in February 2025 that it expected to exit that year at a Rule of 40 run rate. The measure adds gross-profit growth to adjusted operating margin. In the fourth quarter of 2025, growth was 24% and adjusted operating margin was 20%. Together, they cleared the 40-point test."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Block’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew from the prior year, while gross margin also improved. Gross profit rose broadly, with Cash App growing faster than Square. That combination is healthier than payment volume rising without additional retained profit."
+      },
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Reported operating income nevertheless fell, and net income fell more sharply. Contingencies, restructuring and other charges totalled $365,118 thousand in June 2026. Removing that category alone would raise operating income, but the category includes regulatory matters and impaired assets that may not be economically disposable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,617,687",
+        "6,056,847",
+        "6,252,478",
+        "6,114,952",
+        "6,054,457",
+        "5,771,796",
+        "6,032,561",
+        "5,975,801"
+       ],
+       [
+        "Gross margin",
+        "47.8%",
+        "48.0%",
+        "45.9%",
+        "43.5%",
+        "41.9%",
+        "39.7%",
+        "38.3%",
+        "37.6%"
+       ],
+       [
+        "Operating income",
+        "446,870",
+        "-171,990",
+        "485,371",
+        "409,440",
+        "484,293",
+        "329,302",
+        "13,013",
+        "323,009"
+       ],
+       [
+        "Net income attributable to common stockholders",
+        "88,517",
+        "-308,681",
+        "115,762",
+        "461,544",
+        "538,458",
+        "189,872",
+        "1,946,020",
+        "283,754"
+       ],
+       [
+        "EPS, diluted",
+        "0.15",
+        "-0.52",
+        "0.19",
+        "0.74",
+        "0.87",
+        "0.30",
+        "3.05",
+        "0.45"
+       ],
+       [
+        "**= Free cash flow**",
+        "966,609",
+        "935,021",
+        "579,800",
+        "1,400,410",
+        "343,012",
+        "101,454",
+        "-13,193",
+        "628,164"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Block’s next results?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next scheduled results date is November 3, 2026. The September-quarter report should show whether Block delivered its 28% adjusted operating margin while expanding investment. The important follow-through is customer activity and cash conversion: a launch matters financially only when customers return and the resulting income exceeds acquisition, servicing and credit costs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "6,617,687"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.15"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,975,801",
+      "6,032,561",
+      "5,771,796",
+      "6,054,457",
+      "6,114,952",
+      "6,252,478",
+      "6,056,847",
+      "6,617,687"
+     ],
+     "EPS, diluted": [
+      "0.45",
+      "3.05",
+      "0.30",
+      "0.87",
+      "0.74",
+      "0.19",
+      "-0.52",
+      "0.15"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/xyz/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=XYZ&src=seo-earnings"
+  }
+ },
+ "short_name": "Block",
+ "first_memo_date": "2026-10-18T23:03:31Z"
+}

@@ -1,0 +1,563 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ACN",
+ "slug": "acn",
+ "company": "Accenture plc",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:15:01Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 208.36,
+ "price_date": "2026-10-08T20:00:03Z",
+ "next_earnings": "2026-12-17",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 251,
+  "tables": 27,
+  "words": 16611,
+  "sources": 402
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Accenture is a large business-services company that helps organizations change how they work. Its customers pay for specialist people, technology and know-how, while Accenture pays the people and suppliers who deliver the result."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2026-10-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000037/q4fy26earnings8-kexhibit.htm"
+  },
+  {
+   "title": "2025 annual report, revenue recognition",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737325000217/acn-20250831.htm"
+  },
+  {
+   "title": "2024 Form 10-K, cash-flow statement",
+   "url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737324000278/acn-20240831.htm"
+  }
+ ],
+ "rivals": [
+  "IBM",
+  "CTSH",
+  "EPAM",
+  "DXC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "dividend": {
+   "type": "dividend",
+   "title": "Accenture dividend",
+   "meta_description": "Accenture dividend history, cash coverage, forecast changes and current yield against the share price.",
+   "opening": "Accenture's dividend is $6.84 a year at the declared $1.71 quarterly rate. FY2026 real free cash flow after stock-based pay was $9.52 billion, compared with $3.987 billion of dividends paid.",
+   "closing": "The full memo also explains Accenture's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Accenture pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend begins at $6.84, annualized from the declared $1.71 quarterly rate. The base case then grows it near 8% annually, supported by guided free cash flow of $11.0–$11.8 billion and $9.5 billion of capital return. The bear case uses roughly 3% growth after FY2027; the bull uses roughly 11%, requiring stronger recurring AI and cybersecurity work. FY2026 dividends of $3.987 billion provide a cash-return anchor."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ thousands",
+      "caption": "Results (US$ thousands)",
+      "head": [
+       "Row",
+       "Year to Aug 2026",
+       "Year to Aug 2025",
+       "Year to Aug 2024",
+       "Year to Aug 2023",
+       "Year to Aug 2022"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "8,367,056",
+        "7,678,433",
+        "7,264,787",
+        "6,871,557",
+        "6,877,169"
+       ],
+       [
+        "EPS, diluted",
+        "13.56",
+        "12.15",
+        "11.44",
+        "10.77",
+        "10.71"
+       ],
+       [
+        "Dividend per share",
+        "6.52",
+        "5.92",
+        "5.16",
+        "4.48",
+        "3.88"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Accenture's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 90,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends rose from US$2,457,306 thousand in fiscal 2022 to US$3,987,313 thousand in fiscal 2026. In fiscal 2025, dividends and buybacks represented 85.9% of real free cash flow; in fiscal 2024, they exceeded that year’s generation. Accenture also sold US$1,341,025 thousand of new shares in fiscal 2026. Debt later became more important, with $5 billion of senior unsecured notes outstanding by August 2025."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation was $2.1 billion. It is recorded as an expense but added back to operating cash because granting shares does not immediately use cash. Economically, however, the payment still transfers value from existing owners through dilution or through cash repurchases. Deducting it leaves a stricter free-cash-flow measure of $9.52 billion."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ thousands",
+      "caption": "Where the cash went (US$ thousands)",
+      "head": [
+       "Row",
+       "Year to Aug 2026",
+       "Year to Aug 2025",
+       "Year to Aug 2024",
+       "Year to Aug 2023",
+       "Year to Aug 2022"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "9,520,165",
+        "8,780,482",
+        "6,672,928",
+        "7,083,045",
+        "7,143,342"
+       ],
+       [
+        "Dividends paid",
+        "3,987,313",
+        "3,700,169",
+        "3,241,479",
+        "2,827,394",
+        "2,457,306"
+       ],
+       [
+        "Shares bought back",
+        "",
+        "3,843,504",
+        "3,795,773",
+        "3,639,243",
+        "3,156,919"
+       ],
+       [
+        "New shares sold",
+        "1,341,025",
+        "1,353,753",
+        "1,418,131",
+        "1,501,069",
+        "1,349,064"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "",
+        "85.9%",
+        "105.5%",
+        "91.3%",
+        "78.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Accenture's dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "During FY2027–FY2029, AI projects must move into production and generate repeat work at healthy prices rather than reduce paid hours and fees. In FY2027, the planned $8 billion of acquisition investment must produce follow-on work and cash returns while Accenture funds dividends and buybacks. FY2027 federal demand is expected to improve after reducing FY2026 growth; the test is whether this is a lasting recovery or mainly an easier comparison. The federal investigation and unresolved U.S.–Ireland tax agreement remain risks to earnings and cash following FY2026."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2027",
+       "FY2028",
+       "FY2029",
+       "FY2030"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "4.5 % (2.5 % / 6.0 %)",
+        "5.0 % (1.0 % / 8.0 %)",
+        "5.0 % (2.0 % / 8.0 %)",
+        "5.0 % (2.0 % / 7.0 %)"
+       ],
+       [
+        "Earnings per share",
+        "14.53 (13.48 / 15.07)",
+        "15.64 (13.28 / 17.13)",
+        "16.82 (13.18 / 19.39)",
+        "18.08 (13.23 / 21.52)"
+       ],
+       [
+        "Buybacks",
+        "5,400 (5,400 / 5,800)",
+        "5,500 (3,800 / 6,200)",
+        "5,700 (3,500 / 6,500)",
+        "5,900 (3,500 / 6,800)"
+       ],
+       [
+        "Dividend per share",
+        "6.84 (6.84 / 6.84)",
+        "7.39 (7.04 / 7.59)",
+        "7.98 (7.25 / 8.42)",
+        "8.62 (7.47 / 9.35)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Accenture's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash matters too. A 9.4% free-cash-flow yield and a 3.3% dividend yield provide useful starting measures, but acquisitions also consume cash. Buybacks can lift earnings per share without improving the business: Accenture expects its share count to fall about 3% in FY27, which could raise EPS about 3.1% if total profit stays unchanged."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "9.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Year to Aug 2022",
+     "Year to Aug 2023",
+     "Year to Aug 2024",
+     "Year to Aug 2025",
+     "Year to Aug 2026"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "13.72",
+      "14.09",
+      "13.54",
+      "17.19",
+      "18.82"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/acn/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ACN&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Accenture earnings: date, guidance and results",
+   "meta_description": "Accenture reports on December 17, 2026; guidance calls for 3.0%–6.0% local-currency growth, while AI, acquisitions and federal and tax risks matter.",
+   "opening": "Accenture's next results are expected on December 17, 2026. The key thing to watch is whether AI and acquisitions become recurring, profitable work while federal and tax risks remain contained.",
+   "closing": "The full memo covers Accenture's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Accenture guided for FY27?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Accenture helps clients change how they operate by designing, installing or running technology. It measures underlying growth in local currency so exchange rates do not disguise what clients actually bought: if a European client pays the same €1 million while the euro rises, dollar revenue increases even though the business did not. Management expects FY27 local-currency revenue growth of 3.0%–6.0%, with no material currency effect."
+      },
+      {
+       "n": 208,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The same distinction affects earnings per share. Management guides to $14.39–$14.81, but FY27 growth is 6.0%–9.0% against reported earnings and only 3.0%–6.0% against adjusted earnings. Accenture also expects its share count to fall about 3%, so buybacks can lift EPS even if total profit grows more slowly. Acquisitions are expected to add 2.0%–2.5% to growth, leaving an indicative underlying contribution of roughly 0.5–4 percentage points."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Revenues",
+        "Quarter to Nov 2026",
+        "18,950,000",
+        "19,600,000",
+        "Oct 1, 2026"
+       ],
+       [
+        "Revenue Growth (Local Currency)",
+        "Quarter to Nov 2026",
+        "2.0%",
+        "6.0%",
+        "Oct 1, 2026"
+       ],
+       [
+        "Foreign-Exchange Impact on Results",
+        "Quarter to Nov 2026",
+        "-1.0%",
+        "-1.0%",
+        "Oct 1, 2026"
+       ],
+       [
+        "Revenue Growth (Local Currency)",
+        "Year to Aug 2027",
+        "3.0%",
+        "6.0%",
+        "Oct 1, 2026"
+       ],
+       [
+        "Foreign-Exchange Impact on Results",
+        "Year to Aug 2027",
+        "0.0%",
+        "0.0%",
+        "Oct 1, 2026"
+       ],
+       [
+        "Operating Margin",
+        "Year to Aug 2027",
+        "15.9%",
+        "16.1%",
+        "Oct 1, 2026"
+       ],
+       [
+        "Diluted Earnings Per Share",
+        "Year to Aug 2027",
+        "14.39",
+        "14.81",
+        "Oct 1, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Aug 2027",
+        "11,000,000",
+        "11,800,000",
+        "Oct 1, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Accenture keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management’s fiscal 2026 results met or exceeded its original promises on revenue growth, adjusted earnings and shareholder returns. Diluted shares also fell, showing that repurchases did more than absorb new equity."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Accenture's revenue and profit done over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Profit requires adjustment. Reported EPS rose 46.2%, but the comparable increase was about 8.6% because the August 2025 quarter contained the full restructuring charge. Operating margin improved only modestly on that adjusted basis."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Quarter to Aug 2026",
+       "Quarter to May 2026",
+       "Quarter to Feb 2026",
+       "Quarter to Nov 2025",
+       "Quarter to Aug 2025",
+       "Quarter to May 2025",
+       "Quarter to Feb 2025",
+       "Quarter to Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "18,679,110",
+        "18,718,144",
+        "18,044,066",
+        "18,742,125",
+        "17,596,260",
+        "17,727,871",
+        "16,659,301",
+        "17,689,545"
+       ],
+       [
+        "Gross margin (calculated)",
+        "32.0%",
+        "32.8%",
+        "30.3%",
+        "33.1%",
+        "31.9%",
+        "32.9%",
+        "29.9%",
+        "32.9%"
+       ],
+       [
+        "Operating income",
+        "2,863,417",
+        "3,175,298",
+        "2,493,547",
+        "2,873,698",
+        "2,049,691",
+        "2,982,782",
+        "2,244,714",
+        "2,948,477"
+       ],
+       [
+        "Net income",
+        "1,991,267",
+        "2,338,989",
+        "1,825,239",
+        "2,211,561",
+        "1,413,963",
+        "2,197,501",
+        "1,788,075",
+        "2,278,894"
+       ],
+       [
+        "EPS, diluted",
+        "3.29",
+        "3.80",
+        "2.93",
+        "3.54",
+        "2.25",
+        "3.49",
+        "2.82",
+        "3.59"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Accenture's next results?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive test is whether AI and acquisitions become recurring, profitable work while federal and tax risks remain contained."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 17, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Aug 2026 (US$ thousands)",
+     "value": "18,679,110"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Aug 2026",
+     "value": "3.29"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Quarter to Nov 2024",
+     "Quarter to Feb 2025",
+     "Quarter to May 2025",
+     "Quarter to Aug 2025",
+     "Quarter to Nov 2025",
+     "Quarter to Feb 2026",
+     "Quarter to May 2026",
+     "Quarter to Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "17,689,545",
+      "16,659,301",
+      "17,727,871",
+      "17,596,260",
+      "18,742,125",
+      "18,044,066",
+      "18,718,144",
+      "18,679,110"
+     ],
+     "EPS, diluted": [
+      "3.59",
+      "2.82",
+      "3.49",
+      "2.25",
+      "3.54",
+      "2.93",
+      "3.80",
+      "3.29"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/acn/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ACN&src=seo-earnings"
+  }
+ },
+ "short_name": "Accenture",
+ "first_memo_date": "2026-10-10T02:15:01Z"
+}

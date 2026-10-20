@@ -1,0 +1,758 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BMO.TO",
+ "slug": "bmo-to",
+ "company": "Bank of Montreal",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "bank",
+ "country": "canada",
+ "memo_date": "2026-10-10T02:15:56Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 230.69,
+ "price_date": "2026-10-09T17:33:10Z",
+ "next_earnings": "2026-12-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 236,
+  "tables": 30,
+  "words": 19299,
+  "sources": 158
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Bank of Montreal, usually called BMO, is a financial business that earns money by helping people, companies and institutions store, borrow, invest and move it. To understand the bank, follow a dollar from funding, through the services it supports, to the costs and profit left behind."
+ },
+ "sources": [
+  {
+   "title": "Interim report — Q3 2026",
+   "url": "https://www.bmo.com/ir/qtrinfo/1/2026-q3/SuppQ326.pdf"
+  },
+  {
+   "title": "Q3 2026 margin tables",
+   "url": "https://www.sec.gov/Archives/edgar/data/927971/000092797126000108/q32026mda.htm"
+  },
+  {
+   "title": "September 15, 2026 CFO discussion",
+   "url": "https://www.bmo.com/ir/files/F26%20Files/BarclaysTranscript2026.pdf"
+  }
+ ],
+ "rivals": [
+  "RY.TO",
+  "TD.TO",
+  "BNS.TO",
+  "CM.TO",
+  "NA.TO",
+  "JPM",
+  "WFC",
+  "PNC",
+  "USB",
+  "FITB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "BMO stock forecast",
+   "meta_description": "BMO stock forecast: a probability-weighted outlook, case drivers, bank returns and what investors pay.",
+   "opening": "BMO’s probability-weighted forecast reaches C$259.63 by October 2029. It hinges on improving returns without a credit or funding setback.",
+   "closing": "The full BMO memo explains its business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "Where could BMO’s shares go?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The probability-weighted forecast reaches C$259.63 by October 2029, close to the C$260.18 base case. The bear case is C$164.28 and the bull case is C$377.30. The next tests are U.S. returns, deposits, fees, expenses and credit costs. BMO plans to report fiscal 2026 results on December 2, 2026. Transportation and Vendor Finance was expected to close in fiscal Q4 2026, and Moneris by the end of fiscal Q1 2027. Those sales must release capital without weakening growth."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 230.69, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 230.69, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "177.65 (-20 %)",
+        "168.11 (-21 %)",
+        "164.28 (-20 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "236.20 (+5 %)",
+        "247.24 (+14 %)",
+        "260.18 (+23 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "271.54 (+21 %)",
+        "319.25 (+45 %)",
+        "377.30 (+74 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "228.63 (+2 %)",
+        "241.86 (+11 %)",
+        "259.63 (+22 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for BMO?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if mortgage and consumer arrears push provisions higher during FY2027–FY2029, or if deposit competition compresses margins through FY2028. A missed U.S. return milestone would also slow buybacks and compress the multiple."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would gain support if adjusted ROE approaches 15% in FY2027, revenue grows faster than expenses through FY2028 and credit costs ease gradually. The bull case would become more credible if U.S. Banking reaches its 12.0% ROE target in FY2028 and dispositions release capital without reducing growth investment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does BMO really make?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend is useful only alongside capital strength. Deposits are money BMO owes customers, not spare cash: they fund loans and securities that must earn more than their funding costs, losses and operating expenses. BMO must retain enough capital to absorb shocks before distributing profit."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$",
+      "caption": "What one share gets (C$)",
+      "head": [
+       "Row",
+       "Year to Oct 2025",
+       "Year to Oct 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "11.44",
+        "9.51",
+        "5.76",
+        "19.99",
+        "11.58"
+       ],
+       [
+        "Dividend per share",
+        "6.44",
+        "6.12",
+        "5.80",
+        "5.44",
+        "4.24"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "4.70",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "Stock pay per share (calculated)",
+        "2.56",
+        "1.71",
+        "0.84",
+        "1.14",
+        "2.42"
+       ],
+       [
+        "Net share dilution (calculated)",
+        "-0.7%",
+        "2.5%",
+        "6.7%",
+        "2.6%",
+        "1.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for BMO today?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.2 — Against its own past",
+       "text": "Its reported P/E is 18.80, above the five fiscal year-end observations from 2021 through 2025. That history ranged from 6.3 to 18.2. The comparison is imperfect because acquisition-related gains made one year’s earnings unusually high, while the Bank of the West acquisition depressed another year’s earnings. A bank can look cheap when profit is temporarily inflated and expensive when profit is temporarily impaired."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "230.69"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.80x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.52x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.04x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "2.74x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "230.69"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "259.63 (+22 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "18.80x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.04x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 230.69,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "177.65 (-20 %)",
+       "168.11 (-21 %)",
+       "164.28 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "236.20 (+5 %)",
+       "247.24 (+14 %)",
+       "260.18 (+23 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "271.54 (+21 %)",
+       "319.25 (+45 %)",
+       "377.30 (+74 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "228.63 (+2 %)",
+       "241.86 (+11 %)",
+       "259.63 (+22 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bmo-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMO.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "BMO dividend: payout, coverage and yield",
+   "meta_description": "BMO's dividend answer covers its per-share payout, cash allocation, yield and the conditions that could change it.",
+   "opening": "BMO's current annualized dividend is C$6.84 per share, and the base case raises it from C$7.08 to C$8.25. BMO's figures do not present a simple free-cash-flow coverage ratio: in fiscal 2025, dividends and buybacks consumed 97.0% of earnings available to common shareholders, leaving C$247 million on the stated calculation.",
+   "closing": "The full memo explains BMO's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does BMO pay per share?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base case from C$7.08 per share to C$8.25. The starting reference is the current annualized dividend of C$6.84. This moderate increase fits BMO's history of annual dividend growth and its stated FY2028 payout target of 40% to 50%. The bear case holds the current rate first, then settles at C$6.50; the bull case reaches C$8.71 as stronger earnings and capital generation support faster increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$",
+      "caption": "What one share gets (C$)",
+      "head": [
+       "Row",
+       "Year to Oct 2025",
+       "Year to Oct 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "11.44",
+        "9.51",
+        "5.76",
+        "19.99",
+        "11.58"
+       ],
+       [
+        "Dividend per share",
+        "6.44",
+        "6.12",
+        "5.80",
+        "5.44",
+        "4.24"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "4.70",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does BMO's dividend come from cash it makes?",
+     "paragraphs": [
+      {
+       "n": 64,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Deposits and borrowing fund loans and securities, but shareholder capital absorbs losses. Over fiscal 2021–2025, BMO earned C$43,743 million for common shareholders, declared C$19,616 million in common dividends and bought back C$3,396 million of shares. It also sold C$6,777 million of new shares, mainly during the expansion years."
+      },
+      {
+       "n": 67,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The balance changed sharply in fiscal 2025. Dividends and buybacks consumed 97.0% of earnings available to common shareholders, leaving C$247 million on the stated calculation. But retained earnings can include one-off items. BMO’s reversal of an old M&I legal provision added C$834 million after tax in fiscal 2024. It preserved real capital, but it cannot be repeated as ordinary business income."
+      }
+     ],
+     "table": {
+      "title": "What it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "What it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Oct 2025",
+       "Year to Oct 2024",
+       "Year to Oct 2023",
+       "Year to Oct 2022",
+       "Year to Oct 2021"
+      ],
+      "rows": [
+       [
+        "Dividends declared on common shares",
+        "4,630",
+        "4,458",
+        "4,148",
+        "3,634",
+        "2,746"
+       ],
+       [
+        "Shares bought back",
+        "3,396",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "Kept to grow and to build capital (calculated)",
+        "247",
+        "2,474",
+        "-54",
+        "9,672",
+        "4,764"
+       ],
+       [
+        "Paid out with buybacks, share of net income available to common shareholders (calculated)",
+        "97.0%",
+        "64.3%",
+        "101.3%",
+        "27.3%",
+        "36.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change BMO's dividend?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if mortgage and consumer arrears push provisions higher during FY2027–FY2029, or if deposit competition compresses margins through FY2028. A missed U.S. return milestone would also slow buybacks and compress the multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is BMO's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend is useful only alongside capital strength. Deposits are money BMO owes customers, not spare cash: they fund loans and securities that must earn more than their funding costs, losses and operating expenses. BMO must retain enough capital to absorb shocks before distributing profit."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "230.69"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.80x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/bmo-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMO.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "BMO earnings date and guidance",
+   "meta_description": "BMO reports on December 2, 2026; guidance targets improving returns, faster revenue than costs, and stronger U.S. Banking results.",
+   "opening": "BMO's next results are expected on December 2, 2026. The key thing to watch is whether BMO's U.S. Banking returns improve with fee revenue, deposits, loan growth and expenses.",
+   "closing": "The full BMO memo also answers how BMO makes money, how it compares with rivals, how management is paid and challenged, and what risks could change the story.",
+   "blocks": [
+    {
+     "heading": "What has BMO guided for returns and growth?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Its main targets are adjusted return on equity of 15.0% and adjusted return on tangible common equity of 18.0% exiting fiscal 2027. ROE measures profit earned for each dollar of shareholders’ equity. ROTCE removes goodwill and certain intangible assets from that denominator, so the return is measured against a smaller base. “Adjusted” excludes selected unusual items, while “exiting” means reaching the target near year-end rather than earning it throughout the year."
+      },
+      {
+       "n": 185,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The operating plan is to grow revenue faster than costs. For fiscal 2028, BMO targets annual revenue growth of 6.0% and expense growth of 4.0%. The resulting operating leverage is two percentage points. It also targets 8.0% annual growth in pre-provision pre-tax profit, which measures operating earnings before loan-loss provisions and tax."
+      },
+      {
+       "n": 187,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The largest opportunity is U.S. Banking, where management targets a 12.0% ROE in fiscal 2028. The key question is how much of that target survives when credit losses become ordinary and repurchases slow."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "The period it covers",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Return on Equity",
+        "Exiting fiscal 2027",
+        "15.0%",
+        "15.0%",
+        "Sep 15, 2026"
+       ],
+       [
+        "Return on Tangible Common Equity",
+        "Exiting fiscal 2027",
+        "18.0%",
+        "18.0%",
+        "Sep 15, 2026"
+       ],
+       [
+        "Revenue CAGR",
+        "Fiscal 2028",
+        "6.0%",
+        "6.0%",
+        "Mar 26, 2026"
+       ],
+       [
+        "U.S. Banking, ROE",
+        "Fiscal 2028",
+        "12.0%",
+        "12.0%",
+        "Mar 26, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has BMO kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 96,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There was progress in fiscal 2025. Adjusted operating leverage was 4.3%, above the objective of at least 2%. Operating leverage means revenue grew faster than expenses, leaving more room for profit. But adjusted ROE was 11.3%, below the objective of 15% or more. BMO now aims to reach 15% ROE as it exits fiscal 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is BMO's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The quarter also contained smaller disposal, Burgundy and acquisition costs, while BMO’s adjusted EPS was C$3.96. Net interest income rose only modestly, so other income drove most of the revenue increase. Credit provisions fell, impaired balances improved and CET1 remained stable. This was operating progress accompanied by an acquisition-value loss."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jul 2026",
+       "Quarter to Apr 2026",
+       "Quarter to Jan 2026",
+       "Quarter to Oct 2025",
+       "Quarter to Jul 2025",
+       "Quarter to Apr 2025",
+       "Quarter to Jan 2025",
+       "Quarter to Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "9,896",
+        "9,567",
+        "9,824",
+        "9,341",
+        "8,988",
+        "8,679",
+        "9,266",
+        "8,957"
+       ],
+       [
+        "Net interest income",
+        "5,567",
+        "5,268",
+        "5,643",
+        "5,496",
+        "5,496",
+        "5,097",
+        "5,398",
+        "5,438"
+       ],
+       [
+        "Net income",
+        "1,748",
+        "2,626",
+        "2,490",
+        "2,288",
+        "2,327",
+        "1,960",
+        "2,134",
+        "2,301"
+       ],
+       [
+        "EPS, diluted",
+        "2.38",
+        "3.53",
+        "3.39",
+        "2.97",
+        "3.14",
+        "2.50",
+        "2.83",
+        "2.94"
+       ],
+       [
+        "Net interest margin",
+        "1.6%",
+        "1.6%",
+        "1.7%",
+        "1.7%",
+        "1.7%",
+        "1.6%",
+        "1.6%",
+        "1.7%"
+       ],
+       [
+        "CET1 capital ratio",
+        "13.0%",
+        "13.0%",
+        "13.1%",
+        "13.3%",
+        "13.5%",
+        "13.5%",
+        "13.6%",
+        "13.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jul 2026 (C$ millions)",
+     "value": "9,896"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jul 2026",
+     "value": "2.38"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Quarter to Oct 2024",
+     "Quarter to Jan 2025",
+     "Quarter to Apr 2025",
+     "Quarter to Jul 2025",
+     "Quarter to Oct 2025",
+     "Quarter to Jan 2026",
+     "Quarter to Apr 2026",
+     "Quarter to Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,957",
+      "9,266",
+      "8,679",
+      "8,988",
+      "9,341",
+      "9,824",
+      "9,567",
+      "9,896"
+     ],
+     "EPS, diluted": [
+      "2.94",
+      "2.83",
+      "2.50",
+      "3.14",
+      "2.97",
+      "3.39",
+      "3.53",
+      "2.38"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bmo-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMO.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "BMO",
+ "first_memo_date": "2026-10-10T02:15:56Z"
+}

@@ -1,0 +1,819 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "KO",
+ "slug": "ko",
+ "company": "The Coca-Cola Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-11T20:20:44Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 88.05,
+ "price_date": "2026-10-09T20:00:02Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 258,
+  "tables": 25,
+  "words": 17881,
+  "sources": 238
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Coca-Cola is a drinks company that owns beverage brands and formulas and gets many of its products to consumers through local bottling partners. Its business makes most sense when we follow both sides of the model: what it sells and how money moves through the system."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+  },
+  {
+   "title": "Investor presentation — 2022-02-22",
+   "url": "https://investors.coca-colacompany.com/_assets/_0569507137879c67e42bf418e0a50d8a/cocacolacompany/db/857/10966/file/2022_CAGNY_2.21.pdf"
+  },
+  {
+   "title": "Earnings release — 2026-02-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026006642/a2025q4earningsreleaseex-9.htm"
+  }
+ ],
+ "rivals": [
+  "PEP",
+  "KDP",
+  "MNST",
+  "CELH",
+  "FIZZ",
+  "PRMB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Coca-Cola stock forecast",
+   "meta_description": "Coca-Cola's stock forecast is essentially flat after one year and up modestly after three, hinging on demand, cash conversion and valuation.",
+   "opening": "The weighted forecast is $85.71 in October 2027 and $88.20 in October 2029, with roughly 0% return and 8% return. It hinges on demand, cash conversion and a sustained valuation premium.",
+   "closing": "The full memo answers how Coca-Cola makes money, who its rivals are, how management is executing, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Coca-Cola's shares go?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is essentially flat after one year and up modestly after three, hinging on demand, cash conversion and a sustained valuation premium. The weighted price is $85.71 in October 2027, with roughly 0% return. It reaches $88.20 in October 2029, with 8% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 88.05, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 88.05, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "68.16 (-20 %)",
+        "61.47 (-25 %)",
+        "58.05 (-27 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "87.74 (+2 %)",
+        "90.05 (+7 %)",
+        "92.40 (+13 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "102.08 (+18 %)",
+        "108.90 (+29 %)",
+        "114.34 (+38 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "85.71 (-0 %)",
+        "86.68 (+3 %)",
+        "88.20 (+8 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Coca-Cola?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Persistent volume growth and better cash conversion support the bull case; fading event-supported demand, weaker affordability or heavier cash demands push toward the bear case. The October 27, 2026 third-quarter report tests finished-drink volume and its relationship with concentrate shipments. Webster’s fairlife ramp through the rest of 2026 tests capacity; Coopersville’s new lines target production in 2028. The IRS appeal tests the cash cushion: Coca-Cola estimated about $14 billion of additional tax and interest exposure at December 2025, with about $900 million added during the first half of 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Coca-Cola really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, Coca-Cola generated $7,408 million from operations and spent $2,112 million on capital investment, leaving free cash flow of $5,296 million. Profit and cash differ because accounting recognizes earnings when rules require, while cash flow records when money moves."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based compensation is real compensation even though it does not require immediate cash. Subtracting $279 million from 2025 free cash flow gives the essay’s analytical “real free cash flow.” Both views matter: cash actually left after exceptional payments, and recurring cash generation before them."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,408",
+        "6,805",
+        "11,599",
+        "11,018",
+        "12,625"
+       ],
+       [
+        "− Capital spending",
+        "2,112",
+        "2,064",
+        "1,852",
+        "1,484",
+        "1,367"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,296",
+        "4,741",
+        "9,747",
+        "9,534",
+        "11,258"
+       ],
+       [
+        "− Stock pay",
+        "279",
+        "286",
+        "254",
+        "356",
+        "337"
+       ],
+       [
+        "**= Real free cash flow**",
+        "5,017",
+        "4,455",
+        "9,493",
+        "9,178",
+        "10,921"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Coca-Cola today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Coca-Cola’s current valuation pays a premium for dependable earnings, while its cash return looks modest."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "88.05"
+       ],
+       [
+        "Market value (calculated)",
+        "378,839"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "406,011"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "26.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "88.05"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "88.20 (+8 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 88.05,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "68.16 (-20 %)",
+       "61.47 (-25 %)",
+       "58.05 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "87.74 (+2 %)",
+       "90.05 (+7 %)",
+       "92.40 (+13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "102.08 (+18 %)",
+       "108.90 (+29 %)",
+       "114.34 (+38 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "85.71 (-0 %)",
+       "86.68 (+3 %)",
+       "88.20 (+8 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ko/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Coca-Cola dividend: payout and coverage",
+   "meta_description": "Coca-Cola's dividend rises in the forecast, while 2025 dividends exceeded reported free cash flow.",
+   "opening": "Coca-Cola's base-case dividend rises from $2.18 to $2.36 per share across the forecast. Its dividend exceeded reported free cash flow in 2025.",
+   "closing": "The full Coca-Cola memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Coca-Cola pay per share?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base case from $2.18 to $2.36 per share across the dates. The bear case freezes the current $2.12 annualized rate, while the bull case reaches $2.43. The base path follows five consecutive annual increases and guided free cash flow of $12.4 billion, but the freeze remains credible because dividends exceeded reported free cash flow in 2025."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "15,080 (13,970 / 15,645)",
+        "15,772 (13,930 / 16,650)",
+        "16,498 (13,890 / 17,758)"
+       ],
+       [
+        "Shares (millions)",
+        "4,297 (4,304 / 4,292)",
+        "4,291 (4,306 / 4,281)",
+        "4,285 (4,307 / 4,271)"
+       ],
+       [
+        "Dividends per share",
+        "2.18 (2.12 / 2.20)",
+        "2.27 (2.12 / 2.31)",
+        "2.36 (2.12 / 2.43)"
+       ],
+       [
+        "Price to earnings",
+        "25.00 (21.00 / 28.00)",
+        "24.50 (19.00 / 28.00)",
+        "24.00 (18.00 / 27.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Coca-Cola's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is operating cash left after spending on property, plants and equipment. In 2025, dividends and buybacks exceeded that amount. The company could still pay them because it had cash from earlier years, asset sales and financing. That choice supports shareholders, but it leaves less internally generated cash for acquisitions, debt reduction or new factories."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, Coca-Cola generated $7,408 million from operations and spent $2,112 million on capital investment, leaving free cash flow of $5,296 million. Profit and cash differ because accounting recognizes earnings when rules require, while cash flow records when money moves."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "5,296",
+        "4,741",
+        "9,747",
+        "9,534",
+        "11,258"
+       ],
+       [
+        "− Dividends paid",
+        "8,779",
+        "8,359",
+        "7,952",
+        "7,616",
+        "7,252"
+       ],
+       [
+        "− Share buybacks",
+        "746",
+        "1,795",
+        "2,289",
+        "1,418",
+        "111"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "449",
+        "3,852"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "179.9%",
+        "214.2%",
+        "105.1%",
+        "94.8%",
+        "65.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Coca-Cola's dividend?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Cash evidence would also matter. A larger tax burden or heavier investment would reduce buybacks and debt reduction, while stronger conversion would support both dividends and repurchases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Coca-Cola's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Coca-Cola’s current valuation pays a premium for dependable earnings, while its cash return looks modest."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "88.05"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "26.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.04"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.67",
+      "1.75",
+      "1.83",
+      "1.93",
+      "2.04"
+     ],
+     "Real free cash flow per share": [
+      "2.52",
+      "2.11",
+      "2.19",
+      "1.03",
+      "1.16"
+     ],
+     "Free cash flow per share": [
+      "2.59",
+      "2.19",
+      "2.25",
+      "1.10",
+      "1.23"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ko/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Coca-Cola earnings date and guidance",
+   "meta_description": "Coca-Cola reports next on October 27, 2026; 2026 guidance calls for 5.0% organic revenue growth and 9.0%–10.0% comparable EPS growth.",
+   "opening": "Coca-Cola's next results are expected on October 27, 2026. Watch finished-drink volume beside concentrate sales.",
+   "closing": "The full memo also answers how Coca-Cola makes money, who its rivals are, how Coca-Cola is managed, and what risks Coca-Cola faces.",
+   "blocks": [
+    {
+     "heading": "What has Coca-Cola guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Guidance is management’s forecast, not a guarantee. Coca-Cola now expects 5.0% organic revenue growth, meaning growth from the continuing business after removing currency and portfolio changes. It expects comparable earnings per share to rise 9.0%–10.0%; against 2025 comparable earnings of $3.00 per share, that implies about $3.27–$3.30."
+      },
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management expects $14,600 million from operations and $2,200 million of capital spending, leaving about $12,400 million of free cash flow. That is cash remaining after long-lived investments such as production lines."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic revenues (non-GAAP)",
+        "Year to Dec 2026",
+        "5.0%",
+        "5.0%",
+        "July 28, 2026"
+       ],
+       [
+        "Underlying effective tax rate (non-GAAP)",
+        "Year to Dec 2026",
+        "19.9%",
+        "19.9%",
+        "July 28, 2026"
+       ],
+       [
+        "Comparable currency neutral EPS excluding acquisitions and divestitures (non-GAAP)",
+        "Year to Dec 2026",
+        "7.0%",
+        "8.0%",
+        "July 28, 2026"
+       ],
+       [
+        "Comparable EPS (non-GAAP)",
+        "Year to Dec 2026",
+        "9.0%",
+        "10.0%",
+        "July 28, 2026"
+       ],
+       [
+        "Free cash flow (non-GAAP)",
+        "Year to Dec 2026",
+        "12,400",
+        "12,400",
+        "July 28, 2026"
+       ],
+       [
+        "Cash from operations",
+        "Year to Dec 2026",
+        "14,600",
+        "14,600",
+        "July 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Coca-Cola keep its 2025 promise?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Coke delivered 5% organic revenue growth in 2025, at the low end of its promise, while global unit-case volume was flat. Organic growth removes currency and acquisition effects. Revenue can therefore rise through higher prices or a more expensive product mix even when the number of drinks sold does not."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Coca-Cola's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose 6.7% year over year, while operating income, net income and diluted EPS all increased. Displayed EPS growth was 17.0%, though Coca-Cola’s headline percentage uses unrounded figures. The more important operating evidence was that global unit-case volume grew 5%, while concentrate sales grew 4% and price/mix grew 2%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "13,380",
+        "12,472",
+        "11,822",
+        "12,455",
+        "12,535",
+        "11,129",
+        "11,544",
+        "11,854"
+       ],
+       [
+        "Operating income",
+        "4,672",
+        "4,359",
+        "1,841",
+        "3,982",
+        "4,280",
+        "3,659",
+        "2,709",
+        "2,510"
+       ],
+       [
+        "Net income",
+        "4,425",
+        "3,924",
+        "2,271",
+        "3,696",
+        "3,810",
+        "3,330",
+        "2,195",
+        "2,848"
+       ],
+       [
+        "EPS, diluted",
+        "1.03",
+        "0.91",
+        "0.53",
+        "0.86",
+        "0.88",
+        "0.77",
+        "0.51",
+        "0.66"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,104",
+        "1,755",
+        "2,874",
+        "4,564",
+        "3,369",
+        "-5,511",
+        "3,148",
+        "-1,728"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should people watch in Coca-Cola's next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is October 27, 2026, when Coca-Cola reports its third quarter. Watch finished-drink volume beside concentrate sales. In the second quarter, volume rose 5.0% while concentrate sales rose 4.0%, because bottlers’ shipments follow a different timetable."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "13,380"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "1.03"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,854",
+      "11,544",
+      "11,129",
+      "12,535",
+      "12,455",
+      "11,822",
+      "12,472",
+      "13,380"
+     ],
+     "EPS, diluted": [
+      "0.66",
+      "0.51",
+      "0.77",
+      "0.88",
+      "0.86",
+      "0.53",
+      "0.91",
+      "1.03"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ko/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KO&src=seo-earnings"
+  }
+ },
+ "short_name": "Coca-Cola",
+ "first_memo_date": "2026-10-11T20:20:44Z"
+}

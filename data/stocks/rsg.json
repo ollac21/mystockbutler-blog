@@ -1,0 +1,832 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "RSG",
+ "slug": "rsg",
+ "company": "Republic Services, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T19:47:28Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 231.54,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 27,
+  "words": 17145,
+  "sources": 280
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Republic Services is a company that turns a messy physical problem—discarded material—into a chain of paid services. It collects waste, moves it, recovers what it can, and charges for the work and facilities that handle the rest."
+ },
+ "sources": [
+  {
+   "title": "The 2025 annual report lists those costs by year",
+   "url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000094/rsg-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000093/exhibit991q42025.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039125000081/exhibit991q42024.htm"
+  }
+ ],
+ "rivals": [
+  "WM",
+  "WCN",
+  "GFL",
+  "CLH",
+  "CWST",
+  "VIE.PA",
+  "NVRI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Republic Services stock forecast",
+   "meta_description": "Republic Services stock forecast: weighted scenarios, cash generation, risks and valuation in plain English.",
+   "opening": "The weighted forecast sees $229.93 in October 2027 and $249.26 in October 2029, including dividends. It hinges on pricing and acquisitions offsetting weak volume.",
+   "closing": "The full memo also answers how Republic Services makes money, how it compares with rivals, how management allocates capital, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Republic Services shares go?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast sees little near-term upside, followed by a modest return if Republic delivers the base case. The weighted price is $229.93 in October 2027, a 0% return including dividends. It reaches $238.54 in October 2028, a 5% return, and $249.26 in October 2029, an 11% return. The 2029 range is wide: $161.35 in the bear case to $362.54 in the bull case, against today’s $231.54."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probabilities are bear 30%, base 55% and bull 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 231.54, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 231.54, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "190.59 (-17 %)",
+        "174.82 (-22 %)",
+        "161.35 (-27 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "241.37 (+5 %)",
+        "253.17 (+12 %)",
+        "266.31 (+19 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "266.64 (+16 %)",
+        "312.32 (+37 %)",
+        "362.54 (+60 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "229.93 (+0 %)",
+        "238.54 (+5 %)",
+        "249.26 (+11 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Republic Services?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path uses $5,390 million of October 2027 EBITDA, then $5,469 million and $5,619 million. Weak construction, residential contract exits and project-sensitive Environmental Solutions outweigh pricing. The bull path uses $5,904 million, then $6,475 million and $7,075 million, assuming volume recovery, productivity, integration and polymer operations improve."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "5,745 (5,390 / 5,904)",
+        "6,038 (5,469 / 6,475)",
+        "6,345 (5,619 / 7,075)"
+       ],
+       [
+        "Shares (millions)",
+        "304 (305 / 303)",
+        "301 (303 / 300)",
+        "299 (302 / 297)"
+       ],
+       [
+        "Dividends per share",
+        "2.73 (2.68 / 2.73)",
+        "2.90 (2.70 / 2.93)",
+        "3.08 (2.78 / 3.13)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "15.20 (13.50 / 16.00)",
+        "15.00 (12.50 / 16.50)",
+        "14.80 (11.50 / 17.00)"
+       ],
+       [
+        "Net debt",
+        "14,069 (14,700 / 13,700)",
+        "14,369 (15,350 / 13,150)",
+        "14,369 (15,900 / 12,500)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Republic Services really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The basic free-cash-flow test subtracts property and equipment spending from operating cash. That spending includes maintenance and growth projects, such as landfill cells and recycling facilities, so the statement does not reveal perfectly which dollars are optional. Subtracting stock pay gives a stricter owner-focused measure because stock compensation can dilute shareholders even when it uses no current cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,296",
+        "3,936",
+        "3,618",
+        "3,190",
+        "2,786.7"
+       ],
+       [
+        "− Capital spending",
+        "1,887",
+        "1,855",
+        "1,631",
+        "1,454",
+        "1,316.3"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,409",
+        "2,081",
+        "1,987",
+        "1,736",
+        "1,470.4"
+       ],
+       [
+        "− Stock pay",
+        "53",
+        "42",
+        "41",
+        "39",
+        "57.0"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,356",
+        "2,039",
+        "1,946",
+        "1,697",
+        "1,413.4"
+       ]
+      ],
+      "note": "The company's own free cash flow is usually higher because it leaves out some cash costs or counts some cash received that our count includes differently."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Republic Services?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after selected operating investments, not after every obligation. Republic must replace trucks, build landfill cells, meet environmental requirements, service debt, pay dividends, and fund acquisitions. Enterprise value adds debt to the value assigned by shareholders, less cash, so it measures the operating business before lenders are paid."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "231.54"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "249.26 (+11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "28.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 231.54,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "190.59 (-17 %)",
+       "174.82 (-22 %)",
+       "161.35 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "241.37 (+5 %)",
+       "253.17 (+12 %)",
+       "266.31 (+19 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "266.64 (+16 %)",
+       "312.32 (+37 %)",
+       "362.54 (+60 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "229.93 (+0 %)",
+       "238.54 (+5 %)",
+       "249.26 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/rsg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RSG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Republic Services dividend",
+   "meta_description": "Republic Services paid $2.41 per share in 2025; see how free cash flow, buybacks, forecast risks, and today’s yield shape the dividend.",
+   "opening": "Republic Services paid $2.41 per share in dividends in 2025. Free cash flow is measured after property and equipment spending, then compared with dividends, buybacks, and the cash left over.",
+   "closing": "The full memo also examines the business, rivals, management, and risks of Republic Services.",
+   "blocks": [
+    {
+     "heading": "How much does Republic Services pay per share?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises to $2.725 per share in October 2027. It reaches $2.905 in 2028 and $3.085 in 2029. The assumed quarterly increase is close to the latest raise, while annual dividends rose from $1.77 in 2021 to $2.41 in 2025. The bear pauses first and reaches $2.78. The bull assumes larger raises and reaches $3.13."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count change",
+      "caption": "What one share gets (US$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "2.36",
+        "2.18",
+        "2.01",
+        "1.87",
+        "1.73"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.79",
+        "1.53",
+        "0.83",
+        "0.64",
+        "0.79"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "2.56",
+        "2.90",
+        "3.43",
+        "2.96",
+        "1.98"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it adds its chosen cash adjustments, while our real free cash flow per share also subtracts shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is Republic Services' dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The basic free-cash-flow test subtracts property and equipment spending from operating cash. That spending includes maintenance and growth projects, such as landfill cells and recycling facilities, so the statement does not reveal perfectly which dollars are optional. Subtracting stock pay gives a stricter owner-focused measure because stock compensation can dilute shareholders even when it uses no current cash."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Adjusted free cash flow is Republic’s customized version of that calculation. It may add back selected restructuring payments or recoveries, but it still excludes debt service and dividends. It is useful for comparison, not the same as cash freely available to owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,409",
+        "2,081",
+        "1,987",
+        "1,736",
+        "1,470.4"
+       ],
+       [
+        "− Dividends paid",
+        "738",
+        "687",
+        "638",
+        "593",
+        "552.6"
+       ],
+       [
+        "− Share buybacks",
+        "870",
+        "482",
+        "262",
+        "203",
+        "252.2"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "800",
+        "912",
+        "1,087",
+        "939",
+        "632.4"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "66.7%",
+        "56.2%",
+        "45.3%",
+        "45.9%",
+        "54.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Republic Services' dividend?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear view would gain force in 2027–2028 if construction and industrial weakness kept volume and revenue growth falling. Through 2029, customer churn after price increases, weaker Environmental Solutions results and higher debt would reduce EBITDA, buybacks and the valuation multiple."
+      },
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base view would strengthen if pricing and acquired businesses delivered modest growth, volumes improved gradually and route productivity protected margins. Dividends and buybacks would continue, but capital spending and acquisitions would still absorb cash."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "5,745 (5,390 / 5,904)",
+        "6,038 (5,469 / 6,475)",
+        "6,345 (5,619 / 7,075)"
+       ],
+       [
+        "Dividends per share",
+        "2.73 (2.68 / 2.73)",
+        "2.90 (2.70 / 2.93)",
+        "3.08 (2.78 / 3.13)"
+       ],
+       [
+        "Net debt",
+        "14,069 (14,700 / 13,700)",
+        "14,369 (15,350 / 13,150)",
+        "14,369 (15,900 / 12,500)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.36"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count change",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.73",
+      "1.87",
+      "2.01",
+      "2.18",
+      "2.36"
+     ],
+     "Real free cash flow per share": [
+      "4.43",
+      "5.35",
+      "6.14",
+      "6.48",
+      "7.55"
+     ],
+     "Free cash flow per share": [
+      "4.60",
+      "5.47",
+      "6.27",
+      "6.61",
+      "7.72"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/rsg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RSG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Republic Services earnings",
+   "meta_description": "Republic Services reports October 29, 2026; see guidance, recent results, and the volume, pricing and integration-cost tests.",
+   "opening": "Republic Services' next results are expected on October 29, 2026. For Republic Services, the key thing to watch is whether volume, pricing and integration costs support the forecast.",
+   "closing": "The full memo also explains Republic Services' business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Republic Services guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "What management has guided",
+       "text": "For the year ending December 2026, management guides to revenue of **$17,200–$17,300 million**, adjusted diluted EPS of **$7.23–$7.28**, and adjusted free cash flow of **$2,540–$2,575 million**. “Adjusted” means Republic excludes specified costs from the measure, so the exclusions matter when those costs recur."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "17,200",
+        "17,300",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted diluted earnings per share",
+        "Year to Dec 2026",
+        "7.23",
+        "7.28",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted free cash flow",
+        "Year to Dec 2026",
+        "2,540",
+        "2,575",
+        "Aug 6, 2026"
+       ],
+       [
+        "Acquisitions",
+        "Year to Dec 2026",
+        "1,200",
+        "",
+        "Aug 6, 2026"
+       ],
+       [
+        "Property and equipment, net of proceeds from the sale of property and equipment",
+        "Year to Dec 2026",
+        "1,960",
+        "2,000",
+        "Feb 17, 2026"
+       ]
+      ],
+      "note": "The blank high value for acquisitions means the company expects to spend at least 1.2 billion dollars, but has not set a maximum."
+     }
+    },
+    {
+     "heading": "Has Republic Services kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 119,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The 2025 scorecard shows how the system works. Adjusted earnings per share came just below its annual target, while free cash flow came above target. Before the sustainability adjustment, that produced a potential annual incentive of 94.29% of target. The committee then reduced incentives by 2.5 percentage points after reviewing safety, talent, climate and customer measures. Republic also exceeded its full-year adjusted earnings-per-share and free-cash-flow guidance, though that is not the same as hitting every compensation target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Republic Services results looked like over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue was $4.430 billion in Q2 2026, compared with $4.235 billion in Q2 2025. Gross margin was 42.1%, and operating income was $901 million. Net income was $566 million, diluted EPS was $1.84, and free cash flow was $761 million."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,430",
+        "4,113",
+        "4,136",
+        "4,212",
+        "4,235",
+        "4,009",
+        "4,046",
+        "4,076"
+       ],
+       [
+        "Operating income",
+        "901",
+        "830",
+        "800",
+        "836",
+        "861",
+        "804",
+        "803",
+        "846"
+       ],
+       [
+        "Net income",
+        "566",
+        "525",
+        "545",
+        "550",
+        "550",
+        "495",
+        "512",
+        "566"
+       ],
+       [
+        "EPS, diluted",
+        "1.84",
+        "1.70",
+        "1.76",
+        "1.76",
+        "1.75",
+        "1.58",
+        "1.63",
+        "1.80"
+       ],
+       [
+        "Cash from operations",
+        "1,153",
+        "1,227",
+        "981",
+        "1,181",
+        "1,109",
+        "1,025",
+        "1,022",
+        "1,003"
+       ],
+       [
+        "**= Free cash flow**",
+        "761",
+        "751",
+        "404",
+        "737",
+        "702",
+        "566",
+        "524",
+        "564"
+       ]
+      ],
+      "note": "The revenue numbers are for each three-month quarter, not the whole year."
+     }
+    },
+    {
+     "heading": "What should Republic Services watch in the next release?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "What to watch",
+       "text": "The company is scheduled to report Q3 2026 results after market close on October 29, followed by a conference call. Management expects the comparison with unusually high prior-year landfill volumes to weigh on Q3. Acquisition integration costs are also expected to be concentrated in Q3 and Q4."
+      },
+      {
+       "n": 242,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "What to watch",
+       "text": "The next results should be judged against volume, pricing and integration costs, while West Lake will remain unresolved until the cleanup plan and responsibility become clearer."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,430"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.84"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,076",
+      "4,046",
+      "4,009",
+      "4,235",
+      "4,212",
+      "4,136",
+      "4,113",
+      "4,430"
+     ],
+     "EPS, diluted": [
+      "1.80",
+      "1.63",
+      "1.58",
+      "1.75",
+      "1.76",
+      "1.76",
+      "1.70",
+      "1.84"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/rsg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RSG&src=seo-earnings"
+  }
+ },
+ "short_name": "Republic Services",
+ "first_memo_date": "2026-10-17T19:47:28Z"
+}

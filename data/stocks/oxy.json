@@ -1,0 +1,764 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "OXY",
+ "slug": "oxy",
+ "company": "Occidental Petroleum Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "oil_gas",
+ "country": "us",
+ "memo_date": "2026-10-18T03:05:51Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 62.38,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-09",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 31,
+  "words": 19234,
+  "sources": 172
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Occidental Petroleum, or OXY, is chiefly an oil-and-gas producer. It earns additional income by moving, processing and marketing energy products, while building a newer business around carbon removal."
+ },
+ "sources": [
+  {
+   "title": "Occidental 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026009059/oxy-20251231.htm"
+  },
+  {
+   "title": "2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/797468/000079746823000011/oxy-20221231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026009054/oxyex99112-31x25earningsre.htm"
+  }
+ ],
+ "rivals": [
+  "XOM",
+  "CVX",
+  "COP",
+  "EOG",
+  "FANG",
+  "APA",
+  "DVN",
+  "EQT",
+  "OVV",
+  "CNQ"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "OXY stock forecast",
+   "meta_description": "OXY's forecast weighs bear, base and bull cases against commodity prices, production, cash flow and debt.",
+   "opening": "OXY's probability-weighted price is $58.44 in October 2027, $59.99 in October 2028 and $62.57 in October 2029. OXY's outcome hinges on commodity prices, operating delivery and debt reduction.",
+   "closing": "The full memo also explains OXY's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could OXY's shares go?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast sees limited weighted upside, with substantial downside if oil and gas weaken. The probability-weighted price is $58.44 in October 2027, $59.99 in October 2028 and $62.57 in October 2029, equivalent to total returns of negative 5%, negative 1% and positive 5% with dividends. By October 2029, the bear case reaches $28.78 while the bull case reaches $120.48, against today’s $62.38."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries 30% probability. The base case carries 55%, and the bull case 15%. By October 2029, outcomes span $28.78 in the bear case to $120.48 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 62.38, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 62.38, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "31.04 (-49 %)",
+        "25.33 (-57 %)",
+        "28.78 (-51 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "63.45 (+4 %)",
+        "66.93 (+11 %)",
+        "65.20 (+10 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "94.87 (+54 %)",
+        "103.89 (+70 %)",
+        "120.48 (+99 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "58.44 (-5 %)",
+        "59.99 (-1 %)",
+        "62.57 (+5 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can be lower than today's price even when one case shows a large gain."
+     }
+    },
+    {
+     "heading": "What has to go right for OXY, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The forecast’s $13.4 billion EBITDA in 2027 falls to $12.8 billion and $12.5 billion thereafter. The base case uses realized oil near $70, $67 and $66 per barrel, stable production near guidance and modest cost savings. Production rose from 1.223 million to 1.434 million BOE per day while costs fell from $10.48 to $8.94 per BOE. The bear case gives $8.8 billion, $8.1 billion and $8.2 billion as oil falls toward $55 and gas remains weak. The bull case gives $16.5 billion, $17.3 billion and $18.2 billion as oil stays near $80–$82, Midland productivity improves and savings persist. Each $1 WTI change affects pretax cash by about $240 million."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,400 (8,800 / 16,500)",
+        "12,800 (8,100 / 17,300)",
+        "12,500 (8,200 / 18,200)"
+       ],
+       [
+        "Shares (millions)",
+        "1,020 (1,020 / 1,012)",
+        "1,018 (1,022 / 1,088)",
+        "1,101 (1,024 / 1,080)"
+       ],
+       [
+        "Dividends per share",
+        "1.12 (0.84 / 1.12)",
+        "1.12 (0.56 / 1.20)",
+        "1.12 (0.56 / 1.28)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "5.20 (4.50 / 6.00)",
+        "5.40 (4.00 / 6.30)",
+        "5.50 (4.20 / 6.50)"
+       ],
+       [
+        "Net debt",
+        "4,989 (7,954 / 2,956)",
+        "949 (6,526 / -3,997)",
+        "-3,008 (4,986 / -11,773)"
+       ]
+      ],
+      "note": "The negative net debt numbers mean the company would have more cash than borrowed money, so it would have net cash."
+     }
+    },
+    {
+     "heading": "How much cash does OXY really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The simplest free-cash-flow calculation subtracts capital spending from cash from operations. Stock-based compensation then deserves separate attention: it does not consume cash like a salary, but it can dilute owners, so this memo’s “real free cash flow” subtracts it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,606",
+        "10,519",
+        "10,235"
+       ],
+       [
+        "− Capital spending",
+        "6,427",
+        "6,263",
+        "5,696"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,179",
+        "4,256",
+        "4,539"
+       ],
+       [
+        "− Stock pay",
+        "234",
+        "213",
+        "203"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,945",
+        "4,043",
+        "4,336"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "14.4%",
+        "19.2%",
+        "19.0%"
+       ]
+      ],
+      "note": "The company's own free cash flow is 1,267 million higher because it adds back changes in money tied up in day-to-day business, making its cash number look larger than ours."
+     }
+    },
+    {
+     "heading": "What does an investor pay for OXY today?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, divides the share price by earnings per share. A trailing P/E uses recent earnings; a forward P/E uses analysts’ expectations. The lower forward multiple means analysts expect earnings to improve. That is an assumption, not a promise: weaker oil prices or higher costs could leave the forecast denominator unmet."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "62.38"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "62.57 (+5 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.1%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 62.38,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "31.04 (-49 %)",
+       "25.33 (-57 %)",
+       "28.78 (-51 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "63.45 (+4 %)",
+       "66.93 (+11 %)",
+       "65.20 (+10 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "94.87 (+54 %)",
+       "103.89 (+70 %)",
+       "120.48 (+99 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "58.44 (-5 %)",
+       "59.99 (-1 %)",
+       "62.57 (+5 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/oxy/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OXY&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "OXY dividend: payout, cash coverage and yield",
+   "meta_description": "OXY's common dividend is $0.28 per share quarterly, or $1.12 annually; cash coverage depends on free cash flow, debt and commodity prices.",
+   "opening": "OXY pays $0.28 per share each quarter, or $1.12 per share annually. Its cash coverage depends on whether cash from operations remains after capital spending and stock pay.",
+   "closing": "The full memo also examines OXY’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does OXY pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Berkshire’s preferred shares still sit ahead of common shareholders. Oxy paid a preferred-stock dividend in 2025, cannot voluntarily redeem those shares before August 2029, and faces redemption consequences if common payouts exceed specified limits. In August 2026, Oxy raised its quarterly common dividend to $0.28 per share, but management still ranked debt reduction ahead of continuous buybacks. The cash story therefore leads directly to CrownRock: growth returned before the balance sheet was fully repaired."
+      },
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends stay at $1.12 per share annually in the base case because the declared quarterly rate is $0.28 and no longer-term target exists. The bear case falls to $0.84, then $0.56, after a cut; the bull case rises to $1.20 and $1.28 as cash improves. The history of cuts after the 2020 collapse makes the downside possible."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Does OXY’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The simplest free-cash-flow calculation subtracts capital spending from cash from operations. Stock-based compensation then deserves separate attention: it does not consume cash like a salary, but it can dilute owners, so this memo’s “real free cash flow” subtracts it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,179",
+        "4,256",
+        "4,539",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "915",
+        "767",
+        "603",
+        "384",
+        "39"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "27",
+        "1,798",
+        "3,099",
+        "8"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,264",
+        "3,462",
+        "2,138",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "28.8%",
+        "18.7%",
+        "52.9%",
+        "",
+        ""
+       ]
+      ],
+      "note": "The acquisition amounts also include purchases of assets and investments, so they are not just money spent buying whole businesses."
+     }
+    },
+    {
+     "heading": "What could change OXY’s dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "13,400 (8,800 / 16,500)",
+        "12,800 (8,100 / 17,300)",
+        "12,500 (8,200 / 18,200)"
+       ],
+       [
+        "Dividends per share",
+        "1.12 (0.84 / 1.12)",
+        "1.12 (0.56 / 1.20)",
+        "1.12 (0.56 / 1.28)"
+       ],
+       [
+        "Net debt",
+        "4,989 (7,954 / 2,956)",
+        "949 (6,526 / -3,997)",
+        "-3,008 (4,986 / -11,773)"
+       ]
+      ],
+      "note": "The negative net debt numbers mean the company would have more cash than borrowed money, so it would have net cash."
+     }
+    },
+    {
+     "heading": "What is OXY’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Production rose while liquids realizations weakened, so higher output did not guarantee stronger economics. OXY’s real free cash flow per share, computed as cash from operations minus capital spending and stock pay, fell from 2023 through 2025 even as total production grew. Year-end 2025 net debt was $20,428 million. The dividend yield was 1.8%, while buyback yield was 0.0%."
+      },
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Dividend yield shows what the regular payout amounts to at today’s price; it does not prove that the payout will survive a weaker oil cycle. Common shareholders also rank behind debt and Berkshire Hathaway’s preferred stock. Berkshire holds warrants for 83.9 million shares. Their $59.59 strike was below OXY’s October 18, 2026 share price, so exercise is economically attractive and could dilute each existing owner’s percentage."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "62.38"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.8%"
+       ]
+      ],
+      "note": "The enterprise value leaves out the separate preferred stock claim, so it may make the business look less expensive than all investors’ claims together."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.91"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.04",
+      "0.38",
+      "0.63",
+      "0.79",
+      "0.91"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "4.51",
+      "4.18",
+      "2.94"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "4.72",
+      "4.40",
+      "3.18"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/oxy/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OXY&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "OXY earnings: November 9, 2026",
+   "meta_description": "OXY reports on November 9, 2026; the key test is Gulf production, sales volumes and any change to full-year guidance.",
+   "opening": "OXY's next results are expected on November 9, 2026. Watch final production and Gulf sales volumes, including what was restored after the pipeline constraint.",
+   "closing": "The full OXY memo answers what drives its business, how its rivals compare, who runs OXY, and what risks could shape its results.",
+   "blocks": [
+    {
+     "heading": "What has OXY guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s 2026 promise is to keep production inside a tighter range while spending carefully and reducing costs. Its August outlook set the annual production and net capital-spending ranges shown below."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total Company Production (Mboed) — FY26",
+        "Year to Dec 2026",
+        "1,423.00",
+        "1,453.00",
+        "Aug 6, 2026"
+       ],
+       [
+        "Permian Production (Mboed) — FY26",
+        "Year to Dec 2026",
+        "801.00",
+        "817.00",
+        "Aug 6, 2026"
+       ],
+       [
+        "Rockies & Other Production (Mboed) — FY26",
+        "Year to Dec 2026",
+        "270.00",
+        "276.00",
+        "Aug 6, 2026"
+       ],
+       [
+        "Gulf of America Production (Mboed) — FY26",
+        "Year to Dec 2026",
+        "132.00",
+        "136.00",
+        "Aug 6, 2026"
+       ],
+       [
+        "International Production (Mboed) — FY26",
+        "Year to Dec 2026",
+        "220.00",
+        "224.00",
+        "Aug 6, 2026"
+       ],
+       [
+        "Net Capital Expenditures",
+        "Year to Dec 2026",
+        "5,500",
+        "5,900",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How has OXY's revenue and profit changed over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Oxy’s earnings, revenue and diluted EPS rose sharply from March 2026. Management attributed the change primarily to higher realized crude prices, with higher liquids realizations and derivative gains helping, while lower domestic gas realizations partly offset them."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash from operations also improved while capital spending remained substantial. That is encouraging, but one quarter cannot establish a new earning rate. The specialist wants to see favorable prices persist, costs remain controlled and production hold up before treating the result as durable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenues and other income",
+        "8,327",
+        "5,109",
+        "5,423",
+        "5,613",
+        "5,301",
+        "5,738",
+        "5,720",
+        "5,939"
+       ],
+       [
+        "Income from continuing operations attributable to Occidental",
+        "2,981",
+        "222",
+        "221",
+        "694",
+        "328",
+        "821",
+        "506",
+        "893"
+       ],
+       [
+        "EPS from continuing operations, diluted",
+        "2.76",
+        "0.05",
+        "0.05",
+        "0.51",
+        "0.13",
+        "0.65",
+        "0.34",
+        "0.74"
+       ],
+       [
+        "Cash from operations",
+        "5,086",
+        "1,392",
+        "2,398",
+        "2,447",
+        "2,729",
+        "2,032",
+        "3,296",
+        "3,333"
+       ],
+       [
+        "Capital spending",
+        "1,589",
+        "1,554",
+        "1,528",
+        "1,512",
+        "1,705",
+        "1,682",
+        "1,481",
+        "1,502"
+       ]
+      ],
+      "note": "Occidental’s reported income for its own shareholders is lower than our income from continuing operations because we subtract the profit belonging to other owners of its subsidiaries."
+     }
+    },
+    {
+     "heading": "What should you watch in OXY's November 9, 2026 results?",
+     "paragraphs": [
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The November results will show whether the Gulf disruption was temporary or has changed OXY’s full-year delivery. Occidental scheduled its third-quarter results for November 9, 2026, followed by a conference call on November 10."
+      },
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Investors should look for final production and Gulf sales volumes, the amount restored after the pipeline constraint, any change to full-year guidance, and any lasting effect on costs or cash flow. If onshore wells continue to offset offshore weakness, the annual target may survive. If they do not, the cause—pipeline access, maintenance, weather or field decline—will shape next year’s spending."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 9, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/oxy/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=OXY&src=seo-earnings"
+  }
+ },
+ "short_name": "OXY",
+ "first_memo_date": "2026-10-18T03:05:51Z"
+}

@@ -1,0 +1,802 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PCAR",
+ "slug": "pcar",
+ "company": "PACCAR Inc",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T04:29:40Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 110.82,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 250,
+  "tables": 28,
+  "words": 16137,
+  "sources": 276
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "PACCAR makes commercial trucks and earns more when those trucks need parts, financing, leasing and service. Its dollars come in through a network of brands, dealers, lenders and repair channels, then go out to suppliers, workers, factories, lenders and the costs of keeping vehicles on the road."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/75362/000119312526113876/pcar-20260318.htm"
+  },
+  {
+   "title": "SEC Form 4",
+   "url": "https://www.sec.gov/Archives/edgar/data/75362/000122520826007676/xslF345X06/doc4.xml"
+  },
+  {
+   "title": "Volvo 2025 annual report",
+   "url": "https://www.volvogroup.com/content/dam/volvo-group/markets/master/news/2026/feb/5313699-volvo-group---annual-report-2025.pdf"
+  }
+ ],
+ "rivals": [
+  "DTG.DE",
+  "OSK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "PACCAR stock forecast",
+   "meta_description": "PACCAR stock forecast: weighted scenarios, recovery drivers, real free cash flow and valuation multiples.",
+   "opening": "PACCAR's weighted forecast is $84.49 in October 2027, $101.83 in October 2028 and $113.94 in October 2029. It hinges on a profitable truck recovery.",
+   "closing": "The full memo also answers how PACCAR's business works, how it compares with rivals, what management is guiding toward and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could PACCAR's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast says PCAR falls first, then recovers to a modest gain by October 2029. The weighted price is $84.49 in October 2027 and $101.83 in October 2028. It reaches $113.94 in October 2029."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case has 30% probability. The base case has 52%. The bull case has 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 110.82, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 110.82, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "55.38 (-49 %)",
+        "59.70 (-44 %)",
+        "65.36 (-37 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "89.82 (-18 %)",
+        "109.39 (+1 %)",
+        "122.99 (+15 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "117.56 (+7 %)",
+        "150.19 (+38 %)",
+        "168.75 (+56 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "84.49 (-22 %)",
+        "101.83 (-6 %)",
+        "113.94 (+7 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for PACCAR?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries 30% probability. The base case carries 52%, and the bull case 18%. The October 2029 bear-to-bull range is $65.36–$168.75. The recovery needs freight and fleet utilization to support replacement demand, production costs controlled and dealer inventory contained. Parts growth and stable PFS credit quality help. Rising finance provisions or continued Amplify delay hurt. The next checkpoint is the third-quarter earnings call on October 27, 2026. PACCAR must turn stronger orders and builds into profitable deliveries while maintaining its margin outlook."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does PACCAR really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was $4.42 billion in 2025, including $1.49 billion of higher cash provided by wholesale receivables on new trucks in Financial Services. That cash is real, but it belongs partly to lending activity. Free cash flow usually means operating cash flow less capital spending. The memo’s “real” free cash flow also deducts stock-based compensation, which transfers value through shares or options."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,415.8",
+        "4,640.9",
+        "4,190.0",
+        "3,027.0",
+        "2,186.7"
+       ],
+       [
+        "− Capital spending",
+        "743.0",
+        "838.7",
+        "695.0",
+        "525.0",
+        "559.1"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,672.8",
+        "3,802.2",
+        "3,495.0",
+        "2,502.0",
+        "1,627.6"
+       ],
+       [
+        "− Stock pay",
+        "24.1",
+        "22.9",
+        "21.2",
+        "17.1",
+        "14.7"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,648.7",
+        "3,779.3",
+        "3,473.8",
+        "2,484.9",
+        "1,612.9"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "12.8%",
+        "11.2%",
+        "9.9%",
+        "8.6%",
+        "6.9%"
+       ]
+      ],
+      "note": "PACCAR's cash numbers include its financial services lending business, so they are not just the cash generated by making and selling trucks."
+     }
+    },
+    {
+     "heading": "What does an investor pay for PACCAR today?",
+     "paragraphs": [
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Price-to-earnings, or P/E, compares the share price with earnings per share. A trailing P/E uses the past year’s earnings; a forward P/E uses an estimate for the next year. The forward multiple is lower because analysts expect earnings to rise. Analysts build those forecasts from truck orders, production, margins, parts sales, and finance income, but investors decide whether to believe them."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "110.82"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "23.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "6.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "6.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "110.82"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "113.94 (+7 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 110.82,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "55.38 (-49 %)",
+       "59.70 (-44 %)",
+       "65.36 (-37 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "89.82 (-18 %)",
+       "109.39 (+1 %)",
+       "122.99 (+15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "117.56 (+7 %)",
+       "150.19 (+38 %)",
+       "168.75 (+56 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "84.49 (-22 %)",
+       "101.83 (-6 %)",
+       "113.94 (+7 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pcar/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PCAR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "PACCAR dividend",
+   "meta_description": "PACCAR pays regular dividends from free cash flow, while truck demand, margins and finance credit can affect future payments.",
+   "opening": "PACCAR’s latest regular quarterly dividend is $0.35, and PACCAR declared an extra $1.40 per share payable in January 2026. PACCAR paid out 62.2% of its 2025 free cash flow to shareholders.",
+   "closing": "The full PACCAR memo also covers PACCAR’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does PACCAR pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base path rises from $1.40 per share to $1.56. The bear case holds at $1.40. The bull case reaches $1.72. The latest regular quarterly dividend is $0.35, and annual dividends rose each year in the supplied five-year record. The forecast excludes the variable $1.40 special dividend paid in early 2026."
+      },
+      {
+       "n": 90,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends were PACCAR’s main direct return to shareholders. The company paid $2.27 billion in dividends in 2025. It also declared an extra $1.40 per share payable in January 2026. The extra payment shows that distributions can rise when profits and capital needs permit, but it is not a permanent promise."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.51",
+        "7.90",
+        "8.76",
+        "5.75",
+        "3.57"
+       ],
+       [
+        "− Dividends paid, per share",
+        "4.30",
+        "4.35",
+        "2.89",
+        "1.92",
+        "1.35"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.03",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ]
+      ],
+      "note": "Real free cash flow per share is slightly lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is PACCAR’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 88,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the money left after operating costs and spending on long-lived assets such as factories and equipment. It shows what may be available for dividends, acquisitions, debt reduction or liquidity. From 2021 through 2025, PACCAR generated more free cash flow in 2025 than in 2021 and paid out 62.2% of its 2025 free cash flow to shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,672.8",
+        "3,802.2",
+        "3,495.0",
+        "2,502.0",
+        "1,627.6"
+       ],
+       [
+        "− Dividends paid",
+        "2,267.1",
+        "2,288.5",
+        "1,518.6",
+        "1,004.7",
+        "708.0"
+       ],
+       [
+        "− Share buybacks",
+        "18.4",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,387.3",
+        "1,513.7",
+        "1,976.4",
+        "1,497.3",
+        "919.6"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "62.2%",
+        "60.2%",
+        "43.5%",
+        "40.2%",
+        "43.5%"
+       ]
+      ],
+      "note": "The cash flow includes the financial services business, but the cash and debt totals leave it out, so these figures cannot be compared directly."
+     }
+    },
+    {
+     "heading": "What could change PACCAR’s dividend?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would gain support if management’s market outlook and Parts growth became deliveries and revenue during 2027. Higher builds with controlled costs, continued liquidity and regular dividends would support the gradual recovery."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "3,335 (2,338 / 4,030)",
+        "3,875 (2,660 / 4,760)",
+        "4,095 (2,900 / 5,040)"
+       ],
+       [
+        "Shares (millions)",
+        "527 (528 / 527)",
+        "528 (530 / 527)",
+        "530 (532 / 528)"
+       ],
+       [
+        "Dividends per share",
+        "1.40 (1.40 / 1.40)",
+        "1.48 (1.40 / 1.56)",
+        "1.56 (1.40 / 1.72)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "11.00 (8.50 / 12.50)",
+        "11.50 (8.00 / 13.50)",
+        "12.00 (8.00 / 14.00)"
+       ],
+       [
+        "Net debt",
+        "-10,689 (-9,386 / -11,569)",
+        "-13,250 (-10,368 / -14,948)",
+        "-15,984 (-11,567 / -18,522)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is PACCAR’s dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show the turn: revenue peaked at $35,127.4 million in 2023 before falling to $28,444.8 million in 2025, while deliveries fell from 204,200 to 144,200. Diluted EPS fell from $8.76 to $4.51, while PACCAR’s computed free cash flow—cash from operations minus capital spending—supports a 6.3% yield against a 1.3% dividend yield. Industrial net cash was $9,252.8 million against $15,636.3 million of finance-arm borrowings in 2025."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.30"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "6.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.35",
+      "1.92",
+      "2.89",
+      "4.35",
+      "4.30"
+     ],
+     "Real free cash flow per share": [
+      "3.09",
+      "4.75",
+      "6.62",
+      "7.18",
+      "6.93"
+     ],
+     "Free cash flow per share": [
+      "3.11",
+      "4.78",
+      "6.66",
+      "7.22",
+      "6.97"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pcar/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PCAR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "PACCAR earnings: October 27, 2026",
+   "meta_description": "PACCAR's next results are expected October 27, 2026; watch orders, profitable deliveries, margins and credit.",
+   "opening": "The next PACCAR results are expected on October 27, 2026. Watch whether stronger orders become profitable deliveries while margins remain intact.",
+   "closing": "The full memo also answers how PACCAR makes money, who its rivals are, how its management operates, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has PACCAR guided for the year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s 2026 heavy-duty market ranges are 230,000–270,000 trucks in the U.S. and Canada and 290,000–330,000 registrations in Europe. South America’s range is 100,000–110,000. These are market forecasts, not PACCAR delivery targets. PACCAR guides to 3.0%–5.0% Parts sales growth and $700.0–$750.0 million in capital investments. R&D guidance is $450.0–$480.0 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Truck industry heavy-duty retail sales in the U.S. and Canada (trucks)",
+        "Year to Dec 2026",
+        "230,000",
+        "270,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "Truck industry registrations for over 16-tonne vehicles in Europe (trucks)",
+        "Year to Dec 2026",
+        "290,000",
+        "330,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "Heavy-duty truck industry registrations in South America (trucks)",
+        "Year to Dec 2026",
+        "100,000",
+        "110,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "PACCAR Parts sales increase (%)",
+        "Year to Dec 2026",
+        "3.0%",
+        "5.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Capital investments",
+        "Year to Dec 2026",
+        "700.0",
+        "750.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "R&D",
+        "Year to Dec 2026",
+        "450.0",
+        "480.0",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has PACCAR's revenue and profit done lately?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue was $7.55 billion in the quarter to June 2026, while net income rose to $752.0 million from $723.8 million. Diluted earnings per share rose to $1.43 from $1.37. Stronger production rates and better operating effectiveness helped, while firmer freight conditions supported truck orders."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,546.7",
+        "6,776.5",
+        "6,820.8",
+        "6,671.8",
+        "7,510.5",
+        "7,441.7",
+        "7,907.5",
+        "8,239.9"
+       ],
+       [
+        "Net income",
+        "752.0",
+        "605.3",
+        "556.9",
+        "590.0",
+        "723.8",
+        "505.1",
+        "872.0",
+        "972.1"
+       ],
+       [
+        "EPS, diluted",
+        "1.43",
+        "1.15",
+        "1.06",
+        "1.12",
+        "1.37",
+        "0.96",
+        "1.66",
+        "1.85"
+       ]
+      ],
+      "note": "Free cash flow includes the company's financing business, so it is not only cash from selling trucks."
+     }
+    },
+    {
+     "heading": "What should investors watch in PACCAR's next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The nearest checkpoint is the third-quarter earnings call on October 27, 2026. Investors should listen for changes in order strength, production, margins, and the full-year market and spending outlook. Stronger freight rates can help carriers replace older trucks; weaker freight or higher costs can delay purchases."
+      },
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Finally, PFS credit provisions should be watched alongside freight conditions. If demand becomes deliveries, the battery plan gains a credible path, and customer payments stabilize, PACCAR should be able to fund its next phase without losing sight of the risks around it."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "7,546.7"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.43"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,239.9",
+      "7,907.5",
+      "7,441.7",
+      "7,510.5",
+      "6,671.8",
+      "6,820.8",
+      "6,776.5",
+      "7,546.7"
+     ],
+     "EPS, diluted": [
+      "1.85",
+      "1.66",
+      "0.96",
+      "1.37",
+      "1.12",
+      "1.06",
+      "1.15",
+      "1.43"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/pcar/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PCAR&src=seo-earnings"
+  }
+ },
+ "short_name": "PACCAR",
+ "first_memo_date": "2026-10-18T04:29:40Z"
+}

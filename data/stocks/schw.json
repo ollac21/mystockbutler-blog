@@ -1,0 +1,808 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SCHW",
+ "slug": "schw",
+ "company": "The Charles Schwab Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T02:25:06Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 94.16,
+ "price_date": "2026-10-15T20:00:02Z",
+ "next_earnings": "2027-01-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 16393,
+  "sources": 287
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "The central thing Schwab sells is a connected relationship for investing, borrowing, advice and financial administration. It lets one customer bring several money decisions into the same system, while Schwab earns from the balances and services around that relationship."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Notes 7 and 15 and operating discussion",
+   "url": "https://content.schwab.com/web/retail/public/about-schwab/SEC_Form10k_2025.pdf"
+  },
+  {
+   "title": "2024 Form 10-K, expense discussion and reconciliations",
+   "url": "https://content.schwab.com/web/retail/public/about-schwab/SEC_Form10k_2024.pdf"
+  },
+  {
+   "title": "2023 Form 10-K, leases note",
+   "url": "https://content.schwab.com/web/retail/public/about-schwab/SEC_Form10k_2023.pdf"
+  }
+ ],
+ "rivals": [
+  "HOOD",
+  "IBKR",
+  "MS",
+  "LPLA",
+  "BAC",
+  "JPM",
+  "WFC",
+  "UBS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Schwab stock forecast",
+   "meta_description": "Schwab's weighted price is $105.33 in October 2027 and $141.90 in October 2029; cash sorting and funding shape the scenarios.",
+   "opening": "Schwab's weighted price is $105.33 in October 2027. It hinges on persistent cash sorting and higher replacement funding costs.",
+   "closing": "The full memo also explains Schwab's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Schwab's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The weighted price is $105.33 in October 2027. That represents a 13% total return including dividends. It reaches $121.53 in October 2028, or 32%, and $141.90 in October 2029, or 55%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 94.16, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 94.16, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "82.44 (-11 %)",
+        "82.12 (-10 %)",
+        "83.67 (-7 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "108.66 (+17 %)",
+        "126.61 (+37 %)",
+        "148.01 (+62 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "124.80 (+34 %)",
+        "156.81 (+70 %)",
+        "197.90 (+115 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "105.33 (+13 %)",
+        "121.53 (+32 %)",
+        "141.90 (+55 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share value after giving each possible outcome its stated probability."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Schwab?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Persistent cash sorting during 2027–2029 would move the forecast toward bear by weakening deposits, net interest margin, earnings, and buybacks. Market weakness or slower asset gathering would pressure fee revenue and the multiple. An expense miss would undermine the 800-basis-point operating-leverage promise."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Schwab really make?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Schwab’s cash flow is substantial, but customer and regulatory movements make it unlike an industrial company’s cash flow. Operating cash less capital spending is a useful starting point, and stock compensation should also be treated as an economic cost because shareholders absorb the dilution."
+      },
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The warning is clearest in 2023. Operating cash was far above net income because Schwab released US$23,759 million from investments segregated for regulatory purposes. That cash was real, but it reflected a balance-sheet movement rather than a surge in ordinary service revenue."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,311",
+        "2,670",
+        "19,587",
+        "2,057",
+        "2,118"
+       ],
+       [
+        "− Capital spending",
+        "548",
+        "620",
+        "700",
+        "971",
+        "916"
+       ],
+       [
+        "**= Free cash flow**",
+        "8,763",
+        "2,050",
+        "18,887",
+        "1,086",
+        "1,202"
+       ],
+       [
+        "− Stock pay",
+        "317",
+        "337",
+        "320",
+        "366",
+        "254"
+       ],
+       [
+        "**= Real free cash flow**",
+        "8,446",
+        "1,713",
+        "18,567",
+        "720",
+        "948"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Schwab today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The first question is whether Schwab’s current price is paying for durable earnings. Its trailing P/E, or price-to-earnings ratio, measures the share price against the profit earned per share over the past year, making it a useful starting point for a company whose businesses are closely connected."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "94.16"
+       ],
+       [
+        "Market value (calculated)",
+        "162,834.25"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "166,142.25"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "11.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.4%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings ratio uses analysts’ expected profit, so it is only an estimate and may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "94.16"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "141.90 (+55 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "11.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 94.16,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "82.44 (-11 %)",
+       "82.12 (-10 %)",
+       "83.67 (-7 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "108.66 (+17 %)",
+       "126.61 (+37 %)",
+       "148.01 (+62 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "124.80 (+34 %)",
+       "156.81 (+70 %)",
+       "197.90 (+115 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "105.33 (+13 %)",
+       "121.53 (+32 %)",
+       "141.90 (+55 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/schw/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SCHW&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Schwab dividend",
+   "meta_description": "Schwab's dividend yield is 1.4%, while cash coverage has been uneven and funding, earnings, and buybacks shape the outlook.",
+   "opening": "Schwab's forecast base dividend reaches $1.36 per share in 2027 and $1.52 in 2029; today, its dividend yield is 1.4% at a $94.16 share price. Its cash coverage has been uneven: free cash flow was $1,202 million in 2021 against dividends of $1,366 million, while in 2022 dividends and buybacks reached $4,986 million against free cash flow of $1,086 million.",
+   "closing": "The full memo also explains Schwab's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Schwab pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case because earnings and funding conditions improve, but the forecast does not repeat the latest increase. The base dividend reaches $1.36 per share in 2027 and $1.52 in 2029. The bear case holds at $1.28, consistent with a pause during stress. The bull case reaches $1.80, requiring stronger earnings and adequate bank capital."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.65",
+        "2.99",
+        "2.54",
+        "3.50",
+        "2.83"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.08",
+        "1.00",
+        "1.00",
+        "0.84",
+        "0.72"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.06",
+        "0.00",
+        "1.55",
+        "1.79",
+        "0.00"
+       ]
+      ],
+      "note": "In 2025, Schwab paid shareholders 30 cents more per share than its business generated in cash, so it had to use other cash or borrow."
+     }
+    },
+    {
+     "heading": "Does Schwab's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow was $1,202 million in 2021 against dividends of $1,366 million. In 2022, dividends and buybacks reached $4,986 million against free cash flow of $1,086 million. But financial-institution cash flow is not a steady earnings pot: client deposits move, securities mature, and funding needs change. A large inflow may therefore be needed for withdrawals or debt repayment rather than dividends."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "8,763",
+        "2,050",
+        "18,887",
+        "1,086",
+        "1,202"
+       ],
+       [
+        "− Dividends paid",
+        "1,958",
+        "1,838",
+        "1,838",
+        "1,591",
+        "1,366"
+       ],
+       [
+        "− Share buybacks",
+        "7,346",
+        "0",
+        "2,842",
+        "3,395",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "212",
+        "14,207",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "541",
+        "",
+        "",
+        "3,900",
+        "164"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more cash than it made from the business, so it used savings or borrowed money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Schwab's dividend?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Persistent cash sorting during 2027–2029 would move the forecast toward bear by weakening deposits, net interest margin, earnings, and buybacks. Market weakness or slower asset gathering would pressure fee revenue and the multiple. An expense miss would undermine the 800-basis-point operating-leverage promise."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Schwab's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show a sharp earnings turn: revenue fell 9.3% in 2023, then grew 22.0% in 2025. Diluted EPS rose from $2.54 in 2023 to $4.65 in 2025. Trailing P/E is 16.1x; forward P/E is 11.7x. Dividend yield is 1.4%; buyback yield is 4.5%. Shareholder returns compete with investment and balance-sheet demands. The company’s own free cash flow was 3.5% of revenue in 2022 and 98.6% in 2023, when a large regulatory-investment release inflated operating cash. Buybacks were $7,346 million in 2025; average diluted shares fell 1.4%."
+      },
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "Charles Schwab Corporation is a financial-services company that combines brokerage, managed investing, banking, and services for independent advisers. At $94.16 a share on October 16, 2026, its stock looks inexpensive only if recent earnings and a demanding forecast can hold."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "94.16"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.4%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings ratio uses analysts’ expected profit, so it is only an estimate and may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.08"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.72",
+      "0.84",
+      "1.00",
+      "1.00",
+      "1.08"
+     ],
+     "Real free cash flow per share": [
+      "0.50",
+      "0.38",
+      "10.14",
+      "0.93",
+      "4.67"
+     ],
+     "Free cash flow per share": [
+      "0.63",
+      "0.57",
+      "10.32",
+      "1.12",
+      "4.84"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/schw/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SCHW&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Schwab earnings",
+   "meta_description": "Schwab's next results are expected January 20, 2027; guidance centers on revenue growth, funding costs, expenses and operating leverage.",
+   "opening": "Schwab's next results are expected on January 20, 2027. Watch whether client cash funds growth without pushing up borrowing costs.",
+   "closing": "The full memo also answers how Schwab's business works, who its rivals are, how management operates, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "What has Schwab guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Schwab’s revenue-growth range remains 17.5%–18.5%, although Mike Verdeschi said growth should land toward the lower end. Adjusted expense growth should also finish near the bottom of its 9.5%–10.5% range. “Adjusted” removes specified items such as acquisition costs and acquired-intangible amortization, making recurring operations easier to compare, but Schwab still incurs those costs."
+      },
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Net interest margin is the interest Schwab keeps after paying depositors and other funders. In the first half of 2026, Schwab reported a 3.54% yield on interest-earning assets. Its funding cost was 0.60%, leaving a 2.94% margin. Management expects a full-year margin of 3.0%–3.1%, with the lower end now more likely, but its fourth-quarter range is 3.2%–3.3%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "Year to Dec 2026",
+        "17.5%",
+        "18.5%",
+        "Jul 21, 2026"
+       ],
+       [
+        "Net interest margin",
+        "Year to Dec 2026",
+        "3.0%",
+        "3.1%",
+        "Jul 21, 2026"
+       ],
+       [
+        "4Q26 net interest margin",
+        "Quarter to Dec 2026",
+        "3.2%",
+        "3.3%",
+        "Jul 21, 2026"
+       ],
+       [
+        "Adjusted expenses growth",
+        "Year to Dec 2026",
+        "9.5%",
+        "10.5%",
+        "Jul 21, 2026"
+       ],
+       [
+        "Operating leverage (basis points)",
+        "Year to Dec 2026",
+        "800",
+        "800",
+        "Oct 15, 2026"
+       ],
+       [
+        "Capital expenditures, % of total net revenues",
+        "Year to Dec 2026",
+        "5.0%",
+        "",
+        "Aug 7, 2026"
+       ]
+      ],
+      "note": "A basis point is one hundredth of a percentage point, so 800 basis points means 8 percentage points."
+     }
+    },
+    {
+     "heading": "Has Schwab kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 116,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also has a record of keeping promises. It said the Ameritrade client transition would produce approximately US$500 million of additional annual savings beyond acquisition synergies. The final conversion finished in May 2024, and later reporting said those savings were realized. In 2025, core net new assets reached US$519.4 billion, showing growth after the technology migration."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Schwab's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "September 2026 extended Schwab’s earnings recovery. Revenue rose 16.9% year over year. Pretax profit rose 25.0%, while diluted EPS also increased strongly."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,171",
+        "7,072",
+        "6,482",
+        "6,336",
+        "6,135",
+        "5,851",
+        "5,599",
+        "5,329"
+       ],
+       [
+        "Operating income",
+        "3,777",
+        "3,669",
+        "3,188",
+        "3,180",
+        "3,021",
+        "2,803",
+        "2,455",
+        "2,305"
+       ],
+       [
+        "Net income",
+        "2,906",
+        "2,800",
+        "2,479",
+        "2,459",
+        "2,358",
+        "2,126",
+        "1,909",
+        "1,840"
+       ],
+       [
+        "EPS, diluted",
+        "1.62",
+        "1.54",
+        "1.37",
+        "1.33",
+        "1.26",
+        "1.08",
+        "0.99",
+        "0.94"
+       ]
+      ],
+      "note": "The operating income row is not the usual operating profit: it uses Schwab's reported income before taxes because that is the closest figure for this financial company."
+     }
+    },
+    {
+     "heading": "What should I watch in Schwab's next results?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The December quarter comes first. Compare revenue growth, net interest margin and adjusted expenses with management’s ranges, then ask whether the promised operating leverage appeared. Year-end client cash inflows could help fund lending, but if loans grow faster than deposits, more expensive borrowing may absorb part of the interest benefit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 20, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "7,171"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.62"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,329",
+      "5,599",
+      "5,851",
+      "6,135",
+      "6,336",
+      "6,482",
+      "7,072",
+      "7,171"
+     ],
+     "EPS, diluted": [
+      "0.94",
+      "0.99",
+      "1.08",
+      "1.26",
+      "1.33",
+      "1.37",
+      "1.54",
+      "1.62"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/schw/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SCHW&src=seo-earnings"
+  }
+ },
+ "short_name": "Schwab",
+ "first_memo_date": "2026-10-16T02:25:06Z"
+}

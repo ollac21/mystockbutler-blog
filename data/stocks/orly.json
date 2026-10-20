@@ -1,0 +1,587 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ORLY",
+ "slug": "orly",
+ "company": "O'Reilly Automotive, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T19:50:39Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 89.27,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 237,
+  "tables": 27,
+  "words": 15655,
+  "sources": 135
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "O’Reilly Automotive makes money by buying vehicle parts and supplies, stocking them, and selling them to drivers and repair shops. To understand the business, follow the products, the customers, and the costs that stand between a sale and a profit."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000009/orly-20251231x10k.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817325000008/orly-20241231x10k.htm"
+  },
+  {
+   "title": "Second-quarter 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000045/orly-20260630x10q.htm"
+  }
+ ],
+ "rivals": [
+  "AZO",
+  "AAP",
+  "GPC",
+  "LKQ",
+  "PRTS",
+  "DORM",
+  "SMP",
+  "WMT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "O’Reilly stock forecast",
+   "meta_description": "O’Reilly stock forecast: weighted scenarios, operating drivers, real free cash flow, and what investors pay today.",
+   "opening": "The weighted price is $87.66 in October 2027 and $101.10 in October 2029. O’Reilly’s forecast hinges on demand, margins and free cash flow.",
+   "closing": "The full memo also answers how O’Reilly works, who its rivals are, how management allocates capital, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What could O’Reilly’s shares be worth?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $87.66 in October 2027, a 2% loss with dividends. It rises to $95.77 in October 2028, a 7% gain. It reaches $101.10 in October 2029, a 13% gain."
+      },
+      {
+       "n": 215,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case has a 25% weight; the base case has 55%. The bull case carries 20%. The October 2029 range runs from $67.28 in the bear case to $139.28 in the bull case. Today’s price is $89.27."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 89.27, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 89.27, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "69.89 (-22 %)",
+        "69.00 (-23 %)",
+        "67.28 (-25 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "89.30 (+0 %)",
+        "97.87 (+10 %)",
+        "102.58 (+15 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "105.36 (+18 %)",
+        "123.46 (+38 %)",
+        "139.28 (+56 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "87.66 (-2 %)",
+        "95.77 (+7 %)",
+        "101.10 (+13 %)"
+       ]
+      ],
+      "note": "The weighted value is the average across the bear, base, and bull cases based on their probabilities, not a separate likely outcome."
+     }
+    },
+    {
+     "heading": "What does O’Reilly’s stock forecast depend on?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Professional sales grew about 19% from 2023 to 2025, versus about 6% for DIY. Q2 professional comparable sales grew 10%, but DIY transactions fell at a low-single-digit rate while same-item inflation reached 5.5%. Inventory turns also fell from 1.7x to 1.6x. These facts support the base case, but explain the bear and bull separation. The 2024 reserve charge is excluded from the forward run rate."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does O’Reilly really make?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow records cash produced by the business before capital spending. Free cash flow subtracts spending on stores, distribution, and other capital projects. In 2025, capital spending rose, so less operating cash remained after investment than in the prior year."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,761,993",
+        "3,049,576",
+        "3,034,084",
+        "3,148,250",
+        "3,207,310"
+       ],
+       [
+        "− Capital spending",
+        "1,168,815",
+        "1,023,387",
+        "1,006,264",
+        "563,342",
+        "442,853"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,593,178",
+        "2,026,189",
+        "2,027,820",
+        "2,584,908",
+        "2,764,457"
+       ],
+       [
+        "− Stock pay",
+        "35,115",
+        "28,931",
+        "27,511",
+        "26,458",
+        "24,656"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,558,063",
+        "1,997,258",
+        "2,000,309",
+        "2,558,450",
+        "2,739,801"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "8.8%",
+        "12.0%",
+        "12.7%",
+        "17.8%",
+        "20.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for O’Reilly?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings, or P/E, multiple compares the share price with profit per share. Trailing P/E uses the past twelve months; forward P/E uses an estimate of the next twelve. But earnings are an accounting measure, not the same thing as cash available after customers, suppliers, taxes, inventory and new stores have been paid. O’Reilly’s cash-flow yield therefore makes its reinvestment needs central."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "89.27"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "28.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "24.4x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "4.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.2%"
+       ]
+      ],
+      "note": "The price-to-book ratio is not meaningful because the company owes more than the accounting value of what it owns, so the usual comparison cannot be made."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "89.27"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "101.10 (+13 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 89.27,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "69.89 (-22 %)",
+       "69.00 (-23 %)",
+       "67.28 (-25 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "89.30 (+0 %)",
+       "97.87 (+10 %)",
+       "102.58 (+15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "105.36 (+18 %)",
+       "123.46 (+38 %)",
+       "139.28 (+56 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "87.66 (-2 %)",
+       "95.77 (+7 %)",
+       "101.10 (+13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/orly/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ORLY&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "O’Reilly earnings: date, guidance and results",
+   "meta_description": "O’Reilly’s next results are expected on October 28, 2026; guidance, recent results and cash-generation risks are in focus.",
+   "opening": "O’Reilly’s next results are expected on October 28, 2026. Watch whether sales growth converts into enough cash while investment and claims costs remain high.",
+   "closing": "The full memo answers how O’Reilly works, who its rivals are, how its management is paid, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has O’Reilly guided for the year?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The pressure is that price growth is fading. In Q2 2026, same-item inflation contributed 5.5% to average tickets, while DIY transaction counts fell by a low-single-digit percentage. Management expects the inflation benefit to shrink to 1%–2% in the second half of 2026, so O’Reilly will need more visits, parts sold, or professional-shop orders."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Net, new store openings",
+        "Year to Dec 2026",
+        "225",
+        "235",
+        "Jul 29, 2026"
+       ],
+       [
+        "Comparable store sales",
+        "Year to Dec 2026",
+        "4.0%",
+        "6.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Total revenue",
+        "Year to Dec 2026",
+        "18,900,000",
+        "19,200,000",
+        "Jul 29, 2026"
+       ],
+       [
+        "Operating income as a percentage of sales",
+        "Year to Dec 2026",
+        "19.3%",
+        "19.8%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Diluted earnings per share",
+        "Year to Dec 2026",
+        "3.20",
+        "3.30",
+        "Jul 29, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "1,300,000",
+        "1,400,000",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": "The company’s free cash flow is lower than the simple calculation because it also subtracts tax benefits from employee share payments."
+     }
+    },
+    {
+     "heading": "Did O’Reilly keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The clearest promise is profitable expansion. O’Reilly met its 2025 store-growth target, and its 2026 plan calls for more stores alongside distribution investment. The final test is whether those stores and that network earn returns that justify the cash committed."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have O’Reilly’s revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, net income, and diluted earnings per share all rose from the same quarter of 2025. Gross margin held steady. Earnings per share grew faster than net income partly because share repurchases left fewer shares outstanding."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,892,013",
+        "4,560,539",
+        "4,414,314",
+        "4,705,696",
+        "4,525,058",
+        "4,136,924",
+        "4,095,601",
+        "4,364,437"
+       ],
+       [
+        "Gross margin",
+        "51.4%",
+        "51.5%",
+        "51.8%",
+        "51.9%",
+        "51.4%",
+        "51.3%",
+        "51.3%",
+        "51.6%"
+       ],
+       [
+        "Operating income",
+        "985,746",
+        "841,608",
+        "828,609",
+        "976,067",
+        "914,470",
+        "741,466",
+        "738,650",
+        "896,728"
+       ],
+       [
+        "Net income",
+        "715,064",
+        "604,181",
+        "605,233",
+        "725,896",
+        "668,595",
+        "538,485",
+        "551,130",
+        "665,464"
+       ],
+       [
+        "EPS, diluted",
+        "0.86",
+        "0.72",
+        "0.71",
+        "0.85",
+        "0.78",
+        "0.62",
+        "0.63",
+        "0.76"
+       ]
+      ],
+      "note": "These numbers are for each three-month quarter, even though some row descriptions say “the year.”"
+     }
+    },
+    {
+     "heading": "What should I watch in O’Reilly’s next results?",
+     "paragraphs": [
+      {
+       "n": 208,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The Q3 2026 results release and conference call should show whether sales hold as the same-item price benefit moderates. They should also show whether DIY transaction counts recover and whether professional-shop demand is strong enough to carry more of the growth."
+      },
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Cash flow deserves equal attention. O’Reilly must fund stores, distribution capacity, inventory, supplier payments and debt while deciding how much capital to return through buybacks. A strong earnings-per-share result will be less convincing if cash generation falls behind those demands."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "4,892,013"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.86"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,364,437",
+      "4,095,601",
+      "4,136,924",
+      "4,525,058",
+      "4,705,696",
+      "4,414,314",
+      "4,560,539",
+      "4,892,013"
+     ],
+     "EPS, diluted": [
+      "0.76",
+      "0.63",
+      "0.62",
+      "0.78",
+      "0.85",
+      "0.71",
+      "0.72",
+      "0.86"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/orly/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ORLY&src=seo-earnings"
+  }
+ },
+ "short_name": "O’Reilly",
+ "first_memo_date": "2026-10-17T19:50:39Z"
+}

@@ -1,0 +1,853 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EQT",
+ "slug": "eqt",
+ "company": "EQT Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "oil_gas",
+ "country": "us",
+ "memo_date": "2026-10-20T00:58:06Z",
+ "memo_date_text": "October 20, 2026",
+ "price": 54.42,
+ "price_date": "2026-10-19T19:59:59Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 269,
+  "tables": 32,
+  "words": 18607,
+  "sources": 215
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "EQT sells natural gas and related hydrocarbons from Appalachia, while owning infrastructure that helps move them to buyers. Its business is industrial and largely invisible: customers buy usable energy, not a consumer brand."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/33213/000003321326000018/eqt-20251231.htm"
+  },
+  {
+   "title": "2024 annual report, revenue recognition",
+   "url": "https://www.sec.gov/Archives/edgar/data/33213/000003321325000011/eqt-20241231.htm"
+  },
+  {
+   "title": "EQT’s 2023 10-K, acquisition disclosure",
+   "url": "https://www.sec.gov/Archives/edgar/data/33213/000003321324000008/eqt-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "RRC",
+  "EXE",
+  "CRK",
+  "GPOR",
+  "BKV",
+  "DVN",
+  "EOG",
+  "MTDR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "EQT stock forecast",
+   "meta_description": "EQT's forecast stays negative through October 2029, with bear, base and bull scenarios shaped by gas prices, production, debt and cash flow.",
+   "opening": "EQT's weighted forecast stays negative through October 2029. It hinges on realized gas prices, durable production, and cash remaining after investment and debt.",
+   "closing": "The full memo also covers EQT's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could EQT's shares go?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted share price is $38.30 in October 2027, implying a return of -28% from today’s $54.42 including dividends. It is $43.09 in October 2028, a return of -18%. By October 2029 it reaches $51.36, or -2%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 54.42, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 54.42, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "24.88 (-53 %)",
+        "18.60 (-64 %)",
+        "23.75 (-54 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "39.70 (-26 %)",
+        "46.87 (-11 %)",
+        "52.80 (+1 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "54.93 (+2 %)",
+        "70.39 (+32 %)",
+        "89.18 (+68 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "38.30 (-28 %)",
+        "43.09 (-18 %)",
+        "51.36 (-2 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for EQT, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path uses steady volume growth and better market access, supported by two quarters of production above guidance and lower capital spending. It does not assume a sustained gas-price boom. The bear case reflects the Q2 realized price falling to $2.65/Mcfe from $2.81 a year earlier, while the bull case requires stronger demand, takeaway and LNG economics. The 2026 sales guidance of 2,375–2,450 Bcfe anchors the near-term outlook, not the later years."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "5,360 (4,650 / 6,370)",
+        "5,750 (4,090 / 7,050)",
+        "6,070 (4,460 / 7,850)"
+       ],
+       [
+        "Shares (millions)",
+        "627 (628 / 622)",
+        "627 (630 / 618)",
+        "626 (633 / 612)"
+       ],
+       [
+        "Dividends per share",
+        "0.68 (0.68 / 0.68)",
+        "0.68 (0.34 / 0.72)",
+        "0.68 (0.34 / 0.80)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "5.50 (4.50 / 6.00)",
+        "5.70 (4.20 / 6.50)",
+        "5.80 (4.50 / 7.00)"
+       ],
+       [
+        "Net debt",
+        "4,589 (5,299 / 4,029)",
+        "3,375 (5,453 / 2,309)",
+        "2,161 (5,038 / 329)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does EQT really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The straightforward calculation subtracts cash capital spending from operating cash flow. EQT’s own measure changes that calculation: it removes working-capital movements, uses accrual-based capital spending and deducts contributions to equity-method investments. Accrual spending records an investment when incurred, which may not match the payment date."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,125,952",
+        "2,826,973",
+        "3,178,850",
+        "3,465,560",
+        "1,662,448"
+       ],
+       [
+        "− Capital spending",
+        "2,288,425",
+        "2,253,709",
+        "2,019,037",
+        "1,400,443",
+        "1,055,128"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,837,527",
+        "573,264",
+        "1,159,813",
+        "2,065,117",
+        "607,320"
+       ],
+       [
+        "− Stock pay",
+        "60,781",
+        "158,344",
+        "49,834",
+        "45,201",
+        "28,169"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,776,746",
+        "414,920",
+        "1,109,979",
+        "2,019,916",
+        "579,151"
+       ]
+      ],
+      "note": "The company's own free cash flow differs from ours because it uses different rules for counting investments and other cash items; we count the actual cash spent on equipment and buildings."
+     }
+    },
+    {
+     "heading": "What does an investor pay for EQT today?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $54.42 on October 19, 2026, EQT’s equity market value was $34,040,580.72 thousand. Its enterprise value was $39,583,431.72 thousand, showing why the company’s approximately $5.5 billion of net debt matters: shareholders must receive the cash left after those obligations."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "54.42"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "51.36 (-2 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.3%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 54.42,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "24.88 (-53 %)",
+       "18.60 (-64 %)",
+       "23.75 (-54 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "39.70 (-26 %)",
+       "46.87 (-11 %)",
+       "52.80 (+1 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "54.93 (+2 %)",
+       "70.39 (+32 %)",
+       "89.18 (+68 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "38.30 (-28 %)",
+       "43.09 (-18 %)",
+       "51.36 (-2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/eqt/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EQT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "EQT dividend: payment, coverage and yield",
+   "meta_description": "EQT dividend history, cash coverage, payout plans, risks, and current yield against the share price.",
+   "opening": "EQT pays $0.17 per share each quarter, and the base forecast holds the annual dividend at $0.68 per share. In 2025, EQT paid US$389,633 thousand in dividends, while US$2,088,198 thousand remained after minority-owner payments, dividends, and buybacks were zero.",
+   "closing": "The full memo also answers what shapes EQT’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does EQT pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend is $0.68 per share at every date, holding the declared $0.17 quarterly payment flat. The bear case cuts annual dividends to $0.34 after 2027; the bull case raises them to $0.72 and then $0.80. The base is supported by steadily rising payments through 2025, but the zero payment in 2021 shows that a downturn can change the policy."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ thousands",
+      "caption": "Results (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,644,211",
+        "5,273,309",
+        "6,908,923",
+        "7,497,689",
+        "3,064,663"
+       ],
+       [
+        "Revenue growth (calculated)",
+        "63.9%",
+        "-23.7%",
+        "-7.9%",
+        "144.6%",
+        "0.2%"
+       ],
+       [
+        "EPS, diluted",
+        "3.31",
+        "0.45",
+        "4.22",
+        "4.38",
+        "-3.54"
+       ],
+       [
+        "Dividend per share",
+        "0.64",
+        "0.63",
+        "0.61",
+        "0.55",
+        "0.00"
+       ]
+      ],
+      "note": "The two revenue-growth rows differ because the acquisition-adjusted figure estimates sales as if certain purchases had been owned for the full year, while the calculated figure uses the sales actually reported."
+     }
+    },
+    {
+     "heading": "Is EQT’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, payments to minority owners reached US$359,696 thousand. Dividends were US$389,633 thousand, while buybacks were zero. Free cash flow remaining after those distributions was US$2,088,198 thousand, and net debt fell to US$7,726,588 thousand from US$9,156,950 thousand at the end of 2024."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,837,527",
+        "573,264",
+        "1,159,813",
+        "2,065,117",
+        "607,320"
+       ],
+       [
+        "− Paid to minority owners",
+        "359,696",
+        "1,640",
+        "11,072",
+        "11,592",
+        "0"
+       ],
+       [
+        "− Dividends paid",
+        "389,633",
+        "326,581",
+        "228,339",
+        "203,629",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "201,029",
+        "409,485",
+        "12,922"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,088,198",
+        "245,043",
+        "719,373",
+        "1,440,411",
+        "594,398"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "13.7%",
+        "57.0%",
+        "37.0%",
+        "29.7%",
+        "2.1%"
+       ]
+      ],
+      "note": "The two payout percentages differ because the second uses a smaller free cash flow amount after subtracting pay given in company shares."
+     }
+    },
+    {
+     "heading": "What could change EQT’s dividend?",
+     "paragraphs": [
+      {
+       "n": 267,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Lower benchmark prices or a wider basis discount during 2027–2029 would move the forecast toward the bear case by reducing realized prices, margins and cash flow. Higher pipeline charges, maintenance spending or partner distributions would slow debt reduction."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is EQT’s dividend yield today against its price?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $54.42 on October 19, 2026, EQT’s equity market value was $34,040,580.72 thousand. Its enterprise value was $39,583,431.72 thousand, showing why the company’s approximately $5.5 billion of net debt matters: shareholders must receive the cash left after those obligations."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "54.42"
+       ],
+       [
+        "Market value (calculated)",
+        "34,040,580.72"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "8.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts' expected profit, so it can be wrong if the company earns more or less than expected."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.63"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "8.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.50",
+      "0.55",
+      "0.63",
+      "0.63"
+     ],
+     "Real free cash flow per share": [
+      "1.79",
+      "4.97",
+      "2.69",
+      "0.81",
+      "4.51"
+     ],
+     "Free cash flow per share": [
+      "1.88",
+      "5.08",
+      "2.81",
+      "1.11",
+      "4.61"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/eqt/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EQT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "EQT earnings date and guidance",
+   "meta_description": "EQT's next results are expected on October 27, 2026, with guidance, production and spendable cash in focus.",
+   "opening": "EQT's next results are expected on October 27, 2026. Watch whether production against guidance and compression performance turn into spendable cash.",
+   "closing": "The full memo also explains EQT's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has EQT guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast stays negative through October 2029 and hinges on realized gas prices, durable production, and cash remaining after investment and debt. Management’s July 2026 guidance calls for full-year sales volume of 2,375–2,450 Bcfe. It sets operating costs at $1.05–$1.20 per Mcfe. Management’s February forecast calls for $3.5 billion in free cash flow attributable to EQT and $4.7 billion of year-end net debt based on February strip pricing."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions unless per-unit or volume label",
+      "caption": "Guidance in force (US$ millions unless per-unit or volume label)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total sales volume (Bcfe)",
+        "Year to Dec 2026",
+        "2,375",
+        "2,450",
+        "Jul 21, 2026"
+       ],
+       [
+        "Total sales volume (Bcfe)",
+        "Quarter to Sep 2026",
+        "570",
+        "620",
+        "Jul 21, 2026"
+       ],
+       [
+        "Operating costs ($/Mcfe)",
+        "Year to Dec 2026",
+        "1.05",
+        "1.20",
+        "Jul 21, 2026"
+       ],
+       [
+        "Operating costs ($/Mcfe)",
+        "Quarter to Sep 2026",
+        "1.09",
+        "1.23",
+        "Jul 21, 2026"
+       ],
+       [
+        "Free cash flow attributable to EQT at February strip ($ Millions)",
+        "Year to Dec 2026",
+        "3,500",
+        "3,500",
+        "Feb 17, 2026"
+       ],
+       [
+        "Net debt at December 31, 2026 at February strip ($ Millions)",
+        "Year to Dec 2026",
+        "4,700",
+        "4,700",
+        "Feb 17, 2026"
+       ]
+      ],
+      "note": "The three cash tax rows are different price scenarios, so they forecast what taxes might be at different natural gas prices rather than three taxes added together."
+     }
+    },
+    {
+     "heading": "Has EQT kept its promises?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "Promises kept",
+       "text": "The seven reported quarters suggest cautious promises: production consistently reached the upper part of guidance or exceeded it, while spending and costs stayed within or below their ranges. No adverse revision or withdrawal of the quarterly promises reviewed was found; annual capital budgets were reduced favorably and annual production guidance increased, including an acquisition-related increase for Olympus. There was no adverse miss requiring a one-off explanation, and Olympus was already included in Q3 2025 guidance, while lower-than-expected curtailments helped subsequent production beats."
+      }
+     ],
+     "table": {
+      "title": "Promises kept: 5/5",
+      "unit": "",
+      "caption": "Promises kept: 5/5",
+      "head": [
+       "Metric",
+       "Record, last 8 quarters",
+       "Typical gap"
+      ],
+      "rows": [
+       [
+        "production",
+        "7 of 7 inside or above: 4 inside, including 1 at the upper boundary; 3 above; no misses. Q3 2026 pending.",
+        "Typically 4.3% above the midpoint; the three above-range results exceeded the upper boundary by 1.3%–2.3%."
+       ],
+       [
+        "capital spending",
+        "7 of 7 inside or below: 1 inside; 6 below the lower boundary; no overspending misses. Q3 2026 pending.",
+        "Typically 14.3% below the midpoint, or 7.5% below the lower boundary."
+       ],
+       [
+        "unit costs",
+        "7 of 7 inside or below: 3 inside, including 2 at the lower boundary; 4 below; no cost overruns. Q3 2026 pending.",
+        "Typically 7.4% below the midpoint; below-range results were approximately 1%–2% below the lower boundary."
+       ]
+      ],
+      "note": "The report counts seven completed quarters, while the third quarter of 2026 is still waiting for results."
+     }
+    },
+    {
+     "heading": "What is EQT's eight-quarter revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue is volatile because EQT is a commodity producer. Growth reached 144.6% in 2022, then fell 7.9% in 2023 and 23.7% in 2024. Acquisition-pro-forma comparisons still declined in both later years, showing that the weakness was not only a change in consolidation."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, net income and diluted EPS all fell from June 2025. The decline does not by itself indicate weaker wells, because gas production per day increased. EQT attributed output above guidance to well performance, system-pressure optimization and fewer price-related curtailments."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,809,940",
+        "3,378,736",
+        "2,388,071",
+        "1,958,571",
+        "2,557,719",
+        "1,739,850",
+        "1,624,727",
+        "1,283,802"
+       ],
+       [
+        "Operating income",
+        "394,038",
+        "2,035,960",
+        "1,016,121",
+        "603,210",
+        "1,134,038",
+        "496,250",
+        "781,445",
+        "-281,840"
+       ],
+       [
+        "Net income",
+        "211,425",
+        "1,487,229",
+        "677,099",
+        "335,862",
+        "784,147",
+        "242,139",
+        "418,395",
+        "-300,823"
+       ],
+       [
+        "EPS, diluted",
+        "0.34",
+        "2.36",
+        "1.08",
+        "0.53",
+        "1.30",
+        "0.40",
+        "0.69",
+        "-0.54"
+       ]
+      ],
+      "note": "These are amounts for each three-month quarter, not for the whole year, even though some row descriptions say “during the year.”"
+     }
+    },
+    {
+     "heading": "What should I watch in EQT's next release?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "EQT is scheduled to release Q3 results on October 27 and hold its call on October 28. Production should be judged against the guided range, but also against compression performance and curtailments. Holding gas back can be sensible when prices are weak, provided management explains the volume withheld and the cash benefit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,809,940"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.34"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,283,802",
+      "1,624,727",
+      "1,739,850",
+      "2,557,719",
+      "1,958,571",
+      "2,388,071",
+      "3,378,736",
+      "1,809,940"
+     ],
+     "EPS, diluted": [
+      "-0.54",
+      "0.69",
+      "0.40",
+      "1.30",
+      "0.53",
+      "1.08",
+      "2.36",
+      "0.34"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/eqt/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EQT&src=seo-earnings"
+  }
+ },
+ "short_name": "EQT",
+ "first_memo_date": "2026-10-20T00:58:06Z"
+}

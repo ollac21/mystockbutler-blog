@@ -1,0 +1,590 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CMG",
+ "slug": "cmg",
+ "company": "Chipotle Mexican Grill, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T17:14:31Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 29.68,
+ "price_date": "2026-10-19T15:51:20Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 27,
+  "words": 16160,
+  "sources": 189
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Chipotle Mexican Grill is a restaurant business that turns a small set of ingredients into meals chosen one customer at a time. Its economics are equally simple to picture: people pay for food and convenience, while Chipotle pays to buy, prepare, deliver and support that food, and keeps what remains."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, business description and Note 14",
+   "url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000009/cmg-20251231.htm"
+  },
+  {
+   "title": "Company 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809025000014/cmg-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000007/cmg-20260203xex991.htm"
+  }
+ ],
+ "rivals": [
+  "YUM",
+  "MCD",
+  "QSR",
+  "DPZ",
+  "WEN",
+  "CAVA",
+  "SHAK",
+  "SG",
+  "TXRH",
+  "WING"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Chipotle stock forecast",
+   "meta_description": "Chipotle stock forecast: weighted scenarios, operating drivers, real free cash flow and valuation in plain English.",
+   "opening": "Chipotle’s weighted forecast reaches $35.36 by October 2029. It hinges on traffic, margins, new-store returns and cash generation.",
+   "closing": "The full memo also covers Chipotle’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Chipotle’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast puts Chipotle near flat in one year, then modestly higher over three years. The probability-weighted price is $29.82 in October 2027, with a 0% return including dividends, and $32.56 in October 2028, with 10%. It reaches $35.36 in October 2029, with 19%. Today's reference price is $29.68."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 29.68, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 29.68, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32%",
+        "22.06 (-26%)",
+        "19.97 (-33%)",
+        "17.66 (-40%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "30.56 (+3%)",
+        "33.10 (+12%)",
+        "35.24 (+19%)"
+       ],
+       [
+        "Bull",
+        "18%",
+        "41.56 (+40%)",
+        "53.42 (+80%)",
+        "67.19 (+126%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "29.82 (+0%)",
+        "32.56 (+10%)",
+        "35.36 (+19%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Chipotle’s forecast?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The recovery remains restrained because first-half 2026 margin was 11.0%, below 2025's 12.9%, even as sales increased. The bear case gives $1,365M in 2027 and $1,330M in 2029 as weak traffic and rising costs overwhelm openings. The bull case reaches $1,700M and $2,310M because transactions recover beyond guidance and new restaurants earn attractive returns."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Chipotle really make?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was 666,336 in 2025. Free cash flow was 1,447,590, down from 1,511,473 in 2024. Chipotle builds and maintains almost all its restaurants itself, so expansion consumes cash that a heavily franchised chain might shift to independent operators."
+      },
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is another owner-level cost. Chipotle paid 119,543 through stock compensation in 2025. Subtracting it produces analytical “real free cash flow” of 1,328,047, because the noncash payment still dilutes shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,113,926",
+        "2,105,076",
+        "1,783,477",
+        "1,323,179",
+        "1,282,081"
+       ],
+       [
+        "− Capital spending",
+        "666,336",
+        "593,603",
+        "560,731",
+        "479,164",
+        "442,475"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,447,590",
+        "1,511,473",
+        "1,222,746",
+        "844,015",
+        "839,606"
+       ],
+       [
+        "− Stock pay",
+        "119,543",
+        "131,730",
+        "124,016",
+        "98,030",
+        "176,392"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,328,047",
+        "1,379,743",
+        "1,098,730",
+        "745,985",
+        "663,214"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "11.1%",
+        "12.2%",
+        "11.1%",
+        "8.6%",
+        "8.8%"
+       ]
+      ],
+      "note": "The cash freed from working capital includes lease and other long-term operating changes, not just money released from inventory and unpaid customer bills."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Chipotle today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, tells investors how many dollars they pay for each dollar of annual profit. A lemonade stand earning one dollar a year and selling for twenty-seven dollars has a P/E of twenty-seven. Chipotle’s trailing P/E is 27.2 times, while its forward P/E is 21.6 times because the latter uses estimated future earnings per share. The lower figure is therefore a bet on higher profit, not proof that the shares are cheap."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands, except share price in US$ and ratios as labelled",
+      "caption": "What an investor pays today (US$ thousands, except share price in US$ and ratios as labelled)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "29.68"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "27.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "21.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.5%"
+       ]
+      ],
+      "note": "Enterprise value is lower than market value because the company has more cash and short-term investments than debt, after the listed exclusions."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "29.68"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "35.36 (+19%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "21.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 29.68,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32%",
+      "values": [
+       "22.06 (-26%)",
+       "19.97 (-33%)",
+       "17.66 (-40%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "30.56 (+3%)",
+       "33.10 (+12%)",
+       "35.24 (+19%)"
+      ]
+     },
+     "Bull": {
+      "probability": "18%",
+      "values": [
+       "41.56 (+40%)",
+       "53.42 (+80%)",
+       "67.19 (+126%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "29.82 (+0%)",
+       "32.56 (+10%)",
+       "35.36 (+19%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cmg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CMG&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Chipotle earnings date and guidance",
+   "meta_description": "Chipotle's October 28, 2026 results will test low-single-digit comparable-sales growth and 350 to 370 restaurant openings.",
+   "opening": "Chipotle's next results are expected on October 28, 2026. For Chipotle, watch whether transactions after July keep improving and whether the raised annual outlook remains intact.",
+   "closing": "The full research covers Chipotle's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Chipotle guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management guidance is the company’s own forecast. On July 29, 2026, Chipotle raised its full-year comparable-sales outlook from roughly flat to low-single-digit growth. Comparable sales measure restaurants open for at least 13 full calendar months, so new locations cannot improve the figure simply by opening."
+      },
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.3 — The spending ahead",
+       "text": "Capital expenditure, or capex, is spending on assets that last for years, such as buildings, kitchens, equipment and technology. Chipotle’s 2026 capex budget is US$834.1 million. New restaurant construction receives US$531.8 million, while existing restaurants receive US$266.9 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions; counts, percentages and basis points as labelled",
+      "caption": "Guidance in force (US$ millions; counts, percentages and basis points as labelled)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Full year comparable restaurant sales growth",
+        "Year to Dec 2026",
+        "",
+        "",
+        "2026-07-29"
+       ],
+       [
+        "New restaurant openings",
+        "Year to Dec 2026",
+        "350",
+        "370",
+        "2026-07-29"
+       ],
+       [
+        "International partner-operated restaurants",
+        "Year to Dec 2026",
+        "10",
+        "15",
+        "2026-07-29"
+       ],
+       [
+        "New company-owned restaurants having a Chipotlane",
+        "Year to Dec 2026",
+        "80.0%",
+        "80.0%",
+        "2026-07-29"
+       ],
+       [
+        "Total capital expenditures",
+        "Year to Dec 2026",
+        "834.1",
+        "834.1",
+        "2026-02-04"
+       ],
+       [
+        "Capital expenditures related to our construction of new restaurants",
+        "Year to Dec 2026",
+        "531.8",
+        "531.8",
+        "2026-02-04"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Chipotle keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Chipotle initially forecast 315–345 company-owned openings for 2025 and delivered 334. Yet established-restaurant sales declined that year. The result shows why opening targets cannot replace a broader performance test. Retention awards granted during the 2024 transition can also continue creating expense during later vesting periods."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Chipotle's revenue and profit done?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached 3,348,562 in June 2026. That was 9.3% above 3,063,393 a year earlier. Comps rose 2.2%; transactions increased 1.0%, while average check rose 1.2%. Chipotle opened 100 company-owned restaurants, including 80 with a Chipotlane."
+      },
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Profit moved in the opposite direction. Operating income fell from 559,057 in June 2025 to 525,595 in June 2026. Net income fell from 436,127 to 403,547. Diluted EPS remained 0.32 because fewer shares spread the lower earnings across fewer owners."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,348,562",
+        "3,088,242",
+        "2,983,511",
+        "3,003,444",
+        "3,063,393",
+        "2,875,253",
+        "2,845,310",
+        "2,793,576"
+       ],
+       [
+        "Operating income",
+        "525,595",
+        "397,063",
+        "420,319",
+        "477,172",
+        "559,057",
+        "479,250",
+        "415,732",
+        "473,256"
+       ],
+       [
+        "Net income",
+        "403,547",
+        "302,824",
+        "330,932",
+        "382,103",
+        "436,127",
+        "386,599",
+        "331,764",
+        "387,388"
+       ],
+       [
+        "EPS, diluted",
+        "0.32",
+        "0.23",
+        "0.25",
+        "0.29",
+        "0.32",
+        "0.28",
+        "0.24",
+        "0.28"
+       ],
+       [
+        "Cash from operations",
+        "680,653",
+        "651,350",
+        "425,844",
+        "569,680",
+        "561,327",
+        "557,075",
+        "526,770",
+        "446,494"
+       ],
+       [
+        "**= Free cash flow**",
+        "463,384",
+        "471,018",
+        "228,389",
+        "406,194",
+        "400,742",
+        "412,265",
+        "353,885",
+        "298,969"
+       ]
+      ],
+      "note": "Gross margin is not the company’s final profit because it leaves out the cost of wear and tear on equipment and corporate expenses."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "3,348,562"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.32"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,793,576",
+      "2,845,310",
+      "2,875,253",
+      "3,063,393",
+      "3,003,444",
+      "2,983,511",
+      "3,088,242",
+      "3,348,562"
+     ],
+     "EPS, diluted": [
+      "0.28",
+      "0.24",
+      "0.28",
+      "0.32",
+      "0.29",
+      "0.25",
+      "0.23",
+      "0.32"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cmg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CMG&src=seo-earnings"
+  }
+ },
+ "short_name": "Chipotle",
+ "first_memo_date": "2026-10-19T17:14:31Z"
+}

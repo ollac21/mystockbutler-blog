@@ -1,0 +1,823 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MG.TO",
+ "slug": "mg-to",
+ "company": "Magna International Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-17T15:32:48Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 93.19,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 28,
+  "words": 17190,
+  "sources": 169
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Magna International is a global automotive supplier: it makes vehicle parts and systems, and sometimes engineers and assembles whole vehicles for automakers. The dollar that enters Magna begins with an automaker’s program and ends, after materials, people and factories are paid, as operating profit—or as a loss when the plan misses."
+ },
+ "sources": [
+  {
+   "title": "2025 Annual Financial Statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/749098/000119312526128771/d20215dex993.htm"
+  },
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/749098/000119312526128771/d20215dex992.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/749098/000119312525066935/d939990dex3.htm"
+  }
+ ],
+ "rivals": [
+  "LEA",
+  "BWA",
+  "FR.PA",
+  "CON.DE",
+  "ADNT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Magna stock forecast",
+   "meta_description": "Magna's stock forecast weighs recovery scenarios, operating drivers, real cash flow and the valuation investors pay today.",
+   "opening": "Magna's weighted scenario is C$63.32 in October 2027, then C$94.60 in October 2029. It hinges on new programs ramping, Complete Vehicles utilization improving and recurring cash flow supporting investment and buybacks.",
+   "closing": "The full Magna memo also answers how Magna's business works, who its rivals are, how management is executing and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could Magna's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is C$63.32 in October 2027. That is −29%, dividends included. It is C$78.45 in October 2028. The return is −10%. It reaches C$94.60 in October 2029. The return is +11%. The bear case has a 32% probability. The base case has 51%. The bull case has 17%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per MG.TO share at each date; in brackets the return since today's 93.19, dividends included",
+      "caption": "What the shares could be worth (CAD per MG.TO share at each date; in brackets the return since today's 93.19, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32 %",
+        "29.78 (-65 %)",
+        "37.70 (-54 %)",
+        "43.48 (-44 %)"
+       ],
+       [
+        "Base",
+        "51 %",
+        "72.42 (-19 %)",
+        "85.30 (-2 %)",
+        "99.18 (+16 %)"
+       ],
+       [
+        "Bull",
+        "17 %",
+        "99.15 (+10 %)",
+        "134.63 (+51 %)",
+        "177.08 (+100 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "63.32 (-29 %)",
+        "78.45 (-10 %)",
+        "94.60 (+11 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, so it can be below today's share price even though the bull case shows a gain."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Magna?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $1,053 million first, then $1,250 million and $1,399 million. It reflects softer production, weak utilization and launch or tariff-recovery shortfalls. The bull case gives $1,801 million first, then $2,001 million and $2,198 million, requiring program ramps and margins above the historical average."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "1,551 (1,053 / 1,801)",
+        "1,602 (1,250 / 2,001)",
+        "1,652 (1,399 / 2,198)"
+       ],
+       [
+        "Shares (millions)",
+        "252 (258 / 246)",
+        "250 (258 / 237)",
+        "247 (258 / 227)"
+       ],
+       [
+        "Dividends per share",
+        "2.06 (1.98 / 2.10)",
+        "2.14 (1.98 / 2.22)",
+        "2.22 (2.00 / 2.34)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "10.00 (8.00 / 11.00)",
+        "10.50 (7.50 / 12.00)",
+        "11.00 (7.00 / 13.00)"
+       ],
+       [
+        "Net debt",
+        "2,596 (3,005 / 2,593)",
+        "1,780 (2,515 / 1,518)",
+        "879 (1,880 / 150)"
+       ]
+      ],
+      "note": "Enterprise value to normal operating profit shows how much investors are paying for each dollar of the company's normal operating profit."
+     }
+    },
+    {
+     "heading": "How much cash does Magna really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Real free cash flow subtracts stock compensation from cash from operations less capital spending. It treats share awards as a cost to owners and gives a stricter view of cash left after investment. Free-cash-flow yield then compares that cash with the market value investors place on the shares."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,598",
+        "3,634",
+        "3,149",
+        "2,095",
+        "2,940"
+       ],
+       [
+        "− Capital spending",
+        "1,313",
+        "2,178",
+        "2,500",
+        "1,681",
+        "1,372"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,285",
+        "1,456",
+        "649",
+        "414",
+        "1,568"
+       ],
+       [
+        "− Stock pay",
+        "60",
+        "49",
+        "45",
+        "31",
+        "20"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,225",
+        "1,407",
+        "604",
+        "383",
+        "1,548"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.3%",
+        "3.3%",
+        "1.4%",
+        "1.0%",
+        "4.3%"
+       ]
+      ],
+      "note": "The company's own free cash flow is lower because it also subtracts cash spent on investments and other assets that we do not subtract."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Magna today?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At C$93.19 a share on October 17, 2026, investors are paying for Magna’s expected earnings recovery as well as its existing operations."
+      },
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The sharp difference between Magna’s trailing and forward P/E makes the forecast especially important. Trailing P/E uses earnings already reported, while forward P/E uses expected earnings. If a share costs $100 and last year’s earnings were $4 per share, the trailing P/E would be 25 times; if next year’s expected earnings were $10, the forward P/E would be 10 times. The gap is therefore a forecast of recovery, not a mathematical error."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "93.19"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "94.60 (+11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "12.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "8.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 65.80904110448698,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32 %",
+      "values": [
+       "29.78 (-65 %)",
+       "37.70 (-54 %)",
+       "43.48 (-44 %)"
+      ]
+     },
+     "Base": {
+      "probability": "51 %",
+      "values": [
+       "72.42 (-19 %)",
+       "85.30 (-2 %)",
+       "99.18 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "17 %",
+      "values": [
+       "99.15 (+10 %)",
+       "134.63 (+51 %)",
+       "177.08 (+100 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "63.32 (-29 %)",
+       "78.45 (-10 %)",
+       "94.60 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mg-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MG.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Magna dividend",
+   "meta_description": "Magna's dividend history, cash coverage, plans, and current yield are explained in plain English.",
+   "opening": "Magna pays $2.06 per share in the base case, rising to $2.14 and then $2.22 by October 2029. Magna's 2025 cash generation funded fixed assets, investments, debt repayment, retained cash, and shareholder payouts, while buybacks also competed for cash.",
+   "closing": "The full memo also explains Magna's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Magna pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $2.06 per share to $2.14. It reaches $2.22 by October 2029. The bear case holds it at $1.98 before a small recovery to $2.00, while the bull case reaches $2.34. The company has raised dividends for sixteen consecutive years, but gives no numerical growth target."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "829",
+        "1,009",
+        "1,213",
+        "592",
+        "1,514"
+       ],
+       [
+        "EPS, diluted",
+        "2.93",
+        "3.52",
+        "4.23",
+        "2.03",
+        "5.00"
+       ],
+       [
+        "Dividend per share",
+        "1.94",
+        "1.90",
+        "1.84",
+        "1.80",
+        "1.72"
+       ]
+      ],
+      "note": "Gross profit is not profit after every expense, because depreciation and acquired intangible amortization are left out until later."
+     }
+    },
+    {
+     "heading": "Is Magna's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pattern looked more conservative in 2025. Magna generated $3.598 billion from operating activities, spent $1.313 billion on fixed assets, and used another $499 million for investments, other assets, and intangible assets. It also repaid debt. Much of the cash was therefore retained, reinvested, or used to strengthen the balance sheet rather than distributed."
+      },
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Magna then accelerated repurchases in 2026. The board authorized purchases of up to 25.3 million shares. In the first half of 2026, Magna bought 15.0 million shares for $905 million and planned to buy the remaining approximately 9 million shares in the second half. Buybacks can raise earnings per share if earnings hold up, but they compete with debt reduction, factories, and acquisitions for cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,285",
+        "1,456",
+        "649",
+        "414",
+        "1,568"
+       ],
+       [
+        "− Dividends paid",
+        "544",
+        "539",
+        "522",
+        "514",
+        "514"
+       ],
+       [
+        "− Share buybacks",
+        "137",
+        "207",
+        "13",
+        "780",
+        "517"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,545",
+        "664",
+        "40",
+        "",
+        "488"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "29.8%",
+        "51.2%",
+        "82.4%",
+        "312.6%",
+        "65.8%"
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes operating lease obligations, while our count leaves those out."
+     }
+    },
+    {
+     "heading": "What could change Magna's dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to US$41.3–42.5 billion in sales. It targets a 6.3%–6.6% adjusted EBIT margin. Adjusted EPS guidance is US$6.70–7.30. Free cash flow guidance is US$1.75–1.85 billion. The test is whether productivity and efficiency sustain margins after tariff and EV-program recoveries fade."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "1,551 (1,053 / 1,801)",
+        "1,602 (1,250 / 2,001)",
+        "1,652 (1,399 / 2,198)"
+       ],
+       [
+        "Shares (millions)",
+        "252 (258 / 246)",
+        "250 (258 / 237)",
+        "247 (258 / 227)"
+       ],
+       [
+        "Dividends per share",
+        "2.06 (1.98 / 2.10)",
+        "2.14 (1.98 / 2.22)",
+        "2.22 (2.00 / 2.34)"
+       ],
+       [
+        "Net debt",
+        "2,596 (3,005 / 2,593)",
+        "1,780 (2,515 / 1,518)",
+        "879 (1,880 / 150)"
+       ]
+      ],
+      "note": "Enterprise value to normal operating profit shows how much investors are paying for each dollar of the company's normal operating profit."
+     }
+    },
+    {
+     "heading": "What is Magna's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At C$93.19 a share on October 17, 2026, investors are paying for Magna’s expected earnings recovery as well as its existing operations."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.93"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "12.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "13.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.70",
+      "1.77",
+      "1.82",
+      "1.88",
+      "1.93"
+     ],
+     "Real free cash flow per share": [
+      "5.11",
+      "1.32",
+      "2.11",
+      "4.90",
+      "7.88"
+     ],
+     "Free cash flow per share": [
+      "5.18",
+      "1.42",
+      "2.26",
+      "5.07",
+      "8.09"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mg-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MG.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Magna earnings: guidance and what to watch",
+   "meta_description": "Magna’s next results are expected October 30, 2026; see its guidance, recent results and the margins and cash flow to watch.",
+   "opening": "Magna’s next results are expected on October 30, 2026. Watch whether margins and cash flow are following management’s plan.",
+   "closing": "The full memo also answers what Magna’s business is, who its rivals are, how management allocates capital, and what risks could shape the recovery.",
+   "blocks": [
+    {
+     "heading": "What has Magna guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to US$41.3–42.5 billion in sales. It targets a 6.3%–6.6% adjusted EBIT margin. Adjusted EPS guidance is US$6.70–7.30. Free cash flow guidance is US$1.75–1.85 billion. The test is whether productivity and efficiency sustain margins after tariff and EV-program recoveries fade."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions, except where indicated",
+      "caption": "Guidance in force (US$ billions, except where indicated)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total Sales",
+        "Year to Dec 2026",
+        "41.3",
+        "42.5",
+        "Jul 31, 2026"
+       ],
+       [
+        "Adjusted EBIT Margin",
+        "Year to Dec 2026",
+        "6.3%",
+        "6.6%",
+        "Jul 31, 2026"
+       ],
+       [
+        "Adjusted EPS (US$ per share)",
+        "Year to Dec 2026",
+        "6.70",
+        "7.30",
+        "Jul 31, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Dec 2026",
+        "1.75",
+        "1.85",
+        "Jul 31, 2026"
+       ]
+      ],
+      "note": "The margin percentages show how much of each dollar of sales the company expects to keep as operating profit, rather than the total sales it expects."
+     }
+    },
+    {
+     "heading": "What were Magna’s last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q1 2026 offers a useful contrast because held-for-sale impairment charges affected reported income before income taxes and net income. Q2 cash was also strong, but first-half cash included customer recoveries. The specialist therefore asks whether margins and cash conversion persist in later quarters."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,980",
+        "10,381",
+        "10,848",
+        "10,462",
+        "10,631",
+        "10,069",
+        "10,628",
+        "10,280"
+       ],
+       [
+        "Gross margin",
+        "14.7%",
+        "13.7%",
+        "16.2%",
+        "14.2%",
+        "14.1%",
+        "12.3%",
+        "14.6%",
+        "14.1%"
+       ],
+       [
+        "Income before income taxes",
+        "599",
+        "87",
+        "114",
+        "473",
+        "496",
+        "225",
+        "381",
+        "700"
+       ],
+       [
+        "Net income",
+        "469",
+        "-12",
+        "-1",
+        "305",
+        "379",
+        "146",
+        "203",
+        "484"
+       ],
+       [
+        "EPS, diluted",
+        "1.72",
+        "-0.04",
+        "0.00",
+        "1.08",
+        "1.35",
+        "0.52",
+        "0.71",
+        "1.68"
+       ],
+       [
+        "**= Free cash flow**",
+        "685",
+        "458",
+        "1,450",
+        "645",
+        "381",
+        "-191",
+        "1,201",
+        "251"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Magna watch on October 30, 2026?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome turns on new programs ramping, Complete Vehicles utilization improving and recurring cash flow supporting investment and buybacks. Q3 results on October 30, 2026, will test margins, cash flow and recovery against guidance. The repurchase authorization expires November 6, 2026, while buybacks compete with investment and debt reduction for cash. Investor Day on November 11, 2026, centers on margins, investment, returns and time to scale for the non-automotive strategy."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "10,980"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.72"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "10,280",
+      "10,628",
+      "10,069",
+      "10,631",
+      "10,462",
+      "10,848",
+      "10,381",
+      "10,980"
+     ],
+     "EPS, diluted": [
+      "1.68",
+      "0.71",
+      "0.52",
+      "1.35",
+      "1.08",
+      "0.00",
+      "-0.04",
+      "1.72"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mg-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MG.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Magna",
+ "first_memo_date": "2026-10-17T15:32:48Z"
+}

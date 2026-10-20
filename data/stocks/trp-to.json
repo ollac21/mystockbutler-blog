@@ -1,0 +1,817 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TRP.TO",
+ "slug": "trp-to",
+ "company": "TC Energy Corporation",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-13T21:21:44Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 87.35,
+ "price_date": "2026-10-13T18:46:23Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 244,
+  "tables": 27,
+  "words": 16663,
+  "sources": 169
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "TC Energy is an infrastructure company: it moves and stores natural gas and owns interests in power plants. Its business is to turn dependable access to those assets into contracted payments, then use the money to run, finance and expand them."
+ },
+ "sources": [
+  {
+   "title": "Second-quarter 2026 MD&A",
+   "url": "https://www.sec.gov/Archives/edgar/data/99070/000123238426000045/trp-06302026xmda.htm"
+  },
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://www.tcenergy.com/siteassets/pdfs/investors/reports-and-filings/annual-and-quarterly-reports/2025/tce-2025-annual-report.pdf"
+  },
+  {
+   "title": "Management information circular — 2026-05-07",
+   "url": "https://www.tcenergy.com/siteassets/pdfs/investors/notice-and-access/2026/tce-2026-management-information-circular.pdf"
+  }
+ ],
+ "rivals": [
+  "ENB.TO",
+  "WMB",
+  "KMI",
+  "OKE",
+  "PPL.TO",
+  "EPD",
+  "MPLX",
+  "SOBO.TO",
+  "ALA.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "TC Energy stock forecast",
+   "meta_description": "TC Energy's stock forecast weighs scenario prices, cash generation, funding needs and valuation against earnings and free cash flow.",
+   "opening": "TC Energy's weighted forecast is C$92.23 by October 2027, a 9% total return. It hinges on earnings reaching the upper end of management’s 2026 expectation as major projects and Bruce Power operations support growth.",
+   "closing": "The full memo also explains TC Energy's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could TC Energy's shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is C$92.23 by October 2027, a 9% total return. It reaches C$96.29 by October 2029, a 22% total return. The bear case has 25% probability. The base case has 60%. The bull case has 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 87.35, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 87.35, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "74.23 (-11 %)",
+        "66.31 (-16 %)",
+        "59.56 (-20 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "95.02 (+13 %)",
+        "96.70 (+18 %)",
+        "100.07 (+26 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "111.08 (+31 %)",
+        "124.64 (+50 %)",
+        "142.38 (+75 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "92.23 (+9 %)",
+        "93.30 (+15 %)",
+        "96.29 (+22 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right for TC Energy, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome turns on earnings reaching the upper end of management’s 2026 expectation as major projects and Bruce Power operations support growth. Bruce Power is the Ontario nuclear power station in which TC Energy owns an interest. Third-quarter results, expected in early November 2026, will test earnings and cash flow against that expectation. Bruce Power Unit 5 refurbishment and expected Great Lakes rate-settlement approval are fourth-quarter 2026 tests. Coastal GasLink Phase 2 construction and the expected Guadalajara-Manzanillo asset sale are 2027 catalysts; sale proceeds enter the case only after closing."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does TC Energy really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow starts with cash from operations and subtracts capital spending. A further deduction for stock compensation treats dilution as an economic cost, even though issuing shares does not use current cash. The result is more useful for shareholders than EBITDA, but only if the spending definition is complete."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,531",
+        "7,026",
+        "6,242",
+        "5,666"
+       ],
+       [
+        "− Capital spending",
+        "5,286",
+        "6,231",
+        "8,100",
+        "6,621"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,245",
+        "795",
+        "-1,858",
+        "-955"
+       ],
+       [
+        "− Stock pay",
+        "7",
+        "6",
+        "9",
+        "10"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,238",
+        "789",
+        "-1,867",
+        "-965"
+       ]
+      ],
+      "note": "The zeroes for lease payments and interest paid do not mean the company paid none; those payments are already included in cash from operations."
+     }
+    },
+    {
+     "heading": "What does TC Energy's stock price say about earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, tells how much investors pay for each dollar of earnings attributable to common shareholders. A lower forward P/E than trailing P/E means the price assumes earnings will rise. Price to book is less decisive because accounting book value records past investment and depreciation, not the value of future pipeline receipts."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "87.35"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "22.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company's debt after subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "87.35"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "96.29 (+22 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "22.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 87.35,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "74.23 (-11 %)",
+       "66.31 (-16 %)",
+       "59.56 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "95.02 (+13 %)",
+       "96.70 (+18 %)",
+       "100.07 (+26 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "111.08 (+31 %)",
+       "124.64 (+50 %)",
+       "142.38 (+75 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "92.23 (+9 %)",
+       "93.30 (+15 %)",
+       "96.29 (+22 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/trp-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRP.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "TC Energy dividend: payout and coverage",
+   "meta_description": "TC Energy pays C$3.40 per share, but 2025 free cash flow was below cash common dividends.",
+   "opening": "TC Energy pays C$3.40 per share after the spin-off, down from C$3.70, and 2025 free cash flow of C$2,245 million was below cash common dividends of about C$3.5 billion. The dividend therefore depends on more than current free cash flow.",
+   "closing": "The full TC Energy memo also answers how TC Energy’s business works, how TC Energy compares with its rivals, who manages TC Energy, and what risks TC Energy faces.",
+   "blocks": [
+    {
+     "heading": "How much does TC Energy pay in dividends per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.6 — Financial room after the spin-off",
+       "text": "On October 1, 2024, each investor received one new TC share for each old TC share, plus 0.2 South Bow shares. TC’s dividend therefore fell from C$3.70 to C$3.40 without the shareholder simply losing the separated business; South Bow became a second company with its own assets and dividend."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "C$ millions",
+      "caption": "Results (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "15,239",
+        "13,771",
+        "13,267",
+        "12,309",
+        ""
+       ],
+       [
+        "Revenue growth (calculated)",
+        "10.7%",
+        "3.8%",
+        "7.8%",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "3,731",
+        "4,303",
+        "2,310",
+        "115",
+        ""
+       ],
+       [
+        "EPS, diluted",
+        "3.47",
+        "4.05",
+        "2.15",
+        "0.01",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "3.40",
+        "3.70",
+        "3.72",
+        "3.60",
+        "3.48"
+       ]
+      ],
+      "note": "Operating income is not just profit from normal business operations here because it also includes investment income, impairment charges, and gains from selling assets."
+     }
+    },
+    {
+     "heading": "Is TC Energy’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.6 — Financial room after the spin-off",
+       "text": "The funding gap remains visible. 2025 free cash flow was C$2,245 million, below cash common dividends of about C$3.5 billion, before separately recorded equity-investment contributions. Expansion spending may create future cash, but the whole program also includes maintenance, refurbishment and dividends."
+      },
+      {
+       "n": 163,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.7 — Earnings from investments and cash received",
+       "text": "In 2025, TC recorded C$1,274 million of equity-investment income. It received C$1,616 million of operating distributions, but also contributed C$1,051 million to equity investments. The three figures tell different stories: accounting profit, cash received and cash reinvested."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,245",
+        "795",
+        "-1,858",
+        "-955",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "3,507",
+        "3,953",
+        "2,787",
+        "3,192",
+        "3,317"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "2,191",
+        "3,913",
+        "4,769",
+        "4,191",
+        ""
+       ],
+       [
+        "− Acquisitions",
+        "0",
+        "0",
+        "307",
+        "0",
+        ""
+       ],
+       [
+        "+ Debt issued",
+        "8,945",
+        "",
+        "15,884",
+        "4,282",
+        ""
+       ]
+      ],
+      "note": "The company paid shareholders more than the cash it generated in 2025, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change TC Energy’s dividend?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base and bear cases hold dividends at C$3.40 per share. The payout was reduced from C$3.70 after the spin-off, while 2025 free cash flow remained below common dividends. The bull case allows only 2% annual growth, reaching C$3.47 first and C$3.61 last, because contracted earnings improve coverage but do not remove investment needs."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would also weaken if refinancing costs rise, cash shortfalls persist or dividends consume more funding. The agreed Guadalajara-Manzanillo sale is expected to close in the first half of 2027; delayed proceeds would increase pressure."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is TC Energy’s dividend yield today against its share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "87.35"
+       ],
+       [
+        "Market value (calculated)",
+        "91,018.70"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.5%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company's debt after subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.37"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.41",
+      "3.20",
+      "2.71",
+      "3.81",
+      "3.37"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "-0.97",
+      "-1.81",
+      "0.76",
+      "2.15"
+     ],
+     "Free cash flow per share": [
+      "",
+      "-0.96",
+      "-1.80",
+      "0.77",
+      "2.16"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/trp-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRP.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "TC Energy earnings date and guidance",
+   "meta_description": "TC Energy reports next on November 11, 2026; guidance points to higher earnings, while cash flow and project execution matter.",
+   "opening": "TC Energy’s next results are expected on November 11, 2026. Watch whether cash flow supports management’s upper-end earnings expectation.",
+   "closing": "The full memo also explains TC Energy’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has TC Energy guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 194,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "TC expects comparable EBITDA to reach the upper end of its existing 2026 range. Comparable EBITDA measures the earnings power of ongoing operations before interest, taxes, depreciation and amortization, with specified items removed. The expected improvement rests on projects completed in 2025, higher revenue from the Columbia Gas settlement and Bruce Power Unit 3’s return to commercial operation. TC also expects comparable earnings per share to exceed 2025, but gives no numerical EPS range."
+      },
+      {
+       "n": 196,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Capital spending remains substantial through 2030, while the 2028 EBITDA target is higher than the 2026 range. The guidance table separates these earnings, investment and funding promises."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions; US$ millions where labelled",
+      "caption": "Guidance in force (C$ millions; US$ millions where labelled)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Comparable EBITDA",
+        "Year to Dec 2026",
+        "11,600",
+        "11,800",
+        "Jul 30, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "6,000",
+        "6,500",
+        "Jul 30, 2026"
+       ],
+       [
+        "Net capital expenditures",
+        "Year to Dec 2026",
+        "5,500",
+        "6,000",
+        "Jul 30, 2026"
+       ],
+       [
+        "Comparable earnings per common share",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 30, 2026"
+       ],
+       [
+        "Canadian Natural Gas Pipelines, Comparable EBITDA",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Feb 12, 2026"
+       ],
+       [
+        "U.S. Natural Gas Pipelines, Comparable EBITDA",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Feb 12, 2026"
+       ]
+      ],
+      "note": "The estimated project costs are the total budget for each project, not the amount the company will spend each year."
+     }
+    },
+    {
+     "heading": "Has TC Energy kept its project promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Project execution supplies a harder test than a compensation formula. Southeast Gateway in Mexico cost approximately US$3.9 billion, 13% below its original estimate. CFE, Mexico’s state electricity company, paid the May toll on time in June 2025. A toll is a customer’s payment for reserved pipeline capacity, like a payment to use a toll road. But Villa de Reyes still depended on resolving land and stakeholder problems."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do TC Energy’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter shows broad operating improvement, but cash growth was much less dramatic than profit growth."
+      },
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, net income and both reported and comparable EPS improved against the same quarter a year earlier. That comparison is more useful than comparing adjacent quarters because winter demand, outages, settlements and commissioning make the sequence uneven."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,957",
+        "3,861",
+        "4,168",
+        "3,704",
+        "3,744",
+        "3,623",
+        "3,577",
+        "3,358"
+       ],
+       [
+        "Operating income",
+        "2,173",
+        "2,171",
+        "2,188",
+        "1,928",
+        "1,954",
+        "1,966",
+        "1,898",
+        "2,383"
+       ],
+       [
+        "Net income",
+        "1,016",
+        "927",
+        "994",
+        "841",
+        "890",
+        "1,006",
+        "1,097",
+        "1,364"
+       ],
+       [
+        "EPS, diluted",
+        "0.95",
+        "0.86",
+        "0.92",
+        "0.78",
+        "0.83",
+        "0.94",
+        "1.03",
+        "1.29"
+       ]
+      ],
+      "note": "Lease payments and interest paid show as zero because the company includes them in cash from operations instead of reporting them separately."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "3,957"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.95"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,358",
+      "3,577",
+      "3,623",
+      "3,744",
+      "3,704",
+      "4,168",
+      "3,861",
+      "3,957"
+     ],
+     "EPS, diluted": [
+      "1.29",
+      "1.03",
+      "0.94",
+      "0.83",
+      "0.78",
+      "0.92",
+      "0.86",
+      "0.95"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/trp-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TRP.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "TC Energy",
+ "first_memo_date": "2026-10-13T21:21:44Z"
+}

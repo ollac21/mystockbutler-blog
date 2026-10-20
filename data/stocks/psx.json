@@ -1,0 +1,820 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PSX",
+ "slug": "psx",
+ "company": "Phillips 66",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T12:39:30Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 297.29,
+ "price_date": "2026-10-14T20:00:03Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 27,
+  "words": 18224,
+  "sources": 245
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Phillips 66 is an energy company that buys raw materials, turns them into fuels and industrial ingredients, and moves them to customers. To understand its business, follow what it sells, how it earns a margin or a fee, and who pays along the chain."
+ },
+ "sources": [
+  {
+   "title": "Phillips 66 — 2025 Form 10-K — February 20, 2026 — SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000006/psx-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000003/psx-20251231_ex991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470125000035/psx-20241231_ex991.htm"
+  }
+ ],
+ "rivals": [
+  "VLO",
+  "MPC",
+  "DINO",
+  "PBF",
+  "DK",
+  "CVI",
+  "XOM",
+  "CVX",
+  "SHEL",
+  "BP"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Phillips 66 stock forecast",
+   "meta_description": "Phillips 66 stock forecast with weighted scenarios, the cash behind the business, and the valuation investors are testing.",
+   "opening": "Phillips 66's weighted price is $306.84 in October 2027, with 30% probability to bear, 50% to base and 20% to bull. Phillips 66's outlook hinges on normalized refining earnings, execution, and cash available for debt reduction and buybacks.",
+   "closing": "The full Phillips 66 memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Phillips 66's shares be by 2027?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $306.84 in October 2027, implying a 5% total return. By October 2029, it is $245.71, a 12% loss including dividends. The cases assign 30% probability to bear and 50% to base. Bull receives 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 297.29, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 297.29, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "156.08 (-46 %)",
+        "95.57 (-64 %)",
+        "137.33 (-49 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "308.45 (+5 %)",
+        "264.13 (-8 %)",
+        "235.43 (-15 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "528.94 (+80 %)",
+        "524.97 (+80 %)",
+        "433.98 (+51 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "306.84 (+5 %)",
+        "265.73 (-7 %)",
+        "245.71 (-12 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average value across the bear, base, and bull cases, not a separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Phillips 66?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Phillips 66’s price path is modestly positive by October 2027 but negative by October 2029; it hinges on normalized refining earnings, execution, and cash available for debt reduction and buybacks. Management targets adjusted controllable refining costs of $5.50 per barrel by 2027 and at least $1,000 million of additional mid-cycle adjusted EBITDA from Midstream and Chemicals. It promises to return at least 50% of net operating cash flow to shareholders during 2026–2027 and targets total debt of $17,000 million by 2027."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case reflects realized refining margins falling from $17.26 per barrel in 2023 to $8.84 in 2024. The bull case assumes tighter supply, better market capture and partial delivery of the $5.50-per-barrel cost target and $1,000 million Midstream and Chemicals EBITDA target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Phillips 66 really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Subtracting $220 million of stock compensation produces “real free cash flow.” That is an analytical measure: issuing shares does not consume cash immediately, but it still transfers value from existing owners to employees."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,962",
+        "4,191",
+        "7,029",
+        "10,813",
+        "6,017"
+       ],
+       [
+        "− Capital spending",
+        "2,233",
+        "1,859",
+        "2,155",
+        "1,888",
+        "1,860"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,729",
+        "2,332",
+        "4,874",
+        "8,925",
+        "4,157"
+       ],
+       [
+        "− Stock pay",
+        "220",
+        "210",
+        "297",
+        "210",
+        "144"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,509",
+        "2,122",
+        "4,577",
+        "8,715",
+        "4,013"
+       ]
+      ],
+      "note": "Real free cash flow subtracts stock pay even though no cash was paid, because giving employees shares reduces the portion of the company left for shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Phillips 66 today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue has fallen from its 2022 peak while operating margin and the company’s own free-cash-flow margin move with the cycle. In 2025, reported earnings improved, but adjusted net income was $2,632 million and asset-sale gains lifted the reported result. Shareholders received $1.38 per share more than free cash flow after dividends and buybacks. At $297.29, Phillips 66 has a 16.9x trailing P/E and a 9.7x forward P/E, against a 2.3% free-cash-flow yield and 1.7% dividend yield. Market value is $118,625 million; enterprise value is $135,091 million. Free cash flow is the company’s own figure: cash from operations minus capital spending."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "297.29"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "9.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "The lower price-to-earnings number uses analysts’ expected profit for the next year, so it is only an estimate, not what the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "297.29"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "245.71 (-12 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "9.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 297.29,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "156.08 (-46 %)",
+       "95.57 (-64 %)",
+       "137.33 (-49 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "308.45 (+5 %)",
+       "264.13 (-8 %)",
+       "235.43 (-15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "528.94 (+80 %)",
+       "524.97 (+80 %)",
+       "433.98 (+51 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "306.84 (+5 %)",
+       "265.73 (-7 %)",
+       "245.71 (-12 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/psx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Phillips 66 dividend",
+   "meta_description": "Phillips 66 pays a quarterly dividend, but recent shareholder payments exceeded free cash flow.",
+   "opening": "Phillips 66's current rate is $1.27 quarterly, or $5.08 per share. In 2025, shareholders received $3,129 million against free cash flow of $2,729 million, so cash did not cover all shareholder payments.",
+   "closing": "The full memo also explains Phillips 66's business, its rivals, its management decisions and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Phillips 66 pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 74,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2022, free cash flow was $8,925 million. Shareholder payments were $3,306 million. The balance looked very different in 2024: free cash flow was $2,332 million, while shareholders received $5,333 million. Buybacks, which are purchases of the company’s own shares, fell from $3,451 million in 2024 to $1,207 million in 2025. Dividends were steadier."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at $5.08 per share, matching the current $1.27 quarterly rate. The base case raises it to $5.28 and $5.48; the bear case freezes it; the bull case reaches $5.36 and $5.64. The base path follows the record of annual increases while recognizing that the 50% cash-return target does not specify dividend growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "4.71",
+        "4.46",
+        "4.15",
+        "3.78",
+        "3.60"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.96",
+        "8.18",
+        "8.86",
+        "3.19",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "",
+        "11.47",
+        "5.10"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Phillips 66's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company also recycled assets. In 2025, businesses and assets sold brought in $3,520 million. Acquisitions cost $3,498 million. That looks broadly self-funding, but shareholders still received $3,129 million against free cash flow of $2,729 million. Asset sales can finance purchases, but they do not prove that the remaining businesses generated enough spare cash."
+      },
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Phillips 66 generated substantial cash in 2025, but investment and timing reduced what owners could freely claim. Operating cash flow was $4,962 million in 2025. Capital spending was $2,233 million, leaving free cash flow of $2,729 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,729",
+        "2,332",
+        "4,874",
+        "8,925",
+        "4,157"
+       ],
+       [
+        "− Dividends paid",
+        "1,922",
+        "1,882",
+        "1,882",
+        "1,793",
+        "1,585"
+       ],
+       [
+        "− Share buybacks",
+        "1,207",
+        "3,451",
+        "4,014",
+        "1,513",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "5,434",
+        "2,248"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "564",
+        "3,071",
+        "1,185",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "114.7%",
+        "228.7%",
+        "121.0%",
+        "37.0%",
+        "38.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Phillips 66's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue has fallen from its 2022 peak while operating margin and the company’s own free-cash-flow margin move with the cycle. In 2025, reported earnings improved, but adjusted net income was $2,632 million and asset-sale gains lifted the reported result. Shareholders received $1.38 per share more than free cash flow after dividends and buybacks. At $297.29, Phillips 66 has a 16.9x trailing P/E and a 9.7x forward P/E, against a 2.3% free-cash-flow yield and 1.7% dividend yield. Market value is $118,625 million; enterprise value is $135,091 million. Free cash flow is the company’s own figure: cash from operations minus capital spending."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "297.29"
+       ],
+       [
+        "Market value (calculated)",
+        "118,625"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "135,091"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "The lower price-to-earnings number uses analysts’ expected profit for the next year, so it is only an estimate, not what the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.71"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.60",
+      "3.78",
+      "4.15",
+      "4.46",
+      "4.71"
+     ],
+     "Real free cash flow per share": [
+      "9.11",
+      "18.40",
+      "10.10",
+      "5.03",
+      "6.15"
+     ],
+     "Free cash flow per share": [
+      "9.44",
+      "18.84",
+      "10.75",
+      "5.53",
+      "6.69"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/psx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Phillips 66 earnings: October 28, 2026",
+   "meta_description": "Phillips 66’s October 28, 2026 results: guidance, recent revenue and profit, and the operating and cash details to watch.",
+   "opening": "Phillips 66’s next results are expected on October 28, 2026. For Phillips 66, the key thing to watch is whether turnaround expense, Corporate & Other costs and cash reconciliation match guidance.",
+   "closing": "The full memo also answers questions about Phillips 66’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Phillips 66 guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The immediate commitment is $2,370 million of capital expenditures and investments for 2026. Capital spending buys assets that last for years; sustaining capital keeps the current system working, while growth capital expands it. Midstream receives $1,100 million and Refining receives $1,080 million. Chevron Phillips Chemical Company, or CPChem, the chemicals joint venture, has a separate $680 million allocation that it is expected to fund itself."
+      },
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Finally, management promises to return at least 50.0% of net operating cash flow to shareholders during 2026–2027. It also aims for total debt of $17,000 million and net debt below 30.0% of capital by 2027. Because working-capital movements are excluded from the return calculation, the targets must be met through repeatable operations. That makes analysts’ earnings expectations the next part of the story."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Total Capital Expenditures and Investments",
+        "Year to Dec 2026",
+        "2,370",
+        "2,370",
+        "Feb 20, 2026"
+       ],
+       [
+        "Refining annual adjusted controllable costs per barrel (US$ per barrel)",
+        "Year to Dec 2027",
+        "5.50",
+        "5.50",
+        "Aug 11, 2026"
+       ],
+       [
+        "Reduction in operating, SG&A & freight costs",
+        "Year to Dec 2027",
+        "500",
+        "",
+        "Aug 11, 2026"
+       ],
+       [
+        "Total mid-cycle adjusted EBITDA growth in Midstream and Chemicals",
+        "Year to Dec 2027",
+        "1,000",
+        "",
+        "Aug 11, 2026"
+       ],
+       [
+        "Net cash flow from operations returned to shareholders",
+        "2026–2027",
+        "50.0%",
+        "",
+        "Aug 11, 2026"
+       ],
+       [
+        "Target total debt",
+        "Year to Dec 2027",
+        "17,000",
+        "17,000",
+        "Aug 11, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Phillips 66 kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 118,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Phillips 66 returned $13.6 billion against a stated distribution commitment of $13 billion–$15 billion through year-end 2024. It also reported $1.5 billion in annualized cost and capital reductions, while acknowledging that its net-debt-to-capital ratio exceeded its target. Annualized savings describe the yearly benefit at the achieved pace, not cash already saved for a full year."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Phillips 66’s last eight quarters of revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The second quarter of 2026 showed a genuine operating recovery, amplified by hedges and working-capital timing. Revenue rose from $33,323 million to $51,004 million against the prior-year quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "51,004",
+        "32,540",
+        "34,108",
+        "34,515",
+        "33,323",
+        "30,430",
+        "33,685",
+        "35,528"
+       ],
+       [
+        "Operating income",
+        "5,204",
+        "515",
+        "3,709",
+        "424",
+        "1,350",
+        "835",
+        "155",
+        "604"
+       ],
+       [
+        "Net income",
+        "3,847",
+        "207",
+        "2,906",
+        "133",
+        "877",
+        "487",
+        "8",
+        "346"
+       ],
+       [
+        "EPS, diluted",
+        "9.55",
+        "0.51",
+        "7.17",
+        "0.32",
+        "2.15",
+        "1.18",
+        "0.01",
+        "0.82"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Phillips 66’s next results?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next checkpoint is the October 28, 2026 results call. Investors should compare Q3 turnaround expense of $100–120 million and Corporate & Other costs of $325–350 million with actual results, then follow the cash reconciliation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "51,004"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "9.55"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "35,528",
+      "33,685",
+      "30,430",
+      "33,323",
+      "34,515",
+      "34,108",
+      "32,540",
+      "51,004"
+     ],
+     "EPS, diluted": [
+      "0.82",
+      "0.01",
+      "1.18",
+      "2.15",
+      "0.32",
+      "7.17",
+      "0.51",
+      "9.55"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/psx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PSX&src=seo-earnings"
+  }
+ },
+ "short_name": "Phillips 66",
+ "first_memo_date": "2026-10-15T12:39:30Z"
+}

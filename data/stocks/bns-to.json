@@ -1,0 +1,842 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BNS.TO",
+ "slug": "bns-to",
+ "company": "The Bank of Nova Scotia",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "bank",
+ "country": "canada",
+ "memo_date": "2026-10-11T22:08:13Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 126.03,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-12-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 29,
+  "words": 18296,
+  "sources": 173
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "A bank does not mainly sell the money customers place with it; it sells access to payments, credit, investments and financial expertise. Scotiabank turns those relationships into revenue by earning interest, charging fees and managing financial risks."
+ },
+ "sources": [
+  {
+   "title": "Scotiabank proxy circular",
+   "url": "https://www.scotiabank.com/content/dam/scotiabank/corporate/quarterly-reports/2025/q4/Scotiabank-194th-Management-Proxy-Circular-EN-AODA.pdf"
+  },
+  {
+   "title": "official June holdings table",
+   "url": "https://www.sec.gov/Archives/edgar/data/1000275/000114036126033080/informationtable.xml"
+  },
+  {
+   "title": "FY2025 annual report, notes 2 and 20",
+   "url": "https://www.sec.gov/Archives/edgar/data/9631/000119312525304609/d10762dex991.pdf"
+  }
+ ],
+ "rivals": [
+  "RY.TO",
+  "TD.TO",
+  "BMO.TO",
+  "NA.TO",
+  "JPM",
+  "BAC",
+  "WFC",
+  "C",
+  "KEY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Scotiabank stock forecast",
+   "meta_description": "Scotiabank stock forecast: weighted scenarios show possible share values, while earnings, credit costs, capital and valuation shape the range.",
+   "opening": "Scotiabank's weighted scenario is assessed by October 2029, across a 27% bear, 53% base and 20% bull case. Scotiabank's forecast hinges on recurring earnings growth.",
+   "closing": "The full memo explains Scotiabank's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Scotiabank's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted result is built from a 27% bear case, a 53% base case and a 20% bull case. The table shows both the paths and their dividend-inclusive returns."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 126.03, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 126.03, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "89.12 (-26 %)",
+        "84.03 (-26 %)",
+        "78.58 (-27 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "111.33 (-8 %)",
+        "116.64 (+0 %)",
+        "118.86 (+6 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "122.78 (+1 %)",
+        "140.77 (+20 %)",
+        "160.99 (+40 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "107.62 (-11 %)",
+        "112.66 (-3 %)",
+        "116.41 (+4 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Scotiabank?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Scotiabank offers a small positive total return by October 2029, hinging on recurring earnings growth, controlled credit costs, and returns that justify its valuation. Management targets 14.0% ROE by FY2028 after adjusted ROE of 14.2% in Q3 2026, plus 7.0% annual compounded EPS growth and a 12.0% medium-term CET1 ratio. For FY2026, it expects strong earnings and revenue growth, wider margins, lower credit losses, and modest expense growth excluding divestitures."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much does Scotiabank really earn and give back?",
+     "paragraphs": [
+      {
+       "n": 117,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue comes from net interest income and other income, including fees, investments and markets. In 2025, both streams grew, but net income rose only 0.4% while diluted earnings per share fell 3.4%. Diluted EPS measures profit available to each common share after allowing for instruments that could become shares and claims belonging to other equity holders."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "C$ millions",
+      "caption": "Results (C$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "37,741",
+        "33,670",
+        "32,214",
+        "31,416",
+        "31,252"
+       ],
+       [
+        "Net income",
+        "7,789",
+        "7,758",
+        "7,338",
+        "9,916",
+        "9,624"
+       ],
+       [
+        "EPS, diluted",
+        "5.67",
+        "5.87",
+        "5.72",
+        "8.02",
+        "7.70"
+       ],
+       [
+        "Dividend per share",
+        "4.32",
+        "4.24",
+        "4.18",
+        "4.06",
+        "3.60"
+       ],
+       [
+        "Return on equity",
+        "9.7%",
+        "10.2%",
+        "10.3%",
+        "14.8%",
+        "14.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Scotiabank today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.3 — Against rivals",
+       "text": "Price to book adds a test of quality. Scotiabank trades at 1.9 times book and 2.4 times tangible book, which removes goodwill and other intangible assets. That premium makes sense only if the bank can keep earning strong returns on its capital. Higher loan losses or a need for more capital would reduce the profit produced by each dollar of equity."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "126.03"
+       ],
+       [
+        "Market value (calculated)",
+        "153,609.14"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.7x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.9x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "2.4x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "126.03"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "116.41 (+4 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "16.5x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 126.03,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "89.12 (-26 %)",
+       "84.03 (-26 %)",
+       "78.58 (-27 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "111.33 (-8 %)",
+       "116.64 (+0 %)",
+       "118.86 (+6 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "122.78 (+1 %)",
+       "140.77 (+20 %)",
+       "160.99 (+40 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "107.62 (-11 %)",
+       "112.66 (-3 %)",
+       "116.41 (+4 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bns-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BNS.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Scotiabank dividend: payout, coverage and yield",
+   "meta_description": "Scotiabank's dividend, cash coverage, payout outlook and current yield in plain English.",
+   "opening": "Scotiabank pays a quarterly dividend, and its earnings covered common dividends while leaving earnings retained after buybacks. The dividend outlook depends on earnings growth, credit costs and capital.",
+   "closing": "The full memo also covers Scotiabank’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Scotiabank pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from the current annual rate of C$4.56 to C$4.72, C$4.88 and C$5.04. That follows the history of annual increases and the 40%–50% payout target, but keeps growth modest because FY2025 EPS was C$5.67 and credit provisions were C$4,714 million."
+      },
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear dividend holds at C$4.56 before falling to C$4.32 and remaining there. The bull reaches C$4.80, C$5.12 and C$5.44 because earnings and capital recover faster. The current C$1.14 quarterly dividend supports the starting point."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ millions",
+      "caption": "What one share gets (C$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "5.67",
+        "5.87",
+        "5.72",
+        "8.02",
+        "7.70"
+       ],
+       [
+        "− Dividends, per share",
+        "4.30",
+        "4.22",
+        "4.16",
+        "4.02",
+        "3.57"
+       ],
+       [
+        "**= Kept, per share**",
+        "0.82",
+        "1.69",
+        "1.59",
+        "1.59",
+        "4.10"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Scotiabank’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 65,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Across 2021–2025, earnings for common shareholders totalled C$40.535 billion. Common dividends used C$24.799 billion, while buybacks used C$3.768 billion. That left C$11.968 billion on the earnings-less-distributions calculation."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "Follow the money: what it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "7,283",
+        "7,286",
+        "6,919",
+        "9,656",
+        "9,391"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "5,369",
+        "5,198",
+        "5,003",
+        "4,858",
+        "4,371"
+       ],
+       [
+        "− Share buybacks",
+        "895",
+        "0",
+        "0",
+        "2,873",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "1,019",
+        "2,088",
+        "1,916",
+        "1,925",
+        "5,020"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Scotiabank’s dividend?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if mortgage and consumer stress raises provisions during FY2027–FY2029, or if International Banking’s higher credit costs persist through FY2028. Technology and simplification spending would also be negative if the productivity ratio stays above management’s 50% target; the latest adjusted ratio was 52.5%."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "81,400 (80,100 / 81,800)",
+        "84,750 (81,500 / 85,550)",
+        "88,550 (82,800 / 89,850)"
+       ],
+       [
+        "Shares (millions)",
+        "1,206 (1,213 / 1,199)",
+        "1,199 (1,212 / 1,185)",
+        "1,192 (1,212 / 1,172)"
+       ],
+       [
+        "Dividends per share",
+        "4.72 (4.56 / 4.80)",
+        "4.88 (4.32 / 5.12)",
+        "5.04 (4.32 / 5.44)"
+       ],
+       [
+        "Price to book value",
+        "1.65 (1.35 / 1.80)",
+        "1.65 (1.25 / 1.95)",
+        "1.60 (1.15 / 2.10)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Scotiabank’s dividend yield at its current share price?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Five-year tables show revenue reaching C$37,741 million in FY2025 while reported ROE was 9.7%. Net interest margin was 2.3% against C$4,714 million of provisions, and CET1—the core capital cushion before depositors are affected—was 13.2%. Diluted EPS was C$5.67 as diluted average shares rose 1.3%; valuation was 16.5x trailing P/E and 1.9x price-to-book, with a 3.6% dividend yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.6%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.6%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/bns-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BNS.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Scotiabank earnings",
+   "meta_description": "Scotiabank's next results are expected on December 2, 2026; guidance calls for strong growth, while capital treatment is the key watch.",
+   "opening": "Scotiabank's next results are expected on December 2, 2026. Watch whether the expected capital-ratio reduction of approximately 15 basis points reflects a changed capital requirement rather than new losses.",
+   "closing": "The full Scotiabank memo answers how Scotiabank makes money, competes with rivals, is run by management, and faces its risks.",
+   "blocks": [
+    {
+     "heading": "What has Scotiabank guided for fiscal 2026?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s fiscal 2028 promises are a 14.0% return on equity and 7.0% annual compounded earnings-per-share growth from fiscal 2023. Return on equity measures profit earned on shareholders’ money. Common Equity Tier 1, or CET1, measures the common capital supporting risk-weighted assets, so it is a safety and growth measure rather than a profitability measure. Scotia’s medium-term CET1 target is 12.0%."
+      },
+      {
+       "n": 208,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the year ending October 2026, management expects strong earnings and revenue growth, wider margins, more fee revenue, lower expected loan losses, and modest expense growth excluding divestitures. Canadian Banking and Global Wealth Management should grow strongly, while International Banking excluding divestitures, Global Banking and Markets, and Tangerine should grow more modestly. Those differences matter because the group-wide result may conceal businesses still absorbing investment."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "C$ millions",
+      "caption": "Targets and guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "CET1 ratio target",
+        "Medium term",
+        "12.0%",
+        "",
+        "2026-08-25"
+       ],
+       [
+        "EPS growth",
+        "FY2023–FY2028 CAGR",
+        "7.0%",
+        "",
+        "2026-08-25"
+       ],
+       [
+        "Return on equity",
+        "FY2028",
+        "14.0%",
+        "",
+        "2026-08-25"
+       ],
+       [
+        "Operating leverage",
+        "Medium term",
+        "",
+        "",
+        "2026-08-25"
+       ],
+       [
+        "strong earnings growth",
+        "Year to Oct 2026",
+        "",
+        "",
+        "2025-12-02"
+       ],
+       [
+        "Strong revenue growth, excluding the impact of divestitures",
+        "Year to Oct 2026",
+        "",
+        "",
+        "2025-12-02"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Scotiabank kept its return-on-equity promise?",
+     "paragraphs": [
+      {
+       "n": 113,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Thomson also made a concrete promise: in December 2024, he reaffirmed a return-on-equity target of at least 14%. Return on equity measures profit against common shareholders’ capital. In the quarter ended July 31, 2026, adjusted return on equity reached 14.2%, while reported return on equity was 14.1%. Strong markets helped, Thomson acknowledged. One quarter shows progress; it does not prove that the result will survive weaker conditions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Scotiabank's revenue and profit trend looked like?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose 11.1% year over year, and diluted EPS rose 23.4%. Net interest income increased 6.8%. Canadian lending, cards, insurance, mutual funds, underwriting and advisory work all contributed, so the improvement was broader than simple loan growth."
+      },
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The latest quarter was cleaner, but credit-loss charges remained above the level of a year earlier. Impaired loans continued to rise, and CET1 declined from April. The evidence supports better operations across several quarters, not an assumption that the loss cycle has ended."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,535",
+        "9,837",
+        "9,646",
+        "9,803",
+        "9,486",
+        "9,080",
+        "9,372",
+        "8,526"
+       ],
+       [
+        "Net interest income",
+        "5,866",
+        "5,521",
+        "5,582",
+        "5,586",
+        "5,493",
+        "5,270",
+        "5,173",
+        "4,923"
+       ],
+       [
+        "Net income",
+        "2,908",
+        "2,595",
+        "2,287",
+        "2,219",
+        "2,447",
+        "1,976",
+        "1,147",
+        "1,642"
+       ],
+       [
+        "EPS, diluted",
+        "2.27",
+        "2.00",
+        "1.73",
+        "1.65",
+        "1.84",
+        "1.48",
+        "0.66",
+        "1.22"
+       ],
+       [
+        "Net interest margin",
+        "2.5%",
+        "2.5%",
+        "2.5%",
+        "2.4%",
+        "2.4%",
+        "2.3%",
+        "2.2%",
+        "2.2%"
+       ],
+       [
+        "CET1 capital ratio",
+        "13.1%",
+        "13.3%",
+        "13.3%",
+        "13.2%",
+        "13.3%",
+        "13.2%",
+        "12.9%",
+        "13.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Scotiabank's next release?",
+     "paragraphs": [],
+     "table": {
+      "title": "Capital, last eight quarters",
+      "unit": "",
+      "caption": "Capital, last eight quarters",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "CET1 capital ratio",
+        "13.1%",
+        "13.3%",
+        "13.3%",
+        "13.2%",
+        "13.3%",
+        "13.2%",
+        "12.9%",
+        "13.1%"
+       ],
+       [
+        "Leverage ratio",
+        "4.3%",
+        "4.3%",
+        "4.4%",
+        "4.5%",
+        "4.5%",
+        "4.5%",
+        "4.4%",
+        "4.4%"
+       ],
+       [
+        "Liquidity coverage ratio",
+        "126.0%",
+        "124.0%",
+        "122.0%",
+        "128.0%",
+        "126.0%",
+        "131.0%",
+        "128.0%",
+        "131.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (C$ millions)",
+     "value": "10,535"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "2.27"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,526",
+      "9,372",
+      "9,080",
+      "9,486",
+      "9,803",
+      "9,646",
+      "9,837",
+      "10,535"
+     ],
+     "EPS, diluted": [
+      "1.22",
+      "0.66",
+      "1.48",
+      "1.84",
+      "1.65",
+      "1.73",
+      "2.00",
+      "2.27"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bns-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BNS.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Scotiabank",
+ "first_memo_date": "2026-10-11T22:08:13Z"
+}

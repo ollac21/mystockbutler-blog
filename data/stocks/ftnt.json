@@ -1,0 +1,596 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FTNT",
+ "slug": "ftnt",
+ "company": "Fortinet, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-14T22:28:53Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 184.05,
+ "price_date": "2026-10-14T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 27,
+  "words": 16384,
+  "sources": 233
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Fortinet sells the equipment, software, and services that connect an organization’s devices and protect the traffic between them. Its dollar comes in first through a product sale and later through support, security subscriptions, renewals, and related services."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 15",
+   "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000007/ftnt-20251231.htm"
+  },
+  {
+   "title": "2024 annual report, Note 6",
+   "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203925000011/ftnt-20241231.htm"
+  },
+  {
+   "title": "Fortinet’s 2023 and 2025 revenue notes",
+   "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203924000014/ftnt-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "PANW",
+  "CHKP",
+  "CRWD",
+  "FFIV",
+  "NET"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Fortinet stock forecast",
+   "meta_description": "Fortinet’s weighted scenario reaches $188.44 in October 2027 and $226.97 in October 2029; the outcome hinges on durable service growth.",
+   "opening": "Fortinet’s weighted scenario reaches $188.44 in October 2027 and $226.97 in October 2029, with 55% base, 25% bear and 20% bull probabilities. Fortinet’s outcome hinges on whether replacement sales become new deployments, followed by renewals and cross-selling.",
+   "closing": "The full memo also explains Fortinet’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Fortinet’s shares go?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Fortinet’s weighted outcome is modest upside, with substantial room for either disappointment or acceleration. The forecast reaches $188.44 in October 2027, a 2% return with dividends. It reaches $206.09 in October 2028, a 12% return. It reaches $226.97 in October 2029, a 23% return. The October 2029 range runs from $119.24 in the bear case to $349.86 in the bull case, against today’s $184.05."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 184.05, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 184.05, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "149.94 (-19 %)",
+        "129.45 (-30 %)",
+        "119.24 (-35 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "193.39 (+5 %)",
+        "212.16 (+15 %)",
+        "231.25 (+26 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "222.97 (+21 %)",
+        "285.19 (+55 %)",
+        "349.86 (+90 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "188.44 (+2 %)",
+        "206.09 (+12 %)",
+        "226.97 (+23 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate prediction that is guaranteed to happen."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Fortinet?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes the refresh wave fades after October 2027, weaker renewals expose uncertain hardware-to-service conversion, and valuation contracts. It leads from $149.94 in 2027 to $119.24 in 2029, with a 25% probability. The probability reflects the 2023 hardware downcycle and missing cohort-level renewal data, although recurring services and current guidance make a prolonged decline less likely."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case assumes continued service growth, moderating comparisons, and gradual multiple compression. It leads from $193.39 to $231.25, with a 55% probability because cash generation has risen each year through 2025 and current guidance still points to growth."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires replacement sales to become new deployments, followed by renewals, SASE and Security Operations cross-selling, and operating leverage. It leads from $222.97 to $349.86, with a 20% probability because the service attachment evidence remains incomplete and infrastructure spending competes with buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "2,650 (2,400 / 2,900)",
+        "2,950 (2,000 / 3,500)",
+        "3,250 (1,850 / 4,100)"
+       ],
+       [
+        "Shares (millions)",
+        "728 (738 / 725)",
+        "723 (741 / 716)",
+        "718 (744 / 707)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "51.10 (43.50 / 54.00)",
+        "49.60 (43.70 / 56.40)",
+        "48.30 (42.20 / 58.10)"
+       ],
+       [
+        "Net debt",
+        "-5,374 (-6,255 / -5,051)",
+        "-7,069 (-8,525 / -6,796)",
+        "-9,064 (-10,645 / -9,141)"
+       ]
+      ],
+      "note": "Negative net debt means the company has more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "How much cash does Fortinet really make?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed and then recovered, while operating margin improved steadily. Free cash flow yield is thin; real free cash flow margin, computed from cash from operations minus capital spending, tests cash generation after stock-based pay, while net cash provides a cushion. Service growth is the key number, and diluted share count fell as buybacks and stock-based pay shaped the per-share result."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,590.6",
+        "2,258.1",
+        "1,935.5",
+        "1,730.6",
+        "1,499.7"
+       ],
+       [
+        "− Capital spending",
+        "364.8",
+        "378.9",
+        "204.1",
+        "281.2",
+        "295.9"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,225.8",
+        "1,879.2",
+        "1,731.4",
+        "1,449.4",
+        "1,203.8"
+       ],
+       [
+        "− Stock pay",
+        "279.5",
+        "257.9",
+        "249.0",
+        "217.3",
+        "207.9"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,946.3",
+        "1,621.3",
+        "1,482.4",
+        "1,232.1",
+        "995.9"
+       ]
+      ],
+      "note": "The company's free cash flow is 14 million dollars lower because it leaves out money received from an intellectual property matter, while we include it because the cash came in."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "184.05"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "226.97 (+23 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "48.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 184.05,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "149.94 (-19 %)",
+       "129.45 (-30 %)",
+       "119.24 (-35 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "193.39 (+5 %)",
+       "212.16 (+15 %)",
+       "231.25 (+26 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "222.97 (+21 %)",
+       "285.19 (+55 %)",
+       "349.86 (+90 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "188.44 (+2 %)",
+       "206.09 (+12 %)",
+       "226.97 (+23 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ftnt/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FTNT&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Fortinet earnings: guidance, results and what to watch",
+   "meta_description": "Fortinet reports next on October 28, 2026; guidance, results and service demand are the key points to watch.",
+   "opening": "Fortinet's next results are expected on October 28, 2026. Watch whether Fortinet's service growth accelerates and billings support the remaining annual target.",
+   "closing": "The full memo answers how Fortinet makes money, faces rivals, is run, and manages its risks.",
+   "blocks": [
+    {
+     "heading": "What has Fortinet guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Fortinet offers modest upside through October 2029, but it hinges on hardware demand creating durable service growth. Management guides to 19% revenue growth and 14% service-revenue growth for 2026, with a 35%–37% non-GAAP operating margin that excludes selected costs, including stock-based compensation. Weighted value is $188.44 in October 2027, a 2% return, and $226.97 in October 2029, a 23% return, with dividends included. The bear-to-bull range is $119.24–$349.86 per share. The cases carry 25% bear, 55% base and 20% bull probabilities. The October 28, 2026 results should test service growth, billings and whether infrastructure spending stays within guidance. Longer term, replacement sales must become new deployments and renewals, while FortiSASE and Security Operations expand inside existing accounts. The investment turns on whether FortiGate demand compounds into services rather than merely refreshing hardware."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "2,010.0",
+        "2,100.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "Billings",
+        "Quarter to Sep 2026",
+        "2,250.0",
+        "2,350.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "Non-GAAP operating margin",
+        "Quarter to Sep 2026",
+        "35.0%",
+        "37.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "8,020.0",
+        "8,180.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "Service revenue",
+        "Year to Dec 2026",
+        "5,180.0",
+        "5,220.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "Billings",
+        "Year to Dec 2026",
+        "9,350.0",
+        "9,550.0",
+        "Jul 29, 2026"
+       ],
+       [
+        "Non-GAAP operating margin",
+        "Year to Dec 2026",
+        "35.0%",
+        "37.0%",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Fortinet keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Fortinet met its annual revenue forecast, but that did not settle the refresh question. Management forecast 2025 revenue of US$6.65 billion–US$6.85 billion. It delivered US$6,799.6 million, within that range. Yet Fortinet could invoice some customers early, recognise service revenue from existing contracts and sell newer products while replacement demand arrived later than expected."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Fortinet's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed and then recovered, while operating margin improved steadily. Free cash flow yield is thin; real free cash flow margin, computed from cash from operations minus capital spending, tests cash generation after stock-based pay, while net cash provides a cushion. Service growth is the key number, and diluted share count fell as buybacks and stock-based pay shaped the per-share result."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,047.9",
+        "1,849.6",
+        "1,905.0",
+        "1,724.9",
+        "1,630.0",
+        "1,539.7",
+        "1,660.1",
+        "1,508.1"
+       ],
+       [
+        "Gross margin",
+        "80.2%",
+        "80.3%",
+        "79.6%",
+        "80.8%",
+        "80.7%",
+        "81.0%",
+        "81.1%",
+        "82.5%"
+       ],
+       [
+        "Operating income",
+        "689.3",
+        "580.0",
+        "625.6",
+        "547.3",
+        "458.0",
+        "453.8",
+        "574.1",
+        "470.9"
+       ],
+       [
+        "Net income",
+        "606.3",
+        "534.5",
+        "506.0",
+        "473.9",
+        "440.1",
+        "433.4",
+        "526.2",
+        "539.9"
+       ],
+       [
+        "EPS, diluted",
+        "0.82",
+        "0.72",
+        "0.68",
+        "0.62",
+        "0.57",
+        "0.56",
+        "0.68",
+        "0.70"
+       ],
+       [
+        "**= Free cash flow**",
+        "965.6",
+        "1,006.5",
+        "577.4",
+        "567.5",
+        "284.1",
+        "796.8",
+        "380.0",
+        "571.8"
+       ]
+      ],
+      "note": "These numbers are for each three-month quarter, even though some row descriptions say “year.”"
+     }
+    },
+    {
+     "heading": "What should I watch in Fortinet's next results?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October 28 results will test whether Fortinet’s raised outlook rests on lasting service demand rather than a temporary equipment wave."
+      },
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The immediate questions are whether service growth accelerates, billings support the remaining annual target and infrastructure spending stays within guidance. Product revenue alone cannot answer them, because a firewall sale arrives before the subscriptions attached to it produce their full revenue."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,047.9"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.82"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,508.1",
+      "1,660.1",
+      "1,539.7",
+      "1,630.0",
+      "1,724.9",
+      "1,905.0",
+      "1,849.6",
+      "2,047.9"
+     ],
+     "EPS, diluted": [
+      "0.70",
+      "0.68",
+      "0.56",
+      "0.57",
+      "0.62",
+      "0.68",
+      "0.72",
+      "0.82"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ftnt/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FTNT&src=seo-earnings"
+  }
+ },
+ "short_name": "Fortinet",
+ "first_memo_date": "2026-10-14T22:28:53Z"
+}

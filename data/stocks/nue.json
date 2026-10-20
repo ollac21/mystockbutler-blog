@@ -1,0 +1,918 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NUE",
+ "slug": "nue",
+ "company": "Nucor Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T10:32:07Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 256.29,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-26",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 283,
+  "tables": 26,
+  "words": 17346,
+  "sources": 199
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Nucor is a steel company, but its business begins before a coil leaves a mill and ends after steel has become part of a building, machine or data center. To understand how a dollar moves through it, follow the metal from scrap and iron to sale, customer, factory and shareholder."
+ },
+ "sources": [
+  {
+   "title": "Nucor’s investor presentation",
+   "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526022733/d20933dex992.htm"
+  },
+  {
+   "title": "2025 Annual Report",
+   "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526127746/d51842dars.pdf"
+  },
+  {
+   "title": "Nucor 2024 annual report",
+   "url": "https://s202.q4cdn.com/531038915/files/doc_financials/2025/ar/2024-Nucor-Annual-Report.pdf"
+  }
+ ],
+ "rivals": [
+  "CLF",
+  "CMC",
+  "MTUS",
+  "STLD",
+  "WS",
+  "GGB",
+  "RS",
+  "MT",
+  "IIIN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Nucor stock forecast",
+   "meta_description": "Nucor's weighted forecast points to $278.02 in October 2027 and $357.36 in October 2029, with steel recovery and West Virginia execution key.",
+   "opening": "Nucor's weighted forecast points to $278.02 in October 2027 and $357.36 in October 2029. It hinges on steel earnings recovery, West Virginia execution and cash generation that supports buybacks.",
+   "closing": "The full memo also answers how Nucor's business works, who its rivals are, how management is allocating capital and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could Nucor's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to moderate gains in the central path, with substantial downside if the steel recovery fails. The probability-weighted price is $278.02 in October 2027, $307.99 in October 2028 and $357.36 in October 2029. Including dividends, those returns are 9%, 22% and 42% from today’s $256.29."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 256.29, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 256.29, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "29 %",
+        "136.29 (-46 %)",
+        "99.47 (-59 %)",
+        "135.31 (-45 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "301.12 (+18 %)",
+        "338.04 (+34 %)",
+        "369.58 (+47 %)"
+       ],
+       [
+        "Bull",
+        "19 %",
+        "431.13 (+69 %)",
+        "544.01 (+114 %)",
+        "662.84 (+161 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "278.02 (+9 %)",
+        "307.99 (+22 %)",
+        "357.36 (+42 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate likely outcome."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Nucor?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The first target implies a 9% return including dividends; the last implies 42%. Bear probability is 29%. Base probability is 52%. Bull probability is 19%. Imports, construction demand, customer qualification—buyer approval that the mill's steel meets requirements—and profitable new capacity decide the outcome. Nucor's next results release is scheduled for October 26, 2026; operating cash flow, remaining capital spending and performance against Q3 guidance are the near-term tests. West Virginia commercial shipments are expected in early 2027, with utilization and product offerings building through 2027 and 2028. Remember: buybacks reduced average diluted shares by 3.1% in 2025, but share-count reduction cannot replace improving per-ton economics."
+      },
+      {
+       "n": 269,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path uses $7,300M in the first forecast year and $8,200M in the second. It reaches $8,500M in the final year. The bear path falls to $4,200M in the middle year before recovering to $5,000M. The bull path reaches $8,800M first and $11,000M last. The recent operating recovery supports the base case: first-half operating income implies an annualized EBITDA pace near $6,954M, although a $130M procurement refund will not recur. The West Virginia mill is expected to begin commercial shipments in early 2027 and build utilization through 2028."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "7,300 (5,000 / 8,800)",
+        "8,200 (4,200 / 10,000)",
+        "8,500 (5,000 / 11,000)"
+       ],
+       [
+        "Shares (millions)",
+        "223 (226 / 221)",
+        "220 (226 / 214)",
+        "216 (226 / 208)"
+       ],
+       [
+        "Dividends per share",
+        "2.24 (2.24 / 2.24)",
+        "2.28 (2.24 / 2.32)",
+        "2.32 (2.24 / 2.40)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "9.50 (7.00 / 11.00)",
+        "9.00 (6.50 / 11.50)",
+        "9.00 (7.00 / 12.00)"
+       ],
+       [
+        "Net debt",
+        "2,200 (4,130 / 1,520)",
+        "-400 (4,790 / -1,690)",
+        "-3,330 (4,420 / -5,870)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Nucor really make?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations reflects customer receipts, operating payments and changes in receivables, inventory and payables. Free cash flow subtracts capital spending. Stock compensation is not a current-period cash payment, but subtracting it gives a stricter measure because shareholders ultimately bear dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,234",
+        "3,979",
+        "7,112",
+        "10,072",
+        "6,230.776"
+       ],
+       [
+        "Of which, freed from working capital",
+        "",
+        "156",
+        "858",
+        "693",
+        ""
+       ],
+       [
+        "Of which, tied up in working capital",
+        "636",
+        "",
+        "",
+        "",
+        "1,862.89"
+       ],
+       [
+        "− Capital spending",
+        "3,422",
+        "3,173",
+        "2,214",
+        "1,948",
+        "1,621.989"
+       ],
+       [
+        "**= Free cash flow**",
+        "-188",
+        "806",
+        "4,898",
+        "8,124",
+        "4,608.787"
+       ],
+       [
+        "− Stock pay",
+        "133",
+        "132",
+        "130",
+        "137",
+        "135.775"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-321",
+        "674",
+        "4,768",
+        "7,987",
+        "4,473.012"
+       ]
+      ],
+      "note": "The company's 2021 number is $0.213 million higher only because it rounded its figures, not because it counted extra cash."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Nucor today?",
+     "paragraphs": [
+      {
+       "n": 194,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E, or price-to-earnings ratio, compares the share price with the earnings produced for each share. The forward P/E is lower than the trailing P/E, which means the valuation assumes earnings will recover. Price-to-book compares the share price with the accounting value of shareholders’ equity. Enterprise value measures the operating business after adding debt and subtracting cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "256.29"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "357.36 (+42 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 256.29,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "29 %",
+      "values": [
+       "136.29 (-46 %)",
+       "99.47 (-59 %)",
+       "135.31 (-45 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "301.12 (+18 %)",
+       "338.04 (+34 %)",
+       "369.58 (+47 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "19 %",
+      "values": [
+       "431.13 (+69 %)",
+       "544.01 (+114 %)",
+       "662.84 (+161 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "278.02 (+9 %)",
+       "307.99 (+22 %)",
+       "357.36 (+42 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/nue/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NUE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Nucor dividend: payment, cash cover and yield",
+   "meta_description": "Nucor pays $0.56 quarterly, or $2.24 annually, while recent payouts have run ahead of free cash flow.",
+   "opening": "Nucor’s current quarterly rate is $0.56, implying an annual pace of $2.24. Recent payouts have run ahead of the cash Nucor’s operations generated, so free cash flow has not fully covered them.",
+   "closing": "The full Nucor memo also explains Nucor’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Nucor pay per share?",
+     "paragraphs": [
+      {
+       "n": 271,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend is the steadiest driver. The current quarterly rate is $0.56, implying an annual pace of $2.24. Base dividends rise to $2.28 in the second year and $2.32 in the final year. The bear case holds at $2.24, while the bull case reaches $2.40. The base path follows the record of annual increases, but the bear case allows a pause because 2025 free cash flow was negative $188M during heavy investment."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; shares in millions",
+      "caption": "What one share gets (US$ per share; shares in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "7.52",
+        "8.46",
+        "18.00",
+        "28.79",
+        "23.16"
+       ],
+       [
+        "Free cash flow per share",
+        "-0.81",
+        "3.38",
+        "19.56",
+        "30.87",
+        "15.71"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.22",
+        "2.19",
+        "2.06",
+        "2.03",
+        "1.65"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.03",
+        "9.30",
+        "6.21",
+        "10.50",
+        "11.17"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract shares given to employees as pay; we subtract them because they reduce each existing shareholder's slice."
+     }
+    },
+    {
+     "heading": "Does Nucor’s dividend come from its cash?",
+     "paragraphs": [
+      {
+       "n": 105,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In the latest two years, Nucor paid shareholders more than free cash flow. That is possible because free cash flow is not a legal spending limit: the company can draw down cash, borrow, sell assets or use other financing. The choice still matters because shareholder returns then compete with the West Virginia mill, acquisitions, debt repayment and liquidity."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-188",
+        "806",
+        "4,898",
+        "8,124",
+        "4,608.787"
+       ],
+       [
+        "− Dividends paid",
+        "512",
+        "522",
+        "515",
+        "534",
+        "483.469"
+       ],
+       [
+        "− Share buybacks",
+        "700",
+        "2,217",
+        "1,554",
+        "2,763",
+        "3,276.088"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "2,394",
+        "4,495",
+        "698.53"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,649",
+        "2,285",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "339.8%",
+        "42.2%",
+        "40.6%",
+        "81.6%"
+       ]
+      ],
+      "note": "The company's own net debt is different because it counts restricted cash, while our calculation leaves that cash out."
+     }
+    },
+    {
+     "heading": "What could change Nucor’s dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "7,300 (5,000 / 8,800)",
+        "8,200 (4,200 / 10,000)",
+        "8,500 (5,000 / 11,000)"
+       ],
+       [
+        "Shares (millions)",
+        "223 (226 / 221)",
+        "220 (226 / 214)",
+        "216 (226 / 208)"
+       ],
+       [
+        "Dividends per share",
+        "2.24 (2.24 / 2.24)",
+        "2.28 (2.24 / 2.32)",
+        "2.32 (2.24 / 2.40)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "9.50 (7.00 / 11.00)",
+        "9.00 (6.50 / 11.50)",
+        "9.00 (7.00 / 12.00)"
+       ],
+       [
+        "Net debt",
+        "2,200 (4,130 / 1,520)",
+        "-400 (4,790 / -1,690)",
+        "-3,330 (4,420 / -5,870)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.22"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-0.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.65",
+      "2.03",
+      "2.06",
+      "2.19",
+      "2.22"
+     ],
+     "Real free cash flow per share": [
+      "15.25",
+      "30.35",
+      "19.04",
+      "2.83",
+      "-1.39"
+     ],
+     "Free cash flow per share": [
+      "15.71",
+      "30.87",
+      "19.56",
+      "3.38",
+      "-0.81"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/nue/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NUE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Nucor earnings: guidance and next results",
+   "meta_description": "Nucor’s next results are scheduled for October 26, 2026; see guidance, recent results and what to watch.",
+   "opening": "Nucor’s next results are scheduled for October 26, 2026. Watch operating cash flow and progress against management’s earnings range.",
+   "closing": "The full memo also answers what Nucor does, who its rivals are, how its management works, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Nucor guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the third quarter ending October 2026, management guided to $5.55–$5.65 per diluted share. It also expects full-year shipment growth, without giving a numerical range in the guide."
+      },
+      {
+       "n": 226,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Nucor’s policy is to return at least 40% of annual net earnings through dividends and share repurchases. Because the amount depends on earnings, this is a policy commitment rather than a fixed cash bill."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "2,500",
+        "2,500",
+        "Aug 12, 2026"
+       ],
+       [
+        "Annual amortization expense (2026)",
+        "Year to Dec 2026",
+        "249",
+        "249",
+        "Aug 12, 2026"
+       ],
+       [
+        "Annual amortization expense (2027)",
+        "Year to Dec 2027",
+        "246",
+        "246",
+        "Aug 12, 2026"
+       ],
+       [
+        "Annual net earnings returned to shareholders",
+        "Year to Dec 2026",
+        "40.0%",
+        "",
+        "Jul 28, 2026"
+       ],
+       [
+        "Third quarter earnings per diluted share",
+        "Quarter to Oct 2026",
+        "5.55",
+        "5.65",
+        "Sep 17, 2026"
+       ],
+       [
+        "Full-year shipment growth",
+        "Year to Dec 2026",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The 40 percent means the company plans to give shareholders at least 40 percent of its yearly earnings through dividends and share buybacks, not that shareholders receive 40 percent ownership."
+     }
+    },
+    {
+     "heading": "Has Nucor kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Buybacks exceeded stock pay in each year shown, and diluted shares fell in the two most recent years shown. That supports shareholder alignment, although buybacks still create value only when Nucor buys at sensible prices."
+      }
+     ],
+     "table": {
+      "title": "Stock pay and the share count",
+      "unit": "US$ millions",
+      "caption": "Stock pay and the share count (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Stock pay",
+        "133",
+        "132",
+        "130",
+        "137",
+        "135.775"
+       ],
+       [
+        "Share buybacks",
+        "700",
+        "2,217",
+        "1,554",
+        "2,763",
+        "3,276.088"
+       ],
+       [
+        "Buybacks minus stock pay (calculated)",
+        "567",
+        "2,085",
+        "1,424",
+        "2,626",
+        "3,140.313"
+       ],
+       [
+        "Diluted shares",
+        "231.0",
+        "238.5",
+        "250.4",
+        "263.2",
+        "293.39"
+       ],
+       [
+        "Diluted shares (average of the year), change (calculated)",
+        "-3.1%",
+        "-4.8%",
+        "-4.9%",
+        "-10.3%",
+        "-3.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do Nucor’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, gross margin and diluted EPS all rose from Q2 2025. The improvement came from both price and volume: average price per ton rose 10%, while external tons rose 12%. Steel-mill shipments reached a record level, while steel-products growth was led by tubular products and rebar fabrication rather than every product line."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Dec 2025",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,397",
+        "9,496",
+        "7,687",
+        "8,521",
+        "8,456",
+        "7,830",
+        "7,076",
+        "7,444"
+       ],
+       [
+        "Gross margin",
+        "19.6%",
+        "15.8%",
+        "11.2%",
+        "13.9%",
+        "14.5%",
+        "7.7%",
+        "8.9%",
+        "10.2%"
+       ],
+       [
+        "Operating income",
+        "1,629",
+        "1,108",
+        "501",
+        "888",
+        "908",
+        "295",
+        "387",
+        "391"
+       ],
+       [
+        "Net income",
+        "1,156",
+        "743",
+        "378",
+        "607",
+        "603",
+        "156",
+        "287",
+        "250"
+       ],
+       [
+        "EPS, diluted",
+        "5.04",
+        "3.23",
+        "1.64",
+        "2.63",
+        "2.60",
+        "0.67",
+        "1.22",
+        "1.05"
+       ],
+       [
+        "**= Free cash flow**",
+        "829",
+        "225",
+        "-3",
+        "532",
+        "-222",
+        "-495",
+        "-146",
+        "478"
+       ]
+      ],
+      "note": "The cash from operations and capital spending figures for individual quarters are calculated from year-to-date totals, so they may not be numbers the company reported directly for that quarter."
+     }
+    },
+    {
+     "heading": "What should I watch in Nucor’s next results?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Nucor’s next results release is scheduled for October 26, 2026. Investors should look for operating cash flow, remaining capital spending and progress against the third-quarter earnings range. The longer test is whether commissioning becomes saleable steel and whether commercial production begins as planned in 2027."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 26, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "10,397"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "5.04"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Dec 2025",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,444",
+      "7,076",
+      "7,830",
+      "8,456",
+      "8,521",
+      "7,687",
+      "9,496",
+      "10,397"
+     ],
+     "EPS, diluted": [
+      "1.05",
+      "1.22",
+      "0.67",
+      "2.60",
+      "2.63",
+      "1.64",
+      "3.23",
+      "5.04"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/nue/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NUE&src=seo-earnings"
+  }
+ },
+ "short_name": "Nucor",
+ "first_memo_date": "2026-10-18T10:32:07Z"
+}

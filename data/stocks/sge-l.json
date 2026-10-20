@@ -1,0 +1,772 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SGE.L",
+ "slug": "sge-l",
+ "company": "The Sage Group plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-19T08:50:48Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 1128.0,
+ "price_date": "2026-10-19T07:32:45Z",
+ "next_earnings": "2026-11-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 269,
+  "tables": 26,
+  "words": 17208,
+  "sources": 216
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sage Group sells software that helps businesses manage money, people and operations. Its business works when customers keep paying to use those systems, while Sage funds the people and infrastructure needed to make them dependable."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2025-11-19",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/3331551a-5060-4fad-88d1-730e3d45176b.html"
+  },
+  {
+   "title": "Earnings release — 2024-11-20",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5436201.html"
+  },
+  {
+   "title": "Half-year report — Q2 2026",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/3eb4885b-7af6-48bc-b314-aad22e14d785.html"
+  }
+ ],
+ "rivals": [
+  "INTU",
+  "XRO.AX",
+  "ORCL",
+  "SAP.DE",
+  "MSFT",
+  "ADP",
+  "PAYX",
+  "WDAY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sage stock forecast",
+   "meta_description": "Sage's forecast weighs recurring growth, cash generation, debt and valuation across bear, base and bull scenarios.",
+   "opening": "Sage's weighted forecast is 1067.21 GBp in October 2029 (+1% including dividends). It hinges on durable Intacct growth, successful migrations, cash conversion and manageable debt.",
+   "closing": "The full memo answers what Sage does, how it compares with rivals, how its management allocates capital and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could Sage's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is 1049.57 GBp in October 2027 (-5% including dividends) and 1067.21 GBp in October 2029 (+1% including dividends). It assigns 25% probability to the bear case, 60% to base and 15% to bull. The decisive evidence will be regional Intacct customer growth, implementation quality, retention and profitable adoption. FY26 results on 19 November 2026 will test delivery against guidance and set the next FY27 outlook. Operating cash must also rebuild room for investment and shareholder returns before the February 2028 bond maturity."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per SGE.L share at each date; in brackets the return since today's 1128.00, dividends included",
+      "caption": "What the shares could be worth (GBp per SGE.L share at each date; in brackets the return since today's 1128.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "632.92 (-42 %)",
+        "578.33 (-45 %)",
+        "566.09 (-44 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "1116.49 (+1 %)",
+        "1113.64 (+3 %)",
+        "1090.33 (+3 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "1476.29 (+33 %)",
+        "1634.94 (+49 %)",
+        "1809.92 (+67 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1049.57 (-5 %)",
+        "1058.01 (-2 %)",
+        "1067.21 (+1 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Sage's forecast?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Free cash flow after stock pay rises from £468m in the first forecast year to £505m in the second. It ends at £540m. The bear row falls to £392m before recovering to £433m, while the bull row reaches £495m initially and ends at £620m. The base path reflects 10% organic growth, 25% cloud-native growth and H1 cash conversion of 116%, but keeps cash growth below revenue guidance because tax, interest, working capital and stock pay remain uncertain."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "468 (392 / 495)",
+        "505 (412 / 554)",
+        "540 (433 / 620)"
+       ],
+       [
+        "Shares (millions)",
+        "902 (915 / 888)",
+        "898 (924 / 874)",
+        "896 (933 / 860)"
+       ],
+       [
+        "Dividends per share",
+        "0.24 (0.23 / 0.24)",
+        "0.26 (0.23 / 0.26)",
+        "0.28 (0.23 / 0.29)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "25.00 (19.00 / 30.00)",
+        "23.00 (17.00 / 29.00)",
+        "21.00 (16.00 / 28.00)"
+       ],
+       [
+        "Net debt",
+        "1,635 (1,659 / 1,733)",
+        "1,609 (1,662 / 1,785)",
+        "1,566 (1,649 / 1,789)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Sage really make?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The cash bridge gives a more demanding view. In FY2025, cash from operations was £528m. Capital spending was £41m, and lease payments were £17m. That leaves £470m of free cash flow before the analytical deduction for £51m of share-based pay. Including £18m of intangible purchases gives £452m before stock pay and £401m after it."
+      },
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Sage’s own free-cash-flow measure was £517m, £47m above that supplied calculation, because it uses different classifications and adjustments. Cash interest of £46m was already deducted in operating cash flow. The specialist conclusion is therefore positive but measured: cash generation is strong, while maintenance spending and the true cost of employee compensation still matter."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "£ millions",
+      "caption": "Follow the money: real free cash flow (£ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "528",
+        "491",
+        "387",
+        "285",
+        "376"
+       ],
+       [
+        "− Capital spending",
+        "41",
+        "19",
+        "5",
+        "12",
+        "39"
+       ],
+       [
+        "− Lease payments",
+        "17",
+        "16",
+        "18",
+        "19",
+        "22"
+       ],
+       [
+        "**= Free cash flow**",
+        "470",
+        "456",
+        "364",
+        "254",
+        "315"
+       ],
+       [
+        "− Stock pay",
+        "51",
+        "56",
+        "49",
+        "36",
+        "36"
+       ],
+       [
+        "**= Real free cash flow**",
+        "419",
+        "400",
+        "315",
+        "218",
+        "279"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because its rules leave out some cash costs and unusual cash movements that our count includes."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sage today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, says how much investors pay for each pound of annual profit. Sage’s trailing P/E is higher than its forward P/E, but the forward figure uses estimates. The reason to accept a substantial multiple is recurring income: 97% of FY25 revenue was recurring. Customers repeatedly need accounting and payroll systems, although they can still cancel, resist price increases or move to competitors."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "1128.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1067.21 (+1 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "19.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 11.28,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "632.92 (-42 %)",
+       "578.33 (-45 %)",
+       "566.09 (-44 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "1116.49 (+1 %)",
+       "1113.64 (+3 %)",
+       "1090.33 (+3 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "1476.29 (+33 %)",
+       "1634.94 (+49 %)",
+       "1809.92 (+67 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1049.57 (-5 %)",
+       "1058.01 (-2 %)",
+       "1067.21 (+1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/sge-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SGE.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Sage dividend: history and cash coverage",
+   "meta_description": "Sage's dividend history, cash coverage, payout decisions, forecast and current yield in one clear view.",
+   "opening": "Sage's dividend has increased in each of the last five years, and its base forecast rises from £0.236 to £0.276 per share. Sage's shareholder distributions exceeded free cash flow in four of the five years shown, so cash coverage has not been consistent.",
+   "closing": "The full memo explains Sage's business, its rivals, its management and the risks around growth, cash and debt.",
+   "blocks": [
+    {
+     "heading": "How much does Sage pay per share?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend begins at £0.236 per share and rises to £0.255. It ends at £0.276. The bear case holds growth near 1%, while the bull case compounds from £0.240 to £0.290. Sage raised its interim dividend by 8%, and its full-year dividend has increased in each of the last five years. Leverage and competing investment needs justify moderation in the base case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "468 (392 / 495)",
+        "505 (412 / 554)",
+        "540 (433 / 620)"
+       ],
+       [
+        "Shares (millions)",
+        "902 (915 / 888)",
+        "898 (924 / 874)",
+        "896 (933 / 860)"
+       ],
+       [
+        "Dividends per share",
+        "0.24 (0.23 / 0.24)",
+        "0.26 (0.23 / 0.26)",
+        "0.28 (0.23 / 0.29)"
+       ],
+       [
+        "Net debt",
+        "1,635 (1,659 / 1,733)",
+        "1,609 (1,662 / 1,785)",
+        "1,566 (1,649 / 1,789)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Sage's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the money left after operations and the investment deductions included in Sage’s calculation. Dividends transfer cash directly to shareholders. A buyback purchases shares and usually cancels them, increasing each remaining share’s fraction of ownership. Across FY2021–FY2025, Sage paid shareholders more than its free cash flow generated, so reserves and borrowing helped fund the difference."
+      },
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The cash bridge gives a more demanding view. In FY2025, cash from operations was £528m. Capital spending was £41m, and lease payments were £17m. That leaves £470m of free cash flow before the analytical deduction for £51m of share-based pay. Including £18m of intangible purchases gives £452m before stock pay and £401m after it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "£ millions",
+      "caption": "Follow the money: where the free cash flow went (£ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "470",
+        "456",
+        "364",
+        "254",
+        "315"
+       ],
+       [
+        "− Dividends paid",
+        "207",
+        "199",
+        "190",
+        "183",
+        "189"
+       ],
+       [
+        "− Share buybacks",
+        "605",
+        "348",
+        "0",
+        "249",
+        "353"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "174",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "812",
+        "547",
+        "190",
+        "432",
+        "542"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "172.8%",
+        "120.0%",
+        "52.2%",
+        "170.1%",
+        "172.1%"
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes lease payments it still owes, while our count leaves those out."
+     }
+    },
+    {
+     "heading": "What could change Sage's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is 1049.57 GBp in October 2027 (-5% including dividends) and 1067.21 GBp in October 2029 (+1% including dividends). It assigns 25% probability to the bear case, 60% to base and 15% to bull. The decisive evidence will be regional Intacct customer growth, implementation quality, retention and profitable adoption. FY26 results on 19 November 2026 will test delivery against guidance and set the next FY27 outlook. Operating cash must also rebuild room for investment and shareholder returns before the February 2028 bond maturity."
+      },
+      {
+       "n": 217,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "A current ratio of 0.62 also needs context because deferred income was £962m. Customers may pay before Sage delivers the contracted service, so this liability represents future work as well as a financial obligation. The final judgement is whether Sage can fund investment, dividends and buybacks while keeping leverage manageable. The price assumes that it can."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Sage's dividend yield at today's share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; share price and per share in pence",
+      "caption": "What an investor pays today (£ millions; share price and per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1128.00"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.9%"
+       ]
+      ],
+      "note": "These “today” figures use different dates—some use March or September numbers, while the dividend uses last year’s payout—so they do not all describe the company exactly today."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "20.85"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "pence; shares in millions",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "17.34",
+      "17.73",
+      "18.34",
+      "19.41",
+      "20.85"
+     ],
+     "Real free cash flow per share": [
+      "25.60",
+      "21.12",
+      "30.41",
+      "39.02",
+      "42.20"
+     ],
+     "Free cash flow per share": [
+      "28.90",
+      "24.61",
+      "35.14",
+      "44.49",
+      "47.33"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/sge-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SGE.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sage earnings: guidance and results",
+   "meta_description": "Sage's next results are expected on November 19, 2026; guidance is above 9% FY26 organic growth, with growth and profitability the key test.",
+   "opening": "Sage's next results are expected on November 19, 2026. Watch whether growth comes with profitability, and whether it funds investment and margin improvement.",
+   "closing": "The full memo also answers how Sage makes money, who its rivals are, how management is paid and aligned, and what risks could shape its future.",
+   "blocks": [
+    {
+     "heading": "What has Sage guided for FY26?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Sage’s share price could be broadly flat through October 2029; the outcome hinges on durable Intacct growth, successful migrations, cash conversion and manageable debt. Management guides to FY26 organic revenue growth above 9% and targets medium-term net debt to underlying EBITDA of 1.0–2.0x."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "Organic total revenue growth",
+        "Year to Sep 2026",
+        "9.0%",
+        "",
+        "Jul 29, 2026"
+       ],
+       [
+        "Net debt to underlying EBITDA",
+        "Medium term",
+        "1.0x",
+        "2.0x",
+        "May 21, 2026"
+       ]
+      ],
+      "note": "The 9.0% revenue growth figure is a minimum, not a prediction that growth will be exactly 9.0%."
+     }
+    },
+    {
+     "heading": "Has Sage kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management promised at least 9% organic revenue growth for FY2025, excluding acquisition effects. Sage delivered that growth, and its underlying operating margin rose from 22.4% to 23.9%. Hare nevertheless earned 48.9% of the available annual bonus, showing that meeting public guidance and reaching every incentive target are separate tests."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Sage shown in the last eight reported periods?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "The 29 July 2026 trading update covered the nine months to June. Third-quarter revenue was £699m against £627m on the comparable basis. Constant-currency growth including acquisitions was 12%."
+      },
+      {
+       "n": 173,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "The latest complete profit figures cover the six months to March 2026. Revenue rose from £1,242m to £1,363m. Operating income rose from £255m to £293m, while operating margin increased from 20.5% to 21.5%. Gross margin edged down from 92.8% to 92.4%, so the improvement again came below gross profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "£ millions; per share in pence",
+      "caption": "The last eight reported periods (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "6 months to Mar 2026",
+       "6 months to Sep 2025",
+       "6 months to Mar 2025",
+       "6 months to Sep 2024",
+       "6 months to Mar 2024",
+       "6 months to Sep 2023",
+       "6 months to Mar 2023",
+       "6 months to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,363",
+        "1,271",
+        "1,242",
+        "1,180",
+        "1,152",
+        "1,097",
+        "1,087",
+        "1,013"
+       ],
+       [
+        "Gross margin",
+        "92.4%",
+        "92.7%",
+        "92.8%",
+        "92.7%",
+        "92.9%",
+        "92.7%",
+        "93.0%",
+        "93.1%"
+       ],
+       [
+        "Operating income",
+        "293",
+        "275",
+        "255",
+        "237",
+        "215",
+        "158",
+        "157",
+        "163"
+       ],
+       [
+        "Net income",
+        "196",
+        "189",
+        "180",
+        "167",
+        "156",
+        "111",
+        "100",
+        "108"
+       ],
+       [
+        "EPS, diluted",
+        "20.41",
+        "19.30",
+        "17.86",
+        "16.52",
+        "15.03",
+        "10.77",
+        "9.66",
+        "10.49"
+       ]
+      ],
+      "note": "Interest paid is shown as zero because it has already been taken out of cash from operations, so it is not subtracted a second time."
+     }
+    },
+    {
+     "heading": "What should you watch in Sage's next results?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Investors should first compare delivery with the growth guidance, then read the FY27 outlook. The important combination is growth with profitability: are customers buying enough software to fund both investment and margin improvement? A profit beat caused by postponing necessary work would be weaker than one produced by stronger demand and cheaper delivery."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 19, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/sge-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SGE.L&src=seo-earnings"
+  }
+ },
+ "short_name": "Sage",
+ "first_memo_date": "2026-10-19T08:50:48Z"
+}

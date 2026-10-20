@@ -1,0 +1,836 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NTAP",
+ "slug": "ntap",
+ "company": "NetApp, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T13:55:15Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 203.8,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-12-01",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 27,
+  "words": 16718,
+  "sources": 225
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "NetApp sells the systems and software that keep an organization’s data available, protected and usable. Its dollar comes from selling storage, supporting it over time, and increasingly delivering it through subscriptions and cloud partnerships."
+ },
+ "sources": [
+  {
+   "title": "FY2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526321239/ntap-2026_ars.pdf"
+  },
+  {
+   "title": "FY2026 results, cash-flow reconciliation",
+   "url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526245196/ntap-ex99_1.htm"
+  },
+  {
+   "title": "FY2025 results and comparative reconciliations",
+   "url": "https://www.sec.gov/Archives/edgar/data/1002047/000095017025078936/ntap-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "DELL",
+  "IBM",
+  "NTNX",
+  "ORCL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "NetApp stock forecast",
+   "meta_description": "NetApp's stock forecast weighs bear, base and bull cases, with cash generation and valuation shaping the outcome.",
+   "opening": "NetApp's weighted forecast is $161.87 in October 2027, down 20% including dividends. NetApp's forecast hinges on earnings and cash growth holding as the valuation multiple falls.",
+   "closing": "The full NetApp memo also covers NetApp's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could NetApp's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast puts NetApp below today’s price at all three dates. At October 2027, the weighted price is $161.87, down 20% including dividends. At October 2028, it is $167.90, down 16%. At October 2029, it is $180.15, down 9%."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast assigns 30% to the bear case, 50% to the base case and 20% to the bull case, making steady execution the most likely path."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 203.80, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 203.80, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "125.83 (-37 %)",
+        "92.86 (-52 %)",
+        "84.23 (-56 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "159.79 (-21 %)",
+        "167.33 (-16 %)",
+        "174.13 (-11 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "221.12 (+10 %)",
+        "281.88 (+40 %)",
+        "339.07 (+70 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "161.87 (-20 %)",
+        "167.90 (-16 %)",
+        "180.15 (-9 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for NetApp, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Earnings are the largest difference between the scenarios. The base case rises from $1,550 million in October 2027 to $1,690 million in October 2028 and $1,840 million in October 2029. It assumes revenue and margins improve steadily without a major AI windfall. The starting point is close to the FY2027 GAAP outlook of $7.35–$7.65 EPS and $7.975–$8.225 billion of revenue."
+      },
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires flash share gains to persist, AI pilots to become paid production deployments and cloud and Keystone growth to produce repeatable cash returns. Pricing offsets component inflation, buybacks approach the remaining authorization and investors sustain a premium multiple. The result is $221.12 initially and $339.07 by October 2029. Its 20% probability reflects the strength of recent flash and cloud growth, but the absence of demonstrated repeat AI economics keeps it below the base case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does NetApp really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation explains part of the difference. NetApp recorded $382 million of share-based pay in FY2026 and added it back in cash flow because issuing shares uses no immediate cash. Employees still receive something valuable, so treating that amount as entirely free cash would ignore dilution. Deducting it produces the “real free cash flow” convention used here."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Apr 2026",
+       "Apr 2025",
+       "Apr 2024",
+       "Apr 2023",
+       "Apr 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,067",
+        "1,506",
+        "1,685",
+        "1,107",
+        "1,211"
+       ],
+       [
+        "− Capital spending",
+        "198",
+        "168",
+        "155",
+        "239",
+        "226"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,869",
+        "1,338",
+        "1,530",
+        "868",
+        "985"
+       ],
+       [
+        "− Stock pay",
+        "382",
+        "386",
+        "357",
+        "312",
+        "245"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,487",
+        "952",
+        "1,173",
+        "556",
+        "740"
+       ]
+      ],
+      "note": "Real free cash flow is lower because share-based pay uses no cash today but gives employees part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for NetApp today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "203.80"
+       ],
+       [
+        "Market value (calculated)",
+        "40,030.19"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "28.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.7%"
+       ]
+      ],
+      "note": "The share price shown for October 19 is actually the closing price from October 16, because that is the latest price available."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "203.80"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "180.15 (-9 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 203.8,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "125.83 (-37 %)",
+       "92.86 (-52 %)",
+       "84.23 (-56 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "159.79 (-21 %)",
+       "167.33 (-16 %)",
+       "174.13 (-11 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "221.12 (+10 %)",
+       "281.88 (+40 %)",
+       "339.07 (+70 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "161.87 (-20 %)",
+       "167.90 (-16 %)",
+       "180.15 (-9 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ntap/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTAP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "NetApp dividend: cash coverage and yield",
+   "meta_description": "NetApp pays $2.08 a year; FY2026 free cash flow was $1,869 million, and the dividend yield is 1.0%.",
+   "opening": "NetApp pays $0.52 per share each quarter, or $2.08 a year. FY2026 free cash flow was $1,869 million, and distributions were slightly below it.",
+   "closing": "The full memo also explains NetApp’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does NetApp pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays at $2.08 per share in the base and bear cases. That follows the current $0.52 quarterly payment and the unchanged annual dividend of $2.08 in the latest two fiscal years."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "Apr 2026",
+       "Apr 2025",
+       "Apr 2024",
+       "Apr 2023",
+       "Apr 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,925",
+        "6,572",
+        "6,268",
+        "6,362",
+        "6,318"
+       ],
+       [
+        "Revenue growth (calculated)",
+        "5.4%",
+        "4.9%",
+        "-1.5%",
+        "0.7%",
+        "10.0%"
+       ],
+       [
+        "EPS, diluted",
+        "6.35",
+        "5.67",
+        "4.63",
+        "5.79",
+        "4.09"
+       ],
+       [
+        "Dividend per share",
+        "2.08",
+        "2.08",
+        "2.00",
+        "2.00",
+        "2.00"
+       ]
+      ],
+      "note": "The 2023 profit looks unusually high because a large tax benefit boosted it, rather than because the business earned that much more."
+     }
+    },
+    {
+     "heading": "Is NetApp's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left from operations after purchases of property and equipment. Research and development is already included in operating expenses, so the measure reflects cash after funding the people and software that drive the business. NetApp generated substantial free cash flow over the five fiscal years ending in April 2026, and distributions were slightly below it."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "FY2026 operating cash flow was $2,067 million, above net income of $1,276 million. After $198 million of capital spending, free cash flow was $1,869 million. Capital spending is not the whole cost of competitiveness because engineering and product development also run through operating expenses."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Apr 2026",
+       "Apr 2025",
+       "Apr 2024",
+       "Apr 2023",
+       "Apr 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,869",
+        "1,338",
+        "1,530",
+        "868",
+        "985"
+       ],
+       [
+        "− Dividends paid",
+        "413",
+        "424",
+        "416",
+        "432",
+        "446"
+       ],
+       [
+        "− Share buybacks",
+        "950",
+        "1,150",
+        "900",
+        "850",
+        "600"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "506",
+        "",
+        "214",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "72.9%",
+        "117.6%",
+        "86.0%",
+        "147.7%",
+        "106.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change NetApp's dividend?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bull case holds the dividend at $2.08 through the first period, then raises it to $2.16 and $2.24 as cash generation strengthens. The forecast keeps increases modest because free cash flow recently fell to $401 million from $620 million, while dividends and repurchases compete for cash."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,550 (1,450 / 1,700)",
+        "1,690 (1,300 / 1,970)",
+        "1,840 (1,380 / 2,250)"
+       ],
+       [
+        "Shares (millions)",
+        "194 (196 / 192)",
+        "192 (196 / 189)",
+        "190 (197 / 186)"
+       ],
+       [
+        "Dividends per share",
+        "2.08 (2.08 / 2.08)",
+        "2.08 (2.08 / 2.16)",
+        "2.08 (2.08 / 2.24)"
+       ],
+       [
+        "Price to earnings",
+        "20.00 (17.00 / 25.00)",
+        "19.00 (14.00 / 27.00)",
+        "18.00 (12.00 / 28.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is NetApp's dividend yield at today's price?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash flow gives a more practical test of the valuation. FY2026 free cash flow was $1,869 million, compared with $1,338 million in FY2025, but faster collections and other working-capital movements helped. The reported 4.7% free-cash-flow yield therefore deserves comparison with the 3.7% “real” yield after adjustment. Buybacks can also lift EPS without lifting total profit: diluted shares fell from 206 million to 199 million in Q4 FY2026. The dividend yield is 1.0%."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Apr 2026",
+     "value": "2.05"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Apr 2022",
+     "Apr 2023",
+     "Apr 2024",
+     "Apr 2025",
+     "Apr 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.95",
+      "1.96",
+      "1.95",
+      "2.03",
+      "2.05"
+     ],
+     "Real free cash flow per share": [
+      "3.23",
+      "2.53",
+      "5.51",
+      "4.56",
+      "7.40"
+     ],
+     "Free cash flow per share": [
+      "4.30",
+      "3.95",
+      "7.18",
+      "6.40",
+      "9.30"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ntap/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTAP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "NetApp earnings",
+   "meta_description": "NetApp's next results are December 1, 2026; FY2027 guidance is $7.975–$8.225 billion of revenue and $7.35–$7.65 GAAP EPS.",
+   "opening": "NetApp's next results are expected on December 1, 2026. Watch whether later orders confirm demand after purchases were brought forward.",
+   "closing": "The full memo also answers questions about NetApp's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has NetApp guided for FY2027?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points below today’s price, hinging on earnings and cash growth holding as the valuation multiple falls. Management guides to FY2027 revenue of $7.975–$8.225 billion. Non-GAAP EPS guidance is $9.73–$10.03, and GAAP EPS guidance is $7.35–$7.65."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions; per-share amounts in US$",
+      "caption": "Guidance in force (US$ billions; per-share amounts in US$)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Net revenues — FY2027",
+        "Year to Apr 2027",
+        "7.975",
+        "8.225",
+        "Sep 2, 2026"
+       ],
+       [
+        "Consolidated gross margins — GAAP — FY2027",
+        "Year to Apr 2027",
+        "67.1%",
+        "68.1%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Consolidated gross margins — Non-GAAP — FY2027",
+        "Year to Apr 2027",
+        "68.1%",
+        "69.1%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Operating margins — GAAP — FY2027",
+        "Year to Apr 2027",
+        "24.3%",
+        "25.3%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Earnings per share — GAAP — FY2027",
+        "Year to Apr 2027",
+        "7.35",
+        "7.65",
+        "Sep 2, 2026"
+       ],
+       [
+        "Earnings per share — Non-GAAP — FY2027",
+        "Year to Apr 2027",
+        "9.73",
+        "10.03",
+        "Sep 2, 2026"
+       ]
+      ],
+      "note": "The company’s adjusted profit estimates are higher because they leave out costs such as stock-based pay and restructuring charges."
+     }
+    },
+    {
+     "heading": "Did NetApp keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has also delivered against financial guidance. Its FY26 fourth-quarter presentation showed revenue and adjusted earnings per share above earlier ranges. On September 2, 2026, Kurian and Jabre reported another quarter above guidance while acknowledging help from an extra week, accelerated purchases, and pricing benefits."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is NetApp's eight-quarter revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter sequence suggests the acceleration began before July. The test now is whether sales continue after the calendar benefit disappears, inventory converts into shipments and cash, and product margins withstand component costs."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,025",
+        "1,948",
+        "1,713",
+        "1,705",
+        "1,559",
+        "1,732",
+        "1,641",
+        "1,658"
+       ],
+       [
+        "Gross margin",
+        "70.1%",
+        "70.1%",
+        "70.6%",
+        "72.0%",
+        "70.4%",
+        "68.9%",
+        "69.8%",
+        "71.0%"
+       ],
+       [
+        "Operating income",
+        "484",
+        "532",
+        "434",
+        "399",
+        "309",
+        "348",
+        "362",
+        "345"
+       ],
+       [
+        "Net income",
+        "375",
+        "404",
+        "334",
+        "305",
+        "233",
+        "340",
+        "299",
+        "299"
+       ],
+       [
+        "EPS, diluted",
+        "1.88",
+        "2.03",
+        "1.67",
+        "1.51",
+        "1.15",
+        "1.65",
+        "1.44",
+        "1.42"
+       ]
+      ],
+      "note": "July 2026 revenue is not directly comparable with earlier quarters because that quarter lasted one extra week and included sales from an acquired company."
+     }
+    },
+    {
+     "heading": "What should I watch in NetApp's next results?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first dated test is December 1, 2026, when NetApp targets its Q2 results. Investors should compare revenue and margins with the September promises, then ask whether later orders confirm demand or reveal a gap caused by purchases brought forward."
+      },
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The income statement should separate equipment, support, public cloud and subscription storage. Gross margin measures direct economics; operating margin includes research, sales and administration; net margin includes interest and tax. EPS must be read alongside diluted shares, because buybacks can lift EPS without lifting total profit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 1, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "2,025"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "1.88"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,658",
+      "1,641",
+      "1,732",
+      "1,559",
+      "1,705",
+      "1,713",
+      "1,948",
+      "2,025"
+     ],
+     "EPS, diluted": [
+      "1.42",
+      "1.44",
+      "1.65",
+      "1.15",
+      "1.51",
+      "1.67",
+      "2.03",
+      "1.88"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ntap/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTAP&src=seo-earnings"
+  }
+ },
+ "short_name": "NetApp",
+ "first_memo_date": "2026-10-19T13:55:15Z"
+}

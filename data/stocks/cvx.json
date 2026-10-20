@@ -1,0 +1,793 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CVX",
+ "slug": "cvx",
+ "company": "Chevron Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "oil_gas",
+ "country": "us",
+ "memo_date": "2026-10-10T02:19:48Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 211.82,
+ "price_date": "2026-10-09T18:50:12Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 268,
+  "tables": 30,
+  "words": 19534,
+  "sources": 283
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Chevron is an energy company that finds oil and gas, turns part of them into fuels, chemicals and other products, and sells them around the world. To understand how a dollar comes in and goes out, follow the resource from the ground to the customer, then follow the costs back through the business."
+ },
+ "sources": [
+  {
+   "title": "Chevron’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000019/a12312025ex9918-k.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/93410/000009341025000004/a12312024ex9918-k.htm"
+  }
+ ],
+ "rivals": [
+  "XOM",
+  "PSX",
+  "PBR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Chevron stock forecast",
+   "meta_description": "Chevron stock forecast: weighted value reaches $185.45 in October 2029, with bear and bull cases shaped by oil prices, projects and cash flow.",
+   "opening": "Chevron's weighted forecast is $185.45 in October 2029. It hinges on Hess integration, project delivery, supportive oil and product markets, and sustained savings.",
+   "closing": "The full memo also explains Chevron's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Chevron's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to modestly negative returns, with unusually wide possible outcomes. The weighted price is $196.84 in October 2027, a 4% loss including dividends. It falls to $192.79 in October 2028, a 2% loss. By October 2029, it reaches $185.45, also a 2% loss."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 211.82, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 211.82, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "137.41 (-32 %)",
+        "109.66 (-42 %)",
+        "88.35 (-49 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "203.89 (-0 %)",
+        "198.39 (+1 %)",
+        "180.87 (-4 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "268.38 (+30 %)",
+        "303.47 (+50 %)",
+        "342.52 (+73 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "196.84 (-4 %)",
+        "192.79 (-2 %)",
+        "185.45 (-2 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Chevron?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires oil-price normalization, weaker refining margins and rising sustaining investment. Production still grows, but contribution per barrel falls, cash returns remain difficult to fund and debt rises. The shares fall to $137.41 in October 2027 and $88.35 by October 2029. Its 30% probability reflects the fall in EBITDA since 2022, commodity exposure, higher production costs and project-overrun risk."
+      },
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires Hess integration, project delivery, supportive oil and product markets, and sustained savings. Those gains lift EBITDA and valuation while buybacks sharply reduce the share count, even though the cash waterfall still shows rising debt. The shares reach $268.38 in October 2027 and $342.52 in October 2029. Its 20% probability reflects the number of conditions that must hold together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Chevron really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Finally, stock-based compensation and payments to minority owners reduce what belongs to Chevron’s common shareholders. The cash table makes those claims visible."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "33,939",
+        "31,492",
+        "35,609",
+        "49,602",
+        "29,187"
+       ],
+       [
+        "Capital spending",
+        "17,347",
+        "16,448",
+        "15,829",
+        "11,974",
+        "8,056"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "16,592",
+        "15,044",
+        "19,780",
+        "37,628",
+        "21,131"
+       ],
+       [
+        "Stock-based pay",
+        "472",
+        "600",
+        "-15",
+        "1,073",
+        "761"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "16,120",
+        "14,444",
+        "19,795",
+        "36,555",
+        "20,370"
+       ],
+       [
+        "Free cash flow left for shareholders (calculated)",
+        "15,786",
+        "14,234",
+        "19,741",
+        "36,437",
+        "20,317"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Chevron today?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is operating cash left after capital spending. Management can distribute it through dividends and buybacks, repay debt, acquire assets or retain it. Chevron also estimates that each $1 change in Brent changes annual after-tax earnings and cash flow by about US$600 million. A $10 fall would therefore remove roughly US$6 billion under otherwise unchanged conditions."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "211.82"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "20.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.9x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "2.1x"
+       ],
+       [
+        "EV to cash flow from operations (calculated)",
+        "13.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "211.82"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "185.45 (-2 %)"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 211.82,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "137.41 (-32 %)",
+       "109.66 (-42 %)",
+       "88.35 (-49 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "203.89 (-0 %)",
+       "198.39 (+1 %)",
+       "180.87 (-4 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "268.38 (+30 %)",
+       "303.47 (+50 %)",
+       "342.52 (+73 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "196.84 (-4 %)",
+       "192.79 (-2 %)",
+       "185.45 (-2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cvx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CVX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Chevron dividend: payment and cash coverage",
+   "meta_description": "Chevron's dividend, cash coverage, plans, and current yield in one clear view.",
+   "opening": "Chevron's dividend is $7.29 per share in the first forecast window and rises to $8.01 in the third under the base case. Coverage has been mixed: from 2023 onward, dividends and buybacks exceeded real free cash flow.",
+   "closing": "The full memo also explains Chevron's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Chevron pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $7.29 per share in the first forecast window to $8.01 in the third. That follows a 4% annual increase, close to the latest declared increase. The bear pauses first and then cuts to $6.76, while the bull assumes 5% annual increases reaching $8.22. The long dividend-growth record supports increases, but distributions exceeded real free cash flow in 2023–25."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations per share (calculated)",
+        "18.29",
+        "17.33",
+        "18.94",
+        "25.57",
+        "15.20"
+       ],
+       [
+        "Free cash flow per share (calculated)",
+        "8.94",
+        "8.28",
+        "10.52",
+        "19.40",
+        "11.01"
+       ],
+       [
+        "Dividend per share",
+        "6.84",
+        "6.52",
+        "6.04",
+        "5.68",
+        "5.31"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "6.51",
+        "8.38",
+        "7.95",
+        "5.80",
+        "0.72"
+       ],
+       [
+        "Net share dilution (calculated)",
+        "2.1%",
+        "-3.4%",
+        "-3.1%",
+        "1.0%",
+        "2.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Chevron's dividend get covered by cash?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "From 2023 onward, dividends and buybacks exceeded real free cash flow. Chevron could bridge the gap with borrowing, asset sales, cash already held and other financing flows. That is not automatically reckless, but it means buybacks were no longer simply the distribution of that year’s surplus."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "16,120",
+        "14,444",
+        "19,795",
+        "36,555",
+        "20,370"
+       ],
+       [
+        "Dividends paid",
+        "12,751",
+        "11,801",
+        "11,336",
+        "10,968",
+        "10,179"
+       ],
+       [
+        "Shares bought back",
+        "12,079",
+        "15,229",
+        "14,939",
+        "11,255",
+        "1,383"
+       ],
+       [
+        "Acquisitions",
+        "-1,056",
+        "0",
+        "-55",
+        "2,862",
+        "0"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "7,063",
+        "-1,233",
+        "-4,148",
+        "-8,698",
+        "-7,171"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "154.0%",
+        "187.1%",
+        "132.7%",
+        "60.8%",
+        "56.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Chevron's dividend?",
+     "paragraphs": [
+      {
+       "n": 94,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.5 — Capital allocation, dividends, and new-energy spending",
+       "text": "A dividend is a recurring promise to shareholders. Chevron’s investor-day plan put capital spending and dividends at a breakeven below $50 a barrel of Brent, an international oil-price benchmark, through 2030. That is a modeled funding threshold, not a guarantee that every weaker quarter avoids borrowing. Buybacks require additional cash, so the company can support its dividend while still borrowing to repurchase shares."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Chevron's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 189,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Market value is what shareholders collectively pay for Chevron’s shares. Enterprise value adds the claims of lenders, after subtracting cash. A house bought with a mortgage gives the same picture: the buyer owns the equity but also takes responsibility for the debt. Chevron’s improved net-debt ratio suggests manageable borrowing, but operating cash must still fund drilling, dividends and other commitments. Lenders and necessary investment come before shareholders receive what remains."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "211.82"
+       ],
+       [
+        "Market value (calculated)",
+        "418,507.87"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "11.01",
+      "19.40",
+      "10.52",
+      "8.28",
+      "8.94"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/cvx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CVX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Chevron earnings: date, guidance and what to watch",
+   "meta_description": "Chevron's next results are expected on October 30, 2026; see guidance, recent revenue and profit, and what to watch.",
+   "opening": "Chevron's next results are expected on October 30, 2026. Watch whether Chevron's reliable plants and lower costs still generate cash as market conditions change.",
+   "closing": "The full memo also answers how Chevron's business works, who its rivals are, how its management is structured, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Chevron guided for the year?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, management guides to higher production and growth excluding asset sales. Oil equivalent puts oil and gas on one common energy measure. Excluding asset sales matters because selling a producing field can reduce reported output even when the remaining fields perform well. The target is a full-year average, so one strong quarter cannot settle the question."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Beyond 2026, management expects production to grow annually and adjusted free cash flow to grow by more than ten percent at a specified Brent price. Free cash flow is operating cash left after capital spending; “adjusted” means Chevron applies its own reconciliation. Planned buybacks also depend on a range of Brent prices. Chevron controls drilling and costs more directly than it controls the market price of oil, so the guidance table is the proper place to compare its production, spending, cash-return and balance-sheet commitments."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Production (MBOED)",
+        "Year to Dec 2026",
+        "3,980",
+        "4,100",
+        "Aug 7, 2026"
+       ],
+       [
+        "Production growth excluding asset sales (%)",
+        "Year to Dec 2026",
+        "7.0%",
+        "10.0%",
+        "Aug 7, 2026"
+       ],
+       [
+        "Capex (organic) (US$ billions)",
+        "Year to Dec 2026",
+        "18",
+        "19",
+        "Aug 7, 2026"
+       ],
+       [
+        "Affiliate capex (US$ billions)",
+        "Year to Dec 2026",
+        "1.3",
+        "1.7",
+        "Aug 7, 2026"
+       ],
+       [
+        "Buybacks (US$ billions)",
+        "Quarter to Sep 2026",
+        "2.5",
+        "3",
+        "Aug 7, 2026"
+       ],
+       [
+        "Declared Dividends (US$ per share)",
+        "Quarter to Sep 2026",
+        "1.78",
+        "1.78",
+        "Aug 7, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Chevron kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management’s promises can also be tested. Wirth said Chevron had captured US$1.5 billion of Hess synergies six months ahead of schedule. A synergy is a benefit from combining businesses, such as removing duplicate offices. He also cited US$3 billion of annual run-rate savings. A run rate is the yearly pace implied by current savings, not necessarily cash already saved, so the baseline and durability matter."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Chevron's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "June 2026 was much stronger, but timing and market conditions amplified the improvement."
+      },
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Timing effects then magnified the change. Derivatives can be revalued before the physical cargo they protect is sold, while inventory accounting can also separate current market prices from recognized cost. Chevron reported a US$2.9 billion unfavorable timing effect in March and a US$1.5 billion favorable effect in June. That reversal explains much of the sequential swing without permanently lowering production costs."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "70,055",
+        "48,607",
+        "46,873",
+        "49,726",
+        "44,822",
+        "47,610",
+        "52,226",
+        "50,669"
+       ],
+       [
+        "Net income",
+        "12,072",
+        "2,210",
+        "2,770",
+        "3,539",
+        "2,490",
+        "3,500",
+        "3,239",
+        "4,487"
+       ],
+       [
+        "EPS, diluted",
+        "6.11",
+        "1.11",
+        "1.39",
+        "1.82",
+        "1.45",
+        "2.00",
+        "1.84",
+        "2.48"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "70,055"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "6.11"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "50,669",
+      "52,226",
+      "47,610",
+      "44,822",
+      "49,726",
+      "46,873",
+      "48,607",
+      "70,055"
+     ],
+     "EPS, diluted": [
+      "2.48",
+      "1.84",
+      "2.00",
+      "1.45",
+      "1.82",
+      "1.39",
+      "1.11",
+      "6.11"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cvx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CVX&src=seo-earnings"
+  }
+ },
+ "short_name": "Chevron",
+ "first_memo_date": "2026-10-10T02:19:48Z"
+}

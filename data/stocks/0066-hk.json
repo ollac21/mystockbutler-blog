@@ -1,0 +1,596 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "0066.HK",
+ "slug": "0066-hk",
+ "company": "MTR Corporation Limited",
+ "exchange": "HKSE",
+ "currency": "HKD",
+ "index": "hsi",
+ "company_type": "operating_company",
+ "country": "hk",
+ "memo_date": "2026-10-17T18:20:57Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 32.38,
+ "price_date": "2026-10-16T08:08:14Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 260,
+  "tables": 27,
+  "words": 16338,
+  "sources": 117
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "MTR Corporation Limited is a railway company whose business reaches beyond trains: it earns from fares, property, rents and services built around the network. To understand how a dollar moves through MTR, follow the journey from passenger and tenant payments to railway costs, property gains and the risks that shape each stream."
+ },
+ "sources": [
+  {
+   "title": "MTR 2025 annual report",
+   "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0416/2026041601127.pdf"
+  },
+  {
+   "title": "Interim Report, Corporate Governance and Other Information",
+   "url": "https://www.mtr.com.hk/archive/corporate/en/investor/interim2026/E09.pdf"
+  },
+  {
+   "title": "2026-01-28 filing",
+   "url": "https://di.hkex.com.hk/di/NSForm3A.aspx?fn=DA20260202E00325&sa2=an&sid=110&corpn=MTR+Corporation+Ltd.&sd=17%2f10%2f2025&ed=17%2f10%2f2026&cid=0&cn=1&lang=EN&sa1p=1&sced=17%2f10%2f2026&scsd=17%2f10%2f2025&src=Main&srchCorpName=MTR+Corporation+Ltd."
+  }
+ ],
+ "rivals": [],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "MTR stock forecast",
+   "meta_description": "MTR's stock forecast weighs bear, base and bull scenarios against property cash, railway investment, debt and recurring earnings.",
+   "opening": "MTR's weighted forecast is HK$20.72 in October 2027 and HK$16.64 in October 2029; the bear case carries 25% probability, the base case 55%, and the bull case 20%. It hinges on whether property cash can fund railway growth without worsening cash conversion, debt or dividend pressure.",
+   "closing": "The full memo also explains MTR's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could MTR's shares go?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is HK$20.72 in October 2027, a -32% total return. It is HK$16.64 in October 2029, a -36% total return. The bear case carries 25% probability. The base case carries 55%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "HKD per share at each date; in brackets the return since today's 32.38, dividends included",
+      "caption": "What the shares could be worth (HKD per share at each date; in brackets the return since today's 32.38, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "12.80 (-56 %)",
+        "4.23 (-79 %)",
+        "0.18 (-88 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "20.88 (-31 %)",
+        "17.62 (-37 %)",
+        "16.12 (-38 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "30.19 (-3 %)",
+        "34.73 (+16 %)",
+        "38.61 (+32 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "20.72 (-32 %)",
+        "17.70 (-37 %)",
+        "16.64 (-36 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for MTR?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires property weakness and funding pressure to persist together. Delayed completions or weak bids would reduce development profit, while frozen fares, negative rental reversion and construction costs would limit recurring growth. Net debt would rise as spending outpaces cash receipts, putting dividends and the multiple under pressure. The bear price is HK$12.80 at the first date and HK$0.18 at the last. Its 25% probability reflects negative free cash flow, negative transport EBIT and high planned expenditure, but recurring transport and rental income keep it below the specialists’ 30% downside odds."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires timely property tenders, strong completions, firm ridership and disciplined spending. Those conditions would improve cash conversion, reduce funding risk and support a rerating alongside EBITDA growth. The bull price is HK$30.19 initially and HK$38.61 at the last date. Its 20% probability reflects the strength of the potential upside, but also the need for several favorable events to arrive together despite weak rental reversion and heavy investment needs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does MTR really make?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is the cash left after operating cash flow, capital spending, lease payments and interest paid. These are analytical measures rather than MTR’s own profit lines. In 2025, operating cash flow was positive, but those outflows exceeded it. Real free cash flow goes further by subtracting stock-based pay, and it remained negative in every year of the five-year table."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "HK$ millions",
+      "caption": "Follow the money: real free cash flow (HK$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "11,874",
+        "18,491",
+        "11,197",
+        "6,757",
+        "7,472"
+       ],
+       [
+        "− Capital spending",
+        "19,594",
+        "19,416",
+        "12,576",
+        "10,808",
+        "7,785"
+       ],
+       [
+        "− Lease payments",
+        "255",
+        "189",
+        "567",
+        "149",
+        "206"
+       ],
+       [
+        "− Interest paid",
+        "2,556",
+        "2,497",
+        "1,869",
+        "961",
+        "910"
+       ],
+       [
+        "**= Free cash flow**",
+        "-10,531",
+        "-3,611",
+        "-3,815",
+        "-5,161",
+        "-1,429"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-10,663",
+        "-3,748",
+        "-3,934",
+        "-5,279",
+        "-1,512"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though no cash leaves the company because it gives employees part of the shareholders’ ownership."
+     }
+    },
+    {
+     "heading": "What does an investor pay for MTR today?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Accounting earnings also leave out an important cash need. A railway must replace trains, signalling systems, tracks and stations even when passenger revenue looks healthy. Free cash flow goes further than profit or EBITDA because it subtracts actual investment spending. MTR’s renewal and construction programme therefore matters more than a low earnings multiple alone."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "HK$ millions; per share in HK$",
+      "caption": "What an investor pays today (HK$ millions; per share in HK$)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "32.38"
+       ],
+       [
+        "Market value (calculated)",
+        "201,559.774"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "241,317.774"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "8.82x"
+       ],
+       [
+        "Price to book (calculated)",
+        "0.99x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-5.3%"
+       ]
+      ],
+      "note": "The negative free cash flow yield means the company used more cash than it generated during the latest year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, HKD",
+     "value": "32.38"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "16.64 (-36 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-5.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "10.11x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 32.38,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "12.80 (-56 %)",
+       "4.23 (-79 %)",
+       "0.18 (-88 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "20.88 (-31 %)",
+       "17.62 (-37 %)",
+       "16.12 (-38 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "30.19 (-3 %)",
+       "34.73 (+16 %)",
+       "38.61 (+32 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "20.72 (-32 %)",
+       "17.70 (-37 %)",
+       "16.64 (-36 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/0066-hk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=0066.HK&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "MTR dividend history and cash coverage",
+   "meta_description": "MTR paid HK$1.31 per share for 2025, while free cash flow was negative throughout the years shown.",
+   "opening": "MTR paid an ordinary dividend of HK$1.31 per share for 2025 and has held that annual amount since 2022. Free cash flow was negative throughout the years shown, so operations did not generate enough surplus after investment to cover everything MTR paid out.",
+   "closing": "The full MTR memo also answers how MTR runs its business, compares with rivals, assesses management, and weighs its risks.",
+   "blocks": [
+    {
+     "heading": "How much does MTR pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend path reflects policy constrained by cash needs. MTR paid HK$1.31 per share for 2025 and has held that annual amount since 2022. The base keeps the first forecast dividend at HK$1.31, then raises it by one cent at each later date. The bear case cuts to HK$1.25 and then HK$1.20. The bull case rises to HK$1.35 initially and HK$1.45 eventually. Five years of negative free cash flow and roughly HK$140 billion of committed railway investment make large increases difficult, despite the stated policy to maintain or steadily increase dividends."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "HK$ per share; share-count changes in %",
+      "caption": "What one share gets (HK$ per share; share-count changes in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "2.36",
+        "2.54",
+        "1.25",
+        "1.59",
+        "1.54"
+       ],
+       [
+        "− Paid to minority owners, per share",
+        "0.04",
+        "0.04",
+        "0.09",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.31",
+        "1.28",
+        "1.22",
+        "1.38",
+        "1.16"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.02",
+        "0.03",
+        "0.01",
+        "0.02",
+        "0.02"
+       ]
+      ],
+      "note": "“Paid out more than free cash flow” means the company paid shareholders HK$3.06 per share more than the cash it generated in 2025, because its free cash flow was negative."
+     }
+    },
+    {
+     "heading": "Is MTR's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow means cash left after ordinary operations and capital investment. It was negative throughout the years shown. That does not mean MTR’s bank account was empty, because the company could also use cash balances, property receipts, borrowing and other financing. It does mean that operations did not generate enough surplus after investment to cover everything the company paid out."
+      },
+      {
+       "n": 88,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "MTR also continued paying dividends. Buybacks were much smaller and represented purchases for the Executive Share Incentive Scheme, not a separate large return-of-capital programme. Debt moved in both directions: MTR issued debt and repaid debt in every year shown. Borrowing therefore helped manage the timing gap between investment, shareholder distributions and cash generated in a particular year."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "HK$ millions",
+      "caption": "Follow the money: where the free cash flow went (HK$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-10,531",
+        "-3,611",
+        "-3,815",
+        "-5,161",
+        "-1,429"
+       ],
+       [
+        "− Dividends paid",
+        "8,155",
+        "7,946",
+        "7,595",
+        "8,562",
+        "7,165"
+       ],
+       [
+        "− Share buybacks",
+        "113",
+        "207",
+        "93",
+        "109",
+        "116"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "19,041",
+        "12,029",
+        "12,072",
+        "13,832",
+        "8,710"
+       ],
+       [
+        "Paid to shareholders",
+        "8,268",
+        "8,153",
+        "7,688",
+        "8,671",
+        "7,281"
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes service-concession obligations and leases that our calculation leaves out."
+     }
+    },
+    {
+     "heading": "What could change MTR's dividend?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The coming 12 months will test whether property proceeds can support railway investment as projects move from tender to cash receipt. Fare recoupment in 2027/28 and transport results through 2027–2028 will show whether fares keep pace with operating costs. Cash conversion and net debt through 2028 and 2029 will test dividend resilience."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; HKD millions, per share in HKD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; HKD millions, per share in HKD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "30,000 (27,000 / 33,000)",
+        "30,500 (24,500 / 36,500)",
+        "31,500 (25,000 / 39,000)"
+       ],
+       [
+        "Shares (millions)",
+        "6,225 (6,228 / 6,223)",
+        "6,225 (6,232 / 6,221)",
+        "6,225 (6,236 / 6,219)"
+       ],
+       [
+        "Dividends per share",
+        "1.31 (1.31 / 1.35)",
+        "1.32 (1.25 / 1.40)",
+        "1.33 (1.20 / 1.45)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "6.50 (5.50 / 7.50)",
+        "6.50 (5.00 / 8.00)",
+        "6.75 (5.00 / 8.50)"
+       ],
+       [
+        "Net debt",
+        "65,008 (68,800 / 59,658)",
+        "88,558 (96,158 / 75,933)",
+        "112,258 (123,858 / 91,383)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is MTR's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A dividend yield is the annual dividend divided by the share price, not a promise of surplus cash. MTR paid an ordinary dividend of HK$1.31 per share for 2025, but it must first operate trains, renew assets, build lines and service debt. The Hong Kong SAR Government owns 74.45% of MTR, leaving a 25.55% free float, so the quoted market value applies to every share even though only a smaller portion trades freely."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.31"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-5.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-5.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "HK$ per share; share-count changes in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.16",
+      "1.38",
+      "1.22",
+      "1.28",
+      "1.31"
+     ],
+     "Real free cash flow per share": [
+      "-0.24",
+      "-0.85",
+      "-0.63",
+      "-0.60",
+      "-1.71"
+     ],
+     "Free cash flow per share": [
+      "-0.23",
+      "-0.83",
+      "-0.61",
+      "-0.58",
+      "-1.69"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/0066-hk/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=0066.HK&src=seo-dividend"
+  }
+ },
+ "short_name": "MTR",
+ "first_memo_date": "2026-10-17T18:20:57Z"
+}

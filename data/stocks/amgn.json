@@ -1,0 +1,808 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AMGN",
+ "slug": "amgn",
+ "company": "Amgen Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T00:07:28Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 417.57,
+ "price_date": "2026-10-12T20:00:01Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 258,
+  "tables": 27,
+  "words": 16684,
+  "sources": 285
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Amgen is a biotechnology company that develops, manufactures, and sells prescription medicines for serious illnesses. Its money comes in when those medicines reach healthcare customers, and it goes out through research, manufacturing, discounts, selling costs, and taxes."
+ },
+ "sources": [
+  {
+   "title": "Amgen 2025 annual report, Note 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm"
+  },
+  {
+   "title": "Horizon accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815425000010/amgn-20241231.htm"
+  },
+  {
+   "title": "2023 accounts",
+   "url": "https://www.sec.gov/Archives/edgar/data/318154/000031815424000011/amgn-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "ABBV",
+  "JNJ",
+  "PFE",
+  "MRK",
+  "BMY",
+  "REGN",
+  "LLY",
+  "NVS",
+  "AZN",
+  "SNY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Amgen stock forecast",
+   "meta_description": "Amgen's forecast weighs replacement growth, MariTide, debt reduction, cash generation and valuation across bear, base and bull cases.",
+   "opening": "Amgen's weighted price reaches $548.42 by October 2029, with the base case carrying 55% probability. It hinges on replacing denosumab erosion, proving MariTide and reducing debt.",
+   "closing": "The full Amgen memo also explains Amgen's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Amgen's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Amgen’s weighted price reaches $548.42 by October 2029, a 39% total return with dividends, if replacement growth offsets older-brand erosion and MariTide’s potential upside emerges. Management guides to 2026 revenue of $38,200–$39,400 million. It guides to non-GAAP diluted EPS of $22.30–$23.50. It also forecasts $2,600 million of capital expenditures and adjusted research spending growth at a high-single-digit rate."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 417.57, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 417.57, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "332.04 (-18 %)",
+        "275.31 (-29 %)",
+        "251.34 (-33 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "543.73 (+33 %)",
+        "548.16 (+37 %)",
+        "548.50 (+39 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "688.49 (+67 %)",
+        "814.88 (+100 %)",
+        "919.57 (+128 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "519.76 (+27 %)",
+        "533.29 (+33 %)",
+        "548.42 (+39 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Amgen?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base begins near the roughly $13.2 billion implied by the next-12-month analyst estimate and approximately 540 million shares. Management's 2026 EPS guidance is $22.30–$23.50, which supports a near-term earnings anchor. The base assumes Repatha, EVENITY and TEZSPIRE broadly offset older-brand erosion, while the bear assumes Prolia, Xgeva and Enbrel pressure overwhelms replacement growth. The bull requires stronger uptake, pricing and operating leverage."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "13,309 (12,020 / 13,678)",
+        "14,025 (11,542 / 14,960)",
+        "14,708 (11,457 / 16,215)"
+       ],
+       [
+        "Shares (millions)",
+        "538 (543 / 536)",
+        "537 (545 / 532)",
+        "536 (547 / 529)"
+       ],
+       [
+        "Dividends per share",
+        "10.53 (10.08 / 10.59)",
+        "11.32 (10.08 / 11.56)",
+        "12.00 (10.08 / 12.36)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (15.00 / 27.00)",
+        "21.00 (13.00 / 29.00)",
+        "20.00 (12.00 / 30.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Amgen really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation also belongs in the economic calculation. Amgen added back $494 million of stock pay in operating cash flow because issuing shares is not an immediate cash payment. Deducting it gives real free cash flow of $7,606 million, or 20.7% of revenue. That remains substantial, but it was below the $8,040 million achieved in 2021."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "9,958",
+        "11,490",
+        "8,471",
+        "9,721",
+        "9,261"
+       ],
+       [
+        "− Capital spending",
+        "1,858",
+        "1,096",
+        "1,112",
+        "936",
+        "880"
+       ],
+       [
+        "**= Free cash flow**",
+        "8,100",
+        "10,394",
+        "7,359",
+        "8,785",
+        "8,381"
+       ],
+       [
+        "− Stock pay",
+        "494",
+        "530",
+        "431",
+        "401",
+        "341"
+       ],
+       [
+        "**= Real free cash flow**",
+        "7,606",
+        "9,864",
+        "6,928",
+        "8,384",
+        "8,040"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "20.7%",
+        "29.5%",
+        "24.6%",
+        "31.9%",
+        "30.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Amgen today?",
+     "paragraphs": [
+      {
+       "n": 189,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Today’s price requires durable growth from Amgen’s established portfolio, with MariTide providing uncertain additional value. The forward P/E of 17.1x and share price of $417.57 imply estimated annual earnings of about $24.42 per share. That estimate exceeds Amgen’s full-year 2026 adjusted earnings guidance of $22.30–$23.50, although the periods are not identical."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "417.57"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "548.42 (+39 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 417.57,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "332.04 (-18 %)",
+       "275.31 (-29 %)",
+       "251.34 (-33 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "543.73 (+33 %)",
+       "548.16 (+37 %)",
+       "548.50 (+39 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "688.49 (+67 %)",
+       "814.88 (+100 %)",
+       "919.57 (+128 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "519.76 (+27 %)",
+       "533.29 (+33 %)",
+       "548.42 (+39 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/amgn/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMGN&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Amgen dividend: payout, cash cover and yield",
+   "meta_description": "Amgen pays a quarterly dividend, with cash flow, debt and product risks shaping what comes next.",
+   "opening": "Amgen's latest declared quarterly dividend is $2.52. In 2025, its $8,100 million of free cash flow exceeded $5,124 million of dividends paid, so the dividend was covered by that year's free cash flow.",
+   "closing": "The full memo also explains Amgen's business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Amgen pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The latest declared quarterly dividend is $2.52. The base follows the recent 6% increase; the bull uses roughly 7% annual growth. Amgen's fourteen-year growth record and $8,100 million of 2025 free cash flow, versus $5,124 million of dividends paid, support continued increases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Dividends per share",
+        "10.53 (10.08 / 10.59)",
+        "11.32 (10.08 / 11.56)",
+        "12.00 (10.08 / 12.36)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Amgen's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation also belongs in the economic calculation. Amgen added back $494 million of stock pay in operating cash flow because issuing shares is not an immediate cash payment. Deducting it gives real free cash flow of $7,606 million, or 20.7% of revenue. That remains substantial, but it was below the $8,040 million achieved in 2021."
+      },
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Horizon changed the financing scale. In 2023, Amgen spent $26,989 million on acquisitions and raised $27,777 million through debt issuance. Afterward, buybacks largely stopped; Amgen spent $200 million on them in 2024, while dividends reached $5,124 million in 2025. Net debt fell to $45,475 million in 2025 from $53,669 million in 2023, but remained above its 2021 level."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "8,100",
+        "10,394",
+        "7,359",
+        "8,785",
+        "8,381"
+       ],
+       [
+        "− Dividends paid",
+        "5,124",
+        "4,832",
+        "4,556",
+        "4,196",
+        "4,013"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "200",
+        "0",
+        "6,360",
+        "4,975"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,976",
+        "5,362",
+        "2,803",
+        "",
+        ""
+       ],
+       [
+        "**= Net debt**",
+        "45,475",
+        "48,126",
+        "53,669",
+        "29,640",
+        "25,272"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "63.3%",
+        "48.4%",
+        "61.9%",
+        "120.2%",
+        "107.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Amgen's dividend?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if faster denosumab switching reduced revenue and margins during 2027–2029, or if weaker cash flow slowed debt reduction and buybacks."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "MariTide Phase 3 results during 2028–2029 are the clearest swing factor. Durable weight loss with acceptable tolerability would increase pipeline value; disappointing evidence would remove a major source of upside."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Amgen's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "417.57"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "9.45"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "7.00",
+      "7.76",
+      "8.47",
+      "8.93",
+      "9.45"
+     ],
+     "Real free cash flow per share": [
+      "14.03",
+      "15.50",
+      "12.88",
+      "18.23",
+      "14.03"
+     ],
+     "Free cash flow per share": [
+      "14.63",
+      "16.24",
+      "13.68",
+      "19.21",
+      "14.94"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/amgn/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMGN&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Amgen earnings date and guidance",
+   "meta_description": "Amgen's next results are expected November 3, 2026; guidance calls for $38,200–$39,400 million of revenue and $22.30–$23.50 non-GAAP EPS.",
+   "opening": "Amgen's next results are expected on November 3, 2026. Watch Amgen's Dazodalibep study for reproducible benefit, not just completion.",
+   "closing": "The full memo also explains Amgen's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Amgen guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Amgen expects a stronger 2026 while also preparing for higher costs. Its August forecast calls for revenue of $38,200–$39,400 million and non-GAAP diluted earnings per share of $22.30–$23.50."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Total revenues",
+        "Year to Dec 2026",
+        "38,200",
+        "39,400",
+        "Aug 4, 2026"
+       ],
+       [
+        "Non-GAAP diluted EPS guidance",
+        "Year to Dec 2026",
+        "22.30",
+        "23.50",
+        "Aug 4, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "2,600",
+        "2,600",
+        "Aug 4, 2026"
+       ],
+       [
+        "Share repurchases",
+        "Year to Dec 2026",
+        "",
+        "3,000",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Amgen keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 119,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management forecast 2025 revenue of US$34.3 billion–US$35.7 billion and non-GAAP earnings per share of US$20.00–US$21.20. It delivered US$36.8 billion of revenue and US$21.84 of non-GAAP earnings per share. Non-GAAP means management adjusts standard accounting earnings by excluding selected items, including acquisition-related expenses. The result shows execution against its chosen measure, not that those costs disappeared."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Amgen's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $10,054 million, up 9.5% from Q2 2025. Product sales grew 9%, with volume up 9% in the United States and 8% elsewhere. That broad improvement outweighed declines in older medicines."
+      },
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Reported profit improved much faster than sales. Diluted EPS rose 64.9% to $4.37. Adjusted EPS rose about 4%, from $6.02 to $6.29. Acquisition-related cost-of-sales exclusions fell, which lifted reported margins even though adjusted operating margin declined from 48.9% to 48.4%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,054",
+        "8,618",
+        "9,866",
+        "9,557",
+        "9,179",
+        "8,149",
+        "9,086",
+        "8,503"
+       ],
+       [
+        "Gross margin",
+        "72.0%",
+        "68.2%",
+        "69.8%",
+        "67.8%",
+        "67.2%",
+        "63.6%",
+        "65.7%",
+        "61.1%"
+       ],
+       [
+        "Operating income",
+        "3,514",
+        "2,666",
+        "2,720",
+        "2,526",
+        "2,656",
+        "1,178",
+        "2,311",
+        "2,047"
+       ],
+       [
+        "Net income",
+        "2,375",
+        "1,819",
+        "1,333",
+        "3,216",
+        "1,432",
+        "1,730",
+        "627",
+        "2,830"
+       ],
+       [
+        "EPS, diluted",
+        "4.37",
+        "3.34",
+        "2.45",
+        "5.93",
+        "2.65",
+        "3.20",
+        "1.16",
+        "5.22"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,489",
+        "1,477",
+        "961",
+        "4,248",
+        "1,911",
+        "980",
+        "4,400",
+        "3,314"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Amgen's next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Dazodalibep’s companion Sjögren’s study is expected to complete in the fourth quarter of 2026. Completion is not approval; it must produce reproducible benefit. These events show what Amgen must convert into value: permission, commercial access and evidence."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "10,054"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "4.37"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,503",
+      "9,086",
+      "8,149",
+      "9,179",
+      "9,557",
+      "9,866",
+      "8,618",
+      "10,054"
+     ],
+     "EPS, diluted": [
+      "5.22",
+      "1.16",
+      "3.20",
+      "2.65",
+      "5.93",
+      "2.45",
+      "3.34",
+      "4.37"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/amgn/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMGN&src=seo-earnings"
+  }
+ },
+ "short_name": "Amgen",
+ "first_memo_date": "2026-10-13T00:07:28Z"
+}

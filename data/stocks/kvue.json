@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "KVUE",
+ "slug": "kvue",
+ "company": "Kenvue Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T20:25:42Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 18.905,
+ "price_date": "2026-10-19T19:02:53Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 16484,
+  "sources": 216
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Kenvue sells the medicines and personal-care products people keep in bathroom cabinets, medicine cupboards and changing bags. Its business falls into three portfolios: Self Care, Essential Health, and Skin Health and Beauty."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000030/kvue-20251228.htm"
+  },
+  {
+   "title": "Kenvue 2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1944048/000194404824000057/kvue-20231231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1944048/000194404825000033/kvue-20241229.htm"
+  }
+ ],
+ "rivals": [
+  "PG",
+  "HLN",
+  "RKT.L",
+  "CL",
+  "CHD",
+  "CLX",
+  "KMB",
+  "UL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Kenvue stock forecast",
+   "meta_description": "Kenvue stock forecast: the weighted case, recovery drivers, real free cash flow, and valuation investors are paying today.",
+   "opening": "Kenvue's weighted case is $22.14 by October 2027 and $24.12 by October 2029, with a 55% base case. It hinges on sustained volume and share recovery, especially in Skin Health and Beauty, and whether cash generation supports dividends and debt needs.",
+   "closing": "The full memo also answers how Kenvue's business works, how its rivals compare, what management is doing, and which risks matter.",
+   "blocks": [
+    {
+     "heading": "Where could Kenvue's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case is $22.14 by October 2027, a 22% return including dividends, and $24.12 by October 2029, a 41% return including dividends. The bear case carries 25% probability. The base case carries 55%, and the bull case 20%."
+      },
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The weighted price reaches $22.14 in October 2027, a 22% return including dividends. It reaches $23.13 in October 2028, a 31% return. By October 2029, it reaches $24.12, or 41% including dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 18.91, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 18.91, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "14.98 (-16 %)",
+        "13.45 (-22 %)",
+        "12.80 (-23 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "22.50 (+23 %)",
+        "23.22 (+32 %)",
+        "23.95 (+41 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "30.10 (+64 %)",
+        "35.00 (+94 %)",
+        "38.76 (+120 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "22.14 (+22 %)",
+        "23.13 (+31 %)",
+        "24.12 (+41 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Kenvue?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $1,800 million initially, then $1,850 million and $1,900 million because weak volume and margin pressure persist. The bull case gives $2,750 million, $2,920 million and $3,100 million because Skin Health and Beauty gains broaden, Self Care stabilizes and the restructuring works. The $200 million savings target supports improvement, but it is gross savings, not earnings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Kenvue really make?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is another shareholder cost. Kenvue keeps the cash, but employees receive shares or share-based awards, leaving existing owners with a smaller claim unless Kenvue repurchases shares. The analytical “real free cash flow” subtracts that cost. Restructuring payments are already inside operating cash flow, so subtracting them again would double count them."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,197",
+        "1,769",
+        "3,168",
+        "2,525",
+        "334"
+       ],
+       [
+        "− Capital spending",
+        "475",
+        "434",
+        "469",
+        "375",
+        "295"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,722",
+        "1,335",
+        "2,699",
+        "2,150",
+        "39"
+       ],
+       [
+        "− Stock pay",
+        "136",
+        "254",
+        "188",
+        "137",
+        "141"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,586",
+        "1,081",
+        "2,511",
+        "2,013",
+        "-102"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "10.5%",
+        "7.0%",
+        "16.3%",
+        "13.5%",
+        "-0.7%"
+       ]
+      ],
+      "note": "The company's own free cash flow is slightly different from ours because it rounds the figures and sometimes subtracts small items that we do not."
+     }
+    },
+    {
+     "heading": "What does Kenvue's stock price pay for in earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, compares the share price with earnings. Its trailing version uses the last twelve months; its forward version uses the next twelve months. The other measures in the table compare business value with revenue, share price with accounting equity, and annual cash generation with the equity price. Book value is an imperfect guide for a branded company because accounting does not fully capture customer habits and trusted names."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "18.905"
+       ],
+       [
+        "Market value (calculated)",
+        "36,312.22"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "43,682.22"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "21.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.2x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.4%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts’ guesses about future profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "18.905"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "24.12 (+41 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 18.905,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "14.98 (-16 %)",
+       "13.45 (-22 %)",
+       "12.80 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "22.50 (+23 %)",
+       "23.22 (+32 %)",
+       "23.95 (+41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "30.10 (+64 %)",
+       "35.00 (+94 %)",
+       "38.76 (+120 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "22.14 (+22 %)",
+       "23.13 (+31 %)",
+       "24.12 (+41 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/kvue/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KVUE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Kenvue dividend",
+   "meta_description": "Kenvue pays a dividend, but recent shareholder payments have exceeded free cash flow and future coverage depends on cash generation.",
+   "opening": "Kenvue pays $0.83 per share in the first horizon. Kenvue's cash coverage is narrow: in 2024, Kenvue generated $1.335 billion of free cash flow and paid shareholders $1.787 billion, while in 2025 dividends and buybacks exceeded free cash flow by $56 million.",
+   "closing": "The full Kenvue memo also covers Kenvue's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Kenvue pay per share?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays at $0.83 in the first horizon. The base case then raises it to $0.87 and $0.92, while the bear case cuts it to $0.50 and the bull case lifts it to $0.92 and $1.02. The base path reflects narrow first-half cash coverage; the bear path reflects debt and restructuring pressure; the bull path requires stronger cash generation."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,400 (1,800 / 2,750)",
+        "2,480 (1,850 / 2,920)",
+        "2,560 (1,900 / 3,100)"
+       ],
+       [
+        "Dividends per share",
+        "0.83 (0.83 / 0.83)",
+        "0.87 (0.50 / 0.92)",
+        "0.92 (0.50 / 1.02)"
+       ],
+       [
+        "Price to earnings",
+        "18.00 (16.00 / 21.00)",
+        "18.00 (14.00 / 23.00)",
+        "18.00 (13.00 / 24.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Kenvue's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2024, Kenvue generated $1.335 billion of free cash flow. It paid shareholders $1.787 billion, $452 million more than that cash generation. In 2025, free cash flow rose to $1.722 billion, but dividends and buybacks still exceeded it by $56 million. A profitable company can therefore distribute more cash than its operations generated, leaving debt or future investment to absorb the difference."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,722",
+        "1,335",
+        "2,699",
+        "2,150",
+        "39"
+       ],
+       [
+        "− Dividends paid",
+        "1,581",
+        "1,552",
+        "766",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "197",
+        "235",
+        "7",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "1,926",
+        "2,150",
+        "39"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "56",
+        "452",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Kenvue's dividend?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "During 2026–2028, investors should test whether the $200 million savings programme survives implementation costs, reinvestment and debt needs. Better cash generation would support dividends and repurchases; continued cash strain would pull the forecast toward the bear path."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Kenvue's dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 194,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "An investor seeking an 8% annual return would need more than the current cash yield if that cash does not grow. With no cash growth, the target would require roughly $2.9 billion annually, versus about $1.6 billion implied by current cash generation. That is a hurdle, not a forecast. Execution must make earnings repeatable and turn them into durable cash."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "18.905"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.4%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts’ guesses about future profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.82"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Jan 2022",
+     "Jan 2023",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "",
+      "0.00",
+      "0.41",
+      "0.81",
+      "0.82"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "1.05",
+      "1.36",
+      "0.56",
+      "0.82"
+     ],
+     "Free cash flow per share": [
+      "",
+      "1.12",
+      "1.46",
+      "0.69",
+      "0.90"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/kvue/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KVUE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Kenvue earnings: what to know",
+   "meta_description": "Kenvue’s next results are expected November 2, 2026; Kenvue has guided to restructuring charges, savings and workforce reduction.",
+   "opening": "Kenvue’s next results are expected on November 2, 2026. Kenvue’s key watch is whether the acquisition closes on schedule.",
+   "closing": "The full Kenvue memo also answers how Kenvue makes money, who Kenvue’s rivals are, how Kenvue is run, and what risks Kenvue faces.",
+   "blocks": [
+    {
+     "heading": "What has Kenvue guided for the year?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The expected reward is described as annualized pre-tax gross savings. “Annualized” means the saving is measured as if the completed changes operated for a full year. “Gross” means before Kenvue reinvests part of it in advertising, product support or higher manufacturing costs. The saving is therefore a possible future reduction in costs, not an automatic addition to 2026 profit."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Pre-tax restructuring expenses and other charges (approximately)",
+        "Fiscal 2026",
+        "250",
+        "250",
+        "Aug 6, 2026"
+       ],
+       [
+        "Information technology and project-related costs (% of initiative; approximately)",
+        "Fiscal 2026",
+        "59.0%",
+        "59.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Employee-related costs (% of initiative; approximately)",
+        "Fiscal 2026",
+        "35.0%",
+        "35.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Other implementation costs (% of initiative; approximately)",
+        "Fiscal 2026",
+        "6.0%",
+        "6.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Annualized pre-tax gross cost savings (approximately)",
+        "Fiscal 2026 initiative, upon completion",
+        "200",
+        "200",
+        "Aug 6, 2026"
+       ],
+       [
+        "Net global workforce reduction (approximately)",
+        "Fiscal 2026 initiative",
+        "3.5%",
+        "3.5%",
+        "Feb 17, 2026"
+       ]
+      ],
+      "note": "The table still lists earlier guidance even though the company stopped giving future estimates on August 6, 2026, because of its pending transaction with Kimberly-Clark."
+     }
+    },
+    {
+     "heading": "Did Kenvue keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "In 2025, organic sales fell 2.2%, while free cash flow rose to US$1.7 billion. Sales and adjusted net income missed their incentive thresholds, but free cash flow exceeded its target and helped support the overall award. In February 2025, Kenvue had forecast organic sales growth of 2%–4%; the eventual decline therefore spans two leadership periods. Shareholders can hold the company accountable while recognizing what Perry inherited."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Kenvue’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Second-quarter 2026 showed better demand and cash generation, but weaker margins limited the operating-profit recovery."
+      },
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Gross margin fell from 58.9% to 58.2% as inflation, tariffs and transaction-related currency costs offset productivity gains. Operating income rose from $692 million to $699 million. Net income rose from $420 million to $456 million partly because a valuation allowance was released. That allowance had reserved against tax benefits Kenvue once thought it might not use; releasing it lowered tax expense without making the brands more profitable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,955",
+        "3,909",
+        "3,780",
+        "3,764",
+        "3,839",
+        "3,741",
+        "3,662",
+        "3,899"
+       ],
+       [
+        "Gross margin",
+        "58.2%",
+        "58.9%",
+        "56.5%",
+        "59.1%",
+        "58.9%",
+        "58.0%",
+        "56.5%",
+        "58.5%"
+       ],
+       [
+        "Operating income",
+        "699",
+        "767",
+        "535",
+        "629",
+        "692",
+        "558",
+        "483",
+        "654"
+       ],
+       [
+        "Net income",
+        "456",
+        "474",
+        "330",
+        "398",
+        "420",
+        "322",
+        "293",
+        "383"
+       ],
+       [
+        "EPS, diluted",
+        "0.24",
+        "0.25",
+        "0.17",
+        "0.21",
+        "0.22",
+        "0.17",
+        "0.15",
+        "0.20"
+       ]
+      ],
+      "note": "The table shows quarterly amounts, even though some descriptions say they are for a full year."
+     }
+    },
+    {
+     "heading": "What should Kenvue watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The acquisition timetable, debt exchange and product litigation will determine which risks become easier to manage."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,955"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.24"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,899",
+      "3,662",
+      "3,741",
+      "3,839",
+      "3,764",
+      "3,780",
+      "3,909",
+      "3,955"
+     ],
+     "EPS, diluted": [
+      "0.20",
+      "0.15",
+      "0.17",
+      "0.22",
+      "0.21",
+      "0.17",
+      "0.25",
+      "0.24"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/kvue/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KVUE&src=seo-earnings"
+  }
+ },
+ "short_name": "Kenvue",
+ "first_memo_date": "2026-10-19T20:25:42Z"
+}

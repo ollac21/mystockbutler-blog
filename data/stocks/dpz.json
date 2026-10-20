@@ -1,0 +1,561 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "DPZ",
+ "slug": "dpz",
+ "company": "Domino's Pizza, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T10:51:37Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 295.89,
+ "price_date": "2026-10-14T20:00:01Z",
+ "next_earnings": "",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 26,
+  "words": 16082,
+  "sources": 200
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Domino’s is a pizza brand, a restaurant network and a food distributor at once. To understand how a dollar moves through it, start with what a customer buys, then follow the payments among stores, franchisees and the company."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1286681/000119312526062313/dpz-ex99_1.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1286681/000095017025025220/dpz-ex99_1.htm"
+  },
+  {
+   "title": "September 2026 Form 10-Q, Note 10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000040/dpz-20260906.htm"
+  }
+ ],
+ "rivals": [
+  "PZZA",
+  "YUMC",
+  "CASY",
+  "RAVE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Domino’s stock forecast",
+   "meta_description": "Domino’s stock forecast weighs scenario values, cash generation, refinancing, franchisee economics and valuation.",
+   "opening": "Domino’s weighted value is $378.17 in October 2029, with a +37% return including dividends. It hinges on refinancing and franchisee economics keeping cash generation durable.",
+   "closing": "The full Domino’s memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Domino’s shares go?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted value is $319.21 in October 2027. That implies +11%, including dividends. The final weighted value is $378.17 in October 2029. Its return is +37%, including dividends. The bear case probability is 27%. The base case is 53%, and the bull case is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 295.89, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 295.89, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "246.49 (-14 %)",
+        "225.88 (-18 %)",
+        "206.13 (-22 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "321.23 (+11 %)",
+        "342.70 (+22 %)",
+        "368.81 (+34 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "412.02 (+42 %)",
+        "513.25 (+80 %)",
+        "635.25 (+125 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "319.21 (+11 %)",
+        "345.27 (+23 %)",
+        "378.17 (+37 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right for Domino’s?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Before July 2027, refinancing rate and terms will determine cash available to owners. Through 2027, customer baskets and franchisee returns must recover enough to support store openings. The bull case needs repeat profitable orders, improving franchisee returns and productive openings. Domino’s is ultimately a bet that healthy franchisees can keep converting orders into cash before the debt comes due."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Domino’s really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending remains necessary even in a franchised system because Domino’s must maintain technology, supply-chain facilities and company stores. The accounts do not cleanly separate maintenance spending from growth spending. Stock compensation adds another qualification: subtracting $44.6 million of stock pay leaves analytical “real free cash flow” of $626.9 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "792,062",
+        "624,897",
+        "590,864",
+        "475,317",
+        "654,206"
+       ],
+       [
+        "− Capital spending",
+        "120,558",
+        "112,885",
+        "105,396",
+        "87,234",
+        "94,172"
+       ],
+       [
+        "**= Free cash flow**",
+        "671,504",
+        "512,012",
+        "485,468",
+        "388,083",
+        "560,034"
+       ],
+       [
+        "− Stock pay",
+        "44,640",
+        "43,255",
+        "37,514",
+        "28,709",
+        "28,670"
+       ],
+       [
+        "**= Real free cash flow**",
+        "626,864",
+        "468,757",
+        "447,954",
+        "359,374",
+        "531,364"
+       ]
+      ],
+      "note": "The company's own free cash flow is almost the same as ours because the tiny differences are just rounding, but our real free cash flow is lower because we subtract shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Domino’s?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The table brings together today’s share price, valuation multiples, cash-flow yields and dividend yield."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "295.89"
+       ],
+       [
+        "Market value (calculated)",
+        "9,733,614.00984"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "14,390,483.00984"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "16.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "6.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "6.4%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than it owns."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "295.89"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "378.17 (+37 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 295.89,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "246.49 (-14 %)",
+       "225.88 (-18 %)",
+       "206.13 (-22 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "321.23 (+11 %)",
+       "342.70 (+22 %)",
+       "368.81 (+34 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "412.02 (+42 %)",
+       "513.25 (+80 %)",
+       "635.25 (+125 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "319.21 (+11 %)",
+       "345.27 (+23 %)",
+       "378.17 (+37 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/dpz/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DPZ&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Domino’s dividend: payout and coverage",
+   "meta_description": "Domino’s pays a growing dividend from positive free cash flow, but refinancing and franchisee economics could affect future payments.",
+   "opening": "Domino’s pays $1.99 per quarter, or $7.96 annualized. Its 2025 free cash flow was $671.5 million and real free cash flow was $626.9 million, while recent free cash flow remained positive.",
+   "closing": "The full memo also examines Domino’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Domino’s pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The latest declared rate is $1.99 per quarter. It annualizes to $7.96. The base case gives dividends per share of $8.56 in the first forecast window. It rises to $9.42 and then $10.36. The bear case holds dividends at $7.96 throughout. The bull case gives $8.76, $10.07 and $11.58."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; share counts in millions",
+      "caption": "What one share gets (US$ per share; share counts in millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "6.92",
+        "6.00",
+        "4.80",
+        "4.36",
+        "3.70"
+       ],
+       [
+        "− Share buybacks, per share",
+        "10.45",
+        "9.42",
+        "7.60",
+        "8.14",
+        "35.05"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "2.25",
+        "",
+        "1.32",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract the value of shares given to employees as pay; we subtract it because those new shares reduce what each existing share gets."
+     }
+    },
+    {
+     "heading": "Does Domino’s dividend come from free cash flow?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash after capital spending. In 2025, operating cash of $792.1 million less capital spending of $120.6 million left $671.5 million, above net income. That supports the quality of the reported earnings, but not necessarily their permanence."
+      },
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending remains necessary even in a franchised system because Domino’s must maintain technology, supply-chain facilities and company stores. The accounts do not cleanly separate maintenance spending from growth spending. Stock compensation adds another qualification: subtracting $44.6 million of stock pay leaves analytical “real free cash flow” of $626.9 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "671,504",
+        "512,012",
+        "485,468",
+        "388,083",
+        "560,034"
+       ],
+       [
+        "− Dividends paid",
+        "236,861",
+        "209,945",
+        "169,772",
+        "157,531",
+        "139,399"
+       ],
+       [
+        "− Share buybacks",
+        "357,697",
+        "329,557",
+        "269,025",
+        "293,740",
+        "1,320,902"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "76,946",
+        "",
+        "46,671",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "88.5%",
+        "105.4%",
+        "90.4%",
+        "116.3%",
+        "260.8%"
+       ]
+      ],
+      "note": "The company sometimes paid shareholders more than the cash it generated, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Domino’s dividend?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The clearest bear trigger is refinancing before July 2027. Higher interest expense would reduce net income, free cash flow and repurchase capacity."
+      },
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would gain support if management delivered its restrained sales and store outlook while operating income continued to grow. A completed refinancing at manageable rates would also preserve the assumed moderate buyback and dividend paths."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Domino’s dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "295.89"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "6.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "6.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.7%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than it owns."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "6.92"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "6.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "6.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; share counts in millions",
+    "columns": [
+     "Jan 2022",
+     "Jan 2023",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.70",
+      "4.36",
+      "4.80",
+      "6.00",
+      "6.92"
+     ],
+     "Real free cash flow per share": [
+      "14.10",
+      "9.96",
+      "12.65",
+      "13.40",
+      "18.31"
+     ],
+     "Free cash flow per share": [
+      "14.86",
+      "10.75",
+      "13.71",
+      "14.63",
+      "19.61"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/dpz/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DPZ&src=seo-dividend"
+  }
+ },
+ "short_name": "Domino’s",
+ "first_memo_date": "2026-10-15T10:51:37Z"
+}

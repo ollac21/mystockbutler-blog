@@ -1,0 +1,824 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "KDP",
+ "slug": "kdp",
+ "company": "Keurig Dr Pepper Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T23:10:03Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 34.62,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 27,
+  "words": 16362,
+  "sources": 193
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Keurig Dr Pepper is a drinks company with an unusual second engine: it sells branded beverages while also making the coffee machines and pods that turn brewing into a repeat purchase. To understand its business, follow what it sells, who pays, and what remains after ingredients, factories, delivery, overhead and investment take their share."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000016/kdp-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813525000013/kdp-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000011/ex991-keurigdrpepperreport.htm"
+  }
+ ],
+ "rivals": [
+  "KO",
+  "PEP",
+  "NESN.SW",
+  "SBUX",
+  "MNST",
+  "CELH",
+  "PRMB",
+  "SJM",
+  "COCO",
+  "BROS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "KDP stock forecast",
+   "meta_description": "KDP stock forecast: weighted scenarios, cash generation, valuation, and the conditions behind the bear, base, and bull cases.",
+   "opening": "KDP’s weighted forecast is $42.37 in October 2029. It hinges on durable earnings, cash conversion, deleveraging and a workable separation.",
+   "closing": "The full memo also explains KDP’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could KDP’s shares be?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case is $36.48 in October 2027, an 8% total return including dividends, and $42.37 in October 2029, a 31% total return including dividends. It assigns 32% probability to the bear case, 53% to the base case and 15% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 34.62, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 34.62, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "32 %",
+        "28.51 (-15 %)",
+        "26.44 (-18 %)",
+        "26.09 (-17 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "37.95 (+12 %)",
+        "40.76 (+23 %)",
+        "46.06 (+41 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "48.27 (+42 %)",
+        "55.16 (+65 %)",
+        "64.09 (+94 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "36.48 (+8 %)",
+        "38.34 (+16 %)",
+        "42.37 (+31 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected value after giving more influence to the cases with higher probabilities."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for KDP?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome turns on stabilizing pod demand, cash funding dividends while reducing debt, and JDE Peet’s producing repeatable profit. On November 3, September-quarter results should show U.S. coffee demand and second-half cash generation. By early 2027, both planned companies need independent operations and sound financing. Through the first quarter of 2029, the planned $400 million of synergies must exceed integration and restructuring costs. The investment works only if pod demand stabilizes, cash pays dividends while debt falls, and the separation delivers value."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does KDP really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "KDP’s own free-cash-flow measure also includes property-sale proceeds and other adjustments. Stock compensation further reduces what an owner might regard as cash available to them. Dividends paid consumed US$1,250 million in 2025. The following table tracks these competing claims on cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,991",
+        "2,219",
+        "1,329",
+        "2,837",
+        "2,874"
+       ],
+       [
+        "− Capital spending",
+        "486",
+        "563",
+        "425",
+        "353",
+        "423"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,505",
+        "1,656",
+        "904",
+        "2,484",
+        "2,451"
+       ],
+       [
+        "− Stock pay",
+        "97",
+        "98",
+        "116",
+        "52",
+        "88"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,408",
+        "1,558",
+        "788",
+        "2,432",
+        "2,363"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do investors pay for KDP today?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The gap between trailing and forward P/E shows how quickly the earnings denominator is changing. The forward measure includes a fuller contribution from the acquisition, while historical profit includes acquisition charges and only a partial contribution. That makes the lower forward multiple attractive only if the added earnings are durable and available to common shareholders."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "34.62"
+       ],
+       [
+        "Market value (calculated)",
+        "51,294.08"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "80,783.08"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "35.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.7x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.7%"
+       ]
+      ],
+      "note": "The price-to-earnings ratio for the next twelve months is much lower because analysts expect the company's profit per share to rise."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "34.62"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "42.37 (+31 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 34.62,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "32 %",
+      "values": [
+       "28.51 (-15 %)",
+       "26.44 (-18 %)",
+       "26.09 (-17 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "37.95 (+12 %)",
+       "40.76 (+23 %)",
+       "46.06 (+41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "48.27 (+42 %)",
+       "55.16 (+65 %)",
+       "64.09 (+94 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "36.48 (+8 %)",
+       "38.34 (+16 %)",
+       "42.37 (+31 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/kdp/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KDP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "KDP dividend",
+   "meta_description": "KDP paid US$1,250 million in dividends in 2025 against US$1,505 million of free cash flow.",
+   "opening": "KDP paid US$1,250 million in dividends in 2025 against US$1,505 million of free cash flow, so free cash flow covered the dividend. The remaining cash competed with buybacks, debt reduction, investment and other uses.",
+   "closing": "The full KDP memo also answers questions about KDP’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does KDP pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend moves from $0.92 to $0.95 and then $0.98 per share. The bear case holds it at $0.92. The bull case reaches $0.97 and then $1.02. The current quarterly payment is $0.23, but debt service and preferred dividends compete with increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentage changes",
+      "caption": "What one share gets (US$ per share, except percentage changes)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "1.10",
+        "1.21",
+        "0.64",
+        "1.74",
+        "1.72"
+       ],
+       [
+        "− Paid to minority owners, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.92",
+        "0.87",
+        "0.81",
+        "0.76",
+        "0.67"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does KDP’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is operating cash after capital spending. In 2025, US$1,991 million of operating cash less US$486 million of capital spending left US$1,505 million, or 9.1% of sales. In 2021, free cash flow was 19.3% of sales. Sales grew, but the cash left after investment fell."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "KDP’s own free-cash-flow measure also includes property-sale proceeds and other adjustments. Stock compensation further reduces what an owner might regard as cash available to them. Dividends paid consumed US$1,250 million in 2025. The following table tracks these competing claims on cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,505",
+        "1,656",
+        "904",
+        "2,484",
+        "2,451"
+       ],
+       [
+        "− Dividends paid",
+        "1,250",
+        "1,194",
+        "1,142",
+        "1,080",
+        "955"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "1,105",
+        "706",
+        "379",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "255",
+        "",
+        "",
+        "1,025",
+        "1,496"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "83.1%",
+        "138.8%",
+        "204.4%",
+        "58.7%",
+        "39.0%"
+       ]
+      ],
+      "note": "The company's own net debt is lower because it leaves out finance-lease debts and some debt value adjustments that we count."
+     }
+    },
+    {
+     "heading": "What could change KDP’s dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,449 (2,990 / 3,656)",
+        "3,750 (2,889 / 4,100)",
+        "4,087 (2,811 / 4,588)"
+       ],
+       [
+        "Shares (millions)",
+        "1,363 (1,363 / 1,363)",
+        "1,426 (1,366 / 1,487)",
+        "1,429 (1,368 / 1,489)"
+       ],
+       [
+        "Dividends per share",
+        "0.92 (0.92 / 0.92)",
+        "0.95 (0.92 / 0.97)",
+        "0.98 (0.92 / 1.02)"
+       ],
+       [
+        "Price to earnings",
+        "15.00 (13.00 / 18.00)",
+        "15.50 (12.50 / 20.00)",
+        "16.10 (12.70 / 20.80)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is KDP’s dividend yield at today’s price?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "Keurig Dr Pepper, or KDP, sells packaged drinks and coffee systems, but its stock now also prices a large acquisition and a planned separation. At $34.62 a share, the central question is how much of the promised future profit will reach common shareholders after debt, preferred stock, and outside owners are paid."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.92"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentage changes",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.67",
+      "0.76",
+      "0.81",
+      "0.87",
+      "0.92"
+     ],
+     "Real free cash flow per share": [
+      "1.65",
+      "1.70",
+      "0.56",
+      "1.14",
+      "1.03"
+     ],
+     "Free cash flow per share": [
+      "1.72",
+      "1.74",
+      "0.64",
+      "1.21",
+      "1.10"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/kdp/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KDP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "KDP earnings: guidance and what to watch",
+   "meta_description": "KDP reports on November 3, 2026; guidance is $25.9–$26.4 billion of 2026 net sales and 4%–6% legacy sales growth.",
+   "opening": "The next KDP results are expected on November 3, 2026. Watch whether U.S. coffee demand and second-half cash generation improve.",
+   "closing": "The full KDP memo also explains KDP’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has KDP guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "KDP’s weighted forecast reaches $42.37 by October 2029, but that outcome hinges on durable earnings, cash conversion, deleveraging and a workable separation. Management guides to $25.9–$26.4 billion of 2026 net sales and 4%–6% constant-currency sales growth for the legacy business. Its 2026 pro-forma leverage ratio is 4.1x."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "net sales",
+        "Year to Dec 2026",
+        "25.9",
+        "26.4",
+        "Aug 6, 2026"
+       ],
+       [
+        "constant currency Adjusted diluted EPS growth",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Aug 6, 2026"
+       ],
+       [
+        "constant currency net sales growth for KDP’s legacy business",
+        "Year to Dec 2026",
+        "4.0%",
+        "6.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "constant currency Adjusted diluted EPS growth for KDP’s legacy business",
+        "Year to Dec 2026",
+        "4.0%",
+        "6.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "foreign currency translation tailwind to net sales and EPS growth (percentage points)",
+        "Year to Dec 2026",
+        "1.0",
+        "1.0",
+        "Aug 6, 2026"
+       ],
+       [
+        "pro-forma management leverage ratio",
+        "Year to Dec 2026",
+        "4.1x",
+        "4.1x",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The blank earnings-per-share growth range is still guidance because the company only said it expects growth in the low double digits without giving exact numbers."
+     }
+    },
+    {
+     "heading": "Has KDP kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "KDP also has an operating record to test. In February 2025, it targeted mid-single-digit sales growth and high-single-digit adjusted earnings-per-share growth, excluding currency movements. For 2025, it reported 8.6% adjusted sales growth and 7.3% adjusted earnings growth, which management called consistent with guidance. It has not, however, met the original separation timetable: completion moved from the end of 2026 to early 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has KDP’s last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "KDP has recently delivered reliably against quarterly expectations. Through June 2026, it beat earnings estimates six times and matched them twice across eight quarters. It beat sales estimates seven times and missed once."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,309",
+        "3,976",
+        "4,499",
+        "4,306",
+        "4,163",
+        "3,635",
+        "4,070",
+        "3,891"
+       ],
+       [
+        "Gross margin",
+        "41.9%",
+        "52.8%",
+        "53.8%",
+        "54.3%",
+        "54.2%",
+        "54.6%",
+        "55.9%",
+        "55.0%"
+       ],
+       [
+        "Operating income",
+        "628",
+        "756",
+        "881",
+        "995",
+        "898",
+        "801",
+        "63",
+        "902"
+       ],
+       [
+        "Net income",
+        "142",
+        "270",
+        "353",
+        "662",
+        "547",
+        "517",
+        "-144",
+        "616"
+       ],
+       [
+        "EPS, diluted",
+        "0.04",
+        "0.20",
+        "0.26",
+        "0.49",
+        "0.40",
+        "0.38",
+        "-0.11",
+        "0.45"
+       ],
+       [
+        "**= Free cash flow**",
+        "714",
+        "165",
+        "564",
+        "527",
+        "325",
+        "89",
+        "684",
+        "503"
+       ]
+      ],
+      "note": "The company reports 142 million dollars of profit, but preferred investors receive part of it, leaving only 60 million dollars for common shareholders."
+     }
+    },
+    {
+     "heading": "What should KDP watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next scheduled checkpoint is November 3, when KDP reports the September quarter. Investors should look for second-half cash generation, signs of improvement in U.S. coffee, and whether the acquisition is producing repeatable profit rather than timing benefits."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "7,309"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.04"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,891",
+      "4,070",
+      "3,635",
+      "4,163",
+      "4,306",
+      "4,499",
+      "3,976",
+      "7,309"
+     ],
+     "EPS, diluted": [
+      "0.45",
+      "-0.11",
+      "0.38",
+      "0.40",
+      "0.49",
+      "0.26",
+      "0.20",
+      "0.04"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/kdp/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KDP&src=seo-earnings"
+  }
+ },
+ "short_name": "KDP",
+ "first_memo_date": "2026-10-18T23:10:03Z"
+}

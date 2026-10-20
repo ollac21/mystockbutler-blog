@@ -1,0 +1,738 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "9988.HK",
+ "slug": "9988-hk",
+ "company": "Alibaba Group Holding Limited",
+ "exchange": "HKSE",
+ "currency": "HKD",
+ "index": "hsi",
+ "company_type": "operating_company",
+ "country": "hk",
+ "memo_date": "2026-10-12T11:45:23Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 108.2,
+ "price_date": "2026-10-12T08:08:15Z",
+ "next_earnings": "2026-12-01",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 268,
+  "tables": 27,
+  "words": 16537,
+  "sources": 214
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Alibaba is chiefly a digital marketplace operator: it connects shoppers and businesses, then sells the computing, logistics and retail services that help those transactions happen. Its money comes from fees, service charges and some direct sales, while its costs come from technology, people, inventory, infrastructure and delivery."
+ },
+ "sources": [
+  {
+   "title": "Alibaba FY2026 Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/baba-20260331.htm"
+  },
+  {
+   "title": "FY2025 Form 20-F",
+   "url": "https://www.sec.gov/Archives/edgar/data/1577552/000095017025090161/baba-20250331.htm"
+  },
+  {
+   "title": "June 2026 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926099220/tm2623667d1_ex99-1.htm"
+  }
+ ],
+ "rivals": [
+  "PDD",
+  "3690.HK",
+  "JD",
+  "0700.HK",
+  "AMZN",
+  "BIDU",
+  "1024.HK",
+  "SE",
+  "SHOP"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Alibaba stock forecast: cloud, cash and scenarios",
+   "meta_description": "Alibaba’s stock forecast weighs cloud and AI investment against commerce economics, cash generation and scenario prices.",
+   "opening": "Alibaba’s probability-weighted price is HKD98.99 in October 2027. Alibaba’s forecast hinges on cloud and AI investment becoming profitable cash generation.",
+   "closing": "The full memo also covers Alibaba’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Alibaba’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is HKD98.99 in October 2027, implying an 8% loss including dividends. It rises to HKD116.99 in October 2028, a 10% return, and HKD146.52 in October 2029, a 38% return. The final-date range is wide: HKD48.45 in the bear case to HKD273.75 in the bull case, against today’s HKD108.20."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "HKD per 9988.HK share at each date; in brackets the return since today's 108.20, dividends included",
+      "caption": "What the shares could be worth (HKD per 9988.HK share at each date; in brackets the return since today's 108.20, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "31 %",
+        "57.61 (-46 %)",
+        "44.38 (-57 %)",
+        "48.45 (-52 %)"
+       ],
+       [
+        "Base",
+        "49 %",
+        "106.08 (-1 %)",
+        "128.52 (+21 %)",
+        "156.64 (+48 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "145.77 (+36 %)",
+        "201.31 (+88 %)",
+        "273.75 (+156 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "98.99 (-8 %)",
+        "116.99 (+10 %)",
+        "146.52 (+38 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right—and wrong for Alibaba?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "AI workloads grow too slowly to fill new infrastructure, while subsidies, delivery costs and AI application losses suppress margins. Dilution continues because buybacks remain suspended. The shares fall from HKD57.61 in October 2027 to HKD48.45 in October 2029. Its 31% probability reflects risks already visible in falling China E-commerce adjusted EBITA, negative free cash flow and June capex above operating cash flow."
+      },
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires paid AI demand, high capacity utilization, narrower AI losses and better delivery economics at the same time. Buybacks then amplify per-share earnings, and investors award a higher multiple. The shares rise from HKD145.77 to HKD273.75. Its 20% probability reflects credible growth evidence but no established group-level cash return from the programme."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Alibaba really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending, or capex, is cash invested in long-lived assets such as servers, data centres and equipment. Alibaba’s infrastructure spending turned operating cash flow into negative free cash flow in FY2026. Its own free-cash-flow definition is less negative because it excludes some capital expenditures and makes specified adjustments."
+      },
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A further owner-focused measure deducts stock compensation as an economic cost, even though it is not another cash payment. The same discipline prevents double-counting lease payments, interest or working-capital movements."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "RMB millions",
+      "caption": "Follow the money: real free cash flow (RMB millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "76,213",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "126,937",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Free cash flow**",
+        "-50,724",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "11,180",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Real free cash flow**",
+        "-61,904",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Alibaba today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "HK$ millions; per share in HK$",
+      "caption": "What an investor pays today (HK$ millions; per share in HK$)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "108.20"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "25.70x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.07x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-2.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-3.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, HKD",
+     "value": "108.20"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "146.52 (+38 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-3.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.07x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 92.26898339777121,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "31 %",
+      "values": [
+       "57.61 (-46 %)",
+       "44.38 (-57 %)",
+       "48.45 (-52 %)"
+      ]
+     },
+     "Base": {
+      "probability": "49 %",
+      "values": [
+       "106.08 (-1 %)",
+       "128.52 (+21 %)",
+       "156.64 (+48 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "145.77 (+36 %)",
+       "201.31 (+88 %)",
+       "273.75 (+156 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "98.99 (-8 %)",
+       "116.99 (+10 %)",
+       "146.52 (+38 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/9988-hk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=9988.HK&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Alibaba dividend: amount and cash coverage",
+   "meta_description": "Alibaba pays CNY0.90 per share, but negative free cash flow means current cash flow does not cover the dividend.",
+   "opening": "Alibaba pays CNY0.90 per share, a regular dividend that has been stable since FY2023. Its FY2026 free cash flow was negative CNY50,724 million, so current cash flow did not cover the dividend.",
+   "closing": "The full memo also explains Alibaba’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Alibaba pay per share?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The forecast uses CNY0.90 per share in every case and every period. This approximates the declared regular dividend of US$0.13125, which has been stable since FY2023. FY2026 free cash flow was negative CNY50,724 million, so the model excludes the prior year’s extraordinary dividend and assumes infrastructure spending limits increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "RMB per share",
+      "caption": "What one share gets (RMB per share)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "-2.64",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.75",
+        "1.51",
+        "0.88",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.40",
+        "4.49",
+        "4.36",
+        "3.54",
+        "2.81"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Alibaba’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating cash pays for capital expenditure. Alibaba’s free cash flow turned negative in FY2026 because investment spending exceeded the cash generated by operations. Dividends and buybacks then consumed still more money, leaving less for new projects."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "RMB millions",
+      "caption": "Follow the money: where the free cash flow went (RMB millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-50,724",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "33,732",
+        "29,077",
+        "17,946",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "7,638",
+        "86,662",
+        "88,745",
+        "74,746",
+        "61,225"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "93,411",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Acquisitions",
+        "1,212",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Could Alibaba’s dividend change?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays flat because Alibaba has maintained the regular payment but has not funded a higher one from current cash flow."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Alibaba’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is HKD98.99 in October 2027, implying an 8% loss including dividends. It rises to HKD116.99 in October 2028, a 10% return, and HKD146.52 in October 2029, a 38% return. The final-date range is wide: HKD48.45 in the bear case to HKD273.75 in the bull case, against today’s HKD108.20."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "HK$ millions; per share in HK$",
+      "caption": "What an investor pays today (HK$ millions; per share in HK$)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "108.20"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-2.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-3.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "1.75"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-2.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "RMB per share",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.88",
+      "1.51",
+      "1.75"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "",
+      "-3.22"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "",
+      "",
+      "-2.64"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/9988-hk/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=9988.HK&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Alibaba earnings date and guidance",
+   "meta_description": "Alibaba’s next results are expected on December 1, 2026; guidance centers on AI revenue, with demand turning investment into cash as the key test.",
+   "opening": "Alibaba’s next results are expected on December 1, 2026. The key thing to watch is whether external demand fills capacity and turns cloud investment into cash.",
+   "closing": "The full memo also answers how Alibaba’s business works, who its rivals are, how management operates and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has Alibaba guided for AI products and cloud?",
+     "paragraphs": [
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management has guided to a US$10 billion annualized AI-product revenue run rate in the quarter ending September 2026. Annualized means multiplying the latest quarter’s pace by four; it is not money already collected. If Taobao, which Alibaba owns, uses Alibaba Cloud, that may prove the technology’s value, but money moving between Alibaba divisions is not new revenue for the consolidated group."
+      },
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The larger promise is to exceed US$100 billion in annual combined external cloud and AI revenue within five years. It includes ordinary computing, storage and databases, not only model services. Management also maintains a calendar-year-end target of RMB30 billion in annual recurring revenue from model and application services, including model as a service, through which customers use hosted models instead of running their own systems."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "Annualized revenue run rate of our AI products",
+        "Quarter to Sep 2026 (FY2027)",
+        "10",
+        "10",
+        "Aug 20, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What are Alibaba’s recent revenue and profit trends?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "June 2026 brought higher sales but much weaker profitability. Revenue rose, while gross margin, operating income, net income and diluted EPS all fell sharply."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "RMB millions; per share in RMB",
+      "caption": "The last eight reported periods (RMB millions; per share in RMB)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "268,953",
+        "243,380",
+        "284,843",
+        "247,795",
+        "247,652",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Gross margin",
+        "38.2%",
+        "34.5%",
+        "40.5%",
+        "39.2%",
+        "44.9%",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Operating income",
+        "15,161",
+        "-848",
+        "10,645",
+        "5,365",
+        "34,988",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "10,614",
+        "25,541",
+        "16,383",
+        "21,019",
+        "40,649",
+        "",
+        "",
+        ""
+       ],
+       [
+        "EPS, diluted",
+        "0.46",
+        "1.30",
+        "0.74",
+        "1.09",
+        "2.25",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Free cash flow**",
+        "-44,733",
+        "-18,351",
+        "7,033",
+        "-21,402",
+        "-18,004",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Alibaba’s next results?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will be paying customers, repeatable merchant returns and regulatory execution. September-quarter results should test the annualized AI-product milestone, while December-quarter disclosures should test the model-and-application-services target."
+      },
+      {
+       "n": 239,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Investors should track external cloud sales, margins, capital spending and free cash flow together. Alibaba separates AI Cloud and Compute Services from AI Labs and Applications, allowing a basic question: are infrastructure sales becoming profitable enough to support the continuing cost of developing and distributing models?"
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 1, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/9988-hk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=9988.HK&src=seo-earnings"
+  }
+ },
+ "short_name": "Alibaba",
+ "first_memo_date": "2026-10-12T11:45:23Z"
+}

@@ -1,0 +1,785 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "VST",
+ "slug": "vst",
+ "company": "Vistra Corp.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T17:21:16Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 152.02,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-06",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 247,
+  "tables": 26,
+  "words": 18683,
+  "sources": 228
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Vistra Corp. is an energy company that sells electricity and natural gas while owning power plants that generate electricity. A dollar enters when customers and power markets pay for supply or availability, and it leaves through fuel, purchased power, plant upkeep, customer acquisition, and collateral."
+ },
+ "sources": [
+  {
+   "title": "Investor presentation — FY2025",
+   "url": "https://investor.vistracorp.com/image/2025_Q4_Results_Presentation_vFINAL.pdf"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281925000013/vistra-20241231.htm"
+  },
+  {
+   "title": "Vistra 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000006/vistra-20251231.htm"
+  }
+ ],
+ "rivals": [
+  "CEG",
+  "NRG",
+  "AES",
+  "NEE",
+  "PEG",
+  "DUK",
+  "D",
+  "SO",
+  "ETR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Vistra stock forecast",
+   "meta_description": "Vistra's weighted forecast is $123.05 in October 2027 and $179.02 in October 2029; it hinges on cash generation, debt and execution.",
+   "opening": "Vistra's weighted scenario is $123.05 in October 2027 and $179.02 in October 2029, with Bear probability 30%, base probability 52%, and bull probability 18%. Vistra's path hinges on turning demand and plant availability into cash without letting hedges, debt, and nuclear execution consume it.",
+   "closing": "The full Vistra memo also explains Vistra's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Vistra's shares go?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast's central message is delayed upside: the weighted path is negative after one year, near flat after two, and positive after three. The weighted October 2027 price is $123.05, a total-return loss of 18%. October 2028 is $147.91, a loss of 1%. October 2029 is $179.02, a gain of 20%. Today's price is $152.02. At the last date, outcomes range from $26.92 in the bear case to $357.30 in the bull case. The base case gets 52% probability. Bear gets 30%, and bull gets 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 152.02, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 152.02, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "44.83 (-70 %)",
+        "26.86 (-81 %)",
+        "26.92 (-80 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "140.58 (-7 %)",
+        "173.85 (+16 %)",
+        "205.05 (+37 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "202.77 (+34 %)",
+        "274.74 (+82 %)",
+        "357.30 (+137 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "123.05 (-18 %)",
+        "147.91 (-1 %)",
+        "179.02 (+20 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case its stated chance, not a separate likely outcome."
+     }
+    },
+    {
+     "heading": "What has to go right for Vistra, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case is a chain of weaker demand, lower scarcity value and rising cash pressure. Delayed data-center connections and softer power prices reduce margins first. Hedge mismatches, uprate delays, acquisition costs and collateral needs then consume cash, so buybacks slow and the multiple contracts."
+      },
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires faster load connections, high fleet availability, successful acquired generation and on-time uprates. Profit and cash rise enough to fund renewed buybacks while reducing debt, and the multiple expands."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "5,200 (3,800 / 5,800)",
+        "5,700 (3,600 / 6,700)",
+        "6,100 (4,000 / 7,600)"
+       ],
+       [
+        "Shares (millions)",
+        "334 (339 / 333)",
+        "335 (340 / 327)",
+        "335 (341 / 321)"
+       ],
+       [
+        "Dividends per share",
+        "0.92 (0.92 / 0.92)",
+        "1.00 (0.92 / 1.10)",
+        "1.10 (0.92 / 1.25)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "14.00 (11.00 / 16.00)",
+        "14.50 (10.00 / 17.00)",
+        "15.00 (9.00 / 18.00)"
+       ],
+       [
+        "Net debt",
+        "25,847 (26,619 / 25,217)",
+        "24,463 (26,879 / 23,977)",
+        "22,726 (26,832 / 22,000)"
+       ]
+      ],
+      "note": "The numbers in brackets are the lower and higher estimates for a bear case and a bull case, not extra years."
+     }
+    },
+    {
+     "heading": "How much cash does Vistra really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Vistra reports its own free-cash-flow measure, while the stricter view subtracts capital spending and stock pay. The two measures differ because the company adjusts for working-capital and margin-deposit movements and separates growth investment. Those cash movements are genuine, but collateral posted today may return later rather than permanently changing plant economics."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,070",
+        "4,563",
+        "5,453",
+        "485",
+        "-206"
+       ],
+       [
+        "− Capital spending",
+        "2,752",
+        "2,078",
+        "1,676",
+        "1,301",
+        "1,033"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,318",
+        "2,485",
+        "3,777",
+        "-816",
+        "-1,239"
+       ],
+       [
+        "− Stock pay",
+        "113",
+        "100",
+        "77",
+        "63",
+        "47"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,205",
+        "2,385",
+        "3,700",
+        "-879",
+        "-1,286"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out cash tied up in working capital and some spending to grow the business or complete transactions that our count includes."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Vistra today?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E means share price divided by earnings per share. The lower forward P/E assumes Vistra will earn more over the next year, but reported earnings can swing with power prices, taxes, outages, and hedge accounting."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "152.02"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "179.02 (+20 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 152.02,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "44.83 (-70 %)",
+       "26.86 (-81 %)",
+       "26.92 (-80 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "140.58 (-7 %)",
+       "173.85 (+16 %)",
+       "205.05 (+37 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "202.77 (+34 %)",
+       "274.74 (+82 %)",
+       "357.30 (+137 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "123.05 (-18 %)",
+       "147.91 (-1 %)",
+       "179.02 (+20 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/vst/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VST&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Vistra dividend: payout, cash cover and yield",
+   "meta_description": "Vistra pays $0.23 quarterly; its $300M annual dividend plan compares with $3.592B of 2025 free cash flow before growth.",
+   "opening": "Vistra pays $0.23 quarterly, with base dividends per share rising from $0.92 to $1.00 in the forecast. Vistra's ongoing-operations adjusted free cash flow before growth was $3.592 billion in 2025, against a $300M annual dividend plan.",
+   "closing": "Vistra's full memo also covers its business, rivals, management decisions, and the risks around markets, debt, hedges, and execution.",
+   "blocks": [
+    {
+     "heading": "How much does Vistra pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends per share rise from $0.92 to $1.00. They reach $1.10 in the final window. Bear stays at $0.92; bull reaches $1.10 and $1.25. The current $0.23 quarterly payment and $300M annual plan support gradual rather than rapid growth."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "2.18",
+        "7.00",
+        "3.58",
+        "-3.26",
+        "-2.69"
+       ],
+       [
+        "Dividend per share",
+        "0.90",
+        "0.87",
+        "0.82",
+        "0.72",
+        "0.60"
+       ]
+      ],
+      "note": "Vistra does not report gross profit itself; our figure subtracts only fuel, purchased power, and delivery fees, leaving out other operating costs and depreciation."
+     }
+    },
+    {
+     "heading": "Does Vistra's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 73,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Vistra used free cash flow for acquisitions, shareholder returns and ownership buyouts, while its debt burden increased. Free cash flow means cash from operations left after capital spending, but it is not a promise that the same amount remains unused in the bank. Power prices, fuel costs, hedging and investment timing can make it rise or fall sharply."
+      },
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholder payouts sometimes exceeded the year’s free cash flow. Vistra could cover that gap with cash on hand, borrowing, asset sales or other financing, but those choices compete with plant maintenance, acquisitions, debt repayment and collateral requirements. A buyback reduces the number of shares sharing future earnings; it does not improve a power plant or reduce debt. Its value therefore depends on the price Vistra paid and on whether the cash had a more urgent use."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,318",
+        "2,485",
+        "3,777",
+        "-816",
+        "-1,239"
+       ],
+       [
+        "− Dividends paid",
+        "306",
+        "305",
+        "313",
+        "302",
+        "290"
+       ],
+       [
+        "− Share buybacks",
+        "1,028",
+        "1,266",
+        "1,245",
+        "1,949",
+        "471"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "734",
+        "2,219",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "16",
+        "",
+        "",
+        "3,067",
+        "2,000"
+       ]
+      ],
+      "note": "The company's own net debt differs from ours because it leaves out some project-level borrowing but includes future payments to buy out minority owners."
+     }
+    },
+    {
+     "heading": "What could change Vistra's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management reaffirmed consolidated 2026 adjusted EBITDA guidance of $6,720–$7,520 million on August 7, 2026. It also set consolidated 2026 adjusted free cash flow before growth guidance at $3,760–$4,560 million. That cash pool must compete with maintenance, growth, debt, and shareholder returns."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Vistra's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Vistra’s ongoing-operations adjusted free cash flow before growth was $3.592 billion in 2025. Operations generated $4.070 billion, while capital expenditures used $2.752 billion; that left about $1.3 billion before acquisitions. The dividend is modest, so the investment case depends more on earnings growth and buybacks than on income today."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "152.02"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": "The whole-business value is higher than the stock-market value because it adds debt and subtracts cash, estimating what it would cost to buy the entire company."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.89"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.60",
+      "0.71",
+      "0.83",
+      "0.87",
+      "0.89"
+     ],
+     "Real free cash flow per share": [
+      "-2.67",
+      "-2.08",
+      "9.86",
+      "6.76",
+      "3.49"
+     ],
+     "Free cash flow per share": [
+      "-2.57",
+      "-1.93",
+      "10.07",
+      "7.05",
+      "3.81"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/vst/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VST&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Vistra earnings: guidance and what to watch",
+   "meta_description": "Vistra's next results are expected November 6, 2026; watch cash-generating projects and operating margins.",
+   "opening": "Vistra's next results are expected on November 6, 2026. Watch whether cash-generating projects arrive on schedule while operating margins remain healthy.",
+   "closing": "The full Vistra memo also answers how Vistra works, who its rivals are, how Vistra is managed, and what risks Vistra faces.",
+   "blocks": [
+    {
+     "heading": "What has Vistra guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management reaffirmed consolidated 2026 adjusted EBITDA guidance of $6,720–$7,520 million on August 7, 2026. It also set consolidated 2026 adjusted free cash flow before growth guidance at $3,760–$4,560 million. That cash pool must compete with maintenance, growth, debt, and shareholder returns."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted EBITDA guidance — Vistra Corp. Consolidated",
+        "Year to Dec 2026",
+        "6,720",
+        "7,520",
+        "Aug. 7, 2026"
+       ],
+       [
+        "Adjusted free cash flow before growth guidance — Vistra Corp. Consolidated",
+        "Year to Dec 2026",
+        "3,760",
+        "4,560",
+        "Aug. 7, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Vistra kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "For the 2023–25 PSU cycle, the cash-flow measure reached $24.85 against a $17.17 target, producing 200% of target. Relative total shareholder return reached the 100th percentile. Because the award had already reached its 200% ceiling, the relative-return modifier could not increase the final payout further. The cycle therefore rewarded strong cash generation per share and stock performance, while also showing the limit built into the plan."
+      },
+      {
+       "n": 114,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Vistra’s incentives are reasonably tied to shareholder outcomes, but the final test is durability: whether future pay cycles and repurchases continue to improve value per share. The evidence points to some alignment, not a blank cheque of trust."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Vistra's revenue and profit been trending?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell from the year-earlier quarter, while gross margin and operating income rose. Net income and diluted earnings per share declined because a larger unrealized derivative loss outweighed stronger realized prices and capacity revenue. Three months of contribution from plants acquired from Lotus also changed the comparison."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,017",
+        "5,640",
+        "4,584",
+        "4,971",
+        "4,250",
+        "3,933",
+        "4,037",
+        "6,288"
+       ],
+       [
+        "Operating income",
+        "553",
+        "1,499",
+        "474",
+        "1,037",
+        "515",
+        "-120",
+        "599",
+        "2,588"
+       ],
+       [
+        "Net income attributable to Vistra",
+        "305",
+        "1,029",
+        "233",
+        "652",
+        "327",
+        "-268",
+        "441",
+        "1,888"
+       ],
+       [
+        "EPS, diluted",
+        "0.76",
+        "2.87",
+        "0.54",
+        "1.75",
+        "0.81",
+        "-0.93",
+        "1.14",
+        "5.25"
+       ]
+      ],
+      "note": "Gross margin is not the company's final profit because it leaves out other running costs and the loss in value of equipment over time."
+     }
+    },
+    {
+     "heading": "What should I watch in Vistra's next results?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The plan will be judged by whether cash-generating projects arrive on schedule while operating margins remain healthy."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 6, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,017"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.76"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,288",
+      "4,037",
+      "3,933",
+      "4,250",
+      "4,971",
+      "4,584",
+      "5,640",
+      "4,017"
+     ],
+     "EPS, diluted": [
+      "5.25",
+      "1.14",
+      "-0.93",
+      "0.81",
+      "1.75",
+      "0.54",
+      "2.87",
+      "0.76"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/vst/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VST&src=seo-earnings"
+  }
+ },
+ "short_name": "Vistra",
+ "first_memo_date": "2026-10-18T17:21:16Z"
+}

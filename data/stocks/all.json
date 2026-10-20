@@ -1,0 +1,706 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ALL",
+ "slug": "all",
+ "company": "The Allstate Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-18T01:42:23Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 247.88,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 234,
+  "tables": 27,
+  "words": 14718,
+  "sources": 245
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Allstate is an insurer: it takes premiums in exchange for promises to help customers recover from specified losses. Its central business is personal auto and home coverage, but the company also sells other protections and services through several routes to market."
+ },
+ "sources": [
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905125000015/all-20241231.htm"
+  },
+  {
+   "title": "Allstate’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000031/all-20251231.htm"
+  },
+  {
+   "title": "Q4 2025 investor supplement",
+   "url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000013/allcorp123125investorsup.htm"
+  }
+ ],
+ "rivals": [
+  "PGR",
+  "TRV",
+  "CB",
+  "CINF",
+  "MCY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Allstate stock forecast",
+   "meta_description": "Allstate's stock forecast weighs bear, base and bull scenarios against underwriting, catastrophe risk, cash generation and valuation.",
+   "opening": "Allstate's weighted path reaches $264.54 in October 2027, $292.28 in October 2028 and $326.62 in October 2029. It hinges on profitable underwriting surviving catastrophe costs, reserve changes and softer pricing.",
+   "closing": "The full memo explains Allstate's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Allstate's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Allstate’s weighted path reaches $264.54 in October 2027, $292.28 in October 2028 and $326.62 in October 2029. These prices imply total returns of 8%, 21% and 37% with dividends. The final-date range is much wider: $106.29 in the bear case to $623.61 in the bull case, against today’s $247.88."
+      },
+      {
+       "n": 217,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast assigns 30% to the bear case, 50% to the base case and 20% to the bull case. The central path offers attractive upside, but the possible loss remains large because Allstate’s earnings have moved sharply with underwriting conditions."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 247.88, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 247.88, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "166.30 (-31 %)",
+        "133.76 (-43 %)",
+        "106.29 (-52 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "270.97 (+11 %)",
+        "304.41 (+26 %)",
+        "340.03 (+43 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "395.83 (+61 %)",
+        "499.71 (+105 %)",
+        "623.61 (+157 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "264.54 (+8 %)",
+        "292.28 (+21 %)",
+        "326.62 (+37 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Allstate?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case uses $8,400 million, $7,500 million and $6,700 million as injury severity, catastrophes and weaker investment support overwhelm premium growth. The bull case uses $10,800 million, $11,880 million and $13,068 million if applications become persistent policies, severity stabilizes and reinsurance limits severe-event damage. The $1,650 million Q3 catastrophe estimate shows why catastrophe costs remain inside the forecast."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "9,600 (8,400 / 10,800)",
+        "9,888 (7,500 / 11,880)",
+        "10,185 (6,700 / 13,068)"
+       ],
+       [
+        "Shares (millions)",
+        "248 (253 / 246)",
+        "244 (252 / 238)",
+        "240 (252 / 231)"
+       ],
+       [
+        "Dividends per share",
+        "4.32 (4.32 / 4.32)",
+        "4.54 (4.32 / 4.67)",
+        "4.77 (4.32 / 5.04)"
+       ],
+       [
+        "Price to earnings",
+        "7.00 (5.00 / 9.00)",
+        "7.50 (4.50 / 10.00)",
+        "8.00 (4.00 / 11.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Allstate really make and give back?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "A reserve is not cash in a separate account. It is an estimate of the eventual cost of claims, including claims not yet reported. As repair bills, medical evidence or lawsuits develop, the estimate can rise or fall, changing current profit before the related cash is paid. Allstate reported $10,110 million of operating cash flow in 2025, but reserve and premium-related movements make that cash flow unlike a retailer’s cash profit."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Underwriting income",
+        "8,694",
+        "3,153",
+        "-2,090",
+        "-2,782",
+        "1,785"
+       ],
+       [
+        "Net investment income",
+        "3,449",
+        "3,092",
+        "2,478",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "10,240",
+        "4,524",
+        "-376",
+        "",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "4.00",
+        "3.68",
+        "3.56",
+        "3.40",
+        "3.24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Allstate today?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, compares a share price with earnings per share. In the second quarter of 2026, Allstate reported $3.2 billion of net income but $2.3 billion of adjusted net income. The difference mainly reflected gains from higher public-equity valuations, which can reverse without adding insurance customers or cash from policyholders. The useful question is therefore whether the low P/E reflects durable underwriting profit or a temporarily enlarged denominator."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "247.88"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "326.62 (+37 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "4.95x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.01x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 247.88,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "166.30 (-31 %)",
+       "133.76 (-43 %)",
+       "106.29 (-52 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "270.97 (+11 %)",
+       "304.41 (+26 %)",
+       "340.03 (+43 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "395.83 (+61 %)",
+       "499.71 (+105 %)",
+       "623.61 (+157 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "264.54 (+8 %)",
+       "292.28 (+21 %)",
+       "326.62 (+37 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/all/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ALL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Allstate dividend: payout and cash coverage",
+   "meta_description": "Allstate dividend history, current payout, cash-flow context, yield, and the risks that could change future dividends.",
+   "opening": "Allstate pays $1.08 per share quarterly, or $4.32 annually in the forecast. Its 2025 operating cash flow was $10,110 million, but conventional free cash flow is a weak shortcut for an insurer, so dividend coverage depends on claims, reserves, capital and reinsurance.",
+   "closing": "The full memo also answers questions about Allstate’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Allstate pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends start at $4.32 per share in every case for October 2027 because the current $1.08 quarterly rate supplies four payments. The base case grows that amount 5% annually to $4.54 and $4.77. The bull case repeats the latest 8% increase, reaching $4.67 and $5.04. The bear case holds at $4.32 because claims pressure could preserve capital, despite increases from $3.24 in 2021 to $4.00 in 2025."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Underwriting income",
+        "8,694",
+        "3,153",
+        "-2,090",
+        "-2,782",
+        "1,785"
+       ],
+       [
+        "Net income",
+        "10,240",
+        "4,524",
+        "-376",
+        "",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "4.00",
+        "3.68",
+        "3.56",
+        "3.40",
+        "3.24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Allstate’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "A reserve is not cash in a separate account. It is an estimate of the eventual cost of claims, including claims not yet reported. As repair bills, medical evidence or lawsuits develop, the estimate can rise or fall, changing current profit before the related cash is paid. Allstate reported $10,110 million of operating cash flow in 2025, but reserve and premium-related movements make that cash flow unlike a retailer’s cash profit."
+      },
+      {
+       "n": 188,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Conventional free cash flow is also a weak shortcut because premiums arrive before many claims are paid. The better test is whether Allstate can maintain profitable underwriting, absorb a severe catastrophe year and return capital while preserving statutory reserves and reinsurance protection. That is what the stock’s valuation is really asking investors to believe."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "10,165",
+        "4,550",
+        "-316",
+        "",
+        ""
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,060",
+        "978",
+        "938",
+        "924",
+        "958"
+       ],
+       [
+        "− Share buybacks",
+        "1,233",
+        "0",
+        "335",
+        "2,520",
+        "3,120"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2024, the company spent two million dollars on treasury-stock payments but bought no shares, so we count share buybacks as zero."
+     }
+    },
+    {
+     "heading": "What could change Allstate’s dividend?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case in 2027–2028 if cooling auto pricing combines with rising injury severity and lifts loss ratios. Repeated catastrophe losses through 2029 would also weaken earnings and capital available for buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "9,600 (8,400 / 10,800)",
+        "9,888 (7,500 / 11,880)",
+        "10,185 (6,700 / 13,068)"
+       ],
+       [
+        "Dividends per share",
+        "4.32 (4.32 / 4.32)",
+        "4.54 (4.32 / 4.67)",
+        "4.77 (4.32 / 5.04)"
+       ],
+       [
+        "Price to earnings",
+        "7.00 (5.00 / 9.00)",
+        "7.50 (4.50 / 10.00)",
+        "8.00 (4.00 / 11.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/all/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ALL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Allstate earnings date and guidance",
+   "meta_description": "Allstate reports next on November 4, 2026; the key watch is catastrophe losses, underwriting profit, and policy growth.",
+   "opening": "Allstate's next results are expected on November 4, 2026. Watch catastrophe losses and whether policy and premium growth still comes with sound underwriting.",
+   "closing": "The full memo also answers how Allstate makes money, who its rivals are, how its management is assessed, and which risks matter.",
+   "blocks": [
+    {
+     "heading": "What has Allstate guided for the year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Allstate can reach $326.62 by October 2029 if underwriting strength persists as catastrophe costs and earnings normalize. Management aims to grow personal insurance through broader distribution and improved affordability while keeping underwriting profitable. It authorized up to $4.00 billion in common-share repurchases from February 2026 to February 2028, but that ceiling is not a spending commitment."
+      },
+      {
+       "n": 193,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s broader promise is to grow personal insurance by widening distribution and improving affordability while keeping underwriting profitable. It has not provided, in the guidance identified here, a specific earnings or policy-growth forecast. That makes the next question whether operating results can justify using the capital."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ billions",
+      "caption": "Targets and guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Common share repurchase program",
+        "February 2026 to February 2028",
+        "4.00",
+        "February 4, 2026"
+       ]
+      ],
+      "note": "The company plans to spend up to 4 billion United States dollars buying back its own shares between February 2026 and February 2028, but this is not a promise that it will spend the full amount."
+     }
+    },
+    {
+     "heading": "What has Allstate's recent revenue and profit trend shown?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 was a strong quarter for underwriting, but its net income was not a clean recurring earnings rate."
+      },
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Reported underwriting improved substantially, while the underlying result was nearly flat year over year. Lower catastrophe losses and favorable prior-year reserve revisions helped the reported figure, so the underlying measure is the better test of current performance."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Net premiums written",
+        "15,431",
+        "14,625",
+        "14,572",
+        "15,630",
+        "15,047",
+        "14,297",
+        "13,757",
+        "14,707"
+       ],
+       [
+        "Combined ratio, Allstate Protection",
+        "86.6%",
+        "82.0%",
+        "72.9%",
+        "79.1%",
+        "91.1%",
+        "97.4%",
+        "84.3%",
+        "94.2%"
+       ],
+       [
+        "Adjusted net income (company's measure)",
+        "2,330",
+        "2,797",
+        "3,788",
+        "2,976",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Net income attributable to Allstate",
+        "3,271",
+        "2,457",
+        "3,832",
+        "3,746",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "EPS, diluted",
+        "12.51",
+        "9.25",
+        "14.37",
+        "13.95",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Allstate's next results?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The Q3 report is the key checkpoint because it will translate the catastrophe estimate into reported results. Investors should look for changes in claims, reserves, policy counts, premiums, and underwriting profit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "12.51"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "",
+      "",
+      "",
+      "",
+      "13.95",
+      "14.37",
+      "9.25",
+      "12.51"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/all/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ALL&src=seo-earnings"
+  }
+ },
+ "short_name": "Allstate",
+ "first_memo_date": "2026-10-18T01:42:23Z"
+}

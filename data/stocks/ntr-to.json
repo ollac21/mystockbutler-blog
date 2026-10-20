@@ -1,0 +1,825 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NTR.TO",
+ "slug": "ntr-to",
+ "company": "Nutrien Ltd.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-16T04:11:41Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 98.77,
+ "price_date": "2026-10-15T20:00:00Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 263,
+  "tables": 28,
+  "words": 16636,
+  "sources": 150
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Nutrien is both a fertilizer producer and a farm-supply retailer. Its business turns a dollar from farmers and other buyers into products, advice, delivery and financing, then pays for raw materials, factories, branches, inventory and investment before keeping what remains."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1725964/000119312526081339/d25691dex991.htm"
+  },
+  {
+   "title": "Nutrien financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1725964/000119312526081326/d56746dex993.htm"
+  },
+  {
+   "title": "2024 impairment disclosure",
+   "url": "https://www.sec.gov/Archives/edgar/data/1725964/000119312525041502/d795438dex993.htm"
+  }
+ ],
+ "rivals": [
+  "MOS",
+  "CF",
+  "SDF.DE",
+  "CTVA",
+  "FMC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Nutrien stock forecast",
+   "meta_description": "Nutrien stock forecast: weighted price CAD 95.97 in October 2027 and CAD 128.36 in October 2029; supply, affordability and cash conversion drive the range.",
+   "opening": "The weighted price is CAD 95.97 in October 2027, or +0%, and reaches CAD 128.36 in October 2029, a 39% total return. It hinges on new supply outrunning shipments, weaker farmer affordability and cash conversion.",
+   "closing": "The full memo explains Nutrien’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Nutrien's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 16,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is CAD 95.97 in October 2027, or +0%. It reaches CAD 128.36 in October 2029, a 39% total return. The bear case carries a 30% probability. The base case carries 50%. The bull case carries 20%. The 2029 range is CAD 53.30 to CAD 239.31."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per NTR.TO share at each date; in brackets the return since today's 98.77, dividends included",
+      "caption": "What the shares could be worth (CAD per NTR.TO share at each date; in brackets the return since today's 98.77, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "51.74 (-44 %)",
+        "41.62 (-52 %)",
+        "53.30 (-37 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "101.54 (+6 %)",
+        "112.77 (+21 %)",
+        "129.01 (+40 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "148.38 (+53 %)",
+        "193.05 (+102 %)",
+        "239.31 (+152 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "95.97 (+0 %)",
+        "107.49 (+15 %)",
+        "128.36 (+39 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-adjusted average of the bear, base, and bull cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right for Nutrien?",
+     "paragraphs": [
+      {
+       "n": 17,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "New supply outrunning shipments, weaker farmer affordability or cash conversion that limits the current 1.7% buyback yield would push the forecast toward the bear case. Reliable production and stronger Retail margins would push it toward the bull case. Third-quarter results are due November 4, 2026, with the earnings call November 5. Investor Day follows November 30, 2026. The active phosphate strategic review could change the capital outlook through its sale or operating plan, net proceeds and retained environmental costs."
+      }
+     ],
+     "table": {
+      "title": "How it earns, and what can hurt it",
+      "unit": "US$ millions",
+      "caption": "How it earns, and what can hurt it (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "26,885",
+        "25,972",
+        "29,056",
+        "37,884",
+        "27,712"
+       ],
+       [
+        "Revenue growth",
+        "3.5%",
+        "-10.6%",
+        "-23.3%",
+        "36.7%",
+        "32.5%"
+       ],
+       [
+        "Operating margin",
+        "13.9%",
+        "7.1%",
+        "9.4%",
+        "28.5%",
+        "17.3%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.3%",
+        "3.6%",
+        "7.2%",
+        "13.8%",
+        "5.4%"
+       ],
+       [
+        "Net debt",
+        "10,035",
+        "10,599",
+        "10,299",
+        "9,823",
+        "9,127"
+       ]
+      ],
+      "note": "Revenue growth can look higher or lower because buying or selling businesses is included, so it does not show only growth in the businesses the company kept."
+     }
+    },
+    {
+     "heading": "How much cash does Nutrien really make?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow depends on what gets deducted. Nutrien’s own measure deducts sustaining capital, mine development and lease principal. A stricter bridge also treats stock compensation as an economic cost. That produces a lower residual because shares issued to employees still dilute owners, even though the immediate cash-flow statement adds the expense back."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "1,583",
+        "979",
+        "2,091",
+        "5,294",
+        "1,682"
+       ],
+       [
+        "− Stock pay",
+        "163",
+        "37",
+        "-14",
+        "63",
+        "198"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,420",
+        "942",
+        "2,105",
+        "5,231",
+        "1,484"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "1,979",
+        "1,409",
+        "3,025",
+        "",
+        "4,300"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "5.9%",
+        "3.8%",
+        "7.2%",
+        "14.0%",
+        "6.1%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.3%",
+        "3.6%",
+        "7.2%",
+        "13.8%",
+        "5.4%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out some investment spending and the value of shares paid to employees, while our count includes them."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Nutrien today?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow yield measures the cash left after capital spending relative to the share price. The calculated yield is 4.8%, while the stated real yield is 4.3%. The dividend yield is 3.2%, but the dividend is a distribution of available cash, not an extra source of cash flow."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "98.77"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "128.36 (+39 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 69.52296426552785,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "51.74 (-44 %)",
+       "41.62 (-52 %)",
+       "53.30 (-37 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "101.54 (+6 %)",
+       "112.77 (+21 %)",
+       "129.01 (+40 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "148.38 (+53 %)",
+       "193.05 (+102 %)",
+       "239.31 (+152 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "95.97 (+0 %)",
+       "107.49 (+15 %)",
+       "128.36 (+39 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ntr-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTR.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Nutrien dividend: payout, cash cover and yield",
+   "meta_description": "Nutrien pays US$0.55 quarterly; its cash coverage, dividend outlook and 3.2% yield are set against the share price.",
+   "opening": "Nutrien pays US$0.55 per share quarterly, and the forecast's base dividend is US$2.20 per share. Nutrien's shareholder payments have exceeded free cash flow over the five-year period, so coverage depends on cash on hand, borrowing, asset sales or other financing.",
+   "closing": "The full memo also explains Nutrien's business, its rivals, its management decisions and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Nutrien pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 97,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Nutrien resumed buybacks in 2026 at approximately US$75 million a month while maintaining its quarterly dividend of US$0.55. A buyback cancels repurchased shares, increasing the ownership percentage of continuing shareholders. It creates value only if the company pays a sensible price and future cash generation supports the smaller share count. Nutrien therefore demonstrated a willingness to return cash, but the lifetime return on those purchases remains unresolved."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "4.66",
+        "1.36",
+        "2.53",
+        "14.18",
+        "5.52"
+       ],
+       [
+        "Free cash flow per share",
+        "3.25",
+        "1.98",
+        "4.21",
+        "9.80",
+        "2.94"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.18",
+        "2.14",
+        "2.08",
+        "1.91",
+        "1.83"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.13",
+        "0.37",
+        "2.11",
+        "8.37",
+        "1.81"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it leaves out some investment spending that our count subtracts."
+     }
+    },
+    {
+     "heading": "Does Nutrien's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 93,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Nutrien’s cash record shows heavy investment followed by substantial shareholder distributions, including payments that exceeded free cash flow over the five-year period."
+      },
+      {
+       "n": 94,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Capital expenditure rose through 2023 and then declined by 2025. It funded maintenance, mine work, automation and expansion. Free cash flow means cash left after specified operating costs and capital requirements; it is not the same as profit or all cash available for distribution. If payments exceed it, the gap must come from cash on hand, borrowing, asset sales or other financing."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,583",
+        "979",
+        "2,091",
+        "5,294",
+        "1,682"
+       ],
+       [
+        "− Dividends paid",
+        "1,061",
+        "1,060",
+        "1,032",
+        "1,031",
+        "1,045"
+       ],
+       [
+        "− Share buybacks",
+        "551",
+        "184",
+        "1,047",
+        "4,520",
+        "1,035"
+       ],
+       [
+        "Paid to shareholders",
+        "1,612",
+        "1,244",
+        "2,079",
+        "5,551",
+        "2,080"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "101.8%",
+        "127.1%",
+        "99.4%",
+        "104.9%",
+        "123.7%"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "113.5%",
+        "132.1%",
+        "98.8%",
+        "106.1%",
+        "140.2%"
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes lease liabilities and adjusts debt values differently, while our simple calculation subtracts cash from reported borrowings."
+     }
+    },
+    {
+     "heading": "What could change Nutrien's dividend?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend stays at USD 2.20 per share through 2029. The bear case holds at USD 2.20 before cutting to USD 2.00. The bull case rises to USD 2.28 in 2028 and USD 2.36 in 2029. The current quarterly rate is USD 0.55. The history supports increases, but free-cash-flow pressure makes a flat base payout more defensible."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Nutrien's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow yield measures the cash left after capital spending relative to the share price. The calculated yield is 4.8%, while the stated real yield is 4.3%. The dividend yield is 3.2%, but the dividend is a distribution of available cash, not an extra source of cash flow."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "98.77"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.18"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.83",
+      "1.91",
+      "2.08",
+      "2.14",
+      "2.18"
+     ],
+     "Real free cash flow per share": [
+      "2.60",
+      "9.69",
+      "4.24",
+      "1.91",
+      "2.92"
+     ],
+     "Free cash flow per share": [
+      "2.94",
+      "9.80",
+      "4.21",
+      "1.98",
+      "3.25"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ntr-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTR.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Nutrien earnings: guidance and next results",
+   "meta_description": "Nutrien reports November 4, 2026; guidance centers on potash, nitrogen, Retail EBITDA and cash after necessary investment.",
+   "opening": "Nutrien's next results are expected on November 4, 2026. For Nutrien, watch cash after necessary investment through reliable nitrogen output and Retail margins.",
+   "closing": "The full Nutrien memo answers how its business works, how it compares with rivals, who runs it, and what risks could change the plan.",
+   "blocks": [
+    {
+     "heading": "What has Nutrien guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 15,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to potash sales of 14.2–14.8 million tonnes and Retail adjusted EBITDA of US$1.75–1.95 billion. Nitrogen sales guidance is 9.2–9.7 million tonnes, assuming no production from Trinidad and New Madrid. Capital expenditure is slated at US$1.95–2.05 billion; lower spending supports cash only if reliability and necessary maintenance hold."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions, except as labelled",
+      "caption": "Guidance in force (US$ billions, except as labelled)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Retail adjusted EBITDA",
+        "Year to Dec 2026",
+        "1.75",
+        "1.95",
+        "Aug 5, 2026"
+       ],
+       [
+        "Potash sales volumes (million tonnes)",
+        "Year to Dec 2026",
+        "14.2",
+        "14.8",
+        "Aug 5, 2026"
+       ],
+       [
+        "Nitrogen sales volumes (million tonnes)",
+        "Year to Dec 2026",
+        "9.2",
+        "9.7",
+        "Aug 5, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "1.95",
+        "2.05",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "Retail adjusted earnings before interest, taxes, depreciation and amortization is not the company's final profit because it leaves out interest, taxes, depreciation, and amortization."
+     }
+    },
+    {
+     "heading": "Did Nutrien keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Nutrien targeted about US$200 million in annual cost savings and said it surpassed that target in 2025. Capital spending was US$2.0 billion, below a US$2.2–2.3 billion target. Those results support management’s promises, but lower spending helps shareholders only if reliability and necessary maintenance remain intact."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Nutrien's revenue and profit done over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Nutrien’s reported profit recovered strongly, but recurring earning power recovered less."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,812",
+        "6,046",
+        "5,340",
+        "6,007",
+        "10,438",
+        "5,100",
+        "5,079",
+        "5,348"
+       ],
+       [
+        "Operating income",
+        "1,777",
+        "360",
+        "921",
+        "807",
+        "1,782",
+        "226",
+        "397",
+        "196"
+       ],
+       [
+        "Net income",
+        "1,214",
+        "131",
+        "571",
+        "464",
+        "1,221",
+        "11",
+        "113",
+        "18"
+       ],
+       [
+        "EPS, diluted",
+        "2.53",
+        "0.27",
+        "1.18",
+        "0.96",
+        "2.50",
+        "0.02",
+        "0.23",
+        "0.04"
+       ]
+      ],
+      "note": "Free cash flow also subtracts lease payments, even though its definition mentions only spending on equipment."
+     }
+    },
+    {
+     "heading": "What should investors watch in Nutrien's next results?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Third-quarter results are due on November 4, 2026, followed by the earnings call on November 5. Investors should look for reliable nitrogen output after maintenance and for Retail margins to offset weaker fertilizer volumes. The key test is cash after necessary investment. Improvement achieved by postponing repairs would mean something different from improvement achieved through better equipment performance."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "10,812"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.53"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,348",
+      "5,079",
+      "5,100",
+      "10,438",
+      "6,007",
+      "5,340",
+      "6,046",
+      "10,812"
+     ],
+     "EPS, diluted": [
+      "0.04",
+      "0.23",
+      "0.02",
+      "2.50",
+      "0.96",
+      "1.18",
+      "0.27",
+      "2.53"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ntr-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NTR.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Nutrien",
+ "first_memo_date": "2026-10-16T04:11:41Z"
+}

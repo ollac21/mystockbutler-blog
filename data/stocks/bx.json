@@ -1,0 +1,785 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BX",
+ "slug": "bx",
+ "company": "Blackstone Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T00:01:22Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 106.21,
+ "price_date": "2026-10-14T20:02:16Z",
+ "next_earnings": "2026-10-22",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 232,
+  "tables": 26,
+  "words": 15655,
+  "sources": 210
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Blackstone sells access to investments that ordinary portfolios and individual investors may struggle to buy directly. Its business is to gather other people’s money, put it to work in private assets, and earn fees for managing the process."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526082531/d48618d10k1.pdf"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312525042469/d912273d10k1.pdf"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526028145/d92648dex991.htm"
+  }
+ ],
+ "rivals": [
+  "APO",
+  "KKR",
+  "ARES",
+  "TPG",
+  "BAM",
+  "OWL",
+  "EQT.ST",
+  "CVC.AS",
+  "STEP"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Blackstone stock forecast",
+   "meta_description": "Blackstone stock forecast: weighted prices, scenario drivers, real cash flow, and valuation measures in plain English.",
+   "opening": "Blackstone’s weighted price is $110.88 in October 2027, a 9% total return including dividends. It hinges on durable fee growth and realizations arriving without repeated delay.",
+   "closing": "The full memo explains Blackstone’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Blackstone’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Blackstone’s weighted price is $110.88 in October 2027 and $135.99 in October 2029 if durable fee growth continues and realizations arrive without repeated delay. Management expected base management fees to grow at a mid-single-digit rate in Q3 2026 and return to double-digit growth in 2027. It targets approximately 85% of its share of DE for dividends, subject to board decisions."
+      },
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast implies a 9% total return including dividends in October 2027 and a 43% total return in October 2029. It assigns 30% probability to the bear case. The base case carries 55%, and the bull case 15%. By October 2029, the bear case is $64.29. The base case is $149.00, and the bull case is $231.71."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 106.21, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 106.21, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "74.51 (-27 %)",
+        "66.54 (-31 %)",
+        "64.29 (-30 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "121.63 (+19 %)",
+        "134.26 (+36 %)",
+        "149.00 (+56 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "144.21 (+42 %)",
+        "188.21 (+90 %)",
+        "231.71 (+139 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "110.88 (+9 %)",
+        "122.03 (+24 %)",
+        "135.99 (+43 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does Blackstone’s stock forecast depend on?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The operating-profit path is anchored to the five-year adjusted average of $4,766.475 million. The base case applies 10% annual growth, consistent with management’s expected return to double-digit base-fee growth in 2027. The table therefore reaches $5,243.1 million and $5,767.4 million in the first two periods; the final figure is $6,344.1 million. The bear case assumes an 8% decline, then 2% growth and stagnation because withdrawal pressure and weak credit and real estate outweigh fee gains. The bull case applies 15% annual growth because fee-paying capital converts faster and retention improves. Fee-earning assets grew 8%, but base fees rose only 4.5% in the latest quarter, so the bull path requires execution beyond current evidence."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "5,243 (4,385 / 5,481)",
+        "5,767 (4,297 / 6,304)",
+        "6,344 (4,297 / 7,249)"
+       ],
+       [
+        "Shares (millions)",
+        "760 (769 / 753)",
+        "770 (789 / 755)",
+        "780 (808 / 757)"
+       ],
+       [
+        "Dividends per share",
+        "5.10 (3.20 / 6.10)",
+        "5.60 (3.50 / 7.30)",
+        "6.10 (3.80 / 8.70)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "19.89 (15.90 / 21.83)",
+        "20.11 (15.50 / 24.35)",
+        "20.42 (15.86 / 25.86)"
+       ],
+       [
+        "Net debt",
+        "11,799 (12,397 / 11,086)",
+        "12,565 (14,140 / 11,374)",
+        "13,300 (16,194 / 11,967)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Blackstone really make?",
+     "paragraphs": [
+      {
+       "n": 129,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Blackstone generates substantial cash, but consolidated free cash flow is not the same as cash available to common shareholders. Its capital spending is modest because the company manages assets rather than building all the properties and businesses owned by its funds."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,663,161",
+        "3,481,662",
+        "4,056,906",
+        "6,336,253",
+        "3,985,988"
+       ],
+       [
+        "− Capital spending",
+        "115,703",
+        "61,409",
+        "224,231",
+        "235,497",
+        "64,316"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,547,458",
+        "3,420,253",
+        "3,832,675",
+        "6,100,756",
+        "3,921,672"
+       ],
+       [
+        "− Stock pay",
+        "1,445,352",
+        "1,168,435",
+        "987,549",
+        "846,349",
+        "637,441"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,102,106",
+        "2,251,818",
+        "2,845,126",
+        "5,254,407",
+        "3,284,231"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though no cash left the company because giving employees shares reduces the portion of the company left for existing shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Blackstone today?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $106.21, a forward P/E of 17.9x implies about $5.93 of earnings per share over the next twelve months. The trailing multiple implies $4.46. If the definitions match, the forecast requires roughly 33% earnings growth. An analyst consensus points to 8.02% growth, which suggests that the forecast denominator deserves close examination."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "106.21"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "135.99 (+43 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 106.21,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "74.51 (-27 %)",
+       "66.54 (-31 %)",
+       "64.29 (-30 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "121.63 (+19 %)",
+       "134.26 (+36 %)",
+       "149.00 (+56 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "144.21 (+42 %)",
+       "188.21 (+90 %)",
+       "231.71 (+139 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "110.88 (+9 %)",
+       "122.03 (+24 %)",
+       "135.99 (+43 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Blackstone dividend: cash coverage and yield",
+   "meta_description": "Blackstone's dividend is variable: cash flow covered most shareholder payouts, while the latest yield depends on the share price.",
+   "opening": "Blackstone paid $4.66 per share in 2025, against $3.98 of real free cash flow per share. Blackstone's shareholder payouts were 82.6% of free cash flow, but payouts including minority owners exceeded free cash flow.",
+   "closing": "The full Blackstone memo also explains its business, management, rivals and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Blackstone pay shareholders per share?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show a cyclical earnings engine. Diluted EPS was $3.87 in 2025. Real free cash flow per share was $3.98 against $4.66 dividends paid per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.87",
+        "3.62",
+        "1.84",
+        "2.36",
+        "8.13"
+       ],
+       [
+        "Real free cash flow per share",
+        "3.98",
+        "2.94",
+        "3.77",
+        "7.09",
+        "4.56"
+       ],
+       [
+        "Free cash flow per share",
+        "5.83",
+        "4.46",
+        "5.07",
+        "8.23",
+        "5.45"
+       ],
+       [
+        "− Dividends paid, per share",
+        "4.66",
+        "3.43",
+        "3.28",
+        "4.92",
+        "3.53"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.16",
+        "0.68",
+        "0.46",
+        "0.53",
+        "1.69"
+       ]
+      ],
+      "note": "Real free cash flow is lower because it subtracts the value of shares given to employees as pay, treating those shares as a cost to existing investors."
+     }
+    },
+    {
+     "heading": "Is Blackstone's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2025, free cash flow was $4,547,458 thousand, while shareholders received $3,758,242 thousand through dividends and buybacks. That represented 82.6% of free cash flow, with dividends providing most of the return."
+      },
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The apparent excess becomes clearer after considering consolidation. Accounting rules require Blackstone to include some controlled funds and partnerships in its accounts, even when outside investors own part of them. Those investors’ claims appear as minority ownership. Blackstone paid minority owners $3,412,874 thousand in 2025, and total payouts exceeded free cash flow by $2,623,658 thousand. That does not by itself prove that Blackstone borrowed to pay its dividend, because some reported cash belongs to other investors."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,547,458",
+        "3,420,253",
+        "3,832,675",
+        "6,100,756",
+        "3,921,672"
+       ],
+       [
+        "− Dividends paid",
+        "3,635,652",
+        "2,629,163",
+        "2,478,252",
+        "3,647,310",
+        "2,545,374"
+       ],
+       [
+        "− Share buybacks",
+        "122,590",
+        "520,429",
+        "351,262",
+        "391,968",
+        "1,216,654"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "2,623,658",
+        "2,398,383",
+        "1,790,749",
+        "2,081,904",
+        "3,245,187"
+       ],
+       [
+        "Paid to shareholders",
+        "3,758,242",
+        "3,149,592",
+        "2,829,514",
+        "4,039,278",
+        "3,762,028"
+       ]
+      ],
+      "note": "The company paid out more than its free cash flow in several years, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Blackstone's dividend?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Blackstone targets approximately 85% of distributable earnings for dividends, subject to the board. It also authorised a $2.0 billion repurchase programme, with $1.6 billion remaining in 2026. Buybacks are optional and may offset equity compensation rather than reduce total ownership claims."
+      },
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends follow the company’s approximately 85% payout intention. The base case starts with $5.93 of analyst-estimated earnings per share and applies that payout, producing $5.10, then $5.60 and $6.10. The bear case reduces the payout to 70% as exits weaken. The bull case compounds the initial payout at 20% annually because realizations and fee growth accelerate. The history supports variable dividends: the annual payment fell from $4.94 to $3.32 before recovering."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "5,243 (4,385 / 5,481)",
+        "5,767 (4,297 / 6,304)",
+        "6,344 (4,297 / 7,249)"
+       ],
+       [
+        "Dividends per share",
+        "5.10 (3.20 / 6.10)",
+        "5.60 (3.50 / 7.30)",
+        "6.10 (3.80 / 8.70)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "19.89 (15.90 / 21.83)",
+        "20.11 (15.50 / 24.35)",
+        "20.42 (15.86 / 25.86)"
+       ],
+       [
+        "Net debt",
+        "11,799 (12,397 / 11,086)",
+        "12,565 (14,140 / 11,374)",
+        "13,300 (16,194 / 11,967)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.66"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.53",
+      "4.92",
+      "3.28",
+      "3.43",
+      "4.66"
+     ],
+     "Real free cash flow per share": [
+      "4.56",
+      "7.09",
+      "3.77",
+      "2.94",
+      "3.98"
+     ],
+     "Free cash flow per share": [
+      "5.45",
+      "8.23",
+      "5.07",
+      "4.46",
+      "5.83"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/bx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Blackstone earnings",
+   "meta_description": "Blackstone's next results are expected on October 22, 2026; watch base-fee growth, realizations and earnings after compensation.",
+   "opening": "Blackstone's next results are expected on October 22, 2026. Watch for mid-single-digit base-fee growth.",
+   "closing": "The full memo answers more about Blackstone's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Blackstone guided for the year?",
+     "paragraphs": [
+      {
+       "n": 190,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "A base management fee is the regular payment investors make for having Blackstone manage their money. On its July 23 results call, management expected these fees to grow at a mid-single-digit rate in the third quarter and return to double-digit growth in 2027. The path depends on putting more fee-paying capital to work, especially in private equity and multi-asset investing, while weaker credit and real-estate conditions weigh on growth."
+      },
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.3 — The spending ahead",
+       "text": "The initial goal is 500 megawatts of capacity online during 2027. A megawatt measures electrical power capacity, not revenue. The buildings must still be constructed, connected to power, equipped and filled with paying customers before that capacity produces returns."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Has Blackstone kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 113,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Blackstone also has a measurable promise. At its 2018 investor day, it targeted approximately US$2 a share of fee-related earnings within several years and delivered US$3.37 a share in 2021. That was genuine progress, though 2021 benefited from performance-related fee revenue. Pay is best judged by durable client results and higher earnings per share after the cost of retaining employees."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Blackstone's recent revenue and profit trends?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "June 2026 was a strong quarter, but performance and transaction fees grew faster than ordinary base management fees. Revenue, operating income, parent net income and diluted EPS all improved sharply from June 2025, while the sequential comparison benefited from a rebound after March."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,043,978",
+        "3,617,595",
+        "4,360,272",
+        "3,088,635",
+        "3,711,900",
+        "3,289,458",
+        "3,082,565",
+        "3,663,194"
+       ],
+       [
+        "Operating income",
+        "2,813,389",
+        "1,492,355",
+        "2,363,476",
+        "1,464,236",
+        "1,915,119",
+        "1,513,141",
+        "1,697,980",
+        "1,878,435"
+       ],
+       [
+        "Net income",
+        "1,229,189",
+        "649,729",
+        "1,015,201",
+        "624,917",
+        "764,244",
+        "614,852",
+        "703,873",
+        "780,835"
+       ],
+       [
+        "EPS, diluted",
+        "1.54",
+        "0.83",
+        "1.30",
+        "0.80",
+        "0.98",
+        "0.80",
+        "0.92",
+        "1.02"
+       ]
+      ],
+      "note": "Operating income is our calculated number, not Blackstone's reported subtotal, because Blackstone does not publish one and our calculation includes investment revenue but leaves out separately reported other income."
+     }
+    },
+    {
+     "heading": "What should I watch in Blackstone's next results?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Blackstone has scheduled its third-quarter investor call for October 22, 2026, at 9 a.m. Eastern time. Investors will look for mid-single-digit base-fee growth, realization income received after September 22, and the earnings left after related compensation and other expenses. Management’s explanation of the fourth-quarter transaction pipeline will show whether stronger realizations are actually approaching."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 22, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "5,043,978"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.54"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,663,194",
+      "3,082,565",
+      "3,289,458",
+      "3,711,900",
+      "3,088,635",
+      "4,360,272",
+      "3,617,595",
+      "5,043,978"
+     ],
+     "EPS, diluted": [
+      "1.02",
+      "0.92",
+      "0.80",
+      "0.98",
+      "0.80",
+      "1.30",
+      "0.83",
+      "1.54"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BX&src=seo-earnings"
+  }
+ },
+ "short_name": "Blackstone",
+ "first_memo_date": "2026-10-15T00:01:22Z"
+}

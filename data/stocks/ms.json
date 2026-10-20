@@ -1,0 +1,759 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MS",
+ "slug": "ms",
+ "company": "Morgan Stanley",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T01:37:37Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 181.605,
+ "price_date": "2026-10-14T20:00:00Z",
+ "next_earnings": "2027-01-14",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 240,
+  "tables": 27,
+  "words": 15912,
+  "sources": 247
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Morgan Stanley is a financial-services firm that helps organizations raise money, helps investors trade, and helps people manage wealth. Its business becomes clear by following what it sells, who pays for it, and what happens to each dollar."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-04-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000288/a3q26msearningsrelease.htm"
+  },
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000086/ms-20251231.htm"
+  }
+ ],
+ "rivals": [
+  "GS",
+  "JPM",
+  "BAC",
+  "C",
+  "WFC",
+  "UBS",
+  "BCS",
+  "DB",
+  "EVR",
+  "BLK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Morgan Stanley stock forecast: scenarios, cash and value",
+   "meta_description": "Morgan Stanley stock forecast: the weighted October 2027 scenario, bear, base and bull cases, cash flow and valuation.",
+   "opening": "The weighted forecast is $182.46 in October 2027, including dividends, a 3% return. It hinges on durable advisor-led relationships and sustained capital returns.",
+   "closing": "The full Morgan Stanley memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Morgan Stanley's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $182.46 in October 2027, a 3% return including dividends. By October 2029, it reaches $202.76, a 20% return including dividends. The forecast assigns 25% to the bear case. The base case carries 55%, and the bull case 20%."
+      },
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast offers moderate upside, but the range of outcomes is wide. It puts the shares at $182.46 in October 2027, including dividends, a 3% total return. The October 2028 value is $190.89, a 10% return. The October 2029 value is $202.76, a 20% return. At the last date, the bear case is $131.89 and the bull case is $279.10. Today's reference price is $181.60."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 181.60, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 181.60, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "152.00 (-14 %)",
+        "138.72 (-19 %)",
+        "131.89 (-20 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "186.92 (+6 %)",
+        "196.57 (+14 %)",
+        "207.21 (+22 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "208.27 (+17 %)",
+        "240.48 (+38 %)",
+        "279.10 (+63 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "182.46 (+3 %)",
+        "190.89 (+10 %)",
+        "202.76 (+20 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Morgan Stanley?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear case would gain credibility in 2027–2029 if IPO and workplace assets leave when lockups expire, or fail to convert into retained advice relationships. Quieter issuance and trading would weaken Institutional Securities, while higher deposit costs or compensation would pressure Wealth margins and buybacks."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would strengthen if the next-12-month EPS baseline holds from October 2027, lending restores Wealth net interest income and advisor-led flows continue through October 2029. The bull case would gain support if conversion and retention become visible, funding costs stabilize from 2027 onward, and institutional market share sustains capital generation."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Morgan Stanley really make?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Morgan Stanley’s conventional free cash flow gives a poor picture because balance-sheet movements are part of its operating business."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "-17,889",
+        "1,362",
+        "-33,536",
+        "-6,397",
+        "33,971"
+       ],
+       [
+        "− Capital spending",
+        "2,898",
+        "3,462",
+        "3,412",
+        "3,078",
+        "2,308"
+       ],
+       [
+        "**= Free cash flow**",
+        "-20,787",
+        "-2,100",
+        "-36,948",
+        "-9,475",
+        "31,663"
+       ],
+       [
+        "− Stock pay",
+        "1,926",
+        "1,622",
+        "1,709",
+        "1,875",
+        "2,085"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-22,713",
+        "-3,722",
+        "-38,657",
+        "-11,350",
+        "29,578"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-32.2%",
+        "-6.0%",
+        "-71.4%",
+        "-21.1%",
+        "49.5%"
+       ]
+      ],
+      "note": "The cash figures include Morgan Stanley’s bank subsidiaries, so they also reflect lending activity and are not just the company’s investment business."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Morgan Stanley today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "181.605"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "14.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.3x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-7.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "The whole-business value is much higher than the stock-market value because it adds debt and includes the company's bank subsidiaries, while subtracting cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "181.605"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "202.76 (+20 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-8.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 181.605,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "152.00 (-14 %)",
+       "138.72 (-19 %)",
+       "131.89 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "186.92 (+6 %)",
+       "196.57 (+14 %)",
+       "207.21 (+22 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "208.27 (+17 %)",
+       "240.48 (+38 %)",
+       "279.10 (+63 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "182.46 (+3 %)",
+       "190.89 (+10 %)",
+       "202.76 (+20 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ms/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MS&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Morgan Stanley dividend: cash coverage and yield",
+   "meta_description": "Morgan Stanley's dividend, cash coverage, payout plans and current yield, explained in plain English.",
+   "opening": "Morgan Stanley's latest declared quarterly dividend was US$1.15 per share. Morgan Stanley's conventional free cash flow is a poor standalone measure of money available to owners, so dividend coverage must be read alongside its capital needs.",
+   "closing": "The full Morgan Stanley memo also answers questions about Morgan Stanley's business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Morgan Stanley pay per share?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The current $1.15 quarterly dividend annualizes to $4.60. The base case raises DPS to $4.70 in 2027 and $5.00 in 2028. It reaches $5.20 in 2029, below the recent pace of increases because earnings and capital needs remain cyclical. The bear case holds DPS at $4.60. The bull case reaches $5.00 in 2027 and $5.60 in 2028, then $6.20, requiring continued capital headroom."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "113,943 (108,143 / 115,143)",
+        "121,543 (111,443 / 124,943)",
+        "130,143 (118,243 / 136,743)"
+       ],
+       [
+        "Shares (millions)",
+        "1,554 (1,565 / 1,548)",
+        "1,546 (1,567 / 1,533)",
+        "1,539 (1,569 / 1,519)"
+       ],
+       [
+        "Dividends per share",
+        "4.70 (4.60 / 5.00)",
+        "5.00 (4.60 / 5.60)",
+        "5.20 (4.60 / 6.20)"
+       ],
+       [
+        "Price to book value",
+        "2.55 (2.20 / 2.80)",
+        "2.50 (1.95 / 2.95)",
+        "2.45 (1.75 / 3.10)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Morgan Stanley's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 73,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is therefore a poor standalone measure of money available to owners. Morgan Stanley continually buys securities, finances them, lends them, and settles customer trades. Those activities can consume cash temporarily while still producing fees and trading income. Negative free cash flow does not by itself mean that the franchise destroyed cash."
+      },
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholders received substantial distributions. Cash dividends, including preferred dividends, totalled $28,066 million from 2021 through 2025. The buyback line also includes employee tax withholdings, so it overstates discretionary repurchases if read casually. Borrowing financed much of the balance-sheet activity, but net debt is not cash available for distribution: the borrowing supports assets and trading positions that carry their own risks."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-20,787",
+        "-2,100",
+        "-36,948",
+        "-9,475",
+        "31,663"
+       ],
+       [
+        "− Share buybacks",
+        "5,835",
+        "4,199",
+        "6,178",
+        "10,871",
+        "12,075"
+       ],
+       [
+        "− Acquisitions",
+        "",
+        "",
+        "0",
+        "0",
+        "2,648"
+       ],
+       [
+        "− Investments bought",
+        "36,578",
+        "39,187",
+        "23,078",
+        "29,833",
+        "69,571"
+       ],
+       [
+        "+ Debt issued",
+        "139,169",
+        "108,365",
+        "78,424",
+        "72,460",
+        "90,273"
+       ],
+       [
+        "Cash and short-term investments",
+        "111,695",
+        "105,386",
+        "89,232",
+        "128,127",
+        "127,725"
+       ]
+      ],
+      "note": "The company's debt includes its bank subsidiaries and other secured financing, so total debt is broader than ordinary loans and makes net debt look larger."
+     }
+    },
+    {
+     "heading": "What could change Morgan Stanley's dividend?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case takes equity to $113,943 million in October 2027 and $121,543 million in October 2028. It reaches $130,143 million in October 2029. The path assumes $20,000 million of earnings in 2027. Earnings rise to $21,000 million in 2028 and $22,000 million in 2029, near the supplied analyst baseline before moderate growth. Annual dividends are $7,200 million and buybacks $6,200 million. Recovery since 2023 and the latest 22.6% ROTCE support retention, but the record also shows that equity can fall during a cycle."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear case would gain credibility in 2027–2029 if IPO and workplace assets leave when lockups expire, or fail to convert into retained advice relationships. Quieter issuance and trading would weaken Institutional Securities, while higher deposit costs or compensation would pressure Wealth margins and buybacks."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Morgan Stanley's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "181.605"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "The whole-business value is much higher than the stock-market value because it adds debt and includes the company's bank subsidiaries, while subtracting cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-8.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-7.3%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Real free cash flow per share": [
+      "16.31",
+      "-6.63",
+      "-23.49",
+      "-2.31",
+      "-14.27"
+     ],
+     "Free cash flow per share": [
+      "17.45",
+      "-5.53",
+      "-22.45",
+      "-1.30",
+      "-13.06"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ms/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MS&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Morgan Stanley earnings: date and what to watch",
+   "meta_description": "Morgan Stanley's next results are expected on January 14, 2027, with guidance focused on Wealth income, returns and expense control.",
+   "opening": "Morgan Stanley's next results are expected on January 14, 2027. For Morgan Stanley, watch whether exceptional Wealth inflows become durable earnings.",
+   "closing": "The full Morgan Stanley memo also answers questions about Morgan Stanley's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Morgan Stanley guided for 2027?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s near-term promise is modest: Wealth Management’s interest income should recover in Q4 and grow in 2027 mainly through lending."
+      },
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "CFO Sharon Yeshaya described deposit growth as an investment whose benefits should emerge over time. The test is whether new loans earn enough after funding costs and credit losses. The wider goals are a 20% return on tangible common equity—profit measured against shareholders’ usable equity—and a 30% Wealth pre-tax margin. Management also targets a 70% firmwide expense ratio, so the next question is whether analysts believe these promises."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Did Morgan Stanley keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 107,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Morgan Stanley exceeded its ROTCE and efficiency goals in 2025 and came close to its Wealth Management margin goal. One strong year does not prove performance through a full business cycle, but it gives shareholders something concrete against which to judge pay."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Morgan Stanley's last eight-quarter revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew 11.6% year on year, while pre-tax income grew 7.5%. Diluted EPS rose 8.2%, but profit grew more slowly than revenue because costs and credit provisions also increased."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "20,338",
+        "21,348",
+        "20,580",
+        "17,890",
+        "18,224",
+        "16,792",
+        "17,739",
+        "16,223"
+       ],
+       [
+        "Operating income",
+        "6,478",
+        "7,348",
+        "7,011",
+        "5,760",
+        "6,028",
+        "4,622",
+        "5,544",
+        "4,906"
+       ],
+       [
+        "Net income",
+        "4,909",
+        "5,581",
+        "5,567",
+        "4,397",
+        "4,610",
+        "3,539",
+        "4,315",
+        "3,714"
+       ],
+       [
+        "EPS, diluted",
+        "3.03",
+        "3.46",
+        "3.43",
+        "2.68",
+        "2.80",
+        "2.13",
+        "2.60",
+        "2.22"
+       ]
+      ],
+      "note": "“Operating income” here is actually profit before income taxes and includes interest, investments, and the company’s bank subsidiaries, so it is not the usual profit from running the main business."
+     }
+    },
+    {
+     "heading": "What should investors watch in Morgan Stanley's next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Q4 results, scheduled for January 14, 2027, will test the promised NII recovery and the quality of Wealth growth. Q3 produced $232 billion of net new assets, with just over half related to IPOs. An IPO makes shares publicly tradable, but lockups can delay sales and diversification. The key evidence is whether those assets remain at Morgan Stanley and generate advice revenue after restrictions expire."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 14, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "20,338"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "3.03"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "16,223",
+      "17,739",
+      "16,792",
+      "18,224",
+      "17,890",
+      "20,580",
+      "21,348",
+      "20,338"
+     ],
+     "EPS, diluted": [
+      "2.22",
+      "2.60",
+      "2.13",
+      "2.80",
+      "2.68",
+      "3.43",
+      "3.46",
+      "3.03"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ms/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MS&src=seo-earnings"
+  }
+ },
+ "short_name": "Morgan Stanley",
+ "first_memo_date": "2026-10-15T01:37:37Z"
+}

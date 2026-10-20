@@ -1,0 +1,540 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SHEL.L",
+ "slug": "shel-l",
+ "company": "Shell plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "oil_gas",
+ "country": "uk",
+ "memo_date": "2026-10-10T02:16:44Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 3780.5,
+ "price_date": "2026-10-08T15:39:48Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 277,
+  "tables": 31,
+  "words": 18966,
+  "sources": 223
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Shell plc is an integrated energy company that produces oil and gas, turns them into useful products and delivers energy to customers. Its business stretches from wells and refineries to petrol stations, factories, power companies and ships."
+ },
+ "sources": [
+  {
+   "title": "Shell plc — *Annual Report and Accounts 2025* — 12 March 2026 — SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026017024/shel-20251231.htm"
+  },
+  {
+   "title": "Shell Q4 2025 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026005600/q42025exhibit992.htm"
+  },
+  {
+   "title": "Shell Q1 2025 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/1306965/000130696525000013/q12025exhibit992.htm"
+  }
+ ],
+ "rivals": [],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Shell stock forecast",
+   "meta_description": "Shell's forecast weighs bear, base and bull scenarios against cash generation, ARC execution and today's valuation.",
+   "opening": "Shell's weighted scenario reaches 5,520.93 GBp by October 2029. It hinges on smooth ARC execution.",
+   "closing": "The full Shell memo also explains Shell's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Shell's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast is wide. The October 2029 bear case is 2,684.49 GBp, a -21% total return. The bull case is 8,988.18 GBp, a +148% total return. The weighted outcome is 5,520.93 GBp."
+      },
+      {
+       "n": 273,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weaker oil and gas prices, expanding LNG supply, fading refining margins and costly ARC integration. EBITDA falls, cash conversion weakens and net debt rises, so buybacks slow and investors apply a lower multiple. The price reaches 3,211.01 GBp in October 2027 and 2,684.49 GBp in October 2029. Its 25% probability reflects Shell's demonstrated commodity exposure, although ARC production and flexible buybacks limit the likelihood of the full debt build."
+      },
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires smooth ARC execution, strong LNG demand, healthy refining margins and disciplined spending. Higher EBITDA reduces debt while stronger cash flow supports large buybacks and a higher multiple. The price reaches 6,355.43 GBp in 2027 and 8,988.18 GBp in 2029. Its 20% probability reflects the number of conditions that must succeed together, while LNG Canada Phase 2 contributes no output during the forecast period."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per SHEL.L share at each date; in brackets the return since today's 3780.50, dividends included",
+      "caption": "What the shares could be worth (GBp per SHEL.L share at each date; in brackets the return since today's 3780.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "3211.01 (-12 %)",
+        "2457.68 (-30 %)",
+        "2684.49 (-21 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "4832.11 (+31 %)",
+        "5132.40 (+42 %)",
+        "5549.39 (+57 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "6355.43 (+71 %)",
+        "7750.88 (+112 %)",
+        "8988.18 (+148 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "4731.50 (+28 %)",
+        "4987.42 (+38 %)",
+        "5520.93 (+56 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Shell really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The next claims are more concrete. Capital spending maintains and develops assets; lease payments finance the use of ships, facilities and offices; interest services debt. Share awards do not require the same immediate cash as wages, but they transfer value through dilution or offsetting buybacks. Shell’s own free-cash-flow measure also includes investing movements such as disposal proceeds, so it answers a broader question than cash left after these claims."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions; per share in US$",
+      "caption": "Free cash flow, honestly counted (US$ millions; per share in US$)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow (calculated)",
+        "14,543",
+        "25,366",
+        "21,016",
+        "37,569",
+        "17,224"
+       ],
+       [
+        "Share-based payments",
+        "774",
+        "732",
+        "700",
+        "807",
+        "539"
+       ],
+       [
+        "Real free cash flow (after share-based payments) (calculated)",
+        "13,769",
+        "24,634",
+        "20,316",
+        "36,762",
+        "16,685"
+       ],
+       [
+        "Free cash flow left for shareholders (calculated)",
+        "13,622",
+        "24,339",
+        "19,552",
+        "36,556",
+        "16,337"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Shell today?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At 3780.50p, one share costs £37.805. Shell’s market value is £216,604 million: the value placed on shareholders’ claim. Enterprise value, which includes debt-like obligations and subtracts cash, is £225,747 million. It estimates the value of the operating business with its financing attached. Leases matter here because Shell reported net debt of $41.8 billion including leases, versus $12.1 billion excluding them. The earnings measure must treat those lease costs consistently."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; share price and per-share figures in pence; EV per flowing barrel in £",
+      "caption": "What an investor pays today (£ millions; share price and per-share figures in pence; EV per flowing barrel in £)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "3780.50"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "11.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "9.8x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "1.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "9.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "3780.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "5520.93 (+56 %)"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "9.1%"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.1%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 49.92877399702472,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "3211.01 (-12 %)",
+       "2457.68 (-30 %)",
+       "2684.49 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "4832.11 (+31 %)",
+       "5132.40 (+42 %)",
+       "5549.39 (+57 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "6355.43 (+71 %)",
+       "7750.88 (+112 %)",
+       "8988.18 (+148 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "4731.50 (+28 %)",
+       "4987.42 (+38 %)",
+       "5520.93 (+56 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/shel-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SHEL.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Shell dividend: cash coverage and history",
+   "meta_description": "Shell's dividend history, cash coverage, plans and 3.1% yield against a 9.1% free cash flow yield.",
+   "opening": "Shell's dividend per share has changed over the years shown, including a cut from $0.47 to $0.16 per share in 2020. Its 3.1% dividend yield compares with a 9.1% free cash flow yield, but the real test is cash after maintenance, leases and weaker commodity prices.",
+   "closing": "The full memo also examines Shell's business, its rivals, its management and the risks around its strategy.",
+   "blocks": [
+    {
+     "heading": "How much does Shell pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 73,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The 2020 crisis showed why through-cycle discipline matters. Shell cut its quarterly dividend from $0.47 to $0.16 per share and stopped the next buyback tranche. The decision preserved cash when prices and demand collapsed, but it also broke a dividend record many investors had treated as dependable."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per ordinary share",
+      "caption": "What one share gets (US$ per ordinary share)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Dividend per share",
+        "1.45",
+        "1.39",
+        "1.29",
+        "1.04",
+        "0.89"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "2.33",
+        "2.18",
+        "2.15",
+        "2.49",
+        "0.37"
+       ],
+       [
+        "Stock pay per share (calculated)",
+        "0.13",
+        "0.12",
+        "0.10",
+        "0.11",
+        "0.07"
+       ],
+       [
+        "Net share dilution (calculated)",
+        "-6.5%",
+        "-6.4%",
+        "-8.2%",
+        "-5.1%",
+        "0.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Shell's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow yield is 9.1%, while the dividend yield is 3.1%. Free cash flow includes investing cash flows, but Shell’s definition also includes acquisitions and disposals; organic free cash flow gives a cleaner view of the existing business. The dividend appears well covered today, but the real test is cash after maintenance, leases and weaker commodity prices."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after share-based payments) (calculated)",
+        "13,769",
+        "24,634",
+        "20,316",
+        "36,762",
+        "16,685"
+       ],
+       [
+        "Dividends paid",
+        "8,472",
+        "8,668",
+        "8,393",
+        "7,405",
+        "6,253"
+       ],
+       [
+        "Shares bought back",
+        "13,879",
+        "13,898",
+        "14,617",
+        "18,437",
+        "2,889"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "-3,879",
+        "-4,456",
+        "-4,091",
+        "-3,304",
+        "-14,863"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "162.3%",
+        "91.6%",
+        "113.3%",
+        "70.3%",
+        "54.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Shell's dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to $24–26 billion of cash capital expenditure in 2026 and $20–22 billion in 2027. It targets shareholder distributions of 40–50% of operating cash flow through the cycle, alongside 4% annual dividend growth and a $3 billion buyback."
+      },
+      {
+       "n": 269,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear dividend falls to $1.32 and then stays near $1.24, reflecting a 20% cut after the current quarterly rate. The bull reaches $1.63, $1.73 and $1.83 because stronger cash generation supports increases above policy. The 2020 cut shows why the downside remains possible."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "65,000 (52,000 / 76,000)",
+        "66,500 (46,000 / 83,000)",
+        "68,000 (48,000 / 88,000)"
+       ],
+       [
+        "Dividends per share",
+        "1.61 (1.32 / 1.63)",
+        "1.67 (1.24 / 1.73)",
+        "1.74 (1.24 / 1.83)"
+       ],
+       [
+        "Net debt",
+        "16,186 (20,185 / 9,050)",
+        "12,207 (24,324 / -5,800)",
+        "7,280 (26,952 / -24,230)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Shell's dividend yield today against its share price?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At 3780.50p, one share costs £37.805. Shell’s market value is £216,604 million: the value placed on shareholders’ claim. Enterprise value, which includes debt-like obligations and subtracts cash, is £225,747 million. It estimates the value of the operating business with its financing attached. Leases matter here because Shell reported net debt of $41.8 billion including leases, versus $12.1 billion excluding them. The earnings measure must treat those lease costs consistently."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "9.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per ordinary share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "5.17",
+      "6.20",
+      "5.36",
+      "6.21",
+      "4.38"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/shel-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SHEL.L&src=seo-dividend"
+  }
+ },
+ "short_name": "Shell",
+ "first_memo_date": "2026-10-10T02:16:44Z"
+}

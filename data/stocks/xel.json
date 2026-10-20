@@ -1,0 +1,808 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "XEL",
+ "slug": "xel",
+ "company": "Xcel Energy Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T21:43:18Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 76.31,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 262,
+  "tables": 26,
+  "words": 17621,
+  "sources": 241
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Xcel Energy is the company behind the light switch and, in many homes, the furnace. It earns its living by operating regulated networks that deliver electricity and natural gas, then spending the money those services bring in on fuel, workers, equipment and financing."
+ },
+ "sources": [
+  {
+   "title": "June 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000154/xel-20260630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000006/xcelearningsreleaseq42025.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/72903/000007290325000023/xcelearningsreleaseq42024.htm"
+  }
+ ],
+ "rivals": [
+  "NEE",
+  "DUK",
+  "SO",
+  "D",
+  "AEP",
+  "ETR",
+  "AEE",
+  "WEC",
+  "ES",
+  "CMS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Xcel Energy stock forecast",
+   "meta_description": "Xcel Energy stock forecast: a weighted path, scenario risks, cash generation and valuation in plain English.",
+   "opening": "The weighted forecast reaches $100.96 in October 2029, with the base case carrying 54% probability. It hinges on investment recovery outrunning financing, dilution and wildfire risk.",
+   "closing": "The full memo also explains Xcel Energy’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Xcel Energy's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast reaches $84.26 in October 2027, a 14% total return. It reaches $100.96 in October 2029, a 42% total return. The bear case carries 28% probability and the base case 54%. The bull case carries 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 76.31, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 76.31, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "73.99 (+0%)",
+        "71.01 (-1%)",
+        "70.02 (+1%)"
+       ],
+       [
+        "Base",
+        "54%",
+        "87.00 (+17%)",
+        "97.00 (+34%)",
+        "108.00 (+52%)"
+       ],
+       [
+        "Bull",
+        "18%",
+        "91.99 (+24%)",
+        "110.01 (+51%)",
+        "128.00 (+78%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "84.26 (+14%)",
+        "92.07 (+27%)",
+        "100.96 (+42%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Xcel Energy?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base earnings are $2,850 million in October 2027. They rise to $3,078 million in October 2028 and $3,324 million in October 2029. The starting figure comes from the analyst's $4.54738 next-twelve-month EPS estimate applied to the latest diluted share count. The 2026 guidance midpoint is $4.10, while adjusted EPS rose from $2.96 in 2021 to $3.80 in 2025. The bear case uses $2,550 million, $2,575 million and $2,650 million because delayed recovery, financing costs and wildfire losses could absorb growth. The bull case uses $3,050 million, $3,386 million and $3,760 million because timely rate recovery, large-load demand and completed projects could accelerate earnings. Management targets roughly 11% annual rate-base growth, but capital spending has exceeded operating cash."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,850 (2,550 / 3,050)",
+        "3,078 (2,575 / 3,386)",
+        "3,324 (2,650 / 3,760)"
+       ],
+       [
+        "Shares (millions)",
+        "684 (690 / 680)",
+        "706 (722 / 699)",
+        "719 (741 / 710)"
+       ],
+       [
+        "Dividends per share",
+        "2.49 (2.37 / 2.51)",
+        "2.62 (2.37 / 2.66)",
+        "2.75 (2.44 / 2.82)"
+       ],
+       [
+        "Price to earnings",
+        "20.88 (20.02 / 20.51)",
+        "22.25 (19.91 / 22.71)",
+        "23.36 (19.58 / 24.17)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Xcel Energy really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash was $4,083 million, while capital spending was $10,908 million. Free cash flow was therefore negative $6,825 million. It was negative in every year shown. Depreciation helps explain why operating cash exceeds net income, but it does not fund the new substations, transmission lines and generating equipment Xcel must build."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,083",
+        "4,641",
+        "5,327",
+        "3,932",
+        "2,189"
+       ],
+       [
+        "− Capital spending",
+        "10,908",
+        "7,364",
+        "5,854",
+        "4,638",
+        "4,244"
+       ],
+       [
+        "**= Free cash flow**",
+        "-6,825",
+        "-2,723",
+        "-527",
+        "-706",
+        "-2,055"
+       ],
+       [
+        "− Stock pay",
+        "46",
+        "33",
+        "25",
+        "20",
+        "31"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-6,871",
+        "-2,756",
+        "-552",
+        "-726",
+        "-2,086"
+       ]
+      ],
+      "note": "The company brought in cash from normal business, but spent much more on equipment and buildings, so free cash flow was negative."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Xcel Energy?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Today’s price pays for growth that must pass through regulation, financing and dilution."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "76.31"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "100.96 (+42%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-14.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 76.31,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "73.99 (+0%)",
+       "71.01 (-1%)",
+       "70.02 (+1%)"
+      ]
+     },
+     "Base": {
+      "probability": "54%",
+      "values": [
+       "87.00 (+17%)",
+       "97.00 (+34%)",
+       "108.00 (+52%)"
+      ]
+     },
+     "Bull": {
+      "probability": "18%",
+      "values": [
+       "91.99 (+24%)",
+       "110.01 (+51%)",
+       "128.00 (+78%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "84.26 (+14%)",
+       "92.07 (+27%)",
+       "100.96 (+42%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/xel/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=XEL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Xcel Energy dividend: payout and cash flow",
+   "meta_description": "Xcel Energy pays dividends, but negative free cash flow means current cash does not cover them.",
+   "opening": "Xcel Energy's latest dividend rate is $2.37 per share, and the base case forecasts $2.49 in 2027, $2.62 in 2028 and $2.75 in 2029. The dividend is not covered by current free cash flow: free cash flow was negative $6,825 million in 2025.",
+   "closing": "The full memo also covers Xcel Energy's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Xcel Energy pay per share?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend follows management's stated range more closely than cash flow does. Base dividends are $2.49 in 2027, $2.62 in 2028 and $2.75 in 2029, applying the midpoint of the 4–6% target. The bear case holds the latest $2.37 rate flat initially and reaches $2.44 by 2029. The bull case compounds the upper target, reaching $2.51, $2.66 and $2.82. The bear path reflects financing and wildfire pressure; the bull path requires recovery to keep pace with investment."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,850 (2,550 / 3,050)",
+        "3,078 (2,575 / 3,386)",
+        "3,324 (2,650 / 3,760)"
+       ],
+       [
+        "Shares (millions)",
+        "684 (690 / 680)",
+        "706 (722 / 699)",
+        "719 (741 / 710)"
+       ],
+       [
+        "Dividends per share",
+        "2.49 (2.37 / 2.51)",
+        "2.62 (2.37 / 2.66)",
+        "2.75 (2.44 / 2.82)"
+       ],
+       [
+        "Price to earnings",
+        "20.88 (20.02 / 20.51)",
+        "22.25 (19.91 / 22.71)",
+        "23.36 (19.58 / 24.17)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Xcel Energy's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operating cash was $4,083 million, while capital spending was $10,908 million. Free cash flow was therefore negative $6,825 million. It was negative in every year shown. Depreciation helps explain why operating cash exceeds net income, but it does not fund the new substations, transmission lines and generating equipment Xcel must build."
+      },
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "Where the cash went",
+       "text": "The funding gap came mainly from debt and new shares while dividends continued. Borrowing creates interest obligations; selling shares brings in cash but spreads future earnings across more owners. That can be sensible when new infrastructure produces enough regulated earnings to cover financing costs and the required shareholder return. It becomes dangerous when construction delays, cost increases, or liabilities outrun recovery."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-6,825",
+        "-2,723",
+        "-527",
+        "-706",
+        "-2,055"
+       ],
+       [
+        "− Dividends paid",
+        "1,282",
+        "1,175",
+        "1,092",
+        "1,012",
+        "935"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "8,107",
+        "3,898",
+        "1,619",
+        "1,718",
+        "2,990"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Xcel Energy's dividend?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Minnesota’s October 9, 2026 proposal to hold electric base rates flat for 2027–2028 remains pending as of October 18. The next earnings update should show Colorado’s August 2026 rate decision’s effect on forecasts and collection timing. Xcel expects an autumn update aligning its 2027–2031 capital and financing plans. Signed large-load commitments, timely generation and transmission projects, and wildfire losses within available coverage would support the bull case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Xcel Energy's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The probability-weighted price reaches $84.26 in October 2027, a 14% total return including dividends. It reaches $92.07 in October 2028, a 27% return, and $100.96 in October 2029, a 42% return. The 2029 range runs from $70.02 to $128.00, compared with today's $76.31. The base case receives the greatest probability because regulated investment and historical adjusted-earnings growth support execution, while dilution and wildfire exposure limit confidence."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "76.31"
+       ],
+       [
+        "Market value (calculated)",
+        "47,665.84"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-14.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-14.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.18"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-14.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-14.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentage changes",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.73",
+      "1.85",
+      "1.98",
+      "2.09",
+      "2.18"
+     ],
+     "Real free cash flow per share": [
+      "-3.86",
+      "-1.33",
+      "-1.00",
+      "-4.90",
+      "-11.67"
+     ],
+     "Free cash flow per share": [
+      "-3.81",
+      "-1.29",
+      "-0.95",
+      "-4.84",
+      "-11.59"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/xel/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=XEL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Xcel Energy earnings date and guidance",
+   "meta_description": "Xcel Energy reports on October 29, 2026; guidance is $4.04–$4.16 per share, with rate recovery and wildfire costs to watch.",
+   "opening": "Xcel Energy's next results are expected on October 29, 2026. Xcel Energy should show how the Colorado decision affects the forecast and collection timing.",
+   "closing": "The full Xcel Energy memo also answers questions about Xcel Energy's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Xcel Energy guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Its July 30 guidance calls for 2026 ongoing earnings of $4.04–$4.16 per share. Ongoing earnings adjust reported profit for selected unusual items. Xcel expects weather-normalized electricity sales to rise 3.0% and firm natural-gas sales to rise 1.0%, but much of the expected gain comes from infrastructure recovery. Capital riders should add $480–490 million of revenue."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Ongoing earnings per share",
+        "Year to Dec 2026",
+        "4.04",
+        "4.16",
+        "Jul 30, 2026"
+       ],
+       [
+        "Weather-normalized retail electric sales increase",
+        "Year to Dec 2026",
+        "3.0%",
+        "3.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Weather-normalized retail firm natural gas sales increase",
+        "Year to Dec 2026",
+        "1.0%",
+        "1.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Capital rider revenue increase",
+        "Year to Dec 2026",
+        "480",
+        "490",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "The capital forecast rows group the same planned spending by utility and by type of work, so adding every row together would count some spending twice."
+     }
+    },
+    {
+     "heading": "Did Xcel Energy keep its past earnings promise?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Xcel also met its 2025 ongoing-earnings guidance, reporting US$3.80 per share against a US$3.75–US$3.85 range. GAAP earnings, which include selected unusual items, were US$3.42 because the Marshall settlement produced a US$0.38-per-share adjustment. The normal performance measure met its promise, but the settlement still reduced shareholder wealth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Xcel Energy's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell to $3,119 million in the June 2026 quarter, while operating income rose to $706 million. Fuel and purchased-power costs generally pass through to customers, so cheaper fuel can reduce revenue and expense together. That makes falling revenue compatible with stable or improving shareholder profit."
+      },
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash remained the harder test. Quarterly capital spending rose to $2,948 million, and free cash flow was negative $1,848 million. Every quarter in the eight-quarter record had negative free cash flow. June shows improving recovery, but not yet a clean basis for extending the EPS increase."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,119",
+        "4,021",
+        "3,561",
+        "3,915",
+        "3,287",
+        "3,906",
+        "3,120",
+        "3,644"
+       ],
+       [
+        "Operating income",
+        "706",
+        "754",
+        "580",
+        "749",
+        "577",
+        "677",
+        "347",
+        "911"
+       ],
+       [
+        "Net income",
+        "586",
+        "556",
+        "567",
+        "524",
+        "444",
+        "483",
+        "464",
+        "682"
+       ],
+       [
+        "EPS, diluted",
+        "0.93",
+        "0.89",
+        "0.95",
+        "0.88",
+        "0.75",
+        "0.84",
+        "0.81",
+        "1.21"
+       ],
+       [
+        "**= Free cash flow**",
+        "-1,848",
+        "-1,325",
+        "-3,229",
+        "-1,290",
+        "-1,346",
+        "-960",
+        "-1,553",
+        "-42"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Xcel Energy's next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Colorado regulators approved approximately $157 million of additional annual electric revenue, below Xcel’s proposed $225 million. The difference matters because the earnings forecast assumes constructive rate-case outcomes. The next earnings update should show how the decision affects the forecast and the timing of collections."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,119"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.93"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,644",
+      "3,120",
+      "3,906",
+      "3,287",
+      "3,915",
+      "3,561",
+      "4,021",
+      "3,119"
+     ],
+     "EPS, diluted": [
+      "1.21",
+      "0.81",
+      "0.84",
+      "0.75",
+      "0.88",
+      "0.95",
+      "0.89",
+      "0.93"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/xel/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=XEL&src=seo-earnings"
+  }
+ },
+ "short_name": "Xcel Energy",
+ "first_memo_date": "2026-10-18T21:43:18Z"
+}

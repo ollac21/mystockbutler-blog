@@ -1,0 +1,809 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EXC",
+ "slug": "exc",
+ "company": "Exelon Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T02:25:42Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 43.5,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 26,
+  "words": 17749,
+  "sources": 253
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Exelon sells dependable access to electricity and natural gas through local delivery networks. Its customers pay for power to reach their premises, a meter to record use, and a utility responsible for maintenance and outage restoration."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000014/exc-20260212ex991.htm"
+  },
+  {
+   "title": "August 2026 SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000084/exc-20260825.htm"
+  },
+  {
+   "title": "Earnings release — 2026-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000077/exc-20260730ex991.htm"
+  }
+ ],
+ "rivals": [
+  "DUK",
+  "SO",
+  "PPL",
+  "D",
+  "ETR",
+  "XEL",
+  "FE",
+  "ED",
+  "AEE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Exelon stock forecast",
+   "meta_description": "Exelon's weighted forecast is $42.91 by October 2029, with bear and bull outcomes shaped by regulation, cash flow and dilution.",
+   "opening": "Exelon's weighted scenario is $42.91 by October 2029, an 11% total return including dividends. It hinges on regulators approving investment, customers affording the resulting bills and large-load commitments becoming paying customers.",
+   "closing": "The full memo also explains Exelon's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Exelon's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast sees limited near-term upside, followed by a more meaningful return if Exelon executes its investment plan. The probability-weighted price is $40.91 in October 2027, implying a 2% loss including dividends. It rises to $41.64 in October 2028, a 4% gain, and $42.91 in October 2029, an 11% gain."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final-date outcomes are wide. The bear case reaches $29.09, while the bull case reaches $55.12. Today’s price is $43.50, so the central forecast remains cautious despite rising earnings and dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 43.50, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 43.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "34.62 (-17 %)",
+        "30.64 (-22 %)",
+        "29.09 (-22 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "41.84 (+0 %)",
+        "43.33 (+8 %)",
+        "44.76 (+16 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "46.20 (+10 %)",
+        "50.77 (+25 %)",
+        "55.12 (+40 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "40.91 (-2 %)",
+        "41.64 (+4 %)",
+        "42.91 (+11 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can be below the base case."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Exelon?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path starts at $2,730 million. It falls to $2,670 million before recovering to $2,700 million. This reflects delayed recovery, disallowed costs and financing pressure. The bull path starts at $3,150 million, then reaches $3,410 million and $3,650 million as rate-base expansion and project execution approach the upper end of management’s target. Net income rose each year from 2021 through 2025, supporting the base over the bear case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Exelon really make?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "**Free cash flow** is operating cash flow minus capital spending. Exelon spent $8,529 million in 2025, leaving free cash flow of negative $2,275 million. Deducting $41 million of stock compensation produces real free cash flow of negative $2,316 million. That deduction recognizes the economic cost of issuing shareholders’ ownership to employees."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "6,254",
+        "5,569",
+        "4,703",
+        "",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "8,529",
+        "7,097",
+        "7,408",
+        "6,921",
+        "6,640"
+       ],
+       [
+        "**= Free cash flow**",
+        "-2,275",
+        "-1,528",
+        "-2,705",
+        "",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "41",
+        "34",
+        "21",
+        "41",
+        "95"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-2,316",
+        "-1,562",
+        "-2,726",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Exelon?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is what remains after capital spending. Exelon’s negative free-cash-flow yield signals a funding gap rather than distributable cash. The plan includes $3.4 billion of equity through 2029. That is about $850 million annually. Equity funds about 40% of incremental capital, and about 37% of those equity needs had been priced through forward contracts by July. At $43.50, $850 million would illustrate roughly 19.5 million shares. A forward contract prices a future sale; it does not mean those shares already exist. The useful test is therefore earnings per share, not total earnings."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "43.50"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "15.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-5.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-5.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.9%"
+       ]
+      ],
+      "note": "The negative free cash flow yields mean the company spent more cash than it generated recently, even though it may still report a profit and pay dividends."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "43.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "42.91 (+11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-5.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 43.5,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "34.62 (-17 %)",
+       "30.64 (-22 %)",
+       "29.09 (-22 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "41.84 (+0 %)",
+       "43.33 (+8 %)",
+       "44.76 (+16 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "46.20 (+10 %)",
+       "50.77 (+25 %)",
+       "55.12 (+40 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "40.91 (-2 %)",
+       "41.64 (+4 %)",
+       "42.91 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/exc/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Exelon dividend: cash coverage and outlook",
+   "meta_description": "Exelon pays a $0.42 quarterly dividend, but negative free cash flow strains cash coverage; plans and risks could change it.",
+   "opening": "Exelon pays a regular quarterly dividend, recently raised to $0.42 per share. Exelon’s cash does not currently cover that payout: 2025 free cash flow was negative $2,275 million against $1,617 million of dividends.",
+   "closing": "The full Exelon memo also explains Exelon’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Exelon pay per share?",
+     "paragraphs": [
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The balance sheet shows the cost of that choice. Net debt rose from $33,868 million at the end of 2021 to $49,454 million at the end of 2025. The board also increased the regular quarterly dividend to $0.42 per share on February 12, 2026. More income for shareholders means more cash to find alongside the investment programme, while higher interest expense reduces the benefit of improved operating results."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "24,258",
+        "23,028",
+        "21,727",
+        "19,078",
+        "17,938"
+       ],
+       [
+        "EPS, diluted",
+        "2.73",
+        "2.45",
+        "2.34",
+        "2.08",
+        "1.65"
+       ],
+       [
+        "Dividend per share",
+        "1.60",
+        "1.52",
+        "1.44",
+        "1.35",
+        "1.53"
+       ]
+      ],
+      "note": "The gross profit is an estimate because it subtracts only purchased power and fuel, leaving out other costs of delivering electricity."
+     }
+    },
+    {
+     "heading": "Does Exelon’s dividend come from its cash?",
+     "paragraphs": [
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Negative free cash flow does not automatically mean those investments failed. Free cash flow is the cash left after operations and capital spending, while regulators allow a utility to recover approved investment through customer bills over many years. But in 2025, negative free cash flow was $2,275 million and dividends were $1,617 million. Exelon therefore needed outside funding even before considering growth elsewhere."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-2,275",
+        "-1,528",
+        "-2,705",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "1,617",
+        "1,524",
+        "1,433",
+        "1,334",
+        "1,497"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "3,892",
+        "3,052",
+        "4,138",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company paid dividends even though its free cash flow was negative, so it had to rely on new borrowing and its debt increased."
+     }
+    },
+    {
+     "heading": "What could change Exelon’s dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2026 adjusted operating EPS of $2.81–$2.91. It targets 5%–7% annual adjusted EPS growth through 2029. The plan calls for $41,700 million of capital spending and 7.9% rate-base growth. Funding includes $3,400 million of planned equity through 2029, alongside a 5% annual dividend-growth target."
+      },
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Exelon can grow EPS only if regulators approve investment, customers can afford the resulting bills and large-load commitments become paying customers."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,060 (2,730 / 3,150)",
+        "3,230 (2,670 / 3,410)",
+        "3,400 (2,700 / 3,650)"
+       ],
+       [
+        "Shares (millions)",
+        "1,060 (1,064 / 1,057)",
+        "1,081 (1,089 / 1,075)",
+        "1,102 (1,114 / 1,093)"
+       ],
+       [
+        "Dividends per share",
+        "1.74 (1.68 / 1.76)",
+        "1.85 (1.68 / 1.87)",
+        "1.94 (1.68 / 1.98)"
+       ],
+       [
+        "Price to earnings",
+        "14.50 (13.50 / 15.50)",
+        "14.50 (12.50 / 16.00)",
+        "14.50 (12.00 / 16.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Exelon’s dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 181,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is what remains after capital spending. Exelon’s negative free-cash-flow yield signals a funding gap rather than distributable cash. The plan includes $3.4 billion of equity through 2029. That is about $850 million annually. Equity funds about 40% of incremental capital, and about 37% of those equity needs had been priced through forward contracts by July. At $43.50, $850 million would illustrate roughly 19.5 million shares. A forward contract prices a future sale; it does not mean those shares already exist. The useful test is therefore earnings per share, not total earnings."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.60"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-5.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-5.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.53",
+      "1.35",
+      "1.44",
+      "1.52",
+      "1.60"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "-2.73",
+      "-1.56",
+      "-2.29"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "-2.71",
+      "-1.52",
+      "-2.25"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/exc/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Exelon earnings date and guidance",
+   "meta_description": "Exelon’s next results are expected October 30, 2026; see its guidance, recent results and the regulatory recovery to watch.",
+   "opening": "Exelon’s next results are expected on October 30, 2026. Watch whether regulatory recovery turns investment into customer-paid revenue.",
+   "closing": "The full Exelon memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Exelon guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, Exelon guides to adjusted operating earnings of **$2.81–$2.91 per share**, based on **1,031 million average outstanding shares**. That share count matters because issuing stock makes per-share growth harder to achieve."
+      },
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The longer target is **5%–7% annual compound growth from 2025 through 2029**, with performance expected near the upper end. Exelon measures that promise from the midpoint of its original 2025 guidance, **$2.69**, rather than its later reported adjusted earnings of **$2.77**. The fixed forecast starting point makes the promise easier to test, but it also means actual growth will look different if measured from what Exelon really earned."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted (non-GAAP) operating earnings per share",
+        "2026",
+        "2.81",
+        "2.91",
+        "2026-08-25"
+       ],
+       [
+        "Expected average outstanding shares (millions)",
+        "2026",
+        "1,031",
+        "1,031",
+        "2026-07-30"
+       ],
+       [
+        "Adjusted Operating Earnings CAGR",
+        "2025–2029",
+        "5.0%",
+        "7.0%",
+        "2026-08-25"
+       ],
+       [
+        "Four-year capital expenditure plan",
+        "2026–2029",
+        "41,700",
+        "41,700",
+        "2026-07-30"
+       ]
+      ],
+      "note": "The adjusted operating and maintenance expense is lower because it leaves out 750 million dollars of regulatory-required costs."
+     }
+    },
+    {
+     "heading": "Did Exelon keep its 2025 promises?",
+     "paragraphs": [
+      {
+       "n": 115,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management did keep its financial promise. For 2025, adjusted earnings finished above the forecast range announced in February 2025. Exelon also reported top-quartile outage-duration performance at every utility. But fewer outages do not make electricity affordable, and the company must show that deferred work will not later damage reliability or increase costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Exelon’s last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose to $5,967 million from $5,427 million for the comparable quarter. Operating income rose, but net income reached only $396 million and diluted EPS remained $0.39. Higher bills therefore did not translate proportionately into shareholders’ profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,967",
+        "7,242",
+        "5,412",
+        "6,705",
+        "5,427",
+        "6,714",
+        "5,471",
+        "6,154"
+       ],
+       [
+        "Operating income",
+        "979",
+        "1,605",
+        "1,185",
+        "1,500",
+        "927",
+        "1,536",
+        "1,097",
+        "1,196"
+       ],
+       [
+        "Net income",
+        "396",
+        "919",
+        "593",
+        "875",
+        "391",
+        "908",
+        "647",
+        "707"
+       ],
+       [
+        "EPS, diluted",
+        "0.39",
+        "0.90",
+        "0.58",
+        "0.86",
+        "0.39",
+        "0.90",
+        "0.64",
+        "0.70"
+       ]
+      ],
+      "note": "The company brought in cash from its business, but it spent even more on equipment and buildings, so its free cash flow was negative."
+     }
+    },
+    {
+     "heading": "What should I watch in Exelon’s next results?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The most important milestones are regulatory decisions that turn completed investment into customer-paid revenue. BGE, Exelon’s Maryland utility, expects a decision on its pending electric rate case in **January 2027**. A rate case is the public review in which a utility requests recovery of costs and a return, while regulators and customer advocates test whether those amounts are justified."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,967"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.39"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,154",
+      "5,471",
+      "6,714",
+      "5,427",
+      "6,705",
+      "5,412",
+      "7,242",
+      "5,967"
+     ],
+     "EPS, diluted": [
+      "0.70",
+      "0.64",
+      "0.90",
+      "0.39",
+      "0.86",
+      "0.58",
+      "0.90",
+      "0.39"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/exc/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXC&src=seo-earnings"
+  }
+ },
+ "short_name": "Exelon",
+ "first_memo_date": "2026-10-19T02:25:42Z"
+}

@@ -1,0 +1,634 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FDX",
+ "slug": "fdx",
+ "company": "FedEx Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T20:57:03Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 293.55,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 20,
+  "words": 14387,
+  "sources": 148
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "FedEx sells a promise: it will move a package through an air-and-ground network and deliver it by a chosen time or day. A dollar comes in from the shipper and goes out through the people, vehicles, aircraft, facilities, and outside carriers needed to keep that promise."
+ },
+ "sources": [
+  {
+   "title": "FedEx 2026 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm"
+  },
+  {
+   "title": "FedEx — FDX - Stat Book FY2026 Q4 — June 23, 2026",
+   "url": "https://s21.q4cdn.com/665674268/files/doc_financials/2026/q4/FedEx-Q4-FY26-Stat-Book.pdf"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000050/fdx-earningsreleasefy2026q4.htm"
+  }
+ ],
+ "rivals": [
+  "UPS",
+  "DHL.DE",
+  "AMZN",
+  "1519.HK",
+  "2618.HK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "FedEx stock forecast",
+   "meta_description": "FedEx stock forecast: the weighted price reaches $334.17 in October 2029, with bear, base and bull probabilities of 28%, 52%, and 20%.",
+   "opening": "FedEx's weighted price reaches $334.17 in October 2029, after $225.52 in October 2027; bear, base and bull probabilities are 28%, 52%, and 20%. The investment turns on whether FedEx can convert Network 2.0 savings into durable margin while keeping service reliable.",
+   "closing": "The full FedEx memo also explains its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could FedEx's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $225.52 in October 2027, a 21% loss including dividends. It is $269.64 in October 2028, a 5% loss. By October 2029, it reaches $334.17, a 19% gain."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear receives 28% probability, while the base receives 52%. The bull receives 20%, reflecting greater execution demands."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 293.55, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 293.55, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "142.52 (-50 %)",
+        "121.63 (-55 %)",
+        "165.30 (-39 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "239.26 (-17 %)",
+        "298.04 (+5 %)",
+        "358.02 (+27 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "305.98 (+6 %)",
+        "403.00 (+41 %)",
+        "508.59 (+79 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "225.52 (-21 %)",
+        "269.64 (-5 %)",
+        "334.17 (+19 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for FedEx, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Operating profit rises in the base case because volume, pricing and network savings improve gradually. It starts at $6,200M in October 2027 and reaches $6,800M in October 2028, then $7,400M in October 2029. The base revenue path moves from $98B to $102B and then $106B. Margins move from 6.3% through 6.7% to 7.0%, still below management’s 8% target."
+      },
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case uses $5,200M first, then $5,000M, before recovering to $5,400M. It assumes revenue of $98B at a 5.3% margin initially, followed by weak service and transition costs. The bull case rises from $6,800M to $7,700M and then $8,500M, as revenue reaches $112B and profitable density exceeds the base case. Wages and purchased transportation rose 8% and 9%, so execution remains the central risk."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,200 (5,200 / 6,800)",
+        "6,800 (5,000 / 7,700)",
+        "7,400 (5,400 / 8,500)"
+       ],
+       [
+        "Shares (millions)",
+        "237 (240 / 234)",
+        "235 (240 / 229)",
+        "233 (240 / 224)"
+       ],
+       [
+        "Dividends per share",
+        "5.12 (4.88 / 5.12)",
+        "5.38 (4.88 / 5.38)",
+        "5.65 (4.88 / 5.65)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "10.50 (8.50 / 12.00)",
+        "11.00 (7.50 / 13.00)",
+        "11.50 (8.50 / 14.00)"
+       ],
+       [
+        "Net debt",
+        "8,364 (10,014 / 10,044)",
+        "4,764 (8,284 / 7,974)",
+        "1,664 (6,164 / 5,234)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does FedEx really make?",
+     "paragraphs": [
+      {
+       "n": 196,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow is operating cash left after capital spending. FedEx collects shipping payments, pays employees, fuel suppliers, and contractors, then buys aircraft or sorting equipment; what remains after those payments can support debt repayment, dividends, or buybacks. Because aircraft and facilities are bought at uneven times, one year’s free cash flow is not a permanent earning rate."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for FedEx today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "293.55"
+       ],
+       [
+        "Market value (calculated)",
+        "69,448.41"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "The price-to-earnings number uses what analysts expect the company to earn over the next year, so it is an estimate, not a promise."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "293.55"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "334.17 (+19 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.7x"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.7%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 293.55,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "142.52 (-50 %)",
+       "121.63 (-55 %)",
+       "165.30 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "239.26 (-17 %)",
+       "298.04 (+5 %)",
+       "358.02 (+27 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "305.98 (+6 %)",
+       "403.00 (+41 %)",
+       "508.59 (+79 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "225.52 (-21 %)",
+       "269.64 (-5 %)",
+       "334.17 (+19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/fdx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FDX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "FedEx dividend: payment, cash cover and yield",
+   "meta_description": "FedEx dividend payments, cash coverage, possible changes and current yield, in plain English.",
+   "opening": "FedEx pays dividends per share, and in FY26 its operating activities provided $8.925 billion against $3.809 billion of capital expenditures, leaving a rough $5.116 billion remainder before other investing and financing decisions. FedEx's cash generation covered capital spending and left room for dividends, but one year's free cash flow is not a permanent earning rate.",
+   "closing": "The full FedEx memo also answers how FedEx's business works, who its rivals are, how management plans to execute, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "How much does FedEx pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $5.12 per share to $5.38 and then $5.65 in the base and bull cases. That follows the announced 5% adjusted increase. The bear case holds at $4.88 because the board reviews the payment annually and the post-spin company still faces labor, capex and transition demands."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ per share",
+      "caption": "Results (US$ per share)",
+      "head": [
+       "Row",
+       "May 2026",
+       "May 2025",
+       "May 2024",
+       "May 2023",
+       "May 2022"
+      ],
+      "rows": [
+       [
+        "Dividend per share",
+        "5.80",
+        "5.52",
+        "3.78",
+        "5.86",
+        "3.00"
+       ]
+      ],
+      "note": "The dividend amount is what the company declared during the year, not necessarily what shareholders received in cash that year, and it excludes the Freight share distribution."
+     }
+    },
+    {
+     "heading": "Does FedEx's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In FY26, operating activities provided $8.925 billion. Capital expenditures were $3.809 billion. The rough remainder was $5.116 billion before other investing and financing decisions. This is not FedEx’s official free-cash-flow measure, but it shows why the company could invest and still return money to owners."
+      },
+      {
+       "n": 196,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Free cash flow is operating cash left after capital spending. FedEx collects shipping payments, pays employees, fuel suppliers, and contractors, then buys aircraft or sorting equipment; what remains after those payments can support debt repayment, dividends, or buybacks. Because aircraft and facilities are bought at uneven times, one year’s free cash flow is not a permanent earning rate."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "May 2026",
+       "May 2025",
+       "May 2024",
+       "May 2023",
+       "May 2022"
+      ],
+      "rows": [
+       [
+        "− Dividends paid",
+        "1,374",
+        "1,339",
+        "1,259",
+        "1,177",
+        "793"
+       ],
+       [
+        "− Share buybacks",
+        "796",
+        "3,017",
+        "2,500",
+        "1,500",
+        "2,248"
+       ],
+       [
+        "+ New shares sold",
+        "992",
+        "524",
+        "491",
+        "231",
+        "184"
+       ],
+       [
+        "Paid to shareholders",
+        "2,170",
+        "4,356",
+        "3,759",
+        "2,677",
+        "3,041"
+       ]
+      ],
+      "note": "“Paid to shareholders” includes dividends and share buybacks, but not the money the company raised by selling new shares."
+     }
+    },
+    {
+     "heading": "What could change FedEx's dividend?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if results through FY2027 and October 2029 show falling margins, cheaper shipment mix or service failures as consolidation continues. Rising wages and purchased transportation would matter if they absorb pricing and transformation gains."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is FedEx's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Today’s price values FedEx’s continuing delivery business, but the right yardstick is post-spin earnings and post-July debt, not the old company."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "293.55"
+       ],
+       [
+        "Market value (calculated)",
+        "69,448.41"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "The price-to-earnings number uses what analysts expect the company to earn over the next year, so it is an estimate, not a promise."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, May 2026",
+     "value": "5.75"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "1.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "May 2022",
+     "May 2023",
+     "May 2024",
+     "May 2025",
+     "May 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.98",
+      "4.60",
+      "5.02",
+      "5.51",
+      "5.75"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/fdx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FDX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "FedEx earnings",
+   "meta_description": "FedEx reports on October 28, 2026; guidance is 11% revenue growth and diluted EPS of $16.55–$17.75, with savings and service in focus.",
+   "opening": "FedEx's next results are expected on October 28, 2026. FedEx must show that Network 2.0 savings are becoming durable margin while service remains reliable.",
+   "closing": "The full FedEx memo answers what its business is, how it compares with rivals, who manages it, and what risks could disrupt the plan.",
+   "blocks": [
+    {
+     "heading": "What has FedEx guided for calendar 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted path is weak at first and positive by the final date, hinging on recurring network savings, reliable service, and stronger margins. Calendar 2026 guidance calls for 11% revenue growth and diluted EPS of $16.55–$17.75. Adjusted diluted EPS is $16.90–$18.10. The 2029 framework targets about $98 billion of revenue and $8 billion of operating income. It targets an 8% operating margin. FedEx targets about $2 billion of cumulative Network 2.0 and One FedEx savings by the end of 2027."
+      },
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s calendar-year forecast uses recast 2025 continuing operations, which excludes FedEx Freight after its spin-off. It also gave a separate estimate for the transition period and said most of that period’s adjusted operating income would arrive in the final quarter, following the company’s usual peak-season pattern."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue Growth",
+        "Calendar 2026",
+        "11.0%",
+        "11.0%",
+        "Jun 23, 2026"
+       ],
+       [
+        "Diluted EPS (Continuing Operations)",
+        "Calendar 2026",
+        "16.55",
+        "17.75",
+        "Jun 23, 2026"
+       ],
+       [
+        "Adjusted Diluted EPS (Continuing Operations)",
+        "Calendar 2026",
+        "16.90",
+        "18.10",
+        "Jun 23, 2026"
+       ],
+       [
+        "Capital Spending",
+        "Calendar 2026",
+        "3,900",
+        "3,900",
+        "Jul 20, 2026"
+       ],
+       [
+        "Aircraft spend",
+        "Calendar 2026",
+        "1,000",
+        "1,000",
+        "Jul 20, 2026"
+       ],
+       [
+        "savings from the plan",
+        "Calendar 2026",
+        "150",
+        "150",
+        "Jul 20, 2026"
+       ]
+      ],
+      "note": "The company’s adjusted earnings per share leaves out unusual costs, so it may look higher than earnings per share after all listed costs."
+     }
+    },
+    {
+     "heading": "Has FedEx kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 97,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.1 — Who runs it",
+       "text": "Raj Subramaniam has led FedEx as CEO since 2022, after joining the company in 1991 and becoming chief operating officer in 2019. His main project is DRIVE, a cost and operating transformation introduced in December 2022. FedEx says it exceeded its $1 billion transformation-savings target for fiscal 2026, but lasting savings matter more than a single milestone."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What should FedEx watch for in its next results?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The call covers June through September, so management should explain how those results fit the seven-month transition estimate and the full calendar-year outlook. The important evidence will not be EPS alone. Operating cash flow, capex and service performance will show whether the plan is producing the intended operating improvement."
+      },
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.6 — Whether transformation savings reach operating profit",
+       "text": "UPS reported an adjusted operating margin of 9.8% for full-year 2025, offering useful context for the efficiency gap. FedEx must now show that its savings remain after implementation costs and labor pressure. Management promises a denser network and lower costs; analysts offer a limited earnings yardstick; the decisive proof will be recurring cash and improving margins."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/fdx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FDX&src=seo-earnings"
+  }
+ },
+ "short_name": "FedEx",
+ "first_memo_date": "2026-10-17T20:57:03Z"
+}

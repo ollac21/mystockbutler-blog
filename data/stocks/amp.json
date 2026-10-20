@@ -1,0 +1,720 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AMP",
+ "slug": "amp",
+ "company": "Ameriprise Financial, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "broker",
+ "country": "us",
+ "memo_date": "2026-10-19T03:28:21Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 500.8,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 240,
+  "tables": 25,
+  "words": 16187,
+  "sources": 248
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Ameriprise Financial helps people use their money while also making investments and insurance that its advisors can sell. A dollar enters through advice, asset fees, product charges, premiums, interest and investment results; it leaves through compensation, operating costs, deposit interest and insurance obligations."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, cash-flow statements",
+   "url": "https://s205.q4cdn.com/618704162/files/doc_financials/2025/ar/2025-AMP-Annual-Report.pdf"
+  },
+  {
+   "title": "2023 annual report, cash-flow statements",
+   "url": "https://s205.q4cdn.com/618704162/files/doc_financials/2023/ar/2023-amp-annual-report.pdf"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://s205.q4cdn.com/618704162/files/doc_financials/2024/ar/2024-AMP-Annual-Report.pdf"
+  }
+ ],
+ "rivals": [
+  "SCHW",
+  "LPLA",
+  "RJF",
+  "MS",
+  "UBS",
+  "GS",
+  "SF",
+  "IBKR",
+  "JPM",
+  "BAC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Ameriprise stock forecast",
+   "meta_description": "Ameriprise's stock forecast sets out weighted scenarios, their drivers, cash generation and what investors pay today.",
+   "opening": "Ameriprise's weighted forecast is $561.01 in October 2027 and $711.13 in October 2029, with bear 25%, base 55% and bull 20% probabilities. It hinges on advisor retention, Columbia flows, RiverSource capital and assets that remain profitable after transfer.",
+   "closing": "The full memo also answers how Ameriprise's business works, who its rivals are, how management allocates capital, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could Ameriprise's shares go?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The verdict is constructive: Ameriprise can advance if it retains client relationships, completes Huntington transfers, controls RiverSource risk and continues buybacks. Management targets average adjusted operating EPS growth of 12.0%–15.0% over time, although buybacks can contribute to per-share growth. The weighted forecast is $561.01 in October 2027 (+13%). It reaches $711.13 in October 2029 (+46%). The probabilities are bear 25%, base 55% and bull 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 500.80, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 500.80, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "451.58 (-8 %)",
+        "436.93 (-10 %)",
+        "421.54 (-12 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "577.90 (+17 %)",
+        "658.36 (+34 %)",
+        "746.88 (+54 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "651.32 (+31 %)",
+        "798.15 (+62 %)",
+        "974.81 (+99 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "561.01 (+13 %)",
+        "630.96 (+29 %)",
+        "711.13 (+46 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Ameriprise, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Earnings are the first driver, starting at $4,100M of normalized adjusted operating earnings. The base path rises from $4,181M at the first forecast date to $4,793M at the final date; the middle step is shown in the table. It reflects moderate revenue growth, slight margin improvement, advisor productivity, partial Huntington onboarding and continued buybacks. The starting estimate is close to the latest adjusted result and consistent with the supplied next-12-month analyst EPS estimate."
+      },
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path falls from $3,861M to $3,733M as weak flows, advisor losses, lower asset values and recruiting costs compress margins. Columbia’s negative $6.5B Q2 flows support that risk. The bull path rises from $4,429M to $5,264M because successful Huntington transfers, stronger retention and operating leverage improve both revenue and margins. Huntington transfers were still prospective, so the bull case remains conditional."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Ameriprise really make?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Rates and trading",
+       "text": "Operating cash flow was about $8.3 billion in 2025, while property, equipment, and software purchases were $162 million. That subtraction does not create distributable cash: collateral, customer balances, regulation, technology, and compliance still constrain what subsidiaries can send to the parent."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for Ameriprise today?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $500.80 on October 19, 2026, Ameriprise trades at 12.1 times trailing earnings and 10.8 times expected earnings. Its 7.0 times price-to-book ratio looks richer because book value records accounting equity, not the full value of trusted client relationships. Buybacks can also shrink equity, while accumulated other comprehensive income records some unrealized investment gains and losses outside current profit. Profitability, investment quality, and regulatory capital therefore matter alongside book value."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "500.80"
+       ],
+       [
+        "Market value (calculated)",
+        "44,237.3"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "10.8x"
+       ],
+       [
+        "Price to book (calculated)",
+        "7.0x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.4%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings number uses analysts’ expected profit, so it is an estimate rather than a promise."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "500.80"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "711.13 (+46 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.1x"
+    },
+    {
+     "label": "Price to book",
+     "value": "7.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 500.8,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "451.58 (-8 %)",
+       "436.93 (-10 %)",
+       "421.54 (-12 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "577.90 (+17 %)",
+       "658.36 (+34 %)",
+       "746.88 (+54 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "651.32 (+31 %)",
+       "798.15 (+62 %)",
+       "974.81 (+99 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "561.01 (+13 %)",
+       "630.96 (+29 %)",
+       "711.13 (+46 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/amp/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Ameriprise dividend",
+   "meta_description": "Ameriprise pays a $1.70 quarterly dividend, returns cash through buybacks, and has a 1.4% yield at $500.80.",
+   "opening": "Ameriprise's dividend starts from a $1.70 quarterly rate, or a $6.80 annual run-rate. Ameriprise's 2025 earnings less dividends and buybacks left $175 million, while dividends absorbed $2,856 million and buybacks took $10,664 million.",
+   "closing": "The full Ameriprise memo also explains its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Ameriprise pay per share?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts from a $1.70 quarterly rate, or a $6.80 annual run-rate. The base rises from $7.00 at the first date to $7.80 at the final date, with $7.40 in the middle. The bear holds the first two annual amounts at $6.80 before reaching $7.00, while the bull reaches $7.20 and then $8.40. Five years of increases, the latest raise and a payout near 17% support resilience, but insurance capital and market weakness could still delay increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "36.28",
+        "33.05",
+        "23.71",
+        "27.70",
+        "28.48"
+       ],
+       [
+        "− Dividends declared per diluted weighted-average share (calculated)",
+        "6.25",
+        "5.76",
+        "5.28",
+        "4.86",
+        "4.39"
+       ],
+       [
+        "− Share buybacks, per share",
+        "28.25",
+        "21.68",
+        "18.21",
+        "16.28",
+        "15.38"
+       ],
+       [
+        "**= Kept, per share**",
+        "1.78",
+        "5.61",
+        "0.22",
+        "6.55",
+        "8.71"
+       ]
+      ],
+      "note": "The “Kept, per share” number also subtracts share buybacks, so it is not simply profit left after dividends; buybacks are cash returned to shareholders, not a business expense."
+     }
+    },
+    {
+     "heading": "Does Ameriprise's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Across 2021–2025, earnings for common shareholders totalled $16,086 million. Dividends absorbed $2,856 million, while buybacks took $10,664 million. Buybacks therefore returned almost four dollars for each dollar of dividends, while the regular dividend remained the more durable commitment because management can vary repurchases without changing it."
+      },
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The strongest evidence is therefore mixed but concrete: Ameriprise released insurance capital, reduced its share count and retained enough capacity to invest. In 2025, earnings less dividends and buybacks left $175 million, or $470 million using adjusted earnings; at June 2026, it reported $2.1 billion of excess capital and $2.8 billion of available holding-company liquidity. The strategy worked operationally, but the precise returns on individual acquisitions, technology spending and repurchases remain less transparent."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "3,563",
+        "3,401",
+        "2,556",
+        "3,149",
+        "3,417"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "614",
+        "593",
+        "569",
+        "553",
+        "527"
+       ],
+       [
+        "− Share buybacks",
+        "2,774",
+        "2,231",
+        "1,963",
+        "1,851",
+        "1,845"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "175",
+        "577",
+        "24",
+        "745",
+        "1,045"
+       ],
+       [
+        "**= Kept, on its adjusted earnings**",
+        "470",
+        "711",
+        "579",
+        "481",
+        "242"
+       ]
+      ],
+      "note": "The company's own adjusted earnings are higher because it leaves out investment, market, restructuring, and other adjustments that our count includes."
+     }
+    },
+    {
+     "heading": "What could change Ameriprise's dividend?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if advisor departures and Columbia outflows persist through 2027–2029, or if recruiting and servicing costs rise faster than revenue. Market or guarantee stress in 2028–2029 would matter more if it curtailed insurer distributions and buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "4,181 (3,861 / 4,429)",
+        "4,494 (3,799 / 4,840)",
+        "4,793 (3,733 / 5,264)"
+       ],
+       [
+        "Dividends per share",
+        "7.00 (6.80 / 7.20)",
+        "7.40 (6.80 / 7.80)",
+        "7.80 (7.00 / 8.40)"
+       ],
+       [
+        "Price to earnings",
+        "11.50 (10.00 / 12.00)",
+        "11.50 (9.50 / 12.50)",
+        "11.50 (9.00 / 13.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Ameriprise's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $500.80, Ameriprise has a $44,237.3 million market value. It trades at 12.1x trailing earnings. The 1.4% dividend yield and 6.3% buyback yield show that repurchases provide most shareholder distributions. Net interest income has held near 17% of revenue since its sharp rise in 2022–23. Pretax margin turned down from 2021 even as revenue grew, while ROE remains unusually high. EPS growth accompanied a falling diluted share count; in 2025, buybacks per share substantially exceeded dividends per share, leaving little earnings retained per share."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "6.3%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/amp/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Ameriprise earnings date, guidance and results",
+   "meta_description": "Ameriprise's next results are expected on October 29, 2026; guidance centers on adjusted diluted earnings growth, taxes and insurance earnings.",
+   "opening": "Ameriprise plans to release Q3 results on October 29, 2026. Watch whether recent client outflows are a temporary transition or a lasting loss of relationships.",
+   "closing": "The full Ameriprise memo also answers how Ameriprise's business works, who its rivals are, how Ameriprise's management is paid, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has Ameriprise guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 193,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The central target is 12.0%–15.0% average growth in adjusted operating earnings per diluted share over time. Asset Management’s full-year general and administrative expense target is 0.0% for 2026, excluding Seligman and other performance-fee compensation. The operating effective tax-rate guidance is 20.0%–22.0% for 2026, while Retirement & Protection Solutions is managed toward a recurring earnings range."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted operating earnings per diluted share growth",
+        "On average, over time",
+        "12.0%",
+        "15.0%",
+        "Aug 4, 2026"
+       ],
+       [
+        "Adjusted operating return on equity",
+        "On average, over time",
+        "30.0%",
+        "",
+        "Aug 4, 2026"
+       ],
+       [
+        "Operating effective tax rate",
+        "Year to Dec 2026",
+        "20.0%",
+        "22.0%",
+        "Jul 23, 2026"
+       ],
+       [
+        "Asset Management full-year general and administrative expenses, excluding Seligman and other performance fee compensation",
+        "Year to Dec 2026",
+        "0.0%",
+        "0.0%",
+        "Jul 23, 2026"
+       ],
+       [
+        "Retirement & Protection Solutions pretax adjusted operating earnings",
+        "Over time",
+        "",
+        "",
+        "Jul 23, 2026"
+       ]
+      ],
+      "note": "The 0.0% means expenses are expected to stay level, not that the company will have no expenses, and it excludes some employee pay."
+     }
+    },
+    {
+     "heading": "How has Ameriprise's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew faster than reported net income and diluted EPS; diluted EPS grew faster than net income because fewer shares divided the profit. Reported pretax margin fell, so higher revenue did not translate fully into reported profitability."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,940",
+        "4,812",
+        "4,960",
+        "4,791",
+        "4,375",
+        "4,354",
+        "4,501",
+        "4,397"
+       ],
+       [
+        "Net interest income",
+        "820",
+        "798",
+        "804",
+        "818",
+        "776",
+        "741",
+        "744",
+        "771"
+       ],
+       [
+        "Net income",
+        "1,113",
+        "915",
+        "1,008",
+        "912",
+        "1,060",
+        "583",
+        "1,071",
+        "511"
+       ],
+       [
+        "EPS, diluted",
+        "11.98",
+        "9.68",
+        "10.47",
+        "9.33",
+        "10.73",
+        "5.83",
+        "10.58",
+        "5.00"
+       ],
+       [
+        "Pretax margin",
+        "29.2%",
+        "23.8%",
+        "26.0%",
+        "24.5%",
+        "30.9%",
+        "15.8%",
+        "30.0%",
+        "14.7%"
+       ]
+      ],
+      "note": "The net interest income numbers are a broader estimate than the label suggests because they include insurance investments and other investment returns, not only interest from loans and deposits."
+     }
+    },
+    {
+     "heading": "What should investors watch in Ameriprise's next results?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results must show whether recent client outflows are a temporary transition or a lasting loss of relationships."
+      },
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first dated checkpoint is October 29, 2026, when Ameriprise plans to release Q3 results and hold its earnings call. Management expected Comerica’s remaining assets to leave by the end of September. Q3 should therefore show the completed departure rather than treating every outflow as a new deterioration."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,940"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "11.98"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,397",
+      "4,501",
+      "4,354",
+      "4,375",
+      "4,791",
+      "4,960",
+      "4,812",
+      "4,940"
+     ],
+     "EPS, diluted": [
+      "5.00",
+      "10.58",
+      "5.83",
+      "10.73",
+      "9.33",
+      "10.47",
+      "9.68",
+      "11.98"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/amp/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMP&src=seo-earnings"
+  }
+ },
+ "short_name": "Ameriprise",
+ "first_memo_date": "2026-10-19T03:28:21Z"
+}

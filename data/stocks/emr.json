@@ -1,0 +1,820 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EMR",
+ "slug": "emr",
+ "company": "Emerson Electric Co.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T10:19:13Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 162.15,
+ "price_date": "2026-10-15T20:02:27Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 27,
+  "words": 17035,
+  "sources": 246
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Emerson Electric sells the hardware and software that keep industrial processes moving, measured and under control. Its business becomes clearer when we follow one dollar from a plant’s need, through Emerson’s products and customers, to the maintenance and upgrades that bring the customer back."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 4",
+   "url": "https://www.sec.gov/Archives/edgar/data/32604/000003260425000087/emr-20250930.htm"
+  },
+  {
+   "title": "SEC results release",
+   "url": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000043/emr-20260630.htm"
+  },
+  {
+   "title": "completion and ownership accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000007/emr-20251231.htm"
+  }
+ ],
+ "rivals": [
+  "HON",
+  "ETN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Emerson stock forecast",
+   "meta_description": "Emerson’s stock forecast weighs bear, base and bull scenarios against software growth, project conversion, cash generation and valuation.",
+   "opening": "Emerson’s weighted value reaches $162.12 in October 2027 and $192.55 in October 2029. It hinges on software growth, project conversion and cash generation sufficient to manage debt.",
+   "closing": "The full memo also explains Emerson’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Emerson’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast assigns 28% probability to the bear case, 54% to the base case and 18% to the bull case. The base case reaches $170.37 in October 2027 and $199.63 in October 2029. By October 2029, the bear case reaches $99.30 and the bull case $316.37."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 162.15, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 162.15, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "113.78 (-28 %)",
+        "102.10 (-34 %)",
+        "99.30 (-35 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "170.37 (+7 %)",
+        "188.35 (+19 %)",
+        "199.63 (+28 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "212.58 (+33 %)",
+        "265.32 (+67 %)",
+        "316.37 (+100 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "162.12 (+1 %)",
+        "178.06 (+13 %)",
+        "192.55 (+23 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more weight to the base case because it is judged more likely, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Emerson?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives earnings of 3,500, 3,550 and 3,700 as weak project conversion and late renewals keep growth near 1–2%. The bull case reaches 5,700 by 2029 because ACV growth, orders, backlog conversion and AspenTech cross-selling all strengthen. ACV was 1.68 billion, up 9%, and June-quarter orders grew 7%. Emerson’s 6.55 adjusted-EPS guide and 8.00 target for 2028 support growth, but they are targets rather than net-income guarantees. The forecast excludes the 82 million tariff refund, disposal gains and acquisition accounting charges."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "4,100 (3,500 / 4,350)",
+        "4,500 (3,550 / 5,000)",
+        "4,950 (3,700 / 5,700)"
+       ],
+       [
+        "Shares (millions)",
+        "554 (554 / 552)",
+        "550 (556 / 546)",
+        "546 (559 / 540)"
+       ],
+       [
+        "Dividends per share",
+        "2.33 (2.22 / 2.38)",
+        "2.45 (2.22 / 2.57)",
+        "2.57 (2.29 / 2.77)"
+       ],
+       [
+        "Price to earnings",
+        "23.00 (18.00 / 27.00)",
+        "23.00 (16.00 / 29.00)",
+        "22.00 (15.00 / 30.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Emerson really make?",
+     "paragraphs": [
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was $3,676 million in fiscal 2025. Capital spending was $431 million, leaving free cash flow of $3,245 million. Free cash flow reached 18.0% of revenue, compared with 12.7% in 2022. That is stronger evidence than adjusted earnings alone because it shows money left after operating payments and investment in assets."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,676",
+        "3,317",
+        "2,710",
+        "2,048",
+        "2,458"
+       ],
+       [
+        "− Capital spending",
+        "431",
+        "419",
+        "363",
+        "299",
+        "404"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,245",
+        "2,898",
+        "2,347",
+        "1,749",
+        "2,054"
+       ],
+       [
+        "− Stock pay",
+        "263",
+        "260",
+        "250",
+        "125",
+        "197"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,982",
+        "2,638",
+        "2,097",
+        "1,624",
+        "1,857"
+       ]
+      ],
+      "note": "The company's own free cash flow matches ours, but our real free cash flow is lower because we subtract stock pay, which gives employees part of the company even though no cash leaves today."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Emerson?",
+     "paragraphs": [
+      {
+       "n": 190,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free-cash-flow yield is 3.6%, compared with a stated real free-cash-flow yield of 3.3%. Free cash flow can repay debt, fund acquisitions, or support dividends and buybacks; the 1.4% dividend yield measures only what shareholders receive directly. “Real” free cash flow has no clear meaning here until its adjustment is defined."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "162.15"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "192.55 (+23 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "22.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 162.15,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "113.78 (-28 %)",
+       "102.10 (-34 %)",
+       "99.30 (-35 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "170.37 (+7 %)",
+       "188.35 (+19 %)",
+       "199.63 (+28 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "212.58 (+33 %)",
+       "265.32 (+67 %)",
+       "316.37 (+100 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "162.12 (+1 %)",
+       "178.06 (+13 %)",
+       "192.55 (+23 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/emr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EMR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Emerson dividend",
+   "meta_description": "Emerson's dividend rises in the forecast, while free cash flow shows how the cash is allocated.",
+   "opening": "Emerson's forecast dividend rises from 2.33 to 2.57 per share, from a latest 0.555 quarterly rate. Free cash flow was $3.245 billion in fiscal 2025, and across five years shareholder payments absorbed about $10.6 billion of roughly $12.3 billion in free cash flow.",
+   "closing": "The full memo examines Emerson's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Emerson pay per share?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise steadily in the base case from 2.33 to 2.45 and then 2.57 per share. The bear case pauses at 2.22 before reaching 2.29, while the bull case reaches 2.77. The base reflects the latest 0.555 quarterly rate, the five-year record of increases and planned dividend payments of about 1.2 billion; debt and competing cash needs make repeated bull-case increases less likely."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "4,100 (3,500 / 4,350)",
+        "4,500 (3,550 / 5,000)",
+        "4,950 (3,700 / 5,700)"
+       ],
+       [
+        "Shares (millions)",
+        "554 (554 / 552)",
+        "550 (556 / 546)",
+        "546 (559 / 540)"
+       ],
+       [
+        "Dividends per share",
+        "2.33 (2.22 / 2.38)",
+        "2.45 (2.22 / 2.57)",
+        "2.57 (2.29 / 2.77)"
+       ],
+       [
+        "Price to earnings",
+        "23.00 (18.00 / 27.00)",
+        "23.00 (16.00 / 29.00)",
+        "22.00 (15.00 / 30.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Emerson's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operations pay for necessary capital spending. Emerson generated $3.676 billion of operating cash in fiscal 2025. After $431 million of capital spending, free cash flow was $3.245 billion."
+      },
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends made a steady claim on that pool, while buybacks varied sharply. Across five years, shareholder payments absorbed about $10.6 billion of roughly $12.3 billion in free cash flow. In fiscal 2023, buybacks helped push total shareholder payments above that year’s free cash flow, because disposal proceeds supplied additional cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,245",
+        "2,898",
+        "2,347",
+        "1,749",
+        "2,054"
+       ],
+       [
+        "− Dividends paid",
+        "1,192",
+        "1,201",
+        "1,198",
+        "1,223",
+        "1,210"
+       ],
+       [
+        "− Share buybacks",
+        "1,167",
+        "435",
+        "2,000",
+        "500",
+        "500"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "883",
+        "1,260",
+        "",
+        "22",
+        "319"
+       ],
+       [
+        "Paid to shareholders",
+        "2,359",
+        "1,636",
+        "3,198",
+        "1,723",
+        "1,710"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "72.7%",
+        "56.5%",
+        "136.3%",
+        "98.5%",
+        "83.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Emerson's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 184,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "Emerson Electric is an industrial automation company whose equipment, control systems and software help factories and process plants operate. At $162.15 a share on October 16, 2026, the market is paying for a larger business that must produce much more profit and cash."
+      },
+      {
+       "n": 190,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free-cash-flow yield is 3.6%, compared with a stated real free-cash-flow yield of 3.3%. Free cash flow can repay debt, fund acquisitions, or support dividends and buybacks; the 1.4% dividend yield measures only what shareholders receive directly. “Real” free cash flow has no clear meaning here until its adjustment is defined."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "162.15"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.4%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings figure uses analysts’ guesses about future profit, so it can change or be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "2.10"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.01",
+      "2.05",
+      "2.08",
+      "2.09",
+      "2.10"
+     ],
+     "Real free cash flow per share": [
+      "3.09",
+      "2.72",
+      "3.63",
+      "4.60",
+      "5.26"
+     ],
+     "Free cash flow per share": [
+      "3.41",
+      "2.93",
+      "4.07",
+      "5.05",
+      "5.73"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/emr/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EMR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Emerson earnings: next results and guidance",
+   "meta_description": "Emerson reports next on November 4, 2026; watch whether software revenue rebounds with ACV and cash supports lower net debt.",
+   "opening": "Emerson's next results are expected on November 4, 2026. Watch whether software revenue rebounds while ACV continues to grow.",
+   "closing": "The full memo also answers how Emerson's business works, how it compares with rivals, who manages it and what risks it carries.",
+   "blocks": [
+    {
+     "heading": "What has Emerson guided for the year?",
+     "paragraphs": [
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Emerson’s fiscal year ends in September. Its August guidance raised underlying sales growth from 3% to 3.5% and moved adjusted earnings per share to the top of its previous range. Underlying growth strips out currency translation and major acquisitions or disposals, so it shows more clearly what the existing business sold."
+      },
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For the year to September 2026, management promises 3.5% underlying sales growth, $6.55 adjusted EPS and $3,600 million of free cash flow. It also guides to $1,000 million of share repurchases and $1,200 million of dividends."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Underlying Sales Growth",
+        "Year to Sep 2026",
+        "3.5%",
+        "3.5%",
+        "Aug 4, 2026"
+       ],
+       [
+        "Underlying Sales Growth",
+        "Quarter to Sep 2026",
+        "5.0%",
+        "5.0%",
+        "Aug 4, 2026"
+       ],
+       [
+        "Adjusted Earnings Per Share",
+        "Year to Sep 2026",
+        "6.55",
+        "6.55",
+        "Aug 4, 2026"
+       ],
+       [
+        "Adjusted Earnings Per Share",
+        "Quarter to Sep 2026",
+        "1.85",
+        "1.85",
+        "Aug 4, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Sep 2026",
+        "3,600",
+        "3,600",
+        "Aug 4, 2026"
+       ],
+       [
+        "Share repurchases",
+        "Year to Sep 2026",
+        "1,000",
+        "1,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Dividends",
+        "Year to Sep 2026",
+        "1,200",
+        "1,200",
+        "Aug 4, 2026"
+       ],
+       [
+        "Returning cash to shareholders",
+        "Year to Sep 2026",
+        "2,200",
+        "2,200",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Emerson kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management forecast adjusted earnings per share in a US$5.85–US$6.05 range. It forecast free cash flow in a US$3.2–US$3.3 billion range. Actual results were US$6.00 and US$3.245 billion, so both operating promises landed inside their ranges. The buyback promise was weaker: the plan called for approximately US$2 billion, while actual repurchases were US$1,167 million."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Emerson's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Sales rose from $4,553 million to $4,873 million. Operating income rose from $829 million to $1,001 million. Matching-quarter comparisons matter because project shipments and software renewals can make adjacent quarters misleading."
+      },
+      {
+       "n": 168,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Underlying profitability still improved. Adjusted EPS rose from $1.52 to $1.71. Adjusted EBITA margin rose from 26.0% to 26.7%, despite restructuring, acquisition-related costs and discrete taxes. Operating cash flow reached $1,425 million. Free cash flow reached $1,323 million, though the refund contributed to the improvement."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,873",
+        "4,562",
+        "4,346",
+        "4,855",
+        "4,553",
+        "4,432",
+        "4,175",
+        "4,619"
+       ],
+       [
+        "Operating income",
+        "1,001",
+        "877",
+        "865",
+        "888",
+        "829",
+        "670",
+        "783",
+        "697"
+       ],
+       [
+        "Net income",
+        "718",
+        "618",
+        "605",
+        "636",
+        "580",
+        "485",
+        "585",
+        "558"
+       ],
+       [
+        "EPS, diluted",
+        "1.28",
+        "1.10",
+        "1.07",
+        "1.12",
+        "1.03",
+        "0.86",
+        "1.02",
+        "0.97"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,323",
+        "694",
+        "602",
+        "843",
+        "970",
+        "738",
+        "694",
+        "905"
+       ]
+      ],
+      "note": "Free cash flow is cash from daily business minus spending on equipment, buildings, and software, so the spending numbers reduce the final total."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,873"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.28"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,619",
+      "4,175",
+      "4,432",
+      "4,553",
+      "4,855",
+      "4,346",
+      "4,562",
+      "4,873"
+     ],
+     "EPS, diluted": [
+      "0.97",
+      "1.02",
+      "0.86",
+      "1.03",
+      "1.12",
+      "1.07",
+      "1.10",
+      "1.28"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/emr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EMR&src=seo-earnings"
+  }
+ },
+ "short_name": "Emerson",
+ "first_memo_date": "2026-10-16T10:19:13Z"
+}

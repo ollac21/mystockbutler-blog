@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261009T134940Z-4b45f9dd2aab",
  "ticker": "PLTR",
  "slug": "pltr",
  "company": "Palantir Technologies Inc.",
@@ -31,12 +30,12 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000022/pltr-20241231.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000022/pltr-20241231.htm"
-  },
-  {
    "title": "2023 annual report",
    "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165524000022/pltr-20231231.htm"
+  },
+  {
+   "title": "2022 annual report, Note 14",
+   "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165523000011/pltr-20221231.htm"
   }
  ],
  "rivals": [
@@ -65,34 +64,27 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Palantir Technologies Inc. stock forecast: 2029",
-   "meta_description": "Palantir Technologies Inc. stock forecast: the weighted price is $184.23 in October 2029, with a $52.55–$429.84 scenario range.",
-   "opening": "The probability-weighted price is $184.23 in October 2029. It hinges on cash-flow growth outrunning multiple compression and dilution.",
-   "closing": "The full memo also explains Palantir Technologies Inc.’s business, rivals, management and risks.",
+   "title": "Palantir stock forecast",
+   "meta_description": "Palantir's forecast spans bear, base and bull cases, with cash flow, dilution and valuation shaping the range.",
+   "opening": "Palantir’s probability-weighted forecast reaches US$184.23 per share in October 2029. It hinges on cash-flow growth outrunning multiple compression and dilution.",
+   "closing": "The full memo covers Palantir’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could Palantir Technologies Inc.'s shares be by 2029?",
+     "heading": "Where could Palantir’s shares be by 2029?",
      "paragraphs": [
       {
-       "n": 249,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.1 — The verdict",
-       "text": "By October 2029, the weighted price is $184.23, or -8%. The scenario range then runs from $52.55 to $429.84. Today’s price is $199.85."
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "At US$199.86 per share, Palantir’s trailing P/E is 170.8×. The probability-weighted forecast reaches US$184.23 per share in October 2029, an 8% loss from today, hinging on cash-flow growth outrunning multiple compression and dilution."
       },
       {
-       "n": 263,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.4 — Bear and bull",
-       "text": "That path produces $77.04 in October 2027 and $52.55 in October 2029. Its probability is 25% because cash flow has been volatile and the starting multiple is unusually demanding, although improving revenue, retention, margins and liquidity argue against making it the central case."
-      },
-      {
-       "n": 265,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.4 — Bear and bull",
-       "text": "The bull path reaches $297.59 in 2027 and $429.84 in 2029. Its probability is 15% because sustaining both exceptional growth and a 100x multiple requires execution beyond what the available evidence can establish."
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The scenario range runs from US$52.55 in the bear case to US$429.84 in the bull case. The base case is US$177.69 with 60% probability. Durable Bootcamp conversion, broader production adoption and reusable deployments support the upside; slower growth and rising cloud or delivery costs support the downside."
       }
      ],
      "table": {
@@ -140,49 +132,20 @@
      }
     },
     {
-     "heading": "What has to go right, and what could go wrong for Palantir Technologies Inc.?",
-     "paragraphs": [],
-     "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; USD millions unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions unless shown)",
-      "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": [
-       [
-        "Free cash flow after stock pay",
-        "4,760 (2,550 / 5,440)",
-        "5,950 (2,930 / 7,620)",
-        "7,140 (3,370 / 10,290)"
-       ],
-       [
-        "Shares (millions)",
-        "2,471 (2,507 / 2,435)",
-        "2,533 (2,608 / 2,460)",
-        "2,596 (2,712 / 2,484)"
-       ],
-       [
-        "Enterprise value to free cash flow after stock pay",
-        "100 (70.00 / 130)",
-        "80.00 (50.00 / 115)",
-        "60.00 (35.00 / 100)"
-       ],
-       [
-        "Net debt",
-        "-16,670 (-14,660 / -17,450)",
-        "-24,120 (-19,290 / -26,670)",
-        "-32,960 (-24,560 / -38,760)"
-       ]
-      ],
-      "note": ""
-     }
+     "heading": "What has to go right, and what could go wrong for Palantir?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case grows cash flow to $4,760M in 2027 and then slows as the business scales. It reaches $7,140M in 2029. The reason is continued paid AIP adoption, strong margins and reusable deployments, supported by 84.7% gross margin in the latest quarter. The bear case falls to $2,550M first, as conversion and hosting costs disappoint, then recovers gradually. The bull case reaches $5,440M first and $10,290M by 2029 as Bootcamps convert and delivery becomes more repeatable. These are forecast assumptions, not guidance."
+      }
+     ],
+     "table": null
     },
     {
-     "heading": "How much cash does Palantir Technologies Inc. really make?",
+     "heading": "How much cash does Palantir really make?",
      "paragraphs": [
       {
        "n": 149,
@@ -205,6 +168,22 @@
        "Year to Dec 2021"
       ],
       "rows": [
+       [
+        "Cash from operations",
+        "2,134,473",
+        "1,153,865",
+        "712,183",
+        "223,737",
+        "333,851"
+       ],
+       [
+        "Capital spending",
+        "33,882",
+        "12,634",
+        "15,114",
+        "40,027",
+        "12,627"
+       ],
        [
         "Free cash flow (calculated)",
         "2,100,591",
@@ -242,7 +221,7 @@
      }
     },
     {
-     "heading": "What does an investor pay for Palantir Technologies Inc. today?",
+     "heading": "What does an investor pay today for Palantir?",
      "paragraphs": [
       {
        "n": 177,
@@ -252,7 +231,42 @@
        "text": "The price-to-earnings ratio, or P/E, says how many dollars investors pay for one dollar of annual accounting profit. A 170.8× P/E means paying roughly $171 for each recent dollar of earnings. Free-cash-flow yield measures the cash generated after capital spending against the price paid. At 0.5%, each $100 invested currently represents about fifty cents of annual free cash flow. That is especially demanding beside a 5.22% government-bond yield."
       }
      ],
-     "table": null
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "199.86"
+       ],
+       [
+        "Market value (calculated)",
+        "480,263,253"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "470,854,154"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "170.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.5%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": ""
+     }
     }
    ],
    "facts": [
@@ -321,20 +335,20 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Palantir Technologies Inc. earnings and guidance",
-   "meta_description": "Palantir Technologies Inc. reports next on November 2, 2026; see guidance, results and what to watch.",
-   "opening": "Palantir Technologies Inc.’s next results are expected on November 2, 2026. Watch whether revenue keeps pace as hiring and product spending increase.",
-   "closing": "The full memo covers Palantir Technologies Inc.’s business, rivals, management and risks.",
+   "title": "Palantir earnings: guidance and results",
+   "meta_description": "Palantir's next results are expected November 2, 2026; see its guidance, recent results and the key signals to watch.",
+   "opening": "Palantir's next results are expected on November 2, 2026. The one thing to watch is whether revenue keeps pace as hiring and product spending increase.",
+   "closing": "The full memo also explains Palantir's business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "What has Palantir Technologies Inc. guided for the year?",
+     "heading": "What has Palantir guided for the year?",
      "paragraphs": [
       {
-       "n": 212,
+       "n": 210,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.1 — What management has guided",
-       "text": "Management’s profit and cash targets are adjusted measures. They remove employee share compensation and related payroll taxes from operating profit, while adjusted free cash flow also reflects equipment purchases and selected payroll-tax payments. These measures can clarify operating performance, but the real test is whether ordinary accounting profit rises, cash arrives and share issuance does not overwhelm shareholders."
+       "text": "The hardest target is American commercial revenue, where sales must more than double. That requires customers to move beyond experimenting with artificial intelligence and pay for broader use in daily operations."
       }
      ],
      "table": {
@@ -389,7 +403,7 @@
      }
     },
     {
-     "heading": "Has Palantir Technologies Inc. kept its past promises?",
+     "heading": "Has Palantir kept its past promises?",
      "paragraphs": [
       {
        "n": 118,
@@ -402,14 +416,14 @@
      "table": null
     },
     {
-     "heading": "What do Palantir Technologies Inc.’s last eight quarters show?",
+     "heading": "What do Palantir's last eight quarters show?",
      "paragraphs": [
       {
-       "n": 159,
+       "n": 160,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "The latest quarter confirms operating acceleration, but its net margin is not a pure measure of software economics."
+       "text": "Revenue reached $1,935.464 million from $1,003.697 million a year earlier. Operating income reached $912.004 million, and operating margin was 47.1%. Operating income is the stronger first test because it measures the software business before investment income and taxes."
       }
      ],
      "table": {
@@ -482,13 +496,24 @@
         "0.08",
         "0.03",
         "0.06"
+       ],
+       [
+        "Cash from operations",
+        "1,216,167",
+        "899,165",
+        "777,295",
+        "507,664",
+        "539,251",
+        "310,263",
+        "460,327",
+        "419,772"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What should Palantir Technologies Inc. watch in the next release?",
+     "heading": "What should I watch in Palantir's next results?",
      "paragraphs": [
       {
        "n": 232,
@@ -496,13 +521,6 @@
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
        "text": "The next quarterly report is the clearest operating checkpoint. An estimated reporting date is November 2, 2026, but Palantir must confirm it. The report will show whether revenue is keeping pace as hiring and product spending increase."
-      },
-      {
-       "n": 233,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.5 — What to watch",
-       "text": "Investors should read sales, delivery costs and customer collections together. Strong revenue with much slower cash collection would be less reassuring than growth that promptly produces cash."
       }
      ],
      "table": null
@@ -563,7 +581,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=PLTR&src=seo-earnings"
   }
  },
- "held": {
-  "dividend": "no dividend"
- }
+ "short_name": "Palantir",
+ "first_memo_date": "2026-10-10T02:14:38Z"
 }

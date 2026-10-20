@@ -1,0 +1,485 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "9888.HK",
+ "slug": "9888-hk",
+ "company": "Baidu, Inc.",
+ "exchange": "HKSE",
+ "currency": "HKD",
+ "index": "hsi",
+ "company_type": "operating_company",
+ "country": "hk",
+ "memo_date": "2026-10-16T22:12:47Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 79.45,
+ "price_date": "2026-10-16T08:08:14Z",
+ "next_earnings": "2026-11-24",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 244,
+  "tables": 26,
+  "words": 15779,
+  "sources": 199
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Baidu is a Chinese internet and artificial-intelligence company that turns attention, computing, content and transport into sales. To understand its business, follow a dollar from the customer who pays it to the chips, programmes, vehicles and people that consume it."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0317/2026031701610.pdf"
+  },
+  {
+   "title": "Annual report — FY2024",
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0328/2025032802704.pdf"
+  },
+  {
+   "title": "Annual report — FY2023",
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0315/2024031501723.pdf"
+  }
+ ],
+ "rivals": [
+  "0700.HK",
+  "GOOGL",
+  "MSFT",
+  "AMZN",
+  "NTES",
+  "3690.HK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Baidu stock forecast",
+   "meta_description": "Baidu’s weighted scenario points to a measured recovery, with AI cash generation, valuation and risks deciding the outcome.",
+   "opening": "Baidu’s weighted price is HKD85.13 at October 2027 and HKD107.94 at October 2029, including dividends. It hinges on AI Cloud growth supporting the expected 2027 operating-profit recovery while advertising remains under pressure.",
+   "closing": "The full memo also examines Baidu’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Baidu’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At October 2027, the weighted price is HKD85.13, an 8% return including dividends. At October 2028, it is HKD93.16, an 18% return. At October 2029, it reaches HKD107.94, a 37% return."
+      },
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The 2029 range is HKD36.10 to HKD212.29. Today’s reference price is HKD79.45. The base case has 52% probability, making it the central path. The bear case has 30% and the bull case 18%, so the forecast gives more weight to gradual recovery than to either collapse or a rapid rerating."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "HKD per 9888.HK share at each date; in brackets the return since today's 79.45, dividends included",
+      "caption": "What the shares could be worth (HKD per 9888.HK share at each date; in brackets the return since today's 79.45, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "58.78 (-26 %)",
+        "44.92 (-43 %)",
+        "36.10 (-55 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "89.34 (+13 %)",
+        "99.26 (+26 %)",
+        "113.26 (+44 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "116.88 (+48 %)",
+        "155.97 (+98 %)",
+        "212.29 (+171 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "85.13 (+8 %)",
+        "93.16 (+18 %)",
+        "107.94 (+37 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Baidu?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path assumes AI Cloud growth supports the expected 2027 operating-profit recovery, but that investment limits margin expansion. AI Cloud Infra revenue grew 50% year over year in Q2 2026, while online marketing revenue fell 19%; management expects cloud growth to continue but says marketing remains under pressure. The bear case gives greater weight to the 31% EBITDA fall in 2025 and the cash gap created by investment. The bull case requires paid workloads, better cloud margins and stable search monetization, which remain unproven."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Baidu really make?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation adds another ownership cost. Employees receive shares instead of cash, so current cash is preserved, but existing shareholders receive a smaller claim on future profits unless the company buys back shares to offset the dilution. A specialist therefore examines both reported free cash flow and a measure that deducts stock pay. AI infrastructure and Apollo Go also require spending whose maintenance and expansion components are not yet separately clear."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "RMB millions",
+      "caption": "Follow the money: real free cash flow (RMB millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "-3,013",
+        "21,234",
+        "36,615",
+        "26,170",
+        "20,122"
+       ],
+       [
+        "− Capital spending",
+        "13,417",
+        "8,259",
+        "11,295",
+        "8,393",
+        "11,240"
+       ],
+       [
+        "**= Free cash flow**",
+        "",
+        "12,975",
+        "25,320",
+        "17,777",
+        "8,882"
+       ],
+       [
+        "− Stock pay",
+        "3,605",
+        "4,784",
+        "6,345",
+        "6,788",
+        "7,056"
+       ],
+       [
+        "**= Real free cash flow**",
+        "",
+        "8,191",
+        "18,975",
+        "10,989",
+        "1,826"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "",
+        "6.2%",
+        "14.1%",
+        "8.9%",
+        "1.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Baidu today?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Book value offers another warning. A 0.7x price-to-book ratio means the market price is below recorded net assets, but research, software and user relationships created inside the company may have been expensed rather than recorded as assets. The discount is therefore not automatically a bargain. A 0.0% dividend yield also shows that financial assets are not yet an established income stream."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "HK$ millions; per share in HK$",
+      "caption": "What an investor pays today (HK$ millions; per share in HK$)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "79.45"
+       ],
+       [
+        "Market value (calculated)",
+        "217,181.461016"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "146,085.568816"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.0x"
+       ],
+       [
+        "Price to book (calculated)",
+        "0.7x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The whole-business value is lower than the stock-market value because the company has more cash and short-term investments than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, HKD",
+     "value": "79.45"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "107.94 (+37 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.0x"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 67.68669323791839,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "58.78 (-26 %)",
+       "44.92 (-43 %)",
+       "36.10 (-55 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "89.34 (+13 %)",
+       "99.26 (+26 %)",
+       "113.26 (+44 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "116.88 (+48 %)",
+       "155.97 (+98 %)",
+       "212.29 (+171 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "85.13 (+8 %)",
+       "93.16 (+18 %)",
+       "107.94 (+37 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/9888-hk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=9888.HK&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Baidu earnings: guidance and what to watch",
+   "meta_description": "Baidu's next results are expected on November 24, 2026; guidance points to AI Cloud growth, persistent advertising pressure and cash conversion.",
+   "opening": "Baidu's next results are expected on November 24, 2026. Baidu's key test is whether AI Cloud growth is becoming cash generation.",
+   "closing": "The full Baidu memo also answers questions about its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Baidu guided for the year?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Baidu’s promise is clear about direction but vague about the finish line. Its AI Cloud business, which rents computing capacity to customers, expects strong growth in the second half of 2026 and room to accelerate. Management says that growth should come from both new customers and larger commitments by existing ones."
+      },
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Advertising is moving in the opposite direction. Baidu expects pressure to persist because chatbots and social platforms compete for attention, while its new AI search experience deliberately limits advertising until the product becomes more useful."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Has Baidu kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Baidu completed the Hong Kong listing on September 1, 2026, after management had said completion was expected within the year. Its US$5 billion buyback authorization through 2028 is different: it permits repurchases but does not require management to spend the full amount. The dividend policy similarly allows possible distributions rather than promising a fixed payment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Baidu's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "The June 2026 quarter showed better operating cash collection, but continued revenue pressure and a much heavier investment bill."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "RMB millions; per share in RMB",
+      "caption": "The last eight reported periods (RMB millions; per share in RMB)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "31,325",
+        "32,075",
+        "32,740",
+        "31,174",
+        "32,713",
+        "32,452",
+        "34,124",
+        "33,557"
+       ],
+       [
+        "Gross margin",
+        "39.0%",
+        "38.9%",
+        "44.2%",
+        "41.2%",
+        "43.9%",
+        "46.1%",
+        "47.2%",
+        "51.1%"
+       ],
+       [
+        "Operating income",
+        "3,024",
+        "3,193",
+        "1,483",
+        "-15,091",
+        "3,277",
+        "4,508",
+        "3,917",
+        "5,925"
+       ],
+       [
+        "Net income",
+        "2,319",
+        "3,445",
+        "1,782",
+        "-11,232",
+        "7,322",
+        "7,717",
+        "5,192",
+        "7,632"
+       ],
+       [
+        "**= Free cash flow**",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "23",
+        "2,634"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Baidu watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results should show whether AI Cloud growth is becoming cash generation. Investors should read cloud revenue, advertising income and operating cash flow together: faster cloud sales will be less reassuring if equipment spending accelerates even faster."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 24, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/9888-hk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=9888.HK&src=seo-earnings"
+  }
+ },
+ "short_name": "Baidu",
+ "first_memo_date": "2026-10-16T22:12:47Z"
+}

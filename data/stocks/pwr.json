@@ -1,0 +1,801 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PWR",
+ "slug": "pwr",
+ "company": "Quanta Services, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T20:18:57Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 642.45,
+ "price_date": "2026-10-15T19:13:16Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 267,
+  "tables": 27,
+  "words": 17175,
+  "sources": 195
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Quanta Services is a contractor that builds, repairs and maintains the infrastructure behind electricity, gas and communications. Its revenue comes from carrying out that work for infrastructure owners and developers, while its profit depends on delivering each job for less than it costs."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050915/000105091526000006/pwr-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526058069/d101511dex991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1050915/000119312525030081/d893759dex991.htm"
+  }
+ ],
+ "rivals": [
+  "MTZ",
+  "PRIM",
+  "MYRG",
+  "DY",
+  "EME",
+  "STRL",
+  "GVA",
+  "ECG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Quanta stock forecast",
+   "meta_description": "Quanta stock forecast: scenario prices, operating drivers, cash generation and valuation in plain English.",
+   "opening": "Quanta's weighted price is $389.40 in October 2027 and $461.84 in October 2029. It hinges on backlog converting into profitable work without fixed-price overruns, delayed starts or weaker collections.",
+   "closing": "The full memo also explains Quanta's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Quanta's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted price is $389.40 in October 2027, a 39% loss. It is $461.84 in October 2029, a 28% loss including dividends. The bear case carries 35% probability; the base case carries 50%. The bull case carries 15%."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast points to a negative expected return at every date. In October 2027, the weighted price is $389.40, a 39% loss including dividends. It is $424.23 in October 2028, a 34% loss. By October 2029 it is $461.84, a 28% loss. The final-date range runs from $224.08 in the bear case to $885.13 in the bull case, against today’s $642.45."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 642.45, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 642.45, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "35%",
+        "259.16 (-60%)",
+        "228.90 (-64%)",
+        "224.08 (-65%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "432.61 (-33%)",
+        "472.51 (-26%)",
+        "501.27 (-22%)"
+       ],
+       [
+        "Bull",
+        "15%",
+        "549.30 (-14%)",
+        "719.04 (+12%)",
+        "885.13 (+38%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "389.40 (-39%)",
+        "424.23 (-34%)",
+        "461.84 (-28%)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of all three cases, so it is not a prediction that the share price will actually equal that number."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Quanta?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear row falls to $1,596 million in the second year before ending at $1,653 million. It reflects slower MSA conversion and fixed-price cost pressure. MSAs represented 41% of backlog, and customers were generally not committed to specific volumes. Fixed-price work represented 60.6% of 2025 revenue. The bull row reaches $2,862 million and then $3,360 million because grid, utility and data-center demand converts faster, crews remain productive and margins improve beyond guidance. Backlog was approximately $53.4 billion, with RPO of approximately $33.6 billion."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Quanta really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Quanta’s own free-cash-flow measure was 1,672,732 because it counted proceeds from equipment sales. Deducting stock pay of 181,947 produces a stricter ownership-cost measure. Stock compensation is not a current cash outflow, but it transfers value from existing shareholders to employees."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,229,970",
+        "2,081,196",
+        "1,575,952",
+        "1,130,312",
+        "582,390"
+       ],
+       [
+        "− Capital spending",
+        "609,154",
+        "604,078",
+        "434,803",
+        "428,782",
+        "386,719"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,620,816",
+        "1,477,118",
+        "1,141,149",
+        "701,530",
+        "195,671"
+       ],
+       [
+        "− Stock pay",
+        "181,947",
+        "150,526",
+        "126,762",
+        "105,600",
+        "88,259"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,438,869",
+        "1,326,592",
+        "1,014,387",
+        "595,930",
+        "107,412"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.1%",
+        "5.6%",
+        "4.9%",
+        "3.5%",
+        "0.8%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it adds equipment-sale and insurance money and leaves out some intangible-asset purchases that our count includes."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Quanta today?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Dividing the share price by the trailing and forward P/Es implies about $8.73 of trailing earnings per share and $19.71 of expected earnings. That expected figure is about 2.26 times the trailing figure. If both used identical accounting, the comparison would suggest more than a doubling of earnings, but Quanta’s reported and adjusted profits show why that conclusion needs care."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "642.45"
+       ],
+       [
+        "Market value (calculated)",
+        "96,588,112.833"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "102,186,565.833"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "73.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "32.6x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.5%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number is much lower because it uses analysts’ expected profit, not profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "642.45"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "461.84 (-28%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "32.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 642.45,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "35%",
+      "values": [
+       "259.16 (-60%)",
+       "228.90 (-64%)",
+       "224.08 (-65%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "432.61 (-33%)",
+       "472.51 (-26%)",
+       "501.27 (-22%)"
+      ]
+     },
+     "Bull": {
+      "probability": "15%",
+      "values": [
+       "549.30 (-14%)",
+       "719.04 (+12%)",
+       "885.13 (+38%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "389.40 (-39%)",
+       "424.23 (-34%)",
+       "461.84 (-28%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pwr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PWR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Quanta dividend",
+   "meta_description": "Quanta pays $0.44 per share on the latest annualized rate; its dividend is small relative to forecast free cash flow, with risks from cash demands.",
+   "opening": "Quanta's latest annualized dividend rate is $0.44 per share, up from $0.25 in 2021 to $0.41 in 2025. Quanta's dividend is small relative to forecast free cash flow, although cash also goes to equipment, acquisitions and other uses.",
+   "closing": "The full memo also explains Quanta's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Quanta pay in dividends over the years shown?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends per share are $0.48 in the first year, $0.53 in the second and $0.58 in the third. The path continues recent increases from $0.25 in 2021 to $0.41 in 2025, while the latest annualized rate is $0.44. The bear case holds at $0.44 each year as cash goes to debt, equipment and acquisitions. The bull case reaches $0.68 through faster increases, supported by the dividend’s small cash burden relative to forecast free cash flow."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "0.40",
+        "0.36",
+        "0.32",
+        "0.28",
+        "0.23"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.89",
+        "0.00",
+        "0.00",
+        "0.86",
+        "0.46"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "9.29",
+        "9.34",
+        "7.28",
+        "3.53",
+        "0.61"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Quanta's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The cash record shows the priority clearly: Quanta reinvested heavily. In 2025, acquisition cash spending exceeded free cash flow retained after minority distributions, dividends and buybacks, so debt and shares supplied the difference. Shares issued to sellers avoid an immediate cash payment but give those sellers a claim on future earnings."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was 2,229,970 in 2025. Capital spending was 609,154, leaving conservative free cash flow of 1,620,816. EBITDA is therefore not cash available to owners: Quanta must keep buying trucks, machinery, facilities and other equipment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,620,816",
+        "1,477,118",
+        "1,141,149",
+        "701,530",
+        "195,671"
+       ],
+       [
+        "− Dividends paid",
+        "60,416",
+        "54,196",
+        "47,752",
+        "41,058",
+        "34,022"
+       ],
+       [
+        "− Share buybacks",
+        "134,555",
+        "0",
+        "350",
+        "127,762",
+        "66,687"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,405,819",
+        "1,401,335",
+        "1,082,806",
+        "522,764",
+        "88,605"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Quanta's dividend?",
+     "paragraphs": [
+      {
+       "n": 266,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case in 2027–2028 if MSA delays or cancellations reduced conversion. In 2027–2029, fixed-price cost overruns, estimate revisions or weaker collections would lower margins and free cash flow. Rising net debt combined with a lower P/E would reinforce the move."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,112 (1,640 / 2,300)",
+        "2,400 (1,596 / 2,862)",
+        "2,652 (1,653 / 3,360)"
+       ],
+       [
+        "Shares (millions)",
+        "151 (152 / 151)",
+        "152 (153 / 151)",
+        "153 (155 / 152)"
+       ],
+       [
+        "Dividends per share",
+        "0.48 (0.44 / 0.51)",
+        "0.53 (0.44 / 0.59)",
+        "0.58 (0.44 / 0.68)"
+       ],
+       [
+        "Price to earnings",
+        "31.00 (24.00 / 36.00)",
+        "30.00 (22.00 / 38.00)",
+        "29.00 (21.00 / 40.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Quanta's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 192,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Enterprise value divided by revenue measures the operating business against its sales, before asking how much becomes profit. Free cash flow means operating cash after capital spending, while the dividend yield shows the small portion distributed directly to shareholders. Together, these measures say that the investment depends mainly on profitable expansion."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.40"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.23",
+      "0.28",
+      "0.32",
+      "0.36",
+      "0.40"
+     ],
+     "Real free cash flow per share": [
+      "0.74",
+      "4.03",
+      "6.82",
+      "8.84",
+      "9.51"
+     ],
+     "Free cash flow per share": [
+      "1.35",
+      "4.74",
+      "7.67",
+      "9.84",
+      "10.71"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pwr/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PWR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Quanta earnings: date, guidance and results",
+   "meta_description": "Quanta reports on October 29, 2026; its guidance covers revenue and adjusted and ordinary diluted earnings per share.",
+   "opening": "Quanta's next results are expected on October 29, 2026. Watch whether stronger revenue becomes cash through customer collections.",
+   "closing": "The full memo also explains Quanta’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Quanta guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On July 30, 2026, management raised its 2026 revenue guidance to US$39,300,000–39,700,000 thousand. It set adjusted diluted earnings per share at $16.45–$16.95. “Diluted” includes shares that could be issued through employee awards and similar arrangements."
+      },
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Quanta also provides ordinary accounting guidance of $11.41–$11.92 per diluted share. Its adjusted figure removes selected costs, including amortization and stock-based compensation. Amortization records the cost of acquired intangible assets over time; stock compensation pays employees with shares. Removing those items can make operating comparisons clearer, but neither cost disappears economically. The cash test therefore matters more than the adjusted label alone."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenues",
+        "Year to Dec 2026",
+        "39,300,000",
+        "39,700,000",
+        "2026-07-30"
+       ],
+       [
+        "Diluted earnings per share attributable to common stock",
+        "Year to Dec 2026",
+        "11.41",
+        "11.92",
+        "2026-07-30"
+       ],
+       [
+        "Adjusted diluted earnings per share",
+        "Year to Dec 2026",
+        "16.45",
+        "16.95",
+        "2026-07-30"
+       ]
+      ],
+      "note": "The low and high figures are the company’s forecast range for the full year, not its actual results."
+     }
+    },
+    {
+     "heading": "Did Quanta keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management forecast adjusted EPS of $9.90–$10.50 for 2025. The full-year adjusted result was $10.75. Earnings under generally accepted accounting rules, or GAAP, were $6.80 per share. The forecast and adjusted result are comparable because they use the same measure, but GAAP remains essential to the wider judgment."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Quanta's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 showed genuine operating improvement, alongside unusually strong cash collection."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "9,556,997",
+        "7,874,787",
+        "7,841,948",
+        "7,631,408",
+        "6,773,007",
+        "6,233,334",
+        "6,553,422",
+        "6,493,167"
+       ],
+       [
+        "Operating income",
+        "694,834",
+        "338,779",
+        "484,929",
+        "517,217",
+        "370,282",
+        "239,081",
+        "452,723",
+        "431,161"
+       ],
+       [
+        "Net income",
+        "451,381",
+        "220,625",
+        "315,450",
+        "339,420",
+        "229,250",
+        "144,258",
+        "305,120",
+        "293,185"
+       ],
+       [
+        "EPS, diluted",
+        "2.96",
+        "1.45",
+        "2.08",
+        "2.24",
+        "1.52",
+        "0.96",
+        "2.03",
+        "1.95"
+       ]
+      ],
+      "note": "The numbers are for each three-month period, even though the descriptions say “year,” so do not treat each column as a full year."
+     }
+    },
+    {
+     "heading": "What should I watch in Quanta's next results?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "October 29, 2026 is the next scheduled checkpoint, when Quanta will release third-quarter results before the market opens and hold its call at 9 a.m. Eastern. Investors should compare the results with the higher outlook, then examine customer collections and remaining capital spending. Revenue growth with slower payments would put more pressure on financing than the earnings headline suggests."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "9,556,997"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.96"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,493,167",
+      "6,553,422",
+      "6,233,334",
+      "6,773,007",
+      "7,631,408",
+      "7,841,948",
+      "7,874,787",
+      "9,556,997"
+     ],
+     "EPS, diluted": [
+      "1.95",
+      "2.03",
+      "0.96",
+      "1.52",
+      "2.24",
+      "2.08",
+      "1.45",
+      "2.96"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/pwr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PWR&src=seo-earnings"
+  }
+ },
+ "short_name": "Quanta",
+ "first_memo_date": "2026-10-15T20:18:57Z"
+}

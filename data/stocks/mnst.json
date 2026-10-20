@@ -1,0 +1,525 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MNST",
+ "slug": "mnst",
+ "company": "Monster Beverage Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T13:15:00Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 45.34,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 26,
+  "words": 16038,
+  "sources": 179
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Monster Beverage is a branded-drink company whose best-known product is an energy drink in a can. Its business becomes clear when we follow that can from recipe and factory to bottler, store, shopper, and income statement."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465926020831/mnst-20251231x10k.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000141057825000248/mnst-20241231x10k.htm"
+  },
+  {
+   "title": "2023 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/865752/000110465924029425/mnst-20231231x10k.htm"
+  }
+ ],
+ "rivals": [
+  "PEP",
+  "KO",
+  "CELH",
+  "KDP"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Monster stock forecast",
+   "meta_description": "Monster’s weighted forecast, cash generation and valuation depend on repeat demand, revenue per case and cost control.",
+   "opening": "Monster’s weighted scenario is $44.85 in October 2027. It hinges on repeat demand, revenue retained per case, and cost control.",
+   "closing": "The full Monster memo also examines its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Monster’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Monster’s most likely path is modest appreciation, but the outcomes spread widely. The weighted price is $44.85 in October 2027, a 1% decline including dividends. October 2028 is $47.47, a 5% return. October 2029 is $50.10, an 11% return."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case has a 25% probability. The base case has a 55% probability. The bull case has a 20% probability. The base assumes earnings growth, historically near margins, and a declining P/E. The bull needs stronger repeat buying and operating leverage. The bear combines weaker growth, lower margins, and multiple compression."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 45.34, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 45.34, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "33.02 (-27 %)",
+        "30.60 (-33 %)",
+        "27.70 (-39 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "45.91 (+1 %)",
+        "47.47 (+5 %)",
+        "48.48 (+7 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "56.76 (+25 %)",
+        "68.56 (+51 %)",
+        "82.57 (+82 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "44.85 (-1 %)",
+        "47.47 (+5 %)",
+        "50.10 (+11 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate likely outcome."
+     }
+    },
+    {
+     "heading": "How much cash does Monster really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Profit records sales and expenses when accounting rules require; cash flow records when money arrives or leaves. In 2025, Monster produced 2,098,177 of operating cash and spent 157,529 on property and intangibles, leaving free cash flow of 1,940,648. That slightly exceeded net income of 1,905,432."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,098,177",
+        "1,928,533",
+        "1,717,753",
+        "887,699",
+        "1,155,741"
+       ],
+       [
+        "− Capital spending",
+        "157,529",
+        "306,434",
+        "234,724",
+        "212,153",
+        "57,453"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,940,648",
+        "1,622,099",
+        "1,483,029",
+        "675,546",
+        "1,098,288"
+       ],
+       [
+        "− Stock pay",
+        "125,687",
+        "90,985",
+        "68,836",
+        "64,109",
+        "70,483"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,814,961",
+        "1,531,114",
+        "1,414,193",
+        "611,437",
+        "1,027,805"
+       ]
+      ],
+      "note": "Stock pay uses no cash today, but it gives employees part of the company, so we subtract its value to show what is really left for existing shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Monster today?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A P/E of 41.6 means investors pay $41.60 for each dollar of Monster’s recent annual earnings. At $45.34, that implies earnings of about $1.09 per share. The forward P/E of 34.6 implies roughly $1.31 in future earnings, or about 20% growth. If Monster merely delivers that expectation, the shares may not rise; investors need better results or higher expectations."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "45.34"
+       ],
+       [
+        "Market value (calculated)",
+        "88,823,407"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "85,409,289"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "41.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "34.6x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.0%"
+       ]
+      ],
+      "note": "The share price is labeled October 16, but it actually uses the market's closing price from October 15."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "45.34"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "50.10 (+11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "34.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 45.34,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "33.02 (-27 %)",
+       "30.60 (-33 %)",
+       "27.70 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "45.91 (+1 %)",
+       "47.47 (+5 %)",
+       "48.48 (+7 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "56.76 (+25 %)",
+       "68.56 (+51 %)",
+       "82.57 (+82 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "44.85 (-1 %)",
+       "47.47 (+5 %)",
+       "50.10 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mnst/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MNST&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Monster earnings date and guidance",
+   "meta_description": "Monster's next results are expected November 5, 2026; watch realized pricing and repeat demand.",
+   "opening": "Monster's next results are expected on November 5, 2026. Watch whether Monster's Q4 pricing reaches realized revenue after discounts.",
+   "closing": "The full memo also answers how Monster's business works, who its rivals are, how its management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Monster guided for capital spending?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The clearest commitment is capital expenditure, or capex: money spent on assets that serve the business for years. Monster’s August 6, 2026 guidance sets a ceiling of US$250,000 thousand for the 12 months to June 2027, excluding share repurchases. It may spend less. The planning window now reaches six months beyond the period described in the annual report, but that does not prove that projects slipped. Monster may simply have refreshed or spread its plans."
+      },
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also plans selective U.S. price increases in the fourth quarter of 2026, alongside new products and marketing. Those are actions Monster can begin. Their results depend on retailers, distributors and consumers. A higher invoice price helps only if promotions do not give it back and shoppers keep buying."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "capital expenditures (exclusive of common stock repurchases)",
+        "12 months to Jun 2027",
+        "250,000",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The company expects capital spending to stay below 250 million United States dollars over the 12 months ending in June 2027, which is not necessarily its fiscal year."
+     }
+    },
+    {
+     "heading": "Has Monster made progress on its product innovation promise?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also promised growth through product innovation. At its December 2025 investor meeting, it presented innovation as a future-growth driver. On the August 2026 results call, Schlosberg said staggered launches improved execution; second-quarter sales rose 20.2%. That supports the direction, but does not isolate innovation from pricing, currency or category growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Monster's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The second quarter of 2026 sustained strong sales growth, but higher selling and distribution costs prevented profit from keeping pace."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,537,473",
+        "2,353,291",
+        "2,131,053",
+        "2,197,139",
+        "2,111,593",
+        "1,854,558",
+        "1,812,041",
+        "1,880,973"
+       ],
+       [
+        "Gross margin",
+        "55.9%",
+        "55.0%",
+        "55.5%",
+        "55.7%",
+        "55.7%",
+        "56.5%",
+        "55.3%",
+        "53.2%"
+       ],
+       [
+        "Operating income",
+        "740,442",
+        "729,958",
+        "542,634",
+        "675,352",
+        "631,622",
+        "569,745",
+        "381,224",
+        "479,916"
+       ],
+       [
+        "Net income",
+        "584,540",
+        "569,485",
+        "449,190",
+        "524,455",
+        "488,794",
+        "442,993",
+        "270,711",
+        "370,919"
+       ],
+       [
+        "EPS, diluted",
+        "0.30",
+        "0.29",
+        "0.23",
+        "0.27",
+        "0.25",
+        "0.23",
+        "0.14",
+        "0.19"
+       ]
+      ],
+      "note": "The company's published per-share profit for June 2026 and June 2025 is adjusted for the share split, while we halved the other quarters' reported figures so all quarters use the same basis."
+     }
+    },
+    {
+     "heading": "What should I watch in Monster's next results?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "MarketBeat estimates November 5, 2026 for Q3 results, but Monster has not confirmed that date. Management estimated July sales growth of 13.9% excluding alcohol and adjusting for currency, below Q2’s comparable 18.5%. One month is not a trend. Investors should examine Q4 pricing by asking how much reaches realized revenue after discounts, whether unit sales hold and whether the increase offsets aluminum and freight pressure."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "2,537,473"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.30"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,880,973",
+      "1,812,041",
+      "1,854,558",
+      "2,111,593",
+      "2,197,139",
+      "2,131,053",
+      "2,353,291",
+      "2,537,473"
+     ],
+     "EPS, diluted": [
+      "0.19",
+      "0.14",
+      "0.23",
+      "0.25",
+      "0.27",
+      "0.23",
+      "0.29",
+      "0.30"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mnst/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MNST&src=seo-earnings"
+  }
+ },
+ "short_name": "Monster",
+ "first_memo_date": "2026-10-16T13:15:00Z"
+}

@@ -1,0 +1,836 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BAC",
+ "slug": "bac",
+ "company": "Bank of America Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "bank",
+ "country": "us",
+ "memo_date": "2026-10-15T01:34:27Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 51.39,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2027-01-15",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 29,
+  "words": 18638,
+  "sources": 272
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Bank of America is a financial-services company that sells access to money, credit, investment help and financial tools for businesses and investors. Its business becomes clear when you follow a dollar: a customer supplies funds or pays a fee, the bank puts that money to work, pays the costs of its promises and keeps what remains."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000157/bac-20251231.htm"
+  },
+  {
+   "title": "Annual report, Consumer Lending",
+   "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-25-000139/bac-20241231.htm"
+  },
+  {
+   "title": "BAC 2025 supplemental information",
+   "url": "https://investor.bankofamerica.com/regulatory-and-other-filings/select-sec-filings/content/0000070858-26-000020/bac-12312025ex993.htm"
+  }
+ ],
+ "rivals": [
+  "WFC",
+  "JPM",
+  "C",
+  "GS",
+  "MS",
+  "PNC",
+  "USB",
+  "TFC",
+  "COF",
+  "BNY",
+  "STT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Bank of America stock forecast",
+   "meta_description": "Bank of America’s weighted forecast is $53.27 in October 2027 and $61.55 in October 2029 across bear, base and bull cases.",
+   "opening": "Bank of America’s weighted forecast is $53.27 in October 2027 and $61.55 in October 2029. The case hinges on whether NII growth survives deposit pressure, compliance costs and capital demands.",
+   "closing": "The full Bank of America memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Bank of America’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $53.27 in October 2027, a 6% return with dividends. It rises to $56.71 in October 2028, a 16% return with dividends. By October 2029, it reaches $61.55, a 28% return with dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 51.39, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 51.39, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "45.09 (-10 %)",
+        "42.24 (-13 %)",
+        "41.80 (-11 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "54.66 (+9 %)",
+        "59.18 (+21 %)",
+        "64.48 (+34 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "62.08 (+24 %)",
+        "72.23 (+46 %)",
+        "83.83 (+72 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "53.27 (+6 %)",
+        "56.71 (+16 %)",
+        "61.55 (+28 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for Bank of America’s base, bear and bull cases?",
+     "paragraphs": [
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The base case carries 50% probability. Bear and bull cases carry 30% and 20%, respectively. Q4 2026 tests whether the NII outlook holds and operating leverage turns positive; weaker asset repricing or higher deposit costs would pressure the case. The scheduled surcharge increase on January 1, 2027 could constrain buybacks. The stress capital buffer—extra capital required by stress tests—is fixed through September 30, 2027. Sustained wealth flows, improving efficiency and technology productivity support the base or bull cases; persistent compliance costs or weaker credit shift the outlook toward the bear case."
+      }
+     ],
+     "table": {
+      "title": "How it earns, and what can hurt it",
+      "unit": "US$ millions",
+      "caption": "How it earns, and what can hurt it (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "6.8%",
+        "3.0%",
+        "8.2%",
+        "6.6%",
+        "4.2%"
+       ],
+       [
+        "Net interest margin",
+        "2.0%",
+        "2.0%",
+        "2.1%",
+        "2.0%",
+        "1.7%"
+       ],
+       [
+        "Efficiency ratio (lower is leaner)",
+        "61.7%",
+        "63.1%",
+        "64.1%",
+        "64.7%",
+        "67.0%"
+       ],
+       [
+        "Charged to profit for bad loans",
+        "5,675",
+        "5,821",
+        "4,394",
+        "2,543",
+        ""
+       ],
+       [
+        "Return on equity",
+        "10.6%",
+        "9.5%",
+        "9.7%",
+        "10.8%",
+        "12.2%"
+       ],
+       [
+        "CET1 capital ratio",
+        "11.4%",
+        "11.9%",
+        "11.8%",
+        "11.2%",
+        "10.6%"
+       ]
+      ],
+      "note": "The company's adjusted return on equity can be higher because it removes certain unusual costs, so it is not the standard profit measure."
+     }
+    },
+    {
+     "heading": "How much cash does Bank of America really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and liquidity",
+       "text": "The gap is not an immediate cash bill if BAC holds the securities until repayment. But selling under pressure would crystallize the discount, while holding the assets leaves money tied up at older yields. Operating cash flow also cannot be treated as cash available to shareholders, because loans, securities, collateral and compliance continue to absorb funds."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.81",
+        "3.19",
+        "3.05",
+        "3.19",
+        "3.57"
+       ],
+       [
+        "− Dividends, per share",
+        "1.05",
+        "0.99",
+        "0.91",
+        "0.85",
+        "0.77"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.79",
+        "1.65",
+        "0.57",
+        "0.62",
+        "2.94"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "0.56",
+        "1.57",
+        "1.71",
+        ""
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.06",
+        "",
+        "",
+        "",
+        "0.13"
+       ]
+      ],
+      "note": "The 2025 figures do not add up exactly because earnings per share includes assumed preferred shares, while the payout calculation uses only profit belonging to common shareholders."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Bank of America today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Bank of America’s stock price is a bet on what its capital can earn in the future. At $51.39 on October 15, 2026, the market is asking whether a recent setback is temporary and whether the bank can keep producing returns strong enough to justify paying above tangible book."
+      },
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A P/E ratio says how much investors pay for each dollar of earnings, not how quickly an investment will be recovered. The trailing multiple implies about $4.21 of recent earnings per share. The forward multiple implies about $4.55, so it looks cheaper only because analysts expect earnings to recover; that forecast can be wrong."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "51.39"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "61.55 (+28 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.2x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 51.39,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "45.09 (-10 %)",
+       "42.24 (-13 %)",
+       "41.80 (-11 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "54.66 (+9 %)",
+       "59.18 (+21 %)",
+       "64.48 (+34 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "62.08 (+24 %)",
+       "72.23 (+46 %)",
+       "83.83 (+72 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "53.27 (+6 %)",
+       "56.71 (+16 %)",
+       "61.55 (+28 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bac/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BAC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Bank of America dividend",
+   "meta_description": "Bank of America’s dividend history, payout coverage, risks, yield and forecast in plain English.",
+   "opening": "Bank of America pays a quarterly dividend of $0.32 per share. In 2025, dividends and buybacks exceeded earnings, so the dividend was not fully covered by earnings that year.",
+   "closing": "The full memo also explains Bank of America’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Bank of America pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The board authorized $40 billion of additional repurchases in 2025, while the quarterly dividend rose to $0.32 in 2026. An authorization is permission, not a promise to spend. In the third quarter of 2026, Bank of America reported 10.9 percent CET1 capital against a 10 percent minimum, leaving limited room above the regulatory floor."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.81",
+        "3.19",
+        "3.05",
+        "3.19",
+        "3.57"
+       ],
+       [
+        "− Dividends, per share",
+        "1.05",
+        "0.99",
+        "0.91",
+        "0.85",
+        "0.77"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.79",
+        "1.65",
+        "0.57",
+        "0.62",
+        "2.94"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "0.56",
+        "1.57",
+        "1.71",
+        ""
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.06",
+        "",
+        "",
+        "",
+        "0.13"
+       ]
+      ],
+      "note": "The 2025 figures do not add up exactly because earnings per share includes assumed preferred shares, while the payout calculation uses only profit belonging to common shareholders."
+     }
+    },
+    {
+     "heading": "Does Bank of America’s dividend have earnings coverage?",
+     "paragraphs": [
+      {
+       "n": 77,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "The healthier decision came after earnings improved: return money only after rebuilding the cushion. In 2025, earnings for common shareholders were $29,055 million, against $8,083 million of dividends and $21,433 million of buybacks. The share count fell from 8,558.4 million in 2021 to 7,680.9 million in 2025, so profits were divided among fewer shares. But distributions exceeded 2025 earnings, which cannot continue indefinitely without reducing capital."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "29,055",
+        "25,344",
+        "24,656",
+        "26,015",
+        "30,557"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "8,083",
+        "7,822",
+        "7,374",
+        "6,963",
+        "6,575"
+       ],
+       [
+        "− Share buybacks",
+        "21,433",
+        "13,104",
+        "4,576",
+        "5,073",
+        "25,126"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "4,418",
+        "12,706",
+        "13,979",
+        ""
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "461",
+        "",
+        "",
+        "",
+        "1,144"
+       ]
+      ],
+      "note": "The company's dividend payout ratio is lower because it counts only dividends, while our paid-out percentage also counts share buybacks."
+     }
+    },
+    {
+     "heading": "What could change Bank of America’s dividend?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case from $1.36 per share to $1.44 and then $1.52. The first figure is close to the 30% payout applied to forward earnings. The bear case holds at $1.28 before falling to $1.20, while the bull case rises from $1.40 to $1.56 and then $1.72. The bear path reflects the 10.9% CET1 ratio and higher capital demands; the bull path assumes stronger earnings absorb them."
+      },
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The January 1, 2027 surcharge increase would push the forecast toward the bear case if it limits buybacks or delays dividend growth. Conversely, capital generation that preserves distributions would support the base case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "280,753 (280,753 / 279,753)",
+        "289,253 (287,253 / 287,753)",
+        "298,253 (297,253 / 296,753)"
+       ],
+       [
+        "Dividends per share",
+        "1.36 (1.28 / 1.40)",
+        "1.44 (1.20 / 1.56)",
+        "1.52 (1.20 / 1.72)"
+       ],
+       [
+        "Price to book value",
+        "1.30 (1.10 / 1.45)",
+        "1.32 (1.00 / 1.55)",
+        "1.35 (0.95 / 1.65)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Bank of America’s dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Bank of America’s stock price is a bet on what its capital can earn in the future. At $51.39 on October 15, 2026, the market is asking whether a recent setback is temporary and whether the bank can keep producing returns strong enough to justify paying above tangible book."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "6.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/bac/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BAC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Bank of America earnings date and guidance",
+   "meta_description": "Bank of America’s next results are expected January 15, 2027, with guidance for net interest income growth and a focus on compliance costs and capital.",
+   "opening": "Bank of America’s next results are expected on January 15, 2027. Bank of America’s key watch is whether earnings growth survives higher compliance costs and tighter capital requirements.",
+   "closing": "The full memo also answers how Bank of America makes money, who its rivals are, how its management works, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Bank of America guided for?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Bank of America reaffirmed full-year NII growth near the top of its 6.0%–8.0% range and introduced an expectation of at least 8% growth in 2027. Its destination is 12.0% EPS growth and a 16.0%–18.0% return on tangible common equity. Buybacks can lift EPS and that return by reducing the number of shares and the equity base, so investors must separate operating improvement from denominator management. Compliance costs will test that distinction."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Deposit growth",
+        "Medium term",
+        "4.0%",
+        "",
+        "Nov 5, 2025"
+       ],
+       [
+        "Loan growth",
+        "Medium term",
+        "5.0%",
+        "",
+        "Nov 5, 2025"
+       ],
+       [
+        "EPS growth",
+        "Medium term",
+        "12.0%",
+        "",
+        "Nov 5, 2025"
+       ],
+       [
+        "ROTCE",
+        "Medium term",
+        "16.0%",
+        "18.0%",
+        "Nov 5, 2025"
+       ],
+       [
+        "NII growth",
+        "Fiscal 2026",
+        "6.0%",
+        "8.0%",
+        "Jul 14, 2026"
+       ]
+      ],
+      "note": "A target such as 500 for pretax margin improvement means 5 percentage points, not 500 million dollars."
+     }
+    },
+    {
+     "heading": "Has Bank of America kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 106,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is also a completed test: the 2023 performance units paid 100% after their performance period ended in 2025. The rules did not remove litigation, fines or penalties from the calculation, which matters because shareholders bear those costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does Bank of America’s recent revenue and profit trend show?",
+     "paragraphs": [
+      {
+       "n": 117,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue rose across 2021–2025, driven mainly by net interest income. But that income dipped in 2024 before recovering. Loan balances, deposit pricing, market rates and the replacement of older assets with higher-yielding ones all matter. Investment and brokerage income also benefited from stronger markets and new client assets, which are different from growth caused by larger loan balances."
+      },
+      {
+       "n": 118,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Profit tells a weaker story. Net income in 2025 was below its 2021 level because 2021 benefited from a large credit-loss release, while 2025 absorbed substantial provisions. EPS nevertheless rose because fewer shares divided the result. If fewer people share the same pot, each remaining person receives more; that does not make the pot larger."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "29,958",
+        "31,558",
+        "30,272",
+        "28,367",
+        "29,040",
+        "27,443",
+        "28,247",
+        "26,475"
+       ],
+       [
+        "Net interest income",
+        "16,449",
+        "15,997",
+        "15,745",
+        "15,750",
+        "15,233",
+        "14,670",
+        "14,443",
+        "14,359"
+       ],
+       [
+        "Net income",
+        "6,933",
+        "9,074",
+        "8,584",
+        "7,647",
+        "8,332",
+        "7,170",
+        "7,360",
+        "6,806"
+       ],
+       [
+        "EPS, diluted",
+        "0.91",
+        "1.21",
+        "1.11",
+        "0.98",
+        "1.04",
+        "0.90",
+        "0.89",
+        "0.83"
+       ],
+       [
+        "Net interest margin",
+        "2.2%",
+        "2.1%",
+        "2.1%",
+        "2.1%",
+        "2.0%",
+        "1.9%",
+        "2.0%",
+        "2.0%"
+       ],
+       [
+        "CET1 capital ratio",
+        "10.9%",
+        "11.2%",
+        "11.2%",
+        "11.4%",
+        "11.6%",
+        "11.5%",
+        "11.8%",
+        "11.9%"
+       ]
+      ],
+      "note": "The earnings per share figures are for each quarter, not the whole year, even though the definition says “year’s profit.”"
+     }
+    },
+    {
+     "heading": "What should I watch in Bank of America’s next results?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next decisive evidence is whether earnings growth survives higher compliance costs and tighter capital requirements."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 15, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "29,958"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "0.91"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "26,475",
+      "28,247",
+      "27,443",
+      "29,040",
+      "28,367",
+      "30,272",
+      "31,558",
+      "29,958"
+     ],
+     "EPS, diluted": [
+      "0.83",
+      "0.89",
+      "0.90",
+      "1.04",
+      "0.98",
+      "1.11",
+      "1.21",
+      "0.91"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bac/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BAC&src=seo-earnings"
+  }
+ },
+ "short_name": "Bank of America",
+ "first_memo_date": "2026-10-15T01:34:27Z"
+}

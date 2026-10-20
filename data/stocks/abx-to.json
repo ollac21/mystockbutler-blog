@@ -1,0 +1,806 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ABX.TO",
+ "slug": "abx-to",
+ "company": "Barrick Mining Corporation",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "mining",
+ "country": "canada",
+ "memo_date": "2026-10-13T18:43:00Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 57.24,
+ "price_date": "2026-10-13T17:03:40Z",
+ "next_earnings": "2026-11-09",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 270,
+  "tables": 31,
+  "words": 19152,
+  "sources": 164
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Barrick Mining is a company that turns rock into gold, copper and cash by moving material through mines, plants, refineries and markets. Its business becomes clear when we follow the product first, then the dollar it earns, spends and commits to future mines."
+ },
+ "sources": [
+  {
+   "title": "Barrick filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312526079253/d833573dex993.htm"
+  },
+  {
+   "title": "2025 Annual Information Form, “Marketing and Distribution”",
+   "url": "https://www.sec.gov/Archives/edgar/data/756894/000119312526079253/d833573dex991.htm"
+  },
+  {
+   "title": "Schedule 13G",
+   "url": "https://www.sec.gov/Archives/edgar/data/756894/000205211325002955/xslSCHEDULE_13G_X01/primary_doc.xml"
+  }
+ ],
+ "rivals": [
+  "NEM",
+  "AEM",
+  "AU",
+  "GFI",
+  "HMY",
+  "BTG",
+  "EGO",
+  "IAG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Barrick stock forecast",
+   "meta_description": "Barrick's forecast gives weighted share prices, explains mine and cash drivers, and shows what investors pay today.",
+   "opening": "Barrick's weighted forecast points to C$66.27 in October 2027 and C$68.99 in October 2029, with 18% and 27% total returns. Barrick's forecast hinges on turning higher metal prices into durable cash while replacing depleted ounces and delivering projects without cost or access setbacks.",
+   "closing": "The full memo also examines Barrick's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Barrick's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is C$66.27 in October 2027, a total return of 18%. In October 2028, it is C$64.89, also an 18% return. By October 2029, it reaches C$68.99, a 27% return."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 range runs from C$23.50 in the bear case to C$156.22 in the bull case. Today’s comparison price is C$57.24. The forecast assigns 30% to the bear case, 50% to the base case and 20% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per ABX.TO share at each date; in brackets the return since today's 57.24, dividends included",
+      "caption": "What the shares could be worth (CAD per ABX.TO share at each date; in brackets the return since today's 57.24, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "30.14 (-46 %)",
+        "19.99 (-62 %)",
+        "23.50 (-54 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "69.92 (+24 %)",
+        "64.88 (+18 %)",
+        "61.40 (+14 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "111.35 (+97 %)",
+        "132.28 (+137 %)",
+        "156.22 (+183 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "66.27 (+18 %)",
+        "64.89 (+18 %)",
+        "68.99 (+27 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Barrick?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives US$6,053m in 2027 and falls to US$4,925m in 2028 because lower prices, higher costs and weaker production compound. It recovers to US$5,588m in 2029. The bull case reaches US$13,415m in 2027, US$14,597m in 2028 and US$15,876m in 2029, requiring high gold and copper prices, reliable mines and an on-time Lumwana ramp. The bear risk is grounded in four years of falling gold production and 2025 AISC above guidance."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "10,192 (6,053 / 13,415)",
+        "9,644 (4,925 / 14,597)",
+        "9,501 (5,588 / 15,876)"
+       ],
+       [
+        "Shares (millions)",
+        "1,610 (1,635 / 1,607)",
+        "1,583 (1,630 / 1,551)",
+        "1,558 (1,634 / 1,505)"
+       ],
+       [
+        "Dividends per share",
+        "0.85 (0.70 / 1.10)",
+        "0.90 (0.55 / 1.30)",
+        "0.95 (0.55 / 1.50)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "7.50 (5.50 / 9.00)",
+        "7.30 (4.80 / 9.50)",
+        "7.00 (5.20 / 10.00)"
+       ],
+       [
+        "Net debt",
+        "-2,606 (-1,308 / -4,934)",
+        "-1,710 (769 / -5,414)",
+        "-660 (2,097 / -6,354)"
+       ]
+      ],
+      "note": "A negative net debt number means the company has more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "How much cash does Barrick really make?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was substantial. Barrick’s reported free cash flow deducts mine investment from operating cash, while an analytical version also deducts lease payments and stock compensation. Stock pay requires care because some awards are cash-settled and the corporate expense does not cover every group charge."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Ownership is the decisive adjustment. Consolidated free cash flow was **$3,868 million**. After adding Barrick’s share of equity investees and removing cash belonging to non-controlling owners, attributable free cash flow was **$2,837 million**. That is the more relevant base for dividends."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,689",
+        "4,491",
+        "3,732",
+        "3,481",
+        "4,378"
+       ],
+       [
+        "− Capital spending",
+        "3,821",
+        "3,174",
+        "3,086",
+        "3,049",
+        "2,435"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,856",
+        "1,303",
+        "633",
+        "412",
+        "1,923"
+       ],
+       [
+        "− Stock pay",
+        "270",
+        "65",
+        "66",
+        "55",
+        "81"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,586",
+        "1,238",
+        "567",
+        "357",
+        "1,842"
+       ]
+      ],
+      "note": "The company's free cash flow is higher because it leaves out lease payments, but we count those cash payments because the money has left the company."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "57.24"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "68.99 (+27 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.8%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 40.19337977781962,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "30.14 (-46 %)",
+       "19.99 (-62 %)",
+       "23.50 (-54 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "69.92 (+24 %)",
+       "64.88 (+18 %)",
+       "61.40 (+14 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "111.35 (+97 %)",
+       "132.28 (+137 %)",
+       "156.22 (+183 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "66.27 (+18 %)",
+       "64.89 (+18 %)",
+       "68.99 (+27 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/abx-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABX.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Barrick dividend",
+   "meta_description": "Barrick's dividend policy, cash coverage, forecasts and yield in plain English.",
+   "opening": "Barrick targets an annual dividend equal to 50.0% of attributable free cash flow. Attributable free cash flow was $2,837 million, the more relevant base for dividends.",
+   "closing": "The full memo also examines Barrick's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Barrick pay per share?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend is US$0.85 per share in 2027, matching the 2025 payout and the cash-flow policy’s recent evidence. It rises to US$0.90 in 2028 and US$0.95 in 2029 as production grows gradually. The bear case gives US$0.70 first, then US$0.55, assuming a prolonged squeeze. The bull case reaches US$1.10, US$1.30 and US$1.50, requiring cash flow well above the recent payout base."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "10,192 (6,053 / 13,415)",
+        "9,644 (4,925 / 14,597)",
+        "9,501 (5,588 / 15,876)"
+       ],
+       [
+        "Shares (millions)",
+        "1,610 (1,635 / 1,607)",
+        "1,583 (1,630 / 1,551)",
+        "1,558 (1,634 / 1,505)"
+       ],
+       [
+        "Dividends per share",
+        "0.85 (0.70 / 1.10)",
+        "0.90 (0.55 / 1.30)",
+        "0.95 (0.55 / 1.50)"
+       ]
+      ],
+      "note": "A negative net debt number means the company has more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "Does Barrick's dividend come from its cash flow?",
+     "paragraphs": [
+      {
+       "n": 92,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Barrick now targets an annual dividend equal to 50.0% of attributable free cash flow and authorized up to US$3 billion of buybacks. A dividend simply returns cash. A buyback creates value only if Barrick buys a larger ownership share of its mines at an attractive price. The record is therefore mixed: Barrick has built enduring assets and regained flexibility, but its capital has also funded costly mistakes, unfinished projects and payouts that sometimes ran ahead of the cash those projects generated."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Ownership is the decisive adjustment. Consolidated free cash flow was **$3,868 million**. After adding Barrick’s share of equity investees and removing cash belonging to non-controlling owners, attributable free cash flow was **$2,837 million**. That is the more relevant base for dividends."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,856",
+        "1,303",
+        "633",
+        "412",
+        "1,923"
+       ],
+       [
+        "− Dividends paid",
+        "890",
+        "696",
+        "700",
+        "1,143",
+        "634"
+       ],
+       [
+        "− Share buybacks",
+        "1,500",
+        "498",
+        "0",
+        "424",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "185"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "62.0%",
+        "91.6%",
+        "110.6%",
+        "380.3%",
+        "33.0%"
+       ]
+      ],
+      "note": "The two payout percentages differ because our real free cash flow also subtracts the cost of shares given to employees, while the company's basic free cash flow does not."
+     }
+    },
+    {
+     "heading": "What could change Barrick's dividend?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast points to C$66.27 by October 2027 and C$68.99 by October 2029, if production growth and project delivery offset easing price support. For 2026, management guides to 2.90–3.25 million ounces of gold and 190,000–220,000 tonnes of copper. Attributable capital expenditure is guided at US$3.8–4.2 billion, partly reflecting postponed Reko Diq spending. The 2027 outlook is 3.30–3.65 million ounces of gold and 195,000–225,000 tonnes of copper."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Barrick's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after operating expenses and capital spending. Its yield measures cash generation against the share price, while dividend yield measures only what reaches shareholders. Reserves are different from warehouse inventory: they are estimates of material that can be mined economically. NPV, or net present value, discounts the future cash from that material because delayed money is worth less today."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "57.24"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.52"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; shares in millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.36",
+      "0.65",
+      "0.40",
+      "0.40",
+      "0.52"
+     ],
+     "Real free cash flow per share": [
+      "1.04",
+      "0.20",
+      "0.32",
+      "0.71",
+      "2.10"
+     ],
+     "Free cash flow per share": [
+      "1.08",
+      "0.23",
+      "0.36",
+      "0.74",
+      "2.26"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/abx-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABX.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Barrick earnings",
+   "meta_description": "Barrick’s next results are due November 9, 2026; see its guidance, recent results and what to watch.",
+   "opening": "Barrick’s next results are due on November 9, 2026. Watch production, costs and cash generation.",
+   "closing": "The full Barrick memo also covers Barrick’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Barrick guided for the year?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The forecast points to C$66.27 by October 2027 and C$68.99 by October 2029, if production growth and project delivery offset easing price support. For 2026, management guides to 2.90–3.25 million ounces of gold and 190,000–220,000 tonnes of copper. Attributable capital expenditure is guided at US$3.8–4.2 billion, partly reflecting postponed Reko Diq spending. The 2027 outlook is 3.30–3.65 million ounces of gold and 195,000–225,000 tonnes of copper."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except indicated",
+      "caption": "Guidance in force (US$ millions, except indicated)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Gold production (millions of ounces)",
+        "2026",
+        "2.90",
+        "3.25",
+        "August 10, 2026"
+       ],
+       [
+        "Copper production (thousands of tonnes)",
+        "2026",
+        "190",
+        "220",
+        "August 10, 2026"
+       ],
+       [
+        "Total attributable capital expenditure (US$ billions)",
+        "2026",
+        "3.8",
+        "4.2",
+        "August 10, 2026"
+       ],
+       [
+        "Gold production, 2027 outlook (millions of ounces)",
+        "2027",
+        "3.30",
+        "3.65",
+        "February 5, 2026"
+       ],
+       [
+        "Copper production, 2027 outlook (thousands of tonnes)",
+        "2027",
+        "195",
+        "225",
+        "February 5, 2026"
+       ]
+      ],
+      "note": "The production and cost figures are forecasts for the part of each mine that belongs to the company, not necessarily the mine’s full output or costs."
+     }
+    },
+    {
+     "heading": "Has Barrick kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Barrick met its 2025 gold-production guidance of 3.15–3.50 million ounces and delivered approximately 3.26 million ounces. Its all-in sustaining costs finished above guidance, however. Gold prices also rose 44% from the previous year, creating a strong market tailwind. By August 2026, Barrick reported another quarter above its production expectations, but production delivery and cost control say more about management than higher metal prices alone."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Barrick’s recent revenue and profit results show?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from **$3,681 million to $5,292 million**. Shareholder net income also increased, while attributable gold production was almost unchanged at **796,000 ounces** against **797,000 ounces**. The main engine was price: realized gold rose from **$3,295 to $4,417 an ounce**. Retained operations did grow after adjusting for sold mines, but the financial surge was mostly price-driven."
+      },
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Sequentially, revenue edged higher while gross margin, operating income and net income fell. Gold prices cooled and unit costs rose. Q2 also carried Mali royalties and penalties, remobilization costs, IPO expenses and inventory impairments, partly offset by disposal-related gains."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "5,292",
+        "5,218",
+        "5,997",
+        "4,148",
+        "3,681",
+        "3,130",
+        "3,645",
+        "3,368"
+       ],
+       [
+        "Gross margin",
+        "54.7%",
+        "59.8%",
+        "54.8%",
+        "54.4%",
+        "49.0%",
+        "43.0%",
+        "45.3%",
+        "39.1%"
+       ],
+       [
+        "Operating income",
+        "2,650",
+        "3,267",
+        "4,071",
+        "2,424",
+        "1,416",
+        "1,121",
+        "1,949",
+        "1,107"
+       ],
+       [
+        "Net income",
+        "1,217",
+        "1,602",
+        "2,406",
+        "1,302",
+        "811",
+        "474",
+        "996",
+        "483"
+       ],
+       [
+        "EPS, diluted",
+        "0.73",
+        "0.96",
+        "1.43",
+        "0.76",
+        "0.47",
+        "0.27",
+        "0.57",
+        "0.28"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Barrick’s next results?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Barrick’s Q3 results are due on November 9, 2026. Management expects production to rise through the second half, so investors will examine not only ounces but also costs, cash generation and construction payments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 9, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "5,292"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.73"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,368",
+      "3,645",
+      "3,130",
+      "3,681",
+      "4,148",
+      "5,997",
+      "5,218",
+      "5,292"
+     ],
+     "EPS, diluted": [
+      "0.28",
+      "0.57",
+      "0.27",
+      "0.47",
+      "0.76",
+      "1.43",
+      "0.96",
+      "0.73"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/abx-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ABX.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Barrick",
+ "first_memo_date": "2026-10-13T18:43:00Z"
+}

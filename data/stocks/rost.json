@@ -1,0 +1,849 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ROST",
+ "slug": "rost",
+ "company": "Ross Stores, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T23:41:17Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 236.89,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-11-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 27,
+  "words": 15786,
+  "sources": 155
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Ross Stores sells clothing, shoes, personal goods, and home fashions at bargain prices through Ross Dress for Less and dd’s DISCOUNTS. Its business works when skillful buying, low-cost stores, and frequent customer visits turn uncertain merchandise into profitable sales."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000003/q4fy25exhibit991.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000038/q226exhibit991.htm"
+  },
+  {
+   "title": "Ross Q2 2026 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000041/rost-20260801.htm"
+  }
+ ],
+ "rivals": [
+  "TJX",
+  "BURL",
+  "FIVE",
+  "WMT",
+  "TGT",
+  "M",
+  "KSS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Ross Stores stock forecast",
+   "meta_description": "Ross Stores stock forecast weighs bear, base and bull cases against recurring earnings, cash flow, and today's valuation.",
+   "opening": "The weighted price for Ross Stores is $203.23 in October 2029. It hinges on transactions staying strong, inventory growth avoiding markdown pressure, and margins remaining healthy.",
+   "closing": "The full memo also covers Ross Stores' business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Ross Stores' shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $203.22 in October 2027. That is a 13% loss including dividends. The weighted price is $203.23 in October 2029. That is a 12% loss including dividends. The bear case carries 30% probability. The base case carries 55%, and the bull case 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 236.89, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 236.89, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30%",
+        "157.96 (-33%)",
+        "140.49 (-39%)",
+        "129.76 (-43%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "215.52 (-8%)",
+        "216.81 (-7%)",
+        "216.37 (-6%)"
+       ],
+       [
+        "Bull",
+        "15%",
+        "248.65 (+6%)",
+        "279.26 (+20%)",
+        "302.00 (+30%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "203.22 (-13%)",
+        "203.28 (-13%)",
+        "203.23 (-12%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Ross Stores, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base reflects a 10% comparable-sales increase led mainly by traffic, management’s planned 115 openings, and its 8%–10% long-term earnings framework. The bear reflects traffic fading and inventory rising faster than sales, which raises markdown risk. The bull assumes repeat visits persist and new stores improve productivity, but Ross has not supplied complete store-cohort returns."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,509 (2,263 / 2,600)",
+        "2,693 (2,311 / 2,876)",
+        "2,890 (2,367 / 3,172)"
+       ],
+       [
+        "Shares (millions)",
+        "314 (315 / 314)",
+        "310 (313 / 309)",
+        "307 (310 / 305)"
+       ],
+       [
+        "Dividends per share",
+        "1.92 (1.78 / 2.00)",
+        "2.11 (1.78 / 2.36)",
+        "2.31 (1.78 / 2.72)"
+       ],
+       [
+        "Price to earnings",
+        "27.00 (22.00 / 30.00)",
+        "25.00 (19.00 / 30.00)",
+        "23.00 (17.00 / 29.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Ross Stores really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates a different adjustment. It reduces profit but initially uses no cash because employees receive shares. Subtracting stock pay of 175,354 from free cash flow produces analytical “real free cash flow” of 2,032,254. That is not Ross’s own earnings measure, but it recognizes dilution as an economic cost."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,026,883",
+        "2,356,988",
+        "2,514,490",
+        "1,689,373",
+        "1,738,849"
+       ],
+       [
+        "− Capital spending",
+        "819,275",
+        "720,104",
+        "762,812",
+        "654,070",
+        "557,840"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,207,608",
+        "1,636,884",
+        "1,751,678",
+        "1,035,303",
+        "1,181,009"
+       ],
+       [
+        "− Stock pay",
+        "175,354",
+        "156,298",
+        "145,490",
+        "121,936",
+        "134,217"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,032,254",
+        "1,480,586",
+        "1,606,188",
+        "913,367",
+        "1,046,792"
+       ]
+      ],
+      "note": "Real free cash flow is lower because shares given to employees use no cash today, but they give employees part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Ross Stores?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $236.89 on October 16, 2026, Ross traded at 28.7 times its last twelve months’ earnings and 28.0 times expected earnings over the next twelve months. The P/E, or price-to-earnings ratio, tells you how much investors pay for each dollar of annual profit. A 28.0-times P/E implies expected earnings of about $8.46 per share. Ross must first earn that amount, and the market may later assign those earnings a higher or lower multiple."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "236.89"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "203.23 (-12%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "28.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 236.89,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30%",
+      "values": [
+       "157.96 (-33%)",
+       "140.49 (-39%)",
+       "129.76 (-43%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "215.52 (-8%)",
+       "216.81 (-7%)",
+       "216.37 (-6%)"
+      ]
+     },
+     "Bull": {
+      "probability": "15%",
+      "values": [
+       "248.65 (+6%)",
+       "279.26 (+20%)",
+       "302.00 (+30%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "203.22 (-13%)",
+       "203.28 (-13%)",
+       "203.23 (-12%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/rost/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ROST&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Ross Stores dividend",
+   "meta_description": "Ross Stores increased its dividend by 10%; free cash flow covered dividends, and the dividend yield was 0.8% at $236.89.",
+   "opening": "Ross Stores increased its dividend by 10% and pays shareholders a per-share dividend. Ross Stores generated free cash flow after capital spending, which covered dividends before buybacks.",
+   "closing": "The full Ross Stores memo also covers its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Ross Stores pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Ross also repaid debt while returning cash. Cash fell in the year ending January 2026, but net cash rose because debt fell faster than cash. On March 3, 2026, Ross authorized a new $2.55 billion stock repurchase program. It planned $1.275 billion for 2026 and increased the dividend by 10%. A buyback can raise earnings per share by reducing the shares that divide the profit, but an authorization is permission to spend, not proof that the full amount has been spent."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.61",
+        "6.32",
+        "5.56",
+        "4.38",
+        "4.87"
+       ],
+       [
+        "Real free cash flow per share",
+        "6.26",
+        "4.47",
+        "4.76",
+        "2.65",
+        "2.96"
+       ],
+       [
+        "Free cash flow per share",
+        "6.80",
+        "4.95",
+        "5.19",
+        "3.00",
+        "3.34"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.63",
+        "1.48",
+        "1.35",
+        "1.25",
+        "1.15"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.24",
+        "3.17",
+        "2.82",
+        "2.75",
+        "1.84"
+       ]
+      ],
+      "note": "Free cash flow per share is higher than real free cash flow per share because real free cash flow also subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is the Ross Stores dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates a different adjustment. It reduces profit but initially uses no cash because employees receive shares. Subtracting stock pay of 175,354 from free cash flow produces analytical “real free cash flow” of 2,032,254. That is not Ross’s own earnings measure, but it recognizes dilution as an economic cost."
+      },
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending maintains stores while also funding expansion, distribution capacity and systems. Dividends and repurchases must therefore be judged against cash after the full investment requirement."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Feb 2025",
+       "Feb 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,207,608",
+        "1,636,884",
+        "1,751,678",
+        "1,035,303",
+        "1,181,009"
+       ],
+       [
+        "− Dividends paid",
+        "528,085",
+        "488,721",
+        "454,814",
+        "431,295",
+        "405,123"
+       ],
+       [
+        "− Share buybacks",
+        "1,050,021",
+        "1,049,979",
+        "949,996",
+        "949,996",
+        "649,997"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "629,502",
+        "98,184",
+        "346,868",
+        "",
+        "125,889"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "345,988",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "71.5%",
+        "94.0%",
+        "80.2%",
+        "133.4%",
+        "89.3%"
+       ]
+      ],
+      "note": "In January 2023, the company paid shareholders more cash than it generated, so it had to use savings or other cash to cover the difference."
+     }
+    },
+    {
+     "heading": "How could the Ross Stores dividend change?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend reaches $2.31 per share by October 2029. The bear holds at $1.78. The bull reaches $2.72. The base extends the latest 10% increase and five-year record of annual increases, while the bear allows no further increase. The bull requires stronger cash generation despite planned capital spending of $1.1 billion."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,509 (2,263 / 2,600)",
+        "2,693 (2,311 / 2,876)",
+        "2,890 (2,367 / 3,172)"
+       ],
+       [
+        "Shares (millions)",
+        "314 (315 / 314)",
+        "310 (313 / 309)",
+        "307 (310 / 305)"
+       ],
+       [
+        "Dividends per share",
+        "1.92 (1.78 / 2.00)",
+        "2.11 (1.78 / 2.36)",
+        "2.31 (1.78 / 2.72)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is the Ross Stores dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow—the cash left after operating needs and property spending—had a yield of 2.9%. Ross generated $1.71 billion from operations and spent $460 million on property and equipment in the first half of fiscal 2026. Because inventory and supplier payments shift cash between periods, investors must judge whether cash generation can grow after funding expansion. The 0.8% dividend yield leaves future returns chiefly dependent on growth, especially against a 5.09% US 10-year Treasury yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jan 2026",
+     "value": "1.63"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jan 2022",
+     "Jan 2023",
+     "Feb 2024",
+     "Feb 2025",
+     "Jan 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.15",
+      "1.25",
+      "1.35",
+      "1.48",
+      "1.63"
+     ],
+     "Real free cash flow per share": [
+      "2.96",
+      "2.65",
+      "4.76",
+      "4.47",
+      "6.26"
+     ],
+     "Free cash flow per share": [
+      "3.34",
+      "3.00",
+      "5.19",
+      "4.95",
+      "6.80"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/rost/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ROST&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Ross Stores earnings: guidance and results",
+   "meta_description": "Ross Stores next results are expected on November 19, 2026, with guidance, recent results, and watch items.",
+   "opening": "Ross Stores' next results are expected on November 19, 2026. Watch whether Ross Stores' customer transactions remain strong without another tariff windfall.",
+   "closing": "The full memo explains Ross Stores' business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has Ross Stores guided for the next results?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The full-year earnings range includes approximately $0.60 per share from tariff refunds. Removing that benefit implies earnings of approximately $8.01–$8.17 per share, an illustration of recurring profit rather than a new company forecast. Earnings per share divides profit among the company’s shares, so buybacks can lift it by reducing the share count even if total profit does not rise. These promises create the baseline for analysts’ forecasts."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ per share unless labelled otherwise",
+      "caption": "Guidance in force (US$ per share unless labelled otherwise)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Comparable store sales increase (%) — third quarter",
+        "Quarter to Oct 2026",
+        "6.0%",
+        "7.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Comparable store sales increase (%) — fourth quarter",
+        "Quarter to Jan 2027",
+        "4.0%",
+        "5.0%",
+        "Aug 20, 2026"
+       ],
+       [
+        "Earnings per share — third quarter",
+        "Quarter to Oct 2026",
+        "1.75",
+        "1.83",
+        "Aug 20, 2026"
+       ],
+       [
+        "Earnings per share — fourth quarter",
+        "Quarter to Jan 2027",
+        "2.17",
+        "2.26",
+        "Aug 20, 2026"
+       ],
+       [
+        "Fiscal year earnings per share",
+        "Year to Jan 2027",
+        "8.61",
+        "8.77",
+        "Aug 20, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What promises has Ross Stores kept?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Conroy’s first year also produced a mixed record on promises. Ross initially forecast fiscal 2025 earnings per share of US$5.95–US$6.55 and ultimately delivered US$6.61. It also planned 90 store openings and completed 90. But the earnings range fell to US$6.08–US$6.21 during the year before improving, so the final beat came after a period of weaker confidence."
+      },
+      {
+       "n": 122,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The fairest conclusion is a qualified yes: executives retain meaningful ownership, the share count is shrinking, and the first full year under Conroy finished above the original forecast. The harder question is whether future rewards follow lasting operating improvement rather than temporary conditions or convenient exclusions."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Ross Stores results changed over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The August 2026 quarter showed genuine trading improvement, but the tariff refund overstated recurring earnings growth."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Aug 2026",
+       "May 2026",
+       "Jan 2026",
+       "Nov 2025",
+       "Aug 2025",
+       "May 2025",
+       "Feb 2025",
+       "Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,264,886",
+        "6,010,476",
+        "6,635,490",
+        "5,600,946",
+        "5,529,152",
+        "4,984,971",
+        "5,912,279",
+        "5,071,354"
+       ],
+       [
+        "Gross margin",
+        "33.8%",
+        "29.6%",
+        "27.2%",
+        "28.0%",
+        "27.6%",
+        "28.2%",
+        "26.5%",
+        "28.3%"
+       ],
+       [
+        "Operating income",
+        "1,103,618",
+        "804,026",
+        "814,115",
+        "648,498",
+        "638,274",
+        "606,470",
+        "731,024",
+        "604,216"
+       ],
+       [
+        "Net income",
+        "851,299",
+        "649,964",
+        "645,865",
+        "511,935",
+        "507,995",
+        "479,249",
+        "586,784",
+        "488,808"
+       ],
+       [
+        "EPS, diluted",
+        "2.66",
+        "2.02",
+        "2.00",
+        "1.58",
+        "1.56",
+        "1.47",
+        "1.79",
+        "1.48"
+       ],
+       [
+        "**= Free cash flow**",
+        "624,495",
+        "627,055",
+        "920,809",
+        "617,827",
+        "466,635",
+        "202,337",
+        "676,575",
+        "333,002"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Ross Stores results?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The quarter ending October 31, 2026, will test the raised comparable-sales outlook and the planned openings. The important evidence will be customer transactions, profitability without another tariff windfall, and whether stores opened on schedule."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 19, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Aug 2026 (US$ thousands)",
+     "value": "6,264,886"
+    },
+    {
+     "label": "EPS, diluted, quarter to Aug 2026",
+     "value": "2.66"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Nov 2024",
+     "Feb 2025",
+     "May 2025",
+     "Aug 2025",
+     "Nov 2025",
+     "Jan 2026",
+     "May 2026",
+     "Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,071,354",
+      "5,912,279",
+      "4,984,971",
+      "5,529,152",
+      "5,600,946",
+      "6,635,490",
+      "6,010,476",
+      "6,264,886"
+     ],
+     "EPS, diluted": [
+      "1.48",
+      "1.79",
+      "1.47",
+      "1.56",
+      "1.58",
+      "2.00",
+      "2.02",
+      "2.66"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/rost/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ROST&src=seo-earnings"
+  }
+ },
+ "short_name": "Ross Stores",
+ "first_memo_date": "2026-10-16T23:41:17Z"
+}

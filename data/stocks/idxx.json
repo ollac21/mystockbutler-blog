@@ -1,0 +1,568 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "IDXX",
+ "slug": "idxx",
+ "company": "IDEXX Laboratories, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T03:24:07Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 560.36,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 245,
+  "tables": 27,
+  "words": 17429,
+  "sources": 190
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "IDEXX Laboratories is a veterinary diagnostics company: it sells the tests, laboratory services, instruments and software that help clinics understand sick animals and choose treatment. Its dollar begins with a clinic’s purchase and ends, after manufacturing, laboratories, sales, research and administration, as profit or cash still tied up in the business."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/874716/000087471626000038/idxx-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/874716/000110465926008904/tm264623d1_ex99-1.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/874716/000110465925008331/tm255269d1_ex99-1.htm"
+  }
+ ],
+ "rivals": [
+  "ZTS",
+  "4901.T",
+  "NEOG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "IDEXX stock forecast",
+   "meta_description": "IDEXX's weighted forecast is $493.72 in October 2027 and $509.44 in October 2029; it hinges on recurring testing growth and valuation.",
+   "opening": "IDEXX's weighted forecast is $493.72 in October 2027. IDEXX's outcome hinges on whether recurring testing growth can outweigh a lower valuation multiple.",
+   "closing": "The full memo also covers IDEX​X's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could IDEX​X's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s most likely outcome is a share price below today’s level at all three dates. The weighted price is $493.72 in October 2027, a 12% loss including dividends. It is $495.56 in October 2028, also a 12% loss. It reaches $509.44 in October 2029, a 9% loss."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 560.36, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 560.36, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "387.50 (-31 %)",
+        "349.20 (-38 %)",
+        "324.72 (-42 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "502.97 (-10 %)",
+        "505.84 (-10 %)",
+        "523.65 (-7 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "672.23 (+20 %)",
+        "750.55 (+34 %)",
+        "826.76 (+48 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "493.72 (-12 %)",
+        "495.56 (-12 %)",
+        "509.44 (-9 %)"
+       ]
+      ],
+      "note": "The weighted value is a probability-based average of the three cases, not a promise that the share price will reach that amount."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for IDEX​X?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case cuts revenue growth to 5% initially and 4% thereafter. Its margins fall from 24.5% to 23.5%, producing earnings of $1,215 million, $1,238 million and $1,260 million. The reason is weaker clinic traffic: U.S. same-store visits fell 1.3%, while 2026 revenue growth includes 4.0% net price improvement."
+      },
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bull case uses 11% growth in the first two years and 10% in the third. Margins rise from 26.0% to 28.0%, producing earnings of $1,363 million, $1,571 million and $1,792 million. This requires more tests per visit, successful new-test adoption and stronger software cross-use. The forecast excludes the royalty litigation and unusual share-award tax benefit."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does IDEX​X really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation changes the ownership view. It is a non-cash expense, so operating cash flow adds it back, but employees receive shares or claims on shares. Existing shareholders may therefore suffer dilution. Deducting stock pay produces a useful analytical measure called real free cash flow; it is not a second official cash-flow statement."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,181,805",
+        "929,001",
+        "906,510",
+        "542,984",
+        "755,546"
+       ],
+       [
+        "− Capital spending",
+        "124,676",
+        "120,922",
+        "133,631",
+        "148,838",
+        "119,549"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,057,129",
+        "808,079",
+        "772,879",
+        "394,146",
+        "635,997"
+       ],
+       [
+        "− Stock pay",
+        "60,013",
+        "60,295",
+        "59,739",
+        "49,770",
+        "37,755"
+       ],
+       [
+        "**= Real free cash flow**",
+        "997,116",
+        "747,784",
+        "713,140",
+        "344,376",
+        "598,242"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "23.2%",
+        "19.2%",
+        "19.5%",
+        "10.2%",
+        "18.6%"
+       ]
+      ],
+      "note": "The company’s own free cash flow is the same as ours; our lower real free cash flow subtracts stock pay because shares given to employees reduce each existing owner’s share of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for IDEX​X today?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Book value is a weaker guide. IDEXX generally expenses research as it occurs, so valuable diagnostic knowledge does not accumulate on the balance sheet at its commercial worth. Free cash flow is more useful, but it must reflect enough investment in laboratories, equipment and new products. The rows below show the price, market value, enterprise value, valuation multiples, cash-flow yield and dividend yield today."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands, except share price in US$ per share",
+      "caption": "What an investor pays today (US$ thousands, except share price in US$ per share)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "560.36"
+       ],
+       [
+        "Market value (calculated)",
+        "44,145,786.16"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "44,917,717.16"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "39.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "33.3x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.4%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "560.36"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "509.44 (-9 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "33.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 560.36,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "387.50 (-31 %)",
+       "349.20 (-38 %)",
+       "324.72 (-42 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "502.97 (-10 %)",
+       "505.84 (-10 %)",
+       "523.65 (-7 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "672.23 (+20 %)",
+       "750.55 (+34 %)",
+       "826.76 (+48 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "493.72 (-12 %)",
+       "495.56 (-12 %)",
+       "509.44 (-9 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/idxx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IDXX&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "IDEXX earnings: guidance and next results",
+   "meta_description": "IDEXX expects 2026 revenue of $4,700 million–$4,745 million and EPS of $14.69–$14.94 ahead of November 2, 2026 results.",
+   "opening": "IDEXX's next results are expected on November 2, 2026. Watch whether recurring testing growth comes from adoption and repeat use, not just revenue.",
+   "closing": "The full IDEXX memo also answers how IDEXX makes money, who it competes with, how management is paid, and what could go wrong.",
+   "blocks": [
+    {
+     "heading": "What has IDEXX guided for the year?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s 2026 guidance says IDEXX expects diagnostic and earnings growth even as it invests. Revenue guidance is **$4,700 million–$4,745 million** for the year ending December 2026. EPS guidance is **$14.69–$14.94**, where EPS means profit attributable to each share."
+      },
+      {
+       "n": 190,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Organic growth does not mean 10% more tests. IDEXX’s recurring Companion Animal Group, or CAG, diagnostics target is **9.5%–10.7% organic growth** in 2026, but the plan also includes **4.0% net price improvement**. A price increase can lift revenue from the same number of tests, so new customers, more tests per customer and new products must provide the rest."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "4,700",
+        "4,745",
+        "Aug 4, 2026"
+       ],
+       [
+        "Revenue — Organic growth",
+        "Year to Dec 2026",
+        "8.5%",
+        "9.7%",
+        "Aug 4, 2026"
+       ],
+       [
+        "CAG Diagnostics Recurring Revenue Growth — Organic growth",
+        "Year to Dec 2026",
+        "9.5%",
+        "10.7%",
+        "Aug 4, 2026"
+       ],
+       [
+        "EPS",
+        "Year to Dec 2026",
+        "14.69",
+        "14.94",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has IDEXX kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also has evidence of delivering on operating promises. During 2025, it raised the inVue Dx placement goal from an initial 4,500 to approximately 6,000. The 2025 installed base later stood at roughly 6,400. Erickson had operating responsibility during that launch, although Mazelsky was CEO."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has IDEXX's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Margins and earnings improved as recurring volume, pricing and productivity grew faster than associated costs. Diluted EPS rose faster than net income partly because the share count declined, but tax benefits also helped. Q2 2026 included a larger share-award tax benefit than the prior-year quarter, so the underlying per-share improvement was smaller than the reported increase."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,216,585",
+        "1,140,820",
+        "1,090,579",
+        "1,105,239",
+        "1,109,457",
+        "998,427",
+        "954,288",
+        "975,543"
+       ],
+       [
+        "Gross margin",
+        "64.0%",
+        "63.4%",
+        "60.3%",
+        "61.8%",
+        "62.6%",
+        "62.4%",
+        "59.8%",
+        "61.1%"
+       ],
+       [
+        "Operating income",
+        "425,566",
+        "362,586",
+        "315,605",
+        "354,846",
+        "373,046",
+        "316,534",
+        "261,686",
+        "303,892"
+       ],
+       [
+        "Net income",
+        "338,412",
+        "278,446",
+        "248,188",
+        "274,610",
+        "293,989",
+        "242,677",
+        "216,149",
+        "232,841"
+       ],
+       [
+        "EPS, diluted",
+        "4.27",
+        "3.47",
+        "3.08",
+        "3.40",
+        "3.63",
+        "2.96",
+        "2.62",
+        "2.80"
+       ]
+      ],
+      "note": "The September and December cash flow figures are single-quarter amounts calculated from year-to-date totals, not the full nine-month or yearly totals."
+     }
+    },
+    {
+     "heading": "What should I watch in IDEXX's next results?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The nearest decisive checkpoint is IDEXX’s third-quarter release on **November 2, 2026**, before the market opens, followed by an **8:30 a.m. Eastern** call. The key evidence will be adoption, not simply revenue."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,216,585"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "4.27"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "975,543",
+      "954,288",
+      "998,427",
+      "1,109,457",
+      "1,105,239",
+      "1,090,579",
+      "1,140,820",
+      "1,216,585"
+     ],
+     "EPS, diluted": [
+      "2.80",
+      "2.62",
+      "2.96",
+      "3.63",
+      "3.40",
+      "3.08",
+      "3.47",
+      "4.27"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/idxx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IDXX&src=seo-earnings"
+  }
+ },
+ "short_name": "IDEXX",
+ "first_memo_date": "2026-10-19T03:24:07Z"
+}

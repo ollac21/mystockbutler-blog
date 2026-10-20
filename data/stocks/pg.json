@@ -1,0 +1,795 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PG",
+ "slug": "pg",
+ "company": "The Procter & Gamble Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T00:29:02Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 151.23,
+ "price_date": "2026-10-09T20:00:03Z",
+ "next_earnings": "2026-10-22",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 27,
+  "words": 18015,
+  "sources": 270
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "P&G sells everyday branded goods in five businesses, most of which people use up and buy again."
+ },
+ "sources": [
+  {
+   "title": "P&G’s supplier and payment disclosures",
+   "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+  },
+  {
+   "title": "2024 cash-flow statement",
+   "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042424000083/pg-20240630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000093/fy2526q4amj8-kexhibit991.htm"
+  }
+ ],
+ "rivals": [
+  "UL",
+  "CL",
+  "KMB",
+  "CHD",
+  "KVUE",
+  "CLX",
+  "RKT.L"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "P&G stock forecast",
+   "meta_description": "P&G stock forecast: the weighted scenario reaches $156.46 in October 2029, with base, bear and bull cases, cash generation and valuation.",
+   "opening": "P&G's weighted scenario reaches $156.46 in October 2029. It hinges on P&G earning the forecast only if price gives way to unit growth and share gains.",
+   "closing": "The full memo explains P&G's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could P&G's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $147.52 in October 2027, a total return of 0% including dividends. It reaches $149.96 in October 2028, equal to a 5% total return. By October 2029, it reaches $156.46, equal to a 12% total return. The bear-to-bull range then spans $103.66 to $214.27. Today's price is $151.23."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 151.23, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 151.23, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "125.00 (-14 %)",
+        "110.40 (-21 %)",
+        "103.66 (-23 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "152.01 (+3 %)",
+        "156.16 (+9 %)",
+        "164.00 (+17 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "167.12 (+13 %)",
+        "191.07 (+32 %)",
+        "214.27 (+51 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "147.52 (+0 %)",
+        "149.96 (+5 %)",
+        "156.46 (+12 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for P&G?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base uses management's $7.00 FY2027 core-EPS midpoint and organic-sales guidance of 1%–3%. Management also expects a weak first quarter followed by improvement in the second half. Flat FY2026 organic volume and mixed category share support the bear case, while Beauty's volume growth and upgraded Tide sales support the bull case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does P&G really make?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "P&G’s adjusted free cash flow adds back payments under the 2017 U.S. Tax Act. That improves comparability because the payments relate to an earlier obligation, but the cash still left the company. Stock compensation deserves a similar check: it costs no immediate cash when shares are issued, but it transfers value to employees and can dilute owners. Deducting FY2026’s $524 million from free cash flow gives a stricter analytical view."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "19,556",
+        "17,817",
+        "19,846",
+        "16,848",
+        "16,723"
+       ],
+       [
+        "− Capital spending",
+        "4,409",
+        "3,773",
+        "3,322",
+        "3,062",
+        "3,156"
+       ],
+       [
+        "**= Free cash flow**",
+        "15,147",
+        "14,044",
+        "16,524",
+        "13,786",
+        "13,567"
+       ],
+       [
+        "− Stock pay",
+        "524",
+        "476",
+        "562",
+        "545",
+        "528"
+       ],
+       [
+        "**= Real free cash flow**",
+        "14,623",
+        "13,568",
+        "15,962",
+        "13,241",
+        "13,039"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for P&G today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $151.23, P&G trades at 22.8x trailing earnings. P&G’s own free-cash-flow yield is 4.2%, and its dividend yield is 2.9%. Operating margin is the key turn: it fell to 22.7% in FY2026 from 24.3% in FY2025."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "151.23"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.8x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.9%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "151.23"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "156.46 (+12 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 151.23,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "125.00 (-14 %)",
+       "110.40 (-21 %)",
+       "103.66 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "152.01 (+3 %)",
+       "156.16 (+9 %)",
+       "164.00 (+17 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "167.12 (+13 %)",
+       "191.07 (+32 %)",
+       "214.27 (+51 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "147.52 (+0 %)",
+       "149.96 (+5 %)",
+       "156.46 (+12 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "P&G dividend",
+   "meta_description": "P&G pays $4.354 annually; FY2026 free cash flow of $15.147 billion covered $10.232 billion of dividends paid.",
+   "opening": "P&G's latest declared quarterly rate annualizes to $4.354. FY2026 free cash flow of $15.147 billion covered $10.232 billion of dividends paid.",
+   "closing": "The full memo also explains P&G's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does P&G pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The latest declared quarterly rate annualizes to $4.354. P&G has raised its dividend for 70 consecutive years, and FY2026 free cash flow was $15.147 billion against $10.232 billion of dividends paid. That supports gradual base increases, a pause rather than a cut in the bear case, and larger raises only if cash recovery accelerates."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.62",
+        "6.51",
+        "6.02",
+        "5.90",
+        "5.81"
+       ],
+       [
+        "Real free cash flow per share",
+        "6.04",
+        "5.53",
+        "6.46",
+        "5.33",
+        "5.14"
+       ],
+       [
+        "− Dividends paid, per share",
+        "4.22",
+        "4.02",
+        "3.77",
+        "3.62",
+        "3.45"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.08",
+        "2.65",
+        "2.03",
+        "2.96",
+        "3.94"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "0.85",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does P&G's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Capital expenditure is money spent on factories, equipment and production capacity. Free cash flow is the operating cash left after that spending. Across the five years shown, P&G reinvested $17,722 million in capital expenditure. It generated $73,068 million of free cash flow and paid shareholders $81,075 million through dividends, buybacks and payments to minority owners. FY2024 was the only year in which those distributions left a surplus."
+      },
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "P&G can pay out more than one year’s free cash flow because it can also use asset-sale proceeds, existing cash, employee share-plan receipts or borrowing. That is not automatically unhealthy, but it leaves less room for acquisitions without another funding source. For the next fiscal year, P&G planned about $10 billion of dividends and $5 billion of repurchases."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "15,147",
+        "14,044",
+        "16,524",
+        "13,786",
+        "13,567"
+       ],
+       [
+        "− Dividends paid",
+        "10,232",
+        "9,872",
+        "9,312",
+        "8,999",
+        "8,770"
+       ],
+       [
+        "− Share buybacks",
+        "5,028",
+        "6,500",
+        "5,006",
+        "7,353",
+        "10,003"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "2,098",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "232",
+        "2,415",
+        "",
+        "2,621",
+        "5,260"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change P&G's dividend?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend reaches $4.42 per share in October 2027. It rises to $4.55 in October 2028 and $4.69 in October 2029. The bear holds it at $4.35 throughout. The bull reaches $4.46, then $4.69 and $4.92."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is P&G's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $151.23, P&G trades at 22.8x trailing earnings. P&G’s own free-cash-flow yield is 4.2%, and its dividend yield is 2.9%. Operating margin is the key turn: it fell to 22.7% in FY2026 from 24.3% in FY2025."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "151.23"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.9%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "4.22"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.9%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jun 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.45",
+      "3.62",
+      "3.77",
+      "4.02",
+      "4.22"
+     ],
+     "Real free cash flow per share": [
+      "5.14",
+      "5.33",
+      "6.46",
+      "5.53",
+      "6.04"
+     ],
+     "Free cash flow per share": [
+      "5.34",
+      "5.55",
+      "6.68",
+      "5.72",
+      "6.25"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/pg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "P&G earnings date and guidance",
+   "meta_description": "P&G expects 1%–3% organic sales growth and 0%–3% core EPS growth for FY2027; results are expected October 22, 2026.",
+   "opening": "P&G's next results are expected on October 22, 2026. The one thing to watch is whether market share and consumer demand support the rest of the year.",
+   "closing": "The full P&G memo also answers how P&G's business works, who its rivals are, how P&G is managed, and what risks P&G faces.",
+   "blocks": [
+    {
+     "heading": "What has P&G guided for FY2027?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For FY2027, management guides to 1%–3% organic sales growth and 0%–3% core EPS growth. The core EPS midpoint is $7.00. Adjusted free-cash-flow productivity is expected at 85%–90%. Higher raw materials, energy and transportation costs are expected to create $1,000 million of after-tax pressure."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic Sales Growth (%)",
+        "Year to Jun 2027",
+        "1.0%",
+        "3.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "Diluted EPS Growth (%)",
+        "Year to Jun 2027",
+        "1.0%",
+        "5.0%",
+        "Jul 29, 2026"
+       ],
+       [
+        "core earnings per share, mid-point estimate",
+        "Year to Jun 2027",
+        "7.00",
+        "7.00",
+        "Jul 29, 2026"
+       ],
+       [
+        "adjusted free cash flow productivity (%)",
+        "Year to Jun 2027",
+        "85.0%",
+        "90.0%",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did P&G keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "P&G’s fiscal 2026 promise was organic-sales and core-EPS growth ranging from flat to 4%. Both finished at 1%. That met the stated range, but fell below its midpoint, so the promise was kept in the narrow sense without delivering the central expectation."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have P&G revenue and profit trended over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Profit weakened more clearly. Gross margin fell from 49.1% to 48.5%, and diluted EPS fell from $1.48 to $1.26. Restructuring caused part of the decline, but core EPS also fell 3%. Productivity savings were offset by marketing, product and packaging investment, unfavorable mix and higher commodity costs."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "21,203",
+        "21,235",
+        "22,208",
+        "22,386",
+        "20,889",
+        "19,776",
+        "21,882",
+        "21,737"
+       ],
+       [
+        "Operating income",
+        "3,949",
+        "4,576",
+        "5,366",
+        "5,856",
+        "4,355",
+        "4,558",
+        "5,741",
+        "5,797"
+       ],
+       [
+        "Net income",
+        "3,044",
+        "3,932",
+        "4,319",
+        "4,750",
+        "3,615",
+        "3,769",
+        "4,630",
+        "3,959"
+       ],
+       [
+        "EPS, diluted",
+        "1.26",
+        "1.63",
+        "1.78",
+        "1.95",
+        "1.48",
+        "1.54",
+        "1.88",
+        "1.61"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in P&G's next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the anticipated October 22, 2026 first-quarter earnings call. Investors should watch market share, consumer demand and confidence in the rest of the year, not just whether EPS beats a forecast. P&G reported that fourth-quarter sell-out rose 2% while sell-in fell 1%."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 22, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "21,203"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.26"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "21,737",
+      "21,882",
+      "19,776",
+      "20,889",
+      "22,386",
+      "22,208",
+      "21,235",
+      "21,203"
+     ],
+     "EPS, diluted": [
+      "1.61",
+      "1.88",
+      "1.54",
+      "1.48",
+      "1.95",
+      "1.78",
+      "1.63",
+      "1.26"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/pg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PG&src=seo-earnings"
+  }
+ },
+ "short_name": "P&G",
+ "first_memo_date": "2026-10-12T00:29:02Z"
+}

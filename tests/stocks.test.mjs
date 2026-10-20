@@ -66,3 +66,13 @@ test('the gate checks a page as published: canonical, robots, JSON-LD, one h1, q
   const fails = gatePage(broken, ctx);
   assert.ok(fails.some((f) => f.includes('h1')) && fails.some((f) => f.includes('BreadcrumbList')));
 });
+
+test('a one-letter ticker keeps its own address; the letter hubs live under /stocks/letter/', () => {
+  const v = clone(load('stock-rmd.json'));
+  v.slug = 'v'; v.ticker = 'V'; v.short_name = 'Visa'; v.company = 'Visa Inc.';
+  for (const t of Object.keys(v.pages)) v.pages[t].title = v.pages[t].title.replace('ResMed', 'Visa');
+  const { pages, hubs } = buildStockSite([v, load('stock-td-to.json')], { today: TODAY });
+  assert.ok(pages.some((p) => p.path === '/stocks/v/'));
+  assert.ok(hubs.some((h) => h.path === '/stocks/letter/v/'));
+  assert.ok(!hubs.some((h) => h.path === '/stocks/v/'));
+});

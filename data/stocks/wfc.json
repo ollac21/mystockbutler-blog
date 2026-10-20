@@ -1,0 +1,830 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "WFC",
+ "slug": "wfc",
+ "company": "Wells Fargo & Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "bank",
+ "country": "us",
+ "memo_date": "2026-10-14T04:34:38Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 80.74,
+ "price_date": "2026-10-13T20:01:58Z",
+ "next_earnings": "2027-01-14",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 27,
+  "words": 16981,
+  "sources": 301
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Wells Fargo is a bank that holds deposits, lends money and charges for helping households and businesses pay, invest and raise funds. A deposit is money Wells Fargo owes its customer, while a loan is money the borrower owes Wells Fargo; neither is revenue when the principal changes hands."
+ },
+ "sources": [
+  {
+   "title": "Wells Fargo 2025 annual report, CEO letter",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000072971/000007297126000202/wfc2025annualreport-arsfil.pdf"
+  },
+  {
+   "title": "3Q26 presentation, outlook",
+   "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/ex993-wellsfargo3q26pres.htm"
+  },
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm"
+  }
+ ],
+ "rivals": [
+  "JPM",
+  "BAC",
+  "C",
+  "PNC",
+  "TFC",
+  "USB",
+  "COF",
+  "GS",
+  "MS",
+  "SCHW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Wells Fargo stock forecast",
+   "meta_description": "Wells Fargo's forecast spans bear, base and bull cases, with the weighted path tied to durable post-cap income, credit, capital and returns.",
+   "opening": "Wells Fargo's weighted price is $79.64 in October 2027, including dividends. It hinges on post-cap growth becoming durable income without reopening control, credit or capital problems.",
+   "closing": "The full Wells Fargo memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Wells Fargo's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $79.64 in October 2027, including dividends, a 1% return from today. It rises to $87.85 in October 2028, a 14% return. By October 2029, the weighted price reaches $97.80, a 29% return."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The three-year range is wide. The bear case ends at $56.04, while the bull case reaches $142.75, against today’s $80.74. The weighted probabilities are 28% bear, 52% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 80.74, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 80.74, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "62.23 (-20 %)",
+        "58.87 (-23 %)",
+        "56.04 (-24 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "82.43 (+5 %)",
+        "92.02 (+19 %)",
+        "102.99 (+36 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "96.77 (+23 %)",
+        "117.60 (+51 %)",
+        "142.75 (+86 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "79.64 (+1 %)",
+        "87.85 (+14 %)",
+        "97.80 (+29 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Wells Fargo's forecast, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires durable deposits, profitable post-cap growth, sound credit, effective controls and ROTCE reaching or exceeding target. Stronger earnings rebuild capital, fund buybacks and support a higher multiple. The shares reach $96.77 in October 2027 and $142.75 by October 2029, including dividends. Its 20% probability reflects the number of linked conditions that must succeed."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "165,804 (159,304 / 168,504)",
+        "173,704 (161,804 / 179,304)",
+        "182,504 (166,804 / 191,504)"
+       ],
+       [
+        "Shares (millions)",
+        "2,917 (2,944 / 2,873)",
+        "2,832 (2,886 / 2,744)",
+        "2,747 (2,828 / 2,616)"
+       ],
+       [
+        "Dividends per share",
+        "2.05 (2.00 / 2.15)",
+        "2.20 (1.60 / 2.40)",
+        "2.35 (1.60 / 2.65)"
+       ],
+       [
+        "Price to book value",
+        "1.45 (1.15 / 1.65)",
+        "1.50 (1.05 / 1.80)",
+        "1.55 (0.95 / 1.95)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much does Wells Fargo really earn and give back?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and liquidity",
+       "text": "Dividends and repurchases are claims on capital, not simply on annual income. Equity awards add another complication: a grant-date value, future expense and possible share dilution are different things. The table brings those capital, liquidity and balance-sheet measures together."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.26",
+        "5.37",
+        "4.83",
+        "3.27",
+        "5.08"
+       ],
+       [
+        "− Dividends, per share",
+        "1.71",
+        "1.51",
+        "1.31",
+        "1.11",
+        "0.60"
+       ],
+       [
+        "− Share buybacks, per share",
+        "5.40",
+        "5.61",
+        "3.19",
+        "1.57",
+        "3.53"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "0.34",
+        "0.60",
+        "0.95"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.86",
+        "1.75",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company’s declared dividend per actual share can differ from this table’s dividend per share because this table divides total declared dividends by the average number of diluted shares."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Wells Fargo today?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E, or price-to-earnings ratio, is 11.4x: investors pay $11.40 for each dollar earned over the last year. The forward P/E is 11.0x, based on expected earnings. Their closeness suggests modest near-term improvement rather than a dramatic earnings jump."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "80.74"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "97.80 (+29 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "11.4x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 80.74,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "62.23 (-20 %)",
+       "58.87 (-23 %)",
+       "56.04 (-24 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "82.43 (+5 %)",
+       "92.02 (+19 %)",
+       "102.99 (+36 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "96.77 (+23 %)",
+       "117.60 (+51 %)",
+       "142.75 (+86 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "79.64 (+1 %)",
+       "87.85 (+14 %)",
+       "97.80 (+29 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/wfc/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WFC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Wells Fargo dividend: payout, coverage and yield",
+   "meta_description": "Wells Fargo dividend coverage, payout history, possible changes, and yield against the share price, explained in plain English.",
+   "opening": "Wells Fargo paid $1.71 per share in 2025. Wells Fargo's dividends and buybacks exceeded EPS by $0.86 per share, so shareholder payouts were not fully covered by that year's earnings.",
+   "closing": "The full Wells Fargo memo also covers its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Wells Fargo pay per share?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The spread narrowed: NIM fell from 3.1% in 2023 to 2.6% in 2025. Revenue reached 83,699 million as efficiency improved to 66.0%. Credit provisions fell to 3,658 million, while CET1 declined to 10.6%. EPS reached $6.26 as the diluted share count fell 6.5%. The dividend was $1.71 per share and buybacks were $5.40. Together, payouts exceeded EPS by $0.86 per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.26",
+        "5.37",
+        "4.83",
+        "3.27",
+        "5.08"
+       ],
+       [
+        "− Dividends, per share",
+        "1.71",
+        "1.51",
+        "1.31",
+        "1.11",
+        "0.60"
+       ],
+       [
+        "− Share buybacks, per share",
+        "5.40",
+        "5.61",
+        "3.19",
+        "1.57",
+        "3.53"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "",
+        "0.34",
+        "0.60",
+        "0.95"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.86",
+        "1.75",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company’s declared dividend per actual share can differ from this table’s dividend per share because this table divides total declared dividends by the average number of diluted shares."
+     }
+    },
+    {
+     "heading": "Is Wells Fargo's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Wells Fargo returned almost all recent common-shareholder earnings through dividends and buybacks, especially after the asset cap began to loosen."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "20,285",
+        "18,606",
+        "17,982",
+        "12,562",
+        "20,818"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "5,543",
+        "5,243",
+        "4,879",
+        "4,243",
+        "2,455"
+       ],
+       [
+        "− Share buybacks",
+        "17,516",
+        "19,448",
+        "11,851",
+        "6,033",
+        "14,464"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "",
+        "1,252",
+        "2,286",
+        "3,899"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "2,774",
+        "6,085",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "113.7%",
+        "132.7%",
+        "93.0%",
+        "81.8%",
+        "81.3%"
+       ]
+      ],
+      "note": "The company's dividend payout ratio is much lower than our paid-out percentage because its figure counts only dividends, while ours also counts share buybacks."
+     }
+    },
+    {
+     "heading": "What could change Wells Fargo's dividend?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case, from $2.05 per share in October 2027 to $2.35 in October 2029. The path starts from the latest $0.50 quarterly declaration and assumes measured increases rather than a fixed growth commitment."
+      },
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case cuts dividends to $1.60 after October 2027 because credit losses or capital pressure could force restraint. The bull case reaches $2.65 as stronger earnings support larger increases. The recent dividend record is upward, but the board expressly links future payouts to earnings, capital and stress-test outcomes."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "165,804 (159,304 / 168,504)",
+        "173,704 (161,804 / 179,304)",
+        "182,504 (166,804 / 191,504)"
+       ],
+       [
+        "Shares (millions)",
+        "2,917 (2,944 / 2,873)",
+        "2,832 (2,886 / 2,744)",
+        "2,747 (2,828 / 2,616)"
+       ],
+       [
+        "Dividends per share",
+        "2.05 (2.00 / 2.15)",
+        "2.20 (1.60 / 2.40)",
+        "2.35 (1.60 / 2.65)"
+       ],
+       [
+        "Price to book value",
+        "1.45 (1.15 / 1.65)",
+        "1.50 (1.05 / 1.80)",
+        "1.55 (0.95 / 1.95)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Wells Fargo's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6. Valuation and the stock",
+       "text": "Wells Fargo is a bank whose share price reflects both the profits it earns today and the capital it must keep to remain safe. At $80.74, the central question is whether its improved returns can last long enough to justify paying more than the accounting value of its assets."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "7.2%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/wfc/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WFC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Wells Fargo earnings date",
+   "meta_description": "Wells Fargo's next results are expected January 14, 2027, with guidance, recent results and key watchpoints explained.",
+   "opening": "Wells Fargo's next results are expected on January 14, 2027. Wells Fargo should watch whether the fourth-quarter NII outlook and annual expense plan were met.",
+   "closing": "The full memo also answers how Wells Fargo makes money, who its rivals are, who runs Wells Fargo, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Wells Fargo guided for the year?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Wells Fargo offers modest near-term appreciation and stronger value creation if post-cap growth produces durable income while returns and capital recover. For 2026, management guides to 50,000 million of net interest income. It guides to 55,700 million of noninterest expense. Its medium-term ROTCE target is 17.0%–18.0%; ROTCE means return on tangible common equity. Its CET1 target is 10.0%–10.5%."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "CET1 ratio target",
+        "Medium term",
+        "10.0%",
+        "10.5%",
+        "Oct 14, 2025"
+       ],
+       [
+        "Return on average tangible common equity (ROTCE)",
+        "Medium term",
+        "17.0%",
+        "18.0%",
+        "Mar 16, 2026"
+       ],
+       [
+        "2026 net interest income (NII)",
+        "Year to Dec 2026",
+        "50,000",
+        "50,000",
+        "Oct 13, 2026"
+       ],
+       [
+        "4Q26 net interest income",
+        "Quarter to Dec 2026",
+        "13,000",
+        "13,000",
+        "Oct 13, 2026"
+       ],
+       [
+        "Noninterest Expense",
+        "Year to Dec 2026",
+        "55,700",
+        "55,700",
+        "Oct 13, 2026"
+       ],
+       [
+        "top 5 U.S. investment bank",
+        "Medium term",
+        "",
+        "5",
+        "Mar 16, 2026"
+       ]
+      ],
+      "note": "A low and high number that are the same is still an estimate, not a guarantee, and the “top five” row is a ranking goal rather than a dollar amount."
+     }
+    },
+    {
+     "heading": "Has Wells Fargo kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 117,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Wells Fargo also uses forfeiture and clawback provisions, which can cancel or recover awards in defined circumstances. Its regulatory promise has measurable milestones: the Federal Reserve removed the asset cap in June 2025 and later ended the underlying enforcement action. Sustained customer treatment, risk discipline and returns remain the harder test."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Wells Fargo's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "September-quarter revenue rose 2.0% year over year, led by net interest income, which rose 4.7%. Noninterest income fell 1.4%, so stronger lending income did not produce equally strong total revenue. Wealth and Investment Management, Commercial Banking, Consumer Banking and Lending, and Corporate and Investment Banking all grew, but lower venture-investment revenue and lost lease income offset some gains."
+      },
+      {
+       "n": 163,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income rose 6.5%, while EPS rose 12.7%, helped by a smaller share count and a prior-period tax benefit. NIM was lower, and CET1 also declined. Management’s targets describe more net interest income alongside substantial noninterest expense, which means the balance sheet is producing more dollars without proving that returns per dollar of assets are recovering."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "21,870",
+        "22,622",
+        "21,446",
+        "21,292",
+        "21,436",
+        "20,822",
+        "20,149",
+        "20,378"
+       ],
+       [
+        "Net interest income",
+        "12,517",
+        "12,317",
+        "12,096",
+        "12,331",
+        "11,950",
+        "11,708",
+        "11,495",
+        "11,836"
+       ],
+       [
+        "Net income",
+        "5,951",
+        "6,407",
+        "5,253",
+        "5,361",
+        "5,589",
+        "5,494",
+        "4,894",
+        "5,079"
+       ],
+       [
+        "EPS, diluted",
+        "1.87",
+        "2.00",
+        "1.60",
+        "1.62",
+        "1.66",
+        "1.60",
+        "1.39",
+        "1.43"
+       ],
+       [
+        "Net interest margin",
+        "2.4%",
+        "2.4%",
+        "2.5%",
+        "2.6%",
+        "2.6%",
+        "2.7%",
+        "2.7%",
+        "2.7%"
+       ],
+       [
+        "CET1 capital ratio",
+        "10.0%",
+        "10.3%",
+        "10.3%",
+        "10.6%",
+        "11.0%",
+        "11.1%",
+        "11.1%",
+        "11.1%"
+       ]
+      ],
+      "note": "The safest-money ratio shows the bank’s safety cushion against risky loans, not the bank’s profit."
+     }
+    },
+    {
+     "heading": "What should Wells Fargo watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Results scheduled for January 14, 2027 will show whether the bank met its fourth-quarter NII outlook and annual expense plan. They should also clarify the starting point for 2027: revenue growth, expense control and retained earnings must improve together."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 14, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "21,870"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.87"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "20,378",
+      "20,149",
+      "20,822",
+      "21,436",
+      "21,292",
+      "21,446",
+      "22,622",
+      "21,870"
+     ],
+     "EPS, diluted": [
+      "1.43",
+      "1.39",
+      "1.60",
+      "1.66",
+      "1.62",
+      "1.60",
+      "2.00",
+      "1.87"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/wfc/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WFC&src=seo-earnings"
+  }
+ },
+ "short_name": "Wells Fargo",
+ "first_memo_date": "2026-10-14T04:34:38Z"
+}

@@ -1,0 +1,827 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "KLAC",
+ "slug": "klac",
+ "company": "KLA Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T21:03:04Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 189.75,
+ "price_date": "2026-10-12T19:52:33Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 245,
+  "tables": 26,
+  "words": 16715,
+  "sources": 218
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "KLA Corporation sells the tools and services that help electronics manufacturers find defects, measure tiny features and keep production under control. Its business is easiest to understand as a flow: manufacturers pay for equipment, KLA pays for technology and delivery, and the installed machines create years of service work."
+ },
+ "sources": [
+  {
+   "title": "KLA FY2026 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm"
+  },
+  {
+   "title": "2025 annual report, Note 7",
+   "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920125000024/klac-20250630.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000024/exhibit991earningsrelease7.htm"
+  }
+ ],
+ "rivals": [
+  "ONTO",
+  "AMAT",
+  "ASML",
+  "NVMI",
+  "CAMT",
+  "LRCX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "KLA stock forecast",
+   "meta_description": "KLA's weighted forecast is modestly negative at first, then improves, depending on packaging growth, cash conversion and valuation.",
+   "opening": "KLA's weighted forecast is US$164.99 in October 2027, a 13% loss including dividends, and US$205.55 in October 2029, a 10% gain. It hinges on packaging growth, cash conversion and how much valuation KLA retains.",
+   "closing": "The full KLA memo also explains KLA's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could KLA's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is US$164.99 in October 2027, a 13% loss including dividends, and US$205.55 in October 2029, a 10% gain. The cases assign 30% probability to bear, 50% to base and 20% to bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 189.75, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 189.75, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "104.02 (-45 %)",
+        "101.19 (-46 %)",
+        "105.17 (-43 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "171.27 (-9 %)",
+        "190.12 (+1 %)",
+        "204.32 (+10 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "240.76 (+27 %)",
+        "294.87 (+57 %)",
+        "359.20 (+92 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "164.99 (-13 %)",
+        "184.39 (-2 %)",
+        "205.55 (+10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does KLA need to get right, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base uses the 38.6% five-year margin because FY2026’s 41.7% margin may be above-cycle. Service represented about 23% of FY2026 revenue, with about 80% of service revenue contract-based, while advanced-packaging process-control revenue was forecast at $1.1 billion for calendar 2026, up 70%. The bear case reflects China exposure, a possible fab pause and weaker utilization; the bull case assumes packaging wins and new capacity convert demand into shipments."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does KLA really make?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from operating cash. KLA’s physical capital needs are modest because it sells equipment to factories rather than operating those factories, but research, development and service employees are already paid through operating expenses. The simple free-cash-flow measure was therefore nearly flat year on year, and its margin on revenue declined over the five-year period."
+      },
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation requires another adjustment. KLA adds stock pay back to operating cash because no current cash leaves the company, but existing owners bear dilution unless repurchases offset it. Deducting stock pay produces an analytical “real free cash flow” measure. It is not KLA’s own definition, and stock compensation should not be deducted twice."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,143,079",
+        "4,081,903",
+        "3,308,575",
+        "3,669,805",
+        "3,312,702"
+       ],
+       [
+        "− Capital spending",
+        "375,945",
+        "340,209",
+        "277,384",
+        "341,591",
+        "307,320"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,767,134",
+        "3,741,694",
+        "3,031,191",
+        "3,328,214",
+        "3,005,382"
+       ],
+       [
+        "− Stock pay",
+        "310,171",
+        "265,011",
+        "212,695",
+        "171,424",
+        "126,918"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,456,963",
+        "3,476,683",
+        "2,818,496",
+        "3,156,790",
+        "2,878,464"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "25.5%",
+        "28.6%",
+        "28.7%",
+        "30.1%",
+        "31.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for KLA today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The low free-cash-flow yield means the buyer receives little current cash relative to the purchase price. The dividend yield is smaller still, and dividends are only one use of the cash KLA generates. The price therefore depends heavily on what comes next."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "189.75"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "51.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "27.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "189.75"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "205.55 (+10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 189.75,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "104.02 (-45 %)",
+       "101.19 (-46 %)",
+       "105.17 (-43 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "171.27 (-9 %)",
+       "190.12 (+1 %)",
+       "204.32 (+10 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "240.76 (+27 %)",
+       "294.87 (+57 %)",
+       "359.20 (+92 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "164.99 (-13 %)",
+       "184.39 (-2 %)",
+       "205.55 (+10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/klac/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KLAC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "KLA dividend: history, coverage and yield",
+   "meta_description": "KLA dividend history, cash coverage, payout plans, risks and current yield, explained in plain English.",
+   "opening": "KLA's dividend rose from $0.42 in FY2022 to $0.80 in FY2026. FY2026 free cash flow was $3.767 billion, and KLA paid out 96.8% of real free cash flow, covering the dividend within a broader shareholder-return program that included buybacks.",
+   "closing": "The full KLA memo also examines its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does KLA pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $1.04 per share to $1.56 in the base case. The bear freezes the current annualized rate of $0.92, while the bull reaches $2.00. The base follows a history of annual increases from $0.42 in FY2022 to $0.80 in FY2026 and leaves room for buybacks under the target of returning more than 90% of free cash flow. FY2026 free cash flow was $3.767 billion."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "0.80",
+        "0.68",
+        "0.57",
+        "0.52",
+        "0.42"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.74",
+        "1.61",
+        "1.27",
+        "0.94",
+        "3.21"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.32",
+        "0.51",
+        "0.38",
+        "0.92",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is KLA's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 92,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The share count fell from 1,337,502 thousand in FY2025 to 1,319,633 thousand in FY2026, but fewer shares alone do not prove that every repurchase created value. Employee equity also offset part of the reduction, and the 96.8% “real free cash flow” payout ratio cannot be fully assessed without its reconciliation. The fairest conclusion is therefore mixed: KLA funded continuing development, reduced debt after an aggressive 2022, and returned substantial cash, but the value of the full buyback program remains unproven."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,767,134",
+        "3,741,694",
+        "3,031,191",
+        "3,328,214",
+        "3,005,382"
+       ],
+       [
+        "− Dividends paid",
+        "1,057,832",
+        "904,594",
+        "773,041",
+        "732,556",
+        "638,528"
+       ],
+       [
+        "− Share buybacks",
+        "2,289,769",
+        "2,149,946",
+        "1,735,746",
+        "1,311,864",
+        "4,867,806"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "419,533",
+        "687,154",
+        "522,404",
+        "1,283,794",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "88.9%",
+        "81.6%",
+        "82.8%",
+        "61.4%",
+        "183.2%"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "96.8%",
+        "87.9%",
+        "89.0%",
+        "64.8%",
+        "191.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change KLA's dividend?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes export controls and a synchronized fab pause leave China orders unreplaced, while packaging qualifications take longer. Receivables and inventory weaken cash conversion, buybacks slow and the multiple contracts. It produces $104.02 in October 2027 and $105.17 in October 2029, with a 30% probability. China was 29.8% of FY2026 sales by destination, and receivables grew about 28% against 11.7% revenue growth."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,176 (5,184 / 6,800)",
+        "7,180 (5,580 / 7,920)",
+        "8,106 (6,192 / 9,200)"
+       ],
+       [
+        "Dividends per share",
+        "1.04 (0.92 / 1.12)",
+        "1.28 (0.92 / 1.52)",
+        "1.56 (0.92 / 2.00)"
+       ],
+       [
+        "Net debt",
+        "-340 (-1,096 / 200)",
+        "-2,291 (-3,748 / -1,213)",
+        "-4,747 (-7,074 / -3,299)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is KLA's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The low free-cash-flow yield means the buyer receives little current cash relative to the purchase price. The dividend yield is smaller still, and dividends are only one use of the cash KLA generates. The price therefore depends heavily on what comes next."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "0.80"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jun 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.42",
+      "0.52",
+      "0.57",
+      "0.68",
+      "0.80"
+     ],
+     "Real free cash flow per share": [
+      "1.90",
+      "2.25",
+      "2.07",
+      "2.60",
+      "2.62"
+     ],
+     "Free cash flow per share": [
+      "1.98",
+      "2.37",
+      "2.23",
+      "2.80",
+      "2.85"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/klac/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KLAC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "KLA earnings date and guidance",
+   "meta_description": "KLA reports on October 28, 2026; guidance covers revenue, margins and diluted EPS, with cash conversion to watch.",
+   "opening": "KLA's next results are expected on October 28, 2026. For KLA, watch whether sales become cash promptly.",
+   "closing": "The full memo also answers how KLA makes money, who it competes with, how management is paid and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "What has KLA guided for the next results?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The first test is the quarter ended September 30, 2026. On July 28, KLA guided revenue to US$3.8–4.2 billion. It guided GAAP diluted earnings per share to US$1.04–1.24, with results scheduled for October 28."
+      },
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also guided GAAP gross margin to 60.6%–62.6%. Gross margin is what remains after the direct cost of supplying equipment and services, before research, administration and other expenses. KLA’s adjusted EPS guidance is US$1.06–1.26 because it excludes specified acquisition-related charges and their tax effect."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total revenues",
+        "Quarter to Sep 2026",
+        "3,800,000",
+        "4,200,000",
+        "Jul 28, 2026"
+       ],
+       [
+        "GAAP gross margin",
+        "Quarter to Sep 2026",
+        "60.6%",
+        "62.6%",
+        "Jul 28, 2026"
+       ],
+       [
+        "GAAP net income per diluted share",
+        "Quarter to Sep 2026",
+        "1.04",
+        "1.24",
+        "Jul 28, 2026"
+       ],
+       [
+        "Non-GAAP net income per diluted share",
+        "Quarter to Sep 2026",
+        "1.06",
+        "1.26",
+        "Jul 28, 2026"
+       ],
+       [
+        "Advanced Packaging process control systems revenue",
+        "Calendar 2026",
+        "1,100,000",
+        "1,100,000",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did KLA keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The targets were exceeded. In calendar 2024, operating profit reached US$4.404 billion against a US$3.93 billion target. In calendar 2025, it reached US$5.556 billion against a US$5.0 billion target, producing Wallace’s maximum bonus of 200 percent of target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is KLA's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Profit broadly kept pace with sales. Operating income rose 15.0%, while gross margin reached 61.4%, above March but below the prior June. Management cited service mix and manufacturing scale as offsets to expensive memory components and tariffs. Net income grew 13.3%, and the ten-for-one stock split makes the per-share comparisons comparable."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,657,556",
+        "3,415,078",
+        "3,297,146",
+        "3,209,696",
+        "3,174,741",
+        "3,063,029",
+        "3,076,851",
+        "2,841,541"
+       ],
+       [
+        "Gross margin",
+        "61.4%",
+        "61.1%",
+        "61.4%",
+        "61.3%",
+        "62.0%",
+        "61.6%",
+        "60.3%",
+        "59.6%"
+       ],
+       [
+        "Operating income",
+        "1,553,948",
+        "1,407,509",
+        "1,362,146",
+        "1,337,177",
+        "1,351,760",
+        "1,300,392",
+        "1,003,052",
+        "1,119,923"
+       ],
+       [
+        "Net income",
+        "1,363,059",
+        "1,200,990",
+        "1,145,682",
+        "1,121,040",
+        "1,202,849",
+        "1,088,416",
+        "824,527",
+        "945,851"
+       ],
+       [
+        "EPS, diluted",
+        "1.04",
+        "0.91",
+        "0.87",
+        "0.85",
+        "0.91",
+        "0.82",
+        "0.62",
+        "0.70"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in KLA's next results?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The October 28 release will test September guidance and the analyst forecast together. Revenue will show demand, gross margin will show whether that demand remains profitable, and cash flow will show whether sales become cash promptly. December-quarter guidance should reveal whether KLA remains on course for its 20.0% second-half growth expectation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "3,657,556"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.04"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,841,541",
+      "3,076,851",
+      "3,063,029",
+      "3,174,741",
+      "3,209,696",
+      "3,297,146",
+      "3,415,078",
+      "3,657,556"
+     ],
+     "EPS, diluted": [
+      "0.70",
+      "0.62",
+      "0.82",
+      "0.91",
+      "0.85",
+      "0.87",
+      "0.91",
+      "1.04"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/klac/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=KLAC&src=seo-earnings"
+  }
+ },
+ "short_name": "KLA",
+ "first_memo_date": "2026-10-12T21:03:04Z"
+}

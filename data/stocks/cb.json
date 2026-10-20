@@ -1,0 +1,736 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CB",
+ "slug": "cb",
+ "company": "Chubb Limited",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-15T06:02:09Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 350.15,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 262,
+  "tables": 27,
+  "words": 17285,
+  "sources": 239
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Chubb sells promises that protect people and organizations from losses they could not comfortably pay themselves. Its dollar comes in mainly through premiums, then goes out through claims, operating costs and risk-sharing, while money awaiting payment can earn investment income."
+ },
+ "sources": [
+  {
+   "title": "reported premiums",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000089615924000003/cb-20231231.htm"
+  },
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-04-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000110465926039513/tm2527783-7_def14a.htm"
+  },
+  {
+   "title": "Q2 2026 supplement, page 25",
+   "url": "https://www.sec.gov/Archives/edgar/data/896159/000119312526310312/d78544dex992.htm"
+  }
+ ],
+ "rivals": [
+  "AIG",
+  "ALV.DE",
+  "CS.PA",
+  "CNA",
+  "HIG",
+  "TRV",
+  "ZURN.SW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Chubb stock forecast",
+   "meta_description": "Chubb stock forecast weighs bear, base and bull scenarios against underwriting, reserves, cash generation and valuation.",
+   "opening": "Chubb's weighted price is $349.07 in October 2027, a 1% return including dividends, and $397.18 in October 2029, a 17% return. Chubb's forecast hinges on casualty prices versus loss-cost trends during 2027–2029.",
+   "closing": "The full Chubb memo also explains Chubb's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Chubb's shares go in each scenario?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $349.07 in October 2027, a 1% return including dividends. It is $397.18 in October 2029, a 17% return. The bear case has 25% probability, the base case 55% and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 350.15, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 350.15, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "282.00 (-18 %)",
+        "254.55 (-25 %)",
+        "225.55 (-32 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "363.03 (+5 %)",
+        "385.98 (+13 %)",
+        "408.58 (+20 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "394.49 (+14 %)",
+        "480.82 (+40 %)",
+        "580.35 (+70 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "349.07 (+1 %)",
+        "372.09 (+9 %)",
+        "397.18 (+17 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Chubb, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at $10,700M and falls to $10,000M. It then falls to $9,200M as casualty inflation, catastrophes and adverse reserves outweigh savings and investment income. The bull case starts at $11,300M, then reaches $12,400M and $13,600M as pricing improves, catastrophes remain manageable and Life and Benefits grow profitably."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Chubb really make?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Cash flow adds another test. Adjusted operating cash flow fell to $13,906 million in 2025 despite higher earnings. The $158 million adverse development in corporate run-off reserves in Q2 2026 shows why older liabilities can still consume capital."
+      }
+     ],
+     "table": {
+      "title": "The insurer's own measures",
+      "unit": "US$ millions",
+      "caption": "The insurer's own measures (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "P&C net premiums written",
+        "47,563",
+        "45,142",
+        "41,896",
+        "38,112",
+        "35,391"
+       ],
+       [
+        "Adjusted net investment income",
+        "6,947",
+        "6,376",
+        "5,343",
+        "4,023",
+        "3,719"
+       ],
+       [
+        "Adjusted operating cash flow",
+        "13,906",
+        "15,904",
+        "12,182",
+        "11,258",
+        ""
+       ]
+      ],
+      "note": "Global property and casualty net premiums written is lower because it leaves out Agriculture, while property and casualty net premiums written includes it."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Chubb today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing price-to-earnings ratio, or P/E, says investors pay $12.40 for each dollar of recent profit. On core earnings, which remove specified investment and accounting effects, the multiple is 12.0x. Neither measure automatically represents a normal year."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "350.15"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.4x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "12.0x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.8x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": "The price-to-earnings numbers show how many dollars investors pay for each dollar of the company's profit, so a lower number generally means the shares are cheaper relative to profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "350.15"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "397.18 (+17 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.4x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 350.15,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "282.00 (-18 %)",
+       "254.55 (-25 %)",
+       "225.55 (-32 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "363.03 (+5 %)",
+       "385.98 (+13 %)",
+       "408.58 (+20 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "394.49 (+14 %)",
+       "480.82 (+40 %)",
+       "580.35 (+70 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "349.07 (+1 %)",
+       "372.09 (+9 %)",
+       "397.18 (+17 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cb/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CB&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Chubb dividend: payment, coverage and yield",
+   "meta_description": "Chubb pays a growing dividend supported by operating cash flow, while buybacks and capital needs shape what comes next.",
+   "opening": "Chubb pays $1.02 per quarter, or $4.08 annually. Its adjusted operating cash flow was $13,906 million in 2025, covering the dividend while leaving cash for buybacks and capital kept in the business.",
+   "closing": "The full Chubb memo also explains Chubb’s business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Chubb pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The current quarterly dividend is $1.02. The base case produces $4.18 per share in October 2027, then $4.38 and $4.58. The bear path gives $4.08, then $4.16 and $4.24. The bull path gives $4.22, then $4.50 and $4.78."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base repeats a measured annual increase, consistent with dividends rising from $3.18 in 2021 to $3.82 in 2025. The approved 2026 annual dividend is $4.08, but it is not a multi-year commitment."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "25.68",
+        "22.70",
+        "21.80",
+        "12.39",
+        "19.24"
+       ],
+       [
+        "− Dividends, per share",
+        "3.79",
+        "3.56",
+        "3.38",
+        "3.26",
+        "3.14"
+       ],
+       [
+        "− Share buybacks, per share",
+        "9.20",
+        "4.41",
+        "5.82",
+        "6.83",
+        "10.97"
+       ],
+       [
+        "**= Kept, per share**",
+        "12.69",
+        "14.73",
+        "12.59",
+        "2.30",
+        "5.13"
+       ]
+      ],
+      "note": "Share buybacks do not add profit to each share; they reduce the number of shares, so each remaining share owns a larger slice of the business."
+     }
+    },
+    {
+     "heading": "Is Chubb’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Cash flow adds another test. Adjusted operating cash flow fell to $13,906 million in 2025 despite higher earnings. The $158 million adverse development in corporate run-off reserves in Q2 2026 shows why older liabilities can still consume capital."
+      },
+      {
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Retained earnings are accumulated accounting profit, not a separate bank account. Chubb must keep capital invested and available because claims can arrive years after premiums are collected. A hurricane can create billions of dollars of losses suddenly, while capital also allows the company to write new policies."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "10,310",
+        "9,272",
+        "9,028",
+        "5,246",
+        "8,525"
+       ],
+       [
+        "**= Earnings for common shareholders**",
+        "10,310",
+        "9,272",
+        "9,028",
+        "5,246",
+        "8,525"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,520",
+        "1,455",
+        "1,401",
+        "1,379",
+        "1,392"
+       ],
+       [
+        "− Share buybacks",
+        "3,694",
+        "1,801",
+        "2,411",
+        "2,894",
+        "4,861"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "5,096",
+        "6,016",
+        "5,216",
+        "973",
+        "2,272"
+       ]
+      ],
+      "note": "The paid out percentage includes both dividends and share buybacks, so it shows all cash returned to shareholders, not just dividends."
+     }
+    },
+    {
+     "heading": "What could change Chubb’s dividend?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "In May 2026, Chubb authorized up to $7.5 billion of repurchases. The authorization began July 1 and has no expiration. Shareholders approved an annual dividend of up to $4.08 per share, although the board can choose whether to distribute each installment. Chubb also issued $2.2 billion of debt, with proceeds available for repayment and refinancing. The real question is whether retained capital earns enough to justify keeping it, and whether returned capital was genuinely surplus."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Chubb’s dividend yield against its price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "350.15"
+       ],
+       [
+        "Market value (calculated)",
+        "135,087.82"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": "The price-to-earnings numbers show how many dollars investors pay for each dollar of the company's profit, so a lower number generally means the shares are cheaper relative to profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "1.2%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.7%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/cb/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CB&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Chubb earnings: date, guidance and what to watch",
+   "meta_description": "Chubb's next results are expected on October 20, 2026; watch casualty pricing against loss costs and management's guidance.",
+   "opening": "Chubb's next results are expected on October 20, 2026. Watch casualty pricing against loss costs.",
+   "closing": "The full memo also explains Chubb's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Chubb guided for the year?",
+     "paragraphs": [
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Recent results support the ambition. In the first half of 2026, annualized core ROE and core ROTE were already above management’s thresholds. Annualized means expressing a shorter period as a yearly rate; it does not mean the remaining quarters have been earned. Evan Greenberg also said his outlook for potentially double-digit EPS growth was not guidance, especially as insurance markets softened."
+      },
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Chubb’s investment and automation plans are meant to support those returns. Private investments are intended to produce substantial annual operating income, including a separate yield from its Strategic Holdings Partnership with investment firm KKR; those amounts should not be added together. Private investments are also planned to become a larger share of the portfolio. Automation is intended to reduce headcount and recurring expenses. A combined ratio measures claims and expenses against earned premiums: below 100% means underwriting profit before investment income."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Core ROE",
+        "Medium term",
+        "14.0%",
+        "",
+        "Dec 8, 2025"
+       ],
+       [
+        "Core ROTE",
+        "Medium term",
+        "20.0%",
+        "",
+        "Dec 8, 2025"
+       ],
+       [
+        "Annual operating income from private investments",
+        "Medium term",
+        "2,000",
+        "2,000",
+        "Dec 8, 2025"
+       ],
+       [
+        "Strategic Holdings Partnership annual yield",
+        "Medium term",
+        "1,000",
+        "1,000",
+        "Dec 8, 2025"
+       ],
+       [
+        "Circa headcount reduction",
+        "Three to four years",
+        "20.0%",
+        "20.0%",
+        "Dec 8, 2025"
+       ],
+       [
+        "Run-rate expense savings (combined ratio points)",
+        "Three to four years",
+        "1.5",
+        "1.5",
+        "Dec 8, 2025"
+       ]
+      ],
+      "note": "The share repurchase authorization is permission to buy back up to US$7,500 million of shares, not a promise that the company will spend it."
+     }
+    },
+    {
+     "heading": "What has Chubb's recent results shown?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 showed strong operating performance, but the headline numbers benefited from easier comparisons and lower catastrophe losses."
+      },
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Core operating income rose 14.6% to $2,842 million, while net income fell to $2,854 million. The prior-year quarter contained larger realized investment gains, so reported net income gives a less favorable comparison than recurring operations."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Net premiums written",
+        "14,705",
+        "14,005",
+        "13,134",
+        "14,866",
+        "14,196",
+        "12,646",
+        "12,058",
+        "13,829"
+       ],
+       [
+        "Combined ratio",
+        "83.8%",
+        "84.0%",
+        "81.2%",
+        "81.8%",
+        "85.6%",
+        "95.7%",
+        "85.7%",
+        "87.7%"
+       ],
+       [
+        "Core operating income",
+        "2,842",
+        "2,689",
+        "2,982",
+        "3,003",
+        "2,480",
+        "1,489",
+        "2,451",
+        "2,334"
+       ],
+       [
+        "Net income",
+        "2,854",
+        "2,320",
+        "3,210",
+        "2,801",
+        "2,968",
+        "1,331",
+        "2,575",
+        "2,324"
+       ],
+       [
+        "EPS, diluted",
+        "7.30",
+        "5.88",
+        "8.10",
+        "6.99",
+        "7.35",
+        "3.29",
+        "6.33",
+        "5.70"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Chubb's next results?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Chubb expects to release third-quarter results after the market closes on October 20, 2026, followed by its call the next morning. Investors should listen for changes in pricing, claims and Greenberg’s earnings outlook."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "7.30"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "5.70",
+      "6.33",
+      "3.29",
+      "7.35",
+      "6.99",
+      "8.10",
+      "5.88",
+      "7.30"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cb/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CB&src=seo-earnings"
+  }
+ },
+ "short_name": "Chubb",
+ "first_memo_date": "2026-10-15T06:02:09Z"
+}

@@ -1,0 +1,754 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SLF.TO",
+ "slug": "slf-to",
+ "company": "Sun Life Financial Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "insurer",
+ "country": "canada",
+ "memo_date": "2026-10-15T04:31:12Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 111.21,
+ "price_date": "2026-10-14T20:00:00Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 240,
+  "tables": 25,
+  "words": 15536,
+  "sources": 184
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sun Life Financial Inc. is a company people and institutions pay to protect income, health and families, administer savings, and invest money. Its business becomes clearer when you follow a dollar from the customer’s payment through claims, investments, fees and costs to the shareholder’s residual."
+ },
+ "sources": [
+  {
+   "title": "Sun Life 2025 operating review",
+   "url": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000010/a2025q4slfmdalive.htm"
+  },
+  {
+   "title": "Sun Life, Q2 2026 shareholders’ report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm"
+  },
+  {
+   "title": "Products & services",
+   "url": "https://www.sunlife.com/en/investors/shareholder-services/dividend-history/sun-life-financial-common-share"
+  }
+ ],
+ "rivals": [
+  "MET",
+  "PRU",
+  "PFG",
+  "AFL",
+  "1299.HK",
+  "PRU.L",
+  "LGEN.L",
+  "ALV.DE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sun Life stock forecast",
+   "meta_description": "Sun Life stock forecast: weighted C$109.28 in October 2027, with bear, base and bull cases and the earnings and capital drivers behind them.",
+   "opening": "The weighted forecast is C$109.28 in October 2027. It hinges on durable earnings.",
+   "closing": "The full memo also explains Sun Life’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Sun Life’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is C$109.28 in October 2027, a +2% return including dividends. It reaches C$118.43 in October 2029, a +17% return including dividends. The bear case carries 22% probability. The base case carries 58%. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 111.21, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 111.21, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "22%",
+        "75.05 (-29%)",
+        "73.35 (-27%)",
+        "71.35 (-26%)"
+       ],
+       [
+        "Base",
+        "58%",
+        "115.35 (+7%)",
+        "118.92 (+14%)",
+        "122.30 (+20%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "129.34 (+20%)",
+        "143.70 (+36%)",
+        "158.99 (+54%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "109.28 (+2%)",
+        "113.85 (+9%)",
+        "118.43 (+17%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Sun Life, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires MFS outflows, difficult U.S. dental and stop-loss claims, and acquisition demands to persist. Earnings then miss the 10% objective, capital returns weaken and the valuation derates. The shares reach C$75.05 in October 2027 and C$71.35 in October 2029. Its 22% probability reflects meaningful risks, but LICAT remains positive and the dividend record has been resilient."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would remain supported if EPS grows at a high-single-digit pace, dental margins improve gradually and SLC deployment converts into fees. The bull case would gain credibility if MFS flows stabilize, Asia produces stronger new-business CSM and healthier claims support both higher earnings and sustained repurchases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Sun Life really make?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.11 — Earnings mix, capital generation and shareholder returns",
+       "text": "The specialist reconciles earnings to organic capital generation, which includes underlying income and CSM movement while allowing for dividends and required solvency capital. Segment transfers can also change presentation without changing the economics."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "C$ millions",
+      "caption": "Results (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Underlying net income",
+        "4,201",
+        "3,856",
+        "3,728",
+        "3,369",
+        ""
+       ],
+       [
+        "Net income",
+        "3,551",
+        "3,129",
+        "3,165",
+        "2,941",
+        ""
+       ],
+       [
+        "Dividend per share",
+        "3.52",
+        "3.24",
+        "3.00",
+        "2.76",
+        "2.31"
+       ],
+       [
+        "Underlying ROE",
+        "18.2%",
+        "17.2%",
+        "17.8%",
+        "17.0%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sun Life?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At C$111.21, Sun Life costs 14.4 times its underlying annual earnings, so the investment depends on how much of those earnings can grow and reach shareholders."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "111.21"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.8x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "14.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.9x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "111.21"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "118.43 (+17%)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "18.8x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 111.21,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "22%",
+      "values": [
+       "75.05 (-29%)",
+       "73.35 (-27%)",
+       "71.35 (-26%)"
+      ]
+     },
+     "Base": {
+      "probability": "58%",
+      "values": [
+       "115.35 (+7%)",
+       "118.92 (+14%)",
+       "122.30 (+20%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "129.34 (+20%)",
+       "143.70 (+36%)",
+       "158.99 (+54%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "109.28 (+2%)",
+       "113.85 (+9%)",
+       "118.43 (+17%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/slf-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SLF.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Sun Life dividend",
+   "meta_description": "Sun Life paid C$3.52 per share in 2025; its 48% payout ratio and C$602 million after dividends show how cash supports the dividend.",
+   "opening": "Sun Life paid C$3.52 per share in 2025, up from C$2.31 in 2021. Its underlying dividend payout ratio was 48% in the second quarter of 2026, and it produced C$602 million after dividends in the first half of 2026.",
+   "closing": "The full Sun Life memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Sun Life pay shareholders?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.11 — Earnings mix, capital generation and shareholder returns",
+       "text": "In the second quarter of 2026, the underlying dividend payout ratio was 48%, within the 40–50% objective. Dividends per share rose from C$2.31 in 2021 to C$3.52 in 2025, but future payments depend on remittable subsidiary capital and parent liquidity, not history alone."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per common share",
+      "caption": "What one share gets (C$ per common share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends, per share",
+        "3.49",
+        "3.22",
+        "2.99",
+        "2.74",
+        "2.29"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.02",
+        "1.47",
+        "0.32",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "",
+        "0.55",
+        "1.93",
+        "2.13",
+        ""
+       ],
+       [
+        "**= Paid out more, per share**",
+        "0.37",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "In 2025, Sun Life paid shareholders more than it earned because dividends and share buybacks together exceeded its profit per share."
+     }
+    },
+    {
+     "heading": "Is Sun Life's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Insurance capital also makes ordinary industrial measures misleading. Much of an insurer’s investment portfolio supports future claims, so it is not spare cash that can simply be netted against debt. Sun Life’s parent company held C$2.3 billion of cash and liquid assets, while subordinated debt was C$8,920 million. Capital generation is the better test: Sun Life produced C$602 million after dividends in the first half of 2026, while its underlying payout ratio was 48%."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "Follow the money: what it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "3,472",
+        "3,049",
+        "3,086",
+        "2,871",
+        ""
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,975",
+        "1,875",
+        "1,762",
+        "1,614",
+        "1,351"
+       ],
+       [
+        "− Share buybacks",
+        "1,707",
+        "855",
+        "186",
+        "0",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "",
+        "319",
+        "1,138",
+        "1,257",
+        ""
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "210",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "106.0%",
+        "89.5%",
+        "63.1%",
+        "56.2%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Sun Life's dividend?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise moderately in the base case from C$3.70 to C$3.90 and then C$4.10. This is below the recent 8%–9% annual increases because the current payout is already 48% and operating risks remain. The bear case holds dividends near C$3.69 throughout, protecting capital if earnings weaken. The bull case reaches C$3.80, C$4.18 and C$4.60 as claims improve and earnings reach the medium-term target."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if MFS withdrawals weaken fee growth, U.S. claims outpace repricing during 2027–2028, or capital demands constrain buybacks through 2029. A weaker LICAT ratio or slower underlying EPS growth would also make the lower multiple more credible."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Sun Life's dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.4 — How the price moved",
+       "text": "The shares rose 27.0% over one year and 20.3% over six months, but declined 0.6% over three months. At C$111.21, they were about 6.5% below the annual high and 39% above the low. This describes the path of the price, not the cause of each move."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "111.21"
+       ],
+       [
+        "Market value (calculated)",
+        "61,928.93"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.8x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "14.4x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.6x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.5%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.5%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.8%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/slf-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SLF.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sun Life earnings: guidance and results",
+   "meta_description": "Sun Life's November 4, 2026 results should show whether Bell adds earnings and capital recovers.",
+   "opening": "Sun Life's next results are expected on November 4, 2026. Watch whether Sun Life's Bell deal adds earnings and whether its capital recovers.",
+   "closing": "The full memo answers how Sun Life's business works, who its rivals are, how its management operates, and what risks matter.",
+   "blocks": [
+    {
+     "heading": "What has Sun Life guided for the year?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The main target is **10.0% underlying EPS growth**. EPS means profit per share; “underlying” means Sun Life adjusts reported profit to remove items it considers less representative of continuing operations. The other targets measure different things: **20.0% underlying ROE** measures profit against shareholders’ equity, while the **40.0%–50.0% payout objective** measures the share of underlying profit paid as dividends."
+      },
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The more concrete commitment is **C$200 million of annual pre-tax savings by 2026**. That means recurring expenses should be lower before tax; it does not mean a cheque arrives on that date. Closing offices could require restructuring payments first, and inflation or replacement spending could absorb part of the benefit. Analysts must also count the saving only once if it is already included in their forecasts."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "C$ millions",
+      "caption": "Targets and guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Underlying EPS growth",
+        "Medium term",
+        "10.0%",
+        "10.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Underlying ROE",
+        "Medium term",
+        "20.0%",
+        "20.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Underlying dividend payout ratio",
+        "Medium term",
+        "40.0%",
+        "50.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Financial leverage ratio",
+        "Medium term",
+        "25.0%",
+        "25.0%",
+        "Feb 11, 2026"
+       ],
+       [
+        "Annual savings (pre-tax)",
+        "By 2026",
+        "200",
+        "200",
+        "Feb 11, 2026"
+       ]
+      ],
+      "note": "The company's medium-term targets are goals, not guaranteed results, and its underlying numbers use its own adjusted calculation rather than standard accounting."
+     }
+    },
+    {
+     "heading": "Has Sun Life kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 114,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Performance was mixed. Underlying earnings per share grew 12% in 2025 against a 10% objective. Underlying return on equity was 18.2% against a 20% objective. “Underlying” means management’s adjusted measure, with specified items removed. The second quarter of 2026 reached 19.1%, but the four-year measure remained 17.6%, so one strong quarter did not complete the longer promise."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Sun Life's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Canada, Asia and the United States all contributed to underlying improvement. Public-equity effects, real-estate experience and the previous year’s dental impairment additionally lifted reported comparisons. The last eight quarters show much wider swings in reported income than in underlying income, so the latest result is not automatically a sustainable quarterly run rate."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Underlying net income",
+        "1,123",
+        "1,050",
+        "1,094",
+        "1,047",
+        "1,015",
+        "1,045",
+        "965",
+        "1,016"
+       ],
+       [
+        "Net income",
+        "1,030",
+        "485",
+        "742",
+        "1,126",
+        "735",
+        "948",
+        "257",
+        "1,368"
+       ],
+       [
+        "EPS, diluted",
+        "1.81",
+        "0.84",
+        "1.29",
+        "1.97",
+        "1.26",
+        "1.62",
+        "0.41",
+        "2.33"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Sun Life watchers watch next?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The key checkpoint is Sun Life’s third-quarter release on **November 4, 2026**, followed by its call the next day. Bell will then be part of the group. Its contribution, the shares issued and any repurchases should make the purchase economics easier to judge. The same results will show whether capital has continued recovering after the first-quarter acquisition spending."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.81"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "2.33",
+      "0.41",
+      "1.62",
+      "1.26",
+      "1.97",
+      "1.29",
+      "0.84",
+      "1.81"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/slf-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SLF.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Sun Life",
+ "first_memo_date": "2026-10-15T04:31:12Z"
+}

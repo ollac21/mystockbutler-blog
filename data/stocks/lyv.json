@@ -1,0 +1,591 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "LYV",
+ "slug": "lyv",
+ "company": "Live Nation Entertainment, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T18:54:47Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 171.84,
+ "price_date": "2026-10-19T17:19:34Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 27,
+  "words": 17691,
+  "sources": 191
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Live Nation Entertainment is a live-events company: it helps create the show, controls places where it happens, processes the ticket, and sells brands access to the audience. To understand its business, follow one dollar from a fan, venue, or sponsor through the artist, suppliers, clients, and company."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Concerts revenue",
+   "url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000009/lyv-20251231.htm"
+  },
+  {
+   "title": "Q2 2026 Form 10-Q, Note 2",
+   "url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000034/lyv-2026q2xex991er.htm"
+  }
+ ],
+ "rivals": [
+  "EVD.DE",
+  "STUB",
+  "SEAT",
+  "MSGE",
+  "TKO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Live Nation stock forecast",
+   "meta_description": "Live Nation's stock forecast spans bear, base and bull cases, shaped by venue growth, cash conversion and legal outcomes.",
+   "opening": "Live Nation's weighted case reaches $169.38 in October 2029. It hinges on profitable venue growth, cash conversion and a manageable legal outcome.",
+   "closing": "The full memo also explains Live Nation's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Live Nation's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At today's $171.84, the weighted path reaches $181.25 in October 2027. That is a 5% return including dividends. It then falls to $165.10 in October 2028, a negative 4% return. By October 2029, it reaches $169.38, a negative 1% return. Every case assumes no dividend, so these returns come from the share price."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 171.84, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 171.84, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "103.20 (-40 %)",
+        "49.16 (-71 %)",
+        "48.30 (-72 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "192.19 (+12 %)",
+        "184.93 (+8 %)",
+        "185.18 (+8 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "270.98 (+58 %)",
+        "289.44 (+68 %)",
+        "311.52 (+81 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "181.25 (+5 %)",
+        "165.10 (-4 %)",
+        "169.38 (-1 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Live Nation?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base path uses revenue of $30.1 billion and a normalized margin of 4.0% initially. Revenue reaches $32.5 billion while the margin stays at 4.0%. By 2029, revenue reaches $35.0 billion and the margin improves to 4.2%. The assumptions reflect 10% attendance growth guidance and 25 large venues scheduled through 2027, but also rising depreciation and a low-margin concerts business."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $885 million, then $763 million, because remedies and costs overwhelm venue growth. The bull case reaches $1,488 million and later $1,961 million because strong demand, productive openings and ancillary spending create operating leverage. Live Nation reported 159.166 million fans in 2025 and more than $45 of ancillary spending per US amphitheater fan."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Live Nation really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Venue investment then reduces what remains. In 2025, operating cash flow less capital spending left free cash flow of US$333.611 million. After treating stock compensation as an economic cost, real free cash flow was US$178.392 million, or 0.7% of revenue."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,395,316",
+        "1,725,175",
+        "1,362,974",
+        "1,835,047",
+        "1,780,568"
+       ],
+       [
+        "− Capital spending",
+        "1,061,705",
+        "646,634",
+        "438,604",
+        "347,206",
+        "152,734"
+       ],
+       [
+        "**= Free cash flow**",
+        "333,611",
+        "1,078,541",
+        "924,370",
+        "1,487,841",
+        "1,627,834"
+       ],
+       [
+        "− Stock pay",
+        "155,219",
+        "110,348",
+        "115,959",
+        "110,049",
+        "209,337"
+       ],
+       [
+        "**= Real free cash flow**",
+        "178,392",
+        "968,193",
+        "808,411",
+        "1,377,792",
+        "1,418,497"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "0.7%",
+        "4.2%",
+        "3.6%",
+        "8.3%",
+        "22.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Live Nation today?",
+     "paragraphs": [
+      {
+       "n": 190,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The forward P/E measures the price paid for forecast earnings per share. But common EPS excludes profits belonging to minority partners and can also be reduced by accretion on redeemable interests. In 2025, Live Nation reported approximately $496 million of income attributable to common shareholders, but a $551 million accretion adjustment produced a loss for the EPS calculation. The operating business can therefore grow while the common-share earnings denominator remains weak."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "171.84"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "40,555,207"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "92.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.4%"
+       ]
+      ],
+      "note": "The last-12-month price-to-earnings ratio is not meaningful because the company lost money, leaving no positive profit to compare with the share price."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "171.84"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "169.38 (-1 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "92.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 171.84,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "103.20 (-40 %)",
+       "49.16 (-71 %)",
+       "48.30 (-72 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "192.19 (+12 %)",
+       "184.93 (+8 %)",
+       "185.18 (+8 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "270.98 (+58 %)",
+       "289.44 (+68 %)",
+       "311.52 (+81 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "181.25 (+5 %)",
+       "165.10 (-4 %)",
+       "169.38 (-1 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/lyv/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LYV&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Live Nation earnings",
+   "meta_description": "Live Nation's next results are expected November 3, 2026; guidance calls for 10.0% fan growth, 75 million Venue Nation fans and $1,100 million capex.",
+   "opening": "Live Nation's next results are expected on November 3, 2026. Watch whether Live Nation turns summer demand into earnings and cash while antitrust remedies shape the business.",
+   "closing": "The full Live Nation memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Live Nation guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management expects another strong year, but its central promise is not simply more fans; it is more profitable growth that turns into cash. For 2026, Live Nation expects fan attendance to rise 10.0% and Venue Nation, its owned or operated venue business, to host 75 million fans. Operating a venue lets the company earn beyond promotion and ticketing, including from food, parking, security, premium seating and sponsorship. That is why management says faster growth in operated venues should improve margins."
+      },
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The clearer cash promise is 55.0% conversion of AOI into adjusted free cash flow. That means $100 of AOI would produce $55 under Live Nation’s definition, after maintenance capital spending and payments to minority partners. It does not deduct all growth investment. Live Nation expects $1,100 million of capital expenditure in 2026, including $800 million for venue expansion. Depreciation and amortization are expected to grow 12.0%–15.0%, reflecting the expanding asset base."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except where labelled",
+      "caption": "Guidance in force (US$ millions, except where labelled)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Full-year fan attendance growth (%)",
+        "Year to Dec 2026",
+        "10.0%",
+        "10.0%",
+        "July 30, 2026"
+       ],
+       [
+        "Venue Nation fans (millions)",
+        "Year to Dec 2026",
+        "75",
+        "75",
+        "July 30, 2026"
+       ],
+       [
+        "Full year capital expenditures",
+        "Year to Dec 2026",
+        "1,100",
+        "1,100",
+        "July 30, 2026"
+       ],
+       [
+        "Venue expansion and enhancement projects",
+        "Year to Dec 2026",
+        "800",
+        "800",
+        "July 30, 2026"
+       ],
+       [
+        "Depreciation and amortization growth (%)",
+        "Year to Dec 2026",
+        "12.0%",
+        "15.0%",
+        "July 30, 2026"
+       ],
+       [
+        "Full year AOI to free cash flow—adjusted conversion (%)",
+        "Year to Dec 2026",
+        "55.0%",
+        "",
+        "July 30, 2026"
+       ]
+      ],
+      "note": "The company's capital spending total may be different from the cash it paid for buildings and equipment because the two measures count different things."
+     }
+    },
+    {
+     "heading": "Did Live Nation keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has also kept some promises. For 2025, it forecast double-digit operating-income and AOI growth. Reported growth was 52% and 10%, respectively. Venue expansion became a central commitment in November 2025, while Berchtold continued in July 2026 to describe investment decisions through required returns. The returns from the full expansion programme remain unfinished business."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Live Nation's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter showed healthy demand, but revenue growth exceeded operating-profit growth and concealed weaker Concerts contribution."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,666,858",
+        "3,793,029",
+        "6,313,505",
+        "8,499,143",
+        "7,006,641",
+        "3,382,117",
+        "5,681,593",
+        "7,651,087"
+       ],
+       [
+        "Gross margin",
+        "25.3%",
+        "34.7%",
+        "23.0%",
+        "24.3%",
+        "25.6%",
+        "33.3%",
+        "21.0%",
+        "24.5%"
+       ],
+       [
+        "Operating income",
+        "521,917",
+        "-370,516",
+        "-142,656",
+        "792,451",
+        "486,653",
+        "114,769",
+        "-239,444",
+        "639,525"
+       ],
+       [
+        "Net income",
+        "294,446",
+        "-389,104",
+        "-202,100",
+        "431,458",
+        "243,411",
+        "23,203",
+        "200,987",
+        "451,805"
+       ],
+       [
+        "EPS, diluted",
+        "1.05",
+        "-1.85",
+        "-1.06",
+        "0.73",
+        "0.41",
+        "-0.32",
+        "0.56",
+        "1.66"
+       ],
+       [
+        "**= Free cash flow**",
+        "129,749",
+        "2,029,857",
+        "-405,638",
+        "-371,266",
+        "-39,945",
+        "1,150,460",
+        "890,239",
+        "-878,963"
+       ]
+      ],
+      "note": "Free cash flow is not all the cash the company has left because this table subtracts only spending on equipment and buildings, not other cash uses."
+     }
+    },
+    {
+     "heading": "What should Live Nation watch in the next results?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will come from year-end execution and the antitrust remedies imposed on the company. The September-quarter report is estimated for November 3, 2026, but that date is unconfirmed. It should show whether the summer schedule translated into earnings and cash, and whether the improvement expected in the fourth quarter remains achievable."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "7,666,858"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.05"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "7,651,087",
+      "5,681,593",
+      "3,382,117",
+      "7,006,641",
+      "8,499,143",
+      "6,313,505",
+      "3,793,029",
+      "7,666,858"
+     ],
+     "EPS, diluted": [
+      "1.66",
+      "0.56",
+      "-0.32",
+      "0.41",
+      "0.73",
+      "-1.06",
+      "-1.85",
+      "1.05"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/lyv/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LYV&src=seo-earnings"
+  }
+ },
+ "short_name": "Live Nation",
+ "first_memo_date": "2026-10-19T18:54:47Z"
+}

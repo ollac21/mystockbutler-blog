@@ -1,0 +1,780 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TDG",
+ "slug": "tdg",
+ "company": "TransDigm Group Incorporated",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T01:33:27Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 1139.34,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 15898,
+  "sources": 197
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "TransDigm Group makes specialized parts that help aircraft and their engines work safely. Its business is built around selling those parts first for new equipment and then, when possible, again throughout the aircraft’s long working life."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1260221/000126022125000081/tdg-20250930.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1260221/000126022125000078/exhibit991tdg2025q4earning.htm"
+  },
+  {
+   "title": "TransDigm 2024 Investor Day presentation",
+   "url": "https://www.sec.gov/Archives/edgar/data/1260221/000126022124000060/investorday2024presentat.htm"
+  }
+ ],
+ "rivals": [
+  "CW",
+  "WWD",
+  "ETN",
+  "PH",
+  "CR",
+  "HEI",
+  "RTX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "TransDigm stock forecast",
+   "meta_description": "TransDigm stock forecast: weighted scenarios, case drivers, real free cash flow, and today’s valuation in plain English.",
+   "opening": "TransDigm's weighted price reaches $1,699.41 in October 2029, a 50% return including dividends. It hinges on cash generation.",
+   "closing": "The full TransDigm memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could TransDigm's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s central case is a substantial, but not risk-free, gain. The weighted price reaches $1,421.43 in October 2027, a 25% return including dividends. It reaches $1,555.27 in October 2028, a 37% return. By October 2029, it reaches $1,699.41, a 50% return."
+      },
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The last-date range is $852.53 in the bear case to $2,812.50 in the bull case. Today’s reference price is $1,139.34. The bear probability is 30%. The base probability is 50%. The bull probability is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1139.34, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1139.34, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30%",
+        "1030.96 (-10%)",
+        "937.84 (-18%)",
+        "852.53 (-25%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "1476.49 (+30%)",
+        "1624.72 (+43%)",
+        "1762.31 (+55%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "1869.50 (+64%)",
+        "2307.76 (+103%)",
+        "2812.50 (+153%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "1421.43 (+25%)",
+        "1555.27 (+37%)",
+        "1699.41 (+50%)"
+       ]
+      ],
+      "note": "The Weighted row is the probability-based average of the Bear, Base, and Bull estimates, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for TransDigm?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base assumes about 9% annual revenue growth and margins recovering from 23.6% to 25.0%. The bear uses 5% growth and margins around 19%. The bull uses 12% growth and margins rising from 25.5% to 28.1%. These choices reflect nine-month net income of $1,519M, raised FY26 guidance for net income of $2,102M–$2,150M, and 17% commercial aftermarket growth in the latest quarter. The bear allows for inventory weakness, acquisition dilution and financing pressure; the bull requires strong demand and faster integration."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "From October 2028 onward, cash generation is decisive. Strong free cash flow would support debt reduction, buybacks or acquisitions and defend the premium multiple. Weak cash generation, heavier debt service or pricing scrutiny would restrict capital allocation and compress valuation."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does TransDigm really make?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was $2,038 million in fiscal 2025. After $222 million of capital spending, free cash flow was $1,816 million, below net income of $2,074 million. That difference does not make the profit unreal; it shows that accounting earnings and cash arrive at different times."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,038",
+        "2,045",
+        "1,375",
+        "948",
+        "913"
+       ],
+       [
+        "− Capital spending",
+        "222",
+        "165",
+        "139",
+        "119",
+        "105"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,816",
+        "1,880",
+        "1,236",
+        "829",
+        "808"
+       ],
+       [
+        "− Stock pay",
+        "157",
+        "217",
+        "157",
+        "184",
+        "129"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,659",
+        "1,663",
+        "1,079",
+        "645",
+        "679"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "20.6%",
+        "23.7%",
+        "18.8%",
+        "15.3%",
+        "16.8%"
+       ]
+      ],
+      "note": "The company’s own free cash flow is higher because it adds back cash tied up in working capital, even though that cash has left the business for now."
+     }
+    },
+    {
+     "heading": "What does an investor pay for TransDigm today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1,139.34"
+       ],
+       [
+        "Market value (calculated)",
+        "62,978.76"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "93,690.76"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "34.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than the value of what it owns."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,139.34"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1699.41 (+50%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1139.34,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30%",
+      "values": [
+       "1030.96 (-10%)",
+       "937.84 (-18%)",
+       "852.53 (-25%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "1476.49 (+30%)",
+       "1624.72 (+43%)",
+       "1762.31 (+55%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "1869.50 (+64%)",
+       "2307.76 (+103%)",
+       "2812.50 (+153%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "1421.43 (+25%)",
+       "1555.27 (+37%)",
+       "1699.41 (+50%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/tdg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TDG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "TransDigm dividend: cash flow and yield",
+   "meta_description": "TransDigm has no regular dividend policy; special payments depend on capital needs, board discretion, and cash generation.",
+   "opening": "TransDigm's fiscal 2025 free cash flow was $1,816 million, but dividends and buybacks could exceed a year's free cash flow. TransDigm has no regular dividend policy, and special payments depend on capital needs and board discretion.",
+   "closing": "The full memo also covers the TransDigm business, TransDigm rivals, TransDigm management, and TransDigm risks.",
+   "blocks": [
+    {
+     "heading": "How much does TransDigm pay per share?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "The starting share count is 55.28 million, based on the latest reported figure. Future shares fall when repurchases exceed stock-based issuance. Dividends are treated separately because TransDigm has no regular dividend policy and says special payments depend on capital needs and board discretion."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "159.60",
+        "33.51",
+        "0.00",
+        "17.27",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "21.61",
+        "",
+        "13.84"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "136.99",
+        "0.99",
+        "",
+        "18.69",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it leaves out changes in money tied up in working capital, while our count includes them."
+     }
+    },
+    {
+     "heading": "Does TransDigm's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was $2,038 million in fiscal 2025. After $222 million of capital spending, free cash flow was $1,816 million, below net income of $2,074 million. That difference does not make the profit unreal; it shows that accounting earnings and cash arrive at different times."
+      },
+      {
+       "n": 74,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pattern is straightforward: dividends and buybacks could exceed a year’s free cash flow, while new borrowing helped bridge the gap. The 2025 special dividend was funded partly with new debt. That is like a household paying out more than its income by borrowing the difference: it can deliver cash immediately, but it leaves an interest obligation behind."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What could change the TransDigm dividend?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends are zero in the bear and base cases. The bull case adds $75 per share in the final period, matching a recent special-dividend precedent. No regular payment is assumed because acquisitions, refinancing, debt service and buybacks compete for cash."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,700 (2,190 / 3,000)",
+        "3,050 (2,250 / 3,550)",
+        "3,400 (2,350 / 4,150)"
+       ],
+       [
+        "Shares (millions)",
+        "54.86 (55.23 / 54.56)",
+        "54.44 (55.18 / 53.84)",
+        "54.02 (55.13 / 53.12)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 75.00)"
+       ],
+       [
+        "Price to earnings",
+        "30.00 (26.00 / 34.00)",
+        "29.00 (23.00 / 35.00)",
+        "28.00 (20.00 / 36.00)"
+       ]
+      ],
+      "note": "The numbers in brackets show the bear-case and bull-case estimates around the middle, base-case estimate."
+     }
+    },
+    {
+     "heading": "What is TransDigm's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A zero regular dividend yield does not mean TDG never returns cash. In September 2025, it paid about $5.07 billion in special dividends and $159 million in dividend-equivalent payments. It financed that distribution partly with $5 billion of new debt, so shareholders received cash while future financial obligations increased."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1,139.34"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.9%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "Price to book is not meaningful because the company owes more than the value of what it owns."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "159.60"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "17.27",
+      "0.00",
+      "33.51",
+      "159.60"
+     ],
+     "Real free cash flow per share": [
+      "11.63",
+      "11.08",
+      "18.86",
+      "28.77",
+      "28.51"
+     ],
+     "Free cash flow per share": [
+      "13.84",
+      "14.24",
+      "21.61",
+      "32.53",
+      "31.20"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/tdg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TDG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "TransDigm earnings date and guidance",
+   "meta_description": "TransDigm's next results are expected November 11, 2026; guidance calls for sales of $10,470–$10,550 million and adjusted EPS of $40.62–$41.46.",
+   "opening": "TransDigm’s next results are expected on November 11, 2026. Watch whether TransDigm’s final-quarter result supports the raised outlook.",
+   "closing": "The full memo also explains TransDigm’s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "What has TransDigm guided for FY2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s August 4, 2026 FY2026 outlook calls for sales of $10,470–$10,550 million, GAAP net income of $2,102–$2,150 million, EBITDA As Defined of $5,490–$5,550 million, and adjusted EPS of $40.62–$41.46."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Net Sales",
+        "Year to Sep 2026",
+        "10,470",
+        "10,550",
+        "August 4, 2026"
+       ],
+       [
+        "GAAP Net Income",
+        "Year to Sep 2026",
+        "2,102",
+        "2,150",
+        "August 4, 2026"
+       ],
+       [
+        "EBITDA As Defined",
+        "Year to Sep 2026",
+        "5,490",
+        "5,550",
+        "August 4, 2026"
+       ],
+       [
+        "Adjusted Earnings Per Share",
+        "Year to Sep 2026",
+        "40.62",
+        "41.46",
+        "August 4, 2026"
+       ]
+      ],
+      "note": "The company’s adjusted operating measure adds back selected costs, so it can be higher than its reported profit."
+     }
+    },
+    {
+     "heading": "How has TransDigm’s revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue rises from $4,798 million to $8,831 million as operating margin improves. Diluted EPS rises from $10.41 to $32.08, but the company's real free cash flow per share determines how much of those earnings becomes cash. Net debt grows from $15,211 million to $27,207 million, making cash conversion central to the case."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,741",
+        "2,544",
+        "2,285",
+        "2,437",
+        "2,237",
+        "2,150",
+        "2,006",
+        "2,185"
+       ],
+       [
+        "Operating income",
+        "1,227",
+        "1,178",
+        "1,042",
+        "1,161",
+        "1,039",
+        "991",
+        "974",
+        "943"
+       ],
+       [
+        "Net income",
+        "539",
+        "535",
+        "445",
+        "610",
+        "492",
+        "479",
+        "493",
+        "468"
+       ],
+       [
+        "EPS, diluted",
+        "9.39",
+        "9.20",
+        "6.62",
+        "7.75",
+        "8.47",
+        "8.24",
+        "7.62",
+        "5.80"
+       ],
+       [
+        "**= Free cash flow**",
+        "650",
+        "64",
+        "772",
+        "441",
+        "573",
+        "92",
+        "710",
+        "531"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should people watch in TransDigm’s next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "First, compare fiscal 2026 Q4 revenue and adjusted EPS with both the raised outlook and the latest analyst estimates. Growth across commercial OEM, aftermarket, and defense would show that demand is broad. A miss would make the final-quarter catch-up concern more serious."
+      },
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Second, watch whether the Extant purchase closes in fiscal 2027 and whether the recently acquired businesses recover their margins. Closing conditions can change timing, while integration determines whether the spending earns the return management expects."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,741"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "9.39"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,185",
+      "2,006",
+      "2,150",
+      "2,237",
+      "2,437",
+      "2,285",
+      "2,544",
+      "2,741"
+     ],
+     "EPS, diluted": [
+      "5.80",
+      "7.62",
+      "8.24",
+      "8.47",
+      "7.75",
+      "6.62",
+      "9.20",
+      "9.39"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/tdg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TDG&src=seo-earnings"
+  }
+ },
+ "short_name": "TransDigm",
+ "first_memo_date": "2026-10-18T01:33:27Z"
+}

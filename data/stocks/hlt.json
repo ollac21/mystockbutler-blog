@@ -1,0 +1,810 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HLT",
+ "slug": "hlt",
+ "company": "Hilton Worldwide Holdings Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T23:34:45Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 345.085,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 275,
+  "tables": 27,
+  "words": 17179,
+  "sources": 206
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "People know Hilton as a hotel name, but its business is broader: it sells brands, bookings, hotel management and loyalty to a network of owners. Most buildings belong to someone else, so a dollar spent on a Hilton stay usually splits between the property owner, Hilton and the partners that help bring the guest back."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000007/hlt-20251231.htm"
+  },
+  {
+   "title": "2024 annual report, loyalty accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568925000008/hlt-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000005/q42025earningsrelease.htm"
+  }
+ ],
+ "rivals": [
+  "H"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Hilton stock forecast",
+   "meta_description": "Hilton's weighted case is below today's price, with outcomes shaped by room growth, cash generation, debt and valuation.",
+   "opening": "Hilton's weighted case is $264.09 in October 2027, $280.23 in October 2028, and $305.36 in October 2029. It hinges on whether Hilton's room growth becomes durable cash before debt and distributions become the constraint.",
+   "closing": "The full memo also answers questions about Hilton's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Hilton's shares go?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case has a 28% probability. The base case has a 52% probability. The bull case has a 20% probability. The October 2029 range runs from $133.95 in the bear case to $544.54 in the bull case."
+      },
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $264.09 in October 2027, a 23% loss including dividends. It is $280.23 in October 2028, an 18% loss. It is $305.36 in October 2029, an 11% loss. Against today’s $345.08, the October 2029 outcomes range from $133.95 to $544.54."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 345.08, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 345.08, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "157.95 (-54 %)",
+        "136.62 (-60 %)",
+        "133.95 (-61 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "278.57 (-19 %)",
+        "291.56 (-15 %)",
+        "305.65 (-11 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "375.03 (+9 %)",
+        "451.85 (+31 %)",
+        "544.54 (+58 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "264.09 (-23 %)",
+        "280.23 (-18 %)",
+        "305.36 (-11 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull outcomes, not a fourth prediction."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Hilton?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "October 27, 2026 results will test whether third-quarter strength reflects ordinary business and group demand or temporary event and calendar effects. Through 2027–2029, pipeline openings and owner renewals must support room growth while operating cash funds interest, growth, and distributions. Rate-led RevPAR growth and stronger cash generation support the bull case; weaker travel, owner financing stress, or distributions outrunning cash support the bear case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "3,080 (2,626 / 3,229)",
+        "3,294 (2,471 / 3,577)",
+        "3,530 (2,569 / 3,966)"
+       ],
+       [
+        "Shares (millions)",
+        "215 (218 / 212)",
+        "208 (214 / 203)",
+        "201 (210 / 195)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.30 / 0.60)",
+        "0.64 (0.30 / 0.72)",
+        "0.68 (0.30 / 0.84)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "24.00 (18.00 / 29.00)",
+        "23.00 (17.00 / 30.00)",
+        "22.00 (16.00 / 31.00)"
+       ],
+       [
+        "Net debt",
+        "14,084 (12,834 / 14,284)",
+        "15,264 (12,798 / 15,629)",
+        "16,254 (12,961 / 16,869)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Hilton really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation adds another judgment. Deducting $170 million of stock pay produces analytical “real free cash flow” of $1,774 million. That is not a GAAP line, but it recognizes that awards transfer value to employees and may require repurchases to offset dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,129",
+        "2,013",
+        "1,946",
+        "1,681",
+        "109"
+       ],
+       [
+        "− Capital spending",
+        "185",
+        "198",
+        "247",
+        "102",
+        "79"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,944",
+        "1,815",
+        "1,699",
+        "1,579",
+        "30"
+       ],
+       [
+        "− Stock pay",
+        "170",
+        "176",
+        "169",
+        "162",
+        "193"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,774",
+        "1,639",
+        "1,530",
+        "1,417",
+        "-163"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "14.7%",
+        "14.7%",
+        "14.9%",
+        "16.2%",
+        "-2.8%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because stock pay uses no cash today but gives employees part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Hilton?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth slowed from recovery-era highs; 2025 operating margin was 22.4%. Hilton’s free cash flow was 14.7% of revenue in 2024 and held there in 2025, but net debt reached $11,445 million in 2025. Diluted EPS was $6.12 in 2025 as the average diluted share count fell 4.8%. Buybacks consumed $13.37 per share against free cash flow of $8.17 per share. At 50.7x trailing P/E and a 2.5% free cash flow yield, the valuation relies on future cash growth."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "345.085"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "305.36 (-11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "33.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 345.085,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "157.95 (-54 %)",
+       "136.62 (-60 %)",
+       "133.95 (-61 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "278.57 (-19 %)",
+       "291.56 (-15 %)",
+       "305.65 (-11 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "375.03 (+9 %)",
+       "451.85 (+31 %)",
+       "544.54 (+58 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "264.09 (-23 %)",
+       "280.23 (-18 %)",
+       "305.36 (-11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/hlt/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Hilton dividend: cash coverage and yield",
+   "meta_description": "Hilton's dividend history, cash coverage, future changes, and current yield in plain English.",
+   "opening": "Hilton pays a dividend per share shown across the years in the “What one share gets” table. In 2025, Hilton generated $1,944 million of free cash flow and paid $143 million in dividends, but dividends and buybacks together exceeded free cash flow.",
+   "closing": "The full memo also explains Hilton’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Hilton pay in dividends per share?",
+     "paragraphs": [],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except share-count change",
+      "caption": "What one share gets (US$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.12",
+        "6.14",
+        "4.33",
+        "4.53",
+        "1.46"
+       ],
+       [
+        "Real free cash flow per share",
+        "7.45",
+        "6.56",
+        "5.80",
+        "5.12",
+        "-0.58"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.60",
+        "0.60",
+        "0.60",
+        "0.44",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "13.37",
+        "11.57",
+        "8.86",
+        "5.74",
+        "0.00"
+       ]
+      ],
+      "note": "Our real free cash flow per share is lower because we subtract the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is Hilton's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Hilton paid $3,182 million for share repurchases in 2025 and $143 million in dividends. Together, those payments equalled 171.0% of free cash flow. A buyback reduces the number of shares remaining, which can increase each continuing shareholder’s claim on future earnings, but only if Hilton buys at a sensible price. The payout exceeded free cash flow in every year from 2022 through 2025, and the excess grew from $134 million to $1,381 million."
+      },
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow reached $2,129 million in 2025. Capital spending of $185 million left free cash flow of $1,944 million. Capital spending includes software and physical assets, while contract-acquisition payments are already reflected in operating cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,944",
+        "1,815",
+        "1,699",
+        "1,579",
+        "30"
+       ],
+       [
+        "− Dividends paid",
+        "143",
+        "150",
+        "158",
+        "123",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "3,182",
+        "2,893",
+        "2,338",
+        "1,590",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "",
+        "",
+        "30"
+       ]
+      ],
+      "note": "The company's own net debt is slightly different because it counts debt before certain fees and discounts and includes restricted cash, while our count uses reported debt and cash available for use."
+     }
+    },
+    {
+     "heading": "What could change Hilton's dividend?",
+     "paragraphs": [
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays conservative. Base dividends are $0.60 per share in 2027 and $0.64 in 2028, reaching $0.68 in 2029. The bear case holds $0.30 throughout, while the bull case reaches $0.84. The base path follows three years at $0.60 and continued quarterly payments; the bear requires a liquidity shock."
+      },
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if 2027–2028 RevPAR and fee growth weaken, especially in business and group travel. Owner financing stress during 2027–2029 would delay openings and increase exits. Distributions exceeding cash generation would raise leverage and force lower buybacks or a lower multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "3,080 (2,626 / 3,229)",
+        "3,294 (2,471 / 3,577)",
+        "3,530 (2,569 / 3,966)"
+       ],
+       [
+        "Shares (millions)",
+        "215 (218 / 212)",
+        "208 (214 / 203)",
+        "201 (210 / 195)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.30 / 0.60)",
+        "0.64 (0.30 / 0.72)",
+        "0.68 (0.30 / 0.84)"
+       ],
+       [
+        "Net debt",
+        "14,084 (12,834 / 14,284)",
+        "15,264 (12,798 / 15,629)",
+        "16,254 (12,961 / 16,869)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.60"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except share-count change",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.44",
+      "0.60",
+      "0.60",
+      "0.60"
+     ],
+     "Real free cash flow per share": [
+      "-0.58",
+      "5.12",
+      "5.80",
+      "6.56",
+      "7.45"
+     ],
+     "Free cash flow per share": [
+      "0.11",
+      "5.70",
+      "6.44",
+      "7.26",
+      "8.17"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/hlt/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Hilton earnings: guidance and what to watch",
+   "meta_description": "Hilton reports on October 27, 2026; guidance, promises kept, recent results and watchpoints are here.",
+   "opening": "Hilton reports on October 27, 2026. Watch whether ordinary travel demand holds after temporary event and calendar effects.",
+   "closing": "The full memo answers what Hilton does, who its rivals are, how its management works and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Hilton guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 3.0%–3.5% comparable currency-neutral RevPAR growth for 2026. It targets 6.0%–7.0% net unit growth. Adjusted EPS guidance is $8.89–$9.01, and adjusted EBITDA guidance is $4,040–$4,080 million. Planned capital returns are $3,500 million, despite 2025 distributions exceeding free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "System-wide comparable RevPAR, on a currency neutral basis, increase",
+        "Year to Dec 2026",
+        "3.0%",
+        "3.5%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Diluted EPS, adjusted for special items",
+        "Year to Dec 2026",
+        "8.89",
+        "9.01",
+        "Jul 28, 2026"
+       ],
+       [
+        "Adjusted EBITDA",
+        "Year to Dec 2026",
+        "4,040",
+        "4,080",
+        "Jul 28, 2026"
+       ],
+       [
+        "Capital return",
+        "Year to Dec 2026",
+        "3,500",
+        "3,500",
+        "Jul 28, 2026"
+       ],
+       [
+        "Net unit growth",
+        "Year to Dec 2026",
+        "6.0%",
+        "7.0%",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Hilton kept its promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Hilton forecast net unit growth of 6.0%–7.0% and roughly US$3.3 billion in capital returns. It delivered 6.7% room growth and the expected capital returns, but comparable RevPAR rose only 0.4%. The wider U.S. hotel industry recorded a 0.3% RevPAR decline, which provides context without erasing Hilton’s shortfall."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Hilton’s revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose 6.5%, and operating income rose 10.3%. Net income increased 9.5%, while diluted EPS increased 14.1% as the share count contracted."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,341",
+        "2,937",
+        "3,087",
+        "3,120",
+        "3,137",
+        "2,695",
+        "2,783",
+        "2,867"
+       ],
+       [
+        "Operating income",
+        "858",
+        "678",
+        "602",
+        "777",
+        "778",
+        "536",
+        "489",
+        "623"
+       ],
+       [
+        "Net income",
+        "482",
+        "385",
+        "297",
+        "420",
+        "440",
+        "300",
+        "505",
+        "344"
+       ],
+       [
+        "EPS, diluted",
+        "2.10",
+        "1.66",
+        "1.27",
+        "1.78",
+        "1.84",
+        "1.23",
+        "2.06",
+        "1.38"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch when Hilton reports?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Hilton reports third-quarter results on October 27, 2026. Management expects World Cup and favorable calendar effects in the third quarter, followed by unfavorable calendar shifts and midterm-election effects in the fourth. A strong third quarter will therefore need interpretation rather than automatic extrapolation."
+      },
+      {
+       "n": 248,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Business travel is the clearest test of durability. Management estimated underlying system-wide growth at roughly 2%–2.5% after removing event and comparison effects. Midweek stays will show whether the recovery is becoming ordinary demand rather than a short-lived spike. Business-travel spending had reached 85% of its 2019 level in 2024, leaving room for further recovery."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,341"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.10"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,867",
+      "2,783",
+      "2,695",
+      "3,137",
+      "3,120",
+      "3,087",
+      "2,937",
+      "3,341"
+     ],
+     "EPS, diluted": [
+      "1.38",
+      "2.06",
+      "1.23",
+      "1.84",
+      "1.78",
+      "1.27",
+      "1.66",
+      "2.10"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/hlt/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HLT&src=seo-earnings"
+  }
+ },
+ "short_name": "Hilton",
+ "first_memo_date": "2026-10-16T23:34:45Z"
+}

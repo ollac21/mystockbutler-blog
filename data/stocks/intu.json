@@ -1,0 +1,887 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "INTU",
+ "slug": "intu",
+ "company": "Intuit Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T13:00:36Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 330.17,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-19",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 28,
+  "words": 17227,
+  "sources": 271
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Intuit sells software and expert help that let businesses keep books, move money, reach customers, and let people prepare taxes or choose financial products. Its business is a set of connected services, but its dollar flows differ: some customers pay Intuit directly, some partners pay for results, and much of the money passing through belongs to someone else."
+ },
+ "sources": [
+  {
+   "title": "2026 annual report, Note 15",
+   "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm"
+  },
+  {
+   "title": "FY2025 Form 10-K, notes receivable and secured revolving credit facilities",
+   "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000035/intu-20250731.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000029/fy26q4earningspressrelease.htm"
+  }
+ ],
+ "rivals": [
+  "XRO.AX",
+  "SGE.L",
+  "HRB",
+  "XYZ",
+  "ADP",
+  "PAYX",
+  "TRI",
+  "HUBS",
+  "KVYO",
+  "CRM",
+  "TREE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Intuit stock forecast",
+   "meta_description": "Intuit stock forecast with weighted scenarios, the cash-flow test, key risks and the valuation behind the shares.",
+   "opening": "The weighted forecast is $318.88 in October 2027 and reaches $456.75 in October 2029. It hinges on paying-customer growth, ARPC, product attachment and retention moving together.",
+   "closing": "The full memo also answers how Intuit’s business works, who its rivals are, how management is executing, and where the risks sit.",
+   "blocks": [
+    {
+     "heading": "Where could Intuit's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted October 2027 price is $318.88, a 2% loss including dividends. It rises to $373.18, a 17% gain, in October 2028. At the final date it reaches $456.75, a 44% gain."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final range runs from $180.64 to $801.45. Today’s price is $330.17. The bear case has a 30% probability, the base case 50%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 330.17, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 330.17, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "221.08 (-31 %)",
+        "179.98 (-42 %)",
+        "180.64 (-40 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "319.47 (-1 %)",
+        "392.51 (+23 %)",
+        "484.54 (+53 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "464.08 (+42 %)",
+        "614.63 (+90 %)",
+        "801.45 (+149 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "318.88 (-2 %)",
+        "373.18 (+17 %)",
+        "456.75 (+44 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more weight to cases considered more likely, not a guaranteed price."
+     }
+    },
+    {
+     "heading": "What has to go right for Intuit, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome turns on paying-customer growth, ARPC, product attachment and retention moving together. AI and mid-market growth—businesses larger than small firms but smaller than large corporations—must show task accuracy, expert rework, service cost, paid adoption and retention, not usage alone. The October 2026 quarter is the first checkpoint; reporting is estimated for November 19, with revenue guided to $4,294–$4,313 million. Sequence’s October 15, 2026 acquisition agreement adds an integration and adoption test; its price was undisclosed. The thesis is durable cash generation from QuickBooks and assisted tax, not price, mix or tax timing alone."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Intuit really make?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation explains part of the gap. Intuit recorded $2,056 million of share-based compensation. It is added back because no cash leaves immediately, but employees still receive valuable ownership. Subtracting it from free cash flow leaves $6,561 million of “real free cash flow”, an owner-cost measure rather than a company-reported subtotal."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,838",
+        "6,207",
+        "4,884",
+        "5,046",
+        "3,889"
+       ],
+       [
+        "− Capital spending",
+        "221",
+        "124",
+        "250",
+        "260",
+        "229"
+       ],
+       [
+        "**= Free cash flow**",
+        "8,617",
+        "6,083",
+        "4,634",
+        "4,786",
+        "3,660"
+       ],
+       [
+        "− Stock pay",
+        "2,056",
+        "1,968",
+        "1,940",
+        "1,712",
+        "1,308"
+       ],
+       [
+        "**= Real free cash flow**",
+        "6,561",
+        "4,115",
+        "2,694",
+        "3,074",
+        "2,352"
+       ]
+      ],
+      "note": "The company's own free cash flow matches our count, but real free cash flow is lower because paying employees with shares gives away part of the company even though no cash leaves today."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Intuit?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At US$330.17 and a forward P/E of 14.4x, the implied future EPS is about US$22.93. That is close to management’s fiscal 2027 adjusted EPS guidance of US$22.88–US$23.12. But Intuit now includes stock compensation in adjusted earnings, so comparisons with older adjusted figures are hazardous."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "330.17"
+       ],
+       [
+        "Market value (calculated)",
+        "88,233.3101"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "88,702.3101"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.4x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "7.4%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings figure uses analysts’ expected profit, not profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "330.17"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "456.75 (+44 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 330.17,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "221.08 (-31 %)",
+       "179.98 (-42 %)",
+       "180.64 (-40 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "319.47 (-1 %)",
+       "392.51 (+23 %)",
+       "484.54 (+53 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "464.08 (+42 %)",
+       "614.63 (+90 %)",
+       "801.45 (+149 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "318.88 (-2 %)",
+       "373.18 (+17 %)",
+       "456.75 (+44 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/intu/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=INTU&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Intuit dividend: cash coverage and yield",
+   "meta_description": "Intuit dividend payments, cash coverage, forecast changes and yield against the share price.",
+   "opening": "Intuit's current quarterly dividend is $1.38, or $5.52 annually, and the base forecast rises from $6.24 to $6.99 and then $7.83. Intuit's fiscal 2026 free cash flow of $8,617M covered $1,347M of dividends.",
+   "closing": "The full Intuit memo also examines Intuit's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Intuit pay per share?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base case because Intuit has increased them every year in the five-year record. The base starts at $6.24 and reaches $6.99. It ends at $7.83. The bear case holds the current quarterly rate at $1.38, or $5.52 annually, while the bull case maintains increases near the recent 15% pace. Fiscal 2026 free cash flow of $8,617M covered dividends of $1,347M, supporting the base path."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "31.11",
+        "21.49",
+        "16.32",
+        "16.91",
+        "12.89"
+       ],
+       [
+        "− Dividends paid, per share",
+        "4.86",
+        "4.20",
+        "3.64",
+        "3.14",
+        "2.73"
+       ],
+       [
+        "− Share buybacks, per share",
+        "19.54",
+        "9.80",
+        "7.00",
+        "6.95",
+        "6.55"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "6.71",
+        "7.50",
+        "5.68",
+        "6.82",
+        "3.61"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract the value of shares given to employees as pay; we subtract it because those new shares reduce what each existing share gets."
+     }
+    },
+    {
+     "heading": "Is Intuit's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was $8,838 million in fiscal 2026, against net income of $4,566 million. After $221 million of capital spending, conventional free cash flow was $8,617 million. Low capital spending does not mean the business is cheap to maintain: engineers, security, support and marketing are largely expensed through operations."
+      },
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation explains part of the gap. Intuit recorded $2,056 million of share-based compensation. It is added back because no cash leaves immediately, but employees still receive valuable ownership. Subtracting it from free cash flow leaves $6,561 million of “real free cash flow”, an owner-cost measure rather than a company-reported subtotal."
+      },
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Working capital, payroll settlement and lending can also absorb cash. Dividends are therefore sustainable only if covered by repeatable cash after investment, compensation and financing needs."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jul 2025",
+       "Jul 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "8,617",
+        "6,083",
+        "4,634",
+        "4,786",
+        "3,660"
+       ],
+       [
+        "− Dividends paid",
+        "1,347",
+        "1,189",
+        "1,034",
+        "889",
+        "774"
+       ],
+       [
+        "− Share buybacks",
+        "5,412",
+        "2,772",
+        "1,988",
+        "1,967",
+        "1,861"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,858",
+        "2,122",
+        "1,612",
+        "1,930",
+        "1,025"
+       ],
+       [
+        "Paid to shareholders",
+        "6,759",
+        "3,961",
+        "3,022",
+        "2,856",
+        "2,635"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "78.4%",
+        "65.1%",
+        "65.2%",
+        "59.7%",
+        "72.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Intuit's dividend?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Quarterly buybacks, dividend decisions and evidence that AI lowers service effort will then determine whether the forecast keeps its base assumptions or moves toward the wider bull path."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "5,600 (4,900 / 6,300)",
+        "6,200 (4,700 / 7,200)",
+        "6,900 (5,100 / 8,200)"
+       ],
+       [
+        "Shares (millions)",
+        "256 (261 / 254)",
+        "245 (255 / 242)",
+        "236 (250 / 233)"
+       ],
+       [
+        "Dividends per share",
+        "6.24 (5.52 / 6.35)",
+        "6.99 (5.52 / 7.30)",
+        "7.83 (5.52 / 8.40)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "15.00 (12.00 / 19.00)",
+        "16.00 (10.00 / 21.00)",
+        "17.00 (9.00 / 23.00)"
+       ],
+       [
+        "Net debt",
+        "2,188 (1,079 / 1,852)",
+        "2,923 (1,139 / 2,241)",
+        "3,089 (799 / 1,819)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jul 2026",
+     "value": "4.86"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "9.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jul 2022",
+     "Jul 2023",
+     "Jul 2024",
+     "Jul 2025",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.73",
+      "3.14",
+      "3.64",
+      "4.20",
+      "4.86"
+     ],
+     "Real free cash flow per share": [
+      "8.28",
+      "10.86",
+      "9.49",
+      "14.54",
+      "23.69"
+     ],
+     "Free cash flow per share": [
+      "12.89",
+      "16.91",
+      "16.32",
+      "21.49",
+      "31.11"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/intu/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=INTU&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Intuit earnings date and guidance",
+   "meta_description": "Intuit expects results on November 19, 2026, with fiscal 2027 revenue growth of 9.0%–10.0% and customer growth as a key test.",
+   "opening": "Intuit's next results are expected on November 19, 2026. Watch whether customer growth is genuine rather than driven by price, upgrades and accounting changes.",
+   "closing": "The full memo also covers Intuit's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Intuit guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 208,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Fiscal 2027 revenue guidance is $23,279–$23,512 million. That represents growth of 9.0%–10.0%, below fiscal 2026’s 14%. Global Business Solutions, which includes QuickBooks, is expected to grow 13.0%–14.0%. TurboTax is guided to 2.0%–3.0% growth, Credit Karma to 11.0%–13.0%, and Mailchimp to decline by 1.0% or remain flat."
+      },
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Operating income is guided to grow 26.0%–27.0%, reaching a margin of about 32%. This is operating leverage: revenue grows, but costs grow more slowly. Imagine revenue rising by 10% while costs rise by less. Profit can then rise by 20%. The plan works only if savings are real and customer investment produces lasting revenue."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Total Revenue",
+        "Year to Jul 2027",
+        "23,279",
+        "23,512",
+        "Sep 17, 2026"
+       ],
+       [
+        "Total Revenue growth",
+        "Year to Jul 2027",
+        "9.0%",
+        "10.0%",
+        "Sep 17, 2026"
+       ],
+       [
+        "Global Business Solutions",
+        "Year to Jul 2027",
+        "13,068",
+        "13,158",
+        "Sep 17, 2026"
+       ],
+       [
+        "Global Business Solutions growth",
+        "Year to Jul 2027",
+        "13.0%",
+        "14.0%",
+        "Sep 17, 2026"
+       ],
+       [
+        "Operating Income",
+        "Year to Jul 2027",
+        "7,408",
+        "7,490",
+        "Sep 17, 2026"
+       ],
+       [
+        "Operating Income growth",
+        "Year to Jul 2027",
+        "26.0%",
+        "27.0%",
+        "Sep 17, 2026"
+       ],
+       [
+        "Total Revenue",
+        "Quarter to Oct 2026",
+        "4,294",
+        "4,313",
+        "Sep 17, 2026"
+       ],
+       [
+        "Total Revenue growth",
+        "Quarter to Oct 2026",
+        "11.0%",
+        "11.0%",
+        "Sep 17, 2026"
+       ],
+       [
+        "Operating Income",
+        "Quarter to Oct 2026",
+        "716",
+        "729",
+        "Sep 17, 2026"
+       ],
+       [
+        "Operating Income growth",
+        "Quarter to Oct 2026",
+        "34.0%",
+        "37.0%",
+        "Sep 17, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Intuit kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 130,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "From August 2026, Intuit began including stock compensation in its adjusted financial measures. But its July 2024 expectation of growing headcount deserves scrutiny beside the May 2026 announcement of a 17% workforce reduction. The overall record is mixed: management has expertise and performance mechanisms, but owners must judge whether the AI bet, board oversight, insider behavior and changing promises ultimately serve them."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Intuit's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew 13.7% year over year. Gross margin improved from 76.7% to 78.1%, and operating income rose from $339 million to $475 million. Net income and diluted EPS nevertheless fell, so the layers of the accounts were moving in different directions."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,354",
+        "8,558",
+        "4,651",
+        "3,885",
+        "3,831",
+        "7,754",
+        "3,963",
+        "3,283"
+       ],
+       [
+        "Gross margin",
+        "78.1%",
+        "83.9%",
+        "77.6%",
+        "77.3%",
+        "76.7%",
+        "84.6%",
+        "76.4%",
+        "74.9%"
+       ],
+       [
+        "Operating income",
+        "475",
+        "4,020",
+        "855",
+        "534",
+        "339",
+        "3,720",
+        "593",
+        "271"
+       ],
+       [
+        "Net income",
+        "363",
+        "3,064",
+        "693",
+        "446",
+        "381",
+        "2,820",
+        "471",
+        "197"
+       ],
+       [
+        "EPS, diluted",
+        "1.34",
+        "11.09",
+        "2.48",
+        "1.59",
+        "1.35",
+        "10.02",
+        "1.67",
+        "0.70"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,258",
+        "5,236",
+        "1,524",
+        "599",
+        "356",
+        "4,360",
+        "1,038",
+        "329"
+       ]
+      ],
+      "note": "The jump in cash from operations and free cash flow for the year ending July 2026 was partly caused by paying less tax after a change in tax law, not just by stronger business performance."
+     }
+    },
+    {
+     "heading": "What should you watch in Intuit's next results?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is the quarter ending October 2026, with reporting estimated for November 19. Management guides quarterly revenue to $4,294–$4,313 million. Adjusted earnings per share is guided to $2.44–$2.48. This is also the first quarter with the new compensation treatment and separate Mailchimp reporting, so comparability matters."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 19, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "4,354"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "1.34"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,283",
+      "3,963",
+      "7,754",
+      "3,831",
+      "3,885",
+      "4,651",
+      "8,558",
+      "4,354"
+     ],
+     "EPS, diluted": [
+      "0.70",
+      "1.67",
+      "10.02",
+      "1.35",
+      "1.59",
+      "2.48",
+      "11.09",
+      "1.34"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/intu/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=INTU&src=seo-earnings"
+  }
+ },
+ "short_name": "Intuit",
+ "first_memo_date": "2026-10-16T13:00:36Z"
+}

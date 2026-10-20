@@ -1,0 +1,582 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "IQV",
+ "slug": "iqv",
+ "company": "IQVIA Holdings Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T05:17:10Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 266.9,
+ "price_date": "2026-10-16T20:02:23Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 27,
+  "words": 16913,
+  "sources": 223
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "IQVIA is the hired infrastructure behind much of a medicine’s journey, from testing it in people to measuring its use after launch. It makes money by combining research services, healthcare data, software and specialist teams, then paying the people, sites and suppliers that deliver them."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, risk factors and Note 1",
+   "url": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026008322/iqv-20251231.htm"
+  },
+  {
+   "title": "Earnings release — 2026-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026005605/iqv-q4x2025earningspressre.htm"
+  },
+  {
+   "title": "Earnings release — 2025-02-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1478242/000147824225000016/iqv-q4x2024earningspressre.htm"
+  }
+ ],
+ "rivals": [
+  "ICLR",
+  "LH",
+  "UNH"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "IQVIA stock forecast",
+   "meta_description": "IQVIA stock forecast: the weighted price reaches $274.76 by October 2029 across bear, base and bull scenarios.",
+   "opening": "The weighted IQVIA forecast is $253.24 in October 2027. It hinges on IQVIA turning its clinical backlog into profitable cash while keeping debt under control.",
+   "closing": "The full IQVIA memo also explains IQVIA’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could IQVIA's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $253.24 in October 2027, a 5% loss including dividends. It is $263.98 in October 2028, a 1% loss. By October 2029, it reaches $274.76, a 3% gain. The base case carries 53% probability. The bear case carries 27%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 266.90, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 266.90, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "201.45 (-25 %)",
+        "183.49 (-31 %)",
+        "167.83 (-37 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "254.88 (-5 %)",
+        "265.02 (-1 %)",
+        "272.63 (+2 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "318.81 (+19 %)",
+        "369.90 (+39 %)",
+        "424.74 (+59 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "253.24 (-5 %)",
+        "263.98 (-1 %)",
+        "274.76 (+3 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for IQVIA, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Earnings rise in the base row, decline after the first forecast year in the bear row and accelerate in the bull row. The base story assumes revenue continues near the 2026 plan, with acquisition contribution and modest margin recovery. The 2026 plan implies 6.5% reported growth, while June net bookings were $3.15B and book-to-bill was 1.22."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does IQVIA really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation needs a further adjustment. IQVIA disclosed US$247 million of stock-based compensation in 2025. Subtracting it leaves analytical “real free cash flow” of US$1,804 million. That was down from US$1,908 million in 2024. The subtraction treats shares issued to employees as an ownership cost, even though the company does not pay that amount in cash immediately."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,654",
+        "2,716",
+        "2,149",
+        "2,260",
+        "2,942"
+       ],
+       [
+        "− Capital spending",
+        "603",
+        "602",
+        "649",
+        "674",
+        "640"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,051",
+        "2,114",
+        "1,500",
+        "1,586",
+        "2,302"
+       ],
+       [
+        "− Stock pay",
+        "247",
+        "206",
+        "217",
+        "194",
+        "170"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,804",
+        "1,908",
+        "1,283",
+        "1,392",
+        "2,132"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "11.1%",
+        "12.4%",
+        "8.6%",
+        "9.7%",
+        "15.4%"
+       ]
+      ],
+      "note": "The company's own free cash flow matches our count, but our real free cash flow is lower because we subtract shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "What does an investor pay for IQVIA today?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio changes with the definition of earnings. The trailing P/E is 33.1x, while the next-twelve-month P/E is 18.6x. GAAP earnings follow standard accounting rules; adjusted earnings remove selected items, including amortization of acquired relationships and technology. In Q2 2026, GAAP diluted EPS was $1.53, compared with adjusted EPS of $3.15. A lower forward multiple may therefore reflect a change in the earnings measure, not a sudden bargain."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "266.90"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "33.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "18.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.1%"
+       ]
+      ],
+      "note": "The price-to-earnings number for the next 12 months uses analysts' guesses about future profit, not profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "266.90"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "274.76 (+3 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.6x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 266.9,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "201.45 (-25 %)",
+       "183.49 (-31 %)",
+       "167.83 (-37 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "254.88 (-5 %)",
+       "265.02 (-1 %)",
+       "272.63 (+2 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "318.81 (+19 %)",
+       "369.90 (+39 %)",
+       "424.74 (+59 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "253.24 (-5 %)",
+       "263.98 (-1 %)",
+       "274.76 (+3 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/iqv/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IQV&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "IQVIA earnings date, guidance and results",
+   "meta_description": "IQVIA's next results are expected on October 27, 2026, with guidance focused on revenue, adjusted EBITDA and adjusted diluted earnings per share.",
+   "opening": "IQVIA's next results are expected on October 27, 2026. The key thing to watch is whether the backlog review changes backlog quality.",
+   "closing": "The full IQVIA memo also answers questions about its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has IQVIA guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On July 28, 2026, IQVIA raised full-year revenue guidance to $17,275–17,475 million. The midpoint implies 6.5% growth, including 200 basis points from acquisitions and 20 basis points from foreign exchange. A basis point is one-hundredth of a percentage point. Removing those effects leaves about 4.3% growth from the businesses IQVIA already owned."
+      },
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also expects full-year 2026 adjusted EBITDA of $4,000–4,050 million and adjusted diluted earnings per share of $12.80–13.00. Adjusted EBITDA is operating earnings before interest, taxes, depreciation and amortization, after IQVIA removes specified expenses. Adjusted diluted earnings per share divides similarly adjusted profit among shares, including potential dilution."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "17,275",
+        "17,475",
+        "Jul 28, 2026"
+       ],
+       [
+        "Adjusted EBITDA",
+        "Year to Dec 2026",
+        "4,000",
+        "4,050",
+        "Jul 28, 2026"
+       ],
+       [
+        "Adjusted Diluted Earnings per Share",
+        "Year to Dec 2026",
+        "12.80",
+        "13.00",
+        "Jul 28, 2026"
+       ],
+       [
+        "Mid-point of the revenue growth guidance",
+        "Year to Dec 2026",
+        "6.5%",
+        "6.5%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Contribution from acquisitions (basis points)",
+        "Year to Dec 2026",
+        "200",
+        "200",
+        "Jul 28, 2026"
+       ],
+       [
+        "Tailwind from foreign exchange (basis points)",
+        "Year to Dec 2026",
+        "20",
+        "20",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "A basis point is one hundredth of a percentage point, so 200 basis points means 2 percentage points of growth."
+     }
+    },
+    {
+     "heading": "Did IQVIA keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 118,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management met its annual promise but not every longer-term ambition. It forecast adjusted earnings per share of US$11.70–US$12.10 for 2025. It delivered US$11.92. The 2023–2025 performance awards paid at 80.9% of target after an adjustment for higher UK corporate tax."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What were IQVIA's last eight quarters of results?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached US$4,368 million, against US$4,017 million a year earlier. That followed growth of approximately 8.4% in March 2026, so the improvement was not confined to one quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,368",
+        "4,151",
+        "4,364",
+        "4,100",
+        "4,017",
+        "3,829",
+        "3,958",
+        "3,896"
+       ],
+       [
+        "Gross margin",
+        "32.9%",
+        "32.6%",
+        "32.9%",
+        "33.5%",
+        "32.9%",
+        "33.9%",
+        "34.8%",
+        "35.4%"
+       ],
+       [
+        "Operating income",
+        "506",
+        "514",
+        "627",
+        "553",
+        "506",
+        "496",
+        "626",
+        "550"
+       ],
+       [
+        "Net income",
+        "256",
+        "274",
+        "514",
+        "331",
+        "266",
+        "249",
+        "437",
+        "285"
+       ],
+       [
+        "EPS, diluted",
+        "1.53",
+        "1.61",
+        "2.99",
+        "1.93",
+        "1.54",
+        "1.40",
+        "2.42",
+        "1.55"
+       ],
+       [
+        "**= Free cash flow**",
+        "360",
+        "491",
+        "561",
+        "772",
+        "292",
+        "426",
+        "721",
+        "571"
+       ]
+      ],
+      "note": "Gross margin is not the company's final profit because it leaves out the cost of equipment wearing out over time."
+     }
+    },
+    {
+     "heading": "What should IQVIA watchers watch next?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The more revealing disclosure may concern backlog quality. IQVIA was reviewing inactive trials and said a possible adjustment could be around 5%. A signed study can remain in the records while a customer pauses it or little work occurs. Over time, that can make headline backlog larger than the active workload."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,368"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.53"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,896",
+      "3,958",
+      "3,829",
+      "4,017",
+      "4,100",
+      "4,364",
+      "4,151",
+      "4,368"
+     ],
+     "EPS, diluted": [
+      "1.55",
+      "2.42",
+      "1.40",
+      "1.54",
+      "1.93",
+      "2.99",
+      "1.61",
+      "1.53"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/iqv/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=IQV&src=seo-earnings"
+  }
+ },
+ "short_name": "IQVIA",
+ "first_memo_date": "2026-10-19T05:17:10Z"
+}

@@ -1,0 +1,846 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EL",
+ "slug": "el",
+ "company": "The Estée Lauder Companies Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T17:12:29Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 105.5,
+ "price_date": "2026-10-19T15:49:48Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 26,
+  "words": 17765,
+  "sources": 262
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Beauty is not one product business but a portfolio of brands that turns formulas, identity and distribution into repeat purchases. To understand The Estée Lauder Companies, follow the product from a shopper’s choice to the money that reaches ELC and then leaves again."
+ },
+ "sources": [
+  {
+   "title": "link",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000041/R31.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000038/elq4fy2026exhibit991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001250/000100125025000097/elq4fy2025exhibit991.htm"
+  }
+ ],
+ "rivals": [
+  "OR.PA",
+  "PG",
+  "BEI.DE",
+  "4911.T",
+  "COTY",
+  "MC.PA",
+  "UL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "ELC stock forecast",
+   "meta_description": "ELC stock forecast: weighted scenarios, recovery drivers, real free cash flow and today’s valuation.",
+   "opening": "ELC's weighted forecast is $76.11 in October 2027. It hinges on turning recovery into durable consumer demand and cash.",
+   "closing": "The full memo also covers ELC's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could ELC's shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s weighted path remains below today’s price through the third forecast date. It is $76.11 in October 2027, a -27% return with dividends. It rises to $87.02 in October 2028, still a -15% return. By October 2029, it reaches $97.12, or -4% with dividends."
+      },
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Today’s price is $105.50. The October 2029 outcomes span $27.25 to $202.59. The bear case has a 30% probability. The base case has a 55% probability. The bull case has a 15% probability."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 105.50, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 105.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "37.97 (-63 %)",
+        "29.91 (-69 %)",
+        "27.25 (-70 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "83.79 (-19 %)",
+        "96.87 (-6 %)",
+        "106.47 (+5 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "124.21 (+19 %)",
+        "165.17 (+59 %)",
+        "202.59 (+96 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "76.11 (-27 %)",
+        "87.02 (-15 %)",
+        "97.12 (-4 %)"
+       ]
+      ],
+      "note": "The Weighted row is the probability-based average of the bear, base, and bull cases, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What could drive ELC's base, bear and bull cases?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries 30% probability, the base case 55%. The bull case carries 15%. The base case requires earnings and valuation to recover. The bear case turns on weak China and travel-retail sell-through, discounting and stalled savings. The bull case needs launches and savings to support repeat demand."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does ELC really make?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending fell from $1,040 million in fiscal 2022 to $457 million in fiscal 2026. That helps free cash flow, but factories, counters and digital systems still need investment. Subtracting $310 million of stock-based compensation produces an analytical “real free cash flow” of $1,006 million, because shares issued to employees dilute existing owners even without using operating cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,773",
+        "1,272",
+        "2,360",
+        "1,731",
+        "3,040"
+       ],
+       [
+        "− Capital spending",
+        "457",
+        "602",
+        "919",
+        "1,003",
+        "1,040"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,316",
+        "670",
+        "1,441",
+        "728",
+        "2,000"
+       ],
+       [
+        "− Stock pay",
+        "310",
+        "304",
+        "325",
+        "267",
+        "331"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,006",
+        "366",
+        "1,116",
+        "461",
+        "1,669"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "8.7%",
+        "4.7%",
+        "9.2%",
+        "4.6%",
+        "11.3%"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares uses no cash but gives them part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for ELC today?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing and forward P/E tell very different stories. P/E means the share price divided by earnings per share: trailing P/E uses the last twelve months, while forward P/E uses an estimate. Estée Lauder’s 215.3× trailing P/E reflects unusually weak recent profit, while its 26.8× forward P/E assumes a much stronger future. Management’s fiscal 2027 adjusted EPS guidance implies a different multiple, because the listed forward measure uses another period or adjustment policy."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "105.50"
+       ],
+       [
+        "Market value (calculated)",
+        "38,225.05"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "215.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "26.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "The past-year price-to-earnings number is much higher than the next-year number because the company earned very little recently but analysts expect much more profit next year."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "105.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "97.12 (-4 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "26.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 105.5,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "37.97 (-63 %)",
+       "29.91 (-69 %)",
+       "27.25 (-70 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "83.79 (-19 %)",
+       "96.87 (-6 %)",
+       "106.47 (+5 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "124.21 (+19 %)",
+       "165.17 (+59 %)",
+       "202.59 (+96 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "76.11 (-27 %)",
+       "87.02 (-15 %)",
+       "97.12 (-4 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/el/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "ELC dividend: cash coverage and yield",
+   "meta_description": "ELC paid $1.40 per share in fiscal 2026; reported free cash flow covered dividends, while the yield depends on today's price.",
+   "opening": "ELC paid $1.40 per share in fiscal 2026. ELC's reported free cash flow was $1,316 million, against $508 million in dividends.",
+   "closing": "The full memo also examines ELC's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does ELC pay shareholders over time?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The dividend was $1.40 per share in fiscal 2026, down from $2.64 in fiscal 2024. ELC paid $508 million in dividends and also paid $300 million of deferred TOM FORD acquisition consideration. Cash therefore has to fund shareholders, brands, debt and restructuring at once."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "− Paid to minority owners, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.39",
+        "1.72",
+        "2.62",
+        "2.56",
+        "2.30"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "2.21",
+        "0.14",
+        "1.37",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "",
+        "",
+        "",
+        "1.06",
+        "2.66"
+       ]
+      ],
+      "note": "The company's own free cash flow per share matches our count, while real free cash flow per share is lower because we subtract shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does ELC's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was $1,773 million in fiscal 2026. Capital spending was $457 million, leaving reported free cash flow of $1,316 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jun 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,316",
+        "670",
+        "1,441",
+        "728",
+        "2,000"
+       ],
+       [
+        "− Dividends paid",
+        "508",
+        "618",
+        "947",
+        "925",
+        "840"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "184",
+        "2,130"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "808",
+        "52",
+        "494",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "38.6%",
+        "92.2%",
+        "65.7%",
+        "152.3%",
+        "148.5%"
+       ]
+      ],
+      "note": "In some years, the company paid shareholders more cash than the business generated, so it had to use savings or borrow money to cover the gap."
+     }
+    },
+    {
+     "heading": "What could change ELC's dividend?",
+     "paragraphs": [
+      {
+       "n": 259,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend stays at $1.40 per share in the base case because the current quarterly rate is $0.35 and management has given no growth target. The bear case keeps annual dividends at $1.40 per share throughout the forecast. The bull case also keeps annual dividends at $1.40 per share throughout the forecast."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,267 (767 / 1,500)",
+        "1,533 (683 / 1,933)",
+        "1,767 (667 / 2,300)"
+       ],
+       [
+        "Shares (millions)",
+        "363 (364 / 362)",
+        "364 (365 / 363)",
+        "365 (367 / 363)"
+       ],
+       [
+        "Dividends per share",
+        "1.40 (1.40 / 1.40)",
+        "1.40 (1.40 / 1.40)",
+        "1.40 (1.40 / 1.40)"
+       ],
+       [
+        "Price to earnings",
+        "24.00 (18.00 / 30.00)",
+        "23.00 (16.00 / 31.00)",
+        "22.00 (15.00 / 32.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is ELC's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Estée Lauder Companies (The) owns beauty brands including Clinique, M·A·C and La Mer, but its shares now depend on a substantial recovery in profit. At $105.50 on October 19, 2026, shareholders value the company at $38,225.05 million."
+      },
+      {
+       "n": 185,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is more tangible than accounting profit, but it is not the same as the dividend. Fiscal 2026 operating cash flow less capital expenditure left about $1.316 billion, while dividends used $508 million. The difference can repay debt, support reinvestment or remain in reserve. The table shows the price and the main valuation measures an investor is paying for today."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jun 2026",
+     "value": "1.39"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "Jun 2022",
+     "Jun 2023",
+     "Jun 2024",
+     "Jun 2025",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.30",
+      "2.56",
+      "2.62",
+      "1.72",
+      "1.39"
+     ],
+     "Real free cash flow per share": [
+      "4.57",
+      "1.28",
+      "3.09",
+      "1.02",
+      "2.76"
+     ],
+     "Free cash flow per share": [
+      "5.48",
+      "2.02",
+      "3.99",
+      "1.86",
+      "3.61"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/el/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "ELC earnings",
+   "meta_description": "ELC reports next on November 2, 2026; guidance calls for 3%–5% organic sales growth and adjusted EPS of $3.10–$3.35.",
+   "opening": "ELC’s next results are expected on November 2, 2026. Watch whether stronger shipments reach shoppers and produce cash.",
+   "closing": "The full memo also answers how ELC’s business works, who its rivals are, how management operates, and what risks shape its recovery.",
+   "blocks": [
+    {
+     "heading": "What has ELC guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For fiscal 2027, management guides to 3%–5% organic sales growth. Adjusted EPS is guided to $3.10–$3.35. Adjusted operating margin is guided to 12.7%–13.5%. The plan targets $1.2 billion of annual gross benefits and a net reduction of 10,000 positions. It also carries more than $1.7 billion of cumulative restructuring and other charges."
+      },
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The Profit Recovery and Growth Plan aims to deliver $1,200 million of annual gross benefits during fiscal 2027, alongside $1,700 million of cumulative restructuring and other charges and a net reduction of 10,000 positions. Gross benefits are savings before reinvestment and other pressures. ELC had accrued $632 million of restructuring costs at June 30, 2026, with expected cash payments of $530 million in fiscal 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Organic, Non-GAAP net sales growth",
+        "Year to Jun 2027",
+        "3.0%",
+        "5.0%",
+        "Aug 19, 2026"
+       ],
+       [
+        "Forecasted/Adjusted EPS - Non-GAAP",
+        "Year to Jun 2027",
+        "3.10",
+        "3.35",
+        "Aug 19, 2026"
+       ],
+       [
+        "Adjusted operating margin",
+        "Year to Jun 2027",
+        "12.7%",
+        "13.5%",
+        "Aug 19, 2026"
+       ],
+       [
+        "Restructuring program annual gross benefits, before taxes",
+        "PRGP; fiscal 2027 completion",
+        "1,200",
+        "1,200",
+        "Aug 19, 2026"
+       ],
+       [
+        "Net reduction in positions",
+        "PRGP; fiscal 2027 completion",
+        "10,000",
+        "10,000",
+        "Aug 19, 2026"
+       ]
+      ],
+      "note": "The adjusted earnings per share forecast is higher than the reported earnings per share forecast because it leaves out restructuring costs."
+     }
+    },
+    {
+     "heading": "What do ELC’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter confirmed stronger sales, but still produced a reported loss."
+      },
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The reported operating loss narrowed to $39 million from $390 million. Net loss narrowed to $116 million, while diluted EPS remained negative at $0.32. Restructuring and associated effects cost $306 million pretax, so the loss still reflected a large transformation bill."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "3,627",
+        "3,712",
+        "4,229",
+        "3,481",
+        "3,411",
+        "3,550",
+        "4,004",
+        "3,361"
+       ],
+       [
+        "Operating income",
+        "-39",
+        "249",
+        "401",
+        "169",
+        "-390",
+        "306",
+        "-580",
+        "-121"
+       ],
+       [
+        "Net income",
+        "-116",
+        "89",
+        "162",
+        "47",
+        "-546",
+        "159",
+        "-590",
+        "-156"
+       ],
+       [
+        "EPS, diluted",
+        "-0.32",
+        "0.24",
+        "0.44",
+        "0.13",
+        "-1.51",
+        "0.44",
+        "-1.64",
+        "-0.43"
+       ],
+       [
+        "Cash from operations",
+        "576",
+        "412",
+        "1,125",
+        "-340",
+        "601",
+        "284",
+        "1,057",
+        "-670"
+       ],
+       [
+        "**= Free cash flow**",
+        "425",
+        "310",
+        "1,017",
+        "-436",
+        "394",
+        "162",
+        "925",
+        "-811"
+       ]
+      ],
+      "note": "The table shows one quarter at a time, so “during the year” in the definitions means during that quarter."
+     }
+    },
+    {
+     "heading": "What should I watch in ELC’s next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results must show that stronger shipments are reaching shoppers and producing cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "3,627"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-0.32"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,361",
+      "4,004",
+      "3,550",
+      "3,411",
+      "3,481",
+      "4,229",
+      "3,712",
+      "3,627"
+     ],
+     "EPS, diluted": [
+      "-0.43",
+      "-1.64",
+      "0.44",
+      "-1.51",
+      "0.13",
+      "0.44",
+      "0.24",
+      "-0.32"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/el/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EL&src=seo-earnings"
+  }
+ },
+ "short_name": "ELC",
+ "first_memo_date": "2026-10-19T17:12:29Z"
+}

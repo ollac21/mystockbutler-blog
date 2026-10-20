@@ -1,0 +1,457 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SNPS",
+ "slug": "snps",
+ "company": "Synopsys, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T10:23:58Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 468.11,
+ "price_date": "2026-10-15T20:00:00Z",
+ "next_earnings": "2026-12-09",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 232,
+  "tables": 20,
+  "words": 15199,
+  "sources": 237
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Synopsys sells the software, reusable circuit designs, testing hardware and engineering help that turn chip ideas into products. Its customers pay for progress and confidence, while Synopsys spends to keep a complicated design system useful."
+ },
+ "sources": [
+  {
+   "title": "FY2025 disposal note",
+   "url": "https://www.sec.gov/Archives/edgar/data/883241/000088324125000028/snps-20251031.htm?output=1"
+  },
+  {
+   "title": "FY2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/883241/000088324123000019/snps-20231031.htm?output=1"
+  },
+  {
+   "title": "FY2022",
+   "url": "https://www.sec.gov/Archives/edgar/data/883241/000088324122000017/snps-20221031.htm?output=1"
+  }
+ ],
+ "rivals": [
+  "CDNS",
+  "KEYS",
+  "ARM",
+  "RMBS",
+  "CEVA",
+  "SVCO",
+  "AIP",
+  "DSY.PA"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Synopsys stock forecast",
+   "meta_description": "Synopsys stock forecast: weighted scenarios, cash generation, risks and valuation in plain English.",
+   "opening": "Synopsys's weighted forecast reaches $790.14 by October 2029, a 69% gain. It hinges on turning acquisition-led growth into durable cash per share.",
+   "closing": "The full memo also explains Synopsys's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Synopsys's shares go?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast is slightly negative after one year but strongly positive after three. The shares reach $459.78 in October 2027, a 2% loss including dividends. They reach $648.73 in October 2028, a 39% gain. By October 2029, the weighted value is $790.14, a 69% gain."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 468.11, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 468.11, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "259.87 (-44 %)",
+        "341.48 (-27 %)",
+        "412.42 (-12 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "477.66 (+2 %)",
+        "643.80 (+38 %)",
+        "788.56 (+68 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "682.26 (+46 %)",
+        "1076.59 (+130 %)",
+        "1304.26 (+179 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "459.78 (-2 %)",
+        "648.73 (+39 %)",
+        "790.14 (+69 %)"
+       ]
+      ],
+      "note": "The weighted value combines the bear, base, and bull estimates according to their probabilities, so it is not simply the average of the three prices."
+     }
+    },
+    {
+     "heading": "What could make Synopsys's stock forecast work or fail?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes China restrictions disrupt design starts and local tools take share. AI and IP agreements fail to convert into repeat paid activity, while Ansys cross-selling remains slow and integration costs persist. The shares reach $259.87 in October 2027. They reach $412.42 in October 2029, with 27% probability because cash conversion, debt service and dilution could all weaken together."
+      },
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires several conversions at once. Customers repeatedly adopt combined Synopsys–Ansys workflows, AI usage becomes paid capacity, and IP agreements reach production and royalties. Strong cash conversion funds debt reduction and buybacks. The shares reach $682.26 in October 2027. They reach $1,304.26 in October 2029, with 20% probability because the evidence shows technical wins but not yet recurring incremental cash."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Synopsys really make?",
+     "paragraphs": [
+      {
+       "n": 132,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation adds another qualification. Synopsys recorded $712.6 million of it in the first nine months of FY2026. Operating cash flow adds that non-cash expense back, but shareholders may pay through dilution. A specialist therefore asks whether cash grows per share, not merely whether the cash-flow statement looks strong."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Free cash flow after stock pay",
+        "2,130 (1,520 / 2,450)",
+        "2,967 (2,120 / 3,750)",
+        "3,803 (2,800 / 4,700)"
+       ],
+       [
+        "Shares (millions)",
+        "192 (192 / 192)",
+        "192 (194 / 191)",
+        "192 (196 / 190)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Enterprise value to free cash flow after stock pay",
+        "45.00 (36.00 / 55.00)",
+        "42.00 (32.00 / 55.00)",
+        "39.00 (28.00 / 52.00)"
+       ],
+       [
+        "Net debt",
+        "4,330 (4,930 / 4,030)",
+        "1,263 (1,730 / 730)",
+        "-2,770 (-2,270 / -3,670)"
+       ]
+      ],
+      "note": "Negative net debt means the company is expected to have more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Synopsys today?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price-to-earnings, compares the share price with forecast earnings per share. At 25.1 times, investors pay $25.10 for each dollar of expected earnings. Management’s FY2027 target shows why the definition matters: the GAAP operating margin is 20.7%, while the adjusted margin is 44.0%. The difference includes amortization, which spreads an acquisition’s cost over time, and stock compensation, which pays employees with ownership claims. The first is non-cash in the current year; the second can dilute shareholders."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "468.11"
+       ],
+       [
+        "Market value (calculated)",
+        "89,707,030.359"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "96,136,721.359"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.1x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.9x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The market value may be slightly too high because it uses the number of shares before the company bought back shares on October 5."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "468.11"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "790.14 (+69 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.1x"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 468.11,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "259.87 (-44 %)",
+       "341.48 (-27 %)",
+       "412.42 (-12 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "477.66 (+2 %)",
+       "643.80 (+38 %)",
+       "788.56 (+68 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "682.26 (+46 %)",
+       "1076.59 (+130 %)",
+       "1304.26 (+179 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "459.78 (-2 %)",
+       "648.73 (+39 %)",
+       "790.14 (+69 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/snps/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SNPS&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Synopsys earnings date and guidance",
+   "meta_description": "Synopsys reports next on December 9, 2026; guidance and cash conversion are the key watchpoints.",
+   "opening": "Synopsys next results are expected on December 9, 2026. Watch whether customers repeatedly pay for new products while Synopsys meets its cash and debt commitments.",
+   "closing": "The full memo also covers Synopsys business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Synopsys guided for FY2027?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to a 69% gain by October 2029, hinged on rising cash generation, debt reduction and durable adoption of Synopsys–Ansys, AI and IP products. Management’s FY2027 guidance calls for revenue of $11,100–$11,200 million. It calls for non-GAAP operating margin of 44.0% and the company’s own free cash flow of $3,100 million. Through FY2030, its framework targets roughly 15% annual revenue growth and roughly 50% adjusted operating margin. Stock compensation, debt service and integration work still absorb cash."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Oct 2027",
+        "11,100",
+        "11,200",
+        "Sep 30, 2026"
+       ],
+       [
+        "Non-GAAP Operating Margin",
+        "Year to Oct 2027",
+        "44.0%",
+        "44.0%",
+        "Sep 30, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Oct 2027",
+        "3,100",
+        "3,100",
+        "Sep 30, 2026"
+       ],
+       [
+        "Revenue",
+        "Year to Oct 2026",
+        "9,690",
+        "9,740",
+        "Aug 26, 2026"
+       ],
+       [
+        "Non-GAAP Operating Margin",
+        "Year to Oct 2026",
+        "41.5%",
+        "41.5%",
+        "Aug 26, 2026"
+       ],
+       [
+        "Free Cash Flow",
+        "Year to Oct 2026",
+        "2,600",
+        "2,600",
+        "Aug 26, 2026"
+       ],
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "2,530",
+        "2,580",
+        "Aug 26, 2026"
+       ]
+      ],
+      "note": "The company’s adjusted earnings per share is much higher than its standard earnings per share because it removes large costs such as stock compensation, acquired-intangible amortization, and restructuring."
+     }
+    },
+    {
+     "heading": "Has Synopsys kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "A performance restricted stock unit is a promise of shares that pays only if specified results are achieved. The 2023–2025 award paid nothing because certified revenue growth was 10.3%, below its 13.0% goal. The next award excludes more than US$100 million of revenue per acquisition, so buying Ansys cannot automatically satisfy the growth test. That protects against rewarding purchased revenue, but shareholders must still judge whether management creates value by integrating the acquisition."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Synopsys revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "The same distinction appears in Q3 FY2026. Total revenue grew about 42%, but EDA, or electronic design automation, grew 8.5%, while Design IP grew about 11%. It is like a grocery chain buying another store: combined sales rise immediately, even if the original store attracts no more shoppers."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "GAAP operating margin was 14.4%, while the company’s adjusted margin was 41.6%. GAAP diluted EPS rose to $2.84 from $1.50, while adjusted EPS rose to $3.91 from $3.39. The difference reflects excluded expenses and the Processor IP disposal gain. A larger share count also means total profit does not flow through proportionately to each share."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What should I watch in Synopsys results?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will be customers using the new products repeatedly while Synopsys meets its cash and debt commitments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 9, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/snps/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SNPS&src=seo-earnings"
+  }
+ },
+ "short_name": "Synopsys",
+ "first_memo_date": "2026-10-16T10:23:58Z"
+}

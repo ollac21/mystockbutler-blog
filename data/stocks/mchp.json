@@ -1,0 +1,822 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MCHP",
+ "slug": "mchp",
+ "company": "Microchip Technology Incorporated",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-19T12:13:42Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 73.85,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 269,
+  "tables": 27,
+  "words": 17225,
+  "sources": 247
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "An electric pump may look like one machine, but its work depends on several specialized chips. Microchip Technology sells those chips and the supporting technology, so its business is easiest to understand by following one dollar from design choice to shipped part."
+ },
+ "sources": [
+  {
+   "title": "Fiscal 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/827054/000082705425000077/mchp-20250331.htm"
+  },
+  {
+   "title": "Fiscal 2025 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/827054/000082705425000061/exhibit991q4fy25.htm"
+  },
+  {
+   "title": "Quarterly filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000038/mchp-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "TXN",
+  "NXPI",
+  "STM",
+  "IFX.DE",
+  "ADI",
+  "ON",
+  "QCOM",
+  "SWKS",
+  "MRVL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Microchip stock forecast",
+   "meta_description": "Microchip stock forecast: weighted scenarios, recovery drivers, real free cash flow and valuation in plain English.",
+   "opening": "Microchip's weighted scenario is $53.28 in October 2027 and $74.59 in October 2029, after a −25% return including dividends and an +8% return. It hinges on end demand outrunning replenishment, margins holding after temporary benefits fade, and cash reducing debt.",
+   "closing": "The full memo also explains Microchip's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Microchip's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast’s weighted path is weak at first, then recovers. By October 2027, the weighted price is $53.28, a 25% loss including dividends. By October 2028, it reaches $64.54, an 8% loss. By October 2029, it reaches $74.59, an 8% gain."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The terminal range is unusually wide. The bear case reaches $15.24 by October 2029. The bull case reaches $165.96, against today’s $73.85. The probabilities are 30% bear, 50% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 73.85, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 73.85, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "20.57 (-70 %)",
+        "8.72 (-83 %)",
+        "15.24 (-72 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "55.64 (-22 %)",
+        "69.40 (-1 %)",
+        "73.65 (+7 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "96.45 (+33 %)",
+        "136.10 (+89 %)",
+        "165.96 (+132 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "53.28 (-25 %)",
+        "64.54 (-8 %)",
+        "74.59 (+8 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a prediction that the shares will actually reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for Microchip, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 266,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires distributor restocking to fade before end-customer demand recovers. Low utilization and renewed inventory charges then suppress profit, while debt, preferred claims and dilution restrict cash for common shareholders. The bear case gives $20.57 in October 2027 and $15.24 in October 2029. Its 30% probability reflects 175 company inventory days, prior capacity charges and the business’s sharp cyclicality."
+      },
+      {
+       "n": 267,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires sell-through to exceed replenishment, new PCIe and 64-bit designs to reach production, and factory loading to expand margins. Strong cash generation then supports debt reduction and buybacks. The bull case gives $96.45 in October 2027 and $165.96 in October 2029. Its 20% probability remains lower because design wins were not yet volume shipments and dividends recently exceeded free cash flow."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Microchip really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "After $91.1 million of capital spending, free cash flow was $871.0 million. That was better than the preceding year but far below the fiscal 2023 peak, when equipment and facility spending was also much higher."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "962.1",
+        "898.1",
+        "2,892.7",
+        "3,621.0",
+        "2,842.7"
+       ],
+       [
+        "− Capital spending",
+        "91.1",
+        "126.0",
+        "285.1",
+        "486.2",
+        "370.1"
+       ],
+       [
+        "**= Free cash flow**",
+        "871.0",
+        "772.1",
+        "2,607.6",
+        "3,134.8",
+        "2,472.6"
+       ],
+       [
+        "− Stock pay",
+        "255.4",
+        "180.4",
+        "177.5",
+        "170.4",
+        "210.2"
+       ],
+       [
+        "**= Real free cash flow**",
+        "615.6",
+        "591.7",
+        "2,430.1",
+        "2,964.4",
+        "2,262.4"
+       ]
+      ],
+      "note": "Real free cash flow is lower because paying employees with shares uses no cash today but gives away part of the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Microchip today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "73.85"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "110.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.2x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "9.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.5%"
+       ]
+      ],
+      "note": "The company’s price-to-earnings ratio drops from 110.2 to 20.2 because the second number uses analysts’ expected profit for the next year, not profit already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "73.85"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "74.59 (+8 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.5%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 73.85,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "20.57 (-70 %)",
+       "8.72 (-83 %)",
+       "15.24 (-72 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "55.64 (-22 %)",
+       "69.40 (-1 %)",
+       "73.65 (+7 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "96.45 (+33 %)",
+       "136.10 (+89 %)",
+       "165.96 (+132 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "53.28 (-25 %)",
+       "64.54 (-8 %)",
+       "74.59 (+8 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mchp/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MCHP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Microchip dividend",
+   "meta_description": "Microchip pays a dividend, but recent free cash flow has not fully covered it; see its history, cash use, outlook and yield.",
+   "opening": "Microchip pays $1.80 per share in dividends, while real free cash flow per share was $1.13. That cash generation did not fully fund distributions without drawing on the balance sheet.",
+   "closing": "The full memo also explains Microchip’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Microchip pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue went through a boom, a 42.3% fiscal 2025 contraction, and only a 7.1% fiscal 2026 recovery; sales remain far below the fiscal 2023 peak. Operating margin recovered to 10.4% in fiscal 2026 after falling to 6.7% in fiscal 2025. Real free cash flow per share was $1.13 against $1.80 of dividends paid per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "1.13",
+        "1.10",
+        "4.43",
+        "5.32",
+        "4.00"
+       ],
+       [
+        "− Dividends paid, per share",
+        "1.80",
+        "1.82",
+        "1.66",
+        "1.25",
+        "0.89"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "1.30",
+        "2.68",
+        "2.73"
+       ]
+      ],
+      "note": "In 2026, the company paid 21 cents more per share in dividends than the cash it generated, so it had to use cash from elsewhere."
+     }
+    },
+    {
+     "heading": "Does Microchip cover its dividend with cash?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Common dividends exceeded conventional free cash flow. Positive cash generation therefore did not fully fund distributions without drawing on the balance sheet."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "871.0",
+        "772.1",
+        "2,607.6",
+        "3,134.8",
+        "2,472.6"
+       ],
+       [
+        "− Dividends paid",
+        "984.0",
+        "975.7",
+        "911.5",
+        "695.3",
+        "503.8"
+       ],
+       [
+        "− Share buybacks",
+        "0.0",
+        "96.5",
+        "982.1",
+        "945.8",
+        "425.6"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "714.0",
+        "1,493.7",
+        "1,543.2"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "113.0",
+        "300.1",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own net debt is slightly higher because it counts the original amount borrowed, while our figure uses the debt's reported value after accounting adjustments."
+     }
+    },
+    {
+     "heading": "What could change Microchip’s dividend?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The recent pattern is less comfortable. Dividends exceeded free cash flow in fiscal 2025 and fiscal 2026, and Microchip acknowledged using borrowings to help finance quarterly dividends. Borrowing to preserve a dividend keeps today’s payment intact but leaves less flexibility tomorrow and adds interest costs. The table tracks free cash flow, shareholder payments, investments, asset sales, share issuance and debt issued or repaid."
+      },
+      {
+       "n": 263,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The forecast holds the dividend at $1.82 per share in every case and every year. That matches the rate maintained through fiscal 2025 and fiscal 2026, while common dividends exceeded free cash flow in both years."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Microchip’s dividend yield today against its share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "73.85"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "The company’s price-to-earnings ratio drops from 110.2 to 20.2 because the second number uses analysts’ expected profit for the next year, not profit already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "1.80"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.5%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.89",
+      "1.25",
+      "1.66",
+      "1.82",
+      "1.80"
+     ],
+     "Real free cash flow per share": [
+      "4.00",
+      "5.32",
+      "4.43",
+      "1.10",
+      "1.13"
+     ],
+     "Free cash flow per share": [
+      "4.37",
+      "5.62",
+      "4.76",
+      "1.44",
+      "1.60"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mchp/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MCHP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Microchip earnings date",
+   "meta_description": "Microchip reports on November 5, 2026: guidance, the recovery trend, and whether demand is becoming dependable cash generation.",
+   "opening": "Microchip's next results are scheduled for November 5, 2026. Watch whether continued demand comes with controlled inventory.",
+   "closing": "The full memo also covers Microchip's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Microchip guided for the September quarter?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On August 6, Microchip gave the sales and earnings ranges shown below. It said the sales midpoint would represent approximately 40.6% growth from a year earlier. Earnings per share means the profit assigned to each share, including securities that could become shares. Growth against a weak quarter is an easier hurdle than growth after customers have finished rebuilding inventories."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Net Sales — GAAP (US$ billions)",
+        "Quarter to Sep 2026",
+        "1.589",
+        "1.618",
+        "Aug 6, 2026"
+       ],
+       [
+        "Gross Profit — GAAP (% of net sales)",
+        "Quarter to Sep 2026",
+        "65.4%",
+        "66.3%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Operating Expenses — GAAP (% of net sales)",
+        "Quarter to Sep 2026",
+        "37.3%",
+        "37.4%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Operating Income — GAAP (% of net sales)",
+        "Quarter to Sep 2026",
+        "28.1%",
+        "28.9%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Net income — GAAP",
+        "Quarter to Sep 2026",
+        "321.0",
+        "323.0",
+        "Aug 6, 2026"
+       ],
+       [
+        "Diluted net income per common share — GAAP",
+        "Quarter to Sep 2026",
+        "0.53",
+        "0.54",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The company’s non-standard figures remove certain costs and charges, so they show higher profit and earnings per share than figures prepared under standard accounting rules."
+     }
+    },
+    {
+     "heading": "Did Microchip keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "Pay, and promises kept",
+       "text": "There is evidence that Sanghi has delivered part of his undertaking: Fab 2 closed, inventories declined, and the August 6, 2026 results call reported results above guidance. The recovery remains unfinished, however. Shareholders should credit the operating improvements while asking whether the value created for each existing share exceeds the cost of management’s pay."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Microchip's revenue and profit trend over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "The quarterly pattern is clearer. Revenue bottomed at $970.5 million in March 2025. By June 2026, it had reached $1,484.7 million after rising in every intervening quarter. The recovery is real, but sell-through will determine how much of it reflects final demand."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,484.7",
+        "1,311.2",
+        "1,186.0",
+        "1,140.4",
+        "1,075.5",
+        "970.5",
+        "1,026.0",
+        "1,163.8"
+       ],
+       [
+        "Gross margin",
+        "63.2%",
+        "61.0%",
+        "59.6%",
+        "55.9%",
+        "53.6%",
+        "51.6%",
+        "54.7%",
+        "57.4%"
+       ],
+       [
+        "Operating income",
+        "336.8",
+        "217.4",
+        "151.7",
+        "88.9",
+        "32.1",
+        "-100.3",
+        "30.9",
+        "146.6"
+       ],
+       [
+        "Net income",
+        "229.8",
+        "144.2",
+        "62.7",
+        "41.7",
+        "-18.6",
+        "-154.6",
+        "-53.6",
+        "78.4"
+       ],
+       [
+        "EPS, diluted",
+        "0.37",
+        "0.21",
+        "0.06",
+        "0.03",
+        "-0.09",
+        "-0.29",
+        "-0.10",
+        "0.14"
+       ],
+       [
+        "**= Free cash flow**",
+        "497.6",
+        "242.8",
+        "318.9",
+        "51.6",
+        "257.7",
+        "191.7",
+        "253.4",
+        "22.8"
+       ]
+      ],
+      "note": "Microchip's net income includes profit owed to preferred shareholders, but its earnings per share counts only common shareholders after preferred dividends are removed."
+     }
+    },
+    {
+     "heading": "What should Microchip watch in November?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Microchip schedules its September-quarter results call for November 5, 2026, at 5 p.m. Eastern. Investors should compare sales and earnings with guidance, then check whether receivables rose faster than profit or inventory began accumulating again."
+      },
+      {
+       "n": 246,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "December’s outlook will be more revealing. A strong quarter could reflect replenishment, favorable product mix, pricing or licensing. Continued demand with controlled inventory would offer better evidence of a lasting recovery. Debt reduction should be judged after dividends, equipment purchases and acquisition payments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "1,484.7"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.37"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,163.8",
+      "1,026.0",
+      "970.5",
+      "1,075.5",
+      "1,140.4",
+      "1,186.0",
+      "1,311.2",
+      "1,484.7"
+     ],
+     "EPS, diluted": [
+      "0.14",
+      "-0.10",
+      "-0.29",
+      "-0.09",
+      "0.03",
+      "0.06",
+      "0.21",
+      "0.37"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mchp/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MCHP&src=seo-earnings"
+  }
+ },
+ "short_name": "Microchip",
+ "first_memo_date": "2026-10-19T12:13:42Z"
+}

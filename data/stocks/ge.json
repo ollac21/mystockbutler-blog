@@ -1,0 +1,778 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GE",
+ "slug": "ge",
+ "company": "GE Aerospace",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T03:36:16Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 308.2,
+ "price_date": "2026-10-09T20:00:02Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 16414,
+  "sources": 231
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "GE Aerospace sells aircraft engines and equipment, then earns repeat revenue keeping them in service. Its business is easiest to understand as a long loop in which an engine sale creates decades of parts, repairs and technical support."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K, Note 26",
+   "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000008/ge-20251231.htm"
+  },
+  {
+   "title": "GE’s 2024 reconciliation",
+   "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054525000015/ge-20241231.htm"
+  },
+  {
+   "title": "SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054524000027/ge-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "RTX",
+  "RR.L",
+  "WWD",
+  "PH",
+  "HWM",
+  "TDG"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "GE Aerospace stock forecast",
+   "meta_description": "GE Aerospace's weighted case is US$281.23 in October 2027, hinging on profitable service growth, supply, LEAP and CPP.",
+   "opening": "The weighted case puts GE Aerospace at US$281.23 in October 2027. It hinges on profitable service growth and execution on supply, LEAP and CPP.",
+   "closing": "The full memo also explains GE Aerospace's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could GE Aerospace's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case puts GE at US$281.23 in October 2027, with the outcome hinging on profitable service growth and execution on supply, LEAP and CPP. By October 2029, the weighted price reaches US$323.37, a +7% return after a −8% return in October 2027, dividends included."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the modeled range is $174.46 to $508.79. Today’s price is $308.20. The bear case receives 25% probability, the base case 55%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 308.20, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 308.20, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "216.44 (-29 %)",
+        "195.40 (-35 %)",
+        "174.46 (-42 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "290.44 (-5 %)",
+        "308.22 (+1 %)",
+        "323.63 (+7 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "336.89 (+10 %)",
+        "419.34 (+37 %)",
+        "508.79 (+67 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "281.23 (-8 %)",
+        "302.24 (-1 %)",
+        "323.37 (+7 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for GE Aerospace?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear story begins with supplier or shop constraints delaying deliveries and cash conversion. LEAP service costs then weaken margins, while CPP financing limits buybacks. The first price is $216.44 and the last is $174.46. Its 25% probability reflects the size of the pending acquisition, CES margin pressure and the absence of a guaranteed repurchase amount."
+      },
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull story requires supplier flow to improve, CPP capacity to become productive and LEAP durability to reduce repair costs. Stronger service conversion would lift earnings and cash flow, supporting both buybacks and a premium P/E. The first price is $336.89 and the last is $508.79. Its 20% probability reflects the need for several operational improvements to arrive together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does GE Aerospace really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash reflects collections from customers and payments to suppliers, employees and others. Straightforward free cash flow subtracts capital spending from that operating cash. GE’s own measure makes additional adjustments, including separation-related cash costs and, from Q3 2025, proceeds from selling property and equipment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions, without GECAS",
+      "caption": "Follow the money: real free cash flow (US$ millions, without GECAS)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,543",
+        "5,817",
+        "4,609",
+        "4,027"
+       ],
+       [
+        "− Capital spending",
+        "1,273",
+        "1,032",
+        "862",
+        "662"
+       ],
+       [
+        "**= Free cash flow**",
+        "7,270",
+        "4,785",
+        "3,747",
+        "3,365"
+       ],
+       [
+        "− Stock pay",
+        "325",
+        "286",
+        "192",
+        "143"
+       ],
+       [
+        "**= Real free cash flow**",
+        "6,945",
+        "4,499",
+        "3,555",
+        "3,222"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "15.1%",
+        "11.6%",
+        "10.1%",
+        "11.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for GE Aerospace today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "308.20"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "36.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "33.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "308.20"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "323.37 (+7 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "33.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 308.2,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "216.44 (-29 %)",
+       "195.40 (-35 %)",
+       "174.46 (-42 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "290.44 (-5 %)",
+       "308.22 (+1 %)",
+       "323.63 (+7 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "336.89 (+10 %)",
+       "419.34 (+37 %)",
+       "508.79 (+67 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "281.23 (-8 %)",
+       "302.24 (-1 %)",
+       "323.37 (+7 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ge/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "GE Aerospace dividend: payout, cash cover and yield",
+   "meta_description": "GE Aerospace pays $0.47 quarterly; cash coverage depends on free cash flow, buybacks, funding needs and the current dividend yield.",
+   "opening": "GE Aerospace pays a declared quarterly dividend of $0.47, implying $1.88 through October 2027. Cash coverage has been mixed: in 2024 and 2025, dividends and buybacks exceeded free cash flow.",
+   "closing": "The full memo also answers how GE Aerospace runs its business, compares with rivals, evaluates management, and frames its risks.",
+   "blocks": [
+    {
+     "heading": "How much does GE Aerospace pay shareholders?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts from the declared quarterly rate of $0.47, implying $1.88 through October 2027. The base case then rises to $2.00 and $2.12. The bear case holds at $1.88, while the bull case reaches $2.36. The range reflects 2026 free-cash-flow guidance of $8,900 million to $9,200 million, balanced against CPP funding and investment needs."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "9,016 (7,704 / 9,512)",
+        "10,065 (7,728 / 11,310)",
+        "11,172 (7,772 / 13,140)"
+       ],
+       [
+        "Dividends per share",
+        "1.88 (1.88 / 1.88)",
+        "2.00 (1.88 / 2.12)",
+        "2.12 (1.88 / 2.36)"
+       ],
+       [
+        "Price to earnings",
+        "33.00 (29.00 / 36.00)",
+        "31.00 (26.00 / 37.00)",
+        "29.00 (23.00 / 38.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does GE Aerospace's dividend fit its cash flow?",
+     "paragraphs": [
+      {
+       "n": 86,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The balance then shifted. In both 2024 and 2025, dividends and buybacks exceeded free cash flow. Buybacks reduce the number of shares outstanding, which can increase each remaining shareholder’s claim on earnings, but only if GE does not overpay. GE also issued shares through exercised employee options, so repurchases must be judged against both the price paid and new shares created."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions, without GECAS",
+      "caption": "Follow the money: where the free cash flow went (US$ millions, without GECAS)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "7,270",
+        "4,785",
+        "3,747",
+        "3,365",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "1,452",
+        "1,008",
+        "353",
+        "355",
+        "355"
+       ],
+       [
+        "− Share buybacks",
+        "7,551",
+        "5,827",
+        "1,233",
+        "1,048",
+        "107"
+       ],
+       [
+        "Paid to shareholders",
+        "9,003",
+        "6,835",
+        "1,586",
+        "1,403",
+        "462"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "123.8%",
+        "142.8%",
+        "42.3%",
+        "41.7%",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change GE Aerospace's dividend?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "By October 2028, LEAP service margins and repair economics become decisive. Improving durability and expanding shop throughput would justify higher earnings, dividends and buybacks. Disappointing repair costs would reduce all three."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is GE Aerospace's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Dividends and buybacks return money to shareholders, but neither creates the underlying cash. Engine deliveries, flying activity, replacement parts and completed overhauls must support them. The stated real free cash flow yield therefore matters only once its adjustment is clearly defined."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "308.20"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.36"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.32",
+      "0.32",
+      "0.92",
+      "1.36"
+     ],
+     "Real free cash flow per share": [
+      "2.93",
+      "3.23",
+      "4.11",
+      "6.50"
+     ],
+     "Free cash flow per share": [
+      "3.06",
+      "3.41",
+      "4.37",
+      "6.81"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ge/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "GE Aerospace earnings",
+   "meta_description": "GE Aerospace's next results are expected on October 20, 2026, with guidance for operating profit, adjusted EPS and free cash flow.",
+   "opening": "GE Aerospace's next results are expected on October 20, 2026. GE Aerospace watchers should watch whether stronger output becomes durable cash.",
+   "closing": "The full memo also explains GE Aerospace's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has GE Aerospace guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides for 2026 operating profit of US$10,550–10,750 million and adjusted EPS of US$7.65–7.85. It guides to company free cash flow of US$8,900–9,200 million, with about half of the increase attributed to earnings and half to working capital."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted Revenue* Growth",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 16, 2026"
+       ],
+       [
+        "Operating Profit*",
+        "Year to Dec 2026",
+        "10,550",
+        "10,750",
+        "Jul 16, 2026"
+       ],
+       [
+        "Adjusted EPS*",
+        "Year to Dec 2026",
+        "7.65",
+        "7.85",
+        "Jul 16, 2026"
+       ],
+       [
+        "Free Cash Flow*",
+        "Year to Dec 2026",
+        "8,900",
+        "9,200",
+        "Jul 16, 2026"
+       ],
+       [
+        "FCF* conversion",
+        "Year to Dec 2026",
+        "100.0%",
+        "",
+        "Jul 16, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How have GE Aerospace revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, net income and diluted EPS all increased from the prior-year quarter. Commercial Engines & Services drove the expansion: its revenue grew 27%, with services up 26%. Equipment grew 30%."
+      },
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The mix mattered. CES profit increased 20%, but its margin fell from 28.9% to 27.3%. GE attributed the pressure to installation-engine growth, including GE9X, as well as investment and inflation. A factory can therefore deliver more engines and earn more total profit while making less profit on each dollar of revenue. Those engines may still create a valuable service fleet later."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "13,349",
+        "12,392",
+        "12,717",
+        "12,181",
+        "11,023",
+        "9,935",
+        "10,812",
+        "9,842"
+       ],
+       [
+        "Operating income",
+        "2,527",
+        "2,268",
+        "2,307",
+        "2,257",
+        "2,052",
+        "1,952",
+        "2,005",
+        "916"
+       ],
+       [
+        "Net income",
+        "2,408",
+        "1,930",
+        "2,452",
+        "2,174",
+        "2,008",
+        "1,967",
+        "1,905",
+        "1,705"
+       ],
+       [
+        "EPS, diluted",
+        "2.30",
+        "1.83",
+        "2.31",
+        "2.04",
+        "1.87",
+        "1.83",
+        "1.75",
+        "1.56"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should GE Aerospace watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next evidence will show whether GE’s stronger output is becoming durable cash. The October 20, 2026 earnings report should show whether record shop production continued and whether new-engine deliveries still pressured margins. The January 21, 2027 full-year release should establish whether GE met its profit and cash outlook."
+      },
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "GE’s plan therefore depends on four things arriving together: more shop capacity, profitable service work, a workable CPP financing plan, and no major surprise from its legacy obligations."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "13,349"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.30"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "9,842",
+      "10,812",
+      "9,935",
+      "11,023",
+      "12,181",
+      "12,717",
+      "12,392",
+      "13,349"
+     ],
+     "EPS, diluted": [
+      "1.56",
+      "1.75",
+      "1.83",
+      "1.87",
+      "2.04",
+      "2.31",
+      "1.83",
+      "2.30"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ge/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GE&src=seo-earnings"
+  }
+ },
+ "short_name": "GE Aerospace",
+ "first_memo_date": "2026-10-12T03:36:16Z"
+}

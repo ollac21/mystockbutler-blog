@@ -1,0 +1,802 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SRE",
+ "slug": "sre",
+ "company": "Sempra",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T15:41:11Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 83.41,
+ "price_date": "2026-10-16T20:01:53Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16538,
+  "sources": 281
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sempra is an energy infrastructure company: it earns from the networks that deliver energy and from the facilities that move, store, export, or generate it. To understand a dollar at Sempra, follow it from a household or commercial contract into the company, then through fuel, upkeep, financing, and construction."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000008/ex99_1x20251231xearningsta.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1032208/000103220825000008/ex99_1x20241231xearningsta.htm"
+  },
+  {
+   "title": "Sempra Q2 release",
+   "url": "https://www.sec.gov/Archives/edgar/data/86521/000103220826000043/ex99_1x20260630xearningsta.htm"
+  }
+ ],
+ "rivals": [
+  "DUK",
+  "NEE",
+  "D",
+  "SO",
+  "ETR",
+  "PCG",
+  "EIX",
+  "LNG",
+  "WMB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sempra stock forecast",
+   "meta_description": "Sempra's stock forecast weighs utility growth, funding pressure, cash flow, valuation, and bear, base, and bull cases.",
+   "opening": "Sempra's probability-weighted price is $94.91 in October 2029. It hinges on utility investment entering rates and the SI Partners sale closing without material damage.",
+   "closing": "The full memo also explains Sempra's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Sempra's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case is $63.71, a −14% return. The base case is $99.58, a +30% return. The bull case is $130.04, a +66% return. Bear and base probabilities are 30% and 50%. The bull probability is 20%."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $81.46 in October 2027, including dividends for a 1% return from today’s $83.41. It rises to $87.56 in October 2028, a 12% return, and $94.91 in October 2029, a 24% return. By the last date, the bear-to-bull range is $63.71 to $130.04."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 83.41, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 83.41, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "67.42 (-16 %)",
+        "64.95 (-16 %)",
+        "63.71 (-14 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "83.69 (+4 %)",
+        "91.20 (+16 %)",
+        "99.58 (+30 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "96.93 (+20 %)",
+        "112.40 (+42 %)",
+        "130.04 (+66 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "81.46 (+1 %)",
+        "87.56 (+12 %)",
+        "94.91 (+24 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can differ from the base case."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Sempra's forecast?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Earnings provide the main path: the base case rises from $3,537 million in October 2027 to $4,223 million in October 2029. That corresponds to EPS of $5.40, $5.85 and $6.35, using approximately 655 million diluted shares near term. The path broadly delivers management’s 7%–9% long-term EPS target and assumes utility investment enters rates and the SI Partners sale closes without material damage."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives earnings of $3,275 million, $3,425 million and $3,518 million, from EPS of $5.00, $5.15 and $5.25. It assumes slower load conversion, regulatory delays and higher financing costs. The bull case gives $3,733 million, $4,092 million and $4,489 million, from EPS of $5.70, $6.20 and $6.75, because Texas connections, tracker recovery and ECA LNG commissioning exceed the base path."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Sempra really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operations generated $4,565 million, while capital spending consumed $10,612 million. Free cash flow was therefore negative $6,047 million. After stock pay, “real” free cash flow was negative $6,111 million. This does not mean the existing utilities produce no cash; it means current operating cash did not fund the year’s expansion."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,565",
+        "4,907",
+        "6,218",
+        "1,142",
+        "3,842"
+       ],
+       [
+        "− Capital spending",
+        "10,612",
+        "8,215",
+        "8,397",
+        "5,357",
+        "5,015"
+       ],
+       [
+        "**= Free cash flow**",
+        "-6,047",
+        "-3,308",
+        "-2,179",
+        "-4,215",
+        "-1,173"
+       ],
+       [
+        "− Stock pay",
+        "64",
+        "86",
+        "80",
+        "71",
+        "63"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-6,111",
+        "-3,394",
+        "-2,259",
+        "-4,286",
+        "-1,236"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-44.6%",
+        "-25.7%",
+        "-13.5%",
+        "-29.7%",
+        "-9.6%"
+       ]
+      ],
+      "note": "Free cash flow is negative because the company spent more on equipment and buildings than its day-to-day business brought in."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sempra today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "83.41"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-11.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-11.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "83.41"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "94.91 (+24 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-11.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 83.41,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "67.42 (-16 %)",
+       "64.95 (-16 %)",
+       "63.71 (-14 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "83.69 (+4 %)",
+       "91.20 (+16 %)",
+       "99.58 (+30 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "96.93 (+20 %)",
+       "112.40 (+42 %)",
+       "130.04 (+66 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "81.46 (+1 %)",
+       "87.56 (+12 %)",
+       "94.91 (+24 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/sre/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SRE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Sempra dividend: cash coverage and yield",
+   "meta_description": "Sempra pays a growing dividend, but negative free cash flow and heavy investment make cash coverage a central question.",
+   "opening": "Sempra’s forecast base dividend rises from $2.74 to $2.97 per share, while free cash flow is negative after heavy capital spending. The dividend is therefore not covered by the latest year’s free cash flow.",
+   "closing": "The full Sempra memo also examines Sempra’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Sempra pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $2.74 to $2.97 per share, using 4% annual growth. That is slightly below the historical pace and below EPS growth, leaving more cash for the $64.9 billion investment plan. The bear case freezes the latest annualized $2.63 dividend, while the bull case reaches $3.04 through 5% annual increases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,537 (3,275 / 3,733)",
+        "3,861 (3,425 / 4,092)",
+        "4,223 (3,518 / 4,489)"
+       ],
+       [
+        "Shares (millions)",
+        "655 (656 / 655)",
+        "656 (659 / 655)",
+        "657 (663 / 656)"
+       ],
+       [
+        "Dividends per share",
+        "2.74 (2.63 / 2.76)",
+        "2.85 (2.63 / 2.90)",
+        "2.97 (2.63 / 3.04)"
+       ],
+       [
+        "Price to earnings",
+        "15.50 (13.50 / 17.00)",
+        "15.50 (12.50 / 18.00)",
+        "15.50 (12.00 / 19.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Sempra’s dividend fit its free cash flow?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operations generated $4,565 million, while capital spending consumed $10,612 million. Free cash flow was therefore negative $6,047 million. After stock pay, “real” free cash flow was negative $6,111 million. This does not mean the existing utilities produce no cash; it means current operating cash did not fund the year’s expansion."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-6,047",
+        "-3,308",
+        "-2,179",
+        "-4,215",
+        "-1,173"
+       ],
+       [
+        "− Dividends paid",
+        "1,603",
+        "1,499",
+        "1,483",
+        "1,430",
+        "1,331"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "450",
+        "300"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "8,259",
+        "5,104",
+        "4,392",
+        "6,332",
+        "2,804"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": "The company paid dividends and other shareholder payments even though its business used cash, so it had to use savings or borrow money to cover them."
+     }
+    },
+    {
+     "heading": "What could change Sempra’s dividend?",
+     "paragraphs": [
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if fewer queue projects reach service during 2027–2029, approvals or wildfire recovery weaken, or delayed sale proceeds push debt and interest costs higher."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Sempra’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $81.46 in October 2027, including dividends for a 1% return from today’s $83.41. It rises to $87.56 in October 2028, a 12% return, and $94.91 in October 2029, a 24% return. By the last date, the bear-to-bull range is $63.71 to $130.04."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "83.41"
+       ],
+       [
+        "Market value (calculated)",
+        "54,541.83"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.45"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-11.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-11.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.13",
+      "2.26",
+      "2.34",
+      "2.35",
+      "2.45"
+     ],
+     "Real free cash flow per share": [
+      "-1.97",
+      "-6.77",
+      "-3.57",
+      "-5.32",
+      "-9.35"
+     ],
+     "Free cash flow per share": [
+      "-1.87",
+      "-6.66",
+      "-3.44",
+      "-5.19",
+      "-9.25"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/sre/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SRE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sempra earnings: date, guidance and what to watch",
+   "meta_description": "Sempra's next results are expected November 4, 2026; see guidance, recent results and the milestones to watch.",
+   "opening": "Sempra's next results are expected on November 4, 2026. Watch Sempra's financing, including whether the planned asset sale arrived and debt changed.",
+   "closing": "The full Sempra memo also answers questions about Sempra's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Sempra guided for earnings?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to adjusted EPS of $4.80–$5.30 for 2026. Its 2027 guidance is $5.10–$5.70. The long-term target is 7%–9% annual EPS growth."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions, except per-share amounts",
+      "caption": "Guidance in force (US$ millions, except per-share amounts)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "GAAP earnings-per-common share (EPS) guidance range",
+        "Year to Dec 2026",
+        "5.02",
+        "5.55",
+        "2026-08-06"
+       ],
+       [
+        "Adjusted EPS guidance range",
+        "Year to Dec 2026",
+        "4.80",
+        "5.30",
+        "2026-08-06"
+       ],
+       [
+        "EPS guidance range",
+        "Year to Dec 2027",
+        "5.10",
+        "5.70",
+        "2026-08-06"
+       ],
+       [
+        "Capital expenditures for PP&E and investments",
+        "Year to Dec 2026",
+        "11,300",
+        "11,300",
+        "2026-08-06"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do Sempra's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue was broadly flat year over year, while operating income, net income and diluted EPS rose. That pattern fits a utility business: commodity pass-throughs can move revenue, while approved rates, invested capital and cost control shape earnings. The largest improvement came from Sempra Texas Utilities."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,997",
+        "3,655",
+        "3,749",
+        "3,151",
+        "3,000",
+        "3,802",
+        "3,758",
+        "2,776"
+       ],
+       [
+        "Gross margin",
+        "96.4%",
+        "86.5%",
+        "85.0%",
+        "85.8%",
+        "88.0%",
+        "82.5%",
+        "88.2%",
+        "92.3%"
+       ],
+       [
+        "Operating income",
+        "832",
+        "1,090",
+        "389",
+        "497",
+        "584",
+        "959",
+        "1,046",
+        "446"
+       ],
+       [
+        "Earnings attributable to common shares",
+        "796",
+        "1,037",
+        "352",
+        "77",
+        "461",
+        "906",
+        "665",
+        "638"
+       ],
+       [
+        "EPS, diluted",
+        "1.21",
+        "1.58",
+        "0.54",
+        "0.12",
+        "0.71",
+        "1.39",
+        "1.04",
+        "1.00"
+       ],
+       [
+        "**= Free cash flow**",
+        "-918",
+        "-652",
+        "-2,222",
+        "-1,451",
+        "-1,520",
+        "-854",
+        "-1,085",
+        "-913"
+       ]
+      ],
+      "note": "Free cash flow is negative because the company spent more cash on equipment and buildings than it generated from day-to-day operations."
+     }
+    },
+    {
+     "heading": "What should Sempra watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next milestones will show whether Sempra’s growth plan is becoming cash-generating infrastructure."
+      },
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first test is financing. The existing short-term loan comes due October 26, 2026, and Sempra expected to report Q3 results on November 4. Investors can then see whether the planned asset sale arrived, how debt changed and whether management altered its funding plan."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "2,997"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.21"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "2,776",
+      "3,758",
+      "3,802",
+      "3,000",
+      "3,151",
+      "3,749",
+      "3,655",
+      "2,997"
+     ],
+     "EPS, diluted": [
+      "1.00",
+      "1.04",
+      "1.39",
+      "0.71",
+      "0.12",
+      "0.54",
+      "1.58",
+      "1.21"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/sre/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SRE&src=seo-earnings"
+  }
+ },
+ "short_name": "Sempra",
+ "first_memo_date": "2026-10-18T15:41:11Z"
+}

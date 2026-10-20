@@ -1,0 +1,759 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BLK",
+ "slug": "blk",
+ "company": "BlackRock, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T01:22:51Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 1073.79,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2027-01-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 282,
+  "tables": 27,
+  "words": 17056,
+  "sources": 272
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "BlackRock is an investment manager: it looks after other people’s money and sells institutions the software and data to run portfolios. The dollar usually enters as a fee on assets or a technology contract, then leaves through staff, distribution, fund, and operating costs before the remainder becomes profit."
+ },
+ "sources": [
+  {
+   "title": "BlackRock 2025 Form 10-K, pp. 43 and 72",
+   "url": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000264/blk015204-arsa.pdf"
+  },
+  {
+   "title": "Earnings release — Q2 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526420979/blk-ex99_1.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526013503/blk-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "BEN",
+  "STT",
+  "TROW",
+  "IVZ",
+  "MS",
+  "JPM",
+  "GS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "BlackRock stock forecast",
+   "meta_description": "BlackRock's weighted forecast reaches $1,392.58 in October 2029, with base, bear and bull cases, cash conversion and valuation explained.",
+   "opening": "BlackRock's weighted forecast reaches $1,392.58 in October 2029. It hinges on turning scale into cash without letting cost, dilution, or trust erode the return.",
+   "closing": "The full memo also covers BlackRock's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could BlackRock's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $1,250.37 in October 2027, a 19% total return including dividends. It reaches $1,309.69 in October 2028, a 27% return. By October 2029, the weighted price is $1,392.58, a 37% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1073.79, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1073.79, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "886.11 (-15 %)",
+        "800.49 (-21 %)",
+        "787.99 (-20 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "1286.51 (+22 %)",
+        "1335.18 (+29 %)",
+        "1376.56 (+36 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1706.40 (+61 %)",
+        "2009.77 (+92 %)",
+        "2339.51 (+125 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1250.37 (+19 %)",
+        "1309.69 (+27 %)",
+        "1392.58 (+37 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case its stated chance, so it is not another separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for BlackRock?",
+     "paragraphs": [
+      {
+       "n": 272,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives earnings of $7,975 million in 2027 and $8,100 million in 2028, reaching $8,505 million in 2029. It reflects weaker markets, lower-fee products and persistent acquisition costs. The bull case reaches $10,560 million, $11,880 million and $13,260 million as higher-fee inflows, cross-selling and private-market growth outpace costs. Technology ACV grew 16% organically in 2025, supporting that upside but not proving it."
+      },
+      {
+       "n": 278,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires broad inflows, successful Aladdin, eFront and Preqin cross-selling, and private-market commitments converting into fee-paying assets. If recurring revenue grows faster than costs, buybacks and multiple expansion reinforce the result. The path reaches $1,706.40 first and $2,339.51 last. Its probability is 20% because several unproven conditions must hold together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does BlackRock really make?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation was $1,307 million. Deducting it from free cash flow produces “real free cash flow” of $2,245 million. The deduction recognises the economic cost to shareholders, even though the company did not make another cash payment in the period."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,927",
+        "4,956",
+        "4,165",
+        "4,956",
+        "4,944"
+       ],
+       [
+        "− Capital spending",
+        "375",
+        "255",
+        "344",
+        "533",
+        "341"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,552",
+        "4,701",
+        "3,821",
+        "4,423",
+        "4,603"
+       ],
+       [
+        "− Stock pay",
+        "1,307",
+        "753",
+        "630",
+        "708",
+        "734"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,245",
+        "3,948",
+        "3,191",
+        "3,715",
+        "3,869"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "9.3%",
+        "19.3%",
+        "17.9%",
+        "20.8%",
+        "20.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for BlackRock today?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E of 24.4x prices the last twelve months’ earnings. The forward P/E of 19.2x prices estimated earnings for the next twelve months. They imply EPS of approximately US$44.01 and US$55.93, respectively—roughly 27% growth if the definitions match. GAAP EPS was US$10.57 in the latest quarter, while adjusted EPS was US$15.93. Adjusted earnings remove selected charges, while performance fees can make either measure unusually strong."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1,073.79"
+       ],
+       [
+        "Market value (calculated)",
+        "174,168.74"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.4x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "19.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,073.79"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1392.58 (+37 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "19.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1073.79,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "886.11 (-15 %)",
+       "800.49 (-21 %)",
+       "787.99 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "1286.51 (+22 %)",
+       "1335.18 (+29 %)",
+       "1376.56 (+36 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1706.40 (+61 %)",
+       "2009.77 (+92 %)",
+       "2339.51 (+125 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1250.37 (+19 %)",
+       "1309.69 (+27 %)",
+       "1392.58 (+37 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/blk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BLK&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "BlackRock dividend: cash coverage and yield",
+   "meta_description": "BlackRock's dividend yield was 2.1% at US$1,073.79 a share, while 2025 free cash flow was $3,552 million.",
+   "opening": "BlackRock's dividends rise from $24.30 per share to $26.24 and $28.34 in the base case. In 2025, free cash flow was $3,552 million, while shareholder payments reached 115.9% of free cash flow, so cash generation did not cover all shareholder payments.",
+   "closing": "The full memo also covers BlackRock's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does BlackRock pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $24.30 per share to $26.24 and $28.34 in the base case. That is slower than the latest 10% increase, but consistent with annual dividends rising every year from 2021 through 2025. The bear case uses $23.78, $24.97 and $26.22, while the bull case uses $24.64, $27.10 and $29.81. The bear case assumes slower increases rather than a cut because the dividend rose during the 2022 revenue decline."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "9,450 (7,975 / 10,560)",
+        "10,230 (8,100 / 11,880)",
+        "11,040 (8,505 / 13,260)"
+       ],
+       [
+        "Shares (millions)",
+        "162 (162 / 161)",
+        "161 (162 / 160)",
+        "160 (162 / 159)"
+       ],
+       [
+        "Dividends per share",
+        "24.30 (23.78 / 24.64)",
+        "26.24 (24.97 / 27.10)",
+        "28.34 (26.22 / 29.81)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (18.00 / 26.00)",
+        "21.00 (16.00 / 27.00)",
+        "20.00 (15.00 / 28.00)"
+       ]
+      ],
+      "note": "The price to earnings number shows how many dollars investors pay for each dollar of yearly profit, so a higher number means a more expensive share."
+     }
+    },
+    {
+     "heading": "Is BlackRock's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating needs and capital spending. It can fund acquisitions, debt repayment, dividends and buybacks. BlackRock’s shareholder payments exceeded its free cash flow over the five-year period, and in 2025 alone payments reached 115.9% of free cash flow. That left less internally generated cash for expansion."
+      },
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, operations produced $3,927 million of cash. Capital spending was $375 million, leaving free cash flow of $3,552 million. That was down from $4,701 million in 2024 and represented 14.7% of revenue."
+      },
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation was $1,307 million. Deducting it from free cash flow produces “real free cash flow” of $2,245 million. The deduction recognises the economic cost to shareholders, even though the company did not make another cash payment in the period."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,552",
+        "4,701",
+        "3,821",
+        "4,423",
+        "4,603"
+       ],
+       [
+        "− Dividends paid",
+        "3,265",
+        "3,101",
+        "3,035",
+        "2,990",
+        "2,547"
+       ],
+       [
+        "− Share buybacks",
+        "850",
+        "1,625",
+        "1,509",
+        "1,875",
+        "1,200"
+       ],
+       [
+        "− Acquisitions",
+        "3,496",
+        "2,936",
+        "189",
+        "0",
+        "1,106"
+       ],
+       [
+        "− Debt repaid",
+        "796",
+        "1,000",
+        "0",
+        "750",
+        "750"
+       ],
+       [
+        "Paid to shareholders",
+        "4,115",
+        "4,726",
+        "4,544",
+        "4,865",
+        "3,747"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more than its free cash flow, so it had to use borrowed money or existing investments to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change BlackRock's dividend?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets more than $35 billion of revenue by 2030. It targets at least $15 billion of adjusted operating income. Private markets and technology should provide at least 30% of revenue, supported by at least 5% organic base-fee growth and low-to-mid-teens technology ACV growth. For 2026, guidance calls for $2,000 million of repurchases, including $550 million for the quarter to December 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is BlackRock's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1,073.79"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.1%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "20.29"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "16.50",
+      "19.62",
+      "20.14",
+      "20.46",
+      "20.29"
+     ],
+     "Real free cash flow per share": [
+      "25.06",
+      "24.38",
+      "21.17",
+      "26.04",
+      "13.95"
+     ],
+     "Free cash flow per share": [
+      "29.81",
+      "29.02",
+      "25.36",
+      "31.01",
+      "22.08"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/blk/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BLK&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "BlackRock earnings",
+   "meta_description": "BlackRock's next results are January 21, 2027; watch recurring fees, costs and the planned repurchase.",
+   "opening": "BlackRock's next results are January 21, 2027. Watch whether recurring fees grow faster than expenses.",
+   "closing": "The full memo answers what BlackRock does, who it competes with, how BlackRock is managed, and the risks BlackRock faces.",
+   "blocks": [
+    {
+     "heading": "What has BlackRock guided for 2030?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets more than $35 billion of revenue by 2030. It targets at least $15 billion of adjusted operating income. Private markets and technology should provide at least 30% of revenue, supported by at least 5% organic base-fee growth and low-to-mid-teens technology ACV growth. For 2026, guidance calls for $2,000 million of repurchases, including $550 million for the quarter to December 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do BlackRock's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $7,752 million, up from $6,509 million a year earlier. Operating income rose from $1,955 million to $2,328 million. Diluted EPS rose from $8.43 to $10.57."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,752",
+        "7,084",
+        "6,698",
+        "7,008",
+        "6,509",
+        "5,423",
+        "5,276",
+        "5,677"
+       ],
+       [
+        "Operating income",
+        "2,328",
+        "2,461",
+        "2,814",
+        "1,661",
+        "1,955",
+        "1,731",
+        "1,698",
+        "2,075"
+       ],
+       [
+        "Net income",
+        "1,659",
+        "1,914",
+        "2,212",
+        "1,127",
+        "1,323",
+        "1,593",
+        "1,510",
+        "1,670"
+       ],
+       [
+        "EPS, diluted",
+        "10.57",
+        "12.19",
+        "14.06",
+        "7.16",
+        "8.43",
+        "10.19",
+        "9.64",
+        "10.63"
+       ],
+       [
+        "**= Free cash flow**",
+        "",
+        "1,118",
+        "-1,086",
+        "2,147",
+        "1,336",
+        "1,275",
+        "-1,206",
+        "2,528"
+       ]
+      ],
+      "note": "Free cash flow can look very low or negative because this count includes cash used to buy investments, not just normal business spending."
+     }
+    },
+    {
+     "heading": "What should I watch in BlackRock's next results?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The quarter ending December 31, 2026 is the next operating checkpoint. Investors should watch the planned $550 million repurchase alongside the cost outlook. Completing the purchase would show available capital and management confidence; completing it while recurring fees grow faster than expenses would show stronger underlying progress."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 21, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "7,752"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "10.57"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,677",
+      "5,276",
+      "5,423",
+      "6,509",
+      "7,008",
+      "6,698",
+      "7,084",
+      "7,752"
+     ],
+     "EPS, diluted": [
+      "10.63",
+      "9.64",
+      "10.19",
+      "8.43",
+      "7.16",
+      "14.06",
+      "12.19",
+      "10.57"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/blk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BLK&src=seo-earnings"
+  }
+ },
+ "short_name": "BlackRock",
+ "first_memo_date": "2026-10-15T01:22:51Z"
+}

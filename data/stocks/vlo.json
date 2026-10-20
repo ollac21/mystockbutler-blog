@@ -1,0 +1,917 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "VLO",
+ "slug": "vlo",
+ "company": "Valero Energy Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-14T22:26:03Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 459.78,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2026-10-22",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 27,
+  "words": 17079,
+  "sources": 203
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Valero Energy buys crude oil, corn and other raw materials, turns them into fuels and industrial products, and sells them mainly to other businesses. Its business is the work of earning a spread between what those products are worth and the cost of making and moving them."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, segment disclosures",
+   "url": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026011499/vlo-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1035002/000103500225000005/vlo-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1035002/000103500224000007/vlo-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "MPC",
+  "PSX",
+  "PBF",
+  "DK",
+  "CVI",
+  "CVE",
+  "XOM",
+  "CVX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Valero stock forecast",
+   "meta_description": "Valero’s weighted scenarios, key drivers, cash generation and valuation explained in plain English.",
+   "opening": "Valero’s weighted scenario is $221.03 in October 2027, a 51% loss including dividends, and $240.61 in October 2029, a 44% loss. Valero’s outlook hinges on whether strong margins endure and projects deliver.",
+   "closing": "The full memo also explains Valero’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Valero’s shares go?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $221.03 in October 2027, a 51% loss including dividends. It is $240.61 in October 2029, a 44% loss. The bear case carries 35% probability. The base case carries 50% probability. The bull case carries 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 459.78, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 459.78, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "35 %",
+        "104.94 (-76 %)",
+        "99.78 (-76 %)",
+        "137.97 (-67 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "252.20 (-44 %)",
+        "249.22 (-44 %)",
+        "256.23 (-41 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "387.99 (-14 %)",
+        "467.12 (+4 %)",
+        "428.03 (-3 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "221.03 (-51 %)",
+        "229.60 (-48 %)",
+        "240.61 (-44 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Valero?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The operating-profit row carries the main cycle judgment. The base case uses $8,000m in October 2027 and $7,500m in October 2028. It reaches $7,323m in 2029, the five-year mean. The base assumes revenue near the five-year average and margins fading from the June 2026 rebound toward normal. June operating income was $5,196m, while throughput and reliability show the system’s upside when margins cooperate."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at $4,500m and falls to $4,000m before returning to $4,500m. The bull case runs at $10,000m, then $10,500m, before settling at $10,000m. The difference reflects supply, demand, outages and project execution. Benicia has stopped refining, Port Arthur repairs remain a risk, and Renewable Diesel lost $156m in 2025."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "8,000 (4,500 / 10,000)",
+        "7,500 (4,000 / 10,500)",
+        "7,323 (4,500 / 10,000)"
+       ],
+       [
+        "Shares (millions)",
+        "282 (285 / 280)",
+        "276 (282 / 272)",
+        "270 (279 / 264)"
+       ],
+       [
+        "Dividends per share",
+        "5.04 (4.80 / 5.28)",
+        "5.28 (4.00 / 5.76)",
+        "5.52 (3.20 / 6.24)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "9.00 (7.00 / 11.00)",
+        "9.00 (7.00 / 12.00)",
+        "9.00 (8.00 / 11.00)"
+       ],
+       [
+        "Net debt",
+        "880 (1,592 / 1,362)",
+        "-1,284 (-137 / -1,057)",
+        "-3,275 (-2,495 / -3,001)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Valero really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Valero’s own free-cash-flow measure removes working-capital movements and makes performance easier to compare, but actual cash still determines what can be invested or distributed. Maintenance is part of that test: management allocated most of its 2026 investment guidance to sustaining the existing business."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,826",
+        "6,683",
+        "9,229",
+        "12,574",
+        "5,859"
+       ],
+       [
+        "− Capital spending",
+        "1,885",
+        "2,057",
+        "1,916",
+        "2,737",
+        "2,458"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,941",
+        "4,626",
+        "7,313",
+        "9,837",
+        "3,401"
+       ],
+       [
+        "− Stock pay",
+        "117",
+        "100",
+        "107",
+        "103",
+        "88"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,824",
+        "4,526",
+        "7,206",
+        "9,734",
+        "3,313"
+       ]
+      ],
+      "note": "The company's own free cash flow is different because it uses its own rules, leaving out some spending and sometimes subtracting cash items that our count includes."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Valero today?",
+     "paragraphs": [
+      {
+       "n": 191,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The modest cash yield means the valuation depends heavily on profits growing or remaining unusually strong, which makes Valero’s own history the next test."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "459.78"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "240.61 (-44 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "10.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 459.78,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "35 %",
+      "values": [
+       "104.94 (-76 %)",
+       "99.78 (-76 %)",
+       "137.97 (-67 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "252.20 (-44 %)",
+       "249.22 (-44 %)",
+       "256.23 (-41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "387.99 (-14 %)",
+       "467.12 (+4 %)",
+       "428.03 (-3 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "221.03 (-51 %)",
+       "229.60 (-48 %)",
+       "240.61 (-44 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/vlo/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VLO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Valero dividend: cash coverage and yield",
+   "meta_description": "Valero pays a $1.20 quarterly dividend, while 2025 free cash flow fell short of total shareholder payments and refining risks remain.",
+   "opening": "Valero's current quarterly dividend is $1.20; the forecast base dividend rises from $5.04 per share to $5.28 and then $5.52. In 2025, Valero generated $3,941 million of free cash flow versus $4,003 million of shareholder payments, so cash generation did not cover total shareholder distributions.",
+   "closing": "The full memo also explains Valero's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Valero pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 94,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Valero later raised its quarterly dividend to $1.20 and authorized another $5 billion of repurchases. Authorization permits spending; it does not show when shares will be bought or whether the price will prove attractive. The clearest success is the combination of lower debt and a smaller share count, but the test remains whether distributions are covered by recurring cash after necessary investment."
+      },
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $5.04 per share to $5.28 and then $5.52. The bear holds the current rate first, then cuts to $4.00 and $3.20. The bull reaches $5.28, $5.76 and $6.24. The base reflects the gradual dividend record and the January 2026 increase from $1.13 to $1.20."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "4.55",
+        "4.30",
+        "4.11",
+        "3.94",
+        "3.94"
+       ],
+       [
+        "− Share buybacks, per share",
+        "8.41",
+        "8.93",
+        "14.55",
+        "11.56",
+        "0.07"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "0.57",
+        "1.59",
+        "9.10",
+        "4.35"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "1.39",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow per share differs because it uses different rules, including leaving out some spending by consolidated businesses and treating joint-venture and working-capital changes differently."
+     }
+    },
+    {
+     "heading": "Is Valero's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "That distinction mattered in 2025. Valero reported $3,941 million of free cash flow, while shareholder payments reached $4,003 million. It also paid $369 million to minority owners. The company could cover the gap with existing cash or borrowing, but distributions above free cash flow cannot continue indefinitely without weakening the balance sheet or reducing future payouts."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,941",
+        "4,626",
+        "7,313",
+        "9,837",
+        "3,401"
+       ],
+       [
+        "− Dividends paid",
+        "1,405",
+        "1,384",
+        "1,452",
+        "1,562",
+        "1,602"
+       ],
+       [
+        "− Share buybacks",
+        "2,598",
+        "2,875",
+        "5,136",
+        "4,577",
+        "27"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "185",
+        "561",
+        "3,605",
+        "1,770"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "431",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "101.6%",
+        "92.1%",
+        "90.1%",
+        "62.4%",
+        "47.9%"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders more cash than it generated, so it used savings or new borrowing to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change Valero's dividend?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The October 22, 2026 results report is the first dated test of whether the June rebound reflects durable margins. Port Arthur’s damaged hydrotreater—a refinery unit that uses hydrogen to remove impurities from fuel—is expected back by year-end 2026. Repair cost, insurance recovery and restored output will show the incident’s lasting effect. St. Charles was scheduled to begin operating on July 30, 2026. Supply, demand, sustaining spending and buybacks through 2027–2029 will determine whether margins and cash support the base case."
+      },
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "From 2027 through 2029, returning supply or weaker demand would lower margins and the multiple. Continued tight markets, successful projects and evidence that Valero uses its repurchase authorization would support the bull path. The stated payout policy remains a framework, not a promise of dividend growth or full buyback execution."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "8,000 (4,500 / 10,000)",
+        "7,500 (4,000 / 10,500)",
+        "7,323 (4,500 / 10,000)"
+       ],
+       [
+        "Dividends per share",
+        "5.04 (4.80 / 5.28)",
+        "5.28 (4.00 / 5.76)",
+        "5.52 (3.20 / 6.24)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "9.00 (7.00 / 11.00)",
+        "9.00 (7.00 / 12.00)",
+        "9.00 (8.00 / 11.00)"
+       ],
+       [
+        "Net debt",
+        "880 (1,592 / 1,362)",
+        "-1,284 (-137 / -1,057)",
+        "-3,275 (-2,495 / -3,001)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "4.55"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.94",
+      "3.94",
+      "4.11",
+      "4.30",
+      "4.55"
+     ],
+     "Real free cash flow per share": [
+      "8.14",
+      "24.58",
+      "20.41",
+      "14.06",
+      "12.38"
+     ],
+     "Free cash flow per share": [
+      "8.36",
+      "24.84",
+      "20.72",
+      "14.37",
+      "12.75"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/vlo/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VLO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Valero earnings date and guidance",
+   "meta_description": "Valero's next results are expected on October 22, 2026; guidance, recent results and Port Arthur recovery are the key questions.",
+   "opening": "Valero's next results are expected on October 22, 2026. Watch whether St. Charles is operating reliably and whether Port Arthur's damaged distillate hydrotreater returns to service.",
+   "closing": "The full memo also explains Valero's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Valero guided for the year?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Valero’s payout promise is tied to adjusted operating cash flow, not accounting profit. The measure removes temporary movements in inventories, customer payments, and supplier bills, as well as the portion of Diamond Green Diesel’s cash flow belonging to its other owner. “Through-cycle” means the payout policy is intended to operate across both strong and weak refining markets. The separate leverage target limits how far distributions can weaken the balance sheet."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Capital investments",
+        "Year to Dec 2026",
+        "2,000",
+        "2,000",
+        "Jul 30, 2026"
+       ],
+       [
+        "Capital investments attributable to Valero",
+        "Year to Dec 2026",
+        "2,000",
+        "2,000",
+        "Jul 30, 2026"
+       ],
+       [
+        "Capital investments related to the March 2026 incident at our Port Arthur Refinery",
+        "Year to Dec 2026",
+        "250",
+        "250",
+        "Jul 30, 2026"
+       ],
+       [
+        "Pension plan contributions",
+        "Year to Dec 2026",
+        "70",
+        "70",
+        "Jul 30, 2026"
+       ],
+       [
+        "Other postretirement benefit plan contributions",
+        "Year to Dec 2026",
+        "20",
+        "20",
+        "Jul 30, 2026"
+       ],
+       [
+        "St. Charles FCC Unit optimization project",
+        "Project completed in 2026",
+        "230",
+        "230",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "The 230 million dollars for the St. Charles project is the total project cost, not the amount Valero will spend during 2026."
+     }
+    },
+    {
+     "heading": "Has Valero kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 129,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Valero promises a through-cycle annual payout of 40%–50% of adjusted operating cash flow. The payout includes dividends and repurchases, while the cash-flow measure removes specified items. In 2025, the company returned $4.003 billion. Repurchases accounted for $2.598 billion, while dividends accounted for $1.405 billion."
+      }
+     ],
+     "table": {
+      "title": "Stock pay and the share count",
+      "unit": "US$ millions",
+      "caption": "Stock pay and the share count (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Share buybacks",
+        "2,598",
+        "2,875",
+        "5,136",
+        "4,577",
+        "27"
+       ],
+       [
+        "Buybacks minus stock pay (calculated)",
+        "2,481",
+        "2,775",
+        "5,029",
+        "4,474",
+        "-61"
+       ],
+       [
+        "Diluted shares",
+        "309",
+        "322",
+        "353",
+        "396",
+        "407"
+       ],
+       [
+        "Shares outstanding at year end",
+        "298.940136",
+        "314.863703",
+        "333.301916",
+        "372.128635",
+        "409.195638"
+       ],
+       [
+        "Diluted shares (average of the year), change (calculated)",
+        "-4.0%",
+        "-8.8%",
+        "-10.9%",
+        "-2.7%",
+        "0.0%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do Valero's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The June 2026 quarter showed a real operating rebound, amplified by an unusually weak comparison. Revenue and operating income rose sharply because gasoline and diesel margins improved, while renewable diesel returned to profit and ethanol benefited from stronger economics and credits."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "44,476",
+        "32,381",
+        "30,372",
+        "32,168",
+        "29,889",
+        "30,258",
+        "30,756",
+        "32,876"
+       ],
+       [
+        "Gross margin",
+        "12.3%",
+        "6.3%",
+        "6.3%",
+        "5.5%",
+        "4.2%",
+        "1.7%",
+        "2.0%",
+        "2.3%"
+       ],
+       [
+        "Operating income",
+        "5,196",
+        "1,731",
+        "1,575",
+        "1,509",
+        "997",
+        "-900",
+        "348",
+        "507"
+       ],
+       [
+        "Net income",
+        "3,720",
+        "1,263",
+        "1,134",
+        "1,095",
+        "714",
+        "-595",
+        "281",
+        "364"
+       ],
+       [
+        "EPS, diluted",
+        "12.62",
+        "4.22",
+        "3.73",
+        "3.53",
+        "2.28",
+        "-1.90",
+        "0.88",
+        "1.14"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,230",
+        "942",
+        "1,647",
+        "1,472",
+        "529",
+        "293",
+        "523",
+        "866"
+       ]
+      ],
+      "note": "Free cash flow may look higher than the cash truly available because it leaves out money spent on joint ventures."
+     }
+    },
+    {
+     "heading": "What should I watch in Valero's next results?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Valero’s next firm reporting date is October 22, 2026, with the results call at 10 a.m. Eastern. By then, the St. Charles startup deadline will have passed. Completion alone is not enough: management should report reliable operation, additional saleable output, and evidence that the project is earning its expected margin."
+      },
+      {
+       "n": 244,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Port Arthur presents a different test. The March 23 fire shut the refinery, although normal throughput returned during the second quarter. The damaged distillate hydrotreater, a unit that removes sulfur from fuels such as diesel, still had to return to service by year-end. Its capacity is 47,000 barrels per day. Because crude processing can resume before every product-making unit is repaired, throughput alone cannot prove full recovery."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 22, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "44,476"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "12.62"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "32,876",
+      "30,756",
+      "30,258",
+      "29,889",
+      "32,168",
+      "30,372",
+      "32,381",
+      "44,476"
+     ],
+     "EPS, diluted": [
+      "1.14",
+      "0.88",
+      "-1.90",
+      "2.28",
+      "3.53",
+      "3.73",
+      "4.22",
+      "12.62"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/vlo/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VLO&src=seo-earnings"
+  }
+ },
+ "short_name": "Valero",
+ "first_memo_date": "2026-10-14T22:26:03Z"
+}

@@ -1,0 +1,837 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EXPE",
+ "slug": "expe",
+ "company": "Expedia Group, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-20T01:13:54Z",
+ "memo_date_text": "October 20, 2026",
+ "price": 291.72,
+ "price_date": "2026-10-19T20:00:00Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 28,
+  "words": 17003,
+  "sources": 239
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Expedia Group is a travel marketplace: it helps people arrange trips and helps travel businesses reach customers. Its business becomes clearer when you follow a booking from traveler to supplier, then follow Expedia’s share through the costs of winning and serving it."
+ },
+ "sources": [
+  {
+   "title": "Expedia’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000008/expe-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1324424/000132442425000008/expe-20241231.htm"
+  },
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1324424/000132442424000007/expe-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "BKNG",
+  "ABNB",
+  "TCOM",
+  "TRIP",
+  "MMYT",
+  "GOOGL",
+  "HLT"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Expedia Group stock forecast",
+   "meta_description": "Expedia Group stock forecast: weighted scenarios, operating drivers, real free cash flow and today’s valuation.",
+   "opening": "The weighted forecast puts Expedia Group near today’s price by October 2029. Expedia Group’s forecast hinges on profitable growth becoming durable cash.",
+   "closing": "The full memo answers what Expedia Group’s business, rivals, management and risks mean for the forecast.",
+   "blocks": [
+    {
+     "heading": "Where could Expedia Group’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast's central message is that Expedia's shares lose ground through October 2028 before recovering to roughly today's level by October 2029. The probability-weighted prices are $204.63, $241.15 and $297.73, respectively, against today's $291.72. Including dividends, those outcomes represent returns of -29%, -16% and +4%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 291.72, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 291.72, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "26 %",
+        "133.11 (-54 %)",
+        "101.91 (-64 %)",
+        "112.75 (-59 %)"
+       ],
+       [
+        "Base",
+        "56 %",
+        "206.43 (-29 %)",
+        "248.94 (-13 %)",
+        "297.64 (+4 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "302.35 (+4 %)",
+        "418.05 (+45 %)",
+        "565.18 (+96 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "204.63 (-29 %)",
+        "241.15 (-16 %)",
+        "297.73 (+4 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Expedia Group?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Normal operating profit rises in the base case from $1,750 million to $2,150 million across the three dates. The path reflects higher room nights, B2B bookings and gradual operating leverage. Q2 gross bookings rose 12%, B2B bookings rose 21% and revenue rose 14%. The bear case falls from $1,450 million to $1,200 million before partial recovery, as weaker demand and costly discovery pressure margins. The bull case rises from $2,100 million to $3,050 million because direct conversion, advertising and partner growth produce stronger incremental profit. Expedia's revenue guidance of $16.05 billion to $16.22 billion and adjusted EBITDA margin expansion of 1.5 to 1.75 points supports growth, but does not directly establish operating-income margins."
+      },
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires several gains together: better direct conversion, profitable advertising and partner growth, stronger Vrbo supply and repeat use. It reaches $302.35 first and $565.18 last. The probability is 18% because recent booking growth supports the possibility, but the material does not yet prove durable loyalty economics or full-cycle margin resilience."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Expedia Group really make?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A stronger owner-oriented measure subtracts stock pay from free cash flow. Stock pay is not an additional cash outflow, but it compensates employees with ownership and can dilute existing shareholders. This produces “real free cash flow,” an analytical convention rather than Expedia’s measure. The specialist therefore separates cash earned from operations, cash temporarily held for future travel, and compensation paid with ownership."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,880",
+        "3,085",
+        "2,690",
+        "3,440",
+        "3,748"
+       ],
+       [
+        "− Capital spending",
+        "770",
+        "756",
+        "846",
+        "662",
+        "673"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,110",
+        "2,329",
+        "1,844",
+        "2,778",
+        "3,075"
+       ],
+       [
+        "− Stock pay",
+        "398",
+        "458",
+        "413",
+        "374",
+        "418"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,712",
+        "1,871",
+        "1,431",
+        "2,404",
+        "2,657"
+       ]
+      ],
+      "note": "There is no gap between the company's free cash flow and ours because both subtract capital spending from cash from operations; our real free cash flow is lower because stock pay gives employees part of the company even though no cash was paid."
+     }
+    },
+    {
+     "heading": "What does Expedia Group cost today?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The stock trades at 18.2x trailing earnings and 11.8x next-twelve-month earnings. The company’s free cash flow yield is 8.9%, falling to 7.7% after stock pay. Revenue growth and operating margin have improved, but the turn must survive marketing costs; room nights, ADR (average daily rate), and revenue margin separate volume, price and monetization, while buybacks reduced diluted shares and stock compensation diluted owners."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "291.72"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "11.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "7.7%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings ratio is lower because it uses expected future profit, not profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "291.72"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "297.73 (+4 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "11.8x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 291.72,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "26 %",
+      "values": [
+       "133.11 (-54 %)",
+       "101.91 (-64 %)",
+       "112.75 (-59 %)"
+      ]
+     },
+     "Base": {
+      "probability": "56 %",
+      "values": [
+       "206.43 (-29 %)",
+       "248.94 (-13 %)",
+       "297.64 (+4 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "302.35 (+4 %)",
+       "418.05 (+45 %)",
+       "565.18 (+96 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "204.63 (-29 %)",
+       "241.15 (-16 %)",
+       "297.73 (+4 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/expe/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Expedia Group dividend: payout and cash coverage",
+   "meta_description": "Expedia Group's dividend is $1.92 per share, with cash coverage shaped by free cash flow, buybacks and travel obligations.",
+   "opening": "Expedia Group's current dividend rate is $1.92 per share, built from $0.40 quarterly in 2025 and $0.48 in 2026. Expedia Group's 2025 free cash flow of $3.110 billion provides evidence of capacity, while working capital and future obligations shape cash conversion.",
+   "closing": "The full memo also examines Expedia Group's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Expedia Group pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Buybacks became the largest visible shareholder payment. Expedia restored its quarterly ordinary dividend in February 2025 at $0.40 per share, raised it to $0.48 in February 2026, and authorized another $5 billion of repurchases in May 2026. An authorization permits future purchases; it is not cash already spent. The share count fell 5% year over year in Q2 2026, so the mechanism worked. But the economic return depends on the prices paid and on new shares issued to employees. Expedia reduced financial risk clearly; whether its buybacks created value remains a price question."
+      },
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends remain $1.92 per share in all cases. The current rate is supported by the quarterly increase from $0.40 to $0.48, but the short history offers no basis for forecasting another increase. The bear case therefore holds the dividend rather than cuts it, while the bull case does not invent a payout target."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share, except percentages",
+      "caption": "What one share gets (US$ per share, except percentages)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "1.52",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "− Share buybacks, per share",
+        "12.68",
+        "11.84",
+        "13.52",
+        "3.09",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "9.38",
+        "5.05",
+        "",
+        "14.08",
+        "20.54"
+       ]
+      ],
+      "note": "Real free cash flow per share is lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is Expedia Group's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A stronger owner-oriented measure subtracts stock pay from free cash flow. Stock pay is not an additional cash outflow, but it compensates employees with ownership and can dilute existing shareholders. This produces “real free cash flow,” an analytical convention rather than Expedia’s measure. The specialist therefore separates cash earned from operations, cash temporarily held for future travel, and compensation paid with ownership."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Net debt remains negative in every case, meaning net cash, but the cushion narrows. The base path moves from negative $1,237 million to negative $729 million after buybacks, dividends and acquisitions. The bear path ends at negative $1,153 million because weaker profit is partly offset by lower capital returns. The bull path ends at negative $831 million because stronger cash generation is absorbed by larger buybacks and acquisitions. The forecast uses 2025 free cash flow of $3.110 billion as evidence of capacity, while normalizing away a $1.173 billion working-capital contribution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,110",
+        "2,329",
+        "1,844",
+        "2,778",
+        "3,075"
+       ],
+       [
+        "− Dividends paid",
+        "200",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "1,673",
+        "1,633",
+        "2,031",
+        "500",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,237",
+        "696",
+        "",
+        "2,278",
+        "3,075"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "60.2%",
+        "70.1%",
+        "110.1%",
+        "18.0%",
+        "0.0%"
+       ]
+      ],
+      "note": "In 2023, the company paid shareholders 265 million dollars more than it generated in free cash flow, so it had to use savings or new borrowing."
+     }
+    },
+    {
+     "heading": "What could change Expedia Group's dividend?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "By October 2029, adverse tax outcomes, seasonal customer obligations or stalled earnings would compress valuation and limit buybacks. Sustained repeat bookings, stronger cash conversion and evidence that growth is durable would justify the bull multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "1,750 (1,450 / 2,100)",
+        "1,950 (1,200 / 2,550)",
+        "2,150 (1,300 / 3,050)"
+       ],
+       [
+        "Dividends per share",
+        "1.92 (1.92 / 1.92)",
+        "1.92 (1.92 / 1.92)",
+        "1.92 (1.92 / 1.92)"
+       ],
+       [
+        "Net debt",
+        "-1,237 (-1,207 / -1,201)",
+        "-905 (-1,032 / -880)",
+        "-729 (-1,153 / -831)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.52"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share, except percentages",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "0.00",
+      "0.00",
+      "0.00",
+      "1.52"
+     ],
+     "Real free cash flow per share": [
+      "17.74",
+      "14.86",
+      "9.53",
+      "13.57",
+      "20.55"
+     ],
+     "Free cash flow per share": [
+      "20.54",
+      "17.17",
+      "12.27",
+      "16.89",
+      "23.57"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/expe/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Expedia Group earnings date and guidance",
+   "meta_description": "Expedia Group reports on November 4, 2026; see guidance, recent results and what to watch.",
+   "opening": "Expedia Group's next results are scheduled for November 4, 2026. Watch whether Expedia Group turns improved profits into durable financial flexibility.",
+   "closing": "The full memo also explains Expedia Group's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Expedia Group guided for the year?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast puts EXPE near today’s price by October 2029, if earnings growth and cash conversion prove durable. Management’s August 5, 2026 outlook calls for gross-bookings growth of 8.0%–9.0%. It calls for revenue growth of 9.0%–10.0% and Adjusted EBITDA margin expansion of 1.5–1.75 percentage points. For Q3 2026, guidance is gross-bookings growth of 5.0%–7.0% and revenue growth of 5.0%–8.0%. Adjusted EBITDA is guided to $1,510–$1,560 million."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Gross Bookings",
+        "Year to Dec 2026",
+        "129,500",
+        "130,800",
+        "August 5, 2026"
+       ],
+       [
+        "Gross Bookings growth",
+        "Year to Dec 2026",
+        "8.0%",
+        "9.0%",
+        "August 5, 2026"
+       ],
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "16,050",
+        "16,220",
+        "August 5, 2026"
+       ],
+       [
+        "Revenue growth",
+        "Year to Dec 2026",
+        "9.0%",
+        "10.0%",
+        "August 5, 2026"
+       ],
+       [
+        "Adjusted EBITDA margin expansion (percentage points)",
+        "Year to Dec 2026",
+        "1.5",
+        "1.75",
+        "August 5, 2026"
+       ],
+       [
+        "Gross Bookings (Q3 2026)",
+        "Quarter to Sep 2026",
+        "32,200",
+        "32,800",
+        "August 5, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Expedia Group kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "Promises kept",
+       "text": "Revenue promises look cautious, with six beats and no quarterly misses; operating margin/EPS and capital spending are omitted because fewer than four comparable quarterly forecasts were located, and adjusted EBITDA margin is a different measure. No revisions or withdrawals of the listed quarterly revenue forecasts were located, but management cut its full-year 2025 revenue forecast from 4–6% to 2–4% on May 8, citing US demand uncertainty and currency headwinds, which prevents a perfect score (initial outlook, revised outlook). No one-off is needed to explain a quarterly revenue miss because none occurred, including Q3 2024 when reported growth absorbed a two-percentage-point currency headwind (results)."
+      }
+     ],
+     "table": {
+      "title": "Promises kept: 4/5",
+      "unit": "",
+      "caption": "Promises kept: 4/5",
+      "head": [
+       "Metric",
+       "Record, last 8 quarters",
+       "Typical gap"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8 of 8 inside or above the first forecast: 6 above, 2 inside, 0 below; no subsequent revisions to these quarterly forecasts located.",
+        "Median revenue gap versus the upper bound: +2.1% across all eight quarters; +2.8% among the six beats. Comparisons use reported USD revenue, including currency effects; growth forecasts are converted to USD millions using the reported prior-year quarter."
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What have Expedia Group's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue grew 14% in Q2 2026, while operating margin reached 18.5%. Gross margin changed only modestly, so most of the improvement came further down the cost structure. Adjusted EBITDA rose 23%, supported by cost discipline, revenue mix and more efficient B2C marketing. Overhead stayed broadly flat as revenue increased."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,315",
+        "3,426",
+        "3,547",
+        "4,412",
+        "3,786",
+        "2,988",
+        "3,184",
+        "4,060"
+       ],
+       [
+        "Gross margin",
+        "90.7%",
+        "89.0%",
+        "90.2%",
+        "91.5%",
+        "90.0%",
+        "88.1%",
+        "89.5%",
+        "90.4%"
+       ],
+       [
+        "Operating income",
+        "800",
+        "251",
+        "420",
+        "1,036",
+        "485",
+        "-70",
+        "216",
+        "762"
+       ],
+       [
+        "Net income",
+        "878",
+        "-6",
+        "205",
+        "959",
+        "330",
+        "-200",
+        "299",
+        "684"
+       ],
+       [
+        "EPS, diluted",
+        "7.16",
+        "-0.05",
+        "1.60",
+        "7.33",
+        "2.48",
+        "-1.56",
+        "2.20",
+        "5.04"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,279",
+        "3,747",
+        "119",
+        "-686",
+        "921",
+        "2,756",
+        "7",
+        "-1,687"
+       ]
+      ],
+      "note": "Free cash flow can be negative even when net income is positive because profit is recorded when earned, while free cash flow shows when cash actually comes in and goes out."
+     }
+    },
+    {
+     "heading": "What should you watch in Expedia Group's next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Expedia’s next scheduled checkpoint is November 4, 2026, when it reports Q3 2026. Watch the full-year outlook and operating margin, which is the share of revenue left after operating costs such as marketing, technology and overhead. Net margin shows what remains after interest, taxes and other items. Segment performance and marketing efficiency should explain whether progress comes from stronger demand, better execution or simply lower spending."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,315"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "7.16"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,060",
+      "3,184",
+      "2,988",
+      "3,786",
+      "4,412",
+      "3,547",
+      "3,426",
+      "4,315"
+     ],
+     "EPS, diluted": [
+      "5.04",
+      "2.20",
+      "-1.56",
+      "2.48",
+      "7.33",
+      "1.60",
+      "-0.05",
+      "7.16"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/expe/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPE&src=seo-earnings"
+  }
+ },
+ "short_name": "Expedia Group",
+ "first_memo_date": "2026-10-20T01:13:54Z"
+}

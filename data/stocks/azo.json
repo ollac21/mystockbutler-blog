@@ -1,0 +1,505 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AZO",
+ "slug": "azo",
+ "company": "AutoZone, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T17:02:30Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 3120.59,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-12-08",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 247,
+  "tables": 25,
+  "words": 16331,
+  "sources": 169
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "AutoZone is a retailer and distributor that helps drivers and repair shops keep cars and light trucks running. It makes money by selling the right products, then using the proceeds to operate the network that keeps those products available."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2026-09-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/866787/000117184326006159/exh_991.htm"
+  },
+  {
+   "title": "2025-08-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/866787/000110465925102611/azo-20250830x10k.htm"
+  },
+  {
+   "title": "2024-08-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/866787/000155837024013758/azo-20240831x10k.htm"
+  }
+ ],
+ "rivals": [
+  "ORLY",
+  "AAP",
+  "GPC",
+  "LKQ"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AutoZone stock forecast",
+   "meta_description": "AutoZone's weighted scenario reaches $3,778.88 by October 2029; the outcome hinges on traffic, commercial growth, store returns and cash generation.",
+   "opening": "The weighted scenario reaches $3,151.23 in October 2027 and $3,778.88 in October 2029, a 21% total return by October 2029. It hinges on whether growth becomes cash-generative before expansion and buybacks consume more flexibility.",
+   "closing": "The full AutoZone memo also explains AutoZone's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AutoZone's shares go?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted October 2027 price is $3,151.23, a 1% total return including dividends. By October 2028, the weighted price reaches $3,454.33, an 11% return. By October 2029, it reaches $3,778.88, a 21% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 3120.59, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 3120.59, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "2479.90 (-21 %)",
+        "2420.75 (-22 %)",
+        "2355.72 (-25 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "3202.09 (+3 %)",
+        "3515.69 (+13 %)",
+        "3837.63 (+23 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "3922.77 (+26 %)",
+        "4685.21 (+50 %)",
+        "5539.00 (+77 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "3151.23 (+1 %)",
+        "3454.33 (+11 %)",
+        "3778.88 (+21 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share value after giving more influence to the base case because it is more likely than the bear or bull case."
+     }
+    },
+    {
+     "heading": "What has to go right for AutoZone, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $3,151.23 in October 2027 (+1%) and $3,778.88 in October 2029 (+21%). The forecast assigns 28% probability to bear, 52% to base, and 20% to bull. The next earnings release is expected around December 8, 2026, though unconfirmed; it will test DIY traffic stabilization and whether sales growth absorbs higher SG&A—the store, rent, and administrative costs. Through FY2027, Mega Hub-linked programs must deepen repeat sales and store cohorts approach management’s return curve. By FY2028 and FY2029, stronger free cash flow and international results support faster repurchases and the bull case; weak traffic, slow hub returns, or tighter financing push toward the bear case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,639 (2,463 / 2,764)",
+        "2,807 (2,518 / 3,027)",
+        "2,971 (2,573 / 3,289)"
+       ],
+       [
+        "Shares (millions)",
+        "15.66 (15.89 / 15.50)",
+        "15.17 (15.60 / 14.86)",
+        "14.71 (15.29 / 14.25)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Price to earnings",
+        "19.00 (16.00 / 22.00)",
+        "19.00 (15.00 / 23.00)",
+        "19.00 (14.00 / 24.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does AutoZone really make?",
+     "paragraphs": [
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Profit is not cash because accounting includes noncash items and timing differences. Stock compensation is also not an immediate cash payment, but employees receive shares that dilute existing owners. Subtracting stock pay therefore gives a stricter measure of what shareholders retain."
+      },
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The trend matters more than one year’s total. Real free cash flow fell from fiscal 2022 to fiscal 2026 while capital spending rose. The company opened 374 stores in fiscal 2026 and continued building the infrastructure needed to improve parts availability and delivery speed. Those projects may support future sales, but the return must eventually catch up with the cash committed today."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Aug 2026",
+       "Aug 2025",
+       "Aug 2024",
+       "Aug 2023",
+       "Aug 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,302,846",
+        "3,155,401",
+        "3,004,116",
+        "2,940,788",
+        "3,211,135"
+       ],
+       [
+        "− Capital spending",
+        "1,496,255",
+        "1,365,321",
+        "1,072,696",
+        "796,657",
+        "672,391"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,806,591",
+        "1,790,080",
+        "1,931,420",
+        "2,144,131",
+        "2,538,744"
+       ],
+       [
+        "− Stock pay",
+        "136,804",
+        "124,717",
+        "106,246",
+        "93,087",
+        "70,612"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,669,787",
+        "1,665,363",
+        "1,825,174",
+        "2,051,044",
+        "2,468,132"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "8.2%",
+        "8.8%",
+        "9.9%",
+        "11.7%",
+        "15.2%"
+       ]
+      ],
+      "note": "The company's own free cash flow differs from ours because it uses its own rules, adding back some cash items and subtracting others."
+     }
+    },
+    {
+     "heading": "What does an investor pay for AutoZone today?",
+     "paragraphs": [
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "AutoZone’s valuation looks moderate on earnings, but its financing and investment needs make the price more demanding than the P/E alone suggests."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "3,120.59"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "3778.88 (+21 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "18.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 3120.59,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "2479.90 (-21 %)",
+       "2420.75 (-22 %)",
+       "2355.72 (-25 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "3202.09 (+3 %)",
+       "3515.69 (+13 %)",
+       "3837.63 (+23 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "3922.77 (+26 %)",
+       "4685.21 (+50 %)",
+       "5539.00 (+77 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "3151.23 (+1 %)",
+       "3454.33 (+11 %)",
+       "3778.88 (+21 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/azo/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AZO&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AutoZone earnings date and guidance",
+   "meta_description": "AutoZone's next results are expected on December 8, 2026; guidance covers sales, stores, costs and spending.",
+   "opening": "AutoZone's next results are expected on December 8, 2026. AutoZone must show whether ticket growth comes with stable transactions.",
+   "closing": "The full memo also answers how AutoZone's business works, who its rivals are, how its management is paid, and what risks matter.",
+   "blocks": [
+    {
+     "heading": "What has AutoZone guided for FY2027?",
+     "paragraphs": [
+      {
+       "n": 194,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management expects domestic same-store sales to be flat to up in the low single digits, with average ticket growth of about 4%. It expects commercial sales to grow at a high single-digit to low double-digit rate. International same-store sales are expected to grow in the low to mid-single digits on a constant-currency basis, which holds exchange rates steady so local demand is not confused with a weaker peso or real."
+      },
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The cost plan is substantial. AutoZone expects roughly 400 store openings in FY2027 and about 3% growth in selling, general and administrative expenses per store. Total SG&A is expected to rise about 8%, before every new location has matured. The aging U.S. vehicle fleet supports the need for replacement parts, but management has not said how much transaction recovery is required or given an FY2027 EPS target. Those are the first gaps analysts must fill."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do AutoZone's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The fourth quarter ended more strongly, but it does not yet establish a durable recovery in underlying demand. Fiscal 2026’s fourth quarter covered 16 weeks, and revenue and operating results improved from the prior year."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands, except EPS in US$",
+      "caption": "The last eight quarters (US$ thousands, except EPS in US$)",
+      "head": [
+       "Row",
+       "Aug 2026",
+       "May 2026",
+       "Feb 2026",
+       "Nov 2025",
+       "Aug 2025",
+       "May 2025",
+       "Feb 2025",
+       "Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,594,879",
+        "4,840,950",
+        "4,274,098",
+        "4,628,630",
+        "6,242,726",
+        "4,464,339",
+        "3,952,012",
+        "4,279,641"
+       ],
+       [
+        "Operating income",
+        "1,316,917",
+        "923,756",
+        "698,456",
+        "784,205",
+        "1,196,065",
+        "866,174",
+        "706,767",
+        "841,149"
+       ],
+       [
+        "Net income",
+        "931,587",
+        "641,491",
+        "468,860",
+        "530,823",
+        "836,951",
+        "608,440",
+        "487,923",
+        "564,933"
+       ],
+       [
+        "EPS, diluted",
+        "56.05",
+        "38.07",
+        "27.63",
+        "31.04",
+        "48.71",
+        "35.36",
+        "28.29",
+        "32.52"
+       ]
+      ],
+      "note": "The fiscal quarters are not all the same length: most cover twelve weeks, but the fourth quarter covers sixteen weeks, so its numbers are not directly comparable."
+     }
+    },
+    {
+     "heading": "What should AutoZone watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next earnings release is expected around December 8, 2026, though the date was not confirmed. Investors should look for ticket growth alongside stable transactions, and for sales growth that absorbs the planned SG&A increase. They should also watch whether commercial and new-store investment begins to improve productivity."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 8, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Aug 2026 (US$ thousands, except EPS in US$)",
+     "value": "6,594,879"
+    },
+    {
+     "label": "EPS, diluted, quarter to Aug 2026",
+     "value": "56.05"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands, except EPS in US$",
+    "columns": [
+     "Nov 2024",
+     "Feb 2025",
+     "May 2025",
+     "Aug 2025",
+     "Nov 2025",
+     "Feb 2026",
+     "May 2026",
+     "Aug 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "4,279,641",
+      "3,952,012",
+      "4,464,339",
+      "6,242,726",
+      "4,628,630",
+      "4,274,098",
+      "4,840,950",
+      "6,594,879"
+     ],
+     "EPS, diluted": [
+      "32.52",
+      "28.29",
+      "35.36",
+      "48.71",
+      "31.04",
+      "27.63",
+      "38.07",
+      "56.05"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/azo/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AZO&src=seo-earnings"
+  }
+ },
+ "short_name": "AutoZone",
+ "first_memo_date": "2026-10-18T17:02:30Z"
+}

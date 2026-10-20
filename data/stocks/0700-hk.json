@@ -1,7 +1,5 @@
 {
  "schema": "public_pages_v1",
- "writer": "26ebabc1ea4a",
- "run_id": "0700.HK",
  "ticker": "0700.HK",
  "slug": "0700-hk",
  "company": "Tencent Holdings Limited",
@@ -65,27 +63,27 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Tencent Holdings Limited stock forecast through 2029",
-   "meta_description": "Tencent Holdings Limited stock forecast: weighted, bear and bull scenarios, the cash test, key drivers, and valuation in plain English.",
-   "opening": "The weighted scenario reaches HKD575.73 in October 2029, including dividends. It hinges on AI returns.",
-   "closing": "The full memo also explains Tencent Holdings Limited’s business, rivals, management, and risks.",
+   "title": "Tencent stock forecast",
+   "meta_description": "Tencent’s stock forecast weighs bear, base and bull paths against AI returns, cash conversion, earnings and cash yield.",
+   "opening": "Tencent’s weighted forecast reaches HK$575.73 by October 2029. It hinges on turning AI infrastructure into cash before Tencent’s established network loses momentum.",
+   "closing": "The full memo also explains Tencent’s business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "Where could Tencent Holdings Limited’s shares go?",
+     "heading": "Where could Tencent’s shares go?",
      "paragraphs": [
       {
-       "n": 238,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8. Where the price could go",
-       "text": "The forecast's central outcome is a gradual rise, not an immediate re-rating. The weighted price reaches HKD433.24 in October 2027 and HKD575.73 in October 2029, including dividends. The intervening estimate is HKD487.03 in October 2028."
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Tencent’s weighted forecast reaches HK$575.73 by October 2029 if cash growth and AI investment earn returns. From HK$424.80, that is a 41% return including dividends. Management will more than double investment in new AI products during the year ending December 2026, but has set no dated group-wide AI profitability target."
       },
       {
-       "n": 239,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8. Where the price could go",
-       "text": "At the final date, the bear case is HKD292.57 and the bull case is HKD880.88, against today's HKD424.80. The range reflects uncertainty over AI returns, cash conversion and valuation confidence."
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case is HK$292.57 with 25% probability. The bull case is HK$880.88 with 20% probability. The remaining 55% is the base case. The path depends on established businesses growing while AI monetization gradually offsets investment. Toward year-end 2026 and into 2027, GPU and ASIC capacity—chips for the heavy calculations that train and run AI—must become paid external cloud and model demand, with utilization and cash conversion improving. Through 2027–2029, game launches need licensing, retention and spending, while Channels must deliver advertiser returns without weakening engagement."
       }
      ],
      "table": {
@@ -133,15 +131,8 @@
      }
     },
     {
-     "heading": "What has to go right for Tencent Holdings Limited?",
+     "heading": "What has to go right or wrong for Tencent?",
      "paragraphs": [
-      {
-       "n": 11,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The bear case is HK$292.57 with 25% probability. The bull case is HK$880.88 with 20% probability. The remaining 55% is the base case. The path depends on established businesses growing while AI monetization gradually offsets investment. Toward year-end 2026 and into 2027, GPU and ASIC capacity—chips for the heavy calculations that train and run AI—must become paid external cloud and model demand, with utilization and cash conversion improving. Through 2027–2029, game launches need licensing, retention and spending, while Channels must deliver advertiser returns without weakening engagement."
-      },
       {
        "n": 244,
        "section": "essay-8",
@@ -168,18 +159,6 @@
         "480,000 (380,000 / 550,000)"
        ],
        [
-        "Shares (millions)",
-        "9,060 (9,105 / 8,979)",
-        "9,034 (9,121 / 8,879)",
-        "9,010 (9,138 / 8,786)"
-       ],
-       [
-        "Dividends per share",
-        "6.20 (6.00 / 6.50)",
-        "7.10 (6.00 / 8.00)",
-        "8.20 (6.00 / 10.00)"
-       ],
-       [
         "Enterprise value to ebitda",
         "9.00 (7.50 / 10.00)",
         "9.00 (6.50 / 11.00)",
@@ -196,7 +175,7 @@
      }
     },
     {
-     "heading": "How much cash does Tencent Holdings Limited really make?",
+     "heading": "How much cash does Tencent really make?",
      "paragraphs": [
       {
        "n": 141,
@@ -260,16 +239,29 @@
         "81,152"
        ],
        [
-        "Free cash flow per share (calculated)",
-        "18.41",
-        "15.99",
-        "16.31",
-        "8.30",
-        "10.60"
+        "Free cash flow left for shareholders (calculated)",
+        "142,176",
+        "127,327",
+        "134,884",
+        "53,342",
+        "79,749"
        ]
       ],
       "note": ""
      }
+    },
+    {
+     "heading": "What does an investor pay for Tencent today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Tencent's trailing P/E is 14.2x and its forward P/E is 11.8x. P/E means the price paid for each unit of shareholder earnings, but the denominator can swell when investments rise in value. Tencent recorded an RMB78 billion gain linked to JD.com, an investee it influenced, and an RMB106.6 billion gain linked to Meituan, another such investee. Those gains were not recurring operating earnings."
+      }
+     ],
+     "table": null
     }
    ],
    "facts": [
@@ -338,13 +330,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Tencent Holdings Limited dividend: pay and coverage",
-   "meta_description": "Tencent Holdings Limited pays a rising dividend, but AI investment puts pressure on cash coverage.",
-   "opening": "Tencent's base forecast raises dividends from RMB6.20 to RMB8.20 per share, while the bear case holds at RMB6.00 and the bull case reaches RMB10.00. Its cash coverage is under pressure: reported free cash flow was negative RMB13.8 billion in June 2026, although it would have been positive RMB37.6 billion without compute-procurement prepayments.",
-   "closing": "The full memo also examines Tencent Holdings Limited's business, rivals, management decisions and risks.",
+   "title": "Tencent dividend: history, coverage and yield",
+   "meta_description": "Tencent's dividend history, cash coverage, plans and current yield, explained in plain English.",
+   "opening": "Tencent's base dividend rises from RMB6.20 to RMB8.20 per share, while the bear case holds at RMB6.00 and the bull case reaches RMB10.00. Tencent's June 2026 reported free cash flow was negative RMB13.8 billion after compute-procurement prepayments, so cash coverage is under pressure even though it would have been positive RMB37.6 billion without those prepayments.",
+   "closing": "The full Tencent memo also covers Tencent's business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "How much does Tencent Holdings Limited pay in dividends?",
+     "heading": "How much does Tencent pay its shareholders per share?",
      "paragraphs": [
       {
        "n": 246,
@@ -355,78 +347,42 @@
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "RMB per share; dividends in HK$",
-      "caption": "What one share gets (RMB per share; dividends in HK$)",
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CNY millions, per share in CNY, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CNY millions, per share in CNY, unless shown)",
       "head": [
-       "Row",
-       "Year to Dec 2025",
-       "Year to Dec 2024",
-       "Year to Dec 2023",
-       "Year to Dec 2022",
-       "Year to Dec 2021"
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
       ],
       "rows": [
        [
-        "Free cash flow per share (calculated)",
-        "19.75",
-        "16.51",
-        "17.38",
-        "9.12",
-        "11.15"
-       ],
-       [
-        "Buybacks per share (calculated)",
-        "7.93",
-        "10.88",
-        "4.55",
-        "3.02",
-        "0.22"
-       ],
-       [
-        "Stock pay per share (calculated)",
-        "2.78",
-        "2.20",
-        "2.19",
-        "2.57",
-        "2.23"
-       ],
-       [
-        "Dividend per share",
-        "5.30",
-        "4.50",
-        "3.40",
-        "2.40",
-        "1.60"
-       ],
-       [
-        "Net share dilution (calculated)",
-        "-1.7%",
-        "-2.1%",
-        "-0.9%",
-        "-0.0%",
-        "0.5%"
+        "Dividends per share",
+        "6.20 (6.00 / 6.50)",
+        "7.10 (6.00 / 8.00)",
+        "8.20 (6.00 / 10.00)"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Is Tencent Holdings Limited's dividend covered by its cash?",
+     "heading": "Does Tencent's cash cover its dividend?",
      "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow after stock pay measures cash left after operating and investing needs while treating employee share awards as an economic cost to existing owners. A dividend sends cash to shareholders. A buyback uses cash to repurchase shares, and cancellation leaves continuing shareholders with a larger fraction of the company. Together, these measures show whether distributions came from the business or from borrowing, asset sales or reduced investment."
+      },
       {
        "n": 142,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.3 — Cash",
        "text": "June 2026 showed why timing matters. Operating cash flow was RMB52,710 million. Reported free cash flow was negative RMB13.8 billion, but Tencent said it would have been positive RMB37.6 billion without compute-procurement prepayments. The cash genuinely left the bank account; it simply bought future capacity before Tencent consumed it. The next test is whether that capacity generates profitable AI or cloud revenue."
-      },
-      {
-       "n": 85,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the cash went",
-       "text": "Disposals and purchases of investments also flowed through a common pool. Tencent sold assets, bought others and retained substantial cash, but it did not publish a transaction-by-transaction map linking each disposal cheque to a later use. The next test is AI. Management expects buybacks to decline as computing infrastructure receives more funding, while dividends rise. That makes the choice explicit: shareholder returns have already delivered value, and some investments now earn profits, but the enlarged AI programme still has to justify its cost."
       }
      ],
      "table": {
@@ -467,6 +423,14 @@
         "2,170"
        ],
        [
+        "Acquisitions",
+        "11,541",
+        "7,847",
+        "7,633",
+        "12,267",
+        "21,944"
+       ],
+       [
         "Returned to shareholders, share of real free cash flow (calculated)",
         "76.7%",
         "101.1%",
@@ -479,59 +443,56 @@
      }
     },
     {
-     "heading": "What could change Tencent Holdings Limited's dividend?",
+     "heading": "What could change Tencent's dividend?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Disposals and purchases of investments also flowed through a common pool. Tencent sold assets, bought others and retained substantial cash, but it did not publish a transaction-by-transaction map linking each disposal cheque to a later use. The next test is AI. Management expects buybacks to decline as computing infrastructure receives more funding, while dividends rise. That makes the choice explicit: shareholder returns have already delivered value, and some investments now earn profits, but the enlarged AI programme still has to justify its cost."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case during 2027–2029 if purchased AI capacity remains underused, pricing fails to cover costs, or capex stays high while margins weaken. Higher ad load could reduce engagement during 2027–2028, and failed game launches could expose mature-title decline."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Tencent's dividend yield today?",
      "paragraphs": [],
      "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; CNY millions, per share in CNY, unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; CNY millions, per share in CNY, unless shown)",
+      "title": "What an investor pays today",
+      "unit": "HK$ millions; per share in HK$",
+      "caption": "What an investor pays today (HK$ millions; per share in HK$)",
       "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
+       "Row",
+       "Today (Oct 9, 2026)"
       ],
       "rows": [
        [
-        "EBITDA",
-        "385,000 (340,000 / 400,000)",
-        "430,000 (355,000 / 470,000)",
-        "480,000 (380,000 / 550,000)"
+        "Share price",
+        "424.80"
        ],
        [
-        "Shares (millions)",
-        "9,060 (9,105 / 8,979)",
-        "9,034 (9,121 / 8,879)",
-        "9,010 (9,138 / 8,786)"
+        "Market value (calculated)",
+        "3,862,538.856756"
        ],
        [
-        "Dividends per share",
-        "6.20 (6.00 / 6.50)",
-        "7.10 (6.00 / 8.00)",
-        "8.20 (6.00 / 10.00)"
+        "Free cash flow yield (calculated)",
+        "5.5%"
        ],
        [
-        "Net debt",
-        "23.00 (72.00 / 26.00)",
-        "0.00 (148 / -16.00)",
-        "-80.00 (184 / -136)"
+        "Dividend yield (calculated)",
+        "1.2%"
        ]
       ],
       "note": ""
      }
-    },
-    {
-     "heading": "What is Tencent Holdings Limited's dividend yield today?",
-     "paragraphs": [
-      {
-       "n": 176,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "Cash gives a second test. The free-cash-flow yield is 5.5%, while the dividend yield is 1.2%. Tencent also repurchased about HK$80 billion of shares in 2025 and HK$24.4 billion in the first half of 2026. Prosus, a Tencent shareholder, sells existing Tencent shares while Tencent cancels repurchased ones, so buybacks reduce the share count but do not eliminate all market supply."
-      }
-     ],
-     "table": null
     }
    ],
    "facts": [
@@ -570,13 +531,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Tencent Holdings Limited earnings date and guidance",
-   "meta_description": "Tencent Holdings Limited's next results are expected November 10, 2026; AI investment will more than double, while growth faces a heavier spending burden.",
-   "opening": "Tencent Holdings Limited's next results are expected on November 10, 2026. The key thing to watch is whether purchased computing becomes billable capacity.",
-   "closing": "The full memo also answers questions about Tencent Holdings Limited's business, rivals, management and risks.",
+   "title": "Tencent earnings: what to watch next",
+   "meta_description": "Tencent's next results are expected on November 10, 2026; guidance points to more AI investment and billable computing capacity.",
+   "opening": "Tencent's next results are expected on November 10, 2026. The key watch is whether purchased computing becomes billable capacity while regulatory costs remain manageable.",
+   "closing": "The full memo also answers how Tencent makes money, who its rivals are, how Tencent is managed, and which risks matter.",
    "blocks": [
     {
-     "heading": "What has Tencent Holdings Limited guided for 2026?",
+     "heading": "What has Tencent guided for 2026?",
      "paragraphs": [
       {
        "n": 204,
@@ -606,7 +567,7 @@
      }
     },
     {
-     "heading": "Did Tencent Holdings Limited keep its past promises?",
+     "heading": "Has Tencent kept its past promises?",
      "paragraphs": [
       {
        "n": 119,
@@ -616,10 +577,65 @@
        "text": "Tencent also made and broadly met large repurchase commitments. It committed to more than HK$100 billion in March 2024, then at least HK$80 billion in March 2025. At the August 2026 results call, James Gordon Mitchell said higher expected returns from computing investment could shift cash from buybacks to capital expenditure."
       }
      ],
-     "table": null
+     "table": {
+      "title": "Stock pay and buybacks",
+      "unit": "RMB millions; shares in millions",
+      "caption": "Stock pay and buybacks (RMB millions; shares in millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Shares bought back",
+        "73,312",
+        "102,331",
+        "43,767",
+        "29,307",
+        "2,170"
+       ],
+       [
+        "Stock-based pay",
+        "25,660",
+        "20,702",
+        "21,073",
+        "24,949",
+        "21,625"
+       ],
+       [
+        "Cash really returned by buybacks (calculated)",
+        "47,652",
+        "81,629",
+        "22,694",
+        "4,358",
+        "-19,455"
+       ],
+       [
+        "Diluted shares",
+        "9,244",
+        "9,408",
+        "9,610",
+        "9,695",
+        "9,696"
+       ],
+       [
+        "Change in diluted shares over the year (calculated)",
+        "-1.7%",
+        "-2.1%",
+        "-0.9%",
+        "-0.0%",
+        "0.5%"
+       ]
+      ],
+      "note": ""
+     }
     },
     {
-     "heading": "What were Tencent Holdings Limited's last eight reported periods?",
+     "heading": "What has Tencent's revenue and profit trend been over the last eight reported periods?",
      "paragraphs": [
       {
        "n": 154,
@@ -716,14 +732,14 @@
      }
     },
     {
-     "heading": "What should investors watch in Tencent Holdings Limited's next results?",
+     "heading": "What should people watch in Tencent's next results?",
      "paragraphs": [
       {
-       "n": 224,
+       "n": 223,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
-       "text": "Management expects enough GPU and ASIC capacity—specialized chips designed for particular tasks—toward year-end 2026 and into 2027 to expand external cloud rentals and model services. Investors should look for rising customer use, improving operating cash and prepaid capacity that stops expanding faster than revenue."
+       "text": "The decisive test is whether purchased computing becomes billable capacity while regulatory costs remain manageable."
       }
      ],
      "table": null
@@ -740,5 +756,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=0700.HK&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Tencent",
+ "first_memo_date": "2026-10-10T22:00:17Z"
 }

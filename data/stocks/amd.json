@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261009T053104Z-0b216b261638",
  "ticker": "AMD",
  "slug": "amd",
  "company": "Advanced Micro Devices, Inc.",
@@ -31,12 +30,12 @@
    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000012/amd-20241228.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000012/amd-20241228.htm"
+   "title": "Products & services",
+   "url": "https://ir.amd.com/contacts-faq/faq"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000012/amd-20231230.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000012/amd-20231230.htm"
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000014/q42025991.htm"
   }
  ],
  "rivals": [
@@ -65,27 +64,27 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Advanced Micro Devices, Inc. stock forecast",
-   "meta_description": "A calm view of AMD’s bear, base and bull scenarios, cash generation, and valuation.",
-   "opening": "The October 2029 weighted scenario is $6.37, with 30% assigned to the bear case, 50% to the base case and 20% to the bull case. It hinges on turning Instinct, ROCm and Helios into reliable, repeat paid systems that grow cash per share.",
-   "closing": "The full memo also explains Advanced Micro Devices, Inc.’s business, rivals, management, and risks.",
+   "title": "AMD stock forecast",
+   "meta_description": "AMD's scenarios range from $198.34 to $1,121.68, with the weighted line at $6.37 for October 2029; the outcome hinges on profitable, repeat AI deployments.",
+   "opening": "AMD's weighted scenario is $6.37 for October 2029, with 50% assigned to the base case. It hinges on profitable, repeat AI deployments that create cash per share.",
+   "closing": "The full memo also answers questions about AMD's business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "Where could Advanced Micro Devices, Inc.’s shares go in each forecast year?",
+     "heading": "Where could AMD's shares be by October 2029?",
      "paragraphs": [
       {
-       "n": 232,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.1 — The verdict",
-       "text": "The forecast's supplied weighted line stays close to today's price, but the individual paths are widely separated. It reports $6.02 for October 2027 and $6.46 for October 2028, with returns shown as -0% and +0% including dividends. It reports $6.37 for October 2029, also shown as +0%. The bear-to-bull range at that date runs from $198.34 to $1,121.68. Today's price is $620.68."
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "AMD’s October 2029 case prices span $198.34 to $1,121.68; the outcome hinges on profitable, repeat AI deployments that create cash per share."
       },
       {
-       "n": 233,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.1 — The verdict",
-       "text": "The narrative assigns 30% to the bear case and 50% to the base case. The bull case receives 20%. The supplied table displays 0% in its case rows and preserves the forecast's weighted line."
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The narrative assigns 30% probability to the bear case and 50% to the base case. The bull case receives 20%. At the October 2029 endpoint, the supplied weighted line prints $6.37. It reports +0% return and does not fit the case values or stated probabilities."
       }
      ],
      "table": {
@@ -133,7 +132,7 @@
      }
     },
     {
-     "heading": "What has to go right or wrong for Advanced Micro Devices, Inc.?",
+     "heading": "What has to go right, and what could go wrong for AMD?",
      "paragraphs": [
       {
        "n": 239,
@@ -146,8 +145,15 @@
      "table": null
     },
     {
-     "heading": "How much cash does Advanced Micro Devices, Inc. really make?",
+     "heading": "How much cash does AMD really make?",
      "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash from continuing operations was US$6,493 million in 2025. After capital spending of US$974 million, free cash flow was US$5,519 million, or 15.9% of revenue. That recovered from US$2,405 million in 2024 and US$1,121 million in 2023. Acquisition proceeds and payments belong elsewhere in the cash-flow statement, so they do not represent recurring operating conversion."
+      },
       {
        "n": 144,
        "section": "essay-5",
@@ -222,16 +228,8 @@
      }
     },
     {
-     "heading": "What does an investor pay today for Advanced Micro Devices, Inc.?",
-     "paragraphs": [
-      {
-       "n": 163,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "The price-to-earnings ratio, or P/E, compares the share price with earnings per share. A trailing P/E uses recent earnings; a forward P/E uses expected earnings. Free-cash-flow yield compares annual cash left after equipment spending with market value. A low yield means investors receive little current cash for each dollar invested, so the valuation depends on growth."
-      }
-     ],
+     "heading": "What does an investor pay for AMD today?",
+     "paragraphs": [],
      "table": {
       "title": "What an investor pays today",
       "unit": "US$ millions",
@@ -244,6 +242,14 @@
        [
         "Share price",
         "620.68"
+       ],
+       [
+        "Market value (calculated)",
+        "1,013,244.61"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "1,003,359.61"
        ],
        [
         "P/E, last 12 months (calculated)",
@@ -328,13 +334,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Advanced Micro Devices, Inc. earnings date",
-   "meta_description": "Advanced Micro Devices, Inc. reports next on November 3, 2026; the key test is whether Helios shipments become repeatable and reach customer deployment.",
-   "opening": "Advanced Micro Devices, Inc. reports next on November 3, 2026. Watch whether Helios shipments become repeatable and reach customer deployment.",
-   "closing": "The full memo also explains Advanced Micro Devices, Inc.’s business, rivals, management and risks.",
+   "title": "AMD earnings date and guidance",
+   "meta_description": "AMD reports on November 3, 2026; its guidance and Helios execution are the key signals.",
+   "opening": "AMD reports on November 3, 2026. Watch whether Helios shipments become repeatable and reach customer deployment.",
+   "closing": "The full AMD analysis also covers its business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "What has Advanced Micro Devices, Inc. guided?",
+     "heading": "What has AMD guided for the next quarter?",
      "paragraphs": [
       {
        "n": 9,
@@ -371,27 +377,6 @@
         "Aug 4, 2026"
        ],
        [
-        "Operating Expenses",
-        "Quarter to Sep 2026",
-        "3,650",
-        "3,650",
-        "Aug 4, 2026"
-       ],
-       [
-        "Other Income (Expense) net of Interest Expense",
-        "Quarter to Sep 2026",
-        "55",
-        "55",
-        "Aug 4, 2026"
-       ],
-       [
-        "Effective Tax Rate",
-        "Quarter to Sep 2026",
-        "13.0%",
-        "13.0%",
-        "Aug 4, 2026"
-       ],
-       [
         "Year-over-year growth at revenue midpoint",
         "Quarter to Sep 2026",
         "41.0%",
@@ -403,7 +388,7 @@
      }
     },
     {
-     "heading": "Has Advanced Micro Devices, Inc. kept its promises?",
+     "heading": "Has AMD kept its past promises?",
      "paragraphs": [
       {
        "n": 123,
@@ -416,14 +401,14 @@
      "table": null
     },
     {
-     "heading": "How have Advanced Micro Devices, Inc.’s revenue and profit trended?",
+     "heading": "What do AMD's last eight quarters show?",
      "paragraphs": [
       {
-       "n": 157,
+       "n": 158,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "Operating income was US$1,990 million, compared with a US$134 million loss a year earlier. Operating margin reached 17.3%. Data Center’s segment margin was approximately 31.3%, while Client and Gaming fell to approximately 15.2%. Net income was US$2,305 million, with EPS of US$1.39. Investment gains of US$483 million helped below operating income, so they should not be treated as chip profit."
+       "text": "Operating cash was US$2,366 million. After US$808 million of capital spending, calculated free cash flow was US$1,558 million, against US$1,180 million a year earlier. Cash conversion improved, but capital spending grew faster than sales. The quarter shows a stronger AMD led by data-center demand, alongside weaker Gaming and greater cash requirements; several more quarters must show whether that balance persists."
       }
      ],
      "table": {
@@ -502,21 +487,21 @@
      }
     },
     {
-     "heading": "What should I watch in Advanced Micro Devices, Inc.’s next results?",
+     "heading": "What should investors watch in AMD's next results?",
      "paragraphs": [
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results must show whether Helios shipments are becoming repeatable while export permissions remain volatile."
+      },
       {
        "n": 218,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
        "text": "AMD’s next reporting event is scheduled for November 3, 2026. The September checkpoint is initial delivery to manufacturing partners near the end of Q3; the stronger test is Q4 system production and customer deployment. Components leaving a factory do not prove that a usable system has reached production."
-      },
-      {
-       "n": 220,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.5 — What to watch",
-       "text": "An inventory charge reduces the recorded value of products that may no longer sell as expected. A reversal restores some value when conditions improve. Through Q4 and into 2027, investors should separate customer acceptance, cash receipts and fresh licensing decisions from accounting effects."
       }
      ],
      "table": null
@@ -577,7 +562,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=AMD&src=seo-earnings"
   }
  },
- "held": {
-  "dividend": "no dividend"
- }
+ "short_name": "AMD",
+ "first_memo_date": "2026-10-10T02:14:39Z"
 }

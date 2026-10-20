@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261012T225113Z-362acc811cae",
  "ticker": "SNDK",
  "slug": "sndk",
  "company": "Sandisk Corporation",
@@ -35,8 +34,8 @@
    "url": "https://www.sec.gov/Archives/edgar/data/2023554/000202355425000034/sndk-20250627.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366dex991.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366dex991.htm"
+   "title": "Final June 2025 prospectus",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525137164/d934557d424b4.htm"
   }
  ],
  "rivals": [
@@ -56,13 +55,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Sandisk Corporation stock forecast",
-   "meta_description": "Sandisk Corporation stock forecast: weighted scenarios, cash generation, valuation, and the operating drivers that could change the outcome.",
-   "opening": "The weighted forecast reaches $2,063.61 in October 2029, a 39% gain. It hinges on whether NAND supply outruns demand.",
-   "closing": "The full memo also covers Sandisk Corporation’s business, rivals, management and risks.",
+   "title": "Sandisk stock forecast",
+   "meta_description": "Sandisk's stock forecast weighs bear, base and bull cases, real free cash flow, and what investors pay today.",
+   "opening": "Sandisk's weighted forecast is $1,331.50 in October 2027, $1,581.80 in October 2028 and $2,063.61 in October 2029. It hinges on whether NAND pricing and supply let enterprise demand turn into repeat cash generation.",
+   "closing": "The full Sandisk memo also covers its business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could Sandisk Corporation’s shares go?",
+     "heading": "Where could Sandisk's shares be by 2029?",
      "paragraphs": [
       {
        "n": 229,
@@ -124,7 +123,7 @@
      }
     },
     {
-     "heading": "What could make Sandisk Corporation’s forecast work or fail?",
+     "heading": "What has to go right for Sandisk, and what could go wrong?",
      "paragraphs": [
       {
        "n": 238,
@@ -132,6 +131,13 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
        "text": "The bear case falls to $3,000M, then $2,500M, before recovering to $3,500M. It assumes supply outruns demand, prices reverse and fixed Flash Ventures costs amplify the decline. NAND prices fell more than 50% in the last completed downturn. The bull case rises from $8,000M to $10,000M and then $12,000M, requiring enterprise demand to absorb new bits and BiCS10 to lower cost per bit. BiCS10 is claimed to improve density by 59% over BiCS8."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires several linked successes. AI and cloud demand must absorb new bits, BiCS10 must ramp with competitive yields, and enterprise SSD qualifications must become repeat orders. Strong cash generation then funds investment and buybacks while the market sustains a premium multiple. The price reaches $2,375.73 in October 2027 and $4,471.21 in October 2029. Its 18% probability is lower because the assumed 32%–33.3% margins and rising multiple are not yet established through a full cycle."
       }
      ],
      "table": {
@@ -174,14 +180,14 @@
      }
     },
     {
-     "heading": "How much cash does Sandisk Corporation really make?",
+     "heading": "How much cash does Sandisk really make?",
      "paragraphs": [
       {
-       "n": 144,
+       "n": 143,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.3 — Cash",
-       "text": "Capital spending also has more than one useful definition because joint-venture funding, leases and wafer economics run through different lines. Inventory days rose from 135 to 178, and the cash conversion cycle lengthened from 136 to 162 days. Inventory deserves attention when prices can fall. Deducting US$232 million of stock compensation leaves “real free cash flow” of US$11,262 million, an allowance for dilution rather than another cash payment."
+       "text": "Sandisk’s New Business Model, or NBM, includes deposits from cloud customers securing future NAND supply. Those receipts finance production, but they also create a delivery obligation. NBM prepayments and deposits reached US$2,476 million in FY2026. After removing them and including Flash Ventures activity, adjusted free cash flow was US$8,743 million."
       }
      ],
      "table": {
@@ -236,23 +242,18 @@
         "-624",
         "-1,097",
         "570"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "55.6%",
+        "-4.1%",
+        "-9.4%",
+        "-18.0%",
+        "5.8%"
        ]
       ],
       "note": ""
      }
-    },
-    {
-     "heading": "What does an investor pay for Sandisk Corporation today?",
-     "paragraphs": [
-      {
-       "n": 173,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "A share price is not the value of the company. Market value adds up all common shares, while enterprise value adjusts that figure for cash and debt to show what investors are paying for the operating business. The forward P/E compares the price with predicted earnings, so its apparent cheapness depends on those earnings arriving. Enterprise value divided by revenue adds another warning: sales matter only if they become profit and cash."
-      }
-     ],
-     "table": null
     }
    ],
    "facts": [
@@ -321,13 +322,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Sandisk Corporation earnings date and guidance",
-   "meta_description": "Sandisk Corporation reports next on October 29, 2026; see its guidance, recent results and what to watch.",
-   "opening": "Sandisk Corporation's next results are expected on October 29, 2026. Watch whether shipment growth and realized pricing support the next outlook.",
-   "closing": "The full Sandisk Corporation memo also covers its business, rivals, management and risks.",
+   "title": "Sandisk earnings: October 29, 2026 results",
+   "meta_description": "Sandisk reports on October 29, 2026; guidance points to strong growth, while pricing, shipments and cash conversion matter.",
+   "opening": "Sandisk's next results are scheduled for October 29, 2026. Watch revenue, earnings, shipment growth and realized pricing.",
+   "closing": "The full memo also answers how Sandisk makes money, who its rivals are, how management operates, and what risks it faces.",
    "blocks": [
     {
-     "heading": "What has Sandisk Corporation guided?",
+     "heading": "What has Sandisk guided for the year?",
      "paragraphs": [
       {
        "n": 200,
@@ -378,13 +379,6 @@
         "Aug 5, 2026"
        ],
        [
-        "non-GAAP gross margins",
-        "FY2028–FY2030",
-        "80.0%",
-        "80.0%",
-        "Aug 13, 2026"
-       ],
-       [
         "non-GAAP operating margins",
         "FY2028–FY2030",
         "75.0%",
@@ -403,7 +397,7 @@
      }
     },
     {
-     "heading": "Has Sandisk Corporation kept its past promises?",
+     "heading": "Did Sandisk keep its past promises?",
      "paragraphs": [
       {
        "n": 126,
@@ -416,7 +410,7 @@
      "table": null
     },
     {
-     "heading": "How have Sandisk Corporation's revenue and profit trended?",
+     "heading": "What has Sandisk's last eight quarters shown?",
      "paragraphs": [
       {
        "n": 153,
@@ -424,13 +418,6 @@
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
        "text": "The eight-quarter sequence shows revenue weakening in early 2025 before climbing through the rest of the year and accelerating in 2026. Management attributed roughly one-third of sequential revenue growth to volume and two-thirds to pricing. That mix makes the quarter powerful but also exposes it to future price reversals."
-      },
-      {
-       "n": 152,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.5 — The latest quarter",
-       "text": "Revenue and gross margin reached new highs, and operating income rose sharply from the year-earlier quarter. Because the recovery had already appeared in earlier quarters, the result is more than the disappearance of one accounting charge."
       }
      ],
      "table": {
@@ -518,6 +505,19 @@
       ],
       "note": ""
      }
+    },
+    {
+     "heading": "What should I watch in Sandisk's next results?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Sandisk’s fiscal Q1 earnings call is scheduled for **October 29, 2026**, at **4:30 p.m. Eastern**. Investors should watch revenue, earnings, shipment growth, realized pricing and the next outlook. Those figures will show whether customers are taking the capacity Sandisk is funding and whether the following quarter still supports the plan."
+      }
+     ],
+     "table": null
     }
    ],
    "facts": [
@@ -575,7 +575,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=SNDK&src=seo-earnings"
   }
  },
- "held": {
-  "dividend": "no dividend"
- }
+ "short_name": "Sandisk",
+ "first_memo_date": "2026-10-13T00:06:55Z"
 }

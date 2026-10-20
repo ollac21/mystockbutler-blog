@@ -1,0 +1,748 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PRU",
+ "slug": "pru",
+ "company": "Prudential Financial, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-19T14:05:59Z",
+ "memo_date_text": "October 19, 2026",
+ "price": 115.91,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 269,
+  "tables": 26,
+  "words": 17558,
+  "sources": 286
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Prudential Financial is a financial company that takes in money today to protect, invest, or pay people later. Its businesses look varied, but the central question is always the same: who pays Prudential, what promise does Prudential accept, and what makes the dollar leave again?"
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, page 12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137774/000110465926035169/tm2524222d2_ars.pdf"
+  },
+  {
+   "title": "impairment disclosure",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137774/000113777425000044/pru-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q1 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000087/exhibit991-4q25qfsrestatem.htm"
+  }
+ ],
+ "rivals": [
+  "MET",
+  "AIG",
+  "AFL",
+  "UNM",
+  "CRBG",
+  "EQH",
+  "LNC",
+  "BHF",
+  "JXN",
+  "PFG",
+  "SLF.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Prudential stock forecast",
+   "meta_description": "Prudential's forecast spans bear, base and bull cases, with the weighted case at $114.57 in October 2027.",
+   "opening": "Prudential's weighted case is $114.57 in October 2027. Prudential's forecast hinges on Japan’s recovery.",
+   "closing": "The full memo also explains Prudential's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Prudential's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Bear probability is 30%. Base probability is 55%. Bull probability is 15%. Japan’s recovery, customer flows, expenses, capital generation, PGIM growth and efficiency savings decide the outcome. Prudential reports third-quarter 2026 earnings on November 3 and holds its call on November 4. Improvement plans are due by the end of November 2026; restrictions run through January 31, 2027. Reopening is expected over roughly 12–18 months, with 2027 sales at about 25% of 2025 levels."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to modest weighted gains, but the outcomes spread widely. The weighted price is $114.57 in October 2027 and $122.98 in October 2028. It reaches $137.55 in October 2029. With dividends, those prices represent returns of 4% and 16%. The three-year return is 34%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 115.91, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 115.91, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "83.35 (-23 %)",
+        "76.35 (-25 %)",
+        "75.34 (-21 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "123.90 (+12 %)",
+        "135.20 (+26 %)",
+        "153.15 (+47 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "142.80 (+28 %)",
+        "171.39 (+58 %)",
+        "204.78 (+93 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "114.57 (+4 %)",
+        "122.98 (+16 %)",
+        "137.55 (+34 %)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share value after giving more weight to the base case because it is considered more likely."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Prudential?",
+     "paragraphs": [
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes that Japan’s restrictions and trust repair weigh on earnings beyond reopening, while PGIM outflows and weaker investment results reduce capital and confidence. It gives $83.35 in October 2027 and $75.34 in October 2029. Its overall probability is 30% because the downside is severe, but Japan’s restrictions, estimated business impacts and market-sensitive equity make it credible."
+      },
+      {
+       "n": 266,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires faster Japan remediation, PGIM asset gathering and efficiency savings. It rises from $142.80 in 2027 to $204.78 in 2029. Its 15% probability is lower because several uncertain improvements must occur together, including buybacks above the stated 2026 authorization."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Prudential really make?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.4 — Investments and debt",
+       "text": "Operating cash flow reached $6,271 million in 2025, but it is not automatically available to shareholders. Policyholder flows, investment purchases, claims, commissions and statutory capital needs absorb cash. Parent liquidity is the sharper test of debt-service capacity: highly liquid parent assets fell by $824 million to $3,817 million at year-end 2025. Meanwhile, fewer diluted shares helped per-share growth exceed aggregate earnings growth."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net investment income",
+        "21,473",
+        "19,909",
+        "17,865",
+        "16,037",
+        "18,287"
+       ],
+       [
+        "Core earnings (company's measure)",
+        "5,161",
+        "4,588",
+        "4,380",
+        "",
+        ""
+       ],
+       [
+        "Net income",
+        "3,576",
+        "2,727",
+        "2,488",
+        "-1,647",
+        "8,868"
+       ],
+       [
+        "Dividend per share",
+        "5.40",
+        "5.20",
+        "5.00",
+        "4.80",
+        "4.60"
+       ],
+       [
+        "Operating return on equity",
+        "14.9%",
+        "13.1%",
+        "12.4%",
+        "10.8%",
+        ""
+       ]
+      ],
+      "note": "Core earnings is the company’s own version of ongoing profit, so it can differ from net income and is blank for 2022 and 2021 because older figures were not recalculated the same way."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Prudential today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 19, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "115.91"
+       ],
+       [
+        "Market value (calculated)",
+        "39,988.95"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "10.5x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "7.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "8.2x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.3x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.8%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "115.91"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "137.55 (+34 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "10.5x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.3x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 115.91,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "83.35 (-23 %)",
+       "76.35 (-25 %)",
+       "75.34 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "123.90 (+12 %)",
+       "135.20 (+26 %)",
+       "153.15 (+47 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "142.80 (+28 %)",
+       "171.39 (+58 %)",
+       "204.78 (+93 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "114.57 (+4 %)",
+       "122.98 (+16 %)",
+       "137.55 (+34 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/pru/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PRU&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Prudential dividend: pay, coverage and yield",
+   "meta_description": "Prudential's dividend history, cash coverage, possible changes and current yield are explained in plain English.",
+   "opening": "Prudential's current dividend is $5.40 per share, with a base forecast of $5.60 in 2027, $5.80 in 2028 and $6.00 in 2029. Prudential's dividend is supported by earnings and capital generation, but cash at regulated subsidiaries is not automatically available to shareholders.",
+   "closing": "The full memo also examines the Prudential business, Prudential's rivals, Prudential's management and Prudential's risks.",
+   "blocks": [
+    {
+     "heading": "How much does Prudential pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Investment income and operating ROE strengthened through 2025; operating ROE reached 14.9%. Net premiums earned fell 28.2% in 2025, confirming that revenue is lumpy. The turn begins with the 2022 diluted loss and reaches 2025 EPS of $9.99. Dividends and buybacks left $1.70 per share retained in 2025."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends declared divided by weighted-average diluted shares",
+        "5.46",
+        "5.27",
+        "5.07",
+        "4.89",
+        "4.67"
+       ],
+       [
+        "− Share buybacks, per share",
+        "2.83",
+        "2.78",
+        "2.78",
+        "4.00",
+        "6.41"
+       ],
+       [
+        "**= Kept, per share**",
+        "1.70",
+        "",
+        "",
+        "",
+        "11.32"
+       ]
+      ],
+      "note": "The dividend amount per share is not the company’s advertised dividend per share because we divide total dividends by the year’s average diluted shares, not the shares outstanding when each dividend was declared."
+     }
+    },
+    {
+     "heading": "Is Prudential's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 93,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Those accounting flows are not the same as cash available at headquarters. Premiums and annuity deposits support customers’ future benefits, so regulated insurance subsidiaries must hold capital against market losses, deaths, withdrawals and guarantees. Only money safely above those requirements can generally move to the parent as a dividend."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "3,535",
+        "2,695",
+        "2,459",
+        "-1,672",
+        "8,736"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "1,932",
+        "1,892",
+        "1,850",
+        "1,822",
+        "1,821"
+       ],
+       [
+        "− Share buybacks",
+        "1,000",
+        "1,000",
+        "1,012",
+        "1,488",
+        "2,500"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "603",
+        "",
+        "",
+        "",
+        "4,415"
+       ],
+       [
+        "**= Paid out more than it earned**",
+        "",
+        "197",
+        "403",
+        "4,982",
+        ""
+       ]
+      ],
+      "note": "The company reports money from shares sold, but no new common shares were actually issued because this money came from employees exercising options, not a fresh stock sale."
+     }
+    },
+    {
+     "heading": "What could change Prudential's dividend?",
+     "paragraphs": [
+      {
+       "n": 261,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises to $5.60 in 2027 and $5.80 in 2028. It reaches $6.00 in 2029, continuing the recent $0.20 annual increases. The bear freezes it at $5.40 because Japan and investment pressures could limit remittances. The bull reaches $5.80 and $6.20, then $6.60, assuming faster recovery. The freeze remains plausible because the 2025 payout was already 82.9% of common earnings, although management targets attractive and increasing dividends."
+      },
+      {
+       "n": 269,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bull case would gain support if efficiency benefits approach the targeted $750 million pretax run-rate by year-end 2028 and PGIM reaches 25% of adjusted operating income. Sustained earnings, parent liquidity above the $3,000 million minimum and continued buybacks would then justify higher book value and a stronger multiple."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "35,001 (30,268 / 35,521)",
+        "37,801 (31,168 / 38,971)",
+        "40,751 (32,868 / 42,871)"
+       ],
+       [
+        "Shares (millions)",
+        "339 (345 / 336)",
+        "336 (347 / 330)",
+        "333 (349 / 324)"
+       ],
+       [
+        "Dividends per share",
+        "5.60 (5.40 / 5.80)",
+        "5.80 (5.40 / 6.20)",
+        "6.00 (5.40 / 6.60)"
+       ],
+       [
+        "Price to book value",
+        "1.20 (0.95 / 1.35)",
+        "1.20 (0.85 / 1.45)",
+        "1.25 (0.80 / 1.55)"
+       ]
+      ],
+      "note": "Price to book value shows how many times the share price is compared with the company's accounting value per share."
+     }
+    },
+    {
+     "heading": "What is Prudential's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The 7.6x core-earnings multiple implies an earnings yield of about 13.2%. That is profit represented by each invested dollar, not a promised cash return. The 4.8% dividend yield is only one part of the earning power; the rest must support capital, growth, debt and other needs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "4.8%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.5%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/pru/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PRU&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Prudential earnings date",
+   "meta_description": "Prudential's next results are expected on November 3, 2026; the key watch is Japan remediation and reopening.",
+   "opening": "Prudential's next results are expected on November 3, 2026. Watch Prudential's Japan remediation and reopening.",
+   "closing": "The full memo also covers Prudential's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Prudential guided for the year?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets adjusted operating ROE of 13%–15% for 2025–2027. It wants PGIM at 25% of adjusted operating income over multiple years and margins above 30% over time. It also targets a $750 million pretax efficiency-benefit run-rate by year-end 2028. Parent highly liquid assets have a $3,000 million ongoing minimum. Japan’s estimated impact is $500 million in 2026. It is $500 million–$550 million in 2027."
+      },
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Japan is the immediate counterweight. Prudential of Japan’s impact is about $500 million pretax in 2026 and $500 million–$550 million in 2027. Gibraltar adds $100 million in 2026 and $175 million in 2027. These figures combine lost earnings and expenses, so the test is whether growth elsewhere can offset them."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted Operating ROE",
+        "2025–2027",
+        "13.0%",
+        "15.0%",
+        "Feb 5, 2025"
+       ],
+       [
+        "Highly Liquid Assets",
+        "Ongoing",
+        "3,000",
+        "",
+        "Aug 5, 2026"
+       ],
+       [
+        "Pre-tax run-rate benefits",
+        "Year-end 2028",
+        "750",
+        "750",
+        "Aug 5, 2026"
+       ],
+       [
+        "Updated Estimated POJ Impacts — 2026",
+        "2026",
+        "500",
+        "500",
+        "Oct 9, 2026"
+       ],
+       [
+        "Updated Estimated POJ Impacts — 2027",
+        "2027",
+        "500",
+        "550",
+        "Oct 9, 2026"
+       ]
+      ],
+      "note": "The blank earnings-growth ranges mean the company gave only general descriptions, such as low double-digit growth, instead of exact numbers."
+     }
+    },
+    {
+     "heading": "How have Prudential's results changed over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Net income rose from $533 million in second-quarter 2025 to $985 million in second-quarter 2026. Core earnings rose more moderately, from $1,284 million to $1,438 million."
+      },
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The annual assumption review charged GAAP income $299 million after tax while benefiting operating income by $51 million. Excluding the reviews, core earnings rose from $1,320 million to $1,387 million. PGIM improved and Group Insurance benefited from mortality, but expense, underwriting and Japan-related pressures remained uneven. The latest quarter therefore points to progress, not a clean acceleration."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Core earnings (company's measure)",
+        "1,438",
+        "1,278",
+        "1,168",
+        "1,521",
+        "1,284",
+        "1,188",
+        "1,068",
+        "1,208"
+       ],
+       [
+        "Net income",
+        "985",
+        "597",
+        "905",
+        "1,431",
+        "533",
+        "707",
+        "-57",
+        "448"
+       ],
+       [
+        "EPS, diluted",
+        "2.80",
+        "1.68",
+        "2.55",
+        "4.01",
+        "1.48",
+        "1.96",
+        "-0.17",
+        "1.24"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Prudential's next results?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Prudential will release third-quarter earnings on November 3, 2026, followed by its call on November 4. Investors will need customer flows, expenses and capital alongside the preliminary investment-income figures. Restated comparisons also matter because Brazil and Mexico are moving into divested and run-off businesses, while the former International segment becomes Japan Businesses."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.80"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "1.24",
+      "-0.17",
+      "1.96",
+      "1.48",
+      "4.01",
+      "2.55",
+      "1.68",
+      "2.80"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/pru/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PRU&src=seo-earnings"
+  }
+ },
+ "short_name": "Prudential",
+ "first_memo_date": "2026-10-19T14:05:59Z"
+}

@@ -1,0 +1,668 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CI",
+ "slug": "ci",
+ "company": "Cigna Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-16T20:38:47Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 301.27,
+ "price_date": "2026-10-16T19:32:18Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 25,
+  "words": 15035,
+  "sources": 210
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Cigna is a company that sells ways to pay for, organize and deliver health care. A dollar enters through premiums, employer and health-plan fees, or payments for medicines and care, then leaves for claims, drugs, providers and operating costs; what remains is the business’s profit."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000006/ci-20251231.htm"
+  },
+  {
+   "title": "Cigna 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1739940/000173994025000009/ci-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1739940/000114036126003768/ef20064751_ex99-1.htm"
+  }
+ ],
+ "rivals": [
+  "UNH",
+  "CVS",
+  "ELV",
+  "HUM",
+  "CNC",
+  "MOH",
+  "OSCR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Cigna stock forecast",
+   "meta_description": "Cigna's forecast weighs bear, base and bull scenarios against pharmacy economics, cash generation, valuation and the Signature transition.",
+   "opening": "Cigna's weighted share price rises from $303.61 in October 2027 to $368.15 in October 2029, including dividends. The forecast hinges on whether Signature preserves pharmacy economics while cash generation supports each share.",
+   "closing": "The full memo also explains Cigna's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Cigna's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Cigna’s weighted share price rises from $303.61 in October 2027 to $368.15 in October 2029, including dividends. That means a modest 3% return after one year, followed by 15% after two years and 29% after three years. The 2029 outcomes span $260.14 in the bear case to $486.53 in the bull case, against today’s $301.27 price."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires Signature to win clients through concessions while PBM earnings remain pressured. Slower growth and weaker cash conversion restrict buybacks, increase concern about debt and contract economics, and compress the multiple. It produces $284.28 in October 2027 and $260.14 in October 2029, including dividends. Its 28% probability sits above the 25% estimates from the earnings and dividend specialists and near the multiple specialist’s 30%, because the pressure is already visible but does not require an earnings collapse."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 301.27, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 301.27, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "284.28 (-4 %)",
+        "272.36 (-6 %)",
+        "260.14 (-8 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "305.38 (+4 %)",
+        "341.05 (+18 %)",
+        "380.78 (+34 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "326.11 (+11 %)",
+        "398.83 (+37 %)",
+        "486.53 (+69 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "303.61 (+3 %)",
+        "333.37 (+15 %)",
+        "368.15 (+29 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the three cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for Cigna, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case reaches only $9,195 million because PBM pressure and weak cash conversion reduce growth to 2%. Pharmacy Benefit Services income fell 27% in the latest quarter, while first-half operating cash flow was only $710 million. The bull case reaches $11,181 million by applying the 14% high end, assuming Signature scales without lasting margin damage and specialty earnings and savings strengthen. The historical increase in adjusted EPS from $20.47 in 2021 to $29.84 in 2025 supports continued growth, but not the bull outcome by itself."
+      },
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Persistent concessions or weaker cash conversion justify compression. Successful Signature adoption, specialty growth and modernization savings could instead improve confidence in earnings quality and support expansion."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Cigna really make?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.9 — Revenue, earnings, and cash generation",
+       "text": "After about $1.2 billion of capital expenditure, roughly $8.4 billion remained before acquisitions, distributions and debt repayment. Cigna does not separately identify the minimum maintenance portion of that spending."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay for Cigna today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "301.27"
+       ],
+       [
+        "Market value (calculated)",
+        "79,607.73"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.5x"
+       ],
+       [
+        "P/E on core earnings, last 12 months (calculated)",
+        "9.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "9.0x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.9x"
+       ]
+      ],
+      "note": "The price-to-earnings figure based on core earnings uses the insurer’s own adjusted measure of ongoing profit, so it can differ from the figure based on reported profit."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "301.27"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "368.15 (+29 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.5x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 301.27,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "284.28 (-4 %)",
+       "272.36 (-6 %)",
+       "260.14 (-8 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "305.38 (+4 %)",
+       "341.05 (+18 %)",
+       "380.78 (+34 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "326.11 (+11 %)",
+       "398.83 (+37 %)",
+       "486.53 (+69 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "303.61 (+3 %)",
+       "333.37 (+15 %)",
+       "368.15 (+29 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ci/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CI&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Cigna dividend: payment, cash and yield",
+   "meta_description": "Cigna paid $6.00 per share in 2025; cash remained after capital spending, while the dividend yield was 2.1%.",
+   "opening": "Cigna's dividend per share reached $6.00 in 2025. After about $1.2 billion of capital expenditure, roughly $8.4 billion remained before acquisitions, distributions and debt repayment.",
+   "closing": "The full Cigna memo also explains Cigna’s business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Cigna pay per share?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Evernorth revenue rose from $131,912 million in 2021 to $234,953 million in 2025. Adjusted income rose from $5,818 million in 2021 to $7,221 million in 2025. The key turn is adjusted revenue margin: 3.1% in 2025 versus 3.5% in 2024. Diluted shares fell 5.2% in 2025, while dividends per share reached $6.00 and buybacks per share were $13.48."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends, per share",
+        "6.00",
+        "5.53",
+        "4.89",
+        "4.43",
+        "3.95"
+       ],
+       [
+        "− Share buybacks, per share",
+        "13.48",
+        "24.84",
+        "7.69",
+        "24.30",
+        "22.71"
+       ],
+       [
+        "Book value per share",
+        "158.33",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Diluted shares (average of the year), change",
+        "-5.2%",
+        "-4.6%",
+        "-5.2%",
+        "-8.2%",
+        "-7.4%"
+       ]
+      ],
+      "note": "Our dividend per share can differ from Cigna's declared dividend per common share because we divide declared dividends by the year's average diluted share count, while Cigna uses the shares entitled to receive the dividend."
+     }
+    },
+    {
+     "heading": "Does Cigna's dividend fit its cash generation?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.9 — Revenue, earnings, and cash generation",
+       "text": "After about $1.2 billion of capital expenditure, roughly $8.4 billion remained before acquisitions, distributions and debt repayment. Cigna does not separately identify the minimum maintenance portion of that spending."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends declared on common shares",
+        "1,611",
+        "1,567",
+        "1,452",
+        "1,387",
+        "1,347"
+       ],
+       [
+        "− Share buybacks",
+        "3,621",
+        "7,034",
+        "2,284",
+        "7,607",
+        "7,742"
+       ],
+       [
+        "Acquisitions",
+        "597",
+        "131",
+        "447",
+        "0",
+        "1,833"
+       ],
+       [
+        "New shares sold",
+        "203",
+        "305",
+        "187",
+        "389",
+        "326"
+       ],
+       [
+        "Diluted shares",
+        "268.563",
+        "283.218",
+        "296.882",
+        "313.065",
+        "340.966"
+       ]
+      ],
+      "note": "Diluted shares include shares that could still be created, so the count is not just the number of shares currently owned by investors."
+     }
+    },
+    {
+     "heading": "What could change Cigna's dividend?",
+     "paragraphs": [
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $6.70 to $8.10 per share in the base case. The bear case holds at $6.10, while the bull case reaches $9.10. The base follows roughly 10% annual growth from the implied 2026 run rate, supported by a five-year record of increases from $4.00 to $6.04."
+      },
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear freeze reflects weak cash conversion, debt service and regulated capital limits. The bull path assumes cash generation near the upper end of management’s ambition, although the company’s EPS target is not a dividend commitment."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "8,805 (8,846 / 8,805)",
+        "9,648 (9,015 / 9,923)",
+        "10,573 (9,195 / 11,181)"
+       ],
+       [
+        "Shares (millions)",
+        "260 (264 / 256)",
+        "255 (265 / 249)",
+        "250 (265 / 241)"
+       ],
+       [
+        "Dividends per share",
+        "6.70 (6.10 / 7.00)",
+        "7.40 (6.10 / 8.00)",
+        "8.10 (6.10 / 9.10)"
+       ],
+       [
+        "Price to earnings",
+        "9.00 (8.50 / 9.50)",
+        "9.00 (8.00 / 10.00)",
+        "9.00 (7.50 / 10.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Cigna's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Debt narrows the room for error because cash used for interest, repayment and insurance capital cannot also fund buybacks. Management still expected debt capitalization to move closer to its 40% target. The 2.1% dividend yield is tangible, but its support depends on multi-year cash generation after debt and regulatory capital needs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "4.5%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/ci/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CI&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Cigna earnings: date, guidance and results",
+   "meta_description": "Cigna reports results on November 5, 2026; see its guidance, recent earnings trend and what to watch.",
+   "opening": "Cigna's next results are expected on November 5, 2026. The key thing to watch is whether Pharmacy Benefit Services’ earnings pressure is easing.",
+   "closing": "The full memo also explains Cigna’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Cigna guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The company reaffirmed a target of at least $30.45 in adjusted earnings per share for 2026. Earnings per share divides profit among shareholders; adjusted earnings remove items management considers less representative of normal operations. In the second quarter, ordinary profit was $6.29 per share, while adjusted profit was $7.78 because Cigna excluded items such as acquired-intangible amortization, investment results and special charges. That can clarify recurring performance, but restructuring still costs real money."
+      },
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Cigna Healthcare, the insurance business, is expected to provide at least $4,550 million of pre-tax adjusted operating income. Evernorth, which houses pharmacy and care services, is expected to provide at least $6,900 million. Yet pharmacy revenue rose 8% in the second quarter while Pharmacy Benefit Services’ adjusted operating income fell 27%. More prescriptions or more expensive drugs can increase revenue without increasing the fee left as profit."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Consolidated Adjusted EPS",
+        "2026",
+        "30.45",
+        "",
+        "Sep 30, 2026"
+       ],
+       [
+        "Evernorth Health Services pre-tax adjusted income from operations",
+        "2026",
+        "6,900",
+        "",
+        "Sep 30, 2026"
+       ],
+       [
+        "Cigna Healthcare pre-tax adjusted income from operations",
+        "2026",
+        "4,550",
+        "",
+        "Sep 30, 2026"
+       ],
+       [
+        "Medical care ratio",
+        "2026",
+        "83.7%",
+        "84.7%",
+        "Sep 30, 2026"
+       ]
+      ],
+      "note": "The $500 million in annualized after-tax savings is a yearly cost reduction, not a one-time payment, and some of it was already achieved in 2025."
+     }
+    },
+    {
+     "heading": "Did Cigna keep its earnings promise?",
+     "paragraphs": [
+      {
+       "n": 119,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Cigna did meet its shorter promise. Management guided to at least $29.60 in full-year adjusted earnings per share and delivered $29.84. “Adjusted” means Cigna excludes specified items from accounting profit, so meeting that target does not erase a miss on a longer-term measure."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Cigna's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Core earnings increased about 6.4% from the prior year, while remaining almost unchanged from March. The quarterly series therefore suggests moderate improvement, not a steadily accelerating business."
+      },
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Evernorth’s divisions moved in opposite directions. Pharmacy Benefit Services generated $34,496 million of revenue and $609 million of adjusted income. Specialty and Care Services produced $1,054 million of income. Drug mix lifted pharmacy revenue even as pharmacy activity declined, while specialty results benefited from Shields and operating efficiencies."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025"
+      ],
+      "rows": [
+       [
+        "Core earnings (company's measure)",
+        "2,054",
+        "2,058",
+        "2,148",
+        "2,096",
+        "1,930"
+       ],
+       [
+        "Net income",
+        "1,660",
+        "1,654",
+        "1,234",
+        "1,868",
+        "1,532"
+       ],
+       [
+        "EPS, diluted",
+        "6.29",
+        "6.26",
+        "4.64",
+        "6.98",
+        "5.71"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "6.29"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "5.71",
+      "6.98",
+      "4.64",
+      "6.26",
+      "6.29"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ci/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CI&src=seo-earnings"
+  }
+ },
+ "short_name": "Cigna",
+ "first_memo_date": "2026-10-16T20:38:47Z"
+}

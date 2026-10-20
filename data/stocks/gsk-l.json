@@ -1,0 +1,772 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GSK.L",
+ "slug": "gsk-l",
+ "company": "GSK plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-11T23:28:23Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 1750.0,
+ "price_date": "2026-10-09T16:03:57Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 259,
+  "tables": 27,
+  "words": 17313,
+  "sources": 287
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "GSK plc is a British company that develops, makes and sells prescription medicines and vaccines. Its business is a loop: products already on sale bring in money, and that money pays for supply, research and the next generation of products."
+ },
+ "sources": [
+  {
+   "title": "GSK annual report",
+   "url": "https://www.gsk.com/media/kn0bknmd/annual-report-2025.pdf"
+  },
+  {
+   "title": "GSK annual report 2022",
+   "url": "https://www.gsk.com/media/ryjnw2s3/annual-report-2022.pdf"
+  },
+  {
+   "title": "Half-year report — 2026-07-28",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/ef13a1aa-5c1f-451b-af4f-495356acc6a7.html"
+  }
+ ],
+ "rivals": [
+  "AZN",
+  "NVS",
+  "PFE",
+  "MRK",
+  "ABBV",
+  "BMY",
+  "LLY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "GSK stock forecast",
+   "meta_description": "GSK stock forecast: scenarios, cash generation and valuation turn on replacing dolutegravir as older sales fade.",
+   "opening": "GSK's weighted forecast reaches 1,777.38p by October 2029. GSK's forecast hinges on replacing dolutegravir as HIV sales erode.",
+   "closing": "The full GSK memo also explains GSK's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could GSK's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is 1,748.12p by October 2027. That implies a +4% total return including dividends. It is 1,777.38p by October 2029. That implies a +14% total return including dividends. The forecast assigns 30% probability to the bear case and 50% to base. The bull case carries 20%."
+      },
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is 1,748.12p by October 2027, a 4% return including dividends. It reaches 1,795.40p by October 2028, an 11% return, before easing to 1,777.38p by October 2029, a 14% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per GSK.L share at each date; in brackets the return since today's 1750.00, dividends included",
+      "caption": "What the shares could be worth (GBp per GSK.L share at each date; in brackets the return since today's 1750.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "1426.03 (-15 %)",
+        "1300.77 (-18 %)",
+        "1134.36 (-24 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "1792.88 (+6 %)",
+        "1830.11 (+13 %)",
+        "1755.80 (+13 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "2119.35 (+25 %)",
+        "2450.58 (+48 %)",
+        "2795.87 (+72 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1748.12 (+4 %)",
+        "1795.40 (+11 %)",
+        "1777.38 (+14 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for GSK, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base earnings rise to £7,565m in the first forecast year and £7,725m in the second. They reach £7,826m in the third. The underlying case assumes modest revenue growth and slightly lower normalized margins as mature products weaken. This is below management’s ambition of more than £40bn of risk-adjusted sales in 2031, because analyst consensus is £36.446bn."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls from £7,148m to £6,960m and then £6,508m. It assumes weak replacement sales and faster HIV erosion. The bull case rises from £7,700m to £8,140m and then £8,550m, assuming launches gain patients, vaccines remain strong and savings improve operating leverage."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does GSK really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was £7,741 million in 2025. After capital spending, lease payments and interest, the free-cash-flow measure used here was £3,836 million. Deducting stock-based pay produces “real free cash flow” of £3,462 million, because shares given to employees still dilute owners even though they are not a current cash payment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "£ millions",
+      "caption": "Follow the money: real free cash flow (£ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,741",
+        "6,554",
+        "6,768",
+        "6,634",
+        "6,277"
+       ],
+       [
+        "− Capital spending",
+        "2,985",
+        "2,982",
+        "2,344",
+        "2,258",
+        "2,654"
+       ],
+       [
+        "**= Free cash flow**",
+        "3,836",
+        "2,714",
+        "3,461",
+        "3,326",
+        "2,670"
+       ],
+       [
+        "− Stock pay",
+        "374",
+        "344",
+        "307",
+        "346",
+        "343"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,462",
+        "2,370",
+        "3,154",
+        "2,980",
+        "2,327"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for GSK today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; per share in pence",
+      "caption": "What an investor pays today (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1,750.00"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "14.83x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "9.25x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.4%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.8%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "1,750.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1777.38 (+14 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "9.25x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 17.5,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "1426.03 (-15 %)",
+       "1300.77 (-18 %)",
+       "1134.36 (-24 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "1792.88 (+6 %)",
+       "1830.11 (+13 %)",
+       "1755.80 (+13 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "2119.35 (+25 %)",
+       "2450.58 (+48 %)",
+       "2795.87 (+72 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1748.12 (+4 %)",
+       "1795.40 (+11 %)",
+       "1777.38 (+14 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/gsk-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GSK.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "GSK dividend",
+   "meta_description": "GSK expected a 70p dividend for 2026; its real free cash flow was £3,462 million, while shareholder distributions exceeded that cash measure.",
+   "opening": "GSK expected a 70p dividend for 2026, and its forecast takes dividends from £0.70 per share initially to £0.74 in the third year. In 2025, GSK's real free cash flow was £3,462 million, while shareholder distributions exceeded that cash measure.",
+   "closing": "The full memo also covers GSK’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does GSK pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "GSK also returned capital through a £2 billion buyback completed in June 2026 and expected a 70p dividend for 2026. Those actions reduce the shares or cash available for future investment, so their value depends on the price paid and the opportunities forgone. GSK recycled other assets too: it retained a 78.3% economic interest in ViiV and received a $250 million special dividend, while licensing linerixibat generated $400 million upfront. Such proceeds support cash flow, but gains from disposals are not the same as recurring medicine sales. The final test is what this focused portfolio can earn."
+      },
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend is £0.70 per share initially and £0.72 in the second year. It reaches £0.74 in the third, consistent with progressive policy but limited by investment needs. The bear case cuts it to £0.66 and then £0.60; the bull case raises it to £0.74 and then £0.78."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "pence; share-count change in %",
+      "caption": "What one share gets (pence; share-count change in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "138.80",
+        "62.20",
+        "119.90",
+        "109.20",
+        "81.80"
+       ],
+       [
+        "Real free cash flow per share",
+        "84.09",
+        "57.22",
+        "76.72",
+        "72.97",
+        "57.43"
+       ],
+       [
+        "− Dividends paid, per share",
+        "62.28",
+        "59.01",
+        "54.66",
+        "84.89",
+        "98.69"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "19.51",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does GSK’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue rose across the five-year period, with the 2022 jump shaped by the Haleon demerger and continuing-business presentation. Operating margin recovered in 2025 after the 2024 fall; reported and Core profit separate selected charges, and real free cash flow as a share of revenue, after investment and stock pay, recovered too. GSK’s own real free cash flow per share was 84.09p against diluted EPS of 138.80p. Shareholder distributions exceeded that cash measure."
+      },
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations was £7,741 million in 2025. After capital spending, lease payments and interest, the free-cash-flow measure used here was £3,836 million. Deducting stock-based pay produces “real free cash flow” of £3,462 million, because shares given to employees still dilute owners even though they are not a current cash payment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "£ millions",
+      "caption": "Follow the money: where the free cash flow went (£ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "3,836",
+        "2,714",
+        "3,461",
+        "3,326",
+        "2,670"
+       ],
+       [
+        "− Dividends paid",
+        "2,564",
+        "2,444",
+        "2,247",
+        "3,467",
+        "3,999"
+       ],
+       [
+        "− Share buybacks",
+        "1,377",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "802",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "496",
+        "146",
+        "",
+        "662",
+        "1,568"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change GSK’s dividend?",
+     "paragraphs": [
+      {
+       "n": 201,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "The main risk is loss of exclusivity, when cheaper generic competitors can enter after a medicine’s protection ends. GSK expects this period for dolutegravir in 2028–2030. Its savings programme targets £1.9bn annually by 2029, but much of the money is intended to fund replacement medicines rather than become dividends."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "7,565 (7,148 / 7,700)",
+        "7,725 (6,960 / 8,140)",
+        "7,826 (6,508 / 8,550)"
+       ],
+       [
+        "Dividends per share",
+        "0.70 (0.70 / 0.70)",
+        "0.72 (0.66 / 0.74)",
+        "0.74 (0.60 / 0.78)"
+       ],
+       [
+        "Price to earnings",
+        "9.50 (8.00 / 11.00)",
+        "9.50 (7.50 / 12.00)",
+        "9.00 (7.00 / 13.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "62.28"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "3.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "pence; share-count change in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "98.69",
+      "84.89",
+      "54.66",
+      "59.01",
+      "62.28"
+     ],
+     "Real free cash flow per share": [
+      "57.43",
+      "72.97",
+      "76.72",
+      "57.22",
+      "84.09"
+     ],
+     "Free cash flow per share": [
+      "65.89",
+      "81.44",
+      "84.19",
+      "65.52",
+      "93.17"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/gsk-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GSK.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "GSK earnings: October 28, 2026 results",
+   "meta_description": "GSK reports on October 28, 2026; guidance is 3.0%–5.0% turnover growth and 7.0%–9.0% core profit and EPS growth.",
+   "opening": "GSK’s next results are expected on October 28, 2026. Watch whether approvals become sales while restructuring improves cash generation without weakening research.",
+   "closing": "The full memo also covers GSK’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has GSK guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management reaffirmed 2026 turnover growth of 3.0%–5.0% and core operating-profit and earnings-per-share growth of 7.0%–9.0%. “Core” is GSK’s view of ordinary trading after removing major restructuring, acquisition, impairment and legal items. Those costs still consume cash: in Q2 2026, total operating profit fell 75% while core operating profit rose 7%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "£ millions; per share in pence",
+      "caption": "Guidance in force (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "Turnover growth at CER (%)",
+        "Year to Dec 2026",
+        "3.0%",
+        "5.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Core operating profit growth at CER (%)",
+        "Year to Dec 2026",
+        "7.0%",
+        "9.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Core earnings per share growth at CER (%)",
+        "Year to Dec 2026",
+        "7.0%",
+        "9.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Dividend per share (pence)",
+        "Year to Dec 2026",
+        "70.00",
+        "70.00",
+        "Jul 28, 2026"
+       ],
+       [
+        "Phase III trial starts",
+        "Year to Dec 2026",
+        "20",
+        "",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has GSK kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "GSK first guided to sales growth of 3%–5% for 2025. It guided to core operating profit growth of 6%–8%. It delivered 7% sales growth and 11% core operating profit growth, exceeding those initial ranges. That supports the record of promises kept, although Miels’ newer savings promises remain untested."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do GSK’s last eight reported periods show?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "Revenue rose to £8,409 million from £7,986 million a year earlier, while gross margin edged up to 73.1%. Operating income nevertheless fell to £481 million, and diluted EPS fell to 10.70p. Sales and production economics therefore held up while costs below gross profit deteriorated."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "£ millions; per share in pence",
+      "caption": "The last eight reported periods (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,409",
+        "7,629",
+        "8,618",
+        "8,547",
+        "7,986",
+        "7,516",
+        "8,117",
+        "8,012"
+       ],
+       [
+        "Gross margin",
+        "73.1%",
+        "75.4%",
+        "69.2%",
+        "73.6%",
+        "72.9%",
+        "74.2%",
+        "68.5%",
+        "70.1%"
+       ],
+       [
+        "Operating income",
+        "481",
+        "2,293",
+        "1,100",
+        "2,593",
+        "2,023",
+        "2,216",
+        "696",
+        "189"
+       ],
+       [
+        "Net income",
+        "435",
+        "1,737",
+        "636",
+        "2,013",
+        "1,443",
+        "1,624",
+        "414",
+        "-58"
+       ],
+       [
+        "EPS, diluted",
+        "10.70",
+        "42.60",
+        "15.60",
+        "49.10",
+        "35.10",
+        "39.30",
+        "10.00",
+        "-1.40"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should GSK watch in the next release?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "GSK reports Q3 on 28 October 2026. Investors will want to see whether trials have begun, how much restructuring cash has been paid, and whether sales and core profit remain consistent with guidance. The separate currency effect on Q3 sales will help distinguish commercial performance from translation into pounds."
+      },
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Two regulatory dates make the autumn important. The US regulator’s action date for bepirovirsen is 26 October, while neladalkib’s target date is 27 November. An action date is a target for a regulatory decision, not a promise of approval. Japan approved bepirovirsen as Hibsago on 24 August, but GSK still needs eligible patients, supply and reimbursement to turn approval into treatment."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/gsk-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GSK.L&src=seo-earnings"
+  }
+ },
+ "short_name": "GSK",
+ "first_memo_date": "2026-10-11T23:28:23Z"
+}

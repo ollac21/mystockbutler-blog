@@ -1,0 +1,548 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EW",
+ "slug": "ew",
+ "company": "Edwards Lifesciences Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T18:41:48Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 86.6,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 246,
+  "tables": 27,
+  "words": 16397,
+  "sources": 226
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Edwards Lifesciences is a medical-device company whose products help heart teams repair or replace failing valves. Its business is easiest to understand as a chain: a hospital chooses a device for an approved procedure, Edwards supplies and supports it, and the proceeds pay for making the next one."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000009/ew-20251231.htm"
+  },
+  {
+   "title": "Edwards 2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980024000004/ew-20231231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1099800/000109980026000006/ex-991q42025.htm"
+  }
+ ],
+ "rivals": [
+  "MDT",
+  "ABT",
+  "BSX",
+  "AORT",
+  "LIVN",
+  "0853.HK",
+  "9996.HK"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Edwards Lifesciences stock forecast",
+   "meta_description": "Edwards Lifesciences stock forecast: weighted prices are $73.78 in October 2027 and $77.56 in October 2029 across bear, base, and bull cases.",
+   "opening": "Edwards Lifesciences’ probability-weighted price is $73.78 in October 2027, $76.25 in October 2028, and $77.56 in October 2029; bear, base, and bull probabilities are 28%, 55%, and 17%. It hinges on turning TAVR leadership and TMTT adoption into durable growth before the valuation rerates.",
+   "closing": "The full memo also answers how Edwards Lifesciences runs its business, who its rivals are, how management allocates capital, and what risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Edwards Lifesciences’ shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is $73.78 in October 2027, a 15% loss including dividends. It is $76.25 in October 2028, a 12% loss. By October 2029, the weighted price reaches $77.56, still a 10% loss. Bear probability is 28%, while base probability is 55%. Bull probability is 17%."
+      },
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "At October 2029, the range runs from $48.69 to $117.42. Today’s price is $86.60. Because every scenario assumes no dividend, the returns come entirely from the share price."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 86.60, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 86.60, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "55.33 (-36%)",
+        "52.89 (-39%)",
+        "48.69 (-44%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "75.94 (-12%)",
+        "78.34 (-10%)",
+        "79.94 (-8%)"
+       ],
+       [
+        "Bull",
+        "17%",
+        "97.20 (+12%)",
+        "107.98 (+25%)",
+        "117.42 (+36%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "73.78 (-15%)",
+        "76.25 (-12%)",
+        "77.56 (-10%)"
+       ]
+      ],
+      "note": "The weighted row is the average expected share price after giving each case more or less influence based on its probability."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Edwards Lifesciences?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base follows the steady rise in adjusted earnings across the historical record, while 2026 guidance calls for strong sales growth and operating-margin expansion. The next-twelve-month EPS estimate also supports earnings near $2 billion. The model excludes the latest quarter’s deferred-tax allowance and impairment, plus the earlier disposal gain, because they are not recurring operating profit. The bear case assumes slower TAVR, limited TMTT scaling and cost pressure. The bull case requires stronger patient growth, broader TMTT adoption and more operating leverage."
+      },
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear path combines weaker operations with valuation compression. TAVR growth slows, hospital capacity limits procedures, and TMTT remains concentrated in early centers. Legal, tax and launch costs restrict margin recovery. The path begins at $55.33 and ends at $48.69. Its probability is 28% because these risks are visible, although historical adjusted earnings growth makes sustained contraction less likely than the base case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Edwards Lifesciences really make?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Profit and cash differ because accounting records income when it is earned, while cash flow records when money arrives and leaves. Customers may pay after Edwards records a sale, and expenses such as depreciation or stock compensation may reduce profit without an immediate cash payment. Operating cash flow reached $1,595.2 million in 2025, helped by better operations and lower tax payments after the unusually heavy cash-tax burden associated with the 2024 Critical Care sale."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "− Capital spending",
+        "256.5",
+        "235.8",
+        "217.6",
+        "208.3"
+       ],
+       [
+        "− Stock pay",
+        "157.9",
+        "145.6",
+        "124.8",
+        "113.6"
+       ]
+      ],
+      "note": "Stock pay does not use cash today, but we subtract it because giving employees shares reduces existing investors’ ownership."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Edwards Lifesciences today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "86.60"
+       ],
+       [
+        "Market value (calculated)",
+        "49,916.2"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "46,262.2"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "51.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.5x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "7.1x"
+       ]
+      ],
+      "note": "The business value is lower than the stock-market value because it subtracts the company's cash and short-term investments."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "86.60"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "77.56 (-10%)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.5x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "51.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 86.6,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "55.33 (-36%)",
+       "52.89 (-39%)",
+       "48.69 (-44%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "75.94 (-12%)",
+       "78.34 (-10%)",
+       "79.94 (-8%)"
+      ]
+     },
+     "Bull": {
+      "probability": "17%",
+      "values": [
+       "97.20 (+12%)",
+       "107.98 (+25%)",
+       "117.42 (+36%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "73.78 (-15%)",
+       "76.25 (-12%)",
+       "77.56 (-10%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ew/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EW&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Edwards Lifesciences earnings",
+   "meta_description": "Edwards Lifesciences reports next on November 4, 2026; guidance, recent results and adoption milestones are the focus.",
+   "opening": "Edwards Lifesciences' next results are expected on November 4, 2026. The main thing to watch is whether Edwards Lifesciences turns regulatory access and clinical evidence into hospital adoption.",
+   "closing": "The full Edwards Lifesciences memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Edwards Lifesciences guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "After a stronger second quarter, management raised its full-year constant-currency sales-growth outlook to 10.0%–11.0% and its TAVR growth outlook to 8.0%–9.0%. It also lifted its TMTT sales outlook to $760–$780 million. Constant currency estimates growth as if exchange rates had not changed, so it gives a clearer view of underlying demand."
+      },
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "But Edwards kept its adjusted EPS outlook at $2.95–$3.05. EPS is profit per share after costs and taxes, so sales can rise without earnings rising equally. The company said its effective tax rate would be at the high end of its earlier range. Its adjusted figure also excludes selected items such as some litigation costs, intangible-asset amortization and impairment losses; GAAP profit remains the accounting result investors must examine."
+      },
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Edwards expects R&D to remain about 17% of sales in 2026 and forecasts 150 basis points of constant-currency operating-margin expansion. The investment goes toward clinical evidence, new structural-heart products and existing therapies. That spending is the price of the growth promise, which makes analysts’ lower earnings expectations the next question."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "total company constant currency sales growth",
+        "Year to Dec 2026",
+        "10.0%",
+        "11.0%",
+        "Jul 23, 2026"
+       ],
+       [
+        "TAVR constant currency sales growth",
+        "Year to Dec 2026",
+        "8.0%",
+        "9.0%",
+        "Jul 23, 2026"
+       ],
+       [
+        "TMTT sales",
+        "Year to Dec 2026",
+        "760.0",
+        "780.0",
+        "Jul 23, 2026"
+       ],
+       [
+        "adjusted EPS (full year)",
+        "Year to Dec 2026",
+        "2.95",
+        "3.05",
+        "Jul 23, 2026"
+       ],
+       [
+        "constant currency operating margin expansion (basis points)",
+        "Year to Dec 2026",
+        "150",
+        "150",
+        "Jul 23, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What were Edwards Lifesciences' last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The best reading is therefore three-part: procedure-led sales momentum looks real, the tax write-down was largely discrete, and higher future taxes plus uneven cash flow still require several more quarters before the latest result becomes a firm new baseline."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,741.0",
+        "1,648.6",
+        "1,569.6",
+        "1,553.1",
+        "1,532.2",
+        "1,412.7",
+        "1,385.8",
+        "1,354.4"
+       ],
+       [
+        "Gross margin",
+        "77.5%",
+        "78.0%",
+        "78.1%",
+        "77.8%",
+        "77.5%",
+        "78.7%",
+        "78.9%",
+        "80.6%"
+       ],
+       [
+        "Operating income",
+        "513.2",
+        "477.6",
+        "151.1",
+        "307.1",
+        "411.2",
+        "394.8",
+        "312.6",
+        "350.6"
+       ],
+       [
+        "Net income",
+        "241.9",
+        "380.7",
+        "64.2",
+        "293.1",
+        "337.6",
+        "365.2",
+        "346.3",
+        "363.5"
+       ],
+       [
+        "EPS, diluted",
+        "0.42",
+        "0.66",
+        "0.11",
+        "0.50",
+        "0.57",
+        "0.62",
+        "0.58",
+        "0.61"
+       ],
+       [
+        "**= Free cash flow**",
+        "585.0",
+        "-21.1",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "Free cash flow is shown for only the latest two quarters because older cash-flow details were not available, and it includes cash from businesses the company has sold."
+     }
+    },
+    {
+     "heading": "What should I watch in Edwards Lifesciences' next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Edwards still expected several fourth-quarter milestones: U.S. FDA approval of PASCAL for tricuspid regurgitation, a next-generation PASCAL system with Capture Clarity, a U.S. tricuspid PASCAL launch and PROGRESS results at TCT. The company also scheduled an investor Q&A at TCT for November 2, 2026, and its third-quarter earnings call for November 4, 2026. Those events will show whether the pipeline is becoming a business, not merely an approved idea."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "1,741.0"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.42"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,354.4",
+      "1,385.8",
+      "1,412.7",
+      "1,532.2",
+      "1,553.1",
+      "1,569.6",
+      "1,648.6",
+      "1,741.0"
+     ],
+     "EPS, diluted": [
+      "0.61",
+      "0.58",
+      "0.62",
+      "0.57",
+      "0.50",
+      "0.11",
+      "0.66",
+      "0.42"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ew/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EW&src=seo-earnings"
+  }
+ },
+ "short_name": "Edwards Lifesciences",
+ "first_memo_date": "2026-10-18T18:41:48Z"
+}

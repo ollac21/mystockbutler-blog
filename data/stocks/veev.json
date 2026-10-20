@@ -1,0 +1,439 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "VEEV",
+ "slug": "veev",
+ "company": "Veeva Systems Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T18:13:16Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 310.36,
+ "price_date": "2026-10-16T20:01:55Z",
+ "next_earnings": "2026-11-25",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 234,
+  "tables": 26,
+  "words": 15845,
+  "sources": 195
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Veeva Systems sells cloud software, data, and services to life-sciences companies. It earns recurring fees when those companies use its tools, and spends that money on people, cloud infrastructure, data, and product development."
+ },
+ "sources": [
+  {
+   "title": "Veeva’s FY2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000139305226000014/veev-20260131.htm"
+  },
+  {
+   "title": "Veeva 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000139305225000022/veev-20250131.htm"
+  },
+  {
+   "title": "Veeva FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1393052/000139305224000013/veev-20240131.htm"
+  }
+ ],
+ "rivals": [
+  "IQV",
+  "CRM",
+  "DSY.PA",
+  "OTEX",
+  "ORCL",
+  "HON",
+  "IPS.PA",
+  "DH",
+  "MSFT",
+  "BOX"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Veeva stock forecast",
+   "meta_description": "Veeva's weighted forecast reaches $344.92 by October 2029, hinging on CRM migrations, customer retention, and product adoption that sustains cash flow.",
+   "opening": "Veeva's weighted case points to $322.63 by October 2027 and $344.92 by October 2029, with 20% bear, 55% base, and 25% bull scenarios. Veeva's outcome hinges on smooth CRM migrations, customer retention, and product adoption that sustains cash flow.",
+   "closing": "The full memo also examines Veeva's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Veeva's shares go?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted case points to limited upside: $322.63 by October 2027, a 4% return, and $344.92 by October 2029, an 11% return, hinging on smooth CRM migrations, customer retention, and product adoption that sustains cash flow."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides FY2027 revenue to $3,682–$3,687 million, subscription revenue growth to 15.0%, and non-GAAP operating cash flow to $1,600 million. The mix calls for $3,080 million of subscriptions and $602–$607 million of services. Scenario probabilities are 20% bear, 55% base, and 25% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 310.36, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 310.36, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "20%",
+        "226.06 (-27%)",
+        "201.54 (-35%)",
+        "187.72 (-40%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "320.56 (+3%)",
+        "324.40 (+5%)",
+        "323.66 (+4%)"
+       ],
+       [
+        "Bull",
+        "25%",
+        "404.42 (+30%)",
+        "464.05 (+50%)",
+        "517.45 (+67%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "322.63 (+4%)",
+        "334.74 (+8%)",
+        "344.92 (+11%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Veeva?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear path starts at $850M and recovers slowly because CRM delays, defections, and implementation costs weaken cash conversion. The bull path starts at $1,200M and accelerates toward $1,780M as Vault CRM migrations, R&D and Quality adoption, and paid AI use expand. More than 190 customers were live by September, while only five were testing Falcon agents, so the upside is credible but unproven."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Veeva really make?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow does not subtract stock compensation because that payment does not leave the company as cash in the period. Yet shareholders bear the cost through dilution. Subtracting $472,703 thousand of stock pay gives an analytical “real free cash flow” figure of $913,391 thousand. This is not Veeva’s accounting measure, but it is a more demanding view of cash available to owners."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,415,225",
+        "1,090,051",
+        "911,339",
+        "780,470",
+        "764,463"
+       ],
+       [
+        "− Capital spending",
+        "29,131",
+        "20,519",
+        "26,196",
+        "13,512",
+        "14,214"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,386,094",
+        "1,069,532",
+        "885,143",
+        "766,958",
+        "750,249"
+       ],
+       [
+        "− Stock pay",
+        "472,703",
+        "437,350",
+        "393,733",
+        "351,907",
+        "234,636"
+       ],
+       [
+        "**= Real free cash flow**",
+        "913,391",
+        "632,182",
+        "491,410",
+        "415,051",
+        "515,613"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "28.6%",
+        "23.0%",
+        "20.8%",
+        "19.3%",
+        "27.9%"
+       ]
+      ],
+      "note": "Real free cash flow subtracts stock pay because shares given to employees reduce existing shareholders’ ownership, even though no cash leaves the company."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Veeva's earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow measures cash left after running and investing in the business. Stock-based compensation can make that cash flow look stronger because it pays employees with shares rather than immediate cash. Veeva recorded $472.7 million of stock-based compensation against $908.9 million of FY2026 net income. The cost appears through dilution: each existing share represents a smaller claim when more shares are issued. Veeva pays no dividend, so the investor depends on future earnings and cash per share."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "310.36"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "51.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "30.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.0%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings ratio uses an analyst's expected profit, not profit the company has already earned, so it may change."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "310.36"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "344.92 (+11%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "30.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 310.36,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "20%",
+      "values": [
+       "226.06 (-27%)",
+       "201.54 (-35%)",
+       "187.72 (-40%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "320.56 (+3%)",
+       "324.40 (+5%)",
+       "323.66 (+4%)"
+      ]
+     },
+     "Bull": {
+      "probability": "25%",
+      "values": [
+       "404.42 (+30%)",
+       "464.05 (+50%)",
+       "517.45 (+67%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "322.63 (+4%)",
+       "334.74 (+8%)",
+       "344.92 (+11%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/veev/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VEEV&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Veeva earnings: guidance and what to watch",
+   "meta_description": "Veeva’s next results are expected on November 25, 2026; guidance is raised, and paid AI production use is the key watchpoint.",
+   "opening": "Veeva’s next results are expected on November 25, 2026. Watch whether AI and newer products reach paid production use.",
+   "closing": "The full memo also explains Veeva’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has Veeva guided for the year?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the year ending January 2027, management guides to total revenue of **$3,682–$3,687 million** and subscription revenue growth of **15.0%**. It raised that outlook after both the first and second quarters, following a strong first half."
+      },
+      {
+       "n": 178,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also guides to **$1,640 million** of non-GAAP operating income and **$1,600 million** of non-GAAP operating cash flow. Non-GAAP figures remove selected costs, such as stock-based compensation, so investors should compare them with reported GAAP results."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Total revenues",
+        "Year to Jan 2027",
+        "3,682",
+        "3,687",
+        "Aug 26, 2026"
+       ],
+       [
+        "Non-GAAP operating income",
+        "Year to Jan 2027",
+        "1,640",
+        "1,640",
+        "Aug 26, 2026"
+       ],
+       [
+        "Non-GAAP Operating Cash Flow",
+        "Year to Jan 2027",
+        "1,600",
+        "1,600",
+        "Aug 26, 2026"
+       ],
+       [
+        "Subscription revenue growth",
+        "Year to Jan 2027",
+        "15.0%",
+        "15.0%",
+        "Aug 26, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Veeva’s next results?",
+     "paragraphs": [
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Veeva’s Investor Day is scheduled for **November 5, 2026**. Management should explain how product investments will produce customer outcomes, not merely add items to a product list."
+      },
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "That means interest alone is not enough. The useful evidence will be paying customers, production deployments, repeat usage, and a deployment pace that Veeva and its partners can support."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 25, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/veev/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VEEV&src=seo-earnings"
+  }
+ },
+ "short_name": "Veeva",
+ "first_memo_date": "2026-10-18T18:13:16Z"
+}

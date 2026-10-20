@@ -1,0 +1,786 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "NG.L",
+ "slug": "ng-l",
+ "company": "National Grid plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-12T19:40:56Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 1164.5,
+ "price_date": "2026-10-12T17:18:07Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 267,
+  "tables": 27,
+  "words": 17835,
+  "sources": 219
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "National Grid plc is an energy-infrastructure company: it owns networks that carry electricity and gas, and it earns mainly by charging for dependable access to them. Its cash flow is easier to understand if you separate the regulated networks from the projects around them, then follow who pays, what gets passed through and what gets invested."
+ },
+ "sources": [
+  {
+   "title": "Annual Report 2025/26, p. 91",
+   "url": "https://data.fca.org.uk/artefacts/NSM/DirectUpload/NI-000146088/NI-000146088.pdf"
+  },
+  {
+   "title": "3 June notice",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/96c867a9-6df8-4ff6-aa60-959b1da45165.html"
+  },
+  {
+   "title": "delayed notice",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/abd17ae5-7936-4b9d-ba42-eb08a6ed541a.html"
+  }
+ ],
+ "rivals": [
+  "PPL",
+  "DUK",
+  "AEP",
+  "D",
+  "SO",
+  "XEL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "National Grid stock forecast",
+   "meta_description": "National Grid stock forecast: the weighted price reaches 1318.29 GBp in October 2029, while funding and delivery remain uncertain.",
+   "opening": "National Grid's weighted price is 1118.86 GBp in October 2027 and 1318.29 GBp in October 2029. It hinges on approvals, delivery and asset recognition.",
+   "closing": "The full memo also explains National Grid's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could National Grid's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is 1118.86 GBp in October 2027, 1212.82 GBp in October 2028 and 1318.29 GBp in October 2029. Including dividends, those outcomes represent returns of 0%, 13% and 26% from today’s 1164.50 GBp. By October 2029, the range is wide: 782.89 GBp in the bear case to 1864.75 GBp in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per NG.L share at each date; in brackets the return since today's 1164.50, dividends included",
+      "caption": "What the shares could be worth (GBp per NG.L share at each date; in brackets the return since today's 1164.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "885.56 (-20 %)",
+        "834.86 (-20 %)",
+        "782.89 (-20 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "1157.47 (+4 %)",
+        "1275.85 (+18 %)",
+        "1404.76 (+34 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "1353.21 (+21 %)",
+        "1590.67 (+45 %)",
+        "1864.75 (+74 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1118.86 (+0 %)",
+        "1212.82 (+13 %)",
+        "1318.29 (+26 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for National Grid, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The starting point is FY2026 adjusted net income of £2,892m, excluding the £489m disposal gain. The record is uneven: adjusted net income fell from £3,100m in FY2024 to £2,615m in FY2025 before recovering. The base case applies 8.5% annual growth. It reaches £3,268m in October 2027 and £3,846m in October 2029. The middle figure is £3,545m. This is consistent with the stated 8–10% EPS ambition, while the £13bn FY2027 investment plan and 10% asset-growth target support the regulated growth thesis. The bear case applies 3% growth, reaching £3,023m and then £3,208m, because negative free cash flow and higher finance costs could delay returns. Its middle figure is £3,113m. The bull case applies 12% growth, reaching £3,427m and £4,363m. Its middle figure is £3,867m, requiring approvals, delivery and asset recognition to outperform together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does National Grid really make?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash capital spending left free cash flow deeply negative. Treating share-based pay as an economic cost makes “real free cash flow” weaker still, because the award dilutes shareholders even though it is not another cash payment. This deficit does not prove that network investment is uneconomic: NGET’s asset-health programme alone totalled about £1.7 billion across RIIO-T2, the UK transmission price-control period. It does show that dividends and expansion require financing beyond internally generated cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "£ millions",
+      "caption": "Follow the money: real free cash flow (£ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "7,829",
+        "6,808",
+        "6,939",
+        "6,343",
+        "5,490"
+       ],
+       [
+        "− Capital spending",
+        "10,575",
+        "9,306",
+        "7,453",
+        "6,892",
+        "5,544"
+       ],
+       [
+        "**= Free cash flow**",
+        "-4,823",
+        "-4,548",
+        "-2,259",
+        "-2,134",
+        "-1,224"
+       ],
+       [
+        "− Stock pay",
+        "45",
+        "37",
+        "37",
+        "48",
+        "38"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-4,868",
+        "-4,585",
+        "-2,296",
+        "-2,182",
+        "-1,262"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-27.5%",
+        "-24.9%",
+        "-11.6%",
+        "-10.1%",
+        "-6.8%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for National Grid today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Market value is the shareholders’ claim; enterprise value adds lenders’ claim and subtracts cash. Think of a house bought with a mortgage: the house is the whole asset, but the owner’s equity is what remains after the lender’s claim. At 1164.50p on 12 October 2026, National Grid’s market value was £58,538 million. Enterprise value was £101,572 million. Net debt was £44,160 million at 31 March 2026, measured on a different date and under the company’s own definition."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; share price and per share in pence",
+      "caption": "What an investor pays today (£ millions; share price and per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "1164.50"
+       ],
+       [
+        "Market value (calculated)",
+        "58,538"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "101,572"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-8.2%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-8.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "1164.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1318.29 (+26 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-8.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "11.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 11.645,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "885.56 (-20 %)",
+       "834.86 (-20 %)",
+       "782.89 (-20 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "1157.47 (+4 %)",
+       "1275.85 (+18 %)",
+       "1404.76 (+34 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "1353.21 (+21 %)",
+       "1590.67 (+45 %)",
+       "1864.75 (+74 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1118.86 (+0 %)",
+       "1212.82 (+13 %)",
+       "1318.29 (+26 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ng-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NG.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "National Grid dividend: cash cover and yield",
+   "meta_description": "National Grid pays a dividend, but negative free cash flow means coverage depends on financing, investment delivery and regulatory recovery.",
+   "opening": "National Grid’s latest dividend is £0.4849 per share, while free cash flow was negative in every year across the five years ending March 2026. In FY2026, free cash flow was -£4,823 million and dividends paid were £1,623 million, so free cash flow did not cover the dividend.",
+   "closing": "The full National Grid memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does National Grid pay per share?",
+     "paragraphs": [],
+     "table": {
+      "title": "What one share gets",
+      "unit": "pence",
+      "caption": "What one share gets (pence)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "32.65",
+        "32.33",
+        "42.86",
+        "40.45",
+        "23.59"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "129.67",
+        "128.50",
+        "99.23",
+        "94.16",
+        "54.90"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does National Grid cover its dividend with cash?",
+     "paragraphs": [
+      {
+       "n": 85,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating needs and capital spending under the company’s definition. It was negative in every year across the five years ending March 2026. The annual deficit reached £4,823 million in FY2026, and dividends paid added £1,623 million to the funding gap. There were no share buybacks."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "£ millions",
+      "caption": "Follow the money: where the free cash flow went (£ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-4,823",
+        "-4,548",
+        "-2,259",
+        "-2,134",
+        "-1,224"
+       ],
+       [
+        "− Dividends paid",
+        "1,623",
+        "1,529",
+        "1,718",
+        "1,607",
+        "922"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "6,446",
+        "6,077",
+        "3,977",
+        "3,741",
+        "2,146"
+       ],
+       [
+        "+ Debt issued",
+        "4,172",
+        "4,162",
+        "6,107",
+        "11,908",
+        "12,347"
+       ],
+       [
+        "− Debt repaid",
+        "5,186",
+        "2,861",
+        "1,701",
+        "15,771",
+        "1,272"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change National Grid’s dividend?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow modestly because policy targets CPIH-linked increases, while funding pressure limits the forecast. The base case starts from the latest £0.4849 DPS and grows at 2.5%. It reaches £0.4970 in 2027 and £0.5223 in 2029. The middle figure is £0.5095. The bear case freezes DPS at £0.4849 through 2028 and reaches £0.4946 in 2029. The bull case reaches £0.5019 in 2027 and £0.5377 in 2029, with £0.5195 in between. Negative free cash flow and a planned £6bn increase in net debt explain the restrained assumptions."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; GBP millions, per share in GBP, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "3,268 (3,023 / 3,427)",
+        "3,545 (3,113 / 3,867)",
+        "3,846 (3,208 / 4,363)"
+       ],
+       [
+        "Shares (millions)",
+        "5,082 (5,120 / 5,065)",
+        "5,140 (5,220 / 5,105)",
+        "5,202 (5,327 / 5,147)"
+       ],
+       [
+        "Dividends per share",
+        "0.50 (0.48 / 0.50)",
+        "0.51 (0.48 / 0.52)",
+        "0.52 (0.49 / 0.54)"
+       ],
+       [
+        "Price to earnings",
+        "18.00 (15.00 / 20.00)",
+        "18.50 (14.00 / 21.00)",
+        "19.00 (13.00 / 22.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is National Grid’s dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Market value is the shareholders’ claim; enterprise value adds lenders’ claim and subtracts cash. Think of a house bought with a mortgage: the house is the whole asset, but the owner’s equity is what remains after the lender’s claim. At 1164.50p on 12 October 2026, National Grid’s market value was £58,538 million. Enterprise value was £101,572 million. Net debt was £44,160 million at 31 March 2026, measured on a different date and under the company’s own definition."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "32.65"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-8.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-8.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "pence",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "23.59",
+      "40.45",
+      "42.86",
+      "32.33",
+      "32.65"
+     ],
+     "Real free cash flow per share": [
+      "-32.28",
+      "-54.92",
+      "-57.29",
+      "-96.95",
+      "-97.93"
+     ],
+     "Free cash flow per share": [
+      "-31.31",
+      "-53.71",
+      "-56.36",
+      "-96.17",
+      "-97.02"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ng-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NG.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "National Grid earnings date and guidance",
+   "meta_description": "National Grid's next results are expected on November 5, 2026, with guidance and cash generation to watch.",
+   "opening": "National Grid's next results are expected on November 5, 2026. Watch whether recurring network earnings turn into cash generation.",
+   "closing": "The full memo also covers National Grid's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has National Grid guided for FY27?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For FY27, UK Electricity Transmission is expected to add £850 million of underlying net revenue. Depreciation rises £80 million, while costs rise £50 million. Group net finance costs are also expected to rise £200 million, so more network revenue must first absorb higher equipment and borrowing costs."
+      },
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The new framework targets 8–10% annual compound EPS growth from FY26’s 78.0p through March 2031. The earlier framework targeted 6–8% from the FY25 baseline, so investors need the bridge from network returns, financing, tax and share count—not just the higher percentage."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "UK Electricity Transmission, Underlying net revenue increase (£ millions)",
+        "Year to Mar 2027",
+        "",
+        "850",
+        "14 May 2026"
+       ],
+       [
+        "UK Electricity Transmission, Depreciation increase (£ millions)",
+        "Year to Mar 2027",
+        "80",
+        "80",
+        "14 May 2026"
+       ],
+       [
+        "UK Electricity Transmission, Costs increase (£ millions)",
+        "Year to Mar 2027",
+        "50",
+        "50",
+        "14 May 2026"
+       ],
+       [
+        "Net finance costs increase (£ millions)",
+        "Year to Mar 2027",
+        "200",
+        "200",
+        "14 May 2026"
+       ],
+       [
+        "Group capital investment (£ billions)",
+        "Year to Mar 2027",
+        "",
+        "13",
+        "14 May 2026"
+       ],
+       [
+        "Underlying EPS growth (%)",
+        "Year to Mar 2027",
+        "15.0%",
+        "",
+        "14 May 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What were National Grid's last eight reported periods?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "The 5 October update offered a mixed signal: regulated businesses were in line with expectations, but about £130 million of upside included one-off fair-value gains from National Grid Partners transactions. The accounts therefore point to a company with genuine regulated growth, improving earnings and strong assets—but also negative free cash flow, rising financing demands and a continuing gap between money invested and useful capacity delivered."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "£ millions; per share in pence",
+      "caption": "The last eight reported periods (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "6 months to Mar 2026",
+       "6 months to Sep 2025",
+       "6 months to Mar 2025",
+       "6 months to Sep 2024",
+       "6 months to Mar 2024",
+       "6 months to Sep 2023",
+       "6 months to Mar 2023",
+       "6 months to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "10,622",
+        "7,065",
+        "10,417",
+        "7,961",
+        "11,361",
+        "8,489",
+        "12,215",
+        "9,444"
+       ],
+       [
+        "Operating income",
+        "3,905",
+        "1,526",
+        "3,625",
+        "1,309",
+        "2,490",
+        "1,985",
+        "2,640",
+        "2,239"
+       ],
+       [
+        "Net income",
+        "2,624",
+        "617",
+        "2,255",
+        "571",
+        "1,153",
+        "1,063",
+        "1,495",
+        "1,219"
+       ],
+       [
+        "EPS, diluted",
+        "52.70",
+        "12.50",
+        "47.20",
+        "12.60",
+        "28.70",
+        "26.60",
+        "37.59",
+        "30.71"
+       ],
+       [
+        "Cash from operations",
+        "4,203",
+        "3,626",
+        "4,196",
+        "2,612",
+        "4,078",
+        "2,861",
+        "4,071",
+        "2,272"
+       ],
+       [
+        "**= Free cash flow**",
+        "-2,673",
+        "-2,150",
+        "-1,855",
+        "-2,693",
+        "-801",
+        "-1,458",
+        "-177",
+        "-1,957"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in National Grid's next results?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is 5 November 2026, when National Grid reports its September half-year. The important evidence will be the composition of earnings: recurring network operations, investment revaluations and cash generation. Because underlying EPS normally favours the second half, doubling the interim figure would mislead."
+      },
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "FERC, the US federal transmission regulator, reduced the base return on equity in New England to 9.57% and ordered historical refunds with interest. National Grid plans to challenge that decision. Separately, transmission owners requested a forward-looking return of 11.39%. The refund concerns money already charged; the proposed return concerns what future investment may earn. One does not cancel the other."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/ng-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NG.L&src=seo-earnings"
+  }
+ },
+ "short_name": "National Grid",
+ "first_memo_date": "2026-10-12T19:40:56Z"
+}

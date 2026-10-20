@@ -1,0 +1,801 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "ITW",
+ "slug": "itw",
+ "company": "Illinois Tool Works Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T00:10:17Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 272.28,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 239,
+  "tables": 27,
+  "words": 16199,
+  "sources": 160
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Illinois Tool Works is a global manufacturer of specialized industrial products and equipment. It earns money by selling those products and services for more than it costs to make, support, and deliver them."
+ },
+ "sources": [
+  {
+   "title": "ITW’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm"
+  },
+  {
+   "title": "ITW 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982625000007/itw-20241231.htm"
+  },
+  {
+   "title": "Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000049/itw-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "LECO",
+  "NDSN",
+  "FUL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "ITW stock forecast",
+   "meta_description": "ITW’s weighted forecast points to modest upside, while bear and bull cases leave a wide range of possible outcomes.",
+   "opening": "ITW’s weighted forecast points to $280.55 in October 2027. It hinges on durable growth, strong margins, and cash conversion.",
+   "closing": "The full memo also explains ITW’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could ITW’s shares go?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted path reaches $280.55 in October 2027, a 6% return including dividends. It reaches $284.48 in October 2028, a 10% return including dividends. By October 2029, it reaches $300.14, a 19% return including dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 272.28, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 272.28, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "175.44 (-33 %)",
+        "119.52 (-51 %)",
+        "80.06 (-63 %)"
+       ],
+       [
+        "Base",
+        "57 %",
+        "300.79 (+13 %)",
+        "302.09 (+17 %)",
+        "302.48 (+20 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "399.89 (+50 %)",
+        "525.44 (+99 %)",
+        "702.08 (+167 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "280.55 (+6 %)",
+        "284.48 (+10 %)",
+        "300.14 (+19 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving each case more or less influence based on its probability, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What could go right or wrong for ITW?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires the 2026 acceleration to fade while customers defer equipment and construction spending remains weak. Tariffs or raw-material inflation could arrive before price recovery, and CBI could fail to replace simplified product lines. Cash conversion would remain below plan, so dividends and buybacks would pressure equity and debt would compress the multiple. The price falls from $175.44 in 2027 to $80.06 in 2029. Its 28% probability reflects the raised outlook's dependence on a second-half acceleration and the first-half cash shortfall."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires repeat CBI purchases across segments, recovery beyond electronics and welding, timely pricing, and stronger cash conversion. The price rises from $399.89 in 2027 to $702.08 in 2029. Its 15% probability reflects a credible growth route that public disclosure has not yet proved durable."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does ITW really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The memo’s “real” free cash flow subtracts stock compensation. Share-based pay does not require immediate cash, but it is still a cost to owners because it dilutes their claim. Second-quarter 2026 free-cash-flow conversion was 77%, which ITW described as seasonal; the full year matters more than one quarter."
+      },
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the cash left after operations and spending on new equipment and facilities. It differs from accounting profit because a sale may be recorded before the customer pays, while inventory may absorb cash before it is sold. In 2025, ITW reported $3.126 billion of operating cash flow. It spent $419 million on plant and equipment, leaving $2.707 billion of free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,126",
+        "3,281",
+        "3,539",
+        "2,348",
+        "2,557"
+       ],
+       [
+        "− Capital spending",
+        "419",
+        "437",
+        "455",
+        "412",
+        "296"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,707",
+        "2,844",
+        "3,084",
+        "1,936",
+        "2,261"
+       ],
+       [
+        "− Stock pay",
+        "69",
+        "61",
+        "69",
+        "63",
+        "53"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,638",
+        "2,783",
+        "3,015",
+        "1,873",
+        "2,208"
+       ]
+      ],
+      "note": "The company’s own free cash flow matches ours, but real free cash flow is lower because we also subtract shares given to employees as pay, which reduce shareholders’ ownership even though no cash leaves."
+     }
+    },
+    {
+     "heading": "What does an investor pay for ITW today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "272.28"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "24.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "22.2x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "5.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.4%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts’ guesses about future profit, so it may be wrong."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "272.28"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "300.14 (+19 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "22.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 272.28,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "175.44 (-33 %)",
+       "119.52 (-51 %)",
+       "80.06 (-63 %)"
+      ]
+     },
+     "Base": {
+      "probability": "57 %",
+      "values": [
+       "300.79 (+13 %)",
+       "302.09 (+17 %)",
+       "302.48 (+20 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "399.89 (+50 %)",
+       "525.44 (+99 %)",
+       "702.08 (+167 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "280.55 (+6 %)",
+       "284.48 (+10 %)",
+       "300.14 (+19 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/itw/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ITW&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "ITW dividend",
+   "meta_description": "ITW pays a quarterly dividend, while shareholder payments have exceeded annual free cash flow; the page also shows its yield, plans, and risks.",
+   "opening": "ITW pays a quarterly dividend of $1.72, and its shareholder payments exceeded annual free cash flow in every year shown. Recurring cash therefore did not cover all shareholder payments in every year shown.",
+   "closing": "The full memo also answers how ITW makes money, compares with rivals, assesses management, and weighs its risks.",
+   "blocks": [
+    {
+     "heading": "How much does ITW pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 72,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The 2026 policy continues the approach. The board authorized up to $6 billion of repurchases and raised the dividend by 7%. The quarterly dividend became $1.72. The central question is not whether ITW can distribute cash, but whether those distributions are covered by recurring cash after the business funds its future."
+      },
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend begins from the $6.88 annualized run rate after the latest $1.72 quarterly payment. The base case applies roughly 7% annual increases, reaching $8.43 per share in 2029, because dividends have risen from $4.72 in 2021 to $6.22 in 2025. The bear case holds the rate initially and then grows it by 2%, while the bull case applies 9% growth. The restraint reflects first-half free cash flow of $1.159 billion against $1.583 billion of net income."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "9.26",
+        "9.55",
+        "10.16",
+        "6.23",
+        "7.15"
+       ],
+       [
+        "− Dividends paid, per share",
+        "6.11",
+        "5.69",
+        "5.32",
+        "4.96",
+        "4.62"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "1.98",
+        "1.18",
+        "0.10",
+        "4.36",
+        "0.64"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it does not subtract shares given to employees as pay; we subtract them."
+     }
+    },
+    {
+     "heading": "Is ITW's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 67,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "ITW’s shareholder payments exceeded its annual free cash flow in every year shown."
+      },
+      {
+       "n": 68,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after normal operations and spending on plant and equipment. It is the pool a company can use for dividends, buybacks, acquisitions, and debt repayment. If payouts exceed that pool, the company must use cash already held, sell assets, or borrow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,707",
+        "2,844",
+        "3,084",
+        "1,936",
+        "2,261"
+       ],
+       [
+        "− Dividends paid",
+        "1,785",
+        "1,695",
+        "1,615",
+        "1,542",
+        "1,463"
+       ],
+       [
+        "− Share buybacks",
+        "1,500",
+        "1,500",
+        "1,500",
+        "1,750",
+        "1,000"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "578",
+        "351",
+        "31",
+        "1,356",
+        "202"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "121.4%",
+        "112.3%",
+        "101.0%",
+        "170.0%",
+        "108.9%"
+       ]
+      ],
+      "note": "The company paid shareholders more cash than it generated, so it had to use savings or borrow money to cover the difference."
+     }
+    },
+    {
+     "heading": "What could change ITW's dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Net asset value",
+        "3,364 (2,464 / 3,986)",
+        "3,464 (1,844 / 4,806)",
+        "3,564 (1,374 / 5,926)"
+       ],
+       [
+        "Dividends per share",
+        "7.36 (6.88 / 7.50)",
+        "7.88 (7.02 / 8.18)",
+        "8.43 (7.16 / 8.92)"
+       ],
+       [
+        "Price to net asset value",
+        "25.00 (20.00 / 28.00)",
+        "24.00 (18.00 / 30.00)",
+        "23.00 (16.00 / 32.00)"
+       ]
+      ],
+      "note": "Price to net asset value shows how many times the value of the company's assets per share investors are paying for one share."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "6.11"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "4.62",
+      "4.96",
+      "5.32",
+      "5.69",
+      "6.11"
+     ],
+     "Real free cash flow per share": [
+      "6.98",
+      "6.03",
+      "9.93",
+      "9.35",
+      "9.02"
+     ],
+     "Free cash flow per share": [
+      "7.15",
+      "6.23",
+      "10.16",
+      "9.55",
+      "9.26"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/itw/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ITW&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "ITW earnings date",
+   "meta_description": "ITW reports on October 27, 2026; management expects growth, margins, and cash conversion to arrive together.",
+   "opening": "ITW is scheduled to report results on October 27, 2026. Watch whether growth broadens beyond capex-sensitive businesses.",
+   "closing": "The full ITW memo also answers questions about its business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "What has ITW guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s raised 2026 outlook depends on growth and profitability arriving together. The July 28 forecast calls for GAAP earnings per share of $11.35–$11.55, with midpoint growth of 9% and implied second-half organic growth of 4.5%. GAAP earnings per share are profit per share under standard accounting rules; organic growth excludes acquisitions and currency effects."
+      },
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also expects companywide initiatives to add at least one percentage point to operating margin. A basis point is one-hundredth of a percentage point. Simplifying products, improving purchasing, and reducing overhead can make more of each new sales dollar become operating profit; under ITW’s incremental-margin assumption, about 40 cents of an additional dollar would do so. ITW also expects free cash flow to exceed net income, so the next test is whether sales, margins, and cash conversion improve together."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "GAAP EPS",
+        "Year to Dec 2026",
+        "11.35",
+        "11.55",
+        "Jul 28, 2026"
+       ],
+       [
+        "GAAP EPS growth",
+        "Year to Dec 2026",
+        "7.0%",
+        "11.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Revenue",
+        "Year to Dec 2026",
+        "16,700",
+        "16,800",
+        "Jul 28, 2026"
+       ],
+       [
+        "organic growth",
+        "Year to Dec 2026",
+        "3.0%",
+        "4.0%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Operating margin",
+        "Year to Dec 2026",
+        "26.5%",
+        "27.5%",
+        "Jul 28, 2026"
+       ],
+       [
+        "Free cash flow conversion to net income",
+        "Year to Dec 2026",
+        "100.0%",
+        "",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "The company's after-tax return on invested capital is at least 30 percent, not exactly 30 percent, because no upper limit was given."
+     }
+    },
+    {
+     "heading": "What has ITW's revenue and profit trend been over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 114,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "The longer pattern is uneven. Revenue rose sharply earlier in the period, then contracted before edging higher again. The segment split matters because Automotive OEM, Welding, Food Equipment and Specialty Products grew organically in 2025, while Construction Products, Test & Measurement and Electronics, and Polymers & Fluids declined."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,301",
+        "4,016",
+        "4,093",
+        "4,059",
+        "4,053",
+        "3,839",
+        "3,932",
+        "3,966"
+       ],
+       [
+        "Operating income",
+        "1,147",
+        "1,020",
+        "1,085",
+        "1,112",
+        "1,068",
+        "951",
+        "1,031",
+        "1,052"
+       ],
+       [
+        "Net income",
+        "815",
+        "768",
+        "790",
+        "821",
+        "755",
+        "700",
+        "750",
+        "1,160"
+       ],
+       [
+        "EPS, diluted",
+        "2.84",
+        "2.66",
+        "2.72",
+        "2.81",
+        "2.58",
+        "2.38",
+        "2.54",
+        "3.91"
+       ],
+       [
+        "**= Free cash flow**",
+        "631",
+        "528",
+        "858",
+        "904",
+        "449",
+        "496",
+        "996",
+        "783"
+       ]
+      ],
+      "note": "September 2024 net income is unusually high because it includes a one-time gain from selling an investment, not just profit from the company's normal business."
+     }
+    },
+    {
+     "heading": "What should people watch in ITW's next results?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next major test is whether ITW’s second-half growth appears broadly and produces cash. ITW is scheduled to report third-quarter results on October 27, 2026. Investors should look beyond total sales to see whether demand spreads beyond capex-sensitive businesses, while checking whether margins and cash conversion hold."
+      },
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The main takeaway is simple: ITW’s plan is financially possible, but only if growth broadens, margins remain strong, and operating cash catches up with shareholder commitments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,301"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.84"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,966",
+      "3,932",
+      "3,839",
+      "4,053",
+      "4,059",
+      "4,093",
+      "4,016",
+      "4,301"
+     ],
+     "EPS, diluted": [
+      "3.91",
+      "2.54",
+      "2.38",
+      "2.58",
+      "2.81",
+      "2.72",
+      "2.66",
+      "2.84"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/itw/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ITW&src=seo-earnings"
+  }
+ },
+ "short_name": "ITW",
+ "first_memo_date": "2026-10-18T00:10:17Z"
+}

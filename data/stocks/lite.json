@@ -1,0 +1,580 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "LITE",
+ "slug": "lite",
+ "company": "Lumentum Holdings Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T20:48:45Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 832.41,
+ "price_date": "2026-10-16T19:35:28Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 258,
+  "tables": 27,
+  "words": 17119,
+  "sources": 222
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Lumentum Holdings Inc. sells the lasers and optical hardware that move information through fiber networks, while also selling lasers that help machines make things and sensors see. Its business is easiest to understand by following a product from the light it creates to the customer who buys it, and then following the dollar back through factories, suppliers and investment."
+ },
+ "sources": [
+  {
+   "title": "FY2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm"
+  },
+  {
+   "title": "revenue recognition",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828025040830/lite-20250628.htm"
+  },
+  {
+   "title": "Fiscal 2024 Form 10-K, Notes 4 and 9",
+   "url": "https://www.sec.gov/Archives/edgar/data/1633978/000162828024038024/lite-20240629.htm"
+  }
+ ],
+ "rivals": [
+  "IPGP",
+  "NOK",
+  "CSCO",
+  "MRVL",
+  "AVGO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Lumentum stock forecast",
+   "meta_description": "Lumentum stock forecast with scenario prices, cash generation, valuation, and the business drivers behind each case.",
+   "opening": "Lumentum’s weighted value is $728.31 in October 2027, a 13% loss. It hinges on continued earnings growth, profitable production ramps and cash conversion as the valuation multiple compresses.",
+   "closing": "The full memo also answers how Lumentum’s business, rivals, management and risks shape the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Lumentum’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted value is $728.31 in October 2027, a 13% loss. It is $813.14 in October 2029, a 2% loss, with dividends included. The forecast assigns 30% probability to bear and 50% to base. Bull has 20% probability."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 832.41, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 832.41, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30%",
+        "406.84 (-51%)",
+        "237.76 (-71%)",
+        "251.09 (-70%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "791.07 (-5%)",
+        "869.09 (+4%)",
+        "900.59 (+8%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "1053.62 (+27%)",
+        "1305.56 (+57%)",
+        "1437.60 (+73%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "728.31 (-13%)",
+        "766.99 (-8%)",
+        "813.14 (-2%)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more weight to the bear and base cases than to the bull case, based on their probabilities."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Lumentum?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case assumes AI demand continues, 1.6T products and optical switches add volume, and Greensboro begins contributing after qualification. Investment and working capital limit cash conversion, while valuation compression offsets much of the earnings growth. The shares move from $791.07 to $900.59. The 50% probability reflects the balance between strong guidance and execution risks."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear row falls to $2,014M and then $1,410M before recovering to $1,581M, reflecting an inventory correction and lower utilization. The bull row reaches $2,646M and then $3,440M before ending at $4,085M, requiring sustained AI demand, 1.6T and switch adoption, and better yields. Recent estimate beats and the R300’s more-than-$100M quarterly run rate support the upside, but the historical EBITDA fall to $95.1M shows why the bear remains credible."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Lumentum really make?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation adds a second reading. It does not appear as another cash payment in the cash-flow statement, but it compensates employees with ownership. Subtracting it from free cash flow therefore produces a more demanding measure of the cash return available to existing shareholders. On that basis, the latest recovery looks much less generous, and the five-year cumulative picture is weaker still."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jul 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "**= Free cash flow**",
+        "300.1",
+        "-104.7",
+        "-112.3",
+        "51.3",
+        "368.1"
+       ],
+       [
+        "− Stock pay",
+        "170.2",
+        "177.2",
+        "128.8",
+        "148.4",
+        "103.1"
+       ],
+       [
+        "**= Real free cash flow**",
+        "129.9",
+        "-281.9",
+        "-241.1",
+        "-97.1",
+        "265.0"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "10.0%",
+        "-6.4%",
+        "-8.3%",
+        "2.9%",
+        "21.5%"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "4.3%",
+        "-17.1%",
+        "-17.7%",
+        "-5.5%",
+        "15.5%"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though it uses no cash because giving employees shares reduces what each existing shareholder owns."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Lumentum today?",
+     "paragraphs": [
+      {
+       "n": 179,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Lumentum’s price assumes that strong optical demand will become sustained profit and cash flow. Its equity value is $77,796.4 million, while enterprise value—the value of the operating business after accounting for debt and cash—is $76,695.4 million. Yet investors are paying 25.4 times trailing revenue, before the company pays its workers, factories, and suppliers."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "832.41"
+       ],
+       [
+        "Market value (calculated)",
+        "77,796.4"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "76,695.4"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "38.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.2%"
+       ]
+      ],
+      "note": "The last-12-month price-to-earnings measure is not meaningful because the company lost money over that period."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "832.41"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "813.14 (-2%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "38.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 832.41,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30%",
+      "values": [
+       "406.84 (-51%)",
+       "237.76 (-71%)",
+       "251.09 (-70%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "791.07 (-5%)",
+       "869.09 (+4%)",
+       "900.59 (+8%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "1053.62 (+27%)",
+       "1305.56 (+57%)",
+       "1437.60 (+73%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "728.31 (-13%)",
+       "766.99 (-8%)",
+       "813.14 (-2%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/lite/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LITE&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Lumentum earnings date and guidance",
+   "meta_description": "Lumentum reports on November 5, 2026; guidance covers revenue, margin and diluted EPS, while the key watch is profitable shipments and cash.",
+   "opening": "Lumentum's next results are expected on November 5, 2026. The key watch is whether Lumentum's revenue, margin and cash show profitable progress.",
+   "closing": "The full memo also answers more about Lumentum's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Lumentum guided for the next quarter?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s August 11, 2026 guidance calls for September-quarter revenue of $1,225 million to $1,275 million. It calls for a 39.5%–40.5% non-GAAP operating margin. Diluted EPS is $4.05–$4.35. The guidance is based on 102.0 million diluted shares, and its revenue midpoint is above the $1.25 billion quarterly milestone."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Net revenue",
+        "Quarter to Sep 2026",
+        "1,225",
+        "1,275",
+        "Aug 11, 2026"
+       ],
+       [
+        "Non-GAAP operating margin",
+        "Quarter to Sep 2026",
+        "39.5%",
+        "40.5%",
+        "Aug 11, 2026"
+       ],
+       [
+        "Non-GAAP diluted net income per share",
+        "Quarter to Sep 2026",
+        "4.05",
+        "4.35",
+        "Aug 11, 2026"
+       ],
+       [
+        "Diluted Shares – M",
+        "Quarter to Sep 2026",
+        "102.0",
+        "102.0",
+        "Aug 11, 2026"
+       ],
+       [
+        "effective tax rate",
+        "Quarter to Sep 2026",
+        "16.5%",
+        "16.5%",
+        "Aug 11, 2026"
+       ]
+      ],
+      "note": "“Non-GAAP” means the company has left out some costs using its own adjusted method, so these figures are not the standard accounting results."
+     }
+    },
+    {
+     "heading": "Has Lumentum kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is tangible delivery to credit. A prior forecast of more than $600 million for the June quarter was followed by actual revenue of $1,006.3 million. Management also said shipments of 1.6-terabit transceivers had begun as planned. A transceiver sends and receives data by converting electrical signals into light and back again; the 1.6T example combines eight 200-gigabit-per-second lanes. Capacity matters because demand helps shareholders only if Lumentum can build reliable modules on time."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Lumentum's results trend?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose in every quarter shown across the eight-quarter sequence. That matters more than one record quarter because it shows acceleration rather than a single shipment spike. Components and Systems both contributed, so the improvement was broader than one product launch."
+      },
+      {
+       "n": 173,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Profit followed shipments. Gross margin improved sharply from the prior-year quarter, and operating income moved from a loss to a substantial profit. Management reported record 800G transceiver shipments and the start of 1.6T production, alongside better manufacturing yield and utilization. The current earnings base therefore rests mainly on products already shipping at scale, while the faster generation is still entering production."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,006.3",
+        "808.4",
+        "665.5",
+        "533.8",
+        "480.7",
+        "425.2",
+        "402.2",
+        "336.9"
+       ],
+       [
+        "Gross margin",
+        "47.4%",
+        "44.2%",
+        "36.1%",
+        "34.0%",
+        "33.3%",
+        "28.8%",
+        "24.8%",
+        "23.1%"
+       ],
+       [
+        "Operating income",
+        "279.3",
+        "174.5",
+        "64.3",
+        "6.7",
+        "-8.4",
+        "-37.7",
+        "-51.6",
+        "-82.4"
+       ],
+       [
+        "Net income",
+        "-7,161.7",
+        "144.2",
+        "78.2",
+        "4.2",
+        "213.3",
+        "-44.1",
+        "-60.9",
+        "-82.4"
+       ],
+       [
+        "EPS, diluted",
+        "-84.65",
+        "1.50",
+        "0.89",
+        "0.05",
+        "2.96",
+        "-0.64",
+        "-0.88",
+        "-1.21"
+       ],
+       [
+        "**= Free cash flow**",
+        "196.2",
+        "79.1",
+        "43.1",
+        "-18.3",
+        "10.1",
+        "-64.4",
+        "-15.9",
+        "-34.5"
+       ]
+      ],
+      "note": "The very large loss in June 2026 mainly comes from a noncash accounting charge for ending debt, so it does not mean the company paid out that much cash."
+     }
+    },
+    {
+     "heading": "What should I watch in Lumentum's next results?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Lumentum is scheduled to report the September quarter on November 5, 2026. Revenue will show whether the accelerated target arrived, while operating margin will show whether manufacturing economics kept pace. Cash flow and capital spending will reveal how much of that progress can finance the following quarter."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "1,006.3"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-84.65"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "336.9",
+      "402.2",
+      "425.2",
+      "480.7",
+      "533.8",
+      "665.5",
+      "808.4",
+      "1,006.3"
+     ],
+     "EPS, diluted": [
+      "-1.21",
+      "-0.88",
+      "-0.64",
+      "2.96",
+      "0.05",
+      "0.89",
+      "1.50",
+      "-84.65"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/lite/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=LITE&src=seo-earnings"
+  }
+ },
+ "short_name": "Lumentum",
+ "first_memo_date": "2026-10-16T20:48:45Z"
+}

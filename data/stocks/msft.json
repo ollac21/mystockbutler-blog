@@ -1,0 +1,813 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MSFT",
+ "slug": "msft",
+ "company": "Microsoft Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T00:00:40Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 522.61,
+ "price_date": "2026-10-08T20:00:01Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 250,
+  "tables": 28,
+  "words": 17813,
+  "sources": 355
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Microsoft sells the software people work in and the computing services that keep that work running. Its business turns customer access, usage and purchases into revenue, then spends to build, deliver and support them, so the central question is how much value remains after those costs."
+ },
+ "sources": [
+  {
+   "title": "FY27 reporting presentation",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-ex99_1.htm"
+  },
+  {
+   "title": "Earnings release — Q1 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118955/msft-ex99_1.htm"
+  }
+ ],
+ "rivals": [
+  "AMZN",
+  "GOOGL",
+  "AAPL",
+  "IBM",
+  "META",
+  "ORCL",
+  "CRM",
+  "ADBE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Microsoft stock forecast",
+   "meta_description": "Microsoft's scenarios peak in October 2027 before cash conversion and valuation normalize.",
+   "opening": "The weighted scenario is $519.25 in October 2027. It hinges on turning contracted demand into durable cash after infrastructure and replacement costs.",
+   "closing": "The full memo also explains Microsoft's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Microsoft's shares go?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Microsoft’s expected return is flat after one year, then negative as cash conversion and valuation normalize. The probability-weighted price is $519.25 in October 2027, essentially a 0% return including dividends. It falls to $426.73 in October 2028, a 17% loss. By October 2029 it reaches $392.64, a 22% loss."
+      },
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final bear-to-bull range is $276.06 to $478.85. Both outcomes sit below today’s $522.61. The bear case receives 30%; the base case receives 55%. The bull case receives 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 522.61, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 522.61, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "508.33 (-2 %)",
+        "350.90 (-31 %)",
+        "276.06 (-45 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "514.67 (-1 %)",
+        "453.26 (-12 %)",
+        "432.72 (-15 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "557.92 (+8 %)",
+        "481.08 (-6 %)",
+        "478.85 (-6 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "519.25 (+0 %)",
+        "426.73 (-17 %)",
+        "392.64 (-22 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Microsoft, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Cash conversion is the main constraint. The base margin dips to 14.0% before recovering to 15.0%. The bear falls to 8.0%, while the bull reaches 21.0%. The base reflects rising capital spending, including a $175 billion calendar-2026 guide, and management’s expectation that free cash flow remains positive but pressured. Roughly two-thirds of recent quarterly capital spending went to short-lived computing assets, so the bear assumes replacement costs outpace profitable usage."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Microsoft really make?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based pay requires another deduction when judging owner economics. Microsoft adds the non-cash expense back to operating cash flow, but shareholders bear dilution unless repurchases offset it. A free-cash-flow measure after stock compensation is therefore lower than Microsoft’s reported total. From July 1, 2026, longer estimated building lives and more operating-classified datacenter leases will further complicate comparisons."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Jun 2026",
+       "Year to Jun 2025",
+       "Year to Jun 2024",
+       "Year to Jun 2023",
+       "Year to Jun 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "182,935",
+        "136,162",
+        "118,548",
+        "87,582",
+        "89,035"
+       ],
+       [
+        "Capital spending",
+        "115,948",
+        "64,551",
+        "44,477",
+        "28,107",
+        "23,886"
+       ],
+       [
+        "Free cash flow",
+        "66,987",
+        "71,611",
+        "74,071",
+        "59,475",
+        "65,149"
+       ],
+       [
+        "Stock-based pay",
+        "12,405",
+        "11,974",
+        "10,734",
+        "9,611",
+        "7,502"
+       ],
+       [
+        "Real free cash flow (after stock pay)",
+        "54,582",
+        "59,637",
+        "63,337",
+        "49,864",
+        "57,647"
+       ],
+       [
+        "Real free cash flow per share",
+        "7.32",
+        "7.99",
+        "8.48",
+        "6.67",
+        "7.65"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Microsoft today?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow tests what remains after the business pays its running costs and buys equipment. Microsoft’s free-cash-flow yield was 1.7%. Operating cash flow was $182.935 billion. Property and equipment additions cost $115.948 billion, leaving $66.987 billion. Lease financing can make cash spending look lower temporarily, even though Microsoft still owes the payments."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 8, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "522.61"
+       ],
+       [
+        "Market value",
+        "3,880,664.33"
+       ],
+       [
+        "Enterprise value",
+        "3,910,709.33"
+       ],
+       [
+        "P/E, last 12 months",
+        "29.1x"
+       ],
+       [
+        "P/E, next 12 months",
+        "22.2x"
+       ],
+       [
+        "Free cash flow yield",
+        "1.7%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "522.61"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "392.64 (-22 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "22.2x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "29.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 522.61,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "508.33 (-2 %)",
+       "350.90 (-31 %)",
+       "276.06 (-45 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "514.67 (-1 %)",
+       "453.26 (-12 %)",
+       "432.72 (-15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "557.92 (+8 %)",
+       "481.08 (-6 %)",
+       "478.85 (-6 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "519.25 (+0 %)",
+       "426.73 (-17 %)",
+       "392.64 (-22 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/msft/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MSFT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Microsoft dividend",
+   "meta_description": "Microsoft's dividend, cash coverage, forecast changes and current yield in plain English.",
+   "opening": "Microsoft's dividend begins at $3.85 per share in the forecast, then grows from $4.23 to $4.94 in the base case. Real free cash flow was $54,582 million against $26,445 million of dividends paid, so the cash covered the dividend.",
+   "closing": "The full memo also explains Microsoft's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Microsoft pay per share?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend begins at $3.85 per share in every case because the forecast includes the declared $0.91 payment and three quarters at $0.98. The base then grows from $4.23 to $4.94, versus $4.16 to $4.67 in the bear and $4.31 to $5.22 in the bull. The base follows the latest 8% increase, supported by $54,582 million of real free cash flow against $26,445 million of dividends paid."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Jun 2026",
+       "Year to Jun 2025",
+       "Year to Jun 2024",
+       "Year to Jun 2023",
+       "Year to Jun 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "17.95",
+        "13.64",
+        "11.80",
+        "9.68",
+        "9.65"
+       ],
+       [
+        "Free cash flow per share",
+        "8.99",
+        "9.59",
+        "9.92",
+        "7.96",
+        "8.64"
+       ],
+       [
+        "Dividend per share",
+        "3.64",
+        "3.32",
+        "3.00",
+        "2.72",
+        "2.48"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Microsoft cover its dividend with cash?",
+     "paragraphs": [
+      {
+       "n": 92,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholders still received substantial cash. Over the five years, dividends totalled $110,233 million and repurchases totalled $112,886 million. But a buyback benefits each remaining owner only if Microsoft retires more shares than it issues to employees. Microsoft’s share count ended fiscal 2025 at 7,434 million, unchanged from where it began. Buying back shares can also destroy value if the company pays too much."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Jun 2026",
+       "Year to Jun 2025",
+       "Year to Jun 2024",
+       "Year to Jun 2023",
+       "Year to Jun 2022"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay)",
+        "54,582",
+        "59,637",
+        "63,337",
+        "49,864",
+        "57,647"
+       ],
+       [
+        "Dividends paid",
+        "26,445",
+        "24,082",
+        "21,771",
+        "19,800",
+        "18,135"
+       ],
+       [
+        "Shares bought back",
+        "22,271",
+        "18,420",
+        "17,254",
+        "22,245",
+        "32,696"
+       ],
+       [
+        "New shares sold",
+        "2,009",
+        "2,056",
+        "2,002",
+        "1,866",
+        "1,841"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow",
+        "89.3%",
+        "71.3%",
+        "61.6%",
+        "84.3%",
+        "88.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Microsoft's dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2027",
+       "FY2028",
+       "FY2029",
+       "FY2030"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "17.5 % (14.0 % / 19.0 %)",
+        "15.5 % (12.0 % / 19.0 %)",
+        "14.0 % (10.0 % / 18.0 %)",
+        "13.0 % (9.0 % / 17.0 %)"
+       ],
+       [
+        "Buybacks",
+        "18,000 (14,000 / 21,000)",
+        "19,000 (14,000 / 23,000)",
+        "20,000 (15,000 / 25,000)",
+        "21,000 (16,000 / 27,000)"
+       ],
+       [
+        "Dividend per share",
+        "3.85 (3.85 / 3.85)",
+        "4.23 (4.16 / 4.31)",
+        "4.57 (4.40 / 4.74)",
+        "4.94 (4.67 / 5.22)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Microsoft's dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue growth reached 17.8% in FY2026 while operating margin was 46.8%, but investment pushed Microsoft from net cash in FY2025 to net debt in FY2026. Earnings rose while after-stock-pay cash per share fell from FY2024 to FY2026. Microsoft’s trailing P/E was 29.1x against a 1.7% free cash flow yield; dividend yield was 0.8% and buybacks were 0.6% of market value."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Jun 2022",
+     "Year to Jun 2023",
+     "Year to Jun 2024",
+     "Year to Jun 2025",
+     "Year to Jun 2026"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "8.64",
+      "7.96",
+      "9.92",
+      "9.59",
+      "8.99"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/msft/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MSFT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Microsoft earnings: guidance and results",
+   "meta_description": "Microsoft reports on October 28, 2026; its guidance, past promises, eight-quarter trend and next-release checks are clear.",
+   "opening": "Microsoft’s next results are expected on October 28, 2026. Watch Azure growth against guidance and the conversion of new contracts into revenue and operating cash flow.",
+   "closing": "The full memo also explains Microsoft’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Microsoft guided for the next quarter and year?",
+     "paragraphs": [
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Azure is Microsoft’s service for renting computing power, storage and AI tools over the internet. For the quarter ending in September 2026, management guides total revenue to $89.85–$90.95 billion. It expects Azure revenue to grow 44%–45% at constant currency, which removes exchange-rate effects. Microsoft 365 commercial cloud, including workplace subscriptions and AI applications, is expected to grow 17% on that basis."
+      },
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the year ending in June 2027, Microsoft expects double-digit revenue and operating-income growth. It expects operating expenses to rise in the mid-to-high single digits, capital spending to increase again, operating margin to fall by less than one percentage point and free cash flow to remain positive."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Capital expenditures",
+        "Calendar year 2026",
+        "175",
+        "175",
+        "Jul 29, 2026"
+       ],
+       [
+        "Free cash flow",
+        "Year to Jun 2027",
+        "",
+        "",
+        "Jul 29, 2026"
+       ],
+       [
+        "Total revenue",
+        "Quarter to Sep 2026",
+        "89.85",
+        "90.95",
+        "Sep 2, 2026"
+       ],
+       [
+        "Total revenue growth",
+        "Quarter to Sep 2026",
+        "16.0%",
+        "17.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Azure revenue growth, constant currency",
+        "Quarter to Sep 2026",
+        "44.0%",
+        "45.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Microsoft 365 commercial cloud revenue growth, constant currency",
+        "Quarter to Sep 2026",
+        "17.0%",
+        "17.0%",
+        "Sep 2, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Microsoft kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 131,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also promised double-digit revenue and operating-income growth for FY2026. Microsoft delivered 18% revenue growth and 21% operating-income growth, supporting its execution record without proving that every AI investment will earn an adequate return."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Microsoft’s eight-quarter trend shown?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The last eight quarters show revenue rising while company gross margin fell from 69.4% to 67.2%. Operating profit continued to advance despite that pressure. Microsoft is gaining scale, but the direct cost of serving each sales dollar has increased."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "90,007",
+        "82,886",
+        "81,273",
+        "77,673",
+        "76,441",
+        "70,066",
+        "69,632",
+        "65,585"
+       ],
+       [
+        "Gross margin",
+        "67.2%",
+        "67.6%",
+        "68.0%",
+        "69.0%",
+        "68.6%",
+        "68.7%",
+        "68.7%",
+        "69.4%"
+       ],
+       [
+        "Operating income",
+        "40,603",
+        "38,398",
+        "38,275",
+        "37,961",
+        "34,323",
+        "32,000",
+        "31,653",
+        "30,552"
+       ],
+       [
+        "Net income",
+        "35,766",
+        "31,778",
+        "38,458",
+        "27,747",
+        "27,233",
+        "25,824",
+        "24,108",
+        "24,667"
+       ],
+       [
+        "EPS, diluted",
+        "4.81",
+        "4.27",
+        "5.16",
+        "3.72",
+        "3.65",
+        "3.46",
+        "3.23",
+        "3.30"
+       ],
+       [
+        "Cash from operations",
+        "55,441",
+        "46,679",
+        "35,758",
+        "45,057",
+        "42,647",
+        "37,044",
+        "22,291",
+        "34,180"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Microsoft watchers look for in the next release?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Microsoft reports the September quarter on October 28, 2026. The key checks are Azure growth against guidance, conversion of new contracts into revenue and operating cash flow after higher investment. The new reporting structure also makes restated comparisons important: moving a business between categories can change a growth rate without changing customer spending."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "90,007"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "4.81"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "65,585",
+      "69,632",
+      "70,066",
+      "76,441",
+      "77,673",
+      "81,273",
+      "82,886",
+      "90,007"
+     ],
+     "EPS, diluted": [
+      "3.30",
+      "3.23",
+      "3.46",
+      "3.65",
+      "3.72",
+      "5.16",
+      "4.27",
+      "4.81"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/msft/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MSFT&src=seo-earnings"
+  }
+ },
+ "short_name": "Microsoft",
+ "first_memo_date": "2026-10-10T00:00:40Z"
+}

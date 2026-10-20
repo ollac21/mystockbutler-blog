@@ -1,0 +1,825 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BMY",
+ "slug": "bmy",
+ "company": "Bristol-Myers Squibb Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T03:01:06Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 59.28,
+ "price_date": "2026-10-14T20:00:02Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 271,
+  "tables": 27,
+  "words": 17244,
+  "sources": 247
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Bristol Myers Squibb discovers, makes, and sells prescription medicines for serious diseases. Its business looks like one pharmaceutical company, but its revenue depends on very different products at different points in their lives."
+ },
+ "sources": [
+  {
+   "title": "BMS’s 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000004/bmy-20251231.htm"
+  },
+  {
+   "title": "BMS 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427225000039/bmy-20241231.htm"
+  },
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000006/bmy-20260325.htm"
+  }
+ ],
+ "rivals": [
+  "MRK",
+  "PFE",
+  "ABBV",
+  "AZN",
+  "LLY",
+  "REGN",
+  "NVS",
+  "JNJ",
+  "SNY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Bristol Myers Squibb stock forecast",
+   "meta_description": "Bristol Myers Squibb's forecast weighs replacement growth against patent erosion, cash generation and valuation.",
+   "opening": "Bristol Myers Squibb's weighted scenario is $47.61 in October 2029. It hinges on growth brands replacing Eliquis and Opdivo profits before expected U.S. exclusivity losses around 2028.",
+   "closing": "The full memo also covers Bristol Myers Squibb's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Bristol Myers Squibb's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $59.29 in October 2027, a +4% return with dividends included. In October 2029, it is $47.61, a -7% return. Bear/base/bull probabilities are 25%/55%/20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 59.28, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 59.28, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "42.14 (-25 %)",
+        "30.31 (-40 %)",
+        "20.31 (-53 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "60.26 (+6 %)",
+        "50.56 (-6 %)",
+        "39.27 (-21 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "78.05 (+36 %)",
+        "91.87 (+64 %)",
+        "104.67 (+90 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "59.29 (+4 %)",
+        "53.76 (-1 %)",
+        "47.61 (-7 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Bristol Myers Squibb, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base assumes growth brands partly offset the legacy decline. That is supported by 2025 Growth Portfolio growth, but the older portfolio lost $4,427M in combined sales. The bear assumes replacement fails as Eliquis and Opdivo face expected U.S. exclusivity losses around 2028. The bull requires durable uptake, successful indications and cost savings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Bristol Myers Squibb really make?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is operating cash after necessary capital spending. In 2025, BMS generated $14.2 billion from operations and spent $1.3 billion on capital projects. It also paid $3.9 billion for acquisitions, which may be essential to replace ageing medicines but can be omitted from conventional free-cash-flow calculations. The dividend distributes cash; it does not create more, so adding its yield to the cash-flow yield would count the same money twice."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "14,156",
+        "15,190",
+        "13,860",
+        "13,066",
+        "16,207"
+       ],
+       [
+        "− Capital spending",
+        "1,311",
+        "1,248",
+        "1,209",
+        "1,118",
+        "973"
+       ],
+       [
+        "**= Free cash flow**",
+        "12,845",
+        "13,942",
+        "12,651",
+        "11,948",
+        "15,234"
+       ],
+       [
+        "− Stock pay",
+        "553",
+        "507",
+        "518",
+        "457",
+        "583"
+       ],
+       [
+        "**= Real free cash flow**",
+        "12,292",
+        "13,435",
+        "12,133",
+        "11,491",
+        "14,651"
+       ]
+      ],
+      "note": "Real free cash flow is lower because we subtract the value of shares given to employees, even though this payment does not use cash."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Bristol Myers Squibb today?",
+     "paragraphs": [
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Valuation ratios answer different questions. P/E compares the share price with earnings, while a forward P/E uses expected earnings instead of the last twelve months. Enterprise value to revenue compares the whole business with its sales, but says nothing about the cost of producing them."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "59.28"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "13.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "8.9x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "10.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "10.2%"
+       ]
+      ],
+      "note": "The next twelve months price-to-earnings number uses analysts' guesses about future profit, so it is not based on profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "59.28"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "47.61 (-7 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "10.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "8.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 59.28,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "42.14 (-25 %)",
+       "30.31 (-40 %)",
+       "20.31 (-53 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "60.26 (+6 %)",
+       "50.56 (-6 %)",
+       "39.27 (-21 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "78.05 (+36 %)",
+       "91.87 (+64 %)",
+       "104.67 (+90 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "59.29 (+4 %)",
+       "53.76 (-1 %)",
+       "47.61 (-7 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bmy/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMY&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Bristol Myers Squibb dividend",
+   "meta_description": "Bristol Myers Squibb’s dividend rises modestly in the forecast and is supported by cash, though debt, acquisitions and patent losses matter.",
+   "opening": "Bristol Myers Squibb’s forecast annual dividend rises from $2.55 to $2.63 in the base case. Cash generation supports the dividend, but acquisitions, debt and replacement research compete for that cash.",
+   "closing": "The full memo also explains Bristol Myers Squibb’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Bristol Myers Squibb pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise modestly in the base case, from $2.55 to $2.63. The bear freezes the declared quarterly rate, producing $2.52 annually, while the bull reaches $2.66. The history of annual increases and cash coverage supports continuity, but approaching patent losses argue against rapid growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "6.30",
+        "6.88",
+        "6.09",
+        "5.57",
+        "6.79"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.47",
+        "2.40",
+        "2.28",
+        "2.16",
+        "1.96"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "2.48",
+        "3.73",
+        "2.80"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "3.81",
+        "4.47",
+        "1.32",
+        "",
+        "2.02"
+       ]
+      ],
+      "note": "In 2022, the company paid shareholders more cash than its business generated, so it had to use cash from elsewhere."
+     }
+    },
+    {
+     "heading": "Does Bristol Myers Squibb’s dividend have cash coverage?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is operating cash after necessary capital spending. In 2025, BMS generated $14.2 billion from operations and spent $1.3 billion on capital projects. It also paid $3.9 billion for acquisitions, which may be essential to replace ageing medicines but can be omitted from conventional free-cash-flow calculations. The dividend distributes cash; it does not create more, so adding its yield to the cash-flow yield would count the same money twice."
+      },
+      {
+       "n": 270,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if 2027 launches disappoint, Eliquis pressure accelerates before 2028, or Opdivo exposure becomes more severe. It would also weaken if cash generation cannot support debt reduction and dividends."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "12,845",
+        "13,942",
+        "12,651",
+        "11,948",
+        "15,234"
+       ],
+       [
+        "− Dividends paid",
+        "5,045",
+        "4,863",
+        "4,744",
+        "4,634",
+        "4,396"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "5,155",
+        "8,001",
+        "6,287"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "7,778",
+        "9,062",
+        "2,736",
+        "",
+        "4,531"
+       ],
+       [
+        "Paid to shareholders",
+        "5,045",
+        "4,863",
+        "9,899",
+        "12,635",
+        "10,683"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "39.3%",
+        "34.9%",
+        "78.2%",
+        "105.7%",
+        "70.1%"
+       ]
+      ],
+      "note": "The company's own net debt is lower than our figure because it also subtracts long-term marketable debt securities, not just cash and short-term investments."
+     }
+    },
+    {
+     "heading": "What could change Bristol Myers Squibb’s dividend?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Eliquis and Opdivo both have estimated minimum U.S. exclusivity through 2028, while BMS expects Eliquis revenue to step down by $1.5–2 billion in 2027. The price therefore assumes a successful bridge: not every new medicine must win, but enough replacement profit must arrive before today’s cash flow becomes temporary."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "13,750 (12,375 / 14,392)",
+        "13,000 (10,450 / 15,370)",
+        "11,520 (8,455 / 15,950)"
+       ],
+       [
+        "Shares (millions)",
+        "2,054 (2,056 / 2,028)",
+        "2,057 (2,069 / 2,008)",
+        "2,054 (2,082 / 1,981)"
+       ],
+       [
+        "Dividends per share",
+        "2.55 (2.52 / 2.56)",
+        "2.59 (2.52 / 2.61)",
+        "2.63 (2.52 / 2.66)"
+       ],
+       [
+        "Price to earnings",
+        "9.00 (7.00 / 11.00)",
+        "8.00 (6.00 / 12.00)",
+        "7.00 (5.00 / 13.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Bristol Myers Squibb’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "BMS shares are priced to offer a high current cash return, but that return is convincing only if the cash lasts."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.47"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "10.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "10.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.96",
+      "2.16",
+      "2.28",
+      "2.40",
+      "2.47"
+     ],
+     "Real free cash flow per share": [
+      "6.53",
+      "5.35",
+      "5.84",
+      "6.63",
+      "6.03"
+     ],
+     "Free cash flow per share": [
+      "6.79",
+      "5.57",
+      "6.09",
+      "6.88",
+      "6.30"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/bmy/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMY&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Bristol Myers Squibb earnings date",
+   "meta_description": "Bristol Myers Squibb reports October 29, 2026; guidance is $49,000–$50,000 million of revenue and $6.75–$7.00 diluted non-GAAP EPS.",
+   "opening": "Bristol Myers Squibb's next results are expected on October 29, 2026. Watch whether launch investment is producing patient uptake.",
+   "closing": "The full memo also answers how Bristol Myers Squibb makes money, who its rivals are, how management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Bristol Myers Squibb guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Guidance is management’s forecast. On July 30, BMS raised its full-year revenue range to $49,000–$50,000 million and its diluted non-GAAP EPS range to $6.75–$7.00. Non-GAAP EPS excludes specified accounting items; diluted EPS also allows for shares that could be issued through instruments such as employee awards."
+      },
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "BMS also targets $2,000 million in annual savings by December 2027, alongside $2,500 million of restructuring charges. The test is whether those savings create room for productive research rather than weaken it."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total Revenues(Reported & Ex-FX)",
+        "Year to Dec 2026",
+        "49,000",
+        "50,000",
+        "Jul 30, 2026"
+       ],
+       [
+        "Operating Expenses",
+        "Year to Dec 2026",
+        "16,500",
+        "16,500",
+        "Jul 30, 2026"
+       ],
+       [
+        "Diluted EPS",
+        "Year to Dec 2026",
+        "6.75",
+        "7.00",
+        "Jul 30, 2026"
+       ],
+       [
+        "annual cost savings",
+        "By Dec 2027",
+        "2,000",
+        "2,000",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": "The negative 700 million dollars for other income or expense means the company expects this item to reduce profit, not increase it."
+     }
+    },
+    {
+     "heading": "Did Bristol Myers Squibb keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management has delivered some narrower promises. In February 2025 it forecast about US$45.5 billion of annual revenue; the eventual result was US$48.194 billion. It also committed to repay about US$10 billion of debt by 2026 and reported achieving that goal by the end of 2025."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Bristol Myers Squibb's recent revenue and profit results?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue increased 5.7%, while diluted EPS rose much faster. The acquired-research and licensing contribution moved from a negative $0.57 per share in the earlier quarter to a positive $0.01. Excluding that effect gives a like-for-like EPS comparison of approximately $1.61 against $1.21. The headline improvement therefore overstates the commercial improvement."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,973",
+        "11,489",
+        "12,502",
+        "12,222",
+        "12,269",
+        "11,201",
+        "12,342",
+        "11,892"
+       ],
+       [
+        "Gross margin",
+        "71.3%",
+        "70.2%",
+        "67.2%",
+        "71.9%",
+        "72.5%",
+        "72.9%",
+        "61.0%",
+        "75.1%"
+       ],
+       [
+        "Operating income",
+        "4,025",
+        "3,271",
+        "1,419",
+        "3,006",
+        "2,266",
+        "3,309",
+        "480",
+        "1,910"
+       ],
+       [
+        "Net income",
+        "3,317",
+        "2,677",
+        "1,087",
+        "2,201",
+        "1,310",
+        "2,456",
+        "72",
+        "1,211"
+       ],
+       [
+        "EPS, diluted",
+        "1.62",
+        "1.31",
+        "0.53",
+        "1.08",
+        "0.64",
+        "1.20",
+        "0.04",
+        "0.60"
+       ]
+      ],
+      "note": "The gross margin leaves out the gradual expense from acquired intangible assets, so it is not the same as the profit the company ultimately keeps."
+     }
+    },
+    {
+     "heading": "What should Bristol Myers Squibb watch in its next results?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "BMS is scheduled to report its third quarter on October 29, 2026. That report should separate ordinary trading from collaboration charges and show whether launch investment is producing patient uptake."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "12,973"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.62"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,892",
+      "12,342",
+      "11,201",
+      "12,269",
+      "12,222",
+      "12,502",
+      "11,489",
+      "12,973"
+     ],
+     "EPS, diluted": [
+      "0.60",
+      "0.04",
+      "1.20",
+      "0.64",
+      "1.08",
+      "0.53",
+      "1.31",
+      "1.62"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bmy/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BMY&src=seo-earnings"
+  }
+ },
+ "short_name": "Bristol Myers Squibb",
+ "first_memo_date": "2026-10-15T03:01:06Z"
+}

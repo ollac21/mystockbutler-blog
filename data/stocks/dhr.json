@@ -1,0 +1,793 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "DHR",
+ "slug": "dhr",
+ "company": "Danaher Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T22:53:17Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 223.23,
+ "price_date": "2026-10-13T20:00:00Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 17835,
+  "sources": 295
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Danaher sells the tools and supplies that help customers discover medicines, manufacture them, and diagnose patients. Its dollar comes in through instruments, materials, services, and repeat supplies, then goes out through production, research, selling, delivery, and support."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000105/danaher2025annualreport.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/313616/000031361625000043/dhr-20241231.htm"
+  },
+  {
+   "title": "2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/313616/000031361624000052/dhr-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "TMO",
+  "A",
+  "ABT",
+  "BIO",
+  "QGEN",
+  "ILMN",
+  "BDX",
+  "RVTY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Danaher stock forecast",
+   "meta_description": "Danaher stock forecast: weighted scenarios, recovery drivers, cash generation, and today’s valuation.",
+   "opening": "Danaher’s weighted scenario is $159.48 in October 2027. It hinges on delayed shipments converting gradually, broader recovery, and debt reduction.",
+   "closing": "The full memo also answers how Danaher works, who its rivals are, how management is executing, and what risks matter.",
+   "blocks": [
+    {
+     "heading": "Where could Danaher’s shares go?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $159.48 in October 2027, including dividends, a return of negative 28%. It reaches $177.76 in October 2028, or negative 19%, and $192.67 in October 2029, or negative 11%. The 2029 range is wide: $106.13 in the bear case to $319.39 in the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 223.23, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 223.23, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "116.56 (-47 %)",
+        "107.37 (-50 %)",
+        "106.13 (-50 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "164.44 (-26 %)",
+        "183.18 (-16 %)",
+        "193.91 (-11 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "211.46 (-4 %)",
+        "269.78 (+23 %)",
+        "319.39 (+46 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "159.48 (-28 %)",
+        "177.76 (-19 %)",
+        "192.67 (-11 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it can be lower than today's share price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Danaher?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $4,100 million, $4,200 million, and $4,400 million because shipment delays, China pricing pressure, weaker research spending, and Masimo-related interest costs restrain margins. The bull case gives $4,900 million, $5,800 million, and $6,800 million because orders convert quickly, utilization improves, Masimo contributes, and debt falls. The base probability is highest because earnings stabilized after the pandemic-driven decline, but 2025 core growth missed its roughly 3% forecast."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Danaher really make?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Danaher’s own free-cash-flow measure was $5,293 million because it included proceeds from selling property and equipment. Deducting $298 million of stock compensation produces an analytical “real free cash flow” figure of $4,962 million, or 20.2% of revenue. Stock compensation is not a cash payment, but it can dilute owners or require repurchases. Cash is strong; the specialist still asks whether it remains strong after normal inventory needs, investment and dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "6,416",
+        "6,688",
+        "6,490",
+        "7,613",
+        "7,423"
+       ],
+       [
+        "− Capital spending",
+        "1,156",
+        "1,392",
+        "1,383",
+        "1,118",
+        "1,240"
+       ],
+       [
+        "**= Free cash flow**",
+        "5,260",
+        "5,296",
+        "5,107",
+        "6,495",
+        "6,183"
+       ],
+       [
+        "− Stock pay",
+        "298",
+        "288",
+        "306",
+        "295",
+        "184"
+       ],
+       [
+        "**= Real free cash flow**",
+        "4,962",
+        "5,008",
+        "4,801",
+        "6,200",
+        "5,999"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "20.2%",
+        "21.0%",
+        "20.1%",
+        "23.3%",
+        "24.2%"
+       ]
+      ],
+      "note": "The company's own free cash flow is slightly higher because it adds money from selling equipment, while our count leaves that money out."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Danaher today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, tells us how much investors pay for each dollar of profit. Danaher’s trailing P/E is 39.8x. Reported and adjusted earnings differ because acquisitions create intangible assets, such as customer relationships and technology, whose recorded cost is amortized over time. In the second quarter of 2026, reported EPS was $1.23, while adjusted EPS was $1.94. Adjusted earnings may clarify ongoing operations, but they also remove costs created by Danaher’s acquisition strategy."
+      },
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after operations and necessary capital spending. Danaher generated about $5.1 billion in 2023 and $5.3 billion in 2025, but timing can distort one year’s result: selling inventory without replacing it can release cash without proving stronger demand. The 3.4% free-cash-flow yield therefore needs to be judged against the 5.21% ten-year Treasury yield and against debt repayment, reinvestment, acquisitions and dividends. The 0.7% dividend yield is only the portion paid directly to shareholders."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "223.23"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "39.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": "The enterprise value is higher than the market value because it includes the company's debt and subtracts its cash, showing what it would cost to buy the whole business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "223.23"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "192.67 (-11 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 223.23,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "116.56 (-47 %)",
+       "107.37 (-50 %)",
+       "106.13 (-50 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "164.44 (-26 %)",
+       "183.18 (-16 %)",
+       "193.91 (-11 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "211.46 (-4 %)",
+       "269.78 (+23 %)",
+       "319.39 (+46 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "159.48 (-28 %)",
+       "177.76 (-19 %)",
+       "192.67 (-11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/dhr/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DHR&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Danaher dividend: payment, cash cover and yield",
+   "meta_description": "Danaher pays a quarterly dividend, positive free cash flow supports no cut, and debt matters to future increases.",
+   "opening": "Danaher pays $0.40 per share quarterly, or $1.60 annualized; its positive free cash flow supports no cut. Danaher generated $5,260 million of free cash flow in 2025, while higher debt makes a pause credible.",
+   "closing": "The full Danaher memo also covers Danaher’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Danaher pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts from the latest $0.40 quarterly rate, or $1.60 annualized. The base case raises it by $0.12 annually to $1.72, $1.84, and $1.96, close to the company’s record of annual increases but moderated for higher debt. The bear case holds $1.60 throughout; the bull case reaches $1.80, $2.00, and $2.20 as stronger cash generation funds faster growth. Positive free cash flow supports no cut, but debt makes a pause credible."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "4,600 (4,100 / 4,900)",
+        "5,100 (4,200 / 5,800)",
+        "5,600 (4,400 / 6,800)"
+       ],
+       [
+        "Shares (millions)",
+        "699 (704 / 695)",
+        "696 (704 / 688)",
+        "693 (705 / 681)"
+       ],
+       [
+        "Dividends per share",
+        "1.72 (1.60 / 1.80)",
+        "1.84 (1.60 / 2.00)",
+        "1.96 (1.60 / 2.20)"
+       ],
+       [
+        "Price to earnings",
+        "25.00 (20.00 / 30.00)",
+        "25.00 (18.00 / 32.00)",
+        "24.00 (17.00 / 32.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Danaher’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "After $1,156 million of capital spending, free cash flow was $5,260 million in 2025. That was nearly unchanged from $5,296 million in the prior year because capital spending fell from $1,392 million. Danaher does not disclose how much capital spending merely maintains the business and how much expands it."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "5,260",
+        "5,296",
+        "5,107",
+        "6,495",
+        "6,183"
+       ],
+       [
+        "− Dividends paid",
+        "878",
+        "768",
+        "778",
+        "693",
+        "578"
+       ],
+       [
+        "− Share buybacks",
+        "3,088",
+        "5,979",
+        "0",
+        "1",
+        "0"
+       ],
+       [
+        "− Acquisitions",
+        "0",
+        "558",
+        "5,610",
+        "582",
+        "10,901"
+       ],
+       [
+        "Paid to shareholders",
+        "3,966",
+        "6,747",
+        "778",
+        "694",
+        "578"
+       ]
+      ],
+      "note": "Our “real free cash flow” is lower because it subtracts stock-based pay, so the same shareholder payout becomes a larger percentage."
+     }
+    },
+    {
+     "heading": "What could change Danaher’s dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 3.0%–4.0% core sales growth and adjusted EPS of $8.45–$8.60 for 2026. For the September 2026 quarter, it guides to 2.0%–3.0% core growth, or 5.0% excluding respiratory testing. Adjusted earnings exclude selected costs, including $1,900 million of acquisition-related intangible amortization for 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Danaher’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is cash left after operations and necessary capital spending. Danaher generated about $5.1 billion in 2023 and $5.3 billion in 2025, but timing can distort one year’s result: selling inventory without replacing it can release cash without proving stronger demand. The 3.4% free-cash-flow yield therefore needs to be judged against the 5.21% ten-year Treasury yield and against debt repayment, reinvestment, acquisitions and dividends. The 0.7% dividend yield is only the portion paid directly to shareholders."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "223.23"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.2%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": "The enterprise value is higher than the market value because it includes the company's debt and subtracts its cash, showing what it would cost to buy the whole business."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.23"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.78",
+      "0.94",
+      "1.05",
+      "1.04",
+      "1.23"
+     ],
+     "Real free cash flow per share": [
+      "8.14",
+      "8.41",
+      "6.46",
+      "6.79",
+      "6.93"
+     ],
+     "Free cash flow per share": [
+      "8.39",
+      "8.81",
+      "6.87",
+      "7.18",
+      "7.35"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/dhr/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DHR&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Danaher earnings date and guidance",
+   "meta_description": "Danaher reports on October 21, 2026; guidance is 3.0%–4.0% core growth and $8.45–$8.60 adjusted EPS, with demand-to-cash conversion key.",
+   "opening": "Danaher’s next results are expected on October 21, 2026. Watch whether underlying demand becomes sales and cash while Masimo’s risks remain contained.",
+   "closing": "The full memo also covers Danaher’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Danaher guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management expects earnings to recover more reliably than sales. Danaher’s July guidance calls for 2026 core sales growth of 3.0%–4.0% and adjusted earnings per share of $8.45–$8.60. Core sales remove acquisitions and currency movements, while adjusted earnings remove selected costs. These measures show operating progress, but they do not replace reported results."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Total Company, core sales growth (non-GAAP) — Year to Dec 2026",
+        "Year to Dec 2026",
+        "3.0%",
+        "4.0%",
+        "July 21, 2026"
+       ],
+       [
+        "Adjusted diluted net earnings per common share (non-GAAP) — Year to Dec 2026",
+        "Year to Dec 2026",
+        "8.45",
+        "8.60",
+        "July 21, 2026"
+       ],
+       [
+        "Total Company, core sales growth (non-GAAP) — Quarter to Sep 2026",
+        "Quarter to Sep 2026",
+        "2.0%",
+        "3.0%",
+        "July 21, 2026"
+       ],
+       [
+        "Core sales growth excluding respiratory testing (non-GAAP) — Quarter to Sep 2026",
+        "Quarter to Sep 2026",
+        "5.0%",
+        "5.0%",
+        "July 21, 2026"
+       ]
+      ],
+      "note": "A blank high number does not mean there is no upper limit; it means the company is promising at least the stated low number."
+     }
+    },
+    {
+     "heading": "Did Danaher keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Danaher’s forecasts provide an accountability test. In July 2025, it forecast about 3% core revenue growth and adjusted EPS of US$7.70–US$7.80. It delivered the top of the EPS range but only 2% core growth. Core growth removes acquisition and currency effects, so earnings met the target while underlying growth missed. In July 2026, Masimo helped raise EPS guidance while core growth remained a separate concern."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Danaher’s revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "June revenue reached $6,265 million, up from $5,936 million a year earlier. Reported growth was about 5.5%. Core growth was 3.0%, rising to 4.5% without respiratory testing. Life Sciences led at 5.5%; Biotechnology grew 2.5%, while Diagnostics grew 2.0%. Comparing with the same quarter a year earlier matters because December-to-March movements can make the recovery look stronger or weaker than it is."
+      },
+      {
+       "n": 173,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Margins tell the same story. Gross margin fell to 57.6% from 59.3%, even as operating margin rose to 18.0%. The higher operating profit therefore does not prove stronger product economics. Cash offers firmer support: operating cash rose to $1,534 million from $1,338 million, while free cash flow reached $1,265 million from $1,090 million."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,265",
+        "5,951",
+        "6,838",
+        "6,053",
+        "5,936",
+        "5,741",
+        "6,538",
+        "5,798"
+       ],
+       [
+        "Operating income",
+        "1,127",
+        "1,344",
+        "1,502",
+        "1,154",
+        "760",
+        "1,274",
+        "1,425",
+        "958"
+       ],
+       [
+        "Net income",
+        "870",
+        "1,029",
+        "1,183",
+        "908",
+        "555",
+        "954",
+        "1,086",
+        "818"
+       ],
+       [
+        "EPS, diluted",
+        "1.23",
+        "1.45",
+        "1.66",
+        "1.27",
+        "0.77",
+        "1.32",
+        "1.49",
+        "1.12"
+       ]
+      ],
+      "note": "The amounts are for each three-month quarter, even though some descriptions say “during the year.”"
+     }
+    },
+    {
+     "heading": "What should I watch in Danaher’s next results?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will be whether underlying demand becomes sales and cash while Masimo’s risks remain contained. Danaher discusses third-quarter results on October 21, 2026, at 8 a.m. Eastern. Julie Sawyer Montgomery became CEO on October 1, so the meeting will show whether she maintains July’s commitments. Investors should look for non-respiratory growth and confirmation of a mid-single-digit exit rate."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "6,265"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.23"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,798",
+      "6,538",
+      "5,741",
+      "5,936",
+      "6,053",
+      "6,838",
+      "5,951",
+      "6,265"
+     ],
+     "EPS, diluted": [
+      "1.12",
+      "1.49",
+      "1.32",
+      "0.77",
+      "1.27",
+      "1.66",
+      "1.45",
+      "1.23"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/dhr/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=DHR&src=seo-earnings"
+  }
+ },
+ "short_name": "Danaher",
+ "first_memo_date": "2026-10-13T22:53:17Z"
+}

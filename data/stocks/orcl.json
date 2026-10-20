@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261011T101407Z-94b970183cd3",
  "ticker": "ORCL",
  "slug": "orcl",
  "company": "Oracle Corporation",
@@ -35,8 +34,8 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/orcl-20250531.htm"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/orcl-20240531.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/orcl-20240531.htm"
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526265848/orcl-ex99_1.htm"
   }
  ],
  "rivals": [
@@ -66,13 +65,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Oracle Corporation stock forecast: scenarios and cash",
-   "meta_description": "Oracle Corporation stock forecast: the weighted price is $142.54 in October 2027, hinging on profitable OCI capacity and cash generation.",
-   "opening": "The weighted forecast is $142.54 in October 2027. It hinges on converting Oracle’s backlog into profitable OCI capacity and durable cash returns.",
-   "closing": "The full memo also answers how Oracle Corporation’s business works, who its rivals are, how management is executing, and what risks could change the outcome.",
+   "title": "Oracle stock forecast",
+   "meta_description": "Oracle's stock forecast weighs cloud growth, infrastructure spending, cash generation, dilution and three probability-based scenarios.",
+   "opening": "Oracle's weighted forecast is $142.54 in October 2027. It hinges on converting cloud backlog into profitable capacity and cash returns.",
+   "closing": "The full memo also explains Oracle's business, rivals, management, and risks.",
    "blocks": [
     {
-     "heading": "Where could Oracle Corporation’s shares be in each forecast year?",
+     "heading": "Where could Oracle's shares be by 2029?",
      "paragraphs": [
       {
        "n": 240,
@@ -127,63 +126,27 @@
      }
     },
     {
-     "heading": "What has to go right or wrong for Oracle Corporation’s forecast?",
+     "heading": "What has to go right or wrong for Oracle?",
      "paragraphs": [
       {
-       "n": 246,
+       "n": 252,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
-       "subsection": "8.3 — The drivers",
-       "text": "EBITDA rises from $49,400M in the base case in October 2027 to $86,400M by October 2029. The intervening value is shown in the table. The bear case falls to $39,900M in the middle year before recovering to $47,300M, while the bull case reaches $118,800M at the last date. The base uses revenue growth beyond management’s $90B FY2027 floor and around its $130B FY2028 outlook, but keeps margins below the FY2026 proxy because infrastructure costs remain heavy. OCI revenue grew 121% in the latest quarter and Oracle delivered 850 MW of capacity, supporting the upside; negative free cash flow and rising infrastructure expense support the downside."
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes Oracle has signed demand but cannot deliver enough powered capacity profitably. Delays, weaker pricing and underused facilities keep free cash flow negative, while debt and dilution rise. The shares fall from $62.02 in October 2027 to $21.48 in October 2029. Its 30% probability reflects the $70B spending plan and the absence of proven steady-state OCI returns, though strong RPO and cloud growth make collapse less likely than not."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires on-time capacity, broad customer demand, strong utilization, improving margins and cash flow that reduces leverage. It rises from $234.01 in October 2027 to $701.39 in October 2029. Its 20% probability reflects the number of conditions that must succeed together."
       }
      ],
-     "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
-      "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": [
-       [
-        "EBITDA",
-        "49,400 (41,360 / 55,000)",
-        "68,600 (39,900 / 86,400)",
-        "86,400 (47,300 / 118,800)"
-       ],
-       [
-        "Shares (millions)",
-        "3,049 (3,048 / 3,030)",
-        "3,074 (3,159 / 3,034)",
-        "3,124 (3,318 / 3,062)"
-       ],
-       [
-        "Dividends per share",
-        "2.00 (2.00 / 2.20)",
-        "2.20 (2.00 / 2.60)",
-        "2.40 (2.00 / 3.00)"
-       ],
-       [
-        "Enterprise value to ebitda",
-        "12.00 (8.00 / 15.00)",
-        "13.00 (7.00 / 17.00)",
-        "14.00 (7.00 / 19.00)"
-       ],
-       [
-        "Net debt",
-        "122,445 (141,845 / 115,945)",
-        "151,645 (199,245 / 124,345)",
-        "170,745 (259,845 / 109,545)"
-       ]
-      ],
-      "note": ""
-     }
+     "table": null
     },
     {
-     "heading": "How much cash does Oracle Corporation really make?",
+     "heading": "How much cash does Oracle really make?",
      "paragraphs": [
       {
        "n": 136,
@@ -258,17 +221,44 @@
      }
     },
     {
-     "heading": "What does an investor pay today for Oracle Corporation?",
-     "paragraphs": [
-      {
-       "n": 165,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "At **$141.53**, Oracle’s common shares are worth **$432,585.28 million**. Its trailing P/E is **22.2x**, meaning investors pay $22.20 for each dollar of earnings generated over the last twelve months. That earnings measure matters, but OCI consumes cash before the full cost of its equipment reaches the income statement."
-      }
-     ],
-     "table": null
+     "heading": "What does an investor pay for Oracle today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "141.53"
+       ],
+       [
+        "Market value (calculated)",
+        "432,585.28"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "22.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-5.5%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-6.6%"
+       ]
+      ],
+      "note": ""
+     }
     }
    ],
    "facts": [
@@ -337,13 +327,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Oracle Corporation dividend: cash, yield and outlook",
-   "meta_description": "Oracle Corporation's dividend, cash coverage, future changes and yield against its share price, in plain English.",
-   "opening": "Oracle Corporation pays $2.00 per share in the forecast's base case through October 2027, then $2.40 by October 2029. Fiscal 2026 free cash flow was negative US$23,686 million, so it did not cover the dividend.",
-   "closing": "The full memo also examines Oracle Corporation’s business, rivals, management, and risks.",
+   "title": "Oracle dividend: cash coverage and outlook",
+   "meta_description": "Oracle pays $2.00 per share in the base case, while negative free cash flow makes cash coverage the key question.",
+   "opening": "Oracle pays $2.00 per share in the base case through October 2027. In fiscal 2026, free cash flow was negative US$23,686 million while capital expenditure reached US$55,663 million, so the dividend was not covered by free cash flow.",
+   "closing": "The full memo also explains Oracle's business, its rivals, its management, and the risks around its growth and financing.",
    "blocks": [
     {
-     "heading": "How much does Oracle Corporation pay per share?",
+     "heading": "How much does Oracle pay per share?",
      "paragraphs": [
       {
        "n": 248,
@@ -354,9 +344,9 @@
       }
      ],
      "table": {
-      "title": "What one share gets",
+      "title": "Results",
       "unit": "US$ millions",
-      "caption": "What one share gets (US$ millions)",
+      "caption": "Results (US$ millions)",
       "head": [
        "Row",
        "May 2026",
@@ -367,6 +357,14 @@
       ],
       "rows": [
        [
+        "Revenue",
+        "67,357",
+        "57,399",
+        "52,961",
+        "49,954",
+        "42,440"
+       ],
+       [
         "EPS, diluted",
         "5.83",
         "4.34",
@@ -375,42 +373,33 @@
         "2.41"
        ],
        [
-        "Real free cash flow per share",
-        "-9.78",
-        "-1.77",
-        "2.77",
-        "1.78",
-        "0.87"
-       ],
-       [
-        "− Dividends paid, per share",
-        "1.96",
-        "1.65",
-        "1.56",
-        "1.33",
-        "1.24"
-       ],
-       [
-        "− Share buybacks, per share",
-        "0.03",
-        "0.21",
-        "0.43",
-        "0.47",
-        "5.83"
+        "Dividend per share",
+        "2.00",
+        "1.70",
+        "1.60",
+        "1.36",
+        "1.28"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Is Oracle Corporation's dividend covered by its cash?",
+     "heading": "Is Oracle's dividend covered by its cash?",
      "paragraphs": [
       {
-       "n": 136,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.3 — Cash",
-       "text": "Operating cash reached US$31,977 million in fiscal 2026, but capital spending reached US$55,663 million. Free cash flow—operating cash less capital spending—was therefore negative US$23,686 million. Oracle reported profit, but the bank account still needed funding for OCI."
+       "n": 79,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In fiscal 2022, Oracle generated US$5,028 million of free cash flow but paid shareholders US$19,705 million, including US$16,248 million of buybacks. A buyback retires shares, increasing the remaining shareholders’ claim, but it cannot be funded indefinitely by current cash when payouts exceed it. Oracle also received US$26,151 million from investments sold or matured; that released previously invested money rather than creating new operating cash."
+      },
+      {
+       "n": 80,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Fiscal 2023 then concentrated spending on acquisitions, with US$27,721 million of cash used, principally for Cerner. Oracle issued US$33,994 million of debt and repaid US$21,050 million. Fiscal 2024 briefly restored capacity: free cash flow reached US$11,807 million, shareholder payments were US$5,593 million, and net debt declined to US$76,208 million."
       },
       {
        "n": 81,
@@ -458,81 +447,85 @@
         "16,248"
        ],
        [
+        "− Acquisitions",
+        "",
+        "0",
+        "63",
+        "27,721",
+        "148"
+       ],
+       [
         "Paid to shareholders",
         "5,819",
         "5,343",
         "5,593",
         "4,968",
         "19,705"
-       ],
-       [
-        "Paid out, % of free cash flow",
-        "not meaningful",
-        "not meaningful",
-        "47.4%",
-        "58.7%",
-        "391.9%"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What could change Oracle Corporation's dividend?",
-     "paragraphs": [
-      {
-       "n": 255,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.5 — What would change the view",
-       "text": "The forecast would move toward the bear case if power or construction delays push RPO conversion beyond October 2027, or if AI pricing and utilization weaken through October 2029. Further debt or equity funding would reinforce that direction by raising interest costs or diluted shares."
-      }
-     ],
-     "table": null
-    },
-    {
-     "heading": "What is Oracle Corporation's dividend yield against its share price?",
-     "paragraphs": [
-      {
-       "n": 7,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The numbers",
-       "text": "Revenue growth accelerated in the five-year trend while operating margin remained the counterweight. Oracle’s real free cash flow, computed from its cash-flow statement as cash from operations minus capital spending, turned sharply negative as infrastructure spending outran operating cash generation. Diluted EPS rose while real free cash flow per share fell; stock-based pay per share and buybacks affect each shareholder’s claim. Free-cash-flow and real free-cash-flow yields are negative, while dividend yield and buyback yield are zero."
-      }
-     ],
+     "heading": "What could change Oracle's dividend?",
+     "paragraphs": [],
      "table": {
-      "title": "What an investor pays today",
-      "unit": "US$ millions",
-      "caption": "What an investor pays today (US$ millions)",
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
       "head": [
-       "Row",
-       "Today (Oct 11, 2026)"
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
       ],
       "rows": [
        [
-        "Share price",
-        "141.53"
+        "EBITDA",
+        "49,400 (41,360 / 55,000)",
+        "68,600 (39,900 / 86,400)",
+        "86,400 (47,300 / 118,800)"
        ],
        [
-        "Market value (calculated)",
-        "432,585.28"
+        "Shares (millions)",
+        "3,049 (3,048 / 3,030)",
+        "3,074 (3,159 / 3,034)",
+        "3,124 (3,318 / 3,062)"
        ],
        [
-        "Free cash flow yield (calculated)",
-        "-5.5%"
+        "Dividends per share",
+        "2.00 (2.00 / 2.20)",
+        "2.20 (2.00 / 2.60)",
+        "2.40 (2.00 / 3.00)"
        ],
        [
-        "Real free cash flow yield (calculated)",
-        "-6.6%"
+        "Enterprise value to ebitda",
+        "12.00 (8.00 / 15.00)",
+        "13.00 (7.00 / 17.00)",
+        "14.00 (7.00 / 19.00)"
        ],
        [
-        "Dividend yield (calculated)",
-        "1.4%"
+        "Net debt",
+        "122,445 (141,845 / 115,945)",
+        "151,645 (199,245 / 124,345)",
+        "170,745 (259,845 / 109,545)"
        ]
       ],
       "note": ""
      }
+    },
+    {
+     "heading": "What is Oracle's dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At **$141.53**, Oracle’s common shares are worth **$432,585.28 million**. Its trailing P/E is **22.2x**, meaning investors pay $22.20 for each dollar of earnings generated over the last twelve months. That earnings measure matters, but OCI consumes cash before the full cost of its equipment reaches the income statement."
+      }
+     ],
+     "table": null
     }
    ],
    "facts": [
@@ -593,20 +586,20 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Oracle Corporation earnings: what to watch",
-   "meta_description": "Oracle Corporation’s next results are expected on December 14, 2026; watch whether OCI growth becomes profitable use.",
-   "opening": "Oracle Corporation’s next results are expected on December 14, 2026. Watch whether Oracle is converting commitments into accepted capacity and cash.",
-   "closing": "The full memo also explains Oracle Corporation’s business, its rivals, its management and its risks.",
+   "title": "Oracle earnings date and guidance",
+   "meta_description": "Oracle results are expected December 14, 2026; watch whether infrastructure growth turns into cash.",
+   "opening": "Oracle expects to announce its next results on December 14, 2026. The key thing to watch is whether Oracle converts commitments into accepted capacity and cash.",
+   "closing": "The full memo also answers how Oracle makes money, who it competes with, how management is paid and what risks it faces.",
    "blocks": [
     {
-     "heading": "What has Oracle Corporation guided for fiscal 2027?",
+     "heading": "What has Oracle guided for the year?",
      "paragraphs": [
       {
-       "n": 216,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.3 — The spending ahead",
-       "text": "For fiscal 2027, management expects gross CapEx of US$90 billion–US$95 billion but guides to net cash outlay of US$70 billion. Net outlay subtracts specified customer prepayments and equipment-financing flows. That shows how much cash Oracle expects to provide itself, but it does not make the equipment free or prove that the contracts will earn attractive returns."
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Oracle’s share-price upside depends on converting its backlog into profitable OCI capacity and durable cash returns. For the year to May 2027, management guides to at least US$90 billion of revenue and US$8.10 of non-GAAP EPS. It expects US$90–95 billion of gross capital expenditure and guides to US$70 billion of net cash outlay for CapEx."
       }
      ],
      "table": {
@@ -636,13 +629,6 @@
         "Sep 10, 2026"
        ],
        [
-        "Total Revenue growth, constant currency",
-        "Year to May 2027",
-        "34.0%",
-        "34.0%",
-        "Sep 10, 2026"
-       ],
-       [
         "Net Cash outlay for Capex",
         "Year to May 2027",
         "70,000",
@@ -654,7 +640,7 @@
      }
     },
     {
-     "heading": "Did Oracle Corporation keep its past promises?",
+     "heading": "Did Oracle keep its past promises?",
      "paragraphs": [
       {
        "n": 118,
@@ -667,14 +653,21 @@
      "table": null
     },
     {
-     "heading": "What do Oracle Corporation’s last eight quarters show?",
+     "heading": "What is Oracle's revenue and profit trend?",
      "paragraphs": [
       {
-       "n": 148,
+       "n": 124,
        "section": "essay-5",
        "chapter": "5. The numbers",
-       "subsection": "5.5 — The latest quarter",
-       "text": "Revenue reached US$19,345 million, up approximately 29.6% from a year earlier. OCI revenue grew 121%, while application cloud revenue grew 10% and software revenue declined 3%. The rise shows more than signed demand: Oracle had brought additional capacity online and could deliver more service."
+       "subsection": "5.1 — Growth",
+       "text": "That growth still has to be delivered. A contract promises future revenue, but Oracle records cloud revenue as it provides working capacity. It must obtain GPUs, power, buildings and networking before a customer can use the service. The quarterly figures show that capacity is reaching customers: revenue rose from US$14,926 million in August 2025 to US$19,345 million in August 2026."
+      },
+      {
+       "n": 125,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Diluted earnings per share, or EPS, rose from US$4.34 to US$5.83 in fiscal 2026. That increase was faster than sales, but investment gains, taxes and share-count changes also mattered. The central question is therefore whether delivered infrastructure growth can earn an attractive return after the cash needed to build it."
       }
      ],
      "table": {
@@ -736,35 +729,13 @@
         "1.19",
         "1.02",
         "1.10"
-       ],
-       [
-        "Cash from operations",
-        "23,103",
-        "14,620",
-        "7,151",
-        "2,066",
-        "8,140",
-        "6,157",
-        "5,933",
-        "1,304"
-       ],
-       [
-        "**= Free cash flow**",
-        "-5,396",
-        "-1,873",
-        "-11,484",
-        "-9,967",
-        "-362",
-        "-2,923",
-        "71",
-        "-2,666"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What should you watch in Oracle Corporation’s next results?",
+     "heading": "What should I watch in Oracle's next results?",
      "paragraphs": [
       {
        "n": 228,
@@ -832,5 +803,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=ORCL&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "Oracle",
+ "first_memo_date": "2026-10-11T11:31:21Z"
 }

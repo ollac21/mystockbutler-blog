@@ -1,0 +1,727 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CPG.L",
+ "slug": "cpg-l",
+ "company": "Compass Group PLC",
+ "exchange": "LSE",
+ "currency": "USD",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-13T09:26:02Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 30.92,
+ "price_date": "2026-10-13T07:44:42Z",
+ "next_earnings": "2026-11-24",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 26,
+  "words": 16482,
+  "sources": 157
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Compass Group is a company that runs food and support services inside other organisations’ premises. Its business is simple to describe but rich in mechanics: clients hire it to operate daily services, while clients, diners and event-goers supply the money that flows through them."
+ },
+ "sources": [
+  {
+   "title": "Half-year report — 2026-05-11",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/c217b021-77ba-46a0-9c5b-358f430756c9.html"
+  },
+  {
+   "title": "Half-year report — 2025-05-14",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5652760.html"
+  },
+  {
+   "title": "Half-year report — 2024-05-15",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5182748.html"
+  }
+ ],
+ "rivals": [
+  "ARMK",
+  "MTO.L",
+  "ABM"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Compass stock forecast",
+   "meta_description": "Compass stock forecast: weighted scenarios show how earnings, cash conversion, acquisitions and debt shape possible share values.",
+   "opening": "Compass's weighted value is $31.72 in October 2027, including dividends. It hinges on profitable contract launches, retention, margins and free cash flow that helps reduce absolute debt.",
+   "closing": "The full memo also answers questions about Compass: its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Compass's shares go?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted value is $31.72 at the first date, implying a 5% total return. It becomes $32.91 at the second date, implying 11%. At the last date, it reaches $34.43, implying 18%. The base case carries 55% probability, while the bear case carries 25%. The bull case carries 20%."
+      },
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By the last date, the forecast spans $23.84 in the bear case to $46.77 in the bull case, against today’s $30.92. The range is wide because both earnings and the P/E multiple can move together."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 30.92, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 30.92, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "27.93 (-8%)",
+        "25.88 (-12%)",
+        "23.84 (-16%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "31.91 (+5%)",
+        "32.85 (+11%)",
+        "34.75 (+19%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "35.94 (+18%)",
+        "41.86 (+40%)",
+        "46.77 (+59%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "31.72 (+5%)",
+        "32.91 (+11%)",
+        "34.43 (+18%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Compass, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Bear earnings are $2,175m at the first date and $2,243m at the second, before reaching $2,311m. Bull earnings are $2,345m initially and $2,633m at the second date, then $2,956m. The bear case allows for slower growth, mobilisation delays, acquisition costs and financing pressure. The bull case assumes timely launches, stronger volume, better margins and attractive acquisition returns. Recent evidence supports the range: half-year net income was $1,069m, while June organic growth was 7.1%."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Compass really make?",
+     "paragraphs": [
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations rose from $1,604.27 million in 2021 to $3,366 million in 2025. Free cash flow reached $2,209 million, while “real free cash flow” after stock-based pay reached $2,127 million. Working capital released $186 million in 2024 but absorbed $40 million in 2025, so the later cash performance did not rely on the earlier release."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,366",
+        "3,135",
+        "2,536",
+        "2,040",
+        "1,604.27"
+       ],
+       [
+        "− Capital spending",
+        "892",
+        "901",
+        "708",
+        "586",
+        "524.71"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,209",
+        "2,007",
+        "1,613",
+        "1,260",
+        "869.95"
+       ],
+       [
+        "− Stock pay",
+        "82",
+        "68",
+        "54",
+        "43",
+        "27.40"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,127",
+        "1,939",
+        "1,559",
+        "1,217",
+        "842.55"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "1,975",
+        "1,740",
+        "1,516",
+        "1,139",
+        "901"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Compass today?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A 26.0x trailing P/E means investors pay a substantial price for the last twelve months of earnings. The 25.1x forward P/E makes a similar demand of expected earnings. The 1.2x enterprise-value-to-revenue ratio looks lower, but revenue includes the food, wages and other costs of serving meals. The 6.6x price-to-book ratio values earning power far above recorded net assets."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions; per share in US$",
+      "caption": "What an investor pays today (US$ millions; per share in US$)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "30.92"
+       ],
+       [
+        "Market value (calculated)",
+        "52,577.91"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "59,544.91"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "26.0x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.1x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "30.92"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "34.43 (+18%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 30.92,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "27.93 (-8%)",
+       "25.88 (-12%)",
+       "23.84 (-16%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "31.91 (+5%)",
+       "32.85 (+11%)",
+       "34.75 (+19%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "35.94 (+18%)",
+       "41.86 (+40%)",
+       "46.77 (+59%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "31.72 (+5%)",
+       "32.91 (+11%)",
+       "34.43 (+18%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cpg-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CPG.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Compass dividend: history, cash cover and yield",
+   "meta_description": "Compass dividend history, cash coverage, future drivers and current yield in plain English.",
+   "opening": "Compass paid 65.90 cents per share, against $2,209 million of free cash flow and $2,127 million of real free cash flow. The memo says recurring cash must be judged after necessary contract investment.",
+   "closing": "The full Compass memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Compass pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The increases are supported by a five-year record of rising DPS, from $0.191 to $0.659. The bear dip reflects weaker EPS and cash demands from acquisitions and debt, while the bull requires stronger earnings and cash conversion. Recent underlying free-cash-flow conversion of 87.8% supports the base case but does not remove the funding risk."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Underlying operating cash conversion was 87.1% in 2025, and underlying free-cash-flow conversion was 87.8%. Both support a healthy reading, but neither shows how much investment maintains existing contracts rather than funds expansion. The dividend rose to 65.90 cents, so recurring cash must be judged after necessary contract investment."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions; per share in cents",
+      "caption": "Results (US$ millions; per share in cents)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "46,070",
+        "42,002",
+        "37,907",
+        "32,617",
+        "24,533.96"
+       ],
+       [
+        "Revenue growth (calculated)",
+        "9.7%",
+        "10.8%",
+        "16.2%",
+        "32.9%",
+        "-3.9%"
+       ],
+       [
+        "Dividend per share",
+        "65.90",
+        "59.80",
+        "52.60",
+        "40.30",
+        "19.10"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Compass's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The latest cash pattern shows the trade-off. Compass paid dividends and bought back shares while also acquiring businesses. Acquisitions absorbed more cash than disposals returned, so the company issued debt and cash fell. Its own net-debt measure differs from a broader measure that includes lease liabilities and other adjustments; neither represents net cash."
+      },
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations rose from $1,604.27 million in 2021 to $3,366 million in 2025. Free cash flow reached $2,209 million, while “real free cash flow” after stock-based pay reached $2,127 million. Working capital released $186 million in 2024 but absorbed $40 million in 2025, so the later cash performance did not rely on the earlier release."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,209",
+        "2,007",
+        "1,613",
+        "1,260",
+        "869.95"
+       ],
+       [
+        "− Dividends paid",
+        "1,047",
+        "963",
+        "796",
+        "539",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "115",
+        "577",
+        "1,167",
+        "517",
+        "4.11"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "1,039",
+        "457",
+        "",
+        "200",
+        "865.84"
+       ],
+       [
+        "− Acquisitions",
+        "1,251",
+        "784",
+        "389",
+        "336",
+        "215.09"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "52.6%",
+        "76.7%",
+        "121.7%",
+        "83.8%",
+        "0.5%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Compass's dividend?",
+     "paragraphs": [
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Compass completed its $500m buyback programme in December 2024 and then prioritised investment. Its dividend policy remains approximately 50% of underlying earnings, meaning profit adjusted to exclude specified items such as acquisition-related charges. Those adjustments do not remove the cash costs themselves, so acquisition returns remain the decisive test."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,277 (2,175 / 2,345)",
+        "2,464 (2,243 / 2,633)",
+        "2,667 (2,311 / 2,956)"
+       ],
+       [
+        "Shares (millions)",
+        "1,704 (1,704 / 1,702)",
+        "1,707 (1,707 / 1,705)",
+        "1,711 (1,711 / 1,707)"
+       ],
+       [
+        "Dividends per share",
+        "0.67 (0.67 / 0.69)",
+        "0.73 (0.66 / 0.78)",
+        "0.79 (0.68 / 0.87)"
+       ],
+       [
+        "Price to earnings",
+        "23.88 (21.88 / 26.09)",
+        "22.76 (19.70 / 27.10)",
+        "22.29 (17.65 / 27.01)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "61.62"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.2%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "cents per share",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.00",
+      "30.30",
+      "45.62",
+      "56.41",
+      "61.62"
+     ],
+     "Real free cash flow per share": [
+      "47.20",
+      "68.41",
+      "89.34",
+      "113.59",
+      "125.19"
+     ],
+     "Free cash flow per share": [
+      "48.74",
+      "70.83",
+      "92.44",
+      "117.57",
+      "130.02"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/cpg-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CPG.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Compass earnings date and guidance",
+   "meta_description": "Compass reports on November 24, 2026; management guides to above 11% underlying operating profit growth and mid-to-high single-digit organic growth.",
+   "opening": "Compass’s next results are due on November 24, 2026. The key thing to watch is whether Compass turns contract wins into cash while reducing acquisition-related borrowing.",
+   "closing": "The full memo also explains Compass’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Compass guided for the year?",
+     "paragraphs": [
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Compass’s financial year ends on 30 September. On 11 May 2026, management raised its forecast for FY26 underlying operating profit growth to above 11%, then repeated it on 21 July. Underlying profit excludes specified adjusting items, while constant currency removes the effect of exchange-rate movements. The target concerns operating profit before interest and tax, not the final profit available to shareholders."
+      },
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Beyond FY26, Compass promises mid-to-high single-digit organic growth, continued margin progression and profit growing faster than revenue. But once an acquisition has been owned for a full year, it no longer supplies the same automatic comparison boost. FY26 results arrive on 24 November 2026; they should not be mistaken for formal FY27 guidance. That makes the analysts’ baseline the next piece of the story."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Has Compass kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "Pay, and promises kept",
+       "text": "Management has also delivered on net new business, meaning revenue from new contracts minus revenue from lost contracts. It was 4.5% in 2025, the fourth consecutive year within the 4%–5% target range. If prior organic revenue were £100, winning £7 and losing £2 would produce 5% net new business. That measure supports organic growth, but it does not guarantee that every new contract will be profitable."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Compass’s revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "For full earnings and cash, the half-year to March 2026 is more useful. Revenue was $24,983 million, against $22,568 million a year earlier. Operating income was $1,605 million, against $1,476 million."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "US$ millions; per share in cents",
+      "caption": "The last eight reported periods (US$ millions; per share in cents)",
+      "head": [
+       "Row",
+       "6 months to Mar 2026",
+       "6 months to Sep 2025",
+       "6 months to Mar 2025",
+       "6 months to Sep 2024",
+       "6 months to Mar 2024",
+       "6 months to Sep 2023",
+       "6 months to Mar 2023",
+       "6 months to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "24,983",
+        "23,502",
+        "22,568",
+        "21,258",
+        "20,744",
+        "19,252",
+        "18,655",
+        "17,181"
+       ],
+       [
+        "Operating income",
+        "1,605",
+        "1,488",
+        "1,476",
+        "1,164",
+        "1,420",
+        "1,267",
+        "1,046",
+        "1,062"
+       ],
+       [
+        "Net income",
+        "1,069",
+        "949",
+        "919",
+        "543",
+        "861",
+        "847",
+        "760",
+        "783"
+       ],
+       [
+        "EPS, diluted",
+        "62.90",
+        "55.80",
+        "54.10",
+        "31.80",
+        "50.40",
+        "48.70",
+        "43.40",
+        "44.10"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should investors watch in Compass’s next release?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The first checkpoint is 24 November 2026, when Compass reports FY26 results. Investors can compare completed-year profit growth with the above-11% promise and examine the starting point for FY27. New guidance will matter more than a repetition of the old target because the latest acquisitions will begin contributing differently to the annual comparison."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 24, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/cpg-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CPG.L&src=seo-earnings"
+  }
+ },
+ "short_name": "Compass",
+ "first_memo_date": "2026-10-13T09:26:02Z"
+}

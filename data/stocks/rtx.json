@@ -1,0 +1,806 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "RTX",
+ "slug": "rtx",
+ "company": "RTX Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-12T21:20:49Z",
+ "memo_date_text": "October 12, 2026",
+ "price": 186.50999,
+ "price_date": "2026-10-12T19:54:04Z",
+ "next_earnings": "2026-10-20",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 254,
+  "tables": 27,
+  "words": 16898,
+  "sources": 231
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "RTX Corporation makes aircraft engines, aircraft equipment and military systems. Its dollar comes in through equipment sales, maintenance and government contracts, then goes out through materials, factories, engineers, technicians, suppliers, investment and the costs of repairing past problems."
+ },
+ "sources": [
+  {
+   "title": "RTX — 2025 Form 10-K — February 6, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000006/rtx-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182925000005/rtx-20241231.htm"
+  },
+  {
+   "title": "2023 financing",
+   "url": "https://www.sec.gov/Archives/edgar/data/101829/000010182924000008/rtx-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "GE",
+  "BA",
+  "GD",
+  "NOC",
+  "LMT",
+  "LHX",
+  "BA.L",
+  "RR.L"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "RTX stock forecast",
+   "meta_description": "RTX's weighted forecast is $194.73 in October 2027 and $227.34 in October 2029; GTF repairs and defense delivery are key.",
+   "opening": "The weighted forecast puts RTX at $194.73 in October 2027 and $227.34 in October 2029, with the base case at 60% probability. It hinges on GTF repairs and profitable defense delivery.",
+   "closing": "The full RTX memo also answers how RTX works, who its rivals are, how management allocates capital, and what risks it carries.",
+   "blocks": [
+    {
+     "heading": "Where could RTX's shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast puts the price at $194.73 in October 2027, implying a +6% total return including dividends. The weighted price reaches $227.34 in October 2029, implying a +27% total return including dividends. The bear case has 22% probability and the base case 60%. The bull case has 18%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 186.51, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 186.51, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "22 %",
+        "153.69 (-16 %)",
+        "152.36 (-15 %)",
+        "151.16 (-14 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "200.67 (+9 %)",
+        "216.97 (+20 %)",
+        "235.66 (+32 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "225.07 (+22 %)",
+        "256.66 (+41 %)",
+        "292.72 (+62 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "194.73 (+6 %)",
+        "209.90 (+16 %)",
+        "227.34 (+27 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for RTX's base, bear and bull cases?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The multiple stays near today’s level in the base case, rising from 3.8x to 4.0x. Improving GTF output, backlog conversion and debt reduction justify a modest premium, but continuing repair costs limit expansion. The bear case falls from 3.1x to 2.9x as execution problems widen the discount. The bull case reaches 4.8x if repairs prove durable and defense capacity converts into accepted deliveries and cash."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does RTX really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "Stock compensation provides another adjustment. Deducting $519 million produces “real free cash flow” of $6,929 million. This is not an extra current-year cash payment; it recognises that employees received part of the company through shareholder dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "10,567",
+        "7,159",
+        "7,883",
+        "7,168",
+        "7,142"
+       ],
+       [
+        "− Capital spending",
+        "3,119",
+        "3,236",
+        "3,166",
+        "2,775",
+        "2,442"
+       ],
+       [
+        "**= Free cash flow**",
+        "7,448",
+        "3,923",
+        "4,717",
+        "4,393",
+        "4,700"
+       ],
+       [
+        "− Stock pay",
+        "519",
+        "437",
+        "425",
+        "420",
+        "442"
+       ],
+       [
+        "**= Real free cash flow**",
+        "6,929",
+        "3,486",
+        "4,292",
+        "3,973",
+        "4,258"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "7.8%",
+        "4.3%",
+        "6.2%",
+        "5.9%",
+        "6.6%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for RTX today?",
+     "paragraphs": [
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The trailing P/E compares the share price with the last twelve months of reported earnings. The forward P/E uses an estimate for the next twelve months, so it looks cheaper when investors expect profits to rise. At the forward multiple, the implied earnings are about US$7.94 per share. RTX’s July guidance was US$7.10–US$7.25 of adjusted earnings for calendar 2026, but that covers a different period and uses a different accounting basis. “Adjusted” earnings remove selected items, so the lower multiple is an expectation, not money already earned."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "186.50999"
+       ],
+       [
+        "Market value (calculated)",
+        "251,370"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "280,448"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "32.8x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "23.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.0%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "186.50999"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "227.34 (+27 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.8%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 186.50999,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "22 %",
+      "values": [
+       "153.69 (-16 %)",
+       "152.36 (-15 %)",
+       "151.16 (-14 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "200.67 (+9 %)",
+       "216.97 (+20 %)",
+       "235.66 (+32 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "225.07 (+22 %)",
+       "256.66 (+41 %)",
+       "292.72 (+62 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "194.73 (+6 %)",
+       "209.90 (+16 %)",
+       "227.34 (+27 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/rtx/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RTX&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "RTX dividend: payment, coverage and yield",
+   "meta_description": "RTX pays a regular dividend, with cash flow, payout history, forecasts and current yield putting the payment in context.",
+   "opening": "RTX pays $0.73 per share each quarter, and its $7,448 million of 2025 free cash flow covered dividends. After stock compensation, real free cash flow was $6,929 million.",
+   "closing": "The full memo also answers questions about RTX’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does RTX pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow more slowly than they did recently. The base case uses $3.07 per share in 2027, $3.27 in 2028 and $3.47 in 2029. The current quarterly rate is $0.73, while the company has raised dividends every year from 2021 through 2026. The bear case holds at $2.92 before reaching $3.00, reflecting remediation cash costs. The bull case reaches $3.72 as repairs ease and free cash flow exceeds guidance."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "88,603",
+        "80,738",
+        "68,920",
+        "67,074",
+        "64,388"
+       ],
+       [
+        "EPS, diluted",
+        "4.96",
+        "3.55",
+        "2.23",
+        "3.51",
+        "2.58"
+       ],
+       [
+        "Dividend per share",
+        "2.67",
+        "2.48",
+        "2.32",
+        "2.16",
+        "2.01"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does RTX’s dividend come from its cash?",
+     "paragraphs": [
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "After $3,119 million of investment, broader free cash flow was $7,448 million. That compares with $3,923 million in 2024. RTX’s own measure was $7,940 million because it excludes intangible-asset spending. The difference, $492 million, is still a real cash outflow."
+      },
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "Cash",
+       "text": "Stock compensation provides another adjustment. Deducting $519 million produces “real free cash flow” of $6,929 million. This is not an extra current-year cash payment; it recognises that employees received part of the company through shareholder dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "7,448",
+        "3,923",
+        "4,717",
+        "4,393",
+        "4,700"
+       ],
+       [
+        "− Dividends paid",
+        "3,574",
+        "3,217",
+        "3,239",
+        "3,128",
+        "2,957"
+       ],
+       [
+        "− Share buybacks",
+        "50",
+        "444",
+        "12,870",
+        "2,803",
+        "2,327"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "3,587",
+        "139",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "48.7%",
+        "93.3%",
+        "341.5%",
+        "135.0%",
+        "112.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change RTX’s dividend?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Starting from June 2026 equity, the base case reaches $71,577 million in October 2027 and $75,777 million in October 2028. It reaches $80,577 million in October 2029. The path reflects earnings growth, modest shareholder payouts and continuing debt-reduction priorities. Reported net income was $6,732 million in 2025 and $4,406 million in the first half of 2026, supporting the direction of travel."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is RTX’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash provides the harder test. The U.S. 10-year Treasury yield was 5.24%, while RTX’s regular dividend yield was 1.6%. Investors therefore need future growth and cash generation to justify the price."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 12, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "186.50999"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "2.8%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.63"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "2.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.96",
+      "2.11",
+      "2.26",
+      "2.39",
+      "2.63"
+     ],
+     "Real free cash flow per share": [
+      "2.82",
+      "2.67",
+      "2.99",
+      "2.59",
+      "5.11"
+     ],
+     "Free cash flow per share": [
+      "3.12",
+      "2.96",
+      "3.29",
+      "2.92",
+      "5.49"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/rtx/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RTX&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "RTX earnings date and guidance",
+   "meta_description": "RTX's next results are October 20, 2026; guidance covers adjusted sales, adjusted EPS and free cash flow, with deliveries and cash to watch.",
+   "opening": "RTX’s next results are scheduled for October 20, 2026. For RTX, the key test is whether deliveries and cash confirm execution.",
+   "closing": "The full memo also explains RTX’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has RTX guided for the year?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "RTX offers a path to a 27% total return by October 2029, but that outcome hinges on GTF repairs and profitable defense delivery. July 2026 guidance calls for adjusted sales of $95,000–$96,000 million. It calls for adjusted EPS of $7.10–$7.25. The company’s free cash flow guidance is $8,500–$8,750 million. The Powder Metal Matter adds a $700 million cash impact in 2026."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted sales",
+        "Year to Dec 2026",
+        "95,000",
+        "96,000",
+        "Jul 23, 2026"
+       ],
+       [
+        "Organic sales growth",
+        "Year to Dec 2026",
+        "8.0%",
+        "9.0%",
+        "Jul 23, 2026"
+       ],
+       [
+        "Adjusted EPS",
+        "Year to Dec 2026",
+        "7.10",
+        "7.25",
+        "Jul 23, 2026"
+       ],
+       [
+        "Free cash flow",
+        "Year to Dec 2026",
+        "8,500",
+        "8,750",
+        "Jul 23, 2026"
+       ],
+       [
+        "cash impact related to the Powder Metal Matter",
+        "Year to Dec 2026",
+        "700",
+        "700",
+        "Jul 23, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has RTX kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Financial delivery was strong: adjusted earnings per share beat management’s forecast. Operational delivery took longer. Calio identified roughly 30% growth in maintenance output as necessary to reduce grounded aircraft consistently. The business delivered 26% growth in 2025, then reported growth above 40% later. Maintenance, repair and overhaul is difficult because aircraft cannot earn revenue while engines are being repaired, and the work requires specialized parts, workers and certification."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is RTX’s trend in revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.2 — What analysts expect",
+       "text": "Recent results explain that confidence. RTX earned adjusted earnings per share of $1.78 in Q1, against consensus of $1.51. In Q2, it earned $1.89 against $1.66. The company has beaten consensus in each of the eight quarters through Q2 2026."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "24,708",
+        "22,076",
+        "24,238",
+        "22,478",
+        "21,581",
+        "20,306",
+        "21,623",
+        "20,089"
+       ],
+       [
+        "Operating income",
+        "2,811",
+        "2,555",
+        "2,596",
+        "2,523",
+        "2,146",
+        "2,035",
+        "2,111",
+        "2,028"
+       ],
+       [
+        "Net income",
+        "2,139",
+        "2,059",
+        "1,622",
+        "1,918",
+        "1,657",
+        "1,535",
+        "1,482",
+        "1,472"
+       ],
+       [
+        "EPS, diluted",
+        "1.57",
+        "1.51",
+        "1.19",
+        "1.41",
+        "1.22",
+        "1.14",
+        "1.10",
+        "1.09"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in RTX’s next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "RTX’s next results are scheduled for October 20, 2026. Investors should compare sales with completed output and cash against the raised outlook. Bookings would confirm demand; deliveries and cash would confirm execution."
+      },
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.6 — Pratt’s GTF fleet remediation and service execution",
+       "text": "The bottleneck can arise at either end: parts can leave shops waiting, while limited shop capacity leaves engines waiting. RTX reported PW1100 groundings down 25% year to date in Q2. MRO output was up more than 40%, and turnaround time was down 23%."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 20, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "24,708"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.57"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "20,089",
+      "21,623",
+      "20,306",
+      "21,581",
+      "22,478",
+      "24,238",
+      "22,076",
+      "24,708"
+     ],
+     "EPS, diluted": [
+      "1.09",
+      "1.10",
+      "1.14",
+      "1.22",
+      "1.41",
+      "1.19",
+      "1.51",
+      "1.57"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/rtx/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=RTX&src=seo-earnings"
+  }
+ },
+ "short_name": "RTX",
+ "first_memo_date": "2026-10-12T21:20:49Z"
+}

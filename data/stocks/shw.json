@@ -1,0 +1,811 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "SHW",
+ "slug": "shw",
+ "company": "The Sherwin-Williams Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T19:14:08Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 332.5,
+ "price_date": "2026-10-16T18:11:18Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 239,
+  "tables": 27,
+  "words": 16375,
+  "sources": 188
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sherwin-Williams makes paint and protective coatings, then sells them through company stores, retail partners and industrial channels. Its business is therefore both a manufacturer of specialized materials and a network that gets those materials to the people and companies using them."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Properties",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980025000030/shw-20241231.htm"
+  },
+  {
+   "title": "2022 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980023000007/shw-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "AXTA",
+  "PPG",
+  "AKZA.AS",
+  "RPM",
+  "4613.T",
+  "MAS",
+  "SIKA.SW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sherwin-Williams stock forecast",
+   "meta_description": "Sherwin-Williams' weighted value is $334.31 in October 2029; pricing, volume and cash flow drive bear, base and bull scenarios.",
+   "opening": "The weighted Sherwin-Williams scenario is $334.31 in October 2029. Sherwin-Williams' forecast hinges on converting an 8% price increase into durable cash growth without sacrificing volume.",
+   "closing": "The full memo answers what Sherwin-Williams does, who its rivals are, how management runs it, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "Where could Sherwin-Williams shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted value is $308.45 in October 2027, a 6% loss including dividends. It is $321.83 in October 2028, a 1% loss. By October 2029, it reaches $334.31, a 4% gain. The last-date range is $190.08 to $521.22. Today's reference price is $332.50."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 332.50, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 332.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30%",
+        "215.79 (-34%)",
+        "198.69 (-38%)",
+        "190.08 (-40%)"
+       ],
+       [
+        "Base",
+        "50%",
+        "325.30 (-1%)",
+        "336.58 (+3%)",
+        "346.08 (+7%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "405.32 (+23%)",
+        "469.68 (+43%)",
+        "521.22 (+60%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "308.45 (-6%)",
+        "321.83 (-1%)",
+        "334.31 (+4%)"
+       ]
+      ],
+      "note": "The Weighted row is the average value after giving more influence to cases with higher probabilities; it is not another possible case."
+     }
+    },
+    {
+     "heading": "What has to go right for Sherwin-Williams, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base reflects normalized 2026 guidance near its midpoint and 2027 consensus revenue of $26.26 billion. It assumes moderate growth thereafter. The bear reflects persistent weak housing and industrial demand, while the bull assumes volume recovery, successful realization of the 8% Paint Stores increase, and profitable Suvinil integration. Q2 already showed low-single-digit volume growth, but raw-material inflation pressured gross margin."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires weak housing and industrial demand to persist, customers to resist price increases, and margins to contract. Debt maturities then restrict buybacks while confidence in earnings falls. The price reaches $215.79 in October 2027 and $190.08 by October 2029. Its probability is 30% because 2025 net income fell despite sales growth, although maintenance demand and recent volume growth limit the downside case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Sherwin-Williams really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash exceeded net income in 2025. That can happen because depreciation and amortization reduce accounting profit without requiring a new cash payment in the same period. After capital spending, conventional free cash flow was $2,654.0 million. Deducting stock compensation produces an analytical “real free cash flow” measure because shareholders ultimately bear that compensation through dilution."
+      },
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending fell from $1,070.0 million in 2024 to $797.6 million in 2025. That reduction supplied $272.4 million of the improvement in conventional free cash flow. Some spending supported headquarters, technology, stores and expansion; some maintained existing operations. Sherwin-Williams does not disclose enough detail to treat the entire reduction as permanently distributable cash."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "3,451.6",
+        "3,153.2",
+        "3,521.9",
+        "1,919.9",
+        "2,244.6"
+       ],
+       [
+        "− Capital spending",
+        "797.6",
+        "1,070.0",
+        "888.4",
+        "644.5",
+        "372.0"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,654.0",
+        "2,083.2",
+        "2,633.5",
+        "1,275.4",
+        "1,872.6"
+       ],
+       [
+        "− Stock pay",
+        "123.5",
+        "138.1",
+        "115.9",
+        "99.7",
+        "97.7"
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,530.5",
+        "1,945.1",
+        "2,517.6",
+        "1,175.7",
+        "1,774.9"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "10.7%",
+        "8.4%",
+        "10.9%",
+        "5.3%",
+        "8.9%"
+       ]
+      ],
+      "note": "The company's own free cash flow is lower because it subtracts cash dividends, while our count does not; our real free cash flow then subtracts shares given to employees."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sherwin-Williams today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "332.50"
+       ],
+       [
+        "Market value (calculated)",
+        "80,717.1"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "93,312.0"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "30.6x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.1%"
+       ]
+      ],
+      "note": "The enterprise value is a little too low because it leaves out finance leases, which are another form of debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "332.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "334.31 (+4%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 332.5,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30%",
+      "values": [
+       "215.79 (-34%)",
+       "198.69 (-38%)",
+       "190.08 (-40%)"
+      ]
+     },
+     "Base": {
+      "probability": "50%",
+      "values": [
+       "325.30 (-1%)",
+       "336.58 (+3%)",
+       "346.08 (+7%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "405.32 (+23%)",
+       "469.68 (+43%)",
+       "521.22 (+60%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "308.45 (-6%)",
+       "321.83 (-1%)",
+       "334.31 (+4%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/shw/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SHW&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Sherwin-Williams dividend",
+   "meta_description": "Sherwin-Williams pays $3.20 per share in the current forecast, but recent payouts exceeded free cash flow; its dividend yield is 1.0%.",
+   "opening": "Sherwin-Williams pays a current $3.20 dividend per share, with the forecast rising from $3.36 per share in October 2027 to $3.84 by October 2029. Its conventional free cash flow was $2,654.0 million in 2025, but shareholder payouts exceeded free cash flow during 2021–2025.",
+   "closing": "The full memo also explains Sherwin-Williams’ business, its rivals, its management decisions and its risks.",
+   "blocks": [
+    {
+     "heading": "How much does Sherwin-Williams pay per share?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case, from $3.36 per share in October 2027 to $3.84 by October 2029. The bear case freezes the current $3.20 rate, while the bull case reaches $4.24. The base follows five years without an annual cut and moderates increases because payouts have approached free cash flow and debt maturities remain material."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,984 (2,498 / 3,148)",
+        "3,176 (2,418 / 3,462)",
+        "3,344 (2,438 / 3,736)"
+       ],
+       [
+        "Shares (millions)",
+        "238 (243 / 233)",
+        "236 (243 / 228)",
+        "232 (244 / 222)"
+       ],
+       [
+        "Dividends per share",
+        "3.36 (3.20 / 3.44)",
+        "3.60 (3.20 / 3.84)",
+        "3.84 (3.20 / 4.24)"
+       ],
+       [
+        "Price to earnings",
+        "26.00 (21.00 / 30.00)",
+        "25.00 (20.00 / 31.00)",
+        "24.00 (19.00 / 31.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Sherwin-Williams' dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Sherwin-Williams paid shareholders more than its free cash flow supported during 2021–2025, so borrowing helped finance its capital choices."
+      },
+      {
+       "n": 84,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operations and capital spending. A household that has $100 left after regular bills but spends $120 on dividends and buybacks must borrow or use savings to cover the gap. Sherwin-Williams did the corporate equivalent: strong operating cash coexisted with shareholder payouts that exceeded free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,654.0",
+        "2,083.2",
+        "2,633.5",
+        "1,275.4",
+        "1,872.6"
+       ],
+       [
+        "− Dividends paid",
+        "789.8",
+        "723.4",
+        "623.7",
+        "618.5",
+        "587.1"
+       ],
+       [
+        "− Share buybacks",
+        "1,656.4",
+        "1,738.8",
+        "1,432.0",
+        "883.2",
+        "2,752.3"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "207.8",
+        "",
+        "577.8",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "379.0",
+        "",
+        "226.3",
+        "1,466.8"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "92.2%",
+        "118.2%",
+        "78.1%",
+        "117.7%",
+        "178.3%"
+       ]
+      ],
+      "note": "The company's own net debt is lower because it leaves out finance leases and real estate financing debts that we include."
+     }
+    },
+    {
+     "heading": "What could change Sherwin-Williams' dividend?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "Through 2027, the key financial test is whether cash generation can fund dividends, investment and buybacks while addressing the larger maturity concentration due in 2027. Stronger cash flow would support the base-to-bull transition; refinancing pressure or curtailed repurchases would reinforce the bear path."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Sherwin-Williams' dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At $332.50 per share, market value is $80,717.1 million. Enterprise value is $93,312.0 million. The shares trade at 30.6x trailing earnings and 27.5x forward earnings. Free cash flow yield is 3.3%; real free cash flow yield is 3.1%. Dividend yield is 1.0%; buyback yield is 2.1%. Operating margin recovered through 2025 as revenue growth slowed. Sherwin-Williams’ free cash flow—cash from operations minus capital spending—improved in 2025 after weaker 2024 cash generation. Diluted EPS fell in 2025, while net debt rose and buybacks sometimes exceeded free cash flow."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "332.50"
+       ],
+       [
+        "Market value (calculated)",
+        "80,717.1"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "27.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.3%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "3.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.0%"
+       ]
+      ],
+      "note": "The enterprise value is a little too low because it leaves out finance leases, which are another form of debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.15"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; share-count change in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.20",
+      "2.36",
+      "2.41",
+      "2.85",
+      "3.15"
+     ],
+     "Real free cash flow per share": [
+      "6.65",
+      "4.49",
+      "9.75",
+      "7.65",
+      "10.11"
+     ],
+     "Free cash flow per share": [
+      "7.01",
+      "4.87",
+      "10.20",
+      "8.20",
+      "10.60"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/shw/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SHW&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sherwin-Williams earnings date and guidance",
+   "meta_description": "Sherwin-Williams reports on October 27, 2026; guidance is $10.92–$11.32 diluted EPS and $550.0 million of capital spending.",
+   "opening": "Sherwin-Williams reports third-quarter results on October 27, 2026. Sherwin-Williams must show that the September price increase is holding in realized pricing while volume holds and raw-material pressure eases.",
+   "closing": "The full memo also answers questions about Sherwin-Williams, its business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Sherwin-Williams guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides 2026 diluted EPS to $10.92–$11.32. Adjusted diluted EPS is $11.80–$12.20. The adjusted figure excludes selected expenses, including acquisition-related amortization and severance. Planned 2026 capital spending is $550.0 million. The September 1 Paint Stores price increase must prove durable in realized pricing and volume."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Diluted net income per share",
+        "Year to Dec 2026",
+        "10.92",
+        "11.32",
+        "Jul 28, 2026"
+       ],
+       [
+        "Adjusted diluted net income per share",
+        "Year to Dec 2026",
+        "11.80",
+        "12.20",
+        "Jul 28, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "550.0",
+        "550.0",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "The adjusted diluted net income per share is higher because it removes acquisition and restructuring costs from the company’s reported profit."
+     }
+    },
+    {
+     "heading": "Did Sherwin-Williams keep its employee promise?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Employee promises provide a second test. Sherwin normally matched all employee contributions up to 6% of eligible pay. It paused that payment on October 1, 2025, and restored it on February 1, 2026. The company later contributed approximately US$36 million to make up the paused 2025 amount. That restored the benefit, but the evidence does not show how many layoffs the suspension prevented."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Sherwin-Williams results shown over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose 7.5% to $6,789.3 million. Operating income increased 11.9% to $1,230.9 million, while net income increased 11.8% to $843.6 million. Gross margin slipped from 49.4% to 49.2%, so the improvement came from better control of expenses and other operating items rather than from production margin alone."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,789.3",
+        "5,666.9",
+        "5,595.9",
+        "6,358.2",
+        "6,314.5",
+        "5,305.7",
+        "5,297.2",
+        "6,162.5"
+       ],
+       [
+        "Operating income",
+        "1,230.9",
+        "804.6",
+        "778.7",
+        "1,177.4",
+        "1,100.4",
+        "756.4",
+        "698.2",
+        "1,133.1"
+       ],
+       [
+        "Net income",
+        "843.6",
+        "534.7",
+        "476.8",
+        "833.1",
+        "754.7",
+        "503.9",
+        "480.1",
+        "806.2"
+       ],
+       [
+        "EPS, diluted",
+        "3.43",
+        "2.15",
+        "1.92",
+        "3.35",
+        "3.00",
+        "2.00",
+        "1.90",
+        "3.18"
+       ]
+      ],
+      "note": "The revenue figures from October 2025 onward include Suvinil, so the earlier and later quarters are not perfectly comparable."
+     }
+    },
+    {
+     "heading": "What should Sherwin-Williams watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Sherwin-Williams will report third-quarter results on October 27, 2026. September’s price increase affected only the final month of that quarter, so investors should compare realized pricing with gallons sold and raw-material costs. Higher sales dollars alone will not prove that the increase protected profit."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The important signals are therefore broader than revenue and earnings: price realization, operating cash, the pace of buybacks, and any development that makes a legal or environmental obligation measurable. Together they will show whether Sherwin-Williams can pay for what comes next while keeping its financial room to act."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "6,789.3"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.43"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,162.5",
+      "5,297.2",
+      "5,305.7",
+      "6,314.5",
+      "6,358.2",
+      "5,595.9",
+      "5,666.9",
+      "6,789.3"
+     ],
+     "EPS, diluted": [
+      "3.18",
+      "1.90",
+      "2.00",
+      "3.00",
+      "3.35",
+      "1.92",
+      "2.15",
+      "3.43"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/shw/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SHW&src=seo-earnings"
+  }
+ },
+ "short_name": "Sherwin-Williams",
+ "first_memo_date": "2026-10-16T19:14:08Z"
+}

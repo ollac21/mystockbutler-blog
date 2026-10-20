@@ -1,0 +1,842 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "WPM.TO",
+ "slug": "wpm-to",
+ "company": "Wheaton Precious Metals Corp.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-13T19:49:43Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 194.06,
+ "price_date": "2026-10-13T18:29:15Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 264,
+  "tables": 27,
+  "words": 17324,
+  "sources": 161
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Wheaton Precious Metals is a financier of mines that turns rights to future metal into sales. To understand how a dollar moves through it, follow the contract from the mine owner to the metal buyer, then separate the operating spread from the investment that made it possible."
+ },
+ "sources": [
+  {
+   "title": "June 2026 stream accounting",
+   "url": "https://www.sec.gov/Archives/edgar/data/1323404/000119312526338641/d15525dex992.htm"
+  },
+  {
+   "title": "2026 interim statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1323404/000119312526338641/d15525dex993.htm"
+  },
+  {
+   "title": "2026 circular",
+   "url": "https://www.sec.gov/Archives/edgar/data/1323404/000110465926038311/wpm-20260401xex99d2.htm"
+  }
+ ],
+ "rivals": [
+  "FNV",
+  "RGLD",
+  "TFPM",
+  "OR.TO",
+  "GROY",
+  "ELE",
+  "ALS.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Wheaton stock forecast",
+   "meta_description": "Wheaton stock forecast: probability-weighted scenarios, delivery and debt drivers, cash generation, and valuation.",
+   "opening": "Wheaton's probability-weighted price is CAD 192.55 in October 2027, CAD 202.79 in October 2028, and CAD 223.19 in October 2029. Wheaton's outcome hinges on reliable Antamina shipments, timely project ramps and falling debt before April 2028.",
+   "closing": "The full memo also explains Wheaton's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Wheaton's shares go in the forecast?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted price is CAD 192.55 in October 2027, CAD 202.79 in October 2028, and CAD 223.19 in October 2029. Including dividends, those outcomes represent approximately 0%, 6% and 17% from today’s CAD 194.06. By October 2029, the bear case reaches CAD 103.31 while the bull case reaches CAD 423.60."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per WPM.TO share at each date; in brackets the return since today's 194.06, dividends included",
+      "caption": "What the shares could be worth (CAD per WPM.TO share at each date; in brackets the return since today's 194.06, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "108.44 (-44 %)",
+        "88.70 (-53 %)",
+        "103.31 (-45 %)"
+       ],
+       [
+        "Base",
+        "54 %",
+        "201.91 (+5 %)",
+        "210.45 (+10 %)",
+        "218.56 (+15 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "295.34 (+53 %)",
+        "357.30 (+85 %)",
+        "423.60 (+120 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "192.55 (-0 %)",
+        "202.79 (+6 %)",
+        "223.19 (+17 %)"
+       ]
+      ],
+      "note": "The weighted value is an average based on the chances of each case, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Wheaton?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The November 6, 2026 third-quarter call should test whether Salobo and Peñasquito improve, Antamina ships a full quarter and debt begins to fall. Koné’s hard-rock circuit is scheduled for Q2 2027. Spring Valley targets first gold in the first half of 2028, close to the April 2028 term-loan maturity. Reliable Antamina shipments and timely project ramps through 2027–2028 support the bull case; delays or weaker prices slow debt repayment. The investment turns on reliable Antamina shipments, on-time project ramps and falling debt before April 2028."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Wheaton really make?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending of US$1,341,369 thousand in 2025 left free cash flow of US$563,107 thousand after lease payments. After deducting stock compensation as an economic cost, real free cash flow was US$556,632 thousand. The five-year record is lumpy because stream purchases and milestone payments arrive irregularly."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,904,981",
+        "1,027,581",
+        "750,809",
+        "743,424",
+        "845,145"
+       ],
+       [
+        "− Capital spending",
+        "1,341,369",
+        "655,215",
+        "671,361",
+        "153,429",
+        "525,962"
+       ],
+       [
+        "− Lease payments",
+        "505",
+        "594",
+        "691",
+        "800",
+        "780"
+       ],
+       [
+        "**= Free cash flow**",
+        "563,107",
+        "371,772",
+        "78,757",
+        "589,195",
+        "318,403"
+       ],
+       [
+        "− Stock pay",
+        "6,475",
+        "6,703",
+        "6,438",
+        "5,846",
+        "5,262"
+       ],
+       [
+        "**= Real free cash flow**",
+        "556,632",
+        "365,069",
+        "72,319",
+        "583,349",
+        "313,141"
+       ]
+      ],
+      "note": "The capital spending here is not mainly money for equipment; it is money used to buy mineral streaming and royalty rights, so the free cash flow is tailored to this company's business."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Wheaton today?",
+     "paragraphs": [
+      {
+       "n": 185,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "EV/EBITDA compares enterprise value with earnings before interest, tax, depreciation and depletion. Wheaton’s reported multiple is 22.98x, but adding depletion back does not make the original purchase free. Operating cash can also be committed to new streams: existing contracts generated US$650 million of operating cash flow in the second quarter of 2026, while upfront stream payments reached US$4.5 billion. That helps explain a thin free-cash-flow yield and a dividend yield that leaves the investment case dependent mainly on future growth."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ thousands",
+      "caption": "What an investor pays today (C$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "194.06"
+       ],
+       [
+        "Market value (calculated)",
+        "88,134,283"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "90,796,054"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "30.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.9%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": "The enterprise value leaves out lease liabilities, so it may understate what the whole business would cost because leases are obligations too."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "194.06"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "223.19 (+17 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "27.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 136.26707336973575,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "108.44 (-44 %)",
+       "88.70 (-53 %)",
+       "103.31 (-45 %)"
+      ]
+     },
+     "Base": {
+      "probability": "54 %",
+      "values": [
+       "201.91 (+5 %)",
+       "210.45 (+10 %)",
+       "218.56 (+15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "295.34 (+53 %)",
+       "357.30 (+85 %)",
+       "423.60 (+120 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "192.55 (-0 %)",
+       "202.79 (+6 %)",
+       "223.19 (+17 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/wpm-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WPM.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Wheaton dividend",
+   "meta_description": "Wheaton pays a progressive dividend, with cash coverage uneven after stream investments and debt financing.",
+   "opening": "Wheaton's dividend began at $0.155 per share and reached $0.195 in 2026. Wheaton's cash coverage is uneven: dividends were paid every year from 2021 through 2025, and dividends exceeded free cash flow in a weaker year.",
+   "closing": "The full Wheaton memo also examines Wheaton's streaming business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Wheaton pay per share?",
+     "paragraphs": [
+      {
+       "n": 97,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.2 — The big decisions",
+       "text": "Shareholders now have a more predictable claim on that cash. Wheaton replaced a dividend tied to 30% of trailing average operating cash flow with a progressive quarterly policy. The dividend began at $0.155 per share and reached $0.195 in 2026. That expectation must coexist with taxes, new streams, debt repayment and weaker metal prices."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.24",
+        "1.17",
+        "1.19",
+        "1.48",
+        "1.67"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.65",
+        "0.61",
+        "0.58",
+        "0.52",
+        "0.48"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.59",
+        "0.20",
+        "",
+        "0.78",
+        "0.22"
+       ]
+      ],
+      "note": "Real free cash flow per share is slightly lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does Wheaton cover its dividend with cash?",
+     "paragraphs": [
+      {
+       "n": 100,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Dividends were paid every year from 2021 through 2025, while Wheaton made no share buybacks. In a weaker cash-flow year, dividends exceeded the cash generated in that year, so the company relied on its accumulated reserve. That is manageable for a time, but repeated shortfalls would consume the cash needed for stream funding and debt service."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: where the free cash flow went (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "563,107",
+        "371,772",
+        "78,757",
+        "589,195",
+        "318,403"
+       ],
+       [
+        "− Dividends paid",
+        "296,367",
+        "279,050",
+        "265,109",
+        "237,097",
+        "218,052"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "266,740",
+        "92,722",
+        "",
+        "352,098",
+        "100,351"
+       ],
+       [
+        "Paid to shareholders",
+        "296,367",
+        "279,050",
+        "265,109",
+        "237,097",
+        "218,052"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "52.6%",
+        "75.1%",
+        "336.6%",
+        "40.2%",
+        "68.5%"
+       ]
+      ],
+      "note": "In 2023, the company paid shareholders more than three times the cash it made, using money it had already saved or received from elsewhere."
+     }
+    },
+    {
+     "heading": "What could change Wheaton's dividend?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends per share rise from $0.825 in October 2027 to $0.945 in October 2029 in the base case. The bear holds at $0.78 initially before settling at $0.66, while the bull reaches $1.155. The current quarterly rate is $0.195, implying a $0.78 annual run-rate. A progressive policy and the recent 18% increase support measured growth, but the board retains discretion and debt service can force a pause or cut."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "2,850 (2,040 / 3,500)",
+        "3,050 (1,900 / 4,000)",
+        "3,250 (2,050 / 4,500)"
+       ],
+       [
+        "Shares (millions)",
+        "454 (454 / 454)",
+        "455 (454 / 455)",
+        "455 (455 / 455)"
+       ],
+       [
+        "Dividends per share",
+        "0.82 (0.78 / 0.85)",
+        "0.89 (0.66 / 0.97)",
+        "0.94 (0.66 / 1.16)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "23.00 (18.00 / 27.00)",
+        "22.00 (16.00 / 28.00)",
+        "21.00 (17.00 / 29.00)"
+       ],
+       [
+        "Net debt",
+        "1,127 (2,122 / 243)",
+        "-79.00 (2,091 / -2,119)",
+        "-1,547 (1,869 / -4,898)"
+       ]
+      ],
+      "note": "Negative net debt means the company has more cash than borrowed money."
+     }
+    },
+    {
+     "heading": "What is Wheaton's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 185,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "EV/EBITDA compares enterprise value with earnings before interest, tax, depreciation and depletion. Wheaton’s reported multiple is 22.98x, but adding depletion back does not make the original purchase free. Operating cash can also be committed to new streams: existing contracts generated US$650 million of operating cash flow in the second quarter of 2026, while upfront stream payments reached US$4.5 billion. That helps explain a thin free-cash-flow yield and a dividend yield that leaves the investment case dependent mainly on future growth."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.65"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "0.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.48",
+      "0.52",
+      "0.58",
+      "0.61",
+      "0.65"
+     ],
+     "Real free cash flow per share": [
+      "0.69",
+      "1.29",
+      "0.16",
+      "0.80",
+      "1.22"
+     ],
+     "Free cash flow per share": [
+      "0.71",
+      "1.30",
+      "0.17",
+      "0.82",
+      "1.24"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/wpm-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WPM.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Wheaton earnings date and guidance",
+   "meta_description": "Wheaton's next results are expected on November 5, 2026; guidance, recent results and debt are the key points to watch.",
+   "opening": "Wheaton's next results are expected on November 5, 2026. Watch whether reliable Antamina shipments help debt begin to fall.",
+   "closing": "The full memo answers questions about Wheaton's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Wheaton guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Wheaton’s weighted return could be roughly flat at the first forecast date and 17% higher at the last, including dividends, if deliveries support growth and cash repays debt. Management guides to 860,000–940,000 GEOs in 2026. GEOs are gold-equivalent ounces, combining different metals by their gold value. Management said 3.0% of forecast production would come from assets in construction or ramp-up."
+      },
+      {
+       "n": 212,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management reaffirmed its 2026 production guidance in August. The first half produced approximately 415,000 GEOs, leaving a substantial second-half increase to reach the target. Salobo and Peñasquito sequencing, plus a full quarter from the Antamina stream, are expected to do most of the work. Only 3.0% of forecast annual production comes from assets still being built or ramped up."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "attributable production — ounces of gold",
+        "Year to Dec 2026",
+        "400,000",
+        "430,000",
+        "Aug 6, 2026"
+       ],
+       [
+        "attributable production — million ounces of silver",
+        "Year to Dec 2026",
+        "27",
+        "29",
+        "Aug 6, 2026"
+       ],
+       [
+        "attributable production — GEOs of other metals",
+        "Year to Dec 2026",
+        "19,000",
+        "21,000",
+        "Aug 6, 2026"
+       ],
+       [
+        "annual production — GEOs",
+        "Year to Dec 2026",
+        "860,000",
+        "940,000",
+        "Aug 6, 2026"
+       ],
+       [
+        "forecast production delivered from assets currently in construction or various stages of ramp-up",
+        "Year to Dec 2026",
+        "3.0%",
+        "3.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "payment for the 2025 year (US$ millions)",
+        "Year to Dec 2027",
+        "243",
+        "243",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The annual production total is not all gold: it converts silver and other metals into an equivalent amount of gold using assumed prices."
+     }
+    },
+    {
+     "heading": "Did Wheaton keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "There is evidence of delivery. Wheaton’s February 2026 production update confirmed that 2025 output exceeded guidance. The CFO transition occurred in 2025, and the CEO transition followed in 2026. Those results support credit for execution, while the longer test of future investment returns remains open."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Wheaton's last eight quarters of results?",
+     "paragraphs": [
+      {
+       "n": 174,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached US$929,201 thousand, against US$503,218 thousand in Q2 2025. Net income rose from US$292,270 thousand to US$543,236 thousand. Operating cash flow also increased, but the operating explanation was smaller than the revenue headline: production grew about 6%, while sales volumes grew about 14%. Realized GEO prices grew about 61%, so the market did most of the work."
+      },
+      {
+       "n": 176,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The sequential comparison was weaker. Gross margin fell from 77.6% to 74.0%, and operating income slipped from US$674,793 thousand to US$667,058 thousand. New finance costs and the first substantial global-minimum-tax cash payment added pressure to cash generation."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "929,201",
+        "901,469",
+        "864,714",
+        "476,257",
+        "503,218",
+        "470,411",
+        "380,516",
+        "308,253"
+       ],
+       [
+        "Gross margin",
+        "74.0%",
+        "77.6%",
+        "76.7%",
+        "70.5%",
+        "70.2%",
+        "67.8%",
+        "65.0%",
+        "64.0%"
+       ],
+       [
+        "Operating income",
+        "667,058",
+        "674,793",
+        "645,756",
+        "315,506",
+        "329,695",
+        "290,684",
+        "117,621",
+        "175,945"
+       ],
+       [
+        "Net income",
+        "543,236",
+        "582,044",
+        "558,250",
+        "367,216",
+        "292,270",
+        "253,984",
+        "88,148",
+        "154,635"
+       ],
+       [
+        "EPS, diluted",
+        "1.19",
+        "1.28",
+        "1.23",
+        "0.81",
+        "0.64",
+        "0.56",
+        "0.19",
+        "0.34"
+       ]
+      ],
+      "note": "The large capital spending amount in June 2026 is mainly money spent buying streaming and royalty rights, which makes free cash flow look sharply negative."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "929,201"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.19"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "308,253",
+      "380,516",
+      "470,411",
+      "503,218",
+      "476,257",
+      "864,714",
+      "901,469",
+      "929,201"
+     ],
+     "EPS, diluted": [
+      "0.34",
+      "0.19",
+      "0.56",
+      "0.64",
+      "0.81",
+      "1.23",
+      "1.28",
+      "1.19"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/wpm-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=WPM.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Wheaton",
+ "first_memo_date": "2026-10-13T19:49:43Z"
+}

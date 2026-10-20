@@ -1,0 +1,848 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "VZ",
+ "slug": "vz",
+ "company": "Verizon Communications Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T12:13:18Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 42.78,
+ "price_date": "2026-10-12T20:00:03Z",
+ "next_earnings": "2026-10-26",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 255,
+  "tables": 26,
+  "words": 16768,
+  "sources": 431
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Verizon sells the connections that let people use phones, get online at home, and keep businesses communicating. To understand its business, follow what it sells, where a dollar comes from, and what Verizon must spend to deliver it."
+ },
+ "sources": [
+  {
+   "title": "2025 cash-flow statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000007/vz-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000006/vz-20241231.htm"
+  },
+  {
+   "title": "2023 cash-flow statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/732712/000073271224000010/vz-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "T",
+  "TMUS",
+  "CMCSA",
+  "CHTR",
+  "ECHO",
+  "OPTU",
+  "LUMN",
+  "CABO",
+  "CCOI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Verizon stock forecast",
+   "meta_description": "Verizon stock forecast: weighted value reaches $56.40 by October 2029, hinging on service growth, retention, broadband investment and debt reduction.",
+   "opening": "Verizon’s weighted forecast reaches $56.40 by October 2029, hinging on durable service growth, customer retention, productive broadband investment and debt reduction. The investment works if Verizon turns network scale and Frontier’s fiber into cash while reducing debt.",
+   "closing": "The full memo also explains Verizon’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Verizon’s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Verizon’s weighted value rises to $44.04 in October 2027, $49.68 in October 2028 and $56.40 in October 2029, equivalent to returns of 10%, 30% and 52% including dividends. The range is wide: by October 2029, the bear case reaches $21.88 while the bull case reaches $93.57, against today’s $42.78."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 42.78, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 42.78, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "29.78 (-24%)",
+        "25.63 (-27%)",
+        "21.88 (-29%)"
+       ],
+       [
+        "Base",
+        "56%",
+        "47.64 (+18%)",
+        "54.88 (+42%)",
+        "63.05 (+68%)"
+       ],
+       [
+        "Bull",
+        "16%",
+        "56.39 (+38%)",
+        "73.58 (+86%)",
+        "93.57 (+140%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "44.04 (+10%)",
+        "49.68 (+30%)",
+        "56.40 (+52%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Verizon?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA is the central operating assumption. The base case rises from $53,306 million in October 2027 to $55,171 million and then $57,102 million, or growth of 3.0% followed by 3.5% annually. That exceeds the 2021–2025 historical compound growth of about 0.8%, but remains below the latest quarterly growth of 7.2%. Service revenue guidance, improved additions and Frontier’s expected savings support the base path, while debt and network investment limit margin expansion."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $49,423 million before recovering slowly to $49,670 million and $50,167 million. Falling ARPA, flat wireless-service guidance and slower fixed-wireless additions justify the initial decline. The bull case reaches $54,858 million, $58,150 million and $61,639 million on sustained 6% growth, requiring lower churn, successful broadband conversion and timely Frontier savings."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "53,306 (49,423 / 54,858)",
+        "55,171 (49,670 / 58,150)",
+        "57,102 (50,167 / 61,639)"
+       ],
+       [
+        "Shares (millions)",
+        "4,062 (4,127 / 4,044)",
+        "4,003 (4,128 / 3,971)",
+        "3,948 (4,130 / 3,905)"
+       ],
+       [
+        "Dividends per share",
+        "2.83 (2.83 / 2.83)",
+        "2.90 (2.83 / 2.97)",
+        "2.97 (2.83 / 3.11)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "6.60 (5.80 / 7.00)",
+        "6.70 (5.40 / 7.50)",
+        "6.80 (5.00 / 8.00)"
+       ],
+       [
+        "Net debt",
+        "158,318 (163,736 / 155,966)",
+        "149,966 (162,398 / 143,930)",
+        "139,390 (160,469 / 127,716)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Verizon really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash was $37,137 million in 2025. After capital spending including wireless licences of $17,461 million, free cash flow was $19,676 million. Subtracting $815 million of stock compensation gives analytical “real free cash flow” of $18,861 million. Employees receive shares instead of cash, but existing shareholders bear dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "37,137",
+        "36,912",
+        "37,475",
+        "37,141",
+        "39,539"
+       ],
+       [
+        "− Capital spending",
+        "17,461",
+        "17,990",
+        "24,563",
+        "26,740",
+        "67,882"
+       ],
+       [
+        "**= Free cash flow**",
+        "19,676",
+        "18,922",
+        "12,912",
+        "10,401",
+        "-28,343"
+       ],
+       [
+        "− Stock pay",
+        "815",
+        "795",
+        "533",
+        "609",
+        "625"
+       ],
+       [
+        "**= Real free cash flow**",
+        "18,861",
+        "18,127",
+        "12,379",
+        "9,792",
+        "-28,968"
+       ],
+       [
+        "Free cash flow, % of revenue",
+        "14.2%",
+        "14.0%",
+        "9.6%",
+        "7.6%",
+        "-21.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Verizon today?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At **$42.78**, the shares value Verizon at about **$178 billion**. Its trailing P/E, or price divided by recent earnings per share, is **11.1x**. The forward P/E is **8.2x**, but that cheaper figure depends on expected earnings rather than money already earned."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "42.78"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "56.40 (+52%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "10.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "8.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 42.78,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "29.78 (-24%)",
+       "25.63 (-27%)",
+       "21.88 (-29%)"
+      ]
+     },
+     "Base": {
+      "probability": "56%",
+      "values": [
+       "47.64 (+18%)",
+       "54.88 (+42%)",
+       "63.05 (+68%)"
+      ]
+     },
+     "Bull": {
+      "probability": "16%",
+      "values": [
+       "56.39 (+38%)",
+       "73.58 (+86%)",
+       "93.57 (+140%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "44.04 (+10%)",
+       "49.68 (+30%)",
+       "56.40 (+52%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/vz/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VZ&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Verizon dividend: cash coverage",
+   "meta_description": "Verizon pays a regular dividend supported by positive free cash flow; the full memo covers its yield, plans, business and risks.",
+   "opening": "Verizon paid $11,481 million in dividends in 2025 against $19,676 million of free cash flow. Verizon's current quarterly rate is $0.7075, while 2025 real free cash flow was $18,861 million.",
+   "closing": "The full memo also explains Verizon's business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Verizon pay its shareholders?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends are $2.83 per share in the first period for all cases because the current quarterly rate is $0.7075. The base case then rises to $2.90 and $2.97, matching approximately 2.5% annual increases and the company’s long record of increases. The bear case freezes at $2.83 because debt and investment compete for cash; the bull case reaches $2.97 and $3.11 because stronger cash generation supports approximately 5% increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share",
+        "4.65",
+        "4.48",
+        "3.06",
+        "2.47",
+        "-6.83"
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.71",
+        "2.66",
+        "2.62",
+        "2.57",
+        "2.52"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "1.82",
+        "1.72",
+        "0.35",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "",
+        "",
+        "",
+        "0.22",
+        "9.48"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Verizon's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 71,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The position improved unevenly. By 2025, free cash flow reached $19,676 million, while dividends were $11,481 million. Verizon had cash left after payouts, and it made no share repurchases during these five years. In 2025, gross debt rose even as broader net debt edged down because cash and short-term investments also increased."
+      },
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash was $37,137 million in 2025. After capital spending including wireless licences of $17,461 million, free cash flow was $19,676 million. Subtracting $815 million of stock compensation gives analytical “real free cash flow” of $18,861 million. Employees receive shares instead of cash, but existing shareholders bear dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "19,676",
+        "18,922",
+        "12,912",
+        "10,401",
+        "-28,343"
+       ],
+       [
+        "− Dividends paid",
+        "11,481",
+        "11,249",
+        "11,025",
+        "10,805",
+        "10,445"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "7,699",
+        "7,248",
+        "1,456",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "",
+        "",
+        "",
+        "929",
+        "39,361"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Verizon's dividend?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2.5%–3.0% mobility and broadband service-revenue growth in 2026, with 4.0% growth in the fourth quarter. Its adjusted-EPS target is $4.99–$5.04, with expected growth of 6.0%–7.0%. It targets 875,000–1,000,000 retail postpaid phone net additions and $16,000 million–$16,500 million of capital expenditures. It also targets at least 2,000,000 fiber passings in 2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Verizon's dividend yield today against its price?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At **$42.78**, the shares value Verizon at about **$178 billion**. Its trailing P/E, or price divided by recent earnings per share, is **11.1x**. The forward P/E is **8.2x**, but that cheaper figure depends on expected earnings rather than money already earned."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "42.78"
+       ],
+       [
+        "Market value (calculated)",
+        "177,741.28"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "11.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "6.6%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.71"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "6.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "10.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "11.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.52",
+      "2.57",
+      "2.62",
+      "2.66",
+      "2.71"
+     ],
+     "Real free cash flow per share": [
+      "-6.98",
+      "2.33",
+      "2.94",
+      "4.29",
+      "4.46"
+     ],
+     "Free cash flow per share": [
+      "-6.83",
+      "2.47",
+      "3.06",
+      "4.48",
+      "4.65"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/vz/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VZ&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Verizon earnings date and guidance",
+   "meta_description": "The next Verizon results on October 26, 2026 put service growth, churn, cash and debt in focus.",
+   "opening": "The next results for Verizon are expected on October 26, 2026. Watch service growth.",
+   "closing": "The full memo also answers how Verizon's business works, who its rivals are, how Verizon's management operates, and what risks Verizon faces.",
+   "blocks": [
+    {
+     "heading": "What has Verizon guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2.5%–3.0% mobility and broadband service-revenue growth in 2026, with 4.0% growth in the fourth quarter. Its adjusted-EPS target is $4.99–$5.04, with expected growth of 6.0%–7.0%. It targets 875,000–1,000,000 retail postpaid phone net additions and $16,000 million–$16,500 million of capital expenditures. It also targets at least 2,000,000 fiber passings in 2026."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Mobility and broadband service revenue growth",
+        "Year to Dec 2026",
+        "2.5%",
+        "3.0%",
+        "Jul 24, 2026"
+       ],
+       [
+        "Adjusted EPS",
+        "Year to Dec 2026",
+        "4.99",
+        "5.04",
+        "Jul 24, 2026"
+       ],
+       [
+        "Adjusted EPS, year-over-year growth",
+        "Year to Dec 2026",
+        "6.0%",
+        "7.0%",
+        "Jul 24, 2026"
+       ],
+       [
+        "Total retail postpaid phone net additions (connections)",
+        "Year to Dec 2026",
+        "875,000",
+        "1,000,000",
+        "Jul 24, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "Year to Dec 2026",
+        "16,000",
+        "16,500",
+        "Jul 24, 2026"
+       ],
+       [
+        "Fiber build pace (passings)",
+        "Year to Dec 2026",
+        "2,000,000",
+        "",
+        "Jan 30, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Verizon keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The earlier 2023–2025 cycle shows why the rules deserve attention. Adjusted cumulative free cash flow was US$55.7 billion against a US$57.0 billion target. The relevant portion still vested at 98%, because the payout curve already awarded 90% at an earlier threshold and rose toward the target. Other measures brought the overall PSU payout to 78%."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Verizon's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell year over year, while mobility and broadband service revenue rose 2.8%. Equipment revenue fell nearly 20% as customers kept phones longer and Verizon reduced subsidies. Gross margin rose from 59.8% to 61.8%, showing how fewer handset sales can improve the mix."
+      },
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating income fell from $8,172 million to $7,179 million. The main distortion was a $746 million pre-tax disposal loss on the international wireline business intended for the BT joint venture; after tax, the cost was $775 million. Removing it would raise net income to $4,610 million and EPS to $1.11, but profit would still be down 7.9%."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "34,253",
+        "34,440",
+        "36,381",
+        "33,821",
+        "34,504",
+        "33,485",
+        "35,681",
+        "33,330"
+       ],
+       [
+        "Gross margin",
+        "61.8%",
+        "60.3%",
+        "54.7%",
+        "60.5%",
+        "59.8%",
+        "61.0%",
+        "56.5%",
+        "60.3%"
+       ],
+       [
+        "Operating income",
+        "7,179",
+        "8,242",
+        "5,004",
+        "8,105",
+        "8,172",
+        "7,978",
+        "7,421",
+        "5,926"
+       ],
+       [
+        "Net income",
+        "3,835",
+        "5,045",
+        "2,342",
+        "4,950",
+        "5,003",
+        "4,879",
+        "5,005",
+        "3,306"
+       ],
+       [
+        "EPS, diluted",
+        "0.92",
+        "1.20",
+        "0.55",
+        "1.17",
+        "1.18",
+        "1.15",
+        "1.18",
+        "0.78"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Verizon's next results?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The October 26, 2026 earnings report will test service growth, churn, promotions, cash and debt. Verizon targets its leverage range during 2027. Frontier must deliver more than $1 billion of annual operating-cost savings by 2028, alongside subscriber take-up and controlled construction costs."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 26, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "34,253"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.92"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "33,330",
+      "35,681",
+      "33,485",
+      "34,504",
+      "33,821",
+      "36,381",
+      "34,440",
+      "34,253"
+     ],
+     "EPS, diluted": [
+      "0.78",
+      "1.18",
+      "1.15",
+      "1.18",
+      "1.17",
+      "0.55",
+      "1.20",
+      "0.92"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/vz/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=VZ&src=seo-earnings"
+  }
+ },
+ "short_name": "Verizon",
+ "first_memo_date": "2026-10-13T12:13:18Z"
+}

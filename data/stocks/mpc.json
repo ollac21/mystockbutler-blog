@@ -1,0 +1,851 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "MPC",
+ "slug": "mpc",
+ "company": "Marathon Petroleum Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-14T22:31:56Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 484.92,
+ "price_date": "2026-10-14T20:00:03Z",
+ "next_earnings": "2026-11-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 284,
+  "tables": 26,
+  "words": 17584,
+  "sources": 218
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Marathon Petroleum Corporation, or MPC, is a large fuel and infrastructure business. It buys crude oil, turns it into fuels and materials, and moves hydrocarbons to customers."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm"
+  },
+  {
+   "title": "April 30, 2026 Schedule 13G",
+   "url": "https://www.sec.gov/Archives/edgar/data/1510295/000210011926000834/xslSCHEDULE_13G_X02/primary_doc.xml"
+  },
+  {
+   "title": "April 29, 2026 Schedule 13G",
+   "url": "https://www.sec.gov/Archives/edgar/data/1510295/000210012126000464/xslSCHEDULE_13G_X02/primary_doc.xml"
+  }
+ ],
+ "rivals": [
+  "BP",
+  "CVX",
+  "CVI",
+  "DK",
+  "XOM",
+  "DINO",
+  "PBF",
+  "PSX",
+  "VLO",
+  "PARR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "MPC stock forecast",
+   "meta_description": "MPC stock forecast: scenarios, refining margins, cash generation and valuation show what could shape the shares through October 2029.",
+   "opening": "The probability-weighted price is $373.78 in October 2027 and $332.34 in October 2029; the bear case has a 25% probability, the base case 60%, and the bull case 15%. It hinges on whether exceptional refining margins persist.",
+   "closing": "The full MPC memo also explains MPC’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could MPC's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $373.78 in October 2027, a 22% loss including dividends. It is $332.34 in October 2029, a 29% loss including dividends. The bear case has a 25% probability. The base case has 60%, and the bull case 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 484.92, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 484.92, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "136.42 (-71 %)",
+        "167.59 (-64 %)",
+        "221.41 (-52 %)"
+       ],
+       [
+        "Base",
+        "60 %",
+        "393.52 (-18 %)",
+        "363.39 (-23 %)",
+        "336.13 (-28 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "690.38 (+43 %)",
+        "610.11 (+28 %)",
+        "502.03 (+6 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "373.78 (-22 %)",
+        "351.45 (-26 %)",
+        "332.34 (-29 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, so it is not a separate prediction and can be below today's share price."
+     }
+    },
+    {
+     "heading": "What has to go right for MPC, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 272,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $8,000 million in 2027 and $8,500 million in 2028. It reaches $9,500 million in 2029 as operations recover. This reflects rapid margin normalization, RIN expense and turnaround costs; MPC spent $1,514 million on refining turnarounds in 2025. The bull case gives $15,000 million in 2027 and $14,000 million in 2028. It falls to $12,500 million in 2029, remaining below the 2022 peak because even a favorable cycle should fade."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "12,000 (8,000 / 15,000)",
+        "11,500 (8,500 / 14,000)",
+        "11,100 (9,500 / 12,500)"
+       ],
+       [
+        "Shares (millions)",
+        "274 (277 / 271)",
+        "269 (273 / 263)",
+        "264 (269 / 255)"
+       ],
+       [
+        "Dividends per share",
+        "4.00 (4.00 / 4.20)",
+        "4.20 (3.80 / 4.62)",
+        "4.41 (3.60 / 5.08)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "11.00 (8.00 / 14.00)",
+        "10.50 (8.50 / 13.00)",
+        "10.00 (9.00 / 12.00)"
+       ],
+       [
+        "Net debt",
+        "24,057 (26,266 / 22,699)",
+        "22,999 (26,515 / 21,725)",
+        "22,295 (25,897 / 22,032)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does MPC really make?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "MPC generates substantial cash, but capital spending, working capital and future obligations determine what remains. Operating cash flow was $8,253 million in 2025. After $3,486 million of capital spending, free cash flow was $4,767 million."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "MPC’s calculation becomes more conservative after deducting $160 million of stock compensation. That treats employee shares as an economic cost to existing owners, although it is not another cash payment during the year."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,253",
+        "8,665",
+        "14,117",
+        "16,319",
+        "8,384"
+       ],
+       [
+        "− Capital spending",
+        "3,486",
+        "2,533",
+        "1,890",
+        "2,420",
+        "1,464"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,767",
+        "6,132",
+        "12,227",
+        "13,899",
+        "6,920"
+       ],
+       [
+        "− Stock pay",
+        "160",
+        "137",
+        "211",
+        "153",
+        "88"
+       ],
+       [
+        "**= Real free cash flow**",
+        "4,607",
+        "5,995",
+        "12,016",
+        "13,746",
+        "6,832"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for MPC today?",
+     "paragraphs": [
+      {
+       "n": 198,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio compares the share price with annual earnings, but refining earnings move with crack spreads—the gap between the value of fuels and the crude used to make them. MPC’s refining margin was $36.33 per barrel in the second quarter of 2026, versus $17.58 a year earlier. That improvement helps explain why a low forward P/E may depend on unusually favorable conditions."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "484.92"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "332.34 (-29 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "8.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 484.92,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "136.42 (-71 %)",
+       "167.59 (-64 %)",
+       "221.41 (-52 %)"
+      ]
+     },
+     "Base": {
+      "probability": "60 %",
+      "values": [
+       "393.52 (-18 %)",
+       "363.39 (-23 %)",
+       "336.13 (-28 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "690.38 (+43 %)",
+       "610.11 (+28 %)",
+       "502.03 (+6 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "373.78 (-22 %)",
+       "351.45 (-26 %)",
+       "332.34 (-29 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mpc/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPC&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "MPC dividend: cash, history and yield",
+   "meta_description": "MPC pays $1.00 quarterly; its cash flow, buybacks, MPLX claims and dividend yield need to be read together.",
+   "opening": "MPC pays $1.00 per share each quarter; annual dividends rose in every year of the supplied 2021–2025 history. MPC’s 2025 free cash flow was $4,767 million after $3,486 million of capital spending, while 2024 shareholder payments reached $10,343 million against $6,132 million of free cash flow, or 168.7%.",
+   "closing": "The full memo also explains MPC’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does MPC pay in dividends over time?",
+     "paragraphs": [
+      {
+       "n": 274,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base case holds at $4.00 per share through 2027, then rises to $4.20 and $4.41. The current quarterly rate is $1.00, and annual dividends rose in every year of the supplied 2021–2025 history. The bear case cuts the payout to $3.80 and then $3.60 as free cash flow weakens. The bull case reaches $4.20, $4.62 and $5.08, supported by the prior 10% rate increase and MPLX distribution growth."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share; share-count change in %",
+      "caption": "What one share gets (US$ per share; share-count change in %)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "13.22",
+        "10.08",
+        "23.63",
+        "27.98",
+        "2.02"
+       ],
+       [
+        "Free cash flow per share",
+        "15.58",
+        "17.98",
+        "29.89",
+        "26.94",
+        "10.85"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.73",
+        "3.38",
+        "3.08",
+        "2.48",
+        "2.33"
+       ],
+       [
+        "− Share buybacks, per share",
+        "11.40",
+        "26.95",
+        "28.29",
+        "23.10",
+        "7.29"
+       ]
+      ],
+      "note": "Real free cash flow is lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does MPC’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "MPC generates substantial cash, but capital spending, working capital and future obligations determine what remains. Operating cash flow was $8,253 million in 2025. After $3,486 million of capital spending, free cash flow was $4,767 million."
+      },
+      {
+       "n": 89,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pressure became clearer in 2024. Shareholder payments reached $10,343 million against free cash flow of $6,132 million, or 168.7%. MPC also paid $1,377 million to minority owners. MPC controls MPLX, so it includes MPLX’s full business in its consolidated accounts, but outside MPLX investors own part of the profits. Consolidated cash is therefore not all available to MPC shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,767",
+        "6,132",
+        "12,227",
+        "13,899",
+        "6,920"
+       ],
+       [
+        "− Paid to minority owners",
+        "1,513",
+        "1,377",
+        "1,281",
+        "1,214",
+        "1,449"
+       ],
+       [
+        "− Dividends paid",
+        "1,140",
+        "1,154",
+        "1,261",
+        "1,279",
+        "1,484"
+       ],
+       [
+        "− Share buybacks",
+        "3,488",
+        "9,189",
+        "11,572",
+        "11,922",
+        "4,654"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,374",
+        "5,588",
+        "1,887",
+        "516",
+        "667"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "97.1%",
+        "168.7%",
+        "105.0%",
+        "95.0%",
+        "88.7%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change MPC’s dividend?",
+     "paragraphs": [
+      {
+       "n": 284,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "During 2028 and 2029, MPLX project volumes and distribution growth will decide whether cash supports MPC’s buybacks. MPC’s 2026 capital outlook assigns 65% of spending to value-enhancing investments, but returns still depend on execution."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "12,000 (8,000 / 15,000)",
+        "11,500 (8,500 / 14,000)",
+        "11,100 (9,500 / 12,500)"
+       ],
+       [
+        "Shares (millions)",
+        "274 (277 / 271)",
+        "269 (273 / 263)",
+        "264 (269 / 255)"
+       ],
+       [
+        "Dividends per share",
+        "4.00 (4.00 / 4.20)",
+        "4.20 (3.80 / 4.62)",
+        "4.41 (3.60 / 5.08)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "11.00 (8.00 / 14.00)",
+        "10.50 (8.50 / 13.00)",
+        "10.00 (9.00 / 12.00)"
+       ],
+       [
+        "Net debt",
+        "24,057 (26,266 / 22,699)",
+        "22,999 (26,515 / 21,725)",
+        "22,295 (25,897 / 22,032)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.73"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "3.4%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.5%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share; share-count change in %",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.33",
+      "2.48",
+      "3.08",
+      "3.38",
+      "3.73"
+     ],
+     "Real free cash flow per share": [
+      "10.71",
+      "26.64",
+      "29.38",
+      "17.58",
+      "15.06"
+     ],
+     "Free cash flow per share": [
+      "10.85",
+      "26.94",
+      "29.89",
+      "17.98",
+      "15.58"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mpc/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPC&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "MPC earnings date and guidance",
+   "meta_description": "MPC reports next on November 3, 2026; guidance covers capital, throughput and refining costs.",
+   "opening": "MPC's next results are expected on November 3, 2026. Watch whether throughput, routine costs, turnaround expense and cash after working-capital changes match guidance.",
+   "closing": "The full memo explains MPC's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has MPC guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "MPC’s capital outlook, excluding MPLX, is $1.5 billion. About 65.0% targets value-enhancing projects and 35.0% supports existing operations, which means management is improving the refinery network without planning a major expansion of capacity."
+      },
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "MPLX carries the larger growth plan. Its growth capital outlook is $2.9 billion, with at least 90.0% directed toward natural gas and natural gas liquids infrastructure. NGLs are liquids such as propane and butane recovered alongside natural gas. Management expects those investments to support 12.5% annual distribution growth in each of the next two years."
+      },
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The near-term operating test is refinery execution. MPC guided throughput of 3,005 thousand barrels a day at routine refining costs of $5.60 per barrel for the third quarter. It separately allowed $290 million for turnarounds, planned shutdowns for major maintenance. A plant can meet its volume target while losing cash through repair costs and lost production."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$; scale and operating units in row labels",
+      "caption": "Guidance in force (US$; scale and operating units in row labels)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "MPC capital spending outlook (excluding MPLX) (US$ billions)",
+        "FY 2026",
+        "1.5",
+        "1.5",
+        "Aug 4, 2026"
+       ],
+       [
+        "Value-enhancing investments (% of MPC capital spending)",
+        "FY 2026",
+        "65.0%",
+        "65.0%",
+        "Aug 4, 2026"
+       ],
+       [
+        "Sustaining operations (% of MPC capital spending)",
+        "FY 2026",
+        "35.0%",
+        "35.0%",
+        "Aug 4, 2026"
+       ],
+       [
+        "MPLX growth capital spending outlook (US$ billions)",
+        "FY 2026",
+        "2.9",
+        "2.9",
+        "Aug 4, 2026"
+       ],
+       [
+        "Organic growth capital toward natural gas and NGL infrastructure (%)",
+        "FY 2026",
+        "90.0%",
+        "",
+        "Aug 4, 2026"
+       ],
+       [
+        "MPLX annual distribution growth (%)",
+        "FY 2026 and FY 2027",
+        "12.5%",
+        "12.5%",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": "The company expects at least 90% of its organic growth spending to support natural gas and natural gas liquids infrastructure, so the upper amount is left blank because there is no stated maximum."
+     }
+    },
+    {
+     "heading": "What has MPC's revenue and profit trend been over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Second-quarter 2026 was a powerful refining-margin quarter. Revenue reached $52,337 million, up 53.5% from the prior-year quarter. Diluted EPS rose from $3.96 to $17.73."
+      },
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The main change was value earned per refining barrel. Refining & Marketing margin rose from $17.58 to $36.33 per barrel. Utilization was 94%, compared with 97% a year earlier, so the earnings surge did not require a matching increase in plant activity."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "52,337",
+        "34,568",
+        "33,422",
+        "35,849",
+        "34,101",
+        "31,850",
+        "33,466",
+        "35,373"
+       ],
+       [
+        "Gross margin",
+        "17.7%",
+        "9.6%",
+        "13.6%",
+        "13.0%",
+        "12.0%",
+        "7.8%",
+        "8.7%",
+        "9.1%"
+       ],
+       [
+        "Operating income",
+        "7,322",
+        "1,404",
+        "2,694",
+        "2,713",
+        "2,197",
+        "687",
+        "1,141",
+        "1,349"
+       ],
+       [
+        "Net income",
+        "5,138",
+        "511",
+        "1,535",
+        "1,370",
+        "1,216",
+        "-74",
+        "371",
+        "622"
+       ],
+       [
+        "EPS, diluted",
+        "17.73",
+        "1.73",
+        "5.12",
+        "4.51",
+        "3.96",
+        "-0.24",
+        "1.15",
+        "1.87"
+       ],
+       [
+        "**= Free cash flow**",
+        "9,141",
+        "208",
+        "1,888",
+        "1,662",
+        "1,944",
+        "-727",
+        "1,397",
+        "1,033"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "52,337"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "17.73"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "35,373",
+      "33,466",
+      "31,850",
+      "34,101",
+      "35,849",
+      "33,422",
+      "34,568",
+      "52,337"
+     ],
+     "EPS, diluted": [
+      "1.87",
+      "1.15",
+      "-0.24",
+      "3.96",
+      "4.51",
+      "5.12",
+      "1.73",
+      "17.73"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mpc/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MPC&src=seo-earnings"
+  }
+ },
+ "short_name": "MPC",
+ "first_memo_date": "2026-10-14T22:31:56Z"
+}

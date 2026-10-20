@@ -1,0 +1,784 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "FNV.TO",
+ "slug": "fnv-to",
+ "company": "Franco-Nevada Corporation",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-15T04:27:45Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 334.37,
+ "price_date": "2026-10-14T20:00:00Z",
+ "next_earnings": "2026-11-11",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 27,
+  "words": 16616,
+  "sources": 145
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Franco-Nevada turns other companies’ mines, wells and commodity interests into long-lived financial assets. It receives money or metal under contracts while leaving operators to run the underlying properties."
+ },
+ "sources": [
+  {
+   "title": "2023 MD&A, impairment assessment",
+   "url": "https://www.sec.gov/Archives/edgar/data/1456346/000155837024003443/fnv-20231231xex99d2.htm"
+  },
+  {
+   "title": "Franco-Nevada MD&A",
+   "url": "https://www.sec.gov/Archives/edgar/data/1456346/000110465926094181/fnv-20260630xex99d2.htm"
+  },
+  {
+   "title": "Q2 2026 financial statements",
+   "url": "https://www.sec.gov/Archives/edgar/data/1456346/000110465926094181/fnv-20260630xex99d3.htm"
+  }
+ ],
+ "rivals": [
+  "WPM",
+  "RGLD",
+  "TFPM",
+  "OR",
+  "GROY",
+  "MTA",
+  "ECOR.TO",
+  "ALS.TO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Franco-Nevada stock forecast",
+   "meta_description": "Franco-Nevada stock forecast: the weighted scenario is CAD 163.73 in October 2029, with bear, base and bull cases and their key drivers.",
+   "opening": "The weighted forecast is CAD 163.73 in October 2029, with the bear case at 30%, the base case at 55% and the bull case at 15%. It hinges on new production replacing declining rights before Cobre Panamá’s finite bridge runs out.",
+   "closing": "The full memo also explains Franco-Nevada’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Franco-Nevada’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted value is CAD 163.01 in October 2027. That implies a 51% loss including dividends. Weighted value is CAD 163.73 in October 2029. That implies a 49% loss including dividends. The bear case has 30% probability. The base case has 55%. The bull case has 15%. Even the October 2029 bull value is below today’s price."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per FNV.TO share at each date; in brackets the return since today's 334.37, dividends included",
+      "caption": "What the shares could be worth (CAD per FNV.TO share at each date; in brackets the return since today's 334.37, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "121.29 (-63 %)",
+        "114.02 (-65 %)",
+        "108.58 (-65 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "171.78 (-48 %)",
+        "168.29 (-48 %)",
+        "164.57 (-48 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "214.32 (-35 %)",
+        "241.87 (-26 %)",
+        "270.96 (-16 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "163.01 (-51 %)",
+        "163.04 (-50 %)",
+        "163.73 (-49 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more weight to the base case because it is considered more likely."
+     }
+    },
+    {
+     "heading": "What has to go right—and wrong for Franco-Nevada?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The starting point is the US$900.7 million five-year average after adding back the Cobre Panamá impairment. The roughly 2% annual increase follows management’s 2026-to-2030 GEO midpoint outlook. The bear case falls to US$757 million in 2027 and recovers only to US$820 million by 2029 because lower prices, delays and entitlement reductions persist. The bull case reaches US$1,000 million first and US$1,126 million last, requiring stronger deliveries, project ramps and a durable Panama agreement."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "919 (757 / 1,000)",
+        "937 (779 / 1,063)",
+        "956 (820 / 1,126)"
+       ],
+       [
+        "Shares (millions)",
+        "193 (193 / 193)",
+        "193 (193 / 193)",
+        "193 (194 / 193)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "24.00 (20.00 / 28.00)",
+        "23.00 (18.00 / 30.00)",
+        "22.00 (16.00 / 32.00)"
+       ],
+       [
+        "Net debt",
+        "-1,267 (-1,335 / -1,090)",
+        "-1,316 (-1,485 / -956)",
+        "-1,349 (-1,667 / -783)"
+       ]
+      ],
+      "note": "Negative net debt means the company has more cash than it owes, so it has net cash."
+     }
+    },
+    {
+     "heading": "How much cash does Franco-Nevada really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow became negative in 2025 because acquisitions cost $2,191.6 million, almost all of the $2,196.7 million capital-spending total. The $1.05 billion Côté transaction illustrates the distinction: Franco-Nevada bought future royalty income from IAMGOLD and Sumitomo’s mine rather than machinery needed to maintain existing operations. Negative free cash flow can therefore signal expansion, not weak contracts."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "1,493.7",
+        "829.5",
+        "991.2",
+        "999.5",
+        "955.4"
+       ],
+       [
+        "− Capital spending",
+        "2,196.7",
+        "408.0",
+        "521.6",
+        "141.5",
+        "760.5"
+       ],
+       [
+        "**= Free cash flow**",
+        "-703.0",
+        "421.5",
+        "469.6",
+        "858.0",
+        "194.9"
+       ],
+       [
+        "− Stock pay",
+        "6.3",
+        "5.4",
+        "5.5",
+        "8.2",
+        "8.0"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-709.3",
+        "416.1",
+        "464.1",
+        "849.8",
+        "186.9"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-38.9%",
+        "37.4%",
+        "38.1%",
+        "64.6%",
+        "14.4%"
+       ]
+      ],
+      "note": "Capital spending includes buying rights to future mining or energy income, so it is more than just buying equipment and buildings."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Franco-Nevada?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The valuation therefore demands confidence in both durability and growth. The price-to-earnings ratio, or P/E, shows how much investors pay for each dollar of profit. The forward P/E is lower than the trailing P/E, which means the price assumes earnings will rise. Enterprise value adds the business value after adjusting equity value for financing assets and obligations, so it tests the portfolio and balance sheet together."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "334.37"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "163.73 (-49 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.6%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 235.15970285211708,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "121.29 (-63 %)",
+       "114.02 (-65 %)",
+       "108.58 (-65 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "171.78 (-48 %)",
+       "168.29 (-48 %)",
+       "164.57 (-48 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "214.32 (-35 %)",
+       "241.87 (-26 %)",
+       "270.96 (-16 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "163.01 (-51 %)",
+       "163.04 (-50 %)",
+       "163.73 (-49 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/fnv-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FNV.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Franco-Nevada dividend: payout and coverage",
+   "meta_description": "Franco-Nevada's dividend history, cash coverage, future drivers and current yield, explained in plain English.",
+   "opening": "Franco-Nevada paid US$1.43 per share in dividends in 2025. Its cash did not cover the full shareholder payout: US$5.07 per share was paid out in excess of free cash flow.",
+   "closing": "The full Franco-Nevada memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Franco-Nevada pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue rose 63.7% in 2025 as gold prices increased. GEOs Sold remained below 2021–22 levels. Diluted EPS was US$5.76 in 2025. It was US$2.87 in 2024. The key turn is the company’s own free cash flow: 37.4% of revenue in 2024 became -38.9% in 2025 as acquisitions drove spending. The shortfall left US$5.07 per share paid out in excess of free cash flow; dividends were US$1.43 per share. Year-end net cash was US$670.9 million."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,822.8",
+        "1,113.6",
+        "1,219.0",
+        "1,315.7",
+        "1,300.0"
+       ],
+       [
+        "Net income",
+        "1,112.1",
+        "552.1",
+        "-466.4",
+        "700.6",
+        "733.7"
+       ],
+       [
+        "EPS, diluted",
+        "5.76",
+        "2.87",
+        "-2.43",
+        "3.65",
+        "3.83"
+       ],
+       [
+        "Dividend per share",
+        "1.52",
+        "1.44",
+        "1.36",
+        "1.28",
+        "1.16"
+       ]
+      ],
+      "note": "The 2025 sales growth includes sales from newly bought royalties and streams, so it does not show how much the existing business grew on its own."
+     }
+    },
+    {
+     "heading": "Does Franco-Nevada's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow was US$194.9 million in 2021. It rose to US$858.0 million in 2022, then remained positive at US$469.6 million in 2023 and US$421.5 million in 2024. In 2025 it turned negative at US$703.0 million because this measure deducts purchases of royalty and stream interests. Negative free cash flow therefore meant heavy reinvestment, not that the existing portfolio stopped producing cash."
+      },
+      {
+       "n": 83,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Shareholders still received rising dividends. Dividends paid increased from US$179.6 million in 2021 to US$275.1 million in 2025, while the company bought back no shares in any of the five years. At year-end, cash and short-term investments stood at US$670.9 million, with no debt. The company had spent its reserve aggressively without creating a lasting borrowing burden."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-703.0",
+        "421.5",
+        "469.6",
+        "858.0",
+        "194.9"
+       ],
+       [
+        "− Dividends paid",
+        "275.1",
+        "242.4",
+        "233.0",
+        "197.6",
+        "179.6"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "179.1",
+        "236.6",
+        "660.4",
+        "15.3"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "57.5%",
+        "49.6%",
+        "23.0%",
+        "92.1%"
+       ]
+      ],
+      "note": "In 2025, the company paid shareholders 275.1 million United States dollars even though it lost 703.0 million United States dollars in free cash flow, so it paid 978.1 million more than it generated."
+     }
+    },
+    {
+     "heading": "What could change Franco-Nevada's dividend?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base dividends begin at US$1.76 per share and reach US$2.08 by 2029. The bear case holds them at US$1.60, while the bull case reaches US$2.76. The base reflects the latest US$0.44 quarterly dividend and a history of annual increases, moderated because acquisitions and weak deliveries can compete for cash."
+      },
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The bear case would gain weight if gold prices fall, deliveries weaken, or Candelaria and Antapaccay reductions arrive before replacement projects contribute, particularly through the second half of 2027 and 2028. A failure to secure a restart agreement would keep Panama’s receipts finite."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Franco-Nevada's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "334.37"
+       ],
+       [
+        "Market value (calculated)",
+        "64,491.2"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": "The negative free cash flow yield means the company spent more cash than it generated during the latest year, even though it still paid a dividend."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.6%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-1.5%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.0%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/fnv-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FNV.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Franco-Nevada earnings: guidance and results",
+   "meta_description": "Franco-Nevada reports next on November 11, 2026; see guidance, recent results and whether mine deliveries improve.",
+   "opening": "Franco-Nevada's next results are expected on November 11, 2026. The key thing to watch is whether Candelaria, Côté and Tocantinzinho turn expected improvements into receipts while Antamina faces lower Q3 deliveries.",
+   "closing": "The full Franco-Nevada memo also answers how Franco-Nevada makes money, who its rivals are, how management is paid, and which risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "What has Franco-Nevada guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "GEOs, or gold equivalent ounces, put different metals into one common unit. Management guides to 510,000–570,000 GEOs for 2026. Its 2030 outlook is 555,000–615,000 GEOs without a full Cobre Panamá restart. The guidance depends on improvements at Candelaria, Côté and Tocantinzinho, while Cobre Panamá stockpile deliveries remain finite."
+      },
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "By 2030, management expects 555,000–615,000 GEOs without a full Cobre Panamá restart. That growth must offset contractual reductions: Candelaria’s entitlement is expected to fall from 68% to 40%, while Antapaccay will move to 30% of gold and silver production. The next question is whether analysts think this plan will produce the promised earnings."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Gold ounces sold (oz)",
+        "Year to Dec 2026",
+        "360,000",
+        "400,000",
+        "Aug 11, 2026"
+       ],
+       [
+        "Silver ounces sold (oz)",
+        "Year to Dec 2026",
+        "4,700,000",
+        "5,500,000",
+        "Aug 11, 2026"
+       ],
+       [
+        "Diversified revenue (millions)",
+        "Year to Dec 2026",
+        "245.0",
+        "285.0",
+        "Aug 11, 2026"
+       ],
+       [
+        "GEOs Sold (oz)",
+        "Year to Dec 2026",
+        "510,000",
+        "570,000",
+        "Aug 11, 2026"
+       ],
+       [
+        "Candelaria, GEOs sold (oz)",
+        "Year to Dec 2026",
+        "57,500",
+        "67,500",
+        "Mar 10, 2026"
+       ],
+       [
+        "Antamina, silver ounces (millions)",
+        "Year to Dec 2026",
+        "3.5",
+        "3.7",
+        "Mar 10, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Franco-Nevada keep its production promise?",
+     "paragraphs": [
+      {
+       "n": 116,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Franco-Nevada forecast 465,000–525,000 gold-equivalent ounces for 2025 and delivered 519,106. A gold-equivalent ounce converts different commodity receipts into a common gold measure. Hitting guidance shows portfolio execution, but mine operators control production and commodity prices affect the conversion."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Franco-Nevada's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 151,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating cash improved, while free cash flow swung positive because acquisition spending fell sharply. The eight-quarter record shows how investment timing can change free cash flow even when revenue rises. Antamina’s warning of lower third-quarter deliveries is therefore more useful for forecasting than one unusually strong quarter."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "580.9",
+        "650.7",
+        "597.3",
+        "487.7",
+        "369.4",
+        "368.4",
+        "321.0",
+        "275.7"
+       ],
+       [
+        "Operating income",
+        "445.7",
+        "577.8",
+        "453.9",
+        "341.0",
+        "305.8",
+        "253.5",
+        "217.4",
+        "182.0"
+       ],
+       [
+        "Net income",
+        "354.0",
+        "468.6",
+        "367.7",
+        "287.5",
+        "247.1",
+        "209.8",
+        "175.4",
+        "152.7"
+       ],
+       [
+        "EPS, diluted",
+        "1.83",
+        "2.43",
+        "1.90",
+        "1.49",
+        "1.28",
+        "1.09",
+        "0.91",
+        "0.79"
+       ]
+      ],
+      "note": "The company's free cash flow can swing sharply because its capital spending includes buying royalty, stream, and working interests, not just equipment and buildings."
+     }
+    },
+    {
+     "heading": "What should people watch in Franco-Nevada's next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Candelaria, Côté and Tocantinzinho must turn their expected improvements into Franco-Nevada receipts. Antamina also matters because management expects lower Q3 deliveries after reduced concentrator throughput in Q2. A concentrator separates valuable minerals from mined rock, so lower throughput can reduce later deliveries even after production conditions improve."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 11, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "580.9"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.83"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "275.7",
+      "321.0",
+      "368.4",
+      "369.4",
+      "487.7",
+      "597.3",
+      "650.7",
+      "580.9"
+     ],
+     "EPS, diluted": [
+      "0.79",
+      "0.91",
+      "1.09",
+      "1.28",
+      "1.49",
+      "1.90",
+      "2.43",
+      "1.83"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/fnv-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=FNV.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "Franco-Nevada",
+ "first_memo_date": "2026-10-15T04:27:45Z"
+}

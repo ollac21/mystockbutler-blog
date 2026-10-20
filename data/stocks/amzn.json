@@ -1,0 +1,619 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AMZN",
+ "slug": "amzn",
+ "company": "Amazon.com, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:19:09Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 254.06,
+ "price_date": "2026-10-08T20:00:01Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 261,
+  "tables": 28,
+  "words": 16649,
+  "sources": 239
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Amazon is a shop, a service network, an advertising business, and a landlord of computing power. A dollar enters through a product sale, a seller fee, an ad, a subscription, or cloud usage, then leaves through goods, warehouses, delivery, data centers, content, and people before the remainder becomes operating income."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+  },
+  {
+   "title": "2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm"
+  },
+  {
+   "title": "2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm"
+  }
+ ],
+ "rivals": [
+  "MSFT",
+  "GOOG",
+  "WMT",
+  "BABA",
+  "EBAY",
+  "SHOP",
+  "TGT",
+  "COST",
+  "JD",
+  "MELI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Amazon stock forecast",
+   "meta_description": "Amazon's forecast weighs AWS growth, infrastructure returns, cash flow and valuation across bear, base and bull scenarios.",
+   "opening": "The weighted outcome is $424.16 in October 2029. It hinges on AWS capacity becoming profitable usage and supporting earnings and cash flow.",
+   "closing": "The full memo also answers how Amazon’s business works, who its rivals are, how management allocates capital, and what risks could change the forecast.",
+   "blocks": [
+    {
+     "heading": "Where could Amazon's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s weighted outcome is $338.56 in October 2027, $378.25 in October 2028 and $424.16 in October 2029."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 254.06, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 254.06, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "273.24 (+8 %)",
+        "236.60 (-7 %)",
+        "198.20 (-22 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "338.38 (+33 %)",
+        "382.42 (+51 %)",
+        "429.79 (+69 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "420.73 (+66 %)",
+        "543.84 (+114 %)",
+        "691.10 (+172 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "338.56 (+33 %)",
+        "378.25 (+49 %)",
+        "424.16 (+67 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Amazon?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Revenue growth is the central operating assumption. The base case uses 13.5% in FY2026, supported by first-half revenue and guidance for the September quarter. It then uses 13.0%, 12.0% and 11.0%, as AWS capacity begins billing after the stated six-to-24-month lag. The bear path falls to 12.5%, 9.0%, 7.0% and 6.0% if AI demand leaves capacity underused. The bull path uses 14.5%, 16.5%, 15.5% and 14.0%, supported by AWS growth of 36.7% in June 2026 and constrained capacity."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes Amazon builds faster than customers consume. AWS growth slows, infrastructure remains underused, retail profitability faces delivery and seller-fee pressure, and cash generation weakens. Investors then reduce the multiple from 18x to 12x. The path produces $273.24 in October 2027 and $198.20 in October 2029, with 25% probability. The risk is credible because AWS billing can lag investment by six to 24 months, but current growth and constrained capacity argue against making it central."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "13.5 % (12.5 % / 14.5 %)",
+        "13.0 % (9.0 % / 16.5 %)",
+        "12.0 % (7.0 % / 15.5 %)",
+        "11.0 % (6.0 % / 14.0 %)"
+       ],
+       [
+        "Measure (EBITDA / cash flow)",
+        "169,251 (161,308 / 174,026)",
+        "195,852 (174,067 / 213,260)",
+        "224,503 (183,430 / 256,256)",
+        "253,771 (194,436 / 302,206)"
+       ],
+       [
+        "Net debt",
+        "24,123 (30,841 / 20,061)",
+        "78,354 (64,147 / 99,545)",
+        "114,237 (64,961 / 174,161)",
+        "120,701 (40,876 / 211,152)"
+       ],
+       [
+        "Buybacks",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 500)",
+        "500 (0.00 / 1,500)",
+        "1,000 (0.00 / 2,500)"
+       ],
+       [
+        "Dividend per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Amazon really make?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow, or FCF, subtracts property and equipment purchases from operating cash. Amazon spent $131,819 million on those purchases in 2025, leaving much less cash after investment. Its reported FCF was $11,194 million because it included proceeds from equipment sales and incentives."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "139,514",
+        "115,877",
+        "84,946",
+        "46,752",
+        "46,327"
+       ],
+       [
+        "Capital spending",
+        "131,819",
+        "82,999",
+        "52,729",
+        "63,645",
+        "61,053"
+       ],
+       [
+        "Free cash flow",
+        "7,695",
+        "32,878",
+        "32,217",
+        "-16,893",
+        "-14,726"
+       ],
+       [
+        "Stock-based pay",
+        "19,467",
+        "22,011",
+        "24,023",
+        "19,621",
+        "12,757"
+       ],
+       [
+        "Real free cash flow (after stock pay)",
+        "-11,772",
+        "10,867",
+        "8,194",
+        "-36,514",
+        "-27,483"
+       ],
+       [
+        "Real free cash flow per share",
+        "-1.09",
+        "1.01",
+        "0.78",
+        "-3.58",
+        "-2.67"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What do investors pay for Amazon today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Cash tells a different story because Amazon is building capacity. During the twelve months ended June 30, 2026, operating cash flow was $161.4 billion, but equipment purchases drove free cash flow to negative $7.6 billion. Free cash flow is the cash left after buying long-lived assets such as servers, data centers and delivery facilities. Accounting spreads those costs through depreciation, while cash flow records the purchase immediately."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "254.06"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "424.16 (+67 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "23.9x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "20.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 254.06,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "273.24 (+8 %)",
+       "236.60 (-7 %)",
+       "198.20 (-22 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "338.38 (+33 %)",
+       "382.42 (+51 %)",
+       "429.79 (+69 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "420.73 (+66 %)",
+       "543.84 (+114 %)",
+       "691.10 (+172 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "338.56 (+33 %)",
+       "378.25 (+49 %)",
+       "424.16 (+67 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/amzn/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMZN&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Amazon earnings: date, guidance and results",
+   "meta_description": "Amazon's next results are expected October 29, 2026; watch AWS capacity, operating profit and spending.",
+   "opening": "Amazon's next results are expected on October 29, 2026. Watch whether AWS capacity becomes profitable customer usage.",
+   "closing": "The full memo also answers how Amazon's business works, who its rivals are, how management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Amazon guided for the year?",
+     "paragraphs": [
+      {
+       "n": 204,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Guidance is management’s expected range for a future period, not a result already earned. Amazon’s July forecast puts September-quarter sales at **$197,000–$202,000 million**. It puts operating income—the profit left after running the businesses, before interest and taxes—at **$22,500–$26,500 million**. Investors will compare the eventual result with that range and with analysts’ separate forecasts."
+      },
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The larger commitment is capital expenditure, or capex: cash spent on assets that serve the business for years. Amazon raised expected 2026 cash capex from about **$200 billion** to about **$220 billion**, partly because memory prices are rising. Forecasts call for DRAM prices to rise **125%** in 2026 and NAND flash prices to rise **234%**. The same budget may therefore buy less computing capacity."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Net sales",
+        "Quarter to Sep 2026",
+        "197,000",
+        "202,000",
+        "Jul 30, 2026"
+       ],
+       [
+        "Net sales growth",
+        "Quarter to Sep 2026",
+        "9.0%",
+        "12.0%",
+        "Jul 30, 2026"
+       ],
+       [
+        "Year-over-year growth excluding the impact of Prime Day (basis points higher)",
+        "Quarter to Sep 2026",
+        "400",
+        "400",
+        "Jul 30, 2026"
+       ],
+       [
+        "Unfavorable impact from foreign exchange rates (basis points)",
+        "Quarter to Sep 2026",
+        "80",
+        "80",
+        "Jul 30, 2026"
+       ],
+       [
+        "Operating income",
+        "Quarter to Sep 2026",
+        "22,500",
+        "26,500",
+        "Jul 30, 2026"
+       ],
+       [
+        "cash CapEx",
+        "Year to Dec 2026",
+        "",
+        "",
+        "Jul 30, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How has Amazon's revenue and profit changed over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $200,606 million, against $167,702 million in Q2 2025. Operating income rose to $27,461 million, lifting operating margin to 13.7%. Prime Day’s move into June helped the comparison, but the operating improvement was still meaningful."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "200,606",
+        "181,519",
+        "213,386",
+        "180,169",
+        "167,702",
+        "155,667",
+        "187,792",
+        "158,877"
+       ],
+       [
+        "Gross margin",
+        "52.3%",
+        "51.8%",
+        "48.5%",
+        "50.8%",
+        "51.8%",
+        "50.6%",
+        "47.3%",
+        "49.0%"
+       ],
+       [
+        "Operating income",
+        "27,461",
+        "23,852",
+        "24,977",
+        "17,422",
+        "19,171",
+        "18,405",
+        "21,203",
+        "17,411"
+       ],
+       [
+        "Net income",
+        "62,647",
+        "30,255",
+        "21,192",
+        "21,187",
+        "18,164",
+        "17,127",
+        "20,004",
+        "15,328"
+       ],
+       [
+        "EPS, diluted",
+        "5.75",
+        "2.78",
+        "1.95",
+        "1.95",
+        "1.68",
+        "1.59",
+        "1.86",
+        "1.43"
+       ],
+       [
+        "Cash from operations",
+        "45,387",
+        "26,032",
+        "54,459",
+        "35,525",
+        "32,515",
+        "17,015",
+        "45,636",
+        "25,971"
+       ],
+       [
+        "Capital spending",
+        "54,208",
+        "44,203",
+        "39,522",
+        "35,095",
+        "32,183",
+        "25,019",
+        "27,834",
+        "22,620"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Amazon's next results?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results announcement is estimated for **October 29, 2026**, though Amazon had not confirmed that date. Investors should compare September-quarter sales and operating income with July’s guidance, then examine December-quarter guidance and any change to spending or financing plans. A higher budget is more encouraging when it buys capacity than when it merely pays higher prices."
+      },
+      {
+       "n": 234,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The clearest operating evidence will come from AWS: its growth, its customers and the returns on the infrastructure now being built."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "200,606"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "5.75"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "158,877",
+      "187,792",
+      "155,667",
+      "167,702",
+      "180,169",
+      "213,386",
+      "181,519",
+      "200,606"
+     ],
+     "EPS, diluted": [
+      "1.43",
+      "1.86",
+      "1.59",
+      "1.68",
+      "1.95",
+      "1.95",
+      "2.78",
+      "5.75"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/amzn/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AMZN&src=seo-earnings"
+  }
+ },
+ "short_name": "Amazon",
+ "first_memo_date": "2026-10-10T02:19:09Z"
+}

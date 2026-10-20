@@ -1,0 +1,816 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CEG",
+ "slug": "ceg",
+ "company": "Constellation Energy Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T21:53:28Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 275.0,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-09",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 272,
+  "tables": 27,
+  "words": 18772,
+  "sources": 207
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Constellation Energy makes and buys energy, then sells electricity, natural gas and related services to households, businesses and large buyers. Its business becomes clear by following a dollar from generation or procurement to a customer, through operating costs and contracts, and back into the cash needed to keep making promises."
+ },
+ "sources": [
+  {
+   "title": "Proxy statement (DEF 14A) — 2026-03-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000155278126000140/e26004_ceg-def14a.htm"
+  },
+  {
+   "title": "2025 annual report, printed page 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000155278126000142/e26100_ceg-ars.pdf"
+  },
+  {
+   "title": "2026 quarterly filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "NRG",
+  "PEG",
+  "NEE",
+  "AES",
+  "ETR",
+  "D",
+  "DUK",
+  "SO"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Constellation stock forecast",
+   "meta_description": "Constellation stock forecast: the weighted scenario reaches $436.40 in October 2029, with outcomes shaped by cash, debt and execution.",
+   "opening": "Constellation's weighted scenario reaches $436.40 in October 2029, a 61% return including dividends. It hinges on Calpine integration, debt reduction and the pending plant sale.",
+   "closing": "The full memo also explains Constellation's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Constellation's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast points to substantial gains, but with a wide range of outcomes. Weighted value is $360.17 in October 2027, or a 32% return including dividends. It reaches $398.00 in October 2028, a 46% return. By October 2029, it reaches $436.40, a 61% return."
+      },
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear-to-bull range at the final date is $210.38 to $785.53. Today’s price is $275.00. The bear probability is 30%; the base probability is 50%. The bull probability is 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 275.00, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 275.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "242.06 (-11 %)",
+        "210.03 (-22 %)",
+        "210.38 (-22 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "376.82 (+38 %)",
+        "413.51 (+52 %)",
+        "432.36 (+59 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "495.69 (+81 %)",
+        "641.19 (+135 %)",
+        "785.53 (+188 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "360.17 (+32 %)",
+        "398.00 (+46 %)",
+        "436.40 (+61 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a guaranteed share price."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Constellation's forecast?",
+     "paragraphs": [
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at $6,500M and slips to $6,300M before recovering to $6,700M. The bull case starts at $8,200M, reaches $9,600M, and ends at $11,000M. The anchor is guidance-implied operating profit of about $6,740M, while first-half 2026 operating income was $2,912M. The bear assumes weaker merchant margins and delayed growth; the bull requires strong nuclear availability, uprates, demand, and smooth Calpine integration."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Constellation really make?",
+     "paragraphs": [
+      {
+       "n": 156,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from operating cash flow. A stricter analytical measure also subtracts stock compensation, because employees receive part of shareholders’ claim even though that payment does not consume the same period’s cash. Both measures are useful, but neither proves that all residual cash can be distributed."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "4,237",
+        "-2,464",
+        "-5,301",
+        "-2,353",
+        "-1,338"
+       ],
+       [
+        "− Capital spending",
+        "2,949",
+        "2,565",
+        "2,422",
+        "1,689",
+        "1,329"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,288",
+        "-5,029",
+        "-7,723",
+        "-4,042",
+        "-2,667"
+       ],
+       [
+        "− Stock pay",
+        "385",
+        "332",
+        "178",
+        "116",
+        "47"
+       ],
+       [
+        "**= Real free cash flow**",
+        "903",
+        "-5,361",
+        "-7,901",
+        "-4,158",
+        "-2,714"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "3.5%",
+        "-22.7%",
+        "-31.7%",
+        "-17.0%",
+        "-13.8%"
+       ]
+      ],
+      "note": "Some cash collected from customers is shown under investing activities, so it is left out of the operating cash flow and free cash flow calculation."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Constellation today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio compares the share price with earnings per share. The trailing version uses the last twelve months; the forward version uses an estimate for the next twelve. The lower forward multiple therefore assumes earnings will rise. But earnings are accounting results, not a cash meter: power prices, outages, hedges and environmental credits can change them, while fair-value accounting can record contract gains or losses before cash arrives. In the second quarter of 2026, GAAP earnings were $1.42 per share while adjusted operating earnings were $2.55, so the chosen denominator matters."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "275.00"
+       ],
+       [
+        "Market value (calculated)",
+        "97,434.53"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "121,437.53"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "26.8x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "20.7x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company's debt after subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "275.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "436.40 (+61 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 275.0,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "242.06 (-11 %)",
+       "210.03 (-22 %)",
+       "210.38 (-22 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "376.82 (+38 %)",
+       "413.51 (+52 %)",
+       "432.36 (+59 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "495.69 (+81 %)",
+       "641.19 (+135 %)",
+       "785.53 (+188 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "360.17 (+32 %)",
+       "398.00 (+46 %)",
+       "436.40 (+61 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ceg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CEG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Constellation dividend",
+   "meta_description": "Constellation's dividend grows in the base case, but cash conversion and debt remain important to its outlook.",
+   "opening": "In the base case, Constellation's dividend grows from $1.83 to $2.02 and then $2.22 per share. Cash coverage is not clean: in 2024, Constellation made $1,443 million of shareholder payments despite negative free cash flow.",
+   "closing": "The full memo also covers Constellation's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Constellation pay per share?",
+     "paragraphs": [
+      {
+       "n": 264,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends grow in the base case from $1.83 to $2.02 and then $2.22 per share. The bear case holds at $1.71 throughout. The bull case rises from $1.87 to $2.10 and then $2.35. The base follows management’s 10% policy from the declared $0.4265 quarterly rate. The bear protects liquidity; the bull assumes 12% growth."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Shares (millions)",
+        "354 (356 / 351)",
+        "352 (357 / 347)",
+        "350 (358 / 342)"
+       ],
+       [
+        "Dividends per share",
+        "1.83 (1.71 / 1.87)",
+        "2.02 (1.71 / 2.10)",
+        "2.22 (1.71 / 2.35)"
+       ],
+       [
+        "Net debt",
+        "22,043 (24,400 / 22,863)",
+        "16,443 (25,800 / 17,763)",
+        "15,743 (25,100 / 17,663)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Constellation's cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The company still returned substantial money to shareholders. In 2025, it paid $886 million through dividends and buybacks. In 2024, it made $1,443 million of shareholder payments despite negative free cash flow. Dividends transfer cash to shareholders; buybacks retire shares and increase the ownership fraction of those who remain. Neither payment proves that the underlying investments earned attractive returns."
+      },
+      {
+       "n": 268,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Management projects $8.4B of free cash flow before growth and allocates $3.4B to deleveraging. The base also depends on receiving $5.0B from the pending plant sale by the second date; without it, debt would be about $5.0B higher."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,288",
+        "-5,029",
+        "-7,723",
+        "-4,042",
+        "-2,667"
+       ],
+       [
+        "− Dividends paid",
+        "486",
+        "444",
+        "366",
+        "185",
+        "0"
+       ],
+       [
+        "− Share buybacks",
+        "400",
+        "999",
+        "992",
+        "0",
+        "0"
+       ],
+       [
+        "Paid to shareholders",
+        "886",
+        "1,443",
+        "1,358",
+        "185",
+        "0"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "68.8%",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful",
+        "not meaningful"
+       ]
+      ],
+      "note": "The 98.1% “paid out” figure is higher because “real free cash flow” subtracts the cost of shares given to employees, even though that cost did not use cash."
+     }
+    },
+    {
+     "heading": "What could change Constellation's dividend?",
+     "paragraphs": [
+      {
+       "n": 271,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward the bear case if merchant margins weaken as hedges roll off through 2029, or if the pending asset sale and Calpine integration savings are delayed during 2027–2028. A delayed Crane restart or uprate would defer contracted output while spending continues."
+      },
+      {
+       "n": 272,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case gains support if 2026 guidance is delivered, contracted clean generation rises, and free cash flow funds investment and deleveraging. The bull case becomes more credible if uprates produce output from 2028, nuclear reliability remains high, and Crane and Calpine integration proceed on schedule through 2029."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Constellation's dividend yield against its share price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "275.00"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.3%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.6%"
+       ]
+      ],
+      "note": "Enterprise value is higher than market value because it includes the company's debt after subtracting its cash."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "1.55"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.6%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.3%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "",
+      "0.56",
+      "1.13",
+      "1.41",
+      "1.55"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "-12.64",
+      "-24.39",
+      "-17.02",
+      "2.88"
+     ],
+     "Free cash flow per share": [
+      "",
+      "-12.29",
+      "-23.84",
+      "-15.97",
+      "4.10"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ceg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CEG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Constellation earnings date and guidance",
+   "meta_description": "Constellation reports next on November 9, 2026; guidance, last eight quarters and cash after the Brazos Valley sale are the key points.",
+   "opening": "Constellation's next results are expected on November 9, 2026. Watch cash generation after the Brazos Valley sale.",
+   "closing": "The full memo answers how Constellation makes money, how it compares with rivals, who runs it, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Constellation guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "On August 6, management raised 2026 adjusted operating earnings guidance to $11.50–$12.50 per share. The forecast uses 357 million average diluted shares. A buyback can raise EPS without raising total profit because the same earnings are divided among fewer shares. Management’s lower share assumption explains about $0.13 of the midpoint increase; stronger expected earnings explain most of the rest."
+      },
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Base earnings come mainly from long contracts, nuclear support arrangements and normalized assumptions. Enhanced earnings add value from market conditions and commercial execution. Base EPS guidance is $6.65–$6.75 in 2026. It rises to $7.60–$7.70 in 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted (non-GAAP) Operating Earnings per share (2026)",
+        "Year to Dec 2026",
+        "11.50",
+        "12.50",
+        "Aug 6, 2026"
+       ],
+       [
+        "Expected average diluted common shares outstanding (millions) (2026)",
+        "Year to Dec 2026",
+        "357",
+        "357",
+        "Aug 6, 2026"
+       ],
+       [
+        "Base Earnings per share (2026)",
+        "Year to Dec 2026",
+        "6.65",
+        "6.75",
+        "Mar 31, 2026"
+       ],
+       [
+        "Base Earnings per share (2027)",
+        "Year to Dec 2027",
+        "7.60",
+        "7.70",
+        "Mar 31, 2026"
+       ],
+       [
+        "Cumulative FCFbG generated (2026–2027)",
+        "Years to Dec 2026–2027",
+        "8,400",
+        "8,400",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Constellation kept its promises?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "The broader record is mixed but useful. Constellation exceeded the midpoint of its earnings guidance for four consecutive years through 2025, showing delivery against its stated forecasts while leaving open how demanding those forecasts were. Kathleen Barrón’s retention award supported a transition through the first half of 2026, but retirement could fully vest it before the broader Calpine integration was complete."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Constellation's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose year over year, yet operating income, net income and diluted EPS fell. A larger company therefore produced a smaller reported bottom line for the quarter, which is not straightforward evidence that selling more electricity created more profit."
+      },
+      {
+       "n": 174,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash was weaker still: operating cash declined while capital spending increased, leaving free cash flow negative for the quarter and for the first half. The eight-quarter sequence includes only one clearly strong recent quarter followed by three negative quarters, so June does not establish a durable turn."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "7,504",
+        "11,122",
+        "6,074",
+        "6,570",
+        "6,101",
+        "6,788",
+        "5,382",
+        "6,550"
+       ],
+       [
+        "Operating income",
+        "580",
+        "2,332",
+        "598",
+        "1,086",
+        "951",
+        "451",
+        "972",
+        "1,467"
+       ],
+       [
+        "Net income",
+        "513",
+        "1,590",
+        "432",
+        "930",
+        "839",
+        "118",
+        "852",
+        "1,200"
+       ],
+       [
+        "EPS, diluted",
+        "1.42",
+        "4.49",
+        "1.38",
+        "2.97",
+        "2.67",
+        "0.38",
+        "2.71",
+        "3.82"
+       ],
+       [
+        "Cash from operations",
+        "1,128",
+        "425",
+        "805",
+        "1,848",
+        "1,477",
+        "107",
+        "-1,016",
+        "-112"
+       ],
+       [
+        "**= Free cash flow**",
+        "-118",
+        "-850",
+        "-181",
+        "1,458",
+        "710",
+        "-699",
+        "-1,745",
+        "-664"
+       ]
+      ],
+      "note": "Free cash flow can be negative even when the company reports a profit because it subtracts cash spent on equipment, buildings, and software."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 9, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "7,504"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.42"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "6,550",
+      "5,382",
+      "6,788",
+      "6,101",
+      "6,570",
+      "6,074",
+      "11,122",
+      "7,504"
+     ],
+     "EPS, diluted": [
+      "3.82",
+      "2.71",
+      "0.38",
+      "2.67",
+      "2.97",
+      "1.38",
+      "4.49",
+      "1.42"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ceg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CEG&src=seo-earnings"
+  }
+ },
+ "short_name": "Constellation",
+ "first_memo_date": "2026-10-15T21:53:28Z"
+}

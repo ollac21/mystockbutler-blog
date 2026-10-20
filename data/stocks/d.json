@@ -1,0 +1,779 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "D",
+ "slug": "d",
+ "company": "Dominion Energy, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T12:16:22Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 63.56,
+ "price_date": "2026-10-16T20:00:02Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 234,
+  "tables": 26,
+  "words": 16410,
+  "sources": 221
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Dominion Energy is mainly a regulated utility: it generates or buys electricity, moves it through power lines, and delivers it to homes and businesses. It also owns smaller businesses that sell contracted power, offshore-wind services, and optional energy products."
+ },
+ "sources": [
+  {
+   "title": "Dominion Energy Q4 2025 earnings-release kit",
+   "url": "https://s2.q4cdn.com/510812146/files/doc_financials/2025/q4/2026-02-23-DE-IR-4Q25-Earnings-Release-Kit-vTC1.pdf"
+  },
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526115192/dei-ars-12312025.pdf"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526062432/d-ex99.htm"
+  }
+ ],
+ "rivals": [
+  "NEE",
+  "PCG",
+  "DUK",
+  "SO",
+  "AEP",
+  "EXC",
+  "XEL",
+  "ETR",
+  "PPL",
+  "ES",
+  "SRE",
+  "DTE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Dominion stock forecast",
+   "meta_description": "Dominion's weighted value is $59.68 in October 2029, tied to earnings growth, project recovery, financing and merger approval.",
+   "opening": "Dominion's weighted value is $59.68 in October 2029. It hinges on earnings growth, project recovery, financing and merger outcomes.",
+   "closing": "The full memo also examines Dominion's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Dominion's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 219,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to modest dividend-supported returns but little price appreciation from today’s $63.56. The probability-weighted value is $61.42 in October 2027, $60.57 in October 2028 and $59.68 in October 2029, producing returns of 1%, 3% and 5% with dividends."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 63.56, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 63.56, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28%",
+        "47.43 (-21%)",
+        "43.75 (-23%)",
+        "40.51 (-25%)"
+       ],
+       [
+        "Base",
+        "52%",
+        "63.26 (+3%)",
+        "62.91 (+6%)",
+        "62.32 (+9%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "76.24 (+24%)",
+        "78.05 (+30%)",
+        "79.68 (+36%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "61.42 (+1%)",
+        "60.57 (+3%)",
+        "59.68 (+5%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Dominion?",
+     "paragraphs": [
+      {
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "That path sits inside management’s 5%–7% operating EPS growth target and assumes gradual data-center connections, rate recovery and CVOW completion. The bear case uses $3,100 million in the first period and $3,130 million in the second, then $3,190 million. It assumes financing costs and weak earned returns offset most growth. The bull case starts at $3,450 million, reaches $3,726 million, then $4,024 million, requiring above-target growth from timely load connections and project recovery."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Dominion really make?",
+     "paragraphs": [
+      {
+       "n": 136,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Dominion’s negative free cash flow reflects a construction program that currently spends more cash than operations provide."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "5,361",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Capital spending",
+        "12,641",
+        "11,686",
+        "9,022",
+        "6,544"
+       ],
+       [
+        "**= Free cash flow**",
+        "-7,280",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Stock pay",
+        "46",
+        "53",
+        "44",
+        "36"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-7,326",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "-44.4%",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "Free cash flow is negative because the company spent more on equipment, buildings, and nuclear fuel than it brought in from daily business."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Dominion today?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The continuing business’s four-year run is 2022–2025; 2021 has no clean recast after the gas utility sales. Revenue and operating margin rose in 2025, but net debt also rose. Dominion’s own free cash flow was deeply negative as a share of revenue in 2025, while diluted EPS stayed positive and free cash flow per share trailed it. At $63.56, shares trade at 16.7x next-twelve-month earnings. The dividend yields 4.2%, but free cash flow yield is -13.0% and buyback yield is 0.0%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "63.56"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.7x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-13.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-13.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.2%"
+       ]
+      ],
+      "note": "The negative free cash flow yields mean the company used more cash than it generated, even though it still paid a dividend."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "63.56"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "59.68 (+5%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-13.1%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 63.56,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28%",
+      "values": [
+       "47.43 (-21%)",
+       "43.75 (-23%)",
+       "40.51 (-25%)"
+      ]
+     },
+     "Base": {
+      "probability": "52%",
+      "values": [
+       "63.26 (+3%)",
+       "62.91 (+6%)",
+       "62.32 (+9%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "76.24 (+24%)",
+       "78.05 (+30%)",
+       "79.68 (+36%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "61.42 (+1%)",
+       "60.57 (+3%)",
+       "59.68 (+5%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/d/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=D&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Dominion dividend: payout, cash flow and yield",
+   "meta_description": "Dominion pays a dividend held at $2.67, while negative free cash flow means financing and asset transactions fill the gap.",
+   "opening": "Dominion pays $2.67 per share, and it held the dividend at that level from 2022 through 2025. Its free cash flow was negative in 2025 while dividends continued, so financing and asset transactions filled the gap.",
+   "closing": "The full memo also examines Dominion’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Dominion pay per share over time?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend is $2.51 in the first period, followed by $2.03 and $2.15. The first figure assumes a second-half merger close, combining Dominion payments with the merger-equivalent dividend. NextEra’s stated 6% growth plan supports the final increase. The bear case pays $2.67 first, then cuts to $2.40 in each later period if funding pressure persists. The bull case preserves $2.67 initially because the assumed closing occurs later, then follows the same $2.03 and $2.15 path. Dominion has held its dividend at $2.67 from 2022 through 2025."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.47",
+        "2.09",
+        "2.40",
+        "0.22"
+       ],
+       [
+        "Free cash flow per share",
+        "-8.51",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid, per share",
+        "2.66",
+        "2.67",
+        "2.67",
+        "2.68"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "11.46",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's free cash flow per share is slightly higher than our real free cash flow per share because we subtract the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does Dominion’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the money left after running the business and paying for capital projects. Dominion’s free cash flow was negative in 2025 while dividends continued, so financing and asset transactions filled the gap. A nearly unchanged cash balance did not mean the company funded construction internally; it meant lenders and new shareholders supplied cash while other transactions moved money in and out."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-7,280",
+        "",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "2,278",
+        "2,239",
+        "2,233",
+        "2,209"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "9,799",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid to shareholders",
+        "2,278",
+        "2,239",
+        "2,233",
+        "2,209"
+       ]
+      ],
+      "note": "The company paid dividends even though its free cash flow was negative, so it had to use savings or borrow money to pay shareholders."
+     }
+    },
+    {
+     "heading": "What could change Dominion’s dividend?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would stay near base if operating EPS grows within the stated 5%–7% range and the merger closes in the second half of 2027. It would move toward the bull case if signed large-load commitments become energized, utilized data centers and CVOW finishes near budget and schedule."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Dominion’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The continuing business’s four-year run is 2022–2025; 2021 has no clean recast after the gas utility sales. Revenue and operating margin rose in 2025, but net debt also rose. Dominion’s own free cash flow was deeply negative as a share of revenue in 2025, while diluted EPS stayed positive and free cash flow per share trailed it. At $63.56, shares trade at 16.7x next-twelve-month earnings. The dividend yields 4.2%, but free cash flow yield is -13.0% and buyback yield is 0.0%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "63.56"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-13.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "4.2%"
+       ]
+      ],
+      "note": "The negative free cash flow yields mean the company used more cash than it generated, even though it still paid a dividend."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.66"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-13.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-13.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.68",
+      "2.67",
+      "2.67",
+      "2.66"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "",
+      "-8.57"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "",
+      "-8.51"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/d/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=D&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Dominion earnings date, guidance and results",
+   "meta_description": "Dominion's next results are expected October 30, 2026, with guidance, recent results and project execution in focus.",
+   "opening": "Dominion's next results are expected on October 30, 2026. Watch whether CVOW's remaining work stays on track without unrecoverable costs widening.",
+   "closing": "The full memo also explains Dominion’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Dominion guided for the year?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to modest returns, hinging on earnings growth, project recovery, financing and merger outcomes. Management guides to 2026 operating EPS of $3.45–$3.69 per share and 5%–7% annual operating EPS growth through 2030. It calls for $65 billion of capital investment from 2026–2030 and a 15.0% FFO-to-debt ratio in 2026. CVOW guidance sets an $11.65 billion budget and completion by December 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Operating earnings ($ per share)",
+        "Year to Dec 2026",
+        "3.45",
+        "3.69",
+        "Jul 31, 2026"
+       ],
+       [
+        "2026 guidance midpoint ($ per share)",
+        "Year to Dec 2026",
+        "3.57",
+        "3.57",
+        "Jul 31, 2026"
+       ],
+       [
+        "Long-term operating EPS growth rate",
+        "2026–2030",
+        "5.0%",
+        "7.0%",
+        "Jul 31, 2026"
+       ],
+       [
+        "FFO to debt",
+        "Year to Dec 2026",
+        "15.0%",
+        "15.0%",
+        "Feb 23, 2026"
+       ],
+       [
+        "2026—2030 capital investment plan (US$ billions)",
+        "2026–2030",
+        "65",
+        "65",
+        "Jul 31, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Dominion's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue rose from the year-earlier quarter, but operating income, net income, and diluted EPS fell. Dominion’s operating EPS moved higher instead. The difference came from the renewable-gas impairment, unrecouped CVOW costs, and volatile investment marks. GAAP captured those effects; the adjusted measure tried to isolate recurring performance."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,480",
+        "5,019",
+        "4,093",
+        "4,527",
+        "3,810",
+        "4,076",
+        "3,400",
+        "3,941"
+       ],
+       [
+        "Operating income",
+        "329",
+        "1,392",
+        "756",
+        "1,339",
+        "1,096",
+        "1,223",
+        "391",
+        "1,218"
+       ],
+       [
+        "Net income",
+        "341",
+        "622",
+        "581",
+        "1,006",
+        "759",
+        "666",
+        "137",
+        "949"
+       ],
+       [
+        "EPS, diluted",
+        "0.37",
+        "0.69",
+        "0.66",
+        "1.16",
+        "0.88",
+        "0.77",
+        "0.14",
+        "1.11"
+       ]
+      ],
+      "note": "Free cash flow is negative because the company spent more cash on equipment and buildings than its daily business brought in."
+     }
+    },
+    {
+     "heading": "What should Dominion watch in its next results?",
+     "paragraphs": [
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "CVOW’s final-turbine installation remains targeted for year-end 2027. Before then, Dominion must complete the remaining work without allowing unrecoverable costs to widen. The project will continue consuming cash until it is operating and earning its full return."
+      },
+      {
+       "n": 209,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The proposed merger with NextEra Energy is a separate uncertainty. The companies filed for regulatory approvals in July and expect closing in the second half of 2027 if approval arrives. Those milestones determine how much of the standalone funding plan Dominion must carry forward."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "4,480"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.37"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,941",
+      "3,400",
+      "4,076",
+      "3,810",
+      "4,527",
+      "4,093",
+      "5,019",
+      "4,480"
+     ],
+     "EPS, diluted": [
+      "1.11",
+      "0.14",
+      "0.77",
+      "0.88",
+      "1.16",
+      "0.66",
+      "0.69",
+      "0.37"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/d/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=D&src=seo-earnings"
+  }
+ },
+ "short_name": "Dominion",
+ "first_memo_date": "2026-10-18T12:16:22Z"
+}

@@ -1,0 +1,844 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "STT",
+ "slug": "stt",
+ "company": "State Street Corporation",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-15T10:54:05Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 166.89,
+ "price_date": "2026-10-14T20:01:40Z",
+ "next_earnings": "2027-01-15",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 246,
+  "tables": 27,
+  "words": 17841,
+  "sources": 238
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "State Street Corporation runs the financial plumbing that lets investment funds own assets, trade them and report to investors. It sells the records, custody, technology, trading and investment management behind that plumbing, then earns fees and interest as money passes through it."
+ },
+ "sources": [
+  {
+   "title": "SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000124/stt-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/93751/000009375125000111/stt-20241231.htm"
+  },
+  {
+   "title": "Balance-sheet supplement",
+   "url": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000592/exhibit992-3q26earningsrel.htm"
+  }
+ ],
+ "rivals": [
+  "BNY",
+  "JPM",
+  "NTRS",
+  "C",
+  "HSBC",
+  "BNP.PA",
+  "UBS",
+  "DB",
+  "BLK",
+  "IVZ",
+  "SSNC",
+  "BR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "State Street stock forecast",
+   "meta_description": "State Street's weighted forecast points to near-term weakness, then recovery, while the memo explains the earnings, cash flow and valuation behind it.",
+   "opening": "State Street's weighted path is down first and up later: the weighted price is $152.28 in October 2027 and $175.61 in October 2029. It hinges on servicing-fee repricing, installation pace, NII, market-sensitive investment fees, Alpha cross-selling and productivity after technology and onboarding costs.",
+   "closing": "The full memo also explains State Street's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could State Street's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $152.28 in October 2027, implying a 7% loss. It is $175.61 in October 2029, implying a 13% gain. The bear case has 25% probability; the base case, 55%; the bull case, 20%."
+      },
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted forecast points to near-term weakness followed by a measured recovery. The weighted price is $152.28 in October 2027, a 7% loss including dividends. It reaches $161.58 in October 2028, a 1% gain. By October 2029 it is $175.61, a 13% gain."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 166.89, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 166.89, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "112.82 (-30 %)",
+        "102.74 (-34 %)",
+        "93.51 (-37 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "157.35 (-3 %)",
+        "166.43 (+4 %)",
+        "181.98 (+17 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "187.64 (+15 %)",
+        "221.81 (+38 %)",
+        "260.68 (+64 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "152.28 (-7 %)",
+        "161.58 (+1 %)",
+        "175.61 (+13 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for State Street?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The outcome turns on servicing-fee repricing, installation pace, NII, market-sensitive investment fees, Alpha cross-selling and productivity after technology and onboarding costs. Liquidity after the planned redemption of $500 million of notes by November 18, 2026 is an immediate test. The December 2026 target to begin Luxembourg servicing for tokenized funds—funds whose ownership records use digital tokens—matters when external business goes live. Through 2027, mandate conversion and the proposed Santander CACEIS Latam acquisition matter; by 2029, approximately $1 billion of annual run-rate benefits must outweigh continuing technology, onboarding and expansion costs."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does State Street really make?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow normally means operating cash flow minus capital spending. On that mechanical basis, State Street generated **$10,843 million** in 2025 after producing negative **$14,136 million** in 2024. Such a reversal, despite rising net income, shows that deposits, securities, collateral and other financial positions dominate the calculation."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "11,898",
+        "-13,210",
+        "690",
+        "11,954",
+        "-6,710"
+       ],
+       [
+        "− Capital spending",
+        "1,055",
+        "926",
+        "816",
+        "734",
+        "811"
+       ],
+       [
+        "**= Free cash flow**",
+        "10,843",
+        "-14,136",
+        "-126",
+        "11,220",
+        "-7,521"
+       ],
+       [
+        "− Stock pay",
+        "286",
+        "226",
+        "220",
+        "261",
+        "254"
+       ],
+       [
+        "**= Real free cash flow**",
+        "10,557",
+        "-14,362",
+        "-346",
+        "10,959",
+        "-7,775"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "75.7%",
+        "-110.5%",
+        "-2.9%",
+        "90.2%",
+        "-64.6%"
+       ]
+      ],
+      "note": "The cash from operations includes large temporary movements in collateral and financial contracts, so these free cash flow numbers may not show the company’s normal business cash."
+     }
+    },
+    {
+     "heading": "What does an investor pay for State Street today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $166.89 and 12.1x forward earnings, the valuation implies about $13.79 in earnings per share over the next twelve months. That equals an earnings yield of roughly 8.3%, but it is not a cash payment: State Street may retain earnings, suffer losses or earn less than forecast."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "166.89"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "13.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.1x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.8x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "23.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "23.2%"
+       ]
+      ],
+      "note": "Enterprise value can be misleading for a bank because customer deposits are left out and debt and cash do not work like they do at most companies."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "166.89"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "175.61 (+13 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "23.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 166.89,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "112.82 (-30 %)",
+       "102.74 (-34 %)",
+       "93.51 (-37 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "157.35 (-3 %)",
+       "166.43 (+4 %)",
+       "181.98 (+17 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "187.64 (+15 %)",
+       "221.81 (+38 %)",
+       "260.68 (+64 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "152.28 (-7 %)",
+       "161.58 (+1 %)",
+       "175.61 (+13 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/stt/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STT&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "State Street dividend: payments and cash flow",
+   "meta_description": "State Street’s dividend, cash coverage, payout history, risks, and current yield in plain English.",
+   "opening": "State Street paid $3.20 per share in 2025 and its September 2026 quarterly dividend was $0.92. State Street generated $10,843 million of mechanical free cash flow in 2025, but its cash flow is not a clean measure of money available to shareholders.",
+   "closing": "The full memo also explains State Street’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does State Street pay shareholders?",
+     "paragraphs": [
+      {
+       "n": 239,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at $0.92 quarterly, or $3.68 annualized. That rate was declared after a planned 10% increase, and dividends had risen from $2.18 per share in 2021 to $3.20 in 2025. The base case reaches $4.57 by October 2029 because earnings and capital support roughly annual increases. The bear case holds at $3.68 because rate pressure, weaker fees or capital needs force a freeze. The bull case reaches $4.73 because profitability permits faster increases."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "9.40",
+        "8.21",
+        "5.58",
+        "7.19",
+        "7.19"
+       ],
+       [
+        "Real free cash flow per share",
+        "36.53",
+        "-47.52",
+        "-1.06",
+        "29.61",
+        "-21.72"
+       ],
+       [
+        "− Dividends paid, per share",
+        "3.15",
+        "2.84",
+        "2.56",
+        "2.35",
+        "2.18"
+       ],
+       [
+        "− Share buybacks, per share",
+        "4.15",
+        "4.36",
+        "11.58",
+        "4.05",
+        "2.51"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "30.22",
+        "",
+        "",
+        "23.91",
+        ""
+       ]
+      ],
+      "note": "The real free cash flow per share is lower because it subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Is State Street’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow normally means operating cash flow minus capital spending. On that mechanical basis, State Street generated **$10,843 million** in 2025 after producing negative **$14,136 million** in 2024. Such a reversal, despite rising net income, shows that deposits, securities, collateral and other financial positions dominate the calculation."
+      },
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "The dividend is easier to interpret. The 2025 dividend was **$3.20 per share**, and the September 2026 quarterly dividend was **$0.92**. A specialist therefore tests recurring earnings, capital and liquidity before treating cash flow as distributable money."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "10,843",
+        "-14,136",
+        "-126",
+        "11,220",
+        "-7,521"
+       ],
+       [
+        "− Dividends paid",
+        "909",
+        "859",
+        "837",
+        "871",
+        "779"
+       ],
+       [
+        "− Share buybacks",
+        "1,200",
+        "1,319",
+        "3,781",
+        "1,500",
+        "900"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "8,734",
+        "",
+        "",
+        "8,849",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "19.5%",
+        "not meaningful",
+        "not meaningful",
+        "21.1%",
+        "not meaningful"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "20.0%",
+        "not meaningful",
+        "not meaningful",
+        "21.6%",
+        "not meaningful"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change State Street’s dividend?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.7 — Capital, liquidity and balance-sheet sensitivity",
+       "text": "The specialist therefore connects capital ratios with portfolio duration, unencumbered assets, deposit concentration and credit commitments. What remains for dividends and buybacks is not mechanical free cash flow, but earnings left after the bank has preserved resilience."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "25,405 (24,305 / 25,855)",
+        "26,205 (23,755 / 27,255)",
+        "27,105 (23,405 / 28,805)"
+       ],
+       [
+        "Shares (millions)",
+        "266 (269 / 262)",
+        "260 (266 / 252)",
+        "253 (263 / 243)"
+       ],
+       [
+        "Dividends per share",
+        "3.77 (3.68 / 3.77)",
+        "4.15 (3.68 / 4.22)",
+        "4.57 (3.68 / 4.73)"
+       ],
+       [
+        "Price to book value",
+        "1.65 (1.25 / 1.90)",
+        "1.65 (1.15 / 2.05)",
+        "1.70 (1.05 / 2.20)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is State Street’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "At $166.89 and 12.1x forward earnings, the valuation implies about $13.79 in earnings per share over the next twelve months. That equals an earnings yield of roughly 8.3%, but it is not a cash payment: State Street may retain earnings, suffer losses or earn less than forecast."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.15"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "23.2%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "23.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "2.18",
+      "2.35",
+      "2.56",
+      "2.84",
+      "3.15"
+     ],
+     "Real free cash flow per share": [
+      "-21.72",
+      "29.61",
+      "-1.06",
+      "-47.52",
+      "36.53"
+     ],
+     "Free cash flow per share": [
+      "-21.01",
+      "30.32",
+      "-0.39",
+      "-46.77",
+      "37.52"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/stt/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STT&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "State Street earnings: results and guidance",
+   "meta_description": "State Street expects its next results on January 15, 2027; guidance, past promises and key watchpoints are clear.",
+   "opening": "State Street's next results are expected on January 15, 2027. Watch whether State Street executes the cash-funded repayment while maintaining liquidity.",
+   "closing": "The full memo also explains State Street's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has State Street guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "For 2026, management guides to 13.0%–14.0% fee-revenue growth and 15.0%–16.0% NII growth. It expects expenses to grow 8.0%–8.5%, excluding notable items, with at least 500 basis points of operating leverage. The outlook assumes flat global equity markets and rates broadly following expectations."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Fee Revenue",
+        "Year to Dec 2026",
+        "13.0%",
+        "14.0%",
+        "Oct 14, 2026"
+       ],
+       [
+        "NII",
+        "Year to Dec 2026",
+        "15.0%",
+        "16.0%",
+        "Oct 14, 2026"
+       ],
+       [
+        "Expenses",
+        "Year to Dec 2026",
+        "8.0%",
+        "8.5%",
+        "Oct 14, 2026"
+       ],
+       [
+        "Operating leverage (bps)",
+        "Year to Dec 2026",
+        "500",
+        "",
+        "Oct 14, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has State Street kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 118,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management also has a measurable delivery record. State Street forecast approximately 3–5% fee-revenue growth for 2025, then reported 9% excluding notable items. It also reported approximately US$500 million in productivity savings. Those savings did not mean total costs fell: adjusted expenses rose 5% to $9.8 billion as investment and other costs absorbed part of the benefit. “Ex-notables” is a non-GAAP comparison, so investors should ask whether the savings permanently improve profitability."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is State Street's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 123,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Revenue reached **$13,944 million in 2025**, after growing **7.3%**. That followed **8.8% growth in 2024**, after weaker results in the preceding years. The recent acceleration is real, but it does not describe an uninterrupted high-growth company."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Quarterly revenue reached **$4,004 million**, up about **12.9%** from the prior year. Pre-tax operating income rose about **26.0%**, while diluted EPS rose about **32.7%**. Because no notable items were designated in the latest quarter or its comparison periods, the improvement depends less on charges disappearing."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,004",
+        "4,048",
+        "3,796",
+        "3,667",
+        "3,545",
+        "3,448",
+        "3,284",
+        "3,412"
+       ],
+       [
+        "Operating income",
+        "1,388",
+        "1,389",
+        "969",
+        "918",
+        "1,102",
+        "889",
+        "822",
+        "960"
+       ],
+       [
+        "Net income",
+        "1,090",
+        "1,084",
+        "764",
+        "747",
+        "861",
+        "693",
+        "644",
+        "783"
+       ],
+       [
+        "EPS, diluted",
+        "3.69",
+        "3.65",
+        "2.49",
+        "2.42",
+        "2.78",
+        "2.17",
+        "2.04",
+        "2.46"
+       ]
+      ],
+      "note": "The free cash flow numbers swing widely because this bank's cash flow includes money moving in and out as collateral and from financial contracts, which is different from normal business spending."
+     }
+    },
+    {
+     "heading": "What should I watch in State Street's next results?",
+     "paragraphs": [
+      {
+       "n": 215,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The November 18 senior-note redemption is a concrete funding checkpoint. Investors can watch whether State Street executes the cash-funded repayment while maintaining liquidity. Full-year results should also show whether the upgraded outlook survived the final quarter and how much capital the company distributed."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 15, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "4,004"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "3.69"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "3,412",
+      "3,284",
+      "3,448",
+      "3,545",
+      "3,667",
+      "3,796",
+      "4,048",
+      "4,004"
+     ],
+     "EPS, diluted": [
+      "2.46",
+      "2.04",
+      "2.17",
+      "2.78",
+      "2.42",
+      "2.49",
+      "3.65",
+      "3.69"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/stt/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=STT&src=seo-earnings"
+  }
+ },
+ "short_name": "State Street",
+ "first_memo_date": "2026-10-15T10:54:05Z"
+}

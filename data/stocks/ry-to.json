@@ -1,6 +1,5 @@
 {
  "schema": "public_pages_v1",
- "run_id": "run-20261019T053757Z-b0987ea18592",
  "ticker": "RY.TO",
  "slug": "ry-to",
  "company": "Royal Bank of Canada",
@@ -31,12 +30,12 @@
    "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312525305934/d73208dex991.pdf"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/1000275/000119312524270300/d614196dex991.pdf",
-   "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312524270300/d614196dex991.pdf"
-  },
-  {
    "title": "Annual report — FY2023",
    "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2023_e.pdf"
+  },
+  {
+   "title": "Interim report — Q3 2026",
+   "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/2026q3_report.pdf"
   }
  ],
  "rivals": [
@@ -67,13 +66,13 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "Royal Bank of Canada stock forecast: 2029 scenarios",
-   "meta_description": "RBC's weighted forecast, scenarios, earnings drivers, cash returns and valuation in plain English.",
-   "opening": "The weighted forecast is C$300.37 in October 2029, with +16% including dividends. It hinges on manageable credit costs, resilient margins, HSBC Canada and City National execution, and retention of its valuation premium.",
-   "closing": "The full memo also explains Royal Bank of Canada's business, its rivals, its management and the risks that could change these scenarios.",
+   "title": "RBC stock forecast",
+   "meta_description": "RBC's weighted forecast is C$300.37 in October 2029; scenarios range from C$204.84 to C$401.85, with valuation at 17.6x trailing P/E.",
+   "opening": "RBC's weighted forecast is C$300.37 in October 2029, with the bear case at 25%, the base case at 55% and the bull case at 20%. It hinges on manageable credit costs, resilient margins, HSBC Canada and City National execution, and retention of its valuation premium.",
+   "closing": "The full memo explains RBC's business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "Where could Royal Bank of Canada's shares go?",
+     "heading": "Where could RBC's shares be by 2029?",
      "paragraphs": [
       {
        "n": 13,
@@ -128,27 +127,34 @@
      }
     },
     {
-     "heading": "What has to go right or wrong for Royal Bank of Canada?",
+     "heading": "What has to go right or wrong for RBC?",
      "paragraphs": [
       {
-       "n": 246,
+       "n": 250,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
-       "subsection": "8.3 — The drivers",
-       "text": "The base follows RBC’s sustained increase in common equity across the supplied year-ends and the forecast’s nine-month earnings evidence. The bear subtracts additional credit losses and limits repurchases. The bull assumes stronger earnings from improving credit, HSBC Canada relationships and City National."
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case assumes credit costs keep rising, mortgage and deposit competition compress spreads, City National misses its return target and buybacks slow. It produces C$225.75 in October 2027 and C$204.84 in October 2029, with a 25% probability. Impaired loans reached C$10,143 million and allowance coverage fell to 76.8%, making the risk concrete. The U.S. region’s 10.7% ROE remains below its 12.0% target. The probability stays below the base because RBC retains earnings and capital capacity."
+      },
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires credit improvement, disciplined pricing, durable HSBC Canada revenue, better wealth and capital-markets momentum, and City National reaching its target. It produces C$319.56 first and C$401.85 last, with a 20% probability. Q3 ROE of 17.9% exceeded the 17.0%+ objective. But the bull also requires a 3.2x multiple and C$9.0 billion of 2029 buybacks, so it depends on several favorable outcomes."
       }
      ],
      "table": null
     },
     {
-     "heading": "How much cash does Royal Bank of Canada really make?",
+     "heading": "How much does RBC earn and give back?",
      "paragraphs": [
       {
-       "n": 149,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.3 — Capital and liquidity",
-       "text": "RBC’s operating cash flow is not cash freely available to shareholders. A customer deposit brings in cash but also creates an equal obligation, while a new loan sends out cash and creates an earning asset. Deposits contributed C$106,085 million to operating cash flow in fiscal 2025. Loan growth absorbed C$62,098 million."
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "In 2025, RBC declared C$6.04 per share in dividends and spent C$2,768 million on share buybacks. It retained C$6.09 per share."
       }
      ],
      "table": {
@@ -201,7 +207,7 @@
      }
     },
     {
-     "heading": "What does an investor pay for Royal Bank of Canada today?",
+     "heading": "What does an investor pay for RBC today?",
      "paragraphs": [
       {
        "n": 178,
@@ -223,10 +229,6 @@
        [
         "Share price",
         "280.01"
-       ],
-       [
-        "Market value (calculated)",
-        "387,654"
        ],
        [
         "P/E, last 12 months (calculated)",
@@ -319,13 +321,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Royal Bank of Canada dividend: history and coverage",
-   "meta_description": "Royal Bank of Canada declared C$6.04 per share in 2025; its dividend payout ratio was 43.0%, with yield shown against today’s price.",
-   "opening": "Royal Bank of Canada declared C$6.04 per share in dividends in 2025. The memo follows coverage through dividends, buybacks and retained earnings: its own dividend payout ratio was 43.0% in 2025.",
-   "closing": "The full memo also examines Royal Bank of Canada’s business, rivals, management and risks.",
+   "title": "RBC dividend: payments, coverage and yield",
+   "meta_description": "RBC's dividend payments, coverage, plans and current yield, in plain English.",
+   "opening": "RBC declared C$6.04 per share in dividends in 2025. RBC's own dividend payout ratio was 43.0% in 2025, while buybacks were the flexible part of the distribution.",
+   "closing": "The full RBC memo also covers RBC's business, its rivals, its management and its risks.",
    "blocks": [
     {
-     "heading": "How much does Royal Bank of Canada pay per share?",
+     "heading": "How much does RBC pay in dividends?",
      "paragraphs": [
       {
        "n": 14,
@@ -379,28 +381,20 @@
         "4.97",
         "2.26",
         "6.74"
-       ],
-       [
-        "Book value per share",
-        "91.00",
-        "83.46",
-        "76.92",
-        "72.85",
-        "64.57"
        ]
       ],
       "note": "The company kept C$6.09 per share because it paid C$1.96 per share for share buybacks, which counts as money returned to shareholders even though it can make each remaining share a larger piece of the company."
      }
     },
     {
-     "heading": "Is Royal Bank of Canada’s dividend covered by its cash?",
+     "heading": "Does RBC's dividend come from cash the business makes?",
      "paragraphs": [
       {
-       "n": 149,
-       "section": "essay-5",
-       "chapter": "5. The numbers",
-       "subsection": "5.3 — Capital and liquidity",
-       "text": "RBC’s operating cash flow is not cash freely available to shareholders. A customer deposit brings in cash but also creates an equal obligation, while a new loan sends out cash and creates an earning asset. Deposits contributed C$106,085 million to operating cash flow in fiscal 2025. Loan growth absorbed C$62,098 million."
+       "n": 101,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "Over five fiscal years, earnings for common shareholders totalled C$81,473 million. Dividends declared on common shares totalled C$36,965 million. Buybacks totalled C$8,334 million. That left C$36,174 million inside the business."
       },
       {
        "n": 103,
@@ -476,7 +470,7 @@
      }
     },
     {
-     "heading": "What could change Royal Bank of Canada’s dividend?",
+     "heading": "What could change RBC's dividend?",
      "paragraphs": [
       {
        "n": 248,
@@ -486,10 +480,47 @@
        "text": "Dividends rise in the base case from C$7.52 per share in 2027 to C$8.60 in 2029. The bear holds C$7.04 throughout, the current annualized rate; the bull reaches C$8.95. The base follows RBC’s record of annual increases and its 43.0% payout ratio, within the stated 40%–50% range. The bear assumes a pause because credit pressure could demand capital preservation. The bull assumes faster growth alongside stronger earnings, consistent with the 7.0% EPS objective."
       }
      ],
-     "table": null
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "145,082 (141,082 / 144,982)",
+        "154,582 (147,582 / 154,682)",
+        "164,282 (155,282 / 164,782)"
+       ],
+       [
+        "Shares (millions)",
+        "1,368 (1,375 / 1,361)",
+        "1,353 (1,369 / 1,337)",
+        "1,338 (1,365 / 1,312)"
+       ],
+       [
+        "Dividends per share",
+        "7.52 (7.04 / 7.60)",
+        "8.04 (7.04 / 8.24)",
+        "8.60 (7.04 / 8.95)"
+       ],
+       [
+        "Price to book value",
+        "2.70 (2.20 / 3.00)",
+        "2.60 (2.00 / 3.10)",
+        "2.50 (1.80 / 3.20)"
+       ]
+      ],
+      "note": ""
+     }
     },
     {
-     "heading": "What is Royal Bank of Canada’s dividend yield today against its share price?",
+     "heading": "What is RBC's dividend yield today?",
      "paragraphs": [
       {
        "n": 178,
@@ -499,42 +530,7 @@
        "text": "RBC asks investors to pay a substantial premium for its ability to earn strong profits on shareholder capital. At C$280.01 on October 19, 2026, its trailing P/E is 17.6x, meaning investors pay C$17.60 for each dollar of recent annual profit. Its forward P/E is 17.1x, based on expected profit over the next twelve months."
       }
      ],
-     "table": {
-      "title": "What an investor pays today",
-      "unit": "C$ millions",
-      "caption": "What an investor pays today (C$ millions)",
-      "head": [
-       "Row",
-       "Today (Oct 19, 2026)"
-      ],
-      "rows": [
-       [
-        "Share price",
-        "280.01"
-       ],
-       [
-        "P/E, last 12 months (calculated)",
-        "17.6x"
-       ],
-       [
-        "P/E, next 12 months (calculated)",
-        "17.1x"
-       ],
-       [
-        "Price to book (calculated)",
-        "2.9x"
-       ],
-       [
-        "Price to tangible book (calculated)",
-        "3.6x"
-       ],
-       [
-        "Dividend yield (calculated)",
-        "2.5%"
-       ]
-      ],
-      "note": "The share price is from October 16, while the report is dated October 19, so the figures are not all measured on the same day."
-     }
+     "table": null
     }
    ],
    "facts": [
@@ -553,21 +549,14 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Royal Bank of Canada earnings date and guidance",
-   "meta_description": "Royal Bank of Canada results are due December 3, 2026; see guidance, recent results and what to watch.",
-   "opening": "Royal Bank of Canada results are due December 3, 2026. Watch whether it produces positive operating leverage while absorbing credit losses.",
-   "closing": "The full memo also explains Royal Bank of Canada’s business, its rivals, its management and its risks.",
+   "title": "RBC earnings date and guidance",
+   "meta_description": "RBC’s next results are due December 3, 2026; guidance covers returns, growth and operating leverage.",
+   "opening": "RBC’s next results are due December 3, 2026. Watch for positive operating leverage while RBC maintains technology spending and absorbs credit losses.",
+   "closing": "The full memo explains how RBC makes money, competes with rivals, is run by management, and faces its risks.",
    "blocks": [
     {
-     "heading": "What has Royal Bank of Canada guided for the year?",
+     "heading": "What has RBC guided for the year?",
      "paragraphs": [
-      {
-       "n": 211,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.1 — What management has guided",
-       "text": "On December 3, 2025, management raised its medium-term return-on-equity objective to **17.0%+**, effective fiscal 2026, and kept its diluted earnings-per-share growth objective at **7.0%+**. Return on equity, or ROE, measures profit earned for each dollar of shareholders’ capital. If a bank earns seventeen dollars on one hundred dollars of equity, its ROE is seventeen percent. “Diluted” earnings per share allows for shares that could be created by instruments such as employee awards."
-      },
       {
        "n": 212,
        "section": "essay-7",
@@ -588,13 +577,6 @@
        "Date it was given"
       ],
       "rows": [
-       [
-        "CET1 ratio target",
-        "Current environment; trend toward midpoint",
-        "12.5%",
-        "13.5%",
-        "Aug 27, 2026"
-       ],
        [
         "Diluted EPS growth",
         "Medium term, 3–5 years",
@@ -624,10 +606,17 @@
         "Aug 27, 2026"
        ],
        [
-        "HSBC Canada revenue synergies",
+        "Incremental enterprise value generated from AI",
+        "By end of fiscal 2027",
+        "700",
+        "1,000",
+        "Aug 27, 2026"
+       ],
+       [
+        "Efficiency ratio",
         "By 2027",
-        "300",
-        "300",
+        "53.0%",
+        "53.0%",
         "Dec 3, 2025"
        ]
       ],
@@ -635,7 +624,7 @@
      }
     },
     {
-     "heading": "Did Royal Bank of Canada keep its past promises?",
+     "heading": "Did RBC keep its past promises?",
      "paragraphs": [
       {
        "n": 136,
@@ -648,7 +637,7 @@
      "table": null
     },
     {
-     "heading": "What were Royal Bank of Canada's last eight quarters?",
+     "heading": "What is RBC’s trend in revenue and profit?",
      "paragraphs": [
       {
        "n": 156,
@@ -745,7 +734,7 @@
      }
     },
     {
-     "heading": "What should investors watch in Royal Bank of Canada's next results?",
+     "heading": "What should investors watch in RBC’s next results?",
      "paragraphs": [
       {
        "n": 230,
@@ -813,5 +802,6 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=RY.TO&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "RBC",
+ "first_memo_date": "2026-10-19T07:11:17Z"
 }

@@ -1,0 +1,868 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "UPS",
+ "slug": "ups",
+ "company": "United Parcel Service, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T01:01:56Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 97.5,
+ "price_date": "2026-10-16T19:59:59Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 242,
+  "tables": 27,
+  "words": 16545,
+  "sources": 224
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "UPS sells the movement and care of goods, from an ordinary parcel to a temperature-sensitive medicine. At its simplest, a customer pays for transportation, speed and confidence that the shipment will arrive where promised."
+ },
+ "sources": [
+  {
+   "title": "UPS 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072725000019/ups-20241231.htm"
+  },
+  {
+   "title": "UPS 2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072724000008/ups-20231231.htm"
+  },
+  {
+   "title": "2022 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072723000006/ups-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "FDX",
+  "DHL.DE",
+  "AMZN",
+  "XPO",
+  "CHRW",
+  "EXPD",
+  "JBHT",
+  "GXO",
+  "ODFL"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "UPS stock forecast",
+   "meta_description": "UPS stock forecast: weighted scenarios, the earnings recovery they require, real free cash flow, and today’s valuation.",
+   "opening": "The weighted forecast is $92.50 by October 2027, a 2% total return including dividends, and $112.15 by October 2029. It hinges on the smaller network becoming a more profitable one.",
+   "closing": "The full memo also explains UPS’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could UPS’s shares go in the forecast?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $92.50 by October 2027, a 2% total return including dividends, and $112.15 by October 2029. The cases assign 25% probability to the bear case, 55% to the base case and 20% to the bull case."
+      },
+      {
+       "n": 14,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "UPS is an earnings-recovery bet: the smaller network must become a more profitable one."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 97.50, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 97.50, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "61.24 (-30 %)",
+        "52.24 (-34 %)",
+        "56.34 (-25 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "97.44 (+7 %)",
+        "106.03 (+22 %)",
+        "116.90 (+40 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "118.00 (+28 %)",
+        "142.77 (+60 %)",
+        "168.83 (+94 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "92.50 (+2 %)",
+        "99.93 (+16 %)",
+        "112.15 (+35 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not another separate case."
+     }
+    },
+    {
+     "heading": "What has to go right for UPS, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "This recovery reflects higher yield, SMB and healthcare growth, and gradual savings after the Amazon reduction. Domestic revenue per package rose 9.3% while adjusted cost per package rose 8.0%. Automated buildings handled 68.5% of U.S. volume by June, compared with 64% a year earlier."
+      },
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives earnings of $5,220 million initially. They fall to $4,956 million before recovering to $5,073 million. It starts with $90 billion of revenue and a 5.8% margin. The next period uses $88.5 billion and 5.6%. The final period uses $89 billion and 5.7%. This assumes two million lost daily packages leave fixed costs stranded and replacement demand disappoints."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does UPS really make?",
+     "paragraphs": [
+      {
+       "n": 134,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending was $3,685 million in 2025, leaving simple free cash flow of $4,765 million. After treating stock compensation as an economic cost, the remainder was $4,692 million, or 5.3% of revenue."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,450",
+        "10,122",
+        "10,238",
+        "14,104",
+        "15,007"
+       ],
+       [
+        "− Capital spending",
+        "3,685",
+        "3,909",
+        "5,158",
+        "4,769",
+        "4,194"
+       ],
+       [
+        "**= Free cash flow**",
+        "4,765",
+        "6,213",
+        "5,080",
+        "9,335",
+        "10,813"
+       ],
+       [
+        "− Stock pay",
+        "73",
+        "24",
+        "220",
+        "1,568",
+        "878"
+       ],
+       [
+        "**= Real free cash flow**",
+        "4,692",
+        "6,189",
+        "4,860",
+        "7,767",
+        "9,935"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "5.3%",
+        "6.8%",
+        "5.3%",
+        "7.7%",
+        "10.2%"
+       ]
+      ],
+      "note": "The company's own free cash flow is usually higher than ours because it adds back money from selling property and other investments, while our count leaves those out; in 2022, it also subtracts an item we do not."
+     }
+    },
+    {
+     "heading": "What does an investor pay for UPS today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "97.50"
+       ],
+       [
+        "Market value (calculated)",
+        "82,951.20"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "102,782.20"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.1x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.2x"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "5.7%"
+       ]
+      ],
+      "note": "The next-twelve-month price-to-earnings number uses analysts’ estimated profit, not profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "97.50"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "112.15 (+35 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "12.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 97.5,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "61.24 (-30 %)",
+       "52.24 (-34 %)",
+       "56.34 (-25 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "97.44 (+7 %)",
+       "106.03 (+22 %)",
+       "116.90 (+40 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "118.00 (+28 %)",
+       "142.77 (+60 %)",
+       "168.83 (+94 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "92.50 (+2 %)",
+       "99.93 (+16 %)",
+       "112.15 (+35 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/ups/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UPS&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "UPS dividend",
+   "meta_description": "UPS pays $6.56 per share annually, but cash coverage is thin and the dividend depends on savings and cash generation.",
+   "opening": "UPS pays $6.56 per share annually, based on a declared quarterly rate of $1.64. Management forecasts $5,500 million of free cash flow against $5,400 million of dividends, leaving thin coverage.",
+   "closing": "The full memo also explains UPS’s business, rivals, management decisions and operating risks.",
+   "blocks": [
+    {
+     "heading": "How much does UPS pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "Dividends do not set the price directly, but they are included in the return shown. The current annualized payout is $6.56 per share, based on the declared quarterly rate of $1.64."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "6.56",
+        "6.75",
+        "7.80",
+        "13.20",
+        "14.68"
+       ],
+       [
+        "Real free cash flow per share",
+        "5.52",
+        "7.23",
+        "5.65",
+        "8.88",
+        "11.32"
+       ],
+       [
+        "Free cash flow per share",
+        "5.61",
+        "7.26",
+        "5.91",
+        "10.67",
+        "12.32"
+       ],
+       [
+        "− Dividends paid, per share",
+        "6.35",
+        "6.31",
+        "6.25",
+        "5.84",
+        "3.91"
+       ],
+       [
+        "− Share buybacks, per share",
+        "1.18",
+        "0.58",
+        "2.62",
+        "4.00",
+        "0.57"
+       ]
+      ],
+      "note": "The company's own free cash flow per share is higher because it includes money from selling property and other investments, while our count also subtracts the value of shares given to employees as pay."
+     }
+    },
+    {
+     "heading": "Does UPS’s cash cover its dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "UPS can reach $112.15 by October 2029, a 35% total return including dividends, if a smaller network produces durable savings and profitable replacement growth. Management guides to $91,200 million of 2026 revenue, $8,650 million of adjusted operating profit and $7.22 of adjusted diluted EPS. It forecasts $5,500 million of free cash flow against $5,400 million of dividends. U.S. Domestic adjusted operating margin is guided at 7.5% for 2026, with a second-half target of approximately 8.8%."
+      },
+      {
+       "n": 77,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across the five-year period, UPS returned nearly all of its free cash flow through dividends and share buybacks. Dividends pay owners directly, while buybacks reduce the number of shares in circulation. In both 2023 and 2025, distributions exceeded free cash flow, so UPS had to draw on other resources."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "4,765",
+        "6,213",
+        "5,080",
+        "9,335",
+        "10,813"
+       ],
+       [
+        "− Dividends paid",
+        "5,398",
+        "5,399",
+        "5,372",
+        "5,114",
+        "3,437"
+       ],
+       [
+        "− Share buybacks",
+        "1,000",
+        "500",
+        "2,250",
+        "3,500",
+        "500"
+       ],
+       [
+        "Paid to shareholders",
+        "6,398",
+        "5,899",
+        "7,622",
+        "8,614",
+        "3,937"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "134.3%",
+        "94.9%",
+        "150.0%",
+        "92.3%",
+        "36.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change UPS’s dividend?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend remains $6.56 per share throughout. The bear case cuts it to $5.25 after the first period because 2025 dividends exceeded free cash flow. The bull case raises it to $6.72 and then $6.88 if recurring savings improve coverage. The freeze is most credible because 2026 forecast headroom is only about $100 million."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "6,808 (5,220 / 7,144)",
+        "7,220 (4,956 / 8,019)",
+        "7,644 (5,073 / 8,840)"
+       ],
+       [
+        "Shares (millions)",
+        "852 (852 / 848)",
+        "851 (854 / 843)",
+        "850 (855 / 838)"
+       ],
+       [
+        "Dividends per share",
+        "6.56 (6.56 / 6.56)",
+        "6.56 (5.25 / 6.72)",
+        "6.56 (5.25 / 6.88)"
+       ],
+       [
+        "Price to earnings",
+        "12.20 (10.00 / 14.00)",
+        "12.50 (9.00 / 15.00)",
+        "13.00 (9.50 / 16.00)"
+       ]
+      ],
+      "note": "The price to earnings number shows how many dollars investors pay for each dollar of yearly earnings, so a higher number means a more expensive share."
+     }
+    },
+    {
+     "heading": "What is UPS’s dividend yield at today’s price?",
+     "paragraphs": [
+      {
+       "n": 160,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At **$97.50 on October 16, 2026**, UPS had a stock-market value of **$82,951.20 million**. Its **enterprise value** was **$102,782.20 million**. Market value is the shareholders’ portion; enterprise value estimates the cost of buying the whole operating business by adding debt and subtracting cash. The difference implies **$19,831 million of net debt**, so operating cash must support lenders before it can fully support dividends or buybacks."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "6.35"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "6.7%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "5.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.91",
+      "5.84",
+      "6.25",
+      "6.31",
+      "6.35"
+     ],
+     "Real free cash flow per share": [
+      "11.32",
+      "8.88",
+      "5.65",
+      "7.23",
+      "5.52"
+     ],
+     "Free cash flow per share": [
+      "12.32",
+      "10.67",
+      "5.91",
+      "7.26",
+      "5.61"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/ups/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UPS&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "UPS earnings date, guidance and results",
+   "meta_description": "UPS reports on October 27, 2026; guidance calls for $91.2 billion of revenue and $8.65 billion of adjusted operating profit.",
+   "opening": "UPS's next results are expected on October 27, 2026. Watch whether UPS delivers higher domestic profit despite lower package counts.",
+   "closing": "The full UPS memo also answers questions about UPS's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has UPS guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 189,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "UPS collects, sorts, transports and delivers parcels, or packages, so its future depends on both shipment volume and the cost of moving each package. Management’s 2026 guidance calls for revenue of $91.2 billion and adjusted operating profit of $8.65 billion. It also expects adjusted diluted earnings per share of $7.22."
+      },
+      {
+       "n": 192,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "UPS expects U.S. Domestic revenue of $60 billion and an adjusted operating margin of 7.5%. Management’s second-half target is approximately 8.8%, making the remaining quarters the first clear test of the smaller network. Analysts’ forecasts provide the next comparison."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Consolidated revenue",
+        "Year to Dec 2026",
+        "91,200",
+        "91,200",
+        "Jul 28, 2026"
+       ],
+       [
+        "Consolidated non-GAAP adjusted operating profit",
+        "Year to Dec 2026",
+        "8,650",
+        "8,650",
+        "Jul 28, 2026"
+       ],
+       [
+        "Non-GAAP adjusted diluted EPS",
+        "Year to Dec 2026",
+        "7.22",
+        "7.22",
+        "Jul 28, 2026"
+       ],
+       [
+        "Free cash flow including DCP",
+        "Year to Dec 2026",
+        "5,500",
+        "5,500",
+        "Jul 28, 2026"
+       ],
+       [
+        "U.S. Domestic, Revenue",
+        "Year to Dec 2026",
+        "60,000",
+        "60,000",
+        "Jul 28, 2026"
+       ],
+       [
+        "U.S. Domestic, Non-GAAP adj. operating margin",
+        "Year to Dec 2026",
+        "7.5%",
+        "7.5%",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "When Low and High are the same, it is an approximate target, not a guaranteed result."
+     }
+    },
+    {
+     "heading": "Did UPS keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 120,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "UPS said it completed the Amazon reduction and network changes, but second-quarter reported operating profit was US$930 million against US$2.1 billion adjusted, chiefly because of transformation charges. The final judgment is therefore mixed: management delivered the timetable, yet shareholders still bore the restructuring cost. UPS is partly on their side when incentives punish misses, but only if the company counts the full cost of keeping its promises."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has UPS's revenue and profit done in the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Operating income fell from $13,094 million in 2022 to $7,867 million in 2025. Operating margin narrowed from about 13.0% to 8.9%, showing that less revenue remained after operating costs."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "22,834",
+        "21,202",
+        "24,479",
+        "21,415",
+        "21,221",
+        "21,546",
+        "25,301",
+        "22,245"
+       ],
+       [
+        "Operating income",
+        "930",
+        "1,267",
+        "2,575",
+        "1,804",
+        "1,822",
+        "1,666",
+        "2,926",
+        "1,985"
+       ],
+       [
+        "Net income",
+        "604",
+        "864",
+        "1,791",
+        "1,311",
+        "1,283",
+        "1,187",
+        "1,721",
+        "1,539"
+       ],
+       [
+        "EPS, diluted",
+        "0.71",
+        "1.02",
+        "2.10",
+        "1.55",
+        "1.51",
+        "1.40",
+        "2.01",
+        "1.80"
+       ],
+       [
+        "Cash from operations",
+        "859",
+        "2,224",
+        "3,302",
+        "2,482",
+        "348",
+        "2,318",
+        "3,315",
+        "1,498"
+       ],
+       [
+        "− Capital spending",
+        "693",
+        "1,031",
+        "716",
+        "970",
+        "1,123",
+        "876",
+        "1,098",
+        "843"
+       ]
+      ],
+      "note": "Free cash flow can be negative even when the company reports a profit because it subtracts cash spent on equipment, buildings, and software."
+     }
+    },
+    {
+     "heading": "What should investors watch in UPS's next results?",
+     "paragraphs": [
+      {
+       "n": 205,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next results, holiday season and aircraft investigation will test different parts of UPS’s recovery. UPS reports third-quarter results on October 27, the first full quarter after completing the Amazon reduction. Investors should look for higher domestic profit despite lower package counts and for cash rebuilding after restructuring payments."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "22,834"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.71"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "22,245",
+      "25,301",
+      "21,546",
+      "21,221",
+      "21,415",
+      "24,479",
+      "21,202",
+      "22,834"
+     ],
+     "EPS, diluted": [
+      "1.80",
+      "2.01",
+      "1.40",
+      "1.51",
+      "1.55",
+      "2.10",
+      "1.02",
+      "0.71"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/ups/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UPS&src=seo-earnings"
+  }
+ },
+ "short_name": "UPS",
+ "first_memo_date": "2026-10-17T01:01:56Z"
+}

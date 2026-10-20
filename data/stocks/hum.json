@@ -1,0 +1,485 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HUM",
+ "slug": "hum",
+ "company": "Humana Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "insurer",
+ "country": "us",
+ "memo_date": "2026-10-18T20:01:53Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 413.33,
+ "price_date": "2026-10-16T19:59:59Z",
+ "next_earnings": "2026-11-06",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 252,
+  "tables": 23,
+  "words": 15789,
+  "sources": 175
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Humana is a health insurer whose main business is covering people through the federal Medicare program, with state health plans, military services and care businesses alongside it. To understand the company, follow what it sells, who pays, how claims turn payments into profit, and why CenterWell sits beside the insurance operation."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000009/hum-20251231.htm"
+  },
+  {
+   "title": "Humana’s 2025 fourth-quarter detailed results",
+   "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000005/hum-2025q4xex99x2detailedx.htm"
+  },
+  {
+   "title": "SEC filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000045/hum-2026q2xex99x2detailedx.htm"
+  }
+ ],
+ "rivals": [],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "dividend": {
+   "type": "dividend",
+   "title": "Humana dividend: payment, cash coverage and yield",
+   "meta_description": "Humana pays a steady dividend, but cash flow, capital needs, medical costs and recovery risks matter.",
+   "opening": "Humana pays $3.54 per share, matching the declared $0.885 quarterly payment and flat 2026 dividend guidance. Cash coverage is not presented as a simple ratio: operating cash flow fell to $921 million in 2025 from $2,966 million in 2024, while the cash-allocation table separates dividends, buybacks and what was kept.",
+   "closing": "The full memo also covers Humana’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Humana pay per share?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend stays at $3.54 per share throughout, matching the declared $0.885 quarterly payment and flat 2026 dividend guidance. The bear case falls to $1.77 by 2029 because capital pressure persists. The bull case rises to $3.90 as earnings recover. The three-year dividend history at $3.54 supports the base case, but debt-to-capitalization was above the long-term target and future payments remain discretionary."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per common share",
+      "caption": "What one share gets (US$ per common share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "9.84",
+        "9.98",
+        "20.00",
+        "22.08",
+        "22.67"
+       ],
+       [
+        "− Dividends, per share",
+        "3.53",
+        "3.53",
+        "3.52",
+        "3.13",
+        "2.78"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.83",
+        "6.21",
+        "12.05",
+        "15.74",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "5.48",
+        "0.25",
+        "4.43",
+        "3.21",
+        "19.88"
+       ]
+      ],
+      "note": "Share buybacks are not cash paid to every shareholder, so subtracting them here shows money used to reduce the share count, not money each share received."
+     }
+    },
+    {
+     "heading": "Does Humana’s dividend come from cash?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Capital and reserves",
+       "text": "Operating cash flow fell to $921 million in 2025 from $2,966 million in 2024. Humana attributed much of the decline to timing, including government subsidy receivables and other working-capital movements. “Other assets” used $2,173 million, while pharmaceutical rebates receivable stood at $1.9 billion at year-end. Revenue can therefore be earned before the cash arrives."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "1,188",
+        "1,207",
+        "2,489",
+        "2,806",
+        "2,933"
+       ],
+       [
+        "**= Earnings for common shareholders**",
+        "1,188",
+        "1,207",
+        "2,489",
+        "2,806",
+        "2,933"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "426",
+        "427",
+        "438",
+        "398",
+        "360"
+       ],
+       [
+        "− Share buybacks",
+        "100",
+        "750",
+        "1,500",
+        "2,000",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "662",
+        "30",
+        "551",
+        "408",
+        "2,573"
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "44.3%",
+        "97.5%",
+        "77.9%",
+        "85.5%",
+        "12.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Humana’s dividend?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if the insurance benefit ratio stays elevated during 2027–2029, or if plan exits and weaker retention prevent revenue growth from becoming profit. It would also weaken if 2027 ratings produce bonus revenue but not retained earnings in 2028 and 2029."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "2,074 (1,086 / 2,509)",
+        "2,775 (1,392 / 3,496)",
+        "3,299 (1,629 / 4,116)"
+       ],
+       [
+        "Shares (millions)",
+        "120 (121 / 119)",
+        "119 (121 / 118)",
+        "119 (121 / 116)"
+       ],
+       [
+        "Dividends per share",
+        "3.54 (3.54 / 3.54)",
+        "3.54 (2.65 / 3.72)",
+        "3.54 (1.77 / 3.90)"
+       ],
+       [
+        "Price to earnings",
+        "23.00 (18.00 / 27.00)",
+        "22.00 (16.00 / 28.00)",
+        "21.00 (15.00 / 28.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Humana’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Premiums grew 9.6% in 2025 while operating return on equity fell to 7.0%. The consolidated benefit ratio rose from 86.3% in 2022 to 90.2% in 2025; $1.0 billion of favorable prior-year claims development reduced 2025 claims expense. Valuation is 39.1x trailing P/E beside 24.4x forward P/E, with 2.6x price-to-book and a 0.9% dividend yield. Goodwill and other long-lived assets equal 74% of equity. Dividends per share were nearly flat across the five years shown, while buybacks varied sharply."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "0.2%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/hum/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HUM&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Humana earnings date and guidance",
+   "meta_description": "Humana's next results are expected November 6, 2026; see guidance, recent results and what to watch.",
+   "opening": "Humana's next results are expected on November 6, 2026. Watch whether medical costs, the benefit ratio and adjusted earnings follow management's outlook.",
+   "closing": "The full memo also answers questions about Humana's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Humana guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Humana’s path runs from a weighted $361.59 in October 2027 to $548.85 in October 2029, and hinges on medical-cost control, recovering margins and ratings-related earnings. Management promises a FY 2026 adjusted EPS floor of $9.00, a GAAP EPS floor of $6.52 and at least a 3.0% individual Medicare Advantage pre-tax margin in 2028. Its third-quarter outlook calls for adjusted EPS of approximately negative $1.00 and an Insurance benefit ratio slightly above 94%."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date it was given"
+      ],
+      "rows": [
+       [
+        "Diluted earnings per common share (EPS) — GAAP",
+        "FY 2026",
+        "6.52",
+        "",
+        "Sep 1, 2026"
+       ],
+       [
+        "Adjusted EPS",
+        "FY 2026",
+        "9.00",
+        "",
+        "Oct 9, 2026"
+       ],
+       [
+        "Adjusted EPS — third quarter",
+        "Quarter to Sep 2026",
+        "-1.00",
+        "-1.00",
+        "Jul 29, 2026"
+       ],
+       [
+        "Insurance segment benefit ratio — third quarter",
+        "Quarter to Sep 2026",
+        "94.0%",
+        "",
+        "Jul 29, 2026"
+       ],
+       [
+        "Individual Medicare Advantage sustainable pre-tax margin",
+        "FY 2028",
+        "3.0%",
+        "",
+        "Jul 29, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Humana keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 122,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "An older 2023–2025 award made adjusted EPS 70% of its formula. Humana reported 2025 adjusted EPS of $17.14, below that award’s threshold, so the EPS portion paid zero. Yet the result exceeded earlier guidance of approximately $16.25. Guidance is a forecast; an award threshold is a separate hurdle. Strategic measures reached their maximum, but the relative-TSR modifier left the overall payout at 48% of target."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Humana's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 129,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.1 — Growth",
+       "text": "Premium revenue rose even as individual MA membership fell. Humana attributed that increase partly to higher premiums, larger Part D subsidies under the Inflation Reduction Act, and growth in drug and state businesses. CenterWell Primary Care also added patients, but acquisitions drove much of that increase. The results table separates revenue and earnings; the insurer’s own measures show which kinds of members produced them."
+      },
+      {
+       "n": 149,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "In the second quarter of 2026, adjusted pretax results were $1,248 million, compared with $1,017 million a year earlier. Net income rose to $694 million from $545 million, and diluted EPS reached $5.73 from $4.51. Adjusted pretax results are management’s measure; net income follows GAAP; EPS divides the result among diluted shares."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Adjusted pretax results (company's measure)",
+        "1,248",
+        "1,670",
+        "-596",
+        "527",
+        "1,017",
+        "1,893",
+        "-296",
+        "679"
+       ],
+       [
+        "Net income",
+        "694",
+        "1,186",
+        "-796",
+        "195",
+        "545",
+        "1,244",
+        "-693",
+        "480"
+       ],
+       [
+        "EPS, diluted",
+        "5.73",
+        "9.83",
+        "-6.61",
+        "1.62",
+        "4.51",
+        "10.30",
+        "-5.76",
+        "3.98"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Humana's next results?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Enrollment will show whether better ratings and plan designs actually retain or attract members. The November 6, 2026 third-quarter report will show whether medical costs, the benefit ratio, and adjusted earnings followed management’s outlook."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 6, 2026"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "5.73"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "EPS, diluted": [
+      "3.98",
+      "-5.76",
+      "10.30",
+      "4.51",
+      "1.62",
+      "-6.61",
+      "9.83",
+      "5.73"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/hum/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HUM&src=seo-earnings"
+  }
+ },
+ "short_name": "Humana",
+ "first_memo_date": "2026-10-18T20:01:53Z"
+}

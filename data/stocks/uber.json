@@ -1,0 +1,568 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "UBER",
+ "slug": "uber",
+ "company": "Uber Technologies, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T22:50:21Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 71.32,
+ "price_date": "2026-10-13T20:00:03Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 250,
+  "tables": 27,
+  "words": 16762,
+  "sources": 275
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Uber is a marketplace that helps people arrange rides, deliveries and shipments. Its business becomes clearer when we follow what it coordinates, who pays, and what remains after providers and operating costs are paid."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, Note 13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000011/uberq425earningspressrelea.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315125000004/uberq424earningspressrelea.htm"
+  }
+ ],
+ "rivals": [
+  "LYFT",
+  "DASH",
+  "CART",
+  "AMZN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Uber stock forecast",
+   "meta_description": "Uber's forecast weighs bear, base and bull paths against cash generation, valuation and returns on its AV and Delivery Hero commitments.",
+   "opening": "Uber's weighted forecast points to $42.79 in October 2027 and $61.45 in October 2029, including dividends. Uber's share price hinges on durable earnings growth, disciplined buybacks and adequate returns on Delivery Hero and AV commitments.",
+   "closing": "The full memo also answers how Uber works, who its rivals are, how management allocates capital, and which risks could change the outlook.",
+   "blocks": [
+    {
+     "heading": "Where could Uber's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast’s weighted path puts Uber below today’s $71.32. It reaches $42.79 in October 2027 and $51.44 in October 2028, including dividends. By October 2029, the weighted price is $61.45, implying a negative 14% return."
+      },
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The base case receives 53% probability. The bear receives 27%, and the bull 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 71.32, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 71.32, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "26.12 (-63 %)",
+        "23.49 (-67 %)",
+        "20.76 (-71 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "44.06 (-38 %)",
+        "51.68 (-28 %)",
+        "60.43 (-15 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "61.94 (-13 %)",
+        "88.54 (+24 %)",
+        "119.09 (+67 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "42.79 (-40 %)",
+        "51.44 (-28 %)",
+        "61.45 (-14 %)"
+       ]
+      ],
+      "note": "The weighted row is the average value after giving more importance to the cases considered more likely, not a separate prediction that is certain to happen."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Uber?",
+     "paragraphs": [
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires operating pressure to persist and capital allocation to weaken. By October 2027, local competition and supply gaps raise incentives while insurance and labor costs rise. By October 2028, Delivery Hero and AV spending consume cash before returns are proven. By October 2029, weaker margins and dilution push the multiple to 10x."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires Uber to monetize growth with limited incremental cost. Local matching improves, advertising and Uber One cross-use add profitable activity, and AV partners carry most fleet costs. Buybacks then reduce shares while investors lift the multiple to 24x."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Uber really make?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash from operations rose from negative $445 million in 2021 to $10,099 million in 2025. After $336 million of capital spending, reported free cash flow was $9,763 million. This is a major change for a platform whose ordinary rides require relatively little capital equipment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "10,099",
+        "7,137",
+        "3,585",
+        "642",
+        "-445"
+       ],
+       [
+        "− Capital spending",
+        "336",
+        "242",
+        "223",
+        "252",
+        "298"
+       ],
+       [
+        "**= Free cash flow**",
+        "9,763",
+        "6,895",
+        "3,362",
+        "390",
+        "-743"
+       ],
+       [
+        "− Stock pay",
+        "1,826",
+        "1,796",
+        "1,935",
+        "1,793",
+        "1,168"
+       ],
+       [
+        "**= Real free cash flow**",
+        "7,937",
+        "5,099",
+        "1,427",
+        "-1,403",
+        "-1,911"
+       ]
+      ],
+      "note": "Stock pay uses shares instead of cash, but it still reduces shareholders’ ownership, so we subtract it from free cash flow."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Uber today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "71.32"
+       ],
+       [
+        "Market value (calculated)",
+        "145,675.39"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "153,007.39"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "15.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.1x"
+       ]
+      ],
+      "note": "The last-twelve-month price-to-earnings number may look unusually low because reported profit includes one-time tax and investment gains."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "71.32"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "61.45 (-14 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.4%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "16.1x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 71.32,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "26.12 (-63 %)",
+       "23.49 (-67 %)",
+       "20.76 (-71 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "44.06 (-38 %)",
+       "51.68 (-28 %)",
+       "60.43 (-15 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "61.94 (-13 %)",
+       "88.54 (+24 %)",
+       "119.09 (+67 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "42.79 (-40 %)",
+       "51.44 (-28 %)",
+       "61.45 (-14 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/uber/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UBER&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Uber earnings",
+   "meta_description": "Uber’s next results are expected on November 4, 2026; guidance covers bookings, adjusted earnings and cash conversion, with robotaxi deployment next.",
+   "opening": "Uber’s next results are expected on November 4, 2026. The key thing to watch is the expected Bay Area robotaxi launch later in 2026.",
+   "closing": "The full memo also explains Uber’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Uber guided for the September 2026 quarter?",
+     "paragraphs": [
+      {
+       "n": 199,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Guidance is management’s forecast, not a guarantee. Uber expects third-quarter Gross Bookings of $58,250–60,250 million and constant-currency growth of 18–22%. Gross Bookings measure the total customers spend through the platform before drivers, restaurants and other providers receive their shares. If a passenger pays $100 for a ride, the full amount counts as bookings, but Uber records only its platform fee as revenue. Currency can also change the dollar total without changing local demand."
+      },
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also forecasts non-GAAP EPS of $0.84–0.88. Non-GAAP EPS is earnings per share after Uber’s specified accounting adjustments. Adjusted EBITDA, which shows operating earnings before interest, taxes and depreciation, is guided to $2,860–2,960 million. Free cash flow answers a different question: how much cash remains after operating needs and capital spending. So Uber can beat an EBITDA forecast while having less cash available for an acquisition."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Gross Bookings",
+        "Quarter to Sep 2026",
+        "58,250",
+        "60,250",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Bookings growth (constant currency)",
+        "Quarter to Sep 2026",
+        "18.0%",
+        "22.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Non-GAAP EPS",
+        "Quarter to Sep 2026",
+        "0.84",
+        "0.88",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted EBITDA",
+        "Quarter to Sep 2026",
+        "2,860",
+        "2,960",
+        "Aug 5, 2026"
+       ],
+       [
+        "cash tax rate, over the next few years",
+        "2027 and subsequent years",
+        "10.0%",
+        "15.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Free Cash Flow conversion as % of Adjusted EBITDA",
+        "Year to Dec 2026",
+        "90.0%",
+        "",
+        "Feb 4, 2026"
+       ]
+      ],
+      "note": "The blank cash tax rate for 2026 does not mean no tax; the company only described it as mid-to-high single digits without giving exact numbers."
+     }
+    },
+    {
+     "heading": "What has Uber’s revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $14,191 million, while Gross Bookings reached $58,022 million. Trips rose to 3,867 million and MAPCs to 208 million, so activity grew faster than reported revenue."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "14,191",
+        "13,203",
+        "14,366",
+        "13,467",
+        "12,651",
+        "11,533",
+        "11,959",
+        "11,188"
+       ],
+       [
+        "Gross margin",
+        "44.9%",
+        "45.0%",
+        "39.6%",
+        "39.8%",
+        "39.8%",
+        "39.9%",
+        "39.5%",
+        "39.6%"
+       ],
+       [
+        "Operating income",
+        "1,890",
+        "1,923",
+        "1,774",
+        "1,113",
+        "1,450",
+        "1,228",
+        "770",
+        "1,061"
+       ],
+       [
+        "Net income",
+        "2,394",
+        "263",
+        "296",
+        "6,626",
+        "1,355",
+        "1,776",
+        "6,883",
+        "2,612"
+       ],
+       [
+        "EPS, diluted",
+        "1.17",
+        "0.13",
+        "0.14",
+        "3.11",
+        "0.63",
+        "0.83",
+        "3.21",
+        "1.20"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,792",
+        "2,286",
+        "2,808",
+        "2,230",
+        "2,475",
+        "2,250",
+        "1,706",
+        "2,109"
+       ]
+      ],
+      "note": "The unusually high profit in September 2025 and December 2024 mostly came from releasing tax allowances, not from normal business earnings."
+     }
+    },
+    {
+     "heading": "What should you watch in Uber’s next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The expected Bay Area robotaxi launch later in 2026 is the first practical test. Employee rides and engineering trials show progress, but public service must show reliable customer access, a workable operating area and enough charging and maintenance support. Houston is planned for mid-2027. Waymo, a rival robotaxi operator, already offers paid rides in 15 US markets, so Uber’s test is whether its first deployment makes the next one easier and cheaper."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "14,191"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "1.17"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "11,188",
+      "11,959",
+      "11,533",
+      "12,651",
+      "13,467",
+      "14,366",
+      "13,203",
+      "14,191"
+     ],
+     "EPS, diluted": [
+      "1.20",
+      "3.21",
+      "0.83",
+      "0.63",
+      "3.11",
+      "0.14",
+      "0.13",
+      "1.17"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/uber/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=UBER&src=seo-earnings"
+  }
+ },
+ "short_name": "Uber",
+ "first_memo_date": "2026-10-13T22:50:21Z"
+}

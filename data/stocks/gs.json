@@ -1,0 +1,615 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "GS",
+ "slug": "gs",
+ "company": "The Goldman Sachs Group, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-14T04:23:00Z",
+ "memo_date_text": "October 14, 2026",
+ "price": 891.91,
+ "price_date": "2026-10-13T20:00:03Z",
+ "next_earnings": "2027-01-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 235,
+  "tables": 21,
+  "words": 15076,
+  "sources": 234
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Goldman Sachs is a bank that helps companies raise money and helps investors put money to work. It earns fees, trading spreads and interest for connecting capital with opportunity, while using its own people, systems and balance sheet to make the connection work."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526116310/d106738dars.pdf"
+  },
+  {
+   "title": "2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698224000006/gs-20231231.htm"
+  },
+  {
+   "title": "June 2026 filing",
+   "url": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000297/gs-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "JPM",
+  "MS",
+  "BAC",
+  "C",
+  "BARC.L",
+  "UBS",
+  "DB",
+  "JEF",
+  "HLI"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Goldman Sachs stock forecast",
+   "meta_description": "Goldman Sachs stock forecast: scenarios, business drivers, cash generation, shareholder returns and valuation.",
+   "opening": "Goldman Sachs's weighted forecast reaches $889.44 in October 2029, with an 8% total return. It hinges on Goldman Sachs converting its deal pipeline into durable fees.",
+   "closing": "The full Goldman Sachs memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Goldman Sachs's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8. Where the price could go",
+       "text": "The forecast points to limited weighted price appreciation, with meaningful downside and upside around it. The weighted price is $858.40 in October 2027, equivalent to a negative 1% total return including dividends. It rises to $870.35 in October 2028, or 3%, and $889.44 in October 2029, or 8%. The final-date range runs from $542.69 in the bear case to $1,320.78 in the bull case, against today’s $891.91. The probabilities are 25% bear, 55% base and 20% bull."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 891.91, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 891.91, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "665.01 (-23 %)",
+        "580.22 (-30 %)",
+        "542.69 (-32 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "893.43 (+3 %)",
+        "892.14 (+5 %)",
+        "890.21 (+8 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1003.80 (+15 %)",
+        "1173.08 (+37 %)",
+        "1320.78 (+57 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "858.40 (-1 %)",
+        "870.35 (+3 %)",
+        "889.44 (+8 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Goldman Sachs, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base case assumes book value grows, but more slowly than the strongest recent earnings rate. Starting common equity is $110,151 million. The base case reaches $111,951 million in October 2027 and $113,951 million in October 2028. It reaches $116,151 million in October 2029. The path reflects normalized earnings, continuing buybacks and dividends, with no extra stress-loss overlay. First-nine-month earnings applicable to common shareholders were $16,924 million, and annualized nine-month ROE was 20.7%, but those results are stronger than a through-cycle assumption. The bear case instead erodes equity to $106,151 million by 2029 because weaker earnings, additional credit losses and slower capital returns outweigh retained profits. The bull case reaches $123,351 million because deal conversion, financing revenue and AWM fees sustain higher earnings and larger buybacks."
+      },
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires deal completions to replenish the pipeline, strong client activity to sustain Global Markets and successful NEOS and LCN integration to expand fee-paying AWM assets. AWM fees were up 19% year over year in the first nine months of 2026, supporting the possibility of stronger retained earnings. The shares reach $1,003.80 in 2027 and $1,320.78 in 2029. The probability is 20% because several initiatives must succeed while high returns persist through a cycle."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Goldman Sachs really make?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, Goldman earned $17,176 million but used $45,154 million of operating cash. Trading assets, loans and customer balances can produce that result because the cash-flow statement captures the expansion of the financial balance sheet, not just the conversion of profit into spare cash."
+      },
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend provides cash income, while buybacks reduce the number of shares dividing future profits. Goldman spent $3 billion on buybacks in the third quarter. The useful question is whether those purchases create value at the price paid and leave enough regulatory capital for the business."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What does an investor pay today for Goldman Sachs?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "891.91"
+       ],
+       [
+        "Market value (calculated)",
+        "259,698.69"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.5x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.4x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.2%"
+       ]
+      ],
+      "note": "The price-to-earnings number uses analysts’ estimate of next year’s profit, so it is not based on profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "891.91"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "889.44 (+8 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.5x"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 891.91,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "665.01 (-23 %)",
+       "580.22 (-30 %)",
+       "542.69 (-32 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "893.43 (+3 %)",
+       "892.14 (+5 %)",
+       "890.21 (+8 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1003.80 (+15 %)",
+       "1173.08 (+37 %)",
+       "1320.78 (+57 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "858.40 (-1 %)",
+       "870.35 (+3 %)",
+       "889.44 (+8 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/gs/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GS&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Goldman Sachs dividend",
+   "meta_description": "Goldman Sachs pays a per-share dividend, but cash coverage depends on its funded balance sheet, capital and shareholder distributions.",
+   "opening": "Goldman Sachs currently pays $5.00 per share, with the base dividend path at $22 per share in 2027, $24 in 2028 and $26 in 2029. Cash coverage is not presented as a simple free-cash-flow ratio: in 2025, Goldman Sachs earned $17,176 million but used $45,154 million of operating cash, and subtracting property and equipment purchases would create a misleading industrial-style free-cash-flow measure.",
+   "closing": "The full Goldman Sachs memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Goldman Sachs pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend path is $22 per share in 2027 and $24 in 2028. It reaches $26 in 2029. This assumes measured quarterly increases from the current $5.00 rate, consistent with Goldman’s stated sustainable-growth policy. The bear case holds annual dividends at $20, while the bull case reaches $30 by 2029. The difference reflects capital headroom: CET1 was 12.4% against an 11.4% requirement, leaving only one percentage point of excess."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Dividend per share",
+        "14.00",
+        "11.50",
+        "10.50",
+        "9.00",
+        "6.50"
+       ]
+      ],
+      "note": "The dividend per share is the cash the company declares for each share, not the share's price."
+     }
+    },
+    {
+     "heading": "Is Goldman Sachs's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 138,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "In 2025, Goldman earned $17,176 million but used $45,154 million of operating cash. Trading assets, loans and customer balances can produce that result because the cash-flow statement captures the expansion of the financial balance sheet, not just the conversion of profit into spare cash."
+      },
+      {
+       "n": 139,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Goldman still spends on staff, technology, premises and equipment. Property and equipment purchases were $2,064 million in 2025, but the accounts do not separate maintenance from expansion. Subtracting that figure from operating cash would create a misleading industrial-style free-cash-flow measure."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid",
+        "5,277",
+        "4,497",
+        "4,189",
+        "3,682",
+        "2,725"
+       ],
+       [
+        "− Share buybacks",
+        "12,360",
+        "8,000",
+        "5,796",
+        "3,500",
+        "5,200"
+       ],
+       [
+        "Paid to shareholders",
+        "17,637",
+        "12,497",
+        "9,985",
+        "7,182",
+        "7,925"
+       ]
+      ],
+      "note": "The dividend numbers include payments linked to preferred stock and employee awards, not just cash dividends paid to ordinary shareholders."
+     }
+    },
+    {
+     "heading": "What could change Goldman Sachs's dividend?",
+     "paragraphs": [
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bear case if deals are delayed, trading and financing normalize, or risk and funding costs weaken margins between 2027 and 2028. Thin capital headroom, card-transition costs and slower buybacks would reinforce that move through 2029."
+      },
+      {
+       "n": 235,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward the bull case if the backlog converts and replenishes, client intermediation remains strong, and NEOS and LCN retain clients while growing fee-paying assets. Higher AWM margins and returns would support larger buybacks and a higher multiple."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Goldman Sachs's dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 14, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "891.91"
+       ],
+       [
+        "Market value (calculated)",
+        "259,698.69"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.5x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.4x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.2%"
+       ]
+      ],
+      "note": "The price-to-earnings number uses analysts’ estimate of next year’s profit, so it is not based on profit the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "16.62"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "2.2%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "4.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ millions",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "7.66",
+      "10.28",
+      "12.11",
+      "13.48",
+      "16.62"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/gs/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GS&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Goldman Sachs earnings date",
+   "meta_description": "Goldman Sachs next results are expected January 21, 2027; guidance, recent results and what to watch are set out here.",
+   "opening": "Goldman Sachs's next results are expected on January 21, 2027. Watch whether Goldman Sachs can turn client assets, acquisitions and market opportunities into durable fees and returns while preserving capital.",
+   "closing": "The full memo also answers how Goldman Sachs makes money, compares with rivals, assesses management and maps its risks.",
+   "blocks": [
+    {
+     "heading": "What has Goldman Sachs guided for the year?",
+     "paragraphs": [
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Asset & Wealth Management has a medium-term target of an approximately 30% pre-tax margin. It also targets approximately 17–19% return on equity over three to five years from year-end 2025. Those are destinations, not immediate results: hiring advisers, building technology and integrating acquisitions can raise costs first."
+      },
+      {
+       "n": 202,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Goldman also wants fee-paying alternative assets to reach $750 billion by the end of 2030, supported by annual fundraising of $75–100 billion. These are clients’ investments in areas such as private equity, private credit and real estate. The clients own the money; Goldman earns fees for managing it. If a pension plan puts $100 into a Goldman-managed fund, the pension plan still owns the investment, while Goldman earns fees for overseeing it. The target is therefore a possible stream of recurring revenue, not cash Goldman can spend. Those ambitions explain why the firm is buying investment managers."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "",
+      "caption": "Guidance in force",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "2026 annual effective tax rate",
+        "Year to Dec 2026",
+        "20.0%",
+        "20.0%",
+        "Aug 3, 2026"
+       ]
+      ],
+      "note": "The 20% effective tax rate means the company expects to pay about 20 cents in taxes for every dollar of profit, including profit from its lending businesses."
+     }
+    },
+    {
+     "heading": "Has Goldman Sachs kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Goldman promised mid-teens returns over the business cycle and delivered 15.0% return on equity in 2025. Return on equity measures profit earned on common shareholders’ capital. Its efficiency ratio, which measures operating expenses as a share of revenue, was 64.4% in 2025, worse than the previous year. It improved to 59.4% in the first nine months of 2026, but stronger revenue can improve this measure without proving that automation caused the gain."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What are Goldman Sachs's last eight quarters of revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 148,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Goldman reported September revenue of $18,679 million. Net income was $5,294 million, while diluted EPS was $17.01. Revenue rose 23% from September 2025, and EPS rose 39%, helped by lower preferred dividends and fewer diluted shares."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "18,679"
+       ],
+       [
+        "Operating income",
+        "7,003"
+       ],
+       [
+        "Net income",
+        "5,294"
+       ],
+       [
+        "EPS, diluted",
+        "17.01"
+       ]
+      ],
+      "note": "The company's reported numbers still include its lending businesses and a business it sold in June 2026, so they do not show only its current businesses."
+     }
+    },
+    {
+     "heading": "What should I watch in Goldman Sachs's next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next tests are whether the acquisitions close, whether Goldman protects its capital and whether legal or tax costs consume future earnings. LCN should close by year-end 2026, and NEOS should follow in the first quarter of 2027 if approvals arrive. After that, investors should watch client retention, new money entering the funds and management fees. Reported assets can rise immediately after a purchase without proving that Goldman has created profitable growth."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 21, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "18,679"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "17.01"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "18,679"
+     ],
+     "EPS, diluted": [
+      "17.01"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/gs/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=GS&src=seo-earnings"
+  }
+ },
+ "short_name": "Goldman Sachs",
+ "first_memo_date": "2026-10-14T04:23:00Z"
+}

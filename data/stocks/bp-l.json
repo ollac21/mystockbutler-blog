@@ -1,0 +1,555 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "BP.L",
+ "slug": "bp-l",
+ "company": "BP p.l.c.",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "oil_gas",
+ "country": "uk",
+ "memo_date": "2026-10-11T15:03:41Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 586.3,
+ "price_date": "2026-10-09T16:15:00Z",
+ "next_earnings": "2026-10-30",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 31,
+  "words": 18198,
+  "sources": 215
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "BP is an energy company: it produces oil and gas, turns some of them into fuels, and delivers energy through contracts, networks and trading. A dollar enters when a customer buys that energy, but what BP keeps depends on the costs and risks of moving it from a field to the customer."
+ },
+ "sources": [
+  {
+   "title": "BP 2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/313807/000031380726000006/bp-20251231.htm"
+  },
+  {
+   "title": "BP’s 2024 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/313807/000031380725000007/bp-20241231.htm"
+  },
+  {
+   "title": "BP’s FY2025 results",
+   "url": "https://www.sec.gov/Archives/edgar/data/313807/000031380726000002/a31122025bp6kq4.htm"
+  }
+ ],
+ "rivals": [
+  "XOM",
+  "CVX",
+  "SHEL",
+  "TTE",
+  "COP",
+  "E",
+  "EQNR",
+  "PBR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "dividend": {
+   "type": "dividend",
+   "title": "BP dividend",
+   "meta_description": "BP dividend payments, cash-flow coverage, plans and yield, explained in plain English.",
+   "opening": "BP’s dividend rose from 8.32 to 8.66 cents per quarter. In 2025, dividends and buybacks exceeded BP’s free-cash-flow measure by 11.75 US cents per share, so cash did not cover all shareholder distributions.",
+   "closing": "The full memo also answers how BP’s business works, how it compares with rivals, how management allocates capital, and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "How much does BP pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show net debt falling sharply from 2021, then rising between 2024 and 2025. Real free cash flow per share fell from its 2022 peak to 44.64 US cents in 2025; the company’s own free cash flow per share was 51.41 US cents, while dividends and buybacks exceeded it by 11.75 US cents per share. The 5.8% real free-cash-flow yield deducts stock-based pay; enterprise value includes claims ahead of shareholders, while leases sit outside reported net debt. The 4.5% dividend yield is income, not promised total return."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US cents per ordinary share",
+      "caption": "What one share gets (US cents per ordinary share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "44.64",
+        "47.53",
+        "82.13",
+        "137.49",
+        "49.44"
+       ],
+       [
+        "− Dividends paid, per share",
+        "31.79",
+        "29.75",
+        "27.09",
+        "22.95",
+        "21.24"
+       ],
+       [
+        "− Share buybacks, per share",
+        "28.19",
+        "42.38",
+        "44.61",
+        "52.64",
+        "15.55"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "",
+        "11.63",
+        "64.54",
+        "14.20"
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "11.75",
+        "19.85",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is BP’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 73,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "In 2022, strong free cash flow supported shareholder payments, debt repayment and acquisitions, including Archaea. As cash generation weakened, BP continued paying dividends and buying back shares. Because those distributions leave the company, BP had to use existing cash, borrow, sell assets or accept less financial flexibility when they exceeded free cash flow."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "8,181",
+        "9,167",
+        "15,194",
+        "26,902",
+        "10,643"
+       ],
+       [
+        "− Dividends paid",
+        "5,059",
+        "5,003",
+        "4,809",
+        "4,358",
+        "4,304"
+       ],
+       [
+        "− Share buybacks",
+        "4,486",
+        "7,127",
+        "7,918",
+        "9,996",
+        "3,151"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "2,064",
+        "12,254",
+        "2,877"
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "1,870",
+        "3,338",
+        "",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change BP’s dividend?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend base case moves from 0.35 dollars per share to 0.379 dollars. The bear case falls to 0.23 dollars, while the bull case reaches 0.423 dollars. The base follows BP’s expectation of at least 4% annual dividend growth and the recent increase from 8.32 to 8.66 cents per quarter. The bear case reflects the risk that weaker cash flow and debt needs override that policy; dividends and buybacks already exceeded BP’s 2025 free-cash-flow measure when combined."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "40,500 (30,000 / 48,000)",
+        "38,000 (27,000 / 47,000)",
+        "39,000 (28,500 / 49,000)"
+       ],
+       [
+        "Dividends per share",
+        "0.35 (0.31 / 0.36)",
+        "0.36 (0.27 / 0.39)",
+        "0.38 (0.23 / 0.42)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "4.00 (3.40 / 4.80)",
+        "4.10 (3.00 / 5.00)",
+        "4.20 (3.20 / 5.20)"
+       ],
+       [
+        "Net debt",
+        "16,012 (23,212 / 11,112)",
+        "13,012 (27,312 / 1,012)",
+        "9,612 (27,612 / -8,688)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is BP’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "A dividend is cash paid to shareholders. Its yield measures that payment against the purchase price, but it is not a promised total return because the share price can fall. The dividend increase announced with the second-quarter results therefore helps the income case, but it does not settle the valuation."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "31.79"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.8%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "6.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US cents per ordinary share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "21.24",
+      "22.95",
+      "27.09",
+      "29.75",
+      "31.79"
+     ],
+     "Real free cash flow per share": [
+      "49.44",
+      "137.49",
+      "82.13",
+      "47.53",
+      "44.64"
+     ],
+     "Free cash flow per share": [
+      "52.53",
+      "141.68",
+      "85.60",
+      "54.51",
+      "51.41"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/bp-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BP.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "BP earnings: guidance and next results",
+   "meta_description": "BP expects its next results on October 30, 2026; watch production and refinery throughput against management guidance.",
+   "opening": "BP’s next results are expected on October 30, 2026. BP should be watched for production and refinery throughput against the guided ranges.",
+   "closing": "The full memo explains how BP makes money, compares BP with rivals, examines BP’s management and sets out BP’s risks.",
+   "blocks": [
+    {
+     "heading": "What has BP guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to 2,180–2,270 thousand boe/d of 2026 production and $13.5–14 billion of capital expenditure. It expects $8–9 billion of 2026 divestment and other proceeds, including about $6 billion from Castrol. By end-2027, it targets net debt of $14–18 billion and structural cost reductions of $5.5–6.5 billion. It targets at least 20% annual compound growth in adjusted free cash flow over 2024–2027 and 16% return on average capital in 2027."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "units stated in row",
+      "caption": "Guidance in force (units stated in row)",
+      "head": [
+       "Row",
+       "period guided",
+       "low",
+       "high",
+       "date given"
+      ],
+      "rows": [
+       [
+        "reported upstream production (mboe/d)",
+        "2026",
+        "2,180",
+        "2,270",
+        "Aug 4, 2026"
+       ],
+       [
+        "capital expenditure (US$ millions)",
+        "2026",
+        "13,500",
+        "14,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "divestment and other proceeds (US$ millions)",
+        "2026",
+        "8,000",
+        "9,000",
+        "Aug 4, 2026"
+       ],
+       [
+        "Net debt (US$ millions)",
+        "End 2027",
+        "14,000",
+        "18,000",
+        "Apr 28, 2026"
+       ],
+       [
+        "Structural cost reduction (US$ millions)",
+        "End 2027",
+        "5,500",
+        "6,500",
+        "Mar 6, 2026"
+       ],
+       [
+        "Adjusted free cash flow compound annual growth (%)",
+        "2024–2027",
+        "20.0%",
+        "",
+        "Aug 4, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What are BP’s recent revenue and profit results?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "June 2026 brought a sharp earnings and cash improvement, driven by prices and downstream margins rather than higher production. Revenue reached $69,105 million, against $46,627 million a year earlier."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions; per share in US cents",
+      "caption": "The last eight quarters (US$ millions; per share in US cents)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "69,105",
+        "52,255",
+        "47,383",
+        "48,420",
+        "46,627",
+        "46,905",
+        "45,752",
+        "47,254"
+       ],
+       [
+        "Operating income",
+        "8,941",
+        "8,486",
+        "-261",
+        "4,448",
+        "4,056",
+        "4,399",
+        "743",
+        "2,457"
+       ],
+       [
+        "Net income",
+        "3,911",
+        "3,842",
+        "-3,422",
+        "1,161",
+        "1,629",
+        "687",
+        "-1,959",
+        "206"
+       ],
+       [
+        "EPS, diluted",
+        "24.54",
+        "24.53",
+        "-22.21",
+        "7.38",
+        "10.27",
+        "4.27",
+        "-12.33",
+        "1.23"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should BP watch in the next results?",
+     "paragraphs": [
+      {
+       "n": 222,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The expected third-quarter results date is October 30, 2026, but that date remains an estimate. Investors should compare production and refinery throughput with management’s guided ranges. Throughput is the amount of crude processed, so it connects refinery availability with potential fuel sales."
+      },
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Customers is expected to weaken. The important question is whether that decline matches the forecast pressure on Castrol or reflects additional operating problems. Production and refinery reliability will show whether BP can keep equipment working through maintenance and disruption. Strong profit alongside weak physical delivery would make future forecasts more dependent on favourable prices."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 30, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions; per share in US cents)",
+     "value": "69,105"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "24.54"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions; per share in US cents",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "47,254",
+      "45,752",
+      "46,905",
+      "46,627",
+      "48,420",
+      "47,383",
+      "52,255",
+      "69,105"
+     ],
+     "EPS, diluted": [
+      "1.23",
+      "-12.33",
+      "4.27",
+      "10.27",
+      "7.38",
+      "-22.21",
+      "24.53",
+      "24.54"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bp-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BP.L&src=seo-earnings"
+  }
+ },
+ "short_name": "BP",
+ "first_memo_date": "2026-10-11T15:03:41Z"
+}

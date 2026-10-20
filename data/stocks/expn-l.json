@@ -1,0 +1,789 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "EXPN.L",
+ "slug": "expn-l",
+ "company": "Experian plc",
+ "exchange": "LSE",
+ "currency": "GBp",
+ "index": "ftse100",
+ "company_type": "operating_company",
+ "country": "uk",
+ "memo_date": "2026-10-15T18:56:40Z",
+ "memo_date_text": "October 15, 2026",
+ "price": 2855.0,
+ "price_date": "2026-10-15T15:49:43Z",
+ "next_earnings": "2026-11-18",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 266,
+  "tables": 27,
+  "words": 17069,
+  "sources": 179
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Experian is an information and software company whose products help organisations decide whom to trust, lend to and serve. Its business becomes clearer when you follow a dollar: customers pay for data, decisions and introductions, while Experian spends to keep those capabilities accurate, secure and useful."
+ },
+ "sources": [
+  {
+   "title": "Earnings release — 2026-05-20",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/2e2e5d88-f28d-41db-a921-8061d0cfb262.html"
+  },
+  {
+   "title": "Half-year report — Q2 2026",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/1f769dc7-c054-40eb-b4a6-0cc3a88a1edb.html"
+  },
+  {
+   "title": "Half-year report — Q2 2025",
+   "url": "https://data.fca.org.uk/artefacts/NSM/RNS/5427178.html"
+  }
+ ],
+ "rivals": [
+  "EFX",
+  "TRU",
+  "REL.L",
+  "INTU",
+  "GEN",
+  "TREE",
+  "NRDS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Experian stock forecast",
+   "meta_description": "Experian's weighted scenarios, cash generation, risks and valuation explain what could drive its shares through October 2029.",
+   "opening": "Experian’s weighted case reaches 3,300.14p by October 2029 for a 22% total return. It hinges on continued organic growth, margin gains and cash-funded investment and repurchases.",
+   "closing": "The full memo also explains Experian’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Experian’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Experian’s weighted case reaches 3,300.14p by October 2029 for a 22% total return, hinging on continued organic growth, margin gains and cash-funded investment and repurchases. For FY27, management guides to 6–8% organic revenue growth and 50 basis points of Benchmark EBIT margin expansion. It expects double-digit Benchmark EPS growth, capital expenditure of 8% of revenue and operating cash flow conversion of at least 90%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "GBp per EXPN.L share at each date; in brackets the return since today's 2855.00, dividends included",
+      "caption": "What the shares could be worth (GBp per EXPN.L share at each date; in brackets the return since today's 2855.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "2091.86 (-25 %)",
+        "1887.92 (-30 %)",
+        "1833.93 (-30 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "3048.24 (+9 %)",
+        "3180.28 (+16 %)",
+        "3296.09 (+22 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "3759.74 (+34 %)",
+        "4430.66 (+60 %)",
+        "5144.07 (+88 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "2951.44 (+5 %)",
+        "3107.27 (+13 %)",
+        "3300.14 (+22 %)"
+       ]
+      ],
+      "note": "The Weighted row is the average value after giving each case its stated probability, not a separate prediction."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Experian?",
+     "paragraphs": [
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case combines weaker US mortgage and consumer-credit activity with a prolonged Consumer Services shortfall. Pricing no longer offsets flat volumes, marketplace referrals fail to replace expired contracts, and higher debt and dispute risk compress the multiple. The price falls to 2091.86 GBp by October 2027 and 1833.93 GBp by October 2029."
+      },
+      {
+       "n": 262,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case requires credit activity to recover, the bank partnership to ramp and Ascend, identity, health and automotive products to become profitable recurring revenue. Stronger cash generation then funds both investment and larger buybacks, while evidence of durable growth lifts the multiple. The price reaches 3759.74 GBp by October 2027 and 5144.07 GBp by October 2029."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Experian really make?",
+     "paragraphs": [
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Management’s free-cash-flow measure is higher than the stricter calculation because it excludes or adds back selected acquisition and exceptional cash movements. Those payments still happened. Stock compensation is another economic cost: it may not consume cash when recorded, but it transfers value to employees through shares and can dilute shareholders."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,239",
+        "2,005",
+        "1,747",
+        "1,717",
+        "1,796"
+       ],
+       [
+        "− Capital spending",
+        "726",
+        "651",
+        "640",
+        "627",
+        "508"
+       ],
+       [
+        "**= Free cash flow**",
+        "1,465",
+        "1,313",
+        "1,059",
+        "1,033",
+        "1,231"
+       ],
+       [
+        "− Stock pay",
+        "138",
+        "127",
+        "132",
+        "129",
+        "149"
+       ],
+       [
+        "**= Real free cash flow**",
+        "1,327",
+        "1,186",
+        "927",
+        "904",
+        "1,082"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "15.7%",
+        "15.8%",
+        "13.1%",
+        "13.7%",
+        "17.2%"
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out some cash costs, such as buying other businesses and unusual payments."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Experian today?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Experian’s price assumes that dependable growth will turn a modest current cash return into a larger one over time."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "£ millions; per share in pence",
+      "caption": "What an investor pays today (£ millions; per share in pence)",
+      "head": [
+       "Row",
+       "Today (Oct 15, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "2855.00"
+       ],
+       [
+        "Market value (calculated)",
+        "25,198.11"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "29,048.86"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "23.1x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "4.0%"
+       ]
+      ],
+      "note": "The enterprise value uses the company's debt and cash from March 31, so it may not show what the business owes and has today."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, GBp",
+     "value": "2855.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "3300.14 (+22 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "24.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 37.81921758657369,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "2091.86 (-25 %)",
+       "1887.92 (-30 %)",
+       "1833.93 (-30 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "3048.24 (+9 %)",
+       "3180.28 (+16 %)",
+       "3296.09 (+22 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "3759.74 (+34 %)",
+       "4430.66 (+60 %)",
+       "5144.07 (+88 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "2951.44 (+5 %)",
+       "3107.27 (+13 %)",
+       "3300.14 (+22 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/expn-l/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPN.L&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Experian dividend",
+   "meta_description": "Experian's dividend per share, cash coverage, payout choices, forecast changes and current yield, in plain English.",
+   "opening": "Experian pays dividends per share across the years shown. Experian's Benchmark free cash flow covered ordinary dividends before cash went to buybacks and acquisitions.",
+   "closing": "The full memo also answers how Experian makes money, how Experian compares with rivals, what management plans, and which risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "How much does Experian pay in dividends per share?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pressure was clearest in FY26. Free cash flow reached US$1,465 million. Dividends were US$590 million and buybacks were US$727 million, leaving little before acquisitions. Acquisitions then required US$692 million. Net debt rose from US$3,737 million to US$5,101 million across the five year-ends. In household terms, Experian earned money after running the business, distributed much of it, bought another business, and borrowed to cover the gap."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US cents per share",
+      "caption": "What one share gets (US cents per share)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "163.40",
+        "126.50",
+        "130.20",
+        "83.60",
+        "124.80"
+       ],
+       [
+        "Real free cash flow per share",
+        "144.40",
+        "128.63",
+        "100.65",
+        "98.15",
+        "117.48"
+       ],
+       [
+        "− Dividends paid, per share",
+        "64.20",
+        "59.22",
+        "55.27",
+        "52.33",
+        "48.21"
+       ],
+       [
+        "− Share buybacks, per share",
+        "79.11",
+        "21.58",
+        "13.03",
+        "21.06",
+        "18.78"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "15.89",
+        "61.39",
+        "46.58",
+        "38.65",
+        "66.45"
+       ]
+      ],
+      "note": "The company’s own free cash flow per share is higher because it leaves out acquisition and unusual cash costs and minority-owner payments, while including money from selling businesses."
+     }
+    },
+    {
+     "heading": "Is Experian's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 178,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the cash left after running the business and funding necessary investment. In FY26, Benchmark free cash flow was US$1,583 million, while ordinary dividends were US$590 million. The difference could repay debt, fund acquisitions or repurchase shares, which explains why the free-cash-flow yield exceeds the dividend yield."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Mar 2026",
+       "Mar 2025",
+       "Mar 2024",
+       "Mar 2023",
+       "Mar 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "1,465",
+        "1,313",
+        "1,059",
+        "1,033",
+        "1,231"
+       ],
+       [
+        "− Dividends paid",
+        "590",
+        "546",
+        "509",
+        "482",
+        "444"
+       ],
+       [
+        "− Share buybacks",
+        "727",
+        "199",
+        "120",
+        "194",
+        "173"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "146",
+        "566",
+        "429",
+        "356",
+        "612"
+       ],
+       [
+        "− Acquisitions",
+        "692",
+        "1,158",
+        "462",
+        "309",
+        "736"
+       ],
+       [
+        "**= Net debt**",
+        "5,101",
+        "4,512",
+        "3,803",
+        "3,749",
+        "3,737"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Experian's dividend?",
+     "paragraphs": [
+      {
+       "n": 257,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise from $0.80 per share in the first base window to $0.88 in the next. They reach $0.96 by October 2029, close to the company’s record of increases and supported by expected earnings growth. The bear case holds DPS at $0.75 because buybacks, acquisitions and leverage compete for cash. The bull case reaches $1.08 if cash conversion and operating leverage improve."
+      },
+      {
+       "n": 265,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "A dispute or privacy setback during October 2028–2029 would add costs while buyback-related leverage limits flexibility. The base case gains support if FY27 growth stays within guidance, margins widen and recurring cash funds both investment and repurchases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "1,579 (1,408 / 1,642)",
+        "1,711 (1,439 / 1,834)",
+        "1,848 (1,497 / 2,026)"
+       ],
+       [
+        "Shares (millions)",
+        "860 (864 / 857)",
+        "853 (863 / 844)",
+        "846 (863 / 832)"
+       ],
+       [
+        "Dividends per share",
+        "0.80 (0.75 / 0.82)",
+        "0.88 (0.75 / 0.94)",
+        "0.96 (0.75 / 1.08)"
+       ],
+       [
+        "Price to earnings",
+        "22.00 (17.00 / 26.00)",
+        "21.00 (15.00 / 27.00)",
+        "20.00 (14.00 / 28.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Mar 2026",
+     "value": "64.20"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "4.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.4%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US cents per share",
+    "columns": [
+     "Mar 2022",
+     "Mar 2023",
+     "Mar 2024",
+     "Mar 2025",
+     "Mar 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "48.21",
+      "52.33",
+      "55.27",
+      "59.22",
+      "64.20"
+     ],
+     "Real free cash flow per share": [
+      "117.48",
+      "98.15",
+      "100.65",
+      "128.63",
+      "144.40"
+     ],
+     "Free cash flow per share": [
+      "133.66",
+      "112.16",
+      "114.98",
+      "142.41",
+      "159.41"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/expn-l/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPN.L&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Experian earnings",
+   "meta_description": "Experian reports on November 18, 2026; guidance is 6.0–8.0% organic growth, with consumer services the key watch.",
+   "opening": "Experian's next results are on November 18, 2026. Experian's key watch is whether the consumer slowdown is temporary.",
+   "closing": "The full memo also explains Experian's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Experian guided for FY27?",
+     "paragraphs": [
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The promise covers FY27, the year ending 31 March 2027. Reported revenue growth is expected to be 8.0–11.0% at actual exchange rates. Organic growth means sales from the existing business, excluding acquisitions and currency effects; management expects 6.0–8.0%. Acquisitions add sales by bringing new businesses into the group, while exchange rates can make overseas revenue worth more or less when translated into dollars. Organic growth therefore best shows whether existing customers are buying more."
+      },
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management also expects Benchmark EBIT margin to expand by 50 basis points. EBIT is operating profit before interest and tax; Benchmark is Experian’s adjusted measure, which excludes selected acquisition, restructuring and other exceptional items. The company expects that revenue growth and a better margin will produce double-digit growth in Benchmark EPS. A buyback can help EPS too, because the same profit is divided among fewer shares, though that does not itself improve sales or efficiency."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions; other units as labelled",
+      "caption": "Guidance in force (US$ millions; other units as labelled)",
+      "head": [
+       "Row",
+       "Period",
+       "Low",
+       "High",
+       "Given on"
+      ],
+      "rows": [
+       [
+        "Total revenue growth at actual rates (%)",
+        "Year to Mar 2027",
+        "8.0%",
+        "11.0%",
+        "20 May 2026"
+       ],
+       [
+        "Organic revenue growth (%)",
+        "Year to Mar 2027",
+        "6.0%",
+        "8.0%",
+        "20 May 2026"
+       ],
+       [
+        "Benchmark EBIT margin expansion (basis points)",
+        "Year to Mar 2027",
+        "50",
+        "50",
+        "20 May 2026"
+       ],
+       [
+        "Capital expenditure (% of revenue)",
+        "Year to Mar 2027",
+        "8.0%",
+        "8.0%",
+        "20 May 2026"
+       ],
+       [
+        "OCF conversion (%)",
+        "Year to Mar 2027",
+        "90.0%",
+        "",
+        "20 May 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Experian kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Experian delivered 8% organic growth and 60 basis points of constant-currency margin expansion in FY26. Organic growth excludes acquisitions, constant currency removes exchange-rate effects, and a basis point is one-hundredth of a percentage point. That was credible delivery against management’s stated operating promises."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Experian's revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest results",
+       "text": "Revenue grew 10.0% at actual exchange rates. It grew 8.0% at constant exchange rates and 7.0% organically. Currency and acquisitions therefore contributed to the headline result. Organic growth slowed from the March quarter, but management kept its full-year expectations."
+      }
+     ],
+     "table": {
+      "title": "The last eight reported periods",
+      "unit": "US$ millions; per share in US cents",
+      "caption": "The last eight reported periods (US$ millions; per share in US cents)",
+      "head": [
+       "Row",
+       "6 months to Mar 2026",
+       "6 months to Sep 2025",
+       "6 months to Mar 2025",
+       "6 months to Sep 2024",
+       "6 months to Mar 2024",
+       "6 months to Sep 2023",
+       "6 months to Mar 2023",
+       "6 months to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "4,375",
+        "4,070",
+        "3,895",
+        "3,628",
+        "3,673",
+        "3,424",
+        "3,372",
+        "3,247"
+       ],
+       [
+        "Operating income",
+        "1,072",
+        "973",
+        "913",
+        "880",
+        "895",
+        "799",
+        "752",
+        "513"
+       ],
+       [
+        "Net income",
+        "754",
+        "748",
+        "616",
+        "550",
+        "630",
+        "569",
+        "464",
+        "306"
+       ],
+       [
+        "EPS, diluted",
+        "82.10",
+        "81.30",
+        "66.70",
+        "59.80",
+        "68.30",
+        "61.90",
+        "50.30",
+        "33.30"
+       ]
+      ],
+      "note": "Free cash flow is not the same as profit: it is the cash left after the business pays for equipment and leases, so it can rise or fall differently from net income."
+     }
+    },
+    {
+     "heading": "What should investors watch in Experian's next results?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next checkpoint is the half-year result on 18 November 2026. North American Consumer Services grew 3% excluding data-breach services in the first quarter, helped by personal loans and insurance while credit cards remained subdued. Because a marketplace depends on lenders wanting customers, weaker lender marketing or acceptance can reduce fees even when consumers are interested."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 18, 2026"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/expn-l/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=EXPN.L&src=seo-earnings"
+  }
+ },
+ "short_name": "Experian",
+ "first_memo_date": "2026-10-15T18:56:40Z"
+}

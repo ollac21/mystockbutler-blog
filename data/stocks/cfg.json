@@ -1,0 +1,800 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "CFG",
+ "slug": "cfg",
+ "company": "Citizens Financial Group, Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "bank",
+ "country": "us",
+ "memo_date": "2026-10-17T13:59:54Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 63.36,
+ "price_date": "2026-10-16T20:00:03Z",
+ "next_earnings": "2027-01-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 28,
+  "words": 15919,
+  "sources": 207
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Citizens Financial Group is a U.S. bank that serves households, businesses, and larger companies. Its business is simple to state but layered in practice: it gathers deposits, lends money, and earns fees from helping customers move, invest, and manage it."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000028/cfg-20251231.htm"
+  },
+  {
+   "title": "Citizens 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/759944/000075994425000013/cfg-20241231.htm"
+  },
+  {
+   "title": "2022 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/759944/000075994423000029/cfg-20221231.htm"
+  }
+ ],
+ "rivals": [
+  "PNC",
+  "FITB",
+  "MTB",
+  "KEY",
+  "HBAN",
+  "USB",
+  "ZION",
+  "WFC"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Citizens stock forecast",
+   "meta_description": "Citizens stock forecast: scenarios show how funding costs, credit losses and AOCI shape the range.",
+   "opening": "Citizens's weighted path is roughly flat after one year and reaches a 20% dividend-inclusive return after three years, through October 2029. It hinges on funding costs, credit losses, AOCI, and capital returns.",
+   "closing": "The full memo answers what Citizens does, how it compares with rivals, how management is executing, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "Where could Citizens's shares go?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The 2029 range spans $42.56 to $101.06. Today's share price is $63.36. The bear case receives 25% probability, the base case 55%, and the bull case 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 63.36, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 63.36, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "46.78 (-23 %)",
+        "44.37 (-23 %)",
+        "42.56 (-23 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "62.92 (+3 %)",
+        "66.47 (+12 %)",
+        "70.50 (+22 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "75.67 (+23 %)",
+        "87.51 (+45 %)",
+        "101.06 (+70 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "61.43 (+0 %)",
+        "65.16 (+10 %)",
+        "69.63 (+20 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a separate forecast."
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Citizens?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case gives $46.78 in October 2027. It reaches $42.56 in October 2029. Deposit competition and a weaker rate path stall margin improvement, while CRE losses, weaker fees and delayed savings suppress earnings. Buybacks slow to protect capital, and investors compress the valuation as CFG misses its return target. The 25% probability reflects real rate, credit and AOCI risks, but the need for sustained pressure makes the case less likely than the base."
+      },
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case gives $75.67 in October 2027. It reaches $101.06 in October 2029. Funding costs fall faster, Private Bank relationships deepen, recurring fees scale and savings exceed hiring costs. Benign credit then permits larger buybacks and a higher multiple. The 20% probability reflects the need for several targets to work together while the ROTCE goal remains unproven."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Citizens really make?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is less useful for judging a bank. Deposits, loans and securities are the operating machinery of banking, not cash left after a factory buys equipment. Earnings and returns on capital better show what CFG is producing."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Net income",
+        "1,831",
+        "1,509",
+        "1,608",
+        "2,073",
+        "2,319"
+       ],
+       [
+        "EPS, diluted",
+        "3.86",
+        "3.03",
+        "3.13",
+        "4.10",
+        "5.16"
+       ],
+       [
+        "Dividend per share",
+        "1.72",
+        "1.68",
+        "1.68",
+        "1.62",
+        "1.56"
+       ],
+       [
+        "Return on equity",
+        "7.4%",
+        "6.3%",
+        "6.9%",
+        "9.0%",
+        "10.5%"
+       ]
+      ],
+      "note": "The bank's revenue is not ordinary sales; it is mainly interest earned plus fees and other noninterest income."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Citizens today?",
+     "paragraphs": [
+      {
+       "n": 166,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Citizens Financial Group, or CFG, is priced as a bank whose recent recovery can continue. The valuation looks moderate on earnings, but the investment case depends on the quality and durability of those earnings."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "63.36"
+       ],
+       [
+        "Market value (calculated)",
+        "26,688"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "12.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "12.0x"
+       ],
+       [
+        "Price to book (calculated)",
+        "1.2x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "1.8x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.3%"
+       ]
+      ],
+      "note": "The next 12 months price-to-earnings number uses analysts’ estimated profit, so it is not based on money the company has earned yet."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "63.36"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "69.63 (+20 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "12.7x"
+    },
+    {
+     "label": "Price to book",
+     "value": "1.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 63.36,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "46.78 (-23 %)",
+       "44.37 (-23 %)",
+       "42.56 (-23 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "62.92 (+3 %)",
+       "66.47 (+12 %)",
+       "70.50 (+22 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "75.67 (+23 %)",
+       "87.51 (+45 %)",
+       "101.06 (+70 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "61.43 (+0 %)",
+       "65.16 (+10 %)",
+       "69.63 (+20 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/cfg/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CFG&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Citizens dividend",
+   "meta_description": "Citizens pays a quarterly dividend; earnings, capital, payout allocation, plans, risks, price and yield put it in context.",
+   "opening": "Citizens pays $0.52 per share each quarter, or $2.08 a year if maintained. Citizens' dividend is a claim on earnings and capital, and coverage is better judged by earnings and capital than free cash flow.",
+   "closing": "The full Citizens memo also covers Citizens' business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Citizens pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The current quarterly dividend is $0.52. The annualized rate is $2.08. The base case holds that rate through the first year, then raises annual DPS to $2.16 and $2.24. The bear case holds $2.08 throughout because capital and earnings remain constrained. The bull case reaches $2.24 before rising to $2.48. The gradual base increases follow the record of stable or rising dividends, while the faster bull increases require stronger earnings and capital generation."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ millions",
+      "caption": "What one share gets (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "3.86",
+        "3.03",
+        "3.13",
+        "4.10",
+        "5.16"
+       ],
+       [
+        "− Common dividends divided by weighted-average diluted shares",
+        "1.73",
+        "1.70",
+        "1.70",
+        "1.63",
+        "1.57"
+       ],
+       [
+        "**= Kept, per share**",
+        "0.76",
+        "",
+        "",
+        "2.16",
+        "2.90"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "",
+        "0.99",
+        "0.47",
+        "",
+        ""
+       ]
+      ],
+      "note": "The dividend amount per share here is the company’s total common dividends divided by its average diluted shares, so it is not the same as the cash dividend declared for each share."
+     }
+    },
+    {
+     "heading": "Does Citizens' dividend fit its earnings and capital?",
+     "paragraphs": [
+      {
+       "n": 169,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is less useful for judging a bank. Deposits, loans and securities are the operating machinery of banking, not cash left after a factory buys equipment. Earnings and returns on capital better show what CFG is producing."
+      },
+      {
+       "n": 170,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The dividend is also a claim on earnings and capital. CFG’s quarterly dividend was $0.52 after a 13% increase. It equals $2.08 a year if maintained, but every dollar paid to shareholders is a dollar not retained as the capital that absorbs losses and supports new lending."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "US$ millions",
+      "caption": "Follow the money: what it earns and gives back (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "1,688",
+        "1,372",
+        "1,491",
+        "1,960",
+        "2,206"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "755",
+        "769",
+        "808",
+        "779",
+        "670"
+       ],
+       [
+        "− Share buybacks",
+        "600",
+        "1,050",
+        "906",
+        "150",
+        "295"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "333",
+        "",
+        "",
+        "1,031",
+        "1,241"
+       ],
+       [
+        "Paid out, % of earnings for common",
+        "80.3%",
+        "132.6%",
+        "115.0%",
+        "47.4%",
+        "43.7%"
+       ]
+      ],
+      "note": "The company's adjusted earnings differ from ours because it removes notable items, so its payout comparison uses a different profit number."
+     }
+    },
+    {
+     "heading": "What could change Citizens' dividend?",
+     "paragraphs": [
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view moves toward the bear case if deposit costs rise faster than asset yields through 2027–2029, especially if office CRE losses increase provisions and charge-offs. Weak capital-markets fees, delayed Reimagine savings or reduced CET1 headroom would further restrain buybacks."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Book value",
+        "23,302 (22,852 / 23,352)",
+        "23,852 (22,652 / 23,952)",
+        "24,452 (22,852 / 24,752)"
+       ],
+       [
+        "Shares (millions)",
+        "407 (415 / 401)",
+        "395 (408 / 383)",
+        "382 (403 / 367)"
+       ],
+       [
+        "Dividends per share",
+        "2.08 (2.08 / 2.08)",
+        "2.16 (2.08 / 2.24)",
+        "2.24 (2.08 / 2.48)"
+       ],
+       [
+        "Price to book value",
+        "1.10 (0.85 / 1.30)",
+        "1.10 (0.80 / 1.40)",
+        "1.10 (0.75 / 1.50)"
+       ]
+      ],
+      "note": "Price to book value shows how much investors pay for each dollar of the company's net assets."
+     }
+    },
+    {
+     "heading": "What is Citizens' dividend yield at today's price?",
+     "paragraphs": [
+      {
+       "n": 232,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The 2029 range spans $42.56 to $101.06. Today's share price is $63.36. The bear case receives 25% probability, the base case 55%, and the bull case 20%."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "3.3%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/cfg/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CFG&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Citizens earnings",
+   "meta_description": "Citizens next results are expected January 21, 2027, with guidance for income, expenses, returns and savings.",
+   "opening": "Citizens’ next results are expected on January 21, 2027. The main thing to watch is whether fee income recovers while expenses and charge-offs stay controlled.",
+   "closing": "The full memo also answers how Citizens’ business works, who its rivals are, how its management operates, and what risks it faces.",
+   "blocks": [
+    {
+     "heading": "What has Citizens guided for earnings?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management expects Q4 2026 NII to rise 2.5%–3.0%. It expects noninterest income to rise 4.0%–5.0% and noninterest expense 1.0%. It targets 16%–18% ROTCE by year-end 2027. ROTCE is profit earned on tangible equity excluding certain accounting items. Reimagine the Bank targets a $225 million annualized pretax benefit by year-end 2027 and $450 million by year-end 2028."
+      },
+      {
+       "n": 203,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For year-end 2027, management targets ROTCE of 16%–18%. ROTCE measures profit against tangible common shareholders’ capital, excluding goodwill and certain intangible assets. Reimagine the Bank is expected to produce annualized pretax benefits from 2026 through 2028, although start-up costs make its EPS effect minimal in 2026."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "US$ millions",
+      "caption": "Targets and guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period it covers",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Net interest income",
+        "Quarter to Dec 2026",
+        "2.5%",
+        "3.0%",
+        "2026-10-16"
+       ],
+       [
+        "Noninterest income",
+        "Quarter to Dec 2026",
+        "4.0%",
+        "5.0%",
+        "2026-10-16"
+       ],
+       [
+        "Noninterest expense",
+        "Quarter to Dec 2026",
+        "1.0%",
+        "1.0%",
+        "2026-10-16"
+       ],
+       [
+        "ROTCE",
+        "Year-end 2027",
+        "16.0%",
+        "18.0%",
+        "2026-10-16"
+       ],
+       [
+        "Reimagine the Bank — pre-tax run-rate benefit — 2027",
+        "Year-end 2027",
+        "225",
+        "225",
+        "2026-10-16"
+       ],
+       [
+        "Reimagine the Bank — pre-tax run-rate benefit — 2028",
+        "Year-end 2028",
+        "450",
+        "",
+        "2026-10-16"
+       ]
+      ],
+      "note": "The percentage targets for net interest income, noninterest income, and noninterest expense show expected changes from the previous quarter, not their share of income or expenses."
+     }
+    },
+    {
+     "heading": "How have Citizens’ revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, NII, net income and diluted EPS all rose from the third quarter of 2025, and NIM was also higher. Average interest-earning assets grew, while funding costs, fixed-rate asset repricing and Non-Core runoff helped the margin."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2026",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "2,322",
+        "2,283",
+        "2,168",
+        "2,157",
+        "2,118",
+        "2,037",
+        "1,935",
+        "1,986"
+       ],
+       [
+        "Net interest income",
+        "1,675",
+        "1,631",
+        "1,562",
+        "1,537",
+        "1,488",
+        "1,437",
+        "1,391",
+        "1,412"
+       ],
+       [
+        "Net income",
+        "636",
+        "587",
+        "517",
+        "528",
+        "494",
+        "436",
+        "373",
+        "401"
+       ],
+       [
+        "EPS, diluted",
+        "1.41",
+        "1.30",
+        "1.13",
+        "1.13",
+        "1.05",
+        "0.92",
+        "0.77",
+        "0.83"
+       ],
+       [
+        "Net interest margin",
+        "3.2%",
+        "3.2%",
+        "3.1%",
+        "3.1%",
+        "3.0%",
+        "2.9%",
+        "2.9%",
+        "2.9%"
+       ],
+       [
+        "CET1 capital ratio",
+        "10.5%",
+        "10.4%",
+        "10.5%",
+        "10.6%",
+        "10.7%",
+        "10.6%",
+        "10.6%",
+        "10.8%"
+       ]
+      ],
+      "note": "The net interest margin leaves out a tax adjustment the bank reports separately, so it may differ from the bank's other published margin."
+     }
+    },
+    {
+     "heading": "What should Citizens watchers look for next?",
+     "paragraphs": [
+      {
+       "n": 223,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next test is the fourth-quarter report. Fee income must recover as expected, expenses must remain controlled and charge-offs must stay stable or move lower. These results will show whether the earnings plan is working operationally, not just mathematically."
+      },
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "During 2027, the Walnut Creek and Wellesley openings will show whether new teams and offices attract deposits, loans and wealth fees quickly enough. The larger test is the 16%–18% ROTCE goal for year-end 2027. Rising NIM will not be enough if costs, credit losses or capital use absorb the benefit."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "January 21, 2027"
+    },
+    {
+     "label": "Revenue, quarter to Sep 2026 (US$ millions)",
+     "value": "2,322"
+    },
+    {
+     "label": "EPS, diluted, quarter to Sep 2026",
+     "value": "1.41"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026",
+     "Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,986",
+      "1,935",
+      "2,037",
+      "2,118",
+      "2,157",
+      "2,168",
+      "2,283",
+      "2,322"
+     ],
+     "EPS, diluted": [
+      "0.83",
+      "0.77",
+      "0.92",
+      "1.05",
+      "1.13",
+      "1.13",
+      "1.30",
+      "1.41"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/cfg/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=CFG&src=seo-earnings"
+  }
+ },
+ "short_name": "Citizens",
+ "first_memo_date": "2026-10-17T13:59:54Z"
+}

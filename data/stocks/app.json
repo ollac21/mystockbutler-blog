@@ -1,0 +1,511 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "APP",
+ "slug": "app",
+ "company": "AppLovin Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T00:47:49Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 279.29,
+ "price_date": "2026-10-15T20:00:01Z",
+ "next_earnings": "2026-11-04",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 241,
+  "tables": 27,
+  "words": 15211,
+  "sources": 215
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "AppLovin Corporation runs software that helps advertisers find customers and app owners sell advertising space. To understand its business, follow one advertising dollar from the campaign that starts it to the publisher, platform, and software products that share the work."
+ },
+ "sources": [
+  {
+   "title": "2023 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100824000012/app-20231231.htm"
+  },
+  {
+   "title": "FY2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100825000018/app-20241231.htm"
+  },
+  {
+   "title": "FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000010/app-20251231.htm"
+  }
+ ],
+ "rivals": [
+  "GOOGL",
+  "META",
+  "U",
+  "LFTO",
+  "APPS",
+  "0700.HK",
+  "AMZN",
+  "SNAP"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "AppLovin stock forecast",
+   "meta_description": "AppLovin's weighted forecast reaches $431.04 in October 2027 and $695.52 in October 2029, hinging on campaign returns and repeat spending.",
+   "opening": "AppLovin's weighted forecast puts the shares at $431.04 in October 2027. It hinges on campaign returns and repeat advertiser spending rising enough to justify higher training and inference costs.",
+   "closing": "The full memo also covers AppLovin's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could AppLovin's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast puts the shares at $431.04 in October 2027, a 54% return from today. It reaches $695.52 in October 2029, a 149% return. The bear case carries 30% probability. The base case carries 50%. The bull case carries 20%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 279.29, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 279.29, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "225.08 (-19 %)",
+        "204.98 (-27 %)",
+        "220.16 (-21 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "425.02 (+52 %)",
+        "529.99 (+90 %)",
+        "665.02 (+138 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "755.02 (+170 %)",
+        "1055.12 (+278 %)",
+        "1484.79 (+432 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "431.04 (+54 %)",
+        "537.51 (+92 %)",
+        "695.52 (+149 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for AppLovin, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case lowers margin to 62%. Earnings fall to $5,600 million at the second date because higher budgets produce weaker returns, web tests fail to repeat and compute costs rise. The bull case retains a 66% margin and reaches $18,550 million at the final date, requiring 40% annual earnings growth from stronger model gains and repeat retail spending."
+      },
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull path begins at $755.02 and ends at $1,484.79. Its 20% probability reflects the demanding combination of 40% earnings growth, a 25.5x multiple and substantial buybacks. The upside is plausible if incremental advertising revenue exceeds training and inference costs, but mature evidence of repeat non-gaming spend remains limited."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "6,760 (6,200 / 9,464)",
+        "8,450 (5,600 / 13,250)",
+        "10,562 (6,000 / 18,550)"
+       ],
+       [
+        "Shares (millions)",
+        "329 (336 / 325)",
+        "326 (336 / 321)",
+        "323 (337 / 319)"
+       ],
+       [
+        "Dividends per share",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)",
+        "0.00 (0.00 / 0.00)"
+       ],
+       [
+        "Price to earnings",
+        "20.67 (12.18 / 25.90)",
+        "20.42 (12.30 / 25.58)",
+        "20.35 (12.35 / 25.54)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does AppLovin really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Reported operating cash flow was 3,971,094 in 2025. Stock compensation is added back because it does not leave the bank when recorded, but it remains an ownership cost. The useful question is therefore twofold: how much cash reaches the business, and how much of that cash must be spent to offset employee dilution or support the computing engine?"
+      },
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Adjusted EBITDA can make the business look exceptionally profitable because it removes expenses such as share-based compensation. Shares paid to employees are not an immediate cash payment, but they dilute existing owners. Free cash flow is a separate test: 2025 produced $3.95 billion, while the latest quarter produced $863.3 million. There is no regular dividend, so shareholders depend on future value and effective repurchases."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023"
+      ],
+      "rows": [
+       [
+        "− Capital spending",
+        "6,362",
+        "14,446",
+        "15,427"
+       ],
+       [
+        "− Stock pay",
+        "207,958",
+        "357,431",
+        "342,551"
+       ]
+      ],
+      "note": "Stock pay is subtracted even though no cash leaves the company because giving shares to employees reduces each existing owner's share of the company."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "279.29"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "695.52 (+149 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.9x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "21.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 279.29,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "225.08 (-19 %)",
+       "204.98 (-27 %)",
+       "220.16 (-21 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "425.02 (+52 %)",
+       "529.99 (+90 %)",
+       "665.02 (+138 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "755.02 (+170 %)",
+       "1055.12 (+278 %)",
+       "1484.79 (+432 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "431.04 (+54 %)",
+       "537.51 (+92 %)",
+       "695.52 (+149 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/app/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APP&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "AppLovin earnings: date, guidance and results",
+   "meta_description": "AppLovin reports November 4, 2026; guidance is $2,055 million–$2,085 million revenue and an 83.0% Adjusted EBITDA margin.",
+   "opening": "AppLovin's next results are expected on November 4, 2026. AppLovin must show whether model improvements delivered the expected reacceleration.",
+   "closing": "The full AppLovin memo also answers how AppLovin makes money, who its rivals are, how management runs AppLovin, and what risks AppLovin faces.",
+   "blocks": [
+    {
+     "heading": "What has AppLovin guided for the quarter ending September 2026?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "AppLovin could reach $695.52 per share by October 2029 if model-driven earnings growth proves durable and valuation confidence holds. On August 5, 2026, management guided to $2,055 million–$2,085 million revenue for the quarter ending September 2026. It also guided to an 83.0% Adjusted EBITDA margin."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Sep 2026",
+        "2,055",
+        "2,085",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted EBITDA",
+        "Quarter to Sep 2026",
+        "1,710",
+        "1,740",
+        "Aug 5, 2026"
+       ],
+       [
+        "Adjusted EBITDA Margin",
+        "Quarter to Sep 2026",
+        "83.0%",
+        "83.0%",
+        "Aug 5, 2026"
+       ]
+      ],
+      "note": "These are company estimates for the three months ending September 2026, not final results, and no full-year estimate was provided."
+     }
+    },
+    {
+     "heading": "What has AppLovin's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue, operating income, continuing net income and diluted earnings per share all grew strongly from the prior year. The eight-quarter sequence shows a different signal: progress from March slowed sharply. Gross margin eased from March but remained above the level of a year earlier. The business was still expanding, but its pace had become more sensitive to execution."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "1,923,686",
+        "1,842,449",
+        "1,657,944",
+        "1,405,045",
+        "1,258,754",
+        "1,158,974",
+        "999,487",
+        "835,186"
+       ],
+       [
+        "Gross margin",
+        "88.3%",
+        "88.9%",
+        "88.9%",
+        "87.6%",
+        "87.7%",
+        "86.9%",
+        "84.7%",
+        "85.5%"
+       ],
+       [
+        "Operating income",
+        "1,494,277",
+        "1,439,933",
+        "1,275,243",
+        "1,079,007",
+        "957,682",
+        "839,982",
+        "628,334",
+        "534,299"
+       ],
+       [
+        "Net income",
+        "1,266,538",
+        "1,205,613",
+        "1,102,256",
+        "835,545",
+        "771,856",
+        "723,538",
+        "596,112",
+        "433,073"
+       ],
+       [
+        "EPS, diluted",
+        "3.76",
+        "3.56",
+        "3.24",
+        "2.45",
+        "2.26",
+        "2.10",
+        "1.72",
+        "1.24"
+       ]
+      ],
+      "note": "Free cash flow may look too high because the capital spending shown counts only equipment and buildings, not software and other intangible purchases."
+     }
+    },
+    {
+     "heading": "What should AppLovin investors watch on November 4, 2026?",
+     "paragraphs": [
+      {
+       "n": 216,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "AppLovin will report Q3 results after the US market closes on November 4, 2026, followed by a management webinar at 5 p.m. Eastern. The quarter ended September 30, so the release should show whether the improvements running in early Q3 delivered the expected reacceleration."
+      },
+      {
+       "n": 217,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The key comparison is revenue against computing expense and cash generation. Stronger sales with acceptable additional costs would support management’s investment logic. A weaker result would raise a different question: did model gains fade, or did customers increase budgets more slowly? One successful release shows progress; repeated profitable improvements would establish a dependable process."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 4, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ thousands)",
+     "value": "1,923,686"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "3.76"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "835,186",
+      "999,487",
+      "1,158,974",
+      "1,258,754",
+      "1,405,045",
+      "1,657,944",
+      "1,842,449",
+      "1,923,686"
+     ],
+     "EPS, diluted": [
+      "1.24",
+      "1.72",
+      "2.10",
+      "2.26",
+      "2.45",
+      "3.24",
+      "3.56",
+      "3.76"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/app/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=APP&src=seo-earnings"
+  }
+ },
+ "short_name": "AppLovin",
+ "first_memo_date": "2026-10-16T00:47:49Z"
+}

@@ -1,0 +1,834 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "F",
+ "slug": "f",
+ "company": "Ford Motor Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-18T20:03:29Z",
+ "memo_date_text": "October 18, 2026",
+ "price": 12.43,
+ "price_date": "2026-10-16T20:02:38Z",
+ "next_earnings": "2026-10-28",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 28,
+  "words": 17241,
+  "sources": 240
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Ford Motor Company sells Ford and Lincoln vehicles, then earns more from financing, parts, repairs, and services built around those vehicles. To follow a dollar through the business, start with what Ford sells, then trace who pays, what Ford spends, and how Ford Pro tries to make the relationship last."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm"
+  },
+  {
+   "title": "Ford Credit’s 2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/38009/000003800926000010/fmcc-20251231.htm"
+  },
+  {
+   "title": "Ford Q2 2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm"
+  }
+ ],
+ "rivals": [
+  "GM",
+  "VOW3.DE",
+  "STLA",
+  "HMC",
+  "TSLA",
+  "MBG.DE",
+  "BMW.DE",
+  "1211.HK",
+  "RIVN"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Ford stock forecast",
+   "meta_description": "Ford's weighted share price is $12.60 in October 2027 and $18.11 in October 2029; the forecast hinges on turning recovery into cash.",
+   "opening": "Ford's weighted share price is $12.60 in October 2027 and $18.11 in October 2029, with 55% probability assigned to the base case. It hinges on stronger operations converting into cash while Blue and Pro fund investment and Model e losses narrow.",
+   "closing": "The full memo also explains Ford's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Ford's shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted share price is $12.60 in October 2027 (+6%), including dividends. It is $18.11 in October 2029 (+60%). The forecast assigns 28% probability to bear and 55% to base. Bull receives 17%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 12.43, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 12.43, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "7.72 (-35 %)",
+        "9.69 (-16 %)",
+        "11.67 (+4 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "13.75 (+15 %)",
+        "16.00 (+38 %)",
+        "18.35 (+62 %)"
+       ],
+       [
+        "Bull",
+        "17 %",
+        "16.91 (+42 %)",
+        "22.12 (+91 %)",
+        "27.97 (+144 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "12.60 (+6 %)",
+        "15.27 (+32 %)",
+        "18.11 (+60 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Ford?",
+     "paragraphs": [
+      {
+       "n": 13,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "In the second half of 2026, Ford must deliver the cash recovery in its guidance while absorbing supply, tariff and warranty costs. Production-qualified prototypes for Ford’s Universal EV Platform—its planned vehicle architecture for a new generation of electric vehicles—are scheduled for the first quarter of 2027. Customer vehicles are due later that year. Ford Pro margins, Model e economics and warranty costs will show whether its established businesses can sustain the transition through 2029."
+      },
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base profit row moves from $10.2 billion in October 2027 to $10.5 billion in October 2028. It reaches $10.8 billion in October 2029. The starting point reflects the midpoint of Ford’s $10–11 billion 2026 EBIT guidance and the $10.208 billion average adjusted EBIT recorded from 2021 through 2024. Blue and Pro strength is expected to offset Model e losses. The bear row falls to $7.2 billion initially because supply, tariffs or warranty costs could overwhelm the recovery, then reaches $8.5 billion. The bull row rises from $11.5 billion to $14.5 billion if Novelis recovers, Blue and Pro exceed targets, and the Universal EV Platform launches on schedule."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Ford really make?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A strict measure starts with automotive cash from operations, subtracts capital spending, and subtracts stock-based compensation. Stock pay is not a cash payment to employees at that moment, but it is a real cost to shareholders because it dilutes their claim. Factories, tooling, software, pensions, and restructuring also compete for cash."
+      },
+      {
+       "n": 143,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Ford’s preferred measure answers a narrower question. It excludes Ford Credit’s lending flows and certain cash uses, then adds selected distributions and other items. That can show the industrial business clearly, but the excluded bills still exist. The two measures pointed in opposite directions in 2025."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions, without Ford Credit",
+      "caption": "Follow the money: real free cash flow (US$ millions, without Ford Credit)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "8,351",
+        "11,823",
+        "13,738",
+        "12,269",
+        "494"
+       ],
+       [
+        "− Capital spending",
+        "8,694",
+        "8,590",
+        "8,156",
+        "6,808",
+        "6,183"
+       ],
+       [
+        "**= Free cash flow**",
+        "-343",
+        "3,233",
+        "5,582",
+        "5,461",
+        "-5,689"
+       ],
+       [
+        "− Stock pay",
+        "492",
+        "493",
+        "446",
+        "325",
+        "296"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-835",
+        "2,740",
+        "5,136",
+        "5,136",
+        "-5,985"
+       ],
+       [
+        "Free cash flow — the company's own count",
+        "3,513",
+        "6,672",
+        "6,801",
+        "9,081",
+        "4,590"
+       ]
+      ],
+      "note": "Ford's own free cash flow is higher because it adds back cash items such as pension costs, restructuring, and Ford Credit distributions that our count treats as cash."
+     }
+    },
+    {
+     "heading": "What does an investor pay for Ford today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 18, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "12.43"
+       ],
+       [
+        "Market value (calculated)",
+        "49,565.81"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "not meaningful"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "6.5x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "-0.7%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-1.7%"
+       ]
+      ],
+      "note": "The price-to-earnings ratio for the last 12 months is not meaningful because the company lost money during that period."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "12.43"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "18.11 (+60 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "6.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 12.43,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "7.72 (-35 %)",
+       "9.69 (-16 %)",
+       "11.67 (+4 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "13.75 (+15 %)",
+       "16.00 (+38 %)",
+       "18.35 (+62 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "17 %",
+      "values": [
+       "16.91 (+42 %)",
+       "22.12 (+91 %)",
+       "27.97 (+144 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "12.60 (+6 %)",
+       "15.27 (+32 %)",
+       "18.11 (+60 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/f/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=F&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Ford dividend: payment and cash coverage",
+   "meta_description": "Ford's dividend history, cash coverage, possible changes, and current yield in plain English.",
+   "opening": "Ford pays regular dividends of $0.60 per share annually. Its cash coverage was strained: free cash flow was negative in 2025 while dividends continued.",
+   "closing": "The full memo also examines Ford’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Ford pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend remains $0.60 per share annually because Ford declared a regular quarterly dividend of $0.15 and paid regular dividends of $0.60 in both 2024 and 2025. The bear case gives $0.40 after a cut to $0.10 quarterly. The bull case gives $0.80 by adding a $0.20 supplement, which is possible after cash recovery but is not guidance."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "-2.06",
+        "1.46",
+        "1.08",
+        "-0.49",
+        "4.45"
+       ],
+       [
+        "Free cash flow per share",
+        "-0.09",
+        "0.80",
+        "1.38",
+        "1.36",
+        "-1.41"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.75",
+        "0.78",
+        "1.24",
+        "0.50",
+        "0.10"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.00",
+        "0.11",
+        "0.08",
+        "0.12",
+        "0.00"
+       ]
+      ],
+      "note": "Ford's own free cash flow per share is higher because it excludes Ford Credit's operating cash flows and adjusts for items such as pensions and restructuring, while our count measures cash left after equipment spending."
+     }
+    },
+    {
+     "heading": "Is Ford's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Ford paid out 95.5% of free cash flow in 2023 and 109.6% in 2024. In 2025, free cash flow was negative, yet dividends continued. Ford also spent $8.7 billion on capital projects in 2025 and planned higher spending for 2026. Its buybacks were designed partly to offset dilution from employee compensation and convertible notes, rather than simply reduce every investor’s ownership."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions, without Ford Credit",
+      "caption": "Follow the money: where the free cash flow went (US$ millions, without Ford Credit)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "-343",
+        "3,233",
+        "5,582",
+        "5,461",
+        "-5,689"
+       ],
+       [
+        "− Dividends paid",
+        "2,989",
+        "3,118",
+        "4,995",
+        "2,009",
+        "403"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "426",
+        "335",
+        "484",
+        "0"
+       ],
+       [
+        "Paid to shareholders",
+        "2,989",
+        "3,544",
+        "5,330",
+        "2,493",
+        "403"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "not meaningful",
+        "109.6%",
+        "95.5%",
+        "45.7%",
+        "not meaningful"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Ford's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s July 2026 guidance calls for $10–11 billion adjusted EBIT and $6–7 billion adjusted free cash flow. It also calls for $9.5–10.5 billion of capital spending. First-half adjusted free cash flow was only $0.2 billion. Reaching the full-year floor requires $5.8 billion in the second half."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "10,200 (7,200 / 11,500)",
+        "10,500 (8,000 / 13,000)",
+        "10,800 (8,500 / 14,500)"
+       ],
+       [
+        "Dividends per share",
+        "0.60 (0.40 / 0.80)",
+        "0.60 (0.40 / 0.80)",
+        "0.60 (0.40 / 0.80)"
+       ],
+       [
+        "Net debt",
+        "-9,018 (-5,718 / -9,837)",
+        "-14,618 (-9,318 / -16,437)",
+        "-20,518 (-13,918 / -24,037)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Ford's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "The tables show revenue kept growing through 2025, but operating margin turned negative as EV reset charges hit. The memo’s real free cash flow and real free cash flow per share turned negative in 2025, while industrial net cash fell across the five years shown. The 6.5x forward P/E assumes forecast earnings become cash; the 4.8% dividend yield has no buyback yield, as 2025 buybacks were zero while stock pay continued."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "0.75"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "4.8%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-1.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "-0.7%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.10",
+      "0.50",
+      "1.24",
+      "0.78",
+      "0.75"
+     ],
+     "Real free cash flow per share": [
+      "-1.48",
+      "1.28",
+      "1.27",
+      "0.68",
+      "-0.21"
+     ],
+     "Free cash flow per share": [
+      "-1.41",
+      "1.36",
+      "1.38",
+      "0.80",
+      "-0.09"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/f/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=F&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Ford earnings: date, guidance and what to watch",
+   "meta_description": "Ford's next results are expected on October 28, 2026, with guidance for $10–11 billion adjusted EBIT and $6–7 billion adjusted free cash flow.",
+   "opening": "Ford's next results are expected on October 28, 2026. Watch whether Ford delivers the second-half cash recovery while handling warranty and legal costs.",
+   "closing": "The full memo also answers questions about Ford's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Ford guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s July 2026 guidance calls for $10–11 billion adjusted EBIT and $6–7 billion adjusted free cash flow. It also calls for $9.5–10.5 billion of capital spending. First-half adjusted free cash flow was only $0.2 billion. Reaching the full-year floor requires $5.8 billion in the second half."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adjusted EBIT",
+        "FY 2026",
+        "10.0",
+        "11.0",
+        "Jul 28, 2026"
+       ],
+       [
+        "Adjusted Free Cash Flow",
+        "FY 2026",
+        "6.0",
+        "7.0",
+        "Jul 28, 2026"
+       ],
+       [
+        "Capital expenditures",
+        "FY 2026",
+        "9.5",
+        "10.5",
+        "Jul 28, 2026"
+       ],
+       [
+        "Ford Pro EBIT",
+        "FY 2026",
+        "7.0",
+        "7.5",
+        "Jul 28, 2026"
+       ],
+       [
+        "Ford Blue EBIT",
+        "FY 2026",
+        "5.0",
+        "5.5",
+        "Jul 28, 2026"
+       ],
+       [
+        "Ford Model e EBIT loss",
+        "FY 2026",
+        "-4.0",
+        "-4.0",
+        "Jul 28, 2026"
+       ]
+      ],
+      "note": "Ford’s adjusted free cash flow leaves out Ford Credit’s normal cash generation but includes money Ford Credit sends to the rest of Ford, so it is not the whole company’s cash flow."
+     }
+    },
+    {
+     "heading": "What do Ford's last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue fell from the prior-year quarter while operating income improved. Net income worsened because the BlueOval SK disposition charge reached US$3.612 billion. Adjusted EBIT rose to US$2.5 billion, and Ford raised its 2026 guidance. The quarter therefore looked stronger beneath the reported net-loss line."
+      },
+      {
+       "n": 160,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Quarterly free cash flow remained uneven, reflecting investment and timing as well as profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "48,296",
+        "43,253",
+        "45,890",
+        "50,534",
+        "50,184",
+        "40,659",
+        "48,211",
+        "46,196"
+       ],
+       [
+        "Gross margin",
+        "12.6%",
+        "18.4%",
+        "-12.5%",
+        "14.1%",
+        "11.8%",
+        "13.5%",
+        "14.3%",
+        "13.0%"
+       ],
+       [
+        "Operating income",
+        "638",
+        "2,329",
+        "-11,557",
+        "1,558",
+        "511",
+        "319",
+        "1,231",
+        "880"
+       ],
+       [
+        "Net income",
+        "-1,327",
+        "2,548",
+        "-11,064",
+        "2,447",
+        "-36",
+        "471",
+        "1,824",
+        "892"
+       ],
+       [
+        "EPS, diluted",
+        "-0.33",
+        "0.63",
+        "-2.77",
+        "0.60",
+        "-0.01",
+        "0.12",
+        "0.45",
+        "0.22"
+       ],
+       [
+        "**= Free cash flow**",
+        "-59",
+        "-4,378",
+        "-3,434",
+        "3,562",
+        "1,746",
+        "-2,217",
+        "121",
+        "2,236"
+       ]
+      ],
+      "note": "Ford's reported cash from operations and free cash flow exclude Ford Credit, while the revenue and profit rows include it, so these numbers cover different parts of the company."
+     }
+    },
+    {
+     "heading": "What should you watch in Ford's next results?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "What to watch",
+       "text": "The decisive milestones are the second-half cash recovery, the handling of warranty and legal costs, and production-qualified Fathom prototypes in the first quarter of 2027. Together they will show whether Ford’s next stage becomes self-funded or makes a larger claim on its balance sheet."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 28, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "48,296"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "-0.33"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "46,196",
+      "48,211",
+      "40,659",
+      "50,184",
+      "50,534",
+      "45,890",
+      "43,253",
+      "48,296"
+     ],
+     "EPS, diluted": [
+      "0.22",
+      "0.45",
+      "0.12",
+      "-0.01",
+      "0.60",
+      "-2.77",
+      "0.63",
+      "-0.33"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/f/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=F&src=seo-earnings"
+  }
+ },
+ "short_name": "Ford",
+ "first_memo_date": "2026-10-18T20:03:29Z"
+}

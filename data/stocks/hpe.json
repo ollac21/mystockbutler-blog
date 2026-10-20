@@ -1,0 +1,826 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "HPE",
+ "slug": "hpe",
+ "company": "Hewlett Packard Enterprise Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-17T01:04:35Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 55.13,
+ "price_date": "2026-10-16T20:00:01Z",
+ "next_earnings": "2026-12-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 267,
+  "tables": 28,
+  "words": 17362,
+  "sources": 240
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Hewlett Packard Enterprise sells the machinery and software that organizations use to compute, store information, connect systems and keep them running. Its business is easiest to understand as a loop: customers buy or consume technology, HPE supplies and supports it, and cash arrives at different times."
+ },
+ "sources": [
+  {
+   "title": "Investor presentation — Q4 2025",
+   "url": "https://investors.hpe.com/~/media/Files/H/HP-Enterprise-IR/documents/q4-2025/q4-2025-earnings-presentation.pdf"
+  },
+  {
+   "title": "Q3 FY2026 Form 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000080/hpe-20260731.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559025000126/ex-991x1242025x8k.htm"
+  }
+ ],
+ "rivals": [],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "HPE stock forecast",
+   "meta_description": "HPE stock forecast weighs scenario prices, cash generation, execution risks and the valuation investors face today.",
+   "opening": "The weighted scenario puts HPE at $47.44 in October 2027. It hinges on AI orders becoming profitable deliveries and networking growth becoming durable cash.",
+   "closing": "The full memo also answers how HPE’s business works, who its rivals are, how management is executing, and what risks could change the outcome.",
+   "blocks": [
+    {
+     "heading": "Where could HPE’s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 253,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast points to limited weighted returns in the first two years, followed by a modest gain in the third. The probability-weighted prices are $47.44 in October 2027, $53.60 in October 2028 and $61.85 in October 2029, equal to total returns of negative 13%, negative 1% and positive 15% from today’s $55.13."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 55.13, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 55.13, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "28.61 (-47 %)",
+        "20.99 (-60 %)",
+        "25.52 (-51 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "49.45 (-9 %)",
+        "55.41 (+3 %)",
+        "58.20 (+9 %)"
+       ],
+       [
+        "Bull",
+        "21 %",
+        "66.65 (+22 %)",
+        "91.02 (+67 %)",
+        "117.59 (+117 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "47.44 (-13 %)",
+        "53.60 (-1 %)",
+        "61.85 (+15 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for HPE, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 258,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case gives $5.3 billion, then $4.4 billion, before recovering to $4.8 billion. It assumes weaker AI conversion, about 9% margins and persistent networking or integration pressure. The bull case reaches $7.4 billion, $8.6 billion and $9.7 billion as AI shipments, Juniper cross-selling, savings and software attachment reinforce one another. The $6.8 billion AI backlog supports the opportunity, but supply constraints make conversion uncertain."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does HPE really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operations generated $2,919 million of cash in 2025, down from $4,341 million in 2024. Capital spending was $2,292 million. That left straightforward free cash flow of $627 million, far below the prior year."
+      },
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "A further measure deducts $643 million of stock compensation and produces real free cash flow of negative $16 million. Stock pay does not immediately drain the bank account, but it gives employees ownership that otherwise belongs to shareholders. Treating it as an economic cost is therefore reasonable."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "2,919",
+        "4,341",
+        "4,428",
+        "4,593",
+        "5,871"
+       ],
+       [
+        "− Capital spending",
+        "2,292",
+        "2,367",
+        "2,828",
+        "3,122",
+        "2,502"
+       ],
+       [
+        "**= Free cash flow**",
+        "627",
+        "1,974",
+        "1,600",
+        "1,471",
+        "3,369"
+       ],
+       [
+        "− Stock pay",
+        "643",
+        "430",
+        "428",
+        "391",
+        "382"
+       ],
+       [
+        "**= Real free cash flow**",
+        "-16",
+        "1,544",
+        "1,172",
+        "1,080",
+        "2,987"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for HPE today?",
+     "paragraphs": [
+      {
+       "n": 190,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The price-to-earnings ratio, or P/E, compares the share price with profit available to common shareholders. HPE trades at 28.7 times trailing earnings and 14.4 times forecast earnings. The forecast multiple looks cheaper because it assumes profits will rise. Adjusted earnings also remove selected costs, while reported earnings include them. Preferred shareholders receive dividends before common shareholders, and conversion can increase the share count; HPE’s latest reconciliation included $87 million of preferred dividends and 76 million dilutive shares."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "55.13"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "80,576.100546"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "28.7x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "14.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.8%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "-0.0%"
+       ]
+      ],
+      "note": "The whole-business value excludes the debt of the financial-services unit, but its sales are still included, so this comparison is not perfectly like-for-like."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "55.13"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "61.85 (+15 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.0%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "14.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 55.13,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "28.61 (-47 %)",
+       "20.99 (-60 %)",
+       "25.52 (-51 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "49.45 (-9 %)",
+       "55.41 (+3 %)",
+       "58.20 (+9 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "21 %",
+      "values": [
+       "66.65 (+22 %)",
+       "91.02 (+67 %)",
+       "117.59 (+117 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "47.44 (-13 %)",
+       "53.60 (-1 %)",
+       "61.85 (+15 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/hpe/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HPE&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "HPE dividend: cash coverage and yield",
+   "meta_description": "HPE pays a dividend, but real free cash flow was negative; future coverage depends on profitable growth and cash conversion.",
+   "opening": "HPE paid $0.52 dividends per share in FY2025, while real free cash flow was -$0.01 per share. The dividend was therefore not covered by real free cash flow that year.",
+   "closing": "The full HPE memo also covers HPE’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does HPE pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "FY2025 revenue grew 13.8%, but operating margin was -1.3%; growth did not improve HPE’s economics. HPE moved from net cash in FY2024 to $5,600 million net debt in FY2025. The decisive per-share figure is real free cash flow of -$0.01. Diluted EPS was -$0.04 despite $0.52 dividends paid per share. Stock pay was $0.49 per share."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow per share",
+        "-0.01",
+        "1.15",
+        "0.89",
+        "0.82",
+        "2.25"
+       ],
+       [
+        "− Dividends paid, per share",
+        "0.52",
+        "0.51",
+        "0.47",
+        "0.47",
+        "0.47"
+       ],
+       [
+        "− Share buybacks, per share",
+        "0.15",
+        "0.11",
+        "0.32",
+        "0.39",
+        "0.16"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "",
+        "0.85",
+        "0.43",
+        "0.25",
+        "1.89"
+       ]
+      ],
+      "note": "The company's own free cash flow per share looks higher because it does not subtract shares given to employees as pay; we subtract them because they reduce each shareholder's share of the cash."
+     }
+    },
+    {
+     "heading": "Is HPE's dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "HPE generated $2.581 billion of free cash flow in the first nine months of FY2026. The test is whether it can produce the larger forecast repeatedly while funding growth and supporting the dividend. The dividend offers a modest cash return, but coverage should be judged against recurring free cash flow and preferred distributions, not adjusted earnings alone."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "627",
+        "1,974",
+        "1,600",
+        "1,471",
+        "3,369"
+       ],
+       [
+        "− Dividends paid",
+        "684",
+        "676",
+        "619",
+        "621",
+        "625"
+       ],
+       [
+        "− Share buybacks",
+        "202",
+        "150",
+        "421",
+        "512",
+        "213"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "1,140",
+        "560",
+        "332",
+        "2,513"
+       ],
+       [
+        "Paid out, % of real free cash flow",
+        "not meaningful",
+        "53.5%",
+        "88.7%",
+        "104.9%",
+        "28.1%"
+       ]
+      ],
+      "note": "In October 2025, the company paid shareholders more cash than it generated, so it had to use other cash or borrow money."
+     }
+    },
+    {
+     "heading": "What could change HPE's dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides FY2027 to revenue growth of 13.0%–17.0% and adjusted EPS growth of 16.0%–20.0%. It also targets a 14.0%–15.0% adjusted operating margin and at least $5,000 million of free cash flow. For the quarter ending October 2026, guidance is revenue of $13,900 million–$14,800 million and non-GAAP diluted EPS of $1.20–$1.30."
+      },
+      {
+       "n": 260,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at $0.57 per share in the base case, matching four payments at the declared quarterly rate. They rise to $0.60 and $0.64 as cash generation improves. The bear case cuts the annual amount to $0.48 after October 2027 because FY2025 free cash flow covered less than dividends. The bull case reaches $0.60, $0.68 and $0.76, but requires profitable AI deliveries and collections. Management’s 75% cash-return statement covers total shareholder returns, not dividends alone."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "6,700 (5,300 / 7,400)",
+        "7,100 (4,400 / 8,600)",
+        "7,400 (4,800 / 9,700)"
+       ],
+       [
+        "Dividends per share",
+        "0.57 (0.57 / 0.60)",
+        "0.60 (0.48 / 0.68)",
+        "0.64 (0.48 / 0.76)"
+       ],
+       [
+        "Net debt",
+        "11,128 (12,028 / 11,308)",
+        "7,964 (9,400 / 5,228)",
+        "4,451 (6,294 / -1,762)"
+       ]
+      ],
+      "note": "Hewlett Packard Enterprise's net debt excludes its Financial Services business, so it does not cover all of the group's borrowing and cash."
+     }
+    },
+    {
+     "heading": "What is HPE's dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 187,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $55.13 a share, the market is paying for a much stronger HPE than existed before Juniper. Its market value is $77,376.100546 million, while its enterprise value is $80,576.100546 million."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Oct 2025",
+     "value": "0.52"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.0%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "-0.0%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "0.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Oct 2021",
+     "Oct 2022",
+     "Oct 2023",
+     "Oct 2024",
+     "Oct 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.47",
+      "0.47",
+      "0.47",
+      "0.51",
+      "0.52"
+     ],
+     "Real free cash flow per share": [
+      "2.25",
+      "0.82",
+      "0.89",
+      "1.15",
+      "-0.01"
+     ],
+     "Free cash flow per share": [
+      "2.53",
+      "1.11",
+      "1.22",
+      "1.48",
+      "0.47"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/hpe/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HPE&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "HPE earnings date and guidance",
+   "meta_description": "HPE's next results are expected on December 3, 2026; guidance covers revenue, EPS and free cash flow.",
+   "opening": "HPE's next results are expected on December 3, 2026. Watch whether AI orders become profitable deliveries and collected cash.",
+   "closing": "The full memo also explains HPE's business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has HPE guided for fiscal 2027?",
+     "paragraphs": [
+      {
+       "n": 224,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For fiscal 2027, HPE promises revenue growth of 13.0%–17.0%, adjusted EPS growth of 16.0%–20.0% and at least $5,000 million of free cash flow. Free cash flow is operating cash after net investment in equipment and software, so it must ultimately fund debt repayment, dividends and buybacks. HPE also targets an adjusted operating margin of 14.0%–15.0%, meaning the company expects to retain that share of sales as operating profit before interest and tax."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "13,900",
+        "14,800",
+        "Sep 2, 2026"
+       ],
+       [
+        "GAAP diluted net EPS",
+        "Year to Oct 2026",
+        "2.93",
+        "3.03",
+        "Sep 2, 2026"
+       ],
+       [
+        "Non-GAAP diluted net EPS",
+        "Year to Oct 2026",
+        "3.75",
+        "3.85",
+        "Sep 2, 2026"
+       ],
+       [
+        "Revenue growth — FY2027",
+        "Year to Oct 2027",
+        "13.0%",
+        "17.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Non-GAAP diluted net EPS growth",
+        "Year to Oct 2027",
+        "16.0%",
+        "20.0%",
+        "Sep 2, 2026"
+       ],
+       [
+        "Free cash flow — FY2027",
+        "Year to Oct 2027",
+        "5,000",
+        "",
+        "Sep 2, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has HPE kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 94,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.1 — Who runs it",
+       "text": "Free cash flow is the money left after operations and specified investment spending. HPE can use it for dividends, buybacks, debt repayment, or acquisitions. In September 2026, Myers said HPE intended to return at least 75% of fourth-quarter free cash flow to shareholders. That promise cannot yet be judged against completed fourth-quarter results."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has HPE's revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $12,213 million, up from $9,136 million a year earlier. Gross margin rose from 29.2% to 40.1%. Operating income increased from $247 million to $1,393 million. HPE retained more of each sales dollar and converted more of it into operating profit."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "12,213",
+        "10,678",
+        "9,301",
+        "9,679",
+        "9,136",
+        "7,627",
+        "7,854",
+        "8,458"
+       ],
+       [
+        "Gross margin",
+        "40.1%",
+        "36.5%",
+        "35.9%",
+        "33.5%",
+        "29.2%",
+        "28.4%",
+        "29.2%",
+        "30.8%"
+       ],
+       [
+        "Operating income",
+        "1,393",
+        "747",
+        "470",
+        "-8",
+        "247",
+        "-1,109",
+        "433",
+        "693"
+       ],
+       [
+        "Net income",
+        "1,540",
+        "624",
+        "452",
+        "175",
+        "305",
+        "-1,050",
+        "627",
+        "1,366"
+       ],
+       [
+        "EPS, diluted",
+        "1.06",
+        "0.44",
+        "0.31",
+        "0.11",
+        "0.21",
+        "-0.82",
+        "0.44",
+        "0.99"
+       ]
+      ],
+      "note": "The company’s own free cash flow can differ from ours because it includes its financial-services business and may use a different definition; ours is simply cash from operations minus capital spending."
+     }
+    },
+    {
+     "heading": "What should I watch in HPE's next results?",
+     "paragraphs": [
+      {
+       "n": 247,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will show whether HPE’s late-year orders become profitable deliveries and collected cash."
+      },
+      {
+       "n": 249,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "During fiscal 2027, watch Helios and Oracle shipments. More revenue will help only if inventory and collections remain controlled. A profitable rack that is unfinished or awaiting acceptance can still consume cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "12,213"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "1.06"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,458",
+      "7,854",
+      "7,627",
+      "9,136",
+      "9,679",
+      "9,301",
+      "10,678",
+      "12,213"
+     ],
+     "EPS, diluted": [
+      "0.99",
+      "0.44",
+      "-0.82",
+      "0.21",
+      "0.11",
+      "0.31",
+      "0.44",
+      "1.06"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/hpe/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=HPE&src=seo-earnings"
+  }
+ },
+ "short_name": "HPE",
+ "first_memo_date": "2026-10-17T01:04:35Z"
+}

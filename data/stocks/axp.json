@@ -1,0 +1,807 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "AXP",
+ "slug": "axp",
+ "company": "American Express Company",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T02:55:38Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 311.53,
+ "price_date": "2026-10-12T20:02:56Z",
+ "next_earnings": "2026-10-23",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 255,
+  "tables": 27,
+  "words": 16397,
+  "sources": 259
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "American Express, usually called Amex, sells cards, credit, and services that help people and businesses pay, while also running a network that carries those payments. Its economics become clear when one follows a customer from choosing the card to spending, repayment, and the costs Amex pays along the way."
+ },
+ "sources": [
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000016/axp-20241231.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000037/q425exhibit991.htm"
+  },
+  {
+   "title": "Q2 2026 financial tables",
+   "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000318/q226exhibit992.htm"
+  }
+ ],
+ "rivals": [
+  "V",
+  "MA",
+  "COF",
+  "JPM",
+  "C",
+  "BAC",
+  "SYF",
+  "BFH",
+  "PYPL",
+  "FISV"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Amex stock forecast",
+   "meta_description": "Amex's weighted forecast is $359.41 in October 2027 and $432.19 in October 2029, with bear, base and bull scenarios.",
+   "opening": "Amex's weighted forecast is $359.41 in October 2027, with 55% in the base case. Amex's upside depends on turning premium spending into durable, well-capitalized profit.",
+   "closing": "The full memo also explains Amex's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Amex's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast is $359.41 in October 2027, a 17% total return including dividends, and $432.19 in October 2029, a 43% total return. The probabilities are 25% bear, 55% base, and 20% bull. Profitable premium renewals, commercial-card spending, stable credit, and CET1 within target support the base or bull case. October 23, 2026 Q3 results and Q4 2026 fee growth are the next tests. Amex’s upside depends on turning premium spending into durable, well-capitalized profit."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 311.53, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 311.53, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25%",
+        "302.43 (-2%)",
+        "279.90 (-8%)",
+        "290.24 (-3%)"
+       ],
+       [
+        "Base",
+        "55%",
+        "365.25 (+19%)",
+        "407.42 (+34%)",
+        "444.85 (+47%)"
+       ],
+       [
+        "Bull",
+        "20%",
+        "414.60 (+34%)",
+        "494.98 (+62%)",
+        "574.83 (+89%)"
+       ],
+       [
+        "Weighted",
+        "100%",
+        "359.41 (+17%)",
+        "393.05 (+29%)",
+        "432.19 (+43%)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could go right or wrong for Amex?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires benefit and servicing costs to outrun fee growth, reserve releases to reverse and merchant economics to weaken. It leads to $302.43 by October 2027 and $290.24 by October 2029, with a 25% probability. The latest quarter benefited from a reserve release, while Card Member services expense rose sharply, making this downside credible."
+      },
+      {
+       "n": 252,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case reaches $414.60 in October 2027 and $574.83 in October 2029, with a 20% probability. It requires premium refreshes, strong renewals, commercial-card adoption and controlled credit costs to make revenue growth increasingly profitable. Amex's integrated network supports that outcome, but recent expense growth makes it less likely than the base case."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Amex really make?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash starts with profit and adjusts for noncash items and timing. Free cash flow subtracts capital spending, while “real free cash flow” also subtracts stock-based pay. Stock awards do not immediately use cash, but they transfer value and may require repurchases to limit dilution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "18,428",
+        "14,050",
+        "18,559",
+        "21,079",
+        "14,645"
+       ],
+       [
+        "− Capital spending",
+        "2,426",
+        "1,917",
+        "1,565",
+        "1,856",
+        "1,638"
+       ],
+       [
+        "**= Free cash flow**",
+        "16,002",
+        "12,133",
+        "16,994",
+        "19,223",
+        "13,007"
+       ],
+       [
+        "− Stock pay",
+        "551",
+        "504",
+        "450",
+        "375",
+        "330"
+       ],
+       [
+        "**= Real free cash flow**",
+        "15,451",
+        "11,629",
+        "16,544",
+        "18,848",
+        "12,677"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "21.4%",
+        "17.6%",
+        "27.3%",
+        "35.7%",
+        "29.9%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Amex today?",
+     "paragraphs": [
+      {
+       "n": 171,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price-to-earnings, measures what investors pay for each dollar of profit. Price-to-book compares the share price with the accounting value of shareholders’ net assets. Amex’s high return on equity helps explain why investors pay more than book value: its brand, members, merchant acceptance and transaction data are not fully captured by accounting assets. But that premium is justified only if the earnings remain durable."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "311.53"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "15.5x"
+       ],
+       [
+        "Price to book (calculated)",
+        "6.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "7.6%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "7.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "311.53"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "432.19 (+43%)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.3%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "15.5x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 311.53,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25%",
+      "values": [
+       "302.43 (-2%)",
+       "279.90 (-8%)",
+       "290.24 (-3%)"
+      ]
+     },
+     "Base": {
+      "probability": "55%",
+      "values": [
+       "365.25 (+19%)",
+       "407.42 (+34%)",
+       "444.85 (+47%)"
+      ]
+     },
+     "Bull": {
+      "probability": "20%",
+      "values": [
+       "414.60 (+34%)",
+       "494.98 (+62%)",
+       "574.83 (+89%)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100%",
+      "values": [
+       "359.41 (+17%)",
+       "393.05 (+29%)",
+       "432.19 (+43%)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/axp/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AXP&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Amex dividend: cash coverage and yield",
+   "meta_description": "Amex dividend history, cash coverage, payout plans, risks, and current yield explained in plain English.",
+   "opening": "Amex pays a dividend per share, with the base-case forecast rising to $4.10, $4.52 and $4.97. The memo says free cash flow is positive but not automatically distributable, because lending growth absorbs cash.",
+   "closing": "The full memo also examines Amex’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Amex pay per share?",
+     "paragraphs": [
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends per share rise to $4.10, $4.52 and $4.97 in the base case. The bear case holds them at $3.80 because credit, compliance or benefit costs could freeze the quarterly rate. The bull case reaches $4.10, $4.75 and $5.42 through faster increases. The base moderates the recent board increase because management plans to reinvest outperformance and has given no dividend-growth promise."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "72,229",
+        "65,949",
+        "60,515",
+        "52,862",
+        "42,380"
+       ],
+       [
+        "EPS, diluted",
+        "15.38",
+        "14.01",
+        "11.21",
+        "9.85",
+        "10.02"
+       ],
+       [
+        "Dividend per share",
+        "3.28",
+        "2.80",
+        "2.40",
+        "2.08",
+        "1.72"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Amex’s dividend come from cash?",
+     "paragraphs": [
+      {
+       "n": 127,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash starts with profit and adjusts for noncash items and timing. Free cash flow subtracts capital spending, while “real free cash flow” also subtracts stock-based pay. Stock awards do not immediately use cash, but they transfer value and may require repurchases to limit dilution."
+      },
+      {
+       "n": 129,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash can therefore swing sharply from quarter to quarter even when the business remains profitable. A negative quarter does not automatically signal failure, and a positive free-cash-flow figure does not automatically mean the amount is distributable."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "16,002",
+        "12,133",
+        "16,994",
+        "19,223",
+        "13,007"
+       ],
+       [
+        "− Dividends paid",
+        "2,213",
+        "1,941",
+        "1,722",
+        "1,508",
+        "1,377"
+       ],
+       [
+        "− Share buybacks",
+        "5,814",
+        "6,020",
+        "3,650",
+        "3,502",
+        "7,652"
+       ],
+       [
+        "Paid to shareholders",
+        "8,027",
+        "7,961",
+        "5,372",
+        "5,010",
+        "9,029"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "50.2%",
+        "65.6%",
+        "31.6%",
+        "26.1%",
+        "69.4%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Amex’s dividend?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "The share count falls through repurchases, rises through compensation-related issuance, and receives no assumed public-equity issuance. The company says capital returns depend on excess capital, its CET1 range and balance-sheet growth, so buybacks are deliberately scenario-dependent."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Amex’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 172,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Enterprise value adds debt and subtracts cash to estimate the value of the whole business. For Amex, that measure is less clean because borrowing and deposits help fund card loans and receivables. Debt is part of the earning machinery, not merely a financing choice. The dividend yield also needs context: a 10-year U.S. Treasury bond offers an alternative income return, while Amex must retain capital to absorb lending losses. Cash-flow yield and revenue multiples therefore matter less than sustainable earnings and distributable capital."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "311.53"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "7.6%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "1.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "3.18"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "1.2%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.3%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "7.6%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "1.74",
+      "2.01",
+      "2.34",
+      "2.72",
+      "3.18"
+     ],
+     "Real free cash flow per share": [
+      "16.05",
+      "25.06",
+      "22.48",
+      "16.31",
+      "22.20"
+     ],
+     "Free cash flow per share": [
+      "16.46",
+      "25.56",
+      "23.09",
+      "17.02",
+      "22.99"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/axp/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AXP&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Amex earnings: October 23, 2026 guidance",
+   "meta_description": "Amex reports on October 23, 2026; guidance calls for 10.0% full-year revenue growth and EPS of $17.30–$17.90, with refreshed benefits the key watch.",
+   "opening": "Amex reports its next results on October 23, 2026. Watch whether fee growth covers the cost of refreshed benefits.",
+   "closing": "The full Amex memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Amex guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Amex can reach $432.19 by October 2029 for a 43% total return including dividends if it converts spending and premium renewals into durable earnings while controlling costs and credit. Management’s July 24, 2026 guidance calls for 10.0% full-year revenue growth and EPS of $17.30–$17.90. Its 2026 capital target is a CET1 ratio of 10.0%–11.0%; planned term-debt issuance is $4,000–$8,000 million unsecured and $1,000–$3,000 million secured. Net card-fee growth should accelerate in Q3 and reach the high teens in Q4."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Full-year revenue growth",
+        "Year to Dec 2026",
+        "10.0%",
+        "10.0%",
+        "Jul 24, 2026"
+       ],
+       [
+        "Full-year EPS",
+        "Year to Dec 2026",
+        "17.30",
+        "17.90",
+        "Jul 24, 2026"
+       ],
+       [
+        "Unsecured term debt issuance",
+        "Year to Dec 2026",
+        "4,000",
+        "8,000",
+        "Jul 24, 2026"
+       ],
+       [
+        "Secured term debt issuance",
+        "Year to Dec 2026",
+        "1,000",
+        "3,000",
+        "Jul 24, 2026"
+       ],
+       [
+        "Net Card Fees YoY% (FX-adjusted), Q4 exit",
+        "Quarter to Dec 2026",
+        "",
+        "",
+        "Jul 24, 2026"
+       ],
+       [
+        "CET1 Ratio Target",
+        "2026 ongoing capital target",
+        "10.0%",
+        "11.0%",
+        "Jul 24, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Amex keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 108,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "For 2025, AmEx delivered 10% revenue growth and earnings per share of $15.38, within the ranges management had reaffirmed. That is evidence of execution, although the shrinking share count also helped earnings per share. In July 2026, management raised its revenue-growth forecast to 10%, retained its earnings guidance and increased investment. The test is whether that spending produces customers and earnings that last."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Amex's recent revenue and profit trend?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue and net income rose, while diluted EPS grew faster because the average diluted share count fell. That is a favorable result, but EPS is not a separate source of operating improvement."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "19,637",
+        "18,907",
+        "18,980",
+        "18,426",
+        "17,856",
+        "16,967",
+        "17,179",
+        "16,636"
+       ],
+       [
+        "Net income",
+        "3,110",
+        "2,971",
+        "2,462",
+        "2,902",
+        "2,885",
+        "2,584",
+        "2,170",
+        "2,507"
+       ],
+       [
+        "EPS, diluted",
+        "4.53",
+        "4.28",
+        "3.53",
+        "4.14",
+        "4.08",
+        "3.64",
+        "3.04",
+        "3.49"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Amex's next results?",
+     "paragraphs": [
+      {
+       "n": 230,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Amex reports third-quarter results on October 23, 2026. Investors will look for continued fee growth, customer spending and the cost of delivering the refreshed benefits. The December quarter will test management’s expected acceleration in card-fee growth."
+      },
+      {
+       "n": 232,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The penalty is not the whole financial problem. Employees, systems, monitoring and outside reviews may create continuing remediation costs, and future penalties remain possible even though full-year guidance is unchanged."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 23, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "19,637"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "4.53"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "16,636",
+      "17,179",
+      "16,967",
+      "17,856",
+      "18,426",
+      "18,980",
+      "18,907",
+      "19,637"
+     ],
+     "EPS, diluted": [
+      "3.49",
+      "3.04",
+      "3.64",
+      "4.08",
+      "4.14",
+      "3.53",
+      "4.28",
+      "4.53"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/axp/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AXP&src=seo-earnings"
+  }
+ },
+ "short_name": "Amex",
+ "first_memo_date": "2026-10-13T02:55:38Z"
+}
