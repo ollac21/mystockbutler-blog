@@ -6,6 +6,9 @@
 //      page never disappears because of one failed fetch);
 //   2. the files committed in data/stocks/ (<slug>.json + index.json).
 // Nothing is fetched per page: one small JSON per company, then the whole site is drawn locally in seconds.
+// A company the index no longer lists (a customer's report past its 90 days, a memo taken out of the library) is
+// WITHDRAWN: its committed file is not used (law review 2026-10-20T14:10Z) — at most WITHDRAW_MAX in one build; more
+// means the index is wrong, and the committed files are kept.
 
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -28,9 +31,10 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 // retries MTD still failed: its limit comes in bursts): 2 at a time; a 429, a 5xx or a dropped connection is asked
 // again after 2, 4, 8, 16 and 32 seconds (or the server's Retry-After); what still fails gets one slow round at the end.
 const CONCURRENCY = 2;
+const WITHDRAW_MAX = 25;
 const RETRY_BASE_MS = Number(process.env.STOCK_PAGES_RETRY_MS || 1000);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-export const FETCH_STATS = { index: 0, fetched: 0, kept: 0, missing: [], retried: 0 };
+export const FETCH_STATS = { index: 0, fetched: 0, kept: 0, missing: [], retried: 0, withdrawn: [] };
 
 async function fetchOnce(url, file) {
   const ctrl = new AbortController();
@@ -100,7 +104,13 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
     return [...kept.values()];
   }
   const rows = (index?.companies || []).filter((r) => r?.slug && SLUG.test(r.slug));
-  const out = new Map(kept);
+  const listed = new Set(rows.map((r) => r.slug));
+  let withdrawn = [...kept.keys()].filter((slug) => !listed.has(slug)).sort();
+  if (withdrawn.length > WITHDRAW_MAX) {
+    console.log(`WARNING: stock pages: the index leaves out ${withdrawn.length} companies (at most ${WITHDRAW_MAX} withdrawn in one build); the committed files are kept`);
+    withdrawn = [];
+  }
+  const out = new Map([...kept].filter(([slug]) => !withdrawn.includes(slug)));
   let fetched = 0;
   let failed = 0;
   const missing = [];
@@ -141,8 +151,8 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
       }
     }
   }
-  Object.assign(FETCH_STATS, { index: rows.length, fetched, kept: failed - missing.length, missing });
-  console.log(`Stock pages: ${rows.length} in the index, ${fetched} fetched (${FETCH_STATS.retried} retries), ${failed} failed (${failed - missing.length} kept, ${missing.length} missing), ${out.size} companies in all.`);
+  Object.assign(FETCH_STATS, { index: rows.length, fetched, kept: failed - missing.length, missing, withdrawn });
+  console.log(`Stock pages: ${rows.length} in the index, ${fetched} fetched (${FETCH_STATS.retried} retries), ${failed} failed (${failed - missing.length} kept, ${missing.length} missing), ${withdrawn.length} withdrawn${withdrawn.length ? ` (${withdrawn.join(', ')})` : ''}, ${out.size} companies in all.`);
   return [...out.values()];
 }
 

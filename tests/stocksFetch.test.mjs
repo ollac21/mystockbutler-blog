@@ -45,3 +45,25 @@ test('a file refused through the fast rounds is fetched in the slow round', asyn
   assert.deepEqual(got.map((d) => d.slug), ['mtd']);
   assert.deepEqual(FETCH_STATS.missing, []);
 });
+
+test('a company the index no longer lists is withdrawn; a broken index withdraws nothing', async () => {
+  const { writeFile } = await import('node:fs/promises');
+  const root = await mkdtemp(path.join(os.tmpdir(), 'b112-fetch-'));
+  const dir = path.join(root, 'data', 'stocks');
+  await mkdir(dir, { recursive: true });
+  for (const slug of ['td-to', 'mty-to']) await writeFile(path.join(dir, `${slug}.json`), JSON.stringify({ slug, pages: { stock: {} } }));
+  let companies = [{ slug: 'td-to' }];
+  globalThis.fetch = async (url, init) => {
+    const file = JSON.parse(init.body).file;
+    if (file === 'index') return new Response(JSON.stringify({ companies }));
+    return new Response(JSON.stringify({ slug: file, pages: { stock: {} } }));
+  };
+  let got = await readStockData(root, { url: 'https://example.test/fn' });
+  assert.deepEqual(got.map((d) => d.slug), ['td-to']);              // MTY's customer report aged out: its page goes
+  assert.deepEqual(FETCH_STATS.withdrawn, ['mty-to']);
+  for (let i = 0; i < 30; i += 1) await writeFile(path.join(dir, `x${i}.json`), JSON.stringify({ slug: `x${i}`, pages: { stock: {} } }));
+  companies = [];                                                    // an index that lists nothing is not believed
+  got = await readStockData(root, { url: 'https://example.test/fn' });
+  assert.equal(got.length, 32);
+  assert.deepEqual(FETCH_STATS.withdrawn, []);
+});
