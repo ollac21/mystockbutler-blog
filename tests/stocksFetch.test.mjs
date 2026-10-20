@@ -9,7 +9,7 @@ import path from 'node:path';
 process.env.STOCK_PAGES_RETRY_MS = '1';
 const { readStockData, FETCH_STATS } = await import('../scripts/lib/stocksBuild.mjs');
 
-test('a 429 is asked again; a file still failing is counted missing', async () => {
+test('a 429 is asked again; a file still failing gets a slow round, then is counted missing', async () => {
   const calls = {};
   globalThis.fetch = async (url, init) => {
     const file = JSON.parse(init.body).file;
@@ -25,7 +25,23 @@ test('a 429 is asked again; a file still failing is counted missing', async () =
   const got = await readStockData(root, { url: 'https://example.test/fn' });
   assert.deepEqual(got.map((d) => d.slug), ['zts']);
   assert.equal(calls.zts, 3);                      // two 429s, then the file
-  assert.equal(calls.mtd, 5);                      // a 5xx asked 4 more times
-  assert.equal(calls.gone, 1);                     // a 404 is not asked again
+  assert.equal(calls.mtd, 12);                     // a 5xx asked 5 more times, then 6 in the slow round
+  assert.equal(calls.gone, 2);                     // a 404 is not retried, only asked once more in the slow round
   assert.deepEqual(FETCH_STATS.missing.sort(), ['gone', 'mtd']);
+});
+
+test('a file refused through the fast rounds is fetched in the slow round', async () => {
+  const calls = {};
+  globalThis.fetch = async (url, init) => {
+    const file = JSON.parse(init.body).file;
+    calls[file] = (calls[file] || 0) + 1;
+    if (file === 'index') return new Response(JSON.stringify({ companies: [{ slug: 'mtd' }] }));
+    if (calls[file] <= 6) return new Response('{}', { status: 429, headers: { 'retry-after': '0' } });
+    return new Response(JSON.stringify({ slug: file, pages: { stock: {} } }));
+  };
+  const root = await mkdtemp(path.join(os.tmpdir(), 'b112-fetch-'));
+  await mkdir(path.join(root, 'data', 'stocks'), { recursive: true });
+  const got = await readStockData(root, { url: 'https://example.test/fn' });
+  assert.deepEqual(got.map((d) => d.slug), ['mtd']);
+  assert.deepEqual(FETCH_STATS.missing, []);
 });

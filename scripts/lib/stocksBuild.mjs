@@ -24,9 +24,10 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 `;
 }
 
-// base44 answers HTTP 429 when asked too fast (CTO 2026-10-20T10:10Z: 4 of 441 files, Zoetis among them): a few at a
-// time, and a 429, a 5xx or a dropped connection is asked again after 1, 2, 4 and 8 seconds.
-const CONCURRENCY = 3;
+// base44 answers HTTP 429 when asked too fast (CTO 2026-10-20T10:10Z: 4 of 441 files, Zoetis among them; with 1-8 s
+// retries MTD still failed: its limit comes in bursts): 2 at a time; a 429, a 5xx or a dropped connection is asked
+// again after 2, 4, 8, 16 and 32 seconds (or the server's Retry-After); what still fails gets one slow round at the end.
+const CONCURRENCY = 2;
 const RETRY_BASE_MS = Number(process.env.STOCK_PAGES_RETRY_MS || 1000);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const FETCH_STATS = { index: 0, fetched: 0, kept: 0, missing: [], retried: 0 };
@@ -44,6 +45,8 @@ async function fetchOnce(url, file) {
     if (!res.ok) {
       const err = new Error(`HTTP ${res.status}`);
       err.retry = res.status === 429 || res.status >= 500;
+      const after = Number(res.headers.get('retry-after'));
+      if (Number.isFinite(after) && after > 0) err.after = Math.min(after, 60) * 1000;
       throw err;
     }
     return await res.json();
@@ -60,9 +63,9 @@ export async function fetchJson(url, file) {
     try {
       return await fetchOnce(url, file);
     } catch (err) {
-      if (!err.retry || attempt >= 4) throw err;
+      if (!err.retry || attempt >= 5) throw err;
       FETCH_STATS.retried += 1;
-      await sleep(RETRY_BASE_MS * 2 ** attempt);                    // 1 s, 2 s, 4 s, 8 s
+      await sleep(err.after || RETRY_BASE_MS * 2 ** (attempt + 1));   // 2, 4, 8, 16, 32 s
     }
   }
 }
@@ -118,6 +121,26 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
     }
   };
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+  // One slow round for what still failed: one file at a time, after a pause.
+  if (failed) {
+    const retryRows = rows.filter((r) => missing.includes(r.slug) || (kept.has(r.slug) && out.get(r.slug) === kept.get(r.slug)));
+    if (retryRows.length) await sleep(RETRY_BASE_MS * 30);
+    for (const row of retryRows) {
+      try {
+        const data = await fetchJson(url, row.slug);
+        if (data?.slug === row.slug) {
+          out.set(row.slug, data);
+          fetched += 1;
+          failed -= 1;
+          const i = missing.indexOf(row.slug);
+          if (i >= 0) missing.splice(i, 1);
+          console.log(`stock pages: ${row.slug} fetched in the slow round`);
+        }
+      } catch (err) {
+        console.log(`WARNING: stock pages: ${row.slug} failed again in the slow round (${err.message})`);
+      }
+    }
+  }
   Object.assign(FETCH_STATS, { index: rows.length, fetched, kept: failed - missing.length, missing });
   console.log(`Stock pages: ${rows.length} in the index, ${fetched} fetched (${FETCH_STATS.retried} retries), ${failed} failed (${failed - missing.length} kept, ${missing.length} missing), ${out.size} companies in all.`);
   return [...out.values()];
