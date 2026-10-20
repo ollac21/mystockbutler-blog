@@ -146,9 +146,13 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
   return [...out.values()];
 }
 
+// One sitemap; a page with a translation lists both versions (hreflang), as its <link rel="alternate"> tags do.
 function urlset(entries) {
-  const urls = entries.map((e) => `  <url>\n    <loc>${e.url}</loc>${e.lastmod ? `\n    <lastmod>${e.lastmod}</lastmod>` : ''}\n  </url>`);
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
+  const urls = entries.map((e) => {
+    const alt = (e.alternates || []).map((a) => `\n    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.url}"/>`).join('');
+    return `  <url>\n    <loc>${e.url}</loc>${e.lastmod ? `\n    <lastmod>${e.lastmod}</lastmod>` : ''}${alt}\n  </url>`;
+  });
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`;
 }
 
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
@@ -162,20 +166,24 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await writeFile(path.join(dir, 'index.html'), p.html);
   }
   const sitemaps = {};
-  for (const t of TYPES) {
-    const entries = pages.filter((p) => p.type === t).map((p) => ({ url: p.url, lastmod: p.lastmod }));
-    if (entries.length) sitemaps[`sitemap-${t}-en.xml`] = entries;
+  for (const lang of ['en', 'fr']) {
+    for (const t of TYPES) {
+      const entries = pages.filter((p) => p.type === t && (p.lang || 'en') === lang)
+        .map((p) => ({ url: p.url, lastmod: p.lastmod, alternates: p.alternates }));
+      if (entries.length) sitemaps[`sitemap-${t}-${lang}.xml`] = entries;
+    }
+    const hubEntries = hubs.filter((h) => (h.lang || 'en') === lang).map((h) => ({ url: h.url, lastmod: h.lastmod }));
+    if (hubEntries.length) sitemaps[`sitemap-stock-hubs-${lang}.xml`] = hubEntries;
   }
-  sitemaps['sitemap-stock-hubs-en.xml'] = hubs.map((h) => ({ url: h.url, lastmod: h.lastmod }));
   for (const [name, entries] of Object.entries(sitemaps)) await writeFile(path.join(out, name), urlset(entries));
   const llms = pages.map((p) => ({ title: p.title, url: p.url, description: p.description }));
-  const table = pages.map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
+  const table = pages.map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
   const full = { built_at: new Date().toISOString(), ...report, fetch: { ...FETCH_STATS }, table };
   if (reportDir) {
     await mkdir(reportDir, { recursive: true });
     await writeFile(path.join(reportDir, 'stocks.json'), `${JSON.stringify(full, null, 1)}\n`);
   }
-  console.log(`Stock pages: ${pages.length} page(s) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
+  console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
   for (const h of held.slice(0, 40)) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
-  return { sitemaps, llms, report: full, entries: Object.values(sitemaps).flat(), site: SITE };
+  return { sitemaps, llms, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }

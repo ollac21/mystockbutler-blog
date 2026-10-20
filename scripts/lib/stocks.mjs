@@ -20,14 +20,64 @@ export const TYPE_NAMES = { stock: 'Stock forecast', dividend: 'Dividend', earni
 export const TYPES = ['stock', 'dividend', 'earnings'];
 const SEARCH_PHRASE = { stock: 'stock forecast', dividend: 'dividend', earnings: 'earnings' };
 const BANNED = /\b(buy|sell|hold|cheap|expensive|undervalued|overvalued|this page)\b/i;
+// The same advice words in French (the card's step 12, model-written lines only).
+const BANNED_FR = /(?<!\p{L})(acheter|achetez|vendre|vendez|sous-évalué\p{L}*|surévalué\p{L}*|bon marché|cette page)(?!\p{L})/iu;
+const TITLE_FR = /^(Action |Résultats de )/;
 const NUMBER = /\d[\d,.]*\d|\d/g;
 const MAX_BYTES = 100 * 1024;
 const FREE_LINE = 'Your first report is free · no card';
 
 const marked = new Marked({ gfm: true });
 
-export function pagePath(slug, type) {
+// The page's own fixed words, per language (B112; French for the S&P/TSX 60, owner 2026-10-20). Never a sentence about
+// a company: those come from the chain's file.
+const MONTHS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const MON_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MON_FR = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+// Our own column dates ('October 2029', 'Jun 2026') in French: the closed month lists above (shape).
+function dateFr(text) {
+  return String(text || '')
+    .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/g, (m) => MONTHS_FR[MONTHS_EN.indexOf(m)])
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (m) => MON_FR[MON_EN.indexOf(m)]);
+}
+export const UI = {
+  en: {
+    htmlLang: 'en', allStocks: 'All stocks', blog: 'Blog', headerCta: 'Get your first report free', free: 'Your first report is free · no card',
+    readFull: (c) => `Read the full ${c} memo`, proof: (c) => `Every number traced to ${c}'s filings`, chapters: 'chapters', words: 'words',
+    sources: 'sources cited', kicker: 'Research memo', memoOf: 'Memo of', mid: (p, P, t, T) => `This page shows ${p} of the memo's ${P} paragraphs and ${t} of its ${T} tables.`,
+    fromMemo: 'From the full memo', cont: 'Continue reading, free', whereFrom: 'Where these numbers come from', filingOn: (h) => `Filing on ${h}`,
+    filing: 'Filing', moreOn: (c) => `More on ${c}`, rivals: 'Its rivals', browse: 'Browse', rail: (c) => `The full ${c} memo`, readItFree: 'Read it free',
+    sticky: 'Your first report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
+    types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, other: 'En français', locale: 'en-US',
+    footer: 'Information only, not investment advice. Scenarios are scenarios, not predictions. Check the cited filings before making an investment decision.',
+    scen: (d) => `Share price in ${d}: our three scenarios`, today: 'Today', cases: { Bear: 'Bear', Base: 'Base', Bull: 'Bull' },
+    divChart: 'Dividend per share against free cash flow per share', revChart: 'Revenue by quarter', date: (t) => t,
+    series: { 'Dividends paid, per share': 'Dividends paid, per share', 'Real free cash flow per share': 'Real free cash flow per share', 'Free cash flow per share': 'Free cash flow per share', Revenue: 'Revenue' },
+  },
+  fr: {
+    htmlLang: 'fr-CA', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Votre premier rapport gratuit', free: 'Votre premier rapport est gratuit · sans carte',
+    readFull: (c) => `Lire le mémo complet sur ${c}`, proof: (c) => `Chaque chiffre est relié aux documents déposés par ${c}`, chapters: 'chapitres', words: 'mots',
+    sources: 'sources citées', kicker: 'Mémo de recherche', memoOf: 'Mémo du', mid: (p, P, t, T) => `Cette page présente ${p} des ${P} paragraphes du mémo et ${t} de ses ${T} tableaux.`,
+    fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
+    filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
+    sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
+    types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, other: 'In English', locale: 'fr-CA',
+    footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
+    scen: (d) => `Cours de l'action en ${d} : nos trois scénarios`, today: "Aujourd'hui", cases: { Bear: 'Pessimiste', Base: 'Central', Bull: 'Optimiste' },
+    divChart: 'Dividende par action et flux de trésorerie disponible par action', revChart: 'Revenus par trimestre', date: dateFr,
+    series: { 'Dividends paid, per share': 'Dividendes versés par action', 'Real free cash flow per share': 'Flux de trésorerie disponible réel par action', 'Free cash flow per share': 'Flux de trésorerie disponible par action', Revenue: 'Revenus' },
+  },
+};
+const FR_SEGMENT = { stock: '', dividend: 'dividende/', earnings: 'resultats/' };
+
+export function pagePath(slug, type, lang = 'en') {
+  if (lang === 'fr') return `/fr/stocks/${slug}/${FR_SEGMENT[type]}`;
   return `/stocks/${slug}/${type === 'stock' ? '' : `${type}/`}`;
+}
+
+function frPage(data, type) {
+  return data?.translations?.fr?.pages?.[type] || null;
 }
 
 // The letter hubs' address: never a company's (/stocks/v/ is Visa's page).
@@ -51,9 +101,13 @@ function isoDay(value) {
   return /^\d{4}-\d{2}-\d{2}/.test(s) ? s.slice(0, 10) : '';
 }
 
-function humanDay(value) {
+function humanDay(value, lang = 'en') {
   const d = isoDay(value);
   if (!d) return '';
+  if (lang === 'fr') {
+    const day = Number(d.slice(8, 10));
+    return `${day === 1 ? '1er' : day} ${MONTHS_FR[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
+  }
   const dt = new Date(`${d}T12:00:00Z`);
   return dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
@@ -84,7 +138,7 @@ function isTotal(cell) {
   return raw.startsWith('**') || raw.replace(/\*\*/g, '').startsWith('= ');
 }
 
-function tableHtml(table) {
+function tableHtml(table, ui = UI.en) {
   if (!table || !table.rows?.length) return '';
   const head = (table.head || []).map((h, i) => `<th${i ? '' : ' scope="col"'}>${esc(i === 0 && /^row$/i.test(h) ? '' : h)}</th>`).join('');
   const rows = table.rows
@@ -94,7 +148,7 @@ function tableHtml(table) {
       return `<tr${cls}><td>${esc(String(r[0]).replace(/\*\*/g, ''))}</td>${cells}</tr>`;
     })
     .join('');
-  const note = table.note ? `<p class="note"><b>What this means.</b> ${esc(table.note)}</p>` : '';
+  const note = table.note ? `<p class="note"><b>${esc(ui.means)}</b> ${esc(table.note)}</p>` : '';
   return `<figure class="tbl"><figcaption><span class="tt">${esc(table.title)}</span>${table.unit ? `<span class="tu">${esc(table.unit)}</span>` : ''}</figcaption>
 <div class="tw"><table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>${note}</figure>`;
 }
@@ -108,7 +162,7 @@ function num(value) {
 
 // A chart draws the memo's own printed values (their heights are arithmetic on those values; every label is the
 // value as printed).
-function scenarioChart(chart, currency) {
+function scenarioChart(chart, currency, ui = UI.en) {
   const cols = chart.columns || [];
   const last = cols.length - 1;
   if (last < 0) return '';
@@ -129,11 +183,11 @@ function scenarioChart(chart, currency) {
   const x = (v) => 24 + ((W - 48) * (v - lo)) / (hi - lo);
   const y0 = 92;
   const out = [
-    `<svg viewBox="0 0 ${W} 190" role="img" aria-label="Share price in ${esc(cols[last])}: our three scenarios against today's price">`,
-    `<text x="0" y="18" class="ct">Share price in ${esc(cols[last])}: our three scenarios${currency ? ` (${esc(currency)})` : ''}</text>`,
+    `<svg viewBox="0 0 ${W} 190" role="img" aria-label="${esc(ui.scen(ui.date(cols[last])))}">`,
+    `<text x="0" y="18" class="ct">${esc(ui.scen(ui.date(cols[last])))}${currency ? ` (${esc(currency)})` : ''}</text>`,
     `<line x1="${x(pts.Bear.v).toFixed(0)}" x2="${x(pts.Bull.v).toFixed(0)}" y1="${y0}" y2="${y0}" stroke="#CFD8DA" stroke-width="10" stroke-linecap="round"/>`,
     `<line x1="${x(today).toFixed(0)}" x2="${x(today).toFixed(0)}" y1="44" y2="140" stroke="#C2861A" stroke-width="2" stroke-dasharray="5 4"/>`,
-    `<text x="${x(today).toFixed(0)}" y="160" text-anchor="middle" class="cd">Today ${esc(String(chart.today))}</text>`,
+    `<text x="${x(today).toFixed(0)}" y="160" text-anchor="middle" class="cd">${esc(ui.today)} ${esc(String(chart.today))}</text>`,
   ];
   for (const [name, color] of [['Bear', '#9AA3AD'], ['Base', '#0F5E63'], ['Bull', '#53A88F']]) {
     const p = pts[name];
@@ -141,7 +195,7 @@ function scenarioChart(chart, currency) {
     const cx = x(p.v).toFixed(0);
     out.push(`<circle cx="${cx}" cy="${y0}" r="11" fill="${color}" stroke="#fff" stroke-width="3"/>`);
     out.push(`<text x="${cx}" y="${y0 - 22}" text-anchor="middle" class="cv">${esc(p.label)}</text>`);
-    out.push(`<text x="${cx}" y="${y0 + 30}" text-anchor="middle" class="cl">${esc(name)} · ${esc(p.prob)} · ${esc(p.ret)}</text>`);
+    out.push(`<text x="${cx}" y="${y0 + 30}" text-anchor="middle" class="cl">${esc(ui.cases[name])} · ${esc(p.prob)} · ${esc(p.ret)}</text>`);
   }
   out.push('</svg>');
   return `<div class="chart">${out.join('')}</div>`;
@@ -181,29 +235,30 @@ function barChart({ title, columns, series, unit }) {
   return `<div class="chart">${out.join('')}</div>`;
 }
 
-function chartHtml(page, data) {
+function chartHtml(page, data, ui = UI.en) {
   const c = page.chart;
   if (!c) return '';
-  if (c.kind === 'scenarios') return scenarioChart(c, data.currency);
+  const fr = ui === UI.fr;
+  if (c.kind === 'scenarios') return scenarioChart(c, data.currency, ui);
   if (c.kind === 'dividend_vs_fcf') {
     const series = [];
     const div = c.rows?.['Dividends paid, per share'];
     const cash = c.rows?.['Real free cash flow per share'] || c.rows?.['Free cash flow per share'];
     const cashName = c.rows?.['Real free cash flow per share'] ? 'Real free cash flow per share' : 'Free cash flow per share';
-    if (div) series.push({ name: 'Dividends paid, per share', values: div, color: '#0F5E63' });
-    if (cash) series.push({ name: cashName, values: cash, color: '#9FC9B4' });
-    return barChart({ title: 'Dividend per share against free cash flow per share', columns: c.columns || [], series, unit: c.unit });
+    if (div) series.push({ name: ui.series['Dividends paid, per share'], values: div, color: '#0F5E63' });
+    if (cash) series.push({ name: ui.series[cashName], values: cash, color: '#9FC9B4' });
+    return barChart({ title: ui.divChart, columns: (c.columns || []).map(ui.date), series, unit: fr ? '' : c.unit });
   }
   if (c.kind === 'quarters') {
     const rev = c.rows?.Revenue;
     if (!rev) return '';
-    return barChart({ title: 'Revenue by quarter', columns: c.columns || [], series: [{ name: 'Revenue', values: rev, color: '#0F5E63' }], unit: c.unit });
+    return barChart({ title: ui.revChart, columns: (c.columns || []).map(ui.date), series: [{ name: ui.series.Revenue, values: rev, color: '#0F5E63' }], unit: fr ? '' : c.unit });
   }
   return '';
 }
 
 function gaHead(meta) {
-  const params = JSON.stringify({ page_type: meta.type, ticker: meta.ticker || '', lang: 'en' });
+  const params = JSON.stringify({ page_type: meta.type, ticker: meta.ticker || '', lang: meta.lang || 'en' });
   return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());var P=${params};
 gtag('config','${GA_ID}',Object.assign({linker:{domains:['mystockbutler.com','blog.mystockbutler.com','app.mystockbutler.com']}},P));
@@ -212,9 +267,12 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 `;
 }
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article' }) {
+function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
+  const ui = UI[lang];
+  const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
+  const home = lang === 'fr' ? '/fr/stocks/' : '/stocks/';
   return `<!doctype html>
-<html lang="en">
+<html lang="${ui.htmlLang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -222,7 +280,8 @@ function shell({ title, description, canonical, jsonld, meta, body, ogType = 'ar
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${esc(canonical)}">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-<meta property="og:type" content="${ogType}">
+${alt ? `${alt}\n` : ''}<meta property="og:type" content="${ogType}">
+<meta property="og:locale" content="${lang === 'fr' ? 'fr_CA' : 'en_US'}">
 <meta property="og:site_name" content="MyStockButler">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
@@ -236,11 +295,11 @@ ${FONT_LINKS}<link rel="stylesheet" href="${CSS_PATH}">
 ${gaHead(meta)}</head>
 <body>
 <header class="site"><div class="in"><a class="logo" href="${LANDING}/"><i>S</i><span>My<b>Stock</b>Butler</span></a>
-<nav class="hnav"><a class="lk" href="/stocks/">All stocks</a><a class="lk" href="/">Blog</a>
-<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">Get your first report free</a></nav></div></header>
+<nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
+<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="/stocks/">All stocks</a><a href="/">Blog</a><a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">Legal</a><a href="${APP}/login">Log in</a></nav>
-<p>Information only, not investment advice. Scenarios are scenarios, not predictions. Check the cited filings before making an investment decision.</p></div></footer>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a><a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
 `;
@@ -255,35 +314,51 @@ function breadcrumbs(items) {
   };
 }
 
-function chaptersRail(data, cta) {
-  const items = (data.chapters || []).map((c) => `<li>${esc(c)}</li>`).join('');
+function chaptersRail(data, cta, lang = 'en', chapters = null) {
+  const ui = UI[lang];
+  const items = (chapters || data.chapters || []).map((c) => `<li>${esc(c)}</li>`).join('');
   const k = data.counts || {};
-  return `<aside class="rail"><div class="box"><h3>The full ${esc(shortName(data))} memo</h3>
-<div class="meta">${esc(data.memo_date_text || humanDay(data.memo_date))} · ${k.chapters || 8} chapters · ${(k.words || 0).toLocaleString('en-US')} words · ${k.sources || 0} sources</div>
-<ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">Read it free</a><div class="sub">${FREE_LINE}</div></div></aside>`;
+  const day = lang === 'fr' ? humanDay(data.memo_date, 'fr') : data.memo_date_text || humanDay(data.memo_date);
+  return `<aside class="rail"><div class="box"><h3>${esc(ui.rail(shortName(data)))}</h3>
+<div class="meta">${esc(day)} · ${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words} · ${k.sources || 0} ${ui.sources}</div>
+<ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">${ui.readItFree}</a><div class="sub">${ui.free}</div></div></aside>`;
 }
 
-// One company page. ctx.exists(path) tells whether another page of this build exists (links to it only then).
-export function renderCompanyPage(data, type, ctx) {
-  const page0 = data.pages[type];
-  const shared = ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
+// One company page, in English or (S&P/TSX 60) in French. ctx.exists(path) tells whether another page of this build
+// exists (links to it only then). A French page is the English page with every piece the chain translated swapped in.
+export function renderCompanyPage(data, type, ctx, lang = 'en') {
+  const ui = UI[lang];
+  const fr = lang === 'fr';
+  const page0 = fr ? frPage(data, type) : data.pages[type];
+  const shared = !fr && ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
   const page = shared ? { ...page0, title: `${page0.title} (${data.ticker})` } : page0;
+  const teaserData = fr ? data.translations.fr.teaser : data.teaser;
   const slug = data.slug;
-  const path = pagePath(slug, type);
+  const path = pagePath(slug, type, lang);
   const url = `${SITE}${path}`;
   const company = shortName(data);
   const ticker = data.ticker;
-  const cta = page.cta || `${APP}/signup?ticker=${encodeURIComponent(ticker)}&src=seo-${type}`;
+  const cta0 = data.pages[type].cta || `${APP}/signup?ticker=${encodeURIComponent(ticker)}&src=seo-${type}`;
+  const cta = fr ? `${cta0}&lang=fr` : cta0;
   const indexKey = data.index;
+  const has = (t, l) => (l === 'fr' ? !!frPage(data, t) : !!data.pages[t]) && ctx.exists(pagePath(slug, t, l));
+  const other = fr ? 'en' : 'fr';
+  const otherExists = (fr || frPage(data, type)) && ctx.exists(pagePath(slug, type, other));
+  const alternates = otherExists
+    ? [{ hreflang: 'en-CA', url: `${SITE}${pagePath(slug, type, 'en')}` }, { hreflang: 'fr-CA', url: `${SITE}${pagePath(slug, type, 'fr')}` },
+       { hreflang: 'x-default', url: `${SITE}${pagePath(slug, type, 'en')}` }]
+    : [];
+  const rootCrumb = fr ? { name: ui.stocksCrumb, path: '/fr/stocks/' } : { name: ui.stocksCrumb, path: '/stocks/' };
+  const stockPath = has('stock', lang) ? pagePath(slug, 'stock', lang) : path;
   const crumbs = breadcrumbs([
-    { name: 'Stocks', path: '/stocks/' },
-    ...(INDEX_PATHS[indexKey] ? [{ name: INDEX_NAMES[indexKey], path: `/stocks/${INDEX_PATHS[indexKey]}/` }] : []),
-    { name: `${company} (${ticker})`, path: data.pages.stock ? pagePath(slug, 'stock') : path },
-    ...(type === 'stock' || !data.pages.stock ? [] : [{ name: TYPE_NAMES[type], path }]),
+    rootCrumb,
+    ...(!fr && INDEX_PATHS[indexKey] ? [{ name: INDEX_NAMES[indexKey], path: `/stocks/${INDEX_PATHS[indexKey]}/` }] : []),
+    { name: `${company} (${ticker})`, path: stockPath },
+    ...(type === 'stock' || stockPath === path ? [] : [{ name: ui.types[type], path }]),
   ]);
-  const memoDay = data.memo_date_text || humanDay(data.memo_date);
+  const memoDay = fr ? humanDay(data.memo_date, 'fr') : data.memo_date_text || humanDay(data.memo_date);
   const k = data.counts || {};
-  const shownP = page.blocks.reduce((n, b) => n + (b.paragraphs?.length || 0), 0) + (data.teaser ? 1 : 0);
+  const shownP = page.blocks.reduce((n, b) => n + (b.paragraphs?.length || 0), 0) + (teaserData ? 1 : 0);
   const shownT = page.blocks.filter((b) => b.table).length;
   const facts = (page.facts || [])
     .map((f) => {
@@ -295,43 +370,46 @@ export function renderCompanyPage(data, type, ctx) {
   page.blocks.forEach((b, i) => {
     body.push(`<h2>${esc(b.heading)}</h2>`);
     for (const p of b.paragraphs || []) body.push(mdBlock(p.text));
-    if (i === 0) body.push(chartHtml(page, data));
-    if (b.table) body.push(tableHtml(b.table));
+    if (i === 0) body.push(chartHtml(data.pages[type], data, ui));
+    if (b.table) body.push(tableHtml(b.table, ui));
     if (i === 1) {
-      body.push(`<aside class="mid"><h3>This page shows ${shownP} of the memo's ${k.paragraphs || 0} paragraphs and ${shownT} of its ${k.tables || 0} tables.</h3>
-<p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">Read the full ${esc(company)} memo</a><span class="sub">${FREE_LINE}</span></div></aside>`);
+      body.push(`<aside class="mid"><h3>${esc(ui.mid(shownP, k.paragraphs || 0, shownT, k.tables || 0))}</h3>
+<p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div></aside>`);
     }
   });
-  const teaser = data.teaser
-    ? `<section class="teaser" aria-label="From the full memo"><div class="lab">From the full memo · ${esc(data.teaser.chapter)}</div><div class="fade">${mdBlock(data.teaser.text)}</div>
-<div class="lock"><a class="btn big" data-cta="teaser" href="${esc(cta)}">Continue reading, free</a><div>${FREE_LINE}</div></div></section>`
+  const teaser = teaserData
+    ? `<section class="teaser" aria-label="${esc(ui.fromMemo)}"><div class="lab">${esc(ui.fromMemo)}${teaserData.chapter ? ` · ${esc(teaserData.chapter)}` : ''}</div><div class="fade">${mdBlock(teaserData.text)}</div>
+<div class="lock"><a class="btn big" data-cta="teaser" href="${esc(cta)}">${esc(ui.cont)}</a><div>${ui.free}</div></div></section>`
     : '';
   const sources = (data.sources || []).filter((s) => /^https?:\/\//.test(s.url));
   const sourcesHtml = sources.length
-    ? `<section class="sources"><h3>Where these numbers come from</h3><ul>${sources
+    ? `<section class="sources"><h3>${esc(ui.whereFrom)}</h3><ul>${sources
         .map((s) => {
           let label = s.title;
           if (!label || /^https?:/.test(label)) {
             try {
-              label = `Filing on ${new URL(s.url).hostname.replace(/^www\./, '')}`;
+              label = ui.filingOn(new URL(s.url).hostname.replace(/^www\./, ''));
             } catch {
-              label = 'Filing';
+              label = ui.filing;
             }
           }
           return `<li><a rel="nofollow noopener" href="${esc(s.url)}">${esc(label)}</a></li>`;
         })
         .join('')}</ul></section>`
     : '';
-  const siblings = TYPES.filter((t) => t !== type && data.pages[t]).map((t) => `<a href="${pagePath(slug, t)}">${esc(company)} ${esc(TYPE_NAMES[t].toLowerCase())}</a>`);
+  const siblings = TYPES.filter((t) => t !== type && has(t, lang)).map((t) => `<a href="${pagePath(slug, t, lang)}">${esc(fr ? `${ui.types[t]} · ${company}` : `${company} ${ui.types[t].toLowerCase()}`)}</a>`);
+  if (otherExists) siblings.push(`<a hreflang="${other === 'fr' ? 'fr-CA' : 'en-CA'}" href="${pagePath(slug, type, other)}">${esc(ui.other)}</a>`);
   const rivals = (data.rivals || [])
     .map((r) => ctx.bySlug.get(ctx.slugOf(r)))
-    .filter((r) => r && r.slug !== slug && ctx.exists(pagePath(r.slug, 'stock')))
+    .filter((r) => r && r.slug !== slug && (fr ? frPage(r, 'stock') : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
     .slice(0, 4)
-    .map((r) => `<a href="${pagePath(r.slug, 'stock')}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
-  const hubs = [`<a href="/stocks/">All stocks</a>`];
-  if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
-  hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
-  const links = `<section class="more"><h3>More on ${esc(company)}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>Its rivals</h3><div>${rivals.join('')}</div>` : ''}<h3>Browse</h3><div>${hubs.join('')}</div></section>`;
+    .map((r) => `<a href="${pagePath(r.slug, 'stock', lang)}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
+  const hubs = fr ? [`<a href="/fr/stocks/">${esc(ui.allStocks)}</a>`] : [`<a href="/stocks/">All stocks</a>`];
+  if (!fr) {
+    if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
+    hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
+  }
+  const links = `<section class="more"><h3>${esc(ui.moreOn(company))}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>${esc(ui.rivals)}</h3><div>${rivals.join('')}</div>` : ''}<h3>${esc(ui.browse)}</h3><div>${hubs.join('')}</div></section>`;
   const article = {
     '@type': 'Article',
     headline: page.title,
@@ -342,32 +420,35 @@ export function renderCompanyPage(data, type, ctx) {
     publisher: { '@id': ORG['@id'] },
     mainEntityOfPage: url,
     about: { '@type': 'Corporation', name: company, tickerSymbol: ticker },
-    inLanguage: 'en',
+    inLanguage: fr ? 'fr-CA' : 'en',
   };
   const html = shell({
     title: page.title,
     description: page.meta_description,
     canonical: url,
+    lang,
+    alternates,
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
-    meta: { type, ticker, cta },
+    meta: { type, ticker, cta, lang },
     body: `<div class="layout"><article>
 ${crumbs.html}
-<div class="kicker"><span>Research memo</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>Memo of ${esc(memoDay)}</span></div>
+<div class="kicker"><span>${esc(ui.kicker)}</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>${esc(ui.memoOf)} ${esc(memoDay)}</span></div>
 <h1>${esc(page.title)}</h1>
 <p class="lede">${esc(page.opening)}</p>
 ${facts ? `<div class="glance">${facts}</div>` : ''}
-<div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">Read the full ${esc(company)} memo</a><span class="sub">${FREE_LINE}</span></div>
-<div class="proof"><span>Every number traced to ${esc(company)}'s filings</span><span>${k.chapters || 8} chapters · ${(k.words || 0).toLocaleString('en-US')} words</span><span>${k.sources || 0} sources cited</span></div>
+<div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div>
+<div class="proof"><span>${esc(ui.proof(company))}</span><span>${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words}</span><span>${k.sources || 0} ${ui.sources}</span></div>
 ${body.join('\n')}
 ${teaser}
 ${sourcesHtml}
 ${links}
 </article>
-${chaptersRail(data, cta)}</div>
-<div class="bar"><div class="t">The full ${esc(company)} memo<span>Your first report is free</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">Read it</a></div>`,
+${chaptersRail(data, cta, lang, fr ? data.translations.fr.chapters : null)}</div>
+<div class="bar"><div class="t">${esc(ui.rail(company))}<span>${ui.sticky}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
-  const outLinks = [...html.matchAll(/<a [^>]*href="(\/stocks\/[^"]*)"/g)].map((m) => m[1]);
-  return { path, url, type, slug, ticker, title: page.title, description: page.meta_description, lastmod: isoDay(data.memo_date), html, outLinks, page, data };
+  const outLinks = [...html.matchAll(/<a [^>]*href="(\/(?:fr\/)?stocks\/[^"]*)"/g)].map((m) => m[1]);
+  return { path, url, type, lang, slug, ticker, title: page.title, description: page.meta_description, lastmod: isoDay(data.memo_date),
+    alternates, html, outLinks, page, data };
 }
 
 function hubList(companies, { withDates = false } = {}) {
@@ -380,11 +461,11 @@ function hubList(companies, { withDates = false } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en' }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   const searchBox = search
-    ? `<div class="search"><label for="q">Find a company</label><input id="q" type="search" placeholder="Company or ticker, e.g. Costco or TD" autocomplete="off"></div>
+    ? `<div class="search"><label for="q">${lang === 'fr' ? 'Trouver une entreprise' : 'Find a company'}</label><input id="q" type="search" placeholder="${lang === 'fr' ? 'Entreprise ou symbole, p. ex. TD ou BCE' : 'Company or ticker, e.g. Costco or TD'}" autocomplete="off"></div>
 <script>(function(){var q=document.getElementById('q');q.addEventListener('input',function(){var v=q.value.trim().toLowerCase();document.querySelectorAll('li[data-name]').forEach(function(li){li.style.display=!v||li.getAttribute('data-name').indexOf(v)>=0?'':'none';});});})();</script>`
     : '';
   const html = shell({
@@ -392,12 +473,13 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
     description,
     canonical: url,
     ogType: 'website',
+    lang,
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
     meta: { type: 'hub', ticker: '' },
     body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${searchBox}${sections.join('\n')}</div>`,
   });
-  const outLinks = [...html.matchAll(/<a [^>]*href="(\/stocks\/[^"]*)"/g)].map((m) => m[1]);
-  return { path, url, type: 'hub', title, description, html, outLinks, lastmod: '' };
+  const outLinks = [...html.matchAll(/<a [^>]*href="(\/(?:fr\/)?stocks\/[^"]*)"/g)].map((m) => m[1]);
+  return { path, url, type: 'hub', lang, title, description, html, outLinks, lastmod: '' };
 }
 
 // Only the letters that have a hub (a letter with no company has no page to link to).
@@ -416,6 +498,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     .sort((a, b) => a.next_earnings.localeCompare(b.next_earnings));
   const pages = [];
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
+  const french = byName.filter((c) => TYPES.some((t) => frPage(c, t)));
   const all = [
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a></p></section>`,
     nav(),
@@ -436,7 +519,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
       title: `${INDEX_NAMES[g.key]} stocks: forecasts, dividends, earnings`,
       description: `Research memos on ${g.list.length} ${INDEX_NAMES[g.key]} companies: stock forecasts, dividends and next results dates.`,
       intro: `${g.list.length} ${INDEX_NAMES[g.key]} companies with a research memo.`,
-      sections: [nav(), hubList(g.list, { withDates: true })],
+      sections: [nav(), hubList(g.list, { withDates: true }), ...(g.key === 'sptsx60' && french.length ? ['<p><a href="/fr/stocks/" hreflang="fr-CA">Ces pages en français</a></p>'] : [])],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
     }));
   }
@@ -460,6 +543,21 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     sections: [hubList(soon, { withDates: true })],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Reporting this week', path: '/stocks/reporting-this-week/' }],
   }));
+  if (french.length) {
+    pages.push(hubPage({
+      path: '/fr/stocks/',
+      lang: 'fr',
+      title: 'Actions du S&P/TSX 60 : prévisions, dividendes, résultats',
+      description: `Prévisions, dividendes et prochains résultats de ${french.length} sociétés du S&P/TSX 60, tirés de nos mémos de recherche.`,
+      intro: `Chaque société du S&P/TSX 60 pour laquelle nous avons un mémo de recherche : ${french.length} sociétés.`,
+      search: true,
+      sections: [`<ul class="list">${french.map((c) => {
+        const links = TYPES.filter((t) => frPage(c, t)).map((t) => `<a href="${pagePath(c.slug, t, 'fr')}">${esc(UI.fr.types[t])}</a>`).join('');
+        return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => frPage(c, t)), 'fr')}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Mémo du ${esc(humanDay(c.memo_date, 'fr'))}</span><span class="pg">${links}</span></li>`;
+      }).join('')}</ul>`, '<p><a href="/stocks/tsx60/">S&amp;P/TSX 60 in English</a></p>'],
+      crumbItems: [{ name: 'Actions', path: '/fr/stocks/' }],
+    }));
+  }
   const payers = byName.filter((c) => c.pages.dividend);
   pages.push(hubPage({
     path: '/stocks/dividends/',
@@ -477,10 +575,12 @@ export function renderHubs(companies, { today = new Date() } = {}) {
 export function gatePage(built, ctx) {
   const fails = [];
   const { html, page, data, type } = built;
+  const lang = built.lang || 'en';
+  const fr = lang === 'fr';
   const title = (/<title>([\s\S]*?)<\/title>/.exec(html) || [])[1] || '';
   const titleText = textOf(title);
   if (titleText.length > 60) fails.push(`title is ${titleText.length} characters (at most 60)`);
-  if (!titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push(`title lacks "${SEARCH_PHRASE[type]}"`);
+  if (fr ? !TITLE_FR.test(titleText) : !titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push('title lacks the search phrase');
   const desc = (/<meta name="description" content="([^"]*)"/.exec(html) || [])[1] || '';
   const descText = textOf(desc);
   if (!descText || descText.length > 155) fails.push(`meta description is ${descText.length} characters (1 to 155)`);
@@ -491,7 +591,7 @@ export function gatePage(built, ctx) {
   const canonical = (/<link rel="canonical" href="([^"]*)"/.exec(html) || [])[1] || '';
   if (canonical !== built.url) fails.push('canonical is not the page itself');
   if (!/<meta name="robots" content="index,follow/.test(html)) fails.push('robots meta is not index,follow');
-  if (!/<html lang="en">/.test(html)) fails.push('no lang');
+  if (!html.includes(`<html lang="${UI[lang].htmlLang}">`)) fails.push('no lang');
   try {
     const ld = JSON.parse((/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html) || [])[1] || 'null');
     const types = (ld?.['@graph'] || []).map((n) => n['@type']);
@@ -513,13 +613,14 @@ export function gatePage(built, ctx) {
     ...page.blocks.flatMap((b) => [...(b.paragraphs || []).map((p) => p.text), ...(b.table ? [b.table.head.join(' '), ...b.table.rows.map((r) => r.join(' '))] : [])]),
     ...(page.facts || []).map((f) => `${f.label} ${f.value}`),
     data.company, data.short_name || '', data.ticker, data.memo_date_text || '', humanDay(data.next_earnings), String(isoDay(data.memo_date)).slice(0, 4),
+    humanDay(data.next_earnings, 'fr'), humanDay(data.memo_date, 'fr'),
   ].join(' ');
   const flat = memoText.replace(/[,\s]/g, '');
   for (const [name, value] of [['title', page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
     for (const n of String(value || '').match(NUMBER) || []) {
       if (!memoText.includes(n) && !flat.includes(n.replace(/,/g, ''))) fails.push(`${name} prints ${n}, not in the memo text shown`);
     }
-    const bad = BANNED.exec(String(value || ''));
+    const bad = (fr ? BANNED_FR : BANNED).exec(String(value || ''));
     if (bad) fails.push(`${name} uses "${bad[1]}"`);
   }
   // The paywall: at most 6 of the memo's paragraphs (the teaser included) and 3 tables.
@@ -607,50 +708,50 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .bar .t{flex:1;font:600 13px/1.3 Inter,sans-serif}.bar .t span{display:block;font-weight:500;color:var(--muted)}.bar .btn{padding:11px 14px;font-size:14px}}
 `;
 
-// The whole stock site from the per-company files. Returns { pages, held, report }.
+// The whole stock site from the per-company files. Returns { pages, held, report }. A French page (S&P/TSX 60) is
+// published only beside its English page: it is that page with the chain's French pieces.
 export function buildStockSite(companies, { today = new Date() } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
-  const exists0 = new Set(usable.flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => pagePath(c.slug, t))));
+  const variants = (c) => TYPES.flatMap((t) => (c.pages[t] ? [[t, 'en'], ...(frPage(c, t) ? [[t, 'fr']] : [])] : []));
+  const exists0 = new Set(usable.flatMap((c) => variants(c).map(([t, l]) => pagePath(c.slug, t, l))));
   const titleCount = new Map();
   for (const c of usable) for (const t of TYPES) if (c.pages[t]) titleCount.set(c.pages[t].title, (titleCount.get(c.pages[t].title) || 0) + 1);
   const sharedTitles = new Set([...titleCount].filter(([, n]) => n > 1).map(([t]) => t));
-  const ctx = { bySlug, slugOf, sharedTitles, exists: (p) => exists0.has(p) || hubPaths.has(p) };
   const hubPaths = new Set();
-  // First pass: company pages, then the gate; a held page leaves the site and its hubs.
-  let built = usable.flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => renderCompanyPage(c, t, ctx)));
-  const hubs0 = renderHubs(usable, { today });
-  hubs0.forEach((h) => hubPaths.add(h.path));
+  const ctx = { bySlug, slugOf, sharedTitles, exists: (p) => exists0.has(p) || hubPaths.has(p) };
+  renderHubs(usable, { today }).forEach((h) => hubPaths.add(h.path));
   const held = [];
-  const pass = [];
-  for (const b of built) {
-    const fails = gatePage(b, ctx);
-    if (fails.length) held.push({ path: b.path, ticker: b.ticker, type: b.type, fails });
-    else pass.push(b);
-  }
-  // Rebuild with only the passing pages, so no link points at a held page.
-  if (held.length) {
-    const keep = new Set(pass.map((b) => b.path));
-    const trimmed = usable
-      .map((c) => ({ ...c, pages: Object.fromEntries(Object.entries(c.pages).filter(([t]) => keep.has(pagePath(c.slug, t)))) }))
-      .filter((c) => c.pages.stock || Object.keys(c.pages).length);
-    for (const c of trimmed) bySlug.set(c.slug, c);
-    exists0.clear();
-    for (const p of keep) exists0.add(p);
-    built = trimmed.flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => renderCompanyPage(c, t, ctx)));
-    const again = [];
-    for (const b of built) {
+  const gate = (list) => {
+    const ok = [];
+    for (const b of list) {
       const fails = gatePage(b, ctx);
-      if (fails.length) held.push({ path: b.path, ticker: b.ticker, type: b.type, fails });
-      else again.push(b);
+      if (fails.length) held.push({ path: b.path, ticker: b.ticker, type: b.type, lang: b.lang, fails });
+      else ok.push(b);
     }
-    pass.length = 0;
-    pass.push(...again);
+    return ok;
+  };
+  const render = (list) => list.flatMap((c) => variants(c).map(([t, l]) => renderCompanyPage(c, t, ctx, l)));
+  let pass = gate(render(usable));
+  let live = usable;
+  // Rebuild with only the passing pages (a French page only beside its English one), so no link points at a held page.
+  for (let round = 0; round < 3; round += 1) {
+    const keep = new Set(pass.map((b) => b.path));
+    if (keep.size === exists0.size && [...exists0].every((p) => keep.has(p))) break;
+    live = usable
+      .map((c) => {
+        const pages = Object.fromEntries(Object.entries(c.pages).filter(([t]) => keep.has(pagePath(c.slug, t))));
+        const fr = c.translations?.fr;
+        const frPages = fr ? Object.fromEntries(Object.entries(fr.pages || {}).filter(([t]) => pages[t] && keep.has(pagePath(c.slug, t, 'fr')))) : null;
+        return { ...c, pages, ...(fr ? { translations: { ...c.translations, fr: { ...fr, pages: frPages } } } : {}) };
+      })
+      .filter((c) => Object.keys(c.pages).length);
+    for (const c of live) bySlug.set(c.slug, c);
+    exists0.clear();
+    for (const c of live) for (const [t, l] of variants(c)) exists0.add(pagePath(c.slug, t, l));
+    pass = gate(render(live));
   }
-  const live = usable
-    .map((c) => ({ ...c, pages: Object.fromEntries(Object.entries(c.pages).filter(([t]) => pass.some((b) => b.slug === c.slug && b.type === t))) }))
-    .filter((c) => Object.keys(c.pages).length);
   const hubs = renderHubs(live, { today });
   const pagePaths = new Set(pass.map((b) => b.path));
   const clash = hubs.filter((h) => pagePaths.has(h.path)).map((h) => h.path);
@@ -673,6 +774,7 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
   const report = {
     companies: usable.length,
     pages: pass.length,
+    pages_fr: pass.filter((b) => b.lang === 'fr').length,
     hubs: hubs.length,
     held,
     orphans,
