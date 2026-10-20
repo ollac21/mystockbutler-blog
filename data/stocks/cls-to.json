@@ -561,7 +561,7 @@
  "first_memo_date": "2026-10-15T17:15:12Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "a1fb78268d48b28b",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -860,7 +860,56 @@
          "text": "Les prévisions pour le trimestre de septembre tablent sur des produits de 5 250,0 à 5 550,0 millions $ US. Le BPA ajusté devrait s’établir entre 2,88 $ et 3,08 $. La croissance est inégale : Connectivity & Cloud Solutions devrait croître de 85,0 % en 2026, contre 10,0 % pour Advanced Technology Solutions."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ US, sauf le BPA et les pourcentages",
+        "caption": "Guidance in force (US$ millions, except EPS and percentages)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas de la fourchette",
+         "Haut de la fourchette",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Produits",
+          "Year to Dec 2026",
+          "20,500.0",
+          "20,500.0",
+          "Jul 27, 2026"
+         ],
+         [
+          "BPA ajusté (non conforme aux PCGR)",
+          "Year to Dec 2026",
+          "11.30",
+          "11.30",
+          "Jul 27, 2026"
+         ],
+         [
+          "Marge d’exploitation ajustée (non conforme aux PCGR)",
+          "Year to Dec 2026",
+          "8.4%",
+          "8.4%",
+          "Jul 27, 2026"
+         ],
+         [
+          "Flux de trésorerie disponible (non conforme aux PCGR)",
+          "Year to Dec 2026",
+          "600.0",
+          "600.0",
+          "Jul 27, 2026"
+         ],
+         [
+          "Dépenses en immobilisations",
+          "Year to Dec 2026",
+          "1,000.0",
+          "1,000.0",
+          "Jul 27, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Celestica a-t-elle respecté ses promesses passées?",
@@ -960,6 +1009,19 @@
         ],
         "note": "Le tableau présente les résultats de chaque période de trois mois, mais les explications les décrivent à tort comme des données annuelles."
        }
+      },
+      {
+       "heading": "Que devraient surveiller les investisseurs dans les prochains résultats de Celestica?",
+       "paragraphs": [
+        {
+         "n": 202,
+         "section": "essay-7",
+         "chapter": "7. What comes next",
+         "subsection": "7.5 — What to watch",
+         "text": "Celestica publiera ses résultats du trimestre de septembre le 26 octobre 2026, puis tiendra sa conférence téléphonique destinée aux investisseurs le 27 octobre. Les investisseurs devront surveiller les expéditions réelles, un plan de dépenses plus ferme et des estimations du BPA qui tiennent compte du nouveau nombre d’actions."
+        }
+       ],
+       "table": null
       }
      ],
      "facts": [
@@ -1020,8 +1082,8 @@
    "held": [],
    "pieces": {
     "sent": 86,
-    "translated": 84,
-    "left_out": 2
+    "translated": 86,
+    "left_out": 0
    }
   }
  }

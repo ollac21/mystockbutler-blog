@@ -611,7 +611,7 @@
  "first_memo_date": "2026-10-15T04:13:22Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "bfe23370f1b8684b",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -707,6 +707,26 @@
          "chapter": "8. Where the price could go",
          "subsection": "8.4 — Bear and bull",
          "text": "Le scénario baissier suppose que la faible croissance organique persiste, qu’Altera continue de rétrécir et que les acquisitions de plus grande taille génèrent des rendements inférieurs. Les flux de trésorerie continuent de croître, mais les investisseurs paient moins pour chaque dollar de valeur liquidative. Le cours atteint 2 444,17 en octobre 2027 et 2 256,63 en octobre 2029. Sa probabilité est de 30 %, puisque la croissance organique du premier semestre n’a été que de 1 %, même si les revenus récurrents et le nombre stable d’actions limitent le risque d’un effondrement marqué."
+        },
+        {
+         "n": 241,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.4 — Bear and bull",
+         "text": "Le scénario haussier suppose qu’Altera se stabilise, que l’amélioration des produits élargisse la croissance organique et que les cohortes récentes améliorent les rendements de trésorerie. Le cours atteint 4 362,70 en octobre 2027 et 7 599,99 en octobre 2029. Sa probabilité est de 20 %, puisque ce résultat repose sur la faiblesse récente plutôt que sur des données probantes établies."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Combien de trésorerie Constellation Software génère-t-elle réellement?",
+       "paragraphs": [
+        {
+         "n": 142,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.4 — Investments, cash and debt",
+         "text": "Le FCFA2S est la mesure de CSU de la trésorerie disponible pour les actionnaires si elle ne réalise aucune acquisition, aucun investissement et aucun remboursement de dette. En 2025, il s’élevait à 1,683 milliard $ US. Le calcul déduit les intérêts sur la dette, les paiements de location, les dépenses en immobilisations, la réévaluation de l’IRGA de 440 millions $ US et la portion revenant aux actionnaires minoritaires. Il mesure donc la capacité financière, et non nécessairement les sommes disponibles pour les dividendes."
         }
        ],
        "table": null
@@ -1162,8 +1182,8 @@
    "held": [],
    "pieces": {
     "sent": 103,
-    "translated": 101,
-    "left_out": 2
+    "translated": 103,
+    "left_out": 0
    }
   }
  }

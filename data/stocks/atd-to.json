@@ -809,7 +809,7 @@
  "first_memo_date": "2026-10-14T06:17:58Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "169c603402ab2dc7",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1373,7 +1373,35 @@
          "text": "Les cibles opérationnelles sont une croissance de 2 % à 3 % des marchandises dans les magasins comparables, une croissance de 4 % à 5 % des produits tirés des marchandises et des services, une croissance du bénéfice brut tiré du carburant au rythme de l’inflation et des charges normalisées au niveau de l’inflation ou en dessous. La croissance des magasins comparables montre si les établissements existants s’améliorent, plutôt que de laisser les nouveaux magasins faire tout le travail."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ US; levier financier en fois",
+        "caption": "Guidance in force (US$ millions; leverage in x)",
+        "head": [
+         "Row",
+         "la période visée par les prévisions",
+         "bas",
+         "haut",
+         "la date à laquelle elles ont été fournies"
+        ],
+        "rows": [
+         [
+          "Synergies annualisées — intégration de certains actifs de commerce de détail européens de TotalEnergies",
+          "Fiscal 2027",
+          "140.5",
+          "140.5",
+          "Jun 22, 2026"
+         ],
+         [
+          "levier financier pro forma",
+          "Fiscal 2027, at Żabka closing",
+          "3.0x",
+          "3.0x",
+          "Jul 31, 2026"
+         ]
+        ],
+        "note": "Le ratio de levier de 3,0 signifie que l’entreprise s’attend à ce que sa dette, y compris les baux, soit trois fois son bénéfice ajusté avant intérêts, impôts et amortissements après la clôture de l’opération visant Żabka."
+       }
       },
       {
        "heading": "Couche-Tard a-t-elle tenu ses promesses passées?",
@@ -1546,8 +1574,8 @@
    "held": [],
    "pieces": {
     "sent": 140,
-    "translated": 139,
-    "left_out": 1
+    "translated": 140,
+    "left_out": 0
    }
   }
  }

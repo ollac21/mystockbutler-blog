@@ -823,9 +823,12 @@
  "first_memo_date": "2026-10-16T04:07:45Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "f01ce1589d097f99",
-   "teaser": null,
+   "teaser": {
+    "chapter": "1. L'entreprise",
+    "text": "George Weston est une société mère canadienne dont l’activité principale consiste à vendre des produits de première nécessité au quotidien par l’intermédiaire de Loblaw et dont l’activité secondaire consiste à louer des biens immobiliers par l’intermédiaire de Choice Properties. Un dollar provient généralement d’un client, d’une personne qui paie une ordonnance ou d’un locataire, puis sert à payer les marchandises, le personnel, les locaux, le financement et la croissance future."
+   },
    "chapters": [
     "Sommaire",
     "1. L'entreprise",
@@ -1597,8 +1600,8 @@
    "held": [],
    "pieces": {
     "sent": 129,
-    "translated": 127,
-    "left_out": 2
+    "translated": 128,
+    "left_out": 1
    }
   }
  }

@@ -765,7 +765,7 @@
  "first_memo_date": "2026-10-16T16:19:11Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "810c5635daee22c6",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1309,7 +1309,63 @@
          "text": "La fourchette révisée des coûts de production pour 2026 est de 1 420–1 460 $ US par once vendue, tandis que le coût de maintien tout compris s’établit à 1 850–1 900 $ US. Cette deuxième mesure comprend les dépenses nécessaires pour maintenir les mines existantes en activité; moins d’onces vendables doivent donc absorber ces coûts."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ US; montants par unité tels qu’indiqués",
+        "caption": "Guidance in force (US$ millions; per-unit amounts as labelled)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Production attribuable, or (millions d’onces d’or équivalent), 2026",
+          "Year to Dec 2026",
+          "1.84",
+          "1.86",
+          "Sep 23, 2026"
+         ],
+         [
+          "Production attribuable, or (millions d’onces d’or équivalent), 2027",
+          "Year to Dec 2027",
+          "1.84",
+          "1.86",
+          "Sep 23, 2026"
+         ],
+         [
+          "Production attribuable du troisième trimestre, or (onces d’or équivalent)",
+          "Quarter to Sep 2026",
+          "425,000",
+          "425,000",
+          "Sep 23, 2026"
+         ],
+         [
+          "Coût attribuable des ventes de production ( $ US/once d’or équivalent vendue)",
+          "Year to Dec 2026",
+          "1,420",
+          "1,460",
+          "Sep 23, 2026"
+         ],
+         [
+          "Coût de maintien tout compris attribuable ( $ US/once d’or équivalent vendue)",
+          "Year to Dec 2026",
+          "1,850",
+          "1,900",
+          "Sep 23, 2026"
+         ],
+         [
+          "Cible de retour de capital (% des flux de trésorerie disponibles)",
+          "Year to Dec 2026",
+          "50.0%",
+          "50.0%",
+          "Sep 23, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Kinross a-t-elle tenu ses promesses antérieures de retour de liquidités?",
@@ -1438,8 +1494,8 @@
    "held": [],
    "pieces": {
     "sent": 128,
-    "translated": 127,
-    "left_out": 1
+    "translated": 128,
+    "left_out": 0
    }
   }
  }

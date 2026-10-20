@@ -725,7 +725,7 @@
  "first_memo_date": "2026-10-11T13:37:16Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "be1d88cc34cec80b",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -840,7 +840,15 @@
       },
       {
        "heading": "Combien un investisseur paie-t-il aujourd’hui pour Brookfield?",
-       "paragraphs": [],
+       "paragraphs": [
+        {
+         "n": 174,
+         "section": "essay-6",
+         "chapter": "6. Valuation and the stock",
+         "subsection": "6.1 — What an investor pays today",
+         "text": "Le ratio cours-bénéfice habituel, ou ratio cours-bénéfice, doit être interprété avec prudence dans ce cas-ci. Le bénéfice comptable peut diminuer lorsque la valeur estimée d’un immeuble de bureaux baisse, même si les locataires continuent de payer leur loyer. Il peut aussi augmenter lorsque Brookfield vend un placement en réalisant un gain qui ne se reproduira pas. Les bénéfices distribuables, ou DE, visent à présenter des bénéfices plus étroitement liés aux liquidités utilisables. Les DE avant réalisations s’élevaient à 2,39 $ US par action pour les douze mois clos en juin 2026, tandis que les intérêts reportés réalisés ont ajouté 520 millions $ US. Un faible ratio cours-bénéfice est moins convaincant lorsque son dénominateur comprend des profits de vente inhabituels."
+        }
+       ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA; par action en $ CA",
@@ -1144,7 +1152,56 @@
          "text": "Le 17 septembre 2026, Brookfield a présenté un plan indicatif sur cinq ans qui prévoit une valeur du plan de 140 $ par action en 2031. La valeur du plan est l’estimation de la direction quant à la valeur que pourraient avoir ses activités et ses placements si ses hypothèses se réalisent. C’est un peu comme évaluer une maison après des rénovations prévues : le résultat dépend des bénéfices futurs, des prix de vente et du montant que les acheteurs seront prêts à payer. Il ne s’agit ni de liquidités, ni de la valeur comptable publiée, ni d’une promesse que le marché paiera ce prix."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Cibles et indications en vigueur",
+        "unit": "",
+        "caption": "Targets and guidance in force",
+        "head": [
+         "Row",
+         "Période visée",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Produire des rendements composés de plus de 15 % pour les actionnaires",
+          "Long term",
+          "15.0%",
+          "",
+          "Sep 17, 2026"
+         ],
+         [
+          "Bénéfices distribuables avant réalisations et affectation du capital, par action ($ US)",
+          "2031",
+          "4.90",
+          "4.90",
+          "Sep 17, 2026"
+         ],
+         [
+          "Bénéfices distribuables avant réalisations, TCAC",
+          "2026–2031",
+          "17.0%",
+          "17.0%",
+          "Sep 17, 2026"
+         ],
+         [
+          "Valeur du plan par action ($ US)",
+          "2031",
+          "140.00",
+          "140.00",
+          "Sep 17, 2026"
+         ],
+         [
+          "Valeur du plan par action, TCAC",
+          "2026–2031",
+          "16.0%",
+          "16.0%",
+          "Sep 17, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Brookfield a-t-elle tenu ses promesses passées?",
@@ -1317,8 +1374,8 @@
    "held": [],
    "pieces": {
     "sent": 110,
-    "translated": 105,
-    "left_out": 5
+    "translated": 109,
+    "left_out": 1
    }
   }
  }

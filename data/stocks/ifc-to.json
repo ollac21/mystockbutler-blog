@@ -800,7 +800,7 @@
  "first_memo_date": "2026-10-10T02:15:54Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "58ca361c98ffaf9d",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1376,6 +1376,13 @@
        "heading": "Quelle est la tendance d’Intact au cours des huit derniers trimestres?",
        "paragraphs": [
         {
+         "n": 7,
+         "section": "executive-summary",
+         "chapter": "Executive summary",
+         "subsection": "The numbers",
+         "text": "Les chiffres montrent des revenus d’assurance globalement stables, tandis que le résultat de souscription et le ratio combiné indiquent si le moteur principal s’améliore. Le ratio combiné s’est établi à 88,2 % en 2025, contre 94,2 % en 2023. Le BAII par action dilué est remonté de 6,99 $ CA en 2023 à 18,35 $ CA en 2025, tandis que les revenus de placement se sont élevés à 1 632 millions $ CA."
+        },
+        {
          "n": 140,
          "section": "essay-5",
          "chapter": "5. The numbers",
@@ -1383,7 +1390,69 @@
          "text": "Les résultats des huit derniers trimestres montrent qu’Intact peut passer rapidement d’une excellente performance de souscription à une performance déficitaire. L’estimation subséquente des sinistres liés aux catastrophes renforce l’idée que le T2 n’était pas simplement une interruption météorologique historique. Le prochain test consistera à déterminer si les réclamations et la rentabilité au Royaume-Uni se redressent sans dépendre uniquement d’une météo plus clémente."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Les huit derniers trimestres",
+        "unit": "Millions $ CA",
+        "caption": "The last eight quarters (C$ millions)",
+        "head": [
+         "Row",
+         "Trimestre clos en juin 2026",
+         "Trimestre clos en mars 2026",
+         "Trimestre clos en déc. 2025",
+         "Trimestre clos en sept. 2025",
+         "Trimestre clos en juin 2025",
+         "Trimestre clos en mars 2025",
+         "Trimestre clos en déc. 2024",
+         "Trimestre clos en sept. 2024"
+        ],
+        "rows": [
+         [
+          "Ratio combiné",
+          "94.9%",
+          "91.3%",
+          "85.9%",
+          "89.8%",
+          "86.1%",
+          "91.3%",
+          "86.5%",
+          "103.9%"
+         ],
+         [
+          "Bénéfice de base (mesure de la société)",
+          "561",
+          "770",
+          "979",
+          "797",
+          "935",
+          "717",
+          "881",
+          "182"
+         ],
+         [
+          "Résultat net",
+          "720",
+          "752",
+          "961",
+          "861",
+          "867",
+          "676",
+          "667",
+          "207"
+         ],
+         [
+          "BAII par action, dilué",
+          "3.90",
+          "4.12",
+          "5.24",
+          "4.73",
+          "4.70",
+          "3.69",
+          "3.58",
+          "1.06"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Que dois-je surveiller dans les prochains résultats d’Intact?",
@@ -1450,6 +1519,10 @@
       {
        "label": "Prochains résultats",
        "value": "November 3, 2026"
+      },
+      {
+       "label": "BAII par action, dilué, trimestre clos en juin 2026",
+       "value": "3.90"
       }
      ],
      "chart": {
@@ -1486,8 +1559,8 @@
    "held": [],
    "pieces": {
     "sent": 140,
-    "translated": 137,
-    "left_out": 3
+    "translated": 140,
+    "left_out": 0
    }
   }
  }

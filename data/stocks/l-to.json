@@ -803,7 +803,7 @@
  "first_memo_date": "2026-10-14T06:26:14Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "cdb72741bc78458d",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1036,6 +1036,10 @@
       {
        "label": "Cours de l’action aujourd’hui, $ CA",
        "value": "63.93"
+      },
+      {
+       "label": "Scénario pondéré, octobre 2029",
+       "value": "80.59 (+29%)"
       },
       {
        "label": "Rendement du flux de trésorerie disponible réel",
@@ -1416,6 +1420,13 @@
          "chapter": "5. The numbers",
          "subsection": "5.5 — The latest quarter",
          "text": "Le chiffre d’affaires a augmenté et la marge brute s’est légèrement améliorée, mais le bénéfice d’exploitation a progressé plus lentement que les ventes. Cela signifie que Loblaw a vendu davantage sans transformer chaque dollar de ventes additionnel en gain d’exploitation plus important. Les frais de vente, généraux et administratifs sont demeurés stables en proportion des ventes, tandis que les nouveaux magasins et le réseau de distribution automatisé ont ajouté des coûts."
+        },
+        {
+         "n": 160,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.5 — The latest quarter",
+         "text": "Le BPA a augmenté plus rapidement que le bénéfice net parce que les rachats ont réduit le nombre d’actions en circulation. Une reprise d’impôts différés et des coûts liés au départ de PC Financial ont également influé sur la comparaison. Ces éléments ne doivent pas être considérés comme des signes d’un bénéfice d’exploitation courant dans l’alimentation."
         }
        ],
        "table": {
@@ -1554,8 +1565,8 @@
    "held": [],
    "pieces": {
     "sent": 131,
-    "translated": 129,
-    "left_out": 2
+    "translated": 131,
+    "left_out": 0
    }
   }
  }

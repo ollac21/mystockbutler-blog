@@ -783,7 +783,7 @@
  "first_memo_date": "2026-10-15T04:27:45Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "7f03072ea72d9004",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -915,7 +915,15 @@
       },
       {
        "heading": "Combien de liquidités Franco-Nevada génère-t-elle réellement ?",
-       "paragraphs": [],
+       "paragraphs": [
+        {
+         "n": 136,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.3 — Cash",
+         "text": "Les flux de trésorerie disponibles sont devenus négatifs en 2025 parce que les acquisitions ont coûté 2 191,6 millions $, soit presque la totalité des dépenses en immobilisations de 2 196,7 millions $. La transaction de Côté, d’une valeur de 1,05 milliard $ US, illustre la distinction : Franco-Nevada a acheté des revenus futurs de redevances auprès d’IAMGOLD et de Sumitomo liés à leur mine, plutôt que les machines nécessaires au maintien des activités existantes. Des flux de trésorerie disponibles négatifs peuvent donc signaler une expansion, et non la faiblesse des contrats."
+        }
+       ],
        "table": {
         "title": "Suivre l’argent : les flux de trésorerie disponibles réels",
         "unit": "Millions $ US",
@@ -1297,7 +1305,63 @@
          "text": "D’ici 2030, la direction prévoit de 555 000 à 615 000 GEO sans redémarrage complet de Cobre Panamá. Cette croissance doit compenser les réductions contractuelles : la quote-part de Candelaria devrait passer de 68 % à 40 %, tandis qu’Antapaccay passera à 30 % de la production d’or et d’argent. La prochaine question est de savoir si les analystes pensent que ce plan produira les bénéfices promis."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ US",
+        "caption": "Guidance in force (US$ millions)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Onces d’or vendues (oz)",
+          "Year to Dec 2026",
+          "360,000",
+          "400,000",
+          "Aug 11, 2026"
+         ],
+         [
+          "Onces d’argent vendues (oz)",
+          "Year to Dec 2026",
+          "4,700,000",
+          "5,500,000",
+          "Aug 11, 2026"
+         ],
+         [
+          "Produits diversifiés (millions)",
+          "Year to Dec 2026",
+          "245.0",
+          "285.0",
+          "Aug 11, 2026"
+         ],
+         [
+          "GEO vendus (oz)",
+          "Year to Dec 2026",
+          "510,000",
+          "570,000",
+          "Aug 11, 2026"
+         ],
+         [
+          "Candelaria, GEO vendus (oz)",
+          "Year to Dec 2026",
+          "57,500",
+          "67,500",
+          "Mar 10, 2026"
+         ],
+         [
+          "Antamina, onces d’argent (millions)",
+          "Year to Dec 2026",
+          "3.5",
+          "3.7",
+          "Mar 10, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Franco-Nevada a-t-elle tenu sa promesse de production?",
@@ -1459,8 +1523,8 @@
    "held": [],
    "pieces": {
     "sent": 127,
-    "translated": 125,
-    "left_out": 2
+    "translated": 127,
+    "left_out": 0
    }
   }
  }

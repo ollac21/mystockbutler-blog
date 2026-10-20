@@ -855,7 +855,7 @@
  "first_memo_date": "2026-10-11T21:37:44Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "6cc1b2c0c9890eb0",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1427,7 +1427,63 @@
          "text": "La direction prévoit une croissance de 4,0 % à 4,5 % des ventes comparables des magasins canadiens et l’ouverture nette de 65 à 75 nouveaux magasins au Canada pour l’exercice se terminant en janvier 2027. La marge brute au Canada devrait s’établir entre 45,0 % et 45,5 %, tandis que les frais de vente, généraux et administratifs devraient représenter de 14,1 % à 14,6 % des ventes. En Australie, 60 à 80 magasins doivent être rénovés, ce qui entraînera des dépenses supplémentaires de 35 à 45 millions $ AU."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ CA, sauf pour les lignes expressément indiquées en $ AU; nombre de magasins en unités",
+        "caption": "Guidance in force (C$ millions except rows expressly marked A$; store counts in units)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Ouvertures nettes de nouveaux magasins — secteur canadien (unités)",
+          "Year to Jan 2027",
+          "65",
+          "75",
+          "Sep 16, 2026"
+         ],
+         [
+          "Ventes comparables des magasins — secteur canadien (%)",
+          "Year to Jan 2027",
+          "4.0%",
+          "4.5%",
+          "Sep 16, 2026"
+         ],
+         [
+          "Marge brute — secteur canadien (%)",
+          "Year to Jan 2027",
+          "45.0%",
+          "45.5%",
+          "Mar 24, 2026"
+         ],
+         [
+          "Frais de vente, généraux et administratifs — secteur canadien (%)",
+          "Year to Jan 2027",
+          "14.1%",
+          "14.6%",
+          "Mar 24, 2026"
+         ],
+         [
+          "Rénovation de magasins — secteur australien (unités)",
+          "Year to Jan 2027",
+          "60",
+          "80",
+          "Mar 24, 2026"
+         ],
+         [
+          "Dépenses supplémentaires — secteur australien (millions $ AU)",
+          "Year to Jan 2027",
+          "35.0",
+          "45.0",
+          "Mar 24, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Dollarama a-t-elle tenu ses promesses passées?",
@@ -1611,8 +1667,8 @@
    "held": [],
    "pieces": {
     "sent": 140,
-    "translated": 139,
-    "left_out": 1
+    "translated": 140,
+    "left_out": 0
    }
   }
  }

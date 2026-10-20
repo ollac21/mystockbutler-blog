@@ -850,7 +850,7 @@
  "first_memo_date": "2026-10-12T18:09:12Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "daa260ef1790e130",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -997,7 +997,70 @@
          "text": "La propre mesure des flux de trésorerie disponibles de l’entreprise était plus élevée parce qu’elle autorise certains ajouts, notamment le produit de la vente d’actifs et certains ajustements de dépenses. La déduction de la rémunération en actions donne les « flux de trésorerie disponibles réels », qui traitent le transfert de valeur par l’émission d’actions comme un coût économique. Cette mesure représentait 36,4 % du BAIIA ajusté en 2025."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Suivre l’argent : flux de trésorerie disponibles réels",
+        "unit": "Milliers $ US",
+        "caption": "Follow the money: real free cash flow (US$ thousands)",
+        "head": [
+         "Row",
+         "2025",
+         "2024",
+         "2023",
+         "2022",
+         "2021"
+        ],
+        "rows": [
+         [
+          "Flux de trésorerie liés aux activités d’exploitation",
+          "2,414,069",
+          "2,228,927",
+          "2,126,817",
+          "2,022,492",
+          "1,698,229"
+         ],
+         [
+          "− Dépenses en immobilisations",
+          "1,194,366",
+          "1,055,988",
+          "934,000",
+          "912,677",
+          "744,315"
+         ],
+         [
+          "− Paiements de loyers",
+          "4,189",
+          "3,356",
+          "2,817",
+          "2,427",
+          "3,133"
+         ],
+         [
+          "**= Flux de trésorerie disponibles**",
+          "1,215,514",
+          "1,169,583",
+          "1,190,000",
+          "1,107,388",
+          "950,781"
+         ],
+         [
+          "− Rémunération en actions",
+          "79,448",
+          "77,885",
+          "70,436",
+          "63,485",
+          "58,221"
+         ],
+         [
+          "**= Flux de trésorerie disponibles réels**",
+          "1,136,066",
+          "1,091,698",
+          "1,119,564",
+          "1,043,903",
+          "892,560"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Combien un investisseur paie-t-il aujourd’hui pour Waste Connections?",
@@ -1337,8 +1400,8 @@
    ],
    "pieces": {
     "sent": 125,
-    "translated": 120,
-    "left_out": 2
+    "translated": 121,
+    "left_out": 1
    }
   }
  }

@@ -872,7 +872,7 @@
  "first_memo_date": "2026-10-10T02:20:25Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "d8ea2445545c4d30",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1439,7 +1439,63 @@
          "text": "Pour 2026, Enbridge prévoit un BAIIA ajusté de 20 200 à 20 800 millions $ CA. Le BAIIA correspond au bénéfice d'exploitation avant les intérêts, les impôts et l'amortissement; il montre donc ce que les actifs rapportent avant le financement."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Millions $ CA",
+        "caption": "Guidance in force (C$ millions)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas",
+         "Haut",
+         "Date annoncée"
+        ],
+        "rows": [
+         [
+          "BAIIA ajusté",
+          "Year to Dec 2026",
+          "20,200",
+          "20,800",
+          "Jul 31, 2026"
+         ],
+         [
+          "Prévisions de flux de trésorerie disponibles par action",
+          "Year to Dec 2026",
+          "5.70",
+          "6.10",
+          "Jul 31, 2026"
+         ],
+         [
+          "Dépenses en capital de maintien",
+          "Year to Dec 2026",
+          "1,200",
+          "1,200",
+          "Dec 3, 2025"
+         ],
+         [
+          "Dépenses en capital de croissance",
+          "Year to Dec 2026",
+          "10,000",
+          "10,000",
+          "Dec 3, 2025"
+         ],
+         [
+          "Émissions de dette",
+          "Year to Dec 2026",
+          "10,000",
+          "10,000",
+          "Dec 3, 2025"
+         ],
+         [
+          "Dette/BAIIA",
+          "Year to Dec 2026",
+          "4.5x",
+          "5.0x",
+          "Dec 3, 2025"
+         ]
+        ],
+        "note": "Les pourcentages de croissance sont des cibles annuelles moyennes pour les périodes indiquées, et non des promesses de croissance pour une seule année."
+       }
       },
       {
        "heading": "Enbridge a-t-elle tenu ses promesses passées?",
@@ -1643,8 +1699,8 @@
    "held": [],
    "pieces": {
     "sent": 144,
-    "translated": 143,
-    "left_out": 1
+    "translated": 144,
+    "left_out": 0
    }
   }
  }

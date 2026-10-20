@@ -745,7 +745,7 @@
  "first_memo_date": "2026-10-15T17:12:49Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "da7cea150d08cfad",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1017,7 +1017,15 @@
      "blocks": [
       {
        "heading": "Combien Power verse-t-elle par action?",
-       "paragraphs": [],
+       "paragraphs": [
+        {
+         "n": 280,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Le dividende de base passe à 2,65 $ CA en octobre 2027, puis à 2,85 $ CA en octobre 2028. Il atteint 3,05 $ CA en octobre 2029. Cette progression se poursuit, de 1,84 $ CA en 2021 à 2,45 $ CA en 2025, tout en tenant compte du fait que les flux de trésorerie de la société mère n’ont dépassé que modestement les dividendes versés aux actionnaires participants en 2025. Le scénario baissier maintient le BPA à 2,52 $ CA après une faible hausse initiale. Le scénario haussier atteint 3,55 $ CA, ce qui exige de plus fortes distributions des filiales et une meilleure conversion des flux de trésorerie."
+        }
+       ],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action participante",
@@ -1159,6 +1167,13 @@
          "chapter": "Executive summary",
          "subsection": "The verdict",
          "text": "Le scénario pondéré est à peu près stable après les dividendes jusqu’en octobre 2029, puisque les progrès d’exploitation et la croissance de la valeur par action doivent compenser un escompte persistant de la société de portefeuille. Great-West vise une croissance du BPA de base de 8,0 %–10,0 % à moyen terme, un rendement des capitaux propres de base d’au moins 19,0 %, une génération de capital d’au moins 80,0 % et un ratio de distribution des dividendes ordinaires de 45,0 %–55,0 %. IGM vise une croissance du BPA ajusté de 9,0 % sur la période 2023–2028. Power a autorisé le rachat d’au plus 20 millions d’actions à droit de vote subalterne jusqu’au 28 février 2027, mais ce plafond ne constitue pas un engagement."
+        },
+        {
+         "n": 290,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.5 — What would change the view",
+         "text": "De 2026 à 2029, la rétention des participants et des actifs de Milliman, puis les économies d’intégration, mettront à l’épreuve les hypothèses de bénéfices. Les liquidités de la société mère montreront également si les dividendes et les rachats mesurés peuvent se poursuivre; des liquidités limitées affaibliraient les prévisions relatives au nombre d’actions et au BPA."
         }
        ],
        "table": null
@@ -1218,9 +1233,65 @@
          "chapter": "7. What comes next",
          "subsection": "7.1 — What management has said",
          "text": "Great-West, la filiale d’assurance de Power, fournit la référence opérationnelle la plus claire. Elle vise une croissance du bénéfice de base par action de 8,0 % à 10,0 % et un rendement des capitaux propres de base d’au moins 19,0 %. Le terme « de base » désigne une mesure ajustée qui exclut certains éléments, tandis que le rendement des capitaux propres compare le bénéfice aux capitaux propres comptables des actionnaires."
+        },
+        {
+         "n": 214,
+         "section": "essay-7",
+         "chapter": "7. What comes next",
+         "subsection": "7.1 — What management has said",
+         "text": "Great-West vise également une génération de capital d’au moins 80,0 % et un ratio de distribution des dividendes ordinaires correspondant à 45,0 %–55,0 % du bénéfice de base. La génération de capital mesure la capacité réglementaire créée après que l’entreprise d’assurance a absorbé le capital dont elle a besoin; il ne s’agit pas de liquidités immédiatement disponibles pour Power. IGM, la filiale de gestion de placements de Power, vise une croissance annualisée composée de 9,0 % du bénéfice ajusté par action sur la période 2023–2028."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Cibles et prévisions en vigueur",
+        "unit": "",
+        "caption": "Targets and guidance in force",
+        "head": [
+         "Row",
+         "Période visée",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Great West, croissance du BPA de base",
+          "Medium term",
+          "8.0%",
+          "10.0%",
+          "Sep 10, 2026"
+         ],
+         [
+          "Great West, RCP de base",
+          "Medium term",
+          "19.0%",
+          "",
+          "Sep 10, 2026"
+         ],
+         [
+          "Great West, ratio de distribution des dividendes de base",
+          "Medium term",
+          "45.0%",
+          "55.0%",
+          "Sep 10, 2026"
+         ],
+         [
+          "Great West, génération de capital de base",
+          "Medium term",
+          "80.0%",
+          "",
+          "Sep 10, 2026"
+         ],
+         [
+          "IGM, TCAC du BPA ajusté sur 5 ans",
+          "2023–2028",
+          "9.0%",
+          "",
+          "Sep 10, 2026"
+         ]
+        ],
+        "note": ""
+       }
       },
       {
        "heading": "Power a-t-elle tenu ses promesses passées?",
@@ -1349,8 +1420,8 @@
    "held": [],
    "pieces": {
     "sent": 126,
-    "translated": 119,
-    "left_out": 7
+    "translated": 125,
+    "left_out": 1
    }
   }
  }

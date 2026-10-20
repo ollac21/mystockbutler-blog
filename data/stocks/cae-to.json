@@ -571,7 +571,7 @@
  "first_memo_date": "2026-10-19T00:44:14Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "2a9ede6b8bb0456e",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -657,6 +657,19 @@
         ],
         "note": ""
        }
+      },
+      {
+       "heading": "Que doit-il aller bien ou mal pour CAE?",
+       "paragraphs": [
+        {
+         "n": 240,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Le scénario baissier prévoit 650 millions $ CA en 2027 et 620 millions $ CA en 2028, avant une remontée à 650 millions $ CA en 2029. Il suppose des pertes de clients, des retards dans la défense et des économies réalisées tardivement. Le scénario haussier prévoit 800 millions $ CA en 2027, 880 millions $ CA en 2028 et 960 millions $ CA en 2029, en raison d’un taux d’utilisation plus élevé, de contrats attribués et financés et d’économies s’approchant de la cible de la direction pour l’exercice 2030."
+        }
+       ],
+       "table": null
       },
       {
        "heading": "Combien de liquidités CAE génère-t-elle réellement?",
@@ -1086,8 +1099,8 @@
    "held": [],
    "pieces": {
     "sent": 93,
-    "translated": 92,
-    "left_out": 1
+    "translated": 93,
+    "left_out": 0
    }
   }
  }

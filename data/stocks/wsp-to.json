@@ -821,7 +821,7 @@
  "first_memo_date": "2026-10-18T05:50:47Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "43c1a0ad31e5b290",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1431,7 +1431,15 @@
       },
       {
        "heading": "Comment le bénéfice récent de WSP a-t-il évolué?",
-       "paragraphs": [],
+       "paragraphs": [
+        {
+         "n": 155,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.5 — The latest quarter",
+         "text": "Les revenus et le bénéfice d’exploitation ont augmenté au T2 2026, mais le bénéfice net attribuable aux actionnaires a diminué par rapport à l’année précédente. Le bénéfice d’exploitation mesure les activités de consultation avant le financement et plusieurs autres réclamations. Le bénéfice net montre ce qui reste après les charges de financement, les impôts, les variations des dérivés et les coûts liés aux acquisitions."
+        }
+       ],
        "table": {
         "title": "Les huit derniers trimestres",
         "unit": "Millions $ CA",
@@ -1590,8 +1598,8 @@
    "held": [],
    "pieces": {
     "sent": 125,
-    "translated": 124,
-    "left_out": 1
+    "translated": 125,
+    "left_out": 0
    }
   }
  }

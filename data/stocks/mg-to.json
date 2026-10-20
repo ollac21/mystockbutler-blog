@@ -822,7 +822,7 @@
  "first_memo_date": "2026-10-17T15:32:48Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "0118be67797cedf6",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1391,7 +1391,49 @@
          "text": "Pour 2026, la direction prévoit des ventes de 41,3 à 42,5 milliards $ US. Elle vise une marge EBIT ajustée de 6,3 % à 6,6 %. Ses prévisions de BPA ajusté s’établissent à 6,70 à 7,30 $ US. Ses prévisions de flux de trésorerie disponibles s’établissent à 1,75 à 1,85 milliard $ US. La question est de savoir si la productivité et l’efficacité permettront de maintenir les marges une fois que les recouvrements liés aux tarifs douaniers et aux programmes de véhicules électriques se seront estompés."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Prévisions en vigueur",
+        "unit": "Milliards $ US, sauf indication contraire",
+        "caption": "Guidance in force (US$ billions, except where indicated)",
+        "head": [
+         "Row",
+         "Période visée par les prévisions",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Ventes totales",
+          "Year to Dec 2026",
+          "41.3",
+          "42.5",
+          "Jul 31, 2026"
+         ],
+         [
+          "Marge EBIT ajustée",
+          "Year to Dec 2026",
+          "6.3%",
+          "6.6%",
+          "Jul 31, 2026"
+         ],
+         [
+          "BPA ajusté ($ US par action)",
+          "Year to Dec 2026",
+          "6.70",
+          "7.30",
+          "Jul 31, 2026"
+         ],
+         [
+          "Flux de trésorerie disponibles",
+          "Year to Dec 2026",
+          "1.75",
+          "1.85",
+          "Jul 31, 2026"
+         ]
+        ],
+        "note": "Les pourcentages de marge montrent quelle part de chaque dollar de ventes l’entreprise s’attend à conserver comme bénéfice d’exploitation, plutôt que le total des ventes qu’elle prévoit."
+       }
       },
       {
        "heading": "Quels ont été les huit derniers trimestres de Magna?",
@@ -1562,8 +1604,8 @@
    "held": [],
    "pieces": {
     "sent": 128,
-    "translated": 127,
-    "left_out": 1
+    "translated": 128,
+    "left_out": 0
    }
   }
  }

@@ -753,7 +753,7 @@
  "first_memo_date": "2026-10-18T05:52:53Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "3913a478ed95652d",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -839,6 +839,19 @@
         ],
         "note": "La ligne pondérée représente la valeur moyenne après avoir accordé plus de poids aux scénarios les plus susceptibles de se réaliser."
        }
+      },
+      {
+       "heading": "Qu’est-ce qui doit bien ou mal tourner pour CGI ?",
+       "paragraphs": [
+        {
+         "n": 231,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Cela produit la ligne du bénéfice de base dans le tableau. Le scénario baissier suppose des mises en chantier plus lentes, une utilisation et des marges plus faibles de 10,8 %, 10,6 % et 10,7 %. Le scénario haussier suppose que les contrats fédéraux, les projets reportés et les gains de productivité soutenus par l’IA font passer les marges de 12,0 % à 12,4 %. Le carnet de commandes de CGI, de 31,79 milliards $ CA, et son ratio prises de commandes-facturation de 108,1 % sur les douze derniers mois soutiennent une croissance graduelle, mais le carnet comprend des estimations et des travaux acquis."
+        }
+       ],
+       "table": null
       },
       {
        "heading": "Combien de liquidités CGI génère-t-elle réellement ?",
@@ -1454,8 +1467,8 @@
    "held": [],
    "pieces": {
     "sent": 129,
-    "translated": 128,
-    "left_out": 1
+    "translated": 129,
+    "left_out": 0
    }
   }
  }

@@ -841,9 +841,12 @@
  "first_memo_date": "2026-10-13T19:49:43Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "2926aac709f5d1fc",
-   "teaser": null,
+   "teaser": {
+    "chapter": "1. L'entreprise",
+    "text": "Wheaton Precious Metals est un financier minier qui transforme des droits sur des métaux futurs en ventes. Pour comprendre comment circule un dollar chez elle, il faut suivre le contrat du propriétaire de la mine jusqu’à l’acheteur de métal, puis distinguer la marge d’exploitation de l’investissement qui l’a rendue possible."
+   },
    "chapters": [
     "Sommaire",
     "1. L'entreprise",
@@ -930,6 +933,74 @@
         }
        ],
        "table": null
+      },
+      {
+       "heading": "Combien de trésorerie Wheaton génère-t-elle réellement?",
+       "paragraphs": [],
+       "table": {
+        "title": "Suivez l’argent : flux de trésorerie disponibles réels",
+        "unit": "Milliers $ US",
+        "caption": "Follow the money: real free cash flow (US$ thousands)",
+        "head": [
+         "Row",
+         "2025",
+         "2024",
+         "2023",
+         "2022",
+         "2021"
+        ],
+        "rows": [
+         [
+          "Trésorerie provenant des activités d’exploitation",
+          "1,904,981",
+          "1,027,581",
+          "750,809",
+          "743,424",
+          "845,145"
+         ],
+         [
+          "− Dépenses en immobilisations",
+          "1,341,369",
+          "655,215",
+          "671,361",
+          "153,429",
+          "525,962"
+         ],
+         [
+          "− Paiements de loyers",
+          "505",
+          "594",
+          "691",
+          "800",
+          "780"
+         ],
+         [
+          "**= Flux de trésorerie disponibles**",
+          "563,107",
+          "371,772",
+          "78,757",
+          "589,195",
+          "318,403"
+         ],
+         [
+          "− Rémunération en actions",
+          "6,475",
+          "6,703",
+          "6,438",
+          "5,846",
+          "5,262"
+         ],
+         [
+          "**= Flux de trésorerie disponibles réels**",
+          "556,632",
+          "365,069",
+          "72,319",
+          "583,349",
+          "313,141"
+         ]
+        ],
+        "note": "Les dépenses en immobilisations présentées ici ne servent pas principalement à acheter de l’équipement; elles servent à acquérir des droits de flux miniers et de redevances, de sorte que les flux de trésorerie disponibles sont adaptés aux activités de cette entreprise."
+       }
       },
       {
        "heading": "Combien un investisseur paie-t-il aujourd’hui pour Wheaton?",
@@ -1546,8 +1617,8 @@
    "held": [],
    "pieces": {
     "sent": 131,
-    "translated": 126,
-    "left_out": 5
+    "translated": 128,
+    "left_out": 3
    }
   }
  }

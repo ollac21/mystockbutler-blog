@@ -786,7 +786,7 @@
  "first_memo_date": "2026-10-15T17:19:39Z",
  "translations": {
   "fr": {
-   "version": "fr-2",
+   "version": "fr-3",
    "source": "6b544c9ff893fdcc",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -1311,7 +1311,63 @@
          "text": "À plus court terme, le plan prévoit un important bassin de bénéfices d’exploitation annuels au cours des quatre prochaines années. Fairfax s’attend à ce que ce bassin provienne des intérêts et des dividendes, de la souscription d’assurance ainsi que des entreprises associées et des sociétés non liées à l’assurance consolidées. Une entreprise associée est une entreprise sur laquelle Fairfax exerce une influence sans en avoir le contrôle. Fairfax peut comptabiliser sa part du bénéfice d’une entreprise associée même lorsque celle-ci conserve les liquidités."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Cibles et prévisions en vigueur",
+        "unit": "Millions $ US, sauf les ratios et les prévisions par action",
+        "caption": "Targets and guidance in force (US$ millions, except ratios and per-share outlook)",
+        "head": [
+         "Row",
+         "Période visée",
+         "Bas",
+         "Haut",
+         "Date de publication"
+        ],
+        "rows": [
+         [
+          "Faire croître chaque année notre valeur comptable par action selon la valeur de marché à long terme (%)",
+          "Long term",
+          "15.0%",
+          "15.0%",
+          "Apr 16, 2026"
+         ],
+         [
+          "Produits d’intérêts et de dividendes",
+          "Next four years",
+          "2,500.0",
+          "",
+          "Apr 16, 2026"
+         ],
+         [
+          "Bénéfice de souscription",
+          "Next four years",
+          "1,500.0",
+          "",
+          "Apr 16, 2026"
+         ],
+         [
+          "Part du bénéfice des entreprises associées et bénéfice consolidé hors assurance",
+          "Next four years",
+          "1,000.0",
+          "",
+          "Apr 16, 2026"
+         ],
+         [
+          "Bénéfice potentiel par action, avant tout gain de placement ($ US)",
+          "Next four years",
+          "150.00",
+          "150.00",
+          "Apr 16, 2026"
+         ],
+         [
+          "Ratios combinés non actualisés constamment inférieurs à (%)",
+          "Long term",
+          "",
+          "100.0%",
+          "Mar 6, 2026"
+         ]
+        ],
+        "note": "Les prévisions de la société excluent les gains et les pertes de placement; elles ne constituent donc pas une prévision du bénéfice total."
+       }
       },
       {
        "heading": "Que révèlent les huit derniers trimestres de Fairfax?",
@@ -1464,8 +1520,8 @@
    "held": [],
    "pieces": {
     "sent": 128,
-    "translated": 126,
-    "left_out": 2
+    "translated": 127,
+    "left_out": 1
    }
   }
  }
