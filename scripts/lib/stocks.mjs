@@ -80,6 +80,17 @@ function frPage(data, type) {
   return data?.translations?.fr?.pages?.[type] || null;
 }
 
+// A French description runs a fifth longer than the English it translates: when it is over 200 characters, the page's
+// own French opening stands in for it — its first sentence (our own punctuation: '. ' then a capital), else the whole
+// opening — when that fits; never a word that is not already on the page.
+function frDescribed(page) {
+  if (!page || String(page.meta_description || '').length <= 200) return page;
+  const opening = String(page.opening || '');
+  const first = opening.split(/(?<=[.?!])\s+(?=[A-ZÀ-Ý])/)[0];
+  const pick = [first, opening].find((t) => t && t.length <= 200);
+  return pick ? { ...page, meta_description: pick } : page;
+}
+
 // The letter hubs' address: never a company's (/stocks/v/ is Visa's page).
 export function letterPath(l) {
   return `/stocks/letter/${l}/`;
@@ -330,7 +341,7 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
 export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const ui = UI[lang];
   const fr = lang === 'fr';
-  const page0 = fr ? frPage(data, type) : data.pages[type];
+  const page0 = fr ? frDescribed(frPage(data, type)) : data.pages[type];
   const shared = !fr && ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
   const page = shared ? { ...page0, title: `${page0.title} (${data.ticker})` } : page0;
   const teaserData = fr ? data.translations.fr.teaser : data.teaser;
