@@ -35,8 +35,10 @@ function letterOf(company) {
   return c >= 'A' && c <= 'Z' ? c.toLowerCase() : '0-9';
 }
 
-function shortName(company) {
-  return String(company || '').trim();
+// The name readers search with ('TD', 'ResMed', 'Tencent'): the chain's short_name (the name the memo's own paragraphs
+// use most, checked there), else the company's name.
+function shortName(c) {
+  return String((c && (c.short_name || c.company)) || '').trim();
 }
 
 function isoDay(value) {
@@ -251,7 +253,7 @@ function breadcrumbs(items) {
 function chaptersRail(data, cta) {
   const items = (data.chapters || []).map((c) => `<li>${esc(c)}</li>`).join('');
   const k = data.counts || {};
-  return `<aside class="rail"><div class="box"><h3>The full ${esc(shortName(data.company))} memo</h3>
+  return `<aside class="rail"><div class="box"><h3>The full ${esc(shortName(data))} memo</h3>
 <div class="meta">${esc(data.memo_date_text || humanDay(data.memo_date))} · ${k.chapters || 8} chapters · ${(k.words || 0).toLocaleString('en-US')} words · ${k.sources || 0} sources</div>
 <ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">Read it free</a><div class="sub">${FREE_LINE}</div></div></aside>`;
 }
@@ -262,7 +264,7 @@ export function renderCompanyPage(data, type, ctx) {
   const slug = data.slug;
   const path = pagePath(slug, type);
   const url = `${SITE}${path}`;
-  const company = shortName(data.company);
+  const company = shortName(data);
   const ticker = data.ticker;
   const cta = page.cta || `${APP}/signup?ticker=${encodeURIComponent(ticker)}&src=seo-${type}`;
   const indexKey = data.index;
@@ -318,7 +320,7 @@ export function renderCompanyPage(data, type, ctx) {
     .map((r) => ctx.bySlug.get(ctx.slugOf(r)))
     .filter((r) => r && r.slug !== slug && ctx.exists(pagePath(r.slug, 'stock')))
     .slice(0, 4)
-    .map((r) => `<a href="${pagePath(r.slug, 'stock')}">${esc(shortName(r.company))} (${esc(r.ticker)})</a>`);
+    .map((r) => `<a href="${pagePath(r.slug, 'stock')}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
   const hubs = [`<a href="/stocks/">All stocks</a>`];
   if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
   hubs.push(`<a href="/stocks/${letterOf(company)}/">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
@@ -343,7 +345,7 @@ export function renderCompanyPage(data, type, ctx) {
     meta: { type, ticker, cta },
     body: `<div class="layout"><article>
 ${crumbs.html}
-<div class="kicker"><span>Research memo</span><span>${esc(company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>Memo of ${esc(memoDay)}</span></div>
+<div class="kicker"><span>Research memo</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>Memo of ${esc(memoDay)}</span></div>
 <h1>${esc(page.title)}</h1>
 <p class="lede">${esc(page.opening)}</p>
 ${facts ? `<div class="glance">${facts}</div>` : ''}
@@ -366,7 +368,7 @@ function hubList(companies, { withDates = false } = {}) {
     .map((c) => {
       const pages = TYPES.filter((t) => c.pages[t]).map((t) => `<a href="${pagePath(c.slug, t)}">${esc(TYPE_NAMES[t])}</a>`).join('');
       const date = withDates && c.next_earnings ? ` · results ${esc(humanDay(c.next_earnings))}` : '';
-      return `<li data-name="${esc(`${shortName(c.company)} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => c.pages[t]))}">${esc(shortName(c.company))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}${date}</span><span class="pg">${pages}</span></li>`;
+      return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => c.pages[t]))}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}${date}</span><span class="pg">${pages}</span></li>`;
     })
     .join('')}</ul>`;
 }
@@ -397,7 +399,7 @@ function letterNav() {
 }
 
 export function renderHubs(companies, { today = new Date() } = {}) {
-  const byName = [...companies].sort((a, b) => shortName(a.company).localeCompare(shortName(b.company)));
+  const byName = [...companies].sort((a, b) => shortName(a).localeCompare(shortName(b)));
   const day = today.toISOString().slice(0, 10);
   const week = new Date(today.getTime() + 7 * 86400000).toISOString().slice(0, 10);
   const soon = byName.filter((c) => c.pages.earnings && c.next_earnings && c.next_earnings >= day && c.next_earnings <= week)
@@ -429,7 +431,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     }));
   }
   for (const l of [...'abcdefghijklmnopqrstuvwxyz', '0-9']) {
-    const list = byName.filter((c) => letterOf(c.company) === l);
+    const list = byName.filter((c) => letterOf(shortName(c)) === l);
     if (!list.length) continue;
     pages.push(hubPage({
       path: `/stocks/${l}/`,
@@ -454,7 +456,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     title: 'Dividend stocks: history, cash coverage and yield',
     description: `${payers.length} dividend-paying companies from our research memos: dividend history, coverage by free cash flow and yield.`,
     intro: `${payers.length} companies in our library pay a dividend.`,
-    sections: [letterNav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c.company)} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c.company))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
+    sections: [letterNav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Dividends', path: '/stocks/dividends/' }],
   }));
   return pages;
@@ -500,7 +502,7 @@ export function gatePage(built, ctx) {
   const memoText = [
     ...page.blocks.flatMap((b) => [...(b.paragraphs || []).map((p) => p.text), ...(b.table ? [b.table.head.join(' '), ...b.table.rows.map((r) => r.join(' '))] : [])]),
     ...(page.facts || []).map((f) => `${f.label} ${f.value}`),
-    data.company, data.ticker, data.memo_date_text || '', humanDay(data.next_earnings), String(isoDay(data.memo_date)).slice(0, 4),
+    data.company, data.short_name || '', data.ticker, data.memo_date_text || '', humanDay(data.next_earnings), String(isoDay(data.memo_date)).slice(0, 4),
   ].join(' ');
   const flat = memoText.replace(/[,\s]/g, '');
   for (const [name, value] of [['title', page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
