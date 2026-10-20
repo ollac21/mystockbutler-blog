@@ -393,13 +393,16 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
   return { path, url, type: 'hub', title, description, html, outLinks, lastmod: '' };
 }
 
-function letterNav() {
-  const letters = [...'abcdefghijklmnopqrstuvwxyz', '0-9'];
+// Only the letters that have a hub (a letter with no company has no page to link to).
+function letterNav(present) {
+  const letters = [...'abcdefghijklmnopqrstuvwxyz', '0-9'].filter((l) => !present || present.has(l));
   return `<nav class="letters" aria-label="Companies by letter">${letters.map((l) => `<a href="/stocks/${l}/">${l.toUpperCase()}</a>`).join('')}</nav>`;
 }
 
 export function renderHubs(companies, { today = new Date() } = {}) {
   const byName = [...companies].sort((a, b) => shortName(a).localeCompare(shortName(b)));
+  const present = new Set(byName.map((c) => letterOf(shortName(c))));
+  const nav = () => letterNav(present);
   const day = today.toISOString().slice(0, 10);
   const week = new Date(today.getTime() + 7 * 86400000).toISOString().slice(0, 10);
   const soon = byName.filter((c) => c.pages.earnings && c.next_earnings && c.next_earnings >= day && c.next_earnings <= week)
@@ -408,7 +411,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
   const all = [
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a></p></section>`,
-    letterNav(),
+    nav(),
     ...groups.map((g) => `<section><h2><a href="/stocks/${INDEX_PATHS[g.key]}/">${esc(INDEX_NAMES[g.key])}</a></h2>${hubList(g.list)}</section>`),
   ];
   pages.push(hubPage({
@@ -426,7 +429,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
       title: `${INDEX_NAMES[g.key]} stocks: forecasts, dividends, earnings`,
       description: `Research memos on ${g.list.length} ${INDEX_NAMES[g.key]} companies: stock forecasts, dividends and next results dates.`,
       intro: `${g.list.length} ${INDEX_NAMES[g.key]} companies with a research memo.`,
-      sections: [letterNav(), hubList(g.list, { withDates: true })],
+      sections: [nav(), hubList(g.list, { withDates: true })],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
     }));
   }
@@ -438,7 +441,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
       title: `Stocks starting with ${l.toUpperCase()}: forecasts, dividends, earnings`,
       description: `Research memos on ${list.length} companies whose name starts with ${l.toUpperCase()}.`,
       intro: `${list.length} companies whose name starts with ${l.toUpperCase()}.`,
-      sections: [letterNav(), hubList(list)],
+      sections: [nav(), hubList(list)],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: l.toUpperCase(), path: `/stocks/${l}/` }],
     }));
   }
@@ -456,7 +459,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     title: 'Dividend stocks: history, cash coverage and yield',
     description: `${payers.length} dividend-paying companies from our research memos: dividend history, coverage by free cash flow and yield.`,
     intro: `${payers.length} companies in our library pay a dividend.`,
-    sections: [letterNav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
+    sections: [nav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Dividends', path: '/stocks/dividends/' }],
   }));
   return pages;
@@ -643,6 +646,8 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
   hubs.forEach((h) => hubPaths.add(h.path));
   const newest = live.map((c) => isoDay(c.memo_date)).sort().pop() || '';
   hubs.forEach((h) => (h.lastmod = newest));
+  const livePaths = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path)]);
+  const deadHubLinks = hubs.flatMap((h) => [...new Set(h.outLinks)].filter((l) => !livePaths.has(l)).map((l) => `${h.path} -> ${l}`));
   // In-links: every published company page is linked from at least 3 other pages of the site.
   const inbound = new Map();
   for (const p of [...pass, ...hubs]) for (const l of new Set(p.outLinks)) if (l !== p.path) inbound.set(l, (inbound.get(l) || 0) + 1);
@@ -658,6 +663,7 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     hubs: hubs.length,
     held,
     orphans,
+    deadHubLinks,
     duplicateTitles: [...pass.reduce((m, b) => m.set(b.title, (m.get(b.title) || 0) + 1), new Map())].filter(([, n]) => n > 1).map(([t]) => t),
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
   };

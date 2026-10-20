@@ -13,6 +13,7 @@ test('the real files build clean: every page passes, no orphan, links to the riv
   const { pages, hubs, held, report } = buildStockSite([load('stock-rmd.json'), load('stock-td-to.json')], { today: TODAY });
   assert.equal(held.length, 0, JSON.stringify(held));
   assert.equal(report.orphans.length, 0);
+  assert.deepEqual(report.deadHubLinks, []);              // the letter list links only letters that have a hub
   assert.ok(pages.length >= 5);
   assert.ok(hubs.some((h) => h.path === '/stocks/'));
   const td = pages.find((p) => p.path === '/stocks/td-to/');
