@@ -1,7 +1,5 @@
 {
  "schema": "public_pages_v1",
- "writer": "26ebabc1ea4a",
- "run_id": "run-20261008T195947Z-9b5a3e3d1c0e",
  "ticker": "TD.TO",
  "slug": "td-to",
  "company": "The Toronto-Dominion Bank",
@@ -28,16 +26,16 @@
  },
  "sources": [
   {
-   "title": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2026/q3/2026-q3-financial-supppack-en.pdf",
-   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2026/q3/2026-q3-financial-supppack-en.pdf"
+   "title": "Investor presentation — Q3 2026",
+   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2026/q3/2026-q3-investor-presentation.pdf"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/947263/000156276224000287/ex993.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/947263/000156276224000287/ex993.htm"
+   "title": "Archived Events 2026",
+   "url": "https://www.td.com/ca/en/about-td/for-investors/investor-relations/presentation-and-events/archived-events-2026"
   },
   {
-   "title": "https://www.sec.gov/Archives/edgar/data/947263/000119312522296446/d404924dex992.htm",
-   "url": "https://www.sec.gov/Archives/edgar/data/947263/000119312522296446/d404924dex992.htm"
+   "title": "September 9 conference transcript",
+   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/investor/investor-relations/presentation-and-events/archived-events-2026/2026-09-09-scotia-conference-transcript.pdf"
   }
  ],
  "rivals": [
@@ -66,20 +64,27 @@
  "pages": {
   "stock": {
    "type": "stock",
-   "title": "The Toronto-Dominion Bank stock forecast",
-   "meta_description": "A calm TD stock forecast covering the weighted scenario, its drivers, bank earnings and payouts, and what investors pay today.",
-   "opening": "The weighted forecast reaches C$153.88 by October 2029. It hinges on credit costs easing, U.S. AML remediation advancing and earnings improving.",
-   "closing": "The full memo also explains The Toronto-Dominion Bank’s business, rivals, management, and risks.",
+   "title": "TD stock forecast",
+   "meta_description": "TD's weighted forecast reaches CAD 153.88 by October 2029; credit costs, U.S. controls, margins and capital returns shape bear, base and bull cases.",
+   "opening": "TD's weighted forecast reaches CAD 153.88 by October 2029. It hinges on credit costs easing, U.S. AML remediation advancing and earnings improving.",
+   "closing": "The full TD memo also explains TD's business, rivals, management, risks and the conditions behind its recovery.",
    "blocks": [
     {
-     "heading": "Where could The Toronto-Dominion Bank’s shares go?",
+     "heading": "Where could TD's shares be by October 2029?",
      "paragraphs": [
       {
-       "n": 8,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The weighted forecast reaches C$153.88 by October 2029, a 4% total return including dividends; it hinges on credit costs easing, U.S. AML remediation advancing and earnings improving."
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price rises to CAD 144.77 in October 2028. The dividend-inclusive loss then narrows to 5%. By October 2029, the weighted price reaches CAD 153.88, producing a 4% total return."
+      },
+      {
+       "n": 226,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The final-date range is wide, from CAD 87.22 in the bear case to CAD 219.78 in the bull case. Today’s price is CAD 162.23. The probabilities behind the weighting reflect the specialists’ combined view of TD’s regulatory, credit, operating and capital-return risks."
       }
      ],
      "table": {
@@ -127,40 +132,40 @@
      }
     },
     {
-     "heading": "What has to go right or wrong for The Toronto-Dominion Bank?",
+     "heading": "What has to go right for TD, and what could go wrong?",
      "paragraphs": [
       {
-       "n": 10,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "Capital available for buybacks, credit losses, net interest margin and savings delivery decide the path. The bear case assumes higher losses and weaker margins; the bull requires faster savings and stronger margins. Repurchases must stay within capital limits while the asset cap constrains U.S. balance-sheet growth."
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires TD’s recovery to stall. A delayed SAR lookback keeps the U.S. asset cap binding, credit losses rise and deposit competition compresses NIM. Remediation absorbs capital, so buybacks fall while dividends continue at a slower pace. The price reaches CAD 99.48 in October 2027 and CAD 87.22 by October 2029. Its probability is 27%, reflecting concentrated regulatory risk, elevated credit costs and weak fee growth."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case assumes milestones advance, Canadian banking and fee businesses grow, and credit costs ease gradually. Repurchases remain substantial, but the valuation multiple stays stable. The price reaches CAD 143.27 first and CAD 162.98 last. Its 53% probability reflects improving NIM, lower provisions and a 14.3% CET1 ratio, balanced against the asset cap and remediation burden."
       }
      ],
      "table": null
     },
     {
-     "heading": "How much cash does The Toronto-Dominion Bank really make?",
+     "heading": "How much cash does TD really make and return?",
      "paragraphs": [
       {
-       "n": 168,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "Bank funding is part of the operating model. TD takes deposits, pays interest, and uses the money to make loans or buy securities that earn more. That is why enterprise value, net debt, EBITDA, and free cash flow can mislead: they treat funding as separate from the business. Investors instead study returns, capital, liquidity, and net interest margin."
-      },
-      {
-       "n": 229,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.2 — The model",
-       "text": "The share count also matters. Stock-based compensation and new-share sales increase it, while repurchases reduce it. The model therefore separates gross dilution from buybacks rather than treating repurchases as a change to the dilution assumption."
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.9 — Capital buffers and shareholder payouts",
+       "text": "Dividends rose from C$3.16 per share in 2021 to C$4.20 in 2025. Diluted weighted-average shares fell 1.8% in 2025, so adjusted EPS could grow faster than adjusted income. Book value per share reached C$68.78 and tangible book value per share reached C$55.72."
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "C$",
-      "caption": "What one share gets (C$)",
+      "title": "The bank's own adjusted measures",
+      "unit": "C$ millions",
+      "caption": "The bank's own adjusted measures (C$ millions)",
       "head": [
        "Row",
        "Year to Oct 2025",
@@ -171,52 +176,44 @@
       ],
       "rows": [
        [
-        "EPS, diluted",
-        "11.56",
-        "4.72",
-        "5.52",
-        "9.47",
-        "7.72"
+        "Adjusted net income (company's measure)",
+        "15,025",
+        "14,277",
+        "14,995",
+        "15,425",
+        "14,649"
        ],
        [
-        "Dividend per share",
-        "4.20",
-        "4.08",
-        "3.84",
-        "3.56",
-        "3.16"
+        "Adjusted EPS (company's measure)",
+        "8.37",
+        "7.81",
+        "7.91",
+        "8.36",
+        "7.91"
        ],
        [
-        "Buybacks per share",
-        "3.59",
-        "2.27",
-        "2.35",
-        "1.21",
-        "0.00"
+        "Adjusted return on equity (company's measure)",
+        "12.9%",
+        "13.6%",
+        "14.2%",
+        "15.9%",
+        "15.9%"
        ],
        [
-        "Net share dilution",
-        "-1.8%",
-        "-3.5%",
-        "0.6%",
-        "-0.4%",
-        "0.6%"
+        "Adjusted efficiency ratio (company's measure)",
+        "58.4%",
+        "58.1%",
+        "56.4%",
+        "52.8%",
+        "53.7%"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What does an investor pay for The Toronto-Dominion Bank today?",
-     "paragraphs": [
-      {
-       "n": 165,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "At C$162.23, TD’s market value is C$264,943 million. Its trailing P/E, or price-to-earnings ratio, is 17.4x: investors pay C$17.40 for each dollar earned over the last twelve months. The forward P/E is 16.0x, based on expected earnings. A lower forward multiple means analysts expect higher earnings; it does not mean those earnings have arrived."
-      }
-     ],
+     "heading": "What does an investor pay for TD today?",
+     "paragraphs": [],
      "table": {
       "title": "What an investor pays today",
       "unit": "C$ millions",
@@ -229,6 +226,10 @@
        [
         "Share price",
         "162.23"
+       ],
+       [
+        "Market value",
+        "264,943"
        ],
        [
         "P/E, last 12 months",
@@ -321,13 +322,13 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "The Toronto-Dominion Bank dividend",
-   "meta_description": "The Toronto-Dominion Bank's dividend rose, but recent distributions exceeded current profits; see its yield, payout plans and risks.",
-   "opening": "TD's dividend rose from C$3.16 per share in 2021 to C$4.20 in 2025. In fiscal 2023 and 2024, distributions exceeded earnings available to common shareholders, so current profits did not cover those payments.",
-   "closing": "The full memo also explains The Toronto-Dominion Bank's business, rivals, management choices and risks.",
+   "title": "TD dividend",
+   "meta_description": "TD paid C$4.20 per share in 2025; dividends and buybacks exceeded earnings in fiscal 2023 and 2024, and the yield is 2.8%.",
+   "opening": "TD paid C$4.20 per share in 2025, up from C$3.16 in 2021. Dividend coverage was uneven: in fiscal 2023 and 2024, dividends and buybacks exceeded earnings available to common shareholders.",
+   "closing": "The full memo also covers TD’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "How much does The Toronto-Dominion Bank pay per share?",
+     "heading": "How much does TD pay in dividends?",
      "paragraphs": [
       {
        "n": 159,
@@ -359,27 +360,27 @@
         "7.72"
        ],
        [
+        "Book value per share",
+        "68.78",
+        "59.59",
+        "56.56",
+        "55.00",
+        "51.66"
+       ],
+       [
         "Dividend per share",
         "4.20",
         "4.08",
         "3.84",
         "3.56",
         "3.16"
-       ],
-       [
-        "Buybacks per share",
-        "3.59",
-        "2.27",
-        "2.35",
-        "1.21",
-        "0.00"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Does The Toronto-Dominion Bank's dividend come from cash the business makes?",
+     "heading": "Does TD’s cash cover its dividend?",
      "paragraphs": [
       {
        "n": 70,
@@ -447,60 +448,65 @@
      }
     },
     {
-     "heading": "What could change The Toronto-Dominion Bank's dividend?",
+     "heading": "What could change TD’s dividend?",
      "paragraphs": [
       {
-       "n": 9,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "Management targets 16% adjusted ROE—return on equity, or profit against shareholders’ money—and 7–10% adjusted EPS growth by fiscal 2029. It targets a 40–50% dividend payout range."
-      },
-      {
-       "n": 246,
+       "n": 232,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
-       "subsection": "8.5 — What would change the view",
-       "text": "The base case gains support if FY2026 earnings and ROE targets hold, provisions continue to fall and repurchases proceed within capital limits. It would move toward the bull case if remediation finishes successfully, regulators ease the constraint, NIM expands and cost savings arrive faster during 2027–2029."
-      }
-     ],
-     "table": null
-    },
-    {
-     "heading": "What is The Toronto-Dominion Bank's dividend yield today?",
-     "paragraphs": [
-      {
-       "n": 165,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "At C$162.23, TD’s market value is C$264,943 million. Its trailing P/E, or price-to-earnings ratio, is 17.4x: investors pay C$17.40 for each dollar earned over the last twelve months. The forward P/E is 16.0x, based on expected earnings. A lower forward multiple means analysts expect higher earnings; it does not mean those earnings have arrived."
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends are the steadiest shareholder-return driver. FY2026 DPS is CAD 4.40, including an estimated fourth-quarter payment of CAD 1.12. The base path then grows DPS by about 5% annually. The bear path slows growth to about 2%, while the bull path reaches about 6%. The base remains below management’s 7–10% medium-term adjusted EPS-growth target, leaving room for the payout ratio to remain within the 40–50% objective."
       }
      ],
      "table": {
-      "title": "What an investor pays today",
-      "unit": "C$ millions",
-      "caption": "What an investor pays today (C$ millions)",
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; CAD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; CAD millions unless shown)",
       "head": [
-       "Row",
-       "Today (Oct 8, 2026)"
+       "",
+       "FY2026",
+       "FY2027",
+       "FY2028",
+       "FY2029"
       ],
       "rows": [
        [
-        "Share price",
-        "162.23"
+        "Value per share",
+        "68.83 (67.06 / 69.74)",
+        "71.82 (68.71 / 73.45)",
+        "76.55 (70.59 / 78.74)",
+        "81.82 (72.82 / 84.92)"
        ],
        [
-        "P/E, next 12 months",
-        "16.0x"
+        "Buybacks",
+        "9,500 (9,500 / 9,500)",
+        "8,500 (4,000 / 10,000)",
+        "5,000 (2,000 / 9,000)",
+        "5,500 (2,500 / 10,000)"
        ],
        [
-        "Dividend yield",
-        "2.8%"
+        "Dividend per share",
+        "4.40 (4.40 / 4.40)",
+        "4.62 (4.49 / 4.66)",
+        "4.85 (4.58 / 4.94)",
+        "5.09 (4.67 / 5.24)"
        ]
       ],
       "note": ""
      }
+    },
+    {
+     "heading": "What is TD’s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "At C$162.23, TD trades at 17.4x trailing earnings and 2.3x book value. Its 2.8% dividend yield sits within a valuation that already reflects confidence in recovery. Reported 2025 EPS, efficiency and return benefited from the gain on selling part of TD’s Charles Schwab stake, while adjusted income grew more modestly. Recent lower provisions have not erased pressure: net write-offs remained above the prior year."
+      }
+     ],
+     "table": null
     }
    ],
    "facts": [
@@ -515,13 +521,13 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "The Toronto-Dominion Bank earnings date and outlook",
-   "meta_description": "The Toronto-Dominion Bank’s next results are expected December 3, 2026; guidance, recent trends and key watchpoints are here.",
-   "opening": "The Toronto-Dominion Bank’s next results are expected on December 3, 2026. Watch whether credit costs, margins and U.S. controls improve within the asset cap.",
-   "closing": "The full memo also explains The Toronto-Dominion Bank’s business, its rivals, its management and its risks.",
+   "title": "TD earnings date and guidance",
+   "meta_description": "TD's next results are expected on December 3, 2026; guidance covers returns, earnings growth, payouts and credit losses.",
+   "opening": "TD's next results are expected on December 3, 2026. The one thing to watch is whether TD's earnings withstand credit losses and continuing remediation costs.",
+   "closing": "The full TD memo also answers how TD's business works, how it compares with rivals, who runs TD and what risks TD faces.",
    "blocks": [
     {
-     "heading": "What has The Toronto-Dominion Bank guided for fiscal 2026?",
+     "heading": "What has TD guided for the coming year?",
      "paragraphs": [
       {
        "n": 9,
@@ -551,20 +557,6 @@
       ],
       "rows": [
        [
-        "Adj. ROE (fiscal 2026)",
-        "Fiscal 2026",
-        "13.0%",
-        "13.0%",
-        "Aug 27, 2026"
-       ],
-       [
-        "Adj. EPS Growth (fiscal 2026)",
-        "Fiscal 2026",
-        "6.0%",
-        "8.0%",
-        "Aug 27, 2026"
-       ],
-       [
         "Adj. Expense Growth",
         "Fiscal 2026",
         "3.0%",
@@ -572,10 +564,17 @@
         "Aug 27, 2026"
        ],
        [
-        "Adj. Operating Leverage (fiscal 2026)",
-        "Fiscal 2026",
-        "",
-        "",
+        "Adj. ROE (medium-term)",
+        "Fiscal 2029",
+        "16.0%",
+        "16.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Adj. EPS Growth (medium-term)",
+        "Fiscal 2029",
+        "7.0%",
+        "10.0%",
         "Aug 27, 2026"
        ],
        [
@@ -591,13 +590,20 @@
         "40",
         "50",
         "Aug 27, 2026"
+       ],
+       [
+        "Annualized savings",
+        "Medium-term",
+        "2",
+        "2.5",
+        "Sep 29, 2025"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Did The Toronto-Dominion Bank keep its past promises?",
+     "heading": "Did TD keep its repurchase promise?",
      "paragraphs": [
       {
        "n": 105,
@@ -610,7 +616,7 @@
      "table": null
     },
     {
-     "heading": "How have The Toronto-Dominion Bank’s revenue and profit trended?",
+     "heading": "What is TD's revenue and profit trend?",
      "paragraphs": [
       {
        "n": 141,
@@ -690,24 +696,13 @@
         "1.8%",
         "1.7%",
         "1.7%"
-       ],
-       [
-        "CET1 capital ratio",
-        "14.3%",
-        "14.3%",
-        "14.5%",
-        "14.7%",
-        "14.8%",
-        "14.9%",
-        "13.1%",
-        "13.1%"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What should you watch in The Toronto-Dominion Bank’s next results?",
+     "heading": "What should you watch in TD's next results?",
      "paragraphs": [
       {
        "n": 216,
@@ -775,5 +770,5 @@
    "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-earnings"
   }
  },
- "held": {}
+ "short_name": "TD"
 }
