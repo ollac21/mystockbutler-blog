@@ -33,6 +33,14 @@ jobs:
         run: node scripts/render.mjs
         env:
           OUT_DIR: _site
+          # B112: the stock pages' files through the app's public function; a failed fetch keeps data/stocks/.
+          STOCK_PAGES_URL: https://app.mystockbutler.com/functions/getPublicStockPages
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-report
+          path: build-report
+          if-no-files-found: ignore
 
       # IndexNow: compare the freshly built state with the one the LIVE site publishes now. This has to
       # happen here, before the deploy replaces the live site. Best effort: never fails the build.

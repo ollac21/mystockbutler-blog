@@ -24,11 +24,16 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 `;
 }
 
-async function fetchJson(url) {
+async function fetchJson(url, file) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
   try {
-    const res = await fetch(url, { signal: ctrl.signal, headers: { Accept: 'application/json' } });
+    const res = await fetch(url, {
+      method: 'POST',
+      signal: ctrl.signal,
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ file }),
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } finally {
@@ -60,7 +65,7 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
   }
   let index;
   try {
-    index = await fetchJson(`${url}${url.includes('?') ? '&' : '?'}file=index`);
+    index = await fetchJson(url, 'index');
   } catch (err) {
     console.log(`WARNING: stock pages: the index could not be fetched (${err.message}); the committed files are used`);
     return [...kept.values()];
@@ -73,7 +78,7 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
     await Promise.all(
       rows.slice(i, i + 8).map(async (row) => {
         try {
-          const data = await fetchJson(`${url}${url.includes('?') ? '&' : '?'}file=${encodeURIComponent(row.slug)}`);
+          const data = await fetchJson(url, row.slug);
           if (data?.slug === row.slug) {
             out.set(row.slug, data);
             fetched += 1;
