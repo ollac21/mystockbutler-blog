@@ -76,3 +76,19 @@ test('a one-letter ticker keeps its own address; the letter hubs live under /sto
   assert.ok(hubs.some((h) => h.path === '/stocks/letter/v/'));
   assert.ok(!hubs.some((h) => h.path === '/stocks/v/'));
 });
+
+test('a French page draws no English: the date, the chart, the table cells and the sources in French', () => {
+  // law review 2026-10-20T14:10Z: TD's real file with its French copy (fr-6)
+  const { pages, held } = buildStockSite([load('stock-td-to-fr.json'), load('stock-rmd.json')], { today: TODAY });
+  const fr = pages.filter((p) => p.lang === 'fr');
+  assert.deepEqual(fr.map((p) => p.path).sort(), ['/fr/stocks/td-to/', '/fr/stocks/td-to/dividende/', '/fr/stocks/td-to/resultats/'], JSON.stringify(held));
+  const text = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ');
+  for (const p of fr) {
+    const t = text(p.html);
+    for (const english of ['Next results', 'Revenue by quarter', 'Where these numbers come from', 'Year to', 'Filing on', ' link ']) {
+      assert.ok(!t.includes(english), `${p.path} shows "${english}"`);
+    }
+  }
+  const results = fr.find((p) => p.path === '/fr/stocks/td-to/resultats/');
+  assert.match(text(results.html), /3 décembre 2026/);
+});

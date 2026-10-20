@@ -1,0 +1,1528 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "TD.TO",
+ "slug": "td-to",
+ "company": "The Toronto-Dominion Bank",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "bank",
+ "country": "canada",
+ "memo_date": "2026-10-20T05:37:58Z",
+ "memo_date_text": "October 20, 2026",
+ "price": 169.61,
+ "price_date": "2026-10-19T20:00:00Z",
+ "next_earnings": "2026-12-03",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 256,
+  "tables": 30,
+  "words": 17573,
+  "sources": 174
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Toronto-Dominion is a Canadian bank that makes money by taking in deposits, lending, moving payments, managing investments and insuring against loss. To understand its business, follow a dollar through the customers who supply it, the services that put it to work, and the costs that determine what TD keeps."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report, U.S. restructuring",
+   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2025/q4/2025-annual-report-en.pdf"
+  },
+  {
+   "title": "Q3 2026 investor presentation, slide 34",
+   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/pdf/quarterly-results/2026/q3/2026-q3-investor-presentation.pdf"
+  },
+  {
+   "title": "TD Investor Day presentation",
+   "url": "https://www.td.com/content/dam/tdcom/canada/about-td/investor-day/investor-day-2025/td-investor-day-full-presentation-9-30.pdf"
+  }
+ ],
+ "rivals": [
+  "RY.TO",
+  "BMO.TO",
+  "BNS.TO",
+  "CM.TO",
+  "NA.TO",
+  "JPM",
+  "BAC",
+  "WFC",
+  "C",
+  "PNC",
+  "USB"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "TD stock forecast",
+   "meta_description": "TD's weighted scenario is C$158.33 in October 2027 and C$176.19 in October 2029, with bear, base and bull cases.",
+   "opening": "TD's weighted scenario is C$158.33 in October 2027 and C$176.19 in October 2029. It hinges on whether the OCC accepts the control repairs and lifts the asset cap.",
+   "closing": "The full TD memo also explains its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could TD's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is C$158.33 in October 2027, a 4% loss including dividends. It reaches C$176.19 in October 2029, a 12% gain. The cases carry probabilities of 27% bear, 53% base and 20% bull; outcomes range from C$81.19 to C$259.42."
+      },
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "By October 2029, the bear case gives C$81.19, while the bull case gives C$259.42. The probabilities assign 27% to bear and 53% to base. Bull receives 20%, because regulatory acceptance and multiple expansion remain uncertain."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 169.61, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 169.61, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "27 %",
+        "102.36 (-37 %)",
+        "91.50 (-41 %)",
+        "81.19 (-44 %)"
+       ],
+       [
+        "Base",
+        "53 %",
+        "171.64 (+4 %)",
+        "178.32 (+11 %)",
+        "193.18 (+22 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "198.64 (+20 %)",
+        "227.85 (+40 %)",
+        "259.42 (+62 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "158.33 (-4 %)",
+        "164.79 (+3 %)",
+        "176.19 (+12 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull outcomes, so it can be below the base case because the lower bear value is included."
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for TD?",
+     "paragraphs": [
+      {
+       "n": 250,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires TD’s U.S. repair to take longer while the asset cap constrains growth and consumer losses absorb capital."
+      },
+      {
+       "n": 255,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The base case would gain support if adjusted EPS tracks the FY2029 ambition of 7%–10%, adjusted ROE approaches 16%, cost reductions offset compliance expenses, and dividends continue alongside measured repurchases."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How does TD earn and give back cash?",
+     "paragraphs": [
+      {
+       "n": 240,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.2 — The model",
+       "text": "Book value captures retained earnings after dividends, buybacks, credit losses and other capital changes. The share count captures the effect of TD’s repurchase programme and stock-based issuance. Dividends are shown separately because they contribute to the investor’s total return even when the share price does not rise."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share, except share-count change",
+      "caption": "What one share gets (C$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "11.56",
+        "4.72",
+        "5.52",
+        "9.47",
+        "7.72"
+       ],
+       [
+        "− Dividends allocated per diluted weighted-average share",
+        "4.18",
+        "4.07",
+        "3.83",
+        "3.55",
+        "3.15"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.59",
+        "2.27",
+        "2.35",
+        "1.21",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "3.78",
+        "",
+        "",
+        "4.71",
+        "4.56"
+       ],
+       [
+        "**= Paid out more, per share**",
+        "",
+        "1.62",
+        "0.66",
+        "",
+        ""
+       ],
+       [
+        "Book value per share",
+        "68.78",
+        "59.59",
+        "56.56",
+        "55.00",
+        "51.66"
+       ]
+      ],
+      "note": "The company’s profit per share is not all kept: dividends and share buybacks are both cash paid to shareholders, so buying back shares can make the share count fall while still reducing what was kept."
+     }
+    },
+    {
+     "heading": "What does an investor pay for TD today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 20, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "169.61"
+       ],
+       [
+        "Market value (calculated)",
+        "277,889"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "18.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.8x"
+       ],
+       [
+        "Price to book (calculated)",
+        "2.4x"
+       ],
+       [
+        "Price to tangible book (calculated)",
+        "3.0x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings measure uses analysts’ expected profit, so it is a forecast rather than a measure of what the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "169.61"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "176.19 (+12 %)"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "18.2x"
+    },
+    {
+     "label": "Price to book",
+     "value": "2.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 169.61,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "27 %",
+      "values": [
+       "102.36 (-37 %)",
+       "91.50 (-41 %)",
+       "81.19 (-44 %)"
+      ]
+     },
+     "Base": {
+      "probability": "53 %",
+      "values": [
+       "171.64 (+4 %)",
+       "178.32 (+11 %)",
+       "193.18 (+22 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "198.64 (+20 %)",
+       "227.85 (+40 %)",
+       "259.42 (+62 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "158.33 (-4 %)",
+       "164.79 (+3 %)",
+       "176.19 (+12 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/td-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "TD dividend",
+   "meta_description": "TD pays a quarterly dividend, with coverage shaped by cash generation, buybacks, credit costs and remediation.",
+   "opening": "TD pays C$1.12 quarterly, or C$4.48 annually. The memo says retained accounting profit is not the same as cash available for distribution, so cash coverage needs the full cash-flow detail.",
+   "closing": "The full memo also answers questions about TD’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "How much does TD pay per share over the years shown?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at C$4.48 annually because the declared quarterly dividend is C$1.12. The base case then grows dividends by 5% annually, reaching C$4.70 and C$4.94. The bear case freezes the dividend, while the bull case grows it by 10% annually to C$4.93 and C$5.42."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share, except share-count change",
+      "caption": "What one share gets (C$ per share, except share-count change)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "11.56",
+        "4.72",
+        "5.52",
+        "9.47",
+        "7.72"
+       ],
+       [
+        "− Dividends allocated per diluted weighted-average share",
+        "4.18",
+        "4.07",
+        "3.83",
+        "3.55",
+        "3.15"
+       ],
+       [
+        "− Share buybacks, per share",
+        "3.59",
+        "2.27",
+        "2.35",
+        "1.21",
+        "0.00"
+       ],
+       [
+        "**= Kept, per share**",
+        "3.78",
+        "",
+        "",
+        "4.71",
+        "4.56"
+       ]
+      ],
+      "note": "The company’s profit per share is not all kept: dividends and share buybacks are both cash paid to shareholders, so buying back shares can make the share count fall while still reducing what was kept."
+     }
+    },
+    {
+     "heading": "Is TD’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 75,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "TD’s dividends and buybacks therefore require two readings. Reported earnings show what happened to owners in the year, including exceptional costs and gains. Adjusted earnings give a better sense of repeatable earning power. Buybacks reduced diluted average shares from 1,820.2 million in fiscal 2021 to 1,728.0 million in fiscal 2025, increasing each remaining share’s claim on future profits, though not proving that TD always bought shares cheaply."
+      },
+      {
+       "n": 78,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the capital went",
+       "text": "TD also reinvested in the bank. Net purchases of property, equipment and other intangibles rose from C$1,129 million in fiscal 2021 to C$2,145 million in fiscal 2025. That is only part of investment, since technology, staff and compliance also appear in operating expenses. Retained accounting profit is therefore not the same as cash available for distribution."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: what it earns and gives back",
+      "unit": "C$ millions",
+      "caption": "Follow the money: what it earns and gives back (C$ millions)",
+      "head": [
+       "Row",
+       "Oct 2025",
+       "Oct 2024",
+       "Oct 2023",
+       "Oct 2022",
+       "Oct 2021"
+      ],
+      "rows": [
+       [
+        "**= Earnings for common shareholders**",
+        "19,973",
+        "8,316",
+        "10,071",
+        "17,170",
+        "14,049"
+       ],
+       [
+        "− Dividends declared on common shares",
+        "7,228",
+        "7,163",
+        "6,982",
+        "6,442",
+        "5,741"
+       ],
+       [
+        "− Share buybacks",
+        "6,206",
+        "3,997",
+        "4,285",
+        "2,195",
+        "0"
+       ],
+       [
+        "**= Kept to grow and build capital**",
+        "6,539",
+        "",
+        "",
+        "8,533",
+        "8,308"
+       ]
+      ],
+      "note": "The company's own payout ratio is lower because it counts only dividends and uses its own adjusted profit, while our measure also counts share buybacks and uses profit for ordinary shareholders."
+     }
+    },
+    {
+     "heading": "What could change TD’s dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "TD can reach C$176.19 by October 2029 for a 12% total return if remediation advances, credit stays manageable and valuation holds broadly steady. Management targets 7%–10% adjusted EPS growth and 16% adjusted ROE by FY2029. It expects US$550 million before tax for U.S. remediation in FY2026, with adjusted expense growth of 3%–4%. It also targets a 40%–50% dividend payout ratio by FY2029 and annual organic capital accretion of at least 75 basis points."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base rate is below management’s FY2029 adjusted EPS growth target of 7%–10%, while the bull rate matches its upper end. The freeze remains plausible because remediation is expected to cost US$550 million before tax in FY2026."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is TD’s dividend yield today against its price?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 20, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "169.61"
+       ],
+       [
+        "Market value (calculated)",
+        "277,889"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "16.8x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.6%"
+       ]
+      ],
+      "note": "The next-year price-to-earnings measure uses analysts’ expected profit, so it is a forecast rather than a measure of what the company has already earned."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "2.6%"
+    },
+    {
+     "label": "Buyback yield",
+     "value": "2.2%"
+    }
+   ],
+   "chart": null,
+   "path": "/stocks/td-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "TD earnings date and guidance",
+   "meta_description": "TD’s next results are expected December 3, 2026; guidance, recent results and key watchpoints are set out clearly.",
+   "opening": "TD’s next results are expected on December 3, 2026. The main thing to watch is whether expense growth, credit provisions and underlying revenue move together.",
+   "closing": "The full memo also explains TD’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has TD guided for FY2026 and FY2029?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "TD can reach C$176.19 by October 2029 for a 12% total return if remediation advances, credit stays manageable and valuation holds broadly steady. Management targets 7%–10% adjusted EPS growth and 16% adjusted ROE by FY2029. It expects US$550 million before tax for U.S. remediation in FY2026, with adjusted expense growth of 3%–4%. It also targets a 40%–50% dividend payout ratio by FY2029 and annual organic capital accretion of at least 75 basis points."
+      }
+     ],
+     "table": {
+      "title": "Targets and guidance in force",
+      "unit": "",
+      "caption": "Targets and guidance in force",
+      "head": [
+       "Row",
+       "Period covered",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Adj. ROE (FY2026)",
+        "FY2026",
+        "13.0%",
+        "13.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Adj. EPS Growth (FY2026)",
+        "FY2026",
+        "6.0%",
+        "8.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Adj. Expense Growth (FY2026)",
+        "FY2026",
+        "3.0%",
+        "4.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Adj. ROE (FY2029)",
+        "FY2029",
+        "16.0%",
+        "16.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Adj. EPS Growth (FY2029)",
+        "FY2029",
+        "7.0%",
+        "10.0%",
+        "Aug 27, 2026"
+       ],
+       [
+        "Dividend Payout Ratio",
+        "FY2029",
+        "40.0%",
+        "50.0%",
+        "Aug 27, 2026"
+       ]
+      ],
+      "note": "The low and high columns show the range the bank is aiming for, not what it has already achieved, while a blank means it gave only a general description instead of an exact number."
+     }
+    },
+    {
+     "heading": "Has TD kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The record is mixed. TD’s payout test produced results both inside and outside its promised range, while the FY2024 overshoot was substantive. TD also suspended its earlier medium-term targets on December 5, 2024, so the new plan must prove itself through sustained earnings and control spending."
+      }
+     ],
+     "table": {
+      "title": "Promises kept: 3/5",
+      "unit": "",
+      "caption": "Promises kept: 3/5",
+      "head": [
+       "What management forecast",
+       "Checked",
+       "Above",
+       "Within",
+       "Below"
+      ],
+      "rows": [
+       [
+        "Dividend payout ratio",
+        "5 years",
+        "1",
+        "3",
+        "1"
+       ]
+      ],
+      "note": "Three of the five dividend payout ratio forecasts were within the expected range, while one was higher and one was lower."
+     }
+    },
+    {
+     "heading": "What do TD’s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 140,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "July 2026 was better, but the improvement had several causes. Revenue reached C$16,885 million, compared with C$15,297 million a year earlier, while net interest income and NIM also improved. Costs and credit losses did not rise as quickly as revenue."
+      },
+      {
+       "n": 141,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The quarterly sequence matters because April 2025 contained the Schwab sale and produced an unusually high comparison base. July 2026 is more informative: interest income improved, but capital-markets activity also helped."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "16,885",
+        "15,797",
+        "16,585",
+        "15,494",
+        "15,297",
+        "22,937",
+        "14,049",
+        "15,514"
+       ],
+       [
+        "Net interest income",
+        "9,296",
+        "8,861",
+        "8,789",
+        "8,545",
+        "8,526",
+        "8,125",
+        "7,866",
+        "7,940"
+       ],
+       [
+        "Net income",
+        "4,615",
+        "4,251",
+        "4,043",
+        "3,280",
+        "3,336",
+        "11,129",
+        "2,793",
+        "3,635"
+       ],
+       [
+        "EPS, diluted",
+        "2.74",
+        "2.43",
+        "2.34",
+        "1.82",
+        "1.89",
+        "6.27",
+        "1.55",
+        "1.97"
+       ],
+       [
+        "Net interest margin",
+        "1.9%",
+        "1.9%",
+        "1.9%",
+        "1.8%",
+        "1.8%",
+        "1.8%",
+        "1.7%",
+        "1.7%"
+       ],
+       [
+        "CET1 capital ratio",
+        "14.3%",
+        "14.3%",
+        "14.5%",
+        "14.7%",
+        "14.8%",
+        "14.9%",
+        "13.1%",
+        "13.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should TD watch in its next results?",
+     "paragraphs": [
+      {
+       "n": 221,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "TD’s next results call is December 3, 2026, covering the year ended October 31. Investors should read expense growth, credit provisions and underlying revenue together. Profit helped by unusually low provisions means something different from profit created by stronger customer earnings."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 3, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (C$ millions)",
+     "value": "16,885"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "2.74"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "15,514",
+      "14,049",
+      "22,937",
+      "15,297",
+      "15,494",
+      "16,585",
+      "15,797",
+      "16,885"
+     ],
+     "EPS, diluted": [
+      "1.97",
+      "1.55",
+      "6.27",
+      "1.89",
+      "1.82",
+      "2.34",
+      "2.43",
+      "2.74"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/td-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-earnings"
+  }
+ },
+ "short_name": "TD",
+ "first_memo_date": "2026-10-10T02:15:57Z",
+ "translations": {
+  "fr": {
+   "version": "fr-6",
+   "source": "3de49555fa14bee7",
+   "teaser": {
+    "chapter": "1. L'entreprise",
+    "text": "Toronto-Dominion est une banque canadienne qui gagne de l’argent en recueillant des dépôts, en accordant des prêts, en traitant des paiements, en gérant des placements et en assurant contre les pertes. Pour comprendre ses activités, il faut suivre un dollar à travers les clients qui le lui fournissent, les services qui le mettent à contribution et les coûts qui déterminent ce que TD conserve."
+   },
+   "chapters": [
+    "Sommaire",
+    "1. L'entreprise",
+    "2. Le marché",
+    "3. Historique et décisions de capital",
+    "4. Direction et actionnariat",
+    "5. Les chiffres",
+    "6. Évaluation et action",
+    "7. La suite",
+    "8. Où le cours pourrait aller"
+   ],
+   "pages": {
+    "stock": {
+     "type": "stock",
+     "title": "Action TD : prévisions et valeur — octobre 2026",
+     "meta_description": "Le scénario pondéré de TD est de 158,33 $ CA en octobre 2027 et de 176,19 $ CA en octobre 2029, avec des scénarios baissier, de base et haussier.",
+     "opening": "Le scénario pondéré de TD est de 158,33 $ CA en octobre 2027 et de 176,19 $ CA en octobre 2029. Il repose sur la question de savoir si l’OCC accepte les mesures correctives visant les contrôles et lève le plafond des actifs.",
+     "closing": "Le mémo complet sur TD explique aussi ses activités, ses rivales, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Où pourraient se retrouver les actions de TD en octobre 2029?",
+       "paragraphs": [
+        {
+         "n": 12,
+         "section": "executive-summary",
+         "chapter": "Sommaire",
+         "subsection": "",
+         "text": "Le cours pondéré est de 158,33 $ CA en octobre 2027, soit une perte de 4 % dividendes compris. Il atteint 176,19 $ CA en octobre 2029, soit un gain de 12 %. Les scénarios ont des probabilités de 27 % pour le scénario baissier, de 53 % pour le scénario de base et de 20 % pour le scénario haussier; les résultats vont de 81,19 $ CA à 259,42 $ CA."
+        },
+        {
+         "n": 237,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "En octobre 2029, le scénario baissier donne 81,19 $ CA, tandis que le scénario haussier donne 259,42 $ CA. Les probabilités attribuent 27 % au scénario baissier et 53 % au scénario de base. Le scénario haussier reçoit 20 %, car l’acceptation par les autorités de réglementation et l’expansion du multiple demeurent incertaines."
+        }
+       ],
+       "table": {
+        "title": "Ce que les actions pourraient valoir",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 169,61 $, dividendes compris",
+        "caption": "Ce que les actions pourraient valoir ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 169,61 $, dividendes compris)",
+        "head": [
+         "Scénario",
+         "Probabilité",
+         "Octobre 2027",
+         "Octobre 2028",
+         "Octobre 2029"
+        ],
+        "rows": [
+         [
+          "Baissier",
+          "27 %",
+          "102.36 (-37 %)",
+          "91.50 (-41 %)",
+          "81.19 (-44 %)"
+         ],
+         [
+          "Base",
+          "53 %",
+          "171.64 (+4 %)",
+          "178.32 (+11 %)",
+          "193.18 (+22 %)"
+         ],
+         [
+          "Haussier",
+          "20 %",
+          "198.64 (+20 %)",
+          "227.85 (+40 %)",
+          "259.42 (+62 %)"
+         ],
+         [
+          "Pondéré",
+          "100 %",
+          "158.33 (-4 %)",
+          "164.79 (+3 %)",
+          "176.19 (+12 %)"
+         ]
+        ],
+        "note": "La ligne pondérée est la moyenne fondée sur les probabilités des résultats baissier, de base et haussier; elle peut donc être inférieure au scénario de base parce que la valeur plus faible du scénario baissier est incluse."
+       }
+      },
+      {
+       "heading": "Qu’est-ce qui doit bien tourner, et qu’est-ce qui pourrait mal tourner pour TD?",
+       "paragraphs": [
+        {
+         "n": 250,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le scénario baissier suppose que le redressement des activités américaines de TD prend plus de temps, tandis que le plafond des actifs limite la croissance et que les pertes des activités aux consommateurs absorbent du capital."
+        },
+        {
+         "n": 255,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le scénario de base serait renforcé si le BPA ajusté suit l’ambition de 7 %–10 % pour l’exercice 2029, si le rendement des capitaux propres ajusté s’approche de 16 %, si les réductions de coûts compensent les dépenses liées à la conformité et si les dividendes se poursuivent parallèlement à des rachats mesurés."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Comment TD génère-t-elle des liquidités et les restitue-t-elle?",
+       "paragraphs": [
+        {
+         "n": 240,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "La valeur comptable tient compte des bénéfices non distribués après les dividendes, les rachats d’actions, les pertes de crédit et les autres variations du capital. Le nombre d’actions tient compte de l’effet du programme de rachat d’actions de TD et des émissions fondées sur des actions. Les dividendes sont présentés séparément parce qu’ils contribuent au rendement total de l’investisseur même lorsque le cours de l’action n’augmente pas."
+        }
+       ],
+       "table": {
+        "title": "Ce que rapporte une action",
+        "unit": "$ CA par action, sauf pour la variation du nombre d’actions",
+        "caption": "Ce que rapporte une action ($ CA par action, sauf pour la variation du nombre d’actions)",
+        "head": [
+         "",
+         "Oct. 2025",
+         "Oct. 2024",
+         "Oct. 2023",
+         "Oct. 2022",
+         "Oct. 2021"
+        ],
+        "rows": [
+         [
+          "BPA, dilué",
+          "11.56",
+          "4.72",
+          "5.52",
+          "9.47",
+          "7.72"
+         ],
+         [
+          "− Dividendes attribués par action diluée moyenne pondérée",
+          "4.18",
+          "4.07",
+          "3.83",
+          "3.55",
+          "3.15"
+         ],
+         [
+          "− Rachats d’actions, par action",
+          "3.59",
+          "2.27",
+          "2.35",
+          "1.21",
+          "0.00"
+         ],
+         [
+          "**= Conservé, par action**",
+          "3.78",
+          "",
+          "",
+          "4.71",
+          "4.56"
+         ],
+         [
+          "**= Versé en excédent, par action**",
+          "",
+          "1.62",
+          "0.66",
+          "",
+          ""
+         ],
+         [
+          "Valeur comptable par action",
+          "68.78",
+          "59.59",
+          "56.56",
+          "55.00",
+          "51.66"
+         ]
+        ],
+        "note": "Les bénéfices par action de la société ne sont pas entièrement conservés : les dividendes et les rachats d’actions sont tous deux des montants versés en espèces aux actionnaires; ainsi, le rachat d’actions peut faire diminuer le nombre d’actions tout en réduisant le montant conservé."
+       }
+      },
+      {
+       "heading": "Combien un investisseur paie-t-il pour TD aujourd’hui?",
+       "paragraphs": [],
+       "table": {
+        "title": "Ce qu’un investisseur paie aujourd’hui",
+        "unit": "Millions $ CA",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Millions $ CA)",
+        "head": [
+         "",
+         "Aujourd’hui (20 oct. 2026)"
+        ],
+        "rows": [
+         [
+          "Cours de l’action",
+          "169.61"
+         ],
+         [
+          "Valeur boursière (calculée)",
+          "277,889"
+         ],
+         [
+          "Ratio cours-bénéfice, 12 derniers mois (calculé)",
+          "18.2x"
+         ],
+         [
+          "Ratio cours-bénéfice, 12 prochains mois (calculé)",
+          "16.8x"
+         ],
+         [
+          "Ratio cours-valeur comptable (calculé)",
+          "2.4x"
+         ],
+         [
+          "Ratio cours-valeur comptable tangible (calculé)",
+          "3.0x"
+         ],
+         [
+          "Rendement du dividende (calculé)",
+          "2.6%"
+         ]
+        ],
+        "note": "Le ratio cours-bénéfice de l’année suivante utilise les bénéfices attendus par les analystes; il s’agit donc d’une prévision plutôt que d’une mesure des bénéfices déjà réalisés par la société."
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Cours de l’action aujourd’hui, $ CA",
+       "value": "169.61"
+      },
+      {
+       "label": "Scénario pondéré, octobre 2029",
+       "value": "176.19 (+12 %)"
+      },
+      {
+       "label": "Ratio cours-bénéfice, 12 derniers mois",
+       "value": "18.2x"
+      },
+      {
+       "label": "Ratio cours-valeur comptable",
+       "value": "2.4x"
+      }
+     ],
+     "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-stock"
+    },
+    "dividend": {
+     "type": "dividend",
+     "title": "Action TD : dividende — octobre 2026",
+     "meta_description": "TD verse un dividende trimestriel, dont la couverture dépend de la génération de trésorerie, des rachats d’actions, du coût du crédit et des coûts de remédiation.",
+     "opening": "TD verse 1,12 $ CA par trimestre, soit 4,48 $ CA par année. Le mémo précise que le bénéfice comptable conservé n’est pas la même chose que les liquidités disponibles pour la distribution; il faut donc examiner tous les détails des flux de trésorerie pour évaluer la couverture en liquidités.",
+     "closing": "Le mémo complet répond aussi aux questions sur les activités de TD, ses rivales, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Combien TD verse-t-elle par action au cours des années présentées?",
+       "paragraphs": [
+        {
+         "n": 245,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Les dividendes commencent à 4,48 $ CA par année, puisque le dividende trimestriel déclaré est de 1,12 $ CA. Le scénario de base fait ensuite croître les dividendes de 5 % par année, pour atteindre 4,70 $ CA et 4,94 $ CA. Le scénario baissier gèle le dividende, tandis que le scénario haussier le fait croître de 10 % par année, jusqu’à 4,93 $ CA et 5,42 $ CA."
+        }
+       ],
+       "table": {
+        "title": "Ce que rapporte une action",
+        "unit": "$ CA par action, sauf pour la variation du nombre d’actions",
+        "caption": "Ce que rapporte une action ($ CA par action, sauf pour la variation du nombre d’actions)",
+        "head": [
+         "",
+         "oct. 2025",
+         "oct. 2024",
+         "oct. 2023",
+         "oct. 2022",
+         "oct. 2021"
+        ],
+        "rows": [
+         [
+          "BPA dilué",
+          "11.56",
+          "4.72",
+          "5.52",
+          "9.47",
+          "7.72"
+         ],
+         [
+          "− Dividendes attribués par action diluée moyenne pondérée",
+          "4.18",
+          "4.07",
+          "3.83",
+          "3.55",
+          "3.15"
+         ],
+         [
+          "− Rachats d’actions, par action",
+          "3.59",
+          "2.27",
+          "2.35",
+          "1.21",
+          "0.00"
+         ],
+         [
+          "**= Conservé, par action**",
+          "3.78",
+          "",
+          "",
+          "4.71",
+          "4.56"
+         ]
+        ],
+        "note": "Le bénéfice par action de l’entreprise n’est pas entièrement conservé : les dividendes et les rachats d’actions sont tous deux des sommes versées aux actionnaires, de sorte que les rachats peuvent faire diminuer le nombre d’actions tout en réduisant encore ce qui est conservé."
+       }
+      },
+      {
+       "heading": "Le dividende de TD est-il couvert par ses liquidités?",
+       "paragraphs": [
+        {
+         "n": 75,
+         "section": "essay-3",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
+         "text": "Les dividendes et les rachats d’actions de TD nécessitent donc deux lectures. Le bénéfice publié montre ce qui est arrivé aux propriétaires durant l’année, y compris les coûts et les gains exceptionnels. Le bénéfice ajusté donne une meilleure idée de la capacité bénéficiaire récurrente. Les rachats ont réduit le nombre moyen d’actions diluées, de 1 820,2 millions durant l’exercice 2021 à 1 728,0 millions durant l’exercice 2025, ce qui a accru la part de chaque action restante dans les bénéfices futurs, sans toutefois prouver que TD a toujours racheté ses actions à bas prix."
+        },
+        {
+         "n": 78,
+         "section": "essay-3",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
+         "text": "TD a aussi réinvesti dans la banque. Les acquisitions nettes d’immobilisations corporelles, de matériel et d’autres actifs incorporels sont passées de 1 129 millions $ CA durant l’exercice 2021 à 2 145 millions $ CA durant l’exercice 2025. Il ne s’agit que d’une partie des investissements, puisque la technologie, le personnel et la conformité figurent aussi dans les charges d’exploitation. Le bénéfice comptable conservé n’est donc pas la même chose que les liquidités disponibles pour la distribution."
+        }
+       ],
+       "table": {
+        "title": "Suivez l’argent : ce qu’elle gagne et rend",
+        "unit": "millions $ CA",
+        "caption": "Suivez l’argent : ce qu’elle gagne et rend (millions $ CA)",
+        "head": [
+         "",
+         "oct. 2025",
+         "oct. 2024",
+         "oct. 2023",
+         "oct. 2022",
+         "oct. 2021"
+        ],
+        "rows": [
+         [
+          "**= Bénéfice attribuable aux actionnaires ordinaires**",
+          "19,973",
+          "8,316",
+          "10,071",
+          "17,170",
+          "14,049"
+         ],
+         [
+          "− Dividendes déclarés sur les actions ordinaires",
+          "7,228",
+          "7,163",
+          "6,982",
+          "6,442",
+          "5,741"
+         ],
+         [
+          "− Rachats d’actions",
+          "6,206",
+          "3,997",
+          "4,285",
+          "2,195",
+          "0"
+         ],
+         [
+          "**= Conservé pour croître et renforcer le capital**",
+          "6,539",
+          "",
+          "",
+          "8,533",
+          "8,308"
+         ]
+        ],
+        "note": "Le ratio de distribution de l’entreprise est plus faible parce qu’il ne tient compte que des dividendes et utilise son propre bénéfice ajusté, tandis que notre mesure inclut aussi les rachats d’actions et utilise le bénéfice attribuable aux actionnaires ordinaires."
+       }
+      },
+      {
+       "heading": "Qu’est-ce qui pourrait changer le dividende de TD?",
+       "paragraphs": [
+        {
+         "n": 11,
+         "section": "executive-summary",
+         "chapter": "Sommaire",
+         "subsection": "",
+         "text": "TD peut atteindre 176,19 $ CA d’ici octobre 2029, pour un rendement total de 12 %, si les mesures de remédiation progressent, que le crédit demeure maîtrisable et que la valorisation reste globalement stable. La direction vise une croissance de 7 % à 10 % du BPA ajusté et un rendement des capitaux propres ajusté de 16 % d’ici l’exercice 2029. Elle prévoit 550 millions $ US avant impôts pour la remédiation aux États-Unis durant l’exercice 2026, avec une croissance des charges ajustées de 3 % à 4 %. Elle vise également un ratio de distribution des dividendes de 40 % à 50 % d’ici l’exercice 2029 et une accrétion organique annuelle du capital d’au moins 75 points de base."
+        },
+        {
+         "n": 246,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le taux de base est inférieur à la cible de croissance du BPA ajusté de 7 % à 10 % de la direction pour l’exercice 2029, tandis que le taux haussier correspond à sa limite supérieure. Le gel demeure plausible, puisque la remédiation devrait coûter 550 millions $ US avant impôts durant l’exercice 2026."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Quel est aujourd’hui le rendement du dividende de TD par rapport à son cours?",
+       "paragraphs": [],
+       "table": {
+        "title": "Ce qu’un investisseur paie aujourd’hui",
+        "unit": "millions $ CA",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (millions $ CA)",
+        "head": [
+         "",
+         "Aujourd’hui (20 octobre 2026)"
+        ],
+        "rows": [
+         [
+          "Cours de l’action",
+          "169.61"
+         ],
+         [
+          "Valeur boursière (calculée)",
+          "277,889"
+         ],
+         [
+          "Ratio cours-bénéfice, 12 prochains mois (calculé)",
+          "16.8x"
+         ],
+         [
+          "Rendement du dividende (calculé)",
+          "2.6%"
+         ]
+        ],
+        "note": "La mesure cours-bénéfice de l’année suivante utilise le bénéfice attendu par les analystes; il s’agit donc d’une prévision plutôt que d’une mesure de ce que l’entreprise a déjà gagné."
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Rendement du dividende",
+       "value": "2.6%"
+      },
+      {
+       "label": "Rendement des rachats d’actions",
+       "value": "2.2%"
+      }
+     ],
+     "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-dividend"
+    },
+    "earnings": {
+     "type": "earnings",
+     "title": "Action TD : résultats du 3 décembre 2026",
+     "meta_description": "Les prochains résultats de TD sont attendus le 3 décembre 2026; les prévisions, les résultats récents et les principaux points de surveillance sont présentés clairement.",
+     "opening": "Les prochains résultats de TD sont attendus le 3 décembre 2026. Le principal point à surveiller est de savoir si la croissance des charges, les provisions pour pertes sur créances et les revenus sous-jacents évoluent de concert.",
+     "closing": "Le mémo complet explique également les activités de TD, ses rivales, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Quelles sont les prévisions de TD pour l’exercice 2026 et l’exercice 2029?",
+       "paragraphs": [
+        {
+         "n": 11,
+         "section": "executive-summary",
+         "chapter": "Sommaire",
+         "subsection": "",
+         "text": "TD peut atteindre 176,19 $ CA d’ici octobre 2029, pour un rendement total de 12 %, si les mesures correctives progressent, si le crédit demeure maîtrisable et si la valorisation reste globalement stable. La direction vise une croissance de 7 % à 10 % du BPA ajusté et un rendement des capitaux propres ajusté de 16 % d’ici l’exercice 2029. Elle prévoit 550 millions $ US avant impôts pour les mesures correctives aux États-Unis à l’exercice 2026, avec une croissance des charges ajustées de 3 % à 4 %. Elle vise également un ratio de distribution des dividendes de 40 % à 50 % d’ici l’exercice 2029 et une augmentation annuelle du capital organique d’au moins 75 points de base."
+        }
+       ],
+       "table": {
+        "title": "Cibles et prévisions en vigueur",
+        "unit": "",
+        "caption": "Cibles et prévisions en vigueur",
+        "head": [
+         "",
+         "Période visée",
+         "Bas",
+         "Haut",
+         "Date indiquée"
+        ],
+        "rows": [
+         [
+          "RCP ajusté (exercice 2026)",
+          "Exercice 2026",
+          "13.0%",
+          "13.0%",
+          "27 août 2026"
+         ],
+         [
+          "Croissance du BPA ajusté (exercice 2026)",
+          "Exercice 2026",
+          "6.0%",
+          "8.0%",
+          "27 août 2026"
+         ],
+         [
+          "Croissance des charges ajustées (exercice 2026)",
+          "Exercice 2026",
+          "3.0%",
+          "4.0%",
+          "27 août 2026"
+         ],
+         [
+          "RCP ajusté (exercice 2029)",
+          "Exercice 2029",
+          "16.0%",
+          "16.0%",
+          "27 août 2026"
+         ],
+         [
+          "Croissance du BPA ajusté (exercice 2029)",
+          "Exercice 2029",
+          "7.0%",
+          "10.0%",
+          "27 août 2026"
+         ],
+         [
+          "Ratio de distribution des dividendes",
+          "Exercice 2029",
+          "40.0%",
+          "50.0%",
+          "27 août 2026"
+         ]
+        ],
+        "note": "Les colonnes basse et haute indiquent la fourchette visée par la banque, et non ce qu’elle a déjà réalisé; une case vide signifie qu’elle a fourni seulement une description générale plutôt qu’un chiffre précis."
+       }
+      },
+      {
+       "heading": "TD a-t-elle respecté ses promesses passées?",
+       "paragraphs": [
+        {
+         "n": 200,
+         "section": "essay-7",
+         "chapter": "7. La suite",
+         "subsection": "",
+         "text": "Le bilan est mitigé. L’examen du ratio de distribution de TD a produit des résultats tant à l’intérieur qu’à l’extérieur de sa fourchette promise, tandis que le dépassement de l’exercice 2024 était substantiel. TD a également suspendu ses cibles à moyen terme précédentes le 5 décembre 2024; le nouveau plan devra donc faire ses preuves grâce à des bénéfices soutenus et à une maîtrise des dépenses."
+        }
+       ],
+       "table": {
+        "title": "Promesses tenues : 3/5",
+        "unit": "",
+        "caption": "Promesses tenues : 3/5",
+        "head": [
+         "Prévisions de la direction",
+         "Vérifié",
+         "Au-dessus",
+         "Dans la fourchette",
+         "En dessous"
+        ],
+        "rows": [
+         [
+          "Ratio de distribution des dividendes",
+          "5 ans",
+          "1",
+          "3",
+          "1"
+         ]
+        ],
+        "note": "Trois des cinq prévisions du ratio de distribution des dividendes se situaient dans la fourchette attendue, tandis qu’une était supérieure et une autre inférieure."
+       }
+      },
+      {
+       "heading": "Que montrent les huit derniers trimestres de TD?",
+       "paragraphs": [
+        {
+         "n": 140,
+         "section": "essay-5",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
+         "text": "Juillet 2026 a été meilleur, mais l’amélioration s’explique par plusieurs facteurs. Les revenus ont atteint 16 885 millions $ CA, contre 15 297 millions $ CA un an plus tôt, tandis que le revenu net d’intérêts et la marge nette d’intérêts se sont également améliorés. Les coûts et les pertes sur créances n’ont pas augmenté aussi rapidement que les revenus."
+        },
+        {
+         "n": 141,
+         "section": "essay-5",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
+         "text": "La séquence trimestrielle est importante, car avril 2025 comprenait la vente de Schwab et constituait une base de comparaison exceptionnellement élevée. Juillet 2026 est plus révélateur : les revenus d’intérêts se sont améliorés, mais l’activité des marchés financiers a également contribué."
+        }
+       ],
+       "table": {
+        "title": "Les huit derniers trimestres",
+        "unit": "millions $ CA",
+        "caption": "Les huit derniers trimestres (millions $ CA)",
+        "head": [
+         "",
+         "juill. 2026",
+         "avr. 2026",
+         "janv. 2026",
+         "oct. 2025",
+         "juill. 2025",
+         "avr. 2025",
+         "janv. 2025",
+         "oct. 2024"
+        ],
+        "rows": [
+         [
+          "Revenus",
+          "16,885",
+          "15,797",
+          "16,585",
+          "15,494",
+          "15,297",
+          "22,937",
+          "14,049",
+          "15,514"
+         ],
+         [
+          "Revenu net d’intérêts",
+          "9,296",
+          "8,861",
+          "8,789",
+          "8,545",
+          "8,526",
+          "8,125",
+          "7,866",
+          "7,940"
+         ],
+         [
+          "Bénéfice net",
+          "4,615",
+          "4,251",
+          "4,043",
+          "3,280",
+          "3,336",
+          "11,129",
+          "2,793",
+          "3,635"
+         ],
+         [
+          "BPA dilué",
+          "2.74",
+          "2.43",
+          "2.34",
+          "1.82",
+          "1.89",
+          "6.27",
+          "1.55",
+          "1.97"
+         ],
+         [
+          "Marge nette d’intérêts",
+          "1.9%",
+          "1.9%",
+          "1.9%",
+          "1.8%",
+          "1.8%",
+          "1.8%",
+          "1.7%",
+          "1.7%"
+         ],
+         [
+          "Ratio de fonds propres CET1",
+          "14.3%",
+          "14.3%",
+          "14.5%",
+          "14.7%",
+          "14.8%",
+          "14.9%",
+          "13.1%",
+          "13.1%"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Que devrait surveiller TD dans ses prochains résultats?",
+       "paragraphs": [
+        {
+         "n": 221,
+         "section": "essay-7",
+         "chapter": "7. La suite",
+         "subsection": "",
+         "text": "La conférence téléphonique sur les prochains résultats de TD aura lieu le 3 décembre 2026 et portera sur l’exercice clos le 31 octobre. Les investisseurs devraient examiner ensemble la croissance des charges, les provisions pour pertes sur créances et les revenus sous-jacents. Un bénéfice soutenu par des provisions exceptionnellement faibles n’a pas la même signification qu’un bénéfice créé par une hausse des revenus tirés des clients."
+        }
+       ],
+       "table": null
+      }
+     ],
+     "facts": [
+      {
+       "label": "Prochains résultats",
+       "value": "3 décembre 2026"
+      },
+      {
+       "label": "Revenus, trimestre terminé en juill. 2026 (millions $ CA)",
+       "value": "16,885"
+      },
+      {
+       "label": "BPA dilué, trimestre terminé en juill. 2026",
+       "value": "2.74"
+      }
+     ],
+     "cta": "https://app.mystockbutler.com/signup?ticker=TD.TO&src=seo-earnings"
+    }
+   },
+   "held": [],
+   "pieces": {
+    "sent": 164,
+    "translated": 164,
+    "left_out": 0
+   }
+  }
+ }
+}

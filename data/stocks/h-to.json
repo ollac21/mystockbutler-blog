@@ -768,7 +768,7 @@
  "first_memo_date": "2026-10-16T16:29:14Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "8391329ddc6c7c52",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -799,22 +799,22 @@
         {
          "n": 238,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Les prévisions pondérées laissent Hydro One près de son cours actuel dans un an, avec des gains modérés par la suite. Le cours pondéré s’établit à 51,83 $ CA en octobre 2027, soit un rendement de 0 % dividendes compris, à 52,30 $ CA en octobre 2028, soit 4 %, et à 54,63 $ CA en octobre 2029, soit 11 %. Le cours actuel est de 53,19 $ CA."
         },
         {
          "n": 239,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "La fourchette est large, car le scénario baissier de 2029 atteint 38,51 $ CA, tandis que le scénario haussier atteint 71,61 $ CA. Les probabilités sont de 25 % pour le scénario baissier, de 55 % pour le scénario de base et de 20 % pour le scénario haussier; le scénario de base constitue donc la trajectoire centrale, mais ne représente pas une garantie."
         }
        ],
        "table": {
         "title": "Ce que pourraient valoir les actions",
         "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 53,19, dividendes compris",
-        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 53.19, dividends included)",
+        "caption": "Ce que pourraient valoir les actions ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 53,19, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -861,15 +861,15 @@
         {
          "n": 245,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario baissier prévoit un bénéfice net de 1 370 millions $ CA, de 1 360 millions $ CA et de 1 380 millions $ CA. Il suppose des approbations plus lentes, des coûts de financement plus élevés et la normalisation d’un avantage lié à l’impôt foncier qui n’a pas été quantifié. Le scénario haussier prévoit 1 480 millions $ CA, 1 600 millions $ CA et 1 730 millions $ CA, car une demande plus forte, des approbations obtenues en temps utile et une conversion plus rapide des projets soutiennent une croissance annuelle d’environ 8 %. Le bénéfice net de Hydro One est passé de 965 millions $ CA en 2021 à 1 339 millions $ CA en 2025, mais la trajectoire a été inégale; les prévisions ne considèrent donc pas la croissance comme automatique."
         },
         {
          "n": 250,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario baissier exige que les limites réglementaires, les retards de projets et la pression sur le financement se renforcent mutuellement. Une décision restrictive de l’OEB laisserait moins d’investissements produire un rendement autorisé, tandis que la construction continuerait de rendre les flux de trésorerie négatifs et de faire augmenter la dette. La fiabilité a déjà été inférieure aux cibles publiées, ce qui ajoute un risque d’exécution. Le cours de l’action atteint 44,49 $ CA en 2027 et 38,51 $ CA en 2029. La probabilité de 25 % reflète un risque baissier crédible, mais la base de bénéfices réglementés le rend moins probable que le scénario de base."
         }
        ],
@@ -881,17 +881,17 @@
         {
          "n": 146,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "L’amortissement répartit le coût d’un actif sur sa durée d’utilisation, tandis que les liquidités sortent au moment où l’actif est construit. C’est pourquoi un bénéfice net de 1 339 millions $ CA peut coexister avec des flux de trésorerie liés à l’exploitation de 2 695 millions $ CA. Les dépenses en immobilisations payées comptant se sont élevées à 3 050 millions $ CA, produisant des flux de trésorerie disponibles négatifs de 355 millions $ CA."
         }
        ],
        "table": {
         "title": "Suivez l’argent : les flux de trésorerie disponibles réels",
         "unit": "Millions $ CA",
-        "caption": "Follow the money: real free cash flow (C$ millions)",
+        "caption": "Suivez l’argent : les flux de trésorerie disponibles réels (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -949,9 +949,9 @@
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA",
-        "caption": "What an investor pays today (C$ millions)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (16 oct. 2026)"
         ],
         "rows": [
@@ -1002,50 +1002,6 @@
        "value": "22.3x"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 53.185,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "25 %",
-        "values": [
-         "44.49 (-14 %)",
-         "40.23 (-19 %)",
-         "38.51 (-19 %)"
-        ]
-       },
-       "Base": {
-        "probability": "55 %",
-        "values": [
-         "52.50 (+2 %)",
-         "53.38 (+6 %)",
-         "55.78 (+14 %)"
-        ]
-       },
-       "Bull": {
-        "probability": "20 %",
-        "values": [
-         "59.16 (+14 %)",
-         "64.42 (+27 %)",
-         "71.61 (+44 %)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100 %",
-        "values": [
-         "51.83 (+0 %)",
-         "52.30 (+4 %)",
-         "54.63 (+11 %)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/h-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=H.TO&src=seo-stock"
     },
     "dividend": {
@@ -1061,17 +1017,17 @@
         {
          "n": 80,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the cash went",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "Les dividendes ont également continué d’augmenter. Ils sont passés de 629 millions $ CA à 788 millions $ CA et ont totalisé 3,522 milliards $ CA au cours de la période. Après les versements aux actionnaires minoritaires, Hydro One a versé 4,013 milliards $ CA au-delà de ses flux de trésorerie disponibles. Il n’y a eu aucun rachat d’actions."
         }
        ],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action; variation du nombre d’actions en %",
-        "caption": "What one share gets (C$ per share; share-count change in %)",
+        "caption": "Ce que rapporte une action ($ CA par action; variation du nombre d’actions en %)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1113,17 +1069,17 @@
         {
          "n": 147,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les flux de trésorerie disponibles correspondent à la trésorerie d’exploitation après les dépenses en immobilisations. La soustraction de la rémunération à base d’actions comme coût économique donne des flux de trésorerie disponibles réels négatifs de 379 millions $ CA. Cela ne signifie pas que l’entreprise a de nouveau versé cette rémunération en espèces; cela tient compte du coût assumé par les actionnaires."
         }
        ],
        "table": {
         "title": "Suivez l’argent : où sont allés les flux de trésorerie disponibles",
         "unit": "Millions $ CA",
-        "caption": "Follow the money: where the free cash flow went (C$ millions)",
+        "caption": "Suivez l’argent : où sont allés les flux de trésorerie disponibles (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1173,22 +1129,22 @@
         {
          "n": 9,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The verdict",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "La direction vise une croissance annuelle composée du BPA de 6 % à 8 % jusqu’en 2027, ce qui implique un BPA de 2,15 $ CA à 2,37 $ CA en 2027. Elle vise une croissance annuelle moyenne du dividende de 6 % jusqu’en 2027, sous réserve de l’approbation du conseil et des besoins de trésorerie."
         },
         {
          "n": 247,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Dans le scénario de base, les dividendes augmentent modérément, passant de 1,4971 $ CA à 1,572 $ CA, puis à 1,6506 $ CA par action. La trajectoire suit la cible de 6 % de la direction jusqu’en 2027, puis ralentit à 5 % par année. Dans le scénario baissier, le dividende augmente à 1,4406 $ CA, puis reste inchangé parce que les flux de trésorerie disponibles étaient négatifs, à 355 millions $ CA, en 2025. Dans le scénario haussier, il atteint 1,5113 $ CA, 1,6171 $ CA et 1,7303 $ CA, ce qui exige des bénéfices et des conditions de financement suffisamment solides pour soutenir une croissance de 7 %."
         }
        ],
        "table": {
         "title": "Le tableau des prévisions",
         "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "caption": "Le tableau des prévisions (scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire)",
         "head": [
          "",
          "octobre 2027",
@@ -1224,8 +1180,8 @@
         {
          "n": 7,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The numbers",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "Le BPA dilué de Hydro One est passé de 1,61 $ CA en 2021 à 2,23 $ CA en 2025, mais les flux de trésorerie disponibles calculés par action sont devenus négatifs, à 0,63 $ CA, en 2025. Ses flux de trésorerie disponibles publiés représentaient -4,2 % des revenus. À 22,5 fois le ratio cours-bénéfice des douze derniers mois, le rendement du dividende de 2,7 % procure un revenu courant modeste."
         }
        ],
@@ -1250,42 +1206,6 @@
        "value": "-1.1%"
       }
      ],
-     "chart": {
-      "title": "What one share gets",
-      "unit": "C$ per share; share-count change in %",
-      "columns": [
-       "2021",
-       "2022",
-       "2023",
-       "2024",
-       "2025"
-      ],
-      "rows": {
-       "Dividends paid, per share": [
-        "1.05",
-        "1.10",
-        "1.17",
-        "1.24",
-        "1.31"
-       ],
-       "Real free cash flow per share": [
-        "0.12",
-        "0.28",
-        "-0.12",
-        "-0.48",
-        "-0.63"
-       ],
-       "Free cash flow per share": [
-        "0.13",
-        "0.29",
-        "-0.11",
-        "-0.46",
-        "-0.59"
-       ]
-      },
-      "kind": "dividend_vs_fcf"
-     },
-     "path": "/stocks/h-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=H.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1301,15 +1221,15 @@
         {
          "n": 210,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "La direction promet une croissance stable du bénéfice par action et du dividende jusqu’en 2027, soutenue par une base d’actifs réglementés en expansion. Le bénéfice par action correspond au bénéfice attribuable à chaque action ordinaire, et Hydro One vise une croissance annuelle composée du bénéfice par action de 6 % à 8 % de 2023 à 2027. Comme la croissance se compose, chaque année s’appuie sur le résultat plus élevé de l’année précédente. Cette cible se traduit par une fourchette de bénéfice par action de 2,15 $ CA à 2,37 $ CA en 2027."
         },
         {
          "n": 212,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "La croissance de la base tarifaire n’est donc pas la même chose que celle du bénéfice par action. Les intérêts, les impôts, les coûts d’exploitation et toute nouvelle action déterminent encore ce qui revient aux actionnaires. La direction promet également une croissance annuelle moyenne du dividende de 6 % jusqu’en 2027, même si le conseil d’administration doit approuver chaque versement et tenir compte des besoins de trésorerie futurs."
         }
        ],
@@ -1321,24 +1241,24 @@
         {
          "n": 160,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les revenus, le bénéfice d’exploitation et le bénéfice net ont tous augmenté par rapport à l’année précédente, et le bénéfice par action dilué a progressé. La marge brute a toutefois reculé, car les achats d’électricité ont fait croître le dénominateur des revenus plus rapidement que les bénéfices sous-jacents liés au transport et à la distribution."
         },
         {
          "n": 162,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les flux de trésorerie liés aux activités d’exploitation se sont améliorés tandis que les dépenses en immobilisations payées comptant ont diminué, rapprochant les flux de trésorerie disponibles trimestriels de l’équilibre. Le premier semestre est demeuré négatif, car le trimestre précédent avait produit un important déficit de trésorerie. Un trimestre positif ne suffit pas à établir que le programme annuel d’investissements et de dividendes s’autofinance."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
         "unit": "Millions $ CA",
-        "caption": "The last eight quarters (C$ millions)",
+        "caption": "Les huit derniers trimestres (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Juin 2026",
          "Mars 2026",
          "Déc. 2025",
@@ -1425,8 +1345,8 @@
         {
          "n": 232,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Les tests décisifs consistent à déterminer si les organismes de réglementation approuvent le plan, si les projets entrent en service, si la fiabilité s’améliore et si la qualité du crédit demeure solide. Le 7 octobre 2026, Hydro One a soumis un plan d’investissement conjoint d’environ 37 milliards $ CA pour 2028–2032. Une demande tarifaire conjointe demande à la Commission de l’énergie de l’Ontario, l’organisme provincial de réglementation des services publics, d’examiner ensemble le transport et la distribution et de décider ce que les clients devraient payer."
         }
        ],
@@ -1436,7 +1356,7 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "November 10, 2026"
+       "value": "10 novembre 2026"
       },
       {
        "label": "Revenus, trimestre terminé en juin 2026 (millions $ CA)",
@@ -1447,44 +1367,6 @@
        "value": "0.62"
       }
      ],
-     "chart": {
-      "title": "The last eight quarters",
-      "unit": "C$ millions",
-      "columns": [
-       "Sep 2024",
-       "Dec 2024",
-       "Mar 2025",
-       "Jun 2025",
-       "Sep 2025",
-       "Dec 2025",
-       "Mar 2026",
-       "Jun 2026"
-      ],
-      "rows": {
-       "Revenue": [
-        "2,192",
-        "2,095",
-        "2,408",
-        "2,066",
-        "2,299",
-        "2,268",
-        "2,648",
-        "2,302"
-       ],
-       "EPS, diluted": [
-        "0.62",
-        "0.33",
-        "0.60",
-        "0.54",
-        "0.70",
-        "0.39",
-        "0.65",
-        "0.62"
-       ]
-      },
-      "kind": "quarters"
-     },
-     "path": "/stocks/h-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=H.TO&src=seo-earnings"
     }
    },

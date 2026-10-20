@@ -753,7 +753,7 @@
  "first_memo_date": "2026-10-18T05:52:53Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "3913a478ed95652d",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -784,22 +784,22 @@
         {
          "n": 220,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le cours pondéré prévu s’établit à 112,40 $ CA en octobre 2027, soit un rendement de 6 % dividendes compris. Il atteint 124,71 $ CA en octobre 2028, soit un rendement de 19 %. En octobre 2029, le cours pondéré s’établit à 142,20 $ CA, soit un rendement de 36 %."
         },
         {
          "n": 221,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "La fourchette pour octobre 2029 est large : 82,94 $ CA dans le scénario baissier à 205,70 $ CA dans le scénario haussier. Le scénario de référence affiche la probabilité la plus élevée, à 53 %. Le scénario baissier représente 27 %. Le scénario haussier représente 20 %."
         }
        ],
        "table": {
         "title": "Ce que les actions pourraient valoir",
         "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 106,42, dividendes compris",
-        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 106.42, dividends included)",
+        "caption": "Ce que les actions pourraient valoir ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 106,42, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -846,8 +846,8 @@
         {
          "n": 231,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Cela produit la ligne des bénéfices de base dans le tableau. Le scénario baissier suppose un démarrage plus lent des projets, une utilisation et des marges plus faibles de 10,8 %, 10,6 % et 10,7 %. Le scénario haussier suppose que les contrats fédéraux, les projets reportés et les gains de productivité soutenus par l’IA font passer les marges de 12,0 % à 12,4 %. Le carnet de commandes de CGI, de 31,79 milliards $ CA, et son ratio commandes-facturation des douze derniers mois de 108,1 % soutiennent une croissance graduelle, mais le carnet comprend des estimations et des travaux acquis."
         }
        ],
@@ -859,17 +859,17 @@
         {
          "n": 135,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les flux de trésorerie disponibles commencent par les liquidités provenant des activités d’exploitation, desquelles on soustrait les dépenses en immobilisations et les paiements de loyers. Une mesure plus stricte soustrait également la rémunération en actions. La rémunération en actions ne constitue pas une sortie de trésorerie immédiate, mais l’émission d’actions a un coût économique puisqu’elle peut diluer les actionnaires existants."
         }
        ],
        "table": {
         "title": "Suivons l’argent : les flux de trésorerie disponibles réels",
         "unit": "Milliers de $ CA",
-        "caption": "Follow the money: real free cash flow (C$ thousands)",
+        "caption": "Suivons l’argent : les flux de trésorerie disponibles réels (Milliers de $ CA)",
         "head": [
-         "Row",
+         "",
          "Sept. 2025",
          "Sept. 2024",
          "Sept. 2023",
@@ -927,17 +927,17 @@
         {
          "n": 163,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.1 — What an investor pays today",
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
          "text": "CGI Inc. se négocie à un prix modeste par rapport à ses bénéfices, mais le cours de l’action ne raconte qu’une partie de l’histoire de son évaluation. La question plus complète est de savoir combien un acheteur paie pour l’entreprise une fois la dette, les acquisitions et l’utilisation des liquidités prises en compte."
         }
        ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Milliers de $ CA",
-        "caption": "What an investor pays today (C$ thousands)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Milliers de $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (18 oct. 2026)"
         ],
         "rows": [
@@ -984,50 +984,6 @@
        "value": "10.9x"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 106.42,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "27 %",
-        "values": [
-         "87.38 (-17 %)",
-         "79.38 (-24 %)",
-         "82.94 (-20 %)"
-        ]
-       },
-       "Base": {
-        "probability": "53 %",
-        "values": [
-         "115.37 (+9 %)",
-         "131.13 (+25 %)",
-         "148.42 (+41 %)"
-        ]
-       },
-       "Bull": {
-        "probability": "20 %",
-        "values": [
-         "138.31 (+31 %)",
-         "168.92 (+60 %)",
-         "205.70 (+96 %)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100 %",
-        "values": [
-         "112.40 (+6 %)",
-         "124.71 (+19 %)",
-         "142.20 (+36 %)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/gib-a-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-stock"
     },
     "dividend": {
@@ -1043,17 +999,17 @@
         {
          "n": 78,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the cash went",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "CGI a commencé à verser un dividende trimestriel au cours de l’exercice 2025 et l’a porté à 0,17 $ CA en janvier 2026. Le conseil a aussi renouvelé en janvier 2026 l’autorisation de racheter jusqu’à 18 975 360 actions de catégorie A. Ces mesures retournent des liquidités aux actionnaires, tandis que les acquisitions exigent des liquidités; elles accentuent donc l’importance d’un endettement et d’une intégration disciplinés."
         }
        ],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action",
-        "caption": "What one share gets (C$ per share)",
+        "caption": "Ce que rapporte une action ($ CA par action)",
         "head": [
-         "Row",
+         "",
          "Sept. 2025",
          "Sept. 2024",
          "Sept. 2023",
@@ -1103,17 +1059,17 @@
         {
          "n": 79,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the cash went",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "La stratégie s’est poursuivie au cours de l’exercice 2026. CGI a décrit l’affectation des capitaux comme des investissements dans l’entreprise, des acquisitions relutives, des rachats d’actions et des dividendes. Il en ressort un compromis clair : les rendements pour les actionnaires peuvent être attrayants, mais les acquisitions doivent générer suffisamment de liquidités durables pour justifier les capitaux investis et la dette supplémentaire."
         }
        ],
        "table": {
         "title": "Suivez l’argent : où sont allés les flux de trésorerie disponibles",
         "unit": "Milliers de $ CA",
-        "caption": "Follow the money: where the free cash flow went (C$ thousands)",
+        "caption": "Suivez l’argent : où sont allés les flux de trésorerie disponibles (Milliers de $ CA)",
         "head": [
-         "Row",
+         "",
          "Sept. 2025",
          "Sept. 2024",
          "Sept. 2023",
@@ -1179,22 +1135,22 @@
         {
          "n": 235,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario de base du dividende le maintient à 0,68 $ CA jusqu’en octobre 2027, avant une hausse à 0,72 $ et à 0,76 $. Le scénario baissier le maintient à 0,68 $ pendant toute la période. Le scénario haussier atteint 0,72 $, 0,80 $ et 0,88 $. Ces hypothèses reflètent des flux de trésorerie disponibles substantiels, mais aussi le pouvoir discrétionnaire du conseil et les exigences concurrentes liées à la dette, aux acquisitions et aux rachats d’actions."
         },
         {
          "n": 246,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.5 — What would change the view",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le point de vue se rapprocherait du scénario baissier en 2027–2028 si les marchés publics fédéraux et le démarrage des projets des clients demeuraient retardés, ce qui réduirait la croissance des revenus et le taux d’utilisation. Il s’affaiblirait davantage en 2027–2029 si l’IA réduisait les heures facturables ou forçait des concessions tarifaires."
         }
        ],
        "table": {
         "title": "Le tableau des prévisions",
         "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions de dollars CA, par action en dollars CA, sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "caption": "Le tableau des prévisions (scénario de base, puis baissier / haussier entre parenthèses; millions de dollars CA, par action en dollars CA, sauf indication contraire)",
         "head": [
          "",
          "Octobre 2027",
@@ -1236,8 +1192,8 @@
         {
          "n": 7,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The numbers",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "L’action de CGI vaut 106,42 $ CA. Elle se négocie à 13,2 fois les bénéfices des douze derniers mois et à 10,9 fois les bénéfices prévus des douze prochains mois. Le rendement des flux de trésorerie disponibles, de 8,8 %, s’accompagne d’un rendement des rachats d’actions de 5,8 %. Les revenus de l’exercice 2025 ont augmenté de 8,4 %, tandis que la marge d’exploitation s’est établie à 14,6 %, en baisse par rapport à 16,0 % en 2021. Les flux de trésorerie disponibles réels déclarés par CGI représentaient 11,8 % des revenus, contre 14,7 % en 2021. Le BPA dilué s’élevait à 7,35 $ CA et les flux de trésorerie disponibles réels par action, à 8,30 $ CA; les rachats d’actions s’élevaient à 5,65 $ CA par action et le nombre moyen d’actions diluées a diminué de 2,7 %."
         }
        ],
@@ -1262,42 +1218,6 @@
        "value": "8.8%"
       }
      ],
-     "chart": {
-      "title": "What one share gets",
-      "unit": "C$ per share",
-      "columns": [
-       "Sep 2021",
-       "Sep 2022",
-       "Sep 2023",
-       "Sep 2024",
-       "Sep 2025"
-      ],
-      "rows": {
-       "Dividends paid, per share": [
-        "0.00",
-        "0.00",
-        "0.00",
-        "0.00",
-        "0.60"
-       ],
-       "Real free cash flow per share": [
-        "7.03",
-        "6.20",
-        "7.29",
-        "8.12",
-        "8.30"
-       ],
-       "Free cash flow per share": [
-        "7.21",
-        "6.40",
-        "7.54",
-        "8.41",
-        "8.60"
-       ]
-      },
-      "kind": "dividend_vs_fcf"
-     },
-     "path": "/stocks/gib-a-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1313,8 +1233,8 @@
         {
          "n": 194,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Pour l’exercice 2026, CGI prévoit un taux d’imposition effectif ajusté de 26 % à 27 %. La direction attribue principalement cette hausse à une augmentation temporaire de l’impôt en France. Si le bénéfice d’exploitation reste inchangé, le taux plus élevé laisse moins de bénéfices aux actionnaires."
         }
        ],
@@ -1326,17 +1246,17 @@
         {
          "n": 146,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les chiffres ajustés donnent donc le signal le plus clair : le BAII ajusté a progressé de 2,3 %, le bénéfice net ajusté de 1,7 % et le bénéfice par action dilué ajusté de 9,0 %. La croissance du bénéfice présenté est bien réelle, mais une partie de sa vigueur reflète la base de coûts exceptionnellement élevée de la période précédente."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
         "unit": "Milliers $ CA",
-        "caption": "The last eight quarters (C$ thousands)",
+        "caption": "Les huit derniers trimestres (Milliers $ CA)",
         "head": [
-         "Row",
+         "",
          "Juin 2026",
          "Mars 2026",
          "Déc. 2025",
@@ -1401,8 +1321,8 @@
         {
          "n": 211,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Il faudra examiner, dans les résultats du trimestre de septembre et de l’exercice 2026 attendus en novembre, la croissance des revenus, les prises de commandes, le démarrage des projets et la montée en puissance des services gérés. Si les prises de commandes restent solides tandis que les revenus progressent lentement, le calendrier de la transition pourrait expliquer l’écart. Si le carnet de commandes diminue ou si les retards se multiplient, le signal pour l’avenir s’affaiblit."
         }
        ],
@@ -1412,7 +1332,7 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "November 11, 2026"
+       "value": "11 novembre 2026"
       },
       {
        "label": "Revenus, trimestre terminé en juin 2026 (milliers $ CA)",
@@ -1423,44 +1343,6 @@
        "value": "2.23"
       }
      ],
-     "chart": {
-      "title": "The last eight quarters",
-      "unit": "C$ thousands",
-      "columns": [
-       "Sep 2024",
-       "Dec 2024",
-       "Mar 2025",
-       "Jun 2025",
-       "Sep 2025",
-       "Dec 2025",
-       "Mar 2026",
-       "Jun 2026"
-      ],
-      "rows": {
-       "Revenue": [
-        "3,660,391",
-        "3,785,245",
-        "4,023,409",
-        "4,090,182",
-        "4,013,837",
-        "4,078,355",
-        "4,156,169",
-        "4,193,022"
-       ],
-       "EPS, diluted": [
-        "1.91",
-        "1.92",
-        "1.89",
-        "1.82",
-        "1.72",
-        "2.03",
-        "2.09",
-        "2.23"
-       ]
-      },
-      "kind": "quarters"
-     },
-     "path": "/stocks/gib-a-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=GIB.A.TO&src=seo-earnings"
     }
    },

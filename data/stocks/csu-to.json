@@ -611,7 +611,7 @@
  "first_memo_date": "2026-10-15T04:13:22Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "bfe23370f1b8684b",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -642,22 +642,22 @@
         {
          "n": 9,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The verdict",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "Le cours pondéré s’établit à 3 488,86 $ CA en octobre 2027, soit un rendement de 11 %, dividendes compris. En octobre 2029, il atteint 5 068,80 $ CA, soit un rendement de 62 %, dividendes compris. Les prévisions attribuent une probabilité de 30 % au scénario baissier, de 50 % au scénario de référence et de 20 % au scénario haussier."
         },
         {
          "n": 225,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Les prévisions pondérées selon les probabilités s’établissent à 3 488,86 en octobre 2027, à 4 225,25 en octobre 2028 et à 5 068,80 en octobre 2029, dividendes compris. Ces chiffres correspondent à des rendements de 11 %, de 35 % et de 62 % par rapport au cours actuel de 3 139,30. En octobre 2029, l’écart est grand : de 2 256,63 dans le scénario baissier à 7 599,99 dans le scénario haussier."
         }
        ],
        "table": {
         "title": "Ce que pourraient valoir les actions",
         "unit": "$ CA par action de CSU.TO à chaque date; entre parenthèses, le rendement depuis le cours actuel de 3 139,30, dividendes compris",
-        "caption": "What the shares could be worth (CAD per CSU.TO share at each date; in brackets the return since today's 3139.30, dividends included)",
+        "caption": "Ce que pourraient valoir les actions ($ CA par action de CSU.TO à chaque date; entre parenthèses, le rendement depuis le cours actuel de 3 139,30, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -704,15 +704,15 @@
         {
          "n": 239,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario baissier exige que la faible croissance organique persiste, qu’Altera continue de rétrécir et que les acquisitions de plus grande taille rapportent moins. Les flux de trésorerie continuent de croître, mais les investisseurs paient moins pour chaque dollar de valeur liquidative. Le cours atteint 2 444,17 en octobre 2027 et 2 256,63 en octobre 2029. Sa probabilité est de 30 %, car la croissance organique du premier semestre n’a été que de 1 %, même si les revenus récurrents et le nombre stable d’actions limitent le risque d’un effondrement marqué."
         },
         {
          "n": 241,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario haussier exige qu’Altera se stabilise, que les améliorations des produits élargissent la croissance organique et que les cohortes récentes améliorent les retours de liquidités. Le cours atteint 4 362,70 en octobre 2027 et 7 599,99 en octobre 2029. Sa probabilité est de 20 %, car ce résultat repose sur la faiblesse récente plutôt que sur des preuves établies."
         }
        ],
@@ -724,8 +724,8 @@
         {
          "n": 142,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.4 — Investments, cash and debt",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Le FCFA2S est la mesure de CSU des liquidités disponibles pour les actionnaires si elle ne réalise aucune acquisition, aucun investissement et aucun remboursement de dette. En 2025, il s’élevait à 1,683 milliard $ CA. Le calcul déduit les intérêts sur la dette, les paiements de location, les dépenses en immobilisations, la réévaluation de 440 millions $ CA d’IRGA et la part revenant aux actionnaires minoritaires. Il mesure donc la capacité financière, et non nécessairement les sommes disponibles pour les dividendes."
         }
        ],
@@ -737,9 +737,9 @@
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA",
-        "caption": "What an investor pays today (C$ millions)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (15 oct. 2026)"
         ],
         "rows": [
@@ -786,50 +786,6 @@
        "value": "11.3x"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 2207.8441701218744,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "30 %",
-        "values": [
-         "2444.17 (-22 %)",
-         "2383.88 (-24 %)",
-         "2256.63 (-28 %)"
-        ]
-       },
-       "Base": {
-        "probability": "50 %",
-        "values": [
-         "3766.15 (+20 %)",
-         "4690.67 (+50 %)",
-         "5743.62 (+84 %)"
-        ]
-       },
-       "Bull": {
-        "probability": "20 %",
-        "values": [
-         "4362.70 (+39 %)",
-         "5823.74 (+86 %)",
-         "7599.99 (+143 %)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100 %",
-        "values": [
-         "3488.86 (+11 %)",
-         "4225.25 (+35 %)",
-         "5068.80 (+62 %)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/csu-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CSU.TO&src=seo-stock"
     },
     "dividend": {
@@ -845,8 +801,8 @@
         {
          "n": 236,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Les dividendes demeurent à 4,00 $ par action annuellement dans les trois cas. Cela correspond à chaque année de 2021 à 2025, tandis que CSU a systématiquement affecté beaucoup plus de capital aux acquisitions qu’aux dividendes. Même le scénario baissier ne fournit aucune preuve suffisamment solide pour présumer une réduction."
         }
        ],
@@ -858,24 +814,24 @@
         {
          "n": 142,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.4 — Investments, cash and debt",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Le FCFA2S est la mesure de CSU des liquidités disponibles pour les actionnaires si elle ne réalise aucune acquisition, aucun investissement et aucun remboursement de dette. En 2025, il s’élevait à 1,683 milliard $ US. Le calcul déduit les intérêts sur la dette, les paiements de location, les dépenses en immobilisations, la réévaluation de 440 millions $ US d’IRGA et la part revenant aux propriétaires minoritaires. Il mesure donc la capacité financière, et non nécessairement les liquidités disponibles pour les dividendes."
         },
         {
          "n": 146,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.4 — Investments, cash and debt",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "La liquidité exige la même prudence. Un ratio de liquidité générale de quelque 0,90 en juin reflète en partie les revenus reportés, qui représentent des services que CSU doit encore fournir à ses clients. Le nombre d’actions est demeuré inchangé pendant la période, tandis que le dividende régulier est resté à 4,00 $ par action. La génération de liquidités a créé une marge pour composer les rendements, mais le bilan détermine quelle part de cette marge est réellement disponible."
         }
        ],
        "table": {
         "title": "Suivez l’argent : où le capital a été affecté",
         "unit": "millions $ US",
-        "caption": "Follow the money: where the capital went (US$ millions)",
+        "caption": "Suivez l’argent : où le capital a été affecté (millions $ US)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -925,15 +881,15 @@
         {
          "n": 242,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.5 — What would change the view",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario baissier gagnerait du poids en 2027–2028 si la croissance organique ajustée pour les devises demeurait près de 1 % et si le déclin d’Altera se poursuivait. Il se renforcerait davantage en 2027–2029 si les prix d’achat augmentaient tandis que les rendements des acquisitions s’affaiblissaient."
         }
        ],
        "table": {
         "title": "Le tableau des prévisions",
         "unit": "scénario de base, puis scénario baissier / haussier entre parenthèses; millions $ US, par action en $ US, sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+        "caption": "Le tableau des prévisions (scénario de base, puis scénario baissier / haussier entre parenthèses; millions $ US, par action en $ US, sauf indication contraire)",
         "head": [
          "",
          "Octobre 2027",
@@ -975,17 +931,17 @@
         {
          "n": 165,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.1 — What an investor pays today",
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
          "text": "À 3 139,30 $ CA l’action, le marché évalue toutes les actions de CSU à 66 526,57 millions $ CA. Son ratio cours/bénéfice prévisionnel pour les douze prochains mois, ou C/B, est de 18,6x. Cela signifie que les investisseurs paient 18,60 $ CA pour chaque dollar canadien de bénéfice annuel prévu."
         }
        ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "millions $ CA",
-        "caption": "What an investor pays today (C$ millions)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (15 oct. 2026)"
         ],
         "rows": [
@@ -1028,28 +984,6 @@
        "value": "0.0%"
       }
      ],
-     "chart": {
-      "title": "What one share gets",
-      "unit": "US$ per share",
-      "columns": [
-       "2021",
-       "2022",
-       "2023",
-       "2024",
-       "2025"
-      ],
-      "rows": {
-       "Dividends paid, per share": [
-        "4.01",
-        "4.01",
-        "4.01",
-        "4.01",
-        "4.01"
-       ]
-      },
-      "kind": "dividend_vs_fcf"
-     },
-     "path": "/stocks/csu-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CSU.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1065,15 +999,15 @@
         {
          "n": 195,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has said",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "La direction s’attend à un retour de la croissance normale, mais elle n’a promis ni résultat pour l’ensemble de l’exercice, ni budget d’acquisitions, ni échéancier pour les revenus liés à l’IA."
         },
         {
          "n": 197,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has said",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Cette distinction explique pourquoi la croissance attribuable aux acquisitions peut sembler forte alors que les entreprises existantes croissent lentement. La direction a évoqué une croissance normalisée d’environ 5 %, mais les activités récurrentes de maintenance, à l’exclusion d’Altera, un fournisseur de logiciels hospitaliers, ont progressé de 4 % à taux de change constants. Les revenus récurrents proviennent de paiements répétés de soutien, de logiciels hébergés ou de transactions; ils constituent donc un indicateur utile de la santé de l’entreprise."
         }
        ],
@@ -1085,17 +1019,17 @@
         {
          "n": 125,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.1 — Operating earnings against net income",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les revenus ont progressé rapidement, mais le bénéfice net et le bénéfice dilué par action ont évolué de façon inégale. La raison : CSU consolide les entreprises acquises, puis comptabilise plusieurs conséquences comptables qui n’évoluent pas au même rythme que les ventes aux clients ou la perception de liquidités."
         }
        ],
        "table": {
         "title": "Les huit dernières périodes publiées",
         "unit": "millions $ US",
-        "caption": "The last eight reported periods (US$ millions)",
+        "caption": "Les huit dernières périodes publiées (millions $ US)",
         "head": [
-         "Row",
+         "",
          "juin 2026",
          "mars 2026",
          "déc. 2025",
@@ -1160,8 +1094,8 @@
         {
          "n": 217,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Les analystes estiment que CSU pourrait publier ses résultats du T3 2026 le 6 novembre 2026, mais CSU n’a pas confirmé cette date. Les investisseurs devraient surveiller la croissance organique récurrente sur une base comparable et vérifier si les engagements d’acquisition se transforment en achats réalisés. Une reprise appuierait l’explication donnée par la direction au sujet du T2; une faiblesse persistante nécessiterait une nouvelle explication."
         }
        ],
@@ -1171,11 +1105,9 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "November 6, 2026"
+       "value": "6 novembre 2026"
       }
      ],
-     "chart": null,
-     "path": "/stocks/csu-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CSU.TO&src=seo-earnings"
     }
    },

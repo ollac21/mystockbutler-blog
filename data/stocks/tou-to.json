@@ -828,7 +828,7 @@
  "first_memo_date": "2026-10-17T15:21:23Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "d33a4c5ddc7d0e62",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -859,22 +859,22 @@
         {
          "n": 230,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "La prévision pondérée pointe vers des gains modestes, mais avec une large gamme de résultats. La première année, le cours pondéré s’établit à 67,17 $ CA, soit un rendement total de 5 %, dividendes compris. La deuxième, il atteint 70,62 $ CA, soit 13 %. La troisième, il atteint 76,96 $ CA, soit 27 %."
         },
         {
          "n": 231,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.1 — The verdict",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le résultat baissier à la date finale est de 49,81 $ CA. Le résultat haussier à la date finale est de 115,26 $ CA, comparativement aux 66,17 $ CA d’aujourd’hui. La prévision attribue 30 % au scénario baissier, 50 % au scénario de base et 20 % au scénario haussier."
         }
        ],
        "table": {
         "title": "Ce que pourraient valoir les actions",
         "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis les 66,17 $ CA d’aujourd’hui, dividendes compris",
-        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 66.17, dividends included)",
+        "caption": "Ce que pourraient valoir les actions ($ CA par action à chaque date; entre parenthèses, le rendement depuis les 66,17 $ CA d’aujourd’hui, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -921,15 +921,15 @@
         {
          "n": 236,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario de base suppose que le BAIIA passe de 3 468,5 millions $ CA à 4 026,6 millions $ CA d’ici octobre 2029. Les puits différés, le gaz entreposé et la cible de production de 2027 soutiennent la reprise, tandis que la faiblesse des marges gazières et les dépenses en capital de remplacement la limitent. Le scénario baissier tombe à 1 200 millions $ CA en 2028 parce que les prix du gaz s’affaiblissent et que les coûts augmentent. Le scénario haussier atteint 6 906 millions $ CA, alors que les prix liés aux exportations, les volumes et les avantages des infrastructures se combinent."
         }
        ],
        "table": {
         "title": "Le tableau de la prévision",
         "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "caption": "Le tableau de la prévision (scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire)",
         "head": [
          "",
          "Octobre 2027",
@@ -977,24 +977,24 @@
         {
          "n": 140,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les flux de trésorerie disponibles correspondent à ce qui reste après que les flux de trésorerie liés à l’exploitation ont payé les dépenses en capital, les paiements de location, les coûts de financement et les autres déductions choisies. Tourmaline doit réinvestir massivement parce que ses puits existants déclinent; le forage, la complétion, les installations et les raccordements préservent ou accroissent la production. Ainsi, les flux de trésorerie liés à l’exploitation peuvent être substantiels alors que les liquidités distribuables sont beaucoup plus faibles."
         },
         {
          "n": 141,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Le rapprochement fourni ne fait état d’aucun intérêt payé, mais Tourmaline a déclaré 69,5 millions $ CA d’intérêts payés en espèces en 2025. La propre mesure des flux de trésorerie disponibles de Tourmaline utilise aussi des ajouts et des déductions différents; son montant résiduel ne peut donc pas être comparé au rapprochement sans lire les définitions."
         }
        ],
        "table": {
         "title": "Suivez l’argent : les flux de trésorerie réellement disponibles",
         "unit": "Milliers $ CA",
-        "caption": "Follow the money: real free cash flow (C$ thousands)",
+        "caption": "Suivez l’argent : les flux de trésorerie réellement disponibles (Milliers $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1073,50 +1073,6 @@
        "value": "1.5%"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 66.17,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "30 %",
-        "values": [
-         "51.67 (-19 %)",
-         "47.10 (-24 %)",
-         "49.81 (-17 %)"
-        ]
-       },
-       "Base": {
-        "probability": "50 %",
-        "values": [
-         "70.00 (+9 %)",
-         "73.76 (+18 %)",
-         "77.93 (+28 %)"
-        ]
-       },
-       "Bull": {
-        "probability": "20 %",
-        "values": [
-         "83.34 (+30 %)",
-         "98.07 (+58 %)",
-         "115.26 (+90 %)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100 %",
-        "values": [
-         "67.17 (+5 %)",
-         "70.62 (+13 %)",
-         "76.96 (+27 %)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/tou-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=TOU.TO&src=seo-stock"
     },
     "dividend": {
@@ -1132,17 +1088,17 @@
         {
          "n": 84,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.5 — Capital allocation and the dividend mix",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "En 2025, Tourmaline a versé 2,00 $ CA par action en dividendes de base et 1,30 $ CA par action en dividendes spéciaux. Le dividende de base est l’engagement récurrent; le dividende spécial est plus discrétionnaire. Comme les versements totaux ont dépassé les flux de trésorerie disponibles en 2024 et en 2025, cette distinction est importante."
         }
        ],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action, sauf la variation du nombre d’actions",
-        "caption": "What one share gets (C$ per share, except share-count change)",
+        "caption": "Ce que rapporte une action ($ CA par action, sauf la variation du nombre d’actions)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1200,17 +1156,17 @@
         {
          "n": 74,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the cash went",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "Les flux de trésorerie disponibles correspondent à ce qui reste après que les flux de trésorerie liés aux activités d’exploitation ont financé les dépenses en immobilisations. En 2022 et en 2023, les versements aux actionnaires en ont absorbé la majeure partie; en 2024 et en 2025, les versements ont dépassé les flux de trésorerie disponibles. Les dividendes constituaient le principal mode de redistribution, tandis que les rachats d’actions déclarés étaient nuls de 2022 à 2025."
         }
        ],
        "table": {
         "title": "Suivez l’argent : où sont allés les flux de trésorerie disponibles",
         "unit": "Milliers de $ CA",
-        "caption": "Follow the money: where the free cash flow went (C$ thousands)",
+        "caption": "Suivez l’argent : où sont allés les flux de trésorerie disponibles (Milliers de $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1268,15 +1224,15 @@
         {
          "n": 85,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.5 — Capital allocation and the dividend mix",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "La direction a déclaré en juillet 2026 que les dépenses de maintien et le dividende étaient entièrement financés à 2,00 $ US par Mcf pour le NYMEX et à 2,00 $ CA par Mcf pour l’AECO, selon ses hypothèses annoncées concernant le prix des liquides. Lorsque les prix étaient faibles, la société a aussi stocké du gaz et reporté certaines activités. Cette souplesse pourrait protéger les rendements, même si elle reporte la production et les flux de trésorerie à des périodes ultérieures."
         },
         {
          "n": 238,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Les dividendes passent de 2,10 $ CA par action à 2,40 $ CA dans le scénario de base. Le point de départ est le dividende de base trimestriel annoncé de 0,525 $ CA, tandis que les hausses ultérieures supposent une croissance modeste des flux de trésorerie. Le scénario baissier réduit les dividendes à 1,60 $ CA et les maintient à ce niveau, puisque les versements récents ont dépassé les flux de trésorerie disponibles. Le scénario haussier atteint 4,00 $ CA grâce à des distributions spéciales plus importantes, qui sont des hypothèses et non des indications de la direction."
         }
        ],
@@ -1288,17 +1244,17 @@
         {
          "n": 189,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.4 — How the price moved",
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
          "text": "Le dividende de base est le versement récurrent prévu. Un dividende spécial est une distribution supplémentaire qui peut varier selon les prix des marchandises et les liquidités excédentaires. Tourmaline a relevé son dividende de base trimestriel de 0,50 $ CA à 0,525 $ CA pour le T4 2026, mais les investisseurs ne devraient pas considérer le rendement récent complet comme un revenu garanti."
         }
        ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Milliers de $ CA, sauf le cours et le baril produit par jour",
-        "caption": "What an investor pays today (C$ thousands, except price and per flowing barrel)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Milliers de $ CA, sauf le cours et le baril produit par jour)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (17 oct. 2026)"
         ],
         "rows": [
@@ -1337,42 +1293,6 @@
        "value": "1.5%"
       }
      ],
-     "chart": {
-      "title": "What one share gets",
-      "unit": "C$ per share, except share-count change",
-      "columns": [
-       "2021",
-       "2022",
-       "2023",
-       "2024",
-       "2025"
-      ],
-      "rows": {
-       "Dividends paid, per share": [
-        "1.44",
-        "7.75",
-        "6.45",
-        "3.29",
-        "3.29"
-       ],
-       "Real free cash flow per share": [
-        "4.39",
-        "8.71",
-        "6.74",
-        "1.20",
-        "0.83"
-       ],
-       "Free cash flow per share": [
-        "4.44",
-        "8.79",
-        "6.88",
-        "1.37",
-        "1.01"
-       ]
-      },
-      "kind": "dividend_vs_fcf"
-     },
-     "path": "/stocks/tou-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=TOU.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1388,24 +1308,24 @@
         {
          "n": 8,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The verdict",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "Le cours de Tourmaline pourrait monter si la reprise de la production et les infrastructures accroissent les flux de trésorerie, tandis que les dépenses en capital de remplacement demeurent financées. Les prévisions de la direction pour 2026 tablent sur une production moyenne de 620 000 à 640 000 bep/j. La cible de production à la sortie de l’exercice est de 660 000 bep/j. Le plan de 2026 prévoit 880 millions $ CA de flux de trésorerie disponibles. Le plan de 2027 vise une production de 665 000 bep/j et 1,055 milliard $ CA de flux de trésorerie disponibles. Le dividende de base du T4 2026 est de 0,53 $ CA par action."
         },
         {
          "n": 199,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Les prévisions actuelles de la direction tablent sur une production moyenne plus élevée et un débit de fin d’exercice supérieur. «Bep/j» signifie barils d’équivalent pétrole par jour, une façon courante de combiner le gaz et les liquides dans une mesure équivalente sur le plan énergétique. Environ 6 000 pieds cubes de gaz équivalent à un baril, de sorte que la mesure ne signifie pas que la société produit uniquement du pétrole."
         }
        ],
        "table": {
         "title": "Prévisions en vigueur",
         "unit": "En milliers de $ CA, sauf indication contraire",
-        "caption": "Guidance in force (C$ thousands, except labelled units)",
+        "caption": "Prévisions en vigueur (En milliers de $ CA, sauf indication contraire)",
         "head": [
-         "Row",
+         "",
          "Période visée par les prévisions",
          "Bas",
          "Haut",
@@ -1464,17 +1384,17 @@
         {
          "n": 152,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "C’est ce qui s’est produit au T2 2026. Les ventes issues de la production ont augmenté, notamment celles de gaz naturel et de condensats, mais la prime provenant des activités de gestion des risques et les gains réalisés sur les instruments financiers ont été beaucoup plus faibles. Tourmaline a vendu davantage de produits physiques, mais les produits tirés des marchandises, selon les données publiées, ont légèrement diminué."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
         "unit": "En milliers de $ CA, sauf par action",
-        "caption": "The last eight quarters (C$ thousands, except per share)",
+        "caption": "Les huit derniers trimestres (En milliers de $ CA, sauf par action)",
         "head": [
-         "Row",
+         "",
          "Juin 2026",
          "Mars 2026",
          "Déc. 2025",
@@ -1539,15 +1459,15 @@
         {
          "n": 218,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Tourmaline a indiqué que cinq des six gazoducs de raccordement régionaux étaient terminés, tandis que l’expansion d’Aitken demeurait prévue pour le T4 2026. Les puits ont besoin à la fois d’une capacité de traitement et de voies d’accès aux marchés; l’usine et les raccordements doivent donc fonctionner de concert. Le démarrage d’Aitken montrera si la phase 1 peut produire des avantages pendant la pause."
         },
         {
          "n": 220,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Les règles sur le méthane créent une autre obligation. Les règles fédérales visent une réduction de 75 pour cent des émissions de méthane. La cible utilise 2012 comme année de référence et 2030 comme année cible. Les sociétés pourraient avoir besoin de détecter les fuites, d’effectuer des réparations et d’installer de nouveaux équipements, ce qui peut modifier les coûts des projets et les dates de démarrage. Les investisseurs devraient surveiller si Aitken démarre à temps et si les dépenses de conformité modifient le plan de trésorerie."
         }
        ],
@@ -1557,7 +1477,7 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "November 4, 2026"
+       "value": "4 novembre 2026"
       },
       {
        "label": "Produits, trimestre terminé en juin 2026 (en milliers de $ CA, sauf par action)",
@@ -1568,44 +1488,6 @@
        "value": "0.47"
       }
      ],
-     "chart": {
-      "title": "The last eight quarters",
-      "unit": "C$ thousands, except per share",
-      "columns": [
-       "Sep 2024",
-       "Dec 2024",
-       "Mar 2025",
-       "Jun 2025",
-       "Sep 2025",
-       "Dec 2025",
-       "Mar 2026",
-       "Jun 2026"
-      ],
-      "rows": {
-       "Revenue": [
-        "1,272,116",
-        "1,517,490",
-        "1,812,967",
-        "1,430,114",
-        "1,398,100",
-        "1,661,816",
-        "1,776,194",
-        "1,498,318"
-       ],
-       "EPS, diluted": [
-        "1.00",
-        "1.09",
-        "0.56",
-        "1.35",
-        "0.49",
-        "-1.69",
-        "1.69",
-        "0.47"
-       ]
-      },
-      "kind": "quarters"
-     },
-     "path": "/stocks/tou-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=TOU.TO&src=seo-earnings"
     }
    },

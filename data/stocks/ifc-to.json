@@ -800,11 +800,11 @@
  "first_memo_date": "2026-10-10T02:15:54Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "58ca361c98ffaf9d",
    "teaser": {
     "chapter": "1. L'entreprise",
-    "text": "Intact Financial Corporation vend une protection contre le coût financier des accidents, des dommages et de la responsabilité civile. Son activité devient claire lorsqu’on examine ce que promet la police, qui l’achète et comment la prime évolue avant le règlement d’un sinistre."
+    "text": "Intact Financial Corporation vend une protection contre le coût financier des accidents, des dommages et de la responsabilité juridique. Son modèle d’affaires devient clair lorsqu’on suit ce que la police promet, qui l’achète et comment la prime circule avant le règlement d’un sinistre."
    },
    "chapters": [
     "Sommaire",
@@ -821,9 +821,9 @@
     "stock": {
      "type": "stock",
      "title": "Action Intact : prévisions et valeur — octobre 2026",
-     "meta_description": "Prévisions pour l’action d’Intact : scénarios pondérés, facteurs déterminants en assurance, valorisation et éléments susceptibles de faire bouger le titre.",
-     "opening": "Le scénario pondéré atteint 242,15 $ CA en octobre 2029. Il repose sur une souscription durablement rentable, la maîtrise des catastrophes et l’exécution au Royaume-Uni et en Irlande.",
-     "closing": "Le mémo complet explique également les activités d’Intact, ses rivales, sa direction et ses risques.",
+     "meta_description": "Prévisions pour l’action d’Intact : scénarios pondérés, facteurs liés à l’assurance, valorisation et éléments susceptibles de faire bouger le titre.",
+     "opening": "Le scénario pondéré atteint 242,15 $ CA en octobre 2029. Il repose sur une souscription durable, une maîtrise des catastrophes et une bonne exécution au Royaume-Uni et en Irlande.",
+     "closing": "Le rapport complet présente également les activités d’Intact, ses rivales, sa direction et ses risques.",
      "blocks": [
       {
        "heading": "Jusqu’où l’action d’Intact pourrait-elle monter?",
@@ -831,22 +831,22 @@
         {
          "n": 215,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8. Where the price could go",
-         "text": "Les prévisions indiquent un potentiel limité à court terme, mais une trajectoire favorable sur trois ans si Intact met son plan à exécution. Le cours pondéré selon les probabilités s’établit à 210,73 $ CA en octobre 2027, à 223,11 $ CA en octobre 2028 et à 242,15 $ CA en octobre 2029, ce qui correspond à des rendements dividendes compris de -10 %, -3 % et +8 %. À la dernière date, la fourchette de l’hypothèse baissière à l’hypothèse haussière va de 113,25 $ CA à 406,41 $, comparativement à 242,41 $ CA aujourd’hui."
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Les prévisions indiquent un potentiel de hausse limité à court terme, mais une évolution favorable sur trois ans si Intact exécute son plan. Le cours pondéré selon les probabilités s’établit à 210,73 $ CA en octobre 2027, à 223,11 $ CA en octobre 2028 et à 242,15 $ CA en octobre 2029, ce qui correspond à des rendements, dividendes compris, de -10 %, -3 % et +8 %. À la dernière date, la fourchette allant du scénario pessimiste au scénario optimiste s’étend de 113,25 $ CA à 406,41 $ CA, comparativement à 242,41 $ CA aujourd’hui."
         },
         {
          "n": 224,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
-         "text": "Le scénario haussier mène d’abord à 274,76 $ CA, puis à 406,41 $. Les conditions météorologiques se normalisent, le redressement au Royaume-Uni et en Irlande porte ses fruits, les secteurs de spécialité et de distribution progressent de façon rentable et la technologie améliore les charges. Les bénéfices dépassent l’objectif de 10 %, les rachats d’actions s’accélèrent et le ratio cours-bénéfice atteint 17,0 fois. La probabilité est de 18 %, car ces résultats doivent se produire simultanément, tandis que la volatilité récente des catastrophes incite à la prudence."
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le scénario optimiste mène d’abord à 274,76 $ CA, puis à 406,41 $ CA. Les conditions météorologiques se normalisent, le redressement au Royaume-Uni et en Irlande porte ses fruits, les activités spécialisées et la distribution progressent de façon rentable, et la technologie améliore les charges. Les bénéfices dépassent l’objectif de 10 %, les rachats d’actions s’accélèrent et le ratio cours-bénéfice atteint 17,0 fois. La probabilité est de 18 %, car ces résultats doivent survenir simultanément, tandis que la volatilité récente des catastrophes appelle à la prudence."
         }
        ],
        "table": {
-        "title": "Quelle pourrait être la valeur de l’action",
-        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 242,41 $, dividendes compris",
-        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 242.41, dividends included)",
+        "title": "Ce que pourraient valoir les actions",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis les 242,41 $ CA d’aujourd’hui, dividendes compris",
+        "caption": "Ce que pourraient valoir les actions ($ CA par action à chaque date; entre parenthèses, le rendement depuis les 242,41 $ CA d’aujourd’hui, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -856,7 +856,7 @@
         ],
         "rows": [
          [
-          "Baissier",
+          "Pessimiste",
           "30%",
           "140.02 (-40%)",
           "117.99 (-46%)",
@@ -870,7 +870,7 @@
           "259.65 (+16%)"
          ],
          [
-          "Haussier",
+          "Optimiste",
           "18%",
           "274.76 (+16%)",
           "337.38 (+45%)",
@@ -888,29 +888,29 @@
        }
       },
       {
-       "heading": "Que doit-il se passer pour qu’Intact réussisse, et qu’est-ce qui pourrait mal tourner?",
+       "heading": "Que doit faire Intact pour réussir, et qu’est-ce qui pourrait mal tourner?",
        "paragraphs": [
         {
          "n": 219,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
-         "text": "Le scénario baissier prévoit 2 600 millions $ CA, puis 2 450 millions $ CA et 2 500 millions $ CA, parce que les pertes liées aux catastrophes dépassent déjà les prévisions annuelles sur une base glissante et que le Royaume-Uni et l’Irlande ont affiché un ratio combiné de 112,0 %. Le scénario haussier prévoit 3 200 millions $ CA, 3 650 millions $ CA et 4 100 millions $ CA, en supposant que les conditions météorologiques se normalisent, que le Royaume-Uni et l’Irlande s’améliorent plus rapidement et que les gains liés à la technologie réduisent les coûts. La fourchette tient aussi compte de la volatilité des bénéfices : le résultat net a fortement diminué en 2023 avant de se redresser au cours des années suivantes."
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le scénario pessimiste prévoit 2 600 millions $ CA, puis 2 450 millions $ CA et 2 500 millions $ CA, parce que les pertes liées aux catastrophes dépassent déjà les prévisions annuelles sur une base des douze derniers mois et qu’Intact a affiché un ratio combiné de 112,0 % au Royaume-Uni et en Irlande. Le scénario optimiste prévoit 3 200 millions $ CA, 3 650 millions $ CA et 4 100 millions $ CA, en supposant que les conditions météorologiques se normalisent, que le Royaume-Uni et l’Irlande s’améliorent plus rapidement et que les gains technologiques réduisent les coûts. La fourchette tient également compte de la volatilité des bénéfices : le bénéfice net a fortement diminué en 2023 avant de se redresser au cours des années suivantes."
         },
         {
          "n": 225,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.5 — What would change the view",
-         "text": "Le point de vue s’orienterait vers le scénario baissier si les pertes liées aux catastrophes dépassaient à répétition l’hypothèse annuelle de 1,2 milliard $ CA, si le Royaume-Uni et l’Irlande demeuraient déficitaires en 2027–2028, ou si la tarification commerciale et l’inflation des sinistres faisaient empirer les ratios."
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Le point de vue se rapprocherait du scénario pessimiste si les pertes liées aux catastrophes dépassaient à répétition l’hypothèse annuelle de 1,2 milliard $ CA, si le Royaume-Uni et l’Irlande demeuraient déficitaires jusqu’en 2027–2028, ou si la tarification commerciale et l’inflation des sinistres détérioraient les ratios."
         }
        ],
        "table": {
         "title": "Comment Intact gagne son argent, et ce qui peut lui nuire",
         "unit": "Millions $ CA",
-        "caption": "How it earns, and what can hurt it (C$ millions)",
+        "caption": "Comment Intact gagne son argent, et ce qui peut lui nuire (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Exercice clos en déc. 2025",
          "Exercice clos en déc. 2024",
          "Exercice clos en déc. 2023",
@@ -943,7 +943,7 @@
           "88.8%"
          ],
          [
-          "Résultat de souscription",
+          "Bénéfice de souscription",
           "2,717",
           "1,689",
           "1,183",
@@ -959,7 +959,7 @@
           "706"
          ],
          [
-          "Rendement opérationnel des capitaux propres",
+          "Rendement des capitaux propres d’exploitation",
           "19.5%",
           "16.5%",
           "13.9%",
@@ -971,22 +971,22 @@
        }
       },
       {
-       "heading": "Combien de liquidités Intact génère-t-elle réellement et retourne-t-elle aux actionnaires?",
+       "heading": "Combien de liquidités Intact produit-elle réellement et redistribue-t-elle?",
        "paragraphs": [
         {
          "n": 160,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.1 — What an investor pays today",
-         "text": "Un assureur encaisse les primes aujourd’hui, promet de payer plus tard les pertes couvertes et investit l’argent dans l’intervalle. Son résultat de souscription est rentable lorsque les sinistres et les charges consomment moins que les primes encaissées. Au T2 2026, Intact a produit 305 millions $ CA de résultat de souscription et 405 millions $ CA de produits de placement opérationnels. Les deux activités comptent dans la valorisation."
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
+         "text": "Un assureur encaisse les primes aujourd’hui, promet de payer plus tard les pertes couvertes et investit l’argent entre-temps. Son résultat de souscription est rentable lorsque les sinistres et les charges absorbent moins que les primes encaissées. Au T2 2026, Intact a généré 305 millions $ CA de bénéfice de souscription et 405 millions $ CA de produits de placement d’exploitation. Ces deux activités comptent dans la valorisation."
         }
        ],
        "table": {
         "title": "Résultats",
         "unit": "Millions $ CA",
-        "caption": "Results (C$ millions)",
+        "caption": "Résultats (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Exercice clos en déc. 2025",
          "Exercice clos en déc. 2024",
          "Exercice clos en déc. 2023",
@@ -1003,7 +1003,7 @@
           ""
          ],
          [
-          "Résultat de souscription",
+          "Bénéfice de souscription",
           "2,717",
           "1,689",
           "1,183",
@@ -1011,7 +1011,7 @@
           "1,787"
          ],
          [
-          "Produits nets de placement",
+          "Produits de placement nets",
           "1,632",
           "1,559",
           "1,346",
@@ -1027,7 +1027,7 @@
           "2,017"
          ],
          [
-          "Résultat net",
+          "Bénéfice net",
           "3,365",
           "2,297",
           "1,316",
@@ -1065,58 +1065,14 @@
        "value": "2.2x"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 242.41,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "30%",
-        "values": [
-         "140.02 (-40%)",
-         "117.99 (-46%)",
-         "113.25 (-46%)"
-        ]
-       },
-       "Base": {
-        "probability": "52%",
-        "values": [
-         "229.36 (-3%)",
-         "244.21 (+6%)",
-         "259.65 (+16%)"
-        ]
-       },
-       "Bull": {
-        "probability": "18%",
-        "values": [
-         "274.76 (+16%)",
-         "337.38 (+45%)",
-         "406.41 (+77%)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100%",
-        "values": [
-         "210.73 (-10%)",
-         "223.11 (-3%)",
-         "242.15 (+8%)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/ifc-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-stock"
     },
     "dividend": {
      "type": "dividend",
      "title": "Action Intact : dividende — octobre 2026",
-     "meta_description": "Intact verse 1,47 $ CA par trimestre; son historique de dividendes, son allocation de trésorerie, ses risques et son rendement actuel de 2,4 % sont expliqués en langage clair.",
-     "opening": "Intact verse 1,47 $ CA par trimestre, pour des versements annuels prévus de 6,33 $, 6,96 $ et 7,66 $. De 2021 à 2025, les dividendes ordinaires se sont élevés à 3 916 millions $ CA, contre 11 122 millions $ CA de bénéfices attribuables aux actionnaires ordinaires.",
-     "closing": "Le mémo complet traite également des activités d’Intact, de ses rivaux, de sa direction et de ses risques.",
+     "meta_description": "Intact verse 1,47 $ CA par trimestre; son historique de dividendes, son allocation du capital, ses risques et son rendement actuel de 2,4 % sont expliqués en langage clair.",
+     "opening": "Intact verse 1,47 $ CA par trimestre, pour des versements annuels prévus de 6,33 $ CA, 6,96 $ CA et 7,66 $ CA. De 2021 à 2025, les dividendes ordinaires se sont élevés à 3 916 millions $ CA, contre 11 122 millions $ CA de bénéfices attribuables aux actionnaires ordinaires.",
+     "closing": "Le mémo complet traite également des activités d’Intact, de ses rivales, de sa direction et de ses risques.",
      "blocks": [
       {
        "heading": "Combien Intact verse-t-elle par action?",
@@ -1124,15 +1080,15 @@
         {
          "n": 221,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
-         "text": "Dans le scénario de base, les dividendes passent du taux trimestriel actuel de 1,47 $ CA à des versements annuels de 6,33 $, 6,96 $ et 7,66 $. Cette trajectoire s’appuie sur les 21 années d’augmentations de la société et sur une croissance historique d’environ 10 %. Le scénario pessimiste maintient le dividende à 5,88 $ CA chaque année afin de préserver le capital après des pertes liées aux catastrophes. Le scénario optimiste atteint 8,11 $ CA d’ici 2029, ce qui exige une croissance plus rapide que par le passé et plusieurs années favorables sur le plan de la souscription."
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Dans le scénario de base, les dividendes passent du taux trimestriel actuel de 1,47 $ CA à des versements annuels de 6,33 $ CA, 6,96 $ CA et 7,66 $ CA. Cette trajectoire s’appuie sur les 21 années consécutives d’augmentations de la société et sur une croissance historique d’environ 10 %. Le scénario baissier maintient le dividende à 5,88 $ CA chaque année afin de préserver le capital après des pertes liées aux catastrophes. Le scénario haussier l’amène à 8,11 $ CA d’ici 2029, ce qui exige une croissance plus rapide que par le passé et plusieurs années de souscription favorables."
         }
        ],
        "table": {
         "title": "Le tableau des prévisions",
-        "unit": "scénario de base, puis scénarios pessimiste / optimiste entre parenthèses; millions $ CA sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
+        "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, sauf indication contraire",
+        "caption": "Le tableau des prévisions (scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, sauf indication contraire)",
         "head": [
          "",
          "Octobre 2027",
@@ -1163,29 +1119,29 @@
        }
       },
       {
-       "heading": "Le dividende d’Intact est-il couvert par sa trésorerie?",
+       "heading": "Le dividende d’Intact est-il couvert par ses liquidités?",
        "paragraphs": [
         {
          "n": 76,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the capital went",
-         "text": "Le BSIF, l’organisme de réglementation canadien, fixe à 150 % la cible de capital prudentiel pour les assureurs de dommages sous réglementation fédérale. De 2021 à 2025, les bénéfices attribuables aux actionnaires ordinaires ont totalisé 11 122 millions $ CA. Les dividendes ordinaires se sont élevés à 3 916 millions $ CA, tandis que les rachats d’actions ont ajouté 372 millions $ CA. Le reliquat calculé était de 6 834 millions $ CA, mais ce reliquat comptable ne constituait pas un fonds librement disponible pour des acquisitions : il servait à soutenir les placements, les obligations liées aux sinistres et la solidité du capital."
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
+         "text": "Le BSIF, l’organisme de réglementation canadien, fixe à 150 % la cible de capital prudentiel pour les assureurs de dommages sous réglementation fédérale. De 2021 à 2025, les bénéfices attribuables aux actionnaires ordinaires ont totalisé 11 122 millions $ CA. Les dividendes ordinaires se sont élevés à 3 916 millions $ CA, tandis que les rachats d’actions ont ajouté 372 millions $ CA. Le solde calculé était de 6 834 millions $ CA, mais ce solde comptable ne constituait pas un fonds librement disponible pour des acquisitions : il servait à soutenir les investissements, les obligations liées aux sinistres et la solidité du capital."
         },
         {
          "n": 178,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.4 — How the price moved",
-         "text": "Les flux de trésorerie disponibles conventionnels sont un mauvais indicateur, car les primes sont encaissées avant le règlement des sinistres. Le meilleur test consiste à déterminer si la trésorerie de la société de portefeuille, le capital des filiales et la liquidité des placements demeurent suffisants. L’évaluation doit maintenant distinguer les mauvaises conditions météorologiques temporaires d’un problème durable de tarification."
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
+         "text": "Les flux de trésorerie disponibles conventionnels sont un mauvais indicateur, puisque les primes sont encaissées avant le règlement des sinistres. Le meilleur test consiste à déterminer si les liquidités de la société mère, le capital des filiales et la liquidité des placements demeurent suffisants. L’évaluation doit maintenant distinguer une mauvaise météo temporaire d’un problème de tarification durable."
         }
        ],
        "table": {
         "title": "Ce qu’elle gagne et redistribue",
-        "unit": "Millions $ CA",
-        "caption": "What it earns and gives back (C$ millions)",
+        "unit": "millions $ CA",
+        "caption": "Ce qu’elle gagne et redistribue (millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Exercice clos en déc. 2025",
          "Exercice clos en déc. 2024",
          "Exercice clos en déc. 2023",
@@ -1235,17 +1191,17 @@
         {
          "n": 183,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.5 — What the price implies",
-         "text": "Le rendement du dividende de 2,4 % s’ajoute au rendement total, à condition que les bénéfices produisent du capital utilisable. Intact a déclaré une marge de capital totale de 3 761 millions $ CA et un ratio ajusté de la dette au capital de 16,2 %. La conclusion centrale est simple : le cours suppose une souscription durable, des revenus de placement et des rendements élevés, tout en exposant les actionnaires à un éventuel recul du multiple d’évaluation."
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
+         "text": "Le rendement du dividende de 2,4 % s’ajoute au rendement total, à condition que les bénéfices génèrent du capital utilisable. Intact a déclaré une marge de capital totale de 3 761 millions $ CA et un ratio rajusté de la dette au capital de 16,2 %. La conclusion centrale est simple : le cours suppose une souscription durable, des revenus de placement et des rendements élevés, tout en exposant les actionnaires à une éventuelle baisse du multiple d’évaluation."
         }
        ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
-        "unit": "Millions $ CA",
-        "caption": "What an investor pays today (C$ millions)",
+        "unit": "millions $ CA",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (9 oct. 2026)"
         ],
         "rows": [
@@ -1272,8 +1228,6 @@
        "value": "2.4%"
       }
      ],
-     "chart": null,
-     "path": "/stocks/ifc-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1281,79 +1235,79 @@
      "title": "Action Intact : résultats du 3 novembre 2026",
      "meta_description": "Les prochains résultats de Intact sont attendus le 3 novembre 2026; les prévisions, les résultats récents et les pertes liées aux catastrophes sont les principaux éléments à surveiller.",
      "opening": "Les prochains résultats de Intact sont attendus le 3 novembre 2026. Il faudra surveiller si un autre trimestre marqué par des catastrophes coûteuses nuit aux bénéfices, au capital ou au plan de croissance.",
-     "closing": "Le mémoire complet répond aussi à la question de savoir comment Intact gagne de l’argent, qui sont ses concurrents, qui la dirige et quels risques elle affronte.",
+     "closing": "Le mémo complet explique également comment Intact gagne de l’argent, qui sont ses concurrents, qui la dirige et quels risques elle affronte.",
      "blocks": [
       {
-       "heading": "Quelles prévisions Intact a-t-elle données pour l’année?",
+       "heading": "Quelles prévisions Intact a-t-elle données pour l’exercice?",
        "paragraphs": [
         {
          "n": 186,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
-         "text": "La direction vise une croissance annuelle de 10 % du bénéfice opérationnel net par action, ou NOIPS, et un rendement des capitaux propres supérieur de 500 points de base à celui du secteur. Le NOIPS correspond aux bénéfices provenant des activités poursuivies, répartis entre les actions. Le rendement des capitaux propres mesure le bénéfice par rapport aux capitaux des actionnaires; 500 points de base équivalent à cinq points de pourcentage. Le secteur canadien de l’assurance de dommages a dégagé un rendement des capitaux propres de 17,1 % en 2025, mais la cible de surperformance de Intact évoluera en fonction de ses concurrents."
+         "chapter": "7. La suite",
+         "subsection": "",
+         "text": "La direction vise une croissance annuelle de 10 % du bénéfice d’exploitation net par action, ou NOIPS, ainsi qu’un rendement des capitaux propres supérieur de 500 points de base à celui du secteur. Le NOIPS correspond aux bénéfices tirés des activités poursuivies, répartis entre les actions. Le rendement des capitaux propres mesure le bénéfice par rapport aux capitaux des actionnaires; 500 points de base correspondent à cinq points de pourcentage. Le secteur canadien de l’assurance de dommages a affiché un rendement des capitaux propres de 17,1 % en 2025, mais la cible de surperformance de Intact évoluera avec ses concurrents."
         },
         {
          "n": 188,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
-         "text": "La direction fixe des cibles distinctes de ratio combiné pour l’assurance des particuliers, l’assurance commerciale, les États-Unis et le Royaume-Uni et l’Irlande, en plus d’hypothèses concernant les pertes liées aux catastrophes, les dépenses, les impôts et les revenus de soutien."
+         "chapter": "7. La suite",
+         "subsection": "",
+         "text": "La direction fixe des cibles distinctes de ratio combiné pour l’assurance des particuliers, l’assurance commerciale, l’assurance aux États-Unis et l’assurance au Royaume-Uni et en Irlande, en plus d’hypothèses concernant les pertes liées aux catastrophes, les dépenses, les impôts et les revenus de soutien."
         }
        ],
        "table": {
         "title": "Cibles et prévisions en vigueur",
         "unit": "",
-        "caption": "Targets and guidance in force",
+        "caption": "Cibles et prévisions en vigueur",
         "head": [
-         "Row",
+         "",
          "Période visée",
          "Bas",
          "Haut",
-         "Date indiquée"
+         "Date de publication"
         ],
         "rows": [
          [
           "Assurance automobile des particuliers au Canada — Ratio combiné inférieur à 95 %",
-          "Next 12 months",
+          "Prochains 12 mois",
           "95.0%",
           "95.0%",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ],
          [
           "Assurance des biens des particuliers au Canada — Ratio combiné inférieur à 95 %, même en présence d’événements météorologiques violents",
-          "Next 12 months",
+          "Prochains 12 mois",
           "95.0%",
           "95.0%",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ],
          [
-          "Assurance commerciale au Canada — Ratio combiné dans le bas des 90 % ou meilleur",
-          "Next 12 months",
+          "Assurance commerciale au Canada — Ratio combiné dans le bas de la fourchette des 90 % ou mieux",
+          "Prochains 12 mois",
           "",
           "",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ],
          [
           "Royaume-Uni et Irlande — Ratio combiné évoluant vers 90 %",
-          "Next 12 months",
+          "Prochains 12 mois",
           "90.0%",
           "90.0%",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ],
          [
-          "États-Unis — Ratio combiné dans le bas des 90 % ou meilleur",
-          "Next 12 months",
+          "États-Unis — Ratio combiné dans le bas de la fourchette des 90 % ou mieux",
+          "Prochains 12 mois",
           "",
           "",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ],
          [
-          "Pertes consolidées liées aux catastrophes (milliards $ CA, nettes de réassurance)",
+          "Pertes consolidées liées aux catastrophes (milliards $ CA, après réassurance)",
           "2026",
           "1.2",
           "1.2",
-          "Feb 10, 2026"
+          "10 févr. 2026"
          ]
         ],
         "note": ""
@@ -1365,9 +1319,9 @@
         {
          "n": 115,
          "section": "essay-4",
-         "chapter": "4. Management and ownership",
-         "subsection": "4.5 — Pay, and promises kept",
-         "text": "La direction promet de faire croître le bénéfice opérationnel net par action de 10 % par année et de dépasser de 5 points de pourcentage le rendement des capitaux propres du secteur. Les données historiques publiées faisaient état d’une croissance annualisée de 12 % du bénéfice opérationnel par action et d’une surperformance de 6,7 points de pourcentage au chapitre du rendement des capitaux propres. Cela appuie les antécédents, même si la cible de rentabilité au Royaume-Uni et en Irlande exigeait encore des progrès."
+         "chapter": "4. Direction et actionnariat",
+         "subsection": "",
+         "text": "La direction promet d’augmenter de 10 % par année le bénéfice d’exploitation net par action et de surpasser de 5 points de pourcentage le rendement des capitaux propres du secteur. Les résultats à long terme publiés font état d’une croissance annualisée de 12 % du bénéfice d’exploitation par action et d’une surperformance de 6,7 points de pourcentage du rendement des capitaux propres. Cela appuie le bilan, même si la cible de rentabilité au Royaume-Uni nécessitait encore des progrès."
         }
        ],
        "table": null
@@ -1378,32 +1332,32 @@
         {
          "n": 7,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The numbers",
-         "text": "Les chiffres montrent des revenus d’assurance généralement stables, tandis que le bénéfice de souscription et le ratio combiné indiquent si le moteur principal s’améliore. Le ratio combiné s’est établi à 88,2 % en 2025, contre 94,2 % en 2023. Le BPA dilué est remonté de 6,99 $ CA en 2023 à 18,35 $ CA en 2025, tandis que les revenus de placement ont atteint 1 632 millions $ CA."
+         "chapter": "Sommaire",
+         "subsection": "",
+         "text": "Les chiffres montrent des revenus d’assurance globalement stables, tandis que le bénéfice de souscription et le ratio combiné indiquent si le moteur central s’améliore. Le ratio combiné s’est établi à 88,2 % en 2025, contre 94,2 % en 2023. Le BAII dilué par action est remonté de 6,99 $ CA en 2023 à 18,35 $ CA en 2025, tandis que les revenus de placement se sont élevés à 1 632 millions $ CA."
         },
         {
          "n": 140,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
-         "text": "Les résultats des huit derniers trimestres montrent que Intact peut passer rapidement d’une excellente souscription à une performance déficitaire. L’estimation subséquente des pertes liées aux catastrophes confirme que le T2 n’était pas simplement une interruption météorologique historique. Le prochain test consistera à déterminer si les sinistres et la rentabilité au Royaume-Uni se redressent sans dépendre uniquement d’une météo plus clémente."
+         "chapter": "5. Les chiffres",
+         "subsection": "",
+         "text": "Le bilan des huit derniers trimestres montre que Intact peut passer rapidement d’une excellente souscription à une performance déficitaire. L’estimation ultérieure des pertes liées aux catastrophes renforce l’idée que le T2 n’était pas simplement une interruption météorologique historique. Le prochain test consistera à déterminer si les sinistres et la rentabilité au Royaume-Uni se redressent sans dépendre uniquement d’une météo plus clémente."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
-        "unit": "Millions $ CA",
-        "caption": "The last eight quarters (C$ millions)",
+        "unit": "millions $ CA",
+        "caption": "Les huit derniers trimestres (millions $ CA)",
         "head": [
-         "Row",
-         "Trimestre clos en juin 2026",
-         "Trimestre clos en mars 2026",
-         "Trimestre clos en déc. 2025",
-         "Trimestre clos en sept. 2025",
-         "Trimestre clos en juin 2025",
-         "Trimestre clos en mars 2025",
-         "Trimestre clos en déc. 2024",
-         "Trimestre clos en sept. 2024"
+         "",
+         "Trimestre terminé en juin 2026",
+         "Trimestre terminé en mars 2026",
+         "Trimestre terminé en déc. 2025",
+         "Trimestre terminé en sept. 2025",
+         "Trimestre terminé en juin 2025",
+         "Trimestre terminé en mars 2025",
+         "Trimestre terminé en déc. 2024",
+         "Trimestre terminé en sept. 2024"
         ],
         "rows": [
          [
@@ -1440,7 +1394,7 @@
           "207"
          ],
          [
-          "BPA, dilué",
+          "BAII par action, dilué",
           "3.90",
           "4.12",
           "5.24",
@@ -1455,19 +1409,19 @@
        }
       },
       {
-       "heading": "Que devrais-je surveiller dans les prochains résultats de Intact?",
+       "heading": "Que dois-je surveiller dans les prochains résultats de Intact?",
        "paragraphs": [],
        "table": {
         "title": "Souscription : sinistres, coûts et catastrophes",
-        "unit": "Millions $ CA",
-        "caption": "Underwriting: claims, costs and catastrophes (C$ millions)",
+        "unit": "millions $ CA",
+        "caption": "Souscription : sinistres, coûts et catastrophes (millions $ CA)",
         "head": [
-         "Row",
-         "Exercice clos en déc. 2025",
-         "Exercice clos en déc. 2024",
-         "Exercice clos en déc. 2023",
-         "Exercice clos en déc. 2022",
-         "Exercice clos en déc. 2021"
+         "",
+         "Exercice terminé en déc. 2025",
+         "Exercice terminé en déc. 2024",
+         "Exercice terminé en déc. 2023",
+         "Exercice terminé en déc. 2022",
+         "Exercice terminé en déc. 2021"
         ],
         "rows": [
          [
@@ -1479,7 +1433,7 @@
           "55.9%"
          ],
          [
-          "Ratio de dépenses",
+          "Ratio de frais",
           "34.0%",
           "33.7%",
           "33.4%",
@@ -1503,7 +1457,7 @@
           "676"
          ],
          [
-          "Évolution des provisions des années antérieures",
+          "Évolution des réserves des années antérieures",
           "",
           "",
           "958",
@@ -1518,48 +1472,20 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "November 3, 2026"
+       "value": "3 novembre 2026"
       },
       {
-       "label": "BPA, dilué, trimestre clos en juin 2026",
+       "label": "BAII par action, dilué, trimestre terminé en juin 2026",
        "value": "3.90"
       }
      ],
-     "chart": {
-      "title": "The last eight quarters",
-      "unit": "C$ millions",
-      "columns": [
-       "Quarter to Sep 2024",
-       "Quarter to Dec 2024",
-       "Quarter to Mar 2025",
-       "Quarter to Jun 2025",
-       "Quarter to Sep 2025",
-       "Quarter to Dec 2025",
-       "Quarter to Mar 2026",
-       "Quarter to Jun 2026"
-      ],
-      "rows": {
-       "EPS, diluted": [
-        "1.06",
-        "3.58",
-        "3.69",
-        "4.70",
-        "4.73",
-        "5.24",
-        "4.12",
-        "3.90"
-       ]
-      },
-      "kind": "quarters"
-     },
-     "path": "/stocks/ifc-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-earnings"
     }
    },
    "held": [],
    "pieces": {
-    "sent": 140,
-    "translated": 140,
+    "sent": 151,
+    "translated": 151,
     "left_out": 0
    }
   }

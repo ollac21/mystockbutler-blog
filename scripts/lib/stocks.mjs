@@ -397,7 +397,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const sourcesHtml = sources.length
     ? `<section class="sources"><h3>${esc(ui.whereFrom)}</h3><ul>${sources
         .map((s) => {
-          let label = s.title;
+          let label = fr ? '' : s.title;          // a French page names the site, never an English document title
           if (!label || /^https?:/.test(label)) {
             try {
               label = ui.filingOn(new URL(s.url).hostname.replace(/^www\./, ''));

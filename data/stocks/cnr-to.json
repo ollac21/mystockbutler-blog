@@ -829,7 +829,7 @@
  "first_memo_date": "2026-10-11T12:45:24Z",
  "translations": {
   "fr": {
-   "version": "fr-5",
+   "version": "fr-6",
    "source": "e6758294a9390da5",
    "teaser": {
     "chapter": "1. L'entreprise",
@@ -860,15 +860,15 @@
         {
          "n": 9,
          "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The verdict",
+         "chapter": "Sommaire",
+         "subsection": "",
          "text": "Pour 2026, la direction prévoit une croissance du RTM de l’ordre de quelques points de pourcentage et une croissance du bénéfice par action dilué ajusté de l’ordre de quelques points de pourcentage à élevée, avec un programme d’investissement de 2 800 millions $ CA, déduction faite des remboursements des clients. Les perspectives attribuent une probabilité de 25 % au scénario pessimiste, de 55 % au scénario de référence et de 20 % au scénario optimiste."
         }
        ],
        "table": {
         "title": "Ce que les actions pourraient valoir",
         "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 168,06, dividendes compris",
-        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 168.06, dividends included)",
+        "caption": "Ce que les actions pourraient valoir ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 168,06, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -915,22 +915,22 @@
         {
          "n": 257,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario pessimiste commence par de mauvaises récoltes ou une perturbation du commerce qui survient en même temps que les négociations avec les employés. Le trafic diminue, les coûts de rétablissement du service augmentent et les clients reportent leurs projets. La faiblesse de la demande industrielle limite ensuite la productivité, tandis que la dette et les dépenses de renouvellement réduisent les rachats d’actions. Le ratio de valorisation diminue à mesure que les investisseurs perdent confiance dans l’exécution. Cela produit 126,91 $ CA en 2027 et 108,23 $ CA en 2029, avec une probabilité de 25 %. Cette probabilité tient compte des risques cycliques et liés à la main-d’œuvre, mais les récoltes céréalières récentes et la croissance positive des douze derniers mois rendent une baisse prolongée moins probable."
         },
         {
          "n": 258,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.4 — Bear and bull",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le scénario optimiste exige un trafic élevé lié aux céréales et aux installations des clients, un service fiable et une exécution réussie des projets. Les accès approuvés et les nouvelles capacités doivent ensuite créer des trajets rentables récurrents, tandis que la productivité accroît les marges et que la conversion des bénéfices en liquidités stabilise la dette. Le ratio de valorisation augmente avec la confiance, ce qui produit 202,22 $ CA en 2027 et 280,26 $ CA en 2029. Sa probabilité est de 20 %, car les approbations, les montées en puissance, la fiabilité du service et la génération de liquidités doivent toutes être au rendez-vous simultanément."
         }
        ],
        "table": {
         "title": "Le tableau des prévisions",
         "unit": "scénario de référence, puis scénarios pessimiste / optimiste entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
-        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "caption": "Le tableau des prévisions (scénario de référence, puis scénarios pessimiste / optimiste entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire)",
         "head": [
          "",
          "Octobre 2027",
@@ -972,17 +972,17 @@
         {
          "n": 150,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.3 — Cash",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les dépenses d’investissement ont atteint 3 658 millions $ CA. Après ces dépenses et les paiements de location, il restait beaucoup moins de liquidités pour les dividendes, le remboursement de la dette ou les acquisitions. Les « flux de trésorerie disponibles réels » de CN déduisent également la rémunération à base d’actions, puisque l’émission d’actions aux employés dilue les propriétaires actuels ou exige des liquidités pour compenser cette dilution."
         }
        ],
        "table": {
         "title": "Suivez l’argent : flux de trésorerie disponibles réels",
         "unit": "Millions $ CA",
-        "caption": "Follow the money: real free cash flow (C$ millions)",
+        "caption": "Suivez l’argent : flux de trésorerie disponibles réels (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1048,8 +1048,8 @@
         {
          "n": 211,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.5 — What the price implies",
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
          "text": "Les liquidités constituent le test le plus exigeant. CN prévoit 2,8 milliards $ CA de dépenses d’investissement en 2026, et qualifier ces dépenses de croissance plutôt que d’entretien ne change rien aux liquidités nécessaires pour maintenir le réseau en bon état. Le rendement des flux de trésorerie disponibles est modeste; la valorisation dépend donc de la croissance future plutôt que des seules liquidités générées aujourd’hui."
         }
        ],
@@ -1074,50 +1074,6 @@
        "value": "18.7x"
       }
      ],
-     "chart": {
-      "kind": "scenarios",
-      "today": 168.06,
-      "columns": [
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": {
-       "Bear": {
-        "probability": "25 %",
-        "values": [
-         "126.91 (-22 %)",
-         "112.64 (-29 %)",
-         "108.23 (-29 %)"
-        ]
-       },
-       "Base": {
-        "probability": "55 %",
-        "values": [
-         "172.24 (+5 %)",
-         "182.13 (+13 %)",
-         "192.26 (+21 %)"
-        ]
-       },
-       "Bull": {
-        "probability": "20 %",
-        "values": [
-         "202.22 (+23 %)",
-         "238.69 (+47 %)",
-         "280.26 (+74 %)"
-        ]
-       },
-       "Weighted": {
-        "probability": "100 %",
-        "values": [
-         "166.90 (+2 %)",
-         "176.07 (+9 %)",
-         "188.85 (+19 %)"
-        ]
-       }
-      }
-     },
-     "path": "/stocks/cnr-to/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-stock"
     },
     "dividend": {
@@ -1133,17 +1089,17 @@
         {
          "n": 254,
          "section": "essay-8",
-         "chapter": "8. Where the price could go",
-         "subsection": "8.3 — The drivers",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
          "text": "Le dividende part d’un taux annuel indiqué de 3,66 $ CA après la hausse de janvier. Le scénario de base atteint 3,70 $ en 2027, 3,85 $ en 2028 et 4,00 $ en 2029, une progression plus lente que celle observée dans l’historique de cinq ans du dividende, puisque les dépenses d’investissement et la dette augmentent. Le scénario baissier maintient le dividende à 3,66 $, tandis que le scénario haussier l’amène à 3,75 $, 4,05 $ et 4,40 $ à mesure que la conversion en trésorerie s’améliore. Les dividendes étaient couverts par les flux de trésorerie disponibles de 2025, ce qui soutient des hausses, mais pas une trajectoire agressive."
         }
        ],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action",
-        "caption": "What one share gets (C$ per share)",
+        "caption": "Ce que rapporte une action ($ CA par action)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1209,17 +1165,17 @@
         {
          "n": 89,
          "section": "essay-3",
-         "chapter": "3. History and capital decisions",
-         "subsection": "3.3 — Where the cash went",
+         "chapter": "3. Historique et décisions de capital",
+         "subsection": "",
          "text": "De 2021 à 2025, les paiements aux actionnaires ont dépassé les flux de trésorerie disponibles générés à l’interne. Les dividendes constituaient l’engagement récurrent; les rachats d’actions, qui réduisent le nombre d’actions en circulation, représentaient le moyen le plus flexible. Verser davantage que les flux de trésorerie disponibles n’est pas automatiquement imprudent, car une entreprise peut utiliser ses réserves de trésorerie ou emprunter. Mais cela signifie que la direction doit démontrer que les actions rachetées constituaient un meilleur investissement que le remboursement de la dette ou les projets liés au réseau."
         }
        ],
        "table": {
         "title": "Suivez l’argent : où sont allés les flux de trésorerie disponibles",
         "unit": "Millions $ CA",
-        "caption": "Follow the money: where the free cash flow went (C$ millions)",
+        "caption": "Suivez l’argent : où sont allés les flux de trésorerie disponibles (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "2025",
          "2024",
          "2023",
@@ -1285,17 +1241,17 @@
         {
          "n": 186,
          "section": "essay-6",
-         "chapter": "6. Valuation and the stock",
-         "subsection": "6.1 — What an investor pays today",
+         "chapter": "6. Évaluation et action",
+         "subsection": "",
          "text": "Un ratio cours-bénéfice indique combien de dollars les investisseurs paient pour chaque dollar de bénéfice. Un ratio cours-bénéfice prévisionnel utilise les bénéfices attendus; il diminue donc lorsque les bénéfices devraient augmenter. Au cours actuel, le multiple prévisionnel implique environ 8,99 $ CA de bénéfice par action. Il s’agit d’un bénéfice comptable, et non de trésorerie : CN doit encore entretenir le chemin de fer, rembourser sa dette et décider quelle somme distribuer."
         }
        ],
        "table": {
         "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA",
-        "caption": "What an investor pays today (C$ millions)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Aujourd’hui (11 oct. 2026)"
         ],
         "rows": [
@@ -1338,42 +1294,6 @@
        "value": "3.3%"
       }
      ],
-     "chart": {
-      "title": "What one share gets",
-      "unit": "C$ per share",
-      "columns": [
-       "2021",
-       "2022",
-       "2023",
-       "2024",
-       "2025"
-      ],
-      "rows": {
-       "Dividends paid, per share": [
-        "2.45",
-        "2.91",
-        "3.14",
-        "3.37",
-        "3.54"
-       ],
-       "Real free cash flow per share": [
-        "5.53",
-        "5.59",
-        "5.63",
-        "4.80",
-        "5.26"
-       ],
-       "Free cash flow per share": [
-        "5.65",
-        "5.68",
-        "5.73",
-        "4.92",
-        "5.43"
-       ]
-      },
-      "kind": "dividend_vs_fcf"
-     },
-     "path": "/stocks/cnr-to/dividend/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-dividend"
     },
     "earnings": {
@@ -1389,17 +1309,17 @@
         {
          "n": 215,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.1 — What management has guided",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "La direction a relevé ses prévisions le 24 juillet après un premier semestre plus solide. Elle prévoit maintenant une croissance de quelques pour cent des tonnes-milles commerciales, ou TMC. Une TMC correspond au transport d’une tonne de marchandises payantes sur un mille; elle mesure donc le travail acheté par les clients. CN prévoit une croissance du bénéfice dilué ajusté par action allant de quelques pour cent à un chiffre élevé. Le bénéfice ajusté exclut certains éléments que CN considère comme extérieurs à sa performance sous-jacente, tandis que le bénéfice dilué tient compte des actions que pourraient créer les attributions aux employés."
         }
        ],
        "table": {
         "title": "Prévisions en vigueur",
         "unit": "Millions $ CA",
-        "caption": "Guidance in force (C$ millions)",
+        "caption": "Prévisions en vigueur (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Période visée par les prévisions",
          "Bas",
          "Haut",
@@ -1458,8 +1378,8 @@
         {
          "n": 128,
          "section": "essay-4",
-         "chapter": "4. Management and ownership",
-         "subsection": "4.5 — Pay, and promises kept",
+         "chapter": "4. Direction et actionnariat",
+         "subsection": "",
          "text": "La discipline à plus long terme était plus rigoureuse. Les unités d’actions liées au rendement de 2023 n’ont rien versé, puisque leurs conditions n’ont pas été remplies. La direction a ensuite prévu une croissance du bénéfice ajusté par action allant de quelques pour cent à un chiffre élevé, et la hausse pour l’ensemble de l’exercice a été de 7 %. Le respect d’une prévision ultérieure n’efface pas l’échec au regard d’un engagement de rémunération antérieur."
         }
        ],
@@ -1471,17 +1391,17 @@
         {
          "n": 164,
          "section": "essay-5",
-         "chapter": "5. The numbers",
-         "subsection": "5.5 — The latest quarter",
+         "chapter": "5. Les chiffres",
+         "subsection": "",
          "text": "Les produits ont augmenté de 11,3 % sur un an, tandis que le bénéfice d’exploitation a progressé de 8,7 %. Le bénéfice net a crû plus lentement, même si le bénéfice dilué par action a profité de la diminution du nombre d’actions. Le volume de travail lié au transport de marchandises a augmenté de 5 %, principalement grâce aux céréales et à l’énergie. Il s’agit d’une performance supérieure à celle du trimestre de mars."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
         "unit": "Millions $ CA",
-        "caption": "The last eight quarters (C$ millions)",
+        "caption": "Les huit derniers trimestres (Millions $ CA)",
         "head": [
-         "Row",
+         "",
          "Juin 2026",
          "Mars 2026",
          "Déc. 2025",
@@ -1546,15 +1466,15 @@
         {
          "n": 241,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "Les résultats du troisième trimestre seront publiés le 30 octobre. CN a déjà annoncé avoir transporté un record de 7,94 millions de tonnes métriques de céréales de l’Ouest canadien pendant le trimestre. Cela confirme la demande qui sous-tend la hausse des prévisions, mais les seules tonnes transportées ne révèlent pas les bénéfices. Les résultats devront montrer les bénéfices et les liquidités générés, tandis que l’hiver permettra de vérifier si le service demeure fiable dans des conditions d’exploitation plus difficiles."
         },
         {
          "n": 242,
          "section": "essay-7",
-         "chapter": "7. What comes next",
-         "subsection": "7.5 — What to watch",
+         "chapter": "7. La suite",
+         "subsection": "",
          "text": "La main-d’œuvre constitue le principal risque prévu. L’entente avec le TCRC visant les équipes de train couvre environ 6 000 employés, tandis que l’entente avec les Métallurgistes unis couvre environ 2 500 employés affectés aux voies et aux ponts. Les deux ententes prennent fin le 31 décembre 2026. Les employés des équipes de train font circuler les trains; les employés affectés aux voies entretiennent l’infrastructure sur laquelle ils roulent, de sorte que des négociations simultanées pourraient toucher à la fois le transport et l’entretien."
         }
        ],
@@ -1564,7 +1484,7 @@
      "facts": [
       {
        "label": "Prochains résultats",
-       "value": "October 30, 2026"
+       "value": "30 octobre 2026"
       },
       {
        "label": "Produits, trimestre terminé en juin 2026 (millions $ CA)",
@@ -1575,44 +1495,6 @@
        "value": "2.06"
       }
      ],
-     "chart": {
-      "title": "The last eight quarters",
-      "unit": "C$ millions",
-      "columns": [
-       "Sep 2024",
-       "Dec 2024",
-       "Mar 2025",
-       "Jun 2025",
-       "Sep 2025",
-       "Dec 2025",
-       "Mar 2026",
-       "Jun 2026"
-      ],
-      "rows": {
-       "Revenue": [
-        "4,110",
-        "4,358",
-        "4,403",
-        "4,272",
-        "4,165",
-        "4,464",
-        "4,379",
-        "4,753"
-       ],
-       "EPS, diluted": [
-        "1.72",
-        "1.82",
-        "1.85",
-        "1.87",
-        "1.83",
-        "2.03",
-        "1.87",
-        "2.06"
-       ]
-      },
-      "kind": "quarters"
-     },
-     "path": "/stocks/cnr-to/earnings/",
      "cta": "https://app.mystockbutler.com/signup?ticker=CNR.TO&src=seo-earnings"
     }
    },
