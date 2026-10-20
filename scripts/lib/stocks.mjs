@@ -193,9 +193,10 @@ function scenarioChart(chart, currency, ui = UI.en) {
     const p = pts[name];
     if (!p) continue;
     const cx = x(p.v).toFixed(0);
+    const tx = Math.min(W - 70, Math.max(70, x(p.v))).toFixed(0);     // a label never runs off the chart's edge
     out.push(`<circle cx="${cx}" cy="${y0}" r="11" fill="${color}" stroke="#fff" stroke-width="3"/>`);
     out.push(`<text x="${cx}" y="${y0 - 22}" text-anchor="middle" class="cv">${esc(p.label)}</text>`);
-    out.push(`<text x="${cx}" y="${y0 + 30}" text-anchor="middle" class="cl">${esc(ui.cases[name])} · ${esc(p.prob)} · ${esc(p.ret)}</text>`);
+    out.push(`<text x="${tx}" y="${y0 + 30}" text-anchor="middle" class="cl">${esc(ui.cases[name])} · ${esc(p.prob)} · ${esc(p.ret)}</text>`);
   }
   out.push('</svg>');
   return `<div class="chart">${out.join('')}</div>`;
@@ -404,7 +405,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     .filter((r) => r && r.slug !== slug && (fr ? frPage(r, 'stock') : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
     .slice(0, 4)
     .map((r) => `<a href="${pagePath(r.slug, 'stock', lang)}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
-  const hubs = fr ? [`<a href="/fr/stocks/">${esc(ui.allStocks)}</a>`] : [`<a href="/stocks/">All stocks</a>`];
+  const hubs = fr ? [`<a href="/fr/stocks/">${esc(ui.allStocks)}</a>`, `<a href="/stocks/tsx60/" hreflang="en">S&amp;P/TSX 60 (English)</a>`] : [`<a href="/stocks/">All stocks</a>`];
   if (!fr) {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
@@ -451,10 +452,12 @@ ${chaptersRail(data, cta, lang, fr ? data.translations.fr.chapters : null)}</div
     alternates, html, outLinks, page, data };
 }
 
-function hubList(companies, { withDates = false } = {}) {
+function hubList(companies, { withDates = false, french = false } = {}) {
   return `<ul class="list">${companies
     .map((c) => {
-      const pages = TYPES.filter((t) => c.pages[t]).map((t) => `<a href="${pagePath(c.slug, t)}">${esc(TYPE_NAMES[t])}</a>`).join('');
+      const en = TYPES.filter((t) => c.pages[t]).map((t) => `<a href="${pagePath(c.slug, t)}">${esc(TYPE_NAMES[t])}</a>`);
+      const fr = french ? TYPES.filter((t) => frPage(c, t)).map((t) => `<a hreflang="fr-CA" href="${pagePath(c.slug, t, 'fr')}">${esc(UI.fr.types[t])}</a>`) : [];
+      const pages = [...en, ...fr].join('');
       const date = withDates && c.next_earnings ? ` · results ${esc(humanDay(c.next_earnings))}` : '';
       return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => c.pages[t]))}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}${date}</span><span class="pg">${pages}</span></li>`;
     })
@@ -519,7 +522,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
       title: `${INDEX_NAMES[g.key]} stocks: forecasts, dividends, earnings`,
       description: `Research memos on ${g.list.length} ${INDEX_NAMES[g.key]} companies: stock forecasts, dividends and next results dates.`,
       intro: `${g.list.length} ${INDEX_NAMES[g.key]} companies with a research memo.`,
-      sections: [nav(), hubList(g.list, { withDates: true }), ...(g.key === 'sptsx60' && french.length ? ['<p><a href="/fr/stocks/" hreflang="fr-CA">Ces pages en français</a></p>'] : [])],
+      sections: [nav(), hubList(g.list, { withDates: true, french: g.key === 'sptsx60' }), ...(g.key === 'sptsx60' && french.length ? ['<p><a href="/fr/stocks/" hreflang="fr-CA">Ces pages en français</a></p>'] : [])],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
     }));
   }
@@ -583,7 +586,8 @@ export function gatePage(built, ctx) {
   if (fr ? !TITLE_FR.test(titleText) : !titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push('title lacks the search phrase');
   const desc = (/<meta name="description" content="([^"]*)"/.exec(html) || [])[1] || '';
   const descText = textOf(desc);
-  if (!descText || descText.length > 155) fails.push(`meta description is ${descText.length} characters (1 to 155)`);
+  const descMax = fr ? 200 : 155;                   // French runs about a fifth longer than the English it translates
+  if (!descText || descText.length > descMax) fails.push(`meta description is ${descText.length} characters (1 to ${descMax})`);
   const h1 = (html.match(/<h1[ >]/g) || []).length;
   if (h1 !== 1) fails.push(`${h1} h1`);
   const h2s = [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/g)].map((m) => textOf(m[1]));
@@ -618,7 +622,9 @@ export function gatePage(built, ctx) {
   const flat = memoText.replace(/[,\s]/g, '');
   for (const [name, value] of [['title', page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
     for (const n of String(value || '').match(NUMBER) || []) {
-      if (!memoText.includes(n) && !flat.includes(n.replace(/,/g, ''))) fails.push(`${name} prints ${n}, not in the memo text shown`);
+      // a French decimal comma ('188,85') against a table cell the memo printed in its own form ('188.85')
+      const asDot = fr && /^\d+,\d{1,2}$/.test(n) ? n.replace(',', '.') : null;
+      if (!memoText.includes(n) && !flat.includes(n.replace(/,/g, '')) && !(asDot && memoText.includes(asDot))) fails.push(`${name} prints ${n}, not in the memo text shown`);
     }
     const bad = (fr ? BANNED_FR : BANNED).exec(String(value || ''));
     if (bad) fails.push(`${name} uses "${bad[1]}"`);
