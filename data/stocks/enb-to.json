@@ -1,0 +1,765 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "run-20261010T015313Z-1f3c630f33d4",
+ "ticker": "ENB.TO",
+ "slug": "enb-to",
+ "company": "Enbridge Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-10T02:20:25Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 66.51,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-11-06",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 17180,
+  "sources": 228
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Enbridge is easiest to understand as a network business: it owns routes, storage and energy facilities, then charges others to use them. A dollar enters through a toll, utility bill, contract or commodity sale, and leaves through suppliers, workers, maintenance, interest, taxes and new investment."
+ },
+ "sources": [
+  {
+   "title": "Annual report — FY2025",
+   "url": "https://www.enbridge.com/~/media/Enb/Documents/Investor-Relations/2025/2025_Q4_Financial_Statements_MDA_Final.pdf"
+  },
+  {
+   "title": "Annual report — FY2024",
+   "url": "https://www.enbridge.com/~/media/Enb/Documents/Investor-Relations/2024/2024_Q4_Financial_Statements_MDA_Final.pdf"
+  },
+  {
+   "title": "Annual report — FY2023",
+   "url": "https://www.enbridge.com/~/media/Enb/Documents/Investor-Relations/2023/2023_Q4_Financial_Statements_MDA_Final.pdf"
+  }
+ ],
+ "rivals": [
+  "TRP.TO",
+  "PPL.TO",
+  "WMB",
+  "KMI",
+  "EPD",
+  "ET",
+  "OKE",
+  "TRGP",
+  "ALA.TO",
+  "SRE"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Enbridge Inc. stock forecast: scenarios and valuation",
+   "meta_description": "Enbridge Inc. stock forecast: the weighted path, scenario drivers, real free cash flow and today's valuation.",
+   "opening": "The weighted scenario reaches C$60.54 in October 2027, including dividends. It hinges on EBITDA growth, project delivery and leverage.",
+   "closing": "The full Enbridge Inc. memo also explains its business, rivals, management choices and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Enbridge Inc.'s shares be in each forecast year?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The probability-weighted forecast is below today’s price in the first two years and only modestly ahead after three years, including dividends. From today’s C$66.51, the weighted value is C$60.54 in October 2027, C$60.66 in October 2028 and C$61.54 in October 2029, producing returns of negative 3%, positive 3% and positive 11%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 66.51, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 66.51, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "28 %",
+        "42.59 (-30 %)",
+        "35.08 (-36 %)",
+        "29.85 (-38 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "64.07 (+2 %)",
+        "65.07 (+10 %)",
+        "66.10 (+18 %)"
+       ],
+       [
+        "Bull",
+        "17 %",
+        "78.67 (+24 %)",
+        "88.50 (+46 %)",
+        "99.00 (+68 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "60.54 (-3 %)",
+        "60.66 (+3 %)",
+        "61.54 (+11 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Enbridge Inc.?",
+     "paragraphs": [
+      {
+       "n": 236,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "That choice reflects adjusted EBITDA rising from C$14,001 million in 2021 to C$19,952 million in 2025, alongside management’s 2026 guidance midpoint of C$20,500 million. Mainline competition, project delays and leverage above the 4.5–5.0 target range justify the bear path, while high utilization, gas demand and projects entering service support the bull case."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "EBITDA",
+        "21,269 (20,039 / 21,892)",
+        "22,332 (20,183 / 23,258)",
+        "23,464 (20,739 / 24,653)"
+       ],
+       [
+        "Shares (millions)",
+        "2,234 (2,256 / 2,230)",
+        "2,239 (2,284 / 2,232)",
+        "2,244 (2,311 / 2,234)"
+       ],
+       [
+        "Dividends per share",
+        "4.00 (3.88 / 4.04)",
+        "4.12 (3.88 / 4.24)",
+        "4.24 (3.88 / 4.45)"
+       ],
+       [
+        "Enterprise value to ebitda",
+        "12.00 (10.50 / 13.00)",
+        "11.75 (10.00 / 13.25)",
+        "11.50 (9.50 / 13.50)"
+       ],
+       [
+        "Net debt",
+        "112,120 (114,320 / 109,120)",
+        "116,720 (121,720 / 110,620)",
+        "121,520 (128,020 / 111,620)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Enbridge Inc. really make?",
+     "paragraphs": [
+      {
+       "n": 133,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Common dividends paid were C$8,220 million. DCF therefore left roughly C$4,234 million before growth spending, while free cash flow after total capital spending was only C$3,051 million. The difference had to come from borrowing, partners, asset sales or equity. Cash distributions from joint ventures can help, but their repeatability must be tested rather than assumed."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "C$ millions",
+      "caption": "Free cash flow, honestly counted (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "12,270",
+        "12,600",
+        "14,201",
+        "11,230",
+        "9,256"
+       ],
+       [
+        "Capital spending",
+        "9,165",
+        "6,930",
+        "4,876",
+        "4,821",
+        "8,093"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "3,051",
+        "5,657",
+        "9,308",
+        "",
+        ""
+       ],
+       [
+        "Stock-based pay",
+        "285",
+        "186",
+        "154",
+        "260",
+        "157"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "2,766",
+        "5,471",
+        "9,154",
+        "",
+        ""
+       ],
+       [
+        "Free cash flow per share (calculated)",
+        "1.40",
+        "2.62",
+        "4.52",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Enbridge Inc.?",
+     "paragraphs": [
+      {
+       "n": 164,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The table brings together the share price, market value, enterprise value, valuation multiples and dividend yield."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "66.51"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "61.54 (+11 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "20.9x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "25.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 66.51,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "28 %",
+      "values": [
+       "42.59 (-30 %)",
+       "35.08 (-36 %)",
+       "29.85 (-38 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "64.07 (+2 %)",
+       "65.07 (+10 %)",
+       "66.10 (+18 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "17 %",
+      "values": [
+       "78.67 (+24 %)",
+       "88.50 (+46 %)",
+       "99.00 (+68 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "60.54 (-3 %)",
+       "60.66 (+3 %)",
+       "61.54 (+11 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/enb-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ENB.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Enbridge Inc. dividend: history and cash coverage",
+   "meta_description": "Enbridge Inc. dividend history, cash coverage, future changes and current yield, with the cash gap behind its funding.",
+   "opening": "Enbridge’s annualized common dividend is C$3.88 per share for 2026. DCF covers it, but 2025 real free cash flow after total capital spending, leases and stock pay was C$2.766 billion versus C$8.220 billion of dividends.",
+   "closing": "The full memo also explains Enbridge Inc.’s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Enbridge Inc. pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 81,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Enbridge’s preferred dividend measure looks comfortable because DCF deducts maintenance spending, not the entire growth program. The company raised its annualized common dividend to C$3.88 per share for 2026. Against 2025 DCF of C$5.71 per share, that used about 68%, within its target range."
+      }
+     ],
+     "table": {
+      "title": "Results",
+      "unit": "C$ millions",
+      "caption": "Results (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "65,194",
+        "53,473",
+        "43,649",
+        "53,309",
+        "47,071"
+       ],
+       [
+        "EPS, diluted",
+        "3.22",
+        "2.34",
+        "2.84",
+        "1.28",
+        "2.87"
+       ],
+       [
+        "Dividend per share",
+        "3.77",
+        "3.66",
+        "3.55",
+        "3.44",
+        "3.34"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Enbridge Inc.'s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 82,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The stricter measure tells a different story. In 2025, real free cash flow after total capital spending, leases and stock pay was C$2.766 billion, while dividends were C$8.220 billion. That left a C$5.454 billion gap. Borrowing can fill it, but creates interest costs; issuing shares can fill it, but dilutes owners."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "C$ millions",
+      "caption": "Where the cash went (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "2,766",
+        "5,471",
+        "9,154",
+        "",
+        ""
+       ],
+       [
+        "Dividends paid",
+        "8,220",
+        "7,875",
+        "7,276",
+        "6,968",
+        "6,766"
+       ],
+       [
+        "Shares bought back",
+        "0",
+        "0",
+        "125",
+        "151",
+        "0"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "297.2%",
+        "143.9%",
+        "80.8%",
+        "",
+        ""
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Enbridge Inc.'s dividend?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend grows at 3% annually in the base case, from C$4.00 in October 2027 to C$4.24 in October 2029. The bear case holds it at C$3.88 because leverage and investment take priority; the bull case reaches C$4.45 because project cash flow grows faster. The base follows the stated increase and the company’s record of annual increases, while the bear reflects the funding pressure."
+      },
+      {
+       "n": 246,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "From 2027 through 2029, leverage staying above target or another equity offering would weaken DCF per share and increase dilution. A higher required return would then compress the multiple by October 2029."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is Enbridge Inc.'s dividend yield today against its share price?",
+     "paragraphs": [
+      {
+       "n": 165,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The yield is therefore supported by cash, but the next question is how much confidence the market has already placed on that cash."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "66.51"
+       ],
+       [
+        "Market value (calculated)",
+        "148,240.39"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "5.8%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "5.8%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "Year to Dec 2021",
+     "Year to Dec 2022",
+     "Year to Dec 2023",
+     "Year to Dec 2024",
+     "Year to Dec 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "",
+      "",
+      "4.52",
+      "2.62",
+      "1.40"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/enb-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ENB.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Enbridge Inc. earnings: guidance and next results",
+   "meta_description": "Enbridge Inc.'s next results are expected November 6, 2026; see guidance, recent results and what to watch.",
+   "opening": "Enbridge Inc.'s next results are expected on November 6, 2026. Watch construction spending, acquisition progress and leverage after the September financing.",
+   "closing": "The full memo also explains Enbridge Inc.'s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Enbridge Inc. guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 195,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For 2026, Enbridge guides to adjusted EBITDA and DCF per share, while paying an annual dividend of C$3.88. The payout sits within management’s 60–70% range, leaving part of DCF to fund growth."
+      },
+      {
+       "n": 196,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "July reaffirmed the outlook. The Tallgrass acquisition, announced in September, was expected to have no material effect on 2026 guidance because it would close late in the year; its first full year should add to DCF per share. Management also reaffirmed approximately 5.0% growth, but gave no bridge showing how much comes from acquisitions, existing operations or new shares."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Adjusted EBITDA",
+        "Year to Dec 2026",
+        "20,200",
+        "20,800",
+        "Jul 31, 2026"
+       ],
+       [
+        "DCF/Share Guidance",
+        "Year to Dec 2026",
+        "5.70",
+        "6.10",
+        "Jul 31, 2026"
+       ],
+       [
+        "Dividend/share",
+        "Year to Dec 2026",
+        "3.88",
+        "3.88",
+        "Dec 3, 2025"
+       ],
+       [
+        "Distributable Cash Flow (DCF) payout range (%)",
+        "Year to Dec 2026",
+        "60.0%",
+        "70.0%",
+        "Jul 31, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Enbridge Inc. keep its past promise?",
+     "paragraphs": [
+      {
+       "n": 111,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Enbridge forecast 2025 distributable cash flow per share at C$5.50–C$5.90. It reported C$5.71, meeting that promise. Its July 2026 presentation maintained a range of C$5.70–C$6.10 for the next year, but that commitment remains to be tested."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What has Enbridge Inc.'s revenue and profit trend been?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The second quarter of 2026 showed modest operating improvement, while accounting movements made reported earnings look much weaker."
+      },
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Operating income rose to C$2,910 million, while adjusted EBITDA reached C$4,776 million. DCF increased to C$2,948 million. Net income nevertheless fell because unrealized derivatives, higher depreciation and higher interest absorbed much of the operating improvement."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "29,318",
+        "22,357",
+        "17,177",
+        "14,639",
+        "14,876",
+        "18,502",
+        "16,217",
+        "14,882"
+       ],
+       [
+        "Operating income",
+        "2,910",
+        "3,225",
+        "2,726",
+        "2,271",
+        "2,289",
+        "3,672",
+        "2,447",
+        "2,218"
+       ],
+       [
+        "Net income",
+        "1,501",
+        "1,778",
+        "2,060",
+        "788",
+        "2,279",
+        "2,364",
+        "595",
+        "1,391"
+       ],
+       [
+        "EPS, diluted",
+        "0.64",
+        "0.76",
+        "0.89",
+        "0.30",
+        "1.00",
+        "1.03",
+        "0.23",
+        "0.59"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 6, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (C$ millions)",
+     "value": "29,318"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "0.64"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "14,882",
+      "16,217",
+      "18,502",
+      "14,876",
+      "14,639",
+      "17,177",
+      "22,357",
+      "29,318"
+     ],
+     "EPS, diluted": [
+      "0.59",
+      "0.23",
+      "1.03",
+      "1.00",
+      "0.30",
+      "0.89",
+      "0.76",
+      "0.64"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/enb-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=ENB.TO&src=seo-earnings"
+  }
+ },
+ "held": {}
+}

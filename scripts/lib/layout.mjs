@@ -24,6 +24,7 @@ export function siteHeader() {
 <a href="${LANDING}/#pricing">Pricing</a>
 <a href="${LANDING}/#faq">FAQ</a>
 <a href="/" aria-current="page">Blog</a>
+<a href="/stocks/">All stocks</a>
 </nav>
 <div class="actions">
 <a class="blog-link" href="/">Blog</a>
@@ -41,6 +42,7 @@ export function siteFooter() {
 <nav aria-label="Footer">
 <a href="${LANDING}/legal">Legal</a>
 <a href="/">Blog</a>
+<a href="/stocks/">All stocks</a>
 <a href="${APP}/login">Log in</a>
 </nav>
 </div>

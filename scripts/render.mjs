@@ -20,6 +20,7 @@ import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
+import { readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -221,7 +222,7 @@ function structuredData(post, canonical) {
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 
-function pageShell({ title, description, canonical, robots, head = '', body, bodyClass = '' }) {
+function pageShell({ title, description, canonical, robots, head = '', body, bodyClass = '', ga = { type: 'blog', ticker: '' } }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -231,7 +232,7 @@ function pageShell({ title, description, canonical, robots, head = '', body, bod
 ${description ? `<meta name="description" content="${esc(description)}">\n` : ''}<link rel="canonical" href="${esc(canonical)}">
 <meta name="robots" content="${esc(robots || 'index,follow')}">
 ${FONT_LINKS}${head}<style>${STYLE}</style>
-</head>
+${gaTag(ga)}</head>
 <body${bodyClass ? ` class="${bodyClass}"` : ''}>
 ${siteHeader()}
 ${body}
@@ -246,19 +247,23 @@ function minutes(post) {
   return Number.isFinite(n) && n > 0 ? Math.round(n) : 0;
 }
 
+function signupLink(ticker, src = 'blog') {
+  return `${APP}/signup?${ticker ? `ticker=${encodeURIComponent(ticker)}&` : ''}src=${src}`;
+}
+
 function callToAction(kind, ticker) {
   if (kind === 'inline') {
     return `<aside class="cta" aria-label="Get a report on your stock">
 <div class="cta-text"><strong>Want this on the stocks you own?</strong><p class="sub">A source-backed memo on any ticker, rebuilt from the filings — not summarized by a chatbot.</p></div>
-<div class="btns"><a class="btn" href="${APP}/login">Start researching &rarr;</a></div>
+<div class="btns"><a class="btn" data-cta="inline" href="${signupLink(ticker)}">Start researching &rarr;</a></div>
 </aside>`;
   }
   const memo = ticker
-    ? `<a class="btn" href="${APP}/reports/library/${encodeURIComponent(ticker)}">Read the full ${esc(ticker)} memo</a>`
+    ? `<a class="btn" data-cta="end" href="${signupLink(ticker)}">Read the full ${esc(ticker)} memo</a>`
     : '';
   return `<aside class="cta" aria-label="Get the full memo" data-end-cta>
 <div class="cta-text"><strong>This article is the memo’s summary — annexes, every statement year and every source are in the full report.</strong><p class="sub">Five years of financials, the forecast model, and the complete source list.</p></div>
-<div class="btns">${memo}<a class="btn${ticker ? ' ghost' : ''}" href="${APP}/login">Start researching &rarr;</a></div>
+<div class="btns">${memo}<a class="btn${ticker ? ' ghost' : ''}" data-cta="end-start" href="${signupLink('')}">Start researching &rarr;</a></div>
 </aside>`;
 }
 
@@ -274,7 +279,7 @@ function coverageCallToAction(ticker, company) {
     : '';
   return `<aside class="cta" aria-label="Cover this stock" data-end-cta>
 <div class="cta-text"><strong>This is one week of our Coverage on ${esc(company || ticker)}.</strong><p class="sub">Every Monday: what X, Reddit and local news said that the company hasn't announced, each story checked.</p></div>
-<div class="btns">${cover}<a class="btn${ticker ? ' ghost' : ''}" href="${APP}/login">Start researching &rarr;</a></div>
+<div class="btns">${cover}<a class="btn${ticker ? ' ghost' : ''}" data-cta="end-start" href="${signupLink('')}">Start researching &rarr;</a></div>
 </aside>`;
 }
 
@@ -363,7 +368,7 @@ var sh=t.closest('[data-share]');if(sh){var u=(d.querySelector('link[rel=canonic
 d.addEventListener('keydown',function(e){if(e.key==='Escape'){set('hub',false);set('toc',false);}});
 d.querySelectorAll('[data-toc-fold],[data-share]').forEach(function(b){b.hidden=false;});
 var s=d.querySelectorAll('details.hub-sec');if(s.length&&!('name' in d.createElement('details')))s.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)s.forEach(function(y){if(y!==x)y.open=false;});});});
-var slim=d.querySelector('[data-slim]'),src=d.querySelector('.cta a[href$="/login"]'),first=d.querySelector('section.chapter'),end=d.querySelector('[data-end-cta]');
+var slim=d.querySelector('[data-slim]'),src=d.querySelector('.cta a[data-cta="inline"]'),first=d.querySelector('section.chapter'),end=d.querySelector('[data-end-cta]');
 if(slim&&src){var b=src.cloneNode(true);b.removeAttribute('class');b.setAttribute('tabindex','-1');slim.appendChild(b);}
 var H=[];d.querySelectorAll('.toc-list a').forEach(function(a){var h=d.getElementById(a.getAttribute('href').slice(1));if(h)H.push([h,a]);});
 var cur=null,q=false;
@@ -524,7 +529,7 @@ ${byline ? `<div class="byline">${byline}</div>` : ''}
 </header>
 ${disclaimerTop}
 ${openingHtml}
-${hasMore ? callToAction('inline') : ''}
+${hasMore ? callToAction('inline', ticker) : ''}
 ${hasMore ? restHtml : ''}
 ${hasChapters ? '<div class="slim" data-slim></div>' : ''}
 ${isCoveragePost(post) ? coverageCallToAction(ticker, str(post.company_name)) : callToAction('end', isLibrary ? ticker : '')}
@@ -540,7 +545,7 @@ ${hub ? hub.html : ''}
 ${dock}
 <script>${PAGE_SCRIPT}</script>`;
 
-  return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body, bodyClass: 'post' });
+  return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body, bodyClass: 'post', ga: { type: 'post', ticker } });
 }
 
 function renderIndex(entries) {
@@ -583,17 +588,26 @@ function renderSitemap(entries) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
 }
 
+// Search engines and the AI assistants' crawlers are all welcome (owner, B112): named one by one so a crawler that only
+// reads its own group still finds an Allow.
+const CRAWLERS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Claude-SearchBot', 'Applebot'];
 function renderRobots() {
-  return `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`;
+  return `${CRAWLERS.map((ua) => `User-agent: ${ua}\nAllow: /\n`).join('\n')}\nUser-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`;
 }
 
-function renderLlms(entries) {
+function renderSitemapIndex(names, lastmod) {
+  const items = names.map((n) => `  <sitemap>\n    <loc>${SITE}/${n}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}\n  </sitemap>`);
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items.join('\n')}\n</sitemapindex>\n`;
+}
+
+function renderLlms(entries, stockPages = []) {
   const lines = entries.map(({ post }) => {
     const title = str(post.title) || str(post.seo_title);
     const excerpt = str(post.excerpt) || str(post.seo_description);
     return `- [${title}](${SITE}/${post.slug}/)${excerpt ? `: ${excerpt}` : ''}`;
   });
-  return `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles. Each page is a static, crawler-readable copy of the article.\n\n## Articles\n\n${lines.join('\n')}\n`;
+  const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
+  return `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Articles\n\n${lines.join('\n')}\n${stocks.length ? `\n## Stock pages (forecast, dividend, earnings)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
 }
 
 async function main() {
@@ -640,14 +654,19 @@ async function main() {
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
-  const sitemapXml = renderSitemap(entries);
-  await writeFile(path.join(OUT, 'sitemap.xml'), sitemapXml);
+  // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
+  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report') });
+  const postsXml = renderSitemap(entries);
+  await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
+  const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps)];
+  const newest = [...parseSitemap(postsXml), ...stocks.entries].map((e) => e.lastmod).filter(Boolean).sort().pop() || '';
+  await writeFile(path.join(OUT, 'sitemap.xml'), renderSitemapIndex(names, newest));
   // IndexNow: the public key file (its content is exactly the key) and the state the NEXT build
-  // compares against (url -> last-modified, taken from the sitemap just written). See scripts/indexnow.mjs.
+  // compares against (url -> last-modified, every URL of every sitemap just written). See scripts/indexnow.mjs.
   await writeFile(path.join(OUT, KEY_FILE), INDEXNOW_KEY);
-  await writeFile(path.join(OUT, STATE_FILE), `${JSON.stringify(buildState(parseSitemap(sitemapXml)), null, 2)}\n`);
+  await writeFile(path.join(OUT, STATE_FILE), `${JSON.stringify(buildState([...parseSitemap(postsXml), ...stocks.entries]), null, 2)}\n`);
   await writeFile(path.join(OUT, 'robots.txt'), renderRobots());
-  await writeFile(path.join(OUT, 'llms.txt'), renderLlms(entries));
+  await writeFile(path.join(OUT, 'llms.txt'), renderLlms(entries, stocks.llms));
   await writeFile(path.join(OUT, '.nojekyll'), '');
   const cname = path.join(ROOT, 'CNAME');
   if (existsSync(cname)) await copyFile(cname, path.join(OUT, 'CNAME'));

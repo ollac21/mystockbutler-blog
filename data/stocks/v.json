@@ -1,0 +1,821 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "run-20261010T003354Z-eb7acc103cb8",
+ "ticker": "V",
+ "slug": "v",
+ "company": "Visa Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T02:18:29Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 375.1,
+ "price_date": "2026-10-08T20:00:03Z",
+ "next_earnings": "2026-10-27",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 262,
+  "tables": 25,
+  "words": 16283,
+  "sources": 214
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Visa is the payment network behind a card purchase, but it is not the bank that lends the money or the shop that sells the goods. To understand its business, follow a payment through the network, then follow the fees and relationships that make the network valuable."
+ },
+ "sources": [
+  {
+   "title": "Visa’s 2025 annual report, business description",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000089/v-20250930.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/1403161/000140316124000058/v-20240930.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316124000058/v-20240930.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/1403161/000140316123000099/v-20230930.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316123000099/v-20230930.htm"
+  }
+ ],
+ "rivals": [
+  "MA",
+  "AXP",
+  "COF",
+  "PYPL",
+  "XYZ",
+  "FISV",
+  "GPN",
+  "FIS"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Visa Inc. stock forecast: scenarios through 2029",
+   "meta_description": "Visa Inc. stock forecast: the weighted scenario reaches $537.65 by October 2029, alongside bear, base and bull cases.",
+   "opening": "The weighted scenario reaches $537.65 by October 2029 from today's $375.10, with 30% bear, 55% base, and 15% bull. It hinges on durable growth that survives incentives and regulation.",
+   "closing": "The full memo also explains Visa Inc.'s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Visa Inc.'s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The October 2029 range runs from $357.57 to $782.63. Today's price is $375.10. The bear carries 30% and the base 55%. The bull carries 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 375.10, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 375.10, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "390.95 (+5 %)",
+        "375.39 (+2 %)",
+        "357.57 (-2 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "459.63 (+23 %)",
+        "511.65 (+38 %)",
+        "569.07 (+54 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "518.52 (+39 %)",
+        "639.79 (+72 %)",
+        "782.63 (+112 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "447.86 (+20 %)",
+        "489.99 (+32 %)",
+        "537.65 (+46 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Visa Inc.'s base case, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 251,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear begins at $27,120 million and reaches $27,734 million in the second year. It ends at $28,310 million because incentives, routing pressure, renewals, and legal costs reduce revenue retention and margins. Incentives already grew faster than net revenue in the latest quarter. The bull starts at $29,100 million and reaches $33,984 million before ending at $39,400 million. It assumes stronger spending and durable adoption of Visa Direct, commercial products, and services, whose latest-quarter growth was strong."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Visa Inc. really make after stock pay?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based pay is added back in the cash-flow statement because it is not an immediate cash payment. It is still valuable compensation and can dilute existing owners. Visa recorded $897 million of stock-based pay in FY2025. Deducting it leaves $20,680 million of economic free cash flow, or $10.52 per diluted share."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Sep 2025",
+       "Year to Sep 2024",
+       "Year to Sep 2023",
+       "Year to Sep 2022",
+       "Year to Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "23,059",
+        "19,950",
+        "20,755",
+        "18,849",
+        "15,227"
+       ],
+       [
+        "Capital spending",
+        "1,482",
+        "1,257",
+        "1,059",
+        "970",
+        "705"
+       ],
+       [
+        "Free cash flow (calculated)",
+        "21,577",
+        "18,693",
+        "19,696",
+        "17,879",
+        "14,522"
+       ],
+       [
+        "Stock-based pay",
+        "897",
+        "850",
+        "765",
+        "602",
+        "542"
+       ],
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "20,680",
+        "17,843",
+        "18,931",
+        "17,277",
+        "13,980"
+       ],
+       [
+        "Real free cash flow per share (calculated)",
+        "10.52",
+        "8.79",
+        "9.08",
+        "8.09",
+        "6.39"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Visa Inc. today?",
+     "paragraphs": [
+      {
+       "n": 180,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At US$375.10 a share, Visa trades at 31.9 times trailing earnings. In other words, an investor pays US$31.90 for each dollar of the company’s recent profit. The forward P/E is 25.0 times because it uses forecast earnings, but that lower multiple is not automatically a bargain: reported earnings may include litigation or restructuring costs that forecasts remove."
+      },
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the cash left after operating the business and buying property, equipment and technology. Visa’s 3.0% free-cash-flow yield and 0.7% dividend yield mean that most of the investment case depends on future growth and share repurchases, not immediate income."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "375.10"
+       ],
+       [
+        "Enterprise value (calculated)",
+        "713,732.22"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "31.9x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "25.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "3.0%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.7%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "375.10"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "537.65 (+46 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "25.0x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "31.9x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 375.1,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "390.95 (+5 %)",
+       "375.39 (+2 %)",
+       "357.57 (-2 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "459.63 (+23 %)",
+       "511.65 (+38 %)",
+       "569.07 (+54 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "518.52 (+39 %)",
+       "639.79 (+72 %)",
+       "782.63 (+112 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "447.86 (+20 %)",
+       "489.99 (+32 %)",
+       "537.65 (+46 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/v/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=V&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Visa Inc. dividend: history, cash cover and yield",
+   "meta_description": "Visa Inc. dividend history, cash coverage, future changes and current yield, explained in plain English.",
+   "opening": "Visa Inc. pays $0.67 per share quarterly, or $2.68 annualized, and has raised dividends every year in the five-year record. Its FY2025 economic free cash flow was $20,680 million, while dividends and buybacks consumed almost all of real free cash flow across the period.",
+   "closing": "The full memo also explains Visa Inc.'s business, its rivals, its management choices, and the risks around regulation, incentives and growth.",
+   "blocks": [
+    {
+     "heading": "How much does Visa Inc. pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in all cases because Visa has raised them every year in the five-year record. The latest quarterly declaration was $0.67, or $2.68 annualized. The base pays $3.04 per share in the first year, then $3.36 and $3.68. Roughly 12% annual increases remain below the recent increase while preserving room for litigation and investment. The bear slows growth to $2.88, $3.04, and $3.20; the bull reaches $3.20, $3.84, and $4.48. Cash generation supports continued increases, although litigation and buybacks compete for cash."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$ per share",
+      "caption": "What one share gets (US$ per share)",
+      "head": [
+       "Row",
+       "Year to Sep 2025",
+       "Year to Sep 2024",
+       "Year to Sep 2023",
+       "Year to Sep 2022",
+       "Year to Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow per share (calculated)",
+        "10.98",
+        "9.21",
+        "9.45",
+        "8.37",
+        "6.64"
+       ],
+       [
+        "Buybacks per share (calculated)",
+        "9.32",
+        "8.24",
+        "5.80",
+        "5.43",
+        "3.97"
+       ],
+       [
+        "Dividend per share",
+        "2.36",
+        "2.08",
+        "1.80",
+        "1.50",
+        "1.28"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Does Visa Inc.'s dividend come from its cash?",
+     "paragraphs": [
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock-based pay is added back in the cash-flow statement because it is not an immediate cash payment. It is still valuable compensation and can dilute existing owners. Visa recorded $897 million of stock-based pay in FY2025. Deducting it leaves $20,680 million of economic free cash flow, or $10.52 per diluted share."
+      },
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Across the period, dividends and buybacks consumed almost all of real free cash flow. In the last two years, shareholder returns exceeded that year’s adjusted cash generation, so Visa used other resources as well, including debt. Acquisition spending was smaller and uneven by comparison. This pattern says that Visa saw its mature network as a cash-generating asset and chose to distribute much of the harvest."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Sep 2025",
+       "Year to Sep 2024",
+       "Year to Sep 2023",
+       "Year to Sep 2022",
+       "Year to Sep 2021"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay) (calculated)",
+        "20,680",
+        "17,843",
+        "18,931",
+        "17,277",
+        "13,980"
+       ],
+       [
+        "Dividends paid",
+        "4,634",
+        "4,217",
+        "3,751",
+        "3,203",
+        "2,798"
+       ],
+       [
+        "Shares bought back",
+        "18,316",
+        "16,713",
+        "12,101",
+        "11,589",
+        "8,676"
+       ],
+       [
+        "Acquisitions",
+        "887",
+        "915",
+        "0",
+        "1,948",
+        "75"
+       ],
+       [
+        "Debt raised minus debt repaid (calculated)",
+        "3,924",
+        "0",
+        "-2,250",
+        "2,218",
+        "-3,000"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow (calculated)",
+        "111.0%",
+        "117.3%",
+        "83.7%",
+        "85.6%",
+        "82.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Visa Inc.'s dividend?",
+     "paragraphs": [],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "28,543 (27,120 / 29,100)",
+        "32,234 (27,734 / 33,984)",
+        "36,400 (28,310 / 39,400)"
+       ],
+       [
+        "Shares (millions)",
+        "1,863 (1,873 / 1,852)",
+        "1,827 (1,847 / 1,806)",
+        "1,791 (1,821 / 1,762)"
+       ],
+       [
+        "Dividends per share",
+        "3.04 (2.88 / 3.20)",
+        "3.36 (3.04 / 3.84)",
+        "3.68 (3.20 / 4.48)"
+       ],
+       [
+        "Price to earnings",
+        "30.00 (27.00 / 33.00)",
+        "29.00 (25.00 / 34.00)",
+        "28.00 (23.00 / 35.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Visa Inc.'s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 182,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is the cash left after operating the business and buying property, equipment and technology. Visa’s 3.0% free-cash-flow yield and 0.7% dividend yield mean that most of the investment case depends on future growth and share repurchases, not immediate income."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "3.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Year to Sep 2021",
+     "Year to Sep 2022",
+     "Year to Sep 2023",
+     "Year to Sep 2024",
+     "Year to Sep 2025"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "6.64",
+      "8.37",
+      "9.45",
+      "9.21",
+      "10.98"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/v/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=V&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Visa Inc. earnings: guidance and results",
+   "meta_description": "Visa Inc.'s next results are expected October 27, 2026; see management's guidance, recent results, and what to watch.",
+   "opening": "Visa Inc.'s next results are expected on October 27, 2026. The key thing to watch is whether client renewals and currency conditions still support the promised pace.",
+   "closing": "The full memo also answers how Visa Inc.'s business, rivals, management and risks shape the outlook.",
+   "blocks": [
+    {
+     "heading": "What has Visa Inc. guided for FY2026?",
+     "paragraphs": [
+      {
+       "n": 211,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Visa’s financial year ends on September 30. In July, management guided to full-year FY2026 net-revenue growth at the low end of low-teens growth and earnings-per-share growth at the low end of the mid-teens. For the fourth quarter, it expected revenue growth at the high end of low-double-digit growth and earnings growth at the low end of the mid-teens."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Has Visa Inc. kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 125,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Visa promised sustained growth, disciplined expenses and regular capital returns. Buybacks increased and the diluted share count fell, while services revenue grew strongly. But acquisition effects and pricing contributed to reported growth, so a lower share count and one strong period do not prove that existing operations improved equally."
+      }
+     ],
+     "table": {
+      "title": "Stock pay and buybacks",
+      "unit": "US$ millions",
+      "caption": "Stock pay and buybacks (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Sep 2025",
+       "Year to Sep 2024",
+       "Year to Sep 2023",
+       "Year to Sep 2022",
+       "Year to Sep 2021"
+      ],
+      "rows": [
+       [
+        "Shares bought back",
+        "18,316",
+        "16,713",
+        "12,101",
+        "11,589",
+        "8,676"
+       ],
+       [
+        "Stock-based pay",
+        "897",
+        "850",
+        "765",
+        "602",
+        "542"
+       ],
+       [
+        "Cash really returned by buybacks (calculated)",
+        "17,419",
+        "15,863",
+        "11,336",
+        "10,987",
+        "8,134"
+       ],
+       [
+        "Diluted shares",
+        "1,966",
+        "2,029",
+        "2,085",
+        "2,136",
+        "2,188"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How have Visa Inc.'s revenue and profit changed?",
+     "paragraphs": [
+      {
+       "n": 159,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue reached $11,633 million, up about 14.4%. Operating income reached $6,877 million, up about 11.3%. Net income rose 6.8% to $5,628 million, while diluted EPS increased 10.4% to $2.97. Revenue therefore grew faster than operating profit, while EPS benefited from the share count."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Jun 2026",
+       "Quarter to Mar 2026",
+       "Quarter to Dec 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Mar 2025",
+       "Quarter to Dec 2024",
+       "Quarter to Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "11,633",
+        "11,230",
+        "10,901",
+        "10,724",
+        "10,172",
+        "9,594",
+        "9,510",
+        "9,617"
+       ],
+       [
+        "Operating income",
+        "6,877",
+        "7,234",
+        "6,737",
+        "6,148",
+        "6,177",
+        "5,435",
+        "6,234",
+        "6,349"
+       ],
+       [
+        "Net income",
+        "5,628",
+        "6,021",
+        "5,853",
+        "5,090",
+        "5,272",
+        "4,577",
+        "5,119",
+        "5,318"
+       ],
+       [
+        "EPS, diluted",
+        "2.97",
+        "3.14",
+        "3.03",
+        "2.62",
+        "2.69",
+        "2.32",
+        "2.58",
+        "2.65"
+       ],
+       [
+        "Cash from operations",
+        "6,554",
+        "3,008",
+        "6,780",
+        "6,238",
+        "6,730",
+        "4,695",
+        "5,396",
+        "6,664"
+       ],
+       [
+        "Capital spending",
+        "417",
+        "383",
+        "378",
+        "389",
+        "421",
+        "327",
+        "345",
+        "309"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should Visa Inc. watch in its next results?",
+     "paragraphs": [
+      {
+       "n": 213,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The forecast also assumes stable consumer spending and continued currency volatility. Visa expected contracts covering roughly 20% of payment volume to be renewed by year-end. Banks choose which network their cards use, so Visa offers client incentives—payments or discounts—to retain those relationships. In the nine months ended June 2026, those incentives reached $13.2 billion. The next forecast must show whether renewals and currency conditions still support the promised pace."
+      },
+      {
+       "n": 228,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Visa recorded a $2,533 million U.S. litigation provision in FY2025 and $1,255 million during the nine months to June 2026. A provision records an estimated legal expense; payment may come later. Visa said merchants representing approximately 95% of the Visa-branded sales volume of merchants that opted out of the damages settlement had settled, but that is not 95% of every possible U.S. claim."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 27, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Jun 2026 (US$ millions)",
+     "value": "11,633"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "value": "2.97"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Sep 2024",
+     "Quarter to Dec 2024",
+     "Quarter to Mar 2025",
+     "Quarter to Jun 2025",
+     "Quarter to Sep 2025",
+     "Quarter to Dec 2025",
+     "Quarter to Mar 2026",
+     "Quarter to Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "9,617",
+      "9,510",
+      "9,594",
+      "10,172",
+      "10,724",
+      "10,901",
+      "11,230",
+      "11,633"
+     ],
+     "EPS, diluted": [
+      "2.65",
+      "2.58",
+      "2.32",
+      "2.69",
+      "2.62",
+      "3.03",
+      "3.14",
+      "2.97"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/v/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=V&src=seo-earnings"
+  }
+ },
+ "held": {}
+}

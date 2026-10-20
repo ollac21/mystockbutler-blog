@@ -1,0 +1,581 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "run-20261012T225113Z-362acc811cae",
+ "ticker": "SNDK",
+ "slug": "sndk",
+ "company": "Sandisk Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T00:06:55Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 1487.33,
+ "price_date": "2026-10-12T20:00:00Z",
+ "next_earnings": "2026-10-29",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 16958,
+  "sources": 217
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Sandisk Corporation turns NAND flash, memory that keeps data when power is off, into storage for devices, people and data centers. Its business is a chain: customers pay for products, Sandisk pays for memory and the work of making and selling them, and the difference depends on prices, contracts and supply."
+ },
+ "sources": [
+  {
+   "title": "Sandisk’s FY2026 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
+  },
+  {
+   "title": "FY2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000202355425000034/sndk-20250627.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366dex991.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/2023554/000119312525013282/d835366dex991.htm"
+  }
+ ],
+ "rivals": [
+  "MU"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Sandisk Corporation stock forecast",
+   "meta_description": "Sandisk Corporation stock forecast: weighted scenarios, cash generation, valuation, and the operating drivers that could change the outcome.",
+   "opening": "The weighted forecast reaches $2,063.61 in October 2029, a 39% gain. It hinges on whether NAND supply outruns demand.",
+   "closing": "The full memo also covers Sandisk Corporation’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Sandisk Corporation’s shares go?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $1,331.50 in October 2027, a 10% loss including dividends. It becomes $1,581.80 in October 2028, a 6% gain. By October 2029, it reaches $2,063.61, a 39% gain."
+      },
+      {
+       "n": 231,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The bear case has a 30% probability. The base case has a 52% probability. The bull case has an 18% probability. These odds reflect the tension between strong current demand and an unusually cyclical earnings record."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1487.33, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1487.33, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "542.70 (-64 %)",
+        "367.00 (-75 %)",
+        "573.23 (-61 %)"
+       ],
+       [
+        "Base",
+        "52 %",
+        "1425.12 (-4 %)",
+        "1649.20 (+11 %)",
+        "2090.03 (+41 %)"
+       ],
+       [
+        "Bull",
+        "18 %",
+        "2375.73 (+60 %)",
+        "3411.75 (+129 %)",
+        "4471.21 (+201 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "1331.50 (-10 %)",
+        "1581.80 (+6 %)",
+        "2063.61 (+39 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could make Sandisk Corporation’s forecast work or fail?",
+     "paragraphs": [
+      {
+       "n": 238,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case falls to $3,000M, then $2,500M, before recovering to $3,500M. It assumes supply outruns demand, prices reverse and fixed Flash Ventures costs amplify the decline. NAND prices fell more than 50% in the last completed downturn. The bull case rises from $8,000M to $10,000M and then $12,000M, requiring enterprise demand to absorb new bits and BiCS10 to lower cost per bit. BiCS10 is claimed to improve density by 59% over BiCS8."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Normal operating profit",
+        "5,000 (3,000 / 8,000)",
+        "5,500 (2,500 / 10,000)",
+        "6,500 (3,500 / 12,000)"
+       ],
+       [
+        "Shares (millions)",
+        "144 (147 / 143)",
+        "144 (149 / 142)",
+        "144 (151 / 141)"
+       ],
+       [
+        "Enterprise value to normal operating profit",
+        "40.00 (25.00 / 42.00)",
+        "42.00 (20.00 / 48.00)",
+        "45.00 (23.00 / 52.00)"
+       ],
+       [
+        "Net debt",
+        "-5,930 (-4,614 / -3,730)",
+        "-7,309 (-4,647 / -4,128)",
+        "-9,510 (-6,115 / -5,994)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Sandisk Corporation really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Capital spending also has more than one useful definition because joint-venture funding, leases and wafer economics run through different lines. Inventory days rose from 135 to 178, and the cash conversion cycle lengthened from 136 to 162 days. Inventory deserves attention when prices can fall. Deducting US$232 million of stock compensation leaves “real free cash flow” of US$11,262 million, an allowance for dilution rather than another cash payment."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Jun 2025",
+       "Jun 2024",
+       "Jun 2023",
+       "Jul 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "11,671",
+        "84",
+        "-309",
+        "-713",
+        "1,151"
+       ],
+       [
+        "− Capital spending",
+        "177",
+        "204",
+        "166",
+        "219",
+        "410"
+       ],
+       [
+        "**= Free cash flow**",
+        "11,494",
+        "-120",
+        "-475",
+        "-932",
+        "741"
+       ],
+       [
+        "− Stock pay",
+        "232",
+        "182",
+        "149",
+        "165",
+        "171"
+       ],
+       [
+        "**= Real free cash flow**",
+        "11,262",
+        "-302",
+        "-624",
+        "-1,097",
+        "570"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Sandisk Corporation today?",
+     "paragraphs": [
+      {
+       "n": 173,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "A share price is not the value of the company. Market value adds up all common shares, while enterprise value adjusts that figure for cash and debt to show what investors are paying for the operating business. The forward P/E compares the price with predicted earnings, so its apparent cheapness depends on those earnings arriving. Enterprise value divided by revenue adds another warning: sales matter only if they become profit and cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,487.33"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "2063.61 (+39 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "7.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1487.33,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "542.70 (-64 %)",
+       "367.00 (-75 %)",
+       "573.23 (-61 %)"
+      ]
+     },
+     "Base": {
+      "probability": "52 %",
+      "values": [
+       "1425.12 (-4 %)",
+       "1649.20 (+11 %)",
+       "2090.03 (+41 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "18 %",
+      "values": [
+       "2375.73 (+60 %)",
+       "3411.75 (+129 %)",
+       "4471.21 (+201 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "1331.50 (-10 %)",
+       "1581.80 (+6 %)",
+       "2063.61 (+39 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/sndk/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SNDK&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Sandisk Corporation earnings date and guidance",
+   "meta_description": "Sandisk Corporation reports next on October 29, 2026; see its guidance, recent results and what to watch.",
+   "opening": "Sandisk Corporation's next results are expected on October 29, 2026. Watch whether shipment growth and realized pricing support the next outlook.",
+   "closing": "The full Sandisk Corporation memo also covers its business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Sandisk Corporation guided?",
+     "paragraphs": [
+      {
+       "n": 200,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "For the next quarter, Sandisk forecasts revenue of **$10,300–$10,800 million** and non-GAAP earnings of **$44.00–$46.00 per diluted share**. Non-GAAP is management’s version of profit after removing selected items from GAAP, the standard accounting result. The exclusions include stock-based compensation: issuing shares may not require an immediate cash payment, but it dilutes existing owners. The forecast is therefore useful for judging operations, but it should be checked against GAAP profit, share count and cash flow."
+      },
+      {
+       "n": 201,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management’s longer-range model targets average non-GAAP gross margins of **80.0%**, operating margins of **75.0%** and adjusted free-cash-flow margins of **50.0%** across FY2028–FY2030. These are averages, not promises for every quarter. Free cash flow is the money left after operating needs and investment; the adjusted version also removes company-specific items."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Fiscal Q1 2027",
+        "10,300",
+        "10,800",
+        "Aug 5, 2026"
+       ],
+       [
+        "Gross Margin (Non-GAAP)",
+        "Fiscal Q1 2027",
+        "83.0%",
+        "85.0%",
+        "Aug 5, 2026"
+       ],
+       [
+        "Diluted Net Income Per Share (Non-GAAP)",
+        "Fiscal Q1 2027",
+        "44.00",
+        "46.00",
+        "Aug 5, 2026"
+       ],
+       [
+        "non-GAAP gross margins",
+        "FY2028–FY2030",
+        "80.0%",
+        "80.0%",
+        "Aug 13, 2026"
+       ],
+       [
+        "non-GAAP operating margins",
+        "FY2028–FY2030",
+        "75.0%",
+        "75.0%",
+        "Aug 13, 2026"
+       ],
+       [
+        "adjusted free cash flow margin",
+        "FY2028–FY2030",
+        "50.0%",
+        "50.0%",
+        "Aug 13, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Sandisk Corporation kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Sandisk has delivered tangible results, including debt reduction and actual repurchases. At Investor Day on August 13, 2026, management promised to return all excess cash after investing in the business. That promise leaves judgment over what counts as necessary investment, but it gives shareholders a clear principle to test."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How have Sandisk Corporation's revenue and profit trended?",
+     "paragraphs": [
+      {
+       "n": 153,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The eight-quarter sequence shows revenue weakening in early 2025 before climbing through the rest of the year and accelerating in 2026. Management attributed roughly one-third of sequential revenue growth to volume and two-thirds to pricing. That mix makes the quarter powerful but also exposes it to future price reversals."
+      },
+      {
+       "n": 152,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue and gross margin reached new highs, and operating income rose sharply from the year-earlier quarter. Because the recovery had already appeared in earlier quarters, the result is more than the disappearance of one accounting charge."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "8,965",
+        "5,950",
+        "3,025",
+        "2,308",
+        "1,901",
+        "1,695",
+        "1,876",
+        "1,883"
+       ],
+       [
+        "Gross margin",
+        "84.6%",
+        "78.4%",
+        "50.9%",
+        "29.8%",
+        "26.2%",
+        "22.5%",
+        "32.3%",
+        "38.6%"
+       ],
+       [
+        "Operating income",
+        "7,037",
+        "4,111",
+        "1,065",
+        "176",
+        "18",
+        "-1,881",
+        "195",
+        "291"
+       ],
+       [
+        "Net income",
+        "6,903",
+        "3,615",
+        "803",
+        "112",
+        "-23",
+        "-1,933",
+        "104",
+        "211"
+       ],
+       [
+        "EPS, diluted",
+        "43.97",
+        "23.03",
+        "5.15",
+        "0.75",
+        "-0.16",
+        "-13.33",
+        "",
+        "1.19"
+       ],
+       [
+        "**= Free cash flow**",
+        "7,083",
+        "2,993",
+        "980",
+        "438",
+        "49",
+        "-18",
+        "47",
+        "-198"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 29, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "8,965"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "43.97"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "1,883",
+      "1,876",
+      "1,695",
+      "1,901",
+      "2,308",
+      "3,025",
+      "5,950",
+      "8,965"
+     ],
+     "EPS, diluted": [
+      "1.19",
+      "",
+      "-13.33",
+      "-0.16",
+      "0.75",
+      "5.15",
+      "23.03",
+      "43.97"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/sndk/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=SNDK&src=seo-earnings"
+  }
+ },
+ "held": {
+  "dividend": "no dividend"
+ }
+}

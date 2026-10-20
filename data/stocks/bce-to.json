@@ -1,0 +1,812 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "run-20261017T140902Z-e6a75f34a78b",
+ "ticker": "BCE.TO",
+ "slug": "bce-to",
+ "company": "BCE Inc.",
+ "exchange": "TSX",
+ "currency": "CAD",
+ "index": "sptsx60",
+ "company_type": "operating_company",
+ "country": "canada",
+ "memo_date": "2026-10-17T15:34:33Z",
+ "memo_date_text": "October 17, 2026",
+ "price": 28.73,
+ "price_date": "2026-10-16T20:00:00Z",
+ "next_earnings": "2026-11-05",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 249,
+  "tables": 27,
+  "words": 15803,
+  "sources": 128
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "BCE Inc. is a Canadian communications company that sells connections, technology and media through Bell and related brands. The business takes recurring payments from households, companies, carriers and advertisers, then spends them on networks, content, people and financing."
+ },
+ "sources": [
+  {
+   "title": "BCE 2025 annual financial report",
+   "url": "https://www.sec.gov/Archives/edgar/data/718940/000119312526095004/d86374dex993.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/718940/000119312525049950/d899242dex993.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/718940/000119312525049950/d899242dex993.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/718940/000119312524063019/d758244dex993.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/718940/000119312524063019/d758244dex993.htm"
+  }
+ ],
+ "rivals": [
+  "T.TO",
+  "CCA.TO",
+  "T",
+  "VZ",
+  "TMUS",
+  "CMCSA",
+  "CHTR"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "BCE Inc. stock forecast: scenarios and cash",
+   "meta_description": "BCE Inc. stock forecast: the weighted scenario points to moderate gains if cash generation improves, debt falls, and fibre, Ziply and AI execute.",
+   "opening": "The weighted forecast gives C$30.68 in October 2027 and C$35.29 in October 2029, with 35% probability to the bear case, 50% to the base case and 15% to the bull case. It hinges on turning heavy investment into cash while reducing debt and sustaining the dividend.",
+   "closing": "The full memo also answers how BCE Inc. makes money, compares with rivals, assesses management’s plans, and weighs its risks.",
+   "blocks": [
+    {
+     "heading": "Where could BCE Inc.'s shares be by 2029?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast gives C$30.68 in October 2027, a 13% total return, and C$35.29 in October 2029, a 40% total return. It assigns 35% probability to the bear case, 50% to the base case and 15% to the bull case. The base case requires Canadian stabilization, gradual Ziply and AI contributions, and partial asset-sale proceeds supporting debt reduction."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "CAD per share at each date; in brackets the return since today's 28.73, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 28.73, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "35 %",
+        "22.15 (-17 %)",
+        "14.50 (-38 %)",
+        "13.08 (-39 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "33.09 (+21 %)",
+        "36.83 (+40 %)",
+        "41.07 (+61 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "42.55 (+54 %)",
+        "54.10 (+101 %)",
+        "67.86 (+156 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "30.68 (+13 %)",
+        "31.61 (+22 %)",
+        "35.29 (+40 %)"
+       ]
+      ],
+      "note": "The weighted row is not another scenario; it is the average value after giving each case weight based on its probability."
+     }
+    },
+    {
+     "heading": "What has to go right for BCE Inc., and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 241,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "Wireless discounting, weak additions and falling ARPU reduce Bell CTS Canada’s value, while fibre and AI spending delays free-cash-flow recovery. Debt rises and the multiple contracts. The bear probability is 35% because these pressures are already visible, though recurring telecom cash flows and the reduced dividend limit the chance of a complete collapse."
+      },
+      {
+       "n": 243,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The base case, carrying 50% probability, assumes stabilization rather than a sharp recovery. BCE meets its reduced cash-flow outlook, the first AI hall contributes gradually, and partial disposals support debt reduction. Its final price is C$41.07."
+      },
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case needs several outcomes to align: better wireless retention, stronger fibre and Ziply take-up, on-time AI commissioning, tenant utilization and faster deleveraging. Its probability is 15% because the upside projects are real, but the AI hall has not yet demonstrated operating returns and Canadian telecom remains under pressure."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does BCE Inc. really make?",
+     "paragraphs": [],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "C$ millions",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "6,993",
+        "6,988",
+        "7,946",
+        "8,365",
+        "8,008"
+       ],
+       [
+        "− Capital spending",
+        "3,700",
+        "3,897",
+        "4,581",
+        "5,133",
+        "4,852"
+       ],
+       [
+        "− Lease payments",
+        "1,127",
+        "1,142",
+        "1,049",
+        "",
+        ""
+       ],
+       [
+        "− Interest paid",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow**",
+        "2,166",
+        "1,949",
+        "2,316",
+        "",
+        ""
+       ],
+       [
+        "**= Real free cash flow**",
+        "2,076",
+        "1,865",
+        "2,221",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own free cash flow is higher because it leaves out acquisition costs and certain pension and tax payments that we count as cash spent."
+     }
+    },
+    {
+     "heading": "What does an investor pay for BCE Inc. today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "28.73"
+       ],
+       [
+        "Market value (calculated)",
+        "26,791.47"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "4.3x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "11.2x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.1%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "7.7%"
+       ]
+      ],
+      "note": "The price-to-earnings measure rises from 4.3 to 11.2 because analysts expect the company to earn much less profit next year than it earned recently."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, CAD",
+     "value": "28.73"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "35.29 (+40 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "11.2x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 28.73,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "35 %",
+      "values": [
+       "22.15 (-17 %)",
+       "14.50 (-38 %)",
+       "13.08 (-39 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "33.09 (+21 %)",
+       "36.83 (+40 %)",
+       "41.07 (+61 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "42.55 (+54 %)",
+       "54.10 (+101 %)",
+       "67.86 (+156 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "30.68 (+13 %)",
+       "31.61 (+22 %)",
+       "35.29 (+40 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/bce-to/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BCE.TO&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "BCE Inc. dividend: payment and cash coverage",
+   "meta_description": "BCE Inc.'s dividend is C$1.75 per share annualized, while coverage depends on whether lease payments are counted in free cash flow.",
+   "opening": "BCE Inc. pays an annualized common dividend of C$1.75 per share, reduced from C$3.99 in May 2025. Cash coverage varies by definition: BCE's 2025 payout was about 64% on its policy measure but about 99% after lease payments.",
+   "closing": "The full memo also answers how BCE Inc. runs its business, compares with rivals, evaluates management decisions, and weighs its risks.",
+   "blocks": [
+    {
+     "heading": "How much does BCE Inc. pay in dividends?",
+     "paragraphs": [
+      {
+       "n": 155,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.6 — Cash generation, debt and the dividend",
+       "text": "BCE reduced its annualized common dividend from C$3.99 to C$1.75 per share in May 2025. The reset gives the company more room to invest and reduce debt. It also means the 2025 dividend-per-share figure combines two rates and is not a clean guide to the current annualized payment."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "caption": "What one share gets (C$ per share)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "− Dividends paid, per share",
+        "2.18",
+        "3.96",
+        "3.82",
+        "3.63",
+        "3.45"
+       ],
+       [
+        "**= FCF not paid out, per share**",
+        "0.10",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "**= Paid out more than FCF, per share**",
+        "",
+        "1.90",
+        "1.33",
+        "",
+        ""
+       ]
+      ],
+      "note": "BCE's own free cash flow per share is higher because it leaves out acquisition costs and some pension and disposal-tax payments that our count includes."
+     }
+    },
+    {
+     "heading": "Is BCE Inc.'s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.6 — Cash generation, debt and the dividend",
+       "text": "A payout ratio divides dividends by free cash flow. BCE’s policy measure produced a payout of about 64% in 2025, while treating lease payments as unavoidable cash claims raised the implied payout to about 99%. The difference is not a mathematical error; it reflects two different definitions of available cash."
+      },
+      {
+       "n": 163,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Free cash flow is what remains after operating cash generation and specified deductions, including capital spending. In the first half of 2026, BCE generated C$1.846 billion of free cash flow and paid C$816 million in common dividends. The remaining cash can reduce debt or fund investment, which is why yield alone does not settle the valuation question."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "2,166",
+        "1,949",
+        "2,316",
+        "",
+        ""
+       ],
+       [
+        "− Dividends paid",
+        "2,026",
+        "3,613",
+        "3,486",
+        "3,312",
+        "3,132"
+       ],
+       [
+        "− Share buybacks",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "89",
+        "",
+        "",
+        "",
+        ""
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "93.5%",
+        "185.4%",
+        "150.5%",
+        "",
+        ""
+       ]
+      ],
+      "note": "The company's own net debt is higher because it includes leases and part of its preferred shares, while our count leaves those out."
+     }
+    },
+    {
+     "heading": "What could change BCE Inc.'s dividend?",
+     "paragraphs": [
+      {
+       "n": 11,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast points to moderate gains—C$30.68 in October 2027 and C$35.29 in October 2029—if cash generation improves, debt falls, and fibre, Ziply and AI execute. For 2026, management guides to C$2.1 billion–C$2.3 billion of BCE’s free cash flow, a 28%–34% fall from 2025. It holds the annualized common dividend at C$1.75 per share and targets net debt leverage of 3.5x in 2027."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What is BCE Inc.'s dividend yield today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 17, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "28.73"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "8.1%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "6.1%"
+       ]
+      ],
+      "note": "The price-to-earnings measure rises from 4.3 to 11.2 because analysts expect the company to earn much less profit next year than it earned recently."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.18"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "6.1%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "7.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "8.1%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "C$ per share",
+    "columns": [
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "3.45",
+      "3.63",
+      "3.82",
+      "3.96",
+      "2.18"
+     ],
+     "Real free cash flow per share": [
+      "",
+      "",
+      "2.43",
+      "2.04",
+      "2.23"
+     ],
+     "Free cash flow per share": [
+      "",
+      "",
+      "2.54",
+      "2.14",
+      "2.33"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/bce-to/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BCE.TO&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "BCE Inc. earnings: date, guidance and results",
+   "meta_description": "BCE Inc. earnings are expected November 5, 2026; see current guidance, recent results and what to watch.",
+   "opening": "BCE Inc.'s next results are expected on November 5, 2026. The key thing to watch is whether full-year cash-flow guidance survives the construction ramp.",
+   "closing": "The full BCE Inc. memo also answers how the business works, who its rivals are, how management is paid, and what risks could change the story.",
+   "blocks": [
+    {
+     "heading": "What has BCE Inc. guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "BCE’s 2026 plan trades near-term cash for investment intended to create later growth. Management guides revenue growth of 1% to 5%. It guides adjusted EBITDA growth of 0% to 4%."
+      },
+      {
+       "n": 190,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management targets capital intensity of 20%, meaning capital spending will consume a large share of revenue. It expects adjusted EPS to fall 5% to 11%. It expects free cash flow to fall 28% to 34%, partly because capital spending rises by C$1.3 billion over 2025."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "C$ millions",
+      "caption": "Guidance in force (C$ millions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "2026",
+        "1.0%",
+        "5.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted EBITDA growth",
+        "2026",
+        "0.0%",
+        "4.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Capital intensity",
+        "2026",
+        "20.0%",
+        "20.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Adjusted EPS growth",
+        "2026",
+        "-11.0%",
+        "-5.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Free cash flow growth",
+        "2026",
+        "-34.0%",
+        "-28.0%",
+        "Aug 6, 2026"
+       ],
+       [
+        "Free cash flow",
+        "2026",
+        "2,100",
+        "2,300",
+        "Aug 6, 2026"
+       ]
+      ],
+      "note": "The negative growth ranges mean the company expects adjusted earnings per share and free cash flow to fall in 2026."
+     }
+    },
+    {
+     "heading": "Did BCE Inc. keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 89,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.1 — Who runs it",
+       "text": "The first test of that experience is whether BCE can grow while producing enough cash to invest and reduce debt. Free cash flow means the cash left after running the business and investing in its networks. In 2025, BCE reported C$6.993 billion of operating cash flow and C$3.178 billion of free cash flow. Its 2025 guidance forecast roughly C$3.1 billion of free cash flow, so hitting guidance means the result met management’s forecast, not that every part of the business improved."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What were BCE Inc.'s last eight quarters of revenue and profit?",
+     "paragraphs": [],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "caption": "The last eight quarters (C$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "6,176",
+        "6,168",
+        "6,404",
+        "6,049",
+        "6,085",
+        "5,930",
+        "6,422",
+        "5,971"
+       ],
+       [
+        "Operating income",
+        "1,270",
+        "1,276",
+        "1,107",
+        "401",
+        "1,338",
+        "1,030",
+        "1,197",
+        "-699"
+       ],
+       [
+        "Net income",
+        "597",
+        "653",
+        "630",
+        "4,540",
+        "619",
+        "671",
+        "504",
+        "-1,192"
+       ],
+       [
+        "EPS, diluted",
+        "0.60",
+        "0.66",
+        "0.64",
+        "4.84",
+        "0.63",
+        "0.68",
+        "0.51",
+        "-1.36"
+       ],
+       [
+        "Cash from operations",
+        "2,162",
+        "1,149",
+        "1,561",
+        "1,914",
+        "1,947",
+        "1,571",
+        "1,877",
+        "1,842"
+       ],
+       [
+        "**= Free cash flow**",
+        "824",
+        "67",
+        "-4",
+        "726",
+        "906",
+        "538",
+        "644",
+        "583"
+       ]
+      ],
+      "note": "The very large profit in September 2025 came mainly from selling an investment, so it does not show what the business normally earns."
+     }
+    },
+    {
+     "heading": "What should investors watch in BCE Inc.'s next results?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The November 2026 quarterly results should show whether full-year cash-flow guidance survives the construction ramp. The first Saskatchewan data hall will then test whether the AI strategy produces real revenue."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 5, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
+     "value": "6,176"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.60"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "C$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "5,971",
+      "6,422",
+      "5,930",
+      "6,085",
+      "6,049",
+      "6,404",
+      "6,168",
+      "6,176"
+     ],
+     "EPS, diluted": [
+      "-1.36",
+      "0.51",
+      "0.68",
+      "0.63",
+      "4.84",
+      "0.64",
+      "0.66",
+      "0.60"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/bce-to/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=BCE.TO&src=seo-earnings"
+  }
+ },
+ "held": {}
+}

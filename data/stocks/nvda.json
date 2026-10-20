@@ -1,0 +1,812 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "NVDA-20261016",
+ "ticker": "NVDA",
+ "slug": "nvda",
+ "company": "NVIDIA Corporation",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-16T16:43:14Z",
+ "memo_date_text": "October 16, 2026",
+ "price": 216.62,
+ "price_date": "2026-10-16T15:27:51Z",
+ "next_earnings": "2026-11-18",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 253,
+  "tables": 27,
+  "words": 16472,
+  "sources": 205
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "NVIDIA is a company that sells the machinery and software for demanding computing. Its business is easiest to understand as a flow: customers pay for a connected platform, NVIDIA pays the specialists and employees who build it, and the difference becomes profit."
+ },
+ "sources": [
+  {
+   "title": "2026 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm"
+  }
+ ],
+ "rivals": [
+  "AMD",
+  "INTC",
+  "AVGO",
+  "QCOM",
+  "MRVL",
+  "ARM",
+  "GOOGL",
+  "AMZN",
+  "MSFT",
+  "META"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "NVIDIA Corporation stock forecast: scenarios and valuation",
+   "meta_description": "NVIDIA Corporation's weighted forecast reaches $395.86 in October 2029, with outcomes shaped by customer returns, margins and supply.",
+   "opening": "NVIDIA Corporation's weighted scenario reaches $395.86 by October 2029, including dividends. It hinges on customer returns, utilization, margins and supply-constrained growth.",
+   "closing": "The full memo also explains NVIDIA Corporation's business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "Where could NVIDIA Corporation's shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The weighted price is $284.31 in October 2027, a 32% return including dividends. It rises to $352.69 in October 2028, a 64% return. By October 2029, it reaches $395.86, an 84% return."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 216.62, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 216.62, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "23 %",
+        "117.99 (-45 %)",
+        "92.04 (-57 %)",
+        "62.69 (-70 %)"
+       ],
+       [
+        "Base",
+        "57 %",
+        "291.37 (+35 %)",
+        "341.84 (+59 %)",
+        "370.64 (+73 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "455.47 (+111 %)",
+        "683.37 (+217 %)",
+        "850.89 (+295 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "284.31 (+32 %)",
+        "352.69 (+64 %)",
+        "395.86 (+84 %)"
+       ]
+      ],
+      "note": "The weighted row is the probability-based average of the bear, base, and bull cases, not a promise that the shares will reach that price."
+     }
+    },
+    {
+     "heading": "What has to go right for NVIDIA Corporation, and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at $400,000 million of revenue. Growth then falls to 30%, 5% and negative 10%, with margins declining from 48% to 45% and then 42%. The bull case starts at $430,000 million, grows by 80%, 45% and 30%, and holds margins near recent levels at 56% and then 57%. These differences reflect NVIDIA’s history of growth slowing from 114.2% to 65.5%, alongside the risk that customer payback, custom chips or supply constraints weaken demand. The latest quarter delivered $96,221 million of revenue and $59,688 million of net income. The forecast excludes $23,707 million of equity-security gains and a $711 million tax release because they are not operating earnings."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does NVIDIA Corporation really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow subtracts capital spending from cash generated by operations. “Real free cash flow” subtracts stock pay as well, treating employee equity awards as an economic cost to shareholders. The difference matters because stock compensation transfers value to employees through additional shares."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "102,718",
+        "64,089",
+        "28,090",
+        "5,641",
+        "9,108"
+       ],
+       [
+        "− Capital spending",
+        "6,042",
+        "3,236",
+        "1,069",
+        "1,833",
+        "976"
+       ],
+       [
+        "**= Free cash flow**",
+        "96,676",
+        "60,853",
+        "27,021",
+        "3,808",
+        "8,132"
+       ],
+       [
+        "− Stock pay",
+        "6,386",
+        "4,737",
+        "3,549",
+        "2,709",
+        "2,004"
+       ],
+       [
+        "**= Real free cash flow**",
+        "90,290",
+        "56,116",
+        "23,472",
+        "1,099",
+        "6,128"
+       ]
+      ],
+      "note": "The company's own free cash flow is slightly lower because it subtracts 101 million dollars of cash items that our count leaves in."
+     }
+    },
+    {
+     "heading": "What does an investor pay today for NVIDIA Corporation's earnings and cash?",
+     "paragraphs": [
+      {
+       "n": 175,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Price-to-earnings, or P/E, compares the share price with profit per share. It tells investors how many dollars they pay for one dollar of annual earnings. A forward P/E uses expected earnings rather than earnings already earned. If a share costs $100 and current earnings are $10, the P/E is 10 times. If expected earnings rise to $20, the forward P/E falls to 5 times without the share price changing. The lower multiple is therefore partly a bet that the forecast will arrive."
+      },
+      {
+       "n": 177,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Gross margin is the share of sales left after the direct cost of making and delivering products. If it falls from 75% to 70%, NVIDIA keeps less from every dollar of revenue before paying for research, staff, taxes, and other costs. Free cash flow is the cash left after running the business and making necessary investments. It is closer to the money available for repurchases, dividends, or debt reduction."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 16, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "216.62"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "13.7x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "1.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": "NVIDIA’s whole-business value is lower than its stock-market value because it has more cash and short-term investments than debt."
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "216.62"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "395.86 (+84 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "13.7x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 216.62,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "23 %",
+      "values": [
+       "117.99 (-45 %)",
+       "92.04 (-57 %)",
+       "62.69 (-70 %)"
+      ]
+     },
+     "Base": {
+      "probability": "57 %",
+      "values": [
+       "291.37 (+35 %)",
+       "341.84 (+59 %)",
+       "370.64 (+73 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "455.47 (+111 %)",
+       "683.37 (+217 %)",
+       "850.89 (+295 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "284.31 (+32 %)",
+       "352.69 (+64 %)",
+       "395.86 (+84 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/nvda/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NVDA&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "NVIDIA Corporation dividend: cash, history and yield",
+   "meta_description": "NVIDIA Corporation pays $0.25 per share quarterly; its cash generation supports dividends and buybacks, while the forecast models dividend changes.",
+   "opening": "NVIDIA pays a quarterly dividend of $0.25 per share, and its forecast begins at $1.00 per share annually. Its free cash flow has funded dividends and buybacks, with buybacks the larger return; payouts have not always matched cash generated in the same year.",
+   "closing": "The full memo also explains NVIDIA Corporation’s business, rivals, management, and risks.",
+   "blocks": [
+    {
+     "heading": "How much does NVIDIA Corporation pay its shareholders per share?",
+     "paragraphs": [],
+     "table": {
+      "title": "Results",
+      "unit": "US$ millions",
+      "caption": "Results (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "215,938",
+        "130,497",
+        "60,922",
+        "26,974",
+        "26,914"
+       ],
+       [
+        "EPS, diluted",
+        "4.90",
+        "2.94",
+        "1.19",
+        "0.17",
+        "0.39"
+       ],
+       [
+        "Dividend per share",
+        "0.04",
+        "0.03",
+        "0.02",
+        "0.02",
+        "0.02"
+       ]
+      ],
+      "note": "Operating income includes company-wide costs such as stock pay and acquisition costs, so it is lower than the profit reported by the individual business segments."
+     }
+    },
+    {
+     "heading": "Is NVIDIA Corporation’s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 90,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "Free cash flow is the cash left after operating the business and buying necessary equipment and intangible assets. NVIDIA can use it for buybacks, dividends, investments, acquisitions or liquidity. A buyback pays shareholders who sell and reduces the number of shares outstanding; a dividend pays shareholders directly. Because buybacks have become the larger form of return, shareholder payouts have not always matched the cash generated in the same year."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "96,676",
+        "60,853",
+        "27,021",
+        "3,808",
+        "8,132"
+       ],
+       [
+        "− Dividends paid",
+        "974",
+        "834",
+        "395",
+        "398",
+        "399"
+       ],
+       [
+        "− Share buybacks",
+        "40,086",
+        "33,706",
+        "9,533",
+        "10,039",
+        "0"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "55,616",
+        "26,313",
+        "17,093",
+        "",
+        "7,733"
+       ],
+       [
+        "Paid to shareholders",
+        "41,060",
+        "34,540",
+        "9,928",
+        "10,437",
+        "399"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "42.5%",
+        "56.8%",
+        "36.7%",
+        "274.1%",
+        "4.9%"
+       ]
+      ],
+      "note": "In January 2023, the company paid shareholders more cash than it generated, so it had to use savings or new borrowing."
+     }
+    },
+    {
+     "heading": "What could change NVIDIA Corporation’s dividend?",
+     "paragraphs": [
+      {
+       "n": 93,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "NVIDIA has added borrowing to this flexibility. In June 2026 it issued $25 billion of senior unsecured notes for general corporate purposes, including refinancing existing notes. In May it authorized another $80 billion in buybacks and raised its quarterly dividend to $0.25 per share. An authorization is permission, not money already spent; debt is cash today but creates future interest obligations. The test of these choices is therefore not whether NVIDIA can return cash, but whether it can convert the remaining capital into dependable platforms."
+      },
+      {
+       "n": 244,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends begin at $1.00 per share because the new quarterly rate is $0.25. The base case raises that amount by 5% annually. The bear case holds it flat. The bull case raises it by 25% annually. The modest base path reflects strong cash generation, but also NVIDIA’s preference for buybacks and the board’s continuing discretion over dividends."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "346,000 (235,000 / 385,000)",
+        "472,000 (243,000 / 590,000)",
+        "576,000 (212,000 / 785,000)"
+       ],
+       [
+        "Shares (millions)",
+        "23,750 (23,900 / 23,668)",
+        "23,473 (23,761 / 23,311)",
+        "23,311 (23,672 / 23,064)"
+       ],
+       [
+        "Dividends per share",
+        "1.00 (1.00 / 1.00)",
+        "1.05 (1.00 / 1.25)",
+        "1.10 (1.00 / 1.56)"
+       ],
+       [
+        "Price to earnings",
+        "20.00 (12.00 / 28.00)",
+        "17.00 (9.00 / 27.00)",
+        "15.00 (7.00 / 25.00)"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Jan 2026",
+     "value": "0.04"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.5%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "1.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$ per share",
+    "columns": [
+     "Jan 2022",
+     "Jan 2023",
+     "Jan 2024",
+     "Jan 2025",
+     "Jan 2026"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.02",
+      "0.02",
+      "0.02",
+      "0.03",
+      "0.04"
+     ],
+     "Real free cash flow per share": [
+      "0.24",
+      "0.04",
+      "0.94",
+      "2.26",
+      "3.68"
+     ],
+     "Free cash flow per share": [
+      "0.32",
+      "0.15",
+      "1.08",
+      "2.45",
+      "3.94"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/nvda/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NVDA&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "NVIDIA Corporation earnings: what to watch",
+   "meta_description": "NVIDIA Corporation's next results are expected November 18, 2026; guidance is strong, but delivery and customer readiness matter.",
+   "opening": "NVIDIA Corporation's next results are expected on November 18, 2026. The key thing to watch is whether it can deliver its platform profitably while managing supply and policy.",
+   "closing": "The full memo also explains NVIDIA Corporation’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has NVIDIA Corporation guided for the next quarter?",
+     "paragraphs": [
+      {
+       "n": 12,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management’s in-force guidance for the quarter to October 2026 is revenue of $105,840 million to $110,160 million. It calls for gross margin of 73.5% to 74.5%. Management’s preliminary outlook calls for roughly 70% revenue growth in fiscal 2028, while supply limits how much demand it can serve."
+      },
+      {
+       "n": 210,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The larger promise is preliminary revenue growth of roughly 70% in fiscal 2028. Jensen Huang said NVIDIA had never guided a year ahead before, so this forecast gives investors a new reference point. It is not a guarantee: management says customers want even more, but NVIDIA’s supply chain can support about 70%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Quarter to Oct 2026",
+        "105,840",
+        "110,160",
+        "Aug 26, 2026"
+       ],
+       [
+        "GAAP gross margin",
+        "Quarter to Oct 2026",
+        "73.5%",
+        "74.5%",
+        "Aug 26, 2026"
+       ],
+       [
+        "Non-GAAP gross margin",
+        "Quarter to Oct 2026",
+        "73.5%",
+        "74.5%",
+        "Aug 26, 2026"
+       ],
+       [
+        "GAAP operating expenses",
+        "Quarter to Oct 2026",
+        "9,200",
+        "9,200",
+        "Aug 26, 2026"
+       ],
+       [
+        "Non-GAAP operating expenses",
+        "Quarter to Oct 2026",
+        "9,000",
+        "9,000",
+        "Aug 26, 2026"
+       ],
+       [
+        "GAAP tax rate",
+        "Year to Jan 2027",
+        "16.0%",
+        "18.0%",
+        "Aug 26, 2026"
+       ]
+      ],
+      "note": "The company gives two versions of its costs: the standard accounting version includes more costs than the adjusted version, which also includes employee stock pay."
+     }
+    },
+    {
+     "heading": "What were NVIDIA Corporation's last eight quarters of revenue and profit?",
+     "paragraphs": [
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Gross margin reached 75.0%, while operating income rose to $63,734 million. Net income reached $59,688 million. Yet net income rose only 2% from the preceding quarter even as revenue rose 18%. Large investment gains helped make that comparison less representative of product economics."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "96,221",
+        "81,615",
+        "68,127",
+        "57,006",
+        "46,743",
+        "44,062",
+        "39,331",
+        "35,082"
+       ],
+       [
+        "Gross margin",
+        "75.0%",
+        "74.9%",
+        "75.0%",
+        "73.4%",
+        "72.4%",
+        "60.5%",
+        "73.0%",
+        "74.6%"
+       ],
+       [
+        "Operating income",
+        "63,734",
+        "53,536",
+        "44,299",
+        "36,010",
+        "28,440",
+        "21,638",
+        "24,034",
+        "21,869"
+       ],
+       [
+        "Net income",
+        "59,688",
+        "58,321",
+        "42,960",
+        "31,910",
+        "26,422",
+        "18,775",
+        "22,091",
+        "19,309"
+       ],
+       [
+        "EPS, diluted",
+        "2.46",
+        "2.39",
+        "1.76",
+        "1.30",
+        "1.08",
+        "0.76",
+        "0.89",
+        "0.78"
+       ],
+       [
+        "**= Free cash flow**",
+        "21,400",
+        "48,587",
+        "34,906",
+        "22,113",
+        "13,471",
+        "26,187",
+        "15,551",
+        "16,816"
+       ]
+      ],
+      "note": "Free cash flow is not profit: it is the cash left after the company’s daily business brings in cash and it pays for equipment, buildings, and software."
+     }
+    },
+    {
+     "heading": "What should investors watch in NVIDIA Corporation's next release?",
+     "paragraphs": [
+      {
+       "n": 231,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "NVIDIA has cash and extraordinary demand, but its success now depends on delivery, customer financing, infrastructure and policy. The central question is whether all those pieces arrive together—and produce enough profitable computing work to pay for what comes next."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 18, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ millions)",
+     "value": "96,221"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "2.46"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "35,082",
+      "39,331",
+      "44,062",
+      "46,743",
+      "57,006",
+      "68,127",
+      "81,615",
+      "96,221"
+     ],
+     "EPS, diluted": [
+      "0.78",
+      "0.89",
+      "0.76",
+      "1.08",
+      "1.30",
+      "1.76",
+      "2.39",
+      "2.46"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/nvda/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=NVDA&src=seo-earnings"
+  }
+ },
+ "held": {}
+}

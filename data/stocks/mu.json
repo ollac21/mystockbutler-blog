@@ -1,0 +1,865 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "run-20261008T135233Z-ba4f2fa927fd",
+ "ticker": "MU",
+ "slug": "mu",
+ "company": "Micron Technology, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T00:11:59Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 1067.55,
+ "price_date": "2026-10-08T13:54:25Z",
+ "next_earnings": "2026-12-23",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 248,
+  "tables": 27,
+  "words": 16616,
+  "sources": 222
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Micron Technology makes the memory chips and storage devices that computers use to work and keep data. It sells different products because a device needs different kinds of memory for different jobs."
+ },
+ "sources": [
+  {
+   "title": "Investor presentation — Q4 2026",
+   "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf"
+  },
+  {
+   "title": "2025 annual report, segment note",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+  },
+  {
+   "title": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/mu-20240829.htm",
+   "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312524000027/mu-20240829.htm"
+  }
+ ],
+ "rivals": [
+  "SKHY"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Micron Technology, Inc. stock forecast: scenarios",
+   "meta_description": "Micron's weighted scenario is near-term loss followed by a roughly flat result, hinging on durable cash after factory investment.",
+   "opening": "The weighted scenario reaches US$1,087.51 in October 2029, implying a 2% total return from today's US$1,067.55. It hinges on Micron converting demand into durable cash after factory investment.",
+   "closing": "The full memo also explains Micron Technology, Inc.'s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Micron Technology, Inc.'s shares go in the forecast?",
+     "paragraphs": [
+      {
+       "n": 227,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The range is much wider than the weighted result suggests. In October 2029, the bear case gives $421.24, while the bull case gives $2,097.32. The forecast assigns 30% to the bear case, 50% to the base case and 20% to the bull case."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 1067.55, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 1067.55, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "590.99 (-45 %)",
+        "460.14 (-57 %)",
+        "421.24 (-60 %)"
+       ],
+       [
+        "Base",
+        "50 %",
+        "799.48 (-25 %)",
+        "1116.03 (+5 %)",
+        "1083.34 (+2 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "1045.42 (-2 %)",
+        "1645.83 (+54 %)",
+        "2097.32 (+97 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "786.12 (-26 %)",
+        "1025.23 (-4 %)",
+        "1087.51 (+2 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right, and what could go wrong for Micron Technology, Inc.?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The bear case starts at 85% growth because the current outlook still supports expansion, but weaker AI orders drive a 30% decline in FY2028 and another 15% fall in FY2029. The bull case starts at 125% growth because HBM and data-center demand could keep usable supply tight; growth remains positive thereafter. HBM was expected to consume about 22% of leading suppliers’ DRAM wafer input by the end of 2026."
+      },
+      {
+       "n": 234,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Margins follow the same cycle. The base case uses 68% operating margin in FY2027, below FY2026’s 74.6%, because the company guides to high gross margin but also expects operating expenses to rise by $2.5 billion. Margins then fall to 62%, 55% and 50% as pricing normalizes. The bear case drops to 45%, 32%, 25% and 24% as utilization and prices weaken. The bull case holds margins at 72% and 73% before easing to 70% and 65%, supported by HBM mix, yields and pricing."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2027",
+       "FY2028",
+       "FY2029",
+       "FY2030"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "105.0 % (85.0 % / 125.0 %)",
+        "25.0 % (-30.0 % / 35.0 %)",
+        "-15.0 % (-15.0 % / 15.0 %)",
+        "12.0 % (20.0 % / 10.0 %)"
+       ],
+       [
+        "Measure (EBITDA / cash flow)",
+        "54,880 (49,526 / 60,234)",
+        "68,600 (34,668 / 81,316)",
+        "58,310 (29,468 / 93,514)",
+        "65,307 (35,362 / 102,865)"
+       ],
+       [
+        "Net debt",
+        "-203,180 (-145,803 / -225,947)",
+        "-402,815 (-198,120 / -493,439)",
+        "-554,984 (-237,534 / -801,136)",
+        "-727,678 (-296,005 / -1,137,082)"
+       ],
+       [
+        "Buybacks",
+        "6,000 (2,000 / 10,000)",
+        "12,000 (2,500 / 20,000)",
+        "16,000 (3,000 / 25,000)",
+        "18,000 (3,500 / 30,000)"
+       ],
+       [
+        "Dividend per share",
+        "0.60 (0.60 / 0.60)",
+        "0.72 (0.60 / 0.90)",
+        "0.84 (0.60 / 1.20)",
+        "0.96 (0.60 / 1.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "How much cash does Micron Technology, Inc. really make?",
+     "paragraphs": [
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates another distinction. Micron adds it back in operating cash because issuing shares is not an immediate cash payment. Deducting fiscal 2026 stock-based pay of $1,282 million leaves an analytical owner-oriented figure of $57,681 million. This is a deduction for dilution, not a second cash expense."
+      }
+     ],
+     "table": {
+      "title": "Free cash flow, honestly counted",
+      "unit": "US$ millions",
+      "caption": "Free cash flow, honestly counted (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Sep 2026",
+       "Year to Aug 2025",
+       "Year to Aug 2024",
+       "Year to Aug 2023",
+       "Year to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "89,675",
+        "17,525",
+        "8,507",
+        "1,559",
+        "15,181"
+       ],
+       [
+        "Capital spending",
+        "30,712",
+        "15,857",
+        "8,386",
+        "7,676",
+        "12,067"
+       ],
+       [
+        "Free cash flow",
+        "58,963",
+        "1,668",
+        "121",
+        "-6,117",
+        "3,114"
+       ],
+       [
+        "Stock-based pay",
+        "1,282",
+        "975",
+        "821",
+        "557",
+        "496"
+       ],
+       [
+        "Real free cash flow (after stock pay)",
+        "57,681",
+        "693",
+        "-700",
+        "-6,674",
+        "2,618"
+       ],
+       [
+        "Free cash flow per share",
+        "51.59",
+        "1.48",
+        "0.11",
+        "-5.60",
+        "2.78"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay today for Micron Technology, Inc.?",
+     "paragraphs": [
+      {
+       "n": 168,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Micron trades at 14.4 times recent earnings and 6.1 times expected earnings. A low P/E can signal a bargain, but it can also mean that current profits are near a cyclical peak. Memory prices can rise quickly when customers need more chips than factories can supply. Because many factory costs are fixed in the short term, profits can soar; when new capacity arrives, they can fall just as quickly."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "1,067.55"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "1087.51 (+2 %)"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "6.1x"
+    },
+    {
+     "label": "P/E, last 12 months",
+     "value": "14.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 1067.55,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "590.99 (-45 %)",
+       "460.14 (-57 %)",
+       "421.24 (-60 %)"
+      ]
+     },
+     "Base": {
+      "probability": "50 %",
+      "values": [
+       "799.48 (-25 %)",
+       "1116.03 (+5 %)",
+       "1083.34 (+2 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "1045.42 (-2 %)",
+       "1645.83 (+54 %)",
+       "2097.32 (+97 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "786.12 (-26 %)",
+       "1025.23 (-4 %)",
+       "1087.51 (+2 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/mu/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MU&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Micron Technology, Inc. dividend: cash and history",
+   "meta_description": "Micron Technology, Inc.'s dividend, cash coverage, forecast changes, and current yield in one concise overview.",
+   "opening": "Micron Technology, Inc. starts its dividend at $0.60 per share, with the base case raising it to $0.96 by FY2030. On the FY2026 figures, real free cash flow reached $57,681 million and distributions became a small share of that cash generation.",
+   "closing": "The full memo also explains Micron Technology, Inc.'s business, its rivals, its management, and its risks.",
+   "blocks": [
+    {
+     "heading": "What dividend does Micron Technology, Inc. pay over the years shown?",
+     "paragraphs": [
+      {
+       "n": 237,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The dividend starts at $0.60 per share because the declared quarterly rate is $0.15. The base case raises it gradually to $0.96 by FY2030. The bear case freezes it at $0.60, while the bull case reaches $1.50 as excess cash expands. Micron has said capital returns will increase, but has not set a dividend target."
+      }
+     ],
+     "table": {
+      "title": "What one share gets",
+      "unit": "US$",
+      "caption": "What one share gets (US$)",
+      "head": [
+       "Row",
+       "Year to Sep 2026",
+       "Year to Aug 2025",
+       "Year to Aug 2024",
+       "Year to Aug 2023",
+       "Year to Sep 2022"
+      ],
+      "rows": [
+       [
+        "EPS, diluted",
+        "74.33",
+        "7.59",
+        "0.70",
+        "-5.34",
+        "7.75"
+       ],
+       [
+        "Free cash flow per share",
+        "51.59",
+        "1.48",
+        "0.11",
+        "-5.60",
+        "2.78"
+       ],
+       [
+        "Free cash flow after stock pay, per share",
+        "50.46",
+        "0.62",
+        "-0.63",
+        "-6.11",
+        "2.33"
+       ],
+       [
+        "Buybacks per share",
+        "1.55",
+        "0.30",
+        "",
+        "",
+        "2.28"
+       ],
+       [
+        "Dividend per share",
+        "0.53",
+        "0.46",
+        "0.46",
+        "0.46",
+        "0.32"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Micron Technology, Inc.'s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 87,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "FY2026 reversed the pressure. Real free cash flow reached $57,681 million. Micron repaid $10,043 million of debt, including finance-lease principal, and distributions to shareholders became a small share of the year’s cash generation. The repurchase total included employee tax withholding, so it should not be treated as identical to market buybacks."
+      },
+      {
+       "n": 147,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates another distinction. Micron adds it back in operating cash because issuing shares is not an immediate cash payment. Deducting fiscal 2026 stock-based pay of $1,282 million leaves an analytical owner-oriented figure of $57,681 million. This is a deduction for dilution, not a second cash expense."
+      }
+     ],
+     "table": {
+      "title": "Where the cash went",
+      "unit": "US$ millions",
+      "caption": "Where the cash went (US$ millions)",
+      "head": [
+       "Row",
+       "Year to Sep 2026",
+       "Year to Aug 2025",
+       "Year to Aug 2024",
+       "Year to Aug 2023",
+       "Year to Sep 2022"
+      ],
+      "rows": [
+       [
+        "Real free cash flow (after stock pay)",
+        "57,681",
+        "693",
+        "-700",
+        "-6,674",
+        "2,618"
+       ],
+       [
+        "Dividends paid",
+        "610",
+        "522",
+        "513",
+        "504",
+        "461"
+       ],
+       [
+        "Shares bought back",
+        "1,777",
+        "340",
+        "",
+        "",
+        "2,557"
+       ],
+       [
+        "Debt raised minus debt repaid",
+        "",
+        "134",
+        "-743",
+        "6,064",
+        "71"
+       ],
+       [
+        "Returned to shareholders, share of real free cash flow",
+        "4.1%",
+        "124.4%",
+        "not meaningful",
+        "not meaningful",
+        "115.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What could change Micron Technology, Inc.'s dividend?",
+     "paragraphs": [
+      {
+       "n": 242,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bear case requires AI spending to cool before new capacity earns adequate returns. Weaker orders and rising supply push memory prices down, while fixed factory costs reduce utilization and margins. Cash generation falls, so construction competes with buybacks and dividends."
+      }
+     ],
+     "table": {
+      "title": "The forecast's main numbers",
+      "unit": "fiscal years; base case, then bear / bull in brackets; USD millions unless shown",
+      "caption": "The forecast's main numbers (fiscal years; base case, then bear / bull in brackets; USD millions unless shown)",
+      "head": [
+       "",
+       "FY2027",
+       "FY2028",
+       "FY2029",
+       "FY2030"
+      ],
+      "rows": [
+       [
+        "Revenue growth",
+        "105.0 % (85.0 % / 125.0 %)",
+        "25.0 % (-30.0 % / 35.0 %)",
+        "-15.0 % (-15.0 % / 15.0 %)",
+        "12.0 % (20.0 % / 10.0 %)"
+       ],
+       [
+        "Measure (EBITDA / cash flow)",
+        "54,880 (49,526 / 60,234)",
+        "68,600 (34,668 / 81,316)",
+        "58,310 (29,468 / 93,514)",
+        "65,307 (35,362 / 102,865)"
+       ],
+       [
+        "Net debt",
+        "-203,180 (-145,803 / -225,947)",
+        "-402,815 (-198,120 / -493,439)",
+        "-554,984 (-237,534 / -801,136)",
+        "-727,678 (-296,005 / -1,137,082)"
+       ],
+       [
+        "Buybacks",
+        "6,000 (2,000 / 10,000)",
+        "12,000 (2,500 / 20,000)",
+        "16,000 (3,000 / 25,000)",
+        "18,000 (3,500 / 30,000)"
+       ],
+       [
+        "Dividend per share",
+        "0.60 (0.60 / 0.60)",
+        "0.72 (0.60 / 0.90)",
+        "0.84 (0.60 / 1.20)",
+        "0.96 (0.60 / 1.50)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Micron Technology, Inc.'s dividend yield against its price?",
+     "paragraphs": [
+      {
+       "n": 167,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "At $1,067.55 a share, investors value Micron’s equity at $1,205,683.66 million. Enterprise value, which values the operating business after cash and borrowings, is $1,167,428.66 million. The difference implies $38,255 million of net cash, although some of that cash is restricted and may not be freely available."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend yield",
+     "value": "0.1%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "4.9%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Year to Sep 2022",
+     "Year to Aug 2023",
+     "Year to Aug 2024",
+     "Year to Aug 2025",
+     "Year to Sep 2026"
+    ],
+    "rows": {
+     "Free cash flow per share": [
+      "2.78",
+      "-5.60",
+      "0.11",
+      "1.48",
+      "51.59"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/mu/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MU&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Micron Technology, Inc. earnings date and guidance",
+   "meta_description": "Micron Technology, Inc. reports on December 23, 2026; management guides to strong revenue and margins, with profitable capacity and cash the key test.",
+   "opening": "Micron Technology, Inc.'s next results are expected on December 23, 2026. The key thing to watch is whether Micron turns spending into profitable capacity while preserving enough cash for obligations and shareholder returns.",
+   "closing": "The full memo also explains Micron Technology, Inc.'s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has Micron Technology, Inc. guided?",
+     "paragraphs": [
+      {
+       "n": 8,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted forecast reaches US$1,087.51 in October 2029, implying a 2% total return, if Micron converts demand into durable cash after factory investment. Management guides to fiscal Q1 2027 revenue of US$60,000–63,000 million. It also guides to an 86.0% GAAP gross margin. Micron plans US$25,000 million of capex in the first half of fiscal 2027, with spending rising in the second half."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ millions",
+      "caption": "Guidance in force (US$ millions)",
+      "head": [
+       "Row",
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Fiscal Q1 2027",
+        "60,000",
+        "63,000",
+        "Sep 30, 2026"
+       ],
+       [
+        "Gross margin (GAAP, %)",
+        "Fiscal Q1 2027",
+        "86.0%",
+        "86.0%",
+        "Sep 30, 2026"
+       ],
+       [
+        "Gross margin (Non-GAAP, %)",
+        "Fiscal Q1 2027",
+        "86.3%",
+        "86.3%",
+        "Sep 30, 2026"
+       ],
+       [
+        "Diluted earnings per share (GAAP, US$)",
+        "Fiscal Q1 2027",
+        "36.84",
+        "38.84",
+        "Sep 30, 2026"
+       ],
+       [
+        "Diluted earnings per share (Non-GAAP, US$)",
+        "Fiscal Q1 2027",
+        "37.15",
+        "39.15",
+        "Sep 30, 2026"
+       ],
+       [
+        "First-half fiscal 2027 capex",
+        "First half fiscal 2027",
+        "25,000",
+        "25,000",
+        "Sep 30, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Has Micron Technology, Inc. kept its promises?",
+     "paragraphs": [
+      {
+       "n": 124,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — PAY, AND PROMISES KEPT",
+       "text": "There is evidence of restraint and execution. During the downturn, Micron cut the CEO’s salary by 20% and executive vice presidents’ salaries by 15%. Later, the board certified strong achievement against earlier product goals. Those facts support management’s credibility, but they do not prove how much of the reward came from management rather than favorable industry prices."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What were Micron Technology, Inc.'s last eight quarters of results?",
+     "paragraphs": [
+      {
+       "n": 161,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "The rise continued across the year. Quarterly revenue increased from $13,643 million in November to $54,229 million in September. But September had 14 weeks, compared with 13 in May. Reported sequential revenue growth was about 30.8%; average weekly revenue growth was about 21.5%. The calendar explains part, not all, of the acceleration."
+      },
+      {
+       "n": 162,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Cash offers a second check. Final-quarter operating cash was $43,973 million and capital spending was $11,110 million, leaving $32,863 million before incentives and equipment-sale proceeds. Net income reached $37,701 million, with diluted EPS of $32.87. Yet manufacturing-bonus costs sitting in inventory have not all reached gross margin."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Quarter to Sep 2026",
+       "Quarter to May 2026",
+       "Quarter to Feb 2026",
+       "Quarter to Nov 2025",
+       "Quarter to Aug 2025",
+       "Quarter to May 2025",
+       "Quarter to Feb 2025",
+       "Quarter to Nov 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "54,229",
+        "41,456",
+        "23,860",
+        "13,643",
+        "11,315",
+        "9,301",
+        "8,053",
+        "8,709"
+       ],
+       [
+        "Gross margin",
+        "86.8%",
+        "84.6%",
+        "74.4%",
+        "56.0%",
+        "44.7%",
+        "37.7%",
+        "36.8%",
+        "38.4%"
+       ],
+       [
+        "Operating income",
+        "43,751",
+        "33,318",
+        "16,135",
+        "6,136",
+        "3,654",
+        "2,169",
+        "1,773",
+        "2,174"
+       ],
+       [
+        "Net income",
+        "37,701",
+        "28,243",
+        "13,785",
+        "5,240",
+        "3,201",
+        "1,885",
+        "1,583",
+        "1,870"
+       ],
+       [
+        "EPS, diluted",
+        "32.87",
+        "24.67",
+        "12.07",
+        "4.60",
+        "2.83",
+        "1.68",
+        "1.41",
+        "1.67"
+       ],
+       [
+        "Cash from operations",
+        "43,973",
+        "25,388",
+        "11,903",
+        "8,411",
+        "5,730",
+        "4,609",
+        "3,942",
+        "3,244"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in Micron Technology, Inc.'s next results?",
+     "paragraphs": [
+      {
+       "n": 220,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The decisive evidence will be whether Micron turns spending into profitable capacity while preserving enough cash for obligations and shareholder returns."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 23, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Quarter to Sep 2026 (US$ millions)",
+     "value": "54,229"
+    },
+    {
+     "label": "EPS, diluted, quarter to Quarter to Sep 2026",
+     "value": "32.87"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Quarter to Nov 2024",
+     "Quarter to Feb 2025",
+     "Quarter to May 2025",
+     "Quarter to Aug 2025",
+     "Quarter to Nov 2025",
+     "Quarter to Feb 2026",
+     "Quarter to May 2026",
+     "Quarter to Sep 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "8,709",
+      "8,053",
+      "9,301",
+      "11,315",
+      "13,643",
+      "23,860",
+      "41,456",
+      "54,229"
+     ],
+     "EPS, diluted": [
+      "1.67",
+      "1.41",
+      "1.68",
+      "2.83",
+      "4.60",
+      "12.07",
+      "24.67",
+      "32.87"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/mu/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=MU&src=seo-earnings"
+  }
+ },
+ "held": {}
+}

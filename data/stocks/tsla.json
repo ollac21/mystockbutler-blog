@@ -1,0 +1,556 @@
+{
+ "schema": "public_pages_v1",
+ "run_id": "TSLA-run-20261010T182212Z-7b4a70e88715",
+ "ticker": "TSLA",
+ "slug": "tsla",
+ "company": "Tesla, Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-10T19:02:34Z",
+ "memo_date_text": "October 10, 2026",
+ "price": 375.0,
+ "price_date": "2026-10-08T20:00:00Z",
+ "next_earnings": "2026-10-21",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 265,
+  "tables": 26,
+  "words": 16632,
+  "sources": 160
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Tesla is a company that sells electric cars and equipment that makes, stores, and moves electricity. Its business is easiest to understand by following a dollar from the customer, through the product and its costs, to the profit left over."
+ },
+ "sources": [
+  {
+   "title": "2025 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+  },
+  {
+   "title": "2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
+  },
+  {
+   "title": "2023 Form 10-K, cash-flow statement",
+   "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+  }
+ ],
+ "rivals": [],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Tesla, Inc. stock forecast: scenarios and valuation",
+   "meta_description": "Tesla, Inc. stock forecast: weighted scenarios, the drivers, real free cash flow after stock pay, and today’s valuation.",
+   "opening": "The weighted scenario is $284.52 in October 2027 and $336.44 in October 2029; it implies a 24% loss including dividends by October 2027 and a 10% loss by October 2029. It hinges on vehicle economics, storage growth and paid software becoming material.",
+   "closing": "The full memo also explains Tesla, Inc.’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could Tesla, Inc.’s shares go?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The weighted price is $284.52 in October 2027 and $336.44 in October 2029. That implies a 24% loss including dividends by October 2027 and a 10% loss by October 2029. The bear case is $63.43 and the base case is $312.09. The bull case is $971.74; the probabilities are 30% bear, 55% base and 15% bull. Tesla’s real free cash flow was 3.6% of revenue, while stock pay was $0.80 per share in 2025."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 375.00, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 375.00, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "144.10 (-62 %)",
+        "78.44 (-79 %)",
+        "63.43 (-83 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "313.03 (-17 %)",
+        "317.45 (-15 %)",
+        "312.09 (-17 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "460.83 (+23 %)",
+        "685.31 (+83 %)",
+        "971.74 (+159 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "284.52 (-24 %)",
+        "300.93 (-20 %)",
+        "336.44 (-10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right or wrong for Tesla, Inc.?",
+     "paragraphs": [
+      {
+       "n": 254,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "EBITDA rises from $17,500M in October 2027 to $25,000M in October 2029, with $21,000M in between. The path assumes vehicle recovery, continued storage growth and better fixed-cost absorption. Energy gross profit rose from $2,640M to $3,802M, but vehicle deliveries fell 8.6% in 2025 and automotive gross margin excluding credits stayed at 15.4%. The bear row falls from $12,500M to $10,000M before recovering to $11,000M, while the bull row rises from $20,000M to $35,000M as battery constraints ease and higher-margin software becomes material."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Tesla, Inc. really make?",
+     "paragraphs": [
+      {
+       "n": 144,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash was slightly lower, but capital spending fell from the previous year, so free cash flow rose to $6,220 million. Free cash flow is operating cash left after capital spending. The improvement therefore says more about investment timing than about stronger operating cash generation."
+      },
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation creates another gap. Tesla adds this noncash expense back because shares, rather than cash, go to employees. But shareholders still bear an economic cost through dilution. Deducting $2,825 million from reported free cash flow gives a stricter view, without making Tesla’s official measure mathematically wrong."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "14,747",
+        "14,923",
+        "13,256",
+        "14,724",
+        "11,497"
+       ],
+       [
+        "− Capital spending",
+        "8,527",
+        "11,342",
+        "8,899",
+        "7,172",
+        "6,514"
+       ],
+       [
+        "**= Free cash flow**",
+        "6,220",
+        "3,581",
+        "4,357",
+        "7,552",
+        "4,983"
+       ],
+       [
+        "− Stock pay",
+        "2,825",
+        "1,999",
+        "1,812",
+        "1,560",
+        "2,121"
+       ],
+       [
+        "**= Real free cash flow**",
+        "3,395",
+        "1,582",
+        "2,545",
+        "5,992",
+        "2,862"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "3.6%",
+        "1.6%",
+        "2.6%",
+        "7.4%",
+        "5.3%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Tesla, Inc. today?",
+     "paragraphs": [
+      {
+       "n": 183,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "P/E, or price to earnings, tells how many dollars investors pay for one dollar of annual profit. Tesla’s trailing P/E is in the hundreds, while its forward P/E is lower because it uses forecast profit. A lemonade stand bought for $347 while earning $1 a year might be sensible if its profits soon multiply, but the forecast is doing most of the work."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 8, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "375.00"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "347.2x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "164.0x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "14.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "0.4%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.2%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "375.00"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "336.44 (-10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.2%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "164.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 375.0,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "144.10 (-62 %)",
+       "78.44 (-79 %)",
+       "63.43 (-83 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "313.03 (-17 %)",
+       "317.45 (-15 %)",
+       "312.09 (-17 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "460.83 (+23 %)",
+       "685.31 (+83 %)",
+       "971.74 (+159 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "284.52 (-24 %)",
+       "300.93 (-20 %)",
+       "336.44 (-10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/tsla/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TSLA&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Tesla, Inc. earnings date and guidance",
+   "meta_description": "Tesla, Inc.'s next results are October 21, 2026; its guidance is more than $25 billion of 2026 capital expenditure.",
+   "opening": "Tesla, Inc. plans to report its next results on October 21, 2026. Watch whether higher deliveries produce cash.",
+   "closing": "The full memo also covers Tesla, Inc.’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Tesla, Inc. guided for 2026?",
+     "paragraphs": [
+      {
+       "n": 214,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "The current 2026 capex guide is more than $25 billion. The 2025 annual report had anticipated spending above $20 billion, so the programme expanded during the year. In Q2, operating cash flow was $4.697 billion. Capex was $5.789 billion, leaving negative free cash flow of $1.092 billion. Free cash flow therefore shows whether the business still has cash after operating costs and investment."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ billions",
+      "caption": "Guidance in force (US$ billions)",
+      "head": [
+       "Row",
+       "the period guided",
+       "low",
+       "high",
+       "the date it was given"
+      ],
+      "rows": [
+       [
+        "capital expenditures",
+        "Year to Dec 2026",
+        "25",
+        "",
+        "Jul 23, 2026"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did Tesla, Inc. keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 121,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Tesla certified all the milestones in Musk’s earlier award. But Musk forecast vehicle-sales growth of 20%–30% for 2025. Actual deliveries fell 8.6%. Earlier achievements deserve credit, while later promises still need to be tested against deadlines and commercial results."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have Tesla, Inc. results shown over the last eight quarters?",
+     "paragraphs": [
+      {
+       "n": 137,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.2 — Profit",
+       "text": "Tesla’s profitability weakened much more than its sales. Gross margin fell from 25.6% in 2022 to 18.0% in 2025, while operating income fell to $4,355 million."
+      },
+      {
+       "n": 154,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Q2 2026 showed a sales recovery, not yet an earnings recovery. Revenue rose 25.5% year over year, and vehicle deliveries reached 480,126."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "28,236",
+        "22,387",
+        "24,901",
+        "28,095",
+        "22,496",
+        "19,335",
+        "25,707",
+        "25,182"
+       ],
+       [
+        "Gross margin",
+        "16.8%",
+        "21.1%",
+        "20.1%",
+        "18.0%",
+        "17.2%",
+        "16.3%",
+        "16.3%",
+        "19.8%"
+       ],
+       [
+        "Operating income",
+        "398",
+        "941",
+        "1,409",
+        "1,624",
+        "923",
+        "399",
+        "1,583",
+        "2,717"
+       ],
+       [
+        "Net income",
+        "1,114",
+        "477",
+        "840",
+        "1,373",
+        "1,172",
+        "409",
+        "2,128",
+        "2,173"
+       ],
+       [
+        "EPS, diluted",
+        "0.32",
+        "0.13",
+        "0.24",
+        "0.39",
+        "0.33",
+        "0.12",
+        "0.60",
+        "0.62"
+       ],
+       [
+        "**= Free cash flow**",
+        "-1,099",
+        "1,444",
+        "1,420",
+        "3,990",
+        "146",
+        "664",
+        "2,034",
+        "2,742"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Tesla, Inc.’s next results?",
+     "paragraphs": [
+      {
+       "n": 235,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Tesla plans to release Q3 results on October 21, 2026. It reported 486,532 deliveries for the quarter. Deliveries can spread factory costs across more vehicles, but only if prices and costs leave enough money on each sale. Annual deliveries fell from 1,789,226 in 2024 to 1,636,129 in 2025, so the new figure is a signal, not proof of improved revenue, profit or cash conversion."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "October 21, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "28,236"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "0.32"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "25,182",
+      "25,707",
+      "19,335",
+      "22,496",
+      "28,095",
+      "24,901",
+      "22,387",
+      "28,236"
+     ],
+     "EPS, diluted": [
+      "0.62",
+      "0.60",
+      "0.12",
+      "0.33",
+      "0.39",
+      "0.24",
+      "0.13",
+      "0.32"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/tsla/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=TSLA&src=seo-earnings"
+  }
+ },
+ "held": {
+  "dividend": "no dividend"
+ }
+}

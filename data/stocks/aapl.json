@@ -1,0 +1,757 @@
+{
+ "schema": "public_pages_v1",
+ "writer": "7fe315750c1f",
+ "run_id": "run-20261011T171743Z-5abe9455f429",
+ "ticker": "AAPL",
+ "slug": "aapl",
+ "company": "Apple Inc.",
+ "exchange": "NASDAQ",
+ "currency": "USD",
+ "index": "sp500",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-11T18:28:40Z",
+ "memo_date_text": "October 11, 2026",
+ "price": 336.64,
+ "price_date": "2026-10-09T20:00:00Z",
+ "next_earnings": "2026-11-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 237,
+  "tables": 26,
+  "words": 17042,
+  "sources": 236
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "Apple sells devices, software and services that fit together into a single customer relationship. A dollar enters when a customer or business partner buys a product, access or a transaction, and leaves as Apple pays suppliers, workers, content providers and other operating costs before keeping the remainder."
+ },
+ "sources": [
+  {
+   "title": "2025 annual report",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+  },
+  {
+   "title": "Apple 2024 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+  },
+  {
+   "title": "Apple 2023 Form 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm"
+  }
+ ],
+ "rivals": [
+  "GOOGL",
+  "MSFT",
+  "1810.HK",
+  "0992.HK",
+  "DELL",
+  "HPQ",
+  "AMZN",
+  "META"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "Apple Inc. stock forecast: weighted case",
+   "meta_description": "Apple Inc. stock forecast: the weighted case is $315.27 in October 2027 and $313.03 in October 2029, with key drivers and valuation.",
+   "opening": "The weighted scenario is $315.27 in October 2027, a 6% loss. It hinges on profitable AI and Services growth.",
+   "closing": "The full memo also explains Apple Inc.’s business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "Where could Apple Inc.'s shares be by October 2029?",
+     "paragraphs": [
+      {
+       "n": 218,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "It is $315.38 in October 2028. The October 2029 weighted price is $313.03, also a 6% loss with dividends. The last-date range runs from $193.85 in the bear case to $453.79 in the bull case. Today’s supplied price is $336.64."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Bear probability is 25%; base is 55%. Bull probability is 20%. iPhone Duo preorders begin October 16 and availability begins October 23. Another market expansion is scheduled for October 30. Completed deliveries, cancellations and returns matter more than wait times alone. Apple promised to expand Siri AI beyond English during October; repeated use and upgrade behavior will show whether it matters. The view improves if supply constraints ease, premium upgrades hold and Services growth supports cash generation. It weakens if memory costs rise, refunds fade and demand slows. Apple’s installed base creates value only if AI and Services turn it into durable cash growth."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 336.64, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 336.64, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "25 %",
+        "257.31 (-23 %)",
+        "225.22 (-32 %)",
+        "193.85 (-41 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "324.95 (-3 %)",
+        "321.13 (-4 %)",
+        "316.01 (-5 %)"
+       ],
+       [
+        "Bull",
+        "20 %",
+        "361.06 (+8 %)",
+        "412.29 (+23 %)",
+        "453.79 (+36 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "315.27 (-6 %)",
+        "315.38 (-6 %)",
+        "313.03 (-6 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for Apple Inc., and what could go wrong?",
+     "paragraphs": [
+      {
+       "n": 229,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Base P/E falls from 33x to 31x, then 29x. Bear valuation contracts from 28x to 25x and then 22x as growth and platform economics weaken. Bull valuation holds at 36x before easing to 35x, requiring evidence that AI produces profitable upgrades and that Services growth remains durable. Services had a 75.4% gross margin in 2025, versus 36.8% for Products."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does Apple Inc. really make?",
+     "paragraphs": [
+      {
+       "n": 128,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Free cash flow is cash from operations after spending on long-term assets. Apple generated $111,482 million from operations in 2025. After capital spending, free cash flow was $98,767 million, or 23.7% of revenue. That was below the prior year despite higher earnings, so one year’s cash conversion needs explanation."
+      },
+      {
+       "n": 131,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock compensation is not an immediate cash payment, so Apple adds it back in operating cash flow. But it gives employees claims on the business. Deducting $12,863 million of stock pay leaves “real free cash flow” of $85,904 million, or 20.6% of revenue. That is an analytical measure, not Apple’s reported one, and it should not be deducted twice."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ millions",
+      "caption": "Follow the money: real free cash flow (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "111,482",
+        "118,254",
+        "110,543",
+        "122,151",
+        "104,038"
+       ],
+       [
+        "− Capital spending",
+        "12,715",
+        "9,447",
+        "10,959",
+        "10,708",
+        "11,085"
+       ],
+       [
+        "**= Free cash flow**",
+        "98,767",
+        "108,807",
+        "99,584",
+        "111,443",
+        "92,953"
+       ],
+       [
+        "− Stock pay",
+        "12,863",
+        "11,688",
+        "10,833",
+        "9,038",
+        "7,906"
+       ],
+       [
+        "**= Real free cash flow**",
+        "85,904",
+        "97,119",
+        "88,751",
+        "102,405",
+        "85,047"
+       ],
+       [
+        "Real free cash flow, % of revenue",
+        "20.6%",
+        "24.8%",
+        "23.2%",
+        "26.0%",
+        "23.2%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for Apple Inc. today?",
+     "paragraphs": [],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "336.64"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "38.6x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "35.0x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.7%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "336.64"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "313.03 (-6 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "35.0x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 336.64,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "25 %",
+      "values": [
+       "257.31 (-23 %)",
+       "225.22 (-32 %)",
+       "193.85 (-41 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "324.95 (-3 %)",
+       "321.13 (-4 %)",
+       "316.01 (-5 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "20 %",
+      "values": [
+       "361.06 (+8 %)",
+       "412.29 (+23 %)",
+       "453.79 (+36 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "315.27 (-6 %)",
+       "315.38 (-6 %)",
+       "313.03 (-6 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/aapl/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AAPL&src=seo-stock"
+  },
+  "dividend": {
+   "type": "dividend",
+   "title": "Apple Inc. dividend: cash coverage and outlook",
+   "meta_description": "Apple Inc.'s dividend is covered by free cash flow, while buybacks, the current yield and business risks shape its outlook.",
+   "opening": "Apple Inc.'s forecast dividend rises from $1.10 per share to $1.18. In 2025, $98,767 million of free cash flow covered the $15,421 million dividend, but not the $106,132 million total shareholder payout.",
+   "closing": "The full memo also explains Apple Inc.'s business, rivals, management decisions and risks.",
+   "blocks": [
+    {
+     "heading": "How much does Apple Inc. pay per share?",
+     "paragraphs": [
+      {
+       "n": 228,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "The base dividend rises from $1.10 per share to $1.14, then $1.18. That follows five years of increases and management’s stated intention to raise the dividend annually. The bear case holds each period at $1.08, while the bull case reaches $1.24 as stronger cash generation permits faster increases."
+      }
+     ],
+     "table": {
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; USD millions, per share in USD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; USD millions, per share in USD, unless shown)",
+      "head": [
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Earnings",
+        "142,000 (133,280 / 144,200)",
+        "147,680 (129,850 / 162,400)",
+        "153,644 (126,225 / 181,500)"
+       ],
+       [
+        "Shares (millions)",
+        "14,420 (14,503 / 14,378)",
+        "14,256 (14,414 / 14,180)",
+        "14,100 (14,325 / 13,999)"
+       ],
+       [
+        "Dividends per share",
+        "1.10 (1.08 / 1.12)",
+        "1.14 (1.08 / 1.18)",
+        "1.18 (1.08 / 1.24)"
+       ],
+       [
+        "Price to earnings",
+        "33.00 (28.00 / 36.00)",
+        "31.00 (25.00 / 36.00)",
+        "29.00 (22.00 / 35.00)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Is Apple Inc.'s dividend covered by its cash?",
+     "paragraphs": [
+      {
+       "n": 76,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "From fiscal 2021 through fiscal 2025, Apple generated $511,554 million of free cash flow and paid shareholders $513,571 million. In 2025, it generated $98,767 million but distributed $106,132 million. Buybacks accounted for $90,711 million and dividends for $15,421 million. A buyback purchases shares from sellers, reducing the number remaining; that can increase each remaining share’s claim on profits, but only if Apple does not overpay or sacrifice better investments."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "US$ millions",
+      "caption": "Follow the money: where the free cash flow went (US$ millions)",
+      "head": [
+       "Row",
+       "Sep 2025",
+       "Sep 2024",
+       "Sep 2023",
+       "Sep 2022",
+       "Sep 2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "98,767",
+        "108,807",
+        "99,584",
+        "111,443",
+        "92,953"
+       ],
+       [
+        "− Dividends paid",
+        "15,421",
+        "15,234",
+        "15,025",
+        "14,841",
+        "14,467"
+       ],
+       [
+        "− Share buybacks",
+        "90,711",
+        "94,949",
+        "77,550",
+        "89,402",
+        "85,971"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "",
+        "",
+        "7,009",
+        "7,200",
+        ""
+       ],
+       [
+        "**= Paid out more than the free cash flow**",
+        "7,365",
+        "1,376",
+        "",
+        "",
+        "7,485"
+       ],
+       [
+        "Paid out, % of free cash flow",
+        "107.5%",
+        "101.3%",
+        "93.0%",
+        "93.5%",
+        "108.1%"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What is Apple Inc.'s dividend yield today?",
+     "paragraphs": [
+      {
+       "n": 7,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The numbers",
+       "text": "Revenue recovered in fiscal 2025 after declining in 2023, while operating margin rose across the five-year period. Computed free cash flow—as cash from operations minus capital spending—as a share of revenue fell in 2025 even as earnings increased; net debt declined from its 2022 level. Apple’s share price is $336.64. Trailing P/E is 38.6x; forward P/E is 35.0x. Free cash flow yield is 2.0%; real free cash flow yield is 1.7%."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ millions",
+      "caption": "What an investor pays today (US$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 11, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "336.64"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "2.0%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "1.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "0.3%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Dividend paid per share, Sep 2025",
+     "value": "1.03"
+    },
+    {
+     "label": "Dividend yield",
+     "value": "0.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "1.7%"
+    },
+    {
+     "label": "Free cash flow yield",
+     "value": "2.0%"
+    }
+   ],
+   "chart": {
+    "title": "What one share gets",
+    "unit": "US$",
+    "columns": [
+     "Sep 2021",
+     "Sep 2022",
+     "Sep 2023",
+     "Sep 2024",
+     "Sep 2025"
+    ],
+    "rows": {
+     "Dividends paid, per share": [
+      "0.86",
+      "0.91",
+      "0.95",
+      "0.99",
+      "1.03"
+     ],
+     "Real free cash flow per share": [
+      "5.04",
+      "6.27",
+      "5.61",
+      "6.30",
+      "5.73"
+     ],
+     "Free cash flow per share": [
+      "5.51",
+      "6.83",
+      "6.30",
+      "7.06",
+      "6.58"
+     ]
+    },
+    "kind": "dividend_vs_fcf"
+   },
+   "path": "/stocks/aapl/dividend/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AAPL&src=seo-dividend"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "Apple Inc. earnings: date, guidance and results",
+   "meta_description": "Apple Inc. expects results on November 2, 2026; guidance covers growth, margin and expenses, with deliveries and AI use to watch.",
+   "opening": "Apple Inc.'s next results are expected on November 2, 2026. Watch completed deliveries, cancellations and returns for evidence of demand rather than supply limits.",
+   "closing": "The full memo also covers Apple Inc.'s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "What has Apple Inc. guided for the September quarter?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management guides to revenue growth of 9–11% for the September 2026 quarter and iPhone revenue growth in the mid-teens. It forecasts gross margin of 47–48%, including about one percentage point from tariff refunds, while rising memory costs could pressure the underlying margin. Forecast operating expenses are $19.1–19.4 billion."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "Did Apple Inc. keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 109,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Finally, Apple promised a more personalized Siri in 2024, acknowledged a delay in March 2025 and introduced Siri AI for developer testing on June 8, 2026. A beta is a testing release, not full delivery. Apple’s leaders are therefore on shareholders’ side only if strong returns, disciplined dilution and reliable products arrive together."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What do Apple Inc.'s last eight quarters show?",
+     "paragraphs": [
+      {
+       "n": 142,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "For the quarter ended June 27, 2026, revenue reached $109,417 million, up about 16.4%. Growth was broad: iPhone, Mac, Services and Wearables, Home and Accessories increased, while iPad declined. Pro iPhones and Mac laptops helped drive the result, and Services continued to benefit from advertising and cloud spending."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ millions",
+      "caption": "The last eight quarters (US$ millions)",
+      "head": [
+       "Row",
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "109,417",
+        "111,184",
+        "143,756",
+        "102,466",
+        "94,036",
+        "95,359",
+        "124,300",
+        "94,930"
+       ],
+       [
+        "Gross margin",
+        "50.1%",
+        "49.3%",
+        "48.2%",
+        "47.2%",
+        "46.5%",
+        "47.1%",
+        "46.9%",
+        "46.2%"
+       ],
+       [
+        "Operating income",
+        "35,695",
+        "35,885",
+        "50,852",
+        "32,427",
+        "28,202",
+        "29,589",
+        "42,832",
+        "29,591"
+       ],
+       [
+        "Net income",
+        "29,789",
+        "29,578",
+        "42,097",
+        "27,466",
+        "23,434",
+        "24,780",
+        "36,330",
+        "14,736"
+       ],
+       [
+        "EPS, diluted",
+        "2.02",
+        "2.01",
+        "2.84",
+        "1.85",
+        "1.57",
+        "1.65",
+        "2.40",
+        "0.97"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should you watch in Apple Inc.'s next results?",
+     "paragraphs": [
+      {
+       "n": 206,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "The next useful signals are completed deliveries, wider AI availability and the rules governing App Store income. September results will show whether Apple met its growth and margin promises after tariff refunds. They should also reveal whether component shortages delayed sales into a later quarter rather than destroyed demand."
+      },
+      {
+       "n": 207,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "Product availability will help separate demand from supply problems. Apple scheduled iPhone Duo preorders for October 16 and initial availability for October 23, with another market expansion on October 30. Long waits alone cannot prove popularity because limited supply can create them. Completed deliveries, cancellations and returns will be more informative. Apple also promised to expand Siri AI beyond English during October."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "November 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jun 2026 (US$ millions)",
+     "value": "109,417"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jun 2026",
+     "value": "2.02"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ millions",
+    "columns": [
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "94,930",
+      "124,300",
+      "95,359",
+      "94,036",
+      "102,466",
+      "143,756",
+      "111,184",
+      "109,417"
+     ],
+     "EPS, diluted": [
+      "0.97",
+      "2.40",
+      "1.65",
+      "1.57",
+      "1.85",
+      "2.84",
+      "2.01",
+      "2.02"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/aapl/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=AAPL&src=seo-earnings"
+  }
+ },
+ "held": {}
+}
