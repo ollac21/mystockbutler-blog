@@ -61,12 +61,12 @@
   "stock": {
    "type": "stock",
    "title": "Intact stock forecast",
-   "meta_description": "Intact's weighted forecast reaches C$242.15 by October 2029; underwriting, catastrophe control and UK&I execution shape the range.",
-   "opening": "Intact's weighted forecast reaches C$242.15 by October 2029. Intact's outcome hinges on sustained underwriting, catastrophe control and UK&I execution.",
-   "closing": "The full memo also explains Intact's business, rivals, management and risks.",
+   "meta_description": "Intact stock forecast: weighted scenarios, insurance drivers, valuation and what could move the shares.",
+   "opening": "The weighted scenario reaches C$242.15 in October 2029. It hinges on sustained underwriting, catastrophe control and UK&I execution.",
+   "closing": "The full memo also explains Intact’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could Intact's shares be by October 2029?",
+     "heading": "Where could Intact's shares go?",
      "paragraphs": [
       {
        "n": 215,
@@ -74,6 +74,13 @@
        "chapter": "8. Where the price could go",
        "subsection": "8. Where the price could go",
        "text": "The forecast sees limited near-term upside, but a positive three-year outcome if Intact executes its plan. The probability-weighted price is C$210.73 in October 2027, C$223.11 in October 2028 and C$242.15 in October 2029, equivalent to returns including dividends of -10%, -3% and +8%. By the last date, the bear-to-bull range is C$113.25 to C$406.41, against today’s C$242.41."
+      },
+      {
+       "n": 224,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.4 — Bear and bull",
+       "text": "The bull case leads to C$274.76 first and C$406.41 last. Weather normalizes, UK&I remediation works, specialty and distribution grow profitably, and technology improves expenses. Earnings exceed the 10% objective, buybacks accelerate and the P/E reaches 17.0x. The probability is 18% because these outcomes must occur together, while recent catastrophe volatility argues for restraint."
       }
      ],
      "table": {
@@ -129,12 +136,82 @@
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
        "text": "The bear case gives C$2,600 million, then C$2,450 million and C$2,500 million, because catastrophe losses already exceed annual guidance on a trailing basis and UK&I reported a 112.0% combined ratio. The bull case gives C$3,200 million, C$3,650 million and C$4,100 million, assuming weather normalizes, UK&I improves faster and technology benefits reduce costs. The range also reflects earnings volatility: net income fell sharply in 2023 before recovering in the following years."
+      },
+      {
+       "n": 225,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.5 — What would change the view",
+       "text": "The view would move toward bear if catastrophe losses repeatedly exceed the C$1.2 billion annual assumption, UK&I remains loss-making through 2027–2028, or commercial pricing and claims inflation worsen ratios."
       }
      ],
-     "table": null
+     "table": {
+      "title": "How it earns, and what can hurt it",
+      "unit": "C$ millions",
+      "caption": "How it earns, and what can hurt it (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Insurance revenue",
+        "26,950",
+        "26,523",
+        "25,507",
+        "25,914",
+        ""
+       ],
+       [
+        "Insurance revenue growth (calculated)",
+        "1.6%",
+        "4.0%",
+        "-1.6%",
+        "",
+        ""
+       ],
+       [
+        "Combined ratio (under 100% = underwriting profit)",
+        "88.2%",
+        "92.2%",
+        "94.2%",
+        "91.8%",
+        "88.8%"
+       ],
+       [
+        "Underwriting income",
+        "2,717",
+        "1,689",
+        "1,183",
+        "1,598",
+        "1,787"
+       ],
+       [
+        "Investment income",
+        "1,632",
+        "1,559",
+        "1,346",
+        "931",
+        "706"
+       ],
+       [
+        "Operating return on equity",
+        "19.5%",
+        "16.5%",
+        "13.9%",
+        "13.5%",
+        "17.8%"
+       ]
+      ],
+      "note": ""
+     }
     },
     {
-     "heading": "How much cash does Intact really make?",
+     "heading": "How much cash does Intact really make and give back?",
      "paragraphs": [
       {
        "n": 160,
@@ -142,13 +219,6 @@
        "chapter": "6. Valuation and the stock",
        "subsection": "6.1 — What an investor pays today",
        "text": "An insurer collects premiums now, promises to pay covered losses later, and invests the money while it waits. Its underwriting result is profitable when claims and expenses consume less than the premiums collected. In Q2 2026, Intact produced C$305 million of underwriting income and C$405 million of operating investment income. Both businesses matter to valuation."
-      },
-      {
-       "n": 178,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.4 — How the price moved",
-       "text": "Conventional free cash flow is a poor guide because premiums arrive before claims are paid. The better test is whether holding-company cash, subsidiary capital and investment liquidity remain adequate. The valuation must now distinguish temporary bad weather from a lasting pricing problem."
       }
      ],
      "table": {
@@ -211,54 +281,6 @@
         "4.40",
         "4.00",
         "3.40"
-       ]
-      ],
-      "note": ""
-     }
-    },
-    {
-     "heading": "What does an investor pay today for Intact?",
-     "paragraphs": [
-      {
-       "n": 162,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "The reported trailing P/E is 13.5x, compared with 13.9x on core earnings and 14.9x on forward earnings. The higher forward multiple suggests that prospective earnings may be lower, depending on the definitions used. Conventional enterprise value measures are less useful because Intact’s investments support future claims rather than represent spare cash available to shareholders. Debt-to-capital, regulatory capital and investment quality matter more."
-      }
-     ],
-     "table": {
-      "title": "What an investor pays today",
-      "unit": "C$ millions",
-      "caption": "What an investor pays today (C$ millions)",
-      "head": [
-       "Row",
-       "Today (Oct 9, 2026)"
-      ],
-      "rows": [
-       [
-        "Share price",
-        "242.41"
-       ],
-       [
-        "P/E, last 12 months (calculated)",
-        "13.5x"
-       ],
-       [
-        "P/E on core earnings, last 12 months (calculated)",
-        "13.9x"
-       ],
-       [
-        "P/E, next 12 months (calculated)",
-        "14.9x"
-       ],
-       [
-        "Price to book (calculated)",
-        "2.2x"
-       ],
-       [
-        "Dividend yield (calculated)",
-        "2.4%"
        ]
       ],
       "note": ""
@@ -331,58 +353,50 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "Intact dividend: coverage and yield",
-   "meta_description": "Intact pays a quarterly dividend; see its cash coverage, changing payout plans and dividend yield against the share price.",
-   "opening": "Intact pays a C$1.47 quarterly dividend. Its earnings available to common shareholders covered C$3,916 million of common dividends across 2021–2025, while the memo says coverage should be judged through holding-company cash, subsidiary capital and investment liquidity rather than conventional free cash flow.",
-   "closing": "The full memo also explains Intact’s business, rivals, management plans and risks.",
+   "title": "Intact dividend: payout and coverage",
+   "meta_description": "Intact pays C$1.47 quarterly; its dividend record, cash allocation, risks and current 2.4% yield are explained in plain English.",
+   "opening": "Intact pays C$1.47 quarterly, with forecast annual payments of C$6.33, C$6.96 and C$7.66. Across 2021–2025, common dividends were C$3,916 million against C$11,122 million of earnings available to common shareholders.",
+   "closing": "The full memo also covers Intact’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "How much does Intact pay its shareholders?",
+     "heading": "How much does Intact pay per share?",
      "paragraphs": [
       {
-       "n": 80,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the capital went",
-       "text": "Capital returns became more active in 2026. Intact spent C$181 million on buybacks in Q2 and maintained a C$1.47 quarterly dividend. Buybacks can increase each remaining shareholder’s ownership, but only create value if the purchase price is sensible and better uses of capital are unavailable. That makes operating performance, especially in the UK and Ireland, the next test."
+       "n": 221,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise in the base case from the current C$1.47 quarterly rate to annual payments of C$6.33, C$6.96 and C$7.66. The path follows the company’s 21-year record of increases and roughly 10% historical growth. The bear case holds at C$5.88 each year to preserve capital after catastrophe losses. The bull case reaches C$8.11 by 2029, requiring faster growth than history and several favorable underwriting years."
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "C$ per share; dilution in %",
-      "caption": "What one share gets (C$ per share; dilution in %)",
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
       "head": [
-       "Row",
-       "Year to Dec 2025",
-       "Year to Dec 2024",
-       "Year to Dec 2023",
-       "Year to Dec 2022",
-       "Year to Dec 2021"
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
       ],
       "rows": [
        [
-        "EPS, diluted",
-        "18.35",
-        "12.36",
-        "6.99",
-        "13.63",
-        "12.40"
+        "Earnings",
+        "2,980 (2,600 / 3,200)",
+        "3,278 (2,450 / 3,650)",
+        "3,606 (2,500 / 4,100)"
        ],
        [
-        "Dividend per share",
-        "5.32",
-        "4.84",
-        "4.40",
-        "4.00",
-        "3.40"
+        "Dividends per share",
+        "6.33 (5.88 / 6.52)",
+        "6.96 (5.88 / 7.24)",
+        "7.66 (5.88 / 8.11)"
        ],
        [
-        "Stock pay per share (calculated)",
-        "1.01",
-        "0.82",
-        "0.70",
-        "0.91",
-        "0.59"
+        "Price to earnings",
+        "13.50 (9.50 / 15.00)",
+        "13.00 (8.50 / 16.00)",
+        "12.50 (8.00 / 17.00)"
        ]
       ],
       "note": ""
@@ -420,6 +434,14 @@
       ],
       "rows": [
        [
+        "Net income available to common shareholders",
+        "3,275",
+        "2,207",
+        "1,232",
+        "2,394",
+        "2,014"
+       ],
+       [
         "Dividends declared on common shares",
         "947",
         "863",
@@ -442,71 +464,13 @@
         "454",
         "1,542",
         "1,388"
-       ],
-       [
-        "Paid out with buybacks, share of net income available to common shareholders (calculated)",
-        "35.0%",
-        "40.2%",
-        "63.1%",
-        "35.6%",
-        "31.1%"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What could change Intact’s dividend?",
-     "paragraphs": [
-      {
-       "n": 221,
-       "section": "essay-8",
-       "chapter": "8. Where the price could go",
-       "subsection": "8.3 — The drivers",
-       "text": "Dividends rise in the base case from the current C$1.47 quarterly rate to annual payments of C$6.33, C$6.96 and C$7.66. The path follows the company’s 21-year record of increases and roughly 10% historical growth. The bear case holds at C$5.88 each year to preserve capital after catastrophe losses. The bull case reaches C$8.11 by 2029, requiring faster growth than history and several favorable underwriting years."
-      }
-     ],
-     "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; CAD millions unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
-      "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": [
-       [
-        "Earnings",
-        "2,980 (2,600 / 3,200)",
-        "3,278 (2,450 / 3,650)",
-        "3,606 (2,500 / 4,100)"
-       ],
-       [
-        "Shares (millions)",
-        "175 (176 / 175)",
-        "174 (176 / 173)",
-        "174 (177 / 172)"
-       ],
-       [
-        "Dividends per share",
-        "6.33 (5.88 / 6.52)",
-        "6.96 (5.88 / 7.24)",
-        "7.66 (5.88 / 8.11)"
-       ],
-       [
-        "Price to earnings",
-        "13.50 (9.50 / 15.00)",
-        "13.00 (8.50 / 16.00)",
-        "12.50 (8.00 / 17.00)"
-       ]
-      ],
-      "note": ""
-     }
-    },
-    {
-     "heading": "What is Intact’s dividend yield against its share price?",
+     "heading": "What is Intact’s dividend yield against its price?",
      "paragraphs": [
       {
        "n": 183,
@@ -516,7 +480,30 @@
        "text": "The 2.4% dividend yield adds to the return, provided profits generate usable capital. Intact reported C$3,761 million of total capital margin and a 16.2% adjusted debt-to-capital ratio. The central conclusion is simple: the price assumes durable underwriting, investment income and high returns, while leaving shareholders exposed if the valuation multiple eventually falls."
       }
      ],
-     "table": null
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 9, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "242.41"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "13.5x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.4%"
+       ]
+      ],
+      "note": ""
+     }
     }
    ],
    "facts": [
@@ -531,10 +518,10 @@
   },
   "earnings": {
    "type": "earnings",
-   "title": "Intact earnings: next results and guidance",
-   "meta_description": "Intact's next results are expected November 3, 2026; see its guidance, recent results and the risks to watch.",
-   "opening": "Intact's next results are expected on November 3, 2026. The key thing to watch is whether ordinary claims remain healthy after catastrophe losses.",
-   "closing": "The full memo also answers how Intact makes money, who it competes with, how management is paid, and what risks it faces.",
+   "title": "Intact earnings date and guidance",
+   "meta_description": "Intact's next results are expected November 3, 2026; guidance, recent results and catastrophe losses are the key watchpoints.",
+   "opening": "Intact's next results are expected on November 3, 2026. Watch whether another costly catastrophe quarter damages earnings, capital or the growth plan.",
+   "closing": "The full memo also answers how Intact makes money, who it competes with, who manages it and what risks it faces.",
    "blocks": [
     {
      "heading": "What has Intact guided for the year?",
@@ -545,6 +532,13 @@
        "chapter": "7. What comes next",
        "subsection": "7.1 — What management has guided",
        "text": "Management targets annual growth of 10% in net operating income per share, or NOIPS, and a return on equity 500 basis points above the industry. NOIPS is earnings from ongoing operations divided among the shares. Return on equity measures profit against shareholders’ capital; 500 basis points means five percentage points. The Canadian property-and-casualty industry earned a 17.1% return on equity in 2025, but Intact’s outperformance target will move with its competitors."
+      },
+      {
+       "n": 188,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.1 — What management has guided",
+       "text": "Management sets separate combined-ratio goals for personal, commercial, US and UK&I insurance, alongside assumptions for catastrophe losses, expenses, taxes and supporting income."
       }
      ],
      "table": {
@@ -606,7 +600,7 @@
      }
     },
     {
-     "heading": "Did Intact keep its promises?",
+     "heading": "Has Intact kept its past promises?",
      "paragraphs": [
       {
        "n": 115,
@@ -619,7 +613,7 @@
      "table": null
     },
     {
-     "heading": "How have Intact's results trended over the last eight quarters?",
+     "heading": "What is Intact's trend over the last eight quarters?",
      "paragraphs": [
       {
        "n": 7,
@@ -702,16 +696,63 @@
     },
     {
      "heading": "What should I watch in Intact's next results?",
-     "paragraphs": [
-      {
-       "n": 205,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.5 — What to watch",
-       "text": "The November results will show whether another costly catastrophe quarter damages earnings, capital or the growth plan."
-      }
-     ],
-     "table": null
+     "paragraphs": [],
+     "table": {
+      "title": "Underwriting: claims, costs and catastrophes",
+      "unit": "C$ millions",
+      "caption": "Underwriting: claims, costs and catastrophes (C$ millions)",
+      "head": [
+       "Row",
+       "Year to Dec 2025",
+       "Year to Dec 2024",
+       "Year to Dec 2023",
+       "Year to Dec 2022",
+       "Year to Dec 2021"
+      ],
+      "rows": [
+       [
+        "Loss ratio",
+        "54.2%",
+        "58.5%",
+        "60.8%",
+        "",
+        "55.9%"
+       ],
+       [
+        "Expense ratio",
+        "34.0%",
+        "33.7%",
+        "33.4%",
+        "33.0%",
+        "32.9%"
+       ],
+       [
+        "Combined ratio",
+        "88.2%",
+        "92.2%",
+        "94.2%",
+        "91.8%",
+        "88.8%"
+       ],
+       [
+        "Catastrophe losses",
+        "844",
+        "1,539",
+        "1,339",
+        "836",
+        "676"
+       ],
+       [
+        "Prior-year reserve development",
+        "",
+        "",
+        "958",
+        "936",
+        "594"
+       ]
+      ],
+      "note": ""
+     }
     }
    ],
    "facts": [
@@ -756,5 +797,698 @@
   }
  },
  "short_name": "Intact",
- "first_memo_date": "2026-10-10T02:15:54Z"
+ "first_memo_date": "2026-10-10T02:15:54Z",
+ "translations": {
+  "fr": {
+   "version": "fr-2",
+   "source": "58ca361c98ffaf9d",
+   "teaser": {
+    "chapter": "1. L'entreprise",
+    "text": "Intact Financial Corporation vend une protection contre le coût financier des accidents, des dommages et de la responsabilité juridique. Son modèle d’affaires devient clair lorsqu’on suit ce que la police promet, qui l’achète et comment la prime évolue avant le règlement d’une réclamation."
+   },
+   "chapters": [
+    "Sommaire",
+    "1. L'entreprise",
+    "2. Le marché",
+    "3. Historique et décisions de capital",
+    "4. Direction et actionnariat",
+    "5. Les chiffres",
+    "6. Évaluation et action",
+    "7. La suite",
+    "8. Où le cours pourrait aller"
+   ],
+   "pages": {
+    "stock": {
+     "type": "stock",
+     "title": "Action Intact : prévisions et valeur — octobre 2026",
+     "meta_description": "Prévisions intactes pour l’action : scénarios pondérés, facteurs liés à l’assurance, évaluation et éléments susceptibles de faire bouger le titre.",
+     "opening": "Le scénario pondéré s’établit à 242,15 $ CA en octobre 2029. Il repose sur une souscription durable, la maîtrise des catastrophes et l’exécution au Royaume-Uni et en Irlande.",
+     "closing": "Le mémoire complet explique aussi les activités d’Intact, ses rivaux, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Jusqu’où les actions d’Intact pourraient-elles monter?",
+       "paragraphs": [
+        {
+         "n": 215,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8. Where the price could go",
+         "text": "Les prévisions indiquent une hausse limitée à court terme, mais une issue favorable sur trois ans si Intact exécute son plan. Le cours pondéré selon les probabilités s’établit à 210,73 $ CA en octobre 2027, à 223,11 $ CA en octobre 2028 et à 242,15 $ CA en octobre 2029, ce qui correspond à des rendements, dividendes compris, de -10 %, -3 % et +8 %. À la dernière date, la fourchette va de 113,25 $ CA à 406,41 $ CA, contre 242,41 $ CA aujourd’hui."
+        },
+        {
+         "n": 224,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.4 — Bear and bull",
+         "text": "Le scénario haussier mène d’abord à 274,76 $ CA, puis à 406,41 $ CA. La météo se normalise, le redressement au Royaume-Uni et en Irlande porte ses fruits, les activités spécialisées et la distribution croissent de façon rentable, et la technologie améliore les dépenses. Les bénéfices dépassent l’objectif de 10 %, les rachats d’actions s’accélèrent et le ratio cours-bénéfice atteint 17,0 fois. La probabilité est de 18 %, car ces résultats doivent se produire simultanément, tandis que la volatilité récente des pertes catastrophiques appelle à la retenue."
+        }
+       ],
+       "table": {
+        "title": "Ce que pourraient valoir les actions",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis les 242,41 $ CA d’aujourd’hui, dividendes compris",
+        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 242.41, dividends included)",
+        "head": [
+         "Scénario",
+         "Probabilité",
+         "Octobre 2027",
+         "Octobre 2028",
+         "Octobre 2029"
+        ],
+        "rows": [
+         [
+          "Baissier",
+          "30%",
+          "140.02 (-40%)",
+          "117.99 (-46%)",
+          "113.25 (-46%)"
+         ],
+         [
+          "De base",
+          "52%",
+          "229.36 (-3%)",
+          "244.21 (+6%)",
+          "259.65 (+16%)"
+         ],
+         [
+          "Haussier",
+          "18%",
+          "274.76 (+16%)",
+          "337.38 (+45%)",
+          "406.41 (+77%)"
+         ],
+         [
+          "Pondéré",
+          "100%",
+          "210.73 (-10%)",
+          "223.11 (-3%)",
+          "242.15 (+8%)"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Qu’est-ce qui doit bien se passer pour Intact, et qu’est-ce qui pourrait mal tourner?",
+       "paragraphs": [
+        {
+         "n": 219,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Le scénario baissier donne 2 600 millions $ CA, puis 2 450 millions $ CA et 2 500 millions $ CA, parce que les pertes catastrophiques dépassent déjà les prévisions annuelles sur une base mobile et qu’au Royaume-Uni et en Irlande, le ratio combiné publié s’est établi à 112,0 %. Le scénario haussier donne 3 200 millions $ CA, 3 650 millions $ CA et 4 100 millions $ CA, en supposant que la météo se normalise, que l’amélioration au Royaume-Uni et en Irlande soit plus rapide et que les gains liés à la technologie réduisent les coûts. La fourchette reflète aussi la volatilité des bénéfices : le bénéfice net a fortement chuté en 2023 avant de se redresser au cours des années suivantes."
+        },
+        {
+         "n": 225,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.5 — What would change the view",
+         "text": "La perspective s’orienterait vers le scénario baissier si les pertes catastrophiques dépassaient à répétition l’hypothèse annuelle de 1,2 milliard $ CA, si le Royaume-Uni et l’Irlande demeuraient déficitaires en 2027–2028, ou si les prix dans l’assurance commerciale et l’inflation des sinistres détérioraient les ratios."
+        }
+       ],
+       "table": {
+        "title": "Comment elle gagne son argent, et ce qui peut lui nuire",
+        "unit": "Millions $ CA",
+        "caption": "How it earns, and what can hurt it (C$ millions)",
+        "head": [
+         "Row",
+         "Exercice terminé en déc. 2025",
+         "Exercice terminé en déc. 2024",
+         "Exercice terminé en déc. 2023",
+         "Exercice terminé en déc. 2022",
+         "Exercice terminé en déc. 2021"
+        ],
+        "rows": [
+         [
+          "Produits des activités d’assurance",
+          "26,950",
+          "26,523",
+          "25,507",
+          "25,914",
+          ""
+         ],
+         [
+          "Croissance des produits des activités d’assurance (calculée)",
+          "1.6%",
+          "4.0%",
+          "-1.6%",
+          "",
+          ""
+         ],
+         [
+          "Ratio combiné (inférieur à 100 % = bénéfice de souscription)",
+          "88.2%",
+          "92.2%",
+          "94.2%",
+          "91.8%",
+          "88.8%"
+         ],
+         [
+          "Résultat de souscription",
+          "2,717",
+          "1,689",
+          "1,183",
+          "1,598",
+          "1,787"
+         ],
+         [
+          "Produits de placement",
+          "1,632",
+          "1,559",
+          "1,346",
+          "931",
+          "706"
+         ],
+         [
+          "Rendement des capitaux propres d’exploitation",
+          "19.5%",
+          "16.5%",
+          "13.9%",
+          "13.5%",
+          "17.8%"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Combien d’argent Intact produit-elle réellement et redistribue-t-elle?",
+       "paragraphs": [
+        {
+         "n": 160,
+         "section": "essay-6",
+         "chapter": "6. Valuation and the stock",
+         "subsection": "6.1 — What an investor pays today",
+         "text": "Un assureur perçoit les primes aujourd’hui, promet de payer plus tard les pertes couvertes et investit l’argent entre-temps. Son résultat de souscription est rentable lorsque les sinistres et les dépenses absorbent moins que les primes perçues. Au T2 2026, Intact a produit 305 millions $ CA de résultat de souscription et 405 millions $ CA de produits de placement d’exploitation. Les deux activités comptent dans l’évaluation."
+        }
+       ],
+       "table": {
+        "title": "Résultats",
+        "unit": "Millions $ CA",
+        "caption": "Results (C$ millions)",
+        "head": [
+         "Row",
+         "Exercice terminé en déc. 2025",
+         "Exercice terminé en déc. 2024",
+         "Exercice terminé en déc. 2023",
+         "Exercice terminé en déc. 2022",
+         "Exercice terminé en déc. 2021"
+        ],
+        "rows": [
+         [
+          "Produits des activités d’assurance",
+          "26,950",
+          "26,523",
+          "25,507",
+          "25,914",
+          ""
+         ],
+         [
+          "Résultat de souscription",
+          "2,717",
+          "1,689",
+          "1,183",
+          "1,598",
+          "1,787"
+         ],
+         [
+          "Produits nets de placement",
+          "1,632",
+          "1,559",
+          "1,346",
+          "931",
+          "706"
+         ],
+         [
+          "Bénéfice de base (mesure de l’entreprise)",
+          "3,428",
+          "2,576",
+          "2,014",
+          "2,030",
+          "2,017"
+         ],
+         [
+          "Bénéfice net",
+          "3,365",
+          "2,297",
+          "1,316",
+          "2,454",
+          "2,067"
+         ],
+         [
+          "Dividende par action",
+          "5.32",
+          "4.84",
+          "4.40",
+          "4.00",
+          "3.40"
+         ]
+        ],
+        "note": ""
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Cours de l’action aujourd’hui, $ CA",
+       "value": "242.41"
+      },
+      {
+       "label": "Scénario pondéré, octobre 2029",
+       "value": "242.15 (+8%)"
+      },
+      {
+       "label": "Ratio cours-bénéfice, 12 derniers mois",
+       "value": "13.5x"
+      },
+      {
+       "label": "Ratio cours-valeur comptable",
+       "value": "2.2x"
+      }
+     ],
+     "chart": {
+      "kind": "scenarios",
+      "today": 242.41,
+      "columns": [
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": {
+       "Bear": {
+        "probability": "30%",
+        "values": [
+         "140.02 (-40%)",
+         "117.99 (-46%)",
+         "113.25 (-46%)"
+        ]
+       },
+       "Base": {
+        "probability": "52%",
+        "values": [
+         "229.36 (-3%)",
+         "244.21 (+6%)",
+         "259.65 (+16%)"
+        ]
+       },
+       "Bull": {
+        "probability": "18%",
+        "values": [
+         "274.76 (+16%)",
+         "337.38 (+45%)",
+         "406.41 (+77%)"
+        ]
+       },
+       "Weighted": {
+        "probability": "100%",
+        "values": [
+         "210.73 (-10%)",
+         "223.11 (-3%)",
+         "242.15 (+8%)"
+        ]
+       }
+      }
+     },
+     "path": "/stocks/ifc-to/",
+     "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-stock"
+    },
+    "dividend": {
+     "type": "dividend",
+     "title": "Action Intact : dividende — octobre 2026",
+     "meta_description": "Intact verse 1,47 $ CA par trimestre; son historique de dividendes, l’affectation de ses liquidités, ses risques et son rendement actuel de 2,4 % sont expliqués en langage clair.",
+     "opening": "Intact verse 1,47 $ CA par trimestre, pour des versements annuels prévus de 6,33 $, 6,96 $ et 7,66 $. De 2021 à 2025, les dividendes ordinaires se sont élevés à 3 916 millions $ CA, contre 11 122 millions $ CA de bénéfices attribuables aux actionnaires ordinaires.",
+     "closing": "Le mémoire complet porte aussi sur les activités d’Intact, ses rivales, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Combien Intact verse-t-elle par action?",
+       "paragraphs": [
+        {
+         "n": 221,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Dans le scénario de base, les dividendes passent du taux trimestriel actuel de 1,47 $ CA à des versements annuels de 6,33 $, 6,96 $ et 7,66 $. Cette trajectoire s’appuie sur les 21 années d’augmentations de l’entreprise et sur une croissance historique d’environ 10 %. Dans le scénario baissier, le dividende reste à 5,88 $ chaque année afin de préserver le capital après des pertes liées aux catastrophes. Dans le scénario haussier, il atteint 8,11 $ en 2029, ce qui exige une croissance plus rapide qu’auparavant et plusieurs années de souscription favorables."
+        }
+       ],
+       "table": {
+        "title": "Le tableau des prévisions",
+        "unit": "scénario de base, puis scénario baissier / haussier entre parenthèses; millions $ CA, sauf indication contraire",
+        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
+        "head": [
+         "",
+         "Octobre 2027",
+         "Octobre 2028",
+         "Octobre 2029"
+        ],
+        "rows": [
+         [
+          "Bénéfices",
+          "2,980 (2,600 / 3,200)",
+          "3,278 (2,450 / 3,650)",
+          "3,606 (2,500 / 4,100)"
+         ],
+         [
+          "Dividendes par action",
+          "6.33 (5.88 / 6.52)",
+          "6.96 (5.88 / 7.24)",
+          "7.66 (5.88 / 8.11)"
+         ],
+         [
+          "Cours-bénéfice",
+          "13.50 (9.50 / 15.00)",
+          "13.00 (8.50 / 16.00)",
+          "12.50 (8.00 / 17.00)"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Le dividende d’Intact est-il couvert par ses liquidités?",
+       "paragraphs": [
+        {
+         "n": 76,
+         "section": "essay-3",
+         "chapter": "3. History and capital decisions",
+         "subsection": "3.3 — Where the capital went",
+         "text": "Le BSIF, le régulateur canadien, fixe à 150 % la cible de capital de surveillance pour les assureurs de dommages sous réglementation fédérale. De 2021 à 2025, les bénéfices attribuables aux actionnaires ordinaires ont totalisé 11 122 millions $ CA. Les dividendes ordinaires se sont élevés à 3 916 millions $ CA, tandis que les rachats d’actions ont ajouté 372 millions $ CA. Le reliquat calculé était de 6 834 millions $ CA, mais ce reliquat comptable ne constituait pas un fonds librement disponible pour des acquisitions : il soutenait les placements, les obligations liées aux sinistres et la solidité du capital."
+        },
+        {
+         "n": 178,
+         "section": "essay-6",
+         "chapter": "6. Valuation and the stock",
+         "subsection": "6.4 — How the price moved",
+         "text": "Le flux de trésorerie disponible classique est un mauvais indicateur, puisque les primes sont encaissées avant le règlement des sinistres. Le meilleur test consiste à déterminer si les liquidités de la société de portefeuille, le capital des filiales et la liquidité des placements demeurent suffisants. L’évaluation doit maintenant distinguer les intempéries temporaires d’un problème durable de tarification."
+        }
+       ],
+       "table": {
+        "title": "Ce qu’elle gagne et redistribue",
+        "unit": "millions $ CA",
+        "caption": "What it earns and gives back (C$ millions)",
+        "head": [
+         "Row",
+         "Exercice clos en déc. 2025",
+         "Exercice clos en déc. 2024",
+         "Exercice clos en déc. 2023",
+         "Exercice clos en déc. 2022",
+         "Exercice clos en déc. 2021"
+        ],
+        "rows": [
+         [
+          "Bénéfice net attribuable aux actionnaires ordinaires",
+          "3,275",
+          "2,207",
+          "1,232",
+          "2,394",
+          "2,014"
+         ],
+         [
+          "Dividendes déclarés sur les actions ordinaires",
+          "947",
+          "863",
+          "778",
+          "702",
+          "626"
+         ],
+         [
+          "Actions rachetées",
+          "198",
+          "24",
+          "0",
+          "150",
+          "0"
+         ],
+         [
+          "Conservé pour croître et renforcer le capital (calculé)",
+          "2,130",
+          "1,320",
+          "454",
+          "1,542",
+          "1,388"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Quel est le rendement du dividende d’Intact par rapport à son cours?",
+       "paragraphs": [
+        {
+         "n": 183,
+         "section": "essay-6",
+         "chapter": "6. Valuation and the stock",
+         "subsection": "6.5 — What the price implies",
+         "text": "Le rendement du dividende de 2,4 % s’ajoute au rendement total, à condition que les bénéfices génèrent du capital utilisable. Intact a déclaré une marge de capital totale de 3 761 millions $ CA et un ratio dette ajustée-capital de 16,2 %. La conclusion centrale est simple : le cours suppose une souscription durable, des revenus de placement et des rendements élevés, tout en exposant les actionnaires au risque d’une éventuelle baisse du multiple d’évaluation."
+        }
+       ],
+       "table": {
+        "title": "Ce que paie un investisseur aujourd’hui",
+        "unit": "millions $ CA",
+        "caption": "What an investor pays today (C$ millions)",
+        "head": [
+         "Row",
+         "Aujourd’hui (9 oct. 2026)"
+        ],
+        "rows": [
+         [
+          "Cours de l’action",
+          "242.41"
+         ],
+         [
+          "Ratio cours-bénéfice, 12 derniers mois (calculé)",
+          "13.5x"
+         ],
+         [
+          "Rendement du dividende (calculé)",
+          "2.4%"
+         ]
+        ],
+        "note": ""
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Rendement du dividende",
+       "value": "2.4%"
+      }
+     ],
+     "chart": null,
+     "path": "/stocks/ifc-to/dividend/",
+     "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-dividend"
+    },
+    "earnings": {
+     "type": "earnings",
+     "title": "Action Intact : résultats du 3 novembre 2026",
+     "meta_description": "Les prochains résultats d’Intact sont attendus le 3 novembre 2026; les prévisions, les résultats récents et les sinistres liés aux catastrophes sont les principaux éléments à surveiller.",
+     "opening": "Les prochains résultats d’Intact sont attendus le 3 novembre 2026. Il faudra surveiller si un autre trimestre marqué par des catastrophes coûteuses nuit aux bénéfices, au capital ou au plan de croissance.",
+     "closing": "Le mémo complet répond aussi aux questions suivantes : comment Intact gagne-t-elle son argent, avec qui est-elle en concurrence, qui la dirige et quels risques court-elle?",
+     "blocks": [
+      {
+       "heading": "Quelles prévisions Intact a-t-elle présentées pour l’exercice?",
+       "paragraphs": [
+        {
+         "n": 186,
+         "section": "essay-7",
+         "chapter": "7. What comes next",
+         "subsection": "7.1 — What management has guided",
+         "text": "La direction vise une croissance annuelle de 10 % du résultat net d’exploitation par action, ou NOIPS, ainsi qu’un rendement des capitaux propres supérieur de 500 points de base à celui du secteur. Le NOIPS correspond au résultat des activités poursuivies réparti entre les actions. Le rendement des capitaux propres mesure le bénéfice par rapport aux capitaux des actionnaires; 500 points de base équivalent à cinq points de pourcentage. Le secteur canadien de l’assurance de dommages a affiché un rendement des capitaux propres de 17,1 % en 2025, mais la cible de surperformance d’Intact évoluera en fonction de ses concurrents."
+        },
+        {
+         "n": 188,
+         "section": "essay-7",
+         "chapter": "7. What comes next",
+         "subsection": "7.1 — What management has guided",
+         "text": "La direction fixe des cibles distinctes de ratio combiné pour l’assurance des particuliers, l’assurance commerciale, ainsi que les activités aux États-Unis et au Royaume-Uni et en Irlande, en plus d’hypothèses concernant les sinistres liés aux catastrophes, les dépenses, les impôts et les revenus de soutien."
+        }
+       ],
+       "table": {
+        "title": "Cibles et prévisions en vigueur",
+        "unit": "",
+        "caption": "Targets and guidance in force",
+        "head": [
+         "Row",
+         "Période couverte",
+         "Bas",
+         "Haut",
+         "Date de présentation"
+        ],
+        "rows": [
+         [
+          "Assurance automobile des particuliers au Canada — Ratio combiné inférieur à 95 %",
+          "Next 12 months",
+          "95.0%",
+          "95.0%",
+          "Feb 10, 2026"
+         ],
+         [
+          "Assurance habitation des particuliers au Canada — Ratio combiné inférieur à 95 %, même en cas d’événements météorologiques graves",
+          "Next 12 months",
+          "95.0%",
+          "95.0%",
+          "Feb 10, 2026"
+         ],
+         [
+          "Assurance commerciale au Canada — Ratio combiné dans le bas de la fourchette des 90 % ou mieux",
+          "Next 12 months",
+          "",
+          "",
+          "Feb 10, 2026"
+         ],
+         [
+          "Royaume-Uni et Irlande — Ratio combiné évoluant vers 90 %",
+          "Next 12 months",
+          "90.0%",
+          "90.0%",
+          "Feb 10, 2026"
+         ],
+         [
+          "États-Unis — Ratio combiné dans le bas de la fourchette des 90 % ou mieux",
+          "Next 12 months",
+          "",
+          "",
+          "Feb 10, 2026"
+         ],
+         [
+          "Sinistres consolidés liés aux catastrophes (milliards $ CA, après réassurance)",
+          "2026",
+          "1.2",
+          "1.2",
+          "Feb 10, 2026"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Intact a-t-elle tenu ses promesses passées?",
+       "paragraphs": [
+        {
+         "n": 115,
+         "section": "essay-4",
+         "chapter": "4. Management and ownership",
+         "subsection": "4.5 — Pay, and promises kept",
+         "text": "La direction promet de faire croître le résultat opérationnel net par action de 10 % par année et de dépasser de 5 points de pourcentage le rendement des capitaux propres du secteur. Les résultats à long terme publiés faisaient état d’une croissance annualisée de 12 % du résultat opérationnel par action et d’une surperformance de 6,7 points de pourcentage du rendement des capitaux propres. Cela appuie le bilan de la société, même si l’objectif de rentabilité au Royaume-Uni nécessitait encore des progrès."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Quelle est la tendance d’Intact au cours des huit derniers trimestres?",
+       "paragraphs": [
+        {
+         "n": 140,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.5 — The latest quarter",
+         "text": "Les résultats des huit derniers trimestres montrent qu’Intact peut passer rapidement d’une excellente performance de souscription à une performance déficitaire. L’estimation subséquente des sinistres liés aux catastrophes renforce l’idée que le T2 n’était pas simplement une interruption météorologique historique. Le prochain test consistera à déterminer si les réclamations et la rentabilité au Royaume-Uni se redressent sans dépendre uniquement d’une météo plus clémente."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Que dois-je surveiller dans les prochains résultats d’Intact?",
+       "paragraphs": [],
+       "table": {
+        "title": "Souscription : réclamations, coûts et catastrophes",
+        "unit": "Millions $ CA",
+        "caption": "Underwriting: claims, costs and catastrophes (C$ millions)",
+        "head": [
+         "Row",
+         "Exercice clos en déc. 2025",
+         "Exercice clos en déc. 2024",
+         "Exercice clos en déc. 2023",
+         "Exercice clos en déc. 2022",
+         "Exercice clos en déc. 2021"
+        ],
+        "rows": [
+         [
+          "Ratio de sinistres",
+          "54.2%",
+          "58.5%",
+          "60.8%",
+          "",
+          "55.9%"
+         ],
+         [
+          "Ratio de dépenses",
+          "34.0%",
+          "33.7%",
+          "33.4%",
+          "33.0%",
+          "32.9%"
+         ],
+         [
+          "Ratio combiné",
+          "88.2%",
+          "92.2%",
+          "94.2%",
+          "91.8%",
+          "88.8%"
+         ],
+         [
+          "Sinistres liés aux catastrophes",
+          "844",
+          "1,539",
+          "1,339",
+          "836",
+          "676"
+         ],
+         [
+          "Évolution des provisions des années antérieures",
+          "",
+          "",
+          "958",
+          "936",
+          "594"
+         ]
+        ],
+        "note": ""
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Prochains résultats",
+       "value": "November 3, 2026"
+      }
+     ],
+     "chart": {
+      "title": "The last eight quarters",
+      "unit": "C$ millions",
+      "columns": [
+       "Quarter to Sep 2024",
+       "Quarter to Dec 2024",
+       "Quarter to Mar 2025",
+       "Quarter to Jun 2025",
+       "Quarter to Sep 2025",
+       "Quarter to Dec 2025",
+       "Quarter to Mar 2026",
+       "Quarter to Jun 2026"
+      ],
+      "rows": {
+       "EPS, diluted": [
+        "1.06",
+        "3.58",
+        "3.69",
+        "4.70",
+        "4.73",
+        "5.24",
+        "4.12",
+        "3.90"
+       ]
+      },
+      "kind": "quarters"
+     },
+     "path": "/stocks/ifc-to/earnings/",
+     "cta": "https://app.mystockbutler.com/signup?ticker=IFC.TO&src=seo-earnings"
+    }
+   },
+   "held": [],
+   "pieces": {
+    "sent": 140,
+    "translated": 137,
+    "left_out": 3
+   }
+  }
+ }
 }

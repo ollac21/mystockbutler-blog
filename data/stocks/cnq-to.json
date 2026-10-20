@@ -8,27 +8,23 @@
  "index": "sptsx60",
  "company_type": "oil_gas",
  "country": "canada",
- "memo_date": "2026-10-10T02:16:00Z",
- "memo_date_text": "October 10, 2026",
- "price": 70.8,
- "price_date": "2026-10-09T20:00:00Z",
+ "memo_date": "2026-10-20T05:27:25Z",
+ "memo_date_text": "October 20, 2026",
+ "price": 76.46,
+ "price_date": "2026-10-19T20:00:00Z",
  "next_earnings": "2026-11-05",
  "counts": {
   "chapters": 8,
-  "paragraphs": 264,
-  "tables": 31,
-  "words": 16854,
-  "sources": 155
+  "paragraphs": 277,
+  "tables": 32,
+  "words": 17469,
+  "sources": 135
  },
  "teaser": {
   "chapter": "1. The business",
-  "text": "Canadian Natural Resources Limited makes money by producing oil and natural gas and selling them into industrial supply chains. One dollar enters as a market-linked sale, then leaves through preparation, transport, royalties, operating costs, investment, financing, taxes and eventual cleanup."
+  "text": "Canadian Natural Resources Ltd. is an energy producer that sells oil and natural gas to industrial buyers. Its money comes in when those products are delivered, and goes out through production, transportation, royalties, investment, financing, taxes and eventual cleanup."
  },
  "sources": [
-  {
-   "title": "Debt issuance and maturity schedule",
-   "url": "https://www.sec.gov/Archives/edgar/data/1017413/000101741326000006/a12312025q4fs.htm"
-  },
   {
    "title": "Annual report — FY2025",
    "url": "https://www.cnrl.com/content/uploads/2026/04/CNQ_2025-Annual-Report.pdf"
@@ -36,9 +32,18 @@
   {
    "title": "Annual report — FY2023",
    "url": "https://www.cnrl.com/content/uploads/2024/03/2023-Annual-Report.pdf"
+  },
+  {
+   "title": "Annual report — FY2022",
+   "url": "https://www.cnrl.com/content/uploads/2023/03/2022-Annual-Report.pdf"
   }
  ],
- "rivals": [],
+ "rivals": [
+  "IMO.TO",
+  "TOU.TO",
+  "WCP.TO",
+  "TVE.TO"
+ ],
  "chapters": [
   "Executive summary",
   "1. The business",
@@ -54,25 +59,32 @@
   "stock": {
    "type": "stock",
    "title": "Canadian Natural Resources stock forecast",
-   "meta_description": "Canadian Natural Resources stock forecast: weighted prices, scenarios, cash flow after stock pay, and valuation.",
-   "opening": "Canadian Natural Resources' probability-weighted price is C$51.82 in October 2027. Canadian Natural Resources' outcome hinges on commodity prices.",
-   "closing": "The full memo also explains Canadian Natural Resources' business, rivals, management and risks.",
+   "meta_description": "Canadian Natural Resources stock forecast: weighted price C$90.70 in October 2027, plus bear, base and bull cases and cash-flow context.",
+   "opening": "The weighted Canadian Natural Resources scenario is C$90.70 in October 2027, with C$87.66 in October 2029. It hinges on normalized prices, modest growth and cash generation sufficient to reduce debt.",
+   "closing": "The full Canadian Natural Resources memo also explains its business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could Canadian Natural Resources' shares be by October 2029?",
+     "heading": "Where could Canadian Natural Resources' shares be by 2029?",
      "paragraphs": [
       {
-       "n": 245,
+       "n": 255,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.1 — The verdict",
-       "text": "The probability-weighted price is C$51.82 in October 2027, C$45.88 in October 2028 and C$50.53 in October 2029. Including dividends, those figures represent returns of negative 23%, negative 28% and negative 18%. By October 2029, the bear-to-bull range runs from C$9.77 to C$120.53."
+       "text": "The forecast's central case is a positive return, but not a narrow one. The probability-weighted price is C$90.70 in October 2027 and C$88.44 in October 2028. It is C$87.66 in October 2029."
+      },
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "The bear case carries a 25% probability and the base case 55%. The bull case carries 20%. The November 5, 2026 results release tests the Horizon turnaround. Definitive policy agreements are targeted for November 15, 2026. A C$5,637 million debt maturity in year two tests refinancing and cash flexibility. T-Block cessation in Q1 2027 and NRUTT’s targeted Q3 2027 completion test project delivery. Sustained SCO premiums would support the growth case."
       }
      ],
      "table": {
       "title": "What the shares could be worth",
-      "unit": "CAD per share at each date; in brackets the return since today's 70.80, dividends included",
-      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 70.80, dividends included)",
+      "unit": "CAD per share at each date; in brackets the return since today's 76.46, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 76.46, dividends included)",
       "head": [
        "Case",
        "Probability",
@@ -83,51 +95,51 @@
       "rows": [
        [
         "Bear",
-        "30 %",
-        "27.23 (-58 %)",
-        "4.21 (-87 %)",
-        "9.77 (-76 %)"
+        "25 %",
+        "37.65 (-47 %)",
+        "40.47 (-41 %)",
+        "41.77 (-36 %)"
        ],
        [
         "Base",
         "55 %",
-        "55.78 (-18 %)",
-        "52.54 (-18 %)",
-        "53.68 (-13 %)"
+        "90.06 (+21 %)",
+        "86.16 (+20 %)",
+        "88.66 (+27 %)"
        ],
        [
         "Bull",
-        "15 %",
-        "86.46 (+26 %)",
-        "104.77 (+55 %)",
-        "120.53 (+82 %)"
+        "20 %",
+        "158.74 (+111 %)",
+        "154.65 (+110 %)",
+        "142.29 (+99 %)"
        ],
        [
         "Weighted",
         "100 %",
-        "51.82 (-23 %)",
-        "45.88 (-28 %)",
-        "50.53 (-18 %)"
+        "90.70 (+22 %)",
+        "88.44 (+23 %)",
+        "87.66 (+26 %)"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What could move Canadian Natural Resources' forecast?",
+     "heading": "What has to go right for Canadian Natural Resources, and what could go wrong?",
      "paragraphs": [
       {
-       "n": 252,
+       "n": 263,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
-       "text": "EBITDA is C$19,550 million in the first base window, dips in the second, and recovers to C$18,620 million in the third. The bear case falls to C$6,960 million in October 2028, while the bull case reaches C$27,410 million by October 2029. The range reflects a historical proxy that moved from C$16,151 million in 2021 to C$23,119 million in 2022 before settling near C$18 billion. Production guidance supports modest growth, but the unusually strong Q2 2026 comparison was not a permanent earnings rate. The bull case additionally needs contained Canadian discounts and successful NRUTT capacity additions."
+       "text": "The base path assumes 3% volume growth initially, then 2% annually, consistent with management's 2026 production target. It also assumes oil prices below the Q2 average but above the 2025 realized level. The bear case combines weaker prices, higher costs and declining volumes. The bull case assumes stronger realizations and faster growth, despite gradual price normalization."
       }
      ],
      "table": {
       "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; CAD millions unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
       "head": [
        "",
        "October 2027",
@@ -137,27 +149,33 @@
       "rows": [
        [
         "EBITDA",
-        "19,550 (13,330 / 24,660)",
-        "18,390 (6,960 / 26,530)",
-        "18,620 (9,600 / 27,410)"
+        "19,474 (11,055 / 27,528)",
+        "19,351 (12,877 / 26,007)",
+        "19,565 (13,489 / 24,233)"
        ],
        [
         "Shares (millions)",
-        "2,030 (2,048 / 2,011)",
-        "2,001 (2,034 / 1,967)",
-        "1,975 (2,019 / 1,929)"
+        "2,029 (2,047 / 2,018)",
+        "1,999 (2,034 / 1,976)",
+        "1,969 (2,021 / 1,934)"
+       ],
+       [
+        "Dividends per share",
+        "2.60 (2.50 / 2.75)",
+        "2.85 (2.50 / 3.25)",
+        "3.10 (2.50 / 3.75)"
        ],
        [
         "Enterprise value to ebitda",
-        "6.50 (5.50 / 7.50)",
-        "6.50 (5.00 / 8.00)",
-        "6.50 (5.50 / 8.50)"
+        "10.00 (8.50 / 12.00)",
+        "9.50 (8.00 / 12.00)",
+        "9.50 (8.00 / 11.50)"
        ],
        [
         "Net debt",
-        "13,840 (17,544 / 11,096)",
-        "14,372 (26,237 / 6,135)",
-        "15,002 (33,074 / 457)"
+        "12,000 (16,900 / 10,000)",
+        "11,600 (20,700 / 6,500)",
+        "11,300 (23,500 / 3,500)"
        ]
       ],
       "note": ""
@@ -167,36 +185,60 @@
      "heading": "How much cash does Canadian Natural Resources really make?",
      "paragraphs": [
       {
-       "n": 146,
+       "n": 150,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.3 — Cash",
-       "text": "Stock-based pay adds another economic adjustment. Deducting C$180 million under the stated calculation leaves C$8,858 million, but that is an analytical measure rather than a separately reported cash balance."
+       "text": "Cash generation is strong, but free cash flow depends on what the analyst subtracts. Operating cash flow was C$15,106 million in 2025. After capital spending and lease payments, an analytical free-cash-flow figure was C$9,038 million."
       }
      ],
      "table": {
-      "title": "Free cash flow, honestly counted",
+      "title": "Follow the money: real free cash flow",
       "unit": "C$ millions",
-      "caption": "Free cash flow, honestly counted (C$ millions)",
+      "caption": "Follow the money: real free cash flow (C$ millions)",
       "head": [
        "Row",
-       "Year to Dec 2025",
-       "Year to Dec 2024",
-       "Year to Dec 2023",
-       "Year to Dec 2022",
-       "Year to Dec 2021"
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
       ],
       "rows": [
        [
-        "Free cash flow (calculated)",
+        "Cash from operations",
+        "15,106",
+        "13,386",
+        "12,353",
+        "19,391",
+        "14,478"
+       ],
+       [
+        "− Capital spending",
+        "5,707",
+        "5,286",
+        "4,883",
+        "4,666",
+        "3,392"
+       ],
+       [
+        "− Lease payments",
+        "361",
+        "325",
+        "285",
+        "232",
+        "209"
+       ],
+       [
+        "**= Free cash flow**",
         "9,038",
         "7,775",
         "7,185",
         "14,493",
-        "11,018"
+        "10,877"
        ],
        [
-        "Stock-based pay",
+        "− Stock pay",
         "180",
         "279",
         "491",
@@ -204,42 +246,26 @@
         "514"
        ],
        [
-        "Real free cash flow (after stock pay) (calculated)",
+        "**= Real free cash flow**",
         "8,858",
         "7,496",
         "6,694",
         "13,689",
-        "10,504"
-       ],
-       [
-        "Free cash flow per share (calculated)",
-        "4.31",
-        "3.63",
-        "3.26",
-        "6.31",
-        "4.64"
-       ],
-       [
-        "Real free cash flow per share (calculated)",
-        "4.22",
-        "3.50",
-        "3.04",
-        "5.96",
-        "4.43"
+        "10,363"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What does an investor pay for Canadian Natural Resources?",
+     "heading": "What does an investor pay for Canadian Natural Resources today?",
      "paragraphs": [
       {
-       "n": 186,
+       "n": 188,
        "section": "essay-6",
        "chapter": "6. Valuation and the stock",
        "subsection": "6.1 — What an investor pays today",
-       "text": "The trailing P/E is 12.6x, while the forward P/E is 13.4x. P/E divides the share price by earnings, so it can fall when oil prices temporarily lift the denominator. In 2025, reported earnings were C$10.82 billion, while adjusted operating earnings were C$7.44 billion. The adjusted figure better describes the business’s repeatable operating performance."
+       "text": "CNQ’s current share price values a long future stream of cash, not just the next quarter."
       }
      ],
      "table": null
@@ -248,24 +274,24 @@
    "facts": [
     {
      "label": "Share price today, CAD",
-     "value": "70.80"
+     "value": "76.46"
     },
     {
      "label": "Weighted scenario, October 2029",
-     "value": "50.53 (-18 %)"
+     "value": "87.66 (+26 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.6%"
     },
     {
      "label": "Free cash flow yield",
-     "value": "2.2%"
-    },
-    {
-     "label": "Dividend yield",
-     "value": "3.5%"
+     "value": "5.7%"
     }
    ],
    "chart": {
     "kind": "scenarios",
-    "today": 70.8,
+    "today": 76.46,
     "columns": [
      "October 2027",
      "October 2028",
@@ -273,35 +299,35 @@
     ],
     "rows": {
      "Bear": {
-      "probability": "30 %",
+      "probability": "25 %",
       "values": [
-       "27.23 (-58 %)",
-       "4.21 (-87 %)",
-       "9.77 (-76 %)"
+       "37.65 (-47 %)",
+       "40.47 (-41 %)",
+       "41.77 (-36 %)"
       ]
      },
      "Base": {
       "probability": "55 %",
       "values": [
-       "55.78 (-18 %)",
-       "52.54 (-18 %)",
-       "53.68 (-13 %)"
+       "90.06 (+21 %)",
+       "86.16 (+20 %)",
+       "88.66 (+27 %)"
       ]
      },
      "Bull": {
-      "probability": "15 %",
+      "probability": "20 %",
       "values": [
-       "86.46 (+26 %)",
-       "104.77 (+55 %)",
-       "120.53 (+82 %)"
+       "158.74 (+111 %)",
+       "154.65 (+110 %)",
+       "142.29 (+99 %)"
       ]
      },
      "Weighted": {
       "probability": "100 %",
       "values": [
-       "51.82 (-23 %)",
-       "45.88 (-28 %)",
-       "50.53 (-18 %)"
+       "90.70 (+22 %)",
+       "88.44 (+23 %)",
+       "87.66 (+26 %)"
       ]
      }
     }
@@ -312,168 +338,25 @@
   "dividend": {
    "type": "dividend",
    "title": "Canadian Natural Resources dividend",
-   "meta_description": "Canadian Natural Resources paid C$2.35 per share in 2025 versus C$1.54 of free cash flow per share, creating a cash-coverage tension.",
-   "opening": "Canadian Natural Resources paid C$2.35 per share in 2025, while free cash flow per share was C$1.54. That leaves the dividend above 2025 free cash flow per share, the memo’s central cash-coverage tension.",
-   "closing": "The full memo also explains Canadian Natural Resources’ business, its rivals, its management, and its risks.",
+   "meta_description": "Canadian Natural Resources pays C$2.50 annually, and its 2025 free cash flow covered dividends and buybacks.",
+   "opening": "Canadian Natural Resources' current annualized dividend is C$2.50. In 2025, free cash flow again covered dividends and buybacks; analytical free cash flow was C$9,038 million.",
+   "closing": "The full memo also examines Canadian Natural Resources' business, rivals, management and risks.",
    "blocks": [
     {
      "heading": "How much does Canadian Natural Resources pay in dividends?",
      "paragraphs": [
       {
-       "n": 7,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The numbers",
-       "text": "The tables show production rising from 2021 through 2025 while funds flow remained below its 2022 peak. Net debt fell from C$18,688 million in 2024 to C$15,944 million in 2025. The central tension is CNQ’s C$2.35 dividend per share against its C$1.54 free cash flow per share in 2025. The 12.6x trailing P/E sits within the recent range, but 2025 earnings included a large AOSP accounting gain."
-      }
-     ],
-     "table": {
-      "title": "Results",
-      "unit": "C$ millions",
-      "caption": "Results (C$ millions)",
-      "head": [
-       "Row",
-       "Year to Dec 2025",
-       "Year to Dec 2024",
-       "Year to Dec 2023",
-       "Year to Dec 2022",
-       "Year to Dec 2021"
-      ],
-      "rows": [
-       [
-        "Revenue",
-        "38,762",
-        "35,656",
-        "35,968",
-        "42,298",
-        "30,057"
-       ],
-       [
-        "Revenue growth (calculated)",
-        "8.7%",
-        "-0.9%",
-        "-15.0%",
-        "40.7%",
-        "77.9%"
-       ],
-       [
-        "EPS, diluted",
-        "5.16",
-        "2.85",
-        "3.74",
-        "4.76",
-        "3.23"
-       ],
-       [
-        "Dividend per share",
-        "2.35",
-        "2.14",
-        "1.85",
-        "1.55",
-        "1.00"
-       ]
-      ],
-      "note": ""
-     }
-    },
-    {
-     "heading": "Does Canadian Natural Resources cover its dividend with cash?",
-     "paragraphs": [
-      {
-       "n": 86,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the cash went",
-       "text": "The pattern changed as cash became less abundant and acquisitions became larger. Shareholder distributions took most or more than all of calculated real free cash flow in 2023 and 2024, while the Chevron purchase absorbed cash and increased borrowing in 2024. By 2025, distributions used a smaller share of free cash flow and debt declined again."
-      },
-      {
-       "n": 87,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the cash went",
-       "text": "CNQ’s 2026 policy defines free cash flow after dividends, capital spending and abandonment spending. At net debt of C$16 billion or more, it targets 60% of that cash for buybacks. At C$13 billion or less, it targets 100%. Debt repayment preserves room for the next downturn, while buybacks increase the remaining shareholders’ ownership of the existing business."
-      }
-     ],
-     "table": {
-      "title": "Where the cash went",
-      "unit": "C$ millions",
-      "caption": "Where the cash went (C$ millions)",
-      "head": [
-       "Row",
-       "Year to Dec 2025",
-       "Year to Dec 2024",
-       "Year to Dec 2023",
-       "Year to Dec 2022",
-       "Year to Dec 2021"
-      ],
-      "rows": [
-       [
-        "Real free cash flow (after stock pay) (calculated)",
-        "8,858",
-        "7,496",
-        "6,694",
-        "13,689",
-        "10,504"
-       ],
-       [
-        "Dividends paid",
-        "4,871",
-        "4,429",
-        "3,891",
-        "4,926",
-        "2,170"
-       ],
-       [
-        "Shares bought back",
-        "1,449",
-        "2,660",
-        "3,318",
-        "5,571",
-        "1,581"
-       ],
-       [
-        "Acquisitions",
-        "",
-        "9,163",
-        "",
-        "513",
-        ""
-       ],
-       [
-        "Debt raised minus debt repaid (calculated)",
-        "-1,460",
-        "7,097",
-        "-416",
-        "-4,010",
-        "-6,962"
-       ],
-       [
-        "Returned to shareholders, share of real free cash flow (calculated)",
-        "71.3%",
-        "94.6%",
-        "107.7%",
-        "76.7%",
-        "35.7%"
-       ]
-      ],
-      "note": ""
-     }
-    },
-    {
-     "heading": "What could change Canadian Natural Resources’ dividend?",
-     "paragraphs": [
-      {
-       "n": 254,
+       "n": 265,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.3 — The drivers",
-       "text": "The dividend stays at C$2.50 per share in the first window across all cases. The base then grows at 6.4% annually, reaching C$2.83, while the bull uses 8% growth and reaches C$2.92. The base follows the latest increase and the long record of annual increases; the bear assumes a pause because debt and weak oil cash flow could compete with distributions."
+       "text": "The current annualized dividend is C$2.50. The base case raises it to C$2.60 in the first window, then C$2.85 and C$3.10. The bear case freezes it at C$2.50 because debt and closure spending absorb cash. The bull case reaches C$3.75 by 2029, requiring stronger cash generation and potentially slower buybacks."
       }
      ],
      "table": {
       "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; CAD millions unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions unless shown)",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
       "head": [
        "",
        "October 2027",
@@ -483,73 +366,210 @@
       "rows": [
        [
         "EBITDA",
-        "19,550 (13,330 / 24,660)",
-        "18,390 (6,960 / 26,530)",
-        "18,620 (9,600 / 27,410)"
+        "19,474 (11,055 / 27,528)",
+        "19,351 (12,877 / 26,007)",
+        "19,565 (13,489 / 24,233)"
        ],
        [
         "Shares (millions)",
-        "2,030 (2,048 / 2,011)",
-        "2,001 (2,034 / 1,967)",
-        "1,975 (2,019 / 1,929)"
+        "2,029 (2,047 / 2,018)",
+        "1,999 (2,034 / 1,976)",
+        "1,969 (2,021 / 1,934)"
        ],
        [
         "Dividends per share",
-        "2.50 (2.50 / 2.50)",
-        "2.66 (2.50 / 2.70)",
-        "2.83 (2.50 / 2.92)"
+        "2.60 (2.50 / 2.75)",
+        "2.85 (2.50 / 3.25)",
+        "3.10 (2.50 / 3.75)"
        ],
        [
         "Net debt",
-        "13,840 (17,544 / 11,096)",
-        "14,372 (26,237 / 6,135)",
-        "15,002 (33,074 / 457)"
+        "12,000 (16,900 / 10,000)",
+        "11,600 (20,700 / 6,500)",
+        "11,300 (23,500 / 3,500)"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "What is Canadian Natural Resources’ dividend yield today?",
+     "heading": "Does Canadian Natural Resources cover its dividend with cash?",
      "paragraphs": [
       {
-       "n": 187,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "The 2.2% free-cash-flow yield and 3.5% dividend yield cannot be compared until their definitions match. CNQ’s policy measure deducts dividends, capital spending and abandonment spending before calling the remainder free cash flow. A conventional measure usually deducts investment but leaves dividends to be paid from what remains."
+       "n": 90,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The pattern is clear: CNQ distributed much of its surplus while its balance sheet was improving, then used debt to help fund the 2024 acquisition. In 2025, free cash flow again covered dividends and buybacks while net debt fell. CNQ repurchased approximately 33.5 million shares in 2025. The weighted average price was C$43.28, which shows what it paid but not whether the repurchases were good investments."
+      },
+      {
+       "n": 150,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Cash generation is strong, but free cash flow depends on what the analyst subtracts. Operating cash flow was C$15,106 million in 2025. After capital spending and lease payments, an analytical free-cash-flow figure was C$9,038 million."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: where the free cash flow went",
+      "unit": "C$ millions",
+      "caption": "Follow the money: where the free cash flow went (C$ millions)",
+      "head": [
+       "Row",
+       "2025",
+       "2024",
+       "2023",
+       "2022",
+       "2021"
+      ],
+      "rows": [
+       [
+        "Free cash flow",
+        "9,038",
+        "7,775",
+        "7,185",
+        "14,493",
+        "10,877"
+       ],
+       [
+        "− Dividends paid",
+        "4,871",
+        "4,429",
+        "3,891",
+        "4,926",
+        "2,170"
+       ],
+       [
+        "− Share buybacks",
+        "1,449",
+        "2,660",
+        "3,318",
+        "5,571",
+        "1,581"
+       ],
+       [
+        "**= Free cash flow not paid out**",
+        "2,718",
+        "686",
+        "",
+        "3,996",
+        "7,126"
+       ],
+       [
+        "**= Net debt**",
+        "15,944",
+        "18,688",
+        "9,397",
+        "10,034",
+        "13,641"
+       ]
+      ],
+      "note": "In 2023, the company paid shareholders C$24 million more than its free cash flow, so it had to use other cash or borrowing."
+     }
+    },
+    {
+     "heading": "What could change the Canadian Natural Resources dividend?",
+     "paragraphs": [
+      {
+       "n": 91,
+       "section": "essay-3",
+       "chapter": "3. History and capital decisions",
+       "subsection": "3.3 — Where the cash went",
+       "text": "The March 2026 policy makes the choice between debt reduction and buybacks explicit. The regular dividend rose to C$0.625 per quarter. CNQ directs 60% of its policy measure to buybacks when net debt is at least C$16 billion, 75% between C$13 billion and C$16 billion, and 100% at or below C$13 billion. Management discussed reaching the lower threshold in early 2027 at then-current prices. The real test is whether payouts leave enough flexibility when oil prices weaken."
       }
      ],
      "table": null
+    },
+    {
+     "heading": "What is Canadian Natural Resources' dividend yield against its share price?",
+     "paragraphs": [
+      {
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "Including dividends, those outcomes represent gains of 22% and 23% in the first two years. The three-year gain is 26%. The 2029 bear-to-bull range runs from C$41.77 to C$142.29. Today's price is C$76.46."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 20, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "76.46"
+       ],
+       [
+        "Market value (calculated)",
+        "157,622.29"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "5.7%"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "3.3%"
+       ]
+      ],
+      "note": "The last twelve months price-to-earnings number looks cheaper because it includes a one-time 4,989 million Canadian dollar gain that may not happen again."
+     }
     }
    ],
    "facts": [
     {
+     "label": "Dividend paid per share, 2025",
+     "value": "2.32"
+    },
+    {
      "label": "Dividend yield",
-     "value": "3.5%"
+     "value": "3.3%"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "5.6%"
     },
     {
      "label": "Free cash flow yield",
-     "value": "2.2%"
+     "value": "5.7%"
     }
    ],
    "chart": {
     "title": "What one share gets",
     "unit": "C$ per share",
     "columns": [
-     "Year to Dec 2021",
-     "Year to Dec 2022",
-     "Year to Dec 2023",
-     "Year to Dec 2024",
-     "Year to Dec 2025"
+     "2021",
+     "2022",
+     "2023",
+     "2024",
+     "2025"
     ],
     "rows": {
+     "Dividends paid, per share": [
+      "0.91",
+      "2.14",
+      "1.77",
+      "2.07",
+      "2.32"
+     ],
+     "Real free cash flow per share": [
+      "4.37",
+      "5.96",
+      "3.04",
+      "3.50",
+      "4.22"
+     ],
      "Free cash flow per share": [
-      "3.40",
-      "4.75",
-      "3.14",
-      "2.10",
-      "1.54"
+      "4.58",
+      "6.31",
+      "3.26",
+      "3.63",
+      "4.31"
      ]
     },
     "kind": "dividend_vs_fcf"
@@ -560,59 +580,45 @@
   "earnings": {
    "type": "earnings",
    "title": "Canadian Natural Resources earnings",
-   "meta_description": "Canadian Natural Resources reports on November 5, 2026, with guidance for production and capital spending and a focus on Horizon’s turnaround.",
-   "opening": "Canadian Natural Resources reports next on November 5, 2026. Watch whether production and acquisition integration lift output as planned and whether Horizon’s maintenance shutdown stays on schedule.",
-   "closing": "The full memo explains Canadian Natural Resources’ business, rivals, management and risks.",
+   "meta_description": "Canadian Natural Resources reports on November 5, 2026; guidance, recent results and the Horizon turnaround are the key context.",
+   "opening": "Canadian Natural Resources’ next results are expected on November 5, 2026. The key thing to watch is Canadian Natural Resources’ Horizon turnaround.",
+   "closing": "The full memo also answers how Canadian Natural Resources runs its business, faces rivals, manages the company and carries its risks.",
    "blocks": [
     {
      "heading": "What has Canadian Natural Resources guided for 2026?",
      "paragraphs": [
       {
-       "n": 215,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.1 — What management has guided",
-       "text": "Its guidance calls for annual average production of **1,637–1,682 MBOE/d**. MBOE/d means thousand barrels of oil equivalent per day: Canadian Natural converts 6,000 cubic feet of natural gas into one barrel of energy-equivalent output. That makes oil and gas easier to combine, but not equally valuable; the figure is an annual average that includes planned maintenance."
-      },
-      {
-       "n": 216,
-       "section": "essay-7",
-       "chapter": "7. What comes next",
-       "subsection": "7.1 — What management has guided",
-       "text": "Operating capital covers the company’s own wells, plants and improvements. Canadian Natural allocates **C$5,990 million** to it. Carbon capture adds **C$125 million**. Acquisitions add **C$1,526 million**, bringing total capital expenditure to **C$7,641 million**. Abandonment, which means closing wells and restoring sites, requires another **C$993 million** before recoveries."
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets approximately 3% production growth. Its 2026 guidance is 1,637–1,682 thousand BOE per day. In 2026, operating capital is C$5,990 million. Abandonment expenditures are C$993 million before recoveries."
       }
      ],
      "table": {
       "title": "Guidance in force",
-      "unit": "C$ millions",
-      "caption": "Guidance in force (C$ millions)",
+      "unit": "C$ millions, except stated units",
+      "caption": "Guidance in force (C$ millions, except stated units)",
       "head": [
        "Row",
-       "the period guided",
-       "low",
-       "high",
-       "the date it was given"
+       "Period guided",
+       "Low",
+       "High",
+       "Date given"
       ],
       "rows": [
        [
-        "Total Operating Capital Expenditures (C$ millions)",
+        "Total Operating Capital Expenditures",
         "Year to Dec 2026",
         "5,990",
         "5,990",
         "Aug 6, 2026"
        ],
        [
-        "Carbon Capture (C$ millions)",
+        "Abandonment expenditures, before recoveries",
         "Year to Dec 2026",
-        "125",
-        "125",
-        "Aug 6, 2026"
-       ],
-       [
-        "Total Capital Expenditures (C$ millions)",
-        "Year to Dec 2026",
-        "7,641",
-        "7,641",
+        "993",
+        "993",
         "Aug 6, 2026"
        ],
        [
@@ -621,40 +627,68 @@
         "1,637",
         "1,682",
         "Aug 6, 2026"
+       ]
+      ],
+      "note": "Total capital expenditures include buying other companies and carbon-capture spending, but cleanup costs for abandoned assets are listed separately."
+     }
+    },
+    {
+     "heading": "Has Canadian Natural Resources kept its past promises?",
+     "paragraphs": [
+      {
+       "n": 135,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Canadian Natural has delivered production, debt reduction and fewer shares outstanding. Whether it is truly on shareholders’ side will depend on whether future rewards reflect safety, balance-sheet resilience and the results of the acquisitions that earned them."
+      }
+     ],
+     "table": {
+      "title": "Promises kept: 4/5",
+      "unit": "",
+      "caption": "Promises kept: 4/5",
+      "head": [
+       "What management forecast",
+       "Checked",
+       "Above",
+       "Within",
+       "Below"
+      ],
+      "rows": [
+       [
+        "Total MBOE/d",
+        "5 years",
+        "1",
+        "4",
+        "0"
        ],
        [
-        "Abandonment expenditures, before recoveries (C$ millions)",
-        "Year to Dec 2026",
-        "993",
-        "993",
-        "Dec 16, 2025"
+        "Total Liquids (Mbbl/d)",
+        "5 years",
+        "1",
+        "3",
+        "1"
+       ],
+       [
+        "Natural gas (MMcf/d)",
+        "5 years",
+        "3",
+        "1",
+        "1"
        ]
       ],
       "note": ""
      }
     },
     {
-     "heading": "Has Canadian Natural Resources kept its promises?",
+     "heading": "What has Canadian Natural Resources reported in its last eight quarters?",
      "paragraphs": [
       {
-       "n": 125,
-       "section": "essay-4",
-       "chapter": "4. Management and ownership",
-       "subsection": "4.5 — Pay, and promises kept",
-       "text": "There is also evidence of delivery. During 2025, Canadian Natural paid about C$4.9 billion in dividends and reduced net debt by about C$2.7 billion. Management also promised that reaching the next debt threshold in early 2027 would increase the allocation to buybacks. That remains a promise to monitor."
-      }
-     ],
-     "table": null
-    },
-    {
-     "heading": "What were Canadian Natural Resources’ results in the last eight quarters?",
-     "paragraphs": [
-      {
-       "n": 155,
+       "n": 164,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "Revenue reached C$14,741 million, versus C$8,698 million a year earlier. Net income rose from C$2,459 million to C$4,503 million, and operating cash flow more than doubled."
+       "text": "The surrounding quarters were less clean. December 2025 included the AOSP gain, while September 2025 included the major North Sea charge. March 2026 showed steadier company-adjusted earnings. The June result therefore demonstrates strong capacity, but not a normal profit rate."
       }
      ],
      "table": {
@@ -663,14 +697,14 @@
       "caption": "The last eight quarters (C$ millions)",
       "head": [
        "Row",
-       "Quarter to Jun 2026",
-       "Quarter to Mar 2026",
-       "Quarter to Dec 2025",
-       "Quarter to Sep 2025",
-       "Quarter to Jun 2025",
-       "Quarter to Mar 2025",
-       "Quarter to Dec 2024",
-       "Quarter to Sep 2024"
+       "Jun 2026",
+       "Mar 2026",
+       "Dec 2025",
+       "Sep 2025",
+       "Jun 2025",
+       "Mar 2025",
+       "Dec 2024",
+       "Sep 2024"
       ],
       "rows": [
        [
@@ -716,20 +750,42 @@
         "4,284",
         "3,432",
         "3,002"
+       ],
+       [
+        "Capital spending",
+        "1,643",
+        "1,405",
+        "1,413",
+        "1,318",
+        "1,691",
+        "1,285",
+        "1,290",
+        "1,261"
+       ],
+       [
+        "Lease payments",
+        "101",
+        "101",
+        "108",
+        "87",
+        "82",
+        "84",
+        "84",
+        "84"
        ]
       ],
-      "note": ""
+      "note": "Each column covers three months, not a full year, even though some row descriptions use the word year."
      }
     },
     {
-     "heading": "What should I watch in Canadian Natural Resources’ next results?",
+     "heading": "What should Canadian Natural Resources watch in its next results?",
      "paragraphs": [
       {
-       "n": 240,
+       "n": 245,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
-       "text": "Canadian Natural is scheduled to report third-quarter results on **November 5, 2026**. The update should show whether drilling and acquisition integration are lifting production as planned and whether Horizon’s maintenance shutdown is on schedule. A turnaround is a planned shutdown for inspection and repair, so the relevant test is its cost and return to service, not the temporary production loss already included in guidance."
+       "text": "November brings two tests: whether operations delivered and whether governments made larger expansion investable. The November 5 results release should show the initial effect of Horizon’s turnaround, but because the shutdown extended into October, the quarter alone cannot establish the full result."
       }
      ],
      "table": null
@@ -741,11 +797,11 @@
      "value": "November 5, 2026"
     },
     {
-     "label": "Revenue, quarter to Quarter to Jun 2026 (C$ millions)",
+     "label": "Revenue, quarter to Jun 2026 (C$ millions)",
      "value": "14,741"
     },
     {
-     "label": "EPS, diluted, quarter to Quarter to Jun 2026",
+     "label": "EPS, diluted, quarter to Jun 2026",
      "value": "2.15"
     }
    ],
@@ -753,14 +809,14 @@
     "title": "The last eight quarters",
     "unit": "C$ millions",
     "columns": [
-     "Quarter to Sep 2024",
-     "Quarter to Dec 2024",
-     "Quarter to Mar 2025",
-     "Quarter to Jun 2025",
-     "Quarter to Sep 2025",
-     "Quarter to Dec 2025",
-     "Quarter to Mar 2026",
-     "Quarter to Jun 2026"
+     "Sep 2024",
+     "Dec 2024",
+     "Mar 2025",
+     "Jun 2025",
+     "Sep 2025",
+     "Dec 2025",
+     "Mar 2026",
+     "Jun 2026"
     ],
     "rows": {
      "Revenue": [
@@ -791,5 +847,550 @@
   }
  },
  "short_name": "Canadian Natural Resources",
- "first_memo_date": "2026-10-10T02:16:00Z"
+ "first_memo_date": "2026-10-10T02:16:00Z",
+ "translations": {
+  "fr": {
+   "version": "fr-2",
+   "source": "caf9dd0b6828a943",
+   "teaser": {
+    "chapter": "1. L'entreprise",
+    "text": "Canadian Natural Resources Ltd. est un producteur d’énergie qui vend du pétrole et du gaz naturel à des acheteurs industriels. Ses revenus entrent lorsque ces produits sont livrés, et ses sorties de fonds sont liées à la production, au transport, aux redevances, aux investissements, au financement, aux impôts et à la remise en état éventuelle des sites."
+   },
+   "chapters": [
+    "Sommaire",
+    "1. L'entreprise",
+    "2. Le marché",
+    "3. Historique et décisions de capital",
+    "4. Direction et actionnariat",
+    "5. Les chiffres",
+    "6. Évaluation et action",
+    "7. La suite",
+    "8. Où le cours pourrait aller"
+   ],
+   "pages": {
+    "stock": {
+     "type": "stock",
+     "title": "Action Canadian Natural Resources : prévisions",
+     "meta_description": "Prévision de l’action de Canadian Natural Resources : cours pondéré de 90,70 $ CA en octobre 2027, avec scénarios baissier, de base et haussier, ainsi que le contexte des flux de trésorerie.",
+     "opening": "Le scénario pondéré de Canadian Natural Resources donne 90,70 $ CA en octobre 2027, puis 87,66 $ CA en octobre 2029. Il repose sur des prix normalisés, une croissance modeste et une génération de trésorerie suffisante pour réduire la dette.",
+     "closing": "Le dossier complet sur Canadian Natural Resources explique aussi ses activités, ses rivales, sa direction et ses risques.",
+     "blocks": [
+      {
+       "heading": "Où l’action de Canadian Natural Resources pourrait-elle se trouver en 2029?",
+       "paragraphs": [
+        {
+         "n": 10,
+         "section": "executive-summary",
+         "chapter": "Executive summary",
+         "subsection": "The verdict",
+         "text": "Le scénario baissier se voit attribuer une probabilité de 25 % et le scénario de base, de 55 %. Le scénario haussier se voit attribuer 20 %. La publication des résultats du 5 novembre 2026 mettra à l’épreuve le redressement de Horizon. La conclusion d’ententes définitives sur les politiques est ciblée pour le 15 novembre 2026. Une échéance de dette de 5 637 millions $ CA en deuxième année met à l’épreuve le refinancement et la souplesse de la trésorerie. La cessation de T-Block au T1 2027 et l’achèvement ciblé de NRUTT au T3 2027 mettront à l’épreuve l’exécution des projets. Le maintien de primes sur le SCO appuierait le scénario de croissance."
+        }
+       ],
+       "table": {
+        "title": "Ce que les actions pourraient valoir",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 76,46 $, dividendes compris",
+        "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 76.46, dividends included)",
+        "head": [
+         "Scénario",
+         "Probabilité",
+         "Octobre 2027",
+         "Octobre 2028",
+         "Octobre 2029"
+        ],
+        "rows": [
+         [
+          "Baissier",
+          "25 %",
+          "37.65 (-47 %)",
+          "40.47 (-41 %)",
+          "41.77 (-36 %)"
+         ],
+         [
+          "De base",
+          "55 %",
+          "90.06 (+21 %)",
+          "86.16 (+20 %)",
+          "88.66 (+27 %)"
+         ],
+         [
+          "Haussier",
+          "20 %",
+          "158.74 (+111 %)",
+          "154.65 (+110 %)",
+          "142.29 (+99 %)"
+         ],
+         [
+          "Pondéré",
+          "100 %",
+          "90.70 (+22 %)",
+          "88.44 (+23 %)",
+          "87.66 (+26 %)"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Que doit-il arriver pour que Canadian Natural Resources réussisse, et qu’est-ce qui pourrait mal tourner?",
+       "paragraphs": [
+        {
+         "n": 263,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "La trajectoire de base suppose une croissance initiale des volumes de 3 %, puis de 2 % par année, ce qui concorde avec la cible de production de la direction pour 2026. Elle suppose aussi des prix du pétrole inférieurs à la moyenne du T2, mais supérieurs au niveau réalisé en 2025. Le scénario baissier combine des prix plus faibles, des coûts plus élevés et des volumes en baisse. Le scénario haussier suppose de meilleures réalisations et une croissance plus rapide, malgré une normalisation graduelle des prix."
+        }
+       ],
+       "table": {
+        "title": "Le tableau de la prévision",
+        "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
+        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "head": [
+         "",
+         "Octobre 2027",
+         "Octobre 2028",
+         "Octobre 2029"
+        ],
+        "rows": [
+         [
+          "BAIIA",
+          "19,474 (11,055 / 27,528)",
+          "19,351 (12,877 / 26,007)",
+          "19,565 (13,489 / 24,233)"
+         ],
+         [
+          "Actions (millions)",
+          "2,029 (2,047 / 2,018)",
+          "1,999 (2,034 / 1,976)",
+          "1,969 (2,021 / 1,934)"
+         ],
+         [
+          "Dividendes par action",
+          "2.60 (2.50 / 2.75)",
+          "2.85 (2.50 / 3.25)",
+          "3.10 (2.50 / 3.75)"
+         ],
+         [
+          "Valeur d’entreprise / BAIIA",
+          "10.00 (8.50 / 12.00)",
+          "9.50 (8.00 / 12.00)",
+          "9.50 (8.00 / 11.50)"
+         ],
+         [
+          "Dette nette",
+          "12,000 (16,900 / 10,000)",
+          "11,600 (20,700 / 6,500)",
+          "11,300 (23,500 / 3,500)"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Combien de trésorerie Canadian Natural Resources génère-t-elle réellement?",
+       "paragraphs": [
+        {
+         "n": 150,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.3 — Cash",
+         "text": "La génération de trésorerie est solide, mais les flux de trésorerie disponibles dépendent de ce que l’analyste soustrait. Les flux de trésorerie liés aux activités d’exploitation se sont établis à 15 106 millions $ CA en 2025. Après les dépenses en immobilisations et les paiements de loyers, le montant analytique des flux de trésorerie disponibles s’est établi à 9 038 millions $ CA."
+        }
+       ],
+       "table": {
+        "title": "Suivons l’argent : les flux de trésorerie disponibles réels",
+        "unit": "millions $ CA",
+        "caption": "Follow the money: real free cash flow (C$ millions)",
+        "head": [
+         "Row",
+         "2025",
+         "2024",
+         "2023",
+         "2022",
+         "2021"
+        ],
+        "rows": [
+         [
+          "Trésorerie provenant des activités d’exploitation",
+          "15,106",
+          "13,386",
+          "12,353",
+          "19,391",
+          "14,478"
+         ],
+         [
+          "− Dépenses en immobilisations",
+          "5,707",
+          "5,286",
+          "4,883",
+          "4,666",
+          "3,392"
+         ],
+         [
+          "− Paiements de loyers",
+          "361",
+          "325",
+          "285",
+          "232",
+          "209"
+         ],
+         [
+          "**= Flux de trésorerie disponibles**",
+          "9,038",
+          "7,775",
+          "7,185",
+          "14,493",
+          "10,877"
+         ],
+         [
+          "− Rémunération en actions",
+          "180",
+          "279",
+          "491",
+          "804",
+          "514"
+         ],
+         [
+          "**= Flux de trésorerie disponibles réels**",
+          "8,858",
+          "7,496",
+          "6,694",
+          "13,689",
+          "10,363"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Combien un investisseur paie-t-il aujourd’hui pour Canadian Natural Resources?",
+       "paragraphs": [
+        {
+         "n": 188,
+         "section": "essay-6",
+         "chapter": "6. Valuation and the stock",
+         "subsection": "6.1 — What an investor pays today",
+         "text": "Le cours actuel de l’action de CNQ valorise une longue série future de flux de trésorerie, et pas seulement le prochain trimestre."
+        }
+       ],
+       "table": null
+      }
+     ],
+     "facts": [
+      {
+       "label": "Cours de l’action aujourd’hui, $ CA",
+       "value": "76.46"
+      },
+      {
+       "label": "Scénario pondéré, octobre 2029",
+       "value": "87.66 (+26 %)"
+      },
+      {
+       "label": "Rendement des flux de trésorerie disponibles réels",
+       "value": "5.6%"
+      },
+      {
+       "label": "Rendement des flux de trésorerie disponibles",
+       "value": "5.7%"
+      }
+     ],
+     "chart": {
+      "kind": "scenarios",
+      "today": 76.46,
+      "columns": [
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": {
+       "Bear": {
+        "probability": "25 %",
+        "values": [
+         "37.65 (-47 %)",
+         "40.47 (-41 %)",
+         "41.77 (-36 %)"
+        ]
+       },
+       "Base": {
+        "probability": "55 %",
+        "values": [
+         "90.06 (+21 %)",
+         "86.16 (+20 %)",
+         "88.66 (+27 %)"
+        ]
+       },
+       "Bull": {
+        "probability": "20 %",
+        "values": [
+         "158.74 (+111 %)",
+         "154.65 (+110 %)",
+         "142.29 (+99 %)"
+        ]
+       },
+       "Weighted": {
+        "probability": "100 %",
+        "values": [
+         "90.70 (+22 %)",
+         "88.44 (+23 %)",
+         "87.66 (+26 %)"
+        ]
+       }
+      }
+     },
+     "path": "/stocks/cnq-to/",
+     "cta": "https://app.mystockbutler.com/signup?ticker=CNQ.TO&src=seo-stock"
+    },
+    "dividend": {
+     "type": "dividend",
+     "title": "Action Canadian Natural Resources : dividende — octobre 2026",
+     "meta_description": "Canadian Natural Resources verse 2,50 $ CA annuellement, et son flux de trésorerie disponible de 2025 a couvert les dividendes et les rachats d’actions.",
+     "opening": "Le dividende annualisé actuel de Canadian Natural Resources est de 2,50 $ CA. En 2025, le flux de trésorerie disponible a de nouveau couvert les dividendes et les rachats d’actions; le flux de trésorerie disponible calculé par l’analyste s’est établi à 9 038 millions $ CA.",
+     "closing": "Le mémo complet examine également les activités, les concurrents, la direction et les risques de Canadian Natural Resources.",
+     "blocks": [
+      {
+       "heading": "Combien Canadian Natural Resources verse-t-elle en dividendes?",
+       "paragraphs": [
+        {
+         "n": 265,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.3 — The drivers",
+         "text": "Le dividende annualisé actuel est de 2,50 $ CA. Le scénario de base le porte à 2,60 $ CA dans la première fenêtre, puis à 2,85 $ CA et à 3,10 $ CA. Le scénario baissier le maintient à 2,50 $ CA, car la dette et les dépenses liées aux fermetures absorbent les liquidités. Le scénario haussier le fait atteindre 3,75 $ CA d’ici 2029, ce qui nécessite une génération de liquidités plus vigoureuse et potentiellement des rachats d’actions plus lents."
+        }
+       ],
+       "table": {
+        "title": "Le tableau des prévisions",
+        "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
+        "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
+        "head": [
+         "",
+         "octobre 2027",
+         "octobre 2028",
+         "octobre 2029"
+        ],
+        "rows": [
+         [
+          "BAIIA",
+          "19,474 (11,055 / 27,528)",
+          "19,351 (12,877 / 26,007)",
+          "19,565 (13,489 / 24,233)"
+         ],
+         [
+          "Actions (millions)",
+          "2,029 (2,047 / 2,018)",
+          "1,999 (2,034 / 1,976)",
+          "1,969 (2,021 / 1,934)"
+         ],
+         [
+          "Dividendes par action",
+          "2.60 (2.50 / 2.75)",
+          "2.85 (2.50 / 3.25)",
+          "3.10 (2.50 / 3.75)"
+         ],
+         [
+          "Dette nette",
+          "12,000 (16,900 / 10,000)",
+          "11,600 (20,700 / 6,500)",
+          "11,300 (23,500 / 3,500)"
+         ]
+        ],
+        "note": ""
+       }
+      },
+      {
+       "heading": "Canadian Natural Resources couvre-t-elle son dividende avec ses liquidités?",
+       "paragraphs": [
+        {
+         "n": 90,
+         "section": "essay-3",
+         "chapter": "3. History and capital decisions",
+         "subsection": "3.3 — Where the cash went",
+         "text": "Le schéma est clair : CNQ a distribué une grande partie de son surplus alors que son bilan s’améliorait, puis a eu recours à la dette pour contribuer au financement de l’acquisition de 2024. En 2025, le flux de trésorerie disponible a de nouveau couvert les dividendes et les rachats d’actions, tandis que la dette nette diminuait. CNQ a racheté environ 33,5 millions d’actions en 2025. Le prix moyen pondéré était de 43,28 $ CA, ce qui montre combien elle a payé, mais pas si les rachats constituaient de bons investissements."
+        },
+        {
+         "n": 150,
+         "section": "essay-5",
+         "chapter": "5. The numbers",
+         "subsection": "5.3 — Cash",
+         "text": "La génération de liquidités est solide, mais le flux de trésorerie disponible dépend de ce que l’analyste soustrait. Les flux de trésorerie liés aux activités d’exploitation se sont établis à 15 106 millions $ CA en 2025. Après les dépenses en immobilisations et les paiements de loyers, le flux de trésorerie disponible calculé par l’analyste s’élevait à 9 038 millions $ CA."
+        }
+       ],
+       "table": {
+        "title": "Suivez l’argent : où est allé le flux de trésorerie disponible",
+        "unit": "millions $ CA",
+        "caption": "Follow the money: where the free cash flow went (C$ millions)",
+        "head": [
+         "Row",
+         "2025",
+         "2024",
+         "2023",
+         "2022",
+         "2021"
+        ],
+        "rows": [
+         [
+          "Flux de trésorerie disponible",
+          "9,038",
+          "7,775",
+          "7,185",
+          "14,493",
+          "10,877"
+         ],
+         [
+          "− Dividendes versés",
+          "4,871",
+          "4,429",
+          "3,891",
+          "4,926",
+          "2,170"
+         ],
+         [
+          "− Rachats d’actions",
+          "1,449",
+          "2,660",
+          "3,318",
+          "5,571",
+          "1,581"
+         ],
+         [
+          "**= Flux de trésorerie disponible non distribué**",
+          "2,718",
+          "686",
+          "",
+          "3,996",
+          "7,126"
+         ],
+         [
+          "**= Dette nette**",
+          "15,944",
+          "18,688",
+          "9,397",
+          "10,034",
+          "13,641"
+         ]
+        ],
+        "note": "En 2023, la société a versé aux actionnaires 24 millions $ CA de plus que son flux de trésorerie disponible; elle a donc dû puiser dans d’autres liquidités ou emprunter."
+       }
+      },
+      {
+       "heading": "Qu’est-ce qui pourrait changer le dividende de Canadian Natural Resources?",
+       "paragraphs": [
+        {
+         "n": 91,
+         "section": "essay-3",
+         "chapter": "3. History and capital decisions",
+         "subsection": "3.3 — Where the cash went",
+         "text": "La politique de mars 2026 rend explicite le choix entre la réduction de la dette et les rachats d’actions. Le dividende régulier est passé à 0,625 $ CA par trimestre. CNQ affecte 60 % de sa mesure de référence aux rachats d’actions lorsque la dette nette atteint au moins 16 milliards $ CA, 75 % lorsqu’elle se situe entre 13 milliards $ CA et 16 milliards $ CA, et 100 % lorsqu’elle est de 13 milliards $ CA ou moins. La direction a évoqué l’atteinte du seuil inférieur au début de 2027, aux cours alors en vigueur. Le véritable test consiste à déterminer si les distributions laissent suffisamment de marge de manœuvre lorsque les prix du pétrole fléchissent."
+        }
+       ],
+       "table": null
+      },
+      {
+       "heading": "Quel est le rendement du dividende de Canadian Natural Resources par rapport au cours de son action?",
+       "paragraphs": [
+        {
+         "n": 256,
+         "section": "essay-8",
+         "chapter": "8. Where the price could go",
+         "subsection": "8.1 — The verdict",
+         "text": "En incluant les dividendes, ces résultats représentent des gains de 22 % et de 23 % au cours des deux premières années. Le gain sur trois ans est de 26 %. La fourchette baissière-haussière pour 2029 va de 41,77 $ CA à 142,29 $ CA. Le cours actuel est de 76,46 $ CA."
+        }
+       ],
+       "table": {
+        "title": "Ce qu’un investisseur paie aujourd’hui",
+        "unit": "millions $ CA",
+        "caption": "What an investor pays today (C$ millions)",
+        "head": [
+         "Row",
+         "Aujourd’hui (20 octobre 2026)"
+        ],
+        "rows": [
+         [
+          "Cours de l’action",
+          "76.46"
+         ],
+         [
+          "Valeur boursière (calculée)",
+          "157,622.29"
+         ],
+         [
+          "Rendement du flux de trésorerie disponible (calculé)",
+          "5.7%"
+         ],
+         [
+          "Rendement du dividende (calculé)",
+          "3.3%"
+         ]
+        ],
+        "note": "Le ratio cours-bénéfice des douze derniers mois semble moins élevé parce qu’il comprend un gain ponctuel de 4 989 millions $ CA qui pourrait ne pas se reproduire."
+       }
+      }
+     ],
+     "facts": [
+      {
+       "label": "Dividende versé par action, 2025",
+       "value": "2.32"
+      },
+      {
+       "label": "Rendement du dividende",
+       "value": "3.3%"
+      },
+      {
+       "label": "Rendement du flux de trésorerie disponible réel",
+       "value": "5.6%"
+      },
+      {
+       "label": "Rendement du flux de trésorerie disponible",
+       "value": "5.7%"
+      }
+     ],
+     "chart": {
+      "title": "What one share gets",
+      "unit": "C$ per share",
+      "columns": [
+       "2021",
+       "2022",
+       "2023",
+       "2024",
+       "2025"
+      ],
+      "rows": {
+       "Dividends paid, per share": [
+        "0.91",
+        "2.14",
+        "1.77",
+        "2.07",
+        "2.32"
+       ],
+       "Real free cash flow per share": [
+        "4.37",
+        "5.96",
+        "3.04",
+        "3.50",
+        "4.22"
+       ],
+       "Free cash flow per share": [
+        "4.58",
+        "6.31",
+        "3.26",
+        "3.63",
+        "4.31"
+       ]
+      },
+      "kind": "dividend_vs_fcf"
+     },
+     "path": "/stocks/cnq-to/dividend/",
+     "cta": "https://app.mystockbutler.com/signup?ticker=CNQ.TO&src=seo-dividend"
+    }
+   },
+   "held": [
+    "earnings"
+   ],
+   "pieces": {
+    "sent": 137,
+    "translated": 131,
+    "left_out": 1
+   }
+  }
+ }
 }
