@@ -825,11 +825,11 @@
  "first_memo_date": "2026-10-16T04:18:52Z",
  "translations": {
   "fr": {
-   "version": "fr-3",
+   "version": "fr-5",
    "source": "bca0ed22d4a552c4",
    "teaser": {
     "chapter": "1. L'entreprise",
-    "text": "Fortis possède des services publics qui acheminent l’électricité et le gaz au moyen de lignes à haute tension, de réseaux de distribution locaux et de pipelines. L’entreprise tire principalement ses revenus des frais d’accès à ces réseaux, tandis que certaines activités produisent, achètent ou vendent aussi l’énergie qui y circule."
+    "text": "Fortis possède des services publics qui acheminent l’électricité et le gaz par des lignes à haute tension, des réseaux locaux et des pipelines. L’entreprise tire principalement ses revenus des frais d’accès à ces réseaux, tandis que certaines activités produisent, achètent ou vendent aussi l’énergie qui y circule."
    },
    "chapters": [
     "Sommaire",
@@ -846,31 +846,31 @@
     "stock": {
      "type": "stock",
      "title": "Action Fortis : prévisions et valeur — octobre 2026",
-     "meta_description": "La prévision pondérée de Fortis atteint 84,15 $ CA en octobre 2029, avec des probabilités de 55 % pour le scénario de base, de 25 % pour le scénario pessimiste et de 20 % pour le scénario optimiste.",
-     "opening": "La prévision pondérée de Fortis atteint 84,15 $ CA en octobre 2029, le scénario de base recevant une probabilité de 55 %. Elle repose sur un redressement ponctuel de TEP et sur la construction d’ITC.",
-     "closing": "Le mémoire complet répond aussi à la question de savoir ce que signifient les activités, les rivaux, la direction et les risques de Fortis pour la prévision.",
+     "meta_description": "La prévision pondérée de Fortis atteint 84,15 $ CA en octobre 2029, avec des probabilités de 55 % pour le scénario de base, de 25 % pour le scénario baissier et de 20 % pour le scénario haussier.",
+     "opening": "La prévision pondérée de Fortis atteint 84,15 $ CA en octobre 2029, le scénario de base recevant une probabilité de 55 %. Elle repose sur un redressement rapide de TEP et la construction d’ITC.",
+     "closing": "Le mémoire complet répond également à la question de savoir ce que les activités, les rivaux, la direction et les risques de Fortis signifient pour la prévision.",
      "blocks": [
       {
-       "heading": "À combien les actions de Fortis pourraient-elles s’établir en 2029?",
+       "heading": "Où les actions de Fortis pourraient-elles se trouver en 2029?",
        "paragraphs": [
         {
          "n": 253,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8. Where the price could go",
-         "text": "La trajectoire pondérée atteint 76,97 $ CA en octobre 2027 et 79,97 $ CA en octobre 2028. Elle atteint 84,15 $ CA en octobre 2029, soit un rendement total de 19 %, dividendes compris. La fourchette à la dernière date va de 57,47 $ CA à 114,49 $ CA. Le cours d’aujourd’hui est de 77,52 $ CA."
+         "text": "La trajectoire pondérée atteint 76,97 $ CA en octobre 2027 et 79,97 $ CA en octobre 2028. Elle atteint 84,15 $ CA en octobre 2029, soit un rendement total de 19 % avec les dividendes. La fourchette à la dernière date va de 57,47 $ CA à 114,49 $ CA. Le cours d’aujourd’hui est de 77,52 $ CA."
         },
         {
          "n": 265,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.4 — Bear and bull",
-         "text": "Le scénario optimiste exige un redressement ponctuel de TEP, une demande ferme des gros consommateurs et une construction d’ITC conforme à l’échéancier. Il atteint 114,49 $ CA en octobre 2029, contre 90,91 $ CA en octobre 2027. Sa probabilité est de 20 %, car la demande potentielle demeure conditionnelle et certains projets d’ITC ne sont pas encore en construction. Le scénario de base reçoit 55 % : il exige la réalisation du plan, et non une exécution sans faille, et il est soutenu par les investissements réglementés, les attentes des analystes et l’historique des dividendes."
+         "text": "Le scénario haussier exige un redressement rapide de TEP, une demande ferme provenant des grandes charges et une construction d’ITC conforme à l’échéancier. Il atteint 114,49 $ CA en octobre 2029, contre 90,91 $ CA en octobre 2027. Sa probabilité est de 20 %, car la demande potentielle demeure conditionnelle et certains projets d’ITC ne sont pas encore en construction. Le scénario de base reçoit 55 % : il exige l’exécution du plan, et non une exécution parfaite, et il est soutenu par les investissements réglementés, les attentes des analystes et l’historique de dividendes."
         }
        ],
        "table": {
         "title": "Ce que les actions pourraient valoir",
-        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis les 77,52 $ CA d’aujourd’hui, dividendes compris",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 77,52 $, dividendes compris",
         "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 77.52, dividends included)",
         "head": [
          "Scénario",
@@ -881,7 +881,7 @@
         ],
         "rows": [
          [
-          "Pessimiste",
+          "Baissier",
           "25 %",
           "60.39 (-19 %)",
           "57.03 (-20 %)",
@@ -895,7 +895,7 @@
           "85.25 (+21 %)"
          ],
          [
-          "Optimiste",
+          "Haussier",
           "20 %",
           "90.91 (+21 %)",
           "102.15 (+39 %)",
@@ -920,24 +920,24 @@
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.3 — The drivers",
-         "text": "Le plan d’investissement de 28,8 milliards $ CA vise une croissance annuelle de 7 % de la base tarifaire, ce qui soutient la trajectoire de base. La ligne pessimiste n’atteint que 2 084 millions $ CA, car le décalage tarifaire, les limites d’abordabilité, les retards de projets et les coûts de financement persistent. La ligne optimiste atteint 2 516 millions $ CA, car le redressement de TEP et les investissements dans ITC se traduisent plus rapidement en bénéfices. La décision tarifaire concernant TEP est prévue pour le 17 novembre 2026, ce qui en fait un catalyseur daté."
+         "text": "Le plan d’investissement de 28,8 milliards $ CA vise une croissance annuelle de 7 % de la base tarifaire, ce qui soutient la trajectoire de base. La ligne baissière n’atteint que 2 084 millions $ CA, parce que le décalage tarifaire, les limites d’abordabilité, les retards de projets et les coûts de financement persistent. La ligne haussière atteint 2 516 millions $ CA, parce que le redressement de TEP et les investissements dans ITC se traduisent plus rapidement en bénéfices. La décision tarifaire concernant TEP est prévue pour le 17 novembre 2026, ce qui en fait un catalyseur daté."
         }
        ],
        "table": null
       },
       {
-       "heading": "Combien d’argent Fortis gagne-t-elle réellement?",
+       "heading": "Combien de liquidités Fortis génère-t-elle réellement?",
        "paragraphs": [
         {
          "n": 151,
          "section": "essay-5",
          "chapter": "5. The numbers",
          "subsection": "5.3 — Cash",
-         "text": "Les dépenses d’investissement sont différentes, car Fortis doit payer les entrepreneurs pour construire ou renouveler les réseaux. Il en résulte un flux de trésorerie disponible négatif avant les dividendes. Fortis présente aussi une mesure plus stricte du flux de trésorerie disponible « réel », en traitant la rémunération en actions comme un coût économique. Les intérêts payés sont déjà pris en compte dans les flux de trésorerie liés à l’exploitation; les soustraire de nouveau reviendrait à compter deux fois la même sortie de fonds."
+         "text": "Les dépenses d’investissement sont différentes, parce que Fortis doit payer les entrepreneurs pour construire ou renouveler ses réseaux. Le résultat est un flux de trésorerie disponible négatif avant les dividendes. Fortis présente aussi une mesure plus stricte du flux de trésorerie disponible « réel » en traitant la rémunération à base d’actions comme un coût économique. Les intérêts payés sont déjà pris en compte dans les flux de trésorerie liés aux activités d’exploitation; les soustraire de nouveau compterait donc deux fois la même sortie de fonds."
         }
        ],
        "table": {
-        "title": "Suivre l’argent : flux de trésorerie disponible réel",
+        "title": "Suivez l’argent : flux de trésorerie disponible réel",
         "unit": "Millions $ CA",
         "caption": "Follow the money: real free cash flow (C$ millions)",
         "head": [
@@ -950,7 +950,7 @@
         ],
         "rows": [
          [
-          "Flux de trésorerie liés à l’exploitation",
+          "Flux de trésorerie liés aux activités d’exploitation",
           "4,062",
           "3,882",
           "3,545",
@@ -974,7 +974,7 @@
           "-481"
          ],
          [
-          "− Rémunération en actions",
+          "− Rémunération à base d’actions",
           "150",
           "82",
           "66",
@@ -1001,11 +1001,11 @@
          "section": "essay-6",
          "chapter": "6. Valuation and the stock",
          "subsection": "6.1 — What an investor pays today",
-         "text": "Le ratio cours/bénéfice divise le cours de l’action par le bénéfice par action, indiquant ce que les investisseurs paient pour chaque dollar de bénéfice attribuable à chaque action. Le bénéfice des douze derniers mois couvre les douze mois précédents, tandis que le bénéfice prévisionnel correspond aux estimations pour les douze prochains mois. Le bénéfice publié de Fortis en 2025 comprenait 63 millions $ CA de pertes liées aux cessions. Le bénéfice ajusté par action s’établissait à 3,53 $ CA, plutôt que le bénéfice publié par action de 3,40 $ CA, et le régime de réinvestissement des dividendes (DRIP) signifie que les bénéfices futurs pourraient être répartis entre un plus grand nombre d’actions."
+         "text": "Le ratio cours/bénéfice divise le cours de l’action par le bénéfice par action, ce qui montre ce que les investisseurs paient pour chaque dollar de bénéfice attribuable à chaque action. Le bénéfice rétrospectif couvre les douze mois précédents, tandis que le bénéfice prévisionnel correspond aux estimations des douze prochains mois. Le bénéfice déclaré de Fortis pour 2025 comprenait 63 millions $ CA de pertes liées aux cessions. Le BPA ajusté s’établissait à 3,53 $ CA, plutôt que le BPA déclaré de 3,40 $ CA, et le RRD signifie que les bénéfices futurs pourraient être répartis entre un plus grand nombre d’actions."
         }
        ],
        "table": {
-        "title": "Ce que paie aujourd’hui un investisseur",
+        "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA",
         "caption": "What an investor pays today (C$ millions)",
         "head": [
@@ -1038,7 +1038,7 @@
           "3.3%"
          ]
         ],
-        "note": "La valeur d’entreprise est supérieure à la valeur boursière parce qu’elle comprend la dette de l’entreprise, tout en soustrayant ses liquidités."
+        "note": "La valeur d’entreprise est supérieure à la valeur boursière parce qu’elle comprend la dette de la société, tout en soustrayant ses liquidités."
        }
       }
      ],
@@ -1109,21 +1109,13 @@
     "dividend": {
      "type": "dividend",
      "title": "Action Fortis : dividende — octobre 2026",
-     "meta_description": "Fortis augmente son dividende, mais ses flux de trésorerie disponibles ne suffisent pas à financer à eux seuls les constructions et les distributions aux actionnaires.",
-     "opening": "Fortis a versé 2,51 $ CA par action en 2025, contre 2,08 $ CA en 2021, tandis que ses flux de trésorerie disponibles étaient négatifs en 2021 et en 2022. Les activités d’exploitation n’ont pas financé à elles seules les constructions et les distributions aux actionnaires; Fortis s’est donc appuyée sur l’emprunt, les ventes d’actifs et les capitaux des actionnaires.",
+     "meta_description": "Fortis augmente son dividende, mais ses flux de trésorerie disponibles ne suffisent pas à financer à eux seuls les travaux de construction et les distributions aux actionnaires.",
+     "opening": "Fortis a versé 2,51 $ CA par action en 2025, contre 2,08 $ CA en 2021, tandis que ses flux de trésorerie disponibles étaient négatifs en 2021 et 2022. Les activités d’exploitation n’ont pas financé à elles seules les travaux de construction et les distributions aux actionnaires; Fortis s’est donc appuyée sur l’emprunt, les ventes d’actifs et les capitaux des actionnaires.",
      "closing": "Le mémo complet explique aussi les activités de Fortis, sa direction, ses rivales et ses risques.",
      "blocks": [
       {
        "heading": "Combien Fortis verse-t-elle à ses actionnaires?",
-       "paragraphs": [
-        {
-         "n": 7,
-         "section": "executive-summary",
-         "chapter": "Executive summary",
-         "subsection": "The numbers",
-         "text": "Les revenus ont augmenté de 5,8 % en 2025, tandis que la marge d’exploitation s’établissait à 28,7 %; les ventes refacturées peuvent augmenter sans entraîner une croissance équivalente des bénéfices. La dette nette est passée de 25 788 millions $ CA en 2021 à 34 267 millions $ CA en 2025. Les flux de trésorerie disponibles de l’entreprise étaient négatifs en 2021 et en 2022. Le dividende par action est passé de 2,08 $ CA en 2021 à 2,51 $ CA en 2025. Le résultat dilué par action est passé de 2,61 $ CA en 2021 à 3,40 $ CA en 2025, alors que le nombre moyen d’actions diluées a augmenté chaque année. Les actions se négocient à 22,7 fois le ratio cours-bénéfice historique et à 20,0 fois le ratio cours-bénéfice des 12 prochains mois. Le rendement du dividende est de 3,3 %, contre un rendement des rachats d’actions de 0,0 %."
-        }
-       ],
+       "paragraphs": [],
        "table": {
         "title": "Ce que rapporte une action",
         "unit": "$ CA par action ordinaire",
@@ -1154,7 +1146,7 @@
           "0.00"
          ],
          [
-          "**= Versé davantage que les flux de trésorerie disponibles, par action**",
+          "**= A distribué plus que ses flux de trésorerie disponibles, par action**",
           "",
           "",
           "",
@@ -1162,29 +1154,29 @@
           "2.43"
          ]
         ],
-        "note": "L’entreprise a versé des dividendes et effectué d’autres sorties de trésorerie alors même que ses flux de trésorerie disponibles étaient négatifs; elle a donc versé davantage qu’elle n’a généré."
+        "note": "La société a versé des dividendes et effectué d’autres sorties de trésorerie alors que ses flux de trésorerie disponibles étaient négatifs; elle a donc distribué plus qu’elle n’a généré."
        }
       },
       {
-       "heading": "Le dividende de Fortis est-il couvert par ses liquidités?",
+       "heading": "Le dividende de Fortis est-il couvert par sa trésorerie?",
        "paragraphs": [
         {
          "n": 93,
          "section": "essay-3",
          "chapter": "3. History and capital decisions",
          "subsection": "3.3 — Where the cash went",
-         "text": "Les flux de trésorerie disponibles correspondent aux liquidités restantes après que les flux de trésorerie liés à l’exploitation ont financé les dépenses en immobilisations. Les flux de trésorerie disponibles de Fortis étaient négatifs en 2021 et en 2022; les activités d’exploitation n’ont donc pas financé à elles seules les constructions et les distributions aux actionnaires. Fortis s’est par conséquent appuyée sur l’emprunt, les ventes d’actifs et les capitaux des actionnaires. Cela ne prouve pas que les projets étaient mauvais; cela signifie que leurs retours de trésorerie sont arrivés plus tard que leurs factures de construction."
+         "text": "Les flux de trésorerie disponibles correspondent à la trésorerie restante après que les flux de trésorerie liés aux activités d’exploitation ont financé les dépenses en immobilisations. Les flux de trésorerie disponibles de Fortis étaient négatifs en 2021 et 2022; les activités d’exploitation n’ont donc pas financé à elles seules les travaux de construction et les distributions aux actionnaires. Fortis s’est donc appuyée sur l’emprunt, les ventes d’actifs et les capitaux des actionnaires. Cela ne prouve pas que les projets étaient mauvais; cela signifie que leurs retours de trésorerie sont arrivés plus tard que leurs factures de construction."
         },
         {
          "n": 94,
          "section": "essay-3",
          "chapter": "3. History and capital decisions",
          "subsection": "3.3 — Where the cash went",
-         "text": "Les dividendes ont accentué la pression sur le financement. Un régime de réinvestissement des dividendes permet aux actionnaires d’utiliser leurs dividendes pour acheter de nouvelles actions de Fortis plutôt que de recevoir des liquidités. Fortis affirme que son régime offre un escompte de 2 %, de sorte que les actionnaires participants contribuent à garder l’argent dans l’entreprise tout en augmentant le nombre d’actions qui se partageront les bénéfices futurs. Les rachats d’actions étaient nuls chaque année, ce qui signifie que Fortis n’a pas utilisé de liquidités pour réduire le nombre d’actions en circulation."
+         "text": "Les dividendes ont accru la pression sur le financement. Un régime de réinvestissement des dividendes permet aux actionnaires d’utiliser leurs dividendes pour acheter de nouvelles actions de Fortis au lieu de recevoir de l’argent comptant. Fortis affirme que son régime offre un escompte de 2 %, de sorte que les actionnaires participants contribuent à garder l’argent dans la société tout en augmentant le nombre d’actions qui se partageront les bénéfices futurs. Les rachats d’actions ont été nuls chaque année, ce qui signifie que Fortis n’a pas utilisé sa trésorerie pour réduire le nombre de ses actions."
         }
        ],
        "table": {
-        "title": "Suivre l’argent : où sont allés les flux de trésorerie disponibles",
+        "title": "Suivez l’argent : où sont allés les flux de trésorerie disponibles",
         "unit": "Millions $ CA",
         "caption": "Follow the money: where the free cash flow went (C$ millions)",
         "head": [
@@ -1221,7 +1213,7 @@
           "0"
          ],
          [
-          "**= Versé davantage que les flux de trésorerie disponibles**",
+          "**= A distribué plus que les flux de trésorerie disponibles**",
           "",
           "",
           "",
@@ -1229,7 +1221,7 @@
           "1,147"
          ],
          [
-          "Versé, en % des flux de trésorerie disponibles",
+          "Distribué, % des flux de trésorerie disponibles",
           "",
           "",
           "",
@@ -1237,7 +1229,7 @@
           "not meaningful"
          ]
         ],
-        "note": "La dette nette calculée par l’entreprise est légèrement inférieure à la nôtre, car elle comptabilise différemment les contrats de location-financement courants."
+        "note": "La dette nette calculée par la société est légèrement inférieure à la nôtre, car elle comptabilise différemment les contrats de location-financement courants."
        }
       },
       {
@@ -1248,14 +1240,14 @@
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The verdict",
-         "text": "Le plan d’investissement de 28,8 milliards $ CA de la direction pour 2026–2030 vise une croissance annuelle de 7 % de la base tarifaire. Il vise une croissance annuelle du dividende de 4 % à 6 % jusqu’en 2030. Les activités cédées devraient réduire le résultat par action de 2026 de 0,05 $ CA."
+         "text": "Le plan d’investissement de 28,8 milliards $ CA de la direction pour 2026–2030 vise une croissance annuelle de 7 % de la base tarifaire. Il vise une croissance annuelle de 4 %–6 % du dividende jusqu’en 2030. Les activités cédées devraient réduire le bénéfice par action de 0,05 $ CA en 2026."
         },
         {
          "n": 261,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.3 — The drivers",
-         "text": "Les dividendes commencent à 2,62 $ CA après une hausse de 4,4 % par rapport au dernier versement annuel de 2,51 $ CA. Le scénario de base atteint 2,89 $ CA en octobre 2029, près de la cible de 4 % à 6 % de la direction. Le scénario baissier gèle le dividende après la première hausse, tandis que le scénario haussier le porte à 2,96 $ CA en appliquant le haut de la fourchette prévisionnelle à mesure que la reprise s’améliore. Le bilan des cinq dernières années montre des hausses chaque année, ce qui appuie la croissance, mais pas un versement sans limite."
+         "text": "Les dividendes commencent à 2,62 $ CA après une hausse de 4,4 % par rapport au dernier versement annuel de 2,51 $ CA. Le scénario de base atteint 2,89 $ CA en octobre 2029, près de la cible de 4 %–6 % de la direction. Le scénario baissier gèle le dividende après la première hausse, tandis que le scénario haussier atteint 2,96 $ CA en appliquant le haut de la fourchette prévisionnelle à mesure que la reprise s’améliore. Le bilan des cinq dernières années montre des hausses chaque année, ce qui appuie la croissance, mais pas une distribution illimitée."
         }
        ],
        "table": {
@@ -1270,7 +1262,7 @@
         ],
         "rows": [
          [
-          "Bénéfices",
+          "Bénéfice",
           "2,061 (1,970 / 2,134)",
           "2,169 (2,026 / 2,318)",
           "2,280 (2,084 / 2,516)"
@@ -1282,13 +1274,13 @@
           "2.89 (2.62 / 2.96)"
          ],
          [
-          "Ratio cours-bénéfice",
+          "Ratio cours/bénéfice",
           "20.00 (16.00 / 22.00)",
           "20.00 (15.00 / 23.00)",
           "20.00 (15.00 / 24.00)"
          ]
         ],
-        "note": "Le ratio cours-bénéfice signifie que les investisseurs paient vingt dollars canadiens pour chaque dollar canadien que l’entreprise gagne."
+        "note": "Le ratio cours/bénéfice signifie que les investisseurs paient vingt dollars canadiens pour chaque dollar canadien gagné par la société."
        }
       }
      ],
@@ -1347,19 +1339,19 @@
     "earnings": {
      "type": "earnings",
      "title": "Action Fortis : résultats du 3 novembre 2026",
-     "meta_description": "Les résultats de Fortis sont attendus le 3 novembre 2026; les prévisions sont axées sur les investissements, la croissance de la base tarifaire et les dividendes.",
+     "meta_description": "Les résultats de Fortis sont attendus le 3 novembre 2026; les prévisions portent principalement sur les investissements, la croissance de la base tarifaire et les dividendes.",
      "opening": "Fortis publiera ses prochains résultats le 3 novembre 2026. Il faudra surveiller si Fortis transforme ses dépenses prévues en actifs productifs approuvés.",
-     "closing": "Le mémoire complet répond également aux questions importantes sur les activités, les rivales, la direction et les risques de Fortis.",
+     "closing": "Le mémo complet répond également aux questions importantes sur les activités, les rivales, la direction et les risques de Fortis.",
      "blocks": [
       {
-       "heading": "Quelles prévisions Fortis a-t-elle fournies pour l’exercice?",
+       "heading": "Quelles prévisions Fortis a-t-elle données pour l’exercice?",
        "paragraphs": [
         {
          "n": 215,
          "section": "essay-7",
          "chapter": "7. What comes next",
          "subsection": "7.1 — What management has guided",
-         "text": "Fortis vise une croissance annuelle du dividende de 4 % à 6 % jusqu’en 2030. Elle prévoit également que les activités cédées réduiront le BPA de 0,05 $ CA en 2026. Le plan exige donc que Fortis bâtisse des actifs, obtienne leur recouvrement et fasse croître le bénéfice par action."
+         "text": "Fortis vise une croissance annuelle du dividende de 4 % à 6 % jusqu’en 2030. Elle s’attend aussi à ce que les activités cédées réduisent le BPA de 0,05 $ CA en 2026. Le plan exige donc de Fortis qu’elle développe ses actifs, obtienne leur récupération tarifaire et fasse croître le bénéfice par action."
         }
        ],
        "table": {
@@ -1371,7 +1363,7 @@
          "Période visée par les prévisions",
          "Bas",
          "Haut",
-         "Date de publication"
+         "Date communiquée"
         ],
         "rows": [
          [
@@ -1410,7 +1402,7 @@
           "Jul 31, 2026"
          ],
          [
-          "Taux de change présumé du dollar américain en dollar canadien",
+          "Taux de change présumé du dollar américain au dollar canadien",
           "2026–2030 Capital Plan",
           "1.35",
           "1.35",
@@ -1428,7 +1420,7 @@
          "section": "essay-4",
          "chapter": "4. Management and ownership",
          "subsection": "4.5 — Pay, and promises kept",
-         "text": "Le dividende du quatrième trimestre de Fortis a augmenté de 4,1 % en 2025, poursuivant une série de 52 années d’augmentations des dividendes versés. La direction a réaffirmé une croissance annuelle de 4 % à 6 % jusqu’en 2030, mais la cible de flux de trésorerie manquée montre que l’exécution a été inégale. La conclusion la plus juste est donc mitigée : les dirigeants de Fortis ont de l’expérience, une exposition et un historique d’exécution, mais les actionnaires doivent encore vérifier dans quelle mesure le conseil les remet en question de façon indépendante et avec quelle honnêteté la performance est mesurée."
+         "text": "Le dividende du quatrième trimestre de Fortis a augmenté de 4,1 % en 2025, poursuivant une série de 52 années de hausses des dividendes versés. La direction a réaffirmé une croissance annuelle de 4 % à 6 % jusqu’en 2030, mais la cible de flux de trésorerie manquée montre que l’exécution a été inégale. La conclusion la plus juste est donc mitigée : les dirigeants de Fortis ont de l’expérience, une bonne exposition et un historique d’exécution, mais les actionnaires doivent encore évaluer dans quelle mesure le conseil les remet en question de façon indépendante et avec quelle honnêteté la performance est mesurée."
         }
        ],
        "table": null
@@ -1441,7 +1433,7 @@
          "section": "essay-5",
          "chapter": "5. The numbers",
          "subsection": "5.5 — The latest quarter",
-         "text": "Les flux de trésorerie liés à l’exploitation ont fortement augmenté, mais les dépenses en immobilisations sont demeurées supérieures. Les ventes de crédits d’impôt et le calendrier des paiements ont soutenu le trimestre; il ne faut donc pas projeter mécaniquement la hausse des liquidités. Sur huit trimestres, le chauffage au Canada et la climatisation en Arizona créent une saisonnalité visible. Le bon test consiste à examiner la croissance sur douze mois et depuis le début de l’exercice, puis à effectuer une vérification réglementaire."
+         "text": "Les flux de trésorerie liés à l’exploitation ont fortement augmenté, mais les dépenses d’investissement sont demeurées supérieures. Les ventes de crédits d’impôt et le calendrier des paiements ont renforcé le trimestre; il ne faut donc pas projeter mécaniquement cette hausse de trésorerie. Sur huit trimestres, le chauffage au Canada et la climatisation en Arizona créent une saisonnalité visible. Le bon test consiste à examiner la croissance sur douze mois et depuis le début de l’exercice, puis à effectuer une vérification réglementaire."
         }
        ],
        "table": {
@@ -1494,7 +1486,7 @@
           "439"
          ],
          [
-          "BPA, dilué",
+          "BPA dilué",
           "0.78",
           "0.99",
           "0.83",
@@ -1516,7 +1508,7 @@
           "1,338"
          ],
          [
-          "− Dépenses en immobilisations",
+          "− Dépenses d’investissement",
           "1,664",
           "1,548",
           "1,694",
@@ -1527,25 +1519,25 @@
           "1,300"
          ]
         ],
-        "note": "Le bénéfice net comprend les sommes dues aux actionnaires privilégiés, tandis que le bénéfice par action ne concerne que les actionnaires ordinaires; les deux chiffres ne correspondent donc pas exactement."
+        "note": "Le bénéfice net comprend les sommes dues aux actionnaires privilégiés, mais le bénéfice par action ne concerne que les actionnaires ordinaires; les deux chiffres ne correspondent donc pas exactement."
        }
       },
       {
-       "heading": "Que doivent surveiller les observateurs de Fortis pour la suite?",
+       "heading": "Que devraient surveiller les observateurs de Fortis?",
        "paragraphs": [
         {
          "n": 234,
          "section": "essay-7",
          "chapter": "7. What comes next",
          "subsection": "7.5 — What to watch",
-         "text": "Fortis publiera ses résultats du troisième trimestre et de nouvelles perspectives d’investissement sur cinq ans le 3 novembre 2026. La comparaison utile doit se faire projet par projet : lequel coûte plus cher, lequel sera mis en service plus tard et lequel nécessite davantage de capitaux propres. Un total de dépenses plus élevé peut cacher une exécution plus lente."
+         "text": "Fortis publiera ses résultats du troisième trimestre et ses nouvelles perspectives d’investissement sur cinq ans le 3 novembre 2026. La comparaison utile doit se faire projet par projet : lequel coûte plus cher, lequel sera mis en service plus tard et lequel exige davantage de capitaux propres. Un total de dépenses plus élevé peut dissimuler une exécution plus lente."
         },
         {
          "n": 235,
          "section": "essay-7",
          "chapter": "7. What comes next",
          "subsection": "7.5 — What to watch",
-         "text": "La cause tarifaire de Tucson Electric Power doit faire l’objet d’une décision d’ici le 17 novembre 2026. La société demande une hausse d’environ 13 % de ses produits annuels ainsi que des ajustements de formule plus réguliers. La contestation non résolue du pouvoir de l’Arizona d’autoriser les tarifs fondés sur une formule pourrait déterminer combien de temps la hausse des coûts demeurera exclue des factures des clients."
+         "text": "La décision concernant le dossier tarifaire de Tucson Electric Power est prévue d’ici le 17 novembre 2026. L’entreprise demande une hausse d’environ 13 % de ses produits annuels ainsi que des ajustements plus réguliers selon une formule. La contestation non résolue de l’autorité de l’Arizona en matière de tarifs calculés selon une formule pourrait déterminer pendant combien de temps la hausse des coûts demeurera exclue des factures des clients."
         }
        ],
        "table": null
@@ -1557,11 +1549,11 @@
        "value": "November 3, 2026"
       },
       {
-       "label": "Produits, trimestre clos en juin 2026 (millions $ CA)",
+       "label": "Produits, trimestre terminé en juin 2026 (millions $ CA)",
        "value": "2,931"
       },
       {
-       "label": "BPA, dilué, trimestre clos en juin 2026",
+       "label": "BPA dilué, trimestre terminé en juin 2026",
        "value": "0.78"
       }
      ],
@@ -1609,8 +1601,8 @@
    "held": [],
    "pieces": {
     "sent": 126,
-    "translated": 126,
-    "left_out": 0
+    "translated": 125,
+    "left_out": 1
    }
   }
  }

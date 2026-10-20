@@ -1,0 +1,581 @@
+{
+ "schema": "public_pages_v1",
+ "ticker": "PATH",
+ "slug": "path",
+ "company": "UiPath Inc.",
+ "exchange": "NYSE",
+ "currency": "USD",
+ "index": "",
+ "company_type": "operating_company",
+ "country": "us",
+ "memo_date": "2026-10-13T15:11:35Z",
+ "memo_date_text": "October 13, 2026",
+ "price": 13.725,
+ "price_date": "2026-10-13T13:49:10Z",
+ "next_earnings": "2026-12-02",
+ "counts": {
+  "chapters": 8,
+  "paragraphs": 257,
+  "tables": 27,
+  "words": 16553,
+  "sources": 212
+ },
+ "teaser": {
+  "chapter": "1. The business",
+  "text": "UiPath sells software that turns work people do on computers into managed, automated processes. Its business is a loop: customers pay for software access and help, while UiPath spends to run, sell, support, and improve the platform."
+ },
+ "sources": [
+  {
+   "title": "sec.gov",
+   "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472225000007/path-20250131.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472226000007/path-2026131xex991.htm"
+  },
+  {
+   "title": "Earnings release — Q4 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472225000004/path-20250131xex991.htm"
+  }
+ ],
+ "rivals": [
+  "MSFT",
+  "APPN",
+  "SSNC",
+  "NICE",
+  "PEGA",
+  "NOW"
+ ],
+ "chapters": [
+  "Executive summary",
+  "1. The business",
+  "2. The market",
+  "3. History and capital decisions",
+  "4. Management and ownership",
+  "5. The numbers",
+  "6. Valuation and the stock",
+  "7. What comes next",
+  "8. Where the price could go"
+ ],
+ "pages": {
+  "stock": {
+   "type": "stock",
+   "title": "UiPath stock forecast",
+   "meta_description": "UiPath stock forecast: bear, base and bull scenarios, cash conversion, customer expansion, AI adoption and valuation.",
+   "opening": "The weighted case for UiPath is $8.57 in October 2027, with the bear case at 30%, the base case at 55%, and the bull case at 15%. It hinges on better cash conversion, customer expansion and paid AI adoption.",
+   "closing": "The full memo also explains UiPath’s business, rivals, management and risks.",
+   "blocks": [
+    {
+     "heading": "Where could UiPath's shares be in October 2027?",
+     "paragraphs": [
+      {
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Weighted value is $8.57 in October 2027. That is a -38% return. The October 2029 weighted value is $12.32. That is a -10% return versus $13.72 today. The bear case has 30% probability; the base case has 55%. The bull case has 15%."
+      }
+     ],
+     "table": {
+      "title": "What the shares could be worth",
+      "unit": "USD per share at each date; in brackets the return since today's 13.72, dividends included",
+      "caption": "What the shares could be worth (USD per share at each date; in brackets the return since today's 13.72, dividends included)",
+      "head": [
+       "Case",
+       "Probability",
+       "October 2027",
+       "October 2028",
+       "October 2029"
+      ],
+      "rows": [
+       [
+        "Bear",
+        "30 %",
+        "3.33 (-76 %)",
+        "3.64 (-74 %)",
+        "3.92 (-71 %)"
+       ],
+       [
+        "Base",
+        "55 %",
+        "9.60 (-30 %)",
+        "11.12 (-19 %)",
+        "12.61 (-8 %)"
+       ],
+       [
+        "Bull",
+        "15 %",
+        "15.30 (+12 %)",
+        "21.53 (+57 %)",
+        "28.04 (+104 %)"
+       ],
+       [
+        "Weighted",
+        "100 %",
+        "8.57 (-38 %)",
+        "10.44 (-24 %)",
+        "12.32 (-10 %)"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What has to go right for UiPath's stock forecast?",
+     "paragraphs": [
+      {
+       "n": 245,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "This is slower than the bull case, which produces $207.9 million initially and $450.5 million by the final date. It requires paid agents, stronger renewals and better delivery economics. The bear case falls to $37.2 million before recovering to $79.2 million, because weak expansion, services costs, stock pay and working-capital swings overwhelm modest revenue growth."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "How much cash does UiPath really make?",
+     "paragraphs": [
+      {
+       "n": 145,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Operating cash flow was 371,208 in FY26. Capital spending was 19,048, leaving free cash flow of 352,160. The business needs little physical investment to add customers, but it still requires engineers, support staff, and hosting."
+      },
+      {
+       "n": 146,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.3 — Cash",
+       "text": "Stock pay was 290,676, leaving 61,484 under the memo’s “real free cash flow” measure. This is not a GAAP figure: issuing shares does not spend the same cash amount. It does, however, transfer part of the business to employees, so cash generation looks much thinner after including that cost."
+      }
+     ],
+     "table": {
+      "title": "Follow the money: real free cash flow",
+      "unit": "US$ thousands",
+      "caption": "Follow the money: real free cash flow (US$ thousands)",
+      "head": [
+       "Row",
+       "Jan 2026",
+       "Jan 2025",
+       "Jan 2024",
+       "Jan 2023",
+       "Jan 2022"
+      ],
+      "rows": [
+       [
+        "Cash from operations",
+        "371,208",
+        "320,565",
+        "299,082",
+        "-9,981",
+        "-54,963"
+       ],
+       [
+        "− Capital spending",
+        "19,048",
+        "14,923",
+        "7,342",
+        "23,815",
+        "13,060"
+       ],
+       [
+        "**= Free cash flow**",
+        "352,160",
+        "305,642",
+        "291,740",
+        "-33,796",
+        "-68,023"
+       ],
+       [
+        "− Stock pay",
+        "290,676",
+        "358,151",
+        "371,955",
+        "369,840",
+        "515,583"
+       ],
+       [
+        "**= Real free cash flow**",
+        "61,484",
+        "-52,509",
+        "-80,215",
+        "-403,636",
+        "-583,606"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What does an investor pay for UiPath today?",
+     "paragraphs": [
+      {
+       "n": 176,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "The P/E ratio tells investors how many dollars they pay for each dollar of profit. UiPath’s trailing P/E is 20.5x, while its forward P/E is 17.4x. But net income includes interest earned on cash, and a $204.9 million release of a tax valuation allowance reduced reported tax expense without representing new software sales."
+      }
+     ],
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "US$ thousands",
+      "caption": "What an investor pays today (US$ thousands)",
+      "head": [
+       "Row",
+       "Today (Oct 13, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "13.725"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "20.5x"
+       ],
+       [
+        "P/E, next 12 months (calculated)",
+        "17.4x"
+       ],
+       [
+        "EV / revenue, last 12 months (calculated)",
+        "3.4x"
+       ],
+       [
+        "Free cash flow yield (calculated)",
+        "4.9%"
+       ],
+       [
+        "Real free cash flow yield (calculated)",
+        "0.9%"
+       ]
+      ],
+      "note": ""
+     }
+    }
+   ],
+   "facts": [
+    {
+     "label": "Share price today, USD",
+     "value": "13.725"
+    },
+    {
+     "label": "Weighted scenario, October 2029",
+     "value": "12.32 (-10 %)"
+    },
+    {
+     "label": "Real free cash flow yield",
+     "value": "0.9%"
+    },
+    {
+     "label": "P/E, next 12 months",
+     "value": "17.4x"
+    }
+   ],
+   "chart": {
+    "kind": "scenarios",
+    "today": 13.725,
+    "columns": [
+     "October 2027",
+     "October 2028",
+     "October 2029"
+    ],
+    "rows": {
+     "Bear": {
+      "probability": "30 %",
+      "values": [
+       "3.33 (-76 %)",
+       "3.64 (-74 %)",
+       "3.92 (-71 %)"
+      ]
+     },
+     "Base": {
+      "probability": "55 %",
+      "values": [
+       "9.60 (-30 %)",
+       "11.12 (-19 %)",
+       "12.61 (-8 %)"
+      ]
+     },
+     "Bull": {
+      "probability": "15 %",
+      "values": [
+       "15.30 (+12 %)",
+       "21.53 (+57 %)",
+       "28.04 (+104 %)"
+      ]
+     },
+     "Weighted": {
+      "probability": "100 %",
+      "values": [
+       "8.57 (-38 %)",
+       "10.44 (-24 %)",
+       "12.32 (-10 %)"
+      ]
+     }
+    }
+   },
+   "path": "/stocks/path/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PATH&src=seo-stock"
+  },
+  "earnings": {
+   "type": "earnings",
+   "title": "UiPath earnings: guidance and next results",
+   "meta_description": "UiPath's next results are expected December 2, 2026; guidance points to growth, while revenue, profit and cash conversion are the key tests.",
+   "opening": "UiPath's next results are expected on December 2, 2026. Watch whether revenue and ARR turn into operating profit and cash.",
+   "closing": "The full memo also explains UiPath's business, its rivals, its management and its risks.",
+   "blocks": [
+    {
+     "heading": "What has UiPath guided for the year?",
+     "paragraphs": [
+      {
+       "n": 9,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Revenue guidance is $1.789–$1.794 billion for the year to January 2027. ARR guidance is $2.065–$2.070 billion. Non-GAAP operating income guidance is $445 million. Adjusted free cash flow guidance is $425 million, and the FY2027 dilution ceiling is 0.0%."
+      }
+     ],
+     "table": {
+      "title": "Guidance in force",
+      "unit": "US$ thousands",
+      "caption": "Guidance in force (US$ thousands)",
+      "head": [
+       "Row",
+       "The period guided",
+       "Low",
+       "High",
+       "The date it was given"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "Year to Jan 2027",
+        "1,789,000",
+        "1,794,000",
+        "2026-09-03"
+       ],
+       [
+        "ARR",
+        "Year to Jan 2027",
+        "2,065,000",
+        "2,070,000",
+        "2026-09-03"
+       ],
+       [
+        "Non-GAAP operating income",
+        "Year to Jan 2027",
+        "445,000",
+        "445,000",
+        "2026-09-03"
+       ],
+       [
+        "non-GAAP adjusted free cash flow",
+        "Year to Jan 2027",
+        "425,000",
+        "425,000",
+        "2026-09-03"
+       ],
+       [
+        "Dilution for FY 2027",
+        "Year to Jan 2027",
+        "",
+        "0.0%",
+        "2026-09-03"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "Did UiPath keep its past promises?",
+     "paragraphs": [
+      {
+       "n": 126,
+       "section": "essay-4",
+       "chapter": "4. Management and ownership",
+       "subsection": "4.5 — Pay, and promises kept",
+       "text": "Management’s promises also require the right comparison. Its initial public guidance for fiscal 2026 revenue was US$1.525 billion–US$1.530 billion, while reported revenue reached US$1.6106 billion. Revenue therefore exceeded that forecast, even though the internal growth target used for bonuses was not fully met. A favorable result against one promise does not prove success against another."
+      }
+     ],
+     "table": null
+    },
+    {
+     "heading": "What have UiPath's last eight quarters shown?",
+     "paragraphs": [
+      {
+       "n": 157,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Revenue was 410,256, up from 361,728 in July 2025. GAAP operating income was 31,604, versus -20,185 a year earlier. This was the fourth consecutive quarter of GAAP operating profitability, which is stronger evidence than a single favorable contract-timing result."
+      },
+      {
+       "n": 158,
+       "section": "essay-5",
+       "chapter": "5. The numbers",
+       "subsection": "5.5 — The latest quarter",
+       "text": "Delivery economics were less encouraging. Gross margin fell to 80.4% from 82.2%. Stock compensation was about 45 million, while adjusted operating income was approximately 89 million. The gap shows why continuing GAAP improvement is the stricter test."
+      }
+     ],
+     "table": {
+      "title": "The last eight quarters",
+      "unit": "US$ thousands",
+      "caption": "The last eight quarters (US$ thousands)",
+      "head": [
+       "Row",
+       "Jul 2026",
+       "Apr 2026",
+       "Jan 2026",
+       "Oct 2025",
+       "Jul 2025",
+       "Apr 2025",
+       "Jan 2025",
+       "Oct 2024"
+      ],
+      "rows": [
+       [
+        "Revenue",
+        "410,256",
+        "418,382",
+        "481,107",
+        "411,113",
+        "361,728",
+        "356,624",
+        "423,646",
+        "354,653"
+       ],
+       [
+        "Gross margin",
+        "80.4%",
+        "81.6%",
+        "84.6%",
+        "83.3%",
+        "82.2%",
+        "82.1%",
+        "84.8%",
+        "82.0%"
+       ],
+       [
+        "Operating income",
+        "31,604",
+        "27,987",
+        "80,286",
+        "13,071",
+        "-20,185",
+        "-16,412",
+        "33,609",
+        "-43,364"
+       ],
+       [
+        "Net income",
+        "36,089",
+        "22,525",
+        "104,462",
+        "198,839",
+        "1,584",
+        "-22,555",
+        "51,794",
+        "-10,655"
+       ],
+       [
+        "EPS, diluted",
+        "0.07",
+        "0.04",
+        "0.19",
+        "0.37",
+        "0.00",
+        "-0.04",
+        "0.09",
+        "-0.02"
+       ],
+       [
+        "**= Free cash flow**",
+        "29,310",
+        "129,244",
+        "179,296",
+        "25,107",
+        "41,587",
+        "106,170",
+        "138,690",
+        "23,195"
+       ]
+      ],
+      "note": ""
+     }
+    },
+    {
+     "heading": "What should I watch in UiPath's next results?",
+     "paragraphs": [
+      {
+       "n": 233,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "UiPath’s investor-relations calendar lists no upcoming event. The market’s provisional estimate is **December 2, 2026** for the third-quarter report, but UiPath has not confirmed it. Investors should compare revenue and ARR with guidance, then examine operating profit and cash collection. ARR matters only if customers renew and expand, and if those contracts eventually produce earnings and cash."
+      }
+     ],
+     "table": null
+    }
+   ],
+   "facts": [
+    {
+     "label": "Next results",
+     "value": "December 2, 2026"
+    },
+    {
+     "label": "Revenue, quarter to Jul 2026 (US$ thousands)",
+     "value": "410,256"
+    },
+    {
+     "label": "EPS, diluted, quarter to Jul 2026",
+     "value": "0.07"
+    }
+   ],
+   "chart": {
+    "title": "The last eight quarters",
+    "unit": "US$ thousands",
+    "columns": [
+     "Oct 2024",
+     "Jan 2025",
+     "Apr 2025",
+     "Jul 2025",
+     "Oct 2025",
+     "Jan 2026",
+     "Apr 2026",
+     "Jul 2026"
+    ],
+    "rows": {
+     "Revenue": [
+      "354,653",
+      "423,646",
+      "356,624",
+      "361,728",
+      "411,113",
+      "481,107",
+      "418,382",
+      "410,256"
+     ],
+     "EPS, diluted": [
+      "-0.02",
+      "0.09",
+      "-0.04",
+      "0.00",
+      "0.37",
+      "0.19",
+      "0.04",
+      "0.07"
+     ]
+    },
+    "kind": "quarters"
+   },
+   "path": "/stocks/path/earnings/",
+   "cta": "https://app.mystockbutler.com/signup?ticker=PATH&src=seo-earnings"
+  }
+ },
+ "short_name": "UiPath",
+ "first_memo_date": "2026-10-13T15:11:35Z"
+}

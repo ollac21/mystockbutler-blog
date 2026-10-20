@@ -731,11 +731,11 @@
  "first_memo_date": "2026-10-17T15:42:15Z",
  "translations": {
   "fr": {
-   "version": "fr-3",
+   "version": "fr-5",
    "source": "7b5e6a5b1bff76f7",
    "teaser": {
     "chapter": "1. L'entreprise",
-    "text": "Brookfield Infrastructure Partners vend l’accès à des réseaux et à des installations essentiels plutôt qu’à un seul produit de consommation. Un dollar entre lorsqu’un client utilise ces actifs, y réserve une capacité ou y reçoit un accès réglementé, et il ressort sous forme de coûts d’exploitation, d’entretien, d’investissements de croissance, de dette, d’impôts et de distributions."
+    "text": "Brookfield Infrastructure Partners vend l’accès à des réseaux et à des installations essentiels plutôt qu’à un seul produit de consommation. Un dollar entre lorsqu’un client utilise ces actifs, en réserve l’accès ou reçoit un accès réglementé à ceux-ci, et il sort sous forme de coûts d’exploitation, d’entretien, d’investissements de croissance, de dette, d’impôts et de distributions."
    },
    "chapters": [
     "Sommaire",
@@ -752,31 +752,31 @@
     "stock": {
      "type": "stock",
      "title": "Action BIP : prévisions et valeur — octobre 2026",
-     "meta_description": "La prévision de BIP pondère les scénarios baissier, de base et haussier, puis évalue la génération de trésorerie et la valorisation par rapport au cours actuel.",
-     "opening": "La prévision pondérée pointe d’abord vers 46,39 $ CA, puis vers des niveaux inférieurs, la première prévision de cours pondérée visant octobre 2027. Elle repose sur la transformation des projets en actifs générant de la trésorerie.",
-     "closing": "Le mémoire complet sur BIP couvre également ses activités, ses rivaux, sa direction et ses risques.",
+     "meta_description": "Les prévisions de BIP pondèrent les scénarios pessimiste, de référence et optimiste, puis évaluent la génération de trésorerie et la valorisation par rapport au cours actuel.",
+     "opening": "Les prévisions pondérées indiquent d’abord 46,39 $ CA, puis une baisse, la première prévision de cours pondérée visant octobre 2027. Tout dépend de la transformation des projets en actifs générant des liquidités.",
+     "closing": "Le mémoire complet sur BIP traite aussi de ses activités, de ses rivaux, de sa direction et de ses risques.",
      "blocks": [
       {
-       "heading": "Où pourraient se situer les actions de BIP au cours de chaque année de prévision?",
+       "heading": "Où les actions de BIP pourraient-elles se situer au cours de chaque année prévisionnelle?",
        "paragraphs": [
         {
          "n": 12,
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The verdict",
-         "text": "La prévision pondérée pointe d’abord vers 46,39 $ CA, puis vers des niveaux inférieurs, en fonction de la transformation des projets en actifs générant de la trésorerie, de la croissance des FFO par part et du maintien d’un financement gérable. Ce premier cours pondéré est prévu pour octobre 2027 et implique un rendement de -7 %, dividendes compris. Le cours pondéré final est de 38,76 $ CA. Il implique un rendement de -11 %, dividendes compris, en octobre 2029."
+         "text": "Les prévisions pondérées indiquent d’abord 46,39 $ CA, puis une baisse, car elles reposent sur la transformation des projets en actifs générant des liquidités, la croissance des FFO par part et un financement qui demeure gérable. Ce premier cours pondéré est prévu pour octobre 2027 et implique un rendement de -7 %, dividendes compris. Le cours pondéré final est de 38,76 $ CA. Il implique un rendement de -11 %, dividendes compris, en octobre 2029."
         },
         {
          "n": 14,
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The verdict",
-         "text": "Le scénario baissier a une probabilité de 30 %. Le scénario de base a une probabilité de 50 %. Le scénario haussier a une probabilité de 20 %. Le dossier de placement se renforce lorsque la capacité sous contrat et alimentée entre en service et que le produit réinvesti des cessions génère des rendements attrayants."
+         "text": "Le scénario pessimiste a une probabilité de 30 %. Le scénario de référence en a une de 50 %. Le scénario optimiste en a une de 20 %. Le dossier de placement se renforce lorsque la capacité sous contrat et alimentée entre en service et que le produit des ventes réinvesti génère des rendements attrayants."
         }
        ],
        "table": {
-        "title": "Ce que pourraient valoir les actions",
-        "unit": "$ CA par action de BIP.UN.TO à chaque date; entre parenthèses, le rendement depuis le cours actuel de 52,99 $, dividendes compris",
+        "title": "Ce que les actions pourraient valoir",
+        "unit": "$ CA par action BIP.UN.TO à chaque date; entre parenthèses, le rendement depuis le cours actuel de 52,99 $, dividendes compris",
         "caption": "What the shares could be worth (CAD per BIP.UN.TO share at each date; in brackets the return since today's 52.99, dividends included)",
         "head": [
          "Scénario",
@@ -787,21 +787,21 @@
         ],
         "rows": [
          [
-          "Baissier",
+          "Pessimiste",
           "30 %",
           "36.95 (-25 %)",
           "27.57 (-38 %)",
           "19.52 (-48 %)"
          ],
          [
-          "De base",
+          "Référence",
           "50 %",
           "48.05 (-4 %)",
           "43.68 (-7 %)",
           "39.50 (-9 %)"
          ],
          [
-          "Haussier",
+          "Optimiste",
           "20 %",
           "56.40 (+12 %)",
           "61.00 (+26 %)",
@@ -819,31 +819,31 @@
        }
       },
       {
-       "heading": "Que doit-il arriver pour que BIP réussisse, et qu’est-ce qui pourrait mal tourner?",
+       "heading": "Que doit-il se passer pour que tout aille bien — et qu’est-ce qui pourrait mal tourner pour BIP?",
        "paragraphs": [
         {
          "n": 232,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.3 — The drivers",
-         "text": "Le scénario baissier ramène la valeur à 7 400 millions $ US à la première date, puis à 5 000 millions $ US au bout du compte. Il suppose une érosion annuelle d’environ 1,2 milliard $ US, les distributions, les rachats d’actions et les faibles résultats l’emportant sur les autres effets touchant les capitaux propres. Le scénario haussier fait monter la valeur à 8 500 millions $ US au départ, puis à 8 900 millions $ US. Il exige de meilleurs résultats, la mise en service de projets, le recyclage des actifs et des effets favorables liés aux devises ou à la participation."
+         "text": "Le scénario pessimiste tombe à 7 400 millions $ US à la première date et finit à 5 000 millions $ US. Il suppose une érosion annuelle d’environ 1,2 milliard $ US, les distributions, les rachats d’actions et la faiblesse des bénéfices l’emportant sur les autres effets touchant les capitaux propres. Le scénario optimiste monte initialement à 8 500 millions $ US et finit à 8 900 millions $ US. Il exige une croissance plus forte des bénéfices, la mise en service de projets, le recyclage des actifs et des effets favorables liés aux devises ou à la participation."
         }
        ],
        "table": null
       },
       {
-       "heading": "Combien de trésorerie BIP génère-t-elle réellement?",
+       "heading": "Combien de liquidités BIP génère-t-elle réellement?",
        "paragraphs": [
         {
          "n": 29,
          "section": "essay-1",
          "chapter": "1. The business",
          "subsection": "1.2 — How the money flows through the group",
-         "text": "BIP soustrait ensuite les dépenses d’investissement d’entretien pour calculer les AFFO, soit les fonds disponibles pour distribution. Les AFFO constituent une estimation plus précise de la trésorerie récurrente après la préservation des actifs existants, mais il ne s’agit toujours pas de trésorerie qui peut être entièrement distribuée immédiatement. En 2025, les AFFO se sont établis à 1,964 milliard $ US et les distributions, à 1,743 milliard $ US. La croissance, la gestion de la dette et les ventes d’actifs ont également influé sur la destination des dollars."
+         "text": "BIP soustrait ensuite les dépenses d’investissement d’entretien pour calculer les AFFO, ou fonds disponibles pour distribution. Les AFFO constituent une estimation plus proche des liquidités récurrentes après la préservation des actifs existants, mais il ne s’agit toujours pas de liquidités qui peuvent toutes être versées immédiatement. En 2025, les AFFO s’élevaient à 1,964 milliard $ US et les distributions, à 1,743 milliard $ US. La croissance, la gestion de la dette et les ventes d’actifs ont aussi influencé l’affectation des dollars."
         }
        ],
        "table": {
-        "title": "Les mesures de l’entreprise",
+        "title": "Les propres mesures de la société",
         "unit": "Millions $ US",
         "caption": "The company's own measures (US$ millions)",
         "head": [
@@ -856,7 +856,7 @@
         ],
         "rows": [
          [
-          "Services publics, fonds provenant de l’exploitation (FFO)",
+          "Services aux collectivités, fonds provenant de l’exploitation (FFO)",
           "786",
           "760",
           "879",
@@ -896,7 +896,7 @@
           "1,733"
          ],
          [
-          "Fonds provenant de l’exploitation ajustés (AFFO)",
+          "Fonds ajustés provenant de l’exploitation (AFFO)",
           "1,964",
           "1,862",
           "1,838",
@@ -904,18 +904,18 @@
           "1,412"
          ]
         ],
-        "note": "Les fonds provenant de l’exploitation ne correspondent pas au bénéfice, puisqu’ils excluent l’amortissement et certains autres coûts; ils peuvent donc sembler supérieurs au bénéfice ordinaire."
+        "note": "Les fonds provenant de l’exploitation ne correspondent pas au bénéfice, car ils excluent l’amortissement et certains autres coûts; ils peuvent donc paraître supérieurs au bénéfice ordinaire."
        }
       },
       {
-       "heading": "Combien un investisseur paie-t-il aujourd’hui pour BIP?",
+       "heading": "Que paie aujourd’hui un investisseur pour BIP?",
        "paragraphs": [
         {
          "n": 161,
          "section": "essay-6",
          "chapter": "6. Valuation and the stock",
          "subsection": "6.1 — What an investor pays today",
-         "text": "Au cours du 17 octobre, les investisseurs paient pour le long flux de trésorerie provenant des infrastructures de BIP plutôt que pour une seule année de bénéfice comptable."
+         "text": "Au cours du 17 octobre, les investisseurs paient pour le long flux de liquidités provenant des infrastructures de BIP plutôt que pour une seule année de bénéfice comptable."
         }
        ],
        "table": {
@@ -948,7 +948,7 @@
           "4.9%"
          ]
         ],
-        "note": "La valeur marchande ne tient pas véritablement compte de chaque type d’action, puisqu’elle exclut les parts privilégiées et les actions avec droit de vote détenues à l’interne par l’entreprise."
+        "note": "La valeur de marché ne tient pas véritablement compte de tous les types d’actions, car elle exclut les parts privilégiées et les actions avec droit de vote détenues à l’interne par la société."
        }
       }
      ],
@@ -1019,19 +1019,19 @@
     "dividend": {
      "type": "dividend",
      "title": "Action BIP : dividende — octobre 2026",
-     "meta_description": "La distribution de BIP passe de 1,90 $ US à 2,14 $ US dans les prévisions; le taux de distribution des FFO de 2025 était de 66 %, pour un rendement de 4,9 % à 52,99 $ CA.",
-     "opening": "Les distributions de BIP passent de 1,90 $ US par part à 2,14 $ US dans les prévisions, ce qui respecte la cible annuelle de la direction, établie entre 5 % et 9 %. Le taux de distribution des FFO de BIP en 2025 était de 66 %, laissant une marge entre les bénéfices d’exploitation et les distributions.",
-     "closing": "Le mémoire complet sur BIP examine également ses activités, ses rivaux, sa direction et ses risques.",
+     "meta_description": "La distribution de BIP passe de 1,90 $ US à 2,14 $ US dans les prévisions; le ratio de distribution des FFO s’établissait à 66 % en 2025, pour un rendement de 4,9 % à 52,99 $ CA.",
+     "opening": "Les distributions de BIP passent de 1,90 $ US par part à 2,14 $ US dans les prévisions, conformément à la cible annuelle de la direction, établie entre 5 % et 9 %. Le ratio de distribution des FFO de BIP s’établissait à 66 % en 2025, ce qui laissait une marge entre les bénéfices d’exploitation et les distributions.",
+     "closing": "Le mémo complet sur BIP examine également les activités, les rivaux, la direction et les risques de BIP.",
      "blocks": [
       {
-       "heading": "Combien BIP verse-t-elle en distributions?",
+       "heading": "Combien BIP verse-t-elle en distributions ?",
        "paragraphs": [
         {
          "n": 234,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.3 — The drivers",
-         "text": "Les distributions de base passent de 1,90 $ US par part à 2,14 $ US. Cela reflète la hausse de 6 % approuvée pour 2026 et s’inscrit dans la cible annuelle de 5 % à 9 %. Le scénario pessimiste n’atteint que 1,92 $ US après une pause initiale et des hausses de 3 % par la suite, car l’endettement, les dépenses d’entretien et le risque lié aux projets pourraient forcer l’entreprise à préserver ses liquidités. Le scénario optimiste atteint 2,31 $ US en appliquant la cible maximale de 9 %, ce qui exige une forte croissance des FFO et une solide conversion des flux de trésorerie."
+         "text": "Les distributions de base passent de 1,90 $ US par part à 2,14 $ US. Cela reflète la hausse de 6 % approuvée pour 2026 et s’inscrit dans la cible annuelle de 5 % à 9 %. Le scénario baissier n’atteint que 1,92 $ US après une pause initiale et des hausses ultérieures de 3 %, parce que l’endettement, les dépenses d’entretien et le risque lié aux projets pourraient imposer de préserver les liquidités. Le scénario haussier atteint 2,31 $ US en appliquant la cible maximale de 9 %, ce qui exige une forte croissance des FFO et une solide conversion en liquidités."
         }
        ],
        "table": {
@@ -1064,7 +1064,7 @@
           "0.00"
          ],
          [
-          "**= A versé plus, par action**",
+          "**= Somme versée en trop, par action**",
           "0.96",
           "0.80",
           "0.83",
@@ -1076,19 +1076,19 @@
        }
       },
       {
-       "heading": "Le dividende de BIP est-il couvert par ses liquidités?",
+       "heading": "Le dividende de BIP est-il couvert par ses liquidités ?",
        "paragraphs": [
         {
          "n": 119,
          "section": "essay-5",
          "chapter": "5. The numbers",
          "subsection": "5.1 — Operating earnings against net income",
-         "text": "Les FFO sont plus proches de la performance d’exploitation, mais ils ne représentent pas les liquidités en banque. Les flux de trésorerie liés aux activités, ou AFFO, vont plus loin en soustrayant les dépenses d’investissement d’entretien : l’argent nécessaire pour maintenir les actifs existants en bon état de sécurité et de productivité. Le taux de distribution des FFO de BIP en 2025 était de 66 %, laissant une marge entre les bénéfices d’exploitation et les distributions."
+         "text": "Les FFO sont plus proches de la performance d’exploitation, mais ils ne représentent pas des liquidités en banque. Les fonds provenant des activités, ou AFFO, vont plus loin en soustrayant les dépenses en immobilisations d’entretien : l’argent nécessaire pour maintenir les actifs existants sûrs et productifs. Le ratio de distribution des FFO de BIP s’établissait à 66 % en 2025, ce qui laissait une marge entre les bénéfices d’exploitation et les distributions."
         }
        ],
        "table": {
-        "title": "Suivons l’argent : où les capitaux ont-ils été affectés?",
-        "unit": "millions $ US",
+        "title": "Suivez l’argent : où les capitaux ont été investis",
+        "unit": "Millions $ US",
         "caption": "Follow the money: where the capital went (US$ millions)",
         "head": [
          "Row",
@@ -1124,7 +1124,7 @@
           "0"
          ],
          [
-          "**= A versé plus que ses bénéfices**",
+          "**= Somme versée supérieure aux bénéfices**",
           "759",
           "633",
           "643",
@@ -1132,7 +1132,7 @@
           "451"
          ],
          [
-          "Versé, en % des bénéfices d’exploitation",
+          "Somme versée, % des bénéfices d’exploitation",
           "177.4%",
           "167.1%",
           "177.0%",
@@ -1140,43 +1140,43 @@
           "161.0%"
          ]
         ],
-        "note": "La société a versé davantage à ses actionnaires que ce qu’elle a tiré de ses activités, parce que les dividendes et les rachats d’actions étaient supérieurs à son bénéfice d’exploitation."
+        "note": "La société a versé aux actionnaires davantage que ce qu’elle a tiré de ses activités, parce que les dividendes et les rachats d’actions étaient supérieurs à son bénéfice d’exploitation."
        }
       },
       {
-       "heading": "Qu’est-ce qui pourrait modifier le dividende de BIP?",
+       "heading": "Qu’est-ce qui pourrait changer le dividende de BIP ?",
        "paragraphs": [
         {
          "n": 13,
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The verdict",
-         "text": "La direction vise une croissance organique de 6 % à 9 % et des hausses annuelles des distributions de 5 % à 9 %. Elle vise un taux de distribution des FFO de 60 % à 70 %. Les prévisions tablent sur une croissance de 10 % des FFO par part en 2026. Elles tablent sur une croissance de 12 % au cours des 2 à 3 prochaines années. La cible annuelle d’investissements de croissance est de 2 000 à 3 000 millions $ US."
+         "text": "La direction vise une croissance organique de 6 % à 9 % et des hausses annuelles des distributions de 5 % à 9 %. Elle vise un ratio de distribution des FFO de 60 % à 70 %. Les prévisions tablent sur une croissance de 10 % des FFO par part en 2026. Elles prévoient une croissance de 12 % au cours des 2 à 3 prochaines années. La cible annuelle d’investissements de croissance s’établit entre 2 000 et 3 000 millions $ US."
         },
         {
          "n": 238,
          "section": "essay-8",
          "chapter": "8. Where the price could go",
          "subsection": "8.5 — What would change the view",
-         "text": "Le scénario s’orienterait vers le scénario pessimiste en 2027–2029 si des projets étaient retardés ou sous-utilisés, si les engagements liés à l’IA s’affaiblissaient, si les marges diminuaient ou si la dette d’une filiale était refinancée à un coût plus élevé. Ces événements réduiraient les FFO, les rachats d’actions et la capacité de distribution. [scenario M1][scenario M2]"
+         "text": "Le point de vue se rapprocherait du scénario baissier en 2027–2029 si des projets étaient retardés ou sous-utilisés, si les engagements liés à l’IA s’affaiblissaient, si les marges reculaient ou si la dette des filiales était refinancée à un coût plus élevé. Ces événements réduiraient les FFO, les rachats d’actions et la capacité de distribution. [scenario M1][scenario M2]"
         }
        ],
        "table": null
       },
       {
-       "heading": "Quel est aujourd’hui le rendement de la distribution de BIP?",
+       "heading": "Quel est aujourd’hui le rendement du dividende de BIP ?",
        "paragraphs": [
         {
          "n": 10,
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The numbers",
-         "text": "La croissance des bénéfices d’exploitation a ralenti en 2025, tandis que le bénéfice net peut fluctuer en fonction des gains liés aux ventes d’actifs et d’autres éléments comptables. À 52,99 $ CA, le ratio cours/bénéfice prévisionnel sur les 12 prochains mois est de 66,1 fois. Le rendement de la distribution de 4,9 % s’accompagne d’une valeur de marché de 41 957 millions $ CA; les distributions ont dépassé le bénéfice d’exploitation par action, et la valeur comptable par action a diminué au cours de la période présentée. La croissance des FFO par part est le principal test."
+         "text": "La croissance des bénéfices d’exploitation a ralenti en 2025, tandis que le bénéfice net peut fluctuer en fonction des gains sur la vente d’actifs et d’autres éléments comptables. À 52,99 $ CA, le ratio cours-bénéfice prévisionnel sur les 12 prochains mois est de 66,1x. Le rendement de distribution de 4,9 % s’accompagne d’une valeur marchande de 41 957 millions $ CA; les distributions ont dépassé les bénéfices d’exploitation par action, et la valeur comptable par action a diminué pendant la période présentée. La croissance des FFO par part est le principal test."
         }
        ],
        "table": {
-        "title": "Ce que paie un investisseur aujourd’hui",
-        "unit": "millions $ CA",
+        "title": "Ce qu’un investisseur paie aujourd’hui",
+        "unit": "Millions $ CA",
         "caption": "What an investor pays today (C$ millions)",
         "head": [
          "Row",
@@ -1188,33 +1188,33 @@
           "52.99"
          ],
          [
-          "Valeur de marché (toutes les catégories) (calculée)",
+          "Valeur marchande (toutes les catégories) (calculée)",
           "41,957"
          ],
          [
-          "Ratio cours/valeur comptable (calculé)",
+          "Ratio cours-valeur comptable (calculé)",
           "3.9x"
          ],
          [
-          "Ratio cours/bénéfice, 12 prochains mois (calculé)",
+          "Ratio cours-bénéfice, 12 prochains mois (calculé)",
           "66.1x"
          ],
          [
-          "Rendement de la distribution (calculé)",
+          "Rendement du dividende (calculé)",
           "4.9%"
          ]
         ],
-        "note": "La valeur de marché ne tient pas véritablement compte de chaque catégorie de parts, puisqu’elle exclut les parts privilégiées et les actions avec droit de vote détenues à l’interne par la société."
+        "note": "La valeur marchande ne tient pas véritablement compte de chaque catégorie d’actions, car elle exclut les parts privilégiées et les actions avec droit de vote internes de la société."
        }
       }
      ],
      "facts": [
       {
-       "label": "Rendement de la distribution",
+       "label": "Rendement du dividende",
        "value": "4.9%"
       },
       {
-       "label": "Rendement des rachats",
+       "label": "Rendement des rachats d’actions",
        "value": "0.2%"
       }
      ],
@@ -1225,23 +1225,23 @@
     "earnings": {
      "type": "earnings",
      "title": "Action BIP : résultats du 6 novembre 2026",
-     "meta_description": "BIP attend ses prochains résultats le 6 novembre 2026; les indications prospectives, les résultats récents et l’exécution des projets sont les principaux points à surveiller.",
-     "opening": "Les prochains résultats de BIP sont attendus le 6 novembre 2026. Il faudra surtout vérifier si les projets, les FFO et le produit des ventes d’actifs progressent comme prévu.",
-     "closing": "Le mémo complet répond également aux questions sur les activités de BIP, ses rivaux, sa direction et ses risques.",
+     "meta_description": "BIP prévoit publier ses prochains résultats le 6 novembre 2026; les prévisions, les résultats récents et l’exécution des projets sont les principaux éléments à surveiller.",
+     "opening": "Les prochains résultats de BIP sont attendus le 6 novembre 2026. Il faudra surtout vérifier si les projets, les FFO et le produit des ventes d’actifs arrivent comme prévu.",
+     "closing": "Le mémoire complet répond également aux questions sur les activités de BIP, ses rivales, sa direction et ses risques.",
      "blocks": [
       {
-       "heading": "Quelles indications BIP a-t-elle fournies pour 2026?",
+       "heading": "Quelles prévisions BIP a-t-elle données pour 2026?",
        "paragraphs": [
         {
          "n": 13,
          "section": "executive-summary",
          "chapter": "Executive summary",
          "subsection": "The verdict",
-         "text": "La direction vise une croissance organique de 6 % à 9 % et une hausse annuelle des distributions de 5 % à 9 %. Elle vise un ratio de distribution des FFO de 60 % à 70 %. Les indications prévoient une croissance de 10 % des FFO par part en 2026. Elles prévoient une croissance de 12 % au cours des 2 à 3 prochaines années. La cible annuelle d’investissements de croissance est de 2 000 à 3 000 millions $ US."
+         "text": "La direction vise une croissance organique de 6 % à 9 % et des hausses annuelles des distributions de 5 % à 9 %. Elle vise un ratio de distribution des FFO de 60 % à 70 %. Les prévisions tablent sur une croissance de 10 % des FFO par part en 2026. Elles prévoient une croissance de 12 % au cours des 2 à 3 prochaines années. La cible annuelle d’investissements de croissance est de 2 000 à 3 000 millions $ US."
         }
        ],
        "table": {
-        "title": "Cibles et indications en vigueur",
+        "title": "Cibles et prévisions en vigueur",
         "unit": "Millions $ US",
         "caption": "Targets and guidance in force (US$ millions)",
         "head": [
@@ -1249,7 +1249,7 @@
          "Période visée",
          "Bas",
          "Haut",
-         "Date de publication"
+         "Date annoncée"
         ],
         "rows": [
          [
@@ -1274,7 +1274,7 @@
           "Sep 29, 2026"
          ],
          [
-          "Croissance des FFO par part, 2 à 3 prochaines années",
+          "Croissance des FFO par part, au cours des 2 à 3 prochaines années",
           "Next 2-3 years",
           "12.0%",
           "",
@@ -1292,27 +1292,27 @@
        }
       },
       {
-       "heading": "BIP a-t-elle tenu ses promesses passées?",
+       "heading": "BIP a-t-elle respecté ses promesses passées?",
        "paragraphs": [
         {
          "n": 109,
          "section": "essay-4",
          "chapter": "4. Management and ownership",
          "subsection": "4.5 — Pay, and promises kept",
-         "text": "BIP a tenu une promesse clairement observable. Sa lettre annuelle de 2025 indiquait que le conseil avait approuvé une hausse de 6 % pour 2026 et la décrivait comme la dix-septième année consécutive de hausses d’au moins 5 %. Le bilan est encourageant, mais les investisseurs doivent tout de même se demander si les distributions proviennent de flux de trésorerie d’exploitation durables plutôt que de ventes d’actifs, d’emprunts ou de nouvelles émissions de titres."
+         "text": "BIP a tenu une promesse manifeste. Sa lettre annuelle de 2025 indiquait que le conseil avait approuvé une hausse de 6 % pour 2026 et la décrivait comme la dix-septième année consécutive de hausses d’au moins 5 %. Le bilan est encourageant, mais les investisseurs doivent tout de même se demander si les distributions proviennent de flux de trésorerie d’exploitation durables plutôt que de ventes d’actifs, d’emprunts ou de nouvelles valeurs mobilières."
         }
        ],
        "table": null
       },
       {
-       "heading": "Que montrent les huit dernières périodes publiées par BIP?",
+       "heading": "Que montrent les huit dernières périodes publiées de BIP?",
        "paragraphs": [
         {
          "n": 143,
          "section": "essay-5",
          "chapter": "5. The numbers",
          "subsection": "5.5 — The latest quarter",
-         "text": "Le T2 2026 a été meilleur sur le plan opérationnel que ne le laissait croire son bénéfice net IFRS inférieur, mais la composition de ses FFO demeure importante."
+         "text": "Le T2 2026 a été meilleur sur le plan opérationnel que ne le laissait entendre son bénéfice net IFRS inférieur, mais la composition de ses FFO demeure importante."
         }
        ],
        "table": {
@@ -1321,14 +1321,14 @@
         "caption": "The last eight reported periods (US$ millions)",
         "head": [
          "Row",
-         "Juin 2026",
-         "Mars 2026",
-         "Déc. 2025",
-         "Sept. 2025",
-         "Juin 2025",
-         "Mars 2025",
-         "Déc. 2024",
-         "Sept. 2024"
+         "juin 2026",
+         "mars 2026",
+         "déc. 2025",
+         "sept. 2025",
+         "juin 2025",
+         "mars 2025",
+         "déc. 2024",
+         "sept. 2024"
         ],
         "rows": [
          [
@@ -1343,7 +1343,7 @@
           "5,270"
          ],
          [
-          "Bénéfice d’exploitation (mesure de la société)",
+          "Résultat d’exploitation (mesure de la société)",
           "223",
           "235",
           "275",
@@ -1387,18 +1387,18 @@
           "10.06"
          ]
         ],
-        "note": "Le bénéfice d’exploitation de la société est une mesure du bénéfice ajusté, et non de son bénéfice total, parce qu’il exclut les gains et pertes de placement ainsi que certains coûts inhabituels."
+        "note": "Le résultat d’exploitation de la société est une mesure du bénéfice ajusté, et non de son bénéfice total, car il exclut les gains et pertes de placement ainsi que certains coûts inhabituels."
        }
       },
       {
-       "heading": "Que faudra-t-il surveiller dans les prochains résultats de BIP?",
+       "heading": "Que devons-nous surveiller dans les prochains résultats de BIP?",
        "paragraphs": [
         {
          "n": 213,
          "section": "essay-7",
          "chapter": "7. What comes next",
          "subsection": "7.5 — What to watch",
-         "text": "La téléconférence sur les résultats du 6 novembre 2026 montrera si les projets, les FFO et le produit des ventes d’actifs progressent comme prévu. Ces données permettront de vérifier le principal test opérationnel : si le carnet de commandes se transforme en actifs productifs."
+         "text": "La conférence téléphonique sur les résultats du 6 novembre 2026 montrera si les projets, les FFO et le produit des ventes d’actifs arrivent comme prévu. Ces éléments mènent au test opérationnel le plus important : déterminer si le carnet de commandes se transforme en actifs productifs."
         }
        ],
        "table": null
