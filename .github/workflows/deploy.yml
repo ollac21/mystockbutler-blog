@@ -35,6 +35,8 @@ jobs:
           OUT_DIR: _site
           # B112: the stock pages' files through the app's public function; a failed fetch keeps data/stocks/.
           STOCK_PAGES_URL: https://app.mystockbutler.com/functions/getPublicStockPages
+          # B110: the Meta pixel is OFF unless the repository variable META_PIXEL_ID is set (Settings > Secrets and variables > Actions > Variables).
+          META_PIXEL_ID: ${{ vars.META_PIXEL_ID }}
 
       - uses: actions/upload-artifact@v4
         with:

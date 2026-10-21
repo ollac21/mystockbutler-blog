@@ -14,6 +14,8 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stocks.mjs';
+import { carrySourceScript } from './carrySource.mjs';
+import { metaPixelTag } from './metaPixel.mjs';
 
 const FETCH_TIMEOUT_MS = 30000;
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -24,7 +26,7 @@ export function gaTag({ type = 'blog', ticker = '' } = {}) {
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());var P=${params};
 gtag('config','${GA_ID}',Object.assign({linker:{domains:['mystockbutler.com','blog.mystockbutler.com','app.mystockbutler.com']}},P));
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-cta]');if(a)gtag('event','cta_click',Object.assign({position:a.getAttribute('data-cta')},P));});</script>
-`;
+${carrySourceScript()}${metaPixelTag({ ticker })}`;
 }
 
 // base44 answers HTTP 429 when asked too fast (CTO 2026-10-20T10:10Z: 4 of 441 files, Zoetis among them; with 1-8 s

@@ -10,9 +10,12 @@
 
 import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
+import { carrySourceScript } from './carrySource.mjs';
+import { META_PIXEL_ID, metaPixelTag } from './metaPixel.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
+export { META_PIXEL_ID };                                  // B110: '' (the pixel is off) unless the build sets META_PIXEL_ID
 export const CSS_PATH = '/stocks/assets/stocks.css';
 export const INDEX_NAMES = { sp500: 'S&P 500', sptsx60: 'S&P/TSX 60', ftse100: 'FTSE 100', hsi: 'Hang Seng' };
 export const INDEX_PATHS = { sp500: 'sp500', sptsx60: 'tsx60', ftse100: 'ftse100', hsi: 'hsi' };
@@ -276,7 +279,7 @@ function gaHead(meta) {
 gtag('config','${GA_ID}',Object.assign({linker:{domains:['mystockbutler.com','blog.mystockbutler.com','app.mystockbutler.com']}},P));
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-cta]');if(a)gtag('event','cta_click',Object.assign({position:a.getAttribute('data-cta')},P));});
 (function(){var d=0;addEventListener('scroll',function(){if(d)return;var h=document.documentElement;if((scrollY+innerHeight)/h.scrollHeight>=.75){d=1;gtag('event','scroll_75',P);}},{passive:true});})();</script>
-`;
+${carrySourceScript()}${metaPixelTag({ ticker: meta.ticker || '', viewContent: !!meta.ticker })}`;
 }
 
 function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
