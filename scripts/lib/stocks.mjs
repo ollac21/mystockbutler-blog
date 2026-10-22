@@ -10,6 +10,7 @@
 
 import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
+import { measuringScript } from './consent.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -326,11 +327,10 @@ function chartHtml(page, data, ui = UI.en) {
   return '';
 }
 
+// Google Analytics behind the EU cookie banner (consent.mjs): in Europe nothing is sent before 'Accept'.
 function gaHead(meta) {
-  const params = JSON.stringify({ page_type: meta.type, ticker: meta.ticker || '', lang: meta.lang || 'en' });
-  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());var P=${params};
-gtag('config','${GA_ID}',Object.assign({linker:{domains:['mystockbutler.com','blog.mystockbutler.com','app.mystockbutler.com']}},P));
+  const params = { page_type: meta.type, ticker: meta.ticker || '', lang: meta.lang || 'en' };
+  return `${measuringScript({ gaId: GA_ID, params, lang: meta.lang || 'en' })}<script>
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-cta]');if(a)gtag('event','cta_click',Object.assign({position:a.getAttribute('data-cta')},P));});
 (function(){var d=0;addEventListener('scroll',function(){if(d)return;var h=document.documentElement;if((scrollY+innerHeight)/h.scrollHeight>=.75){d=1;gtag('event','scroll_75',P);}},{passive:true});})();</script>
 `;

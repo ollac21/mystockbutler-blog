@@ -121,3 +121,13 @@ test('a German page (S&P 500): its address, hreflang both ways, German words and
   const sp = hubs.find((h) => h.path === '/stocks/sp500/');
   assert.match(sp.html, /href="\/de\/aktien\/" hreflang="de">Diese Seiten auf Deutsch/);
 });
+
+test('the EU cookie banner: no page loads Google directly; the consent script decides', () => {
+  // owner 2026-10-22 (CTO 12:38Z): in Europe Google Analytics loads only after 'Accept'
+  const { pages, hubs } = buildStockSite([load('stock-nvda-de.json'), load('stock-td-to-fr.json')], { today: TODAY });
+  for (const p of [...pages, ...hubs]) {
+    assert.ok(!/<script[^>]+src="https:\/\/www\.googletagmanager\.com/.test(p.html), `${p.path} loads Google before consent`);
+    assert.match(p.html, /window\.msbOnConsent=/);
+    assert.match(p.html, /Europe\\\//);
+  }
+});
