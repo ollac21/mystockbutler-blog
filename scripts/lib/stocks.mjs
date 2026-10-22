@@ -23,6 +23,9 @@ const BANNED = /\b(buy|sell|hold|cheap|expensive|undervalued|overvalued|this pag
 // The same advice words in French (the card's step 12, model-written lines only).
 const BANNED_FR = /(?<!\p{L})(acheter|achetez|vendre|vendez|sous-évalué\p{L}*|surévalué\p{L}*|bon marché|cette page)(?!\p{L})/iu;
 const TITLE_FR = /^(Action |Résultats de )/;
+// German (S&P 500, owner 2026-10-22): the advice words, model-written lines only; the title carries 'Aktie' or 'Quartalszahlen'
+const BANNED_DE = /(?<!\p{L})(kaufen|verkaufen|unterbewertet\p{L}*|überbewertet\p{L}*|billig\p{L}*|teuer\p{L}*|diese Seite)(?!\p{L})/iu;
+const TITLE_DE = /(Aktie|Quartalszahlen)/;
 const NUMBER = /\d[\d,.]*\d|\d/g;
 const MAX_BYTES = 100 * 1024;
 const FREE_LINE = 'Your first report is free · no card';
@@ -35,12 +38,28 @@ const MONTHS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juill
 const MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const MON_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const MON_FR = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+const MONTHS_DE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MON_DE = ['Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.'];
 // Our own column dates ('October 2029', 'Jun 2026') in French: the closed month lists above (shape).
 function dateFr(text) {
   return String(text || '')
     .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/g, (m) => MONTHS_FR[MONTHS_EN.indexOf(m)])
     .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (m) => MON_FR[MON_EN.indexOf(m)]);
 }
+// Our own column dates in German ('Oktober 2029', 'Juni 2026'): the closed month lists above (shape).
+function dateDe(text) {
+  return String(text || '')
+    .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/g, (m) => MONTHS_DE[MONTHS_EN.indexOf(m)])
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (m) => MON_DE[MON_EN.indexOf(m)]);
+}
+// A number WE draw (a chart's value, the price today) the German way: '1,234.5' -> '1.234,5', '12%' -> '12 %' (digits only:
+// shape, the chain's german_number in Python does the same for the cells it copies).
+export function germanNumber(text) {
+  return String(text ?? '')
+    .replace(/(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(?!\d)/g, (m, int, dec) => int.replace(/,/g, '.') + (dec ? dec.replace('.', ',') : ''))
+    .replace(/(?<=\d)%/g, '\u00a0%');
+}
+const same = (t) => t;
 export const UI = {
   en: {
     htmlLang: 'en', allStocks: 'All stocks', blog: 'Blog', headerCta: 'Get your first report free', free: 'Your first report is free · no card',
@@ -49,7 +68,8 @@ export const UI = {
     fromMemo: 'From the full memo', cont: 'Continue reading, free', whereFrom: 'Where these numbers come from', filingOn: (h) => `Filing on ${h}`,
     filing: 'Filing', moreOn: (c) => `More on ${c}`, rivals: 'Its rivals', browse: 'Browse', rail: (c) => `The full ${c} memo`, readItFree: 'Read it free',
     sticky: 'Your first report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
-    types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, other: 'En français', locale: 'en-US',
+    types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, otherIn: { fr: 'En français', de: 'Auf Deutsch' }, locale: 'en-US',
+    sibling: (t, c) => `${c} ${UI.en.types[t].toLowerCase()}`, find: 'Find a company', findPh: 'Company or ticker, e.g. Costco or TD', num: same,
     footer: 'Information only, not investment advice. Scenarios are scenarios, not predictions. Check the cited filings before making an investment decision.',
     scen: (d) => `Share price in ${d}: our three scenarios`, today: 'Today', cases: { Bear: 'Bear', Base: 'Base', Bull: 'Bull' },
     divChart: 'Dividend per share against free cash flow per share', revChart: 'Revenue by quarter', date: (t) => t,
@@ -62,31 +82,67 @@ export const UI = {
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
-    types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, other: 'In English', locale: 'fr-CA',
+    types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch' }, locale: 'fr-CA',
+    sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: same,
     footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
     scen: (d) => `Cours de l'action en ${d} : nos trois scénarios`, today: "Aujourd'hui", cases: { Bear: 'Pessimiste', Base: 'Central', Bull: 'Optimiste' },
     divChart: 'Dividende par action et flux de trésorerie disponible par action', revChart: 'Revenus par trimestre', date: dateFr,
     series: { 'Dividends paid, per share': 'Dividendes versés par action', 'Real free cash flow per share': 'Flux de trésorerie disponible réel par action', 'Free cash flow per share': 'Flux de trésorerie disponible par action', Revenue: 'Revenus' },
   },
+  de: {
+    htmlLang: 'de', allStocks: 'Alle Aktien', blog: 'Blog', headerCta: 'Ihr erster Bericht ist gratis', free: 'Ihr erster Bericht ist gratis · keine Karte',
+    readFull: (c) => `Das vollständige ${c}-Memo lesen`, proof: (c) => `Jede Zahl ist in den Unterlagen von ${c} belegt`, chapters: 'Kapitel', words: 'Wörter',
+    sources: 'zitierte Quellen', kicker: 'Research-Memo', memoOf: 'Memo vom', mid: (p, P, t, T) => `Diese Seite zeigt ${p} der ${P} Absätze des Memos und ${t} seiner ${T} Tabellen.`,
+    fromMemo: 'Aus dem vollständigen Memo', cont: 'Gratis weiterlesen', whereFrom: 'Woher diese Zahlen stammen', filingOn: (h) => `Dokument auf ${h}`,
+    filing: 'Dokument', moreOn: (c) => `Mehr zu ${c}`, rivals: 'Die Konkurrenz', browse: 'Stöbern', rail: (c) => `Das vollständige ${c}-Memo`, readItFree: 'Gratis lesen',
+    sticky: 'Ihr erster Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
+    types: { stock: 'Prognose', dividend: 'Dividende', earnings: 'Quartalszahlen' }, otherIn: { en: 'In English', fr: 'En français' }, locale: 'de-DE',
+    sibling: (t, c) => `${c} ${UI.de.types[t]}`, find: 'Unternehmen finden', findPh: 'Unternehmen oder Kürzel, z. B. Apple oder NVDA', num: germanNumber,
+    footer: 'Nur zur Information, keine Anlageberatung. Szenarien sind Szenarien, keine Vorhersagen. Prüfen Sie die zitierten Unterlagen vor jeder Anlageentscheidung.',
+    scen: (d) => `Aktienkurs im ${d}: unsere drei Szenarien`, today: 'Heute', cases: { Bear: 'Pessimistisch', Base: 'Basis', Bull: 'Optimistisch' },
+    divChart: 'Dividende je Aktie und freier Cashflow je Aktie', revChart: 'Umsatz je Quartal', date: dateDe,
+    series: { 'Dividends paid, per share': 'Gezahlte Dividende je Aktie', 'Real free cash flow per share': 'Echter freier Cashflow je Aktie', 'Free cash flow per share': 'Freier Cashflow je Aktie', Revenue: 'Umsatz' },
+  },
 };
-const FR_SEGMENT = { stock: '', dividend: 'dividende/', earnings: 'resultats/' };
+
+// The translated pages, per language (closed set): their address, their hreflang, the library they cover, the hub's words.
+// French: the S&P/TSX 60 (owner 2026-10-20); German: the S&P 500 (owner 2026-10-22, 'nvidia aktie prognose').
+const LANG_CFG = {
+  fr: {
+    root: '/fr/stocks/', seg: { stock: '', dividend: 'dividende/', earnings: 'resultats/' }, href: 'fr-CA', og: 'fr_CA', index: 'sptsx60',
+    title: TITLE_FR, banned: BANNED_FR, enHub: ['/stocks/tsx60/', 'S&P/TSX 60 (English)'], here: 'Ces pages en français',
+    hub: (n) => ({ title: 'Actions du S&P/TSX 60 : prévisions, dividendes, résultats', description: `Prévisions, dividendes et prochains résultats de ${n} sociétés du S&P/TSX 60, tirés de nos mémos de recherche.`,
+      intro: `Chaque société du S&P/TSX 60 pour laquelle nous avons un mémo de recherche : ${n} sociétés.`, back: 'S&P/TSX 60 in English', crumb: 'Actions' }),
+  },
+  de: {
+    root: '/de/aktien/', seg: { stock: '', dividend: 'dividende/', earnings: 'quartalszahlen/' }, href: 'de', og: 'de_DE', index: 'sp500',
+    title: TITLE_DE, banned: BANNED_DE, enHub: ['/stocks/sp500/', 'S&P 500 (English)'], here: 'Diese Seiten auf Deutsch',
+    hub: (n) => ({ title: 'S&P-500-Aktien: Prognosen, Dividenden, Quartalszahlen', description: `Prognosen, Dividenden und nächste Quartalszahlen von ${n} Unternehmen des S&P 500, aus unseren Research-Memos.`,
+      intro: `Jedes Unternehmen des S&P 500, zu dem wir ein Research-Memo haben: ${n} Unternehmen.`, back: 'S&P 500 in English', crumb: 'Aktien' }),
+  },
+};
+export const LANGS = Object.keys(LANG_CFG);
+// A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien)\/[^"]*)"/g;
 
 export function pagePath(slug, type, lang = 'en') {
-  if (lang === 'fr') return `/fr/stocks/${slug}/${FR_SEGMENT[type]}`;
+  const cfg = LANG_CFG[lang];
+  if (cfg) return `${cfg.root}${slug}/${cfg.seg[type]}`;
   return `/stocks/${slug}/${type === 'stock' ? '' : `${type}/`}`;
 }
 
-function frPage(data, type) {
-  return data?.translations?.fr?.pages?.[type] || null;
+function langPage(data, type, lang) {
+  return data?.translations?.[lang]?.pages?.[type] || null;
 }
 
-// A French description runs a fifth longer than the English it translates: when it is over 200 characters, the page's
-// own French opening stands in for it — its first sentence (our own punctuation: '. ' then a capital), else the whole
+
+// A French or German description runs a fifth longer than the English it translates: when it is over 200 characters, the
+// page's own opening stands in for it — its first sentence (our own punctuation: '. ' then a capital), else the whole
 // opening — when that fits; never a word that is not already on the page.
 function frDescribed(page) {
   if (!page || String(page.meta_description || '').length <= 200) return page;
   const opening = String(page.opening || '');
-  const first = opening.split(/(?<=[.?!])\s+(?=[A-ZÀ-Ý])/)[0];
+  const first = opening.split(/(?<=[.?!])\s+(?=[A-ZÀ-ÝÄÖÜ])/)[0];
   const pick = [first, opening].find((t) => t && t.length <= 200);
   return pick ? { ...page, meta_description: pick } : page;
 }
@@ -119,6 +175,7 @@ function humanDay(value, lang = 'en') {
     const day = Number(d.slice(8, 10));
     return `${day === 1 ? '1er' : day} ${MONTHS_FR[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
   }
+  if (lang === 'de') return `${Number(d.slice(8, 10))}. ${MONTHS_DE[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
   const dt = new Date(`${d}T12:00:00Z`);
   return dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
@@ -184,7 +241,7 @@ function scenarioChart(chart, currency, ui = UI.en) {
     const v = num(cell);
     if (v === null) continue;
     const ret = /\(([^)]*)\)/.exec(String(cell || ''));
-    pts[name] = { v, label: String(cell).split(' (')[0], ret: ret ? ret[1].replace(/\s+/g, '') : '', prob: row.probability || '' };
+    pts[name] = { v, label: ui.num(String(cell).split(' (')[0]), ret: ui.num(ret ? ret[1].replace(/\s+/g, '') : ''), prob: ui.num(row.probability || '') };
   }
   const today = Number(chart.today);
   if (!pts.Bear || !pts.Bull || !Number.isFinite(today)) return '';
@@ -198,7 +255,7 @@ function scenarioChart(chart, currency, ui = UI.en) {
     `<text x="0" y="18" class="ct">${esc(ui.scen(ui.date(cols[last])))}${currency ? ` (${esc(currency)})` : ''}</text>`,
     `<line x1="${x(pts.Bear.v).toFixed(0)}" x2="${x(pts.Bull.v).toFixed(0)}" y1="${y0}" y2="${y0}" stroke="#CFD8DA" stroke-width="10" stroke-linecap="round"/>`,
     `<line x1="${x(today).toFixed(0)}" x2="${x(today).toFixed(0)}" y1="44" y2="140" stroke="#C2861A" stroke-width="2" stroke-dasharray="5 4"/>`,
-    `<text x="${x(today).toFixed(0)}" y="160" text-anchor="middle" class="cd">${esc(ui.today)} ${esc(String(chart.today))}</text>`,
+    `<text x="${x(today).toFixed(0)}" y="160" text-anchor="middle" class="cd">${esc(ui.today)} ${esc(ui.num(String(chart.today)))}</text>`,
   ];
   for (const [name, color] of [['Bear', '#9AA3AD'], ['Base', '#0F5E63'], ['Bull', '#53A88F']]) {
     const p = pts[name];
@@ -213,7 +270,7 @@ function scenarioChart(chart, currency, ui = UI.en) {
   return `<div class="chart">${out.join('')}</div>`;
 }
 
-function barChart({ title, columns, series, unit }) {
+function barChart({ title, columns, series, unit, fmt = same }) {
   const n = columns.length;
   if (!n || !series.length) return '';
   const values = series.flatMap((s) => s.values.map(num)).filter((v) => v !== null);
@@ -235,7 +292,7 @@ function barChart({ title, columns, series, unit }) {
       const bx = cx - (bw * series.length) / 2 + j * bw;
       out.push(`<rect x="${bx.toFixed(1)}" y="${(base - h).toFixed(1)}" width="${(bw - 3).toFixed(1)}" height="${h.toFixed(1)}" rx="2" fill="${s.color}"/>`);
       if (series.length === 1 || n <= 6) {
-        out.push(`<text x="${(bx + (bw - 3) / 2).toFixed(1)}" y="${(base - h - 5).toFixed(1)}" text-anchor="middle" class="cs">${esc(s.values[i])}</text>`);
+        out.push(`<text x="${(bx + (bw - 3) / 2).toFixed(1)}" y="${(base - h - 5).toFixed(1)}" text-anchor="middle" class="cs">${esc(fmt(s.values[i]))}</text>`);
       }
     });
     out.push(`<text x="${cx.toFixed(1)}" y="${base + 18}" text-anchor="middle" class="cl">${esc(col)}</text>`);
@@ -250,7 +307,7 @@ function barChart({ title, columns, series, unit }) {
 function chartHtml(page, data, ui = UI.en) {
   const c = page.chart;
   if (!c) return '';
-  const fr = ui === UI.fr;
+  const fr = ui !== UI.en;                       // a translated page: no English unit, the numbers in its own format
   if (c.kind === 'scenarios') return scenarioChart(c, data.currency, ui);
   if (c.kind === 'dividend_vs_fcf') {
     const series = [];
@@ -259,12 +316,12 @@ function chartHtml(page, data, ui = UI.en) {
     const cashName = c.rows?.['Real free cash flow per share'] ? 'Real free cash flow per share' : 'Free cash flow per share';
     if (div) series.push({ name: ui.series['Dividends paid, per share'], values: div, color: '#0F5E63' });
     if (cash) series.push({ name: ui.series[cashName], values: cash, color: '#9FC9B4' });
-    return barChart({ title: ui.divChart, columns: (c.columns || []).map(ui.date), series, unit: fr ? '' : c.unit });
+    return barChart({ title: ui.divChart, columns: (c.columns || []).map(ui.date), series, unit: fr ? '' : c.unit, fmt: ui.num });
   }
   if (c.kind === 'quarters') {
     const rev = c.rows?.Revenue;
     if (!rev) return '';
-    return barChart({ title: ui.revChart, columns: (c.columns || []).map(ui.date), series: [{ name: ui.series.Revenue, values: rev, color: '#0F5E63' }], unit: fr ? '' : c.unit });
+    return barChart({ title: ui.revChart, columns: (c.columns || []).map(ui.date), series: [{ name: ui.series.Revenue, values: rev, color: '#0F5E63' }], unit: fr ? '' : c.unit, fmt: ui.num });
   }
   return '';
 }
@@ -282,7 +339,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
-  const home = lang === 'fr' ? '/fr/stocks/' : '/stocks/';
+  const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
   return `<!doctype html>
 <html lang="${ui.htmlLang}">
 <head>
@@ -293,7 +350,7 @@ function shell({ title, description, canonical, jsonld, meta, body, ogType = 'ar
 <link rel="canonical" href="${esc(canonical)}">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 ${alt ? `${alt}\n` : ''}<meta property="og:type" content="${ogType}">
-<meta property="og:locale" content="${lang === 'fr' ? 'fr_CA' : 'en_US'}">
+<meta property="og:locale" content="${LANG_CFG[lang] ? LANG_CFG[lang].og : 'en_US'}">
 <meta property="og:site_name" content="MyStockButler">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
@@ -330,37 +387,38 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
   const ui = UI[lang];
   const items = (chapters || data.chapters || []).map((c) => `<li>${esc(c)}</li>`).join('');
   const k = data.counts || {};
-  const day = lang === 'fr' ? humanDay(data.memo_date, 'fr') : data.memo_date_text || humanDay(data.memo_date);
+  const day = lang !== 'en' ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
   return `<aside class="rail"><div class="box"><h3>${esc(ui.rail(shortName(data)))}</h3>
 <div class="meta">${esc(day)} · ${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words} · ${k.sources || 0} ${ui.sources}</div>
 <ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">${ui.readItFree}</a><div class="sub">${ui.free}</div></div></aside>`;
 }
 
-// One company page, in English or (S&P/TSX 60) in French. ctx.exists(path) tells whether another page of this build
-// exists (links to it only then). A French page is the English page with every piece the chain translated swapped in.
+// One company page, in English, in French (S&P/TSX 60) or in German (S&P 500). ctx.exists(path) tells whether another
+// page of this build exists (links to it only then). A translated page is the English page with every piece the chain
+// translated swapped in.
 export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const ui = UI[lang];
-  const fr = lang === 'fr';
-  const page0 = fr ? frDescribed(frPage(data, type)) : data.pages[type];
+  const fr = lang !== 'en';                       // a translated page (French or German)
+  const page0 = fr ? frDescribed(langPage(data, type, lang)) : data.pages[type];
   const shared = !fr && ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
   const page = shared ? { ...page0, title: `${page0.title} (${data.ticker})` } : page0;
-  const teaserData = fr ? data.translations.fr.teaser : data.teaser;
+  const teaserData = fr ? data.translations[lang].teaser : data.teaser;
   const slug = data.slug;
   const path = pagePath(slug, type, lang);
   const url = `${SITE}${path}`;
   const company = shortName(data);
   const ticker = data.ticker;
   const cta0 = data.pages[type].cta || `${APP}/signup?ticker=${encodeURIComponent(ticker)}&src=seo-${type}`;
-  const cta = fr ? `${cta0}&lang=fr` : cta0;
+  const cta = fr ? `${cta0}&lang=${lang}` : cta0;
   const indexKey = data.index;
-  const has = (t, l) => (l === 'fr' ? !!frPage(data, t) : !!data.pages[t]) && ctx.exists(pagePath(slug, t, l));
-  const other = fr ? 'en' : 'fr';
-  const otherExists = (fr || frPage(data, type)) && ctx.exists(pagePath(slug, type, other));
-  const alternates = otherExists
-    ? [{ hreflang: 'en-CA', url: `${SITE}${pagePath(slug, type, 'en')}` }, { hreflang: 'fr-CA', url: `${SITE}${pagePath(slug, type, 'fr')}` },
-       { hreflang: 'x-default', url: `${SITE}${pagePath(slug, type, 'en')}` }]
+  const has = (t, l) => (l === 'en' ? !!data.pages[t] : !!langPage(data, t, l)) && ctx.exists(pagePath(slug, t, l));
+  // the same page in every language this build has (hreflang both ways); English is the default
+  const versions = ['en', ...LANGS].filter((l) => has(type, l));
+  const hrefOf = (l) => (l === 'en' ? (versions.includes('fr') ? 'en-CA' : 'en') : LANG_CFG[l].href);
+  const alternates = versions.length > 1
+    ? [...versions.map((l) => ({ hreflang: hrefOf(l), url: `${SITE}${pagePath(slug, type, l)}` })), { hreflang: 'x-default', url: `${SITE}${pagePath(slug, type, 'en')}` }]
     : [];
-  const rootCrumb = fr ? { name: ui.stocksCrumb, path: '/fr/stocks/' } : { name: ui.stocksCrumb, path: '/stocks/' };
+  const rootCrumb = { name: ui.stocksCrumb, path: fr ? LANG_CFG[lang].root : '/stocks/' };
   const stockPath = has('stock', lang) ? pagePath(slug, 'stock', lang) : path;
   const crumbs = breadcrumbs([
     rootCrumb,
@@ -368,7 +426,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     { name: `${company} (${ticker})`, path: stockPath },
     ...(type === 'stock' || stockPath === path ? [] : [{ name: ui.types[type], path }]),
   ]);
-  const memoDay = fr ? humanDay(data.memo_date, 'fr') : data.memo_date_text || humanDay(data.memo_date);
+  const memoDay = fr ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
   const k = data.counts || {};
   const shownP = page.blocks.reduce((n, b) => n + (b.paragraphs?.length || 0), 0) + (teaserData ? 1 : 0);
   const shownT = page.blocks.filter((b) => b.table).length;
@@ -397,7 +455,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const sourcesHtml = sources.length
     ? `<section class="sources"><h3>${esc(ui.whereFrom)}</h3><ul>${sources
         .map((s) => {
-          let label = fr ? '' : s.title;          // a French page names the site, never an English document title
+          let label = fr ? '' : s.title;          // a translated page names the site, never an English document title
           if (!label || /^https?:/.test(label)) {
             try {
               label = ui.filingOn(new URL(s.url).hostname.replace(/^www\./, ''));
@@ -409,14 +467,14 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
         })
         .join('')}</ul></section>`
     : '';
-  const siblings = TYPES.filter((t) => t !== type && has(t, lang)).map((t) => `<a href="${pagePath(slug, t, lang)}">${esc(fr ? `${ui.types[t]} · ${company}` : `${company} ${ui.types[t].toLowerCase()}`)}</a>`);
-  if (otherExists) siblings.push(`<a hreflang="${other === 'fr' ? 'fr-CA' : 'en-CA'}" href="${pagePath(slug, type, other)}">${esc(ui.other)}</a>`);
+  const siblings = TYPES.filter((t) => t !== type && has(t, lang)).map((t) => `<a href="${pagePath(slug, t, lang)}">${esc(ui.sibling(t, company))}</a>`);
+  for (const l of versions) if (l !== lang) siblings.push(`<a hreflang="${hrefOf(l)}" href="${pagePath(slug, type, l)}">${esc(ui.otherIn[l])}</a>`);
   const rivals = (data.rivals || [])
     .map((r) => ctx.bySlug.get(ctx.slugOf(r)))
-    .filter((r) => r && r.slug !== slug && (fr ? frPage(r, 'stock') : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
+    .filter((r) => r && r.slug !== slug && (fr ? langPage(r, 'stock', lang) : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
     .slice(0, 4)
     .map((r) => `<a href="${pagePath(r.slug, 'stock', lang)}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
-  const hubs = fr ? [`<a href="/fr/stocks/">${esc(ui.allStocks)}</a>`, `<a href="/stocks/tsx60/" hreflang="en">S&amp;P/TSX 60 (English)</a>`] : [`<a href="/stocks/">All stocks</a>`];
+  const hubs = fr ? [`<a href="${LANG_CFG[lang].root}">${esc(ui.allStocks)}</a>`, `<a href="${LANG_CFG[lang].enHub[0]}" hreflang="en">${esc(LANG_CFG[lang].enHub[1])}</a>`] : [`<a href="/stocks/">All stocks</a>`];
   if (!fr) {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
@@ -432,7 +490,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     publisher: { '@id': ORG['@id'] },
     mainEntityOfPage: url,
     about: { '@type': 'Corporation', name: company, tickerSymbol: ticker },
-    inLanguage: fr ? 'fr-CA' : 'en',
+    inLanguage: ui.htmlLang,
   };
   const html = shell({
     title: page.title,
@@ -455,19 +513,19 @@ ${teaser}
 ${sourcesHtml}
 ${links}
 </article>
-${chaptersRail(data, cta, lang, fr ? data.translations.fr.chapters : null)}</div>
+${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</div>
 <div class="bar"><div class="t">${esc(ui.rail(company))}<span>${ui.sticky}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
-  const outLinks = [...html.matchAll(/<a [^>]*href="(\/(?:fr\/)?stocks\/[^"]*)"/g)].map((m) => m[1]);
+  const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type, lang, slug, ticker, title: page.title, description: page.meta_description, lastmod: isoDay(data.memo_date),
     alternates, html, outLinks, page, data };
 }
 
-function hubList(companies, { withDates = false, french = false } = {}) {
+function hubList(companies, { withDates = false, lang = '' } = {}) {
   return `<ul class="list">${companies
     .map((c) => {
       const en = TYPES.filter((t) => c.pages[t]).map((t) => `<a href="${pagePath(c.slug, t)}">${esc(TYPE_NAMES[t])}</a>`);
-      const fr = french ? TYPES.filter((t) => frPage(c, t)).map((t) => `<a hreflang="fr-CA" href="${pagePath(c.slug, t, 'fr')}">${esc(UI.fr.types[t])}</a>`) : [];
+      const fr = lang ? TYPES.filter((t) => langPage(c, t, lang)).map((t) => `<a hreflang="${LANG_CFG[lang].href}" href="${pagePath(c.slug, t, lang)}">${esc(UI[lang].types[t])}</a>`) : [];
       const pages = [...en, ...fr].join('');
       const date = withDates && c.next_earnings ? ` · results ${esc(humanDay(c.next_earnings))}` : '';
       return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => c.pages[t]))}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}${date}</span><span class="pg">${pages}</span></li>`;
@@ -479,7 +537,7 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   const searchBox = search
-    ? `<div class="search"><label for="q">${lang === 'fr' ? 'Trouver une entreprise' : 'Find a company'}</label><input id="q" type="search" placeholder="${lang === 'fr' ? 'Entreprise ou symbole, p. ex. TD ou BCE' : 'Company or ticker, e.g. Costco or TD'}" autocomplete="off"></div>
+    ? `<div class="search"><label for="q">${esc(UI[lang].find)}</label><input id="q" type="search" placeholder="${esc(UI[lang].findPh)}" autocomplete="off"></div>
 <script>(function(){var q=document.getElementById('q');q.addEventListener('input',function(){var v=q.value.trim().toLowerCase();document.querySelectorAll('li[data-name]').forEach(function(li){li.style.display=!v||li.getAttribute('data-name').indexOf(v)>=0?'':'none';});});})();</script>`
     : '';
   const html = shell({
@@ -492,7 +550,7 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
     meta: { type: 'hub', ticker: '' },
     body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${searchBox}${sections.join('\n')}</div>`,
   });
-  const outLinks = [...html.matchAll(/<a [^>]*href="(\/(?:fr\/)?stocks\/[^"]*)"/g)].map((m) => m[1]);
+  const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type: 'hub', lang, title, description, html, outLinks, lastmod: '' };
 }
 
@@ -512,7 +570,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     .sort((a, b) => a.next_earnings.localeCompare(b.next_earnings));
   const pages = [];
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
-  const french = byName.filter((c) => TYPES.some((t) => frPage(c, t)));
+  const translated = Object.fromEntries(LANGS.map((l) => [l, byName.filter((c) => TYPES.some((t) => langPage(c, t, l)))]));
   const all = [
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a></p></section>`,
     nav(),
@@ -535,7 +593,9 @@ export function renderHubs(companies, { today = new Date() } = {}) {
       title: `${INDEX_NAMES[g.key]} stocks: forecasts, dividends, earnings`,
       description: `Research memos on ${g.list.length} ${INDEX_NAMES[g.key]} companies: stock forecasts, dividends and next results dates.`,
       intro: `${g.list.length} ${INDEX_NAMES[g.key]} companies with a research memo.`,
-      sections: [nav(), hubList(g.list, { withDates: true, french: g.key === 'sptsx60' }), ...(g.key === 'sptsx60' && french.length ? ['<p><a href="/fr/stocks/" hreflang="fr-CA">Ces pages en français</a></p>'] : [])],
+      sections: [nav(), ...LANGS.filter((l) => LANG_CFG[l].index === g.key && translated[l].length)
+        .map((l) => `<p><a href="${LANG_CFG[l].root}" hreflang="${LANG_CFG[l].href}">${esc(LANG_CFG[l].here)}</a></p>`),
+        hubList(g.list, { withDates: true, lang: LANGS.find((l) => LANG_CFG[l].index === g.key && translated[l].length) || '' })],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
     }));
   }
@@ -559,19 +619,23 @@ export function renderHubs(companies, { today = new Date() } = {}) {
     sections: [hubList(soon, { withDates: true })],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Reporting this week', path: '/stocks/reporting-this-week/' }],
   }));
-  if (french.length) {
+  for (const l of LANGS) {                       // the hub of each language's pages (/fr/stocks/, /de/aktien/)
+    const list = translated[l];
+    if (!list.length) continue;
+    const cfg = LANG_CFG[l];
+    const words = cfg.hub(list.length);
     pages.push(hubPage({
-      path: '/fr/stocks/',
-      lang: 'fr',
-      title: 'Actions du S&P/TSX 60 : prévisions, dividendes, résultats',
-      description: `Prévisions, dividendes et prochains résultats de ${french.length} sociétés du S&P/TSX 60, tirés de nos mémos de recherche.`,
-      intro: `Chaque société du S&P/TSX 60 pour laquelle nous avons un mémo de recherche : ${french.length} sociétés.`,
+      path: cfg.root,
+      lang: l,
+      title: words.title,
+      description: words.description,
+      intro: words.intro,
       search: true,
-      sections: [`<ul class="list">${french.map((c) => {
-        const links = TYPES.filter((t) => frPage(c, t)).map((t) => `<a href="${pagePath(c.slug, t, 'fr')}">${esc(UI.fr.types[t])}</a>`).join('');
-        return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => frPage(c, t)), 'fr')}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Mémo du ${esc(humanDay(c.memo_date, 'fr'))}</span><span class="pg">${links}</span></li>`;
-      }).join('')}</ul>`, '<p><a href="/stocks/tsx60/">S&amp;P/TSX 60 in English</a></p>'],
-      crumbItems: [{ name: 'Actions', path: '/fr/stocks/' }],
+      sections: [`<ul class="list">${list.map((c) => {
+        const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
+        return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
+      }).join('')}</ul>`, `<p><a href="${cfg.enHub[0]}">${esc(words.back)}</a></p>`],
+      crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
   }
   const payers = byName.filter((c) => c.pages.dividend);
@@ -592,14 +656,14 @@ export function gatePage(built, ctx) {
   const fails = [];
   const { html, page, data, type } = built;
   const lang = built.lang || 'en';
-  const fr = lang === 'fr';
+  const fr = lang !== 'en';                       // a translated page (French or German)
   const title = (/<title>([\s\S]*?)<\/title>/.exec(html) || [])[1] || '';
   const titleText = textOf(title);
   if (titleText.length > 60) fails.push(`title is ${titleText.length} characters (at most 60)`);
-  if (fr ? !TITLE_FR.test(titleText) : !titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push('title lacks the search phrase');
+  if (fr ? !LANG_CFG[lang].title.test(titleText) : !titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push('title lacks the search phrase');
   const desc = (/<meta name="description" content="([^"]*)"/.exec(html) || [])[1] || '';
   const descText = textOf(desc);
-  const descMax = fr ? 200 : 155;                   // French runs about a fifth longer than the English it translates
+  const descMax = fr ? 200 : 155;                   // French and German run about a fifth longer than the English
   if (!descText || descText.length > descMax) fails.push(`meta description is ${descText.length} characters (1 to ${descMax})`);
   const h1 = (html.match(/<h1[ >]/g) || []).length;
   if (h1 !== 1) fails.push(`${h1} h1`);
@@ -630,16 +694,16 @@ export function gatePage(built, ctx) {
     ...page.blocks.flatMap((b) => [...(b.paragraphs || []).map((p) => p.text), ...(b.table ? [b.table.head.join(' '), ...b.table.rows.map((r) => r.join(' '))] : [])]),
     ...(page.facts || []).map((f) => `${f.label} ${f.value}`),
     data.company, data.short_name || '', data.ticker, data.memo_date_text || '', humanDay(data.next_earnings), String(isoDay(data.memo_date)).slice(0, 4),
-    humanDay(data.next_earnings, 'fr'), humanDay(data.memo_date, 'fr'),
+    ...(fr ? [humanDay(data.next_earnings, lang), humanDay(data.memo_date, lang)] : []),
   ].join(' ');
   const flat = memoText.replace(/[,\s]/g, '');
   for (const [name, value] of [['title', page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
     for (const n of String(value || '').match(NUMBER) || []) {
-      // a French decimal comma ('188,85') against a table cell the memo printed in its own form ('188.85')
-      const asDot = fr && /^\d+,\d{1,2}$/.test(n) ? n.replace(',', '.') : null;
+      // a French or German number ('188,85', '1.234,5') against a cell the memo printed in its own form ('188.85', '1,234.5')
+      const asDot = fr && /,/.test(n) ? n.replace(/[.,]/g, (c) => (c === '.' ? ',' : '.')) : null;
       if (!memoText.includes(n) && !flat.includes(n.replace(/,/g, '')) && !(asDot && memoText.includes(asDot))) fails.push(`${name} prints ${n}, not in the memo text shown`);
     }
-    const bad = (fr ? BANNED_FR : BANNED).exec(String(value || ''));
+    const bad = (fr ? LANG_CFG[lang].banned : BANNED).exec(String(value || ''));
     if (bad) fails.push(`${name} uses "${bad[1]}"`);
   }
   // The paywall: at most 6 of the memo's paragraphs (the teaser included) and 3 tables.
@@ -727,13 +791,13 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .bar .t{flex:1;font:600 13px/1.3 Inter,sans-serif}.bar .t span{display:block;font-weight:500;color:var(--muted)}.bar .btn{padding:11px 14px;font-size:14px}}
 `;
 
-// The whole stock site from the per-company files. Returns { pages, held, report }. A French page (S&P/TSX 60) is
-// published only beside its English page: it is that page with the chain's French pieces.
+// The whole stock site from the per-company files. Returns { pages, held, report }. A French (S&P/TSX 60) or German
+// (S&P 500) page is published only beside its English page: it is that page with the chain's translated pieces.
 export function buildStockSite(companies, { today = new Date() } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
-  const variants = (c) => TYPES.flatMap((t) => (c.pages[t] ? [[t, 'en'], ...(frPage(c, t) ? [[t, 'fr']] : [])] : []));
+  const variants = (c) => TYPES.flatMap((t) => (c.pages[t] ? [[t, 'en'], ...LANGS.filter((l) => langPage(c, t, l)).map((l) => [t, l])] : []));
   const exists0 = new Set(usable.flatMap((c) => variants(c).map(([t, l]) => pagePath(c.slug, t, l))));
   const titleCount = new Map();
   for (const c of usable) for (const t of TYPES) if (c.pages[t]) titleCount.set(c.pages[t].title, (titleCount.get(c.pages[t].title) || 0) + 1);
@@ -761,9 +825,12 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     live = usable
       .map((c) => {
         const pages = Object.fromEntries(Object.entries(c.pages).filter(([t]) => keep.has(pagePath(c.slug, t))));
-        const fr = c.translations?.fr;
-        const frPages = fr ? Object.fromEntries(Object.entries(fr.pages || {}).filter(([t]) => pages[t] && keep.has(pagePath(c.slug, t, 'fr')))) : null;
-        return { ...c, pages, ...(fr ? { translations: { ...c.translations, fr: { ...fr, pages: frPages } } } : {}) };
+        const translations = c.translations ? { ...c.translations } : null;
+        for (const l of LANGS) {
+          const tr = translations?.[l];
+          if (tr) translations[l] = { ...tr, pages: Object.fromEntries(Object.entries(tr.pages || {}).filter(([t]) => pages[t] && keep.has(pagePath(c.slug, t, l)))) };
+        }
+        return { ...c, pages, ...(translations ? { translations } : {}) };
       })
       .filter((c) => Object.keys(c.pages).length);
     for (const c of live) bySlug.set(c.slug, c);
@@ -794,6 +861,7 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     companies: usable.length,
     pages: pass.length,
     pages_fr: pass.filter((b) => b.lang === 'fr').length,
+    pages_de: pass.filter((b) => b.lang === 'de').length,
     hubs: hubs.length,
     held,
     orphans,

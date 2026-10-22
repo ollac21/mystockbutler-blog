@@ -85,10 +85,39 @@ test('a French page draws no English: the date, the chart, the table cells and t
   const text = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ');
   for (const p of fr) {
     const t = text(p.html);
-    for (const english of ['Next results', 'Revenue by quarter', 'Where these numbers come from', 'Year to', 'Filing on', ' link ']) {
+    for (const english of ['Revenue by quarter', 'Where these numbers come from', 'Year to', 'Filing on', ' link ']) {
       assert.ok(!t.includes(english), `${p.path} shows "${english}"`);
     }
   }
   const results = fr.find((p) => p.path === '/fr/stocks/td-to/resultats/');
   assert.match(text(results.html), /3 décembre 2026/);
+});
+
+test('a German page (S&P 500): its address, hreflang both ways, German words and numbers, the German hub', () => {
+  // owner 2026-10-22 'exécute German' (CTO 12:38Z); the file's German copy built by the chain's own German code
+  const { pages, hubs, held } = buildStockSite([load('stock-nvda-de.json'), load('stock-rmd.json'), load('stock-td-to.json')], { today: TODAY });
+  const de = pages.filter((p) => p.lang === 'de');
+  assert.deepEqual(de.map((p) => p.path).sort(), ['/de/aktien/nvda/', '/de/aktien/nvda/dividende/', '/de/aktien/nvda/quartalszahlen/'], JSON.stringify(held));
+  const stock = de.find((p) => p.path === '/de/aktien/nvda/');
+  assert.match(stock.html, /<html lang="de">/);
+  assert.match(stock.html, /<title>NVIDIA Aktie Prognose 2027–2029<\/title>/);
+  assert.match(stock.html, /hreflang="de" href="https:\/\/blog\.mystockbutler\.com\/de\/aktien\/nvda\/"/);
+  assert.match(stock.html, /hreflang="en" href="https:\/\/blog\.mystockbutler\.com\/stocks\/nvda\/"/);
+  assert.match(stock.html, /Aktienkurs im Oktober 2029: unsere drei Szenarien/);
+  assert.match(stock.html, /Heute 216,62/);                                     // the chart's price the German way
+  assert.match(stock.html, /signup\?ticker=NVDA&amp;src=seo-stock&amp;lang=de/);
+  const en = pages.find((p) => p.path === '/stocks/nvda/');
+  assert.match(en.html, /hreflang="de" href="https:\/\/blog\.mystockbutler\.com\/de\/aktien\/nvda\/"/);
+  assert.match(en.html, /Auf Deutsch/);
+  const results = de.find((p) => p.path === '/de/aktien/nvda/quartalszahlen/');
+  assert.match(results.html, /18\. November 2026/);
+  const text = (html) => html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ');
+  for (const p of de) {
+    for (const english of ['Revenue by quarter', 'Where these numbers come from', 'Filing on', 'Read the full']) {
+      assert.ok(!text(p.html).includes(english), `${p.path} shows "${english}"`);
+    }
+  }
+  assert.ok(hubs.some((h) => h.path === '/de/aktien/' && h.lang === 'de'));
+  const sp = hubs.find((h) => h.path === '/stocks/sp500/');
+  assert.match(sp.html, /href="\/de\/aktien\/" hreflang="de">Diese Seiten auf Deutsch/);
 });

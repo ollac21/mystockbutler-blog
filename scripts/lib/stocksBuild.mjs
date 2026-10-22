@@ -176,7 +176,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await writeFile(path.join(dir, 'index.html'), p.html);
   }
   const sitemaps = {};
-  for (const lang of ['en', 'fr']) {
+  for (const lang of ['en', 'fr', 'de']) {
     for (const t of TYPES) {
       const entries = pages.filter((p) => p.type === t && (p.lang || 'en') === lang)
         .map((p) => ({ url: p.url, lastmod: p.lastmod, alternates: p.alternates }));
@@ -193,7 +193,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await mkdir(reportDir, { recursive: true });
     await writeFile(path.join(reportDir, 'stocks.json'), `${JSON.stringify(full, null, 1)}\n`);
   }
-  console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
+  console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
   for (const h of held.slice(0, 40)) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
   return { sitemaps, llms, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }
