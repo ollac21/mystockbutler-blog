@@ -218,7 +218,7 @@ test('a comparison from another memo than the published page is not drawn, and n
 });
 
 test('a comparison with a planted fault is held back: a long title, too few rows, a missing summary', () => {
-  const long = rbcVsTd({ a: { ...rbcVsTd().a, name: 'Royal Bank of Canada Financial Group' } });
+  const long = rbcVsTd({ a: { ...rbcVsTd().a, name: 'Royal Bank of Canada Financial Group Holdings International' } });
   const thin = rbcVsTd({ rows: rbcVsTd().rows.slice(0, 3) });
   const mute = rbcVsTd({ b: { ...rbcVsTd().b, quote: '' } });
   for (const [pair, why] of [[long, 'title is'], [thin, '3 rows'], [mute, 'no summary paragraph']]) {
@@ -227,4 +227,12 @@ test('a comparison with a planted fault is held back: a long title, too few rows
     assert.ok(report.compareHeld.some((h) => h.fails.some((f) => f.includes(why))), JSON.stringify(report.compareHeld));
     assert.ok(!pages.some((b) => b.outLinks.some((l) => l.startsWith('/compare/'))));
   }
+});
+
+test('two long names get the shorter title, the search phrase kept', async () => {
+  const { compareTitle } = await import('../scripts/lib/stocks.mjs');
+  const pair = (a, b) => ({ memo_date: '2026-10-11', a: { name: a }, b: { name: b } });
+  assert.equal(compareTitle(pair('Visa', 'Mastercard')), 'Visa vs Mastercard stock: the numbers side by side (October 2026)');
+  assert.equal(compareTitle(pair('JPMorgan Chase', 'Bank of America')), 'JPMorgan Chase vs Bank of America stock: side by side (October 2026)');
+  assert.equal(compareTitle(pair('Canadian Natural Resources', 'Imperial Oil Limited')), 'Canadian Natural Resources vs Imperial Oil Limited stock (October 2026)');
 });

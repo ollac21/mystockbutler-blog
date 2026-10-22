@@ -787,8 +787,13 @@ function monthYear(value) {
   return d ? `${MONTHS_EN[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}` : '';
 }
 
+// The CTO's title; when two long names run it over COMPARE_TITLE_MAX ('JPMorgan Chase vs Bank of America'), a shorter form
+// that keeps the search phrase '<A> vs <B> stock' and the month (fixed words only).
 export function compareTitle(pair) {
-  return `${pair.a.name} vs ${pair.b.name} stock: the numbers side by side (${monthYear(pair.memo_date)})`;
+  const head = `${pair.a.name} vs ${pair.b.name} stock`;
+  const when = monthYear(pair.memo_date);
+  const forms = [`${head}: the numbers side by side (${when})`, `${head}: side by side (${when})`, `${head} (${when})`];
+  return forms.find((t) => t.length <= COMPARE_TITLE_MAX) || forms[forms.length - 1];
 }
 
 function compareDescription(pair) {
