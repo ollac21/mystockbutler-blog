@@ -131,3 +131,33 @@ test('the EU cookie banner: no page loads Google directly; the consent script de
     assert.match(p.html, /Europe\\\//);
   }
 });
+
+test('AI visits: the assistant is read from utm_source or the referrer; every page carries the script', async () => {
+  // owner 2026-10-22 '1 and 2 build' (CTO 17:32Z): a visitor from ChatGPT / Perplexity / Copilot / Claude / Gemini
+  const { aiSourceOf, AI_SITES } = await import('../scripts/lib/consent.mjs');
+  assert.equal(aiSourceOf('?utm_source=chatgpt.com', '', AI_SITES), 'chatgpt');
+  assert.equal(aiSourceOf('', 'https://www.perplexity.ai/search?q=td', AI_SITES), 'perplexity');
+  assert.equal(aiSourceOf('', 'https://gemini.google.com/app', AI_SITES), 'gemini');
+  assert.equal(aiSourceOf('?utm_source=newsletter', 'https://www.google.com/', AI_SITES), '');
+  const { pages } = buildStockSite([load('stock-td-to.json'), load('stock-rmd.json')], { today: TODAY });
+  const td = pages.find((p) => p.path === '/stocks/td-to/dividend/');
+  assert.match(td.html, /gtag\('event','ai_visit'/);
+  assert.match(td.html, /label":"TD dividend"|label:"TD dividend"/);
+  assert.match(td.html, /u\.searchParams\.set\('ai',v\.ai\)/);
+});
+
+test("our name in the opening sentence: the three approved strings, from the memo's month", async () => {
+  // owner 2026-10-22 '1 and 2 build'; the CTO approved the colon form (18:14Z)
+  const { byUs } = await import('../scripts/lib/stocks.mjs');
+  assert.equal(byUs('2026-10-16T05:00:00Z', 'en'), "MyStockButler's October 2026 analysis: ");
+  assert.equal(byUs('2026-10-16', 'fr'), "Selon l'analyse de MyStockButler d'octobre 2026 : ");
+  assert.equal(byUs('2026-03-02', 'fr'), "Selon l'analyse de MyStockButler de mars 2026 : ");
+  assert.equal(byUs('2026-04-02', 'fr'), "Selon l'analyse de MyStockButler d'avril 2026 : ");
+  assert.equal(byUs('2026-10-16', 'de'), 'Laut der Analyse von MyStockButler vom Oktober 2026: ');
+  const { pages, held } = buildStockSite([load('stock-td-to-fr.json'), load('stock-nvda-de.json')], { today: TODAY });
+  const lede = (p) => (/<p class="lede">([\s\S]*?)<\/p>/.exec(p.html) || [])[1];
+  assert.match(lede(pages.find((p) => p.path === '/stocks/td-to/dividend/')), /^MyStockButler&#39;s October 2026 analysis: |^MyStockButler's October 2026 analysis: /);
+  assert.match(lede(pages.find((p) => p.path === '/fr/stocks/td-to/')), /^Selon l(&#39;|')analyse de MyStockButler d(&#39;|')octobre 2026 : /);
+  assert.match(lede(pages.find((p) => p.path === '/de/aktien/nvda/')), /^Laut der Analyse von MyStockButler vom Oktober 2026: /);
+  assert.equal(held.length, 0, JSON.stringify(held));
+});

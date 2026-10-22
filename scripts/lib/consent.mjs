@@ -49,3 +49,39 @@ document.body.appendChild(b);}
 if(document.body)show();else document.addEventListener('DOMContentLoaded',show);})();</script>
 `;
 }
+
+// AI VISITS (owner 2026-10-22 '1 and 2 build', CTO 17:32Z): a visitor whose page came from ChatGPT, Perplexity, Copilot,
+// Claude or Gemini — their utm_source tag (utm_source=chatgpt.com) or their site as the referrer — is recorded with its
+// source AND the page it landed on: one GA event ai_visit ('AI assistants · TD dividend'), and the free-report buttons
+// carry ai=<source>&landing=<page> into the sign-up, where the app keeps them on the new account. The assistants' names
+// and sites are a closed list of ours (shape).
+export const AI_SITES = {
+  'chatgpt.com': 'chatgpt', 'chat.openai.com': 'chatgpt', chatgpt: 'chatgpt', openai: 'chatgpt',
+  'perplexity.ai': 'perplexity', perplexity: 'perplexity',
+  'copilot.microsoft.com': 'copilot', 'copilot.com': 'copilot', copilot: 'copilot',
+  'claude.ai': 'claude', claude: 'claude',
+  'gemini.google.com': 'gemini', gemini: 'gemini',
+};
+
+// The assistant that sent this visit ('' = none): the utm_source tag first, then the referrer's site.
+export function aiSourceOf(search, referrer, sites) {
+  var host = function (v) { return String(v || '').trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]; };
+  var tag = '';
+  try { tag = new URLSearchParams(search || '').get('utm_source') || ''; } catch (e) { tag = ''; }
+  return sites[host(tag)] || sites[host(referrer)] || '';
+}
+
+// The page script: run once per page, after the consent script (it defines gtag and msbOnConsent).
+export function aiScript({ label = '' } = {}) {
+  return `<script>(function(){var S=${JSON.stringify(AI_SITES)};${aiSourceOf.toString()}
+var ai=aiSourceOf(location.search,document.referrer,S),k='msb_ai',v=null;
+try{v=JSON.parse(sessionStorage.getItem(k)||'null')}catch(e){}
+if(ai&&!v){v={ai:ai,landing:location.pathname,label:${JSON.stringify(label)}};
+gtag('event','ai_visit',{ai_source:ai,landing_page:location.pathname,ai_page:'AI assistants · '+(v.label||location.pathname)});
+window.msbOnConsent(function(){try{sessionStorage.setItem(k,JSON.stringify(v))}catch(e){}});}
+if(!v)return;
+function carry(){document.querySelectorAll('a[data-cta]').forEach(function(a){try{var u=new URL(a.href);if(!/(^|\\.)mystockbutler\\.com$|^localhost$/.test(u.hostname))return;
+u.searchParams.set('ai',v.ai);u.searchParams.set('landing',v.landing);a.href=u.toString();}catch(e){}});}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',carry);else carry();})();</script>
+`;
+}

@@ -10,7 +10,7 @@
 
 import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
-import { measuringScript } from './consent.mjs';
+import { aiScript, measuringScript } from './consent.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -146,6 +146,24 @@ function frDescribed(page) {
   const first = opening.split(/(?<=[.?!])\s+(?=[A-ZÀ-ÝÄÖÜ])/)[0];
   const pick = [first, opening].find((t) => t && t.length <= 200);
   return pick ? { ...page, meta_description: pick } : page;
+}
+
+// OUR NAME IN THE ANSWER SENTENCE (owner 2026-10-22 '1 and 2 build'; the three strings approved by the CTO 18:14Z, the colon
+// form): the words in front of the page's opening, built from the memo's month and our own month lists — no model call.
+//   en  "MyStockButler's October 2026 analysis: "
+//   fr  "Selon l'analyse de MyStockButler d'octobre 2026 : "   (de before a consonant: "de mars 2026"; a no-break space before ':')
+//   de  "Laut der Analyse von MyStockButler vom Oktober 2026: "
+export function byUs(memoDate, lang = 'en') {
+  const d = isoDay(memoDate);
+  if (!d) return '';
+  const m = Number(d.slice(5, 7)) - 1;
+  const y = d.slice(0, 4);
+  if (lang === 'fr') {
+    const month = MONTHS_FR[m];
+    return `Selon l'analyse de MyStockButler ${/^[aeiouâéè]/.test(month) ? `d'${month}` : `de ${month}`} ${y}\u00a0: `;
+  }
+  if (lang === 'de') return `Laut der Analyse von MyStockButler vom ${MONTHS_DE[m]} ${y}: `;
+  return `MyStockButler's ${MONTHS_EN[m]} ${y} analysis: `;
 }
 
 // The letter hubs' address: never a company's (/stocks/v/ is Visa's page).
@@ -330,7 +348,7 @@ function chartHtml(page, data, ui = UI.en) {
 // Google Analytics behind the EU cookie banner (consent.mjs): in Europe nothing is sent before 'Accept'.
 function gaHead(meta) {
   const params = { page_type: meta.type, ticker: meta.ticker || '', lang: meta.lang || 'en' };
-  return `${measuringScript({ gaId: GA_ID, params, lang: meta.lang || 'en' })}<script>
+  return `${measuringScript({ gaId: GA_ID, params, lang: meta.lang || 'en' })}${aiScript({ label: meta.label || '' })}<script>
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-cta]');if(a)gtag('event','cta_click',Object.assign({position:a.getAttribute('data-cta')},P));});
 (function(){var d=0;addEventListener('scroll',function(){if(d)return;var h=document.documentElement;if((scrollY+innerHeight)/h.scrollHeight>=.75){d=1;gtag('event','scroll_75',P);}},{passive:true});})();</script>
 `;
@@ -499,12 +517,12 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     lang,
     alternates,
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
-    meta: { type, ticker, cta, lang },
+    meta: { type, ticker, cta, lang, label: `${company} ${TYPE_NAMES[type].toLowerCase()}` },
     body: `<div class="layout"><article>
 ${crumbs.html}
 <div class="kicker"><span>${esc(ui.kicker)}</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>${esc(ui.memoOf)} ${esc(memoDay)}</span></div>
 <h1>${esc(page.title)}</h1>
-<p class="lede">${esc(page.opening)}</p>
+<p class="lede">${esc(byUs(data.memo_date, lang))}${esc(page.opening)}</p>
 ${facts ? `<div class="glance">${facts}</div>` : ''}
 <div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div>
 <div class="proof"><span>${esc(ui.proof(company))}</span><span>${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words}</span><span>${k.sources || 0} ${ui.sources}</span></div>
