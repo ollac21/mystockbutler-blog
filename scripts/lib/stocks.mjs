@@ -124,7 +124,7 @@ const LANG_CFG = {
 };
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien)\/[^"]*)"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|compare)\/[^"]*)"/g;
 
 export function pagePath(slug, type, lang = 'en') {
   const cfg = LANG_CFG[lang];
@@ -497,7 +497,9 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
   }
-  const links = `<section class="more"><h3>${esc(ui.moreOn(company))}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>${esc(ui.rivals)}</h3><div>${rivals.join('')}</div>` : ''}<h3>${esc(ui.browse)}</h3><div>${hubs.join('')}</div></section>`;
+  // the comparison pages this company is in (English only: the comparisons are English pages)
+  const compares = fr ? [] : (ctx.compareLinks?.get(slug) || []).slice(0, 6).map((c) => `<a href="${comparePath(c.slug)}">${esc(c.label)}</a>`);
+  const links = `<section class="more"><h3>${esc(ui.moreOn(company))}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>${esc(ui.rivals)}</h3><div>${rivals.join('')}</div>` : ''}${compares.length ? `<h3>Side by side</h3><div>${compares.join('')}</div>` : ''}<h3>${esc(ui.browse)}</h3><div>${hubs.join('')}</div></section>`;
   const article = {
     '@type': 'Article',
     headline: page.title,
@@ -578,7 +580,7 @@ function letterNav(present) {
   return `<nav class="letters" aria-label="Companies by letter">${letters.map((l) => `<a href="${letterPath(l)}">${l.toUpperCase()}</a>`).join('')}</nav>`;
 }
 
-export function renderHubs(companies, { today = new Date() } = {}) {
+export function renderHubs(companies, { today = new Date(), compares = 0 } = {}) {
   const byName = [...companies].sort((a, b) => shortName(a).localeCompare(shortName(b)));
   const present = new Set(byName.map((c) => letterOf(shortName(c))));
   const nav = () => letterNav(present);
@@ -590,7 +592,7 @@ export function renderHubs(companies, { today = new Date() } = {}) {
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
   const translated = Object.fromEntries(LANGS.map((l) => [l, byName.filter((c) => TYPES.some((t) => langPage(c, t, l)))]));
   const all = [
-    `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a></p></section>`,
+    `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a>${compares ? ` · <a href="${COMPARE_ROOT}">Companies side by side</a>` : ''}</p></section>`,
     nav(),
     ...groups.map((g) => `<section><h2><a href="/stocks/${INDEX_PATHS[g.key]}/">${esc(INDEX_NAMES[g.key])}</a></h2>${hubList(g.list)}</section>`),
     // companies in none of our indexes (a customer's report, card step 14)
@@ -738,13 +740,206 @@ export function gatePage(built, ctx) {
   const dead = outs.filter((p) => !ctx.exists(p));
   if (dead.length) fails.push(`dead internal links: ${dead.slice(0, 3).join(', ')}`);
   if (outs.length < 3) fails.push(`${outs.length} internal links out (at least 3)`);
-  // Markup shape: the tags we open are closed.
-  for (const tag of ['table', 'article', 'section', 'figure', 'aside', 'div', 'ul']) {
+  fails.push(...unbalanced(html));
+  return fails;
+}
+
+// Markup shape: the tags we open are closed.
+function unbalanced(html) {
+  const fails = [];
+  for (const tag of ['table', 'article', 'section', 'figure', 'aside', 'div', 'ul', 'blockquote']) {
     const open = (html.match(new RegExp(`<${tag}[ >]`, 'g')) || []).length;
     const close = (html.match(new RegExp(`</${tag}>`, 'g')) || []).length;
     if (open !== close) fails.push(`<${tag}> opened ${open}, closed ${close}`);
   }
   return fails;
+}
+
+// THE COMPARISON PAGES (owner 2026-10-22 '1 and 2 build', CTO 17:34Z): /compare/<a>-vs-<b>/, in English, one per pair of
+// rivals in the chain's comparisons file (MyStockButler - Chain V5/compare_pages.py, no model call): the rows both memos
+// print side by side, each figure with its period; who leads on each row (the chain's arithmetic: the higher figure, or the
+// lower one for P/E, net debt and the efficiency ratio; a money row only in one unit); each company's own summary
+// paragraph from its memo, word for word; links to both companies' pages and both free reports. The only words written
+// here are the title ('Visa vs Mastercard stock: the numbers side by side (October 2026)'), the headings and the table
+// labels, all fixed. A pair is drawn only when both companies' stock pages are published from the SAME memos the pair
+// was read from (the memo dates match), so a comparison never shows other numbers than the company's own page.
+export const COMPARE_ROOT = '/compare/';
+const COMPARE_MIN_ROWS = 4;
+const COMPARE_TITLE_MAX = 75;
+const LEAD_WORDS = { higher: 'The higher figure', lower: 'The lower figure' };
+const FORECAST_ROW = /^Weighted price forecast/;            // our own row labels (compare_pages.FORECAST): shape
+// The description names the rows the page shows, in our own words (closed list, one per row label of compare_pages.ROWS).
+const DESC_WORDS = {
+  'Revenue growth': 'revenue growth', 'Operating margin': 'operating margin', 'Net interest margin': 'net interest margin',
+  'Efficiency ratio (lower is leaner)': 'efficiency ratio', 'Return on equity': 'return on equity', 'CET1 capital ratio': 'CET1 ratio',
+  'Free cash flow': 'free cash flow', 'Free cash flow yield': 'free cash flow', 'Net debt (− = net cash)': 'net debt',
+  'Dividend yield': 'dividend yield', 'P/E, last 12 months': 'P/E', 'P/E, next 12 months': 'P/E',
+  'Weighted price forecast, about 1 year': 'price forecasts', 'Weighted price forecast, about 3 years': 'price forecasts',
+};
+const PAGE_SLUG = /^[a-z0-9][a-z0-9-]{0,80}$/;
+
+export function comparePath(slug) {
+  return `${COMPARE_ROOT}${slug}/`;
+}
+
+function monthYear(value) {
+  const d = isoDay(value);
+  return d ? `${MONTHS_EN[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}` : '';
+}
+
+export function compareTitle(pair) {
+  return `${pair.a.name} vs ${pair.b.name} stock: the numbers side by side (${monthYear(pair.memo_date)})`;
+}
+
+function compareDescription(pair) {
+  const words = [...new Set(pair.rows.map((r) => DESC_WORDS[r.label]).filter(Boolean))];
+  const make = (w) => `${pair.a.name} vs ${pair.b.name}: ${w.join(', ')}, side by side from our research memos.`;
+  while (words.length > 1 && make(words).length > 155) words.pop();
+  return make(words);
+}
+
+// The file's shape (a pair the blog can draw at all) and the same-memo rule (both companies' published files carry the
+// memo the pair was read from).
+function pairShape(p) {
+  const side = (s) => s && PAGE_SLUG.test(String(s.slug || '')) && s.name && s.ticker && isoDay(s.memo_date);
+  return !!(p && PAGE_SLUG.test(String(p.slug || '')) && side(p.a) && side(p.b) && p.a.slug !== p.b.slug && Array.isArray(p.rows)
+    && p.rows.every((r) => r && r.label && r.a?.value && r.b?.value && ['a', 'b', ''].includes(r.leader ?? '')));
+}
+
+function sameMemo(p, bySlug) {
+  return bySlug.get(p.a.slug)?.memo_date === p.a.memo_date && bySlug.get(p.b.slug)?.memo_date === p.b.memo_date;
+}
+
+export function renderComparePage(pair, ctx) {
+  const A = pair.a;
+  const B = pair.b;
+  const path = comparePath(pair.slug);
+  const url = `${SITE}${path}`;
+  const title = compareTitle(pair);
+  const description = compareDescription(pair);
+  const ctaOf = (s) => `${APP}/signup?ticker=${encodeURIComponent(s.ticker)}&src=seo-compare`;
+  const exists = (p) => (ctx ? ctx.exists(p) : true);
+  const crumbs = breadcrumbs([{ name: 'Stocks', path: '/stocks/' }, { name: 'Side by side', path: COMPARE_ROOT }, { name: `${A.name} vs ${B.name}`, path }]);
+  const head = (s) => `${esc(s.name)} <span class="tk">${esc(s.ticker)}</span>`;
+  const cell = (c) => `<td><span class="nv">${esc(c.value)}</span>${c.unit || c.period ? `<small>${esc([c.unit, c.period].filter(Boolean).join(' · '))}</small>` : ''}</td>`;
+  const numbers = `<figure class="tbl cmp"><figcaption><span class="tt">The numbers side by side</span><span class="tu">Each figure as its memo prints it, with its period</span></figcaption>
+<div class="tw"><table><thead><tr><th scope="col"></th><th>${head(A)}</th><th>${head(B)}</th></tr></thead><tbody>${pair.rows.map((r) => `<tr><td>${esc(r.label)}</td>${cell(r.a)}${cell(r.b)}</tr>`).join('')}</tbody></table></div></figure>`;
+  const nameOf = { a: A.name, b: B.name };
+  const leads = `<figure class="tbl cmp"><figcaption><span class="tt">The lead on each row</span><span class="tu">— = no lead: a tie, or two figures in different units</span></figcaption>
+<div class="tw"><table><thead><tr><th scope="col"></th><th>Leads</th><th>The lead is</th></tr></thead><tbody>${pair.rows
+    .map((r) => `<tr><td>${esc(r.label)}</td><td${r.leader ? ' class="lead"' : ''}>${r.leader ? esc(nameOf[r.leader]) : '—'}</td><td>${esc(FORECAST_ROW.test(r.label) ? 'The higher weighted return' : LEAD_WORDS[r.better] || '')}</td></tr>`)
+    .join('')}</tbody></table></div></figure>`;
+  const quote = (s) => (s.quote
+    ? `<blockquote class="quote">${mdBlock(s.quote)}<p class="who">${esc(s.name)} (${esc(s.ticker)}), from our memo of ${esc(humanDay(s.memo_date))}${exists(pagePath(s.slug, 'stock')) ? ` · <a href="${pagePath(s.slug, 'stock')}">${esc(UI.en.sibling('stock', s.name))}</a>` : ''}</p></blockquote>`
+    : '');
+  const ctas = `<div class="ctarow"><a class="btn" data-cta="compare-a" href="${esc(ctaOf(A))}">${esc(UI.en.readFull(A.name))}</a><a class="btn" data-cta="compare-b" href="${esc(ctaOf(B))}">${esc(UI.en.readFull(B.name))}</a><span class="sub">${FREE_LINE}</span></div>`;
+  const pagesOf = (s) => TYPES.filter((t) => exists(pagePath(s.slug, t))).map((t) => `<a href="${pagePath(s.slug, t)}">${esc(UI.en.sibling(t, s.name))}</a>`);
+  const others = [...(ctx?.compareLinks?.get(A.slug) || []), ...(ctx?.compareLinks?.get(B.slug) || [])]
+    .filter((c, i, all) => c.slug !== pair.slug && all.findIndex((x) => x.slug === c.slug) === i)
+    .slice(0, 6)
+    .map((c) => `<a href="${comparePath(c.slug)}">${esc(c.label)}</a>`);
+  const links = `<section class="more">${[A, B].map((s) => `<h3>More on ${esc(s.name)}</h3><div>${pagesOf(s).join('')}</div>`).join('')}${others.length ? `<h3>Side by side</h3><div>${others.join('')}</div>` : ''}<h3>Browse</h3><div><a href="${COMPARE_ROOT}">All comparisons</a><a href="/stocks/">All stocks</a></div></section>`;
+  const days = [isoDay(A.memo_date), isoDay(B.memo_date)].sort();
+  const article = {
+    '@type': 'Article',
+    headline: title,
+    description,
+    datePublished: days[0],
+    dateModified: days[1],
+    author: { '@id': ORG['@id'] },
+    publisher: { '@id': ORG['@id'] },
+    mainEntityOfPage: url,
+    about: [A, B].map((s) => ({ '@type': 'Corporation', name: s.company || s.name, tickerSymbol: s.ticker })),
+    inLanguage: 'en',
+  };
+  const html = shell({
+    title,
+    description,
+    canonical: url,
+    jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
+    meta: { type: 'compare', ticker: `${A.ticker} vs ${B.ticker}`, cta: ctaOf(A), lang: 'en', label: `${A.name} vs ${B.name}` },
+    body: `<div class="layout one"><article>
+${crumbs.html}
+<div class="kicker"><span>Side by side</span><span>${esc(A.name)} (${esc(A.ticker)}) and ${esc(B.name)} (${esc(B.ticker)})</span><span>${days[0] === days[1] ? `Memos of ${esc(humanDay(days[0]))}` : `Memos of ${esc(humanDay(A.memo_date))} and ${esc(humanDay(B.memo_date))}`}</span></div>
+<h1>${esc(title)}</h1>
+<h2>How do ${esc(A.name)} and ${esc(B.name)} compare?</h2>
+${numbers}
+${ctas}
+<h2>Who leads on what?</h2>
+${leads}
+<h2>What does each company do?</h2>
+${quote(A)}
+${quote(B)}
+${ctas.replace(/data-cta="compare-/g, 'data-cta="compare-end-')}
+${links}
+</article></div>`,
+  });
+  const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
+  return { path, url, type: 'compare', lang: 'en', slug: pair.slug, ticker: `${A.ticker} vs ${B.ticker}`, title, description,
+    lastmod: days[1], alternates: [], html, outLinks, pair };
+}
+
+// THE COMPARISONS' GATE: the page as published (title, description, one h1, canonical, robots, JSON-LD), the rows, the two
+// quotes in the static HTML, no number in the title or description but the memo's year, the links. ctx = null checks the
+// page alone (no link check).
+export function gateCompare(built, ctx) {
+  const fails = [];
+  const { html, pair } = built;
+  const titleText = textOf((/<title>([\s\S]*?)<\/title>/.exec(html) || [])[1] || '');
+  if (titleText.length > COMPARE_TITLE_MAX) fails.push(`title is ${titleText.length} characters (at most ${COMPARE_TITLE_MAX})`);
+  if (!/ vs .* stock/.test(titleText)) fails.push('title lacks the search phrase');
+  const descText = textOf((/<meta name="description" content="([^"]*)"/.exec(html) || [])[1] || '');
+  if (!descText || descText.length > 155) fails.push(`meta description is ${descText.length} characters (1 to 155)`);
+  const h1 = (html.match(/<h1[ >]/g) || []).length;
+  if (h1 !== 1) fails.push(`${h1} h1`);
+  if ((/<link rel="canonical" href="([^"]*)"/.exec(html) || [])[1] !== built.url) fails.push('canonical is not the page itself');
+  if (!/<meta name="robots" content="index,follow/.test(html)) fails.push('robots meta is not index,follow');
+  try {
+    const ld = JSON.parse((/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html) || [])[1] || 'null');
+    const types = (ld?.['@graph'] || []).map((n) => n['@type']);
+    for (const t of ['BreadcrumbList', 'Article', 'Organization']) if (!types.includes(t)) fails.push(`JSON-LD lacks ${t}`);
+  } catch {
+    fails.push('JSON-LD does not parse');
+  }
+  if (pair.rows.length < COMPARE_MIN_ROWS) fails.push(`${pair.rows.length} rows (at least ${COMPARE_MIN_ROWS})`);
+  const visible = textOf(html);
+  for (const s of [pair.a, pair.b]) {
+    if (!s.quote) fails.push(`no summary paragraph for ${s.name}`);
+    else if (!visible.includes(textOf(mdBlock(s.quote)))) fails.push(`${s.name}'s paragraph is not in the static HTML`);
+  }
+  // Existence: the only number of the title and the description is the memo's year (a digit inside a word, 'CET1', or
+  // inside a company's name, '3M', is not a number).
+  const year = isoDay(pair.memo_date).slice(0, 4);
+  for (const [name, value] of [['title', titleText], ['description', descText]]) {
+    const bare = [pair.a.name, pair.b.name].reduce((t, n) => t.split(n).join(' '), value);
+    for (const n of bare.match(/(?<![\p{L}\d])\d[\d,.]*\d(?![\p{L}])|(?<![\p{L}\d])\d(?![\p{L}\d])/gu) || []) if (n !== year) fails.push(`${name} prints ${n}`);
+    const bad = BANNED.exec(value);
+    if (bad) fails.push(`${name} uses "${bad[1]}"`);
+  }
+  const bytes = Buffer.byteLength(html, 'utf8');
+  if (bytes > MAX_BYTES) fails.push(`${Math.round(bytes / 1024)} KB (at most 100)`);
+  if (ctx) {
+    const outs = [...new Set(built.outLinks)];
+    const dead = outs.filter((p) => !ctx.exists(p));
+    if (dead.length) fails.push(`dead internal links: ${dead.slice(0, 3).join(', ')}`);
+    if (outs.length < 3) fails.push(`${outs.length} internal links out (at least 3)`);
+  }
+  fails.push(...unbalanced(html));
+  return fails;
+}
+
+function renderCompareHub(pairs) {
+  const list = [...pairs].sort((x, y) => `${x.a.name} ${x.b.name}`.localeCompare(`${y.a.name} ${y.b.name}`));
+  return hubPage({
+    path: COMPARE_ROOT,
+    title: 'Stocks side by side: rival companies compared',
+    description: `${list.length} pairs of rival companies, each compared on the numbers their two research memos print.`,
+    intro: `${list.length} pairs of rival companies, side by side on the numbers of their research memos.`,
+    search: true,
+    sections: [`<ul class="list">${list.map((p) => `<li data-name="${esc(`${p.a.name} ${p.b.name} ${p.a.ticker} ${p.b.ticker}`.toLowerCase())}"><a class="nm" href="${comparePath(p.slug)}">${esc(p.a.name)} vs ${esc(p.b.name)}</a> <span class="tk">${esc(p.a.ticker)} · ${esc(p.b.ticker)}</span><span class="dt">Memos of ${esc(monthYear(p.memo_date))}</span></li>`).join('')}</ul>`,
+      '<p><a href="/stocks/">All stocks</a></p>'],
+    crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Side by side', path: COMPARE_ROOT }],
+  });
 }
 
 export const STOCKS_CSS = `:root{--page:#F6F5F1;--paper:#FAF9F5;--ink:#1C1E22;--muted:#5C636B;--rule:#E4E2DA;--green:#13794A;--green-d:#0F633C;--teal:#0F5E63;--teal-t:#0F3F43;--trow:#E3E7EA;--ttot:#F2F7F7;--mint:#EAF4EE}
@@ -801,17 +996,22 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .search{margin:14px 0 6px}.search label{display:block;font:700 14px/1.3 Inter,sans-serif;margin-bottom:6px}.search input{width:100%;font:500 17px/1.3 Inter,sans-serif;padding:13px 14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff}
 .strip{background:var(--page);border:1px solid var(--rule);border-radius:10px;padding:4px 18px 10px;margin:18px 0}
 .bar{display:none}
+.layout.one{grid-template-columns:minmax(0,820px)}
+.cmp th .tk{display:block;font:600 11px/1.3 ui-monospace,Menlo,monospace;color:var(--muted)}
+.cmp .nv{white-space:nowrap}.cmp td small{display:block;font:400 11.5px/1.3 Inter,sans-serif;color:#6B7480;white-space:normal}.cmp td.lead{font-weight:700;color:var(--teal-t)}
+.quote{margin:18px 0 22px;padding:2px 0 2px 18px;border-left:3px solid var(--teal)}.quote p.who{font:500 13.5px/1.5 Inter,sans-serif!important;color:var(--muted);margin:6px 0 0!important}
 @media (max-width:1060px){.layout{grid-template-columns:minmax(0,720px);gap:0}.rail{display:none}}
 @media (max-width:640px){.kicker{flex-direction:column;gap:3px}.kicker span+span:before{content:none}.hnav .lk{display:none}.hnav .btn{padding:10px 12px;font-size:13.5px}.layout{padding-top:16px}.lede{font-size:19px}article p,article li{font-size:17px}h2{font-size:23px}
 .glance{grid-template-columns:repeat(2,minmax(0,1fr))}.glance>div:nth-child(3){padding-left:0;border-left:0}.glance>div:nth-child(n+3){border-top:1px solid var(--rule)}
 .list .pg{margin-left:0;width:100%}
 .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--rule);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));gap:12px;align-items:center;box-shadow:0 -8px 20px rgba(0,0,0,.06)}
 .bar .t{flex:1;font:600 13px/1.3 Inter,sans-serif}.bar .t span{display:block;font-weight:500;color:var(--muted)}.bar .btn{padding:11px 14px;font-size:14px}}
+@media (max-width:640px){.cmp table{font-size:13px}.cmp th,.cmp td{padding:6px 5px;white-space:normal}.cmp th:first-child,.cmp td:first-child{min-width:0;width:36%}}
 `;
 
 // The whole stock site from the per-company files. Returns { pages, held, report }. A French (S&P/TSX 60) or German
 // (S&P 500) page is published only beside its English page: it is that page with the chain's translated pieces.
-export function buildStockSite(companies, { today = new Date() } = {}) {
+export function buildStockSite(companies, { today = new Date(), compares = [] } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
@@ -821,7 +1021,30 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
   for (const c of usable) for (const t of TYPES) if (c.pages[t]) titleCount.set(c.pages[t].title, (titleCount.get(c.pages[t].title) || 0) + 1);
   const sharedTitles = new Set([...titleCount].filter(([, n]) => n > 1).map(([t]) => t));
   const hubPaths = new Set();
-  const ctx = { bySlug, slugOf, sharedTitles, exists: (p) => exists0.has(p) || hubPaths.has(p) };
+  // The comparison pages (CTO 17:34Z): a pair is live when its page passes its own gate, both companies' stock pages
+  // are published and both are the memos the pair was read from; the company pages link the live ones.
+  const comparePaths = new Set();
+  const compareLinks = new Map();
+  const ctx = { bySlug, slugOf, sharedTitles, compareLinks, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) };
+  const compareHeld = [];
+  const pairsOk = (Array.isArray(compares) ? compares : []).filter((p) => {
+    if (!pairShape(p)) return false;
+    const fails = gateCompare(renderComparePage(p, null), null);
+    if (fails.length) compareHeld.push({ path: comparePath(p.slug), fails });
+    return !fails.length;
+  });
+  const setCompares = (has) => {
+    const live = pairsOk.filter((p) => sameMemo(p, bySlug) && has(pagePath(p.a.slug, 'stock')) && has(pagePath(p.b.slug, 'stock')));
+    comparePaths.clear();
+    compareLinks.clear();
+    if (live.length) comparePaths.add(COMPARE_ROOT);
+    for (const p of live) {
+      comparePaths.add(comparePath(p.slug));
+      for (const s of [p.a, p.b]) compareLinks.set(s.slug, [...(compareLinks.get(s.slug) || []), { slug: p.slug, label: `${p.a.name} vs ${p.b.name}` }]);
+    }
+    return live;
+  };
+  setCompares((p) => exists0.has(p));
   renderHubs(usable, { today }).forEach((h) => hubPaths.add(h.path));
   const held = [];
   const gate = (list) => {
@@ -854,9 +1077,21 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     for (const c of live) bySlug.set(c.slug, c);
     exists0.clear();
     for (const c of live) for (const [t, l] of variants(c)) exists0.add(pagePath(c.slug, t, l));
+    setCompares((p) => exists0.has(p));
     pass = gate(render(live));
   }
-  const hubs = renderHubs(live, { today });
+  // The comparisons drawn: both stock pages in the final set. If that differs from the set the company pages were drawn
+  // with (the rounds stopped before every held page was out), those companies' English pages are drawn again.
+  const drawnWith = new Set(comparePaths);
+  const passPaths = new Set(pass.map((b) => b.path));
+  const liveCompares = setCompares((p) => passPaths.has(p));
+  if (drawnWith.size !== comparePaths.size || [...drawnWith].some((p) => !comparePaths.has(p))) {
+    const redo = new Set(pairsOk.flatMap((p) => [p.a.slug, p.b.slug]));
+    const again = gate(live.filter((c) => redo.has(c.slug)).flatMap((c) => TYPES.filter((t) => c.pages[t]).map((t) => renderCompanyPage(c, t, ctx, 'en'))));
+    const byPath = new Map(again.map((b) => [b.path, b]));
+    pass = pass.map((b) => (b.lang === 'en' && redo.has(b.slug) ? byPath.get(b.path) : b)).filter(Boolean);
+  }
+  const hubs = renderHubs(live, { today, compares: liveCompares.length });
   const pagePaths = new Set(pass.map((b) => b.path));
   const clash = hubs.filter((h) => pagePaths.has(h.path)).map((h) => h.path);
   if (clash.length) throw new Error(`a hub and a company page share an address: ${clash.join(', ')}`);
@@ -864,13 +1099,27 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
   hubs.forEach((h) => hubPaths.add(h.path));
   const newest = live.map((c) => isoDay(c.memo_date)).sort().pop() || '';
   hubs.forEach((h) => (h.lastmod = newest));
-  const livePaths = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path)]);
+  const compared = [];
+  const finalPaths = new Set(pass.map((b) => b.path));
+  const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) };
+  for (const p of liveCompares) {
+    const built = renderComparePage(p, cctx);
+    const fails = gateCompare(built, cctx);
+    if (fails.length) compareHeld.push({ path: built.path, fails });
+    else compared.push(built);
+  }
+  if (compared.length) {
+    const hub = renderCompareHub(compared.map((b) => b.pair));
+    hub.lastmod = compared.map((b) => b.lastmod).sort().pop();
+    compared.push(hub);
+  }
+  const livePaths = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path), ...compared.map((b) => b.path)]);
   const deadHubLinks = hubs.flatMap((h) => [...new Set(h.outLinks)].filter((l) => !livePaths.has(l)).map((l) => `${h.path} -> ${l}`));
   // In-links: every published company page is linked from at least 3 other pages of the site.
   const inbound = new Map();
-  for (const p of [...pass, ...hubs]) for (const l of new Set(p.outLinks)) if (l !== p.path) inbound.set(l, (inbound.get(l) || 0) + 1);
+  for (const p of [...pass, ...hubs, ...compared]) for (const l of new Set(p.outLinks)) if (l !== p.path) inbound.set(l, (inbound.get(l) || 0) + 1);
   const orphans = [];
-  for (const b of pass) {
+  for (const b of [...pass, ...compared.filter((c) => c.type === 'compare')]) {
     const n = inbound.get(b.path) || 0;
     b.inLinks = n;
     if (n < 3) orphans.push({ path: b.path, inLinks: n });
@@ -881,11 +1130,13 @@ export function buildStockSite(companies, { today = new Date() } = {}) {
     pages_fr: pass.filter((b) => b.lang === 'fr').length,
     pages_de: pass.filter((b) => b.lang === 'de').length,
     hubs: hubs.length,
+    compares: compared.filter((c) => c.type === 'compare').length,
+    compareHeld,
     held,
     orphans,
     deadHubLinks,
     duplicateTitles: [...pass.reduce((m, b) => m.set(b.title, (m.get(b.title) || 0) + 1), new Map())].filter(([, n]) => n > 1).map(([t]) => t),
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
   };
-  return { pages: pass, hubs, held, report };
+  return { pages: pass, hubs, held, report, compares: compared };
 }

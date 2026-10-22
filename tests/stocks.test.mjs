@@ -161,3 +161,70 @@ test("our name in the opening sentence: the three approved strings, from the mem
   assert.match(lede(pages.find((p) => p.path === '/de/aktien/nvda/')), /^Laut der Analyse von MyStockButler vom Oktober 2026: /);
   assert.equal(held.length, 0, JSON.stringify(held));
 });
+
+// COMPARISON PAGES (owner 2026-10-22, CTO 17:34Z): TD and a second bank built from TD's file stand for TD and RBC.
+function banks() {
+  const td = load('stock-td-to.json');
+  const ry = clone(td);
+  Object.assign(ry, { slug: 'ry-to', ticker: 'RY.TO', short_name: 'RBC', company: 'Royal Bank of Canada', memo_date: '2026-10-11T03:00:00Z' });
+  for (const t of Object.keys(ry.pages)) ry.pages[t] = { ...ry.pages[t], title: ry.pages[t].title.replace(/TD/g, 'RBC') };
+  return [td, ry];
+}
+const cellOf = (value, period = 'Oct 2025', unit = '') => ({ value, unit, period });
+function rbcVsTd(over = {}) {
+  return {
+    slug: 'rbc-vs-td', memo_date: '2026-10-11T03:00:00Z',
+    a: { slug: 'ry-to', ticker: 'RY.TO', name: 'RBC', company: 'Royal Bank of Canada', memo_date: '2026-10-11T03:00:00Z', quote: 'Royal Bank of Canada (RBC) is a diversified financial-services group. FY2025 revenue was C$66,605 million.' },
+    b: { slug: 'td-to', ticker: 'TD.TO', name: 'TD', company: 'The Toronto-Dominion Bank', memo_date: '2026-10-10T02:15:57Z', quote: 'Toronto-Dominion Bank sells everyday banking. It serves 28.1 million clients [4].' },
+    rows: [
+      { label: 'Revenue growth', a: cellOf('16.1%'), b: cellOf('18.4%'), leader: 'b', better: 'higher' },
+      { label: 'Efficiency ratio (lower is leaner)', a: cellOf('54.9%'), b: cellOf('49.5%'), leader: 'b', better: 'lower' },
+      { label: 'CET1 capital ratio', a: cellOf('13.5%'), b: cellOf('14.7%'), leader: 'b', better: 'higher' },
+      { label: 'P/E, last 12 months', a: cellOf('17.9x', 'Today (Oct 9, 2026)'), b: cellOf('18.4x', 'Today (Oct 9, 2026)'), leader: 'a', better: 'lower' },
+      { label: 'Weighted price forecast, about 1 year', a: cellOf('274.86 (-1 %)', 'October 2027'), b: cellOf('161.01 (-4 %)', 'October 2027'), leader: 'a', better: 'higher' },
+    ],
+    ...over,
+  };
+}
+
+test('a comparison page: the title, both columns with their periods, who leads, both summaries word for word, the links', () => {
+  const { pages, compares, report } = buildStockSite(banks(), { today: TODAY, compares: [rbcVsTd()] });
+  assert.equal(report.compareHeld.length, 0, JSON.stringify(report.compareHeld));
+  const page = compares.find((c) => c.path === '/compare/rbc-vs-td/');
+  assert.ok(page && compares.some((c) => c.path === '/compare/'));
+  assert.match(page.html, /<title>RBC vs TD stock: the numbers side by side \(October 2026\)<\/title>/);
+  assert.match(page.html, /<td>Efficiency ratio \(lower is leaner\)<\/td><td><span class="nv">54\.9%<\/span><small>Oct 2025<\/small><\/td><td><span class="nv">49\.5%<\/span>/);
+  assert.match(page.html, /<td>P\/E, last 12 months<\/td><td class="lead">RBC<\/td><td>The lower figure<\/td>/);
+  assert.match(page.html, /<td>Weighted price forecast, about 1 year<\/td><td class="lead">RBC<\/td><td>The higher weighted return<\/td>/);
+  assert.ok(page.html.includes('FY2025 revenue was C$66,605 million.'));
+  assert.ok(page.html.includes('It serves 28.1 million clients') && !page.html.includes('[4]'));   // the memo's citation marks are not drawn
+  assert.match(page.html, /signup\?ticker=RY\.TO&amp;src=seo-compare/);
+  assert.match(page.html, /signup\?ticker=TD\.TO&amp;src=seo-compare/);
+  for (const p of ['/stocks/ry-to/', '/stocks/td-to/']) {
+    assert.ok(page.outLinks.includes(p));
+    assert.ok(pages.find((b) => b.path === p).outLinks.includes('/compare/rbc-vs-td/'), `${p} links the comparison`);
+  }
+  assert.ok(!pages.some((b) => b.lang !== 'en' && b.outLinks.includes('/compare/rbc-vs-td/')), 'a French page links no English comparison');
+  assert.equal(report.orphans.length, 0);
+  const ld = JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(page.html)[1]);
+  assert.deepEqual(ld['@graph'].find((n) => n['@type'] === 'Article').about.map((c) => c.tickerSymbol), ['RY.TO', 'TD.TO']);
+});
+
+test('a comparison from another memo than the published page is not drawn, and nothing links to it', () => {
+  const stale = rbcVsTd({ b: { ...rbcVsTd().b, memo_date: '2026-10-01T00:00:00Z' } });
+  const { pages, compares } = buildStockSite(banks(), { today: TODAY, compares: [stale] });
+  assert.equal(compares.length, 0);
+  assert.ok(!pages.some((b) => b.outLinks.some((l) => l.startsWith('/compare/'))));
+});
+
+test('a comparison with a planted fault is held back: a long title, too few rows, a missing summary', () => {
+  const long = rbcVsTd({ a: { ...rbcVsTd().a, name: 'Royal Bank of Canada Financial Group' } });
+  const thin = rbcVsTd({ rows: rbcVsTd().rows.slice(0, 3) });
+  const mute = rbcVsTd({ b: { ...rbcVsTd().b, quote: '' } });
+  for (const [pair, why] of [[long, 'title is'], [thin, '3 rows'], [mute, 'no summary paragraph']]) {
+    const { compares, report, pages } = buildStockSite(banks(), { today: TODAY, compares: [pair] });
+    assert.equal(compares.length, 0, why);
+    assert.ok(report.compareHeld.some((h) => h.fails.some((f) => f.includes(why))), JSON.stringify(report.compareHeld));
+    assert.ok(!pages.some((b) => b.outLinks.some((l) => l.startsWith('/compare/'))));
+  }
+});

@@ -20,7 +20,7 @@ import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
-import { readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
+import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -607,7 +607,7 @@ function renderLlms(entries, stockPages = []) {
     return `- [${title}](${SITE}/${post.slug}/)${excerpt ? `: ${excerpt}` : ''}`;
   });
   const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
-  return `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Articles\n\n${lines.join('\n')}\n${stocks.length ? `\n## Stock pages (forecast, dividend, earnings)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
+  return `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Articles\n\n${lines.join('\n')}\n${stocks.length ? `\n## Stock pages (forecast, dividend, earnings, side by side)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
 }
 
 async function main() {
@@ -655,7 +655,7 @@ async function main() {
   }
   await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
-  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report') });
+  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT) });
   const postsXml = renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
   const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps)];

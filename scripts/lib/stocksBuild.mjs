@@ -155,6 +155,32 @@ export async function readStockData(root, { url = process.env.STOCK_PAGES_URL ||
   return [...out.values()];
 }
 
+// The comparison pages' file (B112, CTO 17:34Z; the chain's compare_pages.py): through the same app function (file
+// 'compare'), else the copy committed in data/compare.json. A stale copy draws nothing wrong: a pair is drawn only when both
+// companies' page files carry the memos it was read from (buildStockSite).
+export async function readCompareData(root, { url = process.env.STOCK_PAGES_URL || '' } = {}) {
+  let kept = [];
+  try {
+    kept = JSON.parse(await readFile(path.join(root, 'data', 'compare.json'), 'utf8'))?.pairs || [];
+  } catch {
+    kept = [];
+  }
+  if (url) {
+    try {
+      const data = await fetchJson(url, 'compare');
+      if (data?.schema === 'public_compare_v1' && Array.isArray(data.pairs)) {
+        console.log(`Comparisons: ${data.pairs.length} pair(s) fetched (built ${data.built_at || '?'}).`);
+        return data.pairs;
+      }
+      console.log('WARNING: comparisons: the fetched file is not a comparisons file; the committed one is used');
+    } catch (err) {
+      console.log(`WARNING: comparisons: the file could not be fetched (${err.message}); the committed one is used`);
+    }
+  }
+  console.log(`Comparisons: ${kept.length} pair(s) from data/compare.json.`);
+  return kept;
+}
+
 // One sitemap; a page with a translation lists both versions (hreflang), as its <link rel="alternate"> tags do.
 function urlset(entries) {
   const urls = entries.map((e) => {
@@ -165,11 +191,11 @@ function urlset(entries) {
 }
 
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
-export async function writeStockSite(out, companies, { today = new Date(), reportDir = '' } = {}) {
-  const { pages, hubs, held, report } = buildStockSite(companies, { today });
+export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [] } = {}) {
+  const { pages, hubs, held, report, compares: compared } = buildStockSite(companies, { today, compares });
   await mkdir(path.join(out, 'stocks', 'assets'), { recursive: true });
   await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS);
-  for (const p of [...pages, ...hubs]) {
+  for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });
     await writeFile(path.join(dir, 'index.html'), p.html);
@@ -184,15 +210,17 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     const hubEntries = hubs.filter((h) => (h.lang || 'en') === lang).map((h) => ({ url: h.url, lastmod: h.lastmod }));
     if (hubEntries.length) sitemaps[`sitemap-stock-hubs-${lang}.xml`] = hubEntries;
   }
+  if (compared.length) sitemaps['sitemap-compare-en.xml'] = compared.map((p) => ({ url: p.url, lastmod: p.lastmod }));
   for (const [name, entries] of Object.entries(sitemaps)) await writeFile(path.join(out, name), urlset(entries));
-  const llms = pages.map((p) => ({ title: p.title, url: p.url, description: p.description }));
-  const table = pages.map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
+  const llms = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ title: p.title, url: p.url, description: p.description }));
+  const table = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
   const full = { built_at: new Date().toISOString(), ...report, fetch: { ...FETCH_STATS }, table };
   if (reportDir) {
     await mkdir(reportDir, { recursive: true });
     await writeFile(path.join(reportDir, 'stocks.json'), `${JSON.stringify(full, null, 1)}\n`);
   }
   console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
-  for (const h of held.slice(0, 40)) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
+  console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
+  for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
   return { sitemaps, llms, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }

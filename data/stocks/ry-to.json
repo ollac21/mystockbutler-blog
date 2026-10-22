@@ -8,50 +8,37 @@
  "index": "sptsx60",
  "company_type": "bank",
  "country": "canada",
- "memo_date": "2026-10-19T07:11:17Z",
- "memo_date_text": "October 19, 2026",
- "price": 280.01,
- "price_date": "2026-10-16T20:00:00Z",
+ "memo_date": "2026-10-22T06:18:18Z",
+ "memo_date_text": "October 22, 2026",
+ "price": 283.62,
+ "price_date": "2026-10-21T20:00:00Z",
  "next_earnings": "2026-12-03",
  "counts": {
   "chapters": 8,
-  "paragraphs": 254,
-  "tables": 29,
-  "words": 18051,
-  "sources": 167
+  "paragraphs": 262,
+  "tables": 28,
+  "words": 17624,
+  "sources": 158
  },
  "teaser": {
   "chapter": "1. The business",
-  "text": "Royal Bank of Canada, usually called RBC, makes money by helping people and organizations store, borrow, move, invest and protect it. A dollar enters through a deposit, payment, loan, investment service or insurance promise, and leaves through funding costs, operating expenses, claims, losses and taxes before any remainder becomes profit."
+  "text": "Royal Bank of Canada, usually called RBC, sells financial services: it keeps money, lends it, invests it, moves it and protects against financial loss. Its dollar comes in through interest, fees and insurance premiums, and goes out to pay depositors, deliver services, pay claims, absorb loan losses and meet tax."
  },
  "sources": [
   {
-   "title": "2025 annual report, Insurance, Glossary and historical information",
-   "url": "https://www.sec.gov/Archives/edgar/data/1000275/000119312525305934/d73208dex991.pdf"
+   "title": "Annual report — FY2025",
+   "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2025_e.pdf"
+  },
+  {
+   "title": "Annual report — FY2024",
+   "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2024_e.pdf"
   },
   {
    "title": "Annual report — FY2023",
    "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/ar_2023_e.pdf"
-  },
-  {
-   "title": "Interim report — Q3 2026",
-   "url": "https://www.rbc.com/investor-relations/_assets-custom/pdf/2026q3_report.pdf"
   }
  ],
- "rivals": [
-  "TD.TO",
-  "BMO.TO",
-  "BNS.TO",
-  "CM.TO",
-  "NA.TO",
-  "JPM",
-  "BAC",
-  "WFC",
-  "GS",
-  "MS",
-  "C",
-  "HSBC"
- ],
+ "rivals": [],
  "chapters": [
   "Executive summary",
   "1. The business",
@@ -67,25 +54,32 @@
   "stock": {
    "type": "stock",
    "title": "RBC stock forecast",
-   "meta_description": "RBC's weighted forecast is C$300.37 in October 2029; scenarios range from C$204.84 to C$401.85, with valuation at 17.6x trailing P/E.",
-   "opening": "RBC's weighted forecast is C$300.37 in October 2029, with the bear case at 25%, the base case at 55% and the bull case at 20%. It hinges on manageable credit costs, resilient margins, HSBC Canada and City National execution, and retention of its valuation premium.",
-   "closing": "The full memo explains RBC's business, its rivals, its management and its risks.",
+   "meta_description": "RBC stock forecast: probability-weighted scenarios, key credit and margin drivers, earnings, dividends and valuation.",
+   "opening": "RBC's probability-weighted share price is C$274.86 in October 2027, C$273.53 in October 2028, and C$278.46 in October 2029, excluding dividends. It hinges on earnings growth, credit costs and valuation.",
+   "closing": "The full memo explains RBC's business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "Where could RBC's shares be by 2029?",
+     "heading": "Where could RBC's shares be by October 2029?",
      "paragraphs": [
       {
-       "n": 13,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "The weighted forecast is C$277.84 in October 2027, with +2% including dividends. It is C$300.37 in October 2029, with +16% including dividends. The bear case has 25% probability and the base case 55%. The bull case has 20%."
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast sees RBC’s return as nearly flat at first, followed by modest gains. The probability-weighted share price is C$274.86 in October 2027, C$273.53 in October 2028, and C$278.46 in October 2029, excluding dividends. Those figures imply returns of negative 1%, positive 2%, and positive 6% from today’s C$283.62."
+      },
+      {
+       "n": 249,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The range is wide because valuation is already demanding: by the final date, the bear case reaches C$186.11 while the bull case reaches C$389.83. The forecast assigns 29% to the bear, 54% to the base, and 17% to the bull."
       }
      ],
      "table": {
       "title": "What the shares could be worth",
-      "unit": "CAD per share at each date; in brackets the return since today's 280.01, dividends included",
-      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 280.01, dividends included)",
+      "unit": "CAD per share at each date; in brackets the return since today's 283.62, dividends included",
+      "caption": "What the shares could be worth (CAD per share at each date; in brackets the return since today's 283.62, dividends included)",
       "head": [
        "Case",
        "Probability",
@@ -96,71 +90,71 @@
       "rows": [
        [
         "Bear",
-        "25%",
-        "225.75 (-17%)",
-        "215.54 (-18%)",
-        "204.84 (-19%)"
+        "29 %",
+        "228.96 (-17 %)",
+        "197.47 (-25 %)",
+        "186.11 (-27 %)"
        ],
        [
         "Base",
-        "55%",
-        "286.35 (+5%)",
-        "297.02 (+12%)",
-        "306.90 (+18%)"
+        "54 %",
+        "285.41 (+3 %)",
+        "289.49 (+7 %)",
+        "293.00 (+12 %)"
        ],
        [
         "Bull",
-        "20%",
-        "319.56 (+17%)",
-        "358.68 (+34%)",
-        "401.85 (+52%)"
+        "17 %",
+        "319.64 (+15 %)",
+        "352.58 (+30 %)",
+        "389.83 (+46 %)"
        ],
        [
         "Weighted",
-        "100%",
-        "277.84 (+2%)",
-        "288.98 (+9%)",
-        "300.37 (+16%)"
+        "100 %",
+        "274.86 (-1 %)",
+        "273.53 (+2 %)",
+        "278.46 (+6 %)"
        ]
       ],
-      "note": "The weighted October 2027 value is below today's price, so its displayed return of plus two percent may confuse you."
+      "note": ""
      }
     },
     {
-     "heading": "What has to go right or wrong for RBC?",
+     "heading": "What has to go right, and what could go wrong for RBC?",
      "paragraphs": [
       {
-       "n": 250,
+       "n": 258,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.4 — Bear and bull",
-       "text": "The bear case assumes credit costs keep rising, mortgage and deposit competition compress spreads, City National misses its return target and buybacks slow. It produces C$225.75 in October 2027 and C$204.84 in October 2029, with a 25% probability. Impaired loans reached C$10,143 million and allowance coverage fell to 76.8%, making the risk concrete. The U.S. region’s 10.7% ROE remains below its 12.0% target. The probability stays below the base because RBC retains earnings and capital capacity."
+       "text": "The bear case requires household and commercial credit losses to rise, deposit costs to pressure margins, and integration and growth spending to weaken efficiency. Earnings still grow, but below the 7% objective, while valuation contracts. The share price reaches C$228.96 at the first date and C$186.11 by the last, excluding dividends. Its 29% probability reflects rising impaired loans, the elevated starting multiple, and the specialists’ bear estimates clustering near 25%–30%."
       },
       {
-       "n": 251,
+       "n": 259,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
        "subsection": "8.4 — Bear and bull",
-       "text": "The bull case requires credit improvement, disciplined pricing, durable HSBC Canada revenue, better wealth and capital-markets momentum, and City National reaching its target. It produces C$319.56 first and C$401.85 last, with a 20% probability. Q3 ROE of 17.9% exceeded the 17.0%+ objective. But the bull also requires a 3.2x multiple and C$9.0 billion of 2029 buybacks, so it depends on several favorable outcomes."
+       "text": "The bull case requires HSBC savings and cross-selling to deepen, transaction banking and wealth fees to expand, and AI initiatives to improve productivity. Credit must remain controlled while capital supports larger buybacks and faster dividend growth. The price reaches C$319.64 initially and C$389.83 by the last date. Its 17% probability reflects the demanding requirement that several initiatives succeed together while RBC preserves its premium."
       }
      ],
      "table": null
     },
     {
-     "heading": "How much does RBC earn and give back?",
+     "heading": "How much cash does RBC really make and give back?",
      "paragraphs": [
       {
-       "n": 14,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "In 2025, RBC declared C$6.04 per share in dividends and spent C$2,768 million on share buybacks. It retained C$6.09 per share."
+       "n": 193,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.1 — What an investor pays today",
+       "text": "Bank valuation also differs from factory valuation. Deposits are money RBC owes to customers, but they are also the raw material it uses to make loans. RBC pays deposit interest, funds staff and technology, absorbs loan losses and keeps the remainder as profit. That is why EBITDA and conventional free cash flow do not cleanly measure cash available to owners. Earnings, return on equity, book value and regulatory capital work better."
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "C$ per share, except share-count changes in %",
-      "caption": "What one share gets (C$ per share, except share-count changes in %)",
+      "title": "Results",
+      "unit": "C$ millions",
+      "caption": "Results (C$ millions)",
       "head": [
        "Row",
        "Oct 2025",
@@ -171,6 +165,14 @@
       ],
       "rows": [
        [
+        "Net income attributable to shareholders",
+        "20,362",
+        "16,230",
+        "14,605",
+        "15,794",
+        "16,038"
+       ],
+       [
         "EPS, diluted",
         "14.07",
         "11.25",
@@ -179,103 +181,83 @@
         "11.06"
        ],
        [
-        "− Dividends declared divided by diluted average shares",
-        "6.02",
+        "Dividend per share",
+        "6.04",
         "5.60",
         "5.34",
-        "4.94",
+        "4.96",
         "4.32"
        ],
        [
-        "− Share buybacks, per share",
-        "1.96",
-        "0.10",
-        "0.00",
-        "3.86",
-        "0.00"
-       ],
-       [
-        "**= Kept, per share**",
-        "6.09",
-        "5.55",
-        "4.97",
-        "2.26",
-        "6.74"
+        "Return on equity",
+        "16.3%",
+        "14.4%",
+        "14.3%",
+        "16.4%",
+        "18.6%"
        ]
       ],
-      "note": "The company kept C$6.09 per share because it paid C$1.96 per share for share buybacks, which counts as money returned to shareholders even though it can make each remaining share a larger piece of the company."
+      "note": "Revenue cannot be compared fairly across all years because the company changed its insurance accounting and included a full year of HSBC Canada in 2025 but only seven months in 2024."
      }
     },
     {
      "heading": "What does an investor pay for RBC today?",
-     "paragraphs": [
-      {
-       "n": 178,
-       "section": "essay-6",
-       "chapter": "6. Valuation and the stock",
-       "subsection": "6.1 — What an investor pays today",
-       "text": "RBC asks investors to pay a substantial premium for its ability to earn strong profits on shareholder capital. At C$280.01 on October 19, 2026, its trailing P/E is 17.6x, meaning investors pay C$17.60 for each dollar of recent annual profit. Its forward P/E is 17.1x, based on expected profit over the next twelve months."
-      }
-     ],
+     "paragraphs": [],
      "table": {
       "title": "What an investor pays today",
       "unit": "C$ millions",
       "caption": "What an investor pays today (C$ millions)",
       "head": [
        "Row",
-       "Today (Oct 19, 2026)"
+       "Today (Oct 22, 2026)"
       ],
       "rows": [
        [
         "Share price",
-        "280.01"
+        "283.62"
        ],
        [
         "P/E, last 12 months (calculated)",
-        "17.6x"
+        "17.9x"
        ],
        [
         "P/E, next 12 months (calculated)",
-        "17.1x"
+        "17.3x"
        ],
        [
         "Price to book (calculated)",
-        "2.9x"
-       ],
-       [
-        "Price to tangible book (calculated)",
-        "3.6x"
+        "2.93x"
        ],
        [
         "Dividend yield (calculated)",
         "2.5%"
        ]
       ],
-      "note": "The share price is from October 16, while the report is dated October 19, so the figures are not all measured on the same day."
+      "note": "The next-twelve-month price-to-earnings ratio uses analysts’ expected profit, so it can change even when today’s share price stays the same."
      }
     }
    ],
    "facts": [
     {
      "label": "Share price today, CAD",
-     "value": "280.01"
+     "value": "283.62"
     },
     {
      "label": "Weighted scenario, October 2029",
-     "value": "300.37 (+16%)"
+     "value": "278.46 (+6 %)"
     },
     {
      "label": "P/E, last 12 months",
-     "value": "17.6x"
+     "value": "17.9x"
     },
     {
      "label": "Price to book",
-     "value": "2.9x"
+     "value": "2.93x"
     }
    ],
    "chart": {
     "kind": "scenarios",
-    "today": 280.01,
+    "today": 283.62,
     "columns": [
      "October 2027",
      "October 2028",
@@ -283,35 +265,35 @@
     ],
     "rows": {
      "Bear": {
-      "probability": "25%",
+      "probability": "29 %",
       "values": [
-       "225.75 (-17%)",
-       "215.54 (-18%)",
-       "204.84 (-19%)"
+       "228.96 (-17 %)",
+       "197.47 (-25 %)",
+       "186.11 (-27 %)"
       ]
      },
      "Base": {
-      "probability": "55%",
+      "probability": "54 %",
       "values": [
-       "286.35 (+5%)",
-       "297.02 (+12%)",
-       "306.90 (+18%)"
+       "285.41 (+3 %)",
+       "289.49 (+7 %)",
+       "293.00 (+12 %)"
       ]
      },
      "Bull": {
-      "probability": "20%",
+      "probability": "17 %",
       "values": [
-       "319.56 (+17%)",
-       "358.68 (+34%)",
-       "401.85 (+52%)"
+       "319.64 (+15 %)",
+       "352.58 (+30 %)",
+       "389.83 (+46 %)"
       ]
      },
      "Weighted": {
-      "probability": "100%",
+      "probability": "100 %",
       "values": [
-       "277.84 (+2%)",
-       "288.98 (+9%)",
-       "300.37 (+16%)"
+       "274.86 (-1 %)",
+       "273.53 (+2 %)",
+       "278.46 (+6 %)"
       ]
      }
     }
@@ -321,87 +303,70 @@
   },
   "dividend": {
    "type": "dividend",
-   "title": "RBC dividend: payments, coverage and yield",
-   "meta_description": "RBC's dividend payments, coverage, plans and current yield, in plain English.",
-   "opening": "RBC declared C$6.04 per share in dividends in 2025. RBC's own dividend payout ratio was 43.0% in 2025, while buybacks were the flexible part of the distribution.",
-   "closing": "The full RBC memo also covers RBC's business, its rivals, its management and its risks.",
+   "title": "RBC dividend: pay and coverage",
+   "meta_description": "RBC pays a rising dividend, while earnings and capital—not industrial free cash flow—are the better coverage tests.",
+   "opening": "RBC's dividend rises gradually in the base case, from C$7.28 per share to C$8.24. RBC's dividend is covered through earnings and capital, while credit costs can consume money otherwise available for dividends, buybacks or growth.",
+   "closing": "The full memo also examines RBC's business, rivals, management and risks.",
    "blocks": [
     {
      "heading": "How much does RBC pay in dividends?",
      "paragraphs": [
       {
-       "n": 14,
-       "section": "executive-summary",
-       "chapter": "Executive summary",
-       "subsection": "The verdict",
-       "text": "In 2025, RBC declared C$6.04 per share in dividends and spent C$2,768 million on share buybacks. It retained C$6.09 per share."
+       "n": 256,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.3 — The drivers",
+       "text": "Dividends rise gradually in the base case, from C$7.28 per share to C$8.24. That assumes one quarterly increase each May, following the latest 7% increase to C$1.76. The bear holds dividends at C$7.04 through the first two windows before a modest increase, because provisions and impaired loans could absorb earnings. The bull reaches C$9.44 by assuming faster increases, supported by stronger earnings and capital generation. The base fits RBC’s 40%–50% payout policy and its FY2025 payout of 43%."
       }
      ],
      "table": {
-      "title": "What one share gets",
-      "unit": "C$ per share, except share-count changes in %",
-      "caption": "What one share gets (C$ per share, except share-count changes in %)",
+      "title": "The forecast's table",
+      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
+      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
       "head": [
-       "Row",
-       "Oct 2025",
-       "Oct 2024",
-       "Oct 2023",
-       "Oct 2022",
-       "Oct 2021"
+       "",
+       "October 2027",
+       "October 2028",
+       "October 2029"
       ],
       "rows": [
        [
-        "EPS, diluted",
-        "14.07",
-        "11.25",
-        "10.32",
-        "11.06",
-        "11.06"
+        "Book value",
+        "143,922 (142,422 / 144,422)",
+        "152,522 (148,922 / 153,922)",
+        "161,822 (156,622 / 164,422)"
        ],
        [
-        "− Dividends declared divided by diluted average shares",
-        "6.02",
-        "5.60",
-        "5.34",
-        "4.94",
-        "4.32"
+        "Shares (millions)",
+        "1,362 (1,368 / 1,356)",
+        "1,344 (1,358 / 1,332)",
+        "1,326 (1,346 / 1,308)"
        ],
        [
-        "− Share buybacks, per share",
-        "1.96",
-        "0.10",
-        "0.00",
-        "3.86",
-        "0.00"
+        "Dividends per share",
+        "7.28 (7.04 / 7.52)",
+        "7.76 (7.04 / 8.48)",
+        "8.24 (7.28 / 9.44)"
        ],
        [
-        "**= Kept, per share**",
-        "6.09",
-        "5.55",
-        "4.97",
-        "2.26",
-        "6.74"
+        "Price to book value",
+        "2.70 (2.20 / 3.00)",
+        "2.55 (1.80 / 3.05)",
+        "2.40 (1.60 / 3.10)"
        ]
       ],
-      "note": "The company kept C$6.09 per share because it paid C$1.96 per share for share buybacks, which counts as money returned to shareholders even though it can make each remaining share a larger piece of the company."
+      "note": ""
      }
     },
     {
-     "heading": "Does RBC's dividend come from cash the business makes?",
+     "heading": "Is RBC's dividend covered by its cash?",
      "paragraphs": [
       {
-       "n": 101,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the capital went",
-       "text": "Over five fiscal years, earnings for common shareholders totalled C$81,473 million. Dividends declared on common shares totalled C$36,965 million. Buybacks totalled C$8,334 million. That left C$36,174 million inside the business."
-      },
-      {
-       "n": 103,
-       "section": "essay-3",
-       "chapter": "3. History and capital decisions",
-       "subsection": "3.3 — Where the capital went",
-       "text": "Buybacks were the flexible part of the distribution. RBC spent C$5,426 million repurchasing shares in 2022. Buybacks fell to nothing in 2023 and C$140 million in 2024 before rising to C$2,768 million in 2025. Dividends followed a steadier path. Total distributions consumed 79.6% of common earnings in 2022. That share was 56.7% in 2025. RBC’s own dividend payout ratio was 43.0% in 2025 because that measure excludes buybacks."
+       "n": 214,
+       "section": "essay-6",
+       "chapter": "6. Valuation and the stock",
+       "subsection": "6.5 — What the price implies",
+       "text": "Credit costs and capital provide the practical test. RBC’s 36-basis-point provision ratio could rise and consume money otherwise available for dividends, buybacks or growth. Its 13.5% CET1 ratio measures high-quality common capital against risk-weighted assets. That capital absorbs losses, but retaining it can limit distributions. RBC’s price assumes it can grow, reward shareholders and preserve that cushion at the same time. The decisive unknown is its sustainable through-cycle ROE."
       }
      ],
      "table": {
@@ -473,64 +438,61 @@
      "heading": "What could change RBC's dividend?",
      "paragraphs": [
       {
-       "n": 248,
+       "n": 260,
        "section": "essay-8",
        "chapter": "8. Where the price could go",
-       "subsection": "8.3 — The drivers",
-       "text": "Dividends rise in the base case from C$7.52 per share in 2027 to C$8.60 in 2029. The bear holds C$7.04 throughout, the current annualized rate; the bull reaches C$8.95. The base follows RBC’s record of annual increases and its 43.0% payout ratio, within the stated 40%–50% range. The bear assumes a pause because credit pressure could demand capital preservation. The bull assumes faster growth alongside stronger earnings, consistent with the 7.0% EPS objective."
+       "subsection": "8.5 — What would change the view",
+       "text": "The forecast would move toward the bear case if provisions and impaired loans broaden during fiscal 2027–2029, or if deposit repricing outpaces asset yields in the first two forecast years. A disappointing return on equity would then make the current premium harder to defend."
       }
      ],
-     "table": {
-      "title": "The forecast's table",
-      "unit": "base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown",
-      "caption": "The forecast's table (base case, then bear / bull in brackets; CAD millions, per share in CAD, unless shown)",
-      "head": [
-       "",
-       "October 2027",
-       "October 2028",
-       "October 2029"
-      ],
-      "rows": [
-       [
-        "Book value",
-        "145,082 (141,082 / 144,982)",
-        "154,582 (147,582 / 154,682)",
-        "164,282 (155,282 / 164,782)"
-       ],
-       [
-        "Shares (millions)",
-        "1,368 (1,375 / 1,361)",
-        "1,353 (1,369 / 1,337)",
-        "1,338 (1,365 / 1,312)"
-       ],
-       [
-        "Dividends per share",
-        "7.52 (7.04 / 7.60)",
-        "8.04 (7.04 / 8.24)",
-        "8.60 (7.04 / 8.95)"
-       ],
-       [
-        "Price to book value",
-        "2.70 (2.20 / 3.00)",
-        "2.60 (2.00 / 3.10)",
-        "2.50 (1.80 / 3.20)"
-       ]
-      ],
-      "note": ""
-     }
+     "table": null
     },
     {
      "heading": "What is RBC's dividend yield today?",
      "paragraphs": [
       {
-       "n": 178,
+       "n": 194,
        "section": "essay-6",
        "chapter": "6. Valuation and the stock",
        "subsection": "6.1 — What an investor pays today",
-       "text": "RBC asks investors to pay a substantial premium for its ability to earn strong profits on shareholder capital. At C$280.01 on October 19, 2026, its trailing P/E is 17.6x, meaning investors pay C$17.60 for each dollar of recent annual profit. Its forward P/E is 17.1x, based on expected profit over the next twelve months."
+       "text": "The 2.5% dividend yield offers cash income, but not safety. RBC must keep earning enough to pay dividends, grow and preserve capital; meanwhile, investors can mark the shares down even while the bank remains profitable."
+      },
+      {
+       "n": 248,
+       "section": "essay-8",
+       "chapter": "8. Where the price could go",
+       "subsection": "8.1 — The verdict",
+       "text": "The forecast sees RBC’s return as nearly flat at first, followed by modest gains. The probability-weighted share price is C$274.86 in October 2027, C$273.53 in October 2028, and C$278.46 in October 2029, excluding dividends. Those figures imply returns of negative 1%, positive 2%, and positive 6% from today’s C$283.62."
       }
      ],
-     "table": null
+     "table": {
+      "title": "What an investor pays today",
+      "unit": "C$ millions",
+      "caption": "What an investor pays today (C$ millions)",
+      "head": [
+       "Row",
+       "Today (Oct 22, 2026)"
+      ],
+      "rows": [
+       [
+        "Share price",
+        "283.62"
+       ],
+       [
+        "Market value (calculated)",
+        "392,651.98"
+       ],
+       [
+        "P/E, last 12 months (calculated)",
+        "17.9x"
+       ],
+       [
+        "Dividend yield (calculated)",
+        "2.5%"
+       ]
+      ],
+      "note": "The next-twelve-month price-to-earnings ratio uses analysts’ expected profit, so it can change even when today’s share price stays the same."
+     }
     }
    ],
    "facts": [
@@ -550,101 +512,88 @@
   "earnings": {
    "type": "earnings",
    "title": "RBC earnings date and guidance",
-   "meta_description": "RBC’s next results are due December 3, 2026; guidance covers returns, growth and operating leverage.",
-   "opening": "RBC’s next results are due December 3, 2026. Watch for positive operating leverage while RBC maintains technology spending and absorbs credit losses.",
-   "closing": "The full memo explains how RBC makes money, competes with rivals, is run by management, and faces its risks.",
+   "meta_description": "RBC reports fiscal fourth-quarter and full-year results on December 3, 2026; see guidance and what to watch in customer adoption, fees and spending.",
+   "opening": "RBC’s next results are expected on December 3, 2026. Watch customer adoption, deposits, fee revenue and spending turn transaction-banking and AI investments into earnings.",
+   "closing": "The full memo also explains RBC’s business, rivals, management and risks.",
    "blocks": [
     {
-     "heading": "What has RBC guided for the year?",
+     "heading": "What has RBC guided for fiscal 2027?",
      "paragraphs": [
       {
-       "n": 212,
+       "n": 10,
+       "section": "executive-summary",
+       "chapter": "Executive summary",
+       "subsection": "The verdict",
+       "text": "Management targets at least 17.0% ROE and at least 7.0% diluted EPS growth. It expects those objectives over three to five years. For fiscal 2027, it targets a 53.0% efficiency ratio and C$300 million of revenue synergies. It also aims for C$700–1,000 million of AI enterprise value."
+      },
+      {
+       "n": 219,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.1 — What management has guided",
-       "text": "Its fiscal 2027 milestones add operating tests: a **53.0% efficiency ratio**, **1.0% return on assets** and **C$300 million of HSBC Canada revenue synergies**. The efficiency ratio measures costs per dollar of revenue, so a lower figure is better. Operating leverage shows whether revenue grows faster than expenses. RBC’s fiscal 2026 outlook called for mid-single-digit net interest income growth and positive all-bank operating leverage."
+       "text": "Near-term guidance calls for mid-single-digit growth in fiscal 2026 net interest income excluding trading and expenses, with revenue growing faster than costs. Canadian Banking’s positive operating-leverage target is **1.0%–2.0%**. For the quarter ending October 2026, management expects margins to remain relatively stable, while the effective tax rate moves toward **21.0%–23.0%**."
       }
      ],
      "table": {
       "title": "Targets and guidance in force",
-      "unit": "C$ millions unless shown otherwise; revenue/RWA changes and CET1 contributions in basis points; U.S. Transaction Banking deposits and City National loans in US$ billions; AUA and GAM AUM in C$ trillions; clients and advisors in people, except Direct Investing clients in thousands and Personal Banking clients and Avion members in millions; mortgage renewal improvement in percentage points",
-      "caption": "Targets and guidance in force (C$ millions unless shown otherwise; revenue/RWA changes and CET1 contributions in basis points; U.S. Transaction Banking deposits and City National loans in US$ billions; AUA and GAM AUM in C$ trillions; clients and advisors in people, except Direct Investing clients in thousands and Personal Banking clients and Avion members in millions; mortgage renewal improvement in percentage points)",
+      "unit": "C$ millions",
+      "caption": "Targets and guidance in force (C$ millions)",
       "head": [
        "Row",
        "Period it covers",
        "Low",
        "High",
-       "Date it was given"
+       "Date given"
       ],
       "rows": [
        [
         "Diluted EPS growth",
-        "Medium term, 3–5 years",
+        "Medium term (3–5 years)",
         "7.0%",
         "",
-        "Dec 3, 2025"
+        "December 3, 2025"
        ],
        [
         "Return on Equity",
-        "Medium term, effective fiscal 2026",
+        "Fiscal 2026 onward; medium term",
         "17.0%",
         "",
-        "Dec 3, 2025"
-       ],
-       [
-        "All-bank net interest income growth (ex-trading)",
-        "Fiscal 2026",
-        "",
-        "",
-        "Aug 27, 2026"
-       ],
-       [
-        "All-bank operating leverage",
-        "Fiscal 2026",
-        "",
-        "",
-        "Aug 27, 2026"
-       ],
-       [
-        "Incremental enterprise value generated from AI",
-        "By end of fiscal 2027",
-        "700",
-        "1,000",
-        "Aug 27, 2026"
+        "December 3, 2025"
        ],
        [
         "Efficiency ratio",
-        "By 2027",
+        "Fiscal 2027",
         "53.0%",
         "53.0%",
-        "Dec 3, 2025"
+        "December 3, 2025"
+       ],
+       [
+        "Target revenue synergies",
+        "By fiscal 2027",
+        "300",
+        "300",
+        "December 3, 2025"
+       ],
+       [
+        "Enterprise value generated from AI",
+        "By fiscal 2027",
+        "700",
+        "1,000",
+        "August 27, 2026"
        ]
       ],
-      "note": "A target shown as 2.0 times means twice the 2024 starting level, not 2.0 percent."
+      "note": "The bank's artificial intelligence target is an estimate of extra company value after investment, not extra profit or sales."
      }
     },
     {
-     "heading": "Did RBC keep its past promises?",
+     "heading": "How have RBC revenue and profit changed over the last eight quarters?",
      "paragraphs": [
       {
-       "n": 136,
-       "section": "essay-4",
-       "chapter": "4. Management and ownership",
-       "subsection": "4.5 — Pay, and promises kept",
-       "text": "ROE, or return on equity, measures profit against shareholders’ capital. RBC reported ROE of 16.3% in fiscal 2025 but missed its three-year ROE objective. The board nevertheless judged overall performance favourably, showing that compensation depends on several measures and on board judgment rather than one target alone."
-      }
-     ],
-     "table": null
-    },
-    {
-     "heading": "What is RBC’s trend in revenue and profit?",
-     "paragraphs": [
-      {
-       "n": 156,
+       "n": 154,
        "section": "essay-5",
        "chapter": "5. The numbers",
        "subsection": "5.5 — The latest quarter",
-       "text": "RBC’s July 2026 quarter was strong and broad, but it was not cleanly stronger everywhere. Revenue rose to C$18,538 million from C$16,985 million a year earlier. Net income attributable to shareholders rose to C$6,022 million from C$5,415 million, while diluted EPS reached C$4.23 from C$3.75."
+       "text": "Revenue reached C$18,538 million, while net income attributable to shareholders reached C$6,022 million. EPS rose to C$4.23. The result continues a broader recovery rather than standing alone."
       }
      ],
      "table": {
@@ -730,18 +679,25 @@
         "13.2%"
        ]
       ],
-      "note": "The net interest margin is not the bank's total profit percentage; it is the difference between interest earned and interest paid, measured against the bank's average interest-earning assets."
+      "note": ""
      }
     },
     {
-     "heading": "What should investors watch in RBC’s next results?",
+     "heading": "What should I watch in RBC’s next results?",
      "paragraphs": [
       {
-       "n": 230,
+       "n": 243,
        "section": "essay-7",
        "chapter": "7. What comes next",
        "subsection": "7.5 — What to watch",
-       "text": "Fiscal 2026 ends October 31; results are due December 3, 2026. Investors should look for positive operating leverage while RBC maintains technology spending and absorbs credit losses. They should also ask for a clearer bridge from AI activity to recurring financial benefits."
+       "text": "The nearest checkpoint is **December 3, 2026**, when RBC reports its fiscal fourth quarter and full year. Investors should look for customer adoption, deposits, fee revenue and spending in transaction banking, followed by a clearer explanation of how those investments become earnings. Fiscal 2027 is the delivery horizon for the efficiency and AI ambitions."
+      },
+      {
+       "n": 244,
+       "section": "essay-7",
+       "chapter": "7. What comes next",
+       "subsection": "7.5 — What to watch",
+       "text": "City National needs a separate test because a deferred-tax asset is not recurring customer profit. A deferred-tax asset is a possible future tax saving created by past losses. It can improve reported earnings when recognized, but it becomes useful only if the business later earns enough taxable income. RBC must still show that City National’s lending, deposits and fees cover the cost of its expansion and controls."
       }
      ],
      "table": null
@@ -807,10 +763,10 @@
  "translations": {
   "fr": {
    "version": "fr-6",
-   "source": "1f40917147540124",
+   "source": "ec7d3adb5870e1e6",
    "teaser": {
     "chapter": "1. L'entreprise",
-    "text": "Royal Bank of Canada, généralement appelée RBC, gagne de l’argent en aidant les particuliers et les organisations à déposer, emprunter, transférer, investir et protéger leur argent. Un dollar entre sous forme de dépôt, de paiement, de prêt, de service de placement ou de promesse d’assurance, puis ressort sous forme de coûts de financement, de charges d’exploitation, de réclamations, de pertes et d’impôts, avant que tout reliquat ne devienne un bénéfice."
+    "text": "Royal Bank of Canada, généralement appelée RBC, vend des services financiers : elle garde l’argent, prête, investit, le transfère et protège contre les pertes financières. Ses revenus en dollars proviennent des intérêts, des frais et des primes d’assurance, tandis que ses dépenses servent à rémunérer les déposants, à fournir les services, à régler les réclamations, à absorber les pertes sur prêts et à payer l’impôt."
    },
    "chapters": [
     "Sommaire",
@@ -827,25 +783,32 @@
     "stock": {
      "type": "stock",
      "title": "Action RBC : prévisions et valeur — octobre 2026",
-     "meta_description": "La prévision pondérée de RBC s’établit à 300,37 $ CA en octobre 2029; les scénarios vont de 204,84 $ CA à 401,85 $ CA, avec une valorisation à 17,6 fois le ratio cours-bénéfice historique.",
-     "opening": "La prévision pondérée de RBC s’établit à 300,37 $ CA en octobre 2029, avec une probabilité de 25 % pour le scénario baissier, de 55 % pour le scénario de base et de 20 % pour le scénario haussier. Elle repose sur des coûts du crédit maîtrisables, des marges résilientes, une exécution solide chez HSBC Canada et City National, ainsi que le maintien de sa prime de valorisation.",
-     "closing": "Le mémoire complet présente les activités de RBC, ses rivales, sa direction et ses risques.",
+     "meta_description": "Prévisions de l’action de RBC : scénarios pondérés selon les probabilités, principaux facteurs du crédit et des marges, résultats, dividendes et valorisation.",
+     "opening": "Le cours de l’action de RBC pondéré selon les probabilités s’établit à 274,86 $ CA en octobre 2027, à 273,53 $ CA en octobre 2028 et à 278,46 $ CA en octobre 2029, sans les dividendes. Il dépend de la croissance des bénéfices, des coûts du crédit et de la valorisation.",
+     "closing": "Le mémo complet explique les activités de RBC, ses rivales, sa direction et ses risques.",
      "blocks": [
       {
-       "heading": "Où pourraient se trouver les actions de RBC en 2029?",
+       "heading": "Où l’action de RBC pourrait-elle se trouver en octobre 2029?",
        "paragraphs": [
         {
-         "n": 13,
-         "section": "executive-summary",
-         "chapter": "Sommaire",
+         "n": 248,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
          "subsection": "",
-         "text": "La prévision pondérée s’établit à 277,84 $ CA en octobre 2027, soit +2 % dividendes compris. Elle atteint 300,37 $ CA en octobre 2029, soit +16 % dividendes compris. Le scénario baissier affiche une probabilité de 25 % et le scénario de base, de 55 %. Le scénario haussier affiche une probabilité de 20 %."
+         "text": "Les prévisions tablent d’abord sur un rendement presque nul, suivi de gains modestes. Le cours de l’action de RBC pondéré selon les probabilités s’établit à 274,86 $ CA en octobre 2027, à 273,53 $ CA en octobre 2028 et à 278,46 $ CA en octobre 2029, sans les dividendes. Ces chiffres correspondent à des rendements de -1 %, de +2 % et de +6 % par rapport au cours actuel de 283,62 $ CA."
+        },
+        {
+         "n": 249,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "La fourchette est large parce que la valorisation est déjà exigeante : à la date finale, le scénario baissier atteint 186,11 $ CA, tandis que le scénario haussier atteint 389,83 $ CA. Les prévisions attribuent une probabilité de 29 % au scénario baissier, de 54 % au scénario de base et de 17 % au scénario haussier."
         }
        ],
        "table": {
-        "title": "Ce que pourraient valoir les actions",
-        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 280,01 $, dividendes compris",
-        "caption": "Ce que pourraient valoir les actions ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours d’aujourd’hui de 280,01 $, dividendes compris)",
+        "title": "Ce que les actions pourraient valoir",
+        "unit": "$ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 283,62, dividendes compris",
+        "caption": "Ce que les actions pourraient valoir ($ CA par action à chaque date; entre parenthèses, le rendement depuis le cours actuel de 283,62, dividendes compris)",
         "head": [
          "Scénario",
          "Probabilité",
@@ -856,71 +819,71 @@
         "rows": [
          [
           "Baissier",
-          "25%",
-          "225.75 (-17%)",
-          "215.54 (-18%)",
-          "204.84 (-19%)"
+          "29 %",
+          "228.96 (-17 %)",
+          "197.47 (-25 %)",
+          "186.11 (-27 %)"
          ],
          [
           "Base",
-          "55%",
-          "286.35 (+5%)",
-          "297.02 (+12%)",
-          "306.90 (+18%)"
+          "54 %",
+          "285.41 (+3 %)",
+          "289.49 (+7 %)",
+          "293.00 (+12 %)"
          ],
          [
           "Haussier",
-          "20%",
-          "319.56 (+17%)",
-          "358.68 (+34%)",
-          "401.85 (+52%)"
+          "17 %",
+          "319.64 (+15 %)",
+          "352.58 (+30 %)",
+          "389.83 (+46 %)"
          ],
          [
           "Pondéré",
-          "100%",
-          "277.84 (+2%)",
-          "288.98 (+9%)",
-          "300.37 (+16%)"
+          "100 %",
+          "274.86 (-1 %)",
+          "273.53 (+2 %)",
+          "278.46 (+6 %)"
          ]
         ],
         "note": ""
        }
       },
       {
-       "heading": "Qu’est-ce qui doit bien ou mal tourner pour RBC?",
+       "heading": "Qu’est-ce qui doit bien se passer, et qu’est-ce qui pourrait mal tourner pour RBC?",
        "paragraphs": [
         {
-         "n": 250,
+         "n": 258,
          "section": "essay-8",
          "chapter": "8. Où le cours pourrait aller",
          "subsection": "",
-         "text": "Le scénario baissier suppose que les coûts du crédit continuent d’augmenter, que la concurrence dans les prêts hypothécaires et les dépôts comprime les écarts, que City National n’atteigne pas sa cible de rendement et que les rachats d’actions ralentissent. Il produit 225,75 $ CA en octobre 2027 et 204,84 $ CA en octobre 2029, avec une probabilité de 25 %. Les prêts douteux ont atteint 10 143 millions $ CA et le ratio de couverture des provisions est tombé à 76,8 %, ce qui rend le risque concret. Le rendement des capitaux propres de la région américaine, à 10,7 %, demeure inférieur à la cible de 12,0 %. La probabilité reste inférieure à celle du scénario de base parce que RBC conserve des bénéfices et une capacité de capital."
+         "text": "Le scénario baissier suppose une hausse des pertes sur créances des ménages et des entreprises, une pression des coûts des dépôts sur les marges, ainsi que des dépenses d’intégration et de croissance qui nuisent à l’efficience. Les bénéfices continuent de croître, mais sous l’objectif de 7 %, tandis que la valorisation se contracte. Le cours de l’action atteint 228,96 $ CA à la première date et 186,11 $ CA à la dernière, sans les dividendes. Sa probabilité de 29 % reflète la hausse des prêts douteux, le multiple de départ élevé et le regroupement des estimations baissières des spécialistes près de 25 %–30 %."
         },
         {
-         "n": 251,
+         "n": 259,
          "section": "essay-8",
          "chapter": "8. Où le cours pourrait aller",
          "subsection": "",
-         "text": "Le scénario haussier exige une amélioration du crédit, une tarification disciplinée, des revenus durables chez HSBC Canada, une meilleure dynamique dans la gestion de patrimoine et les marchés financiers, ainsi que l’atteinte de la cible par City National. Il produit d’abord 319,56 $ CA et enfin 401,85 $ CA, avec une probabilité de 20 %. Le rendement des capitaux propres de 17,9 % au T3 a dépassé l’objectif de 17,0 % et plus. Mais le scénario haussier exige aussi un multiple de 3,2 fois et 9,0 milliards $ CA de rachats d’actions en 2029; il dépend donc de plusieurs résultats favorables."
+         "text": "Le scénario haussier suppose que les économies et les ventes croisées liées à HSBC s’approfondissent, que les revenus tirés des services bancaires transactionnels et de la gestion de patrimoine progressent et que les initiatives d’IA améliorent la productivité. Le crédit doit demeurer sous contrôle, tandis que les capitaux soutiennent des rachats d’actions plus importants et une croissance plus rapide des dividendes. Le cours atteint d’abord 319,64 $ CA, puis 389,83 $ CA à la dernière date. Sa probabilité de 17 % reflète l’exigence élevée que plusieurs initiatives réussissent simultanément, tandis que RBC conserve sa prime."
         }
        ],
        "table": null
       },
       {
-       "heading": "Combien RBC gagne-t-elle et redistribue-t-elle?",
+       "heading": "Combien d’argent RBC génère-t-elle réellement et en retourne-t-elle?",
        "paragraphs": [
         {
-         "n": 14,
-         "section": "executive-summary",
-         "chapter": "Sommaire",
+         "n": 193,
+         "section": "essay-6",
+         "chapter": "6. Évaluation et action",
          "subsection": "",
-         "text": "En 2025, RBC a déclaré 6,04 $ CA par action en dividendes et consacré 2 768 millions $ CA aux rachats d’actions. Elle a conservé 6,09 $ CA par action."
+         "text": "La valorisation d’une banque diffère aussi de celle d’une usine. Les dépôts sont de l’argent que RBC doit à ses clients, mais ils constituent également la matière première qu’elle utilise pour accorder des prêts. RBC paie des intérêts sur les dépôts, finance le personnel et la technologie, absorbe les pertes sur prêts et conserve le solde comme bénéfice. C’est pourquoi l’EBITDA et les flux de trésorerie disponibles conventionnels ne mesurent pas précisément les liquidités disponibles pour les propriétaires. Les bénéfices, le rendement des capitaux propres, la valeur comptable et les fonds propres réglementaires sont plus pertinents."
         }
        ],
        "table": {
-        "title": "Ce que rapporte une action",
-        "unit": "$ CA par action, sauf les variations du nombre d’actions, en %",
-        "caption": "Ce que rapporte une action ($ CA par action, sauf les variations du nombre d’actions, en %)",
+        "title": "Résultats",
+        "unit": "Millions $ CA",
+        "caption": "Résultats (Millions $ CA)",
         "head": [
          "",
          "Oct. 2025",
@@ -931,7 +894,15 @@
         ],
         "rows": [
          [
-          "BPA, dilué",
+          "Bénéfice net attribuable aux actionnaires",
+          "20,362",
+          "16,230",
+          "14,605",
+          "15,794",
+          "16,038"
+         ],
+         [
+          "BPA dilué",
           "14.07",
           "11.25",
           "10.32",
@@ -939,98 +910,78 @@
           "11.06"
          ],
          [
-          "− Dividendes déclarés divisés par le nombre moyen dilué d’actions",
-          "6.02",
+          "Dividende par action",
+          "6.04",
           "5.60",
           "5.34",
-          "4.94",
+          "4.96",
           "4.32"
          ],
          [
-          "− Rachats d’actions, par action",
-          "1.96",
-          "0.10",
-          "0.00",
-          "3.86",
-          "0.00"
-         ],
-         [
-          "**= Conservé, par action**",
-          "6.09",
-          "5.55",
-          "4.97",
-          "2.26",
-          "6.74"
+          "Rendement des capitaux propres",
+          "16.3%",
+          "14.4%",
+          "14.3%",
+          "16.4%",
+          "18.6%"
          ]
         ],
-        "note": "La société a conservé 6,09 $ CA par action parce qu’elle a payé 1,96 $ CA par action pour les rachats d’actions, ce qui compte comme de l’argent rendu aux actionnaires, même si cela peut faire de chaque action restante une part plus importante de la société."
+        "note": "Les revenus ne peuvent pas être comparés équitablement pour toutes les années, car la société a modifié sa comptabilisation des assurances et a inclus une année complète de HSBC Canada en 2025, contre seulement sept mois en 2024."
        }
       },
       {
        "heading": "Combien un investisseur paie-t-il pour RBC aujourd’hui?",
-       "paragraphs": [
-        {
-         "n": 178,
-         "section": "essay-6",
-         "chapter": "6. Évaluation et action",
-         "subsection": "",
-         "text": "RBC demande aux investisseurs de payer une prime substantielle pour sa capacité à dégager de solides bénéfices sur les capitaux propres. À 280,01 $ CA le 19 octobre 2026, son ratio cours-bénéfice historique s’établit à 17,6 fois, ce qui signifie que les investisseurs paient 17,60 $ CA pour chaque dollar de bénéfice annuel récent. Son ratio cours-bénéfice prévisionnel est de 17,1 fois, sur la base du bénéfice attendu au cours des douze prochains mois."
-        }
-       ],
+       "paragraphs": [],
        "table": {
-        "title": "Ce que paie un investisseur aujourd’hui",
+        "title": "Ce qu’un investisseur paie aujourd’hui",
         "unit": "Millions $ CA",
-        "caption": "Ce que paie un investisseur aujourd’hui (Millions $ CA)",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (Millions $ CA)",
         "head": [
          "",
-         "Aujourd’hui (19 oct. 2026)"
+         "Aujourd’hui (22 oct. 2026)"
         ],
         "rows": [
          [
           "Cours de l’action",
-          "280.01"
+          "283.62"
          ],
          [
           "Ratio cours-bénéfice, 12 derniers mois (calculé)",
-          "17.6x"
+          "17.9x"
          ],
          [
           "Ratio cours-bénéfice, 12 prochains mois (calculé)",
-          "17.1x"
+          "17.3x"
          ],
          [
           "Ratio cours-valeur comptable (calculé)",
-          "2.9x"
-         ],
-         [
-          "Ratio cours-valeur comptable tangible (calculé)",
-          "3.6x"
+          "2.93x"
          ],
          [
           "Rendement du dividende (calculé)",
           "2.5%"
          ]
         ],
-        "note": "Le cours de l’action date du 16 octobre, tandis que le rapport est daté du 19 octobre; les données ne sont donc pas toutes mesurées le même jour."
+        "note": "Le ratio cours-bénéfice des douze prochains mois utilise le bénéfice prévu par les analystes; il peut donc changer même si le cours actuel de l’action demeure le même."
        }
       }
      ],
      "facts": [
       {
        "label": "Cours de l’action aujourd’hui, $ CA",
-       "value": "280.01"
+       "value": "283.62"
       },
       {
        "label": "Scénario pondéré, octobre 2029",
-       "value": "300.37 (+16%)"
+       "value": "278.46 (+6 %)"
       },
       {
        "label": "Ratio cours-bénéfice, 12 derniers mois",
-       "value": "17.6x"
+       "value": "17.9x"
       },
       {
        "label": "Ratio cours-valeur comptable",
-       "value": "2.9x"
+       "value": "2.93x"
       }
      ],
      "cta": "https://app.mystockbutler.com/signup?ticker=RY.TO&src=seo-stock"
@@ -1038,92 +989,75 @@
     "dividend": {
      "type": "dividend",
      "title": "Action RBC : dividende — octobre 2026",
-     "meta_description": "Les versements de dividendes, la couverture, les plans et le rendement actuel de RBC, en langage clair.",
-     "opening": "RBC a déclaré 6,04 $ CA par action en dividendes en 2025. Le ratio de distribution des dividendes de RBC était de 43,0 % en 2025, tandis que les rachats d’actions constituaient la composante flexible de la distribution.",
-     "closing": "Le mémo complet sur RBC traite aussi de ses activités, de ses rivales, de sa direction et de ses risques.",
+     "meta_description": "RBC verse un dividende croissant, tandis que les bénéfices et le capital — et non les flux de trésorerie disponibles industriels — constituent les meilleurs tests de couverture.",
+     "opening": "Le dividende de RBC augmente graduellement dans le scénario de base, passant de 7,28 $ CA par action à 8,24 $. Le dividende de RBC est couvert par les bénéfices et le capital, tandis que les coûts du crédit peuvent absorber des fonds autrement disponibles pour les dividendes, les rachats d’actions ou la croissance.",
+     "closing": "Le mémo complet examine également les activités de RBC, ses rivales, sa direction et ses risques.",
      "blocks": [
       {
        "heading": "Combien RBC verse-t-elle en dividendes?",
        "paragraphs": [
         {
-         "n": 14,
-         "section": "executive-summary",
-         "chapter": "Sommaire",
+         "n": 256,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
          "subsection": "",
-         "text": "En 2025, RBC a déclaré 6,04 $ CA par action en dividendes et a consacré 2 768 millions $ CA aux rachats d’actions. Elle a conservé 6,09 $ CA par action."
+         "text": "Les dividendes augmentent graduellement dans le scénario de base, passant de 7,28 $ CA par action à 8,24 $. Cela suppose une hausse trimestrielle chaque mai, après la dernière augmentation de 7 % à 1,76 $ CA. Le scénario baissier maintient les dividendes à 7,04 $ CA pendant les deux premières périodes avant une hausse modeste, car les provisions et les prêts douteux pourraient absorber les bénéfices. Le scénario haussier atteint 9,44 $ CA en supposant des hausses plus rapides, soutenues par une croissance plus forte des bénéfices et du capital. Le scénario de base cadre avec la politique de distribution de RBC, de 40 % à 50 %, et avec son taux de distribution de 43 % pour l’exercice 2025."
         }
        ],
        "table": {
-        "title": "Ce que reçoit une action",
-        "unit": "$ CA par action, sauf pour les variations du nombre d’actions, en %",
-        "caption": "Ce que reçoit une action ($ CA par action, sauf pour les variations du nombre d’actions, en %)",
+        "title": "Tableau des prévisions",
+        "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
+        "caption": "Tableau des prévisions (scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire)",
         "head": [
          "",
-         "oct. 2025",
-         "oct. 2024",
-         "oct. 2023",
-         "oct. 2022",
-         "oct. 2021"
+         "octobre 2027",
+         "octobre 2028",
+         "octobre 2029"
         ],
         "rows": [
          [
-          "BPA, dilué",
-          "14.07",
-          "11.25",
-          "10.32",
-          "11.06",
-          "11.06"
+          "Valeur comptable",
+          "143,922 (142,422 / 144,422)",
+          "152,522 (148,922 / 153,922)",
+          "161,822 (156,622 / 164,422)"
          ],
          [
-          "− Dividendes déclarés divisés par le nombre moyen dilué d’actions",
-          "6.02",
-          "5.60",
-          "5.34",
-          "4.94",
-          "4.32"
+          "Actions (millions)",
+          "1,362 (1,368 / 1,356)",
+          "1,344 (1,358 / 1,332)",
+          "1,326 (1,346 / 1,308)"
          ],
          [
-          "− Rachats d’actions, par action",
-          "1.96",
-          "0.10",
-          "0.00",
-          "3.86",
-          "0.00"
+          "Dividendes par action",
+          "7.28 (7.04 / 7.52)",
+          "7.76 (7.04 / 8.48)",
+          "8.24 (7.28 / 9.44)"
          ],
          [
-          "**= Conservé, par action**",
-          "6.09",
-          "5.55",
-          "4.97",
-          "2.26",
-          "6.74"
+          "Cours/valeur comptable",
+          "2.70 (2.20 / 3.00)",
+          "2.55 (1.80 / 3.05)",
+          "2.40 (1.60 / 3.10)"
          ]
         ],
-        "note": "La société a conservé 6,09 $ CA par action parce qu’elle a versé 1,96 $ CA par action pour des rachats d’actions, ce qui compte comme de l’argent retourné aux actionnaires, même si cela peut faire de chaque action restante une part plus importante de la société."
+        "note": ""
        }
       },
       {
-       "heading": "Le dividende de RBC provient-il des liquidités générées par ses activités?",
+       "heading": "Le dividende de RBC est-il couvert par ses liquidités?",
        "paragraphs": [
         {
-         "n": 101,
-         "section": "essay-3",
-         "chapter": "3. Historique et décisions de capital",
+         "n": 214,
+         "section": "essay-6",
+         "chapter": "6. Évaluation et action",
          "subsection": "",
-         "text": "Sur cinq exercices, le bénéfice attribuable aux actionnaires ordinaires a totalisé 81 473 millions $ CA. Les dividendes déclarés sur les actions ordinaires ont totalisé 36 965 millions $ CA. Les rachats d’actions ont totalisé 8 334 millions $ CA. Il est donc resté 36 174 millions $ CA dans l’entreprise."
-        },
-        {
-         "n": 103,
-         "section": "essay-3",
-         "chapter": "3. Historique et décisions de capital",
-         "subsection": "",
-         "text": "Les rachats d’actions constituaient la composante flexible de la distribution. RBC a consacré 5 426 millions $ CA au rachat d’actions en 2022. Les rachats sont tombés à zéro en 2023 et à 140 millions $ CA en 2024, avant de remonter à 2 768 millions $ CA en 2025. Les dividendes ont suivi une trajectoire plus stable. Les distributions totales ont absorbé 79,6 % du bénéfice attribuable aux actionnaires ordinaires en 2022. Cette proportion était de 56,7 % en 2025. Le ratio de distribution des dividendes de RBC était de 43,0 % en 2025 parce que cette mesure exclut les rachats d’actions."
+         "text": "Les coûts du crédit et le capital constituent le test pratique. Le ratio de provisions de RBC, de 36 points de base, pourrait augmenter et absorber des fonds autrement disponibles pour les dividendes, les rachats d’actions ou la croissance. Son ratio CET1 de 13,5 % mesure le capital ordinaire de haute qualité par rapport aux actifs pondérés en fonction des risques. Ce capital absorbe les pertes, mais sa rétention peut limiter les distributions. Le cours de RBC suppose qu’elle peut croître, récompenser les actionnaires et préserver ce coussin en même temps. L’inconnue déterminante est son rendement des capitaux propres durable sur l’ensemble du cycle."
         }
        ],
        "table": {
-        "title": "Suivre l’argent : ce qu’elle gagne et ce qu’elle remet",
-        "unit": "Millions $ CA",
-        "caption": "Suivre l’argent : ce qu’elle gagne et ce qu’elle remet (Millions $ CA)",
+        "title": "Suivez l’argent : ce qu’elle gagne et ce qu’elle remet",
+        "unit": "millions $ CA",
+        "caption": "Suivez l’argent : ce qu’elle gagne et ce qu’elle remet (millions $ CA)",
         "head": [
          "",
          "oct. 2025",
@@ -1134,7 +1068,7 @@
         ],
         "rows": [
          [
-          "**= Bénéfice attribuable aux actionnaires ordinaires**",
+          "**= Bénéfices attribuables aux actionnaires ordinaires**",
           "19,868",
           "15,908",
           "14,369",
@@ -1158,7 +1092,7 @@
           "0"
          ],
          [
-          "**= Conservé pour croître et renforcer le capital**",
+          "**= Conservés pour croître et constituer du capital**",
           "8,598",
           "7,852",
           "6,926",
@@ -1166,7 +1100,7 @@
           "9,623"
          ],
          [
-          "Versé, en % du bénéfice attribuable aux actionnaires ordinaires",
+          "Versés, % des bénéfices attribuables aux actionnaires ordinaires",
           "56.7%",
           "50.6%",
           "51.8%",
@@ -1174,7 +1108,7 @@
           "39.0%"
          ],
          [
-          "Ratio de distribution des dividendes — selon RBC",
+          "Taux de distribution des dividendes — selon RBC",
           "43.0%",
           "50.0%",
           "52.0%",
@@ -1189,64 +1123,61 @@
        "heading": "Qu’est-ce qui pourrait changer le dividende de RBC?",
        "paragraphs": [
         {
-         "n": 248,
+         "n": 260,
          "section": "essay-8",
          "chapter": "8. Où le cours pourrait aller",
          "subsection": "",
-         "text": "Dans le scénario de base, les dividendes passent de 7,52 $ CA par action en 2027 à 8,60 $ CA en 2029. Le scénario baissier les maintient à 7,04 $ CA pendant toute la période, soit le taux annualisé actuel; le scénario haussier les porte à 8,95 $ CA. Le scénario de base suit l’historique de hausses annuelles de RBC et son ratio de distribution de 43,0 %, à l’intérieur de la fourchette annoncée de 40 % à 50 %. Le scénario baissier suppose une pause, car les pressions sur le crédit pourraient exiger la préservation du capital. Le scénario haussier suppose une croissance plus rapide accompagnée d’un bénéfice plus solide, conformément à l’objectif de BPA de 7,0 %."
+         "text": "Les prévisions se rapprocheraient du scénario baissier si les provisions et les prêts douteux s’élargissaient pendant les exercices 2027–2029, ou si la réévaluation des dépôts dépassait les rendements des actifs au cours des deux premières années de prévisions. Un rendement des capitaux propres décevant rendrait alors la prime actuelle plus difficile à défendre."
         }
        ],
-       "table": {
-        "title": "Le tableau des prévisions",
-        "unit": "scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire",
-        "caption": "Le tableau des prévisions (scénario de base, puis baissier / haussier entre parenthèses; millions $ CA, par action en $ CA, sauf indication contraire)",
-        "head": [
-         "",
-         "octobre 2027",
-         "octobre 2028",
-         "octobre 2029"
-        ],
-        "rows": [
-         [
-          "Valeur comptable",
-          "145,082 (141,082 / 144,982)",
-          "154,582 (147,582 / 154,682)",
-          "164,282 (155,282 / 164,782)"
-         ],
-         [
-          "Actions (millions)",
-          "1,368 (1,375 / 1,361)",
-          "1,353 (1,369 / 1,337)",
-          "1,338 (1,365 / 1,312)"
-         ],
-         [
-          "Dividendes par action",
-          "7.52 (7.04 / 7.60)",
-          "8.04 (7.04 / 8.24)",
-          "8.60 (7.04 / 8.95)"
-         ],
-         [
-          "Ratio cours-valeur comptable",
-          "2.70 (2.20 / 3.00)",
-          "2.60 (2.00 / 3.10)",
-          "2.50 (1.80 / 3.20)"
-         ]
-        ],
-        "note": ""
-       }
+       "table": null
       },
       {
        "heading": "Quel est le rendement du dividende de RBC aujourd’hui?",
        "paragraphs": [
         {
-         "n": 178,
+         "n": 194,
          "section": "essay-6",
          "chapter": "6. Évaluation et action",
          "subsection": "",
-         "text": "RBC demande aux investisseurs de payer une prime substantielle pour sa capacité à dégager de solides bénéfices sur les capitaux des actionnaires. À 280,01 $ CA le 19 octobre 2026, son ratio cours-bénéfice historique est de 17,6 fois, ce qui signifie que les investisseurs paient 17,60 $ CA pour chaque dollar de bénéfice annuel récent. Son ratio cours-bénéfice prévisionnel est de 17,1 fois, fondé sur le bénéfice attendu au cours des douze prochains mois."
+         "text": "Le rendement du dividende de 2,5 % procure un revenu en espèces, mais pas la sécurité. RBC doit continuer à gagner suffisamment pour verser des dividendes, croître et préserver son capital; entre-temps, les investisseurs peuvent réévaluer les actions à la baisse même si la banque demeure rentable."
+        },
+        {
+         "n": 248,
+         "section": "essay-8",
+         "chapter": "8. Où le cours pourrait aller",
+         "subsection": "",
+         "text": "Les prévisions tablent d’abord sur un rendement de RBC presque stable, suivi de gains modestes. Le cours de l’action pondéré selon les probabilités est de 274,86 $ CA en octobre 2027, de 273,53 $ CA en octobre 2028 et de 278,46 $ CA en octobre 2029, sans les dividendes. Ces chiffres correspondent à des rendements de moins 1 %, de plus 2 % et de plus 6 % par rapport aux 283,62 $ CA d’aujourd’hui."
         }
        ],
-       "table": null
+       "table": {
+        "title": "Ce qu’un investisseur paie aujourd’hui",
+        "unit": "millions $ CA",
+        "caption": "Ce qu’un investisseur paie aujourd’hui (millions $ CA)",
+        "head": [
+         "",
+         "Aujourd’hui (22 oct. 2026)"
+        ],
+        "rows": [
+         [
+          "Cours de l’action",
+          "283.62"
+         ],
+         [
+          "Valeur boursière (calculée)",
+          "392,651.98"
+         ],
+         [
+          "Ratio cours-bénéfice, 12 derniers mois (calculé)",
+          "17.9x"
+         ],
+         [
+          "Rendement du dividende (calculé)",
+          "2.5%"
+         ]
+        ],
+        "note": "Le ratio cours/bénéfice des douze prochains mois utilise le bénéfice attendu par les analystes; il peut donc changer même si le cours actuel de l’action demeure le même."
+       }
       }
      ],
      "facts": [
@@ -1264,121 +1195,108 @@
     "earnings": {
      "type": "earnings",
      "title": "Action RBC : résultats du 3 décembre 2026",
-     "meta_description": "Les prochains résultats de RBC sont attendus le 3 décembre 2026; les indications portent sur le rendement, la croissance et le levier d’exploitation.",
-     "opening": "Les prochains résultats de RBC sont attendus le 3 décembre 2026. Il faudra surveiller un levier d’exploitation positif, tandis que RBC maintient ses dépenses technologiques et absorbe les pertes sur créances.",
-     "closing": "Le mémoire complet explique comment RBC gagne de l’argent, se mesure à ses rivales, est dirigée par sa direction et fait face à ses risques.",
+     "meta_description": "RBC publiera ses résultats du quatrième trimestre et de l’exercice le 3 décembre 2026; consultez les prévisions et les éléments à surveiller concernant l’adoption par les clients, les frais et les dépenses.",
+     "opening": "Les prochains résultats de RBC sont attendus le 3 décembre 2026. Surveillez l’adoption par les clients, les dépôts, les revenus de frais et les dépenses, qui doivent transformer les investissements dans les services bancaires transactionnels et l’intelligence artificielle en bénéfices.",
+     "closing": "Le mémo complet explique également les activités, les rivaux, la direction et les risques de RBC.",
      "blocks": [
       {
-       "heading": "Quelles indications RBC a-t-elle données pour l’exercice?",
+       "heading": "Quelles prévisions RBC a-t-elle données pour l’exercice 2027?",
        "paragraphs": [
         {
-         "n": 212,
+         "n": 10,
+         "section": "executive-summary",
+         "chapter": "Sommaire",
+         "subsection": "",
+         "text": "La direction vise un rendement des capitaux propres d’au moins 17,0 % et une croissance d’au moins 7,0 % du BPA dilué. Elle prévoit atteindre ces objectifs sur trois à cinq ans. Pour l’exercice 2027, elle vise un ratio d’efficacité de 53,0 % et 300 millions $ CA de synergies de revenus. Elle vise également une valeur d’entreprise de 700 à 1 000 millions $ CA attribuable à l’intelligence artificielle."
+        },
+        {
+         "n": 219,
          "section": "essay-7",
          "chapter": "7. La suite",
          "subsection": "",
-         "text": "Ses jalons de l’exercice 2027 ajoutent des tests d’exploitation: un **ratio d’efficacité de 53,0 %**, un **rendement de l’actif de 1,0 %** et **300 millions $ CA de synergies de produits de HSBC Canada**. Le ratio d’efficacité mesure les coûts par dollar de produits; un ratio plus faible est donc préférable. Le levier d’exploitation montre si les produits croissent plus rapidement que les dépenses. Les perspectives de RBC pour l’exercice 2026 prévoyaient une croissance du revenu net d’intérêts dans le milieu de la fourchette à un chiffre et un levier d’exploitation positif pour l’ensemble de la banque."
+         "text": "Les prévisions à court terme tablent sur une croissance de quelques points de pourcentage du revenu net d’intérêts de l’exercice 2026, hors activités de négociation, ainsi que sur une croissance des revenus supérieure à celle des coûts. La cible de levier d’exploitation positif des Services bancaires canadiens est de **1,0 % à 2,0 %**. Pour le trimestre se terminant en octobre 2026, la direction s’attend à ce que les marges demeurent relativement stables, tandis que le taux d’imposition effectif se rapprochera de **21,0 % à 23,0 %**."
         }
        ],
        "table": {
-        "title": "Cibles et indications en vigueur",
-        "unit": "Millions $ CA, sauf indication contraire; variations des produits et des actifs pondérés en fonction des risques et contributions au ratio CET1 en points de base; dépôts des Services bancaires transactionnels aux États-Unis et prêts de City National en milliards $ US; actifs sous administration et actifs sous gestion de GAM en billions $ CA; clients et conseillers en nombre de personnes, sauf les clients de Placements directs en milliers et les clients des Services bancaires aux particuliers et membres Avion en millions; amélioration des renouvellements hypothécaires en points de pourcentage",
-        "caption": "Cibles et indications en vigueur (Millions $ CA, sauf indication contraire; variations des produits et des actifs pondérés en fonction des risques et contributions au ratio CET1 en points de base; dépôts des Services bancaires transactionnels aux États-Unis et prêts de City National en milliards $ US; actifs sous administration et actifs sous gestion de GAM en billions $ CA; clients et conseillers en nombre de personnes, sauf les clients de Placements directs en milliers et les clients des Services bancaires aux particuliers et membres Avion en millions; amélioration des renouvellements hypothécaires en points de pourcentage)",
+        "title": "Cibles et prévisions en vigueur",
+        "unit": "millions $ CA",
+        "caption": "Cibles et prévisions en vigueur (millions $ CA)",
         "head": [
          "",
          "Période visée",
          "Bas",
-         "Haut",
+         "Élevé",
          "Date de publication"
         ],
         "rows": [
          [
           "Croissance du BPA dilué",
-          "Moyen terme, 3 à 5 ans",
+          "Moyen terme (3–5 ans)",
           "7.0%",
           "",
-          "3 déc. 2025"
+          "3 décembre 2025"
          ],
          [
           "Rendement des capitaux propres",
-          "Moyen terme, à compter de l’exercice 2026",
+          "À compter de l’exercice 2026; moyen terme",
           "17.0%",
           "",
-          "3 déc. 2025"
-         ],
-         [
-          "Croissance du revenu net d’intérêts pour l’ensemble de la banque (hors négociation)",
-          "Exercice 2026",
-          "",
-          "",
-          "27 août 2026"
-         ],
-         [
-          "Levier d’exploitation pour l’ensemble de la banque",
-          "Exercice 2026",
-          "",
-          "",
-          "27 août 2026"
-         ],
-         [
-          "Valeur d’entreprise additionnelle générée par l’IA",
-          "D’ici la fin de l’exercice 2027",
-          "700",
-          "1,000",
-          "27 août 2026"
+          "3 décembre 2025"
          ],
          [
           "Ratio d’efficacité",
-          "D’ici 2027",
+          "Exercice 2027",
           "53.0%",
           "53.0%",
-          "3 déc. 2025"
+          "3 décembre 2025"
+         ],
+         [
+          "Synergies de revenus visées",
+          "D’ici l’exercice 2027",
+          "300",
+          "300",
+          "3 décembre 2025"
+         ],
+         [
+          "Valeur d’entreprise générée par l’IA",
+          "D’ici l’exercice 2027",
+          "700",
+          "1,000",
+          "27 août 2026"
          ]
         ],
-        "note": "Une cible affichée à 2,0 fois signifie deux fois le niveau de départ de 2024, et non 2,0 %."
+        "note": "La cible de la banque en matière d’intelligence artificielle est une estimation de la valeur additionnelle de l’entreprise après l’investissement, et non des bénéfices ou des ventes additionnels."
        }
       },
       {
-       "heading": "RBC a-t-elle tenu ses promesses passées?",
+       "heading": "Comment les revenus et les bénéfices de RBC ont-ils évolué au cours des huit derniers trimestres?",
        "paragraphs": [
         {
-         "n": 136,
-         "section": "essay-4",
-         "chapter": "4. Direction et actionnariat",
-         "subsection": "",
-         "text": "Le rendement des capitaux propres, ou ROE, mesure le bénéfice par rapport aux capitaux des actionnaires. RBC a déclaré un ROE de 16,3 % pour l’exercice 2025, mais n’a pas atteint son objectif de ROE sur trois ans. Le conseil a néanmoins jugé la performance globale favorablement, ce qui montre que la rémunération dépend de plusieurs mesures et du jugement du conseil, plutôt que d’une seule cible."
-        }
-       ],
-       "table": null
-      },
-      {
-       "heading": "Quelle est la tendance des produits et du bénéfice de RBC?",
-       "paragraphs": [
-        {
-         "n": 156,
+         "n": 154,
          "section": "essay-5",
          "chapter": "5. Les chiffres",
          "subsection": "",
-         "text": "Le trimestre de juillet 2026 de RBC a été solide et généralisé, mais il n’a pas été uniformément meilleur. Les produits ont augmenté à 18 538 millions $ CA, contre 16 985 millions $ CA un an plus tôt. Le bénéfice net attribuable aux actionnaires a progressé à 6 022 millions $ CA, contre 5 415 millions $ CA, tandis que le BPA dilué a atteint 4,23 $ CA, contre 3,75 $ CA."
+         "text": "Les revenus ont atteint 18 538 millions $ CA, tandis que le résultat net attribuable aux actionnaires s’est établi à 6 022 millions $ CA. Le BPA a grimpé à 4,23 $ CA. Le résultat s’inscrit dans une reprise plus large plutôt que de constituer un cas isolé."
         }
        ],
        "table": {
         "title": "Les huit derniers trimestres",
-        "unit": "Millions $ CA",
-        "caption": "Les huit derniers trimestres (Millions $ CA)",
+        "unit": "millions $ CA",
+        "caption": "Les huit derniers trimestres (millions $ CA)",
         "head": [
          "",
-         "Juill. 2026",
-         "Avr. 2026",
-         "Janv. 2026",
-         "Oct. 2025",
-         "Juill. 2025",
-         "Avr. 2025",
-         "Janv. 2025",
-         "Oct. 2024"
+         "juill. 2026",
+         "avr. 2026",
+         "janv. 2026",
+         "oct. 2025",
+         "juill. 2025",
+         "avr. 2025",
+         "janv. 2025",
+         "oct. 2024"
         ],
         "rows": [
          [
-          "Produits",
+          "Revenus",
           "18,538",
           "17,453",
           "17,960",
@@ -1400,7 +1318,7 @@
           "7,671"
          ],
          [
-          "Bénéfice net attribuable aux actionnaires",
+          "Résultat net attribuable aux actionnaires",
           "6,022",
           "5,507",
           "5,784",
@@ -1444,18 +1362,25 @@
           "13.2%"
          ]
         ],
-        "note": "La marge nette d’intérêts ne représente pas le pourcentage du bénéfice total de la banque; il s’agit de la différence entre les intérêts gagnés et les intérêts versés, mesurée par rapport aux actifs moyens de la banque productifs d’intérêts."
+        "note": ""
        }
       },
       {
-       "heading": "Que devraient surveiller les investisseurs dans les prochains résultats de RBC?",
+       "heading": "Que dois-je surveiller dans les prochains résultats de RBC?",
        "paragraphs": [
         {
-         "n": 230,
+         "n": 243,
          "section": "essay-7",
          "chapter": "7. La suite",
          "subsection": "",
-         "text": "L’exercice 2026 prend fin le 31 octobre; les résultats sont attendus le 3 décembre 2026. Les investisseurs devraient surveiller un levier d’exploitation positif, tandis que RBC maintient ses dépenses technologiques et absorbe les pertes sur créances. Ils devraient aussi demander un lien plus clair entre les activités liées à l’IA et les avantages financiers récurrents."
+         "text": "Le prochain point de contrôle est le **3 décembre 2026**, date à laquelle RBC publiera ses résultats du quatrième trimestre et de l’exercice. Les investisseurs devraient surveiller l’adoption par les clients, les dépôts, les revenus de frais et les dépenses dans les services bancaires transactionnels, puis chercher une explication plus claire de la façon dont ces investissements se transforment en bénéfices. L’exercice 2027 est l’horizon de réalisation des ambitions en matière d’efficacité et d’intelligence artificielle."
+        },
+        {
+         "n": 244,
+         "section": "essay-7",
+         "chapter": "7. La suite",
+         "subsection": "",
+         "text": "City National doit faire l’objet d’un test distinct, car un actif d’impôt différé ne constitue pas un bénéfice récurrent provenant des clients. Un actif d’impôt différé correspond à une économie d’impôt future possible créée par des pertes antérieures. Il peut améliorer les bénéfices présentés lorsqu’il est comptabilisé, mais il ne devient utile que si l’entreprise réalise par la suite un revenu imposable suffisant. RBC doit encore démontrer que les prêts, les dépôts et les frais de City National couvrent le coût de son expansion et de ses contrôles."
         }
        ],
        "table": null
@@ -1467,7 +1392,7 @@
        "value": "3 décembre 2026"
       },
       {
-       "label": "Produits, trimestre terminé en juill. 2026 (millions $ CA)",
+       "label": "Revenus, trimestre terminé en juill. 2026 (millions $ CA)",
        "value": "18,538"
       },
       {
@@ -1480,9 +1405,9 @@
    },
    "held": [],
    "pieces": {
-    "sent": 155,
-    "translated": 154,
-    "left_out": 1
+    "sent": 145,
+    "translated": 145,
+    "left_out": 0
    }
   }
  }
