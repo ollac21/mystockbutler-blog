@@ -44,7 +44,7 @@ export function siteFooter() {
 <a href="/">Blog</a>
 <a href="/stocks/">All stocks</a>
 <a href="/de/" hreflang="de">Auf Deutsch</a>
-<a href="/fr/" hreflang="fr">En français</a>
+<a href="/fr/" hreflang="fr-CA">En français</a>
 <a href="${APP}/login">Log in</a>
 </nav>
 </div>

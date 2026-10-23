@@ -582,6 +582,15 @@ function indexHead(entries, title, description) {
 // The language hubs (B112's addresses), each named by its own title in the build: the blog home and llms.txt link them.
 const LANG_HUBS = [{ lang: 'de', name: 'Deutsch', path: '/de/aktien/', home: '/de/', hreflang: 'de' }, { lang: 'fr', name: 'Français', path: '/fr/stocks/', home: '/fr/', hreflang: 'fr-CA' }];
 
+// The blog home and the /de/ and /fr/ homes name each other (hreflang both ways, CTO 2026-10-23T13:47Z): the home is
+// their English version, and it lists them back (only the ones this build drew).
+function homeAlternates(hubs = []) {
+  const langs = LANG_HUBS.filter((l) => hubs.some((h) => h.url === `${SITE}${l.home}`));
+  if (!langs.length) return '';
+  return [`<link rel="alternate" hreflang="en" href="${SITE}/">`, ...langs.map((l) => `<link rel="alternate" hreflang="${l.hreflang}" href="${SITE}${l.home}">`),
+    `<link rel="alternate" hreflang="x-default" href="${SITE}/">`].join('\n') + '\n';
+}
+
 // The links from the blog home to every language's stock pages: All stocks, then each language hub under its own title.
 function languageStrip(hubs = []) {
   const links = [`<a href="/stocks/">All stocks</a>`];
@@ -606,7 +615,7 @@ ${others.map(({ post }) => cardHtml(post, false)).join('\n')}
     title: SITE_NAME,
     description,
     canonical: `${SITE}/`,
-    head: indexHead(entries, SITE_NAME, description),
+    head: indexHead(entries, SITE_NAME, description) + homeAlternates(hubs),
     body: `<main>
 <section class="index-head"><div class="wrap">
 <div class="eyebrow">MyStockButler Research</div>

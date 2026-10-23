@@ -248,7 +248,8 @@ test('the /de/ and /fr/ homes: the landing words verbatim, the free report, link
     const w = LANDING_WORDS[lang];
     for (const k of ['hero.sub', 'steps.1.label', 'steps.2.copy', 'steps.3.label']) assert.ok(home.html.includes(w[k].replace(/&/g, '&amp;').replace(/'/g, '&#39;')), `${path} ${k}`);
     assert.match(home.html, new RegExp(`signup\\?src=seo-home-${lang}&amp;lang=${lang}`));
-    assert.match(home.html, /hreflang="x-default" href="https:\/\/mystockbutler\.com\/"/);
+    assert.match(home.html, /hreflang="x-default" href="https:\/\/blog\.mystockbutler\.com\/"/);   // the blog home names it back
+    assert.match(home.html, /hreflang="en" href="https:\/\/blog\.mystockbutler\.com\/"/);
     assert.ok(pages.some((p) => p.lang === lang && p.html.includes(`href="${path}"`)), `a ${lang} stock page links ${path}`);
   }
 });

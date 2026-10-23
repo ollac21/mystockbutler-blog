@@ -609,8 +609,9 @@ function renderLangHome(lang, list) {
   const cta = `${APP}/signup?src=seo-home-${lang}&lang=${lang}`;
   const title = w['meta.title'];
   const description = w['hero.sub'];
+  // hreflang both ways (CTO 13:47Z): the English version is the blog home, which names /de/ and /fr/ back (render.mjs)
   const alternates = [...LANGS.map((l) => ({ hreflang: LANG_CFG[l].href, url: `${SITE}${LANG_CFG[l].home}` })),
-    { hreflang: 'en', url: `${LANDING}/` }, { hreflang: 'x-default', url: `${LANDING}/` }];
+    { hreflang: 'en', url: `${SITE}/` }, { hreflang: 'x-default', url: `${SITE}/` }];
   const steps = [1, 2, 3].map((n) => `<section><h2>${esc(w[`steps.${n}.label`])}</h2><p>${esc(w[`steps.${n}.copy`])}</p></section>`).join('\n');
   const html = shell({
     title,
