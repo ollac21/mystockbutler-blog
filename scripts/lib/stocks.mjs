@@ -11,12 +11,13 @@
 import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
+import { LANDING_WORDS } from './landingWords.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
 export const CSS_PATH = '/stocks/assets/stocks.css';
-export const INDEX_NAMES = { sp500: 'S&P 500', sptsx60: 'S&P/TSX 60', ftse100: 'FTSE 100', hsi: 'Hang Seng' };
-export const INDEX_PATHS = { sp500: 'sp500', sptsx60: 'tsx60', ftse100: 'ftse100', hsi: 'hsi' };
+export const INDEX_NAMES = { sp500: 'S&P 500', sptsx60: 'S&P/TSX 60', ftse100: 'FTSE 100', hsi: 'Hang Seng', cac40: 'CAC 40', dax40: 'DAX' };
+export const INDEX_PATHS = { sp500: 'sp500', sptsx60: 'tsx60', ftse100: 'ftse100', hsi: 'hsi', cac40: 'cac40', dax40: 'dax40' };
 export const TYPE_NAMES = { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' };
 export const TYPES = ['stock', 'dividend', 'earnings'];
 const SEARCH_PHRASE = { stock: 'stock forecast', dividend: 'dividend', earnings: 'earnings' };
@@ -106,22 +107,32 @@ export const UI = {
   },
 };
 
-// The translated pages, per language (closed set): their address, their hreflang, the library they cover, the hub's words.
-// French: the S&P/TSX 60 (owner 2026-10-20); German: the S&P 500 (owner 2026-10-22, 'nvidia aktie prognose').
+// The translated pages, per language (closed set): their address, their hreflang, the hub's words.
+// French: the S&P/TSX 60 (owner 2026-10-20), the CAC 40 and the US giants (owner 2026-10-23); German: the S&P 500 (owner
+// 2026-10-22, 'nvidia aktie prognose') and the DAX. The hub names the libraries its companies come from (libs, from
+// INDEX_NAMES: 'S&P 500, DAX'), never one library for all.
 const LANG_CFG = {
   fr: {
-    root: '/fr/stocks/', seg: { stock: '', dividend: 'dividende/', earnings: 'resultats/' }, href: 'fr-CA', og: 'fr_CA', index: 'sptsx60',
-    title: TITLE_FR, banned: BANNED_FR, enHub: ['/stocks/tsx60/', 'S&P/TSX 60 (English)'], here: 'Ces pages en français',
-    hub: (n) => ({ title: 'Actions du S&P/TSX 60 : prévisions, dividendes, résultats', description: `Prévisions, dividendes et prochains résultats de ${n} sociétés du S&P/TSX 60, tirés de nos mémos de recherche.`,
-      intro: `Chaque société du S&P/TSX 60 pour laquelle nous avons un mémo de recherche : ${n} sociétés.`, back: 'S&P/TSX 60 in English', crumb: 'Actions' }),
+    root: '/fr/stocks/', home: '/fr/', seg: { stock: '', dividend: 'dividende/', earnings: 'resultats/' }, href: 'fr-CA', og: 'fr_CA',
+    title: TITLE_FR, banned: BANNED_FR, here: 'Ces pages en français',
+    hub: (n, libs) => ({ title: 'Actions : prévisions, dividendes, résultats', description: `Prévisions, dividendes et prochains résultats de ${n} sociétés (${libs}), tirés de nos mémos de recherche.`,
+      intro: `Chaque société pour laquelle nous avons un mémo de recherche (${libs}) : ${n} sociétés.`, back: 'Toutes les actions, en anglais', crumb: 'Actions' }),
   },
   de: {
-    root: '/de/aktien/', seg: { stock: '', dividend: 'dividende/', earnings: 'quartalszahlen/' }, href: 'de', og: 'de_DE', index: 'sp500',
-    title: TITLE_DE, banned: BANNED_DE, enHub: ['/stocks/sp500/', 'S&P 500 (English)'], here: 'Diese Seiten auf Deutsch',
-    hub: (n) => ({ title: 'S&P-500-Aktien: Prognosen, Dividenden, Quartalszahlen', description: `Prognosen, Dividenden und nächste Quartalszahlen von ${n} Unternehmen des S&P 500, aus unseren Research-Memos.`,
-      intro: `Jedes Unternehmen des S&P 500, zu dem wir ein Research-Memo haben: ${n} Unternehmen.`, back: 'S&P 500 in English', crumb: 'Aktien' }),
+    root: '/de/aktien/', home: '/de/', seg: { stock: '', dividend: 'dividende/', earnings: 'quartalszahlen/' }, href: 'de', og: 'de_DE',
+    title: TITLE_DE, banned: BANNED_DE, here: 'Diese Seiten auf Deutsch',
+    hub: (n, libs) => ({ title: 'Aktien: Prognosen, Dividenden, Quartalszahlen', description: `Prognosen, Dividenden und nächste Quartalszahlen von ${n} Unternehmen (${libs}), aus unseren Research-Memos.`,
+      intro: `Jedes Unternehmen, zu dem wir ein Research-Memo haben (${libs}): ${n} Unternehmen.`, back: 'Alle Aktien auf Englisch', crumb: 'Aktien' }),
   },
 };
+// The English hub a translated page links back to: its own library's ('S&P 500 (English)'), else all stocks.
+function enHubOf(index) {
+  return INDEX_PATHS[index] ? [`/stocks/${INDEX_PATHS[index]}/`, `${INDEX_NAMES[index]} (English)`] : ['/stocks/', 'All stocks (English)'];
+}
+// The libraries a language's companies come from, in our own order ('S&P 500, DAX').
+function libsOf(companies) {
+  return Object.keys(INDEX_NAMES).filter((k) => companies.some((c) => c.index === k)).map((k) => INDEX_NAMES[k]).join(', ');
+}
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
 const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|compare)\/[^"]*)"/g;
@@ -492,7 +503,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     .filter((r) => r && r.slug !== slug && (fr ? langPage(r, 'stock', lang) : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
     .slice(0, 4)
     .map((r) => `<a href="${pagePath(r.slug, 'stock', lang)}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
-  const hubs = fr ? [`<a href="${LANG_CFG[lang].root}">${esc(ui.allStocks)}</a>`, `<a href="${LANG_CFG[lang].enHub[0]}" hreflang="en">${esc(LANG_CFG[lang].enHub[1])}</a>`] : [`<a href="/stocks/">All stocks</a>`];
+  const enHub = enHubOf(indexKey);
+  const hubs = fr ? [`<a href="${LANG_CFG[lang].home}">MyStockButler</a>`, `<a href="${LANG_CFG[lang].root}">${esc(ui.allStocks)}</a>`, `<a href="${enHub[0]}" hreflang="en">${esc(enHub[1])}</a>`] : [`<a href="/stocks/">All stocks</a>`];
   if (!fr) {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
@@ -541,11 +553,11 @@ ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</
     alternates, html, outLinks, page, data };
 }
 
-function hubList(companies, { withDates = false, lang = '' } = {}) {
+function hubList(companies, { withDates = false, langs = [] } = {}) {
   return `<ul class="list">${companies
     .map((c) => {
       const en = TYPES.filter((t) => c.pages[t]).map((t) => `<a href="${pagePath(c.slug, t)}">${esc(TYPE_NAMES[t])}</a>`);
-      const fr = lang ? TYPES.filter((t) => langPage(c, t, lang)).map((t) => `<a hreflang="${LANG_CFG[lang].href}" href="${pagePath(c.slug, t, lang)}">${esc(UI[lang].types[t])}</a>`) : [];
+      const fr = langs.flatMap((lang) => TYPES.filter((t) => langPage(c, t, lang)).map((t) => `<a hreflang="${LANG_CFG[lang].href}" href="${pagePath(c.slug, t, lang)}">${esc(UI[lang].types[t])}</a>`));
       const pages = [...en, ...fr].join('');
       const date = withDates && c.next_earnings ? ` · results ${esc(humanDay(c.next_earnings))}` : '';
       return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => c.pages[t]))}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}${date}</span><span class="pg">${pages}</span></li>`;
@@ -574,6 +586,44 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
   return { path, url, type: 'hub', lang, title, description, html, outLinks, lastmod: '' };
 }
 
+// THE /de/ AND /fr/ HOME PAGES (owner 2026-10-23 'Yes German French pages', CTO 12:53Z, the plan's step 4): the pitch and the
+// free-report button as a plain page on the blog (today mystockbutler.com/de and /fr serve the English app shell: nothing for
+// Google to rank). Every sentence is the landing's own (landingWords.mjs, verbatim); the free line is the stock pages' own.
+function renderLangHome(lang, list) {
+  const w = LANDING_WORDS[lang];
+  const ui = UI[lang];
+  const cfg = LANG_CFG[lang];
+  const url = `${SITE}${cfg.home}`;
+  const cta = `${APP}/signup?src=seo-home-${lang}&lang=${lang}`;
+  const title = w['meta.title'];
+  const description = w['hero.sub'];
+  const alternates = [...LANGS.map((l) => ({ hreflang: LANG_CFG[l].href, url: `${SITE}${LANG_CFG[l].home}` })),
+    { hreflang: 'en', url: `${LANDING}/` }, { hreflang: 'x-default', url: `${LANDING}/` }];
+  const steps = [1, 2, 3].map((n) => `<section><h2>${esc(w[`steps.${n}.label`])}</h2><p>${esc(w[`steps.${n}.copy`])}</p></section>`).join('\n');
+  const html = shell({
+    title,
+    description,
+    canonical: url,
+    ogType: 'website',
+    lang,
+    alternates,
+    jsonld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', name: title, description, url, inLanguage: ui.htmlLang,
+      isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
+    meta: { type: 'home', ticker: '', cta, lang, label: `MyStockButler ${lang}` },
+    body: `<div class="hub home">
+<h1>${esc(w['hero.title.a'])} ${esc(w['hero.title.b'])}</h1>
+<p class="lede">${esc(w['hero.sub'])}</p>
+<div class="ctarow"><a class="btn big" data-cta="home" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><span class="sub">${ui.free}</span></div>
+<p class="sub">${esc(w['ticker.try'])}</p>
+${steps}
+<div class="ctarow"><a class="btn" data-cta="home-end" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><a href="${cfg.root}">${esc(ui.allStocks)} (${list.length})</a></div>
+<p class="sub">${esc(w['hero.langs'])}</p>
+</div>`,
+  });
+  const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
+  return { path: cfg.home, url, type: 'hub', lang, title, description, html, outLinks, alternates, lastmod: '' };
+}
+
 // Only the letters that have a hub (a letter with no company has no page to link to).
 function letterNav(present) {
   const letters = [...'abcdefghijklmnopqrstuvwxyz', '0-9'].filter((l) => !present || present.has(l));
@@ -591,6 +641,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
   const pages = [];
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
   const translated = Object.fromEntries(LANGS.map((l) => [l, byName.filter((c) => TYPES.some((t) => langPage(c, t, l)))]));
+  const langsIn = (list) => LANGS.filter((l) => list.some((c) => TYPES.some((t) => langPage(c, t, l))));
   const all = [
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a>${compares ? ` · <a href="${COMPARE_ROOT}">Companies side by side</a>` : ''}</p></section>`,
     nav(),
@@ -613,9 +664,8 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       title: `${INDEX_NAMES[g.key]} stocks: forecasts, dividends, earnings`,
       description: `Research memos on ${g.list.length} ${INDEX_NAMES[g.key]} companies: stock forecasts, dividends and next results dates.`,
       intro: `${g.list.length} ${INDEX_NAMES[g.key]} companies with a research memo.`,
-      sections: [nav(), ...LANGS.filter((l) => LANG_CFG[l].index === g.key && translated[l].length)
-        .map((l) => `<p><a href="${LANG_CFG[l].root}" hreflang="${LANG_CFG[l].href}">${esc(LANG_CFG[l].here)}</a></p>`),
-        hubList(g.list, { withDates: true, lang: LANGS.find((l) => LANG_CFG[l].index === g.key && translated[l].length) || '' })],
+      sections: [nav(), ...langsIn(g.list).map((l) => `<p><a href="${LANG_CFG[l].root}" hreflang="${LANG_CFG[l].href}">${esc(LANG_CFG[l].here)}</a></p>`),
+        hubList(g.list, { withDates: true, langs: langsIn(g.list) })],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
     }));
   }
@@ -643,7 +693,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     const list = translated[l];
     if (!list.length) continue;
     const cfg = LANG_CFG[l];
-    const words = cfg.hub(list.length);
+    const words = cfg.hub(list.length, libsOf(list));
     pages.push(hubPage({
       path: cfg.root,
       lang: l,
@@ -654,9 +704,10 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       sections: [`<ul class="list">${list.map((c) => {
         const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
-      }).join('')}</ul>`, `<p><a href="${cfg.enHub[0]}">${esc(words.back)}</a></p>`],
+      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a></p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
+    pages.push(renderLangHome(l, list));          // /de/ and /fr/: the landing's own words, the free report
   }
   const payers = byName.filter((c) => c.pages.dividend);
   pages.push(hubPage({
@@ -994,7 +1045,7 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .contents{list-style:none;margin:0;padding:0}.contents li{padding:9px 0;border-bottom:1px solid var(--rule);font:600 14px/1.3 Inter,sans-serif}.contents li:after{content:"🔒";float:right;font-size:12px;opacity:.6}
 .rail .btn{width:100%;margin-top:14px}.rail .sub{text-align:center;margin-top:8px;font-size:12.5px}
 .foot{border-top:1px solid var(--rule);background:var(--page);margin-top:20px}.foot .in{flex-direction:column;align-items:flex-start;padding:20px}.foot nav{display:flex;flex-wrap:wrap;gap:16px;font:600 14px/1 Inter,sans-serif}.foot a{color:var(--ink);text-decoration:none}.foot p{font:400 12.5px/1.6 Inter,sans-serif;color:var(--muted);margin:10px 0 0}
-.hub{max-width:900px;margin:0 auto;padding:26px 20px 80px}.hub h2{font:800 22px/1.3 Inter,sans-serif;margin:34px 0 10px}.hub h2 a{color:var(--ink);text-decoration:none}
+.hub{max-width:900px;margin:0 auto;padding:26px 20px 80px}.home h2{font:800 22px/1.3 Inter,sans-serif}.home section p{font:400 17px/1.6 Inter,sans-serif;max-width:68ch}.hub h2{font:800 22px/1.3 Inter,sans-serif;margin:34px 0 10px}.hub h2 a{color:var(--ink);text-decoration:none}
 .list{list-style:none;margin:0;padding:0}.list li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--rule);font:400 14px/1.4 Inter,sans-serif}
 .list .nm{font-weight:700;color:var(--ink);text-decoration:none}.list .tk{font:600 12px/1 ui-monospace,Menlo,monospace;color:var(--muted)}.list .dt{color:var(--muted);font-size:13px}.list .pg{margin-left:auto;display:flex;gap:10px}.list .pg a{font-weight:600;font-size:13px}
 .letters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.letters a{font:700 13px/1 Inter,sans-serif;text-decoration:none;color:var(--teal);border:1px solid var(--rule);background:#fff;border-radius:6px;padding:7px 9px}

@@ -236,3 +236,33 @@ test('two long names get the shorter title, the search phrase kept', async () =>
   assert.equal(compareTitle(pair('JPMorgan Chase', 'Bank of America')), 'JPMorgan Chase vs Bank of America stock: side by side (October 2026)');
   assert.equal(compareTitle(pair('Canadian Natural Resources', 'Imperial Oil Limited')), 'Canadian Natural Resources vs Imperial Oil Limited stock (October 2026)');
 });
+
+// GERMAN AND FRENCH PAGES, the owner's yes of 2026-10-23 (CTO 12:53Z): the /de/ and /fr/ homes in the landing's own words,
+// a translated page links back to its OWN library's English hub, a language's hub names every library it covers.
+test('the /de/ and /fr/ homes: the landing words verbatim, the free report, linked from the language pages', async () => {
+  const { LANDING_WORDS } = await import('../scripts/lib/landingWords.mjs');
+  const { hubs, pages } = buildStockSite([load('stock-td-to-fr.json'), load('stock-nvda-de.json')], { today: TODAY });
+  for (const [lang, path] of [['de', '/de/'], ['fr', '/fr/']]) {
+    const home = hubs.find((h) => h.path === path);
+    assert.ok(home, path);
+    const w = LANDING_WORDS[lang];
+    for (const k of ['hero.sub', 'steps.1.label', 'steps.2.copy', 'steps.3.label']) assert.ok(home.html.includes(w[k].replace(/&/g, '&amp;').replace(/'/g, '&#39;')), `${path} ${k}`);
+    assert.match(home.html, new RegExp(`signup\\?src=seo-home-${lang}&amp;lang=${lang}`));
+    assert.match(home.html, /hreflang="x-default" href="https:\/\/mystockbutler\.com\/"/);
+    assert.ok(pages.some((p) => p.lang === lang && p.html.includes(`href="${path}"`)), `a ${lang} stock page links ${path}`);
+  }
+});
+
+test("a translated page links its own library's English hub; the hubs name every library they cover", () => {
+  const td = load('stock-td-to-fr.json');
+  const su = clone(td);
+  Object.assign(su, { slug: 'su-pa', ticker: 'SU.PA', short_name: 'Schneider', company: 'Schneider Electric SE', index: 'cac40' });
+  const { pages, hubs, held } = buildStockSite([td, su, load('stock-nvda-de.json')], { today: TODAY });
+  assert.deepEqual(held, [], JSON.stringify(held));
+  const fr = pages.find((p) => p.path === '/fr/stocks/su-pa/');
+  assert.match(fr.html, /href="\/stocks\/cac40\/" hreflang="en">CAC 40 \(English\)</);
+  assert.ok(!fr.html.includes('/stocks/tsx60/'), 'a CAC 40 page never links the TSX 60 hub');
+  assert.ok(hubs.some((h) => h.path === '/stocks/cac40/'), 'the CAC 40 has its English hub');
+  assert.match(hubs.find((h) => h.path === '/fr/stocks/').html, /<p class="lede">Chaque société pour laquelle nous avons un mémo de recherche \(S&amp;P\/TSX 60, CAC 40\) : 2 sociétés\.<\/p>/);
+  assert.match(hubs.find((h) => h.path === '/de/aktien/').html, /\(S&amp;P 500\): 1 Unternehmen\./);
+});
