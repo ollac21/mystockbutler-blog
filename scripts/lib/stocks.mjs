@@ -159,6 +159,17 @@ function frDescribed(page) {
   return pick ? { ...page, meta_description: pick } : page;
 }
 
+// THE YEARS IN THE ENGLISH FORECAST TITLE (owner 2026-10-23 'ok for english pages titles', CTO 13:49Z): the short title — exactly
+// '<short name> stock forecast', the page model's usual one — gets the forecast years the page holds, like the German title
+// ('Darden stock forecast 2027–2029'); the years are our own scenario columns ('October 2027' … 'October 2029', the same
+// source as public_pages_fr.forecast_years); any other title is kept as the model wrote it.
+function yearsSpan(title, data) {
+  if (title !== `${shortName(data)} stock forecast`) return '';
+  const cols = data.pages?.stock?.chart?.columns || [];
+  const years = [...new Set(cols.map((c) => String(c).trim().slice(-4)).filter((y) => /^\d{4}$/.test(y)).map(Number))].sort();
+  return years.length > 1 ? `${years[0]}–${years[years.length - 1]}` : years.length ? String(years[0]) : '';
+}
+
 // OUR NAME IN THE ANSWER SENTENCE (owner 2026-10-22 '1 and 2 build'; the three strings approved by the CTO 18:14Z, the colon
 // form): the words in front of the page's opening, built from the memo's month and our own month lists — no model call.
 //   en  "MyStockButler's October 2026 analysis: "
@@ -442,7 +453,10 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const fr = lang !== 'en';                       // a translated page (French or German)
   const page0 = fr ? frDescribed(langPage(data, type, lang)) : data.pages[type];
   const shared = !fr && ctx.sharedTitles && ctx.sharedTitles.has(page0.title);
-  const page = shared ? { ...page0, title: `${page0.title} (${data.ticker})` } : page0;
+  const modelTitle = shared ? `${page0.title} (${data.ticker})` : page0.title;   // what the page model wrote (the gate reads it)
+  const span = !fr && type === 'stock' ? yearsSpan(page0.title, data) : '';
+  const withSpan = span ? `${page0.title} ${span}${shared ? ` (${data.ticker})` : ''}` : modelTitle;
+  const page = { ...page0, title: withSpan.length <= 60 ? withSpan : modelTitle };
   const teaserData = fr ? data.translations[lang].teaser : data.teaser;
   const slug = data.slug;
   const path = pagePath(slug, type, lang);
@@ -561,7 +575,7 @@ ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</
 <div class="bar"><div class="t">${esc(ui.rail(company))}<span>${ui.sticky}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
-  return { path, url, type, lang, slug, ticker, title: page.title, description: page.meta_description, lastmod: isoDay(data.memo_date),
+  return { path, url, type, lang, slug, ticker, title: page.title, modelTitle, description: page.meta_description, lastmod: isoDay(data.memo_date),
     alternates, html, outLinks, page, data };
 }
 
@@ -781,7 +795,7 @@ export function gatePage(built, ctx) {
     ...(fr ? [humanDay(data.next_earnings, lang), humanDay(data.memo_date, lang)] : []),
   ].join(' ');
   const flat = memoText.replace(/[,\s]/g, '');
-  for (const [name, value] of [['title', page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
+  for (const [name, value] of [['title', built.modelTitle ?? page.title], ['description', page.meta_description], ['opening', page.opening], ['closing', page.closing], ...page.blocks.map((b, i) => [`heading ${i + 1}`, b.heading])]) {
     for (const n of String(value || '').match(NUMBER) || []) {
       // a French or German number ('188,85', '1.234,5') against a cell the memo printed in its own form ('188.85', '1,234.5')
       const asDot = fr && /,/.test(n) ? n.replace(/[.,]/g, (c) => (c === '.' ? ',' : '.')) : null;

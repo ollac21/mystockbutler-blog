@@ -280,3 +280,22 @@ test('every stock page reaches the other languages from its footer; the Organiza
   assert.doesNotMatch(foot(nvdaDe.html), /Auf Deutsch/);
   assert.match(nvdaDe.html, /"sameAs":\["https:\/\/x\.com\/MyStockButler"\]/);
 });
+
+test('the English forecast title carries the years the page holds; any other title stays as written', () => {
+  // owner 2026-10-23 'ok for english pages titles' (CTO 13:49Z): 'Darden stock forecast' -> 'Darden stock forecast 2027-2029'
+  const rmd = load('stock-rmd.json');
+  const short = clone(rmd);
+  short.pages.stock.title = `${short.short_name} stock forecast`;
+  const cols = short.pages.stock.chart?.columns || [];
+  const years = [...new Set(cols.map((c) => Number(String(c).slice(-4))))].sort();
+  assert.ok(years.length > 1, 'the fixture has its scenario columns');
+  const { pages, held } = buildStockSite([short, load('stock-td-to.json')], { today: TODAY });
+  assert.deepEqual(held, [], JSON.stringify(held));
+  const p = pages.find((b) => b.path === '/stocks/rmd/');
+  assert.equal(p.title, `ResMed stock forecast ${years[0]}–${years[years.length - 1]}`);
+  assert.match(p.html, new RegExp(`<title>ResMed stock forecast ${years[0]}–${years[years.length - 1]}</title>`));
+  const long = clone(rmd);
+  long.pages.stock.title = 'ResMed stock forecast: patients and cash';
+  const kept = buildStockSite([long, load('stock-td-to.json')], { today: TODAY }).pages.find((b) => b.path === '/stocks/rmd/');
+  assert.equal(kept.title, 'ResMed stock forecast: patients and cash');
+});
