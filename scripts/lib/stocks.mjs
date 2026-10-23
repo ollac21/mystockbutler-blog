@@ -365,6 +365,15 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 `;
 }
 
+// The footer's links to the other languages (B110 SEO, 2026-10-23: an English stock page, /stocks/ included, linked no German
+// or French page): the German and French homes (B112's /de/ and /fr/), and from a translated page All stocks in English, in
+// the page's own words (UI.otherIn). /de/ and /fr/ are not stock-page addresses: the gate's link counts never read them.
+function langNav(lang) {
+  const homes = [{ lang: 'en', path: '/stocks/', hreflang: 'en' }, ...LANGS.map((l) => ({ lang: l, path: LANG_CFG[l].home, hreflang: LANG_CFG[l].href }))];
+  return homes.filter((h) => h.lang !== lang && UI[lang].otherIn[h.lang])
+    .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
+}
+
 function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
@@ -396,14 +405,17 @@ ${gaHead(meta)}</head>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
 <a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a><a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
 `;
 }
 
-const ORG = { '@type': 'Organization', '@id': `${LANDING}/#organization`, name: 'MyStockButler', url: `${LANDING}/`, logo: `${LANDING}/favicon.svg` };
+// sameAs (B110 SEO): our own X account, so search and answer engines tie the name to one company; exported for the blog
+// home and the posts (render.mjs), so every page names the same Organization node
+export const ORG = { '@type': 'Organization', '@id': `${LANDING}/#organization`, name: 'MyStockButler', url: `${LANDING}/`, logo: `${LANDING}/favicon.svg`,
+  sameAs: ['https://x.com/MyStockButler'] };
 
 function breadcrumbs(items) {
   return {

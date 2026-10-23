@@ -15,12 +15,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
-import { APP, FONT_LINKS, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
+import { APP, FONT_LINKS, LANDING, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
 import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
+import { ORG } from './lib/stocks.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -202,12 +203,19 @@ function structuredData(post, canonical) {
   const modified = lastModified(post);
   if (modified) posting.dateModified = modified;
   if (author) posting.author = { '@type': 'Organization', name: author };
-  if (author) posting.publisher = { '@type': 'Organization', name: author };
+  posting.publisher = { '@id': ORG['@id'] };     // B110 SEO: the one Organization node (name, logo, sameAs) of every page
   if (Array.isArray(post.keywords) && post.keywords.length) posting.keywords = post.keywords.join(', ');
   const wc = Number(post.article_word_count);
   if (Number.isFinite(wc) && wc > 0) posting.wordCount = wc;
 
-  const graph = [posting];
+  const crumbs = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Blog', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: title, item: canonical },
+    ],
+  };
+  const graph = [posting, crumbs, ORG];
   const faq = faqItems(post);
   if (faq.length) {
     graph.push({
@@ -548,7 +556,43 @@ ${dock}
   return pageShell({ title: docTitle, description, canonical, robots: str(post.robots), head, body, bodyClass: 'post', ga: { type: 'post', ticker } });
 }
 
-function renderIndex(entries) {
+// The blog home's head (B110 SEO, 2026-10-23: it had no structured data and no Open Graph): the Organization, the WebSite and
+// the page as a list of the articles; the share card is the landing's.
+function indexHead(entries, title, description) {
+  const url = `${SITE}/`;
+  const ld = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      ORG,
+      { '@type': 'WebSite', '@id': `${SITE}/#website`, url, name: SITE_NAME, description, inLanguage: 'en', publisher: { '@id': ORG['@id'] } },
+      {
+        '@type': 'CollectionPage', '@id': url, url, name: title, description, inLanguage: 'en', isPartOf: { '@id': `${SITE}/#website` },
+        mainEntity: { '@type': 'ItemList', itemListElement: entries.map(({ post }, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/${post.slug}/`, name: str(post.title) || str(post.seo_title) })) },
+      },
+    ],
+  };
+  const image = `${LANDING}/share-1200x630.png`;
+  const og = [['og:type', 'website'], ['og:site_name', SITE_NAME], ['og:title', title], ['og:description', description], ['og:url', url], ['og:image', image], ['og:locale', 'en_US']]
+    .map(([k, v]) => `<meta property="${k}" content="${esc(v)}">`);
+  const tw = [['twitter:card', 'summary_large_image'], ['twitter:title', title], ['twitter:description', description], ['twitter:image', image]]
+    .map(([k, v]) => `<meta name="${k}" content="${esc(v)}">`);
+  return `${[...og, ...tw].join('\n')}\n<script type="application/ld+json">\n${jsonLd(ld)}\n</script>\n`;
+}
+
+// The language hubs (B112's addresses), each named by its own title in the build: the blog home and llms.txt link them.
+const LANG_HUBS = [{ lang: 'de', name: 'Deutsch', path: '/de/aktien/', home: '/de/', hreflang: 'de' }, { lang: 'fr', name: 'Français', path: '/fr/stocks/', home: '/fr/', hreflang: 'fr-CA' }];
+
+// The links from the blog home to every language's stock pages: All stocks, then each language hub under its own title.
+function languageStrip(hubs = []) {
+  const links = [`<a href="/stocks/">All stocks</a>`];
+  for (const l of LANG_HUBS) {
+    const hub = hubs.find((h) => h.url === `${SITE}${l.path}`);
+    if (hub) links.push(`<a href="${l.path}" hreflang="${l.hreflang}" lang="${l.hreflang}">${esc(hub.title)}</a>`);
+  }
+  return `<nav class="langs" aria-label="Stock pages">${links.join('')}</nav>`;
+}
+
+function renderIndex(entries, hubs = []) {
   const [first, ...others] = entries;
   const featured = first ? cardHtml(first.post, true) : '';
   const grid = others.length
@@ -557,16 +601,18 @@ function renderIndex(entries) {
 ${others.map(({ post }) => cardHtml(post, false)).join('\n')}
 </div>`
     : '';
+  const description = 'Source-backed public-company research built from filings, transcripts, reconstructed financials, and explicit valuation work.';
   return pageShell({
     title: SITE_NAME,
-    description:
-      'Source-backed public-company research built from filings, transcripts, reconstructed financials, and explicit valuation work.',
+    description,
     canonical: `${SITE}/`,
+    head: indexHead(entries, SITE_NAME, description),
     body: `<main>
 <section class="index-head"><div class="wrap">
 <div class="eyebrow">MyStockButler Research</div>
 <h1>Investment research, rebuilt from the evidence.</h1>
 <p>Full public-company memos with the calculations, sources, and investment verdict preserved.</p>
+${languageStrip(hubs)}
 </div></section>
 <section class="index-body wrap">
 ${featured}
@@ -590,7 +636,8 @@ function renderSitemap(entries) {
 
 // Search engines and the AI assistants' crawlers are all welcome (owner, B112): named one by one so a crawler that only
 // reads its own group still finds an Allow.
-const CRAWLERS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Claude-SearchBot', 'Applebot'];
+const CRAWLERS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Claude-SearchBot', 'Applebot',
+  'Google-Extended', 'Applebot-Extended'];     // B110 SEO: Gemini / Google's AI answers and Apple Intelligence (owner 2026-10-23)
 function renderRobots() {
   return `${CRAWLERS.map((ua) => `User-agent: ${ua}\nAllow: /\n`).join('\n')}\nUser-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`;
 }
@@ -600,14 +647,26 @@ function renderSitemapIndex(names, lastmod) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items.join('\n')}\n</sitemapindex>\n`;
 }
 
-function renderLlms(entries, stockPages = []) {
+// llms.txt (B110 SEO, 2026-10-23: it was 440 KB, every page): the languages first, the articles, the hubs that list every
+// company page, and the address of llms-full.txt, which keeps the full list (every stock page with its description).
+function renderLlms(entries, stockPages = [], hubs = []) {
   const lines = entries.map(({ post }) => {
     const title = str(post.title) || str(post.seo_title);
     const excerpt = str(post.excerpt) || str(post.seo_description);
     return `- [${title}](${SITE}/${post.slug}/)${excerpt ? `: ${excerpt}` : ''}`;
   });
+  const byUrl = (p) => hubs.find((h) => h.url === `${SITE}${p}`);
+  const langs = [`- English: [All stocks](${SITE}/stocks/)`];
+  for (const l of LANG_HUBS) {
+    for (const hub of [byUrl(l.home), byUrl(l.path)].filter(Boolean)) langs.push(`- ${l.name}: [${hub.title}](${hub.url}): ${hub.description}`);
+  }
+  const head = `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
   const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
-  return `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Articles\n\n${lines.join('\n')}\n${stocks.length ? `\n## Stock pages (forecast, dividend, earnings, side by side)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
+  const listed = new Set(LANG_HUBS.flatMap((l) => [`${SITE}${l.home}`, `${SITE}${l.path}`]));
+  const hubLines = hubs.filter((h) => !listed.has(h.url)).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
+  const short = `${head}${hubLines.length ? `\n## Stock hubs (each lists its company pages)\n\n${hubLines.join('\n')}\n` : ''}${stocks.length ? `\n## Every page\n\nThe ${stocks.length} stock pages (forecast, dividend, earnings, side by side), each with its description: ${SITE}/llms-full.txt\n` : ''}`;
+  const full = `${head}${stocks.length ? `\n## Stock pages (forecast, dividend, earnings, side by side)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
+  return { short, full };
 }
 
 async function main() {
@@ -653,9 +712,9 @@ async function main() {
     await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown, hub, articleFile));
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
-  await writeFile(path.join(OUT, 'index.html'), renderIndex(entries));
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
   const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT) });
+  await writeFile(path.join(OUT, 'index.html'), renderIndex(entries, stocks.llmsHubs || []));     // it links the language hubs
   const postsXml = renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
   const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps)];
@@ -666,7 +725,9 @@ async function main() {
   await writeFile(path.join(OUT, KEY_FILE), INDEXNOW_KEY);
   await writeFile(path.join(OUT, STATE_FILE), `${JSON.stringify(buildState([...parseSitemap(postsXml), ...stocks.entries]), null, 2)}\n`);
   await writeFile(path.join(OUT, 'robots.txt'), renderRobots());
-  await writeFile(path.join(OUT, 'llms.txt'), renderLlms(entries, stocks.llms));
+  const llms = renderLlms(entries, stocks.llms, stocks.llmsHubs || []);
+  await writeFile(path.join(OUT, 'llms.txt'), llms.short);
+  await writeFile(path.join(OUT, 'llms-full.txt'), llms.full);
   await writeFile(path.join(OUT, '.nojekyll'), '');
   const cname = path.join(ROOT, 'CNAME');
   if (existsSync(cname)) await copyFile(cname, path.join(OUT, 'CNAME'));

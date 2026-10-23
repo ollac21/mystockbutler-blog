@@ -207,12 +207,14 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
         .map((p) => ({ url: p.url, lastmod: p.lastmod, alternates: p.alternates }));
       if (entries.length) sitemaps[`sitemap-${t}-${lang}.xml`] = entries;
     }
-    const hubEntries = hubs.filter((h) => (h.lang || 'en') === lang).map((h) => ({ url: h.url, lastmod: h.lastmod }));
+    const hubEntries = hubs.filter((h) => (h.lang || 'en') === lang).map((h) => ({ url: h.url, lastmod: h.lastmod, alternates: h.alternates }));
     if (hubEntries.length) sitemaps[`sitemap-stock-hubs-${lang}.xml`] = hubEntries;
   }
   if (compared.length) sitemaps['sitemap-compare-en.xml'] = compared.map((p) => ({ url: p.url, lastmod: p.lastmod }));
   for (const [name, entries] of Object.entries(sitemaps)) await writeFile(path.join(out, name), urlset(entries));
   const llms = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ title: p.title, url: p.url, description: p.description }));
+  // the hubs, for llms.txt's short list (B110 SEO): every hub page with its language
+  const llmsHubs = [...hubs, ...compared.filter((p) => p.type === 'hub')].map((h) => ({ title: h.title, url: h.url, description: h.description, lang: h.lang || 'en' }));
   const table = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
   const full = { built_at: new Date().toISOString(), ...report, fetch: { ...FETCH_STATS }, table };
   if (reportDir) {
@@ -222,5 +224,5 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
-  return { sitemaps, llms, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
+  return { sitemaps, llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }
