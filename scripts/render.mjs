@@ -580,7 +580,7 @@ function indexHead(entries, title, description) {
 }
 
 // The language hubs (B112's addresses), each named by its own title in the build: the blog home and llms.txt link them.
-const LANG_HUBS = [{ lang: 'de', name: 'Deutsch', path: '/de/aktien/', home: '/de/', hreflang: 'de' }, { lang: 'fr', name: 'Français', path: '/fr/stocks/', home: '/fr/', hreflang: 'fr-CA' }];
+const LANG_HUBS = [{ lang: 'de', name: 'Deutsch', path: '/de/aktien/', home: '/de/', hreflang: 'de' }, { lang: 'fr', name: 'Français', path: '/fr/stocks/', home: '/fr/', hreflang: 'fr' }];
 
 // The blog home and the /de/ and /fr/ homes name each other (hreflang both ways, CTO 2026-10-23T13:47Z): the home is
 // their English version, and it lists them back (only the ones this build drew).

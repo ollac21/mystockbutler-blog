@@ -78,7 +78,7 @@ export const UI = {
     series: { 'Dividends paid, per share': 'Dividends paid, per share', 'Real free cash flow per share': 'Real free cash flow per share', 'Free cash flow per share': 'Free cash flow per share', Revenue: 'Revenue' },
   },
   fr: {
-    htmlLang: 'fr-CA', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Votre premier rapport gratuit', free: 'Votre premier rapport est gratuit · sans carte',
+    htmlLang: 'fr', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Votre premier rapport gratuit', free: 'Votre premier rapport est gratuit · sans carte',
     readFull: (c) => `Lire le mémo complet sur ${c}`, proof: (c) => `Chaque chiffre est relié aux documents déposés par ${c}`, chapters: 'chapitres', words: 'mots',
     sources: 'sources citées', kicker: 'Mémo de recherche', memoOf: 'Mémo du', mid: (p, P, t, T) => `Cette page présente ${p} des ${P} paragraphes du mémo et ${t} de ses ${T} tableaux.`,
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
@@ -113,7 +113,7 @@ export const UI = {
 // INDEX_NAMES: 'S&P 500, DAX'), never one library for all.
 const LANG_CFG = {
   fr: {
-    root: '/fr/stocks/', home: '/fr/', seg: { stock: '', dividend: 'dividende/', earnings: 'resultats/' }, href: 'fr-CA', og: 'fr_CA',
+    root: '/fr/stocks/', home: '/fr/', seg: { stock: '', dividend: 'dividende/', earnings: 'resultats/' }, href: 'fr', og: 'fr_FR',
     title: TITLE_FR, banned: BANNED_FR, here: 'Ces pages en français',
     hub: (n, libs) => ({ title: 'Actions : prévisions, dividendes, résultats', description: `Prévisions, dividendes et prochains résultats de ${n} sociétés (${libs}), tirés de nos mémos de recherche.`,
       intro: `Chaque société pour laquelle nous avons un mémo de recherche (${libs}) : ${n} sociétés.`, back: 'Toutes les actions, en anglais', crumb: 'Actions' }),

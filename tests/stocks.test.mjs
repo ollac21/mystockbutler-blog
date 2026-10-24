@@ -274,7 +274,7 @@ test('every stock page reaches the other languages from its footer; the Organiza
   const foot = (html) => (/<footer[\s\S]*<\/footer>/.exec(html) || [''])[0];
   const all = hubs.find((h) => h.path === '/stocks/');
   assert.match(foot(all.html), /href="\/de\/" hreflang="de" lang="de">Auf Deutsch/);
-  assert.match(foot(all.html), /href="\/fr\/" hreflang="fr-CA" lang="fr-CA">En français/);
+  assert.match(foot(all.html), /href="\/fr\/" hreflang="fr" lang="fr">En français/);
   const nvdaDe = pages.find((p) => p.path === '/de/aktien/nvda/');
   assert.match(foot(nvdaDe.html), /href="\/stocks\/" hreflang="en" lang="en">In English/);
   assert.doesNotMatch(foot(nvdaDe.html), /Auf Deutsch/);
