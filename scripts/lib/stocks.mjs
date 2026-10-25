@@ -799,7 +799,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       sections: [`<ul class="list">${list.map((c) => {
         const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
-      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a></p>`],
+      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
     if (LANDING_WORDS[l]) pages.push(renderLangHome(l, list));   // /de/ and /fr/: the landing's own words (no Chinese home)
@@ -807,7 +807,11 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       const example = list.filter((c) => c.ticker === GUIDE_OF[l].example);     // the front matter's 'example: <ticker>'
       const extra = `<p>${[...example.flatMap((c) => TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].sibling(t, shortName(c)))}</a>`)),
         `<a href="${LANG_CFG[l].root}">${esc(UI[l].allStocks)} (${list.length})</a>`].join(' · ')}</p>`;
-      const g = renderGuide(GUIDE_OF[l], { shell, SITE, ORG, breadcrumbs, crumbRoot: { name: 'MyStockButler', path: LANG_CFG[l].home }, extra });
+      // the same guide in its other built languages (hreflang both ways; x-default = the first, French)
+      const sib = GUIDES.filter((x) => x.group && x.group === GUIDE_OF[l].group && translated[x.lang] && translated[x.lang].length);
+      const alternates = sib.length > 1 ? [...sib.map((x) => ({ hreflang: LANG_CFG[x.lang].href, url: `${SITE}${x.path}` })), { hreflang: 'x-default', url: `${SITE}${sib[0].path}` }] : [];
+      const crumbRoot = LANDING_WORDS[l] ? { name: 'MyStockButler', path: LANG_CFG[l].home } : { name: LANG_CFG[l].hub(list.length, '').crumb, path: LANG_CFG[l].root };
+      const g = renderGuide(GUIDE_OF[l], { shell, SITE, ORG, breadcrumbs, crumbRoot, extra, alternates });
       g.outLinks = [...g.html.matchAll(SITE_LINK)].map((m) => m[1]);
       pages.push(g);
     }

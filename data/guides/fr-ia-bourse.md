@@ -4,6 +4,7 @@ h1: "IA en bourse : analyser une action avec les questions d'un analyste"
 meta_description: "L'IA lit en minutes des centaines de pages de rapports annuels ; elle ne prédit pas le cours. Les questions d'un analyste, un exemple sur Air Liquide."
 path: /fr/ia-bourse/
 updated: 2026-10-25
+group: ai-stock-analysis
 example: AI.PA
 lang: fr
 ---

@@ -49,17 +49,19 @@ export function faqOf(markdown) {
 }
 
 // The landing's ticker box: a symbol, the button 'Obtenir le rapport — gratuit' (the landing's own words), the signup.
+// the button in a language the landing has no words for (B114: Chinese) — our own fixed words, as on its stock pages
+const BUTTON = { 'zh-HK': '免費取得首份報告' };
 function tickerBox(lang, src) {
-  const w = LANDING_WORDS[lang] || LANDING_WORDS.fr;
-  const ph = { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', zh: '例如 NVDA' }[lang] || 'e.g. AI.PA';
+  const label = (LANDING_WORDS[lang] || {})['steps.1.cta'] || BUTTON[lang] || LANDING_WORDS.fr['steps.1.cta'];
+  const ph = { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', 'zh-HK': '例如 NVDA' }[lang] || 'e.g. AI.PA';
   return `<form class="tickerbox" action="${APP}/signup" method="get">
 <input type="hidden" name="src" value="${esc(src)}"><input type="hidden" name="lang" value="${esc(lang)}">
 <input name="ticker" type="text" placeholder="${esc(ph)}" autocomplete="off" aria-label="ticker" maxlength="12">
-<button class="btn big" type="submit" data-cta="${esc(src)}">${esc(w['steps.1.cta'])}</button></form>`;
+<button class="btn big" type="submit" data-cta="${esc(src)}">${esc(label)}</button></form>`;
 }
 
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
-export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '' }) {
+export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [] }) {
   const url = `${SITE}${g.path}`;
   const src = `seo-guide-${g.name.replace(/\.md$/, '')}`;
   const cta = `${APP}/signup?src=${encodeURIComponent(src)}&lang=${g.lang}`;
@@ -78,6 +80,7 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     description: g.meta_description,
     canonical: url,
     lang: g.lang,
+    alternates,
     jsonld: ld,
     meta: { type: 'guide', ticker: '', cta, lang: g.lang, label: `guide ${g.name}` },
     body: `<div class="layout one"><article class="guide">
