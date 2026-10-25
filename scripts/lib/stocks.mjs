@@ -169,6 +169,10 @@ const LANG_CFG = {
     title: TITLE_ZH, banned: BANNED_ZH, here: '這些頁面的中文版',
     hub: (n, libs) => ({ title: `美股分析：${n} 家美國大公司的財報數字`, description: `${n} 家美國大公司（${libs}）的股價預測、股息與下次業績日期，數字均來自我們的研究備忘錄。`,
       intro: `我們為以下 ${n} 家公司撰寫了研究備忘錄（${libs}）。`, back: '所有股票（英文）', crumb: '美股分析' }),
+    // B114 (CTO 2026-10-25T13:48Z): the Hang Seng companies on their own hub, '港股分析' — the US hub's title stays true
+    sub: { hsi: { root: '/zh/stocks/hk/', hub: (n) => ({ title: `港股分析：${n} 家香港上市公司的財報數字`,
+      description: `${n} 家恒生指數成分股公司的股價預測、股息與下次業績日期，數字均來自我們的研究備忘錄。`,
+      intro: `我們為以下 ${n} 家恒生指數成分股公司撰寫了研究備忘錄。`, back: '所有股票（英文）', crumb: '港股分析' }) } },
   },
 };
 // The English hub a translated page links back to: its own library's ('S&P 500 (English)'), else all stocks.
@@ -546,7 +550,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const alternates = versions.length > 1
     ? [...versions.map((l) => ({ hreflang: hrefOf(l), url: `${SITE}${pagePath(slug, type, l)}` })), { hreflang: 'x-default', url: `${SITE}${pagePath(slug, type, 'en')}` }]
     : [];
-  const rootCrumb = { name: ui.stocksCrumb, path: fr ? LANG_CFG[lang].root : '/stocks/' };
+  const sub = fr && (LANG_CFG[lang].sub || {})[data.index];   // B114: a Hang Seng company's Chinese page sits under 港股分析
+  const rootCrumb = sub ? { name: sub.hub(0).crumb, path: sub.root } : { name: ui.stocksCrumb, path: fr ? LANG_CFG[lang].root : '/stocks/' };
   const stockPath = has('stock', lang) ? pagePath(slug, 'stock', lang) : path;
   const crumbs = breadcrumbs([
     rootCrumb,
@@ -795,7 +800,25 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     const list = translated[l];
     if (!list.length) continue;
     const cfg = LANG_CFG[l];
-    const words = cfg.hub(list.length, libsOf(list));
+    const subs = cfg.sub || {};                   // B114: Chinese Hang Seng companies on their own hub
+    const main = list.filter((c) => !subs[c.index]);
+    const subHubs = Object.entries(subs).map(([key, sc]) => ({ key, sc, list: list.filter((c) => c.index === key) })).filter((x) => x.list.length);
+    const others = (self) => [{ path: cfg.root, title: main.length ? cfg.hub(main.length, libsOf(main)).title : '' }, ...subHubs.map((x) => ({ path: x.sc.root, title: x.sc.hub(x.list.length).title }))]
+      .filter((h) => h.title && h.path !== self).map((h) => ` · <a href="${h.path}">${esc(h.title)}</a>`).join('');
+    for (const x of subHubs) {
+      const w = x.sc.hub(x.list.length);
+      pages.push(hubPage({
+        path: x.sc.root, lang: l, title: w.title, description: w.description, intro: w.intro, search: true,
+        updated: x.list.map((c) => isoDay(c.memo_date)).filter(Boolean).sort().pop() || '',
+        sections: [`<ul class="list">${x.list.map((c) => {
+          const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
+          return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
+        }).join('')}</ul>`, `<p><a href="/stocks/" hreflang="en">${esc(w.back)}</a>${others(x.sc.root)}${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
+        crumbItems: [{ name: w.crumb, path: x.sc.root }],
+      }));
+    }
+    if (!main.length) continue;
+    const words = cfg.hub(main.length, libsOf(main));
     pages.push(hubPage({
       path: cfg.root,
       lang: l,
@@ -803,11 +826,11 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       description: words.description,
       intro: words.intro,
       search: true,
-      updated: list.map((c) => isoDay(c.memo_date)).filter(Boolean).sort().pop() || '',
-      sections: [`<ul class="list">${list.map((c) => {
+      updated: main.map((c) => isoDay(c.memo_date)).filter(Boolean).sort().pop() || '',
+      sections: [`<ul class="list">${main.map((c) => {
         const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
-      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
+      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${others(cfg.root)}${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
     if (LANDING_WORDS[l]) pages.push(renderLangHome(l, list));   // /de/ and /fr/: the landing's own words (no Chinese home)

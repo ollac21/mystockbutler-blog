@@ -406,3 +406,18 @@ test('the Chinese guide /zh/ai-stock-analysis/ (B114 row 5): its title, the butt
   // no Chinese page, no Chinese guide
   assert.ok(!buildStockSite([load('stock-td-to-fr.json')], { today: TODAY }).hubs.some((h) => h.path === '/zh/ai-stock-analysis/'));
 });
+
+test('a Hang Seng company in Chinese sits under its own 港股分析 hub; the 美股分析 hub keeps counting US companies (B114)', () => {
+  const hk = clone(load('stock-nvda-zh.json'));
+  Object.assign(hk, { slug: '0700-hk', ticker: '0700.HK', company: 'Tencent Holdings Limited', short_name: 'Tencent', index: 'hsi' });
+  const { pages, hubs, report } = buildStockSite([load('stock-nvda-zh.json'), hk, load('stock-rmd.json')], { today: TODAY });
+  const us = hubs.find((h) => h.path === '/zh/stocks/');
+  const hkHub = hubs.find((h) => h.path === '/zh/stocks/hk/');
+  assert.equal(us.title, '美股分析：1 家美國大公司的財報數字');
+  assert.equal(hkHub.title, '港股分析：1 家香港上市公司的財報數字');
+  assert.ok(hkHub.html.includes('href="/zh/stocks/0700-hk/"') && !us.html.includes('href="/zh/stocks/0700-hk/"'));
+  assert.ok(us.html.includes('href="/zh/stocks/hk/"') && hkHub.html.includes('href="/zh/stocks/"'));
+  const page = pages.find((p) => p.path === '/zh/stocks/0700-hk/');
+  assert.match(page.html, /<a href="\/zh\/stocks\/hk\/">港股分析<\/a>/);
+  assert.deepEqual(report.deadHubLinks, []);
+});
