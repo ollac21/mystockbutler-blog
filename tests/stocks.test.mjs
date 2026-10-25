@@ -333,6 +333,11 @@ test('a box shows the unit of the table its value was copied from (B114, CHECKLI
   const html = pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
   assert.match(html, /<div class="v">3\.67 <small>US\$ per share<\/small><\/div><div class="l">Dividend paid per share, 2025<\/div>/);
   assert.match(html, /<div class="v">4\.5%<\/div>/);           // a box no table holds: nothing added
+  // NVIDIA 2026-10-25: the share price '216.62' sits in a table in millions too — only the per-share table lends its unit
+  div.facts = [{ label: 'Share price today, USD', value: '216.62' }];
+  div.blocks[2].table = { title: 'What an investor pays today', unit: 'US$ millions', note: '', head: ['Row', 'Today'], rows: [['Share price', '216.62']] };
+  const price = buildStockSite([td, load('stock-rmd.json')], { today: TODAY }).pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
+  assert.match(price, /<div class="v">216\.62<\/div>/);
   // a percent that equals a cell of a table in millions is not given that unit (TD's '2,6 %' dividend yield)
   div.facts = [{ label: 'Dividend yield', value: '2.6%' }];
   div.blocks[0].table.rows.push(['Payout, % of free cash flow', '2.6%', '2.1%']);

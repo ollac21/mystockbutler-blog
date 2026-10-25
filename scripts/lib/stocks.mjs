@@ -502,18 +502,23 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
 // One company page, in English, in French (S&P/TSX 60) or in German (S&P 500). ctx.exists(path) tells whether another
 // page of this build exists (links to it only then). A translated page is the English page with every piece the chain
 // translated swapped in.
-// THE UNIT OF A BOX (B114, CHECKLIST A12 'every number carries its currency'): a box copied from a cell of one of the
-// page's own tables shows that table's unit ('US$ per share'). TotalEnergies' dividend box read '3.67' beside the
-// sentence 'TotalEnergies paid €3.40 per share': the box is the US dollars paid per share, its table says so. Existence on
-// our own copied cells: a bare number equal to the latest column of exactly one table's rows (one unit), else nothing
-// is added (TD's '2,6 %' yield matched a percentage row of a table in millions: a % is never given a table's unit).
-function factUnit(fact, page) {
+// THE UNIT OF A BOX (B114, CHECKLIST A12 'every number carries its currency'): the dividend box is copied from the
+// per-share table ('What one share gets', our own title: shape), whose unit is per share for every row ('US$ per share').
+// TotalEnergies' box read '3.67' beside the sentence 'TotalEnergies paid €3.40 per share': the box is the US dollars paid
+// per share. Only that table lends its unit (a table in millions holds the share price too: NVIDIA's '216.62' must never
+// read '216.62 US$ millions'). On a translated page its twin is the table whose latest column has the same digits, row by
+// row. Existence on our own copied cells; a bare number only.
+const PER_SHARE_TITLE = 'What one share gets';
+const digitsOf = (v) => String(v || '').replace(/\*\*/g, '').replace(/[^0-9]/g, '');
+function factUnit(fact, page, enPage) {
   const value = String(fact.value || '').split(' (')[0].trim();
-  // a bare number only: a '%' or a multiple carries its own unit, a label with '(…)' already names it (shape)
   if (!/^[−-]?[\d.,\u202f\u00a0 ]+$/.test(value) || /\(/.test(String(fact.label || ''))) return '';
-  const units = new Set((page.blocks || []).map((b) => b.table).filter((t) => t && t.unit
-    && (t.rows || []).some((r) => r.length > 1 && String(r[1]).replace(/\*\*/g, '').trim() === value)).map((t) => t.unit));
-  return units.size === 1 ? [...units][0] : '';
+  const en = ((enPage || page).blocks || []).map((b) => b.table).find((t) => t && t.title === PER_SHARE_TITLE);
+  if (!en || !en.unit) return '';
+  const twin = (page.blocks || []).map((b) => b.table).find((t) => t && t.unit && (t.rows || []).length === en.rows.length
+    && t.rows.every((r, i) => digitsOf(r[1]) === digitsOf(en.rows[i][1])));
+  if (!twin || !twin.rows.some((r) => digitsOf(r[1]) && digitsOf(r[1]) === digitsOf(value))) return '';
+  return twin.unit;
 }
 
 export function renderCompanyPage(data, type, ctx, lang = 'en') {
@@ -556,7 +561,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const facts = (page.facts || [])
     .map((f) => {
       const [v, ret] = String(f.value).split(' (');
-      const unit = factUnit(f, page);
+      const unit = factUnit(f, page, data.pages[type]);
       return `<div><div class="v">${esc(v)}${ret ? ` <small>(${esc(ret)}</small>` : ''}${unit ? ` <small>${esc(unit)}</small>` : ''}</div><div class="l">${esc(f.label)}</div></div>`;
     })
     .join('');
