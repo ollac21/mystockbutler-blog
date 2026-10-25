@@ -201,7 +201,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await writeFile(path.join(dir, 'index.html'), p.html);
   }
   const sitemaps = {};
-  for (const lang of ['en', 'fr', 'de']) {
+  for (const lang of ['en', 'fr', 'de', 'zh-HK']) {
     for (const t of TYPES) {
       const entries = pages.filter((p) => p.type === t && (p.lang || 'en') === lang)
         .map((p) => ({ url: p.url, lastmod: p.lastmod, alternates: p.alternates }));

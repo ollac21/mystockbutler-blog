@@ -30,6 +30,9 @@ const TITLE_FR = /^(Action |Dividende |Résultats de )/;
 // German (S&P 500, owner 2026-10-22): the advice words, model-written lines only; the title carries 'Aktie' or 'Quartalszahlen'
 const BANNED_DE = /(?<!\p{L})(kaufen|verkaufen|unterbewertet\p{L}*|überbewertet\p{L}*|billig\p{L}*|teuer\p{L}*|diese Seite)(?!\p{L})/iu;
 const TITLE_DE = /(Aktie|Quartalszahlen)/;
+// Traditional Chinese (B114 row 2, Hong Kong + Taiwan): the advice words, model-written lines only; the title carries the search
+const BANNED_ZH = /(買入|賣出|沽出|低估|高估|便宜|昂貴|本頁)/u;
+const TITLE_ZH = /(股票分析|股息|財報)/;
 const NUMBER = /\d[\d,.]*\d|\d/g;
 const MAX_BYTES = 100 * 1024;
 const FREE_LINE = 'Your first report is free · no card';
@@ -56,6 +59,14 @@ function dateDe(text) {
     .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/g, (m) => MONTHS_DE[MONTHS_EN.indexOf(m)])
     .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (m) => MON_DE[MON_EN.indexOf(m)]);
 }
+// Our own column dates in Chinese ('October 2029' -> '2029年10月', 'Jun 2026' -> '2026年6月'): the closed month lists (shape).
+function dateZh(text) {
+  return String(text || '')
+    .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December) (\d{4})\b/g, (m, mo, y) => `${y}年${MONTHS_EN.indexOf(mo) + 1}月`)
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4})\b/g, (m, mo, y) => `${y}年${MON_EN.indexOf(mo) + 1}月`)
+    .replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/g, (m) => `${MONTHS_EN.indexOf(m) + 1}月`)
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (m) => `${MON_EN.indexOf(m) + 1}月`);
+}
 // A number WE draw (a chart's value, the price today) the German way: '1,234.5' -> '1.234,5', '12%' -> '12 %' (digits only:
 // shape, the chain's german_number in Python does the same for the cells it copies).
 export function germanNumber(text) {
@@ -80,7 +91,7 @@ export const UI = {
     fromMemo: 'From the full memo', cont: 'Continue reading, free', whereFrom: 'Where these numbers come from', filingOn: (h) => `Filing on ${h}`,
     filing: 'Filing', moreOn: (c) => `More on ${c}`, rivals: 'Its rivals', browse: 'Browse', rail: (c) => `The full ${c} memo`, readItFree: 'Read it free',
     sticky: 'Your first report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
-    types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, otherIn: { fr: 'En français', de: 'Auf Deutsch' }, locale: 'en-US',
+    types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, otherIn: { fr: 'En français', de: 'Auf Deutsch', 'zh-HK': '中文' }, locale: 'en-US',
     sibling: (t, c) => `${c} ${UI.en.types[t].toLowerCase()}`, find: 'Find a company', findPh: 'Company or ticker, e.g. Costco or TD', num: same,
     footer: 'Information only, not investment advice. Scenarios are scenarios, not predictions. Check the cited filings before making an investment decision.',
     scen: (d) => `Share price in ${d}: our three scenarios`, today: 'Today', cases: { Bear: 'Bear', Base: 'Base', Bull: 'Bull' },
@@ -95,7 +106,7 @@ export const UI = {
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
     guide: "Analyser une action avec l'IA",
-    types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch' }, locale: 'fr-CA',
+    types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch', 'zh-HK': '中文' }, locale: 'fr-CA',
     sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: frenchNumber,
     footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
     scen: (d) => `Cours de l'action en ${d} : nos trois scénarios`, today: "Aujourd'hui", cases: { Bear: 'Pessimiste', Base: 'Central', Bull: 'Optimiste' },
@@ -109,12 +120,28 @@ export const UI = {
     fromMemo: 'Aus dem vollständigen Memo', cont: 'Gratis weiterlesen', whereFrom: 'Woher diese Zahlen stammen', filingOn: (h) => `Dokument auf ${h}`,
     filing: 'Dokument', moreOn: (c) => `Mehr zu ${c}`, rivals: 'Die Konkurrenz', browse: 'Stöbern', rail: (c) => `Das vollständige ${c}-Memo`, readItFree: 'Gratis lesen',
     sticky: 'Ihr erster Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
-    types: { stock: 'Prognose', dividend: 'Dividende', earnings: 'Quartalszahlen' }, otherIn: { en: 'In English', fr: 'En français' }, locale: 'de-DE',
+    types: { stock: 'Prognose', dividend: 'Dividende', earnings: 'Quartalszahlen' }, otherIn: { en: 'In English', fr: 'En français', 'zh-HK': '中文' }, locale: 'de-DE',
     sibling: (t, c) => `${c} ${UI.de.types[t]}`, find: 'Unternehmen finden', findPh: 'Unternehmen oder Kürzel, z. B. Apple oder NVDA', num: germanNumber,
     footer: 'Nur zur Information, keine Anlageberatung. Szenarien sind Szenarien, keine Vorhersagen. Prüfen Sie die zitierten Unterlagen vor jeder Anlageentscheidung.',
     scen: (d) => `Aktienkurs im ${d}: unsere drei Szenarien`, today: 'Heute', cases: { Bear: 'Pessimistisch', Base: 'Basis', Bull: 'Optimistisch' },
     divChart: 'Dividende je Aktie und freier Cashflow je Aktie', revChart: 'Umsatz je Quartal', date: dateDe,
     series: { 'Dividends paid, per share': 'Gezahlte Dividende je Aktie', 'Real free cash flow per share': 'Echter freier Cashflow je Aktie', 'Free cash flow per share': 'Freier Cashflow je Aktie', Revenue: 'Umsatz' },
+  },
+  // Traditional Chinese, Hong Kong usage (B114 row 2): every fixed word with its English meaning in reports/drafts/zh-ui-words.md
+  'zh-HK': {
+    htmlLang: 'zh-Hant', allStocks: '所有股票', blog: '網誌', headerCta: '免費取得首份報告', free: '首份報告免費 · 無需信用卡',
+    readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均連結至 ${c} 的公開文件`, chapters: '章', words: '字',
+    sources: '個引用來源', kicker: '研究備忘錄', memoOf: '備忘錄日期', mid: (p, P, t, T) => `本頁展示備忘錄 ${P} 段中的 ${p} 段，以及 ${T} 個表格中的 ${t} 個。`,
+    fromMemo: '摘自完整備忘錄', cont: '免費繼續閱讀', whereFrom: '數字來源', filingOn: (h) => `${h} 上的文件`,
+    filing: '文件', moreOn: (c) => `更多關於 ${c}`, rivals: '競爭對手', browse: '瀏覽', rail: (c) => `${c} 完整備忘錄`, readItFree: '免費閱讀',
+    sticky: '首份報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼。',
+    guide: '用 AI 分析一檔股票',
+    types: { stock: '股票分析', dividend: '股息', earnings: '財報' }, otherIn: { en: 'English', fr: 'Français', de: 'Deutsch' }, locale: 'zh-HK',
+    sibling: (t, c) => `${c} ${UI['zh-HK'].types[t]}`, find: '尋找公司', findPh: '公司名稱或股票代號，例如 Apple 或 NVDA', num: same,
+    footer: '僅供參考，並非投資建議。情境只是情境，不是預測。作出任何投資決定前，請先查閱所引用的文件。',
+    scen: (d) => `${d}的股價：我們的三個情境`, today: '今日', cases: { Bear: '悲觀', Base: '基本', Bull: '樂觀' },
+    divChart: '每股股息與每股自由現金流', revChart: '每季收入', date: dateZh,
+    series: { 'Dividends paid, per share': '每股已派股息', 'Real free cash flow per share': '每股實際自由現金流', 'Free cash flow per share': '每股自由現金流', Revenue: '收入' },
   },
 };
 
@@ -135,6 +162,13 @@ const LANG_CFG = {
     hub: (n, libs) => ({ title: 'Aktien: Prognosen, Dividenden, Quartalszahlen', description: `Prognosen, Dividenden und nächste Quartalszahlen von ${n} Unternehmen (${libs}), aus unseren Research-Memos.`,
       intro: `Jedes Unternehmen, zu dem wir ein Research-Memo haben (${libs}): ${n} Unternehmen.`, back: 'Alle Aktien auf Englisch', crumb: 'Aktien' }),
   },
+  // Traditional Chinese (B114 rows 2 + 5): the US companies for '美股分析'; no home of its own (the hub is its home)
+  'zh-HK': {
+    root: '/zh/stocks/', home: '/zh/stocks/', seg: { stock: '', dividend: 'dividend/', earnings: 'earnings/' }, href: 'zh-Hant', og: 'zh_HK',
+    title: TITLE_ZH, banned: BANNED_ZH, here: '這些頁面的中文版',
+    hub: (n, libs) => ({ title: `美股分析：${n} 家美國大公司的財報數字`, description: `${n} 家美國大公司（${libs}）的股價預測、股息與下次業績日期，數字均來自我們的研究備忘錄。`,
+      intro: `我們為以下 ${n} 家公司撰寫了研究備忘錄（${libs}）。`, back: '所有股票（英文）', crumb: '美股分析' }),
+  },
 };
 // The English hub a translated page links back to: its own library's ('S&P 500 (English)'), else all stocks.
 function enHubOf(index) {
@@ -146,7 +180,7 @@ function libsOf(companies) {
 }
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|compare|fr\/ia-bourse)\/[^"]*)"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)"/g;
 // THE GUIDES (B114): data/guides/*.md, one page each; every page of the guide's language links it from its footer
 const GUIDES = loadGuides();
 const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
@@ -200,6 +234,7 @@ export function byUs(memoDate, lang = 'en') {
     return `Selon l'analyse de MyStockButler ${/^[aeiouâéè]/.test(month) ? `d'${month}` : `de ${month}`} ${y}\u00a0: `;
   }
   if (lang === 'de') return `Laut der Analyse von MyStockButler vom ${MONTHS_DE[m]} ${y}: `;
+  if (lang === 'zh-HK') return `根據 MyStockButler ${y}年${m + 1}月的分析：`;
   return `MyStockButler's ${MONTHS_EN[m]} ${y} analysis: `;
 }
 
@@ -232,6 +267,7 @@ function humanDay(value, lang = 'en') {
     return `${day === 1 ? '1er' : day} ${MONTHS_FR[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
   }
   if (lang === 'de') return `${Number(d.slice(8, 10))}. ${MONTHS_DE[Number(d.slice(5, 7)) - 1]} ${d.slice(0, 4)}`;
+  if (lang === 'zh-HK') return `${d.slice(0, 4)}年${Number(d.slice(5, 7))}月${Number(d.slice(8, 10))}日`;
   const dt = new Date(`${d}T12:00:00Z`);
   return dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
@@ -394,8 +430,10 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 // The footer's links to the other languages (B110 SEO, 2026-10-23: an English stock page, /stocks/ included, linked no German
 // or French page): the German and French homes (B112's /de/ and /fr/), and from a translated page All stocks in English, in
 // the page's own words (UI.otherIn). /de/ and /fr/ are not stock-page addresses: the gate's link counts never read them.
+// The languages this build has pages in (set by buildStockSite): a footer never links a language with no page (B114: Chinese)
+let LIVE_LANGS = new Set(LANGS);
 function langNav(lang) {
-  const homes = [{ lang: 'en', path: '/stocks/', hreflang: 'en' }, ...LANGS.map((l) => ({ lang: l, path: LANG_CFG[l].home, hreflang: LANG_CFG[l].href }))];
+  const homes = [{ lang: 'en', path: '/stocks/', hreflang: 'en' }, ...LANGS.filter((l) => LIVE_LANGS.has(l)).map((l) => ({ lang: l, path: LANG_CFG[l].home, hreflang: LANG_CFG[l].href }))];
   return homes.filter((h) => h.lang !== lang && UI[lang].otherIn[h.lang])
     .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
 }
@@ -764,7 +802,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a></p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
-    pages.push(renderLangHome(l, list));          // /de/ and /fr/: the landing's own words, the free report
+    if (LANDING_WORDS[l]) pages.push(renderLangHome(l, list));   // /de/ and /fr/: the landing's own words (no Chinese home)
     if (GUIDE_OF[l]) {                            // B114: the guide, linking the stock pages of its example and the hub
       const example = list.filter((c) => c.ticker === GUIDE_OF[l].example);     // the front matter's 'example: <ticker>'
       const extra = `<p>${[...example.flatMap((c) => TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].sibling(t, shortName(c)))}</a>`)),
@@ -804,7 +842,7 @@ export function gatePage(built, ctx) {
   const h1 = (html.match(/<h1[ >]/g) || []).length;
   if (h1 !== 1) fails.push(`${h1} h1`);
   const h2s = [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/g)].map((m) => textOf(m[1]));
-  if (!h2s.length || h2s.some((h) => !h.endsWith('?'))) fails.push('an h2 is not a question');
+  if (!h2s.length || h2s.some((h) => !/[?？]$/.test(h))) fails.push('an h2 is not a question');
   const canonical = (/<link rel="canonical" href="([^"]*)"/.exec(html) || [])[1] || '';
   if (canonical !== built.url) fails.push('canonical is not the page itself');
   if (!/<meta name="robots" content="index,follow/.test(html)) fails.push('robots meta is not index,follow');
@@ -1140,6 +1178,8 @@ export function buildStockSite(companies, { today = new Date(), compares = [] } 
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
   const variants = (c) => TYPES.flatMap((t) => (c.pages[t] ? [[t, 'en'], ...LANGS.filter((l) => langPage(c, t, l)).map((l) => [t, l])] : []));
   const exists0 = new Set(usable.flatMap((c) => variants(c).map(([t, l]) => pagePath(c.slug, t, l))));
+  // fr and de keep their homes (their landing pages); a language with no home of its own needs a translated page
+  LIVE_LANGS = new Set(LANGS.filter((l) => LANDING_WORDS[l] || usable.some((c) => TYPES.some((t) => langPage(c, t, l)))));
   const titleCount = new Map();
   for (const c of usable) for (const t of TYPES) if (c.pages[t]) titleCount.set(c.pages[t].title, (titleCount.get(c.pages[t].title) || 0) + 1);
   const sharedTitles = new Set([...titleCount].filter(([, n]) => n > 1).map(([t]) => t));

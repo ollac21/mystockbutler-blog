@@ -364,3 +364,24 @@ test('the French guide /fr/ia-bourse/ (B114 rows 3 + 4): its title, one h1, the 
   assert.ok(hubs.find((h) => h.path === '/fr/').html.includes('href="/fr/ia-bourse/"'));
   assert.ok(!pages.some((p) => p.lang === 'en' && p.html.includes('/fr/ia-bourse/')));
 });
+
+test('Traditional Chinese pages (B114 row 2): /zh/stocks/<slug>/, lang zh-Hant, Chinese titles, the 美股分析 hub, linked both ways', () => {
+  // NVIDIA's real file with its zh-HK copy made by the chain (B111's prompt and guard), 2026-10-25
+  const { pages, hubs, held } = buildStockSite([load('stock-nvda-zh.json'), load('stock-rmd.json')], { today: TODAY });
+  const zh = pages.filter((p) => p.lang === 'zh-HK');
+  assert.deepEqual(zh.map((p) => p.path).sort(), ['/zh/stocks/nvda/', '/zh/stocks/nvda/dividend/', '/zh/stocks/nvda/earnings/'], JSON.stringify(held));
+  for (const p of zh) {
+    assert.match(p.html, /<html lang="zh-Hant">/);
+    assert.match(p.html, /<link rel="alternate" hreflang="zh-Hant" href="https:\/\/blog\.mystockbutler\.com\/zh\/stocks\/nvda\//);
+  }
+  assert.match(zh.find((p) => p.path === '/zh/stocks/nvda/').html, /<title>NVIDIA 股票分析：2026年10月預測、現金流與估值<\/title>/);
+  const hub = hubs.find((h) => h.path === '/zh/stocks/');
+  assert.equal(hub.title, '美股分析：1 家美國大公司的財報數字');
+  assert.ok(hub.html.includes('href="/zh/stocks/nvda/"'));
+  // the English page names its Chinese version (its language footer and hreflang)
+  const en = pages.find((p) => p.path === '/stocks/nvda/');
+  assert.ok(en.html.includes('hreflang="zh-Hant" href="/zh/stocks/nvda/"'));
+  // no Chinese link where no Chinese page exists
+  const only = buildStockSite([load('stock-rmd.json'), load('stock-td-to.json')], { today: TODAY });
+  assert.ok(!only.pages.some((p) => p.html.includes('/zh/stocks/')));
+});
