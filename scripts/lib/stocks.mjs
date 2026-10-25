@@ -130,11 +130,11 @@ export const UI = {
   // Traditional Chinese, Hong Kong usage (B114 row 2): every fixed word with its English meaning in reports/drafts/zh-ui-words.md
   'zh-HK': {
     htmlLang: 'zh-Hant', allStocks: '所有股票', blog: '網誌', headerCta: '免費取得首份報告', free: '首份報告免費 · 無需信用卡',
-    readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均連結至 ${c} 的公開文件`, chapters: '章', words: '字',
+    readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均連結至 ${c} 的公開文件`, chapters: '章', words: '詞',
     sources: '個引用來源', kicker: '研究備忘錄', memoOf: '備忘錄日期', mid: (p, P, t, T) => `本頁展示備忘錄 ${P} 段中的 ${p} 段，以及 ${T} 個表格中的 ${t} 個。`,
     fromMemo: '摘自完整備忘錄', cont: '免費繼續閱讀', whereFrom: '數字來源', filingOn: (h) => `${h} 上的文件`,
     filing: '文件', moreOn: (c) => `更多關於 ${c}`, rivals: '競爭對手', browse: '瀏覽', rail: (c) => `${c} 完整備忘錄`, readItFree: '免費閱讀',
-    sticky: '首份報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼。',
+    sticky: '首份報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼？',
     guide: '用 AI 分析一檔股票',
     types: { stock: '股票分析', dividend: '股息', earnings: '財報' }, otherIn: { en: 'English', fr: 'Français', de: 'Deutsch' }, locale: 'zh-HK',
     sibling: (t, c) => `${c} ${UI['zh-HK'].types[t]}`, find: '尋找公司', findPh: '公司名稱或股票代號，例如 Apple 或 NVDA', num: same,
