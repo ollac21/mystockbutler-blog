@@ -460,10 +460,12 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
 // THE UNIT OF A BOX (B114, CHECKLIST A12 'every number carries its currency'): a box copied from a cell of one of the
 // page's own tables shows that table's unit ('US$ per share'). TotalEnergies' dividend box read '3.67' beside the
 // sentence 'TotalEnergies paid €3.40 per share': the box is the US dollars paid per share, its table says so. Existence on
-// our own copied cells: the value equals the latest column of exactly one table's rows (one unit), else nothing is added.
+// our own copied cells: a bare number equal to the latest column of exactly one table's rows (one unit), else nothing
+// is added (TD's '2,6 %' yield matched a percentage row of a table in millions: a % is never given a table's unit).
 function factUnit(fact, page) {
   const value = String(fact.value || '').split(' (')[0].trim();
-  if (!value) return '';
+  // a bare number only: a '%' or a multiple carries its own unit, a label with '(…)' already names it (shape)
+  if (!/^[−-]?[\d.,\u202f\u00a0 ]+$/.test(value) || /\(/.test(String(fact.label || ''))) return '';
   const units = new Set((page.blocks || []).map((b) => b.table).filter((t) => t && t.unit
     && (t.rows || []).some((r) => r.length > 1 && String(r[1]).replace(/\*\*/g, '').trim() === value)).map((t) => t.unit));
   return units.size === 1 ? [...units][0] : '';

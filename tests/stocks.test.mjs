@@ -333,4 +333,10 @@ test('a box shows the unit of the table its value was copied from (B114, CHECKLI
   const html = pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
   assert.match(html, /<div class="v">3\.67 <small>US\$ per share<\/small><\/div><div class="l">Dividend paid per share, 2025<\/div>/);
   assert.match(html, /<div class="v">4\.5%<\/div>/);           // a box no table holds: nothing added
+  // a percent that equals a cell of a table in millions is not given that unit (TD's '2,6 %' dividend yield)
+  div.facts = [{ label: 'Dividend yield', value: '2.6%' }];
+  div.blocks[0].table.rows.push(['Payout, % of free cash flow', '2.6%', '2.1%']);
+  div.blocks[0].table.unit = 'millions C$';
+  const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY }).pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
+  assert.match(again, /<div class="v">2\.6%<\/div>/);
 });
