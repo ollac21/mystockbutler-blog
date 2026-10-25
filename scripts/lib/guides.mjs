@@ -90,5 +90,5 @@ ${extra}
 ${tickerBox(g.lang, `${src}-end`)}
 </article></div>`,
   });
-  return { path: g.path, url, type: 'hub', lang: g.lang, title: g.title_tag, description: g.meta_description, html, outLinks: [], lastmod: g.updated };
+  return { path: g.path, url, type: 'hub', guide: true, lang: g.lang, title: g.title_tag, description: g.meta_description, html, outLinks: [], lastmod: g.updated };
 }
