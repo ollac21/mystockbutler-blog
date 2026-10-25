@@ -93,6 +93,20 @@ test('a French page draws no English: the date, the chart, the table cells and t
   assert.match(text(results.html), /3 décembre 2026/);
 });
 
+test('a French dividend page titled the way France searches passes the gate (B114 row 6)', () => {
+  // the chain's fr-7 title: 'Dividende <company> <memo year> : montant, dates et rendement'
+  const td = clone(load('stock-td-to-fr.json'));
+  td.translations.fr.pages.dividend.title = 'Dividende TD 2026 : montant, dates et rendement';
+  const { pages, held } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
+  assert.ok(!held.some((h) => /dividende/.test(JSON.stringify(h))), JSON.stringify(held));
+  const div = pages.find((p) => p.path === '/fr/stocks/td-to/dividende/');
+  assert.match(div.html, /<title>Dividende TD 2026 : montant, dates et rendement<\/title>/);
+  // a title in neither form is still held
+  td.translations.fr.pages.dividend.title = 'TD : montant, dates et rendement';
+  const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
+  assert.ok(!again.pages.some((p) => p.path === '/fr/stocks/td-to/dividende/'));
+});
+
 test('a German page (S&P 500): its address, hreflang both ways, German words and numbers, the German hub', () => {
   // owner 2026-10-22 'exécute German' (CTO 12:38Z); the file's German copy built by the chain's own German code
   const { pages, hubs, held } = buildStockSite([load('stock-nvda-de.json'), load('stock-rmd.json'), load('stock-td-to.json')], { today: TODAY });

@@ -24,7 +24,8 @@ const SEARCH_PHRASE = { stock: 'stock forecast', dividend: 'dividend', earnings:
 const BANNED = /\b(buy|sell|hold|cheap|expensive|undervalued|overvalued|this page)\b/i;
 // The same advice words in French (the card's step 12, model-written lines only).
 const BANNED_FR = /(?<!\p{L})(acheter|achetez|vendre|vendez|sous-évalué\p{L}*|surévalué\p{L}*|bon marché|cette page)(?!\p{L})/iu;
-const TITLE_FR = /^(Action |Résultats de )/;
+// B114 row 6 (the owner's plan, 2026-10-24): the dividend page's title starts with what France types, 'Dividende Engie 2026 : …'
+const TITLE_FR = /^(Action |Dividende |Résultats de )/;
 // German (S&P 500, owner 2026-10-22): the advice words, model-written lines only; the title carries 'Aktie' or 'Quartalszahlen'
 const BANNED_DE = /(?<!\p{L})(kaufen|verkaufen|unterbewertet\p{L}*|überbewertet\p{L}*|billig\p{L}*|teuer\p{L}*|diese Seite)(?!\p{L})/iu;
 const TITLE_DE = /(Aktie|Quartalszahlen)/;
