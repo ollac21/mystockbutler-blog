@@ -162,14 +162,15 @@ function langPage(data, type, lang) {
 }
 
 
-// A French or German description runs a fifth longer than the English it translates: when it is over 200 characters, the
-// page's own opening stands in for it — its first sentence (our own punctuation: '. ' then a capital), else the whole
-// opening — when that fits; never a word that is not already on the page.
+// A French or German description runs a fifth longer than the English it translates: when it is over 155 characters (what
+// Google shows; B114 CHECKLIST A4, it was 200), the page's own opening stands in for it — its first sentence (our own
+// punctuation: '. ' then a capital), else the whole opening — when that fits; never a word that is not already on the page.
+const DESC_SHOWN = 155;
 function frDescribed(page) {
-  if (!page || String(page.meta_description || '').length <= 200) return page;
+  if (!page || String(page.meta_description || '').length <= DESC_SHOWN) return page;
   const opening = String(page.opening || '');
-  const first = opening.split(/(?<=[.?!])\s+(?=[A-ZÀ-ÝÄÖÜ])/)[0];
-  const pick = [first, opening].find((t) => t && t.length <= 200);
+  const first = opening.split(/(?:(?<=[.?!])\s+|(?<=[。？！]))(?=[A-ZÀ-ÝÄÖÜ\u3400-\u9fff])/)[0];   // Chinese: no space after '。'
+  const pick = [first, opening].find((t) => t && t.length <= DESC_SHOWN);
   return pick ? { ...page, meta_description: pick } : page;
 }
 
