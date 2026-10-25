@@ -62,6 +62,14 @@ export function germanNumber(text) {
     .replace(/(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(?!\d)/g, (m, int, dec) => int.replace(/,/g, '.') + (dec ? dec.replace('.', ',') : ''))
     .replace(/(?<=\d)%/g, '\u00a0%');
 }
+// A number WE draw the French way (B114, the owner 2026-10-25 'Yes, French style'): '2,214.3' -> '2 214,3' (a narrow
+// no-break space groups thousands), '1.9%' -> '1,9 %'. Digits only: shape, like germanNumber; the chain's french_number
+// does the same for the cells it copies.
+export function frenchNumber(text) {
+  return String(text ?? '')
+    .replace(/(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?(?!\d)/g, (m, int, dec) => int.replace(/,/g, '\u202f') + (dec ? dec.replace('.', ',') : ''))
+    .replace(/(?<=\d)%/g, '\u00a0%');
+}
 const same = (t) => t;
 export const UI = {
   en: {
@@ -86,7 +94,7 @@ export const UI = {
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
     types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch' }, locale: 'fr-CA',
-    sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: same,
+    sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: frenchNumber,
     footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
     scen: (d) => `Cours de l'action en ${d} : nos trois scénarios`, today: "Aujourd'hui", cases: { Bear: 'Pessimiste', Base: 'Central', Bull: 'Optimiste' },
     divChart: 'Dividende par action et flux de trésorerie disponible par action', revChart: 'Revenus par trimestre', date: dateFr,
@@ -449,6 +457,18 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
 // One company page, in English, in French (S&P/TSX 60) or in German (S&P 500). ctx.exists(path) tells whether another
 // page of this build exists (links to it only then). A translated page is the English page with every piece the chain
 // translated swapped in.
+// THE UNIT OF A BOX (B114, CHECKLIST A12 'every number carries its currency'): a box copied from a cell of one of the
+// page's own tables shows that table's unit ('US$ per share'). TotalEnergies' dividend box read '3.67' beside the
+// sentence 'TotalEnergies paid €3.40 per share': the box is the US dollars paid per share, its table says so. Existence on
+// our own copied cells: the value equals the latest column of exactly one table's rows (one unit), else nothing is added.
+function factUnit(fact, page) {
+  const value = String(fact.value || '').split(' (')[0].trim();
+  if (!value) return '';
+  const units = new Set((page.blocks || []).map((b) => b.table).filter((t) => t && t.unit
+    && (t.rows || []).some((r) => r.length > 1 && String(r[1]).replace(/\*\*/g, '').trim() === value)).map((t) => t.unit));
+  return units.size === 1 ? [...units][0] : '';
+}
+
 export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const ui = UI[lang];
   const fr = lang !== 'en';                       // a translated page (French or German)
@@ -489,7 +509,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const facts = (page.facts || [])
     .map((f) => {
       const [v, ret] = String(f.value).split(' (');
-      return `<div><div class="v">${esc(v)}${ret ? ` <small>(${esc(ret)}</small>` : ''}</div><div class="l">${esc(f.label)}</div></div>`;
+      const unit = factUnit(f, page);
+      return `<div><div class="v">${esc(v)}${ret ? ` <small>(${esc(ret)}</small>` : ''}${unit ? ` <small>${esc(unit)}</small>` : ''}</div><div class="l">${esc(f.label)}</div></div>`;
     })
     .join('');
   const body = [];

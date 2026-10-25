@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { buildStockSite, gatePage, pagePath } from '../scripts/lib/stocks.mjs';
+import { buildStockSite, frenchNumber, gatePage, pagePath } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -312,4 +312,25 @@ test('the English forecast title carries the years the page holds; any other tit
   long.pages.stock.title = 'ResMed stock forecast: patients and cash';
   const kept = buildStockSite([long, load('stock-td-to.json')], { today: TODAY }).pages.find((b) => b.path === '/stocks/rmd/');
   assert.equal(kept.title, 'ResMed stock forecast: patients and cash');
+});
+
+test('French numbers the blog draws are written the French way (B114, the owner 2026-10-25)', () => {
+  assert.equal(frenchNumber('2,214.3'), '2\u202f214,3');
+  assert.equal(frenchNumber('1.9%'), '1,9\u00a0%');
+  assert.equal(frenchNumber('3.07'), '3,07');
+  assert.equal(frenchNumber('2025'), '2025');                    // a year has no thousands mark
+  assert.equal(frenchNumber('C$153.88 (+12.0%)'), 'C$153,88 (+12,0\u00a0%)');
+});
+
+test('a box shows the unit of the table its value was copied from (B114, CHECKLIST A12)', () => {
+  // TotalEnergies 2026-10-23: the box '3.67' (US dollars paid per share) beside 'TotalEnergies paid €3.40 per share'
+  const td = clone(load('stock-td-to.json'));
+  const div = td.pages.dividend;
+  div.facts = [{ label: 'Dividend paid per share, 2025', value: '3.67' }, { label: 'Dividend yield', value: '4.5%' }];
+  div.blocks[0].table = { title: 'What one share gets', unit: 'US$ per share', note: '', head: ['Row', '2025', '2024'],
+    rows: [['− Dividends paid, per share', '3.67', '3.33']] };
+  const { pages } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
+  const html = pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
+  assert.match(html, /<div class="v">3\.67 <small>US\$ per share<\/small><\/div><div class="l">Dividend paid per share, 2025<\/div>/);
+  assert.match(html, /<div class="v">4\.5%<\/div>/);           // a box no table holds: nothing added
 });
