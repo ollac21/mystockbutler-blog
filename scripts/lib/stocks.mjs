@@ -12,6 +12,7 @@ import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
+import { loadGuides, renderGuide } from './guides.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -93,6 +94,7 @@ export const UI = {
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
+    guide: "Analyser une action avec l'IA",
     types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch' }, locale: 'fr-CA',
     sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: frenchNumber,
     footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
@@ -144,7 +146,10 @@ function libsOf(companies) {
 }
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|compare)\/[^"]*)"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|compare|fr\/ia-bourse)\/[^"]*)"/g;
+// THE GUIDES (B114): data/guides/*.md, one page each; every page of the guide's language links it from its footer
+const GUIDES = loadGuides();
+const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
 
 export function pagePath(slug, type, lang = 'en') {
   const cfg = LANG_CFG[lang];
@@ -425,7 +430,7 @@ ${gaHead(meta)}</head>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
 <a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
@@ -667,7 +672,7 @@ function renderLangHome(lang, list) {
 <div class="ctarow"><a class="btn big" data-cta="home" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><span class="sub">${ui.free}</span></div>
 <p class="sub">${esc(w['ticker.try'])}</p>
 ${steps}
-<div class="ctarow"><a class="btn" data-cta="home-end" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><a href="${cfg.root}">${esc(ui.allStocks)} (${list.length})</a></div>
+<div class="ctarow"><a class="btn" data-cta="home-end" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><a href="${cfg.root}">${esc(ui.allStocks)} (${list.length})</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}</div>
 <p class="sub">${esc(w['hero.langs'])}</p>
 </div>`,
   });
@@ -759,6 +764,14 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
     pages.push(renderLangHome(l, list));          // /de/ and /fr/: the landing's own words, the free report
+    if (GUIDE_OF[l]) {                            // B114: the guide, linking the stock pages of its example and the hub
+      const example = list.filter((c) => c.ticker === GUIDE_OF[l].example);     // the front matter's 'example: <ticker>'
+      const extra = `<p>${[...example.flatMap((c) => TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].sibling(t, shortName(c)))}</a>`)),
+        `<a href="${LANG_CFG[l].root}">${esc(UI[l].allStocks)} (${list.length})</a>`].join(' · ')}</p>`;
+      const g = renderGuide(GUIDE_OF[l], { shell, SITE, ORG, breadcrumbs, crumbRoot: { name: 'MyStockButler', path: LANG_CFG[l].home }, extra });
+      g.outLinks = [...g.html.matchAll(SITE_LINK)].map((m) => m[1]);
+      pages.push(g);
+    }
   }
   const payers = byName.filter((c) => c.pages.dividend);
   pages.push(hubPage({
@@ -1100,6 +1113,8 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .list{list-style:none;margin:0;padding:0}.list li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--rule);font:400 14px/1.4 Inter,sans-serif}
 .list .nm{font-weight:700;color:var(--ink);text-decoration:none}.list .tk{font:600 12px/1 ui-monospace,Menlo,monospace;color:var(--muted)}.list .dt{color:var(--muted);font-size:13px}.list .pg{margin-left:auto;display:flex;gap:10px}.list .pg a{font-weight:600;font-size:13px}
 .letters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.letters a{font:700 13px/1 Inter,sans-serif;text-decoration:none;color:var(--teal);border:1px solid var(--rule);background:#fff;border-radius:6px;padding:7px 9px}
+.tickerbox{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}.tickerbox input[name=ticker]{flex:1 1 200px;min-width:0;font:600 17px/1.3 Inter,sans-serif;padding:14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff;text-transform:uppercase}.tickerbox .btn{flex:0 0 auto;border:0;cursor:pointer}
+article.guide h3{font:700 19px/1.35 Inter,sans-serif;margin:24px 0 8px}
 .search{margin:14px 0 6px}.search label{display:block;font:700 14px/1.3 Inter,sans-serif;margin-bottom:6px}.search input{width:100%;font:500 17px/1.3 Inter,sans-serif;padding:13px 14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff}
 .strip{background:var(--page);border:1px solid var(--rule);border-radius:10px;padding:4px 18px 10px;margin:18px 0}
 .bar{display:none}

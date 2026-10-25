@@ -340,3 +340,27 @@ test('a box shows the unit of the table its value was copied from (B114, CHECKLI
   const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY }).pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
   assert.match(again, /<div class="v">2\.6%<\/div>/);
 });
+
+test('the French guide /fr/ia-bourse/ (B114 rows 3 + 4): its title, one h1, the ticker box, its data, linked from every French page', () => {
+  const { pages, hubs } = buildStockSite([load('stock-td-to-fr.json'), load('stock-rmd.json')], { today: TODAY });
+  const g = hubs.find((h) => h.path === '/fr/ia-bourse/');
+  assert.ok(g, 'the guide is built');
+  assert.equal(g.title, 'IA en bourse : analyser une action, 1er rapport gratuit');
+  assert.match(g.html, /<html lang="fr">/);
+  assert.equal((g.html.match(/<h1>/g) || []).length, 1);
+  assert.match(g.html, /<h1>IA en bourse : analyser une action avec les questions d(&#39;|')un analyste<\/h1>/);
+  const desc = /<meta name="description" content="([^"]*)"/.exec(g.html)[1].replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+  assert.ok(desc.length <= 155, `${desc.length} characters`);
+  assert.match(g.html, /<form class="tickerbox" action="https:\/\/app\.mystockbutler\.com\/signup" method="get">/);
+  assert.match(g.html, />Obtenir le rapport — gratuit<\/button>/);
+  const ld = JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(g.html)[1]);
+  const types = ld['@graph'].map((n) => n['@type']);
+  for (const t of ['BreadcrumbList', 'Article', 'FAQPage', 'Organization']) assert.ok(types.includes(t), t);
+  assert.equal(ld['@graph'].find((n) => n['@type'] === 'FAQPage').mainEntity.length, 5);
+  assert.ok(ld['@graph'].find((n) => n['@type'] === 'Article').dateModified);
+  assert.match(g.html, /<link rel="canonical" href="https:\/\/blog\.mystockbutler\.com\/fr\/ia-bourse\/">/);
+  // row 4: every French page's footer links it, in the approved words; the /fr/ home too; no English page does
+  for (const p of pages.filter((x) => x.lang === 'fr')) assert.match(p.html, /<a href="\/fr\/ia-bourse\/">Analyser une action avec l(&#39;|')IA<\/a>/, p.path);
+  assert.ok(hubs.find((h) => h.path === '/fr/').html.includes('href="/fr/ia-bourse/"'));
+  assert.ok(!pages.some((p) => p.lang === 'en' && p.html.includes('/fr/ia-bourse/')));
+});
