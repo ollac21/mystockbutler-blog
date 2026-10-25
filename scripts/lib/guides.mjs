@@ -38,11 +38,12 @@ export function loadGuides() {
 }
 
 // The guide's questions and answers: every '### ' heading under the '## ' section that holds them (the last '## ' of
-// the file whose headings below it end with '?'), its answer the paragraphs until the next heading. Markup only.
+// the file whose headings below it end with '?' or the Chinese '？'), its answer the paragraphs until the next heading.
+// Markup only.
 export function faqOf(markdown) {
   const sections = markdown.split(/\n(?=## )/);
   for (const sec of sections.reverse()) {
-    const qs = [...sec.matchAll(/^### (.+\?)\s*\n([\s\S]*?)(?=\n### |\n\*|$)/gm)].map((q) => ({ q: q[1].trim(), a: q[2].trim().replace(/\s+/g, ' ') }));
+    const qs = [...sec.matchAll(/^### (.+[?？])\s*\n([\s\S]*?)(?=\n### |\n\*|$)/gm)].map((q) => ({ q: q[1].trim(), a: q[2].trim().replace(/\s+/g, ' ') }));
     if (qs.length >= 3) return qs;
   }
   return [];

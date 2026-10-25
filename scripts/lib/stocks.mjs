@@ -105,7 +105,7 @@ export const UI = {
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
-    guide: "Analyser une action avec l'IA",
+    guide: "Analyser une action avec l'IA", updatedOn: (d) => `Mis à jour le ${d}`,
     types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch', 'zh-HK': '中文' }, locale: 'fr-CA',
     sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: frenchNumber,
     footer: "Information seulement, pas un conseil en placement. Les scénarios sont des scénarios, pas des prédictions. Consultez les documents cités avant toute décision de placement.",
@@ -120,6 +120,7 @@ export const UI = {
     fromMemo: 'Aus dem vollständigen Memo', cont: 'Gratis weiterlesen', whereFrom: 'Woher diese Zahlen stammen', filingOn: (h) => `Dokument auf ${h}`,
     filing: 'Dokument', moreOn: (c) => `Mehr zu ${c}`, rivals: 'Die Konkurrenz', browse: 'Stöbern', rail: (c) => `Das vollständige ${c}-Memo`, readItFree: 'Gratis lesen',
     sticky: 'Ihr erster Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
+    updatedOn: (d) => `Aktualisiert am ${d}`,
     types: { stock: 'Prognose', dividend: 'Dividende', earnings: 'Quartalszahlen' }, otherIn: { en: 'In English', fr: 'En français', 'zh-HK': '中文' }, locale: 'de-DE',
     sibling: (t, c) => `${c} ${UI.de.types[t]}`, find: 'Unternehmen finden', findPh: 'Unternehmen oder Kürzel, z. B. Apple oder NVDA', num: germanNumber,
     footer: 'Nur zur Information, keine Anlageberatung. Szenarien sind Szenarien, keine Vorhersagen. Prüfen Sie die zitierten Unterlagen vor jeder Anlageentscheidung.',
@@ -135,7 +136,7 @@ export const UI = {
     fromMemo: '摘自完整備忘錄', cont: '免費繼續閱讀', whereFrom: '數字來源', filingOn: (h) => `${h} 上的文件`,
     filing: '文件', moreOn: (c) => `更多關於 ${c}`, rivals: '競爭對手', browse: '瀏覽', rail: (c) => `${c} 完整備忘錄`, readItFree: '免費閱讀',
     sticky: '首份報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼？',
-    guide: '用 AI 分析一檔股票',
+    guide: '用 AI 分析一檔股票', updatedOn: (d) => `更新於 ${d}`,
     types: { stock: '股票分析', dividend: '股息', earnings: '財報' }, otherIn: { en: 'English', fr: 'Français', de: 'Deutsch' }, locale: 'zh-HK',
     sibling: (t, c) => `${c} ${UI['zh-HK'].types[t]}`, find: '尋找公司', findPh: '公司名稱或股票代號，例如 Apple 或 NVDA', num: same,
     footer: '僅供參考，並非投資建議。情境只是情境，不是預測。作出任何投資決定前，請先查閱所引用的文件。',
@@ -659,7 +660,7 @@ function hubList(companies, { withDates = false, langs = [] } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en' }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '' }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   const searchBox = search
@@ -672,9 +673,10 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
     canonical: url,
     ogType: 'website',
     lang,
-    jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
+    jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, ...(updated ? { dateModified: updated } : {}), isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
     meta: { type: 'hub', ticker: '' },
-    body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${searchBox}${sections.join('\n')}</div>`,
+    // B114 CHECKLIST A13: a language hub says when it was last updated (its newest memo), on the page and in its data
+    body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${updated && UI[lang].updatedOn ? `<p class="sub">${esc(UI[lang].updatedOn(humanDay(updated, lang)))}</p>` : ''}${searchBox}${sections.join('\n')}</div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type: 'hub', lang, title, description, html, outLinks, lastmod: '' };
@@ -796,6 +798,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       description: words.description,
       intro: words.intro,
       search: true,
+      updated: list.map((c) => isoDay(c.memo_date)).filter(Boolean).sort().pop() || '',
       sections: [`<ul class="list">${list.map((c) => {
         const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
