@@ -15,7 +15,7 @@ For an individual investor researching a stock, the best Bloomberg Terminal alte
 ## The short answer
 
 - **Free:** Stock Analysis and Yahoo Finance give you five or more years of financial statements, ratios and news on almost any listed company.
-- **A written report on one stock:** MyStockButler gives you a full report, every number linked to the document it comes from; the first one is free.
+- **Full written reports:** MyStockButler (our product) has reports on 685 companies, every number linked to the document it comes from; the first one is free, and $30 a month opens every S&P 500 report.
 - **Analyst opinions:** Morningstar Investor (fair value and analyst reports) and Seeking Alpha Premium (articles and ratings).
 - **Screening many stocks quickly:** Simply Wall St (visual scores) and Stock Analysis.
 
@@ -32,7 +32,7 @@ Prices as shown on each product's own pricing page on 26 October 2026, in US dol
 | Morningstar Investor | $34.95 a month or $249 a year; 7-day free trial | Analyst report and fair value on the stocks it covers | Analyst ratings on large companies and funds |
 | Seeking Alpha Premium | $4.95 the first month, then $299 a year | Articles by contributors, quant ratings, AI summaries | Reading many opinions on many stocks |
 | Perplexity Finance | Finance pages free; Pro $17 a month, billed yearly | AI answers with sources, quote, earnings | Quick questions with links |
-| MyStockButler (our product) | First report free; then $5 for a report already in our library, $20 for a new one; plans from $30 a month | A full report in eight chapters, from the business to price scenarios, every number linked to its source document | Understanding one company in depth before buying |
+| MyStockButler (our product) | First report free; Starter $30 a month (every S&P 500 report); Pro $70 a month (685 companies in six indexes); or $5 per report without a plan | Full reports in eight chapters, from the business to price scenarios, every number linked to its source document; 685 companies ready to read, kept up to date | Understanding one company in depth before buying |
 
 ## What you give up without a Terminal
 
@@ -48,6 +48,8 @@ Our [Coca-Cola report](/stocks/ko/) answers the questions an analyst asks before
 - **Why sell most of its bottlers?** One reason shows in the numbers: its own bottling business had $5,735 million of revenue in 2025 but only $426 million of operating income, about 7 cents per dollar, a quarter of the company's average.
 
 Each number in the report links to the filing it comes from, so you can check it.
+
+MyStockButler's library holds full reports on 685 companies in six indexes (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40), kept up to date as companies report. Starter, at $30 a month, opens every S&P 500 report; Pro, at $70 a month, opens all six indexes and every new exchange as it opens. Both include monthly credits to order a report on any other listed company, and a free account reads the reports on 10 S&P 500 companies.
 
 ## How we compared
 
@@ -72,7 +74,7 @@ Bloomberg sells the Terminal on contract; ask Bloomberg whether it will contract
 
 ### What is the cheapest way to research one stock?
 
-Free options exist: Stock Analysis and Yahoo Finance show the numbers, and Simply Wall St gives 5 company reports a month. For a full written report, MyStockButler (our product) gives the first one free, without a credit card; after that, a report already in our library costs $5 and a new one $20.
+Free options exist: Stock Analysis and Yahoo Finance show the numbers, and Simply Wall St gives 5 company reports a month. For full written reports, MyStockButler (our product) gives the first one free, without a credit card; Starter, at $30 a month, opens every S&P 500 report, and without a plan a report costs $5 (library) or $20 (new).
 
 ### Is MyStockButler investment advice?
 

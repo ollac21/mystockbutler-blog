@@ -33,7 +33,7 @@ Prices as shown on Simply Wall St's pricing page on 26 October 2026, in US dolla
 | Seeking Alpha Premium | $4.95 the first month, then $299 a year | Contributor articles, quant ratings | Many opinions on many stocks |
 | TipRanks | Premium shown at $13.50 a month | Wall Street analysts' ratings gathered | What analysts think, at a glance |
 | Yahoo Finance | Free; paid plans from $7.95 a month, billed yearly | Quote, statements, news | Quotes and news |
-| MyStockButler (our product) | First report free; $5 per library report, $20 per new report; plans from $30 a month | A full written report in eight chapters, every number linked to its source document | Understanding one company in depth |
+| MyStockButler (our product) | First report free; Starter $30 a month (every S&P 500 report); Pro $70 a month (685 companies in six indexes); or $5 per report without a plan | Full written reports in eight chapters, every number linked to its source document; 685 companies ready to read, kept up to date | Understanding one company in depth |
 
 ## A score or a report: an example on Coca-Cola
 
@@ -43,6 +43,8 @@ A score summarises; a report shows the filing behind each number. Our [Coca-Cola
 - Its own bottling business earned **$426 million of operating income on $5,735 million of revenue**, about 7 cents per dollar: one reason Coca-Cola sold most of its bottlers and kept the high-margin part, the concentrate.
 
 Each number links to the filing it comes from, so you can check it yourself.
+
+MyStockButler's library holds full reports on 685 companies in six indexes (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40), kept up to date as companies report. Starter, at $30 a month, opens every S&P 500 report; Pro, at $70 a month, opens all six indexes and every new exchange as it opens. Both include monthly credits to order a report on any other listed company, and a free account reads the reports on 10 S&P 500 companies.
 
 ## How we compared
 
@@ -66,7 +68,7 @@ Treat its scores as a first look. Before a decision, check the key numbers in th
 
 ### What is a good alternative to Simply Wall St?
 
-For free numbers, Stock Analysis. For analyst ratings, Morningstar Investor. For a full written report on one company with every number sourced, MyStockButler, whose first report is free.
+For free numbers, Stock Analysis. For analyst ratings, Morningstar Investor. For full written reports with every number sourced, MyStockButler (our product): the first report is free, and $30 a month opens every S&P 500 report.
 
 ### Is MyStockButler investment advice?
 

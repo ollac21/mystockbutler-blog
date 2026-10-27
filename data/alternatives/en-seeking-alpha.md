@@ -1,7 +1,7 @@
 ---
 title_tag: "Is Seeking Alpha Premium Worth It? (2026 Review)"
 h1: "Is Seeking Alpha Premium worth it? What you get for one stock"
-meta_description: "Seeking Alpha Premium costs $299 a year. Who it is worth it for, who should pay per report instead, and 6 alternatives compared by price."
+meta_description: "Seeking Alpha Premium costs $299 a year. Who it is worth it for, what $30 a month buys elsewhere, and 6 alternatives compared by price."
 path: /alternatives/seeking-alpha/
 updated: 2026-10-26
 lang: en
@@ -23,9 +23,13 @@ Prices as shown on Seeking Alpha's pricing page on 26 October 2026.
 
 ## The arithmetic: a subscription or a report per stock?
 
-If you research **a few stocks a year**, paying per report wins. At MyStockButler, a report already in our library costs $5 and a new one $20; the first one is free, and every account gets 5 free credits a month, enough for one library report. Ten reports from our library cost $50, a sixth of the yearly subscription.
+Seeking Alpha Premium costs $299 a year, about $25 a month, for contributors' opinions on any US stock.
 
-If you read about **dozens of stocks a year**, a subscription wins. Seeking Alpha Premium's $299 a year is the price of about 60 library reports or 15 new ones, and it covers as many stocks as you want to read about.
+For **$30 a month**, MyStockButler Starter opens a full research report on every S&P 500 company in our library (469 today), kept up to date as companies report, plus 30 credits a month to order a report on any other company. One gives you many opinions; the other a full report on each company, every number checked against its filings.
+
+Pro, at **$70 a month**, adds the S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40: 685 companies in all, and 80 credits a month.
+
+If you research **a few stocks a year**, you need neither subscription: the first MyStockButler report is free, every account gets 5 free credits a month and reads the reports on 10 S&P 500 companies, and without a plan a library report costs $5 and a new one $20.
 
 ## Six alternatives, compared
 
@@ -37,7 +41,7 @@ If you read about **dozens of stocks a year**, a subscription wins. Seeking Alph
 | TipRanks | Premium shown at $13.50 a month, billed yearly (list price $30) | Wall Street analysts' ratings gathered, a "Smart Score" | What analysts think, at a glance |
 | Stock Analysis | Free; Pro $9.99 a month | Financial statements, ratios, forecasts | Free numbers |
 | Yahoo Finance | Free; paid plans from $7.95 a month, billed yearly | Quote, statements, news | Quotes and news |
-| MyStockButler (our product) | First report free; $5 per library report, $20 per new report; plans from $30 a month | A full report in eight chapters, every number linked to its source document | Understanding one company in depth |
+| MyStockButler (our product) | First report free; Starter $30 a month (every S&P 500 report); Pro $70 a month (685 companies in six indexes); or $5 per report without a plan | Full reports in eight chapters, every number linked to its source document; 685 companies ready to read, kept up to date | Understanding one company in depth |
 
 ## An example: what a report on Coca-Cola answers
 
@@ -58,7 +62,7 @@ Each number links to the filing it comes from. The report never tells you to buy
 
 ### Is Seeking Alpha Premium worth the money?
 
-Yes, if you read about many stocks every week and value contributors' opinions. If you research a few companies a year, a free tool or a report per stock costs less.
+Yes, if you read about many stocks every week and value contributors' opinions. If you want a full, sourced report on each company instead, MyStockButler Starter opens every S&P 500 report for $30 a month. If you research a few companies a year, a free tool or a report per stock costs less.
 
 ### Does Seeking Alpha have a monthly plan?
 
@@ -66,7 +70,7 @@ Not on its pricing page as of 26 October 2026: Premium is $4.95 for the first mo
 
 ### What is a free alternative to Seeking Alpha?
 
-Stock Analysis and Yahoo Finance give financial statements, ratios and news for free. Simply Wall St gives 5 company reports a month for free. MyStockButler's first full report is free.
+Stock Analysis and Yahoo Finance give financial statements, ratios and news for free. Simply Wall St gives 5 company reports a month for free. MyStockButler (our product) gives its first full report free, and a free account reads the reports on 10 S&P 500 companies.
 
 ### Can I rely on the numbers in Seeking Alpha articles?
 

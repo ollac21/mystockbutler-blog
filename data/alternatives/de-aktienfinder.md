@@ -23,9 +23,9 @@ Preise laut Preisseite von Aktienfinder am 26. Oktober 2026.
 
 ## Die Rechnung: Abo oder Bericht pro Aktie?
 
-Wer **Dutzende Aktien** verfolgt, fährt mit dem Abo günstiger: 290 € im Jahr gelten für rund 8.200 Aktien und entsprechen etwa 60 Berichten aus unserer Bibliothek.
+Wer **Dutzende Aktien** verfolgt, vergleicht Abos. Aktienfinder kostet 290 € im Jahr für Kennzahlen und Filter zu rund 8.200 Aktien. MyStockButler Pro kostet 70 US-Dollar im Monat für vollständige Berichte zu 685 Unternehmen aus sechs Indizes (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX und CAC 40), nach jeder Quartalsmeldung aktualisiert, plus 80 Credits im Monat für Berichte zu weiteren Unternehmen. Starter, für 30 US-Dollar im Monat, öffnet alle Berichte zum S&P 500.
 
-Wer **wenige Aktien im Jahr** prüft, zahlt pro Bericht weniger. Bei MyStockButler ist der erste Bericht gratis, jedes Konto erhält 5 kostenlose Credits im Monat (genug für einen Bericht aus der Bibliothek), danach kostet ein fertiger Bericht 5 US-Dollar und ein neuer 20 US-Dollar. Zehn Berichte aus der Bibliothek kosten 50 US-Dollar im Jahr.
+Wer **wenige Aktien im Jahr** prüft, braucht kein Abo: Der erste Bericht ist gratis, jedes Konto erhält 5 kostenlose Credits im Monat, danach kostet ein fertiger Bericht 5 US-Dollar und ein neuer 20 US-Dollar.
 
 ## Fünf Alternativen im Vergleich
 
@@ -36,11 +36,13 @@ Wer **wenige Aktien im Jahr** prüft, zahlt pro Bericht weniger. Bei MyStockButl
 | finanzen.net | Kostenlos (mit Werbung) | Kurse, Nachrichten, Analystenziele | Kurse und Nachrichten |
 | Simply Wall St (auf Deutsch) | Kostenlos für 5 Berichte im Monat; Premium 10,95 US-Dollar im Monat, jährlich bezahlt | Visueller Score, Bewertung, Risiken | Viele Aktien schnell vergleichen |
 | Stock Analysis | Kostenlos; Pro 9,99 US-Dollar im Monat | Jahresabschlüsse, Kennzahlen, Prognosen | Die Zahlen gratis (auf Englisch) |
-| MyStockButler (unser Produkt) | Erster Bericht gratis; dann 5 US-Dollar pro Bericht aus der Bibliothek, 20 US-Dollar für einen neuen | Ein vollständiger Bericht in acht Kapiteln, auf Deutsch, jede Zahl mit ihrem Quelldokument verknüpft | Ein Unternehmen vor dem Kauf gründlich verstehen |
+| MyStockButler (unser Produkt) | Erster Bericht gratis; Starter 30 US-Dollar im Monat (der ganze S&P 500); Pro 70 US-Dollar im Monat (685 Unternehmen, sechs Indizes); ohne Abo 5 US-Dollar pro Bericht | Vollständige Berichte in acht Kapiteln, auf Deutsch, jede Zahl mit ihrem Quelldokument verknüpft; 685 Unternehmen lesebereit | Ein Unternehmen vor dem Kauf gründlich verstehen |
 
 ## Ein Beispiel: SAP
 
 Unser [Bericht zu SAP](/de/aktien/sap-de/) folgt den Fragen, die ein Analyst vor dem Kauf stellt: das Geschäft, der Markt, die Geschichte und die Kapitalentscheidungen, das Management, die Zahlen über fünf Jahre, die Bewertung, die Pläne und drei Kursszenarien. Jede Zahl ist mit dem Dokument verknüpft, aus dem sie stammt, damit Sie sie prüfen können. Alle deutschen Aktienseiten: [Aktien: Prognosen, Dividenden, Quartalszahlen](/de/aktien/).
+
+Die Bibliothek von MyStockButler enthält vollständige Berichte zu 685 Unternehmen aus sechs Indizes (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX und CAC 40), nach jeder Quartalsmeldung aktualisiert und auf Deutsch lesbar. Starter, für 30 US-Dollar im Monat, öffnet alle Berichte zum S&P 500; Pro, für 70 US-Dollar im Monat, öffnet alle sechs Indizes und jede neu hinzukommende Börse.
 
 ## Wie wir verglichen haben
 
@@ -56,7 +58,7 @@ Die Basic-Version ist kostenlos und deckt 50 Top-Aktien ab. Die Vollversion kost
 
 ### Gibt es eine kostenlose Alternative zu Aktienfinder?
 
-Ja. finanzen.net und onvista zeigen Kurse und Nachrichten kostenlos, Stock Analysis zeigt Jahresabschlüsse und Kennzahlen kostenlos (auf Englisch). Der erste vollständige Bericht von MyStockButler ist gratis, auf Deutsch.
+Ja. finanzen.net und onvista zeigen Kurse und Nachrichten kostenlos, Stock Analysis zeigt Jahresabschlüsse und Kennzahlen kostenlos (auf Englisch). Der erste vollständige Bericht von MyStockButler (unser Produkt) ist gratis, auf Deutsch; Starter öffnet für 30 US-Dollar im Monat alle Berichte zum S&P 500.
 
 ### Welche Alternative passt für eine einzelne Aktie?
 

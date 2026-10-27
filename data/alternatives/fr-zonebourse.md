@@ -28,9 +28,9 @@ Prix relevés sur la page d'abonnement de Zonebourse le 26 octobre 2026.
 
 ## Le calcul : un abonnement ou un rapport par action ?
 
-Si vous suivez **des dizaines de valeurs**, l'abonnement est rentable : la formule Access couvre de nombreuses valeurs, selon ses limites, pour 288 € par an, le prix d'une soixantaine de rapports de notre bibliothèque.
+Si vous suivez **des dizaines de valeurs**, comparez les abonnements. Zonebourse Access coûte 24 € par mois (payé à l'année) pour les cours, le consensus et les outils. MyStockButler Pro coûte 70 $ US par mois pour des rapports complets sur 685 sociétés de six indices (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX et CAC 40), mis à jour à chaque publication de résultats, plus 80 crédits par mois pour commander un rapport sur une autre société. La formule Starter, à 30 $ US par mois, ouvre tous les rapports du S&P 500.
 
-Si vous étudiez **quelques actions par an**, le rapport à l'unité coûte moins cher. Chez MyStockButler, le premier rapport est gratuit, chaque compte reçoit 5 crédits gratuits par mois (de quoi lire un rapport de la bibliothèque), puis un rapport déjà prêt coûte 5 $ US et un nouveau rapport 20 $ US. Dix rapports de la bibliothèque coûtent 50 $ US.
+Si vous étudiez **quelques actions par an**, pas besoin d'abonnement : le premier rapport MyStockButler est gratuit, chaque compte reçoit 5 crédits gratuits par mois, puis un rapport déjà prêt coûte 5 $ US et un nouveau 20 $ US.
 
 ## Cinq alternatives, comparées
 
@@ -41,11 +41,13 @@ Si vous étudiez **quelques actions par an**, le rapport à l'unité coûte moin
 | ABC Bourse | 19,90 € par mois payé à l'année, 29 € au mois | Cours, analyses, outils de bourse | Un suivi au quotidien |
 | Simply Wall St (en français) | Gratuit pour 5 rapports par mois ; Premium 10,95 $ US par mois, payé à l'année | Un score visuel, une valorisation, les risques | Comparer beaucoup d'actions d'un coup d'œil |
 | Stock Analysis | Gratuit ; Pro 9,99 $ US par mois | États financiers, ratios, prévisions | Les chiffres, gratuitement (en anglais) |
-| MyStockButler (notre produit) | Premier rapport gratuit ; puis 5 $ US par rapport de la bibliothèque, 20 $ US pour un nouveau | Un rapport complet en huit chapitres, en français, chaque chiffre relié à son document source | Comprendre une entreprise en profondeur avant d'acheter |
+| MyStockButler (notre produit) | Premier rapport gratuit ; Starter 30 $ US par mois (tout le S&P 500) ; Pro 70 $ US par mois (685 sociétés, six indices) ; sans abonnement, 5 $ US par rapport | Des rapports complets en huit chapitres, en français, chaque chiffre relié à son document source ; 685 sociétés prêtes à lire | Comprendre une entreprise en profondeur avant d'acheter |
 
 ## Un exemple : Air Liquide
 
 Notre [rapport sur Air Liquide](/fr/stocks/ai-pa/) répond aux questions qu'un analyste pose avant d'investir. Par exemple, le dividende est-il payé par la trésorerie ? Oui, mais avec une marge qui se réduit : en 2025, les sommes versées aux actionnaires ont absorbé 88,3 % des flux de trésorerie disponibles, contre 61,4 % en 2021. Chaque chiffre est relié au document d'où il vient, ici le document d'enregistrement universel 2025 d'Air Liquide. Notre guide [IA en bourse](/fr/ia-bourse/) détaille cet exemple.
+
+La bibliothèque MyStockButler contient des rapports complets sur 685 sociétés de six indices (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX et CAC 40), mis à jour à chaque publication de résultats et lisibles en français. La formule Starter, à 30 $ US par mois, ouvre tous les rapports du S&P 500 ; la formule Pro, à 70 $ US par mois, ouvre les six indices et chaque nouvelle bourse ajoutée.
 
 ## Comment nous avons comparé
 
@@ -65,7 +67,7 @@ Un compte gratuit existe, mais la lecture y est limitée par une fenêtre contex
 
 ### Quelle est la meilleure alternative gratuite à Zonebourse ?
 
-Pour les cours et l'actualité, Boursorama. Pour les états financiers, Stock Analysis (en anglais). Pour un rapport complet sur une action, en français, le premier rapport MyStockButler est gratuit.
+Pour les cours et l'actualité, Boursorama. Pour les états financiers, Stock Analysis (en anglais). Pour des rapports complets en français, MyStockButler (notre produit) : le premier rapport est gratuit, et la formule Starter à 30 $ US par mois ouvre tous les rapports du S&P 500.
 
 ### Zonebourse vaut-il son prix ?
 
