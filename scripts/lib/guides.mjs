@@ -70,7 +70,16 @@ function tickerBox(lang, src) {
 }
 
 // A text table (a comparison) inside its own scroll box, as the stock pages' tables are: a phone scrolls it sideways.
-const boxTables = (html) => html.replace(/<table>/g, '<div class="tw"><table>').replace(/<\/table>/g, '</table></div>');
+// On a phone each row becomes a card: every cell carries its column's heading (data-label), which the phone CSS prints.
+// Markup only: the headings are the table's own <th> text.
+function labelCells(table) {
+  const heads = [...table.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((m) => m[1].replace(/<[^>]+>/g, '').replace(/"/g, '&quot;').trim());
+  return table.replace(/<tbody>([\s\S]*?)<\/tbody>/, (body) => body.replace(/<tr>([\s\S]*?)<\/tr>/g, (row) => {
+    let i = 0;
+    return row.replace(/<td([^>]*)>/g, (m, attrs) => `<td${attrs} data-label="${heads[i++] || ''}">`);
+  }));
+}
+const boxTables = (html) => html.replace(/<table>[\s\S]*?<\/table>/g, (t) => `<div class="tw">${labelCells(t)}</div>`);
 
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
 export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [] }) {
