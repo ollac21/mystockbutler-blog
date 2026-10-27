@@ -69,6 +69,9 @@ function tickerBox(lang, src) {
 <button class="btn big" type="submit" data-cta="${esc(src)}">${esc(label)}</button></form>`;
 }
 
+// A text table (a comparison) inside its own scroll box, as the stock pages' tables are: a phone scrolls it sideways.
+const boxTables = (html) => html.replace(/<table>/g, '<div class="tw"><table>').replace(/<\/table>/g, '</table></div>');
+
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
 export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [] }) {
   const url = `${SITE}${g.path}`;
@@ -95,9 +98,9 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     body: `<div class="layout one"><article class="guide">
 ${crumbs.html}
 <h1>${esc(g.h1)}</h1>
-${marked.parse(opening)}
+${boxTables(marked.parse(opening))}
 ${tickerBox(g.lang, src)}
-${marked.parse(rest.join('\n'))}
+${boxTables(marked.parse(rest.join('\n')))}
 ${extra}
 ${tickerBox(g.lang, `${src}-end`)}
 </article></div>`,

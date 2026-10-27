@@ -1202,6 +1202,9 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .letters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.letters a{font:700 13px/1 Inter,sans-serif;text-decoration:none;color:var(--teal);border:1px solid var(--rule);background:#fff;border-radius:6px;padding:7px 9px}
 .tickerbox{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}.tickerbox input[name=ticker]{flex:1 1 200px;min-width:0;font:600 17px/1.3 Inter,sans-serif;padding:14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff;text-transform:uppercase}.tickerbox .btn{flex:0 0 auto;border:0;cursor:pointer}
 article.guide h3{font:700 19px/1.35 Inter,sans-serif;margin:24px 0 8px}
+article.guide .tw{margin:12px 0 20px}article.guide table{min-width:560px}
+article.guide th,article.guide td{text-align:left;white-space:normal;vertical-align:top}
+article.guide th:first-child,article.guide td:first-child{width:22%;font-weight:600}
 .search{margin:14px 0 6px}.search label{display:block;font:700 14px/1.3 Inter,sans-serif;margin-bottom:6px}.search input{width:100%;font:500 17px/1.3 Inter,sans-serif;padding:13px 14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff}
 .strip{background:var(--page);border:1px solid var(--rule);border-radius:10px;padding:4px 18px 10px;margin:18px 0}
 .bar{display:none}
