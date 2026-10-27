@@ -3,7 +3,7 @@ title_tag: "IA en bourse : analyser une action, 1er rapport gratuit"
 h1: "IA en bourse : analyser une action avec les questions d'un analyste"
 meta_description: "L'IA lit en minutes des centaines de pages de rapports annuels ; elle ne prédit pas le cours. Les questions d'un analyste, un exemple sur Air Liquide."
 path: /fr/ia-bourse/
-updated: 2026-10-25
+updated: 2026-10-27
 group: ai-stock-analysis
 example: AI.PA
 lang: fr
@@ -63,7 +63,7 @@ Votre premier rapport est gratuit, sans carte bancaire.
 
 ## Gratuit ?
 
-Le premier rapport est gratuit, et chaque compte reçoit 5 crédits gratuits par mois. Ensuite, un crédit vaut 1 $ US : un rapport déjà prêt coûte 5 crédits, un nouveau rapport 20 crédits. Les abonnements donnent plus de crédits pour moins cher : Starter à 30 $ US par mois pour 30 crédits, Pro à 70 $ US par mois pour 80 crédits. Les crédits achetés n'expirent pas.
+Le premier rapport est gratuit, et chaque compte reçoit 5 crédits gratuits par mois. Ensuite, un crédit vaut 1 $ US : un rapport déjà prêt coûte 5 crédits, un nouveau rapport 20 crédits. Les abonnements ouvrent la bibliothèque : Starter, à 30 $ US par mois, donne accès à tous les rapports du S&P 500 et 30 crédits par mois ; Pro, à 70 $ US par mois, donne accès aux 685 sociétés de six indices (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX et CAC 40), mises à jour à chaque publication de résultats, et 80 crédits par mois. Les crédits achetés n'expirent pas.
 
 ## Questions fréquentes
 
@@ -81,10 +81,10 @@ Oui. Chaque rapport peut être lu en français ; les chiffres restent ceux des d
 
 ### Combien cela coûte-t-il ?
 
-Le premier rapport est gratuit. Ensuite, un rapport déjà prêt coûte 5 crédits et un nouveau rapport 20 crédits, à 1 $ US le crédit, moins cher avec un abonnement.
+Le premier rapport est gratuit. Ensuite, un rapport déjà prêt coûte 5 crédits et un nouveau rapport 20 crédits, à 1 $ US le crédit. Avec un abonnement, la bibliothèque est ouverte : tous les rapports du S&P 500 pour 30 $ US par mois, les 685 sociétés de six indices pour 70 $ US par mois.
 
 ### D'où viennent les chiffres ?
 
 Des documents que l'entreprise publie : rapport annuel, résultats semestriels et trimestriels, déclarations des dirigeants auprès de l'AMF ou de la SEC. Chaque chiffre du rapport est relié à sa source, pour que vous puissiez le vérifier.
 
-*Mis à jour le 25 octobre 2026.*
+*Mis à jour le 27 octobre 2026.*
