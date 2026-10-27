@@ -672,9 +672,12 @@ function renderLlms(entries, stockPages = [], hubs = []) {
   const head = `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
   const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
   const listed = new Set(LANG_HUBS.flatMap((l) => [`${SITE}${l.home}`, `${SITE}${l.path}`]));
-  const hubLines = hubs.filter((h) => !listed.has(h.url)).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
-  const short = `${head}${hubLines.length ? `\n## Stock hubs (each lists its company pages)\n\n${hubLines.join('\n')}\n` : ''}${stocks.length ? `\n## Every page\n\nThe ${stocks.length} stock pages (forecast, dividend, earnings, side by side), each with its description: ${SITE}/llms-full.txt\n` : ''}`;
-  const full = `${head}${stocks.length ? `\n## Stock pages (forecast, dividend, earnings, side by side)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
+  const hubLines = hubs.filter((h) => !listed.has(h.url) && !h.alt).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
+  // the comparison guides (B110): honest comparisons of research tools, prices read on each product's own page
+  const altLines = hubs.filter((h) => h.alt).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
+  const altPart = altLines.length ? `\n## Stock research tools compared (prices read on each product's own page; MyStockButler is ours)\n\n${altLines.join('\n')}\n` : '';
+  const short = `${head}${altPart}${hubLines.length ? `\n## Stock hubs (each lists its company pages)\n\n${hubLines.join('\n')}\n` : ''}${stocks.length ? `\n## Every page\n\nThe ${stocks.length} stock pages (forecast, dividend, earnings, side by side), each with its description: ${SITE}/llms-full.txt\n` : ''}`;
+  const full = `${head}${altPart}${stocks.length ? `\n## Stock pages (forecast, dividend, earnings, side by side)\n\nAll stocks: ${SITE}/stocks/\n\n${stocks.join('\n')}\n` : ''}`;
   return { short, full };
 }
 

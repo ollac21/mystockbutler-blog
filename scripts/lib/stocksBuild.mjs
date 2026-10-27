@@ -215,7 +215,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   // the guides (B114) are listed with the pages in llms-full.txt, each with its description (CHECKLIST A14)
   const llms = [...hubs.filter((h) => h.guide), ...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ title: p.title, url: p.url, description: p.description }));
   // the hubs, for llms.txt's short list (B110 SEO): every hub page with its language
-  const llmsHubs = [...hubs, ...compared.filter((p) => p.type === 'hub')].map((h) => ({ title: h.title, url: h.url, description: h.description, lang: h.lang || 'en' }));
+  const llmsHubs = [...hubs, ...compared.filter((p) => p.type === 'hub')].map((h) => ({ title: h.title, url: h.url, description: h.description, lang: h.lang || 'en', ...(h.alt ? { alt: true } : {}) }));
   const table = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
   const full = { built_at: new Date().toISOString(), ...report, fetch: { ...FETCH_STATS }, table };
   if (reportDir) {

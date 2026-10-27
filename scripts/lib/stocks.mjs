@@ -12,7 +12,7 @@ import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
-import { loadGuides, renderGuide } from './guides.mjs';
+import { loadAlternatives, loadGuides, renderGuide } from './guides.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -185,10 +185,23 @@ function libsOf(companies) {
 }
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen)\/[^"]*)"/g;
 // THE GUIDES (B114): data/guides/*.md, one page each; every page of the guide's language links it from its footer
 const GUIDES = loadGuides();
 const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
+// THE COMPARISON GUIDES (B110, the owner 2026-10-26): data/alternatives/*.md, drawn like the guides; every page of their
+// language links them from its footer (English: the index /alternatives/, which lists all of them in every language)
+const ALTS = loadAlternatives();
+export const ALT_ROOT = '/alternatives/';
+const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich' };
+const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich' };
+const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch' };
+// the addresses they are published at (always built: they depend on no company), known to the dead-link gate
+const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
+const ALT_FOOT = Object.fromEntries(Object.keys(ALT_WORDS).flatMap((l) => {
+  const mine = ALTS.filter((a) => a.lang === l);
+  return mine.length ? [[l, { path: l === 'en' ? ALT_ROOT : mine[0].path, label: ALT_WORDS[l] }]] : [];
+}));
 
 export function pagePath(slug, type, lang = 'en') {
   const cfg = LANG_CFG[lang];
@@ -474,7 +487,7 @@ ${gaHead(meta)}</head>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
 <a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
@@ -1207,6 +1220,49 @@ article.guide h3{font:700 19px/1.35 Inter,sans-serif;margin:24px 0 8px}
 
 // The whole stock site from the per-company files. Returns { pages, held, report }. A French (S&P/TSX 60) or German
 // (S&P 500) page is published only beside its English page: it is that page with the chain's translated pieces.
+// The comparison guides and their English index. exists(path) = a published page; a link to an example stock page is
+// drawn only when that page is published. Each page: the guide frame (Article, FAQPage, breadcrumbs, the ticker box).
+function renderAlternatives(companies, exists, updated = '') {
+  if (!ALTS.length) return [];
+  const bySlug = new Map(companies.map((c) => [c.slug, c]));
+  const roots = { en: { name: 'MyStockButler', path: '/' }, fr: { name: 'MyStockButler', path: '/fr/' }, de: { name: 'MyStockButler', path: '/de/' } };
+  // a language's comparison is drawn when its stock hub is published (the page's header and footer link it)
+  const drawn = ALTS.filter((a) => roots[a.lang] && (a.lang === 'en' || exists(LANG_CFG[a.lang].root)));
+  const pages = drawn.map((a) => {
+    const l = a.lang;
+    const slug = String(a.example || '').trim().toLowerCase().replace(/\./g, '-');
+    const c = bySlug.get(slug);
+    const ex = c ? TYPES.map((t) => [t, pagePath(slug, t, l)]).filter(([, p]) => exists(p))
+      .map(([t, p]) => `<a href="${p}">${esc(UI[l].sibling(t, shortName(c)))}</a>`) : [];
+    const others = drawn.filter((o) => o !== a && o.lang === l).map((o) => `<a href="${o.path}">${esc(o.h1)}</a>`);
+    if (l !== 'en') others.push(`<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`);
+    else others.push(`<a href="${ALT_ROOT}">${esc(ALT_WORDS.en)}</a>`);
+    const extra = `${ex.length ? `<p>${ex.join(' · ')}</p>` : ''}<p>${esc(ALT_ALSO[l])}: ${others.join(' · ')}</p>`;
+    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra });
+    // a link in the page's text to one of our pages that is not published (held back, or not built) keeps its words, not its link
+    g.html = g.html.replace(/<a href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)">([^<]*)<\/a>/g,
+      (m, href, text) => (exists(href) ? m : text));
+    g.outLinks = [...g.html.matchAll(SITE_LINK)].map((m) => m[1]);
+    g.alt = true;
+    return g;
+  });
+  const list = drawn.map((a) => `<li><a class="nm" href="${a.path}"${a.lang !== 'en' ? ` hreflang="${a.lang}" lang="${a.lang}"` : ''}>${esc(a.h1)}</a> <span class="tk">${esc(ALT_LANG_NAME[a.lang])}</span></li>`).join('');
+  const index = hubPage({
+    path: ALT_ROOT,
+    title: 'Stock research tools compared: prices and what you get',
+    description: 'Bloomberg Terminal, Seeking Alpha, Simply Wall St, Zonebourse and Aktienfinder: stock research tools compared by price and by what you get for one stock.',
+    intro: 'Honest comparisons of stock research tools, by price and by what you get for one stock. Prices are read on each product’s own page; MyStockButler is our product.',
+    sections: [`<ul class="list">${list}</ul>`],
+    crumbItems: [{ name: 'MyStockButler', path: '/' }, { name: ALT_WORDS.en, path: ALT_ROOT }],
+    lang: 'en',
+    updated,
+  });
+  index.alt = true;
+  index.guide = true;
+  index.lastmod = pages.map((p) => p.lastmod).sort().pop() || updated;
+  return [...pages, index];
+}
+
 export function buildStockSite(companies, { today = new Date(), compares = [] } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
@@ -1223,7 +1279,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [] } 
   // are published and both are the memos the pair was read from; the company pages link the live ones.
   const comparePaths = new Set();
   const compareLinks = new Map();
-  const ctx = { bySlug, slugOf, sharedTitles, compareLinks, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) };
+  const ctx = { bySlug, slugOf, sharedTitles, compareLinks, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) };
   const compareHeld = [];
   const pairsOk = (Array.isArray(compares) ? compares : []).filter((p) => {
     if (!pairShape(p)) return false;
@@ -1297,9 +1353,15 @@ export function buildStockSite(companies, { today = new Date(), compares = [] } 
   hubs.forEach((h) => hubPaths.add(h.path));
   const newest = live.map((c) => isoDay(c.memo_date)).sort().pop() || '';
   hubs.forEach((h) => (h.lastmod = newest));
+  // the comparison guides (B110): drawn after the pages and hubs, so their example links point at published pages only
+  const published = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path)]);
+  for (const a of renderAlternatives(live, (p) => published.has(p), newest)) {
+    hubs.push(a);
+    hubPaths.add(a.path);
+  }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
-  const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) };
+  const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) };
   for (const p of liveCompares) {
     const built = renderComparePage(p, cctx);
     const fails = gateCompare(built, cctx);

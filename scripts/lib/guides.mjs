@@ -27,14 +27,22 @@ export function parseGuide(text, name = '') {
   return { name, lang: meta.lang || 'fr', ...meta, markdown: m[2] };
 }
 
-export function loadGuides() {
+export function loadGuides(dir = DIR) {
   let names = [];
   try {
-    names = readdirSync(DIR).filter((n) => n.endsWith('.md')).sort();
+    names = readdirSync(dir).filter((n) => n.endsWith('.md')).sort();
   } catch {
     return [];
   }
-  return names.map((n) => parseGuide(readFileSync(new URL(n, DIR), 'utf8'), n));
+  return names.map((n) => parseGuide(readFileSync(new URL(n, dir), 'utf8'), n));
+}
+
+// THE COMPARISON GUIDES (B110, the owner 2026-10-26 'make the pages ... publish them'): data/alternatives/<lang>-<tool>.md,
+// one honest comparison per page ('Bloomberg Terminal alternatives', 'Zonebourse avis', 'Aktienfinder Alternative'),
+// drawn exactly like a guide (Article + FAQPage + breadcrumbs, the ticker box), in any language including English.
+export const ALT_DIR = new URL('../../data/alternatives/', import.meta.url);
+export function loadAlternatives(dir = ALT_DIR) {
+  return loadGuides(dir);
 }
 
 // The guide's questions and answers: every '### ' heading under the '## ' section that holds them (the last '## ' of
@@ -51,10 +59,10 @@ export function faqOf(markdown) {
 
 // The landing's ticker box: a symbol, the button 'Obtenir le rapport — gratuit' (the landing's own words), the signup.
 // the button in a language the landing has no words for (B114: Chinese) — our own fixed words, as on its stock pages
-const BUTTON = { 'zh-HK': '免費取得首份報告' };
+const BUTTON = { 'zh-HK': '免費取得首份報告', en: 'Get the report — free' };
 function tickerBox(lang, src) {
   const label = (LANDING_WORDS[lang] || {})['steps.1.cta'] || BUTTON[lang] || LANDING_WORDS.fr['steps.1.cta'];
-  const ph = { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', 'zh-HK': '例如 NVDA' }[lang] || 'e.g. AI.PA';
+  const ph = { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', 'zh-HK': '例如 NVDA', en: 'e.g. KO' }[lang] || 'e.g. AI.PA';
   return `<form class="tickerbox" action="${APP}/signup" method="get">
 <input type="hidden" name="src" value="${esc(src)}"><input type="hidden" name="lang" value="${esc(lang)}">
 <input name="ticker" type="text" placeholder="${esc(ph)}" autocomplete="off" aria-label="ticker" maxlength="12">
