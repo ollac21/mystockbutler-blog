@@ -187,7 +187,7 @@ function libsOf(companies) {
 }
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen)\/[^"?#]*)[^"]*"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen|zh\/alternatives)\/[^"?#]*)[^"]*"/g;
 // THE GUIDES (B114): data/guides/*.md, one page each; every page of the guide's language links it from its footer
 const GUIDES = loadGuides();
 const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
@@ -195,14 +195,15 @@ const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
 // language links them from its footer (English: the index /alternatives/, which lists all of them in every language)
 const ALTS = loadAlternatives();
 export const ALT_ROOT = '/alternatives/';
-const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich' };
-const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich' };
-const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch' };
+const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich', 'zh-HK': '研究工具比較' };
+const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich', 'zh-HK': '其他比較' };
+const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', 'zh-HK': '中文' };
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
 const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
 const ALT_FOOT = Object.fromEntries(Object.keys(ALT_WORDS).flatMap((l) => {
   const mine = ALTS.filter((a) => a.lang === l);
-  return mine.length ? [[l, { path: l === 'en' ? ALT_ROOT : mine[0].path, label: ALT_WORDS[l] }]] : [];
+  // a language's footer keeps its first single-language comparison (Zonebourse, Aktienfinder); else its first page
+  return mine.length ? [[l, { path: l === 'en' ? ALT_ROOT : (mine.find((a) => !a.group) || mine[0]).path, label: ALT_WORDS[l] }]] : [];
 }));
 
 export function pagePath(slug, type, lang = 'en') {
@@ -1262,7 +1263,7 @@ article.guide td:not(:first-child)::before{content:attr(data-label) ": ";font-we
 function renderAlternatives(companies, exists, updated = '') {
   if (!ALTS.length) return [];
   const bySlug = new Map(companies.map((c) => [c.slug, c]));
-  const roots = { en: { name: 'MyStockButler', path: '/' }, fr: { name: 'MyStockButler', path: '/fr/' }, de: { name: 'MyStockButler', path: '/de/' } };
+  const roots = { en: { name: 'MyStockButler', path: '/' }, fr: { name: 'MyStockButler', path: '/fr/' }, de: { name: 'MyStockButler', path: '/de/' }, 'zh-HK': { name: 'MyStockButler', path: '/zh/stocks/' } };
   // a language's comparison is drawn when its stock hub is published (the page's header and footer link it)
   const drawn = ALTS.filter((a) => roots[a.lang] && (a.lang === 'en' || exists(LANG_CFG[a.lang].root)));
   const pages = drawn.map((a) => {
@@ -1275,7 +1276,12 @@ function renderAlternatives(companies, exists, updated = '') {
     if (l !== 'en') others.push(`<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`);
     else others.push(`<a href="${ALT_ROOT}">${esc(ALT_WORDS.en)}</a>`);
     const extra = `${ex.length ? `<p>${ex.join(' · ')}</p>` : ''}<p>${esc(ALT_ALSO[l])}: ${others.join(' · ')}</p>`;
-    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra });
+    // the same comparison in its other drawn languages (front matter 'group: <name>'): hreflang both ways, x-default = English
+    const sib = a.group ? drawn.filter((o) => o.group === a.group) : [];
+    const alternates = sib.length > 1 ? [...sib.map((o) => ({ hreflang: o.lang === 'en' ? 'en' : LANG_CFG[o.lang].href, url: `${SITE}${o.path}` })),
+      { hreflang: 'x-default', url: `${SITE}${(sib.find((o) => o.lang === 'en') || sib[0]).path}` }] : [];
+    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra, alternates });
+    g.alternates = alternates;
     // a link in the page's text to one of our pages that is not published (held back, or not built) keeps its words, not its link
     g.html = g.html.replace(/<a href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)">([^<]*)<\/a>/g,
       (m, href, text) => (exists(href) ? m : text));

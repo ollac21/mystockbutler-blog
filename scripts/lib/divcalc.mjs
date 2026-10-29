@@ -507,7 +507,7 @@ export function renderDivCalc(companies, h) {
     const ex = (examples[lang] || []).map((t) => byT.get(String(t).toUpperCase())).find((e) => e && e.prefill) || null;
     const page = renderPage(lang, ex, h, examples, byT);
     // a link to one of our stock addresses that this build does not publish (a language with no hub) keeps its words only
-    page.html = page.html.replace(/<a ([^>]*?)href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen)\/[^"?#]*)([^"]*)"([^>]*)>([^<]*)<\/a>/g,
+    page.html = page.html.replace(/<a ([^>]*?)href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen|zh\/alternatives)\/[^"?#]*)([^"]*)"([^>]*)>([^<]*)<\/a>/g,
       (m, pre, p, q, post, text) => (pub(p) || DIVCALC_PATHS.has(p) ? m : text));
     page.outLinks = [...page.html.matchAll(h.siteLink)].map((m) => m[1]);
     return page;
