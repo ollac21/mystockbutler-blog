@@ -216,6 +216,7 @@ function clientMain(C) {
   var curT = cur ? cur.t : '';
   var graw = cur && cur.g !== null ? cur.g : null;
   var curCur = C.cur;
+  var failed = false;
   var timer = null;
   var symOf = function (c) { return c === null ? ['', ''] : C.sym[c] || ['', c ? '\u00a0' + c : '']; };
   var round2 = function (v) { return Math.round(v * 100) / 100; };
@@ -286,7 +287,7 @@ function clientMain(C) {
     var link = e ? (e.nd ? linkOf(e.stock) : linkOf(e.links)) : null;
     var a = link ? ' <a href="' + escH(link.href) + '"' + (link.hreflang ? ' hreflang="en"' : '') + '>' + fillH(e.nd ? W.lStock : W.divPage, { name: name }) + '</a>' : '';
     if (e) message(fillH(e.nd ? W.mNoDiv : W.mNoFill, { name: name }) + a);
-    else message(key ? fillH(W.mNone, { t: escH(key) }) : '');
+    else message(key && !failed ? fillH(W.mNone, { t: escH(key) }) : '');      // the data did not load: manual fields, no claim
     setCta(e, key);
     return false;
   }
@@ -324,7 +325,7 @@ function clientMain(C) {
   function load(cb) {
     if (rows) { cb(); return; }
     fetch(C.data).then(function (r) { return r.json(); }).then(function (d) { rows = d.rows || []; cb(); })
-      .catch(function () { rows = []; message(''); cb(); });
+      .catch(function () { rows = []; failed = true; cb(); });
   }
   function run() {
     var t = $('dc-t').value.trim().toUpperCase();

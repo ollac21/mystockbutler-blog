@@ -243,7 +243,7 @@ test("the site's number formats: the calculator's fmtNum prints what germanNumbe
 
 // ---- the page's own script, run in node (the browser's code path) ----
 
-function fakePage(html, rows, search) {
+function fakePage(html, rows, search, fail = false) {
   const els = new Map();
   const el = (id) => {
     if (!els.has(id)) {
@@ -259,7 +259,7 @@ function fakePage(html, rows, search) {
     location: { search, pathname: '/stocks/dividend-calculator/', href: 'x' },
     history: { replaceState(a, b, url) { ctx.url = url; } },
     navigator: {},
-    fetch: () => Promise.resolve({ json: () => Promise.resolve({ rows }) }),
+    fetch: () => (fail ? Promise.reject(new Error('offline')) : Promise.resolve({ json: () => Promise.resolve({ rows }) })),
     URLSearchParams, setTimeout: () => 0, clearTimeout: () => {}, Promise, Object, Math, String, Number, isFinite, JSON, encodeURIComponent,
   };
   const script = /<script>\(function\(\)\{([\s\S]*?)\}\)\(\);<\/script>\s*<\/body>|<script>\(function\(\)\{\n([\s\S]*?)\n\}\)\(\);<\/script>/.exec(html);
@@ -302,4 +302,9 @@ test("the page's own script: KO's deep link pre-fills and computes $230.00 / $46
   await new Promise((r) => setImmediate(r));
   assert.match(c.el('dc-msg').innerHTML, /no report on ZZZZ/);
   assert.equal(c.el('dc-cta1').textContent, 'Get a free report on ZZZZ');
+  // the data file does not load: blank fields, no claim about the ticker
+  const d = fakePage(en.html, data.rows, '?t=KO', true);
+  await new Promise((r) => setImmediate(r));
+  assert.equal(d.el('dc-msg').innerHTML, '');
+  assert.equal(d.el('dc-y').value, '');
 });
