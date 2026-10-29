@@ -13,7 +13,7 @@ import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, renderGuide } from './guides.mjs';
-import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc } from './divcalc.mjs';
+import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -608,11 +608,15 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     })
     .join('');
   const body = [];
+  // the dividend calculator inside the page, pre-filled with this company (owner 2026-10-29): only when its numbers pass the
+  // calculator's guard ('' otherwise: the page is drawn exactly as before); it sits after the first section (chart + table)
+  const calcBlock = type === 'dividend' ? renderDivCalcEmbed(data, lang) : '';
   page.blocks.forEach((b, i) => {
     body.push(`<h2>${esc(b.heading)}</h2>`);
     for (const p of b.paragraphs || []) body.push(mdBlock(p.text));
     if (i === 0) body.push(chartHtml(data.pages[type], data, ui));
     if (b.table) body.push(tableHtml(b.table, ui));
+    if (i === 0 && calcBlock) body.push(calcBlock);
     if (i === 1) {
       body.push(`<aside class="mid"><h3>${esc(ui.mid(shownP, k.paragraphs || 0, shownT, k.tables || 0))}</h3>
 <p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div></aside>`);
@@ -1441,7 +1445,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
     // plan 2-3: the earnings titles this build changed (English: the announced date; German: the past date taken out)
     earningsTitles: Object.fromEntries(['date', 'passed'].map((k) => [k, pass.filter((b) => b.datedKind === k).map((b) => ({ path: b.path, title: b.title }))])),
-    divcalc: divcalc.report,
+    divcalc: { ...divcalc.report, embedded: Object.fromEntries(['en', ...LANGS].map((l) => [l, pass.filter((b) => b.type === 'dividend' && (b.lang || 'en') === l && b.html.includes('<section class="dce" id="dce">')).length])) },
   };
   return { pages: pass, hubs, held, report, compares: compared, divcalc: divcalc.data };
 }

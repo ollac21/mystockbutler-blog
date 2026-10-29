@@ -225,6 +225,44 @@ export const DIVCALC_WORDS = {
   },
 };
 
+// THE BLOCK INSIDE EACH DIVIDEND PAGE (owner 2026-10-29): its own words, kept apart so the standalone pages (which carry
+// DIVCALC_WORDS whole in their script) stay as they are. Same rules: no digit, no advice word (tested). The block also uses
+// DIVCALC_WORDS' fAmount, fYears, fDrip, calc, rHead, rTotal, mBad and mCap.
+export const DIVCALC_EMBED_WORDS = {
+  en: {
+    embH: "How much would {name}'s dividend pay you?",
+    embLead: '{amount} invested in {name} at its {y} dividend yield (our report of {mdate}) pays {income} in the first year, before tax.',
+    embGrow: 'If its dividend per share keeps changing {g} a year, as it did from {first} to {last}, and the dividends are reinvested, year {n} pays {final}, with {total} received in all.',
+    embGrow0: 'If its dividend stays flat and the dividends are reinvested, year {n} pays {final}, with {total} received in all.',
+    embYear: 'Dividend income in year {n}', embFull: 'Full calculator',
+    embNote: 'Before tax. Past dividend growth is not a promise. Information only, not investment advice.',
+  },
+  fr: {
+    embH: 'Combien rapporterait le dividende versé par {name} ?',
+    embLead: '{amount} placés dans {name} à son rendement en dividende de {y} (notre rapport du {mdate}) rapportent {income} la première année, avant impôt.',
+    embGrow: 'Si son dividende par action continue de varier de {g} par an, comme de {first} à {last}, et que les dividendes sont réinvestis, l’année {n} rapporte {final}, pour {total} de dividendes reçus au total.',
+    embGrow0: 'Si son dividende reste stable et que les dividendes sont réinvestis, l’année {n} rapporte {final}, pour {total} de dividendes reçus au total.',
+    embYear: 'Revenu de dividendes l’année {n}', embFull: 'Calculateur complet',
+    embNote: 'Avant impôt. La croissance passée du dividende n’est pas une promesse. Information seulement, pas un conseil en placement.',
+  },
+  de: {
+    embH: 'Wie viel würde Ihnen die Dividende von {name} bringen?',
+    embLead: '{amount}, angelegt in {name} zur Dividendenrendite von {y} (unser Bericht vom {mdate}), bringen im ersten Jahr vor Steuern {income}.',
+    embGrow: 'Verändert sich die Dividende je Aktie weiter um {g} pro Jahr wie von {first} bis {last} und werden die Dividenden wieder angelegt, liegen die Dividendeneinnahmen im Jahr {n} bei {final}; insgesamt fließen {total} an Dividenden.',
+    embGrow0: 'Bleibt die Dividende gleich und werden die Dividenden wieder angelegt, liegen die Dividendeneinnahmen im Jahr {n} bei {final}; insgesamt fließen {total} an Dividenden.',
+    embYear: 'Dividendeneinnahmen im Jahr {n}', embFull: 'Vollständiger Rechner',
+    embNote: 'Vor Steuern. Vergangenes Dividendenwachstum ist kein Versprechen. Nur zur Information, keine Anlageberatung.',
+  },
+  'zh-HK': {
+    embH: '{name}的股息可以為你帶來多少收入？',
+    embLead: '以 {y} 的股息率（我們 {mdate} 的報告）投資 {amount} 於{name}，首年稅前可收取 {income} 股息。',
+    embGrow: '若每股股息繼續按 {first} 年至 {last} 年的速度每年變動 {g}，並將股息再投資，第 {n} 年可收取 {final}，累計收取股息 {total}。',
+    embGrow0: '若股息維持不變並將股息再投資，第 {n} 年可收取 {final}，累計收取股息 {total}。',
+    embYear: '第 {n} 年股息收入', embFull: '完整計算機',
+    embNote: '稅前數字。過往股息增長並不代表將來。僅供參考，並非投資建議。',
+  },
+};
+
 // '{name} paid {cov}' -> the values; a placeholder with no value stays visible (a test catches it).
 export function fill(text, vars = {}) {
   return String(text).replace(/\{(\w+)\}/g, (m, k) => (vars[k] === undefined || vars[k] === null ? m : String(vars[k])));

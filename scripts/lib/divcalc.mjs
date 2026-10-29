@@ -14,7 +14,7 @@
 // the static example and a visitor's result are drawn by the same code.
 
 import { APP, esc } from './layout.mjs';
-import { DIVCALC_WORDS, fill } from './divcalcWords.mjs';
+import { DIVCALC_EMBED_WORDS, DIVCALC_WORDS, fill } from './divcalcWords.mjs';
 
 export const DIVCALC_LANGS = ['en', 'fr', 'de', 'zh-HK'];
 export const DIVCALC_PATH = {
@@ -350,6 +350,101 @@ function clientMain(C) {
 
 const SHARED = [project, fmtNum, escH, fillH, fillT, numH, pctH, moneyH, dayText, resultH, coverageH, clientMain];
 
+// ---- THE BLOCK ON EACH DIVIDEND PAGE (owner 2026-10-29: the calculator inside the company's own dividend page) ----
+// Only a company that passes the guard above gets it; it reads the same entry (entryOf) and the same formula (project) as
+// the standalone page, with the standalone's defaults (10,000, 10 years, dividends reinvested, no price growth, no tax), so
+// its static example equals the standalone's first result to the last digit. The visitor changes the amount, the years and
+// the reinvestment; the yield and the growth stay the report's (the full calculator, linked, changes everything).
+
+// SHARED (build time + browser): the three results — first-year income, the final year's income, the total received.
+export function embedOutH(rows, W, lang, sym) {
+  if (!rows.length) return '';
+  var last = rows[rows.length - 1];
+  var tile = function (v, label) { return '<div><div class="v">' + moneyH(v, 2, lang, sym) + '</div><div class="l">' + label + '</div></div>'; };
+  return '<div class="dc-sum">' + tile(rows[0].div, escH(W.rHead)) + tile(last.div, fillH(W.embYear, { n: numH(last.k, 0, lang) })) + tile(last.total, escH(W.rTotal)) + '</div>';
+}
+
+// The browser side of the block: amount, years, reinvest -> the three results; the full calculator's link follows the inputs.
+function embedMain(C) {
+  var W = C.w;
+  var lang = C.lang;
+  var $ = function (id) { return document.getElementById(id); };
+  var form = $('dce-f');
+  if (!form) return;
+  var timer = null;
+  function parseNum(s) {
+    s = String(s == null ? '' : s).replace(/[\s\u00a0\u202f']/g, '');
+    if (!s) return NaN;
+    if (lang === 'fr' || lang === 'de') {
+      if (lang === 'de' && /^\d{1,3}(\.\d{3})+(,\d+)?$/.test(s)) s = s.replace(/\./g, '');
+      s = s.replace(',', '.');
+    } else s = s.replace(/,(?=\d{3}(\D|$))/g, '');
+    return /^-?\d*\.?\d+$/.test(s) ? Number(s) : NaN;
+  }
+  function field(id, min, max) {
+    var el = $(id);
+    var v = parseNum(el.value);
+    var err = $(id + '-e');
+    var bad = !isFinite(v) || v < min;
+    if (err) err.textContent = bad ? W.mBad : (v > max ? W.mCap : '');
+    el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+    return bad ? null : Math.min(v, max);
+  }
+  function calc() {
+    var a = field('dce-a', 0, 1e12);
+    var n = field('dce-n', 1, 50);
+    var out = $('dce-out');
+    if (a === null || n === null) { out.innerHTML = ''; return; }
+    var drip = $('dce-d').checked;
+    var years = Math.round(n);
+    out.innerHTML = embedOutH(project({ amount: a, y: C.y, g: C.g, gp: 0, years: years, drip: drip, tax: 0, add: 0 }), W, lang, C.sym);
+    $('dce-full').href = C.full + '&a=' + a + '&y=' + years + '&d=' + (drip ? 1 : 0);
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      if (typeof gtag === 'function') gtag('event', 'divcalc_run', Object.assign({ ticker: C.t, prefilled: 1, drip: drip ? 1 : 0, years: years, embed: 1 }, typeof P === 'object' ? P : {}));
+    }, 1500);
+  }
+  form.addEventListener('submit', function (ev) { ev.preventDefault(); calc(); });
+  ['dce-a', 'dce-n', 'dce-d'].forEach(function (id) { $(id).addEventListener('change', calc); });
+}
+
+const EMBED_SHARED = [project, fmtNum, escH, fillH, numH, moneyH, embedOutH, embedMain];
+
+// The block for one company's dividend page in one language: '' when the company fails the guard (the page stays as it was).
+// Off switch: DIVCALC_EMBED=off.
+export function renderDivCalcEmbed(data, lang) {
+  if (!DIVCALC_PATH[lang] || process.env.DIVCALC_EMBED === 'off') return '';
+  const e = entryOf(data);
+  if (!e.prefill) return '';
+  const W = { ...DIVCALC_WORDS[lang], ...DIVCALC_EMBED_WORDS[lang] };
+  const sym = (CUR_SYM[e.cur] && CUR_SYM[e.cur][lang]) || ['', e.cur ? `\u00a0${e.cur}` : ''];
+  const g = e.g ?? 0;
+  const rows = project({ ...DEFAULTS, y: e.y, g });
+  const last = rows[rows.length - 1];
+  const vars = {
+    name: escH(e.n), amount: moneyH(DEFAULTS.amount, 0, lang, sym), y: pctH(e.y, e.yd, lang), mdate: escH(dayText(e.mdate, lang)),
+    income: moneyH(rows[0].div, 2, lang, sym), g: e.g === null ? null : pctH(e.g, 1, lang), first: escH(e.cols[0]), last: escH(e.cols[4]),
+    n: numH(DEFAULTS.years, 0, lang), final: moneyH(last.div, 2, lang, sym), total: moneyH(last.total, 2, lang, sym),
+  };
+  const full = `${DIVCALC_PATH[lang]}?t=${encodeURIComponent(e.t)}`;
+  const err = (id) => `<p class="err" id="${id}-e" aria-live="polite"></p>`;
+  const client = { lang, w: { rHead: W.rHead, rTotal: W.rTotal, embYear: W.embYear, mBad: W.mBad, mCap: W.mCap }, t: e.t, y: e.y, g, sym, full };
+  const script = `<script id="dce-js">(function(){\n${EMBED_SHARED.map((f) => f.toString()).join('\n')}\nembedMain(${JSON.stringify(client).replace(/</g, '\\u003c')});\n})();</script>`;
+  return `<section class="dce" id="dce">
+<h2>${fillH(W.embH, vars)}</h2>
+<p>${fillH(W.embLead, vars)}${lang === 'zh-HK' ? '' : ' '}${fillH(e.g === null ? W.embGrow0 : W.embGrow, vars)}</p>
+<form class="dc" id="dce-f" novalidate>
+<div><label for="dce-a">${escH(W.fAmount)}</label><div class="in"><span>${escH((sym[0] || sym[1]).trim())}</span><input id="dce-a" name="a" inputmode="decimal" value="${DEFAULTS.amount}"></div>${err('dce-a')}</div>
+<div><label for="dce-n">${escH(W.fYears)}</label><input id="dce-n" name="y" inputmode="numeric" value="${DEFAULTS.years}">${err('dce-n')}</div>
+<div class="ck"><input id="dce-d" type="checkbox" checked><label for="dce-d">${escH(W.fDrip)}</label></div>
+<div class="go"><button class="btn" type="submit">${escH(W.calc)}</button><a id="dce-full" href="${escH(full)}">${escH(W.embFull)}</a></div>
+</form>
+<div id="dce-out" aria-live="polite">${embedOutH(rows, W, lang, sym)}</div>
+<p class="sub">${escH(W.embNote)}</p>
+${script}
+</section>`;
+}
+
 // ---- build time ----
 
 function compact(e) {
@@ -380,6 +475,7 @@ export const DIVCALC_CSS = `
 .dc-sum .v{font:800 19px/1.15 Inter,sans-serif;color:var(--teal-t);font-variant-numeric:tabular-nums}.dc-sum .l{font:500 12.5px/1.35 Inter,sans-serif;color:var(--muted);margin-top:4px}
 .dc-years summary{font:600 14px/1.3 Inter,sans-serif;color:var(--teal);cursor:pointer;margin:8px 0}
 #dc-cov{margin-top:30px}
+.dce{margin:28px 0 8px}.dce .go a{font:600 14px/1 Inter,sans-serif;color:var(--teal);padding:8px 4px}
 @media (max-width:640px){.dc{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px;gap:10px}.dc details>div{grid-template-columns:repeat(2,minmax(0,1fr))}.dc-sum .v{font-size:16px}.dc-head .v{font-size:26px}}
 `;
 
