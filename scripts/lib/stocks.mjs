@@ -1414,7 +1414,8 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   hubs.forEach((h) => (h.lastmod = newest));
   // the comparison guides (B110): drawn after the pages and hubs, so their example links point at published pages only
   const published = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path)]);
-  for (const a of renderAlternatives(live, (p) => published.has(p), newest)) {
+  // (the dividend calculator's four pages are always built, so a comparison may link them)
+  for (const a of renderAlternatives(live, (p) => published.has(p) || DIVCALC_PATHS.has(p), newest)) {
     hubs.push(a);
     hubPaths.add(a.path);
   }

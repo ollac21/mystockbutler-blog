@@ -15,7 +15,6 @@ import { loadAlternatives } from '../scripts/lib/guides.mjs';
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const TODAY = new Date('2026-10-29T12:00:00Z');
 const ldOf = (html) => JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html)[1].replace(/\\u003c/g, '<'));
-const bodyOf = (html) => html.replace(/<script[\s\S]*?<\/script>/g, '');
 const PATHS = {
   en: '/alternatives/ai-stock-research-tools/',
   fr: '/fr/alternatives/outils-ia-analyse-actions/',
@@ -63,26 +62,54 @@ test('the AI tools comparison: four pages, hreflang both ways, the guide frame, 
   assert.match(zh.html, new RegExp(`<footer[\\s\\S]*<a href="${PATHS['zh-HK']}">`));
 });
 
-test('the English page: a dated short answer first, the disclosure on top, a sources list, no best or #1 claim for us', () => {
+test('the English page: a byline, then a dated short answer that names MyStockButler first, sources, no best or #1 claim for us', () => {
   const en = docs().find((g) => g.lang === 'en');
   assert.ok(en, 'the English file');
   const md = en.markdown.replace(/^\s*# .*\n+/, '');
   const opening = md.split(/\n(?=## )/)[0];
-  const first = opening.trim().split(/\n\s*\n/)[0];
-  const words = first.replace(/[*_]/g, '').split(/\s+/).filter(Boolean);
+  const [byline, answer, ...more] = opening.trim().split(/\n\s*\n/);
+  assert.match(byline, /^\*By the MyStockButler team · updated 29 October 2026\*$/);
+  assert.equal(more.length, 0, 'the opening is the byline and the short answer only: the free-report box comes right after');
+  const words = answer.replace(/[*_]/g, '').split(/\s+/).filter(Boolean);
   assert.ok(words.length <= 50, `the short answer has ${words.length} words`);
-  assert.match(first, /29 October 2026/);
-  assert.match(opening, /We make MyStockButler\./);
+  assert.match(answer, /^\*\*Short answer \(29 October 2026\):\*\* MyStockButler /);
+  for (const n of ['eight', 'free', '\\$5', '\\$20', '\\$30', '\\$70', 'four languages']) assert.match(answer, new RegExp(n));
+  assert.doesNotMatch(md, /We make MyStockButler/);
   assert.match(md, /\n## Sources\n/);
   const sources = md.split('\n## Sources\n')[1].split(/\n## /)[0];
   const hosts = new Set([...sources.matchAll(/https:\/\/([^/\s)]+)/g)].map((m) => m[1].replace(/^www\./, '')));
   assert.ok(hosts.size >= 8, `sources on ${hosts.size} sites`);
   assert.match(sources, /29 October 2026/);
-  assert.doesNotMatch(md, /MyStockButler is the best|best (AI )?tool is MyStockButler|#1|number one/i);
-  // the table compares 8-10 tools, MyStockButler among them
-  const table = md.split('\n').filter((l) => /^\| /.test(l) && !/^\| ?-/.test(l)).slice(1);
-  assert.ok(table.length >= 8 && table.length <= 10, `${table.length} tools in the table`);
-  assert.ok(table.some((r) => /MyStockButler/.test(r)));
+  assert.doesNotMatch(md, /MyStockButler is the best|best (AI )?tool is MyStockButler|#1|number one|the only (one|tool)/i);
+  // a trade-off line for each of the eight other tools: 'Pick X if …; MyStockButler if …'
+  assert.equal((md.match(/^\*\*Pick .+ if\*\* .+; \*\*MyStockButler if\*\* .+$/gm) || []).length, 8);
+});
+
+test('MyStockButler first in every language: the first table row (bold), the block after the table, the first card, the free-report box under the short answer', () => {
+  const { hubs } = buildStockSite(FIXTURES.map(load), { today: TODAY });
+  for (const g of docs()) {
+    const md = g.markdown.replace(/^\s*# .*\n+/, '');
+    const sections = md.split(/\n(?=## )/);
+    const answer = sections[0].trim().split(/\n\s*\n/)[1];
+    const tools = ['AlphaSense', 'Danelfin', 'Fiscal.ai', 'InvestIQ', 'Ploutos AI', 'Reflexivity', 'StockInsights.ai', 'TIKR'];
+    const first = Math.min(...tools.map((t) => answer.indexOf(t)).filter((i) => i >= 0));
+    assert.ok(answer.indexOf('MyStockButler') >= 0 && answer.indexOf('MyStockButler') < first, `${g.lang}: the short answer names MyStockButler first`);
+    // section 1 = the table, section 2 = why MyStockButler (4-5 bullets), section 3 = the cards, MyStockButler's first
+    const rows = sections[1].split('\n').filter((l) => /^\| /.test(l) && !/^\| ?-/.test(l)).slice(1);
+    assert.equal(rows.length, 9, `${g.lang}: nine tools`);
+    assert.match(rows[0], /^\| \*\*MyStockButler\*\* \|/, `${g.lang}: MyStockButler is the first row, in bold`);
+    assert.ok(rows.slice(1).every((r) => !/\*\*/.test(r)), `${g.lang}: only our row is bold`);
+    assert.match(sections[2], /^## .*MyStockButler/, `${g.lang}: the block after the table is about MyStockButler`);
+    const bullets = sections[2].split('\n').filter((l) => /^- /.test(l)).length;
+    assert.ok(bullets >= 4 && bullets <= 5, `${g.lang}: ${bullets} bullets`);
+    assert.match(sections[3], /\n### MyStockButler\n/, `${g.lang}: the cards`);
+    assert.equal(sections[3].indexOf('\n### MyStockButler\n'), sections[3].indexOf('\n### '), `${g.lang}: MyStockButler is the first card`);
+    // the built page: the free-report box right under the short answer, before the table's heading
+    const h = hubs.find((x) => x.path === PATHS[g.lang]).html;
+    const box = h.indexOf('<form class="tickerbox"');
+    assert.ok(box > h.indexOf('MyStockButler', h.indexOf('<h1')) && box < h.indexOf('<h2'), `${g.lang}: the box sits under the short answer`);
+    assert.ok(h.lastIndexOf('</p>', box) > h.indexOf('<h1') && !h.slice(h.indexOf('<h1'), box).includes('<table'), `${g.lang}: nothing but the byline and the answer before the box`);
+  }
 });
 
 test('the four files hold the same facts: the same numbers, the same tools and the same sources', () => {
