@@ -40,6 +40,7 @@ export function siteFooter() {
 <div class="footer-row">
 <a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">StockButler</span></a>
 <nav aria-label="Footer">
+<a href="/about/">About</a>
 <a href="${LANDING}/legal">Legal</a>
 <a href="/">Blog</a>
 <a href="/stocks/">All stocks</a>

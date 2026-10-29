@@ -22,6 +22,7 @@ import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
 import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 import { ORG } from './lib/stocks.mjs';
+import { aboutLlmsLines } from './lib/about.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -669,10 +670,13 @@ function renderLlms(entries, stockPages = [], hubs = []) {
   for (const l of LANG_HUBS) {
     for (const hub of [byUrl(l.home), byUrl(l.path)].filter(Boolean)) langs.push(`- ${l.name}: [${hub.title}](${hub.url}): ${hub.description}`);
   }
-  const head = `# ${SITE_NAME}\n\n> Published MyStockButler stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
+  // the About pages (2026-10-29): who MyStockButler is, first, so an assistant reads the definition before the lists
+  const about = aboutLlmsLines(hubs);
+  const aboutPart = about.length ? `## About MyStockButler\n\n${about.join('\n')}\n\n` : '';
+  const head = `# ${SITE_NAME}\n\n> MyStockButler writes long, source-checked research reports on single public companies, every number linked to the document it comes from; not investment advice. This blog publishes its stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n${aboutPart}## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
   const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
   const listed = new Set(LANG_HUBS.flatMap((l) => [`${SITE}${l.home}`, `${SITE}${l.path}`]));
-  const hubLines = hubs.filter((h) => !listed.has(h.url) && !h.alt).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
+  const hubLines = hubs.filter((h) => !listed.has(h.url) && !h.alt && !h.about).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
   // the comparison guides (B110): honest comparisons of research tools, prices read on each product's own page
   const altLines = hubs.filter((h) => h.alt).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);
   const altPart = altLines.length ? `\n## Stock research tools compared (prices read on each product's own page; MyStockButler is ours)\n\n${altLines.join('\n')}\n` : '';

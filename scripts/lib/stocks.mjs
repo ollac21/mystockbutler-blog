@@ -13,6 +13,7 @@ import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, renderGuide } from './guides.mjs';
+import { ABOUT_LINK_WORDS, ABOUT_PATH, renderAbout } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
@@ -510,7 +511,7 @@ ${gaHead(meta)}</head>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
 <a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
@@ -1402,6 +1403,11 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   const divcalc = renderDivCalc(live, { shell, SITE, ORG, breadcrumbs, pagePath, published: new Set([...published, ...hubs.map((x) => x.path)]), roots, newest, siteLink: SITE_LINK,
     allStocks: Object.fromEntries(Object.keys(UI).map((l) => [l, UI[l].allStocks])), free: Object.fromEntries(Object.keys(UI).map((l) => [l, UI[l].free])) });
   for (const k of divcalc.pages) {
+    hubs.push(k);
+    hubPaths.add(k.path);
+  }
+  // the About pages (2026-10-29): always built, in the four languages; a link to an unpublished page keeps its words
+  for (const k of renderAbout({ shell, SITE, ORG, breadcrumbs, exists: (p) => published.has(p) || hubPaths.has(p), siteLink: SITE_LINK })) {
     hubs.push(k);
     hubPaths.add(k.path);
   }

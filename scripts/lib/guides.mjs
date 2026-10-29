@@ -82,7 +82,7 @@ function labelCells(table) {
 const boxTables = (html) => html.replace(/<table>[\s\S]*?<\/table>/g, (t) => `<div class="tw">${labelCells(t)}</div>`);
 
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
-export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [] }) {
+export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [], pageType = 'Article' }) {
   const url = `${SITE}${g.path}`;
   const src = `seo-guide-${g.name.replace(/\.md$/, '')}`;
   const cta = `${APP}/signup?src=${encodeURIComponent(src)}&lang=${g.lang}`;
@@ -92,7 +92,7 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
   const [opening, ...rest] = md.split(/\n(?=## )/);
   const faq = faqOf(md);
   const ld = { '@context': 'https://schema.org', '@graph': [crumbs.ld,
-    { '@type': 'Article', headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
+    { '@type': pageType, headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
       inLanguage: g.lang, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url },
     ...(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
     ORG] };
