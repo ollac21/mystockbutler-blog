@@ -13,6 +13,7 @@ import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, renderGuide } from './guides.mjs';
+import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc } from './divcalc.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -185,7 +186,7 @@ function libsOf(companies) {
 }
 export const LANGS = Object.keys(LANG_CFG);
 // A link to one of our page addresses, in any language (the in-link and dead-link counts read these).
-const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen)\/[^"]*)"/g;
+const SITE_LINK = /<a [^>]*href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|compare|fr\/ia-bourse|zh\/ai-stock-analysis|alternatives|fr\/alternatives|de\/alternativen)\/[^"?#]*)[^"]*"/g;
 // THE GUIDES (B114): data/guides/*.md, one page each; every page of the guide's language links it from its footer
 const GUIDES = loadGuides();
 const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
@@ -639,6 +640,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     : '';
   const siblings = TYPES.filter((t) => t !== type && has(t, lang)).map((t) => `<a href="${pagePath(slug, t, lang)}">${esc(ui.sibling(t, company))}</a>`);
   for (const l of versions) if (l !== lang) siblings.push(`<a hreflang="${hrefOf(l)}" href="${pagePath(slug, type, l)}">${esc(ui.otherIn[l])}</a>`);
+  // the dividend calculator, pre-filled with this company (SEO item 1): only when its numbers pass the calculator's guard
+  if (type === 'dividend' && DIVCALC_PATH[lang] && divcalcEligible(data).ok) siblings.push(`<a href="${DIVCALC_PATH[lang]}?t=${encodeURIComponent(ticker)}">${esc(DIVCALC_LINK_WORDS[lang])}</a>`);
   const rivals = (data.rivals || [])
     .map((r) => ctx.bySlug.get(ctx.slugOf(r)))
     .filter((r) => r && r.slug !== slug && (fr ? langPage(r, 'stock', lang) : true) && ctx.exists(pagePath(r.slug, 'stock', lang)))
@@ -786,7 +789,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
   const translated = Object.fromEntries(LANGS.map((l) => [l, byName.filter((c) => TYPES.some((t) => langPage(c, t, l)))]));
   const langsIn = (list) => LANGS.filter((l) => list.some((c) => TYPES.some((t) => langPage(c, t, l))));
   const all = [
-    `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a>${compares ? ` · <a href="${COMPARE_ROOT}">Companies side by side</a>` : ''}</p></section>`,
+    `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a> · <a href="${DIVCALC_PATH.en}">${DIVCALC_LINK_WORDS.en}</a>${compares ? ` · <a href="${COMPARE_ROOT}">Companies side by side</a>` : ''}</p></section>`,
     nav(),
     ...groups.map((g) => `<section><h2><a href="/stocks/${INDEX_PATHS[g.key]}/">${esc(INDEX_NAMES[g.key])}</a></h2>${hubList(g.list)}</section>`),
     // companies in none of our indexes (a customer's report, card step 14)
@@ -866,7 +869,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       sections: [`<ul class="list">${main.map((c) => {
         const links = TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`).join('');
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
-      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${others(cfg.root)}${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
+      }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${others(cfg.root)} · <a href="${DIVCALC_PATH[l]}">${esc(DIVCALC_LINK_WORDS[l])}</a>${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
     }));
     if (LANDING_WORDS[l]) pages.push(renderLangHome(l, list));   // /de/ and /fr/: the landing's own words (no Chinese home)
@@ -889,7 +892,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     title: 'Dividend stocks: history, cash coverage and yield',
     description: `${payers.length} dividend-paying companies from our research memos: dividend history, coverage by free cash flow and yield.`,
     intro: `${payers.length} companies in our library pay a dividend.`,
-    sections: [nav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
+    sections: [`<p><a href="${DIVCALC_PATH.en}">${DIVCALC_LINK_WORDS.en}</a>: type a ticker, see its dividend income, reinvested or not.</p>`, nav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Dividends', path: '/stocks/dividends/' }],
   }));
   return pages;
@@ -1310,7 +1313,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   const comparePaths = new Set();
   const compareLinks = new Map();
   const ctx = { bySlug, slugOf, sharedTitles, compareLinks, today: today.toISOString().slice(0, 10), earningsDates: earningsDates || {},
-    exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) };
+    exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) || DIVCALC_PATHS.has(p) };
   const compareHeld = [];
   const pairsOk = (Array.isArray(compares) ? compares : []).filter((p) => {
     if (!pairShape(p)) return false;
@@ -1390,9 +1393,17 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     hubs.push(a);
     hubPaths.add(a.path);
   }
+  // the dividend calculator (SEO item 1): its four pages are always built (DIVCALC_PATHS); its data names published pages only
+  const roots = { en: { name: 'Stocks', path: '/stocks/' }, ...Object.fromEntries(LANGS.map((l) => [l, { name: LANG_CFG[l].hub(0, '').crumb, path: LANG_CFG[l].root }])) };
+  const divcalc = renderDivCalc(live, { shell, SITE, ORG, breadcrumbs, pagePath, published: new Set([...published, ...hubs.map((x) => x.path)]), roots, newest, siteLink: SITE_LINK,
+    allStocks: Object.fromEntries(Object.keys(UI).map((l) => [l, UI[l].allStocks])), free: Object.fromEntries(Object.keys(UI).map((l) => [l, UI[l].free])) });
+  for (const k of divcalc.pages) {
+    hubs.push(k);
+    hubPaths.add(k.path);
+  }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
-  const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) };
+  const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) || DIVCALC_PATHS.has(p) };
   for (const p of liveCompares) {
     const built = renderComparePage(p, cctx);
     const fails = gateCompare(built, cctx);
@@ -1430,6 +1441,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
     // plan 2-3: the earnings titles this build changed (English: the announced date; German: the past date taken out)
     earningsTitles: Object.fromEntries(['date', 'passed'].map((k) => [k, pass.filter((b) => b.datedKind === k).map((b) => ({ path: b.path, title: b.title }))])),
+    divcalc: divcalc.report,
   };
-  return { pages: pass, hubs, held, report, compares: compared };
+  return { pages: pass, hubs, held, report, compares: compared, divcalc: divcalc.data };
 }

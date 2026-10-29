@@ -14,6 +14,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stocks.mjs';
+import { DIVCALC_CSS, DIVCALC_DATA } from './divcalc.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 
 const FETCH_TIMEOUT_MS = 30000;
@@ -205,9 +206,10 @@ function urlset(entries) {
 
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
 export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates() } = {}) {
-  const { pages, hubs, held, report, compares: compared } = buildStockSite(companies, { today, compares, earningsDates });
+  const { pages, hubs, held, report, compares: compared, divcalc } = buildStockSite(companies, { today, compares, earningsDates });
   await mkdir(path.join(out, 'stocks', 'assets'), { recursive: true });
-  await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS);
+  await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS + DIVCALC_CSS);
+  await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });
@@ -237,6 +239,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   }
   console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
   console.log(`Earnings titles: ${report.earningsTitles.date.length} English with the announced date (${Object.keys(earningsDates || {}).length} on the checked list), ${report.earningsTitles.passed.length} German with the past date taken out.`);
+  console.log(`Dividend calculator: ${report.divcalc.paths.length} page(s) (${report.divcalc.paths.join(', ')}); ${report.divcalc.rows} companies in its data, ${report.divcalc.prefilled} pre-filled; examples ${JSON.stringify(report.divcalc.examples)}.`);
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
   return { sitemaps, llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
