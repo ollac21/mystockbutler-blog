@@ -421,3 +421,80 @@ test('a Hang Seng company in Chinese sits under its own 港股分析 hub; the �
   assert.match(page.html, /<a href="\/zh\/stocks\/hk\/">港股分析<\/a>/);
   assert.deepEqual(report.deadHubLinks, []);
 });
+
+// PLAN 2-3 'MSB titles' (2026-10-29): the announced results date in the English earnings title (checked list only), and the
+// German title's past date taken out. NVIDIA's file: next_earnings 2026-11-18, English 'NVIDIA earnings: guidance and what to
+// watch', German 'NVIDIA Quartalszahlen am 18. November 2026'.
+const DAY = (d) => new Date(`${d}T12:00:00Z`);
+const titlesOf = (p) => ({
+  title: (/<title>([\s\S]*?)<\/title>/.exec(p.html) || [])[1],
+  og: (/<meta property="og:title" content="([^"]*)">/.exec(p.html) || [])[1],
+  tw: (/<meta name="twitter:title" content="([^"]*)">/.exec(p.html) || [])[1],
+  h1: (/<h1>([\s\S]*?)<\/h1>/.exec(p.html) || [])[1],
+  ld: JSON.parse((/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(p.html) || [])[1])['@graph'].find((n) => n['@type'] === 'Article').headline,
+});
+const datedBuild = (nvda, today, earningsDates) => buildStockSite([nvda, load('stock-rmd.json'), load('stock-td-to.json')], { today: DAY(today), earningsDates });
+const nvdaPage = (built, lang = 'en') => built.pages.find((p) => p.path === (lang === 'de' ? '/de/aktien/nvda/quartalszahlen/' : '/stocks/nvda/earnings/'));
+
+test('plan 2-3: a checked, announced date puts the results date in the English earnings title, everywhere the title is', () => {
+  const built = datedBuild(load('stock-nvda-de.json'), '2026-10-29', { nvda: { date: '2026-11-18', source_url: 'https://investor.nvidia.com/' } });
+  assert.equal(built.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(built.held));   // the gate passes it
+  const t = titlesOf(nvdaPage(built));
+  const want = 'NVIDIA earnings date: November 18, 2026 — what to watch';
+  assert.deepEqual(t, { title: want, og: want, tw: want, h1: want, ld: want });
+  assert.deepEqual(built.report.earningsTitles.date, [{ path: '/stocks/nvda/earnings/', title: want }]);
+  // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want);
+  assert.equal(titlesOf(built.pages.find((p) => p.path === '/stocks/nvda/')).title, load('stock-nvda-de.json').pages.stock.title + ' 2027–2029');
+  assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA Quartalszahlen am 18. November 2026');
+});
+
+test('plan 2-3: a long name drops "what to watch", then the date form; never more than 60 characters', () => {
+  const amat = clone(load('stock-nvda-de.json'));
+  amat.short_name = 'Applied Materials';
+  const two = nvdaPage(datedBuild(amat, '2026-10-29', { nvda: { date: '2026-11-18' } }));
+  assert.equal(titlesOf(two).title, 'Applied Materials earnings date: November 18, 2026');
+  const huge = clone(load('stock-nvda-de.json'));
+  huge.short_name = 'Applied Materials and Semiconductor Holdings';
+  const kept = nvdaPage(datedBuild(huge, '2026-10-29', { nvda: { date: '2026-11-18' } }));
+  assert.equal(titlesOf(kept).title, 'NVIDIA earnings: guidance and what to watch');
+});
+
+test('plan 2-3: no date in the title when the date is past, disagrees with the data, or is not on the checked list', () => {
+  const model = 'NVIDIA earnings: guidance and what to watch';
+  const row = { nvda: { date: '2026-11-18' } };
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-19', row))).title, model);         // past
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', { nvda: { date: '2026-11-17' } }))).title, model);   // moved
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', { orcl: { date: '2026-11-18' } }))).title, model);   // not listed
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', undefined))).title, model);   // no list = off
+  const none = clone(load('stock-nvda-de.json'));
+  delete none.next_earnings;
+  assert.equal(titlesOf(nvdaPage(datedBuild(none, '2026-10-29', row))).title, model);
+});
+
+test('plan 2-3: a German earnings title loses its date once the day has passed (the chain\'s own short form)', () => {
+  const before = datedBuild(load('stock-nvda-de.json'), '2026-11-18', {});
+  assert.equal(titlesOf(nvdaPage(before, 'de')).title, 'NVIDIA Quartalszahlen am 18. November 2026');
+  assert.deepEqual(before.report.earningsTitles.passed, []);
+  const after = datedBuild(load('stock-nvda-de.json'), '2026-11-19', {});
+  assert.equal(after.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(after.held));
+  const t = titlesOf(nvdaPage(after, 'de'));
+  assert.deepEqual(t, { title: 'NVIDIA Quartalszahlen', og: 'NVIDIA Quartalszahlen', tw: 'NVIDIA Quartalszahlen', h1: 'NVIDIA Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
+  assert.deepEqual(after.report.earningsTitles.passed, [{ path: '/de/aktien/nvda/quartalszahlen/', title: 'NVIDIA Quartalszahlen' }]);
+  // a German title already without a date is left as it is
+  const plain = clone(load('stock-nvda-de.json'));
+  plain.translations.de.pages.earnings.title = 'NVIDIA Quartalszahlen';
+  assert.equal(titlesOf(nvdaPage(datedBuild(plain, '2026-11-19', {}), 'de')).title, 'NVIDIA Quartalszahlen');
+});
+
+test('plan 2-3: the checked list file — rows need a slug and a YYYY-MM-DD date; a missing file is off; the committed rows cite their source', async () => {
+  const { readEarningsDates } = await import('../scripts/lib/stocksBuild.mjs');
+  const { mkdtempSync, writeFileSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const dir = mkdtempSync(`${tmpdir()}/earnings-dates-`);
+  writeFileSync(`${dir}/list.json`, JSON.stringify({ _about: 'note', nvda: { date: '2026-11-18' }, orcl: { date: 'December 14' }, 'Bad Slug': { date: '2026-11-18' } }));
+  assert.deepEqual(readEarningsDates(new URL(`file://${dir}/list.json`)), { nvda: { date: '2026-11-18' } });
+  assert.deepEqual(readEarningsDates(new URL(`file://${dir}/none.json`)), {});
+  const rows = readEarningsDates();
+  for (const [slug, r] of Object.entries(rows)) assert.match(String(r.source_url), /^https:\/\//, `${slug} has no source`);
+});

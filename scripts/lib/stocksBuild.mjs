@@ -11,7 +11,7 @@
 // means the index is wrong, and the committed files are kept.
 
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stocks.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
@@ -181,6 +181,19 @@ export async function readCompareData(root, { url = process.env.STOCK_PAGES_URL 
   return kept;
 }
 
+// THE CHECKED EARNINGS DATES (plan 2-3 'MSB titles', 2026-10-29): data/earnings-title-test.json, { <slug>: { date, source_url } }
+// — the next results date each company announced itself, opened on its own release or IR page. Only these companies get the
+// date in their English earnings title, and only while it is the page's own next_earnings. Missing or empty file = off.
+const EARNINGS_DATES = new URL('../../data/earnings-title-test.json', import.meta.url);
+export function readEarningsDates(file = EARNINGS_DATES) {
+  try {
+    const rows = JSON.parse(readFileSync(file, 'utf8')) || {};
+    return Object.fromEntries(Object.entries(rows).filter(([slug, r]) => SLUG.test(slug) && /^\d{4}-\d{2}-\d{2}$/.test(String(r?.date || ''))));
+  } catch {
+    return {};
+  }
+}
+
 // One sitemap; a page with a translation lists both versions (hreflang), as its <link rel="alternate"> tags do.
 function urlset(entries) {
   const urls = entries.map((e) => {
@@ -191,8 +204,8 @@ function urlset(entries) {
 }
 
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
-export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [] } = {}) {
-  const { pages, hubs, held, report, compares: compared } = buildStockSite(companies, { today, compares });
+export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates() } = {}) {
+  const { pages, hubs, held, report, compares: compared } = buildStockSite(companies, { today, compares, earningsDates });
   await mkdir(path.join(out, 'stocks', 'assets'), { recursive: true });
   await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS);
   for (const p of [...pages, ...hubs, ...compared]) {
@@ -216,13 +229,14 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   const llms = [...hubs.filter((h) => h.guide), ...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ title: p.title, url: p.url, description: p.description }));
   // the hubs, for llms.txt's short list (B110 SEO): every hub page with its language
   const llmsHubs = [...hubs, ...compared.filter((p) => p.type === 'hub')].map((h) => ({ title: h.title, url: h.url, description: h.description, lang: h.lang || 'en', ...(h.alt ? { alt: true } : {}) }));
-  const table = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
+  const table = [...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ path: p.path, ticker: p.ticker, type: p.type, lang: p.lang || 'en', title: p.title, kb: Math.round(Buffer.byteLength(p.html) / 1024), inLinks: p.inLinks, outLinks: new Set(p.outLinks).size, gate: 'pass' }));
   const full = { built_at: new Date().toISOString(), ...report, fetch: { ...FETCH_STATS }, table };
   if (reportDir) {
     await mkdir(reportDir, { recursive: true });
     await writeFile(path.join(reportDir, 'stocks.json'), `${JSON.stringify(full, null, 1)}\n`);
   }
   console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
+  console.log(`Earnings titles: ${report.earningsTitles.date.length} English with the announced date (${Object.keys(earningsDates || {}).length} on the checked list), ${report.earningsTitles.passed.length} German with the past date taken out.`);
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
   return { sitemaps, llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
