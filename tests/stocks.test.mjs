@@ -498,3 +498,31 @@ test('plan 2-3: the checked list file — rows need a slug and a YYYY-MM-DD date
   const rows = readEarningsDates();
   for (const [slug, r] of Object.entries(rows)) assert.match(String(r.source_url), /^https:\/\//, `${slug} has no source`);
 });
+
+// BUG 1 (2026-10-29): the scenario chart's low label lost its first letter on the German page ('essimistisch'): a label was
+// centred under its mark and held 70 px from each edge, but 'Pessimistisch · 30 % · -37 %' is about 180 px wide.
+test('the scenario chart: no label runs past the chart edge, in the four languages (the German Bear label is anchored at the left edge)', async () => {
+  const { labelSpot } = await import('../scripts/lib/stocks.mjs');
+  assert.deepEqual(labelSpot(59, 'Pessimistisch · 30 % · -37 %', 720), { x: 2, anchor: 'start' });
+  assert.deepEqual(labelSpot(632, 'Optimistisch · 20 % · +112 %', 720), { x: 718, anchor: 'end' });
+  assert.deepEqual(labelSpot(360, 'Basis · 50 % · +23 %', 720), { x: 360, anchor: 'middle' });
+  const widthOf = (s) => [...s].reduce((n, ch) => n + (ch.charCodeAt(0) > 0x2e80 ? 13 : 7.5), 0);   // a little wider than the real 12 px text
+  let checked = 0;
+  for (const [file, path] of [['stock-nvda-de.json', '/de/aktien/nvda/'], ['stock-nvda-zh.json', '/zh/stocks/nvda/'], ['stock-td-to-fr.json', '/fr/stocks/td-to/'], ['stock-ko.json', '/stocks/ko/']]) {
+    const { pages } = buildStockSite([load(file)], { today: TODAY });
+    const page = pages.find((p) => p.path === path);
+    assert.ok(page, `${path} is built`);
+    const svg = /<svg viewBox="0 0 720 190"[\s\S]*?<\/svg>/.exec(page.html)?.[0];
+    assert.ok(svg, `${path} has its scenario chart`);
+    for (const m of svg.matchAll(/<text x="(\d+)" y="(?:122|160)" text-anchor="(\w+)" class="c[ld]">([^<]*)<\/text>/g)) {
+      const [, x, anchor, text] = m;
+      const w = widthOf(text.replace(/&amp;/g, '&'));
+      const [from, to] = anchor === 'start' ? [Number(x), Number(x) + w] : anchor === 'end' ? [Number(x) - w, Number(x)] : [Number(x) - w / 2, Number(x) + w / 2];
+      assert.ok(from >= 0 && to <= 720, `${path}: "${text}" runs from ${from} to ${to}`);
+      checked += 1;
+    }
+  }
+  assert.equal(checked, 16, `${checked} labels checked`);
+  const de = buildStockSite([load('stock-nvda-de.json')], { today: TODAY }).pages.find((p) => p.path === '/de/aktien/nvda/');
+  assert.match(de.html, /<text x="2" y="122" text-anchor="start" class="cl">Pessimistisch · 23\s%\s· -70\s%<\/text>/);
+});

@@ -208,7 +208,7 @@ test('the calculator pages as published: title, description, one h1, canonical, 
 test('no example passes the guard: the method sentence, no number in the answer line', () => {
   const { hubs } = buildStockSite([scale(load('stock-ko.json'), 100), load('stock-td-to.json')], { today: TODAY });
   const en = hubs.find((h) => h.path === DIVCALC_PATH.en);
-  const lede = /<p class="lede">([\s\S]*?)<\/p>/.exec(en.html)[1];
+  const lede = /<p class="lede"[^>]*>([\s\S]*?)<\/p>/.exec(en.html)[1];
   assert.equal(lede, DIVCALC_WORDS.en.answerNone);
   assert.doesNotMatch(lede, /\d/);
 });
@@ -307,4 +307,58 @@ test("the page's own script: KO's deep link pre-fills and computes $230.00 / $46
   await new Promise((r) => setImmediate(r));
   assert.equal(d.el('dc-msg').innerHTML, '');
   assert.equal(d.el('dc-y').value, '');
+});
+
+// BUGS 4 and 5 (2026-10-29), found on the German page and shared by the four: a deep link to another company ('?t=DTE')
+// kept the opening paragraph about the example (Coca-Cola), and a ticker the calculator cannot fill in (Allianz) showed
+// the green report button twice in a row (the one after the result and the one after the coverage, with nothing between).
+test("the opening paragraph follows the company in the form, and a ticker that cannot be filled in shows one report button, in the four languages", async () => {
+  const ko = load('stock-ko.json');
+  const pg = clone(ko);
+  Object.assign(pg, { ticker: 'PG', slug: 'pg', company: 'Procter & Gamble Co', short_name: 'Procter & Gamble' });
+  const td = load('stock-td-to.json');
+  const h = { shell: ({ body }) => body, SITE: '', ORG: { '@id': 'x' }, breadcrumbs: () => ({ html: '', ld: {} }),
+    pagePath: (s, t, lang = 'en') => (lang === 'en' ? `/stocks/${s}/${t === 'stock' ? '' : `${t}/`}` : '/none/'),
+    published: new Set(['/stocks/ko/dividend/', '/stocks/ko/', '/stocks/pg/dividend/', '/stocks/pg/', '/stocks/td-to/dividend/', '/stocks/td-to/']), newest: '2026-10-28',
+    roots: { en: { name: 'Stocks', path: '/stocks/' }, fr: { name: 'a', path: '/fr/stocks/' }, de: { name: 'a', path: '/de/aktien/' }, 'zh-HK': { name: 'a', path: '/zh/stocks/' } },
+    allStocks: { en: 'All', fr: 'a', de: 'a', 'zh-HK': 'a' }, free: { en: '', fr: '', de: '', 'zh-HK': '' }, siteLink: /<a [^>]*href="(\/stocks\/[^"?#]*)[^"]*"/g, examples: ALL_KO };
+  const { pages, data } = renderDivCalc([ko, pg, td], h);
+  assert.equal(entryOf(pg, { links: { en: '/stocks/pg/dividend/' } }).prefill, true, 'the second company passes the guard');
+  for (const lang of DIVCALC_LANGS) {
+    const html = pages.find((p) => p.lang === lang).html;
+    const lede = (page) => page.el('dc-lede').innerHTML;
+    // as built: the example's paragraph, its middle report button shown
+    assert.match(/<p class="lede" id="dc-lede">([\s\S]*?)<\/p>/.exec(html)[1], /Coca-Cola/);
+    assert.match(html, /<div class="ctarow" id="dc-cta2-row"><a/);
+    // another company that can be filled in: its own name and numbers, the example's name gone
+    const a = fakePage(html, data.rows, '?t=PG');
+    await new Promise((r) => setImmediate(r));
+    assert.match(lede(a), /Procter &amp; Gamble/, lang);
+    assert.doesNotMatch(lede(a), /Coca-Cola/, lang);
+    assert.match(lede(a), /<span class="n" data-v="\d+(\.\d+)?" data-d="0">/, `${lang}: its yearly income`);
+    assert.equal(a.el('dc-cta2-row').hidden, false, `${lang}: the middle button stays for a filled-in company`);
+    // the example itself: the paragraph the page was built with
+    const k = fakePage(html, data.rows, '?t=KO');
+    await new Promise((r) => setImmediate(r));
+    assert.match(lede(k), /Coca-Cola/);
+    assert.equal(k.el('dc-cta2-row').hidden, false);
+    // a ticker the guard turns away, a ticker we do not have: no company named, one report button
+    for (const t of ['TD.TO', 'ZZZZ']) {
+      const b = fakePage(html, data.rows, `?t=${t}`);
+      await new Promise((r) => setImmediate(r));
+      assert.equal(lede(b), DIVCALC_WORDS[lang].answerNone, `${lang} ${t}: a paragraph that names no company`);
+      assert.equal(b.el('dc-cta2-row').hidden, true, `${lang} ${t}: the middle report button is hidden`);
+      assert.equal(b.el('dc-cov').hidden, true);
+      assert.equal(b.el('dc-out').innerHTML, '');
+    }
+  }
+  // a page with no example is built with the middle button hidden, and shows it once a company is filled in
+  const none = renderDivCalc([scale(ko, 100), pg, td], { ...h, examples: { en: [], fr: [], de: [], 'zh-HK': [] } });
+  const bare = none.pages.find((p) => p.lang === 'en').html;
+  assert.match(bare, /<div class="ctarow" id="dc-cta2-row" hidden>/);
+  assert.match(bare, /<div class="ctarow" id="dc-cta1-row">/);
+  const c = fakePage(bare, none.data.rows, '?t=PG');
+  await new Promise((r) => setImmediate(r));
+  assert.equal(c.el('dc-cta2-row').hidden, false);
+  assert.match(c.el('dc-lede').innerHTML, /Procter &amp; Gamble/);
 });

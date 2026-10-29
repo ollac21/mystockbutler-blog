@@ -185,6 +185,18 @@ export function resultH(rows, W, lang, sym) {
     + '<details class="dc-years"><summary>' + escH(W.rTable) + '</summary><div class="tw"><table><thead><tr><th scope="col">' + escH(W.colYear) + '</th><th>' + escH(W.colYield) + '</th><th>' + escH(W.colDiv) + '</th><th>' + escH(W.colValue) + '</th></tr></thead><tbody>' + body + '</tbody></table></div></details>';
 }
 
+// The opening paragraph for one company: what its amount pays at its yield, and how its dividend grew (SHARED: the page draws
+// the example's at build time, and the visitor's company replaces it in the browser, so the paragraph never talks about the
+// example when the form holds another company). rows: project()'s result for that company; amount: the amount invested.
+export function answerH(e, rows, amount, W, lang, sym) {
+  var vars = {
+    name: escH(e.n), t: escH(e.t), amount: moneyH(amount, 0, lang, sym), income: moneyH(Math.round(rows[0].div), 0, lang, sym),
+    y: pctH(e.y, e.yd, lang), g: e.g === null ? null : pctH(e.g, 1, lang), cov: e.cov === null ? null : pctH(e.cov, 0, lang),
+    first: escH(e.cols[0]), last: escH(e.cols[4]), mdate: escH(dayText(e.mdate, lang)),
+  };
+  return (fillH(W.answer, vars) + (e.g === null ? '' : ' ' + fillH(e.cov !== null ? W.answer2 : W.answer2NoCov, vars))).trim();
+}
+
 // "Is <name>'s dividend covered by cash?": the five fiscal years of dividends paid per share, free cash flow per share and
 // their ratio, from the company's own chart (one unit: the chart's).
 export function coverageH(e, W, lang, link) {
@@ -247,6 +259,14 @@ function clientMain(C) {
       a.textContent = name ? fillT(W.cta, { name: name }) : t ? fillT(W.ctaAny, { t: t }) : W.ctaGeneric;
     });
   }
+  function lede(html) {
+    var p = $('dc-lede');
+    if (p) p.innerHTML = html;
+  }
+  function mid(on) {
+    var row = $('dc-cta2-row');
+    if (row) row.hidden = !on;
+  }
   function message(html) {
     var m = $('dc-msg');
     m.innerHTML = html;
@@ -269,6 +289,8 @@ function clientMain(C) {
       curCur = e.cur;
       cov.innerHTML = coverageH(e, W, lang, linkOf(e.links));
       cov.hidden = false;
+      lede(answerH(e, project({ amount: C.def.amount, y: e.y, g: e.g === null ? 0 : e.g, gp: 0, years: C.def.years, drip: true, tax: 0, add: 0 }), C.def.amount, W, lang, symOf(e.cur)));
+      mid(true);
       message('');
       setCta(e, e.t);
       return true;
@@ -282,6 +304,8 @@ function clientMain(C) {
     $('dc-ys').innerHTML = '';
     $('dc-gs').innerHTML = '';
     cov.hidden = true;
+    lede(escH(W.answerNone));          // no company filled in: the paragraph names none
+    mid(false);                         // no result and no coverage between the two report buttons: one button, not two in a row
     $('dc-out').innerHTML = '';
     var name = e ? escH(e.n) : '';
     var link = e ? (e.nd ? linkOf(e.stock) : linkOf(e.links)) : null;
@@ -348,7 +372,7 @@ function clientMain(C) {
   if (qt) { $('dc-t').value = qt; curT = ''; run(); } else if (qs.get('a') || qs.get('y') || qs.get('d')) calc();
 }
 
-const SHARED = [project, fmtNum, escH, fillH, fillT, numH, pctH, moneyH, dayText, resultH, coverageH, clientMain];
+const SHARED = [project, fmtNum, escH, fillH, fillT, numH, pctH, moneyH, dayText, resultH, answerH, coverageH, clientMain];
 
 // ---- THE BLOCK ON EACH DIVIDEND PAGE (owner 2026-10-29: the calculator inside the company's own dividend page) ----
 // Only a company that passes the guard above gets it; it reads the same entry (entryOf) and the same formula (project) as
@@ -475,6 +499,7 @@ export const DIVCALC_CSS = `
 .dc-sum .v{font:800 19px/1.15 Inter,sans-serif;color:var(--teal-t);font-variant-numeric:tabular-nums}.dc-sum .l{font:500 12.5px/1.35 Inter,sans-serif;color:var(--muted);margin-top:4px}
 .dc-years summary{font:600 14px/1.3 Inter,sans-serif;color:var(--teal);cursor:pointer;margin:8px 0}
 #dc-cov{margin-top:30px}
+.ctarow[hidden]{display:none}
 .dce{margin:28px 0 8px}.dce .go a{font:600 14px/1 Inter,sans-serif;color:var(--teal);padding:8px 4px}
 @media (max-width:640px){.dc{grid-template-columns:repeat(2,minmax(0,1fr));padding:12px;gap:10px}.dc details>div{grid-template-columns:repeat(2,minmax(0,1fr))}.dc-sum .v{font-size:16px}.dc-head .v{font-size:26px}}
 `;
@@ -535,9 +560,7 @@ function renderPage(lang, ex, h, examples, byT) {
   } : {};
   const title = W.title;
   const description = plain(ex ? fillH(W.desc, vars) : W.descNone);
-  const answer = ex
-    ? `${fillH(W.answer, vars)} ${ex.g === null ? '' : fillH(ex.cov !== null ? W.answer2 : W.answer2NoCov, vars)}`.trim()
-    : escH(W.answerNone);
+  const answer = ex ? answerH(ex, rows, DEFAULTS.amount, W, lang, sym) : escH(W.answerNone);
   const linkOf = (map) => (map?.[lang] ? { href: map[lang], hreflang: '' } : map?.en ? { href: map.en, hreflang: 'en' } : null);
   const root = h.roots[lang];
   const crumbs = h.breadcrumbs([
@@ -562,7 +585,7 @@ function renderPage(lang, ex, h, examples, byT) {
 <div><label for="dc-add">${esc(W.fAdd)}</label><input id="dc-add" inputmode="decimal" value="0">${err('dc-add')}</div>
 </div></details>
 </form>`;
-  const ctaRow = (id, pos, big) => `<div class="ctarow"><a class="btn${big ? ' big' : ''}" id="${id}" data-cta="${pos}" href="${esc(cta)}">${esc(ex ? fill(W.cta, { name: ex.n }) : W.ctaGeneric)}</a><span class="sub">${esc(h.free[lang])}</span></div>`;
+  const ctaRow = (id, pos, big, hide = false) => `<div class="ctarow" id="${id}-row"${hide ? ' hidden' : ''}><a class="btn${big ? ' big' : ''}" id="${id}" data-cta="${pos}" href="${esc(cta)}">${esc(ex ? fill(W.cta, { name: ex.n }) : W.ctaGeneric)}</a><span class="sub">${esc(h.free[lang])}</span></div>`;
   const coverage = ex ? coverageH(ex, W, lang, linkOf(ex.links)) : '';
   const faq = [
     [W.q1, ex ? fillH(W.a1, vars) : escH(W.a1None)],
@@ -586,7 +609,7 @@ function renderPage(lang, ex, h, examples, byT) {
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, inLanguage: HTML_LANG[lang], ...(h.newest ? { dateModified: h.newest } : {}),
     publisher: { '@id': h.ORG['@id'] } };
   const faqLd = { '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) };
-  const client = { lang, w: W, ex: ex ? compact(ex) : null, cur: ex ? ex.cur : '', sym: symsOf(lang), app: APP, src: DIVCALC_SRC, data: DIVCALC_DATA };
+  const client = { lang, w: W, ex: ex ? compact(ex) : null, cur: ex ? ex.cur : '', sym: symsOf(lang), app: APP, src: DIVCALC_SRC, data: DIVCALC_DATA, def: DEFAULTS };
   const script = `<script>(function(){\n${SHARED.map((f) => f.toString()).join('\n')}\nclientMain(${JSON.stringify(client).replace(/</g, '\\u003c')});\n})();</script>`;
   const html = h.shell({
     title,
@@ -600,13 +623,13 @@ function renderPage(lang, ex, h, examples, byT) {
     body: `<div class="layout one"><article class="calc">
 ${crumbs.html}
 <h1>${esc(W.h1)}</h1>
-<p class="lede">${answer}</p>
+<p class="lede" id="dc-lede">${answer}</p>
 ${form}
 <p class="dc-msg" id="dc-msg" role="status" hidden></p>
 <section id="dc-out" aria-live="polite">${ex ? resultH(rows, W, lang, sym) : ''}</section>
 ${ctaRow('dc-cta1', 'calc-result', true)}
 <section id="dc-cov"${ex ? '' : ' hidden'}>${coverage}</section>
-${ctaRow('dc-cta2', 'calc-mid', false)}
+${ctaRow('dc-cta2', 'calc-mid', false, !ex)}
 <h2>${esc(W.mH)}</h2>
 <p>${esc(W.intro)}</p>
 <p>${esc(W.m1)}</p>

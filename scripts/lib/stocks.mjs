@@ -363,6 +363,16 @@ function num(value) {
   return Number.isFinite(n) ? n : null;
 }
 
+// Where a chart label sits: centred under its mark, but never past the chart's edges. A label is about 7 px a character at
+// 12 px (a Chinese character about 12.5); one that would run past an edge is anchored AT the edge instead ('Pessimistisch
+// · 30 % · -37 %' is about 180 px: centred under a mark 59 px from the left it lost its first letter).
+export function labelSpot(cx, text, W) {
+  const half = ([...String(text)].reduce((n, ch) => n + (ch.charCodeAt(0) > 0x2e80 ? 12.5 : 7), 0)) / 2;
+  if (cx - half < 2) return { x: 2, anchor: 'start' };
+  if (cx + half > W - 2) return { x: W - 2, anchor: 'end' };
+  return { x: cx, anchor: 'middle' };
+}
+
 // A chart draws the memo's own printed values (their heights are arithmetic on those values; every label is the
 // value as printed).
 function scenarioChart(chart, currency, ui = UI.en) {
@@ -385,21 +395,25 @@ function scenarioChart(chart, currency, ui = UI.en) {
   const W = 720;
   const x = (v) => 24 + ((W - 48) * (v - lo)) / (hi - lo);
   const y0 = 92;
+  const todayText = `${ui.today} ${ui.num(String(chart.today))}`;
+  const ts = labelSpot(x(today), todayText, W);
+  const todayLabel = `<text x="${ts.x.toFixed(0)}" y="160" text-anchor="${ts.anchor}" class="cd">${esc(todayText)}</text>`;
   const out = [
     `<svg viewBox="0 0 ${W} 190" role="img" aria-label="${esc(ui.scen(ui.date(cols[last])))}">`,
     `<text x="0" y="18" class="ct">${esc(ui.scen(ui.date(cols[last])))}${currency ? ` (${esc(currency)})` : ''}</text>`,
     `<line x1="${x(pts.Bear.v).toFixed(0)}" x2="${x(pts.Bull.v).toFixed(0)}" y1="${y0}" y2="${y0}" stroke="#CFD8DA" stroke-width="10" stroke-linecap="round"/>`,
     `<line x1="${x(today).toFixed(0)}" x2="${x(today).toFixed(0)}" y1="44" y2="140" stroke="#C2861A" stroke-width="2" stroke-dasharray="5 4"/>`,
-    `<text x="${x(today).toFixed(0)}" y="160" text-anchor="middle" class="cd">${esc(ui.today)} ${esc(ui.num(String(chart.today)))}</text>`,
+    todayLabel,
   ];
   for (const [name, color] of [['Bear', '#9AA3AD'], ['Base', '#0F5E63'], ['Bull', '#53A88F']]) {
     const p = pts[name];
     if (!p) continue;
     const cx = x(p.v).toFixed(0);
-    const tx = Math.min(W - 70, Math.max(70, x(p.v))).toFixed(0);     // a label never runs off the chart's edge
+    const caption = `${ui.cases[name]} · ${p.prob} · ${p.ret}`;
+    const at = labelSpot(x(p.v), caption, W);                          // a label never runs off the chart's edge
     out.push(`<circle cx="${cx}" cy="${y0}" r="11" fill="${color}" stroke="#fff" stroke-width="3"/>`);
     out.push(`<text x="${cx}" y="${y0 - 22}" text-anchor="middle" class="cv">${esc(p.label)}</text>`);
-    out.push(`<text x="${tx}" y="${y0 + 30}" text-anchor="middle" class="cl">${esc(ui.cases[name])} · ${esc(p.prob)} · ${esc(p.ret)}</text>`);
+    out.push(`<text x="${at.x.toFixed(0)}" y="${y0 + 30}" text-anchor="${at.anchor}" class="cl">${esc(caption)}</text>`);
   }
   out.push('</svg>');
   return `<div class="chart">${out.join('')}</div>`;
