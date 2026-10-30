@@ -3,23 +3,25 @@ title_tag: "Meilleurs outils IA d'analyse d'actions 2026, comparés"
 h1: "Meilleurs outils IA d'analyse d'actions en 2026 : le comparatif"
 meta_description: "MyStockButler et huit outils IA d'analyse d'actions comparés : qui écrit un rapport complet sur une action, quels marchés, les sources, le prix."
 path: /fr/alternatives/outils-ia-analyse-actions/
-updated: 2026-10-29
+updated: 2026-10-30
 lang: fr
 group: ai-research-tools
 example: NVDA
+cta_end_title: "Voyez à quoi ressemble un rapport complet"
+cta_end_text: "Entrez le symbole d'une société du S&P 500 et inscrivez-vous : votre premier rapport S&P 500 est gratuit, sans carte. Un compte gratuit lit aussi les rapports des 10 plus grandes sociétés du S&P 500."
 ---
 
 # Meilleurs outils IA d'analyse d'actions en 2026 : le comparatif
 
-*Par l'équipe MyStockButler · mis à jour le 29 octobre 2026*
+*Par l'équipe MyStockButler · mis à jour le 30 octobre 2026*
 
-**En bref (29 octobre 2026) :** MyStockButler écrit un rapport complet en huit chapitres sur une société, chaque chiffre relié à sa source, en quatre langues. Premier rapport gratuit ; ensuite 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau, ou 30 $ US ou 70 $ US par mois. InvestIQ, Ploutos AI et Reflexivity écrivent aussi des rapports.
+**En bref (30 octobre 2026) :** MyStockButler écrit un rapport complet en huit chapitres sur une société, chaque chiffre retracé jusqu'à sa source, en quatre langues. Votre premier rapport S&P 500 est gratuit ; ensuite 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau, ou 30 $ US ou 70 $ US par mois. InvestIQ, Ploutos AI et Reflexivity écrivent aussi des rapports.
 
 ## Les neuf outils en un coup d'œil
 
-| Outil | Ce que vous obtenez pour une action | Marchés | Chiffres reliés à leur source | Prix | Offre gratuite |
+| Outil | Ce que vous obtenez pour une action | Marchés | Chiffres retracés jusqu'à leur source | Prix | Offre gratuite |
 |---|---|---|---|---|---|
-| **MyStockButler** | **Un rapport écrit complet en huit chapitres, de l'activité à trois scénarios de cours** | **États-Unis, Canada, Royaume-Uni, Hong Kong, Allemagne et France : S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX et CAC 40 ; toute autre société cotée sur commande** | **Oui : chaque chiffre renvoie au document dont il vient** | **5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** | **Le premier rapport ; 5 crédits par mois** |
+| **MyStockButler** | **Un rapport écrit complet en huit chapitres, de l'activité à trois scénarios de cours** | **S&P 500, S&P/TSX 60, FTSE 100, Hang Seng et une partie du DAX et du CAC 40 ; un nouveau rapport sur commande pour une société cotée aux États-Unis, au Canada, à Londres ou à Hong Kong** | **Oui : chaque chiffre retracé jusqu'à sa source, chaque source listée** | **5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** | **Le premier rapport S&P 500 ; les 10 plus grandes sociétés du S&P 500 ; 5 crédits par mois** |
 | AlphaSense | Recherche IA dans les documents, notes de synthèse avec citations | Données financières sur plus de 18 000 sociétés cotées | Oui : des citations et des liens directs vers la source des chiffres | Non publié : abonnements annuels via son équipe commerciale | Un démarrage gratuit est proposé ; ses conditions ne sont pas indiquées sur son site |
 | Danelfin | Une note IA (AI Score) par action, des prévisions de cours, un filtre | Actions américaines et européennes, ETF américains | Non indiqué sur son site | Payé à l'année : Plus 22 $ US, Pro 59 $ US, Elite 134 $ US par mois | 0 $ : 10 rapports action/ETF par mois |
 | Fiscal.ai | Un terminal de recherche : états financiers, estimations, transcriptions, documents réglementaires, actualités | Données mondiales ; nombre de sociétés non indiqué sur son site | Oui : états financiers reliés à la source | Non publié sur sa page de prix | Essai gratuit de 7 jours |
@@ -33,17 +35,17 @@ Prix en dollars américains sauf mention en euros, tels qu'affichés sur chaque 
 
 ## Pourquoi MyStockButler
 
-- **Un rapport complet, pas un tableau de bord.** Notre [rapport sur Coca-Cola](/stocks/ko/) compte 22 451 mots en huit chapitres, avec 219 sources, et chaque chiffre renvoie au document dont il vient.
-- **Trois scénarios de cours.** Chaque rapport se termine par un scénario pessimiste, un central et un optimiste, et ce qui ferait passer la société de l'un à l'autre.
-- **Les questions d'un analyste.** Chaque chapitre vérifie si la direction a tenu ses promesses (ce qu'elle a annoncé face à ce qu'elle a livré), si les dirigeants achètent ou vendent leurs actions, et si le dividende est payé par la trésorerie.
-- **Des outils gratuits à côté des rapports.** Le [calculateur de dividendes](/fr/stocks/calculateur-dividendes/) montre les revenus de dividendes d'une société, réinvestis ou non.
-- **Six marchés, quatre langues.** La bibliothèque couvre les États-Unis, le Canada, le Royaume-Uni, Hong Kong, l'Allemagne et la France, et chaque rapport se lit en anglais, en français, en allemand ou en chinois.
+- **« Les faits sont éparpillés partout. »** Un long rapport par société, avec les documents officiels, les transcriptions de conférences, les biographies des dirigeants et les entrevues réunis à côté. Notre [rapport sur Coca-Cola](/stocks/ko/) compte 22 451 mots en huit chapitres, avec 219 sources listées et chaque chiffre retracé jusqu'à sa source.
+- **« La direction a-t-elle fait ce qu'elle avait dit ? »** Quand la direction donne des prévisions, nous les comparons aux résultats et notons le bilan sur 5. [First Solar](/stocks/fslr/earnings/) prévoyait pour 2025 un bénéfice de 17 à 20 $ US par action, a livré 14,21 $ US et obtient 1 sur 5.
+- **« Le PDG a vendu pour 17,5 millions de dollars d'actions. Faut-il s'inquiéter ? »** Les transactions des dirigeants viennent avec leur contexte. Le PDG de McDonald's a vendu dans le cadre d'un plan établi d'avance, ce que notre rapport ne lit pas comme un signal d'alarme à lui seul.
+- **« Les résultats sont sortis ce matin. Le rapport est-il dépassé ? »** Les 100 plus grandes sociétés du S&P 500 et les actions dont on parle le plus ce jour-là sont refaites en premier quand elles publient, en général en environ 5 heures.
+- **« Je ne connais pas cette société. »** Les rapports sont écrits pour vous, avec des termes expliqués au fil du texte, des tableaux faits pour le type de société (une banque ne se lit pas comme une mine) et tout rapport en anglais, en français, en allemand ou en chinois.
 
 ## MyStockButler ou un autre outil ?
 
 ### MyStockButler
 
-MyStockButler écrit un rapport complet sur une société en huit chapitres : l'activité, son marché, l'histoire et les choix de capital, la direction et l'actionnariat, les chiffres sur cinq ans, la valorisation, la suite, et trois scénarios de cours. Chaque chiffre renvoie au document dont il vient. Sa bibliothèque contient les rapports de six indices (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX et CAC 40), et vous pouvez commander un rapport sur toute autre société cotée. Le premier rapport est gratuit, chaque compte reçoit 5 crédits gratuits par mois, et un compte gratuit lit les rapports sur 10 sociétés du S&P 500. Un crédit coûte 1 $ US : un rapport déjà en bibliothèque coûte 5 crédits, un nouveau 20. Starter, à 30 $ US par mois, ouvre tous les rapports du S&P 500 avec 30 crédits par mois ; Pro, à 70 $ US, ouvre les six indices avec 80 crédits. Les rapports ne vous disent jamais d'acheter ou de vendre.
+MyStockButler écrit un rapport complet sur une société en huit chapitres : l'activité, son marché, l'histoire et les choix de capital, la direction et l'actionnariat, les chiffres sur cinq ans, la valorisation, la suite, et trois scénarios de cours. Chaque chiffre est retracé jusqu'à sa source et chaque source est listée. Des modèles d'IA écrivent les rapports, dans notre propre chaîne qui construit les tableaux et contrôle les chiffres : vérifiez donc ceux sur lesquels vous comptez. Les bibliothèques couvrent le S&P 500, le S&P/TSX 60, le FTSE 100 et le Hang Seng, et une partie du DAX et du CAC 40 pour l'instant. Vous pouvez commander un nouveau rapport sur une société cotée aux États-Unis, au Canada, à Londres ou à Hong Kong, prêt en environ 2 heures. Votre premier rapport S&P 500 est gratuit, et un compte gratuit lit les 10 plus grandes sociétés du S&P 500 et reçoit 5 crédits par mois. Sans abonnement, un crédit coûte 1 $ US : un rapport déjà en bibliothèque coûte 5 crédits, un nouveau 20. Starter, à 30 $ US par mois, ouvre tous les rapports du S&P 500 avec 30 crédits par mois ; Pro, à 70 $ US, ouvre les six bibliothèques et chaque nouvelle bourse à son ouverture, avec 80 crédits. Le [calculateur de dividendes](/fr/stocks/calculateur-dividendes/) montre les revenus de dividendes d'une société, réinvestis ou non. Les rapports ne vous disent jamais d'acheter ou de vendre.
 
 ### AlphaSense
 
@@ -67,7 +69,7 @@ Le Terminal de Fiscal.ai est une plateforme de recherche tout-en-un, avec des do
 
 InvestIQ se présente comme de la recherche sur les actions assistée par IA pour les investisseurs particuliers. Il lit les rapports, les conférences de résultats et les positions des fonds, puis écrit un rapport structuré sur la question posée, et chaque affirmation renvoie au document et à la page d'où elle vient. Il couvre toute action américaine. La formule gratuite donne 3 analyses d'actions et 1 recherche approfondie par mois ; Pro coûte 19 € par mois et Ultra 49 €, avec 2 mois offerts en paiement annuel.
 
-**Choisissez InvestIQ si** vous voulez des réponses à vos propres questions sur les actions américaines ; **MyStockButler si** vous suivez aussi des sociétés au Canada, au Royaume-Uni, à Hong Kong, en Allemagne ou en France.
+**Choisissez InvestIQ si** vous voulez des réponses à vos propres questions sur les actions américaines ; **MyStockButler si** vous suivez aussi des sociétés au Canada, au Royaume-Uni ou à Hong Kong, ou une partie du DAX et du CAC 40.
 
 ### Ploutos AI
 
@@ -79,7 +81,7 @@ Ploutos AI se décrit comme un moteur de recherche IA pour les actions cotées a
 
 Reflexivity permet de poser des questions financières complexes et d'obtenir des rapports de recherche complets en quelques minutes, et filtre plus de 40 000 titres dans le monde. Il dit que chaque analyse est traçable jusqu'aux données sources. Il est conçu pour les investisseurs institutionnels et ne publie aucun prix : vous demandez une démo ou contactez son équipe commerciale.
 
-**Choisissez Reflexivity si** vous investissez pour une institution et achetez via une équipe commerciale ; **MyStockButler si** vous voulez un prix affiché et votre premier rapport gratuit.
+**Choisissez Reflexivity si** vous investissez pour une institution et achetez via une équipe commerciale ; **MyStockButler si** vous voulez un prix affiché et votre premier rapport S&P 500 gratuit.
 
 ### StockInsights.ai
 
@@ -91,7 +93,7 @@ StockInsights.ai aide à explorer les rapports des sociétés cotées et les tra
 
 TIKR est un terminal de données : filtrer plus de 100 000 actions dans le monde, consulter jusqu'à 30 ans d'états financiers, lire les transcriptions et construire un modèle de valorisation. Ses données couvrent 92 pays et 136 Bourses, et il rassemble les documents de la SEC, de SEDAR et de plus de 15 autres sources. La formule gratuite couvre les actions américaines sans carte de crédit ; Plus coûte 24,95 $ US par mois, Pro 54,95 $ US et Ultimate 119,95 $ US, avec une garantie satisfait ou remboursé de 14 jours.
 
-**Choisissez TIKR si** vous voulez les données de plus de 100 000 actions pour construire votre propre modèle ; **MyStockButler si** vous voulez le rapport écrit pour vous, chaque chiffre relié au document dont il vient.
+**Choisissez TIKR si** vous voulez les données de plus de 100 000 actions pour construire votre propre modèle ; **MyStockButler si** vous voulez le rapport écrit pour vous, chaque chiffre retracé jusqu'à sa source.
 
 ## Notre méthode
 
@@ -104,7 +106,7 @@ TIKR est un terminal de données : filtrer plus de 100 000 actions dans le monde
 
 Toutes lues le 29 octobre 2026.
 
-- MyStockButler : [À propos de MyStockButler](/fr/a-propos/), [le rapport sur Coca-Cola](/stocks/ko/)
+- MyStockButler : [À propos de MyStockButler](/fr/a-propos/), [le rapport sur Coca-Cola](/stocks/ko/), [la page de résultats de First Solar](/stocks/fslr/earnings/)
 - AlphaSense : [alpha-sense.com](https://www.alpha-sense.com/), [plateforme](https://www.alpha-sense.com/platform/), [données financières](https://www.alpha-sense.com/platform/financial-data/), [prix](https://www.alpha-sense.com/pricing/)
 - Danelfin : [prix](https://danelfin.com/pricing), [AI Score](https://blog.danelfin.com/danelfin-mobile-app-available)
 - Fiscal.ai : [prix](https://fiscal.ai/pricing/), [Terminal](https://fiscal.ai/products/terminal/)
@@ -118,15 +120,15 @@ Toutes lues le 29 octobre 2026.
 
 ### Quels outils IA écrivent un rapport complet sur une action ?
 
-MyStockButler écrit un rapport complet en huit chapitres sur une société, chaque chiffre relié à sa source, pour des sociétés aux États-Unis, au Canada, au Royaume-Uni, à Hong Kong, en Allemagne et en France. InvestIQ et Ploutos AI écrivent des rapports sur les actions américaines, et Reflexivity des rapports de recherche pour les investisseurs institutionnels. TIKR, Fiscal.ai, Danelfin, StockInsights.ai et AlphaSense donnent plutôt des données, des notes, des résumés ou une recherche documentaire.
+MyStockButler écrit un rapport complet en huit chapitres sur une société, chaque chiffre retracé jusqu'à sa source, pour des sociétés du S&P 500, du S&P/TSX 60, du FTSE 100 et du Hang Seng, et une partie du DAX et du CAC 40. InvestIQ et Ploutos AI écrivent des rapports sur les actions américaines, et Reflexivity des rapports de recherche pour les investisseurs institutionnels. TIKR, Fiscal.ai, Danelfin, StockInsights.ai et AlphaSense donnent plutôt des données, des notes, des résumés ou une recherche documentaire.
 
-### Lesquels relient leurs chiffres à la source ?
+### Lesquels retracent leurs chiffres jusqu'à la source ?
 
-MyStockButler, InvestIQ, Fiscal.ai et AlphaSense disent que leurs chiffres ou affirmations renvoient à leur source, Reflexivity dit que chaque analyse est traçable jusqu'aux données sources, et StockInsights.ai relie les réponses de son chat à leurs sources. Ploutos AI dit que ses chiffres viennent des documents déposés à la SEC, TIKR donne accès aux documents, et le site de Danelfin ne le dit pas.
+MyStockButler retrace chaque chiffre jusqu'à sa source et liste chaque source dans le rapport. InvestIQ, Fiscal.ai et AlphaSense disent que leurs chiffres ou affirmations renvoient à leur source, Reflexivity dit que chaque analyse est traçable jusqu'aux données sources, et StockInsights.ai relie les réponses de son chat à leurs sources. Ploutos AI dit que ses chiffres viennent des documents déposés à la SEC, TIKR donne accès aux documents, et le site de Danelfin ne le dit pas.
 
 ### Existe-t-il un outil IA gratuit pour analyser une action ?
 
-Oui. MyStockButler offre le premier rapport et 5 crédits gratuits par mois ; Danelfin, StockInsights.ai, TIKR, InvestIQ et Ploutos AI ont une formule gratuite, et Fiscal.ai un essai gratuit de 7 jours.
+Oui. Avec MyStockButler, votre premier rapport S&P 500 est gratuit, et un compte gratuit lit les 10 plus grandes sociétés du S&P 500 et reçoit 5 crédits par mois ; Danelfin, StockInsights.ai, TIKR, InvestIQ et Ploutos AI ont une formule gratuite, et Fiscal.ai un essai gratuit de 7 jours.
 
 ### Quels outils couvrent les actions canadiennes ?
 
@@ -136,4 +138,4 @@ La bibliothèque de MyStockButler comprend le S&P/TSX 60, TIKR rassemble les doc
 
 Non. Nos rapports présentent des faits, des chiffres et des scénarios avec leurs sources. Ils ne vous disent jamais d'acheter ou de vendre.
 
-*Mis à jour le 29 octobre 2026.*
+*Mis à jour le 30 octobre 2026.*

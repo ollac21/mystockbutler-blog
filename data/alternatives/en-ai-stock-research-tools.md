@@ -3,23 +3,25 @@ title_tag: "Best AI Stock Research Tools 2026, Compared"
 h1: "Best AI stock research tools 2026, compared"
 meta_description: "MyStockButler and eight AI stock research tools compared: who writes a full report on one stock, which markets, sources, price and free tier."
 path: /alternatives/ai-stock-research-tools/
-updated: 2026-10-29
+updated: 2026-10-30
 lang: en
 group: ai-research-tools
 example: NVDA
+cta_end_title: "See what a full report looks like"
+cta_end_text: "Type the ticker of an S&P 500 company you are looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Best AI stock research tools 2026, compared
 
-*By the MyStockButler team · updated 29 October 2026*
+*By the MyStockButler team · updated 30 October 2026*
 
-**Short answer (29 October 2026):** MyStockButler writes a full eight-chapter report on one company, every number linked to its source, in four languages. First report free; then $5 a library report, $20 a new one, or $30 or $70 a month. InvestIQ, Ploutos AI and Reflexivity also write reports.
+**Short answer (30 October 2026):** MyStockButler writes an eight-chapter report per company, every number traced to its source, in four languages. Your first S&P 500 report is free; then $5 a library report, $20 a new one, or $30 or $70 monthly. InvestIQ, Ploutos AI and Reflexivity also write reports.
 
 ## The nine tools at a glance
 
-| Tool | What you get for one stock | Markets | Numbers linked to their source | Price | Free tier |
+| Tool | What you get for one stock | Markets | Numbers traced to their source | Price | Free tier |
 |---|---|---|---|---|---|
-| **MyStockButler** | **A full written report in eight chapters, from the business to three price scenarios** | **US, Canada, UK, Hong Kong, Germany and France: S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40; any other listed company on order** | **Yes: every number links to the document it comes from** | **$5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** | **The first report; 5 credits a month** |
+| **MyStockButler** | **A full written report in eight chapters, from the business to three price scenarios** | **S&P 500, S&P/TSX 60, FTSE 100, Hang Seng and part of the DAX and CAC 40; order a new report on a company listed in the US, Canada, London or Hong Kong** | **Yes: every number traced to its source, every source listed** | **$5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** | **The first S&P 500 report; the 10 largest S&P 500 companies; 5 credits a month** |
 | AlphaSense | AI search across documents, research briefings with citations | Financial data on 18,000+ public companies | Yes: citations, and "direct source links" for numbers | Not published: annual subscriptions through its sales team | A free start is offered; its terms are not stated on its site |
 | Danelfin | An AI Score per stock, price forecasts, a screener | US and European stocks, US ETFs | Not stated on its site | Billed yearly: Plus $22, Pro $59, Elite $134 a month | $0: 10 stock/ETF reports a month |
 | Fiscal.ai | A research terminal: financials, estimates, transcripts, filings, news | Global data; counts not stated on its site | Yes: "financials linked to source" | Not published on its pricing page | 7-day free trial |
@@ -33,17 +35,17 @@ Prices in US dollars unless marked in euros, as shown on each site on 29 October
 
 ## Why MyStockButler
 
-- **A full report, not a dashboard.** Our [Coca-Cola report](/stocks/ko/) runs 22,451 words in eight chapters, with 219 sources, and every number links to the document it comes from.
-- **Three price scenarios.** Every report ends with a bear, a base and a bull case, and what would move the company from one to another.
-- **The checks an analyst runs.** Every chapter asks whether management kept its promises (what it announced against what it delivered), whether insiders are buying or selling, and whether the dividend is paid from cash.
-- **Free tools beside the reports.** The [dividend calculator](/stocks/dividend-calculator/) shows a company's dividend income, reinvested or not.
-- **Six markets, four languages.** The library covers the US, Canada, the UK, Hong Kong, Germany and France, and every report reads in English, French, German or Chinese.
+- **"The facts are all over the place."** One long report per company, with the filings, call transcripts, management bios and interviews in a research hub beside it. Our [Coca-Cola report](/stocks/ko/) runs 22,451 words in eight chapters, with 219 sources listed and every number traced to its source.
+- **"Did management do what it said?"** Where management gives forecasts, we check them against results and score the record out of 5. [First Solar](/stocks/fslr/earnings/) forecast 2025 earnings of $17 to $20 a share, delivered $14.21 and scores 1 of 5.
+- **"The CEO sold $17.5 million of stock. Should I worry?"** Insider trades come with their context. McDonald's CEO sold under a pre-arranged plan, which our report reads as "not a stand-alone warning".
+- **"Results came out this morning. Is this out of date?"** The 100 largest S&P 500 companies and the day's most talked-about stocks are redone first when they report, usually within about 5 hours.
+- **"I've never heard of this company."** The reports are written for you, with terms explained as they come up, tables built for the type of company (a bank is not read like a miner), and any report in English, French, German or Chinese.
 
 ## MyStockButler or another tool?
 
 ### MyStockButler
 
-MyStockButler writes a full report on one company in eight chapters: the business, its market, history and capital decisions, management and ownership, the numbers over five years, valuation, what comes next, and three price scenarios. Every number links to the document it comes from. The library holds the reports on six indexes (S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40), and you can order a report on any other listed company. The first report is free, every account gets 5 free credits a month, and a free account reads the reports on 10 S&P 500 companies. A credit costs $1: a report already in the library costs 5 credits, a new one 20. Starter, at $30 a month, opens every S&P 500 report with 30 credits a month; Pro, at $70, opens the six indexes with 80 credits. The reports never tell you to buy or sell.
+MyStockButler writes a full report on one company in eight chapters: the business, its market, history and capital decisions, management and ownership, the numbers over five years, valuation, what comes next, and three price scenarios. Every number is traced to its source and every source is listed. AI models write the reports, inside our own pipeline that builds the tables and checks the numbers, so check the numbers you rely on. The libraries cover the S&P 500, S&P/TSX 60, FTSE 100 and Hang Seng, and part of the DAX and CAC 40 so far. You can order a new report on a company listed in the US, Canada, London or Hong Kong, ready in about 2 hours. Your first S&P 500 report is free, and a free account reads the 10 largest S&P 500 companies and gets 5 credits a month. Without a plan a credit costs $1: a report already in the library costs 5 credits, a new one 20. Starter, at $30 a month, opens every S&P 500 report with 30 credits a month; Pro, at $70, opens all six libraries and each new exchange as it opens, with 80 credits. The [dividend calculator](/stocks/dividend-calculator/) shows a company's dividend income, reinvested or not. The reports never tell you to buy or sell.
 
 ### AlphaSense
 
@@ -67,7 +69,7 @@ Fiscal.ai's Terminal is an "all-in-one research platform" with "global data acro
 
 InvestIQ calls itself "AI-powered equity research for individual investors". It "reads the filings, earnings calls and fund holdings, then writes a structured report on the question you asked", and "every claim links back to the document and page it came from". It covers any US stock. The free plan gives 3 stock analyses and 1 deep research a month; Pro costs €19 a month and Ultra €49, with 2 months free when paid yearly.
 
-**Pick InvestIQ if** you want answers to your own questions on US stocks; **MyStockButler if** you also follow companies in Canada, the UK, Hong Kong, Germany or France.
+**Pick InvestIQ if** you want answers to your own questions on US stocks; **MyStockButler if** you also follow companies in Canada, the UK or Hong Kong, or part of the DAX and CAC 40.
 
 ### Ploutos AI
 
@@ -79,7 +81,7 @@ Ploutos AI is "an Agentic AI Research Engine for US-listed stocks": you enter a 
 
 Reflexivity lets you "ask complex financial questions and get comprehensive research reports in minutes", and screens "40,000+ global securities". It says "every insight" is "traceable to source data". It is "designed for institutional investors" and publishes no prices: you request a demo or contact its sales team.
 
-**Pick Reflexivity if** you invest for an institution and buy through a sales team; **MyStockButler if** you want a published price and your first report free.
+**Pick Reflexivity if** you invest for an institution and buy through a sales team; **MyStockButler if** you want a published price and your first S&P 500 report free.
 
 ### StockInsights.ai
 
@@ -91,7 +93,7 @@ StockInsights.ai helps you "deep dive into public company filings and earnings t
 
 TIKR is a data terminal: "screen 100,000+ global stocks, pull up to 30 years of financials, read the transcript, and build your valuation model". Its data covers "92 countries and 136 exchanges", and it compiles filings "from the SEC, SEDAR, and 15+ other sources". The free plan covers U.S. stocks with no credit card; Plus costs $24.95 a month, Pro $54.95 and Ultimate $119.95, with a 14-day money-back guarantee.
 
-**Pick TIKR if** you want the data on 100,000+ stocks to build your own model; **MyStockButler if** you want the report written for you, every number linked to its source document.
+**Pick TIKR if** you want the data on 100,000+ stocks to build your own model; **MyStockButler if** you want the report written for you, every number traced to its source.
 
 ## How we compared
 
@@ -104,7 +106,7 @@ TIKR is a data terminal: "screen 100,000+ global stocks, pull up to 30 years of 
 
 All read on 29 October 2026.
 
-- MyStockButler: [About MyStockButler](/about/), [the Coca-Cola report](/stocks/ko/)
+- MyStockButler: [About MyStockButler](/about/), [the Coca-Cola report](/stocks/ko/), [First Solar's results page](/stocks/fslr/earnings/)
 - AlphaSense: [alpha-sense.com](https://www.alpha-sense.com/), [platform](https://www.alpha-sense.com/platform/), [financial data](https://www.alpha-sense.com/platform/financial-data/), [pricing](https://www.alpha-sense.com/pricing/)
 - Danelfin: [pricing](https://danelfin.com/pricing), [AI Score](https://blog.danelfin.com/danelfin-mobile-app-available)
 - Fiscal.ai: [pricing](https://fiscal.ai/pricing/), [Terminal](https://fiscal.ai/products/terminal/)
@@ -118,15 +120,15 @@ All read on 29 October 2026.
 
 ### Which AI tools write a full research report on one stock?
 
-MyStockButler writes a full report on one company in eight chapters, every number linked to its source document, on companies in the US, Canada, the UK, Hong Kong, Germany and France. InvestIQ and Ploutos AI write reports on US stocks, and Reflexivity writes research reports for institutional investors. TIKR, Fiscal.ai, Danelfin, StockInsights.ai and AlphaSense give data, scores, summaries or search instead.
+MyStockButler writes a full report on one company in eight chapters, every number traced to its source, on companies in the S&P 500, S&P/TSX 60, FTSE 100 and Hang Seng, and part of the DAX and CAC 40. InvestIQ and Ploutos AI write reports on US stocks, and Reflexivity writes research reports for institutional investors. TIKR, Fiscal.ai, Danelfin, StockInsights.ai and AlphaSense give data, scores, summaries or search instead.
 
-### Which of these tools link their numbers to the source?
+### Which of these tools trace their numbers to the source?
 
-MyStockButler, InvestIQ, Fiscal.ai and AlphaSense say their numbers or claims link to their source, Reflexivity says every insight is traceable to source data, and StockInsights.ai links its chat answers to their sources. Ploutos AI says its numbers come from SEC filings, TIKR gives access to filings, and Danelfin's site does not say.
+MyStockButler traces every number to its source and lists every source in the report. InvestIQ, Fiscal.ai and AlphaSense say their numbers or claims link to their source, Reflexivity says every insight is traceable to source data, and StockInsights.ai links its chat answers to their sources. Ploutos AI says its numbers come from SEC filings, TIKR gives access to filings, and Danelfin's site does not say.
 
 ### Is there a free AI tool for stock research?
 
-Yes. MyStockButler gives its first report free and 5 free credits a month; Danelfin, StockInsights.ai, TIKR, InvestIQ and Ploutos AI have a free plan, and Fiscal.ai a 7-day free trial.
+Yes. With MyStockButler your first S&P 500 report is free, and a free account reads the 10 largest S&P 500 companies and gets 5 credits a month; Danelfin, StockInsights.ai, TIKR, InvestIQ and Ploutos AI have a free plan, and Fiscal.ai a 7-day free trial.
 
 ### Which tools cover Canadian stocks?
 
@@ -136,4 +138,4 @@ MyStockButler's library includes the S&P/TSX 60, TIKR compiles SEDAR filings and
 
 No. Our reports present facts, numbers and scenarios with their sources. They never tell you to buy or sell.
 
-*Updated on 29 October 2026.*
+*Updated on 30 October 2026.*
