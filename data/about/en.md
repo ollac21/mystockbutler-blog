@@ -1,17 +1,17 @@
 ---
 title_tag: "About MyStockButler: Source-Checked Research on One Company"
 h1: "About MyStockButler"
-meta_description: "MyStockButler writes long, source-checked research reports on single public companies: eight chapters, every number linked to its source. Not investment advice."
+meta_description: "MyStockButler writes long, source-checked research reports on single public companies: eight chapters, every number traced to its source. Not investment advice."
 path: /about/
-updated: 2026-10-29
+updated: 2026-10-30
 lang: en
-org_description: "MyStockButler writes long, source-checked research reports on single public companies: eight chapters per company, from the business to three price scenarios (bear, base and bull), with every number linked to the document it comes from. Its library covers the S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40."
+org_description: "MyStockButler writes long, source-checked research reports on single public companies: eight chapters per company, from the business to three price scenarios (bear, base and bull), with every number traced to its source. Its library covers the S&P 500, S&P/TSX 60, FTSE 100 and Hang Seng, and part of the DAX and CAC 40 so far."
 org_disambiguation: "MyStockButler (mystockbutler.com) is a research-report service: a written report on one public company at a time, read in the app at app.mystockbutler.com. It is not a price-alert or trading-signal service, and its reports are not investment advice: they never tell you to buy or sell."
 ---
 
 # About MyStockButler
 
-MyStockButler writes long, source-checked research reports on single public companies: eight chapters per company, from the business to three price scenarios, with every number linked to the document it comes from. The reports are AI-generated research for informational purposes only, not investment advice.
+MyStockButler writes long, source-checked research reports on single public companies: eight chapters per company, from the business to three price scenarios, with every number traced to its source. The reports are AI-generated research for informational purposes only, not investment advice.
 
 ## What a report contains
 
@@ -26,24 +26,24 @@ A report follows the order an analyst works in: the company first, the price las
 7. **What comes next.** What management has announced for the coming years, and whether the company can pay for it.
 8. **Where the share price could go.** Three scenarios, bear, base and bull, and what would move the company from one to another.
 
-Three questions come back in every chapter: does management keep its promises (what it announced against what it delivered), are insiders buying or selling, and is the dividend paid from cash.
+Three questions run through the report: does management keep its promises (where it gives forecasts, what it announced against what it delivered), are insiders buying or selling, and is the dividend paid from cash.
 
 ## How the numbers are checked
 
-The numbers come from the documents the company publishes: annual reports, quarterly results, and filings with the SEC or other regulators. Every number in a report is linked to the document it comes from, so you can check it. The reports in the library are kept up to date as companies report.
+The numbers come from the documents the company publishes: annual reports, quarterly results, and filings with the SEC or other regulators. Every number in a report is traced to its source and every source is listed, so you can check it. The reports in the library are redone as companies report: the 100 largest S&P 500 companies and the day's most talked-about stocks first, usually within about 5 hours.
 
 ## Which companies
 
-The library holds full reports on the companies of six indexes: the S&P 500, the S&P/TSX 60, the FTSE 100, the Hang Seng, the DAX and the CAC 40. You can order a report on any other listed company. Every report can also be read in French, German or Chinese; the numbers stay those of the company's documents.
+The library holds full reports on companies in the S&P 500, the S&P/TSX 60, the FTSE 100 and the Hang Seng, and part of the DAX and CAC 40 so far. You can order a new report on a company listed in the US, Canada, London or Hong Kong, ready in about 2 hours. Every report can also be read in French, German or Chinese; the numbers stay those of the company's documents.
 
 ## What it costs
 
-Prices in US dollars, as on our comparison pages of 26 October 2026.
+Prices in US dollars.
 
-- Your first report is free, without a credit card, and every account gets 5 free credits a month. A free account also reads the reports on 10 S&P 500 companies.
-- A credit costs $1: a report already in the library costs 5 credits, a new report 20 credits. Credits you buy do not expire.
+- Your first S&P 500 report is free, without a credit card, and a free account gets 5 credits a month. A free account also reads the 10 largest S&P 500 companies.
+- Without a plan a credit costs $1: a report already in the library costs 5 credits, a new report 20 credits. Credits you buy do not expire.
 - **Starter**, $30 a month: every S&P 500 report, plus 30 credits a month.
-- **Pro**, $70 a month: the reports on all six indexes, plus 80 credits a month.
+- **Pro**, $70 a month: all six libraries, each new exchange as it opens, plus 80 credits a month.
 
 ## What MyStockButler is not
 
@@ -51,7 +51,7 @@ MyStockButler is a written report on one company at a time, not a price-alert or
 
 ## See real reports
 
-- [Coca-Cola](/stocks/ko/) and [NVIDIA](/stocks/nvda/): stock pages with part of each company's report, every figure linked to its filing.
+- [Coca-Cola](/stocks/ko/) and [NVIDIA](/stocks/nvda/): stock pages with part of each company's report, every figure traced to its source.
 - [All stocks](/stocks/): every company with a report, by index.
 - [Research articles](/): the summaries of full reports, on this blog.
 - [Dividend calculator](/stocks/dividend-calculator/): type a ticker, see its dividend income, reinvested or not.
@@ -65,14 +65,14 @@ No. Our reports present facts, numbers and scenarios with their sources. They ne
 
 ### Where do the numbers come from?
 
-From the documents the company publishes: annual reports, quarterly results and filings with the SEC or other regulators. Every number in a report is linked to its source, so you can check it.
+From the documents the company publishes: annual reports, quarterly results and filings with the SEC or other regulators. Every number in a report is traced to its source, so you can check it.
 
 ### Which stocks have a report?
 
-The companies of the S&P 500, S&P/TSX 60, FTSE 100, Hang Seng, DAX and CAC 40 already have a report in our library. You can order a report on any other listed company.
+Companies in the S&P 500, S&P/TSX 60, FTSE 100 and Hang Seng, and part of the DAX and CAC 40 so far, already have a report in our library. You can order a new report on a company listed in the US, Canada, London or Hong Kong, ready in about 2 hours.
 
 ### How much does a report cost?
 
-The first report is free. After that, a library report costs 5 credits and a new report 20 credits, at $1 a credit. Starter, at $30 a month, opens every S&P 500 report; Pro, at $70 a month, opens all six indexes.
+Your first S&P 500 report is free. After that, a library report costs 5 credits and a new report 20 credits, at $1 a credit without a plan. Starter, at $30 a month, opens every S&P 500 report; Pro, at $70 a month, opens all six libraries.
 
-*Updated on 29 October 2026.*
+*Updated on 30 October 2026.*
