@@ -7,14 +7,29 @@ updated: 2026-10-30
 lang: en
 example: KO
 cta_end_title: "Get an analyst's reading of one company"
-cta_end_text: "Type the ticker of an S&P 500 company you are looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Bloomberg Terminal alternatives for individual investors
 
-If you buy a few companies a year, what you lack is not a Terminal. It is the reading: what the company sells, how much cash it really produces, and whether management did what it said. The Terminal is built for professionals who trade all day, with live prices on every market, news, chat and data on bonds and derivatives. Bloomberg does not publish its price; third-party estimates for 2025 and 2026 range from about $27,000 to $32,000 a year per seat.
+If you buy a few companies a year, you don't need a Terminal. You need the reading: what the company sells, how much cash it really produces, and whether management did what it said. The Terminal is built for professionals who trade all day, with live prices on every market, news, chat and data on bonds and derivatives. Bloomberg does not publish its price; third-party estimates for 2025 and 2026 range from about $27,000 to $32,000 a year per seat.
 
 Free tools such as Stock Analysis and Yahoo Finance give you the numbers. MyStockButler does the reading: one long report per company, written from its filings, every number traced to its source. Your first S&P 500 report is free: type a ticker below and sign up, no card.
+
+## Compared by price and by what you get for one stock
+
+Prices as shown on each product's own pricing page on 26 October 2026, in US dollars.
+
+| Tool | Pick it if you want | What you get for one stock | Price |
+|---|---|---|---|
+| **MyStockButler** (our product) | **To understand one company in depth before buying** | **A full report in eight chapters, from the business to price scenarios, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
+| Bloomberg Terminal | To trade or manage money all day, professionally | Everything: live data, filings, estimates, news, chat | No public price; estimated at $27,000 to $32,000 a year per seat |
+| Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
+| Yahoo Finance | Quotes and news | Quote, financial statements, news; paid plans add more history, research reports and a fair value | Free; paid plans $7.95 to $39.95 a month, billed yearly |
+| Simply Wall St | To screen many stocks visually | A visual score ("Snowflake"), valuation, risks | Free for 5 company reports a month; Premium $10.95 a month, billed yearly |
+| Morningstar Investor | Analyst ratings on large companies and funds | Analyst report and fair value on the stocks it covers | $34.95 a month or $249 a year; 7-day free trial |
+| Seeking Alpha Premium | To read many opinions on many stocks | Articles by contributors, quant ratings, AI summaries | $4.95 the first month, then $299 a year |
+| Perplexity Finance | Quick questions with links | AI answers with sources, quote, earnings | Finance pages free; Pro $17 a month, billed yearly |
 
 ## What you give up without a Terminal
 
@@ -38,11 +53,11 @@ You get the guidance in force, with its range, its period and the date it was gi
 
 ### "Did management do what it said?"
 
-Where management gives forecasts, we check them against results and score the record out of 5. [First Solar](/stocks/fslr/earnings/) forecast 2025 earnings of $17 to $20 a share and delivered $14.21. Its score is 1 of 5.
+Where management gives forecasts, we check them against results and score the record out of 5. [First Solar's](/stocks/fslr/earnings/) original 2025 forecast was earnings of $17 to $20 a share. It delivered $14.21, and scores 1 of 5.
 
 ### "The CEO sold $17.5 million of stock. Should I worry?"
 
-You get the trade and what it means, in plain words. McDonald's CEO sold 52,553 shares for about $17.5 million in February, under a pre-arranged trading plan. Our report reads it as planned personal selling, "not a stand-alone warning".
+You get the trade and what it means, in plain words. McDonald's CEO sold 52,553 shares for about $17.5 million gross in February, under a pre-arranged trading plan. Our report reads it as planned personal selling, "not a stand-alone warning".
 
 ### "Results came out this morning. Is this already out of date?"
 
@@ -60,21 +75,6 @@ Every report ends with bear, base and bull share prices, each with its odds and 
 
 Every number is traced to its source and every source is listed. AI models write the report, inside our own pipeline that builds the tables and checks the numbers, and a final check corrects or deletes statements it finds untrue. AI can still get a number wrong, so check the ones you rely on.
 
-## Compared by price and by what you get for one stock
-
-Prices as shown on each product's own pricing page on 26 October 2026, in US dollars.
-
-| Tool | Pick it if you want | What you get for one stock | Price |
-|---|---|---|---|
-| **MyStockButler** (our product) | **To understand one company in depth before buying** | **A full report in eight chapters, from the business to price scenarios, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
-| Bloomberg Terminal | To trade or manage money all day, professionally | Everything: live data, filings, estimates, news, chat | No public price; estimated at $27,000 to $32,000 a year per seat |
-| Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
-| Yahoo Finance | Quotes and news | Quote, financial statements, news; paid plans add more history, research reports and a fair value | Free; paid plans $7.95 to $39.95 a month, billed yearly |
-| Simply Wall St | To screen many stocks visually | A visual score ("Snowflake"), valuation, risks | Free for 5 company reports a month; Premium $10.95 a month, billed yearly |
-| Morningstar Investor | Analyst ratings on large companies and funds | Analyst report and fair value on the stocks it covers | $34.95 a month or $249 a year; 7-day free trial |
-| Seeking Alpha Premium | To read many opinions on many stocks | Articles by contributors, quant ratings, AI summaries | $4.95 the first month, then $299 a year |
-| Perplexity Finance | Quick questions with links | AI answers with sources, quote, earnings | Finance pages free; Pro $17 a month, billed yearly |
-
 ## What MyStockButler costs
 
 | If you want | Your route | Cost |
@@ -90,7 +90,7 @@ Prices as shown on each product's own pricing page on 26 October 2026, in US dol
 
 - **Keep a Terminal if** your job depends on live prices, instant news or the chat network.
 - **Use Stock Analysis or Yahoo Finance if** you want the raw numbers for free and will do the reading yourself.
-- **Pick MyStockButler if** you are about to buy a company and want the reading done: the whole case in one place, explained even if you have never heard of the company.
+- **Pick MyStockButler if** you're about to buy a company and want the reading done: the whole case in one place, explained even if you've never heard of the company.
 
 ## How we compared
 

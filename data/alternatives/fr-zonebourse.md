@@ -16,6 +16,19 @@ Zonebourse vaut son prix pour un investisseur actif qui suit des dizaines de val
 
 C'est le travail de MyStockButler : un long rapport par société, écrit à partir de ses documents officiels, chaque chiffre retracé jusqu'à sa source, à lire en français. Votre premier rapport S&P 500 est gratuit : entrez un symbole ci-dessous et inscrivez-vous, sans carte.
 
+## Cinq alternatives, comparées
+
+Prix des autres outils relevés sur la page de chaque produit le 26 octobre 2026.
+
+| Outil | Choisissez-le si vous voulez | Ce que vous obtenez pour une action | Prix |
+|---|---|---|---|
+| **MyStockButler** (notre produit) | **Comprendre une entreprise en profondeur avant d'acheter** | **Un rapport complet en huit chapitres, en français, chaque chiffre retracé jusqu'à sa source** | **Premier rapport S&P 500 gratuit ; 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** |
+| Zonebourse | Suivre des dizaines de valeurs | Cours, consensus, recommandations, tableaux financiers | Access dès 24 € par mois (payé à l'année) |
+| Boursorama | Les cours et l'actualité | Cours, actualités, forum | Gratuit |
+| ABC Bourse | Un suivi au quotidien | Cours, analyses, outils de bourse | 19,90 € par mois payé à l'année, 29 € au mois |
+| Simply Wall St (en français) | Comparer beaucoup d'actions d'un coup d'œil | Un score visuel, une valorisation, les risques | Gratuit pour 5 rapports par mois ; Premium 10,95 $ US par mois, payé à l'année |
+| Stock Analysis | Les chiffres, gratuitement (en anglais) | États financiers, ratios, prévisions | Gratuit ; Pro 9,99 $ US par mois |
+
 ## Ce que Zonebourse coûte et ce qu'il donne
 
 Prix relevés sur la page d'abonnement de Zonebourse le 26 octobre 2026.
@@ -40,11 +53,11 @@ Notre [rapport sur le dividende d'Air Liquide](/fr/stocks/ai-pa/dividende/) rép
 
 ### « La direction a-t-elle fait ce qu'elle avait dit ? »
 
-Quand la direction donne des prévisions, nous les comparons aux résultats et notons le bilan sur 5. [First Solar](/stocks/fslr/earnings/) (page en anglais) prévoyait pour 2025 un bénéfice de 17 à 20 $ US par action et a livré 14,21 $ US. Sa note : 1 sur 5.
+Quand la direction donne des prévisions, nous les comparons aux résultats et notons le bilan sur 5. La prévision initiale de [First Solar](/stocks/fslr/earnings/) (page en anglais) pour 2025 était un bénéfice de 17 à 20 $ US par action. Elle a livré 14,21 $ US. Sa note : 1 sur 5.
 
 ### « Le PDG a vendu pour 17,5 millions de dollars d'actions. Faut-il s'inquiéter ? »
 
-Vous avez la transaction et ce qu'elle veut dire, en mots simples. Le PDG de McDonald's a vendu 52 553 actions pour environ 17,5 millions de dollars en février, dans le cadre d'un plan de négociation établi d'avance. Notre rapport y voit une vente personnelle planifiée, pas un signal d'alarme à lui seul.
+Vous avez la transaction et ce qu'elle veut dire, en mots simples. Le PDG de McDonald's a vendu 52 553 actions pour environ 17,5 millions de dollars bruts en février, dans le cadre d'un plan de négociation établi d'avance. Notre rapport y voit une vente personnelle planifiée, pas un signal d'alarme à lui seul.
 
 ### « Je ne connais pas cette société. »
 
@@ -65,19 +78,6 @@ Tout rapport se lit en français, en allemand ou en chinois (Hong Kong), en un c
 ## Comment savoir si les chiffres sont justes ?
 
 Chaque chiffre est retracé jusqu'à sa source et chaque source est listée : 181 pour le rapport sur Air Liquide. Des modèles d'IA écrivent le rapport, dans notre propre chaîne qui construit les tableaux et contrôle les chiffres, et un dernier contrôle corrige ou supprime les affirmations jugées fausses. Une IA peut quand même se tromper sur un chiffre : vérifiez ceux sur lesquels vous comptez.
-
-## Cinq alternatives, comparées
-
-Prix des autres outils relevés sur la page de chaque produit le 26 octobre 2026.
-
-| Outil | Choisissez-le si vous voulez | Ce que vous obtenez pour une action | Prix |
-|---|---|---|---|
-| **MyStockButler** (notre produit) | **Comprendre une entreprise en profondeur avant d'acheter** | **Un rapport complet en huit chapitres, en français, chaque chiffre retracé jusqu'à sa source** | **Premier rapport S&P 500 gratuit ; 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** |
-| Zonebourse | Suivre des dizaines de valeurs | Cours, consensus, recommandations, tableaux financiers | Access dès 24 € par mois (payé à l'année) |
-| Boursorama | Les cours et l'actualité | Cours, actualités, forum | Gratuit |
-| ABC Bourse | Un suivi au quotidien | Cours, analyses, outils de bourse | 19,90 € par mois payé à l'année, 29 € au mois |
-| Simply Wall St (en français) | Comparer beaucoup d'actions d'un coup d'œil | Un score visuel, une valorisation, les risques | Gratuit pour 5 rapports par mois ; Premium 10,95 $ US par mois, payé à l'année |
-| Stock Analysis | Les chiffres, gratuitement (en anglais) | États financiers, ratios, prévisions | Gratuit ; Pro 9,99 $ US par mois |
 
 ## Le calcul : un abonnement ou un rapport par action ?
 

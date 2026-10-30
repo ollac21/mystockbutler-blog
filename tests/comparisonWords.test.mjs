@@ -63,8 +63,9 @@ test('each built page: the header says the offer and jumps to the box; a line un
   assert.match(index, /<form class="tickerbox" id="try"/);
 });
 
-test('the blog\'s own header and footer say MyStockButler', () => {
+test('the blog\'s own header and footer say MyStockButler; its home never says verdict', () => {
   for (const html of [siteHeader(), siteFooter()]) {
     assert.match(html, /<span class="brand-name">MyStockButler<\/span>/);
   }
+  assert.doesNotMatch(readFileSync(new URL('../scripts/render.mjs', import.meta.url), 'utf8'), /investment verdict/);
 });

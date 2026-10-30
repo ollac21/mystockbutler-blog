@@ -16,6 +16,19 @@ Aktienfinder lohnt sich für Anleger, die regelmäßig Qualitätsaktien suchen: 
 
 Das ist die Aufgabe von MyStockButler: ein langer Bericht pro Unternehmen, aus seinen eigenen Veröffentlichungen geschrieben, jede Zahl bis zu ihrer Quelle zurückverfolgt, auf Deutsch lesbar. Ihr erster S&P-500-Bericht ist gratis: Ticker unten eingeben und anmelden, keine Karte.
 
+## Fünf Alternativen im Vergleich
+
+Preise der anderen Anbieter laut Preisseite am 26. Oktober 2026.
+
+| Anbieter | Passt, wenn Sie wollen | Was Sie für eine Aktie bekommen | Preis |
+|---|---|---|---|
+| **MyStockButler** (unser Produkt) | **Ein Unternehmen vor dem Kauf gründlich verstehen** | **Ein vollständiger Bericht in acht Kapiteln, auf Deutsch, jede Zahl bis zu ihrer Quelle zurückverfolgt** | **Erster S&P-500-Bericht gratis; 5 US-Dollar für einen Bericht aus der Bibliothek, 20 US-Dollar für einen neuen; Starter 30 US-Dollar im Monat; Pro 70 US-Dollar im Monat** |
+| Aktienfinder | Qualitäts- und Dividendenaktien finden | Kennzahlen über bis zu 30 Jahre, fairer Wert, Prognosen | Basic kostenlos (50 Aktien); 290 € im Jahr |
+| onvista | Kurse und ein Report pro Aktie | Kurse, Nachrichten; Plus: ein „Aktien-Report“ als PDF pro Aktie (Gesamtbewertung, Vergleich mit Wettbewerbern, Risiko) | Kostenlos; Plus 14,90 € im Monat (jährliche Zahlung), 7 Tage gratis testen |
+| finanzen.net | Kurse und Nachrichten | Kurse, Nachrichten, Analystenziele | Kostenlos (mit Werbung) |
+| Simply Wall St (auf Deutsch) | Viele Aktien schnell vergleichen | Visueller Score, Bewertung, Risiken | Kostenlos für 5 Berichte im Monat; Premium 10,95 US-Dollar im Monat, jährlich bezahlt |
+| Stock Analysis | Die Zahlen gratis (auf Englisch) | Jahresabschlüsse, Kennzahlen, Prognosen | Kostenlos; Pro 9,99 US-Dollar im Monat |
+
 ## Was Aktienfinder kostet und bietet
 
 Preise laut Preisseite von Aktienfinder am 26. Oktober 2026.
@@ -31,7 +44,7 @@ Das sind die Fragen, auf die MyStockButler antwortet, mit Beispielen aus unseren
 
 ### „Hat das Management gehalten, was es gesagt hat?“
 
-Wo das Management Prognosen abgibt, vergleichen wir sie mit den Ergebnissen und bewerten die Bilanz mit bis zu 5 Punkten. Bei [SAP](/de/aktien/sap-de/quartalszahlen/) lagen über fünf Jahre und drei Kennzahlen 14 von 15 Ergebnissen innerhalb oder über der ursprünglichen vergleichbaren Prognose: 4 von 5 Punkten. [First Solar](/de/aktien/fslr/quartalszahlen/) prognostizierte für 2025 einen Gewinn von 17 bis 20 US-Dollar je Aktie und erreichte 14,21 US-Dollar: 1 von 5 Punkten.
+Wo das Management Prognosen abgibt, vergleichen wir sie mit den Ergebnissen und bewerten die Bilanz mit bis zu 5 Punkten. Bei [SAP](/de/aktien/sap-de/quartalszahlen/) lagen über fünf Jahre und drei Kennzahlen 14 von 15 Ergebnissen innerhalb oder über der ursprünglichen vergleichbaren Prognose: 4 von 5 Punkten. Die ursprüngliche Prognose von [First Solar](/de/aktien/fslr/quartalszahlen/) für 2025 lag bei 17 bis 20 US-Dollar Gewinn je Aktie. Erreicht wurden 14,21 US-Dollar: 1 von 5 Punkten.
 
 ### „Der Gewinn sieht gut aus. Wo bleibt das Geld?“
 
@@ -43,7 +56,7 @@ Sie sehen die aktuelle Prognose mit Spanne, Zeitraum und Datum. SAP erwartet fü
 
 ### „Der CEO hat für 17,5 Millionen Dollar Aktien verkauft. Muss ich mir Sorgen machen?“
 
-Sie bekommen das Geschäft und seine Einordnung, in einfachen Worten. Der CEO von McDonald's verkaufte im Februar 52.553 Aktien für etwa 17,5 Millionen Dollar, nach einem im Voraus festgelegten Handelsplan. Unser Bericht liest das als geplanten persönlichen Verkauf, nicht als Warnsignal für sich allein.
+Sie bekommen das Geschäft und seine Einordnung, in einfachen Worten. Der CEO von McDonald's verkaufte im Februar 52.553 Aktien für brutto etwa 17,5 Millionen Dollar, nach einem im Voraus festgelegten Handelsplan. Unser Bericht liest das als geplanten persönlichen Verkauf, nicht als Warnsignal für sich allein.
 
 ### „Dieses Unternehmen kenne ich gar nicht.“
 
@@ -64,19 +77,6 @@ Jeder Bericht lässt sich auf Deutsch, Französisch oder Chinesisch (Hongkong) l
 ## Woher weiß ich, dass die Zahlen stimmen?
 
 Jede Zahl ist bis zu ihrer Quelle zurückverfolgt, und jede Quelle ist aufgeführt: 235 im Bericht zu SAP. KI-Modelle schreiben den Bericht, in unserer eigenen Pipeline, die die Tabellen baut und die Zahlen prüft, und eine letzte Prüfung korrigiert oder löscht Aussagen, die sie für falsch hält. Eine KI kann trotzdem eine Zahl falsch haben: Prüfen Sie die Zahlen, auf die Sie sich verlassen.
-
-## Fünf Alternativen im Vergleich
-
-Preise der anderen Anbieter laut Preisseite am 26. Oktober 2026.
-
-| Anbieter | Passt, wenn Sie wollen | Was Sie für eine Aktie bekommen | Preis |
-|---|---|---|---|
-| **MyStockButler** (unser Produkt) | **Ein Unternehmen vor dem Kauf gründlich verstehen** | **Ein vollständiger Bericht in acht Kapiteln, auf Deutsch, jede Zahl bis zu ihrer Quelle zurückverfolgt** | **Erster S&P-500-Bericht gratis; 5 US-Dollar für einen Bericht aus der Bibliothek, 20 US-Dollar für einen neuen; Starter 30 US-Dollar im Monat; Pro 70 US-Dollar im Monat** |
-| Aktienfinder | Qualitäts- und Dividendenaktien finden | Kennzahlen über bis zu 30 Jahre, fairer Wert, Prognosen | Basic kostenlos (50 Aktien); 290 € im Jahr |
-| onvista | Kurse und ein Report pro Aktie | Kurse, Nachrichten; Plus: ein „Aktien-Report“ als PDF pro Aktie (Gesamtbewertung, Vergleich mit Wettbewerbern, Risiko) | Kostenlos; Plus 14,90 € im Monat (jährliche Zahlung), 7 Tage gratis testen |
-| finanzen.net | Kurse und Nachrichten | Kurse, Nachrichten, Analystenziele | Kostenlos (mit Werbung) |
-| Simply Wall St (auf Deutsch) | Viele Aktien schnell vergleichen | Visueller Score, Bewertung, Risiken | Kostenlos für 5 Berichte im Monat; Premium 10,95 US-Dollar im Monat, jährlich bezahlt |
-| Stock Analysis | Die Zahlen gratis (auf Englisch) | Jahresabschlüsse, Kennzahlen, Prognosen | Kostenlos; Pro 9,99 US-Dollar im Monat |
 
 ## Die Rechnung: Abo oder Bericht pro Aktie?
 

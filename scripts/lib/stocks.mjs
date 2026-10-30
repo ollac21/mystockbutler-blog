@@ -201,10 +201,10 @@ const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', 'zh-HK': 
 // The free report on a comparison page, in the owner's words (2026-10-30: 'your first S&P 500 report is free', never 'first report
 // free'): the header button, the box's example ticker, the line under the box. The app opens it only for a ticker named at sign-up.
 const ALT_OFFER = {
-  en: { headerCta: 'First S&P 500 report free', ph: 'e.g. KO', note: 'Type the ticker of an S&P 500 company, like KO for Coca-Cola. Your first S&P 500 report is free, no card.' },
-  fr: { headerCta: 'Premier rapport S&P 500 gratuit', ph: 'p. ex. KO', note: 'Entrez le symbole d’une société du S&P 500, comme KO pour Coca-Cola. Votre premier rapport S&P 500 est gratuit, sans carte.' },
-  de: { headerCta: 'Erster S&P-500-Bericht gratis', ph: 'z. B. KO', note: 'Geben Sie den Ticker eines Unternehmens aus dem S&P 500 ein, etwa KO für Coca-Cola. Ihr erster S&P-500-Bericht ist gratis, keine Karte.' },
-  'zh-HK': { headerCta: '首份 S&P 500 報告免費', label: '免費取得報告', ph: '例如 KO', note: '輸入 S&P 500 公司的股票代號，例如可口可樂是 KO。你的首份 S&P 500 報告免費，無需信用卡。' },
+  en: { headerCta: 'First S&P 500 report free', ph: 'e.g. KO', note: 'Try an S&P 500 ticker, like KO for Coca-Cola. Sign up with no card and the report opens free.' },
+  fr: { headerCta: 'Premier rapport S&P 500 gratuit', ph: 'p. ex. KO', note: 'Essayez un symbole du S&P 500, comme KO pour Coca-Cola. Inscrivez-vous sans carte et le rapport s’ouvre gratuitement.' },
+  de: { headerCta: 'Erster S&P-500-Bericht gratis', ph: 'z. B. KO', note: 'Probieren Sie einen Ticker aus dem S&P 500, etwa KO für Coca-Cola. Melden Sie sich ohne Karte an, und der Bericht öffnet sich gratis.' },
+  'zh-HK': { headerCta: '首份 S&P 500 報告免費', label: '免費取得報告', ph: '例如 KO', note: '試試 S&P 500 股票代號，例如可口可樂是 KO。無需信用卡，註冊後報告會免費開啟。' },
 };
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
 const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
@@ -1319,7 +1319,7 @@ function renderAlternatives(companies, exists, updated = '') {
     path: ALT_ROOT,
     title: 'Stock research tools compared: prices and what you get',
     description: 'Seeking Alpha, Simply Wall St, Bloomberg Terminal and AI research tools compared by price and by what you get for one stock, and who each one suits.',
-    intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler is our product: one long report per company, written from its filings, every number traced to its source.',
+    intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler is our product: one long report per company, written from its filings, every number traced to its source. Your first S&P 500 report is free.',
     sections: [`${tickerBox('en', 'seo-guide-index', { ...ALT_OFFER.en, id: 'try', required: true })}<p class="boxnote">${esc(ALT_OFFER.en.note)}</p>`, `<ul class="list">${list}</ul>`],
     headerCta: ALT_OFFER.en.headerCta,
     cta: '#try',

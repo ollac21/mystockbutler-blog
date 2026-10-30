@@ -8,7 +8,7 @@ lang: en
 group: ai-research-tools
 example: NVDA
 cta_end_title: "See what a full report looks like"
-cta_end_text: "Type the ticker of an S&P 500 company you are looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Best AI stock research tools 2026, compared
@@ -36,7 +36,7 @@ Prices in US dollars unless marked in euros, as shown on each site on 29 October
 ## Why MyStockButler
 
 - **"The facts are all over the place."** One long report per company, with the filings, call transcripts, management bios and interviews in a research hub beside it. Our [Coca-Cola report](/stocks/ko/) runs 22,451 words in eight chapters, with 219 sources listed and every number traced to its source.
-- **"Did management do what it said?"** Where management gives forecasts, we check them against results and score the record out of 5. [First Solar](/stocks/fslr/earnings/) forecast 2025 earnings of $17 to $20 a share, delivered $14.21 and scores 1 of 5.
+- **"Did management do what it said?"** Where management gives forecasts, we check them against results and score the record out of 5. [First Solar's](/stocks/fslr/earnings/) original 2025 forecast was earnings of $17 to $20 a share. It delivered $14.21, and scores 1 of 5.
 - **"The CEO sold $17.5 million of stock. Should I worry?"** Insider trades come with their context. McDonald's CEO sold under a pre-arranged plan, which our report reads as "not a stand-alone warning".
 - **"Results came out this morning. Is this out of date?"** The 100 largest S&P 500 companies and the day's most talked-about stocks are redone first when they report, usually within about 5 hours.
 - **"I've never heard of this company."** The reports are written for you, with terms explained as they come up, tables built for the type of company (a bank is not read like a miner), and any report in English, French, German or Chinese.

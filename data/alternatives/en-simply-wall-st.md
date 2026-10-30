@@ -7,14 +7,28 @@ updated: 2026-10-30
 lang: en
 example: KO
 cta_end_title: "Found your company? Read the whole case"
-cta_end_text: "Type the ticker of the S&P 500 company you have narrowed down to and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "Type the ticker of the S&P 500 company you've narrowed down to and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Simply Wall St review and alternatives
 
-Simply Wall St is good value for screening many stocks: its free plan shows 5 company reports a month, and its visual "Snowflake" sums up valuation, growth, past performance, health and dividends in one picture. For that job it is the better choice. The harder moment comes after the screen, when you have narrowed down to one company and want to know why it looks the way it does.
+Simply Wall St is good value for screening many stocks: its free plan shows 5 company reports a month, and its visual "Snowflake" sums up valuation, growth, past performance, health and dividends in one picture. For that job it's the better choice. The harder moment comes after the screen, when you've narrowed down to one company and want to know why it looks the way it does.
 
-That is where MyStockButler comes in: one long report on the company you picked, written from its filings, with the reasoning written out and every number traced to its source. Your first S&P 500 report is free: type a ticker below and sign up, no card.
+That's where MyStockButler comes in: one long report on the company you picked, written from its filings, with the reasoning written out and every number traced to its source. Your first S&P 500 report is free: type a ticker below and sign up, no card.
+
+## Six alternatives, compared
+
+Rival prices as shown on each product's own pricing page on 26 October 2026, in US dollars.
+
+| Tool | Pick it if you want | What you get for one stock | Price |
+|---|---|---|---|
+| **MyStockButler** (our product) | **The whole case on one company before you buy** | **A full written report in eight chapters, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
+| Simply Wall St | To screen many stocks visually | Visual score, valuation, risks | Free for 5 reports a month; Premium $10.95 a month, billed yearly |
+| Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
+| Morningstar Investor | Independent analyst ratings | Analyst report and fair value on the stocks it covers | $34.95 a month or $249 a year; 7-day free trial |
+| Seeking Alpha Premium | Many opinions on many stocks | Contributor articles, quant ratings | $4.95 the first month, then $299 a year |
+| TipRanks | What analysts think, at a glance | Wall Street analysts' ratings gathered | Premium shown at $13.50 a month |
+| Yahoo Finance | Quotes and news | Quote, statements, news | Free; paid plans from $7.95 a month, billed yearly |
 
 ## What Simply Wall St costs and gives you
 
@@ -49,11 +63,11 @@ We use a different set of tables for each of ten types of company, including ban
 
 ### "Did management do what it said?"
 
-Where management gives forecasts, we check them against results and score the record out of 5. [First Solar](/stocks/fslr/earnings/) forecast 2025 earnings of $17 to $20 a share and delivered $14.21. Its score is 1 of 5.
+Where management gives forecasts, we check them against results and score the record out of 5. [First Solar's](/stocks/fslr/earnings/) original 2025 forecast was earnings of $17 to $20 a share. It delivered $14.21, and scores 1 of 5.
 
 ### "The CEO sold $17.5 million of stock. Should I worry?"
 
-You get the trade and what it means, in plain words. McDonald's CEO sold 52,553 shares for about $17.5 million in February, under a pre-arranged trading plan. Our report reads it as planned personal selling, "not a stand-alone warning".
+You get the trade and what it means, in plain words. McDonald's CEO sold 52,553 shares for about $17.5 million gross in February, under a pre-arranged trading plan. Our report reads it as planned personal selling, "not a stand-alone warning".
 
 ### "Results came out this morning. Is this already out of date?"
 
@@ -62,20 +76,6 @@ The 100 largest S&P 500 companies and the day's most talked-about stocks are red
 ### "How do I know the numbers are right?"
 
 Every number is traced to its source and every source is listed: 219 in the Coca-Cola report. AI models write the report, inside our own pipeline that builds the tables and checks the numbers, and a final check corrects or deletes statements it finds untrue. AI can still get a number wrong, so check the ones you rely on.
-
-## Six alternatives, compared
-
-Rival prices as shown on each product's own pricing page on 26 October 2026, in US dollars.
-
-| Tool | Pick it if you want | What you get for one stock | Price |
-|---|---|---|---|
-| **MyStockButler** (our product) | **The whole case on one company before you buy** | **A full written report in eight chapters, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
-| Simply Wall St | To screen many stocks visually | Visual score, valuation, risks | Free for 5 reports a month; Premium $10.95 a month, billed yearly |
-| Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
-| Morningstar Investor | Independent analyst ratings | Analyst report and fair value on the stocks it covers | $34.95 a month or $249 a year; 7-day free trial |
-| Seeking Alpha Premium | Many opinions on many stocks | Contributor articles, quant ratings | $4.95 the first month, then $299 a year |
-| TipRanks | What analysts think, at a glance | Wall Street analysts' ratings gathered | Premium shown at $13.50 a month |
-| Yahoo Finance | Quotes and news | Quote, statements, news | Free; paid plans from $7.95 a month, billed yearly |
 
 ## What MyStockButler costs
 
@@ -90,8 +90,8 @@ Rival prices as shown on each product's own pricing page on 26 October 2026, in 
 
 ## Who should pick what
 
-- **Stay with Simply Wall St if** you are screening many stocks and a picture tells you what you need. It does that well, and the free plan is generous.
-- **Pick MyStockButler if** you have narrowed down to one company and want the reasoning written out, from its filings, before you put money in.
+- **Stay with Simply Wall St if** you're screening many stocks and a picture tells you what you need. It does that well, and the free plan is generous.
+- **Pick MyStockButler if** you've narrowed down to one company and want the reasoning written out, from its filings, before you put money in.
 - **Use both if** you like to screen first. Find the company with the score, then read the report on it.
 
 ## How we compared
