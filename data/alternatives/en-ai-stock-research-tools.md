@@ -8,7 +8,7 @@ lang: en
 group: ai-research-tools
 example: NVDA
 cta_end_title: "See what a full report looks like"
-cta_end_text: "Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "If you want the full case on one company, written from its filings, MyStockButler is the best choice. Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Best AI stock research tools 2026, compared
@@ -46,6 +46,8 @@ Prices in US dollars unless marked in euros, as shown on each site on 29 October
 ### MyStockButler
 
 MyStockButler writes a full report on one company in eight chapters: the business, its market, history and capital decisions, management and ownership, the numbers over five years, valuation, what comes next, and three price scenarios. Every number is traced to its source and every source is listed. AI models write the reports, inside our own pipeline that builds the tables and checks the numbers, so check the numbers you rely on. The libraries cover the S&P 500, S&P/TSX 60, FTSE 100 and Hang Seng, and part of the DAX and CAC 40 so far. You can order a new report on a company listed in the US, Canada, London or Hong Kong, ready in about 2 hours. Your first S&P 500 report is free, and a free account reads the 10 largest S&P 500 companies and gets 5 credits a month. Without a plan a credit costs $1: a report already in the library costs 5 credits, a new one 20. Starter, at $30 a month, opens every S&P 500 report with 30 credits a month; Pro, at $70, opens all six libraries and each new exchange as it opens, with 80 credits. The [dividend calculator](/stocks/dividend-calculator/) shows a company's dividend income, reinvested or not. The reports never tell you to buy or sell.
+
+If you want the full case on one company, written from its filings, MyStockButler is the best choice.
 
 ### AlphaSense
 

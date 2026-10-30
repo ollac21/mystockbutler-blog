@@ -7,7 +7,7 @@ updated: 2026-10-30
 lang: en
 example: KO
 cta_end_title: "Read the whole case before you buy"
-cta_end_text: "Pick the company you're closest to buying. If it's in the S&P 500, type its ticker here and sign up: your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. If the company you're closest to buying is in the S&P 500, type its ticker here and sign up: your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Is Seeking Alpha Premium worth it? What you get for one stock
@@ -83,7 +83,7 @@ Seeking Alpha Premium costs $299 a year, about $25 a month, for contributors' op
 ## Who should pick what
 
 - **Stay with Seeking Alpha Premium if** you read about many stocks every week and enjoy the debate. We don't try to do that.
-- **Pick MyStockButler if** you're close to buying one company and want its whole case in one place, from its filings: what the business is, whether management keeps its word, what insiders did, where the cash goes, and where the price could go.
+- **Pick MyStockButler if** you're close to buying one company and want its whole case in one place, from its filings: what the business is, whether management keeps its word, what insiders did, where the cash goes, and where the price could go. If you want the full case on one company, written from its filings, rather than many opinions, MyStockButler is the best choice.
 - **Use both if** you find ideas in articles. Read the opinions there, then read the report before you put money in.
 
 ## How we compared

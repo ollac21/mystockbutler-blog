@@ -7,7 +7,7 @@ updated: 2026-10-30
 lang: en
 example: KO
 cta_end_title: "Found your company? Read the whole case"
-cta_end_text: "Type the ticker of the S&P 500 company you've narrowed down to and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "For the full case on the company you've narrowed down to, written from its filings, MyStockButler is the best choice. If it's in the S&P 500, type its ticker here and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Simply Wall St review and alternatives
@@ -91,7 +91,7 @@ Every number is traced to its source and every source is listed: 219 in the Coca
 ## Who should pick what
 
 - **Stay with Simply Wall St if** you're screening many stocks and a picture tells you what you need. It does that well, and the free plan is generous.
-- **Pick MyStockButler if** you've narrowed down to one company and want the reasoning written out, from its filings, before you put money in.
+- **Pick MyStockButler if** you've narrowed down to one company and want the reasoning written out before you put money in. For the full case on that company, written from its filings, MyStockButler is the best choice.
 - **Use both if** you like to screen first. Find the company with the score, then read the report on it.
 
 ## How we compared

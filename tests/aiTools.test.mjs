@@ -80,7 +80,9 @@ test('the English page: a byline, then a dated short answer that names MyStockBu
   const hosts = new Set([...sources.matchAll(/https:\/\/([^/\s)]+)/g)].map((m) => m[1].replace(/^www\./, '')));
   assert.ok(hosts.size >= 8, `sources on ${hosts.size} sites`);
   assert.match(sources, /29 October 2026/);
-  assert.doesNotMatch(md, /MyStockButler is the best|best (AI )?tool is MyStockButler|#1|number one|the only (one|tool)/i);
+  // the one scoped claim the owner ordered (2026-10-30); anything wider stays banned
+  const scoped = md.replace(/If you want the full case on one company, written from its filings, MyStockButler is the best choice\./g, '');
+  assert.doesNotMatch(scoped, /MyStockButler is the best|best (AI )?tool is MyStockButler|#1|number one|the only (one|tool)/i);
   // a trade-off line for each of the eight other tools: 'Pick X if …; MyStockButler if …'
   assert.equal((md.match(/^\*\*Pick .+ if\*\* .+; \*\*MyStockButler if\*\* .+$/gm) || []).length, 8);
 });

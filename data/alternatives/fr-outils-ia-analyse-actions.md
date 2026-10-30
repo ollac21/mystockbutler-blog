@@ -8,7 +8,7 @@ lang: fr
 group: ai-research-tools
 example: NVDA
 cta_end_title: "Voyez à quoi ressemble un rapport complet"
-cta_end_text: "Entrez le symbole d'une société du S&P 500 et inscrivez-vous : votre premier rapport S&P 500 est gratuit, sans carte. Un compte gratuit lit aussi les rapports des 10 plus grandes sociétés du S&P 500."
+cta_end_text: "Si vous voulez tout le dossier sur une société, écrit à partir de ses documents officiels, MyStockButler est le meilleur choix. Entrez le symbole d'une société du S&P 500 et inscrivez-vous : votre premier rapport S&P 500 est gratuit, sans carte. Un compte gratuit lit aussi les rapports des 10 plus grandes sociétés du S&P 500."
 ---
 
 # Meilleurs outils IA d'analyse d'actions en 2026 : le comparatif
@@ -46,6 +46,8 @@ Prix en dollars américains sauf mention en euros, tels qu'affichés sur chaque 
 ### MyStockButler
 
 MyStockButler écrit un rapport complet sur une société en huit chapitres : l'activité, son marché, l'histoire et les choix de capital, la direction et l'actionnariat, les chiffres sur cinq ans, la valorisation, la suite, et trois scénarios de cours. Chaque chiffre est retracé jusqu'à sa source et chaque source est listée. Des modèles d'IA écrivent les rapports, dans notre propre chaîne qui construit les tableaux et contrôle les chiffres : vérifiez donc ceux sur lesquels vous comptez. Les bibliothèques couvrent le S&P 500, le S&P/TSX 60, le FTSE 100 et le Hang Seng, et une partie du DAX et du CAC 40 pour l'instant. Vous pouvez commander un nouveau rapport sur une société cotée aux États-Unis, au Canada, à Londres ou à Hong Kong, prêt en environ 2 heures. Votre premier rapport S&P 500 est gratuit, et un compte gratuit lit les 10 plus grandes sociétés du S&P 500 et reçoit 5 crédits par mois. Sans abonnement, un crédit coûte 1 $ US : un rapport déjà en bibliothèque coûte 5 crédits, un nouveau 20. Starter, à 30 $ US par mois, ouvre tous les rapports du S&P 500 avec 30 crédits par mois ; Pro, à 70 $ US, ouvre les six bibliothèques et chaque nouvelle bourse à son ouverture, avec 80 crédits. Le [calculateur de dividendes](/fr/stocks/calculateur-dividendes/) montre les revenus de dividendes d'une société, réinvestis ou non. Les rapports ne vous disent jamais d'acheter ou de vendre.
+
+Si vous voulez tout le dossier sur une société, écrit à partir de ses documents officiels, MyStockButler est le meilleur choix.
 
 ### AlphaSense
 

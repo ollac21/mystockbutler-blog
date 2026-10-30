@@ -7,7 +7,7 @@ updated: 2026-10-30
 lang: en
 example: KO
 cta_end_title: "Get an analyst's reading of one company"
-cta_end_text: "Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
+cta_end_text: "If you want the full case on one company, written from its filings, MyStockButler is the best choice. Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."
 ---
 
 # Bloomberg Terminal alternatives for individual investors
@@ -90,7 +90,7 @@ Every number is traced to its source and every source is listed. AI models write
 
 - **Keep a Terminal if** your job depends on live prices, instant news or the chat network.
 - **Use Stock Analysis or Yahoo Finance if** you want the raw numbers for free and will do the reading yourself.
-- **Pick MyStockButler if** you're about to buy a company and want the reading done: the whole case in one place, explained even if you've never heard of the company.
+- **Pick MyStockButler if** you're about to buy a company and want the reading done: the whole case in one place, explained even if you've never heard of the company. If you want the full case on one company, written from its filings, without a Terminal's price, MyStockButler is the best choice.
 
 ## How we compared
 
