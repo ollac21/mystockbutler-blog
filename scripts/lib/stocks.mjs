@@ -12,7 +12,7 @@ import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
-import { loadAlternatives, loadGuides, renderGuide } from './guides.mjs';
+import { loadAlternatives, loadGuides, renderGuide, tickerBox } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, renderAbout } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 
@@ -198,6 +198,14 @@ export const ALT_ROOT = '/alternatives/';
 const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich', 'zh-HK': '研究工具比較' };
 const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich', 'zh-HK': '其他比較' };
 const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', 'zh-HK': '中文' };
+// The free report on a comparison page, in the owner's words (2026-10-30: 'your first S&P 500 report is free', never 'first report
+// free'): the header button, the box's example ticker, the line under the box. The app opens it only for a ticker named at sign-up.
+const ALT_OFFER = {
+  en: { headerCta: 'First S&P 500 report free', ph: 'e.g. KO', note: 'Type the ticker of an S&P 500 company, like KO for Coca-Cola. Your first S&P 500 report is free, no card.' },
+  fr: { headerCta: 'Premier rapport S&P 500 gratuit', ph: 'p. ex. KO', note: 'Entrez le symbole d’une société du S&P 500, comme KO pour Coca-Cola. Votre premier rapport S&P 500 est gratuit, sans carte.' },
+  de: { headerCta: 'Erster S&P-500-Bericht gratis', ph: 'z. B. KO', note: 'Geben Sie den Ticker eines Unternehmens aus dem S&P 500 ein, etwa KO für Coca-Cola. Ihr erster S&P-500-Bericht ist gratis, keine Karte.' },
+  'zh-HK': { headerCta: '首份 S&P 500 報告免費', label: '免費取得報告', ph: '例如 KO', note: '輸入 S&P 500 公司的股票代號，例如可口可樂是 KO。你的首份 S&P 500 報告免費，無需信用卡。' },
+};
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
 const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
 const ALT_FOOT = Object.fromEntries(Object.keys(ALT_WORDS).flatMap((l) => {
@@ -495,7 +503,7 @@ function langNav(lang) {
     .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
 }
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
+function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], headerCta = '' }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
   const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
@@ -524,7 +532,7 @@ ${gaHead(meta)}</head>
 <body>
 <header class="site"><div class="in"><a class="logo" href="${LANDING}/"><i>S</i><span>My<b>Stock</b>Butler</span></a>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
-<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${ui.headerCta}</a></nav></div></header>
+<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${headerCta ? esc(headerCta) : ui.headerCta}</a></nav></div></header>
 ${body}
 <footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
@@ -729,7 +737,7 @@ function hubList(companies, { withDates = false, langs = [] } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '' }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', headerCta = '', cta = '' }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   const searchBox = search
@@ -743,7 +751,8 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
     ogType: 'website',
     lang,
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, ...(updated ? { dateModified: updated } : {}), isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
-    meta: { type: 'hub', ticker: '' },
+    meta: { type: 'hub', ticker: '', ...(cta ? { cta } : {}) },
+    headerCta,
     // B114 CHECKLIST A13: a language hub says when it was last updated (its newest memo), on the page and in its data
     body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${updated && UI[lang].updatedOn ? `<p class="sub">${esc(UI[lang].updatedOn(humanDay(updated, lang)))}</p>` : ''}${searchBox}${sections.join('\n')}</div>`,
   });
@@ -1246,7 +1255,8 @@ tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;
 .list{list-style:none;margin:0;padding:0}.list li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--rule);font:400 14px/1.4 Inter,sans-serif}
 .list .nm{font-weight:700;color:var(--ink);text-decoration:none}.list .tk{font:600 12px/1 ui-monospace,Menlo,monospace;color:var(--muted)}.list .dt{color:var(--muted);font-size:13px}.list .pg{margin-left:auto;display:flex;gap:10px}.list .pg a{font-weight:600;font-size:13px}
 .letters{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.letters a{font:700 13px/1 Inter,sans-serif;text-decoration:none;color:var(--teal);border:1px solid var(--rule);background:#fff;border-radius:6px;padding:7px 9px}
-.tickerbox{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}.tickerbox input[name=ticker]{flex:1 1 200px;min-width:0;font:600 17px/1.3 Inter,sans-serif;padding:14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff;text-transform:uppercase}.tickerbox .btn{flex:0 0 auto;border:0;cursor:pointer}
+.boxnote{font:500 14px/1.45 Inter,sans-serif;color:var(--muted);margin:-16px 0 26px}.altcta{margin:32px 0 24px;padding:20px 22px;background:var(--mint);border-radius:10px}.altcta h2{margin-top:0}.altcta .tickerbox{margin-bottom:0}
+.tickerbox{scroll-margin-top:84px;display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}.tickerbox input[name=ticker]{flex:1 1 200px;min-width:0;font:600 17px/1.3 Inter,sans-serif;padding:14px;border:1px solid #CFCDC4;border-radius:8px;background:#fff;text-transform:uppercase}.tickerbox .btn{flex:0 0 auto;border:0;cursor:pointer}
 article.guide h3{font:700 19px/1.35 Inter,sans-serif;margin:24px 0 8px}
 article.guide .tw{margin:12px 0 20px}article.guide table{min-width:560px}
 article.guide th,article.guide td{text-align:left;white-space:normal;vertical-align:top}
@@ -1294,7 +1304,7 @@ function renderAlternatives(companies, exists, updated = '') {
     const sib = a.group ? drawn.filter((o) => o.group === a.group) : [];
     const alternates = sib.length > 1 ? [...sib.map((o) => ({ hreflang: o.lang === 'en' ? 'en' : LANG_CFG[o.lang].href, url: `${SITE}${o.path}` })),
       { hreflang: 'x-default', url: `${SITE}${(sib.find((o) => o.lang === 'en') || sib[0]).path}` }] : [];
-    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra, alternates });
+    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra, alternates, offer: ALT_OFFER[l] });
     g.alternates = alternates;
     // a link in the page's text to one of our pages that is not published (held back, or not built) keeps its words, not its link
     g.html = g.html.replace(/<a href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)">([^<]*)<\/a>/g,
@@ -1303,13 +1313,16 @@ function renderAlternatives(companies, exists, updated = '') {
     g.alt = true;
     return g;
   });
-  const list = drawn.map((a) => `<li><a class="nm" href="${a.path}"${a.lang !== 'en' ? ` hreflang="${a.lang}" lang="${a.lang}"` : ''}>${esc(a.h1)}</a> <span class="tk">${esc(ALT_LANG_NAME[a.lang])}</span></li>`).join('');
+  // English first: this index is the English page; each language's pages follow
+  const list = [...drawn.filter((a) => a.lang === 'en'), ...drawn.filter((a) => a.lang !== 'en')].map((a) => `<li><a class="nm" href="${a.path}"${a.lang !== 'en' ? ` hreflang="${a.lang}" lang="${a.lang}"` : ''}>${esc(a.h1)}</a> <span class="tk">${esc(ALT_LANG_NAME[a.lang])}</span></li>`).join('');
   const index = hubPage({
     path: ALT_ROOT,
     title: 'Stock research tools compared: prices and what you get',
-    description: 'Bloomberg Terminal, Seeking Alpha, Simply Wall St, Zonebourse and Aktienfinder: stock research tools compared by price and by what you get for one stock.',
-    intro: 'Honest comparisons of stock research tools, by price and by what you get for one stock. Prices are read on each product’s own page; MyStockButler is our product.',
-    sections: [`<ul class="list">${list}</ul>`],
+    description: 'Seeking Alpha, Simply Wall St, Bloomberg Terminal and AI research tools compared by price and by what you get for one stock, and who each one suits.',
+    intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler is our product: one long report per company, written from its filings, every number traced to its source.',
+    sections: [`${tickerBox('en', 'seo-guide-index', { ...ALT_OFFER.en, id: 'try', required: true })}<p class="boxnote">${esc(ALT_OFFER.en.note)}</p>`, `<ul class="list">${list}</ul>`],
+    headerCta: ALT_OFFER.en.headerCta,
+    cta: '#try',
     crumbItems: [{ name: 'MyStockButler', path: '/' }, { name: ALT_WORDS.en, path: ALT_ROOT }],
     lang: 'en',
     updated,

@@ -60,12 +60,14 @@ export function faqOf(markdown) {
 // The landing's ticker box: a symbol, the button 'Obtenir le rapport — gratuit' (the landing's own words), the signup.
 // the button in a language the landing has no words for (B114: Chinese) — our own fixed words, as on its stock pages
 const BUTTON = { 'zh-HK': '免費取得首份報告', en: 'Get the report — free' };
-function tickerBox(lang, src) {
-  const label = (LANDING_WORDS[lang] || {})['steps.1.cta'] || BUTTON[lang] || LANDING_WORDS.fr['steps.1.cta'];
-  const ph = { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', 'zh-HK': '例如 NVDA', en: 'e.g. KO' }[lang] || 'e.g. AI.PA';
-  return `<form class="tickerbox" action="${APP}/signup" method="get">
+// offer (a comparison page): its own button word and example ticker, a ticker required (the free report opens only for a
+// ticker named at sign-up: claimSignupFreeReport), id = the address the page's header button jumps to.
+export function tickerBox(lang, src, { label: word, ph: hint, id = '', required = false } = {}) {
+  const label = word || (LANDING_WORDS[lang] || {})['steps.1.cta'] || BUTTON[lang] || LANDING_WORDS.fr['steps.1.cta'];
+  const ph = hint || { fr: 'p. ex. AI.PA', de: 'z. B. SAP.DE', 'zh-HK': '例如 NVDA', en: 'e.g. KO' }[lang] || 'e.g. AI.PA';
+  return `<form class="tickerbox"${id ? ` id="${esc(id)}"` : ''} action="${APP}/signup" method="get">
 <input type="hidden" name="src" value="${esc(src)}"><input type="hidden" name="lang" value="${esc(lang)}">
-<input name="ticker" type="text" placeholder="${esc(ph)}" autocomplete="off" aria-label="ticker" maxlength="12">
+<input name="ticker" type="text" placeholder="${esc(ph)}" autocomplete="off" aria-label="ticker" maxlength="12"${required ? ' required' : ''}>
 <button class="btn big" type="submit" data-cta="${esc(src)}">${esc(label)}</button></form>`;
 }
 
@@ -82,7 +84,9 @@ function labelCells(table) {
 const boxTables = (html) => html.replace(/<table>[\s\S]*?<\/table>/g, (t) => `<div class="tw">${labelCells(t)}</div>`);
 
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
-export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [], pageType = 'Article' }) {
+// offer (the comparison pages): the free report's own words (see ALT_OFFER in stocks.mjs): the header button jumps to the first box,
+// a line under it says what to type, and the page ends on its call to action (front matter cta_end_title, cta_end_text).
+export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [], pageType = 'Article', offer = null }) {
   const url = `${SITE}${g.path}`;
   const src = `seo-guide-${g.name.replace(/\.md$/, '')}`;
   const cta = `${APP}/signup?src=${encodeURIComponent(src)}&lang=${g.lang}`;
@@ -91,6 +95,11 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
   const md = g.markdown.replace(/^\s*# .*\n+/, '');
   const [opening, ...rest] = md.split(/\n(?=## )/);
   const faq = faqOf(md);
+  const firstBox = offer ? `${tickerBox(g.lang, src, { ...offer, id: 'try', required: true })}<p class="boxnote">${esc(offer.note)}</p>` : tickerBox(g.lang, src);
+  const endBox = offer ? tickerBox(g.lang, `${src}-end`, { ...offer, required: true }) : tickerBox(g.lang, `${src}-end`);
+  const ending = offer && g.cta_end_title
+    ? `<section class="altcta"><h2>${esc(g.cta_end_title)}</h2><p>${esc(g.cta_end_text || '')}</p>${endBox}</section>\n${extra}`
+    : `${extra}\n${endBox}`;
   const ld = { '@context': 'https://schema.org', '@graph': [crumbs.ld,
     { '@type': pageType, headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
       inLanguage: g.lang, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url },
@@ -103,15 +112,15 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     lang: g.lang,
     alternates,
     jsonld: ld,
-    meta: { type: 'guide', ticker: '', cta, lang: g.lang, label: `guide ${g.name}` },
+    meta: { type: 'guide', ticker: '', cta: offer ? '#try' : cta, lang: g.lang, label: `guide ${g.name}` },
+    headerCta: offer ? offer.headerCta : '',
     body: `<div class="layout one"><article class="guide">
 ${crumbs.html}
 <h1>${esc(g.h1)}</h1>
 ${boxTables(marked.parse(opening))}
-${tickerBox(g.lang, src)}
+${firstBox}
 ${boxTables(marked.parse(rest.join('\n')))}
-${extra}
-${tickerBox(g.lang, `${src}-end`)}
+${ending}
 </article></div>`,
   });
   return { path: g.path, url, type: 'hub', guide: true, lang: g.lang, title: g.title_tag, description: g.meta_description, html, outLinks: [], lastmod: g.updated };
