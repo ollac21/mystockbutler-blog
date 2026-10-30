@@ -30,10 +30,18 @@ test('our numbers are traced, never linked; a rival\'s own words stay', () => {
   for (const g of pages) assert.doesNotMatch(g.markdown, OURS, g.name);
 });
 
-test('no "best" in the pages\' own voice: the titles keep the words people search', () => {
+// The owner's later order (2026-10-30): the best choice for the full case on one company, in each verdict and beside the closing
+// call to action. Never wider: the sentence names the job, every other 'best' stays out, the titles keep the words people search.
+const CLAIM = /[^.。]*(?:MyStockButler is the best choice|MyStockButler est le meilleur choix|ist MyStockButler die beste Wahl|MyStockButler 是最佳選擇)[.。]/g;
+const SCOPE = /filings|documents officiels|Veröffentlichungen|公司文件/;
+test('"best" only in the scoped line: in the verdict and beside the closing call to action, naming the job', () => {
   for (const g of pages) {
     const body = g.markdown.replace(/^\s*# .*\n/, '');
-    assert.doesNotMatch(body, /\bbest\b|#1|number one|meilleur|am besten|die besten|最佳/i, g.name);
+    const claims = [...(body.match(CLAIM) || []), ...(g.cta_end_text.match(CLAIM) || [])];
+    assert.equal((body.match(CLAIM) || []).length, 1, `${g.name}: one in the verdict`);
+    assert.equal((g.cta_end_text.match(CLAIM) || []).length, 1, `${g.name}: one beside the call to action`);
+    for (const c of claims) assert.match(c, SCOPE, `${g.name}: ${c}`);
+    assert.doesNotMatch(body.replace(CLAIM, ''), /\bbest\b|#1|number one|meilleur|am besten|die besten|beste Wahl|最佳/i, g.name);
   }
 });
 
@@ -68,4 +76,26 @@ test('the blog\'s own header and footer say MyStockButler; its home never says v
     assert.match(html, /<span class="brand-name">MyStockButler<\/span>/);
   }
   assert.doesNotMatch(readFileSync(new URL('../scripts/render.mjs', import.meta.url), 'utf8'), /investment verdict/);
+});
+
+test('the About pages, the guides and the stock pages\' fixed words carry the same offer: no count, traced, the first S&P 500 report', async () => {
+  const { loadAbout } = await import('../scripts/lib/about.mjs');
+  const { loadGuides } = await import('../scripts/lib/guides.mjs');
+  const { UI } = await import('../scripts/lib/stocks.mjs');
+  for (const g of [...loadAbout(), ...loadGuides()]) {
+    const all = `${g.meta_description}\n${g.org_description || ''}\n${g.markdown}`;
+    assert.doesNotMatch(all, /\b(685|719|469)\b/, g.name);
+    assert.doesNotMatch(all, /number (?:in a report )?(?:is )?linked|figure linked|chiffre[^.]{0,30}relié|Zahl[^.]{0,30}verknüpft|數字都連結/, g.name);
+    assert.doesNotMatch(all, /first report|premier rapport (?!S&P)|Premier rapport (?!S&P)|erster Bericht|erste Bericht|首份報告/, g.name);
+    assert.match(all, /about 2 hours|environ 2 heures|etwa 2 Stunden|約 2 小時/, g.name);
+  }
+  for (const l of Object.keys(UI)) {
+    for (const k of ['headerCta', 'free', 'sticky']) assert.match(UI[l][k], /S&P[ -]500/, `${l} ${k}`);
+    assert.doesNotMatch(UI[l].proof('X'), /relié|連結|linked/, `${l} proof`);
+  }
+});
+
+test('the /de/ and /fr/ titles say MyStockButler', async () => {
+  const { LANDING_WORDS } = await import('../scripts/lib/landingWords.mjs');
+  for (const l of ['fr', 'de']) assert.match(LANDING_WORDS[l]['meta.title'], /^MyStockButler \|/);
 });

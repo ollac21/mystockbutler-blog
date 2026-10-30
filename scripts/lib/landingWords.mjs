@@ -1,9 +1,10 @@
 // The /de/ and /fr/ home pages' words (B112, owner 2026-10-23 'Yes German French pages', CTO 12:53Z): copied VERBATIM from
 // the landing page's published dictionary (ollac21/100a-research-landing, src/lib/landingText.js at 33908f7), the same
-// keys — no new sentence. To change a word, change it on the landing first, then copy it here.
+// keys — no new sentence. To change a word, change it on the landing first, then copy it here. Owner's exception (2026-10-30):
+// the two titles say MyStockButler and the free line says the first S&P 500 report, ahead of the landing.
 export const LANDING_WORDS = {
   "fr": {
-    "meta.title": "StockButler | Agent IA de recherche boursière pour des mémos d’investissement sourcés",
+    "meta.title": "MyStockButler | Agent IA de recherche boursière pour des mémos d’investissement sourcés",
     "hero.title.a": "Des mémos d’investissement de calibre professionnel",
     "hero.title.b": "pour les investisseurs individuels.",
     "hero.sub": "Nous reconstruisons chaque chiffre à partir des dépôts réglementaires, avec sa source, puis nous déterrons les nouvelles enfouies qui changent le portrait — celles qui ne font jamais les manchettes.",
@@ -15,10 +16,10 @@ export const LANDING_WORDS = {
     "steps.3.label": "Suivre et prévoir",
     "steps.3.copy": "Suivez vos titres, mettez à jour vos hypothèses et regardez comment le prix évolue avec le temps. Votre thèse, vos modèles, votre décision.",
     "steps.1.cta": "Obtenir le rapport — gratuit",
-    "ticker.try": "Essayez une action du S&P 500 — comme Apple ou NVIDIA. Votre premier rapport est gratuit. Sans carte de crédit."
+    "ticker.try": "Essayez une action du S&P 500 — comme Apple ou NVIDIA. Votre premier rapport S&P 500 est gratuit. Sans carte de crédit."
   },
   "de": {
-    "meta.title": "StockButler | KI-Research-Agent für belegte Aktien-Memos",
+    "meta.title": "MyStockButler | KI-Research-Agent für belegte Aktien-Memos",
     "hero.title.a": "Investment-Memos auf Profi-Niveau",
     "hero.title.b": "für Privatanleger.",
     "hero.sub": "Wir bauen jede Zahl aus den Pflichtveröffentlichungen nach, mit ihrer Quelle — und graben dann die versteckten Nachrichten aus, die das Bild verändern und nie in die Schlagzeilen kommen.",
@@ -30,7 +31,7 @@ export const LANDING_WORDS = {
     "steps.3.label": "Verfolgen & prognostizieren",
     "steps.3.copy": "Verfolgen Sie Ihre Aktien, passen Sie Ihre Annahmen an und sehen Sie, wie sich der Kurs über die Zeit entwickelt. Ihre These, Ihre Modelle, Ihre Entscheidung.",
     "steps.1.cta": "Bericht holen — gratis",
-    "ticker.try": "Probieren Sie eine Aktie aus dem S&P 500 — etwa Apple oder NVIDIA. Ihr erster Bericht ist gratis. Keine Karte."
+    "ticker.try": "Probieren Sie eine Aktie aus dem S&P 500 — etwa Apple oder NVIDIA. Ihr erster S&P-500-Bericht ist gratis. Keine Karte."
   }
 };
 

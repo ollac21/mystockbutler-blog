@@ -59,7 +59,7 @@ export function faqOf(markdown) {
 
 // The landing's ticker box: a symbol, the button 'Obtenir le rapport — gratuit' (the landing's own words), the signup.
 // the button in a language the landing has no words for (B114: Chinese) — our own fixed words, as on its stock pages
-const BUTTON = { 'zh-HK': '免費取得首份報告', en: 'Get the report — free' };
+const BUTTON = { 'zh-HK': '免費取得報告', en: 'Get the report — free' };
 // offer (a comparison page): its own button word and example ticker, a ticker required (the free report opens only for a
 // ticker named at sign-up: claimSignupFreeReport), id = the address the page's header button jumps to.
 export function tickerBox(lang, src, { label: word, ph: hint, id = '', required = false } = {}) {
@@ -113,7 +113,6 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     alternates,
     jsonld: ld,
     meta: { type: 'guide', ticker: '', cta: offer ? '#try' : cta, lang: g.lang, label: `guide ${g.name}` },
-    headerCta: offer ? offer.headerCta : '',
     body: `<div class="layout one"><article class="guide">
 ${crumbs.html}
 <h1>${esc(g.h1)}</h1>

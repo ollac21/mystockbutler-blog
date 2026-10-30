@@ -37,7 +37,7 @@ const BANNED_ZH = /(買入|賣出|沽出|低估|高估|便宜|昂貴|本頁)/u;
 const TITLE_ZH = /(股票分析|股息|財報)/;
 const NUMBER = /\d[\d,.]*\d|\d/g;
 const MAX_BYTES = 100 * 1024;
-const FREE_LINE = 'Your first report is free · no card';
+const FREE_LINE = 'Your first S&P 500 report is free · no card';
 
 const marked = new Marked({ gfm: true });
 
@@ -87,12 +87,12 @@ export function frenchNumber(text) {
 const same = (t) => t;
 export const UI = {
   en: {
-    htmlLang: 'en', allStocks: 'All stocks', blog: 'Blog', headerCta: 'Get your first report free', free: 'Your first report is free · no card',
+    htmlLang: 'en', allStocks: 'All stocks', blog: 'Blog', headerCta: 'First S&P 500 report free', free: 'Your first S&P 500 report is free · no card',
     readFull: (c) => `Read the full ${c} memo`, proof: (c) => `Every number traced to ${c}'s filings`, chapters: 'chapters', words: 'words',
     sources: 'sources cited', kicker: 'Research memo', memoOf: 'Memo of', mid: (p, P, t, T) => `This page shows ${p} of the memo's ${P} paragraphs and ${t} of its ${T} tables.`,
     fromMemo: 'From the full memo', cont: 'Continue reading, free', whereFrom: 'Where these numbers come from', filingOn: (h) => `Filing on ${h}`,
     filing: 'Filing', moreOn: (c) => `More on ${c}`, rivals: 'Its rivals', browse: 'Browse', rail: (c) => `The full ${c} memo`, readItFree: 'Read it free',
-    sticky: 'Your first report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
+    sticky: 'Your first S&P 500 report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
     types: { stock: 'Stock forecast', dividend: 'Dividend', earnings: 'Earnings' }, otherIn: { fr: 'En français', de: 'Auf Deutsch', 'zh-HK': '中文' }, locale: 'en-US',
     sibling: (t, c) => `${c} ${UI.en.types[t].toLowerCase()}`, find: 'Find a company', findPh: 'Company or ticker, e.g. Costco or TD', num: same,
     footer: 'Information only, not investment advice. Scenarios are scenarios, not predictions. Check the cited filings before making an investment decision.',
@@ -101,12 +101,12 @@ export const UI = {
     series: { 'Dividends paid, per share': 'Dividends paid, per share', 'Real free cash flow per share': 'Real free cash flow per share', 'Free cash flow per share': 'Free cash flow per share', Revenue: 'Revenue' },
   },
   fr: {
-    htmlLang: 'fr', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Votre premier rapport gratuit', free: 'Votre premier rapport est gratuit · sans carte',
-    readFull: (c) => `Lire le mémo complet sur ${c}`, proof: (c) => `Chaque chiffre est relié aux documents déposés par ${c}`, chapters: 'chapitres', words: 'mots',
+    htmlLang: 'fr', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Premier rapport S&P 500 gratuit', free: 'Votre premier rapport S&P 500 est gratuit · sans carte',
+    readFull: (c) => `Lire le mémo complet sur ${c}`, proof: (c) => `Chaque chiffre est retracé jusqu’aux documents déposés par ${c}`, chapters: 'chapitres', words: 'mots',
     sources: 'sources citées', kicker: 'Mémo de recherche', memoOf: 'Mémo du', mid: (p, P, t, T) => `Cette page présente ${p} des ${P} paragraphes du mémo et ${t} de ses ${T} tableaux.`,
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
-    sticky: 'Votre premier rapport est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
+    sticky: 'Votre premier rapport S&P 500 est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
     guide: "Analyser une action avec l'IA", updatedOn: (d) => `Mis à jour le ${d}`,
     types: { stock: 'Prévisions', dividend: 'Dividende', earnings: 'Résultats' }, otherIn: { en: 'In English', de: 'Auf Deutsch', 'zh-HK': '中文' }, locale: 'fr-CA',
     sibling: (t, c) => `${UI.fr.types[t]} · ${c}`, find: 'Trouver une entreprise', findPh: 'Entreprise ou symbole, p. ex. TD ou BCE', num: frenchNumber,
@@ -116,12 +116,12 @@ export const UI = {
     series: { 'Dividends paid, per share': 'Dividendes versés par action', 'Real free cash flow per share': 'Flux de trésorerie disponible réel par action', 'Free cash flow per share': 'Flux de trésorerie disponible par action', Revenue: 'Revenus' },
   },
   de: {
-    htmlLang: 'de', allStocks: 'Alle Aktien', blog: 'Blog', headerCta: 'Ihr erster Bericht ist gratis', free: 'Ihr erster Bericht ist gratis · keine Karte',
+    htmlLang: 'de', allStocks: 'Alle Aktien', blog: 'Blog', headerCta: 'Erster S&P-500-Bericht gratis', free: 'Ihr erster S&P-500-Bericht ist gratis · keine Karte',
     readFull: (c) => `Das vollständige ${c}-Memo lesen`, proof: (c) => `Jede Zahl ist in den Unterlagen von ${c} belegt`, chapters: 'Kapitel', words: 'Wörter',
     sources: 'zitierte Quellen', kicker: 'Research-Memo', memoOf: 'Memo vom', mid: (p, P, t, T) => `Diese Seite zeigt ${p} der ${P} Absätze des Memos und ${t} seiner ${T} Tabellen.`,
     fromMemo: 'Aus dem vollständigen Memo', cont: 'Gratis weiterlesen', whereFrom: 'Woher diese Zahlen stammen', filingOn: (h) => `Dokument auf ${h}`,
     filing: 'Dokument', moreOn: (c) => `Mehr zu ${c}`, rivals: 'Die Konkurrenz', browse: 'Stöbern', rail: (c) => `Das vollständige ${c}-Memo`, readItFree: 'Gratis lesen',
-    sticky: 'Ihr erster Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
+    sticky: 'Ihr erster S&P-500-Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
     updatedOn: (d) => `Aktualisiert am ${d}`,
     types: { stock: 'Prognose', dividend: 'Dividende', earnings: 'Quartalszahlen' }, otherIn: { en: 'In English', fr: 'En français', 'zh-HK': '中文' }, locale: 'de-DE',
     sibling: (t, c) => `${c} ${UI.de.types[t]}`, find: 'Unternehmen finden', findPh: 'Unternehmen oder Kürzel, z. B. Apple oder NVDA', num: germanNumber,
@@ -132,12 +132,12 @@ export const UI = {
   },
   // Traditional Chinese, Hong Kong usage (B114 row 2): every fixed word with its English meaning in reports/drafts/zh-ui-words.md
   'zh-HK': {
-    htmlLang: 'zh-Hant', allStocks: '所有股票', blog: '網誌', headerCta: '免費取得首份報告', free: '首份報告免費 · 無需信用卡',
-    readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均連結至 ${c} 的公開文件`, chapters: '章', words: '詞',
+    htmlLang: 'zh-Hant', allStocks: '所有股票', blog: '網誌', headerCta: '首份 S&P 500 報告免費', free: '首份 S&P 500 報告免費 · 無需信用卡',
+    readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均可追溯至 ${c} 的公開文件`, chapters: '章', words: '詞',
     sources: '個引用來源', kicker: '研究備忘錄', memoOf: '備忘錄日期', mid: (p, P, t, T) => `本頁展示備忘錄 ${P} 段中的 ${p} 段，以及 ${T} 個表格中的 ${t} 個。`,
     fromMemo: '摘自完整備忘錄', cont: '免費繼續閱讀', whereFrom: '數字來源', filingOn: (h) => `${h} 上的文件`,
     filing: '文件', moreOn: (c) => `更多關於 ${c}`, rivals: '競爭對手', browse: '瀏覽', rail: (c) => `${c} 完整備忘錄`, readItFree: '免費閱讀',
-    sticky: '首份報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼？',
+    sticky: '首份 S&P 500 報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼？',
     guide: '用 AI 分析一檔股票', updatedOn: (d) => `更新於 ${d}`,
     types: { stock: '股票分析', dividend: '股息', earnings: '財報' }, otherIn: { en: 'English', fr: 'Français', de: 'Deutsch' }, locale: 'zh-HK',
     sibling: (t, c) => `${c} ${UI['zh-HK'].types[t]}`, find: '尋找公司', findPh: '公司名稱或股票代號，例如 Apple 或 NVDA', num: same,
@@ -198,13 +198,13 @@ export const ALT_ROOT = '/alternatives/';
 const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich', 'zh-HK': '研究工具比較' };
 const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich', 'zh-HK': '其他比較' };
 const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', 'zh-HK': '中文' };
-// The free report on a comparison page, in the owner's words (2026-10-30: 'your first S&P 500 report is free', never 'first report
-// free'): the header button, the box's example ticker, the line under the box. The app opens it only for a ticker named at sign-up.
+// The free report on a comparison page: the box's example ticker and the line under it. The app opens the report only for a ticker
+// named at sign-up, so the page's header button jumps to this box.
 const ALT_OFFER = {
-  en: { headerCta: 'First S&P 500 report free', ph: 'e.g. KO', note: 'Try an S&P 500 ticker, like KO for Coca-Cola. Sign up with no card and the report opens free.' },
-  fr: { headerCta: 'Premier rapport S&P 500 gratuit', ph: 'p. ex. KO', note: 'Essayez un symbole du S&P 500, comme KO pour Coca-Cola. Inscrivez-vous sans carte et le rapport s’ouvre gratuitement.' },
-  de: { headerCta: 'Erster S&P-500-Bericht gratis', ph: 'z. B. KO', note: 'Probieren Sie einen Ticker aus dem S&P 500, etwa KO für Coca-Cola. Melden Sie sich ohne Karte an, und der Bericht öffnet sich gratis.' },
-  'zh-HK': { headerCta: '首份 S&P 500 報告免費', label: '免費取得報告', ph: '例如 KO', note: '試試 S&P 500 股票代號，例如可口可樂是 KO。無需信用卡，註冊後報告會免費開啟。' },
+  en: { ph: 'e.g. KO', note: 'Try an S&P 500 ticker, like KO for Coca-Cola. Sign up with no card and the report opens free.' },
+  fr: { ph: 'p. ex. KO', note: 'Essayez un symbole du S&P 500, comme KO pour Coca-Cola. Inscrivez-vous sans carte et le rapport s’ouvre gratuitement.' },
+  de: { ph: 'z. B. KO', note: 'Probieren Sie einen Ticker aus dem S&P 500, etwa KO für Coca-Cola. Melden Sie sich ohne Karte an, und der Bericht öffnet sich gratis.' },
+  'zh-HK': { ph: '例如 KO', note: '試試 S&P 500 股票代號，例如可口可樂是 KO。無需信用卡，註冊後報告會免費開啟。' },
 };
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
 const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
@@ -503,7 +503,7 @@ function langNav(lang) {
     .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
 }
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], headerCta = '' }) {
+function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
   const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
@@ -532,7 +532,7 @@ ${gaHead(meta)}</head>
 <body>
 <header class="site"><div class="in"><a class="logo" href="${LANDING}/"><i>S</i><span>My<b>Stock</b>Butler</span></a>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
-<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${headerCta ? esc(headerCta) : ui.headerCta}</a></nav></div></header>
+<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${esc(ui.headerCta)}</a></nav></div></header>
 ${body}
 <footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
@@ -560,7 +560,7 @@ function chaptersRail(data, cta, lang = 'en', chapters = null) {
   const day = lang !== 'en' ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
   return `<aside class="rail"><div class="box"><h3>${esc(ui.rail(shortName(data)))}</h3>
 <div class="meta">${esc(day)} · ${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words} · ${k.sources || 0} ${ui.sources}</div>
-<ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">${ui.readItFree}</a><div class="sub">${ui.free}</div></div></aside>`;
+<ul class="contents">${items}</ul><a class="btn" data-cta="rail" href="${esc(cta)}">${ui.readItFree}</a><div class="sub">${esc(ui.free)}</div></div></aside>`;
 }
 
 // One company page, in English, in French (S&P/TSX 60) or in German (S&P 500). ctx.exists(path) tells whether another
@@ -643,12 +643,12 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     if (i === 0 && calcBlock) body.push(calcBlock);
     if (i === 1) {
       body.push(`<aside class="mid"><h3>${esc(ui.mid(shownP, k.paragraphs || 0, shownT, k.tables || 0))}</h3>
-<p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div></aside>`);
+<p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${esc(ui.free)}</span></div></aside>`);
     }
   });
   const teaser = teaserData
     ? `<section class="teaser" aria-label="${esc(ui.fromMemo)}"><div class="lab">${esc(ui.fromMemo)}${teaserData.chapter ? ` · ${esc(teaserData.chapter)}` : ''}</div><div class="fade">${mdBlock(teaserData.text)}</div>
-<div class="lock"><a class="btn big" data-cta="teaser" href="${esc(cta)}">${esc(ui.cont)}</a><div>${ui.free}</div></div></section>`
+<div class="lock"><a class="btn big" data-cta="teaser" href="${esc(cta)}">${esc(ui.cont)}</a><div>${esc(ui.free)}</div></div></section>`
     : '';
   const sources = (data.sources || []).filter((s) => /^https?:\/\//.test(s.url));
   const sourcesHtml = sources.length
@@ -710,7 +710,7 @@ ${crumbs.html}
 <h1>${esc(page.title)}</h1>
 <p class="lede">${esc(byUs(data.memo_date, lang))}${esc(page.opening)}</p>
 ${facts ? `<div class="glance">${facts}</div>` : ''}
-<div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${ui.free}</span></div>
+<div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${esc(ui.free)}</span></div>
 <div class="proof"><span>${esc(ui.proof(company))}</span><span>${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words}</span><span>${k.sources || 0} ${ui.sources}</span></div>
 ${body.join('\n')}
 ${teaser}
@@ -718,7 +718,7 @@ ${sourcesHtml}
 ${links}
 </article>
 ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</div>
-<div class="bar"><div class="t">${esc(ui.rail(company))}<span>${ui.sticky}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
+<div class="bar"><div class="t">${esc(ui.rail(company))}<span>${esc(ui.sticky)}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type, lang, slug, ticker, title: page.title, modelTitle, datedKind, description: page.meta_description, lastmod: isoDay(data.memo_date),
@@ -737,7 +737,7 @@ function hubList(companies, { withDates = false, langs = [] } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', headerCta = '', cta = '' }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', cta = '' }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   const searchBox = search
@@ -752,7 +752,6 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
     lang,
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, ...(updated ? { dateModified: updated } : {}), isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
     meta: { type: 'hub', ticker: '', ...(cta ? { cta } : {}) },
-    headerCta,
     // B114 CHECKLIST A13: a language hub says when it was last updated (its newest memo), on the page and in its data
     body: `<div class="hub">${crumbs.html}<h1>${esc(title)}</h1><p class="lede">${esc(intro)}</p>${updated && UI[lang].updatedOn ? `<p class="sub">${esc(UI[lang].updatedOn(humanDay(updated, lang)))}</p>` : ''}${searchBox}${sections.join('\n')}</div>`,
   });
@@ -788,7 +787,7 @@ function renderLangHome(lang, list) {
     body: `<div class="hub home">
 <h1>${esc(w['hero.title.a'])} ${esc(w['hero.title.b'])}</h1>
 <p class="lede">${esc(w['hero.sub'])}</p>
-<div class="ctarow"><a class="btn big" data-cta="home" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><span class="sub">${ui.free}</span></div>
+<div class="ctarow"><a class="btn big" data-cta="home" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><span class="sub">${esc(ui.free)}</span></div>
 <p class="sub">${esc(w['ticker.try'])}</p>
 ${steps}
 <div class="ctarow"><a class="btn" data-cta="home-end" href="${esc(cta)}">${esc(w['steps.1.cta'])}</a><a href="${cfg.root}">${esc(ui.allStocks)} (${list.length})</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}</div>
@@ -1094,7 +1093,7 @@ export function renderComparePage(pair, ctx) {
   const quote = (s) => (s.quote
     ? `<blockquote class="quote">${mdBlock(s.quote)}<p class="who">${esc(s.name)} (${esc(s.ticker)}), from our memo of ${esc(humanDay(s.memo_date))}${exists(pagePath(s.slug, 'stock')) ? ` · <a href="${pagePath(s.slug, 'stock')}">${esc(UI.en.sibling('stock', s.name))}</a>` : ''}</p></blockquote>`
     : '');
-  const ctas = `<div class="ctarow"><a class="btn" data-cta="compare-a" href="${esc(ctaOf(A))}">${esc(UI.en.readFull(A.name))}</a><a class="btn" data-cta="compare-b" href="${esc(ctaOf(B))}">${esc(UI.en.readFull(B.name))}</a><span class="sub">${FREE_LINE}</span></div>`;
+  const ctas = `<div class="ctarow"><a class="btn" data-cta="compare-a" href="${esc(ctaOf(A))}">${esc(UI.en.readFull(A.name))}</a><a class="btn" data-cta="compare-b" href="${esc(ctaOf(B))}">${esc(UI.en.readFull(B.name))}</a><span class="sub">${esc(FREE_LINE)}</span></div>`;
   const pagesOf = (s) => TYPES.filter((t) => exists(pagePath(s.slug, t))).map((t) => `<a href="${pagePath(s.slug, t)}">${esc(UI.en.sibling(t, s.name))}</a>`);
   const others = [...(ctx?.compareLinks?.get(A.slug) || []), ...(ctx?.compareLinks?.get(B.slug) || [])]
     .filter((c, i, all) => c.slug !== pair.slug && all.findIndex((x) => x.slug === c.slug) === i)
@@ -1321,7 +1320,6 @@ function renderAlternatives(companies, exists, updated = '') {
     description: 'Seeking Alpha, Simply Wall St, Bloomberg Terminal and AI research tools compared by price and by what you get for one stock, and who each one suits.',
     intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler is our product: one long report per company, written from its filings, every number traced to its source. Your first S&P 500 report is free.',
     sections: [`${tickerBox('en', 'seo-guide-index', { ...ALT_OFFER.en, id: 'try', required: true })}<p class="boxnote">${esc(ALT_OFFER.en.note)}</p>`, `<ul class="list">${list}</ul>`],
-    headerCta: ALT_OFFER.en.headerCta,
     cta: '#try',
     crumbItems: [{ name: 'MyStockButler', path: '/' }, { name: ALT_WORDS.en, path: ALT_ROOT }],
     lang: 'en',

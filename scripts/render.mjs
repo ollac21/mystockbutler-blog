@@ -673,7 +673,7 @@ function renderLlms(entries, stockPages = [], hubs = []) {
   // the About pages (2026-10-29): who MyStockButler is, first, so an assistant reads the definition before the lists
   const about = aboutLlmsLines(hubs);
   const aboutPart = about.length ? `## About MyStockButler\n\n${about.join('\n')}\n\n` : '';
-  const head = `# ${SITE_NAME}\n\n> MyStockButler writes long, source-checked research reports on single public companies, every number linked to the document it comes from; not investment advice. This blog publishes its stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n${aboutPart}## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
+  const head = `# ${SITE_NAME}\n\n> MyStockButler writes long, source-checked research reports on single public companies, every number traced to its source; not investment advice. This blog publishes its stock analysis articles and stock pages. Each page is a static, crawler-readable page quoting a research memo.\n\n${aboutPart}## Languages\n\n${langs.join('\n')}\n\n## Articles\n\n${lines.join('\n')}\n`;
   const stocks = stockPages.map((p) => `- [${p.title}](${p.url}): ${p.description}`);
   const listed = new Set(LANG_HUBS.flatMap((l) => [`${SITE}${l.home}`, `${SITE}${l.path}`]));
   const hubLines = hubs.filter((h) => !listed.has(h.url) && !h.alt && !h.about).map((h) => `- [${h.title}](${h.url})${h.description ? `: ${h.description}` : ''}`);

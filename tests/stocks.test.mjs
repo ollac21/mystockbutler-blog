@@ -350,7 +350,7 @@ test('the French guide /fr/ia-bourse/ (B114 rows 3 + 4): its title, one h1, the 
   const { pages, hubs } = buildStockSite([load('stock-td-to-fr.json'), load('stock-rmd.json')], { today: TODAY });
   const g = hubs.find((h) => h.path === '/fr/ia-bourse/');
   assert.ok(g, 'the guide is built');
-  assert.equal(g.title, 'IA en bourse : analyser une action, 1er rapport gratuit');
+  assert.equal(g.title, 'IA en bourse : analyser une action, rapport S&P 500 gratuit');
   assert.match(g.html, /<html lang="fr">/);
   assert.equal((g.html.match(/<h1>/g) || []).length, 1);
   assert.match(g.html, /<h1>IA en bourse : analyser une action avec les questions d(&#39;|')un analyste<\/h1>/);
@@ -397,7 +397,7 @@ test('the Chinese guide /zh/ai-stock-analysis/ (B114 row 5): its title, the butt
   assert.ok(g, 'built once a Chinese page exists');
   assert.equal(g.title, 'AI 股票分析：用分析師的問題分析一檔股票');
   assert.match(g.html, /<html lang="zh-Hant">/);
-  assert.match(g.html, />免費取得首份報告<\/button>/);
+  assert.match(g.html, />免費取得報告<\/button>/);
   assert.equal((g.html.match(/<h1>/g) || []).length, 1);
   assert.match(g.html, /<link rel="alternate" hreflang="fr" href="https:\/\/blog\.mystockbutler\.com\/fr\/ia-bourse\/">/);
   assert.match(hubs.find((h) => h.path === '/fr/ia-bourse/').html, /<link rel="alternate" hreflang="zh-Hant" href="https:\/\/blog\.mystockbutler\.com\/zh\/ai-stock-analysis\/">/);
