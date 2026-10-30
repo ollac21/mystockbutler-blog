@@ -621,7 +621,7 @@ ${others.map(({ post }) => cardHtml(post, false)).join('\n')}
 <section class="index-head"><div class="wrap">
 <div class="eyebrow">MyStockButler Research</div>
 <h1>Investment research, rebuilt from the evidence.</h1>
-<p>Full public-company memos with the calculations, sources, and investment verdict preserved.</p>
+<p>Full public-company reports, written from the filings, with the calculations, the sources and three price scenarios. Never a buy or sell call.</p>
 ${languageStrip(hubs)}
 </div></section>
 <section class="index-body wrap">

@@ -18,7 +18,7 @@ export function esc(value) {
 export function siteHeader() {
   return `<header class="site-header">
 <div class="pill">
-<a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">StockButler</span></a>
+<a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">MyStockButler</span></a>
 <nav class="nav" aria-label="Primary">
 <a href="${LANDING}/#how-it-works">How it works</a>
 <a href="${LANDING}/#pricing">Pricing</a>
@@ -38,7 +38,7 @@ export function siteFooter() {
   return `<footer class="site-footer">
 <div class="footer-inner">
 <div class="footer-row">
-<a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">StockButler</span></a>
+<a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">MyStockButler</span></a>
 <nav aria-label="Footer">
 <a href="/about/">About</a>
 <a href="${LANDING}/legal">Legal</a>
