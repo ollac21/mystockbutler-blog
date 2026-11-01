@@ -469,6 +469,18 @@ ${script}
 </section>`;
 }
 
+// The words of the page's own line ('$10,000 invested in Coca-Cola ... pays $230 in the first year, before tax'), as plain text, for the dividend
+// picture's subtitle: the same two amounts the page prints, or null when the page has no such line.
+export function embedAmounts(data, lang) {
+  if (!DIVCALC_PATH[lang] || process.env.DIVCALC_EMBED === 'off') return null;
+  const e = entryOf(data);
+  if (!e.prefill) return null;
+  const sym = (CUR_SYM[e.cur] && CUR_SYM[e.cur][lang]) || ['', e.cur ? `\u00a0${e.cur}` : ''];
+  const rows = project({ ...DEFAULTS, y: e.y, g: e.g ?? 0 });
+  const text = (v, dec) => `${sym[0]}${fmtNum(v, dec, lang)}${sym[1]}`;
+  return { amount: text(DEFAULTS.amount, 0), income: text(rows[0].div, 2), y: fmtNum(e.y, e.yd, lang) };
+}
+
 // ---- build time ----
 
 function compact(e) {

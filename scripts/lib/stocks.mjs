@@ -12,9 +12,9 @@ import { Marked } from 'marked';
 import { APP, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
-import { loadAlternatives, loadGuides, renderGuide, tickerBox } from './guides.mjs';
+import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, renderAbout } from './about.mjs';
-import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, eligible as divcalcEligible, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
+import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -492,78 +492,561 @@ function chartHtml(page, data, ui = UI.en) {
   return '';
 }
 
-// THE STOCK PICTURE (SEO list row 3, 2026-11-01): one chart picture per stock page, in place of the inline scenario chart, for Google
-// Images, the Article's image and the share previews. 1200 by 675 is 16:9, the first of the shapes Google's Article rules recommend
-// (at least 50,000 pixels; this is 810,000); X and LinkedIn crop a little off the top and bottom, where nothing but background sits.
-// The numbers are scenarioPoints', the strings the inline chart prints. No today's price on the picture: chart.today is not the page's
-// price on HK, London and some other pages (Tencent's chart said 362.25 against the page's 424.80), and the page prints the
-// price just above the picture.
+// THE PICTURES (SEO list row 3, 2026-11-01; templates approved by the owner): one picture on each stock, dividend, earnings, comparison and tools page, for
+// Google Images, the Article's image and the share previews. 1200 by 675 is 16:9, the first of the shapes Google's Article rules recommend (at least 50,000 pixels;
+// this is 810,000); X and LinkedIn crop a little off the top and bottom. Every number on a picture is the page's own, as printed; the only arithmetic is on a declared
+// scale (96,221 US$ millions drawn as 96.2 US$ billions). The functions below turn a company's file into the finished strings stockPicture.mjs draws.
 export const PICTURE_SIZE = { width: 1200, height: 675 };
 const PICTURE_WORDS = {
-  en: { pattern: 'stock-forecast', legend: 'Probability · return since today', sep: ', ', word: (w) => w.toLowerCase(),
-    alt: (c, d, list) => `${c} share price scenarios for ${d}: ${list}` },
-  fr: { pattern: 'action-previsions', legend: 'Probabilité · rendement depuis le cours actuel', sep: ', ', word: (w) => w.toLowerCase(),
-    alt: (c, d, list) => `Scénarios de cours de l'action ${c} pour ${d} : ${list}` },
-  de: { pattern: 'aktie-prognose', legend: 'Wahrscheinlichkeit · Rendite seit dem heutigen Kurs', sep: ', ', word: same,
-    alt: (c, d, list) => `Aktienkurs-Szenarien von ${c} für ${d}: ${list}` },
-  'zh-HK': { pattern: 'gupiao-fenxi', legend: '機率 · 較今日的回報', sep: '，', word: same,
-    alt: (c, d, list) => `${c} ${d}的股價情境：${list}` },
+  en: { pattern: 'stock-forecast', file: { dividend: 'dividend', earnings: 'earnings' }, sep: ', ', word: (w) => w.toLowerCase(),
+    alt: (c, d, list) => `${c} share price scenarios for ${d}: ${list}`,
+    fTitle: (n, y) => `${n}: where the shares could go by ${y}`,
+    fSub: (cur, div) => `Our three scenarios${cur ? `, in ${cur}` : ''}.${div ? ' Returns include dividends.' : ''}`,
+    pence: 'pence', curName: {}, chance: (r, p) => `${r}, ${p} chance`, priceOn: (d) => `${d} price`, memoPrice: 'Memo price',
+    dTitle: (n, y) => (y ? `${n} dividend: ${y} yield` : `${n} dividend`),
+    dSub: (a, i) => `${a} invested pays ${i} in the first year, before tax`, dGeneric: 'Dividend per share',
+    paidHead: 'Dividend per share: what it paid', forecastHead: 'Our forecast',
+    dAlt: (n, first, last, fc, y) => `${n} dividend per share: ${first.text} paid in ${first.label}, ${last.text} in ${last.label}${fc ? `; our forecast: ${fc.text} in ${fc.label}` : ''}${y ? `; dividend yield ${y}` : ''}`,
+    eTitle: (n, d) => (d ? `${n} reports next on ${d}` : `${n} results`),
+    eSub: (what, unit, eps, guided) => `${what}${unit ? ` in ${unit}` : ''}${eps && guided ? ", earnings per share, and management's guidance" : eps ? ', and earnings per share' : guided ? ", and management's guidance" : ''}`,
+    eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}: ${what}${unit ? ` (${unit})` : ''}: ${list}${eps ? `; ${epsWord} ${eps}` : ''}${guide ? `; guidance ${guide}` : ''}`,
+    by: { quarter: 'by quarter', half: 'by half-year', year: 'by year', period: 'by reported period' },
+    period: { quarter: 'Quarter', half: 'Half-year', year: 'Year', period: 'Period' }, what: (w, by) => `${w} ${by}`, eps: 'EPS', guided: 'Guided',
+    scale: { millions: (c) => `${c} millions`, billions: (c) => `${c} billions`, thousands: (c) => `${c} thousands` } },
+  fr: { pattern: 'action-previsions', file: { dividend: 'dividende', earnings: 'resultats' }, sep: ', ', word: (w) => w.toLowerCase(),
+    alt: (c, d, list) => `Scénarios de cours de l'action ${c} pour ${d} : ${list}`,
+    fTitle: (n, y) => `${n} : où l'action pourrait aller d'ici ${y}`,
+    fSub: (cur, div) => `Nos trois scénarios${cur ? `, en ${cur}` : ''}.${div ? ' Rendements dividendes compris.' : ''}`,
+    pence: 'pence', curName: {}, chance: (r, p) => `${r}, probabilité ${p}`, priceOn: (d) => `cours du ${d}`, memoPrice: 'cours du mémo',
+    dTitle: (n, y) => (y ? `Dividende ${n} : rendement de ${y}` : `Dividende ${n}`),
+    dSub: (a, i) => `${a} placés rapportent ${i} la première année, avant impôt`, dGeneric: 'Dividende par action',
+    paidHead: 'Dividende par action : ce qui a été versé', forecastHead: 'Nos prévisions',
+    dAlt: (n, first, last, fc, y) => `Dividende par action de ${n} : ${first.text} versés en ${first.label}, ${last.text} en ${last.label}${fc ? ` ; nos prévisions : ${fc.text} en ${fc.label}` : ''}${y ? ` ; rendement du dividende ${y}` : ''}`,
+    eTitle: (n, d) => (d ? `${n} : prochains résultats le ${d}` : `Résultats de ${n}`),
+    eSub: (what, unit, eps, guided) => `${what}${unit ? ` en ${unit}` : ''}${eps && guided ? ', bénéfice par action et prévisions de la direction' : eps ? ' et bénéfice par action' : guided ? ' et prévisions de la direction' : ''}`,
+    eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n} : ${what}${unit ? ` (${unit})` : ''} : ${list}${eps ? ` ; ${epsWord} ${eps}` : ''}${guide ? ` ; prévisions ${guide}` : ''}`,
+    by: { quarter: 'par trimestre', half: 'par semestre', year: 'par année', period: 'par période' },
+    period: { quarter: 'Trimestre', half: 'Semestre', year: 'Année', period: 'Période' }, what: (w, by) => `${w} ${by}`, eps: 'BPA', guided: 'Prévu',
+    scale: { millions: (c) => `millions ${c}`, billions: (c) => `milliards ${c}`, thousands: (c) => `milliers ${c}` } },
+  de: { pattern: 'aktie-prognose', file: { dividend: 'dividende', earnings: 'quartalszahlen' }, sep: ', ', word: same,
+    alt: (c, d, list) => `Aktienkurs-Szenarien von ${c} für ${d}: ${list}`,
+    fTitle: (n, y) => `${n}: wohin die Aktie bis ${y} gehen könnte`,
+    fSub: (cur, div) => `Unsere drei Szenarien${cur ? `, in ${cur}` : ''}.${div ? ' Renditen inklusive Dividenden.' : ''}`,
+    pence: 'Pence', curName: {}, chance: (r, p) => `${r}, ${p} Wahrscheinlichkeit`, priceOn: (d) => `Kurs vom ${d}`, memoPrice: 'Kurs im Memo',
+    dTitle: (n, y) => (y ? `${n} Dividende: ${y} Rendite` : `${n} Dividende`),
+    dSub: (a, i) => `${a}, angelegt, bringen im ersten Jahr vor Steuern ${i}`, dGeneric: 'Dividende je Aktie',
+    paidHead: 'Dividende je Aktie: was gezahlt wurde', forecastHead: 'Unsere Prognose',
+    dAlt: (n, first, last, fc, y) => `Dividende je Aktie von ${n}: ${first.text} gezahlt für ${first.label}, ${last.text} für ${last.label}${fc ? `; unsere Prognose: ${fc.text} für ${fc.label}` : ''}${y ? `; Dividendenrendite ${y}` : ''}`,
+    eTitle: (n, d) => (d ? `${n}: nächste Zahlen am ${d}` : `${n} Quartalszahlen`),
+    eSub: (what, unit, eps, guided) => `${what}${unit ? ` in ${unit}` : ''}${eps && guided ? ', Gewinn je Aktie und Prognose des Managements' : eps ? ' und Gewinn je Aktie' : guided ? ' und Prognose des Managements' : ''}`,
+    eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}: ${what}${unit ? ` (${unit})` : ''}: ${list}${eps ? `; ${epsWord} ${eps}` : ''}${guide ? `; Prognose ${guide}` : ''}`,
+    by: { quarter: 'je Quartal', half: 'je Halbjahr', year: 'je Jahr', period: 'je Berichtszeitraum' },
+    period: { quarter: 'Quartal', half: 'Halbjahr', year: 'Jahr', period: 'Zeitraum' }, what: (w, by) => `${w} ${by}`, eps: 'EPS', guided: 'Prognose',
+    scale: { millions: (c) => `Millionen ${c}`, billions: (c) => `Milliarden ${c}`, thousands: (c) => `Tausend ${c}` } },
+  'zh-HK': { pattern: 'gupiao-fenxi', file: { dividend: 'guxi', earnings: 'caibao' }, sep: '，', word: same,
+    alt: (c, d, list) => `${c} ${d}的股價情境：${list}`,
+    fTitle: (n, y) => `${n}：${y}年前股價可能的走向`,
+    fSub: (cur, div) => `我們的三個情境${cur ? `，以${cur}計` : ''}。${div ? '回報已包括股息。' : ''}`,
+    pence: '便士', curName: { USD: '美元', CAD: '加元', HKD: '港元', EUR: '歐元', GBP: '英鎊' }, chance: (r, p) => `${r}，機率 ${p}`, priceOn: (d) => `${d}股價`, memoPrice: '備忘錄股價',
+    dTitle: (n, y) => (y ? `${n} 股息：股息率 ${y}` : `${n} 股息`),
+    dSub: (a, i) => `投資 ${a}，首年稅前可收取 ${i} 股息`, dGeneric: '每股股息',
+    paidHead: '每股股息：已派發', forecastHead: '我們的預測',
+    dAlt: (n, first, last, fc, y) => `${n} 每股股息：${first.label} ${first.text}，${last.label} ${last.text}${fc ? `；我們的預測：${fc.label} ${fc.text}` : ''}${y ? `；股息率 ${y}` : ''}`,
+    eTitle: (n, d) => (d ? `${n} 下次公布業績：${d}` : `${n} 財報`),
+    eSub: (what, unit, eps, guided) => `${what}${unit ? `（${unit}）` : ''}${eps && guided ? '、每股盈利及管理層指引' : eps ? '及每股盈利' : guided ? '及管理層指引' : ''}`,
+    eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}：${what}${unit ? `（${unit}）` : ''}：${list}${eps ? `；${epsWord} ${eps}` : ''}${guide ? `；指引 ${guide}` : ''}`,
+    by: { quarter: '每季', half: '每半年', year: '每年', period: '每期' },
+    period: { quarter: '季度', half: '半年', year: '年度', period: '期間' }, what: (w, by) => `${by}${w}`, eps: '每股盈利', guided: '指引',
+    scale: { millions: (c) => `百萬${c}`, billions: (c) => `十億${c}`, thousands: (c) => `千${c}` } },
 };
 // A price in the page's currency: never converted (London prints pence, so a London price stays in pence). A code not listed
 // here is written after the number; no currency, no mark. [before the number, after it]
 const MONEY = {
-  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'] },
-  fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'] },
-  de: { USD: ['', ' $'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'] },
-  'zh-HK': { USD: ['', ' 美元'], CAD: ['', ' 加元'], HKD: ['', ' 港元'], EUR: ['', ' 歐元'], GBP: ['', ' 英鎊'], GBp: ['', ' 便士'] },
+  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'], RMB: ['RMB ', ''], TWD: ['NT$', ''], USc: ['', '¢'], EURc: ['', ' c'] },
+  fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' $ NT'], USc: ['', ' ¢ US'], EURc: ['', ' c'] },
+  de: { USD: ['', ' $'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' NT$'], USc: ['', ' US-Cent'], EURc: ['', ' Cent'] },
+  'zh-HK': { USD: ['', ' 美元'], CAD: ['', ' 加元'], HKD: ['', ' 港元'], EUR: ['', ' 歐元'], GBP: ['', ' 英鎊'], GBp: ['', ' 便士'], RMB: ['', ' 人民幣'], TWD: ['', ' 新台幣'], USc: ['', ' 美仙'], EURc: ['', ' 歐仙'] },
 };
 export function money(label, currency, lang = 'en') {
   const [, sign, rest] = /^([≈~<>−-]*)(.*)$/.exec(String(label));
   const [before, after] = MONEY[lang]?.[currency] || ['', currency ? ` ${currency}` : ''];
   return `${sign}${before}${rest}${after}`;
 }
-// A printed return this far out is a wrong number in the memo, not a scenario (Lloyds: 176109.29p, +173249 %, on a share price of 101.60p):
-// no picture carries it to Google Images or X; the page stays as it is until the memo is right. The next largest return in the library is +865 %.
-const PICTURE_MAX_RETURN = 2000;
 // English letters for a file name: 'Crédit Agricole S.A.' -> 'credit-agricole-s-a', 'Host Hotels & Resorts' -> 'host-hotels-and-resorts'.
 export function fileWords(text) {
   return String(text ?? '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/['’]/g, '')
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
-// The picture of a stock page: its addresses, its alt text and the strings to draw. { none: why } when the page has no numbers for one.
-export function pictureOf(data, lang = 'en') {
+const pictureFiles = (dir, base) => ({ ...PICTURE_SIZE, path: `${dir}${base}.webp`, pngPath: `${dir}${base}.png`, url: `${SITE}${dir}${base}.webp`, pngUrl: `${SITE}${dir}${base}.png` });
+const memoLine = (data, lang) => {
+  const day = lang !== 'en' ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
+  return day ? `${UI[lang].memoOf} ${day}` : '';
+};
+// A plain cell ('1.67', '−0.40', '1,234.5') as a number, or null. Shape only.
+const plainNum = (v) => cellNum(v);
+const SHORT_MONTHS = { en: MON_EN, fr: MON_FR, de: MON_DE };
+// A period column ('Oct 2024', 'Quarter to Jun 2026', '6 months to Jun 2026', 'Year to Mar 2026', '2025'), our own forms. Shape only.
+const PERIOD_CELL = /^(?:(Quarter|6 months|Half-year|Year) to )?(?:([A-Z][a-z]{2}) )?(\d{4})$/;
+function periodOf(col) {
+  const m = PERIOD_CELL.exec(String(col ?? '').trim());
+  return m && (!m[2] || MON_EN.includes(m[2])) ? { kind: m[1] || '', mon: m[2] || '', year: m[3], month: m[2] ? MON_EN.indexOf(m[2]) : -1 } : null;
+}
+// 'Oct 2024' -> 'Oct 24', 'okt. 24', '24年10月'; a bare year stays; anything else as the page's own date words.
+function shortPeriod(col, lang) {
+  const p = periodOf(col);
+  if (!p) return UI[lang].date(String(col));
+  if (!p.mon) return p.year;
+  const yy = p.year.slice(2);
+  if (lang === 'zh-HK') return `${yy}年${p.month + 1}月`;
+  return `${SHORT_MONTHS[lang][p.month]} ${yy}`;
+}
+// An ISO day as 'Oct 16', '16 oct.', '16. Okt.', '10月16日'; its month and year as 'Oct 2026', the page's own short column date.
+function shortDay(iso, lang) {
+  const m = Number(iso.slice(5, 7)) - 1;
+  const d = Number(iso.slice(8, 10));
+  if (lang === 'zh-HK') return `${m + 1}月${d}日`;
+  if (lang === 'fr') return `${d} ${MON_FR[m]}`;
+  if (lang === 'de') return `${d}. ${MON_DE[m]}`;
+  return `${MON_EN[m]} ${d}`;
+}
+const shortMonthYear = (iso, lang) => UI[lang].date(`${MON_EN[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`);
+const shortColumn = (col, lang) => UI[lang].date(String(col).replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/, (m) => MON_EN[MONTHS_EN.indexOf(m)]));
+// A number with its thousands, in the page's format.
+function grouped(v, decimals, ui) {
+  return ui.num(v.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
+}
+// A number the picture prints, looked for on the page's own text: whole, never inside a longer one.
+const normalSpace = (t) => String(t).replace(/[\u00a0\u202f]/g, ' ');
+export function printedOn(text, number) {
+  const n = normalSpace(number).replace(/^[+−-]/, '');
+  // an older translated page prints a number the English way ('2.1%' on a French page): the same number
+  const swapped = n.replace(/[.,]/g, (c) => (c === '.' ? ',' : '.'));
+  const body = normalSpace(text);
+  return [n, swapped, swapped.replace(/ /g, ',')].some((form) => new RegExp(`(?<![\\d.,])${form.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\d]|[.,]\\d)`).test(body));
+}
+
+// The axis of the fan chart, by arithmetic: zero as the base when the fan still fills at least half of the height, else a base under the lowest value.
+export function niceAxis(values) {
+  const hi = Math.max(...values);
+  const lo = Math.min(...values);
+  const span = hi - lo;
+  const zero = lo >= 0 && (span === 0 || span / hi >= 0.5);
+  const floorAt = zero ? 0 : lo - Math.max(span * 0.12, Math.abs(hi) * 0.001);
+  const wanted = (hi - floorAt) / 4 || 1;
+  const pow = 10 ** Math.floor(Math.log10(wanted));
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * pow).find((x) => x >= wanted * 0.999);
+  const min = zero ? 0 : Math.floor(floorAt / step) * step;
+  const max = hi + (hi - min) * 0.05 || 1;
+  const ticks = [];
+  for (let i = 0; min + i * step <= max && i < 12; i += 1) ticks.push(Number((min + i * step).toFixed(10)));
+  return { min: Number(min.toFixed(10)), max, step, ticks };
+}
+
+// THE STOCK PAGE. The start is the value in the table's caption ('the return since today's 216.62'): the table's returns are computed on it. chart.today is not
+// always the page's price (Tencent's chart said 362.25 against the page's 424.80). A page with no such table starts at its own fact 'Share price today'.
+// The date beside it comes from price_date only when that price is the same number at the caption's decimals (7.895 printed 7.90); else no date.
+const SCENARIO_CAPTION = /today['’]s\s+(?:[\p{L}-]+\s+)*?[$£€]?\s*(\d[\d,]*(?:\.\d+)?)/u;
+function scenarioTable(page) {
+  return (page.blocks || []).map((b) => b.table).find((t) => t && (t.head || []).includes('Case')) || null;
+}
+export function startPrice(data) {
+  const page = data.pages.stock;
+  const table = scenarioTable(page);
+  const fromCaption = table ? SCENARIO_CAPTION.exec(String(table.unit || ''))?.[1] : null;
+  const fact = (page.facts || []).find((f) => /^Share price today/.test(String(f.label)));
+  const raw = fromCaption || (fact ? String(fact.value).trim() : '');
+  const value = plainNum(raw);
+  if (value === null) return null;
+  const decimals = (raw.split('.')[1] || '').length;
+  const day = isoDay(data.price_date);
+  const price = Number(data.price);
+  const dated = !!day && data.price !== null && data.price !== undefined && Number.isFinite(price) && Math.abs(price - value) <= 0.5 * 10 ** -decimals + 1e-9;
+  return { raw, value, day: dated ? day : '', caption: !!fromCaption };
+}
+// The case's name in the page's own table words, when the page has that table; else our own word.
+function caseWord(data, lang, name) {
+  const ui = UI[lang];
+  if (lang === 'en') return ui.cases[name];
+  const en = data.pages.stock;
+  const tr = langPage(data, 'stock', lang);
+  const i = (en.blocks || []).findIndex((b) => b.table && (b.table.head || []).includes('Case'));
+  if (i < 0 || !tr || tr.blocks?.length !== en.blocks.length) return ui.cases[name];
+  const r = en.blocks[i].table.rows.findIndex((row) => labelOf(row[0]) === name);
+  const twin = tr.blocks[i]?.table?.rows?.[r];
+  if (!twin || digitsOf(twin[twin.length - 1]) !== digitsOf(en.blocks[i].table.rows[r][twin.length - 1])) return ui.cases[name];
+  return labelOf(twin[0]);
+}
+function forecastPicture(data, lang) {
   const chart = data?.pages?.stock?.chart;
   if (chart?.kind !== 'scenarios') return { none: 'no scenario chart' };
   const ui = UI[lang];
   const words = PICTURE_WORDS[lang];
   const sc = scenarioPoints(chart, ui);
   if (!sc?.pts.Bear || !sc.pts.Bull) return { none: 'no bear or bull number' };
+  const start = startPrice(data);
+  if (!start) return { none: 'no start price' };
   const names = ['Bear', 'Base', 'Bull'].filter((n) => sc.pts[n]);
-  const en = scenarioPoints(chart, UI.en).pts;
-  if (names.some((n) => Math.abs(num(en[n].ret) ?? 0) >= PICTURE_MAX_RETURN)) return { none: `a printed return of ${names.map((n) => en[n].ret).join(', ')}` };
   const company = shortName(data);
   const date = ui.date(sc.col);
   const prices = Object.fromEntries(names.map((n) => [n, money(sc.pts[n].label, data.currency, lang)]));
   const year = (/(\d{4})\s*$/.exec(String(sc.col)) || [])[1];
   const base = [fileWords(company), data.slug, words.pattern, year].filter(Boolean).join('-');
-  const dir = pagePath(data.slug, 'stock', lang);
-  const memoDay = lang !== 'en' ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
+  const columns = chart.columns;
+  const last = columns.length - 1;
+  const cases = ['Bull', 'Base', 'Bear'].filter((n) => sc.pts[n]).map((n) => {
+    const row = chart.rows[n];
+    const ret = /\(([^)]*)\)/.exec(String(row.values[last] || ''))?.[1]?.trim() || '';
+    const prob = String(row.probability || '').trim();
+    return { key: n, name: caseWord(data, lang, n), price: prices[n], detail: words.chance(ui.num(ret), ui.num(prob)), values: columns.map((_, i) => num(row.values[i])) };
+  });
+  const axis = niceAxis([start.value, ...cases.flatMap((k) => k.values.filter((v) => v !== null))]);
+  const tickDecimals = (String(Number(axis.step.toFixed(6))).split('.')[1] || '').length;
+  const cur = data.currency === 'GBp' ? words.pence : words.curName[data.currency] || data.currency || '';
+  const startNumber = ui.num(start.raw);
+  const dividends = /dividends/i.test(String(scenarioTable(data.pages.stock)?.unit || ''));
+  const alt = words.alt(company, date, names.map((n) => `${words.word(ui.cases[n])} ${prices[n]}`).join(words.sep));
   return {
-    ...PICTURE_SIZE,
-    path: `${dir}${base}.webp`,
-    pngPath: `${dir}${base}.png`,
-    url: `${SITE}${dir}${base}.webp`,
-    pngUrl: `${SITE}${dir}${base}.png`,
-    alt: words.alt(company, date, names.map((n) => `${words.word(ui.cases[n])} ${prices[n]}`).join(words.sep)),
+    ...pictureFiles(pagePath(data.slug, 'stock', lang), base),
+    alt,
+    numbers: names.map((n) => sc.pts[n].label),
+    line: alt,
+    start,
     draw: {
-      ...PICTURE_SIZE,
-      name: `${company} (${data.ticker})`,
-      title: `${ui.scen(date)}${data.currency ? ` (${data.currency})` : ''}`,
-      memo: memoDay ? `${ui.memoOf} ${memoDay}` : '',
-      legend: words.legend,
-      cases: names.map((n) => ({ key: n, label: ui.cases[n], price: prices[n], detail: `${sc.pts[n].prob} · ${sc.pts[n].ret}`, value: sc.pts[n].v })),
+      kind: 'forecast',
+      title: words.fTitle(`${company} (${data.ticker})`, year),
+      sub: words.fSub(cur, dividends),
+      memo: memoLine(data, lang),
+      start: { value: start.value, price: money(startNumber, data.currency, lang), label: start.day ? words.priceOn(shortDay(start.day, lang)) : words.memoPrice },
+      xLabels: [start.day ? shortMonthYear(start.day, lang) : '', ...columns.map((c) => shortColumn(c, lang))],
+      axis: { min: axis.min, max: axis.max, ticks: axis.ticks.map((v) => ({ v, label: lang === 'en' ? money(grouped(v, tickDecimals, ui), data.currency, 'en') : grouped(v, tickDecimals, ui) })) },
+      cases,
     },
   };
+}
+
+// THE CURRENCY OF A PER-SHARE FIGURE, read from the unit our chain prints beside the table: a closed list of its marks (shape). '' when the unit names none.
+const UNIT_MARKS = [['US cents', 'USc'], ['eurocents', 'EURc'], ['€ cents', 'EURc'], ['cents', 'USc'], ['pence', 'GBp'], ['GBp', 'GBp'], ['US$', 'USD'], ['USD', 'USD'], ['C$', 'CAD'], ['CAD', 'CAD'],
+  ['HK$', 'HKD'], ['HKD', 'HKD'], ['NT$', 'TWD'], ['RMB', 'RMB'], ['CNY', 'RMB'], ['EUR', 'EUR'], ['€', 'EUR'], ['GBP', 'GBP'], ['£', 'GBP']];
+function markIn(text) {
+  const t = String(text || '');
+  let best = null;
+  for (const [mark, code] of UNIT_MARKS) {
+    const i = /^[a-z ]+$/i.test(mark) ? t.search(new RegExp(`\\b${mark}\\b`, mark === 'GBp' ? '' : 'i')) : t.indexOf(mark);
+    if (i >= 0 && (!best || i < best.i)) best = { i, code };
+  }
+  return best ? best.code : '';
+}
+export function perShareCurrency(unit) {
+  const u = String(unit || '');
+  const named = /dividends? in ([^;,]+)/i.exec(u) || /per[- ]share(?: figures| amounts?)? in ([^;,]+)/i.exec(u);
+  if (named) return markIn(named[1]);
+  const head = u.split(/[;,]/)[0];
+  return /^EPS\b/i.test(head) ? '' : markIn(head);
+}
+
+// THE DIVIDEND PAGE. What it paid: the page's inline chart, else the page's own yearly table. Our forecast: the forecast table's base case, only when it is in the
+// same currency as what it paid (London prints the dividends in pence and the forecast in pounds: side by side, one would look a hundred times the other).
+const DIV_ROW = /^dividends?(?: paid)?,? per (?:common |ordinary )?share$/i;
+function dividendHistory(page) {
+  const row = page.chart?.rows?.['Dividends paid, per share'];
+  if (Array.isArray(row) && Array.isArray(page.chart.columns)) return { columns: page.chart.columns, cells: row, unit: page.chart.unit };
+  for (const b of page.blocks || []) {
+    const t = b.table;
+    if (!t || (t.head || []).length < 3 || /^base case\b/i.test(String(t.unit || ''))) continue;
+    const periods = t.head.slice(1).map(periodOf);
+    if (periods.some((p) => !p || (p.kind && p.kind !== 'Year')) || new Set(periods.map((p) => p.year)).size !== periods.length) continue;
+    const r = t.rows.find((x) => DIV_ROW.test(labelOf(x[0])));
+    if (r) return { columns: t.head.slice(1).reverse(), cells: r.slice(1).reverse(), unit: t.unit };
+  }
+  return null;
+}
+function dividendForecast(page) {
+  for (const b of page.blocks || []) {
+    const t = b.table;
+    if (!t || !/^base case\b/i.test(String(t.unit || '')) || !t.head.slice(1).every((h) => /^\S+ \d{4}$/.test(String(h)))) continue;
+    const r = t.rows.find((x) => /^dividends per share$/i.test(labelOf(x[0])));
+    if (!r) continue;
+    const cur = perShareCurrency(t.unit) || markIn(t.unit);
+    const bars = t.head.slice(1).flatMap((h, i) => {
+      const raw = /^[−-]?[\d,]*\.?\d+/.exec(String(r[i + 1] ?? '').trim())?.[0] || '';
+      const v = plainNum(raw);
+      return v === null ? [] : [{ raw, value: v, year: /\d{4}$/.exec(h)[0] }];
+    });
+    return bars.length ? { cur, bars } : null;
+  }
+  return null;
+}
+function yieldOf(page) {
+  const fact = (page.facts || []).find((f) => /^Dividend yield/.test(String(f.label)));
+  if (fact) return String(fact.value).trim();
+  for (const b of page.blocks || []) {
+    const r = (b.table?.rows || []).find((x) => /^Dividend yield/.test(labelOf(x[0])));
+    if (r && String(r[1] ?? '').trim()) return String(r[1]).trim();
+  }
+  return '';
+}
+function dividendPicture(data, lang) {
+  const page = data?.pages?.dividend;
+  if (!page) return { none: 'no dividend page' };
+  const ui = UI[lang];
+  const words = PICTURE_WORDS[lang];
+  const hist = dividendHistory(page);
+  if (!hist) return { none: 'no dividend per share by year' };
+  const kept = hist.columns.flatMap((c, i) => {
+    const v = plainNum(hist.cells[i]);
+    return v === null || v < 0 ? [] : [{ col: c, raw: String(hist.cells[i]).replace(/\*\*/g, '').trim(), value: v }];
+  });
+  if (kept.length < 2) return { none: 'fewer than 2 years of dividends' };
+  const cur = perShareCurrency(hist.unit);
+  const fc = dividendForecast(page);
+  const sameUnit = fc && cur && fc.cur === cur;
+  const years = kept.map((k) => periodOf(k.col)?.year || '');
+  const labels = years.every(Boolean) && new Set(years).size === years.length ? years : kept.map((k) => shortPeriod(k.col, lang));
+  const bar = (raw, value, label) => ({ number: ui.num(raw), text: money(ui.num(raw), cur, lang), value, label });
+  const paid = kept.map((k, i) => bar(k.raw, k.value, labels[i]));
+  const forecast = sameUnit ? fc.bars.map((b) => bar(b.raw, b.value, b.year)) : [];
+  const name = `${shortName(data)} (${data.ticker})`;
+  const y = yieldOf(page);
+  const yText = !y ? '' : lang === 'en' ? y.replace(/(\d)\s*%/, '$1 %') : ui.num(y.replace(/\s*%/, '%'));
+  const amounts = embedAmounts(data, lang);
+  const sub = amounts ? words.dSub(amounts.amount, amounts.income.replace(/[.,]00(?!\d)/, '')) : `${words.dGeneric}${!cur && hist.unit && lang === 'en' ? ` (${hist.unit})` : ''}`;
+  const base = [fileWords(shortName(data)), data.slug, words.file.dividend].filter(Boolean).join('-');
+  const list = (head, bars) => `${head}: ${bars.map((b) => `${b.label} ${b.text}`).join(', ')}`;
+  return {
+    ...pictureFiles(pagePath(data.slug, 'dividend', lang), base),
+    alt: words.dAlt(name, paid[0], paid[paid.length - 1], forecast[forecast.length - 1], yText),
+    numbers: [...paid, ...forecast].map((b) => b.number),
+    line: `${list(words.paidHead, paid)}${forecast.length ? `; ${list(words.forecastHead, forecast)}` : ''}`,
+    forecastDropped: !!fc && !sameUnit,
+    draw: { kind: 'dividend', title: words.dTitle(name, yText), sub, memo: memoLine(data, lang), paidHead: words.paidHead, forecastHead: words.forecastHead,
+      paid: paid.map(({ text, value, label }) => ({ text, value, label })), forecast: forecast.map(({ text, value, label }) => ({ text, value, label })) },
+  };
+}
+
+// THE EARNINGS PAGE. The bars: what the inline chart charts (the Revenue of the last eight quarters), else the first money row of the page's own results table.
+const REVENUE_LABEL = /^(?:total )?(?:net )?(?:revenues?|sales)$/i;
+function earningsSeries(page) {
+  const c = page.chart;
+  if (c?.kind === 'quarters' && Array.isArray(c.rows?.Revenue) && Array.isArray(c.columns)) {
+    const half = c.columns.some((x) => /^(?:Half-year|6 months) to /.test(String(x)));
+    return { label: 'Revenue', kind: half ? 'half' : 'quarter', columns: c.columns, cells: c.rows.Revenue, eps: c.rows['EPS, diluted'] || null, unit: c.unit };
+  }
+  for (let bi = 0; bi < (page.blocks || []).length; bi += 1) {
+    const t = page.blocks[bi].table;
+    if (!t || (t.head || []).length < 3) continue;
+    const periods = t.head.slice(1).map(periodOf);
+    if (periods.some((p) => !p)) continue;
+    const money2 = (r) => r.slice(1).filter((x) => plainNum(x) !== null).length >= 2;
+    const ri = t.rows.findIndex((r) => REVENUE_LABEL.test(labelOf(r[0])) && money2(r));
+    const pick = ri >= 0 ? ri : t.rows.findIndex((r) => money2(r) && !/\b(ratio|margin|per share|eps)\b/i.test(labelOf(r[0])));
+    if (pick < 0) continue;
+    const row = t.rows[pick];
+    const epsRow = t.rows.find((r) => /^EPS\b/.test(labelOf(r[0])));
+    const kinds = periods.map((p) => p.kind);
+    const kind = kinds.some((k) => k === '6 months' || k === 'Half-year') ? 'half' : kinds.every((k) => k === 'Year') || periods.every((p) => !p.mon) ? 'year' : kinds.some((k) => k === 'Quarter') || /quarter/i.test(t.title) ? 'quarter' : 'period';
+    const flip = (a) => a.slice(1).reverse();
+    return { label: REVENUE_LABEL.test(labelOf(row[0])) ? 'Revenue' : labelOf(row[0]).replace(/\s*\(company's measure\)$/, ''), kind, columns: t.head.slice(1).reverse(), cells: flip(row), eps: epsRow ? flip(epsRow) : null, unit: t.unit, block: bi, row: pick };
+  }
+  return null;
+}
+// '96,221' in 'US$ millions' -> 96.2 'US$ billions', arithmetic on the declared scale; a unit we cannot read stays as printed.
+const SCALE_UNIT = /^(US\$|C\$|HK\$|NT\$|RMB|£|€|EUR|GBP)\s+(thousands|millions|billions)\b/;
+const SCALE_WORD = { thousands: 1e3, millions: 1e6, billions: 1e9 };
+const CUR_WORD = {
+  en: { 'US$': 'US$', 'C$': 'C$', 'HK$': 'HK$', 'NT$': 'NT$', RMB: 'RMB', '£': '£', '€': '€', EUR: '€', GBP: '£' },
+  fr: { 'US$': '$ US', 'C$': '$ CA', 'HK$': '$ HK', 'NT$': '$ NT', RMB: 'RMB', '£': '£', '€': '€', EUR: '€', GBP: '£' },
+  de: { 'US$': 'US-Dollar', 'C$': 'C$', 'HK$': 'HK$', 'NT$': 'NT$', RMB: 'RMB', '£': 'Pfund', '€': 'Euro', EUR: 'Euro', GBP: 'Pfund' },
+  'zh-HK': { 'US$': '美元', 'C$': '加元', 'HK$': '港元', 'NT$': '新台幣', RMB: '人民幣', '£': '英鎊', '€': '歐元', EUR: '歐元', GBP: '英鎊' },
+};
+function scaleOf(unit, values, lang) {
+  const m = SCALE_UNIT.exec(String(unit || '').trim());
+  const ui = UI[lang];
+  const words = PICTURE_WORDS[lang];
+  if (!m) return { word: lang === 'en' ? String(unit || '').split(/[;,]/)[0].trim() : '', printed: String(unit || '').split(/[;,]/)[0].trim(), fmt: (raw) => ui.num(raw), scaled: null };
+  const from = SCALE_WORD[m[2]];
+  const largest = Math.max(0, ...values.map((v) => Math.abs(v))) * from;
+  const to = largest >= 1e10 ? 1e9 : largest >= 1e6 && from < 1e6 ? 1e6 : from;
+  const name = to === 1e9 ? 'billions' : to === 1e6 ? 'millions' : 'thousands';
+  const decimals = to === from ? null : to === 1e9 ? 1 : largest >= 1e9 ? 0 : 1;
+  const scaled = (v) => (v * from) / to;
+  return { word: words.scale[name](CUR_WORD[lang][m[1]]), printed: `${m[1]} ${m[2]}`, base: `${m[1]} ${m[2]}`, from, to, fmt: (raw, v) => (decimals === null ? ui.num(raw) : grouped(scaled(v), decimals, ui)), scaled };
+}
+// Management's revenue range for the period right after the last bar, in the bars' own unit; anything else draws no guided bar.
+function guidedRange(page, last, scale, kind) {
+  const t = (page.blocks || []).map((b) => b.table).find((x) => x && (x.head || []).includes('Period guided') && x.head.includes('Low') && x.head.includes('High'));
+  if (!t || !scale.scaled || kind === 'year') return null;
+  const u = SCALE_UNIT.exec(String(t.unit || '').trim());
+  if (!u || `${u[1]} ${u[2]}` !== scale.base) return null;
+  const [pi, lo, hi] = ['Period guided', 'Low', 'High'].map((h) => t.head.indexOf(h));
+  const lastP = periodOf(last);
+  if (!lastP?.mon) return null;
+  for (const r of t.rows) {
+    if (!REVENUE_LABEL.test(labelOf(r[0]))) continue;
+    const p = periodOf(r[pi]);
+    if (!p?.mon || !['Quarter', 'Half-year', '6 months'].includes(p.kind) || (kind === 'quarter' && p.kind !== 'Quarter')) continue;
+    const gap = (Number(p.year) - Number(lastP.year)) * 12 + p.month - lastP.month;
+    if (gap < 1 || gap > (p.kind === 'Quarter' ? 4 : 7)) continue;
+    const low = plainNum(r[lo]);
+    const high = plainNum(r[hi]);
+    if (low === null || high === null || !(low < high)) continue;
+    return { low, high, rawLow: String(r[lo]).trim(), rawHigh: String(r[hi]).trim(), period: p, col: r[pi] };
+  }
+  return null;
+}
+function earningsPicture(data, lang, day) {
+  const page = data?.pages?.earnings;
+  if (!page) return { none: 'no earnings page' };
+  const ui = UI[lang];
+  const words = PICTURE_WORDS[lang];
+  const series = earningsSeries(page);
+  if (!series) return { none: 'no quarters or results to chart' };
+  const kept = series.columns.flatMap((c, i) => {
+    const v = plainNum(series.cells[i]);
+    return v === null ? [] : [{ col: c, raw: String(series.cells[i]).replace(/\*\*/g, '').trim(), value: v, eps: String(series.eps?.[i] ?? '').replace(/\*\*/g, '').trim() }];
+  });
+  if (kept.length < 2) return { none: 'fewer than 2 quarters' };
+  let word = ui.series.Revenue;
+  if (series.label !== 'Revenue') {
+    if (lang === 'en') word = series.label;
+    else {
+      const tr = langPage(data, 'earnings', lang);
+      const twin = tr?.blocks?.length === page.blocks.length ? tr.blocks[series.block]?.table?.rows?.[series.row] : null;
+      if (!twin || digitsOf(twin[1]) !== digitsOf(page.blocks[series.block].table.rows[series.row][1])) return { none: 'its results row has no words in this language' };
+      word = labelOf(twin[0]).replace(/\s*\([^)]*\)$/, '');
+    }
+  }
+  const scale = scaleOf(series.unit, kept.map((k) => k.value), lang);
+  const last = kept[kept.length - 1];
+  const hasEps = kept.some((k) => k.eps);
+  const guide = guidedRange(page, last.col, scale, series.kind);
+  const next = isoDay(data.next_earnings);
+  const upcoming = next && day && next >= day ? next : '';
+  const guideEnd = guide ? new Date(Date.UTC(Number(guide.period.year), guide.period.month, 1)).toISOString().slice(0, 10) : '';
+  const name = `${shortName(data)} (${data.ticker})`;
+  const what = words.what(word, words.by[series.kind]);
+  const value = (raw, v) => scale.fmt(raw, v);
+  const bars = kept.map((k) => ({ label: shortPeriod(k.col, lang), text: value(k.raw, k.value), value: scale.scaled ? scale.scaled(k.value) : k.value, eps: k.eps ? ui.num(k.eps) : '' }));
+  const guided = guide ? {
+    word: words.guided,
+    range: `${value(guide.rawLow, guide.low)}–${value(guide.rawHigh, guide.high)}`,
+    low: scale.scaled(guide.low),
+    high: scale.scaled(guide.high),
+    label: shortPeriod(`${guide.period.mon ? `${MON_EN[guide.period.month]} ` : ''}${guide.period.year}`, lang),
+    date: upcoming && upcoming >= guideEnd ? shortDay(upcoming, lang) : '',
+  } : null;
+  const base = [fileWords(shortName(data)), data.slug, words.file.earnings].filter(Boolean).join('-');
+  const printed = kept.map((k) => `${ui.date(String(k.col))} ${ui.num(k.raw)}`);
+  const guideRaw = guide ? `${ui.num(guide.rawLow)}–${ui.num(guide.rawHigh)}` : '';
+  const unitPrinted = lang === 'en' ? scale.printed : scale.scaled ? PICTURE_WORDS[lang].scale[{ 1e3: 'thousands', 1e6: 'millions', 1e9: 'billions' }[scale.from]](CUR_WORD[lang][SCALE_UNIT.exec(String(series.unit).trim())[1]]) : '';
+  const pick = kept.length > 1 ? [printed[0], printed[printed.length - 1]] : printed;
+  return {
+    ...pictureFiles(pagePath(data.slug, 'earnings', lang), base),
+    alt: words.eAlt(name, what, unitPrinted, pick.join(words.sep), last.eps ? ui.num(last.eps) : '', words.eps, guideRaw),
+    numbers: [...kept.map((k) => ui.num(k.raw)), ...kept.flatMap((k) => (k.eps ? [ui.num(k.eps)] : [])), ...(guide ? [ui.num(guide.rawLow), ui.num(guide.rawHigh)] : [])],
+    line: words.eAlt(name, what, unitPrinted, printed.join(words.sep), kept.some((k) => k.eps) ? kept.filter((k) => k.eps).map((k) => ui.num(k.eps)).join(words.sep) : '', words.eps, guideRaw),
+    guided: !!guide,
+    draw: {
+      kind: 'earnings',
+      title: words.eTitle(name, upcoming ? humanDay(upcoming, lang) : ''),
+      sub: words.eSub(what, scale.word, hasEps, !!guide),
+      memo: memoLine(data, lang),
+      periodWord: words.period[series.kind],
+      epsWord: hasEps ? words.eps : '',
+      bars,
+      guided,
+    },
+  };
+}
+
+// The picture of a company page: its addresses, its alt text and the strings to draw. { none: why } when the page has no numbers for one.
+// day: the build day, for the earnings title: a date that has passed is not printed as the next one.
+export function pictureOf(data, lang = 'en', type = 'stock', day = '') {
+  if (type === 'dividend') return dividendPicture(data, lang);
+  if (type === 'earnings') return earningsPicture(data, lang, day);
+  return forecastPicture(data, lang);
+}
+
+// THE COMPARISON PAGE: the rows both memos print as a percentage or a multiple, in the same form, each value exactly as the memo prints it.
+const RATE_CELL = /^[−-]?\d[\d,]*(?:\.\d+)?\s*(%|x)$/;
+const rateOf = (v) => Number(String(v).replace(/−/g, '-').replace(/[,%x\s]/g, ''));
+export function comparePicture(pair) {
+  const usable = (pair.rows || []).filter((r) => {
+    const [a, b] = [RATE_CELL.exec(String(r.a?.value ?? '').trim()), RATE_CELL.exec(String(r.b?.value ?? '').trim())];
+    return a && b && a[1] === b[1] && (r.a.unit || '') === (r.b.unit || '') && !r.a.unit;
+  });
+  const hasNext = usable.some((r) => r.label === 'P/E, next 12 months');
+  const rows = usable.filter((r) => !(hasNext && r.label === 'P/E, last 12 months')).slice(0, 5);
+  if (rows.length < 3) return { none: `${rows.length} rows in percentages or multiples (at least 3)` };
+  const [A, B] = [pair.a, pair.b];
+  const [ma, mb] = [monthYear(A.memo_date), monthYear(B.memo_date)];
+  const memo = ma === mb ? `Memos of ${ma}` : `Memos of ${[A.memo_date, B.memo_date].sort().map(monthYear).join(' and ')}`;
+  const cell = (c) => ({ text: String(c.value).trim(), value: rateOf(c.value) });
+  const lower = (l) => (/^[A-Z][a-z]/.test(l) ? l[0].toLowerCase() + l.slice(1) : l);
+  const dir = comparePath(pair.slug);
+  return {
+    ...pictureFiles(dir, `${pair.slug}-stock-comparison`),
+    alt: `${A.name} vs ${B.name}, the numbers side by side: ${rows.map((r) => `${lower(r.label)} ${String(r.a.value).trim()} and ${String(r.b.value).trim()}`).join(', ')}`,
+    numbers: rows.flatMap((r) => [String(r.a.value).trim().replace(/\s*[%x]$/, ''), String(r.b.value).trim().replace(/\s*[%x]$/, '')]),
+    line: '',
+    draw: { kind: 'comparison', title: `${A.name} vs ${B.name}: the numbers side by side`, sub: "Latest fiscal year and today's price, each figure as its memo prints it", memo, a: A.name, b: B.name,
+      rows: rows.map((r) => ({ name: r.label, a: cell(r.a), b: cell(r.b) })) },
+  };
+}
+
+// THE TOOLS COMPARISON: the short wordings in data/alternatives/pictures.json, one entry per page. Every price on the picture must be in that tool's own row of the
+// page's table, and our own offer word for word, or the page gets no picture: a price changed on the page can never leave an old one on its picture.
+const TOOL_PICTURES = loadToolPictures();
+// X reads at most 420 characters of alt text: the page's title, then as many tools as fit.
+function toolAlt(spec, lang) {
+  const join = lang === 'zh-HK' ? '' : ' ';
+  const rows = spec.rows.map((r) => `${r.tool}: ${normalSpace(r.price.join(join))}`);
+  let alt = `${spec.title}. ${rows[0]}`;
+  for (const r of rows.slice(1)) if (alt.length + r.length + 2 <= 420) alt += `; ${r}`;
+  return alt;
+}
+export function toolPicture(guide) {
+  const key = String(guide.name || '').replace(/\.md$/, '');
+  const spec = TOOL_PICTURES[key];
+  if (!spec) return { none: 'no short wordings in data/alternatives/pictures.json' };
+  const problems = toolPictureProblems(guide, spec);
+  if (problems.length) return { none: problems.join('; ') };
+  const numbers = spec.rows.flatMap((r) => toolNumbers(r.price.join(' ')));
+  return {
+    ...pictureFiles(guide.path, spec.file),
+    alt: toolAlt(spec, guide.lang),
+    numbers,
+    line: '',
+    draw: { kind: 'tools', title: spec.title, sub: spec.sub, memo: '', rows: spec.rows.map(({ tool, price, gets, me }) => ({ tool, price, gets, me: !!me })) },
+  };
+}
+
+// The page's text and the numbers its picture prints: a number the page's own text no longer carries (a page with no scenario table: J, DLR, IMI) is printed
+// under the picture, in the picture's own words, so a reader or a crawler never loses it.
+function pictureNote(picture, pageHtml) {
+  if (!picture?.line) return '';
+  const text = textOf(pageHtml);
+  return picture.numbers.every((n) => printedOn(text, n)) ? '' : `<p class="note picnote">${esc(picture.line)}</p>`;
+}
+const pictureImg = (p, note = '') => `<div class="chart"><img src="${esc(p.path)}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" decoding="async">${note}</div>`;
+const pictureObject = (p) => ({ '@type': 'ImageObject', url: p.url, width: p.width, height: p.height, caption: p.alt });
+const shareImage = (p) => ({ url: p.pngUrl, width: p.width, height: p.height, alt: p.alt, type: 'image/png' });
+// A printed return this far out is a wrong number in the memo, not a scenario (Lloyds: 176109.29p, +173249 %, on a share price of 101.60p; the next largest in the library is +865 %).
+export const MAX_RETURN = 2000;
+function returnsIn(cell) {
+  const m = /\(\s*([+−-]?)\s*(\d[\d.,\s\u00a0\u202f]*?)\s*%\s*\)\s*$/.exec(String(cell ?? ''));
+  if (!m) return null;
+  const t = m[2].replace(/[\s\u00a0\u202f]/g, '');
+  const n = Number(/[.,]\d{3}(?:[.,]\d{3})*$/.test(t) ? t.replace(/[.,]/g, '') : t.replace(',', '.'));
+  return Number.isFinite(n) ? n : null;
+}
+export function wildReturns(page, chart) {
+  const cells = [
+    ...(page.blocks || []).flatMap((b) => (b.table?.rows || []).flatMap((r) => r.slice(1))),
+    ...(page.facts || []).map((f) => f.value),
+    ...Object.values(chart?.rows || {}).flatMap((r) => r?.values || []),
+  ];
+  const wild = cells.filter((c) => (returnsIn(c) ?? 0) >= MAX_RETURN).sort((a, b) => returnsIn(b) - returnsIn(a));   // the largest first, for the report
+  return [...new Set(wild.map((c) => /\(([^)]*)\)\s*$/.exec(String(c))[1]))];
 }
 
 // Google Analytics behind the EU cookie banner (consent.mjs): in Europe nothing is sent before 'Accept'.
@@ -715,23 +1198,37 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     })
     .join('');
   const body = [];
-  // the stock page's picture takes the inline chart's place: it is the same chart, and the inline one has nothing to click or hover
-  const pictured = type === 'stock' && ctx.pictures ? pictureOf(data, lang) : null;
+  // the picture takes the inline chart's place on a stock or earnings page: the same numbers, and the inline one has nothing to click or hover. On a dividend page it sits at
+  // the top of the first section, and the inline chart (dividend against free cash flow, which the picture does not show) moves under the section about free cash flow.
+  const pictured = ctx.pictures ? pictureOf(data, lang, type, ctx.today) : null;
   const picture = pictured && !pictured.none ? pictured : null;
+  const PICTURE_SLOT = '<!--picture-->';
+  const moved = type === 'dividend' && picture ? chartHtml(data.pages[type], data, ui) : '';
+  const enBlocks = data.pages[type].blocks || [];
+  const aligned = !fr || enBlocks.length === page.blocks.length;
+  const cashAt = moved && aligned ? enBlocks.findIndex((b, i) => i > 0 && (b.table?.rows || []).some((r) => /free cash flow/i.test(labelOf(r[0])))) : -1;
   // the dividend calculator inside the page, pre-filled with this company (owner 2026-10-29): only when its numbers pass the
   // calculator's guard ('' otherwise: the page is drawn exactly as before); it sits after the first section (chart + table)
   const calcBlock = type === 'dividend' ? renderDivCalcEmbed(data, lang) : '';
   page.blocks.forEach((b, i) => {
     body.push(`<h2>${esc(b.heading)}</h2>`);
+    if (i === 0 && type === 'dividend' && picture) {
+      body.push(PICTURE_SLOT);
+      if (moved && cashAt < 0) body.push(moved);
+    }
     for (const p of b.paragraphs || []) body.push(mdBlock(p.text));
-    if (i === 0) body.push(picture ? `<div class="chart"><img src="${esc(picture.path)}" width="${picture.width}" height="${picture.height}" alt="${esc(picture.alt)}" decoding="async"></div>` : chartHtml(data.pages[type], data, ui));
+    if (i === 0 && !(type === 'dividend' && picture)) body.push(picture ? PICTURE_SLOT : chartHtml(data.pages[type], data, ui));
     if (b.table) body.push(tableHtml(b.table, ui));
     if (i === 0 && calcBlock) body.push(calcBlock);
+    if (moved && i === cashAt) body.push(moved);
     if (i === 1) {
       body.push(`<aside class="mid"><h3>${esc(ui.mid(shownP, k.paragraphs || 0, shownT, k.tables || 0))}</h3>
 <p>${esc(page.closing)}</p><div class="ctarow"><a class="btn" data-cta="mid" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${esc(ui.free)}</span></div></aside>`);
     }
   });
+  // the picture goes in last: its note depends on what the rest of the page prints
+  const pictureHtml = picture ? pictureImg(picture, pictureNote(picture, `${facts}\n${body.join('\n')}`)) : '';
+  const bodyHtml = body.join('\n').replace(PICTURE_SLOT, () => pictureHtml);
   const teaser = teaserData
     ? `<section class="teaser" aria-label="${esc(ui.fromMemo)}"><div class="lab">${esc(ui.fromMemo)}${teaserData.chapter ? ` · ${esc(teaserData.chapter)}` : ''}</div><div class="fade">${mdBlock(teaserData.text)}</div>
 <div class="lock"><a class="btn big" data-cta="teaser" href="${esc(cta)}">${esc(ui.cont)}</a><div>${esc(ui.free)}</div></div></section>`
@@ -781,7 +1278,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     mainEntityOfPage: url,
     about: { '@type': 'Corporation', name: company, tickerSymbol: ticker },
     inLanguage: ui.htmlLang,
-    ...(picture ? { image: { '@type': 'ImageObject', url: picture.url, width: picture.width, height: picture.height, caption: picture.alt } } : {}),
+    ...(picture ? { image: pictureObject(picture) } : {}),
   };
   const html = shell({
     title: page.title,
@@ -789,7 +1286,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     canonical: url,
     lang,
     alternates,
-    ...(picture ? { image: { url: picture.pngUrl, width: picture.width, height: picture.height, alt: picture.alt, type: 'image/png' } } : {}),
+    ...(picture ? { image: shareImage(picture) } : {}),
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
     meta: { type, ticker, cta, lang, label: `${company} ${TYPE_NAMES[type].toLowerCase()}` },
     body: `<div class="layout"><article>
@@ -800,7 +1297,7 @@ ${crumbs.html}
 ${facts ? `<div class="glance">${facts}</div>` : ''}
 <div class="ctarow"><a class="btn big" data-cta="lede" href="${esc(cta)}">${esc(ui.readFull(company))}</a><span class="sub">${esc(ui.free)}</span></div>
 <div class="proof"><span>${esc(ui.proof(company))}</span><span>${k.chapters || 8} ${ui.chapters} · ${(k.words || 0).toLocaleString(ui.locale)} ${ui.words}</span><span>${k.sources || 0} ${ui.sources}</span></div>
-${body.join('\n')}
+${bodyHtml}
 ${teaser}
 ${sourcesHtml}
 ${links}
@@ -1086,6 +1583,9 @@ export function gatePage(built, ctx) {
   const dead = outs.filter((p) => !ctx.exists(p));
   if (dead.length) fails.push(`dead internal links: ${dead.slice(0, 3).join(', ')}`);
   if (outs.length < 3) fails.push(`${outs.length} internal links out (at least 3)`);
+  // A return this far out is a wrong number in the memo: the page waits until the memo is right, and comes back by itself.
+  const wild = wildReturns(page, data.pages[type]?.chart);
+  if (wild.length) fails.push(`prints a return of ${wild.slice(0, 3).join(', ')} (at most ${MAX_RETURN - 1} %)`);
   fails.push(...unbalanced(html));
   return fails;
 }
@@ -1191,6 +1691,8 @@ export function renderComparePage(pair, ctx) {
     .map((c) => `<a href="${comparePath(c.slug)}">${esc(c.label)}</a>`);
   const links = `<section class="more">${[A, B].map((s) => `<h3>More on ${esc(s.name)}</h3><div>${pagesOf(s).join('')}</div>`).join('')}${others.length ? `<h3>Side by side</h3><div>${others.join('')}</div>` : ''}<h3>Browse</h3><div><a href="${COMPARE_ROOT}">All comparisons</a><a href="/stocks/">All stocks</a></div></section>`;
   const days = [isoDay(A.memo_date), isoDay(B.memo_date)].sort();
+  const pictured = ctx?.pictures ? comparePicture(pair) : null;
+  const picture = pictured && !pictured.none ? pictured : null;
   const article = {
     '@type': 'Article',
     headline: title,
@@ -1202,11 +1704,13 @@ export function renderComparePage(pair, ctx) {
     mainEntityOfPage: url,
     about: [A, B].map((s) => ({ '@type': 'Corporation', name: s.company || s.name, tickerSymbol: s.ticker })),
     inLanguage: 'en',
+    ...(picture ? { image: pictureObject(picture) } : {}),
   };
   const html = shell({
     title,
     description,
     canonical: url,
+    ...(picture ? { image: shareImage(picture) } : {}),
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
     meta: { type: 'compare', ticker: `${A.ticker} vs ${B.ticker}`, cta: ctaOf(A), lang: 'en', label: `${A.name} vs ${B.name}` },
     body: `<div class="layout one"><article>
@@ -1214,6 +1718,7 @@ ${crumbs.html}
 <div class="kicker"><span>Side by side</span><span>${esc(A.name)} (${esc(A.ticker)}) and ${esc(B.name)} (${esc(B.ticker)})</span><span>${days[0] === days[1] ? `Memos of ${esc(humanDay(days[0]))}` : `Memos of ${esc(humanDay(A.memo_date))} and ${esc(humanDay(B.memo_date))}`}</span></div>
 <h1>${esc(title)}</h1>
 <h2>How do ${esc(A.name)} and ${esc(B.name)} compare?</h2>
+${picture ? pictureImg(picture) : ''}
 ${numbers}
 ${ctas}
 <h2>Who leads on what?</h2>
@@ -1227,7 +1732,8 @@ ${links}
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type: 'compare', lang: 'en', slug: pair.slug, ticker: `${A.ticker} vs ${B.ticker}`, title, description,
-    lastmod: days[1], alternates: [], html, outLinks, pair };
+    lastmod: days[1], alternates: [], html, outLinks, pair, picture, pictureNone: pictured?.none || '',
+    withoutPicture: () => renderComparePage(pair, { ...ctx, pictures: false }) };
 }
 
 // THE COMPARISONS' GATE: the page as published (title, description, one h1, canonical, robots, JSON-LD), the rows, the two
@@ -1373,13 +1879,13 @@ article.guide td:not(:first-child)::before{content:attr(data-label) ": ";font-we
 // (S&P 500) page is published only beside its English page: it is that page with the chain's translated pieces.
 // The comparison guides and their English index. exists(path) = a published page; a link to an example stock page is
 // drawn only when that page is published. Each page: the guide frame (Article, FAQPage, breadcrumbs, the ticker box).
-function renderAlternatives(companies, exists, updated = '') {
+function renderAlternatives(companies, exists, updated = '', pictures = false) {
   if (!ALTS.length) return [];
   const bySlug = new Map(companies.map((c) => [c.slug, c]));
   const roots = { en: { name: 'MyStockButler', path: '/' }, fr: { name: 'MyStockButler', path: '/fr/' }, de: { name: 'MyStockButler', path: '/de/' }, 'zh-HK': { name: 'MyStockButler', path: '/zh/stocks/' } };
   // a language's comparison is drawn when its stock hub is published (the page's header and footer link it)
   const drawn = ALTS.filter((a) => roots[a.lang] && (a.lang === 'en' || exists(LANG_CFG[a.lang].root)));
-  const pages = drawn.map((a) => {
+  const pageOf = (a, withPicture) => {
     const l = a.lang;
     const slug = String(a.example || '').trim().toLowerCase().replace(/\./g, '-');
     const c = bySlug.get(slug);
@@ -1393,15 +1899,22 @@ function renderAlternatives(companies, exists, updated = '') {
     const sib = a.group ? drawn.filter((o) => o.group === a.group) : [];
     const alternates = sib.length > 1 ? [...sib.map((o) => ({ hreflang: o.lang === 'en' ? 'en' : LANG_CFG[o.lang].href, url: `${SITE}${o.path}` })),
       { hreflang: 'x-default', url: `${SITE}${(sib.find((o) => o.lang === 'en') || sib[0]).path}` }] : [];
-    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra, alternates, offer: ALT_OFFER[l] });
+    const pictured = withPicture ? toolPicture(a) : null;
+    const picture = pictured && !pictured.none ? pictured : null;
+    const g = renderGuide(a, { shell, SITE, ORG, breadcrumbs, crumbRoot: roots[l], extra, alternates, offer: ALT_OFFER[l],
+      picture: picture ? { html: pictureImg(picture), object: pictureObject(picture), share: shareImage(picture) } : null });
     g.alternates = alternates;
     // a link in the page's text to one of our pages that is not published (held back, or not built) keeps its words, not its link
     g.html = g.html.replace(/<a href="(\/(?:stocks|fr\/stocks|de\/aktien|zh\/stocks|fr\/ia-bourse|zh\/ai-stock-analysis)\/[^"]*)">([^<]*)<\/a>/g,
       (m, href, text) => (exists(href) ? m : text));
     g.outLinks = [...g.html.matchAll(SITE_LINK)].map((m) => m[1]);
     g.alt = true;
+    g.picture = picture;
+    g.pictureNone = pictured?.none || '';
+    g.withoutPicture = () => pageOf(a, false);
     return g;
-  });
+  };
+  const pages = drawn.map((a) => pageOf(a, pictures));
   // English first: this index is the English page; each language's pages follow
   const list = [...drawn.filter((a) => a.lang === 'en'), ...drawn.filter((a) => a.lang !== 'en')].map((a) => `<li><a class="nm" href="${a.path}"${a.lang !== 'en' ? ` hreflang="${a.lang}" lang="${a.lang}"` : ''}>${esc(a.h1)}</a> <span class="tk">${esc(ALT_LANG_NAME[a.lang])}</span></li>`).join('');
   const index = hubPage({
@@ -1516,7 +2029,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   // the comparison guides (B110): drawn after the pages and hubs, so their example links point at published pages only
   const published = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path)]);
   // (the dividend calculator's four pages are always built, so a comparison may link them)
-  for (const a of renderAlternatives(live, (p) => published.has(p) || DIVCALC_PATHS.has(p), newest)) {
+  for (const a of renderAlternatives(live, (p) => published.has(p) || DIVCALC_PATHS.has(p), newest, pictures)) {
     hubs.push(a);
     hubPaths.add(a.path);
   }

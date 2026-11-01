@@ -20,6 +20,7 @@ import { nofollowAppLinks } from './lib/appLinks.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
+import { coverImgHtml, coverObject, measureCover } from './lib/postCover.mjs';
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
 import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 import { ORG } from './lib/stocks.mjs';
@@ -194,7 +195,7 @@ function coverOf(post) {
   return /^https:\/\//i.test(cover) ? cover : '';
 }
 
-function structuredData(post, canonical) {
+function structuredData(post, canonical, measured = null) {
   const title = str(post.seo_title) || str(post.title);
   const description = str(post.seo_description) || str(post.excerpt);
   const author = str(post.author_name);
@@ -205,7 +206,7 @@ function structuredData(post, canonical) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   };
   if (description) posting.description = description;
-  posting.image = coverOf(post) || SHARE_IMAGE.url;
+  posting.image = measured ? coverObject(measured, str(post.title) || title) : coverOf(post) || SHARE_IMAGE.url;
   const published = isoOrEmpty(post.published_at);
   if (published) posting.datePublished = published;
   const modified = lastModified(post);
@@ -408,7 +409,7 @@ function appChaptersHtml(app) {
   return { opening, rest };
 }
 
-function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
+function renderPost(post, bodyMarkdown, hubPayload, articleFile = null, measured = null) {
   const slug = post.slug;
   const canonical = `${SITE}/${slug}/`;
   const title = str(post.title) || str(post.seo_title);
@@ -440,8 +441,8 @@ function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
     .filter(([, v]) => v)
     .map(([k, v]) => `<meta name="${k}" content="${esc(v)}">`);
   const head =
-    [...og, ...tw, imageTags(cover ? { url: cover, alt: docTitle } : SHARE_IMAGE)].join('\n') +
-    `\n<script type="application/ld+json">\n${jsonLd(structuredData(post, canonical))}\n</script>\n`;
+    [...og, ...tw, imageTags(cover ? { url: cover, alt: docTitle, ...(measured ? { width: measured.width, height: measured.height } : {}) } : SHARE_IMAGE)].join('\n') +
+    `\n<script type="application/ld+json">\n${jsonLd(structuredData(post, canonical, measured))}\n</script>\n`;
 
   const kickerParts = [ticker, str(post.exchange), str(post.company_name)].filter(Boolean);
   const kicker = kickerParts.length
@@ -541,6 +542,7 @@ ${kicker}
 <h1>${esc(title)}</h1>
 ${byline ? `<div class="byline">${byline}</div>` : ''}
 </header>
+${measured ? coverImgHtml(measured, title) : ''}
 ${disclaimerTop}
 ${openingHtml}
 ${hasMore ? callToAction('inline', ticker) : ''}
@@ -730,14 +732,29 @@ async function main() {
 
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
+  // Each post's cover on its page, with its real size (SEO list row 3). STOCK_PICTURES=off shows none. A cover that cannot be read leaves that post as it was.
+  const covers = { shown: [], missing: [] };
+  const extraImages = [];
   for (const { post, markdown, hub, articleFile } of entries) {
     const dir = path.join(OUT, post.slug);
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(renderPost(post, markdown, hub, articleFile)));
+    let measured = null;
+    const cover = process.env.STOCK_PICTURES === 'off' ? '' : coverOf(post);
+    if (cover) {
+      try {
+        measured = await measureCover(cover);
+        covers.shown.push({ slug: post.slug, width: measured.width, height: measured.height });
+        extraImages.push({ url: `${SITE}/${post.slug}/`, lastmod: lastModified(post), picture: { url: cover } });
+      } catch (err) {
+        covers.missing.push({ slug: post.slug, why: err.message });
+        warn(`post cover: /${post.slug}/ shows no cover (${err.message})`);
+      }
+    } else if (process.env.STOCK_PICTURES !== 'off') covers.missing.push({ slug: post.slug, why: 'no cover_image' });
+    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(renderPost(post, markdown, hub, articleFile, measured)));
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
-  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT) });
+  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT), extraImages, covers });
   await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
   const postsXml = renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);

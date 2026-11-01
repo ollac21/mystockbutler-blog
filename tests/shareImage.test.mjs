@@ -90,7 +90,7 @@ test('every page of the build names a real picture; none points back at the old 
     assert.deepEqual(content(html, 'name', 'twitter:card'), ['summary_large_image'], file);
     assert.ok(og[0].startsWith('https://'), `${file}: ${og[0]}`);
     if (file.startsWith('own-cover')) continue;
-    // a stock page has its own chart since row 3 (tests/stockPictures.test.mjs holds it); every other page has this picture
+    // a stock, dividend, earnings, comparison or tools page has its own picture since row 3 (tests/stockPictures.test.mjs holds it); every other page has this picture
     if (/<div class="chart"><img /.test(html)) {
       pictured.push(file);
       continue;
@@ -101,7 +101,7 @@ test('every page of the build names a real picture; none points back at the old 
     assert.deepEqual(content(html, 'property', 'og:image:alt'), [SHARE_IMAGE.alt], file);
     assert.deepEqual(content(html, 'name', 'twitter:image:alt'), [SHARE_IMAGE.alt], file);
   }
-  for (const file of pictured) assert.match(file, /^(?:stocks|de\/aktien|fr\/stocks|zh\/stocks)\/[^/]+\/index\.html$/, 'only a stock page has its own chart');
+  assert.ok(pictured.every((f) => /^(?:stocks|de|fr|zh|compare|alternatives)\//.test(f)), `only a company, comparison or tools page has its own picture: ${pictured.filter((f) => !/^(?:stocks|de|fr|zh|compare|alternatives)\//.test(f)).slice(0, 3)}`);
 });
 
 // data/stocks holds English and French pages only (the German ones come through STOCK_PAGES_URL), and every page goes through

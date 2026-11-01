@@ -45,6 +45,51 @@ export function loadAlternatives(dir = ALT_DIR) {
   return loadGuides(dir);
 }
 
+// THE TOOLS PICTURES' SHORT WORDINGS (SEO list row 3): data/alternatives/pictures.json, one entry per comparison page. The page's own table stays the truth.
+export function loadToolPictures(dir = ALT_DIR) {
+  try {
+    return JSON.parse(readFileSync(new URL('pictures.json', dir), 'utf8'));
+  } catch {
+    return {};
+  }
+}
+const spaced = (t) => String(t).replace(/[\u00a0\u202f]/g, ' ').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+// The numbers in a line of a price: '$27,000', '10,95', '24.95'. Digits and their separators only.
+export function toolNumbers(text) {
+  return (spaced(text).match(/\d[\d.,]*\d|\d/g) || []);
+}
+// The first table of a comparison page, as rows of cells.
+export function toolTable(markdown) {
+  const lines = String(markdown).split('\n');
+  const i = lines.findIndex((l) => l.startsWith('|'));
+  if (i < 0) return { head: [], rows: [] };
+  const cells = (l) => l.trim().replace(/^\||\|$/g, '').split('|').map(spaced);
+  const rows = [];
+  for (let j = i + 2; j < lines.length && lines[j].startsWith('|'); j += 1) rows.push(cells(lines[j]));
+  return { head: cells(lines[i]), rows };
+}
+// What is wrong with a picture's wordings against the page's own table: [] = nothing. Our own row: the offer word for word, from the start of its cell. Another tool's row: every
+// number on the picture is in that tool's own row. The date the prices were read is the page's own.
+export function toolPictureProblems(guide, spec) {
+  const problems = [];
+  const { rows } = toolTable(guide.markdown);
+  if (!spaced(guide.markdown).includes(spaced(spec.date))) problems.push(`the date ${spec.date} is not on the page`);
+  for (const r of spec.rows) {
+    const name = spaced(r.row || r.tool);
+    const row = rows.find((c) => c[0] === name || c[0].startsWith(`${name} `));
+    if (!row) { problems.push(`${r.tool}: no such row in the page's table`); continue; }
+    const text = row.slice(1).join(' | ');
+    if (r.me) {
+      const squeeze = (t) => spaced(t).replace(/\s/g, '');
+      const offer = squeeze(r.price.join(''));
+      if (!row.some((c) => squeeze(c).startsWith(offer))) problems.push(`our offer is not word for word: ${offer}`);
+    } else {
+      for (const n of toolNumbers(r.price.join(' '))) if (!(new RegExp(`(?<![\\d.,])${n.replace(/[.]/g, '\\.')}(?![\\d]|[.,]\\d)`)).test(text)) problems.push(`${r.tool}: ${n} is not in its row`);
+    }
+  }
+  return problems;
+}
+
 // The guide's questions and answers: every '### ' heading under the '## ' section that holds them (the last '## ' of
 // the file whose headings below it end with '?' or the Chinese '？'), its answer the paragraphs until the next heading.
 // Markup only.
@@ -86,7 +131,7 @@ const boxTables = (html) => html.replace(/<table>[\s\S]*?<\/table>/g, (t) => `<d
 // One guide page. helpers: { shell, SITE, ORG, breadcrumbs, crumbRoot } from stocks.mjs (one frame for every page).
 // offer (the comparison pages): the free report's own words (see ALT_OFFER in stocks.mjs): the header button jumps to the first box,
 // a line under it says what to type, and the page ends on its call to action (front matter cta_end_title, cta_end_text).
-export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [], pageType = 'Article', offer = null }) {
+export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra = '', alternates = [], pageType = 'Article', offer = null, picture = null }) {
   const url = `${SITE}${g.path}`;
   const src = `seo-guide-${g.name.replace(/\.md$/, '')}`;
   const cta = `${APP}/signup?src=${encodeURIComponent(src)}&lang=${g.lang}`;
@@ -102,7 +147,7 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     : `${extra}\n${endBox}`;
   const ld = { '@context': 'https://schema.org', '@graph': [crumbs.ld,
     { '@type': pageType, headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
-      inLanguage: g.lang, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url },
+      inLanguage: g.lang, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url, ...(picture ? { image: picture.object } : {}) },
     ...(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
     ORG] };
   const html = shell({
@@ -111,6 +156,7 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     canonical: url,
     lang: g.lang,
     alternates,
+    ...(picture ? { image: picture.share } : {}),
     jsonld: ld,
     meta: { type: 'guide', ticker: '', cta: offer ? '#try' : cta, lang: g.lang, label: `guide ${g.name}` },
     body: `<div class="layout one"><article class="guide">
@@ -118,6 +164,7 @@ ${crumbs.html}
 <h1>${esc(g.h1)}</h1>
 ${boxTables(marked.parse(opening))}
 ${firstBox}
+${picture ? picture.html : ''}
 ${boxTables(marked.parse(rest.join('\n')))}
 ${ending}
 </article></div>`,

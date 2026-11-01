@@ -179,6 +179,7 @@ body.post .site-header { position: relative; padding-bottom: 16px; }
 .back { display: inline-block; font-size: 13px; font-weight: 600; text-decoration: none; }
 .back:hover { text-decoration: underline; }
 .article-in .kicker { margin-top: 20px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.post-cover { display: block; width: 100%; height: auto; border-radius: 10px; margin: 18px 0 0; }
 .article-in h1 { margin: 12px 0 0; font-family: "Iowan Old Style", Georgia, "Times New Roman", serif; font-size: 30px; line-height: 1.15; letter-spacing: -.01em; font-weight: 600; color: var(--ra-ink); }
 @media (min-width: 640px) { .article-in h1 { font-size: 40px; } }
 .byline { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; line-height: 1.6; color: var(--muted); }
