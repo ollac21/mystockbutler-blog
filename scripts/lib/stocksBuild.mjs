@@ -16,6 +16,7 @@ import path from 'node:path';
 import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stocks.mjs';
 import { DIVCALC_CSS, DIVCALC_DATA } from './divcalc.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
+import { nofollowAppLinks } from './appLinks.mjs';
 
 const FETCH_TIMEOUT_MS = 30000;
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -213,7 +214,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), p.html);
+    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
   }
   const sitemaps = {};
   for (const lang of ['en', 'fr', 'de', 'zh-HK']) {

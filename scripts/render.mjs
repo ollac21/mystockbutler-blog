@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
 import { APP, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, siteFooter, siteHeader } from './lib/layout.mjs';
+import { nofollowAppLinks } from './lib/appLinks.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
@@ -732,12 +733,12 @@ async function main() {
   for (const { post, markdown, hub, articleFile } of entries) {
     const dir = path.join(OUT, post.slug);
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), renderPost(post, markdown, hub, articleFile));
+    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(renderPost(post, markdown, hub, articleFile)));
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
   const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT) });
-  await writeFile(path.join(OUT, 'index.html'), renderIndex(entries, stocks.llmsHubs || []));     // it links the language hubs
+  await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
   const postsXml = renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
   const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps)];
