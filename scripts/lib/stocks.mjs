@@ -707,7 +707,8 @@ function forecastPicture(data, lang) {
     if (lang === 'en') return '';
     const tr = langPage(data, 'stock', lang);
     const places = [...(tr?.blocks || []).map((b) => b.table?.unit || ''), ...(tr?.facts || []).map((f) => f.value)];
-    const same = (t) => (String(t).match(/\d[\d.,\u00a0\u202f]*\d|\d/g) || []).find((n) => digitsOf(n) === digitsOf(start.raw));
+    // (an older translated page can print '216.62' the English way: a French or German picture keeps its own format)
+    const same = (t) => (String(t).match(/\d[\d.,\u00a0\u202f]*\d|\d/g) || []).find((n) => digitsOf(n) === digitsOf(start.raw) && (lang === 'zh-HK' || !/\.\d{1,2}$/.test(n)));
     return places.map(same).find(Boolean) || '';
   })();
   const startNumber = startPrinted || ui.num(start.raw);
