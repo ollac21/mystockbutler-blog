@@ -15,6 +15,28 @@ export function esc(value) {
     .replace(/'/g, '&#39;');
 }
 
+// The site's one share picture, in one place: the file public/share-1200x630.png, which the build copies to the site root
+// (scripts/render.mjs). A page with a picture of its own passes { url, alt } (width and height when known) to imageTags.
+export const SHARE_IMAGE = {
+  file: 'share-1200x630.png',
+  url: 'https://blog.mystockbutler.com/share-1200x630.png',
+  width: 1200,
+  height: 630,
+  alt: 'MyStockButler: What the numbers hide. Professional-grade stock research for people who manage their own money.',
+};
+
+// The Open Graph and X tags of a page's picture.
+export function imageTags({ url, width, height, alt } = SHARE_IMAGE) {
+  return [
+    `<meta property="og:image" content="${esc(url)}">`,
+    width && `<meta property="og:image:width" content="${width}">`,
+    height && `<meta property="og:image:height" content="${height}">`,
+    alt && `<meta property="og:image:alt" content="${esc(alt)}">`,
+    `<meta name="twitter:image" content="${esc(url)}">`,
+    alt && `<meta name="twitter:image:alt" content="${esc(alt)}">`,
+  ].filter(Boolean).join('\n');
+}
+
 export function siteHeader() {
   return `<header class="site-header">
 <div class="pill">

@@ -9,7 +9,7 @@
 // company: the renderer draws what the file holds, and the gate (gatePage) holds back a page that breaks a rule.
 
 import { Marked } from 'marked';
-import { APP, FONT_LINKS, LANDING, esc } from './layout.mjs';
+import { APP, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, renderGuide, tickerBox } from './guides.mjs';
@@ -503,7 +503,7 @@ function langNav(lang) {
     .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
 }
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [] }) {
+function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
   const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
@@ -522,7 +522,7 @@ ${alt ? `${alt}\n` : ''}<meta property="og:type" content="${ogType}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(canonical)}">
-<meta property="og:image" content="${LANDING}/share-1200x630.png">
+${imageTags(image)}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">

@@ -9,13 +9,13 @@
 // Fails closed: a post whose body cannot be fetched is skipped (warning),
 // never replaced by a placeholder; a failed list fetch exits non-zero.
 
-import { mkdir, writeFile, copyFile, rm } from 'node:fs/promises';
+import { cp, mkdir, writeFile, copyFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
-import { APP, FONT_LINKS, LANDING, STYLE, esc, siteFooter, siteHeader } from './lib/layout.mjs';
+import { APP, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, siteFooter, siteHeader } from './lib/layout.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
@@ -187,6 +187,12 @@ function sourceItems(post) {
   return (Array.isArray(post.sources) ? post.sources : []).filter((s) => s && str(s.title));
 }
 
+// A post's own cover, when it is a full https address; a page without one uses the site's share picture.
+function coverOf(post) {
+  const cover = str(post.cover_image);
+  return /^https:\/\//i.test(cover) ? cover : '';
+}
+
 function structuredData(post, canonical) {
   const title = str(post.seo_title) || str(post.title);
   const description = str(post.seo_description) || str(post.excerpt);
@@ -198,7 +204,7 @@ function structuredData(post, canonical) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   };
   if (description) posting.description = description;
-  if (str(post.cover_image)) posting.image = str(post.cover_image);
+  posting.image = coverOf(post) || SHARE_IMAGE.url;
   const published = isoOrEmpty(post.published_at);
   if (published) posting.datePublished = published;
   const modified = lastModified(post);
@@ -407,7 +413,7 @@ function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
   const title = str(post.title) || str(post.seo_title);
   const docTitle = str(post.seo_title) || title;
   const description = str(post.seo_description) || str(post.excerpt);
-  const cover = str(post.cover_image);
+  const cover = coverOf(post);
   const author = str(post.author_name);
   const published = humanDate(post.published_at);
   const isLibrary = post.content_schema_version === LIBRARY_SCHEMA;
@@ -419,7 +425,6 @@ function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
     ['og:title', docTitle],
     ['og:description', description],
     ['og:url', canonical],
-    ['og:image', cover],
     ['article:published_time', isoOrEmpty(post.published_at)],
     ['article:modified_time', lastModified(post)],
     ['article:author', author],
@@ -427,15 +432,14 @@ function renderPost(post, bodyMarkdown, hubPayload, articleFile = null) {
     .filter(([, v]) => v)
     .map(([k, v]) => `<meta property="${k}" content="${esc(v)}">`);
   const tw = [
-    ['twitter:card', cover ? 'summary_large_image' : 'summary'],
+    ['twitter:card', 'summary_large_image'],
     ['twitter:title', docTitle],
     ['twitter:description', description],
-    ['twitter:image', cover],
   ]
     .filter(([, v]) => v)
     .map(([k, v]) => `<meta name="${k}" content="${esc(v)}">`);
   const head =
-    [...og, ...tw].join('\n') +
+    [...og, ...tw, imageTags(cover ? { url: cover, alt: docTitle } : SHARE_IMAGE)].join('\n') +
     `\n<script type="application/ld+json">\n${jsonLd(structuredData(post, canonical))}\n</script>\n`;
 
   const kickerParts = [ticker, str(post.exchange), str(post.company_name)].filter(Boolean);
@@ -558,7 +562,7 @@ ${dock}
 }
 
 // The blog home's head (B110 SEO, 2026-10-23: it had no structured data and no Open Graph): the Organization, the WebSite and
-// the page as a list of the articles; the share card is the landing's.
+// the page as a list of the articles; the picture is the site's share picture.
 function indexHead(entries, title, description) {
   const url = `${SITE}/`;
   const ld = {
@@ -572,12 +576,11 @@ function indexHead(entries, title, description) {
       },
     ],
   };
-  const image = `${LANDING}/share-1200x630.png`;
-  const og = [['og:type', 'website'], ['og:site_name', SITE_NAME], ['og:title', title], ['og:description', description], ['og:url', url], ['og:image', image], ['og:locale', 'en_US']]
+  const og = [['og:type', 'website'], ['og:site_name', SITE_NAME], ['og:title', title], ['og:description', description], ['og:url', url], ['og:locale', 'en_US']]
     .map(([k, v]) => `<meta property="${k}" content="${esc(v)}">`);
-  const tw = [['twitter:card', 'summary_large_image'], ['twitter:title', title], ['twitter:description', description], ['twitter:image', image]]
+  const tw = [['twitter:card', 'summary_large_image'], ['twitter:title', title], ['twitter:description', description]]
     .map(([k, v]) => `<meta name="${k}" content="${esc(v)}">`);
-  return `${[...og, ...tw].join('\n')}\n<script type="application/ld+json">\n${jsonLd(ld)}\n</script>\n`;
+  return `${[...og, ...tw, imageTags()].join('\n')}\n<script type="application/ld+json">\n${jsonLd(ld)}\n</script>\n`;
 }
 
 // The language hubs (B112's addresses), each named by its own title in the build: the blog home and llms.txt link them.
@@ -686,6 +689,10 @@ function renderLlms(entries, stockPages = [], hubs = []) {
 }
 
 async function main() {
+  // Every page points at the share picture, so a missing file stops the build: the live site stays as it is.
+  const staticDir = path.join(ROOT, 'public');
+  if (!existsSync(path.join(staticDir, SHARE_IMAGE.file))) throw new Error(`public/${SHARE_IMAGE.file} is missing; refusing to publish pages that point at it`);
+
   const posts = await fetchPublishedPosts();
   console.log(`Fetched ${posts.length} published post(s) from app ${APP_ID}.`);
   if (!posts.length) throw new Error('no published posts returned; refusing to publish an empty site');
@@ -745,6 +752,7 @@ async function main() {
   await writeFile(path.join(OUT, 'llms.txt'), llms.short);
   await writeFile(path.join(OUT, 'llms-full.txt'), llms.full);
   await writeFile(path.join(OUT, '.nojekyll'), '');
+  await cp(staticDir, OUT, { recursive: true });
   const cname = path.join(ROOT, 'CNAME');
   if (existsSync(cname)) await copyFile(cname, path.join(OUT, 'CNAME'));
   else warn('CNAME not found at repo root; custom domain will not be set');
