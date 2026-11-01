@@ -80,6 +80,7 @@ test('the picture and its alt say only what holds on every page', () => {
 
 test('every page of the build names a real picture; none points back at the old address', () => {
   assert.ok(pages.length > 100, `${pages.length} pages`);
+  const pictured = [];
   for (const { file, html } of pages) {
     assert.doesNotMatch(html, OLD_ADDRESS, file);
     const og = content(html, 'property', 'og:image');
@@ -89,12 +90,18 @@ test('every page of the build names a real picture; none points back at the old 
     assert.deepEqual(content(html, 'name', 'twitter:card'), ['summary_large_image'], file);
     assert.ok(og[0].startsWith('https://'), `${file}: ${og[0]}`);
     if (file.startsWith('own-cover')) continue;
+    // a stock page has its own chart since row 3 (tests/stockPictures.test.mjs holds it); every other page has this picture
+    if (/<div class="chart"><img /.test(html)) {
+      pictured.push(file);
+      continue;
+    }
     assert.equal(og[0], SHARE_IMAGE.url, file);
     assert.deepEqual(content(html, 'property', 'og:image:width'), ['1200'], file);
     assert.deepEqual(content(html, 'property', 'og:image:height'), ['630'], file);
     assert.deepEqual(content(html, 'property', 'og:image:alt'), [SHARE_IMAGE.alt], file);
     assert.deepEqual(content(html, 'name', 'twitter:image:alt'), [SHARE_IMAGE.alt], file);
   }
+  for (const file of pictured) assert.match(file, /^(?:stocks|de\/aktien|fr\/stocks|zh\/stocks)\/[^/]+\/index\.html$/, 'only a stock page has its own chart');
 });
 
 // data/stocks holds English and French pages only (the German ones come through STOCK_PAGES_URL), and every page goes through

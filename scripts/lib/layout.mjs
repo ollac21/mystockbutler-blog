@@ -18,7 +18,7 @@ export function esc(value) {
 // The site's one share picture, in one place: the file public/share-1200x630.png, which the build copies to the site root
 // (scripts/render.mjs). It previews every page of the site, so it says only what holds on all of them: no offer (the free report
 // differs by market), no table (a bank's report has no free cash flow table), no chapter count (some reports have seven).
-// A page with a picture of its own passes { url, alt } (width and height when known) to imageTags.
+// A page with a picture of its own passes { url, alt } (width, height and type when known) to imageTags.
 export const SHARE_IMAGE = {
   file: 'share-1200x630.png',
   url: 'https://blog.mystockbutler.com/share-1200x630.png',
@@ -28,9 +28,10 @@ export const SHARE_IMAGE = {
 };
 
 // The Open Graph and X tags of a page's picture.
-export function imageTags({ url, width, height, alt } = SHARE_IMAGE) {
+export function imageTags({ url, width, height, alt, type } = SHARE_IMAGE) {
   return [
     `<meta property="og:image" content="${esc(url)}">`,
+    type && `<meta property="og:image:type" content="${esc(type)}">`,
     width && `<meta property="og:image:width" content="${width}">`,
     height && `<meta property="og:image:height" content="${height}">`,
     alt && `<meta property="og:image:alt" content="${esc(alt)}">`,

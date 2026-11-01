@@ -10,8 +10,9 @@
 // WITHDRAWN: its committed file is not used (law review 2026-10-20T14:10Z) — at most WITHDRAW_MAX in one build; more
 // means the index is wrong, and the committed files are kept.
 
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
+import { availableParallelism } from 'node:os';
 import path from 'node:path';
 import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stocks.mjs';
 import { DIVCALC_CSS, DIVCALC_DATA } from './divcalc.mjs';
@@ -205,9 +206,64 @@ function urlset(entries) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`;
 }
 
+// The pictures' own sitemap. It is apart from the page sitemaps on purpose: IndexNow's list is made from those (their entries below), so a
+// picture address never reaches it, a page is never counted twice, and a picture never moves a page's last-modified date.
+export const IMAGE_SITEMAP = 'sitemap-stock-images.xml';
+function imageUrlset(pages) {
+  const urls = pages.map((p) => `  <url>\n    <loc>${p.url}</loc>${p.lastmod ? `\n    <lastmod>${p.lastmod}</lastmod>` : ''}\n    <image:image>\n      <image:loc>${p.picture.url}</image:loc>\n    </image:image>\n  </url>`);
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.join('\n')}\n</urlset>\n`;
+}
+
+const PICTURE_MAX_BYTES = 100 * 1024;
+// Draws the picture of every page that passed the gate (a held page never has one), next to its page. A picture that cannot be drawn,
+// or comes out over 100 KB, costs only itself: that page is redrawn with the inline chart and the share picture, and the build goes on.
+async function drawStockPictures(out, pages, { draw } = {}) {
+  const started = Date.now();
+  const failed = [];
+  const sizes = { webp: [], png: [] };
+  const final = [...pages];
+  const queue = final.flatMap((p, i) => (p.picture ? [i] : []));
+  let drawOne = draw;
+  if (!drawOne && queue.length) {
+    try {
+      drawOne = (await import('./stockPicture.mjs')).drawPicture;
+    } catch (err) {
+      drawOne = () => { throw new Error(`the drawing tools did not load: ${err.message}`); };
+    }
+  }
+  const worker = async () => {
+    for (let i = queue.shift(); i !== undefined; i = queue.shift()) {
+      const p = final[i];
+      try {
+        const { webp, png } = await drawOne(p.picture.draw);
+        const over = [['WebP', webp], ['PNG', png]].find(([, b]) => b.length > PICTURE_MAX_BYTES);
+        if (over) throw new Error(`the ${over[0]} is ${over[1].length} bytes (at most ${PICTURE_MAX_BYTES})`);
+        await mkdir(path.join(out, p.path.slice(1)), { recursive: true });
+        await writeFile(path.join(out, p.picture.path.slice(1)), webp);
+        await writeFile(path.join(out, p.picture.pngPath.slice(1)), png);
+        sizes.webp.push(webp.length);
+        sizes.png.push(png.length);
+      } catch (err) {
+        failed.push({ path: p.path, error: err.message });
+        console.log(`WARNING: stock picture: ${p.path} keeps the share picture (${err.message})`);
+        await Promise.all([p.picture.path, p.picture.pngPath].map((f) => rm(path.join(out, f.slice(1)), { force: true }).catch(() => {})));   // no half-written picture
+        final[i] = { ...p.withoutPicture(), inLinks: p.inLinks };
+      }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(4, availableParallelism()) }, worker));
+  const stat = (list) => ({ total: list.reduce((a, b) => a + b, 0), largest: Math.max(0, ...list), average: list.length ? Math.round(list.reduce((a, b) => a + b, 0) / list.length) : 0 });
+  const none = final.filter((p) => p.pictureNone).map((p) => ({ path: p.path, why: p.pictureNone }));
+  return { pages: final, report: { drawn: sizes.webp.length, none, failed, webp: stat(sizes.webp), png: stat(sizes.png), seconds: Math.round((Date.now() - started) / 100) / 10 } };
+}
+
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
-export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates() } = {}) {
-  const { pages, hubs, held, report, compares: compared, divcalc } = buildStockSite(companies, { today, compares, earningsDates });
+// STOCK_PICTURES=off draws no picture: every stock page keeps the inline chart and the share picture.
+export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates(), pictures = process.env.STOCK_PICTURES !== 'off', draw } = {}) {
+  const { pages: built, hubs, held, report, compares: compared, divcalc } = buildStockSite(companies, { today, compares, earningsDates, pictures });
+  const drawn = await drawStockPictures(out, built, { draw });
+  const { pages } = drawn;
+  report.pictures = drawn.report;
   await mkdir(path.join(out, 'stocks', 'assets'), { recursive: true });
   await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS + DIVCALC_CSS);
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
@@ -228,6 +284,8 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   }
   if (compared.length) sitemaps['sitemap-compare-en.xml'] = compared.map((p) => ({ url: p.url, lastmod: p.lastmod }));
   for (const [name, entries] of Object.entries(sitemaps)) await writeFile(path.join(out, name), urlset(entries));
+  const pictured = pages.filter((p) => p.picture);
+  if (pictured.length) await writeFile(path.join(out, IMAGE_SITEMAP), imageUrlset(pictured));
   // the guides (B114) are listed with the pages in llms-full.txt, each with its description (CHECKLIST A14)
   const llms = [...hubs.filter((h) => h.guide), ...pages, ...compared.filter((p) => p.type === 'compare')].map((p) => ({ title: p.title, url: p.url, description: p.description }));
   // the hubs, for llms.txt's short list (B110 SEO): every hub page with its language
@@ -239,9 +297,11 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await writeFile(path.join(reportDir, 'stocks.json'), `${JSON.stringify(full, null, 1)}\n`);
   }
   console.log(`Stock pages: ${pages.length} page(s) (${report.pages_fr} in French, ${report.pages_de} in German) + ${hubs.length} hub(s) from ${report.companies} companies; held back ${held.length}; missing ${FETCH_STATS.missing.length}; orphans ${report.orphans.length}; dead hub links ${report.deadHubLinks.length}; duplicate titles ${report.duplicateTitles.length}; largest ${report.maxKB} KB.`);
+  console.log(`Stock pictures: ${drawn.report.drawn} drawn in ${drawn.report.seconds} s (WebP largest ${drawn.report.webp.largest} bytes, average ${drawn.report.webp.average}; PNG largest ${drawn.report.png.largest}, average ${drawn.report.png.average}); ${drawn.report.none.length} page(s) with no numbers to draw; ${drawn.report.failed.length} failed.`);
+  for (const n of drawn.report.none.slice(0, 40)) console.log(`  no picture ${n.path}: ${n.why}`);
   console.log(`Earnings titles: ${report.earningsTitles.date.length} English with the announced date (${Object.keys(earningsDates || {}).length} on the checked list), ${report.earningsTitles.passed.length} German with the past date taken out.`);
   console.log(`Dividend calculator: ${report.divcalc.paths.length} page(s) (${report.divcalc.paths.join(', ')}); ${report.divcalc.rows} companies in its data, ${report.divcalc.prefilled} pre-filled; examples ${JSON.stringify(report.divcalc.examples)}; inside ${Object.values(report.divcalc.embedded).reduce((x, y) => x + y, 0)} dividend page(s) ${JSON.stringify(report.divcalc.embedded)}.`);
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
-  return { sitemaps, llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
+  return { sitemaps, imageSitemaps: pictured.length ? [IMAGE_SITEMAP] : [], llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }

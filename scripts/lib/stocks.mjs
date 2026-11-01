@@ -381,12 +381,12 @@ export function labelSpot(cx, text, W) {
   return { x: cx, anchor: 'middle' };
 }
 
-// A chart draws the memo's own printed values (their heights are arithmetic on those values; every label is the
-// value as printed).
-function scenarioChart(chart, currency, ui = UI.en) {
-  const cols = chart.columns || [];
+// The last column of a scenario chart, as the page prints it: the inline chart and the stock picture both read it here, so the
+// two can never differ. label, ret and prob are the printed strings; v (a number) only sets a height or a place.
+function scenarioPoints(chart, ui = UI.en) {
+  const cols = chart?.columns || [];
   const last = cols.length - 1;
-  if (last < 0) return '';
+  if (last < 0) return null;
   const pts = {};
   for (const name of ['Bear', 'Base', 'Bull', 'Weighted']) {
     const row = chart.rows?.[name];
@@ -396,6 +396,15 @@ function scenarioChart(chart, currency, ui = UI.en) {
     const ret = /\(([^)]*)\)/.exec(String(cell || ''));
     pts[name] = { v, label: ui.num(String(cell).split(' (')[0]), ret: ui.num(ret ? ret[1].replace(/\s+/g, '') : ''), prob: ui.num(row.probability || '') };
   }
+  return { pts, col: cols[last] };
+}
+
+// A chart draws the memo's own printed values (their heights are arithmetic on those values; every label is the
+// value as printed).
+function scenarioChart(chart, currency, ui = UI.en) {
+  const sc = scenarioPoints(chart, ui);
+  if (!sc) return '';
+  const { pts, col } = sc;
   const today = Number(chart.today);
   if (!pts.Bear || !pts.Bull || !Number.isFinite(today)) return '';
   const lo = Math.min(today, pts.Bear.v) * 0.85;
@@ -407,8 +416,8 @@ function scenarioChart(chart, currency, ui = UI.en) {
   const ts = labelSpot(x(today), todayText, W);
   const todayLabel = `<text x="${ts.x.toFixed(0)}" y="160" text-anchor="${ts.anchor}" class="cd">${esc(todayText)}</text>`;
   const out = [
-    `<svg viewBox="0 0 ${W} 190" role="img" aria-label="${esc(ui.scen(ui.date(cols[last])))}">`,
-    `<text x="0" y="18" class="ct">${esc(ui.scen(ui.date(cols[last])))}${currency ? ` (${esc(currency)})` : ''}</text>`,
+    `<svg viewBox="0 0 ${W} 190" role="img" aria-label="${esc(ui.scen(ui.date(col)))}">`,
+    `<text x="0" y="18" class="ct">${esc(ui.scen(ui.date(col)))}${currency ? ` (${esc(currency)})` : ''}</text>`,
     `<line x1="${x(pts.Bear.v).toFixed(0)}" x2="${x(pts.Bull.v).toFixed(0)}" y1="${y0}" y2="${y0}" stroke="#CFD8DA" stroke-width="10" stroke-linecap="round"/>`,
     `<line x1="${x(today).toFixed(0)}" x2="${x(today).toFixed(0)}" y1="44" y2="140" stroke="#C2861A" stroke-width="2" stroke-dasharray="5 4"/>`,
     todayLabel,
@@ -481,6 +490,80 @@ function chartHtml(page, data, ui = UI.en) {
     return barChart({ title: ui.revChart, columns: (c.columns || []).map(ui.date), series: [{ name: ui.series.Revenue, values: rev, color: '#0F5E63' }], unit: fr ? '' : c.unit, fmt: ui.num });
   }
   return '';
+}
+
+// THE STOCK PICTURE (SEO list row 3, 2026-11-01): one chart picture per stock page, in place of the inline scenario chart, for Google
+// Images, the Article's image and the share previews. 1200 by 675 is 16:9, the first of the shapes Google's Article rules recommend
+// (at least 50,000 pixels; this is 810,000); X and LinkedIn crop a little off the top and bottom, where nothing but background sits.
+// The numbers are scenarioPoints', the strings the inline chart prints. No today's price on the picture: chart.today is not the page's
+// price on HK, London and some other pages (Tencent's chart said 362.25 against the page's 424.80), and the page prints the
+// price just above the picture.
+export const PICTURE_SIZE = { width: 1200, height: 675 };
+const PICTURE_WORDS = {
+  en: { pattern: 'stock-forecast', legend: 'Probability · return since today', sep: ', ', word: (w) => w.toLowerCase(),
+    alt: (c, d, list) => `${c} share price scenarios for ${d}: ${list}` },
+  fr: { pattern: 'action-previsions', legend: 'Probabilité · rendement depuis le cours actuel', sep: ', ', word: (w) => w.toLowerCase(),
+    alt: (c, d, list) => `Scénarios de cours de l'action ${c} pour ${d} : ${list}` },
+  de: { pattern: 'aktie-prognose', legend: 'Wahrscheinlichkeit · Rendite seit dem heutigen Kurs', sep: ', ', word: same,
+    alt: (c, d, list) => `Aktienkurs-Szenarien von ${c} für ${d}: ${list}` },
+  'zh-HK': { pattern: 'gupiao-fenxi', legend: '機率 · 較今日的回報', sep: '，', word: same,
+    alt: (c, d, list) => `${c} ${d}的股價情境：${list}` },
+};
+// A price in the page's currency: never converted (London prints pence, so a London price stays in pence). A code not listed
+// here is written after the number; no currency, no mark. [before the number, after it]
+const MONEY = {
+  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'] },
+  fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'] },
+  de: { USD: ['', ' $'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'] },
+  'zh-HK': { USD: ['', ' 美元'], CAD: ['', ' 加元'], HKD: ['', ' 港元'], EUR: ['', ' 歐元'], GBP: ['', ' 英鎊'], GBp: ['', ' 便士'] },
+};
+export function money(label, currency, lang = 'en') {
+  const [, sign, rest] = /^([≈~<>−-]*)(.*)$/.exec(String(label));
+  const [before, after] = MONEY[lang]?.[currency] || ['', currency ? ` ${currency}` : ''];
+  return `${sign}${before}${rest}${after}`;
+}
+// A printed return this far out is a wrong number in the memo, not a scenario (Lloyds: 176109.29p, +173249 %, on a share price of 101.60p):
+// no picture carries it to Google Images or X; the page stays as it is until the memo is right. The next largest return in the library is +865 %.
+const PICTURE_MAX_RETURN = 2000;
+// English letters for a file name: 'Crédit Agricole S.A.' -> 'credit-agricole-s-a', 'Host Hotels & Resorts' -> 'host-hotels-and-resorts'.
+export function fileWords(text) {
+  return String(text ?? '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' and ').replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+// The picture of a stock page: its addresses, its alt text and the strings to draw. { none: why } when the page has no numbers for one.
+export function pictureOf(data, lang = 'en') {
+  const chart = data?.pages?.stock?.chart;
+  if (chart?.kind !== 'scenarios') return { none: 'no scenario chart' };
+  const ui = UI[lang];
+  const words = PICTURE_WORDS[lang];
+  const sc = scenarioPoints(chart, ui);
+  if (!sc?.pts.Bear || !sc.pts.Bull) return { none: 'no bear or bull number' };
+  const names = ['Bear', 'Base', 'Bull'].filter((n) => sc.pts[n]);
+  const en = scenarioPoints(chart, UI.en).pts;
+  if (names.some((n) => Math.abs(num(en[n].ret) ?? 0) >= PICTURE_MAX_RETURN)) return { none: `a printed return of ${names.map((n) => en[n].ret).join(', ')}` };
+  const company = shortName(data);
+  const date = ui.date(sc.col);
+  const prices = Object.fromEntries(names.map((n) => [n, money(sc.pts[n].label, data.currency, lang)]));
+  const year = (/(\d{4})\s*$/.exec(String(sc.col)) || [])[1];
+  const base = [fileWords(company), data.slug, words.pattern, year].filter(Boolean).join('-');
+  const dir = pagePath(data.slug, 'stock', lang);
+  const memoDay = lang !== 'en' ? humanDay(data.memo_date, lang) : data.memo_date_text || humanDay(data.memo_date);
+  return {
+    ...PICTURE_SIZE,
+    path: `${dir}${base}.webp`,
+    pngPath: `${dir}${base}.png`,
+    url: `${SITE}${dir}${base}.webp`,
+    pngUrl: `${SITE}${dir}${base}.png`,
+    alt: words.alt(company, date, names.map((n) => `${words.word(ui.cases[n])} ${prices[n]}`).join(words.sep)),
+    draw: {
+      ...PICTURE_SIZE,
+      name: `${company} (${data.ticker})`,
+      title: `${ui.scen(date)}${data.currency ? ` (${data.currency})` : ''}`,
+      memo: memoDay ? `${ui.memoOf} ${memoDay}` : '',
+      legend: words.legend,
+      cases: names.map((n) => ({ key: n, label: ui.cases[n], price: prices[n], detail: `${sc.pts[n].prob} · ${sc.pts[n].ret}`, value: sc.pts[n].v })),
+    },
+  };
 }
 
 // Google Analytics behind the EU cookie banner (consent.mjs): in Europe nothing is sent before 'Accept'.
@@ -632,13 +715,16 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     })
     .join('');
   const body = [];
+  // the stock page's picture takes the inline chart's place: it is the same chart, and the inline one has nothing to click or hover
+  const pictured = type === 'stock' && ctx.pictures ? pictureOf(data, lang) : null;
+  const picture = pictured && !pictured.none ? pictured : null;
   // the dividend calculator inside the page, pre-filled with this company (owner 2026-10-29): only when its numbers pass the
   // calculator's guard ('' otherwise: the page is drawn exactly as before); it sits after the first section (chart + table)
   const calcBlock = type === 'dividend' ? renderDivCalcEmbed(data, lang) : '';
   page.blocks.forEach((b, i) => {
     body.push(`<h2>${esc(b.heading)}</h2>`);
     for (const p of b.paragraphs || []) body.push(mdBlock(p.text));
-    if (i === 0) body.push(chartHtml(data.pages[type], data, ui));
+    if (i === 0) body.push(picture ? `<div class="chart"><img src="${esc(picture.path)}" width="${picture.width}" height="${picture.height}" alt="${esc(picture.alt)}" decoding="async"></div>` : chartHtml(data.pages[type], data, ui));
     if (b.table) body.push(tableHtml(b.table, ui));
     if (i === 0 && calcBlock) body.push(calcBlock);
     if (i === 1) {
@@ -695,6 +781,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     mainEntityOfPage: url,
     about: { '@type': 'Corporation', name: company, tickerSymbol: ticker },
     inLanguage: ui.htmlLang,
+    ...(picture ? { image: { '@type': 'ImageObject', url: picture.url, width: picture.width, height: picture.height, caption: picture.alt } } : {}),
   };
   const html = shell({
     title: page.title,
@@ -702,6 +789,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     canonical: url,
     lang,
     alternates,
+    ...(picture ? { image: { url: picture.pngUrl, width: picture.width, height: picture.height, alt: picture.alt, type: 'image/png' } } : {}),
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
     meta: { type, ticker, cta, lang, label: `${company} ${TYPE_NAMES[type].toLowerCase()}` },
     body: `<div class="layout"><article>
@@ -722,7 +810,9 @@ ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type, lang, slug, ticker, title: page.title, modelTitle, datedKind, description: page.meta_description, lastmod: isoDay(data.memo_date),
-    alternates, html, outLinks, page, data };
+    alternates, html, outLinks, page, data, picture, pictureNone: pictured?.none || '',
+    // the same page with the inline chart and the share picture, for a picture that could not be drawn
+    withoutPicture: () => renderCompanyPage(data, type, { ...ctx, pictures: false }, lang) };
 }
 
 function hubList(companies, { withDates = false, langs = [] } = {}) {
@@ -1235,7 +1325,7 @@ td{padding:6px 10px;border-bottom:1px solid var(--trow);text-align:right;white-s
 th:first-child,td:first-child{text-align:left;white-space:normal;padding-left:0;min-width:9em;position:sticky;left:0;background:var(--paper)}
 tr.tot td{font-weight:700;background:var(--ttot);border-top:1.2px solid #1D2430;border-bottom:1.2px solid #1D2430}
 .note{font:400 13.5px/1.5 Inter,sans-serif!important;color:#4B535D;border-left:3px solid var(--mint);padding:2px 0 2px 12px;margin:10px 0 0!important}.note b{color:var(--teal-t)}
-.chart{margin:18px 0 8px}.chart svg{width:100%;height:auto;display:block;font-family:Inter,sans-serif}
+.chart{margin:18px 0 8px}.chart svg{width:100%;height:auto;display:block;font-family:Inter,sans-serif}.chart img{width:100%;height:auto;display:block;border-radius:10px}
 .ct{font-size:13px;font-weight:700;fill:#0F3F43}.cv{font-size:15px;font-weight:800;fill:#1C1E22}.cl{font-size:12px;fill:#5C636B}.cd{font-size:12.5px;font-weight:700;fill:#9A6A10}.cs{font-size:11px;font-weight:600;fill:#1C1E22}
 .mid{background:var(--page);border:1px solid var(--rule);border-radius:10px;padding:22px 24px;margin:40px 0;display:grid;gap:12px}
 .mid h3{font:800 20px/1.25 Inter,sans-serif;margin:0}.mid p{font:400 16px/1.55 Inter,sans-serif!important;margin:0!important;color:#3C4248}
@@ -1332,7 +1422,7 @@ function renderAlternatives(companies, exists, updated = '') {
 }
 
 // earningsDates: the checked list (stocksBuild.readEarningsDates); none = no date in any English earnings title.
-export function buildStockSite(companies, { today = new Date(), compares = [], earningsDates = {} } = {}) {
+export function buildStockSite(companies, { today = new Date(), compares = [], earningsDates = {}, pictures = false } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
@@ -1348,7 +1438,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   // are published and both are the memos the pair was read from; the company pages link the live ones.
   const comparePaths = new Set();
   const compareLinks = new Map();
-  const ctx = { bySlug, slugOf, sharedTitles, compareLinks, today: today.toISOString().slice(0, 10), earningsDates: earningsDates || {},
+  const ctx = { bySlug, slugOf, sharedTitles, compareLinks, today: today.toISOString().slice(0, 10), earningsDates: earningsDates || {}, pictures,
     exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) || DIVCALC_PATHS.has(p) };
   const compareHeld = [];
   const pairsOk = (Array.isArray(compares) ? compares : []).filter((p) => {

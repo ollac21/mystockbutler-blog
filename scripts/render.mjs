@@ -741,7 +741,7 @@ async function main() {
   await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
   const postsXml = renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
-  const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps)];
+  const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps), ...stocks.imageSitemaps];
   const newest = [...parseSitemap(postsXml), ...stocks.entries].map((e) => e.lastmod).filter(Boolean).sort().pop() || '';
   await writeFile(path.join(OUT, 'sitemap.xml'), renderSitemapIndex(names, newest));
   // IndexNow: the public key file (its content is exactly the key) and the state the NEXT build
