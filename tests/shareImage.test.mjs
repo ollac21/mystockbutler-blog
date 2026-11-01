@@ -66,15 +66,15 @@ test('the build copies the picture: PNG bytes, 1200 by 630, well under 1 MB', ()
   assert.equal(SHARE_IMAGE.url, `https://blog.mystockbutler.com/${SHARE_IMAGE.file}`, 'the address is the file, on this site');
 });
 
-// The app's card says 'Your first report is free' and 'every number from the company's own filings': not true on every market's
-// pages, where this picture shows. These are its bytes.
-const APP_CARD_SHA256 = '2ec194d0433690f5b321b21cc1ff9ef80283ee060aff17c623683544d065339f';
+// Two earlier cards, by their bytes. The app's says 'Your first report is free', which is not true on every market's pages. The
+// next one drew a free cash flow table with ticks, which a bank's, a fund's or a REIT's report does not have.
+const REFUSED_CARDS = ['2ec194d0433690f5b321b21cc1ff9ef80283ee060aff17c623683544d065339f', 'e49b12c9f2c5526a14998003f55aed2b85b9d3e0bf6c80dedc7e25d4bdcba44a'];
 
-test('the picture and its alt make no offer, and say traced', () => {
+test('the picture and its alt say only what holds on every page', () => {
   const png = readFileSync(path.join(out, SHARE_IMAGE.file));
-  assert.notEqual(createHash('sha256').update(png).digest('hex'), APP_CARD_SHA256);
-  assert.match(SHARE_IMAGE.alt, /every number traced to its source/);
-  assert.doesNotMatch(SHARE_IMAGE.alt, /report is free|free report|no card|own filings/i);
+  assert.ok(!REFUSED_CARDS.includes(createHash('sha256').update(png).digest('hex')), 'an earlier card came back');
+  assert.match(SHARE_IMAGE.alt, /every number traced to its source/i);
+  assert.doesNotMatch(SHARE_IMAGE.alt, /report is free|free report|no card|own filings|chapters?\b|scenarios?\b|free cash flow|follow the money/i);
   assert.ok(SHARE_IMAGE.alt.length <= 420, 'X reads at most 420 characters of alt text');
 });
 
@@ -92,8 +92,8 @@ test('every page of the build names a real picture; none points back at the old 
     assert.equal(og[0], SHARE_IMAGE.url, file);
     assert.deepEqual(content(html, 'property', 'og:image:width'), ['1200'], file);
     assert.deepEqual(content(html, 'property', 'og:image:height'), ['630'], file);
-    assert.equal(content(html, 'property', 'og:image:alt').length, 1, file);
-    assert.match(content(html, 'property', 'og:image:alt')[0], /every number traced to its source/, file);
+    assert.deepEqual(content(html, 'property', 'og:image:alt'), [SHARE_IMAGE.alt], file);
+    assert.deepEqual(content(html, 'name', 'twitter:image:alt'), [SHARE_IMAGE.alt], file);
   }
 });
 
