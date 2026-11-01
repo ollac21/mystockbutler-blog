@@ -113,7 +113,7 @@ function forecast(s) {
   const tickW = Math.max(0, ...s.axis.ticks.map((t) => widthOf(t.label, 'medium', 26)));
   const left = Math.max(110, CARD.x + 14 + tickW + 12);
   // the fan starts at 280; a longer price or label beside its point ('Kurs vom 22. Okt.') moves the start a little to the right rather than shrink
-  const x0 = Math.min(380, Math.max(280, left + 22 + Math.max(widthOf(s.start.price, 'heavy', 34), widthOf(s.start.label, 'medium', 26))));
+  const x0 = Math.min(340, Math.max(280, left + 32 + Math.max(widthOf(s.start.price, 'heavy', 34), widthOf(s.start.label, 'medium', 26))));
   const x3 = 790;
   const top = 208;
   const bottom = 590;
@@ -132,7 +132,7 @@ function forecast(s) {
   }
   for (const k of s.cases) k.values.forEach((v, i) => { if (v !== null && i < 2) o.push(dot(xs[i + 1], y(v), CASE_COLOR[k.key], 6)); });
   o.push(dot(xs[0], sy, INK, 9));
-  const startMax = x0 - 18 - left - 4;
+  const startMax = x0 - 18 - left - 14;
   // beside the point; a point at the very bottom lifts its two lines clear of the dates
   const lifted = sy > 566;
   o.push(line(s.start.price, { x: x0 - 18, y: lifted ? sy - 38 : sy - 2, size: fitSize(s.start.price, 'heavy', 34, startMax), weight: 'heavy', anchor: 'end', halo: '#FFFFFF' }));
@@ -178,7 +178,7 @@ function dividend(s) {
   const top = 300;
   const all = [...s.paid, ...fc];
   const vmax = Math.max(...all.map((b) => b.value), 0) || 1;
-  const textSize = fitAll(all.map((b) => b.text), 'heavy', 32, slot - 6);
+  const textSize = fitAll(all.map((b) => b.text), 'heavy', 32, slot - 16);
   const labelSize = fitAll(all.map((b) => b.label), 'medium', 28, slot - 6);
   o.push(line(s.paidHead, { x: left, y: 226, size: fitSize(s.paidHead, 'heavy', 34, Math.max(slot * s.paid.length, fc.length ? 0 : right - left) - 10), weight: 'heavy' }));
   if (fc.length) o.push(line(s.forecastHead, { x: left + slot * (s.paid.length + 1) + 14, y: 226, size: fitSize(s.forecastHead, 'heavy', 34, slot * fc.length - 14), weight: 'heavy' }));
