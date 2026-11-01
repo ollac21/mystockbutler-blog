@@ -562,7 +562,7 @@ const PICTURE_WORDS = {
 // A price in the page's currency: never converted (London prints pence, so a London price stays in pence). A code not listed
 // here is written after the number; no currency, no mark. [before the number, after it]
 const MONEY = {
-  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'], RMB: ['RMB ', ''], TWD: ['NT$', ''], USc: ['', '¢'], EURc: ['', ' euro cents'] },
+  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'], RMB: ['RMB ', ''], TWD: ['NT$', ''], USc: ['', '¢'], EURc: ['', ' eurocents'] },
   fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' $ NT'], USc: ['', ' ¢ US'], EURc: ['', ' centimes'] },
   de: { USD: ['', ' $'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' NT$'], USc: ['', ' US-Cent'], EURc: ['', ' Cent'] },
   'zh-HK': { USD: ['', ' 美元'], CAD: ['', ' 加元'], HKD: ['', ' 港元'], EUR: ['', ' 歐元'], GBP: ['', ' 英鎊'], GBp: ['', ' 便士'], RMB: ['', ' 人民幣'], TWD: ['', ' 新台幣'], USc: ['', ' 美仙'], EURc: ['', ' 歐仙'] },

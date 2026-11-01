@@ -96,6 +96,7 @@ test("every market's price in its own currency, never converted: London stays in
   assert.equal(money('12,10', 'CAD', 'de'), '12,10 CAD');
   assert.equal(money('292.57', 'HKD', 'zh-HK'), '292.57 港元');
   assert.equal(money('1.23', 'RMB'), 'RMB 1.23');
+  assert.equal(money('8.50', 'EURc'), '8.50 eurocents', 'the word the page\'s own unit uses');
   assert.equal(money('62.69', ''), '62.69', 'no currency, no mark');
   assert.equal(money('62.69', 'CHF'), '62.69 CHF', 'a currency not on the list: its code');
 });
