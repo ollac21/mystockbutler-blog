@@ -16,13 +16,14 @@ export function esc(value) {
 }
 
 // The site's one share picture, in one place: the file public/share-1200x630.png, which the build copies to the site root
-// (scripts/render.mjs). A page with a picture of its own passes { url, alt } (width and height when known) to imageTags.
+// (scripts/render.mjs). It shows on every market's pages, so it carries no offer: the free report is not the same everywhere.
+// A page with a picture of its own passes { url, alt } (width and height when known) to imageTags.
 export const SHARE_IMAGE = {
   file: 'share-1200x630.png',
   url: 'https://blog.mystockbutler.com/share-1200x630.png',
   width: 1200,
   height: 630,
-  alt: 'MyStockButler: What the numbers hide. Professional-grade stock research for people who manage their own money.',
+  alt: 'MyStockButler: What the numbers hide. Professional-grade stock research for people who manage their own money. A table follows the money from cash from operations to real free cash flow, every number traced to its source.',
 };
 
 // The Open Graph and X tags of a page's picture.

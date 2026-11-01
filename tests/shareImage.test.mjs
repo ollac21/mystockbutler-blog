@@ -3,6 +3,7 @@
 // page names it, a post with its own cover keeps the cover.
 import assert from 'node:assert/strict';
 import { execFileSync, spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { after, before, test } from 'node:test';
 import { cpSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, symlinkSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
@@ -65,6 +66,18 @@ test('the build copies the picture: PNG bytes, 1200 by 630, well under 1 MB', ()
   assert.equal(SHARE_IMAGE.url, `https://blog.mystockbutler.com/${SHARE_IMAGE.file}`, 'the address is the file, on this site');
 });
 
+// The app's card says 'Your first report is free' and 'every number from the company's own filings': not true on every market's
+// pages, where this picture shows. These are its bytes.
+const APP_CARD_SHA256 = '2ec194d0433690f5b321b21cc1ff9ef80283ee060aff17c623683544d065339f';
+
+test('the picture and its alt make no offer, and say traced', () => {
+  const png = readFileSync(path.join(out, SHARE_IMAGE.file));
+  assert.notEqual(createHash('sha256').update(png).digest('hex'), APP_CARD_SHA256);
+  assert.match(SHARE_IMAGE.alt, /every number traced to its source/);
+  assert.doesNotMatch(SHARE_IMAGE.alt, /report is free|free report|no card|own filings/i);
+  assert.ok(SHARE_IMAGE.alt.length <= 420, 'X reads at most 420 characters of alt text');
+});
+
 test('every page of the build names a real picture; none points back at the old address', () => {
   assert.ok(pages.length > 100, `${pages.length} pages`);
   for (const { file, html } of pages) {
@@ -80,6 +93,7 @@ test('every page of the build names a real picture; none points back at the old 
     assert.deepEqual(content(html, 'property', 'og:image:width'), ['1200'], file);
     assert.deepEqual(content(html, 'property', 'og:image:height'), ['630'], file);
     assert.equal(content(html, 'property', 'og:image:alt').length, 1, file);
+    assert.match(content(html, 'property', 'og:image:alt')[0], /every number traced to its source/, file);
   }
 });
 
