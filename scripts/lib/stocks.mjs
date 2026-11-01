@@ -562,8 +562,8 @@ const PICTURE_WORDS = {
 // A price in the page's currency: never converted (London prints pence, so a London price stays in pence). A code not listed
 // here is written after the number; no currency, no mark. [before the number, after it]
 const MONEY = {
-  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'], RMB: ['RMB ', ''], TWD: ['NT$', ''], USc: ['', '¢'], EURc: ['', ' c'] },
-  fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' $ NT'], USc: ['', ' ¢ US'], EURc: ['', ' c'] },
+  en: { USD: ['$', ''], CAD: ['C$', ''], HKD: ['HK$', ''], EUR: ['€', ''], GBP: ['£', ''], GBp: ['', 'p'], RMB: ['RMB ', ''], TWD: ['NT$', ''], USc: ['', '¢'], EURc: ['', ' euro cents'] },
+  fr: { USD: ['', ' $ US'], CAD: ['', ' $ CA'], HKD: ['', ' $ HK'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' $ NT'], USc: ['', ' ¢ US'], EURc: ['', ' centimes'] },
   de: { USD: ['', ' $'], EUR: ['', ' €'], GBP: ['', ' £'], GBp: ['', ' p'], RMB: ['', ' RMB'], TWD: ['', ' NT$'], USc: ['', ' US-Cent'], EURc: ['', ' Cent'] },
   'zh-HK': { USD: ['', ' 美元'], CAD: ['', ' 加元'], HKD: ['', ' 港元'], EUR: ['', ' 歐元'], GBP: ['', ' 英鎊'], GBp: ['', ' 便士'], RMB: ['', ' 人民幣'], TWD: ['', ' 新台幣'], USc: ['', ' 美仙'], EURc: ['', ' 歐仙'] },
 };
@@ -702,7 +702,15 @@ function forecastPicture(data, lang) {
   const axis = niceAxis([start.value, ...cases.flatMap((k) => k.values.filter((v) => v !== null))]);
   const tickDecimals = (String(Number(axis.step.toFixed(6))).split('.')[1] || '').length;
   const cur = data.currency === 'GBp' ? words.pence : words.curName[data.currency] || data.currency || '';
-  const startNumber = ui.num(start.raw);
+  // the start as this page prints it: a translated page's caption or fact with the same digits ('3.120,59' where the English caption has 3120.59), else in its number format
+  const startPrinted = (() => {
+    if (lang === 'en') return '';
+    const tr = langPage(data, 'stock', lang);
+    const places = [...(tr?.blocks || []).map((b) => b.table?.unit || ''), ...(tr?.facts || []).map((f) => f.value)];
+    const same = (t) => (String(t).match(/\d[\d.,\u00a0\u202f]*\d|\d/g) || []).find((n) => digitsOf(n) === digitsOf(start.raw));
+    return places.map(same).find(Boolean) || '';
+  })();
+  const startNumber = startPrinted || ui.num(start.raw);
   const dividends = /dividends/i.test(String(scenarioTable(data.pages.stock)?.unit || ''));
   const alt = words.alt(company, date, names.map((n) => `${words.word(ui.cases[n])} ${prices[n]}`).join(words.sep));
   return {

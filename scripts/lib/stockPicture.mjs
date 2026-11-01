@@ -112,7 +112,8 @@ function forecast(s) {
   const o = frame(s);
   const tickW = Math.max(0, ...s.axis.ticks.map((t) => widthOf(t.label, 'medium', 26)));
   const left = Math.max(110, CARD.x + 14 + tickW + 12);
-  const x0 = Math.max(280, left + 150);
+  // the fan starts at 280; a longer price or label beside its point ('Kurs vom 22. Okt.') moves the start a little to the right rather than shrink
+  const x0 = Math.min(380, Math.max(280, left + 22 + Math.max(widthOf(s.start.price, 'heavy', 34), widthOf(s.start.label, 'medium', 26))));
   const x3 = 790;
   const top = 208;
   const bottom = 590;
