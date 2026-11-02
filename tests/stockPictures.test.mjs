@@ -13,12 +13,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { SHARE_IMAGE, esc } from '../scripts/lib/layout.mjs';
-import { LANGS, MAX_RETURN, PICTURE_SIZE, buildStockSite, comparePicture, fileWords, money, niceAxis, pagePath, perShareCurrency, pictureOf, printedOn, startPrice, toolPicture, wildReturns } from '../scripts/lib/stocks.mjs';
-import { drawPicture, pictureSvg } from '../scripts/lib/stockPicture.mjs';
+import { LANGS, PICTURE_SIZE, buildStockSite, comparePicture, fileWords, money, niceAxis, pagePath, perShareCurrency, pictureOf, printedOn, startPrice, toolPicture, newestRun } from '../scripts/lib/stocks.mjs';
+import { MIN_TEXT, drawPicture, pictureSvg, smallestText } from '../scripts/lib/stockPicture.mjs';
 import { IMAGE_SITEMAP, writeStockSite } from '../scripts/lib/stocksBuild.mjs';
 import { buildState, diffUrls, parseSitemap } from '../scripts/lib/indexnow.mjs';
 import { loadAlternatives, loadToolPictures, toolPictureProblems, toolTable } from '../scripts/lib/guides.mjs';
-import { coverAlt, coverImgHtml, coverObject, measureCover } from '../scripts/lib/postCover.mjs';
+import { coverAlt, coverFile, coverImgHtml, coverObject, fetchCover } from '../scripts/lib/postCover.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.join(HERE, '..');
@@ -252,41 +252,24 @@ test('Article carries the picture as an ImageObject; og:image and twitter:image 
 
 // ---- the gate: Lloyds
 
-test('a page printing a return of 2,000 % or more is held back with its reason, and comes back by itself when the memo is fixed', () => {
+test('the one page held by hand: out, in the held report with why, nothing links to it; no number decides it', () => {
   const lloyds = company('lloy-l');
   const site = pictured([lloyds, company('ko')]);
   const held = site.held.find((h) => h.path === '/stocks/lloy-l/');
-  assert.ok(held, 'Lloyds is held');
-  assert.match(held.fails.join('; '), /prints a return of .*\+173249 %.*at most 1999 %/);
+  assert.match(held.fails.join('; '), /held by hand/);
   assert.equal(pageAt(site, '/stocks/lloy-l/'), undefined);
-  // nothing links to it: its dividend and earnings pages print no such return, so they stay, without a link to the held page
+  // its dividend and earnings pages stay, without a link to the held page
   for (const p of ['/stocks/lloy-l/dividend/', '/stocks/lloy-l/earnings/']) {
     const page = pageAt(site, p);
     assert.ok(page, `${p} stays`);
     assert.doesNotMatch(page.html, /href="\/stocks\/lloy-l\/"/, p);
   }
   for (const h of [...site.pages, ...site.hubs]) assert.doesNotMatch(h.html, /href="\/stocks\/lloy-l\/"/, h.path);
-  // the memo fixed: the page is back
-  const fixed = clone(lloyds);
-  const chart = fixed.pages.stock.chart;
-  fixed.pages.stock = { ...fixed.pages.stock, blocks: fixed.pages.stock.blocks.map((b) => (b.table?.head?.includes('Case') ? { ...b, table: { ...b.table, rows: b.table.rows.map((r) => r.map((c) => (/\(/.test(c) ? '176.11 (+73 %)' : c))) } } : b)), facts: fixed.pages.stock.facts.map((f) => (/\(/.test(f.value) ? { ...f, value: '113.25 (+11 %)' } : f)) };
-  for (const r of Object.values(chart.rows)) r.values = r.values.map(() => '176.11 (+73 %)');
-  assert.deepEqual(wildReturns(fixed.pages.stock, chart), []);
-  assert.ok(pageAt(pictured([fixed, company('ko')]), '/stocks/lloy-l/') || pictured([fixed, company('ko')]).held.every((h) => !/prints a return/.test(h.fails.join())), 'no return rule on the fixed memo');
-  assert.equal(MAX_RETURN, 2000);
-});
-
-test('the next largest return in the library, +865 %, stays; the rule reads returns as every language prints them', () => {
-  const big = clone(load('stock-ko.json'));
-  setLast(big.pages.stock.chart.rows.Bull, '2291.07 (+865 %)');
-  assert.deepEqual(wildReturns(big.pages.stock, big.pages.stock.chart).filter((r) => /865/.test(r)), []);
-  const page = (c) => ({ blocks: [{ table: { rows: [['Bull', '20 %', c]] } }] });
-  assert.equal(wildReturns(page('176109,29 (+173 249 %)')).length, 1, 'French');
-  assert.equal(wildReturns(page('176.109,29 (+173.249 %)')).length, 1, 'German');
-  assert.equal(wildReturns(page('12.50 (+2000 %)')).length, 1, 'at the line');
-  assert.equal(wildReturns(page('12.50 (+1999 %)')).length, 0, 'under it');
-  assert.equal(wildReturns(page('12.50 (-99 %)')).length, 0);
-  assert.equal(wildReturns(page('Revenue 3,000')).length, 0, 'not a return');
+  assert.deepEqual(Object.keys(JSON.parse(readFileSync(path.join(REPO, 'data', 'held-pages.json'), 'utf8')).pages), ['/stocks/lloy-l/']);
+  // the same return on any other page holds nothing
+  const big = clone(company('ko'));
+  setLast(big.pages.stock.chart.rows.Bull, '176109.29 (+173249 %)');
+  assert.equal(pictured([big]).held.some((h) => /return/.test(h.fails.join())), false);
 });
 
 // ---- the dividend picture
@@ -322,7 +305,7 @@ test('the dividend picture keeps units honest: unlike units draw no forecast, th
   assert.equal(pictureOf(nothing, 'en', 'dividend').draw.paid[0].text, '1.67');
 });
 
-test('the dividend picture: history only, a generic subtitle, no picture under 2 years with a report line, a bank from its own table', () => {
+test('the dividend picture: history only, a generic subtitle, one year draws its one bar, no data at all no picture with a report line, a bank from its own table', () => {
   const ko = company('ko');
   const noForecast = clone(ko);
   for (const b of noForecast.pages.dividend.blocks) if (b.table) b.table.rows = b.table.rows.filter((r) => !/^Dividends per share$/.test(r[0]));
@@ -333,7 +316,11 @@ test('the dividend picture: history only, a generic subtitle, no picture under 2
   const short = clone(ko);
   short.pages.dividend.chart.rows['Dividends paid, per share'] = ['', '', '', '', '2.04'];
   for (const b of short.pages.dividend.blocks) if (b.table) b.table.rows = b.table.rows.filter((r) => !/Dividend/.test(r[0]));
-  assert.match(pictureOf(short, 'en', 'dividend').none, /fewer than 2 years/);
+  const oneBar = pictureOf(short, 'en', 'dividend');
+  assert.deepEqual(oneBar.draw.paid.map((b) => b.text), ['$2.04']);
+  assert.equal((oneBar.alt.match(/\$2\.04/g) || []).length, 1, oneBar.alt);
+  short.pages.dividend.chart.rows['Dividends paid, per share'] = ['', '', '', '', ''];
+  assert.match(pictureOf(short, 'en', 'dividend').none, /no dividend per share/);
   const site = pictured([short]);
   const page = pageAt(site, '/stocks/ko/dividend/');
   assert.equal(imgs(page.html).length, 0, 'the page stays as it was');
@@ -373,11 +360,11 @@ test('the earnings picture: the next date in the title, revenue in the scale of 
   assert.equal(p.path, '/stocks/nvda/earnings/nvidia-nvda-earnings.webp');
   assert.equal(p.draw.kind, 'earnings');
   assert.equal(p.draw.title, 'NVIDIA (NVDA) reports next on November 18, 2026');
-  assert.equal(p.draw.sub, "Revenue by quarter in US$ billions, earnings per share, and management's guidance");
+  assert.equal(p.draw.sub, "Revenue by quarter in US$ billions, earnings per share in US$, and management's guidance");
   assert.deepEqual(p.draw.bars.map((b) => b.text), ['35.1', '39.3', '44.1', '46.7', '57.0', '68.1', '81.6', '96.2']);
   assert.deepEqual(p.draw.bars.map((b) => b.eps), ['0.78', '0.89', '0.76', '1.08', '1.30', '1.76', '2.39', '2.46']);
-  assert.deepEqual(p.draw.bars.map((b) => b.label), ['Oct 24', 'Jan 25', 'Apr 25', 'Jul 25', 'Oct 25', 'Jan 26', 'Apr 26', 'Jul 26']);
-  assert.deepEqual(p.draw.guided && { w: p.draw.guided.word, r: p.draw.guided.range, l: p.draw.guided.label, d: p.draw.guided.date }, { w: 'Guided', r: '105.8–110.2', l: 'Oct 26', d: 'Nov 18' });
+  assert.deepEqual(p.draw.bars.map((b) => b.label), ['Oct 2024', 'Jan 2025', 'Apr 2025', 'Jul 2025', 'Oct 2025', 'Jan 2026', 'Apr 2026', 'Jul 2026']);
+  assert.deepEqual(p.draw.guided && { w: p.draw.guided.word, r: p.draw.guided.range, l: p.draw.guided.label, d: p.draw.guided.date }, { w: 'Guided', r: '105.8–110.2', l: 'Oct 2026', d: 'Nov 18' });
   assertClean(p.draw, 'NVDA');
 });
 
@@ -419,7 +406,7 @@ test('the earnings scale is arithmetic on the declared unit; small companies kee
   assert.deepEqual(unknown.bars.map((b) => b.text), ['12', '13'], 'a unit we cannot read: as printed');
 });
 
-test('the earnings picture: no EPS, no EPS row; other lines from the page\'s own table; under 2 quarters none; numbers stay in the eight-quarter table', () => {
+test('the earnings picture: no EPS, no EPS row; other lines from the page\'s own table; one quarter draws its one bar; numbers stay in the eight-quarter table', () => {
   const noEps = clone(company('nvda'));
   delete noEps.pages.earnings.chart.rows['EPS, diluted'];
   const d = pictureOf(noEps, 'en', 'earnings', DAY).draw;
@@ -428,7 +415,7 @@ test('the earnings picture: no EPS, no EPS row; other lines from the page\'s own
   assert.doesNotMatch(d.sub, /earnings per share/);
   const one = clone(company('nvda'));
   one.pages.earnings.chart.rows.Revenue = ['', '', '', '', '', '', '', '96,221'];
-  assert.match(pictureOf(one, 'en', 'earnings', DAY).none, /fewer than 2 quarters/);
+  assert.deepEqual(pictureOf(one, 'en', 'earnings', DAY).draw.bars.map((b) => b.text), ['96.2']);
   const page = pageAt(pictured([company('nvda')]), '/stocks/nvda/earnings/');
   assert.equal(imgs(page.html).length, 1);
   assert.doesNotMatch(page.html, INLINE_BARS, 'it replaces the inline revenue chart');
@@ -493,13 +480,15 @@ test('the comparison picture: percentages and multiples only, each as its memo p
   assert.match(p.alt, /^NVIDIA vs AMD, the numbers side by side: revenue growth 65\.5% and 34\.3%, /);
 });
 
-test('the comparison picture: a row in unlike forms is dropped, under 3 rows none, both months when they differ, a long name shrinks', () => {
+test('the comparison picture: a row in unlike forms is dropped, two rows draw, no row none, both months when they differ, a long name shrinks', () => {
   const unlike = pair({ rows: [
     { label: 'Revenue growth', a: { value: '65.5%' }, b: { value: '34.3x' } },
     { label: 'Dividend yield', a: { value: '0.5%' }, b: { value: '1.0%' } },
     { label: 'P/E, next 12 months', a: { value: '13.7x' }, b: { value: '38.7x' } },
   ] });
-  assert.match(comparePicture(unlike).none, /2 rows/);
+  assert.equal(comparePicture(unlike).draw.rows.length, 2);
+  assertClean(comparePicture(unlike).draw, 'two rows');
+  assert.match(comparePicture(pair({ rows: [unlike.rows[0]] })).none, /no rows/);
   const months = comparePicture(pair({ a: { ...pair().a, memo_date: '2026-09-30T00:00:00Z' } }));
   assert.equal(months.draw.memo, 'Memos of September 2026 and October 2026');
   const long = comparePicture(pair({ a: { ...pair().a, name: 'Canadian Natural Resources' }, b: { ...pair().b, name: 'Crédit Agricole S.A.' } }));
@@ -583,18 +572,26 @@ test('the tools pages: one <img> each, in the Article and the share tags; the li
 
 // ---- the blog posts' covers
 
-test('a post\'s cover: its real size read from the file, a real alt, the Article image; a cover that cannot be read costs only itself', async () => {
-  const png = await sharp({ create: { width: 1200, height: 630, channels: 3, background: '#123456' } }).png().toBuffer();
-  const measured = await measureCover('https://files.test/c.png', { fetcher: async () => new Response(png, { status: 200 }) });
-  assert.deepEqual(measured, { url: 'https://files.test/c.png', width: 1200, height: 630 });
-  const tag = coverImgHtml(measured, 'A & B');
+test('a post\'s cover from our own address, a WebP under 100 KB, its real size, a real alt, the Article image; same cover, same bytes; a failed fetch costs only itself', async () => {
+  const noise = await sharp({ create: { width: 1600, height: 840, channels: 3, background: '#1a6b4a', noise: { type: 'gaussian', mean: 120, sigma: 4 } } }).png().toBuffer();
+  assert.ok(noise.length > 300 * 1024, `${noise.length}: a heavy cover`);
+  const fetcher = async () => new Response(noise, { status: 200 });
+  const c = await fetchCover('https://files.test/c.png', { fetcher });
+  assert.ok(c.webp.length < 100 * 1024, `${c.webp.length} bytes`);
+  assert.equal(c.webp.subarray(8, 12).toString('latin1'), 'WEBP');
+  assert.deepEqual([c.width, c.height], [1200, 630], 'no wider than the page needs, its own shape');
+  assert.equal(sha((await fetchCover('https://files.test/c.png', { fetcher })).webp), sha(c.webp), 'same cover, same bytes');
+  const cover = { path: '/a-post/a-post-cover.webp', url: 'https://blog.mystockbutler.com/a-post/a-post-cover.webp', width: 1200, height: 630 };
+  assert.equal(coverFile('a-post'), 'a-post-cover.webp');
+  const tag = coverImgHtml(cover, 'A & B');
+  assert.equal(attr(tag, 'src'), cover.path);
   assert.equal(attr(tag, 'width'), '1200');
   assert.equal(attr(tag, 'height'), '630');
   assert.equal(attr(tag, 'alt'), 'Cover of the MyStockButler report: A & B');
-  assert.deepEqual(coverObject(measured, 'A'), { '@type': 'ImageObject', url: 'https://files.test/c.png', width: 1200, height: 630, caption: coverAlt('A') });
-  await assert.rejects(measureCover('https://files.test/none.png', { fetcher: async () => new Response('missing', { status: 404 }) }), /HTTP 404/);
-  await assert.rejects(measureCover('https://files.test/bad.png', { fetcher: async () => new Response('not a picture', { status: 200 }) }));
-  await assert.rejects(measureCover('https://files.test/down.png', { fetcher: async () => { throw new Error('down'); } }), /down/);
+  assert.deepEqual(coverObject(cover, 'A'), { '@type': 'ImageObject', url: cover.url, width: 1200, height: 630, caption: coverAlt('A') });
+  await assert.rejects(fetchCover('https://files.test/none.png', { fetcher: async () => new Response('missing', { status: 404 }) }), /HTTP 404/);
+  await assert.rejects(fetchCover('https://files.test/bad.png', { fetcher: async () => new Response('not a picture', { status: 200 }) }));
+  await assert.rejects(fetchCover('https://files.test/down.png', { fetcher: async () => { throw new Error('down'); } }), /down/);
 });
 
 // ---- the files
@@ -879,7 +876,17 @@ function sweep(out, report, companyOf) {
     const isTools = /^\/(?:alternatives|fr\/alternatives|de\/alternativen|zh\/alternatives)\/[^/]+\/$/.test(rel);
     const isPost = /^\/[^/]+\/$/.test(rel) && !row && !['/about/', '/alternatives/', '/compare/', '/stocks/', '/de/', '/fr/'].includes(rel);
     if (!row && !isTools) {
-      if (isPost && all.length) { assert.equal(all.length, 1, rel); assert.match(attr(all[0], 'alt'), /^Cover of the MyStockButler report: /, rel); assert.ok(Number(attr(all[0], 'width')) > 0 && Number(attr(all[0], 'height')) > 0, rel); stats.byType.post = (stats.byType.post || 0) + 1; continue; }
+      if (isPost && all.length) {
+        assert.equal(all.length, 1, rel);
+        assert.match(attr(all[0], 'alt'), /^Cover of the MyStockButler report: /, rel);
+        assert.ok(Number(attr(all[0], 'width')) > 0 && Number(attr(all[0], 'height')) > 0, rel);
+        const src = attr(all[0], 'src');
+        assert.ok(src.startsWith(rel) && src.endsWith('.webp'), `${rel}: the cover comes from our own address: ${src}`);
+        assert.ok(statSync(path.join(out, src.slice(1))).size < 100 * 1024, src);
+        expected.add(src.slice(1));
+        stats.byType.post = (stats.byType.post || 0) + 1;
+        continue;
+      }
       assert.equal(all.length, 0, `${rel}: a list page, a calculator, About, a guide or a home has no picture`);
       continue;
     }
@@ -950,6 +957,112 @@ function sweep(out, report, companyOf) {
   assert.equal(Object.keys(state.urls).length, listed.length, 'each page counted once');
   return stats;
 }
+
+// ---- the drawing fixes, each from a real page
+
+test('a negative value has no bar, only its number with its sign; the other bar is scaled on the positive value alone (Oracle -5.5 % beside Microsoft +1.7 %)', () => {
+  const p = comparePicture(pair({ rows: [
+    { label: 'Revenue growth', a: { value: '1.7%' }, b: { value: '-5.5%' } },
+    { label: 'Operating margin', a: { value: '45.0%' }, b: { value: '30.0%' } },
+    { label: 'Free cash flow yield', a: { value: '-1.0%' }, b: { value: '-2.0%' } },
+  ] }));
+  const svg = pictureSvg(p.draw);
+  const bars = (color) => [...svg.matchAll(new RegExp(`width="([\\d.]+)" height="40" rx="5" fill="${color}"`, 'g'))].map((m) => Number(m[1]));
+  assert.deepEqual(bars('#C2542D'), [160], 'Oracle has no bar on the row where it is negative');
+  assert.deepEqual(bars('#1170A8'), [240, 240], 'Microsoft fills its side on the positive value alone; both negative: no bars');
+  assertClean(p.draw, 'negative');
+});
+
+test('one picture, one period length, no skipped period: BOCHK\'s half-years stay out of its quarters', () => {
+  assert.deepEqual(newestRun(['Half-year to Jun 2024', 'Half-year to Dec 2024', 'Mar 2025', 'Jun 2025']), { from: 2, step: 3 });
+  assert.deepEqual(newestRun(['Jan 2022', 'Jan 2023', '2023', '2024', '2025']), { from: 0, step: 12 });
+  assert.deepEqual(newestRun(['Mar 2025', 'Jun 2025', 'Mar 2026', 'Jun 2026']), { from: 2, step: 3 });
+  assert.deepEqual(newestRun(['6 months to Jun 2024', '6 months to Dec 2024', '6 months to Jun 2025']), { from: 0, step: 6 });
+  const d = clone(company('nvda'));
+  d.pages.earnings.chart = { kind: 'quarters', unit: 'HK$ millions; per share in HK$', columns: ['Half-year to Jun 2024', 'Half-year to Dec 2024', 'Mar 2025', 'Jun 2025', 'Sep 2025', 'Dec 2025', 'Mar 2026', 'Jun 2026'],
+    rows: { 'EPS, diluted': ['1.90', '1.72', '', '', '', '', '', ''], Revenue: ['35,336', '35,917', '20,149', '19,988', '17,202', '19,893', '20,007', '19,896'] } };
+  const { draw } = pictureOf(d, 'en', 'earnings', DAY);
+  assert.deepEqual(draw.bars.map((b) => b.label), ['Mar 2025', 'Jun 2025', 'Sep 2025', 'Dec 2025', 'Mar 2026', 'Jun 2026']);
+  assert.match(draw.sub, /^Revenue by quarter in /);
+  assert.equal(draw.periodWord, 'Quarter');
+});
+
+test('the labels are the page\'s own: no \'Jan 22\', no year that hides a skipped one; a blank inside a run keeps its slot', () => {
+  const labels = (columns, cells) => { const d = clone(company('ko')); d.pages.dividend.chart.columns = columns; d.pages.dividend.chart.rows['Dividends paid, per share'] = cells; return pictureOf(d, 'en', 'dividend').draw.paid; };
+  assert.deepEqual(labels(['2021', '2022', '2023', 'Jan 2025', 'Jan 2026'], ['1.39', '1.44', '1.48', '1.53', '1.62']).map((b) => b.label), ['2021', '2022', '2023', 'Jan 2025', 'Jan 2026']);
+  assert.deepEqual(labels(['Jan 2022', 'Jan 2023', '2023', '2024', '2025'], ['3.76', '4.40', '4.84', '6.04', '6.96']).map((b) => b.label), ['Jan 2022', 'Jan 2023', '2023', '2024', '2025']);
+  const blank = labels(['2021', '2022', '2023', '2024', '2025'], ['1.39', '1.44', '', '1.53', '1.62']);
+  assert.deepEqual(blank.map((b) => [b.label, b.value]), [['2021', 1.39], ['2022', 1.44], ['2023', null], ['2024', 1.53], ['2025', 1.62]]);
+});
+
+test('the earnings bars are the revenue row wherever the table sits: Brookfield showed its buybacks, from an earlier table', () => {
+  const d = clone(company('nvda'));
+  d.pages.earnings.chart = null;
+  const head = ['Row', '2025', '2024', '2023'];
+  d.pages.earnings.blocks = [
+    { heading: 'Stock pay', paragraphs: [], table: { title: 'Stock pay and the share count', unit: 'US$ millions', head, rows: [['Share buybacks', '1,009', '1,001', '624'], ['Stock pay', '317', '513', '394']] } },
+    { heading: 'Results', paragraphs: [], table: { title: 'The last eight reported periods', unit: 'US$ millions, except per-share amounts in US$', head: ['Row', 'Jun 2026', 'Mar 2026', 'Dec 2025'], rows: [['Revenue', '19,406', '18,580', '20,156'], ['Net income', '364', '102', '743'], ['EPS, diluted', '0.14', '0.03', '0.30']] } },
+  ];
+  const { draw } = pictureOf(d, 'en', 'earnings', DAY);
+  assert.deepEqual(draw.bars.map((b) => b.text), ['20.2', '18.6', '19.4']);
+  assert.match(draw.sub, /^Revenue by quarter in US\$ billions, earnings per share in US\$/);
+  // no revenue row on the page: the results table's first money row under its own name, never the stock-pay table
+  d.pages.earnings.blocks[1].table.rows.shift();
+  assert.match(pictureOf(d, 'en', 'earnings', DAY).draw.sub, /^Net income by quarter/);
+});
+
+test('earnings per share carries the unit the page declares (III: 339.80 pence); no unit declared: the number as the page prints it', () => {
+  const d = clone(company('nvda'));
+  d.currency = 'GBp';
+  d.pages.earnings.chart = null;
+  d.pages.earnings.blocks = [{ heading: 'Results', paragraphs: [], table: { title: 'The last eight reported periods', unit: '£ millions; EPS in pence', head: ['Row', '6 months to Mar 2026', '6 months to Sep 2025'], rows: [['Revenue', '2,010', '3,486'], ['EPS, diluted', '198.80', '339.80']] } }];
+  const p = pictureOf(d, 'en', 'earnings', DAY);
+  assert.match(p.draw.sub, /earnings per share in pence/);
+  assert.deepEqual(p.draw.bars.map((b) => b.eps), ['339.80', '198.80']);
+  assert.match(p.alt, /198\.80p/);
+  d.pages.earnings.blocks[0].table.unit = '£ millions';
+  const bare = pictureOf(d, 'en', 'earnings', DAY);
+  assert.deepEqual(bare.draw.bars.map((b) => b.eps), ['339.80', '198.80']);
+  assert.match(bare.draw.sub, /earnings per share$/);
+});
+
+test('the picture prints the page\'s own digits: no display rounding, only the declared scale', () => {
+  const d = clone(company('nvda'));
+  d.pages.earnings.chart.unit = 'US$ millions';
+  d.pages.earnings.chart.columns = ['Mar 2026', 'Jun 2026'];
+  d.pages.earnings.chart.rows.Revenue = ['8,759.056', '4,540.681'];
+  delete d.pages.earnings.chart.rows['EPS, diluted'];
+  assert.deepEqual(pictureOf(d, 'en', 'earnings', DAY).draw.bars.map((b) => b.text), ['8,759.056', '4,540.681']);
+  const ko = clone(company('ko'));
+  ko.pages.dividend.chart.rows['Dividends paid, per share'] = ['1.1234', '1.2345', '1.3456', '1.4567', '1.5678'];
+  assert.equal(pictureOf(ko, 'en', 'dividend').draw.paid[4].text, '$1.5678');
+});
+
+test('a dividend page with only our forecast\'s row draws that row, on every company, from no list', () => {
+  const d = clone(company('ko'));
+  d.pages.dividend.chart = null;
+  for (const b of d.pages.dividend.blocks) if (b.table && !/^base case/i.test(String(b.table.unit))) b.table.rows = b.table.rows.filter((r) => !/Dividend/i.test(r[0]));
+  const p = pictureOf(d, 'en', 'dividend');
+  assert.deepEqual(p.draw.paid, []);
+  assert.ok(p.draw.forecast.length > 0);
+  assert.match(p.alt, /our forecast: /);
+  assertClean(p.draw, 'forecast only');
+});
+
+test('nothing on a picture is too small: 22 px at the very least, across every company, in every language', () => {
+  const sizes = [];
+  for (const f of readdirSync(path.join(REPO, 'data', 'stocks'))) {
+    const d = company(f.replace('.json', ''));
+    for (const lang of ['en', ...Object.keys(d.translations || {})]) for (const type of ['stock', 'dividend', 'earnings']) {
+      const p = lang === 'en' ? d.pages?.[type] && pictureOf(d, lang, type, DAY) : d.translations[lang]?.pages?.[type] && pictureOf(d, lang, type, DAY);
+      if (p && !p.none) sizes.push([smallestText(p.draw), `${f} ${lang} ${type}`]);
+    }
+  }
+  assert.ok(sizes.length > 800);
+  const small = sizes.filter(([z]) => z < MIN_TEXT - 2);
+  assert.deepEqual(small, []);
+  for (const g of loadAlternatives()) { const t = toolPicture(g); if (!t.none) assert.ok(smallestText(t.draw) >= MIN_TEXT, g.name); }
+});
 
 test('the whole site: every picture\'s page has its one <img>, its numbers on the page, its files; every other page has none', { timeout: 600000 }, async () => {
   const given = process.env.STOCK_PICTURES_SITE;

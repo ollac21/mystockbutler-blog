@@ -20,7 +20,7 @@ import { nofollowAppLinks } from './lib/appLinks.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
 import { INDEXNOW_KEY, KEY_FILE, STATE_FILE, buildState, parseSitemap } from './lib/indexnow.mjs';
-import { coverImgHtml, coverObject, measureCover } from './lib/postCover.mjs';
+import { coverFile, coverImgHtml, coverObject, fetchCover } from './lib/postCover.mjs';
 import { appArticleOutline } from './lib/appArticleHtml.mjs';
 import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 import { ORG } from './lib/stocks.mjs';
@@ -731,7 +731,7 @@ async function main() {
 
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
-  // Each post's cover on its page, with its real size (SEO list row 3). STOCK_PICTURES=off shows none. A cover that cannot be read leaves that post as it was.
+  // Each post's cover on its page, from our own address (SEO list row 3). STOCK_PICTURES=off shows none. A cover that cannot be fetched leaves that post as it was, with a report line.
   const covers = { shown: [], missing: [] };
   const extraImages = [];
   for (const { post, markdown, hub, articleFile } of entries) {
@@ -741,9 +741,12 @@ async function main() {
     const cover = process.env.STOCK_PICTURES === 'off' ? '' : coverOf(post);
     if (cover) {
       try {
-        measured = await measureCover(cover);
-        covers.shown.push({ slug: post.slug, width: measured.width, height: measured.height });
-        extraImages.push({ url: `${SITE}/${post.slug}/`, lastmod: lastModified(post), picture: { url: cover } });
+        const { webp, width, height } = await fetchCover(cover);
+        const name = coverFile(post.slug);
+        await writeFile(path.join(dir, name), webp);
+        measured = { path: `/${post.slug}/${name}`, url: `${SITE}/${post.slug}/${name}`, width, height };
+        covers.shown.push({ slug: post.slug, width, height, bytes: webp.length });
+        extraImages.push({ url: `${SITE}/${post.slug}/`, lastmod: lastModified(post), picture: { url: measured.url } });
       } catch (err) {
         covers.missing.push({ slug: post.slug, why: err.message });
         warn(`post cover: /${post.slug}/ shows no cover (${err.message})`);

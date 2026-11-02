@@ -10,7 +10,7 @@
       { "tool": "Seeking Alpha Premium", "price": ["$299 a year"], "gets": ["Contributors' articles, ratings"] },
       { "tool": "Morningstar Investor", "price": ["$249 a year"], "gets": ["Analyst report where covered"] },
       { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["$99 a year"], "gets": ["Statements, ratios, forecasts"] },
-      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month, billed yearly"], "gets": ["Visual score, valuation, risks"] }
+      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month,", "billed yearly"], "gets": ["Visual score, valuation, risks"] }
     ]
   },
   "en-seeking-alpha": {
@@ -20,10 +20,10 @@
     "date": "26 October 2026",
     "rows": [
       { "tool": "MyStockButler", "me": true, "price": ["First S&P 500 report free;", "$5 a library report, $20 a new one"], "gets": ["Full report in eight chapters,", "every number traced"] },
-      { "tool": "Seeking Alpha Premium", "price": ["$299 a year"], "gets": ["Contributor articles, quant ratings"] },
+      { "tool": "Seeking Alpha Premium", "price": ["$299 a year"], "gets": ["Contributor articles,", "quant ratings"] },
       { "tool": "Morningstar Investor", "price": ["$249 a year"], "gets": ["Analyst report where covered"] },
-      { "tool": "TipRanks Premium", "row": "TipRanks", "price": ["$13.50 a month, billed yearly"], "gets": ["Analysts' ratings, a Smart Score"] },
-      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month, billed yearly"], "gets": ["Visual score, valuation, risks"] },
+      { "tool": "TipRanks Premium", "row": "TipRanks", "price": ["$13.50 a month,", "billed yearly"], "gets": ["Analysts' ratings,", "a Smart Score"] },
+      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month,", "billed yearly"], "gets": ["Visual score, valuation, risks"] },
       { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["$9.99 a month"], "gets": ["Statements, ratios, forecasts"] }
     ]
   },
@@ -34,8 +34,8 @@
     "date": "26 October 2026",
     "rows": [
       { "tool": "MyStockButler", "me": true, "price": ["First S&P 500 report free;", "$5 a library report, $20 a new one"], "gets": ["Full report in eight chapters,", "every number traced"] },
-      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month, billed yearly"], "gets": ["Visual score, valuation, risks"] },
-      { "tool": "Seeking Alpha Premium", "price": ["$299 a year"], "gets": ["Contributor articles, quant ratings"] },
+      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["$10.95 a month,", "billed yearly"], "gets": ["Visual score, valuation, risks"] },
+      { "tool": "Seeking Alpha Premium", "price": ["$299 a year"], "gets": ["Contributor articles,", "quant ratings"] },
       { "tool": "Morningstar Investor", "price": ["$249 a year"], "gets": ["Analyst report where covered"] },
       { "tool": "TipRanks Premium", "row": "TipRanks", "price": ["$13.50 a month"], "gets": ["Analysts' ratings gathered"] },
       { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["$99 a year"], "gets": ["Statements, ratios, forecasts"] }
@@ -48,7 +48,7 @@
     "date": "29 October 2026",
     "rows": [
       { "tool": "MyStockButler", "me": true, "price": ["$5 a library report,", "$20 a new one"], "gets": ["Full written report in eight", "chapters, every number traced"] },
-      { "tool": "Danelfin", "price": ["Plus $22, Pro $59,", "Elite $134 a month"], "gets": ["AI Score per stock, price forecasts"] },
+      { "tool": "Danelfin", "price": ["Plus $22, Pro $59,", "Elite $134 a month"], "gets": ["AI Score per stock,", "price forecasts"] },
       { "tool": "InvestIQ", "price": ["Pro €19 a month;", "Ultra €49 a month"], "gets": ["Report on your question, chat"] },
       { "tool": "StockInsights.ai", "price": ["Pro $20 a month,", "or $200 a year"], "gets": ["AI summaries of filings, chat"] },
       { "tool": "TIKR", "price": ["Plus $24.95, Pro $54.95,", "Ultimate $119.95 a month"], "gets": ["Screener, financials, valuation"] },
@@ -61,12 +61,12 @@
     "sub": "Preise laut Preisseite des Anbieters am 26. Oktober 2026.",
     "date": "26. Oktober 2026",
     "rows": [
-      { "tool": "MyStockButler", "me": true, "price": ["Erster S&P-500-Bericht gratis;", "5 US-Dollar für einen Bericht aus der Bibliothek,", "20 US-Dollar für einen neuen"], "gets": ["Vollständiger Bericht in acht", "Kapiteln, jede Zahl belegt"] },
-      { "tool": "Aktienfinder", "price": ["290 € im Jahr"], "gets": ["Kennzahlen, fairer Wert, Prognosen"] },
+      { "tool": "MyStockButler", "me": true, "price": ["Erster S&P-500-Bericht gratis;", "5 US-Dollar für einen Bericht aus", "der Bibliothek, 20 US-Dollar für", "einen neuen"], "gets": ["Vollständiger Bericht in acht", "Kapiteln, jede Zahl belegt"] },
+      { "tool": "Aktienfinder", "price": ["290 € im Jahr"], "gets": ["Kennzahlen, fairer Wert,", "Prognosen"] },
       { "tool": "onvista Plus", "row": "onvista", "price": ["14,90 € im Monat,", "jährliche Zahlung"], "gets": ["Report als PDF pro Aktie"] },
-      { "tool": "finanzen.net", "price": ["Kostenlos (mit Werbung)"], "gets": ["Kurse, Nachrichten, Analystenziele"] },
-      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["10,95 US-Dollar im Monat,", "jährlich bezahlt"], "gets": ["Visueller Score, Bewertung, Risiken"] },
-      { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["9,99 US-Dollar im Monat"], "gets": ["Jahresabschlüsse, Kennzahlen, Prognosen"] }
+      { "tool": "finanzen.net", "price": ["Kostenlos (mit Werbung)"], "gets": ["Kurse, Nachrichten,", "Analystenziele"] },
+      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["10,95 US-Dollar im Monat,", "jährlich bezahlt"], "gets": ["Visueller Score, Bewertung,", "Risiken"] },
+      { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["9,99 US-Dollar im Monat"], "gets": ["Jahresabschlüsse, Kennzahlen,", "Prognosen"] }
     ]
   },
   "de-ki-aktienanalyse-tools": {
@@ -75,11 +75,11 @@
     "sub": "Preise auf jeder Website am 29. Oktober 2026, in US-Dollar, außer in Euro angegebene.",
     "date": "29. Oktober 2026",
     "rows": [
-      { "tool": "MyStockButler", "me": true, "price": ["5 US-Dollar für einen Bericht aus der Bibliothek,", "20 US-Dollar für einen neuen"], "gets": ["Vollständiger Bericht in acht", "Kapiteln, jede Zahl belegt"] },
-      { "tool": "Danelfin", "price": ["Plus 22, Pro 59, Elite 134", "US-Dollar im Monat"], "gets": ["KI-Score pro Aktie, Kursprognosen"] },
-      { "tool": "InvestIQ", "price": ["Pro 19 € im Monat;", "Ultra 49 € im Monat"], "gets": ["Bericht zu Ihrer Frage, Chat-Copilot"] },
+      { "tool": "MyStockButler", "me": true, "price": ["5 US-Dollar für einen Bericht aus", "der Bibliothek, 20 US-Dollar für", "einen neuen"], "gets": ["Vollständiger Bericht in acht", "Kapiteln, jede Zahl belegt"] },
+      { "tool": "Danelfin", "price": ["Plus 22, Pro 59, Elite 134", "US-Dollar im Monat"], "gets": ["KI-Score pro Aktie,", "Kursprognosen"] },
+      { "tool": "InvestIQ", "price": ["Pro 19 € im Monat;", "Ultra 49 € im Monat"], "gets": ["Bericht zu Ihrer Frage,", "Chat-Copilot"] },
       { "tool": "StockInsights.ai", "price": ["Pro 20 US-Dollar im Monat", "oder 200 US-Dollar im Jahr"], "gets": ["KI-Zusammenfassungen, Chat"] },
-      { "tool": "TIKR", "price": ["Plus 24,95, Pro 54,95, Ultimate", "119,95 US-Dollar im Monat"], "gets": ["Screener, Finanzzahlen, Bewertung"] },
+      { "tool": "TIKR", "price": ["Plus 24,95, Pro 54,95, Ultimate", "119,95 US-Dollar im Monat"], "gets": ["Screener, Finanzzahlen,", "Bewertung"] },
       { "tool": "AlphaSense", "price": ["Nicht veröffentlicht"], "gets": ["KI-Suche in Dokumenten"] }
     ]
   },
@@ -89,12 +89,12 @@
     "sub": "Prix relevés sur la page de chaque produit le 26 octobre 2026.",
     "date": "26 octobre 2026",
     "rows": [
-      { "tool": "MyStockButler", "me": true, "price": ["Premier rapport S&P 500 gratuit ;", "5 $ US un rapport de la bibliothèque,", "20 $ US un nouveau"], "gets": ["Rapport complet en huit chapitres,", "chaque chiffre retracé"] },
-      { "tool": "Zonebourse", "price": ["Access dès 24 € par mois,", "payé à l'année"], "gets": ["Cours, consensus, tableaux financiers"] },
-      { "tool": "ABC Bourse", "price": ["19,90 € par mois payé à l'année,", "29 € au mois"], "gets": ["Cours, analyses, outils de bourse"] },
+      { "tool": "MyStockButler", "me": true, "price": ["Premier rapport S&P 500 gratuit ;", "5 $ US un rapport de la", "bibliothèque, 20 $ US un nouveau"], "gets": ["Rapport complet en huit", "chapitres, chaque chiffre", "retracé"] },
+      { "tool": "Zonebourse", "price": ["Access dès 24 € par mois,", "payé à l'année"], "gets": ["Cours, consensus,", "tableaux financiers"] },
+      { "tool": "ABC Bourse", "price": ["19,90 € par mois à l'année,", "29 € au mois"], "gets": ["Cours, analyses,", "outils de bourse"] },
       { "tool": "Boursorama", "price": ["Gratuit"], "gets": ["Cours, actualités, forum"] },
-      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["10,95 $ US par mois,", "payé à l'année"], "gets": ["Score visuel, valorisation, risques"] },
-      { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["9,99 $ US par mois"], "gets": ["États financiers, ratios, prévisions"] }
+      { "tool": "Simply Wall St Premium", "row": "Simply Wall St", "price": ["10,95 $ US par mois,", "payé à l'année"], "gets": ["Score visuel, valorisation,", "risques"] },
+      { "tool": "Stock Analysis Pro", "row": "Stock Analysis", "price": ["9,99 $ US par mois"], "gets": ["États financiers, ratios,", "prévisions"] }
     ]
   },
   "fr-outils-ia-analyse-actions": {
@@ -103,12 +103,12 @@
     "sub": "Prix sur chaque site le 29 octobre 2026, en dollars américains sauf mention en euros.",
     "date": "29 octobre 2026",
     "rows": [
-      { "tool": "MyStockButler", "me": true, "price": ["5 $ US un rapport de la bibliothèque,", "20 $ US un nouveau"], "gets": ["Rapport écrit en huit chapitres,", "chaque chiffre retracé"] },
-      { "tool": "Danelfin", "price": ["Plus 22 $ US, Pro 59 $ US,", "Elite 134 $ US par mois"], "gets": ["Note IA par action, prévisions de cours"] },
-      { "tool": "InvestIQ", "price": ["Pro 19 € par mois ;", "Ultra 49 € par mois"], "gets": ["Rapport sur votre question, discussion"] },
+      { "tool": "MyStockButler", "me": true, "price": ["5 $ US un rapport de la", "bibliothèque, 20 $ US un nouveau"], "gets": ["Rapport écrit en huit chapitres,", "chaque chiffre retracé"] },
+      { "tool": "Danelfin", "price": ["Plus 22 $ US, Pro 59 $ US,", "Elite 134 $ US par mois"], "gets": ["Note IA par action,", "prévisions de cours"] },
+      { "tool": "InvestIQ", "price": ["Pro 19 € par mois ;", "Ultra 49 € par mois"], "gets": ["Rapport sur votre question,", "discussion"] },
       { "tool": "StockInsights.ai", "price": ["Pro 20 $ US par mois,", "ou 200 $ US par an"], "gets": ["Résumés IA, réponses par chat"] },
-      { "tool": "TIKR", "price": ["Plus 24,95 $ US, Pro 54,95 $ US,", "Ultimate 119,95 $ US par mois"], "gets": ["Filtre, états financiers, valorisation"] },
-      { "tool": "AlphaSense", "price": ["Non publié"], "gets": ["Recherche IA dans les documents"] }
+      { "tool": "TIKR", "price": ["Plus 24,95 $ US, Pro 54,95 $ US,", "Ultimate 119,95 $ US par mois"], "gets": ["Filtre, états financiers,", "valorisation"] },
+      { "tool": "AlphaSense", "price": ["Non publié"], "gets": ["Recherche IA dans", "les documents"] }
     ]
   },
   "zh-ai-stock-research-tools": {
@@ -118,7 +118,7 @@
     "date": "2026年10月29日",
     "rows": [
       { "tool": "MyStockButler", "me": true, "price": ["報告庫中的報告每份 5 美元，", "新報告每份 20 美元"], "gets": ["八章完整書面報告，", "每個數字都可追溯至來源"] },
-      { "tool": "Danelfin", "price": ["每月 Plus 22、Pro 59、", "Elite 134 美元"], "gets": ["每隻股票一個 AI 評分、股價預測"] },
+      { "tool": "Danelfin", "price": ["每月 Plus 22、Pro 59、", "Elite 134 美元"], "gets": ["每隻股票一個 AI 評分、", "股價預測"] },
       { "tool": "InvestIQ", "price": ["Pro 每月 19 歐元；", "Ultra 每月 49 歐元"], "gets": ["結構化報告、對話助手"] },
       { "tool": "StockInsights.ai", "price": ["Pro 每月 20 美元，", "或每年 200 美元"], "gets": ["AI 摘要、對話回答"] },
       { "tool": "TIKR", "price": ["每月 Plus 24.95、Pro 54.95、", "Ultimate 119.95 美元"], "gets": ["篩選器、財務數據、估值模型"] },

@@ -9,6 +9,7 @@
 // company, except the comparison pages' fixed sentences around the memos' own figures (compareWritten): the renderer draws
 // what the file holds, and the gate (gatePage) holds back a page that breaks a rule.
 
+import { readFileSync } from 'node:fs';
 import { Marked } from 'marked';
 import { APP, AUTHOR, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
@@ -529,9 +530,10 @@ const PICTURE_WORDS = {
     dTitle: (n, y) => (y ? `${n} dividend: ${y} yield` : `${n} dividend`),
     dSub: (a, i) => `${a} invested pays ${i} in the first year, before tax`, dGeneric: 'Dividend per share',
     paidHead: 'Dividend per share: what it paid', forecastHead: 'Our forecast',
-    dAlt: (n, first, last, fc, y) => `${n} dividend per share: ${first.text} paid in ${first.label}, ${last.text} in ${last.label}${fc ? `; our forecast: ${fc.text} in ${fc.label}` : ''}${y ? `; dividend yield ${y}` : ''}`,
+    dAltForecast: (n, first, last, y) => `${n} dividend per share, our forecast: ${first.text} in ${first.label}${last === first ? '' : `, ${last.text} in ${last.label}`}${y ? `; dividend yield ${y}` : ''}`,
+    dAlt: (n, first, last, fc, y) => `${n} dividend per share: ${first.text} paid in ${first.label}${last === first ? '' : `, ${last.text} in ${last.label}`}${fc ? `; our forecast: ${fc.text} in ${fc.label}` : ''}${y ? `; dividend yield ${y}` : ''}`,
     eTitle: (n, d) => (d ? `${n} reports next on ${d}` : `${n} results`),
-    eSub: (what, unit, eps, guided) => `${what}${unit ? ` in ${unit}` : ''}${eps && guided ? ", earnings per share, and management's guidance" : eps ? ', and earnings per share' : guided ? ", and management's guidance" : ''}`,
+    eSub: (what, unit, eps, epsUnit, guided) => [`${what}${unit ? ` in ${unit}` : ''}${eps ? `, earnings per share${epsUnit ? ` in ${epsUnit}` : ''}` : ''}${guided ? ", and management's guidance" : ''}`, `${what}${unit ? ` in ${unit}` : ''}${eps ? `, EPS${epsUnit ? ` in ${epsUnit}` : ''}` : ''}${guided ? ", management's guidance" : ''}`],
     eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}: ${what}${unit ? ` (${unit})` : ''}: ${list}${eps ? `; ${epsWord} ${eps}` : ''}${guide ? `; guidance ${guide}` : ''}`,
     by: { quarter: 'by quarter', half: 'by half-year', year: 'by year', period: 'by reported period' },
     period: { quarter: 'Quarter', half: 'Half-year', year: 'Year', period: 'Period' }, what: (w, by) => `${w} ${by}`, eps: 'EPS', guided: 'Guided',
@@ -544,9 +546,10 @@ const PICTURE_WORDS = {
     dTitle: (n, y) => (y ? `Dividende ${n} : rendement de ${y}` : `Dividende ${n}`),
     dSub: (a, i) => `${a} placés rapportent ${i} la première année, avant impôt`, dGeneric: 'Dividende par action',
     paidHead: 'Dividende par action : ce qui a été versé', forecastHead: 'Nos prévisions',
-    dAlt: (n, first, last, fc, y) => `Dividende par action de ${n} : ${first.text} versés en ${first.label}, ${last.text} en ${last.label}${fc ? ` ; nos prévisions : ${fc.text} en ${fc.label}` : ''}${y ? ` ; rendement du dividende ${y}` : ''}`,
+    dAltForecast: (n, first, last, y) => `Dividende par action de ${n}, nos prévisions : ${first.text} en ${first.label}${last === first ? '' : `, ${last.text} en ${last.label}`}${y ? ` ; rendement du dividende ${y}` : ''}`,
+    dAlt: (n, first, last, fc, y) => `Dividende par action de ${n} : ${first.text} versés en ${first.label}${last === first ? '' : `, ${last.text} en ${last.label}`}${fc ? ` ; nos prévisions : ${fc.text} en ${fc.label}` : ''}${y ? ` ; rendement du dividende ${y}` : ''}`,
     eTitle: (n, d) => (d ? `${n} : prochains résultats le ${d}` : `Résultats de ${n}`),
-    eSub: (what, unit, eps, guided) => `${what}${unit ? ` en ${unit}` : ''}${eps && guided ? ', bénéfice par action et prévisions de la direction' : eps ? ' et bénéfice par action' : guided ? ' et prévisions de la direction' : ''}`,
+    eSub: (what, unit, eps, epsUnit, guided) => [`${what}${unit ? ` en ${unit}` : ''}${eps ? `, bénéfice par action${epsUnit ? ` en ${epsUnit}` : ''}` : ''}${guided ? ', prévisions de la direction' : ''}`, `${what}${unit ? ` en ${unit}` : ''}${eps ? `, BPA${epsUnit ? ` en ${epsUnit}` : ''}` : ''}${guided ? ', prévisions' : ''}`],
     eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n} : ${what}${unit ? ` (${unit})` : ''} : ${list}${eps ? ` ; ${epsWord} ${eps}` : ''}${guide ? ` ; prévisions ${guide}` : ''}`,
     by: { quarter: 'par trimestre', half: 'par semestre', year: 'par année', period: 'par période' },
     period: { quarter: 'Trimestre', half: 'Semestre', year: 'Année', period: 'Période' }, what: (w, by) => `${w} ${by}`, eps: 'BPA', guided: 'Prévu',
@@ -555,13 +558,14 @@ const PICTURE_WORDS = {
     alt: (c, d, list) => `Aktienkurs-Szenarien von ${c} für ${d}: ${list}`,
     fTitle: (n, y) => `${n}: wohin die Aktie bis ${y} gehen könnte`,
     fSub: (cur, div) => `Unsere drei Szenarien${cur ? `, in ${cur}` : ''}.${div ? ' Renditen inklusive Dividenden.' : ''}`,
-    pence: 'Pence', curName: {}, chance: (r, p) => `${r}, ${p} Wahrscheinlichkeit`, priceOn: (d) => `Kurs vom ${d}`, memoPrice: 'Kurs im Memo',
+    pence: 'Pence', curName: {}, chance: (r, p) => `${r}, ${p} Chance`, priceOn: (d) => `Kurs vom ${d}`, memoPrice: 'Kurs im Memo',
     dTitle: (n, y) => (y ? `${n} Dividende: ${y} Rendite` : `${n} Dividende`),
     dSub: (a, i) => `${a}, angelegt, bringen im ersten Jahr vor Steuern ${i}`, dGeneric: 'Dividende je Aktie',
     paidHead: 'Dividende je Aktie: was gezahlt wurde', forecastHead: 'Unsere Prognose',
-    dAlt: (n, first, last, fc, y) => `Dividende je Aktie von ${n}: ${first.text} gezahlt für ${first.label}, ${last.text} für ${last.label}${fc ? `; unsere Prognose: ${fc.text} für ${fc.label}` : ''}${y ? `; Dividendenrendite ${y}` : ''}`,
+    dAltForecast: (n, first, last, y) => `Dividende je Aktie von ${n}, unsere Prognose: ${first.text} für ${first.label}${last === first ? '' : `, ${last.text} für ${last.label}`}${y ? `; Dividendenrendite ${y}` : ''}`,
+    dAlt: (n, first, last, fc, y) => `Dividende je Aktie von ${n}: ${first.text} gezahlt für ${first.label}${last === first ? '' : `, ${last.text} für ${last.label}`}${fc ? `; unsere Prognose: ${fc.text} für ${fc.label}` : ''}${y ? `; Dividendenrendite ${y}` : ''}`,
     eTitle: (n, d) => (d ? `${n}: nächste Zahlen am ${d}` : `${n} Quartalszahlen`),
-    eSub: (what, unit, eps, guided) => `${what}${unit ? ` in ${unit}` : ''}${eps && guided ? ', Gewinn je Aktie und Prognose des Managements' : eps ? ' und Gewinn je Aktie' : guided ? ' und Prognose des Managements' : ''}`,
+    eSub: (what, unit, eps, epsUnit, guided) => [`${what}${unit ? ` in ${unit}` : ''}${eps ? `, Gewinn je Aktie${epsUnit ? ` in ${epsUnit}` : ''}` : ''}${guided ? ', Prognose des Managements' : ''}`, `${what}${unit ? ` in ${unit}` : ''}${eps ? `, EPS${epsUnit ? ` in ${epsUnit}` : ''}` : ''}${guided ? ', Prognose' : ''}`],
     eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}: ${what}${unit ? ` (${unit})` : ''}: ${list}${eps ? `; ${epsWord} ${eps}` : ''}${guide ? `; Prognose ${guide}` : ''}`,
     by: { quarter: 'je Quartal', half: 'je Halbjahr', year: 'je Jahr', period: 'je Berichtszeitraum' },
     period: { quarter: 'Quartal', half: 'Halbjahr', year: 'Jahr', period: 'Zeitraum' }, what: (w, by) => `${w} ${by}`, eps: 'EPS', guided: 'Prognose',
@@ -574,9 +578,10 @@ const PICTURE_WORDS = {
     dTitle: (n, y) => (y ? `${n} 股息：股息率 ${y}` : `${n} 股息`),
     dSub: (a, i) => `投資 ${a}，首年稅前可收取 ${i} 股息`, dGeneric: '每股股息',
     paidHead: '每股股息：已派發', forecastHead: '我們的預測',
-    dAlt: (n, first, last, fc, y) => `${n} 每股股息：${first.label} ${first.text}，${last.label} ${last.text}${fc ? `；我們的預測：${fc.label} ${fc.text}` : ''}${y ? `；股息率 ${y}` : ''}`,
+    dAltForecast: (n, first, last, y) => `${n} 每股股息，我們的預測：${first.label} ${first.text}${last === first ? '' : `，${last.label} ${last.text}`}${y ? `；股息率 ${y}` : ''}`,
+    dAlt: (n, first, last, fc, y) => `${n} 每股股息：${first.label} ${first.text}${last === first ? '' : `，${last.label} ${last.text}`}${fc ? `；我們的預測：${fc.label} ${fc.text}` : ''}${y ? `；股息率 ${y}` : ''}`,
     eTitle: (n, d) => (d ? `${n} 下次公布業績：${d}` : `${n} 財報`),
-    eSub: (what, unit, eps, guided) => `${what}${unit ? `（${unit}）` : ''}${eps && guided ? '、每股盈利及管理層指引' : eps ? '及每股盈利' : guided ? '及管理層指引' : ''}`,
+    eSub: (what, unit, eps, epsUnit, guided) => [`${what}${unit ? `（${unit}）` : ''}${eps ? `、每股盈利${epsUnit ? `（${epsUnit}）` : ''}` : ''}${guided ? '及管理層指引' : ''}`],
     eAlt: (n, what, unit, list, eps, epsWord, guide) => `${n}：${what}${unit ? `（${unit}）` : ''}：${list}${eps ? `；${epsWord} ${eps}` : ''}${guide ? `；指引 ${guide}` : ''}`,
     by: { quarter: '每季', half: '每半年', year: '每年', period: '每期' },
     period: { quarter: '季度', half: '半年', year: '年度', period: '期間' }, what: (w, by) => `${by}${w}`, eps: '每股盈利', guided: '指引',
@@ -607,21 +612,11 @@ const memoLine = (data, lang) => {
 };
 // A plain cell ('1.67', '−0.40', '1,234.5') as a number, or null. Shape only.
 const plainNum = (v) => cellNum(v);
-const SHORT_MONTHS = { en: MON_EN, fr: MON_FR, de: MON_DE };
 // A period column ('Oct 2024', 'Quarter to Jun 2026', '6 months to Jun 2026', 'Year to Mar 2026', '2025'), our own forms. Shape only.
 const PERIOD_CELL = /^(?:(Quarter|6 months|Half-year|Year) to )?(?:([A-Z][a-z]{2}) )?(\d{4})$/;
 function periodOf(col) {
   const m = PERIOD_CELL.exec(String(col ?? '').trim());
   return m && (!m[2] || MON_EN.includes(m[2])) ? { kind: m[1] || '', mon: m[2] || '', year: m[3], month: m[2] ? MON_EN.indexOf(m[2]) : -1 } : null;
-}
-// 'Oct 2024' -> 'Oct 24', 'okt. 24', '24年10月'; a bare year stays; anything else as the page's own date words.
-function shortPeriod(col, lang) {
-  const p = periodOf(col);
-  if (!p) return UI[lang].date(String(col));
-  if (!p.mon) return p.year;
-  const yy = p.year.slice(2);
-  if (lang === 'zh-HK') return `${yy}年${p.month + 1}月`;
-  return `${SHORT_MONTHS[lang][p.month]} ${yy}`;
 }
 // An ISO day as 'Oct 16', '16 oct.', '16. Okt.', '10月16日'; its month and year as 'Oct 2026', the page's own short column date.
 function shortDay(iso, lang) {
@@ -634,6 +629,44 @@ function shortDay(iso, lang) {
 }
 const shortMonthYear = (iso, lang) => UI[lang].date(`${MON_EN[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`);
 const shortColumn = (col, lang) => UI[lang].date(String(col).replace(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/, (m) => MON_EN[MONTHS_EN.indexOf(m)]));
+// The page's own label for a column, without the words our chart adds in front of it: 'Quarter to Sep 2024' reads 'Sep 2024', 'Jan 2025' stays 'Jan 2025', '2025' stays '2025'.
+const pageLabel = (col, lang) => UI[lang].date(String(col).replace(/^(?:Quarter|6 months|Half-year|Year) to /, ''));
+// A period length from the months between two columns: a fiscal calendar moves a date by a month, never more.
+const stepOf = (gap) => (gap >= 2 && gap <= 4 ? 3 : gap >= 5 && gap <= 7 ? 6 : gap >= 11 && gap <= 13 ? 12 : 0);
+const HALF_KIND = new Set(['6 months', 'Half-year']);
+// The newest run of columns of one period length with no period skipped. columns: oldest first. { from, step }: from the column it starts at; step 3, 6 or 12 months; 0 when two columns do not make a run.
+export function newestRun(columns) {
+  const ps = columns.map(periodOf);
+  let i = columns.length - 1;
+  let step = 0;
+  const month = (p) => Number(p.year) * 12 + (p.mon ? p.month : 11);
+  while (i > 0 && ps[i] && ps[i - 1]) {
+    const s = stepOf(month(ps[i]) - month(ps[i - 1]));
+    if (!s || (step && s !== step) || HALF_KIND.has(ps[i].kind) !== HALF_KIND.has(ps[i - 1].kind)) break;
+    step = s;
+    i -= 1;
+  }
+  return { from: i, step };
+}
+// The slots of a chart: the newest run, a blank cell inside it an empty slot with its label, blanks at either end left out. extra: rows read along (EPS).
+function slotsOf(columns, cells, extra = null) {
+  const { from, step } = newestRun(columns);
+  const slots = columns.slice(from).map((col, k) => {
+    const i = from + k;
+    const value = plainNum(cells[i]);
+    return { col, value, raw: value === null ? '' : String(cells[i]).replace(/\*\*/g, '').trim(), extra: extra ? String(extra[i] ?? '').replace(/\*\*/g, '').trim() : '' };
+  });
+  while (slots.length && slots[0].value === null) slots.shift();
+  while (slots.length && slots[slots.length - 1].value === null) slots.pop();
+  return { step, slots, bars: slots.filter((b) => b.value !== null).length };
+}
+// A currency or unit in words, per language. A closed list of our own codes (shape).
+const UNIT_WORD = {
+  en: { USD: 'US$', CAD: 'C$', HKD: 'HK$', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB', TWD: 'NT$', USc: 'US cents', EURc: 'eurocents' },
+  fr: { USD: '$ US', CAD: '$ CA', HKD: '$ HK', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB', TWD: '$ NT', USc: 'cents US', EURc: 'centimes' },
+  de: { USD: 'US-Dollar', CAD: 'C$', HKD: 'HK$', EUR: 'Euro', GBP: 'Pfund', GBp: 'Pence', RMB: 'RMB', TWD: 'NT$', USc: 'US-Cent', EURc: 'Eurocent' },
+  'zh-HK': { USD: '美元', CAD: '加元', HKD: '港元', EUR: '歐元', GBP: '英鎊', GBp: '便士', RMB: '人民幣', TWD: '新台幣', USc: '美仙', EURc: '歐仙' },
+};
 // A number with its thousands, in the page's format.
 function grouped(v, decimals, ui) {
   return ui.num(v.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals }));
@@ -778,7 +811,7 @@ export function perShareCurrency(unit) {
 
 // THE DIVIDEND PAGE. What it paid: the page's inline chart, else the page's own yearly table. Our forecast: the forecast table's base case, only when it is in the
 // same currency as what it paid (London prints the dividends in pence and the forecast in pounds: side by side, one would look a hundred times the other).
-const DIV_ROW = /^dividends?(?: paid)?,? per (?:common |ordinary )?share$/i;
+const DIV_ROW = /^(?:− )?(?:common )?(?:dividends?|distributions?)(?: including GP incentives| declared| paid)?,?(?: per| ÷| divided by) (?:[\w-]+ ){0,3}(?:shares?|units?)$/i;
 function dividendHistory(page) {
   const row = page.chart?.rows?.['Dividends paid, per share'];
   if (Array.isArray(row) && Array.isArray(page.chart.columns)) return { columns: page.chart.columns, cells: row, unit: page.chart.unit };
@@ -802,7 +835,7 @@ function dividendForecast(page) {
     const bars = t.head.slice(1).flatMap((h, i) => {
       const raw = /^[−-]?[\d,]*\.?\d+/.exec(String(r[i + 1] ?? '').trim())?.[0] || '';
       const v = plainNum(raw);
-      return v === null ? [] : [{ raw, value: v, year: /\d{4}$/.exec(h)[0] }];
+      return v === null ? [] : [{ raw, value: v, head: h }];
     });
     return bars.length ? { cur, bars } : null;
   }
@@ -823,63 +856,71 @@ function dividendPicture(data, lang) {
   const ui = UI[lang];
   const words = PICTURE_WORDS[lang];
   const hist = dividendHistory(page);
-  if (!hist) return { none: 'no dividend per share by year' };
-  const kept = hist.columns.flatMap((c, i) => {
-    const v = plainNum(hist.cells[i]);
-    return v === null || v < 0 ? [] : [{ col: c, raw: String(hist.cells[i]).replace(/\*\*/g, '').trim(), value: v }];
-  });
-  if (kept.length < 2) return { none: 'fewer than 2 years of dividends' };
-  const cur = perShareCurrency(hist.unit);
   const fc = dividendForecast(page);
-  const sameUnit = fc && cur && fc.cur === cur;
-  const years = kept.map((k) => periodOf(k.col)?.year || '');
-  const labels = years.every(Boolean) && new Set(years).size === years.length ? years : kept.map((k) => shortPeriod(k.col, lang));
-  const bar = (raw, value, label) => ({ number: ui.num(raw), text: money(ui.num(raw), cur, lang), value, label });
-  const paid = kept.map((k, i) => bar(k.raw, k.value, labels[i]));
-  const forecast = sameUnit ? fc.bars.map((b) => bar(b.raw, b.value, b.year)) : [];
+  const run = hist ? slotsOf(hist.columns, hist.cells) : { slots: [] };
+  if (!run.slots.length && !fc) return { none: 'no dividend per share by year' };
+  const cur = run.slots.length ? perShareCurrency(hist.unit) : fc.cur;
+  const sameUnit = !!fc && !!cur && fc.cur === cur;
+  const bar = (raw, value, label) => ({ number: ui.num(raw), plain: ui.num(raw), text: money(ui.num(raw), cur, lang), value, label });
+  const paid = run.slots.map((b) => (b.value === null ? { number: '', plain: '', text: '', value: null, label: pageLabel(b.col, lang) } : bar(b.raw, b.value, pageLabel(b.col, lang))));
+  const forecast = sameUnit ? fc.bars.map((b) => bar(b.raw, b.value, shortColumn(b.head, lang))) : [];
+  if (!paid.length && !forecast.length) return { none: 'no dividend per share by year' };
   const name = `${shortName(data)} (${data.ticker})`;
   const y = yieldOf(page);
   const yText = !y ? '' : lang === 'en' ? y.replace(/(\d)\s*%/, '$1 %') : ui.num(y.replace(/\s*%/, '%'));
   const amounts = embedAmounts(data, lang);
-  const sub = amounts ? words.dSub(amounts.amount, amounts.income.replace(/[.,]00(?!\d)/, '')) : `${words.dGeneric}${!cur && hist.unit && lang === 'en' ? ` (${hist.unit})` : ''}`;
+  const sub = amounts ? words.dSub(amounts.amount, amounts.income.replace(/[.,]00(?!\d)/, '')) : `${words.dGeneric}${!cur && hist?.unit && lang === 'en' ? ` (${hist.unit})` : ''}`;
   const base = [fileWords(shortName(data)), data.slug, words.file.dividend].filter(Boolean).join('-');
+  const paidBars = paid.filter((b) => b.value !== null);
   const list = (head, bars) => `${head}: ${bars.map((b) => `${b.label} ${b.text}`).join(', ')}`;
+  const pick = (b) => ({ text: b.text, plain: b.plain, value: b.value, label: b.label });
   return {
     ...pictureFiles(pagePath(data.slug, 'dividend', lang), base),
-    alt: words.dAlt(name, paid[0], paid[paid.length - 1], forecast[forecast.length - 1], yText),
-    numbers: [...paid, ...forecast].map((b) => b.number),
-    line: `${list(words.paidHead, paid)}${forecast.length ? `; ${list(words.forecastHead, forecast)}` : ''}`,
+    alt: paidBars.length ? words.dAlt(name, paidBars[0], paidBars[paidBars.length - 1], forecast[forecast.length - 1], yText) : words.dAltForecast(name, forecast[0], forecast[forecast.length - 1], yText),
+    numbers: [...paidBars, ...forecast].map((b) => b.number),
+    line: `${paidBars.length ? list(words.paidHead, paidBars) : ''}${paidBars.length && forecast.length ? '; ' : ''}${forecast.length ? list(words.forecastHead, forecast) : ''}`,
     forecastDropped: !!fc && !sameUnit,
-    draw: { kind: 'dividend', title: words.dTitle(name, yText), sub, memo: memoLine(data, lang), paidHead: words.paidHead, forecastHead: words.forecastHead,
-      paid: paid.map(({ text, value, label }) => ({ text, value, label })), forecast: forecast.map(({ text, value, label }) => ({ text, value, label })) },
+    draw: { kind: 'dividend', title: words.dTitle(name, yText), sub, memo: memoLine(data, lang), paidHead: words.paidHead, forecastHead: words.forecastHead, unitWord: UNIT_WORD[lang][cur] || '',
+      paid: paid.map(pick), forecast: forecast.map(pick) },
   };
 }
 
-// THE EARNINGS PAGE. The bars: what the inline chart charts (the Revenue of the last eight quarters), else the first money row of the page's own results table.
-const REVENUE_LABEL = /^(?:total )?(?:net )?(?:revenues?|sales)$/i;
+// THE EARNINGS PAGE. The bars: what the inline chart charts (the Revenue of the last eight quarters), else the page's own revenue row in whichever table holds it, else the first money row of its results table.
+const REVENUE_LABEL = /^(?:total )?(?:net )?(?:revenues?|sales)(?: and (?:other income|revenues?))?$/i;
 function earningsSeries(page) {
   const c = page.chart;
   if (c?.kind === 'quarters' && Array.isArray(c.rows?.Revenue) && Array.isArray(c.columns)) {
     const half = c.columns.some((x) => /^(?:Half-year|6 months) to /.test(String(x)));
     return { label: 'Revenue', kind: half ? 'half' : 'quarter', columns: c.columns, cells: c.rows.Revenue, eps: c.rows['EPS, diluted'] || null, unit: c.unit };
   }
-  for (let bi = 0; bi < (page.blocks || []).length; bi += 1) {
-    const t = page.blocks[bi].table;
-    if (!t || (t.head || []).length < 3) continue;
-    const periods = t.head.slice(1).map(periodOf);
-    if (periods.some((p) => !p)) continue;
-    const money2 = (r) => r.slice(1).filter((x) => plainNum(x) !== null).length >= 2;
+  const money2 = (r) => r.slice(1).filter((x) => plainNum(x) !== null).length >= 2;
+  const tables = (page.blocks || []).map((b, bi) => ({ t: b.table, bi })).filter(({ t }) => t && (t.head || []).length >= 3 && t.head.slice(1).every((h) => periodOf(h)));
+  const hasEps = (t) => t.rows.some((r) => /^EPS\b/.test(labelOf(r[0])));
+  const fallback = (r) => money2(r) && !/\b(ratio|margin|per share|eps)\b/i.test(labelOf(r[0]));
+  const found = tables.flatMap(({ t, bi }) => {
     const ri = t.rows.findIndex((r) => REVENUE_LABEL.test(labelOf(r[0])) && money2(r));
-    const pick = ri >= 0 ? ri : t.rows.findIndex((r) => money2(r) && !/\b(ratio|margin|per share|eps)\b/i.test(labelOf(r[0])));
-    if (pick < 0) continue;
-    const row = t.rows[pick];
-    const epsRow = t.rows.find((r) => /^EPS\b/.test(labelOf(r[0])));
-    const kinds = periods.map((p) => p.kind);
-    const kind = kinds.some((k) => k === '6 months' || k === 'Half-year') ? 'half' : kinds.every((k) => k === 'Year') || periods.every((p) => !p.mon) ? 'year' : kinds.some((k) => k === 'Quarter') || /quarter/i.test(t.title) ? 'quarter' : 'period';
-    const flip = (a) => a.slice(1).reverse();
-    return { label: REVENUE_LABEL.test(labelOf(row[0])) ? 'Revenue' : labelOf(row[0]).replace(/\s*\(company's measure\)$/, ''), kind, columns: t.head.slice(1).reverse(), cells: flip(row), eps: epsRow ? flip(epsRow) : null, unit: t.unit, block: bi, row: pick };
-  }
-  return null;
+    return ri >= 0 ? [{ t, bi, ri }] : [];
+  })[0] || [...tables.filter(({ t }) => hasEps(t)), ...tables].flatMap(({ t, bi }) => {
+    const ri = t.rows.findIndex(fallback);
+    return ri >= 0 ? [{ t, bi, ri }] : [];
+  })[0];
+  if (!found) return null;
+  const { t, bi, ri } = found;
+  const row = t.rows[ri];
+  const periods = t.head.slice(1).map(periodOf);
+  const epsRow = t.rows.find((r) => /^EPS\b/.test(labelOf(r[0])));
+  const kinds = periods.map((p) => p.kind);
+  const kind = kinds.some((k) => k === '6 months' || k === 'Half-year') ? 'half' : kinds.every((k) => k === 'Year') || periods.every((p) => !p.mon) ? 'year' : kinds.some((k) => k === 'Quarter') || /quarter/i.test(t.title) ? 'quarter' : 'period';
+  const flip = (a) => a.slice(1).reverse();
+  return { label: REVENUE_LABEL.test(labelOf(row[0])) ? 'Revenue' : labelOf(row[0]).replace(/\s*\(company's measure\)$/, ''), kind, columns: t.head.slice(1).reverse(), cells: flip(row), eps: epsRow ? flip(epsRow) : null, unit: t.unit, block: bi, row: ri };
+}
+// The unit of the EPS row, as the page declares it: named in the table's unit ('£ millions; EPS in pence'), else the table's own currency, which on a London page says nothing (EPS there is in pence or cents, or pounds): '' means the page declares none.
+function epsCurrency(unit, data) {
+  const u = String(unit || '');
+  const named = /(?:\bEPS\b|per[- ]share)[^;,]*? in ([^;,]+)/i.exec(u);
+  if (named) return markIn(named[1]);
+  const head = markIn(u.split(/[;,]/)[0]);
+  return data.currency === 'GBp' || head === 'GBP' ? '' : head;
 }
 // '96,221' in 'US$ millions' -> 96.2 'US$ billions', arithmetic on the declared scale; a unit we cannot read stays as printed.
 const SCALE_UNIT = /^(US\$|C\$|HK\$|NT\$|RMB|£|€|EUR|GBP)\s+(thousands|millions|billions)\b/;
@@ -932,57 +973,64 @@ function earningsPicture(data, lang, day) {
   const words = PICTURE_WORDS[lang];
   const series = earningsSeries(page);
   if (!series) return { none: 'no quarters or results to chart' };
-  const kept = series.columns.flatMap((c, i) => {
-    const v = plainNum(series.cells[i]);
-    return v === null ? [] : [{ col: c, raw: String(series.cells[i]).replace(/\*\*/g, '').trim(), value: v, eps: String(series.eps?.[i] ?? '').replace(/\*\*/g, '').trim() }];
-  });
-  if (kept.length < 2) return { none: 'fewer than 2 quarters' };
+  // one picture, one period length: the newest run of same-length periods, and no period skipped
+  const run = slotsOf(series.columns, series.cells, series.eps);
+  if (!run.bars) return { none: 'no quarters or results to chart' };
+  const kind = { 3: 'quarter', 6: 'half', 12: 'year' }[run.step] || series.kind;
+  const kept = run.slots;
+  const valued = kept.filter((k) => k.value !== null);
   let word = ui.series.Revenue;
   if (series.label !== 'Revenue') {
     if (lang === 'en') word = series.label;
     else {
-      const tr = langPage(data, 'earnings', lang);
-      const twin = tr?.blocks?.length === page.blocks.length ? tr.blocks[series.block]?.table?.rows?.[series.row] : null;
-      if (!twin || digitsOf(twin[1]) !== digitsOf(page.blocks[series.block].table.rows[series.row][1])) return { none: 'its results row has no words in this language' };
-      word = labelOf(twin[0]).replace(/\s*\([^)]*\)$/, '');
+      // the row in the translated page's own words, found by its digits; none found: the row's own label
+      const cells = (r) => r.slice(1).map(digitsOf).join('|');
+      const printed = cells(page.blocks[series.block].table.rows[series.row]);
+      const twin = (langPage(data, 'earnings', lang)?.blocks || []).flatMap((b) => b.table?.rows || []).find((r) => cells(r) === printed);
+      word = twin ? labelOf(twin[0]).replace(/\s*\([^)]*\)$/, '') : series.label;
     }
   }
-  const scale = scaleOf(series.unit, kept.map((k) => k.value), lang);
-  const last = kept[kept.length - 1];
-  const hasEps = kept.some((k) => k.eps);
-  const guide = guidedRange(page, last.col, scale, series.kind);
+  const scale = scaleOf(series.unit, valued.map((k) => k.value), lang);
+  const last = valued[valued.length - 1];
+  const lastEps = [...kept].reverse().find((k) => k.extra);
+  const hasEps = !!lastEps;
+  const epsCode = hasEps ? epsCurrency(series.unit, data) : '';
+  const guide = guidedRange(page, last.col, scale, kind);
   const next = isoDay(data.next_earnings);
   const upcoming = next && day && next >= day ? next : '';
   const guideEnd = guide ? new Date(Date.UTC(Number(guide.period.year), guide.period.month, 1)).toISOString().slice(0, 10) : '';
   const name = `${shortName(data)} (${data.ticker})`;
-  const what = words.what(word, words.by[series.kind]);
+  const what = words.what(word, words.by[kind]);
   const value = (raw, v) => scale.fmt(raw, v);
-  const bars = kept.map((k) => ({ label: shortPeriod(k.col, lang), text: value(k.raw, k.value), value: scale.scaled ? scale.scaled(k.value) : k.value, eps: k.eps ? ui.num(k.eps) : '' }));
+  const bars = kept.map((k) => ({ label: pageLabel(k.col, lang), text: k.value === null ? '' : value(k.raw, k.value), value: k.value === null || !scale.scaled ? k.value : scale.scaled(k.value), eps: k.extra ? ui.num(k.extra) : '' }));
   const guided = guide ? {
     word: words.guided,
     range: `${value(guide.rawLow, guide.low)}–${value(guide.rawHigh, guide.high)}`,
     low: scale.scaled(guide.low),
     high: scale.scaled(guide.high),
-    label: shortPeriod(`${guide.period.mon ? `${MON_EN[guide.period.month]} ` : ''}${guide.period.year}`, lang),
+    label: pageLabel(`${guide.period.mon ? `${MON_EN[guide.period.month]} ` : ''}${guide.period.year}`, lang),
     date: upcoming && upcoming >= guideEnd ? shortDay(upcoming, lang) : '',
   } : null;
   const base = [fileWords(shortName(data)), data.slug, words.file.earnings].filter(Boolean).join('-');
-  const printed = kept.map((k) => `${ui.date(String(k.col))} ${ui.num(k.raw)}`);
+  const printed = valued.map((k) => `${ui.date(String(k.col))} ${ui.num(k.raw)}`);
   const guideRaw = guide ? `${ui.num(guide.rawLow)}–${ui.num(guide.rawHigh)}` : '';
   const unitPrinted = lang === 'en' ? scale.printed : scale.scaled ? PICTURE_WORDS[lang].scale[{ 1e3: 'thousands', 1e6: 'millions', 1e9: 'billions' }[scale.from]](CUR_WORD[lang][SCALE_UNIT.exec(String(series.unit).trim())[1]]) : '';
-  const pick = kept.length > 1 ? [printed[0], printed[printed.length - 1]] : printed;
+  const pick = printed.length > 1 ? [printed[0], printed[printed.length - 1]] : printed;
+  const epsOf = (k) => money(ui.num(k.extra), epsCode, lang);
+  const subs = words.eSub(what, scale.word, hasEps, epsCode ? UNIT_WORD[lang][epsCode] : '', !!guide);
   return {
     ...pictureFiles(pagePath(data.slug, 'earnings', lang), base),
-    alt: words.eAlt(name, what, unitPrinted, pick.join(words.sep), last.eps ? ui.num(last.eps) : '', words.eps, guideRaw),
-    numbers: [...kept.map((k) => ui.num(k.raw)), ...kept.flatMap((k) => (k.eps ? [ui.num(k.eps)] : [])), ...(guide ? [ui.num(guide.rawLow), ui.num(guide.rawHigh)] : [])],
-    line: words.eAlt(name, what, unitPrinted, printed.join(words.sep), kept.some((k) => k.eps) ? kept.filter((k) => k.eps).map((k) => ui.num(k.eps)).join(words.sep) : '', words.eps, guideRaw),
+    alt: words.eAlt(name, what, unitPrinted, pick.join(words.sep), hasEps ? epsOf(lastEps) : '', words.eps, guideRaw),
+    numbers: [...valued.map((k) => ui.num(k.raw)), ...kept.flatMap((k) => (k.extra ? [ui.num(k.extra)] : [])), ...(guide ? [ui.num(guide.rawLow), ui.num(guide.rawHigh)] : [])],
+    line: words.eAlt(name, what, unitPrinted, printed.join(words.sep), hasEps ? kept.filter((k) => k.extra).map(epsOf).join(words.sep) : '', words.eps, guideRaw),
     guided: !!guide,
     draw: {
       kind: 'earnings',
       title: words.eTitle(name, upcoming ? humanDay(upcoming, lang) : ''),
-      sub: words.eSub(what, scale.word, hasEps, !!guide),
+      subs,
+      sub: subs[0],
       memo: memoLine(data, lang),
-      periodWord: words.period[series.kind],
+      periodWord: words.period[kind],
       epsWord: hasEps ? words.eps : '',
       bars,
       guided,
@@ -1008,7 +1056,7 @@ export function comparePicture(pair) {
   });
   const hasNext = usable.some((r) => r.label === 'P/E, next 12 months');
   const rows = usable.filter((r) => !(hasNext && r.label === 'P/E, last 12 months')).slice(0, 5);
-  if (rows.length < 3) return { none: `${rows.length} rows in percentages or multiples (at least 3)` };
+  if (!rows.length) return { none: 'no rows in percentages or multiples' };
   const [A, B] = [pair.a, pair.b];
   const [ma, mb] = [monthYear(A.memo_date), monthYear(B.memo_date)];
   const memo = ma === mb ? `Memos of ${ma}` : `Memos of ${[A.memo_date, B.memo_date].sort().map(monthYear).join(' and ')}`;
@@ -1062,24 +1110,6 @@ function pictureNote(picture, pageHtml) {
 const pictureImg = (p, note = '') => `<div class="chart"><img src="${esc(p.path)}" width="${p.width}" height="${p.height}" alt="${esc(p.alt)}" decoding="async">${note}</div>`;
 const pictureObject = (p) => ({ '@type': 'ImageObject', url: p.url, width: p.width, height: p.height, caption: p.alt });
 const shareImage = (p) => ({ url: p.pngUrl, width: p.width, height: p.height, alt: p.alt, type: 'image/png' });
-// A printed return this far out is a wrong number in the memo, not a scenario (Lloyds: 176109.29p, +173249 %, on a share price of 101.60p; the next largest in the library is +865 %).
-export const MAX_RETURN = 2000;
-function returnsIn(cell) {
-  const m = /\(\s*([+−-]?)\s*(\d[\d.,\s\u00a0\u202f]*?)\s*%\s*\)\s*$/.exec(String(cell ?? ''));
-  if (!m) return null;
-  const t = m[2].replace(/[\s\u00a0\u202f]/g, '');
-  const n = Number(/[.,]\d{3}(?:[.,]\d{3})*$/.test(t) ? t.replace(/[.,]/g, '') : t.replace(',', '.'));
-  return Number.isFinite(n) ? n : null;
-}
-export function wildReturns(page, chart) {
-  const cells = [
-    ...(page.blocks || []).flatMap((b) => (b.table?.rows || []).flatMap((r) => r.slice(1))),
-    ...(page.facts || []).map((f) => f.value),
-    ...Object.values(chart?.rows || {}).flatMap((r) => r?.values || []),
-  ];
-  const wild = cells.filter((c) => (returnsIn(c) ?? 0) >= MAX_RETURN).sort((a, b) => returnsIn(b) - returnsIn(a));   // the largest first, for the report
-  return [...new Set(wild.map((c) => /\(([^)]*)\)\s*$/.exec(String(c))[1]))];
-}
 
 // Google Analytics behind the EU cookie banner (consent.mjs): in Europe nothing is sent before 'Accept'.
 function gaHead(meta) {
@@ -1551,6 +1581,17 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
   return pages;
 }
 
+// Pages kept off by hand, with why: data/held-pages.json. They appear in the build's held report like any page the gate holds.
+function loadHeldPages(file = new URL('../../data/held-pages.json', import.meta.url)) {
+  try {
+    return JSON.parse(readFileSync(file, 'utf8')).pages;
+  } catch (err) {
+    if (err.code === 'ENOENT') return {};
+    throw err;
+  }
+}
+const HELD_PAGES = loadHeldPages();
+
 // THE GATE (card step 12 + the CTO's SEO / AI-crawler list of 2026-10-20T02:17Z), per page, on the built HTML.
 // Returns the failures; an empty list = the page is published.
 export function gatePage(built, ctx) {
@@ -1623,9 +1664,6 @@ export function gatePage(built, ctx) {
   const dead = outs.filter((p) => !ctx.exists(p));
   if (dead.length) fails.push(`dead internal links: ${dead.slice(0, 3).join(', ')}`);
   if (outs.length < 3) fails.push(`${outs.length} internal links out (at least 3)`);
-  // A return this far out is a wrong number in the memo: the page waits until the memo is right, and comes back by itself.
-  const wild = wildReturns(page, data.pages[type]?.chart);
-  if (wild.length) fails.push(`prints a return of ${wild.slice(0, 3).join(', ')} (at most ${MAX_RETURN - 1} %)`);
   fails.push(...unbalanced(html));
   return fails;
 }
@@ -2155,7 +2193,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   const gate = (list) => {
     const ok = [];
     for (const b of list) {
-      const fails = gatePage(b, ctx);
+      const fails = [...gatePage(b, ctx), ...(HELD_PAGES[b.path] ? [HELD_PAGES[b.path]] : [])];
       if (fails.length) held.push({ path: b.path, ticker: b.ticker, type: b.type, lang: b.lang, fails });
       else ok.push(b);
     }

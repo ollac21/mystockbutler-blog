@@ -30,6 +30,9 @@ const BAR_OTHER = '#C2542D';
 const W = 1200;
 const H = 675;
 const CARD = { x: 24, y: 178, w: 1152, h: 475 };
+// The readable size: a label too wide at this size takes two lines or moves its column rather than shrink.
+export const MIN_TEXT = 24;
+let smallest = Infinity;
 
 // A no-break space draws as a space.
 const plain = (s) => String(s ?? '').replace(/[  ]/g, ' ');
@@ -66,6 +69,7 @@ const outlineOf = (commands) => commands.map((c) => {
 
 // One line of text as outlines. anchor: start, middle or end. halo: a color drawn around the letters, so a grid line never crosses them.
 function line(text, { x, y, size, weight = 'semi', fill = INK, anchor = 'start', halo }) {
+  smallest = Math.min(smallest, size);
   const total = widthOf(text, weight, size);
   let at = anchor === 'middle' ? x - total / 2 : anchor === 'end' ? x - total : x;
   const d = [];
@@ -79,6 +83,14 @@ function line(text, { x, y, size, weight = 'semi', fill = INK, anchor = 'start',
   return `${under}<path fill="${fill}" d="${outline}"/>`;
 }
 
+// A label on two lines when one is too wide at a readable size: 'Okt.' over '2024', '2024年' over '10月'.
+function twoLines(text) {
+  const t = plain(text);
+  const i = t.lastIndexOf(' ');
+  if (i > 0) return [t.slice(0, i), t.slice(i + 1)];
+  const y = t.indexOf('年');
+  return y > 0 ? [t.slice(0, y + 1), t.slice(y + 1)] : [t];
+}
 const dot = (x, y, c, r = 8) => `<circle cx="${at2(x)}" cy="${at2(y)}" r="${r + 2}" fill="#FFFFFF"/><circle cx="${at2(x)}" cy="${at2(y)}" r="${r}" fill="${c}"/>`;
 const poly = (pts, c, sw = 5) => `<polyline fill="none" stroke="${c}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" points="${pts.map(([x, y]) => `${at2(x)},${at2(y)}`).join(' ')}"/>`;
 function barUp(x, w, base, top, c, r = 6) {
@@ -87,7 +99,9 @@ function barUp(x, w, base, top, c, r = 6) {
 }
 
 // The frame every picture shares: the name, the memo's date, the title, the subtitle, the white card.
-function frame({ title, sub, memo }) {
+function frame({ title, sub, subs, memo }) {
+  // of several wordings, the first that fits at a readable size
+  const subtitle = (subs || [sub]).find((t) => fitSize(t, 'semi', 28, W - 80) >= MIN_TEXT) ?? (subs || [sub])[0];
   const my = widthOf('My', 'heavy', 28);
   const st = widthOf('Stock', 'heavy', 28);
   return [
@@ -101,7 +115,7 @@ function frame({ title, sub, memo }) {
     line('Butler', { x: 92 + my + st, y: 54, size: 28, weight: 'heavy', fill: '#FFFFFF' }),
     memo ? line(memo, { x: W - 40, y: 53, size: fitSize(memo, 'medium', 24, 780), weight: 'medium', fill: '#CFEBDC', anchor: 'end' }) : '',
     line(title, { x: 40, y: 118, size: fitSize(title, 'heavy', 46, W - 80), weight: 'heavy', fill: '#FFFFFF' }),
-    line(sub, { x: 40, y: 158, size: fitSize(sub, 'semi', 28, W - 80), weight: 'semi', fill: '#D6F2E3' }),
+    line(subtitle, { x: 40, y: 158, size: fitSize(subtitle, 'semi', 28, W - 80), weight: 'semi', fill: '#D6F2E3' }),
     `<rect x="${CARD.x}" y="${CARD.y}" width="${CARD.w}" height="${CARD.h}" rx="18" fill="#FFFFFF"/>`,
   ];
 }
@@ -112,9 +126,15 @@ function forecast(s) {
   const o = frame(s);
   const tickW = Math.max(0, ...s.axis.ticks.map((t) => widthOf(t.label, 'medium', 26)));
   const left = Math.max(110, CARD.x + 14 + tickW + 12);
+  const details = s.cases.map((k) => k.detail);
+  const heads = s.cases.map((k) => `${k.name} ${k.price}`);
+  // the end labels' column: a long name or price moves it left rather than go under the readable size
+  const right = CARD.x + CARD.w - 16;
+  const need = Math.max(...heads.map((h) => widthOf(h, 'heavy', MIN_TEXT)), ...details.map((d) => widthOf(d, 'medium', MIN_TEXT)));
+  const labelX = right - 822 >= need ? 822 : Math.max(640, right - need);
+  const x3 = labelX - 32;
   // the fan starts at 280; a longer price or label beside its point ('Kurs vom 22. Okt.') moves the start a little to the right rather than shrink
-  const x0 = Math.min(340, Math.max(280, left + 32 + Math.max(widthOf(s.start.price, 'heavy', 34), widthOf(s.start.label, 'medium', 26))));
-  const x3 = 790;
+  const x0 = Math.min(430, Math.max(280, left + 32 + Math.max(widthOf(s.start.price, 'heavy', 30), widthOf(s.start.label, 'medium', MIN_TEXT))));
   const top = 208;
   const bottom = 590;
   const xs = [0, 1, 2, 3].map((i) => x0 + ((x3 - x0) * i) / 3);
@@ -138,11 +158,9 @@ function forecast(s) {
   o.push(line(s.start.price, { x: x0 - 18, y: lifted ? sy - 38 : sy - 2, size: fitSize(s.start.price, 'heavy', 34, startMax), weight: 'heavy', anchor: 'end', halo: '#FFFFFF' }));
   o.push(line(s.start.label, { x: x0 - 18, y: lifted ? sy - 8 : sy + 30, size: fitSize(s.start.label, 'medium', 26, startMax), weight: 'medium', fill: MUTED, anchor: 'end', halo: '#FFFFFF' }));
   // The labels spaced by arithmetic: never on top of each other, inside the card, above the dates.
-  const labelX = 822;
-  const room = CARD.x + CARD.w - 16 - labelX;
-  const heads = s.cases.map((k) => `${k.name} ${k.price}`);
+  const room = right - labelX;
   const headSize = fitAll(heads, 'heavy', 38, room);
-  const detailSize = fitAll(s.cases.map((k) => k.detail), 'medium', 28, room);
+  const detailSize = fitAll(details, 'medium', 28, room);
   const ends = s.cases.map((k, i) => {
     const last = k.values[2] ?? k.values[1] ?? k.values[0];
     return { k, head: heads[i], at: y(last), last };
@@ -165,33 +183,50 @@ function forecast(s) {
   return o.join('');
 }
 
-// 2. The dividend page: what it paid, a gap, our forecast. { paidHead, forecastHead, paid: [{ label, text, value }], forecast: [the same] }
+// 2. The dividend page: what it paid, a gap, our forecast. { paidHead, forecastHead, unitWord, paid: [{ label, text, plain, value }], forecast: [the same] }. A value of null is an empty slot with its label.
 function dividend(s) {
   const o = frame(s);
+  const paid = s.paid || [];
   const fc = s.forecast || [];
-  const slots = s.paid.length + (fc.length ? fc.length + 1 : 0);
+  const slots = paid.length + (fc.length ? fc.length + (paid.length ? 1 : 0) : 0);
   const left = 50;
   const right = 1150;
   const slot = (right - left) / slots;
   const bw = Math.min(120, slot - 34);
   const base = 590;
   const top = 300;
-  const all = [...s.paid, ...fc];
-  const vmax = Math.max(...all.map((b) => b.value), 0) || 1;
-  const textSize = fitAll(all.map((b) => b.text), 'heavy', 32, slot - 16);
-  const labelSize = fitAll(all.map((b) => b.label), 'medium', 28, slot - 6);
-  o.push(line(s.paidHead, { x: left, y: 226, size: fitSize(s.paidHead, 'heavy', 34, Math.max(slot * s.paid.length, fc.length ? 0 : right - left) - 10), weight: 'heavy' }));
-  if (fc.length) o.push(line(s.forecastHead, { x: left + slot * (s.paid.length + 1) + 14, y: 226, size: fitSize(s.forecastHead, 'heavy', 34, slot * fc.length - 14), weight: 'heavy' }));
+  const valued = [...paid, ...fc].filter((b) => b.value !== null);
+  const vmax = Math.max(...valued.map((b) => b.value), 0) || 1;
+  // the mark on every bar, or once in the heading when the bars would go under the readable size
+  const marked = fitAll(valued.map((b) => b.text), 'heavy', 32, slot - 16) >= MIN_TEXT;
+  const textOf = (b) => (marked ? b.text : b.plain);
+  const textSize = fitAll(valued.map(textOf), 'heavy', 32, slot - 16);
+  const labels = [...paid, ...fc].map((b) => b.label);
+  const oneLine = fitAll(labels, 'medium', 28, slot - 14);
+  const stacked = oneLine < MIN_TEXT;
+  const withUnit = (h) => (marked || !s.unitWord ? h : `${h} (${s.unitWord})`);
+  const fcX = paid.length ? left + slot * (paid.length + 1) + 14 : left;
+  if (paid.length) {
+    const head = withUnit(s.paidHead);
+    o.push(line(head, { x: left, y: 226, size: fitSize(head, 'heavy', 34, (fc.length ? fcX - 24 : right) - left), weight: 'heavy' }));
+  }
+  if (fc.length) {
+    const head = paid.length ? s.forecastHead : withUnit(s.forecastHead);
+    o.push(line(head, { x: fcX, y: 226, size: fitSize(head, 'heavy', 34, right - fcX), weight: 'heavy' }));
+  }
   o.push(`<rect x="${left}" y="${base}" width="${right - left}" height="3" fill="${AXIS}"/>`);
   const drawBar = (b, i, color) => {
     const cx = left + slot * i + slot / 2;
-    const h = b.value > 0 ? Math.max(3, (b.value / vmax) * (base - top)) : 0;
-    if (h > 0) o.push(barUp(cx - bw / 2, bw, base, base - h, color));
-    o.push(line(b.text, { x: cx, y: base - h - 12, size: textSize, weight: 'heavy', anchor: 'middle' }));
-    o.push(line(b.label, { x: cx, y: 630, size: labelSize, weight: 'medium', fill: MUTED, anchor: 'middle' }));
+    if (b.value !== null) {
+      const h = b.value > 0 ? Math.max(3, (b.value / vmax) * (base - top)) : 0;
+      if (h > 0) o.push(barUp(cx - bw / 2, bw, base, base - h, color));
+      o.push(line(textOf(b), { x: cx, y: base - h - 12, size: textSize, weight: 'heavy', anchor: 'middle' }));
+    }
+    if (stacked) twoLines(b.label).forEach((l, k) => o.push(line(l, { x: cx, y: 616 + k * 27, size: MIN_TEXT, weight: 'medium', fill: MUTED, anchor: 'middle' })));
+    else o.push(line(b.label, { x: cx, y: 630, size: oneLine, weight: 'medium', fill: MUTED, anchor: 'middle' }));
   };
-  s.paid.forEach((b, i) => drawBar(b, i, BAR));
-  fc.forEach((b, i) => drawBar(b, s.paid.length + 1 + i, BAR_LIGHT));
+  paid.forEach((b, i) => drawBar(b, i, BAR));
+  fc.forEach((b, i) => drawBar(b, (paid.length ? paid.length + 1 : 0) + i, BAR_LIGHT));
   o.push('</svg>');
   return o.join('');
 }
@@ -200,7 +235,8 @@ function dividend(s) {
 // { periodWord, epsWord, bars: [{ label, text, value, eps }], guided: { word, range, low, high, label, date } | null }
 function earnings(s) {
   const o = frame(s);
-  const left = 130;
+  // the row words' column: a longer word ('Trimestre', '每股盈利') moves the bars right rather than go under the readable size
+  const left = Math.max(130, 44 + 8 + Math.max(widthOf(s.periodWord, 'medium', MIN_TEXT), s.epsWord ? widthOf(s.epsWord, 'heavy', MIN_TEXT) : 0));
   const right = 1162;
   const g = s.guided;
   const n = s.bars.length + (g ? 1 : 0);
@@ -214,7 +250,7 @@ function earnings(s) {
   const vmax = Math.max(...numbers, g ? g.high : 0, 0) || 1;
   const prev = s.bars.length ? s.bars[s.bars.length - 1] : null;
   const textSize = fitAll(s.bars.flatMap((b) => (b.text ? [b.text] : [])), 'heavy', 30, slot - 4);
-  const rangeSize = g ? Math.min(textSize, fitSize(g.range, 'heavy', 28, slot * 1.75)) : 0;
+  const rangeSize = g ? Math.max(MIN_TEXT, Math.min(textSize, fitSize(g.range, 'heavy', 28, slot * 1.75))) : 0;
   const scaleY = (top) => (v) => base - (Math.max(v, 0) / vmax) * (base - top);
   // Room for 'Guided' over its range, over a neighbour's number when the two stand at the same height.
   const spots = (top) => {
@@ -230,7 +266,13 @@ function earnings(s) {
   let at = spots(top);
   if (g && at.wordAt < CARD.y + 26) { top += CARD.y + 26 - at.wordAt; at = spots(top); }
   o.push(`<rect x="${left}" y="${base}" width="${right - left}" height="3" fill="${AXIS}"/>`);
-  const labelSize = fitAll([...s.bars.map((b) => b.label), ...(g ? [g.label] : [])], 'medium', 26, slot - 6);
+  const allLabels = [...s.bars.map((b) => b.label), ...(g ? [g.label] : [])];
+  const labelSize = fitAll(allLabels, 'medium', 26, slot - 10);
+  const stacked = labelSize < MIN_TEXT;
+  const drawLabel = (text, x) => {
+    if (stacked) twoLines(text).forEach((l, k) => o.push(line(l, { x, y: labelY - 13 + k * 26, size: MIN_TEXT, weight: 'medium', fill: MUTED, anchor: 'middle' })));
+    else o.push(line(text, { x, y: labelY, size: labelSize, weight: 'medium', fill: MUTED, anchor: 'middle' }));
+  };
   const epsTexts = [...s.bars.flatMap((b) => (b.eps ? [b.eps] : [])), ...(g?.date ? [g.date] : [])];
   const epsSize = epsTexts.length ? fitAll(epsTexts, 'heavy', 30, slot - 6) : 30;
   s.bars.forEach((b, i) => {
@@ -240,7 +282,7 @@ function earnings(s) {
       if (base - by > 0.5) o.push(barUp(cx - bw / 2, bw, base, Math.min(by, base - 3), BAR));
       o.push(line(b.text, { x: cx, y: Math.min(by, base - 3) - 12, size: textSize, weight: 'heavy', anchor: 'middle' }));
     }
-    o.push(line(b.label, { x: cx, y: labelY, size: labelSize, weight: 'medium', fill: MUTED, anchor: 'middle' }));
+    drawLabel(b.label, cx);
     if (b.eps) o.push(line(b.eps, { x: cx, y: eps, size: epsSize, weight: 'heavy', anchor: 'middle' }));
   });
   if (g) {
@@ -249,10 +291,10 @@ function earnings(s) {
     o.push(`<rect x="${at2(cx - bw / 2)}" y="${at2(at.y(g.low))}" width="${bw}" height="3" fill="${BAR}"/>`);
     o.push(line(g.range, { x: right - 6, y: at.rangeAt, size: rangeSize, weight: 'heavy', anchor: 'end', halo: '#FFFFFF' }));
     o.push(line(g.word, { x: right - 6, y: at.wordAt, size: rangeSize, weight: 'medium', fill: MUTED, anchor: 'end' }));
-    o.push(line(g.label, { x: cx, y: labelY, size: labelSize, weight: 'medium', fill: MUTED, anchor: 'middle' }));
+    drawLabel(g.label, cx);
     if (g.date) o.push(line(g.date, { x: cx, y: eps, size: epsSize, weight: 'heavy', fill: BAR, anchor: 'middle' }));
   }
-  o.push(line(s.periodWord, { x: 44, y: labelY, size: fitSize(s.periodWord, 'medium', 24, left - 44 - 4), weight: 'medium', fill: MUTED }));
+  o.push(line(s.periodWord, { x: 44, y: labelY, size: MIN_TEXT, weight: 'medium', fill: MUTED }));
   if (s.epsWord) o.push(line(s.epsWord, { x: 44, y: eps, size: fitSize(s.epsWord, 'heavy', 30, left - 44 - 4), weight: 'heavy' }));
   if (row2) o.push(`<rect x="44" y="578" width="${right - 44}" height="2" fill="${GRID}"/>`);
   o.push('</svg>');
@@ -276,12 +318,21 @@ function comparison(s) {
   const start = 262 + (380 - step * n) / 2;
   s.rows.forEach((r, i) => {
     const yy = start + i * step;
-    const ma = Math.abs(r.a.value);
-    const mb = Math.abs(r.b.value);
-    const m = Math.max(ma, mb) || 1;
-    const wa = (ma / m) * maxBar;
-    const wb = (mb / m) * maxBar;
-    o.push(line(r.name, { x: mid, y: yy + 30, size: fitSize(r.name, 'semi', 28, half * 2 - 24), weight: 'semi', fill: MUTED, anchor: 'middle' }));
+    // a negative value gets no bar, only its number with its sign; the other bar is scaled on the positive value alone
+    const pa = Math.max(r.a.value, 0);
+    const pb = Math.max(r.b.value, 0);
+    const m = Math.max(pa, pb) || 1;
+    const wa = (pa / m) * maxBar;
+    const wb = (pb / m) * maxBar;
+    const nameSize1 = fitSize(r.name, 'semi', 28, half * 2 - 24);
+    if (nameSize1 >= MIN_TEXT) o.push(line(r.name, { x: mid, y: yy + 30, size: nameSize1, weight: 'semi', fill: MUTED, anchor: 'middle' }));
+    else {
+      // a long row name on two lines: '(lower is leaner)' under 'Efficiency ratio'
+      const words = plain(r.name).split(' ');
+      const cut = words.findIndex((w, k) => k > 0 && (w.startsWith('(') || widthOf(words.slice(0, k + 1).join(' '), 'semi', MIN_TEXT) > half * 2 - 24));
+      const parts = [words.slice(0, cut).join(' '), words.slice(cut).join(' ')];
+      parts.forEach((t, k) => o.push(line(t, { x: mid, y: yy + 17 + k * 27, size: MIN_TEXT, weight: 'semi', fill: MUTED, anchor: 'middle' })));
+    }
     if (wa > 0.5) o.push(`<rect x="${at2(mid - half - wa)}" y="${at2(yy + 2)}" width="${at2(wa)}" height="40" rx="5" fill="${BAR}"/>`);
     if (wb > 0.5) o.push(`<rect x="${mid + half}" y="${at2(yy + 2)}" width="${at2(wb)}" height="40" rx="5" fill="${BAR_OTHER}"/>`);
     o.push(line(r.a.text, { x: mid - half - wa - 12, y: yy + 35, size: 34, weight: 'heavy', anchor: 'end' }));
@@ -295,33 +346,36 @@ function comparison(s) {
 // 8. The tools comparison: our row first and highlighted, then the page's other tools. { rows: [{ tool, price: [lines], gets: [lines], me }] }
 function tools(s) {
   const o = frame(s);
-  const xs = [48, 430, 780];
-  const widths = [370, 335, 372];
+  const toolW = Math.min(340, Math.max(...s.rows.filter((r) => !r.me).map((r) => widthOf(r.tool, 'heavy', 32))));
+  const toolSize = fitAll(s.rows.filter((r) => !r.me).map((r) => r.tool), 'heavy', 32, toolW);
+  const priceX = Math.max(320, 48 + toolW + 22);
+  const getsX = 780;
   const others = s.rows.filter((r) => !r.me).length;
-  const threeLines = s.rows.some((r) => r.me && r.price.length > 2);
-  const meH = threeLines ? 110 : 96;
+  const me = s.rows.find((r) => r.me);
+  const meLines = me ? Math.max(me.price.length, me.gets.length) : 0;
+  const meH = meLines > 2 ? 12 + meLines * 31 : 96;
   const h = (461 - meH) / (others || 1);
   // the other tools' words in one size, so the column reads as one
-  const getsSize = fitAll(s.rows.filter((r) => !r.me).flatMap((r) => r.gets), 'medium', 28, widths[2]);
+  const getsSize = fitAll(s.rows.filter((r) => !r.me).flatMap((r) => r.gets), 'medium', 28, 372);
   let y = 192;
   s.rows.forEach((r, i) => {
     const rh = r.me ? meH : h;
     if (r.me) o.push(`<rect x="36" y="${y}" width="1128" height="${rh}" rx="12" fill="#E4F5EC"/>`);
     else if (i < s.rows.length - 1) o.push(`<rect x="48" y="${at2(y + rh - 1)}" width="1104" height="2" fill="${GRID}"/>`);
     const mid = y + rh / 2 + 10;
-    o.push(line(r.tool, { x: xs[0], y: mid, size: fitSize(r.tool, 'heavy', 32, r.me ? 256 : widths[0]), weight: 'heavy' }));
+    o.push(line(r.tool, { x: 48, y: mid, size: r.me ? 32 : toolSize, weight: 'heavy' }));
     // one line: the wanted size, shrunk to its column; several: one size, stacked around the row's middle
     const lines = (arr, x, w, weight, fill, size, stacked) => {
       if (arr.length === 1) { o.push(line(arr[0], { x, y: mid, size: fitSize(arr[0], weight, size, w), weight, fill })); return; }
       const each = fitAll(arr, weight, stacked, w);
-      const step = each + 8;
+      const step = each + 5;
       const first = y + rh / 2 + each * 0.36 - (step * (arr.length - 1)) / 2;
       arr.forEach((l, k) => o.push(line(l, { x, y: first + k * step, size: each, weight, fill })));
     };
     // our own row's offer has more words: its column starts right after the name
-    if (r.me) lines(r.price, 310, 460, 'semi', INK, 30, 28);
-    else lines(r.price, xs[1], widths[1], 'semi', INK, 30, 24);
-    lines(r.gets, xs[2], widths[2], 'medium', MUTED, r.me ? 28 : getsSize, 26);
+    if (r.me) lines(r.price, 320, 450, 'semi', INK, 30, 28);
+    else lines(r.price, priceX, getsX - priceX - 10, 'semi', INK, 30, 26);
+    lines(r.gets, getsX, 372, 'medium', MUTED, r.me ? 28 : getsSize, r.me ? 26 : getsSize);
     y += rh;
   });
   o.push('</svg>');
@@ -339,6 +393,13 @@ export function pictureSvg(spec) {
 // Drawn once, encoded twice, no metadata in either. One thread per picture: the build draws four at a time.
 sharp.cache(false);
 sharp.concurrency(1);
+// The smallest text a picture draws, for the tests.
+export function smallestText(spec) {
+  smallest = Infinity;
+  pictureSvg(spec);
+  return smallest;
+}
+
 export async function drawPicture(spec) {
   const { data, info } = await sharp(Buffer.from(pictureSvg(spec)), { density: 72 }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
   const raw = () => sharp(data, { raw: info });
