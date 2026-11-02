@@ -1134,7 +1134,7 @@ ${body}
 
 // sameAs (B110 SEO): our own X account, so search and answer engines tie the name to one company; exported for the blog
 // home and the posts (render.mjs), so every page names the same Organization node
-export const ORG = { '@type': 'Organization', '@id': `${LANDING}/#organization`, name: 'MyStockButler', url: `${LANDING}/`, logo: `${LANDING}/favicon.svg`,
+export const ORG = { '@type': 'Organization', '@id': `${LANDING}/#organization`, name: 'MyStockButler', url: `${LANDING}/`, logo: `${LANDING}/logo.png`,
   sameAs: ['https://x.com/MyStockButler'] };
 
 function breadcrumbs(items) {
