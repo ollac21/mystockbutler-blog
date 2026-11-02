@@ -1209,7 +1209,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const has = (t, l) => (l === 'en' ? !!data.pages[t] : !!langPage(data, t, l)) && ctx.exists(pagePath(slug, t, l));
   // the same page in every language this build has (hreflang both ways); English is the default
   const versions = ['en', ...LANGS].filter((l) => has(type, l));
-  const hrefOf = (l) => (l === 'en' ? (versions.includes('fr') ? 'en-CA' : 'en') : LANG_CFG[l].href);
+  const hrefOf = (l) => (l === 'en' ? 'en' : LANG_CFG[l].href);
   const alternates = versions.length > 1
     ? [...versions.map((l) => ({ hreflang: hrefOf(l), url: `${SITE}${pagePath(slug, type, l)}` })), { hreflang: 'x-default', url: `${SITE}${pagePath(slug, type, 'en')}` }]
     : [];
