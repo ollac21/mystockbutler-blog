@@ -13,7 +13,7 @@ cta_end_text: "Wenn Sie das ganze Bild zu einem Unternehmen wollen, aus seinen e
 
 # Die besten KI-Tools zur Aktienanalyse 2026 im Vergleich
 
-*Vom MyStockButler-Team · aktualisiert am 30. Oktober 2026*
+*Von [Olivier Lachance](/de/ueber-uns/) · aktualisiert am 30. Oktober 2026*
 
 **Kurz gesagt (30. Oktober 2026):** MyStockButler schreibt einen vollständigen Bericht in acht Kapiteln zu einem Unternehmen, jede Zahl bis zu ihrer Quelle zurückverfolgt, in vier Sprachen. Ihr erster S&P-500-Bericht ist gratis; danach 5 US-Dollar für einen Bericht aus der Bibliothek, 20 US-Dollar für einen neuen, oder 30 bzw. 70 US-Dollar im Monat. InvestIQ, Ploutos AI und Reflexivity schreiben ebenfalls Berichte.
 

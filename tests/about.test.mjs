@@ -88,3 +88,37 @@ test('the four files hold the same facts: the six indexes and the same prices', 
   const en = docs.find((g) => g.lang === 'en');
   for (const g of docs) assert.equal(nums(g), nums(en), `${g.lang}: the same numbers as English`);
 });
+
+test('the named author and the two trust pages: a Person on every Article, a byline to the About page, both pages in every footer and the sitemap', async () => {
+  const PERSON = { '@type': 'Person', name: 'Olivier Lachance', url: 'https://www.linkedin.com/in/olivier-lachance-md/' };
+  assert.match(siteFooter(), /<a href="\/methodology\/">Methodology<\/a>\n<a href="\/corrections\/">Corrections<\/a>/);
+  const { pages, hubs, compares } = buildStockSite([load('stock-ko.json'), load('stock-td-to-fr.json')], { today: TODAY });
+  for (const p of [...pages, ...hubs, ...compares]) {
+    assert.match(p.html, /<footer[\s\S]*<a href="\/methodology\/">[\s\S]*<a href="\/corrections\/">[\s\S]*<\/footer>/, p.path);
+    for (const node of ldOf(p.html)['@graph']) if (node.author) assert.deepEqual(node.author, PERSON, p.path);
+  }
+  const words = { en: 'By', fr: 'Par' };
+  for (const p of pages.filter((x) => words[x.lang] && ldOf(x.html)['@graph'].some((n) => n['@type'] === 'Article') && !x.guide)) {
+    assert.ok(p.html.includes(`<a href="${ABOUT_PATH[p.lang]}">${words[p.lang]} Olivier Lachance</a>`), p.path);
+  }
+  for (const [path, type] of [['/methodology/', 'AboutPage'], ['/corrections/', 'AboutPage']]) {
+    const h = hubs.find((x) => x.path === path);
+    assert.ok(h, `${path} built`);
+    assert.equal((h.html.match(/<h1[ >]/g) || []).length, 1);
+    assert.ok(ldOf(h.html)['@graph'].some((n) => n['@type'] === type));
+    assert.match(h.html, /By <a href="\/about\/">Olivier Lachance<\/a>/);
+  }
+  assert.match(hubs.find((x) => x.path === '/corrections/').html, /href="mailto:mystockbutler@gmail\.com"/);
+  for (const l of LANGS) assert.match(hubs.find((x) => x.path === ABOUT_PATH[l]).html, /Olivier Lachance[\s\S]{0,20}href="https:\/\/www\.linkedin\.com\/in\/olivier-lachance-md\/"/, l);
+  const out = await mkdtemp(path.join(os.tmpdir(), 'msb-trust-'));
+  try {
+    const built = await writeStockSite(out, [load('stock-ko.json')], { today: TODAY, earningsDates: {} });
+    const entries = Object.values(built.sitemaps).flat();
+    for (const p of ['/methodology/', '/corrections/']) {
+      assert.ok(existsSync(path.join(out, p.slice(1), 'index.html')), `${p} written`);
+      assert.equal(entries.find((e) => e.url === `${SITE}${p}`)?.lastmod, '2026-11-01');
+    }
+  } finally {
+    await rm(out, { recursive: true, force: true });
+  }
+});

@@ -10,6 +10,8 @@ export const ABOUT_DIR = new URL('../../data/about/', import.meta.url);
 export const ABOUT_PATH = { en: '/about/', fr: '/fr/a-propos/', de: '/de/ueber-uns/', 'zh-HK': '/zh/about/' };
 export const ABOUT_PATHS = new Set(Object.values(ABOUT_PATH));
 export const ABOUT_LINK_WORDS = { en: 'About', fr: 'À propos', de: 'Über uns', 'zh-HK': '關於我們' };
+// The two English pages every footer links (owner 2026-11-01): the link in the page's language, the text in English.
+export const TRUST_LINK_WORDS = { en: { methodology: 'Methodology', corrections: 'Corrections' }, fr: { methodology: 'Méthodologie', corrections: 'Corrections' }, de: { methodology: 'Methodik', corrections: 'Korrekturen' }, 'zh-HK': { methodology: '研究方法', corrections: '更正' } };
 const HREFLANG = { en: 'en', fr: 'fr', de: 'de', 'zh-HK': 'zh-Hant' };
 const CRUMB_ROOT = { en: '/', fr: '/fr/', de: '/de/', 'zh-HK': '/zh/stocks/' };
 
@@ -37,6 +39,11 @@ export function renderAbout({ shell, SITE, ORG, breadcrumbs, exists = () => true
     const outLinks = siteLink ? [...main.matchAll(new RegExp(siteLink.source, 'g'))].map((m) => m[1]) : [];
     return { ...page, guide: false, about: true, alternates, outLinks };
   });
+}
+
+// /methodology/ and /corrections/: data/about/methodology.md and corrections.md, drawn in the About pages' frame, English only.
+export function renderTrust({ shell, SITE, ORG, breadcrumbs, docs = loadGuides(ABOUT_DIR).filter((g) => !ABOUT_PATHS.has(g.path)) }) {
+  return docs.map((g) => renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot: { name: 'MyStockButler', path: CRUMB_ROOT.en }, pageType: 'AboutPage' }));
 }
 
 // llms.txt's About lines: one per language, English first.

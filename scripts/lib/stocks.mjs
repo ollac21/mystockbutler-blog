@@ -9,11 +9,11 @@
 // company: the renderer draws what the file holds, and the gate (gatePage) holds back a page that breaks a rule.
 
 import { Marked } from 'marked';
-import { APP, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
+import { APP, AUTHOR, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
-import { ABOUT_LINK_WORDS, ABOUT_PATH, renderAbout } from './about.mjs';
+import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
@@ -89,7 +89,7 @@ export const UI = {
   en: {
     htmlLang: 'en', allStocks: 'All stocks', blog: 'Blog', headerCta: 'First S&P 500 report free', free: 'Your first S&P 500 report is free · no card',
     readFull: (c) => `Read the full ${c} memo`, proof: (c) => `Every number traced to ${c}'s filings`, chapters: 'chapters', words: 'words',
-    sources: 'sources cited', kicker: 'Research memo', memoOf: 'Memo of', mid: (p, P, t, T) => `This page shows ${p} of the memo's ${P} paragraphs and ${t} of its ${T} tables.`,
+    sources: 'sources cited', by: (a) => `By ${a}`, kicker: 'Research memo', memoOf: 'Memo of', mid: (p, P, t, T) => `This page shows ${p} of the memo's ${P} paragraphs and ${t} of its ${T} tables.`,
     fromMemo: 'From the full memo', cont: 'Continue reading, free', whereFrom: 'Where these numbers come from', filingOn: (h) => `Filing on ${h}`,
     filing: 'Filing', moreOn: (c) => `More on ${c}`, rivals: 'Its rivals', browse: 'Browse', rail: (c) => `The full ${c} memo`, readItFree: 'Read it free',
     sticky: 'Your first S&P 500 report is free', readIt: 'Read it', legal: 'Legal', login: 'Log in', stocksCrumb: 'Stocks', means: 'What this means.',
@@ -103,7 +103,7 @@ export const UI = {
   fr: {
     htmlLang: 'fr', allStocks: 'Toutes les actions', blog: 'Blogue', headerCta: 'Premier rapport S&P 500 gratuit', free: 'Votre premier rapport S&P 500 est gratuit · sans carte',
     readFull: (c) => `Lire le mémo complet sur ${c}`, proof: (c) => `Chaque chiffre est retracé jusqu’aux documents déposés par ${c}`, chapters: 'chapitres', words: 'mots',
-    sources: 'sources citées', kicker: 'Mémo de recherche', memoOf: 'Mémo du', mid: (p, P, t, T) => `Cette page présente ${p} des ${P} paragraphes du mémo et ${t} de ses ${T} tableaux.`,
+    sources: 'sources citées', by: (a) => `Par ${a}`, kicker: 'Mémo de recherche', memoOf: 'Mémo du', mid: (p, P, t, T) => `Cette page présente ${p} des ${P} paragraphes du mémo et ${t} de ses ${T} tableaux.`,
     fromMemo: 'Extrait du mémo complet', cont: 'Poursuivre la lecture, gratuitement', whereFrom: "D'où viennent ces chiffres", filingOn: (h) => `Document publié sur ${h}`,
     filing: 'Document', moreOn: (c) => `Plus sur ${c}`, rivals: 'Ses concurrents', browse: 'Parcourir', rail: (c) => `Le mémo complet sur ${c}`, readItFree: 'Le lire gratuitement',
     sticky: 'Votre premier rapport S&P 500 est gratuit', readIt: 'Le lire', legal: 'Mentions légales', login: 'Connexion', stocksCrumb: 'Actions', means: 'Ce que cela signifie.',
@@ -118,7 +118,7 @@ export const UI = {
   de: {
     htmlLang: 'de', allStocks: 'Alle Aktien', blog: 'Blog', headerCta: 'Erster S&P-500-Bericht gratis', free: 'Ihr erster S&P-500-Bericht ist gratis · keine Karte',
     readFull: (c) => `Das vollständige ${c}-Memo lesen`, proof: (c) => `Jede Zahl ist in den Unterlagen von ${c} belegt`, chapters: 'Kapitel', words: 'Wörter',
-    sources: 'zitierte Quellen', kicker: 'Research-Memo', memoOf: 'Memo vom', mid: (p, P, t, T) => `Diese Seite zeigt ${p} der ${P} Absätze des Memos und ${t} seiner ${T} Tabellen.`,
+    sources: 'zitierte Quellen', by: (a) => `Von ${a}`, kicker: 'Research-Memo', memoOf: 'Memo vom', mid: (p, P, t, T) => `Diese Seite zeigt ${p} der ${P} Absätze des Memos und ${t} seiner ${T} Tabellen.`,
     fromMemo: 'Aus dem vollständigen Memo', cont: 'Gratis weiterlesen', whereFrom: 'Woher diese Zahlen stammen', filingOn: (h) => `Dokument auf ${h}`,
     filing: 'Dokument', moreOn: (c) => `Mehr zu ${c}`, rivals: 'Die Konkurrenz', browse: 'Stöbern', rail: (c) => `Das vollständige ${c}-Memo`, readItFree: 'Gratis lesen',
     sticky: 'Ihr erster S&P-500-Bericht ist gratis', readIt: 'Lesen', legal: 'Rechtliches', login: 'Anmelden', stocksCrumb: 'Aktien', means: 'Was das bedeutet.',
@@ -134,7 +134,7 @@ export const UI = {
   'zh-HK': {
     htmlLang: 'zh-Hant', allStocks: '所有股票', blog: '網誌', headerCta: '首份 S&P 500 報告免費', free: '首份 S&P 500 報告免費 · 無需信用卡',
     readFull: (c) => `閱讀 ${c} 完整研究備忘錄`, proof: (c) => `每個數字均可追溯至 ${c} 的公開文件`, chapters: '章', words: '詞',
-    sources: '個引用來源', kicker: '研究備忘錄', memoOf: '備忘錄日期', mid: (p, P, t, T) => `本頁展示備忘錄 ${P} 段中的 ${p} 段，以及 ${T} 個表格中的 ${t} 個。`,
+    sources: '個引用來源', by: (a) => `作者：${a}`, kicker: '研究備忘錄', memoOf: '備忘錄日期', mid: (p, P, t, T) => `本頁展示備忘錄 ${P} 段中的 ${p} 段，以及 ${T} 個表格中的 ${t} 個。`,
     fromMemo: '摘自完整備忘錄', cont: '免費繼續閱讀', whereFrom: '數字來源', filingOn: (h) => `${h} 上的文件`,
     filing: '文件', moreOn: (c) => `更多關於 ${c}`, rivals: '競爭對手', browse: '瀏覽', rail: (c) => `${c} 完整備忘錄`, readItFree: '免費閱讀',
     sticky: '首份 S&P 500 報告免費', readIt: '閱讀', legal: '法律聲明', login: '登入', stocksCrumb: '美股分析', means: '這代表甚麼？',
@@ -1094,6 +1094,9 @@ function langNav(lang) {
     .map((h) => `<a href="${h.path}" hreflang="${h.hreflang}" lang="${h.hreflang}">${esc(UI[lang].otherIn[h.lang])}</a>`).join('');
 }
 
+// The visible byline in a page's date line: the name the JSON-LD's author gives, in the page's language, to the About page.
+const authorLink = (lang) => `<a href="${ABOUT_PATH[lang]}">${esc(UI[lang].by(AUTHOR.name))}</a>`;
+
 function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
@@ -1125,7 +1128,7 @@ ${gaHead(meta)}</head>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
 <a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${esc(ui.headerCta)}</a></nav></div></header>
 ${body}
-<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
+<footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="/methodology/">${esc(TRUST_LINK_WORDS[lang].methodology)}</a><a href="/corrections/">${esc(TRUST_LINK_WORDS[lang].corrections)}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 </body>
 </html>
@@ -1301,7 +1304,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     description: page.meta_description,
     datePublished: data.first_memo_date || data.memo_date,
     dateModified: data.memo_date,
-    author: { '@id': ORG['@id'] },
+    author: AUTHOR,
     publisher: { '@id': ORG['@id'] },
     mainEntityOfPage: url,
     about: { '@type': 'Corporation', name: company, tickerSymbol: ticker },
@@ -1319,7 +1322,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     meta: { type, ticker, cta, lang, label: `${company} ${TYPE_NAMES[type].toLowerCase()}` },
     body: `<div class="layout"><article>
 ${crumbs.html}
-<div class="kicker"><span>${esc(ui.kicker)}</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>${esc(ui.memoOf)} ${esc(memoDay)}</span></div>
+<div class="kicker"><span>${esc(ui.kicker)}</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>${esc(ui.memoOf)} ${esc(memoDay)}</span><span>${authorLink(lang)}</span></div>
 <h1>${esc(page.title)}</h1>
 <p class="lede">${esc(byUs(data.memo_date, lang))}${esc(page.opening)}</p>
 ${facts ? `<div class="glance">${facts}</div>` : ''}
@@ -1729,7 +1732,7 @@ export function renderComparePage(pair, ctx) {
     description,
     datePublished: days[0],
     dateModified: days[1],
-    author: { '@id': ORG['@id'] },
+    author: AUTHOR,
     publisher: { '@id': ORG['@id'] },
     mainEntityOfPage: url,
     about: [A, B].map((s) => ({ '@type': 'Corporation', name: s.company || s.name, tickerSymbol: s.ticker })),
@@ -1745,7 +1748,7 @@ export function renderComparePage(pair, ctx) {
     meta: { type: 'compare', ticker: `${A.ticker} vs ${B.ticker}`, cta: ctaOf(A), lang: 'en', label: `${A.name} vs ${B.name}` },
     body: `<div class="layout one"><article>
 ${crumbs.html}
-<div class="kicker"><span>Side by side</span><span>${esc(A.name)} (${esc(A.ticker)}) and ${esc(B.name)} (${esc(B.ticker)})</span><span>${days[0] === days[1] ? `Memos of ${esc(humanDay(days[0]))}` : `Memos of ${esc(humanDay(A.memo_date))} and ${esc(humanDay(B.memo_date))}`}</span></div>
+<div class="kicker"><span>Side by side</span><span>${esc(A.name)} (${esc(A.ticker)}) and ${esc(B.name)} (${esc(B.ticker)})</span><span>${days[0] === days[1] ? `Memos of ${esc(humanDay(days[0]))}` : `Memos of ${esc(humanDay(A.memo_date))} and ${esc(humanDay(B.memo_date))}`}</span><span>${authorLink('en')}</span></div>
 <h1>${esc(title)}</h1>
 <h2>How do ${esc(A.name)} and ${esc(B.name)} compare?</h2>
 ${picture ? pictureImg(picture) : ''}
@@ -2073,6 +2076,10 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   }
   // the About pages (2026-10-29): always built, in the four languages; a link to an unpublished page keeps its words
   for (const k of renderAbout({ shell, SITE, ORG, breadcrumbs, exists: (p) => published.has(p) || hubPaths.has(p), siteLink: SITE_LINK })) {
+    hubs.push(k);
+    hubPaths.add(k.path);
+  }
+  for (const k of renderTrust({ shell, SITE, ORG, breadcrumbs })) {   // /methodology/ and /corrections/, English only
     hubs.push(k);
     hubPaths.add(k.path);
   }

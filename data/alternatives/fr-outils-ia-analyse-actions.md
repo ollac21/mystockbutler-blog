@@ -13,7 +13,7 @@ cta_end_text: "Si vous voulez tout le dossier sur une société, écrit à parti
 
 # Meilleurs outils IA d'analyse d'actions en 2026 : le comparatif
 
-*Par l'équipe MyStockButler · mis à jour le 30 octobre 2026*
+*Par [Olivier Lachance](/fr/a-propos/) · mis à jour le 30 octobre 2026*
 
 **En bref (30 octobre 2026) :** MyStockButler écrit un rapport complet en huit chapitres sur une société, chaque chiffre retracé jusqu'à sa source, en quatre langues. Votre premier rapport S&P 500 est gratuit ; ensuite 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau, ou 30 $ US ou 70 $ US par mois. InvestIQ, Ploutos AI et Reflexivity écrivent aussi des rapports.
 

@@ -13,7 +13,7 @@ cta_end_text: "If you want the full case on one company, written from its filing
 
 # Best AI stock research tools 2026, compared
 
-*By the MyStockButler team · updated 30 October 2026*
+*By [Olivier Lachance](/about/) · updated 30 October 2026*
 
 **Short answer (30 October 2026):** MyStockButler writes an eight-chapter report per company, every number traced to its source, in four languages. Your first S&P 500 report is free; then $5 a library report, $20 a new one, or $30 or $70 monthly. InvestIQ, Ploutos AI and Reflexivity also write reports.
 

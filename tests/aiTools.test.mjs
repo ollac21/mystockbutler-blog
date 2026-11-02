@@ -68,7 +68,7 @@ test('the English page: a byline, then a dated short answer that names MyStockBu
   const md = en.markdown.replace(/^\s*# .*\n+/, '');
   const opening = md.split(/\n(?=## )/)[0];
   const [byline, answer, ...more] = opening.trim().split(/\n\s*\n/);
-  assert.match(byline, /^\*By the MyStockButler team · updated 30 October 2026\*$/);
+  assert.match(byline, /^\*By \[Olivier Lachance\]\(\/about\/\) · updated 30 October 2026\*$/);
   assert.equal(more.length, 0, 'the opening is the byline and the short answer only: the free-report box comes right after');
   const words = answer.replace(/[*_]/g, '').split(/\s+/).filter(Boolean);
   assert.ok(words.length <= 50, `the short answer has ${words.length} words`);

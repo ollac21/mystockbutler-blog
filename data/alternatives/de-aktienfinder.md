@@ -121,4 +121,4 @@ Wer ein Unternehmen gründlich verstehen will, statt viele zu filtern, braucht e
 
 Nein. Unsere Berichte zeigen Fakten, Zahlen und Szenarien mit ihren Quellen. Sie sagen nie, ob Sie kaufen oder verkaufen sollen; die Entscheidung liegt bei Ihnen.
 
-*Aktualisiert am 30. Oktober 2026.*
+*Von [Olivier Lachance](/de/ueber-uns/) · aktualisiert am 30. Oktober 2026.*

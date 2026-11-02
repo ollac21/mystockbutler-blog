@@ -126,4 +126,4 @@ Oui, si vous suivez des dizaines de valeurs et utilisez le consensus des analyst
 
 Non. Nos rapports présentent des faits, des chiffres et des scénarios avec leurs sources. Ils ne disent jamais d'acheter ou de vendre ; la décision vous appartient.
 
-*Mis à jour le 30 octobre 2026.*
+*Par [Olivier Lachance](/fr/a-propos/) · mis à jour le 30 octobre 2026.*

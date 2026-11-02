@@ -121,4 +121,4 @@ Free options exist: Stock Analysis and Yahoo Finance show the numbers, and Simpl
 
 No. Our reports present facts, numbers and scenarios with their sources. They never tell you to buy or sell; the decision is yours.
 
-*Updated on 30 October 2026.*
+*By [Olivier Lachance](/about/) · updated on 30 October 2026.*

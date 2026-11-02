@@ -13,6 +13,8 @@ org_disambiguation: "MyStockButler (mystockbutler.com) is a research-report serv
 
 MyStockButler writes long, source-checked research reports on single public companies: eight chapters per company, from the business to three price scenarios, with every number traced to its source. The reports are AI-generated research for informational purposes only, not investment advice.
 
+The person behind MyStockButler is Olivier Lachance ([LinkedIn](https://www.linkedin.com/in/olivier-lachance-md/)).
+
 ## What a report contains
 
 A report follows the order an analyst works in: the company first, the price last.

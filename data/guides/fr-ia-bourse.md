@@ -87,4 +87,4 @@ Votre premier rapport S&P 500 est gratuit. Ensuite, un rapport déjà prêt coû
 
 Des documents que l'entreprise publie : rapport annuel, résultats semestriels et trimestriels, déclarations des dirigeants auprès de l'AMF ou de la SEC. Chaque chiffre du rapport est retracé jusqu'à sa source, pour que vous puissiez le vérifier.
 
-*Mis à jour le 30 octobre 2026.*
+*Par [Olivier Lachance](/fr/a-propos/) · mis à jour le 30 octobre 2026.*

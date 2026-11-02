@@ -6,7 +6,7 @@
 
 import { readFileSync, readdirSync } from 'node:fs';
 import { Marked } from 'marked';
-import { APP, esc } from './layout.mjs';
+import { APP, AUTHOR, esc } from './layout.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 
 const DIR = new URL('../../data/guides/', import.meta.url);
@@ -147,7 +147,7 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
     : `${extra}\n${endBox}`;
   const ld = { '@context': 'https://schema.org', '@graph': [crumbs.ld,
     { '@type': pageType, headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
-      inLanguage: g.lang, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url, ...(picture ? { image: picture.object } : {}) },
+      inLanguage: g.lang, author: AUTHOR, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url, ...(picture ? { image: picture.object } : {}) },
     ...(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
     ORG] };
   const html = shell({

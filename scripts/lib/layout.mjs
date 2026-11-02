@@ -6,6 +6,9 @@
 export const LANDING = 'https://mystockbutler.com';
 export const APP = 'https://app.mystockbutler.com';
 
+// The named author of every article (owner 2026-11-01): the JSON-LD's author; the visible byline names the same person and links the About page.
+export const AUTHOR = { '@type': 'Person', name: 'Olivier Lachance', url: 'https://www.linkedin.com/in/olivier-lachance-md/' };
+
 export function esc(value) {
   return String(value ?? '')
     .replace(/&/g, '&amp;')
@@ -66,6 +69,8 @@ export function siteFooter() {
 <a class="brand" href="${LANDING}/"><span class="logo" aria-hidden="true">S</span><span class="brand-name">MyStockButler</span></a>
 <nav aria-label="Footer">
 <a href="/about/">About</a>
+<a href="/methodology/">Methodology</a>
+<a href="/corrections/">Corrections</a>
 <a href="${LANDING}/legal">Legal</a>
 <a href="/">Blog</a>
 <a href="/stocks/">All stocks</a>

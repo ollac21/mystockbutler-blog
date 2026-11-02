@@ -15,7 +15,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
-import { APP, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, siteFooter, siteHeader } from './lib/layout.mjs';
+import { APP, AUTHOR, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, siteFooter, siteHeader } from './lib/layout.mjs';
 import { nofollowAppLinks } from './lib/appLinks.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
@@ -198,7 +198,6 @@ function coverOf(post) {
 function structuredData(post, canonical, measured = null) {
   const title = str(post.seo_title) || str(post.title);
   const description = str(post.seo_description) || str(post.excerpt);
-  const author = str(post.author_name);
   const posting = {
     '@type': 'BlogPosting',
     headline: title,
@@ -211,7 +210,7 @@ function structuredData(post, canonical, measured = null) {
   if (published) posting.datePublished = published;
   const modified = lastModified(post);
   if (modified) posting.dateModified = modified;
-  if (author) posting.author = { '@type': 'Organization', name: author };
+  posting.author = AUTHOR;
   posting.publisher = { '@id': ORG['@id'] };     // B110 SEO: the one Organization node (name, logo, sameAs) of every page
   if (Array.isArray(post.keywords) && post.keywords.length) posting.keywords = post.keywords.join(', ');
   const wc = Number(post.article_word_count);
@@ -452,7 +451,7 @@ function renderPost(post, bodyMarkdown, hubPayload, articleFile = null, measured
         .join('')}</div>`
     : '';
   const byline = [
-    author ? `<span>${esc(author)}</span>` : '',
+    `<a href="/about/">By ${esc(AUTHOR.name)}</a>`,
     published ? `<time datetime="${esc(isoOrEmpty(post.published_at))}">Published ${esc(published)}</time>` : '',
     minutes(post) ? `<span>${minutes(post)} min read</span>` : '',
     humanDate(post.source_cutoff) ? `<span>Sources through ${esc(humanDate(post.source_cutoff))}</span>` : '',

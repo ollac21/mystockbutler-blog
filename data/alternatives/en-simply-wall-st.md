@@ -126,4 +126,4 @@ Every number is traced to its source and every source is listed. A final check c
 
 No. Our reports present facts, numbers and scenarios with their sources. They never tell you to buy or sell.
 
-*Updated on 30 October 2026.*
+*By [Olivier Lachance](/about/) · updated on 30 October 2026.*
