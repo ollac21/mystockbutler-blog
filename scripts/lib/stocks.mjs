@@ -286,6 +286,12 @@ export function titleWithTicker(title, data) {
   return `${title.slice(0, at + name.length)} (${data.ticker})${title.slice(at + name.length)}`;
 }
 
+// WHAT FRANCE TYPES (SEO fix list row 10, owner 2026-11-01): 'action lvmh avis'. A French forecast page's <title> is this, whatever
+// the chain's file says; the h1 keeps the file's title. The title's word only: the page still makes no buy or sell call.
+export function frStockTitle(data) {
+  return `Action ${shortName(data)} : avis, analyse et prévisions`;
+}
+
 // OUR NAME IN THE ANSWER SENTENCE (owner 2026-10-22 '1 and 2 build'; the three strings approved by the CTO 18:14Z, the colon
 // form): the words in front of the page's opening, built from the memo's month and our own month lists — no model call.
 //   en  "MyStockButler's October 2026 analysis: "
@@ -1189,7 +1195,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const withSpan = span ? `${page0.title} ${span}${shared ? ` (${data.ticker})` : ''}` : modelTitle;
   const [dated, datedKind] = type === 'earnings' ? earningsDateTitle(data, lang, ctx.today, ctx.earningsDates) : ['', ''];
   const page = { ...page0, title: dated || (withSpan.length <= 60 ? withSpan : modelTitle) };   // the h1 and the Article headline
-  const title = titleWithTicker(page.title, data);   // the <title>, og:title and twitter:title
+  const title = titleWithTicker(lang === 'fr' && type === 'stock' ? frStockTitle(data) : page.title, data);   // the <title>, og:title and twitter:title
   const teaserData = fr ? data.translations[lang].teaser : data.teaser;
   const slug = data.slug;
   const path = pagePath(slug, type, lang);

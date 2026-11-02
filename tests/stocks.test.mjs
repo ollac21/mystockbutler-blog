@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { buildStockSite, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
+import { buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -522,6 +522,37 @@ test('row 4: the ticker goes right after the short name, in the form the page pr
     ['GE Aerospace dividend', 'GE Aerospace', 'GE', 'GE Aerospace dividend'],
     ['Merck stock forecast 2027–2029 (MRK.DE)', 'Merck', 'MRK.DE', 'Merck stock forecast 2027–2029 (MRK.DE)'],
   ]) assert.equal(titleWithTicker(title, { short_name, ticker }), want);
+});
+
+test('row 10: a French forecast page is titled "Action X (T) : avis, analyse et prévisions" whatever the file says; nothing else moves, no page is held', () => {
+  const build = (edit = (c) => c) => buildStockSite([edit(clone(load('stock-td-to-fr.json'))), load('stock-rmd.json')], { today: TODAY });
+  const by = (b, path) => b.pages.find((p) => p.path === path);
+  const want = 'Action TD (TD.TO) : avis, analyse et prévisions';
+  const built = build();
+  assert.deepEqual(built.held, [], JSON.stringify(built.held));
+  const fr = titlesOf(by(built, '/fr/stocks/td-to/'));
+  const model = load('stock-td-to-fr.json').translations.fr.pages.stock.title;
+  assert.deepEqual(fr, { title: want, og: want, tw: want, h1: model, ld: model });   // the h1 and the headline keep the file's title
+  // every other page keeps the title the file gives it, with the ticker: the French dividend and earnings pages, the English page
+  for (const p of built.pages.filter((x) => x.path !== '/fr/stocks/td-to/')) {
+    assert.ok(!p.title.includes('avis, analyse'), p.path);
+    assert.equal(p.title, titleWithTicker(titlesOf(p).h1.replace(/&amp;/g, '&').replace(/&#39;/g, "'"), p.data), p.path);
+  }
+  // the chain's other forms, and an old file's wording, give the same title
+  for (const old of ['Action TD : prévisions', 'Action TD : prévisions — novembre 2026', 'Toronto-Dominion : perspectives']) {
+    const b = build((c) => { c.translations.fr.pages.stock.title = old; return c; });
+    assert.equal(titlesOf(by(b, '/fr/stocks/td-to/')).title, want, old);
+    assert.equal(titlesOf(by(b, '/fr/stocks/td-to/')).h1, old);
+  }
+  // past 60 characters the page is not held (the gate measures the file's title)
+  const long = build((c) => { c.short_name = 'Canadian Natural Resources'; return c; });
+  assert.deepEqual(long.held, [], JSON.stringify(long.held));
+  assert.ok(by(long, '/fr/stocks/td-to/').title.length > 60);
+  // an apostrophe and an ampersand, escaped once; a name that is the ticker keeps it once
+  const named = (short_name) => build((c) => { c.short_name = short_name; return c; });
+  assert.equal(titlesOf(by(named("L'Oréal"), '/fr/stocks/td-to/')).title, 'Action L&#39;Oréal (TD.TO) : avis, analyse et prévisions');
+  assert.equal(titlesOf(by(named('M&T'), '/fr/stocks/td-to/')).og, 'Action M&amp;T (TD.TO) : avis, analyse et prévisions');
+  assert.equal(titleWithTicker(frStockTitle({ short_name: 'IBM', ticker: 'IBM' }), { short_name: 'IBM', ticker: 'IBM' }), 'Action IBM : avis, analyse et prévisions');
 });
 
 test('row 4: the ticker takes no date out of a title and holds no page back, though it runs the title past 60 characters', () => {
