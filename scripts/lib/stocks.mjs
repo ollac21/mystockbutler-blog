@@ -1289,7 +1289,9 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   if (!fr) {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
+    if (type === 'stock') hubs.push('<a href="/alternatives/bloomberg-terminal/">Bloomberg Terminal alternatives</a>');
   }
+  if (lang === 'de') hubs.push('<a href="/de/alternativen/ki-aktienanalyse-tools/">KI-Tools zur Aktienanalyse im Vergleich</a>');
   // the comparison pages this company is in (English only: the comparisons are English pages)
   const compares = fr ? [] : (ctx.compareLinks?.get(slug) || []).slice(0, 6).map((c) => `<a href="${comparePath(c.slug)}">${esc(c.label)}</a>`);
   const links = `<section class="more"><h3>${esc(ui.moreOn(company))}</h3><div>${siblings.join('')}</div>${rivals.length ? `<h3>${esc(ui.rivals)}</h3><div>${rivals.join('')}</div>` : ''}${compares.length ? `<h3>Side by side</h3><div>${compares.join('')}</div>` : ''}<h3>${esc(ui.browse)}</h3><div>${hubs.join('')}</div></section>`;
