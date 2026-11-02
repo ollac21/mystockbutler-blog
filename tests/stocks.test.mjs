@@ -251,6 +251,140 @@ test('two long names get the shorter title, the search phrase kept', async () =>
   assert.equal(compareTitle(pair('Canadian Natural Resources', 'Imperial Oil Limited')), 'Canadian Natural Resources vs Imperial Oil Limited stock (October 2026)');
 });
 
+// THE WRITTEN COMPARISON (SEO list row 11, owner 2026-11-01): size, growth, cash and valuation; each figure as a memo prints it, with its
+// period and unit; each company's own paragraph word for word; no comparative word; a missing figure leaves out its sentence.
+// (a page shows at most 6 paragraphs: a planted one takes the place of one the fixture has)
+const plant = (co, type, was, n, subsection, text) => Object.assign(co.pages[type].blocks.flatMap((b) => b.paragraphs).find((p) => p.n === was), { n, subsection, text });
+function namedBanks() {
+  const [td, ry] = banks();
+  for (const [co, who] of [[td, 'TD'], [ry, 'RBC']]) for (const t of Object.keys(co.pages)) for (const b of co.pages[t].blocks) for (const p of b.paragraphs || []) p.text = `${who}: ${p.text}`;
+  plant(td, 'stock', 243, 180, '6.1 — What an investor pays today', 'TD trades at 17.4x trailing earnings.');
+  plant(ry, 'stock', 243, 181, '6.1 — What an investor pays today', 'RBC trades at 17.9x trailing earnings.');
+  return [td, ry];
+}
+const fullPair = () => rbcVsTd({ rows: [
+  ...rbcVsTd().rows,
+  { label: 'Free cash flow', a: cellOf('1,234', 'Oct 2025', 'C$ millions'), b: cellOf('2,345', 'Year to Oct 2025', 'C$ millions'), leader: 'b', better: 'higher' },
+  { label: 'Dividend yield', a: cellOf('2.5%', 'Today (Oct 9, 2026)'), b: cellOf('2.6%', 'Today (Oct 9, 2026)'), leader: 'b', better: 'higher' },
+  { label: 'P/E, next 12 months', a: cellOf('17.2x', 'Today (Oct 9, 2026)'), b: cellOf('17.0x', 'Today (Oct 9, 2026)'), leader: 'b', better: 'lower' },
+] });
+const writtenOf = (companies, pair) => {
+  const { compares } = buildStockSite(companies, { today: TODAY, compares: [pair] });
+  return compares.find((c) => c.path === `/compare/${pair.slug}/`);
+};
+const sentencesOf = (page) => page.written.flatMap((w) => w.sentences);
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const spoken = (head) => String(head).replace(/^Today \((.*)\)$/, '$1').replace(/^(?:Year|Quarter) to |^\d+ months to /, '').replace(/^[A-Z][a-z]{2}/, (m) => MONTHS.find((x) => x.startsWith(m)) || m);
+const PERIOD = /(?:in the (?:year|quarter|reported period|\d+ months) to |at the end of |in |on |at )((?:[A-Z][a-z]+ (?:\d{1,2}, )?)?\d{4})(?!\d|[.,]\d|x|%)/g;
+const FIGURES = /(?<![A-Za-z\d.,])\d[\d,]*(?:\.\d+)?(?:%|x)?/g;
+// Each number of a sentence against the period that follows it: in the page's table, or in that company's own tables.
+function untraced(sentence, pair, companies) {
+  const known = new Set();
+  const add = (value, head) => known.add(`${String(value).replace(/\*\*/g, '').replace(/^[-−]/, '')}@${spoken(head)}`);
+  for (const r of pair.rows) for (const c of [r.a, r.b]) add(c.value, c.period);
+  for (const co of companies) for (const t of Object.values(co.pages)) for (const b of t.blocks) if (b.table) for (const r of b.table.rows) r.forEach((v, i) => i && add(v, b.table.head[i]));
+  const bad = [];
+  const pieces = sentence.replace(/the (?:last|next) 12 months’/g, 'the months’').split(PERIOD);
+  for (let i = 0; i + 1 < pieces.length; i += 2) for (const n of pieces[i].match(FIGURES) || []) if (!known.has(`${n}@${pieces[i + 1]}`)) bad.push(`${n} @ ${pieces[i + 1]}`);
+  const tail = pieces[pieces.length - 1].match(FIGURES);
+  return tail ? [...bad, ...tail.map((n) => `${n} has no period`)] : bad;
+}
+
+test('the written comparison: four sections, each figure with its period and unit, each paragraph word for word and attributed', () => {
+  const companies = namedBanks();
+  const page = writtenOf(companies, fullPair());
+  assert.deepEqual(page.written.map((w) => w.heading), ['How big are RBC and TD?', 'How fast are RBC and TD growing, and what did their latest results show?', 'How much cash do RBC and TD generate, and where does it go?', 'What does an investor pay for RBC and TD today?']);
+  const all = sentencesOf(page).join(' ');
+  for (const words of [/C\$\d[\d,.]* million in the quarter to July 2026/, /16\.1% in the year to October 2025/, /18\.4% in the year to October 2025/, /C\$1,234 million in the year to October 2025/, /2\.5% on October 9, 2026/, /17\.9x the last 12 months’ earnings and 17\.2x the next 12 months’ on October 9, 2026/]) assert.match(all, words);
+  for (const s of sentencesOf(page)) assert.deepEqual(untraced(s, page.pair, companies), [], s);
+  assert.deepEqual(untraced('RBC’s CET1 capital ratio was 13.5% at October 2025.', page.pair, companies), [], 'the word CET1 is not a number');
+  assert.deepEqual(untraced('RBC traded at 5500.8x the last 12 months’ earnings on October 9, 2026.', page.pair, companies), ['5500.8x @ October 9, 2026'], 'a four-figure multiple is not a year');
+  assert.deepEqual(untraced('RBC’s revenue grew 16.1% in 2024.', page.pair, companies), ['16.1% @ 2024'], 'a number in another period is caught');
+  assert.deepEqual(untraced('RBC’s revenue grew 16.2% in the year to October 2025.', page.pair, companies), ['16.2% @ October 2025'], 'another number is caught');
+  // the paragraph is the file's, whole, under the page's own attribution, with a link to the page it is on
+  const [td, ry] = companies;
+  const tdCash = td.pages.dividend.blocks.flatMap((b) => b.paragraphs).find((p) => p.subsection === '3.3 — Where the capital went').text;
+  assert.deepEqual(page.written[2].quotes.map((q) => [q.side.name, q.type]), [['RBC', 'dividend'], ['TD', 'dividend']]);
+  assert.equal(page.written[2].quotes[1].text, tdCash);
+  assert.ok(ry.pages.dividend.blocks.flatMap((b) => b.paragraphs).some((p) => p.text === page.written[2].quotes[0].text));
+  assert.match(page.html, /TD \(TD\.TO\), from our memo of October 10, 2026 · <a href="\/stocks\/td-to\/dividend\/">TD dividend<\/a><\/p><\/blockquote>/);
+  assert.equal(page.written[0].quotes.length, 0, 'no label says size: its sentences only');
+  assert.doesNotMatch(all, /\b(better|cheaper|larger|smaller|bigger|higher|lower|more|less|attractive)\b/i);
+  // the same wording on every build
+  assert.equal(writtenOf(namedBanks(), fullPair()).html, page.html);
+});
+
+test('the written comparison, mixed currencies: both printed, each in its own, and no word compares them', () => {
+  const companies = namedBanks();
+  const ry = companies[1];
+  for (const t of Object.values(ry.pages)) for (const b of t.blocks) if (b.table && /C\$ millions/.test(b.table.unit)) b.table.unit = b.table.unit.replace('C$', 'US$');
+  const pair = fullPair();
+  pair.rows.find((r) => r.label === 'Free cash flow').a.unit = 'US$ millions';
+  pair.rows.find((r) => r.label === 'Free cash flow').leader = '';
+  const page = writtenOf(companies, pair);
+  const all = sentencesOf(page).join(' ');
+  assert.match(all, /US\$1,234 million in the year to October 2025/);
+  assert.match(all, /C\$2,345 million in the year to October 2025/);
+  assert.match(all, /US\$\d[\d,.]* million in the quarter to July 2026/);
+  assert.match(all, /(?<!U)C\$\d[\d,.]* million in the quarter to July 2026/);
+  assert.doesNotMatch(all, /\b(larger|smaller|bigger|higher|lower|more|less|better|exceed\w*)\b/i);
+});
+
+test('the written comparison, a negative value: revenue fell, free cash flow keeps its minus, a net cash figure is called that', () => {
+  const pair = fullPair();
+  pair.rows.find((r) => r.label === 'Revenue growth').a.value = '-3.2%';
+  pair.rows.find((r) => r.label === 'Free cash flow').b.value = '-2,345';
+  pair.rows.push({ label: 'Net debt (− = net cash)', a: cellOf('-500', 'Year to Oct 2025', 'C$ millions; per share in C$'), b: cellOf('900', 'Oct 2025', 'C$ millions'), leader: 'a', better: 'lower' });
+  const page = writtenOf(namedBanks(), pair);
+  const all = sentencesOf(page).join(' ');
+  assert.match(all, /fell 3\.2% in the year to October 2025/);
+  assert.doesNotMatch(all, /grew -|grew −/);
+  assert.match(all, /−C\$2,345 million in the year to October 2025/);
+  const noFcf = fullPair();
+  noFcf.rows = pair.rows.filter((r) => !['Free cash flow', 'CET1 capital ratio'].includes(r.label));
+  assert.match(sentencesOf(writtenOf(namedBanks(), noFcf)).join(' '), /net cash of C\$500 million at October 2025; .* net debt of C\$900 million at October 2025/);
+});
+
+test('the written comparison, a missing figure leaves out that sentence and only that one', () => {
+  const pair = fullPair();
+  pair.rows.find((r) => r.label === 'Dividend yield').a.value = 'not meaningful';
+  pair.rows.find((r) => r.label === 'Free cash flow').b = cellOf('Used with a warning — seasonal cash flows.', 'Verdict and reason', 'Measure');
+  const all = sentencesOf(writtenOf(namedBanks(), pair)).join(' ');
+  assert.doesNotMatch(all, /dividend yield|free cash flow|not meaningful|warning/i);
+  assert.match(all, /revenue/);
+  // one side with no market value row, or no revenue table: its sentence is gone
+  const noValue = namedBanks();
+  const pays = noValue[0].pages.stock.blocks.find((b) => b.table?.title === 'What an investor pays today').table;
+  pays.rows = pays.rows.filter((r) => r[0] !== 'Market value');
+  const byValue = sentencesOf(writtenOf(noValue, fullPair())).join(' ');
+  assert.doesNotMatch(byValue, /market value|market valued/i);
+  assert.match(sentencesOf(writtenOf(namedBanks(), fullPair())).join(' '), /market value|market valued/i);
+  // a pair with no figure and no paragraph on a topic has no section on it
+  const bare = namedBanks();
+  for (const co of bare) for (const t of Object.values(co.pages)) t.blocks = t.blocks.filter((b) => b.table?.title !== 'The last eight quarters' && b.table?.title !== 'What an investor pays today');
+  assert.ok(!writtenOf(bare, fullPair()).written.some((w) => w.heading.startsWith('How big')));
+});
+
+test('the written comparison: a paragraph with a banned word is passed over, nothing is printed twice, and an unknown period or unit writes nothing', () => {
+  const companies = namedBanks();
+  const [td] = companies;
+  plant(td, 'stock', 242, 170, '6.1 — What an investor pays today', 'Investors can sell TD when they like.');
+  const repeat = td.pages.earnings.blocks.flatMap((b) => b.paragraphs).find((p) => p.subsection === '5.5 — The latest quarter');
+  plant(td, 'dividend', 232, repeat.n, '5.5 — The latest quarter', repeat.text);
+  plant(td, 'stock', 226, 90, '5.3 — Cash', 'Toronto-Dominion Bank sells everyday banking.');
+  const page = writtenOf(companies, fullPair());
+  const quoted = page.written.flatMap((w) => w.quotes.map((q) => q.text));
+  assert.ok(quoted.includes('TD trades at 17.4x trailing earnings.'));
+  assert.ok(!quoted.some((t) => /sell TD/.test(t)));
+  assert.equal(new Set(quoted).size, quoted.length);
+  assert.ok(!quoted.includes('Toronto-Dominion Bank sells everyday banking.'), 'the summary already on the page');
+  const odd = fullPair();
+  odd.rows.find((r) => r.label === 'Revenue growth').a.period = 'H1 2025';
+  odd.rows.find((r) => r.label === 'Free cash flow').a.unit = 'Measure';
+  const all = sentencesOf(writtenOf(namedBanks(), odd)).join(' ');
+  assert.doesNotMatch(all, /grew|free cash flow/i);
+});
+
 // GERMAN AND FRENCH PAGES, the owner's yes of 2026-10-23 (CTO 12:53Z): the /de/ and /fr/ homes in the landing's own words,
 // a translated page links back to its OWN library's English hub, a language's hub names every library it covers.
 test('the /de/ and /fr/ homes: the landing words verbatim, the free report, linked from the language pages', async () => {

@@ -6,7 +6,8 @@
 // dividend payers). The input is ONE file per company written by the chain (final/public-pages.json,
 // MyStockButler - Chain V5/public_pages.py): the memo's own paragraphs and table rows, word for word, and the few
 // lines a model wrote (title, description, opening, headings, closing). Nothing here writes a sentence about a
-// company: the renderer draws what the file holds, and the gate (gatePage) holds back a page that breaks a rule.
+// company, except the comparison pages' fixed sentences around the memos' own figures (compareWritten): the renderer draws
+// what the file holds, and the gate (gatePage) holds back a page that breaks a rule.
 
 import { Marked } from 'marked';
 import { APP, AUTHOR, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from './layout.mjs';
@@ -1644,9 +1645,9 @@ function unbalanced(html) {
 // rivals in the chain's comparisons file (MyStockButler - Chain V5/compare_pages.py, no model call): the rows both memos
 // print side by side, each figure with its period; who leads on each row (the chain's arithmetic: the higher figure, or the
 // lower one for P/E, net debt and the efficiency ratio; a money row only in one unit); each company's own summary
-// paragraph from its memo, word for word; links to both companies' pages and both free reports. The only words written
-// here are the title ('Visa vs Mastercard stock: the numbers side by side (October 2026)'), the headings and the table
-// labels, all fixed. A pair is drawn only when both companies' stock pages are published from the SAME memos the pair
+// paragraph from its memo, word for word; links to both companies' pages and both free reports. The words written here
+// are the title ('Visa vs Mastercard stock: the numbers side by side (October 2026)'), the headings, the table labels and
+// the written comparison's sentences (compareWritten), all fixed around the memos' figures. A pair is drawn only when both companies' stock pages are published from the SAME memos the pair
 // was read from (the memo dates match), so a comparison never shows other numbers than the company's own page.
 export const COMPARE_ROOT = '/compare/';
 const COMPARE_MIN_ROWS = 4;
@@ -1700,6 +1701,137 @@ function sameMemo(p, bySlug) {
   return bySlug.get(p.a.slug)?.memo_date === p.a.memo_date && bySlug.get(p.b.slug)?.memo_date === p.b.memo_date;
 }
 
+// THE WRITTEN COMPARISON (SEO list row 11, owner 2026-11-01): size, growth, cash and valuation, each under a plain question. A section opens
+// with one or two sentences that set the two companies' figures side by side, each with its own period and unit, only as
+// the memos print them; then each company's own paragraph on that topic, word for word from its published page. A figure
+// that is missing or is not a figure ('not meaningful') leaves out its sentence; no paragraph, none; nothing left, no section.
+// No comparative word in any template: who leads stays in the page's table, and two currencies are simply printed.
+// The paragraph is chosen by the label the file gives it: our own template's subsection headings (shape), the first in memo
+// order. No label says 'size', so that section holds its sentences only. The existing banned-word check applies to each paragraph.
+const TOPIC_LABELS = {
+  growth: ['growth', 'the latest quarter', 'the latest results', 'the latest quarter or half-year', 'the latest reported period'],
+  cash: ['cash', 'where the cash went', 'where the capital went', 'affo and the payout', 'capital and liquidity', 'capital and reserves'],
+  valuation: ['what an investor pays today', 'what the price implies'],
+};
+const REVENUE_TABLES = [['Results', 'year'], ['The last eight quarters', 'quarter'], ['The last eight reported periods', 'reported period']];
+const isFigure = (v) => /^[-−]?\d[\d,]*(?:\.\d+)?(?:%|x)?$/.test(String(v ?? '').trim());
+const isMinus = (v) => /^[-−]/.test(String(v));
+const unsigned = (v) => String(v).replace(/^[-−]/, '');
+const poss = (n) => (/['’]s$/.test(n) ? n : /s$/.test(n) ? `${n}’` : `${n}’s`);
+const grew = (v) => (isMinus(v) ? `fell ${unsigned(v)}` : /^0(?:\.0+)?%$/.test(v) ? `was flat at ${v}` : `grew ${v}`);
+
+// A period as the table prints it, in words. The forms are our own producers' (shape); any other form = no sentence.
+function whenWords(period, span = 'year') {
+  const p = String(period || '').trim();
+  const month = (t) => t.replace(/^[A-Z][a-z]{2}/, (m) => MONTHS_EN.find((x) => x.startsWith(m)) || m);
+  const today = /^Today \(([A-Z][a-z]{2} \d{1,2}, \d{4})\)$/.exec(p);
+  if (today) return `on ${month(today[1])}`;
+  const m = /^(?:(Year|Quarter) to |(\d+) months to )?([A-Z][a-z]{2} \d{4})$/.exec(p);
+  if (m) {
+    if (span === 'date') return `at ${month(m[3])}`;
+    return m[2] ? `in the ${m[2]} months to ${month(m[3])}` : `in the ${m[1] ? m[1].toLowerCase() : span} to ${month(m[3])}`;
+  }
+  if (/^\d{4}$/.test(p)) return span === 'date' ? `at the end of ${p}` : span === 'year' ? `in ${p}` : '';
+  return '';
+}
+
+// '96,676' and 'US$ millions' -> 'US$96,676 million'. A unit in another form = no sentence.
+function amountWords(value, unit) {
+  const m = /^(\S+) (million|thousand|billion)s\b/.exec(String(unit || ''));
+  if (!m || !isFigure(value) || /[%x]$/.test(value)) return '';
+  const without = /without [^;,]+/.exec(unit);
+  return `${isMinus(value) ? '−' : ''}${m[1]}${/[$£€]$/.test(m[1]) ? '' : ' '}${unsigned(value)} ${m[2]}${without ? ` ${without[0]}` : ''}`;
+}
+
+const SIDE_BY_SIDE = {
+  revenue: [(a, b, x, y) => `${poss(a)} revenue was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `At ${a}, revenue came to ${x}; at ${b}, it came to ${y}.`, (a, b, x, y) => `${a} reported revenue of ${x}, and ${b} reported ${y}.`],
+  market: [(a, b, x, y) => `${poss(a)} market value was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `The market valued ${a} at ${x} and ${b} at ${y}.`, (a, b, x, y) => `${a} had a market value of ${x}, and ${b} a market value of ${y}.`],
+  growth: [(a, b, x, y) => `${poss(a)} revenue ${x}; ${poss(b)} ${y}.`, (a, b, x, y) => `Revenue at ${a} ${x}, and revenue at ${b} ${y}.`],
+  fcf: [(a, b, x, y) => `${poss(a)} free cash flow was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `At ${a}, free cash flow came to ${x}; at ${b}, it came to ${y}.`, (a, b, x, y) => `Free cash flow was ${x} for ${a} and ${y} for ${b}.`],
+  cet1: [(a, b, x, y) => `${poss(a)} CET1 capital ratio was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `At ${a}, the CET1 capital ratio was ${x}; at ${b}, it was ${y}.`],
+  debt: [(a, b, x, y) => `${a} had ${x}; ${b} had ${y}.`],
+  dividend: [(a, b, x, y) => `${poss(a)} dividend yield was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `At ${a}, the dividend yield was ${x}; at ${b}, it was ${y}.`, (a, b, x, y) => `The dividend yield stood at ${x} for ${a} and ${y} for ${b}.`],
+  pe: [(a, b, x, y) => `${a} traded at ${x}; ${b} traded at ${y}.`, (a, b, x, y) => `The shares of ${a} were priced at ${x}; those of ${b} at ${y}.`],
+  fcfYield: [(a, b, x, y) => `${poss(a)} free cash flow yield was ${x}; ${poss(b)} was ${y}.`, (a, b, x, y) => `At ${a}, the free cash flow yield was ${x}; at ${b}, it was ${y}.`, (a, b, x, y) => `The free cash flow yield stood at ${x} for ${a} and ${y} for ${b}.`],
+};
+
+function compareWritten(pair, ctx) {
+  const A = pair.a;
+  const B = pair.b;
+  const pagesOf = (s) => TYPES.filter((t) => ctx.bySlug.get(s.slug)?.pages?.[t] && ctx.exists(pagePath(s.slug, t)));
+  const fileOf = (s, t) => ctx.bySlug.get(s.slug).pages[t].blocks;
+  // the same slug's wording each build, and not the same wording in every sentence of a page
+  let turn = [...String(pair.slug)].reduce((n, c) => n + c.charCodeAt(0), 0);
+  const line = (kind, x, y) => (x && y ? SIDE_BY_SIDE[kind][turn++ % SIDE_BY_SIDE[kind].length](A.name, B.name, x, y) : '');
+  const usable = (label) => {
+    const r = pair.rows.find((x) => x.label === label);
+    return r && isFigure(r.a.value) && isFigure(r.b.value) ? r : null;
+  };
+  const rowLine = (kind, label, words, span) => {
+    const r = usable(label);
+    const side = (c) => { const w = words(c); const when = whenWords(c.period, span); return w && when ? `${w} ${when}` : ''; };
+    return r ? line(kind, side(r.a), side(r.b)) : '';
+  };
+  // the latest column of a table the company's published page prints (the same column the page's own rows are read from)
+  const tableCell = (s, title, names) => {
+    for (const t of pagesOf(s)) {
+      for (const { table } of fileOf(s, t)) {
+        const row = table?.title === title ? table.rows.find((r) => names.includes(labelOf(r[0]))) : null;
+        if (row) return { value: String(row[1] ?? '').replace(/\*\*/g, '').trim(), unit: table.unit, period: table.head[1] };
+      }
+    }
+    return null;
+  };
+  const cellWords = (c, span) => {
+    const w = c && amountWords(c.value, c.unit);
+    const when = c && whenWords(c.period, span);
+    return w && when ? `${w} ${when}` : '';
+  };
+  const revenue = REVENUE_TABLES.map(([title, span]) => line('revenue', cellWords(tableCell(A, title, ['Revenue']), span), cellWords(tableCell(B, title, ['Revenue']), span))).find(Boolean) || '';
+  const value = ['Market value', 'Market value (every class)'];
+  const market = line('market', cellWords(tableCell(A, 'What an investor pays today', value)), cellWords(tableCell(B, 'What an investor pays today', value)));
+  const money = (c) => amountWords(c.value, c.unit);
+  const debt = (c) => { const w = amountWords(unsigned(c.value), c.unit); return w ? `${isMinus(c.value) ? 'net cash' : 'net debt'} of ${w}` : ''; };
+  const pe = (k) => {
+    const l = usable('P/E, last 12 months')?.[k];
+    const n = usable('P/E, next 12 months')?.[k];
+    const wl = l && whenWords(l.period);
+    const wn = n && whenWords(n.period);
+    if (wl && wn) return l.period === n.period ? `${l.value} the last 12 months’ earnings and ${n.value} the next 12 months’ ${wl}` : `${l.value} the last 12 months’ earnings ${wl} and ${n.value} the next 12 months’ ${wn}`;
+    if (wl) return `${l.value} the last 12 months’ earnings ${wl}`;
+    return wn ? `${n.value} the next 12 months’ earnings ${wn}` : '';
+  };
+  const bank = !pair.rows.some((r) => r.label === 'Free cash flow') && pair.rows.some((r) => r.label === 'CET1 capital ratio');
+  const sections = [
+    { heading: `How big are ${A.name} and ${B.name}?`, labels: [], sentences: [revenue, market] },
+    { heading: `How fast are ${A.name} and ${B.name} growing, and what did their latest results show?`, labels: TOPIC_LABELS.growth, sentences: [rowLine('growth', 'Revenue growth', (c) => grew(c.value))] },
+    { heading: bank ? `How much capital do ${A.name} and ${B.name} have, and where does it go?` : `How much cash do ${A.name} and ${B.name} generate, and where does it go?`, labels: TOPIC_LABELS.cash,
+      sentences: [rowLine('fcf', 'Free cash flow', money) || rowLine('cet1', 'CET1 capital ratio', (c) => c.value, 'date') || rowLine('debt', 'Net debt (− = net cash)', debt, 'date'), rowLine('dividend', 'Dividend yield', (c) => c.value)] },
+    { heading: `What does an investor pay for ${A.name} and ${B.name} today?`, labels: TOPIC_LABELS.valuation, sentences: [line('pe', pe('a'), pe('b')), rowLine('fcfYield', 'Free cash flow yield', (c) => c.value)] },
+  ];
+  // what the page already prints is never printed twice: the two summaries, and every paragraph chosen so far
+  const shown = [A.quote, B.quote].map((q) => textOf(mdBlock(q)));
+  const repeats = (t) => shown.some((x) => x.includes(t) || t.includes(x));
+  const paragraphOf = (s, labels) => {
+    const all = pagesOf(s).flatMap((type) => fileOf(s, type).flatMap((b) => (b.paragraphs || []).map((p) => ({ type, n: p.n, label: String(p.subsection || '').replace(/^\d+(?:\.\d+)?\s*—\s*/, '').trim().toLowerCase(), text: p.text, plain: textOf(mdBlock(p.text)) }))));
+    for (const label of labels) {
+      const hit = all.filter((p) => p.label === label).sort((x, y) => x.n - y.n).find((p) => !BANNED.test(p.plain) && !repeats(p.plain));
+      if (hit) return hit;
+    }
+    return null;
+  };
+  return sections.map(({ heading, labels, sentences }) => ({
+    heading,
+    sentences: sentences.filter(Boolean),
+    quotes: [A, B].flatMap((s) => {
+      const hit = paragraphOf(s, labels);
+      if (!hit) return [];
+      shown.push(hit.plain);
+      return [{ side: s, text: hit.text, type: hit.type }];
+    }),
+  })).filter((w) => w.sentences.length || w.quotes.length);
+}
+
 export function renderComparePage(pair, ctx) {
   const A = pair.a;
   const B = pair.b;
@@ -1719,9 +1851,11 @@ export function renderComparePage(pair, ctx) {
 <div class="tw"><table><thead><tr><th scope="col"></th><th>Leads</th><th>The lead is</th></tr></thead><tbody>${pair.rows
     .map((r) => `<tr><td>${esc(r.label)}</td><td${r.leader ? ' class="lead"' : ''}>${r.leader ? esc(nameOf[r.leader]) : '—'}</td><td>${esc(FORECAST_ROW.test(r.label) ? 'The higher weighted return' : LEAD_WORDS[r.better] || '')}</td></tr>`)
     .join('')}</tbody></table></div></figure>`;
-  const quote = (s) => (s.quote
-    ? `<blockquote class="quote">${mdBlock(s.quote)}<p class="who">${esc(s.name)} (${esc(s.ticker)}), from our memo of ${esc(humanDay(s.memo_date))}${exists(pagePath(s.slug, 'stock')) ? ` · <a href="${pagePath(s.slug, 'stock')}">${esc(UI.en.sibling('stock', s.name))}</a>` : ''}</p></blockquote>`
+  const quote = (s, text = s.quote, type = 'stock') => (text
+    ? `<blockquote class="quote">${mdBlock(text)}<p class="who">${esc(s.name)} (${esc(s.ticker)}), from our memo of ${esc(humanDay(s.memo_date))}${exists(pagePath(s.slug, type)) ? ` · <a href="${pagePath(s.slug, type)}">${esc(UI.en.sibling(type, s.name))}</a>` : ''}</p></blockquote>`
     : '');
+  const written = ctx ? compareWritten(pair, ctx) : [];
+  const writtenHtml = written.map((w) => [`<h2>${esc(w.heading)}</h2>`, ...(w.sentences.length ? [`<p>${esc(w.sentences.join(' '))}</p>`] : []), ...w.quotes.map((q) => quote(q.side, q.text, q.type))].join('\n')).join('\n');
   const ctas = `<div class="ctarow"><a class="btn" data-cta="compare-a" href="${esc(ctaOf(A))}">${esc(UI.en.readFull(A.name))}</a><a class="btn" data-cta="compare-b" href="${esc(ctaOf(B))}">${esc(UI.en.readFull(B.name))}</a><span class="sub">${esc(FREE_LINE)}</span></div>`;
   const pagesOf = (s) => TYPES.filter((t) => exists(pagePath(s.slug, t))).map((t) => `<a href="${pagePath(s.slug, t)}">${esc(UI.en.sibling(t, s.name))}</a>`);
   const others = [...(ctx?.compareLinks?.get(A.slug) || []), ...(ctx?.compareLinks?.get(B.slug) || [])]
@@ -1765,13 +1899,14 @@ ${leads}
 <h2>What does each company do?</h2>
 ${quote(A)}
 ${quote(B)}
+${writtenHtml}
 ${ctas.replace(/data-cta="compare-/g, 'data-cta="compare-end-')}
 ${links}
 </article></div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
   return { path, url, type: 'compare', lang: 'en', slug: pair.slug, ticker: `${A.ticker} vs ${B.ticker}`, title, description,
-    lastmod: days[1], alternates: [], html, outLinks, pair, picture, pictureNone: pictured?.none || '',
+    lastmod: days[1], alternates: [], html, outLinks, pair, written, picture, pictureNone: pictured?.none || '',
     withoutPicture: () => renderComparePage(pair, { ...ctx, pictures: false }) };
 }
 
@@ -1811,6 +1946,10 @@ export function gateCompare(built, ctx) {
     for (const n of bare.match(/(?<![\p{L}\d])\d[\d,.]*\d(?![\p{L}])|(?<![\p{L}\d])\d(?![\p{L}\d])/gu) || []) if (n !== year) fails.push(`${name} prints ${n}`);
     const bad = BANNED.exec(value);
     if (bad) fails.push(`${name} uses "${bad[1]}"`);
+  }
+  for (const w of built.written || []) {
+    const bad = BANNED.exec([w.heading, ...w.sentences, ...w.quotes.map((q) => textOf(mdBlock(q.text)))].join(' '));
+    if (bad) fails.push(`the written comparison uses "${bad[1]}"`);
   }
   const bytes = Buffer.byteLength(html, 'utf8');
   if (bytes > MAX_BYTES) fails.push(`${Math.round(bytes / 1024)} KB (at most 100)`);
