@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { buildStockSite, frenchNumber, gatePage, pagePath } from '../scripts/lib/stocks.mjs';
+import { buildStockSite, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -100,7 +100,7 @@ test('a French dividend page titled the way France searches passes the gate (B11
   const { pages, held } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
   assert.ok(!held.some((h) => /dividende/.test(JSON.stringify(h))), JSON.stringify(held));
   const div = pages.find((p) => p.path === '/fr/stocks/td-to/dividende/');
-  assert.match(div.html, /<title>Dividende TD 2026 : montant, dates et rendement<\/title>/);
+  assert.match(div.html, /<title>Dividende TD \(TD\.TO\) 2026 : montant, dates et rendement<\/title>/);
   // a title in neither form is still held
   td.translations.fr.pages.dividend.title = 'TD : montant, dates et rendement';
   const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
@@ -114,7 +114,7 @@ test('a German page (S&P 500): its address, hreflang both ways, German words and
   assert.deepEqual(de.map((p) => p.path).sort(), ['/de/aktien/nvda/', '/de/aktien/nvda/dividende/', '/de/aktien/nvda/quartalszahlen/'], JSON.stringify(held));
   const stock = de.find((p) => p.path === '/de/aktien/nvda/');
   assert.match(stock.html, /<html lang="de">/);
-  assert.match(stock.html, /<title>NVIDIA Aktie Prognose 2027–2029<\/title>/);
+  assert.match(stock.html, /<title>NVIDIA \(NVDA\) Aktie Prognose 2027–2029<\/title>/);
   assert.match(stock.html, /hreflang="de" href="https:\/\/blog\.mystockbutler\.com\/de\/aktien\/nvda\/"/);
   assert.match(stock.html, /hreflang="en" href="https:\/\/blog\.mystockbutler\.com\/stocks\/nvda\/"/);
   assert.match(stock.html, /Aktienkurs im Oktober 2029: unsere drei Szenarien/);
@@ -306,12 +306,12 @@ test('the English forecast title carries the years the page holds; any other tit
   const { pages, held } = buildStockSite([short, load('stock-td-to.json')], { today: TODAY });
   assert.deepEqual(held, [], JSON.stringify(held));
   const p = pages.find((b) => b.path === '/stocks/rmd/');
-  assert.equal(p.title, `ResMed stock forecast ${years[0]}–${years[years.length - 1]}`);
-  assert.match(p.html, new RegExp(`<title>ResMed stock forecast ${years[0]}–${years[years.length - 1]}</title>`));
+  assert.equal(p.title, `ResMed (RMD) stock forecast ${years[0]}–${years[years.length - 1]}`);
+  assert.match(p.html, new RegExp(`<title>ResMed \\(RMD\\) stock forecast ${years[0]}–${years[years.length - 1]}</title>`));
   const long = clone(rmd);
   long.pages.stock.title = 'ResMed stock forecast: patients and cash';
   const kept = buildStockSite([long, load('stock-td-to.json')], { today: TODAY }).pages.find((b) => b.path === '/stocks/rmd/');
-  assert.equal(kept.title, 'ResMed stock forecast: patients and cash');
+  assert.equal(kept.title, 'ResMed (RMD) stock forecast: patients and cash');
 });
 
 test('French numbers the blog draws are written the French way (B114, the owner 2026-10-25)', () => {
@@ -379,7 +379,7 @@ test('Traditional Chinese pages (B114 row 2): /zh/stocks/<slug>/, lang zh-Hant, 
     assert.match(p.html, /<html lang="zh-Hant">/);
     assert.match(p.html, /<link rel="alternate" hreflang="zh-Hant" href="https:\/\/blog\.mystockbutler\.com\/zh\/stocks\/nvda\//);
   }
-  assert.match(zh.find((p) => p.path === '/zh/stocks/nvda/').html, /<title>NVIDIA 股票分析：2026年10月預測、現金流與估值<\/title>/);
+  assert.match(zh.find((p) => p.path === '/zh/stocks/nvda/').html, /<title>NVIDIA \(NVDA\) 股票分析：2026年10月預測、現金流與估值<\/title>/);
   const hub = hubs.find((h) => h.path === '/zh/stocks/');
   assert.equal(hub.title, '美股分析：1 家美國大公司的財報數字');
   assert.ok(hub.html.includes('href="/zh/stocks/nvda/"'));
@@ -440,28 +440,29 @@ test('plan 2-3: a checked, announced date puts the results date in the English e
   const built = datedBuild(load('stock-nvda-de.json'), '2026-10-29', { nvda: { date: '2026-11-18', source_url: 'https://investor.nvidia.com/' } });
   assert.equal(built.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(built.held));   // the gate passes it
   const t = titlesOf(nvdaPage(built));
-  const want = 'NVIDIA earnings date: November 18, 2026 — what to watch';
-  assert.deepEqual(t, { title: want, og: want, tw: want, h1: want, ld: want });
+  const want = 'NVIDIA (NVDA) earnings date: November 18, 2026 — what to watch';
+  const h1 = 'NVIDIA earnings date: November 18, 2026 — what to watch';
+  assert.deepEqual(t, { title: want, og: want, tw: want, h1, ld: h1 });
   assert.deepEqual(built.report.earningsTitles.date, [{ path: '/stocks/nvda/earnings/', title: want }]);
   // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want);
-  assert.equal(titlesOf(built.pages.find((p) => p.path === '/stocks/nvda/')).title, load('stock-nvda-de.json').pages.stock.title + ' 2027–2029');
-  assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA Quartalszahlen am 18. November 2026');
+  assert.equal(titlesOf(built.pages.find((p) => p.path === '/stocks/nvda/')).title, 'NVIDIA (NVDA) stock forecast 2027–2029');
+  assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA (NVDA) Quartalszahlen am 18. November 2026');
 });
 
-test('plan 2-3: a long name drops "what to watch", then the date form; never more than 60 characters', () => {
+test('plan 2-3: a long name drops "what to watch", then the date form; never more than 60 characters before the ticker', () => {
   const amat = clone(load('stock-nvda-de.json'));
   amat.short_name = 'Applied Materials';
   const two = nvdaPage(datedBuild(amat, '2026-10-29', { nvda: { date: '2026-11-18' } }));
-  assert.equal(titlesOf(two).title, 'Applied Materials earnings date: November 18, 2026');
+  assert.equal(titlesOf(two).title, 'Applied Materials (NVDA) earnings date: November 18, 2026');
   const huge = clone(load('stock-nvda-de.json'));
   huge.short_name = 'Applied Materials and Semiconductor Holdings';
   const kept = nvdaPage(datedBuild(huge, '2026-10-29', { nvda: { date: '2026-11-18' } }));
-  assert.equal(titlesOf(kept).title, 'NVIDIA earnings: guidance and what to watch');
+  assert.equal(titlesOf(kept).title, 'NVIDIA earnings: guidance and what to watch (NVDA)');
 });
 
 test('plan 2-3: no date in the title when the date is past, disagrees with the data, or is not on the checked list', () => {
-  const model = 'NVIDIA earnings: guidance and what to watch';
+  const model = 'NVIDIA (NVDA) earnings: guidance and what to watch';
   const row = { nvda: { date: '2026-11-18' } };
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-19', row))).title, model);         // past
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', { nvda: { date: '2026-11-17' } }))).title, model);   // moved
@@ -474,17 +475,63 @@ test('plan 2-3: no date in the title when the date is past, disagrees with the d
 
 test('plan 2-3: a German earnings title loses its date once the day has passed (the chain\'s own short form)', () => {
   const before = datedBuild(load('stock-nvda-de.json'), '2026-11-18', {});
-  assert.equal(titlesOf(nvdaPage(before, 'de')).title, 'NVIDIA Quartalszahlen am 18. November 2026');
+  assert.equal(titlesOf(nvdaPage(before, 'de')).title, 'NVIDIA (NVDA) Quartalszahlen am 18. November 2026');
   assert.deepEqual(before.report.earningsTitles.passed, []);
   const after = datedBuild(load('stock-nvda-de.json'), '2026-11-19', {});
   assert.equal(after.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(after.held));
   const t = titlesOf(nvdaPage(after, 'de'));
-  assert.deepEqual(t, { title: 'NVIDIA Quartalszahlen', og: 'NVIDIA Quartalszahlen', tw: 'NVIDIA Quartalszahlen', h1: 'NVIDIA Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
-  assert.deepEqual(after.report.earningsTitles.passed, [{ path: '/de/aktien/nvda/quartalszahlen/', title: 'NVIDIA Quartalszahlen' }]);
+  assert.deepEqual(t, { title: 'NVIDIA (NVDA) Quartalszahlen', og: 'NVIDIA (NVDA) Quartalszahlen', tw: 'NVIDIA (NVDA) Quartalszahlen', h1: 'NVIDIA Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
+  assert.deepEqual(after.report.earningsTitles.passed, [{ path: '/de/aktien/nvda/quartalszahlen/', title: 'NVIDIA (NVDA) Quartalszahlen' }]);
   // a German title already without a date is left as it is
   const plain = clone(load('stock-nvda-de.json'));
   plain.translations.de.pages.earnings.title = 'NVIDIA Quartalszahlen';
-  assert.equal(titlesOf(nvdaPage(datedBuild(plain, '2026-11-19', {}), 'de')).title, 'NVIDIA Quartalszahlen');
+  assert.equal(titlesOf(nvdaPage(datedBuild(plain, '2026-11-19', {}), 'de')).title, 'NVIDIA (NVDA) Quartalszahlen');
+});
+
+// SEO FIX LIST ROW 4 (owner 2026-11-01): 'NVIDIA (NVDA) stock forecast 2027–2029' on stock, dividend and earnings pages, in every language.
+test('row 4: every stock, dividend and earnings title in the build has the ticker exactly once, in every language', () => {
+  const unesc = (t) => String(t).replace(/&amp;/g, '&').replace(/&#39;/g, "'");
+  const seen = new Set();
+  for (const main of ['stock-ko.json', 'stock-td-to-fr.json', 'stock-nvda-de.json', 'stock-nvda-zh.json']) {
+    const { pages, held } = buildStockSite([load(main), load('stock-rmd.json'), load('stock-td-to.json')].filter((c, i, all) => all.findIndex((x) => x.slug === c.slug) === i), { today: TODAY });
+    assert.deepEqual(held, [], JSON.stringify(held));
+    for (const p of pages) {
+      seen.add(`${p.type}/${p.lang}`);
+      const t = titlesOf(p);
+      assert.equal(tickerCount(p.title, p.ticker), 1, `${p.path}: ${p.title}`);
+      assert.equal(unesc(t.title), p.title, p.path);
+      assert.equal(t.og, t.title, p.path);
+      assert.equal(t.tw, t.title, p.path);
+      assert.ok(!unesc(t.h1).includes(`(${p.ticker})`), `the h1 stays as it was: ${p.path}`);
+    }
+  }
+  for (const k of ['stock', 'dividend', 'earnings'].flatMap((x) => ['en', 'fr', 'de', 'zh-HK'].map((l) => `${x}/${l}`))) assert.ok(seen.has(k), `no ${k} page in the test`);
+});
+
+test('row 4: the ticker goes right after the short name, in the form the page prints; a title that holds it stays', () => {
+  for (const [title, short_name, ticker, want] of [
+    ['RBC stock forecast 2027–2029', 'RBC', 'RY.TO', 'RBC (RY.TO) stock forecast 2027–2029'],
+    ['Tencent 股票分析：2026年10月預測', 'Tencent', '0700.HK', 'Tencent (0700.HK) 股票分析：2026年10月預測'],
+    ['BP dividend', 'BP', 'BP.L', 'BP (BP.L) dividend'],
+    ['Berkshire Hathaway earnings date', 'Berkshire Hathaway', 'BRK-B', 'Berkshire Hathaway (BRK-B) earnings date'],
+    ['AT&T earnings date', 'AT&T', 'T', 'AT&T (T) earnings date'],
+    ['Action TD : prévisions et valeur — octobre 2026', 'TD', 'TD.TO', 'Action TD (TD.TO) : prévisions et valeur — octobre 2026'],
+    ['Dividende Engie 2026 : montant, historique et rendement', 'Engie', 'ENGI.PA', 'Dividende Engie (ENGI.PA) 2026 : montant, historique et rendement'],
+    ['ADM stock forecast 2027–2029', 'ADM', 'ADM', 'ADM stock forecast 2027–2029'],
+    ['IBM: guidance', 'IBM', 'IBM', 'IBM: guidance'],
+    ['GE Aerospace dividend', 'GE Aerospace', 'GE', 'GE Aerospace dividend'],
+    ['Merck stock forecast 2027–2029 (MRK.DE)', 'Merck', 'MRK.DE', 'Merck stock forecast 2027–2029 (MRK.DE)'],
+  ]) assert.equal(titleWithTicker(title, { short_name, ticker }), want);
+});
+
+test('row 4: the ticker takes no date out of a title and holds no page back, though it runs the title past 60 characters', () => {
+  const long = clone(load('stock-nvda-de.json'));
+  long.short_name = 'Take-Two Interactive Group';   // 'x earnings date: November 18, 2026' is 59 characters before the ticker
+  const built = datedBuild(long, '2026-10-29', { nvda: { date: '2026-11-18' } });
+  const p = nvdaPage(built);
+  assert.equal(p.title, 'Take-Two Interactive Group (NVDA) earnings date: November 18, 2026');
+  assert.ok(p.title.length > 60);
+  assert.ok(!built.held.some((h) => h.path === p.path), JSON.stringify(built.held));
 });
 
 test('plan 2-3: the checked list file — rows need a slug and a YYYY-MM-DD date; a missing file is off; the committed rows cite their source', async () => {

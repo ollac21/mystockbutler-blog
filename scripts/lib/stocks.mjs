@@ -270,6 +270,22 @@ export function earningsDateTitle(data, lang, day, allow = {}) {
   return title ? [title, 'date'] : ['', ''];
 }
 
+// THE TICKER IN THE TITLE (SEO fix list row 4, owner 2026-11-01): the page's <title> names the ticker, in the form the page itself
+// prints, right after the company's short name: 'NVIDIA (NVDA) stock forecast 2027–2029'. A title that already holds it as a whole
+// word stays as it is ('ADM stock forecast', 'Merck stock forecast 2027–2029 (MRK)'); 'T' inside 'AT&T' is not the ticker. It is added after every
+// length choice above, which still measure the title without it: a dated title keeps its date, and the words never change.
+export function tickerCount(title, ticker) {
+  const word = String(ticker).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return (String(title).match(new RegExp(`(?<![\\p{L}\\p{N}&.'’-])${word}(?![\\p{L}\\p{N}&'’-])`, 'gu')) || []).length;
+}
+export function titleWithTicker(title, data) {
+  if (tickerCount(title, data.ticker)) return title;
+  const name = shortName(data);
+  const at = name ? title.indexOf(name) : -1;
+  if (at < 0) return `${title} (${data.ticker})`;
+  return `${title.slice(0, at + name.length)} (${data.ticker})${title.slice(at + name.length)}`;
+}
+
 // OUR NAME IN THE ANSWER SENTENCE (owner 2026-10-22 '1 and 2 build'; the three strings approved by the CTO 18:14Z, the colon
 // form): the words in front of the page's opening, built from the memo's month and our own month lists — no model call.
 //   en  "MyStockButler's October 2026 analysis: "
@@ -1169,7 +1185,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const span = !fr && type === 'stock' ? yearsSpan(page0.title, data) : '';
   const withSpan = span ? `${page0.title} ${span}${shared ? ` (${data.ticker})` : ''}` : modelTitle;
   const [dated, datedKind] = type === 'earnings' ? earningsDateTitle(data, lang, ctx.today, ctx.earningsDates) : ['', ''];
-  const page = { ...page0, title: dated || (withSpan.length <= 60 ? withSpan : modelTitle) };
+  const page = { ...page0, title: dated || (withSpan.length <= 60 ? withSpan : modelTitle) };   // the h1 and the Article headline
+  const title = titleWithTicker(page.title, data);   // the <title>, og:title and twitter:title
   const teaserData = fr ? data.translations[lang].teaser : data.teaser;
   const slug = data.slug;
   const path = pagePath(slug, type, lang);
@@ -1290,7 +1307,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     ...(picture ? { image: pictureObject(picture) } : {}),
   };
   const html = shell({
-    title: page.title,
+    title,
     description: page.meta_description,
     canonical: url,
     lang,
@@ -1315,7 +1332,7 @@ ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</
 <div class="bar"><div class="t">${esc(ui.rail(company))}<span>${esc(ui.sticky)}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
-  return { path, url, type, lang, slug, ticker, title: page.title, modelTitle, datedKind, description: page.meta_description, lastmod: isoDay(data.memo_date),
+  return { path, url, type, lang, slug, ticker, title, modelTitle, datedKind, description: page.meta_description, lastmod: isoDay(data.memo_date),
     alternates, html, outLinks, page, data, picture, pictureNone: pictured?.none || '',
     // the same page with the inline chart and the share picture, for a picture that could not be drawn
     withoutPicture: () => renderCompanyPage(data, type, { ...ctx, pictures: false }, lang) };
@@ -1531,7 +1548,9 @@ export function gatePage(built, ctx) {
   const fr = lang !== 'en';                       // a translated page (French or German)
   const title = (/<title>([\s\S]*?)<\/title>/.exec(html) || [])[1] || '';
   const titleText = textOf(title);
-  if (titleText.length > 60) fails.push(`title is ${titleText.length} characters (at most 60)`);
+  // measured without the ticker (row 4): the same pages pass as before, the ticker never holds one back
+  const titleLength = textOf(esc(page.title)).length;
+  if (titleLength > 60) fails.push(`title is ${titleLength} characters (at most 60)`);
   if (fr ? !LANG_CFG[lang].title.test(titleText) : !titleText.toLowerCase().includes(SEARCH_PHRASE[type])) fails.push('title lacks the search phrase');
   const desc = (/<meta name="description" content="([^"]*)"/.exec(html) || [])[1] || '';
   const descText = textOf(desc);
