@@ -270,11 +270,18 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   report.pictures = drawn.report;
   await mkdir(path.join(out, 'stocks', 'assets'), { recursive: true });
   await writeFile(path.join(out, CSS_PATH.slice(1)), STOCKS_CSS + DIVCALC_CSS);
+  // B115: the new stock forecast and earnings pages' stylesheets and script (scripts/assets/page*.css, page.js)
+  const asset = (f) => readFile(new URL(`../assets/${f}`, import.meta.url), 'utf8');
+  const pageCss = await asset('page.css');
+  await writeFile(path.join(out, 'stocks/assets/page.css'), pageCss);
+  await writeFile(path.join(out, 'stocks/assets/page-earnings.css'), pageCss + (await asset('page-earnings.css')));
+  await writeFile(path.join(out, 'stocks/assets/page.js'), await asset('page.js'));
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });
     await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
+    for (const f of p.files || []) await writeFile(path.join(dir, f.name), f.content);   // B115: the page's own charts (SVG)
   }
   const sitemaps = {};
   for (const lang of ['en', 'fr', 'de', 'zh-HK']) {

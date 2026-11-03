@@ -1,0 +1,222 @@
+/* B115 earnings page: the approved mockup's own rules (b115-mock-earnings/extra.css), loaded after page.css. */
+
+/* =====================================================================
+   EARNINGS PAGE additions (everything above is the forecast page's CSS)
+   ===================================================================== */
+.pill{display:inline-flex;align-items:center;padding:4px 10px;border-radius:9999px;background:rgba(19,124,70,.11);color:var(--primary);font:800 15px/1.1 var(--font);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill--dn{background:rgba(14,23,19,.07);color:var(--ink)}
+
+/* ---------- the answer, two halves ---------- */
+.ans2__half+.ans2__half{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.ans2__big{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 10px;margin-top:5px}
+.ans2__day{font:650 15px/1 var(--font);color:var(--muted)}
+.ans2__sub{margin-top:7px;font:450 13.5px/1.4 var(--font);color:var(--muted)}
+.ans2__sub b{font-weight:700;color:var(--body)}
+.ans2__rows{margin-top:4px}
+.ans2__rows li{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:10px;padding:7px 0 6px}
+.ans2__rows li+li{border-top:1px solid var(--rule)}
+.ans2__k{grid-column:1/-1;font:600 13.5px/1.2 var(--font);color:var(--muted)}
+.ans2__v{margin-top:3px;font:900 28px/1 var(--font);letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ans2__v small{margin-left:5px;font:650 15px/1 var(--font);letter-spacing:0;color:var(--muted)}
+.ans2 .pill{align-self:end;margin-bottom:1px}
+
+/* ---------- 6. did it beat its own forecast ---------- */
+.meas{margin-top:22px;padding-top:12px;border-top:2px solid var(--ink)}
+.meas h3{font:800 18px/1.25 var(--font);letter-spacing:-.01em;color:var(--ink)}
+.meas h3 span{display:block;margin-top:2px;font:450 13.5px/1.35 var(--font);letter-spacing:0;color:var(--muted)}
+.meas__sub{margin-top:3px;font:450 13.5px/1.35 var(--font);color:var(--muted)}
+.dots{display:flex;gap:7px;margin-top:12px}
+.dots li{flex:none;width:24px;height:24px;border-radius:9999px;background:var(--primary)}
+.dots li.in{background:#fff;box-shadow:inset 0 0 0 3px var(--ink)}
+.dots li.dn{background:var(--bear)}
+.leg{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px;font:450 14px/1.3 var(--font);color:var(--body)}
+.leg li{display:inline-flex;align-items:center;gap:6px}
+.leg i{flex:none;width:10px;height:10px;border-radius:9999px;background:var(--primary)}
+.leg i.in{background:#fff;box-shadow:inset 0 0 0 2px var(--ink)}
+.leg i.dn{background:var(--bear)}
+.leg b{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+.rng{position:relative;margin-top:22px;height:62px}
+.rng__axis{position:absolute;left:0;right:0;top:27px;height:2px;background:#D7DDD9;border-radius:2px}
+.rng__band{position:absolute;top:18px;height:20px;border-radius:6px;background:rgba(19,124,70,.2);border:1.5px solid rgba(19,124,70,.55)}
+.rng__dot{position:absolute;top:19px;width:18px;height:18px;margin-left:-9px;border-radius:9999px;background:var(--ink);box-shadow:0 0 0 3px #fff}
+.rng__tag{position:absolute;top:-4px;transform:translateX(-50%);font:800 14.5px/1 var(--font);color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.rng__tag--r{transform:translateX(-100%)}
+.rng__end{position:absolute;top:44px;transform:translateX(-50%);font:600 13px/1 var(--font);color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.rng__cap{margin-top:2px;font:450 14px/1.45 var(--font);color:var(--body)}
+.rng__cap b{font-weight:700;color:var(--ink)}
+@media (min-width:640px){.beat{display:grid;grid-template-columns:1fr 1fr;column-gap:36px}}
+
+.score{display:flex;align-items:baseline;gap:10px;margin:0 0 8px}
+.score b{font:900 34px/1 var(--font);letter-spacing:-.04em;color:var(--primary);font-variant-numeric:tabular-nums}
+.score span{font:650 15px/1.2 var(--font);color:var(--ink)}
+.score i{font-style:normal;font-weight:450;color:var(--muted)}
+.promise{margin-top:14px;padding-left:12px;border-left:3px solid var(--primary);font:450 15.5px/1.5 var(--font);color:var(--body);max-width:62ch}
+
+/* ---------- 7. guidance cards ---------- */
+.gd{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.gc{grid-column:1/-1}
+.gc{padding:14px 16px 12px;background:var(--card);border-radius:16px;border:1px solid rgba(17,24,20,.06);box-shadow:var(--shadow)}
+.gc__l{font:650 13.5px/1.25 var(--font);color:var(--muted)}
+.gc__n{display:block;margin-top:5px;font:900 30px/1 var(--font);letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.gc__n small{margin-left:5px;font:650 15px/1 var(--font);letter-spacing:0;color:var(--muted)}
+.gc__t{margin-top:7px;font:450 13.5px/1.4 var(--font);color:var(--body)}
+.gc__t b{font-weight:700;color:var(--ink)}
+.gc .rng{margin-top:26px;height:54px}
+.gc .rng__axis{top:30px}
+.gc .rng__band{top:21px;height:20px;background:rgba(19,124,70,.28)}
+.gc .rng__dot{top:24px;width:14px;height:14px;margin-left:-7px;background:#8A988F}
+.gc .rng__tag{top:2px;font-size:12.5px;font-weight:650;color:var(--muted)}
+.gc .rng__end{top:44px;font-size:12px}
+.gline,.gline:first-of-type{display:flex;flex-direction:column-reverse;justify-content:center;gap:4px;padding:12px 14px;background:var(--card);border-radius:16px;border:1px solid rgba(17,24,20,.06);box-shadow:var(--shadow)}
+.gline span{font:650 13px/1.25 var(--font);color:var(--muted)}
+.gline b{font:900 24px/1 var(--font);letter-spacing:-.04em;color:var(--ink);text-align:left;font-variant-numeric:tabular-nums}
+@media (min-width:640px){.gd{grid-template-columns:1fr 1fr}.gc{grid-column:auto}}
+@media (min-width:1024px){
+  .gd{grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;margin-top:24px}
+  .gline b{font-size:26px}
+}
+
+/* ---------- 9. revenue chart + growth pair ---------- */
+.growth--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.growth--2 div{padding-top:10px;border-top:2px solid var(--ink)}
+.growth--2 b.dn{color:var(--ink)}
+.growth--2 em{display:block;margin-top:3px;font:450 12.5px/1.35 var(--font);font-style:normal;color:var(--muted)}
+
+/* ---------- 11. what to watch: a timeline ---------- */
+.tl{margin-top:16px}
+.tl li{position:relative;padding:0 0 18px 28px}
+.tl li::before{content:"";position:absolute;left:5px;top:6px;width:12px;height:12px;border-radius:9999px;background:var(--primary);box-shadow:0 0 0 4px var(--paper)}
+.tl li::after{content:"";position:absolute;left:10px;top:20px;bottom:0;width:2px;background:var(--rule)}
+.tl li:last-child{padding-bottom:0}
+.tl li:last-child::after{display:none}
+.tl h3{font:750 16px/1.3 var(--font);color:var(--ink)}
+.tl h3 span{font-weight:450;font-size:13.5px;color:var(--muted);margin-left:6px}
+.tl p{margin-top:3px;font:450 16px/1.55 var(--font);color:var(--body)}
+
+/* ---------- the answer card on tablet and desktop: side by side ---------- */
+@media (min-width:640px){
+  .ans2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);column-gap:0}
+  .ans2__half+.ans2__half{margin-top:0;padding-top:0;border-top:0;border-left:1px solid var(--rule);padding-left:26px;margin-left:26px}
+  .ans2__v{font-size:30px}
+}
+@media (min-width:1024px){
+  .ans2__v{font-size:30px}
+  .ans2__v small{font-size:14px;margin-left:4px}
+  .ans2 .answer__n{font-size:40px}
+  .ans2__day{font-size:16px}
+  .ans2__sub{font-size:14px}
+  .ans2__k{font-size:14px}
+  .gc__n{font-size:26px}
+}
+
+.mf-name--4{left:calc(var(--u) * 112)}
+.tl h3 span{display:block;margin:2px 0 0}
+
+
+/* =====================================================================
+   DESKTOP (owner's correction): the landing's pattern. Two columns in the first screen
+   (left: title, answer, button; right: the report frame), then a 1,140 px container
+   with each section's text paired with its visual. Phone and tablet are the one-column layout.
+   ===================================================================== */
+@media (min-width:1024px){
+  .hide-lg{display:none}
+  .site__in{max-width:1140px;padding:0 32px}
+  .page{max-width:1140px;padding:0 32px;display:grid;grid-template-columns:minmax(0,1fr) 440px;column-gap:56px;align-content:start}
+  .page>*{grid-column:1/-1;min-width:0}
+  .page>.top{grid-column:1;grid-row:1}
+  .page>.answer{grid-column:1;grid-row:2}
+  .page>.cta1{grid-column:1;grid-row:3}
+  .page>.inside{grid-column:2;grid-row:1/span 3;align-self:start;margin-top:0;padding-top:20px}
+  .inside>h2{font-size:21px;line-height:1.25}
+  .inside__sub{margin-top:4px;font-size:13px}
+  .mframe{max-width:none;margin-top:12px}
+  .sec{padding-top:80px}
+  .page>.sec:first-of-type{padding-top:72px}
+  .sec p,.lead,.after{max-width:68ch}
+  .sec>h2{grid-column:1/-1;max-width:none}
+  .sec--beat,.sec--lastq{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  .sec--beat>.score{grid-column:1;grid-row:2;margin-bottom:10px}
+  .sec--beat>.score b{font-size:40px}
+  .sec--beat>.lead{grid-column:1;grid-row:3}
+  .sec--beat>.after{grid-column:1;grid-row:4;margin-top:14px}
+  .sec--beat>.promise{grid-column:1;grid-row:5;margin-top:14px;font-size:16px}
+  .sec--beat>.fine{grid-column:1;grid-row:6}
+  .sec--beat>.beat{grid-column:2;grid-row:2/span 5;margin-top:-22px}
+  .sec--beat .meas{margin-top:22px}
+  .sec--beat>.bridge{grid-column:1;grid-row:7}
+  .sec--lastq{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+  .sec--lastq>.lead{grid-column:1;grid-row:2}
+  .sec--lastq>.growth{grid-column:1;grid-row:3;margin-top:22px}
+  .sec--lastq>.bridge{grid-column:1;grid-row:4;margin-top:22px}
+  .sec--lastq>.fig{grid-column:2;grid-row:2/span 3;margin-top:4px!important}
+  .sec--guide>.gd{margin-top:24px}
+  .sec .bridge{max-width:560px}
+  .sec--watch .tl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:36px;margin-top:26px}
+  .sec--watch .tl li{padding:30px 0 0 0}
+  .sec--watch .tl li::before{left:0;top:2px}
+  .sec--watch .tl li::after{left:12px;right:-36px;top:7px;bottom:auto;width:auto;height:2px}
+  .sec--watch .tl li:last-child::after{display:none}
+  .sec--watch .tl li::before{box-shadow:0 0 0 5px var(--paper)}
+  .qa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px}
+  .qa>h2{grid-column:1/-1}
+  .qa__i,.qa__i:first-child{margin-top:0;padding-bottom:26px}
+  .close{margin:96px 0 0;padding:56px 64px 48px;border-radius:22px}
+  .close__in{max-width:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:56px;align-items:start}
+  .close__in>h2{grid-column:1;grid-row:1/span 2}
+  .close__in>p{grid-column:2;margin-top:0}
+  .close__in>p+p{margin-top:12px}
+  .close__in>.btn,.close__in>.free{grid-column:1}
+  .close__in>.foot{grid-column:1/-1}
+  .links h2{margin-bottom:22px}
+}
+@media (min-width:1280px){
+  .page{column-gap:64px;grid-template-columns:minmax(0,1fr) 452px}
+}
+.qa>h2+.qa__i{margin-top:0}
+
+/* =====================================================================
+   PHONE AND TABLET: tighter (round 7). The desktop block above is untouched.
+   ===================================================================== */
+@media (max-width:1023px){
+  .sec{padding-top:34px}
+  .sec>h2{font-size:22px;margin-bottom:9px}
+  .lead{font-size:16.5px;line-height:1.5}
+  .after{margin-top:12px;font-size:16px;line-height:1.5}
+  .inside{margin-top:14px}
+  .inside>h2{font-size:22px}
+  .inside__sub{margin-top:3px}
+  .mframe{margin-top:12px}
+  .cta1{margin-top:10px}
+  .textlink{padding:5px 4px}
+  .ans2__rows li{padding:5px 0 4px}
+  .answer{padding:13px 18px 9px}
+  .free{margin-top:6px}
+  .meas{margin-top:14px;padding-top:10px}
+  .meas h3{font-size:17px}
+  .dots{margin-top:9px;gap:6px}
+  .dots li{width:22px;height:22px}
+  .leg{margin-top:7px;font-size:13.5px}
+  .rng{margin-top:16px;height:58px}
+  .gc{padding:12px 14px 10px}
+  .gc__n{font-size:28px;margin-top:3px}
+  .gc .rng{margin-top:16px;height:56px}
+  .gc__t{margin-top:4px}
+  .fig{margin-top:12px!important}
+  .fig figcaption{margin-top:6px}
+  .growth--2{margin-top:14px}
+  .growth--2 b{font-size:24px}
+  .growth--2 div{padding-top:6px}
+  .growth--2 span{margin-top:3px}
+  .bridge{margin-top:16px;padding:10px 14px}
+  .tl{margin-top:12px}
+  .tl li{padding-bottom:12px}
+  .tl p{font-size:15.5px;line-height:1.5}
+  .qa__i{margin-top:18px}
+  .qa h3{font-size:17px}
+  .qa p{margin-top:4px;font-size:16px;line-height:1.5}
+  .links h3{margin:14px 0 6px}
+  .chips{gap:6px}
+  .chips a{min-height:38px;padding:0 14px;font-size:14px}
+  .close{margin-top:34px;padding:28px 20px 84px}
+  .links.sec{padding-top:30px}
+}

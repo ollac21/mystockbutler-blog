@@ -1,0 +1,1097 @@
+// B115 (owner 2026-11-03 "Wire everything and publish"): the new stock forecast and earnings pages, drawn from the approved
+// mockups (b115-mock2/tsm.html, its words COPY.md; b115-mock-earnings/amzn-earnings.html, its table EARNINGS-TABLE.md).
+// Everything about a company comes from its data file (the chain's public-pages file): the report's own paragraphs, its tables,
+// its forecast, its counts. The words written here are the page's fixed words (WORDS, per language) filled with those numbers;
+// a part whose data is missing is left out with its heading, never replaced by a sentence of ours.
+//
+// The charts are SVG files drawn here from the same numbers and written next to the page (files[]); the share pictures (webp/png)
+// stay the og:image, the Article image and the image sitemap's entry, as before.
+
+import { Marked } from 'marked';
+import { esc } from './layout.mjs';
+
+const md = new Marked({ gfm: true });
+export const PAGE_CSS_PATH = '/stocks/assets/page.css';
+export const PAGE_JS_PATH = '/stocks/assets/page.js';
+export const FREE_DAYS = 90;           // the app's rule: a new account's free report, while the report is under 90 days old
+
+const nb = (t) => String(t).replace(/ %/g, ' %');
+const chev = '<svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+const chevOpen = chev.replace('class="chev"', 'class="chev chev--open"');
+const lockSvg = '<svg class="lk" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+const bridgeLock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// THE PAGE'S FIXED WORDS (COPY.md rows 1-45 and EARNINGS-TABLE.md), per language. German and Chinese carry their English meaning
+// in a comment (the owner reads English and French; reports/drafts/zh-ui-words.md is the precedent).
+// ---------------------------------------------------------------------------------------------------------------------------
+export const WORDS = {
+  en: {
+    ready: (n) => `${n} reports ready`, now: ' now', latest: 'Latest:', stripAria: 'Reports ready now', tapeAria: 'Companies with a report',
+    ago: { now: 'just now', min: '{n} minutes ago', hour1: '1 hour ago', hour: '{n} hours ago' },
+    results: 'Results this week', headerBtn: 'One report free', home: 'MyStockButler home',
+    byline: (by, date, exch) => [by, `Report of ${date}`, exch], how: 'How this report is made',
+    free: 'New accounts get one company\'s ready report free. No card.',
+    btnFree: (c) => (c.length > 14 ? 'Read the full report free' : `Read ${c}'s full report free`),
+    btnOld: (c) => (c.length > 14 ? 'Read the full report' : `Read ${c}'s full report`),
+    orFirst: 'Or read the first page, no account ▸',
+    size: (n, w, s) => `Executive summary + ${n} chapters · ${w} words · ${s} sources`,
+    insideStock: (c) => `What does ${c} do? The first page of our report`,
+    insideEarn: (c) => `What does our ${c} report say?`,
+    insideSub: (d) => `Report of ${d} · open to read, no account`,
+    updated: (d) => `Updated ${d}`, expand: 'Expand', keepFirst: 'Keep reading the first page ▸',
+    openAria: (c) => `Open the first page of ${c}'s report`, expandAria: (c) => `Expand ${c}'s report`,
+    execSummary: 'Executive Summary',
+    // the answer box (rows 5-10)
+    ansH: (c, t) => `What is the ${c} (${t}) stock forecast?`, ansLabel: (c) => `Our forecast for ${c}`, by: (m) => `by ${m}`,
+    from: (p, d, a, b) => `From ${p} at the ${d} close, that is ${a} and ${b}, dividends included.`,
+    ret: (pct, gain, year, first) => `${first ? 'a ' : ''}${pct} ${gain ? 'gain' : 'loss'} by ${year}`, retSame: (pct, year) => `${pct} by ${year}`,
+    blends: (m, unit) => `It blends three cases for ${m}, ${unit}:`, per: (cur, u) => `${cur} per ${u}`,
+    unitShare: 'share', unitAds: 'ADS', unitAdsFirst: (ex) => `ADS, the share as traded on the ${ex}`,
+    chance: (p) => `${p} chance`,
+    own: (c) => `Our own forecast, built from ${c}'s filings. It is not an average of analysts' price targets, so it can differ from them.`,
+    casesAria: (m) => `The three cases for ${m}, with their chances`,
+    // key numbers (row 18)
+    statsH: (c, t) => `${c} (${t}) key numbers`,
+    meanMv: 'Market value is what all the shares are worth together.', meanPe: 'P/E, price to profit, is how many years of expected profit the price equals.',
+    meanDy: 'Dividend yield is a year of dividends as a share of the price.', meanPb: 'Price to book is what buyers pay for each unit of the company\'s net worth on its books.',
+    tMv: 'market value', tPe: 'P/E on the profit our report expects over the next 12 months', tPeL: 'P/E on the profit of the last 12 months', tPb: 'price to book value',
+    tDy: 'dividend yield', tNext: 'next results, expected', tRev: (q, g) => `revenue in the quarter to ${q}${g ? `, ${g} on a year earlier` : ''}`,
+    statsSrc: (d) => `Prices and ratios: our report, at the ${d} close. Revenue: the company's own figures.`,
+    statsSrcNoRev: (d) => `Prices and ratios: our report, at the ${d} close.`,
+    // forecast (rows 20-22)
+    figCap: (cur, unit, price, d) => `Our report's three cases, ${cur} per ${unit}, dividends included. The dotted line is the ${price} close of ${d}.`,
+    figAlt: (c, t, m, bear, base, bull) => `${c} (${t}) share price scenarios for ${m}: bear ${bear}, base ${base}, bull ${bull}`,
+    br8: 'Why these three prices, and what each case assumes', br7: 'What could change the forecast next', br6: 'The full valuation, against profit, cash and rivals',
+    br6bank: 'The full valuation, against profit, book value and rivals', br5: 'The years and quarters behind these figures',
+    br2: (c, r) => (r.length > 1 ? `How ${c} stands against ${r[0]}, ${r[1]} and the others` : r.length ? `How ${c} stands against ${r[0]}` : `Where ${c} stands in its market`),
+    brChapter: (n, name) => `chapter ${n}, ${name}`, brAct: 'In the full report →',
+    // drivers (row 25)
+    bull: (p) => `Bull case, ${p} chance: if it goes right`, bear: (p) => `Bear case, ${p} chance: if it goes wrong`, nextTest: (d) => `The next test: results expected ${d}`,
+    caseBy: (v, m, r) => `${v} by ${m}, ${r} with dividends.`, guided: (l, per, v, d) => `${l}, ${per}: ${v}, guided on ${d}.`,
+    // valuation (rows 27-31)
+    noCall: 'Our report makes no buy or sell call.',
+    evMean: (neg) => (neg ? 'the price of all its shares plus its debts beyond its cash' : 'the price of all its shares minus the cash it holds beyond its debts'),
+    fcfyMean: 'the cash left in a year after paying for buildings and equipment, as a share of the company\'s value',
+    pbMean: 'what buyers pay for each unit of the bank\'s net worth on its books',
+    cashCap: (cur) => `Real free cash flow, ${cur}: cash from the business, minus spending on buildings and equipment, minus pay in shares to staff.`,
+    fcfCap: (cur) => `Free cash flow, ${cur}: cash from the business, minus spending on buildings and equipment.`,
+    niCap: (cur) => `Net income, ${cur}, the company's own figures.`,
+    million: 'million', billion: 'billion', trillion: 'trillion',
+    // last quarter (rows 32-34)
+    qH: (c) => `${c} earnings: how did the last quarter go?`,
+    revCap: (cur, scale, q, g) => `Revenue by quarter, ${cur} ${scale}, the company's own figures.${g ? ` The quarter to ${q} is up ${g} on a year earlier.` : ''}`,
+    revCapDown: (q, g) => ` The quarter to ${q} is down ${g} on a year earlier.`,
+    revAlt: (c, t, cur, scale, pts, g) => `${c} (${t}) revenue by quarter in ${cur} ${scale}: ${pts}${g ? `, ${g} on a year earlier` : ''}.`,
+    revAxis: (cur, scale) => `${cur} ${scale} of revenue per quarter`,
+    gOp: 'Operating income: profit from the business', gNi: 'Net income: profit after all costs and tax', gEps: (u) => `Earnings per ${u}`,
+    growthAria: (q) => `Quarter to ${q} against a year earlier`,
+    earnLink: (c) => `${c} earnings: the next date and the last eight quarters →`,
+    // questions (rows 35-37)
+    qaH: (c, t) => `Questions about ${c} (${t}) stock`,
+    q5: (c) => `Where will ${c} stock be in 5 years?`,
+    a5: (m, bear, bull, w) => `Our report's forecast goes to ${m}. By then it puts the shares between ${bear} in the bear case and ${bull} in the bull case, and at ${w} with the three cases weighted by their chances. It makes no forecast past ${m}.`,
+    qNext: (c) => `When is ${c}'s next earnings date?`, aNext: (d) => `Results are expected on ${d}.`,
+    qDiv: (c) => `Does ${c} pay a dividend?`, aDiv: (d, y) => `Yes. At the ${d} close, a year of dividends came to ${y} of the share price (our report).`,
+    divLink: (c) => `${c} dividend →`,
+    qRiv: (c) => `Who are ${c}'s competitors?`, aRiv: (c, list) => `Our report compares ${c} with ${list}.`,
+    qAn: 'Why is this forecast different from analysts\' price targets?',
+    aAn: (c) => `Analysts' price targets average the share prices that brokerage analysts expect. Our report builds its own three cases from ${c}'s filings, gives each a chance and counts dividends.`,
+    and: 'and',
+    // links (row 38)
+    moreH: (c, t) => `More on ${c} (${t})`, morePages: (c) => `More ${c} pages`, otherStocks: 'Other stocks', filings: (c) => `${c}'s own filings`,
+    // closing (rows 39-40)
+    closeH: 'This page gives the forecast. The report gives the reasons.', closeHEarn: 'This page gives the results. The report gives the reasons.',
+    closeSize: (n, w, t) => `The full report: an executive summary and ${n} chapters, ${w} words, ${t} tables. Its first page opens here, no account needed.`,
+    closeHow: (c, s) => `How it is made: AI reads ${c}'s filings, writes the report, checks the numbers against them and cites each source, ${s} in this one.`,
+    howWork: 'How we work', corrections: 'Corrections',
+    closeFoot: 'Information only, not investment advice. The forecast gives three cases with their chances; it promises no price. Prices are those of the date shown.',
+    closeFootEarn: (c) => `Information only, not investment advice. The next results date is an expectation until ${c} confirms it. Prices are those of the date shown.`,
+    // phone bar (row 41)
+    barT: (c) => `${c}'s full report`, barS: 'New accounts: one ready report free', readIt: 'Read it',
+    // viewer (rows 43-45)
+    vTitle: (c, d) => `${c}'s report · ${d}`, vContents: 'Contents', vClose: 'Close the report', research: 'MyStockButler Research Team',
+    discT: 'Important investment disclaimer',
+    disc: (t, d, p) => `This article is general information, not investment advice. It is not a recommendation to buy, sell or hold any security and it does not take your personal circumstances into account. MyStockButler and the authors hold no position in ${t}. Analysis date: ${d}. Prices as of ${p}. Figures can be outdated after those dates; verify material facts and consult a qualified adviser before investing.`,
+    lockAll: (n) => `The ${n} chapters are in the full report`, lockAllTeaser: (n) => `The executive summary and ${n} chapters are in the full report`,
+    lockCh: 'Chapter {n}, {label}, is in the full report', lockOne: '{label} is in the full report',
+    lockSize: (w, t, s, c) => `The full report: ${w} words, ${t} tables and ${s} sources, built from ${c}'s filings.`,
+    keepFree: (c) => (c.length > 14 ? 'Keep reading the report free' : `Keep reading ${c}'s report free`),
+    keepOld: (c) => (c.length > 14 ? 'Keep reading the report' : `Keep reading ${c}'s report`),
+    // the earnings page (EARNINGS-TABLE rows 3-15)
+    eAnsH: (c) => `When does ${c} report earnings, and what did it last report?`,
+    eNext: 'Next results', eLast: 'Last results', eExpected: (c) => `Expected, not yet confirmed by ${c}.`, eAnnounced: (c) => `Date announced by ${c}.`,
+    eLastSub: (q) => `The company's own figures for the quarter to ${q}, against a year earlier.`,
+    eLastSubHalf: (q) => `The company's own figures for the six months to ${q}, against a year earlier.`,
+    eSales: 'Revenue', eOp: 'Operating income', eNi: 'Net income', eEps: 'Earnings per share',
+    score: 'Promises kept', ours: '(our report)',
+    above: 'above', inside: 'inside', below: 'below',
+    dotsAria: (m, a, i, b, n) => `${m} against the company's own forecast over the last ${n}: above the range ${a} times, inside ${i} times, below ${b} times`,
+    dotsNote: (n) => `Each dot is one of the last ${n}, against the company's own forecast range, not analysts' estimates.`,
+    guideNote: 'Guidance is management\'s forecast of what it expects to report, usually a range.', given: (d) => `given ${d}`,
+    eQaH: (c) => `Questions about ${c}'s earnings`, eQWhen: (c) => `When does ${c} report earnings?`,
+    eAWhen: (d, ok) => (ok ? `On ${d}, the date the company announced.` : `Expected on ${d}, not yet confirmed by the company.`),
+    eQBeat: (c) => `Did ${c} beat its own forecast?`, eABeat: (m, n, a, i, b) => `Over the last ${n}, its ${m} came in above its own range ${a} times, inside it ${i} times and below it ${b} times (our report).`,
+    eQStock: (c, y) => `Where could ${c} stock be by ${y}?`, eAStock: (w, m, p, d) => `Our forecast is ${w} by ${m}, from ${p} at the ${d} close.`, stockLink: (c) => `${c} stock forecast →`,
+    eDescNext: (c, t, d) => `${c} (${t}) reports next on ${d} (expected).`,
+    eDescLast: (q, v, g, op) => ` Its quarter to ${q}: revenue ${v}${g ? `, ${g}` : ''}${op ? `; operating income ${op}` : ''}.`, eDescTail: ' Guidance and what to watch.',
+    desc: (c, t, w1, m1, w3, m3, div) => `${c} (${t}) stock forecast: ${w1} by ${m1}, ${w3} by ${m3}${div ? ', dividends included' : ''}. Three cases from its filings, not analysts' targets.`,
+    monShort: (m, y) => `${m} ${y}`,
+  },
+  fr: {
+    ready: (n) => `${n} rapports prêts`, now: ' maintenant', latest: 'Dernier :', stripAria: 'Rapports prêts maintenant', tapeAria: 'Sociétés avec un rapport',
+    ago: { now: 'à l’instant', min: 'il y a {n} min', hour1: 'il y a 1 h', hour: 'il y a {n} h' },
+    results: '', headerBtn: 'Un rapport gratuit', home: 'Accueil MyStockButler',
+    byline: (by, date, exch) => [by, `Rapport du ${date}`, exch], how: 'Comment ce rapport est fait',
+    free: 'Les nouveaux comptes reçoivent gratuitement le rapport prêt d’une société. Sans carte.',
+    btnFree: (c) => (c.length > 14 ? 'Lire le rapport complet gratuitement' : `Lire le rapport complet sur ${c}, gratuit`),
+    btnOld: (c) => (c.length > 14 ? 'Lire le rapport complet' : `Lire le rapport complet sur ${c}`),
+    orFirst: 'Ou lire la première page, sans compte ▸',
+    size: (n, w, s) => `Sommaire + ${n} chapitres · ${w} mots · ${s} sources`,
+    insideStock: (c) => `Que fait ${c} ? La première page de notre rapport`,
+    insideEarn: (c) => `Que dit notre rapport sur ${c} ?`,
+    insideSub: (d) => `Rapport du ${d} · ouvert à la lecture, sans compte`,
+    updated: (d) => `Mis à jour le ${d}`, expand: 'Agrandir', keepFirst: 'Continuer la première page ▸',
+    openAria: (c) => `Ouvrir la première page du rapport sur ${c}`, expandAria: (c) => `Agrandir le rapport sur ${c}`,
+    execSummary: 'Sommaire',
+    ansH: (c, t) => `Quelle est la prévision pour l’action ${c} (${t}) ?`, ansLabel: (c) => `Notre prévision pour ${c}`, by: (m) => `d’ici ${m}`,
+    from: (p, d, a, b) => `Depuis ${p} à la clôture du ${d}, c’est ${a} et ${b}, dividendes compris.`,
+    ret: (pct, gain, year, first) => `${first ? 'un ' : ''}${gain ? 'gain' : 'recul'} de ${pct} d’ici ${year}`, retSame: (pct, year) => `${pct} d’ici ${year}`,
+    blends: (m, unit) => `Elle combine trois scénarios pour ${m}, ${unit} :`, per: (cur, u) => `${cur} par ${u}`,
+    unitShare: 'action', unitAds: 'ADS', unitAdsFirst: (ex) => `ADS, l’action telle qu’elle se négocie au ${ex}`,
+    chance: (p) => `${p} de probabilité`,
+    own: (c) => `Notre propre prévision, bâtie à partir des documents de ${c}. Ce n’est pas une moyenne des cours cibles des analystes ; elle peut donc s’en écarter.`,
+    casesAria: (m) => `Les trois scénarios pour ${m}, avec leur probabilité`,
+    statsH: (c, t) => `${c} (${t}) : les chiffres clés`,
+    meanMv: 'La valeur boursière est ce que valent toutes les actions ensemble.', meanPe: 'Le C/B, cours sur bénéfice, dit combien d’années de bénéfice attendu le cours représente.',
+    meanDy: 'Le rendement du dividende est une année de dividendes rapportée au cours.', meanPb: 'Le cours sur valeur comptable est ce que paient les acheteurs pour chaque unité d’avoir net inscrite au bilan.',
+    tMv: 'valeur boursière', tPe: 'C/B sur le bénéfice que notre rapport attend sur 12 mois', tPeL: 'C/B sur le bénéfice des 12 derniers mois', tPb: 'cours sur valeur comptable',
+    tDy: 'rendement du dividende', tNext: 'prochains résultats, attendus', tRev: (q, g) => `revenus du trimestre clos en ${q}${g ? `, ${g} sur un an` : ''}`,
+    statsSrc: (d) => `Cours et ratios : notre rapport, à la clôture du ${d}. Revenus : les chiffres de la société.`,
+    statsSrcNoRev: (d) => `Cours et ratios : notre rapport, à la clôture du ${d}.`,
+    figCap: (cur, unit, price, d) => `Les trois scénarios de notre rapport, ${cur} par ${unit}, dividendes compris. La ligne pointillée est la clôture de ${price} du ${d}.`,
+    figAlt: (c, t, m, bear, base, bull) => `${c} (${t}), scénarios de cours pour ${m} : pessimiste ${bear}, central ${base}, optimiste ${bull}`,
+    br8: 'Pourquoi ces trois cours, et ce que suppose chaque scénario', br7: 'Ce qui pourrait changer la prévision', br6: 'L’évaluation complète, face au bénéfice, à la trésorerie et aux concurrents',
+    br6bank: 'L’évaluation complète, face au bénéfice, à la valeur comptable et aux concurrents', br5: 'Les années et les trimestres derrière ces chiffres',
+    br2: (c, r) => (r.length > 1 ? `Où se situe ${c} face à ${r[0]}, ${r[1]} et les autres` : r.length ? `Où se situe ${c} face à ${r[0]}` : `Où se situe ${c} dans son marché`),
+    brChapter: (n, name) => `chapitre ${n}, ${name}`, brAct: 'Dans le rapport complet →',
+    bull: (p) => `Scénario optimiste, ${p} de probabilité : si tout va bien`, bear: (p) => `Scénario pessimiste, ${p} de probabilité : si ça tourne mal`, nextTest: (d) => `Le prochain test : résultats attendus le ${d}`,
+    caseBy: (v, m, r) => `${v} d’ici ${m}, ${r} avec les dividendes.`, guided: (l, per, v, d) => `${l}, ${per} : ${v}, prévision du ${d}.`,
+    noCall: 'Notre rapport ne donne aucun conseil d’achat ou de vente.',
+    evMean: (neg) => (neg ? 'le prix de toutes ses actions plus ses dettes au-delà de sa trésorerie' : 'le prix de toutes ses actions moins la trésorerie qu’elle détient au-delà de ses dettes'),
+    fcfyMean: 'la trésorerie qui reste en un an après les dépenses en bâtiments et équipements, rapportée à la valeur de la société',
+    pbMean: 'ce que paient les acheteurs pour chaque unité d’avoir net de la banque inscrite au bilan',
+    cashCap: (cur) => `Flux de trésorerie disponible réel, ${cur} : la trésorerie de l’activité, moins les dépenses en bâtiments et équipements, moins la rémunération en actions.`,
+    fcfCap: (cur) => `Flux de trésorerie disponible, ${cur} : la trésorerie de l’activité, moins les dépenses en bâtiments et équipements.`,
+    niCap: (cur) => `Bénéfice net, ${cur}, les chiffres de la société.`,
+    million: 'millions', billion: 'milliards', trillion: 'billions',
+    qH: (c) => `Résultats de ${c} : comment s’est passé le dernier trimestre ?`,
+    revCap: (cur, scale, q, g) => `Revenus par trimestre, ${scale} de ${cur}, les chiffres de la société.${g ? ` Le trimestre clos en ${q} progresse de ${g} sur un an.` : ''}`,
+    revCapDown: (q, g) => ` Le trimestre clos en ${q} recule de ${g} sur un an.`,
+    revAlt: (c, t, cur, scale, pts, g) => `${c} (${t}), revenus par trimestre en ${scale} de ${cur} : ${pts}${g ? `, ${g} sur un an` : ''}.`,
+    revAxis: (cur, scale) => `Revenus par trimestre, ${scale} de ${cur}`,
+    gOp: 'Résultat d’exploitation : le bénéfice de l’activité', gNi: 'Bénéfice net : après tous les coûts et l’impôt', gEps: (u) => `Bénéfice par ${u}`,
+    growthAria: (q) => `Trimestre clos en ${q} face à un an plus tôt`,
+    earnLink: (c) => `Résultats de ${c} : la prochaine date et les huit derniers trimestres →`,
+    qaH: (c, t) => `Questions sur l’action ${c} (${t})`,
+    q5: (c) => `Où sera l’action ${c} dans 5 ans ?`,
+    a5: (m, bear, bull, w) => `La prévision de notre rapport va jusqu’à ${m}. Elle situe alors l’action entre ${bear} dans le scénario pessimiste et ${bull} dans le scénario optimiste, et à ${w} avec les trois scénarios pondérés par leur probabilité. Elle ne prévoit rien au-delà de ${m}.`,
+    qNext: (c) => `Quand ${c} publie-t-elle ses prochains résultats ?`, aNext: (d) => `Les résultats sont attendus le ${d}.`,
+    qDiv: (c) => `${c} verse-t-elle un dividende ?`, aDiv: (d, y) => `Oui. À la clôture du ${d}, une année de dividendes représentait ${y} du cours (notre rapport).`,
+    divLink: (c) => `Dividende de ${c} →`,
+    qRiv: (c) => `Qui sont les concurrents de ${c} ?`, aRiv: (c, list) => `Notre rapport compare ${c} avec ${list}.`,
+    qAn: 'Pourquoi cette prévision diffère-t-elle des cours cibles des analystes ?',
+    aAn: (c) => `Les cours cibles des analystes font la moyenne des cours qu’attendent les analystes des courtiers. Notre rapport bâtit ses trois propres scénarios à partir des documents de ${c}, donne une probabilité à chacun et compte les dividendes.`,
+    and: 'et',
+    moreH: (c, t) => `Plus sur ${c} (${t})`, morePages: (c) => `Autres pages sur ${c}`, otherStocks: 'Autres actions', filings: (c) => `Les documents de ${c}`,
+    closeH: 'Cette page donne la prévision. Le rapport donne les raisons.', closeHEarn: 'Cette page donne les résultats. Le rapport donne les raisons.',
+    closeSize: (n, w, t) => `Le rapport complet : un sommaire et ${n} chapitres, ${w} mots, ${t} tableaux. Sa première page s’ouvre ici, sans compte.`,
+    closeHow: (c, s) => `Comment il est fait : une IA lit les documents de ${c}, rédige le rapport, vérifie les chiffres et cite chaque source, ${s} dans celui-ci.`,
+    howWork: 'Notre méthode', corrections: 'Corrections',
+    closeFoot: 'Information seulement, pas un conseil en placement. La prévision donne trois scénarios avec leur probabilité ; elle ne promet aucun cours. Les cours sont ceux de la date indiquée.',
+    closeFootEarn: (c) => `Information seulement, pas un conseil en placement. La date des prochains résultats reste une attente tant que ${c} ne l’a pas confirmée. Les cours sont ceux de la date indiquée.`,
+    barT: (c) => `Le rapport complet sur ${c}`, barS: 'Nouveaux comptes : un rapport prêt gratuit', readIt: 'Le lire',
+    vTitle: (c, d) => `Rapport sur ${c} · ${d}`, vContents: 'Sommaire', vClose: 'Fermer le rapport', research: 'L’équipe de recherche MyStockButler',
+    discT: 'Avertissement important',
+    disc: (t, d, p) => `Cet article est une information générale, pas un conseil en placement. Ce n’est pas une recommandation d’acheter, de vendre ou de garder un titre, et il ne tient pas compte de votre situation personnelle. MyStockButler et les auteurs ne détiennent aucune position sur ${t}. Date de l’analyse : ${d}. Cours au ${p}. Les chiffres peuvent être dépassés après ces dates ; vérifiez les faits importants et consultez un conseiller qualifié avant d’investir.`,
+    lockAll: (n) => `Les ${n} chapitres sont dans le rapport complet`, lockAllTeaser: (n) => `Le sommaire et les ${n} chapitres sont dans le rapport complet`,
+    lockCh: 'Le chapitre {n}, {label}, est dans le rapport complet', lockOne: '{label} : dans le rapport complet',
+    lockSize: (w, t, s, c) => `Le rapport complet : ${w} mots, ${t} tableaux et ${s} sources, bâti à partir des documents de ${c}.`,
+    keepFree: (c) => (c.length > 14 ? 'Continuer le rapport gratuitement' : `Continuer le rapport sur ${c}, gratuit`),
+    keepOld: (c) => (c.length > 14 ? 'Continuer le rapport' : `Continuer le rapport sur ${c}`),
+    eAnsH: (c) => `Quand ${c} publie-t-elle ses résultats, et qu’a-t-elle publié la dernière fois ?`,
+    eNext: 'Prochains résultats', eLast: 'Derniers résultats', eExpected: (c) => `Date attendue, pas encore confirmée par ${c}.`, eAnnounced: (c) => `Date annoncée par ${c}.`,
+    eLastSub: (q) => `Les chiffres de la société pour le trimestre clos en ${q}, face à un an plus tôt.`,
+    eLastSubHalf: (q) => `Les chiffres de la société pour le semestre clos en ${q}, face à un an plus tôt.`,
+    eSales: 'Revenus', eOp: 'Résultat d’exploitation', eNi: 'Bénéfice net', eEps: 'Bénéfice par action',
+    score: 'Promesses tenues', ours: '(notre rapport)',
+    above: 'au-dessus', inside: 'dans la fourchette', below: 'en dessous',
+    dotsAria: (m, a, i, b, n) => `${m} face à la prévision de la société sur les ${n} derniers : au-dessus ${a} fois, dans la fourchette ${i} fois, en dessous ${b} fois`,
+    dotsNote: (n) => `Chaque point est un des ${n} derniers, face à la fourchette prévue par la société, pas aux estimations des analystes.`,
+    guideNote: 'Les prévisions sont ce que la direction s’attend à publier, souvent une fourchette.', given: (d) => `donnée le ${d}`,
+    eQaH: (c) => `Questions sur les résultats de ${c}`, eQWhen: (c) => `Quand ${c} publie-t-elle ses résultats ?`,
+    eAWhen: (d, ok) => (ok ? `Le ${d}, la date annoncée par la société.` : `Attendus le ${d}, pas encore confirmés par la société.`),
+    eQBeat: (c) => `${c} a-t-elle dépassé sa propre prévision ?`, eABeat: (m, n, a, i, b) => `Sur les ${n} derniers, ${m} est arrivé au-dessus de sa fourchette ${a} fois, dedans ${i} fois et en dessous ${b} fois (notre rapport).`,
+    eQStock: (c, y) => `Où pourrait être l’action ${c} en ${y} ?`, eAStock: (w, m, p, d) => `Notre prévision est de ${w} d’ici ${m}, depuis ${p} à la clôture du ${d}.`, stockLink: (c) => `Prévisions pour ${c} →`,
+    eDescNext: (c, t, d) => `${c} (${t}) publie ses prochains résultats le ${d} (attendu).`,
+    eDescLast: (q, v, g, op) => ` Trimestre clos en ${q} : revenus ${v}${g ? `, ${g}` : ''}${op ? ` ; résultat d’exploitation ${op}` : ''}.`, eDescTail: ' Prévisions et points à surveiller.',
+    desc: (c, t, w1, m1, w3, m3, div) => `Prévision pour l’action ${c} (${t}) : ${w1} d’ici ${m1}, ${w3} d’ici ${m3}${div ? ', dividendes compris' : ''}. Trois scénarios tirés de ses documents.`,
+    monShort: (m, y) => `${m} ${y}`,
+  },
+  de: {
+    ready: (n) => `${n} Berichte bereit`, now: ' jetzt', latest: 'Neuester:', stripAria: 'Jetzt bereite Berichte', tapeAria: 'Unternehmen mit Bericht',   // "N reports ready", "now", "Latest:", "Reports ready now", "Companies with a report"
+    ago: { now: 'gerade eben', min: 'vor {n} Min.', hour1: 'vor 1 Std.', hour: 'vor {n} Std.' },                                   // "just now", "N minutes ago", "1 hour ago", "N hours ago"
+    results: '', headerBtn: 'Ein Bericht gratis', home: 'MyStockButler Startseite',                                               // "One report free", "MyStockButler home"
+    byline: (by, date, exch) => [by, `Bericht vom ${date}`, exch], how: 'So entsteht dieser Bericht',                              // "Report of …", "How this report is made"
+    free: 'Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.',                                    // "New accounts get one company's ready report free. No card."
+    btnFree: (c) => (c.length > 14 ? 'Den vollständigen Bericht gratis lesen' : `Den vollständigen ${c}-Bericht gratis lesen`),      // "Read (C's) full report free"
+    btnOld: (c) => (c.length > 14 ? 'Den vollständigen Bericht lesen' : `Den vollständigen ${c}-Bericht lesen`),                     // "Read (C's) full report"
+    orFirst: 'Oder die erste Seite lesen, ohne Konto ▸',                                                                           // "Or read the first page, no account"
+    size: (n, w, s) => `Zusammenfassung + ${n} Kapitel · ${w} Wörter · ${s} Quellen`,                                              // "Executive summary + n chapters · words · sources"
+    insideStock: (c) => `Was macht ${c}? Die erste Seite unseres Berichts`,                                                        // "What does C do? The first page of our report"
+    insideEarn: (c) => `Was sagt unser Bericht zu ${c}?`,                                                                           // "What does our C report say?"
+    insideSub: (d) => `Bericht vom ${d} · frei lesbar, ohne Konto`,                                                                 // "Report of … · open to read, no account"
+    updated: (d) => `Aktualisiert am ${d}`, expand: 'Vergrößern', keepFirst: 'Die erste Seite weiterlesen ▸',                       // "Updated …", "Expand", "Keep reading the first page"
+    openAria: (c) => `Die erste Seite des ${c}-Berichts öffnen`, expandAria: (c) => `Den ${c}-Bericht vergrößern`,               // "Open the first page of C's report", "Expand C's report"
+    execSummary: 'Zusammenfassung',                                                                                                 // "Executive summary"
+    ansH: (c, t) => `Wie lautet die Prognose für die ${c}-Aktie (${t})?`, ansLabel: (c) => `Unsere Prognose für ${c}`, by: (m) => `bis ${m}`,   // "What is the C (T) stock forecast?", "Our forecast for C", "by …"
+    from: (p, d, a, b) => `Ausgehend von ${p} zum Schlusskurs vom ${d} sind das ${a} und ${b}, Dividenden eingerechnet.`,          // "From P at the D close, that is A and B, dividends included."
+    ret: (pct, gain, year, first) => `${first ? 'ein ' : ''}${gain ? 'Plus' : 'Minus'} von ${pct} bis ${year}`, retSame: (pct, year) => `${pct} bis ${year}`,   // "a gain / loss of x by year"
+    blends: (m, unit) => `Sie gewichtet drei Szenarien für ${m}, ${unit}:`, per: (cur, u) => `${cur} je ${u}`,                       // "It blends three cases for …, cur per unit:"
+    unitShare: 'Aktie', unitAds: 'ADS', unitAdsFirst: (ex) => `ADS, die Aktie, wie sie an der ${ex} gehandelt wird`,               // "share", "ADS", "ADS, the share as traded on the …"
+    chance: (p) => `${p} Wahrscheinlichkeit`,                                                                                       // "x chance"
+    own: (c) => `Unsere eigene Prognose, aus den Unterlagen von ${c} erstellt. Sie ist kein Durchschnitt der Kursziele von Analysten und kann daher von ihnen abweichen.`,   // "Our own forecast, built from C's filings. Not an average of analysts' targets…"
+    casesAria: (m) => `Die drei Szenarien für ${m} mit ihrer Wahrscheinlichkeit`,                                                  // "The three cases for …, with their chances"
+    statsH: (c, t) => `${c} (${t}): die wichtigsten Zahlen`,                                                                         // "C (T) key numbers"
+    meanMv: 'Der Marktwert ist, was alle Aktien zusammen wert sind.', meanPe: 'Das KGV, Kurs zu Gewinn, sagt, wie viele Jahre erwarteten Gewinns der Kurs entspricht.',   // market value / P/E meanings
+    meanDy: 'Die Dividendenrendite ist ein Jahr Dividenden im Verhältnis zum Kurs.', meanPb: 'Das KBV, Kurs zu Buchwert, ist, was Käufer für jede Einheit Eigenkapital in der Bilanz zahlen.',   // dividend yield / price to book meanings
+    tMv: 'Marktwert', tPe: 'KGV auf den Gewinn, den unser Bericht für die nächsten 12 Monate erwartet', tPeL: 'KGV auf den Gewinn der letzten 12 Monate', tPb: 'Kurs-Buchwert-Verhältnis',   // tile labels
+    tDy: 'Dividendenrendite', tNext: 'nächste Quartalszahlen, erwartet', tRev: (q, g) => `Umsatz im Quartal bis ${q}${g ? `, ${g} zum Vorjahr` : ''}`,   // "dividend yield", "next results, expected", "revenue in the quarter to q, g on a year earlier"
+    statsSrc: (d) => `Kurse und Kennzahlen: unser Bericht, zum Schlusskurs vom ${d}. Umsatz: die eigenen Zahlen des Unternehmens.`,   // "Prices and ratios: our report… Revenue: the company's own figures."
+    statsSrcNoRev: (d) => `Kurse und Kennzahlen: unser Bericht, zum Schlusskurs vom ${d}.`,
+    figCap: (cur, unit, price, d) => `Die drei Szenarien unseres Berichts, ${cur} je ${unit}, Dividenden eingerechnet. Die gepunktete Linie ist der Schlusskurs von ${price} vom ${d}.`,   // chart caption
+    figAlt: (c, t, m, bear, base, bull) => `${c} (${t}), Kursszenarien für ${m}: pessimistisch ${bear}, Basis ${base}, optimistisch ${bull}`,   // chart alt: bear, base, bull
+    br8: 'Warum diese drei Kurse, und was jedes Szenario annimmt', br7: 'Was die Prognose als Nächstes ändern könnte', br6: 'Die vollständige Bewertung, gegen Gewinn, Cash und Konkurrenz',   // bridges ch. 8, 7, 6
+    br6bank: 'Die vollständige Bewertung, gegen Gewinn, Buchwert und Konkurrenz', br5: 'Die Jahre und Quartale hinter diesen Zahlen',   // bridge ch. 6 (bank), ch. 5
+    br2: (c, r) => (r.length > 1 ? `Wo ${c} gegenüber ${r[0]}, ${r[1]} und den anderen steht` : r.length ? `Wo ${c} gegenüber ${r[0]} steht` : `Wo ${c} in seinem Markt steht`),   // "How C stands against r1, r2 and the others"
+    brChapter: (n, name) => `Kapitel ${n}, ${name}`, brAct: 'Im vollständigen Bericht →',                                         // "chapter n, name", "In the full report →"
+    bull: (p) => `Optimistisches Szenario, ${p} Wahrscheinlichkeit: wenn es gut läuft`, bear: (p) => `Pessimistisches Szenario, ${p} Wahrscheinlichkeit: wenn es schiefgeht`, nextTest: (d) => `Der nächste Test: Quartalszahlen erwartet am ${d}`,   // bull / bear / next test
+    caseBy: (v, m, r) => `${v} bis ${m}, ${r} mit Dividenden.`, guided: (l, per, v, d) => `${l}, ${per}: ${v}, Prognose vom ${d}.`,   // "v by m, r with dividends.", "label, period: v, guided on d."
+    noCall: 'Unser Bericht gibt keine Kauf- oder Verkaufsempfehlung.',                                                              // "Our report makes no buy or sell call."
+    evMean: (neg) => (neg ? 'der Preis aller Aktien plus die Schulden über die Barmittel hinaus' : 'der Preis aller Aktien abzüglich der Barmittel über die Schulden hinaus'),   // EV meaning
+    fcfyMean: 'das Geld, das in einem Jahr nach Ausgaben für Gebäude und Anlagen bleibt, im Verhältnis zum Wert des Unternehmens',   // FCF yield meaning
+    pbMean: 'was Käufer für jede Einheit Eigenkapital der Bank in der Bilanz zahlen',                                              // price to book meaning (bank)
+    cashCap: (cur) => `Echter freier Cashflow, ${cur}: Geld aus dem Geschäft, minus Ausgaben für Gebäude und Anlagen, minus Bezahlung in Aktien.`,   // real FCF caption
+    fcfCap: (cur) => `Freier Cashflow, ${cur}: Geld aus dem Geschäft, minus Ausgaben für Gebäude und Anlagen.`,                   // FCF caption
+    niCap: (cur) => `Nettogewinn, ${cur}, die eigenen Zahlen des Unternehmens.`,                                                     // net income caption
+    million: 'Mio.', billion: 'Mrd.', trillion: 'Bio.',                                                                             // million, billion, trillion
+    qH: (c) => `${c} Quartalszahlen: Wie lief das letzte Quartal?`,                                                                  // "C earnings: how did the last quarter go?"
+    revCap: (cur, scale, q, g) => `Umsatz je Quartal, ${scale} ${cur}, die eigenen Zahlen des Unternehmens.${g ? ` Das Quartal bis ${q} liegt ${g} über dem Vorjahr.` : ''}`,   // revenue caption
+    revCapDown: (q, g) => ` Das Quartal bis ${q} liegt ${g} unter dem Vorjahr.`,                                                    // "… is down g on a year earlier."
+    revAlt: (c, t, cur, scale, pts, g) => `${c} (${t}), Umsatz je Quartal in ${scale} ${cur}: ${pts}${g ? `, ${g} zum Vorjahr` : ''}.`,   // revenue alt
+    revAxis: (cur, scale) => `Umsatz je Quartal, ${scale} ${cur}`,                                                                   // axis label
+    gOp: 'Operatives Ergebnis: Gewinn aus dem Geschäft', gNi: 'Nettogewinn: nach allen Kosten und Steuern', gEps: (u) => `Gewinn je ${u}`,   // operating income / net income / EPS
+    growthAria: (q) => `Quartal bis ${q} gegenüber dem Vorjahr`,                                                                     // "Quarter to q against a year earlier"
+    earnLink: (c) => `${c} Quartalszahlen: der nächste Termin und die letzten acht Quartale →`,                                      // "C earnings: next date and last eight quarters"
+    qaH: (c, t) => `Fragen zur ${c}-Aktie (${t})`,                                                                                    // "Questions about C (T) stock"
+    q5: (c) => `Wo steht die ${c}-Aktie in 5 Jahren?`,                                                                               // "Where will C stock be in 5 years?"
+    a5: (m, bear, bull, w) => `Die Prognose unseres Berichts reicht bis ${m}. Dann sieht sie die Aktie zwischen ${bear} im pessimistischen und ${bull} im optimistischen Szenario, und bei ${w}, wenn die drei Szenarien nach ihrer Wahrscheinlichkeit gewichtet werden. Über ${m} hinaus macht sie keine Prognose.`,   // 5-year answer
+    qNext: (c) => `Wann legt ${c} die nächsten Quartalszahlen vor?`, aNext: (d) => `Die Zahlen werden am ${d} erwartet.`,          // next earnings Q/A
+    qDiv: (c) => `Zahlt ${c} eine Dividende?`, aDiv: (d, y) => `Ja. Zum Schlusskurs vom ${d} entsprach ein Jahr Dividenden ${y} des Aktienkurses (unser Bericht).`,   // dividend Q/A
+    divLink: (c) => `${c} Dividende →`,                                                                                             // "C dividend"
+    qRiv: (c) => `Wer sind die Konkurrenten von ${c}?`, aRiv: (c, list) => `Unser Bericht vergleicht ${c} mit ${list}.`,           // competitors Q/A
+    qAn: 'Warum weicht diese Prognose von den Kurszielen der Analysten ab?',                                                         // "Why is this forecast different from analysts' targets?"
+    aAn: (c) => `Kursziele von Analysten sind der Durchschnitt der Kurse, die Analysten von Brokern erwarten. Unser Bericht erstellt aus den Unterlagen von ${c} drei eigene Szenarien, gibt jedem eine Wahrscheinlichkeit und rechnet Dividenden ein.`,
+    and: 'und',
+    moreH: (c, t) => `Mehr zu ${c} (${t})`, morePages: (c) => `Weitere Seiten zu ${c}`, otherStocks: 'Andere Aktien', filings: (c) => `Die Unterlagen von ${c}`,   // "More on C", "More C pages", "Other stocks", "C's own filings"
+    closeH: 'Diese Seite gibt die Prognose. Der Bericht gibt die Gründe.', closeHEarn: 'Diese Seite gibt die Zahlen. Der Bericht gibt die Gründe.',   // "This page gives the forecast/results. The report gives the reasons."
+    closeSize: (n, w, t) => `Der vollständige Bericht: eine Zusammenfassung und ${n} Kapitel, ${w} Wörter, ${t} Tabellen. Seine erste Seite öffnet sich hier, ohne Konto.`,
+    closeHow: (c, s) => `So entsteht er: Eine KI liest die Unterlagen von ${c}, schreibt den Bericht, prüft die Zahlen daran und zitiert jede Quelle, ${s} in diesem.`,
+    howWork: 'So arbeiten wir', corrections: 'Korrekturen',                                                                          // "How we work", "Corrections"
+    closeFoot: 'Nur zur Information, keine Anlageberatung. Die Prognose gibt drei Szenarien mit ihrer Wahrscheinlichkeit; sie verspricht keinen Kurs. Kurse sind die des angegebenen Datums.',
+    closeFootEarn: (c) => `Nur zur Information, keine Anlageberatung. Der nächste Termin ist eine Erwartung, bis ${c} ihn bestätigt. Kurse sind die des angegebenen Datums.`,
+    barT: (c) => `Der vollständige ${c}-Bericht`, barS: 'Neue Konten: ein fertiger Bericht gratis', readIt: 'Lesen',               // phone bar
+    vTitle: (c, d) => `${c}-Bericht · ${d}`, vContents: 'Inhalt', vClose: 'Bericht schließen', research: 'MyStockButler Research-Team',   // viewer title bar
+    discT: 'Wichtiger Hinweis',                                                                                                     // "Important investment disclaimer"
+    disc: (t, d, p) => `Dieser Artikel ist eine allgemeine Information, keine Anlageberatung. Er ist keine Empfehlung, ein Wertpapier zu kaufen, zu verkaufen oder zu halten, und berücksichtigt nicht Ihre persönlichen Umstände. MyStockButler und die Autoren halten keine Position in ${t}. Datum der Analyse: ${d}. Kurse vom ${p}. Zahlen können nach diesen Daten veraltet sein; prüfen Sie wesentliche Fakten und fragen Sie eine qualifizierte Beratung, bevor Sie investieren.`,
+    lockAll: (n) => `Die ${n} Kapitel stehen im vollständigen Bericht`, lockAllTeaser: (n) => `Die Zusammenfassung und ${n} Kapitel stehen im vollständigen Bericht`,   // "The n chapters are in the full report"
+    lockCh: 'Kapitel {n}, {label}, steht im vollständigen Bericht', lockOne: '{label} steht im vollständigen Bericht',
+    lockSize: (w, t, s, c) => `Der vollständige Bericht: ${w} Wörter, ${t} Tabellen und ${s} Quellen, aus den Unterlagen von ${c} erstellt.`,
+    keepFree: (c) => (c.length > 14 ? 'Den Bericht gratis weiterlesen' : `Den ${c}-Bericht gratis weiterlesen`),                      // "Keep reading (C's) report free"
+    keepOld: (c) => (c.length > 14 ? 'Den Bericht weiterlesen' : `Den ${c}-Bericht weiterlesen`),
+    eAnsH: (c) => `Wann legt ${c} Zahlen vor, und was hat es zuletzt gemeldet?`,                                                    // "When does C report, and what did it last report?"
+    eNext: 'Nächste Zahlen', eLast: 'Letzte Zahlen', eExpected: (c) => `Erwartet, noch nicht von ${c} bestätigt.`, eAnnounced: (c) => `Von ${c} angekündigter Termin.`,   // next / last / expected / announced
+    eLastSub: (q) => `Die eigenen Zahlen des Unternehmens für das Quartal bis ${q}, gegenüber dem Vorjahr.`,
+    eLastSubHalf: (q) => `Die eigenen Zahlen des Unternehmens für das Halbjahr bis ${q}, gegenüber dem Vorjahr.`,
+    eSales: 'Umsatz', eOp: 'Operatives Ergebnis', eNi: 'Nettogewinn', eEps: 'Gewinn je Aktie',                                         // revenue, operating income, net income, EPS
+    score: 'Versprechen gehalten', ours: '(unser Bericht)',                                                                          // "Promises kept (our report)"
+    above: 'darüber', inside: 'innerhalb', below: 'darunter',                                                                         // above, inside, below
+    dotsAria: (m, a, i, b, n) => `${m} gegenüber der eigenen Prognose des Unternehmens in den letzten ${n}: ${a}-mal darüber, ${i}-mal innerhalb, ${b}-mal darunter`,
+    dotsNote: (n) => `Jeder Punkt ist eines der letzten ${n}, gegenüber der eigenen Prognosespanne des Unternehmens, nicht den Schätzungen der Analysten.`,
+    guideNote: 'Die Prognose ist, was das Management zu melden erwartet, meist eine Spanne.', given: (d) => `gegeben am ${d}`,          // "Guidance is management's forecast…", "given d"
+    eQaH: (c) => `Fragen zu den ${c} Quartalszahlen`, eQWhen: (c) => `Wann legt ${c} Quartalszahlen vor?`,                          // "Questions about C's earnings", "When does C report?"
+    eAWhen: (d, ok) => (ok ? `Am ${d}, dem vom Unternehmen angekündigten Termin.` : `Erwartet am ${d}, noch nicht vom Unternehmen bestätigt.`),
+    eQBeat: (c) => `Hat ${c} die eigene Prognose übertroffen?`, eABeat: (m, n, a, i, b) => `In den letzten ${n} lag ${m} ${a}-mal über der eigenen Spanne, ${i}-mal innerhalb und ${b}-mal darunter (unser Bericht).`,
+    eQStock: (c, y) => `Wo könnte die ${c}-Aktie ${y} stehen?`, eAStock: (w, m, p, d) => `Unsere Prognose: ${w} bis ${m}, ausgehend von ${p} zum Schlusskurs vom ${d}.`, stockLink: (c) => `${c} Aktie Prognose →`,
+    eDescNext: (c, t, d) => `${c} (${t}) legt die nächsten Zahlen am ${d} vor (erwartet).`,
+    eDescLast: (q, v, g, op) => ` Quartal bis ${q}: Umsatz ${v}${g ? `, ${g}` : ''}${op ? `; operatives Ergebnis ${op}` : ''}.`, eDescTail: ' Prognose und worauf zu achten ist.',
+    desc: (c, t, w1, m1, w3, m3, div) => `${c} Aktie (${t}) Prognose: ${w1} bis ${m1}, ${w3} bis ${m3}${div ? ', Dividenden eingerechnet' : ''}. Drei Szenarien aus den Unterlagen.`,
+    monShort: (m, y) => `${m} ${y}`,
+  },
+  'zh-HK': {
+    ready: (n) => `${n} 份報告已備妥`, now: '', latest: '最新：', stripAria: '已備妥的報告', tapeAria: '有報告的公司',                 // "N reports ready", "Latest:", "Reports ready now", "Companies with a report"
+    ago: { now: '剛剛', min: '{n} 分鐘前', hour1: '1 小時前', hour: '{n} 小時前' },                                                  // "just now", "N minutes ago", "1 hour ago", "N hours ago"
+    results: '', headerBtn: '免費一份報告', home: 'MyStockButler 首頁',                                                              // "One report free", "MyStockButler home"
+    byline: (by, date, exch) => [by, `報告日期：${date}`, exch], how: '報告如何製作',                                                // "Report of …", "How this report is made"
+    free: '新帳戶可免費閱讀一家公司已備妥的報告。無需信用卡。',                                                                         // "New accounts get one company's ready report free. No card."
+    btnFree: (c) => `免費閱讀 ${c} 完整報告`, btnOld: (c) => `閱讀 ${c} 完整報告`,                                                    // "Read C's full report free", "Read C's full report"
+    orFirst: '或先讀第一頁，無需帳戶 ▸',                                                                                               // "Or read the first page, no account"
+    size: (n, w, s) => `摘要 + ${n} 章 · ${w} 詞 · ${s} 個來源`,                                                                      // "Executive summary + n chapters · words · sources"
+    insideStock: (c) => `${c} 做甚麼業務？我們報告的第一頁`, insideEarn: (c) => `我們的 ${c} 報告怎麼說？`,                           // "What does C do? The first page of our report", "What does our C report say?"
+    insideSub: (d) => `報告日期：${d} · 可直接閱讀，無需帳戶`,                                                                         // "Report of … · open to read, no account"
+    updated: (d) => `更新於 ${d}`, expand: '展開', keepFirst: '繼續閱讀第一頁 ▸',                                                      // "Updated …", "Expand", "Keep reading the first page"
+    openAria: (c) => `打開 ${c} 報告的第一頁`, expandAria: (c) => `展開 ${c} 報告`,                                                    // "Open the first page of C's report", "Expand C's report"
+    execSummary: '摘要',                                                                                                               // "Executive summary"
+    ansH: (c, t) => `${c}（${t}）的股價預測是多少？`, ansLabel: (c) => `我們對 ${c} 的預測`, by: (m) => `至${m}`,                       // "What is the C (T) stock forecast?", "Our forecast for C", "by …"
+    from: (p, d, a, b) => `由 ${d}收市價 ${p} 計，即${a}，${b}，已計股息。`,                                                           // "From P at the D close, that is A and B, dividends included."
+    ret: (pct, gain, year) => `至${year}${gain ? '上升' : '下跌'} ${pct}`, retSame: (pct, year) => `至${year}${pct}`,                // "up / down x by year"
+    blends: (m, unit) => `它綜合了${m}的三個情境，以${unit}計：`, per: (cur, u) => `每${u}${cur}`,                                    // "It blends three cases for …, cur per unit:"
+    unitShare: '股', unitAds: '股美國預託股份（ADS）', unitAdsFirst: (ex) => `股美國預託股份（ADS，即在 ${ex} 買賣的股份）`,           // "share", "ADS", "ADS, the share as traded on the …"
+    chance: (p) => `機率 ${p}`,                                                                                                       // "x chance"
+    own: (c) => `這是我們根據 ${c} 公開文件自行作出的預測，並非分析師目標價的平均，因此可能與之不同。`,                                   // "Our own forecast, built from C's filings. Not an average of analysts' targets…"
+    casesAria: (m) => `${m}的三個情境及其機率`,                                                                                       // "The three cases for …, with their chances"
+    statsH: (c, t) => `${c}（${t}）主要數字`,                                                                                          // "C (T) key numbers"
+    meanMv: '市值是全部股份加起來的價值。', meanPe: '市盈率（股價除以盈利）表示股價相當於多少年的預期盈利。',                                // market value / P/E meanings
+    meanDy: '股息率是一年股息佔股價的比例。', meanPb: '市賬率是買家為公司賬面每一單位淨資產所付的價錢。',                                    // dividend yield / price to book meanings
+    tMv: '市值', tPe: '按我們報告預期未來 12 個月盈利計的市盈率', tPeL: '按過去 12 個月盈利計的市盈率', tPb: '市賬率',                     // tile labels
+    tDy: '股息率', tNext: '下次業績，預計', tRev: (q, g) => `截至${q}季度的收入${g ? `，按年 ${g}` : ''}`,                               // "dividend yield", "next results, expected", "revenue in the quarter to q, g on a year earlier"
+    statsSrc: (d) => `股價及比率：我們的報告，以 ${d}收市價計。收入：公司自己的數字。`,                                                  // "Prices and ratios: our report… Revenue: the company's own figures."
+    statsSrcNoRev: (d) => `股價及比率：我們的報告，以 ${d}收市價計。`,
+    figCap: (cur, unit, price, d) => `我們報告的三個情境，以每${unit}${cur}計，已計股息。虛線是 ${d}的收市價 ${price}。`,                 // chart caption
+    figAlt: (c, t, m, bear, base, bull) => `${c}（${t}）${m}的股價情境：悲觀 ${bear}，基本 ${base}，樂觀 ${bull}`,                      // chart alt
+    br8: '為何是這三個價格，以及每個情境的假設', br7: '甚麼可能改變預測', br6: '完整估值：與盈利、現金及對手比較',                         // bridges ch. 8, 7, 6
+    br6bank: '完整估值：與盈利、賬面價值及對手比較', br5: '這些數字背後的年度與季度',                                                    // bridge ch. 6 (bank), ch. 5
+    br2: (c, r) => (r.length > 1 ? `${c} 與 ${r[0]}、${r[1]} 等對手相比如何` : r.length ? `${c} 與 ${r[0]} 相比如何` : `${c} 在其市場的位置`),   // "How C stands against r1, r2 and the others"
+    brChapter: (n, name) => `第 ${n} 章：${name}`, brAct: '見完整報告 →',                                                              // "chapter n, name", "In the full report →"
+    bull: (p) => `樂觀情境，機率 ${p}：如果順利`, bear: (p) => `悲觀情境，機率 ${p}：如果不順`, nextTest: (d) => `下一個考驗：預計 ${d}公布業績`,   // bull / bear / next test
+    caseBy: (v, m, r) => `至${m} ${v}，連股息 ${r}。`, guided: (l, per, v, d) => `${l}，${per}：${v}，於 ${d}給出。`,               // "v by m, r with dividends.", "label, period: v, guided on d."
+    noCall: '我們的報告不作買賣建議。',                                                                                                 // "Our report makes no buy or sell call."
+    evMean: (neg) => (neg ? '全部股份的價格，加上超出現金的債務' : '全部股份的價格，減去超出債務的現金'),                                    // EV meaning
+    fcfyMean: '一年內支付樓宇及設備開支後剩下的現金，佔公司價值的比例',                                                                    // FCF yield meaning
+    pbMean: '買家為銀行賬面每一單位淨資產所付的價錢',                                                                                    // price to book meaning (bank)
+    cashCap: (cur) => `實際自由現金流（${cur}）：業務現金，減去樓宇及設備開支，再減去以股份支付的員工薪酬。`,                                   // real FCF caption
+    fcfCap: (cur) => `自由現金流（${cur}）：業務現金，減去樓宇及設備開支。`,                                                              // FCF caption
+    niCap: (cur) => `淨利潤（${cur}），公司自己的數字。`,                                                                                // net income caption
+    million: '百萬', billion: '十億', trillion: '萬億',                                                                                 // million, billion, trillion
+    qH: (c) => `${c} 財報：上一季表現如何？`,                                                                                          // "C earnings: how did the last quarter go?"
+    revCap: (cur, scale, q, g) => `每季收入（${scale}${cur}），公司自己的數字。${g ? `截至${q}的季度按年上升 ${g}。` : ''}`,              // revenue caption
+    revCapDown: (q, g) => `截至${q}的季度按年下跌 ${g}。`,                                                                              // "… is down g on a year earlier."
+    revAlt: (c, t, cur, scale, pts, g) => `${c}（${t}）每季收入（${scale}${cur}）：${pts}${g ? `，按年 ${g}` : ''}。`,                   // revenue alt
+    revAxis: (cur, scale) => `每季收入（${scale}${cur}）`,                                                                              // axis label
+    gOp: '經營利潤：業務本身的利潤', gNi: '淨利潤：扣除所有成本及稅項後', gEps: (u) => `每${u}盈利`,                                     // operating income / net income / EPS
+    growthAria: (q) => `截至${q}的季度與一年前比較`,                                                                                   // "Quarter to q against a year earlier"
+    earnLink: (c) => `${c} 財報：下次日期及過去八季 →`,                                                                                // "C earnings: next date and last eight quarters"
+    qaH: (c, t) => `關於 ${c}（${t}）股票的問題`,                                                                                     // "Questions about C (T) stock"
+    q5: (c) => `${c} 股價 5 年後會在哪裏？`,                                                                                           // "Where will C stock be in 5 years?"
+    a5: (m, bear, bull, w) => `我們報告的預測至${m}。屆時它預計股價在悲觀情境下為 ${bear}，樂觀情境下為 ${bull}，按三個情境的機率加權則為 ${w}。${m}之後不作預測。`,   // 5-year answer
+    qNext: (c) => `${c} 下次何時公布業績？`, aNext: (d) => `預計於 ${d}公布業績。`,                                                    // next earnings Q/A
+    qDiv: (c) => `${c} 有派息嗎？`, aDiv: (d, y) => `有。以 ${d}收市價計，一年股息相當於股價的 ${y}（我們的報告）。`,                   // dividend Q/A
+    divLink: (c) => `${c} 股息 →`,                                                                                                    // "C dividend"
+    qRiv: (c) => `${c} 的競爭對手是誰？`, aRiv: (c, list) => `我們的報告把 ${c} 與 ${list} 比較。`,                                      // competitors Q/A
+    qAn: '為何這個預測與分析師目標價不同？',                                                                                            // "Why is this forecast different from analysts' targets?"
+    aAn: (c) => `分析師目標價是券商分析師預期股價的平均。我們的報告根據 ${c} 的公開文件建立自己的三個情境，為每個情境定出機率，並計入股息。`,
+    and: '及',
+    moreH: (c, t) => `更多關於 ${c}（${t}）`, morePages: (c) => `更多 ${c} 頁面`, otherStocks: '其他股票', filings: (c) => `${c} 的公開文件`,   // "More on C", "More C pages", "Other stocks", "C's own filings"
+    closeH: '本頁給出預測，報告給出理由。', closeHEarn: '本頁給出業績，報告給出理由。',                                                    // "This page gives the forecast/results. The report gives the reasons."
+    closeSize: (n, w, t) => `完整報告：一份摘要及 ${n} 章，${w} 詞，${t} 個表格。第一頁可在此打開，無需帳戶。`,
+    closeHow: (c, s) => `製作方式：AI 閱讀 ${c} 的公開文件，撰寫報告，以文件核對數字，並列出每個來源，本報告共 ${s} 個。`,
+    howWork: '我們的方法', corrections: '更正',                                                                                        // "How we work", "Corrections"
+    closeFoot: '僅供參考，並非投資建議。預測給出三個情境及其機率，並不承諾任何股價。股價為所示日期的價格。',
+    closeFootEarn: (c) => `僅供參考，並非投資建議。下次業績日期在 ${c} 確認前只是預計。股價為所示日期的價格。`,
+    barT: (c) => `${c} 完整報告`, barS: '新帳戶：免費一份已備妥的報告', readIt: '閱讀',                                                  // phone bar
+    vTitle: (c, d) => `${c} 報告 · ${d}`, vContents: '目錄', vClose: '關閉報告', research: 'MyStockButler 研究團隊',                    // viewer title bar
+    discT: '重要投資聲明',                                                                                                             // "Important investment disclaimer"
+    disc: (t, d, p) => `本文是一般資訊，並非投資建議，亦不是買入、賣出或持有任何證券的建議，也沒有考慮你的個人情況。MyStockButler 及作者並無持有 ${t} 的任何倉位。分析日期：${d}。股價截至 ${p}。這些日期之後數字可能過時；投資前請核實重要事實並諮詢合資格顧問。`,
+    lockAll: (n) => `${n} 章內容在完整報告中`, lockAllTeaser: (n) => `摘要及 ${n} 章內容在完整報告中`,                                    // "The n chapters are in the full report"
+    lockCh: '第 {n} 章「{label}」在完整報告中', lockOne: '「{label}」在完整報告中',
+    lockSize: (w, t, s, c) => `完整報告：${w} 詞、${t} 個表格及 ${s} 個來源，根據 ${c} 的公開文件寫成。`,
+    keepFree: (c) => `免費繼續閱讀 ${c} 報告`, keepOld: (c) => `繼續閱讀 ${c} 報告`,                                                      // "Keep reading C's report (free)"
+    eAnsH: (c) => `${c} 何時公布業績？上次公布了甚麼？`,                                                                                 // "When does C report, and what did it last report?"
+    eNext: '下次業績', eLast: '上次業績', eExpected: (c) => `預計日期，${c} 尚未確認。`, eAnnounced: (c) => `${c} 已公布的日期。`,          // next / last / expected / announced
+    eLastSub: (q) => `公司自己截至${q}季度的數字，與一年前比較。`, eLastSubHalf: (q) => `公司自己截至${q}半年度的數字，與一年前比較。`,
+    eSales: '收入', eOp: '經營利潤', eNi: '淨利潤', eEps: '每股盈利',                                                                   // revenue, operating income, net income, EPS
+    score: '兌現承諾', ours: '（我們的報告）',                                                                                         // "Promises kept (our report)"
+    above: '高於', inside: '在範圍內', below: '低於',                                                                                   // above, inside, below
+    dotsAria: (m, a, i, b, n) => `${m}與公司自己預測的比較，過去 ${n}：高於範圍 ${a} 次，在範圍內 ${i} 次，低於 ${b} 次`,
+    dotsNote: (n) => `每一點代表過去 ${n}中的一期，與公司自己的預測範圍比較，而非分析師估計。`,
+    guideNote: '業績指引是管理層對將公布數字的預測，通常是一個範圍。', given: (d) => `於 ${d}給出`,                                       // "Guidance is management's forecast…", "given d"
+    eQaH: (c) => `關於 ${c} 業績的問題`, eQWhen: (c) => `${c} 何時公布業績？`,                                                         // "Questions about C's earnings", "When does C report?"
+    eAWhen: (d, ok) => (ok ? `${d}，公司已公布的日期。` : `預計 ${d}，公司尚未確認。`),
+    eQBeat: (c) => `${c} 有否超越自己的預測？`, eABeat: (m, n, a, i, b) => `過去 ${n}，${m}高於自己範圍 ${a} 次，在範圍內 ${i} 次，低於 ${b} 次（我們的報告）。`,
+    eQStock: (c, y) => `${c} 股價到${y}會在哪裏？`, eAStock: (w, m, p, d) => `我們的預測是至${m} ${w}，由 ${d}收市價 ${p} 起計。`, stockLink: (c) => `${c} 股價預測 →`,
+    eDescNext: (c, t, d) => `${c}（${t}）預計於 ${d}公布下次業績。`,
+    eDescLast: (q, v, g, op) => `截至${q}季度：收入 ${v}${g ? `，${g}` : ''}${op ? `；經營利潤 ${op}` : ''}。`, eDescTail: '業績指引及觀察重點。',
+    desc: (c, t, w1, m1, w3, m3) => `${c}（${t}）股價預測：至${m1} ${w1}，至${m3} ${w3}，已計股息。三個情境來自公司文件，並非分析師目標價。`,
+    monShort: (m, y) => `${m} ${y}`,
+  },
+};
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// Numbers. A cell of our own producers ('1,494,243', '468.34 (+15 %)', '24.2x', '1.1%'): arithmetic and shape only.
+// ---------------------------------------------------------------------------------------------------------------------------
+export function cellValue(v) {
+  const m = /^\s*\**\s*[≈~]?\s*([−-]?)\s*([\d,]*\.?\d+)/.exec(String(v ?? '').replace(/\*\*/g, ''));
+  if (!m) return null;
+  const n = Number(m[2].replace(/,/g, ''));
+  return Number.isFinite(n) ? (m[1] ? -n : n) : null;
+}
+const retOf = (v) => {
+  const m = /\(([+−-]?\d+(?:\.\d+)?)\s*%\)/.exec(String(v ?? '').replace(/−/g, '-'));
+  return m ? Number(m[1]) : null;
+};
+const fixed = (n, d) => n.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (n) => `${Math.round(Math.abs(n))} %`;
+const signed = (n) => `${n >= 0 ? '+' : '−'}${Math.round(Math.abs(n))} %`;
+// Our own unit strings: 'NT$ millions', 'US$ millions', 'C$ millions', 'Millionen EUR', 'EUR millions'. The mark becomes a currency
+// code and the scale a multiplier (a CLOSED vocabulary of our producers: shape).
+const MARKS = [['US$', 'USD'], ['NT$', 'TWD'], ['C$', 'CAD'], ['HK$', 'HKD'], ['RMB', 'RMB'], ['£', 'GBP'], ['GBP', 'GBP'], ['€', 'EUR'], ['EUR', 'EUR'], ['USD', 'USD'], ['CAD', 'CAD'], ['HKD', 'HKD'], ['TWD', 'TWD']];
+export function unitOf(unit) {
+  const u = String(unit || '');
+  const scale = /\b(thousands|Tausend)\b/.test(u) ? 1e3 : /\b(millions|Millionen)\b/.test(u) ? 1e6 : /\b(billions|Milliarden)\b/.test(u) ? 1e9 : 0;
+  const mark = MARKS.find(([m]) => u.split(/[\s;,]+/).includes(m));
+  return { scale, cur: mark ? mark[1] : '' };
+}
+
+export function makeFmt(lang, num, money) {
+  const W = WORDS[lang];
+  // a money amount in a readable scale: 2,139,960.5 (millions) -> '$2.14 trillion' / '2,14 Bio. $'
+  const big = (value, scale, cur) => {
+    const v = value * scale;
+    if (lang === 'zh-HK') {
+      const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
+      const x = v / div;
+      return money(num(fixed(x, Math.abs(x) >= 100 ? 0 : Math.abs(x) >= 10 ? 1 : 2)) + word, cur, lang);
+    }
+    const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
+    const x = v / div;
+    const n = num(fixed(x, Math.abs(x) >= 100 ? 0 : Math.abs(x) >= 10 ? 1 : 2));
+    return lang === 'en' ? `${money(n, cur, lang)} ${word}` : money(`${n} ${word}`, cur, lang);
+  };
+  // a forecast cell as the report printed it: its own decimals, '≈' kept (Allianz: '≈517' is never '517.00')
+  const cell = (c, cur) => {
+    const raw = String(c.raw ?? c.v);
+    const dec = (/\.(\d+)/.exec(raw) || ['', ''])[1].length;
+    return money(`${/^\s*[≈~]/.test(raw) ? '≈' : ''}${num(fixed(c.v, dec))}`, cur, lang);
+  };
+  return { big, cell, price: (v, cur) => money(num(fixed(v, 2)), cur, lang), pct: (n) => num(pct(n)), signed: (n) => num(signed(n)) };
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// The forecast and the quarters, read from the data file.
+// ---------------------------------------------------------------------------------------------------------------------------
+export function forecastOf(data) {
+  const chart = data.pages?.stock?.chart;
+  if (!chart || chart.kind !== 'scenarios' || !chart.rows) return null;
+  const cols = chart.columns || [];
+  const row = (k) => chart.rows[k] && (chart.rows[k].values || []).map((v) => ({ v: cellValue(v), r: retOf(v), raw: String(v).split(' (')[0].trim() }));
+  const rows = { Bear: row('Bear'), Base: row('Base'), Bull: row('Bull'), Weighted: row('Weighted') };
+  if (Object.values(rows).some((r) => !r || r.length !== cols.length || r.some((c) => c.v === null)) || cols.length < 2) return null;
+  const prob = (k) => String(chart.rows[k].probability || '').trim();
+  const years = cols.map((c) => String(c).trim().slice(-4));
+  const months = cols.map((c) => String(c).trim().replace(/\s+\d{4}$/, ''));
+  return { cols, years, months, rows, prob: { Bear: prob('Bear'), Base: prob('Base'), Bull: prob('Bull') }, last: cols.length - 1 };
+}
+
+// The eight quarters (or half-years) of the earnings page's table: newest first in the table, oldest first here.
+export function quartersOf(data, lang, langPage) {
+  const page = data.pages?.earnings;
+  if (!page) return null;
+  const i = (page.blocks || []).findIndex((b) => b.table && /^The last eight quarters/.test(String(b.table.title || '')));
+  const t = i >= 0 ? page.blocks[i].table : null;
+  if (!t || (t.head || []).length < 3) return null;
+  const cols = t.head.slice(1).map((c) => String(c).trim()).reverse();
+  const rowOf = (label) => {
+    const r = t.rows.find((x) => String(x[0]).replace(/\*\*/g, '').trim() === label);
+    return r ? r.slice(1).map(cellValue).reverse() : null;
+  };
+  const rev = rowOf('Revenue');
+  if (!rev || rev.filter((v) => v !== null).length < 2) return null;
+  const { scale, cur } = unitOf(t.unit);
+  // a year earlier: the column with the same month one year before (a label of our own: 'Sep 2026' / 'Sep 2025', shape)
+  const lastI = cols.length - 1;
+  const m = /^([A-Z][a-z]{2}) (\d{4})$/.exec(cols[lastI]);
+  const agoI = m ? cols.indexOf(`${m[1]} ${Number(m[2]) - 1}`) : -1;
+  const steps = agoI >= 0 ? lastI - agoI : 0;               // 4 = quarters, 2 = half-years
+  const growth = (r) => (r && agoI >= 0 && r[lastI] !== null && r[agoI] !== null && r[agoI] > 0 ? (r[lastI] / r[agoI] - 1) * 100 : null);
+  const tr = lang !== 'en' && langPage ? langPage(data, 'earnings', lang) : null;
+  return { blockIndex: i, cols, rev, op: rowOf('Operating income'), ni: rowOf('Net income'), eps: rowOf('EPS, diluted'), scale, cur, lastI, agoI, half: steps === 2,
+    growth, translated: tr };
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// The SVG charts (the mockups' designs), drawn from the numbers.
+// ---------------------------------------------------------------------------------------------------------------------------
+const FONT = `font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"`;
+export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, ret, cases }) {
+  const W = 600, H = 448, x0 = 44, step = (404 - 44) / f.cols.length, top = 74, bottom = 360;
+  const all = [start, ...['Bear', 'Base', 'Bull'].flatMap((k) => f.rows[k].map((c) => c.v))];
+  const lo = Math.min(...all), hi = Math.max(...all);
+  const y = (v) => bottom - ((v - lo) / (hi - lo || 1)) * (bottom - top);
+  const xs = [x0, ...f.cols.map((_, i) => x0 + step * (i + 1))];
+  const colors = { Bear: '#C0452E', Base: '#1F2A24', Bull: '#137C46' };
+  const out = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" ${FONT}>`, `<rect width="${W}" height="${H}" fill="#FFFFFF"/>`];
+  out.push(`<line x1="${x0}" y1="${y(start).toFixed(1)}" x2="412" y2="${y(start).toFixed(1)}" stroke="#9AA79F" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>`);
+  for (const k of ['Bear', 'Bull', 'Base']) {
+    const pts = [[x0, y(start)], ...f.rows[k].map((c, i) => [xs[i + 1], y(c.v)])];
+    out.push(`<polyline points="${pts.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ')}" fill="none" stroke="${colors[k]}" stroke-width="${k === 'Base' ? 5 : 4}" stroke-linejoin="round" stroke-linecap="round"/>`);
+    pts.slice(1).forEach(([a, b], i) => out.push(`<circle cx="${a.toFixed(1)}" cy="${b.toFixed(1)}" r="${i === pts.length - 2 ? 6 : 4.5}" fill="${colors[k]}" stroke="#fff" stroke-width="2.5"/>`));
+  }
+  out.push(`<circle cx="${x0}" cy="${y(start).toFixed(1)}" r="7" fill="#0E1713" stroke="#fff" stroke-width="3"/>`);
+  // the end labels: three stacked blocks of 3 lines (name, price, return), kept apart (at least 70 px) and inside the frame
+  const ends = ['Bull', 'Base', 'Bear'].map((k) => ({ k, y: y(f.rows[k][f.last].v) })).sort((a, b) => a.y - b.y);
+  const blockH = 62;
+  let prev = -Infinity;
+  for (const e of ends) { e.ty = Math.max(e.y - 16, prev + blockH + 8, 22); prev = e.ty; }
+  const over = ends[ends.length - 1].ty + 48 - (H - 40);
+  if (over > 0) for (const e of ends) e.ty -= over;
+  for (const e of ends) {
+    const c = f.rows[e.k][f.last];
+    out.push(`<text x="422" y="${e.ty.toFixed(1)}" font-size="22" font-weight="800" fill="${colors[e.k]}">${esc(cases[e.k])}</text>`);
+    out.push(`<text x="422" y="${(e.ty + 25).toFixed(1)}" font-size="23" font-weight="750" fill="#0E1713">${esc(money(c))}</text>`);
+    if (c.r !== null) out.push(`<text x="422" y="${(e.ty + 48).toFixed(1)}" font-size="21" font-weight="650" fill="${colors[e.k]}">${esc(ret(c.r))}</text>`);
+  }
+  // the start price, beside the dotted line, only when it does not sit on a case's label block
+  const sy = y(start);
+  if (!ends.some((e) => sy - 24 < e.ty + 52 && sy + 4 > e.ty - 20)) {
+    out.push(`<text x="422" y="${(sy - 24).toFixed(1)}" font-size="19" font-weight="600" fill="#617066">${esc(startLabel)}</text>`);
+    out.push(`<text x="422" y="${(sy - 1).toFixed(1)}" font-size="21" font-weight="700" fill="#0E1713">${esc(priceLabel)}</text>`);
+  }
+  labels.forEach((l, i) => out.push(`<text x="${xs[i].toFixed(1)}" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="middle">${esc(l)}</text>`));
+  out.push('</svg>');
+  return out.join('\n');
+}
+
+export function revenueSvg(q, { axis, mon, val, pill }) {
+  const pts = q.cols.map((c, i) => ({ c, v: q.rev[i] })).filter((p) => p.v !== null && p.v > 0);
+  const n = pts.length;
+  const gap = 572 / n, w = Math.min(46, gap * 0.66), base = 300, top = 210, mx = Math.max(...pts.map((p) => p.v));
+  const o = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" role="img" ${FONT}>`, '<rect width="600" height="360" fill="#FFFFFF"/>'];
+  const agoCol = q.agoI >= 0 ? q.cols[q.agoI] : '';
+  pts.forEach((p, i) => {
+    const cx = 14 + gap * i + gap / 2, h = (p.v / mx) * top, last = i === n - 1;
+    const fill = last ? '#137C46' : p.c === agoCol ? '#8FA096' : '#CBD5CE';
+    const [m, yr] = mon(p.c);
+    o.push(`<rect x="${(cx - w / 2).toFixed(1)}" y="${(base - h).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="6" fill="${fill}"/>`);
+    o.push(`<text x="${cx.toFixed(1)}" y="324" font-size="19" font-weight="${last ? 700 : 600}" fill="${last ? '#0E1713' : '#617066'}" text-anchor="middle">${esc(m)}</text>`);
+    o.push(`<text x="${cx.toFixed(1)}" y="345" font-size="17" fill="#617066" text-anchor="middle">${esc(yr)}</text>`);
+    if (last || i === 0) o.push(`<text x="${cx.toFixed(1)}" y="${(base - h - 10).toFixed(1)}" font-size="${last ? 26 : 21}" font-weight="${last ? 800 : 700}" fill="${last ? '#0E1713' : '#617066'}" text-anchor="middle">${esc(val(p.v))}</text>`);
+    if (last && pill) {
+      const pw = Math.max(84, pill.length * 12 + 24), px = Math.min(586 - pw, Math.max(14, cx - pw / 2));
+      o.push(`<rect x="${px.toFixed(1)}" y="12" width="${pw}" height="34" rx="17" fill="#137C46"/>`);
+      o.push(`<text x="${(px + pw / 2).toFixed(1)}" y="36" font-size="21" font-weight="800" fill="#FFFFFF" text-anchor="middle">${esc(pill)}</text>`);
+    }
+  });
+  o.push('<line x1="14" y1="300" x2="586" y2="300" stroke="#0E1713" stroke-width="2"/>');
+  o.push(`<text x="14" y="26" font-size="19" font-weight="600" fill="#617066">${esc(axis)}</text>`);
+  o.push('</svg>');
+  return o.join('\n');
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// THE PAGE. p: everything renderCompanyPage already knows (the data, the language, the links, the helpers). Returns the body,
+// the meta description and the chart files to write next to the page.
+// ---------------------------------------------------------------------------------------------------------------------------
+const fill = (t, o) => String(t).replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+const slugId = (t) => String(t).normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '') || 'part';
+const tableLabel = (cell) => String(cell || '').replace(/\*\*/g, '').replace(/^[+−=-] /, '').replace(/ \(calculated\)$/, '').replace(/ \(berechnet\)$/, '').replace(/ \(calculé\)$/, '').trim();
+
+// The report's first page: teaser.first_page (the chain's executive summary, markdown) when it exists, else the teaser paragraph.
+function firstPage(teaser, W) {
+  const fp = teaser && teaser.first_page && String(teaser.first_page.markdown || '').trim() ? teaser.first_page : null;
+  if (fp) {
+    let html = md.parse(String(fp.markdown).replace(/\[(\d+(?:,\s*\d+)*)\](?!\()/g, ''));
+    const parts = [];
+    html = html.replace(/<h3>([\s\S]*?)<\/h3>/g, (m, inner) => {
+      const label = inner.replace(/<[^>]+>/g, '').trim();
+      let id = slugId(label);
+      while (parts.some((p) => p.id === id)) id += '-2';
+      parts.push({ id, label });
+      return `<h3 id="${id}">${inner}</h3>`;
+    }).replace(/<table>/g, '<div class="memo-table-scroll"><table>').replace(/<\/table>/g, '</table></div>')
+      .replace(/<th>(?:Today|Heute|Aujourd’hui|Aujourd'hui) \(([^)]*)\)<\/th>/g, '<th>$1</th>')       // our own header 'Today (Oct 18, 2026)': never 'today' beside a dated price
+      .replace(/<a href="(https?:[^"]+)"/g, '<a rel="nofollow noopener" href="$1"');
+    const first = /<h3[^>]*>([\s\S]*?)<\/h3>\s*(<p>[\s\S]*?<\/p>)/.exec(html);
+    return { full: true, title: String(fp.title || W.execSummary), html, parts, peekH: first ? first[1] : '', peekP: first ? first[2] : (/<p>[\s\S]*?<\/p>/.exec(html) || [''])[0] };
+  }
+  if (!teaser || !teaser.text) return null;
+  const p = `<p>${md.parseInline(String(teaser.text).replace(/\[(\d+(?:,\s*\d+)*)\](?!\()/g, ''))}</p>`;
+  const ch = String(teaser.chapter || '');
+  return { full: false, title: ch.replace(/^\d+\.\s*/, ''), chapter: ch, html: p, parts: [], peekH: '', peekP: p };
+}
+
+export function renderPage(p) {
+  const { data, type, lang, page, enPage, company, ticker, num, money } = p;
+  const W = WORDS[lang];
+  const F = makeFmt(lang, num, money);
+  const cur = data.currency;
+  const files = [];
+  const today = p.today;
+  const memoIso = String(data.memo_date || '').slice(0, 10);
+  const ageDays = memoIso && today ? (Date.parse(`${today}T00:00:00Z`) - Date.parse(`${memoIso}T00:00:00Z`)) / 864e5 : 0;
+  const isFree = ageDays < FREE_DAYS;
+  const k = data.counts || {};
+  const nCh = k.chapters || 8;
+  const words = num((k.words || 0).toLocaleString('en-US'));
+  const priceIso = String(data.price_date || '').slice(0, 10);
+  const priceDay = priceIso ? p.humanDay(priceIso, lang) : '';
+  const shortMemo = memoIso ? p.shortFull(memoIso, lang) : '';
+  const free = isFree ? `<p class="free">${esc(W.free)}</p>` : '';
+  const btn = isFree ? W.btnFree(company) : W.btnOld(company);
+  const chapters = (p.chapters || []).filter((c) => /^\d+\./.test(String(c)));
+  const chapterName = (n) => {
+    const c = chapters.find((x) => String(x).startsWith(`${n}.`));
+    return c ? String(c).replace(/^\d+\.\s*/, '') : '';
+  };
+  const bridge = (n, lead) => {
+    const name = chapterName(n);
+    return name ? `<button type="button" class="bridge" data-open-viewer data-chapter="${n}">${bridgeLock}<span>${esc(`${lead}: ${W.brChapter(n, name)}`)}</span><b>${esc(W.brAct)}</b></button>` : '';
+  };
+  const fp = firstPage(p.teaser, W);
+  const f = forecastOf(data);
+  const q = quartersOf(data, lang, p.langPage);
+  const exch = data.exchange || '';
+  const isAds = /depositary share/i.test(String(((enPage.blocks || []).map((b) => b.table).find((t) => t && (t.head || []).includes('Case')) || {}).unit || ''));
+  const unit = isAds ? W.unitAds : W.unitShare;
+  const monthYear = (col) => p.dateWords(col, lang);             // 'October 2027' in the page's language
+  const sections = [];
+
+  // ---- the top: crumb, H1, byline ----
+  const [byWho, reportOf, ex] = W.byline(p.authorLink, esc(p.memoDay), esc(exch ? `${exch}: ${ticker}` : ticker));
+  const top = `<section class="top">
+${p.crumbsHtml}
+<h1>${esc(p.h1)}</h1>
+<p class="byline">${byWho} · ${reportOf}${exch ? ` · <span class="nw">${ex}</span>` : ''}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a></p>
+</section>`;
+
+  // ---- the answer ----
+  let answer = '';
+  let description = '';
+  if (type === 'stock' && f) {
+    const w1 = f.rows.Weighted[0], w3 = f.rows.Weighted[f.last];
+    const m1 = monthYear(f.cols[0]), m3 = monthYear(f.cols[f.last]);
+    const r1 = w1.r, r3 = w3.r;
+    const parts = [];
+    if (r1 !== null && r3 !== null) {
+      const g1 = r1 >= 0, g3 = r3 >= 0;
+      const b1 = `<b>${esc(nb(F.pct(r1)))}</b>`, b3 = `<b>${esc(nb(F.pct(r3)))}</b>`;
+      parts.push(W.ret(b1, g1, esc(f.years[0]), true));
+      parts.push(g1 === g3 ? W.retSame(b3, esc(f.years[f.last])) : W.ret(b3, g3, esc(f.years[f.last]), true));
+    }
+    const startV = cellValue(data.price);
+    const fromLine = startV !== null && priceDay && parts.length
+      ? `<p class="answer__from">${W.from(esc(F.price(startV, cur)), esc(priceDay), parts[0], parts[1])}</p>` : '';
+    const caseLi = ['Bear', 'Base', 'Bull'].map((kk) => `<li class="case case--${kk.toLowerCase()}"><span class="case__name"><i class="case__dot"></i>${esc(p.caseWord(kk))}</span><span class="case__price">${esc(num(String(Math.round(f.rows[kk][0].v))))}</span><span class="case__chance">${esc(nb(W.chance(num(f.prob[kk]))))}</span></li>`).join('');
+    const unitFirst = isAds ? W.unitAdsFirst(exch) : W.unitShare;
+    answer = `<section class="answer" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">${esc(W.ansH(company, ticker))}</h2>
+<p class="answer__label">${esc(W.ansLabel(company))}</p>
+<div class="answer__pair">
+<p><span class="answer__n">${esc(F.cell(w1, cur))}</span><span class="answer__by">${esc(W.by(m1))}</span></p>
+<p><span class="answer__n">${esc(F.cell(w3, cur))}</span><span class="answer__by">${esc(W.by(m3))}</span></p>
+</div>
+${fromLine}
+<p class="answer__cl">${esc(W.blends(m1, W.per(p.curWord(cur), unitFirst)))}</p>
+<ul class="cases" aria-label="${esc(W.casesAria(m1))}">${caseLi}</ul>
+<p class="answer__own">${esc(W.own(company))}</p>
+</section>`;
+    const sm = (i) => p.dateWords(`${String(f.cols[i]).trim().slice(0, 3)} ${f.years[i]}`, lang);
+    for (const div of [true, false]) {
+      const d = W.desc(company, ticker, F.cell(w1, cur), sm(0), F.cell(w3, cur), sm(f.last), div);
+      if (d.length <= (lang === 'en' ? 155 : 200)) { description = d; break; }
+    }
+  }
+  if (type === 'earnings') {
+    const nextIso = String(data.next_earnings || '').slice(0, 10);
+    const hasNext = nextIso && today && nextIso >= today;
+    const announced = hasNext && p.announced;
+    const halves = [];
+    if (hasNext) {
+      halves.push(`<div class="ans2__half"><p class="answer__label">${esc(W.eNext)}</p><p class="ans2__big"><span class="answer__n">${esc(p.shortFull(nextIso, lang))}</span><span class="ans2__day">${esc(p.weekday(nextIso, lang))}</span></p>
+<p class="ans2__sub"><b>${esc(announced ? W.eAnnounced(company) : W.eExpected(company))}</b></p></div>`);
+    }
+    if (q && q.rev[q.lastI] !== null) {
+      const rows = [[W.eSales, q.rev], [W.eOp, q.op]].filter(([, r]) => r && r[q.lastI] !== null).map(([lab, r]) => {
+        const g = q.growth(r);
+        return `<li><span class="ans2__k">${esc(lab)}</span><span class="ans2__v">${esc(F.big(r[q.lastI], q.scale, q.cur))}</span>${g !== null ? `<span class="pill${g < 0 ? ' pill--dn' : ''}">${esc(nb(F.signed(g)))}</span>` : ''}</li>`;
+      }).join('');
+      const qLabel = monthYear(q.cols[q.lastI]);
+      halves.push(`<div class="ans2__half"><p class="answer__label">${esc(W.eLast)}</p><ul class="ans2__rows">${rows}</ul><p class="ans2__sub">${esc(q.half ? W.eLastSubHalf(qLabel) : W.eLastSub(qLabel))}</p></div>`);
+    }
+    if (halves.length) answer = `<section class="answer ans2" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">${esc(W.eAnsH(company))}</h2>
+${halves.join('\n')}
+</section>`;
+    const lastBit = q && q.rev[q.lastI] !== null ? W.eDescLast(monthYear(q.cols[q.lastI]), F.big(q.rev[q.lastI], q.scale, q.cur), q.growth(q.rev) !== null ? F.signed(q.growth(q.rev)) : '', q.op && q.op[q.lastI] !== null ? F.big(q.op[q.lastI], q.scale, q.cur) : '') : '';
+    const nextBit = hasNext ? W.eDescNext(company, ticker, p.humanDay(nextIso, lang)) : '';
+    for (const d of [`${nextBit}${lastBit}${W.eDescTail}`, `${nextBit}${lastBit}`, nextBit]) {
+      const t = d.trim();
+      if (t && t.length <= (lang === 'en' ? 155 : 200)) { description = t; break; }
+    }
+  }
+
+  // no forecast, no next date and no last quarter in the data: the page writer's own answer sentence (it carries its numbers,
+  // which the gate checks against the report's text)
+  if (!answer && page.opening) answer = `<section class="answer answer--text" aria-labelledby="ans-h"><h2 class="sr" id="ans-h">${esc(type === 'stock' ? W.ansH(company, ticker) : W.eAnsH(company))}</h2><p class="answer__from">${esc(page.opening)}</p></section>`;
+
+  // ---- the first button ----
+  const cta1 = `<section class="cta1" id="cta1" aria-label="${esc(btn)}">
+<div class="cta1__row"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" href="${esc(p.cta)}">${esc(btn)}</a>${fp ? `<button class="textlink" type="button" data-open-viewer>${esc(W.orFirst)}</button>` : ''}</div>
+${free}<p class="free free--2">${esc(W.size(nCh, words, num(String(k.sources || 0))))}</p>
+</section>`;
+
+  // ---- the report frame (the landing's app frame) ----
+  const frame = fp ? `<aside class="inside inside--peek" aria-labelledby="inside-h">
+<h2 id="inside-h">${esc(type === 'stock' ? W.insideStock(company) : W.insideEarn(company))}</h2>
+<p class="inside__sub">${esc(W.insideSub(p.memoDay))}</p>
+<div class="mframe"><div class="mframe__pg">
+<div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(ticker)}</span><span class="mf-name">${esc(data.company || company)}</span><span class="mf-upd">${esc(W.updated(shortMemo))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
+<section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? W.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section>
+</div>
+<button type="button" class="mframe__open" data-open-viewer aria-label="${esc(W.openAria(company))}"></button>
+<button type="button" class="mframe__exp" data-open-viewer aria-label="${esc(W.expandAria(company))}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>${esc(W.expand)}</button>
+</div>
+${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer data-resume="1">${esc(W.keepFirst)}</button>` : ''}
+</aside>` : '';
+
+  // ---- the page writer's blocks, each with its own heading and the report's own paragraphs ----
+  const enBlocks = enPage.blocks || [];
+  const aligned = lang === 'en' || enBlocks.length === (page.blocks || []).length;
+  const kindOf = (i) => {
+    const t = aligned ? enBlocks[i]?.table : (page.blocks[i] || {}).table;
+    const title = String(t?.title || '');
+    if (!t) return 'text';
+    if ((t.head || []).includes('Case')) return 'scenarios';
+    if (/^What an investor pays/.test(title)) return 'pays';
+    if (/^Follow the money: real free cash flow/.test(title)) return 'cash';
+    if (title === 'Results') return 'results';
+    if (/^Guidance in force/.test(title)) return 'guidance';
+    if (/^Promises kept/.test(title)) return 'promises';
+    if (/^The last eight quarters/.test(title)) return 'quarters';
+    return 'table';
+  };
+  const paras = (b, cls = 'lead') => (b.paragraphs || []).map((x, j) => p.mdBlock(x.text).replace(/^<p>/, `<p class="${j ? 'after' : cls}">`)).join('\n');
+  const kinds = (page.blocks || []).map((b, i) => kindOf(i));
+  const lastValuation = Math.max(kinds.lastIndexOf('pays'), kinds.lastIndexOf('cash'), kinds.lastIndexOf('results'));
+  const bank = kinds.includes('results') && !kinds.includes('cash');
+  const rivalNames = p.rivalNames || [];
+  let qSectionDone = false;
+  const lastQuarterSection = () => {
+    if (!q) return '';
+    const pts = q.cols.map((c, i) => [c, q.rev[i]]).filter(([, v]) => v !== null && v > 0);
+    if (pts.length < 2) return '';
+    const unitBig = (v) => v * q.scale;
+    const mxv = Math.max(...pts.map(([, v]) => unitBig(v)));
+    const [div, scaleWord] = mxv >= 1e12 ? [1e12, W.trillion] : mxv >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
+    const d = (v) => { const x = unitBig(v) / div; return num(fixed(x, x >= 100 ? 0 : x >= 10 ? 1 : 2)); };
+    const g = q.growth(q.rev);
+    const curMark = p.curWord(q.cur);
+    const qLabel = monthYear(q.cols[q.lastI]);
+    const ptsText = pts.map(([c, v]) => `${p.dateWords(c, lang)} ${d(v)}`).join(', ');
+    const svgName = 'revenue.svg';
+    files.push({ name: svgName, content: revenueSvg(q, { axis: W.revAxis(curMark, scaleWord), mon: (c) => { const [m, y] = String(c).split(' '); return [p.dateWords(m, lang), y || '']; }, val: d, pill: g !== null ? num(signed(g)) : '' }) });
+    const alt = W.revAlt(company, ticker, curMark, scaleWord, ptsText, g !== null ? num(signed(g)) : '');
+    let cap = W.revCap(curMark, scaleWord, qLabel, g !== null && g >= 0 ? num(pct(g)) : '');
+    if (g !== null && g < 0) cap += W.revCapDown(qLabel, num(pct(g)));
+    const tiles = [[q.op, W.gOp], [q.ni, W.gNi], [q.eps, W.gEps(unit)]].map(([r, l]) => [q.growth(r), l]).filter(([gg]) => gg !== null)
+      .map(([gg, l]) => `<div><b${gg < 0 ? ' class="dn"' : ''}>${esc(nb(F.signed(gg)))}</b><span>${esc(l)}</span></div>`).join('');
+    return { svgName, alt, cap, tiles, qLabel };
+  };
+
+  (page.blocks || []).forEach((b, i) => {
+    const kind = kinds[i];
+    const enT = aligned ? enBlocks[i]?.table : b.table;
+    const t = b.table;
+    const head = `<h2>${esc(b.heading)}</h2>`;
+    const out = [];
+    if (kind === 'scenarios' && f) {
+      const m3 = monthYear(f.cols[f.last]);
+      const svg = forecastSvg(f, { start: cellValue(data.price) ?? f.rows.Weighted[0].v, startLabel: priceIso ? p.shortFull(priceIso, lang) : '', priceLabel: F.price(cellValue(data.price) ?? 0, cur),
+        labels: [priceIso ? p.dateWords(`${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][Number(priceIso.slice(5, 7)) - 1]} ${priceIso.slice(0, 4)}`, lang) : '', ...f.cols.map((c) => p.dateWords(`${String(c).trim().slice(0, 3)} ${String(c).trim().slice(-4)}`, lang))],
+        money: (c) => F.cell(c, cur), ret: (r) => F.signed(r), cases: { Bear: p.caseWord('Bear'), Base: p.caseWord('Base'), Bull: p.caseWord('Bull') } });
+      files.push({ name: 'forecast.svg', content: svg });
+      const alt = W.figAlt(company, ticker, m3, F.cell(f.rows.Bear[f.last], cur), F.cell(f.rows.Base[f.last], cur), F.cell(f.rows.Bull[f.last], cur));
+      const cap = priceDay ? W.figCap(p.curWord(cur), unit, F.price(cellValue(data.price) ?? 0, cur), priceDay) : '';
+      out.push(`<section class="sec" aria-labelledby="where-h">`, head.replace('<h2>', '<h2 id="where-h">'), paras(b),
+        `<figure class="fig"><img src="forecast.svg" width="600" height="448" loading="lazy" decoding="async" alt="${esc(alt)}">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`,
+        bridge(8, W.br8), '</section>');
+    } else if (kind === 'text' || (kind === 'scenarios' && !f)) {
+      const items = [];
+      if (type === 'stock' && f && i === kinds.findIndex((x) => x === 'text')) {
+        const m3 = monthYear(f.cols[f.last]);
+        const caseLine = (kk) => { const c = f.rows[kk][f.last]; return W.caseBy(F.cell(c, cur), m3, c.r !== null ? F.signed(c.r) : ''); };
+        items.push(`<li class="case--bull"><i class="case__dot"></i><div><h3>${esc(nb(W.bull(num(f.prob.Bull))))}</h3><p>${esc(nb(caseLine('Bull')))}</p></div></li>`);
+        items.push(`<li class="case--bear"><i class="case__dot"></i><div><h3>${esc(nb(W.bear(num(f.prob.Bear))))}</h3><p>${esc(nb(caseLine('Bear')))}</p></div></li>`);
+        const nextIso = String(data.next_earnings || '').slice(0, 10);
+        if (nextIso && nextIso >= today) {
+          const g = p.guidanceRow;
+          items.push(`<li class="case--base"><i class="case__dot"></i><div><h3>${esc(W.nextTest(p.humanDay(nextIso, lang)))}</h3>${g ? `<p>${esc(nb(W.guided(g.label, g.period, g.value, g.date)))}</p>` : ''}</div></li>`);
+        }
+      }
+      out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), paras(b),
+        items.length ? `<ul class="watch">${items.join('')}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : bridge(7, W.br7), '</section>');
+    } else if (kind === 'pays' && t) {
+      const rows = t.rows.map((r, j) => {
+        const enLabel = tableLabel(enT?.rows?.[j]?.[0] ?? r[0]);
+        const label = tableLabel(r[0]);
+        const raw = String(r[r.length - 1] ?? '').replace(/\*\*/g, '').trim();
+        const v = cellValue(raw);
+        if (v === null || /^Share price$/.test(enLabel)) return '';
+        const { scale } = unitOf(enT?.unit || t.unit);
+        const isMoney = !/[x%]\s*$/.test(raw) && scale && v >= 1000;
+        const shown = isMoney ? F.big(v, scale, cur) : num(raw);
+        let mean = '';
+        if (/^Enterprise value/.test(enLabel)) mean = W.evMean(false);
+        else if (/^Free cash flow yield/.test(enLabel)) mean = W.fcfyMean;
+        else if (/^Price to book/.test(enLabel)) mean = W.pbMean;
+        return `<li><span class="pay__l">${esc(label)}${mean ? `<small>${esc(mean)}</small>` : ''}</span><span class="pay__n">${esc(nb(shown))}</span></li>`;
+      }).filter(Boolean).join('');
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<p class="lead"><b>${esc(W.noCall)}</b></p>`, paras(b, 'after'),
+        rows ? `<ul class="pay">${rows}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
+    } else if ((kind === 'cash' || kind === 'results') && t) {
+      const want = kind === 'cash' ? ['= Real free cash flow', '= Free cash flow'] : ['Net income'];
+      const enRows = enT?.rows || t.rows;
+      const ri = want.map((w) => enRows.findIndex((r) => String(r[0]).replace(/\*\*/g, '').trim() === w)).find((x) => x >= 0);
+      let bars = '';
+      let cap = '';
+      if (ri !== undefined && ri >= 0) {
+        const cols = (enT?.head || t.head).slice(1);
+        const vals = enRows[ri].slice(1).map(cellValue);
+        const mx = Math.max(...vals.filter((v) => v !== null).map(Math.abs), 1);
+        const shownRow = (t.rows[ri] || enRows[ri]).slice(1);
+        bars = cols.map((c, j) => (vals[j] === null ? '' : `<li style="--w:${Math.max(2, (Math.max(0, vals[j]) / mx) * 62).toFixed(1)}%"${j === 0 ? ' class="on"' : ''}><span class="bars__y">${esc(p.dateWords(String(c), lang))}</span><span class="bars__b"><i></i><em>${esc(String(shownRow[j] ?? '').replace(/\*\*/g, ''))}</em></span></li>`)).join('');
+        const unitText = t.unit || enT?.unit || '';
+        cap = kind === 'cash' ? (String(enRows[ri][0]).includes('Real') ? W.cashCap(unitText) : W.fcfCap(unitText)) : W.niCap(unitText);
+        bars = bars ? `<ul class="bars" aria-label="${esc(`${tableLabel(t.rows[ri]?.[0] ?? enRows[ri][0])}, ${unitText}: ${cols.map((c, j) => (vals[j] === null ? '' : `${c} ${String(shownRow[j]).replace(/\*\*/g, '')}`)).filter(Boolean).join('; ')}`)}">${bars}</ul><p class="fine bars__cap">${esc(cap)}</p>` : '';
+      }
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo duo--r"><div class="duo__a">${paras(b)}</div><div class="duo__b">${bars}</div></div>`,
+        i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
+    } else if (kind === 'guidance' && t) {
+      const cards = t.rows.map((r) => {
+        const lo = String(r[2] ?? '').trim(), hi = String(r[3] ?? '').trim();
+        if (!lo && !hi) return '';
+        const range = lo && hi && lo !== hi ? `${num(lo)}–${num(hi)}` : num(lo || hi);
+        return `<div class="gc"><p class="gc__l">${esc(tableLabel(r[0]))}</p><span class="gc__n">${esc(nb(range))}</span><p class="gc__t">${esc(String(r[1] || ''))}${r[4] ? ` · ${esc(W.given(String(r[4])))}` : ''}</p></div>`;
+      }).filter(Boolean).slice(0, 4).join('');
+      out.push(`<section class="sec sec--guide" aria-labelledby="gd-h">`, head.replace('<h2>', '<h2 id="gd-h">'), paras(b), cards ? `<div class="gd">${cards}</div><p class="fine" style="margin-top:10px">${esc(W.guideNote)}</p>` : '',
+        bridge(7, W.br7), '</section>');
+    } else if (kind === 'promises' && t) {
+      const sc = /(\d+)\s*\/\s*(\d+)/.exec(String(enT?.title || t.title || ''));
+      const meas = t.rows.map((r, j) => {
+        const er = enT?.rows?.[j] || r;
+        const [a, w, bl] = [2, 3, 4].map((c) => cellValue(er[c]));
+        if ([a, w, bl].some((x) => x === null) || a + w + bl === 0 || a + w + bl > 40) return '';
+        const n = String(r[1] || er[1] || '');
+        const dots = `${'<li></li>'.repeat(a)}${'<li class="in"></li>'.repeat(w)}${'<li class="dn"></li>'.repeat(bl)}`;
+        return `<div class="meas"><h3>${esc(tableLabel(r[0]))}</h3><ul class="dots" role="img" aria-label="${esc(W.dotsAria(tableLabel(r[0]), a, w, bl, n))}">${dots}</ul>
+<ul class="leg"><li><i></i><b>${a}</b> ${esc(W.above)}</li><li><i class="in"></i><b>${w}</b> ${esc(W.inside)}</li><li><i class="dn"></i><b>${bl}</b> ${esc(W.below)}</li></ul></div>`;
+      }).filter(Boolean).join('');
+      const checked = String(t.rows[0]?.[1] || '');
+      out.push(`<section class="sec sec--beat" aria-labelledby="beat-h">`, head.replace('<h2>', '<h2 id="beat-h">'),
+        sc ? `<p class="score"><b>${esc(`${sc[1]}/${sc[2]}`)}</b><span>${esc(W.score)} <i>${esc(W.ours)}</i></span></p>` : '', paras(b),
+        meas ? `<div class="beat">${meas}</div>${checked ? `<p class="fine" style="margin-top:8px">${esc(W.dotsNote(checked))}</p>` : ''}` : '', '</section>');
+    } else if (kind === 'quarters') {
+      const lq = lastQuarterSection();
+      qSectionDone = true;
+      out.push(`<section class="sec sec--lastq" aria-labelledby="q-h">`, head.replace('<h2>', '<h2 id="q-h">'), paras(b),
+        lq ? `<figure class="fig"><img src="${lq.svgName}" width="600" height="360" loading="lazy" decoding="async" alt="${esc(lq.alt)}"><figcaption>${esc(nb(lq.cap))}</figcaption></figure>${lq.tiles ? `<div class="growth" aria-label="${esc(W.growthAria(lq.qLabel))}">${lq.tiles}</div>` : ''}` : '',
+        bridge(5, W.br5), '</section>');
+    } else {
+      // any other table: its rows as short visual rows, the newest column only
+      const rows = t ? t.rows.map((r) => `<li><span class="pay__l">${esc(tableLabel(r[0]))}</span><span class="pay__n">${esc(String(r[1] ?? '').replace(/\*\*/g, ''))}</span></li>`).join('') : '';
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), paras(b), rows ? `<ul class="pay">${rows}</ul>` : '', '</section>');
+    }
+    sections.push(out.filter(Boolean).join('\n'));
+  });
+
+  // ---- the stock page: the key numbers (after the first button) and the last quarter (from the earnings page's own figures) ----
+  let stats = '';
+  if (type === 'stock') {
+    const tiles = [];
+    const means = [];
+    const payT = (page.blocks || []).map((b, i) => [b.table, aligned ? enBlocks[i]?.table : b.table]).find(([, e]) => e && /^What an investor pays/.test(String(e.title || '')));
+    const rowV = (re) => {
+      if (!payT) return null;
+      const [t, e] = payT;
+      const j = (e.rows || []).findIndex((r) => re.test(tableLabel(r[0])));
+      return j >= 0 ? { raw: String(((t && t.rows[j]) || e.rows[j])[1] ?? '').replace(/\*\*/g, '').trim(), v: cellValue(e.rows[j][1]), unit: e.unit } : null;
+    };
+    const mv = rowV(/^Market value$/);
+    if (mv && mv.v !== null && unitOf(mv.unit).scale) {
+      const s = F.big(mv.v, unitOf(mv.unit).scale, cur);
+      tiles.push(`<li class="tile t-mv"><span class="tile__n">${esc(s)}</span><span class="tile__l">${esc(W.tMv)}</span></li>`);
+      means.push(W.meanMv);
+    }
+    const pe = rowV(/^P\/E, next 12 months$/) || null;
+    const peL = pe ? null : rowV(/^P\/E, last 12 months$/);
+    if ((pe || peL) && (pe || peL).v !== null) {
+      tiles.push(`<li class="tile t-pe"><span class="tile__n">${esc(num((pe || peL).raw))}</span><span class="tile__l">${esc(pe ? W.tPe : W.tPeL)}</span></li>`);
+      means.push(W.meanPe);
+    }
+    const pb = rowV(/^Price to book$/);
+    if (pb && pb.v !== null) { tiles.push(`<li class="tile t-pb"><span class="tile__n">${esc(num(pb.raw))}</span><span class="tile__l">${esc(W.tPb)}</span></li>`); means.push(W.meanPb); }
+    if (p.dividendYield) { tiles.push(`<li class="tile t-dy"><span class="tile__n">${esc(nb(num(p.dividendYield)))}</span><span class="tile__l">${esc(W.tDy)}</span></li>`); means.push(W.meanDy); }
+    const nextIso = String(data.next_earnings || '').slice(0, 10);
+    if (nextIso && nextIso >= today) tiles.push(`<li class="tile t-nx"><span class="tile__n">${esc(p.shortFull(nextIso, lang))}</span><span class="tile__l">${esc(W.tNext)}</span></li>`);
+    let hasRev = false;
+    if (q && q.rev[q.lastI] !== null && q.scale) {
+      const g = q.growth(q.rev);
+      tiles.push(`<li class="tile t-rv"><span class="tile__n">${esc(F.big(q.rev[q.lastI], q.scale, q.cur))}</span><span class="tile__l">${esc(nb(W.tRev(monthYear(q.cols[q.lastI]), g !== null ? F.signed(g) : '')))}</span></li>`);
+      hasRev = true;
+    }
+    if (tiles.length >= 2) {
+      stats = `<section class="stats" aria-labelledby="stats-h">
+<h2 id="stats-h">${esc(W.statsH(company, ticker))}</h2>
+${means.length ? `<p class="lead lead--sm">${esc(means.join(' '))}</p>` : ''}
+<ul class="tiles">${tiles.join('')}</ul>
+${priceDay ? `<p class="fine stats__src">${esc(hasRev ? W.statsSrc(priceDay) : W.statsSrcNoRev(priceDay))}</p>` : ''}
+</section>`;
+    }
+    if (!qSectionDone) {
+      const lq = lastQuarterSection();
+      if (lq) {
+        sections.push(`<section class="sec" aria-labelledby="q-h">
+<h2 id="q-h">${esc(W.qH(company))}</h2>
+<figure class="fig"><img src="${lq.svgName}" width="600" height="360" loading="lazy" decoding="async" alt="${esc(lq.alt)}"><figcaption>${esc(nb(lq.cap))}</figcaption></figure>
+${lq.tiles ? `<div class="growth" aria-label="${esc(W.growthAria(lq.qLabel))}">${lq.tiles}</div>` : ''}
+${p.earningsPath ? `<a class="more" href="${p.earningsPath}">${esc(W.earnLink(company))}</a>` : ''}
+${bridge(5, W.br5)}
+</section>`);
+      }
+    }
+  }
+
+  // ---- questions ----
+  const qa = [];
+  if (type === 'stock') {
+    if (f) {
+      const m3 = monthYear(f.cols[f.last]);
+      qa.push([W.q5(company), W.a5(m3, F.cell(f.rows.Bear[f.last], cur), F.cell(f.rows.Bull[f.last], cur), F.cell(f.rows.Weighted[f.last], cur))]);
+    }
+    const nextIso = String(data.next_earnings || '').slice(0, 10);
+    if (nextIso && nextIso >= today) qa.push([W.qNext(company), W.aNext(p.humanDay(nextIso, lang)), p.earningsPath ? [p.earningsPath, W.earnLink(company)] : null]);
+    if (p.dividendYield && priceDay) qa.push([W.qDiv(company), W.aDiv(priceDay, num(p.dividendYield)), p.dividendPath ? [p.dividendPath, W.divLink(company)] : null]);
+    if (rivalNames.length) {
+      const list = rivalNames.length > 1 ? `${rivalNames.slice(0, -1).join(', ')} ${W.and} ${rivalNames[rivalNames.length - 1]}` : rivalNames[0];
+      qa.push([W.qRiv(company), W.aRiv(company, list)]);
+    }
+    if (f) qa.push([W.qAn, W.aAn(company)]);
+  } else {
+    const nextIso = String(data.next_earnings || '').slice(0, 10);
+    if (nextIso && nextIso >= today) qa.push([W.eQWhen(company), W.eAWhen(p.humanDay(nextIso, lang), !!p.announced)]);
+    const prom = (page.blocks || []).map((b, i) => [b.table, aligned ? enBlocks[i]?.table : b.table]).find(([, e]) => e && /^Promises kept/.test(String(e.title || '')));
+    if (prom) {
+      const [t, e] = prom;
+      const r = e.rows[0], rt = (t && t.rows[0]) || r;
+      const [a, w, bl] = [2, 3, 4].map((c) => cellValue(r[c]));
+      if (![a, w, bl].some((x) => x === null)) qa.push([W.eQBeat(company), W.eABeat(tableLabel(rt[0]).toLowerCase() === tableLabel(rt[0]) ? tableLabel(rt[0]) : (lang === 'de' || lang === 'zh-HK' ? tableLabel(rt[0]) : tableLabel(rt[0]).charAt(0).toLowerCase() + tableLabel(rt[0]).slice(1)), String(rt[1] || r[1] || ''), a, w, bl)]);
+    }
+    if (f) {
+      const startV = cellValue(data.price);
+      if (startV !== null && priceDay) qa.push([W.eQStock(company, f.years[f.last]), W.eAStock(F.cell(f.rows.Weighted[f.last], cur), monthYear(f.cols[f.last]), F.price(startV, cur), priceDay), p.stockPath ? [p.stockPath, W.stockLink(company)] : null]);
+    }
+  }
+  if (qa.length) {
+    sections.push(`<section class="sec qa" aria-labelledby="faq-h">
+<h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : W.eQaH(company))}</h2>
+<div class="qa__grid">${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}</div>
+${type === 'stock' ? bridge(2, W.br2(company, rivalNames)) : ''}
+</section>`);
+  }
+
+  // ---- links ----
+  const chips = (a) => a.filter(Boolean).join('');
+  const filings = (p.sources || []).map((s) => `<a rel="nofollow noopener" href="${esc(s.url)}">${esc(s.label)}</a>`);
+  sections.push(`<section class="sec links" aria-labelledby="more-h">
+<h2 id="more-h">${esc(W.moreH(company, ticker))}</h2>
+<div class="links__grid">
+<div><h3>${esc(W.morePages(company))}</h3><div class="chips">${chips([...p.siblings, ...p.rivalLinks, ...p.compares])}</div></div>
+<div><h3>${esc(W.otherStocks)}</h3><div class="chips">${chips(p.hubs)}</div></div>
+${filings.length ? `<div><h3>${esc(W.filings(company))}</h3><div class="chips">${filings.join('')}</div></div>` : ''}
+</div>
+</section>`);
+
+  // ---- closing ----
+  const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
+<h2 id="close-h">${esc(type === 'stock' ? W.closeH : W.closeHEarn)}</h2>
+<p>${esc(W.closeSize(nCh, words, num(String(k.tables || 0))))}</p>
+<p>${esc(W.closeHow(company, num(String(k.sources || 0))))} <a href="/methodology/">${esc(W.howWork)}</a> · <a href="/corrections/">${esc(W.corrections)}</a></p>
+<a class="btn btn--mint btn--lg" id="closebtn" data-cta="close" href="${esc(p.cta)}">${esc(btn)}</a>
+${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : W.closeFootEarn(company))}</p>
+</div></section>`;
+
+  const bar = `<div class="bar" id="bar" aria-hidden="true"><span>${esc(W.barT(company))}${isFree ? `<small>${esc(W.barS)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" tabindex="-1" href="${esc(p.cta)}">${esc(W.readIt)}</a></div>`;
+
+  // ---- the viewer ----
+  let viewer = '';
+  if (fp) {
+    const locked = fp.full ? chapters : (p.chapters || []).filter((c) => String(c) !== fp.chapter);
+    const lockKey = (c) => (/^(\d+)\./.exec(String(c)) || [])[1] || 'x';
+    const rail = `<div><div class="rail__row"><span class="rail__ch">${chevOpen}</span><button type="button" class="rail__a is-on" data-goto="vtop">${esc(fp.full ? W.execSummary : fp.chapter)}</button></div>${fp.parts.length ? `<div class="rail__sub">${fp.parts.map((x) => `<button type="button" data-goto="${x.id}">${esc(x.label)}</button>`).join('')}</div>` : ''}</div>
+${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}</span><button type="button" class="rail__a" data-lock="${lockKey(c)}">${esc(c)}${lockSvg}</button></div></div>`).join('\n')}`;
+    const lockH = fp.full ? W.lockAll(nCh) : W.lockAllTeaser(nCh);
+    viewer = `<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="${esc(W.vTitle(company, p.memoDay))}" data-lock-all="${esc(lockH)}" data-lock-ch="${esc(W.lockCh)}" data-lock-one="${esc(W.lockOne)}" hidden>
+<div class="viewer__win" tabindex="-1">
+<div class="viewer__bar"><span class="viewer__title">${esc(W.vTitle(company, p.memoDay))}</span><button class="viewer__x" type="button" data-close-viewer aria-label="${esc(W.vClose)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+<div class="viewer__main">
+<aside class="rail" aria-label="${esc(W.vContents)}"><div class="rail__head">${esc(W.vContents)}</div><nav class="rail__nav" aria-label="${esc(W.vContents)}">${rail}</nav></aside>
+<div class="viewer__body" id="viewer-body"><div class="blog-report" lang="${esc(p.htmlLang)}"><div class="br-column">
+<header class="br-ui" id="vtop"><div class="br-kicker"><span>${esc(ticker)}</span>${exch ? `<span>· ${esc(exch)}</span>` : ''}<span>· ${esc(data.company || company)}</span></div>
+<p class="br-title">${esc(data.company || company)} (${esc(ticker)})</p>
+<div class="br-by"><span>${esc(W.research)}</span><time datetime="${memoIso}">${esc(W.updated(shortMemo))}</time></div></header>
+<aside class="br-ui br-disc" aria-label="${esc(W.discT)}"><div class="br-disc__t">${esc(W.discT)}</div><p>${esc(W.disc(ticker, p.memoDay, priceIso ? p.shortFull(priceIso, lang) : p.memoDay))}</p></aside>
+<div class="br-mt8"><section class="br-chapter"><p class="br-h2">${esc(fp.full ? W.execSummary : fp.chapter)}</p>
+<div class="memo-tables">${fp.html}</div>
+<div class="lock"><div class="lock__fade"></div><div class="lock__box" id="lockbox"><p class="lock__h" id="lock-h">${esc(lockH)}</p>
+<p>${esc(W.lockSize(words, num(String(k.tables || 0)), num(String(k.sources || 0)), company))}</p>${isFree ? `<p class="lock__free">${esc(W.free)}</p>` : ''}
+<ul>${locked.map((c) => `<li data-chapter="${lockKey(c)}">${esc(c)}</li>`).join('')}</ul></div></div>
+</section></div>
+</div></div></div>
+</div>
+<div class="viewer__foot"><a class="btn" data-cta="viewer" href="${esc(p.cta)}">${esc(isFree ? W.keepFree(company) : W.keepOld(company))}</a>${isFree ? `<small>${esc(W.free)}</small>` : ''}</div>
+</div>
+</div>`;
+  }
+
+  const body = `<main class="page" id="top">
+${top}
+${answer}
+${cta1}
+${frame}
+${stats}
+${sections.join('\n')}
+${close}
+</main>
+${bar}
+${viewer}`;
+  return { body, description, files, isFree };
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// The live strip and the header (every new page; the other page types keep their own header).
+// ---------------------------------------------------------------------------------------------------------------------------
+export function stripHtml(lang, strip, home) {
+  const W = WORDS[lang];
+  if (!strip || !strip.items.length) return '';
+  const li = (copy) => strip.items.map((s) => `<li><a${copy ? ' tabindex="-1"' : ''} href="${s.path}">${esc(s.name)} <span class="strip__tk">${esc(s.ticker)}</span></a></li>`).join('');
+  return `<div class="strip" role="region" aria-label="${esc(W.stripAria)}" data-nosnippet data-ago-now="${esc(W.ago.now)}" data-ago-min="${esc(W.ago.min)}" data-ago-hour1="${esc(W.ago.hour1)}" data-ago-hour="${esc(W.ago.hour)}">
+<div class="strip__lead"><a class="strip__ready" href="${home}"><span class="strip__dot" aria-hidden="true"></span>${esc(W.ready(strip.count))}${W.now ? `<span class="strip__now">${esc(W.now)}</span>` : ''}</a><span class="strip__latest" id="latest" hidden><span class="strip__sep" aria-hidden="true">·</span>${esc(W.latest)}&nbsp;<span class="strip__who"><b id="latest-name"></b><span class="strip__ago" id="latest-ago"></span></span></span></div>
+<div class="strip__tape" aria-label="${esc(W.tapeAria)}"><div class="strip__track" id="track"><ul class="strip__list">${li(false)}</ul><ul class="strip__list strip__list--copy" aria-hidden="true">${li(true)}</ul></div></div>
+</div>`;
+}
+
+export function headerHtml(lang, { home, allStocks, results, cta, landing }) {
+  const W = WORDS[lang];
+  return `<header class="site"><div class="site__in"><a class="brand" href="${landing}/" aria-label="${esc(W.home)}"><span class="brand__s" aria-hidden="true">S</span><span class="brand__n">MyStockButler</span></a>
+<nav class="nav" aria-label="Main"><a href="${home}">${esc(allStocks)}</a>${results ? `<a href="${results}">${esc(W.results)}</a>` : ''}</nav>
+<a class="btn btn--sm" data-cta="header" href="${esc(cta)}">${esc(W.headerBtn)}</a></div></header>`;
+}

@@ -17,6 +17,7 @@ import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
+import { PAGE_CSS_PATH, PAGE_JS_PATH, headerHtml, renderPage, stripHtml } from './stockPage.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -1134,7 +1135,7 @@ function langNav(lang) {
 // The visible byline in a page's date line: the name the JSON-LD's author gives, in the page's language, to the About page.
 const authorLink = (lang) => `<a href="${ABOUT_PATH[lang]}">${esc(UI[lang].by(AUTHOR.name))}</a>`;
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE }) {
+function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE, v2 = null }) {
   const ui = UI[lang];
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
   const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
@@ -1157,17 +1158,19 @@ ${imageTags(image)}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-${FONT_LINKS}<link rel="stylesheet" href="${CSS_PATH}">
+${FONT_LINKS}<link rel="stylesheet" href="${v2 ? v2.css : CSS_PATH}">
 <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>
 ${gaHead(meta)}</head>
-<body>
-<header class="site"><div class="in"><a class="logo" href="${LANDING}/"><i>S</i><span>My<b>Stock</b>Butler</span></a>
+<body${v2 ? ' class="v2"' : ''}>
+${v2 ? `${v2.strip}
+${headerHtml(lang, { home, allStocks: ui.allStocks, results: v2.results, cta: meta.cta || `${APP}/signup?src=seo-hub`, landing: LANDING })}` : `<header class="site"><div class="in"><a class="logo" href="${LANDING}/"><i>S</i><span>My<b>Stock</b>Butler</span></a>
 <nav class="hnav"><a class="lk" href="${home}">${ui.allStocks}</a><a class="lk" href="/">${ui.blog}</a>
-<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${esc(ui.headerCta)}</a></nav></div></header>
+<a class="btn" data-cta="header" href="${esc(meta.cta || `${APP}/signup?src=seo-hub`)}">${esc(ui.headerCta)}</a></nav></div></header>`}
 ${body}
 <footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="/methodology/">${esc(TRUST_LINK_WORDS[lang].methodology)}</a><a href="/corrections/">${esc(TRUST_LINK_WORDS[lang].corrections)}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
-</body>
+${v2 ? `<script src="${PAGE_JS_PATH}" defer></script>
+` : ''}</body>
 </html>
 `;
 }
@@ -1214,6 +1217,99 @@ function factUnit(fact, page, enPage) {
     && t.rows.every((r, i) => digitsOf(r[1]) === digitsOf(en.rows[i][1])));
   if (!twin || !twin.rows.some((r) => digitsOf(r[1]) && digitsOf(r[1]) === digitsOf(value))) return '';
   return twin.unit;
+}
+
+const V2_ON = process.env.STOCK_PAGE_V2 !== 'off';
+// The currency mark in a caption ('US$ per ADS', 'NT$ millions'): a closed list of our own codes (shape).
+const CUR_MARK = {
+  en: { USD: 'US$', CAD: 'C$', HKD: 'HK$', TWD: 'NT$', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
+  fr: { USD: '$ US', CAD: '$ CA', HKD: '$ HK', TWD: '$ NT', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
+  de: { USD: 'US$', CAD: 'C$', HKD: 'HK$', TWD: 'NT$', EUR: '€', GBP: '£', GBp: 'Pence', RMB: 'RMB' },
+  'zh-HK': { USD: '美元', CAD: '加元', HKD: '港元', TWD: '新台幣', EUR: '歐元', GBP: '英鎊', GBp: '便士', RMB: '人民幣' },
+};
+function shortFull(iso, lang) {
+  const m = Number(iso.slice(5, 7)) - 1;
+  const d = Number(iso.slice(8, 10));
+  const y = iso.slice(0, 4);
+  if (lang === 'zh-HK') return `${y}年${m + 1}月${d}日`;
+  if (lang === 'fr') return `${d} ${MON_FR[m]} ${y}`;
+  if (lang === 'de') return `${d}. ${MON_DE[m]} ${y}`;
+  return `${MON_EN[m]} ${d}, ${y}`;
+}
+function weekday(iso, lang) {
+  return new Date(`${iso}T12:00:00Z`).toLocaleDateString(UI[lang].locale, { weekday: 'long', timeZone: 'UTC' });
+}
+// A dividend yield the report prints (our own row and fact labels: shape), from the stock page, then the dividend page.
+function dividendYieldOf(data) {
+  for (const t of ['stock', 'dividend']) {
+    const pg = data.pages?.[t];
+    if (!pg) continue;
+    const fact = (pg.facts || []).find((f) => /^Dividend yield/.test(String(f.label)) && /%$/.test(String(f.value).trim()));
+    if (fact) return String(fact.value).trim().replace(/(\d)%$/, '$1 %');
+    for (const b of pg.blocks || []) {
+      const r = (b.table?.rows || []).find((x) => /^Dividend yield( \(calculated\))?$/.test(labelOf(x[0])) && /%$/.test(String(x[1]).trim()));
+      if (r && b.table.head.length === 2) return String(r[1]).trim().replace(/(\d)%$/, '$1 %');
+    }
+  }
+  return '';
+}
+// The first row of the company's guidance table with a range: the drivers' 'next test' line (the earnings page's own table).
+function guidanceRowOf(data, lang) {
+  const en = data.pages?.earnings;
+  const tr = lang === 'en' ? en : langPage(data, 'earnings', lang);
+  if (!en || !tr) return null;
+  const i = (en.blocks || []).findIndex((b) => /^Guidance in force/.test(String(b.table?.title || '')));
+  const t = i >= 0 ? (lang === 'en' || (tr.blocks || []).length === en.blocks.length ? tr.blocks[i]?.table : null) : null;
+  if (!t || (t.rows || []).length !== en.blocks[i].table.rows.length) return null;
+  const r = t.rows.find((x) => String(x[2] || '').trim() && String(x[3] || '').trim());
+  if (!r) return null;
+  const lo = String(r[2]).trim(), hi = String(r[3]).trim();
+  return { label: labelOf(r[0]), period: String(r[1] || '').trim(), value: lo === hi ? lo : `${lo}–${hi}`, date: String(r[4] || '').trim() };
+}
+// The strip's names: the newest reports in this build with a stock page in the page's language, and the count rounded down.
+function stripOf(ctx, lang) {
+  ctx.stripCache = ctx.stripCache || {};
+  // the gate's passes hold pages back: a cached list is kept only while every page it links still exists
+  if (ctx.stripCache[lang] && ctx.stripCache[lang].items.every((i) => ctx.exists(i.path))) return ctx.stripCache[lang];
+  const all = [...ctx.bySlug.values()];
+  const items = all.filter((c) => ctx.exists(pagePath(c.slug, 'stock', lang)))
+    .sort((a, b) => String(b.memo_date).localeCompare(String(a.memo_date))).slice(0, 12)
+    .map((c) => ({ path: pagePath(c.slug, 'stock', lang), name: shortName(c), ticker: c.ticker }));
+  const n = all.length;
+  ctx.stripCache[lang] = { count: n >= 100 ? `${Math.floor(n / 100) * 100}+` : String(n), items };
+  return ctx.stripCache[lang];
+}
+function renderV2(data, type, ctx, lang, o) {
+  const ui = UI[lang];
+  const fr = lang !== 'en';
+  const has = o.has;
+  const sources = o.sources.map((s) => {
+    let label = fr ? '' : s.title;
+    if (!label || /^https?:/.test(label)) {
+      try { label = ui.filingOn(new URL(s.url).hostname.replace(/^www\./, '')); } catch { label = ui.filing; }
+    }
+    return { url: s.url, label };
+  });
+  const rivalNames = (data.rivals || []).map((r) => ctx.bySlug.get(ctx.slugOf(r))).filter((r) => r && r.slug !== data.slug).map((r) => shortName(r));
+  const announcedRow = lang === 'en' || lang === 'fr' || lang === 'de' || lang === 'zh-HK' ? (ctx.earningsDates || {})[data.slug] : null;
+  const strip = stripOf(ctx, lang);
+  const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
+  const resultsPath = lang === 'en' ? '/stocks/reporting-this-week/' : '';
+  const out = renderPage({
+    data, type, lang, page: o.page, enPage: data.pages[type], company: o.company, ticker: o.ticker, h1: o.h1, cta: o.cta, crumbsHtml: o.crumbs.html,
+    memoDay: o.memoDay, teaser: o.teaser, chapters: fr ? data.translations[lang].chapters : data.chapters, sources,
+    siblings: o.siblings, rivalLinks: o.rivals, compares: o.compares, hubs: o.hubs, rivalNames, today: ctx.today, htmlLang: ui.htmlLang,
+    announced: !!(announcedRow && isoDay(announcedRow.date) === isoDay(data.next_earnings)),
+    earningsPath: has('earnings', lang) ? pagePath(data.slug, 'earnings', lang) : '', dividendPath: has('dividend', lang) ? pagePath(data.slug, 'dividend', lang) : '',
+    stockPath: has('stock', lang) ? pagePath(data.slug, 'stock', lang) : '',
+    dividendYield: dividendYieldOf(data), guidanceRow: guidanceRowOf(data, lang),
+    num: ui.num, money: (v, c, l) => money(v, c, l), humanDay, shortFull, weekday, dateWords: (t) => ui.date(t), curWord: (c) => (CUR_MARK[lang] || CUR_MARK.en)[c] || c,
+    caseWord: (n) => caseWord(data, lang, n), mdBlock, langPage, authorLink: authorLink(lang),
+  });
+  const forecast = out.files.find((f) => f.name === 'forecast.svg');
+  return { ...out, css: type === 'earnings' ? '/stocks/assets/page-earnings.css' : PAGE_CSS_PATH,
+    strip: stripHtml(lang, strip, home), results: resultsPath && ctx.exists(resultsPath) ? resultsPath : '',
+    image: forecast ? `${SITE}${pagePath(data.slug, type, lang)}forecast.svg` : '' };
 }
 
 export function renderCompanyPage(data, type, ctx, lang = 'en') {
@@ -1348,16 +1444,25 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     inLanguage: ui.htmlLang,
     ...(picture ? { image: pictureObject(picture) } : {}),
   };
+  // B115 (owner 2026-11-03 'Wire everything and publish'): the stock forecast and earnings pages in the approved new design
+  // (stockPage.mjs); STOCK_PAGE_V2=off draws them as before.
+  const v2 = (type === 'stock' || type === 'earnings') && V2_ON ? renderV2(data, type, ctx, lang, {
+    page, company, ticker, cta, crumbs, memoDay, h1: titleWithTicker(page.title, data), teaser: teaserData, sources, siblings, rivals, compares, hubs, has,
+  }) : null;
+  if (v2) {
+    article.description = v2.description || page.meta_description;
+  }
   const html = shell({
     title,
-    description: page.meta_description,
+    description: v2 ? v2.description || page.meta_description : page.meta_description,
     canonical: url,
     lang,
     alternates,
     ...(picture ? { image: shareImage(picture) } : {}),
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
     meta: { type, ticker, cta, lang, label: `${company} ${TYPE_NAMES[type].toLowerCase()}` },
-    body: `<div class="layout"><article>
+    ...(v2 ? { v2: { css: v2.css, strip: v2.strip, results: v2.results } } : {}),
+    body: v2 ? v2.body : `<div class="layout"><article>
 ${crumbs.html}
 <div class="kicker"><span>${esc(ui.kicker)}</span><span>${esc(data.company || company)} (${esc(ticker)})${data.exchange ? ` · ${esc(data.exchange)}` : ''}</span><span>${esc(ui.memoOf)} ${esc(memoDay)}</span><span>${authorLink(lang)}</span></div>
 <h1>${esc(page.title)}</h1>
@@ -1374,8 +1479,8 @@ ${chaptersRail(data, cta, lang, fr ? data.translations[lang].chapters : null)}</
 <div class="bar"><div class="t">${esc(ui.rail(company))}<span>${esc(ui.sticky)}</span></div><a class="btn" data-cta="sticky" href="${esc(cta)}">${ui.readIt}</a></div>`,
   });
   const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
-  return { path, url, type, lang, slug, ticker, title, modelTitle, datedKind, description: page.meta_description, lastmod: isoDay(data.memo_date),
-    alternates, html, outLinks, page, data, picture, pictureNone: pictured?.none || '',
+  return { path, url, type, lang, slug, ticker, title, modelTitle, datedKind, description: v2 ? v2.description || page.meta_description : page.meta_description, lastmod: isoDay(data.memo_date),
+    alternates, html, outLinks, page, data, picture, pictureNone: pictured?.none || '', v2: !!v2, files: v2 ? v2.files : [],
     // the same page with the inline chart and the share picture, for a picture that could not be drawn
     withoutPicture: () => renderCompanyPage(data, type, { ...ctx, pictures: false }, lang) };
 }
@@ -1609,9 +1714,14 @@ export function gatePage(built, ctx) {
   const descText = textOf(desc);
   const descMax = fr ? 200 : 155;                   // French and German run about a fifth longer than the English
   if (!descText || descText.length > descMax) fails.push(`meta description is ${descText.length} characters (1 to ${descMax})`);
+  // B115: the new pages print our own description; the page writer's is still held to its length, so the same pages publish
+  const modelDesc = textOf(esc(page.meta_description || ''));
+  if (built.v2 && modelDesc !== descText && (!modelDesc || modelDesc.length > descMax)) fails.push(`meta description is ${modelDesc.length} characters (1 to ${descMax})`);
   const h1 = (html.match(/<h1[ >]/g) || []).length;
   if (h1 !== 1) fails.push(`${h1} h1`);
-  const h2s = [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/g)].map((m) => textOf(m[1]));
+  // B115: on the new pages the page writer's headings are the sections' H2s (the page's own fixed headings, key numbers, links,
+  // closing, are template words): the same rule reads the writer's headings, as it did on the old page.
+  const h2s = built.v2 ? page.blocks.map((b) => textOf(esc(b.heading))) : [...html.matchAll(/<h2>([\s\S]*?)<\/h2>/g)].map((m) => textOf(m[1]));
   if (!h2s.length || h2s.some((h) => !/[?？]$/.test(h))) fails.push('an h2 is not a question');
   const canonical = (/<link rel="canonical" href="([^"]*)"/.exec(html) || [])[1] || '';
   if (canonical !== built.url) fails.push('canonical is not the page itself');
@@ -1628,11 +1738,16 @@ export function gatePage(built, ctx) {
   }
   // Static text: the opening and every chosen paragraph are in the HTML itself (crawlers do not run scripts).
   const visible = textOf(html);
-  if (!visible.includes(textOf(esc(page.opening)))) fails.push('the opening is not in the static HTML');
-  // The first 100 words of the article answer with a number (the passage an AI answer quotes).
+  // The first 100 words of the article answer with a number (the passage an AI answer quotes). B115: the new pages answer with
+  // the answer box (our forecast, the next results date and the last results), not the model's opening, which they do not print.
   const articleText = textOf((/<h1[\s\S]*?<\/h1>([\s\S]*)/.exec(html) || [])[1] || '');
   const first100 = articleText.split(' ').slice(0, 100).join(' ');
-  if (!first100.includes(textOf(esc(page.opening)).slice(0, 40)) || !/\d/.test(first100)) fails.push('the first 100 words do not carry the answer with a number');
+  if (built.v2) {
+    if (!/<section class="answer[ "]/.test(html) || !/\d/.test(first100)) fails.push('the first 100 words do not carry the answer with a number');
+  } else {
+    if (!visible.includes(textOf(esc(page.opening)))) fails.push('the opening is not in the static HTML');
+    if (!first100.includes(textOf(esc(page.opening)).slice(0, 40)) || !/\d/.test(first100)) fails.push('the first 100 words do not carry the answer with a number');
+  }
   // Existence (re-run on the HTML): every number a model wrote is printed in the memo text the page shows.
   const memoText = [
     ...page.blocks.flatMap((b) => [...(b.paragraphs || []).map((p) => p.text), ...(b.table ? [b.table.head.join(' '), ...b.table.rows.map((r) => r.join(' '))] : [])]),
