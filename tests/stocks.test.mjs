@@ -425,8 +425,10 @@ test("a translated page links its own library's English hub; the hubs name every
   assert.match(fr.html, /href="\/stocks\/cac40\/" hreflang="en">CAC 40 \(English\)</);
   assert.ok(!fr.html.includes('/stocks/tsx60/'), 'a CAC 40 page never links the TSX 60 hub');
   assert.ok(hubs.some((h) => h.path === '/stocks/cac40/'), 'the CAC 40 has its English hub');
-  assert.match(hubs.find((h) => h.path === '/fr/stocks/').html, /<p class="lede">Chaque société pour laquelle nous avons un mémo de recherche \(S&amp;P\/TSX 60, CAC 40\) : 2 sociétés\.<\/p>/);
-  assert.match(hubs.find((h) => h.path === '/de/aktien/').html, /\(S&amp;P 500\): 1 Unternehmen\./);
+  // B115: the new list pages name their libraries in the description and count their companies in the answer box
+  assert.match(hubs.find((h) => h.path === '/fr/stocks/').html, /<meta name="description" content="Prévisions, dividendes et prochains résultats de 2 sociétés \(S&amp;P\/TSX 60, CAC 40\)/);
+  assert.match(hubs.find((h) => h.path === '/fr/stocks/').html, /<span class="answer__n">2<\/span><span class="lans__unit">sociétés avec un rapport complet<\/span>/);
+  assert.match(hubs.find((h) => h.path === '/de/aktien/').html, /<meta name="description" content="[^"]*\(S&amp;P 500\)/);
 });
 
 // B110 SEO (owner 2026-10-23 'make sure we are OPTIMIZED for SEO and AEO in all those languages')

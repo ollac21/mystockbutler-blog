@@ -1828,3 +1828,192 @@ ${close}
 ${bar}
 ${viewer}`;
 }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// THE LIST PAGES (b115-cats/lists/sp500.html, its TABLE.md and COPY.md; owner 2026-11-03 "Ok for all"): every index, letter,
+// dividend and language list. The counts are the build's own; a row's forecast shows only when it is consistent with its price
+// (the report's price dated, the chances summing to 100 %, the bear case under the price, the weighted price between bear and bull).
+// ---------------------------------------------------------------------------------------------------------------------------
+export const LIST_WORDS = {
+  en: {
+    by: (a, b) => `Reports of ${a} to ${b}`, how: 'How our reports are made',
+    label: (x) => (x ? `${x} stocks in our reports` : 'Stocks in our reports'), unit: (x) => (x ? `${x} companies with a full report` : 'companies with a full report'),
+    sub: (a, b, nf, y) => `Written from ${a} to ${b}. ${nf} carry a forecast to ${y}, and every row shows its dates.`,
+    v1: (g, nf, y) => [`${g} of ${nf}`, `forecasts show a gain by ${y}`, 'See both ends'], v2: (n, a, b) => [`${n}`, `report earnings ${a} to ${b}`, 'See them'], v3: (n) => [`${n}`, 'pay a dividend', 'Highest first'],
+    listH: (x) => (x ? `Which stocks are in the ${x}? The list, A to Z` : 'The list, A to Z'),
+    lead: (n) => `Here are the ${n} companies with a report, A to Z. Search a name, tap a letter, or sort by forecast, earnings date or dividend yield.`,
+    find: 'Find a company or ticker', vAz: 'A–Z', vRet: 'Forecast vs price', vWeek: (a, b) => `Results ${a}–${b}`, vDy: 'Dividend yield', vMemo: 'Newest report',
+    note: 'These are cases from our reports, not picks.', hCo: 'Company', hFc: 'Our forecast, dated', hRep: 'Report', hRes: 'Results, expected', hDy: 'Yield', hPg: 'Pages',
+    rBy: (m) => `by ${m}`, rFrom: (p, d) => `from ${p} on ${d}`, rRep: 'Report', rRes: 'Results', rExp: 'expected', rDy: 'Yield', azAria: (l, n) => `Companies starting with ${l}: ${n}`, azDigit: 'a digit',
+    status: { shown: 'Showing {n} of {total}', az: 'A to Z', ret: 'highest forecast return first', week: 'results due {a} to {b} (expected dates), soonest first', dy: 'highest dividend yield first', memo: 'newest report first', letter: 'letter {l}', empty: 'No company in this list matches.' },
+    insideH: (c) => `What does a full report look like? ${c}'s first page`,
+    closeH: 'This list gives the numbers. Each report gives the reasons.',
+    closeP: (n) => `Each report: an executive summary and 8 chapters, built from the company's filings. ${n} companies on this list have one.`,
+    foot: 'Information only, not investment advice. Each forecast gives three cases with their chances; it promises no price. Prices are those of the date shown.',
+    moreH: 'More lists',
+  },
+  fr: {
+    by: (a, b) => `Rapports du ${a} au ${b}`, how: 'Comment nos rapports sont faits',
+    label: (x) => (x ? `Actions du ${x} dans nos rapports` : 'Actions dans nos rapports'), unit: (x) => (x ? `sociétés du ${x} avec un rapport complet` : 'sociétés avec un rapport complet'),
+    sub: (a, b, nf, y) => `Rédigés du ${a} au ${b}. ${nf} portent une prévision jusqu’en ${y}, et chaque ligne donne ses dates.`,
+    v1: (g, nf, y) => [`${g} sur ${nf}`, `prévisions en hausse d’ici ${y}`, 'Voir les deux bouts'], v2: (n, a, b) => [`${n}`, `publient leurs résultats du ${a} au ${b}`, 'Les voir'], v3: (n) => [`${n}`, 'versent un dividende', 'Le plus élevé d’abord'],
+    listH: () => 'La liste, de A à Z',
+    lead: (n) => `Voici les ${n} sociétés avec un rapport, de A à Z. Cherchez un nom, touchez une lettre ou triez par prévision, date de résultats ou rendement.`,
+    find: 'Trouver une société ou un symbole', vAz: 'A–Z', vRet: 'Prévision vs cours', vWeek: (a, b) => `Résultats ${a}–${b}`, vDy: 'Rendement du dividende', vMemo: 'Rapport le plus récent',
+    note: 'Ce sont des scénarios de nos rapports, pas des recommandations.', hCo: 'Société', hFc: 'Notre prévision, datée', hRep: 'Rapport', hRes: 'Résultats, attendus', hDy: 'Rendement', hPg: 'Pages',
+    rBy: (m) => `d’ici ${m}`, rFrom: (p, d) => `depuis ${p} le ${d}`, rRep: 'Rapport', rRes: 'Résultats', rExp: 'attendus', rDy: 'Rendement', azAria: (l, n) => `Sociétés commençant par ${l} : ${n}`, azDigit: 'un chiffre',
+    status: { shown: '{n} sur {total}', az: 'de A à Z', ret: 'la plus forte prévision d’abord', week: 'résultats du {a} au {b} (dates attendues), les plus proches d’abord', dy: 'le plus fort rendement d’abord', memo: 'le rapport le plus récent d’abord', letter: 'lettre {l}', empty: 'Aucune société de cette liste ne correspond.' },
+    insideH: (c) => `À quoi ressemble un rapport complet ? La première page de ${c}`,
+    closeH: 'Cette liste donne les chiffres. Chaque rapport donne les raisons.',
+    closeP: (n) => `Chaque rapport : un sommaire et 8 chapitres, bâtis à partir des documents de la société. ${n} sociétés de cette liste en ont un.`,
+    foot: 'Information seulement, pas un conseil en placement. Chaque prévision donne trois scénarios avec leur probabilité ; elle ne promet aucun cours. Les cours sont ceux de la date indiquée.',
+    moreH: 'Autres listes',
+  },
+  de: {
+    by: (a, b) => `Berichte vom ${a} bis ${b}`, how: 'So entstehen unsere Berichte',                                                   // "Reports of a to b", "How our reports are made"
+    label: (x) => (x ? `${x}-Aktien in unseren Berichten` : 'Aktien in unseren Berichten'), unit: (x) => (x ? `${x}-Unternehmen mit vollständigem Bericht` : 'Unternehmen mit vollständigem Bericht'),
+    sub: (a, b, nf, y) => `Geschrieben vom ${a} bis ${b}. ${nf} enthalten eine Prognose bis ${y}, und jede Zeile nennt ihre Daten.`,  // "Written from a to b. nf carry a forecast to y…"
+    v1: (g, nf, y) => [`${g} von ${nf}`, `Prognosen zeigen ein Plus bis ${y}`, 'Beide Enden ansehen'], v2: (n, a, b) => [`${n}`, `legen Zahlen vor, ${a} bis ${b}`, 'Ansehen'], v3: (n) => [`${n}`, 'zahlen eine Dividende', 'Höchste zuerst'],
+    listH: () => 'Die Liste, von A bis Z',                                                                                     // "The list, A to Z"
+    lead: (n) => `Hier sind die ${n} Unternehmen mit Bericht, von A bis Z. Suchen Sie einen Namen, tippen Sie einen Buchstaben oder sortieren Sie nach Prognose, Termin oder Dividendenrendite.`,
+    find: 'Unternehmen oder Kürzel finden', vAz: 'A–Z', vRet: 'Prognose gegen Kurs', vWeek: (a, b) => `Zahlen ${a}–${b}`, vDy: 'Dividendenrendite', vMemo: 'Neuester Bericht',   // sort views
+    note: 'Das sind Szenarien aus unseren Berichten, keine Empfehlungen.', hCo: 'Unternehmen', hFc: 'Unsere Prognose, datiert', hRep: 'Bericht', hRes: 'Zahlen, erwartet', hDy: 'Rendite', hPg: 'Seiten',
+    rBy: (m) => `bis ${m}`, rFrom: (p, d) => `ab ${p} am ${d}`, rRep: 'Bericht', rRes: 'Zahlen', rExp: 'erwartet', rDy: 'Rendite', azAria: (l, n) => `Unternehmen mit ${l}: ${n}`, azDigit: 'einer Ziffer',
+    status: { shown: '{n} von {total}', az: 'A bis Z', ret: 'höchste Prognose zuerst', week: 'Zahlen vom {a} bis {b} (erwartete Termine), nächste zuerst', dy: 'höchste Dividendenrendite zuerst', memo: 'neuester Bericht zuerst', letter: 'Buchstabe {l}', empty: 'Kein Unternehmen dieser Liste passt.' },
+    insideH: (c) => `Wie sieht ein vollständiger Bericht aus? Die erste Seite zu ${c}`,                                         // "What does a full report look like? C's first page"
+    closeH: 'Diese Liste gibt die Zahlen. Jeder Bericht gibt die Gründe.',                                                     // "This list gives the numbers. Each report gives the reasons."
+    closeP: (n) => `Jeder Bericht: eine Zusammenfassung und 8 Kapitel, aus den Unterlagen des Unternehmens. ${n} Unternehmen dieser Liste haben einen.`,
+    foot: 'Nur zur Information, keine Anlageberatung. Jede Prognose gibt drei Szenarien mit ihrer Wahrscheinlichkeit; sie verspricht keinen Kurs. Kurse sind die des angegebenen Datums.',
+    moreH: 'Weitere Listen',                                                                                                   // "More lists"
+  },
+  'zh-HK': {
+    by: (a, b) => `報告日期：${a}至${b}`, how: '我們的報告如何製作',                                                                // "Reports of a to b", "How our reports are made"
+    label: (x) => (x ? `我們報告中的${x}股票` : '我們報告中的股票'), unit: () => '家公司有完整報告',                                     // "x stocks in our reports", "companies with a full report"
+    sub: (a, b, nf, y) => `報告寫於${a}至${b}。其中 ${nf} 份有至${y}年的預測，每一行都列出日期。`,                                       // "Written from a to b. nf carry a forecast to y…"
+    v1: (g, nf, y) => [`${nf} 中的 ${g}`, `份預測顯示至${y}年上升`, '看兩端'], v2: (n, a, b) => [`${n}`, `家於${a}至${b}公布業績`, '查看'], v3: (n) => [`${n}`, '家有派息', '最高優先'],
+    listH: () => '名單（A 至 Z）',                                                                                               // "The list, A to Z"
+    lead: (n) => `以下是 ${n} 家有報告的公司，按 A 至 Z 排列。可搜尋名稱、點選字母，或按預測、業績日期或股息率排序。`,
+    find: '尋找公司或股票代號', vAz: 'A–Z', vRet: '預測與股價', vWeek: (a, b) => `業績 ${a}–${b}`, vDy: '股息率', vMemo: '最新報告',          // sort views
+    note: '這些是我們報告中的情境，並非推介。', hCo: '公司', hFc: '我們的預測（附日期）', hRep: '報告', hRes: '業績（預計）', hDy: '股息率', hPg: '頁面',
+    rBy: (m) => `至${m}`, rFrom: (p, d) => `由 ${d} 的 ${p} 起計`, rRep: '報告', rRes: '業績', rExp: '預計', rDy: '股息率', azAria: (l, n) => `以 ${l} 開頭的公司：${n}`, azDigit: '數字',
+    status: { shown: '顯示 {total} 家中的 {n} 家', az: 'A 至 Z', ret: '預測回報最高優先', week: '{a}至{b}公布業績（預計日期），最近優先', dy: '股息率最高優先', memo: '最新報告優先', letter: '字母 {l}', empty: '此名單沒有相符的公司。' },
+    insideH: (c) => `完整報告是怎樣的？${c} 報告的第一頁`,                                                                          // "What does a full report look like? C's first page"
+    closeH: '這份名單給出數字，每份報告給出理由。',                                                                                  // "This list gives the numbers. Each report gives the reasons."
+    closeP: (n) => `每份報告：一份摘要及 8 章，根據公司的公開文件寫成。此名單上 ${n} 家公司各有一份。`,
+    foot: '僅供參考，並非投資建議。每個預測給出三個情境及其機率，並不承諾任何股價。股價為所示日期的價格。',
+    moreH: '更多名單',                                                                                                            // "More lists"
+  },
+};
+
+// a company's forecast for a list row, only when it is consistent with its price
+export function listForecast(c, start) {
+  const f = forecastOf(c);
+  if (!f || !start || !start.day) return null;
+  const L = f.last, w = f.rows.Weighted[L], bear = f.rows.Bear[L].v, bull = f.rows.Bull[L].v;
+  const sum = ['Bear', 'Base', 'Bull'].reduce((x, k) => x + (cellValue(f.prob[k]) || 0), 0);
+  if (Math.abs(sum - 100) > 0.6 || bear > start.value || w.v < Math.min(bear, bull) || w.v > Math.max(bear, bull) || w.r === null) return null;
+  return { f, w, col: f.cols[L] };
+}
+
+export function renderListBody(q) {
+  const { lang, list } = q;
+  const W = LIST_WORDS[lang], WW = WORDS[lang];
+  const F = makeFmt(lang, q.num, q.money);
+  const rows = list.map((c) => {
+    const start = q.startOf(c);
+    const fc = listForecast(c, start);
+    const next = String(c.next_earnings || '').slice(0, 10);
+    const dy = q.yieldOf(c);
+    const dyv = dy ? cellValue(String(dy).replace(',', '.')) : null;
+    const name = q.shortName(c);
+    const letter = /^[A-Za-z]/.test(name) ? name[0].toUpperCase() : '#';
+    return { c, start, fc, next: next && next >= q.today ? next : '', dy: dyv === null ? '' : dy, dyv, name, letter, memo: String(c.memo_date || '').slice(0, 10) };
+  });
+  const memos = rows.map((r) => r.memo).filter(Boolean).sort();
+  const nf = rows.filter((r) => r.fc).length, ng = rows.filter((r) => r.fc && r.fc.w.r > 0).length;
+  const y3 = (rows.find((r) => r.fc) || { fc: { f: { years: [''], last: 0 } } }).fc.f.years.slice(-1)[0];
+  const d0 = q.today, d1 = new Date(Date.parse(`${q.today}T00:00:00Z`) + 6 * 864e5).toISOString().slice(0, 10);
+  const nweek = rows.filter((r) => r.next && r.next <= d1).length, ndiv = rows.filter((r) => r.dyv !== null && r.dyv > 0).length;
+  const sd = (iso) => q.shortFull(iso).replace(/,? \d{4}$/, '').replace(/ \d{4}年?$/, '');
+  const letters = {};
+  for (const r of rows) letters[r.letter] = (letters[r.letter] || 0) + 1;
+  const top = `<section class="top">
+${q.crumbsHtml}
+<h1>${esc(q.h1)}</h1>
+${memos.length ? `<p class="byline">${q.authorLink} · ${esc(W.by(q.shortFull(memos[0]), q.shortFull(memos[memos.length - 1])))}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a></p>` : ''}
+</section>`;
+  const view = (k, t) => `<li><button class="lans__v" type="button" data-jump="${k}"><b>${esc(t[0])}</b><span>${esc(t[1])}</span><i>${esc(t[2])}</i></button></li>`;
+  const answer = `<section class="answer lans" id="ansbox" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">${esc(q.h1)}</h2>
+<p class="answer__label">${esc(W.label(q.index))}</p>
+<p class="lans__big"><span class="answer__n">${esc(q.num(rows.length.toLocaleString('en-US')))}</span><span class="lans__unit">${esc(W.unit(q.index))}</span></p>
+${memos.length && nf ? `<p class="lans__sub">${esc(W.sub(q.humanDay(memos[0]), q.humanDay(memos[memos.length - 1]), q.num(String(nf)), y3))}</p>` : ''}
+<ul class="lans__views">${nf ? view('ret', W.v1(q.num(String(ng)), q.num(String(nf)), y3)) : ''}${nweek ? view('week', W.v2(q.num(String(nweek)), sd(d0), sd(d1))) : ''}${ndiv ? view('dy', W.v3(q.num(String(ndiv)))) : ''}</ul>
+</section>`;
+  // the company's pages in the list's language, then (on an English index list) its pages in the other languages, as the old list linked them
+  const pageLinks = (c) => ['stock', 'earnings', 'dividend'].filter((t) => q.hasPage(c, t)).map((t) => `<a href="${q.pagePath(c.slug, t)}">${esc(q.types[t])}</a>`).join('') + (q.otherLinks ? q.otherLinks(c) : '');
+  const rowHtml = (r) => {
+    const c = r.c, first = ['stock', 'earnings', 'dividend'].find((t) => q.hasPage(c, t));
+    const cur = c.currency;
+    const fcHtml = r.fc ? `<div class="row__fc"><span class="row__val">${esc(F.cell(r.fc.w, cur))}</span><span class="row__by">${esc(W.rBy(q.dateWords(`${r.fc.col.slice(0, 3)} ${r.fc.col.slice(-4)}`)))}</span><span class="row__dt">${esc(W.rFrom(F.price(r.start.value, cur), sd(r.start.day)))}</span><span class="pill${r.fc.w.r < 0 ? ' pill--neg' : ''} pill--ph">${esc(nb(F.signed(r.fc.w.r)))}</span></div><span class="pill${r.fc.w.r < 0 ? ' pill--neg' : ''} pill--dk">${esc(nb(F.signed(r.fc.w.r)))}</span><p class="row__from">${esc(W.rFrom(F.price(r.start.value, cur), sd(r.start.day)))}</p>` : '<div class="row__fc"></div><span></span>';
+    return `<li class="row" data-sort="${esc(r.name.toLowerCase())}" data-name="${esc(`${r.name} ${c.ticker} ${c.company || ''}`.toLowerCase())}" data-letter="${r.letter}" data-ret="${r.fc ? Math.round(r.fc.w.r) : ''}" data-next="${r.next}" data-dy="${r.dyv === null ? '' : r.dyv}" data-memo="${r.memo}" data-label="${esc(r.name)}">
+<div class="row__who"><a class="row__name" href="${first ? q.pagePath(c.slug, first) : '#'}">${esc(r.name)}</a><span class="row__tk">${esc(c.ticker)}${c.exchange ? ` · ${esc(c.exchange)}` : ''}</span></div>
+${fcHtml}
+<div class="row__meta"><span class="m m--rep"><i>${esc(W.rRep)}</i>${esc(q.shortFull(r.memo))}</span>${r.next ? `<span class="m m--res"><i>${esc(W.rRes)}</i>${esc(q.shortFull(r.next))}<em>${esc(W.rExp)}</em></span>` : ''}${r.dy ? `<span class="m m--dy"><i>${esc(W.rDy)}</i>${esc(nb(q.num(String(r.dy).replace(/(\d)%$/, '$1 %'))))}</span>` : ''}</div>
+<div class="row__links">${pageLinks(c)}</div>
+</li>`;
+  };
+  const az = ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map((l) => `<button type="button"${letters[l] ? ' class="has"' : ' disabled'} data-letter="${l}" aria-pressed="false" aria-label="${esc(W.azAria(l === '#' ? W.azDigit : l, letters[l] || 0))}">${l}</button>`).join('');
+  const st = W.status;
+  const listSec = `<section class="sec lst" id="list" aria-labelledby="list-h">
+<h2 id="list-h">${esc(W.listH(q.index))}</h2>
+<p class="lead">${esc(W.lead(q.num(String(rows.length))))}</p>
+<div class="ctl"><div class="ctl__top"><label class="find"><span class="sr">${esc(W.find)}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="${esc(W.find)}" autocomplete="off" enterkeyhint="search"></label>
+<div class="views" role="group" aria-label="${esc(W.vAz)}"><button class="view" type="button" data-view="az" aria-pressed="true">${esc(W.vAz)}</button>${nf ? `<button class="view" type="button" data-view="ret" aria-pressed="false">${esc(W.vRet)}</button>` : ''}${nweek ? `<button class="view" type="button" data-view="week" aria-pressed="false">${esc(W.vWeek(sd(d0), sd(d1)))}</button>` : ''}${ndiv ? `<button class="view" type="button" data-view="dy" aria-pressed="false">${esc(W.vDy)}</button>` : ''}<button class="view" type="button" data-view="memo" aria-pressed="false">${esc(W.vMemo)}</button></div></div>
+<nav class="az" aria-label="${esc(W.vAz)}">${az}</nav></div>
+<p class="vnote">${esc(W.note)}</p>
+<p class="status" id="status" aria-live="polite"></p>
+<div class="hd-row"><button class="hd" type="button" data-view="az" aria-sort="ascending">${esc(W.hCo)}</button><button class="hd" type="button" data-view="ret" aria-sort="none">${esc(W.hFc)}</button><span></span><button class="hd" type="button" data-view="memo" aria-sort="none">${esc(W.hRep)}</button><button class="hd" type="button" data-view="week" aria-sort="none">${esc(W.hRes)}</button><button class="hd hd--r" type="button" data-view="dy" aria-sort="none">${esc(W.hDy)}</button><span class="hd-plain" style="justify-self:end">${esc(W.hPg)}</span></div>
+<ol class="rows" id="rows" data-na="8" data-total="${rows.length}" data-week="${d0}/${d1}" data-week-words="${esc(st.week.replace('{a}', sd(d0)).replace('{b}', sd(d1)))}" data-st='${esc(JSON.stringify(st))}'>
+${rows.map(rowHtml).join('\n')}
+</ol>
+<p class="empty" id="empty" hidden></p>
+</section>`;
+  // the featured report: the newest report of the list with its first page, else the newest with a teaser
+  const byNew = [...rows].sort((a, b) => b.memo.localeCompare(a.memo));
+  const feat = (byNew.find((r) => q.teaserOf(r.c)?.first_page) || byNew.find((r) => q.teaserOf(r.c)?.text) || {}).c;
+  let inside = '', cta1 = '';
+  if (feat) {
+    const fp = firstPage(q.teaserOf(feat), WW);
+    const fname = q.shortName(feat), memo = String(feat.memo_date || '').slice(0, 10);
+    const age = (Date.parse(`${q.today}T00:00:00Z`) - Date.parse(`${memo}T00:00:00Z`)) / 864e5;
+    const free = age < FREE_DAYS;
+    const cta = q.ctaOf(feat);
+    cta1 = `<section class="cta1" id="cta1" aria-label="${esc(free ? WW.btnFree(fname) : WW.btnOld(fname))}"><div class="cta1__row"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" href="${esc(cta)}">${esc(free ? WW.btnFree(fname) : WW.btnOld(fname))}</a></div>${free ? `<p class="free">${esc(WW.free)}</p>` : ''}</section>`;
+    const len = String(feat.ticker).length;
+    if (fp) inside = `<aside class="inside inside--peek" aria-labelledby="inside-h">
+<h2 id="inside-h">${esc(W.insideH(fname))}</h2>
+<p class="inside__sub">${esc(WW.insideSub(q.humanDay(memo)))}</p>
+<div class="mframe"><a class="mframe__pg mframe__link" href="${q.pagePath(feat.slug, ['stock', 'earnings', 'dividend'].find((t) => q.hasPage(feat, t)) || 'stock')}"><div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(feat.ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (len - 3) * (len < 3 ? 8 : 16)});max-width:calc(var(--u) * ${330 - (len - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(feat.company || fname)}</span><span class="mf-upd">${esc(WW.updated(q.shortFull(memo)))}</span></div>
+<section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? WW.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section></a></div>
+</aside>`;
+  }
+  const more = q.more.length ? `<section class="sec links" aria-labelledby="more-h"><h2 id="more-h">${esc(W.moreH)}</h2><div class="links__grid"><div><div class="chips">${q.more.join('')}</div></div></div></section>` : '';
+  const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
+<h2 id="close-h">${esc(W.closeH)}</h2>
+<p>${esc(W.closeP(q.num(String(rows.length))))}</p>
+${feat ? `<a class="btn btn--mint btn--lg" id="closebtn" data-cta="close" href="${esc(q.ctaOf(feat))}">${esc(WW.headerBtn)}</a>` : ''}
+<p class="foot">${esc(W.foot)}</p>
+</div></section>`;
+  return `<main class="page page--list" id="top">
+${top}
+${answer}
+${listSec}
+${cta1}
+${inside}
+<section class="sec lst2" id="list2" aria-label="${esc(W.listH(q.index))}"><ol class="rows" id="rows2"></ol></section>
+${q.extra || ''}
+${more}
+${close}
+</main>`;
+}

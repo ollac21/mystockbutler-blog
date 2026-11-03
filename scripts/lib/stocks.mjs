@@ -17,7 +17,7 @@ import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
-import { PAGE_CSS_PATH, PAGE_JS_PATH, forecastOf, headerHtml, makeFmt, renderCompareBody, renderPage, stripHtml } from './stockPage.mjs';
+import { PAGE_CSS_PATH, PAGE_JS_PATH, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, stripHtml } from './stockPage.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -1170,7 +1170,8 @@ ${body}
 <footer class="foot"><div class="in"><nav><a href="${home}">${ui.allStocks}</a><a href="/">${ui.blog}</a>${GUIDE_OF[lang] && ui.guide ? `<a href="${GUIDE_OF[lang].path}">${esc(ui.guide)}</a>` : ''}${ALT_FOOT[lang] ? `<a href="${ALT_FOOT[lang].path}">${esc(ALT_FOOT[lang].label)}</a>` : ''}${langNav(lang)}<a href="${LANDING}/">MyStockButler</a><a href="${ABOUT_PATH[lang]}">${esc(ABOUT_LINK_WORDS[lang])}</a><a href="/methodology/">${esc(TRUST_LINK_WORDS[lang].methodology)}</a><a href="/corrections/">${esc(TRUST_LINK_WORDS[lang].corrections)}</a><a href="${LANDING}/legal">${ui.legal}</a><a href="${APP}/login">${ui.login}</a></nav>
 <p>${esc(ui.footer)}</p></div></footer>
 ${v2 ? `<script src="${PAGE_JS_PATH}" defer></script>
-` : ''}</body>
+${v2.js ? `<script src="${v2.js}" defer></script>
+` : ''}` : ''}</body>
 </html>
 `;
 }
@@ -1508,9 +1509,33 @@ function hubList(companies, { withDates = false, langs = [] } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', cta = '' }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', cta = '', list = null, index = '', h1 = '', more = [], all = null, today = '', langs = [] }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
+  // B115 (owner 2026-11-03 "Ok for all"): the list pages in the approved design (stockPage.mjs renderListBody)
+  if (v2On() && list && list.length) {
+    const ui = UI[lang];
+    const has = (c, t) => (lang === 'en' ? !!c.pages[t] : !!langPage(c, t, lang));
+    const body = renderListBody({ lang, list, index, h1: h1 || title, today, crumbsHtml: crumbs.html, authorLink: authorLink(lang), num: ui.num, money, humanDay: (d) => humanDay(d, lang), shortFull: (d) => shortFull(d, lang),
+      dateWords: (t) => ui.date(t), shortName, startOf: (c) => (c.pages.stock ? startPrice(c) : null), yieldOf: (c) => dividendYieldOf(c), teaserOf: (c) => (lang === 'en' ? c.teaser : c.translations?.[lang]?.teaser) || null,
+      hasPage: has, pagePath: (slug, t) => pagePath(slug, t, lang), types: ui.types, sibling: ui.sibling,
+      ctaOf: (c) => `${APP}/signup?ticker=${encodeURIComponent(c.ticker)}&src=seo-hub${lang === 'en' ? '' : `&lang=${lang}`}`, more,
+      otherLinks: langs.length ? (c) => langs.flatMap((l) => TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a class="ol" hreflang="${LANG_CFG[l].href}" lang="${LANG_CFG[l].href}" href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`)).join('') : null });
+    const stripList = list.filter((c) => has(c, 'stock'))   // the names of this list only (the US Chinese hub never names a Hong Kong company)
+     .sort((a, b) => String(b.memo_date).localeCompare(String(a.memo_date))).slice(0, 12)
+      .map((c) => ({ path: pagePath(c.slug, 'stock', lang), name: shortName(c), ticker: c.ticker }));
+    const n = (all || list).length;
+    const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
+    const html = shell({
+      title, description, canonical: url, ogType: 'website', lang,
+      jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, { '@type': 'CollectionPage', name: title, description, url, ...(updated ? { dateModified: updated } : {}), isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
+      meta: { type: 'hub', ticker: '', ...(cta ? { cta } : {}) },
+      v2: { css: '/stocks/assets/page-lists.css', strip: stripHtml(lang, { count: n >= 100 ? `${Math.floor(n / 100) * 100}+` : String(n), items: stripList }, home), results: lang === 'en' ? '/stocks/reporting-this-week/' : '', js: '/stocks/assets/lists.js' },
+      body,
+    });
+    const outLinks = [...html.matchAll(SITE_LINK)].map((m) => m[1]);
+    return { path, url, type: 'hub', lang, title, description, html, outLinks, lastmod: '' };
+  }
   const searchBox = search
     ? `<div class="search"><label for="q">${esc(UI[lang].find)}</label><input id="q" type="search" placeholder="${esc(UI[lang].findPh)}" autocomplete="off"></div>
 <script>(function(){var q=document.getElementById('q');q.addEventListener('input',function(){var v=q.value.trim().toLowerCase();document.querySelectorAll('li[data-name]').forEach(function(li){li.style.display=!v||li.getAttribute('data-name').indexOf(v)>=0?'':'none';});});})();</script>`
@@ -1587,6 +1612,10 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
   const groups = Object.keys(INDEX_NAMES).map((key) => ({ key, list: byName.filter((c) => c.index === key) })).filter((g) => g.list.length);
   const translated = Object.fromEntries(LANGS.map((l) => [l, byName.filter((c) => TYPES.some((t) => langPage(c, t, l)))]));
   const langsIn = (list) => LANGS.filter((l) => list.some((c) => TYPES.some((t) => langPage(c, t, l))));
+  // B115: the lists' own links, and the last forecast year their reports reach (our own scenario columns)
+  const moreEn = [`<a href="/stocks/">All stocks</a>`, ...groups.map((g) => `<a href="/stocks/${INDEX_PATHS[g.key]}/">${esc(INDEX_NAMES[g.key])}</a>`), '<a href="/stocks/dividends/">Dividend payers</a>',
+    '<a href="/stocks/reporting-this-week/">Reporting this week</a>', ...(compares ? [`<a href="${COMPARE_ROOT}">Companies side by side</a>`] : []), `<a href="${DIVCALC_PATH.en}">${esc(DIVCALC_LINK_WORDS.en)}</a>`];
+  const y3Of = (list) => { for (const c of list) { const f = forecastOf(c); if (f) return f.years[f.last]; } return ''; };
   const all = [
     `<section class="strip"><h2>Reporting this week</h2>${soon.length ? hubList(soon, { withDates: true }) : '<p class="sub">No company in our library reports in the next seven days.</p>'}<p><a href="/stocks/reporting-this-week/">Every company reporting this week</a> · <a href="/stocks/dividends/">Dividend payers</a> · <a href="${DIVCALC_PATH.en}">${DIVCALC_LINK_WORDS.en}</a>${compares ? ` · <a href="${COMPARE_ROOT}">Companies side by side</a>` : ''}</p></section>`,
     nav(),
@@ -1602,6 +1631,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     sections: all,
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }],
     search: true,
+    list: byName, all: companies, today: day, more: moreEn.slice(1),
   }));
   for (const g of groups) {
     pages.push(hubPage({
@@ -1612,6 +1642,8 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       sections: [nav(), ...langsIn(g.list).map((l) => `<p><a href="${LANG_CFG[l].root}" hreflang="${LANG_CFG[l].href}">${esc(LANG_CFG[l].here)}</a></p>`),
         hubList(g.list, { withDates: true, langs: langsIn(g.list) })],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: INDEX_NAMES[g.key], path: `/stocks/${INDEX_PATHS[g.key]}/` }],
+      list: g.list, all: companies, today: day, index: INDEX_NAMES[g.key], langs: langsIn(g.list), h1: y3Of(g.list) ? `${INDEX_NAMES[g.key]} stocks list with our forecast to ${y3Of(g.list)}` : '',
+      more: [...moreEn.filter((m) => !m.includes(`/stocks/${INDEX_PATHS[g.key]}/`)), ...langsIn(g.list).map((l) => `<a href="${LANG_CFG[l].root}" hreflang="${LANG_CFG[l].href}">${esc(LANG_CFG[l].here)}</a>`)],
     }));
   }
   for (const l of [...'abcdefghijklmnopqrstuvwxyz', '0-9']) {
@@ -1624,6 +1656,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
       intro: `${list.length} companies whose name starts with ${l.toUpperCase()}.`,
       sections: [nav(), hubList(list)],
       crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: l.toUpperCase(), path: letterPath(l) }],
+      list, all: companies, today: day, more: [...moreEn, ...[...'abcdefghijklmnopqrstuvwxyz', '0-9'].filter((x) => x !== l && present.has(x)).map((x) => `<a href="${letterPath(x)}">${x.toUpperCase()}</a>`)],
     }));
   }
   pages.push(hubPage({
@@ -1653,6 +1686,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
           return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
         }).join('')}</ul>`, `<p><a href="/stocks/" hreflang="en">${esc(w.back)}</a>${others(x.sc.root)}${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
         crumbItems: [{ name: w.crumb, path: x.sc.root }],
+        list: x.list, all: list, today: day, more: [`<a href="/stocks/" hreflang="en">${esc(w.back)}</a>`, ...(main.length ? [`<a href="${cfg.root}">${esc(cfg.hub(main.length, libsOf(main)).title)}</a>`] : []), ...(GUIDE_OF[l] && UI[l].guide ? [`<a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>`] : [])],
       }));
     }
     if (!main.length) continue;
@@ -1670,6 +1704,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
         return `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, TYPES.find((t) => langPage(c, t, l)), l)}">${esc(shortName(c))}</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">${esc(UI[l].memoOf)} ${esc(humanDay(c.memo_date, l))}</span><span class="pg">${links}</span></li>`;
       }).join('')}</ul>`, `<p><a href="${cfg.home}">MyStockButler</a> · <a href="/stocks/" hreflang="en">${esc(words.back)}</a>${others(cfg.root)} · <a href="${DIVCALC_PATH[l]}">${esc(DIVCALC_LINK_WORDS[l])}</a>${GUIDE_OF[l] && UI[l].guide ? ` · <a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>` : ''}</p>`],
       crumbItems: [{ name: words.crumb, path: cfg.root }],
+      list: main, all: list, today: day, more: [`<a href="${cfg.home}">MyStockButler</a>`, `<a href="/stocks/" hreflang="en">${esc(words.back)}</a>`, ...subHubs.map((x) => `<a href="${x.sc.root}">${esc(x.sc.hub(x.list.length).title)}</a>`), `<a href="${DIVCALC_PATH[l]}">${esc(DIVCALC_LINK_WORDS[l])}</a>`, ...(GUIDE_OF[l] && UI[l].guide ? [`<a href="${GUIDE_OF[l].path}">${esc(UI[l].guide)}</a>`] : [])],
     }));
     if (LANDING_WORDS[l]) pages.push(renderLangHome(l, list));   // /de/ and /fr/: the landing's own words (no Chinese home)
     if (GUIDE_OF[l]) {                            // B114: the guide, linking the stock pages of its example and the hub
@@ -1693,6 +1728,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     intro: `${payers.length} companies in our library pay a dividend.`,
     sections: [`<p><a href="${DIVCALC_PATH.en}">${DIVCALC_LINK_WORDS.en}</a>: type a ticker, see its dividend income, reinvested or not.</p>`, nav(), `<ul class="list">${payers.map((c) => `<li data-name="${esc(`${shortName(c)} ${c.company} ${c.ticker}`.toLowerCase())}"><a class="nm" href="${pagePath(c.slug, 'dividend')}">${esc(shortName(c))} dividend</a> <span class="tk">${esc(c.ticker)}</span><span class="dt">Memo of ${esc(humanDay(c.memo_date))}</span></li>`).join('')}</ul>`],
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Dividends', path: '/stocks/dividends/' }],
+    list: payers, all: companies, today: day, more: moreEn.filter((m) => !m.includes('/stocks/dividends/')),
   }));
   return pages;
 }
