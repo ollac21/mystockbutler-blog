@@ -581,10 +581,12 @@ export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, r
   }
   // the axis labels, centred under their point but never past the frame (a Chinese '2026年10月' is wider than 'Oct 2026')
   const wOf = (t) => [...String(t)].reduce((n, ch) => n + (/[\u3000-\u9fff\uff00-\uffef]/.test(ch) ? 20 : 11), 0);
+  const gapW = (xs[1] - xs[0]) - 30;           // a label never wider than the space between two points, with room to breathe
   labels.forEach((l, i) => {
-    const half = wOf(l) / 2;
+    const size = Math.min(20, Math.floor((20 * gapW) / Math.max(1, wOf(l))));
+    const half = (wOf(l) * size) / 20 / 2;
     const [x, anchor] = xs[i] - half < 4 ? [4, 'start'] : xs[i] + half > W - 4 ? [W - 4, 'end'] : [xs[i], 'middle'];
-    out.push(`<text x="${x.toFixed(1)}" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
+    out.push(`<text x="${x.toFixed(1)}" y="432" font-size="${size}" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
   });
   out.push('</svg>');
   return out.join('\n');
@@ -871,7 +873,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         }
       }
       const tRows = t ? rowsOf(t) : '';
-      out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), tRows ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${tRows}</div></div>` : paras(b),
+      out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), tRows && (b.paragraphs || []).length ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${tRows}</div></div>` : `${paras(b)}${tRows ? `<div class="rows1">${tRows}</div>` : ''}`,
         items.length ? `<ul class="watch">${items.join('')}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : bridge(7, W.br7), '</section>');
     } else if (kind === 'pays' && t) {
       const rows = t.rows.map((r, j) => {
@@ -947,7 +949,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     } else {
       // any other table: its rows as short visual rows beside the text, the newest column only, named in the caption
       const rows = rowsOf(t);
-      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), rows ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${rows}</div></div>` : paras(b),
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), rows && (b.paragraphs || []).length ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${rows}</div></div>` : `${paras(b)}${rows ? `<div class="rows1">${rows}</div>` : ''}`,
         i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
     }
     sections.push(out.filter(Boolean).join('\n'));

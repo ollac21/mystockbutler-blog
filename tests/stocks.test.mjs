@@ -743,7 +743,7 @@ test('the scenario chart: no label runs past the chart edge, in the four languag
     }
   }
   assert.ok(checked >= 4 * 13, `${checked} labels checked`);
-  // the Chinese first axis label ('2026年10月') is anchored at the left edge instead of centred past it
+  // the Chinese first axis label ('2026年10月') is anchored at the left edge instead of centred past it, a little smaller so it never meets the next
   const zh = buildStockSite([load('stock-nvda-zh.json')], { today: TODAY }).pages.find((p) => p.path === '/zh/stocks/nvda/');
-  assert.match(zh.files.find((f) => f.name === 'forecast.svg').content, /<text x="4.0" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="start">2026年10月<\/text>/);
+  assert.match(zh.files.find((f) => f.name === 'forecast.svg').content, /<text x="4.0" y="432" font-size="1\d" font-weight="600" fill="#617066" text-anchor="start">2026年10月<\/text>/);
 });
