@@ -1219,7 +1219,8 @@ function factUnit(fact, page, enPage) {
   return twin.unit;
 }
 
-const V2_ON = process.env.STOCK_PAGE_V2 !== 'off';
+// read at each page, so a test can draw the old page for one build
+const v2On = () => process.env.STOCK_PAGE_V2 !== 'off';
 // The currency mark in a caption ('US$ per ADS', 'NT$ millions'): a closed list of our own codes (shape).
 const CUR_MARK = {
   en: { USD: 'US$', CAD: 'C$', HKD: 'HK$', TWD: 'NT$', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
@@ -1311,11 +1312,13 @@ function renderV2(data, type, ctx, lang, o) {
     earningsPath: has('earnings', lang) ? pagePath(data.slug, 'earnings', lang) : '', dividendPath: has('dividend', lang) ? pagePath(data.slug, 'dividend', lang) : '',
     stockPath: has('stock', lang) ? pagePath(data.slug, 'stock', lang) : '',
     dividendYield: dividendYieldOf(data), guidanceRow: guidanceRowOf(data, lang), start: data.pages.stock ? startPrice(data) : null,
+    // the dividend page's data (the old page's own readers): the per-share dividends by year, the yield, the calculator inside the page
+    ...(type === 'dividend' ? (() => { const dp = data.pages.dividend; const h = dividendHistory(dp); return { divHist: h, divYield: yieldOf(dp), divCur: h ? perShareCurrency(h.unit) : '', divCalc: renderDivCalcEmbed(data, lang) }; })() : {}),
     num: ui.num, money: (v, c, l) => money(v, c, l), humanDay, shortFull, weekday, dateWords: (t) => ui.date(t), curWord: (c) => (CUR_MARK[lang] || CUR_MARK.en)[c] || c,
-    caseWord: (n) => caseWord(data, lang, n), mdBlock, langPage, authorLink: authorLink(lang),
+    caseWord: (n) => (data.pages.stock ? caseWord(data, lang, n) : ui.cases[n]), mdBlock, langPage, authorLink: authorLink(lang),
   });
   const forecast = out.files.find((f) => f.name === 'forecast.svg');
-  return { ...out, css: type === 'earnings' ? '/stocks/assets/page-earnings.css' : PAGE_CSS_PATH,
+  return { ...out, css: type === 'earnings' ? '/stocks/assets/page-earnings.css' : type === 'dividend' ? '/stocks/assets/page-dividend.css' : PAGE_CSS_PATH,
     strip: stripHtml(lang, strip, home), results: resultsPath && ctx.exists(resultsPath) ? resultsPath : '',
     image: forecast ? `${SITE}${pagePath(data.slug, type, lang)}forecast.svg` : '' };
 }
@@ -1454,7 +1457,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   };
   // B115 (owner 2026-11-03 'Wire everything and publish'): the stock forecast and earnings pages in the approved new design
   // (stockPage.mjs); STOCK_PAGE_V2=off draws them as before.
-  const v2 = (type === 'stock' || type === 'earnings') && V2_ON ? renderV2(data, type, ctx, lang, {
+  const v2 = (type === 'stock' || type === 'earnings' || type === 'dividend') && v2On() ? renderV2(data, type, ctx, lang, {
     page, company, ticker, cta, crumbs, memoDay, h1: titleWithTicker(page.title, data), teaser: teaserData, sources, siblings, rivals, compares, hubs, has,
   }) : null;
   if (v2) {

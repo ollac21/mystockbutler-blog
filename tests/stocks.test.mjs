@@ -173,7 +173,7 @@ test("our name in the opening sentence: the three approved strings, from the mem
   assert.equal(byUs('2026-10-16', 'de'), 'Laut der Analyse von MyStockButler vom Oktober 2026: ');
   const { pages, held } = buildStockSite([load('stock-td-to-fr.json'), load('stock-nvda-de.json')], { today: TODAY });
   const lede = (p) => (/<p class="lede">([\s\S]*?)<\/p>/.exec(p.html) || [])[1];
-  assert.match(lede(pages.find((p) => p.path === '/stocks/td-to/dividend/')), /^MyStockButler&#39;s October 2026 analysis: |^MyStockButler's October 2026 analysis: /);
+  assert.match(pages.find((p) => p.path === '/stocks/td-to/dividend/').html, /<p class="answer__label">TD \(TD\.TO\) dividend<\/p>/);   // B115: the new dividend page's answer box
   // B115: the new forecast pages open with our answer box, which names us and the company
   assert.match(pages.find((p) => p.path === '/fr/stocks/td-to/').html, /<p class="answer__label">Notre prévision pour TD<\/p>/);
   assert.match(pages.find((p) => p.path === '/de/aktien/nvda/').html, /<p class="answer__label">Unsere Prognose für NVIDIA<\/p>/);
@@ -467,6 +467,12 @@ test('a box shows the unit of the table its value was copied from (B114, CHECKLI
   div.facts = [{ label: 'Dividend paid per share, 2025', value: '3.67' }, { label: 'Dividend yield', value: '4.5%' }];
   div.blocks[0].table = { title: 'What one share gets', unit: 'US$ per share', note: '', head: ['Row', '2025', '2024'],
     rows: [['− Dividends paid, per share', '3.67', '3.33']] };
+  // B115: the new dividend page prints the payment with its table's currency in the answer box
+  const v2 = buildStockSite([td, load('stock-rmd.json')], { today: TODAY }).pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
+  assert.match(v2, /<span class="answer__n">\$3\.67<\/span><span class="answer__by">a share paid in 2025/);
+  // the old page's boxes (the off switch): each box with the unit of its table
+  process.env.STOCK_PAGE_V2 = 'off';
+  try {
   const { pages } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
   const html = pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
   assert.match(html, /<div class="v">3\.67 <small>US\$ per share<\/small><\/div><div class="l">Dividend paid per share, 2025<\/div>/);
@@ -482,6 +488,9 @@ test('a box shows the unit of the table its value was copied from (B114, CHECKLI
   div.blocks[0].table.unit = 'millions C$';
   const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY }).pages.find((p) => p.path === '/stocks/td-to/dividend/').html;
   assert.match(again, /<div class="v">2\.6%<\/div>/);
+  } finally {
+    delete process.env.STOCK_PAGE_V2;
+  }
 });
 
 test('the French guide /fr/ia-bourse/ (B114 rows 3 + 4): its title, one h1, the ticker box, its data, linked from every French page', () => {
@@ -641,8 +650,7 @@ test('row 4: every stock, dividend and earnings title in the build has the ticke
       assert.equal(t.og, t.title, p.path);
       assert.equal(t.tw, t.title, p.path);
       // B115 (PAGE-RULES 11, COPY row 3): the new forecast and earnings pages carry the ticker in the h1 too, once; the dividend page's stays as it was
-      if (p.type === 'dividend') assert.ok(!unesc(t.h1).includes(`(${p.ticker})`), `the h1 stays as it was: ${p.path}`);
-      else assert.equal(tickerCount(unesc(t.h1), p.ticker), 1, `the h1 has the ticker once: ${p.path}`);
+      assert.equal(tickerCount(unesc(t.h1), p.ticker), 1, `the h1 has the ticker once: ${p.path}`);
     }
   }
   for (const k of ['stock', 'dividend', 'earnings'].flatMap((x) => ['en', 'fr', 'de', 'zh-HK'].map((l) => `${x}/${l}`))) assert.ok(seen.has(k), `no ${k} page in the test`);

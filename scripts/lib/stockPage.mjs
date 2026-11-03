@@ -531,6 +531,143 @@ const EARN_WORDS = {
 };
 for (const [l, w] of Object.entries(EARN_WORDS)) Object.assign(WORDS[l], w);
 
+// THE DIVIDEND PAGE'S WORDS (b115-mock-dividend/COPY.md, order E; owner 2026-11-03 "Ok for all").
+const DIV_WORDS = {
+  en: {
+    dH1: (c, t, y) => (y ? `${c} (${t}) dividend yield, history and ${y} forecast` : `${c} (${t}) dividend yield and history`),
+    dAnsH: (c, t) => `What is the ${c} (${t}) dividend yield?`, dLabel: (c, t) => `${c} (${t}) dividend`,
+    dYieldBy: (p, d) => (p ? `dividend yield at the ${p} close of ${d}` : 'dividend yield, our report'), dPaidBy: (y) => `a share paid in ${y}, the company's own figure`,
+    dPaidLine: (y, v, y0, v0, up) => `Paid in ${y}: <b>${v}</b> a share, ${up ? 'up' : 'down'} from <b>${v0}</b> in ${y0}`,
+    dFcLine: (v1, m1, v3, m3) => `Our base-case forecast: <b>${v1}</b> by ${m1}, <b>${v3}</b> by ${m3}`,
+    dCoverH: (c) => `Is ${c} a good dividend stock? Does its cash cover the dividend?`,
+    dCoverLead: 'It checks the dividend against free cash flow, the cash the business has left after paying for buildings and equipment.',
+    dChartCap: (cur) => `Our report's figures, ${cur} per share. The pills show each year's dividend rise (our arithmetic).`,
+    dChartAlt: (c, t, cur, pts) => `${c} (${t}) dividends paid per share against free cash flow per share, ${cur}: ${pts}`, dPt: (y, d, f) => `${y} dividend ${d}, cash ${f}`,
+    dAxis: (cur) => `${cur} per share, each year`,
+    dCovCap: 'Dividends as a share of free cash flow (our arithmetic on the report\'s figures). Past the dashed line, the dividend cost more than the cash.',
+    dCovWith: (v) => `With buybacks, ${v} (our report).`, dCovAria: (list) => `Dividends as a share of free cash flow: ${list}`,
+    brCash: 'Where the cash went each year, dividends and buybacks included',
+    dYieldH: (c) => `What does ${c}'s dividend yield mean for your return?`,
+    dYieldLead: (d) => `It is the part of your return paid in cash: a year of dividends as a share of the share price${d ? `, at the ${d} close` : ''}.`,
+    dFcfNote: 'Free cash flow yield: the cash left in a year after paying for buildings and equipment, as a share of the company\'s value.',
+    dYield: 'Dividend yield', dFcfYield: 'Free cash flow yield', dYieldsAria: (a, b) => `Two yields: dividend yield ${a}, free cash flow yield ${b}`,
+    dFcH: (c, y) => `${c} dividend forecast: how much will it pay by ${y}?`,
+    dFcCap: (cur, y) => `Our report's three dividend cases, ${cur} a share a year. The line starts at the ${y} payment.`,
+    dFcAlt: (c, t, cur, m, bear, base, bull) => `${c} (${t}) dividend per share, ${cur} a year, three cases for ${m}: bear ${bear}, base ${base}, bull ${bull}`,
+    dRise: (r) => (r ? `${r} on the start` : 'no rise'), dFcAxis: (cur) => `${cur} a share a year`,
+    br8d: 'What each case assumes about cash and growth', br7d: 'The tests ahead for the cash and the dividend',
+    dQaH: (c, t) => `Questions about the ${c} (${t}) dividend`,
+    dQPay: (c) => `Does ${c} pay a dividend?`, dAPay: (v, y) => `Yes. It paid ${v} a share in ${y}.`,
+    dQ100: (c, h) => `What is the dividend on ${h} of ${c} shares?`, dA100: (inc, y, h, s, d) => `About ${inc} a year at the ${y} dividend yield: ${h} buys ${s} shares at the ${d} close.`,
+    dQCover: (c) => `Is ${c}'s dividend covered by its cash?`, dACover: (all, r) => `${all ? 'Yes' : 'Not every year'}. Dividends took ${r[0].v} of free cash flow in ${r[0].y}${r[1] ? ` and ${r[1].v} in ${r[1].y}` : ''} (our arithmetic on the report's figures).`,
+    dIn: (v, y) => `${v} in ${y}`,
+    dCloseH: 'This page shows the dividend. The report shows whether the cash pays for it.',
+    dCloseFoot: 'Information only, not investment advice. A dividend can be cut; the forecast gives three cases with their chances. Prices are those of the date shown.',
+    dDesc: (c, t, y, d, v, py, v3, y3) => `${c} (${t}) dividend yield: ${y}${d ? ` at the ${d} close` : ''}; ${v} a share paid in ${py}.${v3 ? ` Our base case: ${v3} a share by ${y3}.` : ''} Does its cash cover it?`,
+    dMoreOwn: (c) => `${c}'s own pages and filings`,
+  },
+  fr: {
+    dH1: (c, t, y) => (y ? `Dividende de ${c} (${t}) : rendement, historique et prévision ${y}` : `Dividende de ${c} (${t}) : rendement et historique`),
+    dAnsH: (c, t) => `Quel est le rendement du dividende de ${c} (${t}) ?`, dLabel: (c, t) => `Dividende de ${c} (${t})`,
+    dYieldBy: (p, d) => (p ? `rendement du dividende à la clôture de ${p} du ${d}` : 'rendement du dividende, notre rapport'), dPaidBy: (y) => `par action versé en ${y}, chiffre de la société`,
+    dPaidLine: (y, v, y0, v0, up) => `Versé en ${y} : <b>${v}</b> par action, ${up ? 'en hausse' : 'en baisse'} par rapport à <b>${v0}</b> en ${y0}`,
+    dFcLine: (v1, m1, v3, m3) => `Notre scénario central : <b>${v1}</b> d’ici ${m1}, <b>${v3}</b> d’ici ${m3}`,
+    dCoverH: (c) => `${c} est-elle une bonne action à dividende ? Sa trésorerie couvre-t-elle le dividende ?`,
+    dCoverLead: 'Il compare le dividende au flux de trésorerie disponible, la trésorerie qui reste après les dépenses en bâtiments et équipements.',
+    dChartCap: (cur) => `Les chiffres de notre rapport, ${cur} par action. Les pastilles montrent la hausse annuelle du dividende (notre calcul).`,
+    dChartAlt: (c, t, cur, pts) => `${c} (${t}), dividendes versés par action face au flux de trésorerie disponible par action, ${cur} : ${pts}`, dPt: (y, d, f) => `${y} dividende ${d}, trésorerie ${f}`,
+    dAxis: (cur) => `${cur} par action, chaque année`,
+    dCovCap: 'Dividendes en part du flux de trésorerie disponible (notre calcul sur les chiffres du rapport). Au-delà de la ligne pointillée, le dividende a coûté plus que la trésorerie.',
+    dCovWith: (v) => `Avec les rachats d’actions, ${v} (notre rapport).`, dCovAria: (list) => `Dividendes en part du flux de trésorerie disponible : ${list}`,
+    brCash: 'Où est allée la trésorerie chaque année, dividendes et rachats compris',
+    dYieldH: (c) => `Que représente le rendement du dividende de ${c} pour votre rendement ?`,
+    dYieldLead: (d) => `C’est la part de votre rendement versée en argent : une année de dividendes rapportée au cours${d ? `, à la clôture du ${d}` : ''}.`,
+    dFcfNote: 'Rendement du flux de trésorerie disponible : la trésorerie qui reste en un an après les dépenses en bâtiments et équipements, rapportée à la valeur de la société.',
+    dYield: 'Rendement du dividende', dFcfYield: 'Rendement du flux de trésorerie disponible', dYieldsAria: (a, b) => `Deux rendements : dividende ${a}, flux de trésorerie disponible ${b}`,
+    dFcH: (c, y) => `Prévision du dividende de ${c} : combien versera-t-elle d’ici ${y} ?`,
+    dFcCap: (cur, y) => `Les trois scénarios de dividende de notre rapport, ${cur} par action et par an. La ligne part du versement de ${y}.`,
+    dFcAlt: (c, t, cur, m, bear, base, bull) => `${c} (${t}), dividende par action, ${cur} par an, trois scénarios pour ${m} : pessimiste ${bear}, central ${base}, optimiste ${bull}`,
+    dRise: (r) => (r ? `${r} sur le départ` : 'sans hausse'), dFcAxis: (cur) => `${cur} par action et par an`,
+    br8d: 'Ce que suppose chaque scénario sur la trésorerie et la croissance', br7d: 'Les prochains tests pour la trésorerie et le dividende',
+    dQaH: (c, t) => `Questions sur le dividende de ${c} (${t})`,
+    dQPay: (c) => `${c} verse-t-elle un dividende ?`, dAPay: (v, y) => `Oui. Elle a versé ${v} par action en ${y}.`,
+    dQ100: (c, h) => `Quel dividende pour ${h} d’actions ${c} ?`, dA100: (inc, y, h, s, d) => `Environ ${inc} par an au rendement de ${y} : ${h} achète ${s} actions à la clôture du ${d}.`,
+    dQCover: (c) => `Le dividende de ${c} est-il couvert par sa trésorerie ?`, dACover: (all, r) => `${all ? 'Oui' : 'Pas chaque année'}. Les dividendes ont pris ${r[0].v} du flux de trésorerie disponible en ${r[0].y}${r[1] ? ` et ${r[1].v} en ${r[1].y}` : ''} (notre calcul sur les chiffres du rapport).`,
+    dIn: (v, y) => `${v} en ${y}`,
+    dCloseH: 'Cette page montre le dividende. Le rapport montre si la trésorerie le paie.',
+    dCloseFoot: 'Information seulement, pas un conseil en placement. Un dividende peut être réduit ; la prévision donne trois scénarios avec leur probabilité. Les cours sont ceux de la date indiquée.',
+    dDesc: (c, t, y, d, v, py, v3, y3) => `Dividende de ${c} (${t}) : rendement de ${y}${d ? ` à la clôture du ${d}` : ''} ; ${v} par action versé en ${py}.${v3 ? ` Scénario central : ${v3} d’ici ${y3}.` : ''} La trésorerie le couvre-t-elle ?`,
+    dMoreOwn: (c) => `Les pages et documents de ${c}`,
+  },
+  de: {
+    dH1: (c, t, y) => (y ? `${c} (${t}) Dividende: Rendite, Historie und Prognose ${y}` : `${c} (${t}) Dividende: Rendite und Historie`),   // "C (T) dividend yield, history and y forecast"
+    dAnsH: (c, t) => `Wie hoch ist die Dividendenrendite von ${c} (${t})?`, dLabel: (c, t) => `${c} (${t}) Dividende`,          // hidden H2; answer label "C (T) dividend"
+    dYieldBy: (p, d) => (p ? `Dividendenrendite zum Schlusskurs von ${p} am ${d}` : 'Dividendenrendite, unser Bericht'), dPaidBy: (y) => `je Aktie gezahlt ${y}, eigene Zahl des Unternehmens`,   // "dividend yield at the p close of d"; "a share paid in y, the company's own figure"
+    dPaidLine: (y, v, y0, v0, up) => `Gezahlt ${y}: <b>${v}</b> je Aktie, ${up ? 'mehr als' : 'weniger als'} <b>${v0}</b> ${y0}`,   // "Paid in y: v a share, up / down from v0 in y0"
+    dFcLine: (v1, m1, v3, m3) => `Unser Basisszenario: <b>${v1}</b> bis ${m1}, <b>${v3}</b> bis ${m3}`,                            // "Our base-case forecast: v1 by m1, v3 by m3"
+    dCoverH: (c) => `Ist ${c} eine gute Dividendenaktie? Deckt das Cash die Dividende?`,                                         // "Is C a good dividend stock? Does its cash cover the dividend?"
+    dCoverLead: 'Er misst die Dividende am freien Cashflow, dem Geld, das nach Ausgaben für Gebäude und Anlagen bleibt.',      // "It checks the dividend against free cash flow…"
+    dChartCap: (cur) => `Die Zahlen unseres Berichts, ${cur} je Aktie. Die Marken zeigen die jährliche Erhöhung der Dividende (unsere Rechnung).`,   // chart caption
+    dChartAlt: (c, t, cur, pts) => `${c} (${t}), gezahlte Dividende je Aktie gegen freien Cashflow je Aktie, ${cur}: ${pts}`, dPt: (y, d, f) => `${y} Dividende ${d}, Cash ${f}`,
+    dAxis: (cur) => `${cur} je Aktie, jedes Jahr`,                                                                               // axis label
+    dCovCap: 'Dividenden als Anteil am freien Cashflow (unsere Rechnung mit den Zahlen des Berichts). Hinter der gestrichelten Linie kostete die Dividende mehr als das Cash.',   // cover caption
+    dCovWith: (v) => `Mit Aktienrückkäufen ${v} (unser Bericht).`, dCovAria: (list) => `Dividenden als Anteil am freien Cashflow: ${list}`,
+    brCash: 'Wohin das Cash jedes Jahr ging, Dividenden und Rückkäufe eingerechnet',                                             // bridge ch. 5
+    dYieldH: (c) => `Was bedeutet die Dividendenrendite von ${c} für Ihre Rendite?`,                                              // "What does C's dividend yield mean for your return?"
+    dYieldLead: (d) => `Sie ist der Teil Ihrer Rendite, der bar gezahlt wird: ein Jahr Dividenden im Verhältnis zum Kurs${d ? `, zum Schlusskurs vom ${d}` : ''}.`,
+    dFcfNote: 'Freie-Cashflow-Rendite: das Geld, das in einem Jahr nach Ausgaben für Gebäude und Anlagen bleibt, im Verhältnis zum Wert des Unternehmens.',
+    dYield: 'Dividendenrendite', dFcfYield: 'Freie-Cashflow-Rendite', dYieldsAria: (a, b) => `Zwei Renditen: Dividende ${a}, freier Cashflow ${b}`,
+    dFcH: (c, y) => `${c} Dividendenprognose: Wie viel zahlt das Unternehmen bis ${y}?`,                                       // "C dividend forecast: how much will it pay by y?"
+    dFcCap: (cur, y) => `Die drei Dividendenszenarien unseres Berichts, ${cur} je Aktie und Jahr. Die Linie beginnt bei der Zahlung von ${y}.`,
+    dFcAlt: (c, t, cur, m, bear, base, bull) => `${c} (${t}), Dividende je Aktie, ${cur} im Jahr, drei Szenarien für ${m}: pessimistisch ${bear}, Basis ${base}, optimistisch ${bull}`,
+    dRise: (r) => (r ? `${r} zum Start` : 'keine Erhöhung'), dFcAxis: (cur) => `${cur} je Aktie und Jahr`,                      // "r on the start" / "no rise"
+    br8d: 'Was jedes Szenario über Cash und Wachstum annimmt', br7d: 'Die nächsten Tests für das Cash und die Dividende',        // bridges ch. 8, 7
+    dQaH: (c, t) => `Fragen zur Dividende von ${c} (${t})`,                                                                       // "Questions about the C (T) dividend"
+    dQPay: (c) => `Zahlt ${c} eine Dividende?`, dAPay: (v, y) => `Ja. ${y} zahlte das Unternehmen ${v} je Aktie.`,              // "Does C pay a dividend? Yes. It paid v a share in y."
+    dQ100: (c, h) => `Wie viel Dividende bringen ${h} in ${c}-Aktien?`, dA100: (inc, y, h, s, d) => `Etwa ${inc} im Jahr bei ${y} Dividendenrendite: Für ${h} gibt es ${s} Aktien zum Schlusskurs vom ${d}.`,
+    dQCover: (c) => `Ist die Dividende von ${c} durch das Cash gedeckt?`, dACover: (all, r) => `${all ? 'Ja' : 'Nicht in jedem Jahr'}. Die Dividenden nahmen ${r[0].y} ${r[0].v} des freien Cashflows${r[1] ? `, ${r[1].y} ${r[1].v}` : ''} (unsere Rechnung mit den Zahlen des Berichts).`,
+    dIn: (v, y) => `${v} (${y})`,
+    dCloseH: 'Diese Seite zeigt die Dividende. Der Bericht zeigt, ob das Cash sie bezahlt.',                                     // "This page shows the dividend. The report shows whether the cash pays for it."
+    dCloseFoot: 'Nur zur Information, keine Anlageberatung. Eine Dividende kann gekürzt werden; die Prognose gibt drei Szenarien mit ihrer Wahrscheinlichkeit. Kurse sind die des angegebenen Datums.',
+    dDesc: (c, t, y, d, v, py, v3, y3) => `${c} Dividende (${t}): Rendite ${y}${d ? ` zum Schlusskurs vom ${d}` : ''}; ${v} je Aktie gezahlt ${py}.${v3 ? ` Basisszenario: ${v3} bis ${y3}.` : ''} Deckt das Cash sie?`,
+    dMoreOwn: (c) => `Seiten und Unterlagen von ${c}`,
+  },
+  'zh-HK': {
+    dH1: (c, t, y) => (y ? `${c}（${t}）股息：股息率、往績及${y}年預測` : `${c}（${t}）股息：股息率及往績`),                             // "C (T) dividend yield, history and y forecast"
+    dAnsH: (c, t) => `${c}（${t}）的股息率是多少？`, dLabel: (c, t) => `${c}（${t}）股息`,                                            // hidden H2; label "C (T) dividend"
+    dYieldBy: (p, d) => (p ? `以 ${d}收市價 ${p} 計的股息率` : '股息率，我們的報告'), dPaidBy: (y) => `${y}年每股派息，公司自己的數字`,   // "dividend yield at the p close of d"; "a share paid in y"
+    dPaidLine: (y, v, y0, v0, up) => `${y}年派息：每股 <b>${v}</b>，${y0}年為 <b>${v0}</b>（${up ? '上升' : '下跌'}）`,              // "Paid in y: v a share, up / down from v0 in y0"
+    dFcLine: (v1, m1, v3, m3) => `我們的基本情境：至${m1} <b>${v1}</b>，至${m3} <b>${v3}</b>`,                                       // "Our base-case forecast: v1 by m1, v3 by m3"
+    dCoverH: (c) => `${c} 是好的收息股嗎？現金能否支付股息？`,                                                                        // "Is C a good dividend stock? Does its cash cover the dividend?"
+    dCoverLead: '它把股息與自由現金流比較，即業務支付樓宇及設備開支後剩下的現金。',                                                         // "It checks the dividend against free cash flow…"
+    dChartCap: (cur) => `我們報告的數字，每股${cur}。標籤顯示每年的股息增幅（我們的計算）。`,                                              // chart caption
+    dChartAlt: (c, t, cur, pts) => `${c}（${t}）每股已派股息與每股自由現金流（${cur}）：${pts}`, dPt: (y, d, f) => `${y}年股息 ${d}，現金 ${f}`,
+    dAxis: (cur) => `每股${cur}，每年`,                                                                                             // axis label
+    dCovCap: '股息佔自由現金流的比例（我們根據報告數字計算）。超過虛線即股息多於現金。',                                                    // cover caption
+    dCovWith: (v) => `連回購 ${v}（我們的報告）。`, dCovAria: (list) => `股息佔自由現金流的比例：${list}`,
+    brCash: '每年現金的去向，包括股息及回購',                                                                                        // bridge ch. 5
+    dYieldH: (c) => `${c} 的股息率對你的回報意味著甚麼？`,                                                                             // "What does C's dividend yield mean for your return?"
+    dYieldLead: (d) => `它是你回報中以現金支付的部分：一年股息佔股價的比例${d ? `，以 ${d}收市價計` : ''}。`,
+    dFcfNote: '自由現金流收益率：一年內支付樓宇及設備開支後剩下的現金，佔公司價值的比例。',
+    dYield: '股息率', dFcfYield: '自由現金流收益率', dYieldsAria: (a, b) => `兩個收益率：股息 ${a}，自由現金流 ${b}`,
+    dFcH: (c, y) => `${c} 股息預測：到${y}年會派多少？`,                                                                              // "C dividend forecast: how much will it pay by y?"
+    dFcCap: (cur, y) => `我們報告的三個股息情境，每股每年${cur}。線條由${y}年的派息起計。`,
+    dFcAlt: (c, t, cur, m, bear, base, bull) => `${c}（${t}）每股股息（每年${cur}），${m}的三個情境：悲觀 ${bear}，基本 ${base}，樂觀 ${bull}`,
+    dRise: (r) => (r ? `較起點 ${r}` : '沒有增加'), dFcAxis: (cur) => `每股每年${cur}`,                                                // "r on the start" / "no rise"
+    br8d: '每個情境對現金及增長的假設', br7d: '現金及股息接下來的考驗',                                                                  // bridges ch. 8, 7
+    dQaH: (c, t) => `關於 ${c}（${t}）股息的問題`,                                                                                    // "Questions about the C (T) dividend"
+    dQPay: (c) => `${c} 有派息嗎？`, dAPay: (v, y) => `有。${y}年每股派 ${v}。`,                                                        // "Does C pay a dividend? Yes. It paid v a share in y."
+    dQ100: (c, h) => `${h} 的 ${c} 股份可收多少股息？`, dA100: (inc, y, h, s, d) => `以 ${y} 的股息率計，每年約 ${inc}：${h} 以 ${d}收市價可買 ${s} 股。`,
+    dQCover: (c) => `${c} 的股息由現金支付得起嗎？`, dACover: (all, r) => `${all ? '可以' : '並非每年'}。${r[0].y}年股息佔自由現金流 ${r[0].v}${r[1] ? `，${r[1].y}年為 ${r[1].v}` : ''}（我們根據報告數字計算）。`,
+    dIn: (v, y) => `${y}年 ${v}`,
+    dCloseH: '本頁顯示股息，報告顯示現金能否支付。',                                                                                   // "This page shows the dividend. The report shows whether the cash pays for it."
+    dCloseFoot: '僅供參考，並非投資建議。股息可被削減；預測給出三個情境及其機率。股價為所示日期的價格。',
+    dDesc: (c, t, y, d, v, py, v3, y3) => `${c}（${t}）股息率：${d ? `以 ${d}收市價計 ` : ''}${y}；${py}年每股派 ${v}。${v3 ? `基本情境：至${y3}年 ${v3}。` : ''}現金能否支付？`,
+    dMoreOwn: (c) => `${c} 自己的頁面及文件`,
+  },
+};
+for (const [l, w] of Object.entries(DIV_WORDS)) Object.assign(WORDS[l], w);
+
 // ---------------------------------------------------------------------------------------------------------------------------
 // Numbers. A cell of our own producers ('1,494,243', '468.34 (+15 %)', '24.2x', '1.1%'): arithmetic and shape only.
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -689,6 +826,71 @@ export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, r
   return out.join('\n');
 }
 
+// the dividend page's first picture (b115-mock-dividend/dividend-vs-fcf.svg): each year a green bar for the dividend per share,
+// a dark mark for the free cash flow per share with its value in a pill, the dividend's rise on the year before under it
+export function divFcfSvg(cols, dv, fv, { axis, val, pct }) {
+  const n = cols.length, gap = 496 / n, w = Math.min(44, gap * 0.62), base = 282, top = 205;
+  const mx = Math.max(...dv.filter((v) => v !== null), ...fv.filter((v) => v !== null && v > 0), 0.01);
+  const y = (v) => base - (Math.max(0, v) / mx) * top;
+  const o = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 372" width="520" height="372" role="img" ${FONT}>`, '<rect width="520" height="372" fill="#FFFFFF"/>',
+    `<text x="12" y="24" font-size="18" font-weight="600" fill="#617066">${esc(axis)}</text>`];
+  cols.forEach((c, i) => {
+    const cx = 12 + gap * i + gap / 2;
+    if (dv[i] !== null) o.push(`<rect x="${(cx - w / 2).toFixed(1)}" y="${y(dv[i]).toFixed(1)}" width="${w.toFixed(1)}" height="${(base - y(dv[i])).toFixed(1)}" rx="6" fill="#137C46"/>`);
+    if (fv[i] !== null && fv[i] > 0) {
+      const fy = y(fv[i]);
+      o.push(`<rect x="${(cx - w / 2 - 8).toFixed(1)}" y="${(fy - 3).toFixed(1)}" width="${(w + 16).toFixed(1)}" height="6" rx="3" fill="#0E1713" stroke="#FFFFFF" stroke-width="2.5"/>`);
+      o.push(`<rect x="${(cx - 28).toFixed(1)}" y="${(fy - 38).toFixed(1)}" width="56" height="28" rx="14" fill="#FFFFFF" stroke="#0E1713" stroke-width="1.6"/>`);
+      o.push(`<text x="${cx.toFixed(1)}" y="${(fy - 18).toFixed(1)}" font-size="${String(val(fv[i])).length > 5 ? 15 : 19}" font-weight="800" fill="#0E1713" text-anchor="middle">${esc(val(fv[i]))}</text>`);
+    }
+    o.push(`<text x="${cx.toFixed(1)}" y="306" font-size="18" font-weight="600" fill="#617066" text-anchor="middle">${esc(String(c).slice(-4))}</text>`);
+    if (dv[i] !== null) o.push(`<text x="${cx.toFixed(1)}" y="331" font-size="${String(val(dv[i])).length > 5 ? 16 : 20}" font-weight="800" fill="#137C46" text-anchor="middle">${esc(val(dv[i]))}</text>`);
+    if (i > 0 && dv[i] !== null && dv[i - 1] !== null && dv[i - 1] > 0) {
+      const r = pct(((dv[i] / dv[i - 1]) - 1) * 100);
+      o.push(`<rect x="${(cx - 33).toFixed(1)}" y="341" width="66" height="26" rx="13" fill="#E3F0E8"/>`);
+      o.push(`<text x="${cx.toFixed(1)}" y="360" font-size="${r.length > 7 ? 15 : 17.5}" font-weight="800" fill="#137C46" text-anchor="middle">${esc(r)}</text>`);
+    }
+  });
+  o.push('</svg>');
+  return o.join('\n');
+}
+
+// the dividend page's second picture (b115-mock-dividend/dividend-forecast.svg): from the last payment, the three cases' dividend per share
+export function divForecastSvg(start, fc, { axis, cases, val, rise, labels }) {
+  const colors = { bear: '#C0452E', base: '#1F2A24', bull: '#137C46' };
+  const n = fc.cols.length, x0 = 40, step = 288 / n, top = 70, bottom = 250;
+  const all = [start.v, ...fc.bear.map((c) => c.v), ...fc.base.map((c) => c.v), ...fc.bull.map((c) => c.v)].filter((v) => v !== null);
+  const lo = Math.min(...all), hi = Math.max(...all), span = hi - lo || Math.max(hi * 0.2, 0.01);
+  const y = (v) => bottom - ((v - lo) / span) * (bottom - top);
+  const xs = [x0, ...fc.cols.map((_, i) => x0 + step * (i + 1))];
+  const o = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 306" width="520" height="306" role="img" ${FONT}>`, '<rect width="520" height="306" fill="#FFFFFF"/>',
+    `<text x="12" y="28" font-size="18" font-weight="600" fill="#617066">${esc(axis)}</text>`,
+    `<line x1="${x0}" y1="${y(start.v).toFixed(1)}" x2="${xs[n]}" y2="${y(start.v).toFixed(1)}" stroke="#9AA79F" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>`];
+  for (const k of ['bear', 'bull', 'base']) {
+    const pts = [[x0, y(start.v)], ...fc[k].map((c, i) => [xs[i + 1], y(c.v)])];
+    o.push(`<polyline points="${pts.map(([a, b]) => `${a.toFixed(1)},${b.toFixed(1)}`).join(' ')}" fill="none" stroke="${colors[k]}" stroke-width="${k === 'base' ? 5 : 4}" stroke-linejoin="round" stroke-linecap="round"/>`);
+    pts.slice(1).forEach(([a, b], i) => o.push(`<circle cx="${a.toFixed(1)}" cy="${b.toFixed(1)}" r="${i === pts.length - 2 ? 6 : 4.5}" fill="${colors[k]}" stroke="#fff" stroke-width="2.5"/>`));
+  }
+  o.push(`<circle cx="${x0}" cy="${y(start.v).toFixed(1)}" r="7" fill="#0E1713" stroke="#fff" stroke-width="3"/>`);
+  const ends = ['bull', 'base', 'bear'].map((k) => ({ k, y: y(fc[k][n - 1].v) })).sort((a, b) => a.y - b.y);
+  let prev = -Infinity;
+  for (const e of ends) { e.ty = Math.max(e.y, prev + 50, 40); prev = e.ty; }
+  const over = ends[ends.length - 1].ty + 26 - 270;
+  if (over > 0) for (const e of ends) e.ty -= over;
+  const name = { bear: cases.Bear, base: cases.Base, bull: cases.Bull };
+  for (const e of ends) {
+    const c = fc[e.k][n - 1];
+    o.push(`<text x="346" y="${e.ty.toFixed(1)}" font-size="20" font-weight="800" fill="${colors[e.k]}">${esc(name[e.k])} <tspan fill="#0E1713" font-weight="750" font-size="21">${esc(val(c))}</tspan></text>`);
+    o.push(`<text x="346" y="${(e.ty + 22).toFixed(1)}" font-size="17" font-weight="650" fill="${colors[e.k]}">${esc(rise(c))}</text>`);
+  }
+  labels.forEach((l, i) => {
+    const anchor = i === 0 ? 'start' : 'middle';
+    o.push(`<text x="${(i === 0 ? 4 : xs[i]).toFixed(1)}" y="292" font-size="${[...String(l)].length > 8 ? 14 : 17}" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
+  });
+  o.push('</svg>');
+  return o.join('\n');
+}
+
 export function revenueSvg(q, { axis, mon, val, pill }) {
   const pts = q.cols.map((c, i) => ({ c, v: q.rev[i] })).filter((p) => p.v !== null && p.v > 0);
   const n = pts.length;
@@ -792,7 +994,7 @@ export function renderPage(p) {
   const [byWho, reportOf, ex] = W.byline(p.authorLink, esc(p.memoDay), esc(exch ? `${exch}: ${ticker}` : ticker));
   const top = `<section class="top">
 ${p.crumbsHtml}
-<h1>${esc(type === 'earnings' ? W.eH1(company, ticker) : p.h1)}</h1>
+<h1>@@H1@@</h1>
 <p class="byline">${byWho} · ${reportOf}${exch ? ` · <span class="nw">${ex}</span>` : ''}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a></p>
 </section>`;
 
@@ -879,10 +1081,10 @@ ${free}<p class="free free--2">${esc(W.size(nCh, words, num(String(k.sources || 
 
   // ---- the report frame (the landing's app frame) ----
   const frame = fp ? `<aside class="inside inside--peek" aria-labelledby="inside-h">
-<h2 id="inside-h">${esc(type === 'stock' ? W.insideStock(company) : W.insideEarn(company))}</h2>
+<h2 id="inside-h">${esc(type !== 'earnings' ? W.insideStock(company) : W.insideEarn(company))}</h2>
 <p class="inside__sub">${esc(W.insideSub(p.memoDay))}</p>
 <div class="mframe"><div class="mframe__pg">
-<div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (String(ticker).length - 3) * 16});max-width:calc(var(--u) * ${330 - (String(ticker).length - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(data.company || company)}</span><span class="mf-upd">${esc(W.updated(shortMemo))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
+<div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (String(ticker).length - 3) * (String(ticker).length < 3 ? 8 : 16)});max-width:calc(var(--u) * ${330 - (String(ticker).length - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(data.company || company)}</span><span class="mf-upd">${esc(W.updated(shortMemo))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
 <section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? W.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section>
 </div>
 <button type="button" class="mframe__open" data-open-viewer aria-label="${esc(W.openAria(company))}"></button>
@@ -948,7 +1150,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     return { svgName, alt, cap, tiles, qLabel };
   };
 
-  (page.blocks || []).forEach((b, i) => {
+  if (type !== 'dividend') (page.blocks || []).forEach((b, i) => {
     const kind = kinds[i];
     const enT = aligned ? enBlocks[i]?.table : b.table;
     const t = b.table;
@@ -1067,6 +1269,136 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     sections.push(out.filter(Boolean).join('\n'));
   });
 
+  // ---- THE DIVIDEND PAGE (order E: the cash cover, the yield, the calculator, the forecast, what could change, the rest) ----
+  const dq = [];
+  if (type === 'dividend') {
+    const dcur = p.divCur || cur;
+    const dm = (v, raw) => money(num(raw ?? fixed(v, 2)), dcur, lang);
+    const hist = p.divHist;
+    const paid = hist ? hist.columns.map((c, k) => ({ col: String(c).trim(), v: cellValue(hist.cells[k]), raw: String(hist.cells[k] ?? '').replace(/\*\*/g, '').trim() })).filter((x) => x.v !== null && /\d{4}$/.test(x.col)) : [];
+    const yearOf = (c) => String(c).slice(-4);
+    const last = paid[paid.length - 1], first = paid[0];
+    // the forecast's per-share row: 'base (bear / bull)' in each column (our producer's own cell form: shape)
+    const fcB = (enPage.blocks || []).findIndex((b) => b.table && /^base case\b/i.test(String(b.table.unit || '')) && (b.table.rows || []).some((r) => /^Dividends per share$/i.test(tableLabel(r[0]))));
+    let fc = null;
+    if (fcB >= 0) {
+      const t = enPage.blocks[fcB].table, r = t.rows.find((x) => /^Dividends per share$/i.test(tableLabel(x[0])));
+      const cols = t.head.slice(1).map((h) => String(h).trim());
+      const cells = r.slice(1).map((c) => /^([\d.,]+)\s*\(([\d.,]+)\s*\/\s*([\d.,]+)\)/.exec(String(c || '').trim()));
+      if (cells.length && cells.every(Boolean) && cols.every((c) => /^[A-Z][a-z]+ \d{4}$/.test(c))) {
+        const cell = (m, k) => ({ v: cellValue(m[k]), raw: m[k] });
+        fc = { cols, base: cells.map((m) => cell(m, 1)), bear: cells.map((m) => cell(m, 2)), bull: cells.map((m) => cell(m, 3)) };
+      }
+    }
+    const y3 = fc ? yearOf(fc.cols[fc.cols.length - 1]) : '';
+    p.h1 = W.dH1(company, ticker, y3);
+    // the answer
+    const yRaw = p.divYield ? String(p.divYield).trim().replace(/(\d)\s*%$/, '$1 %') : '';
+    const startOk = p.start && p.start.day && priceDay;
+    const lines = [];
+    if (last && first && first !== last) lines.push(`<li>${W.dPaidLine(esc(yearOf(last.col)), esc(dm(last.v, last.raw)), esc(yearOf(first.col)), esc(dm(first.v, first.raw)), last.v >= first.v)}</li>`);
+    if (fc) lines.push(`<li>${W.dFcLine(esc(dm(fc.base[0].v, fc.base[0].raw)), esc(monthYear(fc.cols[0])), esc(dm(fc.base[fc.base.length - 1].v, fc.base[fc.base.length - 1].raw)), esc(monthYear(fc.cols[fc.cols.length - 1])))}</li>`);
+    const figs = [];
+    if (yRaw) figs.push(`<p><span class="answer__n">${esc(nb(num(yRaw)))}</span><span class="answer__by">${esc(W.dYieldBy(startOk ? F.price(p.start.value, cur) : '', priceDay))}</span></p>`);
+    if (last) figs.push(`<p><span class="answer__n">${esc(dm(last.v, last.raw))}</span><span class="answer__by">${esc(W.dPaidBy(yearOf(last.col)))}</span></p>`);
+    if (figs.length) answer = `<section class="answer ans3" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">${esc(W.dAnsH(company, ticker))}</h2>
+<p class="answer__label">${esc(W.dLabel(company, ticker))}</p>
+<div class="answer__pair">${figs.join('')}</div>
+${lines.length ? `<ul class="ans3__lines">${lines.join('')}</ul>` : ''}
+</section>`;
+    if (yRaw && last) {
+      for (const d of [W.dDesc(company, ticker, num(yRaw), startOk ? p.shortFull(priceIso, lang) : '', dm(last.v, last.raw), yearOf(last.col), fc ? dm(fc.base[fc.base.length - 1].v, fc.base[fc.base.length - 1].raw) : '', y3),
+        W.dDesc(company, ticker, num(yRaw), startOk ? p.shortFull(priceIso, lang) : '', dm(last.v, last.raw), yearOf(last.col), '', '')]) if (!description && d.length <= (lang === 'en' ? 155 : 200)) description = d;
+    }
+    // which block is which (our producer's own table titles: shape)
+    const kindD = (i) => {
+      const t = aligned ? enBlocks[i]?.table : (page.blocks[i] || {}).table;
+      const title = String(t?.title || '');
+      if (!t) return 'text';
+      if (i === fcB) return 'fc';
+      if (/^Follow the money/.test(title)) return 'cover';
+      if (/^What an investor pays/.test(title)) return 'yield';
+      return 'table';
+    };
+    const kinds = (page.blocks || []).map((b, i) => kindD(i));
+    const order = ['cover', 'yield', 'calc', 'fc', 'text', 'table'];
+    const pick = (k) => (page.blocks || []).map((b, i) => [b, i]).filter(([, i]) => kinds[i] === k);
+    for (const k of order) {
+      if (k === 'calc') { if (p.divCalc) sections.push(p.divCalc.replace(/^\n+/, '')); continue; }   // the calculator as the dividend calculator draws it, styled as the mockup's card
+      for (const [b, i] of pick(k)) {
+        const t = b.table, enT = aligned ? enBlocks[i]?.table : t;
+        if (k === 'cover') {
+          // the picture: the report's per-share dividends against its free cash flow per share, each year's rise as a pill
+          const ch = enPage.chart && enPage.chart.rows ? enPage.chart : null;
+          const cols = ch ? (ch.columns || []).map((c) => String(c).trim()) : [];
+          const dv = ch && ch.rows['Dividends paid, per share'] ? ch.rows['Dividends paid, per share'].map(cellValue) : [];
+          const fv = ch && ch.rows['Free cash flow per share'] ? ch.rows['Free cash flow per share'].map(cellValue) : [];
+          let fig = '';
+          if (cols.length >= 2 && dv.length === cols.length && fv.length === cols.length && dv.every((x) => x !== null)) {
+            const pts = cols.map((c, j) => W.dPt(c, num(fixed(dv[j], 2)), fv[j] === null ? '—' : num(fixed(fv[j], 2)))).join('; ');
+            files.push({ name: 'dividend-vs-fcf.svg', content: divFcfSvg(cols, dv, fv, { axis: W.dAxis(p.curWord(dcur)), val: (v) => num(fixed(v, 2)), pct: (x) => num(`${x >= 0 ? '+' : '−'}${fixed(Math.abs(x), 1)} %`) }) });
+            fig = `<figure class="fig"><img src="dividend-vs-fcf.svg" width="520" height="372" loading="lazy" decoding="async" alt="${esc(W.dChartAlt(company, ticker, p.curWord(dcur), pts))}"><figcaption>${esc(W.dChartCap(p.curWord(dcur)))}</figcaption></figure>`;
+          }
+          // the cover rows: dividends over free cash flow, the newest two years (our arithmetic on the report's rows)
+          let cov = '';
+          if (enT) {
+            const row = (re) => (enT.rows || []).findIndex((r) => re.test(tableLabel(r[0])));
+            const iF = row(/^Free cash flow$/), iD = row(/^Dividends paid$/), iP = row(/^Paid out, % of free cash flow$/);
+            if (iF >= 0 && iD >= 0) {
+              const heads = enT.head.slice(1);
+              const items = heads.slice(0, 2).map((h, j) => {
+                const f0 = cellValue(enT.rows[iF][j + 1]), d0 = cellValue(enT.rows[iD][j + 1]);
+                if (f0 === null || d0 === null || f0 <= 0) return '';
+                const pc = (d0 / f0) * 100;
+                const w = Math.min(100, pc / 2);
+                const withB = iP >= 0 && String((t.rows[iP] || enT.rows[iP])[j + 1] || '').trim() ? W.dCovWith(nb(String((t.rows[iP] || enT.rows[iP])[j + 1]).trim())) : '';
+                return { y: String(h).trim(), pc, li: `<li><span class="cov__y">${esc(p.dateWords(String(h).trim(), lang))}</span><span class="cov__b" style="--w:${w.toFixed(1)}%;--x:50%"><i class="u"></i>${pc > 100 ? '<i class="o"></i>' : ''}<b></b><em${pc < 45 ? ' class="out"' : ''}>${esc(nb(num(`${fixed(pc, 1)} %`)))}</em></span>${withB ? `<p class="cov__n">${esc(withB)}</p>` : ''}</li>` };
+              }).filter(Boolean);
+              if (items.length) cov = `<div class="sx__w"><div class="cov"><ul class="cov__rows" aria-label="${esc(W.dCovAria(items.map((x) => W.dIn(num(`${fixed(x.pc, 1)} %`), x.y)).join(', ')))}">${items.map((x) => x.li).join('')}</ul><p class="cov__cap">${esc(W.dCovCap)}</p></div></div>`;
+              if (items.length) dq.push(['cover', items]);
+            }
+          }
+          sections.push([`<section class="sec sx sec--cover" aria-labelledby="c-h">`, `<h2 id="c-h">${esc(W.dCoverH(company))}</h2>`,
+            `<div class="sx__l"><p class="lead"><b>${esc(W.noCall)}</b> ${esc(W.dCoverLead)}</p></div>`, fig ? `<div class="sx__r">${fig}</div>` : '',
+            (b.paragraphs || []).length ? `<div class="sx__l2">${paras(b, 'after')}</div>` : '', cov, bridge(5, W.brCash), '</section>'].filter(Boolean).join('\n'));
+        } else if (k === 'yield') {
+          const rv = (re) => { const j = (enT?.rows || []).findIndex((r) => re.test(tableLabel(r[0]))); return j >= 0 ? String(((t && t.rows[j]) || enT.rows[j])[1] ?? '').replace(/\*\*/g, '').trim() : ''; };
+          const dy = rv(/^Dividend yield$/) || (yRaw ? num(yRaw) : ''), fy = rv(/^Free cash flow yield$/);
+          const pv = (x) => cellValueIn(x, lang);
+          const mx = Math.max(pv(dy) || 0, pv(fy) || 0, 0.1);
+          const tile = (v, l, cls) => (v && pv(v) !== null ? `<div class="yt__c${cls}"><span class="yt__n">${esc(nb(v))}</span><span class="yt__l">${esc(l)}</span><span class="yt__m" aria-hidden="true"><i style="--w:${((Math.max(0, pv(v)) / mx) * 76.7).toFixed(1)}%"></i></span></div>` : '');
+          const tiles = tile(dy, W.dYield, '') + tile(fy, W.dFcfYield, ' yt__c--cash');
+          sections.push([`<section class="sec sx sec--yield" aria-labelledby="y-h">`, `<h2 id="y-h">${esc(W.dYieldH(company))}</h2>`,
+            `<div class="sx__l"><p class="lead">${esc(W.dYieldLead(priceDay))}</p></div>`,
+            tiles ? `<div class="sx__r"><div class="yt" role="group" aria-label="${esc(W.dYieldsAria(nb(dy), nb(fy || '—')))}">${tiles}</div>${fy ? `<p class="yt__note">${esc(W.dFcfNote)}</p>` : ''}</div>` : '',
+            (b.paragraphs || []).length ? `<div class="sx__l2">${paras(b, 'after')}</div>` : '', '</section>'].filter(Boolean).join('\n'));
+        } else if (k === 'fc') {
+          let fig = '';
+          if (fc && last) {
+            const m = monthYear(fc.cols[fc.cols.length - 1]);
+            const pick3 = (a) => a[a.length - 1];
+            files.push({ name: 'dividend-forecast.svg', content: divForecastSvg(last, fc, { axis: W.dFcAxis(p.curWord(dcur)), cases: { Bear: p.caseWord('Bear'), Base: p.caseWord('Base'), Bull: p.caseWord('Bull') },
+              val: (c) => dm(c.v, c.raw), rise: (c) => (Math.abs(c.v - last.v) < 0.005 ? W.dRise('') : W.dRise(num(signed(((c.v / last.v) - 1) * 100)))), labels: [yearOf(last.col), ...fc.cols.map((c) => p.dateWords(`${c.slice(0, 3)} ${c.slice(-4)}`, lang))] }) });
+            fig = `<figure class="fig"><img src="dividend-forecast.svg" width="520" height="306" loading="lazy" decoding="async" alt="${esc(W.dFcAlt(company, ticker, p.curWord(dcur), m, dm(pick3(fc.bear).v, pick3(fc.bear).raw), dm(pick3(fc.base).v, pick3(fc.base).raw), dm(pick3(fc.bull).v, pick3(fc.bull).raw)))}"><figcaption>${esc(W.dFcCap(p.curWord(dcur), yearOf(last.col)))}</figcaption></figure>`;
+          }
+          sections.push([`<section class="sec sx sec--fc" aria-labelledby="f-h">`, `<h2 id="f-h">${esc(y3 ? W.dFcH(company, y3) : b.heading)}</h2>`,
+            (b.paragraphs || []).length ? `<div class="sx__l">${paras(b)}</div>` : '', fig ? `<div class="sx__r">${fig}</div>` : `<div class="sx__r">${rowsOf(t)}</div>`, bridge(8, W.br8d), '</section>'].filter(Boolean).join('\n'));
+        } else if (k === 'text') {
+          sections.push([`<section class="sec sec--change" aria-labelledby="b${i}-h">`, `<h2 id="b${i}-h">${esc(b.heading)}</h2>`, paras(b), bridge(7, W.br7d), '</section>'].join('\n'));
+        } else {
+          const rows = rowsOf(t);
+          sections.push([`<section class="sec" aria-labelledby="b${i}-h">`, `<h2 id="b${i}-h">${esc(b.heading)}</h2>`,
+            rows && (b.paragraphs || []).length ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${rows}</div></div>` : `${paras(b)}${rows ? `<div class="rows1">${rows}</div>` : ''}`, '</section>'].join('\n'));
+        }
+      }
+    }
+    // the questions (deck rows 23-27)
+    if (last) dq.push(['pay', last]);
+    if (yRaw && startOk && cellValueIn(num(yRaw), lang) !== null) dq.push(['100', yRaw]);
+    p.divQ = { dq, dm, yearOf, startOk, yRaw };
+  }
+
   // ---- the stock page: the key numbers (after the first button) and the last quarter (from the earnings page's own figures) ----
   let stats = '';
   if (type === 'stock') {
@@ -1126,6 +1458,21 @@ ${bridge(5, W.br5)}
 
   // ---- questions ----
   const qa = [];
+  if (type === 'dividend' && p.divQ) {
+    const { dq: dqs, dm, yearOf, startOk, yRaw } = p.divQ;
+    const rank = { pay: 0, 100: 1, cover: 2 };
+    for (const [k, x] of [...dqs].sort((a, b) => rank[a[0]] - rank[b[0]])) {
+      if (k === 'pay') qa.push([W.dQPay(company), W.dAPay(dm(x.v, x.raw), yearOf(x.col))]);
+      if (k === '100') {
+        const yv = cellValue(String(x).replace(',', '.'));
+        const hundred = money(num('100'), cur, lang);
+        const shares = p.start.value > 0 ? num(fixed(100 / p.start.value, 100 / p.start.value >= 10 ? 0 : 1)) : '';
+        if (yv !== null && shares) qa.push([W.dQ100(company, hundred), W.dA100(money(num(fixed(yv, 2)), cur, lang), nb(num(x)), hundred, shares, priceDay)]);
+      }
+      if (k === 'cover') qa.push([W.dQCover(company), nb(W.dACover(x.every((r) => r.pc <= 100), x.map((r) => ({ v: num(`${fixed(r.pc, 1)} %`), y: p.dateWords(r.y, lang) }))))]);
+    }
+    if (f && p.start && p.start.day && priceDay) qa.push([W.eQStock(company, f.years[f.last]), W.eAStock(F.cell(f.rows.Weighted[f.last], cur), monthYear(f.cols[f.last]), F.price(p.start.value, cur), priceDay), p.stockPath ? [p.stockPath, W.stockLink(company)] : null]);
+  }
   if (type === 'stock') {
     if (f) {
       const m3 = monthYear(f.cols[f.last]);
@@ -1139,7 +1486,7 @@ ${bridge(5, W.br5)}
       qa.push([W.qRiv(company), W.aRiv(company, list)]);
     }
     if (f) qa.push([W.qAn, W.aAn(company)]);
-  } else {
+  } else if (type === 'earnings') {
     const nextIso = String(data.next_earnings || '').slice(0, 10);
     // the quarter the next results cover is never computed: the file's newest column can lag the company (Amazon's stops at June 2026)
     const nextPer = '';
@@ -1178,8 +1525,8 @@ ${bridge(5, W.br5)}
   }
   if (qa.length) {
     sections.push(`<section class="sec qa" aria-labelledby="faq-h">
-<h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : W.eQaH(company, ticker))}</h2>
-${type === 'stock' ? '<div class="qa__grid">' : ''}${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}${type === 'stock' ? '</div>' : ''}
+<h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : type === 'dividend' ? W.dQaH(company, ticker) : W.eQaH(company, ticker))}</h2>
+${type !== 'earnings' ? '<div class="qa__grid">' : ''}${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}${type !== 'earnings' ? '</div>' : ''}
 ${type === 'stock' ? bridge(2, W.br2(company, rivalNames)) : ''}
 </section>`);
   }
@@ -1198,11 +1545,11 @@ ${filings.length ? `<div><h3>${esc(W.filings(company))}</h3><div class="chips">$
 
   // ---- closing ----
   const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
-<h2 id="close-h">${esc(type === 'stock' ? W.closeH : W.closeHEarn)}</h2>
+<h2 id="close-h">${esc(type === 'stock' ? W.closeH : type === 'dividend' ? W.dCloseH : W.closeHEarn)}</h2>
 <p>${esc(W.closeSize(nCh, words, num(String(k.tables || 0))))}</p>
 <p>${esc(W.closeHow(company, num(String(k.sources || 0))))} <a href="/methodology/">${esc(W.howWork)}</a> · <a href="/corrections/">${esc(W.corrections)}</a></p>
 <a class="btn btn--mint btn--lg" id="closebtn" data-cta="close" href="${esc(p.cta)}">${esc(btn)}</a>
-${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : W.closeFootEarn(company))}</p>
+${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : type === 'dividend' ? W.dCloseFoot : W.closeFootEarn(company))}</p>
 </div></section>`;
 
   const bar = `<div class="bar" id="bar" aria-hidden="true"><span>${esc(W.barT(company))}${isFree ? `<small>${esc(W.barS)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" tabindex="-1" href="${esc(p.cta)}">${esc(W.readIt)}</a></div>`;
@@ -1238,8 +1585,9 @@ ${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}<
 </div>`;
   }
 
+  const h1Text = type === 'earnings' ? W.eH1(company, ticker) : p.h1;
   const body = `<main class="page" id="top">
-${top}
+${top.replace('@@H1@@', () => esc(h1Text))}
 ${answer}
 ${cta1}
 ${frame}
