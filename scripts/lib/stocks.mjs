@@ -1223,7 +1223,7 @@ const V2_ON = process.env.STOCK_PAGE_V2 !== 'off';
 // The currency mark in a caption ('US$ per ADS', 'NT$ millions'): a closed list of our own codes (shape).
 const CUR_MARK = {
   en: { USD: 'US$', CAD: 'C$', HKD: 'HK$', TWD: 'NT$', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
-  fr: { USD: '$ US', CAD: '$ CA', HKD: '$ HK', TWD: '$ NT', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
+  fr: { USD: '$\u00a0US', CAD: '$\u00a0CA', HKD: '$\u00a0HK', TWD: '$\u00a0NT', EUR: '€', GBP: '£', GBp: 'pence', RMB: 'RMB' },
   de: { USD: 'US$', CAD: 'C$', HKD: 'HK$', TWD: 'NT$', EUR: '€', GBP: '£', GBp: 'Pence', RMB: 'RMB' },
   'zh-HK': { USD: '美元', CAD: '加元', HKD: '港元', TWD: '新台幣', EUR: '歐元', GBP: '英鎊', GBp: '便士', RMB: '人民幣' },
 };

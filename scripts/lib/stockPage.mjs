@@ -468,8 +468,10 @@ export function unitOf(unit) {
   return { scale, cur: mark ? mark[1] : '' };
 }
 
-export function makeFmt(lang, num, money) {
+export function makeFmt(lang, num, money0) {
   const W = WORDS[lang];
+  // French: '161,01 $ CA' never breaks inside the amount or the currency
+  const money = lang === 'fr' ? (v, c, l) => money0(v, c, l).replace(/ (?=[$€£¢])/g, '\u00a0').replace(/([$¢]) (US|CA|HK|NT)\b/g, '$1\u00a0$2') : money0;
   // a money amount in a readable scale: 2,139,960.5 (millions) -> '$2.14 trillion' / '2,14 Bio. $'
   const big = (value, scale, cur) => {
     const v = value * scale;
