@@ -24,6 +24,7 @@ test('every fixed word exists in the four languages, with the same slots', () =>
     for (const k of Object.keys(WORDS.en)) {
       if (k === 'scalePl') continue;   // English plural scale words only
       assert.ok(k in WORDS[lang], `${lang} lacks ${k}`);
+      if (lang === 'zh-HK' && k === 'retSame') { assert.equal(WORDS[lang][k], null); continue; }   // Chinese says each year with its own verb
       assert.equal(typeof WORDS[lang][k], typeof WORDS.en[k], `${lang}.${k}`);
     }
   }
@@ -148,5 +149,37 @@ test('the written site: the share picture stays og:image, Article image and the 
     assert.match(html, /id="latest" hidden/, 'the latest report is filled in the browser only');
   } finally {
     rmSync(out, { recursive: true, force: true });
+  }
+});
+
+test('a price the report did not compute its returns from is never printed as their base (SanDisk: 1,330.05 against 166.26)', () => {
+  const td = load('stock-td-to.json');
+  const moved = clone(td);
+  moved.price = Number(moved.price) * 8;   // a split or a stale file: the data's price is no longer the forecast's base
+  const p = at(site([moved, load('stock-rmd.json')]), '/stocks/td-to/');
+  assert.ok(p);
+  assert.doesNotMatch(p.html, /class="answer__from"/);
+  assert.doesNotMatch(p.html, /The dotted line is/);
+  const ok = at(site([td, load('stock-rmd.json')]), '/stocks/td-to/');
+  assert.match(ok.html, /class="answer__from"/);
+});
+
+test('copied cells keep the page language\'s form (German 25.800 stays 25.800); a guidance table with no Low / High draws no card', () => {
+  const de = at(site([load('stock-nvda-de.json')]), '/de/aktien/nvda/quartalszahlen/');
+  const en = load('stock-nvda-de.json');
+  const gEn = en.pages.earnings.blocks.find((b) => /guidance in force$/i.test(b.table?.title || ''));
+  const gDe = en.translations.de.pages.earnings.blocks[en.pages.earnings.blocks.indexOf(gEn)];
+  if (gEn && gDe?.table) {
+    const i = gEn.table.head.indexOf('Low');
+    const cell = gDe.table.rows.find((r, j) => /\d/.test(gEn.table.rows[j][i]))?.[i];
+    if (cell) assert.ok(de.html.includes(`>${cell}`) || de.html.includes(`${cell}–`), cell);
+  }
+  const tc = clone(load('stock-td-to.json'));
+  const g = tc.pages.earnings.blocks.find((b) => /guidance in force$/i.test(b.table?.title || ''));
+  if (g) {
+    g.table.head = ['Row', 'Period', 'Given on'];
+    g.table.rows = g.table.rows.map((r) => [r[0], r[1], 'Mar 18, 2026']);
+    const p = at(site([tc, load('stock-rmd.json')]), '/stocks/td-to/earnings/');
+    assert.doesNotMatch(p.html, /class="gc"/);
   }
 });

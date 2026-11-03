@@ -354,7 +354,7 @@ export const WORDS = {
     execSummary: '摘要',                                                                                                               // "Executive summary"
     ansH: (c, t) => `${c}（${t}）的股價預測是多少？`, ansLabel: (c) => `我們對 ${c} 的預測`, by: (m) => `至${m}`,                       // "What is the C (T) stock forecast?", "Our forecast for C", "by …"
     from: (p, d, a, b) => `由 ${d}收市價 ${p} 計，即${a}，${b}，已計股息。`,                                                           // "From P at the D close, that is A and B, dividends included."
-    ret: (pct, gain, year) => `至${year}${gain ? '上升' : '下跌'} ${pct}`, retSame: (pct, year) => `至${year}${pct}`,                // "up / down x by year"
+    ret: (pct, gain, year) => `至${year}年${gain ? '上升' : '下跌'} ${pct}`, retSame: null,                                         // "up / down x by year" (each year its own verb)
     blends: (m, unit) => `它綜合了${m}的三個情境，以${unit}計：`, per: (cur, u) => `每${u}${cur}`,                                    // "It blends three cases for …, cur per unit:"
     unitShare: '股', unitAds: '股美國預託股份（ADS）', unitAdsFirst: (ex) => `股美國預託股份（ADS，即在 ${ex} 買賣的股份）`,           // "share", "ADS", "ADS, the share as traded on the …"
     chance: (p) => `機率 ${p}`,                                                                                                       // "x chance"
@@ -444,6 +444,12 @@ export function cellValue(v) {
   if (!m) return null;
   const n = Number(m[2].replace(/,/g, ''));
   return Number.isFinite(n) ? (m[1] ? -n : n) : null;
+}
+// a copied cell in the page's language: German '1.234,5', French '1 234,5' (narrow no-break spaces) -> 1234.5; English as is
+export function cellValueIn(v, lang) {
+  if (lang === 'de') return cellValue(String(v ?? '').replace(/\./g, '').replace(',', '.'));
+  if (lang === 'fr') return cellValue(String(v ?? '').replace(/[\u202f\u00a0 ](?=\d)/g, '').replace(',', '.'));
+  return cellValue(v);
 }
 const retOf = (v) => {
   const m = /\(([+−-]?\d+(?:\.\d+)?)\s*%\)/.exec(String(v ?? '').replace(/−/g, '-'));
@@ -569,7 +575,7 @@ export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, r
   }
   // the start price, beside the dotted line, only when it does not sit on a case's label block
   const sy = y(start);
-  if (!ends.some((e) => sy - 24 < e.ty + 52 && sy + 4 > e.ty - 20)) {
+  if (priceLabel && !ends.some((e) => sy - 24 < e.ty + 52 && sy + 4 > e.ty - 20)) {
     out.push(`<text x="422" y="${(sy - 24).toFixed(1)}" font-size="19" font-weight="600" fill="#617066">${esc(startLabel)}</text>`);
     out.push(`<text x="422" y="${(sy - 1).toFixed(1)}" font-size="21" font-weight="700" fill="#0E1713">${esc(priceLabel)}</text>`);
   }
@@ -698,12 +704,12 @@ ${p.crumbsHtml}
       const g1 = r1 >= 0, g3 = r3 >= 0;
       const b1 = `<b>${esc(nb(F.pct(r1)))}</b>`, b3 = `<b>${esc(nb(F.pct(r3)))}</b>`;
       parts.push(W.ret(b1, g1, esc(f.years[0]), true));
-      parts.push(g1 === g3 ? W.retSame(b3, esc(f.years[f.last])) : W.ret(b3, g3, esc(f.years[f.last]), true));
+      parts.push(g1 === g3 && W.retSame ? W.retSame(b3, esc(f.years[f.last])) : W.ret(b3, g3, esc(f.years[f.last]), true));
     }
-    const startV = cellValue(data.price);
+    const startV = p.start && p.start.day ? p.start.value : null;
     const fromLine = startV !== null && priceDay && parts.length
       ? `<p class="answer__from">${W.from(esc(F.price(startV, cur)), esc(priceDay), parts[0], parts[1])}</p>` : '';
-    const caseLi = ['Bear', 'Base', 'Bull'].map((kk) => `<li class="case case--${kk.toLowerCase()}"><span class="case__name"><i class="case__dot"></i>${esc(p.caseWord(kk))}</span><span class="case__price">${esc(num(String(Math.round(f.rows[kk][0].v))))}</span><span class="case__chance">${esc(nb(W.chance(num(f.prob[kk]))))}</span></li>`).join('');
+    const caseLi = ['Bear', 'Base', 'Bull'].map((kk) => `<li class="case case--${kk.toLowerCase()}"><span class="case__name"><i class="case__dot"></i>${esc(p.caseWord(kk))}</span><span class="case__price">${esc(f.rows[kk][0].v >= 100 ? num(String(Math.round(f.rows[kk][0].v))) : F.cell(f.rows[kk][0], '').trim())}</span><span class="case__chance">${esc(nb(W.chance(num(f.prob[kk]))))}</span></li>`).join('');
     const unitFirst = isAds ? W.unitAdsFirst(exch) : W.unitShare;
     answer = `<section class="answer" aria-labelledby="ans-h">
 <h2 class="sr" id="ans-h">${esc(W.ansH(company, ticker))}</h2>
@@ -829,12 +835,13 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     const out = [];
     if (kind === 'scenarios' && f) {
       const m3 = monthYear(f.cols[f.last]);
-      const svg = forecastSvg(f, { start: cellValue(data.price) ?? f.rows.Weighted[0].v, startLabel: priceIso ? p.shortFull(priceIso, lang) : '', priceLabel: F.price(cellValue(data.price) ?? 0, cur),
+      const dated = !!(p.start && p.start.day && priceIso);
+      const svg = forecastSvg(f, { start: p.start ? p.start.value : f.rows.Weighted[0].v, startLabel: dated ? p.shortFull(priceIso, lang) : '', priceLabel: dated ? F.price(p.start.value, cur) : '',
         labels: [priceIso ? p.dateWords(`${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][Number(priceIso.slice(5, 7)) - 1]} ${priceIso.slice(0, 4)}`, lang) : '', ...f.cols.map((c) => p.dateWords(`${String(c).trim().slice(0, 3)} ${String(c).trim().slice(-4)}`, lang))],
         money: (c) => F.cell(c, cur), ret: (r) => F.signed(r), cases: { Bear: p.caseWord('Bear'), Base: p.caseWord('Base'), Bull: p.caseWord('Bull') } });
       files.push({ name: 'forecast.svg', content: svg });
       const alt = W.figAlt(company, ticker, m3, F.cell(f.rows.Bear[f.last], cur), F.cell(f.rows.Base[f.last], cur), F.cell(f.rows.Bull[f.last], cur));
-      const cap = priceDay ? W.figCap(p.curWord(cur), unit, F.price(cellValue(data.price) ?? 0, cur), priceDay) : '';
+      const cap = dated && priceDay ? W.figCap(p.curWord(cur), unit, F.price(p.start.value, cur), priceDay) : '';
       out.push(`<section class="sec" aria-labelledby="where-h">`, head.replace('<h2>', '<h2 id="where-h">'), paras(b),
         `<figure class="fig"><img src="forecast.svg" width="600" height="448" loading="lazy" decoding="async" alt="${esc(alt)}">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`,
         bridge(8, W.br8), '</section>');
@@ -858,11 +865,11 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         const enLabel = tableLabel(enT?.rows?.[j]?.[0] ?? r[0]);
         const label = tableLabel(r[0]);
         const raw = String(r[r.length - 1] ?? '').replace(/\*\*/g, '').trim();
-        const v = cellValue(raw);
+        const v = aligned ? cellValue(enT?.rows?.[j]?.[enT.rows[j].length - 1]) : cellValueIn(raw, lang);
         if (v === null || /^(Share price|Market value|Price to book)$/.test(enLabel) || (/^P\/E, next 12 months$/.test(enLabel) && type === 'stock')) return '';
         const { scale } = unitOf(enT?.unit || t.unit);
         const isMoney = !/[x%]\s*$/.test(raw) && scale && v >= 1000;
-        const shown = isMoney ? F.big(v, scale, cur) : num(raw);
+        const shown = isMoney ? F.big(v, scale, cur) : raw;
         let mean = '';
         if (/^Enterprise value/.test(enLabel)) mean = W.evMean(false);
         else if (/^Free cash flow yield/.test(enLabel)) mean = W.fcfyMean;
@@ -879,7 +886,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
       let cap = '';
       if (ri !== undefined && ri >= 0) {
         const cols = (enT?.head || t.head).slice(1);
-        const vals = enRows[ri].slice(1).map(cellValue);
+        const vals = enRows[ri].slice(1).map((v) => (aligned ? cellValue(v) : cellValueIn(v, lang)));
         const mx = Math.max(...vals.filter((v) => v !== null).map(Math.abs), 1);
         const shownRow = (t.rows[ri] || enRows[ri]).slice(1);
         bars = cols.map((c, j) => (vals[j] === null ? '' : `<li style="--w:${Math.max(2, (Math.max(0, vals[j]) / mx) * 62).toFixed(1)}%"${j === 0 ? ' class="on"' : ''}><span class="bars__y">${esc(p.dateWords(String(c), lang))}</span><span class="bars__b"><i></i><em>${esc(String(shownRow[j] ?? '').replace(/\*\*/g, ''))}</em></span></li>`)).join('');
@@ -890,11 +897,16 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
       out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo duo--r"><div class="duo__a">${paras(b)}</div><div class="duo__b">${bars}</div></div>`,
         i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
     } else if (kind === 'guidance' && t) {
-      const cards = t.rows.map((r) => {
-        const lo = String(r[2] ?? '').trim(), hi = String(r[3] ?? '').trim();
-        if (!lo && !hi) return '';
-        const range = lo && hi && lo !== hi ? `${num(lo)}–${num(hi)}` : num(lo || hi);
-        return `<div class="gc"><p class="gc__l">${esc(tableLabel(r[0]))}</p><span class="gc__n">${esc(nb(range))}</span><p class="gc__t">${esc(String(r[1] || ''))}${r[4] ? ` · ${esc(W.given(String(r[4])))}` : ''}</p></div>`;
+      const eh = (enT?.head || t.head || []).map((h) => String(h).trim());
+      const iLo = eh.indexOf('Low'), iHi = eh.indexOf('High'), iGiven = eh.findIndex((h) => /^(Given on|Date given|The date it was given)$/.test(h));
+      const iPer = eh.findIndex((h, j) => j > 0 && /period/i.test(h));
+      const cards = iLo < 0 || iHi < 0 ? '' : t.rows.map((r, j) => {
+        const er = enT?.rows?.[j] || r;
+        const lo = String(r[iLo] ?? '').trim(), hi = String(r[iHi] ?? '').trim();
+        if (cellValue(er[iLo]) === null || cellValue(er[iHi]) === null) return '';   // shape: both ends are numbers
+        const range = lo !== hi ? `${lo}–${hi}` : lo;
+        const per = iPer > 0 ? String(r[iPer] || '') : '', given = iGiven > 0 ? String(r[iGiven] || '') : '';
+        return `<div class="gc"><p class="gc__l">${esc(tableLabel(r[0]))}</p><span class="gc__n">${esc(nb(range))}</span><p class="gc__t">${esc(per)}${given ? ` · ${esc(W.given(given))}` : ''}</p></div>`;
       }).filter(Boolean).slice(0, 4).join('');
       out.push(`<section class="sec sec--guide" aria-labelledby="gd-h">`, head.replace('<h2>', '<h2 id="gd-h">'), paras(b), cards ? `<div class="gd">${cards}</div><p class="fine" style="margin-top:10px">${esc(W.guideNote)}</p>` : '',
         bridge(7, W.br7), '</section>');
@@ -937,7 +949,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
       if (!payT) return null;
       const [t, e] = payT;
       const j = (e.rows || []).findIndex((r) => re.test(tableLabel(r[0])));
-      return j >= 0 ? { raw: String(((t && t.rows[j]) || e.rows[j])[1] ?? '').replace(/\*\*/g, '').trim(), v: cellValue(e.rows[j][1]), unit: e.unit } : null;
+      return j >= 0 ? { raw: String(((t && t.rows[j]) || e.rows[j])[1] ?? '').replace(/\*\*/g, '').trim(), v: aligned ? cellValue(e.rows[j][1]) : cellValueIn(e.rows[j][1], lang), unit: e.unit } : null;
     };
     const mv = rowV(/^Market value$/);
     if (mv && mv.v !== null && unitOf(mv.unit).scale) {
@@ -948,11 +960,11 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     const pe = rowV(/^P\/E, next 12 months$/) || null;
     const peL = pe ? null : rowV(/^P\/E, last 12 months$/);
     if ((pe || peL) && (pe || peL).v !== null) {
-      tiles.push(`<li class="tile t-pe"><span class="tile__n">${esc(num((pe || peL).raw))}</span><span class="tile__l">${esc(pe ? W.tPe : W.tPeL)}</span></li>`);
+      tiles.push(`<li class="tile t-pe"><span class="tile__n">${esc((pe || peL).raw)}</span><span class="tile__l">${esc(pe ? W.tPe : W.tPeL)}</span></li>`);
       means.push(W.meanPe);
     }
     const pb = rowV(/^Price to book$/);
-    if (pb && pb.v !== null) { tiles.push(`<li class="tile t-pb"><span class="tile__n">${esc(num(pb.raw))}</span><span class="tile__l">${esc(W.tPb)}</span></li>`); means.push(W.meanPb); }
+    if (pb && pb.v !== null) { tiles.push(`<li class="tile t-pb"><span class="tile__n">${esc(pb.raw)}</span><span class="tile__l">${esc(W.tPb)}</span></li>`); means.push(W.meanPb); }
     if (p.dividendYield) { tiles.push(`<li class="tile t-dy"><span class="tile__n">${esc(nb(num(p.dividendYield)))}</span><span class="tile__l">${esc(W.tDy)}</span></li>`); means.push(W.meanDy); }
     const nextIso = String(data.next_earnings || '').slice(0, 10);
     if (nextIso && nextIso >= today) tiles.push(`<li class="tile t-nx"><span class="tile__n">${esc(p.shortFull(nextIso, lang))}</span><span class="tile__l">${esc(W.tNext)}</span></li>`);
@@ -1010,7 +1022,7 @@ ${bridge(5, W.br5)}
       if (![a, w, bl].some((x) => x === null)) qa.push([W.eQBeat(company), W.eABeat(tableLabel(rt[0]).toLowerCase() === tableLabel(rt[0]) ? tableLabel(rt[0]) : (lang === 'de' || lang === 'zh-HK' ? tableLabel(rt[0]) : tableLabel(rt[0]).charAt(0).toLowerCase() + tableLabel(rt[0]).slice(1)), String(rt[1] || r[1] || ''), a, w, bl)]);
     }
     if (f) {
-      const startV = cellValue(data.price);
+      const startV = p.start && p.start.day ? p.start.value : null;
       if (startV !== null && priceDay) qa.push([W.eQStock(company, f.years[f.last]), W.eAStock(F.cell(f.rows.Weighted[f.last], cur), monthYear(f.cols[f.last]), F.price(startV, cur), priceDay), p.stockPath ? [p.stockPath, W.stockLink(company)] : null]);
     }
   }

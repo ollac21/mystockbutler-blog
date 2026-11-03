@@ -1261,10 +1261,16 @@ function guidanceRowOf(data, lang) {
   const i = (en.blocks || []).findIndex((b) => /^(?:Targets and )?[Gg]uidance in force$/.test(String(b.table?.title || '')));
   const t = i >= 0 ? (lang === 'en' || (tr.blocks || []).length === en.blocks.length ? tr.blocks[i]?.table : null) : null;
   if (!t || (t.rows || []).length !== en.blocks[i].table.rows.length) return null;
-  const r = t.rows.find((x) => String(x[2] || '').trim() && String(x[3] || '').trim());
+  // the columns by our producer's own head words (a table may have no Low / High: Tencent's 'Row, Period, Given on')
+  const eh = (en.blocks[i].table.head || []).map((h) => String(h).trim());
+  const iLo = eh.indexOf('Low'), iHi = eh.indexOf('High'), iGiven = eh.findIndex((h) => /^(Given on|Date given|The date it was given)$/.test(h));
+  const iPer = eh.findIndex((h, j) => j > 0 && /period/i.test(h));
+  if (iLo < 0 || iHi < 0 || iGiven < 0 || iPer < 0) return null;
+  const j = en.blocks[i].table.rows.findIndex((x) => cellNum(x[iLo]) !== null && cellNum(x[iHi]) !== null);
+  const r = j >= 0 ? t.rows[j] : null;
   if (!r) return null;
-  const lo = String(r[2]).trim(), hi = String(r[3]).trim();
-  return { label: labelOf(r[0]), period: String(r[1] || '').trim(), value: lo === hi ? lo : `${lo}–${hi}`, date: String(r[4] || '').trim() };
+  const lo = String(r[iLo]).trim(), hi = String(r[iHi]).trim();
+  return { label: labelOf(r[0]), period: String(r[iPer] || '').trim(), value: lo === hi ? lo : `${lo}–${hi}`, date: String(r[iGiven] || '').trim() };
 }
 // The strip's names: the newest reports in this build with a stock page in the page's language, and the count rounded down.
 function stripOf(ctx, lang) {
@@ -1304,7 +1310,7 @@ function renderV2(data, type, ctx, lang, o) {
     announced: !!(announcedRow && isoDay(announcedRow.date) === isoDay(data.next_earnings)),
     earningsPath: has('earnings', lang) ? pagePath(data.slug, 'earnings', lang) : '', dividendPath: has('dividend', lang) ? pagePath(data.slug, 'dividend', lang) : '',
     stockPath: has('stock', lang) ? pagePath(data.slug, 'stock', lang) : '',
-    dividendYield: dividendYieldOf(data), guidanceRow: guidanceRowOf(data, lang),
+    dividendYield: dividendYieldOf(data), guidanceRow: guidanceRowOf(data, lang), start: data.pages.stock ? startPrice(data) : null,
     num: ui.num, money: (v, c, l) => money(v, c, l), humanDay, shortFull, weekday, dateWords: (t) => ui.date(t), curWord: (c) => (CUR_MARK[lang] || CUR_MARK.en)[c] || c,
     caseWord: (n) => caseWord(data, lang, n), mdBlock, langPage, authorLink: authorLink(lang),
   });
