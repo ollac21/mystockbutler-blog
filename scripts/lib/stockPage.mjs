@@ -428,7 +428,7 @@ export const WORDS = {
     eQaH: (c) => `關於 ${c} 業績的問題`, eQWhen: (c) => `${c} 何時公布業績？`,                                                         // "Questions about C's earnings", "When does C report?"
     eAWhen: (d, ok) => (ok ? `${d}，公司已公布的日期。` : `預計 ${d}，公司尚未確認。`),
     eQBeat: (c) => `${c} 有否超越自己的預測？`, eABeat: (m, n, a, i, b) => `過去 ${n}，${m}高於自己範圍 ${a} 次，在範圍內 ${i} 次，低於 ${b} 次（我們的報告）。`,
-    eQStock: (c, y) => `${c} 股價到${y}會在哪裏？`, eAStock: (w, m, p, d) => `我們的預測是至${m} ${w}，由 ${d}收市價 ${p} 起計。`, stockLink: (c) => `${c} 股價預測 →`,
+    eQStock: (c, y) => `${c} 股價到${y}年會在哪裏？`, eAStock: (w, m, p, d) => `我們的預測是至${m} ${w}，由 ${d}收市價 ${p} 起計。`, stockLink: (c) => `${c} 股價預測 →`,
     eDescNext: (c, t, d) => `${c}（${t}）預計於 ${d}公布下次業績。`,
     eDescLast: (q, v, g, op) => `截至${q}季度：收入 ${v}${g ? `，${g}` : ''}${op ? `；經營利潤 ${op}` : ''}。`, eDescTail: '業績指引及觀察重點。',
     desc: (c, t, w1, m1, w3, m3) => `${c}（${t}）股價預測：至${m1} ${w1}，至${m3} ${w3}，已計股息。三個情境來自公司文件，並非分析師目標價。`,
@@ -468,7 +468,8 @@ export function makeFmt(lang, num, money) {
   const big = (value, scale, cur) => {
     const v = value * scale;
     if (lang === 'zh-HK') {
-      const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
+      // Hong Kong counts in 億 (100 million) and 萬億 (a trillion): 204,800 million = 2,048億
+      const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e8 ? [1e8, '億'] : [1e6, W.million];
       const x = v / div;
       return money(num(fixed(x, Math.abs(x) >= 1000 ? 0 : Math.abs(x) >= 10 ? 1 : 2)) + word, cur, lang);
     }
@@ -512,7 +513,10 @@ export function quartersOf(data, lang, langPage) {
   const i = (page.blocks || []).findIndex((b) => b.table && EIGHT.test(String(b.table.title || '')));
   const t = i >= 0 ? page.blocks[i].table : null;
   if (!t || (t.head || []).length < 3) return null;
-  const cols = t.head.slice(1).map((c) => String(c).trim()).reverse();
+  // our own column words: 'Quarter to Jun 2026' / '6 months to Jun 2026' read 'Jun 2026' (the kind kept apart: a half-year is said so)
+  const raw = t.head.slice(1).map((c) => String(c).trim()).reverse();
+  const halfKind = raw.some((c) => /^(?:6 months|Half-year) to /.test(c));
+  const cols = raw.map((c) => c.replace(/^(?:Quarter|6 months|Half-year|Year) to /, ''));
   const rowOf = (label) => {
     const r = t.rows.find((x) => String(x[0]).replace(/\*\*/g, '').trim() === label);
     return r ? r.slice(1).map(cellValue).reverse() : null;
@@ -527,7 +531,7 @@ export function quartersOf(data, lang, langPage) {
   const steps = agoI >= 0 ? lastI - agoI : 0;               // 4 = quarters, 2 = half-years
   const growth = (r) => (r && agoI >= 0 && r[lastI] !== null && r[agoI] !== null && r[agoI] > 0 ? (r[lastI] / r[agoI] - 1) * 100 : null);
   const tr = lang !== 'en' && langPage ? langPage(data, 'earnings', lang) : null;
-  return { blockIndex: i, cols, rev, op: rowOf('Operating income'), ni: rowOf('Net income'), eps: rowOf('EPS, diluted'), scale, cur, lastI, agoI, half: steps === 2,
+  return { blockIndex: i, cols, rev, op: rowOf('Operating income'), ni: rowOf('Net income'), eps: rowOf('EPS, diluted'), scale, cur, lastI, agoI, half: halfKind || steps === 2,
     growth, translated: tr };
 }
 
@@ -800,8 +804,8 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     if (pts.length < 2) return '';
     const unitBig = (v) => v * q.scale;
     const mxv = Math.max(...pts.map(([, v]) => unitBig(v)));
-    const [div, scaleKey] = mxv >= 1e12 ? [1e12, 'trillion'] : mxv >= 1e9 ? [1e9, 'billion'] : [1e6, 'million'];
-    const scaleWord = (W.scalePl || {})[scaleKey] || W[scaleKey];
+    const [div, scaleKey] = lang === 'zh-HK' && mxv < 1e12 && mxv >= 1e8 ? [1e8, 'yi'] : mxv >= 1e12 ? [1e12, 'trillion'] : mxv >= 1e9 ? [1e9, 'billion'] : [1e6, 'million'];
+    const scaleWord = scaleKey === 'yi' ? '億' : (W.scalePl || {})[scaleKey] || W[scaleKey];
     const d = (v) => { const x = unitBig(v) / div; return num(fixed(x, x >= 1000 ? 0 : x >= 10 ? 1 : 2)); };
     const g = q.growth(q.rev);
     const curMark = p.curWord(q.cur);
