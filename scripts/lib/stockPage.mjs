@@ -436,6 +436,101 @@ export const WORDS = {
   },
 };
 
+// THE EARNINGS PAGE'S WORDS, the approved deck (b115-mock-earnings/COPY.md rows 1-32, owner 2026-11-03 "Ok for all"): they replace
+// the first wording of the same keys. A row whose data the file does not hold (the range given before the quarter, the day the
+// company reported, the guided sales line) is left out, never filled with a guess.
+const EARN_WORDS = {
+  en: {
+    eH1: (c, t) => `${c} (${t}) earnings: next date, last results and guidance`,
+    eAnsH: (c) => `When is ${c}'s next earnings date, and what were its last results?`, eNext: 'Next earnings date', eSales: 'Sales',
+    eLastSub: (c, q) => `${c}'s own figures for the quarter to ${q}. Growth is on a year earlier.`,
+    eLastSubHalf: (c, q) => `${c}'s own figures for the half-year to ${q}. Growth is on a year earlier.`,
+    insideEarn: (c) => `What did ${c}'s quarter show? The first page of our report`,
+    eBeatH: (c) => `Did ${c} beat earnings? Its results against its own forecast`,
+    dotsNote: (n, c) => `Each dot is one of the last ${n}, from our report, against the range ${c} gave, not analysts' estimates.`,
+    eGuideH: (c, kind, m) => (kind === 'q' ? `${c} guidance: what does it expect for the quarter to ${m}?` : kind === 'y' ? `${c} guidance: what does it expect for the year to ${m}?` : `${c} guidance: what does it expect?`),
+    brGuide: 'How our report reads this guidance', brWatch: "What could change our report's view after the next results",
+    eRevCap: (cur, scale, c, q, g, up) => `Sales by quarter, ${cur} ${scale}, ${c}'s own figures.${g ? ` The darker bar, the quarter to ${q}, is ${up ? 'up' : 'down'} ${g} on a year earlier.` : ''}`,
+    eQaH: (c, t) => `Questions about ${c} (${t}) earnings`, eQWhen: (c) => `When does ${c} report earnings?`,
+    eAWhen: (day, d, per, ok, c) => `Next on ${day}, ${d}${per ? `, for the quarter to ${per}` : ''}. ${ok ? `${c} has confirmed it.` : `That date is expected; ${c} has not confirmed it yet.`}`,
+    eQOut: (c) => `Are ${c}'s latest earnings out?`, eAOut: (c, q, half) => `Yes. ${c} has reported the ${half ? 'half-year' : 'quarter'} to ${q}.`,
+    eQExp: (c) => `Is ${c} expected to beat earnings?`,
+    eAExp: (g, rec) => `Our report makes no call on that.${g ? ` Management's guidance: ${g}.` : ''}${rec ? ` ${rec}` : ''}`,
+    eRec: (n, m, c, a, b) => `In the last ${n}, ${m} came in above ${c}'s own range ${a === 1 ? 'once' : a === 2 ? 'twice' : `${a} times`}${b === 0 ? ' and never below it' : ''}.`,
+    eAStock: (w, m, p, d) => `Our report's forecast is ${w} a share by ${m}, from the ${p} close of ${d}.`,
+    moreEarn: (c) => `${c} and its rivals`,
+    eDesc: (c, t, d, ok, q, sales, g, oi, goi) => `${c} (${t}) earnings date: ${d}, ${ok ? 'confirmed' : 'expected'}.${q ? ` Last results, quarter to ${q}: sales ${sales}${g ? `, ${g}` : ''}${oi ? `; operating income ${oi}${goi ? `, ${goi}` : ''}` : ''}.` : ''}`,
+    eDescPast: (c, t, q, sales, g, oi, goi) => `${c} (${t}) earnings: results for the quarter to ${q}: sales ${sales}${g ? `, ${g}` : ''}${oi ? `; operating income ${oi}${goi ? `, ${goi}` : ''}` : ''}.`,
+  },
+  fr: {
+    eH1: (c, t) => `Résultats de ${c} (${t}) : prochaine date, derniers résultats et prévisions`,
+    eAnsH: (c) => `Quelle est la date des prochains résultats de ${c}, et quels ont été les derniers ?`, eNext: 'Prochains résultats', eSales: 'Ventes',
+    eLastSub: (c, q) => `Les chiffres de ${c} pour le trimestre clos en ${q}. La croissance se compare à un an plus tôt.`,
+    eLastSubHalf: (c, q) => `Les chiffres de ${c} pour le semestre clos en ${q}. La croissance se compare à un an plus tôt.`,
+    insideEarn: (c) => `Qu’a montré le trimestre de ${c} ? La première page de notre rapport`,
+    eBeatH: (c) => `${c} a-t-elle dépassé les attentes ? Ses résultats face à sa propre prévision`,
+    dotsNote: (n, c) => `Chaque point est un des ${n} derniers, d’après notre rapport, face à la fourchette donnée par ${c}, pas aux estimations des analystes.`,
+    eGuideH: (c, kind, m) => (kind === 'q' ? `Prévisions de ${c} : qu’attend-elle pour le trimestre clos en ${m} ?` : kind === 'y' ? `Prévisions de ${c} : qu’attend-elle pour l’exercice clos en ${m} ?` : `Prévisions de ${c} : qu’attend-elle ?`),
+    brGuide: 'Comment notre rapport lit ces prévisions', brWatch: 'Ce qui pourrait changer le regard de notre rapport après les prochains résultats',
+    eRevCap: (cur, scale, c, q, g, up) => `Ventes par trimestre, ${scale} de ${cur}, les chiffres de ${c}.${g ? ` La barre foncée, le trimestre clos en ${q}, ${up ? 'progresse' : 'recule'} de ${g} sur un an.` : ''}`,
+    eQaH: (c, t) => `Questions sur les résultats de ${c} (${t})`, eQWhen: (c) => `Quand ${c} publie-t-elle ses résultats ?`,
+    eAWhen: (day, d, per, ok, c) => `Les prochains, le ${day} ${d}${per ? `, pour le trimestre clos en ${per}` : ''}. ${ok ? `${c} a confirmé cette date.` : `Cette date est attendue ; ${c} ne l’a pas encore confirmée.`}`,
+    eQOut: (c) => `Les derniers résultats de ${c} sont-ils publiés ?`, eAOut: (c, q, half) => `Oui. ${c} a publié le ${half ? 'semestre' : 'trimestre'} clos en ${q}.`,
+    eQExp: (c) => `${c} devrait-elle dépasser les attentes ?`,
+    eAExp: (g, rec) => `Notre rapport ne se prononce pas.${g ? ` Prévision de la direction : ${g}.` : ''}${rec ? ` ${rec}` : ''}`,
+    eRec: (n, m, c, a, b) => `Sur les ${n} derniers, ${m} est arrivé au-dessus de la fourchette de ${c} ${a} fois${b === 0 ? ', et jamais en dessous' : ''}.`,
+    eAStock: (w, m, p, d) => `La prévision de notre rapport est de ${w} par action d’ici ${m}, depuis la clôture de ${p} du ${d}.`,
+    moreEarn: (c) => `${c} et ses concurrents`,
+    eDesc: (c, t, d, ok, q, sales, g, oi, goi) => `Résultats de ${c} (${t}) : prochains le ${d}, ${ok ? 'date confirmée' : 'date attendue'}.${q ? ` Trimestre clos en ${q} : ventes ${sales}${g ? `, ${g}` : ''}${oi ? ` ; résultat d’exploitation ${oi}${goi ? `, ${goi}` : ''}` : ''}.` : ''}`,
+    eDescPast: (c, t, q, sales, g, oi, goi) => `Résultats de ${c} (${t}) pour le trimestre clos en ${q} : ventes ${sales}${g ? `, ${g}` : ''}${oi ? ` ; résultat d’exploitation ${oi}${goi ? `, ${goi}` : ''}` : ''}.`,
+  },
+  de: {
+    eH1: (c, t) => `${c} (${t}) Quartalszahlen: nächster Termin, letzte Zahlen und Prognose`,                                   // "C (T) earnings: next date, last results and guidance"
+    eAnsH: (c) => `Wann legt ${c} die nächsten Quartalszahlen vor, und wie waren die letzten?`, eNext: 'Nächster Termin', eSales: 'Umsatz',   // hidden H2; "Next earnings date"; "Sales"
+    eLastSub: (c, q) => `Die eigenen Zahlen von ${c} für das Quartal bis ${q}. Das Wachstum bezieht sich auf das Vorjahr.`,       // "C's own figures for the quarter to q. Growth is on a year earlier."
+    eLastSubHalf: (c, q) => `Die eigenen Zahlen von ${c} für das Halbjahr bis ${q}. Das Wachstum bezieht sich auf das Vorjahr.`,
+    insideEarn: (c) => `Was zeigte das Quartal von ${c}? Die erste Seite unseres Berichts`,                                      // "What did C's quarter show? The first page of our report"
+    eBeatH: (c) => `Hat ${c} die Erwartungen übertroffen? Die Zahlen gegen die eigene Prognose`,                                 // "Did C beat earnings? Its results against its own forecast"
+    dotsNote: (n, c) => `Jeder Punkt ist eines der letzten ${n}, aus unserem Bericht, gegenüber der Spanne von ${c}, nicht den Schätzungen der Analysten.`,
+    eGuideH: (c, kind, m) => (kind === 'q' ? `${c} Prognose: Was erwartet das Unternehmen für das Quartal bis ${m}?` : kind === 'y' ? `${c} Prognose: Was erwartet das Unternehmen für das Jahr bis ${m}?` : `${c} Prognose: Was erwartet das Unternehmen?`),   // "C guidance: what does it expect for the quarter / year to m?"
+    brGuide: 'Wie unser Bericht diese Prognose liest', brWatch: 'Was den Blick unseres Berichts nach den nächsten Zahlen ändern könnte',   // the two bridges
+    eRevCap: (cur, scale, c, q, g, up) => `Umsatz je Quartal, ${scale} ${cur}, die eigenen Zahlen von ${c}.${g ? ` Der dunkle Balken, das Quartal bis ${q}, liegt ${g} ${up ? 'über' : 'unter'} dem Vorjahr.` : ''}`,   // "Sales by quarter… The darker bar… is up / down g on a year earlier."
+    eQaH: (c, t) => `Fragen zu den ${c} (${t}) Quartalszahlen`, eQWhen: (c) => `Wann legt ${c} Quartalszahlen vor?`,              // "Questions about C (T) earnings", "When does C report earnings?"
+    eAWhen: (day, d, per, ok, c) => `Als Nächstes am ${day}, ${d}${per ? `, für das Quartal bis ${per}` : ''}. ${ok ? `${c} hat den Termin bestätigt.` : `Der Termin ist erwartet; ${c} hat ihn noch nicht bestätigt.`}`,   // "Next on day, date… That date is expected; C has not confirmed it yet."
+    eQOut: (c) => `Sind die neuesten Zahlen von ${c} veröffentlicht?`, eAOut: (c, q, half) => `Ja. ${c} hat das ${half ? 'Halbjahr' : 'Quartal'} bis ${q} gemeldet.`,   // "Are C's latest earnings out? Yes. C has reported the quarter to q."
+    eQExp: (c) => `Wird ${c} die Erwartungen voraussichtlich übertreffen?`,                                                      // "Is C expected to beat earnings?"
+    eAExp: (g, rec) => `Unser Bericht legt sich dazu nicht fest.${g ? ` Prognose des Managements: ${g}.` : ''}${rec ? ` ${rec}` : ''}`,   // "Our report makes no call on that. Management's guidance: g."
+    eRec: (n, m, c, a, b) => `In den letzten ${n} lag ${m} ${a}-mal über der eigenen Spanne von ${c}${b === 0 ? ' und nie darunter' : ''}.`,   // "In the last n, m came in above C's own range a times and never below it."
+    eAStock: (w, m, p, d) => `Die Prognose unseres Berichts: ${w} je Aktie bis ${m}, ausgehend vom Schlusskurs von ${p} am ${d}.`,   // "Our report's forecast is w a share by m, from the p close of d."
+    moreEarn: (c) => `${c} und die Konkurrenz`,                                                                                  // "C and its rivals"
+    eDesc: (c, t, d, ok, q, sales, g, oi, goi) => `${c} (${t}) Quartalszahlen: nächster Termin ${d}, ${ok ? 'bestätigt' : 'erwartet'}.${q ? ` Letzte Zahlen, Quartal bis ${q}: Umsatz ${sales}${g ? `, ${g}` : ''}${oi ? `; operatives Ergebnis ${oi}${goi ? `, ${goi}` : ''}` : ''}.` : ''}`,
+    eDescPast: (c, t, q, sales, g, oi, goi) => `${c} (${t}) Quartalszahlen für das Quartal bis ${q}: Umsatz ${sales}${g ? `, ${g}` : ''}${oi ? `; operatives Ergebnis ${oi}${goi ? `, ${goi}` : ''}` : ''}.`,
+  },
+  'zh-HK': {
+    eH1: (c, t) => `${c}（${t}）財報：下次日期、上次業績及業績指引`,                                                              // "C (T) earnings: next date, last results and guidance"
+    eAnsH: (c) => `${c} 下次業績日期是何時？上次業績如何？`, eNext: '下次業績日期', eSales: '銷售',                                // hidden H2; "Next earnings date"; "Sales"
+    eLastSub: (c, q) => `${c} 自己截至${q}季度的數字。增長與一年前比較。`,                                                       // "C's own figures for the quarter to q. Growth is on a year earlier."
+    eLastSubHalf: (c, q) => `${c} 自己截至${q}半年度的數字。增長與一年前比較。`,
+    insideEarn: (c) => `${c} 這一季表現如何？我們報告的第一頁`,                                                                  // "What did C's quarter show? The first page of our report"
+    eBeatH: (c) => `${c} 有否超出預期？業績與其自己預測的比較`,                                                                  // "Did C beat earnings? Its results against its own forecast"
+    dotsNote: (n, c) => `每一點代表過去 ${n}中的一期，取自我們的報告，與 ${c} 給出的範圍比較，而非分析師估計。`,
+    eGuideH: (c, kind, m) => (kind === 'q' ? `${c} 業績指引：對截至${m}的季度有何預期？` : kind === 'y' ? `${c} 業績指引：對截至${m}的年度有何預期？` : `${c} 業績指引：有何預期？`),   // "C guidance: what does it expect for the quarter / year to m?"
+    brGuide: '我們的報告如何解讀這份指引', brWatch: '下次業績後甚麼可能改變我們報告的看法',                                       // the two bridges
+    eRevCap: (cur, scale, c, q, g, up) => `每季銷售（${scale}${cur}），${c} 自己的數字。${g ? `深色柱即截至${q}的季度，按年${up ? '上升' : '下跌'} ${g}。` : ''}`,   // "Sales by quarter… The darker bar… is up / down g on a year earlier."
+    eQaH: (c, t) => `關於 ${c}（${t}）業績的問題`, eQWhen: (c) => `${c} 何時公布業績？`,                                          // "Questions about C (T) earnings", "When does C report earnings?"
+    eAWhen: (day, d, per, ok, c) => `下次在 ${d}（${day}）${per ? `，公布截至${per}的季度` : ''}。${ok ? `${c} 已確認日期。` : `這是預計日期，${c} 尚未確認。`}`,   // "Next on day, date… That date is expected; C has not confirmed it yet."
+    eQOut: (c) => `${c} 最新業績公布了嗎？`, eAOut: (c, q, half) => `已公布。${c} 已公布截至${q}的${half ? '半年度' : '季度'}業績。`,   // "Are C's latest earnings out? Yes. C has reported the quarter to q."
+    eQExp: (c) => `${c} 預計會超出預期嗎？`,                                                                                       // "Is C expected to beat earnings?"
+    eAExp: (g, rec) => `我們的報告不作判斷。${g ? `管理層指引：${g}。` : ''}${rec ? rec : ''}`,                                     // "Our report makes no call on that. Management's guidance: g."
+    eRec: (n, m, c, a, b) => `過去 ${n}，${m}高於 ${c} 自己的範圍 ${a} 次${b === 0 ? '，從未低於' : ''}。`,                         // "In the last n, m came in above C's own range a times and never below it."
+    eAStock: (w, m, p, d) => `我們報告的預測是至${m}每股 ${w}，由 ${d}收市價 ${p} 起計。`,                                         // "Our report's forecast is w a share by m, from the p close of d."
+    moreEarn: (c) => `${c} 及其對手`,                                                                                              // "C and its rivals"
+    eDesc: (c, t, d, ok, q, sales, g, oi, goi) => `${c}（${t}）業績日期：${d}，${ok ? '已確認' : '預計'}。${q ? `上次業績，截至${q}季度：銷售 ${sales}${g ? `，${g}` : ''}${oi ? `；經營利潤 ${oi}${goi ? `，${goi}` : ''}` : ''}。` : ''}`,
+    eDescPast: (c, t, q, sales, g, oi, goi) => `${c}（${t}）截至${q}季度的業績：銷售 ${sales}${g ? `，${g}` : ''}${oi ? `；經營利潤 ${oi}${goi ? `，${goi}` : ''}` : ''}。`,
+  },
+};
+for (const [l, w] of Object.entries(EARN_WORDS)) Object.assign(WORDS[l], w);
+
 // ---------------------------------------------------------------------------------------------------------------------------
 // Numbers. A cell of our own producers ('1,494,243', '468.34 (+15 %)', '24.2x', '1.1%'): arithmetic and shape only.
 // ---------------------------------------------------------------------------------------------------------------------------
@@ -686,13 +781,18 @@ export function renderPage(p) {
   const isAds = /depositary share/i.test(String(((enPage.blocks || []).map((b) => b.table).find((t) => t && (t.head || []).includes('Case')) || {}).unit || ''));
   const unit = isAds ? W.unitAds : W.unitShare;
   const monthYear = (col) => p.dateWords(col, lang);             // 'October 2027' in the page's language
+  const MON3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const longCol = (col) => p.dateWords(String(col).replace(/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/, (m) => MONTHS[MON3.indexOf(m)]), lang);
+  // our own column words, a quarter later: 'Sep 2026' -> 'Dec 2026' (arithmetic on our dates)
+  const plusMonths = (col, k) => { const m = /^([A-Z][a-z]{2}) (\d{4})$/.exec(String(col)); if (!m || MON3.indexOf(m[1]) < 0) return ''; const t = Number(m[2]) * 12 + MON3.indexOf(m[1]) + k; return `${MON3[t % 12]} ${Math.floor(t / 12)}`; };
   const sections = [];
 
   // ---- the top: crumb, H1, byline ----
   const [byWho, reportOf, ex] = W.byline(p.authorLink, esc(p.memoDay), esc(exch ? `${exch}: ${ticker}` : ticker));
   const top = `<section class="top">
 ${p.crumbsHtml}
-<h1>${esc(p.h1)}</h1>
+<h1>${esc(type === 'earnings' ? W.eH1(company, ticker) : p.h1)}</h1>
 <p class="byline">${byWho} · ${reportOf}${exch ? ` · <span class="nw">${ex}</span>` : ''}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a></p>
 </section>`;
 
@@ -750,15 +850,18 @@ ${fromLine}
         return `<li><span class="ans2__k">${esc(lab)}</span><span class="ans2__v">${cut > 0 ? `${esc(amt.slice(0, cut))}<small>${esc(amt.slice(cut + 1))}</small>` : esc(amt)}</span>${g !== null ? `<span class="pill${g < 0 ? ' pill--dn' : ''}">${esc(nb(F.signed(g)))}</span>` : ''}</li>`;
       }).join('');
       const qLabel = monthYear(q.cols[q.lastI]);
-      halves.push(`<div class="ans2__half"><p class="answer__label">${esc(W.eLast)}</p><ul class="ans2__rows">${rows}</ul><p class="ans2__sub">${esc(q.half ? W.eLastSubHalf(qLabel) : W.eLastSub(qLabel))}</p></div>`);
+      halves.push(`<div class="ans2__half"><p class="answer__label">${esc(W.eLast)}</p><ul class="ans2__rows">${rows}</ul><p class="ans2__sub">${esc(q.half ? W.eLastSubHalf(company, longCol(q.cols[q.lastI])) : W.eLastSub(company, longCol(q.cols[q.lastI])))}</p></div>`);
     }
     if (halves.length) answer = `<section class="answer ans2" aria-labelledby="ans-h">
 <h2 class="sr" id="ans-h">${esc(W.eAnsH(company))}</h2>
 ${halves.join('\n')}
 </section>`;
-    const lastBit = q && q.rev[q.lastI] !== null ? W.eDescLast(monthYear(q.cols[q.lastI]), F.big(q.rev[q.lastI], q.scale, q.cur), q.growth(q.rev) !== null ? F.signed(q.growth(q.rev)) : '', q.op && q.op[q.lastI] !== null ? F.big(q.op[q.lastI], q.scale, q.cur) : '') : '';
-    const nextBit = hasNext ? W.eDescNext(company, ticker, p.humanDay(nextIso, lang)) : '';
-    for (const d of [`${nextBit}${lastBit}${W.eDescTail}`, `${nextBit}${lastBit}`, nextBit]) {
+    const hasQ = q && q.rev[q.lastI] !== null;
+    const qs = hasQ ? [monthYear(q.cols[q.lastI]), F.big(q.rev[q.lastI], q.scale, q.cur), q.growth(q.rev) !== null ? F.signed(q.growth(q.rev)) : '',
+      q.op && q.op[q.lastI] !== null ? F.big(q.op[q.lastI], q.scale, q.cur) : '', q.op && q.growth(q.op) !== null ? F.signed(q.growth(q.op)) : ''] : null;
+    const tries = hasNext ? [W.eDesc(company, ticker, p.shortFull(nextIso, lang), announced, ...(qs || [''])), ...(qs ? [W.eDesc(company, ticker, p.shortFull(nextIso, lang), announced, qs[0], qs[1], qs[2], '', '')] : []), W.eDesc(company, ticker, p.shortFull(nextIso, lang), announced, '')]
+      : qs ? [W.eDescPast(company, ticker, ...qs), W.eDescPast(company, ticker, qs[0], qs[1], qs[2], '', '')] : [];
+    for (const d of tries) {
       const t = d.trim();
       if (t && t.length <= (lang === 'en' ? 155 : 200)) { description = t; break; }
     }
@@ -834,8 +937,12 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     const svgName = 'revenue.svg';
     files.push({ name: svgName, content: revenueSvg(q, { axis: W.revAxis(curMark, scaleWord), mon: (c) => { const [m, y] = String(c).split(' '); return [p.dateWords(m, lang), y || '']; }, val: d, pill: g !== null ? num(signed(g)) : '' }) });
     const alt = W.revAlt(company, ticker, curMark, scaleWord, ptsText, g !== null ? num(signed(g)) : '');
-    let cap = W.revCap(curMark, scaleWord, qLabel, g !== null && g >= 0 ? num(pct(g)) : '');
-    if (g !== null && g < 0) cap += W.revCapDown(qLabel, num(pct(g)));
+    let cap;
+    if (type === 'earnings') cap = W.eRevCap(curMark, scaleWord, company, longCol(q.cols[q.lastI]), g !== null ? num(pct(g)) : '', g !== null && g >= 0);
+    else {
+      cap = W.revCap(curMark, scaleWord, qLabel, g !== null && g >= 0 ? num(pct(g)) : '');
+      if (g !== null && g < 0) cap += W.revCapDown(qLabel, num(pct(g)));
+    }
     const tiles = [[q.op, W.gOp], [q.ni, W.gNi], [q.eps, W.gEps(unit)]].map(([r, l]) => [q.growth(r), l]).filter(([gg]) => gg !== null)
       .map(([gg, l]) => `<div><b${gg < 0 ? ' class="dn"' : ''}>${esc(nb(F.signed(gg)))}</b><span>${esc(l)}</span></div>`).join('');
     return { svgName, alt, cap, tiles, qLabel };
@@ -876,7 +983,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
       }
       const tRows = t ? rowsOf(t) : '';
       out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), tRows && (b.paragraphs || []).length ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${tRows}</div></div>` : `${paras(b)}${tRows ? `<div class="rows1">${tRows}</div>` : ''}`,
-        items.length ? `<ul class="watch">${items.join('')}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : bridge(7, W.br7), '</section>');
+        items.length ? `<ul class="watch">${items.join('')}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : bridge(7, type === 'earnings' ? W.brWatch : W.br7), '</section>');
     } else if (kind === 'pays' && t) {
       const rows = t.rows.map((r, j) => {
         const enLabel = tableLabel(enT?.rows?.[j]?.[0] ?? r[0]);
@@ -925,8 +1032,11 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         const per = iPer > 0 ? String(r[iPer] || '') : '', given = iGiven > 0 ? String(r[iGiven] || '') : '';
         return `<div class="gc"><p class="gc__l">${esc(tableLabel(r[0]))}</p><span class="gc__n">${esc(nb(range))}</span><p class="gc__t">${esc(per)}${given ? ` · ${esc(W.given(given))}` : ''}</p></div>`;
       }).filter(Boolean).slice(0, 4).join('');
-      out.push(`<section class="sec sec--guide" aria-labelledby="gd-h">`, head.replace('<h2>', '<h2 id="gd-h">'), paras(b), cards ? `<div class="gd">${cards}</div><p class="fine" style="margin-top:10px">${esc(W.guideNote)}</p>` : '',
-        bridge(7, W.br7), '</section>');
+      // the H2 names the period the first range covers (our producer's own period words: 'Quarter to Dec 2026', 'Year to Dec 2026')
+      const per0 = iPer > 0 ? String((enT?.rows || t.rows).map((r) => r[iPer]).find((x) => /^(Quarter|Year) to [A-Z][a-z]{2} \d{4}$/.test(String(x || '').trim())) || '').trim() : '';
+      const gH = /^Quarter to /.test(per0) ? W.eGuideH(company, 'q', longCol(per0.replace(/^Quarter to /, ''))) : /^Year to /.test(per0) ? W.eGuideH(company, 'y', longCol(per0.replace(/^Year to /, ''))) : W.eGuideH(company, '', '');
+      out.push(`<section class="sec sec--guide" aria-labelledby="gd-h">`, `<h2 id="gd-h">${esc(gH)}</h2>`, paras(b), cards ? `<div class="gd">${cards}</div><p class="fine" style="margin-top:10px">${esc(W.guideNote)}</p>` : '',
+        bridge(7, W.brGuide), '</section>');
     } else if (kind === 'promises' && t) {
       const sc = /(\d+)\s*\/\s*(\d+)/.exec(String(enT?.title || t.title || ''));
       const meas = t.rows.map((r, j) => {
@@ -939,9 +1049,9 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
 <ul class="leg"><li><i></i><b>${a}</b> ${esc(W.above)}</li><li><i class="in"></i><b>${w}</b> ${esc(W.inside)}</li><li><i class="dn"></i><b>${bl}</b> ${esc(W.below)}</li></ul></div>`;
       }).filter(Boolean).join('');
       const checked = String(t.rows[0]?.[1] || '');
-      out.push(`<section class="sec sec--beat" aria-labelledby="beat-h">`, head.replace('<h2>', '<h2 id="beat-h">'),
+      out.push(`<section class="sec sec--beat" aria-labelledby="beat-h">`, `<h2 id="beat-h">${esc(W.eBeatH(company))}</h2>`,
         sc ? `<p class="score"><b>${esc(`${sc[1]}/${sc[2]}`)}</b><span>${esc(W.score)} <i>${esc(W.ours)}</i></span></p>` : '', paras(b),
-        meas ? `<div class="beat">${meas}</div>${checked ? `<p class="fine" style="margin-top:8px">${esc(W.dotsNote(checked))}</p>` : ''}` : '', '</section>');
+        meas ? `<div class="beat">${meas}</div>${checked ? `<p class="fine" style="margin-top:8px">${esc(W.dotsNote(checked, company))}</p>` : ''}` : '', '</section>');
     } else if (kind === 'quarters') {
       const lq = lastQuarterSection();
       qSectionDone = true;
@@ -1031,7 +1141,10 @@ ${bridge(5, W.br5)}
     if (f) qa.push([W.qAn, W.aAn(company)]);
   } else {
     const nextIso = String(data.next_earnings || '').slice(0, 10);
-    if (nextIso && nextIso >= today) qa.push([W.eQWhen(company), W.eAWhen(p.humanDay(nextIso, lang), !!p.announced)]);
+    // the quarter the next results cover is never computed: the file's newest column can lag the company (Amazon's stops at June 2026)
+    const nextPer = '';
+    if (nextIso && nextIso >= today) qa.push([W.eQWhen(company), W.eAWhen(p.weekday(nextIso, lang), p.humanDay(nextIso, lang), nextPer ? longCol(nextPer) : '', !!p.announced, company)]);
+    if (q && q.rev[q.lastI] !== null) qa.push([W.eQOut(company), W.eAOut(company, longCol(q.cols[q.lastI]), q.half)]);
     const prom = (page.blocks || []).map((b, i) => [b.table, aligned ? enBlocks[i]?.table : b.table]).find(([, e]) => e && /^Promises kept/.test(String(e.title || '')));
     if (prom) {
       const [t, e] = prom;
@@ -1039,6 +1152,25 @@ ${bridge(5, W.br5)}
       const [a, w, bl] = [2, 3, 4].map((c) => cellValue(r[c]));
       if (![a, w, bl].some((x) => x === null)) qa.push([W.eQBeat(company), W.eABeat(tableLabel(rt[0]).toLowerCase() === tableLabel(rt[0]) ? tableLabel(rt[0]) : (lang === 'de' || lang === 'zh-HK' ? tableLabel(rt[0]) : tableLabel(rt[0]).charAt(0).toLowerCase() + tableLabel(rt[0]).slice(1)), String(rt[1] || r[1] || ''), a, w, bl)]);
     }
+    // is it expected to beat: no call; the company's own first range and its record (our report)
+    const gT = (page.blocks || []).map((b, i) => [b.table, aligned ? enBlocks[i]?.table : b.table]).find(([, e]) => e && /^(?:Targets and )?[Gg]uidance in force$/.test(String(e.title || '')));
+    let gLine = '';
+    if (gT && gT[0]) {
+      const [t, e] = gT, eh = (e.head || []).map((h) => String(h).trim());
+      const iLo = eh.indexOf('Low'), iHi = eh.indexOf('High'), iPer = eh.findIndex((h, j) => j > 0 && /period/i.test(h));
+      const j = iLo > 0 && iHi > 0 ? (e.rows || []).findIndex((r) => cellValue(r[iLo]) !== null && cellValue(r[iHi]) !== null) : -1;
+      const r = j >= 0 ? t.rows[j] : null;
+      const colon = lang === 'fr' ? '\u00a0: ' : lang === 'zh-HK' ? '：' : ': ';
+      if (r) gLine = `${tableLabel(r[0])}${iPer > 0 && r[iPer] ? `, ${String(r[iPer]).trim()}` : ''}${colon}${String(r[iLo]).trim() === String(r[iHi]).trim() ? String(r[iLo]).trim() : `${String(r[iLo]).trim()}–${String(r[iHi]).trim()}`}`;
+    }
+    let rec = '';
+    if (prom) {
+      const [t, e] = prom;
+      const r = e.rows[0], rt = (t && t.rows[0]) || r;
+      const [a, , bl] = [2, 3, 4].map((c) => cellValue(r[c]));
+      if (a !== null && bl !== null) rec = W.eRec(String(rt[1] || r[1] || ''), lang === 'en' ? tableLabel(rt[0]).charAt(0).toLowerCase() + tableLabel(rt[0]).slice(1) : tableLabel(rt[0]), company, a, bl);
+    }
+    if (gLine || rec) qa.push([W.eQExp(company), nb(W.eAExp(gLine, rec))]);
     if (f) {
       const startV = p.start && p.start.day ? p.start.value : null;
       if (startV !== null && priceDay) qa.push([W.eQStock(company, f.years[f.last]), W.eAStock(F.cell(f.rows.Weighted[f.last], cur), monthYear(f.cols[f.last]), F.price(startV, cur), priceDay), p.stockPath ? [p.stockPath, W.stockLink(company)] : null]);
@@ -1046,7 +1178,7 @@ ${bridge(5, W.br5)}
   }
   if (qa.length) {
     sections.push(`<section class="sec qa" aria-labelledby="faq-h">
-<h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : W.eQaH(company))}</h2>
+<h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : W.eQaH(company, ticker))}</h2>
 ${type === 'stock' ? '<div class="qa__grid">' : ''}${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}${type === 'stock' ? '</div>' : ''}
 ${type === 'stock' ? bridge(2, W.br2(company, rivalNames)) : ''}
 </section>`);
@@ -1058,7 +1190,7 @@ ${type === 'stock' ? bridge(2, W.br2(company, rivalNames)) : ''}
   sections.push(`<section class="sec links" aria-labelledby="more-h">
 <h2 id="more-h">${esc(W.moreH(company, ticker))}</h2>
 <div class="links__grid">
-<div><h3>${esc(W.morePages(company))}</h3><div class="chips">${chips([...p.siblings, ...p.rivalLinks, ...p.compares])}</div></div>
+<div><h3>${esc(type === 'earnings' ? W.moreEarn(company) : W.morePages(company))}</h3><div class="chips">${chips([...p.siblings, ...p.rivalLinks, ...p.compares])}</div></div>
 <div><h3>${esc(W.otherStocks)}</h3><div class="chips">${chips(p.hubs)}</div></div>
 ${filings.length ? `<div><h3>${esc(W.filings(company))}</h3><div class="chips">${filings.join('')}</div></div>` : ''}
 </div>

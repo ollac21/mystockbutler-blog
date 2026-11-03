@@ -580,7 +580,7 @@ test('plan 2-3: a checked, announced date puts the results date in the English e
   const t = titlesOf(nvdaPage(built));
   const want = 'NVIDIA (NVDA) earnings date: November 18, 2026 — what to watch';
   const ld = 'NVIDIA earnings date: November 18, 2026 — what to watch';
-  assert.deepEqual(t, { title: want, og: want, tw: want, h1: want, ld });   // B115: the h1 carries the ticker
+  assert.deepEqual(t, { title: want, og: want, tw: want, h1: 'NVIDIA (NVDA) earnings: next date, last results and guidance', ld });   // B115: the earnings deck's own h1 (COPY row 3)
   assert.deepEqual(built.report.earningsTitles.date, [{ path: '/stocks/nvda/earnings/', title: want }]);
   // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want);
@@ -618,7 +618,7 @@ test('plan 2-3: a German earnings title loses its date once the day has passed (
   const after = datedBuild(load('stock-nvda-de.json'), '2026-11-19', {});
   assert.equal(after.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(after.held));
   const t = titlesOf(nvdaPage(after, 'de'));
-  assert.deepEqual(t, { title: 'NVIDIA (NVDA) Quartalszahlen', og: 'NVIDIA (NVDA) Quartalszahlen', tw: 'NVIDIA (NVDA) Quartalszahlen', h1: 'NVIDIA (NVDA) Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
+  assert.deepEqual(t, { title: 'NVIDIA (NVDA) Quartalszahlen', og: 'NVIDIA (NVDA) Quartalszahlen', tw: 'NVIDIA (NVDA) Quartalszahlen', h1: 'NVIDIA (NVDA) Quartalszahlen: nächster Termin, letzte Zahlen und Prognose', ld: 'NVIDIA Quartalszahlen' });
   assert.deepEqual(after.report.earningsTitles.passed, [{ path: '/de/aktien/nvda/quartalszahlen/', title: 'NVIDIA (NVDA) Quartalszahlen' }]);
   // a German title already without a date is left as it is
   const plain = clone(load('stock-nvda-de.json'));
@@ -676,7 +676,7 @@ test('row 10: a French forecast page is titled "Action X (T) : avis, analyse et 
   // every other page keeps the title the file gives it, with the ticker: the French dividend and earnings pages, the English page
   for (const p of built.pages.filter((x) => x.path !== '/fr/stocks/td-to/')) {
     assert.ok(!p.title.includes('avis, analyse'), p.path);
-    assert.equal(p.title, titleWithTicker(titlesOf(p).h1.replace(/&amp;/g, '&').replace(/&#39;/g, "'"), p.data), p.path);
+    assert.equal(p.title, titleWithTicker(titlesOf(p).ld, p.data), p.path);   // the headline is the file's title (B115: the earnings h1 is the deck's own words)
   }
   // the chain's other forms, and an old file's wording, give the same title
   for (const old of ['Action TD : prévisions', 'Action TD : prévisions — novembre 2026', 'Toronto-Dominion : perspectives']) {

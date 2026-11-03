@@ -110,11 +110,12 @@ test('the earnings page: the next date and the last results lead; the promises s
   const td = load('stock-td-to.json');
   const p = at(site([td, load('stock-rmd.json')]), '/stocks/td-to/earnings/');
   assert.ok(p && p.v2);
-  assert.match(text(p.html), /Next results Dec 3, 2026 Thursday/);
+  assert.match(text(p.html), /Next earnings date Dec 3, 2026 Thursday/);
+  assert.match(p.html, /<h1>TD \(TD\.TO\) earnings: next date, last results and guidance<\/h1>/);
   assert.match(p.html, /class="ans2__rows"/);
   const prom = (td.pages.earnings.blocks || []).find((b) => /^Promises kept/.test(b.table?.title || ''));
   if (prom) assert.match(p.html, new RegExp(`<p class="score"><b>${/(\d+\/\d+)/.exec(prom.table.title)[1]}</b>`));
-  assert.ok(p.description.length <= 155 && /^TD \(TD\.TO\) reports next on December 3, 2026/.test(p.description), p.description);
+  assert.ok(p.description.length <= 155 && /^TD \(TD\.TO\) earnings date: Dec 3, 2026, expected\./.test(p.description), p.description);
 });
 
 test('the four languages: local dates and numbers, no English fixed word on the page', () => {
