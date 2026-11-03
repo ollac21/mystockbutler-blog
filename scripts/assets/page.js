@@ -32,6 +32,14 @@
   var track = doc.getElementById('track');
   if (track) { var half = track.scrollWidth / 2; if (half > 0) track.style.setProperty('--secs', Math.round(half / 40) + 's'); }
 
+  /* the head-to-head page: the reader picks ONE report; the buttons, the free line, the frame and the viewer follow the pick */
+  function pick(k) {
+    doc.body.setAttribute('data-pick', k);
+    doc.querySelectorAll('[data-pick]').forEach(function (b) { if (b.tagName === 'BUTTON') b.setAttribute('aria-selected', b.getAttribute('data-pick') === k ? 'true' : 'false'); });
+    doc.querySelectorAll('[data-pick-href]').forEach(function (a) { var h = a.getAttribute('data-href-' + k); if (h) a.href = h; });
+  }
+  doc.querySelectorAll('button[data-pick]').forEach(function (b) { b.addEventListener('click', function () { pick(b.getAttribute('data-pick')); }); });
+
   /* the viewer: the landing's Expand viewer. One history entry; Back, the x or Escape closes it; the page behind does not move. */
   var viewer = doc.getElementById('viewer');
   if (viewer) {
@@ -51,15 +59,17 @@
       if (viewer.hidden) return;
       if (pushed) { pushed = false; history.back(); } else { shut(); if (location.hash === '#first-page') history.replaceState(null, '', location.pathname + location.search); }
     };
+    var scope = function () { var k = doc.body.getAttribute('data-pick'); return (k && viewer.querySelector('[data-for="' + k + '"]')) || viewer.querySelector('[data-for]') || viewer; };
     var scrollTo = function (el, off) { if (el) vb.scrollTop = Math.max(0, el.getBoundingClientRect().top - vb.getBoundingClientRect().top + vb.scrollTop - off); };
     var toChapter = function (ch) {
-      var li = viewer.querySelector('.lock li[data-chapter="' + ch + '"]');
+      var sc = scope(), lh = sc.querySelector('.lock__h') || lockH;
+      var li = sc.querySelector('.lock li[data-chapter="' + ch + '"]');
       viewer.querySelectorAll('.lock li').forEach(function (x) { x.classList.toggle('is-target', x === li); });
-      if (li && lockH) {
+      if (li && lh) {
         var label = li.textContent.replace(/^\d+\.\s*/, '');
-        lockH.textContent = (/^\d+$/.test(ch) ? viewer.dataset.lockCh.replace('{n}', ch) : viewer.dataset.lockOne).replace('{label}', label);
+        lh.textContent = (/^\d+$/.test(ch) ? viewer.dataset.lockCh.replace('{n}', ch) : viewer.dataset.lockOne).replace('{label}', label);
       }
-      scrollTo(doc.getElementById('lockbox'), 70);
+      scrollTo(sc.querySelector('.lock__box') || doc.getElementById('lockbox'), 70);
     };
     viewer.querySelectorAll('[data-goto]').forEach(function (b) { b.addEventListener('click', function () { scrollTo(doc.getElementById(b.getAttribute('data-goto')), 24); }); });
     viewer.querySelectorAll('[data-lock]').forEach(function (b) { b.addEventListener('click', function () { toChapter(b.getAttribute('data-lock')); }); });
@@ -67,10 +77,10 @@
       b.addEventListener('click', function () {
         opener = b; open(false);
         viewer.querySelectorAll('.lock li').forEach(function (x) { x.classList.remove('is-target'); });
-        if (lockH) lockH.textContent = viewer.dataset.lockAll;
+        if (lockH && viewer.dataset.lockAll) lockH.textContent = viewer.dataset.lockAll;
         var ch = b.getAttribute('data-chapter');
         if (ch) toChapter(ch);
-        else if (b.hasAttribute('data-resume')) scrollTo(vb.querySelector('.memo-tables ul, .memo-tables h3 ~ h3'), 70);
+        else if (b.hasAttribute('data-resume')) scrollTo(scope().querySelector('.memo-tables ul, .memo-tables h3 ~ h3'), 70);
       });
     });
     viewer.querySelectorAll('[data-close-viewer]').forEach(function (b) { b.addEventListener('click', close); });

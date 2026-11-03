@@ -17,7 +17,7 @@ import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
-import { PAGE_CSS_PATH, PAGE_JS_PATH, headerHtml, renderPage, stripHtml } from './stockPage.mjs';
+import { PAGE_CSS_PATH, PAGE_JS_PATH, forecastOf, headerHtml, makeFmt, renderCompareBody, renderPage, stripHtml } from './stockPage.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -2043,6 +2043,13 @@ export function renderComparePage(pair, ctx) {
     inLanguage: 'en',
     ...(picture ? { image: pictureObject(picture) } : {}),
   };
+  // B115 (owner 2026-11-03 "Ok for all"): the head-to-head page in the approved design (stockPage.mjs renderCompareBody)
+  const full = (s) => ctx?.bySlug?.get(s.slug) || null;
+  const F = makeFmt('en', same, money);
+  const v2 = v2On() && ctx?.bySlug ? renderCompareBody({ pair, A, B, ctx, today: ctx.today, ctaOf, crumbsHtml: crumbs.html, authorLink: authorLink('en'), mdBlock, humanDay: (d) => humanDay(d), shortFull: (d) => shortFull(d, 'en'),
+    teaserOf: (s) => full(s)?.teaser || null, chaptersOf: (s) => full(s)?.chapters || [], forecastOf: (s) => (full(s) ? forecastOf(full(s)) : null), currencyOf: (s) => full(s)?.currency || '',
+    money: (c, cur) => F.cell(c, cur), big: (v, scale, cur) => F.big(v, scale, cur), nextOf: (s) => full(s)?.next_earnings || '', rivalsOf: (s) => full(s)?.rivals || [],
+    pageLinks: [...pagesOf(A), ...pagesOf(B)], others, hubs: [`<a href="${COMPARE_ROOT}">All comparisons</a>`, '<a href="/stocks/">All stocks</a>', ...(exists('/alternatives/bloomberg-terminal/') ? ['<a href="/alternatives/bloomberg-terminal/">Bloomberg Terminal alternatives</a>'] : [])] }) : '';
   const html = shell({
     title,
     description,
@@ -2050,7 +2057,8 @@ export function renderComparePage(pair, ctx) {
     ...(picture ? { image: shareImage(picture) } : {}),
     jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, article, ORG] },
     meta: { type: 'compare', ticker: `${A.ticker} vs ${B.ticker}`, cta: ctaOf(A), lang: 'en', label: `${A.name} vs ${B.name}` },
-    body: `<div class="layout one"><article>
+    ...(v2 ? { v2: { css: '/stocks/assets/page-compare.css', strip: stripHtml('en', stripOf(ctx, 'en'), '/stocks/'), results: ctx.exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '' } } : {}),
+    body: v2 || `<div class="layout one"><article>
 ${crumbs.html}
 <div class="kicker"><span>Side by side</span><span>${esc(A.name)} (${esc(A.ticker)}) and ${esc(B.name)} (${esc(B.ticker)})</span><span>${days[0] === days[1] ? `Memos of ${esc(humanDay(days[0]))}` : `Memos of ${esc(humanDay(A.memo_date))} and ${esc(humanDay(B.memo_date))}`}</span><span>${authorLink('en')}</span></div>
 <h1>${esc(title)}</h1>

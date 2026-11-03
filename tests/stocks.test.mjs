@@ -211,9 +211,12 @@ test('a comparison page: the title, both columns with their periods, who leads, 
   const page = compares.find((c) => c.path === '/compare/rbc-vs-td/');
   assert.ok(page && compares.some((c) => c.path === '/compare/'));
   assert.match(page.html, /<title>RBC vs TD stock: the numbers side by side \(October 2026\)<\/title>/);
-  assert.match(page.html, /<td>Efficiency ratio \(lower is leaner\)<\/td><td><span class="nv">54\.9%<\/span><small>Oct 2025<\/small><\/td><td><span class="nv">49\.5%<\/span>/);
-  assert.match(page.html, /<td>P\/E, last 12 months<\/td><td class="lead">RBC<\/td><td>The lower figure<\/td>/);
-  assert.match(page.html, /<td>Weighted price forecast, about 1 year<\/td><td class="lead">RBC<\/td><td>The higher weighted return<\/td>/);
+  // B115: each row as a pair of bars with both periods said; a mark only on a like-for-like row, never on a price ratio
+  assert.match(page.html, /<h3 class="vb__t">Efficiency ratio \(lower is leaner\)<\/h3><ul aria-label="Efficiency ratio \(lower is leaner\): RBC 54\.9\u00a0%, TD 49\.5\u00a0%">/);
+  assert.match(page.html, /<p class="vb__c">RBC: year to Oct 2025\. TD: year to Oct 2025\.<\/p>/);
+  const peBars = /<h3 class="vb__t">P\/E, last 12 months<\/h3>[\s\S]*?<\/div>/.exec(page.html)[0];
+  assert.doesNotMatch(peBars, /ahead/, 'a lower P/E is a lower price, not a better company: no mark');
+  assert.match(page.html, /<h2 id="fc-h">RBC vs TD stock forecast: where could each be by /);
   assert.ok(page.html.includes('FY2025 revenue was C$66,605 million.'));
   assert.ok(page.html.includes('It serves 28.1 million clients') && !page.html.includes('[4]'));   // the memo's citation marks are not drawn
   assert.match(page.html, /signup\?ticker=RY\.TO&amp;src=seo-compare/);
@@ -295,6 +298,9 @@ function untraced(sentence, pair, companies) {
 }
 
 test('the written comparison: four sections, each figure with its period and unit, each paragraph word for word and attributed', () => {
+  // the written comparison is the old head-to-head page's (the off switch): the new page follows the approved mockup
+  process.env.STOCK_PAGE_V2 = 'off';
+  try {
   const companies = namedBanks();
   const page = writtenOf(companies, fullPair());
   assert.deepEqual(page.written.map((w) => w.heading), ['How big are RBC and TD?', 'How fast are RBC and TD growing, and what did their latest results show?', 'How much cash do RBC and TD generate, and where does it go?', 'What does an investor pay for RBC and TD today?']);
@@ -316,6 +322,9 @@ test('the written comparison: four sections, each figure with its period and uni
   assert.doesNotMatch(all, /\b(better|cheaper|larger|smaller|bigger|higher|lower|more|less|attractive)\b/i);
   // the same wording on every build
   assert.equal(writtenOf(namedBanks(), fullPair()).html, page.html);
+  } finally {
+    delete process.env.STOCK_PAGE_V2;
+  }
 });
 
 test('the written comparison, mixed currencies: both printed, each in its own, and no word compares them', () => {

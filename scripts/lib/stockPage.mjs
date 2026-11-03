@@ -1619,3 +1619,212 @@ export function headerHtml(lang, { home, allStocks, results, cta, landing }) {
 <nav class="nav" aria-label="Main"><a href="${home}">${esc(allStocks)}</a>${results ? `<a href="${results}">${esc(W.results)}</a>` : ''}</nav>
 <a class="btn btn--sm" data-cta="header" href="${esc(cta)}">${esc(W.headerBtn)}</a></div></header>`;
 }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// THE HEAD-TO-HEAD PAGE (b115-cats/compare/nvidia-vs-amd.html, its COPY.md and TABLE.md; owner 2026-11-03 "Ok for all"). English.
+// The rows are the comparisons file's own (each figure with its period, the chain's leader); a ✓ marks the lead only when both
+// figures cover the same kind of period, and never on a price ratio (a lower P/E is a lower price, not a better company). The
+// reader picks ONE report (one report free): the button, the free line, the frame and the viewer follow the pick.
+// ---------------------------------------------------------------------------------------------------------------------------
+const CK = '<span class="ck" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m2.5 6.4 2.3 2.3 4.7-5"/></svg></span>';
+// our producer's period words (shape): a fiscal year ('Jan 2026', 'Year to Dec 2025'), a quarter, or a price date ('Today (Oct 16, 2026)')
+const periodKind = (p) => (/^Today \(/.test(String(p || '')) ? 'price' : /^Quarter to /.test(String(p || '')) ? 'quarter' : /^(?:Year to )?[A-Z][a-z]{2} \d{4}$/.test(String(p || '')) ? 'year' : '');
+const plainPeriod = (p) => String(p || '').replace(/^Today \((.*)\)$/, '$1').replace(/^Year to /, 'year to ').replace(/^Quarter to /, 'quarter to ').replace(/^([A-Z][a-z]{2} \d{4})$/, 'year to $1');
+const GROUPS = [
+  ['growth', /^Revenue growth$/],
+  ['profit', /^(Operating margin|Free cash flow|Free cash flow yield|Net interest margin|Return on equity|CET1 capital ratio|Efficiency ratio \(lower is leaner\)|Net debt \(− = net cash\))$/],
+  ['price', /^(P\/E, last 12 months|P\/E, next 12 months|Dividend yield)$/],
+];
+
+export function renderCompareBody(q) {
+  const { pair, A, B, ctx } = q;
+  const side = { a: A, b: B };
+  const name = { a: A.name, b: B.name };
+  const ageOk = (s) => { const d = String(s.memo_date || '').slice(0, 10); return d && q.today ? (Date.parse(`${q.today}T00:00:00Z`) - Date.parse(`${d}T00:00:00Z`)) / 864e5 < FREE_DAYS : false; };
+  const W = WORDS.en;
+  const forBoth = (fn) => ['a', 'b'].map((k) => `<span data-for="${k}">${fn(k)}</span>`).join('');
+  const rows = pair.rows || [];
+  const markable = (r) => !/^P\/E/.test(r.label) && r.leader && periodKind(r.a.period) && periodKind(r.a.period) === periodKind(r.b.period) && (periodKind(r.a.period) !== 'price' || r.a.period === r.b.period);
+  const shown = (c) => nb(`${c.value}${c.unit ? ` ${c.unit}` : ''}`.replace(/(\d)%/g, '$1 %'));
+  // the answer: the growth and profit rows first, then the price rows under their separator
+  const vsRow = (r, cls = '') => `<div class="vs__row${cls}" role="row"><p class="vs__l">${esc(r.label)}<small>${esc(periodKind(r.a.period) === 'year' ? 'last fiscal year' : periodKind(r.a.period) === 'price' ? 'at each report\'s price' : plainPeriod(r.a.period))}</small></p>${['a', 'b'].map((k) => `<p class="vs__v${markable(r) && r.leader === k ? ' lead' : ''}">${esc(shown(r[k]))}${markable(r) && r.leader === k ? CK : ''}</p>`).join('')}</div>`;
+  const top3 = rows.filter((r) => /^(Revenue growth|Operating margin|Net interest margin|Return on equity)$/.test(r.label)).slice(0, 2);
+  const pe = rows.filter((r) => /^P\/E/.test(r.label));
+  const sameDate = pe.length && pe.every((r) => r.a.period === r.b.period);
+  const lead = top3.filter(markable).map((r) => r.leader);
+  const verdict = lead.length && lead.every((x) => x === lead[0]) ? `<p class="verdict"><b>${esc(`${name[lead[0] === 'a' ? 'b' : 'a']} vs ${name[lead[0]]}: ${name[lead[0]]} leads on ${top3.filter(markable).map((r) => r.label.toLowerCase()).join(' and ')} in the last fiscal year.`)}</b></p>` : '';
+  const answer = `<section class="answer" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">${esc(`How do ${A.name} and ${B.name} stocks compare?`)}</h2>
+<p class="answer__label">${esc(`${A.name} vs ${B.name} in our two reports`)}</p>
+<div class="vs" role="table" aria-label="${esc(`${A.name} against ${B.name}`)}">
+<div class="vs__head" role="row"><span></span><span><i class="dot dot--a"></i>${esc(A.name)} <small>${esc(A.ticker)}</small></span><span><i class="dot dot--b"></i>${esc(B.name)} <small>${esc(B.ticker)}</small></span></div>
+${top3.map((r) => vsRow(r)).join('\n')}
+${pe.length ? `<p class="vs__sep">${esc(sameDate ? 'Price per dollar of profit: no mark' : 'Price per dollar of profit: different dates, no mark')}</p>${pe.map((r, i) => vsRow(r, ` vs__row--q${i ? ' vs__row--tab' : ''}`)).join('\n')}` : ''}
+</div>
+${verdict}
+</section>`;
+  const pickTabs = (cls = '') => `<div class="pick${cls}" role="tablist" aria-label="Report to read">${['a', 'b'].map((k, i) => `<button type="button" role="tab" data-pick="${k}" aria-selected="${i ? 'false' : 'true'}"><i class="dot dot--${k}"></i>${esc(name[k])}</button>`).join('')}</div>`;
+  const btnOf = (k) => (ageOk(side[k]) ? W.btnFree(name[k]) : W.btnOld(name[k]));
+  const freeOf = (k) => (ageOk(side[k]) ? W.free : '');
+  const cta = (id) => `<a class="btn btn--lg btn--block" id="${id}" data-cta="${id}" data-pick-href data-href-a="${esc(q.ctaOf(A))}" data-href-b="${esc(q.ctaOf(B))}" href="${esc(q.ctaOf(A))}">${forBoth((k) => esc(btnOf(k)))}</a>`;
+  const cta1 = `<section class="cta1" id="cta1" aria-label="Read a report">
+<div class="cta1__pick"><span id="pick-l">Pick one report:</span>${pickTabs()}</div>
+<div class="cta1__row">${cta('firstbtn')}<button class="textlink" type="button" data-open-viewer>Or read either first page, no account ▸</button></div>
+<p class="free">${forBoth((k) => esc(freeOf(k)))}</p>
+<p class="fine cta1__note">${CK} = ahead, marked only when both figures cover the same kind of period. Not a buy or sell call.</p>
+</section>`;
+  // the frames and the viewer: each company's first page (its teaser.first_page, else its teaser)
+  const fpOf = (k) => firstPage(q.teaserOf(side[k]), W);
+  const fps = { a: fpOf('a'), b: fpOf('b') };
+  const frameOf = (k) => {
+    const s = side[k], fp = fps[k];
+    if (!fp) return '';
+    const len = String(s.ticker).length;
+    return `<div class="mframe__pg" data-for="${k}"><div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(s.ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (len - 3) * (len < 3 ? 8 : 16)});max-width:calc(var(--u) * ${330 - (len - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(s.company || s.name)}</span><span class="mf-upd">${esc(W.updated(q.shortFull(String(s.memo_date).slice(0, 10))))}</span></div>
+<section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? W.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section></div>`;
+  };
+  const frames = frameOf('a') + frameOf('b');
+  const inside = frames ? `<aside class="inside inside--peek" aria-labelledby="inside-h">
+<h2 id="inside-h">${esc(`What do ${A.name} and ${B.name} do? The first page of each report`)}</h2>
+<p class="inside__sub">${forBoth((k) => esc(`Report of ${q.humanDay(side[k].memo_date)}`))} · open to read, no account</p>
+<div class="inside__tabs">${pickTabs(' pick--sm')}</div>
+<div class="mframe">${frames}
+<button type="button" class="mframe__open" data-open-viewer aria-label="Open the first page of the report"></button>
+<button type="button" class="mframe__exp" data-open-viewer aria-label="Expand the report"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>Expand</button></div>
+</aside>` : '';
+  const chaptersOf = (s) => (q.chaptersOf(s) || []).filter((c) => /^\d+\./.test(String(c)));
+  const bridge = (n, hook) => {
+    const nm = (k) => { const c = chaptersOf(side[k]).find((x) => String(x).startsWith(`${n}.`)); return c ? String(c).replace(/^\d+\.\s*/, '') : ''; };
+    if (!nm('a') && !nm('b')) return '';
+    return `<button type="button" class="bridge" data-open-viewer data-chapter="${n}">${bridgeLock}<span>${forBoth((k) => esc(`${hook}: chapter ${n}, ${nm(k) || nm(k === 'a' ? 'b' : 'a')}`))}</span><b>${forBoth((k) => esc(`In ${name[k]}'s full report →`))}</b></button>`;
+  };
+  const sections = [];
+  // is either the better stock: no pick; each company's own summary from its report (the gate reads both)
+  sections.push(`<section class="sec sec--first" aria-labelledby="bt-h">
+<h2 id="bt-h">${esc(`Is ${A.name} or ${B.name} the better stock?`)}</h2>
+<p class="lead">Our reports do not pick one: neither makes a buy or sell call. Each names what its company's case needs to go right.</p>
+${['a', 'b'].map((k) => (side[k].quote ? `<div class="rep rep--${k}"><b>${esc(`${name[k]}'s report`)}</b>${q.mdBlock(side[k].quote)}</div>` : '')).join('\n')}
+${bridge(7, 'What could change the forecast next')}
+</section>`);
+  // the rows, grouped, each a pair of bars with both periods said
+  const H = { growth: `Which grows faster, ${A.name} or ${B.name}?`, profit: `Which is more profitable, ${A.name} or ${B.name}?`, price: `${A.name} vs ${B.name} P/E: which stock costs more?` };
+  const HOOK = { growth: ['The years and quarters behind these figures', 5], profit: ['Margins and cash, year by year', 5], price: ['The full valuation, against profit, cash and rivals', 6] };
+  for (const [g, re] of GROUPS) {
+    const rs = rows.filter((r) => re.test(r.label));
+    if (!rs.length) continue;
+    const vb = rs.map((r) => {
+      const va = cellValue(r.a.value), vbv = cellValue(r.b.value);
+      if (va === null || vbv === null) return '';
+      const mx = Math.max(Math.abs(va), Math.abs(vbv), 1e-9);
+      // a money row in a readable scale (US$ millions -> 'US$96.7 billion'); its bars a little shorter, so the figure fits beside them
+      const u = unitOf(r.a.unit);
+      const big = (c) => (u.scale && u.cur && cellValue(c.value) !== null ? q.big(cellValue(c.value), u.scale, u.cur) : shown(c));
+      const room = u.scale ? 46 : 60;
+      const li = (k, v) => `<li class="${k}" style="--w:${Math.max(2, (Math.max(0, v) / mx) * room).toFixed(1)}%"><span class="vb__n"><i class="dot dot--${k}"></i>${esc(name[k])}</span><span class="vb__b"><i></i><em>${esc(big(r[k]))}${markable(r) && r.leader === k ? `<span class="ahead">${CK}<span class="ahead__w">ahead</span></span>` : ''}</em></span></li>`;
+      return `<div class="vb"><h3 class="vb__t">${esc(r.label)}</h3><ul aria-label="${esc(`${r.label}: ${A.name} ${big(r.a)}, ${B.name} ${big(r.b)}`)}">${li('a', va)}${li('b', vbv)}</ul><p class="vb__c">${esc(`${A.name}: ${plainPeriod(r.a.period)}. ${B.name}: ${plainPeriod(r.b.period)}.`)}</p></div>`;
+    }).filter(Boolean).join('');
+    if (!vb) continue;
+    const id = `${g}-h`;
+    sections.push(`<section class="sec" aria-labelledby="${id}">
+<h2 id="${id}">${esc(H[g])}</h2>
+<div class="split"><div class="split__t">${g === 'price' ? '<p class="lead">A lower P/E is a lower price per dollar of profit, not a better company, so these rows carry no mark.</p>' : '<p class="lead">Each figure as its report prints it, with its own period; a mark only where both cover the same kind of period.</p>'}</div>
+<div class="split__v">${vb}</div></div>
+${bridge(HOOK[g][1], HOOK[g][0])}
+</section>`);
+  }
+  // the forecast: each report's base case and its range; a weighted price only when its chances sum to 100 % and it lies between bear and bull
+  const fcOf = (k) => { const f = q.forecastOf(side[k]); return f ? { f, s: side[k] } : null; };
+  const fcs = { a: fcOf('a'), b: fcOf('b') };
+  if (fcs.a && fcs.b) {
+    const line = (k) => {
+      const { f } = fcs[k], L = f.last;
+      const chance = ['Bear', 'Base', 'Bull'].map((c) => cellValue(f.prob[c]));
+      const sum = chance.reduce((x, y) => x + (y || 0), 0);
+      const w = f.rows.Weighted[L];
+      const okW = Math.abs(sum - 100) < 0.6 && w.v >= Math.min(f.rows.Bear[L].v, f.rows.Bull[L].v) && w.v <= Math.max(f.rows.Bear[L].v, f.rows.Bull[L].v);
+      const cur = q.currencyOf(side[k]);
+      const m = (c) => q.money(c, cur);
+      const r = (c) => (c.r !== null ? ` (${nb(`${c.r >= 0 ? '+' : '−'}${Math.round(Math.abs(c.r))} %`)})` : '');
+      return `<li class="${k}"><b><i class="dot dot--${k}"></i>${esc(name[k])}</b> ${esc(`base case ${m(f.rows.Base[L])}${r(f.rows.Base[L])} by ${f.cols[L]}, between ${m(f.rows.Bear[L])} (bear) and ${m(f.rows.Bull[L])} (bull)${chance.every((x) => x !== null) && Math.abs(sum - 100) < 0.6 ? `; chances ${f.prob.Bear} / ${f.prob.Base} / ${f.prob.Bull}` : ''}${okW ? `; weighted ${m(w)}${r(w)}` : ''}.`)}</li>`;
+    };
+    sections.push(`<section class="sec" aria-labelledby="fc-h">
+<h2 id="fc-h">${esc(`${A.name} vs ${B.name} stock forecast: where could each be by ${fcs.a.f.cols[fcs.a.f.last]}?`)}</h2>
+<ul class="watch fcl">${line('a')}${line('b')}</ul>
+<p class="fine">Each report builds its own three cases from the company's filings, as a return on its own price, dividends included. They are not an average of analysts' price targets, so they can differ from them.</p>
+${bridge(8, 'Why these three prices, and what each case assumes')}
+</section>`);
+  }
+  // questions
+  const qa = [];
+  const rivalOf = (x, y) => (q.rivalsOf(x) || []).some((t) => String(t).toUpperCase() === String(y.ticker).toUpperCase());
+  if (rivalOf(A, B) && rivalOf(B, A)) qa.push([`${B.name} vs ${A.name}: are they competitors?`, 'Yes. Each report counts the other among its rivals.']);
+  const dy = rows.find((r) => r.label === 'Dividend yield');
+  if (dy) {
+    const pa = (cellValue(dy.a.value) || 0) > 0, pb = (cellValue(dy.b.value) || 0) > 0;
+    const ans = pa && pb ? `Both do: ${A.name}'s dividend yield was ${shown(dy.a)} (${plainPeriod(dy.a.period)}), ${B.name}'s ${shown(dy.b)} (${plainPeriod(dy.b.period)}).` : pa || pb ? `${name[pa ? 'a' : 'b']} does and ${name[pa ? 'b' : 'a']} does not: ${name[pa ? 'a' : 'b']}'s dividend yield was ${shown(dy[pa ? 'a' : 'b'])} (${plainPeriod(dy[pa ? 'a' : 'b'].period)}).` : 'Neither does, in our two reports.';
+    qa.push([`Which pays a dividend, ${A.name} or ${B.name}?`, ans]);
+  }
+  const nx = ['a', 'b'].map((k) => ({ k, d: String(q.nextOf(side[k]) || '').slice(0, 10) })).filter((x) => x.d && x.d >= q.today).sort((x, y) => x.d.localeCompare(y.d));
+  if (nx.length) qa.push([`When are ${A.name}'s and ${B.name}'s next earnings dates?`, nx.map((x, i) => `${i ? `${name[x.k]}'s` : `${name[x.k]}'s is`} ${q.humanDay(x.d)}`).join(', and ') + ' (expected).']);
+  qa.push(['Why do these numbers differ from other sites?', 'Every figure here carries its own period and date, from each company\'s report. Other sites may use another period or a later price.']);
+  sections.push(`<section class="sec qa" aria-labelledby="faq-h">
+<h2 id="faq-h">${esc(`Questions about ${A.name} vs ${B.name} stock`)}</h2>
+<div class="qa__grid">${qa.map(([qq, a]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}</p></div>`).join('\n')}</div>
+${bridge(2, `How ${A.name} and ${B.name} stand in their market`)}
+</section>`);
+  sections.push(`<section class="sec links" aria-labelledby="more-h">
+<h2 id="more-h">${esc(`More on ${A.name} and ${B.name}`)}</h2>
+<div class="links__grid">
+<div><h3>${esc(`${A.name} and ${B.name} pages`)}</h3><div class="chips">${q.pageLinks.join('')}</div></div>
+${q.others.length ? `<div><h3>More head to head</h3><div class="chips">${q.others.join('')}</div></div>` : ''}
+<div><h3>Other stocks</h3><div class="chips">${q.hubs.join('')}</div></div>
+</div>
+</section>`);
+  const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
+<h2 id="close-h">This page compares the numbers. Each report gives the reasons.</h2>
+<div class="close__pick">${pickTabs()}</div>
+${cta('closebtn')}
+<p class="free">${forBoth((k) => esc(freeOf(k)))}</p>
+<p class="foot">Information only, not investment advice. Each forecast gives three cases with their chances; it promises no price. Each price is that of the date shown; the two reports are of different dates.</p>
+</div></section>`;
+  const bar = `<div class="bar" id="bar" aria-hidden="true"><span>${forBoth((k) => `${esc(`${name[k]}'s full report`)}${ageOk(side[k]) ? `<small>${esc(W.barS)}</small>` : ''}`)}</span><a class="btn btn--sm" data-cta="sticky" data-pick-href data-href-a="${esc(q.ctaOf(A))}" data-href-b="${esc(q.ctaOf(B))}" tabindex="-1" href="${esc(q.ctaOf(A))}">Read it</a></div>`;
+  // the viewer: the picked report's first page, its locked chapters
+  const pane = (k) => {
+    const s = side[k], fp = fps[k];
+    if (!fp) return '';
+    const locked = fp.full ? chaptersOf(s) : (q.chaptersOf(s) || []).filter((c) => String(c) !== fp.chapter);
+    const key = (c) => (/^(\d+)\./.exec(String(c)) || [])[1] || 'x';
+    const cnt = s.counts || {};
+    return `<div data-for="${k}"><div class="blog-report" lang="en"><div class="br-column">
+<header class="br-ui" id="vtop-${k}"><div class="br-kicker"><span>${esc(s.ticker)}</span>${s.exchange ? `<span>· ${esc(s.exchange)}</span>` : ''}<span>· ${esc(s.company || s.name)}</span></div>
+<p class="br-title">${esc(s.company || s.name)} (${esc(s.ticker)})</p>
+<div class="br-by"><span>${esc(W.research)}</span><time datetime="${esc(String(s.memo_date).slice(0, 10))}">${esc(W.updated(q.shortFull(String(s.memo_date).slice(0, 10))))}</time></div></header>
+<div class="br-mt8"><section class="br-chapter"><p class="br-h2">${esc(fp.full ? W.execSummary : fp.chapter)}</p><div class="memo-tables">${fp.html.replace(/ id="([^"]+)"/g, ` id="${k}-$1"`)}</div>
+<div class="lock"><div class="lock__fade"></div><div class="lock__box"><p class="lock__h">${esc(fp.full ? W.lockAll(cnt.chapters || 8) : W.lockAllTeaser(cnt.chapters || 8))}</p>
+<p>${esc(W.lockSize((cnt.words || 0).toLocaleString('en-US'), String(cnt.tables || 0), String(cnt.sources || 0), s.name))}</p>${ageOk(s) ? `<p class="lock__free">${esc(W.free)}</p>` : ''}
+<ul>${locked.map((c) => `<li data-chapter="${key(c)}">${esc(c)}</li>`).join('')}</ul></div></div></section></div></div></div></div>`;
+  };
+  const panes = pane('a') + pane('b');
+  const viewer = panes ? `<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="${esc(`${A.name}'s and ${B.name}'s reports`)}" data-lock-all="" data-lock-ch="${esc(W.lockCh)}" data-lock-one="${esc(W.lockOne)}" hidden>
+<div class="viewer__win" tabindex="-1">
+<div class="viewer__bar"><span class="viewer__title">${forBoth((k) => esc(W.vTitle(name[k], q.humanDay(side[k].memo_date))))}</span>${pickTabs(' pick--sm')}<button class="viewer__x" type="button" data-close-viewer aria-label="${esc(W.vClose)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+<div class="viewer__main"><div class="viewer__body" id="viewer-body">${panes}</div></div>
+<div class="viewer__foot"><a class="btn" data-cta="viewer" data-pick-href data-href-a="${esc(q.ctaOf(A))}" data-href-b="${esc(q.ctaOf(B))}" href="${esc(q.ctaOf(A))}">${forBoth((k) => esc(ageOk(side[k]) ? W.keepFree(name[k]) : W.keepOld(name[k])))}</a><small>${forBoth((k) => esc(freeOf(k)))}</small></div>
+</div></div>` : '';
+  const days = [String(A.memo_date).slice(0, 10), String(B.memo_date).slice(0, 10)];
+  const top = `<section class="top">
+${q.crumbsHtml}
+<h1>${esc(`${A.name === A.ticker ? A.name : `${A.name} (${A.ticker})`} vs ${B.name === B.ticker ? B.name : `${B.name} (${B.ticker})`} stock: side by side`)}</h1>
+<p class="byline">${q.authorLink} · ${esc(days[0] === days[1] ? `Reports of ${q.humanDay(days[0])}` : `Reports of ${q.humanDay(days[0])} and ${q.humanDay(days[1])}`)}<a class="plain byline__how" href="/methodology/">How this report is made</a></p>
+</section>`;
+  return `<main class="page" id="top">
+${top}
+${answer}
+${cta1}
+${inside}
+${sections.join('\n')}
+${close}
+</main>
+${bar}
+${viewer}`;
+}

@@ -1,0 +1,198 @@
+/* B115 head-to-head page: the approved mockup's own rules (b115-cats/compare/extra.css), loaded after page.css. */
+/* ===== head-to-head page: the two companies, the pick, the versus rows, the paired bars ===== */
+:root{--a:#1F2A24;--b:#C9811C;--aheadbg:rgba(19,124,70,.11)}
+.dot{display:inline-block;flex:none;width:10px;height:10px;border-radius:9999px;background:var(--c)}
+.dot--a{--c:var(--a)} .dot--b{--c:var(--b)}
+body[data-pick="amd"] [data-for="nvda"]{display:none!important}
+body[data-pick="nvda"] [data-for="amd"]{display:none!important}
+
+/* the pick: NVIDIA | AMD (one state: the button, the frame, the bar and the viewer all follow it) */
+.pick{display:inline-flex;gap:2px;padding:3px;border-radius:9999px;background:#E9E8E1}
+.pick button{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:0 16px;border:0;border-radius:9999px;background:transparent;font:650 14.5px/1 var(--font);color:var(--muted);cursor:pointer}
+.pick button[aria-selected="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(17,24,20,.18)}
+.pick--sm button{min-height:32px;padding:0 12px;font-size:13.5px}
+
+/* ----- the answer: versus rows ----- */
+.answer__label{font:700 15px/1.25 var(--font);color:var(--ink)}
+.vs{margin-top:10px}
+.vs__head,.vs__row{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr) minmax(0,1fr);column-gap:8px;align-items:center}
+.vs__head{padding-bottom:7px;border-bottom:2px solid var(--ink);font:750 14px/1.2 var(--font);color:var(--ink)}
+.vs__head span{display:flex;align-items:center;gap:7px}
+.vs__head small{font:500 12px/1 var(--mono);color:var(--muted)}
+.vs__row{padding:9px 0;border-bottom:1px solid var(--rule)}
+.vs__l{font:620 14px/1.2 var(--font);color:var(--ink)}
+.vs__l small{display:block;margin-top:3px;font:450 12px/1.25 var(--font);color:var(--muted)}
+.vs__v{display:flex;align-items:center;gap:5px;font:880 24px/1 var(--font);letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.vs__v.lead{color:var(--primary)}
+.ck{flex:none;display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:9999px;background:var(--primary);color:#fff}
+.ck svg{width:11px;height:11px}
+.vs__sep{padding:11px 0 3px;font:600 12.5px/1.3 var(--font);color:var(--muted)}
+.vs__row--q .vs__v{color:var(--body)}
+.verdict{margin-top:12px;font:450 15px/1.5 var(--font);color:var(--body)}
+.verdict b{font-weight:800;color:var(--ink)}
+.answer__own .ck{width:14px;height:14px;vertical-align:-2px;margin-right:2px}
+
+/* the pick row above the first button */
+.cta1__pick{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+.cta1__pick>span{font:650 14px/1.2 var(--font);color:var(--muted)}
+.cta1__pick .pick{align-self:flex-start}
+.cta1__row .btn{width:100%}
+.cta1 .free--2 [data-for]{display:inline}
+
+/* the frame's tabs */
+.inside__tabs{margin-top:12px}
+.mframe__pg[hidden]{display:none}
+
+/* ----- key numbers: pair tiles ----- */
+.ptiles{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px}
+.ptile{padding-top:10px;border-top:2px solid var(--ink)}
+.ptile__l{font:550 13.5px/1.25 var(--font);color:var(--muted)}
+.ptile__v{display:flex;flex-direction:column;gap:5px;margin-top:8px}
+.ptile__v p{display:flex;align-items:baseline;gap:8px;font:850 24px/1.05 var(--font);letter-spacing:-.035em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ptile__v .dot{align-self:center}
+.ptile__v small{font:500 12px/1 var(--font);color:var(--muted);letter-spacing:0}
+.ptile__n{margin-top:7px;font:450 12.5px/1.3 var(--font);color:var(--muted)}
+
+/* ----- paired bars ----- */
+.vb{margin-top:20px}
+.vb:first-of-type{margin-top:6px}
+.vb__t{font:750 15.5px/1.3 var(--font);color:var(--ink)}
+.vb ul{margin-top:6px}
+.vb li{display:grid;grid-template-columns:68px minmax(0,1fr);align-items:center;column-gap:10px;padding:4px 0}
+.vb__n{display:flex;align-items:center;gap:6px;font:650 13.5px/1 var(--font);color:var(--body)}
+.vb__b{position:relative;height:32px}
+.vb__b i{position:absolute;left:0;top:0;bottom:0;width:var(--w);min-width:6px;border-radius:7px;background:var(--c)}
+.vb li.a{--c:var(--a)} .vb li.b{--c:var(--b)}
+.vb__b em{position:absolute;left:calc(var(--w) + 8px);top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:7px;font:750 15px/1 var(--font);font-style:normal;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ahead{display:inline-flex;align-items:center;gap:4px;padding:3px 8px 3px 5px;border-radius:9999px;background:var(--aheadbg);color:var(--primary);font:700 11.5px/1 var(--font)}
+.ahead .ck{width:13px;height:13px}
+.ahead .ck svg{width:8px;height:8px}
+.vb__c{margin-top:6px;font:450 12.5px/1.4 var(--font);color:var(--muted)}
+
+/* ----- the split: text and visual side by side on desktop ----- */
+.split{display:block}
+.split__v{margin-top:20px}
+.split__t p+p{margin-top:12px}
+.rep{margin-top:14px;padding:12px 14px;border-left:3px solid var(--c);background:rgba(255,255,255,.7);border-radius:0 12px 12px 0;font:450 15.5px/1.55 var(--font);color:var(--body)}
+.rep--a{--c:var(--a)} .rep--b{--c:var(--b)}
+.rep b{display:block;margin-bottom:2px;font:700 13px/1.3 var(--font);color:var(--muted)}
+.cases2{display:grid;gap:18px}
+.fig img{border-radius:14px}
+
+/* ----- the bridge with two doors ----- */
+.bridge2{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:22px;padding:12px 14px;border-radius:12px;background:rgba(19,124,70,.07);color:var(--ink)}
+.bridge2 svg{flex:none;width:15px;height:15px;color:var(--primary)}
+.bridge2__t{flex:1 1 260px;min-width:0;font:600 14.5px/1.35 var(--font)}
+.bridge2__go{display:flex;gap:8px;flex:none}
+.bridge2__go button{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 13px;border:1px solid rgba(19,124,70,.3);border-radius:9999px;background:#fff;color:var(--primary);font:700 13.5px/1 var(--font);cursor:pointer;white-space:nowrap}
+.bridge2__go button:hover{background:rgba(19,124,70,.08)}
+.bridge2__go .dot{width:8px;height:8px}
+
+/* the closing block: the pick sits in it too */
+.close .pick{background:rgba(255,255,255,.12)}
+.close .pick button{color:#C3D5CA}
+.close .pick button[aria-selected="true"]{background:#fff;color:#0E1713}
+.close__pick{margin-top:20px}
+
+/* the viewer's pick */
+.viewer__bar .pick{flex:none}
+.viewer__title{display:none}
+@media (min-width:900px){.viewer__title{display:block}}
+.blog-report[hidden]{display:none}
+
+@media (min-width:640px){
+  .cta1__pick{flex-direction:row;align-items:center;gap:12px}
+  .cta1__row .btn{width:auto}
+  .vs__v{font-size:28px}
+  .ptile__v p{font-size:26px}
+}
+@media (min-width:1024px){
+  .page>.cta1{margin-top:12px}
+  .vs__head,.vs__row{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr)}
+  .vs__v{font-size:30px}
+  .vs__l{font-size:14.5px}
+  .vs__row{padding:9px 0}
+  .answer__label{font-size:16px}
+  .verdict{font-size:15.5px}
+  .cta1__row .btn{width:auto}
+  .ptiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 24px}
+  .split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:56px;align-items:start}
+  .split__v{margin-top:0}
+  .split--r{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+  .vb:first-of-type{margin-top:0}
+  .cases2{grid-template-columns:1fr 1fr;column-gap:56px}
+  .cases2 .rep{margin-top:0}
+  .close__in>.close__pick{grid-column:2;grid-row:1;margin-top:8px}
+  .close__in>.btn{grid-row:2;margin-top:14px}
+  .close__in>.free{grid-row:3}
+  .close__in>.foot{grid-row:4}
+  .close h2{max-width:16ch}
+}
+
+/* round 2: the first screen */
+.mf-name{left:calc(var(--u) * 112)}
+.byline--fresh{margin-top:2px}
+.cta1__note{margin-top:12px;max-width:62ch}
+.cta1__note .ck{width:14px;height:14px;vertical-align:-2px;margin-right:2px}
+.cta1__pick{flex-direction:row;align-items:center;gap:10px;margin-bottom:10px}
+.vs__l small{display:none}
+@media (max-width:639px){.verdict{font-size:14.5px;line-height:1.45}.vs__v{font-size:23px}}
+@media (min-width:640px){.vs__l small{display:block}}
+@media (min-width:1024px){
+  .page>.cta1{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+  .cta1__pick{margin:0}
+  .cta1__pick>span{display:none}
+  .cta1__row{display:contents}
+  .cta1 .free,.cta1__note{flex:1 1 100%;margin-top:0;text-align:left;padding-left:0}
+  .cta1 .textlink{padding:12px 0}
+}
+
+@media (max-width:639px){.vs__row--tab{display:none}.vs__sep{padding-top:8px}.vs__row{padding:7px 0}.vs__head small{display:none}.vs__l{font-size:13.5px}.byline--fresh{font-size:12px}}
+
+.split__t .lead+.lead{margin-top:12px}
+.verdict b{display:inline}
+
+/* round 4: the key numbers on a phone: one column, the two values side by side, one legend */
+.ptiles{grid-template-columns:minmax(0,1fr);gap:18px 0}
+.ptiles__legend{display:flex;gap:16px;margin-bottom:8px;font:650 13px/1 var(--font);color:var(--muted)}
+.ptiles__legend span{display:inline-flex;align-items:center;gap:7px}
+.ptile__v{flex-direction:row;gap:14px}
+.ptile__v p{flex:1 1 0;min-width:0;font-size:21px}
+.ptile__v small{display:none}
+@media (min-width:640px){
+  .ptiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 22px}
+  .ptiles__legend{display:none}
+  .ptile__v{flex-direction:column;gap:5px}
+  .ptile__v small{display:inline}
+  .ptile__v p{font-size:24px}
+}
+@media (min-width:1024px){.ptiles{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px}}
+
+@media (max-width:639px){.ahead{padding:0;background:none}.ahead__w{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.ahead .ck{width:17px;height:17px}.ahead .ck svg{width:10px;height:10px}}
+
+@media (min-width:1024px){.split--r .split__v{order:-1}}
+
+@media (max-width:359px){
+  .vb__b i{width:calc(var(--w) * .8)}
+  .vb__b em{left:calc(var(--w) * .8 + 8px)}
+  .vs__v{font-size:20px}
+  .pick button{padding:0 12px}
+}
+@media (min-width:1024px) and (max-width:1199px){
+  .cta1 .btn{padding:0 20px;font-size:16px}
+  .cta1 .pick button{padding:0 12px}
+  .vs__l small{display:none}
+}
+
+.fig.split__v{margin-top:22px}
+.fig.split__v img{width:100%;max-width:520px}
+@media (min-width:1024px){.fig.split__v{margin-top:0}}
+/* ---- the template's additions (B115 round 2) ---- */
+/* the pick: only the picked report's words, frame and viewer pane show */
+body:not([data-pick="b"]) [data-for="b"]{display:none!important}
+body[data-pick="b"] [data-for="a"]{display:none!important}
+.rep p{display:inline;margin:0}
+.fcl li{display:block;padding:12px 0}
+.fcl li b{display:inline-flex;align-items:center;gap:6px;margin-right:4px;color:var(--ink)}
+.viewer__bar .pick{margin-left:auto;margin-right:8px}
+@media (max-width:639px){.ahead__w{display:none}.vb__b em{white-space:nowrap}}
