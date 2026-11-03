@@ -220,3 +220,12 @@
   .close{margin-top:34px;padding:28px 20px 84px}
   .links.sec{padding-top:30px}
 }
+/* B115 step 2: the closing's rows named one by one (page.css names them for the forecast page's order) */
+@media (min-width:1024px){
+  .close__in>h2{grid-column:1;grid-row:1/span 2}
+  .close__in>p:nth-of-type(1){grid-column:2;grid-row:1}
+  .close__in>p:nth-of-type(2){grid-column:2;grid-row:2}
+  .close__in>.btn{grid-column:1;grid-row:3;width:auto;justify-self:start;margin-top:22px}
+  .close__in>.free{grid-column:1;grid-row:4;text-align:left}
+  .close__in>.foot{grid-column:1/-1;grid-row:5}
+}

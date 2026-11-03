@@ -532,3 +532,4 @@ footer.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0
 /* a year label with its month ('Oct 2025', a fiscal year): the label column widens, on one line */
 .bars--wide li{grid-template-columns:72px minmax(0,1fr)}
 .bars__y{white-space:nowrap}
+.rows__cap{margin:0 0 6px}

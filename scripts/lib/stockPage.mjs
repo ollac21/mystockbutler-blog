@@ -741,7 +741,9 @@ ${fromLine}
     if (q && q.rev[q.lastI] !== null) {
       const rows = [[W.eSales, q.rev], [W.eOp, q.op]].filter(([, r]) => r && r[q.lastI] !== null).map(([lab, r]) => {
         const g = q.growth(r);
-        return `<li><span class="ans2__k">${esc(lab)}</span><span class="ans2__v">${esc(F.big(r[q.lastI], q.scale, q.cur))}</span>${g !== null ? `<span class="pill${g < 0 ? ' pill--dn' : ''}">${esc(nb(F.signed(g)))}</span>` : ''}</li>`;
+        const amt = F.big(r[q.lastI], q.scale, q.cur);
+        const cut = amt.indexOf(' ');
+        return `<li><span class="ans2__k">${esc(lab)}</span><span class="ans2__v">${cut > 0 ? `${esc(amt.slice(0, cut))}<small>${esc(amt.slice(cut + 1))}</small>` : esc(amt)}</span>${g !== null ? `<span class="pill${g < 0 ? ' pill--dn' : ''}">${esc(nb(F.signed(g)))}</span>` : ''}</li>`;
       }).join('');
       const qLabel = monthYear(q.cols[q.lastI]);
       halves.push(`<div class="ans2__half"><p class="answer__label">${esc(W.eLast)}</p><ul class="ans2__rows">${rows}</ul><p class="ans2__sub">${esc(q.half ? W.eLastSubHalf(qLabel) : W.eLastSub(qLabel))}</p></div>`);
@@ -790,13 +792,21 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     const title = String(t?.title || '');
     if (!t) return 'text';
     if ((t.head || []).includes('Case')) return 'scenarios';
+    if (/^The forecast['’]s (?:table|main numbers)/.test(title)) return 'drivers';   // the drivers' own table (195 companies)
     if (/^What an investor pays/.test(title)) return 'pays';
-    if (/^Follow the money: real free cash flow/.test(title)) return 'cash';
+    if (/^Follow the money: real free cash flow|^Free cash flow, honestly counted/.test(title)) return 'cash';
     if (title === 'Results') return 'results';
     if (GUIDANCE.test(title)) return 'guidance';
     if (/^Promises kept/.test(title)) return 'promises';
     if (EIGHT.test(title)) return 'quarters';
     return 'table';
+  };
+  const rowsOf = (t) => {
+    if (!t || !(t.rows || []).length || (t.head || []).length < 2) return '';
+    const items = t.rows.map((r) => [tableLabel(r[0]), String(r[1] ?? '').replace(/\*\*/g, '').trim()]).filter(([l, v]) => l && v)
+      .map(([l, v]) => `<li><span class="pay__l">${esc(l)}</span><span class="pay__n">${esc(nb(v))}</span></li>`).join('');
+    const cap = [t.title, t.unit, String(t.head[1] || '').trim()].filter(Boolean).join(' · ');
+    return items ? `<p class="fine rows__cap">${esc(cap)}</p><ul class="pay">${items}</ul>` : '';
   };
   const paras = (b, cls = 'lead') => (b.paragraphs || []).map((x, j) => p.mdBlock(x.text).replace(/^<p>/, `<p class="${j ? 'after' : cls}">`)).join('\n');
   const kinds = (page.blocks || []).map((b, i) => kindOf(i));
@@ -845,9 +855,11 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
       out.push(`<section class="sec" aria-labelledby="where-h">`, head.replace('<h2>', '<h2 id="where-h">'), paras(b),
         `<figure class="fig"><img src="forecast.svg" width="600" height="448" loading="lazy" decoding="async" alt="${esc(alt)}">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`,
         bridge(8, W.br8), '</section>');
-    } else if (kind === 'text' || (kind === 'scenarios' && !f)) {
+    } else if (kind === 'text' || kind === 'drivers' || (kind === 'scenarios' && !f)) {
       const items = [];
-      if (type === 'stock' && f && i === kinds.findIndex((x) => x === 'text')) {
+      // the bull and bear cases go under the drivers: the block right after the forecast's (the page writer's order)
+      const scenAt = kinds.indexOf('scenarios');
+      if (type === 'stock' && f && (scenAt >= 0 ? i === scenAt + 1 : i === kinds.findIndex((x) => x === 'text' || x === 'drivers'))) {
         const m3 = monthYear(f.cols[f.last]);
         const caseLine = (kk) => { const c = f.rows[kk][f.last]; return W.caseBy(F.cell(c, cur), m3, c.r !== null ? F.signed(c.r) : ''); };
         items.push(`<li class="case--bull"><i class="case__dot"></i><div><h3>${esc(nb(W.bull(num(f.prob.Bull))))}</h3><p>${esc(nb(caseLine('Bull')))}</p></div></li>`);
@@ -858,7 +870,8 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
           items.push(`<li class="case--base"><i class="case__dot"></i><div><h3>${esc(W.nextTest(p.humanDay(nextIso, lang)))}</h3>${g ? `<p>${esc(nb(W.guided(g.label, g.period, g.value, g.date)))}</p>` : ''}</div></li>`);
         }
       }
-      out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), paras(b),
+      const tRows = t ? rowsOf(t) : '';
+      out.push(`<section class="sec${type === 'earnings' ? ' sec--watch' : ''}" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), tRows ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${tRows}</div></div>` : paras(b),
         items.length ? `<ul class="watch">${items.join('')}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : bridge(7, W.br7), '</section>');
     } else if (kind === 'pays' && t) {
       const rows = t.rows.map((r, j) => {
@@ -894,7 +907,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         cap = kind === 'cash' ? (String(enRows[ri][0]).includes('Real') ? W.cashCap(unitText) : W.fcfCap(unitText)) : W.niCap(unitText);
         bars = bars ? `<ul class="bars${cols.some((c) => String(c).length > 4) ? ' bars--wide' : ''}" aria-label="${esc(`${tableLabel(t.rows[ri]?.[0] ?? enRows[ri][0])}, ${unitText}: ${cols.map((c, j) => (vals[j] === null ? '' : `${c} ${String(shownRow[j]).replace(/\*\*/g, '')}`)).filter(Boolean).join('; ')}`)}">${bars}</ul><p class="fine bars__cap">${esc(cap)}</p>` : '';
       }
-      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo duo--r"><div class="duo__a">${paras(b)}</div><div class="duo__b">${bars}</div></div>`,
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo duo--r"><div class="duo__a">${paras(b)}</div><div class="duo__b">${bars || rowsOf(t)}</div></div>`,
         i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
     } else if (kind === 'guidance' && t) {
       const eh = (enT?.head || t.head || []).map((h) => String(h).trim());
@@ -932,9 +945,10 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         lq ? `<figure class="fig"><img src="${lq.svgName}" width="600" height="360" loading="lazy" decoding="async" alt="${esc(lq.alt)}"><figcaption>${esc(nb(lq.cap))}</figcaption></figure>${lq.tiles ? `<div class="growth" aria-label="${esc(W.growthAria(lq.qLabel))}">${lq.tiles}</div>` : ''}` : '',
         bridge(5, W.br5), '</section>');
     } else {
-      // any other table: its rows as short visual rows, the newest column only
-      const rows = t ? t.rows.map((r) => `<li><span class="pay__l">${esc(tableLabel(r[0]))}</span><span class="pay__n">${esc(String(r[1] ?? '').replace(/\*\*/g, ''))}</span></li>`).join('') : '';
-      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), paras(b), rows ? `<ul class="pay">${rows}</ul>` : '', '</section>');
+      // any other table: its rows as short visual rows beside the text, the newest column only, named in the caption
+      const rows = rowsOf(t);
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), rows ? `<div class="duo"><div class="duo__a">${paras(b)}</div><div class="duo__b">${rows}</div></div>` : paras(b),
+        i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
     }
     sections.push(out.filter(Boolean).join('\n'));
   });
@@ -1029,7 +1043,7 @@ ${bridge(5, W.br5)}
   if (qa.length) {
     sections.push(`<section class="sec qa" aria-labelledby="faq-h">
 <h2 id="faq-h">${esc(type === 'stock' ? W.qaH(company, ticker) : W.eQaH(company))}</h2>
-<div class="qa__grid">${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}</div>
+${type === 'stock' ? '<div class="qa__grid">' : ''}${qa.map(([qq, a, link]) => `<div class="qa__i"><h3>${esc(qq)}</h3><p>${esc(nb(a))}${link ? ` <a href="${link[0]}">${esc(link[1])}</a>` : ''}</p></div>`).join('\n')}${type === 'stock' ? '</div>' : ''}
 ${type === 'stock' ? bridge(2, W.br2(company, rivalNames)) : ''}
 </section>`);
   }
