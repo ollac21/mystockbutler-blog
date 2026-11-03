@@ -45,7 +45,7 @@ export const WORDS = {
     // the answer box (rows 5-10)
     ansH: (c, t) => `What is the ${c} (${t}) stock forecast?`, ansLabel: (c) => `Our forecast for ${c}`, by: (m) => `by ${m}`,
     from: (p, d, a, b) => `From ${p} at the ${d} close, that is ${a} and ${b}, dividends included.`,
-    ret: (pct, gain, year, first) => `${first ? 'a ' : ''}${pct} ${gain ? 'gain' : 'loss'} by ${year}`, retSame: (pct, year) => `${pct} by ${year}`,
+    ret: (pct, gain, year, first) => `${first ? (/^(?:<b>)?(8|11|18)(?!\d)|^(?:<b>)?(11|18)\d\d(?!\d)/.test(pct) || /^(?:<b>)?8/.test(pct) ? 'an ' : 'a ') : ''}${pct} ${gain ? 'gain' : 'loss'} by ${year}`, retSame: (pct, year) => `${pct} by ${year}`,
     blends: (m, unit) => `It blends three cases for ${m}, ${unit}:`, per: (cur, u) => `${cur} per ${u}`,
     unitShare: 'share', unitAds: 'ADS', unitAdsFirst: (ex) => `ADS, the share as traded on the ${ex}`,
     chance: (p) => `${p} chance`,
@@ -77,7 +77,7 @@ export const WORDS = {
     cashCap: (cur) => `Real free cash flow, ${cur}: cash from the business, minus spending on buildings and equipment, minus pay in shares to staff.`,
     fcfCap: (cur) => `Free cash flow, ${cur}: cash from the business, minus spending on buildings and equipment.`,
     niCap: (cur) => `Net income, ${cur}, the company's own figures.`,
-    million: 'million', billion: 'billion', trillion: 'trillion',
+    million: 'million', billion: 'billion', trillion: 'trillion', scalePl: { million: 'millions', billion: 'billions', trillion: 'trillions' },
     // last quarter (rows 32-34)
     qH: (c) => `${c} earnings: how did the last quarter go?`,
     revCap: (cur, scale, q, g) => `Revenue by quarter, ${cur} ${scale}, the company's own figures.${g ? ` The quarter to ${q} is up ${g} on a year earlier.` : ''}`,
@@ -131,7 +131,7 @@ export const WORDS = {
     guideNote: 'Guidance is management\'s forecast of what it expects to report, usually a range.', given: (d) => `given ${d}`,
     eQaH: (c) => `Questions about ${c}'s earnings`, eQWhen: (c) => `When does ${c} report earnings?`,
     eAWhen: (d, ok) => (ok ? `On ${d}, the date the company announced.` : `Expected on ${d}, not yet confirmed by the company.`),
-    eQBeat: (c) => `Did ${c} beat its own forecast?`, eABeat: (m, n, a, i, b) => `Over the last ${n}, its ${m} came in above its own range ${a} times, inside it ${i} times and below it ${b} times (our report).`,
+    eQBeat: (c) => `Did ${c} beat its own forecast?`, eABeat: (m, n, a, i, b) => { const x = (k) => (k === 1 ? 'once' : k === 2 ? 'twice' : `${k} times`); return `Over the last ${n}, its ${m} came in above its own range ${x(a)}, inside it ${x(i)} and below it ${x(b)} (our report).`; },
     eQStock: (c, y) => `Where could ${c} stock be by ${y}?`, eAStock: (w, m, p, d) => `Our forecast is ${w} by ${m}, from ${p} at the ${d} close.`, stockLink: (c) => `${c} stock forecast →`,
     eDescNext: (c, t, d) => `${c} (${t}) reports next on ${d} (expected).`,
     eDescLast: (q, v, g, op) => ` Its quarter to ${q}: revenue ${v}${g ? `, ${g}` : ''}${op ? `; operating income ${op}` : ''}.`, eDescTail: ' Guidance and what to watch.',
@@ -244,8 +244,8 @@ export const WORDS = {
     results: '', headerBtn: 'Ein Bericht gratis', home: 'MyStockButler Startseite',                                               // "One report free", "MyStockButler home"
     byline: (by, date, exch) => [by, `Bericht vom ${date}`, exch], how: 'So entsteht dieser Bericht',                              // "Report of …", "How this report is made"
     free: 'Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.',                                    // "New accounts get one company's ready report free. No card."
-    btnFree: (c) => (c.length > 14 ? 'Den vollständigen Bericht gratis lesen' : `Den vollständigen ${c}-Bericht gratis lesen`),      // "Read (C's) full report free"
-    btnOld: (c) => (c.length > 14 ? 'Den vollständigen Bericht lesen' : `Den vollständigen ${c}-Bericht lesen`),                     // "Read (C's) full report"
+    btnFree: (c) => (c.length > 14 ? 'Den vollen Bericht gratis lesen' : `Vollen ${c}-Bericht gratis lesen`),      // "Read (C's) full report free"
+    btnOld: (c) => (c.length > 14 ? 'Den vollen Bericht lesen' : `Vollen ${c}-Bericht lesen`),                     // "Read (C's) full report"
     orFirst: 'Oder die erste Seite lesen, ohne Konto ▸',                                                                           // "Or read the first page, no account"
     size: (n, w, s) => `Zusammenfassung + ${n} Kapitel · ${w} Wörter · ${s} Quellen`,                                              // "Executive summary + n chapters · words · sources"
     insideStock: (c) => `Was macht ${c}? Die erste Seite unseres Berichts`,                                                        // "What does C do? The first page of our report"
@@ -259,7 +259,7 @@ export const WORDS = {
     ret: (pct, gain, year, first) => `${first ? 'ein ' : ''}${gain ? 'Plus' : 'Minus'} von ${pct} bis ${year}`, retSame: (pct, year) => `${pct} bis ${year}`,   // "a gain / loss of x by year"
     blends: (m, unit) => `Sie gewichtet drei Szenarien für ${m}, ${unit}:`, per: (cur, u) => `${cur} je ${u}`,                       // "It blends three cases for …, cur per unit:"
     unitShare: 'Aktie', unitAds: 'ADS', unitAdsFirst: (ex) => `ADS, die Aktie, wie sie an der ${ex} gehandelt wird`,               // "share", "ADS", "ADS, the share as traded on the …"
-    chance: (p) => `${p} Wahrscheinlichkeit`,                                                                                       // "x chance"
+    chance: (p) => `${p} Chance`,                                                                                       // "x chance"
     own: (c) => `Unsere eigene Prognose, aus den Unterlagen von ${c} erstellt. Sie ist kein Durchschnitt der Kursziele von Analysten und kann daher von ihnen abweichen.`,   // "Our own forecast, built from C's filings. Not an average of analysts' targets…"
     casesAria: (m) => `Die drei Szenarien für ${m} mit ihrer Wahrscheinlichkeit`,                                                  // "The three cases for …, with their chances"
     statsH: (c, t) => `${c} (${t}): die wichtigsten Zahlen`,                                                                         // "C (T) key numbers"
@@ -470,11 +470,11 @@ export function makeFmt(lang, num, money) {
     if (lang === 'zh-HK') {
       const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
       const x = v / div;
-      return money(num(fixed(x, Math.abs(x) >= 100 ? 0 : Math.abs(x) >= 10 ? 1 : 2)) + word, cur, lang);
+      return money(num(fixed(x, Math.abs(x) >= 1000 ? 0 : Math.abs(x) >= 10 ? 1 : 2)) + word, cur, lang);
     }
     const [div, word] = Math.abs(v) >= 1e12 ? [1e12, W.trillion] : Math.abs(v) >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
     const x = v / div;
-    const n = num(fixed(x, Math.abs(x) >= 100 ? 0 : Math.abs(x) >= 10 ? 1 : 2));
+    const n = num(fixed(x, Math.abs(x) >= 1000 ? 0 : Math.abs(x) >= 10 ? 1 : 2));
     return lang === 'en' ? `${money(n, cur, lang)} ${word}` : money(`${n} ${word}`, cur, lang);
   };
   // a forecast cell as the report printed it: its own decimals, '≈' kept (Allianz: '≈517' is never '517.00')
@@ -503,10 +503,13 @@ export function forecastOf(data) {
 }
 
 // The eight quarters (or half-years) of the earnings page's table: newest first in the table, oldest first here.
+// our producer's titles of the eight periods' table and of the guidance table (a closed set: shape)
+const EIGHT = /^(?:The )?[Ll]ast eight (?:quarters|reported periods)$/;
+const GUIDANCE = /^(?:Targets and )?[Gg]uidance in force$/;
 export function quartersOf(data, lang, langPage) {
   const page = data.pages?.earnings;
   if (!page) return null;
-  const i = (page.blocks || []).findIndex((b) => b.table && /^The last eight quarters/.test(String(b.table.title || '')));
+  const i = (page.blocks || []).findIndex((b) => b.table && EIGHT.test(String(b.table.title || '')));
   const t = i >= 0 ? page.blocks[i].table : null;
   if (!t || (t.head || []).length < 3) return null;
   const cols = t.head.slice(1).map((c) => String(c).trim()).reverse();
@@ -566,7 +569,13 @@ export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, r
     out.push(`<text x="422" y="${(sy - 24).toFixed(1)}" font-size="19" font-weight="600" fill="#617066">${esc(startLabel)}</text>`);
     out.push(`<text x="422" y="${(sy - 1).toFixed(1)}" font-size="21" font-weight="700" fill="#0E1713">${esc(priceLabel)}</text>`);
   }
-  labels.forEach((l, i) => out.push(`<text x="${xs[i].toFixed(1)}" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="middle">${esc(l)}</text>`));
+  // the axis labels, centred under their point but never past the frame (a Chinese '2026年10月' is wider than 'Oct 2026')
+  const wOf = (t) => [...String(t)].reduce((n, ch) => n + (/[\u3000-\u9fff\uff00-\uffef]/.test(ch) ? 20 : 11), 0);
+  labels.forEach((l, i) => {
+    const half = wOf(l) / 2;
+    const [x, anchor] = xs[i] - half < 4 ? [4, 'start'] : xs[i] + half > W - 4 ? [W - 4, 'end'] : [xs[i], 'middle'];
+    out.push(`<text x="${x.toFixed(1)}" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
+  });
   out.push('</svg>');
   return out.join('\n');
 }
@@ -754,7 +763,7 @@ ${free}<p class="free free--2">${esc(W.size(nCh, words, num(String(k.sources || 
 <h2 id="inside-h">${esc(type === 'stock' ? W.insideStock(company) : W.insideEarn(company))}</h2>
 <p class="inside__sub">${esc(W.insideSub(p.memoDay))}</p>
 <div class="mframe"><div class="mframe__pg">
-<div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(ticker)}</span><span class="mf-name">${esc(data.company || company)}</span><span class="mf-upd">${esc(W.updated(shortMemo))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
+<div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (String(ticker).length - 3) * 16});max-width:calc(var(--u) * ${330 - (String(ticker).length - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(data.company || company)}</span><span class="mf-upd">${esc(W.updated(shortMemo))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
 <section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? W.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section>
 </div>
 <button type="button" class="mframe__open" data-open-viewer aria-label="${esc(W.openAria(company))}"></button>
@@ -774,9 +783,9 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     if (/^What an investor pays/.test(title)) return 'pays';
     if (/^Follow the money: real free cash flow/.test(title)) return 'cash';
     if (title === 'Results') return 'results';
-    if (/^Guidance in force/.test(title)) return 'guidance';
+    if (GUIDANCE.test(title)) return 'guidance';
     if (/^Promises kept/.test(title)) return 'promises';
-    if (/^The last eight quarters/.test(title)) return 'quarters';
+    if (EIGHT.test(title)) return 'quarters';
     return 'table';
   };
   const paras = (b, cls = 'lead') => (b.paragraphs || []).map((x, j) => p.mdBlock(x.text).replace(/^<p>/, `<p class="${j ? 'after' : cls}">`)).join('\n');
@@ -791,8 +800,9 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
     if (pts.length < 2) return '';
     const unitBig = (v) => v * q.scale;
     const mxv = Math.max(...pts.map(([, v]) => unitBig(v)));
-    const [div, scaleWord] = mxv >= 1e12 ? [1e12, W.trillion] : mxv >= 1e9 ? [1e9, W.billion] : [1e6, W.million];
-    const d = (v) => { const x = unitBig(v) / div; return num(fixed(x, x >= 100 ? 0 : x >= 10 ? 1 : 2)); };
+    const [div, scaleKey] = mxv >= 1e12 ? [1e12, 'trillion'] : mxv >= 1e9 ? [1e9, 'billion'] : [1e6, 'million'];
+    const scaleWord = (W.scalePl || {})[scaleKey] || W[scaleKey];
+    const d = (v) => { const x = unitBig(v) / div; return num(fixed(x, x >= 1000 ? 0 : x >= 10 ? 1 : 2)); };
     const g = q.growth(q.rev);
     const curMark = p.curWord(q.cur);
     const qLabel = monthYear(q.cols[q.lastI]);
@@ -845,7 +855,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         const label = tableLabel(r[0]);
         const raw = String(r[r.length - 1] ?? '').replace(/\*\*/g, '').trim();
         const v = cellValue(raw);
-        if (v === null || /^Share price$/.test(enLabel)) return '';
+        if (v === null || /^(Share price|Market value|Price to book)$/.test(enLabel) || (/^P\/E, next 12 months$/.test(enLabel) && type === 'stock')) return '';
         const { scale } = unitOf(enT?.unit || t.unit);
         const isMoney = !/[x%]\s*$/.test(raw) && scale && v >= 1000;
         const shown = isMoney ? F.big(v, scale, cur) : num(raw);
@@ -855,8 +865,8 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         else if (/^Price to book/.test(enLabel)) mean = W.pbMean;
         return `<li><span class="pay__l">${esc(label)}${mean ? `<small>${esc(mean)}</small>` : ''}</span><span class="pay__n">${esc(nb(shown))}</span></li>`;
       }).filter(Boolean).join('');
-      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<p class="lead"><b>${esc(W.noCall)}</b></p>`, paras(b, 'after'),
-        rows ? `<ul class="pay">${rows}</ul>` : '', i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
+      out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo"><div class="duo__a"><p class="lead"><b>${esc(W.noCall)}</b></p>${paras(b, 'after')}</div>`,
+        `<div class="duo__b">${rows ? `<ul class="pay">${rows}</ul>` : ''}</div></div>`, i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');
     } else if ((kind === 'cash' || kind === 'results') && t) {
       const want = kind === 'cash' ? ['= Real free cash flow', '= Free cash flow'] : ['Net income'];
       const enRows = enT?.rows || t.rows;
@@ -871,7 +881,7 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         bars = cols.map((c, j) => (vals[j] === null ? '' : `<li style="--w:${Math.max(2, (Math.max(0, vals[j]) / mx) * 62).toFixed(1)}%"${j === 0 ? ' class="on"' : ''}><span class="bars__y">${esc(p.dateWords(String(c), lang))}</span><span class="bars__b"><i></i><em>${esc(String(shownRow[j] ?? '').replace(/\*\*/g, ''))}</em></span></li>`)).join('');
         const unitText = t.unit || enT?.unit || '';
         cap = kind === 'cash' ? (String(enRows[ri][0]).includes('Real') ? W.cashCap(unitText) : W.fcfCap(unitText)) : W.niCap(unitText);
-        bars = bars ? `<ul class="bars" aria-label="${esc(`${tableLabel(t.rows[ri]?.[0] ?? enRows[ri][0])}, ${unitText}: ${cols.map((c, j) => (vals[j] === null ? '' : `${c} ${String(shownRow[j]).replace(/\*\*/g, '')}`)).filter(Boolean).join('; ')}`)}">${bars}</ul><p class="fine bars__cap">${esc(cap)}</p>` : '';
+        bars = bars ? `<ul class="bars${cols.some((c) => String(c).length > 4) ? ' bars--wide' : ''}" aria-label="${esc(`${tableLabel(t.rows[ri]?.[0] ?? enRows[ri][0])}, ${unitText}: ${cols.map((c, j) => (vals[j] === null ? '' : `${c} ${String(shownRow[j]).replace(/\*\*/g, '')}`)).filter(Boolean).join('; ')}`)}">${bars}</ul><p class="fine bars__cap">${esc(cap)}</p>` : '';
       }
       out.push(`<section class="sec" aria-labelledby="b${i}-h">`, head.replace('<h2>', `<h2 id="b${i}-h">`), `<div class="duo duo--r"><div class="duo__a">${paras(b)}</div><div class="duo__b">${bars}</div></div>`,
         i === lastValuation ? bridge(6, bank ? W.br6bank : W.br6) : '', '</section>');

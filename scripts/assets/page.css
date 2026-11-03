@@ -523,9 +523,12 @@ body.locked{overflow:hidden}
 .sec .fig{margin-top:18px}
 .sec>.watch{margin-top:14px}
 .duo__b:empty{display:none}
-.foot{border-top:1px solid var(--rule);background:var(--paper);margin-top:40px}
-.foot .in{max-width:1200px;margin:0 auto;padding:22px 20px 96px}
-.foot nav{display:flex;flex-wrap:wrap;gap:12px 16px;font:600 14px/1.2 var(--font)}
-.foot a{color:var(--ink);text-decoration:none}
-.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0}
-@media (min-width:768px){.foot .in{padding-bottom:28px}}
+footer.foot{border-top:1px solid var(--rule);background:var(--paper);margin-top:40px}
+footer.foot .in{max-width:1200px;margin:0 auto;padding:22px 20px 96px}
+footer.foot nav{display:flex;flex-wrap:wrap;gap:12px 16px;font:600 14px/1.2 var(--font)}
+footer.foot a{color:var(--ink);text-decoration:none}
+footer.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0}
+@media (min-width:768px){footer.foot .in{padding-bottom:28px}}
+/* a year label with its month ('Oct 2025', a fiscal year): the label column widens, on one line */
+.bars--wide li{grid-template-columns:72px minmax(0,1fr)}
+.bars__y{white-space:nowrap}

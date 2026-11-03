@@ -1258,7 +1258,7 @@ function guidanceRowOf(data, lang) {
   const en = data.pages?.earnings;
   const tr = lang === 'en' ? en : langPage(data, 'earnings', lang);
   if (!en || !tr) return null;
-  const i = (en.blocks || []).findIndex((b) => /^Guidance in force/.test(String(b.table?.title || '')));
+  const i = (en.blocks || []).findIndex((b) => /^(?:Targets and )?[Gg]uidance in force$/.test(String(b.table?.title || '')));
   const t = i >= 0 ? (lang === 'en' || (tr.blocks || []).length === en.blocks.length ? tr.blocks[i]?.table : null) : null;
   if (!t || (t.rows || []).length !== en.blocks[i].table.rows.length) return null;
   const r = t.rows.find((x) => String(x[2] || '').trim() && String(x[3] || '').trim());
@@ -1298,7 +1298,9 @@ function renderV2(data, type, ctx, lang, o) {
   const out = renderPage({
     data, type, lang, page: o.page, enPage: data.pages[type], company: o.company, ticker: o.ticker, h1: o.h1, cta: o.cta, crumbsHtml: o.crumbs.html,
     memoDay: o.memoDay, teaser: o.teaser, chapters: fr ? data.translations[lang].chapters : data.chapters, sources,
-    siblings: o.siblings, rivalLinks: o.rivals, compares: o.compares, hubs: o.hubs, rivalNames, today: ctx.today, htmlLang: ui.htmlLang,
+    siblings: o.siblings, rivalLinks: o.rivals, compares: o.compares, rivalNames,
+    // COPY row 38: our own link words
+    hubs: o.hubs.map((h) => h.replace(/>Companies ([A-Z]|0-9)</, '>Companies starting with $1<')), today: ctx.today, htmlLang: ui.htmlLang,
     announced: !!(announcedRow && isoDay(announcedRow.date) === isoDay(data.next_earnings)),
     earningsPath: has('earnings', lang) ? pagePath(data.slug, 'earnings', lang) : '', dividendPath: has('dividend', lang) ? pagePath(data.slug, 'dividend', lang) : '',
     stockPath: has('stock', lang) ? pagePath(data.slug, 'stock', lang) : '',
