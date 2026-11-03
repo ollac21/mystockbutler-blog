@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { after, before, test } from 'node:test';
-import { cpSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, symlinkSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, symlinkSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -91,7 +91,13 @@ test('every page of the build names a real picture; none points back at the old 
     assert.ok(og[0].startsWith('https://'), `${file}: ${og[0]}`);
     if (file.startsWith('own-cover')) continue;
     // a stock, dividend, earnings, comparison or tools page has its own picture since row 3 (tests/stockPictures.test.mjs holds it); every other page has this picture
-    if (/<div class="chart"><img /.test(html)) {
+    // B115: the new forecast and earnings pages keep their own picture as og:image only (their charts are SVG files beside the page)
+    const v2Own = /<body class="v2">/.test(html) && og[0] !== SHARE_IMAGE.url;
+    if (v2Own) {
+      assert.match(og[0], new RegExp(`^https://blog\\.mystockbutler\\.com/${path.dirname(file).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}/[a-z0-9-]+\\.png$`), `${file}: its own picture`);
+      for (const src of [...html.matchAll(/<img src="([a-z]+\.svg)"/g)].map((m) => m[1])) assert.ok(existsSync(path.join(out, path.dirname(file), src)), `${file}: ${src} is written beside it`);
+    }
+    if (/<div class="chart"><img /.test(html) || v2Own) {
       pictured.push(file);
       continue;
     }
