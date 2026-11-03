@@ -536,7 +536,7 @@ const DIV_WORDS = {
   en: {
     dH1: (c, t, y) => (y ? `${c} (${t}) dividend yield, history and ${y} forecast` : `${c} (${t}) dividend yield and history`),
     dAnsH: (c, t) => `What is the ${c} (${t}) dividend yield?`, dLabel: (c, t) => `${c} (${t}) dividend`,
-    dYieldBy: (p, d) => (p ? `dividend yield at the ${p} close of ${d}` : 'dividend yield, our report'), dPaidBy: (y) => `a share paid in ${y}, the company's own figure`,
+    dYieldBy: (p, d) => (p ? `dividend yield at the ${p} close of ${d}` : 'dividend yield, our report'), dPaidBy: (y) => `a share paid in ${y}, our report`,
     dPaidLine: (y, v, y0, v0, up) => `Paid in ${y}: <b>${v}</b> a share, ${up ? 'up' : 'down'} from <b>${v0}</b> in ${y0}`,
     dFcLine: (v1, m1, v3, m3) => `Our base-case forecast: <b>${v1}</b> by ${m1}, <b>${v3}</b> by ${m3}`,
     dCoverH: (c) => `Is ${c} a good dividend stock? Does its cash cover the dividend?`,
@@ -569,7 +569,7 @@ const DIV_WORDS = {
   fr: {
     dH1: (c, t, y) => (y ? `Dividende de ${c} (${t}) : rendement, historique et prévision ${y}` : `Dividende de ${c} (${t}) : rendement et historique`),
     dAnsH: (c, t) => `Quel est le rendement du dividende de ${c} (${t}) ?`, dLabel: (c, t) => `Dividende de ${c} (${t})`,
-    dYieldBy: (p, d) => (p ? `rendement du dividende à la clôture de ${p} du ${d}` : 'rendement du dividende, notre rapport'), dPaidBy: (y) => `par action versé en ${y}, chiffre de la société`,
+    dYieldBy: (p, d) => (p ? `rendement du dividende à la clôture de ${p} du ${d}` : 'rendement du dividende, notre rapport'), dPaidBy: (y) => `par action versé en ${y}, notre rapport`,
     dPaidLine: (y, v, y0, v0, up) => `Versé en ${y} : <b>${v}</b> par action, ${up ? 'en hausse' : 'en baisse'} par rapport à <b>${v0}</b> en ${y0}`,
     dFcLine: (v1, m1, v3, m3) => `Notre scénario central : <b>${v1}</b> d’ici ${m1}, <b>${v3}</b> d’ici ${m3}`,
     dCoverH: (c) => `${c} est-elle une bonne action à dividende ? Sa trésorerie couvre-t-elle le dividende ?`,
@@ -602,7 +602,7 @@ const DIV_WORDS = {
   de: {
     dH1: (c, t, y) => (y ? `${c} (${t}) Dividende: Rendite, Historie und Prognose ${y}` : `${c} (${t}) Dividende: Rendite und Historie`),   // "C (T) dividend yield, history and y forecast"
     dAnsH: (c, t) => `Wie hoch ist die Dividendenrendite von ${c} (${t})?`, dLabel: (c, t) => `${c} (${t}) Dividende`,          // hidden H2; answer label "C (T) dividend"
-    dYieldBy: (p, d) => (p ? `Dividendenrendite zum Schlusskurs von ${p} am ${d}` : 'Dividendenrendite, unser Bericht'), dPaidBy: (y) => `je Aktie gezahlt ${y}, eigene Zahl des Unternehmens`,   // "dividend yield at the p close of d"; "a share paid in y, the company's own figure"
+    dYieldBy: (p, d) => (p ? `Dividendenrendite zum Schlusskurs von ${p} am ${d}` : 'Dividendenrendite, unser Bericht'), dPaidBy: (y) => `je Aktie gezahlt ${y}, unser Bericht`,   // "dividend yield at the p close of d"; "a share paid in y, our report"
     dPaidLine: (y, v, y0, v0, up) => `Gezahlt ${y}: <b>${v}</b> je Aktie, ${up ? 'mehr als' : 'weniger als'} <b>${v0}</b> ${y0}`,   // "Paid in y: v a share, up / down from v0 in y0"
     dFcLine: (v1, m1, v3, m3) => `Unser Basisszenario: <b>${v1}</b> bis ${m1}, <b>${v3}</b> bis ${m3}`,                            // "Our base-case forecast: v1 by m1, v3 by m3"
     dCoverH: (c) => `Ist ${c} eine gute Dividendenaktie? Deckt das Cash die Dividende?`,                                         // "Is C a good dividend stock? Does its cash cover the dividend?"
@@ -635,7 +635,7 @@ const DIV_WORDS = {
   'zh-HK': {
     dH1: (c, t, y) => (y ? `${c}（${t}）股息：股息率、往績及${y}年預測` : `${c}（${t}）股息：股息率及往績`),                             // "C (T) dividend yield, history and y forecast"
     dAnsH: (c, t) => `${c}（${t}）的股息率是多少？`, dLabel: (c, t) => `${c}（${t}）股息`,                                            // hidden H2; label "C (T) dividend"
-    dYieldBy: (p, d) => (p ? `以 ${d}收市價 ${p} 計的股息率` : '股息率，我們的報告'), dPaidBy: (y) => `${y}年每股派息，公司自己的數字`,   // "dividend yield at the p close of d"; "a share paid in y"
+    dYieldBy: (p, d) => (p ? `以 ${d}收市價 ${p} 計的股息率` : '股息率，我們的報告'), dPaidBy: (y) => `${y}年每股派息，我們的報告`,   // "dividend yield at the p close of d"; "a share paid in y"
     dPaidLine: (y, v, y0, v0, up) => `${y}年派息：每股 <b>${v}</b>，${y0}年為 <b>${v0}</b>（${up ? '上升' : '下跌'}）`,              // "Paid in y: v a share, up / down from v0 in y0"
     dFcLine: (v1, m1, v3, m3) => `我們的基本情境：至${m1} <b>${v1}</b>，至${m3} <b>${v3}</b>`,                                       // "Our base-case forecast: v1 by m1, v3 by m3"
     dCoverH: (c) => `${c} 是好的收息股嗎？現金能否支付股息？`,                                                                        // "Is C a good dividend stock? Does its cash cover the dividend?"
