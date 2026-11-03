@@ -117,8 +117,11 @@ test('a German page (S&P 500): its address, hreflang both ways, German words and
   assert.match(stock.html, /<title>NVIDIA \(NVDA\) Aktie Prognose 2027–2029<\/title>/);
   assert.match(stock.html, /hreflang="de" href="https:\/\/blog\.mystockbutler\.com\/de\/aktien\/nvda\/"/);
   assert.match(stock.html, /hreflang="en" href="https:\/\/blog\.mystockbutler\.com\/stocks\/nvda\/"/);
-  assert.match(stock.html, /Aktienkurs im Oktober 2029: unsere drei Szenarien/);
-  assert.match(stock.html, /Heute 216,62/);                                     // the chart's price the German way
+  // B115: the answer box and the forecast picture (forecast.svg beside the page) replace the old inline chart
+  assert.match(stock.html, /Unsere Prognose für NVIDIA/);
+  assert.match(stock.html, /Ausgehend von 216,62 \$ zum Schlusskurs vom 16\. Oktober 2026/);   // the price the German way, dated, never 'Heute'
+  assert.match(stock.html, /alt="NVIDIA \(NVDA\), Kursszenarien für Oktober 2029: pessimistisch /);
+  assert.ok(stock.files.some((f) => f.name === 'forecast.svg' && />\d+,\d\d \$<\/text>/.test(f.content) && !/>\$\d/.test(f.content)), 'the German picture prints German prices');
   assert.match(stock.html, /signup\?ticker=NVDA&amp;src=seo-stock&amp;lang=de/);
   const en = pages.find((p) => p.path === '/stocks/nvda/');
   assert.match(en.html, /hreflang="de" href="https:\/\/blog\.mystockbutler\.com\/de\/aktien\/nvda\/"/);
@@ -171,8 +174,9 @@ test("our name in the opening sentence: the three approved strings, from the mem
   const { pages, held } = buildStockSite([load('stock-td-to-fr.json'), load('stock-nvda-de.json')], { today: TODAY });
   const lede = (p) => (/<p class="lede">([\s\S]*?)<\/p>/.exec(p.html) || [])[1];
   assert.match(lede(pages.find((p) => p.path === '/stocks/td-to/dividend/')), /^MyStockButler&#39;s October 2026 analysis: |^MyStockButler's October 2026 analysis: /);
-  assert.match(lede(pages.find((p) => p.path === '/fr/stocks/td-to/')), /^Selon l(&#39;|')analyse de MyStockButler d(&#39;|')octobre 2026 : /);
-  assert.match(lede(pages.find((p) => p.path === '/de/aktien/nvda/')), /^Laut der Analyse von MyStockButler vom Oktober 2026: /);
+  // B115: the new forecast pages open with our answer box, which names us and the company
+  assert.match(pages.find((p) => p.path === '/fr/stocks/td-to/').html, /<p class="answer__label">Notre prévision pour TD<\/p>/);
+  assert.match(pages.find((p) => p.path === '/de/aktien/nvda/').html, /<p class="answer__label">Unsere Prognose für NVIDIA<\/p>/);
   assert.equal(held.length, 0, JSON.stringify(held));
 });
 
@@ -575,8 +579,8 @@ test('plan 2-3: a checked, announced date puts the results date in the English e
   assert.equal(built.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(built.held));   // the gate passes it
   const t = titlesOf(nvdaPage(built));
   const want = 'NVIDIA (NVDA) earnings date: November 18, 2026 — what to watch';
-  const h1 = 'NVIDIA earnings date: November 18, 2026 — what to watch';
-  assert.deepEqual(t, { title: want, og: want, tw: want, h1, ld: h1 });
+  const ld = 'NVIDIA earnings date: November 18, 2026 — what to watch';
+  assert.deepEqual(t, { title: want, og: want, tw: want, h1: want, ld });   // B115: the h1 carries the ticker
   assert.deepEqual(built.report.earningsTitles.date, [{ path: '/stocks/nvda/earnings/', title: want }]);
   // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want);
@@ -614,7 +618,7 @@ test('plan 2-3: a German earnings title loses its date once the day has passed (
   const after = datedBuild(load('stock-nvda-de.json'), '2026-11-19', {});
   assert.equal(after.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(after.held));
   const t = titlesOf(nvdaPage(after, 'de'));
-  assert.deepEqual(t, { title: 'NVIDIA (NVDA) Quartalszahlen', og: 'NVIDIA (NVDA) Quartalszahlen', tw: 'NVIDIA (NVDA) Quartalszahlen', h1: 'NVIDIA Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
+  assert.deepEqual(t, { title: 'NVIDIA (NVDA) Quartalszahlen', og: 'NVIDIA (NVDA) Quartalszahlen', tw: 'NVIDIA (NVDA) Quartalszahlen', h1: 'NVIDIA (NVDA) Quartalszahlen', ld: 'NVIDIA Quartalszahlen' });
   assert.deepEqual(after.report.earningsTitles.passed, [{ path: '/de/aktien/nvda/quartalszahlen/', title: 'NVIDIA (NVDA) Quartalszahlen' }]);
   // a German title already without a date is left as it is
   const plain = clone(load('stock-nvda-de.json'));
@@ -636,7 +640,9 @@ test('row 4: every stock, dividend and earnings title in the build has the ticke
       assert.equal(unesc(t.title), p.title, p.path);
       assert.equal(t.og, t.title, p.path);
       assert.equal(t.tw, t.title, p.path);
-      assert.ok(!unesc(t.h1).includes(`(${p.ticker})`), `the h1 stays as it was: ${p.path}`);
+      // B115 (PAGE-RULES 11, COPY row 3): the new forecast and earnings pages carry the ticker in the h1 too, once; the dividend page's stays as it was
+      if (p.type === 'dividend') assert.ok(!unesc(t.h1).includes(`(${p.ticker})`), `the h1 stays as it was: ${p.path}`);
+      else assert.equal(tickerCount(unesc(t.h1), p.ticker), 1, `the h1 has the ticker once: ${p.path}`);
     }
   }
   for (const k of ['stock', 'dividend', 'earnings'].flatMap((x) => ['en', 'fr', 'de', 'zh-HK'].map((l) => `${x}/${l}`))) assert.ok(seen.has(k), `no ${k} page in the test`);
@@ -666,7 +672,7 @@ test('row 10: a French forecast page is titled "Action X (T) : avis, analyse et 
   assert.deepEqual(built.held, [], JSON.stringify(built.held));
   const fr = titlesOf(by(built, '/fr/stocks/td-to/'));
   const model = load('stock-td-to-fr.json').translations.fr.pages.stock.title;
-  assert.deepEqual(fr, { title: want, og: want, tw: want, h1: model, ld: model });   // the h1 and the headline keep the file's title
+  assert.deepEqual(fr, { title: want, og: want, tw: want, h1: titleWithTicker(model, load('stock-td-to-fr.json')), ld: model });   // B115: the h1 with the ticker   // the h1 and the headline keep the file's title
   // every other page keeps the title the file gives it, with the ticker: the French dividend and earnings pages, the English page
   for (const p of built.pages.filter((x) => x.path !== '/fr/stocks/td-to/')) {
     assert.ok(!p.title.includes('avis, analyse'), p.path);
@@ -676,7 +682,7 @@ test('row 10: a French forecast page is titled "Action X (T) : avis, analyse et 
   for (const old of ['Action TD : prévisions', 'Action TD : prévisions — novembre 2026', 'Toronto-Dominion : perspectives']) {
     const b = build((c) => { c.translations.fr.pages.stock.title = old; return c; });
     assert.equal(titlesOf(by(b, '/fr/stocks/td-to/')).title, want, old);
-    assert.equal(titlesOf(by(b, '/fr/stocks/td-to/')).h1, old);
+    assert.equal(titlesOf(by(b, '/fr/stocks/td-to/')).ld, old);
   }
   // past 60 characters the page is not held (the gate measures the file's title)
   const long = build((c) => { c.short_name = 'Canadian Natural Resources'; return c; });
@@ -718,23 +724,26 @@ test('the scenario chart: no label runs past the chart edge, in the four languag
   assert.deepEqual(labelSpot(59, 'Pessimistisch · 30 % · -37 %', 720), { x: 2, anchor: 'start' });
   assert.deepEqual(labelSpot(632, 'Optimistisch · 20 % · +112 %', 720), { x: 718, anchor: 'end' });
   assert.deepEqual(labelSpot(360, 'Basis · 50 % · +23 %', 720), { x: 360, anchor: 'middle' });
-  const widthOf = (s) => [...s].reduce((n, ch) => n + (ch.charCodeAt(0) > 0x2e80 ? 13 : 7.5), 0);   // a little wider than the real 12 px text
+  // B115: the forecast page draws its chart as a picture file beside the page (forecast.svg, 600 x 448): every label inside it
+  const widthOf = (s, size) => [...s].reduce((n, ch) => n + (ch.charCodeAt(0) > 0x2e80 ? size : size * 0.62), 0);   // a little wider than the real text
   let checked = 0;
   for (const [file, path] of [['stock-nvda-de.json', '/de/aktien/nvda/'], ['stock-nvda-zh.json', '/zh/stocks/nvda/'], ['stock-td-to-fr.json', '/fr/stocks/td-to/'], ['stock-ko.json', '/stocks/ko/']]) {
     const { pages } = buildStockSite([load(file)], { today: TODAY });
     const page = pages.find((p) => p.path === path);
     assert.ok(page, `${path} is built`);
-    const svg = /<svg viewBox="0 0 720 190"[\s\S]*?<\/svg>/.exec(page.html)?.[0];
-    assert.ok(svg, `${path} has its scenario chart`);
-    for (const m of svg.matchAll(/<text x="(\d+)" y="(?:122|160)" text-anchor="(\w+)" class="c[ld]">([^<]*)<\/text>/g)) {
-      const [, x, anchor, text] = m;
-      const w = widthOf(text.replace(/&amp;/g, '&'));
+    const svg = (page.files || []).find((f) => f.name === 'forecast.svg')?.content;
+    assert.ok(svg, `${path} has its forecast picture`);
+    assert.match(page.html, /<img src="forecast.svg" width="600" height="448"/);
+    for (const m of svg.matchAll(/<text x="([\d.]+)" y="[\d.]+" font-size="(\d+)"[^>]*?(?:text-anchor="(\w+)")?>([^<]*)<\/text>/g)) {
+      const [, x, size, anchor = 'start', text] = m;
+      const w = widthOf(text.replace(/&amp;/g, '&'), Number(size));
       const [from, to] = anchor === 'start' ? [Number(x), Number(x) + w] : anchor === 'end' ? [Number(x) - w, Number(x)] : [Number(x) - w / 2, Number(x) + w / 2];
-      assert.ok(from >= 0 && to <= 720, `${path}: "${text}" runs from ${from} to ${to}`);
+      assert.ok(from >= 0 && to <= 600, `${path}: "${text}" runs from ${from} to ${to}`);
       checked += 1;
     }
   }
-  assert.equal(checked, 16, `${checked} labels checked`);
-  const de = buildStockSite([load('stock-nvda-de.json')], { today: TODAY }).pages.find((p) => p.path === '/de/aktien/nvda/');
-  assert.match(de.html, /<text x="2" y="122" text-anchor="start" class="cl">Pessimistisch · 23\s%\s· -70\s%<\/text>/);
+  assert.ok(checked >= 4 * 13, `${checked} labels checked`);
+  // the Chinese first axis label ('2026年10月') is anchored at the left edge instead of centred past it
+  const zh = buildStockSite([load('stock-nvda-zh.json')], { today: TODAY }).pages.find((p) => p.path === '/zh/stocks/nvda/');
+  assert.match(zh.files.find((f) => f.name === 'forecast.svg').content, /<text x="4.0" y="432" font-size="20" font-weight="600" fill="#617066" text-anchor="start">2026年10月<\/text>/);
 });

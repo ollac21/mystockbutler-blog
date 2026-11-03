@@ -3,6 +3,7 @@
 //
 // The last test sweeps a whole built site. By default that is this repo's data/stocks through scripts/render.mjs. To sweep the real
 // output: STOCK_PICTURES_SITE=<out dir> STOCK_PICTURES_REPORT=<build-report/stocks.json> STOCK_PICTURES_DATA=<dir of company files>.
+import './fixtures/pageV2Off.mjs';   // B115: the old page layout, where the picture sits inside the page (see the file)
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
