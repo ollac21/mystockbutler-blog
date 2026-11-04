@@ -32,8 +32,10 @@ test('the comparison guides: an English index and its pages, each an Article wit
     assert.ok(g.alt && g.guide);
   }
   const en = hubs.find((h) => h.path === '/alternatives/seeking-alpha/');
-  assert.ok(en.html.includes('Get the report — free') && en.html.includes('<html lang="en"'));
-  assert.ok(hubs.find((h) => h.path === '/fr/alternatives/zonebourse/').html.includes('Obtenir le rapport — gratuit'));
+  // the ticker box's button (today's page) or the approved page's first button (B115 round 3)
+  assert.ok(en.html.includes(en.sitePage ? 'full report free</a>' : 'Get the report — free') && en.html.includes('<html lang="en"'));
+  const zb = hubs.find((h) => h.path === '/fr/alternatives/zonebourse/');
+  assert.ok(zb.html.includes(zb.sitePage ? 'id="firstbtn"' : 'Obtenir le rapport — gratuit'));
   assert.deepEqual(report.deadHubLinks, []);
 });
 

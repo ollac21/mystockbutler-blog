@@ -2542,6 +2542,22 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       if (h.withoutPicture) { const old = h.withoutPicture; h.withoutPicture = () => draw(old(), null); }
       sitePages.drawn.push(h.path);
     }
+    // the /alternatives/ index: its own intro (the sentences that name no offer and no 'our product'), the list of comparisons, the frame
+    const altIndex = hubs.find((h) => h.path === ALT_ROOT && h.alt);
+    const nv = byTicker.get(FEAT.en);
+    if (altIndex && nv && nv.teaser?.text && ctx.exists(pagePath(nv.slug, 'stock'))) {
+      const list = hubs.filter((o) => o.alt && o.path !== ALT_ROOT);
+      const md = `You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page.\n\n## ${ALT_WORDS.en}\n\n${list.map((o) => `- [${o.title}](${o.path})${(o.lang || 'en') !== 'en' ? ` (${ALT_LANG_NAME[o.lang]})` : ''}`).join('\n')}\n`;
+      const g = { name: 'alternatives-index.md', lang: 'en', path: ALT_ROOT, h1: 'Stock research tools compared: prices and what you get', title_tag: altIndex.title, meta_description: altIndex.description, updated: isoDay(altIndex.lastmod) || ctx.today, markdown: md };
+      const out = renderMdFrame(g, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), strip: stripHtml('en', stripOf(ctx, 'en'), '/stocks/'),
+        results: hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '', alternates: [], links: [`<a href="/stocks/">${esc(UI.en.allStocks)}</a>`, ...(hubPaths.has(COMPARE_ROOT) || comparePaths.has(COMPARE_ROOT) ? [`<a href="${COMPARE_ROOT}">Stocks side by side</a>`] : [])], linksH: 'More pages',
+        crumbs: [{ name: 'MyStockButler', path: '/' }, { name: ALT_WORDS.en, path: ALT_ROOT }], css: 'tools', pageType: 'CollectionPage', feat: nv, featTeaser: nv.teaser, featChapters: nv.chapters || [],
+        today: ctx.today, dayOf: (d) => humanDay(d, 'en'), short: (d) => shortFull(d, 'en'), shortName, authorLink: authorLink('en'), howWords: 'How a report is made' });
+      altIndex.html = out.html;
+      altIndex.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
+      altIndex.sitePage = 'frame:alternatives-index';
+      sitePages.drawn.push(ALT_ROOT);
+    }
     const week = hubs.find((h) => h.path === '/stocks/reporting-this-week/');
     const wb = week ? renderWeekBody({ companies: live, today: ctx.today, shortName, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) }) : null;
     if (wb) {
