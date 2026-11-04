@@ -57,18 +57,30 @@ test('each built page: the header says the offer and jumps to the box; a line un
   const { hubs } = buildStockSite(FIXTURES.map(load), { today: new Date('2026-10-30T12:00:00Z') });
   for (const g of pages) {
     const h = hubs.find((x) => x.path === g.path).html;
-    assert.match(h, /data-cta="header" href="#try">[^<]*S&amp;P[ -]500[^<]*<\/a>/, g.name);
-    assert.match(h, /<form class="tickerbox" id="try"/, g.name);
-    assert.match(h, /<p class="boxnote">/, g.name);
-    assert.match(h, /<section class="altcta"><h2>/, g.name);
-    assert.equal((h.match(/<form class="tickerbox"/g) || []).length, 2, g.name);
-    assert.ok((h.match(/<input name="ticker"[^>]* required>/g) || []).length === 2, `${g.name}: a ticker is required`);
+    if (/<body class="v2">/.test(h)) {
+      // B115 round 3 (owner 2026-11-04): the approved frame: the header's button, the first button and the closing button each open
+      // the sign-up with a real report's ticker; the old ticker box is gone
+      assert.match(h, /<a class="btn btn--sm" data-cta="header" href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/, g.name);
+      assert.match(h, /<a class="btn btn--lg btn--block" id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=[A-Z]/, g.name);
+      assert.match(h, /<section class="close"[\s\S]*?href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=[A-Z]/, g.name);
+      assert.doesNotMatch(h, /<form class="tickerbox"/, g.name);
+    } else {
+      assert.match(h, /data-cta="header" href="#try">[^<]*S&amp;P[ -]500[^<]*<\/a>/, g.name);
+      assert.match(h, /<form class="tickerbox" id="try"/, g.name);
+      assert.match(h, /<p class="boxnote">/, g.name);
+      assert.match(h, /<section class="altcta"><h2>/, g.name);
+      assert.equal((h.match(/<form class="tickerbox"/g) || []).length, 2, g.name);
+      assert.ok((h.match(/<input name="ticker"[^>]* required>/g) || []).length === 2, `${g.name}: a ticker is required`);
+    }
     const bad = /Get your first report free|Votre premier rapport gratuit|Ihr erster Bericht ist gratis|免費取得首份報告/;
     assert.doesNotMatch(h, bad, g.name);
   }
   const index = hubs.find((x) => x.path === ALT_ROOT).html;
-  assert.match(index, /data-cta="header" href="#try">First S&amp;P 500 report free<\/a>/);
-  assert.match(index, /<form class="tickerbox" id="try"/);
+  if (/<body class="v2">/.test(index)) assert.match(index, /id="firstbtn" data-cta="lede" href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/);
+  else {
+    assert.match(index, /data-cta="header" href="#try">First S&amp;P 500 report free<\/a>/);
+    assert.match(index, /<form class="tickerbox" id="try"/);
+  }
 });
 
 test('the blog\'s own header and footer say MyStockButler; its home never says verdict', () => {
