@@ -2641,6 +2641,15 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       }
       sitePages.drawn.push(DE_WEEK);
     }
+    // B115 round 5: the German stock hub links the German tool review drawn in its approved layout (AlleAktien), at the end of its links block
+    const deHub5 = hubs.find((x) => x.path === '/de/aktien/');
+    const LINKS5 = /(<section class="sec links"[^>]*>[\s\S]*?<div class="chips">[\s\S]*?)(<\/div>)/;
+    for (const p of ['/de/alternativen/alleaktien/']) {
+      const rec = SITE_PAGES.get(p);
+      if (!deHub5 || !rec || !sitePages.drawn.includes(p) || !LINKS5.test(deHub5.html)) continue;
+      deHub5.html = deHub5.html.replace(LINKS5, `$1<a href="${p}">${esc(rec.title.split(':')[0])}</a>$2`);
+      deHub5.outLinks = [...(deHub5.outLinks || []), p];
+    }
   }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
