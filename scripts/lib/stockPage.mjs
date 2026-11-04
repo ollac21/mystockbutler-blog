@@ -795,7 +795,8 @@ export function forecastSvg(f, { start, startLabel, priceLabel, labels, money, r
   }
   out.push(`<circle cx="${x0}" cy="${y(start).toFixed(1)}" r="7" fill="#0E1713" stroke="#fff" stroke-width="3"/>`);
   // the end labels: three stacked blocks of 3 lines (name, price, return), kept apart (at least 70 px) and inside the frame
-  const ends = ['Bull', 'Base', 'Bear'].map((k) => ({ k, y: y(f.rows[k][f.last].v) })).sort((a, b) => a.y - b.y);
+  // a case whose last value is 0 gets no label (its line stays): a price of 0.00 reads as a figure the report never meant to print
+  const ends = ['Bull', 'Base', 'Bear'].filter((k) => f.rows[k][f.last].v !== 0).map((k) => ({ k, y: y(f.rows[k][f.last].v) })).sort((a, b) => a.y - b.y);
   const blockH = 62;
   let prev = -Infinity;
   for (const e of ends) { e.ty = Math.max(e.y - 16, prev + blockH + 8, 22); prev = e.ty; }
@@ -1208,7 +1209,10 @@ ${fp.full ? `<button class="textlink textlink--l" type="button" data-open-viewer
         labels: [priceIso ? p.dateWords(`${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][Number(priceIso.slice(5, 7)) - 1]} ${priceIso.slice(0, 4)}`, lang) : '', ...f.cols.map((c) => p.dateWords(`${String(c).trim().slice(0, 3)} ${String(c).trim().slice(-4)}`, lang))],
         money: (c) => F.cell(c, cur), ret: (r) => F.signed(r), cases: { Bear: p.caseWord('Bear'), Base: p.caseWord('Base'), Bull: p.caseWord('Bull') } });
       files.push({ name: 'forecast.svg', content: svg });
-      const alt = W.figAlt(company, ticker, m3, F.cell(f.rows.Bear[f.last], cur), F.cell(f.rows.Base[f.last], cur), F.cell(f.rows.Bull[f.last], cur));
+      // the alt names the cases the chart labels: a case at 0 is left out of it (the picture rules drop a bar at 0 the same way)
+      const Z = '\u0000';
+      const cellOr0 = (k) => (f.rows[k][f.last].v === 0 ? Z : F.cell(f.rows[k][f.last], cur));
+      const alt = W.figAlt(company, ticker, m3, cellOr0('Bear'), cellOr0('Base'), cellOr0('Bull')).replace(/[^,，:：\s][^,，:：]*\u0000[,，]\s*/g, '').replace(/[,，]\s*[^,，:：]*\u0000$/g, '');
       const cap = dated && priceDay ? W.figCap(p.curWord(cur), unit, F.price(p.start.value, cur), priceDay) : '';
       out.push(`<section class="sec" aria-labelledby="where-h">`, head.replace('<h2>', '<h2 id="where-h">'), paras(b),
         `<figure class="fig"><img src="forecast.svg" width="600" height="448" loading="lazy" decoding="async" alt="${esc(alt)}">${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`,

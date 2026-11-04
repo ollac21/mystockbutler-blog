@@ -1137,8 +1137,47 @@ function langNav(lang) {
 // The visible byline in a page's date line: the name the JSON-LD's author gives, in the page's language, to the About page.
 const authorLink = (lang) => `<a href="${ABOUT_PATH[lang]}">${esc(UI[lang].by(AUTHOR.name))}</a>`;
 
-function shell({ title, description, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE, v2 = null }) {
+// THE TITLE AND THE DESCRIPTION A SEARCH SHOWS (the owner 2026-11-04, SEO rows 2 and 3): a <title> of at most 60 characters and a
+// description of at most 155, the ticker and the searched words first, never cut inside a word. Our own titles and descriptions
+// (the page files' and the templates') are shortened at their own seams, the last first: a tail after ' — ' or ' | ', a closing
+// '(…)' that is not the ticker, a date or a span of years at the end, the last 'and' clause, the last comma clause, then a word;
+// never into the company's name and ticker. A description keeps its whole sentences (or clauses up to ';').
+export function fitTitle(t, max = 60) {
+  let s = String(t || '').replace(/\s+/g, ' ').trim();
+  if (s.length <= max) return s;
+  const tick = /\([A-Z0-9][A-Z0-9.\-]{0,11}\)/.exec(s);
+  const keep = tick ? tick.index + tick[0].length : 0;
+  const cuts = [/\s+[—–|]\s+[^—–|]*$/u, /\s+\((?![A-Z0-9][A-Z0-9.\-]{0,11}\))[^()]*\)$/u, /\s+(?:am|vom|du|le|on|des|del)?\s*\d{1,2}\.?\s+\p{L}+\.?\s+\d{4}$/u,
+    /\s+\p{L}+\s+\d{4}$/u, /\s+\d{4}(?:[–-]\d{4})?$/u, /\s+(?:and|et|und|y|e)\s+[^,]*$/u, /,\s+[^,]*$/u];
+  for (let guard = 0; s.length > max && guard < 12; guard += 1) {
+    let cut = -1;
+    for (const re of cuts) { const m = re.exec(s); if (m && m.index >= keep && m.index >= 20) { cut = m.index; break; } }
+    if (cut < 0) { const i = s.lastIndexOf(' '); if (i <= keep || i < 20) break; cut = i; }
+    s = s.slice(0, cut).replace(/[\s,:;—–|-]+$/u, '');
+  }
+  return s;
+}
+export function fitDescription(d, max = 155) {
+  const s = String(d || '').replace(/\s+/g, ' ').trim();
+  if (s.length <= max) return s;
+  const head = s.slice(0, max + 1);
+  // a sentence end ('.', '!', '?' before a capital or a quote; ';' anywhere) inside the limit, leaving at least 70 characters
+  const ends = [...head.matchAll(/[.!?。](?=\s+[\p{Lu}"„«(])|[;；](?=\s)/gu)].map((m) => m.index).filter((i) => i >= 70 && i < max);
+  if (ends.length) return `${s.slice(0, ends[ends.length - 1]).replace(/\s+$/, '')}.`.replace(/\.\.$/, '.');
+  const comma = head.lastIndexOf(', ');
+  if (comma >= 70) return `${s.slice(0, comma)}.`;
+  return `${head.slice(0, head.lastIndexOf(' '))}.`;
+}
+
+function shell({ title: title0, description: description0, canonical, jsonld, meta, body, ogType = 'article', lang = 'en', alternates = [], image = SHARE_IMAGE, v2 = null }) {
   const ui = UI[lang];
+  // the searched words the gates read in a title stay (a comparison's 'A vs B stock', a page's 'stock forecast' / 'Aktie' …): a title
+  // that would lose them stays whole, and the gate decides
+  const need = meta?.type === 'compare' ? / vs .* stock/ : ['stock', 'dividend', 'earnings'].includes(meta?.type)
+    ? (lang === 'en' ? new RegExp(SEARCH_PHRASE[meta.type], 'i') : LANG_CFG[lang]?.title || null) : null;
+  const fitted = fitTitle(title0);
+  const title = need && need.test(textOf(title0)) && !need.test(textOf(fitted)) ? title0 : fitted;
+  const description = fitDescription(description0);
   const alt = alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n');
   const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
   return `<!doctype html>

@@ -224,17 +224,7 @@ function structuredData(post, canonical, measured = null) {
     ],
   };
   const graph = [posting, crumbs, ORG];
-  const faq = faqItems(post);
-  if (faq.length) {
-    graph.push({
-      '@type': 'FAQPage',
-      mainEntity: faq.map((f) => ({
-        '@type': 'Question',
-        name: str(f.question),
-        acceptedAnswer: { '@type': 'Answer', text: str(f.answer) },
-      })),
-    });
-  }
+  // no FAQPage markup (the owner 2026-11-04: Google dropped it); a post's questions stay in its text
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 

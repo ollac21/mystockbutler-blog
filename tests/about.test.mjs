@@ -34,7 +34,7 @@ test('four About pages, hreflang both ways, the Organization described and disam
     assert.equal(org['@id'], 'https://mystockbutler.com/#organization');
     assert.ok(org.description && org.disambiguatingDescription, `${h.path}: description + disambiguatingDescription`);
     assert.ok(graph.some((n) => n['@type'] === 'AboutPage'));
-    assert.ok(graph.some((n) => n['@type'] === 'FAQPage'));
+    assert.ok(!graph.some((n) => n['@type'] === 'FAQPage'), 'no FAQPage markup (owner 2026-11-04)');
     // the same prices and plans in every language (only the formatting differs)
     const body = bodyOf(h.html);
     for (const n of ['30', '70', '20', '10']) assert.match(body, new RegExp(`(?<!\\d)${n}(?!\\d)`), `${h.path}: ${n}`);

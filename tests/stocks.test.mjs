@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
+import { fitTitle, buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -518,8 +518,8 @@ test('the French guide /fr/ia-bourse/ (B114 rows 3 + 4): its title, one h1, the 
   assert.match(g.html, />Obtenir le rapport — gratuit<\/button>/);
   const ld = JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(g.html)[1]);
   const types = ld['@graph'].map((n) => n['@type']);
-  for (const t of ['BreadcrumbList', 'Article', 'FAQPage', 'Organization']) assert.ok(types.includes(t), t);
-  assert.equal(ld['@graph'].find((n) => n['@type'] === 'FAQPage').mainEntity.length, 5);
+  for (const t of ['BreadcrumbList', 'Article', 'Organization']) assert.ok(types.includes(t), t);
+  assert.ok(!types.includes('FAQPage'), 'no FAQPage markup (owner 2026-11-04); the questions stay on the page');
   assert.ok(ld['@graph'].find((n) => n['@type'] === 'Article').dateModified);
   assert.match(g.html, /<link rel="canonical" href="https:\/\/blog\.mystockbutler\.com\/fr\/ia-bourse\/">/);
   // row 4: every French page's footer links it, in the approved words; the /fr/ home too; no English page does
@@ -600,10 +600,12 @@ test('plan 2-3: a checked, announced date puts the results date in the English e
   const t = titlesOf(nvdaPage(built));
   const want = 'NVIDIA (NVDA) earnings date: November 18, 2026 — what to watch';
   const ld = 'NVIDIA earnings date: November 18, 2026 — what to watch';
-  assert.deepEqual(t, { title: want, og: want, tw: want, h1: 'NVIDIA (NVDA) earnings: next date, last results and guidance', ld });   // B115: the earnings deck's own h1 (COPY row 3)
+  // SEO row 2 (owner 2026-11-04): the <title> a search shows is at most 60 characters, cut at its own seam (the ' — what to watch' tail)
+  const want60 = 'NVIDIA (NVDA) earnings date: November 18, 2026';
+  assert.deepEqual(t, { title: want60, og: want60, tw: want60, h1: 'NVIDIA (NVDA) earnings: next date, last results and guidance', ld });   // B115: the earnings deck's own h1 (COPY row 3)
   assert.deepEqual(built.report.earningsTitles.date, [{ path: '/stocks/nvda/earnings/', title: want }]);
   // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
-  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want);
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want60);
   assert.equal(titlesOf(built.pages.find((p) => p.path === '/stocks/nvda/')).title, 'NVIDIA (NVDA) stock forecast 2027–2029');
   assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA (NVDA) Quartalszahlen am 18. November 2026');
 });
@@ -657,7 +659,8 @@ test('row 4: every stock, dividend and earnings title in the build has the ticke
       seen.add(`${p.type}/${p.lang}`);
       const t = titlesOf(p);
       assert.equal(tickerCount(p.title, p.ticker), 1, `${p.path}: ${p.title}`);
-      assert.equal(unesc(t.title), p.title, p.path);
+      assert.equal(unesc(t.title), fitTitle(p.title), p.path);              // SEO row 2: the page's title, at most 60 characters
+      assert.ok(unesc(t.title).length <= 60 || unesc(t.title) === p.title, `${p.path}: ${t.title}`);
       assert.equal(t.og, t.title, p.path);
       assert.equal(t.tw, t.title, p.path);
       // B115 (PAGE-RULES 11, COPY row 3): the new forecast and earnings pages carry the ticker in the h1 too, once; the dividend page's stays as it was

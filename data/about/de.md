@@ -1,5 +1,5 @@
 ---
-title_tag: "Über MyStockButler: geprüfte Research-Berichte zu einer Aktie"
+title_tag: "Über MyStockButler: geprüfte Berichte zu einer Aktie"
 h1: "Über MyStockButler"
 meta_description: "MyStockButler schreibt ausführliche, quellengeprüfte Research-Berichte zu einzelnen Unternehmen: acht Kapitel, jede Zahl bis zu ihrer Quelle zurückverfolgt. Keine Anlageberatung."
 path: /de/ueber-uns/

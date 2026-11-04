@@ -90,7 +90,8 @@ function fixLinks(html, exists) {
 
 // The JSON-LD: the mockup's nodes, with the site's one Organization (its @id), the Person author and the share picture.
 function ldOf(rec, { ORG, url, image }) {
-  const nodes = rec.ld.filter((n) => n['@type'] !== 'Organization').map((n) => {
+  // no FAQPage markup (the owner 2026-11-04: Google dropped it); the questions stay on the page
+  const nodes = rec.ld.filter((n) => n['@type'] !== 'Organization' && n['@type'] !== 'FAQPage').map((n) => {
     const x = { ...n };
     if (x.author) x.author = AUTHOR;
     if (['Article', 'AboutPage', 'WebPage', 'HowTo', 'WebApplication'].includes(x['@type'])) {
@@ -100,12 +101,6 @@ function ldOf(rec, { ORG, url, image }) {
     }
     return x;
   });
-  // the page's visible questions (its .qa__i cards: an h3 question and its answer) as FAQPage, when the mockup's data had none
-  if (!nodes.some((n) => n['@type'] === 'FAQPage')) {
-    const plain = (x) => x.replace(/<[^>]+>/g, '').replace(/&nbsp;|\u00a0/g, ' ').replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
-    const qs = [...rec.main.matchAll(/<div class="qa__i"><h3>([\s\S]*?)<\/h3>([\s\S]*?)<\/div>/g)].map((m) => ({ q: plain(m[1]), a: plain(m[2]) })).filter((x) => /[?？]$/.test(x.q) && x.a);
-    if (qs.length >= 3) nodes.push({ '@type': 'FAQPage', mainEntity: qs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
-  }
   const orgNode = rec.ld.find((n) => n['@type'] === 'Organization');
   const org = { ...ORG, ...(orgNode?.description ? { description: orgNode.description } : {}), ...(orgNode?.disambiguatingDescription ? { disambiguatingDescription: orgNode.disambiguatingDescription } : {}) };
   return { '@context': 'https://schema.org', '@graph': [...nodes, org] };
@@ -249,11 +244,9 @@ ${free ? `<p class="free">${esc(W.free)}</p>` : ''}
 </main>
 <div class="bar" id="bar" aria-hidden="true"><span>${esc(W.barT(name))}${free ? `<small>${esc(W.barS)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" tabindex="-1" href="${esc(cta)}">${esc(W.readIt)}</a></div>
 ${viewer}`;
-  const faq = qi !== undefined ? [...secs[qi].body.matchAll(/^### (.+[?？])\s*\n([\s\S]*?)(?=\n### |$)/gm)].map((x) => ({ q: x[1].trim(), a: x[2].trim().replace(/\s+/g, ' ') })) : [];
   const jsonld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'BreadcrumbList', itemListElement: h.crumbs.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: `${h.SITE}${x.path}` })) },
     { '@type': h.pageType || 'Article', headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated, inLanguage: lang, author: AUTHOR, publisher: { '@id': h.ORG['@id'] }, mainEntityOfPage: url, ...(h.image ? { image: h.image } : {}) },
-    ...(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
     h.ORG] };
   const html = h.shell({ title: g.title_tag, description: g.meta_description, canonical: url, lang, alternates: h.alternates || [], ...(h.share ? { image: h.share } : {}), jsonld,
     meta: { type: 'guide', ticker: '', cta, lang, label: `guide ${g.name}` }, v2: { css: `/stocks/assets/page-${h.css}.css`, strip: h.strip, results: h.results || '' }, body: main });

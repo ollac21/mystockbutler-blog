@@ -87,7 +87,9 @@ export function siteFooter() {
 // The stylesheet loads without blocking the first paint (preload, then swap in), so the font never
 // delays the article; system fonts show until it arrives.
 const FONT_HREF = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;800;900&display=swap';   // B115: the mockups' 450 and 800 too
-export const FONT_LINKS = `<link rel="preconnect" href="https://fonts.googleapis.com">
+// the site's icon (the MyStockButler "S" mark, /favicon.svg, written by every build) leads every page's head links
+export const FONT_LINKS = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="${FONT_HREF}" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="${FONT_HREF}"></noscript>

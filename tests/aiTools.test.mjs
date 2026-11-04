@@ -46,8 +46,9 @@ test('the AI tools comparison: four pages, hreflang both ways, the guide frame, 
     const graph = ldOf(g.html)['@graph'];
     assert.ok(graph.some((n) => n['@type'] === 'Article'));
     assert.ok(graph.some((n) => n['@type'] === 'BreadcrumbList'));
-    const faq = graph.find((n) => n['@type'] === 'FAQPage');
-    assert.ok(faq && faq.mainEntity.length >= 4, `${p} has its questions in its data`);
+    // no FAQPage markup (the owner 2026-11-04: Google dropped it); the questions stay on the page
+    assert.ok(!graph.some((n) => n['@type'] === 'FAQPage'), `${p}: no FAQPage`);
+    assert.ok((g.html.match(/<h3>[^<]*[?？]<\/h3>/g) || []).length >= 4, `${p} shows its questions`);
     // the ticker box (today's page) or, in the approved frame (B115 round 3), the first button to the free report
     assert.ok(/<form class="tickerbox"/.test(g.html) || /<a class="btn btn--lg btn--block" id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/.test(g.html), 'the ticker box or the first button (the free report)');
     assert.ok(g.title.length <= 60, `${p} title ${g.title.length}`);

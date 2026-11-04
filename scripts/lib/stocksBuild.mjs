@@ -284,6 +284,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     if (existsSync(new URL(`../assets/page-${t}.css`, import.meta.url))) await writeFile(path.join(out, `stocks/assets/page-${t}.css`), pageCss + (await asset(`page-${t}.css`)));
   }
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
+  await writeFile(path.join(out, 'favicon.svg'), await asset('favicon.svg'));          // the site's icon: the MyStockButler "S" mark (every head links it)
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });

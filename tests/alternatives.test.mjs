@@ -22,8 +22,9 @@ test('the comparison guides: an English index and its pages, each an Article wit
     assert.ok(g.html.includes(`<link rel="canonical" href="https://blog.mystockbutler.com${path}">`));
     const graph = ldOf(g.html)['@graph'];
     assert.ok(graph.some((n) => n['@type'] === 'Article'));
-    const faq = graph.find((n) => n['@type'] === 'FAQPage');
-    assert.ok(faq && faq.mainEntity.length >= 4, `${path} has its questions in its data`);
+    // no FAQPage markup (the owner 2026-11-04: Google dropped it); the questions stay on the page
+    assert.ok(!graph.some((n) => n['@type'] === 'FAQPage'), `${path}: no FAQPage`);
+    assert.ok((g.html.match(/<h3>[^<]*[?？]<\/h3>/g) || []).length >= 4, `${path} shows its questions`);
     assert.ok(graph.some((n) => n['@type'] === 'BreadcrumbList'));
     // the ticker box (today's page) or, in the approved frame (B115 round 3), the first button to the free report
     assert.ok(/<form class="tickerbox"/.test(g.html) || /<a class="btn btn--lg btn--block" id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/.test(g.html), 'the ticker box or the first button');

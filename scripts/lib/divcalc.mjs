@@ -620,7 +620,7 @@ function renderPage(lang, ex, h, examples, byT) {
   const app = { '@type': 'WebApplication', name: title, url, description, applicationCategory: 'FinanceApplication', operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, inLanguage: HTML_LANG[lang], ...(h.newest ? { dateModified: h.newest } : {}),
     publisher: { '@id': h.ORG['@id'] } };
-  const faqLd = { '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) };
+  // no FAQPage markup (the owner 2026-11-04: Google dropped it); the questions stay on the page
   const client = { lang, w: W, ex: ex ? compact(ex) : null, cur: ex ? ex.cur : '', sym: symsOf(lang), app: APP, src: DIVCALC_SRC, data: DIVCALC_DATA, def: DEFAULTS };
   const script = `<script>(function(){\n${SHARED.map((f) => f.toString()).join('\n')}\nclientMain(${JSON.stringify(client).replace(/</g, '\\u003c')});\n})();</script>`;
   const html = h.shell({
@@ -630,7 +630,7 @@ function renderPage(lang, ex, h, examples, byT) {
     ogType: 'website',
     lang,
     alternates,
-    jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, app, faqLd, h.ORG] },
+    jsonld: { '@context': 'https://schema.org', '@graph': [crumbs.ld, app, h.ORG] },
     meta: { type: 'divcalc', ticker: ex ? ex.t : '', cta, lang, label: 'dividend calculator' },
     body: `<div class="layout one"><article class="calc">
 ${crumbs.html}

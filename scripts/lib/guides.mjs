@@ -39,7 +39,7 @@ export function loadGuides(dir = DIR) {
 
 // THE COMPARISON GUIDES (B110, the owner 2026-10-26 'make the pages ... publish them'): data/alternatives/<lang>-<tool>.md,
 // one honest comparison per page ('Bloomberg Terminal alternatives', 'Zonebourse avis', 'Aktienfinder Alternative'),
-// drawn exactly like a guide (Article + FAQPage + breadcrumbs, the ticker box), in any language including English.
+// drawn exactly like a guide (Article + breadcrumbs, the ticker box; no FAQPage markup since 2026-11-04, the questions stay on the page), in any language including English.
 export const ALT_DIR = new URL('../../data/alternatives/', import.meta.url);
 export function loadAlternatives(dir = ALT_DIR) {
   return loadGuides(dir);
@@ -148,7 +148,6 @@ export function renderGuide(g, { shell, SITE, ORG, breadcrumbs, crumbRoot, extra
   const ld = { '@context': 'https://schema.org', '@graph': [crumbs.ld,
     { '@type': pageType, headline: g.h1, description: g.meta_description, datePublished: g.updated, dateModified: g.updated,
       inLanguage: g.lang, author: AUTHOR, publisher: { '@id': ORG['@id'] }, mainEntityOfPage: url, ...(picture ? { image: picture.object } : {}) },
-    ...(faq.length ? [{ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
     ORG] };
   const html = shell({
     title: g.title_tag,

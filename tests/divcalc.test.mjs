@@ -190,7 +190,8 @@ test('the calculator pages as published: title, description, one h1, canonical, 
     assert.equal((html.match(/<link rel="alternate" hreflang=/g) || []).length, 5);
     const ld = JSON.parse(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(html)[1]);
     const types = ld['@graph'].map((n) => n['@type']);
-    for (const t of ['BreadcrumbList', 'WebApplication', 'FAQPage', 'Organization']) assert.ok(types.includes(t), `${l} ${t}`);
+    for (const t of ['BreadcrumbList', 'WebApplication', 'Organization']) assert.ok(types.includes(t), `${l} ${t}`);
+    assert.ok(!types.includes('FAQPage'), `${l}: no FAQPage markup (owner 2026-11-04)`);
     assert.ok(Buffer.byteLength(html) < 100 * 1024, `${l} ${Buffer.byteLength(html)} bytes`);
     assert.doesNotMatch(bodyOf(html).replace(/<style[\s\S]*?<\/style>/g, ''), /\{(name|t|amount|income|y|g|cov|first|last|year|mdate|pdate|price|n|value|total|date)\}/, `${l}: a placeholder left`);
     assert.match(html, /<label for="dc-t">/);
