@@ -66,10 +66,11 @@ export function sitePageProblem(rec, { byTicker, today }) {
     if (!(age < FREE_DAYS)) return `${first.ticker}: its report is ${Math.floor(age)} days old, the free line needs under ${FREE_DAYS}`;
   }
   if (rec.calc) {
-    for (const [t, row] of Object.entries(rec.calc.C.rows || {})) {
+    // the rows the page's words print (the example, the companies its questions name); the payers table is drawn fresh (payersHtml)
+    for (const t of rec.calc.checked || Object.keys(rec.calc.C.rows || {})) {
       const c = byTicker.get(t);
       if (!c) return `calculator: ${t} is not in this build`;
-      if (JSON.stringify(DC.entryOf(c)) !== JSON.stringify(row)) return `calculator: ${t}'s row is not what the calculator's guard gives today`;
+      if (JSON.stringify(DC.entryOf(c)) !== JSON.stringify(rec.calc.C.rows[t])) return `calculator: ${t}'s row is not what the calculator's guard gives today`;
     }
   }
   return '';
@@ -114,9 +115,24 @@ function ldOf(rec, { ORG, url, image }) {
 // (entryOf, as checked above), then the approved page's own script.
 function calcScript(rec, byTicker) {
   const shared = [DC.project, DC.fmtNum, DC.escH, DC.fillH, DC.fillT, DC.numH, DC.pctH, DC.moneyH, DC.dayText].map((f) => f.toString()).join('\n');
-  const rows = Object.fromEntries(Object.keys(rec.calc.C.rows || {}).map((t) => [t, DC.entryOf(byTicker.get(t))]));
+  const rows = Object.fromEntries(Object.keys(rec.calc.C.rows || {}).filter((t) => byTicker.get(t)).map((t) => [t, DC.entryOf(byTicker.get(t))]));
   const C = { ...rec.calc.C, rows };
   return `<script>(function(){\n${shared}\n\nvar C = ${JSON.stringify(C).replace(/</g, '\\u003c')};${rec.calc.tail}</script>`;
+}
+
+// The calculator's dividend payers table: the approved page's companies, in its order and markup, each row from the calculator's own
+// guard (entryOf) today; a company the guard does not pre-fill, or whose dividend page this build does not write, is left out.
+function payersHtml(rec, byTicker, exists, pagePath) {
+  const lang = rec.lang;
+  const fnum = (v, d) => DC.fmtNum(v, d, lang);
+  const pct = (v, d) => `<span class="n" data-v="${v}" data-d="${d}">${fnum(v, d)}</span>${lang === 'fr' ? '\u00a0%' : '%'}`;
+  return rec.calc.payers.tickers.map((t) => {
+    const c = byTicker.get(t);
+    const x = c ? DC.entryOf(c) : null;
+    const dp = c ? pagePath(c.slug, 'dividend', lang) : '';
+    if (!x || !x.prefill || !exists(dp)) return '';
+    return `<tr><th scope="row"><a href="${dp}"><b>${esc(x.n)}</b></a> <small>${esc(x.t)}</small></th><td>${pct(x.y, x.yd)}</td><td class="cg">${x.g === null ? '—' : pct(x.g, 1)}</td><td class="${x.cov && x.cov > 100 ? 'over' : ''}">${x.cov !== null ? pct(x.cov, 0) : '—'}</td><td><a href="?t=${esc(x.t)}#top">${esc(rec.calc.payers.go)}</a></td></tr>`;
+  }).join('');
 }
 
 // h: { shell, SITE, ORG, exists, strip (the live strip's html for the page's language), byTicker, alternates, image (an ImageObject),
@@ -127,7 +143,8 @@ export function renderSitePage(rec0, h) {
   const W = WORDS[lang] || WORDS.en;
   const url = `${h.SITE}${rec.path}`;
   // the homes' counts and company list: the build's own (stocks.mjs fills h.tokens; a page with a token it cannot fill is never drawn)
-  const fill = (t) => String(t || '').replace(/\{\{(\w+)\}\}/g, (m, k) => (h.tokens && h.tokens[k] !== undefined ? h.tokens[k] : m));
+  const tokens = { ...(h.tokens || {}), ...(rec.calc?.payers && h.pagePath ? { payers: payersHtml(rec, h.byTicker, h.exists, h.pagePath) } : {}) };
+  const fill = (t) => String(t || '').replace(/\{\{(\w+)\}\}/g, (m, k) => (tokens[k] !== undefined ? tokens[k] : m));
   rec = { ...rec, main: fill(rec.main), description: fill(rec.description), title: fill(rec.title) };
   const main = fixLinks(rec.main, h.exists);
   const bar = fixLinks(rec.bar || '', h.exists);

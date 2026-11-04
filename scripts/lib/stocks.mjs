@@ -2474,7 +2474,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       let why = sitePageProblem(rec, { byTicker, today: ctx.today });
       // the homes' tokens: the companies readable in the language, per index, and the home index's companies (each at least 2)
       let tokens = null;
-      if (!why && rec.tokens) {
+      if (!why && rec.tokens && !rec.calc) {
         const l = rec.lang;
         const list = live.filter((c) => TYPES.some((t) => langPage(c, t, l)));
         const fmt = (n) => (l === 'de' ? germanNumber(n.toLocaleString('en-US')) : l === 'fr' ? n.toLocaleString('en-US').replace(/,/g, '\u202f') : n.toLocaleString('en-US'));
@@ -2494,7 +2494,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const draw = (page, picture) => {
         const lang = rec.lang;
         const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
-        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), byTicker, alternates: page.alternates || [], tokens,
+        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), byTicker, alternates: page.alternates || [], tokens, pagePath,
           strip: stripHtml(lang, stripOf(ctx, lang), home), results: lang === 'en' && hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
           ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
         page.html = out.html;
