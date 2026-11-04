@@ -217,8 +217,8 @@ body[data-pick="b"] [data-for="a"]{display:none!important}
 /* ---- layout review (B115 final) ---- */
 /* charts side by side: the bars a little shorter so the figure and its "ahead" mark stay inside their own chart */
 @media (min-width:1024px){
-  .vb:not(:only-child) .vb__b i{width:calc(var(--w) * .84)}
-  .vb:not(:only-child) .vb__b em{left:calc(var(--w) * .84 + 8px)}
+  .vb:not(:only-child) .vb__b i{width:calc(var(--w) * .58)}
+  .vb:not(:only-child) .vb__b em{left:calc(var(--w) * .58 + 8px)}
 }
 /* the label column holds the longest short name (Alphabet) */
 .vb li{grid-template-columns:78px minmax(0,1fr)}
