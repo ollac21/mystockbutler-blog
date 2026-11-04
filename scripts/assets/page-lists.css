@@ -150,7 +150,7 @@
 .fig img{border-radius:14px;max-width:440px;width:100%}
 .fig figcaption{max-width:440px}
 @media (min-width:1024px){
-  .sec--pair{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  .sec--pair{display:grid;grid-template-columns:var(--pair);column-gap:var(--g);align-items:start}
   .sec--pair>h2{grid-column:1/-1}
   .sec--pair>.pair__l{grid-column:1;grid-row:2}
   .sec--pair>.pair__r{grid-column:2;grid-row:2/span 2;margin-top:0}

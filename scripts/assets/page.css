@@ -438,7 +438,11 @@ body.locked{overflow:hidden}
 /* ===== DESKTOP (1024 px and up): the landing's pattern, text on the left and the report card on the right in the first screen,
    then the width used: a text column beside its visual. Phones and tablets keep the single column above. ===== */
 @media (min-width:1024px){
-  .page{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;align-items:start;max-width:1200px;padding:0 24px}
+  /* ONE LAYOUT SYSTEM (every page type, desktop): one 1,200 px container; two columns, 1.2fr text / 1fr visual, a 56 px gap; every section starts at the same left edge,
+     its heading, text and bridge in the left column, its visual in the right column (beside a text of similar height) or across both columns under it */
+  :root{--g:56px;--pair:minmax(0,1.2fr) minmax(0,1fr)}
+  .site__in{max-width:1200px;padding:0 24px}
+  .page{display:grid;grid-template-columns:var(--pair);column-gap:var(--g);align-items:start;max-width:1200px;padding:0 24px}
   .page>.top{grid-column:1;grid-row:1}
   .page>.answer{grid-column:1;grid-row:2}
   .page>.cta1{grid-column:1;grid-row:3}
@@ -470,30 +474,35 @@ body.locked{overflow:hidden}
   .sec{padding-top:84px}
   .sec>h2{font-size:30px;margin-bottom:16px;max-width:40ch}
   /* forecast: text beside the chart */
-  .sec[aria-labelledby="where-h"],.sec[aria-labelledby="q-h"]{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  .sec{display:grid;grid-template-columns:var(--pair);column-gap:var(--g);align-content:start;align-items:start}
+  .sec>*{grid-column:1;min-width:0}
+  .sec>h2{grid-column:1}
+  .sec.qa>.qa__i{grid-column:auto}
+  .sec>.duo,.sec>.split,.sec>.gd,.sec>.links__grid,.sec>.qa__grid,.sec>.watch,.sec>.ctl,.sec>.hd-row,.sec>ol.rows,.sec>.status,.sec>.vnote,.sec>.empty{grid-column:1/-1}
+  .sec[aria-labelledby="where-h"],.sec[aria-labelledby="q-h"]{align-items:start}
   .sec[aria-labelledby="where-h"]{grid-template-rows:auto auto auto auto 1fr}
   .sec[aria-labelledby="q-h"]{grid-template-rows:auto auto auto auto auto 1fr}
   .sec[aria-labelledby="where-h"]>*,.sec[aria-labelledby="q-h"]>*{grid-column:1}
   .sec[aria-labelledby="where-h"]>.fig{grid-column:2;grid-row:1 / 6;margin:0!important}
   .sec[aria-labelledby="q-h"]>.fig{grid-column:2;grid-row:1 / 7;margin:0!important}
-  .sec .bridge{max-width:640px}
+  .sec .bridge{max-width:none;width:auto;justify-self:stretch}
   /* the three drivers side by side */
   .watch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px;margin-top:20px!important}
   .watch li{align-content:start}
   /* good buy: two pairs, text and visual */
-  .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;align-items:start;margin-top:8px}
+  .duo{display:grid;grid-template-columns:var(--pair);column-gap:var(--g);align-items:start;margin-top:8px}
   .duo--r{margin-top:36px}
   .duo__a>.sub:first-child,.duo__b>.sub:first-child{margin-top:0}
   .duo__a>.lead,.duo__b>.after{margin-top:0}
   .duo--r .bars{margin-top:0}
   /* questions in two columns */
-  .qa__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:56px;row-gap:30px}
+  .qa__grid{display:grid;grid-template-columns:var(--pair);column-gap:var(--g);row-gap:30px}
   .qa__i,.qa__i:first-child{margin-top:0}
   /* more links */
   .links__grid{max-width:980px}
   /* the closing: wide, two columns */
   .page>.close{margin:96px 0 0;max-width:none;padding:56px 64px 44px;border-radius:22px}
-  .close__in{max-width:none;margin:0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:64px;align-items:start}
+  .close__in{max-width:none;margin:0;display:grid;grid-template-columns:var(--pair);column-gap:var(--g);align-items:start}
   .close h2{grid-column:1;grid-row:1;font-size:34px;max-width:18ch}
   .close__in>p:nth-of-type(1){grid-column:1;grid-row:2}
   .close__in>p:nth-of-type(2){grid-column:1;grid-row:3}
