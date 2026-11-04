@@ -2471,18 +2471,36 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     for (const h of hubs) {
       const rec = SITE_PAGES.get(h.path);
       if (!rec) continue;
-      const why = sitePageProblem(rec, { byTicker, today: ctx.today });
+      let why = sitePageProblem(rec, { byTicker, today: ctx.today });
+      // the homes' tokens: the companies readable in the language, per index, and the home index's companies (each at least 2)
+      let tokens = null;
+      if (!why && rec.tokens) {
+        const l = rec.lang;
+        const list = live.filter((c) => TYPES.some((t) => langPage(c, t, l)));
+        const fmt = (n) => (l === 'de' ? germanNumber(n.toLocaleString('en-US')) : l === 'fr' ? n.toLocaleString('en-US').replace(/,/g, '\u202f') : n.toLocaleString('en-US'));
+        const by = (k) => list.filter((c) => c.index === k).length;
+        const homeIdx = l === 'fr' ? 'cac40' : 'dax40';
+        const chips = list.filter((c) => c.index === homeIdx && ctx.exists(pagePath(c.slug, 'stock', l)))
+          .sort((a, b) => String(a.short_name || shortName(a)).localeCompare(String(b.short_name || shortName(b))))
+          .map((c) => `<a href="${pagePath(c.slug, 'stock', l)}">${esc(c.short_name || shortName(c))}</a>`).join('');
+        tokens = { n: list.length, cac40: by('cac40'), sptsx60: by('sptsx60'), sp500: by('sp500'), dax40: by('dax40') };
+        const small = rec.tokens.filter((k) => k !== 'chips' && !(tokens[k] >= 2));
+        if (small.length) why = `the count of ${small.join(', ')} is under 2 in this build`;
+        tokens = Object.fromEntries(Object.entries(tokens).map(([k, v]) => [k, fmt(v)]));
+        tokens.chips = chips;
+        if (!chips) why = why || 'no company of the home index has a page in the language';
+      }
       if (why) { sitePages.kept.push({ path: h.path, why }); continue; }
       const draw = (page, picture) => {
         const lang = rec.lang;
         const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
-        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => ctx.exists(p) || hubPaths.has(p), byTicker, alternates: page.alternates || [],
+        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => ctx.exists(p) || hubPaths.has(p), byTicker, alternates: page.alternates || [], tokens,
           strip: stripHtml(lang, stripOf(ctx, lang), home), results: lang === 'en' && hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
           ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
         page.html = out.html;
         page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
-        page.title = rec.title;
-        page.description = rec.description;
+        page.title = out.title;
+        page.description = out.description;
         page.sitePage = rec.id;
         page.files = rec.files || [];                      // the page's own pictures (SVG), written beside it
         return page;

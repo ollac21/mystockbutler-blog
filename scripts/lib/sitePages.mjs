@@ -114,10 +114,14 @@ function calcScript(rec, byTicker) {
 
 // h: { shell, SITE, ORG, exists, strip (the live strip's html for the page's language), byTicker, alternates, image (an ImageObject),
 // share (the og:image), home, results, cta }. Returns the page's html and its own links.
-export function renderSitePage(rec, h) {
+export function renderSitePage(rec0, h) {
+  let rec = rec0;
   const lang = rec.lang;
   const W = WORDS[lang] || WORDS.en;
   const url = `${h.SITE}${rec.path}`;
+  // the homes' counts and company list: the build's own (stocks.mjs fills h.tokens; a page with a token it cannot fill is never drawn)
+  const fill = (t) => String(t || '').replace(/\{\{(\w+)\}\}/g, (m, k) => (h.tokens && h.tokens[k] !== undefined ? h.tokens[k] : m));
+  rec = { ...rec, main: fill(rec.main), description: fill(rec.description), title: fill(rec.title) };
   const main = fixLinks(rec.main, h.exists);
   const bar = fixLinks(rec.bar || '', h.exists);
   // the viewer: the page.js words for a chapter's lock line, the mockup's own 'all locked' line
@@ -134,7 +138,7 @@ export function renderSitePage(rec, h) {
     v2: { css: `/stocks/assets/page-${rec.css}.css`, strip: h.strip, results: h.results || '' },
     body: `${main}\n${bar}\n${viewer}\n${reps}${calc}`,
   });
-  return { html, main };
+  return { html, main, title: rec.title, description: rec.description };
 }
 
 export const SITE_PAGE_CSS = [...new Set([...SITE_PAGES.values()].map((r) => r.css))];
