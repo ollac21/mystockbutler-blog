@@ -2456,6 +2456,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         page.title = rec.title;
         page.description = rec.description;
         page.sitePage = rec.id;
+        page.files = rec.files || [];                      // the page's own pictures (SVG), written beside it
         return page;
       };
       draw(h, h.picture);

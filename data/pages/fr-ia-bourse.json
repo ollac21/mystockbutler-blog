@@ -94,5 +94,11 @@
   }
  ],
  "source": "~/b115-cats/calc/ia-bourse.html",
- "built_on": "2026-11-04"
+ "built_on": "2026-11-04",
+ "files": [
+  {
+   "name": "ai-pa-scenarios.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 300\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"600\" height=\"300\" fill=\"#fff\"/><line x1=\"40\" y1=\"250\" x2=\"580\" y2=\"250\" stroke=\"#E4E4DE\"/><rect x=\"70\" y=\"173.4\" width=\"110\" height=\"76.6\" rx=\"6\" fill=\"#C0452E\" opacity=\"0.9\"/><text x=\"125.0\" y=\"163.4\" font-size=\"17\" font-weight=\"800\" fill=\"#0E1713\" text-anchor=\"middle\">130,48 €</text><text x=\"125.0\" y=\"272\" font-size=\"14\" font-weight=\"700\" fill=\"#26332B\" text-anchor=\"middle\">Pessimiste · 27%</text><rect x=\"245\" y=\"135.5\" width=\"110\" height=\"114.5\" rx=\"6\" fill=\"#1F2A24\" opacity=\"0.85\"/><text x=\"300.0\" y=\"125.5\" font-size=\"17\" font-weight=\"800\" fill=\"#0E1713\" text-anchor=\"middle\">195,12 €</text><text x=\"300.0\" y=\"272\" font-size=\"14\" font-weight=\"700\" fill=\"#26332B\" text-anchor=\"middle\">Central · 55%</text><rect x=\"420\" y=\"76.1\" width=\"110\" height=\"173.9\" rx=\"6\" fill=\"#137C46\" opacity=\"0.9\"/><text x=\"475.0\" y=\"66.1\" font-size=\"17\" font-weight=\"800\" fill=\"#0E1713\" text-anchor=\"middle\">296,38 €</text><text x=\"475.0\" y=\"272\" font-size=\"14\" font-weight=\"700\" fill=\"#26332B\" text-anchor=\"middle\">Optimiste · 18%</text><line x1=\"40\" y1=\"147.5\" x2=\"580\" y2=\"147.5\" stroke=\"#617066\" stroke-dasharray=\"5 5\"/><text x=\"42\" y=\"141.5\" font-size=\"13\" fill=\"#617066\">Cours du 23 oct. 2026 : 174,68 €</text></svg>"
+  }
+ ]
 }

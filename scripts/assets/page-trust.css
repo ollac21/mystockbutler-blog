@@ -1,5 +1,8 @@
 /* B115 round 3: the approved trust mockup's own rules, on top of page.css (~/b115-cats, read-only copy) */
 
+/* the approved mockup sections are plain blocks (its own rules above place their pieces) */
+@media (min-width:1024px){.sec{display:block}.sec>*{min-width:0}}
+
 /* ===== reviews2: the tool-review page parts (on top of the approved forecast page's CSS) ===== */
 .answer__label{margin-bottom:2px}
 .facts{margin-top:4px;border-top:1px solid var(--rule)}

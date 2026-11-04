@@ -40,6 +40,21 @@
   }
   doc.querySelectorAll('button[data-pick]').forEach(function (b) { b.addEventListener('click', function () { pick(b.getAttribute('data-pick')); }); });
 
+  /* a page with several reports in one viewer (window.REPS, the approved tool pages): an opener's data-rep picks which one shows,
+     before the viewer opens; each report's title, lock line, counts and button come from the page's own table */
+  if (window.REPS) {
+    var setRep = function (k) {
+      var r = window.REPS[k], v = doc.getElementById('viewer'); if (!r || !v) return;
+      v.querySelectorAll('[data-pane]').forEach(function (el) { el.hidden = el.getAttribute('data-pane') !== k; });
+      v.setAttribute('aria-label', r.title); v.setAttribute('data-lock-all', r.lockh);
+      var t = v.querySelector('.viewer__title'); if (t) t.textContent = r.title;
+      var lc = doc.getElementById('lock-counts'); if (lc) lc.textContent = r.counts;
+      var lv = v.querySelector('.lock li[data-chapter="verdict"]'); if (lv) lv.textContent = r.locked;
+      var a = v.querySelector('.viewer__foot .btn'); if (a) { a.textContent = r.btn; a.href = String(r.href).replace(/&amp;/g, '&'); }
+    };
+    doc.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-open-viewer]'); if (b) setRep(b.getAttribute('data-rep') || Object.keys(window.REPS)[0]); }, true);
+  }
+
   /* the viewer: the landing's Expand viewer. One history entry; Back, the x or Escape closes it; the page behind does not move. */
   var viewer = doc.getElementById('viewer');
   if (viewer) {

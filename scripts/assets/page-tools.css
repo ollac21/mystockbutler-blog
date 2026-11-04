@@ -1,5 +1,8 @@
 /* B115 round 3: the approved tools mockup's own rules, on top of page.css (~/b115-cats, read-only copy) */
 
+/* the approved mockup sections are plain blocks (its own rules above place their pieces) */
+@media (min-width:1024px){.sec{display:block}.sec>*{min-width:0}}
+
 
 /* ===== tools page: components added to the approved forecast template ===== */
 .byline--note{margin-top:4px;font-size:13px;color:var(--muted)}
