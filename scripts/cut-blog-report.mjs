@@ -32,6 +32,7 @@ const slug = `${name}-${ticker.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-stock-
 const out = {
   schema: 'blog_full_report_v1', slug, ticker, run_id: page.run_id, memo_date: memo, page_slug: page.slug,
   company: String(view.metadata?.legal_issuer || page.company || '').trim(), sections, sources,
+  cut_on: new Date().toISOString().slice(0, 10),             // the day the page changes: the sitemap's date when later than the report's
 };
 const dest = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'data', 'blog', `${slug}.json`);
 // the owner's approved words for the report in four lines (approved_lines), when an earlier cut of the same address carries them, are kept

@@ -2689,7 +2689,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const posts = blog.reports.map((rec) => {
       const company = byTk.get(String(rec.ticker).toUpperCase()) || null;
       const sameRun = !!company && company.run_id === rec.run_id && company.memo_date === rec.memo_date;
-      return { ...renderBlogPost({ rec, company, sameRun, shell, strip, results, exists: bexists, pagePath, bySlug, SITE, ORG, AUTHOR, image }), sameRun };
+      return { ...renderBlogPost({ rec, company, sameRun, shell, strip, results, exists: bexists, pagePath, bySlug, SITE, ORG, AUTHOR, image, today: ctx.today }), sameRun };
     });
     const reportOf = new Map(posts.map((p) => [p.ticker.toUpperCase(), p]));
     const redirects = [];
@@ -2702,7 +2702,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const langLinks = [{ path: '/de/aktien/', hreflang: 'de', title: 'Auf Deutsch' }, { path: '/fr/stocks/', hreflang: 'fr', title: 'En français' }].filter((l) => hubs.some((h) => h.path === l.path));   // the footer's words
     const homes = [['de', '/de/'], ['fr', '/fr/']].filter(([, p]) => hubs.some((h) => h.path === p));
     const alternates = homes.length ? [{ hreflang: 'en', url: `${SITE}/` }, ...homes.map(([l, p]) => ({ hreflang: l, url: `${SITE}${p}` })), { hreflang: 'x-default', url: `${SITE}/` }] : [];
-    const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates });
+    const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates, today: ctx.today });
     blogOut = { posts, home, redirects, replaced: (blog.posts || []).filter((p) => reportOf.has(String(p.ticker || '').trim().toUpperCase())).map((p) => p.slug) };
   }
   const report = {

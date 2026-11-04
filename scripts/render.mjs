@@ -642,7 +642,7 @@ function renderSitemap(entries) {
 
 // B115 round 4: the posts' sitemap when the posts are full reports (the old addresses that point to them are not listed)
 function renderBlogSitemap(posts, entries) {
-  const items = [...posts.map((p) => ({ loc: p.url, lastmod: p.day })), ...entries.map(({ post }) => ({ loc: `${SITE}/${post.slug}/`, lastmod: lastModified(post) }))];
+  const items = [...posts.map((p) => ({ loc: p.url, lastmod: p.lastmod || p.day })), ...entries.map(({ post }) => ({ loc: `${SITE}/${post.slug}/`, lastmod: lastModified(post) }))];
   const newest = items.map((i) => i.lastmod).filter(Boolean).sort().pop();
   const urls = [`  <url>\n    <loc>${SITE}/</loc>${newest ? `\n    <lastmod>${newest}</lastmod>` : ''}\n  </url>`,
     ...items.map((i) => `  <url>\n    <loc>${esc(i.loc)}</loc>${i.lastmod ? `\n    <lastmod>${i.lastmod}</lastmod>` : ''}\n  </url>`)];

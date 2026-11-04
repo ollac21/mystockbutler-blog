@@ -17,7 +17,7 @@ const page = (over = {}) => ({ ticker: 'TSM', slug: 'tsm', company: 'Taiwan Semi
     Base: { probability: '55 %', values: ['470.00 (+15 %)', '580.00 (+43 %)', '740.00 (+84 %)'] },
     Bull: { probability: '20 %', values: ['600.00 (+47 %)', '800.00 (+97 %)', '1,100.00 (+172 %)'] },
     Weighted: { probability: '100 %', values: ['468.34 (+15 %)', '580.53 (+43 %)', '742.49 (+84 %)'] } } } } }, ...over });
-const post = (over = {}, sameRun = true) => renderBlogPost({ rec: tsm, company: page(over), sameRun, shell, strip: '', results: '', exists: () => true, pagePath: (s, t) => `/stocks/${s}/${t === 'stock' ? '' : `${t}/`}`,
+const post = (over = {}, sameRun = true, today = '2026-11-04') => renderBlogPost({ rec: tsm, company: page(over), sameRun, today, shell, strip: '', results: '', exists: () => true, pagePath: (s, t) => `/stocks/${s}/${t === 'stock' ? '' : `${t}/`}`,
   bySlug: new Map(), SITE, ORG, AUTHOR, image: null });
 
 test('the four reports are in the data, each with its executive summary, chapters 1 to 8 and sources', () => {
@@ -61,6 +61,9 @@ test('the report in four lines: the approved words, the numbers from the summary
   const other = post({}, false);
   assert.doesNotMatch(inshort(other.html), /What you pay|Where the price could go/);
   assert.doesNotMatch(other.html, /17,697 words/);
+  // the disclaimer stays, its prices' date then the report's own
+  assert.match(other.html, /Important investment disclaimer[\s\S]*Analysis date: October 18, 2026\. Prices as of Oct 18, 2026\./);
+  assert.match(post().html, /Analysis date: October 18, 2026\. Prices as of Oct 16, 2026\./);
 });
 
 test('a weighted forecast whose printed return does not follow from the price is left out', () => {
@@ -79,11 +82,24 @@ test('the two markup rules: a "Today (date)" header prints the date; a signs-onl
 
 test('the home lists the posts newest report first; an old address points to the new one', () => {
   const a = post();
-  const h = renderBlogHome({ posts: [a, { ...a, ticker: 'X', short: 'Later', day: '2026-10-29', path: '/later/', forecast: null, counts: { words: 100, tables: 2, sources: 3 } }], shell, strip: '', exists: () => true, SITE, ORG });
+  const h = renderBlogHome({ posts: [a, { ...a, ticker: 'X', short: 'Later', day: '2026-10-29', path: '/later/', forecast: null, counts: { words: 100, tables: 2, sources: 3 } }], shell, strip: '', exists: () => true, SITE, ORG, today: '2026-11-04' });
   assert.equal((h.html.match(/<h1[ >]/g) || []).length, 1);
   assert.ok(h.html.indexOf('/later/') < h.html.indexOf(`/${tsm.slug}/`));
   assert.match(h.html, /the report's forecast for October 2029, \+84&nbsp;% with dividends/);
   const r = renderRedirect('sandisk-sndk-stock-analysis-2026-10-13', '/sandisk-sndk-stock-analysis-2026-10-29/', SITE);
   assert.match(r.html, /<link rel="canonical" href="https:\/\/blog\.mystockbutler\.com\/sandisk-sndk-stock-analysis-2026-10-29\/">/);
   assert.match(r.html, /http-equiv="refresh" content="0; url=\/sandisk-sndk-stock-analysis-2026-10-29\/"/);
+  assert.doesNotMatch(r.html, /noindex/);
+  assert.match(h.html, /first one free/);
+});
+
+test('the free line only while the report is under 90 days old at build time', () => {
+  const young = post({}, true, '2027-01-15');
+  assert.match(young.html, />Get a report like this on any company, first one free</);
+  assert.match(young.html, /ready report free\. No card\./);
+  const old = post({}, true, '2027-01-16');
+  assert.doesNotMatch(old.html, /first one free|ready report free|Start free/);
+  assert.match(old.html, />Get a report like this on any company</);
+  const h = renderBlogHome({ posts: [old], shell, strip: '', exists: () => true, SITE, ORG, today: '2027-01-16' });
+  assert.doesNotMatch(h.html, /first one free|ready report free/);
 });

@@ -11,11 +11,13 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { Marked } from 'marked';
 import { esc } from './layout.mjs';
-import { listForecast, WORDS } from './stockPage.mjs';
+import { FREE_DAYS, listForecast, WORDS } from './stockPage.mjs';
 import { headingId, newIdRegistry } from './toc.mjs';
 
 const APP = 'https://app.mystockbutler.com';
 const BTN = 'Get a report like this on any company, first one free';
+const BTN_OLD = 'Get a report like this on any company';            // the same words without the free claim (a report 90 days old or more)
+const BAR_S = 'New accounts: one ready report free';
 const FREE = "New accounts get one company's ready report free. No card.";
 const MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const MON3 = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -152,6 +154,18 @@ export function shownForecast(c) {
   return bad ? null : f;
 }
 
+// the date of the prices the report itself uses: its summary's numbers table header 'Today (Oct 18, 2026)' (our producer's words: shape)
+export function reportPriceDay(rec) {
+  const exec = (rec.sections || []).find((s) => s.id === 'executive-summary');
+  const nums = summaryTables(exec ? exec.markdown : '').find((t) => rowOf(t, 'Share price'));
+  const m = nums && /^Today \(([A-Z][a-z]{2} \d{1,2}, \d{4})\)$/.exec(String(nums.head[1] || '').trim());
+  return m ? m[1] : '';
+}
+// the free line holds while the report is under the app's FREE_DAYS at build time (the app's rule)
+const freeOn = (day, today) => okDay(day) && okDay(today) && (Date.parse(`${today}T00:00:00Z`) - Date.parse(`${day}T00:00:00Z`)) / 864e5 < FREE_DAYS;
+// the day a post last changed: its report's day, or the day its page was cut into this design when that is later (the sitemap sees the change)
+const changedOn = (rec) => [String(rec.memo_date || '').slice(0, 10), String(rec.cut_on || '')].filter(okDay).sort().pop() || '';
+
 export function fourLines(rec, c) {
   const exec = (rec.sections || []).find((s) => s.id === 'executive-summary');
   const md = exec ? exec.markdown : '';
@@ -209,7 +223,7 @@ function sourcesList(srcs) {
 }
 
 // q: { rec (data/blog report), company (its page file, or null), sameRun, shell, strip, results, exists(path), pagePath(slug, type),
-//      bySlug, SITE, ORG, AUTHOR, image (ImageObject), share (the og picture or undefined) }
+//      bySlug, SITE, ORG, AUTHOR, image (ImageObject), share (the og picture or undefined), today (the build day, ISO) }
 export function renderBlogPost(q) {
   const { rec } = q;
   const c = q.sameRun ? q.company : null;
@@ -220,6 +234,9 @@ export function renderBlogPost(q) {
   const day = iso(rec.memo_date);
   const url = `${q.SITE}/${rec.slug}/`;
   const cta = `${APP}/signup?ticker=${encodeURIComponent(ticker)}&src=seo-blog`;
+  const free = freeOn(day, q.today);
+  const btn = free ? BTN : BTN_OLD;
+  const freeP = free ? `<p class="free">${esc(FREE)}</p>` : '';
   const chapters = reportChapters(rec);
   const srcs = (rec.sources || []).filter((s) => s && s.title);
   const sourcesHtml = sourcesList(srcs);
@@ -228,11 +245,12 @@ export function renderBlogPost(q) {
   const rail = chapters.map((ch, i) => `<div class="rail__grp" data-ch="${esc(ch.id)}"><a class="rail__a${i === 0 ? ' is-on' : ''}" href="#${esc(ch.id)}">${esc(ch.title)}</a><div class="rail__sub"${i === 0 ? '' : ' hidden'}>${ch.subs.map((s) => `<a href="#${esc(s.id)}">${esc(s.title)}</a>`).join('')}</div></div>`).join('')
     + (sourcesHtml ? '<div class="rail__grp" data-ch="sources"><a class="rail__a" href="#sources">Sources</a></div>' : '');
   const menu = chapters.map((ch) => `<li><a href="#${esc(ch.id)}">${esc(ch.title)}</a></li>`).join('') + (sourcesHtml ? '<li><a href="#sources">Sources</a></li>' : '');
-  const k = c?.counts || {};
+  const k = c?.counts || { sources: srcs.length };     // another run's counts are never printed; the report's own sources are
   const counts = [k.words ? `${Number(k.words).toLocaleString('en-US')} words` : '', k.tables ? `${k.tables} tables` : '', k.sources ? `${k.sources} sources` : ''].filter(Boolean).join(' · ');
   const updated = shortDate(day);
-  const priceDay = c && okDay(iso(c.price_date)) ? shortDate(iso(c.price_date)) : '';
-  const disc = priceDay ? WORDS.en.disc(ticker, longDate(day), priceDay) : '';
+  // the disclaimer is always printed: the prices' date = the page file's close of the same run, else the report's own 'Today (date)'
+  const priceDay = c && okDay(iso(c.price_date)) ? shortDate(iso(c.price_date)) : reportPriceDay(rec);
+  const disc = WORDS.en.disc(ticker, longDate(day), priceDay || shortDate(day));
   const frame = `<section class="rframe" id="report" aria-label="${esc(`${poss(short)} full report of ${longDate(day)}`)}">
 <div class="rframe__bar"><a class="rf-back" href="/" aria-label="All posts">${ARROW}</a><span class="rf-tk">${esc(ticker)}</span><span class="rf-name">${esc(fullName)}</span>${updated ? `<span class="rf-upd">Updated ${esc(updated)}</span>` : ''}<span class="rf-share" aria-hidden="true">${SHARE}</span></div>
 <details class="rf-chap"><summary>Chapters</summary><ol>${menu}</ol></details>
@@ -242,7 +260,7 @@ export function renderBlogPost(q) {
 <header class="br-ui"><div class="br-kicker">${[ticker, exch, fullName].filter(Boolean).map((x, i) => `<span>${i ? '· ' : ''}${esc(x)}</span>`).join('')}</div>
 <p class="br-title">${esc(fullName)} (${esc(ticker)})</p>
 <div class="br-by"><span>MyStockButler Research Team</span>${day ? `<time datetime="${day}">Updated ${esc(updated)}</time>` : ''}${counts ? `<span>${esc(counts)}</span>` : ''}</div></header>
-${disc ? `<aside class="br-ui br-disc" aria-label="Important investment disclaimer"><div class="br-disc__t">Important investment disclaimer</div><p>${esc(disc)}</p></aside>` : ''}
+<aside class="br-ui br-disc" aria-label="Important investment disclaimer"><div class="br-disc__t">Important investment disclaimer</div><p>${esc(disc)}</p></aside>
 <div class="br-mt8">
 ${sections}
 </div>
@@ -273,13 +291,13 @@ ${more ? `<div><h3>More on ${esc(short)}</h3><div class="chips">${more}</div></d
 <h1>${esc(h1)}</h1>
 ${byline}</section>
 ${inshort}
-<section class="cta1" aria-label="Get a report"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" rel="nofollow" href="${esc(cta)}">${esc(BTN)}</a><p class="free">${esc(FREE)}</p></section>
+<section class="cta1" aria-label="Get a report"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</section>
 </div>
 ${frame}
-<section class="cta1 cta1--after" aria-label="Get a report"><a class="btn btn--lg btn--block" id="closebtn" data-cta="close" rel="nofollow" href="${esc(cta)}">${esc(BTN)}</a><p class="free">${esc(FREE)}</p></section>
+<section class="cta1 cta1--after" aria-label="Get a report"><a class="btn btn--lg btn--block" id="closebtn" data-cta="close" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</section>
 ${links}
 </main>
-<div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company<small>New accounts: one ready report free</small></span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">Start free</a></div>
+<div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company${free ? `<small>${esc(BAR_S)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">${free ? 'Start free' : 'Start'}</a></div>
 <script>(function(){var grps=document.querySelectorAll('.rail__grp'),hs=document.querySelectorAll('.br-chapter>h2'),cur=null,t=0;
 function paint(){t=0;var id=hs.length?hs[0].id:null;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<innerHeight*0.3)id=hs[i].id;else break;}if(id===cur)return;cur=id;grps.forEach(function(g){var on=g.getAttribute('data-ch')===id;g.querySelector('.rail__a').classList.toggle('is-on',on);var s=g.querySelector('.rail__sub');if(s)s.hidden=!on;});}
 if(grps.length&&hs.length){addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(paint);},{passive:true});paint();}
@@ -287,13 +305,13 @@ var cm=document.querySelector('.rf-chap');if(cm)cm.addEventListener('click',func
   const chapterText = chapters.map((ch) => textOf(ch.body)).join(' ');
   const words = chapterText.split(/\s+/).filter(Boolean).length;
   const jsonld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'Article', headline: h1, description, datePublished: day, dateModified: day, inLanguage: 'en', wordCount: words, author: q.AUTHOR, publisher: { '@id': q.ORG['@id'] },
+    { '@type': 'Article', headline: h1, description, datePublished: day, dateModified: changedOn(rec) || day, inLanguage: 'en', wordCount: words, author: q.AUTHOR, publisher: { '@id': q.ORG['@id'] },
       mainEntityOfPage: url, ...(q.image ? { image: q.image } : {}) },
     { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Blog', item: `${q.SITE}/` }, { '@type': 'ListItem', position: 2, name: crumbName, item: url }] },
     q.ORG] };
   const html = q.shell({ title, description, canonical: url, lang: 'en', jsonld, meta: { type: 'post', ticker, cta, lang: 'en', label: `post ${rec.slug}` },
     ...(q.share ? { image: q.share } : {}), v2: { css: '/stocks/assets/page-blog.css', strip: q.strip, results: q.results || '' }, body: main });
-  return { path: `/${rec.slug}/`, url, slug: rec.slug, ticker, short, exch, day, title, description, h1, html, words, chapters: chapters.length,
+  return { path: `/${rec.slug}/`, url, slug: rec.slug, ticker, short, exch, day, lastmod: changedOn(rec) || day, title, description, h1, html, words, chapters: chapters.length,
     subs: chapters.reduce((n, ch) => n + ch.subs.length, 0), today: (chapterText.match(/\btoday\b/gi) || []).length,
     forecast: fc ? { value: `${four.cur}${fc.rows.Weighted[fc.last].raw}`, col: fc.cols[fc.last], ret: fc.rows.Weighted[fc.last].r } : null,
     counts: k, outLinks: [...main.matchAll(/<a [^>]*href="(\/[^"#?]*)/g)].map((m) => m[1]) };
@@ -308,7 +326,8 @@ export function renderBlogHome(q) {
   const sign = (n) => (n > 0 ? `+${n}` : String(n));
   const rows = posts.map((p) => {
     const num = p.forecast ? `<b>${esc(p.forecast.value)}</b><span>the report's forecast for ${esc(p.forecast.col)}${Number.isFinite(p.forecast.ret) ? `, ${esc(sign(p.forecast.ret))}&nbsp;%` : ''} with dividends</span>`
-      : p.counts && p.counts.words ? `<b>${Number(p.counts.words).toLocaleString('en-US')}</b><span>words, ${esc(String(p.counts.tables))} tables, ${esc(String(p.counts.sources))} sources</span>` : '';
+      : p.counts && p.counts.words ? `<b>${Number(p.counts.words).toLocaleString('en-US')}</b><span>words, ${esc(String(p.counts.tables))} tables, ${esc(String(p.counts.sources))} sources</span>`
+        : p.counts && p.counts.sources ? `<b>${Number(p.counts.sources).toLocaleString('en-US')}</b><span>sources cited</span>` : '';
     const sub = p.other ? (p.day ? `post of ${esc(longDate(p.day))}` : '') : `<span class="pcard__tk">${esc(p.ticker)}</span>${p.exch ? ` · ${esc(p.exch)}` : ''} · report of ${esc(longDate(p.day))}`;
     return `<li class="hrow">
 <div class="hrow__co"><h2><a href="${esc(p.path)}">${esc(p.other ? p.title : p.short)}</a></h2><p>${sub}</p></div>
@@ -318,21 +337,24 @@ export function renderBlogHome(q) {
   }).join('\n');
   const lead = posts.find((p) => !p.other);
   const cta = `${APP}/signup?${lead ? `ticker=${encodeURIComponent(lead.ticker)}&` : ''}src=seo-blog`;
+  const free = !!lead && freeOn(lead.day, q.today);
+  const btn = free ? BTN : BTN_OLD;
+  const freeP = free ? `<p class="free">${esc(FREE)}</p>` : '';
   const names = posts.filter((p) => !p.other).map((p) => p.short);
   const browse = [q.exists('/stocks/') ? '<a href="/stocks/">All stocks</a>' : '', q.exists('/stocks/reporting-this-week/') ? '<a href="/stocks/reporting-this-week/">Results this week</a>' : '',
     ...(q.langLinks || []).map((l) => `<a href="${esc(l.path)}" hreflang="${esc(l.hreflang)}" lang="${esc(l.hreflang)}">${esc(l.title)}</a>`)].join('');
   const main = `<main class="page page--full page--home" id="top">
 <section class="top htop"><div><h1>MyStockButler blog: full stock analysis reports</h1>
 <p class="hero">Each post is one company's full report, every chapter open: the business, the numbers, the risks and where the price could go, written from its filings with each source cited.</p></div>
-<div class="htop__cta"><a class="btn btn--lg" id="firstbtn" data-cta="lede" rel="nofollow" href="${esc(cta)}">${esc(BTN)}</a><p class="free">${esc(FREE)}</p></div></section>
+<div class="htop__cta"><a class="btn btn--lg" id="firstbtn" data-cta="lede" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</div></section>
 <ul class="hlist" aria-label="Posts">${rows}</ul>
-<section class="cta1 cta1--after" aria-label="Get a report"><a class="btn btn--lg btn--block" id="closebtn" data-cta="close" rel="nofollow" href="${esc(cta)}">${esc(BTN)}</a><p class="free">${esc(FREE)}</p></section>
+<section class="cta1 cta1--after" aria-label="Get a report"><a class="btn btn--lg btn--block" id="closebtn" data-cta="close" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</section>
 <section class="links" aria-label="More pages"><div class="links__grid">
 ${browse ? `<div><h3>Browse</h3><div class="chips">${browse}</div></div>` : ''}
 <div><h3>How it is made</h3><div class="chips"><a href="/methodology/">How a report is made</a><a href="/corrections/">Corrections</a><a href="/about/">About</a></div></div>
 </div></section>
 </main>
-<div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company<small>New accounts: one ready report free</small></span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">Start free</a></div>`;
+<div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company${free ? `<small>${esc(BAR_S)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">${free ? 'Start free' : 'Start'}</a></div>`;
   const title = 'MyStockButler blog: full stock analysis reports';
   const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names.join('');
   const description = `Full stock analysis reports, every chapter open, written from company filings with sources cited${list ? `: ${list}` : ''}.`;
@@ -358,7 +380,6 @@ export function renderRedirect(from, to, SITE) {
 <meta charset="utf-8">
 <title>Moved to ${esc(url)}</title>
 <link rel="canonical" href="${esc(url)}">
-<meta name="robots" content="noindex,follow">
 <meta http-equiv="refresh" content="0; url=${esc(to)}">
 </head>
 <body><p>This report has moved: <a href="${esc(to)}">${esc(url)}</a></p></body>
