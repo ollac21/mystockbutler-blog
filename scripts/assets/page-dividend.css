@@ -216,3 +216,28 @@
 /* ---- layout review (B115 final): the calculator's result tiles on a phone (long German words, a figure beside its label) ---- */
 #dce-out .dc-sum .l{hyphens:auto;overflow-wrap:break-word}
 @media (max-width:640px){#dce-out .dc-sum .v{font-size:14.5px}}
+
+/* ---- the owner's layout review (2026-11-04): the dividend page's forecast, text-only sections, per-share table and calculator text ---- */
+/* the per-share table as a card (label, value right-aligned, caption); beside its text it is as tall as the text */
+.duo__b{margin-top:16px;padding:16px 18px 6px;background:var(--card);border-radius:16px;border:1px solid rgba(17,24,20,.06);box-shadow:var(--shadow)}
+.duo__b .rows__cap{margin:0 0 4px;font-size:13px;line-height:1.4}
+.duo__b .pay{border-top:0}
+.duo__b .pay li{padding:12px 0}
+.duo__b .pay li:last-child{border-bottom:0}
+.duo__b .pay__l{font-size:16px}
+.duo__b .pay__n{font-size:20px;text-align:right}
+/* the calculator's text at the page's own body size */
+.page>.dce p{font:450 16px/1.55 var(--font)}
+.page>.dce p.sub{font-size:13.5px;line-height:1.45;color:var(--muted)}
+@media (min-width:1024px){
+  .page>.dce>p:not(.sub){font:450 18px/1.6 var(--font);max-width:68ch}
+  /* the forecast and the text-only sections: one column at reading width, centred in the content column, the chart under its text (no short text beside a tall chart) */
+  .sec--fc,.sec--change{display:block;max-width:760px;margin-left:auto;margin-right:auto;width:100%}
+  .sec--fc>.sx__r{margin-top:22px}
+  .sec--fc .fig img{width:100%}
+  .sec--fc>.bridge,.sec--change>.bridge{max-width:none;margin-top:20px}
+  .sec--change>p{max-width:none}
+  /* text and per-share table: the same height */
+  .duo{align-items:stretch}
+  .duo__b{display:flex;flex-direction:column;justify-content:center;margin-top:0;padding:22px 26px 14px}
+}
