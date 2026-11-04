@@ -109,7 +109,13 @@ test('the named author and the two trust pages: a Person on every Article, a byl
     assert.match(h.html, /By <a href="\/about\/">Olivier Lachance<\/a>/);
   }
   assert.match(hubs.find((x) => x.path === '/corrections/').html, /href="mailto:mystockbutler@gmail\.com"/);
-  for (const l of LANGS) assert.match(hubs.find((x) => x.path === ABOUT_PATH[l]).html, /Olivier Lachance[\s\S]{0,20}href="https:\/\/www\.linkedin\.com\/in\/olivier-lachance-md\/"/, l);
+  // the owner 2026-11-04: the "who is behind it" line with its LinkedIn link is gone from the About pages; the named author stays
+  // the page's Person (with that profile) in its data, and no About text tags him any more
+  for (const l of LANGS) {
+    const html = hubs.find((x) => x.path === ABOUT_PATH[l]).html;
+    assert.ok(JSON.stringify(ldOf(html)).includes('"url":"https://www.linkedin.com/in/olivier-lachance-md/"'), l);
+    assert.doesNotMatch(html, /behind MyStockButler is|Hinter MyStockButler steht|derrière MyStockButler est|背後的人是/, l);
+  }
   const out = await mkdtemp(path.join(os.tmpdir(), 'msb-trust-'));
   try {
     const built = await writeStockSite(out, [load('stock-ko.json')], { today: TODAY, earningsDates: {} });

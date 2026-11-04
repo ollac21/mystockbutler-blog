@@ -14,8 +14,6 @@ org_disambiguation: "MyStockButler (mystockbutler.com) ist ein Dienst für Resea
 
 MyStockButler schreibt ausführliche, quellengeprüfte Research-Berichte zu einzelnen börsennotierten Unternehmen: acht Kapitel je Unternehmen, vom Geschäft bis zu drei Kursszenarien, jede Zahl bis zu ihrer Quelle zurückverfolgt. Die Berichte sind KI-generiertes Research, nur zur Information, keine Anlageberatung.
 
-Hinter MyStockButler steht Olivier Lachance ([LinkedIn](https://www.linkedin.com/in/olivier-lachance-md/)).
-
 ## Was ein Bericht enthält
 
 Ein Bericht folgt der Reihenfolge eines Analysten: zuerst das Unternehmen, zuletzt der Preis.

@@ -14,8 +14,6 @@ org_disambiguation: "MyStockButler（mystockbutler.com）是一項研究報告�
 
 MyStockButler 為個別上市公司撰寫詳盡、經來源核對的研究報告：每家公司八章，由業務一直到三個股價情境，每個數字都可追溯至來源。報告由 AI 生成，僅供參考，並非投資建議。
 
-MyStockButler 背後的人是 Olivier Lachance（[LinkedIn](https://www.linkedin.com/in/olivier-lachance-md/)）。
-
 ## 報告包括甚麼
 
 報告按分析師的次序：先看公司，最後才談價格。

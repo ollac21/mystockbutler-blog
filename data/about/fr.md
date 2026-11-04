@@ -13,8 +13,6 @@ org_disambiguation: "MyStockButler (mystockbutler.com) est un service de rapport
 
 MyStockButler rédige de longs rapports de recherche vérifiés aux sources sur des sociétés cotées, une société à la fois : huit chapitres, de l'entreprise jusqu'à trois scénarios de cours, chaque chiffre retracé jusqu'à sa source. Les rapports sont une recherche générée par IA, à titre d'information seulement, pas un conseil en placement.
 
-La personne derrière MyStockButler est Olivier Lachance ([LinkedIn](https://www.linkedin.com/in/olivier-lachance-md/)).
-
 ## Ce que contient un rapport
 
 Un rapport suit l'ordre d'un analyste : l'entreprise d'abord, le prix à la fin.
