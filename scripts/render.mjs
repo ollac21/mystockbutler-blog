@@ -665,7 +665,7 @@ function renderSitemapIndex(names, lastmod) {
 // llms.txt (B110 SEO, 2026-10-23: it was 440 KB, every page): the languages first, the articles, the hubs that list every
 // company page, and the address of llms-full.txt, which keeps the full list (every stock page with its description).
 function renderLlms(entries, stockPages = [], hubs = [], blogPosts = []) {
-  const lines = [...blogPosts.map((p) => `- [${p.h1}](${p.url}): ${p.description}`), ...entries.map(({ post }) => {
+  const lines = [...[...blogPosts].sort((a, b) => String(b.day).localeCompare(String(a.day))).map((p) => `- [${p.h1}](${p.url}): ${p.description}`), ...entries.map(({ post }) => {
     const title = str(post.title) || str(post.seo_title);
     const excerpt = str(post.excerpt) || str(post.seo_description);
     return `- [${title}](${SITE}/${post.slug}/)${excerpt ? `: ${excerpt}` : ''}`;
