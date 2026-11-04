@@ -856,6 +856,13 @@ export function divFcfSvg(cols, dv, fv, { axis, val, pct }) {
 }
 
 // the dividend page's second picture (b115-mock-dividend/dividend-forecast.svg): from the last payment, the three cases' dividend per share
+// an axis label's size: 17 px, 14 px when it is long; a CJK character counts a bit wider (shape: a width estimate, not a reading of the words)
+function axisLabelSize(l) {
+  const ch = [...String(l)];
+  const wide = ch.filter((c) => c.codePointAt(0) >= 0x2E80).length;
+  return ch.length + wide * 0.7 > 8 ? 14 : 17;
+}
+
 export function divForecastSvg(start, fc, { axis, cases, val, rise, labels }) {
   const colors = { bear: '#C0452E', base: '#1F2A24', bull: '#137C46' };
   const n = fc.cols.length, x0 = 40, step = 288 / n, top = 70, bottom = 250;
@@ -885,7 +892,7 @@ export function divForecastSvg(start, fc, { axis, cases, val, rise, labels }) {
   }
   labels.forEach((l, i) => {
     const anchor = i === 0 ? 'start' : 'middle';
-    o.push(`<text x="${(i === 0 ? 4 : xs[i]).toFixed(1)}" y="292" font-size="${[...String(l)].length > 8 ? 14 : 17}" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
+    o.push(`<text x="${(i === 0 ? 4 : xs[i]).toFixed(1)}" y="292" font-size="${axisLabelSize(l)}" font-weight="600" fill="#617066" text-anchor="${anchor}">${esc(l)}</text>`);
   });
   o.push('</svg>');
   return o.join('\n');
@@ -980,6 +987,11 @@ ${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}<
 <div class="viewer__foot"><a class="btn" data-cta="viewer" href="${esc(o.cta)}">${esc(isFree ? W.keepFree(company) : W.keepOld(company))}</a>${isFree ? `<small>${esc(W.free)}</small>` : ''}</div>
 </div>
 </div>`;
+}
+
+// French typography on the page's text (not its tags, scripts, styles or the H1): no line starts with ? ! : ; or %, and none breaks inside « »
+function frenchSpaces(html) {
+  return html.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<h1[\s\S]*?<\/h1>|<[^>]+>)/).map((seg, i) => (i % 2 === 1 ? seg : seg.replace(/ ([?!:;%»])/g, '\u00A0$1').replace(/(«) /g, '$1\u00A0'))).join('');
 }
 
 export function renderPage(p) {
@@ -1603,7 +1615,7 @@ ${close}
 </main>
 ${bar}
 ${viewer}`;
-  return { body, description, files, isFree };
+  return { body: lang === 'fr' ? frenchSpaces(body) : body, description, files, isFree };
 }
 
 // ---------------------------------------------------------------------------------------------------------------------------

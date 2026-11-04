@@ -537,3 +537,7 @@ footer.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0
 @media (max-width:420px){html[lang="fr"] .answer__pair .answer__n{font-size:26px}html[lang="fr"] .answer__pair{column-gap:14px}}
 /* a long text link wraps under the first button rather than running under the report frame (French, German, a long name) */
 @media (min-width:1024px){.cta1__row{flex-wrap:wrap;row-gap:4px}.cta1 .textlink{white-space:normal}}
+/* ---- layout review (B115 final): a long currency word in the forecast answer (French "$ CA") no longer runs the two big numbers together ---- */
+@media (min-width:1024px){html[lang="fr"] .answer__pair .answer__n{font-size:38px}}
+@media (min-width:1024px) and (max-width:1199px){html[lang="fr"] .answer__pair .answer__n{font-size:30px}}
+@media (max-width:639px){html[lang^="zh"] .answer__pair .answer__n{font-size:32px}}

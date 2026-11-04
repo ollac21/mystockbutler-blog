@@ -229,3 +229,19 @@
   .close__in>.free{grid-column:1;grid-row:4;text-align:left}
   .close__in>.foot{grid-column:1/-1;grid-row:5}
 }
+
+/* ---- layout review (B115 final) ---- */
+/* the earnings answer: a date written without spaces (Chinese) or a long month (German) stays inside its half */
+@media (min-width:640px){html[lang^="zh"] .ans2 .answer__n{font-size:26px}}
+@media (min-width:1024px){html[lang="de"] .ans2 .answer__n{font-size:34px}}
+/* the beat section: the score and the dots on one row, the text under them at reading width (the dots are far shorter than the text: two columns left a wide empty area) */
+@media (min-width:1024px){
+  .sec--beat>.score{grid-column:1;grid-row:2;margin-bottom:0;align-self:center}
+  .sec--beat>.beat{grid-column:2;grid-row:2;margin-top:0;row-gap:18px}
+  .sec--beat .meas{margin-top:0}
+  .sec--beat>.lead{grid-column:1/-1;grid-row:3;margin-top:24px}
+  .sec--beat>.after{grid-column:1/-1;grid-row:4}
+  .sec--beat>.promise{grid-column:1/-1;grid-row:5}
+  .sec--beat>.fine{grid-column:1/-1;grid-row:6}
+  .sec--beat>.bridge{grid-column:1/-1;grid-row:7}
+}
