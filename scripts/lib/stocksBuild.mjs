@@ -263,8 +263,8 @@ async function drawPictures(out, lists, { draw } = {}) {
 
 // Writes /stocks/** and the stock sitemaps; returns what the caller needs for the sitemap index, IndexNow and llms.txt.
 // STOCK_PICTURES=off draws no picture: every page keeps its inline chart and the share picture. extraImages: pictures of other pages (the blog posts' covers) for the image sitemap.
-export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates(), pictures = process.env.STOCK_PICTURES !== 'off', draw, extraImages = [], covers = null } = {}) {
-  const { pages: built, hubs: builtHubs, held, report, compares: builtCompared, divcalc } = buildStockSite(companies, { today, compares, earningsDates, pictures });
+export async function writeStockSite(out, companies, { today = new Date(), reportDir = '', compares = [], earningsDates = readEarningsDates(), pictures = process.env.STOCK_PICTURES !== 'off', draw, extraImages = [], covers = null, blog = null } = {}) {
+  const { pages: built, hubs: builtHubs, held, report, compares: builtCompared, divcalc, blog: blogOut } = buildStockSite(companies, { today, compares, earningsDates, pictures, blog });
   const drawn = await drawPictures(out, [built, builtCompared, builtHubs], { draw });
   const [pages, compared, hubs] = drawn.lists;
   report.pictures = drawn.report;
@@ -280,7 +280,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   await writeFile(path.join(out, 'stocks/assets/page-lists.css'), pageCss + (await asset('page-lists.css')));
   await writeFile(path.join(out, 'stocks/assets/lists.js'), await asset('lists.js'));
   await writeFile(path.join(out, 'stocks/assets/page-dividend.css'), pageCss + DIVCALC_CSS + (await asset('page-dividend.css')));
-  for (const t of ['tools', 'review', 'trust', 'calc', 'hubs']) {                    // B115 round 3: the approved pages' own sheets
+  for (const t of ['tools', 'review', 'trust', 'calc', 'hubs', 'blog']) {                    // B115 round 3: the approved pages' own sheets
     if (existsSync(new URL(`../assets/page-${t}.css`, import.meta.url))) await writeFile(path.join(out, `stocks/assets/page-${t}.css`), pageCss + (await asset(`page-${t}.css`)));
   }
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
@@ -290,6 +290,16 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     await mkdir(dir, { recursive: true });
     await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
     for (const f of p.files || []) await writeFile(path.join(dir, f.name), f.content);   // B115: the page's own charts (SVG)
+  }
+  // B115 round 4: the blog's posts (each one company's full report), its home and the old addresses that point to a newer report
+  if (blogOut) {
+    for (const p of [...blogOut.posts, blogOut.home, ...blogOut.redirects]) {
+      const dir = path.join(out, p.path.slice(1));
+      await mkdir(dir, { recursive: true });
+      await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
+    }
+    for (const p of blogOut.posts) console.log(`Blog post ${p.path}: ${p.chapters} chapters, ${p.subs} sub-sections, ${p.words} words of chapter text, 'today' ${p.today} in the report's own text; page file of the same run: ${p.sameRun ? 'yes' : 'NO (its numbers left out)'}`);
+    for (const r of blogOut.redirects) console.log(`Blog: ${r.path} -> ${r.to}`);
   }
   const sitemaps = {};
   for (const lang of ['en', 'fr', 'de', 'zh-HK']) {
@@ -324,5 +334,5 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
   console.log(`Approved pages (B115 round 3): ${report.sitePages.drawn.length} drawn (${report.sitePages.drawn.join(', ')}); ${report.sitePages.kept.length} kept as they were${report.sitePages.kept.length ? ` (${report.sitePages.kept.map((k) => `${k.path}: ${k.why}`).join('; ')})` : ''}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
-  return { sitemaps, imageSitemaps: pictured.length ? [IMAGE_SITEMAP] : [], llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
+  return { sitemaps, imageSitemaps: pictured.length ? [IMAGE_SITEMAP] : [], llms, llmsHubs, report: full, blog: blogOut, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }

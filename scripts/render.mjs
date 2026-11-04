@@ -25,6 +25,7 @@ import { appArticleOutline } from './lib/appArticleHtml.mjs';
 import { readCompareData, readStockData, writeStockSite, gaTag } from './lib/stocksBuild.mjs';
 import { ORG } from './lib/stocks.mjs';
 import { aboutLlmsLines } from './lib/about.mjs';
+import { loadBlogReports } from './lib/blogPost.mjs';
 
 const APP_ID = process.env.BLOG_BACKEND_APP_ID || '6a355b47f3a30ef43e79834e';
 const API_BASE = process.env.BASE44_API_BASE || 'https://app.base44.com';
@@ -639,6 +640,15 @@ function renderSitemap(entries) {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
 }
 
+// B115 round 4: the posts' sitemap when the posts are full reports (the old addresses that point to them are not listed)
+function renderBlogSitemap(posts, entries) {
+  const items = [...posts.map((p) => ({ loc: p.url, lastmod: p.day })), ...entries.map(({ post }) => ({ loc: `${SITE}/${post.slug}/`, lastmod: lastModified(post) }))];
+  const newest = items.map((i) => i.lastmod).filter(Boolean).sort().pop();
+  const urls = [`  <url>\n    <loc>${SITE}/</loc>${newest ? `\n    <lastmod>${newest}</lastmod>` : ''}\n  </url>`,
+    ...items.map((i) => `  <url>\n    <loc>${esc(i.loc)}</loc>${i.lastmod ? `\n    <lastmod>${i.lastmod}</lastmod>` : ''}\n  </url>`)];
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
+}
+
 // Search engines and the AI assistants' crawlers are all welcome (owner, B112): named one by one so a crawler that only
 // reads its own group still finds an Allow.
 const CRAWLERS = ['Googlebot', 'Bingbot', 'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Claude-SearchBot', 'Applebot',
@@ -654,12 +664,12 @@ function renderSitemapIndex(names, lastmod) {
 
 // llms.txt (B110 SEO, 2026-10-23: it was 440 KB, every page): the languages first, the articles, the hubs that list every
 // company page, and the address of llms-full.txt, which keeps the full list (every stock page with its description).
-function renderLlms(entries, stockPages = [], hubs = []) {
-  const lines = entries.map(({ post }) => {
+function renderLlms(entries, stockPages = [], hubs = [], blogPosts = []) {
+  const lines = [...blogPosts.map((p) => `- [${p.h1}](${p.url}): ${p.description}`), ...entries.map(({ post }) => {
     const title = str(post.title) || str(post.seo_title);
     const excerpt = str(post.excerpt) || str(post.seo_description);
     return `- [${title}](${SITE}/${post.slug}/)${excerpt ? `: ${excerpt}` : ''}`;
-  });
+  })];
   const byUrl = (p) => hubs.find((h) => h.url === `${SITE}${p}`);
   const langs = [`- English: [All stocks](${SITE}/stocks/)`];
   for (const l of LANG_HUBS) {
@@ -691,6 +701,11 @@ async function main() {
 
   posts.sort((a, b) => (toDate(b.published_at)?.getTime() || 0) - (toDate(a.published_at)?.getTime() || 0));
 
+  // B115 round 4 (owner 2026-11-04): each blog post is one company's full report (data/blog/); a published post of a company that has one
+  // is drawn as a pointer to it by the stock build (not fetched here). STOCK_PAGE_V2=off draws today's posts.
+  const blogReports = process.env.STOCK_PAGE_V2 === 'off' ? [] : loadBlogReports();
+  const reportTickers = new Set(blogReports.map((r) => str(r.ticker).toUpperCase()));
+  const replacedPosts = [];
   const entries = [];
   const seen = new Set();
   for (const post of posts) {
@@ -707,6 +722,11 @@ async function main() {
       warn(`skipping post ${post.id} (${slug}): no title`);
       continue;
     }
+    if (reportTickers.has(str(post.ticker).toUpperCase())) {
+      seen.add(slug.toLowerCase());
+      replacedPosts.push({ ...post, slug });
+      continue;
+    }
     try {
       const markdown = await fetchBodyMarkdown(post);
       const hub = await fetchHubPayload({ ...post, slug });
@@ -717,7 +737,7 @@ async function main() {
       warn(`skipping post ${post.id} (${slug}): ${err.message}`);
     }
   }
-  if (!entries.length) throw new Error('every published post failed to render; refusing to publish an empty site');
+  if (!entries.length && !blogReports.length) throw new Error('every published post failed to render; refusing to publish an empty site');
 
   await rm(OUT, { recursive: true, force: true });
   await mkdir(OUT, { recursive: true });
@@ -746,9 +766,12 @@ async function main() {
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
-  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT), extraImages, covers });
-  await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
-  const postsXml = renderSitemap(entries);
+  const blog = blogReports.length ? { reports: blogReports, posts: [...replacedPosts, ...entries.map((e) => e.post)] } : null;
+  const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT), extraImages, covers, blog });
+  if (blog && !stocks.blog) throw new Error('the blog\'s full reports were not drawn; refusing to publish without the posts they replace');
+  // the blog home: the full reports' list (stocks.blog.home, written by the stock build), else today's home
+  if (!stocks.blog) await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
+  const postsXml = stocks.blog ? renderBlogSitemap(stocks.blog.posts, entries) : renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
   const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps), ...stocks.imageSitemaps];
   const newest = [...parseSitemap(postsXml), ...stocks.entries].map((e) => e.lastmod).filter(Boolean).sort().pop() || '';
@@ -758,7 +781,7 @@ async function main() {
   await writeFile(path.join(OUT, KEY_FILE), INDEXNOW_KEY);
   await writeFile(path.join(OUT, STATE_FILE), `${JSON.stringify(buildState([...parseSitemap(postsXml), ...stocks.entries]), null, 2)}\n`);
   await writeFile(path.join(OUT, 'robots.txt'), renderRobots());
-  const llms = renderLlms(entries, stocks.llms, stocks.llmsHubs || []);
+  const llms = renderLlms(entries, stocks.llms, stocks.llmsHubs || [], stocks.blog ? stocks.blog.posts : []);
   await writeFile(path.join(OUT, 'llms.txt'), llms.short);
   await writeFile(path.join(OUT, 'llms-full.txt'), llms.full);
   await writeFile(path.join(OUT, '.nojekyll'), '');
@@ -766,7 +789,7 @@ async function main() {
   const cname = path.join(ROOT, 'CNAME');
   if (existsSync(cname)) await copyFile(cname, path.join(OUT, 'CNAME'));
   else warn('CNAME not found at repo root; custom domain will not be set');
-  console.log(`Done: ${entries.length} post page(s) + index, sitemap, robots, llms.txt, IndexNow key + state in ${OUT}`);
+  console.log(`Done: ${entries.length}${stocks.blog ? ` + ${stocks.blog.posts.length} full-report` : ''} post page(s)${stocks.blog ? ` + ${stocks.blog.redirects.length} moved address(es)` : ''} + index, sitemap, robots, llms.txt, IndexNow key + state in ${OUT}`);
 }
 
 main().catch((err) => {

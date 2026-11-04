@@ -20,6 +20,7 @@ import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as d
 import { PAGE_CSS_PATH, PAGE_JS_PATH, WORDS as PAGE_WORDS, firstPage, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, reportViewer, stripHtml } from './stockPage.mjs';
 import { renderCompareIndexBody, renderWeekBody, renderWeekBodyDe } from './hubPages.mjs';
 import { SITE_PAGES, renderMdFrame, renderSitePage, sitePageProblem } from './sitePages.mjs';
+import { renderBlogHome, renderBlogPost, renderRedirect } from './blogPost.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -2388,7 +2389,7 @@ function featuredViewer(c, F) {
 }
 
 // earningsDates: the checked list (stocksBuild.readEarningsDates); none = no date in any English earnings title.
-export function buildStockSite(companies, { today = new Date(), compares = [], earningsDates = {}, pictures = false } = {}) {
+export function buildStockSite(companies, { today = new Date(), compares = [], earningsDates = {}, pictures = false, blog = null } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
   const bySlug = new Map(usable.map((c) => [c.slug, c]));
   const slugOf = (t) => String(t || '').trim().toLowerCase().replace(/\./g, '-').replace(/[^a-z0-9-]/g, '-');
@@ -2675,6 +2676,35 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     b.inLinks = n;
     if (n < 3) orphans.push({ path: b.path, inLinks: n });
   }
+  // B115 round 4: THE BLOG (owner 2026-11-04 'Yes'): each post is one company's full report (data/blog/, blogPost.mjs); the blog home lists
+  // them; an older post of a company with a report post points to it. Only when the build is given the blog (render.mjs) and V2 is on.
+  let blogOut = null;
+  if (blog && v2On() && (blog.reports || []).length) {
+    const byTk = new Map(usable.map((c) => [String(c.ticker).toUpperCase(), c]));
+    const blogPaths = new Set(['/', ...blog.reports.map((r) => `/${r.slug}/`), ...(blog.posts || []).map((p) => `/${p.slug}/`)]);
+    const bexists = (p) => livePaths.has(p) || ALT_PATHS.has(p) || DIVCALC_PATHS.has(p) || blogPaths.has(p);
+    const results = hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '';
+    const strip = stripHtml('en', stripOf(ctx, 'en'), '/stocks/');
+    const image = { '@type': 'ImageObject', url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height };
+    const posts = blog.reports.map((rec) => {
+      const company = byTk.get(String(rec.ticker).toUpperCase()) || null;
+      const sameRun = !!company && company.run_id === rec.run_id && company.memo_date === rec.memo_date;
+      return { ...renderBlogPost({ rec, company, sameRun, shell, strip, results, exists: bexists, pagePath, bySlug, SITE, ORG, AUTHOR, image }), sameRun };
+    });
+    const reportOf = new Map(posts.map((p) => [p.ticker.toUpperCase(), p]));
+    const redirects = [];
+    const others = [];
+    for (const old of blog.posts || []) {
+      const to = reportOf.get(String(old.ticker || '').trim().toUpperCase());
+      if (to) { if (old.slug !== to.slug) redirects.push(renderRedirect(old.slug, to.path, SITE)); }
+      else others.push({ other: true, title: String(old.title || old.seo_title || '').trim(), path: `/${old.slug}/`, day: isoDay(old.published_at) });
+    }
+    const langLinks = [{ path: '/de/aktien/', hreflang: 'de' }, { path: '/fr/stocks/', hreflang: 'fr' }].map((l) => ({ ...l, title: (hubs.find((h) => h.path === l.path) || {}).title })).filter((l) => l.title);
+    const homes = [['de', '/de/'], ['fr', '/fr/']].filter(([, p]) => hubs.some((h) => h.path === p));
+    const alternates = homes.length ? [{ hreflang: 'en', url: `${SITE}/` }, ...homes.map(([l, p]) => ({ hreflang: l, url: `${SITE}${p}` })), { hreflang: 'x-default', url: `${SITE}/` }] : [];
+    const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates });
+    blogOut = { posts, home, redirects, replaced: (blog.posts || []).filter((p) => reportOf.has(String(p.ticker || '').trim().toUpperCase())).map((p) => p.slug) };
+  }
   const report = {
     companies: usable.length,
     pages: pass.length,
@@ -2693,5 +2723,5 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     sitePages,
     divcalc: { ...divcalc.report, embedded: Object.fromEntries(['en', ...LANGS].map((l) => [l, pass.filter((b) => b.type === 'dividend' && (b.lang || 'en') === l && b.html.includes('<section class="dce" id="dce">')).length])) },
   };
-  return { pages: pass, hubs, held, report, compares: compared, divcalc: divcalc.data };
+  return { pages: pass, hubs, held, report, compares: compared, divcalc: divcalc.data, blog: blogOut };
 }
