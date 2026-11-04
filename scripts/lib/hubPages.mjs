@@ -361,3 +361,208 @@ q.addEventListener('input',function(){var v=q.value.trim().toLowerCase();var sho
 document.querySelectorAll('.pgroups>div').forEach(function(g){g.hidden=v&&!g.querySelector('[data-pair]:not([hidden])');});if(none)none.style.display=shown?'none':'block';});})();</script>`;
   return { main, featured: fc.ticker };
 }
+
+// ---------------------------------------------------------------------------------------------------------------------------
+// THE GERMAN RESULTS CALENDAR (/de/aktien/quartalszahlen-heute/; mockup ~/b115-cats/hubs/de-quartalszahlen.html, the operator
+// 2026-11-04): the English calendar's design for the companies with a German page. Order inside a day: the DAX first, then the
+// last quarter's revenue in US$, largest first, then the others by name. THE FEATURED REPORT (rule): of the days still to come, the
+// DAX company whose German earnings page carries a guidance paragraph (largest revenue first), else the largest US$ one. Every
+// German word with its English meaning in a comment. q: { companies, today, shortName, exists, pagePath }.
+// ---------------------------------------------------------------------------------------------------------------------------
+const MON_DE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+const MON_DE3 = ['Jan.', 'Feb.', 'März', 'Apr.', 'Mai', 'Juni', 'Juli', 'Aug.', 'Sept.', 'Okt.', 'Nov.', 'Dez.'];
+const DAY_DE = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+const DAY_DE2 = ['So.', 'Mo.', 'Di.', 'Mi.', 'Do.', 'Fr.', 'Sa.'];
+const dayDe = (d) => `${dt(d).getUTCDate()}. ${MON_DE[dt(d).getUTCMonth()]}`;                     // 4. November
+const longDayDe = (d) => `${DAY_DE[dt(d).getUTCDay()]}, ${dayDe(d)}`;                              // Mittwoch, 4. November
+const fullDayDe = (d) => `${dayDe(d)} ${d.slice(0, 4)}`;                                           // 4. November 2026
+const abbrDayDe = (d) => `${dt(d).getUTCDate()}. ${MON_DE3[dt(d).getUTCMonth()]} ${d.slice(0, 4)}`; // 24. Okt. 2026
+const shortDayDe = (d) => `${DAY_DE2[dt(d).getUTCDay()]}, ${dt(d).getUTCDate()}. ${MON_DE3[dt(d).getUTCMonth()]}`; // Mi., 4. Nov.
+const memoDe = (d) => `${dt(d).getUTCDate()}. ${MON_DE3[dt(d).getUTCMonth()]}`;                    // 23. Okt.
+const numDe = (v, dec) => v.toLocaleString('de-DE', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+const CUR_DE = { 'US$': 'US$', '€': '€', EUR: '€', 'C$': 'C$', '£': '£', GBP: '£', 'HK$': 'HK$', RMB: 'RMB', 'NT$': 'NT$' };
+const moneyDe = (v, sign) => (v >= 1e9 ? `${numDe(v / 1e9, 1)}${NB}Mrd.${NB}${sign}` : `${numDe(Math.round(v / 1e6), 0)}${NB}Mio.${NB}${sign}`);   // 105,4 Mrd. US$ ("billion"), 892 Mio. US$ ("million")
+function resultsLineDe(r) {
+  if (!r || !r.revN || !r.period) return '';
+  const sign = CUR_DE[signOf(r.unit)];
+  const m = /^([A-Z][a-z]{2}) (\d{4})$/.exec(r.period);
+  if (!sign || !m) return '';
+  let s = `Quartal bis ${MON_DE[MON3.indexOf(m[1])]} ${m[2]}: Umsatz ${moneyDe(r.revN, sign)}`;                         // "Quarter to <month>: revenue"
+  if (r.yoy !== undefined) s += ` (${r.yoy >= 0 ? '+' : '−'}${Math.abs(r.yoy)}${NB}% ggü. Vorjahresquartal)`;      // "on the same quarter a year earlier"
+  const e = num(r.eps);
+  if (e !== null && !/pence|cents/.test(r.unit)) s += `, Ergebnis je Aktie ${e < 0 ? '−' : ''}${numDe(Math.abs(e), (String(r.eps).split('.')[1] || '').length)}${NB}${sign}`;   // "earnings per share"
+  return s;
+}
+export function renderWeekBodyDe(q) {
+  const today = q.today;
+  const wd = dt(today).getUTCDay();
+  const monday = addDays(today, wd === 0 ? 1 : wd === 6 ? 2 : 1 - wd);
+  const week = Array.from({ length: 7 }, (_, i) => addDays(monday, i));
+  const de = (c) => c.translations?.de?.pages || {};
+  const rowOf = (c) => {
+    const ePath = q.pagePath(c.slug, 'earnings', 'de'), sPath = q.pagePath(c.slug, 'stock', 'de');
+    // German sentences: a period after a digit is a date ('5. November'), not a sentence end
+    const watch = String(de(c).earnings?.opening || '').split(/(?<=[^\d\s][.!?])\s+(?=[A-ZÄÖÜ„"])/)[1] || '';
+    return { c, name: q.shortName(c), r: resultsOf(c), watch, dax: c.index === 'dax40', hasE: !!de(c).earnings && q.exists(ePath), hasS: q.exists(sPath), ePath, sPath };
+  };
+  const order = (a, b) => {
+    if (a.dax !== b.dax) return a.dax ? -1 : 1;
+    const ua = a.r?.revN && signOf(a.r.unit) === 'US$', ub = b.r?.revN && signOf(b.r.unit) === 'US$';
+    if (!a.dax && ua !== ub) return ua ? -1 : 1;
+    if (a.r?.revN && b.r?.revN && a.r.revN !== b.r.revN && (a.dax || ua)) return b.r.revN - a.r.revN;
+    return a.name.localeCompare(b.name, 'de');
+  };
+  const lists = Object.fromEntries(week.map((d) => [d, q.companies.filter((c) => iso(c.next_earnings) === d).map(rowOf).filter((x) => x.hasE || x.hasS).sort(order)]));
+  const days = week.filter((d) => lists[d].length);
+  const upcoming = days.filter((d) => d >= today);
+  const earlier = days.filter((d) => d < today);
+  if (!upcoming.length) return null;
+  const total = days.reduce((n, d) => n + lists[d].length, 0);
+  const pool = upcoming.flatMap((d) => lists[d].map((x) => ({ ...x, day: d })));
+  // the German guidance block: the English page's guidance block (our producer's table title), at the same place on the German page
+  const guidanceDe = (c) => {
+    const en = c.pages?.earnings?.blocks || [], tr = de(c).earnings?.blocks || [];
+    const i = en.findIndex((b) => /^(?:Targets and )?[Gg]uidance in force$/.test(String(b.table?.title || '')));
+    return i >= 0 && tr.length === en.length && (tr[i].paragraphs || []).length ? tr[i] : null;
+  };
+  const eightDe = (c) => {
+    const en = c.pages?.earnings?.blocks || [], tr = de(c).earnings?.blocks || [];
+    const i = en.findIndex((b) => /^(?:The )?[Ll]ast eight (?:quarters|reported periods)$/.test(String(b.table?.title || '')));
+    return i >= 0 && tr.length === en.length && (tr[i].paragraphs || []).length ? tr[i] : null;
+  };
+  const cand = pool.filter((x) => x.hasE && guidanceDe(x.c) && x.c.translations?.de?.teaser?.text);
+  const feat = cand.filter((x) => x.dax).sort(order)[0] || cand.filter((x) => x.r?.revN && signOf(x.r.unit) === 'US$').sort(order)[0];
+  if (!feat) return null;
+  const fc = feat.c, W = WORDS.de, g = guidanceDe(fc), eight = eightDe(fc), chDe = fc.translations.de.chapters || [];
+  const memo = iso(fc.memo_date), k = fc.counts || {};
+  const free = ageDays(fc, today) < FREE_DAYS;
+  const cta = `${APP}/signup?ticker=${encodeURIComponent(fc.ticker)}&lang=de&src=seo-week-de`;
+  const len = String(fc.ticker).length;
+  const frame = `<aside class="inside inside--peek" aria-labelledby="inside-h">
+<h2 id="inside-h">${esc(`${feat.name} berichtet am ${DAY_DE[dt(feat.day).getUTCDay()]}: worauf der Bericht achtet`)}</h2>
+<p class="inside__sub">${esc(`Bericht vom ${fullDayDe(memo)} · ohne Konto lesbar`)}</p>
+<div class="mframe"><div class="mframe__pg" data-src="report"><div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(fc.ticker)}</span><span class="mf-name${len > 3 ? ' w4' : ''}">${esc(feat.name)}</span><span class="mf-upd">${esc(W.updated(abbrDayDe(memo)))}</span><svg class="mf-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg></div>
+<section class="mframe__sec" lang="de"><h3 class="mf-h2">${esc(g.heading || '')}</h3><p>${esc(g.paragraphs[0].text)}</p></section></div>
+<button type="button" class="mframe__open" data-open-viewer aria-label="${esc(W.openAria(feat.name))}"></button>
+<button type="button" class="mframe__exp" data-open-viewer aria-label="${esc(W.expandAria(feat.name))}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>${esc(W.expand)}</button></div>
+<button class="textlink textlink--l" type="button" data-open-viewer data-resume="1">Den Bericht weiterlesen ▸</button>
+</aside>`;                                                                                                       // "Keep reading the report"
+  const groups = [{ h: chDe[1] || chDe[0] || '', ps: [fc.translations.de.teaser.text] }, { h: g.heading, ps: g.paragraphs.map((x) => x.text) }, ...(eight ? [{ h: eight.heading, ps: eight.paragraphs.map((x) => x.text) }] : [])];
+  const parts = [];
+  const vhtml = groups.filter((x) => x.ps.length).map((x, i) => { const id = `fx-${i}`; parts.push({ id, label: x.h }); return `<h3 id="${id}">${esc(x.h)}</h3>${x.ps.map((p) => `<p>${esc(p)}</p>`).join('')}`; }).join('\n');
+  const chapters = chDe.filter((x) => /^\d+\./.test(String(x)));
+  const viewer = reportViewer({ W, fp: { full: false, title: 'Auszüge aus dem Bericht', chapter: 'Auszüge aus dem Bericht', html: vhtml, parts, peekH: '', peekP: '' }, chapters, allChapters: chDe, company: feat.name,   // "Excerpts from the report"
+    memoDay: fullDayDe(memo), ticker: fc.ticker, exch: fc.exchange || '', fullName: fc.company || feat.name, memoIso: memo, shortMemo: abbrDayDe(memo), priceShort: abbrDayDe(iso(fc.price_date || memo)),
+    htmlLang: 'de', counts: k, words: numDe(k.words || 0, 0), num: (s) => s, isFree: free, cta, nCh: k.chapters || 8 });
+  const btn = free ? W.btnFree(feat.name) : W.btnOld(feat.name);
+  const range = (() => {
+    const a = days[0], b = days[days.length - 1];
+    return a === b ? fullDayDe(a) : a.slice(0, 7) === b.slice(0, 7) ? `${dt(a).getUTCDate()}. bis ${fullDayDe(b)}` : `${dayDe(a)} bis ${fullDayDe(b)}`;   // "2. to 6. November 2026"
+  })();
+  const href = (x) => (x.hasE ? x.ePath : x.sPath);
+  const chips = (lst) => `<div class="chips">${lst.map((x) => `<a href="${href(x)}">${esc(x.name)}<small>${esc(x.c.ticker)}</small></a>`).join('')}</div>`;
+  const row = (x) => {
+    const line = resultsLineDe(x.r);
+    const sFree = ageDays(x.c, today) < FREE_DAYS;
+    return `<li><div class="cal__h"><a class="cal__n" href="${href(x)}">${esc(x.name)}</a><span class="cal__t">${esc(x.c.ticker)}</span><span class="cal__x">erwartet</span></div>`   // "expected"
+      + `<p class="cal__r">${line ? `${esc(line)} ` : ''}<small class="cal__o">${line ? '· ' : ''}Bericht vom ${memoDe(iso(x.c.memo_date))}</small></p>`                               // "report of"
+      + (x.watch ? `<p class="cal__w">${esc(x.watch)}</p>` : '')
+      + `<p class="cal__ls"><a class="cal__l" data-cta="week-row" href="${APP}/signup?ticker=${encodeURIComponent(x.c.ticker)}&amp;lang=de&amp;src=seo-week-de">${sFree ? 'Bericht gratis lesen' : 'Bericht lesen'}</a>${x.hasE ? `<a class="cal__l cal__l2" href="${x.ePath}">Quartalszahlen-Seite →</a>` : ''}</p></li>`;   // "Read the report (free)", "Earnings page"
+  };
+  const shown = new Set();
+  const daySecs = upcoming.map((d, i) => {
+    const show = i === 0 ? 6 : 4, lst = lists[d];
+    lst.slice(0, show).forEach((x) => shown.add(x.c.slug));
+    return `<section class="sec" aria-labelledby="d${i}-h">
+<h2 id="d${i}-h">Welche Unternehmen legen am ${longDayDe(d)} Quartalszahlen vor?</h2>
+<p class="lead">${lst.length} ${lst.length === 1 ? 'Unternehmen mit deutschem Bericht erwartet' : 'Unternehmen mit deutschem Bericht erwarten'} am ${longDayDe(d)} ${d.slice(0, 4)} ${lst.length === 1 ? 'seine' : 'ihre'} Zahlen. DAX zuerst, dann die größten nach Umsatz des letzten Quartals in US-$, mit dem Test, den jeder Bericht nennt. Die Quartalszahlen sind die des Unternehmens, aus der Tabelle seines Berichts; die Veränderung zum Vorjahr ist darauf gerechnet.</p>
+<ul class="cal">${lst.slice(0, show).map(row).join('')}</ul>
+${lst.length > show ? `<details class="allco"><summary>Alle ${lst.length} Unternehmen am ${memoDe(d)}</summary>${chips(lst.slice(show))}</details>` : ''}
+</section>`;
+  }).join('\n');
+  // N companies with a German report expect results on <day>. DAX first, then the largest by last quarter's revenue in US$, with the test each report names. The quarterly figures are the company's own, from its report's table; the change on a year earlier is arithmetic on them.
+  const watch4 = pool.filter((x) => !shown.has(x.c.slug) && x.c.slug !== fc.slug && x.watch && x.hasE).sort(order).slice(0, 4);
+  const ch = (n) => String(chDe.find((x) => String(x).startsWith(`${n}.`)) || '').replace(/^\d+\.\s*/, '');
+  const bridgeDe = (n, text) => `<button type="button" class="bridge" data-open-viewer data-chapter="${n}">${LOCK}<span>${esc(text)}</span><b>Im vollständigen Bericht →</b></button>`;   // "In the full report"
+  const watchSec = watch4.length ? `<section class="sec" aria-labelledby="w-h">
+<h2 id="w-h">Worauf es bei den Zahlen dieser Woche ankommt</h2>
+<p class="lead">Jeder Bericht nennt den einen Test, den die nächsten Zahlen bestehen müssen. ${['', 'Ein weiterer', 'Zwei weitere', 'Drei weitere', 'Vier weitere'][watch4.length]} aus der Liste dieser Woche:</p>
+<div class="watch4">${watch4.map((x) => `<div><h3>${esc(x.name)} <small>Zahlen erwartet am ${esc(fullDayDe(x.day))}</small></h3><p>${esc(x.watch)}</p><a href="${x.ePath}">${esc(x.name)}: Quartalszahlen und Ausblick →</a></div>`).join('')}</div>
+${ch(7) ? bridgeDe(7, `Was ${feat.name} in Aussicht stellt und was die Prognose ändern würde: Kapitel 7, ${ch(7)}`) : ''}
+</section>` : '';
+  // "What matters in this week's results" · "Each report names the one test the next results must pass. Four more from this week's list:" · "results expected on" · "earnings and outlook" · "What X has guided and what would change the forecast: chapter 7"
+  const early = earlier.length ? `<section class="sec" id="frueher" aria-labelledby="e-h">
+<h2 id="e-h">Wer hat früher in dieser Woche berichtet?</h2>
+<p class="lead">${earlier.map((d) => `${lists[d].length} Unternehmen mit deutschem Bericht ${lists[d].length === 1 ? 'wurde' : 'wurden'} am ${longDayDe(d)} erwartet`).join(' und ')}. Ihre Berichte stammen aus der Zeit vor diesen Zahlen.</p>
+${earlier.map((d) => `<details class="allco"><summary>${longDayDe(d)}: ${lists[d].length} Unternehmen</summary>${chips(lists[d])}</details>`).join('\n')}
+</section>` : '';
+  // "Who reported earlier this week?" · "N companies with a German report were expected on <day>. Their reports date from before these results."
+  const nextWeek = Array.from({ length: 7 }, (_, i) => addDays(monday, 7 + i));
+  const nextRows = q.companies.filter((c) => nextWeek.includes(iso(c.next_earnings))).map(rowOf).filter((x) => x.hasE || x.hasS).sort((a, b) => iso(a.c.next_earnings).localeCompare(iso(b.c.next_earnings)) || order(a, b));
+  const daxWeek = upcoming.map((d) => [d, lists[d].filter((x) => x.dax)]).filter(([, l]) => l.length);
+  const join = (names) => (names.length > 1 ? `${names.slice(0, -1).join(', ')} und ${names[names.length - 1]}` : names[0] || '');
+  const usFirst = lists[upcoming[0]].filter((x) => !x.dax).slice(0, 3).map((x) => x.name);
+  const faq = `<section class="sec qa" aria-labelledby="faq-h">
+<h2 id="faq-h">Fragen zu den Quartalszahlen dieser Woche</h2>
+<div class="qa__grid">
+${daxWeek.length ? `<div class="qa__i"><h3>Welche DAX-Unternehmen legen diese Woche Zahlen vor?</h3><p>${daxWeek.map(([d, l]) => `${join(l.map((x) => x.name))} am ${longDayDe(d)}`).join('; ')}.${usFirst.length ? ` Von den US-Unternehmen ${usFirst.length === 1 ? 'berichtet' : 'berichten'} ${join(usFirst)} am ${DAY_DE[dt(upcoming[0]).getUTCDay()]}.` : ''}</p></div>` : ''}
+<div class="qa__i"><h3>Steht der Termin fest?</h3><p>Jeder Termin hier ist erwartet, so wie ihn der Bericht des Unternehmens vermerkt. Ein Unternehmen kann ihn verschieben: bitte auf seiner Investor-Relations-Seite bestätigen. Unternehmen nicht dabei? Die App schreibt einen Bericht über jedes Unternehmen.</p></div>
+<div class="qa__i"><h3>Was zeigen die Zahlen neben jedem Unternehmen?</h3><p>Das letzte Quartal aus der Tabelle seines Berichts: den Umsatz, die Veränderung zum Vorjahresquartal (gerechnet auf den eigenen Zahlen des Unternehmens) und das Ergebnis je Aktie.</p></div>
+<div class="qa__i"><h3>Wer legt nächste Woche Zahlen vor?</h3><p>${nextRows.length} Unternehmen mit deutschem Bericht erwarten ihre Zahlen vom ${dt(nextWeek[0]).getUTCDate()}.${nextWeek[0].slice(5, 7) === nextWeek[6].slice(5, 7) ? '' : ` ${MON_DE[dt(nextWeek[0]).getUTCMonth()]}`} bis ${fullDayDe(nextWeek[6])}. Diese Seite wird mit der Website neu erstellt; am Samstag wechselt sie zur nächsten Woche.</p></div>
+</div>
+${nextRows.length ? `<details class="allco"><summary>Nächste Woche: ${nextRows.length} Unternehmen</summary>${chips(nextRows)}</details>` : ''}
+${ch(5) ? bridgeDe(5, `Umsatz, Gewinn und Cashflow von ${feat.name} über fünf Jahre: Kapitel 5, ${ch(5)}`) : ''}
+</section>`;
+  // "Questions about this week's results": "Which DAX companies report this week?" · "Is the date confirmed?" (every date is expected, as recorded in the company's report; a company can move it: confirm on its IR page; company missing? the app writes a report on any company) · "What do the numbers beside each company show?" · "Who reports next week?" (N companies …; this page is rebuilt with the site; on Saturday it moves to the next week) · "Next week: N companies" · "X's revenue, profit and cash flow over five years: chapter 5"
+  const linkIf = (p, t, extra = '') => (q.exists(p) ? `<a href="${p}"${extra}>${esc(t)}</a>` : '');
+  const links = `<section class="sec links" aria-labelledby="more-h">
+<h2 id="more-h">Mehr Quartalszahlen</h2>
+<div class="links__grid">
+<div><h3>Diese Woche</h3><div class="chips">${[feat, ...pool.filter((x) => x.c.slug !== fc.slug && x.hasE)].slice(0, 4).map((x) => linkIf(x.ePath, `${x.name}: Quartalszahlen`)).join('')}</div></div>
+<div><h3>Listen</h3><div class="chips">${linkIf('/de/aktien/', 'Alle Aktien')}${linkIf('/stocks/reporting-this-week/', 'Earnings this week (English)', ' hreflang="en"')}</div></div>
+<div><h3>Vor den Zahlen</h3><div class="chips">${linkIf(feat.sPath, `${feat.name} Aktie Prognose`)}<a href="/methodology/" hreflang="en">Wie ein Bericht entsteht</a></div></div>
+</div>
+</section>`;
+  // "More results pages": "This week" · "Lists" (all stocks) · "Before the results" (X stock forecast, how a report is made)
+  const closeChips = pool.filter((x) => x.c.slug !== fc.slug).sort(order).slice(0, 6);
+  const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
+<h2 id="close-h">Diese Seite nennt die Termine. Ein Bericht nennt die Gründe.</h2>
+<p>Jedes Unternehmen hier hat einen vollständigen Bericht: eine Zusammenfassung und 8 Kapitel über das Geschäft, den Markt, die Zahlen und wohin der Kurs gehen könnte. Der über ${esc(feat.name)} hat ${numDe(k.words || 0, 0)} Wörter.</p>
+<p>Wie er entsteht: Die KI liest die Unterlagen des Unternehmens, schreibt den Bericht, prüft die Zahlen und nennt jede Quelle, ${k.sources || 0} bei ${esc(feat.name)}. <a href="/methodology/" hreflang="en">Die Methode</a></p>
+<a class="btn btn--mint btn--lg" id="closebtn" data-cta="close" href="${esc(cta)}">${esc(free ? `Bericht über ${feat.name} gratis lesen` : `Bericht über ${feat.name} lesen`)}</a>
+${free ? `<p class="free">${esc(W.free)}</p>` : ''}
+<div class="chips close__chips">${closeChips.map((x) => `<a data-cta="close-chip" href="${APP}/signup?ticker=${encodeURIComponent(x.c.ticker)}&amp;lang=de&amp;src=seo-week-de">${esc(x.name)} <small>${esc(x.c.ticker)}</small></a>`).join('')}</div>
+<p class="foot">Allgemeine Information, keine Anlageberatung. Termine sind erwartet, wie im Bericht des Unternehmens vermerkt; bitte auf seiner Investor-Relations-Seite bestätigen.</p>
+</div></section>`;
+  // "This page gives the dates. A report gives the reasons." · "Each company here has a full report: a summary and 8 chapters …; X's runs to N words." · "How it is made: AI reads the company's documents, writes the report, checks the numbers and cites each source, N for X. The method" · "Read X's report (free)" · "General information, not investment advice. Dates are expected, as recorded in the company's report; confirm on its investor-relations page."
+  const main = `<main class="page" id="top">
+<section class="top">
+<nav class="crumb" aria-label="Brotkrumen"><a href="/de/aktien/">Aktien</a><span aria-hidden="true">›</span>Quartalszahlen diese Woche</nav>
+<h1>Quartalszahlen diese Woche: wer vom ${esc(range)} berichtet</h1>
+<p class="byline">Von <a href="/de/ueber-uns/">Olivier Lachance</a> · Daten vom ${esc(fullDayDe(today))}<a class="plain byline__how" href="/methodology/" hreflang="en">Wie ein Bericht entsteht</a></p>
+</section><section class="answer ansD" aria-labelledby="ans-h">
+<h2 class="sr" id="ans-h">Welche Unternehmen legen diese Woche Quartalszahlen vor?</h2>
+<p class="answer__label">Wer diese Woche berichtet</p>
+<div class="days">${upcoming.slice(0, 3).map((d) => `<p><span class="day__n">${lists[d].length}</span><span class="day__d">${shortDayDe(d)}</span><span class="day__w">${esc(lists[d].slice(0, 3).map((x) => x.name).join(', '))}</span></p>`).join('')}</div>
+<p class="days__more">${total} Unternehmen mit deutschem MyStockButler-Bericht diese Woche; DAX zuerst, dann nach Umsatz des letzten Quartals in US-$. Termine wie im Bericht des Unternehmens vermerkt („erwartet“); bitte auf seiner Investor-Relations-Seite bestätigen.${upcoming.length > 3 ? ` ${upcoming.slice(3).map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${upcoming.slice(3).reduce((n, d) => n + lists[d].length, 0)} weitere, unten.` : ''}${earlier.length ? ` ${earlier.map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${earlier.reduce((n, d) => n + lists[d].length, 0)} weitere, <a href="#frueher">unten aufgeführt</a>.` : ''}</p>
+<div class="d-us"><p class="vs__k">Bericht der Woche</p><p class="vs__t"><b>${esc(feat.name)}</b>, erwartet am ${esc(longDayDe(feat.day))}.${feat.watch ? ` Der Bericht nennt den Test: „${esc(feat.watch)}“` : ''}</p></div>
+</section><section class="cta1" id="cta1" aria-label="Den Bericht lesen">
+<div class="cta1__row"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" href="${esc(cta)}">${esc(btn)}</a><button class="textlink" type="button" data-open-viewer>Oder erst ansehen, ohne Konto ▸</button></div>
+${free ? `<p class="free">${esc(W.free)}</p>` : ''}
+<p class="free free--2">Bericht vom ${esc(fullDayDe(memo))} · Zusammenfassung + ${k.chapters || 8} Kapitel · ${numDe(k.words || 0, 0)} Wörter · ${k.sources || 0} Quellen</p>
+</section>${frame}
+${daySecs}
+${watchSec}
+${early}
+${faq}
+${links}
+${close}
+</main>
+<div class="bar" id="bar" aria-hidden="true"><span>${esc(`Bericht über ${feat.name}`)}<small>${esc(free ? 'Neues Konto: ein fertiger Bericht gratis' : `Bericht vom ${fullDayDe(memo)}`)}</small></span><a class="btn btn--sm" data-cta="bar" tabindex="-1" href="${esc(cta)}">Lesen</a></div>
+${viewer}`;
+  // the first screen: "Earnings this week: who reports from … to …" · "By … · data of …" · "Who reports this week" · "N companies with a German report this week; DAX first, then by last quarter's revenue in US$. Dates as recorded in each company's report ("expected"); confirm on its IR page. Monday and Tuesday: N more, listed below." · "Report of the week: X, expected on <day>. Its report names the test: …" · "Or look first, no account" · "Report of … · summary + 8 chapters · N words · N sources" · the bar: "X's report · New account: one ready report free · Read"
+  const names = [...new Set(upcoming.flatMap((d) => lists[d].slice(0, 3).map((x) => x.name)))].slice(0, 5);
+  return { main, title: `Quartalszahlen diese Woche: ${range}`, description: `${total} Unternehmen mit deutschem MyStockButler-Bericht erwarten vom ${range} ihre Zahlen: ${names.join(', ')}. Mit dem letzten Quartal und dem Test, den jeder Bericht nennt.`,
+    h1: `Quartalszahlen diese Woche: wer vom ${range} berichtet`, featured: fc.ticker };
+  // title: "Results this week: <range>"; description: "N companies with a German MyStockButler report expect their results from <range>: … With the last quarter and the test each report names."
+}

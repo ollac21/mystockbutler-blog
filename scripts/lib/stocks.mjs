@@ -18,7 +18,7 @@ import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox,
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, loadAbout, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 import { PAGE_CSS_PATH, PAGE_JS_PATH, WORDS as PAGE_WORDS, firstPage, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, reportViewer, stripHtml } from './stockPage.mjs';
-import { renderCompareIndexBody, renderWeekBody } from './hubPages.mjs';
+import { renderCompareIndexBody, renderWeekBody, renderWeekBodyDe } from './hubPages.mjs';
 import { SITE_PAGES, renderMdFrame, renderSitePage, sitePageProblem } from './sitePages.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
@@ -2604,6 +2604,34 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         crumbs: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Reporting this week', path: '/stocks/reporting-this-week/' }] });
       sitePages.drawn.push(week.path);
     } else if (week) sitePages.kept.push({ path: week.path, why: 'no company with a guidance paragraph reports in the days left this week' });
+    // the German results calendar (a new page, the operator 2026-11-04): drawn when a company with a German page reports in the days
+    // left this week; hreflang both ways with the English calendar; the German stock hub links it
+    const DE_WEEK = '/de/aktien/quartalszahlen-heute/';
+    const wde = wb && LIVE_LANGS.has('de') && hubPaths.has('/de/aktien/') ? renderWeekBodyDe({ companies: live, today: ctx.today, shortName, pagePath, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) }) : null;
+    if (wde && !hubPaths.has(DE_WEEK) && !exists0.has(DE_WEEK)) {
+      const alternates = [{ hreflang: 'en', url: `${SITE}${week.path}` }, { hreflang: 'de', url: `${SITE}${DE_WEEK}` }, { hreflang: 'x-default', url: `${SITE}${week.path}` }];
+      const page = { path: DE_WEEK, url: `${SITE}${DE_WEEK}`, type: 'hub', lang: 'de', lastmod: newest, alternates };
+      const cr = breadcrumbs([{ name: 'Aktien', path: '/de/aktien/' }, { name: 'Quartalszahlen diese Woche', path: DE_WEEK }]);   // "Stocks", "Results this week"
+      page.html = shell({ title: wde.title, description: wde.description, canonical: page.url, ogType: 'website', lang: 'de', alternates,
+        jsonld: { '@context': 'https://schema.org', '@graph': [cr.ld, { '@type': 'WebPage', name: wde.h1, description: wde.description, url: page.url, dateModified: ctx.today, inLanguage: 'de', author: AUTHOR, publisher: { '@id': ORG['@id'] }, isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
+        meta: { type: 'hub', ticker: '', cta: `${APP}/signup?ticker=${encodeURIComponent(wde.featured)}&lang=de&src=seo-week-de`, lang: 'de' },
+        v2: { css: '/stocks/assets/page-hubs.css', strip: stripHtml('de', stripOf(ctx, 'de'), '/de/aktien/'), results: '' }, body: wde.main });
+      page.title = wde.title;
+      page.description = wde.description;
+      page.outLinks = [...wde.main.matchAll(SITE_LINK)].map((m) => m[1]);
+      page.sitePage = 'week-de';
+      hubs.push(page);
+      hubPaths.add(DE_WEEK);
+      // the English calendar names its German twin, and the German stock hub links it (its links block)
+      week.alternates = alternates;
+      week.html = week.html.replace('<link rel="canonical"', `${alternates.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.url)}">`).join('\n')}\n<link rel="canonical"`);
+      const deHub = hubs.find((x) => x.path === '/de/aktien/');
+      if (deHub && /<section class="sec links"[^>]*>[\s\S]*?<div class="chips">/.test(deHub.html)) {
+        deHub.html = deHub.html.replace(/(<section class="sec links"[^>]*>[\s\S]*?<div class="chips">)/, `$1<a href="${DE_WEEK}">Quartalszahlen diese Woche</a>`);
+        deHub.outLinks = [...(deHub.outLinks || []), DE_WEEK];
+      }
+      sitePages.drawn.push(DE_WEEK);
+    }
   }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
