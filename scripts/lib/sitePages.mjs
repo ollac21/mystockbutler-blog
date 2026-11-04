@@ -123,7 +123,7 @@ function calcScript(rec, byTicker) {
   const shared = [DC.project, DC.fmtNum, DC.escH, DC.fillH, DC.fillT, DC.numH, DC.pctH, DC.moneyH, DC.dayText].map((f) => f.toString()).join('\n');
   const rows = Object.fromEntries(Object.keys(rec.calc.C.rows || {}).filter((t) => byTicker.get(t)).map((t) => [t, DC.entryOf(byTicker.get(t))]));
   const C = { ...rec.calc.C, rows };
-  return `<script>(function(){\n${shared}\n\nvar C = ${JSON.stringify(C).replace(/</g, '\\u003c')};${rec.calc.tail}</script>`;
+  return `<script>(function(){\n${shared}\n\nvar C = ${JSON.stringify(C).replace(/</g, '\\u003c')}${rec.calc.tail}</script>`;
 }
 
 // The calculator's dividend payers table: the approved page's companies, in its order and markup, each row from the calculator's own
