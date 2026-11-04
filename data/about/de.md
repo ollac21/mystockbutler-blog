@@ -5,6 +5,7 @@ meta_description: "MyStockButler schreibt ausführliche, quellengeprüfte Resear
 path: /de/ueber-uns/
 updated: 2026-10-30
 lang: de
+# owner 2026-11-04: „MyStockButler ist weder ein Broker noch ein Anlageberater.“ = "MyStockButler is not a broker or an investment adviser."
 org_description: "MyStockButler schreibt ausführliche, quellengeprüfte Research-Berichte zu einzelnen börsennotierten Unternehmen: acht Kapitel je Unternehmen, vom Geschäft bis zu drei Kursszenarien (pessimistisch, Basis und optimistisch), jede Zahl bis zu ihrer Quelle zurückverfolgt. Die Bibliothek deckt den S&P 500, den S&P/TSX 60, den FTSE 100 und den Hang Seng ab, dazu bisher einen Teil von DAX und CAC 40."
 org_disambiguation: "MyStockButler (mystockbutler.com) ist ein Dienst für Research-Berichte: ein schriftlicher Bericht zu jeweils einem börsennotierten Unternehmen, gelesen in der App app.mystockbutler.com. Es ist weder ein Kursalarm- noch ein Trading-Signal-Dienst, und die Berichte sind keine Anlageberatung: Sie sagen nie, ob Sie kaufen oder verkaufen sollen."
 ---
@@ -49,7 +50,7 @@ Preise in US-Dollar.
 
 ## Was MyStockButler nicht ist
 
-MyStockButler ist ein schriftlicher Bericht zu jeweils einem Unternehmen, kein Kursalarm- und kein Trading-Signal-Dienst. Unsere Berichte zeigen Fakten, Zahlen und Szenarien mit ihren Quellen. Sie sagen nie, ob Sie kaufen oder verkaufen sollen; die Entscheidung liegt bei Ihnen. Szenarien sind Szenarien, keine Vorhersagen. Nur zur Information, keine Anlageberatung: Prüfen Sie die zitierten Unterlagen vor jeder Anlageentscheidung.
+MyStockButler ist ein schriftlicher Bericht zu jeweils einem Unternehmen, kein Kursalarm- und kein Trading-Signal-Dienst. Unsere Berichte zeigen Fakten, Zahlen und Szenarien mit ihren Quellen. Sie sagen nie, ob Sie kaufen oder verkaufen sollen; die Entscheidung liegt bei Ihnen. MyStockButler ist weder ein Broker noch ein Anlageberater. Szenarien sind Szenarien, keine Vorhersagen. Nur zur Information, keine Anlageberatung: Prüfen Sie die zitierten Unterlagen vor jeder Anlageentscheidung.
 
 ## Echte Berichte ansehen
 

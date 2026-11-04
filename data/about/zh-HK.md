@@ -5,6 +5,7 @@ meta_description: "MyStockButler 為個別上市公司撰寫詳盡、經來源�
 path: /zh/about/
 updated: 2026-10-30
 lang: zh-HK
+# owner 2026-11-04: 「MyStockButler 並非經紀商，亦非投資顧問。」 = "MyStockButler is not a broker or an investment adviser."
 org_description: "MyStockButler 為個別上市公司撰寫詳盡、經來源核對的研究報告：每家公司八章，由業務一直到三個股價情境（悲觀、基本和樂觀），每個數字都可追溯至來源。報告庫涵蓋標普 500、S&P/TSX 60、富時 100 和恒生，以及目前部分 DAX 和 CAC 40 公司。"
 org_disambiguation: "MyStockButler（mystockbutler.com）是一項研究報告服務：每次就一家上市公司撰寫一份書面報告，在 app.mystockbutler.com 應用程式中閱讀。它不是股價提示或交易訊號服務，報告亦不是投資建議：從不建議買入或賣出。"
 ---
@@ -49,7 +50,7 @@ MyStockButler 背後的人是 Olivier Lachance（[LinkedIn](https://www.linkedin
 
 ## MyStockButler 不是甚麼
 
-MyStockButler 每次就一家公司撰寫一份書面報告，不是股價提示或交易訊號服務。我們的報告列出事實、數字和情境，並附上來源，從不建議買入或賣出；決定權在你。情境只是情境，不是預測。僅供參考，並非投資建議：作出任何投資決定前，請先查閱所引用的文件。
+MyStockButler 每次就一家公司撰寫一份書面報告，不是股價提示或交易訊號服務。我們的報告列出事實、數字和情境，並附上來源，從不建議買入或賣出；決定權在你。MyStockButler 並非經紀商，亦非投資顧問。情境只是情境，不是預測。僅供參考，並非投資建議：作出任何投資決定前，請先查閱所引用的文件。
 
 ## 看看真實的報告
 

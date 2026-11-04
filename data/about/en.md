@@ -49,7 +49,7 @@ Prices in US dollars.
 
 ## What MyStockButler is not
 
-MyStockButler is a written report on one company at a time, not a price-alert or trading-signal service. Our reports present facts, numbers and scenarios with their sources. They never tell you to buy or sell; the decision is yours. Scenarios are scenarios, not predictions. Information only, not investment advice: check the cited filings before making an investment decision.
+MyStockButler is a written report on one company at a time, not a price-alert or trading-signal service. Our reports present facts, numbers and scenarios with their sources. They never tell you to buy or sell; the decision is yours. MyStockButler is not a broker or an investment adviser. Scenarios are scenarios, not predictions. Information only, not investment advice: check the cited filings before making an investment decision.
 
 ## See real reports
 
