@@ -2573,7 +2573,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const exists = (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p);
       const links = h.alt ? [
         ...TYPES.map((t) => [t, pagePath(pick.slug, t, l)]).filter(([, p]) => exists(p)).map(([t, p]) => `<a href="${p}">${esc(UI[l].sibling(t, shortName(pick)))}</a>`),
-        ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT).map((o) => `<a href="${o.path}">${esc(o.title)}</a>`),
+        ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT).map((o) => `<a href="${o.path}">${esc(String(o.title).replace(/ \| MyStockButler$/, ""))}</a>`),   // round 5: a versus page's title without its site suffix
         l === 'en' ? `<a href="${ALT_ROOT}">${esc(ALT_WORDS.en)}</a>` : `<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`] : [`<a href="${home}">${esc(UI[l].allStocks)}</a>`];
       const draw = (page, picture) => {
         const out = renderMdFrame(g, { shell, SITE, ORG, exists, strip: stripHtml(l, stripOf(ctx, l), home), results: l === 'en' && exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
