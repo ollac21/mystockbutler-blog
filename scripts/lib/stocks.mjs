@@ -2699,7 +2699,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       if (to) { if (old.slug !== to.slug) redirects.push(renderRedirect(old.slug, to.path, SITE)); }
       else others.push({ other: true, title: String(old.title || old.seo_title || '').trim(), path: `/${old.slug}/`, day: isoDay(old.published_at) });
     }
-    const langLinks = [{ path: '/de/aktien/', hreflang: 'de' }, { path: '/fr/stocks/', hreflang: 'fr' }].map((l) => ({ ...l, title: (hubs.find((h) => h.path === l.path) || {}).title })).filter((l) => l.title);
+    const langLinks = [{ path: '/de/aktien/', hreflang: 'de', title: 'Auf Deutsch' }, { path: '/fr/stocks/', hreflang: 'fr', title: 'En français' }].filter((l) => hubs.some((h) => h.path === l.path));   // the footer's words
     const homes = [['de', '/de/'], ['fr', '/fr/']].filter(([, p]) => hubs.some((h) => h.path === p));
     const alternates = homes.length ? [{ hreflang: 'en', url: `${SITE}/` }, ...homes.map(([l, p]) => ({ hreflang: l, url: `${SITE}${p}` })), { hreflang: 'x-default', url: `${SITE}/` }] : [];
     const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates });

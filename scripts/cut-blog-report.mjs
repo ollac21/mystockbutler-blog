@@ -34,6 +34,8 @@ const out = {
   company: String(view.metadata?.legal_issuer || page.company || '').trim(), sections, sources,
 };
 const dest = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'data', 'blog', `${slug}.json`);
+// the owner's approved words for the report in four lines (approved_lines), when an earlier cut of the same address carries them, are kept
+try { const prev = JSON.parse(fs.readFileSync(dest, 'utf8')); if (prev.approved_lines) out.approved_lines = prev.approved_lines; } catch {}
 fs.mkdirSync(path.dirname(dest), { recursive: true });
 fs.writeFileSync(dest, `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${dest}: ${sections.length} chapters, ${sources.length} sources, ${Buffer.byteLength(JSON.stringify(out))} bytes`);

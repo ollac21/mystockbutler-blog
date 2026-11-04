@@ -231,3 +231,7 @@
   .hrow{grid-template-columns:minmax(0,5fr) minmax(0,4fr) auto;column-gap:40px;align-items:center;padding:22px 0}
   .hrow__go{justify-self:end}
 }
+
+/* the template's additions (round 4): a source whose title is a long address breaks inside it on a phone (no sideways scroll) */
+.br-srcs{padding-left:0;list-style:none}
+.br-srcs li{overflow-wrap:anywhere;margin:0 0 6px}

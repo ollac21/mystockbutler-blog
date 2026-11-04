@@ -11,7 +11,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { Marked } from 'marked';
 import { esc } from './layout.mjs';
-import { forecastOf, WORDS } from './stockPage.mjs';
+import { listForecast, WORDS } from './stockPage.mjs';
 import { headingId, newIdRegistry } from './toc.mjs';
 
 const APP = 'https://app.mystockbutler.com';
@@ -30,6 +30,8 @@ const SCALE = { thousands: 1e3, millions: 1e6, billions: 1e9 };
 const ARROW = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>';
 const SHARE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></svg>';
 const marked = new Marked({ gfm: true });
+// a name's possessive: McDonald’s full report, TSMC's full report
+const poss = (n) => (/[’']s$/.test(n) ? n : `${n}'s`);
 const textOf = (h) => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, '’').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
 
 // ---- the reports (data/blog/*.json)
@@ -138,6 +140,18 @@ function challengeLabels(md) {
   return [...part.matchAll(/^\s*[-*]\s+\*\*([^*]+?)[:.]?\*\*/gm)].map((m) => m[1].trim());
 }
 
+// The report's weighted forecast, shown only when it is consistent with the price of the same run: the list pages' rule (probabilities sum
+// to 100, the bear case not above the price, the weighted value between bear and bull) and, at every date, the return it prints is the
+// arithmetic of value against price plus at most 30 points of dividends (arithmetic). Otherwise left out.
+export function shownForecast(c) {
+  const start = c && Number(c.price) > 0 && okDay(iso(c.price_date)) ? { value: Number(c.price), day: iso(c.price_date) } : null;
+  const ok = start ? listForecast(c, start) : null;
+  if (!ok) return null;
+  const f = ok.f;
+  const bad = f.rows.Weighted.some((w) => { const ar = (w.v / start.value - 1) * 100; return w.r === null || w.r < ar - 1 || w.r > ar + 30; });
+  return bad ? null : f;
+}
+
 export function fourLines(rec, c) {
   const exec = (rec.sections || []).find((s) => s.id === 'executive-summary');
   const md = exec ? exec.markdown : '';
@@ -158,25 +172,30 @@ export function fourLines(rec, c) {
     const yearly = /^\d{4}$/.test(col);
     const period = yearly ? `${col} revenue` : `Revenue for the year to ${col.replace(/^Year to /, '')}`;
     if (v !== null && g !== null) {
-      rev = `${period} <b>${esc(money(v * u.mult, u.mark))}</b>, <b class="${g >= 0 ? 'up' : 'down'}">${g >= 0 ? 'up' : 'down'} ${esc(String(Math.abs(g)))}&nbsp;%</b>`;
+      const gRaw = String(rowOf(earn, 'Revenue growth')[1]).replace(/[%\s]/g, '').replace(/^[-−]/, '');   // the growth as the report prints it
+      rev = `${period} <b>${esc(money(v * u.mult, u.mark))}</b>, <b class="${g >= 0 ? 'up' : 'down'}">${g >= 0 ? 'up' : 'down'} ${esc(gRaw)}&nbsp;%</b>`;
       revPlain = yearly ? `${col} revenue of ${money(v * u.mult, u.mark)}` : `revenue of ${money(v * u.mult, u.mark)} for the year to ${col.replace(/^Year to /, '')}`;
     }
   }
-  if (what || rev) lines.push(['The business', [what ? esc(what) : '', rev].filter(Boolean).join(' ')]);
+  // the owner's approved words for a report, when its data file carries them (TSMC's mockup), else the report's own first sentence
+  const own = rec.approved_lines || {};
+  const lead = own.business ? String(own.business).trim() : what;
+  if (lead || rev) lines.push(['The business', [lead ? esc(lead) : '', rev].filter(Boolean).join(' ')]);
   // 2 what you pay: P/E on the last 12 months (the summary's 'The numbers' table), the price and its close date (the page file, same run)
   const nums = tables.find((t) => rowOf(t, 'Share price'));
   const pe = nums && rowOf(nums, 'P/E, last 12 months');
   const peV = pe ? numOf(pe[1]) : null;
   const cur = CUR[c?.currency] ?? '';
   if (peV !== null && peV > 0 && c?.price && okDay(iso(c.price_date))) {
-    lines.push(['What you pay', `<b>${esc(String(peV))} times</b> the last 12 months' profit, at ${esc(`${cur}${Number(c.price).toFixed(2)}`)} (${esc(longDate(iso(c.price_date)))} close)`]);
+    lines.push(['What you pay', `<b>${esc(String(peV))} times</b> the last 12 months' profit, at ${esc(`${cur}${Number(c.price).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`)} (${esc(longDate(iso(c.price_date)))} close)`]);
   }
   // 3 where the price could go: the weighted forecast's first and last dates (the page file's scenario table)
-  const f = c ? forecastOf(c) : null;
+  const f = c ? shownForecast(c) : null;
   if (f) lines.push(['Where the price could go', `<b>${esc(`${cur}${f.rows.Weighted[0].raw}`)}</b> by ${esc(f.cols[0])}, <b>${esc(`${cur}${f.rows.Weighted[f.last].raw}`)}</b> by ${esc(f.cols[f.last])}, dividends included`]);
   // 4 what could go wrong: the report's own challenge labels
   const risks = challengeLabels(md);
-  if (risks.length) lines.push(['What could go wrong', risks.map(esc).join(' · ')]);
+  if (own.risks) lines.push(['What could go wrong', esc(String(own.risks).trim())]);
+  else if (risks.length) lines.push(['What could go wrong', risks.map(esc).join(' · ')]);
   return { lines, revPlain, forecast: f, cur };
 }
 
@@ -214,7 +233,7 @@ export function renderBlogPost(q) {
   const updated = shortDate(day);
   const priceDay = c && okDay(iso(c.price_date)) ? shortDate(iso(c.price_date)) : '';
   const disc = priceDay ? WORDS.en.disc(ticker, longDate(day), priceDay) : '';
-  const frame = `<section class="rframe" id="report" aria-label="${esc(`${short}'s full report of ${longDate(day)}`)}">
+  const frame = `<section class="rframe" id="report" aria-label="${esc(`${poss(short)} full report of ${longDate(day)}`)}">
 <div class="rframe__bar"><a class="rf-back" href="/" aria-label="All posts">${ARROW}</a><span class="rf-tk">${esc(ticker)}</span><span class="rf-name">${esc(fullName)}</span>${updated ? `<span class="rf-upd">Updated ${esc(updated)}</span>` : ''}<span class="rf-share" aria-hidden="true">${SHARE}</span></div>
 <details class="rf-chap"><summary>Chapters</summary><ol>${menu}</ol></details>
 <div class="rframe__main">
@@ -231,13 +250,13 @@ ${sections}
 </div>
 </section>`;
   const four = fourLines(rec, c);
-  const inshort = four.lines.length ? `<section class="inshort" aria-labelledby="ins-h"><h2 class="sr" id="ins-h">${esc(short)}'s report in four lines</h2><p class="inshort__label">The report in four lines</p>
+  const inshort = four.lines.length ? `<section class="inshort" aria-labelledby="ins-h"><h2 class="sr" id="ins-h">${esc(poss(short))} report in four lines</h2><p class="inshort__label">The report in four lines</p>
 <ul class="inshort__l">${four.lines.map(([t, v]) => `<li><span class="inshort__t">${esc(t)}</span><span class="inshort__v">${v}</span></li>`).join('')}</ul></section>` : '';
   const h1 = `${short} (${ticker}) stock analysis: full report, ${longDate(day)}`;
   const title = `${short} (${ticker}) stock analysis: full report, ${shortDate(day)}`;
   const crumbName = `${short} (${ticker}) stock analysis`;
   const fc = four.forecast;
-  const description = `${short}'s full report of ${longDate(day)}: the business${four.revPlain ? `, ${four.revPlain}` : ''}, the risks, valuation${fc ? ` and a forecast to ${fc.cols[fc.last]}` : ' and the numbers'}.`;
+  const description = `${poss(short)} full report of ${longDate(day)}: the business${four.revPlain ? `, ${four.revPlain}` : ''}, the risks, valuation${fc ? ` and a forecast to ${fc.cols[fc.last]}` : ' and the numbers'}.`;
   const byline = `<p class="byline">By <a href="/about/">Olivier Lachance</a> · report of ${esc(longDate(day))}<a class="plain byline__how" href="/methodology/">How this report is made</a></p>`;
   const link = (p, t) => (q.exists(p) ? `<a href="${p}">${esc(t)}</a>` : '');
   const slug = q.company?.slug || '';
@@ -261,7 +280,9 @@ ${frame}
 ${links}
 </main>
 <div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company<small>New accounts: one ready report free</small></span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">Start free</a></div>
-<script>(function(){var grps=document.querySelectorAll('.rail__grp');if(grps.length&&'IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var id=e.target.id;grps.forEach(function(g){var on=g.getAttribute('data-ch')===id;g.querySelector('.rail__a').classList.toggle('is-on',on);var s=g.querySelector('.rail__sub');if(s)s.hidden=!on;});});},{rootMargin:'0px 0px -70% 0px'});document.querySelectorAll('.br-chapter>h2').forEach(function(h){io.observe(h);});}
+<script>(function(){var grps=document.querySelectorAll('.rail__grp'),hs=document.querySelectorAll('.br-chapter>h2'),cur=null,t=0;
+function paint(){t=0;var id=hs.length?hs[0].id:null;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<innerHeight*0.3)id=hs[i].id;else break;}if(id===cur)return;cur=id;grps.forEach(function(g){var on=g.getAttribute('data-ch')===id;g.querySelector('.rail__a').classList.toggle('is-on',on);var s=g.querySelector('.rail__sub');if(s)s.hidden=!on;});}
+if(grps.length&&hs.length){addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(paint);},{passive:true});paint();}
 var cm=document.querySelector('.rf-chap');if(cm)cm.addEventListener('click',function(e){if(e.target.closest('a'))cm.open=false;});})();</script>`;
   const chapterText = chapters.map((ch) => textOf(ch.body)).join(' ');
   const words = chapterText.split(/\s+/).filter(Boolean).length;
