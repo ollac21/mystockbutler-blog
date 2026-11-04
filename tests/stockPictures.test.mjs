@@ -19,6 +19,7 @@ import { MIN_TEXT, drawPicture, pictureSvg, smallestText } from '../scripts/lib/
 import { IMAGE_SITEMAP, writeStockSite } from '../scripts/lib/stocksBuild.mjs';
 import { buildState, diffUrls, parseSitemap } from '../scripts/lib/indexnow.mjs';
 import { loadAlternatives, loadToolPictures, toolPictureProblems, toolTable } from '../scripts/lib/guides.mjs';
+import { SITE_PAGES } from '../scripts/lib/sitePages.mjs';
 import { coverAlt, coverFile, coverImgHtml, coverObject, fetchCover } from '../scripts/lib/postCover.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -519,9 +520,11 @@ const ALTS = loadAlternatives();
 
 test('every price on a tools picture is in that tool\'s own row of the page\'s table; our offer word for word; each page has its entry', () => {
   const specs = loadToolPictures();
-  assert.equal(ALTS.length, 9);
+  // B115 round 5: 13 more comparison pages, each drawn in its approved layout (data/pages) with the site's share picture: no tools picture
+  assert.equal(ALTS.length, 9 + 13);
   for (const a of ALTS) {
     const key = a.name.replace(/\.md$/, '');
+    if (!specs[key] && SITE_PAGES.has(a.path) && SITE_PAGES.get(a.path).round === 5) continue;
     assert.ok(specs[key], `${key} has its short wordings`);
     assert.deepEqual(toolPictureProblems(a, specs[key]), [], key);
     const p = toolPicture(a);

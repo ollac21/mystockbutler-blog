@@ -53,7 +53,7 @@ Save the rules in a Claude Project (a folder that remembers instructions) and ev
 
 Short on time? [Type a ticker](#try) and get all eight chapters already written.
 
-## What are the best Claude prompts for stock analysis?
+## Which Claude prompts work for stock analysis?
 
 Eight prompts, one for each chapter of a full report. Paste them one at a time, swap in the company's name for [company], and read each answer before the next.
 
