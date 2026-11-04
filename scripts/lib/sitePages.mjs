@@ -101,6 +101,17 @@ function ldOf(rec, { ORG, url, image }) {
     }
     return x;
   });
+  // a BreadcrumbList from the page's own crumb line, when the mockup's data had none (the guides, the homes)
+  if (!nodes.some((n) => n['@type'] === 'BreadcrumbList')) {
+    const nav = /<nav class="crumb"[^>]*>([\s\S]*?)<\/nav>/.exec(rec.main);
+    if (nav) {
+      const plain = (x) => x.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").trim();
+      const items = [...nav[1].matchAll(/<a href="([^"]+)">([\s\S]*?)<\/a>/g)].map((m) => ({ name: plain(m[2]), item: m[1].startsWith('/') ? `${url.replace(/^(https:\/\/[^/]+).*$/, '$1')}${m[1]}` : m[1] }));
+      const last = plain(nav[1].replace(/<a [\s\S]*?<\/a>/g, '').replace(/<span[^>]*>[\s\S]*?<\/span>/g, ''));
+      if (last) items.push({ name: last, item: url });
+      if (items.length) nodes.unshift({ '@type': 'BreadcrumbList', itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: x.item })) });
+    }
+  }
   const orgNode = rec.ld.find((n) => n['@type'] === 'Organization');
   const org = { ...ORG, ...(orgNode?.description ? { description: orgNode.description } : {}), ...(orgNode?.disambiguatingDescription ? { disambiguatingDescription: orgNode.disambiguatingDescription } : {}) };
   return { '@context': 'https://schema.org', '@graph': [...nodes, org] };
