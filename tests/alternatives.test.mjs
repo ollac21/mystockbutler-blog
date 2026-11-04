@@ -25,8 +25,10 @@ test('the comparison guides: an English index and its pages, each an Article wit
     const faq = graph.find((n) => n['@type'] === 'FAQPage');
     assert.ok(faq && faq.mainEntity.length >= 4, `${path} has its questions in its data`);
     assert.ok(graph.some((n) => n['@type'] === 'BreadcrumbList'));
-    assert.ok(/<form class="tickerbox"/.test(g.html), 'the ticker box');
-    assert.ok(g.description.length <= 155 && g.title.length <= 60);
+    // the ticker box (today's page) or, in the approved frame (B115 round 3), the first button to the free report
+    assert.ok(/<form class="tickerbox"/.test(g.html) || /<a class="btn btn--lg btn--block" id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/.test(g.html), 'the ticker box or the first button');
+    // an approved page (B115 round 3) keeps its approved description, up to the site's 200-character limit
+    assert.ok(g.description.length <= (g.sitePage ? 200 : 155) && g.title.length <= 60);
     assert.ok(g.alt && g.guide);
   }
   const en = hubs.find((h) => h.path === '/alternatives/seeking-alpha/');

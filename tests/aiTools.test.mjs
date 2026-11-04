@@ -48,12 +48,13 @@ test('the AI tools comparison: four pages, hreflang both ways, the guide frame, 
     assert.ok(graph.some((n) => n['@type'] === 'BreadcrumbList'));
     const faq = graph.find((n) => n['@type'] === 'FAQPage');
     assert.ok(faq && faq.mainEntity.length >= 4, `${p} has its questions in its data`);
-    assert.ok(/<form class="tickerbox"/.test(g.html), 'the ticker box (the free report)');
+    // the ticker box (today's page) or, in the approved frame (B115 round 3), the first button to the free report
+    assert.ok(/<form class="tickerbox"/.test(g.html) || /<a class="btn btn--lg btn--block" id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/.test(g.html), 'the ticker box or the first button (the free report)');
     assert.ok(g.title.length <= 60, `${p} title ${g.title.length}`);
     assert.ok(g.description.length <= 155, `${p} description ${g.description.length}`);
     assert.ok(g.alt && g.guide);
     // the comparison table is drawn in its scroll box
-    assert.match(g.html, /<div class="tw"><table>/);
+    assert.match(g.html, /<div class="tw"><table>|<div class="ct__wrap"><table class="ct(?:--md)?">/);
   }
   // the old single-language comparisons keep their footer link; the Chinese pages get their comparison in the footer
   const fr = hubs.find((h) => h.path === PATHS.fr);
@@ -108,7 +109,7 @@ test('MyStockButler first in every language: the first table row (bold), the blo
     assert.equal(sections[3].indexOf('\n### MyStockButler\n'), sections[3].indexOf('\n### '), `${g.lang}: MyStockButler is the first card`);
     // the built page: the free-report box right under the short answer, before the table's heading
     const h = hubs.find((x) => x.path === PATHS[g.lang]).html;
-    const box = h.indexOf('<form class="tickerbox"');
+    const box = h.includes('<form class="tickerbox"') ? h.indexOf('<form class="tickerbox"') : h.indexOf('id="firstbtn"');   // the approved frame: the first button
     assert.ok(box > h.indexOf('MyStockButler', h.indexOf('<h1')) && box < h.indexOf('<h2'), `${g.lang}: the box sits under the short answer`);
     assert.ok(h.lastIndexOf('</p>', box) > h.indexOf('<h1') && !h.slice(h.indexOf('<h1'), box).includes('<table'), `${g.lang}: nothing but the byline and the answer before the box`);
   }

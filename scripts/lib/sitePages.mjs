@@ -98,6 +98,12 @@ function ldOf(rec, { ORG, url, image }) {
     }
     return x;
   });
+  // the page's visible questions (its .qa__i cards: an h3 question and its answer) as FAQPage, when the mockup's data had none
+  if (!nodes.some((n) => n['@type'] === 'FAQPage')) {
+    const plain = (x) => x.replace(/<[^>]+>/g, '').replace(/&nbsp;|\u00a0/g, ' ').replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+    const qs = [...rec.main.matchAll(/<div class="qa__i"><h3>([\s\S]*?)<\/h3>([\s\S]*?)<\/div>/g)].map((m) => ({ q: plain(m[1]), a: plain(m[2]) })).filter((x) => /[?？]$/.test(x.q) && x.a);
+    if (qs.length >= 3) nodes.push({ '@type': 'FAQPage', mainEntity: qs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+  }
   const orgNode = rec.ld.find((n) => n['@type'] === 'Organization');
   const org = { ...ORG, ...(orgNode?.description ? { description: orgNode.description } : {}), ...(orgNode?.disambiguatingDescription ? { disambiguatingDescription: orgNode.disambiguatingDescription } : {}) };
   return { '@context': 'https://schema.org', '@graph': [...nodes, org] };
@@ -154,7 +160,7 @@ export const SITE_PAGE_CSS = [...new Set([...SITE_PAGES.values()].map((r) => r.c
 import { Marked } from 'marked';
 import { firstPage, LIST_WORDS, reportViewer } from './stockPage.mjs';
 const mdp = new Marked({ gfm: true });
-const tables = (html) => html.replace(/<table>/g, '<div class="ct__wrap"><table class="ct ct--md">').replace(/<\/table>/g, '</table></div>');
+const tables = (html) => html.replace(/<table>/g, '<div class="ct__wrap"><table class="ct--md">').replace(/<\/table>/g, '</table></div>');
 const firstSentence = (t) => (String(t).match(/^[^.。]*[.。]/) || [String(t)])[0];
 
 // h: { shell, SITE, ORG, exists, strip, results, alternates, links (html <a> list), crumbs [{ name, path }], css, pageType,

@@ -2494,7 +2494,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const draw = (page, picture) => {
         const lang = rec.lang;
         const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
-        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => ctx.exists(p) || hubPaths.has(p), byTicker, alternates: page.alternates || [], tokens,
+        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), byTicker, alternates: page.alternates || [], tokens,
           strip: stripHtml(lang, stripOf(ctx, lang), home), results: lang === 'en' && hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
           ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
         page.html = out.html;
@@ -2514,7 +2514,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const ROOT = { en: '/', fr: '/fr/', de: '/de/', 'zh-HK': '/zh/stocks/' };
     const aboutDocs = loadAbout();
     for (const h of hubs) {
-      if (h.sitePage || !(h.alt || h.about) || h.path === ALT_ROOT) continue;
+      if (h.sitePage || SITE_PAGES.has(h.path) || !(h.alt || h.about) || h.path === ALT_ROOT) continue;   // an approved page whose guard failed stays today's page
       const g = h.alt ? ALTS.find((a) => a.path === h.path) : aboutDocs.find((a) => a.path === h.path);
       if (!g) continue;
       const l = g.lang;
@@ -2522,7 +2522,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const pick = [String(g.example || '').trim(), FEAT[l]].map((t) => byTicker.get(t)).find((c) => c && teaserOf(c)?.text && ctx.exists(pagePath(c.slug, 'stock', l)));
       if (!pick) { sitePages.kept.push({ path: h.path, why: 'no featured report with a page in its language' }); continue; }
       const home = LANG_CFG[l] ? LANG_CFG[l].root : '/stocks/';
-      const exists = (p) => ctx.exists(p) || hubPaths.has(p);
+      const exists = (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p);
       const links = h.alt ? [
         ...TYPES.map((t) => [t, pagePath(pick.slug, t, l)]).filter(([, p]) => exists(p)).map(([t, p]) => `<a href="${p}">${esc(UI[l].sibling(t, shortName(pick)))}</a>`),
         ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT).map((o) => `<a href="${o.path}">${esc(o.title)}</a>`),
@@ -2531,7 +2531,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         const out = renderMdFrame(g, { shell, SITE, ORG, exists, strip: stripHtml(l, stripOf(ctx, l), home), results: l === 'en' && exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
           alternates: page.alternates || [], links, linksH: h.alt ? ALT_ALSO[l] : UI[l].allStocks, crumbs: [{ name: 'MyStockButler', path: ROOT[l] === '/zh/stocks/' && !exists('/zh/stocks/') ? '/' : ROOT[l] }, { name: g.h1.split(' : ')[0], path: g.path }],
           css: h.about ? 'trust' : g.group === 'ai-research-tools' ? 'tools' : 'review', pageType: h.about ? 'AboutPage' : 'Article', feat: pick, featTeaser: teaserOf(pick), featChapters: (l === 'en' ? pick.chapters : pick.translations?.[l]?.chapters) || [],
-          today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: TRUST_LINK_WORDS[l].methodology,
+          today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: { en: 'How a report is made', fr: 'Comment un rapport est fait' }[l] || TRUST_LINK_WORDS[l].methodology,
           ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
         page.html = out.html;
         page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
@@ -2543,7 +2543,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       sitePages.drawn.push(h.path);
     }
     const week = hubs.find((h) => h.path === '/stocks/reporting-this-week/');
-    const wb = week ? renderWeekBody({ companies: live, today: ctx.today, shortName, exists: (p) => ctx.exists(p) || hubPaths.has(p) }) : null;
+    const wb = week ? renderWeekBody({ companies: live, today: ctx.today, shortName, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) }) : null;
     if (wb) {
       v2Hub(week, wb, { title: wb.title, description: wb.description, h1: wb.h1, type: 'WebPage', today: ctx.today, ctx,
         crumbs: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Reporting this week', path: '/stocks/reporting-this-week/' }] });
