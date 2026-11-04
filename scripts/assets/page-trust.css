@@ -256,3 +256,6 @@ html[lang=en] .ansD .facts dt::after{content:": "}
 .ct--md tbody tr:last-child td{border-bottom:0}
 .page--md .qa__i p+p{margin-top:8px}
 @media (min-width:1024px){.mdsec .ct__wrap{margin-top:22px}}
+
+/* the About page checks: two cards across the width when the author card is gone (owner 2026-11-04) */
+@media (min-width:1024px){.checks:has(>.check:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -2535,15 +2535,23 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
         const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), byTicker, alternates: page.alternates || [], tokens, pagePath,
           strip: stripHtml(lang, stripOf(ctx, lang), home), results: lang === 'en' && hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
-          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
+          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : { image: { '@type': 'ImageObject', url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height } }) });
         page.html = out.html;
         page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
         page.title = out.title;
         page.description = out.description;
         page.sitePage = rec.id;
         page.files = rec.files || [];                      // the page's own pictures (SVG), written beside it
+        page.lastmod = rec.built_on || page.lastmod;       // the day the approved page was cut: the sitemap and IndexNow see the change
         return page;
       };
+      // a share picture made for today's page (a tool page's price table) is kept only when the approved page prints every one of its
+      // tools and numbers; otherwise the page goes out with the site's share picture (never a picture of figures the page no longer shows)
+      if (h.picture && h.picture.draw?.kind === 'tools') {
+        const text = textOf(rec.main);
+        const ok = (h.picture.numbers || []).every((n) => printedOn(text, n)) && (h.picture.draw.rows || []).every((r) => text.includes(String(r.tool)));
+        if (!ok) { h.picture = null; h.pictureNone = 'the approved page prints other tools or prices than the picture'; }
+      }
       draw(h, h.picture);
       if (h.withoutPicture) { const old = h.withoutPicture; h.withoutPicture = () => draw(old(), null); }
       sitePages.drawn.push(h.path);
@@ -2571,7 +2579,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
           alternates: page.alternates || [], links, linksH: h.alt ? ALT_ALSO[l] : UI[l].allStocks, crumbs: [{ name: 'MyStockButler', path: ROOT[l] === '/zh/stocks/' && !exists('/zh/stocks/') ? '/' : ROOT[l] }, { name: g.h1.split(' : ')[0], path: g.path }],
           css: h.about ? 'trust' : g.group === 'ai-research-tools' ? 'tools' : 'review', pageType: h.about ? 'AboutPage' : 'Article', feat: pick, featTeaser: teaserOf(pick), featChapters: (l === 'en' ? pick.chapters : pick.translations?.[l]?.chapters) || [],
           today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: { en: 'How a report is made', fr: 'Comment un rapport est fait' }[l] || TRUST_LINK_WORDS[l].methodology,
-          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
+          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : { image: { '@type': 'ImageObject', url: SHARE_IMAGE.url, width: SHARE_IMAGE.width, height: SHARE_IMAGE.height } }) });
         page.html = out.html;
         page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
         page.sitePage = `frame:${g.name}`;
