@@ -22,7 +22,7 @@ Prix des autres outils relevés sur la page de chaque produit le 26 octobre 2026
 
 | Outil | Choisissez-le si vous voulez | Ce que vous obtenez pour une action | Prix |
 |---|---|---|---|
-| **MyStockButler** (notre produit) | **Comprendre une entreprise en profondeur avant d'acheter** | **Un rapport complet en huit chapitres, en français, chaque chiffre retracé jusqu'à sa source** | **Premier rapport S&P 500 gratuit ; 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** |
+| **MyStockButler** | **Comprendre une entreprise en profondeur avant d'acheter** | **Un rapport complet en huit chapitres, en français, chaque chiffre retracé jusqu'à sa source** | **Premier rapport S&P 500 gratuit ; 5 $ US un rapport de la bibliothèque, 20 $ US un nouveau ; Starter 30 $ US par mois ; Pro 70 $ US par mois** |
 | Zonebourse | Suivre des dizaines de valeurs | Cours, consensus, recommandations, tableaux financiers | Access dès 24 € par mois (payé à l'année) |
 | Boursorama | Les cours et l'actualité | Cours, actualités, forum | Gratuit |
 | ABC Bourse | Un suivi au quotidien | Cours, analyses, outils de bourse | 19,90 € par mois payé à l'année, 29 € au mois |
@@ -45,7 +45,7 @@ Prix relevés sur la page d'abonnement de Zonebourse le 26 octobre 2026.
 
 ## Ce que vous voulez encore savoir avant d'acheter
 
-Voici les questions auxquelles MyStockButler répond, avec des exemples tirés de nos vrais rapports.
+Voici les questions auxquelles MyStockButler répond, avec des exemples tirés de rapports MyStockButler.
 
 ### « Le dividende est-il vraiment payé par la trésorerie ? »
 
@@ -101,7 +101,7 @@ Zonebourse Access coûte 24 € par mois (payé à l'année) pour les cours, le 
 ## Comment nous avons comparé
 
 - Prix relevés sur la page de chaque produit le 26 octobre 2026, depuis le Canada.
-- MyStockButler est notre produit. Nous le présentons avec les autres et disons à qui chaque outil convient ; pour suivre des dizaines de valeurs, c'est Zonebourse.
+- Pour suivre des dizaines de valeurs, c'est Zonebourse.
 - Les prix changent : vérifiez la page du produit avant de payer.
 
 ## Questions fréquentes
@@ -116,7 +116,7 @@ Un compte gratuit existe, mais la lecture y est limitée par une fenêtre contex
 
 ### Existe-t-il une alternative gratuite à Zonebourse ?
 
-Pour les cours et l'actualité, Boursorama. Pour les états financiers, Stock Analysis (en anglais). Pour des rapports complets en français, MyStockButler (notre produit) : votre premier rapport S&P 500 est gratuit, et la formule Starter à 30 $ US par mois ouvre tous les rapports du S&P 500.
+Pour les cours et l'actualité, Boursorama. Pour les états financiers, Stock Analysis (en anglais). Pour des rapports complets en français, MyStockButler : votre premier rapport S&P 500 est gratuit, et la formule Starter à 30 $ US par mois ouvre tous les rapports du S&P 500.
 
 ### Zonebourse vaut-il son prix ?
 

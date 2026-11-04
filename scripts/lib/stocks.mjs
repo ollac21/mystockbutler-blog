@@ -2347,7 +2347,7 @@ function renderAlternatives(companies, exists, updated = '', pictures = false) {
     path: ALT_ROOT,
     title: 'Stock research tools compared: prices and what you get',
     description: 'Seeking Alpha, Simply Wall St, Bloomberg Terminal and AI research tools compared by price and by what you get for one stock, and who each one suits.',
-    intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler is our product: one long report per company, written from its filings, every number traced to its source. Your first S&P 500 report is free.',
+    intro: 'You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page. MyStockButler writes one long report per company from its filings, every number traced to its source. Your first S&P 500 report is free.',
     sections: [`${tickerBox('en', 'seo-guide-index', { ...ALT_OFFER.en, id: 'try', required: true })}<p class="boxnote">${esc(ALT_OFFER.en.note)}</p>`, `<ul class="list">${list}</ul>`],
     cta: '#try',
     crumbItems: [{ name: 'MyStockButler', path: '/' }, { name: ALT_WORDS.en, path: ALT_ROOT }],

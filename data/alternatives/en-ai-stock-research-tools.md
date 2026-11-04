@@ -101,7 +101,6 @@ TIKR is a data terminal: "screen 100,000+ global stocks, pull up to 30 years of 
 
 - We read each tool's own website on 29 October 2026, from Canada: its home page, its pricing page and, where needed, a product page. Reviews, forums and other sites were not used.
 - A fact a site does not state is written "not stated on its site", never guessed.
-- MyStockButler is our product; its facts come from our own pages.
 - Prices change: check the tool's own page before you pay.
 
 ## Sources

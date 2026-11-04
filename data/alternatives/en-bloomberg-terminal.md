@@ -22,7 +22,7 @@ Prices as shown on each product's own pricing page on 26 October 2026, in US dol
 
 | Tool | Pick it if you want | What you get for one stock | Price |
 |---|---|---|---|
-| **MyStockButler** (our product) | **To understand one company in depth before buying** | **A full report in eight chapters, from the business to price scenarios, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
+| **MyStockButler** | **To understand one company in depth before buying** | **A full report in eight chapters, from the business to price scenarios, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
 | Bloomberg Terminal | To trade or manage money all day, professionally | Everything: live data, filings, estimates, news, chat | No public price; estimated at $27,000 to $32,000 a year per seat |
 | Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
 | Yahoo Finance | Quotes and news | Quote, financial statements, news; paid plans add more history, research reports and a fair value | Free; paid plans $7.95 to $39.95 a month, billed yearly |
@@ -33,11 +33,11 @@ Prices as shown on each product's own pricing page on 26 October 2026, in US dol
 
 ## What you give up without a Terminal
 
-Being honest about it: none of these tools replaces a Terminal for a professional. You give up live prices on every asset class, instant news, the chat network, bond and derivatives data, and trading from the same screen. If your job depends on those, the Terminal is worth its price.
+None of these tools replaces a Terminal for a professional. You give up live prices on every asset class, instant news, the chat network, bond and derivatives data, and trading from the same screen. If your job depends on those, the Terminal is worth its price.
 
 For an individual investor buying a few companies a year, those features matter less than reading the company correctly.
 
-## What you get instead, from our real reports
+## What you get instead: examples from MyStockButler reports
 
 ### "The facts are all over the place."
 
@@ -96,7 +96,6 @@ Every number is traced to its source and every source is listed. AI models write
 
 - We read each price on the product's own pricing page on 26 October 2026, from Canada.
 - Bloomberg does not publish a price; the range above comes from third-party estimates for 2025 and 2026 (NeuGroup, Eulerpool), which differ.
-- MyStockButler is our own product; we list it with the others and say who each tool suits.
 - Prices change: check the product's page before you pay.
 
 ## Questions
@@ -115,7 +114,7 @@ Bloomberg sells the Terminal on contract; ask Bloomberg whether it will contract
 
 ### What is the cheapest way to research one stock?
 
-Free options exist: Stock Analysis and Yahoo Finance show the numbers, and Simply Wall St gives 5 company reports a month. For full written reports, your first S&P 500 report from MyStockButler (our product) is free, without a credit card. Starter, at $30 a month, opens every S&P 500 report, and without a plan a report costs $5 (library) or $20 (new, ready in about 2 hours).
+Free options exist: Stock Analysis and Yahoo Finance show the numbers, and Simply Wall St gives 5 company reports a month. For full written reports, your first S&P 500 report from MyStockButler is free, without a credit card. Starter, at $30 a month, opens every S&P 500 report, and without a plan a report costs $5 (library) or $20 (new, ready in about 2 hours).
 
 ### Is MyStockButler investment advice?
 

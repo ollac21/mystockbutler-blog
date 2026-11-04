@@ -22,7 +22,7 @@ Preise der anderen Anbieter laut Preisseite am 26. Oktober 2026.
 
 | Anbieter | Passt, wenn Sie wollen | Was Sie für eine Aktie bekommen | Preis |
 |---|---|---|---|
-| **MyStockButler** (unser Produkt) | **Ein Unternehmen vor dem Kauf gründlich verstehen** | **Ein vollständiger Bericht in acht Kapiteln, auf Deutsch, jede Zahl bis zu ihrer Quelle zurückverfolgt** | **Erster S&P-500-Bericht gratis; 5 US-Dollar für einen Bericht aus der Bibliothek, 20 US-Dollar für einen neuen; Starter 30 US-Dollar im Monat; Pro 70 US-Dollar im Monat** |
+| **MyStockButler** | **Ein Unternehmen vor dem Kauf gründlich verstehen** | **Ein vollständiger Bericht in acht Kapiteln, auf Deutsch, jede Zahl bis zu ihrer Quelle zurückverfolgt** | **Erster S&P-500-Bericht gratis; 5 US-Dollar für einen Bericht aus der Bibliothek, 20 US-Dollar für einen neuen; Starter 30 US-Dollar im Monat; Pro 70 US-Dollar im Monat** |
 | Aktienfinder | Qualitäts- und Dividendenaktien finden | Kennzahlen über bis zu 30 Jahre, fairer Wert, Prognosen | Basic kostenlos (50 Aktien); 290 € im Jahr |
 | onvista | Kurse und ein Report pro Aktie | Kurse, Nachrichten; Plus: ein „Aktien-Report“ als PDF pro Aktie (Gesamtbewertung, Vergleich mit Wettbewerbern, Risiko) | Kostenlos; Plus 14,90 € im Monat (jährliche Zahlung), 7 Tage gratis testen |
 | finanzen.net | Kurse und Nachrichten | Kurse, Nachrichten, Analystenziele | Kostenlos (mit Werbung) |
@@ -40,7 +40,7 @@ Preise laut Preisseite von Aktienfinder am 26. Oktober 2026.
 
 ## Was Sie vor dem Kauf noch wissen wollen
 
-Das sind die Fragen, auf die MyStockButler antwortet, mit Beispielen aus unseren echten Berichten.
+Das sind die Fragen, auf die MyStockButler antwortet, mit Beispielen aus MyStockButler-Berichten.
 
 ### „Hat das Management gehalten, was es gesagt hat?“
 
@@ -100,7 +100,7 @@ Aktienfinder kostet 290 € im Jahr für Kennzahlen und Filter zu rund 8.200 Akt
 ## Wie wir verglichen haben
 
 - Preise am 26. Oktober 2026 auf der Preisseite jedes Anbieters abgelesen, aus Kanada.
-- MyStockButler ist unser eigenes Produkt. Wir zeigen es neben den anderen und sagen, wem jeder Anbieter nützt; für die Suche nach Qualitätsaktien ist es Aktienfinder.
+- Für die Suche nach Qualitätsaktien ist es Aktienfinder.
 - Preise ändern sich: Prüfen Sie die Seite des Anbieters vor dem Kauf.
 
 ## Häufige Fragen
@@ -111,11 +111,11 @@ Die Basic-Version ist kostenlos und deckt 50 Top-Aktien ab. Die Vollversion kost
 
 ### Gibt es eine kostenlose Alternative zu Aktienfinder?
 
-Ja. finanzen.net und onvista zeigen Kurse und Nachrichten kostenlos, Stock Analysis zeigt Jahresabschlüsse und Kennzahlen kostenlos (auf Englisch). Bei MyStockButler (unser Produkt) ist Ihr erster S&P-500-Bericht gratis, auf Deutsch; Starter öffnet für 30 US-Dollar im Monat alle Berichte zum S&P 500.
+Ja. finanzen.net und onvista zeigen Kurse und Nachrichten kostenlos, Stock Analysis zeigt Jahresabschlüsse und Kennzahlen kostenlos (auf Englisch). Bei MyStockButler ist Ihr erster S&P-500-Bericht gratis, auf Deutsch; Starter öffnet für 30 US-Dollar im Monat alle Berichte zum S&P 500.
 
 ### Welche Alternative passt für eine einzelne Aktie?
 
-Wer ein Unternehmen gründlich verstehen will, statt viele zu filtern, braucht einen Bericht: das Geschäft, die Zahlen über fünf Jahre, die Bewertung und die Risiken. Das liefert ein Bericht von MyStockButler (unser Produkt), und Ihr erster S&P-500-Bericht ist gratis.
+Wer ein Unternehmen gründlich verstehen will, statt viele zu filtern, braucht einen Bericht: das Geschäft, die Zahlen über fünf Jahre, die Bewertung und die Risiken. Das liefert ein Bericht von MyStockButler, und Ihr erster S&P-500-Bericht ist gratis.
 
 ### Ist das eine Anlageberatung?
 

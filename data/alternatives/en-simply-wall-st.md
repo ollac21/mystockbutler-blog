@@ -22,7 +22,7 @@ Rival prices as shown on each product's own pricing page on 26 October 2026, in 
 
 | Tool | Pick it if you want | What you get for one stock | Price |
 |---|---|---|---|
-| **MyStockButler** (our product) | **The whole case on one company before you buy** | **A full written report in eight chapters, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
+| **MyStockButler** | **The whole case on one company before you buy** | **A full written report in eight chapters, every number traced to its source** | **First S&P 500 report free; $5 a library report, $20 a new one; Starter $30 a month; Pro $70 a month** |
 | Simply Wall St | To screen many stocks visually | Visual score, valuation, risks | Free for 5 reports a month; Premium $10.95 a month, billed yearly |
 | Stock Analysis | Free numbers on almost any stock | Financial statements, ratios, analysts' forecasts | Free; Pro $9.99 a month or $99 a year |
 | Morningstar Investor | Independent analyst ratings | Analyst report and fair value on the stocks it covers | $34.95 a month or $249 a year; 7-day free trial |
@@ -43,7 +43,7 @@ Prices as shown on Simply Wall St's pricing page on 26 October 2026, in US dolla
 
 ## From the picture to the reasoning
 
-A score tells you where to look. Here is what you get when you look closer, from our real reports.
+A score tells you where to look. Here is what you get when you look closer, from MyStockButler reports.
 
 ### "It looks good. But how does this business really make money?"
 
@@ -97,7 +97,7 @@ Every number is traced to its source and every source is listed: 219 in the Coca
 ## How we compared
 
 - Prices read on each product's own pricing page on 26 October 2026, in US dollars, from Canada.
-- MyStockButler is our product. We list it with the others and say who each one suits; Simply Wall St is the better choice for screening many stocks.
+- Simply Wall St is the better choice for screening many stocks.
 - Prices change: check the product's page before you pay.
 
 ## Questions
@@ -116,7 +116,7 @@ Treat its scores as a first look. Before a decision, check the key numbers in th
 
 ### What is a good alternative to Simply Wall St?
 
-For free numbers, Stock Analysis. For analyst ratings, Morningstar Investor. For full written reports with every number traced to its source, MyStockButler (our product): your first S&P 500 report is free, and $30 a month opens every S&P 500 report.
+For free numbers, Stock Analysis. For analyst ratings, Morningstar Investor. For full written reports with every number traced to its source, MyStockButler: your first S&P 500 report is free, and $30 a month opens every S&P 500 report.
 
 ### How do I know MyStockButler's numbers are right?
 

@@ -101,7 +101,6 @@ TIKR ist ein Datenterminal: über 100.000 Aktien weltweit filtern, bis zu 30 Jah
 
 - Wir haben am 29. Oktober 2026 die eigene Website jedes Tools gelesen, von Kanada aus: Startseite, Preisseite und bei Bedarf eine Produktseite. Keine Bewertungen, keine Foren, keine anderen Websites.
 - Was eine Website nicht angibt, steht als „nicht auf der Website angegeben“ in der Tabelle, nie geschätzt.
-- MyStockButler ist unser Produkt; seine Angaben stammen von unseren eigenen Seiten.
 - Preise ändern sich: Prüfen Sie vor dem Kauf die Seite des Tools.
 
 ## Quellen

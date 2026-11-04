@@ -101,7 +101,6 @@ TIKR est un terminal de données : filtrer plus de 100 000 actions dans le monde
 
 - Nous avons lu le site de chaque outil le 29 octobre 2026, depuis le Canada : sa page d'accueil, sa page de prix et, si besoin, une page produit. Ni avis, ni forums, ni autres sites.
 - Une information qu'un site n'indique pas est notée « non indiqué sur son site », jamais devinée.
-- MyStockButler est notre produit ; ses informations viennent de nos propres pages.
 - Les prix changent : vérifiez la page de l'outil avant de payer.
 
 ## Sources
