@@ -540,4 +540,5 @@ footer.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0
 /* ---- layout review (B115 final): a long currency word in the forecast answer (French "$ CA") no longer runs the two big numbers together ---- */
 @media (min-width:1024px){html[lang="fr"] .answer__pair .answer__n{font-size:38px}}
 @media (min-width:1024px) and (max-width:1199px){html[lang="fr"] .answer__pair .answer__n{font-size:30px}}
-@media (max-width:639px){html[lang^="zh"] .answer__pair .answer__n{font-size:32px}}
+@media (max-width:639px){html[lang^="zh"] .ans3 .answer__pair .answer__n{font-size:32px}html[lang^="zh"] .answer:not(.ans3) .answer__pair .answer__n{font-size:25px}}
+@media (min-width:1024px){html[lang^="zh"] .answer:not(.ans3) .answer__pair .answer__n{font-size:43px}}

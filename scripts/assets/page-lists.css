@@ -183,3 +183,10 @@
 }
 /* a date never breaks inside (Chinese dates ran "30" and "日" onto two lines) */
 @media (min-width:1024px){.m--rep,.m--res{white-space:nowrap}}
+/* a translated answer card on a phone: the count and its link on one line, the label under them (a long German label was squeezed to six lines of two letters) */
+@media (max-width:480px){
+  html:not([lang="en"]) .lans__v{grid-template-columns:minmax(0,1fr) auto;row-gap:2px}
+  html:not([lang="en"]) .lans__v b{grid-column:1;grid-row:1;min-width:0}
+  html:not([lang="en"]) .lans__v i{grid-column:2;grid-row:1}
+  html:not([lang="en"]) .lans__v span{grid-column:1/-1;grid-row:2}
+}

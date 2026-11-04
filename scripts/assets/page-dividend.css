@@ -212,3 +212,7 @@
   .sec--change>h2{margin:0 0 14px}
   .sec--change>p{max-width:68ch}
 }
+
+/* ---- layout review (B115 final): the calculator's result tiles on a phone (long German words, a figure beside its label) ---- */
+#dce-out .dc-sum .l{hyphens:auto;overflow-wrap:break-word}
+@media (max-width:640px){#dce-out .dc-sum .v{font-size:14.5px}}

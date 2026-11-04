@@ -245,3 +245,6 @@
   .sec--beat>.fine{grid-column:1/-1;grid-row:6}
   .sec--beat>.bridge{grid-column:1/-1;grid-row:7}
 }
+/* a long unit (French "milliards $ CA") next to the growth pill: the unit drops under the number instead of running under the pill */
+.ans2__v{white-space:normal}
+.ans2__v small{display:inline-block}
