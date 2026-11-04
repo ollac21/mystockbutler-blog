@@ -17,7 +17,8 @@ import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
-import { PAGE_CSS_PATH, PAGE_JS_PATH, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, stripHtml } from './stockPage.mjs';
+import { PAGE_CSS_PATH, PAGE_JS_PATH, WORDS as PAGE_WORDS, firstPage, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, reportViewer, stripHtml } from './stockPage.mjs';
+import { renderCompareIndexBody, renderWeekBody } from './hubPages.mjs';
 import { SITE_PAGES, renderSitePage, sitePageProblem } from './sitePages.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
@@ -2320,6 +2321,33 @@ function renderAlternatives(companies, exists, updated = '', pictures = false) {
   return [...pages, index];
 }
 
+// B115 round 3: a hub drawn from hubPages.mjs (the calendar, the head-to-head index) in the shared frame
+function v2Hub(h, body, { title, description, h1, crumbs, type, today, ctx }) {
+  const url = `${SITE}${h.path}`;
+  const cr = breadcrumbs(crumbs);
+  h.html = shell({
+    title, description, canonical: url, ogType: 'website', lang: 'en',
+    jsonld: { '@context': 'https://schema.org', '@graph': [cr.ld, { '@type': type, name: h1 || title, description, url, dateModified: today, inLanguage: 'en', author: AUTHOR, publisher: { '@id': ORG['@id'] }, isPartOf: { '@type': 'WebSite', name: 'MyStockButler', url: `${SITE}/` } }, ORG] },
+    meta: { type: 'hub', ticker: '', cta: `${APP}/signup?ticker=${encodeURIComponent(body.featured)}&src=${h.path === COMPARE_ROOT ? 'seo-compare' : 'seo-week'}` },
+    v2: { css: '/stocks/assets/page-hubs.css', strip: stripHtml('en', stripOf(ctx, 'en'), '/stocks/'), results: h.path === '/stocks/reporting-this-week/' ? '' : (ctx.exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '') },
+    body: body.main,
+  });
+  h.title = title;
+  h.description = description;
+  h.outLinks = [...body.main.matchAll(SITE_LINK)].map((m) => m[1]);
+  return h;
+}
+// the shared viewer of a featured report: its first page (teaser.first_page), else its teaser and the locked chapters
+function featuredViewer(c, F) {
+  const W = PAGE_WORDS.en;
+  const fp = firstPage(c.teaser, W);
+  if (!fp) return '';
+  const memo = isoDay(c.memo_date);
+  return reportViewer({ W, fp, chapters: (c.chapters || []).filter((x) => /^\d+\./.test(String(x))), allChapters: c.chapters || [], company: shortName(c), memoDay: humanDay(memo), ticker: c.ticker, exch: c.exchange || '',
+    fullName: c.company || shortName(c), memoIso: memo, shortMemo: shortFull(memo, 'en'), priceShort: shortFull(isoDay(c.price_date || memo), 'en'), htmlLang: 'en', counts: c.counts || {},
+    words: (c.counts?.words || 0).toLocaleString('en-US'), num: (x) => x, isFree: F.free, cta: F.cta, nCh: c.counts?.chapters || 8 });
+}
+
 // earningsDates: the checked list (stocksBuild.readEarningsDates); none = no date in any English earnings title.
 export function buildStockSite(companies, { today = new Date(), compares = [], earningsDates = {}, pictures = false } = {}) {
   const usable = companies.filter((c) => c && c.slug && c.pages && Object.keys(c.pages).length);
@@ -2463,6 +2491,13 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       if (h.withoutPicture) { const old = h.withoutPicture; h.withoutPicture = () => draw(old(), null); }
       sitePages.drawn.push(h.path);
     }
+    const week = hubs.find((h) => h.path === '/stocks/reporting-this-week/');
+    const wb = week ? renderWeekBody({ companies: live, today: ctx.today, shortName, exists: (p) => ctx.exists(p) || hubPaths.has(p) }) : null;
+    if (wb) {
+      v2Hub(week, wb, { title: wb.title, description: wb.description, h1: wb.h1, type: 'WebPage', today: ctx.today, ctx,
+        crumbs: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Reporting this week', path: '/stocks/reporting-this-week/' }] });
+      sitePages.drawn.push(week.path);
+    } else if (week) sitePages.kept.push({ path: week.path, why: 'no company with a guidance paragraph reports in the days left this week' });
   }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
@@ -2476,6 +2511,15 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
   if (compared.length) {
     const hub = renderCompareHub(compared.map((b) => b.pair));
     hub.lastmod = compared.map((b) => b.lastmod).sort().pop();
+    if (v2On()) {
+      const cb = renderCompareIndexBody({ pairs: compared.map((b) => b.pair), bySlug, today: ctx.today, updated: isoDay(hub.lastmod), shortName, exists: (p) => cctx.exists(p),
+        firstPage: (c) => firstPage(c.teaser, PAGE_WORDS.en), viewerOf: featuredViewer });
+      if (cb) {
+        v2Hub(hub, cb, { title: 'Stock comparison: compare two stocks side by side', description: `${compared.length} pairs of rival stocks compared side by side on the rows both research reports print: revenue growth, margin, free cash flow, dividend yield, P/E, each with its period.`,
+          h1: 'Stock comparison: compare two stocks side by side', type: 'CollectionPage', today: ctx.today, ctx: cctx, crumbs: [{ name: 'Stocks', path: '/stocks/' }, { name: 'Compare', path: COMPARE_ROOT }] });
+        sitePages.drawn.push(COMPARE_ROOT);
+      } else sitePages.kept.push({ path: COMPARE_ROOT, why: 'no example pair with a report to show' });
+    }
     compared.push(hub);
   }
   const livePaths = new Set([...pass.map((b) => b.path), ...hubs.map((h) => h.path), ...compared.map((b) => b.path)]);

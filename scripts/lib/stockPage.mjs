@@ -933,7 +933,7 @@ const slugId = (t) => String(t).normalize('NFKD').replace(/\p{M}/gu, '').toLower
 const tableLabel = (cell) => String(cell || '').replace(/\*\*/g, '').replace(/^[+−=-] /, '').replace(/ \(calculated\)$/, '').replace(/ \(berechnet\)$/, '').replace(/ \(calculé\)$/, '').trim();
 
 // The report's first page: teaser.first_page (the chain's executive summary, markdown) when it exists, else the teaser paragraph.
-function firstPage(teaser, W) {
+export function firstPage(teaser, W) {
   const fp = teaser && teaser.first_page && String(teaser.first_page.markdown || '').trim() ? teaser.first_page : null;
   if (fp) {
     let html = md.parse(String(fp.markdown).replace(/\[(\d+(?:,\s*\d+)*)\](?!\()/g, ''));
