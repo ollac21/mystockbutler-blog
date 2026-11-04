@@ -58,7 +58,7 @@ export function sitePageProblem(rec, { byTicker, today }) {
     const c = byTicker.get(t);
     const q = quotes.get(t);
     if (!c) return `${t}: no report in this build`;
-    if (q && (iso(c.memo_date) !== iso(q.memo_date) || !sameCounts(c.counts, q.counts))) return `${t}: the build's report (${iso(c.memo_date)}) is not the one the page quotes (${iso(q.memo_date)})`;
+    if (q && (iso(c.memo_date) !== iso(q.memo_date) || (q.counts && !sameCounts(c.counts, q.counts)))) return `${t}: the build's report (${iso(c.memo_date)}) is not the one the page quotes (${iso(q.memo_date)})`;
   }
   const first = byTicker.get(primaryOf(rec));
   if (first && /class="free"/.test(rec.main)) {
@@ -81,7 +81,8 @@ function fixLinks(html, exists) {
   return html
     .replace(/<a ([^>]*?)href="(\/[^"#?]*)([#?][^"]*)?"([^>]*)>([\s\S]*?)<\/a>/g, (m, pre, href, tail, post, text) => {
       if (!OUR.test(href) || href === '/' || exists(href)) return m;
-      return `<span class="nl">${text}</span>`;
+      const cls = (/class="([^"]*)"/.exec(`${pre} ${post}`) || [])[1];
+      return `<span class="nl${cls ? ` ${cls}` : ''}">${text}</span>`;
     })
     .replace(/<a ((?:(?!data-cta)[^>])*?)href="(https:\/\/app\.mystockbutler\.com\/signup[^"]*)"/g, (m, pre, href) => `<a ${pre}data-cta="page" href="${href}"`);
 }
