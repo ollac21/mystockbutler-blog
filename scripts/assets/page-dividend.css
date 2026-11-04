@@ -176,5 +176,39 @@
 .page>.dce>h2{font:800 23px/1.22 var(--font);letter-spacing:-.018em;color:var(--ink);text-wrap:balance;margin:0 0 10px}
 .page>.dce p{font:450 15.5px/1.5 var(--font);color:var(--body)}
 .page>.dce .btn{height:44px;padding:0 20px;border-radius:9999px;font:650 15px/1 var(--font)}
-@media (min-width:1024px){.sec--shares .dce{padding:22px 26px 20px}.page>.dce>h2{font-size:30px}}
+@media (min-width:1024px){.page>.dce>h2{font-size:30px}}
 .ans3__lines b{white-space:nowrap}
+/* ---- the owner's layout review (2026-11-03): no big empty area; a pair only when both blocks are of similar height ---- */
+@media (min-width:1024px){
+  /* the cash cover: text and chart side by side, the cover rows below at the full width, one row per year */
+  .sec--cover{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  .sec--cover .sx__r .fig img{width:100%}
+  .cov__rows{display:block}
+  .cov__rows li{grid-template-columns:96px minmax(0,1.4fr) minmax(0,1fr);column-gap:24px;align-items:center;padding:8px 0}
+  .cov__rows li+li{border-top:1px solid var(--rule);padding-top:8px}
+  .cov__n{grid-column:3;margin-top:0}
+  .sec--cover>.bridge{max-width:none}
+  /* the yield: heading, the text at reading width, then the two yields side by side at the full width */
+  .sec--yield{display:flex;flex-direction:column;align-items:stretch}
+  .sec--yield>h2{order:0}
+  .sec--yield .sx__l{order:1;max-width:68ch}
+  .sec--yield .sx__l2{order:2;max-width:68ch;margin-top:12px}
+  .sec--yield .sx__r{order:3;margin-top:22px}
+  .sec--yield .yt{grid-template-columns:1fr 1fr;gap:24px}
+  /* the calculator: the full content width, its inputs in one row and its results in one row */
+  .page>.dce{grid-column:1/-1;max-width:none;margin-top:84px;padding:24px 28px 22px}
+  .page>.dce>p{max-width:68ch}
+  .page>.dce .dc{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto auto;align-items:end;gap:12px 24px}
+  .page>.dce .dc>div{margin:0}
+  .page>.dce .dc>.go,.page>.dce .dc>.ck{grid-column:auto;align-self:end}
+  /* the forecast: the text beside its chart, both centred on each other; the bridge under both */
+  .sec--fc{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto auto;align-items:start}
+  .sec--fc>.sx__l{grid-row:2}
+  .sec--fc>.sx__r{grid-row:2;margin-top:0}
+  .sec--fc>.bridge{grid-column:1/-1;grid-row:3}
+  .sec--fc .fig img{width:100%}
+  /* what could change: heading, then the text at reading width */
+  .sec--change{display:block}
+  .sec--change>h2{margin:0 0 14px}
+  .sec--change>p{max-width:68ch}
+}

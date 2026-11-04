@@ -1516,10 +1516,11 @@ function hubPage({ path, title, description, intro, sections, crumbItems, search
   if (v2On() && list && list.length) {
     const ui = UI[lang];
     const has = (c, t) => (lang === 'en' ? !!c.pages[t] : !!langPage(c, t, lang));
-    const body = renderListBody({ lang, list, index, h1: h1 || title, today, crumbsHtml: crumbs.html, authorLink: authorLink(lang), num: ui.num, money, humanDay: (d) => humanDay(d, lang), shortFull: (d) => shortFull(d, lang),
+    const body = renderListBody({ lang, list, index, h1: h1 || title, today, locale: ui.locale, crumbsHtml: crumbs.html, authorLink: authorLink(lang), num: ui.num, money, humanDay: (d) => humanDay(d, lang), shortFull: (d) => shortFull(d, lang),
       dateWords: (t) => ui.date(t), shortName, startOf: (c) => (c.pages.stock ? startPrice(c) : null), yieldOf: (c) => dividendYieldOf(c), teaserOf: (c) => (lang === 'en' ? c.teaser : c.translations?.[lang]?.teaser) || null,
       hasPage: has, pagePath: (slug, t) => pagePath(slug, t, lang), types: ui.types, sibling: ui.sibling,
-      ctaOf: (c) => `${APP}/signup?ticker=${encodeURIComponent(c.ticker)}&src=seo-hub${lang === 'en' ? '' : `&lang=${lang}`}`, more,
+      ctaOf: (c) => `${APP}/signup?ticker=${encodeURIComponent(c.ticker)}&src=seo-hub${lang === 'en' ? '' : `&lang=${lang}`}`, more, htmlLang: ui.htmlLang,
+      chaptersOf: (c) => (lang === 'en' ? c.chapters : c.translations?.[lang]?.chapters) || [],
       otherLinks: langs.length ? (c) => langs.flatMap((l) => TYPES.filter((t) => langPage(c, t, l)).map((t) => `<a class="ol" hreflang="${LANG_CFG[l].href}" lang="${LANG_CFG[l].href}" href="${pagePath(c.slug, t, l)}">${esc(UI[l].types[t])}</a>`)).join('') : null });
     const stripList = list.filter((c) => has(c, 'stock'))   // the names of this list only (the US Chinese hub never names a Hong Kong company)
      .sort((a, b) => String(b.memo_date).localeCompare(String(a.memo_date))).slice(0, 12)
@@ -1761,9 +1762,7 @@ export function gatePage(built, ctx) {
   const descText = textOf(desc);
   const descMax = fr ? 200 : 155;                   // French and German run about a fifth longer than the English
   if (!descText || descText.length > descMax) fails.push(`meta description is ${descText.length} characters (1 to ${descMax})`);
-  // B115: the new pages print our own description; the page writer's is still held to its length, so the same pages publish
-  const modelDesc = textOf(esc(page.meta_description || ''));
-  if (built.v2 && modelDesc !== descText && (!modelDesc || modelDesc.length > descMax)) fails.push(`meta description is ${modelDesc.length} characters (1 to ${descMax})`);
+  // B115 (operator 2026-11-03): the new pages print our own description, so the page writer's long one no longer holds a page back
   const h1 = (html.match(/<h1[ >]/g) || []).length;
   if (h1 !== 1) fails.push(`${h1} h1`);
   // B115: on the new pages the page writer's headings are the sections' H2s (the page's own fixed headings, key numbers, links,

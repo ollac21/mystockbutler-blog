@@ -59,7 +59,7 @@
       if (viewer.hidden) return;
       if (pushed) { pushed = false; history.back(); } else { shut(); if (location.hash === '#first-page') history.replaceState(null, '', location.pathname + location.search); }
     };
-    var scope = function () { var k = doc.body.getAttribute('data-pick'); return (k && viewer.querySelector('[data-for="' + k + '"]')) || viewer.querySelector('[data-for]') || viewer; };
+    var scope = function () { var k = doc.body.getAttribute('data-pick') || 'a'; return viewer.querySelector('.viewer__body [data-for="' + k + '"]') || viewer; };
     var scrollTo = function (el, off) { if (el) vb.scrollTop = Math.max(0, el.getBoundingClientRect().top - vb.getBoundingClientRect().top + vb.scrollTop - off); };
     var toChapter = function (ch) {
       var sc = scope(), lh = sc.querySelector('.lock__h') || lockH;

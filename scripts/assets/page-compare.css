@@ -196,3 +196,20 @@ body[data-pick="b"] [data-for="a"]{display:none!important}
 .fcl li b{display:inline-flex;align-items:center;gap:6px;margin-right:4px;color:var(--ink)}
 .viewer__bar .pick{margin-left:auto;margin-right:8px}
 @media (max-width:639px){.ahead__w{display:none}.vb__b em{white-space:nowrap}}
+/* ---- the owner's layout review (2026-11-03): heading, the text at reading width, then the section's bars as ONE visual at the full width ---- */
+.vb li{grid-template-columns:72px minmax(0,1fr)}
+@media (min-width:1024px){
+  .page>.sec>.split{display:block}
+  .split__t{max-width:68ch}
+  .split__v{margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px 44px;padding:20px 24px 18px;background:var(--card);border:1px solid rgba(17,24,20,.06);border-radius:18px;box-shadow:var(--shadow)}
+  .split__v .vb,.split__v .vb:first-of-type{margin-top:0}
+  /* the two reports' own lines side by side */
+  .sec--first{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px;align-items:stretch}
+  .sec--first>h2,.sec--first>.lead,.sec--first>.bridge{grid-column:1/-1}
+  .sec--first>.lead{max-width:68ch}
+  .sec--first .rep{margin-top:16px}
+  /* the forecast: the two reports' cases as two cards across the width */
+  .fcl{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:24px;border-top:0;margin-top:16px}
+  .fcl li{padding:18px 20px;background:var(--card);border-radius:16px;border:1px solid rgba(17,24,20,.06);box-shadow:var(--shadow);border-bottom:0;font-size:16px;line-height:1.55}
+  .sec .fine{max-width:68ch}
+}

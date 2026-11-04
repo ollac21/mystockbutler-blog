@@ -949,6 +949,39 @@ function firstPage(teaser, W) {
   return { full: false, title: ch.replace(/^\d+\.\s*/, ''), chapter: ch, html: p, parts: [], peekH: '', peekP: p };
 }
 
+// THE VIEWER (the landing's Expand viewer): the title bar, the contents column on desktop, the report's header, its disclaimer, its
+// first page, the lock box with the locked chapters, the button at the foot. Shared by the company pages and the list pages.
+export function reportViewer(o) {
+  const { W, fp, chapters, company, ticker, exch, fullName, memoIso, shortMemo, num, isFree, nCh } = o;
+  const k = o.counts || {};
+  const locked = fp.full ? chapters : (o.allChapters || []).filter((c) => String(c) !== fp.chapter);
+  const lockKey = (c) => (/^(\d+)\./.exec(String(c)) || [])[1] || 'x';
+  const rail = `<div><div class="rail__row"><span class="rail__ch">${chevOpen}</span><button type="button" class="rail__a is-on" data-goto="vtop">${esc(fp.full ? W.execSummary : fp.chapter)}</button></div>${fp.parts.length ? `<div class="rail__sub">${fp.parts.map((x) => `<button type="button" data-goto="${x.id}">${esc(x.label)}</button>`).join('')}</div>` : ''}</div>
+${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}</span><button type="button" class="rail__a" data-lock="${lockKey(c)}">${esc(c)}${lockSvg}</button></div></div>`).join('\n')}`;
+  const lockH = fp.full ? W.lockAll(nCh) : W.lockAllTeaser(nCh);
+  return `<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="${esc(W.vTitle(company, o.memoDay))}" data-lock-all="${esc(lockH)}" data-lock-ch="${esc(W.lockCh)}" data-lock-one="${esc(W.lockOne)}" hidden>
+<div class="viewer__win" tabindex="-1">
+<div class="viewer__bar"><span class="viewer__title">${esc(W.vTitle(company, o.memoDay))}</span><button class="viewer__x" type="button" data-close-viewer aria-label="${esc(W.vClose)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+<div class="viewer__main">
+<aside class="rail" aria-label="${esc(W.vContents)}"><div class="rail__head">${esc(W.vContents)}</div><nav class="rail__nav" aria-label="${esc(W.vContents)}">${rail}</nav></aside>
+<div class="viewer__body" id="viewer-body"><div class="blog-report" lang="${esc(o.htmlLang)}"><div class="br-column">
+<header class="br-ui" id="vtop"><div class="br-kicker"><span>${esc(ticker)}</span>${exch ? `<span>· ${esc(exch)}</span>` : ''}<span>· ${esc(fullName)}</span></div>
+<p class="br-title">${esc(fullName)} (${esc(ticker)})</p>
+<div class="br-by"><span>${esc(W.research)}</span><time datetime="${memoIso}">${esc(W.updated(shortMemo))}</time></div></header>
+<aside class="br-ui br-disc" aria-label="${esc(W.discT)}"><div class="br-disc__t">${esc(W.discT)}</div><p>${esc(W.disc(ticker, o.memoDay, o.priceShort))}</p></aside>
+<div class="br-mt8"><section class="br-chapter"><p class="br-h2">${esc(fp.full ? W.execSummary : fp.chapter)}</p>
+<div class="memo-tables">${fp.html}</div>
+<div class="lock"><div class="lock__fade"></div><div class="lock__box" id="lockbox"><p class="lock__h" id="lock-h">${esc(lockH)}</p>
+<p>${esc(W.lockSize(o.words, num(String(k.tables || 0)), num(String(k.sources || 0)), company))}</p>${isFree ? `<p class="lock__free">${esc(W.free)}</p>` : ''}
+<ul>${locked.map((c) => `<li data-chapter="${lockKey(c)}">${esc(c)}</li>`).join('')}</ul></div></div>
+</section></div>
+</div></div></div>
+</div>
+<div class="viewer__foot"><a class="btn" data-cta="viewer" href="${esc(o.cta)}">${esc(isFree ? W.keepFree(company) : W.keepOld(company))}</a>${isFree ? `<small>${esc(W.free)}</small>` : ''}</div>
+</div>
+</div>`;
+}
+
 export function renderPage(p) {
   const { data, type, lang, page, enPage, company, ticker, num, money } = p;
   const W = WORDS[lang];
@@ -1555,35 +1588,8 @@ ${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : type === 'dividend
   const bar = `<div class="bar" id="bar" aria-hidden="true"><span>${esc(W.barT(company))}${isFree ? `<small>${esc(W.barS)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" tabindex="-1" href="${esc(p.cta)}">${esc(W.readIt)}</a></div>`;
 
   // ---- the viewer ----
-  let viewer = '';
-  if (fp) {
-    const locked = fp.full ? chapters : (p.chapters || []).filter((c) => String(c) !== fp.chapter);
-    const lockKey = (c) => (/^(\d+)\./.exec(String(c)) || [])[1] || 'x';
-    const rail = `<div><div class="rail__row"><span class="rail__ch">${chevOpen}</span><button type="button" class="rail__a is-on" data-goto="vtop">${esc(fp.full ? W.execSummary : fp.chapter)}</button></div>${fp.parts.length ? `<div class="rail__sub">${fp.parts.map((x) => `<button type="button" data-goto="${x.id}">${esc(x.label)}</button>`).join('')}</div>` : ''}</div>
-${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}</span><button type="button" class="rail__a" data-lock="${lockKey(c)}">${esc(c)}${lockSvg}</button></div></div>`).join('\n')}`;
-    const lockH = fp.full ? W.lockAll(nCh) : W.lockAllTeaser(nCh);
-    viewer = `<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="${esc(W.vTitle(company, p.memoDay))}" data-lock-all="${esc(lockH)}" data-lock-ch="${esc(W.lockCh)}" data-lock-one="${esc(W.lockOne)}" hidden>
-<div class="viewer__win" tabindex="-1">
-<div class="viewer__bar"><span class="viewer__title">${esc(W.vTitle(company, p.memoDay))}</span><button class="viewer__x" type="button" data-close-viewer aria-label="${esc(W.vClose)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
-<div class="viewer__main">
-<aside class="rail" aria-label="${esc(W.vContents)}"><div class="rail__head">${esc(W.vContents)}</div><nav class="rail__nav" aria-label="${esc(W.vContents)}">${rail}</nav></aside>
-<div class="viewer__body" id="viewer-body"><div class="blog-report" lang="${esc(p.htmlLang)}"><div class="br-column">
-<header class="br-ui" id="vtop"><div class="br-kicker"><span>${esc(ticker)}</span>${exch ? `<span>· ${esc(exch)}</span>` : ''}<span>· ${esc(data.company || company)}</span></div>
-<p class="br-title">${esc(data.company || company)} (${esc(ticker)})</p>
-<div class="br-by"><span>${esc(W.research)}</span><time datetime="${memoIso}">${esc(W.updated(shortMemo))}</time></div></header>
-<aside class="br-ui br-disc" aria-label="${esc(W.discT)}"><div class="br-disc__t">${esc(W.discT)}</div><p>${esc(W.disc(ticker, p.memoDay, priceIso ? p.shortFull(priceIso, lang) : p.memoDay))}</p></aside>
-<div class="br-mt8"><section class="br-chapter"><p class="br-h2">${esc(fp.full ? W.execSummary : fp.chapter)}</p>
-<div class="memo-tables">${fp.html}</div>
-<div class="lock"><div class="lock__fade"></div><div class="lock__box" id="lockbox"><p class="lock__h" id="lock-h">${esc(lockH)}</p>
-<p>${esc(W.lockSize(words, num(String(k.tables || 0)), num(String(k.sources || 0)), company))}</p>${isFree ? `<p class="lock__free">${esc(W.free)}</p>` : ''}
-<ul>${locked.map((c) => `<li data-chapter="${lockKey(c)}">${esc(c)}</li>`).join('')}</ul></div></div>
-</section></div>
-</div></div></div>
-</div>
-<div class="viewer__foot"><a class="btn" data-cta="viewer" href="${esc(p.cta)}">${esc(isFree ? W.keepFree(company) : W.keepOld(company))}</a>${isFree ? `<small>${esc(W.free)}</small>` : ''}</div>
-</div>
-</div>`;
-  }
+  const viewer = fp ? reportViewer({ W, fp, chapters, allChapters: p.chapters || [], company, memoDay: p.memoDay, ticker, exch, fullName: data.company || company, memoIso, shortMemo,
+    priceShort: priceIso ? p.shortFull(priceIso, lang) : p.memoDay, htmlLang: p.htmlLang, counts: k, words, num, isFree, cta: p.cta, nCh }) : '';
 
   const h1Text = type === 'earnings' ? W.eH1(company, ticker) : p.h1;
   const body = `<main class="page" id="top">
@@ -1804,11 +1810,19 @@ ${cta('closebtn')}
 <p>${esc(W.lockSize((cnt.words || 0).toLocaleString('en-US'), String(cnt.tables || 0), String(cnt.sources || 0), s.name))}</p>${ageOk(s) ? `<p class="lock__free">${esc(W.free)}</p>` : ''}
 <ul>${locked.map((c) => `<li data-chapter="${key(c)}">${esc(c)}</li>`).join('')}</ul></div></div></section></div></div></div></div>`;
   };
+  const rails = ['a', 'b'].map((k) => {
+    const s = side[k], fp = fps[k];
+    if (!fp) return '';
+    const locked = fp.full ? chaptersOf(s) : (q.chaptersOf(s) || []).filter((c) => String(c) !== fp.chapter);
+    const key = (c) => (/^(\d+)\./.exec(String(c)) || [])[1] || 'x';
+    return `<aside class="rail" data-for="${k}" aria-label="${esc(W.vContents)}"><div class="rail__head">${esc(W.vContents)}</div><nav class="rail__nav" aria-label="${esc(W.vContents)}"><div><div class="rail__row"><span class="rail__ch">${chevOpen}</span><button type="button" class="rail__a is-on" data-goto="vtop-${k}">${esc(fp.full ? W.execSummary : fp.chapter)}</button></div>${fp.parts.length ? `<div class="rail__sub">${fp.parts.map((x) => `<button type="button" data-goto="${k}-${x.id}">${esc(x.label)}</button>`).join('')}</div>` : ''}</div>
+${locked.map((c) => `<div><div class="rail__row"><span class="rail__ch">${chev}</span><button type="button" class="rail__a" data-lock="${key(c)}">${esc(c)}${lockSvg}</button></div></div>`).join('\n')}</nav></aside>`;
+  }).join('');
   const panes = pane('a') + pane('b');
   const viewer = panes ? `<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="${esc(`${A.name}'s and ${B.name}'s reports`)}" data-lock-all="" data-lock-ch="${esc(W.lockCh)}" data-lock-one="${esc(W.lockOne)}" hidden>
 <div class="viewer__win" tabindex="-1">
 <div class="viewer__bar"><span class="viewer__title">${forBoth((k) => esc(W.vTitle(name[k], q.humanDay(side[k].memo_date))))}</span>${pickTabs(' pick--sm')}<button class="viewer__x" type="button" data-close-viewer aria-label="${esc(W.vClose)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
-<div class="viewer__main"><div class="viewer__body" id="viewer-body">${panes}</div></div>
+<div class="viewer__main">${rails}<div class="viewer__body" id="viewer-body">${panes}</div></div>
 <div class="viewer__foot"><a class="btn" data-cta="viewer" data-pick-href data-href-a="${esc(q.ctaOf(A))}" data-href-b="${esc(q.ctaOf(B))}" href="${esc(q.ctaOf(A))}">${forBoth((k) => esc(ageOk(side[k]) ? W.keepFree(name[k]) : W.keepOld(name[k])))}</a><small>${forBoth((k) => esc(freeOf(k)))}</small></div>
 </div></div>` : '';
   const days = [String(A.memo_date).slice(0, 10), String(B.memo_date).slice(0, 10)];
@@ -1952,16 +1966,13 @@ ${memos.length && nf ? `<p class="lans__sub">${esc(W.sub(q.humanDay(memos[0]), q
 </section>`;
   // the company's pages in the list's language, then (on an English index list) its pages in the other languages, as the old list linked them
   const pageLinks = (c) => ['stock', 'earnings', 'dividend'].filter((t) => q.hasPage(c, t)).map((t) => `<a href="${q.pagePath(c.slug, t)}">${esc(q.types[t])}</a>`).join('') + (q.otherLinks ? q.otherLinks(c) : '');
+  // a lean row (B115, operator: lists under 300 KB): the name, the ticker, the forecast's value and every page link are in the HTML;
+  // lists.js draws the rest of the row (its dates in the page's language, the return pill, the price it starts from) from the data-*
   const rowHtml = (r) => {
     const c = r.c, first = ['stock', 'earnings', 'dividend'].find((t) => q.hasPage(c, t));
     const cur = c.currency;
-    const fcHtml = r.fc ? `<div class="row__fc"><span class="row__val">${esc(F.cell(r.fc.w, cur))}</span><span class="row__by">${esc(W.rBy(q.dateWords(`${r.fc.col.slice(0, 3)} ${r.fc.col.slice(-4)}`)))}</span><span class="row__dt">${esc(W.rFrom(F.price(r.start.value, cur), sd(r.start.day)))}</span><span class="pill${r.fc.w.r < 0 ? ' pill--neg' : ''} pill--ph">${esc(nb(F.signed(r.fc.w.r)))}</span></div><span class="pill${r.fc.w.r < 0 ? ' pill--neg' : ''} pill--dk">${esc(nb(F.signed(r.fc.w.r)))}</span><p class="row__from">${esc(W.rFrom(F.price(r.start.value, cur), sd(r.start.day)))}</p>` : '<div class="row__fc"></div><span></span>';
-    return `<li class="row" data-sort="${esc(r.name.toLowerCase())}" data-name="${esc(`${r.name} ${c.ticker} ${c.company || ''}`.toLowerCase())}" data-letter="${r.letter}" data-ret="${r.fc ? Math.round(r.fc.w.r) : ''}" data-next="${r.next}" data-dy="${r.dyv === null ? '' : r.dyv}" data-memo="${r.memo}" data-label="${esc(r.name)}">
-<div class="row__who"><a class="row__name" href="${first ? q.pagePath(c.slug, first) : '#'}">${esc(r.name)}</a><span class="row__tk">${esc(c.ticker)}${c.exchange ? ` · ${esc(c.exchange)}` : ''}</span></div>
-${fcHtml}
-<div class="row__meta"><span class="m m--rep"><i>${esc(W.rRep)}</i>${esc(q.shortFull(r.memo))}</span>${r.next ? `<span class="m m--res"><i>${esc(W.rRes)}</i>${esc(q.shortFull(r.next))}<em>${esc(W.rExp)}</em></span>` : ''}${r.dy ? `<span class="m m--dy"><i>${esc(W.rDy)}</i>${esc(nb(q.num(String(r.dy).replace(/(\d)%$/, '$1 %'))))}</span>` : ''}</div>
-<div class="row__links">${pageLinks(c)}</div>
-</li>`;
+    const fc = r.fc ? ` data-r="${Math.round(r.fc.w.r)}" data-f="${esc(F.price(r.start.value, cur))}|${esc(sd(r.start.day))}" data-c="${esc(q.dateWords(`${r.fc.col.slice(0, 3)} ${r.fc.col.slice(-4)}`))}"` : '';
+    return `<li${fc}${r.next ? ` data-n="${r.next}"` : ''}${r.dy ? ` data-y="${esc(nb(q.num(String(r.dy).replace(/(\d)%$/, '$1 %'))))}"` : ''} data-m="${r.memo}"><a href="${first ? q.pagePath(c.slug, first) : '#'}">${esc(r.name)}</a><span>${esc(c.ticker)}${c.exchange ? ` · ${esc(c.exchange)}` : ''}</span>${r.fc ? `<b>${esc(F.cell(r.fc.w, cur))}</b>` : ''}<span>${pageLinks(c)}</span></li>`;
   };
   const az = ['#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'].map((l) => `<button type="button"${letters[l] ? ' class="has"' : ' disabled'} data-letter="${l}" aria-pressed="false" aria-label="${esc(W.azAria(l === '#' ? W.azDigit : l, letters[l] || 0))}">${l}</button>`).join('');
   const st = W.status;
@@ -1974,7 +1985,7 @@ ${fcHtml}
 <p class="vnote">${esc(W.note)}</p>
 <p class="status" id="status" aria-live="polite"></p>
 <div class="hd-row"><button class="hd" type="button" data-view="az" aria-sort="ascending">${esc(W.hCo)}</button><button class="hd" type="button" data-view="ret" aria-sort="none">${esc(W.hFc)}</button><span></span><button class="hd" type="button" data-view="memo" aria-sort="none">${esc(W.hRep)}</button><button class="hd" type="button" data-view="week" aria-sort="none">${esc(W.hRes)}</button><button class="hd hd--r" type="button" data-view="dy" aria-sort="none">${esc(W.hDy)}</button><span class="hd-plain" style="justify-self:end">${esc(W.hPg)}</span></div>
-<ol class="rows" id="rows" data-na="8" data-total="${rows.length}" data-week="${d0}/${d1}" data-week-words="${esc(st.week.replace('{a}', sd(d0)).replace('{b}', sd(d1)))}" data-st='${esc(JSON.stringify(st))}'>
+<ol class="rows" id="rows" data-na="8" data-total="${rows.length}" data-week="${d0}/${d1}" data-locale="${esc(q.locale)}" data-week-words="${esc(st.week.replace('{a}', sd(d0)).replace('{b}', sd(d1)))}" data-st='${esc(JSON.stringify({ ...st, by: W.rBy('{m}'), from: W.rFrom('{p}', '{d}'), rep: W.rRep, res: W.rRes, exp: W.rExp, dy: W.rDy }))}'>
 ${rows.map(rowHtml).join('\n')}
 </ol>
 <p class="empty" id="empty" hidden></p>
@@ -1982,7 +1993,7 @@ ${rows.map(rowHtml).join('\n')}
   // the featured report: the newest report of the list with its first page, else the newest with a teaser
   const byNew = [...rows].sort((a, b) => b.memo.localeCompare(a.memo));
   const feat = (byNew.find((r) => q.teaserOf(r.c)?.first_page) || byNew.find((r) => q.teaserOf(r.c)?.text) || {}).c;
-  let inside = '', cta1 = '';
+  let inside = '', cta1 = '', viewerHtml = '';
   if (feat) {
     const fp = firstPage(q.teaserOf(feat), WW);
     const fname = q.shortName(feat), memo = String(feat.memo_date || '').slice(0, 10);
@@ -1994,9 +2005,14 @@ ${rows.map(rowHtml).join('\n')}
     if (fp) inside = `<aside class="inside inside--peek" aria-labelledby="inside-h">
 <h2 id="inside-h">${esc(W.insideH(fname))}</h2>
 <p class="inside__sub">${esc(WW.insideSub(q.humanDay(memo)))}</p>
-<div class="mframe"><a class="mframe__pg mframe__link" href="${q.pagePath(feat.slug, ['stock', 'earnings', 'dividend'].find((t) => q.hasPage(feat, t)) || 'stock')}"><div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(feat.ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (len - 3) * (len < 3 ? 8 : 16)});max-width:calc(var(--u) * ${330 - (len - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(feat.company || fname)}</span><span class="mf-upd">${esc(WW.updated(q.shortFull(memo)))}</span></div>
-<section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? WW.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section></a></div>
+<div class="mframe"><div class="mframe__pg"><div class="mframe__bar"><svg class="mf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg><span class="mf-tk">${esc(feat.ticker)}</span><span class="mf-name" style="left:calc(var(--u) * ${96 + (len - 3) * (len < 3 ? 8 : 16)});max-width:calc(var(--u) * ${330 - (len - 3) * 16});overflow:hidden;text-overflow:ellipsis">${esc(feat.company || fname)}</span><span class="mf-upd">${esc(WW.updated(q.shortFull(memo)))}</span></div>
+<section class="mframe__sec"><h3 class="mf-h2">${esc(fp.full ? WW.execSummary : fp.title)}</h3>${fp.peekH ? `<h4 class="mf-h3">${fp.peekH}</h4>` : ''}${fp.peekP}</section></div>
+<button type="button" class="mframe__open" data-open-viewer aria-label="${esc(WW.openAria(fname))}"></button>
+<button type="button" class="mframe__exp" data-open-viewer aria-label="${esc(WW.expandAria(fname))}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></svg>${esc(WW.expand)}</button></div>
 </aside>`;
+    if (fp) viewerHtml = reportViewer({ W: WW, fp, chapters: (q.chaptersOf(feat) || []).filter((c) => /^\d+\./.test(String(c))), allChapters: q.chaptersOf(feat) || [], company: fname, memoDay: q.humanDay(memo), ticker: feat.ticker, exch: feat.exchange || '',
+      fullName: feat.company || fname, memoIso: memo, shortMemo: q.shortFull(memo), priceShort: q.shortFull(String(feat.price_date || memo).slice(0, 10)), htmlLang: q.htmlLang, counts: feat.counts || {},
+      words: q.num((feat.counts?.words || 0).toLocaleString('en-US')), num: q.num, isFree: free, cta, nCh: feat.counts?.chapters || 8 });
   }
   const more = q.more.length ? `<section class="sec links" aria-labelledby="more-h"><h2 id="more-h">${esc(W.moreH)}</h2><div class="links__grid"><div><div class="chips">${q.more.join('')}</div></div></div></section>` : '';
   const close = `<section class="close" aria-labelledby="close-h"><div class="close__in">
@@ -2015,5 +2031,6 @@ ${inside}
 ${q.extra || ''}
 ${more}
 ${close}
-</main>`;
+</main>
+${viewerHtml}`;
 }
