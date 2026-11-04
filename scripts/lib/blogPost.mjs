@@ -255,7 +255,7 @@ export function renderBlogPost(q) {
 <div class="rframe__bar"><a class="rf-back" href="/" aria-label="All posts">${ARROW}</a><span class="rf-tk">${esc(ticker)}</span><span class="rf-name">${esc(fullName)}</span>${updated ? `<span class="rf-upd">Updated ${esc(updated)}</span>` : ''}<span class="rf-share" aria-hidden="true">${SHARE}</span></div>
 <details class="rf-chap"><summary>Chapters</summary><ol>${menu}</ol></details>
 <div class="rframe__main">
-<aside class="rail" aria-label="Contents"><div class="rail__head">Contents</div><nav class="rail__nav" aria-label="Contents">${rail}</nav></aside>
+<aside class="rail" aria-label="Contents"><div class="rail__head"><span class="rail__lbl">Contents</span><button type="button" class="rail__tog" aria-controls="rail-nav" aria-expanded="true" aria-label="Hide the contents">Hide</button></div><nav class="rail__nav" id="rail-nav" aria-label="Contents">${rail}</nav></aside>
 <div class="rframe__body"><div class="blog-report" lang="en"><div class="br-column">
 <header class="br-ui"><div class="br-kicker">${[ticker, exch, fullName].filter(Boolean).map((x, i) => `<span>${i ? '· ' : ''}${esc(x)}</span>`).join('')}</div>
 <p class="br-title">${esc(fullName)} (${esc(ticker)})</p>
@@ -301,6 +301,7 @@ ${links}
 <script>(function(){var grps=document.querySelectorAll('.rail__grp'),hs=document.querySelectorAll('.br-chapter>h2'),cur=null,t=0;
 function paint(){t=0;var id=hs.length?hs[0].id:null;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<innerHeight*0.3)id=hs[i].id;else break;}if(id===cur)return;cur=id;grps.forEach(function(g){var on=g.getAttribute('data-ch')===id;g.querySelector('.rail__a').classList.toggle('is-on',on);var s=g.querySelector('.rail__sub');if(s)s.hidden=!on;});}
 if(grps.length&&hs.length){addEventListener('scroll',function(){if(!t)t=requestAnimationFrame(paint);},{passive:true});paint();}
+var rf=document.querySelector('.rframe'),tg=document.querySelector('.rail__tog');if(rf&&tg)tg.addEventListener('click',function(){var f=rf.classList.toggle('is-folded');tg.setAttribute('aria-expanded',f?'false':'true');tg.setAttribute('aria-label',f?'Show the contents':'Hide the contents');tg.textContent=f?'Contents':'Hide';});
 var cm=document.querySelector('.rf-chap');if(cm)cm.addEventListener('click',function(e){if(e.target.closest('a'))cm.open=false;});})();</script>`;
   const chapterText = chapters.map((ch) => textOf(ch.body)).join(' ');
   const words = chapterText.split(/\s+/).filter(Boolean).length;

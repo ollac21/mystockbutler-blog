@@ -202,6 +202,13 @@
   .rframe__main{display:flex;align-items:flex-start}
   .rframe__body{flex:1}
   .rail{display:flex;width:272px}
+  .rframe .rail__head{justify-content:space-between}
+  .rframe .rail__tog{display:inline-block;width:auto;margin-left:auto;appearance:none;border:1px solid #E3E3DD;border-radius:999px;background:#fff;padding:3px 10px;font:600 11px/1.4 var(--font);color:#137C46;cursor:pointer;text-transform:none;letter-spacing:0}
+  .rframe .rail__tog:hover{border-color:#137C46;background:#fff;color:#137C46}
+  .rframe.is-folded .rail{width:auto;border-right:0}
+  .rframe.is-folded .rail__lbl,.rframe.is-folded .rail__nav{display:none}
+  .rframe.is-folded .rail__head{border-bottom:0;padding:12px 0 0 16px}
+  .rframe.is-folded .blog-report .br-column>*{max-width:52rem}
   .rframe .blog-report{padding:24px 56px 64px}
   .rframe .blog-report .br-column>*{max-width:46rem;margin-inline:0}
   .rframe .br-chapter{padding-left:0;padding-right:0}
