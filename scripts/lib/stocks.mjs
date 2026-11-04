@@ -18,6 +18,7 @@ import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox,
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 import { PAGE_CSS_PATH, PAGE_JS_PATH, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, stripHtml } from './stockPage.mjs';
+import { SITE_PAGES, renderSitePage, sitePageProblem } from './sitePages.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -2435,6 +2436,33 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     hubs.push(k);
     hubPaths.add(k.path);
   }
+  // B115 round 3: the approved tool, trust, guide and calculator pages (sitePages.mjs), each while its guard holds
+  const sitePages = { drawn: [], kept: [] };
+  if (v2On()) {
+    const byTicker = new Map(live.map((c) => [c.ticker, c]));
+    for (const h of hubs) {
+      const rec = SITE_PAGES.get(h.path);
+      if (!rec) continue;
+      const why = sitePageProblem(rec, { byTicker, today: ctx.today });
+      if (why) { sitePages.kept.push({ path: h.path, why }); continue; }
+      const draw = (page, picture) => {
+        const lang = rec.lang;
+        const home = LANG_CFG[lang] ? LANG_CFG[lang].root : '/stocks/';
+        const out = renderSitePage(rec, { shell, SITE, ORG, exists: (p) => ctx.exists(p) || hubPaths.has(p), byTicker, alternates: page.alternates || [],
+          strip: stripHtml(lang, stripOf(ctx, lang), home), results: lang === 'en' && hubPaths.has('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
+          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
+        page.html = out.html;
+        page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
+        page.title = rec.title;
+        page.description = rec.description;
+        page.sitePage = rec.id;
+        return page;
+      };
+      draw(h, h.picture);
+      if (h.withoutPicture) { const old = h.withoutPicture; h.withoutPicture = () => draw(old(), null); }
+      sitePages.drawn.push(h.path);
+    }
+  }
   const compared = [];
   const finalPaths = new Set(pass.map((b) => b.path));
   const cctx = { ...ctx, exists: (p) => finalPaths.has(p) || hubPaths.has(p) || comparePaths.has(p) || ALT_PATHS.has(p) || DIVCALC_PATHS.has(p) };
@@ -2475,6 +2503,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
     // plan 2-3: the earnings titles this build changed (English: the announced date; German: the past date taken out)
     earningsTitles: Object.fromEntries(['date', 'passed'].map((k) => [k, pass.filter((b) => b.datedKind === k).map((b) => ({ path: b.path, title: b.title }))])),
+    sitePages,
     divcalc: { ...divcalc.report, embedded: Object.fromEntries(['en', ...LANGS].map((l) => [l, pass.filter((b) => b.type === 'dividend' && (b.lang || 'en') === l && b.html.includes('<section class="dce" id="dce">')).length])) },
   };
   return { pages: pass, hubs, held, report, compares: compared, divcalc: divcalc.data };

@@ -1,0 +1,297 @@
+/* B115 round 3: the approved calc mockup's own rules, on top of page.css (~/b115-cats, read-only copy) */
+
+/* ===== reviews2: the tool-review page parts (on top of the approved forecast page's CSS) ===== */
+.answer__label{margin-bottom:2px}
+.facts{margin-top:4px;border-top:1px solid var(--rule)}
+.facts>div{display:grid;grid-template-columns:96px minmax(0,1fr);column-gap:12px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.facts dt{font:650 13px/1.45 var(--font);color:var(--muted);padding-top:2px}
+.facts dd{font:450 15px/1.5 var(--font);color:var(--body)}
+.facts dd b{color:var(--ink);font-weight:700}
+.facts .big{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline}
+.facts .big span{font:800 26px/1.1 var(--font);letter-spacing:-.02em;color:var(--ink)}
+.facts .big small{display:block;font:450 12.5px/1.35 var(--font);color:var(--muted);letter-spacing:0}
+.answer__own a{color:var(--primary);font-weight:600}
+.alt1{margin-top:18px}
+.alt1__k{font:700 12px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--primary)}
+.alt1__h{margin-top:6px;font:800 21px/1.25 var(--font);letter-spacing:-.015em;color:var(--ink);text-wrap:balance}
+.alt1__p{margin-top:6px;font:450 15.5px/1.55 var(--font);color:var(--body);max-width:60ch}
+.alt1 .cta1{margin-top:12px}
+/* the three answers from the report */
+.asks{margin-top:8px;border-top:1px solid var(--rule)}
+.asks li{padding:14px 0;border-bottom:1px solid var(--rule)}
+.asks__q{font:700 15.5px/1.35 var(--font);color:var(--ink)}
+.asks__a{margin-top:4px;font:400 16px/1.55 Georgia,'Times New Roman',serif;color:var(--body)}
+.asks__a b{font-family:var(--font);font-weight:700;color:var(--ink)}
+.asks__c{margin-top:6px;font:500 13px/1.3 var(--font);color:var(--muted)}
+.asks .bridge{margin-top:8px}
+/* the plans */
+.plans{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+.plan{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:16px 18px}
+.plan__n{font:800 17px/1.2 var(--font);color:var(--ink)}
+.plan__who{margin-top:2px;font:450 13.5px/1.4 var(--font);color:var(--muted);font-style:italic}
+.plan__p{margin-top:10px;font:800 28px/1 var(--font);letter-spacing:-.02em;color:var(--ink)}
+.plan__p small{font:500 13px/1.3 var(--font);color:var(--muted);letter-spacing:0}
+.plan__m{margin-top:4px;font:450 13.5px/1.4 var(--font);color:var(--muted)}
+.plan ul{margin-top:10px;padding-top:10px;border-top:1px solid var(--rule)}
+.plan li{position:relative;padding-left:16px;font:450 14px/1.5 var(--font)}
+.plan li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:9999px;background:var(--primary);opacity:.55}
+.plan--free{background:transparent;border-style:dashed}
+/* worth it: two sides */
+.worth{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+.worth__s{border-radius:16px;padding:16px 18px;background:var(--card);border:1px solid var(--rule)}
+.worth__s--us{border:1.5px solid rgba(19,124,70,.45);background:#F1F8F3}
+.worth__h{font:800 16.5px/1.3 var(--font);color:var(--ink)}
+.worth__s ul{margin-top:8px}
+.worth__s li{position:relative;padding-left:18px;margin-top:6px;font:450 15px/1.5 var(--font)}
+.worth__s li::before{content:"✓";position:absolute;left:0;top:0;color:var(--primary);font-weight:700}
+.worth__s .textlink{margin-top:10px;padding:6px 0}
+/* alternatives by job */
+.jobs{margin-top:14px;border-top:1px solid var(--rule)}
+.jobs li{display:grid;grid-template-columns:minmax(0,1fr);row-gap:2px;padding:13px 0;border-bottom:1px solid var(--rule)}
+.jobs__j{font:650 13.5px/1.35 var(--font);color:var(--muted)}
+.jobs__t{font:700 16px/1.4 var(--font);color:var(--ink)}
+.jobs__t small{font-weight:450;color:var(--body);font-size:14.5px}
+.jobs li.on{background:#F1F8F3;margin:0 -12px;padding:13px 12px;border-radius:12px;border-bottom-color:transparent}
+.jobs li.on .textlink{justify-self:start;padding:4px 0}
+/* variant B: the two-sided verdict in the first screen */
+.vs{display:grid;grid-template-columns:1fr;gap:0;margin-top:6px;border-top:1px solid var(--rule)}
+.vs>div{padding:12px 0;border-bottom:1px solid var(--rule)}
+.vs__k{font:650 13px/1.4 var(--font);color:var(--muted)}
+.vs__t{margin-top:2px;font:450 15px/1.5 var(--font)}
+.vs__t b{color:var(--ink)}
+.vs__us{background:#F1F8F3;margin:0 -12px;padding:12px 12px!important;border-radius:12px;border-bottom:0!important}
+/* variant C: the job picker */
+.pickj{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.pickj label{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:9999px;border:1.5px solid var(--rule);background:var(--card);font:600 14px/1.2 var(--font);color:var(--body);cursor:pointer}
+.pickj input{position:absolute;opacity:0;pointer-events:none}
+.pickj input:checked+label{border-color:var(--primary);background:#F1F8F3;color:var(--primary)}
+.pickp{margin-top:12px}
+.pickp>div{display:none}
+#j1:checked~.pickp .p1,#j2:checked~.pickp .p2,#j3:checked~.pickp .p3{display:block}
+.srcline{margin-top:28px;font:450 12.5px/1.55 var(--font);color:var(--muted);max-width:none!important}
+.srcline a{color:var(--muted)}
+@media (min-width:640px){.plans{grid-template-columns:repeat(3,minmax(0,1fr))}.worth{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){
+  .facts>div{grid-template-columns:104px minmax(0,1fr);padding:9px 0}
+  .alt1{margin-top:16px}
+  .jobs li{grid-template-columns:240px minmax(0,1fr);column-gap:24px;align-items:baseline}
+  .jobs li.on .textlink{grid-column:2}
+  .sec.cost{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  .sec.cost>*{grid-column:1}
+  .sec.cost>.plans{grid-column:2;grid-row:1 / span 6;margin-top:0}
+  .asksec .asks{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+  .asksec .asks li:nth-child(-n+2){border-top:0}
+}
+/* layout D: the searched answers, then the green alternative with a report link */
+.d-what{margin-top:4px;font:450 15.5px/1.5 var(--font);color:var(--body)}
+.ansD .facts{margin-top:10px}
+.ansD .facts>div{grid-template-columns:72px minmax(0,1fr);padding:9px 0}
+.ansD .facts .big span{font-size:25px}
+.d-sm{display:block;margin-top:4px;font:450 13.5px/1.45 var(--font);color:var(--muted)}
+.d-us{margin:12px -12px 4px;padding:12px 12px 12px;border-radius:12px;background:#F1F8F3;border:1px solid rgba(19,124,70,.25)}
+.d-us .vs__k{color:var(--primary);font-weight:700}
+.rep{display:flex;align-items:center;gap:10px;width:100%;margin-top:10px;padding:9px 12px;border-radius:10px;border:1px solid rgba(19,124,70,.3);background:#fff;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.rep__tk{flex:none;font:700 13px/1 var(--mono);color:var(--ink);background:#EEF1EC;border-radius:6px;padding:5px 6px}
+.rep__n{flex:1;min-width:0;font:700 14.5px/1.25 var(--font);color:var(--ink)}
+.rep__n small{display:block;font:450 12.5px/1.3 var(--font);color:var(--muted)}
+.rep__go{flex:none;font:650 14px/1 var(--font);color:var(--primary)}
+.cta1__row{flex-wrap:wrap}
+@media (min-width:1024px){.ansD .rep{display:none}.cta1__row{flex-wrap:wrap!important;row-gap:4px}}
+/* D2: phones read the answer box as short lines, the price pair side by side */
+.ansD .d-us .vs__t{font-size:14.5px}
+@media (max-width:1023px){
+  .ansD .facts>div{display:block;padding:8px 0}
+  .ansD .facts dt{display:inline;font:700 15px/1.5 var(--font);color:var(--ink)}
+  .ansD .facts dt::after{content:" : "}
+  .ansD .facts dd{display:inline;font-size:15px}
+  .ansD .facts>div:first-child dt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .ansD .facts .big{gap:4px 22px}
+  .ansD .rep{display:none}
+  .d-us{margin:10px -10px 2px;padding:10px 10px}
+}
+@media (min-width:1024px){.cta1 .btn{padding:0 24px;font-size:16.5px}.vD .cta1__row{flex-wrap:nowrap!important}}
+.mf-name.w4{left:calc(var(--u) * 106)}
+html[lang=en] .ansD .facts dt::after{content:": "}
+/* phones: the plan cards are short — name and price on one line, the features as one line */
+@media (max-width:639px){
+  .plan{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;align-items:baseline;padding:14px 16px}
+  .plan__n{grid-column:1;grid-row:1}
+  .plan__p{grid-column:2;grid-row:1;margin-top:0;font-size:24px;text-align:right}
+  .plan__p small{display:block;font-size:12px}
+  .plan__who,.plan__m,.plan ul{grid-column:1 / -1}
+  .plan ul{display:flex;flex-wrap:wrap;gap:2px 0}
+  .plan ul li{padding-left:0;font-size:13.5px}
+  .plan ul li::before{display:none}
+  .plan ul li:not(:last-child)::after{content:"·";margin:0 7px;color:var(--muted)}
+}
+/* ===== calc + guides (B115): the calculator box, its result, the coverage and DRIP sections, the guide's steps.
+   On top of the approved forecast page's CSS (tsm.html) and the review page's r2.css. ===== */
+/* the result (the answer box's big number) */
+.ansC .answer__label{margin-bottom:2px}
+.res{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 12px;margin-top:4px}
+.res__n{font:800 44px/1.05 var(--font);letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums}
+.res__by{font:500 15.5px/1.4 var(--font);color:var(--body);flex:1 1 220px}
+.res2{display:grid;grid-template-columns:1fr 1fr;margin-top:12px;border-top:1px solid var(--rule)}
+.res2>div{padding:10px 10px 8px 0}.res2>div+div{padding-left:14px;border-left:1px solid var(--rule)}
+.res2__n{display:block;font:800 21px/1.15 var(--font);color:var(--primary);font-variant-numeric:tabular-nums}
+.res2__l{display:block;font:500 12.5px/1.35 var(--font);color:var(--muted);margin-top:3px}
+.years{margin-top:6px}
+.years summary,.more summary{font:650 14px/1.3 var(--font);color:var(--primary);cursor:pointer;padding:6px 0}
+.years table{margin-top:6px}
+.hook{margin-top:10px;padding:10px 12px;border-radius:12px;background:#FBF1EE;font:450 14.5px/1.45 var(--font);color:var(--body)}
+.hook b{color:var(--ink)}
+/* the form */
+.calc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:end;gap:10px 12px;margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.fl label{display:block;font:650 13px/1.3 var(--font);color:var(--muted);margin-bottom:4px}
+.fl input:not([type=checkbox]){width:100%;font:600 16px/1.3 var(--font);padding:10px 12px;border:1px solid #CFCDC4;border-radius:10px;background:#fff;color:var(--ink);font-variant-numeric:tabular-nums}
+.fl input:focus-visible{outline:3px solid #9FC9B4;outline-offset:1px}
+.fl input[aria-invalid=true]{border-color:#B3261E}
+#c-t{text-transform:uppercase}
+.in{display:flex;align-items:center;gap:6px}.in span{font:700 15px/1 var(--font);color:var(--muted)}
+.ck{display:flex;align-items:center;gap:8px;align-self:end;padding-bottom:11px}
+.ck label{margin:0;font:600 14px/1.3 var(--font);color:var(--ink)}
+.ck input{width:20px;height:20px;accent-color:var(--primary);margin:0}
+.err{font:450 12.5px/1.4 var(--font);color:#B3261E;margin-top:4px}.err:empty{display:none}
+.more{grid-column:1/-1}
+.more__g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px;margin-top:8px}
+.calc .btn--ghost{grid-column:1/-1;justify-self:start;min-height:40px;padding:0 20px;background:#fff;color:var(--primary);border:1.5px solid rgba(19,124,70,.45);font-size:14.5px}
+.calc .btn--ghost:hover{background:#F1F8F3}
+.resw{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)}
+.vB .calc{margin-top:6px;padding-top:0;border-top:0}
+.calcw{margin-top:20px;background:var(--card);border-radius:18px;border:1px solid rgba(17,24,20,.06);box-shadow:var(--shadow);padding:6px 18px 16px}
+/* tables */
+.tw{overflow-x:auto;margin-top:16px;-webkit-overflow-scrolling:touch}
+.tw table{width:100%;border-collapse:collapse;font:500 14.5px/1.4 var(--font);font-variant-numeric:tabular-nums;background:var(--card)}
+.tw th,.tw td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}
+.tw th{font-weight:650;color:var(--muted);font-size:13px}
+.tw th:first-child,.tw td:first-child{text-align:left;white-space:normal}
+.tw tbody th{font-weight:450;color:var(--body);font-size:14.5px}
+.tw tbody th b{color:var(--ink);font-weight:700}.tw tbody th small{color:var(--muted);font-size:12.5px;margin-left:4px}
+.tw .over{color:var(--bear);font-weight:700}
+.tw a{color:var(--primary);font-weight:650;text-decoration:none}
+.covt td:first-child{min-width:160px}
+.popt td:last-child{padding-right:0}
+/* report quote */
+.rq{margin:10px 0 0;padding:12px 16px;border-left:3px solid var(--primary);background:var(--card);border-radius:0 12px 12px 0;font:400 16.5px/1.6 Georgia,'Times New Roman',serif;color:var(--body)}
+/* how much: the formula */
+.formula{margin-top:16px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:14px 18px}
+.formula__f{font:600 13.5px/1.3 var(--font);color:var(--muted)}
+.formula__x{margin-top:4px;font:800 24px/1.25 var(--font);letter-spacing:-.015em;color:var(--ink);font-variant-numeric:tabular-nums}
+.drip{margin-top:12px}
+.drip li{position:relative;padding-left:18px;margin-top:8px;font:450 16px/1.55 var(--font)}
+.drip li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--primary)}
+.drip li+li::before{background:#B9DCC7}
+.drip b{color:var(--ink)}
+.sec .fig img{border-radius:14px;border:1px solid var(--rule)}
+.popsec .fine{margin-top:10px}
+/* guides: the steps in the answer box */
+.steps{margin-top:10px;counter-reset:s;border-top:1px solid var(--rule)}
+.steps li{position:relative;padding:9px 0 9px 36px;border-bottom:1px solid var(--rule);font:450 15px/1.45 var(--font);color:var(--body)}
+.steps li:last-child{border-bottom:0}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:9px;width:24px;height:24px;border-radius:9999px;background:#E3F1E8;color:var(--primary);font:800 13px/24px var(--font);text-align:center}
+.steps b{color:var(--ink)}
+.ans__p{margin-top:6px;font:450 16px/1.55 var(--font);color:var(--body)}
+.ans__p b{color:var(--ink)}
+.qlist{margin-top:12px;counter-reset:q;border-top:1px solid var(--rule)}
+.qlist li{position:relative;padding:12px 0 12px 40px;border-bottom:1px solid var(--rule);font:450 15.5px/1.5 var(--font)}
+.qlist li::before{counter-increment:q;content:counter(q);position:absolute;left:0;top:12px;width:28px;height:28px;border-radius:8px;background:var(--card);border:1px solid var(--rule);color:var(--ink);font:800 14px/28px var(--font);text-align:center}
+.qlist b{color:var(--ink)}
+.three{margin-top:12px;border-top:1px solid var(--rule)}
+.three li{padding:12px 0;border-bottom:1px solid var(--rule)}
+.three__q{font:700 16px/1.35 var(--font);color:var(--ink)}
+.three__a{margin-top:4px;font:400 16px/1.6 Georgia,'Times New Roman',serif;color:var(--body)}
+.three__a b{font-family:var(--font);font-weight:700;color:var(--ink)}
+.three .bridge{margin-top:10px}
+.two{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+.two>div{border-radius:16px;padding:16px 18px;background:var(--card);border:1px solid var(--rule)}
+.two>div.us{border:1.5px solid rgba(19,124,70,.45);background:#F1F8F3}
+.two h3{font:800 16.5px/1.3 var(--font);color:var(--ink)}
+.two li{position:relative;padding-left:18px;margin-top:6px;font:450 15px/1.5 var(--font)}
+.two li::before{content:"✓";position:absolute;left:0;top:0;color:var(--primary);font-weight:700}
+.two .textlink{margin-top:8px;padding:6px 0}
+:lang(zh) .lead,:lang(zh) .after,:lang(zh) .three__a,:lang(zh) .steps li{line-height:1.75}
+@media (max-width:639px){.res__n{font-size:40px}.tw th,.tw td{padding:8px 6px}}
+@media (min-width:640px){.two{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){
+  .calc{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 14px}
+  .calc .fl:nth-child(1){grid-column:1}
+  .more__g{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .calc .more{grid-column:1 / span 3;align-self:center}
+  .calc .btn--ghost{grid-column:4;justify-self:end}
+  .page>.calcw{grid-column:1;grid-row:4}
+  .res__n{font-size:48px}
+  .res2__n{font-size:22px}
+  .covsec,.dripsec,.g-pred{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:56px;align-items:start}
+  .covsec>*,.dripsec>*,.g-pred>*{grid-column:1}
+  .covsec>.fig{grid-column:2;grid-row:1 / span 5;margin:0}
+  .covsec>.tw{grid-column:1 / -1}
+  .dripsec>.fig,.g-pred>.fig{grid-column:2;grid-row:1 / span 4;margin:0}
+  .howsec>.lead,.howsec>.after,.msec>p{max-width:68ch}
+  .howsec .formula{max-width:560px}
+  .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:36px;border-top:0}
+  .three li{border-top:1px solid var(--rule);border-bottom:0}
+  .qlist{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;border-top:0}
+  .qlist li{border-top:1px solid var(--rule);border-bottom:0}
+}
+
+/* variant D: ticker + amount on top, the rest folded under a live summary */
+.ansD2 .calcD{margin-top:2px;padding-top:0;border-top:0}
+.ansD2 .calcD .more{margin-top:-2px}
+.ansD2 .calcD summary{list-style:none;font:500 13.5px/1.45 var(--font);color:var(--muted);padding:2px 0}
+.ansD2 .calcD summary::-webkit-details-marker{display:none}
+.ansD2 .calcD summary b{color:var(--primary);font-weight:650;white-space:nowrap}
+.ansD2 .calcD .more__g{align-items:end;padding:10px 0 4px}
+.ansD2 .calcD .more__g .btn--ghost{grid-column:1/-1;justify-self:start}
+.ansD2 .resw{margin-top:10px;padding-top:10px}
+.ansD2 .years{display:none}
+@media (min-width:1024px){
+  .ansD2 .calcD{grid-template-columns:150px minmax(0,1fr)}
+  .ansD2 .calcD .more{grid-column:1 / -1}
+  .ansD2 .calcD .more__g{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .ansD2 .calcD .more__g .btn--ghost{grid-column:4;justify-self:end}
+}
+
+.cond{margin-top:8px;font:500 13.5px/1.45 var(--font);color:var(--muted)}
+.ansD2 .res2{margin-top:6px}
+.ansD2 .calcD{grid-template-columns:minmax(0,1.15fr) minmax(0,1.25fr) minmax(0,.7fr)}
+.ansD2 .calcD--tax{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ansD2 .calcD .more{grid-column:1 / -1}
+.ansD2 .calcD .c-go{grid-column:1 / -1;justify-self:stretch;margin-top:2px}
+@media (min-width:1024px){
+  .ansD2 .calcD{grid-template-columns:minmax(0,1.3fr) minmax(0,1.2fr) minmax(0,.7fr) auto}
+  .ansD2 .calcD--tax{grid-template-columns:minmax(0,1.3fr) minmax(0,1.1fr) minmax(0,.6fr) minmax(0,.7fr) auto}
+  .ansD2 .calcD .c-go{grid-column:auto;align-self:start;margin-top:21px;min-height:44px}
+  .ansD2 .calcD .more{grid-column:1 / -1;order:9}
+  .ansD2 .calcD .more__g{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+@media (max-width:639px){.hide-sm{display:none}.ansD2 .hook{display:none}.ansD2 .calcD .c-go{min-height:40px}.ansD2 .calcD{grid-template-columns:minmax(0,1.35fr) minmax(0,1.15fr) minmax(0,.6fr)}.ansD2 .calcD--tax{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.qbox{margin-top:16px;background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:6px 18px 14px}
+.qbox .qlist{margin-top:0;border-top:0}
+.qbox .qlist li:last-child{border-bottom:0}
+.qcopy{margin-top:8px;min-height:40px;padding:0 18px;background:#fff;color:var(--primary);border:1.5px solid rgba(19,124,70,.45);font-size:14.5px}
+.exsec .fine{margin-top:12px}
+@media (min-width:1024px){.qbox{padding:10px 24px 16px}.qbox .qlist li{border-top:0;border-bottom:1px solid var(--rule)}.qbox .qlist li:nth-last-child(-n+2){border-bottom:0}}
+
+.formulas{display:grid;grid-template-columns:1fr;gap:10px;margin-top:16px}
+.formulas .formula{margin-top:0}
+.covq .after:first-child{margin-top:16px}
+@media (min-width:768px){.formulas{grid-template-columns:repeat(3,minmax(0,1fr))}.formulas .formula__x{font-size:21px}}
+@media (min-width:1024px){
+  .covsec{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .covsec>h2,.covsec>.lead{grid-column:1 / -1}
+  .covsec>.lead{max-width:76ch}
+  .covsec>.fig{grid-column:1;grid-row:3;margin:20px 0 0}
+  .covsec>.covq{grid-column:2;grid-row:3}
+  .covsec>.covq .after:first-child{margin-top:20px}
+  .covsec>.tw{grid-column:1 / -1;grid-row:4}
+  .covsec .covq .bridge{margin-top:14px}
+}
+
+.tw .sm{display:none}
+.fig picture{display:block}
+.fig picture img{width:100%}
+@media (max-width:639px){.tw .lg{display:none}.tw .sm{display:inline}.popt .cg{display:none}.covt td:first-child{min-width:0}.tw th,.tw td{padding:8px 5px}.popt th,.popt td{white-space:normal}}
+.popt td:last-child{white-space:nowrap!important}
+.links__grid>div:only-child{grid-column:1 / -1}
+.only-sm{display:inline}@media (min-width:640px){.only-sm{display:none}}

@@ -280,6 +280,9 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   await writeFile(path.join(out, 'stocks/assets/page-lists.css'), pageCss + (await asset('page-lists.css')));
   await writeFile(path.join(out, 'stocks/assets/lists.js'), await asset('lists.js'));
   await writeFile(path.join(out, 'stocks/assets/page-dividend.css'), pageCss + DIVCALC_CSS + (await asset('page-dividend.css')));
+  for (const t of ['tools', 'review', 'trust', 'calc', 'hubs']) {                    // B115 round 3: the approved pages' own sheets
+    if (existsSync(new URL(`../assets/page-${t}.css`, import.meta.url))) await writeFile(path.join(out, `stocks/assets/page-${t}.css`), pageCss + (await asset(`page-${t}.css`)));
+  }
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
@@ -318,6 +321,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   console.log(`Earnings titles: ${report.earningsTitles.date.length} English with the announced date (${Object.keys(earningsDates || {}).length} on the checked list), ${report.earningsTitles.passed.length} German with the past date taken out.`);
   console.log(`Dividend calculator: ${report.divcalc.paths.length} page(s) (${report.divcalc.paths.join(', ')}); ${report.divcalc.rows} companies in its data, ${report.divcalc.prefilled} pre-filled; examples ${JSON.stringify(report.divcalc.examples)}; inside ${Object.values(report.divcalc.embedded).reduce((x, y) => x + y, 0)} dividend page(s) ${JSON.stringify(report.divcalc.embedded)}.`);
   console.log(`Comparisons: ${report.compares} page(s) drawn of ${compares.length} pair(s); held back ${report.compareHeld.length}.`);
+  console.log(`Approved pages (B115 round 3): ${report.sitePages.drawn.length} drawn (${report.sitePages.drawn.join(', ')}); ${report.sitePages.kept.length} kept as they were${report.sitePages.kept.length ? ` (${report.sitePages.kept.map((k) => `${k.path}: ${k.why}`).join('; ')})` : ''}.`);
   for (const h of [...held.slice(0, 40), ...report.compareHeld.slice(0, 20)]) console.log(`  held ${h.path}: ${h.fails.join('; ')}`);
   return { sitemaps, imageSitemaps: pictured.length ? [IMAGE_SITEMAP] : [], llms, llmsHubs, report: full, entries: Object.values(sitemaps).flat().map(({ url, lastmod }) => ({ url, lastmod })), site: SITE };
 }
