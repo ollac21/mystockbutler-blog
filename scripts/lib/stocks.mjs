@@ -15,11 +15,11 @@ import { APP, AUTHOR, FONT_LINKS, LANDING, SHARE_IMAGE, esc, imageTags } from '.
 import { aiScript, measuringScript } from './consent.mjs';
 import { LANDING_WORDS } from './landingWords.mjs';
 import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox, toolNumbers, toolPictureProblems } from './guides.mjs';
-import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, renderAbout, renderTrust } from './about.mjs';
+import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, loadAbout, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 import { PAGE_CSS_PATH, PAGE_JS_PATH, WORDS as PAGE_WORDS, firstPage, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, reportViewer, stripHtml } from './stockPage.mjs';
 import { renderCompareIndexBody, renderWeekBody } from './hubPages.mjs';
-import { SITE_PAGES, renderSitePage, sitePageProblem } from './sitePages.mjs';
+import { SITE_PAGES, renderMdFrame, renderSitePage, sitePageProblem } from './sitePages.mjs';
 
 export const SITE = 'https://blog.mystockbutler.com';
 export const GA_ID = 'G-S2WF7CSPD6';
@@ -2503,6 +2503,39 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         page.description = out.description;
         page.sitePage = rec.id;
         page.files = rec.files || [];                      // the page's own pictures (SVG), written beside it
+        return page;
+      };
+      draw(h, h.picture);
+      if (h.withoutPicture) { const old = h.withoutPicture; h.withoutPicture = () => draw(old(), null); }
+      sitePages.drawn.push(h.path);
+    }
+    // the tool pages and About pages with no approved page of their own: their written text in the approved frame (renderMdFrame)
+    const FEAT = { en: 'NVDA', fr: 'TTE.PA', de: 'SAP.DE', 'zh-HK': '0700.HK' };
+    const ROOT = { en: '/', fr: '/fr/', de: '/de/', 'zh-HK': '/zh/stocks/' };
+    const aboutDocs = loadAbout();
+    for (const h of hubs) {
+      if (h.sitePage || !(h.alt || h.about) || h.path === ALT_ROOT) continue;
+      const g = h.alt ? ALTS.find((a) => a.path === h.path) : aboutDocs.find((a) => a.path === h.path);
+      if (!g) continue;
+      const l = g.lang;
+      const teaserOf = (c) => (l === 'en' ? c.teaser : c.translations?.[l]?.teaser);
+      const pick = [String(g.example || '').trim(), FEAT[l]].map((t) => byTicker.get(t)).find((c) => c && teaserOf(c)?.text && ctx.exists(pagePath(c.slug, 'stock', l)));
+      if (!pick) { sitePages.kept.push({ path: h.path, why: 'no featured report with a page in its language' }); continue; }
+      const home = LANG_CFG[l] ? LANG_CFG[l].root : '/stocks/';
+      const exists = (p) => ctx.exists(p) || hubPaths.has(p);
+      const links = h.alt ? [
+        ...TYPES.map((t) => [t, pagePath(pick.slug, t, l)]).filter(([, p]) => exists(p)).map(([t, p]) => `<a href="${p}">${esc(UI[l].sibling(t, shortName(pick)))}</a>`),
+        ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT).map((o) => `<a href="${o.path}">${esc(o.title)}</a>`),
+        l === 'en' ? `<a href="${ALT_ROOT}">${esc(ALT_WORDS.en)}</a>` : `<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`] : [`<a href="${home}">${esc(UI[l].allStocks)}</a>`];
+      const draw = (page, picture) => {
+        const out = renderMdFrame(g, { shell, SITE, ORG, exists, strip: stripHtml(l, stripOf(ctx, l), home), results: l === 'en' && exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
+          alternates: page.alternates || [], links, linksH: h.alt ? ALT_ALSO[l] : UI[l].allStocks, crumbs: [{ name: 'MyStockButler', path: ROOT[l] === '/zh/stocks/' && !exists('/zh/stocks/') ? '/' : ROOT[l] }, { name: g.h1.split(' : ')[0], path: g.path }],
+          css: h.about ? 'trust' : g.group === 'ai-research-tools' ? 'tools' : 'review', pageType: h.about ? 'AboutPage' : 'Article', feat: pick, featTeaser: teaserOf(pick), featChapters: (l === 'en' ? pick.chapters : pick.translations?.[l]?.chapters) || [],
+          today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: TRUST_LINK_WORDS[l].methodology,
+          ...(picture ? { image: pictureObject(picture), share: shareImage(picture) } : {}) });
+        page.html = out.html;
+        page.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
+        page.sitePage = `frame:${g.name}`;
         return page;
       };
       draw(h, h.picture);
