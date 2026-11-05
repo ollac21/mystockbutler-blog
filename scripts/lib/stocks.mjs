@@ -204,6 +204,13 @@ export const ALT_ROOT = '/alternatives/';
 const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich', 'zh-HK': '研究工具比較' };
 const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich', 'zh-HK': '其他比較' };
 const ALT_LANG_NAME = { en: 'English', fr: 'Français', de: 'Deutsch', 'zh-HK': '中文' };
+// B115 round 6: the words of a language's own hub of comparisons (its title, description, the intro the English hub prints, in the language)
+const ALT_HUB_WORDS = {
+  fr: { title: 'Outils d’analyse boursière comparés : prix et contenu',
+    description: 'Des outils d’analyse boursière comparés par prix et par ce qu’ils donnent sur une action, et pour qui chacun convient. Prix relevés sur la page de chaque outil.',
+    h1: 'Outils d’analyse boursière comparés : prix et contenu',
+    intro: 'Vous allez placer de l’argent dans une entreprise, et les faits sont dispersés entre rapports annuels, conférences de résultats et articles qui se contredisent. Ces pages comparent des outils d’analyse boursière par prix et par ce qu’ils donnent sur une action, et disent simplement pour qui chacun convient. Les prix sont relevés sur la page de chaque outil.' },
+};
 // The free report on a comparison page: the box's example ticker and the line under it. The app opens the report only for a ticker
 // named at sign-up, so the page's header button jumps to this box.
 const ALT_OFFER = {
@@ -212,12 +219,17 @@ const ALT_OFFER = {
   de: { ph: 'z. B. KO', note: 'Probieren Sie einen Ticker aus dem S&P 500, etwa KO für Coca-Cola. Melden Sie sich ohne Karte an, und der Bericht öffnet sich gratis.' },
   'zh-HK': { ph: '例如 KO', note: '試試 S&P 500 股票代號，例如可口可樂是 KO。無需信用卡，註冊後報告會免費開啟。' },
 };
+// B115 round 6 (stage 3b, the owner 2026-11-04): a language's own hub of comparisons, listing that language's pages, in the English
+// hub's design; the language's footer link 'Outils d’analyse comparés' points to it (it pointed to Zonebourse). Drawn when the
+// language has at least two comparison pages.
+const ALT_HUB = { fr: '/fr/alternatives/' };
+const ALT_HUB_ON = Object.fromEntries(Object.entries(ALT_HUB).filter(([l]) => ALTS.filter((a) => a.lang === l).length >= 2));
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
-const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
+const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...Object.values(ALT_HUB_ON), ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
 const ALT_FOOT = Object.fromEntries(Object.keys(ALT_WORDS).flatMap((l) => {
   const mine = ALTS.filter((a) => a.lang === l);
   // a language's footer keeps its first single-language comparison (Zonebourse, Aktienfinder); else its first page
-  return mine.length ? [[l, { path: l === 'en' ? ALT_ROOT : (mine.find((a) => !a.group) || mine[0]).path, label: ALT_WORDS[l] }]] : [];
+  return mine.length ? [[l, { path: l === 'en' ? ALT_ROOT : ALT_HUB_ON[l] || (mine.find((a) => !a.group) || mine[0]).path, label: ALT_WORDS[l] }]] : [];
 }));
 
 export function pagePath(slug, type, lang = 'en') {
@@ -1538,6 +1550,8 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
     .map((r) => `<a href="${pagePath(r.slug, 'stock', lang)}">${esc(shortName(r))} (${esc(r.ticker)})</a>`);
   const enHub = enHubOf(indexKey);
   const hubs = fr ? [`<a href="${LANG_CFG[lang].home}">MyStockButler</a>`, `<a href="${LANG_CFG[lang].root}">${esc(ui.allStocks)}</a>`, `<a href="${enHub[0]}" hreflang="en">${esc(enHub[1])}</a>`] : [`<a href="/stocks/">All stocks</a>`];
+  // B115 round 6 (stage 3b, the owner 2026-11-04): a French forecast page links the Zonebourse review once, among its other-pages chips
+  if (lang === 'fr' && type === 'stock' && ALT_PATHS.has('/fr/alternatives/zonebourse/')) hubs.push('<a href="/fr/alternatives/zonebourse/">Zonebourse : avis et alternatives</a>');
   if (!fr) {
     if (INDEX_PATHS[indexKey]) hubs.push(`<a href="/stocks/${INDEX_PATHS[indexKey]}/">${esc(INDEX_NAMES[indexKey])} companies</a>`);
     hubs.push(`<a href="${letterPath(letterOf(company))}">Companies ${esc(letterOf(company).toUpperCase())}</a>`);
@@ -2420,7 +2434,20 @@ function renderAlternatives(companies, exists, updated = '', pictures = false) {
   index.alt = true;
   index.guide = true;
   index.lastmod = pages.map((p) => p.lastmod).sort().pop() || updated;
-  return [...pages, index];
+  // B115 round 6: each language's own hub (ALT_HUB_ON), its pages listed
+  const langHubs = Object.entries(ALT_HUB_ON).filter(([l]) => exists(LANG_CFG[l].root)).map(([l, path]) => {
+    const mine = drawn.filter((a) => a.lang === l);
+    if (mine.length < 2) return null;
+    const W = ALT_HUB_WORDS[l];
+    const h = hubPage({ path, title: W.title, description: W.description, intro: W.intro, sections: [`<ul class="list">${mine.map((a) => `<li><a class="nm" href="${a.path}">${esc(a.h1)}</a></li>`).join('')}</ul>`],
+      crumbItems: [{ name: 'MyStockButler', path: roots[l].path }, { name: ALT_WORDS[l], path }], lang: l, updated });
+    h.alt = true;
+    h.altHub = l;
+    h.guide = true;
+    h.lastmod = pages.filter((p) => p.lang === l).map((p) => p.lastmod).sort().pop() || updated;
+    return h;
+  }).filter(Boolean);
+  return [...pages, index, ...langHubs];
 }
 
 // B115 round 3: a hub drawn from hubPages.mjs (the calendar, the head-to-head index) in the shared frame
@@ -2635,7 +2662,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const exists = (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p);
       const links = h.alt ? [
         ...TYPES.map((t) => [t, pagePath(pick.slug, t, l)]).filter(([, p]) => exists(p)).map(([t, p]) => `<a href="${p}">${esc(UI[l].sibling(t, shortName(pick)))}</a>`),
-        ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT).map((o) => `<a href="${o.path}">${esc(String(o.title).replace(/ \| MyStockButler$/, ""))}</a>`),   // round 5: a versus page's title without its site suffix
+        ...hubs.filter((o) => o.alt && o !== h && (o.lang || 'en') === l && o.path !== ALT_ROOT && !o.altHub).map((o) => `<a href="${o.path}">${esc(String(o.title).replace(/ \| MyStockButler$/, ""))}</a>`),   // round 5: a versus page's title without its site suffix
         l === 'en' ? `<a href="${ALT_ROOT}">${esc(ALT_WORDS.en)}</a>` : `<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`] : [`<a href="${home}">${esc(UI[l].allStocks)}</a>`];
       const draw = (page, picture) => {
         const out = renderMdFrame(g, { shell, SITE, ORG, exists, strip: stripHtml(l, stripOf(ctx, l), home), results: l === 'en' && exists('/stocks/reporting-this-week/') ? '/stocks/reporting-this-week/' : '',
@@ -2656,7 +2683,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const altIndex = hubs.find((h) => h.path === ALT_ROOT && h.alt);
     const nv = byTicker.get(FEAT.en);
     if (altIndex && nv && nv.teaser?.text && ctx.exists(pagePath(nv.slug, 'stock'))) {
-      const list = hubs.filter((o) => o.alt && o.path !== ALT_ROOT);
+      const list = hubs.filter((o) => o.alt && o.path !== ALT_ROOT && !o.altHub);
       const md = `You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page.\n\n## ${ALT_WORDS.en}\n\n${list.map((o) => `- [${o.title}](${o.path})${(o.lang || 'en') !== 'en' ? ` (${ALT_LANG_NAME[o.lang]})` : ''}`).join('\n')}\n`;
       const g = { name: 'alternatives-index.md', lang: 'en', path: ALT_ROOT, h1: 'Stock research tools compared: prices and what you get', title_tag: altIndex.title, meta_description: altIndex.description, updated: isoDay(altIndex.lastmod) || ctx.today, markdown: md };
       const out = renderMdFrame(g, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), strip: stripHtml('en', stripOf(ctx, 'en'), '/stocks/'),
@@ -2667,6 +2694,28 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       altIndex.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
       altIndex.sitePage = 'frame:alternatives-index';
       sitePages.drawn.push(ALT_ROOT);
+    }
+    // B115 round 6 (stage 3b): a language's own hub of comparisons in the English hub's frame: its intro, the list of its pages, its featured report
+    for (const lh of hubs.filter((h) => h.altHub)) {
+      const l = lh.altHub;
+      const W = ALT_HUB_WORDS[l];
+      const fc = byTicker.get(FEAT[l]);
+      const ft = fc?.translations?.[l]?.teaser;
+      if (!fc || !ft?.text || !ctx.exists(pagePath(fc.slug, 'stock', l))) { sitePages.kept.push({ path: lh.path, why: 'no featured report with a page in its language' }); continue; }
+      const list = hubs.filter((o) => o.alt && o.lang === l && !o.altHub);
+      const md = `${W.intro}\n\n## ${ALT_WORDS[l]}\n\n${list.map((o) => `- [${String(o.title).replace(/ \| MyStockButler$/, '')}](${o.path})`).join('\n')}\n`;
+      const g = { name: `alternatives-index-${l}.md`, lang: l, path: lh.path, h1: W.h1, title_tag: W.title, meta_description: W.description, updated: isoDay(lh.lastmod) || ctx.today, markdown: md };
+      const home = LANG_CFG[l].root;
+      const out = renderMdFrame(g, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), strip: stripHtml(l, stripOf(ctx, l), home),
+        results: '', alternates: [], links: [`<a href="${home}">${esc(UI[l].allStocks)}</a>`, `<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`], linksH: ALT_ALSO[l],
+        crumbs: [{ name: 'MyStockButler', path: LANG_CFG[l].home || home }, { name: ALT_WORDS[l], path: lh.path }], css: 'tools', pageType: 'CollectionPage', feat: fc, featTeaser: ft, featChapters: fc.translations[l].chapters || [],
+        today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: { fr: 'Comment un rapport est fait' }[l] || TRUST_LINK_WORDS[l].methodology });
+      lh.html = out.html;
+      lh.title = W.title;
+      lh.description = W.description;
+      lh.outLinks = [...out.main.matchAll(SITE_LINK)].map((m) => m[1]);
+      lh.sitePage = `frame:alternatives-index-${l}`;
+      sitePages.drawn.push(lh.path);
     }
     const week = hubs.find((h) => h.path === '/stocks/reporting-this-week/');
     const wb = week ? renderWeekBody({ companies: live, today: ctx.today, shortName, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p) }) : null;

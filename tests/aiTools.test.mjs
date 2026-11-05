@@ -57,9 +57,11 @@ test('the AI tools comparison: four pages, hreflang both ways, the guide frame, 
     // the comparison table is drawn in its scroll box
     assert.match(g.html, /<div class="tw"><table>|<div class="ct__wrap"><table class="ct(?:--md)?">/);
   }
-  // the old single-language comparisons keep their footer link; the Chinese pages get their comparison in the footer
+  // the French footer link 'Outils d’analyse comparés' points to the French hub of comparisons (B115 round 6, stage 3b; it pointed to Zonebourse);
+  // the Chinese pages get their comparison in the footer
   const fr = hubs.find((h) => h.path === PATHS.fr);
-  assert.match(fr.html, /<footer[\s\S]*<a href="\/fr\/alternatives\/zonebourse\/">/);
+  assert.match(fr.html, /<footer[\s\S]*<a href="\/fr\/alternatives\/">Outils d’analyse comparés<\/a>/);
+  assert.ok(hubs.some((h) => h.path === '/fr/alternatives/' && h.altHub === 'fr'), 'the French hub of comparisons is built');
   const zh = hubs.find((h) => h.path === PATHS['zh-HK']);
   assert.match(zh.html, new RegExp(`<footer[\\s\\S]*<a href="${PATHS['zh-HK']}">`));
 });
