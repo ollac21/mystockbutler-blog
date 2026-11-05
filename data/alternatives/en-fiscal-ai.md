@@ -5,6 +5,7 @@ meta_description: "Fiscal.ai is a research terminal with an API and a 7-day tria
 path: /alternatives/fiscal-ai/
 updated: 2026-11-02
 lang: en
+group: fiscal-ai
 example: AMZN
 cta_end_title: "Linked numbers are a start. Read the analysis."
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type an S&P 500 ticker and sign up. Your first S&P 500 report is free, no card: eight chapters on the company, every number traced to its source. A free account also reads the 10 largest S&P 500 companies."

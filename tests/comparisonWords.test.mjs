@@ -10,7 +10,8 @@ import { siteFooter, siteHeader } from '../scripts/lib/layout.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const FIXTURES = ['stock-rmd.json', 'stock-td-to-fr.json', 'stock-ko.json', 'stock-nvda-zh.json', 'stock-nvda-de.json'];
-const pages = loadAlternatives();
+// the drafts' words (today's renderer); the round-6 French / German pages (v2_only) have no draft: their words are their approved page's (data/pages)
+const pages = loadAlternatives().filter((g) => String(g.v2_only) !== 'true');
 const text = (g) => `${g.meta_description}\n${g.cta_end_title}\n${g.cta_end_text}\n${g.markdown}`;
 
 test('no count of companies', () => {

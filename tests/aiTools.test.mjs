@@ -34,7 +34,10 @@ test('the AI tools comparison: four pages, hreflang both ways, the guide frame, 
     const g = hubs.find((h) => h.path === p);
     assert.ok(g, `${p} is built`);
     assert.equal(g.lang, lang);
-    assert.ok(index.html.includes(`href="${p}"`), `the index links ${p}`);
+    // round 6: a language with its own hub of comparisons (French, German) is listed there; the English index links that hub
+    const own = hubs.find((h) => h.altHub === lang);
+    if (own) assert.ok(own.html.includes(`href="${p}"`) && index.html.includes(`href="${own.path}"`), `${own.path} links ${p}, the index links ${own.path}`);
+    else assert.ok(index.html.includes(`href="${p}"`), `the index links ${p}`);
     assert.equal((g.html.match(/<h1[ >]/g) || []).length, 1);
     assert.ok(g.html.includes(`<link rel="canonical" href="${SITE}${p}">`));
     // hreflang: the four versions and x-default (English), in the page and on the object the sitemap reads

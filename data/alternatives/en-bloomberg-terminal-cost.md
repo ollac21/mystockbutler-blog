@@ -5,6 +5,7 @@ meta_description: "Bloomberg Terminal cost and price: $24,000 to $32,000 a year 
 path: /alternatives/bloomberg-terminal-cost/
 updated: 2026-11-03
 lang: en
+group: bloomberg-terminal-cost
 example: KO
 crumb: "Bloomberg Terminal cost"
 keyword: "bloomberg terminal cost"

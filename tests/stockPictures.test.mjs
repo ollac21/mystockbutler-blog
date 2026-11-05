@@ -520,11 +520,12 @@ const ALTS = loadAlternatives();
 
 test('every price on a tools picture is in that tool\'s own row of the page\'s table; our offer word for word; each page has its entry', () => {
   const specs = loadToolPictures();
-  // B115 round 5: 13 more comparison pages, each drawn in its approved layout (data/pages) with the site's share picture: no tools picture
-  assert.equal(ALTS.length, 9 + 13);
+  // B115 round 5: 13 more comparison pages, each drawn in its approved layout (data/pages) with the site's share picture: no tools picture;
+  // round 6: 22 French and German ones, the same way
+  assert.equal(ALTS.length, 9 + 13 + 22);
   for (const a of ALTS) {
     const key = a.name.replace(/\.md$/, '');
-    if (!specs[key] && SITE_PAGES.has(a.path) && SITE_PAGES.get(a.path).round === 5) continue;
+    if (!specs[key] && SITE_PAGES.has(a.path) && SITE_PAGES.get(a.path).round >= 5) continue;
     assert.ok(specs[key], `${key} has its short wordings`);
     assert.deepEqual(toolPictureProblems(a, specs[key]), [], key);
     const p = toolPicture(a);

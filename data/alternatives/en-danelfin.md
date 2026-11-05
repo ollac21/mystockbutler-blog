@@ -5,6 +5,7 @@ meta_description: "Danelfin review and alternatives: its 1-to-10 AI Score has a 
 path: /alternatives/danelfin/
 updated: 2026-11-02
 lang: en
+group: danelfin
 example: AMZN
 cta_end_title: "The score said 9. Now read why."
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies. If you like it, Starter is $30 a month."

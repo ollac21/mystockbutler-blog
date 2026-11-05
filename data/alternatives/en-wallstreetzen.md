@@ -5,6 +5,7 @@ meta_description: "WallStreetZen Premium is $234 a year after a $1 trial. What a
 path: /alternatives/wallstreetzen/
 updated: 2026-11-02
 lang: en
+group: wallstreetzen
 example: TSM
 cta_end_title: "A grade tells you what to think. Read the why."
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies. If you like it, Starter is $30 a month."

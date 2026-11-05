@@ -5,6 +5,7 @@ meta_description: "Seeking Alpha Premium costs $299 a year for many opinions. Wh
 path: /alternatives/seeking-alpha/
 updated: 2026-10-30
 lang: en
+group: seeking-alpha
 example: KO
 cta_end_title: "Read the whole case before you buy"
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. If the company you're closest to buying is in the S&P 500, type its ticker here and sign up: your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies."

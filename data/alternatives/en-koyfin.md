@@ -5,6 +5,7 @@ meta_description: "Koyfin has a free plan, and paid plans start at $39 a month. 
 path: /alternatives/koyfin/
 updated: 2026-11-02
 lang: en
+group: koyfin
 example: VICI
 cta_end_title: "Tired of building the analysis yourself?"
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type an S&P 500 ticker and sign up. Your first S&P 500 report is free, no card: eight chapters on the company, every number traced to its source. A free account also reads the 10 largest S&P 500 companies."

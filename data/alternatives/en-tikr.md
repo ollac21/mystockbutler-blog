@@ -5,6 +5,7 @@ meta_description: "TIKR has a free plan; paid plans start at $24.95 a month. Wha
 path: /alternatives/tikr/
 updated: 2026-11-02
 lang: en
+group: tikr
 example: TSM
 cta_end_title: "Skip the model. Read the report."
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type an S&P 500 ticker and sign up. Your first S&P 500 report is free, no card: eight chapters on the company, a forecast with three cases, every number traced to its source. A free account also reads the 10 largest S&P 500 companies."

@@ -5,6 +5,7 @@ meta_description: "Kavout has a free plan; paid plans start at $16 a month, bill
 path: /alternatives/kavout/
 updated: 2026-11-02
 lang: en
+group: kavout
 example: VICI
 cta_end_title: "A score says where to look. Read the why."
 cta_end_text: "For the full case on one company, written from its filings, MyStockButler is the best choice. Type the ticker of an S&P 500 company you're looking at and sign up. Your first S&P 500 report is free, no card. A free account also reads the 10 largest S&P 500 companies. If you like it, Starter is $30 a month."

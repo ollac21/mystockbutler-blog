@@ -199,7 +199,8 @@ const GUIDES = loadGuides();
 const GUIDE_OF = Object.fromEntries(GUIDES.map((g) => [g.lang, g]));
 // THE COMPARISON GUIDES (B110, the owner 2026-10-26): data/alternatives/*.md, drawn like the guides; every page of their
 // language links them from its footer (English: the index /alternatives/, which lists all of them in every language)
-const ALTS = loadAlternatives();
+// B115 round 6: a page whose front matter says 'v2_only: true' exists only in its approved layout (data/pages): with STOCK_PAGE_V2=off it is not built
+const ALTS = loadAlternatives().filter((a) => String(a.v2_only) !== 'true' || process.env.STOCK_PAGE_V2 !== 'off');
 export const ALT_ROOT = '/alternatives/';
 const ALT_WORDS = { en: 'Research tools compared', fr: 'Outils d’analyse comparés', de: 'Analyse-Tools im Vergleich', 'zh-HK': '研究工具比較' };
 const ALT_ALSO = { en: 'Also compared', fr: 'Aussi comparé', de: 'Ebenfalls im Vergleich', 'zh-HK': '其他比較' };
@@ -210,6 +211,12 @@ const ALT_HUB_WORDS = {
     description: 'Des outils d’analyse boursière comparés par prix et par ce qu’ils donnent sur une action, et pour qui chacun convient. Prix relevés sur la page de chaque outil.',
     h1: 'Outils d’analyse boursière comparés : prix et contenu',
     intro: 'Vous allez placer de l’argent dans une entreprise, et les faits sont dispersés entre rapports annuels, conférences de résultats et articles qui se contredisent. Ces pages comparent des outils d’analyse boursière par prix et par ce qu’ils donnent sur une action, et disent simplement pour qui chacun convient. Les prix sont relevés sur la page de chaque outil.' },
+  // German (round 6 stage 4): "Stock analysis tools compared: prices and content" · "Stock analysis tools compared by price and by what they give you on one
+  // stock, and whom each one suits. Prices read on each tool's own page." · the English hub's intro in German
+  de: { title: 'Analyse-Tools für Aktien im Vergleich: Preise und Inhalt',
+    description: 'Analyse-Tools für Aktien im Vergleich: nach Preis und danach, was sie zu einer Aktie liefern, und für wen sich jedes lohnt. Preise von der Seite jedes Tools.',
+    h1: 'Analyse-Tools für Aktien im Vergleich: Preise und Inhalt',
+    intro: 'Sie wollen echtes Geld in ein Unternehmen stecken, und die Fakten verteilen sich auf Geschäftsberichte, Ergebniskonferenzen und Artikel, die sich widersprechen. Diese Seiten vergleichen Analyse-Tools für Aktien nach Preis und danach, was sie zu einer Aktie liefern, und sagen klar, für wen sich jedes lohnt. Die Preise stammen von der Seite jedes Tools.' },
 };
 // The free report on a comparison page: the box's example ticker and the line under it. The app opens the report only for a ticker
 // named at sign-up, so the page's header button jumps to this box.
@@ -222,7 +229,7 @@ const ALT_OFFER = {
 // B115 round 6 (stage 3b, the owner 2026-11-04): a language's own hub of comparisons, listing that language's pages, in the English
 // hub's design; the language's footer link 'Outils d’analyse comparés' points to it (it pointed to Zonebourse). Drawn when the
 // language has at least two comparison pages.
-const ALT_HUB = { fr: '/fr/alternatives/' };
+const ALT_HUB = { fr: '/fr/alternatives/', de: '/de/alternativen/' };   // de: round 6 stage 4
 const ALT_HUB_ON = Object.fromEntries(Object.entries(ALT_HUB).filter(([l]) => ALTS.filter((a) => a.lang === l).length >= 2));
 // the addresses they are published at (always built: they depend on no company), known to the dead-link gate
 const ALT_PATHS = new Set(ALTS.some((a) => ALT_WORDS[a.lang]) ? [ALT_ROOT, ...Object.values(ALT_HUB_ON), ...ALTS.filter((a) => ALT_WORDS[a.lang]).map((a) => a.path)] : []);
@@ -2683,7 +2690,9 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const altIndex = hubs.find((h) => h.path === ALT_ROOT && h.alt);
     const nv = byTicker.get(FEAT.en);
     if (altIndex && nv && nv.teaser?.text && ctx.exists(pagePath(nv.slug, 'stock'))) {
-      const list = hubs.filter((o) => o.alt && o.path !== ALT_ROOT && !o.altHub);
+      const twinned = new Set(ALTS.filter((a) => ALT_HUB_ON[a.lang] && a.group && ALTS.some((o) => o.group === a.group && o.lang === 'en')).map((a) => a.path));   // listed on their language's hub instead
+      const list = hubs.filter((o) => o.alt && o.path !== ALT_ROOT && !o.altHub && ((o.lang || 'en') === 'en' || !twinned.has(o.path)));
+      for (const lh of hubs.filter((h) => h.altHub)) list.push({ title: ALT_HUB_WORDS[lh.altHub].title, path: lh.path, lang: lh.altHub });   // round 6: the language hubs
       const md = `You are about to put real money into a company, and the facts are spread across filings, earnings calls and articles that disagree. These pages compare stock research tools by price and by what you get for one stock, and say plainly who each one suits. Prices are read on each product’s own page.\n\n## ${ALT_WORDS.en}\n\n${list.map((o) => `- [${o.title}](${o.path})${(o.lang || 'en') !== 'en' ? ` (${ALT_LANG_NAME[o.lang]})` : ''}`).join('\n')}\n`;
       const g = { name: 'alternatives-index.md', lang: 'en', path: ALT_ROOT, h1: 'Stock research tools compared: prices and what you get', title_tag: altIndex.title, meta_description: altIndex.description, updated: isoDay(altIndex.lastmod) || ctx.today, markdown: md };
       const out = renderMdFrame(g, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), strip: stripHtml('en', stripOf(ctx, 'en'), '/stocks/'),
@@ -2709,7 +2718,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
       const out = renderMdFrame(g, { shell, SITE, ORG, exists: (p) => exists0.has(p) || hubPaths.has(p) || comparePaths.has(p), strip: stripHtml(l, stripOf(ctx, l), home),
         results: '', alternates: [], links: [`<a href="${home}">${esc(UI[l].allStocks)}</a>`, `<a href="${ALT_ROOT}" hreflang="en">${esc(ALT_WORDS.en)} (English)</a>`], linksH: ALT_ALSO[l],
         crumbs: [{ name: 'MyStockButler', path: LANG_CFG[l].home || home }, { name: ALT_WORDS[l], path: lh.path }], css: 'tools', pageType: 'CollectionPage', feat: fc, featTeaser: ft, featChapters: fc.translations[l].chapters || [],
-        today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: { fr: 'Comment un rapport est fait' }[l] || TRUST_LINK_WORDS[l].methodology });
+        today: ctx.today, dayOf: (d) => humanDay(d, l), short: (d) => shortFull(d, l), shortName, authorLink: authorLink(l), howWords: { fr: 'Comment un rapport est fait', de: 'So entsteht ein Bericht' }[l] || TRUST_LINK_WORDS[l].methodology });
       lh.html = out.html;
       lh.title = W.title;
       lh.description = W.description;

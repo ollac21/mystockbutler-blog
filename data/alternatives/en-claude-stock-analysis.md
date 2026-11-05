@@ -7,6 +7,7 @@ updated: 2026-11-03
 crumb: "Claude stock analysis"
 keyword: "claude stock analysis"
 lang: en
+group: claude-stock-analysis
 example: TSM
 cta_end_title: "Skip the eight prompts"
 cta_end_text: "Type the ticker, sign up with no card, and your first S&P 500 report is free. If you want the full case on one company, written from its filings, MyStockButler is the best choice. You get the eight chapters finished, every number traced to its source."
