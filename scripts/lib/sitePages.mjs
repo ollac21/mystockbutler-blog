@@ -131,7 +131,7 @@ function calcScript(rec, byTicker) {
 function payersHtml(rec, byTicker, exists, pagePath) {
   const lang = rec.lang;
   const fnum = (v, d) => DC.fmtNum(v, d, lang);
-  const pct = (v, d) => `<span class="n" data-v="${v}" data-d="${d}">${fnum(v, d)}</span>${lang === 'fr' ? '\u00a0%' : '%'}`;
+  const pct = (v, d) => `<span class="n" data-v="${v}" data-d="${d}">${fnum(v, d)}</span>${lang === 'fr' || lang === 'de' ? '\u00a0%' : '%'}`;   // round 6: German too (divcalc pctH)
   return rec.calc.payers.tickers.map((t) => {
     const c = byTicker.get(t);
     const x = c ? DC.entryOf(c) : null;

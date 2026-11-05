@@ -1,0 +1,1843 @@
+{
+ "id": "calc-de",
+ "path": "/de/aktien/dividendenrechner/",
+ "lang": "de",
+ "title": "Dividendenrechner nach Aktie: Rendite und Wiederanlage",
+ "description": "Dividende nach Kürzel berechnen, mit oder ohne Wiederanlage. SAP: 10.000 € bringen bei 1,2 % Rendite etwa 120 € im Jahr. Deckt der Cashflow die Dividende?",
+ "css": "calc",
+ "ld": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Aktien",
+     "item": "https://blog.mystockbutler.com/de/aktien/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Dividendenrechner"
+    }
+   ]
+  },
+  {
+   "@type": "WebApplication",
+   "name": "Dividendenrechner nach Aktie: Rendite und Wiederanlage",
+   "url": "https://blog.mystockbutler.com/de/aktien/dividendenrechner/",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Any",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "inLanguage": "de"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Wie viel muss ich anlegen, um 1.000 € Dividende im Monat zu bekommen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "12.000 € im Jahr geteilt durch die Rendite. Bei SAP (1,2 %) etwa 1.000.000 €; bei BASF (4,2 %, unser Bericht vom 31. Oktober 2026) etwa 285.714 €. Eine höhere Rendite braucht weniger Geld, wenn die Dividende hält."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist die Dividende von SAP durch den freien Cashflow gedeckt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Im Jahr 2025 zahlte SAP Dividenden in Höhe von 36 % des freien Cashflows je Aktie. Über hundert Prozent kostete die Dividende mehr, als das Geschäft in dem Jahr an Cash erwirtschaftete."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Heißt eine hohe Rendite eine sichere Dividende?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Die Rendite von Pfizer liegt bei 5,6 %, aber 2025 entsprach die Dividende 108 % des freien Cashflows je Aktie (unser Bericht vom 3. November 2026). Die Rendite sagt, was Sie bekommen; das Cash sagt, ob es so weitergehen kann."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Sind die Ergebnisse vor Steuern?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, sofern Sie keinen Steuersatz auf Dividenden eingeben. Ihr Satz hängt von Ihrem Land und Ihrem Depot ab."
+     }
+    }
+   ]
+  }
+ ],
+ "main": "<main class=\"page calcp vD\" id=\"top\">\n  <section class=\"top\">\n    <nav class=\"crumb\" aria-label=\"Brotkrümelnavigation\"><a href=\"/de/aktien/\">Aktien</a><span aria-hidden=\"true\">›</span>Dividendenrechner</nav>\n    <h1>Dividendenrechner: Wie viel Dividende bekommen Sie?</h1>\n    <p class=\"byline\">Von <a href=\"/de/ueber-uns/\">Olivier Lachance</a><span class=\"hide-sm\"> · Die Zahlen jedes Unternehmens aus seinem neuesten Bericht</span><a class=\"plain byline__how\" href=\"/methodology/\" hreflang=\"en\">So entsteht ein Bericht</a></p>\n  </section><section class=\"answer ansC ansD2\" aria-labelledby=\"ans-h\"><h2 class=\"sr\" id=\"ans-h\">Wie viel Dividende zahlt Ihnen SAP?</h2><form class=\"calc calcD\" id=\"c-f\" novalidate>\n      <div class=\"fl\"><label for=\"c-t\">Kürzel oder Unternehmen</label><input id=\"c-t\" inputmode=\"text\" value=\"SAP.DE\" list=\"c-names\" autocomplete=\"off\" spellcheck=\"false\" maxlength=\"40\"><p class=\"err\" id=\"c-t-e\" aria-live=\"polite\"></p></div><datalist id=\"c-names\"><option value=\"Coca-Cola\">KO</option><option value=\"P&amp;G\">PG</option><option value=\"Johnson &amp; Johnson\">JNJ</option><option value=\"Verizon\">VZ</option><option value=\"Pfizer\">PFE</option><option value=\"SAP\">SAP.DE</option><option value=\"BASF\">BAS.DE</option><option value=\"Deutsche Telekom\">DTE.DE</option><option value=\"DHL\">DHL.DE</option><option value=\"Deutsche Börse\">DB1.DE</option><option value=\"RWE\">RWE.DE</option><option value=\"E.ON\">EOAN.DE</option><option value=\"Mercedes-Benz\">MBG.DE</option><option value=\"Infineon\">IFX.DE</option><option value=\"QIAGEN\">QIA.DE</option></datalist>\n      <div class=\"fl\"><label for=\"c-a\">Betrag</label><div class=\"in\"><span id=\"c-cur\">€</span><input id=\"c-a\" inputmode=\"decimal\" value=\"10000\"></div><p class=\"err\" id=\"c-a-e\" aria-live=\"polite\"></p></div>\n      <div class=\"fl\"><label for=\"c-n\">Jahre</label><input id=\"c-n\" inputmode=\"numeric\" value=\"10\"><p class=\"err\" id=\"c-n-e\" aria-live=\"polite\"></p></div>\n      \n      <details class=\"more\"><summary><span id=\"c-sum\">Annahmen aus dem Bericht: Rendite <span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> % · Wachstum <span class=\"n\" data-v=\"5.936604358917719\" data-d=\"1\">5,9</span> % im Jahr · wieder angelegt</span> <b>Ändern ▸</b></summary><div class=\"more__g\">\n        <div class=\"fl\"><label for=\"c-y\">Dividendenrendite (%)</label><input id=\"c-y\" inputmode=\"decimal\" value=\"1,2\"><p class=\"err\" id=\"c-y-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-g\">Dividendenwachstum pro Jahr (%)</label><input id=\"c-g\" inputmode=\"decimal\" value=\"5,94\"><p class=\"err\" id=\"c-g-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl ck\"><input id=\"c-d\" type=\"checkbox\" checked><label for=\"c-d\">Dividenden wieder anlegen</label></div>\n        <div class=\"fl\"><label for=\"c-p\">Kurswachstum pro Jahr (%)</label><input id=\"c-p\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-p-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-x\">Steuer auf Dividenden (%)</label><input id=\"c-x\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-x-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-add\">Jährliche Zuzahlung</label><input id=\"c-add\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-add-e\" aria-live=\"polite\"></p></div>\n      </div></details>\n      <button class=\"btn btn--ghost c-go\" type=\"submit\">Berechnen</button>\n    </form><div class=\"resw\"><div class=\"res\"><p class=\"res__n\"><span id=\"c-big\"><span class=\"n\" data-v=\"120\" data-d=\"0\">120</span> €</span></p><p class=\"res__by\" id=\"c-by\">Dividende im Jahr, vor Steuern, bei der Dividendenrendite von SAP (<span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> %)</p></div>\n    <p class=\"cond\" id=\"c-cond\">In 10 Jahren, Dividenden wieder angelegt, wenn die Dividende weiter um <span class=\"n\" data-v=\"5.936604358917719\" data-d=\"1\">5,9</span> % im Jahr wächst und der Kurs bei <span class=\"n\" data-v=\"216.1\" data-d=\"2\">216,10</span> € bleibt:</p>\n    <div class=\"res2\"><div><span class=\"res2__n\" id=\"c-fin\"><span class=\"n\" data-v=\"231.13441402958145\" data-d=\"2\">231,13</span> €</span><span class=\"res2__l\" id=\"c-finl\">pro Jahr im 10. Jahr</span></div>\n      <div><span class=\"res2__n\" id=\"c-tot\"><span class=\"n\" data-v=\"1693.3595321862497\" data-d=\"2\">1.693,36</span> €</span><span class=\"res2__l\" id=\"c-totl\">insgesamt an Sie gezahlt in 10 Jahren</span></div></div>\n    <details class=\"years\"><summary>Jahr für Jahr</summary><div class=\"tw\"><table><thead><tr><th scope=\"col\">Jahr</th><th>Rendite auf den Wert</th><th>Dividenden</th><th>Wert am Jahresende</th></tr></thead><tbody id=\"c-yrs\"><tr><td>1</td><td><span class=\"n\" data-v=\"1.2\" data-d=\"2\">1,20</span> %</td><td><span class=\"n\" data-v=\"120\" data-d=\"2\">120,00</span> €</td><td><span class=\"n\" data-v=\"10120\" data-d=\"2\">10.120,00</span> €</td></tr><tr><td>2</td><td><span class=\"n\" data-v=\"1.2712392523070126\" data-d=\"2\">1,27</span> %</td><td><span class=\"n\" data-v=\"128.64941233346968\" data-d=\"2\">128,65</span> €</td><td><span class=\"n\" data-v=\"10248.64941233347\" data-d=\"2\">10.248,65</span> €</td></tr><tr><td>3</td><td><span class=\"n\" data-v=\"1.3467076971717438\" data-d=\"2\">1,35</span> %</td><td><span class=\"n\" data-v=\"138.01935049204153\" data-d=\"2\">138,02</span> €</td><td><span class=\"n\" data-v=\"10386.668762825511\" data-d=\"2\">10.386,67</span> €</td></tr><tr><td>4</td><td><span class=\"n\" data-v=\"1.4266564050239219\" data-d=\"2\">1,43</span> %</td><td><span class=\"n\" data-v=\"148.1820751734691\" data-d=\"2\">148,18</span> €</td><td><span class=\"n\" data-v=\"10534.85083799898\" data-d=\"2\">10.534,85</span> €</td></tr><tr><td>5</td><td><span class=\"n\" data-v=\"1.5113513513513508\" data-d=\"2\">1,51</span> %</td><td><span class=\"n\" data-v=\"159.2186105029467\" data-d=\"2\">159,22</span> €</td><td><span class=\"n\" data-v=\"10694.069448501927\" data-d=\"2\">10.694,07</span> €</td></tr><tr><td>6</td><td><span class=\"n\" data-v=\"1.601074301554237\" data-d=\"2\">1,60</span> %</td><td><span class=\"n\" data-v=\"171.21999773032726\" data-d=\"2\">171,22</span> €</td><td><span class=\"n\" data-v=\"10865.289446232255\" data-d=\"2\">10.865,29</span> €</td></tr><tr><td>7</td><td><span class=\"n\" data-v=\"1.6961237483298173\" data-d=\"2\">1,70</span> %</td><td><span class=\"n\" data-v=\"184.28875462231858\" data-d=\"2\">184,29</span> €</td><td><span class=\"n\" data-v=\"11049.578200854574\" data-d=\"2\">11.049,58</span> €</td></tr><tr><td>8</td><td><span class=\"n\" data-v=\"1.7968159047058039\" data-d=\"2\">1,80</span> %</td><td><span class=\"n\" data-v=\"198.5405785158604\" data-d=\"2\">198,54</span> €</td><td><span class=\"n\" data-v=\"11248.118779370434\" data-d=\"2\">11.248,12</span> €</td></tr><tr><td>9</td><td><span class=\"n\" data-v=\"1.9034857560262952\" data-d=\"2\">1,90</span> %</td><td><span class=\"n\" data-v=\"214.106338786235\" data-d=\"2\">214,11</span> €</td><td><span class=\"n\" data-v=\"11462.225118156668\" data-d=\"2\">11.462,23</span> €</td></tr><tr><td>10</td><td><span class=\"n\" data-v=\"2.0164881743899308\" data-d=\"2\">2,02</span> %</td><td><span class=\"n\" data-v=\"231.13441402958145\" data-d=\"2\">231,13</span> €</td><td><span class=\"n\" data-v=\"11693.35953218625\" data-d=\"2\">11.693,36</span> €</td></tr></tbody></table></div></details></div><p class=\"hook\" id=\"c-hook\"><b>Deckt der Cashflow von SAP die Dividende?</b> Im Jahr 2025 entsprach die Dividende <span class=\"n\" data-v=\"36.292834890965736\" data-d=\"0\">36</span> % des freien Cashflows je Aktie; im Jahr 2024 <span class=\"n\" data-v=\"72.09302325581396\" data-d=\"0\">72</span> %.</p><p class=\"answer__own\" id=\"c-own\">Rendite: unser Bericht zu SAP vom 23. Oktober 2026, zum Schlusskurs von <span class=\"n\" data-v=\"216.1\" data-d=\"2\">216,10</span> € am 22. Oktober 2026.</p></section><section class=\"cta1\" id=\"cta1\" aria-label=\"Den Bericht lesen\">\n    <div class=\"cta1__row\">\n      <a class=\"btn btn--lg btn--block\" id=\"firstbtn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=SAP.DE&amp;src=seo-dividend-calculator&amp;lang=de\">Den vollständigen Bericht zu SAP lesen</a>\n      <button class=\"textlink\" type=\"button\" data-open-viewer>Oder die erste Seite öffnen, ohne Konto ▸</button>\n    </div>\n    <p class=\"free\">Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.</p>\n    <p class=\"free free--2\">Bericht vom 23. Oktober 2026 · Zusammenfassung + 8 Kapitel · 22.660 Wörter · 235 Quellen</p>\n  </section><aside class=\"inside inside--peek\" aria-labelledby=\"inside-h\">\n    <h2 id=\"inside-h\">Deckt der Cashflow von SAP die Dividende? Die Antwort des Berichts</h2>\n    <p class=\"inside__sub\">Bericht vom 23. Oktober 2026 · auf Deutsch · die erste Seite öffnet sich ohne Konto</p>\n    <div class=\"mframe\">\n      <div class=\"mframe__pg\" data-src=\"report\">\n        <div class=\"mframe__bar\">\n          <svg class=\"mf-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"/><path d=\"M19 12H5\"/></svg>\n          <span class=\"mf-tk\">SAP</span><span class=\"mf-name\">SAP SE</span>\n          <span class=\"mf-upd\">Aktualisiert am 23. Okt. 2026</span>\n          <svg class=\"mf-share\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"12\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><path d=\"m8.59 13.51 6.83 3.98\"/><path d=\"m15.41 6.51-6.82 3.98\"/></svg>\n        </div>\n        <section class=\"mframe__sec\" lang=\"de\">\n          <h3 class=\"mf-h2\">Bericht zu SAP</h3>\n          <h4 class=\"mf-h3\">5. Die Zahlen</h4><p>Die aktienbasierte Vergütung verändert das wirtschaftliche Bild. Die aktienbasierte Bezahlung belief sich 2025 auf 1.695 Millionen €. Nach ihrem Abzug ergibt sich ein „realer freier Cashflow“ von 5.849 Millionen € beziehungsweise 15,9 % des Umsatzes. Dies ist nicht SAPs offizielle Cashflow-Kennzahl. Dabei werden den Mitarbeitern gewährte Aktien als Vergütung behandelt, die bestehende Aktionäre verwässern kann, auch wenn dadurch nicht unmittelbar Geld vom Bankkonto abfließt.</p>\n        </section>\n      </div>\n      <button type=\"button\" class=\"mframe__open\" data-open-viewer aria-label=\"Bericht zu SAP\"></button>\n      <button type=\"button\" class=\"mframe__exp\" data-open-viewer aria-label=\"Bericht zu SAP\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 3h6v6\"/><path d=\"m21 3-7 7\"/><path d=\"m3 21 7-7\"/><path d=\"M9 21H3v-6\"/></svg>Vergrößern</button>\n    </div>\n    <button class=\"textlink textlink--l\" type=\"button\" data-open-viewer data-resume=\"1\">Die erste Seite weiterlesen ▸</button>\n  </aside><section class=\"sec covsec\" aria-labelledby=\"cov-h\">\n    <h2 id=\"cov-h\">Deckt der Cashflow von SAP die Dividende?</h2>\n    <p class=\"lead\">Im Jahr 2025 zahlte SAP <span class=\"n\" data-v=\"2.33\" data-d=\"2\">2,33</span> € Dividende je Aktie bei <span class=\"n\" data-v=\"6.42\" data-d=\"2\">6,42</span> € freiem Cashflow je Aktie: <span class=\"n\" data-v=\"36.292834890965736\" data-d=\"0\">36</span> %. Im Jahr 2024: <span class=\"n\" data-v=\"72.09302325581396\" data-d=\"0\">72</span> %. Der freie Cashflow ist das Geld, das nach dem laufenden Geschäft und den Investitionen bleibt; über 100 % kostete die Dividende mehr, als das Jahr an Cash brachte.</p>\n    <figure class=\"fig\"><picture><source media=\"(max-width:639px)\" srcset=\"sap-de-cover-sm.svg\" width=\"400\" height=\"300\"><img src=\"sap-de-cover.svg\" width=\"600\" height=\"300\" loading=\"lazy\" alt=\"SAP: gezahlte Dividende je Aktie und freier Cashflow je Aktie, Geschäftsjahre 2021 bis 2025, in €. 2021: 1,85 / 4,28; 2022: 2,44 / 3,60; 2023: 2,03 / 3,92; 2024: 2,17 / 3,01; 2025: 2,33 / 6,42\"></picture><figcaption>Die Zahlen von SAP, in unserem Bericht vom 23. Oktober 2026.</figcaption></figure>\n    <div class=\"covq\"><p class=\"after\">Der Bericht zieht vom Cashflow auch die Vergütung in Aktien ab:</p>\n    <blockquote class=\"rq\" data-src=\"report\" lang=\"de\">Die aktienbasierte Vergütung verändert das wirtschaftliche Bild. Die aktienbasierte Bezahlung belief sich 2025 auf 1.695 Millionen €. Nach ihrem Abzug ergibt sich ein „realer freier Cashflow“ von 5.849 Millionen € beziehungsweise 15,9 % des Umsatzes. Dies ist nicht SAPs offizielle Cashflow-Kennzahl. Dabei werden den Mitarbeitern gewährte Aktien als Vergütung behandelt, die bestehende Aktionäre verwässern kann, auch wenn dadurch nicht unmittelbar Geld vom Bankkonto abfließt.</blockquote>\n    <button type=\"button\" class=\"bridge\" data-open-viewer data-chapter=\"5\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg><span>Kapitel 5, Die Zahlen: wie viel Cash nach der Vergütung in Aktien bleibt</span><b>Im vollständigen Bericht →</b></button></div>\n    <div class=\"tw\"><table class=\"covt\"><thead><tr><th scope=\"col\"></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td><span class=\"lg\">Gezahlte Dividende je Aktie</span><span class=\"sm\">Dividende</span></td><td>1,85</td><td>2,44</td><td>2,03</td><td>2,17</td><td>2,33</td></tr><tr><td><span class=\"lg\">Freier Cashflow je Aktie</span><span class=\"sm\">Freier Cashflow</span></td><td>4,28</td><td>3,60</td><td>3,92</td><td>3,01</td><td>6,42</td></tr><tr><td><span class=\"lg\">Dividende in % des freien Cashflows</span><span class=\"sm\">% des Cashflows</span></td><td class=\"\"><span class=\"n\" data-v=\"43.22429906542056\" data-d=\"0\">43</span> %</td><td class=\"\"><span class=\"n\" data-v=\"67.77777777777777\" data-d=\"0\">68</span> %</td><td class=\"\"><span class=\"n\" data-v=\"51.78571428571428\" data-d=\"0\">52</span> %</td><td class=\"\"><span class=\"n\" data-v=\"72.09302325581396\" data-d=\"0\">72</span> %</td><td class=\"\"><span class=\"n\" data-v=\"36.292834890965736\" data-d=\"0\">36</span> %</td></tr></tbody></table></div>\n  </section><section class=\"sec howsec\" aria-labelledby=\"how-h\">\n    <h2 id=\"how-h\">Wie viel Dividende bekomme ich?</h2>\n    <p class=\"lead\">Multiplizieren Sie den angelegten Betrag mit der Dividendenrendite oder Ihre Aktien mit der Dividende je Aktie. Bei der Dividendenrendite von SAP (<span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> %) bringen <span class=\"n\" data-v=\"10000\" data-d=\"0\">10.000</span> € vor Steuern etwa <span class=\"n\" data-v=\"120\" data-d=\"0\">120</span> € im Jahr, etwa <span class=\"n\" data-v=\"10\" data-d=\"0\">10</span> € im Monat.</p>\n    <div class=\"formulas\">\n      <div class=\"formula\"><p class=\"formula__f\">Betrag × Rendite = Dividende im Jahr</p><p class=\"formula__x\"><span class=\"n\" data-v=\"10000\" data-d=\"0\">10.000</span> € × <span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> % = <span class=\"n\" data-v=\"120\" data-d=\"0\">120</span> €</p></div>\n      <div class=\"formula\"><p class=\"formula__f\">Aktien × Dividende je Aktie (2025)</p><p class=\"formula__x\">100 × <span class=\"n\" data-v=\"2.33\" data-d=\"2\">2,33</span> € = <span class=\"n\" data-v=\"233.0\" data-d=\"0\">233</span> €</p></div>\n      <div class=\"formula\"><p class=\"formula__f\">Für <span class=\"n\" data-v=\"1000\" data-d=\"0\">1.000</span> € im Monat: ein Jahr ÷ Rendite</p><p class=\"formula__x\"><span class=\"n\" data-v=\"12000\" data-d=\"0\">12.000</span> € ÷ <span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> % = <span class=\"n\" data-v=\"1000000\" data-d=\"0\">1.000.000</span> €</p></div>\n    </div>\n    <p class=\"after\">Die letzte Zeile gilt vor Steuern und nur, wenn die Rendite bei <span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> % bleibt.</p>\n    <p class=\"after\">Die Rendite ist ein Jahr Dividende geteilt durch den Aktienkurs. Rendite im Bericht: <span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> %. Gezahlte Dividende 2025: <span class=\"n\" data-v=\"2.33\" data-d=\"2\">2,33</span> €, also <span class=\"n\" data-v=\"2.33\" data-d=\"2\">2,33</span> € ÷ <span class=\"n\" data-v=\"216.1\" data-d=\"2\">216,10</span> € = <span class=\"n\" data-v=\"1.0782045349375289\" data-d=\"2\">1,08</span> % des Kurses. Fällt der Kurs, steigt die Rendite, auch wenn sich die Dividende nicht ändert.</p>\n  </section><section class=\"sec dripsec\" aria-labelledby=\"drip-h\">\n    <h2 id=\"drip-h\">Dividenden-Wiederanlage-Rechner: Was ändert die Wiederanlage?</h2>\n    <p class=\"lead\">Wieder angelegte Dividenden kaufen weitere Aktien, die ihrerseits Dividenden zahlen. Über 10 Jahre bei SAP, wenn die Dividende weiter um <span class=\"n\" data-v=\"5.936604358917719\" data-d=\"1\">5,9</span> % im Jahr wächst wie von 2021 bis 2025 und der Kurs bei <span class=\"n\" data-v=\"216.1\" data-d=\"2\">216,10</span> € bleibt:</p>\n    <ul class=\"drip\"><li><b>Wieder angelegt:</b> Aus <span class=\"n\" data-v=\"10000\" data-d=\"0\">10.000</span> € werden <span class=\"n\" data-v=\"11693.35953218625\" data-d=\"2\">11.693,36</span> € in Aktien; die Dividende erreicht <span class=\"n\" data-v=\"231.13441402958145\" data-d=\"2\">231,13</span> € im Jahr.</li><li><b>Ausgezahlt:</b> Sie behalten Aktien für <span class=\"n\" data-v=\"10000\" data-d=\"0\">10.000</span> €, erhalten insgesamt <span class=\"n\" data-v=\"1576.9942590860114\" data-d=\"2\">1.576,99</span> €, und die Dividende erreicht <span class=\"n\" data-v=\"201.64881743899306\" data-d=\"2\">201,65</span> € im Jahr.</li></ul>\n    <figure class=\"fig\"><picture><source media=\"(max-width:639px)\" srcset=\"sap-de-drip-sm.svg\" width=\"400\" height=\"280\"><img src=\"sap-de-drip.svg\" width=\"600\" height=\"280\" loading=\"lazy\" alt=\"SAP, 10.000 € angelegt: Dividendeneinnahmen im Jahr über 10 Jahre, wieder angelegt oder ausgezahlt. Wieder angelegt: 120,00 € → 231,13 €; Ausgezahlt: 201,65 €.\"></picture><figcaption>Die Rechnung des Rechners mit der Rendite und dem Dividendenwachstum des Berichts, vor Steuern.</figcaption></figure>\n  </section><section class=\"sec popsec\" aria-labelledby=\"pop-h\">\n    <h2 id=\"pop-h\">Dividendenzahler im Rechner</h2>\n    <p class=\"lead\">Jede Zeile stammt aus dem neuesten Bericht zum Unternehmen, auf Deutsch lesbar. Die letzte Spalte ist die Dividende im Verhältnis zum freien Cashflow des letzten Geschäftsjahres: unter 100 % deckte das Cash des Jahres sie, darüber nicht.</p>\n    <div class=\"tw\"><table class=\"popt\"><thead><tr><th scope=\"col\">Unternehmen</th><th scope=\"col\">Rendite</th><th scope=\"col\" class=\"cg\">Dividendenwachstum im Jahr</th><th scope=\"col\">% des freien Cashflows</th><th scope=\"col\"></th></tr></thead><tbody>{{payers}}</tbody></table></div>\n    <p class=\"fine\">Rendite zum Kursdatum des jeweiligen Berichts. Wachstum: die jährliche Veränderung der gezahlten Dividende je Aktie über die letzten fünf Geschäftsjahre (meist 2021–2025). Der Name öffnet die Dividendenseite des Unternehmens; Berechnen trägt es oben ein.</p>\n  </section><section class=\"sec msec\" aria-labelledby=\"m-h\">\n    <h2 id=\"m-h\">Wie wird gerechnet?</h2>\n    <p class=\"lead\">Die vorausgefüllte Rendite stammt aus unserem neuesten Bericht zum Unternehmen, zum Kurs des angegebenen Datums. Das Wachstum ist die jährliche Veränderung der gezahlten Dividende je Aktie über die letzten fünf Geschäftsjahre. Ein Unternehmen, dessen Zahlen nicht zueinander passen, wird nicht vorausgefüllt.</p><p class=\"after\">Jedes Jahr zahlt er diese Rendite auf den Wert zu Jahresbeginn, erhöht um das Dividendenwachstum und gesenkt um ein eingegebenes Kurswachstum; mit Wiederanlage kaufen die Dividenden nach Steuern am Jahresende weitere Aktien.</p>\n  </section><section class=\"sec qa\" aria-labelledby=\"faq-h\">\n    <h2 id=\"faq-h\">Fragen zu Dividendeneinnahmen</h2>\n    <div class=\"qa__grid\"><div class=\"qa__i\"><h3>Wie viel muss ich anlegen, um 1.000 € Dividende im Monat zu bekommen?</h3><p><span class=\"n\" data-v=\"12000\" data-d=\"0\">12.000</span> € im Jahr geteilt durch die Rendite. Bei SAP (<span class=\"n\" data-v=\"1.2\" data-d=\"1\">1,2</span> %) etwa <span class=\"n\" data-v=\"1000000\" data-d=\"0\">1.000.000</span> €; bei BASF (<span class=\"n\" data-v=\"4.2\" data-d=\"1\">4,2</span> %, unser Bericht vom 31. Oktober 2026) etwa <span class=\"n\" data-v=\"285714\" data-d=\"0\">285.714</span> €. Eine höhere Rendite braucht weniger Geld, wenn die Dividende hält.</p></div><div class=\"qa__i\"><h3>Ist die Dividende von SAP durch den freien Cashflow gedeckt?</h3><p>Im Jahr 2025 zahlte SAP Dividenden in Höhe von <span class=\"n\" data-v=\"36.292834890965736\" data-d=\"0\">36</span> % des freien Cashflows je Aktie. Über hundert Prozent kostete die Dividende mehr, als das Geschäft in dem Jahr an Cash erwirtschaftete.</p></div><div class=\"qa__i\"><h3>Heißt eine hohe Rendite eine sichere Dividende?</h3><p>Nein. Die Rendite von Pfizer liegt bei <span class=\"n\" data-v=\"5.6\" data-d=\"1\">5,6</span> %, aber 2025 entsprach die Dividende <span class=\"n\" data-v=\"107.54716981132074\" data-d=\"0\">108</span> % des freien Cashflows je Aktie (unser Bericht vom 3. November 2026). Die Rendite sagt, was Sie bekommen; das Cash sagt, ob es so weitergehen kann.</p></div><div class=\"qa__i\"><h3>Sind die Ergebnisse vor Steuern?</h3><p>Ja, sofern Sie keinen Steuersatz auf Dividenden eingeben. Ihr Satz hängt von Ihrem Land und Ihrem Depot ab.</p></div></div>\n    <button type=\"button\" class=\"bridge\" data-open-viewer data-chapter=\"5\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg><span>Kapitel 5, Die Zahlen: wie viel Cash nach der Vergütung in Aktien bleibt</span><b>Im vollständigen Bericht →</b></button>\n  </section><section class=\"sec links\" aria-labelledby=\"more-h\">\n    <h2 id=\"more-h\">Mehr zu Dividenden</h2>\n    <div class=\"links__grid\">\n      <div><div class=\"chips\"><a href=\"/de/aktien/sap-de/dividende/\">SAP Dividende</a><a href=\"/de/aktien/sap-de/\">SAP Aktie Prognose</a><a href=\"/de/aktien/\">Alle Aktien</a><a href=\"/de/alternativen/ki-aktienanalyse-tools/\">KI-Aktienanalyse</a></div></div>\n      <div><h3>In anderen Sprachen</h3><div class=\"chips\"><a href=\"/stocks/dividend-calculator/\">Dividend calculator</a><a href=\"/fr/stocks/calculateur-dividendes/\">Calculateur de dividendes</a><a href=\"/zh/stocks/dividend-calculator/\">股息計算機</a></div></div>\n    </div>\n  </section><section class=\"close\" aria-labelledby=\"close-h\">\n    <div class=\"close__in\">\n      <h2 id=\"close-h\">Der Rechner zeigt die Einnahmen. Der Bericht sagt, ob das Cash dafür da ist.</h2>\n      <p>Der vollständige Bericht zu SAP: eine Zusammenfassung und 8 Kapitel, 22.660 Wörter, 54 Tabellen. Die erste Seite öffnet sich hier, ohne Konto.</p>\n      <p>So entsteht er: Eine KI liest die Unterlagen von SAP, schreibt den Bericht, prüft die Zahlen daran und nennt jede Quelle, 235 in diesem. <a href=\"/methodology/\" hreflang=\"en\">Unsere Methode</a> · <a href=\"/corrections/\" hreflang=\"en\">Korrekturen</a></p>\n      <a class=\"btn btn--mint btn--lg\" id=\"closebtn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=SAP.DE&amp;src=seo-dividend-calculator&amp;lang=de\">Den vollständigen Bericht zu SAP lesen</a>\n      <p class=\"free\">Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.</p>\n      <p class=\"foot\">Nur zur Information, keine Anlageberatung. Die Ergebnisse sind eine Rechnung mit den gezeigten Zahlen; sie versprechen keine Dividende. Die Kurse sind die des angegebenen Datums.</p>\n    </div>\n  </section>\n</main>",
+ "bar": "<div class=\"bar\" id=\"bar\" aria-hidden=\"true\">\n  <span>Bericht zu SAP<small>Neue Konten: ein fertiger Bericht gratis</small></span>\n  <a class=\"btn btn--sm\" rel=\"nofollow\" tabindex=\"-1\" href=\"https://app.mystockbutler.com/signup?ticker=SAP.DE&amp;src=seo-dividend-calculator&amp;lang=de\">Lesen</a>\n</div>",
+ "viewer": "<div class=\"viewer\" id=\"viewer\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Bericht zu SAP · 23. Oktober 2026\" hidden>\n  <div class=\"viewer__win\" tabindex=\"-1\">\n    <div class=\"viewer__bar\">\n      <span class=\"viewer__title\">Bericht zu SAP · 23. Oktober 2026</span>\n      <button class=\"viewer__x\" type=\"button\" data-close-viewer aria-label=\"Bericht schließen\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button>\n    </div>\n    <div class=\"viewer__main\">\n    <aside class=\"rail\" aria-label=\"Inhalt\">\n      <div class=\"rail__head\">Inhalt</div>\n      <nav class=\"rail__nav\" aria-label=\"Inhalt\"><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev chev--open\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a is-on\" data-goto=\"executive-summary\">Auszüge aus dem Bericht</button></div><div class=\"rail__sub\"><button type=\"button\" data-goto=\"x0\">1. Das Unternehmen</button><button type=\"button\" data-goto=\"x1\">5. Die Zahlen</button><button type=\"button\" data-goto=\"x2\">6. Bewertung und Aktie</button><button type=\"button\" data-goto=\"x3\">8. Wohin der Kurs gehen könnte</button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"1\">1. Das Unternehmen<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"2\">2. Der Markt<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"3\">3. Geschichte und Kapitalentscheidungen<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"4\">4. Management und Eigentümer<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"5\">5. Die Zahlen<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"6\">6. Bewertung und Aktie<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"7\">7. Wie es weitergeht<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"8\">8. Wohin der Kurs gehen könnte<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div></nav>\n    </aside>\n    <div class=\"viewer__body\" id=\"viewer-body\">\n      <div class=\"blog-report\" lang=\"de\"><div class=\"br-column\">\n        <header class=\"br-ui\">\n          <div class=\"br-kicker\"><span>SAP</span><span>· XETRA</span><span>· SAP SE</span></div>\n          <p class=\"br-title\">SAP (SAP)</p>\n          <div class=\"br-by\"><span>Das Research-Team von MyStockButler</span><time datetime=\"2026-10-23\">Aktualisiert am 23. Okt. 2026</time></div>\n        </header>\n        <aside class=\"br-ui br-disc\" aria-label=\"Wichtiger Hinweis\">\n          <div class=\"br-disc__t\">Wichtiger Hinweis</div>\n          <p>Dieser Text ist eine allgemeine Information und keine Anlageberatung. Er empfiehlt weder den Kauf noch den Verkauf noch das Halten eines Wertpapiers und berücksichtigt nicht Ihre persönliche Lage. MyStockButler und seine Autoren halten keine Position in SAP. Datum der Analyse: 23. Oktober 2026. Die Zahlen können sich seitdem geändert haben; prüfen Sie wichtige Fakten und sprechen Sie vor einer Anlage mit einem qualifizierten Berater.</p>\n        </aside>\n        <div class=\"br-mt8\"><section id=\"executive-summary\" class=\"br-chapter\" data-src=\"report\">\n          <h2>Auszüge aus dem Bericht</h2>\n          <div class=\"memo-tables\">\n<h3 id=\"x0\">1. Das Unternehmen</h3><p>SAP verkauft Software, die einem Unternehmen hilft, seine Abteilungen auf Basis gemeinsamer Informationen zu steuern. Das Geschäft hängt davon ab, diese Software in wiederkehrende Kundenzahlungen umzuwandeln und sie anschließend zuverlässig genug bereitzustellen, um diese Kunden zu halten und weitere Produkte oder Leistungen an sie zu verkaufen.</p>\n<h3 id=\"x1\">5. Die Zahlen</h3><p>Die aktienbasierte Vergütung verändert das wirtschaftliche Bild. Die aktienbasierte Bezahlung belief sich 2025 auf 1.695 Millionen €. Nach ihrem Abzug ergibt sich ein „realer freier Cashflow“ von 5.849 Millionen € beziehungsweise 15,9 % des Umsatzes. Dies ist nicht SAPs offizielle Cashflow-Kennzahl. Dabei werden den Mitarbeitern gewährte Aktien als Vergütung behandelt, die bestehende Aktionäre verwässern kann, auch wenn dadurch nicht unmittelbar Geld vom Bankkonto abfließt.</p>\n<h3 id=\"x2\">6. Bewertung und Aktie</h3><p>Die Free-Cashflow-Konversion zeigt, wie viel vom bilanziellen Gewinn zu Cash wird. Vorauszahlungen von Kunden können den Cashflow verbessern, bevor SAP die Leistung erbringt, während Restrukturierungszahlungen den Cashflow nach dem bilanziellen Aufwand belasten können. SAPs Ziel für den freien Cashflow 2026 liegt bei etwa 10 Milliarden €. Die Dividendenrendite beträgt 1,2 %, sodass Dividenden die Rendite unterstützen, die Bewertung jedoch nicht allein tragen können.</p>\n<h3 id=\"x3\">8. Wohin der Kurs gehen könnte</h3><p>Die Dividendenprognose geht von den jüngsten 2,50 € je Aktie aus. Im Basisszenario steigen sie an den ersten beiden Terminen auf 2,70 € und 2,90 € und danach auf 3,10 €. Damit setzt sich die fünfjährige Serie steigender regulärer Jahresdividenden fort, allerdings in moderatem Tempo. Im Bärenszenario sinkt die Dividende von 2,50 € auf 2,40 € und anschließend auf 2,30 €; im Bullenszenario steigt sie von 2,80 € auf 3,40 €. Die Cash-Generierung stützt die Ausschüttung, steht jedoch im Wettbewerb mit Übernahmen und Investitionen.</p><p>Wenn KI 2028–29 weiter gebündelt bleibt und die Infrastrukturkosten steigen, würde dies den für Dividenden und Aktienrückkäufe verfügbaren Cashflow weiter verringern. Das Bewertungsmultiple geriete dann neben den operativen Ergebnissen unter Druck.</p>\n          </div>\n          <div class=\"lock\">\n          <div class=\"lock__fade\"></div>\n          <div class=\"lock__box\" id=\"lockbox\">\n            <h3 id=\"lock-h\">Die 8 vollständigen Kapitel stehen im Bericht</h3>\n            <p id=\"lock-counts\">Der vollständige Bericht: 22.660 Wörter, 54 Tabellen und 235 Quellen, aus den Unterlagen von SAP.</p>\n            <p>Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.</p>\n            <ul><li data-chapter=\"1\">1. Das Unternehmen</li><li data-chapter=\"2\">2. Der Markt</li><li data-chapter=\"3\">3. Geschichte und Kapitalentscheidungen</li><li data-chapter=\"4\">4. Management und Eigentümer</li><li data-chapter=\"5\">5. Die Zahlen</li><li data-chapter=\"6\">6. Bewertung und Aktie</li><li data-chapter=\"7\">7. Wie es weitergeht</li><li data-chapter=\"8\">8. Wohin der Kurs gehen könnte</li></ul>\n          </div>\n        </div>\n        </section></div>\n      </div></div>\n    </div>\n    </div>\n    <div class=\"viewer__foot\">\n      <a class=\"btn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=SAP.DE&amp;src=seo-dividend-calculator&amp;lang=de\">Den Bericht zu SAP weiterlesen</a>\n      <small>Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.</small>\n    </div>\n  </div>\n</div>",
+ "quotes": [
+  {
+   "ticker": "SAP.DE",
+   "slug": "sap-de",
+   "memo_date": "2026-10-23T00:29:43Z",
+   "counts": {
+    "chapters": 8,
+    "paragraphs": 274,
+    "tables": 54,
+    "words": 22660,
+    "sources": 235
+   }
+  }
+ ],
+ "source": "~/b115-wire/r6/calc/dividendenrechner-de.html",
+ "built_on": "2026-11-04",
+ "files": [
+  {
+   "name": "sap-de-cover-sm.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"400\" height=\"300\" fill=\"#fff\"/><line x1=\"10\" y1=\"230\" x2=\"390\" y2=\"230\" stroke=\"#E4E4DE\"/><rect x=\"23.3\" y=\"187.4\" width=\"22.2\" height=\"42.6\" rx=\"3\" fill=\"#137C46\"/><rect x=\"49.5\" y=\"131.4\" width=\"22.2\" height=\"98.6\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"47.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2021</text><text x=\"47.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">43 %</text><rect x=\"97.3\" y=\"173.8\" width=\"22.2\" height=\"56.2\" rx=\"3\" fill=\"#137C46\"/><rect x=\"123.5\" y=\"147.1\" width=\"22.2\" height=\"82.9\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"121.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2022</text><text x=\"121.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">68 %</text><rect x=\"171.3\" y=\"183.3\" width=\"22.2\" height=\"46.7\" rx=\"3\" fill=\"#137C46\"/><rect x=\"197.5\" y=\"139.7\" width=\"22.2\" height=\"90.3\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"195.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2023</text><text x=\"195.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">52 %</text><rect x=\"245.3\" y=\"180.0\" width=\"22.2\" height=\"50.0\" rx=\"3\" fill=\"#137C46\"/><rect x=\"271.5\" y=\"160.7\" width=\"22.2\" height=\"69.3\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"269.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2024</text><text x=\"269.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">72 %</text><rect x=\"319.3\" y=\"176.3\" width=\"22.2\" height=\"53.7\" rx=\"3\" fill=\"#137C46\"/><rect x=\"345.5\" y=\"82.2\" width=\"22.2\" height=\"147.8\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"343.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2025</text><text x=\"343.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">36 %</text><rect x=\"10\" y=\"10\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#137C46\"/><text x=\"30\" y=\"23\" font-size=\"16\" fill=\"#26332B\">Gezahlte Dividende je Aktie</text><rect x=\"10\" y=\"34\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"30\" y=\"47\" font-size=\"16\" fill=\"#26332B\">Freier Cashflow je Aktie</text></svg>"
+  },
+  {
+   "name": "sap-de-cover.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 300\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"600\" height=\"300\" fill=\"#fff\"/><line x1=\"40\" y1=\"250\" x2=\"590\" y2=\"250\" stroke=\"#E4E4DE\"/><rect x=\"59.4\" y=\"199.9\" width=\"32.4\" height=\"50.1\" rx=\"3\" fill=\"#137C46\"/><text x=\"75.6\" y=\"193.9\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">1,85</text><rect x=\"95.8\" y=\"134.1\" width=\"32.4\" height=\"115.9\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"112.0\" y=\"128.1\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">4,28</text><text x=\"93.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2021</text><text x=\"93.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">43 %</text><rect x=\"167.4\" y=\"183.9\" width=\"32.4\" height=\"66.1\" rx=\"3\" fill=\"#137C46\"/><text x=\"183.6\" y=\"177.9\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">2,44</text><rect x=\"203.8\" y=\"152.5\" width=\"32.4\" height=\"97.5\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"220.0\" y=\"146.5\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">3,60</text><text x=\"201.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2022</text><text x=\"201.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">68 %</text><rect x=\"275.4\" y=\"195.0\" width=\"32.4\" height=\"55.0\" rx=\"3\" fill=\"#137C46\"/><text x=\"291.6\" y=\"189.0\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">2,03</text><rect x=\"311.8\" y=\"143.8\" width=\"32.4\" height=\"106.2\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"328.0\" y=\"137.8\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">3,92</text><text x=\"309.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2023</text><text x=\"309.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">52 %</text><rect x=\"383.4\" y=\"191.2\" width=\"32.4\" height=\"58.8\" rx=\"3\" fill=\"#137C46\"/><text x=\"399.6\" y=\"185.2\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">2,17</text><rect x=\"419.8\" y=\"168.5\" width=\"32.4\" height=\"81.5\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"436.0\" y=\"162.5\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">3,01</text><text x=\"417.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2024</text><text x=\"417.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">72 %</text><rect x=\"491.4\" y=\"186.9\" width=\"32.4\" height=\"63.1\" rx=\"3\" fill=\"#137C46\"/><text x=\"507.6\" y=\"180.9\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">2,33</text><rect x=\"527.8\" y=\"76.1\" width=\"32.4\" height=\"173.9\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"544.0\" y=\"70.1\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">6,42</text><text x=\"525.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2025</text><text x=\"525.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">36 %</text><rect x=\"40\" y=\"10\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#137C46\"/><text x=\"58\" y=\"21\" font-size=\"13\" fill=\"#26332B\">Gezahlte Dividende je Aktie</text><rect x=\"290\" y=\"10\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"308\" y=\"21\" font-size=\"13\" fill=\"#26332B\">Freier Cashflow je Aktie</text></svg>"
+  },
+  {
+   "name": "sap-de-drip-sm.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 280\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"400\" height=\"280\" fill=\"#fff\"/><line x1=\"10\" y1=\"226\" x2=\"390\" y2=\"226\" stroke=\"#E4E4DE\"/><rect x=\"15.2\" y=\"151.8\" width=\"12.6\" height=\"74.2\" rx=\"2\" fill=\"#137C46\"/><rect x=\"30.8\" y=\"151.8\" width=\"12.6\" height=\"74.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"27.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">1</text><rect x=\"52.2\" y=\"146.5\" width=\"12.6\" height=\"79.5\" rx=\"2\" fill=\"#137C46\"/><rect x=\"67.8\" y=\"147.4\" width=\"12.6\" height=\"78.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"64.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">2</text><rect x=\"89.2\" y=\"140.7\" width=\"12.6\" height=\"85.3\" rx=\"2\" fill=\"#137C46\"/><rect x=\"104.8\" y=\"142.8\" width=\"12.6\" height=\"83.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"101.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">3</text><rect x=\"126.2\" y=\"134.4\" width=\"12.6\" height=\"91.6\" rx=\"2\" fill=\"#137C46\"/><rect x=\"141.8\" y=\"137.8\" width=\"12.6\" height=\"88.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"138.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">4</text><rect x=\"163.2\" y=\"127.6\" width=\"12.6\" height=\"98.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"178.8\" y=\"132.6\" width=\"12.6\" height=\"93.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"175.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">5</text><rect x=\"200.2\" y=\"120.2\" width=\"12.6\" height=\"105.8\" rx=\"2\" fill=\"#137C46\"/><rect x=\"215.8\" y=\"127.0\" width=\"12.6\" height=\"99.0\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"212.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">6</text><rect x=\"237.2\" y=\"112.1\" width=\"12.6\" height=\"113.9\" rx=\"2\" fill=\"#137C46\"/><rect x=\"252.8\" y=\"121.2\" width=\"12.6\" height=\"104.8\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"249.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">7</text><rect x=\"274.2\" y=\"103.3\" width=\"12.6\" height=\"122.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"289.8\" y=\"114.9\" width=\"12.6\" height=\"111.1\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"286.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">8</text><rect x=\"311.2\" y=\"93.7\" width=\"12.6\" height=\"132.3\" rx=\"2\" fill=\"#137C46\"/><rect x=\"326.8\" y=\"108.4\" width=\"12.6\" height=\"117.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"323.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">9</text><rect x=\"348.2\" y=\"83.1\" width=\"12.6\" height=\"142.9\" rx=\"2\" fill=\"#137C46\"/><rect x=\"363.8\" y=\"101.4\" width=\"12.6\" height=\"124.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"360.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">10</text><text x=\"21.5\" y=\"145.8\" font-size=\"15\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">120 €</text><text x=\"354.5\" y=\"77.1\" font-size=\"15\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"end\">231 €</text><rect x=\"10\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#137C46\"/><text x=\"29\" y=\"22\" font-size=\"15\" fill=\"#26332B\">Wieder angelegt</text><rect x=\"150\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"169\" y=\"22\" font-size=\"15\" fill=\"#26332B\">Ausgezahlt</text><text x=\"388\" y=\"268\" font-size=\"14\" fill=\"#617066\" text-anchor=\"end\">Jahr</text></svg>"
+  },
+  {
+   "name": "sap-de-drip.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 280\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"600\" height=\"280\" fill=\"#fff\"/><line x1=\"40\" y1=\"230\" x2=\"590\" y2=\"230\" stroke=\"#E4E4DE\"/><rect x=\"47.6\" y=\"146.6\" width=\"18.4\" height=\"83.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"68.9\" y=\"146.6\" width=\"18.4\" height=\"83.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"65.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">1</text><rect x=\"101.6\" y=\"140.5\" width=\"18.4\" height=\"89.5\" rx=\"2\" fill=\"#137C46\"/><rect x=\"122.9\" y=\"141.6\" width=\"18.4\" height=\"88.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"119.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">2</text><rect x=\"155.6\" y=\"134.0\" width=\"18.4\" height=\"96.0\" rx=\"2\" fill=\"#137C46\"/><rect x=\"176.9\" y=\"136.4\" width=\"18.4\" height=\"93.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"173.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">3</text><rect x=\"209.6\" y=\"127.0\" width=\"18.4\" height=\"103.0\" rx=\"2\" fill=\"#137C46\"/><rect x=\"230.9\" y=\"130.8\" width=\"18.4\" height=\"99.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"227.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">4</text><rect x=\"263.6\" y=\"119.3\" width=\"18.4\" height=\"110.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"284.9\" y=\"124.9\" width=\"18.4\" height=\"105.1\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"281.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">5</text><rect x=\"317.6\" y=\"110.9\" width=\"18.4\" height=\"119.1\" rx=\"2\" fill=\"#137C46\"/><rect x=\"338.9\" y=\"118.7\" width=\"18.4\" height=\"111.3\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"335.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">6</text><rect x=\"371.6\" y=\"101.9\" width=\"18.4\" height=\"128.1\" rx=\"2\" fill=\"#137C46\"/><rect x=\"392.9\" y=\"112.1\" width=\"18.4\" height=\"117.9\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"389.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">7</text><rect x=\"425.6\" y=\"91.9\" width=\"18.4\" height=\"138.1\" rx=\"2\" fill=\"#137C46\"/><rect x=\"446.9\" y=\"105.1\" width=\"18.4\" height=\"124.9\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"443.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">8</text><rect x=\"479.6\" y=\"81.1\" width=\"18.4\" height=\"148.9\" rx=\"2\" fill=\"#137C46\"/><rect x=\"500.9\" y=\"97.6\" width=\"18.4\" height=\"132.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"497.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">9</text><rect x=\"533.6\" y=\"69.3\" width=\"18.4\" height=\"160.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"554.9\" y=\"89.8\" width=\"18.4\" height=\"140.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"551.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">10</text><text x=\"56.7\" y=\"140.6\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">120 €</text><text x=\"542.7\" y=\"63.3\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">231 €</text><text x=\"564.1\" y=\"83.8\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">202 €</text><rect x=\"40\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#137C46\"/><text x=\"59\" y=\"22\" font-size=\"13\" fill=\"#26332B\">Wieder angelegt</text><rect x=\"190\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"208\" y=\"22\" font-size=\"13\" fill=\"#26332B\">Ausgezahlt</text><text x=\"588\" y=\"266\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"end\">Jahr</text></svg>"
+  }
+ ],
+ "tokens": [
+  "payers"
+ ],
+ "calc": {
+  "C": {
+   "lang": "de",
+   "ex": "SAP.DE",
+   "rows": {
+    "KO": {
+     "t": "KO",
+     "n": "Coca-Cola",
+     "slug": "ko",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 91.18,
+     "pdate": "2026-10-27",
+     "mdate": "2026-10-28",
+     "y": 2.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.67,
+      1.75,
+      1.83,
+      1.93,
+      2.04
+     ],
+     "dd": 2,
+     "fcf": [
+      2.59,
+      2.19,
+      2.25,
+      1.1,
+      1.23
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.130425962099183,
+     "cov": 165.85365853658536,
+     "fneg": 0
+    },
+    "PG": {
+     "t": "PG",
+     "n": "P&G",
+     "slug": "pg",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 161.02,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 2.7,
+     "yd": 1,
+     "cols": [
+      "Jun 2022",
+      "Jun 2023",
+      "Jun 2024",
+      "Jun 2025",
+      "Jun 2026"
+     ],
+     "dps": [
+      3.45,
+      3.62,
+      3.77,
+      4.02,
+      4.22
+     ],
+     "dd": 2,
+     "fcf": [
+      5.34,
+      5.55,
+      6.68,
+      5.72,
+      6.25
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.1655116197374396,
+     "cov": 67.52,
+     "fneg": 0
+    },
+    "JNJ": {
+     "t": "JNJ",
+     "n": "Johnson & Johnson",
+     "slug": "jnj",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 248.61,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-14",
+     "y": 2.2,
+     "yd": 1,
+     "cols": [
+      "Jan 2022",
+      "Jan 2023",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      4.13,
+      4.39,
+      4.6,
+      4.87,
+      5.1
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      null,
+      8.1,
+      8.04
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.415635465194901,
+     "cov": 63.43283582089552,
+     "fneg": 0
+    },
+    "XOM": {
+     "t": "XOM",
+     "n": "ExxonMobil",
+     "slug": "xom",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 183.29,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 2.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.49,
+      3.55,
+      3.69,
+      3.89,
+      4
+     ],
+     "dd": 2,
+     "fcf": [
+      8.43,
+      13.89,
+      8.26,
+      7.15,
+      5.48
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 3.468616263308477,
+     "cov": 72.992700729927,
+     "fneg": 0
+    },
+    "CVX": {
+     "t": "CVX",
+     "n": "Chevron",
+     "slug": "cvx",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 231.46,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 3.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      5.3,
+      5.65,
+      6.03,
+      6.49,
+      6.87
+     ],
+     "dd": 2,
+     "fcf": [
+      11.01,
+      19.4,
+      10.52,
+      8.28,
+      8.94
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 6.7014243584160305,
+     "cov": 76.84563758389262,
+     "fneg": 0
+    },
+    "ABBV": {
+     "t": "ABBV",
+     "n": "AbbVie",
+     "slug": "abbv",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 290.97,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 2.5,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      5.21,
+      5.65,
+      5.94,
+      6.22,
+      6.57
+     ],
+     "dd": 2,
+     "fcf": [
+      12.37,
+      13.64,
+      12.44,
+      10.06,
+      10.05
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.9697504392650425,
+     "cov": 65.3731343283582,
+     "fneg": 0
+    },
+    "VZ": {
+     "t": "VZ",
+     "n": "Verizon",
+     "slug": "vz",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 43.1,
+     "pdate": "2026-10-26",
+     "mdate": "2026-10-27",
+     "y": 6.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.52,
+      2.57,
+      2.62,
+      2.66,
+      2.71
+     ],
+     "dd": 2,
+     "fcf": [
+      4.64,
+      3.34,
+      4.44,
+      4.69,
+      4.76
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 1.8338556772105052,
+     "cov": 56.9327731092437,
+     "fneg": 0
+    },
+    "MO": {
+     "t": "MO",
+     "n": "Altria",
+     "slug": "mo",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 75.55,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-29",
+     "y": 5.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.49,
+      3.66,
+      3.81,
+      3.98,
+      4.14
+     ],
+     "dd": 2,
+     "fcf": [
+      4.46,
+      4.46,
+      5.12,
+      5.01,
+      5.39
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 4.36232084874093,
+     "cov": 76.80890538033394,
+     "fneg": 0
+    },
+    "PFE": {
+     "t": "PFE",
+     "n": "Pfizer",
+     "slug": "pfe",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 30.67,
+     "pdate": "2026-11-02",
+     "mdate": "2026-11-03",
+     "y": 5.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.53,
+      1.57,
+      1.62,
+      1.67,
+      1.71
+     ],
+     "dd": 2,
+     "fcf": [
+      5.29,
+      4.54,
+      0.84,
+      1.73,
+      1.59
+     ],
+     "fd": 2,
+     "unit": "",
+     "g": 2.8196615313359485,
+     "cov": 107.54716981132074,
+     "fneg": 0
+    },
+    "IBM": {
+     "t": "IBM",
+     "n": "IBM",
+     "slug": "ibm",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 253.56,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 2.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      6.49,
+      6.52,
+      6.55,
+      6.56,
+      6.59
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      10.19,
+      12.16,
+      13.6,
+      15.53
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 0.3830020303404069,
+     "cov": 42.433998712169995,
+     "fneg": 0
+    },
+    "HD": {
+     "t": "HD",
+     "n": "Home Depot",
+     "slug": "hd",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 290.74,
+     "pdate": "2026-10-09",
+     "mdate": "2026-10-12",
+     "y": 3.2,
+     "yd": 1,
+     "cols": [
+      "Jan 2022",
+      "Jan 2023",
+      "Jan 2024",
+      "Feb 2025",
+      "Feb 2026"
+     ],
+     "dps": [
+      6.6,
+      7.6,
+      8.37,
+      8.99,
+      9.2
+     ],
+     "dd": 2,
+     "fcf": [
+      13.24,
+      11.22,
+      17.91,
+      16.44,
+      12.71
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 8.657816349331004,
+     "cov": 72.38394964594806,
+     "fneg": 0
+    },
+    "ENB.TO": {
+     "t": "ENB.TO",
+     "n": "Enbridge",
+     "slug": "enb-to",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "CAD",
+     "price": 66.59,
+     "pdate": "2026-10-19",
+     "mdate": "2026-10-20",
+     "y": 5.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.34,
+      3.43,
+      3.54,
+      3.65,
+      3.76
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      4.63,
+      2.72,
+      1.48
+     ],
+     "fd": 2,
+     "unit": "C$ per share",
+     "g": 3.005483388214447,
+     "cov": 254.05405405405406,
+     "fneg": 0
+    },
+    "T": {
+     "t": "T",
+     "n": "AT&T",
+     "slug": "t",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 22.86,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-13",
+     "y": 4.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.01,
+      1.38,
+      1.12,
+      1.14,
+      1.14
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      0.84,
+      2.41,
+      2.52,
+      2.66
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": -13.21849082178006,
+     "cov": 42.85714285714285,
+     "fneg": 0
+    },
+    "AI.PA": {
+     "t": "AI.PA",
+     "n": "Air Liquide",
+     "slug": "ai-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 174.68,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-24",
+     "y": 1.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.1,
+      2.21,
+      2.48,
+      2.69,
+      3.07
+     ],
+     "dd": 2,
+     "fcf": [
+      3.42,
+      3.17,
+      3.71,
+      3.6,
+      3.47
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 9.958743924030443,
+     "cov": 88.47262247838616,
+     "fneg": 0
+    },
+    "TTE.PA": {
+     "t": "TTE.PA",
+     "n": "TotalEnergies",
+     "slug": "tte-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 85.57,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-30",
+     "y": 4.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.11,
+      3.88,
+      3.09,
+      3.33,
+      3.67
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "US$ per ordinary share",
+     "g": 4.226083548541881,
+     "cov": null,
+     "fneg": 0
+    },
+    "SAN.PA": {
+     "t": "SAN.PA",
+     "n": "Sanofi",
+     "slug": "san-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 79.74,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 5.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.19,
+      3.32,
+      3.55,
+      3.74,
+      3.89
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      6.23,
+      5.89,
+      5.25,
+      6.91
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 5.084758275051171,
+     "cov": 56.29522431259045,
+     "fneg": 0
+    },
+    "ORA.PA": {
+     "t": "ORA.PA",
+     "n": "Orange",
+     "slug": "ora-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 14.33,
+     "pdate": "2026-10-28",
+     "mdate": "2026-10-28",
+     "y": 5.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.8,
+      0.69,
+      0.7,
+      0.72,
+      0.75
+     ],
+     "dd": 2,
+     "fcf": [
+      0.49,
+      0.62,
+      1.14,
+      1.21,
+      1.03
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": -1.600516436728483,
+     "cov": 72.81553398058253,
+     "fneg": 0
+    },
+    "ENGI.PA": {
+     "t": "ENGI.PA",
+     "n": "ENGIE",
+     "slug": "engi-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 23.2,
+     "pdate": "2026-10-26",
+     "mdate": "2026-10-26",
+     "y": 5.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.53,
+      0.86,
+      1.41,
+      1.44,
+      1.49
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.18,
+      0.32,
+      1.77,
+      0.64,
+      -4.39
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 29.487426542047636,
+     "cov": null,
+     "fneg": 1
+    },
+    "MC.PA": {
+     "t": "MC.PA",
+     "n": "LVMH",
+     "slug": "mc-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 387.79999,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-22",
+     "y": 3.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      7,
+      11.99,
+      12.49,
+      12.99,
+      12.98
+     ],
+     "dd": 2,
+     "fcf": [
+      26.83,
+      21.26,
+      17.54,
+      22.6,
+      24.2
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 16.69282751758372,
+     "cov": 53.63636363636364,
+     "fneg": 0
+    },
+    "DG.PA": {
+     "t": "DG.PA",
+     "n": "VINCI",
+     "slug": "dg-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 106.45,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 4.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.65,
+      3.21,
+      3.99,
+      4.46,
+      4.7
+     ],
+     "dd": 2,
+     "fcf": [
+      10.35,
+      10.7,
+      13.23,
+      14.03,
+      14.11
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 15.401909781199663,
+     "cov": 33.309709425939054,
+     "fneg": 0
+    },
+    "SU.PA": {
+     "t": "SU.PA",
+     "n": "Schneider Electric",
+     "slug": "su-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 235.75,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 1.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.56,
+      2.86,
+      3.12,
+      3.45,
+      3.84
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 10.668191970032147,
+     "cov": null,
+     "fneg": 0
+    },
+    "BCE.TO": {
+     "t": "BCE.TO",
+     "n": "BCE",
+     "slug": "bce-to",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "CAD",
+     "price": 28.73,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 6.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.45,
+      3.63,
+      3.82,
+      3.96,
+      2.18
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      2.54,
+      2.14,
+      2.33
+     ],
+     "fd": 2,
+     "unit": "C$ per share",
+     "g": -10.842198755685306,
+     "cov": 93.56223175965665,
+     "fneg": 0
+    },
+    "SAP.DE": {
+     "t": "SAP.DE",
+     "n": "SAP",
+     "slug": "sap-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 216.1,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 1.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.85,
+      2.44,
+      2.03,
+      2.17,
+      2.33
+     ],
+     "dd": 2,
+     "fcf": [
+      4.28,
+      3.6,
+      3.92,
+      3.01,
+      6.42
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 5.936604358917719,
+     "cov": 36.292834890965736,
+     "fneg": 0
+    },
+    "BAS.DE": {
+     "t": "BAS.DE",
+     "n": "BASF",
+     "slug": "bas-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 53.46,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 4.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.29,
+      3.4,
+      3.39,
+      3.39,
+      2.25
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": -9.061736896400053,
+     "cov": null,
+     "fneg": 0
+    },
+    "DTE.DE": {
+     "t": "DTE.DE",
+     "n": "Deutsche Telekom",
+     "slug": "dte-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 25.35,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-24",
+     "y": 3.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.59,
+      0.64,
+      0.7,
+      0.77,
+      0.9
+     ],
+     "dd": 2,
+     "fcf": [
+      2.51,
+      2.88,
+      3.84,
+      4.55,
+      4.66
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 11.134173609602517,
+     "cov": 19.313304721030043,
+     "fneg": 0
+    },
+    "DHL.DE": {
+     "t": "DHL.DE",
+     "n": "DHL",
+     "slug": "dhl-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 58,
+     "pdate": "2026-10-28",
+     "mdate": "2026-10-28",
+     "y": 3.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.33,
+      1.78,
+      1.82,
+      1.83,
+      1.85
+     ],
+     "dd": 2,
+     "fcf": [
+      2.9,
+      3.34,
+      2.25,
+      1.98,
+      2.33
+     ],
+     "fd": 2,
+     "unit": "",
+     "g": 8.600049163491663,
+     "cov": 79.39914163090128,
+     "fneg": 0
+    },
+    "DB1.DE": {
+     "t": "DB1.DE",
+     "n": "Deutsche Börse",
+     "slug": "db1-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 309.5,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-23",
+     "y": 1.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.99,
+      3.19,
+      3.58,
+      3.79,
+      4
+     ],
+     "dd": 2,
+     "fcf": [
+      4.4,
+      12.49,
+      13.09,
+      11.41,
+      13.67
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 7.546727701612599,
+     "cov": 29.261155815654718,
+     "fneg": 0
+    },
+    "RWE.DE": {
+     "t": "RWE.DE",
+     "n": "RWE",
+     "slug": "rwe-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 57.34,
+     "pdate": "2026-11-02",
+     "mdate": "2026-11-02",
+     "y": 2.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.85,
+      0.88,
+      0.9,
+      1,
+      1.11
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 6.899583535792786,
+     "cov": null,
+     "fneg": 0
+    },
+    "EOAN.DE": {
+     "t": "EOAN.DE",
+     "n": "E.ON",
+     "slug": "eoan-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 18.905,
+     "pdate": "2026-10-30",
+     "mdate": "2026-11-01",
+     "y": 3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.47,
+      0.49,
+      0.51,
+      0.53,
+      0.55
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.3,
+      1.96,
+      -0.28,
+      -0.64,
+      -0.52
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 4.007871301498489,
+     "cov": null,
+     "fneg": 1
+    },
+    "MBG.DE": {
+     "t": "MBG.DE",
+     "n": "Mercedes-Benz",
+     "slug": "mbg-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 40.68,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 8.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.35,
+      5,
+      5.24,
+      5.48,
+      4.3
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 33.59299051891826,
+     "cov": null,
+     "fneg": 0
+    },
+    "IFX.DE": {
+     "t": "IFX.DE",
+     "n": "Infineon",
+     "slug": "ifx-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 51.66,
+     "pdate": "2026-10-27",
+     "mdate": "2026-10-27",
+     "y": 0.7,
+     "yd": 1,
+     "cols": [
+      "Sep 2021",
+      "Sep 2022",
+      "Sep 2023",
+      "Sep 2024",
+      "Sep 2025"
+     ],
+     "dps": [
+      0.22,
+      0.27,
+      0.32,
+      0.35,
+      0.35
+     ],
+     "dd": 2,
+     "fcf": [
+      1.32,
+      1.41,
+      0.87,
+      0.21,
+      1.02
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 12.30816745783818,
+     "cov": 34.31372549019608,
+     "fneg": 0
+    },
+    "QIA.DE": {
+     "t": "QIA.DE",
+     "n": "QIAGEN",
+     "slug": "qia-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 44.935,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 0.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0,
+      0,
+      0,
+      0,
+      0.25
+     ],
+     "dd": 2,
+     "fcf": [
+      1.94,
+      2.55,
+      1.34,
+      2.25,
+      2.07
+     ],
+     "fd": 2,
+     "unit": "Per share in US$",
+     "g": null,
+     "cov": 12.077294685990339,
+     "fneg": 0
+    },
+    "0388.HK": {
+     "t": "0388.HK",
+     "n": "HKEX",
+     "slug": "0388-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 371.6,
+     "pdate": "2026-10-15",
+     "mdate": "2026-10-15",
+     "y": 3.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      9.09,
+      7.62,
+      8.14,
+      8.22,
+      10.83
+     ],
+     "dd": 2,
+     "fcf": [
+      8.53,
+      10.44,
+      7.63,
+      8.52,
+      16.1
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 4.475905369645372,
+     "cov": 67.26708074534162,
+     "fneg": 0
+    },
+    "0941.HK": {
+     "t": "0941.HK",
+     "n": "China Mobile",
+     "slug": "0941-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 79.95,
+     "pdate": "2026-10-12",
+     "mdate": "2026-10-12",
+     "y": 6.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.81,
+      4.07,
+      4.25,
+      4.52,
+      4.75
+     ],
+     "dd": 2,
+     "fcf": [
+      3.85,
+      2.91,
+      4.55,
+      6.06,
+      1.9
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 14.024144481108912,
+     "cov": 250,
+     "fneg": 0
+    },
+    "0002.HK": {
+     "t": "0002.HK",
+     "n": "CLP",
+     "slug": "0002-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 77.15,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 4.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.15
+     ],
+     "dd": 2,
+     "fcf": [
+      1.28,
+      -1.72,
+      3.67,
+      2.13,
+      2.66
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 0.40080963559858684,
+     "cov": 118.42105263157895,
+     "fneg": 0
+    },
+    "0066.HK": {
+     "t": "0066.HK",
+     "n": "MTR",
+     "slug": "0066-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 32.38,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.16,
+      1.38,
+      1.22,
+      1.28,
+      1.31
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.23,
+      -0.83,
+      -0.61,
+      -0.58,
+      -1.69
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 3.0868636276021544,
+     "cov": null,
+     "fneg": 1
+    },
+    "0883.HK": {
+     "t": "0883.HK",
+     "n": "CNOOC Limited",
+     "slug": "0883-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 24.28,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-13",
+     "y": 5.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.46,
+      1.66,
+      1.22,
+      1.28,
+      1.27
+     ],
+     "dd": 2,
+     "fcf": [
+      1.27,
+      2.21,
+      1.69,
+      1.9,
+      1.91
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 28.902539166212083,
+     "cov": 66.49214659685865,
+     "fneg": 0
+    },
+    "0016.HK": {
+     "t": "0016.HK",
+     "n": "SHKP",
+     "slug": "0016-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 106.3,
+     "pdate": "2026-10-15",
+     "mdate": "2026-10-15",
+     "y": 3.7,
+     "yd": 1,
+     "cols": [
+      "Jun 2022",
+      "Jun 2023",
+      "Jun 2024",
+      "Jun 2025",
+      "Jun 2026"
+     ],
+     "dps": [
+      4.95,
+      4.95,
+      4.65,
+      3.75,
+      3.78
+     ],
+     "dd": 2,
+     "fcf": [
+      0.55,
+      3.24,
+      4.37,
+      9.57,
+      13.26
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": -6.5193657752953165,
+     "cov": 28.506787330316744,
+     "fneg": 0
+    },
+    "0728.HK": {
+     "t": "0728.HK",
+     "n": "China Telecom",
+     "slug": "0728-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 4.315,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-23",
+     "y": 7.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.1,
+      0.29,
+      0.22,
+      0.26,
+      0.27
+     ],
+     "dd": 2,
+     "fcf": [
+      0.46,
+      0.34,
+      0.36,
+      0.43,
+      0.38
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 28.186101918870232,
+     "cov": 71.05263157894737,
+     "fneg": 0
+    },
+    "0762.HK": {
+     "t": "0762.HK",
+     "n": "China Unicom",
+     "slug": "0762-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 5.21,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-30",
+     "y": 9.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.28,
+      0.26,
+      0.31,
+      0.38,
+      0.44
+     ],
+     "dd": 2,
+     "fcf": [
+      0.85,
+      0.48,
+      0.36,
+      0.03,
+      0.3
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 11.96277689732501,
+     "cov": 146.66666666666669,
+     "fneg": 0
+    },
+    "0857.HK": {
+     "t": "0857.HK",
+     "n": "PetroChina",
+     "slug": "0857-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 9.83,
+     "pdate": "2026-10-09",
+     "mdate": "2026-10-12",
+     "y": 5.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.22,
+      0.3,
+      0.43,
+      0.45,
+      0.47
+     ],
+     "dd": 2,
+     "fcf": [
+      0.29,
+      0.68,
+      0.81,
+      0.43,
+      0.52
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 20.897910316603017,
+     "cov": 90.38461538461539,
+     "fneg": 0
+    }
+   },
+   "sym": {
+    "USD": [
+     "",
+     " US$"
+    ],
+    "EUR": [
+     "",
+     " €"
+    ],
+    "CAD": [
+     "",
+     " C$"
+    ],
+    "HKD": [
+     "",
+     " HK$"
+    ]
+   },
+   "w": {
+    "cond": "In {n} Jahren, Dividenden {drip}, wenn die Dividende weiter um {g} im Jahr wächst und der Kurs bei {price} bleibt:",
+    "cond_gp": "In {n} Jahren, Dividenden {drip}, wenn die Dividende weiter um {g} im Jahr wächst und der Kurs um {gp} im Jahr steigt:",
+    "sum": "Annahmen aus dem Bericht: Rendite {y} · Wachstum {g} im Jahr · {drip}",
+    "sum_drip": "wieder angelegt",
+    "sum_cash": "ausgezahlt",
+    "ans_label": "{name} ({t}), {amount} angelegt",
+    "res_by": "Dividende im Jahr, vor Steuern, bei der Dividendenrendite von {name} ({y})",
+    "tile1": "pro Jahr im {n}. Jahr",
+    "tile2": "insgesamt an Sie gezahlt in {n} Jahren",
+    "tile1c": "pro Jahr im {n}. Jahr",
+    "tile2c": "insgesamt an Sie gezahlt in {n} Jahren",
+    "own": "Rendite: unser Bericht zu {name} vom {mdate}, zum Schlusskurs von {price} am {pdate}.",
+    "btn1": "Den vollständigen Bericht zu {name} lesen"
+   },
+   "dw": {
+    "mBad": "Geben Sie eine Zahl ab null ein.",
+    "mCap": "Auf das Maximum begrenzt.",
+    "mNone": "Zu {t} haben wir noch keinen Bericht. Geben Sie die Zahlen selbst ein.",
+    "mNoFill": "Die Zahlen von {name} tragen wir hier nicht ein: Die Werte in unserem Bericht sind unvollständig oder passen nicht zueinander. Geben Sie eigene ein oder lesen Sie die Dividendenseite."
+   },
+   "app": "https://app.mystockbutler.com",
+   "src": "seo-dividend-calculator",
+   "yd": 1
+  },
+  "tail": ", lang = C.lang, $ = function (id) { return document.getElementById(id); };\nvar cur = C.rows[C.ex], graw = cur.g, curCur = cur.cur, yd = C.yd;\nfunction symOf(c) { return C.sym[c] || ['', c ? ' ' + c : '']; }\nfunction round2(v) { return Math.round(v * 100) / 100; }\nfunction show(v) { return lang === 'fr' || lang === 'de' ? String(v).replace('.', ',') : String(v); }\nfunction parseNum(s) { s = String(s == null ? '' : s).replace(/[\\s  ']/g, ''); if (!s) return NaN;\n  if (lang === 'fr') s = s.replace(',', '.'); else if (lang === 'de') s = s.replace(/\\.(?=\\d{3}(\\D|$))/g, '').replace(',', '.'); else s = s.replace(/,(?=\\d{3}(\\D|$))/g, '');\n  return /^-?\\d*\\.?\\d+$/.test(s) ? Number(s) : NaN; }\nfunction field(id, min, max) { var el = $(id), v = parseNum(el.value), err = $(id + '-e'), bad = !isFinite(v) || v < min;\n  if (err) err.textContent = bad ? C.dw.mBad : (v > max ? C.dw.mCap : ''); el.setAttribute('aria-invalid', bad ? 'true' : 'false'); return bad ? null : Math.min(v, max); }\nfunction dec(v) { var p = String(v).split('.'); return Math.min(3, p.length > 1 ? p[1].length : 0); }\nfunction setName(e) {\n  var href = C.app + '/signup?ticker=' + encodeURIComponent(e.t) + '&src=' + C.src + (lang !== 'en' ? '&lang=' + lang : '');\n  ['firstbtn', 'closebtn'].forEach(function (id) { var a = $(id); if (a) a.href = href; });\n  var b = $('firstbtn'); if (b) b.textContent = fillT(C.w.btn1, { name: e.n });\n}\nfunction apply(t) { var e = C.rows[t]; if (!e) { $('c-t-e').textContent = fillT(C.dw.mNone, { t: t }); return false; }\n  $('c-t-e').textContent = ''; cur = e; graw = e.g; curCur = e.cur; yd = e.yd;\n  $('c-y').value = show(e.y); $('c-g').value = e.g === null ? '0' : show(round2(e.g)); $('c-cur').textContent = (symOf(e.cur)[0] || symOf(e.cur)[1]).trim();\n  $('c-own').innerHTML = fillH(C.w.own, { name: escH(e.n), mdate: escH(dayText(e.mdate, lang)), pdate: escH(dayText(e.pdate, lang)), price: moneyH(e.price, 2, lang, symOf(e.cur)) });\n  setName(e); return true; }\nfunction calc() {\n  var a = field('c-a', 0, 1e12), y = field('c-y', 0, 100), g = field('c-g', -100, 100), n = field('c-n', 1, 50), gp = field('c-p', -99, 100), tax = field('c-x', 0, 100), add = field('c-add', 0, 1e12);\n  if ([a, y, g, n, gp, tax, add].some(function (v) { return v === null; })) return;\n  if (graw !== null && g === round2(graw)) g = graw;\n  var drip = $('c-d').checked, s = symOf(curCur), N = Math.round(n);\n  var rows = project({ amount: a, y: y, g: g, gp: gp, years: N, drip: drip, tax: tax, add: add }), last = rows[rows.length - 1];\n  var yy = y === cur.y ? yd : dec(y);\n  if ($('c-label')) $('c-label').innerHTML = fillH(C.w.ans_label, { name: escH(cur.n), t: escH(cur.t), amount: moneyH(a, 0, lang, s) });\n  if ($('c-sum')) $('c-sum').innerHTML = fillH(C.w.sum, { y: pctH(y, yy, lang), g: pctH(g, g === graw ? 1 : dec(g), lang), n: N, drip: drip ? C.w.sum_drip : C.w.sum_cash });\n  $('c-big').innerHTML = moneyH(Math.round(rows[0].div), 0, lang, s);\n  $('c-by').innerHTML = fillH(C.w.res_by, { name: escH(cur.n), y: pctH(y, yy, lang) });\n  var gtxt = pctH(g, g === graw ? 1 : dec(g), lang);\n  $('c-cond').innerHTML = fillH(gp ? C.w.cond_gp : C.w.cond, { n: N, drip: drip ? C.w.sum_drip : C.w.sum_cash, g: gtxt, price: moneyH(cur.price, 2, lang, symOf(cur.cur)), gp: pctH(gp, dec(gp), lang) });\n  $('c-fin').innerHTML = moneyH(last.div, 2, lang, s); $('c-tot').innerHTML = moneyH(last.total, 2, lang, s);\n  $('c-finl').textContent = fillT(drip ? C.w.tile1 : C.w.tile1c, { n: N }); $('c-totl').textContent = fillT(drip ? C.w.tile2 : C.w.tile2c, { n: N });\n  $('c-yrs').innerHTML = rows.map(function (r) { return '<tr><td>' + r.k + '</td><td>' + pctH(r.yieldPct, 2, lang) + '</td><td>' + moneyH(r.div, 2, lang, s) + '</td><td>' + moneyH(r.value, 2, lang, s) + '</td></tr>'; }).join('');\n}\nfunction find(q) { q = String(q || '').trim(); if (!q) return ''; var u = q.toUpperCase(); if (C.rows[u]) return u;\n  var l = q.toLowerCase(), hit = ''; Object.keys(C.rows).forEach(function (k) { var n = String(C.rows[k].n).toLowerCase(); if (!hit && (n === l || n.indexOf(l) === 0)) hit = k; }); return hit || u; }\nfunction run() { var t = find($('c-t').value); if (t && t !== cur.t) { if (apply(t)) $('c-t').value = t; } calc(); }\n$('c-f').addEventListener('submit', function (ev) { ev.preventDefault(); run(); });\n$('c-t').addEventListener('change', run);\n['c-a', 'c-y', 'c-g', 'c-n', 'c-p', 'c-x', 'c-add', 'c-d'].forEach(function (id) { $(id).addEventListener('change', calc); });\nvar qt = find(new URLSearchParams(location.search).get('t') || '');\nif (qt && C.rows[qt]) { $('c-t').value = qt; apply(qt); }\ncalc();\n\n})();",
+  "payers": {
+   "tickers": [
+    "SAP.DE",
+    "BAS.DE",
+    "DTE.DE",
+    "DHL.DE",
+    "DB1.DE",
+    "RWE.DE",
+    "EOAN.DE",
+    "MBG.DE",
+    "IFX.DE",
+    "QIA.DE",
+    "KO",
+    "PFE",
+    "VZ",
+    "PG",
+    "JNJ"
+   ],
+   "go": "Berechnen ▸"
+  },
+  "checked": [
+   "BAS.DE",
+   "PFE",
+   "SAP.DE"
+  ]
+ }
+}

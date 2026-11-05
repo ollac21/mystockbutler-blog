@@ -1,0 +1,1838 @@
+{
+ "id": "calc-zh",
+ "path": "/zh/stocks/dividend-calculator/",
+ "lang": "zh-Hant",
+ "title": "股息計算機：輸入股票代號計算股息收入及再投資",
+ "description": "輸入股票代號：計算你可收取多少股息，包括或不包括再投資。HKEX：投資 HK$10,000，以 3.4% 股息率計，每年約收取 HK$340。再看其現金是否足以支付股息。",
+ "css": "calc",
+ "ld": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "所有股票",
+     "item": "https://blog.mystockbutler.com/zh/stocks/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "股息計算機"
+    }
+   ]
+  },
+  {
+   "@type": "WebApplication",
+   "name": "股息計算機：輸入股票代號計算股息收入及再投資",
+   "url": "https://blog.mystockbutler.com/zh/stocks/dividend-calculator/",
+   "applicationCategory": "FinanceApplication",
+   "operatingSystem": "Any",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "inLanguage": "zh-Hant"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "每月要收取 HK$1,000 股息，需要投資多少？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "一年 HK$12,000 除以股息率。以HKEX的 3.4% 計，約 HK$352,941；以CLP的 4.1% 計（我們2026年10月17日的報告），約 HK$292,683。股息率愈高，所需資金愈少，前提是股息能夠維持。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "HKEX的股息有自由現金流支持嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "2025 年，HKEX派發的股息相當於每股自由現金流的 67%。超過百分之一百，代表股息多於公司當年產生的現金。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "高股息率是否代表股息穩妥？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不是。China Mobile的股息率為 6.6%，但 2025 年其股息相當於每股自由現金流的 250%（我們2026年10月12日的報告）。股息率說明你收到多少；現金說明能否持續。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "結果是稅前數字嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "是，除非你輸入股息稅率。你的稅率視乎你的所在地及戶口類型。"
+     }
+    }
+   ]
+  }
+ ],
+ "main": "<main class=\"page calcp vD\" id=\"top\">\n  <section class=\"top\">\n    <nav class=\"crumb\" aria-label=\"導覽路徑\"><a href=\"/zh/stocks/\">所有股票</a><span aria-hidden=\"true\">›</span>股息計算機</nav>\n    <h1>股息計算機：你可以收取多少股息？</h1>\n    <p class=\"byline\">作者 <a href=\"/zh/about/\">Olivier Lachance</a><span class=\"hide-sm\"> · 每家公司的數字來自其最新報告</span><a class=\"plain byline__how\" href=\"/methodology/\" hreflang=\"en\">報告怎樣製作</a></p>\n  </section><section class=\"answer ansC ansD2\" aria-labelledby=\"ans-h\"><h2 class=\"sr\" id=\"ans-h\">HKEX會付給你多少股息？</h2><form class=\"calc calcD\" id=\"c-f\" novalidate>\n      <div class=\"fl\"><label for=\"c-t\">股票代號或公司</label><input id=\"c-t\" inputmode=\"text\" value=\"0388.HK\" list=\"c-names\" autocomplete=\"off\" spellcheck=\"false\" maxlength=\"40\"><p class=\"err\" id=\"c-t-e\" aria-live=\"polite\"></p></div><datalist id=\"c-names\"><option value=\"Coca-Cola\">KO</option><option value=\"Johnson &amp; Johnson\">JNJ</option><option value=\"HKEX\">0388.HK</option><option value=\"China Mobile\">0941.HK</option><option value=\"CLP\">0002.HK</option><option value=\"MTR\">0066.HK</option><option value=\"CNOOC Limited\">0883.HK</option><option value=\"SHKP\">0016.HK</option><option value=\"China Telecom\">0728.HK</option><option value=\"China Unicom\">0762.HK</option><option value=\"PetroChina\">0857.HK</option></datalist>\n      <div class=\"fl\"><label for=\"c-a\">金額</label><div class=\"in\"><span id=\"c-cur\">HK$</span><input id=\"c-a\" inputmode=\"decimal\" value=\"10000\"></div><p class=\"err\" id=\"c-a-e\" aria-live=\"polite\"></p></div>\n      <div class=\"fl\"><label for=\"c-n\">年數</label><input id=\"c-n\" inputmode=\"numeric\" value=\"10\"><p class=\"err\" id=\"c-n-e\" aria-live=\"polite\"></p></div>\n      \n      <details class=\"more\"><summary><span id=\"c-sum\">報告的假設：股息率 <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% · 每年增長 <span class=\"n\" data-v=\"4.475905369645372\" data-d=\"1\">4.5</span>% · 再投資</span> <b>更改 ▸</b></summary><div class=\"more__g\">\n        <div class=\"fl\"><label for=\"c-y\">股息率（%）</label><input id=\"c-y\" inputmode=\"decimal\" value=\"3.4\"><p class=\"err\" id=\"c-y-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-g\">每年股息增長（%）</label><input id=\"c-g\" inputmode=\"decimal\" value=\"4.48\"><p class=\"err\" id=\"c-g-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl ck\"><input id=\"c-d\" type=\"checkbox\" checked><label for=\"c-d\">股息再投資</label></div>\n        <div class=\"fl\"><label for=\"c-p\">每年股價增長（%）</label><input id=\"c-p\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-p-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-x\">股息稅率（%）</label><input id=\"c-x\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-x-e\" aria-live=\"polite\"></p></div>\n        <div class=\"fl\"><label for=\"c-add\">每年額外投入</label><input id=\"c-add\" inputmode=\"decimal\" value=\"0\"><p class=\"err\" id=\"c-add-e\" aria-live=\"polite\"></p></div>\n      </div></details>\n      <button class=\"btn btn--ghost c-go\" type=\"submit\">計算</button>\n    </form><div class=\"resw\"><div class=\"res\"><p class=\"res__n\"><span id=\"c-big\">HK$<span class=\"n\" data-v=\"340\" data-d=\"0\">340</span></span></p><p class=\"res__by\" id=\"c-by\">每年股息，稅前，以HKEX的 <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% 股息率計</p></div>\n    <p class=\"cond\" id=\"c-cond\">10 年後，股息再投資，假設股息每年繼續增長 <span class=\"n\" data-v=\"4.475905369645372\" data-d=\"1\">4.5</span>%，而股價維持在 HK$<span class=\"n\" data-v=\"371.6\" data-d=\"2\">371.60</span>：</p>\n    <div class=\"res2\"><div><span class=\"res2__n\" id=\"c-fin\">HK$<span class=\"n\" data-v=\"722.3870420132795\" data-d=\"2\">722.39</span></span><span class=\"res2__l\" id=\"c-finl\">第 10 年的每年股息</span></div>\n      <div><span class=\"res2__n\" id=\"c-tot\">HK$<span class=\"n\" data-v=\"5049.072956772659\" data-d=\"2\">5,049.07</span></span><span class=\"res2__l\" id=\"c-totl\">10 年合共收取</span></div></div>\n    <details class=\"years\"><summary>逐年明細</summary><div class=\"tw\"><table><thead><tr><th scope=\"col\">年</th><th>相對價值的股息率</th><th>股息</th><th>年末價值</th></tr></thead><tbody id=\"c-yrs\"><tr><td>1</td><td><span class=\"n\" data-v=\"3.4000000000000004\" data-d=\"2\">3.40</span>%</td><td>HK$<span class=\"n\" data-v=\"340\" data-d=\"2\">340.00</span></td><td>HK$<span class=\"n\" data-v=\"10340\" data-d=\"2\">10,340.00</span></td></tr><tr><td>2</td><td><span class=\"n\" data-v=\"3.552180782567943\" data-d=\"2\">3.55</span>%</td><td>HK$<span class=\"n\" data-v=\"367.2954929175253\" data-d=\"2\">367.30</span></td><td>HK$<span class=\"n\" data-v=\"10707.295492917525\" data-d=\"2\">10,707.30</span></td></tr><tr><td>3</td><td><span class=\"n\" data-v=\"3.711173032954412\" data-d=\"2\">3.71</span>%</td><td>HK$<span class=\"n\" data-v=\"397.36626289189843\" data-d=\"2\">397.37</span></td><td>HK$<span class=\"n\" data-v=\"11104.661755809424\" data-d=\"2\">11,104.66</span></td></tr><tr><td>4</td><td><span class=\"n\" data-v=\"3.87728162601325\" data-d=\"2\">3.88</span>%</td><td>HK$<span class=\"n\" data-v=\"430.55900988891915\" data-d=\"2\">430.56</span></td><td>HK$<span class=\"n\" data-v=\"11535.220765698343\" data-d=\"2\">11,535.22</span></td></tr><tr><td>5</td><td><span class=\"n\" data-v=\"4.050825082508251\" data-d=\"2\">4.05</span>%</td><td>HK$<span class=\"n\" data-v=\"467.27161609960876\" data-d=\"2\">467.27</span></td><td>HK$<span class=\"n\" data-v=\"12002.49238179795\" data-d=\"2\">12,002.49</span></td></tr><tr><td>6</td><td><span class=\"n\" data-v=\"4.232136179891179\" data-d=\"2\">4.23</span>%</td><td>HK$<span class=\"n\" data-v=\"507.9618225787535\" data-d=\"2\">507.96</span></td><td>HK$<span class=\"n\" data-v=\"12510.454204376703\" data-d=\"2\">12,510.45</span></td></tr><tr><td>7</td><td><span class=\"n\" data-v=\"4.421562590417633\" data-d=\"2\">4.42</span>%</td><td>HK$<span class=\"n\" data-v=\"553.1575629920502\" data-d=\"2\">553.16</span></td><td>HK$<span class=\"n\" data-v=\"13063.611767368753\" data-d=\"2\">13,063.61</span></td></tr><tr><td>8</td><td><span class=\"n\" data-v=\"4.6194675478243665\" data-d=\"2\">4.62</span>%</td><td>HK$<span class=\"n\" data-v=\"603.4693061673647\" data-d=\"2\">603.47</span></td><td>HK$<span class=\"n\" data-v=\"13667.081073536117\" data-d=\"2\">13,667.08</span></td></tr><tr><td>9</td><td><span class=\"n\" data-v=\"4.826230543846463\" data-d=\"2\">4.83</span>%</td><td>HK$<span class=\"n\" data-v=\"659.6048412232591\" data-d=\"2\">659.60</span></td><td>HK$<span class=\"n\" data-v=\"14326.685914759377\" data-d=\"2\">14,326.69</span></td></tr><tr><td>10</td><td><span class=\"n\" data-v=\"5.042248055909951\" data-d=\"2\">5.04</span>%</td><td>HK$<span class=\"n\" data-v=\"722.3870420132795\" data-d=\"2\">722.39</span></td><td>HK$<span class=\"n\" data-v=\"15049.072956772656\" data-d=\"2\">15,049.07</span></td></tr></tbody></table></div></details></div><p class=\"hook\" id=\"c-hook\"><b>HKEX的現金足以支付股息嗎？</b> 2025 年，其股息相當於每股自由現金流的 <span class=\"n\" data-v=\"67.26708074534162\" data-d=\"0\">67</span>%；2024 年為 <span class=\"n\" data-v=\"96.47887323943664\" data-d=\"0\">96</span>%。</p><p class=\"answer__own\" id=\"c-own\">股息率：我們2026年10月15日的HKEX報告，以2026年10月15日收市價 HK$<span class=\"n\" data-v=\"371.6\" data-d=\"2\">371.60</span> 計。</p></section><section class=\"cta1\" id=\"cta1\" aria-label=\"閱讀報告\">\n    <div class=\"cta1__row\">\n      <a class=\"btn btn--lg btn--block\" id=\"firstbtn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=0388.HK&amp;src=seo-dividend-calculator&amp;lang=zh-HK\">閱讀HKEX的完整報告</a>\n      <button class=\"textlink\" type=\"button\" data-open-viewer>或打開其第一頁，無需帳戶 ▸</button>\n    </div>\n    <p class=\"free\">新帳戶可免費閱讀一家公司已完成的報告，無需信用卡。</p>\n    <p class=\"free free--2\">2026年10月15日報告 · 摘要 + 8 章 · 16,955 詞 · 202 個來源</p>\n  </section><aside class=\"inside inside--peek\" aria-labelledby=\"inside-h\">\n    <h2 id=\"inside-h\">HKEX的現金足以支付股息嗎？報告的答案</h2>\n    <p class=\"inside__sub\">2026年10月15日報告 · 中文 · 第一頁無需帳戶即可打開</p>\n    <div class=\"mframe\">\n      <div class=\"mframe__pg\" data-src=\"report\">\n        <div class=\"mframe__bar\">\n          <svg class=\"mf-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"/><path d=\"M19 12H5\"/></svg>\n          <span class=\"mf-tk\">0388</span><span class=\"mf-name w4\">Hong Kong Exchanges and Clearing Limited</span>\n          <span class=\"mf-upd\">更新於 2026年10月15日</span>\n          <svg class=\"mf-share\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"18\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"12\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><path d=\"m8.59 13.51 6.83 3.98\"/><path d=\"m15.41 6.51-6.82 3.98\"/></svg>\n        </div>\n        <section class=\"mframe__sec\" lang=\"zh-Hant\">\n          <h3 class=\"mf-h2\">HKEX報告</h3>\n          <h4 class=\"mf-h3\">3. 歷史與資本配置</h4><p>HKEX將其產生的大部分現金回饋股東。2021年至2025年，自由現金流合共HK$64,927百萬，而分類為支付予股東的金額合共HK$58,118百萬，包括購買僱員獎勵股份。</p>\n        </section>\n      </div>\n      <button type=\"button\" class=\"mframe__open\" data-open-viewer aria-label=\"HKEX報告\"></button>\n      <button type=\"button\" class=\"mframe__exp\" data-open-viewer aria-label=\"HKEX報告\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 3h6v6\"/><path d=\"m21 3-7 7\"/><path d=\"m3 21 7-7\"/><path d=\"M9 21H3v-6\"/></svg>放大</button>\n    </div>\n    <button class=\"textlink textlink--l\" type=\"button\" data-open-viewer data-resume=\"1\">繼續閱讀第一頁 ▸</button>\n  </aside><section class=\"sec covsec\" aria-labelledby=\"cov-h\">\n    <h2 id=\"cov-h\">HKEX的現金足以支付股息嗎？</h2>\n    <p class=\"lead\">2025 年，HKEX每股派息 HK$<span class=\"n\" data-v=\"10.83\" data-d=\"2\">10.83</span>，每股自由現金流為 HK$<span class=\"n\" data-v=\"16.1\" data-d=\"2\">16.10</span>：即 <span class=\"n\" data-v=\"67.26708074534162\" data-d=\"0\">67</span>%。2024 年為 <span class=\"n\" data-v=\"96.47887323943664\" data-d=\"0\">96</span>%。自由現金流是經營業務及投資後剩下的現金；超過 100%，即股息多於當年產生的現金。</p>\n    <figure class=\"fig\"><picture><source media=\"(max-width:639px)\" srcset=\"0388-hk-cover-sm.svg\" width=\"400\" height=\"300\"><img src=\"0388-hk-cover.svg\" width=\"600\" height=\"300\" loading=\"lazy\" alt=\"HKEX：每股已派股息與每股自由現金流，2021 至 2025 財政年度，港元。 2021: 9.09 / 8.53; 2022: 7.62 / 10.44; 2023: 8.14 / 7.63; 2024: 8.22 / 8.52; 2025: 10.83 / 16.10\"></picture><figcaption>HKEX本身的數字，載於我們2026年10月15日的報告。</figcaption></figure>\n    <div class=\"covq\"><p class=\"after\">報告說明現金的去向：</p>\n    <blockquote class=\"rq\" data-src=\"report\" lang=\"zh\">HKEX將其產生的大部分現金回饋股東。2021年至2025年，自由現金流合共HK$64,927百萬，而分類為支付予股東的金額合共HK$58,118百萬，包括購買僱員獎勵股份。 若不計HK$5,772百萬的投資贖回，支付予股東的款項消耗自由現金流的97.3%。</blockquote>\n    <button type=\"button\" class=\"bridge\" data-open-viewer data-chapter=\"3\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg><span>第 3 章，歷史與資本配置：現金逐年的去向</span><b>完整報告內 →</b></button></div>\n    <div class=\"tw\"><table class=\"covt\"><thead><tr><th scope=\"col\"></th><th>2021</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th></tr></thead><tbody><tr><td><span class=\"lg\">每股已派股息</span><span class=\"sm\">股息</span></td><td>9.09</td><td>7.62</td><td>8.14</td><td>8.22</td><td>10.83</td></tr><tr><td><span class=\"lg\">每股自由現金流</span><span class=\"sm\">自由現金流</span></td><td>8.53</td><td>10.44</td><td>7.63</td><td>8.52</td><td>16.10</td></tr><tr><td><span class=\"lg\">股息佔自由現金流百分比</span><span class=\"sm\">佔現金流 %</span></td><td class=\"over\"><span class=\"n\" data-v=\"106.56506447831185\" data-d=\"0\">107</span>%</td><td class=\"\"><span class=\"n\" data-v=\"72.98850574712644\" data-d=\"0\">73</span>%</td><td class=\"over\"><span class=\"n\" data-v=\"106.68414154652687\" data-d=\"0\">107</span>%</td><td class=\"\"><span class=\"n\" data-v=\"96.47887323943664\" data-d=\"0\">96</span>%</td><td class=\"\"><span class=\"n\" data-v=\"67.26708074534162\" data-d=\"0\">67</span>%</td></tr></tbody></table></div>\n  </section><section class=\"sec howsec\" aria-labelledby=\"how-h\">\n    <h2 id=\"how-h\">我可以收取多少股息？</h2>\n    <p class=\"lead\">把投資金額乘以股息率，或把持有股數乘以每股股息。以HKEX的 <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% 股息率計，HK$<span class=\"n\" data-v=\"10000\" data-d=\"0\">10,000</span> 每年稅前約收取 HK$<span class=\"n\" data-v=\"340\" data-d=\"0\">340</span>，即每月約 HK$<span class=\"n\" data-v=\"28\" data-d=\"0\">28</span>。</p>\n    <div class=\"formulas\">\n      <div class=\"formula\"><p class=\"formula__f\">金額 × 股息率 = 每年股息</p><p class=\"formula__x\">HK$<span class=\"n\" data-v=\"10000\" data-d=\"0\">10,000</span> × <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% = HK$<span class=\"n\" data-v=\"340\" data-d=\"0\">340</span></p></div>\n      <div class=\"formula\"><p class=\"formula__f\">股數 × 每股股息（2025）</p><p class=\"formula__x\">100 × HK$<span class=\"n\" data-v=\"10.83\" data-d=\"2\">10.83</span> = HK$<span class=\"n\" data-v=\"1083.0\" data-d=\"0\">1,083</span></p></div>\n      <div class=\"formula\"><p class=\"formula__f\">每月 HK$<span class=\"n\" data-v=\"1000\" data-d=\"0\">1,000</span>：一年 ÷ 股息率</p><p class=\"formula__x\">HK$<span class=\"n\" data-v=\"12000\" data-d=\"0\">12,000</span> ÷ <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% = HK$<span class=\"n\" data-v=\"352941\" data-d=\"0\">352,941</span></p></div>\n    </div>\n    <p class=\"after\">最後一行是稅前數字，並只在股息率維持於 <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% 時成立。</p>\n    <p class=\"after\">股息率是一年的股息除以股價。報告的股息率：<span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>%。2025 年已派股息：HK$<span class=\"n\" data-v=\"10.83\" data-d=\"2\">10.83</span>，即 HK$<span class=\"n\" data-v=\"10.83\" data-d=\"2\">10.83</span> ÷ HK$<span class=\"n\" data-v=\"371.6\" data-d=\"2\">371.60</span> = 股價的 <span class=\"n\" data-v=\"2.9144241119483314\" data-d=\"2\">2.91</span>%。股價下跌時，即使股息不變，股息率也會上升。</p>\n  </section><section class=\"sec dripsec\" aria-labelledby=\"drip-h\">\n    <h2 id=\"drip-h\">股息再投資計算機：再投資有甚麼分別？</h2>\n    <p class=\"lead\">再投資的股息會買入更多股份，這些股份又會派發股息。投資HKEX 10 年，假設股息如 2021 至 2025 年一樣每年增長 <span class=\"n\" data-v=\"4.475905369645372\" data-d=\"1\">4.5</span>%，而股價維持在 HK$<span class=\"n\" data-v=\"371.6\" data-d=\"2\">371.60</span>：</p>\n    <ul class=\"drip\"><li><b>再投資：</b>HK$<span class=\"n\" data-v=\"10000\" data-d=\"0\">10,000</span> 變成價值 HK$<span class=\"n\" data-v=\"15049.072956772656\" data-d=\"2\">15,049.07</span> 的股份；每年股息達到 HK$<span class=\"n\" data-v=\"722.3870420132795\" data-d=\"2\">722.39</span>。</li><li><b>收取現金：</b>你保留價值 HK$<span class=\"n\" data-v=\"10000\" data-d=\"0\">10,000</span> 的股份，合共收取 HK$<span class=\"n\" data-v=\"4173.310544193345\" data-d=\"2\">4,173.31</span>，每年股息達到 HK$<span class=\"n\" data-v=\"504.22480559099506\" data-d=\"2\">504.22</span>。</li></ul>\n    <figure class=\"fig\"><picture><source media=\"(max-width:639px)\" srcset=\"0388-hk-drip-sm.svg\" width=\"400\" height=\"280\"><img src=\"0388-hk-drip.svg\" width=\"600\" height=\"280\" loading=\"lazy\" alt=\"HKEX，投資 HK$10,000：10 年內每年的股息收入，再投資與收取現金比較。 再投資: HK$340.00 → HK$722.39; 收取現金: HK$504.22.\"></picture><figcaption>計算機以報告的股息率及股息增長計算，稅前。</figcaption></figure>\n  </section><section class=\"sec popsec\" aria-labelledby=\"pop-h\">\n    <h2 id=\"pop-h\">計算機內的派息股</h2>\n    <p class=\"lead\">每一行都來自該公司的最新報告，可以用中文閱讀。最後一欄是股息佔最近一個財政年度自由現金流的百分比：低於 100%，當年的現金足以支付；高於 100%，則不足以支付。</p>\n    <div class=\"tw\"><table class=\"popt\"><thead><tr><th scope=\"col\">公司</th><th scope=\"col\">股息率</th><th scope=\"col\" class=\"cg\">每年股息增長</th><th scope=\"col\">佔自由現金流 %</th><th scope=\"col\"></th></tr></thead><tbody>{{payers}}</tbody></table></div>\n    <p class=\"fine\">股息率以各報告的股價日期計算。增長：公司最近五個財政年度每股已派股息的每年變動（大多為 2021–2025 年）。公司名稱會打開其股息頁面；按「計算」會在上方填入。</p>\n  </section><section class=\"sec msec\" aria-labelledby=\"m-h\">\n    <h2 id=\"m-h\">怎樣計算？</h2>\n    <p class=\"lead\">預填的股息率來自我們對該公司的最新報告，以所示日期的股價計算。增長率是過去五個財政年度每股已派股息的每年變動。數字互相不吻合的公司不會預填。</p><p class=\"after\">每年按年初價值支付該股息率，並按股息增長調高、按你輸入的股價增長調低；選擇再投資時，稅後股息會在年末買入更多股份。</p>\n  </section><section class=\"sec qa\" aria-labelledby=\"faq-h\">\n    <h2 id=\"faq-h\">有關股息收入的問題</h2>\n    <div class=\"qa__grid\"><div class=\"qa__i\"><h3>每月要收取 HK$1,000 股息，需要投資多少？</h3><p>一年 HK$<span class=\"n\" data-v=\"12000\" data-d=\"0\">12,000</span> 除以股息率。以HKEX的 <span class=\"n\" data-v=\"3.4\" data-d=\"1\">3.4</span>% 計，約 HK$<span class=\"n\" data-v=\"352941\" data-d=\"0\">352,941</span>；以CLP的 <span class=\"n\" data-v=\"4.1\" data-d=\"1\">4.1</span>% 計（我們2026年10月17日的報告），約 HK$<span class=\"n\" data-v=\"292683\" data-d=\"0\">292,683</span>。股息率愈高，所需資金愈少，前提是股息能夠維持。</p></div><div class=\"qa__i\"><h3>HKEX的股息有自由現金流支持嗎？</h3><p>2025 年，HKEX派發的股息相當於每股自由現金流的 <span class=\"n\" data-v=\"67.26708074534162\" data-d=\"0\">67</span>%。超過百分之一百，代表股息多於公司當年產生的現金。</p></div><div class=\"qa__i\"><h3>高股息率是否代表股息穩妥？</h3><p>不是。China Mobile的股息率為 <span class=\"n\" data-v=\"6.6\" data-d=\"1\">6.6</span>%，但 2025 年其股息相當於每股自由現金流的 <span class=\"n\" data-v=\"250\" data-d=\"0\">250</span>%（我們2026年10月12日的報告）。股息率說明你收到多少；現金說明能否持續。</p></div><div class=\"qa__i\"><h3>結果是稅前數字嗎？</h3><p>是，除非你輸入股息稅率。你的稅率視乎你的所在地及戶口類型。</p></div></div>\n    <button type=\"button\" class=\"bridge\" data-open-viewer data-chapter=\"3\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg><span>第 3 章，歷史與資本配置：現金逐年的去向</span><b>完整報告內 →</b></button>\n  </section><section class=\"sec links\" aria-labelledby=\"more-h\">\n    <h2 id=\"more-h\">更多股息資料</h2>\n    <div class=\"links__grid\">\n      <div><div class=\"chips\"><a href=\"/zh/stocks/0388-hk/dividend/\">HKEX 股息</a><a href=\"/zh/stocks/0388-hk/\">HKEX 股價預測</a><a href=\"/zh/stocks/\">所有股票</a><a href=\"/zh/ai-stock-analysis/\">AI 股票分析</a></div></div>\n      <div><h3>其他語言</h3><div class=\"chips\"><a href=\"/stocks/dividend-calculator/\">Dividend calculator</a><a href=\"/fr/stocks/calculateur-dividendes/\">Calculateur de dividendes</a><a href=\"/de/aktien/dividendenrechner/\">Dividendenrechner</a></div></div>\n    </div>\n  </section><section class=\"close\" aria-labelledby=\"close-h\">\n    <div class=\"close__in\">\n      <h2 id=\"close-h\">計算機給你收入，報告告訴你現金是否足夠。</h2>\n      <p>HKEX的完整報告：摘要及 8 章，16,955 詞，26 個表格。其第一頁在此打開，無需帳戶。</p>\n      <p>製作方法：AI 閱讀HKEX的公開文件，撰寫報告，核對數字，並列出每個來源，這份報告共有 202 個。<a href=\"/methodology/\" hreflang=\"en\">我們的方法</a> · <a href=\"/corrections/\" hreflang=\"en\">更正</a></p>\n      <a class=\"btn btn--mint btn--lg\" id=\"closebtn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=0388.HK&amp;src=seo-dividend-calculator&amp;lang=zh-HK\">閱讀HKEX的完整報告</a>\n      <p class=\"free\">新帳戶可免費閱讀一家公司已完成的報告，無需信用卡。</p>\n      <p class=\"foot\">只供參考，並非投資建議。結果是按所示數字計算，並不保證任何股息。股價為所示日期的股價。</p>\n    </div>\n  </section>\n</main>",
+ "bar": "<div class=\"bar\" id=\"bar\" aria-hidden=\"true\">\n  <span>HKEX報告<small>新帳戶：免費一份已完成的報告</small></span>\n  <a class=\"btn btn--sm\" rel=\"nofollow\" tabindex=\"-1\" href=\"https://app.mystockbutler.com/signup?ticker=0388.HK&amp;src=seo-dividend-calculator&amp;lang=zh-HK\">閱讀</a>\n</div>",
+ "viewer": "<div class=\"viewer\" id=\"viewer\" role=\"dialog\" aria-modal=\"true\" aria-label=\"HKEX報告 · 2026年10月15日\" hidden>\n  <div class=\"viewer__win\" tabindex=\"-1\">\n    <div class=\"viewer__bar\">\n      <span class=\"viewer__title\">HKEX報告 · 2026年10月15日</span>\n      <button class=\"viewer__x\" type=\"button\" data-close-viewer aria-label=\"關閉報告\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg></button>\n    </div>\n    <div class=\"viewer__main\">\n    <aside class=\"rail\" aria-label=\"目錄\">\n      <div class=\"rail__head\">目錄</div>\n      <nav class=\"rail__nav\" aria-label=\"目錄\"><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev chev--open\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a is-on\" data-goto=\"executive-summary\">報告摘錄</button></div><div class=\"rail__sub\"><button type=\"button\" data-goto=\"x0\">1. 業務</button><button type=\"button\" data-goto=\"x1\">3. 歷史與資本配置</button><button type=\"button\" data-goto=\"x2\">5. 財務數字</button><button type=\"button\" data-goto=\"x3\">8. 股價可能走向</button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"1\">1. 業務<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"2\">2. 市場<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"3\">3. 歷史與資本配置<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"4\">4. 管理層與股東<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"5\">5. 財務數字<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"6\">6. 估值與股價<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"7\">7. 未來展望<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div><div><div class=\"rail__row\"><span class=\"rail__ch\"><svg class=\"chev\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></span><button type=\"button\" class=\"rail__a\" data-lock=\"8\">8. 股價可能走向<svg class=\"lk\" width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"11\" width=\"14\" height=\"9\" rx=\"2\"/><path d=\"M8 11V8a4 4 0 0 1 8 0v3\"/></svg></button></div></div></nav>\n    </aside>\n    <div class=\"viewer__body\" id=\"viewer-body\">\n      <div class=\"blog-report\" lang=\"zh-Hant\"><div class=\"br-column\">\n        <header class=\"br-ui\">\n          <div class=\"br-kicker\"><span>0388</span><span>· HKSE</span><span>· Hong Kong Exchanges and Clearing Limited</span></div>\n          <p class=\"br-title\">HKEX (0388)</p>\n          <div class=\"br-by\"><span>MyStockButler 研究團隊</span><time datetime=\"2026-10-15\">更新於 2026年10月15日</time></div>\n        </header>\n        <aside class=\"br-ui br-disc\" aria-label=\"重要投資聲明\">\n          <div class=\"br-disc__t\">重要投資聲明</div>\n          <p>本文只屬一般資料，並非投資建議。它不建議買入、賣出或持有任何證券，亦沒有考慮你的個人情況。MyStockButler 及作者並無持有0388的倉位。分析日期：2026年10月15日。股價截至2026年10月15日。其後數字可能已過時；投資前請核實重要事實，並諮詢合資格的顧問。</p>\n        </aside>\n        <div class=\"br-mt8\"><section id=\"executive-summary\" class=\"br-chapter\" data-src=\"report\">\n          <h2>報告摘錄</h2>\n          <div class=\"memo-tables\">\n<h3 id=\"x0\">1. 業務</h3><p>香港交易及結算所有限公司（香港交易所或 HKEX）是一家市場基礎設施公司：營運證券及合約可供交易、結算及交收的場所。其收入來自提供接入服務、處理交易、維持連接，以及投資部分抵押品，而所籌集或交易的資金通常屬於其他各方。</p>\n<h3 id=\"x1\">3. 歷史與資本配置</h3><p>HKEX將其產生的大部分現金回饋股東。2021年至2025年，自由現金流合共HK$64,927百萬，而分類為支付予股東的金額合共HK$58,118百萬，包括購買僱員獎勵股份。</p><p>若不計HK$5,772百萬的投資贖回，支付予股東的款項消耗自由現金流的97.3%。</p>\n<h3 id=\"x2\">5. 財務數字</h3><p>自由現金流其後扣除資本開支、租賃付款及利息。實際自由現金流亦扣除股份薪酬，確認發行予僱員的股份帶來經濟成本。營運資金在2024年吸納現金後，於2025年協助帶來現金，因此不應視這項變動為永久性。</p>\n<h3 id=\"x3\">8. 股價可能走向</h3><p>基準情境下，派息由每股HK$14.80升至HK$16.40。走勢接近所公布的90%正常派息政策，並獲最新HK$7.43中期股息及所提供的未來12個月每股盈利估算HK$15.66059支持。</p><p>熊市情境下，盈利重置且派息率跌至低於正常目標，派息為HK$12.00、HK$11.00及HK$10.50。牛市情境下，持續活躍度將支持盈利高於分析師估算，派息為HK$16.50、HK$18.00及HK$19.50。2022年派息下跌顯示分派仍具週期性。</p>\n          </div>\n          <div class=\"lock\">\n          <div class=\"lock__fade\"></div>\n          <div class=\"lock__box\" id=\"lockbox\">\n            <h3 id=\"lock-h\">完整的 8 章在報告內</h3>\n            <p id=\"lock-counts\">完整報告：16,955 詞、26 個表格、202 個來源，全部來自HKEX的公開文件。</p>\n            <p>新帳戶可免費閱讀一家公司已完成的報告，無需信用卡。</p>\n            <ul><li data-chapter=\"1\">1. 業務</li><li data-chapter=\"2\">2. 市場</li><li data-chapter=\"3\">3. 歷史與資本配置</li><li data-chapter=\"4\">4. 管理層與股東</li><li data-chapter=\"5\">5. 財務數字</li><li data-chapter=\"6\">6. 估值與股價</li><li data-chapter=\"7\">7. 未來展望</li><li data-chapter=\"8\">8. 股價可能走向</li></ul>\n          </div>\n        </div>\n        </section></div>\n      </div></div>\n    </div>\n    </div>\n    <div class=\"viewer__foot\">\n      <a class=\"btn\" rel=\"nofollow\" href=\"https://app.mystockbutler.com/signup?ticker=0388.HK&amp;src=seo-dividend-calculator&amp;lang=zh-HK\">繼續閱讀HKEX的報告</a>\n      <small>新帳戶可免費閱讀一家公司已完成的報告，無需信用卡。</small>\n    </div>\n  </div>\n</div>",
+ "quotes": [
+  {
+   "ticker": "0388.HK",
+   "slug": "0388-hk",
+   "memo_date": "2026-10-15T09:26:36Z",
+   "counts": {
+    "chapters": 8,
+    "paragraphs": 277,
+    "tables": 26,
+    "words": 16955,
+    "sources": 202
+   }
+  }
+ ],
+ "source": "~/b115-wire/r6/calc/dividend-calculator-zh.html",
+ "built_on": "2026-11-04",
+ "files": [
+  {
+   "name": "0388-hk-cover-sm.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"400\" height=\"300\" fill=\"#fff\"/><line x1=\"10\" y1=\"230\" x2=\"390\" y2=\"230\" stroke=\"#E4E4DE\"/><rect x=\"23.3\" y=\"146.5\" width=\"22.2\" height=\"83.5\" rx=\"3\" fill=\"#137C46\"/><rect x=\"49.5\" y=\"151.7\" width=\"22.2\" height=\"78.3\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"47.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2021</text><text x=\"47.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#C0452E\" text-anchor=\"middle\">107%</text><rect x=\"97.3\" y=\"160.0\" width=\"22.2\" height=\"70.0\" rx=\"3\" fill=\"#137C46\"/><rect x=\"123.5\" y=\"134.1\" width=\"22.2\" height=\"95.9\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"121.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2022</text><text x=\"121.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">73%</text><rect x=\"171.3\" y=\"155.3\" width=\"22.2\" height=\"74.7\" rx=\"3\" fill=\"#137C46\"/><rect x=\"197.5\" y=\"159.9\" width=\"22.2\" height=\"70.1\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"195.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2023</text><text x=\"195.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#C0452E\" text-anchor=\"middle\">107%</text><rect x=\"245.3\" y=\"154.5\" width=\"22.2\" height=\"75.5\" rx=\"3\" fill=\"#137C46\"/><rect x=\"271.5\" y=\"151.8\" width=\"22.2\" height=\"78.2\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"269.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2024</text><text x=\"269.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">96%</text><rect x=\"319.3\" y=\"130.6\" width=\"22.2\" height=\"99.4\" rx=\"3\" fill=\"#137C46\"/><rect x=\"345.5\" y=\"82.2\" width=\"22.2\" height=\"147.8\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"343.5\" y=\"254\" font-size=\"16\" fill=\"#617066\" text-anchor=\"middle\">2025</text><text x=\"343.5\" y=\"276\" font-size=\"16\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">67%</text><rect x=\"10\" y=\"10\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#137C46\"/><text x=\"30\" y=\"23\" font-size=\"16\" fill=\"#26332B\">每股已派股息</text><rect x=\"10\" y=\"34\" width=\"14\" height=\"14\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"30\" y=\"47\" font-size=\"16\" fill=\"#26332B\">每股自由現金流</text></svg>"
+  },
+  {
+   "name": "0388-hk-cover.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 300\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"600\" height=\"300\" fill=\"#fff\"/><line x1=\"40\" y1=\"250\" x2=\"590\" y2=\"250\" stroke=\"#E4E4DE\"/><rect x=\"59.4\" y=\"151.8\" width=\"32.4\" height=\"98.2\" rx=\"3\" fill=\"#137C46\"/><text x=\"75.6\" y=\"145.8\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">9.09</text><rect x=\"95.8\" y=\"157.9\" width=\"32.4\" height=\"92.1\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"112.0\" y=\"151.9\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">8.53</text><text x=\"93.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2021</text><text x=\"93.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#C0452E\" text-anchor=\"middle\">107%</text><rect x=\"167.4\" y=\"167.7\" width=\"32.4\" height=\"82.3\" rx=\"3\" fill=\"#137C46\"/><text x=\"183.6\" y=\"161.7\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">7.62</text><rect x=\"203.8\" y=\"137.2\" width=\"32.4\" height=\"112.8\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"220.0\" y=\"131.2\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">10.44</text><text x=\"201.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2022</text><text x=\"201.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">73%</text><rect x=\"275.4\" y=\"162.1\" width=\"32.4\" height=\"87.9\" rx=\"3\" fill=\"#137C46\"/><text x=\"291.6\" y=\"156.1\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">8.14</text><rect x=\"311.8\" y=\"167.6\" width=\"32.4\" height=\"82.4\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"328.0\" y=\"161.6\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">7.63</text><text x=\"309.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2023</text><text x=\"309.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#C0452E\" text-anchor=\"middle\">107%</text><rect x=\"383.4\" y=\"161.2\" width=\"32.4\" height=\"88.8\" rx=\"3\" fill=\"#137C46\"/><text x=\"399.6\" y=\"155.2\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">8.22</text><rect x=\"419.8\" y=\"158.0\" width=\"32.4\" height=\"92.0\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"436.0\" y=\"152.0\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">8.52</text><text x=\"417.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2024</text><text x=\"417.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">96%</text><rect x=\"491.4\" y=\"133.0\" width=\"32.4\" height=\"117.0\" rx=\"3\" fill=\"#137C46\"/><text x=\"507.6\" y=\"127.0\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">10.83</text><rect x=\"527.8\" y=\"76.1\" width=\"32.4\" height=\"173.9\" rx=\"3\" fill=\"#B9DCC7\"/><text x=\"544.0\" y=\"70.1\" font-size=\"13\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">16.10</text><text x=\"525.8\" y=\"270\" font-size=\"13\" fill=\"#617066\" text-anchor=\"middle\">2025</text><text x=\"525.8\" y=\"288\" font-size=\"12.5\" font-weight=\"700\" fill=\"#137C46\" text-anchor=\"middle\">67%</text><rect x=\"40\" y=\"10\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#137C46\"/><text x=\"58\" y=\"21\" font-size=\"13\" fill=\"#26332B\">每股已派股息</text><rect x=\"290\" y=\"10\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"308\" y=\"21\" font-size=\"13\" fill=\"#26332B\">每股自由現金流</text></svg>"
+  },
+  {
+   "name": "0388-hk-drip-sm.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 280\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"400\" height=\"280\" fill=\"#fff\"/><line x1=\"10\" y1=\"226\" x2=\"390\" y2=\"226\" stroke=\"#E4E4DE\"/><rect x=\"15.2\" y=\"158.8\" width=\"12.6\" height=\"67.2\" rx=\"2\" fill=\"#137C46\"/><rect x=\"30.8\" y=\"158.8\" width=\"12.6\" height=\"67.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"27.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">1</text><rect x=\"52.2\" y=\"153.4\" width=\"12.6\" height=\"72.6\" rx=\"2\" fill=\"#137C46\"/><rect x=\"67.8\" y=\"155.8\" width=\"12.6\" height=\"70.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"64.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">2</text><rect x=\"89.2\" y=\"147.4\" width=\"12.6\" height=\"78.6\" rx=\"2\" fill=\"#137C46\"/><rect x=\"104.8\" y=\"152.6\" width=\"12.6\" height=\"73.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"101.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">3</text><rect x=\"126.2\" y=\"140.9\" width=\"12.6\" height=\"85.1\" rx=\"2\" fill=\"#137C46\"/><rect x=\"141.8\" y=\"149.3\" width=\"12.6\" height=\"76.7\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"138.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">4</text><rect x=\"163.2\" y=\"133.6\" width=\"12.6\" height=\"92.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"178.8\" y=\"145.9\" width=\"12.6\" height=\"80.1\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"175.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">5</text><rect x=\"200.2\" y=\"125.5\" width=\"12.6\" height=\"100.5\" rx=\"2\" fill=\"#137C46\"/><rect x=\"215.8\" y=\"142.3\" width=\"12.6\" height=\"83.7\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"212.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">6</text><rect x=\"237.2\" y=\"116.6\" width=\"12.6\" height=\"109.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"252.8\" y=\"138.6\" width=\"12.6\" height=\"87.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"249.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">7</text><rect x=\"274.2\" y=\"106.7\" width=\"12.6\" height=\"119.3\" rx=\"2\" fill=\"#137C46\"/><rect x=\"289.8\" y=\"134.6\" width=\"12.6\" height=\"91.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"286.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">8</text><rect x=\"311.2\" y=\"95.6\" width=\"12.6\" height=\"130.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"326.8\" y=\"130.6\" width=\"12.6\" height=\"95.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"323.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">9</text><rect x=\"348.2\" y=\"83.1\" width=\"12.6\" height=\"142.9\" rx=\"2\" fill=\"#137C46\"/><rect x=\"363.8\" y=\"126.3\" width=\"12.6\" height=\"99.7\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"360.8\" y=\"246\" font-size=\"15\" fill=\"#617066\" text-anchor=\"middle\">10</text><text x=\"21.5\" y=\"152.8\" font-size=\"15\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">HK$340</text><text x=\"354.5\" y=\"77.1\" font-size=\"15\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"end\">HK$722</text><rect x=\"10\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#137C46\"/><text x=\"29\" y=\"22\" font-size=\"15\" fill=\"#26332B\">再投資</text><rect x=\"150\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"169\" y=\"22\" font-size=\"15\" fill=\"#26332B\">收取現金</text><text x=\"388\" y=\"268\" font-size=\"14\" fill=\"#617066\" text-anchor=\"end\">年</text></svg>"
+  },
+  {
+   "name": "0388-hk-drip.svg",
+   "content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 280\" font-family=\"Inter,Arial,sans-serif\"><rect width=\"600\" height=\"280\" fill=\"#fff\"/><line x1=\"40\" y1=\"230\" x2=\"590\" y2=\"230\" stroke=\"#E4E4DE\"/><rect x=\"47.6\" y=\"154.4\" width=\"18.4\" height=\"75.6\" rx=\"2\" fill=\"#137C46\"/><rect x=\"68.9\" y=\"154.4\" width=\"18.4\" height=\"75.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"65.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">1</text><rect x=\"101.6\" y=\"148.3\" width=\"18.4\" height=\"81.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"122.9\" y=\"151.0\" width=\"18.4\" height=\"79.0\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"119.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">2</text><rect x=\"155.6\" y=\"141.6\" width=\"18.4\" height=\"88.4\" rx=\"2\" fill=\"#137C46\"/><rect x=\"176.9\" y=\"147.4\" width=\"18.4\" height=\"82.6\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"173.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">3</text><rect x=\"209.6\" y=\"134.2\" width=\"18.4\" height=\"95.8\" rx=\"2\" fill=\"#137C46\"/><rect x=\"230.9\" y=\"143.7\" width=\"18.4\" height=\"86.3\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"227.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">4</text><rect x=\"263.6\" y=\"126.0\" width=\"18.4\" height=\"104.0\" rx=\"2\" fill=\"#137C46\"/><rect x=\"284.9\" y=\"139.9\" width=\"18.4\" height=\"90.1\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"281.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">5</text><rect x=\"317.6\" y=\"117.0\" width=\"18.4\" height=\"113.0\" rx=\"2\" fill=\"#137C46\"/><rect x=\"338.9\" y=\"135.8\" width=\"18.4\" height=\"94.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"335.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">6</text><rect x=\"371.6\" y=\"106.9\" width=\"18.4\" height=\"123.1\" rx=\"2\" fill=\"#137C46\"/><rect x=\"392.9\" y=\"131.6\" width=\"18.4\" height=\"98.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"389.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">7</text><rect x=\"425.6\" y=\"95.7\" width=\"18.4\" height=\"134.3\" rx=\"2\" fill=\"#137C46\"/><rect x=\"446.9\" y=\"127.2\" width=\"18.4\" height=\"102.8\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"443.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">8</text><rect x=\"479.6\" y=\"83.3\" width=\"18.4\" height=\"146.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"500.9\" y=\"122.6\" width=\"18.4\" height=\"107.4\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"497.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">9</text><rect x=\"533.6\" y=\"69.3\" width=\"18.4\" height=\"160.7\" rx=\"2\" fill=\"#137C46\"/><rect x=\"554.9\" y=\"117.8\" width=\"18.4\" height=\"112.2\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"551.9\" y=\"250\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"middle\">10</text><text x=\"56.7\" y=\"148.4\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">HK$340</text><text x=\"542.7\" y=\"63.3\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">HK$722</text><text x=\"564.1\" y=\"111.8\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0E1713\" text-anchor=\"middle\">HK$504</text><rect x=\"40\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#137C46\"/><text x=\"59\" y=\"22\" font-size=\"13\" fill=\"#26332B\">再投資</text><rect x=\"190\" y=\"10\" width=\"13\" height=\"13\" rx=\"2\" fill=\"#B9DCC7\"/><text x=\"208\" y=\"22\" font-size=\"13\" fill=\"#26332B\">收取現金</text><text x=\"588\" y=\"266\" font-size=\"12.5\" fill=\"#617066\" text-anchor=\"end\">年</text></svg>"
+  }
+ ],
+ "tokens": [
+  "payers"
+ ],
+ "calc": {
+  "C": {
+   "lang": "zh-HK",
+   "ex": "0388.HK",
+   "rows": {
+    "KO": {
+     "t": "KO",
+     "n": "Coca-Cola",
+     "slug": "ko",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 91.18,
+     "pdate": "2026-10-27",
+     "mdate": "2026-10-28",
+     "y": 2.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.67,
+      1.75,
+      1.83,
+      1.93,
+      2.04
+     ],
+     "dd": 2,
+     "fcf": [
+      2.59,
+      2.19,
+      2.25,
+      1.1,
+      1.23
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.130425962099183,
+     "cov": 165.85365853658536,
+     "fneg": 0
+    },
+    "PG": {
+     "t": "PG",
+     "n": "P&G",
+     "slug": "pg",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 161.02,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 2.7,
+     "yd": 1,
+     "cols": [
+      "Jun 2022",
+      "Jun 2023",
+      "Jun 2024",
+      "Jun 2025",
+      "Jun 2026"
+     ],
+     "dps": [
+      3.45,
+      3.62,
+      3.77,
+      4.02,
+      4.22
+     ],
+     "dd": 2,
+     "fcf": [
+      5.34,
+      5.55,
+      6.68,
+      5.72,
+      6.25
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.1655116197374396,
+     "cov": 67.52,
+     "fneg": 0
+    },
+    "JNJ": {
+     "t": "JNJ",
+     "n": "Johnson & Johnson",
+     "slug": "jnj",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 248.61,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-14",
+     "y": 2.2,
+     "yd": 1,
+     "cols": [
+      "Jan 2022",
+      "Jan 2023",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      4.13,
+      4.39,
+      4.6,
+      4.87,
+      5.1
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      null,
+      8.1,
+      8.04
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.415635465194901,
+     "cov": 63.43283582089552,
+     "fneg": 0
+    },
+    "XOM": {
+     "t": "XOM",
+     "n": "ExxonMobil",
+     "slug": "xom",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 183.29,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 2.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.49,
+      3.55,
+      3.69,
+      3.89,
+      4
+     ],
+     "dd": 2,
+     "fcf": [
+      8.43,
+      13.89,
+      8.26,
+      7.15,
+      5.48
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 3.468616263308477,
+     "cov": 72.992700729927,
+     "fneg": 0
+    },
+    "CVX": {
+     "t": "CVX",
+     "n": "Chevron",
+     "slug": "cvx",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 231.46,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 3.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      5.3,
+      5.65,
+      6.03,
+      6.49,
+      6.87
+     ],
+     "dd": 2,
+     "fcf": [
+      11.01,
+      19.4,
+      10.52,
+      8.28,
+      8.94
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 6.7014243584160305,
+     "cov": 76.84563758389262,
+     "fneg": 0
+    },
+    "ABBV": {
+     "t": "ABBV",
+     "n": "AbbVie",
+     "slug": "abbv",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 290.97,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-30",
+     "y": 2.5,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      5.21,
+      5.65,
+      5.94,
+      6.22,
+      6.57
+     ],
+     "dd": 2,
+     "fcf": [
+      12.37,
+      13.64,
+      12.44,
+      10.06,
+      10.05
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 5.9697504392650425,
+     "cov": 65.3731343283582,
+     "fneg": 0
+    },
+    "VZ": {
+     "t": "VZ",
+     "n": "Verizon",
+     "slug": "vz",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 43.1,
+     "pdate": "2026-10-26",
+     "mdate": "2026-10-27",
+     "y": 6.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.52,
+      2.57,
+      2.62,
+      2.66,
+      2.71
+     ],
+     "dd": 2,
+     "fcf": [
+      4.64,
+      3.34,
+      4.44,
+      4.69,
+      4.76
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 1.8338556772105052,
+     "cov": 56.9327731092437,
+     "fneg": 0
+    },
+    "MO": {
+     "t": "MO",
+     "n": "Altria",
+     "slug": "mo",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 75.55,
+     "pdate": "2026-10-29",
+     "mdate": "2026-10-29",
+     "y": 5.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.49,
+      3.66,
+      3.81,
+      3.98,
+      4.14
+     ],
+     "dd": 2,
+     "fcf": [
+      4.46,
+      4.46,
+      5.12,
+      5.01,
+      5.39
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 4.36232084874093,
+     "cov": 76.80890538033394,
+     "fneg": 0
+    },
+    "PFE": {
+     "t": "PFE",
+     "n": "Pfizer",
+     "slug": "pfe",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 30.67,
+     "pdate": "2026-11-02",
+     "mdate": "2026-11-03",
+     "y": 5.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.53,
+      1.57,
+      1.62,
+      1.67,
+      1.71
+     ],
+     "dd": 2,
+     "fcf": [
+      5.29,
+      4.54,
+      0.84,
+      1.73,
+      1.59
+     ],
+     "fd": 2,
+     "unit": "",
+     "g": 2.8196615313359485,
+     "cov": 107.54716981132074,
+     "fneg": 0
+    },
+    "IBM": {
+     "t": "IBM",
+     "n": "IBM",
+     "slug": "ibm",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 253.56,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 2.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      6.49,
+      6.52,
+      6.55,
+      6.56,
+      6.59
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      10.19,
+      12.16,
+      13.6,
+      15.53
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 0.3830020303404069,
+     "cov": 42.433998712169995,
+     "fneg": 0
+    },
+    "HD": {
+     "t": "HD",
+     "n": "Home Depot",
+     "slug": "hd",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 290.74,
+     "pdate": "2026-10-09",
+     "mdate": "2026-10-12",
+     "y": 3.2,
+     "yd": 1,
+     "cols": [
+      "Jan 2022",
+      "Jan 2023",
+      "Jan 2024",
+      "Feb 2025",
+      "Feb 2026"
+     ],
+     "dps": [
+      6.6,
+      7.6,
+      8.37,
+      8.99,
+      9.2
+     ],
+     "dd": 2,
+     "fcf": [
+      13.24,
+      11.22,
+      17.91,
+      16.44,
+      12.71
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": 8.657816349331004,
+     "cov": 72.38394964594806,
+     "fneg": 0
+    },
+    "ENB.TO": {
+     "t": "ENB.TO",
+     "n": "Enbridge",
+     "slug": "enb-to",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "CAD",
+     "price": 66.59,
+     "pdate": "2026-10-19",
+     "mdate": "2026-10-20",
+     "y": 5.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.34,
+      3.43,
+      3.54,
+      3.65,
+      3.76
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      4.63,
+      2.72,
+      1.48
+     ],
+     "fd": 2,
+     "unit": "C$ per share",
+     "g": 3.005483388214447,
+     "cov": 254.05405405405406,
+     "fneg": 0
+    },
+    "T": {
+     "t": "T",
+     "n": "AT&T",
+     "slug": "t",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "USD",
+     "price": 22.86,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-13",
+     "y": 4.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.01,
+      1.38,
+      1.12,
+      1.14,
+      1.14
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      0.84,
+      2.41,
+      2.52,
+      2.66
+     ],
+     "fd": 2,
+     "unit": "US$ per share",
+     "g": -13.21849082178006,
+     "cov": 42.85714285714285,
+     "fneg": 0
+    },
+    "AI.PA": {
+     "t": "AI.PA",
+     "n": "Air Liquide",
+     "slug": "ai-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 174.68,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-24",
+     "y": 1.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.1,
+      2.21,
+      2.48,
+      2.69,
+      3.07
+     ],
+     "dd": 2,
+     "fcf": [
+      3.42,
+      3.17,
+      3.71,
+      3.6,
+      3.47
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 9.958743924030443,
+     "cov": 88.47262247838616,
+     "fneg": 0
+    },
+    "TTE.PA": {
+     "t": "TTE.PA",
+     "n": "TotalEnergies",
+     "slug": "tte-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 85.57,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-30",
+     "y": 4.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.11,
+      3.88,
+      3.09,
+      3.33,
+      3.67
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "US$ per ordinary share",
+     "g": 4.226083548541881,
+     "cov": null,
+     "fneg": 0
+    },
+    "SAN.PA": {
+     "t": "SAN.PA",
+     "n": "Sanofi",
+     "slug": "san-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 79.74,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 5.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.19,
+      3.32,
+      3.55,
+      3.74,
+      3.89
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      6.23,
+      5.89,
+      5.25,
+      6.91
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 5.084758275051171,
+     "cov": 56.29522431259045,
+     "fneg": 0
+    },
+    "ORA.PA": {
+     "t": "ORA.PA",
+     "n": "Orange",
+     "slug": "ora-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 14.33,
+     "pdate": "2026-10-28",
+     "mdate": "2026-10-28",
+     "y": 5.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.8,
+      0.69,
+      0.7,
+      0.72,
+      0.75
+     ],
+     "dd": 2,
+     "fcf": [
+      0.49,
+      0.62,
+      1.14,
+      1.21,
+      1.03
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": -1.600516436728483,
+     "cov": 72.81553398058253,
+     "fneg": 0
+    },
+    "ENGI.PA": {
+     "t": "ENGI.PA",
+     "n": "ENGIE",
+     "slug": "engi-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 23.2,
+     "pdate": "2026-10-26",
+     "mdate": "2026-10-26",
+     "y": 5.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.53,
+      0.86,
+      1.41,
+      1.44,
+      1.49
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.18,
+      0.32,
+      1.77,
+      0.64,
+      -4.39
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 29.487426542047636,
+     "cov": null,
+     "fneg": 1
+    },
+    "MC.PA": {
+     "t": "MC.PA",
+     "n": "LVMH",
+     "slug": "mc-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 387.79999,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-22",
+     "y": 3.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      7,
+      11.99,
+      12.49,
+      12.99,
+      12.98
+     ],
+     "dd": 2,
+     "fcf": [
+      26.83,
+      21.26,
+      17.54,
+      22.6,
+      24.2
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 16.69282751758372,
+     "cov": 53.63636363636364,
+     "fneg": 0
+    },
+    "DG.PA": {
+     "t": "DG.PA",
+     "n": "VINCI",
+     "slug": "dg-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 106.45,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-25",
+     "y": 4.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.65,
+      3.21,
+      3.99,
+      4.46,
+      4.7
+     ],
+     "dd": 2,
+     "fcf": [
+      10.35,
+      10.7,
+      13.23,
+      14.03,
+      14.11
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 15.401909781199663,
+     "cov": 33.309709425939054,
+     "fneg": 0
+    },
+    "SU.PA": {
+     "t": "SU.PA",
+     "n": "Schneider Electric",
+     "slug": "su-pa",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 235.75,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 1.8,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.56,
+      2.86,
+      3.12,
+      3.45,
+      3.84
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 10.668191970032147,
+     "cov": null,
+     "fneg": 0
+    },
+    "BCE.TO": {
+     "t": "BCE.TO",
+     "n": "BCE",
+     "slug": "bce-to",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "CAD",
+     "price": 28.73,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 6.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.45,
+      3.63,
+      3.82,
+      3.96,
+      2.18
+     ],
+     "dd": 2,
+     "fcf": [
+      null,
+      null,
+      2.54,
+      2.14,
+      2.33
+     ],
+     "fd": 2,
+     "unit": "C$ per share",
+     "g": -10.842198755685306,
+     "cov": 93.56223175965665,
+     "fneg": 0
+    },
+    "SAP.DE": {
+     "t": "SAP.DE",
+     "n": "SAP",
+     "slug": "sap-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 216.1,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 1.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.85,
+      2.44,
+      2.03,
+      2.17,
+      2.33
+     ],
+     "dd": 2,
+     "fcf": [
+      4.28,
+      3.6,
+      3.92,
+      3.01,
+      6.42
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 5.936604358917719,
+     "cov": 36.292834890965736,
+     "fneg": 0
+    },
+    "BAS.DE": {
+     "t": "BAS.DE",
+     "n": "BASF",
+     "slug": "bas-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 53.46,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 4.2,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.29,
+      3.4,
+      3.39,
+      3.39,
+      2.25
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": -9.061736896400053,
+     "cov": null,
+     "fneg": 0
+    },
+    "DTE.DE": {
+     "t": "DTE.DE",
+     "n": "Deutsche Telekom",
+     "slug": "dte-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 25.35,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-24",
+     "y": 3.9,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.59,
+      0.64,
+      0.7,
+      0.77,
+      0.9
+     ],
+     "dd": 2,
+     "fcf": [
+      2.51,
+      2.88,
+      3.84,
+      4.55,
+      4.66
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 11.134173609602517,
+     "cov": 19.313304721030043,
+     "fneg": 0
+    },
+    "DHL.DE": {
+     "t": "DHL.DE",
+     "n": "DHL",
+     "slug": "dhl-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 58,
+     "pdate": "2026-10-28",
+     "mdate": "2026-10-28",
+     "y": 3.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.33,
+      1.78,
+      1.82,
+      1.83,
+      1.85
+     ],
+     "dd": 2,
+     "fcf": [
+      2.9,
+      3.34,
+      2.25,
+      1.98,
+      2.33
+     ],
+     "fd": 2,
+     "unit": "",
+     "g": 8.600049163491663,
+     "cov": 79.39914163090128,
+     "fneg": 0
+    },
+    "DB1.DE": {
+     "t": "DB1.DE",
+     "n": "Deutsche Börse",
+     "slug": "db1-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 309.5,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-23",
+     "y": 1.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.99,
+      3.19,
+      3.58,
+      3.79,
+      4
+     ],
+     "dd": 2,
+     "fcf": [
+      4.4,
+      12.49,
+      13.09,
+      11.41,
+      13.67
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 7.546727701612599,
+     "cov": 29.261155815654718,
+     "fneg": 0
+    },
+    "RWE.DE": {
+     "t": "RWE.DE",
+     "n": "RWE",
+     "slug": "rwe-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 57.34,
+     "pdate": "2026-11-02",
+     "mdate": "2026-11-02",
+     "y": 2.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.85,
+      0.88,
+      0.9,
+      1,
+      1.11
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 6.899583535792786,
+     "cov": null,
+     "fneg": 0
+    },
+    "EOAN.DE": {
+     "t": "EOAN.DE",
+     "n": "E.ON",
+     "slug": "eoan-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 18.905,
+     "pdate": "2026-10-30",
+     "mdate": "2026-11-01",
+     "y": 3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.47,
+      0.49,
+      0.51,
+      0.53,
+      0.55
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.3,
+      1.96,
+      -0.28,
+      -0.64,
+      -0.52
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 4.007871301498489,
+     "cov": null,
+     "fneg": 1
+    },
+    "MBG.DE": {
+     "t": "MBG.DE",
+     "n": "Mercedes-Benz",
+     "slug": "mbg-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 40.68,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-31",
+     "y": 8.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.35,
+      5,
+      5.24,
+      5.48,
+      4.3
+     ],
+     "dd": 2,
+     "fcf": null,
+     "fd": 0,
+     "unit": "EUR per share",
+     "g": 33.59299051891826,
+     "cov": null,
+     "fneg": 0
+    },
+    "IFX.DE": {
+     "t": "IFX.DE",
+     "n": "Infineon",
+     "slug": "ifx-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 51.66,
+     "pdate": "2026-10-27",
+     "mdate": "2026-10-27",
+     "y": 0.7,
+     "yd": 1,
+     "cols": [
+      "Sep 2021",
+      "Sep 2022",
+      "Sep 2023",
+      "Sep 2024",
+      "Sep 2025"
+     ],
+     "dps": [
+      0.22,
+      0.27,
+      0.32,
+      0.35,
+      0.35
+     ],
+     "dd": 2,
+     "fcf": [
+      1.32,
+      1.41,
+      0.87,
+      0.21,
+      1.02
+     ],
+     "fd": 2,
+     "unit": "EUR per share",
+     "g": 12.30816745783818,
+     "cov": 34.31372549019608,
+     "fneg": 0
+    },
+    "QIA.DE": {
+     "t": "QIA.DE",
+     "n": "QIAGEN",
+     "slug": "qia-de",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "EUR",
+     "price": 44.935,
+     "pdate": "2026-10-22",
+     "mdate": "2026-10-23",
+     "y": 0.7,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0,
+      0,
+      0,
+      0,
+      0.25
+     ],
+     "dd": 2,
+     "fcf": [
+      1.94,
+      2.55,
+      1.34,
+      2.25,
+      2.07
+     ],
+     "fd": 2,
+     "unit": "Per share in US$",
+     "g": null,
+     "cov": 12.077294685990339,
+     "fneg": 0
+    },
+    "0388.HK": {
+     "t": "0388.HK",
+     "n": "HKEX",
+     "slug": "0388-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 371.6,
+     "pdate": "2026-10-15",
+     "mdate": "2026-10-15",
+     "y": 3.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      9.09,
+      7.62,
+      8.14,
+      8.22,
+      10.83
+     ],
+     "dd": 2,
+     "fcf": [
+      8.53,
+      10.44,
+      7.63,
+      8.52,
+      16.1
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 4.475905369645372,
+     "cov": 67.26708074534162,
+     "fneg": 0
+    },
+    "0941.HK": {
+     "t": "0941.HK",
+     "n": "China Mobile",
+     "slug": "0941-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 79.95,
+     "pdate": "2026-10-12",
+     "mdate": "2026-10-12",
+     "y": 6.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      2.81,
+      4.07,
+      4.25,
+      4.52,
+      4.75
+     ],
+     "dd": 2,
+     "fcf": [
+      3.85,
+      2.91,
+      4.55,
+      6.06,
+      1.9
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 14.024144481108912,
+     "cov": 250,
+     "fneg": 0
+    },
+    "0002.HK": {
+     "t": "0002.HK",
+     "n": "CLP",
+     "slug": "0002-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 77.15,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 4.1,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.15
+     ],
+     "dd": 2,
+     "fcf": [
+      1.28,
+      -1.72,
+      3.67,
+      2.13,
+      2.66
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 0.40080963559858684,
+     "cov": 118.42105263157895,
+     "fneg": 0
+    },
+    "0066.HK": {
+     "t": "0066.HK",
+     "n": "MTR",
+     "slug": "0066-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 32.38,
+     "pdate": "2026-10-16",
+     "mdate": "2026-10-17",
+     "y": 4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      1.16,
+      1.38,
+      1.22,
+      1.28,
+      1.31
+     ],
+     "dd": 2,
+     "fcf": [
+      -0.23,
+      -0.83,
+      -0.61,
+      -0.58,
+      -1.69
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": 3.0868636276021544,
+     "cov": null,
+     "fneg": 1
+    },
+    "0883.HK": {
+     "t": "0883.HK",
+     "n": "CNOOC Limited",
+     "slug": "0883-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 24.28,
+     "pdate": "2026-10-13",
+     "mdate": "2026-10-13",
+     "y": 5.3,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.46,
+      1.66,
+      1.22,
+      1.28,
+      1.27
+     ],
+     "dd": 2,
+     "fcf": [
+      1.27,
+      2.21,
+      1.69,
+      1.9,
+      1.91
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 28.902539166212083,
+     "cov": 66.49214659685865,
+     "fneg": 0
+    },
+    "0016.HK": {
+     "t": "0016.HK",
+     "n": "SHKP",
+     "slug": "0016-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 106.3,
+     "pdate": "2026-10-15",
+     "mdate": "2026-10-15",
+     "y": 3.7,
+     "yd": 1,
+     "cols": [
+      "Jun 2022",
+      "Jun 2023",
+      "Jun 2024",
+      "Jun 2025",
+      "Jun 2026"
+     ],
+     "dps": [
+      4.95,
+      4.95,
+      4.65,
+      3.75,
+      3.78
+     ],
+     "dd": 2,
+     "fcf": [
+      0.55,
+      3.24,
+      4.37,
+      9.57,
+      13.26
+     ],
+     "fd": 2,
+     "unit": "HK$ per share",
+     "g": -6.5193657752953165,
+     "cov": 28.506787330316744,
+     "fneg": 0
+    },
+    "0728.HK": {
+     "t": "0728.HK",
+     "n": "China Telecom",
+     "slug": "0728-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 4.315,
+     "pdate": "2026-10-23",
+     "mdate": "2026-10-23",
+     "y": 7.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.1,
+      0.29,
+      0.22,
+      0.26,
+      0.27
+     ],
+     "dd": 2,
+     "fcf": [
+      0.46,
+      0.34,
+      0.36,
+      0.43,
+      0.38
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 28.186101918870232,
+     "cov": 71.05263157894737,
+     "fneg": 0
+    },
+    "0762.HK": {
+     "t": "0762.HK",
+     "n": "China Unicom",
+     "slug": "0762-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 5.21,
+     "pdate": "2026-10-30",
+     "mdate": "2026-10-30",
+     "y": 9.4,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.28,
+      0.26,
+      0.31,
+      0.38,
+      0.44
+     ],
+     "dd": 2,
+     "fcf": [
+      0.85,
+      0.48,
+      0.36,
+      0.03,
+      0.3
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 11.96277689732501,
+     "cov": 146.66666666666669,
+     "fneg": 0
+    },
+    "0857.HK": {
+     "t": "0857.HK",
+     "n": "PetroChina",
+     "slug": "0857-hk",
+     "links": {},
+     "stock": {},
+     "prefill": true,
+     "cur": "HKD",
+     "price": 9.83,
+     "pdate": "2026-10-09",
+     "mdate": "2026-10-12",
+     "y": 5.6,
+     "yd": 1,
+     "cols": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "dps": [
+      0.22,
+      0.3,
+      0.43,
+      0.45,
+      0.47
+     ],
+     "dd": 2,
+     "fcf": [
+      0.29,
+      0.68,
+      0.81,
+      0.43,
+      0.52
+     ],
+     "fd": 2,
+     "unit": "RMB per share",
+     "g": 20.897910316603017,
+     "cov": 90.38461538461539,
+     "fneg": 0
+    }
+   },
+   "sym": {
+    "USD": [
+     "US$",
+     ""
+    ],
+    "EUR": [
+     "€",
+     ""
+    ],
+    "CAD": [
+     "C$",
+     ""
+    ],
+    "HKD": [
+     "HK$",
+     ""
+    ]
+   },
+   "w": {
+    "cond": "{n} 年後，股息{drip}，假設股息每年繼續增長 {g}，而股價維持在 {price}：",
+    "cond_gp": "{n} 年後，股息{drip}，假設股息每年繼續增長 {g}，而股價每年上升 {gp}：",
+    "sum": "報告的假設：股息率 {y} · 每年增長 {g} · {drip}",
+    "sum_drip": "再投資",
+    "sum_cash": "收取現金",
+    "ans_label": "{name}（{t}），投資 {amount}",
+    "res_by": "每年股息，稅前，以{name}的 {y} 股息率計",
+    "tile1": "第 {n} 年的每年股息",
+    "tile2": "{n} 年合共收取",
+    "tile1c": "第 {n} 年的每年股息",
+    "tile2c": "{n} 年合共收取",
+    "own": "股息率：我們{mdate}的{name}報告，以{pdate}收市價 {price} 計。",
+    "btn1": "閱讀{name}的完整報告"
+   },
+   "dw": {
+    "mBad": "請輸入零或以上的數字。",
+    "mCap": "已限制在上限。",
+    "mNone": "我們暫時未有 {t} 的報告。請自行輸入數字。",
+    "mNoFill": "我們不會在此填入{name}的數字：我們報告中的數字不完整或互相不吻合。請自行輸入，或查看其股息頁面。"
+   },
+   "app": "https://app.mystockbutler.com",
+   "src": "seo-dividend-calculator",
+   "yd": 1
+  },
+  "tail": ", lang = C.lang, $ = function (id) { return document.getElementById(id); };\nvar cur = C.rows[C.ex], graw = cur.g, curCur = cur.cur, yd = C.yd;\nfunction symOf(c) { return C.sym[c] || ['', c ? ' ' + c : '']; }\nfunction round2(v) { return Math.round(v * 100) / 100; }\nfunction show(v) { return lang === 'fr' || lang === 'de' ? String(v).replace('.', ',') : String(v); }\nfunction parseNum(s) { s = String(s == null ? '' : s).replace(/[\\s  ']/g, ''); if (!s) return NaN;\n  if (lang === 'fr') s = s.replace(',', '.'); else if (lang === 'de') s = s.replace(/\\.(?=\\d{3}(\\D|$))/g, '').replace(',', '.'); else s = s.replace(/,(?=\\d{3}(\\D|$))/g, '');\n  return /^-?\\d*\\.?\\d+$/.test(s) ? Number(s) : NaN; }\nfunction field(id, min, max) { var el = $(id), v = parseNum(el.value), err = $(id + '-e'), bad = !isFinite(v) || v < min;\n  if (err) err.textContent = bad ? C.dw.mBad : (v > max ? C.dw.mCap : ''); el.setAttribute('aria-invalid', bad ? 'true' : 'false'); return bad ? null : Math.min(v, max); }\nfunction dec(v) { var p = String(v).split('.'); return Math.min(3, p.length > 1 ? p[1].length : 0); }\nfunction setName(e) {\n  var href = C.app + '/signup?ticker=' + encodeURIComponent(e.t) + '&src=' + C.src + (lang !== 'en' ? '&lang=' + lang : '');\n  ['firstbtn', 'closebtn'].forEach(function (id) { var a = $(id); if (a) a.href = href; });\n  var b = $('firstbtn'); if (b) b.textContent = fillT(C.w.btn1, { name: e.n });\n}\nfunction apply(t) { var e = C.rows[t]; if (!e) { $('c-t-e').textContent = fillT(C.dw.mNone, { t: t }); return false; }\n  $('c-t-e').textContent = ''; cur = e; graw = e.g; curCur = e.cur; yd = e.yd;\n  $('c-y').value = show(e.y); $('c-g').value = e.g === null ? '0' : show(round2(e.g)); $('c-cur').textContent = (symOf(e.cur)[0] || symOf(e.cur)[1]).trim();\n  $('c-own').innerHTML = fillH(C.w.own, { name: escH(e.n), mdate: escH(dayText(e.mdate, lang)), pdate: escH(dayText(e.pdate, lang)), price: moneyH(e.price, 2, lang, symOf(e.cur)) });\n  setName(e); return true; }\nfunction calc() {\n  var a = field('c-a', 0, 1e12), y = field('c-y', 0, 100), g = field('c-g', -100, 100), n = field('c-n', 1, 50), gp = field('c-p', -99, 100), tax = field('c-x', 0, 100), add = field('c-add', 0, 1e12);\n  if ([a, y, g, n, gp, tax, add].some(function (v) { return v === null; })) return;\n  if (graw !== null && g === round2(graw)) g = graw;\n  var drip = $('c-d').checked, s = symOf(curCur), N = Math.round(n);\n  var rows = project({ amount: a, y: y, g: g, gp: gp, years: N, drip: drip, tax: tax, add: add }), last = rows[rows.length - 1];\n  var yy = y === cur.y ? yd : dec(y);\n  if ($('c-label')) $('c-label').innerHTML = fillH(C.w.ans_label, { name: escH(cur.n), t: escH(cur.t), amount: moneyH(a, 0, lang, s) });\n  if ($('c-sum')) $('c-sum').innerHTML = fillH(C.w.sum, { y: pctH(y, yy, lang), g: pctH(g, g === graw ? 1 : dec(g), lang), n: N, drip: drip ? C.w.sum_drip : C.w.sum_cash });\n  $('c-big').innerHTML = moneyH(Math.round(rows[0].div), 0, lang, s);\n  $('c-by').innerHTML = fillH(C.w.res_by, { name: escH(cur.n), y: pctH(y, yy, lang) });\n  var gtxt = pctH(g, g === graw ? 1 : dec(g), lang);\n  $('c-cond').innerHTML = fillH(gp ? C.w.cond_gp : C.w.cond, { n: N, drip: drip ? C.w.sum_drip : C.w.sum_cash, g: gtxt, price: moneyH(cur.price, 2, lang, symOf(cur.cur)), gp: pctH(gp, dec(gp), lang) });\n  $('c-fin').innerHTML = moneyH(last.div, 2, lang, s); $('c-tot').innerHTML = moneyH(last.total, 2, lang, s);\n  $('c-finl').textContent = fillT(drip ? C.w.tile1 : C.w.tile1c, { n: N }); $('c-totl').textContent = fillT(drip ? C.w.tile2 : C.w.tile2c, { n: N });\n  $('c-yrs').innerHTML = rows.map(function (r) { return '<tr><td>' + r.k + '</td><td>' + pctH(r.yieldPct, 2, lang) + '</td><td>' + moneyH(r.div, 2, lang, s) + '</td><td>' + moneyH(r.value, 2, lang, s) + '</td></tr>'; }).join('');\n}\nfunction find(q) { q = String(q || '').trim(); if (!q) return ''; var u = q.toUpperCase(); if (C.rows[u]) return u;\n  var l = q.toLowerCase(), hit = ''; Object.keys(C.rows).forEach(function (k) { var n = String(C.rows[k].n).toLowerCase(); if (!hit && (n === l || n.indexOf(l) === 0)) hit = k; }); return hit || u; }\nfunction run() { var t = find($('c-t').value); if (t && t !== cur.t) { if (apply(t)) $('c-t').value = t; } calc(); }\n$('c-f').addEventListener('submit', function (ev) { ev.preventDefault(); run(); });\n$('c-t').addEventListener('change', run);\n['c-a', 'c-y', 'c-g', 'c-n', 'c-p', 'c-x', 'c-add', 'c-d'].forEach(function (id) { $(id).addEventListener('change', calc); });\nvar qt = find(new URLSearchParams(location.search).get('t') || '');\nif (qt && C.rows[qt]) { $('c-t').value = qt; apply(qt); }\ncalc();\n\n})();",
+  "payers": {
+   "tickers": [
+    "0388.HK",
+    "0941.HK",
+    "0002.HK",
+    "0066.HK",
+    "0883.HK",
+    "0016.HK",
+    "0728.HK",
+    "0762.HK",
+    "0857.HK",
+    "JNJ"
+   ],
+   "go": "計算 ▸"
+  },
+  "checked": [
+   "0002.HK",
+   "0388.HK",
+   "0941.HK"
+  ]
+ }
+}
