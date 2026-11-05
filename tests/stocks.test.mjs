@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { fitTitle, buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
+import { earningsDateTitle, earningsResultTitle, fitTitle, buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -607,7 +607,8 @@ test('plan 2-3: a checked, announced date puts the results date in the English e
   // the results day itself still carries the date; the stock and dividend pages and the German page are untouched
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-18', { nvda: { date: '2026-11-18' } }))).title, want60);
   assert.equal(titlesOf(built.pages.find((p) => p.path === '/stocks/nvda/')).title, 'NVIDIA (NVDA) stock forecast 2027–2029');
-  assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA (NVDA) Quartalszahlen am 18. November 2026');
+  // B115 round 6: on October 29 the German page's report holds the newest quarter that has ended (Jul 2026): its result
+  assert.equal(titlesOf(nvdaPage(built, 'de')).title, 'NVIDIA (NVDA) Quartalszahlen Juli 2026: Umsatz 96,2 Mrd. US$');
 });
 
 test('plan 2-3: a long name drops "what to watch", then the date form; never more than 60 characters before the ticker', () => {
@@ -646,6 +647,50 @@ test('plan 2-3: a German earnings title loses its date once the day has passed (
   const plain = clone(load('stock-nvda-de.json'));
   plain.translations.de.pages.earnings.title = 'NVIDIA Quartalszahlen';
   assert.equal(titlesOf(nvdaPage(datedBuild(plain, '2026-11-19', {}), 'de')).title, 'NVIDIA (NVDA) Quartalszahlen');
+});
+
+// B115 ROUND 6 (owner 2026-11-04): the German earnings title names the newest quarter's result once the report holds that quarter
+// (the build day at most three months after its month end); a report one quarter behind keeps the dated title; EPS when it fits.
+test('round 6: a German earnings title carries the newest quarter\'s result while the report holds it, else the dated title', () => {
+  // the chart's newest column is Jul 2026: held until October 31 (the next quarter's end), then the dated title, then the passed form
+  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'de', '2026-10-31', {}), [`NVIDIA Quartalszahlen Juli 2026: Umsatz 96,2 Mrd. US$`, 'result']);
+  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'de', '2026-11-01', {}), ['', '']);
+  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'de', '2026-11-19', {}), ['NVIDIA Quartalszahlen', 'passed']);
+  // a revenue in billions leaves no room for the EPS; a short one in millions does (the declared unit, converted); a loss keeps its minus
+  const ip = clone(load('stock-nvda-de.json'));
+  ip.ticker = 'IP'; ip.short_name = 'IP'; ip.translations.de.pages.earnings.title = 'IP Quartalszahlen am 27. Januar 2027';
+  ip.pages.earnings.chart.rows.Revenue[7] = '17,103';
+  assert.equal(earningsResultTitle(ip, '2026-10-29'), `IP Quartalszahlen Juli 2026: Umsatz 17,1 Mrd. US$`);
+  ip.pages.earnings.chart.unit = 'US$ thousands; per share in US$';
+  ip.pages.earnings.chart.rows.Revenue[7] = '91,402';
+  assert.equal(earningsResultTitle(ip, '2026-10-29'), `IP Quartalszahlen Juli 2026: Umsatz 91 Mio. US$`);   // 'EPS 2,46 US$' would make 61
+  ip.pages.earnings.chart.rows['EPS, diluted'][7] = '1.2';
+  assert.equal(earningsResultTitle(ip, '2026-10-29'), `IP Quartalszahlen Juli 2026: Umsatz 91 Mio. US$, EPS 1,2 US$`);
+  ip.pages.earnings.chart.rows['EPS, diluted'][7] = '−0.4';
+  assert.equal(earningsResultTitle(ip, '2026-10-29'), `IP Quartalszahlen Juli 2026: Umsatz 91 Mio. US$`);   // with its minus sign, 61
+  // the DAX files: no chart, the quarters table of the same shape (head 'Row', quarter columns, a 'Revenue' row), in EUR
+  const sap = clone(load('stock-nvda-de.json'));
+  sap.ticker = 'SAP.DE'; sap.short_name = 'SAP'; sap.translations.de.pages.earnings.title = 'SAP Quartalszahlen am 28. Januar 2027';
+  sap.pages.earnings.chart = null;
+  sap.pages.earnings.blocks = [{ heading: 'x', paragraphs: [], table: { title: 'The last eight reported periods', unit: 'EUR millions; per share in EUR', head: ['Row', 'Sep 2026', 'Jun 2026', 'Mar 2026'], rows: [['Revenue', '10,270', '9,878', '9,555'], ['EPS, diluted', '1.94', '1.88', '1.65']] } }];
+  assert.equal(earningsResultTitle(sap, '2026-11-04'), `SAP Quartalszahlen Sept. 2026: Umsatz 10,3 Mrd. €`);   // with the EPS it is over 60 with '(SAP.DE)'
+  // one quarter behind (Rheinmetall: Jun 2026 newest on November 4), half-years, an unknown unit, no revenue: today's title
+  sap.pages.earnings.blocks[0].table.head = ['Row', 'Jun 2026', 'Mar 2026', 'Dec 2025'];
+  assert.equal(earningsResultTitle(sap, '2026-11-04'), '');
+  sap.pages.earnings.blocks[0].table.head = ['Row', 'Sep 2026', 'Mar 2026', 'Sep 2025'];
+  assert.equal(earningsResultTitle(sap, '2026-11-04'), '');
+  sap.pages.earnings.blocks[0].table.head = ['Row', 'Sep 2026', 'Jun 2026', 'Mar 2026'];
+  sap.pages.earnings.blocks[0].table.unit = 'EUR billions';
+  assert.equal(earningsResultTitle(sap, '2026-11-04'), '');
+  sap.pages.earnings.blocks[0].table.unit = 'EUR millions';
+  sap.pages.earnings.blocks[0].table.rows = [['Net revenue', '10,270', '9,878', '9,555']];
+  assert.equal(earningsResultTitle(sap, '2026-11-04'), '');
+  // a name too long for 60 characters with its ticker keeps today's title
+  const long = clone(load('stock-nvda-de.json'));
+  long.translations.de.pages.earnings.title = 'Applied Materials and Semiconductor Quartalszahlen am 18. November 2026';
+  assert.deepEqual(earningsDateTitle(long, 'de', '2026-10-29', {}), ['', '']);
+  // the English page is untouched
+  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'en', '2026-10-29', {}), ['', '']);
 });
 
 // SEO FIX LIST ROW 4 (owner 2026-11-01): 'NVIDIA (NVDA) stock forecast 2027–2029' on stock, dividend and earnings pages, in every language.

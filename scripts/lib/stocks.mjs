@@ -262,8 +262,13 @@ function yearsSpan(title, data) {
 //     date is never printed as a fact.
 //   German ('passed'): the chain's title carries the date ('Ventas Quartalszahlen am 27. Oktober 2026', title_de); once
 //     next_earnings is before the build day, the chain's own short form of the same title ('Ventas Quartalszahlen') — no new word.
+//   German ('result', B115 round 6): before both, the newest quarter's result while the report holds it (earningsResultTitle).
 export function earningsDateTitle(data, lang, day, allow = {}) {
   const next = isoDay(data?.next_earnings);
+  if (lang === 'de' && day) {
+    const result = earningsResultTitle(data, day);   // B115 round 6: the newest quarter's result, once the report holds it (no next date needed)
+    if (result) return [result, 'result'];
+  }
   if (!next || !day) return ['', ''];
   if (lang === 'de') {
     const m = /^(.+) Quartalszahlen am \d/.exec(String(langPage(data, 'earnings', 'de')?.title || ''));
@@ -274,6 +279,63 @@ export function earningsDateTitle(data, lang, day, allow = {}) {
   const when = humanDay(next);
   const title = [`${shortName(data)} earnings date: ${when} — what to watch`, `${shortName(data)} earnings date: ${when}`].find((t) => t.length <= 60);
   return title ? [title, 'date'] : ['', ''];
+}
+
+// THE RESULT IN THE GERMAN EARNINGS TITLE (B115 round 6, the owner 2026-11-04 "why don't you just do them"). Once the page's report
+// holds the newest quarter that has ended, the German title names that quarter's result instead of the next date:
+// 'SAP Quartalszahlen Sept. 2026: Umsatz 10,3 Mrd. €', 'IBM Quartalszahlen Sept. 2026: Umsatz 17,1 Mrd. US$, EPS 2,65 US$'.
+// Every piece is the report's own quarter figures, in our producer's closed shape: the earnings chart (kind 'quarters'), else the
+// earnings table with the same shape (the DAX files: head 'Row' + quarter columns three months apart, rows keyed 'Revenue' and
+// 'EPS, diluted' like the chart's; never found by its title). The newest column ('Sep 2026', 'Quarter to Sep 2026'), its revenue and
+// diluted EPS, the declared unit ('US$ millions', 'US$ thousands', 'EUR millions': shape, converted by arithmetic). "Holds the newest
+// quarter" is arithmetic on dates: the build day is at most three months after that column's month end (Sep 2026 -> up to
+// December 31, 2026; Rheinmetall's newest column is Jun 2026, so its dated title stays). The period is the column's month as the page
+// prints it ('Sept. 2026'): a fiscal quarter number ('Q3') is never guessed (Microsoft's Sep quarter is its fiscal first). A report
+// without such figures in a known unit, or a title over 60 characters with its ticker, keeps today's title.
+const RESULT_UNIT = { 'US$ millions': [1e6, 'USD'], 'US$ thousands': [1e3, 'USD'], 'EUR millions': [1e6, 'EUR'], 'EUR thousands': [1e3, 'EUR'] };
+const quarterKey = (c) => { const m = /^(?:Quarter to )?(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4})$/.exec(String(c ?? '').trim()); return m ? Number(m[2]) * 12 + MON_EN.indexOf(m[1]) : null; };
+function quarterFigures(data) {
+  const e = data?.pages?.earnings || {};
+  const ch = e.chart;
+  if (ch && ch.kind === 'quarters' && Array.isArray(ch.columns)) return { columns: ch.columns, revenue: ch.rows?.Revenue || [], eps: ch.rows?.['EPS, diluted'] || [], unit: ch.unit };
+  for (const b of e.blocks || []) {
+    const t = b?.table;
+    if (!t || !Array.isArray(t.head) || t.head[0] !== 'Row' || t.head.length < 3) continue;
+    const keys = t.head.slice(1).map(quarterKey);
+    if (keys.some((k) => k === null) || keys.some((k, x) => x && Math.abs(keys[x - 1] - k) !== 3)) continue;   // quarters only
+    const row = (k) => ((t.rows || []).find((r) => Array.isArray(r) && r[0] === k) || []).slice(1);
+    if (!row('Revenue').length) continue;
+    return { columns: t.head.slice(1), revenue: row('Revenue'), eps: row('EPS, diluted'), unit: t.unit };
+  }
+  return null;
+}
+export function earningsResultTitle(data, day) {
+  const q = quarterFigures(data);
+  if (!q || !day) return '';
+  const keys = q.columns.map(quarterKey);
+  if (!keys.length || keys.some((k) => k === null)) return '';
+  const top = Math.max(...keys);
+  const i = keys.indexOf(top);
+  // the next quarter's end (the month end three months after the newest column's): the build day must not be after it
+  const nk = top + 3;
+  const nextEnd = new Date(Date.UTC(Math.floor(nk / 12), (nk % 12) + 1, 0)).toISOString().slice(0, 10);
+  if (String(day).slice(0, 10) > nextEnd) return '';
+  const unit = RESULT_UNIT[String(q.unit || '').split(/[;,]/)[0].trim()];
+  if (!unit) return '';
+  const rev = cellNum(q.revenue[i]);
+  if (!(rev > 0)) return '';
+  const cur = CUR_MARK.de[unit[1]];
+  const v = rev * unit[0];
+  const amount = v >= 1e9 ? `${germanNumber((v / 1e9).toFixed(1))} Mrd. ${cur}` : v >= 1e6 ? `${germanNumber(Math.round(v / 1e6).toLocaleString('en-US'))} Mio. ${cur}` : '';
+  if (!amount) return '';
+  const epsCell = String(q.eps[i] ?? '').replace(/\*\*/g, '').replace(/\u2212/g, '-').trim();
+  const eps = cellNum(epsCell);
+  const epsText = eps !== null && /^-?\d+\.\d+$/.test(epsCell) ? `${eps < 0 ? '\u2212' : ''}${germanNumber(epsCell.replace(/^-/, ''))} ${cur}` : '';
+  const m = /^(.+?) Quartalszahlen\b/.exec(String(langPage(data, 'earnings', 'de')?.title || ''));
+  const name = m ? m[1] : shortName(data);
+  const period = dateDe(String(q.columns[i]).trim().replace(/^Quarter to /, ''));   // 'Sept. 2026', as the page's own columns print it
+  const forms = [epsText ? `${name} Quartalszahlen ${period}: Umsatz ${amount}, EPS ${epsText}` : '', `${name} Quartalszahlen ${period}: Umsatz ${amount}`];
+  return forms.find((t) => t && titleWithTicker(t, data).length <= 60) || '';
 }
 
 // THE TICKER IN THE TITLE (SEO fix list row 4, owner 2026-11-01): the page's <title> names the ticker, in the form the page itself
@@ -2728,7 +2790,7 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     duplicateTitles: [...pass.reduce((m, b) => m.set(b.title, (m.get(b.title) || 0) + 1), new Map())].filter(([, n]) => n > 1).map(([t]) => t),
     maxKB: Math.round(Math.max(0, ...pass.map((b) => Buffer.byteLength(b.html))) / 1024),
     // plan 2-3: the earnings titles this build changed (English: the announced date; German: the past date taken out)
-    earningsTitles: Object.fromEntries(['date', 'passed'].map((k) => [k, pass.filter((b) => b.datedKind === k).map((b) => ({ path: b.path, title: b.title }))])),
+    earningsTitles: Object.fromEntries(['date', 'passed', 'result'].map((k) => [k, pass.filter((b) => b.datedKind === k).map((b) => ({ path: b.path, title: b.title }))])),
     sitePages,
     divcalc: { ...divcalc.report, embedded: Object.fromEntries(['en', ...LANGS].map((l) => [l, pass.filter((b) => b.type === 'dividend' && (b.lang || 'en') === l && b.html.includes('<section class="dce" id="dce">')).length])) },
   };
