@@ -146,6 +146,9 @@ test('the EU cookie banner: no page loads Google directly; the consent script de
     assert.ok(!/<script[^>]+src="https:\/\/www\.googletagmanager\.com/.test(p.html), `${p.path} loads Google before consent`);
     assert.match(p.html, /window\.msbOnConsent=/);
     assert.match(p.html, /Europe\\\//);
+    // owner 2026-11-07: Clarity loads only inside grant(), with Google Analytics
+    assert.ok(!/<script[^>]+src="https:\/\/www\.clarity\.ms/.test(p.html), `${p.path} loads Clarity before consent`);
+    assert.match(p.html, /function grant\(\)\{[^]*clarity\.ms\/tag\/za01kk8m7j[^]*\}/);
   }
 });
 

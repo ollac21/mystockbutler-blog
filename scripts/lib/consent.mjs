@@ -22,6 +22,9 @@ export const CONSENT_WORDS = {
 };
 
 const LINKER = ['mystockbutler.com', 'blog.mystockbutler.com', 'app.mystockbutler.com'];
+// Microsoft Clarity (owner 2026-11-07: heatmaps and session recordings, project "MyStockButler"): it loads with Google
+// Analytics in grant(), so the same rule holds (at once outside Europe, after 'Accept' in Europe; measuring, not ads).
+export const CLARITY_ID = 'za01kk8m7j';
 
 // The head script of every blog page: the consent check, then Google Analytics with the page's own parameters.
 export function measuringScript({ gaId, params, lang = 'en' }) {
@@ -31,7 +34,8 @@ export function measuringScript({ gaId, params, lang = 'en' }) {
 function run(f){try{f()}catch(e){}}
 window.msbOnConsent=function(f){if(ok)run(f);else Q.push(f);};
 function grant(){if(ok)return;ok=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gaId}';document.head.appendChild(s);
-gtag('js',new Date());gtag('config','${gaId}',Object.assign({linker:{domains:${JSON.stringify(LINKER)}}},P));Q.splice(0).forEach(run);}
+gtag('js',new Date());gtag('config','${gaId}',Object.assign({linker:{domains:${JSON.stringify(LINKER)}}},P));
+window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};var k=document.createElement('script');k.async=true;k.src='https://www.clarity.ms/tag/${CLARITY_ID}';document.head.appendChild(k);clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'granted'});Q.splice(0).forEach(run);}
 var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
 var m=document.cookie.match(/(?:^|; )${CONSENT_COOKIE}=(granted|denied)/),c=m&&m[1];
 if(c==='granted'||(!c&&!E.test(tz))){grant();return;}
