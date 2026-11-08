@@ -91,7 +91,31 @@ async function committed(dir) {
   return out;
 }
 
-export async function readStockData(root, { url = process.env.STOCK_PAGES_URL || '' } = {}) {
+// SEO row 1 (2026-11-07): the analysts' view. One small file per company, data/stocks/analysts/<slug>.json, written by the chain
+// repo's scripts/public_pages_analysts.py from FMP and committed here (the app function serves only the page files). It is
+// attached as `data.analysts`; a missing or unreadable file leaves the page as it was, and the page draws the block only while
+// the file's as_of is recent (analysts.mjs).
+export function readAnalysts(root, slug) {
+  if (!SLUG.test(String(slug || ''))) return null;
+  try {
+    const file = JSON.parse(readFileSync(path.join(root, 'data', 'stocks', 'analysts', `${slug}.json`), 'utf8'));
+    return file && file.slug === slug ? file : null;
+  } catch {
+    return null;
+  }
+}
+export async function readStockData(root, opts = {}) {
+  const list = await readStockPages(root, opts);
+  let n = 0;
+  for (const data of list) {
+    const analysts = readAnalysts(root, data?.slug);
+    if (analysts) { data.analysts = analysts; n += 1; }
+  }
+  console.log(`Analysts: ${n} of ${list.length} companies have an analyst file in data/stocks/analysts/.`);
+  return list;
+}
+
+async function readStockPages(root, { url = process.env.STOCK_PAGES_URL || '' } = {}) {
   const dir = path.join(root, 'data', 'stocks');
   const kept = await committed(dir);
   if (!url) {
