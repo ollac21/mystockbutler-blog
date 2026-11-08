@@ -847,4 +847,12 @@ html:not(.js) .vset__def .plist{margin-bottom:10px}
 /* round 4: on phones the report box comes first */
 @media (max-width:639px){ .hero .offer--two .offer__c--rep{order:-1} }
 
+/* owner 2026-11-08: the two boxes the same height, their buttons on one line */
+.offer--two{align-items:stretch}
+.offer--two .offer__c>.offer__f{margin-top:auto}
+.offer__l{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.offer__l li{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--rule);font:500 15px/1.4 var(--font);color:var(--ink)}
+.offer__l li b{font-weight:700}
+.offer__s{font-size:13.5px!important;color:var(--muted)!important;margin-top:-4px}
+
 button.nrl__a{background:none;border:0;padding:0;font:inherit;font-weight:700;cursor:pointer}
