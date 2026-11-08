@@ -120,8 +120,8 @@ export function weekResultsHtml(q, max = 8) {
   };
   const picks = rows.sort(order).slice(0, max).sort((a, b) => iso(a.c.next_earnings).localeCompare(iso(b.c.next_earnings)) || order(a, b));
   if (!picks.length) return '';
-  const chips = picks.map((x) => `<a href="/stocks/${x.c.slug}/earnings/">${esc(x.name)} earnings<small>${MON3[dt(iso(x.c.next_earnings)).getUTCMonth()]} ${dt(iso(x.c.next_earnings)).getUTCDate()}</small></a>`).join('');
-  return `<section class="sec links" aria-labelledby="wk-h"><h2 id="wk-h">Results this week</h2><div class="links__grid"><div><div class="chips">${chips}</div></div></div></section>`;
+  const chips = picks.map((x) => `<a href="/stocks/${x.c.slug}/earnings/">${esc(x.name)} earnings · ${MON3[dt(iso(x.c.next_earnings)).getUTCMonth()]} ${dt(iso(x.c.next_earnings)).getUTCDate()}</a>`).join('');
+  return `<section class="sec links" aria-labelledby="wk-h"><h2 id="wk-h">Results this week</h2><div class="chips">${chips}</div></section>`;
 }
 
 // ---------------------------------------------------------------------------------------------------------------------------

@@ -879,7 +879,7 @@ test('row L: a stock page links its own results page at the top; /stocks/ lists 
   const hub = built.hubs.find((h) => h.path === '/stocks/').html;
   const wk = /<section class="sec links" aria-labelledby="wk-h">[\s\S]*?<\/section>/.exec(hub)?.[0] || '';
   assert.ok(wk.includes('<h2 id="wk-h">Results this week</h2>'), 'the section is drawn');
-  assert.ok(wk.includes('<a href="/stocks/nvda/earnings/">NVIDIA earnings<small>Nov 18</small></a>'), wk);
+  assert.ok(wk.includes('<a href="/stocks/nvda/earnings/">NVIDIA earnings · Nov 18</a>'), wk);
   assert.ok((wk.match(/<a /g) || []).length <= 8);
   assert.equal((wk.match(/href="\/stocks\/nvda\/earnings\/"/g) || []).length, 1);
   // a day with nobody reporting in the next seven days: no section
