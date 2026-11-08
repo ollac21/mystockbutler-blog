@@ -288,6 +288,15 @@ export function earningsDateTitle(data, lang, day, allow = {}) {
     const result = earningsResultTitle(data, day);   // B115 round 6: the newest quarter's result, once the report holds it (no next date needed)
     if (result) return [result, 'result'];
   }
+  if (lang === 'en' && day) {
+    // SEO row 2a (owner 2026-11-07): English like German, with one difference: a date the company itself announced (the checked list)
+    // beats the result, because 'earnings date' is what English readers search; with no such date, the newest quarter's result.
+    const row = allow ? allow[data.slug] : null;
+    if (!(row && next && next >= day && isoDay(row.date) === next)) {
+      const result = earningsResultTitle(data, day, 'en');
+      if (result) return [result, 'result'];
+    }
+  }
   if (!next || !day) return ['', ''];
   if (lang === 'de') {
     const m = /^(.+) Quartalszahlen am \d/.exec(String(langPage(data, 'earnings', 'de')?.title || ''));
@@ -328,7 +337,7 @@ function quarterFigures(data) {
   }
   return null;
 }
-export function earningsResultTitle(data, day) {
+export function earningsResultTitle(data, day, lang = 'de') {
   const q = quarterFigures(data);
   if (!q || !day) return '';
   const keys = q.columns.map(quarterKey);
@@ -343,13 +352,25 @@ export function earningsResultTitle(data, day) {
   if (!unit) return '';
   const rev = cellNum(q.revenue[i]);
   if (!(rev > 0)) return '';
-  const cur = CUR_MARK.de[unit[1]];
+  const en = lang === 'en';
+  const cur = CUR_MARK[en ? 'en' : 'de'][unit[1]];
   const v = rev * unit[0];
-  const amount = v >= 1e9 ? `${germanNumber((v / 1e9).toFixed(1))} Mrd. ${cur}` : v >= 1e6 ? `${germanNumber(Math.round(v / 1e6).toLocaleString('en-US'))} Mio. ${cur}` : '';
+  // English: '$4.9B' / '$909M' ('$' for US dollars, the page's own marks for the others: C$, €, £); German: '4,9 Mrd. US$'
+  const sym = unit[1] === 'USD' ? '$' : cur;
+  const amount = en
+    ? (v >= 1e9 ? `${sym}${(v / 1e9).toFixed(1)}B` : v >= 1e6 ? `${sym}${Math.round(v / 1e6).toLocaleString('en-US')}M` : '')
+    : (v >= 1e9 ? `${germanNumber((v / 1e9).toFixed(1))} Mrd. ${cur}` : v >= 1e6 ? `${germanNumber(Math.round(v / 1e6).toLocaleString('en-US'))} Mio. ${cur}` : '');
   if (!amount) return '';
   const epsCell = String(q.eps[i] ?? '').replace(/\*\*/g, '').replace(/\u2212/g, '-').trim();
   const eps = cellNum(epsCell);
-  const epsText = eps !== null && /^-?\d+\.\d+$/.test(epsCell) ? `${eps < 0 ? '\u2212' : ''}${germanNumber(epsCell.replace(/^-/, ''))} ${cur}` : '';
+  const epsOk = eps !== null && /^-?\d+\.\d+$/.test(epsCell);
+  const epsText = !epsOk ? '' : en ? `${eps < 0 ? '-' : ''}${sym}${epsCell.replace(/^-/, '')}` : `${eps < 0 ? '\u2212' : ''}${germanNumber(epsCell.replace(/^-/, ''))} ${cur}`;
+  if (en) {
+    const period = String(q.columns[i]).trim().replace(/^Quarter to /, '');   // 'Sep 2026', as the page's own columns print it
+    const name = shortName(data);
+    const forms = [epsText ? `${name} earnings ${period}: revenue ${amount}, EPS ${epsText}` : '', `${name} earnings ${period}: revenue ${amount}`];
+    return forms.find((t) => t && titleWithTicker(t, data).length <= 60) || '';
+  }
   const m = /^(.+?) Quartalszahlen\b/.exec(String(langPage(data, 'earnings', 'de')?.title || ''));
   const name = m ? m[1] : shortName(data);
   const period = dateDe(String(q.columns[i]).trim().replace(/^Quarter to /, ''));   // 'Sept. 2026', as the page's own columns print it

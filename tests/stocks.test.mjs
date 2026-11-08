@@ -628,13 +628,43 @@ test('plan 2-3: a long name drops "what to watch", then the date form; never mor
 test('plan 2-3: no date in the title when the date is past, disagrees with the data, or is not on the checked list', () => {
   const model = 'NVIDIA (NVDA) earnings: guidance and what to watch';
   const row = { nvda: { date: '2026-11-18' } };
+  // from November 1 the report no longer holds the newest quarter's result (Jul 2026 column), so the model's title shows
   assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-19', row))).title, model);         // past
-  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', { nvda: { date: '2026-11-17' } }))).title, model);   // moved
-  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', { orcl: { date: '2026-11-18' } }))).title, model);   // not listed
-  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-10-29', undefined))).title, model);   // no list = off
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-05', { nvda: { date: '2026-11-17' } }))).title, model);   // moved
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-05', { orcl: { date: '2026-11-18' } }))).title, model);   // not listed
+  assert.equal(titlesOf(nvdaPage(datedBuild(load('stock-nvda-de.json'), '2026-11-05', undefined))).title, model);   // no list = off
   const none = clone(load('stock-nvda-de.json'));
   delete none.next_earnings;
-  assert.equal(titlesOf(nvdaPage(datedBuild(none, '2026-10-29', row))).title, model);
+  assert.equal(titlesOf(nvdaPage(datedBuild(none, '2026-11-05', row))).title, model);
+});
+
+// SEO ROW 2a (owner 2026-11-07): the English earnings title names the newest quarter's result while the report holds it, like German;
+// an announced date on the checked list beats it.
+test('row 2a: an English earnings title carries the newest quarter\'s result; the announced date comes first; later the model\'s title', () => {
+  const nv = load('stock-nvda-de.json');
+  assert.deepEqual(earningsDateTitle(nv, 'en', '2026-10-29', {}), ['NVIDIA earnings Jul 2026: revenue $96.2B, EPS $2.46', 'result']);
+  const built = datedBuild(nv, '2026-10-29', undefined);
+  assert.equal(titlesOf(nvdaPage(built)).title, 'NVIDIA (NVDA) earnings Jul 2026: revenue $96.2B, EPS $2.46');
+  assert.ok(titlesOf(nvdaPage(built)).title.length <= 60);
+  assert.equal(built.held.filter((h) => h.type === 'earnings').length, 0, JSON.stringify(built.held));
+  // a checked, announced date (the page's own next date) beats the result
+  assert.equal(earningsDateTitle(nv, 'en', '2026-10-29', { nvda: { date: '2026-11-18' } })[1], 'date');
+  // a row that disagrees with the data, or a past date: the result
+  assert.equal(earningsDateTitle(nv, 'en', '2026-10-29', { nvda: { date: '2026-11-17' } })[1], 'result');
+  // after the next quarter's end (October 31) the report no longer holds it
+  assert.deepEqual(earningsDateTitle(nv, 'en', '2026-11-01', {}), ['', '']);
+  // millions, no EPS room, a loss, another currency
+  const m = clone(nv);
+  m.pages.earnings.chart.unit = 'US$ thousands; per share in US$';
+  m.pages.earnings.chart.rows.Revenue[7] = '909,402';
+  m.pages.earnings.chart.rows['EPS, diluted'][7] = '-0.4';
+  assert.equal(earningsResultTitle(m, '2026-10-29', 'en'), 'NVIDIA earnings Jul 2026: revenue $909M, EPS -$0.4');
+  m.pages.earnings.chart.unit = 'EUR millions; per share in EUR';
+  m.pages.earnings.chart.rows.Revenue[7] = '10,270';
+  assert.equal(earningsResultTitle(m, '2026-10-29', 'en'), 'NVIDIA earnings Jul 2026: revenue €10.3B, EPS -€0.4');
+  // a name too long for 60 characters with the ticker: today's title
+  m.short_name = 'Applied Materials and Semiconductor Holdings';
+  assert.equal(earningsResultTitle(m, '2026-10-29', 'en'), '');
 });
 
 test('plan 2-3: a German earnings title loses its date once the day has passed (the chain\'s own short form)', () => {
@@ -692,8 +722,8 @@ test('round 6: a German earnings title carries the newest quarter\'s result whil
   const long = clone(load('stock-nvda-de.json'));
   long.translations.de.pages.earnings.title = 'Applied Materials and Semiconductor Quartalszahlen am 18. November 2026';
   assert.deepEqual(earningsDateTitle(long, 'de', '2026-10-29', {}), ['', '']);
-  // the English page is untouched
-  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'en', '2026-10-29', {}), ['', '']);
+  // the English page: its own result form (row 2a), not German
+  assert.deepEqual(earningsDateTitle(load('stock-nvda-de.json'), 'en', '2026-11-05', {}), ['', '']);
 });
 
 // SEO FIX LIST ROW 4 (owner 2026-11-01): 'NVIDIA (NVDA) stock forecast 2027–2029' on stock, dividend and earnings pages, in every language.
