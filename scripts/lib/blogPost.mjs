@@ -349,6 +349,7 @@ export function renderBlogHome(q) {
 <p class="hero">Each post is one company's full report, every chapter open: the business, the numbers, the risks and where the price could go, written from its filings with each source cited.</p></div>
 <div class="htop__cta"><a class="btn btn--lg" id="firstbtn" data-cta="lede" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</div></section>
 <ul class="hlist" aria-label="Posts">${rows}</ul>
+${q.weekResults || ''}
 <section class="cta1 cta1--after" aria-label="Get a report"><a class="btn btn--lg btn--block" id="closebtn" data-cta="close" rel="nofollow" href="${esc(cta)}">${esc(btn)}</a>${freeP}</section>
 <section class="links" aria-label="More pages"><div class="links__grid">
 ${browse ? `<div><h3>Browse</h3><div class="chips">${browse}</div></div>` : ''}

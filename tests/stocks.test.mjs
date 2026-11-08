@@ -868,3 +868,21 @@ test('row 4: the German calendar title, H1 and intro; one "Nächste Quartalszahl
   }
   assert.ok(!built.pages.some((p) => p.lang === 'en' && p.html.includes('Nächste Quartalszahlen →')));
 });
+
+// SEO ROW L (owner 2026-11-07): internal links to the results pages.
+test('row L: a stock page links its own results page at the top; /stocks/ lists up to eight results pages of the week, with their dates', () => {
+  const built = buildStockSite([load('stock-nvda-de.json'), load('stock-rmd.json'), load('stock-td-to.json')], { today: DAY('2026-11-16'), earningsDates: {} });
+  const top = (path) => { const html = built.pages.find((p) => p.path === path).html; return html.slice(html.indexOf('<p class="byline">'), html.indexOf('</p>', html.indexOf('<p class="byline">'))); };
+  assert.match(top('/stocks/nvda/'), /<a class="plain byline__how" href="\/stocks\/nvda\/earnings\/">Latest results →<\/a>/);
+  assert.match(top('/de/aktien/nvda/'), /href="\/de\/aktien\/nvda\/quartalszahlen\/">Letzte Quartalszahlen →<\/a>/);
+  assert.doesNotMatch(top('/stocks/nvda/earnings/'), /Latest results/);   // only the forecast page
+  const hub = built.hubs.find((h) => h.path === '/stocks/').html;
+  const wk = /<section class="sec links" aria-labelledby="wk-h">[\s\S]*?<\/section>/.exec(hub)?.[0] || '';
+  assert.ok(wk.includes('<h2 id="wk-h">Results this week</h2>'), 'the section is drawn');
+  assert.ok(wk.includes('<a href="/stocks/nvda/earnings/">NVIDIA earnings<small>Nov 18</small></a>'), wk);
+  assert.ok((wk.match(/<a /g) || []).length <= 8);
+  assert.equal((wk.match(/href="\/stocks\/nvda\/earnings\/"/g) || []).length, 1);
+  // a day with nobody reporting in the next seven days: no section
+  const quiet = buildStockSite([load('stock-nvda-de.json'), load('stock-rmd.json'), load('stock-td-to.json')], { today: DAY('2026-12-20'), earningsDates: {} });
+  assert.doesNotMatch(quiet.hubs.find((h) => h.path === '/stocks/').html, /wk-h/);
+});

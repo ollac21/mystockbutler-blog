@@ -18,7 +18,7 @@ import { loadAlternatives, loadGuides, loadToolPictures, renderGuide, tickerBox,
 import { ABOUT_LINK_WORDS, ABOUT_PATH, TRUST_LINK_WORDS, loadAbout, renderAbout, renderTrust } from './about.mjs';
 import { DIVCALC_LINK_WORDS, DIVCALC_PATH, DIVCALC_PATHS, cellNum, eligible as divcalcEligible, embedAmounts, renderDivCalc, renderDivCalcEmbed } from './divcalc.mjs';
 import { PAGE_CSS_PATH, PAGE_JS_PATH, WORDS as PAGE_WORDS, firstPage, forecastOf, headerHtml, makeFmt, renderCompareBody, renderListBody, renderPage, reportViewer, stripHtml } from './stockPage.mjs';
-import { renderCompareIndexBody, renderWeekBody, renderWeekBodyDe } from './hubPages.mjs';
+import { renderCompareIndexBody, renderWeekBody, renderWeekBodyDe, weekResultsHtml } from './hubPages.mjs';
 import { SITE_PAGES, renderMdFrame, renderSitePage, sitePageProblem } from './sitePages.mjs';
 import { renderBlogHome, renderBlogPost, renderRedirect } from './blogPost.mjs';
 
@@ -1461,6 +1461,8 @@ function renderV2(data, type, ctx, lang, o) {
     data, type, lang, page: o.page, enPage: data.pages[type], company: o.company, ticker: o.ticker, h1: o.h1, cta: o.cta, crumbsHtml: o.crumbs.html,
     memoDay: o.memoDay, teaser: o.teaser, chapters: fr ? data.translations[lang].chapters : data.chapters, sources,
     siblings: o.siblings, rivalLinks: o.rivals, compares: o.compares, rivalNames,
+    // SEO row L (owner 2026-11-07): the stock page's top links its own results page
+    latestResults: type === 'stock' && has('earnings', lang) ? pagePath(data.slug, 'earnings', lang) : '',
     // COPY row 38: our own link words
     hubs: o.hubs.map((h) => h.replace(/>Companies ([A-Z]|0-9)</, '>Companies starting with $1<')), today: ctx.today, htmlLang: ui.htmlLang,
     announced: !!(announcedRow && isoDay(announcedRow.date) === isoDay(data.next_earnings)),
@@ -1665,14 +1667,14 @@ function hubList(companies, { withDates = false, langs = [] } = {}) {
     .join('')}</ul>`;
 }
 
-function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', cta = '', list = null, index = '', h1 = '', more = [], all = null, today = '', langs = [] }) {
+function hubPage({ path, title, description, intro, sections, crumbItems, search = false, lang = 'en', updated = '', cta = '', list = null, index = '', h1 = '', more = [], all = null, today = '', langs = [], weekResults = '' }) {
   const crumbs = breadcrumbs(crumbItems);
   const url = `${SITE}${path}`;
   // B115 (owner 2026-11-03 "Ok for all"): the list pages in the approved design (stockPage.mjs renderListBody)
   if (v2On() && list && list.length) {
     const ui = UI[lang];
     const has = (c, t) => (lang === 'en' ? !!c.pages[t] : !!langPage(c, t, lang));
-    const body = renderListBody({ lang, list, index, h1: h1 || title, today, locale: ui.locale, crumbsHtml: crumbs.html, authorLink: authorLink(lang), num: ui.num, money, humanDay: (d) => humanDay(d, lang), shortFull: (d) => shortFull(d, lang),
+    const body = renderListBody({ weekResults, lang, list, index, h1: h1 || title, today, locale: ui.locale, crumbsHtml: crumbs.html, authorLink: authorLink(lang), num: ui.num, money, humanDay: (d) => humanDay(d, lang), shortFull: (d) => shortFull(d, lang),
       dateWords: (t) => ui.date(t), shortName, startOf: (c) => (c.pages.stock ? startPrice(c) : null), yieldOf: (c) => dividendYieldOf(c), teaserOf: (c) => (lang === 'en' ? c.teaser : c.translations?.[lang]?.teaser) || null,
       hasPage: has, pagePath: (slug, t) => pagePath(slug, t, lang), types: ui.types, sibling: ui.sibling,
       ctaOf: (c) => `${APP}/signup?ticker=${encodeURIComponent(c.ticker)}&src=seo-hub${lang === 'en' ? '' : `&lang=${lang}`}`, more, htmlLang: ui.htmlLang,
@@ -1789,6 +1791,7 @@ export function renderHubs(companies, { today = new Date(), compares = 0 } = {})
     crumbItems: [{ name: 'Stocks', path: '/stocks/' }],
     search: true,
     list: byName, all: companies, today: day, more: moreEn.slice(1),
+    weekResults: weekResultsHtml({ companies: byName, today: day, shortName, exists: () => true }),   // SEO row L
   }));
   for (const g of groups) {
     pages.push(hubPage({
@@ -2869,7 +2872,8 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
     const langLinks = [{ path: '/de/aktien/', hreflang: 'de', title: 'Auf Deutsch' }, { path: '/fr/stocks/', hreflang: 'fr', title: 'En français' }].filter((l) => hubs.some((h) => h.path === l.path));   // the footer's words
     const homes = [['de', '/de/'], ['fr', '/fr/']].filter(([, p]) => hubs.some((h) => h.path === p));
     const alternates = homes.length ? [{ hreflang: 'en', url: `${SITE}/` }, ...homes.map(([l, p]) => ({ hreflang: l, url: `${SITE}${p}` })), { hreflang: 'x-default', url: `${SITE}/` }] : [];
-    const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates, today: ctx.today });
+    const home = renderBlogHome({ posts: [...posts, ...others], shell, strip, results, exists: bexists, SITE, ORG, langLinks, alternates, today: ctx.today,
+      weekResults: weekResultsHtml({ companies: live, today: ctx.today, shortName, exists: bexists }) });   // SEO row L
     blogOut = { posts, home, redirects, replaced: (blog.posts || []).filter((p) => reportOf.has(String(p.ticker || '').trim().toUpperCase())).map((p) => p.slug) };
   }
   const report = {

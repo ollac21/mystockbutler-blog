@@ -104,6 +104,27 @@ const barHtml = (f) => `<div class="bar" id="bar" aria-hidden="true"><span>${esc
 const byline = (text) => `<p class="byline">By <a href="/about/">Olivier Lachance</a> · ${esc(text)}<a class="plain byline__how" href="/methodology/">How a report is made</a></p>`;
 
 // ---------------------------------------------------------------------------------------------------------------------------
+// RESULTS THIS WEEK ON THE BLOG HOME AND /stocks/ (SEO row L, owner 2026-11-07): up to eight English results pages of the next seven days
+// (today to today + 6), the largest by last quarter's revenue in US$ first (the calendar's own order), shown by date. A company whose
+// results page is not published is left out. Returns '' when no company reports. q: { companies, today, shortName, exists }.
+// ---------------------------------------------------------------------------------------------------------------------------
+export function weekResultsHtml(q, max = 8) {
+  const end = addDays(q.today, 6);
+  const rows = q.companies.filter((c) => iso(c.next_earnings) >= q.today && iso(c.next_earnings) <= end && c.pages?.earnings && q.exists(`/stocks/${c.slug}/earnings/`))
+    .map((c) => ({ c, name: q.shortName(c), r: resultsOf(c) }));
+  const order = (a, b) => {
+    const ua = a.r?.revN && signOf(a.r.unit) === 'US$', ub = b.r?.revN && signOf(b.r.unit) === 'US$';
+    if (ua !== ub) return ua ? -1 : 1;
+    if (ua && a.r.revN !== b.r.revN) return b.r.revN - a.r.revN;
+    return a.name.localeCompare(b.name);
+  };
+  const picks = rows.sort(order).slice(0, max).sort((a, b) => iso(a.c.next_earnings).localeCompare(iso(b.c.next_earnings)) || order(a, b));
+  if (!picks.length) return '';
+  const chips = picks.map((x) => `<a href="/stocks/${x.c.slug}/earnings/">${esc(x.name)} earnings<small>${MON3[dt(iso(x.c.next_earnings)).getUTCMonth()]} ${dt(iso(x.c.next_earnings)).getUTCDate()}</small></a>`).join('');
+  return `<section class="sec links" aria-labelledby="wk-h"><h2 id="wk-h">Results this week</h2><div class="links__grid"><div><div class="chips">${chips}</div></div></div></section>`;
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
 // THE WEEK'S RESULTS CALENDAR. q: { companies, today, shortName, exists }. The week: Monday to Sunday of the build day (Saturday and
 // Sunday move to the next week); a day with no company is left out. The days still to come lead (at most 3 in the answer); the days
 // already past are 'earlier this week'. Order inside a day: the last quarter's revenue in US$, largest first, then the others by name.

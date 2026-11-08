@@ -30,7 +30,7 @@ export const WORDS = {
     ready: (n) => `${n} reports ready`, now: ' now', latest: 'Latest:', stripAria: 'Reports ready now', tapeAria: 'Companies with a report',
     ago: { now: 'just now', min: '{n} minutes ago', hour1: '1 hour ago', hour: '{n} hours ago' },
     results: 'Results this week', headerBtn: 'One report free', home: 'MyStockButler home',
-    byline: (by, date, exch) => [by, `Report of ${date}`, exch], how: 'How this report is made',
+    byline: (by, date, exch) => [by, `Report of ${date}`, exch], how: 'How this report is made', latestRes: 'Latest results →',
     free: 'New accounts get one company\'s ready report free. No card.',
     btnFree: (c) => (c.length > 14 ? 'Read the full report free' : `Read ${c}'s full report free`),
     btnOld: (c) => (c.length > 14 ? 'Read the full report' : `Read ${c}'s full report`),
@@ -142,7 +142,7 @@ export const WORDS = {
     ready: (n) => `${n} rapports prêts`, now: ' maintenant', latest: 'Dernier :', stripAria: 'Rapports prêts maintenant', tapeAria: 'Sociétés avec un rapport',
     ago: { now: 'à l’instant', min: 'il y a {n} min', hour1: 'il y a 1 h', hour: 'il y a {n} h' },
     results: '', headerBtn: 'Un rapport gratuit', home: 'Accueil MyStockButler',
-    byline: (by, date, exch) => [by, `Rapport du ${date}`, exch], how: 'Comment ce rapport est fait',
+    byline: (by, date, exch) => [by, `Rapport du ${date}`, exch], how: 'Comment ce rapport est fait', latestRes: 'Derniers résultats →',
     free: 'Les nouveaux comptes reçoivent gratuitement le rapport prêt d’une société. Sans carte.',
     btnFree: (c) => (c.length > 14 ? 'Lire le rapport complet gratuitement' : `Lire le rapport complet sur ${c}, gratuit`),
     btnOld: (c) => (c.length > 14 ? 'Lire le rapport complet' : `Lire le rapport complet sur ${c}`),
@@ -242,7 +242,7 @@ export const WORDS = {
     ready: (n) => `${n} Berichte bereit`, now: ' jetzt', latest: 'Neuester:', stripAria: 'Jetzt bereite Berichte', tapeAria: 'Unternehmen mit Bericht',   // "N reports ready", "now", "Latest:", "Reports ready now", "Companies with a report"
     ago: { now: 'gerade eben', min: 'vor {n} Min.', hour1: 'vor 1 Std.', hour: 'vor {n} Std.' },                                   // "just now", "N minutes ago", "1 hour ago", "N hours ago"
     results: '', headerBtn: 'Ein Bericht gratis', home: 'MyStockButler Startseite',                                               // "One report free", "MyStockButler home"
-    byline: (by, date, exch) => [by, `Bericht vom ${date}`, exch], how: 'So entsteht dieser Bericht',                              // "Report of …", "How this report is made"
+    byline: (by, date, exch) => [by, `Bericht vom ${date}`, exch], how: 'So entsteht dieser Bericht', latestRes: 'Letzte Quartalszahlen →',                              // "Report of …", "How this report is made"
     free: 'Neue Konten erhalten den fertigen Bericht eines Unternehmens gratis. Keine Karte.',                                    // "New accounts get one company's ready report free. No card."
     btnFree: (c) => (c.length > 14 ? 'Den vollen Bericht gratis lesen' : `Vollen ${c}-Bericht gratis lesen`),      // "Read (C's) full report free"
     btnOld: (c) => (c.length > 14 ? 'Den vollen Bericht lesen' : `Vollen ${c}-Bericht lesen`),                     // "Read (C's) full report"
@@ -342,7 +342,7 @@ export const WORDS = {
     ready: (n) => `${n} 份報告已備妥`, now: '', latest: '最新：', stripAria: '已備妥的報告', tapeAria: '有報告的公司',                 // "N reports ready", "Latest:", "Reports ready now", "Companies with a report"
     ago: { now: '剛剛', min: '{n} 分鐘前', hour1: '1 小時前', hour: '{n} 小時前' },                                                  // "just now", "N minutes ago", "1 hour ago", "N hours ago"
     results: '', headerBtn: '免費一份報告', home: 'MyStockButler 首頁',                                                              // "One report free", "MyStockButler home"
-    byline: (by, date, exch) => [by, `報告日期：${date}`, exch], how: '報告如何製作',                                                // "Report of …", "How this report is made"
+    byline: (by, date, exch) => [by, `報告日期：${date}`, exch], how: '報告如何製作', latestRes: '最新業績 →',                                                // "Report of …", "How this report is made"
     free: '新帳戶可免費閱讀一家公司已備妥的報告。無需信用卡。',                                                                         // "New accounts get one company's ready report free. No card."
     btnFree: (c) => `免費閱讀 ${c} 完整報告`, btnOld: (c) => `閱讀 ${c} 完整報告`,                                                    // "Read C's full report free", "Read C's full report"
     orFirst: '或先讀第一頁，無需帳戶 ▸',                                                                                               // "Or read the first page, no account"
@@ -1041,7 +1041,7 @@ export function renderPage(p) {
   const top = `<section class="top">
 ${p.crumbsHtml}
 <h1>@@H1@@</h1>
-<p class="byline">${byWho} · ${reportOf}${exch ? ` · <span class="nw">${ex}</span>` : ''}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a></p>
+<p class="byline">${byWho} · ${reportOf}${exch ? ` · <span class="nw">${ex}</span>` : ''}<a class="plain byline__how" href="/methodology/">${esc(W.how)}</a>${type === 'stock' && p.latestResults ? `<a class="plain byline__how" href="${esc(p.latestResults)}">${esc(W.latestRes)}</a>` : ''}</p>
 </section>`;
 
   // ---- the answer ----
@@ -2040,6 +2040,7 @@ ${feat ? `<a class="btn btn--mint btn--lg" id="closebtn" data-cta="close" href="
   return `<main class="page page--list" id="top">
 ${top}
 ${answer}
+${q.weekResults || ''}
 ${listSec}
 ${cta1}
 ${inside}
