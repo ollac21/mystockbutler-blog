@@ -18,6 +18,7 @@ import { CSS_PATH, GA_ID, SITE, STOCKS_CSS, TYPES, buildStockSite } from './stoc
 import { DIVCALC_CSS, DIVCALC_DATA } from './divcalc.mjs';
 import { aiScript, measuringScript } from './consent.mjs';
 import { nofollowAppLinks } from './appLinks.mjs';
+import { noSnippetFrame } from './layout.mjs';
 
 const FETCH_TIMEOUT_MS = 30000;
 const SLUG = /^[a-z0-9][a-z0-9-]*$/;
@@ -308,11 +309,11 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     if (existsSync(new URL(`../assets/page-${t}.css`, import.meta.url))) await writeFile(path.join(out, `stocks/assets/page-${t}.css`), pageCss + (await asset(`page-${t}.css`)));
   }
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
-  await writeFile(path.join(out, 'favicon.svg'), await asset('favicon.svg'));          // the site's icon: the MyStockButler "S" mark (every head links it)
+  await writeFile(path.join(out, 'favicon.svg'), await asset('favicon.svg'));          // the old icon, kept for links that still point at it (heads link the logo in public/)
   for (const p of [...pages, ...hubs, ...compared]) {
     const dir = path.join(out, p.path.slice(1));
     await mkdir(dir, { recursive: true });
-    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
+    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(noSnippetFrame(p.html)));
     for (const f of p.files || []) await writeFile(path.join(dir, f.name), f.content);   // B115: the page's own charts (SVG)
   }
   // B115 round 4: the blog's posts (each one company's full report), its home and the old addresses that point to a newer report
@@ -320,7 +321,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
     for (const p of [...blogOut.posts, blogOut.home, ...blogOut.redirects]) {
       const dir = path.join(out, p.path.slice(1));
       await mkdir(dir, { recursive: true });
-      await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(p.html));
+      await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(noSnippetFrame(p.html)));
     }
     for (const p of blogOut.posts) console.log(`Blog post ${p.path}: ${p.chapters} chapters, ${p.subs} sub-sections, ${p.words} words of chapter text, 'today' ${p.today} in the report's own text; page file of the same run: ${p.sameRun ? 'yes' : 'NO (its numbers left out)'}`);
     for (const r of blogOut.redirects) console.log(`Blog: ${r.path} -> ${r.to}`);

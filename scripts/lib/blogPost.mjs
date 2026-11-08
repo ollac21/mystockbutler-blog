@@ -358,8 +358,13 @@ ${browse ? `<div><h3>Browse</h3><div class="chips">${browse}</div></div>` : ''}
 </main>
 <div class="bar" id="bar" aria-hidden="true"><span>A report like this on any company${free ? `<small>${esc(BAR_S)}</small>` : ''}</span><a class="btn btn--sm" data-cta="sticky" rel="nofollow" tabindex="-1" href="${esc(cta)}">${free ? 'Start free' : 'Start'}</a></div>`;
   const title = 'MyStockButler blog: full stock analysis reports';
-  const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}` : names.join('');
-  const description = `Full stock analysis reports, every chapter open, written from company filings with sources cited${list ? `: ${list}` : ''}.`;
+  // the latest reports' names, as many as fit 155 characters; a name's own closing dot ('Nebius Group N.V.') ends the sentence (owner 2026-11-08: it printed '..')
+  const shown = names.map(String);
+  const descLead = 'Free full stock reports written from company filings, every number with its source';
+  const listOf = (n) => (n.length > 1 ? `${n.slice(0, -1).join(', ')} and ${n[n.length - 1]}` : n.join(''));
+  while (shown.length > 1 && `${descLead}: ${listOf(shown)}.`.length > 155) shown.pop();
+  const list = listOf(shown);
+  const description = `${descLead}${list ? `: ${list}` : ''}`.replace(/\.?$/, '.');
   const url = `${q.SITE}/`;
   const jsonld = { '@context': 'https://schema.org', '@graph': [
     q.ORG,

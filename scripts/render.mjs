@@ -15,7 +15,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import { arrangeArticleForReading, blogHook } from './lib/article.mjs';
-import { APP, AUTHOR, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, siteFooter, siteHeader } from './lib/layout.mjs';
+import { APP, AUTHOR, FONT_LINKS, SHARE_IMAGE, STYLE, esc, imageTags, noSnippetFrame, siteFooter, siteHeader } from './lib/layout.mjs';
 import { nofollowAppLinks } from './lib/appLinks.mjs';
 import { renderResearchHub } from './lib/hubHtml.mjs';
 import { TOC_MIN_ENTRIES, addHeadingIds, newIdRegistry, tocPanelHtml } from './lib/toc.mjs';
@@ -762,7 +762,7 @@ async function main() {
         warn(`post cover: /${post.slug}/ shows no cover (${err.message})`);
       }
     } else if (process.env.STOCK_PICTURES !== 'off') covers.missing.push({ slug: post.slug, why: 'no cover_image' });
-    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(renderPost(post, markdown, hub, articleFile, measured)));
+    await writeFile(path.join(dir, 'index.html'), nofollowAppLinks(noSnippetFrame(renderPost(post, markdown, hub, articleFile, measured))));
     console.log(`wrote /${post.slug}/ (${markdown.length} chars of body${articleFile ? `; the app's article file, ${articleFile.length} chars` : ''})`);
   }
   // The stock pages (B112): drawn from the per-company page files; a page that fails the gate is held back.
@@ -770,7 +770,7 @@ async function main() {
   const stocks = await writeStockSite(OUT, await readStockData(ROOT), { reportDir: path.join(ROOT, 'build-report'), compares: await readCompareData(ROOT), extraImages, covers, blog });
   if (blog && !stocks.blog) throw new Error('the blog\'s full reports were not drawn; refusing to publish without the posts they replace');
   // the blog home: the full reports' list (stocks.blog.home, written by the stock build), else today's home
-  if (!stocks.blog) await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(renderIndex(entries, stocks.llmsHubs || [])));     // it links the language hubs
+  if (!stocks.blog) await writeFile(path.join(OUT, 'index.html'), nofollowAppLinks(noSnippetFrame(renderIndex(entries, stocks.llmsHubs || []))));     // it links the language hubs
   const postsXml = stocks.blog ? renderBlogSitemap(stocks.blog.posts, entries) : renderSitemap(entries);
   await writeFile(path.join(OUT, 'sitemap-posts.xml'), postsXml);
   const names = ['sitemap-posts.xml', ...Object.keys(stocks.sitemaps), ...stocks.imageSitemaps];

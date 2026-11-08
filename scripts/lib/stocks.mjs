@@ -2042,9 +2042,28 @@ export function compareTitle(pair) {
   return forms.find((t) => t.length <= COMPARE_TITLE_MAX) || forms[forms.length - 1];
 }
 
+// The description leads with the page's own figures (owner 2026-11-08: Google's text under the result 'sucks'): 'NVIDIA vs Meta:
+// revenue growth 65.5% vs 22.2%, operating margin 60.4% vs 41.4%, …'. Only rows whose two values are a bare percent or multiple
+// (shape: our file's own formatting, no unit, no period word needed beside them), in the table's order, as many as fit 155 characters;
+// a pair with none keeps the list of what the page compares.
+const BARE_FIGURE = /^-?\d[\d,]*(?:\.\d+)?(?:%|x)$/;
+const FIGURE_WORDS = { ...DESC_WORDS, 'P/E, next 12 months': 'forward P/E', 'Free cash flow yield': 'free cash flow yield' };
 function compareDescription(pair) {
+  const head = `${pair.a.name} vs ${pair.b.name}`;
+  const tail = '. Each figure dated, from the filings.';
+  const seen = new Set();
+  const figures = [];
+  for (const r of pair.rows) {
+    const w = FIGURE_WORDS[r.label];
+    if (!w || seen.has(w) || r.a.unit || r.b.unit || !BARE_FIGURE.test(r.a.value) || !BARE_FIGURE.test(r.b.value)) continue;
+    const next = [...figures, `${w} ${r.a.value} vs ${r.b.value}`];
+    if (`${head}: ${next.join(', ')}${tail}`.length > 155) break;
+    seen.add(w);
+    figures.push(next[next.length - 1]);
+  }
+  if (figures.length) return `${head}: ${figures.join(', ')}${tail}`;
   const words = [...new Set(pair.rows.map((r) => DESC_WORDS[r.label]).filter(Boolean))];
-  const make = (w) => `${pair.a.name} vs ${pair.b.name}: ${w.join(', ')}, side by side from our research memos.`;
+  const make = (w) => `${head}: ${w.join(', ')}, side by side from our research memos.`;
   while (words.length > 1 && make(words).length > 155) words.pop();
   return make(words);
 }
@@ -2306,12 +2325,14 @@ export function gateCompare(built, ctx) {
     if (!s.quote) fails.push(`no summary paragraph for ${s.name}`);
     else if (!visible.includes(textOf(mdBlock(s.quote)))) fails.push(`${s.name}'s paragraph is not in the static HTML`);
   }
-  // Existence: the only number of the title and the description is the memo's year (a digit inside a word, 'CET1', or
-  // inside a company's name, '3M', is not a number).
+  // Existence: the only number of the title is the memo's year; the description's numbers are the year or a value of the page's own
+  // table (2026-11-08: it leads with the figures) (a digit inside a word, 'CET1', or inside a company's name, '3M', is not a number).
   const year = isoDay(pair.memo_date).slice(0, 4);
+  const NUM = /(?<![\p{L}\d])\d[\d,.]*\d(?![\p{L}])|(?<![\p{L}\d])\d(?![\p{L}\d])/gu;
+  const tableNumbers = new Set(pair.rows.flatMap((r) => `${r.a.value} ${r.b.value}`.match(NUM) || []));
   for (const [name, value] of [['title', titleText], ['description', descText]]) {
     const bare = [pair.a.name, pair.b.name].reduce((t, n) => t.split(n).join(' '), value);
-    for (const n of bare.match(/(?<![\p{L}\d])\d[\d,.]*\d(?![\p{L}])|(?<![\p{L}\d])\d(?![\p{L}\d])/gu) || []) if (n !== year) fails.push(`${name} prints ${n}`);
+    for (const n of bare.match(NUM) || []) if (n !== year && !(name === 'description' && tableNumbers.has(n))) fails.push(`${name} prints ${n}`);
     const bad = BANNED.exec(value);
     if (bad) fails.push(`${name} uses "${bad[1]}"`);
   }

@@ -87,8 +87,11 @@ export function siteFooter() {
 // The stylesheet loads without blocking the first paint (preload, then swap in), so the font never
 // delays the article; system fonts show until it arrives.
 const FONT_HREF = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;800;900&display=swap';   // B115: the mockups' 450 and 800 too
-// the site's icon (the MyStockButler "S" mark, /favicon.svg, written by every build) leads every page's head links
-export const FONT_LINKS = `<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+// the site's icon leads every page's head links: the MyStockButler logo (public/: favicon.ico, icon-192.png, apple-touch-icon.png).
+// Google's results show a raster icon at a multiple of 48 px; the old font-drawn /favicon.svg showed as a grey globe (owner 2026-11-08)
+export const FONT_LINKS = `<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="${FONT_HREF}" onload="this.onload=null;this.rel='stylesheet'">
@@ -364,3 +367,11 @@ html.hub-open .dock, html.toc-open .dock { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) { .hub, .toc, .slim a, .toc-arrow { transition: none; } }
 @media (max-width: 1023px) { body.post .site-footer { margin-bottom: 0; } }
 `;
+
+// Google quotes page text under a result when it prefers it to the description; it printed our menu ("SMyStockButler All stocks
+// Blog Get your first report free…", owner 2026-11-08). The page's frame — the site header, the path line, the byline, the footer
+// and the phone bar — is marked data-nosnippet on every page, so a quote comes from the description or the page's own words.
+const FRAME = /<(header class="(?:site|site-header)"|nav class="crumbs?"|p class="byline"|div class="byline"|footer|div class="mbar(?: [^"]*)?")(?![^>]*data-nosnippet)/g;
+export function noSnippetFrame(html) {
+  return String(html).replace(FRAME, '<$1 data-nosnippet');
+}
