@@ -12,7 +12,7 @@ cta_end_text: "If you want the full case on one company, written from its filing
 
 # Bloomberg Terminal alternatives for individual investors
 
-If you buy a few companies a year, you don't need a Terminal. You need the reading: what the company sells, how much cash it really produces, and whether management did what it said. The Terminal is built for professionals who trade all day, with live prices on every market, news, chat and data on bonds and derivatives. Bloomberg does not publish its price; third-party estimates for 2025 and 2026 range from about $27,000 to $32,000 a year per seat.
+If you buy a few companies a year, you don't need a Terminal. You need the reading: what the company sells, how much cash it really produces, and whether management did what it said. The Terminal is built for professionals who trade all day, with live prices on every market, news, chat and data on bonds and derivatives. Bloomberg does not publish its price; third-party estimates for 2025 and 2026 range from about $27,000 to $32,000 a year per seat. The two outside estimates, and why they differ, are in [how much a Bloomberg Terminal costs](/alternatives/bloomberg-terminal-cost/).
 
 Free tools such as Stock Analysis and Yahoo Finance give you the numbers. MyStockButler does the reading: one long report per company, written from its filings, every number traced to its source. Your first S&P 500 report is free: type a ticker below and sign up, no card.
 
