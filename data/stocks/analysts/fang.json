@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 46,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 23.24659,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 19351452136
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 21.40088,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 18447248467
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 178.96,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fang",
+ "source": "FMP",
+ "symbol": "FANG",
+ "target": {
+  "average": 235.87,
+  "currency": "USD",
+  "high": 259,
+  "low": 206,
+  "median": 240
+ },
+ "ticker": "FANG"
+}

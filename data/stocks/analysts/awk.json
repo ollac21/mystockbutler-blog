@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 15,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.07228,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 5431647063
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 6.58883,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 5860118081
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 150.29,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "awk",
+ "source": "FMP",
+ "symbol": "AWK",
+ "target": {
+  "average": 142,
+  "currency": "USD",
+  "high": 153,
+  "low": 127,
+  "median": 144
+ },
+ "ticker": "AWK"
+}

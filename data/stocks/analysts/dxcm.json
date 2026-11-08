@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 43,
+  "hold": 8,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 2.70334,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 5228668868
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 3.14302,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 5769942678
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 79.41,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dxcm",
+ "source": "FMP",
+ "symbol": "DXCM",
+ "target": {
+  "average": 97.85,
+  "currency": "USD",
+  "high": 115,
+  "low": 86,
+  "median": 96
+ },
+ "ticker": "DXCM"
+}

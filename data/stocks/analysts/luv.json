@@ -1,0 +1,42 @@
+{
+ "analysts": 45,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 22,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 2.7556,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 33458532180
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 4.02092,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 35854982082
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 44.45,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "luv",
+ "source": "FMP",
+ "symbol": "LUV",
+ "target": {
+  "average": 51.56,
+  "currency": "USD",
+  "high": 65,
+  "low": 40,
+  "median": 53
+ },
+ "ticker": "LUV"
+}

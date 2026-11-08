@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 21,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 3.42953,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 21,
+   "revenue_avg": 15879641449
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 4.04716,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 21,
+   "revenue_avg": 16570352975
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 110.06,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "el",
+ "source": "FMP",
+ "symbol": "EL",
+ "target": {
+  "average": 109.38,
+  "currency": "USD",
+  "high": 129,
+  "low": 86,
+  "median": 109.5
+ },
+ "ticker": "EL"
+}

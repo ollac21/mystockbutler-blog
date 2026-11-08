@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 24,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 8.67568,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 12291105119
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 9.45855,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 12548234700
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 178.08,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hsy",
+ "source": "FMP",
+ "symbol": "HSY",
+ "target": {
+  "average": 188.17,
+  "currency": "USD",
+  "high": 225,
+  "low": 170,
+  "median": 181.5
+ },
+ "ticker": "HSY"
+}

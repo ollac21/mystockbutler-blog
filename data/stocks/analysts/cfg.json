@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 7,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.31392,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 9174458541
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 6.48445,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 9980174987
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 63.24,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cfg",
+ "source": "FMP",
+ "symbol": "CFG",
+ "target": {
+  "average": 77.42,
+  "currency": "USD",
+  "high": 90,
+  "low": 65,
+  "median": 77
+ },
+ "ticker": "CFG"
+}

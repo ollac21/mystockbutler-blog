@@ -1,0 +1,42 @@
+{
+ "analysts": 17,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 2,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 9.46106,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 3419338978
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 10.3352,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 3616923136
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 399.81,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wst",
+ "source": "FMP",
+ "symbol": "WST",
+ "target": {
+  "average": 427.43,
+  "currency": "USD",
+  "high": 475,
+  "low": 390,
+  "median": 425
+ },
+ "ticker": "WST"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 51,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 25,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 1.95602,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 21,
+   "revenue_avg": 16065657136
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 2.05796,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 21,
+   "revenue_avg": 16690017591
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 36.35,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tsco",
+ "source": "FMP",
+ "symbol": "TSCO",
+ "target": {
+  "average": 36.63,
+  "currency": "USD",
+  "high": 41,
+  "low": 31,
+  "median": 36
+ },
+ "ticker": "TSCO"
+}

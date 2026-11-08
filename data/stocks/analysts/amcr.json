@@ -1,0 +1,42 @@
+{
+ "analysts": 14,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 8,
+  "hold": 5,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 4.3576,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 23967795950
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 4.55957,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 24202283122
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 44.87,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "amcr",
+ "source": "FMP",
+ "symbol": "AMCR",
+ "target": {
+  "average": 48.38,
+  "currency": "USD",
+  "high": 56,
+  "low": 43,
+  "median": 47
+ },
+ "ticker": "AMCR"
+}

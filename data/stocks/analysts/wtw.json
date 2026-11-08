@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 19.83548,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 10446425706
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 22.90521,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 11007612328
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 328.86,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wtw",
+ "source": "FMP",
+ "symbol": "WTW",
+ "target": {
+  "average": 358.11,
+  "currency": "USD",
+  "high": 405,
+  "low": 310,
+  "median": 364
+ },
+ "ticker": "WTW"
+}

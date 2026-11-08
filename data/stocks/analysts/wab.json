@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 10.9774,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 12498164521
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 12.58064,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 13359946415
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 283.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wab",
+ "source": "FMP",
+ "symbol": "WAB",
+ "target": {
+  "average": 341.25,
+  "currency": "USD",
+  "high": 355,
+  "low": 330,
+  "median": 340
+ },
+ "ticker": "WAB"
+}

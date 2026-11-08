@@ -1,0 +1,42 @@
+{
+ "analysts": 63,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 38,
+  "hold": 21,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 13.64232,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 12357058291
+  },
+  {
+   "eps_analysts": 22,
+   "eps_avg": 16.11247,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 22,
+   "revenue_avg": 12998324576
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 97.4,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gpn",
+ "source": "FMP",
+ "symbol": "GPN",
+ "target": {
+  "average": 105.93,
+  "currency": "USD",
+  "high": 137,
+  "low": 83,
+  "median": 105
+ },
+ "ticker": "GPN"
+}

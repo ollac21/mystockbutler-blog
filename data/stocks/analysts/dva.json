@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 14.70105,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 14190491139
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 16.65333,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 14663964793
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 191.35,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "dva",
+ "source": "FMP",
+ "symbol": "DVA",
+ "target": {
+  "average": 238.5,
+  "currency": "USD",
+  "high": 287,
+  "low": 215,
+  "median": 222
+ },
+ "ticker": "DVA"
+}

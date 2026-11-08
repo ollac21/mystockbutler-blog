@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 54.50785,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 15489374431
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 60.69392,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 14098431063
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 411.11,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "eg",
+ "source": "FMP",
+ "symbol": "EG",
+ "target": {
+  "average": 411,
+  "currency": "USD",
+  "high": 484,
+  "low": 360,
+  "median": 396.5
+ },
+ "ticker": "EG"
+}

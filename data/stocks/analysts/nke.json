@@ -1,0 +1,42 @@
+{
+ "analysts": 73,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 30,
+  "sell": 9,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 30,
+   "eps_avg": 1.26871,
+   "fiscal_year_end": "2027-05-31",
+   "revenue_analysts": 29,
+   "revenue_avg": 42843911938
+  },
+  {
+   "eps_analysts": 31,
+   "eps_avg": 1.50114,
+   "fiscal_year_end": "2028-05-31",
+   "revenue_analysts": 31,
+   "revenue_avg": 43015257509
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 38.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nke",
+ "source": "FMP",
+ "symbol": "NKE",
+ "target": {
+  "average": 37.15,
+  "currency": "USD",
+  "high": 60,
+  "low": 19,
+  "median": 35
+ },
+ "ticker": "NKE"
+}

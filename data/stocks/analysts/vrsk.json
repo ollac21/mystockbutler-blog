@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 14,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 7.70704,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 3218637542
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.69625,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 3435745826
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 204.59,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "vrsk",
+ "source": "FMP",
+ "symbol": "VRSK",
+ "target": {
+  "average": 222.86,
+  "currency": "USD",
+  "high": 247,
+  "low": 185,
+  "median": 225
+ },
+ "ticker": "VRSK"
+}

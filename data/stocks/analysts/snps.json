@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 2,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 18.82773,
+   "fiscal_year_end": "2027-10-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 11048916646
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 23.25944,
+   "fiscal_year_end": "2028-10-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 12603143186
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 450.46,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "snps",
+ "source": "FMP",
+ "symbol": "SNPS",
+ "target": {
+  "average": 575.93,
+  "currency": "USD",
+  "high": 700,
+  "low": 420,
+  "median": 572.5
+ },
+ "ticker": "SNPS"
+}

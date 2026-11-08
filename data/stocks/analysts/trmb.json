@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 3.67331,
+   "fiscal_year_end": "2027-01-02",
+   "revenue_analysts": 9,
+   "revenue_avg": 3927597783
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 4.05505,
+   "fiscal_year_end": "2028-01-02",
+   "revenue_analysts": 9,
+   "revenue_avg": 4179494475
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 54.11,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "trmb",
+ "source": "FMP",
+ "symbol": "TRMB",
+ "target": {
+  "average": 72.6,
+  "currency": "USD",
+  "high": 80,
+  "low": 61,
+  "median": 73
+ },
+ "ticker": "TRMB"
+}

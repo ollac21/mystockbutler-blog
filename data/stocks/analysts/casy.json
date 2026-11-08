@@ -1,0 +1,42 @@
+{
+ "analysts": 26,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 21.3763,
+   "fiscal_year_end": "2027-04-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 20987912664
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 23.49859,
+   "fiscal_year_end": "2028-04-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 21010457190
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 687.64,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "casy",
+ "source": "FMP",
+ "symbol": "CASY",
+ "target": {
+  "average": 817.5,
+  "currency": "USD",
+  "high": 1069,
+  "low": 687,
+  "median": 777.5
+ },
+ "ticker": "CASY"
+}

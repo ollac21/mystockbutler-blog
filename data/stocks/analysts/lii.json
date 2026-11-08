@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 20,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 21.4954,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 5500165514
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 23.14206,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 5789496003
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 341.97,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "lii",
+ "source": "FMP",
+ "symbol": "LII",
+ "target": {
+  "average": 375.5,
+  "currency": "USD",
+  "high": 444,
+  "low": 350,
+  "median": 368.5
+ },
+ "ticker": "LII"
+}

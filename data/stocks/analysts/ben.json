@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 6,
+  "hold": 16,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 3.16237,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 3,
+   "revenue_avg": 7720607242
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 3.58795,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 3,
+   "revenue_avg": 8337321243
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 33.73,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ben",
+ "source": "FMP",
+ "symbol": "BEN",
+ "target": {
+  "average": 36,
+  "currency": "USD",
+  "high": 40,
+  "low": 34,
+  "median": 35
+ },
+ "ticker": "BEN"
+}

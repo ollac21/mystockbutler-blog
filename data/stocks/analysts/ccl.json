@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 17,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 2.25813,
+   "fiscal_year_end": "2026-11-30",
+   "revenue_analysts": 19,
+   "revenue_avg": 27715397712
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 2.57847,
+   "fiscal_year_end": "2027-11-30",
+   "revenue_analysts": 20,
+   "revenue_avg": 28607272917
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 29.58,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ccl",
+ "source": "FMP",
+ "symbol": "CCL",
+ "target": {
+  "average": 33.16,
+  "currency": "USD",
+  "high": 42,
+  "low": 28.7,
+  "median": 32.75
+ },
+ "ticker": "CCL"
+}

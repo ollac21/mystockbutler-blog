@@ -1,0 +1,42 @@
+{
+ "analysts": 39,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 20,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 48.63697,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 11765343055
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 55.60714,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 17,
+   "revenue_avg": 12612319013
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1197.01,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "tdg",
+ "source": "FMP",
+ "symbol": "TDG",
+ "target": {
+  "average": 1461.22,
+  "currency": "USD",
+  "high": 1745,
+  "low": 1200,
+  "median": 1405
+ },
+ "ticker": "TDG"
+}

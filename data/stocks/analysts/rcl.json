@@ -1,0 +1,42 @@
+{
+ "analysts": 54,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 19,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 17.87953,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 19549206545
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 20.36035,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 20985103208
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 327.16,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rcl",
+ "source": "FMP",
+ "symbol": "RCL",
+ "target": {
+  "average": 346.5,
+  "currency": "USD",
+  "high": 415,
+  "low": 298,
+  "median": 358
+ },
+ "ticker": "RCL"
+}

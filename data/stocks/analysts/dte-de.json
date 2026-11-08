@@ -1,0 +1,34 @@
+{
+ "analysts": 4,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 3,
+  "hold": 1,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 2.27301,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 123316723668
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 2.58916,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 128458932972
+  }
+ ],
+ "estimates_currency": "EUR",
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dte-de",
+ "source": "FMP",
+ "symbol": "DTE.DE",
+ "ticker": "DTE.DE"
+}

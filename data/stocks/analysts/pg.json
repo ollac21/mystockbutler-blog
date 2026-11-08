@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 23,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 6.97587,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 89961605051
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 7.40472,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 92753703939
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 165.4,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "pg",
+ "source": "FMP",
+ "symbol": "PG",
+ "target": {
+  "average": 166.78,
+  "currency": "USD",
+  "high": 190,
+  "low": 149,
+  "median": 166
+ },
+ "ticker": "PG"
+}

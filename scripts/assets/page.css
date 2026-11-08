@@ -551,3 +551,21 @@ footer.foot p{font:400 12.5px/1.6 var(--font);color:var(--muted);margin:12px 0 0
 @media (min-width:1024px) and (max-width:1199px){html[lang="fr"] .answer__pair .answer__n{font-size:30px}}
 @media (max-width:639px){html[lang^="zh"] .ans3 .answer__pair .answer__n{font-size:32px}html[lang^="zh"] .answer:not(.ans3) .answer__pair .answer__n{font-size:25px}}
 @media (min-width:1024px){html[lang^="zh"] .answer:not(.ans3) .answer__pair .answer__n{font-size:43px}}
+
+/* ---------- SEO row 1: the analysts' view (FMP's data; analysts.mjs) ---------- */
+.an__lead{font:450 17px/1.5 var(--font);color:var(--body);max-width:62ch}
+.an__bar{display:flex;height:16px;margin-top:18px;border-radius:8px;overflow:hidden;background:var(--rule)}
+.an__bar i{display:block;height:100%;min-width:0}
+.an__buy{background:var(--primary)} .an__hold{background:#AEB8B1} .an__sell{background:var(--bear)}
+.an__key{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:10px;font:450 14px/1.3 var(--font);color:var(--muted)}
+.an__k{display:flex;align-items:center;gap:7px}
+.an__k::before{content:"";flex:none;width:10px;height:10px;border-radius:9999px;background:var(--c)}
+.an__k b{font-weight:750;color:var(--ink);font-variant-numeric:tabular-nums}
+.an__k--buy{--c:var(--primary)} .an__k--hold{--c:#AEB8B1} .an__k--sell{--c:var(--bear)}
+.an__note{margin-top:10px;font:450 14.5px/1.45 var(--font);color:var(--muted)}
+.an__target{margin-top:20px;font:450 16.5px/1.5 var(--font);color:var(--body);max-width:62ch}
+.an__eps{margin-top:6px;max-width:62ch}
+.an__eps li{padding:8px 0;border-top:1px solid var(--rule);font:550 16px/1.4 var(--font);color:var(--ink);font-variant-numeric:tabular-nums}
+.an__eps li:last-child{border-bottom:1px solid var(--rule)}
+.an__src{margin-top:18px}
+.an__note{color:var(--body);font-weight:550}

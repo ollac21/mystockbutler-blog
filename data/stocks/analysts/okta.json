@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 39,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 26,
+   "eps_avg": 3.92859,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 32,
+   "revenue_avg": 3223293131
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 4.34466,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 31,
+   "revenue_avg": 3543803022
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 168.69,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "okta",
+ "source": "FMP",
+ "symbol": "OKTA",
+ "target": {
+  "average": 201.76,
+  "currency": "USD",
+  "high": 245,
+  "low": 60,
+  "median": 215
+ },
+ "ticker": "OKTA"
+}

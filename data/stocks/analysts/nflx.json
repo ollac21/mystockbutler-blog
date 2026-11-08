@@ -1,0 +1,42 @@
+{
+ "analysts": 100,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 62,
+  "hold": 30,
+  "sell": 8,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 29,
+   "eps_avg": 3.5839,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 32,
+   "revenue_avg": 51140006819
+  },
+  {
+   "eps_analysts": 34,
+   "eps_avg": 3.75945,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 35,
+   "revenue_avg": 56582237740
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 63.41,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nflx",
+ "source": "FMP",
+ "symbol": "NFLX",
+ "target": {
+  "average": 86.21,
+  "currency": "USD",
+  "high": 141,
+  "low": 57,
+  "median": 84.5
+ },
+ "ticker": "NFLX"
+}

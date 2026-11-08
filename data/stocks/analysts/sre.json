@@ -1,0 +1,42 @@
+{
+ "analysts": 26,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 5.13365,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 13568672727
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 5.53016,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 13356606030
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 78.17,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "sre",
+ "source": "FMP",
+ "symbol": "SRE",
+ "target": {
+  "average": 95.06,
+  "currency": "USD",
+  "high": 108,
+  "low": 83,
+  "median": 97
+ },
+ "ticker": "SRE"
+}

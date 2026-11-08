@@ -1,0 +1,42 @@
+{
+ "analysts": 89,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 64,
+  "hold": 23,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 30,
+   "eps_avg": 4.18463,
+   "fiscal_year_end": "2027-07-31",
+   "revenue_analysts": 40,
+   "revenue_avg": 14166463808
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 4.85705,
+   "fiscal_year_end": "2028-07-31",
+   "revenue_analysts": 36,
+   "revenue_avg": 16191152526
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 313.84,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "panw",
+ "source": "FMP",
+ "symbol": "PANW",
+ "target": {
+  "average": 400.05,
+  "currency": "USD",
+  "high": 525,
+  "low": 290,
+  "median": 415
+ },
+ "ticker": "PANW"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 45,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 32,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 21,
+   "eps_avg": 169.69616,
+   "fiscal_year_end": "2027-08-29",
+   "revenue_analysts": 19,
+   "revenue_avg": 21790478986
+  },
+  {
+   "eps_analysts": 20,
+   "eps_avg": 191.27971,
+   "fiscal_year_end": "2028-08-29",
+   "revenue_analysts": 18,
+   "revenue_avg": 23325519131
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 3216.35,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "azo",
+ "source": "FMP",
+ "symbol": "AZO",
+ "target": {
+  "average": 3600.25,
+  "currency": "USD",
+  "high": 4230,
+  "low": 3000,
+  "median": 3552.5
+ },
+ "ticker": "AZO"
+}

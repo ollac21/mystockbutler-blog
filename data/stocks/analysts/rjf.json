@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 11,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 14.32761,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 8,
+   "revenue_avg": 17607249885
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 16.7526,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 7,
+   "revenue_avg": 19093684995
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 162.81,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "rjf",
+ "source": "FMP",
+ "symbol": "RJF",
+ "target": {
+  "average": 170,
+  "currency": "USD",
+  "high": 179,
+  "low": 164,
+  "median": 168.5
+ },
+ "ticker": "RJF"
+}

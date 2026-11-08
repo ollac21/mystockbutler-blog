@@ -1,0 +1,42 @@
+{
+ "analysts": 57,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 40,
+  "hold": 12,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 11.24516,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 23,
+   "revenue_avg": 11930597210
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 12.47933,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 13348806237
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 452.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "isrg",
+ "source": "FMP",
+ "symbol": "ISRG",
+ "target": {
+  "average": 485.44,
+  "currency": "USD",
+  "high": 558,
+  "low": 357.44,
+  "median": 500
+ },
+ "ticker": "ISRG"
+}

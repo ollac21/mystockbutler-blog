@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 25,
+  "sell": 1,
+  "strong_buy": 2,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 6.66733,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 4490222842
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 6.73088,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 5218134442
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 83.09,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "akam",
+ "source": "FMP",
+ "symbol": "AKAM",
+ "target": {
+  "average": 151.38,
+  "currency": "USD",
+  "high": 225,
+  "low": 85,
+  "median": 150
+ },
+ "ticker": "AKAM"
+}

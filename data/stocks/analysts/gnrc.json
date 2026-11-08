@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 11,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 9.83349,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 4930853225
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 13.97077,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 6889581472
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 176.78,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gnrc",
+ "source": "FMP",
+ "symbol": "GNRC",
+ "target": {
+  "average": 301.93,
+  "currency": "USD",
+  "high": 375,
+  "low": 250,
+  "median": 288
+ },
+ "ticker": "GNRC"
+}

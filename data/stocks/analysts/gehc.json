@@ -1,0 +1,42 @@
+{
+ "analysts": 20,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.01719,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 21866965508
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.51852,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 22936405450
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 82.38,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gehc",
+ "source": "FMP",
+ "symbol": "GEHC",
+ "target": {
+  "average": 81.14,
+  "currency": "USD",
+  "high": 95,
+  "low": 67,
+  "median": 80
+ },
+ "ticker": "GEHC"
+}

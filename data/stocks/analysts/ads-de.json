@@ -1,0 +1,34 @@
+{
+ "analysts": 10,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 3,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 9.53883,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 28,
+   "revenue_avg": 27109719842
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 11.631,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 28,
+   "revenue_avg": 29158622764
+  }
+ ],
+ "estimates_currency": "EUR",
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ads-de",
+ "source": "FMP",
+ "symbol": "ADS.DE",
+ "ticker": "ADS.DE"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 2.95526,
+   "fiscal_year_end": "2027-04-03",
+   "revenue_analysts": 7,
+   "revenue_avg": 5491151294
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 3.32416,
+   "fiscal_year_end": "2028-04-03",
+   "revenue_analysts": 7,
+   "revenue_avg": 5893463930
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 29.79,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gen",
+ "source": "FMP",
+ "symbol": "GEN",
+ "target": {
+  "average": 28.33,
+  "currency": "USD",
+  "high": 34,
+  "low": 24,
+  "median": 27
+ },
+ "ticker": "GEN"
+}

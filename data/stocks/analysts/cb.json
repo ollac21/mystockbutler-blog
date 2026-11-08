@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 19,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 29.21412,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 57266184350
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 29.59212,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 59754067575
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 365.02,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cb",
+ "source": "FMP",
+ "symbol": "CB",
+ "target": {
+  "average": 355.91,
+  "currency": "USD",
+  "high": 387,
+  "low": 301,
+  "median": 359
+ },
+ "ticker": "CB"
+}

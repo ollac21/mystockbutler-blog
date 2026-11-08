@@ -1,0 +1,42 @@
+{
+ "analysts": 79,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 58,
+  "hold": 16,
+  "sell": 3,
+  "strong_buy": 2,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 33,
+   "eps_avg": 9.29062,
+   "fiscal_year_end": "2027-01-25",
+   "revenue_analysts": 41,
+   "revenue_avg": 409929461412
+  },
+  {
+   "eps_analysts": 32,
+   "eps_avg": 15.80769,
+   "fiscal_year_end": "2028-01-25",
+   "revenue_analysts": 42,
+   "revenue_avg": 693667100873
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 186.64,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nvda",
+ "source": "FMP",
+ "symbol": "NVDA",
+ "target": {
+  "average": 339.17,
+  "currency": "USD",
+  "high": 515,
+  "low": 210,
+  "median": 325
+ },
+ "ticker": "NVDA"
+}

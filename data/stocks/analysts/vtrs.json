@@ -1,0 +1,42 @@
+{
+ "analysts": 13,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 5,
+  "hold": 7,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 2.51346,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 14778724809
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 2.7095,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 15247961010
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 19.91,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "vtrs",
+ "source": "FMP",
+ "symbol": "VTRS",
+ "target": {
+  "average": 21.13,
+  "currency": "USD",
+  "high": 26,
+  "low": 14,
+  "median": 21
+ },
+ "ticker": "VTRS"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 17,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 9,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 9.18836,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 2,
+   "revenue_avg": 10600907200
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 9.16806,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 10955555900
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 185.48,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "cinf",
+ "source": "FMP",
+ "symbol": "CINF",
+ "target": {
+  "average": 198,
+  "currency": "USD",
+  "high": 200,
+  "low": 197,
+  "median": 197
+ },
+ "ticker": "CINF"
+}

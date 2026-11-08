@@ -1,0 +1,42 @@
+{
+ "analysts": 26,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 2.05,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 9,
+   "revenue_avg": 1270177429
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 2.3575,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 7,
+   "revenue_avg": 1398414167
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 72.78,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "tech",
+ "source": "FMP",
+ "symbol": "TECH",
+ "target": {
+  "average": 70.29,
+  "currency": "USD",
+  "high": 73,
+  "low": 62,
+  "median": 73
+ },
+ "ticker": "TECH"
+}

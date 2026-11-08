@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 20,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 2.80528,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 13468807033
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 3.05526,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 13983837857
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 40.73,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lvs",
+ "source": "FMP",
+ "symbol": "LVS",
+ "target": {
+  "average": 49.67,
+  "currency": "USD",
+  "high": 62,
+  "low": 40,
+  "median": 50
+ },
+ "ticker": "LVS"
+}

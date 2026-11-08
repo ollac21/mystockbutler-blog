@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 11,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 4.0252,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 30503605260
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 4.38534,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 33496584306
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 86.95,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nee",
+ "source": "FMP",
+ "symbol": "NEE",
+ "target": {
+  "average": 91.2,
+  "currency": "USD",
+  "high": 110,
+  "low": 56,
+  "median": 91
+ },
+ "ticker": "NEE"
+}

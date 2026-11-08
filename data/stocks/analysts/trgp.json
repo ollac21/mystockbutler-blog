@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 11.33205,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 19049736294
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 12.45742,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 24002952870
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 264.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "trgp",
+ "source": "FMP",
+ "symbol": "TRGP",
+ "target": {
+  "average": 328,
+  "currency": "USD",
+  "high": 359,
+  "low": 294,
+  "median": 326
+ },
+ "ticker": "TRGP"
+}

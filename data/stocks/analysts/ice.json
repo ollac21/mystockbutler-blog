@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 4,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.18894,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 11128786350
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.94166,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 11874948361
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 172.27,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ice",
+ "source": "FMP",
+ "symbol": "ICE",
+ "target": {
+  "average": 183.89,
+  "currency": "USD",
+  "high": 218,
+  "low": 160,
+  "median": 180
+ },
+ "ticker": "ICE"
+}

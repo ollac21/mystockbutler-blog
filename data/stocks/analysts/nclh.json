@@ -1,0 +1,42 @@
+{
+ "analysts": 39,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 17,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 1.68722,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 10092868014
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 1.42413,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 10585665874
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 17.92,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nclh",
+ "source": "FMP",
+ "symbol": "NCLH",
+ "target": {
+  "average": 20.79,
+  "currency": "USD",
+  "high": 45,
+  "low": 16,
+  "median": 18
+ },
+ "ticker": "NCLH"
+}

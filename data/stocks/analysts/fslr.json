@@ -1,0 +1,42 @@
+{
+ "analysts": 75,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 46,
+  "hold": 22,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 26,
+   "eps_avg": 17.61582,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 23,
+   "revenue_avg": 4812768376
+  },
+  {
+   "eps_analysts": 26,
+   "eps_avg": 23.09027,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 5698432730
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 201.14,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fslr",
+ "source": "FMP",
+ "symbol": "FSLR",
+ "target": {
+  "average": 265.06,
+  "currency": "USD",
+  "high": 328,
+  "low": 197,
+  "median": 257
+ },
+ "ticker": "FSLR"
+}

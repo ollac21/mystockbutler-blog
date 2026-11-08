@@ -1,0 +1,34 @@
+{
+ "analysts": 3,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 0,
+  "hold": 2,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 0.8394,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 33102982160
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 0.9619,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 35921173414
+  }
+ ],
+ "estimates_currency": "GBP",
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ba-l",
+ "source": "FMP",
+ "symbol": "BA.L",
+ "ticker": "BA.L"
+}

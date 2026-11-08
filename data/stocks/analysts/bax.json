@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 20,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 2.09719,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 11724776250
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 2.03669,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 11968926925
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 25.79,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "bax",
+ "source": "FMP",
+ "symbol": "BAX",
+ "target": {
+  "average": 23.83,
+  "currency": "USD",
+  "high": 28,
+  "low": 20,
+  "median": 24.5
+ },
+ "ticker": "BAX"
+}

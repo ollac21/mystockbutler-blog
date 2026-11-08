@@ -1,0 +1,42 @@
+{
+ "analysts": 70,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 40,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 26,
+   "eps_avg": 5.58658,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 29,
+   "revenue_avg": 34537355583
+  },
+  {
+   "eps_analysts": 27,
+   "eps_avg": 5.91719,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 31,
+   "revenue_avg": 35958737462
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 59.24,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pypl",
+ "source": "FMP",
+ "symbol": "PYPL",
+ "target": {
+  "average": 56.25,
+  "currency": "USD",
+  "high": 70,
+  "low": 45,
+  "median": 55
+ },
+ "ticker": "PYPL"
+}

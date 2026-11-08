@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 13.6195,
+   "fiscal_year_end": "2027-09-25",
+   "revenue_analysts": 10,
+   "revenue_avg": 22329506662
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 15.36322,
+   "fiscal_year_end": "2028-09-25",
+   "revenue_analysts": 10,
+   "revenue_avg": 24169157469
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 207.01,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "tel",
+ "source": "FMP",
+ "symbol": "TEL",
+ "target": {
+  "average": 252.71,
+  "currency": "USD",
+  "high": 300,
+  "low": 220,
+  "median": 243
+ },
+ "ticker": "TEL"
+}

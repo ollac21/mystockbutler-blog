@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 22,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 2.58776,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 43968685992
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 1.82771,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 42946937037
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 31.4,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "dow",
+ "source": "FMP",
+ "symbol": "DOW",
+ "target": {
+  "average": 34.6,
+  "currency": "USD",
+  "high": 45,
+  "low": 30,
+  "median": 33
+ },
+ "ticker": "DOW"
+}

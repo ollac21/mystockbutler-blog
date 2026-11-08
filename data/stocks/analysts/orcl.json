@@ -1,0 +1,42 @@
+{
+ "analysts": 87,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 59,
+  "hold": 24,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 24,
+   "eps_avg": 8.13727,
+   "fiscal_year_end": "2027-05-31",
+   "revenue_analysts": 30,
+   "revenue_avg": 90461513580
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 11.09227,
+   "fiscal_year_end": "2028-05-31",
+   "revenue_analysts": 29,
+   "revenue_avg": 131433047232
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 116.05,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "orcl",
+ "source": "FMP",
+ "symbol": "ORCL",
+ "target": {
+  "average": 229.2,
+  "currency": "USD",
+  "high": 325,
+  "low": 95,
+  "median": 225
+ },
+ "ticker": "ORCL"
+}

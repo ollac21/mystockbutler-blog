@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 9.90431,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 10841539118
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 15.12796,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 16,
+   "revenue_avg": 15115858083
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 192.81,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cohr",
+ "source": "FMP",
+ "symbol": "COHR",
+ "target": {
+  "average": 404.75,
+  "currency": "USD",
+  "high": 450,
+  "low": 350,
+  "median": 410
+ },
+ "ticker": "COHR"
+}

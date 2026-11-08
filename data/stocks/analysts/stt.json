@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 15,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 13.76855,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 15925305588
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 15.50788,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 16842617930
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 165.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "stt",
+ "source": "FMP",
+ "symbol": "STT",
+ "target": {
+  "average": 186.89,
+  "currency": "USD",
+  "high": 200,
+  "low": 171,
+  "median": 194
+ },
+ "ticker": "STT"
+}

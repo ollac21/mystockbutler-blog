@@ -1,0 +1,42 @@
+{
+ "analysts": 50,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 39,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 20,
+   "eps_avg": 9.65591,
+   "fiscal_year_end": "2027-06-28",
+   "revenue_analysts": 24,
+   "revenue_avg": 35356974931
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 12.12383,
+   "fiscal_year_end": "2028-06-28",
+   "revenue_analysts": 22,
+   "revenue_avg": 42466533228
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 200.44,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lrcx",
+ "source": "FMP",
+ "symbol": "LRCX",
+ "target": {
+  "average": 380.41,
+  "currency": "USD",
+  "high": 500,
+  "low": 290,
+  "median": 375
+ },
+ "ticker": "LRCX"
+}

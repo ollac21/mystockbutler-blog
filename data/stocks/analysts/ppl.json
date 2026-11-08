@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 1.94841,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 9700844850
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 2.11684,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 10284235712
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 35.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ppl",
+ "source": "FMP",
+ "symbol": "PPL",
+ "target": {
+  "average": 39.69,
+  "currency": "USD",
+  "high": 44,
+  "low": 35,
+  "median": 39
+ },
+ "ticker": "PPL"
+}

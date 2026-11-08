@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 11.84863,
+   "fiscal_year_end": "2027-11-01",
+   "revenue_analysts": 14,
+   "revenue_avg": 8450962438
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 17.52928,
+   "fiscal_year_end": "2028-11-01",
+   "revenue_analysts": 16,
+   "revenue_avg": 10950222936
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 243.39,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cien",
+ "source": "FMP",
+ "symbol": "CIEN",
+ "target": {
+  "average": 507.42,
+  "currency": "USD",
+  "high": 615,
+  "low": 347,
+  "median": 536.5
+ },
+ "ticker": "CIEN"
+}

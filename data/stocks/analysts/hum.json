@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 22,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 9.15929,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 162560861449
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 17.00144,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 167788562514
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 433.74,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hum",
+ "source": "FMP",
+ "symbol": "HUM",
+ "target": {
+  "average": 470.42,
+  "currency": "USD",
+  "high": 596,
+  "low": 300,
+  "median": 475
+ },
+ "ticker": "HUM"
+}

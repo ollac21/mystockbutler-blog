@@ -1,0 +1,42 @@
+{
+ "analysts": 45,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 13,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 22.95393,
+   "fiscal_year_end": "2027-07-31",
+   "revenue_analysts": 22,
+   "revenue_avg": 23407198301
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 25.9688,
+   "fiscal_year_end": "2028-07-31",
+   "revenue_analysts": 22,
+   "revenue_avg": 25500105849
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 341.5,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "intu",
+ "source": "FMP",
+ "symbol": "INTU",
+ "target": {
+  "average": 379.68,
+  "currency": "USD",
+  "high": 500,
+  "low": 290,
+  "median": 400
+ },
+ "ticker": "INTU"
+}

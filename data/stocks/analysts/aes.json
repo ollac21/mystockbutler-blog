@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 2,
+   "eps_avg": 2.28073,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 12845982953
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 2.43435,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 13240435599
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 14.87,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "aes",
+ "source": "FMP",
+ "symbol": "AES",
+ "target": {
+  "average": 18.75,
+  "currency": "USD",
+  "high": 32,
+  "low": 7,
+  "median": 16.5
+ },
+ "ticker": "AES"
+}

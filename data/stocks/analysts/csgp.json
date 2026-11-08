@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 9,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 1.398,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 3762098740
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 1.76154,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 4181964000
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 30.55,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "csgp",
+ "source": "FMP",
+ "symbol": "CSGP",
+ "target": {
+  "average": 35.44,
+  "currency": "USD",
+  "high": 42,
+  "low": 32,
+  "median": 34
+ },
+ "ticker": "CSGP"
+}

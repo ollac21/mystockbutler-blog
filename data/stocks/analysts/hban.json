@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 24,
+  "sell": 3,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 1.31426,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 11096046428
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 1.74265,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 11863748769
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 15.47,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hban",
+ "source": "FMP",
+ "symbol": "HBAN",
+ "target": {
+  "average": 19.33,
+  "currency": "USD",
+  "high": 21,
+  "low": 18,
+  "median": 19
+ },
+ "ticker": "HBAN"
+}

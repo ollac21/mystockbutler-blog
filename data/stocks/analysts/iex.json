@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.94046,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 3720790731
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 9.80606,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 3942841360
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 226.99,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "iex",
+ "source": "FMP",
+ "symbol": "IEX",
+ "target": {
+  "average": 265.29,
+  "currency": "USD",
+  "high": 280,
+  "low": 245,
+  "median": 268
+ },
+ "ticker": "IEX"
+}

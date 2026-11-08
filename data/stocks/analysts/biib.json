@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 12.49493,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 10583872688
+  },
+  {
+   "eps_analysts": 21,
+   "eps_avg": 16.22448,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 26,
+   "revenue_avg": 10778362911
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 248.35,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "biib",
+ "source": "FMP",
+ "symbol": "BIIB",
+ "target": {
+  "average": 255,
+  "currency": "USD",
+  "high": 300,
+  "low": 175,
+  "median": 249.5
+ },
+ "ticker": "BIIB"
+}

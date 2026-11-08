@@ -1,0 +1,42 @@
+{
+ "analysts": 66,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 56,
+  "hold": 7,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 2.43584,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 37097643875
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 3.08671,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 40267820842
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 49.92,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "slb",
+ "source": "FMP",
+ "symbol": "SLB",
+ "target": {
+  "average": 64,
+  "currency": "USD",
+  "high": 71,
+  "low": 54,
+  "median": 64
+ },
+ "ticker": "SLB"
+}

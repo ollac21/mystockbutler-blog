@@ -1,0 +1,42 @@
+{
+ "analysts": 43,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 9.23659,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 3690600967
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 10.27775,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 4143045156
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 303.73,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "veev",
+ "source": "FMP",
+ "symbol": "VEEV",
+ "target": {
+  "average": 300.5,
+  "currency": "USD",
+  "high": 375,
+  "low": 165,
+  "median": 310
+ },
+ "ticker": "VEEV"
+}

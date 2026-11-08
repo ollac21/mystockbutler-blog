@@ -1,0 +1,42 @@
+{
+ "analysts": 83,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 68,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 28,
+   "eps_avg": 20.04988,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 35,
+   "revenue_avg": 395215720441
+  },
+  {
+   "eps_analysts": 29,
+   "eps_avg": 24.06578,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 41,
+   "revenue_avg": 476796503970
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 530.61,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "msft",
+ "source": "FMP",
+ "symbol": "MSFT",
+ "target": {
+  "average": 611.74,
+  "currency": "USD",
+  "high": 750,
+  "low": 440,
+  "median": 625
+ },
+ "ticker": "MSFT"
+}

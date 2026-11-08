@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 34,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 3.01183,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 6800448176
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 3.39944,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 7478715678
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 102.14,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ew",
+ "source": "FMP",
+ "symbol": "EW",
+ "target": {
+  "average": 108.7,
+  "currency": "USD",
+  "high": 120,
+  "low": 100,
+  "median": 110
+ },
+ "ticker": "EW"
+}

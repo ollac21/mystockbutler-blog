@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 19.71469,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 5,
+   "revenue_avg": 352813221618
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 21.73382,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 4,
+   "revenue_avg": 368171613322
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 333.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cor",
+ "source": "FMP",
+ "symbol": "COR",
+ "target": {
+  "average": 357.75,
+  "currency": "USD",
+  "high": 400,
+  "low": 330,
+  "median": 350
+ },
+ "ticker": "COR"
+}

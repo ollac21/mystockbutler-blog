@@ -1,0 +1,42 @@
+{
+ "analysts": 87,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 32,
+  "hold": 49,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 25,
+   "eps_avg": 1.49733,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 36,
+   "revenue_avg": 61862493986
+  },
+  {
+   "eps_analysts": 29,
+   "eps_avg": 1.807,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 37,
+   "revenue_avg": 69470275764
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 56.28,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "intc",
+ "source": "FMP",
+ "symbol": "INTC",
+ "target": {
+  "average": 113.07,
+  "currency": "USD",
+  "high": 200,
+  "low": 70,
+  "median": 107.5
+ },
+ "ticker": "INTC"
+}

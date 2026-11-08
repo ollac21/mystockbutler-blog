@@ -1,0 +1,42 @@
+{
+ "analysts": 50,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 40,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 6.96156,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 11042437280
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 6.9435,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 11381890741
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 188.79,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "amt",
+ "source": "FMP",
+ "symbol": "AMT",
+ "target": {
+  "average": 203.67,
+  "currency": "USD",
+  "high": 212,
+  "low": 188,
+  "median": 206.5
+ },
+ "ticker": "AMT"
+}

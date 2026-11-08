@@ -1,0 +1,42 @@
+{
+ "analysts": 57,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 30,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 18.3512,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 79428388410
+  },
+  {
+   "eps_analysts": 20,
+   "eps_avg": 20.17445,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 86654565557
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 320.99,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "axp",
+ "source": "FMP",
+ "symbol": "AXP",
+ "target": {
+  "average": 357.64,
+  "currency": "USD",
+  "high": 400,
+  "low": 315,
+  "median": 345
+ },
+ "ticker": "AXP"
+}

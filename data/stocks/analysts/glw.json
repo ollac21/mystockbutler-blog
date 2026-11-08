@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 14,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.36683,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 19406657352
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.50487,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 23340161089
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 106.13,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "glw",
+ "source": "FMP",
+ "symbol": "GLW",
+ "target": {
+  "average": 167.71,
+  "currency": "USD",
+  "high": 200,
+  "low": 132,
+  "median": 175
+ },
+ "ticker": "GLW"
+}

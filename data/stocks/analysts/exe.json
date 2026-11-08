@@ -1,0 +1,42 @@
+{
+ "analysts": 22,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 8.66682,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 13417621672
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 8.22392,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 12755108480
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 84.6,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "exe",
+ "source": "FMP",
+ "symbol": "EXE",
+ "target": {
+  "average": 122.36,
+  "currency": "USD",
+  "high": 141,
+  "low": 93,
+  "median": 122.5
+ },
+ "ticker": "EXE"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 6,
+  "hold": 15,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 1.14234,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 4046162666
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 1.23412,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 4341290200
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 37.95,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "rol",
+ "source": "FMP",
+ "symbol": "ROL",
+ "target": {
+  "average": 39.1,
+  "currency": "USD",
+  "high": 65,
+  "low": 27,
+  "median": 35.5
+ },
+ "ticker": "ROL"
+}

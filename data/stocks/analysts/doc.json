@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 22,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 2,
+   "eps_avg": 0.43659,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 2,
+   "revenue_avg": 2998804082
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 0.20234,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 3143420438
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 20.26,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "doc",
+ "source": "FMP",
+ "symbol": "DOC",
+ "target": {
+  "average": 22,
+  "currency": "USD",
+  "high": 24,
+  "low": 20,
+  "median": 22
+ },
+ "ticker": "DOC"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 18,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.21354,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 9265013139
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 6.33566,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 9340081710
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 79.4,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "zts",
+ "source": "FMP",
+ "symbol": "ZTS",
+ "target": {
+  "average": 84.75,
+  "currency": "USD",
+  "high": 95,
+  "low": 74,
+  "median": 84
+ },
+ "ticker": "ZTS"
+}

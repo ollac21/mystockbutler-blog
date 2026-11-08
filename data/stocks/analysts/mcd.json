@@ -1,0 +1,42 @@
+{
+ "analysts": 64,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 37,
+  "hold": 25,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 12.91781,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 28007998682
+  },
+  {
+   "eps_analysts": 20,
+   "eps_avg": 13.7457,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 28535357587
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 276.52,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mcd",
+ "source": "FMP",
+ "symbol": "MCD",
+ "target": {
+  "average": 283.58,
+  "currency": "USD",
+  "high": 325,
+  "low": 230,
+  "median": 286
+ },
+ "ticker": "MCD"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 60,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 55,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 28,
+   "eps_avg": 19.31815,
+   "fiscal_year_end": "2027-11-02",
+   "revenue_analysts": 36,
+   "revenue_avg": 174278705375
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 30.63264,
+   "fiscal_year_end": "2028-11-02",
+   "revenue_analysts": 40,
+   "revenue_avg": 281860976296
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 293.69,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "avgo",
+ "source": "FMP",
+ "symbol": "AVGO",
+ "target": {
+  "average": 514.37,
+  "currency": "USD",
+  "high": 600,
+  "low": 350,
+  "median": 520
+ },
+ "ticker": "AVGO"
+}

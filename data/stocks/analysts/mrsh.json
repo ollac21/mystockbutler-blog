@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 11,
+  "hold": 21,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 10.48874,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 28762951939
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 11.46417,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 30185139066
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 204.82,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "mrsh",
+ "source": "FMP",
+ "symbol": "MRSH",
+ "target": {
+  "average": 205.43,
+  "currency": "USD",
+  "high": 234,
+  "low": 182,
+  "median": 200
+ },
+ "ticker": "MRSH"
+}

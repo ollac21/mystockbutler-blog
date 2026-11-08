@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 15,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.0698,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 76160424860
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 6.53149,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 85676835598
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 28.76,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "smci",
+ "source": "FMP",
+ "symbol": "SMCI",
+ "target": {
+  "average": 44.22,
+  "currency": "USD",
+  "high": 65,
+  "low": 36,
+  "median": 42
+ },
+ "ticker": "SMCI"
+}

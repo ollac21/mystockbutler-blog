@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 16,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": -0.41776,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 821111516
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": -0.15533,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 976497932
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1.45,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "plug",
+ "source": "FMP",
+ "symbol": "PLUG",
+ "target": {
+  "average": 2.65,
+  "currency": "",
+  "high": 5,
+  "low": 1.2,
+  "median": 1.75
+ },
+ "ticker": "PLUG"
+}

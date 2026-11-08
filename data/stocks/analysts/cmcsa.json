@@ -1,0 +1,42 @@
+{
+ "analysts": 62,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 34,
+  "hold": 25,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 3.47109,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 119763296862
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 3.5096,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 116372781469
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 24.39,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cmcsa",
+ "source": "FMP",
+ "symbol": "CMCSA",
+ "target": {
+  "average": 26.05,
+  "currency": "USD",
+  "high": 35,
+  "low": 18,
+  "median": 25
+ },
+ "ticker": "CMCSA"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.18904,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 7391716680
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 4.38944,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 7605061786
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 83.11,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wynn",
+ "source": "FMP",
+ "symbol": "WYNN",
+ "target": {
+  "average": 118.82,
+  "currency": "USD",
+  "high": 137,
+  "low": 93,
+  "median": 120
+ },
+ "ticker": "WYNN"
+}

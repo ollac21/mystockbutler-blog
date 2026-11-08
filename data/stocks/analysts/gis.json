@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 8,
+  "hold": 22,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.08137,
+   "fiscal_year_end": "2027-05-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 17700230675
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.1558,
+   "fiscal_year_end": "2028-05-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 17759653890
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 35.51,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "gis",
+ "source": "FMP",
+ "symbol": "GIS",
+ "target": {
+  "average": 35.64,
+  "currency": "USD",
+  "high": 43,
+  "low": 30,
+  "median": 35
+ },
+ "ticker": "GIS"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.68085,
+   "fiscal_year_end": "2027-10-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 4408202777
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 5.08225,
+   "fiscal_year_end": "2028-10-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 4616481053
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 62.36,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "coo",
+ "source": "FMP",
+ "symbol": "COO",
+ "target": {
+  "average": 65.11,
+  "currency": "USD",
+  "high": 75,
+  "low": 59,
+  "median": 61
+ },
+ "ticker": "COO"
+}

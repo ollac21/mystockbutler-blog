@@ -1,0 +1,42 @@
+{
+ "analysts": 24,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 10.6098,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 6,
+   "revenue_avg": 7856999172
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 11.56529,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 6,
+   "revenue_avg": 8211618182
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 190.4,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "br",
+ "source": "FMP",
+ "symbol": "BR",
+ "target": {
+  "average": 194,
+  "currency": "USD",
+  "high": 226,
+  "low": 176,
+  "median": 180
+ },
+ "ticker": "BR"
+}

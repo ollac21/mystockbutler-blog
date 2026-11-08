@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 18,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 3.65174,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 2227839037
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 3.1021,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 2279292004
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 118.93,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "maa",
+ "source": "FMP",
+ "symbol": "MAA",
+ "target": {
+  "average": 133.33,
+  "currency": "USD",
+  "high": 147,
+  "low": 123,
+  "median": 134
+ },
+ "ticker": "MAA"
+}

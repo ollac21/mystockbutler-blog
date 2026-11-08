@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 23,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.20827,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 44712139445
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 6.12368,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 43433517533
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 85.19,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "oke",
+ "source": "FMP",
+ "symbol": "OKE",
+ "target": {
+  "average": 100.67,
+  "currency": "USD",
+  "high": 112,
+  "low": 88,
+  "median": 99
+ },
+ "ticker": "OKE"
+}

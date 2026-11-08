@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 17,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 17.99434,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 251678973533
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 16.05372,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 233917811862
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 212.61,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cvx",
+ "source": "FMP",
+ "symbol": "CVX",
+ "target": {
+  "average": 218.25,
+  "currency": "USD",
+  "high": 268,
+  "low": 90,
+  "median": 232
+ },
+ "ticker": "CVX"
+}

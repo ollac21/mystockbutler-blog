@@ -1,0 +1,42 @@
+{
+ "analysts": 67,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 52,
+  "hold": 13,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 26,
+   "eps_avg": 1.25353,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 37,
+   "revenue_avg": 6007279179
+  },
+  {
+   "eps_analysts": 27,
+   "eps_avg": 1.60312,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 38,
+   "revenue_avg": 7381011050
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 216.9,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "crwd",
+ "source": "FMP",
+ "symbol": "CRWD",
+ "target": {
+  "average": 246.37,
+  "currency": "USD",
+  "high": 425,
+  "low": 132,
+  "median": 242.5
+ },
+ "ticker": "CRWD"
+}

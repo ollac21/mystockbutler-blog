@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 22,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 0.87796,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 2205458687
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 0.88446,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 2292483436
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 25.52,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "kim",
+ "source": "FMP",
+ "symbol": "KIM",
+ "target": {
+  "average": 26.2,
+  "currency": "USD",
+  "high": 29,
+  "low": 23,
+  "median": 26.5
+ },
+ "ticker": "KIM"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 10.2205,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 79394582382
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 11.13668,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 83318567374
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 98.27,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "met",
+ "source": "FMP",
+ "symbol": "MET",
+ "target": {
+  "average": 108.25,
+  "currency": "USD",
+  "high": 111,
+  "low": 103,
+  "median": 109.5
+ },
+ "ticker": "MET"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 5,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 1.33438,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 8,
+   "revenue_avg": 9404517174
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 1.54319,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 9,
+   "revenue_avg": 9767193052
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 26.385,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nwsa",
+ "source": "FMP",
+ "symbol": "NWSA",
+ "target": {
+  "average": 33.13,
+  "currency": "USD",
+  "high": 35,
+  "low": 29.4,
+  "median": 35
+ },
+ "ticker": "NWSA"
+}

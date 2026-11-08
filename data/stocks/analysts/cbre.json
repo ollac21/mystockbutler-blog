@@ -1,0 +1,42 @@
+{
+ "analysts": 20,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 6,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 7.82731,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 46490955083
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 8.87466,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 51684843695
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 135.51,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cbre",
+ "source": "FMP",
+ "symbol": "CBRE",
+ "target": {
+  "average": 179,
+  "currency": "USD",
+  "high": 183,
+  "low": 175,
+  "median": 179
+ },
+ "ticker": "CBRE"
+}

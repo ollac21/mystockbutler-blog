@@ -1,0 +1,42 @@
+{
+ "analysts": 48,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 24,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 13.04381,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 13461799000
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 14.52074,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 14183632576
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 319.94,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "nsc",
+ "source": "FMP",
+ "symbol": "NSC",
+ "target": {
+  "average": 364.71,
+  "currency": "USD",
+  "high": 400,
+  "low": 350,
+  "median": 358
+ },
+ "ticker": "NSC"
+}

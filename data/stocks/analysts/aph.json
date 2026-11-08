@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 2.81927,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 37082229828
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 3.6368,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 45708245838
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 74.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "aph",
+ "source": "FMP",
+ "symbol": "APH",
+ "target": {
+  "average": 103.83,
+  "currency": "USD",
+  "high": 116,
+  "low": 100,
+  "median": 101
+ },
+ "ticker": "APH"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 8,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.14292,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 15574524774
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 4.55867,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 17228532988
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 79.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "xel",
+ "source": "FMP",
+ "symbol": "XEL",
+ "target": {
+  "average": 88,
+  "currency": "USD",
+  "high": 99,
+  "low": 77,
+  "median": 87
+ },
+ "ticker": "XEL"
+}

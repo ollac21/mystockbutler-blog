@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 19,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 14.67772,
+   "fiscal_year_end": "2027-08-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 77501212899
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 15.94825,
+   "fiscal_year_end": "2028-08-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 81417700835
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 260.5,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "acn",
+ "source": "FMP",
+ "symbol": "ACN",
+ "target": {
+  "average": 230.05,
+  "currency": "USD",
+  "high": 278,
+  "low": 175,
+  "median": 235
+ },
+ "ticker": "ACN"
+}

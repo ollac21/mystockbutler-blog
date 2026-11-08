@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 25,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 13.68734,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 1,
+   "revenue_avg": 56860054502
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 13.8464,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 58087920494
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 119.24,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pru",
+ "source": "FMP",
+ "symbol": "PRU",
+ "target": {
+  "average": 108.86,
+  "currency": "USD",
+  "high": 128,
+  "low": 94,
+  "median": 108
+ },
+ "ticker": "PRU"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 19,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 4,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 27.76729,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 5342725967
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 31.80763,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 5814595965
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 455.16,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cpay",
+ "source": "FMP",
+ "symbol": "CPAY",
+ "target": {
+  "average": 460.6,
+  "currency": "USD",
+  "high": 536,
+  "low": 388,
+  "median": 467
+ },
+ "ticker": "CPAY"
+}

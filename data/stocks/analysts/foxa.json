@@ -1,0 +1,42 @@
+{
+ "analysts": 48,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 23,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 5.96048,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 17963573437
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 5.83519,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 17791107092
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 66.64,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "foxa",
+ "source": "FMP",
+ "symbol": "FOXA",
+ "target": {
+  "average": 70.75,
+  "currency": "USD",
+  "high": 85,
+  "low": 60,
+  "median": 71
+ },
+ "ticker": "FOXA"
+}

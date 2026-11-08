@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 3.77657,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 6246293613
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.06043,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 6518849791
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 109.33,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "chd",
+ "source": "FMP",
+ "symbol": "CHD",
+ "target": {
+  "average": 109,
+  "currency": "USD",
+  "high": 115,
+  "low": 83,
+  "median": 113.5
+ },
+ "ticker": "CHD"
+}

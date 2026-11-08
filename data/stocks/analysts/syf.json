@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 16,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 1
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 9.49638,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 15133902368
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 10.42146,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 15945496075
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 73.74,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "syf",
+ "source": "FMP",
+ "symbol": "SYF",
+ "target": {
+  "average": 88.79,
+  "currency": "USD",
+  "high": 104,
+  "low": 78,
+  "median": 89
+ },
+ "ticker": "SYF"
+}

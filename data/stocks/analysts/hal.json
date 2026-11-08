@@ -1,0 +1,42 @@
+{
+ "analysts": 64,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 47,
+  "hold": 14,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 2.33257,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 22530746882
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 2.91798,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 23726715128
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 31.84,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "hal",
+ "source": "FMP",
+ "symbol": "HAL",
+ "target": {
+  "average": 43.1,
+  "currency": "USD",
+  "high": 51,
+  "low": 37,
+  "median": 42
+ },
+ "ticker": "HAL"
+}

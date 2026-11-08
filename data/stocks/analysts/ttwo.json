@@ -1,0 +1,42 @@
+{
+ "analysts": 59,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 47,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 7.06355,
+   "fiscal_year_end": "2027-03-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 8678471118
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 10.11852,
+   "fiscal_year_end": "2028-03-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 9219547074
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 214.87,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ttwo",
+ "source": "FMP",
+ "symbol": "TTWO",
+ "target": {
+  "average": 287.45,
+  "currency": "USD",
+  "high": 310,
+  "low": 262,
+  "median": 285
+ },
+ "ticker": "TTWO"
+}

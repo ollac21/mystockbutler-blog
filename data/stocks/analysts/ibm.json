@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 23,
+  "sell": 5,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 12.41341,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 70567344213
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 13.26253,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 73317268539
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 245,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ibm",
+ "source": "FMP",
+ "symbol": "IBM",
+ "target": {
+  "average": 272.33,
+  "currency": "USD",
+  "high": 350,
+  "low": 175,
+  "median": 270
+ },
+ "ticker": "IBM"
+}

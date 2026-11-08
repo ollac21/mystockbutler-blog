@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 16,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 7.267,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 17457321033
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 8.02329,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 18332140957
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 246.85,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rsg",
+ "source": "FMP",
+ "symbol": "RSG",
+ "target": {
+  "average": 239,
+  "currency": "USD",
+  "high": 270,
+  "low": 219,
+  "median": 235.5
+ },
+ "ticker": "RSG"
+}

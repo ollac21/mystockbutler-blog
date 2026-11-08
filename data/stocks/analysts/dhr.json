@@ -1,0 +1,42 @@
+{
+ "analysts": 43,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 11,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 8.58736,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 26263429861
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 9.31254,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 28267341887
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 230.25,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dhr",
+ "source": "FMP",
+ "symbol": "DHR",
+ "target": {
+  "average": 238.77,
+  "currency": "USD",
+  "high": 275,
+  "low": 195,
+  "median": 240
+ },
+ "ticker": "DHR"
+}

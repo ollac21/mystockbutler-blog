@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 13.09446,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 2551836790
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 15.57089,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 2804316610
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 420.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tyl",
+ "source": "FMP",
+ "symbol": "TYL",
+ "target": {
+  "average": 410.56,
+  "currency": "USD",
+  "high": 500,
+  "low": 340,
+  "median": 400
+ },
+ "ticker": "TYL"
+}

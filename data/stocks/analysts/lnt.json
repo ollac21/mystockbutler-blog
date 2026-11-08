@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 11,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 3.43376,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 4421059733
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 3.67965,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 4615835155
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 72.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lnt",
+ "source": "FMP",
+ "symbol": "LNT",
+ "target": {
+  "average": 72.92,
+  "currency": "USD",
+  "high": 75,
+  "low": 68,
+  "median": 75
+ },
+ "ticker": "LNT"
+}

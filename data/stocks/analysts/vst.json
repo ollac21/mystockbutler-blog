@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 3,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 8.5901,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 21861308421
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 10.02622,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 23604113004
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 124.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "vst",
+ "source": "FMP",
+ "symbol": "VST",
+ "target": {
+  "average": 197.94,
+  "currency": "USD",
+  "high": 255,
+  "low": 169,
+  "median": 194
+ },
+ "ticker": "VST"
+}

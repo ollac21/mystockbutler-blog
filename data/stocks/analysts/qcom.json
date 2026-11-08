@@ -1,0 +1,42 @@
+{
+ "analysts": 69,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 34,
+  "sell": 5,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 9.79487,
+   "fiscal_year_end": "2027-09-27",
+   "revenue_analysts": 23,
+   "revenue_avg": 45318046843
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 12.36029,
+   "fiscal_year_end": "2028-09-27",
+   "revenue_analysts": 18,
+   "revenue_avg": 52405591144
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 165.41,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "qcom",
+ "source": "FMP",
+ "symbol": "QCOM",
+ "target": {
+  "average": 204.35,
+  "currency": "USD",
+  "high": 320,
+  "low": 155,
+  "median": 190
+ },
+ "ticker": "QCOM"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 72,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 46,
+  "hold": 25,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 25,
+   "eps_avg": 10.46753,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 27,
+   "revenue_avg": 28718620638
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 12.25899,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 27,
+   "revenue_avg": 31584276330
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 160.665,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "bkng",
+ "source": "FMP",
+ "symbol": "BKNG",
+ "target": {
+  "average": 219.2,
+  "currency": "USD",
+  "high": 270,
+  "low": 150,
+  "median": 227.5
+ },
+ "ticker": "BKNG"
+}

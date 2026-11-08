@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 20,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 10.90589,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 6055514249
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 8.89251,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 5986245610
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 99.25,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "alb",
+ "source": "FMP",
+ "symbol": "ALB",
+ "target": {
+  "average": 167.09,
+  "currency": "USD",
+  "high": 250,
+  "low": 109,
+  "median": 161
+ },
+ "ticker": "ALB"
+}

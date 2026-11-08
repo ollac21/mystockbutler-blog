@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 11,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 8.16699,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 50693737947
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 9.31838,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 56641986477
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 323.24,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ge",
+ "source": "FMP",
+ "symbol": "GE",
+ "target": {
+  "average": 385,
+  "currency": "USD",
+  "high": 425,
+  "low": 350,
+  "median": 379
+ },
+ "ticker": "GE"
+}

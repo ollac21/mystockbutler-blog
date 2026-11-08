@@ -1,0 +1,42 @@
+{
+ "analysts": 55,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 29,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 71.34877,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 73585132758
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 74.39759,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 74388391861
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 865.82,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "gs",
+ "source": "FMP",
+ "symbol": "GS",
+ "target": {
+  "average": 1130.75,
+  "currency": "USD",
+  "high": 1325,
+  "low": 942,
+  "median": 1097.5
+ },
+ "ticker": "GS"
+}

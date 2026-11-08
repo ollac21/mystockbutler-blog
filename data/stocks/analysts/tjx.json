@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 44,
+  "hold": 7,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 5.25536,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 63976506295
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.75267,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 67945276043
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 135.3,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tjx",
+ "source": "FMP",
+ "symbol": "TJX",
+ "target": {
+  "average": 174.15,
+  "currency": "USD",
+  "high": 198,
+  "low": 145,
+  "median": 175
+ },
+ "ticker": "TJX"
+}

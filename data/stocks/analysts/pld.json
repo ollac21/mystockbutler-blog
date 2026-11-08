@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 14,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 3,
+   "eps_avg": 3.75667,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 8747584286
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 3.33667,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 9485449167
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 126.96,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "pld",
+ "source": "FMP",
+ "symbol": "PLD",
+ "target": {
+  "average": 154.21,
+  "currency": "USD",
+  "high": 170,
+  "low": 136,
+  "median": 153.5
+ },
+ "ticker": "PLD"
+}

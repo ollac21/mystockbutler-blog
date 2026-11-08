@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 18,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 11.85661,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 9537606881
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 12.96762,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 9501277706
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 172.76,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ntrs",
+ "source": "FMP",
+ "symbol": "NTRS",
+ "target": {
+  "average": 186,
+  "currency": "USD",
+  "high": 194,
+  "low": 177,
+  "median": 186
+ },
+ "ticker": "NTRS"
+}

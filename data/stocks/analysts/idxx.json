@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 9,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 14.86782,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 4745551835
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 16.81829,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 5159206644
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 676.04,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "idxx",
+ "source": "FMP",
+ "symbol": "IDXX",
+ "target": {
+  "average": 716.67,
+  "currency": "USD",
+  "high": 740,
+  "low": 700,
+  "median": 710
+ },
+ "ticker": "IDXX"
+}

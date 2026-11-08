@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 3,
+  "hold": 22,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 5.73,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 13,
+   "revenue_avg": 7639028612
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 6.15891,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 13,
+   "revenue_avg": 7810438781
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 99.96,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "clx",
+ "source": "FMP",
+ "symbol": "CLX",
+ "target": {
+  "average": 88.88,
+  "currency": "USD",
+  "high": 99,
+  "low": 74,
+  "median": 89
+ },
+ "ticker": "CLX"
+}

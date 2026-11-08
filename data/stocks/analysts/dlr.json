@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 14,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 2.7992,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 7260411463
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 2.70328,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 23,
+   "revenue_avg": 8076641742
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 174.2,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dlr",
+ "source": "FMP",
+ "symbol": "DLR",
+ "target": {
+  "average": 223.36,
+  "currency": "USD",
+  "high": 240,
+  "low": 197,
+  "median": 226
+ },
+ "ticker": "DLR"
+}

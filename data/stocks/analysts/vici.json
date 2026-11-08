@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 2.53151,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 4202593144
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 2.96181,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 4341426698
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 24.79,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "vici",
+ "source": "FMP",
+ "symbol": "VICI",
+ "target": {
+  "average": 28.9,
+  "currency": "USD",
+  "high": 32,
+  "low": 24,
+  "median": 29
+ },
+ "ticker": "VICI"
+}

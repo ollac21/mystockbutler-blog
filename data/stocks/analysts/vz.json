@@ -1,0 +1,42 @@
+{
+ "analysts": 62,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 35,
+  "sell": 3,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.05074,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 140221756614
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.2937,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 142839411613
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 45.69,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "vz",
+ "source": "FMP",
+ "symbol": "VZ",
+ "target": {
+  "average": 47.86,
+  "currency": "USD",
+  "high": 52,
+  "low": 44,
+  "median": 47
+ },
+ "ticker": "VZ"
+}

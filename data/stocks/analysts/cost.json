@@ -1,0 +1,42 @@
+{
+ "analysts": 59,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 39,
+  "hold": 19,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 28,
+   "eps_avg": 22.79336,
+   "fiscal_year_end": "2027-08-30",
+   "revenue_analysts": 27,
+   "revenue_avg": 329594693019
+  },
+  {
+   "eps_analysts": 25,
+   "eps_avg": 25.0484,
+   "fiscal_year_end": "2028-08-30",
+   "revenue_analysts": 24,
+   "revenue_avg": 355346798355
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1053.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cost",
+ "source": "FMP",
+ "symbol": "COST",
+ "target": {
+  "average": 1111.55,
+  "currency": "USD",
+  "high": 1275,
+  "low": 955,
+  "median": 1100
+ },
+ "ticker": "COST"
+}

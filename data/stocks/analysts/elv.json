@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 11,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 29.05065,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 200067860583
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 30.24825,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 205027017753
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 425.62,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "elv",
+ "source": "FMP",
+ "symbol": "ELV",
+ "target": {
+  "average": 466.69,
+  "currency": "USD",
+  "high": 523,
+  "low": 395,
+  "median": 474
+ },
+ "ticker": "ELV"
+}

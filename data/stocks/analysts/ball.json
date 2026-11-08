@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 4.00121,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 15461773848
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 4.471,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 16031388705
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 65.92,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ball",
+ "source": "FMP",
+ "symbol": "BALL",
+ "target": {
+  "average": 71.5,
+  "currency": "USD",
+  "high": 78,
+  "low": 63,
+  "median": 72.5
+ },
+ "ticker": "BALL"
+}

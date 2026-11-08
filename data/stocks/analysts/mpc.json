@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 67.66794,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 2,
+   "revenue_avg": 185247669540
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 60.53868,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 171663264911
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 372.74,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mpc",
+ "source": "FMP",
+ "symbol": "MPC",
+ "target": {
+  "average": 445.2,
+  "currency": "USD",
+  "high": 564,
+  "low": 321,
+  "median": 457.5
+ },
+ "ticker": "MPC"
+}

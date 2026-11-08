@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 4,
+  "hold": 20,
+  "sell": 11,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 2.08644,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 11,
+   "revenue_avg": 24682700350
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 2.0328,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 13,
+   "revenue_avg": 24520430793
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 24.61,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "khc",
+ "source": "FMP",
+ "symbol": "KHC",
+ "target": {
+  "average": 25.14,
+  "currency": "USD",
+  "high": 32,
+  "low": 21,
+  "median": 24
+ },
+ "ticker": "KHC"
+}

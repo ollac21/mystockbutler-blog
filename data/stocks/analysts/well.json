@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 2.82662,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 14305258818
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 3.26873,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 16559343660
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 245.01,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "well",
+ "source": "FMP",
+ "symbol": "WELL",
+ "target": {
+  "average": 261.17,
+  "currency": "USD",
+  "high": 275,
+  "low": 246,
+  "median": 260
+ },
+ "ticker": "WELL"
+}

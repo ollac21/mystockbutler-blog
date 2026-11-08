@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 31,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.39452,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 16,
+   "revenue_avg": 99313613059
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 8.5718,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 16,
+   "revenue_avg": 101740524109
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 141.34,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pep",
+ "source": "FMP",
+ "symbol": "PEP",
+ "target": {
+  "average": 142.38,
+  "currency": "USD",
+  "high": 165,
+  "low": 132,
+  "median": 140
+ },
+ "ticker": "PEP"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 16,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 7.4428,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 7183429366
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.15646,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 7485206360
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 146.52,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dd",
+ "source": "FMP",
+ "symbol": "DD",
+ "target": {
+  "average": 142.2,
+  "currency": "USD",
+  "high": 172,
+  "low": 53,
+  "median": 160
+ },
+ "ticker": "DD"
+}

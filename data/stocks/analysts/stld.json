@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 17.65859,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 24229138973
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 21.93244,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 25419805663
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 222.9,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "stld",
+ "source": "FMP",
+ "symbol": "STLD",
+ "target": {
+  "average": 275.17,
+  "currency": "USD",
+  "high": 299,
+  "low": 260,
+  "median": 273.5
+ },
+ "ticker": "STLD"
+}

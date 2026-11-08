@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 17.08831,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 7805769555
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 20.39092,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 9585591148
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 518.15,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mlm",
+ "source": "FMP",
+ "symbol": "MLM",
+ "target": {
+  "average": 617.55,
+  "currency": "USD",
+  "high": 680,
+  "low": 530,
+  "median": 625
+ },
+ "ticker": "MLM"
+}

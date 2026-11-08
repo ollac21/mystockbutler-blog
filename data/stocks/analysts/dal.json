@@ -1,0 +1,42 @@
+{
+ "analysts": 45,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 36,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.43138,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 67003154018
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 7.40816,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 71522642387
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 87.2,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dal",
+ "source": "FMP",
+ "symbol": "DAL",
+ "target": {
+  "average": 103.5,
+  "currency": "USD",
+  "high": 125,
+  "low": 95,
+  "median": 100.5
+ },
+ "ticker": "DAL"
+}

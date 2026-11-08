@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 21,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 6.4437,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 50112956741
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 6.65916,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 48735444188
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 62.14,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "bmy",
+ "source": "FMP",
+ "symbol": "BMY",
+ "target": {
+  "average": 66.08,
+  "currency": "USD",
+  "high": 78,
+  "low": 41,
+  "median": 65
+ },
+ "ticker": "BMY"
+}

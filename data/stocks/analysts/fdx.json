@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 18,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 18.31173,
+   "fiscal_year_end": "2027-05-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 92285490253
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 21.13765,
+   "fiscal_year_end": "2028-05-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 95933046644
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 308.14,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fdx",
+ "source": "FMP",
+ "symbol": "FDX",
+ "target": {
+  "average": 301.85,
+  "currency": "USD",
+  "high": 425,
+  "low": 140,
+  "median": 350
+ },
+ "ticker": "FDX"
+}

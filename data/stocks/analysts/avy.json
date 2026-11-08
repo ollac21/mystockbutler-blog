@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 10.19066,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 9382567168
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 11.07852,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 9641643193
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 186.78,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "avy",
+ "source": "FMP",
+ "symbol": "AVY",
+ "target": {
+  "average": 197.25,
+  "currency": "USD",
+  "high": 225,
+  "low": 175,
+  "median": 194.5
+ },
+ "ticker": "AVY"
+}

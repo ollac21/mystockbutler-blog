@@ -1,0 +1,42 @@
+{
+ "analysts": 43,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 36,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 25.28527,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 48000348323
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 27.74011,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 50565428531
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 694.76,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tmo",
+ "source": "FMP",
+ "symbol": "TMO",
+ "target": {
+  "average": 694.27,
+  "currency": "USD",
+  "high": 800,
+  "low": 520,
+  "median": 730
+ },
+ "ticker": "TMO"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 34,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 67.55134,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 18748966300
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 70.32301,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 20095531901
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 904.35,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "regn",
+ "source": "FMP",
+ "symbol": "REGN",
+ "target": {
+  "average": 887.79,
+  "currency": "USD",
+  "high": 1100,
+  "low": 756,
+  "median": 875
+ },
+ "ticker": "REGN"
+}

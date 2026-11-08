@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 8,
+  "hold": 12,
+  "sell": 7,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 15.49864,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 6395072783
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 16.39704,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 6799142410
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 157.18,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "gl",
+ "source": "FMP",
+ "symbol": "GL",
+ "target": {
+  "average": 174.6,
+  "currency": "USD",
+  "high": 197,
+  "low": 165,
+  "median": 166
+ },
+ "ticker": "GL"
+}

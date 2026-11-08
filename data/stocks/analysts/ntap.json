@@ -1,0 +1,42 @@
+{
+ "analysts": 71,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 37,
+  "sell": 8,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 10.01667,
+   "fiscal_year_end": "2027-04-24",
+   "revenue_analysts": 14,
+   "revenue_avg": 8186964557
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 11.15969,
+   "fiscal_year_end": "2028-04-24",
+   "revenue_analysts": 15,
+   "revenue_avg": 8717665360
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 169.19,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ntap",
+ "source": "FMP",
+ "symbol": "NTAP",
+ "target": {
+  "average": 219.3,
+  "currency": "USD",
+  "high": 300,
+  "low": 170,
+  "median": 205
+ },
+ "ticker": "NTAP"
+}

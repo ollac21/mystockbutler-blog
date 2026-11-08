@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 39,
+  "hold": 9,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 21,
+   "eps_avg": 12.593,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 26,
+   "revenue_avg": 8323866645
+  },
+  {
+   "eps_analysts": 21,
+   "eps_avg": 14.16761,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 26,
+   "revenue_avg": 9238805949
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 261.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "adsk",
+ "source": "FMP",
+ "symbol": "ADSK",
+ "target": {
+  "average": 301.13,
+  "currency": "USD",
+  "high": 341,
+  "low": 215,
+  "median": 305
+ },
+ "ticker": "ADSK"
+}

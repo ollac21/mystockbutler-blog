@@ -1,0 +1,42 @@
+{
+ "analysts": 48,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 31,
+  "hold": 13,
+  "sell": 3,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 18.94743,
+   "fiscal_year_end": "2027-03-28",
+   "revenue_analysts": 12,
+   "revenue_avg": 8693953278
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 20.93442,
+   "fiscal_year_end": "2028-03-28",
+   "revenue_analysts": 12,
+   "revenue_avg": 9140333099
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 376.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rl",
+ "source": "FMP",
+ "symbol": "RL",
+ "target": {
+  "average": 457.78,
+  "currency": "USD",
+  "high": 521,
+  "low": 425,
+  "median": 460
+ },
+ "ticker": "RL"
+}

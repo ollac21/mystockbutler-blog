@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 22,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 8.54944,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 8610133388
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 8.99634,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 8903730308
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 105.59,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "zbh",
+ "source": "FMP",
+ "symbol": "ZBH",
+ "target": {
+  "average": 109.11,
+  "currency": "USD",
+  "high": 125,
+  "low": 93,
+  "median": 110
+ },
+ "ticker": "ZBH"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 45,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 19,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 25.92371,
+   "fiscal_year_end": "2027-01-30",
+   "revenue_analysts": 19,
+   "revenue_avg": 194557293625
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 31.02773,
+   "fiscal_year_end": "2028-01-30",
+   "revenue_analysts": 20,
+   "revenue_avg": 235649236437
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 328.53,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dell",
+ "source": "FMP",
+ "symbol": "DELL",
+ "target": {
+  "average": 564.65,
+  "currency": "USD",
+  "high": 735,
+  "low": 289,
+  "median": 570
+ },
+ "ticker": "DELL"
+}

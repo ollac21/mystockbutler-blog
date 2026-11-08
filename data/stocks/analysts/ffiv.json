@@ -1,0 +1,42 @@
+{
+ "analysts": 61,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 34,
+  "sell": 3,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 18.20358,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 9,
+   "revenue_avg": 3703472524
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 20.21975,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 9,
+   "revenue_avg": 3955377153
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 310.84,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ffiv",
+ "source": "FMP",
+ "symbol": "FFIV",
+ "target": {
+  "average": 430.5,
+  "currency": "USD",
+  "high": 500,
+  "low": 300,
+  "median": 455.5
+ },
+ "ticker": "FFIV"
+}

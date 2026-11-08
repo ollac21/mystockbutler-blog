@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 6,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 31.62344,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 46940251225
+  },
+  {
+   "eps_analysts": 20,
+   "eps_avg": 25.75346,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 53572158410
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 774.11,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gev",
+ "source": "FMP",
+ "symbol": "GEV",
+ "target": {
+  "average": 1240.56,
+  "currency": "USD",
+  "high": 1450,
+  "low": 949,
+  "median": 1250
+ },
+ "ticker": "GEV"
+}

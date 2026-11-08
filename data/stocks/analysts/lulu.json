@@ -1,0 +1,42 @@
+{
+ "analysts": 71,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 37,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 9.59381,
+   "fiscal_year_end": "2027-02-01",
+   "revenue_analysts": 24,
+   "revenue_avg": 10469114196
+  },
+  {
+   "eps_analysts": 21,
+   "eps_avg": 8.40368,
+   "fiscal_year_end": "2028-02-01",
+   "revenue_analysts": 25,
+   "revenue_avg": 10309578270
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 110.79,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "lulu",
+ "source": "FMP",
+ "symbol": "LULU",
+ "target": {
+  "average": 97.67,
+  "currency": "USD",
+  "high": 115,
+  "low": 70,
+  "median": 97.5
+ },
+ "ticker": "LULU"
+}

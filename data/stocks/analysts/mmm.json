@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 9.11585,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 25453639131
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 9.94047,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 26604502560
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 185.15,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mmm",
+ "source": "FMP",
+ "symbol": "MMM",
+ "target": {
+  "average": 188.13,
+  "currency": "USD",
+  "high": 230,
+  "low": 135,
+  "median": 191
+ },
+ "ticker": "MMM"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 20.5829,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 6920674048
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 23.02959,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 7696011428
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 429.45,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hubb",
+ "source": "FMP",
+ "symbol": "HUBB",
+ "target": {
+  "average": 559.29,
+  "currency": "USD",
+  "high": 630,
+  "low": 515,
+  "median": 550
+ },
+ "ticker": "HUBB"
+}

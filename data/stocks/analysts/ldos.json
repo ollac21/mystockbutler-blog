@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 12.53668,
+   "fiscal_year_end": "2027-01-02",
+   "revenue_analysts": 4,
+   "revenue_avg": 18177488531
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 11.98483,
+   "fiscal_year_end": "2028-01-02",
+   "revenue_analysts": 10,
+   "revenue_avg": 18658201185
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 132.68,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ldos",
+ "source": "FMP",
+ "symbol": "LDOS",
+ "target": {
+  "average": 151.89,
+  "currency": "USD",
+  "high": 170,
+  "low": 130,
+  "median": 160
+ },
+ "ticker": "LDOS"
+}

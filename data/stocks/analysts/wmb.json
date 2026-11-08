@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 2.46767,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 12536282199
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 2.63076,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 14526931979
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 64.08,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wmb",
+ "source": "FMP",
+ "symbol": "WMB",
+ "target": {
+  "average": 87.25,
+  "currency": "USD",
+  "high": 103,
+  "low": 82,
+  "median": 85
+ },
+ "ticker": "WMB"
+}

@@ -1,0 +1,34 @@
+{
+ "analysts": 2,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 1,
+  "hold": 0,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 0.53997,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 4224677960
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 0.65437,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 5166974456
+  }
+ ],
+ "estimates_currency": "GBP",
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "inf-l",
+ "source": "FMP",
+ "symbol": "INF.L",
+ "ticker": "INF.L"
+}

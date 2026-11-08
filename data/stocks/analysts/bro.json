@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 20,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 4.43064,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 6906212306
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 4.75354,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 7147377388
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 72.12,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "bro",
+ "source": "FMP",
+ "symbol": "BRO",
+ "target": {
+  "average": 72.67,
+  "currency": "USD",
+  "high": 90,
+  "low": 55,
+  "median": 73
+ },
+ "ticker": "BRO"
+}

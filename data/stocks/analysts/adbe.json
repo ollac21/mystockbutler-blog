@@ -1,0 +1,42 @@
+{
+ "analysts": 64,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 28,
+  "sell": 8,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 23,
+   "eps_avg": 24.48083,
+   "fiscal_year_end": "2026-11-28",
+   "revenue_analysts": 28,
+   "revenue_avg": 26606453991
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 27.57246,
+   "fiscal_year_end": "2027-11-28",
+   "revenue_analysts": 29,
+   "revenue_avg": 29058680188
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 239.3,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "adbe",
+ "source": "FMP",
+ "symbol": "ADBE",
+ "target": {
+  "average": 260.61,
+  "currency": "USD",
+  "high": 379,
+  "low": 190,
+  "median": 252.5
+ },
+ "ticker": "ADBE"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 9,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 5.0677,
+   "fiscal_year_end": "2027-06-27",
+   "revenue_analysts": 7,
+   "revenue_avg": 89341445671
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 5.40663,
+   "fiscal_year_end": "2028-06-27",
+   "revenue_analysts": 8,
+   "revenue_avg": 91812547531
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 76.86,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "syy",
+ "source": "FMP",
+ "symbol": "SYY",
+ "target": {
+  "average": 88.33,
+  "currency": "USD",
+  "high": 91,
+  "low": 84,
+  "median": 90
+ },
+ "ticker": "SYY"
+}

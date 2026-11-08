@@ -1,0 +1,42 @@
+{
+ "analysts": 56,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 25,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 38.96443,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 54189701476
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 39.30475,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 53677811699
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 118.07,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "chtr",
+ "source": "FMP",
+ "symbol": "CHTR",
+ "target": {
+  "average": 156.56,
+  "currency": "USD",
+  "high": 380,
+  "low": 101,
+  "median": 125
+ },
+ "ticker": "CHTR"
+}

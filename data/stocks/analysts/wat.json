@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 16,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 14.67194,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 6487853214
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 16.53352,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 7160323405
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 457.6,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wat",
+ "source": "FMP",
+ "symbol": "WAT",
+ "target": {
+  "average": 470,
+  "currency": "USD",
+  "high": 535,
+  "low": 400,
+  "median": 477.5
+ },
+ "ticker": "WAT"
+}

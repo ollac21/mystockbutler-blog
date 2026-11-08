@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 17,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 1.09472,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 1698735255
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 0.58139,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 1726342810
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 36.58,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "udr",
+ "source": "FMP",
+ "symbol": "UDR",
+ "target": {
+  "average": 40.91,
+  "currency": "USD",
+  "high": 46,
+  "low": 36,
+  "median": 41
+ },
+ "ticker": "UDR"
+}

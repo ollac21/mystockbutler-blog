@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 15,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 4.05004,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 9845136174
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 4.41791,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 9887641425
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 77.69,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "qsr",
+ "source": "FMP",
+ "symbol": "QSR",
+ "target": {
+  "average": 85.63,
+  "currency": "",
+  "high": 91,
+  "low": 80,
+  "median": 85.5
+ },
+ "ticker": "QSR"
+}

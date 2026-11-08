@@ -1,0 +1,42 @@
+{
+ "analysts": 56,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 48,
+  "hold": 7,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 18.23256,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 13253646513
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 20.16346,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 14684300337
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 547.09,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "vrtx",
+ "source": "FMP",
+ "symbol": "VRTX",
+ "target": {
+  "average": 580.2,
+  "currency": "USD",
+  "high": 665,
+  "low": 350,
+  "median": 615
+ },
+ "ticker": "VRTX"
+}
