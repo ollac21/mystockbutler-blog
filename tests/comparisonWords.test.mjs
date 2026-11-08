@@ -58,7 +58,13 @@ test('each built page: the header says the offer and jumps to the box; a line un
   const { hubs } = buildStockSite(FIXTURES.map(load), { today: new Date('2026-10-30T12:00:00Z') });
   for (const g of pages) {
     const h = hubs.find((x) => x.path === g.path).html;
-    if (/<body class="v2">/.test(h)) {
+    if (/<body class="v2">/.test(h) && /class="d-shell"/.test(h)) {
+      // the Claude prompts page (owner 2026-11-08 "publish it"): the same three buttons, each a ticker box with a real report's ticker
+      assert.match(h, /<a class="btn btn--sm" data-cta="header" href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/, g.name);
+      assert.match(h, /<a class="btn tk__go" data-tk id="firstbtn"[^>]*href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=[A-Z]/, g.name);
+      assert.match(h, /id="offer"[\s\S]*?href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=[A-Z]/, g.name);
+      assert.doesNotMatch(h, /<form class="tickerbox"/, g.name);
+    } else if (/<body class="v2">/.test(h)) {
       // B115 round 3 (owner 2026-11-04): the approved frame: the header's button, the first button and the closing button each open
       // the sign-up with a real report's ticker; the old ticker box is gone
       assert.match(h, /<a class="btn btn--sm" data-cta="header" href="https:\/\/app\.mystockbutler\.com\/signup\?ticker=/, g.name);
