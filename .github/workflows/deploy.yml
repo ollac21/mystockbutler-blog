@@ -29,6 +29,38 @@ jobs:
 
       - run: npm ci
 
+      # SEO row 1 (owner 2026-11-07): the analysts' view is refreshed once a day, not at every 30-minute build. The day's fetch is
+      # cached under the UTC date: a build on a cache hit restores it; the first build of a new UTC day misses, asks FMP
+      # (scripts/fetchAnalysts.mjs, the key only from the secret) and saves the day. A failed or thin fetch (continue-on-error,
+      # exit 1 under half the files) is NOT saved, so the next build tries again; either way the build runs with the files
+      # committed in data/stocks/analysts/ and analysts.mjs draws nothing from a file older than 14 days.
+      - name: Day key for the analysts' cache
+        id: day
+        run: echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore the day's analyst files
+        id: analysts-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: data/stocks/analysts
+          key: analysts-${{ steps.day.outputs.date }}
+
+      - name: Fetch the analyst files (once a day)
+        id: analysts-fetch
+        if: steps.analysts-cache.outputs.cache-hit != 'true'
+        continue-on-error: true
+        run: node scripts/fetchAnalysts.mjs
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          STOCK_PAGES_URL: https://app.mystockbutler.com/functions/getPublicStockPages
+
+      - name: Save the day's analyst files
+        if: steps.analysts-cache.outputs.cache-hit != 'true' && steps.analysts-fetch.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: data/stocks/analysts
+          key: analysts-${{ steps.day.outputs.date }}
+
       - name: Render published posts
         run: node scripts/render.mjs
         env:
