@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 21.27813,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 6303681495
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 22.42732,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 6734491535
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 322.02,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "zbra",
+ "source": "FMP",
+ "symbol": "ZBRA",
+ "target": {
+  "average": 380,
+  "currency": "USD",
+  "high": 435,
+  "low": 310,
+  "median": 380
+ },
+ "ticker": "ZBRA"
+}

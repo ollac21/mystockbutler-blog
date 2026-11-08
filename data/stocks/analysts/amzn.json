@@ -1,0 +1,42 @@
+{
+ "analysts": 96,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 87,
+  "hold": 8,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 38,
+   "eps_avg": 12.84248,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 41,
+   "revenue_avg": 829633412190
+  },
+  {
+   "eps_analysts": 43,
+   "eps_avg": 10.80052,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 45,
+   "revenue_avg": 961234366522
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 259.3,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "amzn",
+ "source": "FMP",
+ "symbol": "AMZN",
+ "target": {
+  "average": 328.48,
+  "currency": "USD",
+  "high": 390,
+  "low": 250,
+  "median": 329
+ },
+ "ticker": "AMZN"
+}

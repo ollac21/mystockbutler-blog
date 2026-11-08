@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 3,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 1.43549,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 3164414824
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 1.69666,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 3433368303
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 32.16,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "celh",
+ "source": "FMP",
+ "symbol": "CELH",
+ "target": {
+  "average": 42,
+  "currency": "USD",
+  "high": 57,
+  "low": 26,
+  "median": 42
+ },
+ "ticker": "CELH"
+}

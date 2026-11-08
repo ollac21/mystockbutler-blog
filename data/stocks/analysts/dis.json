@@ -1,0 +1,42 @@
+{
+ "analysts": 64,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 40,
+  "hold": 20,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 7.51455,
+   "fiscal_year_end": "2027-09-27",
+   "revenue_analysts": 21,
+   "revenue_avg": 106250471043
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.47781,
+   "fiscal_year_end": "2028-09-27",
+   "revenue_analysts": 19,
+   "revenue_avg": 110933688628
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 116.75,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dis",
+ "source": "FMP",
+ "symbol": "DIS",
+ "target": {
+  "average": 120.88,
+  "currency": "USD",
+  "high": 132,
+  "low": 111,
+  "median": 119
+ },
+ "ticker": "DIS"
+}

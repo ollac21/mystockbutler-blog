@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 28,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 0.35718,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 12136971488
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 1.38116,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 13016747925
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 22.36,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "mos",
+ "source": "FMP",
+ "symbol": "MOS",
+ "target": {
+  "average": 24.7,
+  "currency": "USD",
+  "high": 31,
+  "low": 19,
+  "median": 23.5
+ },
+ "ticker": "MOS"
+}

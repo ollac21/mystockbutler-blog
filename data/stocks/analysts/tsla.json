@@ -1,0 +1,42 @@
+{
+ "analysts": 83,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 35,
+  "hold": 34,
+  "sell": 14,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 25,
+   "eps_avg": 1.68269,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 33,
+   "revenue_avg": 107545759734
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 2.02264,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 33,
+   "revenue_avg": 121878461465
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 358.22,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tsla",
+ "source": "FMP",
+ "symbol": "TSLA",
+ "target": {
+  "average": 442.59,
+  "currency": "USD",
+  "high": 840,
+  "low": 157,
+  "median": 442
+ },
+ "ticker": "TSLA"
+}

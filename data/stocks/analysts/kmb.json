@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 19,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 7.40504,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 16619785141
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 7.39172,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 17026720727
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 108.43,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "kmb",
+ "source": "FMP",
+ "symbol": "KMB",
+ "target": {
+  "average": 114.2,
+  "currency": "USD",
+  "high": 120,
+  "low": 105,
+  "median": 115
+ },
+ "ticker": "KMB"
+}

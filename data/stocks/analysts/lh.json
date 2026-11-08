@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 18.49695,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 14828327111
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 19.73648,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 15644046838
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 366.57,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lh",
+ "source": "FMP",
+ "symbol": "LH",
+ "target": {
+  "average": 389.89,
+  "currency": "USD",
+  "high": 420,
+  "low": 355,
+  "median": 395
+ },
+ "ticker": "LH"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 33.80516,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 183526725634
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 31.95013,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 170287440113
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 245.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "psx",
+ "source": "FMP",
+ "symbol": "PSX",
+ "target": {
+  "average": 290.5,
+  "currency": "USD",
+  "high": 346,
+  "low": 216,
+  "median": 292
+ },
+ "ticker": "PSX"
+}

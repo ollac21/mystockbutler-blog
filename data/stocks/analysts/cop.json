@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 38,
+  "hold": 10,
+  "sell": 3,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 11.48957,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 73758310489
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 10.64019,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 69121152578
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 136.27,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cop",
+ "source": "FMP",
+ "symbol": "COP",
+ "target": {
+  "average": 157,
+  "currency": "USD",
+  "high": 189,
+  "low": 130,
+  "median": 157
+ },
+ "ticker": "COP"
+}

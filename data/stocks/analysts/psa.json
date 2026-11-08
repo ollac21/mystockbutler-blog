@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 23,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 9.64152,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 5187856792
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 9.55641,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 5707757588
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 337.46,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "psa",
+ "source": "FMP",
+ "symbol": "PSA",
+ "target": {
+  "average": 323.38,
+  "currency": "USD",
+  "high": 351,
+  "low": 294,
+  "median": 321
+ },
+ "ticker": "PSA"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 2,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.49038,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 10296569102
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 6.6492,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 11718973862
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 205.76,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "hwm",
+ "source": "FMP",
+ "symbol": "HWM",
+ "target": {
+  "average": 324.1,
+  "currency": "USD",
+  "high": 350,
+  "low": 280,
+  "median": 332.5
+ },
+ "ticker": "HWM"
+}

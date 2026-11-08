@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 10,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.42286,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 20148414458
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 9.86232,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 20459120136
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 220.05,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "hon",
+ "source": "FMP",
+ "symbol": "HON",
+ "target": {
+  "average": 256.92,
+  "currency": "USD",
+  "high": 276,
+  "low": 231,
+  "median": 256
+ },
+ "ticker": "HON"
+}

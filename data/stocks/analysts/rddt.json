@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 20,
+   "eps_avg": 5.4388,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 3391442687
+  },
+  {
+   "eps_analysts": 22,
+   "eps_avg": 6.82465,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 4359393561
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 95.1,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rddt",
+ "source": "FMP",
+ "symbol": "RDDT",
+ "target": {
+  "average": 189.9,
+  "currency": "USD",
+  "high": 265,
+  "low": 120,
+  "median": 197.5
+ },
+ "ticker": "RDDT"
+}

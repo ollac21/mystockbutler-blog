@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 7,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 12.17164,
+   "fiscal_year_end": "2027-01-02",
+   "revenue_analysts": 15,
+   "revenue_avg": 23619555128
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 13.58368,
+   "fiscal_year_end": "2028-01-02",
+   "revenue_analysts": 15,
+   "revenue_avg": 25275592965
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 259.89,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lhx",
+ "source": "FMP",
+ "symbol": "LHX",
+ "target": {
+  "average": 337,
+  "currency": "USD",
+  "high": 375,
+  "low": 293,
+  "median": 340
+ },
+ "ticker": "LHX"
+}

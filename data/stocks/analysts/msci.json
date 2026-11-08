@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 6,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 19.69545,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 3523460473
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 22.51781,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 3839899177
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 641.01,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "msci",
+ "source": "FMP",
+ "symbol": "MSCI",
+ "target": {
+  "average": 687.7,
+  "currency": "USD",
+  "high": 735,
+  "low": 615,
+  "median": 682
+ },
+ "ticker": "MSCI"
+}

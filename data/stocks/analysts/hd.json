@@ -1,0 +1,42 @@
+{
+ "analysts": 63,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 36,
+  "hold": 22,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 21,
+   "eps_avg": 14.99554,
+   "fiscal_year_end": "2027-02-01",
+   "revenue_analysts": 26,
+   "revenue_avg": 171552608785
+  },
+  {
+   "eps_analysts": 21,
+   "eps_avg": 15.91212,
+   "fiscal_year_end": "2028-02-01",
+   "revenue_analysts": 26,
+   "revenue_avg": 177368936439
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 343.47,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "hd",
+ "source": "FMP",
+ "symbol": "HD",
+ "target": {
+  "average": 378.64,
+  "currency": "USD",
+  "high": 425,
+  "low": 322,
+  "median": 377.5
+ },
+ "ticker": "HD"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 22,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 10,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 46.13021,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 20018385605
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 51.58615,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 21022725525
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 501.49,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "amp",
+ "source": "FMP",
+ "symbol": "AMP",
+ "target": {
+  "average": 547.2,
+  "currency": "USD",
+  "high": 645,
+  "low": 483,
+  "median": 520
+ },
+ "ticker": "AMP"
+}

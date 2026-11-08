@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 5,
+  "hold": 21,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.96086,
+   "fiscal_year_end": "2027-05-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 6863256043
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 6.4103,
+   "fiscal_year_end": "2028-05-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 7239776288
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 117.06,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "payx",
+ "source": "FMP",
+ "symbol": "PAYX",
+ "target": {
+  "average": 111.71,
+  "currency": "USD",
+  "high": 120,
+  "low": 107,
+  "median": 111
+ },
+ "ticker": "PAYX"
+}

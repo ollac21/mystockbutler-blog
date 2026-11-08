@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 35.73229,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 24976822031
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 39.92324,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 26803711621
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 917.79,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ph",
+ "source": "FMP",
+ "symbol": "PH",
+ "target": {
+  "average": 1140.67,
+  "currency": "USD",
+  "high": 1358,
+  "low": 950,
+  "median": 1200
+ },
+ "ticker": "PH"
+}

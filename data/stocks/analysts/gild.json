@@ -1,0 +1,42 @@
+{
+ "analysts": 58,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 38,
+  "hold": 19,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": -0.84824,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 31268447838
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 10.10325,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 33488924621
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 166.89,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gild",
+ "source": "FMP",
+ "symbol": "GILD",
+ "target": {
+  "average": 165.38,
+  "currency": "USD",
+  "high": 196,
+  "low": 126,
+  "median": 165
+ },
+ "ticker": "GILD"
+}

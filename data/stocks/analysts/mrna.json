@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 16,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": -8.41843,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 2101039392
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": -4.75503,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 2434277475
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 254.19,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "mrna",
+ "source": "FMP",
+ "symbol": "MRNA",
+ "target": {
+  "average": 132.7,
+  "currency": "USD",
+  "high": 245,
+  "low": 25,
+  "median": 132.5
+ },
+ "ticker": "MRNA"
+}

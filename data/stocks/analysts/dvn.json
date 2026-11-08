@@ -1,0 +1,42 @@
+{
+ "analysts": 64,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 45,
+  "hold": 18,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.54192,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 26103177628
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 5.20948,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 24661468019
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 42.21,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dvn",
+ "source": "FMP",
+ "symbol": "DVN",
+ "target": {
+  "average": 63,
+  "currency": "USD",
+  "high": 68,
+  "low": 54,
+  "median": 65
+ },
+ "ticker": "DVN"
+}

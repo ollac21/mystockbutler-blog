@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 8,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 12.96833,
+   "fiscal_year_end": "2027-10-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 3214600000
+  },
+  {
+   "eps_analysts": 3,
+   "eps_avg": 14.075,
+   "fiscal_year_end": "2028-10-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 3360350000
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 309.86,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ndsn",
+ "source": "FMP",
+ "symbol": "NDSN",
+ "target": {
+  "average": 360.2,
+  "currency": "USD",
+  "high": 375,
+  "low": 345,
+  "median": 360
+ },
+ "ticker": "NDSN"
+}

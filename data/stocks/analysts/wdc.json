@@ -1,0 +1,42 @@
+{
+ "analysts": 61,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 44,
+  "hold": 16,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 24.73405,
+   "fiscal_year_end": "2027-07-03",
+   "revenue_analysts": 17,
+   "revenue_avg": 21244563304
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 40.42831,
+   "fiscal_year_end": "2028-07-03",
+   "revenue_analysts": 17,
+   "revenue_avg": 30220528695
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 263.78,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "wdc",
+ "source": "FMP",
+ "symbol": "WDC",
+ "target": {
+  "average": 617.15,
+  "currency": "USD",
+  "high": 1050,
+  "low": 405,
+  "median": 575
+ },
+ "ticker": "WDC"
+}

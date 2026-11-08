@@ -1,0 +1,42 @@
+{
+ "analysts": 43,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 8,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 3.0551,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 40019334930
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 3.36082,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 40984753987
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 66.02,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mdlz",
+ "source": "FMP",
+ "symbol": "MDLZ",
+ "target": {
+  "average": 72,
+  "currency": "USD",
+  "high": 75,
+  "low": 66,
+  "median": 72.5
+ },
+ "ticker": "MDLZ"
+}

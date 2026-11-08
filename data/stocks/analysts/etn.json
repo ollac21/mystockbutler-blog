@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 11,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 13.73646,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 33611886025
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 16.33686,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 37526299269
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 341.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "etn",
+ "source": "FMP",
+ "symbol": "ETN",
+ "target": {
+  "average": 500.75,
+  "currency": "USD",
+  "high": 520,
+  "low": 485,
+  "median": 501
+ },
+ "ticker": "ETN"
+}

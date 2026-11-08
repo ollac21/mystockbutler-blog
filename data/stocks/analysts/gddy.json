@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 15,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 7.47936,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 5251947139
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 9.25132,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 5524304725
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 114.38,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gddy",
+ "source": "FMP",
+ "symbol": "GDDY",
+ "target": {
+  "average": 99.67,
+  "currency": "USD",
+  "high": 120,
+  "low": 76,
+  "median": 97.5
+ },
+ "ticker": "GDDY"
+}

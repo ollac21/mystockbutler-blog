@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 20,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 7.90116,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 20683076813
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 7.88588,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 21925951826
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 131.14,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dltr",
+ "source": "FMP",
+ "symbol": "DLTR",
+ "target": {
+  "average": 139.33,
+  "currency": "USD",
+  "high": 160,
+  "low": 121,
+  "median": 138
+ },
+ "ticker": "DLTR"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 10,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 8.52999,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 8624058363
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 9.60967,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 9992802654
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 228.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ame",
+ "source": "FMP",
+ "symbol": "AME",
+ "target": {
+  "average": 284.89,
+  "currency": "USD",
+  "high": 316,
+  "low": 255,
+  "median": 285
+ },
+ "ticker": "AME"
+}

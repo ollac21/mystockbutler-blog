@@ -1,0 +1,42 @@
+{
+ "analysts": 56,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 32,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 9.50783,
+   "fiscal_year_end": "2027-02-01",
+   "revenue_analysts": 17,
+   "revenue_avg": 8271319654
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 10.50921,
+   "fiscal_year_end": "2028-02-01",
+   "revenue_analysts": 17,
+   "revenue_avg": 8705848308
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 254.06,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "wsm",
+ "source": "FMP",
+ "symbol": "WSM",
+ "target": {
+  "average": 249.54,
+  "currency": "USD",
+  "high": 286,
+  "low": 190,
+  "median": 259
+ },
+ "ticker": "WSM"
+}

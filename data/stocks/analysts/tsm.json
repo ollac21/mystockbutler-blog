@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 545.55722,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 23,
+   "revenue_avg": 5478942895873
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 734.40423,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 7592900202294
+  }
+ ],
+ "estimates_currency": "TWD",
+ "price": 375.44,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tsm",
+ "source": "FMP",
+ "symbol": "TSM",
+ "target": {
+  "average": 585.57,
+  "currency": "USD",
+  "high": 700,
+  "low": 500,
+  "median": 560
+ },
+ "ticker": "TSM"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 22,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 1
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 1.5513,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 29624652685
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 2.14527,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 37481527860
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 73.57,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "cvna",
+ "source": "FMP",
+ "symbol": "CVNA",
+ "target": {
+  "average": 82.4,
+  "currency": "USD",
+  "high": 100,
+  "low": 67,
+  "median": 83
+ },
+ "ticker": "CVNA"
+}

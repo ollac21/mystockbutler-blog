@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 9,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 4.29044,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 6309155734
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 4.56397,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 6674091320
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 87.54,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "evrg",
+ "source": "FMP",
+ "symbol": "EVRG",
+ "target": {
+  "average": 89.67,
+  "currency": "USD",
+  "high": 97,
+  "low": 85,
+  "median": 88.5
+ },
+ "ticker": "EVRG"
+}

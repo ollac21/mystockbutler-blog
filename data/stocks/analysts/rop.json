@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 7,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 22.38683,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 8567302793
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 24.61424,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 9094020696
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 476.6,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rop",
+ "source": "FMP",
+ "symbol": "ROP",
+ "target": {
+  "average": 470.38,
+  "currency": "USD",
+  "high": 540,
+  "low": 355,
+  "median": 471
+ },
+ "ticker": "ROP"
+}

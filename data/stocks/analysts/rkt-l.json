@@ -1,0 +1,34 @@
+{
+ "analysts": 2,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 0,
+  "hold": 1,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 3.41828,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 13164527234
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 3.54064,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 13422745804
+  }
+ ],
+ "estimates_currency": "GBP",
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "rkt-l",
+ "source": "FMP",
+ "symbol": "RKT.L",
+ "ticker": "RKT.L"
+}

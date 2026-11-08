@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 16,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 5.26229,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 200212912216
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 5.52704,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 195154302330
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 69.7,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cnc",
+ "source": "FMP",
+ "symbol": "CNC",
+ "target": {
+  "average": 75.43,
+  "currency": "USD",
+  "high": 80,
+  "low": 69,
+  "median": 78.5
+ },
+ "ticker": "CNC"
+}

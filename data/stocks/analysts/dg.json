@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 21,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 23,
+   "eps_avg": 7.91127,
+   "fiscal_year_end": "2027-01-30",
+   "revenue_analysts": 22,
+   "revenue_avg": 44522212709
+  },
+  {
+   "eps_analysts": 24,
+   "eps_avg": 8.34829,
+   "fiscal_year_end": "2028-01-30",
+   "revenue_analysts": 22,
+   "revenue_avg": 46311241756
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 133.75,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dg",
+ "source": "FMP",
+ "symbol": "DG",
+ "target": {
+  "average": 137.27,
+  "currency": "USD",
+  "high": 160,
+  "low": 110,
+  "median": 141
+ },
+ "ticker": "DG"
+}

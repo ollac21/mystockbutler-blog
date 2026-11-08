@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 12.1734,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 33730922759
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 13.32276,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 34719434217
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 249.95,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ceg",
+ "source": "FMP",
+ "symbol": "CEG",
+ "target": {
+  "average": 341.85,
+  "currency": "USD",
+  "high": 380,
+  "low": 296,
+  "median": 343
+ },
+ "ticker": "CEG"
+}

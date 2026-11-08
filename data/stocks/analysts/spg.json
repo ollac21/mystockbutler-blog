@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 20,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 6.64839,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 6718292057
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 7.00099,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 6967934931
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 228.42,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "spg",
+ "source": "FMP",
+ "symbol": "SPG",
+ "target": {
+  "average": 218.45,
+  "currency": "USD",
+  "high": 254,
+  "low": 205,
+  "median": 216
+ },
+ "ticker": "SPG"
+}

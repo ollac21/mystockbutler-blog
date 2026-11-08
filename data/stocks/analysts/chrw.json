@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 19,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 6.35477,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 19114472017
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 7.44547,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 20903225210
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 125.33,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "chrw",
+ "source": "FMP",
+ "symbol": "CHRW",
+ "target": {
+  "average": 179.88,
+  "currency": "USD",
+  "high": 226,
+  "low": 91,
+  "median": 185
+ },
+ "ticker": "CHRW"
+}

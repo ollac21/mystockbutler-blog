@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 6,
+  "hold": 17,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 1.566,
+   "fiscal_year_end": "2027-10-26",
+   "revenue_analysts": 5,
+   "revenue_avg": 12477028892
+  },
+  {
+   "eps_analysts": 1,
+   "eps_avg": 1.656,
+   "fiscal_year_end": "2028-10-26",
+   "revenue_analysts": 3,
+   "revenue_avg": 12764826000
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 21.95,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hrl",
+ "source": "FMP",
+ "symbol": "HRL",
+ "target": {
+  "average": 25,
+  "currency": "USD",
+  "high": 28,
+  "low": 23,
+  "median": 25
+ },
+ "ticker": "HRL"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 5,
+  "hold": 20,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 10.74261,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 5,
+   "revenue_avg": 8141190500
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 11.49261,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 6,
+   "revenue_avg": 9150508021
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 285.57,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "grmn",
+ "source": "FMP",
+ "symbol": "GRMN",
+ "target": {
+  "average": 320.4,
+  "currency": "USD",
+  "high": 370,
+  "low": 277,
+  "median": 325
+ },
+ "ticker": "GRMN"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 33,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 2,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 8.16395,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 419258746060
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 8.61701,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 431363293079
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 83.85,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cvs",
+ "source": "FMP",
+ "symbol": "CVS",
+ "target": {
+  "average": 110.94,
+  "currency": "USD",
+  "high": 123,
+  "low": 103,
+  "median": 112
+ },
+ "ticker": "CVS"
+}

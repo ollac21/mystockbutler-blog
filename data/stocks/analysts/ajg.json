@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 10,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 13.1041,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 16485145312
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 14.83992,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 17849992107
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 281.61,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ajg",
+ "source": "FMP",
+ "symbol": "AJG",
+ "target": {
+  "average": 284.92,
+  "currency": "USD",
+  "high": 300,
+  "low": 260,
+  "median": 287
+ },
+ "ticker": "AJG"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 13,
+  "sell": 3,
+  "strong_buy": 2,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 14.3663,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 2896085947
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 15.47398,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 3041672997
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 353.27,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cboe",
+ "source": "FMP",
+ "symbol": "CBOE",
+ "target": {
+  "average": 345.83,
+  "currency": "USD",
+  "high": 450,
+  "low": 300,
+  "median": 326
+ },
+ "ticker": "CBOE"
+}

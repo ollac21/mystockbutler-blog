@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 8.5052,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 6668457095
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 9.65354,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 7076929015
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 189.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "efx",
+ "source": "FMP",
+ "symbol": "EFX",
+ "target": {
+  "average": 197.71,
+  "currency": "USD",
+  "high": 245,
+  "low": 148,
+  "median": 200
+ },
+ "ticker": "EFX"
+}

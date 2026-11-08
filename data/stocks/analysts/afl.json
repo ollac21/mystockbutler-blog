@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 18,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 7.10313,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 16793281620
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 7.65626,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 16947874869
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 124.06,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "afl",
+ "source": "FMP",
+ "symbol": "AFL",
+ "target": {
+  "average": 122.33,
+  "currency": "USD",
+  "high": 138,
+  "low": 108,
+  "median": 123.5
+ },
+ "ticker": "AFL"
+}

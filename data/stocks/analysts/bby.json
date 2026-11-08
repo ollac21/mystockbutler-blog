@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 11,
+  "hold": 24,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 6.80963,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 42674938095
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 7.2236,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 43398548243
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 99.63,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "bby",
+ "source": "FMP",
+ "symbol": "BBY",
+ "target": {
+  "average": 86.77,
+  "currency": "USD",
+  "high": 100,
+  "low": 60,
+  "median": 90
+ },
+ "ticker": "BBY"
+}

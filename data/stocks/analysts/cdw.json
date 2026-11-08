@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 11.22339,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 25064983848
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 12.38652,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 26415749656
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 157,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cdw",
+ "source": "FMP",
+ "symbol": "CDW",
+ "target": {
+  "average": 150.33,
+  "currency": "USD",
+  "high": 171,
+  "low": 130,
+  "median": 150
+ },
+ "ticker": "CDW"
+}

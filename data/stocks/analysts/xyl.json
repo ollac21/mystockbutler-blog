@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 21,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 5.44409,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 8965222190
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.85513,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 9278451361
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 97.83,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "xyl",
+ "source": "FMP",
+ "symbol": "XYL",
+ "target": {
+  "average": 124,
+  "currency": "USD",
+  "high": 150,
+  "low": 99,
+  "median": 124
+ },
+ "ticker": "XYL"
+}

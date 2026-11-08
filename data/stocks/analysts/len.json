@@ -1,0 +1,42 @@
+{
+ "analysts": 50,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 18,
+  "sell": 10,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 4.80631,
+   "fiscal_year_end": "2026-11-30",
+   "revenue_analysts": 8,
+   "revenue_avg": 31428985177
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 4.98562,
+   "fiscal_year_end": "2027-11-30",
+   "revenue_analysts": 7,
+   "revenue_avg": 31663791886
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 88.74,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "len",
+ "source": "FMP",
+ "symbol": "LEN",
+ "target": {
+  "average": 77.38,
+  "currency": "USD",
+  "high": 108,
+  "low": 63,
+  "median": 72.5
+ },
+ "ticker": "LEN"
+}

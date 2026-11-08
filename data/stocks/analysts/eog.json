@@ -1,0 +1,42 @@
+{
+ "analysts": 66,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 38,
+  "hold": 27,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 17.93473,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 29084425333
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 16.13811,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 27049237007
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 147.13,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "eog",
+ "source": "FMP",
+ "symbol": "EOG",
+ "target": {
+  "average": 165.21,
+  "currency": "USD",
+  "high": 193,
+  "low": 138,
+  "median": 161
+ },
+ "ticker": "EOG"
+}

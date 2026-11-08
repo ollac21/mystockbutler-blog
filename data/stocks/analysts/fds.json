@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 3,
+  "hold": 20,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 19.67227,
+   "fiscal_year_end": "2027-08-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 2620239460
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 21.71875,
+   "fiscal_year_end": "2028-08-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 2778177694
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 327.89,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "fds",
+ "source": "FMP",
+ "symbol": "FDS",
+ "target": {
+  "average": 260.08,
+  "currency": "USD",
+  "high": 301,
+  "low": 215,
+  "median": 253.5
+ },
+ "ticker": "FDS"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 4,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 25.53221,
+   "fiscal_year_end": "2026-12-28",
+   "revenue_analysts": 7,
+   "revenue_avg": 6631724871
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 27.7368,
+   "fiscal_year_end": "2027-12-28",
+   "revenue_analysts": 7,
+   "revenue_avg": 7035025559
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 618.6,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tdy",
+ "source": "FMP",
+ "symbol": "TDY",
+ "target": {
+  "average": 704.33,
+  "currency": "USD",
+  "high": 830,
+  "low": 465,
+  "median": 745
+ },
+ "ticker": "TDY"
+}

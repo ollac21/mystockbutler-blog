@@ -1,0 +1,42 @@
+{
+ "analysts": 51,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 20,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 5.97723,
+   "fiscal_year_end": "2027-04-24",
+   "revenue_analysts": 21,
+   "revenue_avg": 39047515619
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 6.39496,
+   "fiscal_year_end": "2028-04-24",
+   "revenue_analysts": 21,
+   "revenue_avg": 40280466832
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 101.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mdt",
+ "source": "FMP",
+ "symbol": "MDT",
+ "target": {
+  "average": 97.73,
+  "currency": "USD",
+  "high": 115,
+  "low": 83,
+  "median": 97
+ },
+ "ticker": "MDT"
+}

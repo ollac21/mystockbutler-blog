@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 22,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 9.33984,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 15580148567
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 9.54682,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 15696878622
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 132.49,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "phm",
+ "source": "FMP",
+ "symbol": "PHM",
+ "target": {
+  "average": 139.55,
+  "currency": "USD",
+  "high": 166,
+  "low": 109,
+  "median": 138
+ },
+ "ticker": "PHM"
+}

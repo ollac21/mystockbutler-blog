@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 18,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 13.17661,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 27418717106
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 14.39932,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 29010800081
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 290.16,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "unp",
+ "source": "FMP",
+ "symbol": "UNP",
+ "target": {
+  "average": 327.6,
+  "currency": "USD",
+  "high": 350,
+  "low": 294,
+  "median": 330.5
+ },
+ "ticker": "UNP"
+}

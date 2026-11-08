@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 3,
+  "hold": 17,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 6.10941,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 17647530302
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 6.49193,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 18375265034
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 118.56,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ed",
+ "source": "FMP",
+ "symbol": "ED",
+ "target": {
+  "average": 105.4,
+  "currency": "USD",
+  "high": 118,
+  "low": 87,
+  "median": 105.5
+ },
+ "ticker": "ED"
+}

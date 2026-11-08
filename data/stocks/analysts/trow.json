@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 8,
+  "hold": 24,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 10.24234,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 7738557274
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 10.0077,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 7830436787
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 108.41,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "trow",
+ "source": "FMP",
+ "symbol": "TROW",
+ "target": {
+  "average": 110.83,
+  "currency": "USD",
+  "high": 120,
+  "low": 107,
+  "median": 109
+ },
+ "ticker": "TROW"
+}

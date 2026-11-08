@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 18,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 8.91385,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 2898685781
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 9.88623,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 7,
+   "revenue_avg": 3118796526
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 195.07,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ptc",
+ "source": "FMP",
+ "symbol": "PTC",
+ "target": {
+  "average": 199.82,
+  "currency": "USD",
+  "high": 306,
+  "low": 130,
+  "median": 205
+ },
+ "ticker": "PTC"
+}

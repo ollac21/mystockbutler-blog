@@ -1,0 +1,42 @@
+{
+ "analysts": 55,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 42,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 24,
+   "eps_avg": 18.77035,
+   "fiscal_year_end": "2027-10-26",
+   "revenue_analysts": 28,
+   "revenue_avg": 46860432618
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 24.63555,
+   "fiscal_year_end": "2028-10-26",
+   "revenue_analysts": 24,
+   "revenue_avg": 57181448692
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 332.715,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "amat",
+ "source": "FMP",
+ "symbol": "AMAT",
+ "target": {
+  "average": 659.83,
+  "currency": "USD",
+  "high": 900,
+  "low": 530,
+  "median": 625
+ },
+ "ticker": "AMAT"
+}

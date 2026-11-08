@@ -1,0 +1,42 @@
+{
+ "analysts": 54,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 45,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 16.81638,
+   "fiscal_year_end": "2027-11-01",
+   "revenue_analysts": 23,
+   "revenue_avg": 18596907754
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 19.92617,
+   "fiscal_year_end": "2028-11-01",
+   "revenue_analysts": 20,
+   "revenue_avg": 20824025813
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 363.56,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "adi",
+ "source": "FMP",
+ "symbol": "ADI",
+ "target": {
+  "average": 480.24,
+  "currency": "USD",
+  "high": 675,
+  "low": 405,
+  "median": 465
+ },
+ "ticker": "ADI"
+}

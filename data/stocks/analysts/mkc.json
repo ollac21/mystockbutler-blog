@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 18,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 3.08912,
+   "fiscal_year_end": "2026-11-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 7938620918
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 3.20929,
+   "fiscal_year_end": "2027-11-30",
+   "revenue_analysts": 9,
+   "revenue_avg": 8154772309
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 48.4,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "mkc",
+ "source": "FMP",
+ "symbol": "MKC",
+ "target": {
+  "average": 53.5,
+  "currency": "USD",
+  "high": 62,
+  "low": 47,
+  "median": 52.5
+ },
+ "ticker": "MKC"
+}

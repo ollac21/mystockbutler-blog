@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 7,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 8.72961,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 33792404347
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 10.18957,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 34162713078
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 88.29,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nrg",
+ "source": "FMP",
+ "symbol": "NRG",
+ "target": {
+  "average": 172.43,
+  "currency": "USD",
+  "high": 221,
+  "low": 131,
+  "median": 164
+ },
+ "ticker": "NRG"
+}

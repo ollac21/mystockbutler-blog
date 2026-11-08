@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 16.75444,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 8219284444
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 18.59252,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 8778696843
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 505.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mco",
+ "source": "FMP",
+ "symbol": "MCO",
+ "target": {
+  "average": 536.44,
+  "currency": "USD",
+  "high": 595,
+  "low": 480,
+  "median": 530
+ },
+ "ticker": "MCO"
+}

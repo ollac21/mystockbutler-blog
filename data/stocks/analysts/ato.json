@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 9.03769,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 7,
+   "revenue_avg": 5579032693
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 9.76389,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 6,
+   "revenue_avg": 6071458144
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 173.22,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ato",
+ "source": "FMP",
+ "symbol": "ATO",
+ "target": {
+  "average": 181.71,
+  "currency": "USD",
+  "high": 200,
+  "low": 167,
+  "median": 183
+ },
+ "ticker": "ATO"
+}

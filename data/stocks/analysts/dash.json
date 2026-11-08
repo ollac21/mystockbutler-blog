@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 32,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 27,
+   "eps_avg": 2.76802,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 30,
+   "revenue_avg": 17941335524
+  },
+  {
+   "eps_analysts": 27,
+   "eps_avg": 4.74614,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 32,
+   "revenue_avg": 21707157441
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 179.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "dash",
+ "source": "FMP",
+ "symbol": "DASH",
+ "target": {
+  "average": 248.6,
+  "currency": "USD",
+  "high": 350,
+  "low": 190,
+  "median": 235
+ },
+ "ticker": "DASH"
+}

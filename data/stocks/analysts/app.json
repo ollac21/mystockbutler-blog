@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 5,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 15.86159,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 8184228268
+  },
+  {
+   "eps_analysts": 21,
+   "eps_avg": 19.94799,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 10254543475
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 391.22,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "app",
+ "source": "FMP",
+ "symbol": "APP",
+ "target": {
+  "average": 482.94,
+  "currency": "USD",
+  "high": 775,
+  "low": 325,
+  "median": 450
+ },
+ "ticker": "APP"
+}

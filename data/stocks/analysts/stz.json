@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 21,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 11.81968,
+   "fiscal_year_end": "2027-02-28",
+   "revenue_analysts": 17,
+   "revenue_avg": 9122692352
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 12.0923,
+   "fiscal_year_end": "2028-02-28",
+   "revenue_analysts": 16,
+   "revenue_avg": 9265361697
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 141.97,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "stz",
+ "source": "FMP",
+ "symbol": "STZ",
+ "target": {
+  "average": 149.36,
+  "currency": "USD",
+  "high": 182,
+  "low": 122,
+  "median": 147.5
+ },
+ "ticker": "STZ"
+}

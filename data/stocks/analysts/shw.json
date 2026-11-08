@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 15,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 12.03662,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 25205381376
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 13.19592,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 26235165472
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 344.1,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "shw",
+ "source": "FMP",
+ "symbol": "SHW",
+ "target": {
+  "average": 377.85,
+  "currency": "USD",
+  "high": 420,
+  "low": 329,
+  "median": 380
+ },
+ "ticker": "SHW"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 5,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.12957,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 10,
+   "revenue_avg": 42622169929
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.9954,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 45006740423
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 94.81,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "crh",
+ "source": "FMP",
+ "symbol": "CRH",
+ "target": {
+  "average": 126.86,
+  "currency": "USD",
+  "high": 165.6,
+  "low": 106,
+  "median": 122.5
+ },
+ "ticker": "CRH"
+}

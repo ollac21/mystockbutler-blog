@@ -1,0 +1,42 @@
+{
+ "analysts": 31,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 45.46185,
+   "fiscal_year_end": "2027-03-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 434119690320
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 51.74329,
+   "fiscal_year_end": "2028-03-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 463978748226
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1060.84,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mck",
+ "source": "FMP",
+ "symbol": "MCK",
+ "target": {
+  "average": 983.13,
+  "currency": "USD",
+  "high": 1200,
+  "low": 845,
+  "median": 988.5
+ },
+ "ticker": "MCK"
+}

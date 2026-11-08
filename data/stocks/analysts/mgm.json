@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 17,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 1.57603,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 17549816871
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 1.56058,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 17639838160
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 32.34,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mgm",
+ "source": "FMP",
+ "symbol": "MGM",
+ "target": {
+  "average": 42.18,
+  "currency": "USD",
+  "high": 55,
+  "low": 26,
+  "median": 42
+ },
+ "ticker": "MGM"
+}

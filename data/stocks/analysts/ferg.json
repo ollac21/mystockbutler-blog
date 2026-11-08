@@ -1,0 +1,42 @@
+{
+ "analysts": 17,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 3,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 12.58095,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 35301472367
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 13.90794,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 37182239850
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 233.7,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ferg",
+ "source": "FMP",
+ "symbol": "FERG",
+ "target": {
+  "average": 282.9,
+  "currency": "USD",
+  "high": 325,
+  "low": 252,
+  "median": 287
+ },
+ "ticker": "FERG"
+}

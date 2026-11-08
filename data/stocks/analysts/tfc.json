@@ -1,0 +1,42 @@
+{
+ "analysts": 54,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 24,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.07665,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 21158608718
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 4.8911,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 21367976787
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 49.38,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tfc",
+ "source": "FMP",
+ "symbol": "TFC",
+ "target": {
+  "average": 53.14,
+  "currency": "USD",
+  "high": 56,
+  "low": 50,
+  "median": 54
+ },
+ "ticker": "TFC"
+}

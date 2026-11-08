@@ -1,0 +1,42 @@
+{
+ "analysts": 57,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 23,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 7.78264,
+   "fiscal_year_end": "2027-03-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 5708436746
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 8.10445,
+   "fiscal_year_end": "2028-03-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 6035211323
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 86.71,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "deck",
+ "source": "FMP",
+ "symbol": "DECK",
+ "target": {
+  "average": 101.35,
+  "currency": "USD",
+  "high": 137,
+  "low": 70,
+  "median": 100
+ },
+ "ticker": "DECK"
+}

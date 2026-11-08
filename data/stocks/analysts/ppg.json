@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 14,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.00037,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 16815759245
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.63243,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 17300406736
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 122.38,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ppg",
+ "source": "FMP",
+ "symbol": "PPG",
+ "target": {
+  "average": 130.63,
+  "currency": "USD",
+  "high": 138,
+  "low": 116,
+  "median": 133
+ },
+ "ticker": "PPG"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 112,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 69,
+  "hold": 33,
+  "sell": 9,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 25,
+   "eps_avg": 9.45682,
+   "fiscal_year_end": "2027-09-26",
+   "revenue_analysts": 19,
+   "revenue_avg": 526232871628
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 10.45559,
+   "fiscal_year_end": "2028-09-26",
+   "revenue_analysts": 19,
+   "revenue_avg": 566071509581
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 342.37,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "aapl",
+ "source": "FMP",
+ "symbol": "AAPL",
+ "target": {
+  "average": 344.46,
+  "currency": "USD",
+  "high": 400,
+  "low": 245,
+  "median": 355
+ },
+ "ticker": "AAPL"
+}

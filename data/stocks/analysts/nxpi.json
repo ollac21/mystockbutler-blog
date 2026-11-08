@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 14,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 15.22873,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 14328924962
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 18.35127,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 16093560226
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 248.29,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "nxpi",
+ "source": "FMP",
+ "symbol": "NXPI",
+ "target": {
+  "average": 294.13,
+  "currency": "USD",
+  "high": 400,
+  "low": 190,
+  "median": 290
+ },
+ "ticker": "NXPI"
+}

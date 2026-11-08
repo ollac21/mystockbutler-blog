@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 11,
+  "hold": 19,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 1.28146,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 9380983420
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 1.41647,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 10259212011
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 52.99,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "fast",
+ "source": "FMP",
+ "symbol": "FAST",
+ "target": {
+  "average": 52.25,
+  "currency": "USD",
+  "high": 60,
+  "low": 47,
+  "median": 51.5
+ },
+ "ticker": "FAST"
+}

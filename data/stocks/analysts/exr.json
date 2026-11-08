@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 4.65132,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 3501415606
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 4.90176,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 3626563592
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 159.19,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "exr",
+ "source": "FMP",
+ "symbol": "EXR",
+ "target": {
+  "average": 157.11,
+  "currency": "USD",
+  "high": 172,
+  "low": 146,
+  "median": 157
+ },
+ "ticker": "EXR"
+}

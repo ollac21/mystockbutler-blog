@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 18,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 6.7239,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 33641973830
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 7.16888,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 35160113362
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 127.78,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "duk",
+ "source": "FMP",
+ "symbol": "DUK",
+ "target": {
+  "average": 130.3,
+  "currency": "USD",
+  "high": 140,
+  "low": 121,
+  "median": 129
+ },
+ "ticker": "DUK"
+}

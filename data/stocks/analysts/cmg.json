@@ -1,0 +1,42 @@
+{
+ "analysts": 68,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 45,
+  "hold": 23,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 1.09334,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 13000415883
+  },
+  {
+   "eps_analysts": 22,
+   "eps_avg": 1.32744,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 14387463515
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 34.43,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cmg",
+ "source": "FMP",
+ "symbol": "CMG",
+ "target": {
+  "average": 40.59,
+  "currency": "USD",
+  "high": 50,
+  "low": 32,
+  "median": 40
+ },
+ "ticker": "CMG"
+}

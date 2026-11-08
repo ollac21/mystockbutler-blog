@@ -1,0 +1,42 @@
+{
+ "analysts": 71,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 50,
+  "hold": 20,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 20,
+   "eps_avg": 7.97623,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 29,
+   "revenue_avg": 52184254545
+  },
+  {
+   "eps_analysts": 31,
+   "eps_avg": 17.44567,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 38,
+   "revenue_avg": 95412436081
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 449.04,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "amd",
+ "source": "FMP",
+ "symbol": "AMD",
+ "target": {
+  "average": 653.81,
+  "currency": "USD",
+  "high": 1250,
+  "low": 465,
+  "median": 650
+ },
+ "ticker": "AMD"
+}

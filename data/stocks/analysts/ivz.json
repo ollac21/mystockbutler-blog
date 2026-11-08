@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 16,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 2.78662,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 5369634482
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 3.31035,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 5755753200
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 27.08,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ivz",
+ "source": "FMP",
+ "symbol": "IVZ",
+ "target": {
+  "average": 33.8,
+  "currency": "USD",
+  "high": 36,
+  "low": 31,
+  "median": 34
+ },
+ "ticker": "IVZ"
+}

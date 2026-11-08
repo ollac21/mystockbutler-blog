@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 45.25288,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 10,
+   "revenue_avg": 2623009122
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 49.14092,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 2743625733
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 704.55,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fico",
+ "source": "FMP",
+ "symbol": "FICO",
+ "target": {
+  "average": 986.5,
+  "currency": "USD",
+  "high": 1675,
+  "low": 650,
+  "median": 913
+ },
+ "ticker": "FICO"
+}

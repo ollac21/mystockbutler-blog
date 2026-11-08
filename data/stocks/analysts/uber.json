@@ -1,0 +1,42 @@
+{
+ "analysts": 63,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 51,
+  "hold": 11,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 23,
+   "eps_avg": 3.37406,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 57835211349
+  },
+  {
+   "eps_analysts": 28,
+   "eps_avg": 4.40575,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 31,
+   "revenue_avg": 67031093947
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 68.59,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "uber",
+ "source": "FMP",
+ "symbol": "UBER",
+ "target": {
+  "average": 103.22,
+  "currency": "USD",
+  "high": 150,
+  "low": 74,
+  "median": 100
+ },
+ "ticker": "UBER"
+}

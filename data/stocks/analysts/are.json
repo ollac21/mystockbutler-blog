@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 13,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 3,
+   "eps_avg": 0.77806,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 2646688084
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": -0.85958,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 2509845750
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 44.8,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "are",
+ "source": "FMP",
+ "symbol": "ARE",
+ "target": {
+  "average": 49,
+  "currency": "USD",
+  "high": 60,
+  "low": 41,
+  "median": 52
+ },
+ "ticker": "ARE"
+}

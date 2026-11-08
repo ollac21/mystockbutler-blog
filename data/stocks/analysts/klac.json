@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 14,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 5.76821,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 19,
+   "revenue_avg": 18875630490
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 7.09815,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 17,
+   "revenue_avg": 22662543871
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 138.49,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "klac",
+ "source": "FMP",
+ "symbol": "KLAC",
+ "target": {
+  "average": 219.11,
+  "currency": "USD",
+  "high": 425,
+  "low": 133,
+  "median": 210
+ },
+ "ticker": "KLAC"
+}

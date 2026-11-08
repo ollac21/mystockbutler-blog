@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 29,
+  "hold": 23,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 12.89743,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 82401414410
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 13.79469,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 86944055271
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 181.44,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ms",
+ "source": "FMP",
+ "symbol": "MS",
+ "target": {
+  "average": 212,
+  "currency": "USD",
+  "high": 236,
+  "low": 195,
+  "median": 208.5
+ },
+ "ticker": "MS"
+}

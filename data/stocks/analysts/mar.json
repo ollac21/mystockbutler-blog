@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 28,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 11.99043,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 27961484560
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 13.35922,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 29599040786
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 416.47,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "mar",
+ "source": "FMP",
+ "symbol": "MAR",
+ "target": {
+  "average": 399.1,
+  "currency": "USD",
+  "high": 463,
+  "low": 360,
+  "median": 395
+ },
+ "ticker": "MAR"
+}

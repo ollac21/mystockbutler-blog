@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 17,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 1.64777,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 26087250350
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 1.80196,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 27087755328
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 12.97,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pcg",
+ "source": "FMP",
+ "symbol": "PCG",
+ "target": {
+  "average": 17.55,
+  "currency": "USD",
+  "high": 22,
+  "low": 13,
+  "median": 17
+ },
+ "ticker": "PCG"
+}

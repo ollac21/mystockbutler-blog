@@ -1,0 +1,42 @@
+{
+ "analysts": 74,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 37,
+  "hold": 36,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 5.10008,
+   "fiscal_year_end": "2027-07-25",
+   "revenue_analysts": 19,
+   "revenue_avg": 72939506252
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 5.54703,
+   "fiscal_year_end": "2028-07-25",
+   "revenue_analysts": 20,
+   "revenue_avg": 77989879791
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 93.85,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "csco",
+ "source": "FMP",
+ "symbol": "CSCO",
+ "target": {
+  "average": 131.42,
+  "currency": "USD",
+  "high": 150,
+  "low": 110,
+  "median": 135
+ },
+ "ticker": "CSCO"
+}

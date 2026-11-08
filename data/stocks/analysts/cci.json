@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 21,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 1.93151,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 4033544725
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 2.85521,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 14,
+   "revenue_avg": 4099119843
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 88.6,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cci",
+ "source": "FMP",
+ "symbol": "CCI",
+ "target": {
+  "average": 89.25,
+  "currency": "USD",
+  "high": 95,
+  "low": 84,
+  "median": 89
+ },
+ "ticker": "CCI"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 35,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 14,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 17.2628,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 56637826402
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 18.81526,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 17,
+   "revenue_avg": 59619721128
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 354.06,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "gd",
+ "source": "FMP",
+ "symbol": "GD",
+ "target": {
+  "average": 415.29,
+  "currency": "USD",
+  "high": 465,
+  "low": 365,
+  "median": 408
+ },
+ "ticker": "GD"
+}

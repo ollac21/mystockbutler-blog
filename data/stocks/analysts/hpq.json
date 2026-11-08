@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 28,
+  "sell": 8,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.19003,
+   "fiscal_year_end": "2027-10-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 60932918973
+  },
+  {
+   "eps_analysts": 6,
+   "eps_avg": 3.38105,
+   "fiscal_year_end": "2028-10-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 60242927398
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 28.46,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hpq",
+ "source": "FMP",
+ "symbol": "HPQ",
+ "target": {
+  "average": 25.75,
+  "currency": "USD",
+  "high": 33,
+  "low": 19,
+  "median": 25.5
+ },
+ "ticker": "HPQ"
+}

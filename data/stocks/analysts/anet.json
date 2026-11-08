@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 41,
+  "hold": 12,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 4.29556,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 13181620769
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 5.85726,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 18114190886
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 170.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "anet",
+ "source": "FMP",
+ "symbol": "ANET",
+ "target": {
+  "average": 242.43,
+  "currency": "USD",
+  "high": 305,
+  "low": 164,
+  "median": 247.5
+ },
+ "ticker": "ANET"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 51,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 23,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 5.77227,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 22104664096
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 6.26887,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 22,
+   "revenue_avg": 22943327090
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 64.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ctsh",
+ "source": "FMP",
+ "symbol": "CTSH",
+ "target": {
+  "average": 66.17,
+  "currency": "USD",
+  "high": 82,
+  "low": 51,
+  "median": 67
+ },
+ "ticker": "CTSH"
+}

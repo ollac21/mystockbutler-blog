@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 17,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 5,
+   "eps_avg": 4.946,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 5542813594
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 5.54353,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 5908472383
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 104.22,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pnw",
+ "source": "FMP",
+ "symbol": "PNW",
+ "target": {
+  "average": 104.06,
+  "currency": "USD",
+  "high": 119.5,
+  "low": 94,
+  "median": 104
+ },
+ "ticker": "PNW"
+}

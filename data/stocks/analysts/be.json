@@ -1,0 +1,42 @@
+{
+ "analysts": 32,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 11,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 3.18903,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 4448110029
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 5.34114,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 7192534169
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 173.24,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "be",
+ "source": "FMP",
+ "symbol": "BE",
+ "target": {
+  "average": 293.06,
+  "currency": "USD",
+  "high": 351,
+  "low": 176,
+  "median": 311
+ },
+ "ticker": "BE"
+}

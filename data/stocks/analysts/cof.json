@@ -1,0 +1,42 @@
+{
+ "analysts": 57,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 36,
+  "hold": 17,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 21.61918,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 64008821660
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 23.88556,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 67591516333
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 201.87,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cof",
+ "source": "FMP",
+ "symbol": "COF",
+ "target": {
+  "average": 252.89,
+  "currency": "USD",
+  "high": 280,
+  "low": 229,
+  "median": 252
+ },
+ "ticker": "COF"
+}

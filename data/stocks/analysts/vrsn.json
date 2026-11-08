@@ -1,0 +1,42 @@
+{
+ "analysts": 15,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 5,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 3,
+   "eps_avg": 9.73084,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 1759065516
+  },
+  {
+   "eps_analysts": 3,
+   "eps_avg": 11.17522,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 1943854796
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 308.67,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "vrsn",
+ "source": "FMP",
+ "symbol": "VRSN",
+ "target": {
+  "average": 373.5,
+  "currency": "USD",
+  "high": 380,
+  "low": 367,
+  "median": 373.5
+ },
+ "ticker": "VRSN"
+}

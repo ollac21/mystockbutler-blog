@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 16,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 11.11401,
+   "fiscal_year_end": "2026-12-28",
+   "revenue_analysts": 16,
+   "revenue_avg": 101224930462
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 11.5882,
+   "fiscal_year_end": "2027-12-28",
+   "revenue_analysts": 16,
+   "revenue_avg": 107763484958
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 276.22,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "jnj",
+ "source": "FMP",
+ "symbol": "JNJ",
+ "target": {
+  "average": 285.31,
+  "currency": "USD",
+  "high": 320,
+  "low": 260,
+  "median": 281
+ },
+ "ticker": "JNJ"
+}

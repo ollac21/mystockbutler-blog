@@ -1,0 +1,42 @@
+{
+ "analysts": 21,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 4,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 25,
+   "eps_avg": 0.19,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 28,
+   "revenue_avg": 47700000000
+  },
+  {
+   "eps_analysts": 26,
+   "eps_avg": 4.1,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 29,
+   "revenue_avg": 160260000000
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 134.27,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "spcx",
+ "source": "FMP",
+ "symbol": "SPCX",
+ "target": {
+  "average": 224.89,
+  "currency": "USD",
+  "high": 450,
+  "low": 75,
+  "median": 225
+ },
+ "ticker": "SPCX"
+}

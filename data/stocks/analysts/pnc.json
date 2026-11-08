@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 23,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 18.9779,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 26396137640
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 21.41496,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 27914281863
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 225.38,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pnc",
+ "source": "FMP",
+ "symbol": "PNC",
+ "target": {
+  "average": 272.53,
+  "currency": "USD",
+  "high": 305,
+  "low": 240,
+  "median": 275
+ },
+ "ticker": "PNC"
+}

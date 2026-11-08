@@ -1,0 +1,42 @@
+{
+ "analysts": 29,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 6,
+  "sell": 7,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 1.06541,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 24566546065
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 2.69371,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 26372123426
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 34.53,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ip",
+ "source": "FMP",
+ "symbol": "IP",
+ "target": {
+  "average": 47,
+  "currency": "USD",
+  "high": 61,
+  "low": 35,
+  "median": 46
+ },
+ "ticker": "IP"
+}

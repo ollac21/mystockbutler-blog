@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 30,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 2,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 3.65164,
+   "fiscal_year_end": "2027-03-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 6405818088
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 4.59076,
+   "fiscal_year_end": "2028-03-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 7466647599
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 58.35,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mchp",
+ "source": "FMP",
+ "symbol": "MCHP",
+ "target": {
+  "average": 110.5,
+  "currency": "USD",
+  "high": 135,
+  "low": 88,
+  "median": 114.5
+ },
+ "ticker": "MCHP"
+}

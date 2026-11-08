@@ -1,0 +1,42 @@
+{
+ "analysts": 55,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 45,
+  "hold": 9,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 11.1824,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 94842686496
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 14.10398,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 99026084138
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 162.01,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tmus",
+ "source": "FMP",
+ "symbol": "TMUS",
+ "target": {
+  "average": 224,
+  "currency": "USD",
+  "high": 300,
+  "low": 169,
+  "median": 230
+ },
+ "ticker": "TMUS"
+}

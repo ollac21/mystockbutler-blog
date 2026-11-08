@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 20,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 40.42257,
+   "fiscal_year_end": "2027-07-03",
+   "revenue_analysts": 16,
+   "revenue_avg": 20320768859
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 66.57706,
+   "fiscal_year_end": "2028-07-03",
+   "revenue_analysts": 15,
+   "revenue_avg": 28788544212
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 460.99,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "stx",
+ "source": "FMP",
+ "symbol": "STX",
+ "target": {
+  "average": 1105.93,
+  "currency": "USD",
+  "high": 1600,
+  "low": 750,
+  "median": 1095
+ },
+ "ticker": "STX"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 11,
+  "hold": 28,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 14.90436,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 19,
+   "revenue_avg": 9588594494
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 16.60772,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 15,
+   "revenue_avg": 10185442973
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 375.86,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "rok",
+ "source": "FMP",
+ "symbol": "ROK",
+ "target": {
+  "average": 482.71,
+  "currency": "USD",
+  "high": 520,
+  "low": 426,
+  "median": 490
+ },
+ "ticker": "ROK"
+}

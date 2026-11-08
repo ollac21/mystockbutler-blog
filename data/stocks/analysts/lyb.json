@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 18,
+  "sell": 4,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 9.03572,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 32723320757
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.31262,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 31603782877
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 60.72,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "lyb",
+ "source": "FMP",
+ "symbol": "LYB",
+ "target": {
+  "average": 69.56,
+  "currency": "USD",
+  "high": 83,
+  "low": 62,
+  "median": 68
+ },
+ "ticker": "LYB"
+}

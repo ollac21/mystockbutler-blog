@@ -1,0 +1,42 @@
+{
+ "analysts": 8,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 2,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 7.87,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 18420000000
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 8.65,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 19830000000
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 152.92,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "hona",
+ "source": "FMP",
+ "symbol": "HONA",
+ "target": {
+  "average": 207.5,
+  "currency": "USD",
+  "high": 245,
+  "low": 170,
+  "median": 209.5
+ },
+ "ticker": "HONA"
+}

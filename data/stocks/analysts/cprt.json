@@ -1,0 +1,42 @@
+{
+ "analysts": 23,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 9,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 4,
+   "eps_avg": 1.62036,
+   "fiscal_year_end": "2027-07-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 4987191560
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 1.7705,
+   "fiscal_year_end": "2028-07-31",
+   "revenue_analysts": 3,
+   "revenue_avg": 5367574921
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 31.95,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cprt",
+ "source": "FMP",
+ "symbol": "CPRT",
+ "target": {
+  "average": 37.33,
+  "currency": "USD",
+  "high": 45,
+  "low": 25,
+  "median": 39
+ },
+ "ticker": "CPRT"
+}

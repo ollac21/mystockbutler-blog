@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 21,
+  "hold": 27,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 6.78842,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 4,
+   "revenue_avg": 9520810711
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 5.24195,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 8612020915
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 44.63,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "apa",
+ "source": "FMP",
+ "symbol": "APA",
+ "target": {
+  "average": 47.4,
+  "currency": "USD",
+  "high": 62,
+  "low": 39,
+  "median": 45
+ },
+ "ticker": "APA"
+}

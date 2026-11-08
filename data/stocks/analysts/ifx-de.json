@@ -1,0 +1,34 @@
+{
+ "analysts": 5,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 1,
+  "hold": 3,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 2.84416,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 22,
+   "revenue_avg": 19927414784
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 3.80706,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 21,
+   "revenue_avg": 23251859239
+  }
+ ],
+ "estimates_currency": "EUR",
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "ifx-de",
+ "source": "FMP",
+ "symbol": "IFX.DE",
+ "ticker": "IFX.DE"
+}

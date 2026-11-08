@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 5.42377,
+   "fiscal_year_end": "2026-12-28",
+   "revenue_analysts": 12,
+   "revenue_avg": 2865603274
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 5.96224,
+   "fiscal_year_end": "2027-12-28",
+   "revenue_analysts": 12,
+   "revenue_avg": 3029834509
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 155.11,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rvty",
+ "source": "FMP",
+ "symbol": "RVTY",
+ "target": {
+  "average": 140,
+  "currency": "USD",
+  "high": 165,
+  "low": 115,
+  "median": 137.5
+ },
+ "ticker": "RVTY"
+}

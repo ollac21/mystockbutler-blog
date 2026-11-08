@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 25,
+  "hold": 11,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 8.78302,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 8032978832
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 9.97907,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 8390664004
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 282.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "vmc",
+ "source": "FMP",
+ "symbol": "VMC",
+ "target": {
+  "average": 290.33,
+  "currency": "USD",
+  "high": 326,
+  "low": 249,
+  "median": 295.5
+ },
+ "ticker": "VMC"
+}

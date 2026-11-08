@@ -1,0 +1,42 @@
+{
+ "analysts": 49,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 22,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 19,
+   "eps_avg": 5.28746,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 31059552182
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 5.86427,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 33341071579
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 59.45,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "usb",
+ "source": "FMP",
+ "symbol": "USB",
+ "target": {
+  "average": 69.53,
+  "currency": "USD",
+  "high": 76,
+  "low": 64,
+  "median": 68
+ },
+ "ticker": "USB"
+}

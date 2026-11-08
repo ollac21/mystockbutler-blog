@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 8,
+  "hold": 23,
+  "sell": 5,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 12.36133,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 23276587419
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 13.51956,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 24610184064
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 303.35,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "adp",
+ "source": "FMP",
+ "symbol": "ADP",
+ "target": {
+  "average": 286.29,
+  "currency": "USD",
+  "high": 340,
+  "low": 248,
+  "median": 286
+ },
+ "ticker": "ADP"
+}

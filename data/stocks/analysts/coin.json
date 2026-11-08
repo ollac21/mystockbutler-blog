@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 14,
+  "sell": 3,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": -0.41848,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 5138568895
+  },
+  {
+   "eps_analysts": 22,
+   "eps_avg": 2.54139,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 25,
+   "revenue_avg": 6476721530
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 134.76,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "coin",
+ "source": "FMP",
+ "symbol": "COIN",
+ "target": {
+  "average": 203.04,
+  "currency": "USD",
+  "high": 330,
+  "low": 110,
+  "median": 204
+ },
+ "ticker": "COIN"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 14,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 4,
+  "hold": 10,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 1.17188,
+   "fiscal_year_end": "2026-12-28",
+   "revenue_analysts": 9,
+   "revenue_avg": 15617908321
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 1.24271,
+   "fiscal_year_end": "2027-12-28",
+   "revenue_analysts": 9,
+   "revenue_avg": 15981711480
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 19.31,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "kvue",
+ "source": "FMP",
+ "symbol": "KVUE",
+ "target": {
+  "average": 19.5,
+  "currency": "USD",
+  "high": 20,
+  "low": 19,
+  "median": 19.5
+ },
+ "ticker": "KVUE"
+}

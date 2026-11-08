@@ -1,0 +1,42 @@
+{
+ "analysts": 53,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 39,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 18.11824,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 10338238222
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 19.73075,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 23,
+   "revenue_avg": 11495641829
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1012.71,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "eqix",
+ "source": "FMP",
+ "symbol": "EQIX",
+ "target": {
+  "average": 1257.67,
+  "currency": "USD",
+  "high": 1400,
+  "low": 1135,
+  "median": 1261
+ },
+ "ticker": "EQIX"
+}

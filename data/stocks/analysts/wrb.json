@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 7,
+  "hold": 17,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.94696,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 15028086667
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.8438,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 15655018739
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 75.23,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "wrb",
+ "source": "FMP",
+ "symbol": "WRB",
+ "target": {
+  "average": 70.56,
+  "currency": "USD",
+  "high": 79,
+  "low": 62,
+  "median": 70
+ },
+ "ticker": "WRB"
+}

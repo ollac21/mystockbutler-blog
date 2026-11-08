@@ -1,0 +1,42 @@
+{
+ "analysts": 51,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 20,
+  "sell": 2,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 3.03326,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 12849417856
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 4.93006,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 14056817480
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 53.04,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fitb",
+ "source": "FMP",
+ "symbol": "FITB",
+ "target": {
+  "average": 61.88,
+  "currency": "USD",
+  "high": 67,
+  "low": 58,
+  "median": 61.5
+ },
+ "ticker": "FITB"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 13,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 15.27854,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 24129544365
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 17.73892,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 19,
+   "revenue_avg": 26657926626
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 401.76,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tt",
+ "source": "FMP",
+ "symbol": "TT",
+ "target": {
+  "average": 523.5,
+  "currency": "USD",
+  "high": 565,
+  "low": 485,
+  "median": 518
+ },
+ "ticker": "TT"
+}

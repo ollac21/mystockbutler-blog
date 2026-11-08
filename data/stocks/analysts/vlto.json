@@ -1,0 +1,42 @@
+{
+ "analysts": 13,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 6,
+  "hold": 7,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 4.46848,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 5935914362
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 4.88203,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 6349210807
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 117.09,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "vlto",
+ "source": "FMP",
+ "symbol": "VLTO",
+ "target": {
+  "average": 117,
+  "currency": "USD",
+  "high": 135,
+  "low": 106,
+  "median": 110
+ },
+ "ticker": "VLTO"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 11.447,
+   "fiscal_year_end": "2026-12-27",
+   "revenue_analysts": 8,
+   "revenue_avg": 3936634486
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 12.8911,
+   "fiscal_year_end": "2027-12-27",
+   "revenue_analysts": 11,
+   "revenue_avg": 4036616490
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 337.52,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "crl",
+ "source": "FMP",
+ "symbol": "CRL",
+ "target": {
+  "average": 308.36,
+  "currency": "USD",
+  "high": 357,
+  "low": 219,
+  "median": 326
+ },
+ "ticker": "CRL"
+}

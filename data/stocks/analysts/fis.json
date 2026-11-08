@@ -1,0 +1,42 @@
+{
+ "analysts": 40,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 20,
+  "sell": 1,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 6.02891,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 13556252692
+  },
+  {
+   "eps_analysts": 18,
+   "eps_avg": 5.99509,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 13839767223
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 28.73,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "fis",
+ "source": "FMP",
+ "symbol": "FIS",
+ "target": {
+  "average": 42.93,
+  "currency": "USD",
+  "high": 54,
+  "low": 33,
+  "median": 44
+ },
+ "ticker": "FIS"
+}

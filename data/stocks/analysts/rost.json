@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 31,
+  "hold": 12,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 8.45134,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 25703823079
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 9.01585,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 27534081301
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 231.09,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "rost",
+ "source": "FMP",
+ "symbol": "ROST",
+ "target": {
+  "average": 278.79,
+  "currency": "USD",
+  "high": 315,
+  "low": 234,
+  "median": 282.5
+ },
+ "ticker": "ROST"
+}

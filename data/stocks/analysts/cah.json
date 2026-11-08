@@ -1,0 +1,42 @@
+{
+ "analysts": 33,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 19,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 12.57167,
+   "fiscal_year_end": "2027-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 265805101060
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 14.07505,
+   "fiscal_year_end": "2028-06-30",
+   "revenue_analysts": 12,
+   "revenue_avg": 281742453965
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 271.72,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "cah",
+ "source": "FMP",
+ "symbol": "CAH",
+ "target": {
+  "average": 279.33,
+  "currency": "USD",
+  "high": 295,
+  "low": 265,
+  "median": 276
+ },
+ "ticker": "CAH"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 48,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 18,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 30,
+   "eps_avg": 5.30758,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 32,
+   "revenue_avg": 14182162595
+  },
+  {
+   "eps_analysts": 30,
+   "eps_avg": 6.25792,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 32,
+   "revenue_avg": 15814840709
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 189.99,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "abnb",
+ "source": "FMP",
+ "symbol": "ABNB",
+ "target": {
+  "average": 189.21,
+  "currency": "USD",
+  "high": 245,
+  "low": 125,
+  "median": 188
+ },
+ "ticker": "ABNB"
+}

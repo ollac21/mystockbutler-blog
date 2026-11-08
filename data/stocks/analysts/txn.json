@@ -1,0 +1,42 @@
+{
+ "analysts": 66,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 32,
+  "hold": 28,
+  "sell": 6,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 22,
+   "eps_avg": 9.03964,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 22,
+   "revenue_avg": 22373933021
+  },
+  {
+   "eps_analysts": 22,
+   "eps_avg": 11.6099,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 24,
+   "revenue_avg": 26327908092
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 277.36,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "txn",
+ "source": "FMP",
+ "symbol": "TXN",
+ "target": {
+  "average": 333.71,
+  "currency": "USD",
+  "high": 405,
+  "low": 250,
+  "median": 330
+ },
+ "ticker": "TXN"
+}

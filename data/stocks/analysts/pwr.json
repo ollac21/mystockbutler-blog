@@ -1,0 +1,42 @@
+{
+ "analysts": 36,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 9,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 18,
+   "eps_avg": 18.08226,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 41291757477
+  },
+  {
+   "eps_analysts": 19,
+   "eps_avg": 21.47494,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 48930341874
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 540.9,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "pwr",
+ "source": "FMP",
+ "symbol": "PWR",
+ "target": {
+  "average": 792.38,
+  "currency": "USD",
+  "high": 960,
+  "low": 684,
+  "median": 800
+ },
+ "ticker": "PWR"
+}

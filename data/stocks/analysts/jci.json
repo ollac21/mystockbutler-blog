@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 28,
+  "hold": 18,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 6.27678,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 14,
+   "revenue_avg": 28219346990
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 7.42353,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 13,
+   "revenue_avg": 30745040812
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 135.03,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "jci",
+ "source": "FMP",
+ "symbol": "JCI",
+ "target": {
+  "average": 178.11,
+  "currency": "USD",
+  "high": 200,
+  "low": 165,
+  "median": 175
+ },
+ "ticker": "JCI"
+}

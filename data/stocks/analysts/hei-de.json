@@ -1,0 +1,34 @@
+{
+ "analysts": 1,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 0,
+  "hold": 0,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 12.90338,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 22553724190
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 14.55658,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 24058664819
+  }
+ ],
+ "estimates_currency": "EUR",
+ "rating": "Sell",
+ "schema": "public_analysts_v1",
+ "slug": "hei-de",
+ "source": "FMP",
+ "symbol": "HEI.DE",
+ "ticker": "HEI.DE"
+}

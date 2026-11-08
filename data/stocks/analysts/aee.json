@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 5.40146,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 9077867810
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 5.8056,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 9646406360
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 112.85,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "aee",
+ "source": "FMP",
+ "symbol": "AEE",
+ "target": {
+  "average": 113.19,
+  "currency": "USD",
+  "high": 126,
+  "low": 104,
+  "median": 113
+ },
+ "ticker": "AEE"
+}

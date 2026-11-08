@@ -1,0 +1,42 @@
+{
+ "analysts": 25,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 23,
+  "hold": 2,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 29.12492,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 4332645067
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 46.27169,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 6549979500
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1190.44,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mpwr",
+ "source": "FMP",
+ "symbol": "MPWR",
+ "target": {
+  "average": 1810.5,
+  "currency": "USD",
+  "high": 2100,
+  "low": 1500,
+  "median": 1850
+ },
+ "ticker": "MPWR"
+}

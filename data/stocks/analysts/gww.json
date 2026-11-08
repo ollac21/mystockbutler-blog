@@ -1,0 +1,42 @@
+{
+ "analysts": 39,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 26,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 47.19987,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 10,
+   "revenue_avg": 19826551028
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 51.71811,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 21310010410
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 1440.7,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "gww",
+ "source": "FMP",
+ "symbol": "GWW",
+ "target": {
+  "average": 1341.11,
+  "currency": "USD",
+  "high": 1428,
+  "low": 1172,
+  "median": 1375
+ },
+ "ticker": "GWW"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 52,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 35,
+  "hold": 16,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 14.84166,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 26815719708
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 16.32715,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 28705134887
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 325.78,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "syk",
+ "source": "FMP",
+ "symbol": "SYK",
+ "target": {
+  "average": 354.47,
+  "currency": "USD",
+  "high": 407,
+  "low": 309,
+  "median": 359
+ },
+ "ticker": "SYK"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 34,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 17,
+  "hold": 16,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 13.24639,
+   "fiscal_year_end": "2027-09-30",
+   "revenue_analysts": 11,
+   "revenue_avg": 19690477531
+  },
+  {
+   "eps_analysts": 5,
+   "eps_avg": 14.15922,
+   "fiscal_year_end": "2028-09-30",
+   "revenue_analysts": 8,
+   "revenue_avg": 20455554851
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 211.88,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "bdx",
+ "source": "FMP",
+ "symbol": "BDX",
+ "target": {
+  "average": 200.57,
+  "currency": "USD",
+  "high": 242,
+  "low": 165,
+  "median": 190
+ },
+ "ticker": "BDX"
+}

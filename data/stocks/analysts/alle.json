@@ -1,0 +1,42 @@
+{
+ "analysts": 24,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 10,
+  "hold": 14,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 9.10573,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 4480903652
+  },
+  {
+   "eps_analysts": 7,
+   "eps_avg": 10.17238,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 4748207921
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 185.39,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "alle",
+ "source": "FMP",
+ "symbol": "ALLE",
+ "target": {
+  "average": 181.5,
+  "currency": "USD",
+  "high": 196,
+  "low": 170,
+  "median": 180
+ },
+ "ticker": "ALLE"
+}

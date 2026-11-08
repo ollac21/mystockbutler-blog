@@ -1,0 +1,42 @@
+{
+ "analysts": 18,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 12,
+  "hold": 4,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 19.2187,
+   "fiscal_year_end": "2027-01-03",
+   "revenue_analysts": 7,
+   "revenue_avg": 4873026576
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 20.4354,
+   "fiscal_year_end": "2028-01-03",
+   "revenue_analysts": 7,
+   "revenue_avg": 5045823208
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 367.22,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "sna",
+ "source": "FMP",
+ "symbol": "SNA",
+ "target": {
+  "average": 434,
+  "currency": "USD",
+  "high": 485,
+  "low": 385,
+  "median": 433
+ },
+ "ticker": "SNA"
+}

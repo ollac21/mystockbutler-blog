@@ -1,0 +1,42 @@
+{
+ "analysts": 37,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 19,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 8,
+   "eps_avg": 5.89993,
+   "fiscal_year_end": "2027-01-03",
+   "revenue_analysts": 10,
+   "revenue_avg": 15172293136
+  },
+  {
+   "eps_analysts": 9,
+   "eps_avg": 6.49934,
+   "fiscal_year_end": "2028-01-03",
+   "revenue_analysts": 10,
+   "revenue_avg": 15353953026
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 114.85,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "swk",
+ "source": "FMP",
+ "symbol": "SWK",
+ "target": {
+  "average": 98.25,
+  "currency": "USD",
+  "high": 105,
+  "low": 93,
+  "median": 97.5
+ },
+ "ticker": "SWK"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 3,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 17,
+   "eps_avg": 17.91312,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 36532634235
+  },
+  {
+   "eps_analysts": 17,
+   "eps_avg": 19.54,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 20,
+   "revenue_avg": 38214548782
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 515.25,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "lin",
+ "source": "FMP",
+ "symbol": "LIN",
+ "target": {
+  "average": 558,
+  "currency": "USD",
+  "high": 583,
+  "low": 525,
+  "median": 556
+ },
+ "ticker": "LIN"
+}

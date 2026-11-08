@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 20,
+  "hold": 16,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 4.71349,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 7712094500
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 4.69946,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 7867778369
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 82.22,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mas",
+ "source": "FMP",
+ "symbol": "MAS",
+ "target": {
+  "average": 83.11,
+  "currency": "USD",
+  "high": 95,
+  "low": 69,
+  "median": 82
+ },
+ "ticker": "MAS"
+}

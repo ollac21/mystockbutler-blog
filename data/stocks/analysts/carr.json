@@ -1,0 +1,42 @@
+{
+ "analysts": 27,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 14,
+  "hold": 13,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 2.86934,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 23796745944
+  },
+  {
+   "eps_analysts": 15,
+   "eps_avg": 3.18522,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 25224014737
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 52.38,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "carr",
+ "source": "FMP",
+ "symbol": "CARR",
+ "target": {
+  "average": 68.4,
+  "currency": "USD",
+  "high": 80,
+  "low": 61,
+  "median": 67
+ },
+ "ticker": "CARR"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 42,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 22,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 15,
+   "eps_avg": 18.36577,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 87911270759
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 16.194,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 91565855880
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 227.77,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pgr",
+ "source": "FMP",
+ "symbol": "PGR",
+ "target": {
+  "average": 223.23,
+  "currency": "USD",
+  "high": 245,
+  "low": 196,
+  "median": 228
+ },
+ "ticker": "PGR"
+}

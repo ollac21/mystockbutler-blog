@@ -1,0 +1,42 @@
+{
+ "analysts": 50,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 17,
+  "sell": 6,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 5.41549,
+   "fiscal_year_end": "2026-12-28",
+   "revenue_analysts": 13,
+   "revenue_avg": 4630196630
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 6.1612,
+   "fiscal_year_end": "2027-12-28",
+   "revenue_analysts": 14,
+   "revenue_avg": 4946101961
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 213.13,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ilmn",
+ "source": "FMP",
+ "symbol": "ILMN",
+ "target": {
+  "average": 252.73,
+  "currency": "USD",
+  "high": 305,
+  "low": 155,
+  "median": 260
+ },
+ "ticker": "ILMN"
+}

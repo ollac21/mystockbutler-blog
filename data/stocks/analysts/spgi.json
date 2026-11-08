@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 4,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 17.93427,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 11,
+   "revenue_avg": 14888380127
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 20.17105,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 15690994604
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 467.8,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "spgi",
+ "source": "FMP",
+ "symbol": "SPGI",
+ "target": {
+  "average": 512.14,
+  "currency": "USD",
+  "high": 531,
+  "low": 490,
+  "median": 513
+ },
+ "ticker": "SPGI"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 22,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 5.63999,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 5590930229
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 7.00273,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 6,
+   "revenue_avg": 6673036455
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 133.98,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ares",
+ "source": "FMP",
+ "symbol": "ARES",
+ "target": {
+  "average": 145.88,
+  "currency": "USD",
+  "high": 168,
+  "low": 130,
+  "median": 146.5
+ },
+ "ticker": "ARES"
+}

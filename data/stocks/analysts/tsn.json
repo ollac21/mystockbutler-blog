@@ -1,0 +1,42 @@
+{
+ "analysts": 30,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 16,
+  "hold": 13,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 6,
+   "eps_avg": 3.94462,
+   "fiscal_year_end": "2027-09-27",
+   "revenue_analysts": 8,
+   "revenue_avg": 55444065785
+  },
+  {
+   "eps_analysts": 4,
+   "eps_avg": 4.89696,
+   "fiscal_year_end": "2028-09-27",
+   "revenue_analysts": 8,
+   "revenue_avg": 56100980016
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 59.68,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "tsn",
+ "source": "FMP",
+ "symbol": "TSN",
+ "target": {
+  "average": 65.4,
+  "currency": "USD",
+  "high": 75,
+  "low": 56,
+  "median": 65
+ },
+ "ticker": "TSN"
+}

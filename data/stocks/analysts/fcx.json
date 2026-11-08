@@ -1,0 +1,42 @@
+{
+ "analysts": 41,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 24,
+  "hold": 15,
+  "sell": 2,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.15703,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 29807089329
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 4.29678,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 13,
+   "revenue_avg": 36315372624
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 59.42,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "fcx",
+ "source": "FMP",
+ "symbol": "FCX",
+ "target": {
+  "average": 74,
+  "currency": "USD",
+  "high": 88,
+  "low": 47,
+  "median": 75
+ },
+ "ticker": "FCX"
+}

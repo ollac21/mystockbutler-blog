@@ -1,0 +1,42 @@
+{
+ "analysts": 28,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 22,
+  "hold": 6,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 7,
+   "eps_avg": 8.57292,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 23108138703
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 10.59502,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 5,
+   "revenue_avg": 27026849505
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 116.75,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "apo",
+ "source": "FMP",
+ "symbol": "APO",
+ "target": {
+  "average": 139,
+  "currency": "USD",
+  "high": 145,
+  "low": 127,
+  "median": 145
+ },
+ "ticker": "APO"
+}

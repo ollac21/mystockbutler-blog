@@ -1,0 +1,42 @@
+{
+ "analysts": 19,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 9,
+  "hold": 9,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 9,
+   "eps_avg": 2.70217,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 7449951571
+  },
+  {
+   "eps_analysts": 10,
+   "eps_avg": 3.30224,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 8893410558
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 75.82,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ibkr",
+ "source": "FMP",
+ "symbol": "IBKR",
+ "target": {
+  "average": 105,
+  "currency": "USD",
+  "high": 117,
+  "low": 97,
+  "median": 104
+ },
+ "ticker": "IBKR"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 47,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 27,
+  "hold": 19,
+  "sell": 0,
+  "strong_buy": 1,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 29.02454,
+   "fiscal_year_end": "2027-01-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 13280103561
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 32.19164,
+   "fiscal_year_end": "2028-01-31",
+   "revenue_analysts": 21,
+   "revenue_avg": 13961580551
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 644.76,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "ulta",
+ "source": "FMP",
+ "symbol": "ULTA",
+ "target": {
+  "average": 630.27,
+  "currency": "USD",
+  "high": 731,
+  "low": 525,
+  "median": 631
+ },
+ "ticker": "ULTA"
+}

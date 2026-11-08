@@ -1,0 +1,42 @@
+{
+ "analysts": 38,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 26,
+  "hold": 11,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 2.76819,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 67218258837
+  },
+  {
+   "eps_analysts": 13,
+   "eps_avg": 8.9137,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 69416431389
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 146.71,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "mrk",
+ "source": "FMP",
+ "symbol": "MRK",
+ "target": {
+  "average": 160.47,
+  "currency": "USD",
+  "high": 180,
+  "low": 105,
+  "median": 165
+ },
+ "ticker": "MRK"
+}

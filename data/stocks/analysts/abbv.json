@@ -1,0 +1,42 @@
+{
+ "analysts": 44,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 31,
+  "hold": 12,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 14,
+   "eps_avg": 13.97029,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 16,
+   "revenue_avg": 67685222913
+  },
+  {
+   "eps_analysts": 16,
+   "eps_avg": 16.31336,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 18,
+   "revenue_avg": 73692410326
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 291.31,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "abbv",
+ "source": "FMP",
+ "symbol": "ABBV",
+ "target": {
+  "average": 308.88,
+  "currency": "USD",
+  "high": 340,
+  "low": 235,
+  "median": 315
+ },
+ "ticker": "ABBV"
+}

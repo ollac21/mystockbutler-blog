@@ -1,0 +1,42 @@
+{
+ "analysts": 46,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 31,
+  "hold": 15,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 13,
+   "eps_avg": 3.7397,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 8976647027
+  },
+  {
+   "eps_analysts": 8,
+   "eps_avg": 3.50178,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 7,
+   "revenue_avg": 10829216591
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 49.4,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "eqt",
+ "source": "FMP",
+ "symbol": "EQT",
+ "target": {
+  "average": 66.75,
+  "currency": "USD",
+  "high": 75,
+  "low": 54,
+  "median": 69
+ },
+ "ticker": "EQT"
+}

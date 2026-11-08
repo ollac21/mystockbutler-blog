@@ -1,0 +1,42 @@
+{
+ "analysts": 22,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 18,
+  "hold": 4,
+  "sell": 0,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 12,
+   "eps_avg": 7.68268,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 3711331872
+  },
+  {
+   "eps_analysts": 12,
+   "eps_avg": 10.56565,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 15,
+   "revenue_avg": 4806058925
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 313,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "axon",
+ "source": "FMP",
+ "symbol": "AXON",
+ "target": {
+  "average": 612.56,
+  "currency": "USD",
+  "high": 715,
+  "low": 500,
+  "median": 615
+ },
+ "ticker": "AXON"
+}

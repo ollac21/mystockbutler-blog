@@ -1,0 +1,42 @@
+{
+ "analysts": 43,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 15,
+  "hold": 24,
+  "sell": 4,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 11,
+   "eps_avg": 4.69834,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 4053787268
+  },
+  {
+   "eps_analysts": 11,
+   "eps_avg": 5.30059,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 12,
+   "revenue_avg": 4796878893
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 68.12,
+ "rating": "Hold",
+ "schema": "public_analysts_v1",
+ "slug": "pnr",
+ "source": "FMP",
+ "symbol": "PNR",
+ "target": {
+  "average": 72.42,
+  "currency": "USD",
+  "high": 91,
+  "low": 50,
+  "median": 67.5
+ },
+ "ticker": "PNR"
+}

@@ -1,0 +1,42 @@
+{
+ "analysts": 54,
+ "as_of": "2026-11-08T03:10:22Z",
+ "counts": {
+  "buy": 35,
+  "hold": 18,
+  "sell": 1,
+  "strong_buy": 0,
+  "strong_sell": 0
+ },
+ "estimates": [
+  {
+   "eps_analysts": 16,
+   "eps_avg": 4.36295,
+   "fiscal_year_end": "2026-12-31",
+   "revenue_analysts": 9,
+   "revenue_avg": 122573895550
+  },
+  {
+   "eps_analysts": 14,
+   "eps_avg": 5.11799,
+   "fiscal_year_end": "2027-12-31",
+   "revenue_analysts": 8,
+   "revenue_avg": 130570355434
+  }
+ ],
+ "estimates_currency": "USD",
+ "price": 49.42,
+ "rating": "Buy",
+ "schema": "public_analysts_v1",
+ "slug": "bac",
+ "source": "FMP",
+ "symbol": "BAC",
+ "target": {
+  "average": 66,
+  "currency": "USD",
+  "high": 75,
+  "low": 60,
+  "median": 65
+ },
+ "ticker": "BAC"
+}
