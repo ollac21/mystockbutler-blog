@@ -9,6 +9,7 @@
 
 import { Marked } from 'marked';
 import { esc } from './layout.mjs';
+import { analystView, renderAnalysts } from './analysts.mjs';
 
 const md = new Marked({ gfm: true });
 export const PAGE_CSS_PATH = '/stocks/assets/page.css';
@@ -1607,6 +1608,11 @@ ${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : type === 'dividend
   const viewer = fp ? reportViewer({ W, fp, chapters, allChapters: p.chapters || [], company, memoDay: p.memoDay, ticker, exch, fullName: data.company || company, memoIso, shortMemo,
     priceShort: priceIso ? p.shortFull(priceIso, lang) : p.memoDay, htmlLang: p.htmlLang, counts: k, words, num, isFree, cta: p.cta, nCh }) : '';
 
+  // ---- the analysts' view (FMP's data, drawn only while it is fresh; stock pages only) ----
+  const analystsHtml = type === 'stock' && data.analysts
+    ? renderAnalysts(analystView(data.analysts, { today, currency: cur }), { lang, company, F, num, humanDay: p.humanDay, monthYear: (iso) => longCol(`${MON3[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`), esc, nb, fixed })
+    : '';
+
   const h1Text = type === 'earnings' ? W.eH1(company, ticker) : p.h1;
   const body = `<main class="page" id="top">
 ${top.replace('@@H1@@', () => esc(h1Text))}
@@ -1614,6 +1620,7 @@ ${answer}
 ${cta1}
 ${frame}
 ${stats}
+${analystsHtml}
 ${sections.join('\n')}
 ${close}
 </main>
