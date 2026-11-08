@@ -1610,7 +1610,7 @@ ${free}<p class="foot">${esc(type === 'stock' ? W.closeFoot : type === 'dividend
 
   // ---- the analysts' view (FMP's data, drawn only while it is fresh; stock pages only) ----
   const analystsHtml = type === 'stock' && data.analysts
-    ? renderAnalysts(analystView(data.analysts, { today, currency: cur }), { lang, company, F, num, humanDay: p.humanDay, monthYear: (iso) => longCol(`${MON3[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`), esc, nb, fixed })
+    ? renderAnalysts(analystView(data.analysts, { today, currency: cur }), { lang, company, F, num, money, humanDay: p.humanDay, monthYear: (iso) => longCol(`${MON3[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`), esc, nb, fixed })
     : '';
 
   const h1Text = type === 'earnings' ? W.eH1(company, ticker) : p.h1;
