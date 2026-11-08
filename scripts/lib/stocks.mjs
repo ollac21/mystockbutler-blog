@@ -400,6 +400,16 @@ export function frStockTitle(data) {
   return `Action ${shortName(data)} : avis, analyse et prévisions`;
 }
 
+// WHAT FRANCE TYPES ON THE DIVIDEND PAGE (SEO row 6, owner 2026-11-07): 'dividende vinci', 'dividendes air liquide', 'rendement dividende air liquide'.
+// A French dividend page's <title> is 'Dividende <Nom> : montant, rendement et historique', else a shorter form of the same words when the
+// ticker would push it past 60 characters; '' = none fits, the chain's title stays. No page file holds a next payment date today, so the
+// 'date de versement' form is not drawn: a date nobody printed is never a title. The h1 keeps the file's title.
+export function frDividendTitle(data) {
+  const name = shortName(data);
+  const forms = [`Dividende ${name} : montant, rendement et historique`, `Dividende ${name} : rendement et historique`, `Dividende ${name} : historique`];
+  return forms.find((t) => titleWithTicker(t, data).length <= 60) || '';
+}
+
 // OUR NAME IN THE ANSWER SENTENCE (owner 2026-10-22 '1 and 2 build'; the three strings approved by the CTO 18:14Z, the colon
 // form): the words in front of the page's opening, built from the memo's month and our own month lists — no model call.
 //   en  "MyStockButler's October 2026 analysis: "
@@ -1478,7 +1488,7 @@ export function renderCompanyPage(data, type, ctx, lang = 'en') {
   const withSpan = span ? `${page0.title} ${span}${shared ? ` (${data.ticker})` : ''}` : modelTitle;
   const [dated, datedKind] = type === 'earnings' ? earningsDateTitle(data, lang, ctx.today, ctx.earningsDates) : ['', ''];
   const page = { ...page0, title: dated || (withSpan.length <= 60 ? withSpan : modelTitle) };   // the h1 and the Article headline
-  const title = titleWithTicker(lang === 'fr' && type === 'stock' ? frStockTitle(data) : page.title, data);   // the <title>, og:title and twitter:title
+  const title = titleWithTicker(lang === 'fr' && type === 'stock' ? frStockTitle(data) : lang === 'fr' && type === 'dividend' && frDividendTitle(data) ? frDividendTitle(data) : page.title, data);   // the <title>, og:title and twitter:title
   const teaserData = fr ? data.translations[lang].teaser : data.teaser;
   const slug = data.slug;
   const path = pagePath(slug, type, lang);

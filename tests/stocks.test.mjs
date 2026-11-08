@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFileSync } from 'node:fs';
-import { earningsDateTitle, earningsResultTitle, fitTitle, buildStockSite, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
+import { earningsDateTitle, earningsResultTitle, fitTitle, buildStockSite, frDividendTitle, frStockTitle, frenchNumber, gatePage, pagePath, tickerCount, titleWithTicker } from '../scripts/lib/stocks.mjs';
 
 const load = (n) => JSON.parse(readFileSync(new URL(`./fixtures/${n}`, import.meta.url), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -100,11 +100,12 @@ test('a French dividend page titled the way France searches passes the gate (B11
   const { pages, held } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
   assert.ok(!held.some((h) => /dividende/.test(JSON.stringify(h))), JSON.stringify(held));
   const div = pages.find((p) => p.path === '/fr/stocks/td-to/dividende/');
-  assert.match(div.html, /<title>Dividende TD \(TD\.TO\) 2026 : montant, dates et rendement<\/title>/);
-  // a title in neither form is still held
+  assert.match(div.html, /<title>Dividende TD \(TD\.TO\) : montant, rendement et historique<\/title>/);   // SEO row 6: the searched words in the <title>
+  assert.match(div.html, /"headline":"Dividende TD 2026 : montant, dates et rendement"/);   // the headline keeps the file's title
+  // SEO row 6: the <title> is ours whatever the file says (as for the forecast page, row 10), so a file title in neither form still shows ours
   td.translations.fr.pages.dividend.title = 'TD : montant, dates et rendement';
   const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
-  assert.ok(!again.pages.some((p) => p.path === '/fr/stocks/td-to/dividende/'));
+  assert.match(again.pages.find((p) => p.path === '/fr/stocks/td-to/dividende/').html, /<title>Dividende TD \(TD\.TO\) : montant, rendement et historique<\/title>/);
 });
 
 test('a German page (S&P 500): its address, hreflang both ways, German words and numbers, the German hub', () => {
@@ -776,6 +777,7 @@ test('row 10: a French forecast page is titled "Action X (T) : avis, analyse et 
   // every other page keeps the title the file gives it, with the ticker: the French dividend and earnings pages, the English page
   for (const p of built.pages.filter((x) => x.path !== '/fr/stocks/td-to/')) {
     assert.ok(!p.title.includes('avis, analyse'), p.path);
+    if (p.lang === 'fr' && p.type === 'dividend') { assert.equal(p.title, titleWithTicker(frDividendTitle(p.data), p.data), p.path); continue; }   // SEO row 6
     assert.equal(p.title, titleWithTicker(titlesOf(p).ld, p.data), p.path);   // the headline is the file's title (B115: the earnings h1 is the deck's own words)
   }
   // the chain's other forms, and an old file's wording, give the same title
