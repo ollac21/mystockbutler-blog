@@ -100,12 +100,12 @@ test('a French dividend page titled the way France searches passes the gate (B11
   const { pages, held } = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
   assert.ok(!held.some((h) => /dividende/.test(JSON.stringify(h))), JSON.stringify(held));
   const div = pages.find((p) => p.path === '/fr/stocks/td-to/dividende/');
-  assert.match(div.html, /<title>Dividende TD \(TD\.TO\) : montant, rendement et historique<\/title>/);   // SEO row 6: the searched words in the <title>
+  assert.match(div.html, /<title>Dividende TD \(TD\.TO\) 2026 : montant, rendement et historique<\/title>/);   // SEO row 6: the searched words in the <title>
   assert.match(div.html, /"headline":"Dividende TD 2026 : montant, dates et rendement"/);   // the headline keeps the file's title
   // SEO row 6: the <title> is ours whatever the file says (as for the forecast page, row 10), so a file title in neither form still shows ours
   td.translations.fr.pages.dividend.title = 'TD : montant, dates et rendement';
   const again = buildStockSite([td, load('stock-rmd.json')], { today: TODAY });
-  assert.match(again.pages.find((p) => p.path === '/fr/stocks/td-to/dividende/').html, /<title>Dividende TD \(TD\.TO\) : montant, rendement et historique<\/title>/);
+  assert.match(again.pages.find((p) => p.path === '/fr/stocks/td-to/dividende/').html, /<title>Dividende TD \(TD\.TO\) 2026 : montant, rendement et historique<\/title>/);
 });
 
 test('a German page (S&P 500): its address, hreflang both ways, German words and numbers, the German hub', () => {

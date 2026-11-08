@@ -406,7 +406,9 @@ export function frStockTitle(data) {
 // 'date de versement' form is not drawn: a date nobody printed is never a title. The h1 keeps the file's title.
 export function frDividendTitle(data) {
   const name = shortName(data);
-  const forms = [`Dividende ${name} : montant, rendement et historique`, `Dividende ${name} : rendement et historique`, `Dividende ${name} : historique`];
+  const y = String(data?.memo_date || '').slice(0, 4);   // the report's year: France types 'dividende total 2026'
+  const forms = [...(y ? [`Dividende ${name} ${y} : montant, rendement et historique`, `Dividende ${name} ${y} : rendement et historique`, `Dividende ${name} ${y} : historique`] : []),
+    `Dividende ${name} : montant, rendement et historique`, `Dividende ${name} : rendement et historique`, `Dividende ${name} : historique`];
   return forms.find((t) => titleWithTicker(t, data).length <= 60) || '';
 }
 

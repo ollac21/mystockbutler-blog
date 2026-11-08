@@ -2,8 +2,8 @@
  "id": "calc-zh",
  "path": "/zh/stocks/dividend-calculator/",
  "lang": "zh-Hant",
- "title": "股息計算機：派息比率計算、港股股息（騰訊、中移動）",
- "description": "股息計算及派息比率計算：輸入股票代號，看港股股息如騰訊、中移動。HKEX：投資 HK$10,000，以 3.4% 股息率計，每年約收取 HK$340。",
+ "title": "股息計算機：派息比率計算、港股股息（騰訊、港交所）",
+ "description": "股息計算及派息比率計算：輸入股票代號，看港股股息如騰訊、港交所。HKEX：投資 HK$10,000，以 3.4% 股息率計，每年約收取 HK$340。",
  "css": "calc",
  "ld": [
   {
@@ -24,7 +24,7 @@
   },
   {
    "@type": "WebApplication",
-   "name": "股息計算機：派息比率計算、港股股息（騰訊、中移動）",
+   "name": "股息計算機：派息比率計算、港股股息（騰訊、港交所）",
    "url": "https://blog.mystockbutler.com/zh/stocks/dividend-calculator/",
    "applicationCategory": "FinanceApplication",
    "operatingSystem": "Any",
