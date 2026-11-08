@@ -54,7 +54,8 @@ function quotedOf(rec) {
 // Why this build cannot draw the approved page ('' = it can).
 export function sitePageProblem(rec, { byTicker, today }) {
   const quotes = new Map((rec.quotes || []).map((q) => [q.ticker, q]));
-  for (const t of quotedOf(rec)) {
+  // a quote marked 'guard' is a company whose words or numbers the page prints by hand (SEO row 5: Tencent's worked example): same check
+  for (const t of new Set([...quotedOf(rec), ...(rec.quotes || []).filter((x) => x.guard).map((x) => x.ticker)])) {
     const c = byTicker.get(t);
     const q = quotes.get(t);
     if (!c) return `${t}: no report in this build`;
