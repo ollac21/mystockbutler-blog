@@ -2780,6 +2780,13 @@ export function buildStockSite(companies, { today = new Date(), compares = [], e
         deHub.html = deHub.html.replace(/(<section class="sec links"[^>]*>[\s\S]*?<div class="chips">)/, `$1<a href="${DE_WEEK}">Quartalszahlen diese Woche</a>`);
         deHub.outLinks = [...(deHub.outLinks || []), DE_WEEK];
       }
+      // SEO row 4 (owner 2026-11-07): every German results page links the calendar once, one chip 'Nächste Quartalszahlen →' after 'Alle Aktien'
+      const CAL_CHIP = '<a href="/de/aktien/">Alle Aktien</a>';
+      for (const b of pass) {
+        if (b.lang !== 'de' || b.type !== 'earnings' || !b.html.includes(CAL_CHIP) || b.html.includes(`href="${DE_WEEK}"`)) continue;
+        b.html = b.html.replace(CAL_CHIP, `${CAL_CHIP}<a href="${DE_WEEK}">Nächste Quartalszahlen →</a>`);
+        b.outLinks = [...(b.outLinks || []), DE_WEEK];
+      }
       sitePages.drawn.push(DE_WEEK);
     }
     // B115 round 5: the German stock hub links the German tool review drawn in its approved layout (AlleAktien), at the end of its links block

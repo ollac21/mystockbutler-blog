@@ -847,3 +847,22 @@ test('the scenario chart: no label runs past the chart edge, in the four languag
   const zh = buildStockSite([load('stock-nvda-zh.json')], { today: TODAY }).pages.find((p) => p.path === '/zh/stocks/nvda/');
   assert.match(zh.files.find((f) => f.name === 'forecast.svg').content, /<text x="4.0" y="432" font-size="1\d" font-weight="600" fill="#617066" text-anchor="start">2026年10月<\/text>/);
 });
+
+// SEO ROW 4 (owner 2026-11-07): the German results calendar is titled with the words people type, within 60 characters and with
+// the week's range; every German results page links it once.
+test('row 4: the German calendar title, H1 and intro; one "Nächste Quartalszahlen" chip on each German results page', () => {
+  const built = buildStockSite([load('stock-nvda-de.json'), load('stock-rmd.json'), load('stock-td-to.json')], { today: DAY('2026-11-16'), earningsDates: {} });
+  const cal = built.hubs.find((h) => h.path === '/de/aktien/quartalszahlen-heute/');
+  assert.ok(cal, 'the calendar is drawn');
+  assert.match(cal.title, /^Nächste Quartalszahlen: Termine diese Woche \(\d{1,2}\.(–\d{1,2}\.)? Nov\.\)$/);
+  assert.ok(cal.title.length <= 60);
+  assert.match(cal.html, /<h1>Nächste Quartalszahlen: wer vom /);
+  assert.match(cal.html, /Aktien Quartalszahlen dieser Woche: \d+ Unternehmen/);
+  const de = built.pages.filter((p) => p.lang === 'de' && p.type === 'earnings');
+  assert.ok(de.length);
+  for (const p of de) {
+    assert.equal(p.html.split('href="/de/aktien/quartalszahlen-heute/"').length - 1, 1, p.path);
+    assert.ok(p.html.includes('Nächste Quartalszahlen →'));
+  }
+  assert.ok(!built.pages.some((p) => p.lang === 'en' && p.html.includes('Nächste Quartalszahlen →')));
+});

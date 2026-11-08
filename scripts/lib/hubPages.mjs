@@ -459,6 +459,14 @@ export function renderWeekBodyDe(q) {
     const a = days[0], b = days[days.length - 1];
     return a === b ? fullDayDe(a) : a.slice(0, 7) === b.slice(0, 7) ? `${dt(a).getUTCDate()}. bis ${fullDayDe(b)}` : `${dayDe(a)} bis ${fullDayDe(b)}`;   // "2. to 6. November 2026"
   })();
+  // SEO row 4 (owner 2026-11-07): the <title> a search shows, at most 60 characters, keeps the week's range in its short form
+  // ('9.–12. Nov.', '30. Nov.–4. Dez.'): the words people type ('nächste Quartalszahlen', 'Aktien Quartalszahlen') first.
+  const shortRange = (() => {
+    const a = days[0], b = days[days.length - 1];
+    const m = (d) => MON_DE3[dt(d).getUTCMonth()];
+    return a === b ? `${dt(a).getUTCDate()}. ${m(a)}` : a.slice(0, 7) === b.slice(0, 7) ? `${dt(a).getUTCDate()}.–${dt(b).getUTCDate()}. ${m(b)}` : `${dt(a).getUTCDate()}. ${m(a)}–${dt(b).getUTCDate()}. ${m(b)}`;
+  })();
+  const title = [`Nächste Quartalszahlen: Termine diese Woche (${shortRange})`, `Nächste Quartalszahlen: Termine (${shortRange})`, `Nächste Quartalszahlen (${shortRange})`].find((t) => t.length <= 60) || 'Nächste Quartalszahlen: Termine diese Woche';
   const href = (x) => (x.hasE ? x.ePath : x.sPath);
   const chips = (lst) => `<div class="chips">${lst.map((x) => `<a href="${href(x)}">${esc(x.name)}<small>${esc(x.c.ticker)}</small></a>`).join('')}</div>`;
   const row = (x) => {
@@ -538,13 +546,13 @@ ${free ? `<p class="free">${esc(W.free)}</p>` : ''}
   const main = `<main class="page" id="top">
 <section class="top">
 <nav class="crumb" aria-label="Brotkrumen"><a href="/de/aktien/">Aktien</a><span aria-hidden="true">›</span>Quartalszahlen diese Woche</nav>
-<h1>Quartalszahlen diese Woche: wer vom ${esc(range)} berichtet</h1>
+<h1>Nächste Quartalszahlen: wer vom ${esc(range)} berichtet</h1>
 <p class="byline">Von <a href="/de/ueber-uns/">Olivier Lachance</a> · Daten vom ${esc(fullDayDe(today))}<a class="plain byline__how" href="/methodology/" hreflang="en">Wie ein Bericht entsteht</a></p>
 </section><section class="answer ansD" aria-labelledby="ans-h">
 <h2 class="sr" id="ans-h">Welche Unternehmen legen diese Woche Quartalszahlen vor?</h2>
 <p class="answer__label">Wer diese Woche berichtet</p>
 <div class="days">${upcoming.slice(0, 3).map((d) => `<p><span class="day__n">${lists[d].length}</span><span class="day__d">${shortDayDe(d)}</span><span class="day__w">${esc(lists[d].slice(0, 3).map((x) => x.name).join(', '))}</span></p>`).join('')}</div>
-<p class="days__more">${total} Unternehmen mit deutschem MyStockButler-Bericht diese Woche; DAX zuerst, dann nach Umsatz des letzten Quartals in US-$. Termine wie im Bericht des Unternehmens vermerkt („erwartet“); bitte auf seiner Investor-Relations-Seite bestätigen.${upcoming.length > 3 ? ` ${upcoming.slice(3).map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${upcoming.slice(3).reduce((n, d) => n + lists[d].length, 0)} weitere, unten.` : ''}${earlier.length ? ` ${earlier.map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${earlier.reduce((n, d) => n + lists[d].length, 0)} weitere, <a href="#frueher">unten aufgeführt</a>.` : ''}</p>
+<p class="days__more">Aktien Quartalszahlen dieser Woche: ${total} Unternehmen mit deutschem MyStockButler-Bericht diese Woche; DAX zuerst, dann nach Umsatz des letzten Quartals in US-$. Termine wie im Bericht des Unternehmens vermerkt („erwartet“); bitte auf seiner Investor-Relations-Seite bestätigen.${upcoming.length > 3 ? ` ${upcoming.slice(3).map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${upcoming.slice(3).reduce((n, d) => n + lists[d].length, 0)} weitere, unten.` : ''}${earlier.length ? ` ${earlier.map((d) => DAY_DE[dt(d).getUTCDay()]).join(' und ')}: ${earlier.reduce((n, d) => n + lists[d].length, 0)} weitere, <a href="#frueher">unten aufgeführt</a>.` : ''}</p>
 <div class="d-us"><p class="vs__k">Bericht der Woche</p><p class="vs__t"><b>${esc(feat.name)}</b>, erwartet am ${esc(longDayDe(feat.day))}.${feat.watch ? ` Der Bericht nennt den Test: „${esc(feat.watch)}“` : ''}</p></div>
 </section><section class="cta1" id="cta1" aria-label="Den Bericht lesen">
 <div class="cta1__row"><a class="btn btn--lg btn--block" id="firstbtn" data-cta="lede" href="${esc(cta)}">${esc(btn)}</a><button class="textlink" type="button" data-open-viewer>Oder erst ansehen, ohne Konto ▸</button></div>
@@ -562,7 +570,7 @@ ${close}
 ${viewer}`;
   // the first screen: "Earnings this week: who reports from … to …" · "By … · data of …" · "Who reports this week" · "N companies with a German report this week; DAX first, then by last quarter's revenue in US$. Dates as recorded in each company's report ("expected"); confirm on its IR page. Monday and Tuesday: N more, listed below." · "Report of the week: X, expected on <day>. Its report names the test: …" · "Or look first, no account" · "Report of … · summary + 8 chapters · N words · N sources" · the bar: "X's report · New account: one ready report free · Read"
   const names = [...new Set(upcoming.flatMap((d) => lists[d].slice(0, 3).map((x) => x.name)))].slice(0, 5);
-  return { main, title: `Quartalszahlen diese Woche: ${range}`, description: `${total} Unternehmen mit deutschem MyStockButler-Bericht erwarten vom ${range} ihre Zahlen: ${names.join(', ')}. Mit dem letzten Quartal und dem Test, den jeder Bericht nennt.`,
-    h1: `Quartalszahlen diese Woche: wer vom ${range} berichtet`, featured: fc.ticker };
+  return { main, title, description: `${total} Unternehmen mit deutschem MyStockButler-Bericht erwarten vom ${range} ihre Zahlen: ${names.join(', ')}. Mit dem letzten Quartal und dem Test, den jeder Bericht nennt.`,
+    h1: `Nächste Quartalszahlen: wer vom ${range} berichtet`, featured: fc.ticker };
   // title: "Results this week: <range>"; description: "N companies with a German MyStockButler report expect their results from <range>: … With the last quarter and the test each report names."
 }
