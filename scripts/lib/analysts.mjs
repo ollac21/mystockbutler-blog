@@ -99,7 +99,7 @@ export const ANALYST_WORDS = {
   },
   'zh-HK': {
     h: (c) => `${c} 分析師評級`,
-    sentence: (c, n, d, x, y, z) => `截至${d}，FMP 追蹤的 ${n} 位分析師中，${x} 位給予${c}「買入」或「強力買入」評級，${y} 位「持有」，${z} 位「賣出」。`,
+    sentence: (c, n, d, x, y, z) => `截至${d}，FMP 追蹤的 ${n} 位分析師中，${x} 位給予 ${c} 「買入」或「強力買入」評級，${y} 位「持有」，${z} 位「賣出」。`,
     legend: { buy: '買入或強力買入', hold: '持有', sell: '賣出或強力賣出' },
     barAria: (n, x, y, z) => `分析師評級：買入或強力買入 ${x}，持有 ${y}，賣出 ${z}，共 ${n} 位。`,
     consensus: (r) => `FMP 的共識評級：「${r}」。`,
