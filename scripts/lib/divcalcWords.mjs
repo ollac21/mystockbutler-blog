@@ -169,9 +169,9 @@ export const DIVCALC_WORDS = {
     updated: 'Zahlen aus unserem neuesten Bericht zu jedem Unternehmen, aktualisiert mit jedem neuen Bericht. Neuester Bericht: {date}.',
   },
   'zh-HK': {
-    title: '股息計算機：輸入股票代號計算股息收入及再投資',
-    desc: '輸入股票代號，自動填入股息、五年派息紀錄及自由現金流覆蓋率，數字來自我們的研究報告。{name}：投資 {amount} 每年約收取 {income} 股息。',
-    descNone: '輸入股票代號，自動填入股息、五年派息紀錄及自由現金流覆蓋率，數字來自我們的研究報告。',
+    title: '股息計算機：計算股息收入、股息率及派息比率',                                  // the searched words '股息計算' and '派息比率 計算' (Search Console 2026-11-11)
+    desc: '輸入股票代號，自動填入股息率、五年派息紀錄及派息比率（股息佔自由現金流），數字來自我們的研究報告。{name}：投資 {amount} 每年約收取 {income} 股息。',
+    descNone: '輸入股票代號，自動填入股息率、五年派息紀錄及派息比率（股息佔自由現金流），數字來自我們的研究報告。',
     h1: '股息計算機：按股票代號計算',
     crumb: '股息計算機',
     answer: '以 {y} 的股息率投資 {amount} 於{name}（{t}），每年稅前約可收取 {income} 股息（MyStockButler 報告，{mdate}）。',
