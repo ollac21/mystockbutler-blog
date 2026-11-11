@@ -305,7 +305,7 @@ export async function writeStockSite(out, companies, { today = new Date(), repor
   await writeFile(path.join(out, 'stocks/assets/page-lists.css'), pageCss + (await asset('page-lists.css')));
   await writeFile(path.join(out, 'stocks/assets/lists.js'), await asset('lists.js'));
   await writeFile(path.join(out, 'stocks/assets/page-dividend.css'), pageCss + DIVCALC_CSS + (await asset('page-dividend.css')));
-  for (const t of ['tools', 'review', 'trust', 'calc', 'hubs', 'blog', 'versus', 'doc', 'zb']) {    // B115 round 3 (round 5: versus; 11-08: doc, the Claude prompts page; zb, the Zonebourse page): the approved pages' own sheets
+  for (const t of ['tools', 'review', 'trust', 'calc', 'hubs', 'blog', 'versus', 'doc', 'zb', 'sa']) {    // B115 round 3 (round 5: versus; 11-08: doc, the Claude prompts page; zb, the Zonebourse page): the approved pages' own sheets
     if (existsSync(new URL(`../assets/page-${t}.css`, import.meta.url))) await writeFile(path.join(out, `stocks/assets/page-${t}.css`), pageCss + (await asset(`page-${t}.css`)));
   }
   await writeFile(path.join(out, DIVCALC_DATA.slice(1)), JSON.stringify(divcalc));     // the dividend calculator's data
